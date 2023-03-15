@@ -1,8 +1,8 @@
 ---
 title: "remoteAssistanceReporting resource type"
 description: "RemoteAssistanceReporting resources represents the metadata of a given Remote Assistance reporting payload"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,11 +23,12 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |id|String|The unique identifier for a session and for each sessions's reporting payload|
 |startDateTime|DateTimeOffset|Start time for the session|
 |endDateTime|DateTimeOffset|End time for the session|
-|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Type of the remote assistance session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`. Possible values are: `viewOnly`, `fullControl`, `elevation`.|
+|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Type of the remote assistance session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`. Possible values are: `viewOnly`, `fullControl`, `elevation`, `unattended`.|
 |helperEmail|String|Login email used by the helper to establish the session|
 |helperTenantId|String|Tenant id for the helper|
 |helperFirstName|String|Helper's first name|
 |helperLastName|String|Helper's last name|
+|helperOs|String|Helper's operating system|
 |helperDeviceAadId|String|Helper's device AAD Id|
 |helperDeviceName|String|Helper's device name|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the helper's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
@@ -37,7 +38,9 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |sharerLastName|String|Sharer's last name|
 |sharerDeviceAadId|String|Sharer's device AAD Id|
 |sharerDeviceName|String|Sharer's device name|
+|sharerOs|String|Sharer's operating system|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the sharer's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|sharerDeviceSerialNumber|String|Sharer device serial number|
 
 ## Relationships
 None
@@ -60,6 +63,7 @@ Here is a JSON representation of the resource.
   "helperTenantId": "String",
   "helperFirstName": "String",
   "helperLastName": "String",
+  "helperOs": "String",
   "helperDeviceAadId": "String",
   "helperDeviceName": "String",
   "helperEnrollmentState": "String",
@@ -69,9 +73,8 @@ Here is a JSON representation of the resource.
   "sharerLastName": "String",
   "sharerDeviceAadId": "String",
   "sharerDeviceName": "String",
-  "sharerEnrollmentState": "String"
+  "sharerOs": "String",
+  "sharerEnrollmentState": "String",
+  "sharerDeviceSerialNumber": "String"
 }
 ```
-
-
-

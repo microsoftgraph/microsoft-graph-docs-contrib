@@ -1,8 +1,8 @@
 ---
 title: "getHealthMetricTimeSeries action"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
+POST /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetricTimeSeries
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this action returns a `200 OK` response code and a [certificateCo
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetricTimeSeries
 
 Content-type: application/json
 Content-length: 242
@@ -93,6 +93,3 @@ Content-Length: 225
   ]
 }
 ```
-
-
-

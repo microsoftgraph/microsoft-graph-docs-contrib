@@ -52,6 +52,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -60,16 +61,23 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationsynchronizationprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following is an example of the response. 
@@ -84,7 +92,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2487
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/$entity",
@@ -94,12 +101,24 @@ Content-length: 2487
     "dataProvider": {
         "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
+            "school": {
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
+            "section": {
+                "optionalPropertiesToSync": [
+                    "Term Name",
+                    "Course Number",
+                    "Periods"
+                ],
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -113,19 +132,15 @@ Content-length: 2487
                     "Title",
                     "Qualification"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
-                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
-                "optionalPropertiesToSync": [],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }

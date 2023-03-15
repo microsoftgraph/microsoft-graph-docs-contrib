@@ -1,8 +1,8 @@
 ---
 title: "Get windowsUpdateState"
 description: "Read properties and relationships of the windowsUpdateState object."
-author: "rolyon"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -85,9 +85,3 @@ Content-Length: 594
   }
 }
 ```
-
-
-
-
-
-

@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestTop := int32(3)
+
+requestParameters := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetQueryParameters{
+	Top: &requestTop,
+}
+configuration := &graphconfig.TeamItemChannelItemMessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Get(context.Background(), configuration)
+
+
+```

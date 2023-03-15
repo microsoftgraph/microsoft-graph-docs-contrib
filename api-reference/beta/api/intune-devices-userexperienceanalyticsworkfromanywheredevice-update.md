@@ -1,8 +1,8 @@
 ---
 title: "Update userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Update the properties of a userExperienceAnalyticsWorkFromAnywhereDevice object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,6 +49,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics work from anywhere device.|
+|deviceId|String|The user experience work from anywhere device Id.|
 |deviceName|String|The work from anywhere device's name.|
 |serialNumber|String|The user experience work from anywhere device's serial number.|
 |manufacturer|String|The user experience work from anywhere device's manufacturer.|
@@ -65,6 +66,7 @@ The following table shows the properties that are required when you create the [
 |tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
 |compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
 |otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
+|isCloudManagedGatewayEnabled|Boolean|The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
 |ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
 |storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
@@ -75,11 +77,12 @@ The following table shows the properties that are required when you create the [
 |processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
 |processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
 |osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
+|workFromAnywhereScore|Double|The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |windowsScore|Double|The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |cloudManagementScore|Double|The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |cloudIdentityScore|Double|The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |cloudProvisioningScore|Double|The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 
 
@@ -93,10 +96,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 1215
+Content-length: 1323
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -113,6 +117,7 @@ Content-length: 1215
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -123,6 +128,7 @@ Content-length: 1215
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
   "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
   "windowsScore": 4.0,
   "cloudManagementScore": 6.666666666666667,
   "cloudIdentityScore": 6.0,
@@ -136,11 +142,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1264
+Content-Length: 1372
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
   "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -157,6 +164,7 @@ Content-Length: 1264
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -167,6 +175,7 @@ Content-Length: 1264
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
   "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
   "windowsScore": 4.0,
   "cloudManagementScore": 6.666666666666667,
   "cloudIdentityScore": 6.0,
@@ -174,6 +183,3 @@ Content-Length: 1264
   "healthStatus": "insufficientData"
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "List windowsFeatureUpdateProfiles"
 description: "List properties and relationships of the windowsFeatureUpdateProfile objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 658
+Content-Length: 946
 
 {
   "value": [
@@ -70,6 +70,12 @@ Content-Length: 658
       "displayName": "Display Name value",
       "description": "Description value",
       "featureUpdateVersion": "Feature Update Version value",
+      "rolloutSettings": {
+        "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+        "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+        "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+        "offerIntervalInDays": 3
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
@@ -81,6 +87,3 @@ Content-Length: 658
   ]
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "Get certificateConnectorDetails"
 description: "Read properties and relationships of the certificateConnectorDetails object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 358
+Content-Length: 410
 
 {
   "value": {
@@ -72,10 +72,8 @@ Content-Length: 358
     "connectorName": "Connector Name value",
     "machineName": "Machine Name value",
     "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
-    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+    "connectorVersion": "Connector Version value"
   }
 }
 ```
-
-
-

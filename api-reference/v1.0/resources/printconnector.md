@@ -11,13 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
 | [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
 | [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
 | [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
@@ -25,14 +24,14 @@ Represents a print connector that has been registered by using a Universal Print
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| Read-only.|
+|appVersion|String|The connector's version.|
 |displayName|String|The name of the connector.|
 |fullyQualifiedDomainName|String|The connector machine's hostname.|
-|operatingSystem|String|The connector machine's operating system version.|
-|appVersion|String|The connector's version.|
+|id|String| Read-only.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the connector.|
-|registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
+|operatingSystem|String|The connector machine's operating system version.|
 |registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
+|registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
 
 ## Relationships
 None.

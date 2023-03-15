@@ -1,6 +1,6 @@
 ---
-title: "Using the Intune Graph API"
-description: " Intune hybrid deployments are not supported. "
+title: "Working with Intune in Microsoft Graph"
+description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "intune"
@@ -15,6 +15,8 @@ The Microsoft Graph API for Intune enables programmatic access to Intune informa
 
 For mobile device management (MDM) scenarios, the Microsoft Graph API for Intune supports standalone deployments; Intune [hybrid deployments](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
+
+
 ## Using the Microsoft Graph API for Intune
 
 Intune provides data into the Microsoft Graph API in the same way as other cloud services do, with rich entity information and relationship navigation. Use the Microsoft Graph API to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
@@ -23,15 +25,15 @@ The following example shows how you can determine whether an application is inst
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    https://graph.microsoft.com/users/{user}/ownedDevices 
+    `https://graph.microsoft.com/users/{user}/ownedDevices`
 
 2. Then view the list of applications for your tenant: 
 
-    https://graph.microsoft.com/deviceAppManagement/mobileApps  
+    `https://graph.microsoft.com/deviceAppManagement/mobileApps`
 
 3. Take the ID from the application and determine the installation state for the application (and therefore user):
 
-    https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
+    `https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/`
 
 ## Accessing the Microsoft Graph API for Intune
 
@@ -40,6 +42,15 @@ Intune supports both [delegated permissions](/graph/auth-v2-user) and [applicati
 ## Using permissions
 
 The Microsoft Graph API controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+## Interaction between Microsoft Graph APIs for Windows updates
+
+Microsoft Graph includes two sets of APIs that you can use to manage Windows updates: 
+
+- [Intune APIs](/graph/intune-concept-overview)
+- [Windows updates APIs](/graph/windowsupdates-concept-overview)
+
+You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body. It returns a `404 Not Found` response code if the policy hasn't been applied to any directory objects.
 
 ## Examples
 
@@ -64,18 +64,11 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-appliesto-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-appliesto-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -83,7 +76,6 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/ap
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -103,12 +95,58 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "id": "19c308f2-e088-464d-8ccb-7137b7bab660",
+            "accountEnabled": true,
+            "alternativeNames": [],
+            "appDisplayName": "LinkedIn",
+            "appId": "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "LinkedIn",
+            "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=linkedin|ISV9.3|primary|z",
+            "servicePrincipalNames": [
+                "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+                "http://LinkedIn/1a2d95c1-3cc7-46ad-82dd-2c768ae1b4ff"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [
+                "4d57f64e-9941-4df2-bb70-8d9a2a38ab91",
+                "WindowsAzureActiveDirectoryGalleryApplicationPrimaryV1",
+                "WindowsAzureActiveDirectoryIntegratedApp"
+            ],
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "User"
+                    ],
+                    "description": "msiam_access",
+                    "displayName": "msiam_access",
+                    "id": "01c2bb8e-0895-42c8-b950-3ec8abc7a012",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": null
+                }
+            ],
+            "keyCredentials": [],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access LinkedIn on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access LinkedIn",
+                    "id": "6edde65d-3f90-4251-9df2-0329b678b368",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access LinkedIn on your behalf.",
+                    "userConsentDisplayName": "Access LinkedIn",
+                    "value": "user_impersonation"
+                }
+            ],
+            "passwordCredentials": []
+        }
+    ]
 }
 ```
 

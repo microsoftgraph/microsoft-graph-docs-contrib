@@ -1,8 +1,8 @@
 ---
 title: "connect action"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |ownerUserPrincipalName|String|Not yet documented|
-|serviceAccountCredentials|String|Not yet documented|
+|ownerAccessToken|String|Not yet documented|
 
 
 
@@ -64,11 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
 
 Content-type: application/json
-Content-length: 136
+Content-length: 118
 
 {
   "ownerUserPrincipalName": "Owner User Principal Name value",
-  "serviceAccountCredentials": "Service Account Credentials value"
+  "ownerAccessToken": "Owner Access Token value"
 }
 ```
 
@@ -83,6 +83,3 @@ Content-Length: 29
   "value": "inprogress"
 }
 ```
-
-
-

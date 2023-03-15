@@ -65,7 +65,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and an **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -143,7 +143,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.office365ActivationsUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -152,7 +152,6 @@ Content-Type: application/json
 Content-Length: 233
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

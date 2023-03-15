@@ -1,6 +1,6 @@
 ---
 title: "page: copyToSection"
-description: "Copies a page to a specific section."
+description: "Copy a page to a specific section."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Copies a page to a specific section.
+Copy a page to a specific section.
 
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +38,7 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string | `application/json` |
+| Content-Type | string | application/json |
 
 ## Request body
 In the request body, provide a JSON object that contains the parameters that your operation needs.
@@ -55,9 +55,9 @@ In the request body, provide a JSON object that contains the parameters that you
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,13 +67,13 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
   "groupId": "groupId-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/page-copytosection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,19 +82,26 @@ Content-length: 52
 [!INCLUDE [sample-code](../includes/snippets/javascript/page-copytosection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/page-copytosection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/page-copytosection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/page-copytosection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/page-copytosection-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->

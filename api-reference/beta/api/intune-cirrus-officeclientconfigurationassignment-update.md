@@ -1,8 +1,8 @@
 ---
 title: "Update officeClientConfigurationAssignment"
 description: "Update the properties of a officeClientConfigurationAssignment object."
-ms.localizationpriority: medium
-author: "dougeby"
+localization_priority: Normal
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -87,6 +87,3 @@ Content-Length: 221
   }
 }
 ```
-
-
-

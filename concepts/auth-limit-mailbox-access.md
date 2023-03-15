@@ -11,7 +11,18 @@ ms.prod: "applications"
 Administrators who want to limit app access to specific mailboxes can create an application access policy by using the **New-ApplicationAccessPolicy** PowerShell cmdlet. This article covers the basic steps to configure access control. These steps are specific to Exchange Online resources and do not apply to other Microsoft Graph workloads. 
 
 ## Background
-Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user. 
+Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user.
+
+> [!IMPORTANT]
+> 
+> By default, apps that have been granted application permissions to the following data sets can access all the mailboxes in the organization:
+> 
+> - [Calendars](permissions-reference.md#calendars-permissions)
+> - [Contacts](permissions-reference.md#contacts-permissions)
+> - [Mail](permissions-reference.md#mail-permissions)
+> - [Mailbox settings](permissions-reference.md#mail-permissions)
+> 
+>Administrators can configure [application access policy](#configure-applicationaccesspolicy) to limit app access to _specific_ mailboxes.
 
 There are scenarios where administrators may want to limit an app to only specific mailboxes and _not all_ Exchange Online mailboxes in the organization. Administrators can identify the set of mailboxes to permit access by putting them in a mail-enabled security group. Administrators can then limit third-party app access to only that set of  mailboxes by creating an application access policy for access to that group.
 
@@ -41,7 +52,7 @@ To configure an application access policy and limit the scope of application per
     ```
     The output of this command will indicate whether the app has access to User1’s mailbox.
 
->**Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.**
+>**Note:** Changes to application access policies can take longer than 1 hour to take effect in Microsoft Graph REST API calls, even when `Test-ApplicationAccessPolicy` shows positive results.
 
 ## Supported permissions and additional resources
 

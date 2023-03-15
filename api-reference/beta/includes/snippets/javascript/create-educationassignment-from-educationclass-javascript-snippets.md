@@ -11,24 +11,24 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignment = {
-  dueDateTime: '2014-02-01T00:00:00Z',
-  displayName: 'Midterm 1',
+    dueDateTime: '2022-09-16T00:00:00Z',
+    displayName: 'Reading test 09.14 Beta',
     instructions: {
-      contentType: 'text',
-      content: 'Read chapters 1 through 3'
+        contentType: 'text',
+        content: 'Read chapter 4'
     },
-      grading: {
+    grading: {
         '@odata.type': '#microsoft.graph.educationAssignmentPointsGradeType',
-        maxPoints: 100
-      },
-      assignTo: {
+        maxPoints: 50
+    },
+    assignTo: {
         '@odata.type': '#microsoft.graph.educationAssignmentClassRecipient'
-      },
-      status: 'draft',
-      allowStudentsToAddResourcesToSubmission: true
+    },
+    status: 'draft',
+    allowStudentsToAddResourcesToSubmission: true
 };
 
-await client.api('/education/classes/8b8cec7f-d0d8-4974-982a-e29396ddbe7f/assignments')
+await client.api('/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments')
 	.version('beta')
 	.post(educationAssignment);
 

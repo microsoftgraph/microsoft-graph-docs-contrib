@@ -4,37 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var requests = new List<SearchRequestObject>()
+var requestBody = new Microsoft.Graph.Beta.Search.Query.QueryPostRequestBody
 {
-	new SearchRequestObject
+	Requests = new List<SearchRequest>
 	{
-		EntityTypes = new List<EntityType>()
+		new SearchRequest
 		{
-			EntityType.ExternalItem
+			EntityTypes = new List<EntityType?>
+			{
+				EntityType.ExternalItem,
+			},
+			ContentSources = new List<string>
+			{
+				"/external/connections/connectionfriendlyname",
+			},
+			Query = new SearchQuery
+			{
+				QueryString = "contoso product",
+			},
+			From = 0,
+			Size = 25,
+			Fields = new List<string>
+			{
+				"title",
+				"description",
+			},
 		},
-		ContentSources = new List<String>()
-		{
-			"/external/connections/connectionfriendlyname"
-		},
-		Query = new SearchQuery
-		{
-			QueryString = "contoso product"
-		},
-		From = 0,
-		Size = 25,
-		Fields = new List<String>()
-		{
-			"title",
-			"description"
-		}
-	}
+	},
 };
+var result = await graphClient.Search.Query.PostAsync(requestBody);
 
-await graphClient.Search
-	.Query(requests,null)
-	.Request()
-	.PostAsync();
 
 ```

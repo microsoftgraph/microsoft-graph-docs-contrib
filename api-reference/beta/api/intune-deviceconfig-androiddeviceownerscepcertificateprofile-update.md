@@ -1,8 +1,8 @@
 ---
 title: "Update androidDeviceOwnerScepCertificateProfile"
 description: "Update the properties of a androidDeviceOwnerScepCertificateProfile object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -75,6 +75,8 @@ The following table shows the properties that are required when you create the [
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 
 
@@ -88,7 +90,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1982
+Content-length: 2207
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
@@ -147,6 +149,13 @@ Content-length: 1982
       "sanType": "emailAddress",
       "name": "Name value"
     }
+  ],
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
   ]
 }
 ```
@@ -156,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2154
+Content-Length: 2379
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
@@ -218,9 +227,13 @@ Content-Length: 2154
       "sanType": "emailAddress",
       "name": "Name value"
     }
+  ],
+  "certificateAccessType": "specificApps",
+  "silentCertificateAccessDetails": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+      "packageId": "Package Id value"
+    }
   ]
 }
 ```
-
-
-

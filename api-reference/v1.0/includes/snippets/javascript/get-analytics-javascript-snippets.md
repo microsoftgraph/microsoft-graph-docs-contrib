@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let itemAnalytics = await client.api('/drives/{drive-id}/items/{item-id}/analytics')
+let itemActivityStat = await client.api('/drives/{drive-id}/items/{item-id}/analytics/allTime')
 	.get();
 
 ```

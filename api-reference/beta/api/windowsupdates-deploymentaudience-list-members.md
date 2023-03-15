@@ -1,7 +1,7 @@
 ---
 title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
-author: "Alice-at-Microsoft"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -34,13 +34,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/windows/updates/deployments/{deploymentId}/audience/members
+GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/members
 ```
+**Note:** Only $skiptoken is supported for paging, client-driven paging is not impelemented.
 
-## Optional query parameters
-This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
-
-To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type for the property. For example, to select [azureADDevice](../resources/windowsupdates-azureaddevice.md) `errors`, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
 
 ## Request headers
 |Name|Description|
@@ -61,31 +58,34 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_updatableasset"
+  "name": "list_updatableasset_deploymentID"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/members
+GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/be0538f6-91d8-4b4a-8dbc-d6f9b70da20b/members
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-deploymentid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-updatableasset-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-updatableasset-deploymentid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-deploymentid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-deploymentid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-updatableasset-deploymentid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 
@@ -104,17 +104,14 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "fb95f07d-9e73-411d-99ab-7eca3a5122b1",
-      "errors": [
-        {
-          "@odata.type": "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError"
-        }
-      ],
+      "errors": [],
       "enrollments": [
         {
-          "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment"
+          "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
+          "updateCategory": "feature"
         }
       ]
-    },
+    }
   ]
 }
 ```

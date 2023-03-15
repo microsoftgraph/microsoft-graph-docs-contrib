@@ -4,7 +4,7 @@ description: "Represents the role definitions. For Azure resources, it can repre
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "rkarim-ms"
 ---
 
 # governanceRoleDefinition resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
 Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.

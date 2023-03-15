@@ -16,13 +16,13 @@ Namespace: microsoft.graph.ediscovery
 In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports. For details, see [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
 >[!NOTE]
->Starting in September 2021, POST operations will create large cases. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
+>Starting in September 2021, POST operations will create large cases. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-new-case-format). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List case](../api/ediscovery-case-list.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) collection | Retrieve a list of [case](../resources/ediscovery-case.md) objects.|
+| [List cases](../api/ediscovery-case-list.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) collection | Retrieve a list of [case](../resources/ediscovery-case.md) objects.|
 | [Create case](../api/ediscovery-case-post.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Create a new **case** object. |
 | [Get case](../api/ediscovery-case-get.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Retrieve the properties and relationships of a **case** object. |
 | [Update case](../api/ediscovery-case-update.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Update the properties of a **case** object. |
@@ -39,9 +39,9 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 | [List reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get the list of [reviewSets](../resources/ediscovery-reviewset.md) from a **case** object.|
 | [Create reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Create a new [reviewSet](../resources/ediscovery-reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.|
 | Case settings |
-| [Get settings](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
-| [Update settings](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Update the properties of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
-| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|Reset all settings to the default values. |
+| [Get caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object. |
+| [Update caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSsettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object. |
+| [resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values. |
 | Source collections |
 | [List sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) from a **case** object.|
 | [Create sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
@@ -85,7 +85,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 |noncustodialDataSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection| Returns a list of case **noncustodialDataSource** objects for this **case**.  Nullable. |
 |operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) collection| Returns a list of case **operation** objects for this **case**. Nullable. |
 |reviewSets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection| Returns a list of **reviewSet** objects in the case. Read-only. Nullable. |
-|Settings|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |
+|caseSettings|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |
 |sourceCollections|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Returns a list of **sourceCollection** objects associated with this case.|
 |tags|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Returns a list of **tag** objects associated to this case.|
 

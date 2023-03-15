@@ -1,8 +1,8 @@
 ---
 title: "platformType enum type"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -29,6 +29,3 @@ Not yet documented
 |windows81AndLater|6|Not yet documented|
 |windows10AndLater|7|Not yet documented|
 |androidWorkProfile|8|Not yet documented|
-
-
-

@@ -11,10 +11,10 @@ doc_type: resourcePageType
 The service communications API provides service health and message center posts pertaining to the Microsoft cloud services subscribed by your tenant. You can get current and historical health data of a Microsoft service (for example, the Exchange Online service is down). You can check the service health to determine if an issue is tracked and a resolution is in progress before calling support or spending time troubleshooting. Message center posts let you keep track of upcoming changes, including new features, updates, and other important announcements (for example, Exchange Online is getting a new feature).
 
 ## Authorization
-Microsoft Graph lets applications get authorized access to health and change communications about a Microsoft cloud service subscribed by a tenant. 
+Microsoft Graph enables applications get authorized access to health and change communications about a Microsoft cloud service subscribed by a tenant. 
 With the appropriate delegated or application [permissions](/graph/permissions-reference#service-communications-permissions), your app can access the communications data on behalf of a signed-in user, or without any signed-in user in the tenant. Both delegated and application types of these permissions are granted by only an administrator.
 
-For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
+For more information about access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
 ### Access service communications API on behalf of signed-in user
 
@@ -38,10 +38,10 @@ Application permissions are needed to access the service communications API with
 | Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-1.0&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
 | Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-1.0&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
 
-## API on Microsoft Graph national clouds
-Service communications API is available on Microsoft Graph national clouds as well. You could get service health and communications data for your national clouds tenants. More information about [Microsoft Graph national clouds](/graph/deployments).
+## Microsoft Graph national cloud availability
+The service communications API is available on Microsoft Graph national clouds. You can get service health and communications data for your national clouds tenants. 
 
-|National clouds|API url (partial)|
+|National clouds|API URL (partial)|
 |:--------------|:-----------------|
 |Microsoft Graph global service| https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/|
 |Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/v1.0/admin/serviceAnnouncement/|
@@ -49,12 +49,18 @@ Service communications API is available on Microsoft Graph national clouds as we
 |Microsoft Graph Germany|https://graph.microsoft.de/v1.0/admin/serviceAnnouncement/|
 |Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/v1.0/admin/serviceAnnouncement/|
 
+For details about national cloud availability, see [Microsoft Graph national clouds](/graph/deployments).
+
+## Service communications limits
+
+To guarantee the service performance, the service communications API has throttling limits for the requests per tenant per application. For details about the limits, see [throttling limits for the service communications service](/graph/throttling#service-communications-service-limits).
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 
-The service communications API can open up new ways for you to engage with users:
+The service communications API can open up new ways for you to engage with users. For more information, see the following:
 
 - [Overview for accessing service health and communications in Microsoft Graph](/graph/service-communications-concept-overview)
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

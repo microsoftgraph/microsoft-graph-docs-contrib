@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getSharePointSiteUsageSiteCounts"
-description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
+description: "Get the trend of total and active site count during the reporting period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
+Get the trend of total and active site count during the reporting period.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
@@ -79,7 +79,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusagesitecounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageSiteCounts(period='D7')
 ```
 

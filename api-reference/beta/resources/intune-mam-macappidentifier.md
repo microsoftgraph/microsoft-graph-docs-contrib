@@ -1,8 +1,8 @@
 ---
 title: "macAppIdentifier resource type"
 description: "The identifier for a Mac app."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,6 +41,3 @@ Here is a JSON representation of the resource.
   "bundleId": "String"
 }
 ```
-
-
-

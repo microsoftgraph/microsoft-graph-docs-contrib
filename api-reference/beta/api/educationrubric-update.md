@@ -2,7 +2,7 @@
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 ms.localizationpriority: medium
-author: "dipakboyed"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [educationRubric](../resources/educationrubric.md) object.
+Update the properties of an [educationRubric](../resources/educationrubric.md) object. Only teachers can perform this operation.
 
 Updating a rubric attached to an assignment (`PATCH /education/classes/{id}/assignments/{id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/classes/{id}/assignments/{id}/rubric](educationrubric-get.md), but it cannot be updated.
 
@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|educationAssignmentGradeType|Whether this rubric has points or not.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` for a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) for a rubric with points.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
@@ -78,6 +78,7 @@ Content-type: application/json
   "displayName": "Example Credit Rubric after display name patch"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,16 +87,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationrubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationrubric-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationrubric-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-educationrubric-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

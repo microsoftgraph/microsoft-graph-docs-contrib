@@ -1,8 +1,8 @@
 ---
 title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -64,6 +64,7 @@ Here is a JSON representation of the resource.
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "String",
+    "auditActorType": "String",
     "userPermissions": [
       "String"
     ],
@@ -102,12 +103,10 @@ Here is a JSON representation of the resource.
         }
       ],
       "type": "String",
+      "auditResourceType": "String",
       "resourceId": "String"
     }
   ],
   "category": "String"
 }
 ```
-
-
-

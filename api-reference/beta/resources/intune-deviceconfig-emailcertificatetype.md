@@ -1,8 +1,8 @@
 ---
 title: "emailCertificateType enum type"
 description: "Supported certificate sources for email signing and encryption."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,3 @@ Supported certificate sources for email signing and encryption.
 |none|0|Do not use a certificate as a source.|
 |certificate|1|Use an certificate for certificate source.|
 |derivedCredential|2|Use a derived credential for certificate source.|
-
-
-

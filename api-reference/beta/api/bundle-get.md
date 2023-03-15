@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-title: Get bundle
-description: Get a bundle of driveItems
+author: "JeremyKelley"
+title: "Get bundle"
+description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a [bundle][] based on the bundle's unique ID.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /drive/items/{bundle-id}
 ```
 
 Because bundles are items, you can use the **items** collection to return metadata about a bundle.
-You can also use the **bundles** collection as a convenience to ensure you're getting a bundle in response.
+You can also use the **bundles** collection as a convenience to ensure you get a bundle in the response.
 
 ## Optional query parameters
 
@@ -42,8 +42,8 @@ You can use the [OData query parameters][odata-parameters] to restrict the shape
 ## Request headers
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
-| if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.
+| Authorization | Bearer {token}. Required. |
+| if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, a `304 Not Modified` response is returned.|
 
 ## Request body
 
@@ -51,9 +51,9 @@ Do not supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.
+If successful, this method returns a `200 OK` response code and a [driveItem][driveItem] object that contains the [bundle][bundle] in the response body.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Microsoft Graph error responses and resource types][error-response].
 
 ## Examples
 
@@ -61,23 +61,17 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
+GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-metadata-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -86,8 +80,11 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 ---
 
-
 #### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -113,31 +110,23 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability.
-
 ### Example 2: Get a bundle and its children in a single call
 
-You can use the [`expand`](/graph/query-parameters) query string parameter to include the children of a bundle in the same call as retrieving the metadata of a bundle.
+Use the `expand` [query string parameter](/graph/query-parameters) to include the children of a bundle in the same request that retrieves the metadata of a bundle.
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
+GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-and-children-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -146,14 +135,15 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 ---
 
-
 #### Response
 
-This call will return the bundle metadata and a list of children of the bundle.
+The following is an example of the response. This call will return the bundle metadata and a list of children of the bundle.
 If the bundle has no children, it will return an empty collection.
 
 If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be
 used to request the next page of children in the bundle.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -171,8 +161,6 @@ Content-Type: application/json
   "children@odata.nextLink": "https://api.onedrive.com/v1.0/..."
 }
 ```
-
-The response object shown here might be shortened for readability.
 
 
 [bundle]: ../resources/bundle.md

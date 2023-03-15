@@ -11,17 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents an entity.
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
+|id|String| The unique idenfier for an entity. Read-only.|
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

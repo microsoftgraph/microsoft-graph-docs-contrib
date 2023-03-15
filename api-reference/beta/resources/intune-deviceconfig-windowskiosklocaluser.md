@@ -1,8 +1,8 @@
 ---
 title: "windowsKioskLocalUser resource type"
 description: "The class used to identify a local account for the kiosk configuration"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,6 +41,3 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
-
-
-

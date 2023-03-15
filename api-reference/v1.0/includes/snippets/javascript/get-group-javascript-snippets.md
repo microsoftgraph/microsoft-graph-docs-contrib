@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let group = await client.api('/sites/mycompany.sharepoint.com,8f03a01c-dcfa-4aaf-9be5-b3fb48e538c1,739084f3-c0fa-46ac-b7f8-13b344781ad0/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C')
+let group = await client.api('/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315')
 	.get();
 
 ```

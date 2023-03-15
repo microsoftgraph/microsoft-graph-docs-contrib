@@ -14,7 +14,11 @@ const cloudPcUserSetting = {
   '@odata.type': '#microsoft.graph.cloudPcUserSetting',
   displayName: 'Example',
   selfServiceEnabled: false,
-  localAdminEnabled: true
+  localAdminEnabled: true,
+  restorePointSetting: {
+    frequencyInHours: 16,
+    userRestoreEnabled: true
+  }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/userSettings')

@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementConfigurationReferenceSettingValue resource type"
 description: "Model for ReferenceSettingValue"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -49,6 +49,3 @@ Here is a JSON representation of the resource.
   "note": "String"
 }
 ```
-
-
-

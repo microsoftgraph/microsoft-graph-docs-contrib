@@ -3,7 +3,7 @@ title: printTaskStatus resource type
 description: Represents the current execution status of a printTask.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

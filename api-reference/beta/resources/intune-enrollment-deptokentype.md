@@ -1,8 +1,8 @@
 ---
 title: "depTokenType enum type"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,6 +23,3 @@ Not yet documented
 |none|0|Token Type is None|
 |dep|1|Token Type is Dep.|
 |appleSchoolManager|2|Token Type is Apple School Manager|
-
-
-

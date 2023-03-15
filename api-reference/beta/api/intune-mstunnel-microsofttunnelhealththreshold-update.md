@@ -1,8 +1,8 @@
 ---
 title: "Update microsoftTunnelHealthThreshold"
 description: "Update the properties of a microsoftTunnelHealthThreshold object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,12 +17,12 @@ Namespace: microsoft.graph
 
 Update the properties of a [microsoftTunnelHealthThreshold](../resources/intune-mstunnel-microsofttunnelhealththreshold.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -48,11 +48,11 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The metric name|
-|healthyThreshold|Int64|The threshold for being healthy|
-|unhealthyThreshold|Int64|The threshold for being unhealthy|
-|defaultHealthyThreshold|Int64|The default threshold for being healthy|
-|defaultUnhealthyThreshold|Int64|The default threshold for being unhealthy|
+|id|String|The unique identifier for the metric name. Supports: $delete, $update. $Insert, $skip, $top is not supported. Read-only.|
+|healthyThreshold|Int64|The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized.|
+|unhealthyThreshold|Int64|The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency Unhealthy > 20ms, health metrics can be customized.|
+|defaultHealthyThreshold|Int64|The threshold for being healthy based on default health status metrics: CPU usage healthy < 50%, Memory usage healthy < 50%, Disk space healthy > 5GB, Latency healthy < 10ms, health metrics can be customized. Read-only.|
+|defaultUnhealthyThreshold|Int64|The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency unhealthy > 20ms, health metrics can be customized. Read-only.|
 
 
 
@@ -93,6 +93,3 @@ Content-Length: 243
   "defaultUnhealthyThreshold": 9
 }
 ```
-
-
-

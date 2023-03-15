@@ -1,8 +1,8 @@
 ---
 title: "sharedPCAllowedAccountType enum type"
 description: "Type of accounts that are allowed to share the PC."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -20,7 +20,3 @@ Type of accounts that are allowed to share the PC.
 |:---|:---|:---|
 |guest|1|Only guest accounts.|
 |domain|2|Only domain-joined accounts.|
-
-
-
-

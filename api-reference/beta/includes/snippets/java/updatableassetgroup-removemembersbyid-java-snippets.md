@@ -13,7 +13,7 @@ idsList.add("String");
 
 String memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
 
-graphClient.admin().windows().updates().updatableAssets("{updatableAssetGroupId}")
+graphClient.admin().windows().updates().updatableAssets("5c55730b-730b-5c55-0b73-555c0b73555c")
 	.removeMembersById(UpdatableAssetRemoveMembersByIdParameterSet
 		.newBuilder()
 		.withIds(idsList)

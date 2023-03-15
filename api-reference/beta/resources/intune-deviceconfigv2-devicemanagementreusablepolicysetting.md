@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementReusablePolicySetting resource type"
 description: "Graph model for a reusable setting"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -34,7 +34,7 @@ Graph model for a reusable setting
 |displayName|String|reusable setting display name supplied by user.|
 |description|String|reusable setting description supplied by user.|
 |settingDefinitionId|String|setting definition id associated with this reusable setting.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
 |createdDateTime|DateTimeOffset|reusable setting creation date and time. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|date and time when reusable setting was last modified. This property is read-only.|
 |version|Int32|version number for reusable setting. Valid values 0 to 2147483647. This property is read-only.|
@@ -43,7 +43,7 @@ Graph model for a reusable setting
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting|
+|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -281,6 +281,3 @@ Here is a JSON representation of the resource.
   "referencingConfigurationPolicyCount": 1024
 }
 ```
-
-
-

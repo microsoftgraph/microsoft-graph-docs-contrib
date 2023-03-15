@@ -1,8 +1,8 @@
 ---
 title: "Update iosDeviceFeaturesConfiguration"
 description: "Update the properties of a iosDeviceFeaturesConfiguration object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -88,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6889
+Content-length: 7083
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -265,7 +265,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -295,7 +297,9 @@ Content-length: 6889
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
@@ -305,7 +309,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7061
+Content-Length: 7255
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -485,7 +489,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -515,10 +521,9 @@ Content-Length: 7061
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "signInHelpText": "Sign In Help Text value",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```
-
-
-

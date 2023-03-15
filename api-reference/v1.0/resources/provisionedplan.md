@@ -2,7 +2,7 @@
 title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 ms.localizationpriority: medium
-author: "Jumaodhiss"
+author: "jumasure"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

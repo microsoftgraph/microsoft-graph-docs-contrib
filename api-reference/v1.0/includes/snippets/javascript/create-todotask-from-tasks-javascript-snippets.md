@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const todoTask = {
    title: 'A new task',
+   categories: ['Important'],
    linkedResources: [
       {
          webUrl: 'http://microsoft.com',

@@ -1,8 +1,8 @@
 ---
 title: "keyStorageProviderOption enum type"
 description: "Key Storage Provider (KSP) Import Options."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Key Storage Provider (KSP) Import Options.
 |useTpmKspOtherwiseFail|1|Import to Trusted Platform Module (TPM) KSP if present, otherwise fail.|
 |usePassportForWorkKspOtherwiseFail|2|Import to Passport for work KSP if available, otherwise fail.|
 |useSoftwareKsp|3|Import to Software KSP.|
-
-
-

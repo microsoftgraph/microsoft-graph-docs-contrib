@@ -1,8 +1,8 @@
 ---
 title: "microsoftLauncherDockPresence enum type"
 description: "Microsoft Launcher Dock Presence selection."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Microsoft Launcher Dock Presence selection.
 |show|1|Indicates the device's dock will be displayed on the device.|
 |hide|2|Indicates the device's dock will be hidden on the device, but the user can access the dock by dragging the handler on the bottom of the screen.|
 |disabled|3|Indicates the device's dock will be disabled on the device.|
-
-
-

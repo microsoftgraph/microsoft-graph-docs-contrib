@@ -1,8 +1,8 @@
 ---
 title: "payloadCompatibleAssignmentFilter resource type"
 description: "A class containing the properties used for Payload Compatible Assignment Filter."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -40,6 +40,7 @@ Inherits from [deviceAndAppManagementAssignmentFilter](../resources/intune-polic
 |platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|String|Rule definition of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |payloadType|[assignmentFilterPayloadType](../resources/intune-policyset-assignmentfilterpayloadtype.md)|PayloadType of the Assignment Filter. Possible values are: `notSet`, `enrollmentRestrictions`.|
 
 ## Relationships
@@ -66,9 +67,15 @@ Here is a JSON representation of the resource.
   "roleScopeTags": [
     "String"
   ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "String",
+      "payloadType": "String",
+      "groupId": "String",
+      "assignmentFilterType": "String"
+    }
+  ],
   "payloadType": "String"
 }
 ```
-
-
-

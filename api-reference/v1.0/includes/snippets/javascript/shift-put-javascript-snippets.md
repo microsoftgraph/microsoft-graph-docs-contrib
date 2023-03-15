@@ -60,6 +60,6 @@ const shift = {
 };
 
 await client.api('/teams/{teamId}/schedule/shifts/{shiftId}')
-	.update(shift);
+	.put(shift);
 
 ```

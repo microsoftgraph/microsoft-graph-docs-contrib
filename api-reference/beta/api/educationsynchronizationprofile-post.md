@@ -1,6 +1,6 @@
 ---
 title: "Create an educationSynchronizationProfile"
-description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "
+description: "Create a request for a new school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -40,10 +40,10 @@ POST /education/synchronizationProfiles
 In the request body, supply a JSON representation of the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object.
 
 ## Response
-If successful, this method returns a `202, Accepted` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and an [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -56,7 +56,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "#Microsoft.Education.DataSync.educationCsvDataProvider",
+        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -67,7 +67,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#Microsoft.Education.DataSync.educationIdentityCreationConfiguration",
+        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -117,12 +117,24 @@ Content-type: application/json
     "dataProvider": {
         "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
+            "school": {
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
+            "section": {
+                "optionalPropertiesToSync": [
+                    "Term Name",
+                    "Course Number",
+                    "Periods"
+                ],
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -136,19 +148,15 @@ Content-type: application/json
                     "Title",
                     "Qualification"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
-                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
-                "optionalPropertiesToSync": [],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }

@@ -30,7 +30,7 @@ const team = {
                     'teamsApp@odata.bind': 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps(\'com.microsoft.teamspace.tab.web\')',
                     displayName: 'A Pinned Website',
                     configuration: {
-                        contentUrl: 'https://docs.microsoft.com/microsoftteams/microsoft-teams'
+                        contentUrl: 'https://learn.microsoft.com/microsoftteams/microsoft-teams'
                     }
                 },
                 {

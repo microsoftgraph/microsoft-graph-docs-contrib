@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md).
 
 ## Methods
@@ -23,9 +21,9 @@ Represents a long-running Universal Print operation. Base class for operation ty
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 |id|String|The operation's identifier. Read-only.|
 |status|[printOperationStatus](printoperationstatus.md)|The status of the operation. Read-only.|
-|createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 
 ## Relationships
 None.

@@ -1,8 +1,8 @@
 ---
 title: "macOSGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -99,6 +99,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of major OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
 |softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of minor OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
 |softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of non-OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
+|touchIdTimeoutInHours|Int32|Maximum hours after which the user must enter their password to unlock the device instead of using Touch ID. Available for devices running macOS 12 and later. Valid values 0 to 2147483647|
+|iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running macOS 12 and later.|
+|iCloudDesktopAndDocumentsBlocked|Boolean|When TRUE the synchronization of cloud desktop and documents is blocked. When FALSE, synchronization of the cloud desktop and documents are allowed. Available for devices running macOS 10.12.4 and later.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -256,9 +259,9 @@ Here is a JSON representation of the resource.
   "eraseContentAndSettingsBlocked": true,
   "softwareUpdateMajorOSDeferredInstallDelayInDays": 1024,
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 1024,
-  "softwareUpdateNonOSDeferredInstallDelayInDays": 1024
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 1024,
+  "touchIdTimeoutInHours": 1024,
+  "iCloudPrivateRelayBlocked": true,
+  "iCloudDesktopAndDocumentsBlocked": true
 }
 ```
-
-
-

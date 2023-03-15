@@ -22,7 +22,7 @@ const organization = {
   technicalNotificationMails: ['tech@contoso.com']
 };
 
-await client.api('/organization/{id}')
+await client.api('/organization/84841066-274d-4ec0-a5c1-276be684bdd3')
 	.update(organization);
 
 ```

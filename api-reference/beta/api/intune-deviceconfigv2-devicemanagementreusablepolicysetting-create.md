@@ -1,8 +1,8 @@
 ---
 title: "Create deviceManagementReusablePolicySetting"
 description: "Create a new deviceManagementReusablePolicySetting object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the d
 |displayName|String|reusable setting display name supplied by user.|
 |description|String|reusable setting description supplied by user.|
 |settingDefinitionId|String|setting definition id associated with this reusable setting.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|reusable setting configuration instance|
 |createdDateTime|DateTimeOffset|reusable setting creation date and time. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|date and time when reusable setting was last modified. This property is read-only.|
 |version|Int32|version number for reusable setting. Valid values 0 to 2147483647. This property is read-only.|
@@ -531,6 +531,3 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
-
-
-

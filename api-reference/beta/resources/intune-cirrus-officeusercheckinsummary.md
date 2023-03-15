@@ -1,8 +1,8 @@
 ---
 title: "officeUserCheckinSummary resource type"
 description: "Entity that describes  tenant check-in stats."
-ms.localizationpriority: medium
-author: "dougeby"
+localization_priority: Normal
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,6 +41,3 @@ Here is a JSON representation of the resource.
   "failedUserCount": 1024
 }
 ```
-
-
-

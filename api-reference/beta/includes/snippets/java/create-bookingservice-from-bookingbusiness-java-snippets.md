@@ -43,6 +43,9 @@ defaultRemindersList.add(defaultReminders);
 bookingService.defaultReminders = defaultRemindersList;
 bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
+bookingService.isLocationOnline = true;
+bookingService.smsNotificationsEnabled = true;
+bookingService.languageTag = "en-US";
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
 bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
@@ -59,8 +62,9 @@ LinkedList<String> staffMemberIdsList = new LinkedList<String>();
 staffMemberIdsList.add("d90d1e8c-5cfe-48cf-a2d5-966267375b6a");
 staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
+bookingService.isAnonymousJoinEnabled = false;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").services()
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").services()
 	.buildRequest()
 	.post(bookingService);
 

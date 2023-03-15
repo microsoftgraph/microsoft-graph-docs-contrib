@@ -1,8 +1,8 @@
 ---
 title: "iosGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -228,6 +228,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |wiFiConnectToAllowedNetworksOnlyForced|Boolean|Require devices to use Wi-Fi networks set up via configuration profiles. Available for devices running iOS and iPadOS versions 14.5 and later.|
 |onDeviceOnlyTranslationForced|Boolean|When set to TRUE, the setting disables connections to Siri servers so that users can’t use Siri to translate text. When set to FALSE, the setting allows connections to to Siri servers to users can use Siri to translate text. Available for devices running iOS and iPadOS versions 15.0 and later.|
 |managedPasteboardRequired|Boolean|Open-in management controls how people share data between unmanaged and managed apps. Setting this to true enforces copy/paste restrictions based on how you configured <b>Block viewing corporate documents in unmanaged apps </b> and <b> Block viewing non-corporate documents in corporate apps.</b>|
+|iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running iOS 15 and later.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
@@ -549,9 +550,7 @@ Here is a JSON representation of the resource.
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "String"
 }
 ```
-
-
-

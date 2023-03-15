@@ -3,7 +3,7 @@ title: "complianceInformation resource type"
 description: "This resource contains compliance data associated with secure score control."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -17,8 +17,8 @@ Contains compliance data associated with secure score control.
 
 |Property |Type |Description |
 |:--|:--|:--|
-|certificationName|String| Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
 |certificationControls|[certificationControl](certificationcontrol.md) collection|Collection of the certification controls associated with certification|
+|certificationName|String| Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
 
 ## JSON representation
 
@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "certificationName": "String",
-  "certificationControls": [{"@odata.type": "microsoft.graph.certificationControl"}]
+  "certificationControls": [{"@odata.type": "microsoft.graph.certificationControl"}],
+  "certificationName": "String"
 }
 
 ```

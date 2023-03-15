@@ -2,7 +2,7 @@
 title: "roleManagement resource type"
 description: "RBAC role management resource"
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

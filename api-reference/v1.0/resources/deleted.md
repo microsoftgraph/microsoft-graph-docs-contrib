@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Deleted
 ms.localizationpriority: medium
 description: "The Deleted resource indicates that the item has been deleted."
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
 

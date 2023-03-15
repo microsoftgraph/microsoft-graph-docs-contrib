@@ -1,8 +1,8 @@
 ---
 title: "userExperienceAnalyticsAppHealthDevicePerformanceDetails resource type"
 description: "The user experience analytics device performance entity contains device performance details."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -62,6 +62,3 @@ Here is a JSON representation of the resource.
   "deviceDisplayName": "String"
 }
 ```
-
-
-

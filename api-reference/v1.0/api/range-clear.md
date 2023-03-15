@@ -11,7 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Clear range values, format, fill, border, etc.
+Clear range values such as format, fill, and border.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +31,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -62,22 +63,14 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
-Content-length: 32
 
 {
   "applyTo": "applyTo-value"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/range-clear-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-clear-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/range-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,7 +78,6 @@ Content-length: 32
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response. 

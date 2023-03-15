@@ -10,8 +10,6 @@ doc_type: apiPageType
 # reportRoot: getGroupArchivedPrintJobs
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Get a list of archived print jobs for a particular group.
 
 ## Permissions
@@ -36,13 +34,15 @@ GET /reports/getGroupArchivedPrintJobs
 ```
 
 ## Function parameters
+In the request URL, provide the following function parameters with values:
 
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | Yes       | The ID of the group to return data for.                              |
-| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
-| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
+| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from.|
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.|
 
+>**Note:** If a value is not required, pass the parameter with null value.
 ## Request headers
 |Name|Description|
 |:---|:---|

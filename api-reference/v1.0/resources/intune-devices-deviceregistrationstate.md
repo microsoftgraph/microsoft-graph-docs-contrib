@@ -1,8 +1,8 @@
 ---
 title: "deviceRegistrationState enum type"
 description: "Device registration status."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -26,7 +26,3 @@ Device registration status.
 |certificateReset|6|The device certificate has been reset.|
 |notRegisteredPendingEnrollment|7|The device is not registered and pending enrollment.|
 |unknown|8|The device registration status is unknown.|
-
-
-
-

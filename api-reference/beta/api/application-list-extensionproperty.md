@@ -1,19 +1,19 @@
 ---
-title: "List extensionProperties"
-description: "Retrieve a list of extensionproperty objects."
+title: "List extensionProperties (directory extensions)"
+description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
 
-# List extensionProperties
+# List extensionProperties (directory extensions)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
+Retrieve the list of directory extension definitions, represented by [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
 
 ## Permissions
 
@@ -21,21 +21,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All    |
-|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /applications/{id}/extensionProperties
+GET /applications/{application ObjectId}/extensionProperties
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` (`eq` on **name**) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -64,8 +66,9 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -74,16 +77,23 @@ GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-extensionproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-extensionproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-extensionproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-extensionproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-extensionproperties-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-extensionproperties-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -101,16 +111,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties",
     "value": [
         {
-            "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+            "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
             "deletedDateTime": null,
-            "appDisplayName": "Display name",
-            "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
             "targetObjects": [
-            	"Application"
+                "User"
+            ]
+        },
+        {
+            "id": "1f0f15e3-925d-40f0-8fc8-9d3ad135bce0",
+            "deletedDateTime": null,
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "targetObjects": [
+                "User"
             ]
         }
     ]

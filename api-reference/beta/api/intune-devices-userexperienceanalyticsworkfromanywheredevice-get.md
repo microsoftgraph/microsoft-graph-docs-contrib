@@ -1,8 +1,8 @@
 ---
 title: "Get userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Read properties and relationships of the userExperienceAnalyticsWorkFromAnywhereDevice object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,12 +63,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1349
+Content-Length: 1463
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
     "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+    "deviceId": "Device Id value",
     "deviceName": "Device Name value",
     "serialNumber": "Serial Number value",
     "manufacturer": "Manufacturer value",
@@ -85,6 +86,7 @@ Content-Length: 1349
     "tenantAttached": true,
     "compliancePolicySetToIntune": true,
     "otherWorkloadsSetToIntune": true,
+    "isCloudManagedGatewayEnabled": true,
     "upgradeEligibility": "unknown",
     "ramCheckFailed": true,
     "storageCheckFailed": true,
@@ -95,6 +97,7 @@ Content-Length: 1349
     "processorFamilyCheckFailed": true,
     "processor64BitCheckFailed": true,
     "osCheckFailed": true,
+    "workFromAnywhereScore": 7.0,
     "windowsScore": 4.0,
     "cloudManagementScore": 6.666666666666667,
     "cloudIdentityScore": 6.0,
@@ -103,6 +106,3 @@ Content-Length: 1349
   }
 }
 ```
-
-
-

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var b2xUserFlows = await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"]
 	.Request()
-	.Expand("postAttributeCollection")
+	.Expand("postFederationSignup,postAttributeCollection")
 	.Select("ApiConnectorConfiguration")
 	.GetAsync();
 

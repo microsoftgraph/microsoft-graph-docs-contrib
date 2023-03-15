@@ -1,6 +1,6 @@
 ---
-title: "Overview of the Microsoft Search API in Microsoft Graph"
-description: "Use the Microsoft Search API to index content and add search across your Office and indexed content to your apps."
+title: "Microsoft Search API in Microsoft Graph overview"
+description: "Use the Microsoft Search API in Microsoft Graph to extend Microsoft Search to your apps. Query data that Microsoft Search indexes and include custom external data."
 ms.localizationpriority: high
 ms.prod: "search"
 author: "snlraju-msft"
@@ -16,13 +16,13 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 
 ### One unified search endpoint for Microsoft cloud data
 
-The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
+The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query) data in the Microsoft cloud&mdash;messages and events in Outlook mailboxes and files on OneDrive and SharePoint&mdash;that Microsoft Search already indexes.
 
 ### Include custom external data in search experience
 
-Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source. 
+Use [Microsoft Graph connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud in your search experience. For instance, connect to an organization's human resources database or product catalog. Then use the Microsoft Search API to seamlessly [query](/graph/api/search-query) the external data source.
 
-Browse the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases) to index external custom items and query specific external data sources.
+Browse the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to find ready-to-use connectors. Alternatively, you can [build your own connectors](/graph/api/resources/indexing-api-overview#common-use-cases) to index external custom items and query specific external data sources.
 
 ### Consistent, up-to-date search experience
 
@@ -35,15 +35,17 @@ The Microsoft Search API supports searching the following content in the Microso
 - Outlook email [message](/graph/api/resources/message) and calendar [event](/graph/api/resources/event) resources.
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
 - [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
-- Content ingested through the Microsoft Graph connectors platform : [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resources.
+- Content ingested through the Microsoft Graph connectors platform: [externalItem](/graph/api/resources/externalitem) resources.
+- Administrative search answer resources: [acronyms](/graph/api/resources/search-acronym), [bookmarks](/graph/api/resources/search-bookmark), and [QnA](/graph/api/resources/search-qna) resources.
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true) (v1.0)
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) (preview)
-- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (preview)
+- [Use the Microsoft Search API to query data v1.0](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Use the Microsoft Search API to query data beta](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview)
+- [Use the Microsoft Search API to manage administrative search answers beta](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (preview)
 
 ## Next steps
 
@@ -53,18 +55,16 @@ Looking for the API reference for this service?
   - [Index external content](connecting-external-content-manage-items.md)
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
-  - [Search content in Sharepoint and OneDrive](search-concept-files.md)
+  - [Search content in SharePoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md)
   - [Search person](search-concept-person.md) (preview)
-  - [Sort search results](search-concept-sort.md) (preview)
-  - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Manage administrative search answers](search-concept-answers.md) (preview)
+  - [Manage search results layout](search-concept-display-layout.md) (preview)
+  - [Refine search results](search-concept-aggregation.md)
   - [Request spelling correction](search-concept-speller.md) (preview)
-  - [Search display layout](search-concept-display-layout.md) (preview)
- 
-  
-- Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+  - [Sort search results](search-concept-sort.md)
+  - [Use query templates](search-concept-query-template.md) (preview)
+  - [Trim duplicate search results](search-concept-trim-duplicate.md) (preview)
+- Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
-
-## See also
-
-- Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph)  or on GitHub
+- Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph) or on GitHub.

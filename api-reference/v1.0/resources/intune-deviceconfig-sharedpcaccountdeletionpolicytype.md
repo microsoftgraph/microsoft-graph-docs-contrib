@@ -1,8 +1,8 @@
 ---
 title: "sharedPCAccountDeletionPolicyType enum type"
 description: "Possible values for when accounts are deleted on a shared PC."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -21,7 +21,3 @@ Possible values for when accounts are deleted on a shared PC.
 |immediate|0|Delete immediately.|
 |diskSpaceThreshold|1|Delete at disk space threshold.|
 |diskSpaceThresholdOrInactiveThreshold|2|Delete at disk space threshold or inactive threshold.|
-
-
-
-

@@ -2,7 +2,7 @@
 title: "conditionalAccessUsers resource type"
 description: "Represents users, groups, and roles included in and excluded from the policy scope."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -21,6 +21,8 @@ Represents users, groups, and roles included in and excluded from the policy sco
 |:-------------|:------------|:------------|
 | includeUsers | String collection | User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`. |
 | excludeUsers | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
+| includeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users included in the policy scope. Optionally populated. |
+| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users excluded in the policy scope. Optionally populated. |
 | includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded, or `All`. |
 | excludeGroups | String collection | Group IDs excluded from scope of policy. |
 | includeRoles | String collection | Role IDs in scope of policy unless explicitly excluded, or `All`. |
@@ -39,6 +41,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "includeUsers",
     "excludeUsers",
+    "includeGuestsOrExternalUsers",
+    "excludeGuestsOrExternalUsers",
     "includeGroups",
     "excludeGroups",
     "includeRoles",
@@ -53,9 +57,11 @@ The following is a JSON representation of the resource.
   "excludeGroups": ["String"],
   "excludeRoles": ["String"],
   "excludeUsers": ["String"],
+  "excludeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"},
   "includeGroups": ["String"],
   "includeRoles": ["String"],
-  "includeUsers": ["String"]
+  "includeUsers": ["String"],
+  "includeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"}
 }
 ```
 

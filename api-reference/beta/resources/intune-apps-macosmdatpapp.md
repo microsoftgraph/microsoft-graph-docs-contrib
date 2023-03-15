@@ -1,8 +1,8 @@
 ---
 title: "macOSMdatpApp resource type"
-description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App."
-author: "dougeby"
-ms.localizationpriority: medium
+description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App. This will be deprecated for MacOSMicrosoftDefenderApp."
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App.
+Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App. This will be deprecated for MacOSMicrosoftDefenderApp.
 
 
 Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
@@ -102,6 +102,3 @@ Here is a JSON representation of the resource.
   "supersededAppCount": 1024
 }
 ```
-
-
-

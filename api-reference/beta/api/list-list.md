@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 description: "Get the collection of lists for a site."
-ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -15,8 +14,8 @@ Namespace: microsoft.graph
 
 Get the collection of [lists][] for a [site][].
 
-[lists]: ../resources/list.md
-[site]: ../resources/site.md
+Lists with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
 
 ## Permissions
 
@@ -34,9 +33,25 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/{site-id}/lists
 ```
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body. 
+
 ## Example
 
-#### Request
+### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -45,6 +60,7 @@ GET /sites/{site-id}/lists
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -53,18 +69,27 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-lists-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enum-lists-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/enum-lists-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-##### Response
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -98,11 +123,9 @@ Content-type: application/json
 }
 ```
 
-## Remarks
-
-Lists with the [system][] facet are hidden by default.
-To list them, include `system` in your `$select` statement.
-
+[lists]: ../resources/list.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 [system]: ../resources/systemfacet.md
 
 <!--

@@ -1,8 +1,8 @@
 ---
 title: "intendedPurpose enum type"
 description: "PFX Import Options."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,6 +25,3 @@ PFX Import Options.
 |smimeSigning|3|SmimeSigning|
 |vpn|4|VPN|
 |wifi|5|Wifi|
-
-
-

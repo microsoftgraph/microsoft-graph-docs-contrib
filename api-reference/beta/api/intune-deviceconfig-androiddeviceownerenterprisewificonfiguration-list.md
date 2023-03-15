@@ -1,8 +1,8 @@
 ---
 title: "List androidDeviceOwnerEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerEnterpriseWiFiConfiguration objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 2373
 
 {
   "value": [
@@ -105,7 +105,15 @@ Content-Length: 1993
       "wiFiSecurityType": "wep",
       "preSharedKey": "Pre Shared Key value",
       "preSharedKeyIsSet": true,
+      "proxySettings": "manual",
+      "proxyManualAddress": "Proxy Manual Address value",
+      "proxyManualPort": 15,
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "proxyExclusionList": "Proxy Exclusion List value",
       "eapType": "eapTtls",
+      "trustedServerCertificateNames": [
+        "Trusted Server Certificate Names value"
+      ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -114,6 +122,3 @@ Content-Length: 1993
   ]
 }
 ```
-
-
-

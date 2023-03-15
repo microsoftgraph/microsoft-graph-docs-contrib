@@ -1,8 +1,8 @@
 ---
 title: "driverUpdateProfileApprovalType enum type"
 description: "An enum type to represent approval type of a driver update profile."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,6 +22,3 @@ An enum type to represent approval type of a driver update profile.
 |:---|:---|:---|
 |manual|0|This indicates a driver and firmware profile needs to be approved manually.|
 |automatic|1|This indicates a driver and firmware profile is approved automatically.|
-
-
-

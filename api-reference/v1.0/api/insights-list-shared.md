@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Calculated insight that includes the list of documents shared with a user.
 
+This insight includes documents hosted on OneDrive/SharePoint in the user's Microsoft 365 tenant that are shared with the user, and documents that are attached as files and sent to the user.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 Get a list of documents shared with the signed-in user.
 
->**Note**: Only the user can make requests using the user's id or principal name.
+>**Note**: Only the user can make requests using the user's ID or principal name.
 
 ```http
 GET /me/insights/shared
@@ -67,16 +69,20 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.
 ## Example
 
-##### Request
+## Examples
 
-Here is an example of the request.
+### Request
+
+The following is an example of a request.
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

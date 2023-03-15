@@ -35,10 +35,10 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 
 The following are current known limitations:
 
-- Organizations are limited to a maximum of 10 connections.
-- You can create only four `externalItem` resources items per second.
-- An application is limited to four concurrent operations on a connection.
-- Connections have a capacity limit of 700,000 items or ~70 GB of data.
+- Organizations are limited to a maximum of 10 connections (reach out if you need more).
+- You can create up to 25 `externalItem` resources items per second.
+- An application is limited to 25 concurrent operations on a connection.
+- Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
 - Sorting results is not supported.
 
@@ -49,7 +49,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md), and [externalItem](externalconnectors-externalitem.md) resources.
-- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([learn more](https://developer.microsoft.com/en-us/graph/blogs/postman-collections))
+- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([learn more](https://developer.microsoft.com/graph/blogs/postman-collections))
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 
 

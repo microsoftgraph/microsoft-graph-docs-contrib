@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [deviceManagementDomainJoinConnector](/graph/api/resources/devicemanagementdomainjoinconnector)  </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector)  </ul> |

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | EduRoster.ReadBasic                         |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## HTTP request
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_schools_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
+GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9aaa197cb212/schools
 ```
 
 # [C#](#tab/csharp)
@@ -72,17 +72,25 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schools-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
@@ -97,39 +105,30 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
-  "value": [
-    {
-      "id": "10002",
-      "displayName": "Fabrikam High School",
-      "description": "Magnate school for the arts. Los Angeles School District",
-      "status": "String",
-      "externalSource": "String",
-      "principalEmail": "AmyR@fabrikam.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10002",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.educationSchool)",
+    "value": [
+        {
+            "id": "8a07f5a8-edc9-4847-bbf2-dde106594bf4",
+            "displayName": "Management Fast Track",
+            "description": null,
+            "principalEmail": "aroebuck@principal.edu",
+            "principalName": "Amy Roebuck",
+            "externalPrincipalId": "14008",
+            "externalId": "10002",
+            "externalSource": "sis",
+            "externalSourceDetail": "SIS",
+            "phone": "555-123-4567",
+            "address": {
+                "city": "Redmond",
+                "countryOrRegion": "US",
+                "postalCode": "98052",
+                "state": "WA",
+                "street": "2 Microsoft Way"
+            }
         }
-      },
-      "externalId": "10002",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+    ]
 }
 ```
 

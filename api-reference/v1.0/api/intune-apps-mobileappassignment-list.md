@@ -1,8 +1,8 @@
 ---
 title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 434
 
 {
   "value": [
@@ -70,14 +70,10 @@ Content-Length: 446
         "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value"
+        "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+        "useDeviceContext": true
       }
     }
   ]
 }
 ```
-
-
-
-

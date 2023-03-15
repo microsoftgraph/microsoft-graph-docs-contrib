@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-BookingAppointmentCollectionPage appointments = graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").appointments()
+BookingAppointmentCollectionPage appointments = graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").appointments()
 	.buildRequest()
 	.get();
 

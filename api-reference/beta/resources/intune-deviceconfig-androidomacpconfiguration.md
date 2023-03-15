@@ -1,8 +1,8 @@
 ---
 title: "androidOmaCpConfiguration resource type"
 description: "By providing a configuration in this profile you can configure Android devices that support OMA-CP."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -101,6 +101,3 @@ Here is a JSON representation of the resource.
   "configurationXml": "binary"
 }
 ```
-
-
-

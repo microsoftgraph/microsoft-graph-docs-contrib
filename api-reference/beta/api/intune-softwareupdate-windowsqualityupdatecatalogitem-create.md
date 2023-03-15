@@ -1,8 +1,8 @@
 ---
 title: "Create windowsQualityUpdateCatalogItem"
 description: "Create a new windowsQualityUpdateCatalogItem object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [windowsQualityUpdateCatalogItem](../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -99,6 +99,3 @@ Content-Length: 381
   "isExpeditable": true
 }
 ```
-
-
-

@@ -17,12 +17,12 @@ Represents an error that occurred during the synchronization process.
 
 ## Properties
 
-<!-- Add descriptions for the properties. -->
+<!-- Add descriptions for the properties. Fill in the examples. -->
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|code|String||
-|message|String||
-|tenantActionable|Boolean||
+|code|String| The error code. |
+|message|String| The error message.  |
+|tenantActionable|Boolean| The action to take to resolve the error.|
 
 ## JSON representation
 

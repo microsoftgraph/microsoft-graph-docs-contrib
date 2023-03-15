@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementTemplateType enum type"
 description: "Template type"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -32,6 +32,3 @@ Template type
 |deviceConfigurationForOffice365|9|Device Configuration for Microsoft Office 365 settings|
 |cloudPC|10|Windows 365 security baseline template|
 |firewallSharedSettings|11|Firewall Shared Object templates for reference settings|
-
-
-

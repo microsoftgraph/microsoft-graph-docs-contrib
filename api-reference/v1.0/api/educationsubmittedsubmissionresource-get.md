@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
 description: "Retrieve a submitted resource."
-author: "mmast-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a [submitted resource](../resources/educationsubmissionresource.md). 
+Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
 
@@ -29,8 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources/{id}
 ```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 | Header       | Value |
@@ -66,7 +69,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
   "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",

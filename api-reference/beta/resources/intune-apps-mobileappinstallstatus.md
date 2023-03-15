@@ -1,8 +1,8 @@
 ---
 title: "mobileAppInstallStatus resource type"
 description: "Contains properties for the installation state of a mobile app for a device."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -74,6 +74,3 @@ Here is a JSON representation of the resource.
   "displayVersion": "String"
 }
 ```
-
-
-

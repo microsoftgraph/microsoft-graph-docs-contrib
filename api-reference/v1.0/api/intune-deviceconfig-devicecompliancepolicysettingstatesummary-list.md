@@ -1,8 +1,8 @@
 ---
 title: "List deviceCompliancePolicySettingStateSummaries"
 description: "List properties and relationships of the deviceCompliancePolicySettingStateSummary objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -79,7 +79,3 @@ Content-Length: 521
   ]
 }
 ```
-
-
-
-

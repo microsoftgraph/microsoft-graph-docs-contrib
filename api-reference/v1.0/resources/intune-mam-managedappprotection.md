@@ -1,8 +1,8 @@
 ---
 title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -113,7 +113,3 @@ Here is a JSON representation of the resource.
   "managedBrowser": "String"
 }
 ```
-
-
-
-

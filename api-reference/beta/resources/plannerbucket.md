@@ -1,6 +1,6 @@
 ---
 title: "plannerBucket resource type"
-description: ") for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
+description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
-
+Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
 
 
 ## Methods
@@ -30,9 +29,10 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
+|id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |name|String|Name of the bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
 
 ## Relationships
@@ -41,7 +41,7 @@ The **plannerBucket** resource represents a bucket (or "custom column") for task
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -55,12 +55,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "id": "String (identifier)",
   "name": "String",
   "orderHint": "String",
   "planId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -75,5 +75,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

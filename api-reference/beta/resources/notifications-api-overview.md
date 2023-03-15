@@ -1,5 +1,5 @@
 ---
-title: "Use the notifications REST API in Microsoft Graph"
+title: "Use the notifications REST API in Microsoft Graph (deprecated)"
 description: "You can use the notifications API in Microsoft Graph to send push notifications to a user. ."
 ms.localizationpriority: high
 ms.prod: "notifications"
@@ -7,9 +7,10 @@ doc_type: conceptualPageType
 author: "merzink"
 ---
 
-# Use the notifications REST API in Microsoft Graph
+# Use the notifications REST API in Microsoft Graph (deprecated)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.  
 
 You can use the notifications API in Microsoft Graph to send push notifications to a user. Simply post a notification to your target user, and the platform will deliver the notification to all device endpoints registered to that user. The high-level flow is as follows:
 
@@ -20,10 +21,8 @@ You can use the notifications API in Microsoft Graph to send push notifications 
 
 This type of user-centric notification is represented by the [notification](../resources/projectrome-notification.md) resource and is stored within the Microsoft Graph notification service. It can then be accessed and managed by the client application via the [client-side SDK APIs](https://aka.ms/GNSDK). If you're new to the Microsoft Graph notification service, check out the [notification overview](/graph/notifications-concept-overview) section to learn more.
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
+
 - See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Get started with client integration by following the steps in the [integration overview](/graph/notifications-integration-e2e-overview) topic.

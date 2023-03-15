@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementExchangeAccessLevel enum type"
 description: "Access Level in Exchange."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Access Level in Exchange.
 |allow|1|Allow the device access to Exchange.|
 |block|2|Block the device from accessing Exchange.|
 |quarantine|3|Quarantine the device in Exchange.|
-
-
-
