@@ -98,6 +98,7 @@ The result of a Cloud PC Azure network connection health check.
 |internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the Cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
+|ssoCheckKerberosConfigurationError|The Azure Active Directory (Azure AD) Kerberos is not configured properly, so user failed to login the Cloud PC through single sign-on (SSO) or receive SSO access to Kerberos-based resources on the network.|
 |internalServerUnknownError|The provisioning has failed due to an internal error. Please contact customer support.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
