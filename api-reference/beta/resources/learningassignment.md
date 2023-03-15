@@ -19,18 +19,21 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedDateTime|DateTimeOffset|**TODO: Add Description**|
-|assignerUserId|String|**TODO: Add Description**|
-|assignmentType|assignmentType|**TODO: Add Description**.The possible values are: `required`, `recommended`, `unknownFutureValue`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|completionPercentage|Int32|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|externalcourseActivityId|String|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|learnerUserId|String|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|learningContentId|String|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|learningProviderId|String|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
-|notes|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|status|courseStatus|**TODO: Add Description** Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
+|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
+|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md) for the course activity (required/recommended)|
+|learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
+|learnerUserId|String|The user id of the learner|
+|registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
+|[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|Represents [status](../resources/courseStatus.md) of the course activity. Values are (notStarted/inProgress/completed)|
+|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
+|assignerUserId|String|The user id of the assigner (Optional)|
+|notes|String|Notes for the course activity (Optional)|
+|dueDateTime|DateTimeOffset|Due date for the course activity (Optional)|
+|assignedDateTime|DateTimeOffset|Assigned date for the course activity (Optional)|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
+|externalcourseActivityId|String|A course activity id generated at provider (Optional)|
+|Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
+|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
 
 ## Relationships
 None.
