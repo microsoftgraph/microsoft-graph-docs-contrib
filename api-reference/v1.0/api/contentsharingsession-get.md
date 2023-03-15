@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

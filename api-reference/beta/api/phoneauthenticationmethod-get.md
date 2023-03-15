@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

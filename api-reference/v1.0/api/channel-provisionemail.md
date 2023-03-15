@@ -87,7 +87,6 @@ POST https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 
 ---
 
-
 ### Response
 The following is an example of a response.
 >**Note:** The response object shown here might be shortened for readability.

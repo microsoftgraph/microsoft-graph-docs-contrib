@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contact = new Contact
+var requestBody = new Contact
 {
 	HomeAddress = new PhysicalAddress
 	{
 		Street = "123 Some street",
 		City = "Seattle",
 		State = "WA",
-		PostalCode = "98121"
+		PostalCode = "98121",
 	},
-	Birthday = DateTimeOffset.Parse("1974-07-22")
+	Birthday = DateTimeOffset.Parse("1974-07-22"),
 };
+var result = await graphClient.Me.Contacts["{contact-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Contacts["{contact-id}"]
-	.Request()
-	.UpdateAsync(contact);
 
 ```

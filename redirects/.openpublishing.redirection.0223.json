@@ -1,0 +1,54 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-create-simulation.md",
+      "redirect_url": "/graph/api/attacksimulationroot-post-simulation?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-delete-simulation.md",
+      "redirect_url": "/graph/api/simulation-delete?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-get-operation.md",
+      "redirect_url": "/graph/api/attacksimulationoperation-get?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-get-payload.md",
+      "redirect_url": "/graph/api/payload-get?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-get-payloadsdetails.md",
+      "redirect_url": "/graph/api/payloaddetail-get?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-get-simulationautomations.md",
+      "redirect_url": "/graph/api/simulationautomation-get?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-get-simulations.md",
+      "redirect_url": "/graph/api/simulation-get?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/attacksimulationroot-update-simulation.md",
+      "redirect_url": "/graph/api/simulation-update?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/attacksimulationroot-get-simulationautomations.md",
+      "redirect_url": "/graph/api/simulation-get?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/attacksimulationroot-get-simulations.md",
+      "redirect_url": "/graph/api/simulationautomation-get?view=graph-rest-1.0",
+      "redirect_document_id": true
+    }
+  ]
+}

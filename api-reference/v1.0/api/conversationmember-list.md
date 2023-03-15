@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:9ef2dcdf14ba44cbae25c2f5d53171ba@t
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

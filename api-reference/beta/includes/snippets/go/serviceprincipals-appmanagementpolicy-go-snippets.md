@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAppManagementPolicie()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}", 
+	"odataId" : "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}", 
 }
 requestBody.SetAdditionalData(additionalData)
 

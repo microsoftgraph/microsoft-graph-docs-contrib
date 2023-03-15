@@ -103,8 +103,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/win
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

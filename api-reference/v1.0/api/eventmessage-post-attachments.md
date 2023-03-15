@@ -99,7 +99,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ##### Response
@@ -158,7 +157,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be
