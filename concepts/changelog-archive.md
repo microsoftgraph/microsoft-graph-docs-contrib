@@ -2308,8 +2308,8 @@ Debut of the places API which provides rich details for locations in apps.
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the **subscriptions** navigation property to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0&preserve-view=true) entity |
-| Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta&preserve-view=true) DateTimeOffset type. |
-| Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta&preserve-view=true) string type. |
+| Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveitem) DateTimeOffset type. |
+| Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveitem) string type. |
 
 ### Financials
 
@@ -2338,7 +2338,7 @@ Debut of the places API which provides rich details for locations in apps.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Removal |beta| Removed the **deleted** property from [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true). Use **deletedDateTime** instead. |
-| Addition | beta | Added the [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) and [timeOff](/graph/api/resources/timeoff) resources and associated methods. |
+| Addition | beta | Added the [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/graph/api/resources/shift), [timeOffReason](/graph/api/resources/timeoffreason) and [timeOff](/graph/api/resources/timeoff) resources and associated methods. |
 
 
 ## February 2019
@@ -2896,7 +2896,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the [shareForSchoolDataSyncService](/graph/api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice?view=graph-rest-beta&preserve-view=true) action on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta&preserve-view=true) |
 |Addition|beta|Added the [unshareForSchoolDataSyncService](/graph/api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice?view=graph-rest-beta&preserve-view=true) action on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta&preserve-view=true) |
 |Addition|beta|Added the [assignUserToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice?view=graph-rest-beta&preserve-view=true) action on [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta&preserve-view=true) |
-|Addition|beta|Added the [getRoleScopeTagsByResource](/graph/api/intune-rbac-devicemanagement-getrolescopetagsbyresource?view=graph-rest-beta&preserve-view=true) function on [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta&preserve-view=true) |
+|Addition|beta|Added the [getRoleScopeTagsByResource](/graph/api/intune-shared-devicemanagement-getrolescopetagsbyresource) function on [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta&preserve-view=true) |
 |Addition|beta|Added the [getRoleScopeTagsByIds](/graph/api/intune-shared-devicemanagement-getrolescopetagsbyids?view=graph-rest-beta) function on [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta&preserve-view=true) |
 |Addition|beta|Added the [getEncryptionPublicKey](/graph/api/intune-enrollment-deponboardingsetting-getencryptionpublickey?view=graph-rest-beta&preserve-view=true) function on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta&preserve-view=true) |
 |Addition|beta|Added the [exportMobileConfig](/graph/api/intune-enrollment-enrollmentprofile-exportmobileconfig?view=graph-rest-beta&preserve-view=true) function on [enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta&preserve-view=true) |
