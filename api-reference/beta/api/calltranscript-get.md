@@ -381,3 +381,25 @@ WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
+
+### Example 6: Fetch /metadatacontent
+#### Request
+
+# [HTTP](#tab/http)
+
+``` http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
+```
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+```http
+WEBVTT
+
+00:00:16.246 --> 00:00:17.726
+{"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
+```
