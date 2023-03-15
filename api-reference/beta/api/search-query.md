@@ -167,7 +167,7 @@ Content-type: application/json
 - Search [person](/graph/search-concept-person)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
-- Search with [queryTemplate](/graph/search-concept-query-template.md)
+- Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
