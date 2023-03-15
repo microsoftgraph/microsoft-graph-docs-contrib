@@ -55,9 +55,12 @@ If successful, this method returns an `HTTP 200 OK` response code and a collecti
 
 ## Examples
 
-### Request
+### Example 1: Basic call to perform a search request.
 
-The following is an example of the request.
+The below sample shows how to perform a search to get expected connector items.
+
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -160,9 +163,11 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 2: Basic call to use queryTemplate.
 
-The following is an example of the request with queryTemplate, it uses a queryable property CreateBy to retrieve all files which created by Bob
+The following is an example of the request with queryTemplate, it uses a queryable property CreateBy to retrieve all files which created by Bob.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
