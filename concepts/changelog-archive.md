@@ -1177,7 +1177,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|v1.0|Added the following resources: [call](/graph/api/resouces/call?view=graph-rest-1.0&preserve-view=true), [participant](/graph/api/resouces/participant?view=graph-rest-1.0&preserve-view=true), and [onlineMeeting](/graph/api/resouces/onlinemeeting?view=graph-rest-1.0&preserve-view=true).|
 | Change        | Beta        | Renamed IVR API Record to [recordResponse](/graph/api/call-record?view=graph-rest-beta&preserve-view=true). |
 | Change        | Beta        | Removed [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) object properties **isCanceled**, **canceledDateTime**, and **entryExitAnnouncement**. Renamed property **joinUrl** to **joinWebUrl**. |
-| Addition        | Beta & v1.0       | Added the [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) operation.|
+| Addition        | Beta & v1.0       | Added the [delete onlineMeeting](/graph/api/onlinemeeting-delete) operation.|
 
 ### Devices and apps | Corporate management
 
@@ -1294,7 +1294,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 |:----------------|:------------|:-----------------------------------------|
 | Change        | Beta        | Changed return type for [mute](/graph/api/call-mute?view=graph-rest-beta&preserve-view=true) and [mute participant](/graph/api/participant-mute?view=graph-rest-beta&preserve-view=true) methods from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta&preserve-view=true) to [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta&preserve-view=true). |
 | Change        | Beta        | Changed return type for [unmute](/graph/api/call-unmute?view=graph-rest-beta&preserve-view=true) method from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta&preserve-view=true) to [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta&preserve-view=true). |
-| Addition        | Beta        | Added the [keepAlive](/api-reference/beta/api/call-keepalive.md) action to the [call](/api-reference/beta/resources/call.md) entity. |
+| Addition        | Beta        | Added the [keepAlive](/graph/api/call-keepalive) action to the [call](/api-reference/beta/resources/call.md) entity. |
 
 ### Cloud Communications | Recording
 
@@ -1628,21 +1628,21 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile)<br/>[androidManagedStoreWebApp](/graph/api/resources/intune-apps-androidmanagedstorewebapp)<br/>[appleEnrollmentProfileAssignment](/graph/api/resources/intune-enrollment-appleenrollmentprofileassignment)<br/>[appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)<br/>[deviceCompliancePolicyPolicySetItem](/graph/api/resources/intune-policyset-devicecompliancepolicypolicysetitem)<br/>[deviceConfigurationPolicySetItem](/graph/api/resources/intune-policyset-deviceconfigurationpolicysetitem)<br/>[deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent)<br/>[deviceManagementScriptPolicySetItem](/graph/api/resources/intune-policyset-devicemanagementscriptpolicysetitem)<br/>[enrollmentRestrictionsConfigurationPolicySetItem](/graph/api/resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem)<br/>[iosLobAppProvisioningConfigurationPolicySetItem](/graph/api/resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem)<br/>[macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection)<br/>[managedAppProtectionPolicySetItem](/graph/api/resources/intune-policyset-managedappprotectionpolicysetitem)<br/>[managedDeviceMobileAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem)<br/>[mdmWindowsInformationProtectionPolicyPolicySetItem](/graph/api/resources/intune-policyset-mdmwindowsinformationprotectionpolicypolicysetitem)<br/>[mobileAppPolicySetItem](/graph/api/resources/intune-policyset-mobileapppolicysetitem)<br/>[policySet](/graph/api/resources/intune-policyset-policyset)<br/>[policySetAssignment](/graph/api/resources/intune-policyset-policysetassignment)<br/>[policySetItem](/graph/api/resources/intune-policyset-policysetitem)<br/>[targetedManagedAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem)<br/>[windows10EnrollmentCompletionPageConfigurationPolicySetItem](/graph/api/resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem)<br/>[windowsAutopilotDeploymentProfilePolicySetItem](/graph/api/resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem)<br/>[windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)<br/>[windowsFeatureUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofileassignment)<br/>|
 |Addition|beta|Added new complex types:<br/>[appleOwnerTypeEnrollmentType](/graph/api/resources/intune-enrollment-appleownertypeenrollmenttype)<br/>[configurationManagerAction](/graph/api/resources/intune-devices-configurationmanageraction)<br/>[credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension)<br/>[hasPayloadLinkResultItem](/graph/api/resources/intune-policyset-haspayloadlinkresultitem)<br/>[iosKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-ioskerberossinglesignonextension)<br/>[kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension)<br/>[keyBooleanValuePair](/graph/api/resources/intune-deviceconfig-keybooleanvaluepair)<br/>[keyIntegerValuePair](/graph/api/resources/intune-deviceconfig-keyintegervaluepair)<br/>[keyRealValuePair](/graph/api/resources/intune-deviceconfig-keyrealvaluepair)<br/>[keyStringValuePair](/graph/api/resources/intune-deviceconfig-keystringvaluepair)<br/>[keyTypedValuePair](/graph/api/resources/intune-deviceconfig-keytypedvaluepair)<br/>[macOSKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-macoskerberossinglesignonextension)<br/>[singleSignOnExtension](/graph/api/resources/intune-deviceconfig-singlesignonextension)<br/>|
 |Addition|beta|Added new enum types:<br/>[appleUserInitiatedEnrollmentType](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmenttype)<br/>[bitLockerRecoveryPasswordRotationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype)<br/>[configurationManagerActionType](/graph/api/resources/intune-devices-configurationmanageractiontype)<br/>[deviceAndAppManagementAssignmentSource](/graph/api/resources/intune-shared-deviceandappmanagementassignmentsource)<br/>[errorCode](/graph/api/resources/intune-policyset-errorcode)<br/>[logLevel](/graph/api/resources/intune-troubleshooting-loglevel)<br/>[policySetStatus](/graph/api/resources/intune-policyset-policysetstatus)<br/>[userExperienceAnalyticsHealthState](/graph/api/resources/intune-devices-userexperienceanalyticshealthstate)<br/>[userExperienceAnalyticsInsightSeverity](/graph/api/resources/intune-devices-userexperienceanalyticsinsightseverity)<br/>[windowsAutopilotDeploymentState](/graph/api/resources/intune-troubleshooting-windowsautopilotdeploymentstate)<br/>[windowsAutopilotEnrollmentType](/graph/api/resources/intune-troubleshooting-windowsautopilotenrollmenttype)<br/>|
-|Addition|beta|Added the [update](/graph/api/intune-policyset-policyset-update.md) action on [policySet](/graph/api/resources/intune-policyset-policyset) |
-|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-mobileapp-haspayloadlinks.md) action on [mobileApp](/graph/api/resources/intune-apps-mobileapp) collection |
+|Addition|beta|Added the [update](/graph/api/intune-policyset-policyset-update) action on [policySet](/graph/api/resources/intune-policyset-policyset) |
+|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-mobileapp-haspayloadlinks) action on [mobileApp](/graph/api/resources/intune-apps-mobileapp) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md) action on [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) action on [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection) collection |
-|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks.md) action on [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection) collection |
+|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks) action on [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-macmanagedappprotection-haspayloadlinks.md) action on [macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md) action on [mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) action on [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration) collection |
-|Addition|beta|Added the [getPolicySets](/graph/api/intune-policyset-policyset-getpolicysets.md) action on [policySet](/graph/api/resources/intune-policyset-policyset) collection |
-|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-devicemanagementscript-haspayloadlinks.md) action on [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript) collection |
-|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-deviceconfiguration-haspayloadlinks.md) action on [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration) collection |
+|Addition|beta|Added the [getPolicySets](/graph/api/intune-policyset-policyset-getpolicysets) action on [policySet](/graph/api/resources/intune-policyset-policyset) collection |
+|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-devicemanagementscript-haspayloadlinks) action on [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript) collection |
+|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-deviceconfiguration-haspayloadlinks) action on [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks.md) action on [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) collection |
-|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md) action on [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) collection |
+|Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks) action on [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) collection |
 |Addition|beta|Added the [hasPayloadLinks](/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md) action on [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) collection |
-|Addition|beta|Added the [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice) |
+|Addition|beta|Added the [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice) |
 |Addition|beta|Added the [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) action on [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) |
 |Addition|beta|Added the [assign](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) action on [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) |
 |Addition|beta|Added the [getExpiringVppTokenCount](/graph/api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount?view=graph-rest-beta&preserve-view=true) function on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) collection |
@@ -1958,12 +1958,12 @@ Debut of the places API which provides rich details for locations in apps.
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | Added **mediaState** property to [call](/api-reference/beta/resources/call.md) resource|
-| Change          | Beta        | Renamed **recordResourceLocation** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingLocation**|
+| Change          | Beta        | Renamed **recordResourceLocation** property in [recordOperation](/graph/api/resources/recordoperation) resource to **recordingLocation**|
 | Change          | Beta        | Renamed **recordResourceAccessToken** property in [recordOperation](/api-reference/beta/resources/recordOperation.md) resource to **recordingAccessToken**|
-| Addition        | Beta        | Added **capabilities** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource |
+| Addition        | Beta        | Added **capabilities** property to [onlineMeeting](/graph/api/resources/onlinemeeting) resource |
 | Addition        | Beta        | Added **videoTeleconferenceId** property to [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) resource |
-| Addition        | Beta        | Added **producers** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource |
-| Addition        | Beta        | Added **contributors** property to [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) resource |
+| Addition        | Beta        | Added **producers** property to [meetingParticipants](/graph/api/resources/meetingparticipants) resource |
+| Addition        | Beta        | Added **contributors** property to [meetingParticipants](/graph/api/resources/meetingparticipants) resource |
 
 ## June 2019
 
@@ -2157,7 +2157,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](/webhooks-outlook-authz.md).|
+| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](/webhooks-outlook-authz.md/graph/webhooks-lifecycle).|
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|
@@ -2242,9 +2242,9 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) resource.|
 |Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).|
-|Addition | beta | Added the [chat](/api-reference/beta/resources/chat.md) resources and associated methods. |
+|Addition | beta | Added the [chat](/graph/api/resources/chat) resources and associated methods. |
 |Addition |beta| Added APIs to read [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta&preserve-view=true) in messages.|
-|Addition | beta | Added the [conversation member](/api-reference/beta/resources/conversationmember.md) resources and associated methods. |
+|Addition | beta | Added the [conversation member](/graph/api/resources/conversationmember) resources and associated methods. |
 
 
 ## March 2019
@@ -2338,7 +2338,7 @@ Debut of the places API which provides rich details for locations in apps.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Removal |beta| Removed the **deleted** property from [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true). Use **deletedDateTime** instead. |
-| Addition | beta | Added the [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) and [timeOff](/api-reference/beta/resources/timeoff.md) resources and associated methods. |
+| Addition | beta | Added the [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) and [timeOff](/graph/api/resources/timeoff) resources and associated methods. |
 
 
 ## February 2019
