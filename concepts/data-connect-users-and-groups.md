@@ -39,7 +39,7 @@ In the [Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-gro
     |                                       | M365 Groups | Distribution Groups | Security Groups | Mail-Enabled Security  |
     |---------------------------------------|-------------|---------------------|-----------------|------------------------|
     | TeamsStandardChannelMessages          | Yes*        | No                  | No              | No                     |
-    | TeamsChannelDetails_v0                | Yes         | No                  | No              | No                     |
+    | TeamsChannelDetails_v0                | Yes*         | No                  | No              | No                     |
     | OutlookGroupConversations             | Yes         | No                  | No              | No                     |
     | GroupDetails                          | Yes         | Yes                 | Yes             | Yes                    |
     |     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
@@ -47,6 +47,8 @@ In the [Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-gro
     |     Viva Insights                     | N/A         | N/A                 | N/A             | N/A                    |
     |     OneDrive and SharePoint Online    | N/A         | N/A                 | N/A             | N/A                    |
     |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
+
+    *For teams datasets: M365 groups must also be teams enabled.
 
 2.	**Example**: The customer wants to extract the Group Details dataset with a security group of users A, B, and C out of their tenant of 500 users. Since this is a group scoped dataset, the customer will only receive group details data for the specified group. The customer will NOT receive any individual data for users A, B, and C in the group.
 
