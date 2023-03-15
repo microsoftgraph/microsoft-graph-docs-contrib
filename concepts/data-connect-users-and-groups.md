@@ -52,20 +52,25 @@ In the [Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-gro
 
 > **NOTE:**  For Teams group-scoped datasets, if the group in scope is not a teams enabled group, then it will return NO data. M365 Groups can be enabled as Teams groups, but distribution groups and security groups are NOT Teams enabled. Please check the steps below to see what type of groups are available to select. 
 
-# How to search and verify group types
+# How to search and verify for group types
 
 1. Once you have selected the group-scoped dataset, search and add a group(s) or group IDs.
-![image1](images/data-connect-groups-1.png)
+    
+    ![image1](images/data-connect-groups-1.png)
 
 2. Once you have added groups, you can view the group ID. Please copy the group IDs of the groups you would like to verify.
-![image2](images/data-connect-groups-2.png)
 
-3. In a new tab, go to the [azure homepage](www.portal.azure.com) and click on "Azure Active Directory".
-![image2.5](images/data-connect-groups-2.5.png)
+    ![image2](images/data-connect-groups-2.png)
+
+3. In a new tab, go to the [Azure homepage](www.portal.azure.com) and click on "Azure Active Directory".
+
+    ![image2.5](images/data-connect-groups-2.5.png)
 
 4. Paste the group ID copied from step #2 and click on the Groups tab.
-![image3](images/data-connect-groups-3.png)
+
+    ![image3](images/data-connect-groups-3.png)
 
 5. You can verify the type of group you have once you have clicked on the Groups tab.
-![image4](images/data-connect-groups-4.png)
+
+    ![image4](images/data-connect-groups-4.png)
  
