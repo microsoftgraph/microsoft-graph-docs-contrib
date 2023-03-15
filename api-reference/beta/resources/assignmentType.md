@@ -4,10 +4,10 @@ description: "assignmentType is new enum introdcued for the learning assignment 
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
-doc_type: enumPageType
+doc_type: resourcePageType
 ---
 
-# assignmentType enum type
+# assignmentType resource
 
 Namespace: microsoft.graph
 

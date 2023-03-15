@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |learnerUserId|String|**The user id of the learner**|
 |learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent graph API’s**|
 |learningProviderId|String|**he registration Id of the provider**|
-|[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|**Represents [status](../resources/courseStatus.md) of the course activity. Values are (notStarted/inProgress/completed)**|
+|[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
 
 
 ## Error Conditions and Messages
