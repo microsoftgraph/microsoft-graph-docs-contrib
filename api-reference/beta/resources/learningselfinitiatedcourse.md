@@ -15,14 +15,6 @@ Represents the metadata of self-initiated course activity record of learner.
 
 Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List learningSelfInitiatedCourses](../api/learningselfinitiatedcourse-list.md)|[learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md) collection|Get a list of the [learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md) objects and their properties.|
-|[Get learningSelfInitiatedCourse](../api/learningselfinitiatedcourse-get.md)|[learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md)|Read the properties and relationships of a [learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md) object.|
-|[Update learningSelfInitiatedCourse](../api/learningselfinitiatedcourse-update.md)|[learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md)|Update the properties of a [learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md) object.|
-|[Delete learningSelfInitiatedCourse](../api/learningselfinitiatedcourse-delete.md)|None|Delete a [learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

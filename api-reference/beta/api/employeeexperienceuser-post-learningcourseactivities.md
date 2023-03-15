@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## Create assigned learning course activity 
 
-A learning course activity of type 'Assignment' can be created by setting '@odata.type' to "#microsoft.graph.learningAssignment". It also requires permission of type 'LearningAssignedCourse.ReadWrite.All' to call the API.
+A learning course activity of type 'Assignment' can be created by setting '@odata.type' to "#microsoft.graph.[learningAssignment](../resources/learningassignment.md)". It also requires permission of type 'LearningAssignedCourse.ReadWrite.All' to call the API.
 
 ## HTTP request
 
@@ -45,12 +45,12 @@ You can specify the following properties when creating a **learningCourseActivit
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
-|assignmentType|String|AssignmentType for the course activity (required/recommended)|
+|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
+|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md) for the course activity (required/recommended)|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
 |registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
-|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|[status](../resources/status.md)|[courseStatus](../resources/status.md)|Represents [status](../resources/status.md) of the course activity. Values are (notStarted/inProgress/completed)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |assignerUserId|String|The user id of the assigner (Optional)|
 |notes|String|Notes for the course activity (Optional)|
@@ -134,7 +134,7 @@ Content-Type: application/json
 ```
 ## Create self-initiated learning course activity 
 
-A learning course activity of type 'Self-initiated' can be created by setting '@odata.type' to "#microsoft.graph.learningSelfInitiatedCourse". It also requires permission of type 'LearningSelfInitiatedCourse.ReadWrite.All' to call the API.
+A learning course activity of type 'Self-initiated' can be created by setting '@odata.type' to "#microsoft.graph.[learningSelfInitiatedCourse](../resources/learningselfinitiatedcourse.md)". It also requires permission of type 'LearningSelfInitiatedCourse.ReadWrite.All' to call the API.
 
 ## HTTP request
 
@@ -155,11 +155,11 @@ You can specify the following properties when creating a **learningCourseActivit
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
+|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
 |registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
-|status|courseStatus|Represents status of the course activity. Values are (inProgress/completed)|
+|[status](../resources/status.md)|[courseStatus](../resources/status.md)|Represents [status](../resources/status.md) of the course activity. Values are (inProgress/completed)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |externalcourseActivityId|String|A course activity id generated at provider (Optional)|

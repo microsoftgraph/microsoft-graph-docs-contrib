@@ -43,9 +43,9 @@ Below properties are eligible to update a learning assignment course activity:
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
-|assignmentType|String|AssignmentType for the course activity (required/recommended)|
-|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
+|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md) for the course activity (required/recommended)|
+|[status](../resources/status.md)|[courseStatus](../resources/status.md)|Represents [status](../resources/status.md) of the course activity. Values are (notStarted/inProgress/completed)|
 |notes|String|Notes for the course activity (Optional)|
 |dueDateTime|DateTimeOffset|Due date for the course activity (Optional)|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity (Optional)|
@@ -103,8 +103,8 @@ Below properties are eligible to update a self-initiated course activity:
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a LearningAssignment or SelfInitiated course.|
-|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
+|[status](../resources/status.md)|[courseStatus](../resources/status.md)|Represents [status](../resources/status.md) of the course activity. Values are (notStarted/inProgress/completed)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|

@@ -16,14 +16,6 @@ Represents the metadata of assigned course activity record of learner.
 
 Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List learningAssignments](../api/learningassignment-list.md)|[learningAssignment](../resources/learningassignment.md) collection|Get a list of the [learningAssignment](../resources/learningassignment.md) objects and their properties.|
-|[Get learningAssignment](../api/learningassignment-get.md)|[learningAssignment](../resources/learningassignment.md)|Read the properties and relationships of a [learningAssignment](../resources/learningassignment.md) object.|
-|[Update learningAssignment](../api/learningassignment-update.md)|[learningAssignment](../resources/learningassignment.md)|Update the properties of a [learningAssignment](../resources/learningassignment.md) object.|
-|[Delete learningAssignment](../api/learningassignment-delete.md)|None|Delete a [learningAssignment](../resources/learningassignment.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
