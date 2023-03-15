@@ -352,12 +352,14 @@ Change notification subscriptions have consumption charges. Specify the `model` 
 
 When creating the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation).
 
-Below is an example to get all messages **per-user**. More details can be found on [Create subscription](/graph/api/subscription-post-subscriptions). As mentioned at the bottom of [Create subscription](/graph/api/subscription-post-subscriptions), before trying the example below, the subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
+The following example shows how to get all messages per user. For more details, see [Create subscription](/graph/api/subscription-post-subscriptions). Before you use this example, the subscription notification endpoint (specified in the **notificationUrl** property) must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
 
 ### Request
+
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
+
 {
   "changeType": "created,updated,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
@@ -369,10 +371,13 @@ Content-type: application/json
   "encryptionCertificateId": "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4"
 }
 ```
+
 ### Response:
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
   "id": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
@@ -395,15 +400,16 @@ Content-type: application/json
 
 ## Step 7: Receive and decrypt change notifications
 
-Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the `notificationUrl` (provided in the subscription creation in [Step 6](#step-6-subscribe-to-change-notifications) above).  For security reasons, the content is encrypted. You can decrypt the content by following the steps on [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the **notificationUrl**.  For security reasons, the content is encrypted. To decrypt the content, see [Decrypting resource data from change notifications](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
 
-As mentioned earlier, when creating the subscription (in [Step 6](#step-6-subscribe-to-change-notifications)), make sure that `includeResourceData` property is set to be `true`, and that you have specified the `encryptionCertificate` and `encryptionCertificateId` properties.  Otherwise, the encrypted content (in [Step 7](#step-7-receive-and-decrypt-change-notifications)) would not be returned in the change notifications.  See [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation) for details.
+When you create the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Notification endpoint validation).
 
 ### Request (sent by Microsoft Graph)
 
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient
 Content-type: application/json
+
 {
   "value": [
     {
@@ -433,6 +439,7 @@ Content-type: application/json
 }
 ```
 ### Decrypted content
+
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/$metadata#chats('19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2')/messages/$entity",
@@ -488,32 +495,37 @@ Content-type: application/json
   "eventDetail": null
 }
 ```
-Change notifications are sometimes delivered out of order, due to their asynchronous nature. If your application requires the resources to be sorted in a particular order, make sure you are sorting the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, you should sort the decrypted [chatMessage](/graph/api/resources/chatmessage)s by `createdDateTime`.
+Change notifications are sometimes delivered out of order, because they are asynchronous. If your application requires the resources to be sorted in a particular order, make sure that you sort the decrypted content by the appropriate property. For example, if the messages should be displayed in chronological order in your chat application, sort the decrypted [chatMessages](/graph/api/resources/chatmessage) by **createdDateTime**.
 
-When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`.  Your chat application should display the edited message instead of the original message, if it is meant to display the latest version of messages.
+When a chat message is edited, a change notification is sent for the edit, with an updated `lastEditedDateTime`. Your chat application should display the edited message instead of the original message, if the intent is to display the latest version of messages.
 
-The notes about `contentType`, images, data loss prevention (DLP), and retention policies described in [Step 4: Retrieve messages](#step-4-retrieve-messages) above are applicable to the decrypted messages here as well.
+The notes about **contentType**, images, data loss prevention (DLP), and retention policies in [Step 4: Retrieve messages](#step-4-retrieve-messages) apply to the decrypted messages as well.
 
 ## Step 8: Renew change notification subscriptions
 
-For security reasons, subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, as described on [subscription resource type](/graph/api/resources/subscription?#maximum-length-of-subscription-per-resource-type).  We recommend renewing every 30 minutes to give some buffer. Currently, there are no lifecycle notifications for expiring subscriptions.  Thus, please persist and keep track of the subscriptions and renew them before they expire, by updating their `expirationDateTime` property, as described on [Update subscription](/graph/api/subscription-update?#example). Renewing thousands of subscriptions takes some time so that is another reason to avoid per-chat change notifications.
+For security reasons, subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes. We recommend that you renew every 30 minutes to allow for some buffer. Lifecycle notifications for expiring subscriptions are not currently available; therefore, you have to keep track of the subscriptions and renew them before they expire by updating the **expirationDateTime** property, as described in [Update subscription](/graph/api/subscription-update?#example). Because renewing thousands of subscriptions takes time, this is a reason to avoid per-chat change notifications.
 
-If a subscription has expired before it gets renewed, some change notifications might have been missed, so you should resync the messages by repeating [Step 4: Retrieve messages](#step-4-retrieve-messages) again.
+If a subscription expires before it gets renewed, some change notifications might be missed. Resync the messages by repeating [Step 4: Retrieve messages](#step-4-retrieve-messages).
 
-Below is an example of a subscription renewal.
+The following example shows how to renew a subscription.
 
 ### Request
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
 Content-type: application/json
+
 {
    "expirationDateTime":"2023-01-12T18:23:45.9356913Z"
 }
 ```
+
 ### Response
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
     "id": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
@@ -535,19 +547,22 @@ Content-type: application/json
 ```
 ## Step 9: Get and set viewpoints
 
-A [viewpoint](/graph/api/resources/chatviewpoint) in a chat marks the timestamp at which the chat was last read by the users, so users can easily tell that any messages under the viewpoint are unread.
+A [viewpoint](/graph/api/resources/chatviewpoint) in a chat marks the timestamp at which the chat was last read by users, so that users can see that any messages under the viewpoint are unread.
 
-To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/api/chat-get) resource. Below is an example.
+To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/api/chat-get) resource, as shown in the following example.
 
 ### Request
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
 ```
 
 ### Response
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
     "id": "19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2",
@@ -564,16 +579,19 @@ Content-type: application/json
     }
 }
 ```
-The viewpoint of a chat for a user is updated whenever the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhide the chat](/graph/api/chat-unhideforuser).
+
+The viewpoint of a chat for a user is updated whenever the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhides the chat](/graph/api/chat-unhideforuser).
 
 ## Cost estimation
 
-For the most up-to-date pricing, please see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
+Currently, retrieving messages per-user, per-chat ([Step 4](#step-4-retrieve-messages)) does not involve consumptions charges (but has throttling limits). Only change notifications have consumption charges of $0.00075 per message. 
 
-As of January 2023, when this document was written, retrieving messages “per-user, per-chat” ([Step 4](#step-4-retrieve-messages)) has no consumptions charges (but has throttling limits as described in [Step 4](#step-4-retrieve-messages)).  Only change notifications ([Step 6](#step-6-subscribe-to-change-notifications) to [Step 8](#step-8-renew-change-notification-subscriptions)) have consumption charges, and it’s $0.00075 per message.  Thus, suppose your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about:
+If your app has 50 users, and each user receives messages from 20 users and sends 300 messages per month, the approximate cost would be:
 - 50 recipients x (20 senders x 300 messages/month/sender)/recipient x $0.00075/message
 = 300,000 messages/month x $0.00075/message
 = $225/month.
+
+For the most up-to-date pricing information, see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
 ## Summary
 
