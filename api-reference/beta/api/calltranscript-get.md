@@ -70,6 +70,9 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 
 ## Examples
 
+> [!NOTE]
+> The document format for transcripts will be deprecated in 60 days. As a result, example 4 and 5 will be removed.
+
 ### Example 1: Get a callTranscript
 #### Request
 
@@ -252,10 +255,6 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-
-> [!NOTE]
-> The document format for transcripts will be deprecated in 60 days.
-
 ### Example 4: Get a callTranscript content specifying Accept header
 
 >**Note:** As document format is getting deprecated, the `Accept` header will also be deprecated.
@@ -382,16 +381,12 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 6: Fetch metadatacontent
+### Example 6: Get a callTranscript metadataContent
 #### Request
-
-# [HTTP](#tab/http1)
 
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
-
----
 
 #### Response
 
