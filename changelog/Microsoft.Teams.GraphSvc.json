@@ -889,7 +889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedTeam",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedTeam](https://learn.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-1.0) resource",
+          "Description": "Added the [deletedTeam](https://learn.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-1.0) resource.",
           "Target": "deletedTeam"
         },
         {
@@ -904,9 +904,9 @@
       "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-02-12T05:32:34.8477703Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "CreatedDateTime": "2023-03-14T05:32:34.8477703Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
