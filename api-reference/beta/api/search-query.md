@@ -162,7 +162,7 @@ Content-type: application/json
 
 ### Request
 
-The following is an example of the request with queryTemplate, it using a queryable property CreateBy to retrieve the file which created by Bob
+The following is an example of the request with queryTemplate, it uses a queryable property CreateBy to retrieve all files which created by Bob
 
 # [HTTP](#tab/http)
 <!-- {
