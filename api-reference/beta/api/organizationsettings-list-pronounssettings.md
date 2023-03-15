@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pron
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {
