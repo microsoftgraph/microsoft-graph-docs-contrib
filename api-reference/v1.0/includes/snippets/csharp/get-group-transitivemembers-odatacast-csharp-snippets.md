@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups["{group-id}"].TransitiveMembers.GraphGroup.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var group = await graphClient.Groups["{group-id}"].TransitiveMembers
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.GetAsync();
 
 ```

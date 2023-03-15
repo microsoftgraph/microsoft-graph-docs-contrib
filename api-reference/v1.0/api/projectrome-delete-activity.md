@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

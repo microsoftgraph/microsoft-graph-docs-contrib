@@ -90,8 +90,6 @@ GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a3
 
 ---
 
-
-
 ### Response
 
 The following is an example of the request.
@@ -127,6 +125,10 @@ Content-Type: application/json
     },
     "dueDateTime": {
         "dateTime": "2020-08-25T04:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "startDateTime": {
+        "dateTime": "2020-06-23T04:00:00.0000000",
         "timeZone": "UTC"
     }
 }

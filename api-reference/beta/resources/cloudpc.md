@@ -49,6 +49,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC is able to be connected or not.|
+|diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
@@ -60,9 +61,10 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |managedDeviceName|String|The Intune device name of the Cloud PC.|
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
+|partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
-|partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
@@ -70,6 +72,16 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
+
+### cloudPcDiskEncryptionState values
+
+|Member|Description|
+|:---|:---|
+|notAvailable|The Cloud PC is not provisioned, or is in a state where encryption is not available.|
+|notEncrypted|The Cloud PC should be encrypted, but the encryption is not done yet (reserved, should not happen).|
+|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using a platform managed key. This is the default value if the customer-managed key is not enabled.|
+|encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcStatus values
 
@@ -106,27 +118,29 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPC",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "imageDisplayName": "String",
   "aadDeviceId": "String",
+  "connectivityResult": "String",
+  "diskEncryptionState": "String",
+  "displayName": "String",
+  "gracePeriodEndDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "imageDisplayName": "String",
+  "lastLoginResult": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastRemoteActionResult": "String",
   "managedDeviceId": "String",
   "managedDeviceName": "String",
+  "onPremisesConnectionName": "String",
+  "osVersion": "String",
+  "partnerAgentInstallResults": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
-  "partnerAgentInstallResults": "String",
-  "onPremisesConnectionName": "String",
+  "provisioningType": "String",
   "servicePlanId": "String",
-  "servicePlanType": "String",
   "servicePlanName": "String",
+  "servicePlanType": "String",
   "status": "String",
-  "userPrincipalName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "gracePeriodEndDateTime": "String (timestamp)",
   "userAccountType": "String",
-  "osVersion": "String",
-  "lastRemoteActionResult": "String",
-  "lastLoginResult": "String",
-  "connectivityResult": "String"
+  "userPrincipalName": "String"
 }
 ```

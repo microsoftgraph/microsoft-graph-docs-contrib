@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewChangeDeploymentStatusPostRequestBody()
 tenantGroupId := "String"
@@ -19,7 +19,7 @@ requestBody.SetManagementTemplateId(&managementTemplateId)
 status := "String"
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ManagedTenantsChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

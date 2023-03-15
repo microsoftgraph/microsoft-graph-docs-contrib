@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 
 ---
 
-
 ### Response
 Here is an example of the response.
 

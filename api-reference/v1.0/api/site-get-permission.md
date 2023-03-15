@@ -86,8 +86,6 @@ GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 
 ---
 
-
-
 ### Response
 <!-- {
   "blockType": "response",

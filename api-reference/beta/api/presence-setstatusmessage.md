@@ -106,9 +106,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response
 
 <!-- {
@@ -172,9 +169,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Set status message: response
 
 <!-- {
@@ -222,9 +216,6 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/setstatusmessage-another-user-get-presence-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 

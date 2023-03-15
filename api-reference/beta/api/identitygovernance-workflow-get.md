@@ -1,5 +1,5 @@
 ---
-title: "Get workflow (in Lifecycle Workflows)"
+title: "Get workflow"
 description: "Read the properties and relationships of a workflow object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get workflow (in Lifecycle Workflows)
+# Get workflow
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

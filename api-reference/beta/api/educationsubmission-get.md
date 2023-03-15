@@ -201,8 +201,6 @@ Prefer: include-unknown-enum-members
 
 ---
 
----
-
 #### Response
 The following is an example of the response. 
 
@@ -286,7 +284,7 @@ GET https://graph.microsoft.com/beta/education/classes/a86a5c30-0437-49d6-9c6b-b
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-submission-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -310,7 +308,6 @@ GET https://graph.microsoft.com/beta/education/classes/a86a5c30-0437-49d6-9c6b-b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 

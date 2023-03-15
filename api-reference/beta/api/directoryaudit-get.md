@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response. 

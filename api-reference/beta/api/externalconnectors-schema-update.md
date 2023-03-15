@@ -123,7 +123,6 @@ Content-type: application/json
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->

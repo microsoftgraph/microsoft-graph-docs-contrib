@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -101,7 +103,6 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -153,7 +154,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -204,7 +204,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

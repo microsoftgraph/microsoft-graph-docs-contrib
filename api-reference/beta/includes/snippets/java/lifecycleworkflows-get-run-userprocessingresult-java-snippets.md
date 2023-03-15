@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-UserProcessingResult userProcessingResult = graphClient.identityGovernance().lifecycleWorkflows().workflows("15239232-66ed-445b-8292-2f5bbb2eb833").runs("e65e08a0-d68d-41dc-915b-8c4019af5cc2").userProcessingResults("40efc576-840f-47d0-ab95-5abca800f8a2")
+UserProcessingResult userProcessingResult = graphClient.identityGovernance().lifecycleWorkflows().workflows("14879e66-9ea9-48d0-804d-8fea672d0341").runs("dad77a47-6eda-4de7-bc37-fe8eb5aaf17d").userProcessingResults("78b83505-6967-4168-a7ea-4921c0543ce9")
 	.buildRequest()
-	.select("id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject")
 	.get();
 
 ```

@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -60,10 +62,6 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-registeredusers-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-registeredusers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -71,9 +69,6 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registeredusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ---
 

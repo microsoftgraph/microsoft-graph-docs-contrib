@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

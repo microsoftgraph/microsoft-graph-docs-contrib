@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
