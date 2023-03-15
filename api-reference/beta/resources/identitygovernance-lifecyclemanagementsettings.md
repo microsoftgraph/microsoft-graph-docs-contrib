@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
-    "workflowScheduleIntervalInHours": 1,
+    "workflowScheduleIntervalInHours": "(Integer)",
     "emailSettings": {
     "@odata.type": "microsoft.graph.emailSettings",
         "senderDomain": "(String)",
