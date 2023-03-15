@@ -18,8 +18,10 @@ Represents a resource that dynamically detects and prompts users with the users 
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---|
-|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with the most preferred credential for multi factor|
+|state|microsoft.graph.advancedConfigState|microsoft.graph.advancedConfigState|
+|includeTargets|Collection(microsoft.graph.includeTarget)|Users and groups included in the system preferred authentication method experience.|
+|excludeTargets|Collection(microsoft.graph.includeTarget)|Users and groups excluded from the system preferred authentication method experience.|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with the most preferred credential for multi factor.|
 ## Relationships
 
 None.
