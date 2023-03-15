@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/unifiedstoragequota-get-services?view=graph-rest-beta) operation to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/servicestoragequotabreakdown-get?view=graph-rest-beta) operation to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
           "Target": "serviceStorageQuotaBreakdown"
         },
         {

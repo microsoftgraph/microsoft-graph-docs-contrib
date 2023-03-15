@@ -19,7 +19,7 @@ Represents a proportion of the unified storage quota associated with a specific 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get a list of services in the serviceStorageQuotaBreakdown.|
-|[Get serviceStorageQuotaBreakdown](../api/unifiedstoragequota-get-services.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
+|[Get serviceStorageQuotaBreakdown](../api/servicestoragequotabreakdown-get.md)|[serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md)|Read the properties and relationships of a [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) object.|
 
 ## Properties
 |Property|Type|Description|
