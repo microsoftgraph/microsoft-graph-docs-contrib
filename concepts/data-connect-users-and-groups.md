@@ -48,7 +48,7 @@ In the [Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-gro
     |     OneDrive and SharePoint Online    | N/A         | N/A                 | N/A             | N/A                    |
     |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
 
-    *For teams datasets: M365 groups must also be teams enabled.
+    *For Teams datasets: M365 groups must also be Teams enabled.
 
 2.	**Example**: The customer wants to extract the Group Details dataset with a security group of users A, B, and C out of their tenant of 500 users. Since this is a group scoped dataset, the customer will only receive group details data for the specified group. The customer will NOT receive any individual data for users A, B, and C in the group.
 
