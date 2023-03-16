@@ -268,7 +268,7 @@ In this example, the **contentType** can be either `text` or `html`; make sure t
 
 To get images embedded in the chat message, make a second call to retrieve [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent). For details, see [Get chatMessageHostedContent](/graph/api/chatmessagehostedcontent-get).
 
-We recommend that your app monitors to the [chatMessage.policyViolation.dlpAction](/graph/api/resources/chatmessagepolicyviolation) field, watches for change notifications to this field, and hides or flags the messages according to the data loss prevention (DLP) or similar rules defined by your organization. The valid values are `None`, `NotifySender`, and `BlockAccess`. Currently, Teams ignores `BlockAccessExternal`. For details about this values, see [chatMessagePolicyViolation resource type](/graph/api/resources/chatmessagepolicyviolation).
+We recommend that your app monitors to the [chatMessage.policyViolation.dlpAction](/graph/api/resources/chatmessagepolicyviolation) field, watches for change notifications to this field, and hides or flags the messages according to the data loss prevention (DLP) or similar rules defined by your organization. The valid values are `None`, `NotifySender`, and `BlockAccess`. Currently, Teams ignores `BlockAccessExternal`. For details about these values, see [chatMessagePolicyViolation resource type](/graph/api/resources/chatmessagepolicyviolation).
 
 Some messages are [system messages](/graph/system-messages). For example, the following system message shows that a new member joined the chat.
 
@@ -337,7 +337,7 @@ In [Step 6](#step-6-subscribe-to-change-notifications), you will decide whether 
 
 ## Step 6: Subscribe to change notifications
 
-Microsoft Graph offers several kinds of [change notifications for messages](/graph/teams-change-notification-in-microsoft-teams-overview), as specified by the corresponding **resource** roperties.
+Microsoft Graph offers several kinds of [change notifications for messages](/graph/teams-change-notification-in-microsoft-teams-overview), as specified by the corresponding **resource** properties:
 
 - Per chat: `"resource": "/chats/{id}/messages"`
 - Per user, across all chats: `"resource": "/users/{id}/chats/getAllMessages"`
@@ -346,13 +346,15 @@ Microsoft Graph offers several kinds of [change notifications for messages](/gra
 
 If you want to track only specific chats, `/messages` is an option, but you should consider how many different chats you’ll need to track. There’s a [limit](/graph/webhooks#teams-resource-limitations) (for example, 10,000) on the number of per-chat change notifications; for details, see [subscriptions](/graph/api/resources/subscription). Instead, consider subscribing to one of the three `/getAllMessages` options, which get messages across all chats of a user, tenant, or app.
 
-All four options are called by your backend server component. Because they all support [application](/graph/auth/auth-concepts) permissions, you should pay attention to the access control logic to show and hide chats accordingly as users join or leave. The per-user option, which also supports [delegated](/graph/auth/auth-concepts) permissions, might be easier to implement, because the change notifications are already user specific; however, this it might be more expensive in the long run because the same message would trigger multiple change notifications, one for each subscribed user, and you might need a bigger cache to store the duplicated messages. For more details about permissions and licensing requirements for the different subscribed resources, see [Create subscription](/graph/api/subscription-post-subscriptions).
+All four options are called by your backend server component. Because they all support [application](/graph/auth/auth-concepts) permissions, pay attention to the access control logic to show and hide chats accordingly as users join or leave. The per-user option, which also supports [delegated](/graph/auth/auth-concepts) permissions, might be easier to implement, because the change notifications are already user specific; however, this it might be more expensive in the long run because the same message would trigger multiple change notifications, one for each subscribed user, and you might need a bigger cache to store the duplicated messages. For more details about permissions and licensing requirements for the different subscribed resources, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
-Change notification subscriptions have consumption charges. Specify the `model` parameter **resource** property, as shown in the following example.
+Change notification subscriptions have consumption charges. Specify the `model` parameter on the **resource** property, as shown in the following example.
 
 When creating the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation).
 
-The following example shows how to get all messages per user. For more details, see [Create subscription](/graph/api/subscription-post-subscriptions). Before you use this example, the subscription notification endpoint (specified in the **notificationUrl** property) must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
+The following example shows how to get all messages per user. Before you use this example, the subscription notification endpoint (specified in the **notificationUrl** property) must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
+
+For more details about this example, see [Create subscription](/graph/api/subscription-post-subscriptions). 
 
 ### Request
 
@@ -402,7 +404,7 @@ Content-type: application/json
 
 Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the **notificationUrl**.  For security reasons, the content is encrypted. To decrypt the content, see [Decrypting resource data from change notifications](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
 
-When you create the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Notification endpoint validation).
+When you create the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Notification endpoint validation](/graph/api/subscription-post-subscriptions#notification-endpoint-validation).
 
 ### Request (sent by Microsoft Graph)
 
