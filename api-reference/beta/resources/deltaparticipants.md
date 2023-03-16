@@ -1,6 +1,6 @@
 ---
 title: "deltaParticipants resource type"
-description: "Represents a notification for the creation, update, or deletion of a participant in a meeting[Reference link HERE]. This resource is published by communications servers to notify changed participants since last update."
+description: "Represents a notification for the creation, update, or deletion of a [participant](participant.md) in a meeting. This resource is published by communications servers to notify changed participants since last update."
 author: "sasthana"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a notification for the creation, update, or deletion of a participant in a meeting[Reference link HERE]. This resource is published by communications servers to notify changed participants since last update.
+Represents a notification for the creation, update, or deletion of a [participant](participant.md) in a meeting. This resource is published by communications servers to notify changed participants since last update.
 
 ## Properties
 
