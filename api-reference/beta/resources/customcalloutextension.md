@@ -19,8 +19,8 @@ This abstract type is inherited by:
 
 - [customAccessPackageWorkflowExtension](customaccesspackageworkflowextension.md)
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
-- [accesspackageassignmentrequestworkflowextension](accesspackageassignmentrequestworkflowextension.md)
-- [accesspackageassignmentworkflowextension](../resources/accesspackageassignmentworkflowextension.md)
+- [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
 Inherits from [entity](entity.md).
 

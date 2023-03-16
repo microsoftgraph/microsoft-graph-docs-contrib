@@ -64,7 +64,9 @@ If successful, this method returns a `201 Created` response code and a [accessPa
 
 ###  Example 1: Create a custom extension for use with an access package assignment request
 The following is an example of a access package assignment request custom workflow extension.
+
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_accessPackageAssignmentRequestWorkflowExtension"
@@ -140,6 +142,8 @@ Content-Type: application/json
 
 ### Example 2: Create a custom extension for use with an access package assignment
 The following is an example of a access package assignment custom workflow extension.
+
+#### Request
 
 <!-- {
   "blockType": "request",
