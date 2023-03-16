@@ -20,8 +20,8 @@ Defines the base type invitation redemption provider configuration base type to 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType Collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
-| fallbackIdentityProvider | b2bIdentityProvidersType Collection | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. |
+| primaryIdentityProviderPrecedenceOrder | \[b2bIdentityProvidersType\] | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
+| fallbackIdentityProvider | \[b2bIdentityProvidersType\] | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. |
 
 ## Relationships
 
