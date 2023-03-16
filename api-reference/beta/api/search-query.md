@@ -57,7 +57,7 @@ If successful, this method returns an `HTTP 200 OK` response code and a collecti
 
 ### Example 1: Basic call to perform a search request.
 
-The following is an example of the request shows how to perform a search to get expected connector items.
+The following example shows how to perform a search to get expected connector items.
 
 #### Request
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -165,15 +165,9 @@ Content-type: application/json
 
 ### Example 2: Basic call to use queryTemplate.
 
-The following is an example of the request shows how to use a queryable property CreateBy to retrieve all files which created by Bob.
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
 
 #### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "query"
-}-->
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -196,44 +190,9 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-query-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-query-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.searchResponse",
-  "isCollection": true
-} -->
+The following example shows the response.
 
 ```HTTP
 HTTP/1.1 200 OK
