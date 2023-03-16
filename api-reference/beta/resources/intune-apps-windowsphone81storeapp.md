@@ -1,6 +1,6 @@
 ---
 title: "windowsPhone81StoreApp resource type"
-description: "Contains properties and inherited properties for Windows Phone 8.1 Store apps. Inherits from graph.mobileApp."
+description: "Contains properties and inherited properties for Windows Phone 8.1 Store apps. Inherits from graph.mobileApp. Will be deprecated in February 2023."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for Windows Phone 8.1 Store apps. Inherits from graph.mobileApp.
+Contains properties and inherited properties for Windows Phone 8.1 Store apps. Inherits from graph.mobileApp. Will be deprecated in February 2023.
 
 
 Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
