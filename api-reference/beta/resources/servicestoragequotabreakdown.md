@@ -3,7 +3,7 @@ title: "serviceStorageQuotaBreakdown resource type"
 description: "Represents a proportion of the unified storage quota associated with a specific service."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: "unified-storage-quota"
+ms.prod: files
 doc_type: resourcePageType
 ---
 
