@@ -2068,11 +2068,22 @@ items:
           - name: Update task
             href: api/printtaskdefinition-update-task.md
         - name: Quota
+           href: resources/quota.md
           items:
-          - name: UnifiedStorageQuota
+          - name: Service Storage Quota Breakdown 
+            href: resources/servicestoragequotabreakdown.md
+            items:
+            - name: Get
+              href: api/servicestoragequotabreakdown-get.md
+              name: List
+              href: api/unifiedstoragequota-list-services.md
+          - name: Unified Storage Quota
+            href: resources/unifiedstoragequota.md
             items:
             - name: Get
               href: api/unifiedstoragequota-get.md
+              name: List
+              href: api/unifiedstoragequota-list-services.md
           - name: UnifiedStorageQuotaServices
             items:
             - name: Get
