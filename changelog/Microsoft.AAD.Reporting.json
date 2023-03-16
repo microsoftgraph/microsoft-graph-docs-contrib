@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "signInActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-v1) resource and its associated methods to v1. SignInActivity allows you to see the last time a user signed in, letting you identify and manage stale user accounts.",
+          "Description": "Added the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-1.0) resource. **signInActivity** allows you to see the last time a user signed in, letting you identify and manage stale user accounts.",
           "Target": "signInActivity"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "signInActivity",
           "ChangeType": "Addition",
-          "Description": "Added the **signInActivity** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1) resource.",
+          "Description": "Added the **signInActivity** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],
@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-03-13T00:00:00.601897Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Users",
+      "SubArea": ""
     },
     {
       "ChangeList": [

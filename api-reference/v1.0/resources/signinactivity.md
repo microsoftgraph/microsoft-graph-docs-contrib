@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Provides the last interactive or non-interactive sign-in time for a specific [user](user.md). Since signInActivity describes a property of the user object, Azure AD stores signinactivity for your users for as long as the user objects exist. 
+Provides the last interactive or non-interactive sign-in time for a specific [user](user.md). Since signInActivity describes a property of the user object, Azure AD stores sign in activity for your users for as long as the user object exists. 
 
 ## Properties
 
@@ -37,6 +37,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.signInActivity",
   "lastSignInDateTime": "String (timestamp)",
   "lastSignInRequestId": "String",
   "lastNonInteractiveSignInDateTime": "String (timestamp)",
