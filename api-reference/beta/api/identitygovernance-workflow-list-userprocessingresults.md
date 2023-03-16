@@ -90,54 +90,54 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/userProcessingResults",
-"value": [
-{
-"id": "e831ffea-4156-482a-ba43-a8161f83efa8",
-"completedDateTime": "2022-08-24T18:27:43.1283747Z",
-"failedTasksCount": 1,
-"processingStatus": "failed",
-"scheduledDateTime": "2022-08-24T18:27:28.4105696Z",
-"startedDateTime": "2022-08-24T18:27:34.47941Z",
-"totalTasksCount": 3,
-"totalUnprocessedTasksCount": 2,
-"workflowExecutionType": "onDemand",
-"workflowVersion": 1,
-"subject": {
-"id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
-}
-},
-{
-"id": "c1fab0b4-222d-4bdf-ab09-eb99fc5a8061",
-"completedDateTime": "2022-08-24T18:35:53.5871731Z",
-"failedTasksCount": 1,
-"processingStatus": "failed",
-"scheduledDateTime": "2022-08-24T18:35:39.0021384Z",
-"startedDateTime": "2022-08-24T18:35:48.0824202Z",
-"totalTasksCount": 3,
-"totalUnprocessedTasksCount": 2,
-"workflowExecutionType": "onDemand",
-"workflowVersion": 1,
-"subject": {
-"id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
-}
-},
-{
-"id": "0481a153-f437-45f0-b07c-ebe1008f10c5",
-"completedDateTime": "2022-08-24T23:26:41.4425594Z",
-"failedTasksCount": 0,
-"processingStatus": "completed",
-"scheduledDateTime": "2022-08-24T23:26:24.1178409Z",
-"startedDateTime": "2022-08-24T23:26:29.315238Z",
-"totalTasksCount": 2,
-"totalUnprocessedTasksCount": 0,
-"workflowExecutionType": "onDemand",
-"workflowVersion": 13,
-"subject": {
-"id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/userProcessingResults",
+    "value": [
+        {
+            "id": "e831ffea-4156-482a-ba43-a8161f83efa8",
+            "completedDateTime": "2022-08-24T18:27:43.1283747Z",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "scheduledDateTime": "2022-08-24T18:27:28.4105696Z",
+            "startedDateTime": "2022-08-24T18:27:34.47941Z",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "workflowVersion": 1,
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "c1fab0b4-222d-4bdf-ab09-eb99fc5a8061",
+            "completedDateTime": "2022-08-24T18:35:53.5871731Z",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "scheduledDateTime": "2022-08-24T18:35:39.0021384Z",
+            "startedDateTime": "2022-08-24T18:35:48.0824202Z",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "workflowVersion": 1,
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "0481a153-f437-45f0-b07c-ebe1008f10c5",
+            "completedDateTime": "2022-08-24T23:26:41.4425594Z",
+            "failedTasksCount": 0,
+            "processingStatus": "completed",
+            "scheduledDateTime": "2022-08-24T23:26:24.1178409Z",
+            "startedDateTime": "2022-08-24T23:26:29.315238Z",
+            "totalTasksCount": 2,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand",
+            "workflowVersion": 13,
+            "subject": {
+                "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+            }
+        }
+    ]
 }
 ```
 
@@ -170,42 +170,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/userProcessingResults",
-"value": [
-{
-"id": "e831ffea-4156-482a-ba43-a8161f83efa8",
-"failedTasksCount": 1,
-"processingStatus": "failed",
-"totalTasksCount": 3,
-"totalUnprocessedTasksCount": 2,
-"workflowExecutionType": "onDemand",
-"subject": {
-"id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
-}
-},
-{
-"id": "c1fab0b4-222d-4bdf-ab09-eb99fc5a8061",
-"failedTasksCount": 1,
-"processingStatus": "failed",
-"totalTasksCount": 3,
-"totalUnprocessedTasksCount": 2,
-"workflowExecutionType": "onDemand",
-"subject": {
-"id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
-}
-},
-{
-"id": "0481a153-f437-45f0-b07c-ebe1008f10c5",
-"failedTasksCount": 0,
-"processingStatus": "completed",
-"totalTasksCount": 2,
-"totalUnprocessedTasksCount": 0,
-"workflowExecutionType": "onDemand",
-"subject": {
-"@odata.type": "microsoft.graph.user",
-"id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/userProcessingResults",
+    "value": [
+        {
+            "id": "e831ffea-4156-482a-ba43-a8161f83efa8",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "c1fab0b4-222d-4bdf-ab09-eb99fc5a8061",
+            "failedTasksCount": 1,
+            "processingStatus": "failed",
+            "totalTasksCount": 3,
+            "totalUnprocessedTasksCount": 2,
+            "workflowExecutionType": "onDemand",
+            "subject": {
+                "id": "b276ff04-835d-414c-a2a7-5c59e37cccc9"
+            }
+        },
+        {
+            "id": "0481a153-f437-45f0-b07c-ebe1008f10c5",
+            "failedTasksCount": 0,
+            "processingStatus": "completed",
+            "totalTasksCount": 2,
+            "totalUnprocessedTasksCount": 0,
+            "workflowExecutionType": "onDemand",
+            "subject": {
+                "@odata.type": "microsoft.graph.user",
+                "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+            }
+        }
+    ]
 }
 ```

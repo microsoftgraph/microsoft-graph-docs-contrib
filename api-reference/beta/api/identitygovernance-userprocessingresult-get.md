@@ -90,20 +90,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs('dad77a47-6eda-4de7-bc37-fe8eb5aaf17d')/userProcessingResults/$entity",
-"id": "78b83505-6967-4168-a7ea-4921c0543ce9",
-"completedDateTime": "2022-08-24T23:28:11.1348863Z",
-"failedTasksCount": 0,
-"processingStatus": "completed",
-"scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
-"startedDateTime": "2022-08-24T23:28:04.490313Z",
-"totalTasksCount": 2,
-"totalUnprocessedTasksCount": 0,
-"workflowExecutionType": "onDemand",
-"workflowVersion": 1,
-"subject": {
-"id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs('dad77a47-6eda-4de7-bc37-fe8eb5aaf17d')/userProcessingResults/$entity",
+    "id": "78b83505-6967-4168-a7ea-4921c0543ce9",
+    "completedDateTime": "2022-08-24T23:28:11.1348863Z",
+    "failedTasksCount": 0,
+    "processingStatus": "completed",
+    "scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
+    "startedDateTime": "2022-08-24T23:28:04.490313Z",
+    "totalTasksCount": 2,
+    "totalUnprocessedTasksCount": 0,
+    "workflowExecutionType": "onDemand",
+    "workflowVersion": 1,
+    "subject": {
+        "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+    }
 }
 ```
 
@@ -137,14 +137,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/runs('e65e08a0-d68d-41dc-915b-8c4019af5cc2')/userProcessingResults(id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject)/$entity",
-"id": "40efc576-840f-47d0-ab95-5abca800f8a2",
-"failedTasksCount": 0,
-"processingStatus": "completed",
-"totalTasksCount": 3,
-"totalUnprocessedTasksCount": 0,
-"subject": {
-"id": "df744d9e-2148-4922-88a8-633896c1e929"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/runs('e65e08a0-d68d-41dc-915b-8c4019af5cc2')/userProcessingResults(id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject)/$entity",
+    "id": "40efc576-840f-47d0-ab95-5abca800f8a2",
+    "failedTasksCount": 0,
+    "processingStatus": "completed",
+    "totalTasksCount": 3,
+    "totalUnprocessedTasksCount": 0,
+    "subject": {
+        "id": "df744d9e-2148-4922-88a8-633896c1e929"
+    }
 }
 ```

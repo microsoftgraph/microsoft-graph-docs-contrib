@@ -88,12 +88,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
-"workflowScheduleIntervalInHours": 1,
-"emailSettings": {
-"@odata.type": "microsoft.graph.emailSettings",
-"senderDomain": "ContosoIndustries.net",
-"useCompanyBranding": true
-},
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+    "workflowScheduleIntervalInHours": 1,
+    "emailSettings": {
+    "@odata.type": "microsoft.graph.emailSettings",
+        "senderDomain": "ContosoIndustries.net",
+        "useCompanyBranding": true
+  },
 }
 ```

@@ -15,17 +15,6 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.
 
-With this call you are able to update:
-
-- display name
-- description
-- whether or not it's enabled
-- Whether or not workflow schedule is enabled
-- task name
-- task description
-
-If you want to change any other workflow property, you must create a new workflow using the [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md) call.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,6 +57,7 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
+
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
@@ -89,10 +79,10 @@ Content-Type: application/json
 Content-length: 454
 
 {
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Australia Onboard new hire employee",
-"isEnabled": true,
-"isSchedulingEnabled": false
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false
 }
 ```
 

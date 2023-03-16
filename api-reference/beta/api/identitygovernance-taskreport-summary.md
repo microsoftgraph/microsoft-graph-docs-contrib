@@ -98,10 +98,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.taskReportSummary",
-"successfulTasks": 8,
-"failedTasks": 0,
-"unprocessedTasks": 0,
-"totalTasks": 8
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.taskReportSummary",
+    "successfulTasks": 8,
+    "failedTasks": 0,
+    "unprocessedTasks": 0,
+    "totalTasks": 8
 }
 ```

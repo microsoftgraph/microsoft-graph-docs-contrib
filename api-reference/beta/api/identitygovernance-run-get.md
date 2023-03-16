@@ -90,20 +90,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs/$entity",
-"id": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
-"completedDateTime": "2022-08-24T23:28:11.1348863Z",
-"failedTasksCount": 0,
-"failedUsersCount": 0,
-"lastUpdatedDateTime": "2022-08-24T23:33:09.186588Z",
-"processingStatus": "completed",
-"scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
-"startedDateTime": "2022-08-24T23:28:04.5688752Z",
-"successfulUsersCount": 2,
-"totalTasksCount": 4,
-"totalUsersCount": 2,
-"totalUnprocessedTasksCount": 0,
-"workflowExecutionType": "onDemand"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/runs/$entity",
+    "id": "dad77a47-6eda-4de7-bc37-fe8eb5aaf17d",
+    "completedDateTime": "2022-08-24T23:28:11.1348863Z",
+    "failedTasksCount": 0,
+    "failedUsersCount": 0,
+    "lastUpdatedDateTime": "2022-08-24T23:33:09.186588Z",
+    "processingStatus": "completed",
+    "scheduledDateTime": "2022-08-24T23:28:01.6476554Z",
+    "startedDateTime": "2022-08-24T23:28:04.5688752Z",
+    "successfulUsersCount": 2,
+    "totalTasksCount": 4,
+    "totalUsersCount": 2,
+    "totalUnprocessedTasksCount": 0,
+    "workflowExecutionType": "onDemand"
 }
 ```
 
@@ -138,13 +138,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/runs(id,failedTasksCount,failedUsersCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,totalUsersCount)/$entity",
-"id": "e65e08a0-d68d-41dc-915b-8c4019af5cc2",
-"failedTasksCount": 0,
-"failedUsersCount": 0,
-"processingStatus": "completed",
-"totalTasksCount": 3,
-"totalUsersCount": 1,
-"totalUnprocessedTasksCount": 0
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/runs(id,failedTasksCount,failedUsersCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,totalUsersCount)/$entity",
+    "id": "e65e08a0-d68d-41dc-915b-8c4019af5cc2",
+    "failedTasksCount": 0,
+    "failedUsersCount": 0,
+    "processingStatus": "completed",
+    "totalTasksCount": 3,
+    "totalUsersCount": 1,
+    "totalUnprocessedTasksCount": 0
 }
 ```

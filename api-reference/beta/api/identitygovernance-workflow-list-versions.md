@@ -90,39 +90,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions",
-"value": [
-{
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Global onboard new hire employee",
-"isEnabled": true,
-"isSchedulingEnabled": true,
-"lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
-"versionNumber": 3,
-"createdDateTime": "2022-08-24T19:31:33.5534766Z"
-},
-{
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Onboard new hire employee",
-"isEnabled": true,
-"isSchedulingEnabled": false,
-"lastModifiedDateTime": "2022-08-24T19:31:33.4303233Z",
-"versionNumber": 2,
-"createdDateTime": "2022-08-24T19:18:18.6841471Z"
-},
-{
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Onboard new hire employee",
-"isEnabled": true,
-"isSchedulingEnabled": false,
-"lastModifiedDateTime": "2022-08-24T19:18:18.5633638Z",
-"versionNumber": 1,
-"createdDateTime": "2022-08-24T15:39:17.6496784Z"
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions",
+    "value": [
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Global onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": true,
+            "lastModifiedDateTime": "2022-08-24T19:33:03.8664941Z",
+            "versionNumber": 3,
+            "createdDateTime": "2022-08-24T19:31:33.5534766Z"
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
+            "lastModifiedDateTime": "2022-08-24T19:31:33.4303233Z",
+            "versionNumber": 2,
+            "createdDateTime": "2022-08-24T19:18:18.6841471Z"
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "Onboard new hire employee",
+            "isEnabled": true,
+            "isSchedulingEnabled": false,
+            "lastModifiedDateTime": "2022-08-24T19:18:18.5633638Z",
+            "versionNumber": 1,
+            "createdDateTime": "2022-08-24T15:39:17.6496784Z"
+        }
+    ]
 }
 ```
 
@@ -154,18 +154,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber)",
-"value": [
-{
-"category": "leaver",
-"displayName": "Post-Offboarding of an employee",
-"versionNumber": 2
-},
-{
-"category": "leaver",
-"displayName": "Post-Offboarding of an employee",
-"versionNumber": 1
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/versions(category,displayName,versionNumber)",
+    "value": [
+        {
+            "category": "leaver",
+            "displayName": "Post-Offboarding of an employee",
+            "versionNumber": 2
+        },
+        {
+            "category": "leaver",
+            "displayName": "Post-Offboarding of an employee",
+            "versionNumber": 1
+        }
+    ]
 }
 ```

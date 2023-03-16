@@ -87,37 +87,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
-"id": "ffcc4c85-5a14-448e-a390-77abf2700369",
-"displayName": "Grant manager access to mailbox and OneDrive",
-"description": "Grant manager access to mailbox and OneDrive",
-"createdDateTime": "2022-08-24T20:36:14.7006029Z",
-"lastModifiedDateTime": "2022-08-24T22:42:34.0744491Z",
-"endpointConfiguration": {
-"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-"resourceGroupName": "RG-LCM",
-"logicAppWorkflowName": "ManagerAccess"
-},
-"authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureADPopTokenAuthentication"
-},
-"clientConfiguration": {
-"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-"maximumRetries": 1,
-"timeoutInMilliseconds": 1000
-},
-"callbackConfiguration": {
-"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-"timeoutDuration": "PT10M"
-},
-"createdBy": {
-"@odata.type": "#microsoft.graph.user",
-"id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
-},
-"lastModifiedBy": {
-"@odata.type": "#microsoft.graph.user",
-"id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions/$entity",
+    "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
+    "displayName": "Grant manager access to mailbox and OneDrive",
+    "description": "Grant manager access to mailbox and OneDrive",
+    "createdDateTime": "2022-08-24T20:36:14.7006029Z",
+    "lastModifiedDateTime": "2022-08-24T22:42:34.0744491Z",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+        "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+        "resourceGroupName": "RG-LCM",
+        "logicAppWorkflowName": "ManagerAccess"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+    },
+    "clientConfiguration": {
+        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+        "maximumRetries": 1,
+        "timeoutInMilliseconds": 1000
+    },
+    "callbackConfiguration": {
+        "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+        "timeoutDuration": "PT10M"
+    },
+    "createdBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    },
+    "lastModifiedBy": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "a698128f-b34f-44db-a9f9-7661c7aba8d8"
+    }
 }
 ```

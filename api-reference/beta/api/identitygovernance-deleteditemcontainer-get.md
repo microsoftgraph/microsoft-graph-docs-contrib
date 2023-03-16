@@ -90,38 +90,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows/$entity",
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Australia Onboard new hire employee",
-"lastModifiedDateTime": "2022-08-24T19:06:39.4291388Z",
-"createdDateTime": "2022-08-24T19:06:07.9926094Z",
-"deletedDateTime": "2022-08-24T19:06:39.6981917Z",
-"id": "4557805a-1af5-4c29-b271-2cd7fb5de9bf",
-"isEnabled": false,
-"isSchedulingEnabled": false,
-"nextScheduleRunDateTime": null,
-"version": 1,
-"executionConditions": {
-"@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-"scope": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"rule": "(country eq 'Australia')"
-},
-"trigger": {
-"@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-"timeBasedAttribute": "employeeHireDate",
-"offsetInDays": 0
-}
-},
-"lastModifiedBy": {
-"id": "537b3620-fab7-435e-81bb-03fee751b789"
-},
-"tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('4557805a-1af5-4c29-b271-2cd7fb5de9bf')/tasks",
-"tasks": [],
-"createdBy": {
-"id": "537b3620-fab7-435e-81bb-03fee751b789"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows/$entity",
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "lastModifiedDateTime": "2022-08-24T19:06:39.4291388Z",
+    "createdDateTime": "2022-08-24T19:06:07.9926094Z",
+    "deletedDateTime": "2022-08-24T19:06:39.6981917Z",
+    "id": "4557805a-1af5-4c29-b271-2cd7fb5de9bf",
+    "isEnabled": false,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(country eq 'Australia')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    },
+    "lastModifiedBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('4557805a-1af5-4c29-b271-2cd7fb5de9bf')/tasks",
+    "tasks": [],
+    "createdBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
+    }
 }
 ```
 
@@ -155,25 +155,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(id,category,displayName,description,version,executionConditions,tasks())/$entity",
-"category": "leaver",
-"description": "Employee offboarding for Contoso Germany.",
-"displayName": "Germany offboard employees",
-"id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
-"version": 4,
-"executionConditions": {
-"@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-"scope": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"rule": "(startsWith(employeeType, 'member'))"
-},
-"trigger": {
-"@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-"timeBasedAttribute": "employeeLeaveDateTime",
-"offsetInDays": -7
-}
-},
-"tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('952b23c5-cc25-48c9-8848-95da4dd9dc6d')/tasks",
-"tasks": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(id,category,displayName,description,version,executionConditions,tasks())/$entity",
+    "category": "leaver",
+    "description": "Employee offboarding for Contoso Germany.",
+    "displayName": "Germany offboard employees",
+    "id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
+    "version": 4,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(startsWith(employeeType, 'member'))"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeLeaveDateTime",
+            "offsetInDays": -7
+        }
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('952b23c5-cc25-48c9-8848-95da4dd9dc6d')/tasks",
+    "tasks": []
 }
 ```

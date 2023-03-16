@@ -78,11 +78,11 @@ Content-Type: application/json
 Content-length: 155
 
 {
-"data": {
-"operationStatus": "Completed"
-},
-"source": "sample",
-"type": "lifecycleEvent"
+  "data": {
+    "operationStatus": "Completed"
+  },
+  "source": "sample",
+  "type": "lifecycleEvent"
 }
 ```
 

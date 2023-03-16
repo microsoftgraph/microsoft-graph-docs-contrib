@@ -82,27 +82,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#workflow",
-"@odata.type": "#microsoft.graph.identityGovernance.workflow",
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Australia Onboard new hire employee",
-"lastModifiedDateTime": "2022-08-24T18:51:29.4301671Z",
-"createdDateTime": "2022-08-24T18:30:33.1050022Z",
-"deletedDateTime": null,
-"id": "4c9c57b9-e1e9-4bed-a936-4fad9d8f5638",
-"isEnabled": true,
-"isSchedulingEnabled": false,
-"nextScheduleRunDateTime": null,
-"version": 1,
-"executionConditions": null,
-"lastModifiedBy": {
-"id": "537b3620-fab7-435e-81bb-03fee751b789"
-},
-"tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')/tasks",
-"tasks": [],
-"createdBy": {
-"id": "537b3620-fab7-435e-81bb-03fee751b789"
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workflow",
+    "@odata.type": "#microsoft.graph.identityGovernance.workflow",
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "lastModifiedDateTime": "2022-08-24T18:51:29.4301671Z",
+    "createdDateTime": "2022-08-24T18:30:33.1050022Z",
+    "deletedDateTime": null,
+    "id": "4c9c57b9-e1e9-4bed-a936-4fad9d8f5638",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": null,
+    "lastModifiedBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
+    },
+    "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')('4c9c57b9-e1e9-4bed-a936-4fad9d8f5638')/tasks",
+    "tasks": [],
+    "createdBy": {
+        "id": "537b3620-fab7-435e-81bb-03fee751b789"
+    }
 }
 ```

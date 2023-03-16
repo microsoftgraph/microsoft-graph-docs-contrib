@@ -87,41 +87,41 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/work
 Content-Type: application/json
 
 {
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "Australia Onboard new hire employee",
-"isEnabled": true,
-"isSchedulingEnabled": false,
-"executionConditions": {
-"@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-"scope": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"rule": "(country eq 'Australia')"
-},
-"trigger": {
-"@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-"timeBasedAttribute": "employeeHireDate",
-"offsetInDays": 0
-}
-},
-"tasks": [
-{
-"continueOnError": false,
-"description": "Enable user account in the directory",
-"displayName": "Enable User Account",
-"isEnabled": true,
-"taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-"arguments": []
-},
-{
-"continueOnError": false,
-"description": "Send welcome email to new hire",
-"displayName": "Send Welcome Email",
-"isEnabled": true,
-"taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
-"arguments": []
-}
-]
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "Australia Onboard new hire employee",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(country eq 'Australia')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    },
+    "tasks": [
+        {
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": []
+        }
+    ]
 }
 ```
 
@@ -140,29 +140,29 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "New Zealand new hire",
-"lastModifiedDateTime": "2022-08-26T04:51:27.521792Z",
-"createdDateTime": "2022-08-26T04:51:27.5217824Z",
-"deletedDateTime": null,
-"id": "818cd47f-138c-4a83-b3f5-afa92bfcf391",
-"isEnabled": true,
-"isSchedulingEnabled": false,
-"nextScheduleRunDateTime": null,
-"version": 1,
-"executionConditions": {
-"@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-"scope": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"rule": "(country eq 'New Zealand')"
-},
-"trigger": {
-"@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-"timeBasedAttribute": "employeeHireDate",
-"offsetInDays": 0
-}
-}
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+    "category": "joiner",
+    "description": "Configure new hire tasks for onboarding employees on their first day",
+    "displayName": "New Zealand new hire",
+    "lastModifiedDateTime": "2022-08-26T04:51:27.521792Z",
+    "createdDateTime": "2022-08-26T04:51:27.5217824Z",
+    "deletedDateTime": null,
+    "id": "818cd47f-138c-4a83-b3f5-afa92bfcf391",
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "nextScheduleRunDateTime": null,
+    "version": 1,
+    "executionConditions": {
+        "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+        "scope": {
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(country eq 'New Zealand')"
+        },
+        "trigger": {
+            "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+            "timeBasedAttribute": "employeeHireDate",
+            "offsetInDays": 0
+        }
+    }
 }
 ```

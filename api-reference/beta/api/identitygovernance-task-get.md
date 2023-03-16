@@ -145,20 +145,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/versions(1)/tasks/$entity",
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Add user to selected groups",
-"displayName": "Add User To Groups",
-"executionSequence": 2,
-"id": "eedd8043-90a1-4e3c-9112-b2a8917ea3ae",
-"isEnabled": true,
-"taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
-"arguments": [
-{
-"name": "groupID",
-"value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
-}
-]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/versions(1)/tasks/$entity",
+  "category": "joiner,leaver",
+  "continueOnError": false,
+  "description": "Add user to selected groups",
+  "displayName": "Add User To Groups",
+  "executionSequence": 2,
+  "id": "eedd8043-90a1-4e3c-9112-b2a8917ea3ae",
+  "isEnabled": true,
+  "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+  "arguments": [
+    {
+      "name": "groupID",
+      "value": "e5659cb0-bcbb-4a9f-9092-90f72bd19028"
+    }
+  ]
 }
 ```

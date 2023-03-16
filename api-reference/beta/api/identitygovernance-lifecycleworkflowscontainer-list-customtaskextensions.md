@@ -87,58 +87,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions",
-"@odata.count": 2,
-"value": [
-{
-"id": "c0c5b05b-6b5b-4c8d-8060-2ae8df425f4b",
-"displayName": "Query and assign Teams phone number",
-"description": "Query and assign Teams phone number",
-"createdDateTime": "2022-08-24T20:34:52.3028938Z",
-"lastModifiedDateTime": "2022-08-24T20:35:07.716353Z",
-"callbackConfiguration": null,
-"endpointConfiguration": {
-"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-"resourceGroupName": "RG-LCM",
-"logicAppWorkflowName": "TeamsPhoneNumber"
-},
-"authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-"resourceId": "b9c29c27-b116-47a9-925b-ff3b19bafa3b"
-},
-"clientConfiguration": {
-"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-"maximumRetries": 1,
-"timeoutInMilliseconds": 1000
-}
-},
-{
-"id": "ffcc4c85-5a14-448e-a390-77abf2700369",
-"displayName": "Grant manager access to mailbox and OneDrive",
-"description": "Grant manager access to mailbox and OneDrive",
-"createdDateTime": "2022-08-24T20:36:14.7006029Z",
-"lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
-"endpointConfiguration": {
-"@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-"subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
-"resourceGroupName": "RG-LCM",
-"logicAppWorkflowName": "ManagerAccess"
-},
-"authenticationConfiguration": {
-"@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-"resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-},
-"clientConfiguration": {
-"@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
-"maximumRetries": 1,
-"timeoutInMilliseconds": 1000
-},
-"callbackConfiguration": {
-"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-"timeoutDuration": "PT5M"
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/customTaskExtensions",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "c0c5b05b-6b5b-4c8d-8060-2ae8df425f4b",
+            "displayName": "Query and assign Teams phone number",
+            "description": "Query and assign Teams phone number",
+            "createdDateTime": "2022-08-24T20:34:52.3028938Z",
+            "lastModifiedDateTime": "2022-08-24T20:35:07.716353Z",
+            "callbackConfiguration": null,
+            "endpointConfiguration": {
+                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+                "resourceGroupName": "RG-LCM",
+                "logicAppWorkflowName": "TeamsPhoneNumber"
+            },
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+                "resourceId": "b9c29c27-b116-47a9-925b-ff3b19bafa3b"
+            },
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 1000
+            }
+        },
+        {
+            "id": "ffcc4c85-5a14-448e-a390-77abf2700369",
+            "displayName": "Grant manager access to mailbox and OneDrive",
+            "description": "Grant manager access to mailbox and OneDrive",
+            "createdDateTime": "2022-08-24T20:36:14.7006029Z",
+            "lastModifiedDateTime": "2022-08-24T20:42:07.9885265Z",
+            "endpointConfiguration": {
+                "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                "subscriptionId": "c500b67c-e9b7-4ad2-a90d-77d41385ae55",
+                "resourceGroupName": "RG-LCM",
+                "logicAppWorkflowName": "ManagerAccess"
+            },
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+                "resourceId": "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
+            },
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 1000
+            },
+            "callbackConfiguration": {
+                "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+                "timeoutDuration": "PT5M"
+            }
+        }
+    ]
 }
 ```

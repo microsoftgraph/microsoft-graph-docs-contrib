@@ -75,13 +75,13 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/set
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
-"workflowScheduleIntervalInHours": 3,
-"emailSettings": {
-"@odata.type": "microsoft.graph.emailSettings",
-"senderDomain": "ContosoIndustries.net",
-"useCompanyBranding": true
-},
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+    "workflowScheduleIntervalInHours": 3,
+    "emailSettings": {
+    "@odata.type": "microsoft.graph.emailSettings",
+        "senderDomain": "ContosoIndustries.net",
+        "useCompanyBranding": true
+  },
 }
 ```
 

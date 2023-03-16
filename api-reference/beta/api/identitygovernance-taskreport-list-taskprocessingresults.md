@@ -90,55 +90,55 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/taskReports('3a3bea11-99ca-462d-86fb-d283db8d734a')/taskProcessingResults",
-"value": [
-{
-"completedDateTime": "2022-08-24T23:28:05.3529197Z",
-"createdDateTime": "2022-08-24T23:28:04.5490995Z",
-"id": "05a96d7a-0e00-459c-b6c8-1870099e8275",
-"processingStatus": "completed",
-"startedDateTime": "2022-08-24T23:28:05.1234966Z",
-"failureReason": null,
-"subject": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
-},
-"task": {
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Enable user account in the directory",
-"displayName": "Enable User Account",
-"executionSequence": 1,
-"id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
-"isEnabled": true,
-"taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-"arguments": []
-}
-},
-{
-"completedDateTime": "2022-08-24T23:28:05.3665043Z",
-"createdDateTime": "2022-08-24T23:28:04.6062005Z",
-"id": "bf3cf897-d08d-41fe-b874-bbaca883f2d4",
-"processingStatus": "completed",
-"startedDateTime": "2022-08-24T23:28:05.1438145Z",
-"failureReason": null,
-"subject": {
-"@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-"id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
-},
-"task": {
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Enable user account in the directory",
-"displayName": "Enable User Account",
-"executionSequence": 1,
-"id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
-"isEnabled": true,
-"taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-"arguments": []
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('14879e66-9ea9-48d0-804d-8fea672d0341')/taskReports('3a3bea11-99ca-462d-86fb-d283db8d734a')/taskProcessingResults",
+    "value": [
+        {
+            "completedDateTime": "2022-08-24T23:28:05.3529197Z",
+            "createdDateTime": "2022-08-24T23:28:04.5490995Z",
+            "id": "05a96d7a-0e00-459c-b6c8-1870099e8275",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-08-24T23:28:05.1234966Z",
+            "failureReason": null,
+            "subject": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
+            },
+            "task": {
+                "category": "joiner,leaver",
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "executionSequence": 1,
+                "id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            }
+        },
+        {
+            "completedDateTime": "2022-08-24T23:28:05.3665043Z",
+            "createdDateTime": "2022-08-24T23:28:04.6062005Z",
+            "id": "bf3cf897-d08d-41fe-b874-bbaca883f2d4",
+            "processingStatus": "completed",
+            "startedDateTime": "2022-08-24T23:28:05.1438145Z",
+            "failureReason": null,
+            "subject": {
+                "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                "id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
+            },
+            "task": {
+                "category": "joiner,leaver",
+                "continueOnError": false,
+                "description": "Enable user account in the directory",
+                "displayName": "Enable User Account",
+                "executionSequence": 1,
+                "id": "917e9eab-415d-4e45-b39d-87eb5e30de38",
+                "isEnabled": true,
+                "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+                "arguments": []
+            }
+        }
+    ]
 }
 ```
 
@@ -172,27 +172,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/taskReports('443c7611-45df-48c0-bf5e-dc6068c402f0')/taskProcessingResults(id,failureReason,processingStatus,subject,task)",
-"value": [
-{
-"id": "78650318-7238-4e7e-852f-2c36cbeff340",
-"processingStatus": "completed",
-"failureReason": null,
-"subject": {
-"id": "df744d9e-2148-4922-88a8-633896c1e929"
-},
-"task": {
-"category": "leaver",
-"continueOnError": false,
-"description": "Remove all licenses assigned to the user",
-"displayName": "Remove all licenses for user",
-"executionSequence": 1,
-"id": "f71246b2-269c-4ba6-ab8e-afc1a05114cb",
-"isEnabled": true,
-"taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
-"arguments": []
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/taskReports('443c7611-45df-48c0-bf5e-dc6068c402f0')/taskProcessingResults(id,failureReason,processingStatus,subject,task)",
+    "value": [
+        {
+            "id": "78650318-7238-4e7e-852f-2c36cbeff340",
+            "processingStatus": "completed",
+            "failureReason": null,
+            "subject": {
+                "id": "df744d9e-2148-4922-88a8-633896c1e929"
+            },
+            "task": {
+                "category": "leaver",
+                "continueOnError": false,
+                "description": "Remove all licenses assigned to the user",
+                "displayName": "Remove all licenses for user",
+                "executionSequence": 1,
+                "id": "f71246b2-269c-4ba6-ab8e-afc1a05114cb",
+                "isEnabled": true,
+                "taskDefinitionId": "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
+                "arguments": []
+            }
+        }
+    ]
 }
 ```

@@ -91,29 +91,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows",
-"value": [
-{
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "US Onboard new hire employee",
-"lastModifiedDateTime": "2022-08-24T18:25:09.4212828Z",
-"createdDateTime": "2022-08-24T18:24:14.4067873Z",
-"deletedDateTime": "2022-08-24T18:25:09.5729865Z",
-"id": "f1937e0c-c509-4250-ab51-d5e6e35fcbda",
-"version": 1
-},
-{
-"category": "joiner",
-"description": "Configure new hire tasks for onboarding employees on their first day",
-"displayName": "EU Onboard new hire employee",
-"lastModifiedDateTime": "2022-08-24T18:25:09.4050443Z",
-"createdDateTime": "2022-08-24T18:24:40.0689833Z",
-"deletedDateTime": "2022-08-24T18:25:09.5542954Z",
-"id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
-"version": 1
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows",
+    "value": [
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "US Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T18:25:09.4212828Z",
+            "createdDateTime": "2022-08-24T18:24:14.4067873Z",
+            "deletedDateTime": "2022-08-24T18:25:09.5729865Z",
+            "id": "f1937e0c-c509-4250-ab51-d5e6e35fcbda",
+            "version": 1
+        },
+        {
+            "category": "joiner",
+            "description": "Configure new hire tasks for onboarding employees on their first day",
+            "displayName": "EU Onboard new hire employee",
+            "lastModifiedDateTime": "2022-08-24T18:25:09.4050443Z",
+            "createdDateTime": "2022-08-24T18:24:40.0689833Z",
+            "deletedDateTime": "2022-08-24T18:25:09.5542954Z",
+            "id": "21d2c0fb-dcaa-4abb-88db-891d76c84e9a",
+            "version": 1
+        }
+    ]
 }
 ```
 
@@ -147,15 +147,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(category,displayName,description,version)",
-"value": [
-{
-"category": "leaver",
-"description": "Employee offboarding for Contoso Germany.",
-"displayName": "Germany offboard employees",
-"id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
-"version": 4
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/deletedItems/workflows(category,displayName,description,version)",
+    "value": [
+        {
+            "category": "leaver",
+            "description": "Employee offboarding for Contoso Germany.",
+            "displayName": "Germany offboard employees",
+            "id": "952b23c5-cc25-48c9-8848-95da4dd9dc6d",
+            "version": 4
+        }
+    ]
 }
 ```

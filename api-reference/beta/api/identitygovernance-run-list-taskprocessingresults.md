@@ -90,36 +90,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults",
-"value": [
-{
-"completedDateTime": "2023-01-20T17:16:03.4863553Z",
-"createdDateTime": "2023-01-20T17:16:00.9095011Z",
-"id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
-"processingStatus": "completed",
-"startedDateTime": "2023-01-20T17:16:02.8025169Z",
-"failureReason": null,
-"subject": {
-"id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
-},
-"task": {
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Add user to selected groups",
-"displayName": "Add User To Groups",
-"executionSequence": 3,
-"id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
-"isEnabled": true,
-"taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
-"arguments": [
-{
-"name": "groupID",
-"value": "1624be55-d924-491e-ac72-401f6f961e4d"
-}
-]
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults",
+    "value": [
+        {
+            "completedDateTime": "2023-01-20T17:16:03.4863553Z",
+            "createdDateTime": "2023-01-20T17:16:00.9095011Z",
+            "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
+            "processingStatus": "completed",
+            "startedDateTime": "2023-01-20T17:16:02.8025169Z",
+            "failureReason": null,
+            "subject": {
+                "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
+            },
+            "task": {
+                "category": "joiner,leaver",
+                "continueOnError": false,
+                "description": "Add user to selected groups",
+                "displayName": "Add User To Groups",
+                "executionSequence": 3,
+                "id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
+                "isEnabled": true,
+                "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+                "arguments": [
+                    {
+                        "name": "groupID",
+                        "value": "1624be55-d924-491e-ac72-401f6f961e4d"
+                    }
+                ]
+            }
+        }
+    ]
 }
 ```
 
@@ -153,32 +153,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults(id,failureReason,processingStatus,subject)",
-"value": [
-{
-"id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
-"processingStatus": "completed",
-"failureReason": null,
-"subject": {
-"id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
-},
-"task": {
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Add user to selected groups",
-"displayName": "Add User To Groups",
-"executionSequence": 3,
-"id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
-"isEnabled": true,
-"taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
-"arguments": [
-{
-"name": "groupID",
-"value": "1624be55-d924-491e-ac72-401f6f961e4d"
-}
-]
-}
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults(id,failureReason,processingStatus,subject)",
+    "value": [
+        {
+            "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
+            "processingStatus": "completed",
+            "failureReason": null,
+            "subject": {
+                "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
+            },
+            "task": {
+                "category": "joiner,leaver",
+                "continueOnError": false,
+                "description": "Add user to selected groups",
+                "displayName": "Add User To Groups",
+                "executionSequence": 3,
+                "id": "c8dbaed8-3d23-4e5a-8f65-130767639667",
+                "isEnabled": true,
+                "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+                "arguments": [
+                    {
+                        "name": "groupID",
+                        "value": "1624be55-d924-491e-ac72-401f6f961e4d"
+                    }
+                ]
+            }
+        }
+    ]
 }
 ```

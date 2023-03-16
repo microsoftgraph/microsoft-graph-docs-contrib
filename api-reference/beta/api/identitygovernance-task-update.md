@@ -77,8 +77,8 @@ Content-Type: application/json
 Content-length: 454
 
 {
-"description": "Add user to selected groups",
-"displayName": "Update marketing day 1 add users to Group set up",
+    "description": "Add user to selected groups",
+    "displayName": "Update marketing day 1 add users to Group set up",
 }
 ```
 

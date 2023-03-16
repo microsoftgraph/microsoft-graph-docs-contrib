@@ -89,31 +89,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(2)/tasks",
-"@odata.count": 2,
-"value": [
-{
-"category": "joiner,leaver",
-"continueOnError": false,
-"description": "Enable user account in the directory",
-"displayName": "Enable User Account",
-"executionSequence": 1,
-"id": "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee",
-"isEnabled": true,
-"taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
-"arguments": []
-},
-{
-"category": "joiner",
-"continueOnError": false,
-"description": "Send welcome email to new hire",
-"displayName": "Send Welcome Email",
-"executionSequence": 2,
-"id": "a51a6a57-2ef7-4006-b0ca-285b19d5e1c8",
-"isEnabled": true,
-"taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
-"arguments": []
-}
-]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('156ce798-1eb6-4e0a-8515-e79f54d04390')/versions(2)/tasks",
+    "@odata.count": 2,
+    "value": [
+        {
+            "category": "joiner,leaver",
+            "continueOnError": false,
+            "description": "Enable user account in the directory",
+            "displayName": "Enable User Account",
+            "executionSequence": 1,
+            "id": "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee",
+            "isEnabled": true,
+            "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+            "arguments": []
+        },
+        {
+            "category": "joiner",
+            "continueOnError": false,
+            "description": "Send welcome email to new hire",
+            "displayName": "Send Welcome Email",
+            "executionSequence": 2,
+            "id": "a51a6a57-2ef7-4006-b0ca-285b19d5e1c8",
+            "isEnabled": true,
+            "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+            "arguments": []
+        }
+    ]
 }
 ```
