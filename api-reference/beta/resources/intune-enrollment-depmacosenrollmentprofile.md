@@ -74,6 +74,11 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |primaryAccountFullName|String|Indicates what the full name for the primary account is|
 |primaryAccountUserName|String|Indicates what the account name for the primary account is|
 |enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
+|adminAccountUserName|String|Indicates what the user name for the admin account is|
+|adminAccountFullName|String|Indicates what the full name for the admin account is|
+|adminAccountPassword|String|Indicates what the password for the admin account is|
+|hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
+|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 ## Relationships
 None
@@ -132,6 +137,11 @@ Here is a JSON representation of the resource.
   "dontAutoPopulatePrimaryAccountInfo": true,
   "primaryAccountFullName": "String",
   "primaryAccountUserName": "String",
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "String",
+  "adminAccountFullName": "String",
+  "adminAccountPassword": "String",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```
