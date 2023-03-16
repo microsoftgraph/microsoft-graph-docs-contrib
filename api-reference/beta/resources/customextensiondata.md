@@ -1,6 +1,6 @@
 ---
 title: "customExtensionData resource type"
-description: "Defines the base type of the custom extension data which will be used and derived for custom extension callback data. This is an abstract type."
+description: "An abstract type noting the data being sent and received as part of extensibility scenarios based on custom callout extensions"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,11 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the base type of the custom extension data which will be used and derived for [accessPackageAssignmentRequestCallbackData](../resources/accessPackageAssignmentRequestCallbackData.md). This is an abstract type.
+This is an abstract type noting the data being sent and received as part of extensibility scenarios based on [custom callout extensions](../resources/customcalloutextension.md). The following types are derived from this abstract type:
+  [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
+  [customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)
+  [accessPackageAssignmentRequestCallbackData](../resources/accessPackageAssignmentRequestCallbackData.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

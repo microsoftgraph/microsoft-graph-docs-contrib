@@ -99,21 +99,7 @@ The following is a JSON representation of the resource.
    },
    "accessReviewSettings":{
       "@odata.type":"microsoft.graph.assignmentReviewSettings"
-   },
-   "customExtensionStageSettings":[
-      {
-         "stage":"assignmentRequestCreated",
-         "customExtension":{
-            "id":"855cce6f-348a-4b6c-8dad-a5ddfce91d35"
-         }
-      },
-      {
-         "stage":"assignmentRequestApproved",
-         "customExtension":{
-            "id":"51fa2233-748b-4d21-9c78-ecb9e627679e"
-         }
-      }
-   ]
+   }
 }
 ```
 

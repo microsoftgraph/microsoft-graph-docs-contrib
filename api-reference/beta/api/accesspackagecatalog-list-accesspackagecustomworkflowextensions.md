@@ -33,6 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageCustomWorkflowExtensions
 ```
 
+## Optional query parameters
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For example, to search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -58,9 +61,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions
 ```
-
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

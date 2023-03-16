@@ -75,16 +75,7 @@ The following is a JSON representation of the resource.
    "assignmentStatus":"ExpiredNotificationTriggered",
    "assignmentState":"Expired",
    "isExtended":false,
-   "expiredDateTime":"2019-04-25T23:45:40.42Z",
-  "customExtensionCalloutInstances": [
-    {
-      "id":"f46bfb39-dd15-4e2b-b438-7944178483ea",
-      "status": "callbackReceived",
-      "externalCorrelationId": "08585655445343654367255092454CU03",
-      "detail": "Resume-Request-User access has been successfully verified",
-      "customExtensionId": "D85449F6-E0C3-EB11-8504-4C1D967B1BFE"
-    }
-  ]
+   "expiredDateTime":"2019-04-25T23:45:40.42Z"
 }
 ```
 

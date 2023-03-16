@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestCallbackData resource type"
-description: "Data for an access package assignment request workflow callback."
+description: "Access package assignment request workflow calllback back that custom extension endpoint callback."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"

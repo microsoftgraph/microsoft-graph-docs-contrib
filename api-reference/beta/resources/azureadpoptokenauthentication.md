@@ -18,8 +18,7 @@ Defines the Proof Of Possession (PoP) token authentication model to authenticate
 Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

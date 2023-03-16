@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when a access package policy has been enabled to call out custom extension and is excepted and the request processing is waiting for the callback from customer a resume action can be triggered by customer.It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** in `WaitingForCallback` status. 
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when a access package policy has been enabled to call out custom extension and the request processing is waiting for the callback from customer a resume action can be triggered by customer.It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** in `WaitingForCallback` status. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
