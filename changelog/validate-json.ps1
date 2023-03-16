@@ -22,6 +22,6 @@ Get-ChildItem -Filter "*.json" | Where-Object { $schemaFileName -notcontains $_.
 
 # only drop one error preventing 
 if($err -ne ""){
-    Write-Host $err -ForegroundColor Red
+    Write-Error $err
     exit -1
 }

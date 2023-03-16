@@ -206,7 +206,7 @@
       "Id": "b888b86c-783d-4a20-8ae4-56293ae23d62",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "203-01-19T09:34:07.9850342Z",
+      "CreatedDateTime": "2023-01-19T09:34:07.9850342Z",
       "WorkloadArea": "Security",
       "SubArea": "Attack simulation and training"
     },
