@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|required|String|For a required assigned course activity.|
-|recommended|String|For a recommended assigned course activity.|
+a. required - For a required assigned course activity.
+
+b. recommended - For a recommended assigned course activity.

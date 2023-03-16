@@ -20,11 +20,11 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
-|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|assignmentType for the course activity (required/recommended)|
+|assignmentType|[assignmentType](../resources/assignmentType.md)|assignmentType for the course activity (required/recommended)|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
 |registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
-|[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
+|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |assignerUserId|String|The user id of the assigner (Optional)|
 |notes|String|Notes for the course activity (Optional)|

@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
-|[assignmentType](../resources/assignmentType.md)|[assignmentType](../resources/assignmentType.md)|**assignmentType for the course activity (required/recommended)**
+|assignmentType|[assignmentType](../resources/assignmentType.md)|**assignmentType for the course activity (required or recommended)**
 |registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
 |startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
 |assignerUserId|String|**The user id of the assigner**
@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |learnerUserId|String|**The user id of the learner**|
 |learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent graph API’s**|
 |learningProviderId|String|**he registration Id of the provider**|
-|[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
+|status|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
 
 
 ## Error Conditions and Messages
