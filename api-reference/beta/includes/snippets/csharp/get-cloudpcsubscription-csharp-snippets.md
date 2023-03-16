@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var getSubscriptions = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots
-	.GetSubscriptions()
-	.Request()
-	.GetAsync();
+var result = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots.GetSubscriptions.GetAsync();
+
 
 ```

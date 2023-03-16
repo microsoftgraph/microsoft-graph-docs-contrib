@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/me/people
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

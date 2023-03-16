@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/customers/{id}
 ```
 
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
+
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

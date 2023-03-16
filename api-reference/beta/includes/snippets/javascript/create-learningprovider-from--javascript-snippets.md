@@ -16,7 +16,6 @@ const learningProvider = {
     longLogoWebUrlForDarkTheme: 'https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png',
     squareLogoWebUrlForLightTheme: 'https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png',
     longLogoWebUrlForLightTheme: 'https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png',
-    isEnabled: true,
     loginWebUrl: 'https://www.linkedin.com/learning-login/teams'
 };
 

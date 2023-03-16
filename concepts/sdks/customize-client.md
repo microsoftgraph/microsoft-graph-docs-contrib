@@ -17,10 +17,9 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 // https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(...);
 
-var authProvider = new TokenCredentialAuthProvider(
-    interactiveCredential, scopes);
+var authProvider = new AzureIdentityAuthenticationProvider(tokenCredential, scopes: scopes);
 
-var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
+var handlers = GraphClientFactory.CreateDefaultHandlers();
 
 // Remove a default handler
 var compressionHandler =
@@ -33,12 +32,14 @@ handlers.Add(new ChaosHandler());
 
 var httpClient = GraphClientFactory.Create(handlers);
 
-var customGraphClient = new GraphServiceClient(httpClient);
+var customGraphClient = new GraphServiceClient(httpClient, authProvider);
 
-var messages = await customGraphClient.Me.Messages.Request()
-    .Top(100)
-    .Select(m => m.Subject)
-    .GetAsync();
+var messages = await graphClient.Me.Messages
+        .GetAsync(requestConfiguration => 
+        {
+            requestConfiguration.QueryParameters.Top = 100;
+            requestConfiguration.QueryParameters.Select = new string[] { "subject" };
+        });
 ```
 
 ## [TypeScript](#tab/typeScript)
@@ -248,10 +249,10 @@ var credential = new ClientSecretCredential(
 
 var scopes = new[] { "https://graph.microsoft.com/.default" };
 
-// This example works with Microsoft.Graph 4+
-var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+// This example works with Microsoft.Graph 5+
+var httpClient = GraphClientFactory.Create(proxy: new WebProxy(new Uri(proxyAddress)));
 
-var graphClient = new GraphServiceClient(httpClient);
+var graphClient = new GraphServiceClient(httpClient, new AzureIdentityAuthenticationProvider(credential, scopes: scopes));
 ```
 
 ## [TypeScript](#tab/typeScript)

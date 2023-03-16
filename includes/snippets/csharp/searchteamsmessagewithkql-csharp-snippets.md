@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var requests = new List<SearchRequestObject>()
+var requestBody = new Microsoft.Graph.Search.Query.QueryPostRequestBody
 {
-	new SearchRequestObject
+	Requests = new List<SearchRequest>
 	{
-		EntityTypes = new List<EntityType>()
+		new SearchRequest
 		{
-			EntityType.Event
+			EntityTypes = new List<EntityType?>
+			{
+				EntityType.ChatMessage,
+			},
+			Query = new SearchQuery
+			{
+				QueryString = "contoso from:bob to:alice sent>2022-07-14",
+			},
+			From = 0,
+			Size = 15,
+			EnableTopResults = true,
 		},
-		Query = new SearchQuery
-		{
-			QueryString = "contoso from:bob to:alice sent>2022-07-14"
-		},
-		From = 0,
-		Size = 15,
-		EnableTopResults = true
-	}
+	},
 };
+var result = await graphClient.Search.Query.PostAsync(requestBody);
 
-await graphClient.Search
-	.Query(requests)
-	.Request()
-	.PostAsync();
 
 ```

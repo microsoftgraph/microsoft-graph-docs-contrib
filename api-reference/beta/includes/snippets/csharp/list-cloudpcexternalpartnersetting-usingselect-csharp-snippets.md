@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var externalPartnerSettings = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings
-	.Request()
-	.Select("id,partnerId,enableConnection")
-	.GetAsync();
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","partnerId","enableConnection" };
+});
+
 
 ```

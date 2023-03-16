@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onenoteOperation = await graphClient.Me.Onenote.Operations["{onenoteOperation-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Me.Onenote.Operations["{onenoteOperation-id}"].GetAsync();
+
 
 ```

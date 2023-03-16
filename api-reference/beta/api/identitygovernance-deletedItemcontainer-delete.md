@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/de
 
 ---
 
-
 ### Response
 
 <!-- {

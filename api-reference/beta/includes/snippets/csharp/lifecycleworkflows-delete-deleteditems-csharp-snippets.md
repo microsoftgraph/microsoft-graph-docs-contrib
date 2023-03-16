@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.IdentityGovernance.LifecycleWorkflows.DeletedItems.Workflows["{identityGovernance.workflow-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.IdentityGovernance.LifecycleWorkflows.DeletedItems.Workflows["{workflow-id}"].DeleteAsync();
+
 
 ```

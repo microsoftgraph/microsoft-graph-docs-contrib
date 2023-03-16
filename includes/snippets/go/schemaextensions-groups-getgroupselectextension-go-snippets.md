@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "graphlearn_courses/courseId eq ‘123’"
+requestFilter := "graphlearn_courses/courseId eq '123'"
 
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
