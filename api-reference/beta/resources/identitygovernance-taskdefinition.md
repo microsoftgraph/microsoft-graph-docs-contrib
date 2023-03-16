@@ -47,23 +47,22 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskDefinition",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
-"id": "String (identifier)",
-"category": "String",
-"continueOnError": "Boolean",
-"description": "String",
-"displayName": "String",
-"parameters": [
-{
-"@odata.type": "microsoft.graph.identityGovernance.parameter"
-}
-],
-"version": "Integer"
+  "@odata.type": "#microsoft.graph.identityGovernance.taskDefinition",
+  "id": "String (identifier)",
+  "category": "String",
+  "continueOnError": "Boolean",
+  "description": "String",
+  "displayName": "String",
+  "parameters": [
+    {
+      "@odata.type": "microsoft.graph.identityGovernance.parameter"
+    }
+  ],
+  "version": "Integer"
 }
 ```

@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.userSummary",
-"failedTasks": "Integer",
-"failedUsers": "Integer",
-"successfulUsers": "Integer",
-"totalTasks": "Integer",
-"totalUsers": "Integer"
+  "@odata.type": "#microsoft.graph.identityGovernance.userSummary",
+  "failedTasks": "Integer",
+  "failedUsers": "Integer",
+  "successfulUsers": "Integer",
+  "totalTasks": "Integer",
+  "totalUsers": "Integer"
 }
 ```

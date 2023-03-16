@@ -59,25 +59,24 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.run",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.run",
-"id": "String (identifier)",
-"completedDateTime": "String (timestamp)",
-"failedTasksCount": "Integer",
-"failedUsersCount": "Integer",
-"lastUpdatedDateTime": "String (timestamp)",
-"processingStatus": "String",
-"startedDateTime": "String (timestamp)",
-"scheduledDateTime": "String (timestamp)",
-"successfulUsersCount": "Integer",
-"totalTasksCounts": "Integer",
-"totalUsersCount": "Integer",
-"totalUnprocessedTasksCount": "Integer",
-"workflowExecutionType": "String"
+  "@odata.type": "#microsoft.graph.identityGovernance.run",
+  "id": "String (identifier)",
+  "completedDateTime": "String (timestamp)",
+  "failedTasksCount": "Integer",
+  "failedUsersCount": "Integer",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "processingStatus": "String",
+  "startedDateTime": "String (timestamp)",
+  "scheduledDateTime": "String (timestamp)",
+  "successfulUsersCount": "Integer",
+  "totalTasksCounts": "Integer",
+  "totalUsersCount": "Integer",
+  "totalUnprocessedTasksCount": "Integer",
+  "workflowExecutionType": "String"
 }
 ```

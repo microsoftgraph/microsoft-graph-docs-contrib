@@ -55,19 +55,18 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.workflowTemplate",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.workflowTemplate",
-"id": "String (identifier)",
-"category": "String",
-"description": "String",
-"displayName": "String",
-"executionConditions": {
-"@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
-}
+  "@odata.type": "#microsoft.graph.identityGovernance.workflowTemplate",
+  "id": "String (identifier)",
+  "category": "String",
+  "description": "String",
+  "displayName": "String",
+  "executionConditions": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
+  }
 }
 ```

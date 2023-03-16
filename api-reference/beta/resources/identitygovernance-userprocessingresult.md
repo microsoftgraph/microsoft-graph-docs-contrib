@@ -55,22 +55,21 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.userProcessingResult",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.userProcessingResult",
-"id": "String (identifier)",
-"completedDateTime": "String (timestamp)",
-"failedTasksCount": "Integer",
-"processingStatus": "String",
-"scheduledDateTime": "String (timestamp)",
-"startedDateTime": "String (timestamp)",
-"totalTasksCount": "Integer",
-"totalUnprocessedTasksCount": "Integer",
-"workflowExecutionType": "String",
-"workflowVersion": "Integer"
+  "@odata.type": "#microsoft.graph.identityGovernance.userProcessingResult",
+  "id": "String (identifier)",
+  "completedDateTime": "String (timestamp)",
+  "failedTasksCount": "Integer",
+  "processingStatus": "String",
+  "scheduledDateTime": "String (timestamp)",
+  "startedDateTime": "String (timestamp)",
+  "totalTasksCount": "Integer",
+  "totalUnprocessedTasksCount": "Integer",
+  "workflowExecutionType": "String",
+  "workflowVersion": "Integer"
 }
 ```

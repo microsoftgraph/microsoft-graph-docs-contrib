@@ -39,12 +39,12 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-"timeoutDuration": "String (duration)",
-"authorizedApps":[
-{
-"@odata.type": "microsoft.graph.application"
-}
+  "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
+  "timeoutDuration": "String (duration)",
+  "authorizedApps":[
+    {
+      "@odata.type": "microsoft.graph.application"
+    }
 ] 
 }
 ```

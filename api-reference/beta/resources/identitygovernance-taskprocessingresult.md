@@ -48,18 +48,17 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskProcessingResult",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
-"id": "String (identifier)",
-"completedDateTime": "String (timestamp)",
-"createdDateTime": "String (timestamp)",
-"failureReason": "String",
-"processingStatus": "String",
-"startedDateTime": "String (timestamp)"
+  "@odata.type": "#microsoft.graph.identityGovernance.taskProcessingResult",
+  "id": "String (identifier)",
+  "completedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "failureReason": "String",
+  "processingStatus": "String",
+  "startedDateTime": "String (timestamp)"
 }
 ```
