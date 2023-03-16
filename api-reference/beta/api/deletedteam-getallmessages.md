@@ -103,8 +103,6 @@ GET https://graph.microsoft.com/beta/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

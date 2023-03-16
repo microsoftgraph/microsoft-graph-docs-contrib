@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/education/schools/f2598f43-629c-4ea9-9265-9
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityProviderBase = new SocialIdentityProvider
+var requestBody = new IdentityProviderBase
 {
-	DisplayName = "Apple"
+	OdataType = "#microsoft.graph.socialIdentityProvider",
+	DisplayName = "Apple",
 };
+var result = await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"]
-	.Request()
-	.UpdateAsync(identityProviderBase);
 
 ```

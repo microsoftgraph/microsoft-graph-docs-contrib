@@ -93,7 +93,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->

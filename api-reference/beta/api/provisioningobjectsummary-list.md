@@ -133,7 +133,6 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ---
 
-
 ### Response
 
 The following is an example of the response for a successful event.
@@ -298,7 +297,6 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

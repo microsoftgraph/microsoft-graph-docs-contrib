@@ -11,16 +11,6 @@ $params = @{
 		@{
 			AllowedMemberTypes = @(
 				"User"
-			)
-			Description = "Survey.ReadWrite.All"
-			DisplayName = "Survey.ReadWrite.All"
-			Id = "3ce57053-0ebf-42d8-bf7c-74161a450e4b"
-			IsEnabled = $true
-			Value = "Survey.ReadWrite.All"
-		}
-		@{
-			AllowedMemberTypes = @(
-				"User"
 				"Application"
 			)
 			Description = "Survey.Read"
@@ -33,6 +23,6 @@ $params = @{
 	)
 }
 
-Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+Update-MgApplication -ApplicationId $applicationId -BodyParameter $params
 
 ```
