@@ -9,15 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new TasksRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new TasksRequestBuilderGetQueryParameters();
-$queryParameters->filter = "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'";
-
-$requestConfiguration->queryParameters = $queryParameters;
-
-
-$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get($requestConfiguration);
+$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->get();
 
 
 ```

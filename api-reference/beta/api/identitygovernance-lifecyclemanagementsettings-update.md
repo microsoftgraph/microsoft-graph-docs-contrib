@@ -1,5 +1,5 @@
 ---
-title: "Update lifecycleManagementSettings (tenant settings for Lifecycle Workflows)"
+title: "Update lifecycleManagementSettings"
 description: "Update the properties of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update lifecycleManagementSettings (tenant settings for Lifecycle Workflows)
+# Update lifecycleManagementSettings
 
 Namespace: microsoft.graph.identityGovernance
 
