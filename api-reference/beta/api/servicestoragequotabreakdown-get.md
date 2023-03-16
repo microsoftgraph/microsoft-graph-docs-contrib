@@ -3,7 +3,7 @@ title: "Get serviceStorageQuotaBreakdown"
 description: "Read the properties and relationships of a serviceStorageQuotaBreakdown object."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: "unified-storage-quota"
+ms.prod: files
 doc_type: apiPageType
 ---
 
