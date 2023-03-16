@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Update learningCourseActivity](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Delete learningCourseActivity](../api/learningcourseactivity-delete.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[List learningCourseActivity for user](../api/learningcourseactivity-list.md)|Collection of [learningCourseActivity](../resources/learningcourseactivity.md) object|Retrieve all courses for a user.|
-|[Get learningCourseActivity course details for a user](../api/learningcourseactivity-get)|[learningCourseActivity](../resources/learningcourseactivity.md)|Retrives a course details for a user.|
+|[Get learningCourseActivity course details for a user](../api/learningcourseactivity-details.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Retrives a course details for a user.|
 
 ## Properties
 |Property|Type|Description|
