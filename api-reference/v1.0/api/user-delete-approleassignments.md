@@ -91,7 +91,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

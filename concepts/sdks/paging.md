@@ -26,17 +26,14 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 ```csharp
 var messages = await graphClient.Me.Messages
-    .Request()
-    .Header("Prefer", "outlook.body-content-type=\"text\"")
-    .Select(e => new {
-        e.Sender,
-        e.Subject,
-        e.Body
-    })
-    .Top(10)
-    .GetAsync();
+    .GetAsync(requestConfiguration => 
+    {
+        requestConfiguration.QueryParameters.Top = 10;
+        requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject", "body" };
+        requestConfiguration.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
+    });
 
-var pageIterator = PageIterator<Message>
+var pageIterator = PageIterator<Message,MessageCollectionResponse>
     .CreatePageIterator(
         graphClient,
         messages,
@@ -52,7 +49,7 @@ var pageIterator = PageIterator<Message>
         (req) =>
         {
             // Re-add the header to subsequent requests
-            req.Header("Prefer", "outlook.body-content-type=\"text\"");
+            req.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
             return req;
         }
     );
@@ -175,15 +172,13 @@ int count = 0;
 int pauseAfter = 25;
 
 var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(e => new {
-        e.Sender,
-        e.Subject
-    })
-    .Top(10)
-    .GetAsync();
+    .GetAsync(requestConfiguration =>
+    {
+        requestConfiguration.QueryParameters.Top = 10;
+        requestConfiguration.QueryParameters.Select = new string[] { "sender", "subject" };
+    });
 
-var pageIterator = PageIterator<Message>
+var pageIterator = PageIterator<Message, MessageCollectionResponse>
     .CreatePageIterator(
         graphClient,
         messages,

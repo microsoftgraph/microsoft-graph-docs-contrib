@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LT
 
 ---
 
-
 ### Response
 
 <!-- {

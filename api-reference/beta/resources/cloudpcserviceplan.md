@@ -1,6 +1,6 @@
 ---
 title: "cloudPcServicePlan resource type"
-description: "Represents a Windows 365 service plan configured for a Cloud PC."
+description: "Represents a Windows 365 service plan that can be purchased and configured for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Windows 365 service plan configured for a Cloud PC.
+Represents a Windows 365 service plan that can be purchased and configured for a Cloud PC.
 
-For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, Microsoft Graph API is available for Windows 365 Enterprise.
+For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, the Microsoft Graph API is available for Windows 365 Enterprise.
 
 ## Methods
 

@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -132,6 +131,7 @@ Content-Type: application/json
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
       "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+      "provisioningType": "dedicated",
       "diskEncryptionState": "encryptedUsingPlatformManagedKey"
     }
   ]

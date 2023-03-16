@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var users = await graphClient.Users
-	.Request()
-	.Filter("startswith(displayName,'Eric')")
-	.Select("displayName,signInActivity")
-	.GetAsync();
+var result = await graphClient.Users.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "startswith(displayName,'Eric')";
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","signInActivity" };
+});
+
 
 ```
