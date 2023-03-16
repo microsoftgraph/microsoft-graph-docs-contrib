@@ -443,6 +443,42 @@
     {
       "ChangeList": [
         {
+          "Id": "04fb09f6-d2b7-48b7-9fd1-72916809de5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-beta) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource.",
+          "Target": "directoryObject"
+        }
+      ],
+      "Id": "04fb09f6-d2b7-48b7-9fd1-72916809de5d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-13T00:00:00.2142092Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7e7346db-a7e5-40c2-987a-2bbba5076f7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/directoryobject-delta?view=graph-rest-1.0) method to the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+          "Target": "directoryObject"
+        }
+      ],
+      "Id": "7e7346db-a7e5-40c2-987a-2bbba5076f7b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-13T00:00:00.215084Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "06a63cc8-a5be-49af-adf7-8c34a822c8d9",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
@@ -966,6 +1002,42 @@
       "CreatedDateTime": "2022-06-30T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1611abed-851f-461b-b351-d242a41a3fe4",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/device-delta?view=graph-rest-beta) method to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "1611abed-851f-461b-b351-d242a41a3fe4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-19T00:00:00.3654052Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1611abed-851f-461b-b351-d242a41a3fe4",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/device-delta?view=graph-rest-1.0) method to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "1611abed-851f-461b-b351-d242a41a3fe4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-03T00:00:00.3654052Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -3277,6 +3349,32 @@
       "CreatedDateTime": "2021-11-16T05:11:31.325Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+  },
+  {
+    "ChangeList": [
+        {
+            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+            "ApiChange": "Method",
+            "ChangedApiName": "activateServicePlan",
+            "ChangeType": "Removal",
+            "Description": "Removed the previously deprecated **activateServicePlan** method (`/users/{id | userPrincipalName}/activateServicePlan` endpoint) from the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+            "Target": "user"
+        },
+        {
+            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+            "ApiChange": "Method",
+            "ChangedApiName": "activateService",
+            "ChangeType": "Removal",
+            "Description": "Removed the previously deprecated **activateService** method (`/organization/{id}/activateService` endpoint) from the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+            "Target": "organization"
+        }
+    ],
+    "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-15T00:00:00.353Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Directory management"
   },
   {
       "ChangeList": [

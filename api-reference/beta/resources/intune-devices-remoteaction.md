@@ -50,3 +50,4 @@ Remote actions Intune supports.
 |moveDeviceToOrganizationalUnit|27|Indicate user initiates an action to move the device to a new organizational unit.|
 |initiateMobileDeviceManagementKeyRecovery|28|Add device action of InitiateMobileDeviceManagementKeyRecovery|
 |initiateOnDemandProactiveRemediation|29|Add device action of InitiateOnDemandProactiveRemediation|
+|rotateLocalAdminPassword|32|Add device action of RotateLocalAdminPassword|

@@ -1,5 +1,5 @@
 ---
-title: "List executionScope of a workflow (in Lifecycle Workflows)"
+title: "List executionScope"
 description: "Get a list of the user objects in scope of execution for a workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,15 +7,17 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List executionScope of a workflow (in Lifecycle Workflows)
+# List executionScope
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists the users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md). Users who initially fall in the scope of the execution conditions, but are updated to no longer meet the conditions after it's scheduled to run, will remain on the list for a short period of time before being removed. If the execution scope is changed, users who initially met it's conditions, but no longer do so will be cleared from the list after a short period of time. New users who meet the conditions for the workflow will then be listed.
+List the users that meet the [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md) regardless of whether they have already been processed by the [workflow](../resources/identitygovernance-workflow.md).
 
-This API call requires workflow scheduling to be enabled.
+The workflow engine periodically evaluates the users that meet the execution conditions. The results will not be up to date if the execution conditions have been changed recently, relevant attributes on the user have been changed recently or the [time based trigger](../resources/identitygovernance-timebasedattributetrigger.md) has been reached recently.
+
+The API is only supported for workflows with [trigger and scope based](../resources/identitygovernance-triggerandscopebasedconditions.md) [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md). Furthermore, results are only returned if the workflows schedule (isSchedulingEnabled) is enabled.
 
 ## Permissions
 
