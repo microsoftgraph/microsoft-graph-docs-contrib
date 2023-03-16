@@ -140,12 +140,15 @@ An [industryDataConnector](industrydata-industrydataconnector.md) acts as a brid
 For information about CSV data, see:
 
 - [Data Ingestion with SDS v2.1 CSV](/schooldatasync/data-ingestion-with-sds-v2.1-csv)
-- [SDS V2.1 CSV file format](/schooldatasync/sds-v2.1-csv-file-format)
+  - [SDS V2.1 CSV file format](/schooldatasync/sds-v2.1-csv-file-format)
+- [Data Ingestion with SDS v1 CSV](/schooldatasync/data-ingestion-with-sds-v1-csv)
+  - [SDS V1 CSV file format](/schooldatasync/sds-v1-csv-file-format)
 
-The following are requriements for the CSV file:
-  - File names and column headers are case-sensitive.
-  - CSV files must be in UTF-8 format.
-  - Incoming data must not have line breaks.
+The following are requirements for the CSV file:
+
+- File names and column headers are case-sensitive.
+- CSV files must be in UTF-8 format.
+- Incoming data must not have line breaks.
 
 To review and download sample set of SDS V2.1 CSV files, see the [SDS GitHub repository](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples).
 
