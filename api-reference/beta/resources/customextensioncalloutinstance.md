@@ -1,6 +1,6 @@
 ---
 title: "customExtensionCalloutInstance resource type"
-description: "Defines the calls that were made by an instance of a custom extension callout.
+description: "Defines the calls that were made by an instance of a custom extension callout."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
