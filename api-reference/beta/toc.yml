@@ -2066,7 +2066,7 @@ items:
           - name: Update task
             href: api/printtaskdefinition-update-task.md
         - name: Quota
-           href: resources/quota.md
+          href: resources/quota.md
           items:
           - name: Service Storage Quota Breakdown 
             href: resources/servicestoragequotabreakdown.md
