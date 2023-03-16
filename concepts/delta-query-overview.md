@@ -72,7 +72,6 @@ For the [user](/graph/api/resources/user) and [group](/graph/api/resources/group
 - Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -80,33 +79,6 @@ For the [user](/graph/api/resources/user) and [group](/graph/api/resources/group
 ```http
 https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/group-delta-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ## Resource representation in the delta query response
 
@@ -136,9 +108,11 @@ Delta query is currently supported for the following resources. Note that some r
 | **Resource collection**                                        | **API**                                                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
-| Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
+| Administrative units                                           | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource      |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                    |
+| Device objects                                                 | [delta](/graph/api/device-delta) function of the [device](/graph/api/resources/device) resource                                                    |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
+| Directory objects                                              | [delta](/graph/api/directoryobject-delta) function of the [directoryObject](/graph/api/resources/directoryObject) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource             |
 | Education categories                                           | [delta](/graph/api/educationcategory-delta) function of the [educationCategory](/graph/api/resources/educationcategory) resource                   |

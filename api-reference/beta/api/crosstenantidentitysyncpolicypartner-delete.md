@@ -90,8 +90,6 @@ DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partner
 
 ---
 
-
-
 ### Response
 
 <!-- {

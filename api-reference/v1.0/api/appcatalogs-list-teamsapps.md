@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 
 #### Response
@@ -179,7 +178,6 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq 'b1c535
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -247,7 +245,6 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
