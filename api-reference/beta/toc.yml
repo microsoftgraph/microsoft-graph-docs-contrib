@@ -13694,6 +13694,7 @@ items:
             - name: List resource roles
               href: api/accesspackagecatalog-list-accesspackageresourceroles.md
           -name: Access package custom workflow extension
+           displayName: EM, Identity Governance
            items:
            -name: Access package assignment request workflow extension
             href: resources/accesspackageassignmentrequestworkflowextension.md
