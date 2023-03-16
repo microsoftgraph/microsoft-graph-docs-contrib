@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the schedule for recurrence of a [Planner task](plannertask.md) in Microsoft 365. Currently, **plannerRecurrenceSchedule** includes a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**). To define a recurrence schedule, clients must specify the **pattern** and **patternStartDateTime**; the service calculates the **nextOccurrenceDateTime**.
 
-For more details, see [Configuring task recurrence in Planner](/graph/concepts/planner-task-recurrence-concept.md).
+For more details, see [Configuring task recurrence in Planner](/graph/planner-task-recurrence-concept).
 
 ## Properties
 
