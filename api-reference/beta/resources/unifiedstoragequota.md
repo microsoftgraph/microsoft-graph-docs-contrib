@@ -3,7 +3,7 @@ title: "unifiedStorageQuota resource type"
 description: unifiedStorageQuota provides an aggregate view of a user's quota information across multiple services.
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: "unified-storage-quota"
+ms.prod: files
 doc_type: resourcePageType
 ---
 
