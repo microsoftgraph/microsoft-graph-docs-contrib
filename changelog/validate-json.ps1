@@ -10,9 +10,9 @@ Get-ChildItem -Filter "*.json" | Where-Object { $schemaFileName -notcontains $_.
 
         # if json parsing is fine, let's check schema
         if(($json | Test-Json -Schema $schema -ErrorAction:SilentlyContinue) -eq $true){
-            Write-Host ($_.Name + "`t`tPassed")
+            Write-Host ("Passed Validation : " + $_.Name) -ForegroundColor Green
         } else {
-            $err += $_.Name + "`t`t" + $Error[0].ErrorDetails.Message + "`r`n";
+            $err += "File found with invalid changelog: " + $_.Name + "`nError Details: " + $Error[0].ErrorDetails.Message + "`r`n";
         }
 
     } else {
@@ -22,6 +22,6 @@ Get-ChildItem -Filter "*.json" | Where-Object { $schemaFileName -notcontains $_.
 
 # only drop one error preventing 
 if($err -ne ""){
-    Write-Error $err
+    Write-Host $err -ForegroundColor Red
     exit -1
 }
