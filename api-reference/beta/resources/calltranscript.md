@@ -45,6 +45,7 @@ The following is a JSON representation of the resource.
 {
   "content": "stream",
   "createdDateTime": "dateTimeOffset",  
-  "id": "string (identifier)"
+  "id": "string (identifier)",
+  "metadataContent": "stream"
 }
 ```
