@@ -3,7 +3,7 @@ title: "Get unifiedStorageQuota"
 description: "Read the properties and relationships of a unifiedStorageQuota object."
 author: "BarryShehadeh"
 ms.localizationpriority: medium
-ms.prod: "unified-storage-quota"
+ms.prod: files
 doc_type: apiPageType
 ---
 
