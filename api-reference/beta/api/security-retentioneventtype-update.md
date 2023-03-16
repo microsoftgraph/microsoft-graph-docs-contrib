@@ -47,10 +47,7 @@ PATCH /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 |:---|:---|:---|
 |displayName|String|Name of the event type. Optional.|
 |description|String|Information about the event type. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the retentionEventType. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the retentionEventType was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEventType.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionEventType was modified. Optional.|
+
 
 ## Response
 
@@ -74,9 +71,6 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.security.retentionEventType",
   "displayName": "String",
   "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 
@@ -99,13 +93,5 @@ Content-Type: application/json
   "id": "dd689e79-9e79-dd68-799e-68dd799e68dd",
   "displayName": "String",
   "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
