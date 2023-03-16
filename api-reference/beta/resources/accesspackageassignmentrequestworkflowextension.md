@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestWorkflowExtension resource type"
-description: "Defines the attributes of a logic ap that can be called at various stages of an access package request cycle."
+description: "Defines the attributes of a logic app that can be called at various stages of an access package request cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -27,11 +27,11 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageCustomWorkflowExtensions](../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) collection|Get a list of the [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) objects and their properties.|
-|[Get accessPackageCustomWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-get.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Read the properties and relationships of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Create accessPackageCustomWorkflowExtension](../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Update accessPackageCustomWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-update.md)|[accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Update the properties of an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
-|[Delete accessPackageCustomWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-delete.md)|None|Delete an [accessPackageCustomWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[List accessPackageAssignmentRequestWorkflowExtension](../api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md)|[customCalloutExtension](../resources/accesspackageassignmentrequestworkflowextension.md) collection|Get a list of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) objects and their properties.|
+|[Create accessPackageAssignmentRequestWorkflowExtension](../api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)| Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[Get accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-get.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Read the properties and relationships of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[Update accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-update.md)|[accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)|Update the properties of an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
+|[Delete accessPackageAssignmentRequestWorkflowExtension](../api/accesspackageassignmentrequestworkflowextension-delete.md)|None|Delete an [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,13 +39,13 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 |createdBy|String|The userPrincipalName of the user or identity of the subject that created this resource. Read-only.|
-|createdDateTime|DateTimeOffset|When the entity was created.|
+|createdDateTime|DateTimeOffset|When the object was created.|
 |description|String|Description for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|Display name for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String|Read-only.|
-|lastModifiedBy|String|The userPrincipalName of the identity that last modified the entity. |
-|lastModifiedDateTime|DateTimeOffset|When the entity was last modified.|
+|lastModifiedBy|String|The userPrincipalName of the identity that last modified the object. |
+|lastModifiedDateTime|DateTimeOffset|When the object was last modified.|
 
 ## Relationships
 None.

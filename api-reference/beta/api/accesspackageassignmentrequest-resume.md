@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when a access package policy has been enabled to call out custom extension and the request processing is waiting for the callback from customer a resume action can be triggered by customer.It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** in `WaitingForCallback` status. 
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,9 +61,10 @@ If successful, this action returns a `204 No Content` response code.
 ### Example 1: Resume an access package assignment request
 
 #### Request
-The following is an example of a on how to resume a resume that waiting for callback.
+The following is an example of a call to resume an access package assignment request that's waiting for a callback.
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "accesspackageassignmentrequestthis.resume"
 }
 -->
 ``` http
@@ -94,10 +95,10 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Deny an access package assignment request
+### Example 2: Resume and deny an access package assignment request
 
 #### Request
-The following is an example to deny an assignment request which is waiting for callback which resuming the processing of a request. Request can not be denied at `assignmentRequestCreated` stage of callout.
+The following is an example to resume the processing of an access package assignment request by denying the request that's waiting for a callback. A request cannot be denied at the `assignmentRequestCreated` stage of the callout.
 <!-- {
   "blockType": "request"
 }

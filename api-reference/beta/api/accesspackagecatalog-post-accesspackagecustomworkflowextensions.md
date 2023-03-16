@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
 
+You must explicitly provide an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -52,7 +54,7 @@ You can specify the following properties when creating a **accessPackageCustomWo
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is suppoted for `accessPackageAssignmentRequestWorkflowExtension`. |
 
-
+You must also supply an **@odata.type** property with a value of the specific access package workflow extension type. For example, `"@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"`.
 
 ## Response
 
@@ -64,7 +66,8 @@ If successful, this method returns a `201 Created` response code and a [accessPa
 The following is an example of a access package assignment request custom workflow extension.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_accessPackageAssignmentRequestWorkflowExtension"
 }
 -->
 
@@ -138,9 +141,9 @@ Content-Type: application/json
 ### Example 2: Create a custom extension for use with an access package assignment
 The following is an example of a access package assignment custom workflow extension.
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_accessPackageAssignmentWorkflowExtension"
 }
 -->
 ``` http
