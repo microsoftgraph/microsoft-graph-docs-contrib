@@ -93,23 +93,23 @@ In common speech, the term _Recurring Task_ sometimes refers to the unique _Task
 
 ## Resource Type Details
 
-Working with recurrence for Planner tasks entails the use of several resource types: [plannerTaskRecurrence](/graph/api/resources/plannerTaskRecurrence.md), [plannerRecurrenceSchedule](/graph/api/resources/plannerRecurrenceSchedule.md), and [recurrencePattern](/graph/api/resources/recurrencePattern.md); further details about the latter two of these resource types are presented here.
+Working with recurrence for Planner tasks entails the use of several resource types: [plannerTaskRecurrence](/graph/api/resources/plannertaskrecurrence), [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule), and [recurrencePattern](/graph/api/resources/recurrencepattern); further details about the latter two of these resource types are presented here.
 
 ### plannerRecurrenceSchedule
 
-As described in the resource documentation, the [plannerRecurrenceSchedule](/graph/api/resources/plannerRecurrenceSchedule.md) encapsulates a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**).
+As described in the resource documentation, the [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule) encapsulates a recurrence pattern definition (**pattern**), a start date for that pattern (**patternStartDateTime**), and a system-generated property that indicates the next occurrence date (**nextOccurrenceDateTime**).
 
-The **pattern** is a [recurrencePattern](../resources/recurrencepattern.md); see the [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern), below.
+The **pattern** is a [recurrencePattern](/graph/api/resources/recurrencepattern); see the [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern), below.
 
 The **patternStartDateTime** indicates the starting date and time of the series as a **DateTimeOffset**. A non-null value must be assigned to **patternStartDateTime** whenever the **pattern** property is used; this is currently the only way to define recurrence. Clients should generally reassign this value when they make a change to the **recurrence.schedule.pattern** to indicate the starting date of the new pattern, however if clients don't include a value then the service continues the series using a sane default value based on the schedule (see notes and clarifications below).
 
-The **nextOccurrenceDateTime** is a read-only system-generated field. It provides the service-calculated date that is used as the **dueDateTime** for the next [plannerTask](plannertask.md) in the series. The **nextOccurrenceDateTime** is calculated from the **pattern** along with either the **patternStartDateTime** or an _anchor value_ that tracks the originally scheduled date of the given task.
+The **nextOccurrenceDateTime** is a read-only system-generated field. It provides the service-calculated date that is used as the **dueDateTime** for the next [plannerTask](/graph/api/resources/plannertask) in the series. The **nextOccurrenceDateTime** is calculated from the **pattern** along with either the **patternStartDateTime** or an _anchor value_ that tracks the originally scheduled date of the given task.
 
 Note, Planner doesn't utilize the **recurrenceRange** resource type at this time.
 
 ### Planner-specific notes about the recurrencePattern
 
-Planner-specific restrictions for [recurrencePattern](../resources/recurrencepattern.md):
+Planner-specific restrictions for [recurrencePattern](/graph/api/resources/recurrencepattern):
 
 - `relativeMonthly` and `relativeYearly` patterns may not specify more than one day for **daysOfWeek**.
 - For `weekly` patterns, if **daysOfWeek** contains more than one day, the **interval** must be `1`.
