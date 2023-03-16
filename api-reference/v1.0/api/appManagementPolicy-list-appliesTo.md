@@ -110,7 +110,6 @@ Content-type: application/json
 
 The following is an example of the request using $select query option.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_appManagementPolicyAppliesTo_select"

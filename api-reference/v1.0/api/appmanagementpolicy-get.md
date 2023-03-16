@@ -54,8 +54,6 @@ The following is an example of the request.  From the response, the app manageme
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_appManagementPolicy"

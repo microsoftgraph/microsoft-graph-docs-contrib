@@ -40,10 +40,19 @@ POST /policies/appManagementPolicies
 
 > [!IMPORTANT]
 > Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
+
 ## Request body
 
-In the request body, provide a JSON representation of an [appManagementPolicy](../resources/appManagementPolicy.md).
-The request body must contain **displayName** and **description**, which are required properties.
+In the request body, supply a JSON representation of the [appManagementPolicy](../resources/appmanagementpolicy.md) object.
+
+You can specify the following properties when creating an **appManagementPolicy**.
+
+| Property     | Type                                                        | Description                                                            |
+| :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| displayName  | String                                                      | The display name of the policy. Required.                                       |
+| description  | String                                                      | The description of the policy. Required.                                       |
+| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.  Optional.                                    |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. Optional. |
 
 ## Response
 
@@ -60,8 +69,6 @@ The following is an example of the request. This request created an app manageme
 - Enforces lifetime on password secrets and key credentials for applications created on or after 2014-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_appManagementPolicy"

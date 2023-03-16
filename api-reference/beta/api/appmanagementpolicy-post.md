@@ -44,8 +44,17 @@ POST /policies/appManagementPolicies
 > Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
 ## Request body
 
-In the request body, provide a JSON representation of an [appManagementPolicy](../resources/appManagementPolicy.md).
-The request body must contain **displayName** and **description**, which are required properties.
+In the request body, supply a JSON representation of the [appManagementPolicy](../resources/appmanagementpolicy.md) object.
+
+You can specify the following properties when creating an **appManagementPolicy**.
+
+| Property     | Type                                                        | Description                                                            |
+| :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| displayName  | String                                                      | The display name of the policy. Required.                                       |
+| description  | String                                                      | The description of the policy. Required.                                       |
+| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.  Optional.                                    |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. Optional. |
+
 ## Response
 
 If successful, this method returns a `201 Created` response code with the new [appManagementPolicy ](../resources/appmanagementpolicy.md) object in the response payload.

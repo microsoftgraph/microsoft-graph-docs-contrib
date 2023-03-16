@@ -54,8 +54,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request to remove an appManagementPolicy from an application.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_appliesTo"
@@ -89,9 +87,6 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request to remove an appManagementPolicy from a service principal.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_appliesTo"
