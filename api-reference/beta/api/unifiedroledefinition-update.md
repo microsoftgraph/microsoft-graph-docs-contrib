@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider.
-
+Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. You cannot update built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
 
 The following RBAC providers are currently supported:
 - Cloud PC
@@ -154,7 +153,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -237,7 +235,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

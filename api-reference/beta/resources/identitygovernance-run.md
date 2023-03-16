@@ -32,17 +32,17 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date time that the run completed. Value is `null` if the workflow hasn't completed. Optional.|
-|failedTasksCount|Int32|The number of tasks that failed in the run execution. Required.|
-|failedUsersCount|Int32|The number of users that failed in the run execution. Required.|
-|lastUpdatedDateTime|DateTimeOffset|The datetime that the run was last updated. Optional.|
-|processingStatus|String|The run execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`. Required.|
-|startedDateTime|DateTimeOffset|The date time that the run execution started. Optional.|
-|scheduledDateTime|DateTimeOffset|The date time that the run is scheduled to be executed for a workflow. Required.|
-|successfulUsersCount|Int32|The number of successfully completed users in the run. Required.|
-|totalUsersCount|Int32|The total number of users in the workflow execution. Required.|
-|totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks in the run execution. Required.|
-|workflowExecutionType|String|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`. Required.|
+|completedDateTime|DateTimeOffset|The date time that the run completed. Value is `null` if the workflow hasn't completed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|failedTasksCount|Int32|The number of tasks that failed in the run execution.|
+|failedUsersCount|Int32|The number of users that failed in the run execution.|
+|lastUpdatedDateTime|DateTimeOffset|The datetime that the run was last updated.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|processingStatus|String|The run execution status. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|startedDateTime|DateTimeOffset|The date time that the run execution started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|scheduledDateTime|DateTimeOffset|The date time that the run is scheduled to be executed for a workflow.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|successfulUsersCount|Int32|The number of successfully completed users in the run.|
+|totalUsersCount|Int32|The total number of users in the workflow execution.|
+|totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks in the run execution.|
+|workflowExecutionType|String|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 

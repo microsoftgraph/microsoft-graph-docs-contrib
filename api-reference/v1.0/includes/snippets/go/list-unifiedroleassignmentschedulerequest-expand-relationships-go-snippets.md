@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.RoleAssignmentScheduleRequestsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.RoleManagementDirectoryRoleAssignmentScheduleRequestsRequestBuilderGetQueryParameters{
 	Select: [] string {"principalId","action","roleDefinitionId"},
 	Expand: [] string {"roleDefinition","activatedUsing","principal","targetSchedule"},
 }
-configuration := &graphconfig.RoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementDirectoryRoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

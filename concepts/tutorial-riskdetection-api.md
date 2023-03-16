@@ -2,8 +2,11 @@
 title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
+ms.date: 11/01/2022
 ---
 
 # Identify and remediate risks using Microsoft Graph
@@ -77,7 +80,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -150,7 +152,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -278,7 +279,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response 
 <!-- {
   "blockType": "response",
@@ -382,7 +382,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -490,7 +489,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 <!-- {
@@ -600,7 +598,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -649,7 +646,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userD
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -721,7 +717,6 @@ DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -770,7 +765,6 @@ DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-144572767
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

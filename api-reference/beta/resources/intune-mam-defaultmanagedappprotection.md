@@ -1,7 +1,7 @@
 ---
 title: "defaultManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -288,8 +288,3 @@ Here is a JSON representation of the resource.
   "minimumWarningSdkVersion": "String"
 }
 ```
-
-
-
-
-

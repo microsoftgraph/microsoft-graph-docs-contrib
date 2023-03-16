@@ -4,34 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contentInfo = new ContentInfo
+var requestBody = new Microsoft.Graph.Beta.InformationProtection.Policy.Labels.EvaluateClassificationResults.EvaluateClassificationResultsPostRequestBody
 {
-	Format = ContentFormat.Default,
-	Identifier = null,
-	State = ContentState.Rest,
-	AdditionalData = new Dictionary<string, object>()
+	ContentInfo = new ContentInfo
 	{
-		{"format@odata.type", "#microsoft.graph.contentFormat"},
-		{"state@odata.type", "#microsoft.graph.contentState"}
-	}
+		OdataType = "#microsoft.graph.contentInfo",
+		Format = ContentFormat.Default,
+		Identifier = null,
+		State = ContentState.Rest,
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"format@odata.type" , "#microsoft.graph.contentFormat"
+			},
+			{
+				"state@odata.type" , "#microsoft.graph.contentState"
+			},
+		},
+	},
+	ClassificationResults = new List<ClassificationResult>
+	{
+		new ClassificationResult
+		{
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
+			Count = 4,
+			ConfidenceLevel = 75,
+		},
+	},
 };
-
-var classificationResults = new List<ClassificationResult>()
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateClassificationResults.PostAsync(requestBody, (requestConfiguration) =>
 {
-	new ClassificationResult
-	{
-		SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
-		Count = 4,
-		ConfidenceLevel = 75
-	}
-};
+	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
+});
 
-await graphClient.InformationProtection.Policy.Labels
-	.EvaluateClassificationResults(contentInfo,classificationResults)
-	.Request()
-	.Header("User-Agent","ContosoLOBApp/1.0")
-	.PostAsync();
 
 ```

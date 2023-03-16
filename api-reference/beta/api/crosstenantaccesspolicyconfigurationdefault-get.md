@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 
 ---
 
-
 ### Response
 
 The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.
@@ -115,6 +114,11 @@ Content-Type: application/json
     "isMfaAccepted": false,
     "isCompliantDeviceAccepted": false,
     "isHybridAzureADJoinedDeviceAccepted": false,
+  },
+  "automaticUserConsentSettings":
+  {
+    "inboundAllowed": false,
+    "outboundAllowed": false
   },
   "b2bCollaborationOutbound":
   {

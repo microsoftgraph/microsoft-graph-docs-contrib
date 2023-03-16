@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let submissions = await client.api('/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions')
+let submissions = await client.api('/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/submissions')
 	.version('beta')
 	.get();
 

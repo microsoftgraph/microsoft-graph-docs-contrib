@@ -17,6 +17,8 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 
 >[!NOTE]
 >After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>
+>This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
 ## Permissions
 

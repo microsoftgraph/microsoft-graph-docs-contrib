@@ -50,8 +50,9 @@ The request should be a JSON object with the following properties.
 | **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
 | **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
-| **scope** | string | Optional. The scope of link to create. Either `anonymous` or `organization`. |
-
+| **retainInheritedPermissions** |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
+| **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
+| **retainInheritedPermissions** |  Boolean                       | If `true`, any current inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all current permissions are removed when sharing for the first time. The default value is `true`. Optional. |
 
 ### Link types
 
@@ -72,6 +73,7 @@ If the **scope** parameter is not specified, the default link type for the organ
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
 | `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| `users`        | Share only with people you choose inside or outside the organization.
 
 
 ## Response
@@ -84,6 +86,7 @@ The response will be `201 Created` if a new sharing link is created for the item
 
 The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 ### Request
 
@@ -101,7 +104,8 @@ Content-type: application/json
 {
   "type": "view",
   "password": "ThisIsMyPrivatePassword",
-  "scope": "anonymous"
+  "scope": "anonymous",
+  "retainInheritedPermissions": false
 }
 ```
 

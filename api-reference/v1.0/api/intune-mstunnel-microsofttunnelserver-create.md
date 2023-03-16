@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftTunnelServer"
 description: "Create a new microsoftTunnelServer object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the m
 |:---|:---|:---|
 |id|String|The unique identifier for the managed server. This id is assigned at enrollment time. Supports: $delete. $Update, $insert, $skip, $top is not supported. Read-only.|
 |displayName|String|The display name for the server. This property is required when a server is created and cannot be cleared during updates.|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
 |lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in|
 |agentImageDigest|String|The digest of the current agent image running on this server|
 |serverImageDigest|String|The digest of the current server image running on this server|
@@ -94,7 +94,3 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
-
-
-
-

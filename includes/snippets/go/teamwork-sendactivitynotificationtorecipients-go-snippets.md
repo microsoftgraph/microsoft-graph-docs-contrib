@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
-value := "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+value := "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
 topic.SetValue(&value) 
 requestBody.SetTopic(topic)
 activityType := "pendingFinanceApprovalRequests"

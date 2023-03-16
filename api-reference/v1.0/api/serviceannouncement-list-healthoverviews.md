@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -110,7 +109,7 @@ Content-Type: application/json
   "value": [
     {
         "service": "Exchange Online",
-        "status": "ServicaOperational",
+        "status": "ServiceOperational",
         "id": "Exchange"
     },
     {
@@ -168,7 +167,6 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

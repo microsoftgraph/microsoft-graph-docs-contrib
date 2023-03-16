@@ -11,6 +11,17 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### userPurpose values
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
 ### bookingsAvailabilityStatus values
 |Member|
 |:---|
@@ -749,6 +760,7 @@ Namespace: microsoft.graph
 |signin|
 |user|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### riskDetectionTimingType values
 
@@ -1458,6 +1470,8 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 |m365DAdminDismissedDetection|
 
 ### riskEventTypes values
@@ -2154,6 +2168,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|teamMember|
 
 ### answerInputType values 
 
@@ -2213,4 +2229,79 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
+|unknownFutureValue|
+
+### onPremisesDirectorySynchronizationDeletionPreventionType values
+
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
 |unknownFutureValue|

@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).
-This method does not delete the rubric itself.
+
+This method does not delete the rubric itself and can only be performed by teachers.
 
 ## Permissions
 
@@ -90,7 +91,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -67,7 +67,7 @@ Would return a response containing an `@odata.nextLink` property, if the result 
 ```
 
 > [!NOTE]
-> Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
+> Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata.nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
 
 For more details, see [paging](paging.md).
 

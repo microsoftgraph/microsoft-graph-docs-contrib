@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /security/securescorecontrolprofiles/{id}
+GET /security/secureScoreControlProfiles/{id}
 ```
 
 ## Request headers
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

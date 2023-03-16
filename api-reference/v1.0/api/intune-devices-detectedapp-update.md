@@ -1,7 +1,7 @@
 ---
 title: "Update detectedApp"
 description: "Update the properties of a detectedApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [detectedApp](../resources/intune-devices-detectedapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 |publisher|String|Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.|
-|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). Possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`.|
+|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). Possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`, `unknownFutureValue`.|
 
 
 
@@ -97,7 +97,3 @@ Content-Length: 277
   "platform": "windows"
 }
 ```
-
-
-
-

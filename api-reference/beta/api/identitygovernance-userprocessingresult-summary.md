@@ -111,14 +111,13 @@ GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityGovernance.usersProcessingSummary"
+  "@odata.type": "microsoft.graph.identityGovernance.userSummary"
 }
 -->
 ``` http

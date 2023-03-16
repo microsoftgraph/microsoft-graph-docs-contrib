@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application| Tasks.ReadWrite.All|
 
 ## HTTP request
 
@@ -48,6 +48,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,9 +87,10 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/5ba84f7a-aa11-4a51-a298-
 
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

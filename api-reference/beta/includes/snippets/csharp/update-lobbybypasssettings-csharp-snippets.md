@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onlineMeeting = new OnlineMeeting
+var requestBody = new OnlineMeeting
 {
 	LobbyBypassSettings = new LobbyBypassSettings
 	{
-		IsDialInBypassEnabled = true
-	}
+		IsDialInBypassEnabled = true,
+	},
 };
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"]
-	.Request()
-	.UpdateAsync(onlineMeeting);
 
 ```

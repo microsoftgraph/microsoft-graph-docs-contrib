@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftTunnelConfiguration"
 description: "Create a new microsoftTunnelConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -52,6 +52,8 @@ The following table shows the properties that are required when you create the m
 |network|String|The subnet that will be used to allocate virtual address for the clients|
 |dnsServers|String collection|The DNS servers that will be used by the clients|
 |defaultDomainSuffix|String|The Default Domain appendix that will be used by the clients|
+|routeIncludes|String collection|The routes that will be routed by the server|
+|routeExcludes|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
@@ -71,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelConfigurations
 Content-type: application/json
-Content-length: 670
+Content-length: 782
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -82,6 +84,12 @@ Content-length: 670
     "Dns Servers value"
   ],
   "defaultDomainSuffix": "Default Domain Suffix value",
+  "routeIncludes": [
+    "Route Includes value"
+  ],
+  "routeExcludes": [
+    "Route Excludes value"
+  ],
   "splitDNS": [
     "Split DNS value"
   ],
@@ -106,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 719
+Content-Length: 831
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -118,6 +126,12 @@ Content-Length: 719
     "Dns Servers value"
   ],
   "defaultDomainSuffix": "Default Domain Suffix value",
+  "routeIncludes": [
+    "Route Includes value"
+  ],
+  "routeExcludes": [
+    "Route Excludes value"
+  ],
   "splitDNS": [
     "Split DNS value"
   ],
@@ -136,7 +150,3 @@ Content-Length: 719
   "disableUdpConnections": true
 }
 ```
-
-
-
-

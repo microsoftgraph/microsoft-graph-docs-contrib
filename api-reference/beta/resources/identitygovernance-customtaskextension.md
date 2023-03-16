@@ -33,22 +33,22 @@ For more information about using custom task extensions, refer to the links in t
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Required.|
 |callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 |clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|createdDateTime|DateTimeOffset|When the custom task extension was created.|
-|description|String|Describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|A unique string that identifies the custom task extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|createdDateTime|DateTimeOffset|When the custom task extension was created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|description|String|Describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|displayName|String|A unique string that identifies the custom task extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Required.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Details for allowing the custom task extension to call the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String| Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|When the custom extension was last modified.|
+|id|String| Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|lastModifiedDateTime|DateTimeOffset|When the custom extension was last modified.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that created the custom task extension.|
-|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that modified the custom task extension last.|
+|createdBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that created the custom task extension.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that modified the custom task extension last.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 
 ## JSON representation
 

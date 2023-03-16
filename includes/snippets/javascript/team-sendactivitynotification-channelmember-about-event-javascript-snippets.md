@@ -28,7 +28,6 @@ const sendActivityNotification = {
 };
 
 await client.api('/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification')
-	.version('beta')
 	.post(sendActivityNotification);
 
 ```

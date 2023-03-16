@@ -1,112 +1,23 @@
 ---
 title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
+ms.topic: reference
+ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
+ms.date: 02/17/2022
 ---
 
 # Microsoft Graph permissions reference
 
-For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions. To find the unique identifiers for all permissions, jump to [All permissions and IDs](#all-permissions-and-ids).
+For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This topic lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+
+To find the unique identifiers for all permissions, see [All permissions and IDs](#all-permissions-and-ids).
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
-
-To learn more about how permissions work, see [Authentication and authorization basics](auth/auth-concepts.md#microsoft-graph-permissions), and watch the following video.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
-
-## Microsoft Graph permission names
-
-Microsoft Graph permission names follow a simple pattern: _resource.operation.constraint_. For example, _User.Read_ grants permission to read the profile of the signed-in user, _User.ReadWrite_ grants permission to read and modify the profile of the signed-in user, and _Mail.Send_ grants permission to send mail on behalf of the signed-in user.
-
-The _constraint_ element of the name determines the potential extent of access your app will have within the directory. Currently Microsoft Graph supports the following constraints:
-
-* **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory.
-* **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
-* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
-* **WhereInstalled** grants permission for the app to perform the operations on all the resources where the associated Teams application is installed. For example, *Chat.Read.WhereInstalled* grants the app privileges to read all chat messages for all chats where the associated Teams application is installed. There is usually a one-to-one mapping between an app (Azure AD application) and a Teams application. The *webApplicationInfo* section of the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) of a Teams app specifies the Azure AD application Id.
-* If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
-
-> [!NOTE]
-> In delegated scenarios, your app's access is also limited by the privileges of the signed-in user. These privileges are determined by the user's assigned roles and their relationship to the data being accessed.
-> For example, if the signed-in user doesn't have the appropriate privileges to view a file, then the client app won't be able to read that file either, even if the app is granted the `File.Read.All` delegated permission.
-
-## Microsoft accounts and work or school accounts
-
-Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both.
-
-## Limits on requested permissions per app
-
-Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for your app, shown in the app's manifest. 
-
-| signInAudience                     | Allowed users                                            | Maximum permissions the app can request   | Maximum Microsoft Graph permissions the app can request   | Maximum permissions that can be consented in a single request         |
-| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
-| AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
-| AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
-| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
-| AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |
-
-## Permissions availability status
-
-Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are generally available and in GA status for all apps to use, except for a few sets that are in preview or private preview status. Permissions in preview are available to the public; they may change and may not be promoted to GA status. Permissions in private preview status are not and may never become available to the public. Do not use permissions in preview or private preview status in production apps.
-
-## User and group search limitations for guest users in organizations
-
-User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
-
-> [!NOTE]
-> Guest users have the same access that members enabled under **External Identities** > **External Collaboration Settings** > **Guest user access** have. The users API works with guest tokens as well.
-
-If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource.
-
-With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
-
-## Limited information returned for inaccessible member objects
-
-Container objects such as groups support members of various types, for example users and devices. When an application queries the membership of a container object and does not have permission to read a certain type, members of that type are returned but with limited information.  The application receives a 200 response and a collection of objects.  Complete information is returned for the object types that the application has permissions to read.  For the object types which the application does not have permission to read, only the the object type and ID are returned.
-
-This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
-
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
-
-```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
-```
-
-The following is the JSON response:
-
-```json
-{
-"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl)",
-    "value":[
-        {
-            "@odata.type":"#microsoft.graph.user",
-            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
-            "displayName":"Jane Dane",
-            "createdDateTime":"2019-09-18T09:06:51Z",
-            "deletedDateTime":null
-        },
-        {
-            "@odata.type":"#microsoft.graph.group",
-            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
-            "displayName":"Group 1",
-            "description":null,
-            "createdDateTime":"2019-10-24T01:34:35Z",
-            "deletedDateTime":null
-        },
-        {
-            "@odata.type":"#microsoft.graph.device",
-            "id": "d282309e-f91d-43b6-badb-9e68aa4b4fc8",
-            "accountEnabled":null,
-            "deviceId":null,
-            "displayName":null,
-            "operatingSystem":null,
-            "operatingSystemVersion":null
-        }
-    ]
-}
-```
 
 ## Access reviews permissions
 
@@ -266,7 +177,9 @@ None.
 > Permissions that allow granting authorization, such as _AppRoleAssignment.ReadWrite.All_, allow an application to grant additional privileges to itself, other applications, or any user. Likewise, permissions that allow managing credentials, such as _Application.ReadWrite.All_, allow an application to act as other entities, and use the privileges they were granted. Use caution when granting any of these permissions.
 
 The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) or [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) resource.
-> NOTE: Using the _Application.ReadWrite.OwnedBy_ permission to call `GET /applications` to list applications will fail with a 403.  Instead use `GET servicePrincipals/{id}/ownedObjects` to list the applications owned by the calling application.
+
+> [!NOTE]
+> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
 
 ### Example usage
 
@@ -354,6 +267,74 @@ None.
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
+---
+
+## Browser management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read browser site lists for your organization | Allows an app to read the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write browser site lists for your organization |  Allows an app to read and write the browser site lists configured for your organization, on behalf of the signed-in user. | No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BrowserSiteLists.Read.All_ | Read all browser site lists for your organization | Allows an app to read all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+| _BrowserSiteLists.ReadWrite.All_ | Read and write all browser site lists for your organization | Allows an app to read and write all browser site lists configured for your organization, without a signed-in user. | Yes | No |
+
+### Example usage
+
+#### Delegated
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, on behalf of a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Update a browser site list, on behalf of a signed-in user (`PATCH /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+#### Application
+
+* _BrowserSiteLists.Read.All_: List all browser site lists, without a signed-in user (`GET /beta/admin/edge/internetExplorerMode/siteLists`)
+* _BrowserSiteLists.ReadWrite.All_: Delete a browser site list, without a signed-in user (`DELETE /beta/admin/edge/internetExplorerMode/siteLists/{browserSiteListId}`)
+
+---
+
+## Business scenarios permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|BusinessScenarioConfig.Read.All|Read business scenario configurations|Allows the app to read the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.Read.OwnedBy|Read business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.All|Read and write business scenario configurations|Allows the app to read and write the configurations for the business scenarios of your organization, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, on behalf of the signed-in user.|Yes|No|
+|BusinessScenarioData.Read.OwnedBy|Read all data for business scenarios this app creates or owns|Allows the app to read all data associated with the business scenarios it owns. Data access will be attributed to the signed-in user.|Yes|No|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write all data for business scenarios this app creates or owns|Allows the app to fully manage all data associated with the business scenarios it owns. Data access and changes will be attributed to the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|BusinessScenarioConfig.Read.OwnedBy|Read all business scenario configurations this app creates or owns|Allows the app to read the configurations of business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioConfig.ReadWrite.OwnedBy|Read and write all business scenario configurations this app creates or owns|Allows the app to create new business scenarios and fully manage the configurations of scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.Read.OwnedBy|Read data for all business scenarios this app creates or owns|Allows the app to read the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+|BusinessScenarioData.ReadWrite.OwnedBy|Read and write data for all business scenarios this app creates or owns|Allows the app to fully manage the data associated with the business scenarios it owns, without a signed-in user.|Yes|
+
+### Example usage
+
+#### Delegated
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Create a new business scenario (`POST /solutions/businessScenarios`)
+* _BusinessScenarioConfig.Read.All_: Get a list of all business scenarios in an organization (`GET /solutions/businessScenarios`)
+
+#### Application
+
+* _BusinessScenarioConfig.ReadWrite.OwnedBy_: Update the Planner plan configuration for a business scenario (`PATCH /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration`)
+* _BusinessScenarioData.ReadWrite.OwnedBy_: Delete a Planner task in a business scenario (`DELETE /solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/tasks/M60dlXLEkk-ZocLUTDvBSpcAGRaa`)
+
+---
+
 ## Calendars permissions
 
 #### Delegated permissions
@@ -364,6 +345,7 @@ None.
 | _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
 | _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadBasic_ |Read basic details of user calendars |Allows the app to read events in user calendars, except for properties such as body, attachments, and extensions.|Yes | No |
 
 <br/>
 
@@ -373,6 +355,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
+| _Calendars.ReadBasic.All_ |Read basic details of calendars in all mailboxes|Allows the app to read events of all calendars, except for properties such as body, attachments, and extensions, without a signed-in user. |Yes |
 
 > **Important**
 Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
@@ -406,7 +389,7 @@ None.
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Calls.Initiate.All_|Initiate outgoing 1:1 calls from the app|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
+|_Calls.Initiate.All_|Initiate outgoing 1:1 calls from the app|Allows the app to place outbound calls to a single user and transfer calls to users in your organization's directory, without a signed-in user.|Yes|
 |_Calls.InitiateGroupCall.All_|Initiate outgoing group calls from the app|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
 |_Calls.JoinGroupCall.All_|Join group calls and meetings as an app|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
 |_Calls.JoinGroupCallasGuest.All_|Join group calls and meetings as a guest|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined as a guest to meetings in your tenant.|Yes|
@@ -474,17 +457,17 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Read the names and descriptions of channels. | Read channel names and channel descriptions, on behalf of the signed-in user.	| No | No |
-| _Channel.Create_ | Create channels. | Create channels in any team, on behalf of the signed-in user.	| Yes | No |
-| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, on behalf of the signed-in user.	| Yes | No |
+| _Channel.ReadBasic.All_ | Read the names and descriptions of channels. | Read channel names and channel descriptions, on behalf of the signed-in user.  | No | No |
+| _Channel.Create_ | Create channels. | Create channels in any team, on behalf of the signed-in user.  | Yes | No |
+| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, on behalf of the signed-in user.  | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Read the names and descriptions  of all channels. | Read all channel names and channel descriptions, without a signed-in user.	| Yes | No |
-| _Channel.Create_ | Create channels. | Create channels in any team, without a signed-in user.	| Yes | No |
-| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, without a signed-in user.	| Yes | No |
+| _Channel.ReadBasic.All_ | Read the names and descriptions  of all channels. | Read all channel names and channel descriptions, without a signed-in user.  | Yes | No |
+| _Channel.Create_ | Create channels. | Create channels in any team, without a signed-in user.  | Yes | No |
+| _Channel.Delete.All_ | Delete channels. | Delete channels in any team, without a signed-in user.  | Yes | No |
 |_Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
 ## Channel member permissions
@@ -777,7 +760,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Yes | No |
+| _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization's tenant.| Yes | No |
 | _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes | No |
 | _Directory.AccessAsUser.All_ |Access directory as the signed-in user  | Allows the app to have the same access to information in the directory as the signed-in user. | Yes | No |
 
@@ -819,7 +802,7 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 > - No rights to reset user passwords.
 > - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 > - No rights to delete resources (including users or groups).
-> - Specifically excludes create or update for resources not listed above. This includes: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
+> - Specifically excludes create or update for resources not listed above. This includes: application, oAuth2PermissionGrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
 
 
 ### Example usage
@@ -835,6 +818,24 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Directory recommendations permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations on behalf of the signed-in user. | Yes | No |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _DirectoryRecommendations.Read.All_ | Read all recommendations | Allows the  app to read recommendations without a signed-in user. | Yes |
+| _DirectoryRecommendations.ReadWrite.All_ | Manage all recommendations | Allows the  app to read and write recommendations without a signed-in user. | Yes |
 
 ---
 
@@ -939,8 +940,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _LearningContent.Read.All_ |    Read learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
-| _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.Read.All_ |    Read all learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningContent.ReadWrite.All_  |    Manage all learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
 
 
 ---
@@ -1226,6 +1227,44 @@ Incidents permissions are valid only on work or school accounts.
 
 ---
 
+## Industry data permissions
+
+#### Delegated permissions
+
+| Permission                                  | Display String                                            | Description                                                                                                   | Admin Consent Required | Microsoft Account supported |
+| ------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| _IndustryData.ReadBasic.All_                | Read basic industry data service and resource definitions | Allows the app to read basic industry data service and resource information on behalf of the signed-in user. | No                     | No                          |
+| _IndustryData-DataConnector.Read.All_       | View data connector definitions                           | Allows the app to read data connectors on behalf of the signed-in user.                           | Yes                    | No                          |
+| _IndustryData-DataConnector.ReadWrite.All_  | Manage data connector definitions                         | Allows the app to read and write data connectors on behalf of the signed-in user.                 | Yes                    | No                          |
+| _IndustryData-DataConnector.Upload_     | Upload files to a data connector                          | Allows the app to upload data files to a data connector on behalf of the signed-in user.                          | Yes                    | No                          |
+| _IndustryData-InboundFlow.Read.All_         | View inbound flow definitions                             | Allows the app to read inbound data flows on behalf of the signed-in user.                             | Yes                    | No                          |
+| _IndustryData-InboundFlow.ReadWrite.All_    | Manage inbound flow definitions                           | Allows the app to read and write inbound data flows on behalf of the signed-in user.                   | Yes                    | No                          |
+| _IndustryData-ReferenceDefinition.Read.All_ | View reference definitions                                | Allows the app to read reference definitions on behalf of the signed-in user.                                | Yes                    | No                          |
+| _IndustryData-Run.Read.All_                 | View current and previous runs                            | Allows the app to read current and previous industry data runs on behalf of the signed-in user.                            | Yes                    | No                          |
+| _IndustryData-SourceSystem.Read.All_        | View source system definitions                            | Allows the app to read source system definitions on behalf of the signed-in user.                            | Yes                    | No                          |
+| _IndustryData-SourceSystem.ReadWrite.All_   | Manage source system definitions                          | Allows the app to read and write source system definitions on behalf of the signed-in user.                  | Yes                    | No                          |
+| _IndustryData-TimePeriod.Read.All_          | Read time period definitions                              | Allows the app to read time period definitions on behalf of the signed-in user.                              | Yes                    | No                          |
+| _IndustryData-TimePeriod.ReadWrite.All_     | Manage time period definitions                            | Allows the app to read and write time period definitions on behalf of the signed-in user.                    | Yes                    | No                          |
+
+#### Application permissions
+
+| Permission                                  | Display String                                            | Description                                                                                            | Admin Consent Required |
+| ------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | :--------------------- |
+| _IndustryData.ReadBasic.All_                | View basic service and resource information               | Allows the app to read basic service and resource information without a signed-in user. | No                     |
+| _IndustryData-DataConnector.Read.All_       | View data connector definitions                           | Allows the app to read data connectors without a signed-in user.                           | Yes                    |
+| _IndustryData-DataConnector.ReadWrite.All_  | Manage data connector definitions                         | Allows the app to read and write data connectors without a signed-in user.                 | Yes                    |
+| _IndustryData-DataConnector.Upload_     | Upload files to a data connector                          | Allows the app to upload data files to a data connector without a signed-in user.                          | Yes                    |
+| _IndustryData-InboundFlow.Read.All_         | View inbound flow definitions                             | Allows the app to read inbound data flows without a signed-in user.                             | Yes                    |
+| _IndustryData-InboundFlow.ReadWrite.All_    | Manage inbound flow definitions                           | Allows the app to read and write inbound data flows without a signed-in user.                   | Yes                    |
+| _IndustryData-ReferenceDefinition.Read.All_ | View reference definitions                                | Allows the app to read reference definitions without a signed-in user.                                | Yes                    |
+| _IndustryData-Run.Read.All_                 | View current and previous runs                            | Allows the app to read current and previous industry data runs without a signed-in user.                            | Yes                    |
+| _IndustryData-SourceSystem.Read.All_        | View source system definitions                            | Allows the app to read source system definitions without a signed-in user.                            | Yes                    |
+| _IndustryData-SourceSystem.ReadWrite.All_   | Manage source system definitions                          | Allows the app to read and write source system definitions without a signed-in user.                  | Yes                    |
+| _IndustryData-TimePeriod.Read.All_          | Read time period definitions                              | Allows the app to read time period definitions without a signed-in user.                              | Yes                    |
+| _IndustryData-TimePeriod.ReadWrite.All_     | Manage time period definitions                            | Allows the app to read and write time period definitions without a signed-in user.                    | Yes                    |
+
+---
+
 ## Information protection policy permissions
 
 #### Delegated permissions
@@ -1255,7 +1294,7 @@ Incidents permissions are valid only on work or school accounts.
 |_DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies  | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes | No |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes | No |
 |_DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes | No |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes | No |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device's owner. | Yes | No |
 |_DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes | No |
 |_DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes | No |
 |_DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration | Allows the app to read Intune service properties including device enrollment and third party service connection configuration. | Yes | No |
@@ -1271,7 +1310,7 @@ Incidents permissions are valid only on work or school accounts.
 |_DeviceManagementConfiguration.ReadWrite.All_ | Read and write Microsoft Intune device configuration and policies  | Allows the app to read and write properties of Microsoft Intune-managed device configuration and device compliance policies and their assignment to groups. | Yes | No |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Perform user-impacting remote actions on Microsoft Intune devices | Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune. | Yes | No |
 |_DeviceManagementManagedDevices.Read.All_ | Read Microsoft Intune devices | Allows the app to read the properties of devices managed by Microsoft Intune. | Yes | No |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Yes | No |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Read and write Microsoft Intune devices | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device's owner. | Yes | No |
 |_DeviceManagementRBAC.Read.All_ | Read Microsoft Intune RBAC settings | Allows the app to read the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes | No |
 |_DeviceManagementRBAC.ReadWrite.All_ | Read and write Microsoft Intune RBAC settings | Allows the app to read and write the properties relating to the Microsoft Intune Role-Based Access Control (RBAC) settings. | Yes | No |
 |_DeviceManagementServiceConfig.Read.All_ | Read Microsoft Intune configuration | Allows the app to read Intune service properties including device enrollment and third party service connection configuration. | Yes | No |
@@ -1499,13 +1538,13 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Delegated permissions
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Notifications.ReadWrite.CreatedByApp_ | Deliver and manage notifications for this app. | Allow the app to deliver its notifications on behalf of signed-in users. Also allows the app to read, update, and delete the user’s notification items for this app. |No |
+| _Notifications.ReadWrite.CreatedByApp_ | Deliver and manage notifications for this app. | Allow the app to deliver its notifications on behalf of signed-in users. Also allows the app to read, update, and delete the user's notification items for this app. |No |
 ### Remarks
 *Notifications.ReadWrite.CreatedByApp* is valid for both Microsoft accounts and work or school accounts.
 The *CreatedByApp* constraint associated with this permission indicates that the service will apply implicit filtering to results based on the identity of the calling app, either the Microsoft account app ID or a set of app IDs configured for a cross-platform application identity.
 ### Example usage
 #### Delegated
-* _Notifications.ReadWrite.CreatedByApp_: Publish a user-centric notification, which might then be delivered to the user’s multiple application clients running on different endpoints. (POST /me/notifications/).
+* _Notifications.ReadWrite.CreatedByApp_: Publish a user-centric notification, which might then be delivered to the user's multiple application clients running on different endpoints. (POST /me/notifications/).
 
 ---
 
@@ -1553,6 +1592,20 @@ Administrators can configure [application access policy](cloud-communication-onl
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+---
+
+## On-premises directory synchronization permissions
+
+### Delegated permissions
+
+| Permission                                   | Display String                                                       | Description                                                                                                                                  | Admin Consent Required | Microsoft Account supported |
+| :------------------------------------------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| OnPremDirectorySynchronization.Read.All      | Read all on-premises directory synchronization information           | Allows the app to read all on-premises directory synchronization information for the organization, on behalf of the signed-in user           | Yes                    | No                          |
+| OnPremDirectorySynchronization.ReadWrite.All | Read and write all on-premises directory synchronization information | Allows the app to read and write all on-premises directory synchronization information for the organization, on behalf of the signed-in user | Yes                    | No                          |
+
+### Application permissions
+
+None.
 ---
 
 ## On-premises publishing profiles permissions
@@ -1827,7 +1880,6 @@ _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for 
 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
----
 ## Records management permissions
 
 #### Delegated permissions
@@ -1935,7 +1987,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Schedule management permissions ([private preview](#permissions-availability-status))
+## Schedule management permissions
 
 #### Application permissions
 
@@ -1971,6 +2023,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _Acronym.Read.All_ | Read all acronyms | Allows the app to read all acronyms on behalf of a signed-in user. | No | No |
 | _Bookmark.Read.All_ | Read all bookmarks | Allows the app to read all bookmarks on behalf of a signed-in user. | No | No |
+| _QnA.Read.All_ | Read all qnas | Allows the app to read all question and answer sets on behalf of a signed-in user. | No | No |
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
@@ -2028,12 +2081,13 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization for the signed-in user. |  Yes | No |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update attack simulation data of an organization |Allows the app to read, create, and update attack simulation and training data for an organization for the signed-in user. |  Yes | No |
 | _SecurityActions.Read.All_        |  Read your organization's security actions | Allows the app to read your organization’s security actions on behalf of the signed-in user. | Yes  | No |
 | _SecurityActions.ReadWrite.All_   | Read and update your organization's security actions | Allows the app to read or update your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
 | _SecurityAlert.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
 | _SecurityAlert.ReadWrite.All_ | Read and write to alerts | Allows the app to read and write alerts, on behalf of the signed-in user. | Yes | No |
-| _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. | Yes  | No |
-| _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. | Yes  | No |
+| _SecurityEvents.Read.All_        |  Read your organization's security events | Allows the app to read your organization's security events on behalf of the signed-in user. | Yes  | No |
+| _SecurityEvents.ReadWrite.All_   | Read and update your organization's security events | Allows the app to read your organization's security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. | Yes  | No |
 | _SecurityIncident.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
 | _SecurityIncident.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Manage threat indicators this app creates or owns |Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete) on behalf of the signed-in user.  | Yes  | No |
@@ -2045,12 +2099,13 @@ Search configuration permissions are only valid for work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _AttackSimulation.Read.All_ |Read attack simulation data of an organization | Allows the app to read attack simulation and training data for an organization without a signed-in user.|  Yes |
-| _SecurityActions.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security actions. | Yes  |
+| _AttackSimulation.ReadWrite.All_ |Read, create, and update all attack simulation data of an organization | Allows the app to read, create, and update attack simulation and training data for an organization without a signed-in user.|  Yes |
+| _SecurityActions.Read.All_        |  Read and write your organization’s security events |Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user. | Yes  |
 | _SecurityActions.ReadWrite.All_   | Create and read your organization's security actions | Allows the app to read or create security actions, without a signed-in user. | Yes  |
 | _SecurityAlert.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
 | _SecurityAlert.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
-| _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events. | Yes  |
-| _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events. Also allows the app to update editable properties in security events. | Yes  |
+| _SecurityEvents.Read.All_        |  Read your organization's security events | Allows the app to read your organization's security events. | Yes  |
+| _SecurityEvents.ReadWrite.All_   | Read and update your organization's security events | Allows the app to read your organization's security events. Also allows the app to update editable properties in security events. | Yes  |
 | _SecurityIncident.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
 | _SecurityIncident.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Manage threat indicators this app creates or owns | Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete), without a signed-in user.  It cannot update any threat indicators it does not own. | Yes  |
@@ -2099,7 +2154,7 @@ Security permissions are valid only on work or school accounts.
 
 ---
 
-## Short Notes permissions ([private preview](#permissions-availability-status))
+## Short Notes permissions
 
 #### Delegated permissions
 
@@ -2155,6 +2210,33 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 
 ---
 
+## Synchronization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes | No |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+Synchronization.Read.All | Read all Azure AD synchronization data | Allows the app to read synchronization data on behalf of the signed-in user. | Yes |
+Synchronization.ReadWrite.All | Read and write all Azure AD synchronization data | Allows the app to read and write synchronization data on behalf of the signed-in user. | Yes |
+
+### Example usage
+
+#### Delegated
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`PUT /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema`).
+
+#### Application
+- _Synchronization.Read.All_: Get the list of subject rights request available to the user (`GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/`).
+- _Synchronization.ReadWrite.All_: Create a subject rights request (`POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/starta`).
+
+
 ## Subject rights request permissions
 
 #### Delegated permissions
@@ -2180,31 +2262,38 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user’s tasks and task lists (preview) | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
+| _Tasks.Read_ | Read user's tasks and task lists | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. | No | Yes |
 | _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ | Create, read, update, and delete user’s tasks and task lists (preview) | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
+| _Tasks.ReadWrite_ | Create, read, update, and delete user's tasks and task lists | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. | No | Yes |
 | _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Tasks.Read.All_ | Read all users' tasks and tasklist | Allows the app to read all users' tasks and task lists in your organization, without a signed-in user. | Yes |
+| _Tasks.ReadWrite.All_ | Read and write all users' tasks and tasklists | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | Yes |
+
 
 ### Remarks
-_Tasks_ permissions are used to control access for To Do tasks and Outlook tasks(deprecated). Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_Tasks_ permissions are used to control access for To Do tasks, Planner tasks, and Outlook tasks(deprecated).
 
 _Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
 
 ### Example usage
 #### Delegated
 
-* _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
+* _Tasks.Read_: Get all Planner tasks assigned to the current user (`GET /me/planner/tasks`).
 * _Tasks.Read.Shared_: Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outlook/tasks`).
-* _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite_: Create a Planner task (`POST /planner/tasks`).
 * _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+#### Application
+
+* _Tasks.Read.All_: Get all Planner plans in a group (`GET /groups/{id}/planner/plans`)
+* _Tasks.ReadWrite.All_: Delete a Planner task (`Delete /planner/tasks/{id}`)
 
 ---
 
@@ -2236,16 +2325,28 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Team.ReadBasic.All_ | Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.	| No | No |
+| _Team.ReadBasic.All_ | Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.  | No | No |
 | _Team.Create_  | Create teams | Create teams, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions 
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Team.ReadBasic.All_ | Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
+| _Team.ReadBasic.All_ | Get a list of all teams | Get a list of all teams, without a signed-in user.  | Yes | No |
 | _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
 | _Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
+
+## Team templates permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read_ | TeamTemplates.Read is "Sign-in and read Teams templates available for this user" | Allows read of the available Teams Templates for the user | No | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamTemplates.Read.All_ | Read all available Teams Templates | Allows read of the available Teams Templates, without signed user	| No | No |
 
 ## Team settings permissions
 
@@ -2253,15 +2354,16 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamSettings.Read.All_ | Read teams' settings | Read this team's settings, on behalf of the signed-in user.	| Yes | No |
-| _TeamSettings.ReadWrite.All_ | Read and change teams' settings | Read and change all teams' settings, on behalf of the signed-in user.	| Yes | No |
+| _TeamSettings.Read.All_ | Read teams' settings | Read this team's settings, on behalf of the signed-in user.  | Yes | No |
+| _TeamSettings.ReadWrite.All_ | Read and change teams' settings | Read and change all teams' settings, on behalf of the signed-in user.  | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
-| _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
+| _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.  | Yes | No |
+| _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.  | Yes | No |
+
 
 ## Teams activity permissions
 
@@ -2269,14 +2371,14 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ ([private preview](#permissions-availability-status)) | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
+| _TeamsActivity.Read_ | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.  | No | No |
 | _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ ([private preview](#permissions-availability-status)) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
+| _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
 | _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Yes | No |
 
 ## Teams app permissions (deprecated)
@@ -2296,7 +2398,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsApp.Read.All_ (**Deprecated**)| Read all users' installed Teams apps | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. | Yes | No |
-| _TeamsApp.ReadWrite.All_ (**Deprecated**)| Manage all users' Teams apps  | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings. 	| Yes | No |
+| _TeamsApp.ReadWrite.All_ (**Deprecated**)| Manage all users' Teams apps  | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings.   | Yes | No |
 
 ## Teams app installation permissions
 
@@ -2340,14 +2442,14 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices on behalf of the signed-in user.	| Yes | No |
-| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices on behalf of the signed-in user. 	| Yes | No |
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices on behalf of the signed-in user.  | Yes | No |
+| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices on behalf of the signed-in user.   | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices, without a signed-in user.	| Yes | No |
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices, without a signed-in user.  | Yes | No |
 | _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices, without a signed-in user. | Yes | No |
 
 ## Team member permissions 
@@ -2363,7 +2465,7 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
+| _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user.  | Yes | No |
 | _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
 ## Team resource-specific consent permissions
@@ -2374,11 +2476,11 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamSettings.Read.Group_ | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
 | _TeamSettings.ReadWrite.Group_ | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
-| _ChannelSettings.Read.Group_ | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| _ChannelSettings.ReadWrite.Group_ | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _ChannelSettings.Read.Group_ | Read the names, descriptions, and settings of this team's channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _ChannelSettings.ReadWrite.Group_ | Update the names, descriptions, and settings of this team's channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
 | _Channel.Create.Group_ | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
 | _Channel.Delete.Group_ | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
-| _ChannelMessage.Read.Group_ | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
+| _ChannelMessage.Read.Group_ | Read the team's channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
 | _TeamsAppInstallation.Read.Group_ | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
 | _TeamsTab.Read.Group_ | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
 | _TeamsTab.Create.Group_ | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
@@ -2386,7 +2488,7 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Delete.Group_ | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
 | _TeamMember.Read.Group_ | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
 | _Member.Read.Group_ | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
-| _Owner.Read.Group_| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+| _Owner.Read.Group_| Read this group's owners.  | Read this group's owners, without a signed-in user. |No | No |
 | _File.Read.Group_| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
 | _TeamsActivity.Send.Group_| Send activity feed notifications to users in this team. | Allows the app to create new notifications in the teamwork activity feeds of the users in this team, without a signed-in user. | No | No |
 
@@ -2414,8 +2516,8 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings.	| Yes | No |
-| _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. 	| Yes | No |
+| _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings.  | Yes | No |
+| _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings.   | Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, on behalf of the signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
  _TeamsTab.ReadWriteSelfForChat_ | Allow the Teams app to manage only its own tabs in chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs in chats the signed-in user can access. | Yes | No |
  _TeamsTab.ReadWriteSelfForTeam_ | Allow the Teams app to manage only its own tabs in teams. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs to teams the signed-in user can access. | Yes | No |
@@ -2425,7 +2527,7 @@ _TeamsTab.ReadWriteSelfForUser_ | Allow the Teams app to manage only its own tab
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Read the names and settings of tabs inside any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs.	| Yes | No |
+| _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Read the names and settings of tabs inside any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs.  | Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Read and write tabs in any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs. | Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, without a signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
 _TeamsTab.ReadWriteSelfForChat.All_ | Allow the Teams app to manage only its own tabs for all chats. | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any chat, without a signed-in user. | Yes | No |
@@ -2438,14 +2540,14 @@ _TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams, on behalf of the signed-in user.	| Yes | No |
+| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams, on behalf of the signed-in user.  | Yes | No |
 | _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
+| _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.  | Yes | No |
 | _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
 
 
@@ -2455,13 +2557,13 @@ _TeamsTab.ReadWriteSelfForUser.All_ | Allow the Teams app to manage only its own
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, on behalf of the signed-in user.	| Yes | No |
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, on behalf of the signed-in user.  | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes |
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.  | Yes |
 
 
 ## Terms of use permissions
@@ -2632,6 +2734,7 @@ Threat hunting permissions are valid only on work or school accounts.
 | _User.Read.All_  |     Read all users' full profiles           | Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. | Yes | No |
 | _User.ReadWrite.All_ |     Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Yes | No |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes | No |
+| _User.EnableDisableAccount.All_       |    Enable and disable user accounts | Allows the app to enable and disable users' accounts, on behalf of the signed-in user.| Yes | No |
 | _User.Export.All_       |    Export users' data | Allows the app to export an organizational user's data, when performed by a Company Administrator.| Yes | No |
 | _User.ManageIdentities.All_       |    Manage user identities | Allows an application to read, update and delete identities that are associated with a user's account, that the signed-in user has access to. This controls which identities your users can sign-in with. | Yes | No |
 | _User-LifeCycleInfo.Read.All_       |    Read all users' lifecycle information | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, on behalf of the signed-in user. | Yes | No |
@@ -2645,6 +2748,7 @@ Threat hunting permissions are valid only on work or school accounts.
 | _User.Read.All_ |    Read all users' full profiles | Allows the app to read the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.| Yes |
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
+| _User.EnableDisableAccount.All_       |    Enable and disable user accounts | Allows the app to enable and disable users' accounts, without a signed-in user.| Yes |
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |
 | _User.ManageIdentities.All_       |    Manage all user identities | Allows an application to read, update and delete identities that are associated with a user's account, without a signed in user. This controls which identities users can sign-in with. |  Yes |
 | _User-LifeCycleInfo.Read.All_       |    Read all users' lifecycle information | Allows the app to read the lifecycle information like employeeLeaveDateTime of users in your organization, without a signed-in user. |  Yes |
@@ -2691,8 +2795,10 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 
 - displayName
 - givenName
+- id
 - mail
 - photo
+- securityIdentifier
 - surname
 - userPrincipalName
 
@@ -2737,9 +2843,9 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 #### Delegated
 * _UserActivity.ReadWrite.CreatedByApp_: Get a list of recent unique user activities based on associated history items published in the last day. (GET /me/activities/recent).
 * _UserActivity.ReadWrite.CreatedByApp_: Publish or update a user activity which may be resumed by the user of the application. (PUT /me/activities/%2Farticle%3F12345).
-*	_UserActivity.ReadWrite.CreatedByApp_: Publish or update a history item for a specified user activity in order to represent the period of user engagement. (PUT /me/activities/{id}/historyItems/{id}).
-*	_UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
-*	_UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
+*  _UserActivity.ReadWrite.CreatedByApp_: Publish or update a history item for a specified user activity in order to represent the period of user engagement. (PUT /me/activities/{id}/historyItems/{id}).
+*  _UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
+*  _UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
 
 ---
 
@@ -2750,16 +2856,16 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 |Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
 |_UserAuthenticationMethod.Read_         |Read own authentication methods       |Allows the app to read the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
 |_UserAuthenticationMethod.ReadWrite_    |Manage own authentication methods     |Allows the app to read and write the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
 
 #### Application permissions
 
 |Permission                              |Display String                        |Description        |Admin Consent Required |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
-|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to read and write authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to read and write authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|
 
 ### Remarks
 
@@ -2807,28 +2913,28 @@ This section shows some common scenarios that target [user](/graph/api/resources
 
 ### Access scenarios on the User resource
 
-| **App tasks involving User**	 |  **Required permissions** | **Permission strings** |
+| **App tasks involving User**   |  **Required permissions** | **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
-| App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience	 | _User.ReadBasic.All_  |  Read all user's basic profiles |
-| App wants to read complete user profile for signed in user (see direct reports, and manager, and so on)	 | _User.Read_ | Enable sign-in and read user profile|
-| App wants to read complete user profile all users	 | _User.Read.All_ |  Read all user's full profiles   |
-| App wants to read files, mail and calendar information for the signed in user	 | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
+| App wants to read other users' basic information (only display name and picture), for example to show in a people picking experience   | _User.ReadBasic.All_  |  Read all user's basic profiles |
+| App wants to read complete user profile for signed in user (see direct reports, and manager, and so on)   | _User.Read_ | Enable sign-in and read user profile|
+| App wants to read complete user profile all users   | _User.Read.All_ |  Read all user's full profiles   |
+| App wants to read files, mail and calendar information for the signed in user   | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Enable sign-in and read user profile, Read users' files,  Read user mail,  Read user calendars |
 | App wants to read the signed-in user's (my) files and files that other users have shared with the signed-in user (me). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Enable sign-in and read user profile, Read users' files,  Read items in all site collections |
-| App wants to read and write complete user profile for signed in user	 | _User.ReadWrite_ | Read and write access to user profile |
-| App wants to read and write complete user profile all users	 | _User.ReadWrite.All_ | Read and write all user's full profiles |
-| App wants to read and write files, mail and calendar information for the signed in user	 | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
+| App wants to read and write complete user profile for signed in user   | _User.ReadWrite_ | Read and write access to user profile |
+| App wants to read and write complete user profile all users   | _User.ReadWrite.All_ | Read and write all user's full profiles |
+| App wants to read and write files, mail and calendar information for the signed in user   | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Read and write access to user profile,  Read and write access to user profile,  Read and write access to user mail, Have full access to user calendars |
 | App wants to submit a data policy operation request to export a user's personal data | _User.Export.All_ | Export a user'a personal data. |
 
 
 ### Access scenarios on the Group resource
 
-| **App tasks involving Group**	 |  **Required permissions** |  **Permission strings** |
+| **App tasks involving Group**   |  **Required permissions** |  **Permission strings** |
 |:-------------------------------|:---------------------|:---------------|
-| App wants to read basic group info (only display name and picture), for example to show in a group picking experience	 | _Group.Read.All_  | Read all groups|
+| App wants to read basic group info (only display name and picture), for example to show in a group picking experience   | _Group.Read.All_  | Read all groups|
 | App wants to read all content in all Microsoft 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | Read items in all site collections, Read all groups|
-| App wants to read and write all content in all Microsoft 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
-| App wants to discover (find) a Microsoft 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
-| App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
+| App wants to read and write all content in all Microsoft 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
+| App wants to discover (find) a Microsoft 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.   | _Group.ReadWrite.All_ | Read and write all groups|
+| App wants to create a group through AAD Graph |   _Group.ReadWrite.All_ | Read and write all groups|
 
 
 ## All permissions and IDs

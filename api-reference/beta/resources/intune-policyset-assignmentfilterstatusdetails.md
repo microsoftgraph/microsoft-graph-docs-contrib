@@ -1,7 +1,7 @@
 ---
 title: "assignmentFilterStatusDetails resource type"
 description: "Represent status details for device and payload and all associated applied filters."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -70,8 +70,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-

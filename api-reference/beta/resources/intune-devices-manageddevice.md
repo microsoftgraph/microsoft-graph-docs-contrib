@@ -1,7 +1,7 @@
 ---
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -59,6 +59,8 @@ Devices that are managed or pre-enrolled through Intune
 |[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
 |[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Remove device from Device Firmware Configuration Interface management|
 |[initiateMobileDeviceManagementKeyRecovery action](../api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md)|None|Perform MDM key recovery and TPM attestation|
+|[initiateOnDemandProactiveRemediation action](../api/intune-devices-manageddevice-initiateondemandproactiveremediation.md)|None|Perform On Demand Proactive Remediation|
+|[rotateLocalAdminPassword action](../api/intune-devices-manageddevice-rotatelocaladminpassword.md)|None|Initiates a manual rotation for the local admin password on the device|
 |[getOemWarranty function](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Not yet documented|
 |[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection|Not yet documented|
 |[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream|Not yet documented|
@@ -90,7 +92,7 @@ Devices that are managed or pre-enrolled through Intune
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
-|activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
+|activationLockBypassCode|String|The code that allows the Activation Lock on managed device to be bypassed. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity in LIST call. Individual GET call with select query options is needed to retrieve actual values. Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
 |azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only.|
 |azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only.|
@@ -135,7 +137,7 @@ Devices that are managed or pre-enrolled through Intune
 |notes|String|Notes on the device created by IT Admin. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select.  $Search is not supported.|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
-|ethernetMacAddress|String|Ethernet MAC. This property is read-only.|
+|ethernetMacAddress|String|Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values. Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is not supported. Read-only. This property is read-only.|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. Return default value 0 in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select. Default value is 0. Read-only. This property is read-only.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|String|Specification version. This property is read-only.|
@@ -156,6 +158,7 @@ Devices that are managed or pre-enrolled through Intune
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. This property is read-only.|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
+|deviceHealthScriptStates|[deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) collection|Results of device health scripts that ran for this device. Default is empty list. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -381,9 +384,3 @@ Here is a JSON representation of the resource.
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
-
-
-
-
-
-

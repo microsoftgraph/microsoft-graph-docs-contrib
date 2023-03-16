@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var cloudPcExternalPartnerSetting = new CloudPcExternalPartnerSetting
+var requestBody = new CloudPcExternalPartnerSetting
 {
-	EnableConnection = true
+	OdataType = "#microsoft.graph.cloudPcExternalPartnerSetting",
+	EnableConnection = true,
 };
+var result = await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings["{cloudPcExternalPartnerSetting-id}"].PatchAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.ExternalPartnerSettings["{cloudPcExternalPartnerSetting-id}"]
-	.Request()
-	.UpdateAsync(cloudPcExternalPartnerSetting);
 
 ```

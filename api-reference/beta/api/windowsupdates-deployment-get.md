@@ -1,7 +1,7 @@
 ---
 title: "Get deployment"
 description: "Read the properties and relationships of a deployment object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 

@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestFilter := "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
-requestParameters := &graphconfig.TabsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TabsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new GroupsRequestBuilderGetQueryParameters();
-$queryParameters->search = "\"displayName:OneVideo OR mail:onevideo\"";
+$queryParameters->search = "\"displayName:OneVideo\" OR \"mail:onevideo\"";
 
 $requestConfiguration->queryParameters = $queryParameters;
 

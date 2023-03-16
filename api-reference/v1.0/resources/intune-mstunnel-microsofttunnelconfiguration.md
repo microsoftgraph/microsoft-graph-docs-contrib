@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelConfiguration resource type"
 description: "Entity that represents a collection of Microsoft Tunnel settings"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -33,6 +33,8 @@ Entity that represents a collection of Microsoft Tunnel settings
 |network|String|The subnet that will be used to allocate virtual address for the clients|
 |dnsServers|String collection|The DNS servers that will be used by the clients|
 |defaultDomainSuffix|String|The Default Domain appendix that will be used by the clients|
+|routeIncludes|String collection|The routes that will be routed by the server|
+|routeExcludes|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
@@ -62,6 +64,12 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "defaultDomainSuffix": "String",
+  "routeIncludes": [
+    "String"
+  ],
+  "routeExcludes": [
+    "String"
+  ],
   "splitDNS": [
     "String"
   ],
@@ -80,7 +88,3 @@ Here is a JSON representation of the resource.
   "disableUdpConnections": true
 }
 ```
-
-
-
-

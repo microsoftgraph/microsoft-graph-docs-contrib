@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewChatMessage()
 messageType := graphmodels.MESSAGE_CHATMESSAGETYPE 
@@ -267,6 +267,221 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+
+
+chatMessageHistoryItem := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:30.489Z")
+chatMessageHistoryItem.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "angry"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem.SetReaction(reaction)
+chatMessageHistoryItem1 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:32.489Z")
+chatMessageHistoryItem1.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem1.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "laugh"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem1.SetReaction(reaction)
+chatMessageHistoryItem2 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T02:17:14.67Z")
+chatMessageHistoryItem2.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem2.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem2.SetReaction(reaction)
+chatMessageHistoryItem3 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T02:34:40.3Z")
+chatMessageHistoryItem3.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem3.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "4c9041b7-449a-40f7-8855-56da239b9fd1"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem3.SetReaction(reaction)
+chatMessageHistoryItem4 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:25.489Z")
+chatMessageHistoryItem4.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem4.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem4.SetReaction(reaction)
+chatMessageHistoryItem5 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:31.489Z")
+chatMessageHistoryItem5.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem5.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "heart"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem5.SetReaction(reaction)
+chatMessageHistoryItem6 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:33.489Z")
+chatMessageHistoryItem6.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem6.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "sad"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem6.SetReaction(reaction)
+chatMessageHistoryItem7 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:34.489Z")
+chatMessageHistoryItem7.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.SURPRISED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem7.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "sad"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem7.SetReaction(reaction)
+
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
+	chatMessageHistoryItem,
+	chatMessageHistoryItem1,
+	chatMessageHistoryItem2,
+	chatMessageHistoryItem3,
+	chatMessageHistoryItem4,
+	chatMessageHistoryItem5,
+	chatMessageHistoryItem6,
+	chatMessageHistoryItem7,
+
+}
+requestBody.SetMessageHistory(messageHistory)
 
 result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
