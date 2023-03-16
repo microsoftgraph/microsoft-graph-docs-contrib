@@ -2073,7 +2073,7 @@ items:
             items:
             - name: Get
               href: api/servicestoragequotabreakdown-get.md
-              name: List
+              - name: List
               href: api/unifiedstoragequota-list-services.md
           - name: Unified Storage Quota
             href: resources/unifiedstoragequota.md
