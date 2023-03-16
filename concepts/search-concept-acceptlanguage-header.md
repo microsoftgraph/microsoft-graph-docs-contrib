@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Supported language codes
 
-Fpr Microsoft Search APIs in Microsoft Graph, the `Accept-Language` HTTP request header provides a list of acceptable human languages for the response. The value is used for localization on the server side. The following table lists the supported `Accept-Language` header values.
+For Microsoft Search APIs in Microsoft Graph, the `Accept-Language` HTTP request header provides a list of acceptable human languages for the response. The value is used for localization on the server side. The following table lists the supported `Accept-Language` header values.
 
 | Accept-Language string | Language |
 |:---|:---|
