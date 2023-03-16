@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
-|assignmentType|[assignmentType](../resources/assignmentType.md)|**assignmentType for the course activity (required or recommended)**
+|assignmentType|assignmentType|**assignmentType for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`**
 |registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
 |startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
 |assignerUserId|String|**The user id of the assigner**
@@ -73,13 +73,7 @@ None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.learningCourseActivity",
-  "openType": false
-}
--->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.learningCourseActivity",

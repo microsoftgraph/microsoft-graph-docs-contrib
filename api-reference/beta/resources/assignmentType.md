@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the learning assignment type (required/recommended) of an assigned learningCourseActivity record of a user.
+Represents the learning assignment type (required/recommended/UnknownFutureValue) of an assigned learningCourseActivity record of a user.
 
 Namespace: microsoft.graph
 
@@ -20,3 +20,5 @@ Namespace: microsoft.graph
 a. required - For a required assigned course activity.
 
 b. recommended - For a recommended assigned course activity.
+
+c. UnknownFutureValue
