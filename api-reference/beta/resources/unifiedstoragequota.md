@@ -26,7 +26,7 @@ The unifiedStorageQuota resource provides an aggregate view of a user's quota in
 |id|String|The user id.|
 |manageWebUrl|String| A URL that can be used in a browser to manage the breakdown. Read-only. |
 |remaining|Int64| Total space remaining before reaching the quota limit in bytes. |
-|state|[usqState](#usqstate-values)| Enumeration value that indicates the state of the storage space. |
+|state|[usqState](#usqstate-values)| Indicates the state of the storage space. The possible values are: 'normal', 'nearing', 'critical', 'full' and 'overLimit'.|
 |total|Int64| Total allowed storage space in bytes. |
 |used|Int64| Total space used in bytes. |
 
