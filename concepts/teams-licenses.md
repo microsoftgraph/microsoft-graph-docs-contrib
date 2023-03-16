@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Payment models and licensing requirements for Microsoft Teams APIs
 
-This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered Microsoft 365 APIs, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](metered-api-overview.md).
+This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered APIs and services in Microsoft Graph, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. 
 
