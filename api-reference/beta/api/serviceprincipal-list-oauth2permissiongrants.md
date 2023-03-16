@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oauth2PermissionGran
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

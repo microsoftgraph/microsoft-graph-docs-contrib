@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}
 
 ---
 
-
 ##### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -210,7 +209,6 @@ GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 

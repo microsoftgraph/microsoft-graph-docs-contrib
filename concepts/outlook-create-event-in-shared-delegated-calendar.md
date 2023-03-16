@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 
 ---
 
-
 Notice a successful response includes the response code HTTP 200, Adele's own primary calendar, and a copy of the calendar delegated by Alex in Adele's mailbox, with the following properties:
 
 - **canShare** is false since Adele is only a delegate and not the calendar owner.
@@ -205,7 +204,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage) properties:
 
@@ -446,7 +444,6 @@ Content-type: application/json
 
 ---
 
-
 A successful response returns HTTP 202 Accepted.
 
 <!-- {
@@ -504,7 +501,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage) properties:
 
@@ -627,7 +623,6 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [event](/graph/api/resources/event) properties:
 

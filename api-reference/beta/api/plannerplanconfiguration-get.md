@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

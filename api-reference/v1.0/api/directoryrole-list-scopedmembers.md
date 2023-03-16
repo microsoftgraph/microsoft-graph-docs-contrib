@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/43a63cc2-582b-4d81-a79d-1591
 
 ---
 
-
 #### Response
 The following example shows the response. 
 

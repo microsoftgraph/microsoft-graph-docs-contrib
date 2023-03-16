@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachmentItem = new AttachmentItem
+var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Attachments.CreateUploadSession.CreateUploadSessionPostRequestBody
 {
-	AttachmentType = AttachmentType.File,
-	Name = "scenary",
-	Size = 7208534,
-	IsInline = true,
-	ContentId = "my_inline_picture"
+	AttachmentItem = new AttachmentItem
+	{
+		AttachmentType = AttachmentType.File,
+		Name = "scenary",
+		Size = 7208534L,
+		IsInline = true,
+		ContentId = "my_inline_picture",
+	},
 };
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.CreateUploadSession.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"].Attachments
-	.CreateUploadSession(attachmentItem)
-	.Request()
-	.PostAsync();
 
 ```
