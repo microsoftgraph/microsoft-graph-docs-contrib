@@ -1,6 +1,6 @@
 ---
 title: "removedState resource type"
-description: "Represents the deletion reason for a resource."
+description: "Represents the deletion reason for a participant resource from roster."
 author: "sasthana"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the deletion reason for a resource.
+Represents the deletion reason for a participant resource from roster.
 
 ## Properties
 

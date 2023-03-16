@@ -1,6 +1,6 @@
 ---
 title: "deltaParticipants resource type"
-description: "Delta Participants type that is published by Communications servers to notify changed participants since last update."
+description: "Represents a notification for the creation, update, or deletion of a participant in a meeting[Reference link HERE]. This resource is published by communications servers to notify changed participants since last update."
 author: "sasthana"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delta Participants type that is published by Communications servers to notify changed participants since last update.
+Represents a notification for the creation, update, or deletion of a participant in a meeting[Reference link HERE]. This resource is published by communications servers to notify changed participants since last update.
 
 ## Properties
 
 | Property       | Type                                     | Description                                |
 |:---------------|:-----------------------------------------|:-------------------------------------------|
-| sequenceNumber | Integer                                  | The sequence number for the roster update. |
-| participants   | [participant](participant.md) collection | Read-only. Nullable.                       |
+| sequenceNumber | Int64                                  | The sequence number for the roster update. |
+| participants   | [participant](participant.md) collection | The collection of participants that were updated since the last roster update. |
 
 ## JSON representation
 
@@ -33,6 +33,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deltaParticipants",
   "participants": [{"@odata.type": "#microsoft.graph.participant"}],
-  "sequenceNumber": "Integer"
+  "sequenceNumber": 1
 }
 ```

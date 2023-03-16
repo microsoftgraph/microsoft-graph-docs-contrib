@@ -1332,7 +1332,8 @@ Content-Type: application/json
               ],
               "isMuted": true,
               "isInLobby": false,
-              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c"
+              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c",
+              "rosterSequenceNumber": 1
             },
             {
               "@odata.type": "#microsoft.graph.participant",
@@ -1358,7 +1359,11 @@ Content-Type: application/json
               ],
               "isMuted": false,
               "isInLobby": false,
-              "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1",
+              "rosterSequenceNumber": 1,
+              "removedState": {
+                "reason": "Removed from roster"
+              }
             }
           ],
           "sequenceNumber": 1
