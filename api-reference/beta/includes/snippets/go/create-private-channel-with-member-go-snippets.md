@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewChannel()
 membershipType := graphmodels.PRIVATE_CHANNELMEMBERSHIPTYPE 
@@ -23,7 +23,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')", 
+	"odataBind" : "https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
