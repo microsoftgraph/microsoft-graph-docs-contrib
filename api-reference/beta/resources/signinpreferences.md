@@ -16,14 +16,17 @@ Namespace: microsoft.graph
 **TODO: Add Description**
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system is enabled or not.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
