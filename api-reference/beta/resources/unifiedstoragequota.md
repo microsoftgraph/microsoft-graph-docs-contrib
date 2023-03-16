@@ -19,7 +19,7 @@ The unifiedStorageQuota resource provides an aggregate view of a user's quota in
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get unifiedStorageQuota](../api/unifiedstoragequota-get.md)|[unifiedStorageQuota](../resources/unifiedstoragequota.md)|Read the properties and relationships of a [unifiedStorageQuota](../resources/unifiedstoragequota.md) object.|
-|[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown]../resources/servicestoragequotabreakdown.md) collection|Get the list of services in serviceStorageQuotaBreakdown.|
+|[List serviceStorageQuotaBreakdown](../api/unifiedstoragequota-list-services.md)| [serviceStorageQuotaBreakdown](../resources/servicestoragequotabreakdown.md) collection|Get the list of services in serviceStorageQuotaBreakdown.|
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
