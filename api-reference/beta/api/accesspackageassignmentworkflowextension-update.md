@@ -67,22 +67,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/85a68644-325e-29ec-2dc5-2f617fcf7ded
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentWorkflowExtension",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
-  }
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only"
 }
 ```
 
@@ -101,26 +92,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessPackageAssignmentWorkflowExtension",
-  "id": "85a68644-325e-29ec-2dc5-2f617fcf7ded",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  },
-  "createdBy": "String",
-  "lastModifiedBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "callbackConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.accessPackageAssignmentWorkflowExtension",
+      "id":"78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0",
+      "displayName":"test_action_0127_email",
+      "description": "this is for graph testing only",
+      "createdDateTime":"2022-01-24T21:48:57.15Z",
+      "lastModifiedDateTime":"2022-01-24T21:55:44.953Z",
+      "clientConfiguration":null,
+      "endpointConfiguration":{
+         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
+         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
+         "resourceGroupName":"test",
+         "logicAppWorkflowName":"elm-extension-email",
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/7ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+      },
+      "authenticationConfiguration":{
+         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
+      }
+   }
 }
 ```
 

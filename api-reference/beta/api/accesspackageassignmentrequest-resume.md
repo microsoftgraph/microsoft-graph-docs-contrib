@@ -76,7 +76,7 @@ Content-Type: application/json
   "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
   "data": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestCallbackData",
-    "stage": "AssignmentRequestCreated",
+    "stage": "assignmentRequestCreated",
     "customExtensionStageInstanceId": "957d0c50-466b-4840-bb5b-c92cea7141ff",
     "customExtensionStageInstanceDetail": "This user is all verified"
   }
