@@ -1,13 +1,14 @@
 ---
-title: "Supported Language Codes"
-description: "Supported Language Codes in Microsoft Graph Search API."
+title: "Supported language codes"
+description: "Get a list of the supported language codes for the Microsoft Search API in Microsoft Graph."
 author: "cxiang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Supported Language Codes
-The Accept-Language request HTTP header indicates list of acceptable human languages for response. The value will be leveraged for localization on server side. The following list shows the Accept-Language header supported by Microsoft Graph APIs.
+# Supported language codes
+
+Fpr Microsoft Search APIs in Microsoft Graph, the `Accept-Language` HTTP request header provides a list of acceptable human languages for the response. The value is used for localization on the server side. The following table lists the supported `Accept-Language` header values.
 
 | Accept-Language string | Language |
 |:---|:---|
@@ -126,10 +127,10 @@ The Accept-Language request HTTP header indicates list of acceptable human langu
 |zh-Hant|Chinese (Traditional)|
 |zu|isiZulu|
 
-## Examples
-We will support the format language-region e.g. en-us. Only the first value is used for language related processing.
+## Example
+The following example shows the Accept-Language header with the value `en-us`. Only the first value provided is used for language-related processing.
 
-```HTTP
+```http
 POST /search/query
 Content-Type: application/json
 Accept-Language: en-us
@@ -138,6 +139,6 @@ Accept-Language: en-us
 ## Known limitations
 - Compliance with HTTP standards.
 
-## Next steps
+## See also
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
