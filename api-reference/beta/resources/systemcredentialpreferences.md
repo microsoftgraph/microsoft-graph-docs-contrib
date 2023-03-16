@@ -18,10 +18,11 @@ Represents a resource that dynamically detects and prompts users with the users 
 ## Properties
 
 |Property|Type|Description|
-|state|microsoft.graph.advancedConfigState|microsoft.graph.advancedConfigState|
-|includeTargets|Collection(microsoft.graph.includeTarget)|Users and groups included in the system preferred authentication method experience.|
-|excludeTargets|Collection(microsoft.graph.includeTarget)|Users and groups excluded from the system preferred authentication method experience.|
-|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with the most preferred credential for multi factor.|
+|:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups excluded from the preferred authentication method experience of the system.|
+|includeTargets|[includeTarget](../resources/includetarget.md) collection|Users and groups included in the preferred authentication method experience of the system.|
+|state|advancedConfigState|Indicates whether the feature is enabled or disabled. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set, and uses the default behavior of Azure Active Directory for the setting. The default value is `disabled`.|
+
 ## Relationships
 
 None.
