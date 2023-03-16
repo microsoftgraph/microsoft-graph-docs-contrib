@@ -49,22 +49,22 @@ Inherits from [entity](../resources/entity.md).
 
 
 ## Error Conditions and Messages
-|Scenario|Method|HTTP Code|Code|Message|Details|
-|:---|:---|:---|:---|:---|:---|
-|Method not supported for entity|GET, DELETE, PATCH|405|MethodNotAllowed|**This method is not supported for this entity type. Reference the Microsoft Graph documentation for the methods applicable to this entity.**|
+|Scenario|Method|HTTP Code|Code|Message|
+|:---|:---|:---|:---|:---|
+|Method not supported for entity|GET, DELETE, PATCH|405|MethodNotAllowed|**This method is not supported for this entity type. Reference the Microsoft Graph documentation for the methods applicable to this entity.**
 |User doesn't have appropriate permission scope|GET, DELETE, PATCH|403|Forbidden|**Your account does not have access to this report or data. Please contact your global administrator to request access.** 
 |Forbidden|POST, GET, DELETE, PATCH|403|Forbidden|**You do not have a service plan adequate for this request.** 
 |Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**This provider isn't enabled for the given tenant.** 
 |Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.**
-|Bad Request|PATCH|400|BadRequest|**Required fields are missing**|[{"code": "badRequest","message": "Input Field {fieldName} is required"}]|
-|Bad Request|PATCH|400|BadRequest|**Input fields are invalid** |[{"code": "badRequest","message": "Input field {fieldName} is invalid"}]|
-|Multiple Field validations failed|PATCH, POST|400|BadRequest|**BadRequest**|[{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"},{"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName} length exceeded than {expectedLength}"}]|
-|Bad Request|DELETE, GET, PATCH|404|NotFound|**The requested assignment {id} doesn’t exist."**
+|Bad Request|PATCH|400|BadRequest|**Required fields are missing**
+|Bad Request|PATCH|400|BadRequest|**Input fields are invalid**
+|Multiple Field validations failed|PATCH, POST|400|BadRequest|**BadRequest - Input field shouldn't be empty or null**
+|Bad Request|DELETE, GET, PATCH|404|NotFound|**The requested assignment doesn’t exist."**
 |Internal Server Error|POST, GET, DELETE, PATCH|500|InternalServerError|**Internal Server Error.** 
-|Request throttled|POST, GET, DELETE, PATCH|429|Too Many Requests|**[{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}]**| 
-|Service Unavailable|POST, GET, DELETE, PATCH|503|Service Unavailable|**[{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}]**|
-|Forbidden|POST, PATCH|403|Forbidden|**The provider is not valid to create course activity for the given learning content**|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
-|Forbidden|POST, PATCH|403|Forbidden|**User License is not valid to perform the operation**|When the user for which Assignment is being created does not have a premium license|
+|Request throttled|POST, GET, DELETE, PATCH|429|Too Many Requests|**TooManyRequests in a accepted interval - Retry after x minutes**
+|Service Unavailable|POST, GET, DELETE, PATCH|503|Service Unavailable|**ServiceUnavailable - Retry after x minutes**
+|Forbidden|POST, PATCH|403|Forbidden|**The provider is not valid to create course activity for the given learning content - When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created**
+|Forbidden|POST, PATCH|403|Forbidden|**User License is not valid to perform the operation - When the user for which Assignment is being created does not have a premium license**
 
 
 
