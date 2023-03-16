@@ -53,11 +53,11 @@ You can specify the following properties when creating an **appManagementPolicy*
 | displayName  | String                                                      | The display name of the policy. Required.                                       |
 | description  | String                                                      | The description of the policy. Required.                                       |
 | isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.  Optional.                                    |
-| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. Optional. |
+| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. Optional. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code with the new [appManagementPolicy ](../resources/appmanagementpolicy.md) object in the response payload.
+If successful, this method returns a `201 Created` response code with the new [appManagementPolicy](../resources/appmanagementpolicy.md) object in the response payload.
 
 ## Examples
 
