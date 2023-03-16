@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSystemPreferredAuthenticationMethodEnabled|Boolean|**TODO: Add Description**|
+|isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system is enabled or not.|
 
 ## Relationships
 None.
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "isSystemPreferredAuthenticationMethodEnabled": "Boolean"
 }
 ```
-

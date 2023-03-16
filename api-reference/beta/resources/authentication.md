@@ -1,158 +1,62 @@
 ---
-title: "Update authenticationMethodsPolicy"
-description: "Update the properties of an authenticationMethodsPolicy object."
+title: "authentication resource type"
+description: "Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
-# Update authenticationMethodsPolicy
+# authentication resource type
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.
+Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Inherits from [entity](entity.md).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.AuthenticationMethod|
+## Methods
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+None.
 
-* Authentication Policy Administrator
-* Global Administrator
-
-## HTTP request
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-PATCH /policies/authenticationMethodsPolicy
-```
-
-## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
-
-## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods.
+## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
-|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with the most preferred credential for multi factor authentication.
+|id|String|Unique identifier for the **authentication**.|
+|signInPreferences|[signInPreferences](../resources/signinpreferences.md)||
 
-## Response
-If successful, this method returns a `200 OK` response code.
+## Relationships
 
-## Examples
+|Relationship|Type|Description|
+|:---|:---|:---|
+|emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Represents the email addresses registered to a user for authentication. |
+|fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
+|methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|
+|microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |
+|passwordlessMicrosoftAuthenticatorMethods|[passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) collection|Represents the Microsoft Authenticator Passwordless Phone Sign-in methods registered to a user for authentication.|
+|passwordMethods|[passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) collection|Represents the details of the password authentication method registered to a user for authentication.|
+|phoneMethods|[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) collection|Represents the phone registered to a user for authentication. |
+|temporaryAccessPassMethods|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.|
+|windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|
 
-### Request
-
-# [HTTP](#tab/http)
+## JSON representation
+The following is a JSON representation of the resource.
 <!-- {
-  "blockType": "request",
-  "name": "update_authenticationmethodspolicy"
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.authentication",
+  "openType": false
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
-Content-Type: application/json
-
+``` json
 {
-  "registrationEnforcement": {
-    "authenticationMethodsRegistrationCampaign": {
-        "snoozeDurationInDays": 1,
-        "state": "enabled",
-        "excludeTargets": [],
-        "includeTargets": [
-            {
-                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-                "targetType": "group",
-                "targetedAuthenticationMethod": "microsoftAuthenticator"
-            }
-        ]
-    }
-  }
-}
-```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationmethodspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationmethodspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authenticationmethodspolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationMethodsPolicy"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
-  "id": "authenticationMethodsPolicy",
-  "displayName": "Authentication Methods Policy",
-  "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-  "lastModifiedDateTime": "2021-05-25T01:08:08.6712279Z",
-  "policyVersion": "1.4",
-  "registrationEnforcement": {
-    "authenticationMethodsRegistrationCampaign": {
-      "snoozeDurationInDays": 1,
-      "state": "enabled",
-      "excludeTargets": [],
-      "includeTargets": [
-        {
-          "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-          "targetType": "group",
-          "targetedAuthenticationMethod": "microsoftAuthenticator"
-        }
-      ]
-    }
-  },
-  "systemCredentialPreferences": {
-    "@odata.type": "#microsoft.graph.systemCredentialPreferences",
-    "excludeTargets": [],
-    "id": "systemCredentialPreferences",
-    "includeTargets": [
-      {
-        "id": "all_users",
-        "targetType": "group"
-      }
-    ],
-    "state": "enabled"
+  "@odata.type": "#microsoft.graph.authentication",
+  "id": "String (identifier)",
+  "signInPreferences": {
+    "@odata.type": "microsoft.graph.signInPreferences"
   }
 }
 ```
