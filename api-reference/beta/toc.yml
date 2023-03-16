@@ -13709,19 +13709,19 @@ items:
                 href: api/accesspackageassignmentrequestworkflowextension-update.md
               - name: Delete
                 href: api/accesspackageassignmentrequestworkflowextension-delete.md
-           - name: Assignment workflow extension
-             href: resources/accesspackageassignmentworkflowextension.md
-             items:
-             - name: List
-               href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
-             - name: Create
-               href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
-             - name: Get
-               href: api/accesspackageassignmentworkflowextension-get.md
-             - name: Update
-               href: api/accesspackageassignmentworkflowextension-update.md
-             - name: Delete
-               href: api/accesspackageassignmentworkflowextension-delete.md
+            - name: Assignment workflow extension
+              href: resources/accesspackageassignmentworkflowextension.md
+              items:
+              - name: List
+                href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+              - name: Create
+                href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+              - name: Get
+                href: api/accesspackageassignmentworkflowextension-get.md
+              - name: Update
+                href: api/accesspackageassignmentworkflowextension-update.md
+              - name: Delete
+                href: api/accesspackageassignmentworkflowextension-delete.md
           - name: Access package resource request
             href: resources/accesspackageresourcerequest.md
             items:
