@@ -59,7 +59,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "assignedUsers",
                     "ChangeType": "Addition",
-                    "Description": "Added the **assignedUsers** relationship to the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta) resource.",
+                    "Description": "Added the **assignedUsers** relationship to the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta) resource.",
                     "Target": "cloudPcProvisioningPolicyAssignment"
                 }
             ],
