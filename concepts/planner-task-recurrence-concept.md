@@ -6,31 +6,29 @@ ms.localizationpriority: medium
 ms.prod: "planner"
 ---
 
-# Configuring task recurrence in Planner
+# Configuring task recurrence in planner
 
 This article describes how to use recurrence with [Planner task](/graph/api/resources/plannertask) to automate creation of repetitive tasks. The **recurrence** property on a Planner task allows users to automate creation of future tasks, representing a real-life task that needs to be completed repetitively.
 
-## User Scenarios
+## User scenarios
 
 The following scenarios are supported:
 
-1. Add recurrence behavior to an existing task, thus creating a recurring series. Alternately, create a new task with recurrence defined. The end result for both is the same: a recurring task, the first in a recurring series. Users specify the schedule for recurrence.
+- Add recurrence behavior to an existing task, thus creating a recurring series. Alternately, create a new task with recurrence defined. The end result for both is the same: a recurring task, the first in a recurring series. Users specify the schedule for recurrence.
 
-2. Edit the recurrence schedule for an existing recurring series.
+- Edit the recurrence schedule for an existing recurring series.
 
-3. Continue a series:
+- Continue a series:
+  - Marking a task complete results in a new task being generated to continue the series, according to the recurrence schedule.
+  - If the active task in a series is deleted, the user should be prompted to determine whether they want to continue the series or terminate the series. If the client does not know about recurrence and does not offer a prompt, the series should continue -- that is, it should not be terminated accidentally.
 
-   1. Marking a task complete results in a new task being generated to continue the series, according to the recurrence schedule.
-   2. If the active task in a series is deleted, the user should be prompted to determine whether they want to continue the series or terminate the series. If the client does not know about recurrence and does not offer a prompt, the series should continue -- that is, it should not be terminated accidentally.
+- Terminate a series:
+  - By deleting the active task in the series (and saying yes to terminate the series), or
+  - By terminating the series without deleting the active task.
 
-4. Terminate a series:
+- Revive a series: if recurrence was terminated via one of the above options, it should be possible to reinstate the series.
 
-   1. By deleting the active task in the series (and saying yes to terminate the series), or
-   2. By terminating the series without deleting the active task.
-
-5. Revive a series: if recurrence was terminated via one of the above options, it should be possible to reinstate the series.
-
-### Conceptual Differences Between Recurring Meetings and Recurring Tasks
+### Conceptual differences between recurring meetings and recurring tasks
 
 Let's take a real-life scenario for recurring tasks, to illustrate the interesting differences between recurring meetings and recurring tasks, and to explore the problem space of changes to a recurrence pattern.
 
@@ -52,9 +50,9 @@ This change invites different possible options of how we want to define the cont
 
 Quickly reviewing the state of our recurring task, and our decision:
 
-1. The current task has a due date of Dec 10, 2021.
-2. The previous completed task was due on Nov 26, 2021.
-3. A decision is made to change the cadence from 2 weeks to 3 weeks; we will make that change retroactively for the overdue reports.
+- The current task has a due date of Dec 10, 2021.
+- The previous completed task was due on Nov 26, 2021.
+- A decision is made to change the cadence from 2 weeks to 3 weeks; we will make that change retroactively for the overdue reports.
 
 Given the above, we have two options, both valid customer stories, for how the series can be changed to accommodate the new 3-week cadence:
 
@@ -68,30 +66,30 @@ Planner supports both of these options; _today's date_ doesn't factor into how t
 
 The following terms are used to discuss and describe Planner tasks with recurrence:
 
-### Definition of a _Task with Active Recurrence_
+### Definition of a task with active recurrence
 
-If the following three conditions are met, then a **plannerTask** has _Active Recurrence:_
+If the following three conditions are met, then a **plannerTask** has _active recurrence:_
 
 1. **percentComplete** property has a value less than `100`.
 2. **recurrence.nextInSeriesTaskId** is `null` or undefined.
 3. **recurrence.schedule** contains a valid **plannerRecurrenceSchedule** with a non-null **nextOccurrenceDateTime**.
 
-A task with _Active Recurrence_ (call it Task A) can trigger the service's recurrence mechanism, which creates a new task (task B) to continue the recurring series. When that happens, Task A has its **nextInSeriesTaskId** set to the id of Task B. Since Task A no longer meets condition 2, it no longer has _active recurrence_. Task A can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
+A task with _active recurrence_ (call it _task A_) can trigger the service's recurrence mechanism, which creates a new task (_task B_) to continue the recurring series. When that happens, _task A_ has its **nextInSeriesTaskId** set to the ID of _task B_. Since _task A_ no longer meets condition 2, it no longer has _active recurrence_. _Task A_ can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
 
 ### Definition of a recurrence series
 
-A _Recurrence Series_ (also known as  _Recurring Series_) is a sequential series of tasks. The series begins when recurrence is first defined on one task, and the series continues through automatic creation of new tasks with the same **recurrence.seriesId**.
+A _recurrence series_ (also known as  _recurring series_) is a sequential series of tasks. The series begins when recurrence is first defined on one task, and the series continues through automatic creation of new tasks with the same **recurrence.seriesId**.
 
-Tasks sharing the same **recurrence.seriesId** belong to the same _Recurrence Series_.
+Tasks sharing the same **recurrence.seriesId** belong to the same _recurrence series_.
 Each task in the series has a distinct **recurrence.occurenceId**.
 The first task in the series has an **occurrenceId** of `1`.
 When the first task has its recurrence mechanism triggered (by being marked complete or deleted, while it has _active recurrence_) then the second task is created, with an **occurenceId** of `2`. This process continues until the _recurrence series_ is terminated.
 
-### Avoiding the ambiguous term _Recurring Task_
+### Avoiding the ambiguous term recurring task
 
-In common speech, the term _Recurring Task_ sometimes refers to the unique _Task with Active Recurrence_ within a series; and sometimes refers to the _Recurrence Series_ itself, or all the tasks within the recurrence series. This ambiguity is common in spoken English: in the same way, _the weekly report_ might refer to one instance of the report, or to the recurring responsibility of doing the report each week. Due to this ambiguity, we try to avoid use of the term _recurring task_, preferring instead one of the above terms: _Task with Active Recurrence_, or _Recurrence Series_.
+In common speech, the term _Recurring Task_ sometimes refers to the unique _task with active recurrence_ within a series; and sometimes refers to the _recurrence series_ itself, or all the tasks within the recurrence series. This ambiguity is common in spoken English: in the same way, _the weekly report_ might refer to one instance of the report, or to the recurring responsibility of doing the report each week. Due to this ambiguity, we try to avoid use of the term _recurring task_, preferring instead one of the above terms: _task with active recurrence_, or _recurrence series_.
 
-## Resource Type Details
+## Resource type details
 
 Working with recurrence for Planner tasks entails the use of several resource types: [plannerTaskRecurrence](/graph/api/resources/plannertaskrecurrence), [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule), and [recurrencePattern](/graph/api/resources/recurrencepattern); further details about the latter two of these resource types are presented here.
 
@@ -153,10 +151,10 @@ The **dueDateTime** may be edited by clients to have a different value (includin
 
 Given a _task with active recurrence_ with the following properties:
 
-1. The recurrence pattern specifies every 2 weeks on Friday, i.e. (**type** = `weekly`) and (**interval** = `2`) and (**daysOfWeek** = [`friday`]) and (**firstDayOfWeek** = `sunday`)
-2. The previous completed task was due on Nov 26, 2021.
-3. The current task is due Dec 10, 2021.
-4. The **nextOccurrenceDateTime** is Dec 24, 2021 (two weeks after the current due date).
+- The recurrence pattern specifies every 2 weeks on Friday, i.e. (**type** = `weekly`) and (**interval** = `2`) and (**daysOfWeek** = [`friday`]) and (**firstDayOfWeek** = `sunday`)
+- The previous completed task was due on Nov 26, 2021.
+- The current task is due Dec 10, 2021.
+- The **nextOccurrenceDateTime** is Dec 24, 2021 (two weeks after the current due date).
 
 A decision is made to change the cadence from 2 weeks to 3 weeks. Thus we will change the pattern to have (**interval** = `3`) along with the same values for weekly on Fridays.
 
@@ -201,27 +199,27 @@ Things to note from the above:
 - If the **patternStartDateTime** is changed then the **nextOccurrenceDateTime** is recalculated using that new start date.
 - If the due date were changed to `null` rather than 2/16, or to any other date in the future or past, the above examples would be unaffected.
 
-## Developer Scenarios
+## Developer scenarios
 
 ### Create a recurring series
 
 The **recurrence.schedule** is the only client-editable sub-property of **recurrence**. By adding a **recurrence.schedule** (whether or not **recurrence** is already defined) clients can change a non-recurring task into a task with _active recurrence_.
 
-The other two conditions mentioned in the above definition of _Active Recurrence_ influence whether a **recurrence.schedule** can be added:
+The other two conditions mentioned in the above definition of _active recurrence_ influence whether a **recurrence.schedule** can be added:
 
-1. The **percentComplete** property must be less than `100`.
-2. The **recurrence.nextInSeriesTaskId** property must be `null` or unassigned.
+- The **percentComplete** property must be less than `100`.
+- The **recurrence.nextInSeriesTaskId** property must be `null` or unassigned.
 
 Other **recurrence** sub-properties are read-only. Supposing they are not already assigned, the service automatically generate them when the **recurrence.schedule** is added.
 
-### Trigger Recurrence
+### Trigger recurrence
 
 There are two ways the recurrence mechanism can be triggered on a _task with active recurrence_:
 
-1. [Update the task](/graph/api/plannertask-update) and set **percentComplete** to `100` (also referred to as _completing the task_ or _marking the task complete_); or
-2. [Delete the task](/graph/api/plannertask-delete).
+- [Update the task](/graph/api/plannertask-update) and set **percentComplete** to `100` (also referred to as _completing the task_ or _marking the task complete_); or
+- [Delete the task](/graph/api/plannertask-delete).
 
-Please note the above definition for a _Task with Active Recurrence:_ if any of the 3 conditions is not met, the recurrence mechanism will not be triggered (no new task is created and **nextInSeriesTaskId** isn't assigned.)
+Please note the above definition for a _task with active recurrence:_ if any of the 3 conditions is not met, the recurrence mechanism will not be triggered (no new task is created and **nextInSeriesTaskId** isn't assigned.)
 
 Instantiation of the new task usually happens immediately, though there may occasionally be a delay in creating the new task.
 
@@ -231,27 +229,27 @@ The new task will have the following properties copied from the now-complete tas
 
 If _Task C_ has recurrence defined, and a user marks _Task C_ complete (**percentComplete** = `100`), then _Task D_ is created to continue the recurrence series. _Task C_ has its **recurrence.nextInSeriesTaskId** property populated with the ID of _task D_.
 
-On the other hand, if _Task C_ is deleted, and the deletion triggers recurrence, then a client must discover the id of _task D_ by some other means: for example by querying tasks in the same bucket, or by consuming the delta sync feed.
+On the other hand, if _Task C_ is deleted, and the deletion triggers recurrence, then a client must discover the ID of _task D_ by some other means: for example by querying tasks in the same bucket, or by consuming the delta sync feed.
 
-### Edit a Recurring Series
+### Edit a recurring series
 
 A task with active recurrence can have its recurrence schedule edited. Note that **recurrence.schedule** is the only sub-property of recurrence that may be edited.
 
 Example: a task with active recurrence, and a schedule of _weekly every Wednesday_, can have its schedule changed to _monthly on the 15th day of each month_.
 
-### Terminate a Recurring Series
+### Terminate a recurring series
 
 In order to terminate a recurring series, set the **recurrence.schedule** property to `null`. This is only permitted when **nextInSeriesTaskId** is `null` or unassigned.
 
-### Revive Recurrence After Termination
+### Revive recurrence after termination
 
 After removing the **recurrence.schedule**, it is possible to add a new **recurrence.schedule** to the task, which will revive the series.
 
 Follow the steps for _Create a recurring series_, above. The same restrictions apply. The original **recurrence.seriesId** and other sub-properties of **recurrence** will be unchanged, effectively reinstating or continuing the original series.
 
-### Identify the Task with Active Recurrence, within a recurrence series
+### Identify the task with active recurrence, within a recurrence series
 
-Given a **recurrence.seriesId**, a maximum of 1 task with that **seriesId** can have _Active Recurrence_.
+Given a **recurrence.seriesId**, a maximum of 1 task with that **seriesId** can have _active recurrence_.
 
 Completed tasks are hidden from most views, so it is uncommon for a user to be viewing a task that has been marked complete. Deleted tasks cannot be viewed. This means that in most cases, there will be exactly 1 task with active recurrence, in a recurrence series. If the task with active recurrence has had its recurrence deactivated via the schedule being deleted, there will not be any tasks with active recurrence in that series.
 
@@ -268,7 +266,7 @@ There are two causes for information appearing to be out of sync:
 
 ##### Two tasks with active recurrence in the same recurrence series
 
-If a client observes two tasks with Active Recurrence in the same Recurrence Series, then the task with the smaller **occurrenceId** can be assumed to have already had its recurrence mechanism triggered: Planner's back-end storage has the **nextInSeriesTaskId** set, but that information hasn't reached the fast client-facing storage yet. The task with the larger **occurrenceId** is the unique _task with active recurrence_.
+If a client observes two tasks with active recurrence in the same recurrence series, then the task with the smaller **occurrenceId** can be assumed to have already had its recurrence mechanism triggered: Planner's back-end storage has the **nextInSeriesTaskId** set, but that information hasn't reached the fast client-facing storage yet. The task with the larger **occurrenceId** is the unique _task with active recurrence_.
 
 ##### A task with active recurrence has a smaller occurrenceId than another in the same recurrence series
 
@@ -287,7 +285,7 @@ The third is generally permanent. It's probably inaccurate to describe this scen
 
 ### Find all the tasks in a recurring series
 
-Developers working with Planner will be familiar with the existing API to get all tasks in a Plan. Planner does not yet have an API to get all tasks in a _Recurrence Series_; however by getting all tasks in a Plan, one can usually obtain all the tasks in a _recurrence series_.
+Developers working with Planner will be familiar with the existing API to get all tasks in a Plan. Planner does not yet have an API to get all tasks in a _recurrence series_; however by getting all tasks in a Plan, one can usually obtain all the tasks in a _recurrence series_.
 
 The **recurrence.seriesId** property on each **plannerTask** is an identifier that is distinct to a particular _recurring series_ that one or more tasks belong to. Once assigned, this value can never change. The **recurrence.occurrenceId** is an integer value indicating the ordering of the tasks within a series. The first task in a series (the task where recurrence was first added) is given an **occurrenceId** of `1`.
 
@@ -297,13 +295,20 @@ Note: if users have moved the recurring series to a different Plan, then one wil
 
 ## Example REST operations
 
-The following requests and responses represent an ordered sequence of operations. They may be used as test cases for clients implementing Planner Task Recurrence, by substituting appropriate identifiers (for task, plan, recurrence series, etc.)
+The following requests and responses represent an ordered sequence of operations. They may be used as test cases for clients implementing Planner task recurrence, by substituting appropriate identifiers (for task, plan, recurrence series, etc.)
 Several error cases are interspersed, which illustrate incorrect changes to particular states.
 
-### Add recurrence to an existing plannerTask; and add a due date for the task
+### Add recurrence to an existing plannerTask, and add a due date for the task
+
+This example request and response demonstrate adding recurrence to a task. In our example, the task with ID `Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV` already exists and has **recurrence** = `null`.
+In order to add recurrence, we assign the required properties of **recurrence.schedule**.
+The unused **recurrencePattern** properties (**month**, **dayOfMonth**, **firstDayOFWeek**, and **index**) should not be included.
+
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
+
 {
     "recurrence": {
         "schedule": {
@@ -316,15 +321,35 @@ PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6k
     },
     "dueDateTime": "2021-11-13T10:30:00Z"
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the task to which we just added recurrence
+### Get the task to which we just added recurrence and a due date
+
+This example request and response demonstrate retrieving the task with newly added recurrence.
+Notes about the response:
+
+- The unused **recurrencePattern** properties (**month**, **dayOfMonth**, **firstDayOFWeek**, and **index**) are assigned default values by the service.
+- The **nextOccurrenceDateTime** is calculated from the schedule. In this case, the **patternStartDateTime** is Nov 13, and the **pattern** defines every-other-day; this gives a **nextOccurrenceDateTime** of two days after the **patternStartDateTime**, being Nov 15.
+- The **seriesId** and **occurrenceId** are automatically generated. The **seriesId** is a new guid, encoded in the Planner identifier format. Since this is the first task in a series it gets an **occurrenceId** of `1`.
+- The **recurrenceStartDateTime** gets assigned the same value as the **patternStartDateTime**. This is true for the first task in a series (**occurrenceId** = `1`) however for future tasks in the series, the value of **recurrenceStartDateTime** will not change even if the **patternStartDateTime** changes -- it tracks the beginning of recurrence, as contrasted with pattern changes.
+- The **previousInSeriesTaskId** will always be `null`, since this is the first task in the series (**occurrenceId** = `1`).
+- The **nextInSeriesTaskId** will be assigned if and when the next task is created to continue the series.
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#planner/tasks/$entity",
@@ -380,31 +405,44 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Comments about the above
+### Mark the task complete, triggering recurrence (1st task in the series)
 
-- The unused **recurrencePattern** properties (**month**, **dayOfMonth**, **firstDayOFWeek**, and **index**) are given default values. Clients may optionally specify these default values of **recurrence.schedule.pattern** when sending requests, or omit them; however specifying a null value for any property of **recurrencePattern** is prohibited.
-- The `nextOccurrenceDateTime` is calculated from the schedule. In this case, the `patternStartDateTime` is 11/13 and the `pattern` defines every-other-day; this gives a `nextOccurrenceDateTime` of two days after the `patternStartDateTime`, being 11/15.
-- The `seriesId` and `occurrenceId` are automatically generated. The `seriesId` is a new guid, encoded in the Planner identifier format. Since this is the first task in a series it gets an `occurrenceId` of 1.
-- The `recurrenceStartDateTime` gets assigned the same value as the `patternStartDateTime`. This is true for the first task in a series (occurrenceId = 1) however for future tasks in the series this value will not change even if the `patternStartDateTime` changes -- this tracks the beginning of recurrence.
-- The `previousInSeriesTaskId` will always be null, since this is the first task in the series.
-- The `nextInSeriesTaskId` will be assigned if and when the next task is created to continue the series.
+This example request and response demonstrate setting **percentComplete** to `100` (in other words, marking the task complete).
+This request is identical for a task with or without recurrence.
 
-### Mark the task complete, triggering recurrence
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
+
 {
     "percentComplete": 100
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the now-complete task, so we can discover the id of the next task in the series
+### Get the now-complete task, so we can discover the ID of the next (2nd) task in the series
+
+This example request and response demonstrate retrieving the task after it has been marked complete.
+Notes about the response:
+
+- Since **nextInSeriesTaskId** is assigned, this task no longer has _active recurrence_; and it never will ever again.
+- We will grab the value of **nextInSeriesTaskId** and use it in our next request to get the new task by ID
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -433,16 +471,25 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Comments about the above
-
-- Since `nextInSeriesTaskId` is assigned, this task no longer has `active recurrence`; and it never will ever again.
-- We grab the value of `nextInSeriesTaskId` and use it in our next request to get the new task by id
-
 ### Get the new task in the series (2nd occurrence)
+
+This example request and response demonstrate retrieving the new task in the series, whose ID we discovered from the **nextInSeriesTaskId** in the previous response.
+Differences to note about this new task (`GxOo0ms1iEu3eBI1-6lk85UAI5FI`), compared with the previous one (`Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV`):
+
+- **dueDateTime** has been assigned the value from the previous task's **nextOccurrenceDateTime**.
+- **nextOccurrenceDateTime** has been calculated according to the **schedule**: the next occurrence after the above **dueDateTime**.
+- **occurrenceId** is `2` rather than `1`
+- **percentComplete** is `0`.
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -477,17 +524,15 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Differences between this task and the previous one in the series
+### Edit recurrence on the task to be one day per week, and set the due date to null
 
-1. `dueDateTime` has been assigned the value from the previous task's `nextOccurrenceDateTime`.
-2. `nextOccurrenceDateTime` has been calculated according to the `schedule`: the next occurrence after the above `dueDateTime`.
-3. `occurrenceId` is 2 rather than 1
-4. `percentComplete` is 0.
+This example request and response demonstrate assigning a null **dueDateTime** and a different **pattern** to a _task with active recurrence_.
 
-### Edit recurrence on the task (one day per week); and set the due date to null
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "recurrence": {
         "schedule": {
@@ -501,15 +546,31 @@ PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5F
     },
     "dueDateTime": null
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the task again to see the result of our edit
+### Get the task again to see the result of our edit
+
+This example request and response demonstrate retrieving the task after our previous edits. We expect to see the **recurrence.schedule.pattern** we specified: weekly on Tuesdays, along with **dueDateTime** = `null`.
+Notes about the response:
+
+- A task can have active recurrence along with a null due date.
+- The **nextOccurrenceDateTime** is re-calculated and now is on Nov 23, a Tuesday, from the **daysOfWeek**. This next occurrence is calculated based on the task's original **dueDateTime** of Nov 15, a Monday.
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -544,29 +605,42 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Comments about the above
-
-- The **nextOccurrenceDateTime** is re-calculated and now is on 11/23. This is based on the task's original **dueDateTime** of 11/15, a Monday -- so the next task is on a Tuesday in the following week.
-- A task can have active recurrence along with a null due date
-
 ### Remove the recurrence schedule, thereby terminating the series
+
+This example request and response demonstrate assigning a null **recurrence.schedule**, thereby terminating recurrence on this task.
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "recurrence": {
         "schedule": null
     }
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the task with the recurrence schedule deleted
+### Get the task with the recurrence schedule deleted
+
+This example request and response demonstrate retrieving the task after our previous edits. We expect to see **recurrence.schedule** = `null`.
+Notes about the response:
+
+- The recurrence series info is retained. If a new schedule is specified, this task still belongs to the same series.
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -582,14 +656,17 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Comments about the above
-
-- The recurrence series info is retained. If a new schedule is specified, this task still belongs to the same series.
-
 ### Error case: Attempt to add a new recurrence schedule without specifying the patternStartDateTime
+
+This example request and response demonstrate a bad request, attempting to add a new **recurrence.schedule** without specifying the **patternStartDateTime**.
+The response shows an error describing the problem.
+Note, there is a small bug here: the error message should mention Recurrence.Schedule.PatternStartDateTime rather than Recurrence.Schedule.Range. The Planner team intends to fix this error message.
+
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "recurrence": {
         "schedule": {
@@ -600,7 +677,11 @@ PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5F
         }
     }
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 400 BAD REQUEST
 {
     "error": {
@@ -614,14 +695,16 @@ HTTP/1.1 400 BAD REQUEST
 }
 ```
 
-#### Comments about the above
-
-- There is a small bug here: the error message should mention Recurrence.Schedule.PatternStartDateTime rather than Recurrence.Schedule.Range. The Planner team intends to fix this error message.
-
 ### Reinstate recurrence on the task by adding a new schedule
+
+This example request and response demonstrate assigning a new **recurrence.schedule** to a task that currently has **recurrence.schedule** = `null`.
+Note that we do not assigne a **dueDateTime**.
+
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "recurrence": {
         "schedule": {
@@ -634,15 +717,28 @@ PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5F
         }
     }
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
 #### Get the task with the new recurrence schedule
 
+This example request and response demonstrate retrieving the task with the new recurrence schedule.
+The **recurrence** properties (except **schedule**) remain unchanged, and the task has _active recurrence_, even while the **dueDateTime** property remains `null`.
+
+##### Request
+
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+```
 
+##### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -677,21 +773,26 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Comments about the above
-
-- The recurrence series info (excluding the schedule) remains unchanged.
-- Due date remains null, however the task has active recurrence.
-
 ### Error case: Attempt to edit a read-only property
+
+This example request and response demonstrate a bad request, attempting to assign a value to the **recurrence.seriesId** property, which is read-only.
+The response shows an error describing the problem.
+
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "recurrence": {
         "seriesId": "abc"
     }
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 400 BAD REQUEST
 {
     "error": {
@@ -705,22 +806,40 @@ HTTP/1.1 400 BAD REQUEST
 }
 ```
 
-### Mark the task complete, triggering recurrence again
+### Mark the task complete, triggering recurrence (2nd task in the series, with null dueDateTime)
+
+This example request and response demonstrate setting **percentComplete** to `100` (in other words, marking the task complete).
+This request is identical for a task with or without recurrence.
+
+#### Request
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+
 {
     "percentComplete": 100
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the now-complete task, so we can discover the id of the next task in the series
+### Get the now-complete task, so we can discover the ID of the next (3rd) task in the series
+
+This example request and response demonstrate retrieving the task after it has been marked complete.
+
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -757,14 +876,24 @@ HTTP/1.1 200 OK
 
 ### Error case: Attempt to delete the recurrence schedule when the nextInSeriesTaskId is already assigned
 
+This example request and response demonstrate a bad request, attempting to assign a value to the **recurrence.schedule** property after the **nextInSeriesTaskId** property has been assigned.
+The response shows an error describing the problem.
+
+#### Request
+
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
+
 {
     "recurrence": {
         "schedule": null
     }
 }
+```
 
+#### Response
+
+```json
 HTTP/1.1 400 BAD REQUEST
 {
     "error": {
@@ -780,9 +909,18 @@ HTTP/1.1 400 BAD REQUEST
 
 ### Get the new task in the series (3rd occurrence)
 
+This example request and response demonstrate retrieving the new task in the series, whose ID we discovered from the **nextInSeriesTaskId** in the previous response.
+As before, the **dueDateTime** has been assigned to the value presented in the previous task's **nextOccurrenceDateTime** -- even though the previous task's **dueDateTime** was `null`.
+
+#### Request
+
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/-6zr7XfE6E2JvxCSmE7Wdf8AClON
+```
 
+#### Response
+
+```json
 HTTP/1.1 200 OK
 {
     "_comment": "other fields omitted for brevity",
@@ -816,7 +954,3 @@ HTTP/1.1 200 OK
     "dueDateTime": "2022-01-25T10:30:00Z"
 }
 ```
-
-#### Comments
-
-- As before, the due date has been assigned to the value presented in the previous task's nextOccurrenceDateTime -- even though the previous task's due date was null.
