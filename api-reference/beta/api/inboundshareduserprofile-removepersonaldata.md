@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a request to remove the personal data for an [inboundSharedUserProfile](../resources/inboundshareduserprofile.md).
+Create a request to remove the personal data for an [inboundSharedUserProfile](../resources/inboundshareduserprofile.md). 
 
 ## Permissions
 
@@ -37,7 +37,7 @@ An account assigned with the Global Reader or Global Administrator role will be 
 -->
 
 ``` http
-GET /directory/inboundSharedUserProfiles/userId/removePersonalData
+POST /directory/inboundSharedUserProfiles/{userId}/removePersonalData
 ```
 
 ## Request headers
@@ -48,11 +48,7 @@ GET /directory/inboundSharedUserProfiles/userId/removePersonalData
 
 ## Request body
 
-Provide a request body with the following parameters.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|bindingParameter|[microsoft.graph.inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|The binding parameter of the action. This is the user id of the inbound shared user profile.|
+Do not supply a request body for this method.
 
 ## Response
 

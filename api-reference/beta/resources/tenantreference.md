@@ -23,7 +23,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| tenantId | String | The id of the Azure AD tenant. Read-only. |
+| tenantId | String | The identifier of the Azure AD tenant. Read-only. Key. |
 
 ## Relationships
 

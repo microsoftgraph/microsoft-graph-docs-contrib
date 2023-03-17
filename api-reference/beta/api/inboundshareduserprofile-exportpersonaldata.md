@@ -35,7 +35,7 @@ An account assigned with the Global Reader or Global Administrator role will be 
 -->
 
 ``` http
-GET /directory/inboundSharedUserProfiles/userId/exportPersonalData
+POST /directory/inboundSharedUserProfiles/{userId}/exportPersonalData
 ```
 
 ## Request headers
@@ -46,16 +46,17 @@ GET /directory/inboundSharedUserProfiles/userId/exportPersonalData
 
 ## Request body
 
-Provide a request body with the following parameters.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|bindingParameter|[microsoft.graph.inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|The binding parameter of the action. This is the user id of the inbound shared user profile.|
 |storageLocation|String|The storage location to download the exported data to. This can be an Azure Storage Account.|
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a Location in the response body pointing to the data export request.
+If successful, this method returns a `202 Accepted` response code and a **Location** header in the response body pointing to the storage location of the exported data.
 
 ## Examples
 

@@ -23,7 +23,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite",
           "ChangeType": "Addition",
-          "Description": "Added the `CrossTenantUserProfileSharing.ReadWrite.All` delegated permissions.",
+          "Description": "Added the `CrossTenantUserProfileSharing.ReadWrite` delegated permission.",
           "Target": "inboundSharedUserProfiles"
         },
         {
@@ -31,15 +31,22 @@
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantUserProfileSharing.Read",
           "ChangeType": "Addition",
-          "Description": "Added the `CrossTenantUserProfileSharing.Read` application and delegated permissions.",
+          "Description": "Added the `CrossTenantUserProfileSharing.Read` delegated permission.",
           "Target": "inboundSharedUserProfiles"
         },
         {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
-          "ApiChange": "Property",
-          "ChangedApiName": "directory",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "inboundSharedUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the **inboundSharedUserProfiles** and **outboundSharedUserProfiles** navigation properties to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Description": "Added the **inboundSharedUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },{
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "outboundSharedUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **outboundSharedUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
           "Target": "directory"
         },
         {

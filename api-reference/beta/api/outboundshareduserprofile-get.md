@@ -37,7 +37,7 @@ An account assigned with the Global Reader or Global Administrator role will be 
 -->
 
 ``` http
-GET /directory/outboundSharedUserProfiles/userId/tenants
+GET /directory/outboundSharedUserProfiles/{userId}
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [outboundShare
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants
+GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
 ### Response
