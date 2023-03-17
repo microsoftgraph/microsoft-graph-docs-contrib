@@ -16,7 +16,7 @@ To improve your app's the response time and help lower costs, you'll want to min
 
 The following diagram shows the suggested high-level architecture for an app that integrates with Teams.
 
-![Diagram showing Teams integration with an application UI](images/teams-how-to-write-interactive-message-app-system-diagram.png)
+![Diagram showing Teams integration with an application UI](images/teams-embed-within-own-app-system-diagram.png)
 
 The architecture includes three components:
 
@@ -595,30 +595,16 @@ If your app has 50 users, and each user receives messages from 20 users and send
 
 For the most up-to-date pricing information, see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
 
-## Summary
-
-Using the steps above, you can build an interactive message app within your own application.  Initially, the chat UI calls `GET /chats/{chat-id}/messages` to get only the recent messages needed to be displayed on the chat UI.  It then gets new messages in real time from the server component, which subscribes and listens to change notifications for the new messages.
-
-To improve the response time for your application, to avoid throttling, and to potentially lower the costs for you, you should minimize reading the same message multiple times from Microsoft Graph, by caching the messages and relying on change notifications instead of the `GET` APIs for new messages. We recommend caching messages for at least a few hours so a user can quickly reopen a chat that they have recently visited.  However, you should not cache longer than what is allowed per your organizational retention policies. To simplify security, we recommend not sharing caches between users.
-
-Change notification subscriptions for [chatMessage](/graph/api/resources/chatmessage) expire in 60 minutes, so we recommend renewing every 30 minutes.  In case of an expiration, you would call `GET /users/{user-id}/chats/{chat-id}/messages` again to get the most up-to-date messages and refresh the cache.
-
-By following these guidelines, suppose your app has 50 users, each user receives messages from 20 users, and each user sends 300 messages per month, then the estimated costs would be about $225/month.
-
-## Tips and additional information
+## See also
 
 You can also add more advanced features in your chat application by:
 
 - [Adding reactions to chat messages](/graph/api/chatmessage-setreaction), such as thumbs up and smileys.
-- [Adding images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contain rich contents.
-- [Adding "mentions" to chat messages](/graph/api/resources/chatmessagemention), so specific users can be tagged with "@".
-- [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list.
-- [Removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed to them.
+- [Adding @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contain rich contents.
+- [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list, or [removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed for them.
 - [Checking chat membership](/graph/api/chat-list), in case users have joined or left chat groups, especially if they can do that outside of your app.
 - [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview), such as chats and memberships, not just messages.
-- [Installing an app within chat](/graph/api/chat-post-installedapps), so users can use the app within the chat
-- [Pinning a tab in the chat](/graph/api/chat-post-tabs), so users can switch to the app easily
 
 ## Related articles
 
-- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://mybuild.microsoft.com/sessions/b7c008ab-69eb-40d5-a170-5dd9db57f022)
+- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://learn.microsoft.com/en-us/events/build-2022/od20-bring-microsoft-teams-chats-channel-collaboration-to-your-apps-by-leveraging-microsoft-graph)
