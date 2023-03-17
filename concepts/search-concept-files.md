@@ -358,9 +358,9 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 You can specify the fields you want back in the response, as part of the **fields** sub-property in listItem or an internal **listItem** sub-property in driveItem of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
-Note that property selection for custom properties in SharePoint is only available for **listItem** or **driveItem** since these are the only two SharePoint entities in Microsoft Graph that support custom properties.
+Note that property selection for custom properties in SharePoint is only available for **listItem** or **driveItem** because these are the only two SharePoint entities in Microsoft Graph that support custom properties.
 
-### ListItem request
+### listItem request
 
 ```HTTP
 POST /search/query
@@ -384,7 +384,7 @@ Content-Type: application/json
 }
 ```
 
-### ListItem response
+### listItem response
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -431,7 +431,7 @@ Content-type: application/json
 }
 ```
 
-### DriveItem request
+### driveItem request
 
 ```HTTP
 POST /search/query
@@ -456,7 +456,7 @@ Content-Type: application/json
 }
 ```
 
-### DriveItem response
+### driveItem response
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
