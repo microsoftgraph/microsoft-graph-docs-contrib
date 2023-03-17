@@ -97,6 +97,7 @@ This resource supports:
 | **Org hierarchy** |  |  |
 | [Assign manager](../api/user-post-manager.md) | [directoryObject](directoryobject.md) | Assign a user or an organizational contact as this user's manager. |
 | [Get manager](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Get the user or organizational contact that is this user's manager from the manager navigation property. |
+| [Remove manager](../api/user-delete-manager.md) | None | Remove the manager of a user. |
 | [List directReports](../api/user-list-directreports.md) | [directoryObject](directoryobject.md) collection | Get the users and contacts that report to the user from the directReports navigation property. |
 | **Outlook settings** |  |  |
 | [Create Outlook category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Create an outlookCategory object in the user's master list of categories. |

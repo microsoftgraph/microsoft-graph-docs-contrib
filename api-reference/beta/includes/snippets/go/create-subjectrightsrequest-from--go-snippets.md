@@ -47,19 +47,17 @@ regulations := []string {
 requestBody.SetRegulations(regulations)
 siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
-additionalData := map[string]interface{}{
 
 
- := graphmodels.New()
+user := graphmodels.NewUser()
 id := "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
-.SetId(&id) 
+user.SetId(&id) 
 
-	approvers := []graphmodels.Objectable {
-		,
+approvers := []graphmodels.Userable {
+	user,
 
-	}
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetApprovers(approvers)
 
 result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
