@@ -554,9 +554,9 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 ### Example 7: Create a team with a localized non-standard base template type 
-Base template types can be localized to your preferred language choice, enabling you to create templates in your desired language. 
+Base template types can be localized to your preferred language choice, which enables you to create templates in your preferred language. 
 
-Choose your desired team template from the defintion list here https://learn.microsoft.com/en-us/graph/api/teamtemplate-list-definitions?view=graph-rest-beta&tabs=http
+Choose your team template from the defintion list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
 
 #### Request
 
