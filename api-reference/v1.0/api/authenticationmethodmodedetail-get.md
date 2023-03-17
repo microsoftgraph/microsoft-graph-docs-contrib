@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 The following is an example of a request.
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes/windowsHelloForBusiness
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/authenticationMethodModes/windowsHelloForBusiness
 ```
 
 ### Response

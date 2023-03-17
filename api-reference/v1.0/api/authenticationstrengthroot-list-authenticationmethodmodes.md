@@ -68,7 +68,7 @@ The following is an example of a request to retrieve the collection of **authent
 .
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
 
 #### Response
@@ -173,7 +173,7 @@ The following is an example of a request to retrieve the flat collection of auth
 
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/combinations
+GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/combinations
 ```
 #### Response
 The following is an example of the response
@@ -190,7 +190,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/authenticationStrength/combinations",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/authenticationStrength/combinations",
     "value": [
         "windowsHelloForBusiness",
         "fido2",

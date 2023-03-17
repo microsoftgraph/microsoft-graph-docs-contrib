@@ -70,7 +70,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies",
     "value": [
         {
             "id": "00000000-0000-0000-0000-000000000002",
@@ -101,7 +101,7 @@ Content-Type: application/json
                 "sms,federatedSingleFactor",
                 "voice,federatedSingleFactor"
             ],
-            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
             "combinationConfigurations": []
         },
         {
@@ -118,7 +118,7 @@ Content-Type: application/json
                 "x509CertificateMultiFactor",
                 "deviceBasedPush"
             ],
-            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000003')/combinationConfigurations",
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000003')/combinationConfigurations",
             "combinationConfigurations": []
         },
         {
@@ -134,7 +134,7 @@ Content-Type: application/json
                 "fido2",
                 "x509CertificateMultiFactor"
             ],
-            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000004')/combinationConfigurations",
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000004')/combinationConfigurations",
             "combinationConfigurations": []
         }
     ]

@@ -56,7 +56,7 @@ If successful, this action returns a `200 OK` response code and a [updateAllowed
 The following is an example of a request.
 
 ``` http
-POST https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/33c5d2c0-884e-4b5d-a5b8-5395082b092c/updateAllowedCombinations
+POST https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/33c5d2c0-884e-4b5d-a5b8-5395082b092c/updateAllowedCombinations
 Content-Type: application/json
 Content-length: 51
 

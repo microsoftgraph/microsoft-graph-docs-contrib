@@ -48,7 +48,7 @@ If successful, this function returns a `200 OK` response code and an [authentica
 The following is an example of a request.
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/usage
+GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/usage
 ```
 ### Response
 The following is an example of the response
