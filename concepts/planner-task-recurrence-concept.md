@@ -6,9 +6,9 @@ ms.localizationpriority: medium
 ms.prod: "planner"
 ---
 
-# Configuring task recurrence in planner
+# Configuring task recurrence in Planner
 
-This article describes how to use recurrence with [Planner task](/graph/api/resources/plannertask) to automate creation of repetitive tasks. The **recurrence** property on a Planner task allows users to automate creation of future tasks, representing a real-life task that needs to be completed repetitively.
+This article describes how to use recurrence with [Planner tasks](/graph/api/resources/plannertask) to automate creation of repetitive tasks. The **recurrence** property on a Planner task allows users to automate creation of future tasks, representing a real-life task that needs to be completed repetitively.
 
 ## User scenarios
 
@@ -74,11 +74,11 @@ If the following three conditions are met, then a **plannerTask** has _active re
 2. **recurrence.nextInSeriesTaskId** is `null` or undefined.
 3. **recurrence.schedule** contains a valid **plannerRecurrenceSchedule** with a non-null **nextOccurrenceDateTime**.
 
-A task with _active recurrence_ (call it _task A_) can trigger the service's recurrence mechanism, which creates a new task (_task B_) to continue the recurring series. When that happens, _task A_ has its **nextInSeriesTaskId** set to the ID of _task B_. Since _task A_ no longer meets condition 2, it no longer has _active recurrence_. _Task A_ can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
+A task with _active recurrence_ (call it _task A_) can trigger the service's recurrence mechanism, which creates a new task (_task B_) to continue the recurring series. When that happens, _task A_ has its **recurrence.nextInSeriesTaskId** set to the ID of _task B_. Since _task A_ no longer meets condition 2, it no longer has _active recurrence_. _Task A_ can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
 
 ### Definition of a recurrence series
 
-A _recurrence series_ (also known as  _recurring series_) is a sequential series of tasks. The series begins when recurrence is first defined on one task, and the series continues through automatic creation of new tasks with the same **recurrence.seriesId**.
+A _recurrence series_ (also known as _recurring series_) is a sequential series of tasks. The series begins when recurrence is first defined on one task, and the series continues through automatic creation of new tasks with the same **recurrence.seriesId**.
 
 Tasks sharing the same **recurrence.seriesId** belong to the same _recurrence series_.
 Each task in the series has a distinct **recurrence.occurenceId**.
@@ -210,7 +210,7 @@ The other two conditions mentioned in the above definition of _active recurrence
 - The **percentComplete** property must be less than `100`.
 - The **recurrence.nextInSeriesTaskId** property must be `null` or unassigned.
 
-Other **recurrence** sub-properties are read-only. Supposing they are not already assigned, the service automatically generate them when the **recurrence.schedule** is added.
+Other **recurrence** sub-properties are read-only. Supposing they are not already assigned, the service automatically generates them when the **recurrence.schedule** is added.
 
 ### Trigger recurrence
 
@@ -227,9 +227,9 @@ The new task will have the following properties copied from the now-complete tas
 
 ### Discover the next task in a series
 
-If _Task C_ has recurrence defined, and a user marks _Task C_ complete (**percentComplete** = `100`), then _Task D_ is created to continue the recurrence series. _Task C_ has its **recurrence.nextInSeriesTaskId** property populated with the ID of _task D_.
+If _task C_ has recurrence defined, and a user marks _task C_ complete (**percentComplete** = `100`), then _task D_ is created to continue the recurrence series. _Task C_ has its **recurrence.nextInSeriesTaskId** property populated with the ID of _task D_.
 
-On the other hand, if _Task C_ is deleted, and the deletion triggers recurrence, then a client must discover the ID of _task D_ by some other means: for example by querying tasks in the same bucket, or by consuming the delta sync feed.
+On the other hand, if _task C_ is deleted, and the deletion triggers recurrence, then a client must discover the ID of _task D_ by some other means: for example by querying tasks in the same bucket, or by consuming the delta sync feed.
 
 ### Edit a recurring series
 
@@ -255,7 +255,7 @@ Completed tasks are hidden from most views, so it is uncommon for a user to be v
 
 #### Rare exceptional scenarios
 
-The following scenarios are rare, though possible. Whereas they might appear to a client to be exceptions, in fact the back end of Planner maintains integrity for the following: A maximum of 1 _task with active recurrence_ in a given _recurrence series_. Guidance is given for disambiguation.
+The following scenarios are rare, though possible. Whereas they might appear to a client to be exceptions, in fact the service always maintains integrity for the rule: A maximum of 1 _task with active recurrence_ in a given _recurrence series_. Guidance is given for disambiguation.
 
 ##### Causes
 
@@ -285,13 +285,13 @@ The third is generally permanent. It's probably inaccurate to describe this scen
 
 ### Find all the tasks in a recurring series
 
-Developers working with Planner will be familiar with the existing API to get all tasks in a Plan. Planner does not yet have an API to get all tasks in a _recurrence series_; however by getting all tasks in a Plan, one can usually obtain all the tasks in a _recurrence series_.
+Developers working with Planner will be familiar with the existing API to get all tasks in a plan. Planner does not yet have an API to get all tasks in a _recurrence series_; however by getting all tasks in a plan, one can usually obtain all the tasks in a _recurrence series_.
 
 The **recurrence.seriesId** property on each **plannerTask** is an identifier that is distinct to a particular _recurring series_ that one or more tasks belong to. Once assigned, this value can never change. The **recurrence.occurrenceId** is an integer value indicating the ordering of the tasks within a series. The first task in a series (the task where recurrence was first added) is given an **occurrenceId** of `1`.
 
 Note: If some tasks in the series have been deleted, there may be gaps in the indices.
 
-Note: if users have moved the recurring series to a different Plan, then one will need to look in other plans to see other tasks in the series; however it is expected that users are primarily interested in the recurring series within one Plan. Tasks may not be moved across group boundaries, so if all the plans in a group are queried, one can find all the tasks that could have been moved out of the original Plan.
+Note: if users have moved the recurring series to a different plan, then one will need to look in other plans to see other tasks in the series; however it is expected that users are primarily interested in the recurring series within one plan. Tasks may not be moved across group boundaries, so if all the plans in a group are queried, one can find all the tasks that could have been moved out of the original plan.
 
 ## Example REST operations
 
