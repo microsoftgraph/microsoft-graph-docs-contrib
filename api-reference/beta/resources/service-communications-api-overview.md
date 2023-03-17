@@ -22,9 +22,9 @@ Delegated permissions are needed to access the service communications API on beh
 
 #### Role-based access control for delegation access
 
-Service communications API also apply the role-based access control (RBAC) to identify whether the signed-in user who is on-behalf has required Azure Active Directory (AAD) role. The signed-in user who is on-behalf of must have at least one of the admin roles.
+The service communications API applies role-based access control (RBAC) to identify whether the signed-in user who is on-behalf of has a required Azure Active Directory (Azure AD) role. The signed-in user who is on-behalf of must have at least one of the admin roles.
 
-For more information about the AAD administrator roles, see:
+For more information about the AZure AD administrator roles, see:
 * [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
 * [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 * [Roles in Microsoft 365, including Azure AD, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
