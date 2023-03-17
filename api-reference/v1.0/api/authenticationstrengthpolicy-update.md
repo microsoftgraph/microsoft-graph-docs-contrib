@@ -47,8 +47,7 @@ PATCH /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
 
 ## Response
 
-If successful, this method returns a `204 NO CONTENT` response code.
-
+If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request

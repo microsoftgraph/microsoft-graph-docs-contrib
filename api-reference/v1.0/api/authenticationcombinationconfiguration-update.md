@@ -51,15 +51,14 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 
 ## Response
 
-If successful, this method returns a `204 NO CONTENT` response code.
-
+If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
 The following is an example of a request.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/4643f174-fe85-42b8-8b84-516775750a30
+PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/4643f174-fe85-42b8-8b84-516775750a30
 Content-Type: application/json
 Content-length: 130
 
