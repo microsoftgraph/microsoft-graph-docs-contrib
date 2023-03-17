@@ -38,7 +38,10 @@ After you set up these components, you can start using Teams APIs.
 Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must create a [chat](/graph/api/resources/chat) by assigning [members](/graph/api/resources/conversationmember). The following example shows how to create a group chat. For more examples that show how to create different chat types, see [Create chat](/graph/api/chat-post).
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
 ``` http
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
@@ -71,8 +74,20 @@ Content-Type: application/json
 }
 ```
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
 ``` http
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph...)",
+  "name": "get_groups"
+} -->
+
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -96,6 +111,11 @@ Members within the chat can send messages to each other. The following example s
 ### Request
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 POST https://graph.microsoft.com/v1.0/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages
 Content-type: application/json
 
@@ -174,6 +194,11 @@ Typical interactive messaging apps display only the most recent messages by defa
 ### Request
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
 ```
 
@@ -359,6 +384,11 @@ For more details about this example, see [Create subscription](/graph/api/subscr
 ### Request
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
@@ -409,6 +439,11 @@ When you create the subscription, make sure that the **includeResourceData** pro
 ### Request (sent by Microsoft Graph)
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient
 Content-type: application/json
 
@@ -514,6 +549,11 @@ The following example shows how to renew a subscription.
 ### Request
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
 Content-type: application/json
 
@@ -556,6 +596,11 @@ To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/
 ### Request
 
 ```http
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}-->
+
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
 ```
 
