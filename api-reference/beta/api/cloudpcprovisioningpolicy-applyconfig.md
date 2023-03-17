@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: applyConfig"
-description: "Perform provisioning policy config update for a set of Cloud PC devices by their Ids, which supports retry and subset of Cloud PCs to initially test for Apply API."
+description: "Update the provisioning policy configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the apply API."
 author: "Guoan Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform provisioning policy config update for a set of Cloud PC devices with providing Cloud PC ids, which supports retry and subset of Cloud PCs to initially test for Apply API.
+Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the [cloudPcProvisioningPolicy: apply](cloudpcprovisioningpolicy-apply.md) API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,9 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The Cloud PC Ids.|
-
-
+|cloudPcIds|String collection|A collection of Cloud PC IDs.|
 
 ## Response
 
@@ -57,6 +55,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -75,10 +74,14 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
 HTTP/1.1 204 No Content
 ```
-
