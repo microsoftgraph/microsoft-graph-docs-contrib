@@ -1959,6 +1959,24 @@
 		  "CreatedDateTime": "2023-03-03T03:46:16.421Z",
 		  "WorkloadArea": "Reports",
 		  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+			{
+			  "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [getTeamsTeamCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsTeamCounts"
+			}
+		  ],
+		  "Id": "1c8087f9-c32f-45bd-b0ee-bfe417d6cd90",
+		  "Cloud": "prd",
+		  "Version": "beta",
+		  "CreatedDateTime": "2023-03-16T03:46:16.421Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
 	}
   ]
 }
