@@ -1,6 +1,6 @@
 ---
 title: "azureAdTokenAuthentication resource type"
-description: "Defines the Azure AD application used to authenticate with a custom access package custom task extension."
+description: "Defines the Azure AD application used to authenticate with a custom access package workflow extension."
 author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 { 
-"@odata.type": "#microsoft.graph.azureAdTokenAuthentication"
-"resourceId": "String" 
+  "@odata.type": "#microsoft.graph.azureAdTokenAuthentication", 
+  "resourceId": "String" 
  } 
 ```
