@@ -228,23 +228,23 @@ Content-length: 631
                 "isEnabled": true,
                 "taskDefinitionId": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
                 "arguments": [
-                  {
-                "name": "cc",
-                "value": "b47471b9-af8f-4a5a-bfa2-b78e82398f6e, a7a23ce0-909b-40b9-82cf-95d31f0aaca2"
-                },
-                {
-                "name": "customSubject",
-                "value": "Welcome to the organization {{userDisplayName}}!"
-                },
-                {
-                "name": "customBody",
-                "value": "Welcome to our organization {{userGivenName}} {{userSurname}}. \nFor more information, reach out to your manager {{managerDisplayName}} at {{managerEmail}}."
-                },
-                {
-                "name": "locale",
-                "value": "en-us"
-                },   
-    ]
+                    {
+                        "name": "cc",
+                        "value": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
+                    },
+                    {
+                        "name": "customSubject",
+                        "value": "Welcome to the organization {{userDisplayName}}!"
+                    },
+                    {
+                        "name": "customBody",
+                        "value": "Welcome to our organization {{userGivenName}}!"
+                    },
+                    {
+                        "name": "locale",
+                        "value": "en-us"
+                    }
+                ]
             }
         ]
     }
