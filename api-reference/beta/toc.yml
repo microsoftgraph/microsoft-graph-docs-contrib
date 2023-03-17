@@ -15852,7 +15852,7 @@ items:
           - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
-            - name: Get download url
+            - name: Get download URL (deprecated)
               href: api/security-ediscoveryexportoperation-getdownloadurl.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
@@ -15870,7 +15870,7 @@ items:
             - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
-              - name: Get download url
+              - name: Get download URL (deprecated)
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
