@@ -4225,6 +4225,10 @@
           {
             "name": "isPr",
             "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
           }
         ],
         "taskName": "Notification for idle PRs - changes requested",
@@ -4324,6 +4328,10 @@
           },
           {
             "name": "isPr",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
             "parameters": {}
           }
         ],
