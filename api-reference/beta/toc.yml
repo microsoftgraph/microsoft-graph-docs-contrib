@@ -397,8 +397,6 @@ items:
         items:
         - name: Get delta
           href: api/directoryobject-delta.md
-        - name: Activate service plan (deprecated)
-          href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Export personal data
@@ -2067,6 +2065,22 @@ items:
             href: api/printtask-get.md
           - name: Update task
             href: api/printtaskdefinition-update-task.md
+        - name: Quota
+          items:
+          - name: Unified storage quota
+            href: resources/unifiedstoragequota.md
+            items:
+            - name: Get
+              href: api/unifiedstoragequota-get.md
+            - name: List
+              href: api/unifiedstoragequota-list-services.md
+          - name: Service storage quota breakdown 
+            href: resources/servicestoragequotabreakdown.md
+            items:
+            - name: Get
+              href: api/servicestoragequotabreakdown-get.md
+            - name: List
+              href: api/unifiedstoragequota-list-services.md
         - name: Reports
           items:
           - name: Organized by printer
@@ -12203,8 +12217,6 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
-          - name: Activate service (deprecated)
-            href: api/organization-activateservice.md
         - name: Organization settings
           href: resources/organizationSettings.md
           items:
@@ -15164,6 +15176,8 @@ items:
             href: api/reportroot-getteamsteamactivitycounts.md
           - name: Get team activity distribution counts
             href: api/reportroot-getteamsteamactivitydistributioncounts.md
+          - name: Get team counts
+            href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -15854,7 +15868,7 @@ items:
           - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
-            - name: Get download url
+            - name: Get download URL (deprecated)
               href: api/security-ediscoveryexportoperation-getdownloadurl.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
@@ -15872,7 +15886,7 @@ items:
             - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
-              - name: Get download url
+              - name: Get download URL (deprecated)
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
@@ -17229,7 +17243,7 @@ items:
             href: api/team-completemigration.md
           - name: List permission grants
             href: api/team-list-permissiongrants.md
-          - name: Team template (preview)
+          - name: Team template
             items:
               - name: Team template
                 href: resources/teamtemplate.md

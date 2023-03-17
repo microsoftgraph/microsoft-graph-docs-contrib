@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
 ### userPurpose values
 
 | Member             | 
