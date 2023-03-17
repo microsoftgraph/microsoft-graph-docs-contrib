@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
-conditionalAccessPolicy.displayName = "Policy for risky sign-in block access";
+conditionalAccessPolicy.displayName = "Policy for risky sign-in";
 conditionalAccessPolicy.state = ConditionalAccessPolicyState.ENABLED;
 ConditionalAccessConditionSet conditions = new ConditionalAccessConditionSet();
 LinkedList<RiskLevel> signInRiskLevelsList = new LinkedList<RiskLevel>();
@@ -28,7 +28,7 @@ conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();
 grantControls.operator = "OR";
 LinkedList<ConditionalAccessGrantControl> builtInControlsList = new LinkedList<ConditionalAccessGrantControl>();
-builtInControlsList.add(ConditionalAccessGrantControl.BLOCK);
+builtInControlsList.add(ConditionalAccessGrantControl.MFA);
 grantControls.builtInControls = builtInControlsList;
 conditionalAccessPolicy.grantControls = grantControls;
 

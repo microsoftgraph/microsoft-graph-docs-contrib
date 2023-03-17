@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let verticalSection = await client.api('/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection?select=emphasis,expand=webparts')
+let verticalSection = await client.api('/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection')
 	.version('beta')
 	.get();
 
