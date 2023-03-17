@@ -55,7 +55,7 @@ If successful, this method returns an `HTTP 200 OK` response code and a collecti
 
 ## Examples
 
-### Example 1: Basic call to perform a search request.
+### Example 1: Basic call to perform a search request
 
 The following example shows how to perform a search to get expected connector items.
 
@@ -163,7 +163,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Basic call to use queryTemplate.
+### Example 2: Basic call to use queryTemplate
 
 The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
 
