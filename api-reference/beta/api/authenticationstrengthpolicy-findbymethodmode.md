@@ -20,16 +20,17 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 
-> [!NOTE]
-> The `findByMethodMode` function is only available in `/beta` and will not be available in `/v1.0`. Use the following syntax instead.
->
-> `GET /policies/authenticationStrengthPolicies?$filter[allowedCombinations/any(x:x has 'sms, password')]`Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
+[!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
 > [!NOTE]
 > The `findByMethodMode` function is only available in `/beta` and will not be available in `/v1.0`. Use the following syntax instead.
 >
 > `GET /policies/authenticationStrengthPolicies?$filter[allowedCombinations/any(x:x has 'sms, password')]`
+
+
 ## HTTP request
 
 <!-- {
