@@ -1,9 +1,8 @@
 ---
 title: "List endUserNotifications"
-description: "Get a list of the endUserNotification objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -15,13 +14,14 @@ Namespace: microsoft.graph
 Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
@@ -30,16 +30,17 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.endUserNotification not found
+GET /security/attackSimulation/endUserNotifications?$filter=source eq 'tenant'
 ```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+|Header         |Value                    |
+|---------------|-------------------------|
+|Authorization  |Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -58,8 +59,9 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.endUserNotification not found
+GET https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications?$filter=source eq 'global'
 ```
+-->
 
 
 ### Response
@@ -82,9 +84,9 @@ Content-Type: application/json
       "id": "2e91fbe0-0c81-a814-9304-9948624ebb87",
       "displayName": "String",
       "description": "String",
-      "notificationType": "String",
-      "status": "String",
-      "source": "String",
+      "notificationType": "microsoft.graph.endUserNotificationType",
+      "status": "microsoft.graph.simulationContentStatus",
+      "source": "microsoft.graph.simulationContentSourc",
       "createdBy": {
         "@odata.type": "microsoft.graph.emailIdentity"
       },

@@ -1,9 +1,9 @@
 ---
 title: "trainingLanguageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an attack simulation training language detail."
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an attack simulation training language detail
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,24 +21,21 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List trainingLanguageDetails](../api/training-list-languagedetails.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md) collection|Get a list of the [trainingLanguageDetail](../resources/traininglanguagedetail.md) objects and their properties.|
-|[Create trainingLanguageDetail](../api/training-post-languagedetails.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Create a new [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
 |[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Read the properties and relationships of a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
-|[Update trainingLanguageDetail](../api/traininglanguagedetail-update.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md)|Update the properties of a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
-|[Delete trainingLanguageDetail](../api/training-delete-languagedetails.md)|None|Delete a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|**TODO: Add Description**|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isDefaultLangauge|Boolean|**TODO: Add Description**|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|locale|String|**TODO: Add Description**|
+|content|String|Training language specific content.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created detail.|
+|createdDateTime|DateTimeOffset|Creation date and time.s|
+|description|String|Description|
+|displayName|String|Display name.|
+|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
+|isDefaultLangauge|Boolean|Is this default language detail.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|User who updated recently.|
+|lastModifiedDateTime|DateTimeOffset|Updation date and time.|
+|locale|String|Locale|
 
 ## Relationships
 None.
