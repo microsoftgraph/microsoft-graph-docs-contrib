@@ -36,7 +36,7 @@ Retrieve the collection of **authenticationMethodModes** objects and their descr
 }
 -->
 ``` http
-GET /identity/conditionalAccess/authenticationStrengths/authenticationMethodModes
+GET /identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
 
 Retrieve the flat collection of authenticationCombinations objects, representing all the allowed combinations (allowedCombinations) in an authenticationStrengthPolicy object.
