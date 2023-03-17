@@ -58,29 +58,31 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessPackageAssignment",
-  "keyProperty": "id"
-}-->
-
-```json
+  "openType": false
+}
+-->
+``` json
 {
-   "id":"9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
-   "catalogId":"cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
-   "accessPackageId":"e3f47362-993f-4fcb-8a38-532ffca16150",
-   "assignmentPolicyId":"63ebd106-8116-40e7-a0ab-01ae475d11bb",
-   "targetId":"ab4291f6-66b7-42bf-b597-a05b29414f5c",
-   "assignmentStatus":"ExpiredNotificationTriggered",
-   "assignmentState":"Expired",
-   "isExtended":false,
-   "expiredDateTime":"2019-04-25T23:45:40.42Z",
-   "customExtensionCalloutInstances": [
-     {
-       "@odata.type": "microsoft.graph.customExtensionCalloutInstance"
-     }
-    ]
+  "@odata.type": "#microsoft.graph.accessPackageAssignment",
+  "id": "String (identifier)",
+  "catalogId": "String",
+  "accessPackageId": "String",
+  "assignmentPolicyId": "String",
+  "targetId": "String",
+  "assignmentStatus": "String",
+  "assignmentState": "String",
+  "isExtended": "Boolean",
+  "expiredDateTime": "String (timestamp)",
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "customExtensionCalloutInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionCalloutInstance"
+    }
+  ]
 }
 ```
 
