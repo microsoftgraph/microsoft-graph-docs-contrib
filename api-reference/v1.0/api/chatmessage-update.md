@@ -18,7 +18,7 @@ The update only works for chats where members are Microsoft Teams users. If one 
 This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 > [!NOTE]
-> When using this API in application permssions, it is metered.  It supports the `model=A` payment model. For details, see [Payment models](/graph/teams-licenses#payment-models). If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+> When used with application permissions, it is metered.  It supports the `model=A` payment model. For details, see [Payment models](/graph/teams-licenses#payment-models). If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Permissions
 
