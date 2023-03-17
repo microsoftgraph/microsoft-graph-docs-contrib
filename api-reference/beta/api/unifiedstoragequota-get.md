@@ -51,8 +51,8 @@ If successful, this method returns a `200 OK` response code and a [unifiedStorag
 
 ## Examples
 
-## Example 1: Get the unified quota information for the current user
-### Request
+### Example 1: Get the unified quota information for the current user
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -89,8 +89,8 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Get the unified quota information for the current user
-### Request
+### Example 2: Get the unified quota information for the current user
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quot
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -127,8 +127,8 @@ Content-Type: application/json
 }
 ```
 
-## Example 3: Get the unified quota information, along with the service breakdowns, for the current user
-### Request
+### Example 3: Get the unified quota information, along with the service breakdowns, for the current user
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
