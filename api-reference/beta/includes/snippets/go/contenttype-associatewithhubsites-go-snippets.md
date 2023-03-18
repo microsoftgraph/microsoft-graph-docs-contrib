@@ -5,20 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetHubSiteUrls( []String {
+requestBody := graphmodels.NewAssociateWithHubSitesPostRequestBody()
+hubSiteUrls := []string {
 	"https://graph.microsoft.com/beta/sites/id",
+
 }
+requestBody.SetHubSiteUrls(hubSiteUrls)
 propagateToExistingLists := false
-requestBody.SetPropagateToExistingLists(&propagateToExistingLists)
-options := &msgraphsdk.AssociateWithHubSitesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(options)
+requestBody.SetPropagateToExistingLists(&propagateToExistingLists) 
+
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").AssociateWithHubSites().Post(context.Background(), requestBody, nil)
 
 
 ```

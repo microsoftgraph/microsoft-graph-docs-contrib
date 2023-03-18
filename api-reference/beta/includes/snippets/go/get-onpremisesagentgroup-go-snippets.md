@@ -5,17 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetQueryParameters{
-	Expand: "publishedResources,agents",
+requestParameters := &graphconfig.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"publishedResources","agents"},
 }
-options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Get(options)
+
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentGroupsById("onPremisesAgentGroup-id").Get(context.Background(), configuration)
 
 
 ```

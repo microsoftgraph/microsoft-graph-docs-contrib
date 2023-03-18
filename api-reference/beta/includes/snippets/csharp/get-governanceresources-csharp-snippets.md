@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var resources = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].Resources
-	.Request()
-	.GetAsync();
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].Resources.GetAsync();
+
 
 ```

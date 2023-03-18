@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-reason := "none"
-requestBody.SetReason(&reason)
-options := &msgraphsdk.RejectRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Reject(call-id).Post(options)
+requestBody := graphmodels.NewRejectPostRequestBody()
+reason := graphmodels.NONE_REJECTREASON 
+requestBody.SetReason(&reason) 
+
+graphClient.Communications().CallsById("call-id").Reject().Post(context.Background(), requestBody, nil)
 
 
 ```

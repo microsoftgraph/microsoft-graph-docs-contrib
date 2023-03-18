@@ -5,17 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.ItemsRequestBuilderGetQueryParameters{
-	Expand: "fields(select=Name,Color,Quantity)",
+requestParameters := &graphconfig.SiteItemListItemItemsRequestBuilderGetQueryParameters{
+	Expand: [] string {"fields(select=Name,Color,Quantity)"},
 }
-options := &msgraphsdk.ItemsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.SiteItemListItemItemsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-siteId := "site-id"
-listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Get(options)
+
+result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Get(context.Background(), configuration)
 
 
 ```

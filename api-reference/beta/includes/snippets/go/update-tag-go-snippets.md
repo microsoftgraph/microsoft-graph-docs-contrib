@@ -5,17 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTag()
+requestBody := graphmodels.NewTag()
 description := "This is an updated description."
-requestBody.SetDescription(&description)
-options := &msgraphsdk.TagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

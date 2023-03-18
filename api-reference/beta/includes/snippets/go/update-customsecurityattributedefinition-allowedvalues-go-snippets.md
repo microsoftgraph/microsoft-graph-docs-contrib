@@ -5,22 +5,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"allowedValues@delta":  []Object {
+headers := abstractions.NewRequestHeaders()
+headers.Add("OData-Version", "4.01")
+
+configuration := &graphconfig.DirectoryCustomSecurityAttributeDefinitionItemRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+id := "Baker"
+.SetId(&id) 
+isActive := false
+.SetIsActive(&isActive) 
+ := graphmodels.New()
+id := "Skagit"
+.SetId(&id) 
+isActive := true
+.SetIsActive(&isActive) 
+
+	allowedValues@delta := []graphmodels.Objectable {
+		,
+		,
+
 	}
 }
-headers := map[string]string{
-	"OData-Version": "4.01"
-}
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
-}
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

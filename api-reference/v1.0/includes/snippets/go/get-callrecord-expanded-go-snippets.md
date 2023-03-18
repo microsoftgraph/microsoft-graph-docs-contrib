@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.CallRecordRequestBuilderGetQueryParameters{
-	Expand: "sessions($expand=segments)",
+requestParameters := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"sessions($expand=segments)"},
 }
-options := &msgraphsdk.CallRecordRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.CommunicationsCallRecordItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-callRecordId := "callRecord-id"
-result, err := graphClient.Communications().CallRecordsById(&callRecordId).Get(options)
+
+result, err := graphClient.Communications().CallRecordsById("callRecord-id").Get(context.Background(), configuration)
 
 
 ```

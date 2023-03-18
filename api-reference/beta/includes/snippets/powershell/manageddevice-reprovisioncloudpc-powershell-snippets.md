@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.DeviceManagement.Actions
 
-Invoke-MgCloudDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
 
 ```

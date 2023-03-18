@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.RegistrationRequestBuilderGetQueryParameters{
-	Expand: "microsoft.graph.meetingRegistration/customQuestions",
+requestParameters := &graphconfig.MeOnlineMeetingItemRegistrationRequestBuilderGetQueryParameters{
+	Expand: [] string {"microsoft.graph.meetingRegistration/customQuestions"},
 }
-options := &msgraphsdk.RegistrationRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.MeOnlineMeetingItemRegistrationRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Get(options)
+
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Get(context.Background(), configuration)
 
 
 ```

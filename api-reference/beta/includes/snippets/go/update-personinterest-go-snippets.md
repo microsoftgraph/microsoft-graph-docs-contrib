@@ -5,17 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPersonInterest()
-requestBody.SetCategories( []String {
+requestBody := graphmodels.NewPersonInterest()
+categories := []string {
 	"Sports",
+
 }
-options := &msgraphsdk.PersonInterestRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-personInterestId := "personInterest-id"
-graphClient.Me().Profile().InterestsById(&personInterestId).Patch(options)
+requestBody.SetCategories(categories)
+
+result, err := graphClient.Me().Profile().InterestsById("personInterest-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

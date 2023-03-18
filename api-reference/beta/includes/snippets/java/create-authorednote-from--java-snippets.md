@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AuthoredNote authoredNote = new AuthoredNote();
 ItemBody content = new ItemBody();
-content.content = "String";
+content.content = "Please take a look at the files tagged with follow up";
 content.contentType = BodyType.TEXT;
 authoredNote.content = content1;
 

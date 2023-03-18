@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewSecureScoreControlProfile()
+requestBody := graphmodels.NewSecureScoreControlProfile()
 controlStateUpdates := "controlStateUpdates-value"
-requestBody.SetControlStateUpdates(&controlStateUpdates)
-options := &msgraphsdk.SecureScoreControlProfileRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-secureScoreControlProfileId := "secureScoreControlProfile-id"
-graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(options)
+requestBody.SetControlStateUpdates(&controlStateUpdates) 
+
+result, err := graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

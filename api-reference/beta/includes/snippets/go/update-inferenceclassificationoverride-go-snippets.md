@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewInferenceClassificationOverride()
-classifyAs := "focused"
-requestBody.SetClassifyAs(&classifyAs)
-options := &msgraphsdk.InferenceClassificationOverrideRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
-graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Patch(options)
+requestBody := graphmodels.NewInferenceClassificationOverride()
+classifyAs := graphmodels.FOCUSED_INFERENCECLASSIFICATIONTYPE 
+requestBody.SetClassifyAs(&classifyAs) 
+
+result, err := graphClient.Me().InferenceClassification().OverridesById("inferenceClassificationOverride-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

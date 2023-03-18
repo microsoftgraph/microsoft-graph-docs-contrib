@@ -32,10 +32,10 @@ Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connecto
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The randomly generated identifier of the API connector. |
-|displayName|String| The name of the API connector. |
-|targetUrl|String| The URL of the API endpoint to call. |
 |authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Basic and PKCS 12 client certificate are supported.|
+|displayName|String| The name of the API connector. |
+|id|String|The randomly generated identifier of the API connector. |
+|targetUrl|String| The URL of the API endpoint to call. |
 
 ## Relationships
 

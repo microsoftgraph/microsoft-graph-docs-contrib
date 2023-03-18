@@ -5,17 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewIdentityUserFlowAttributeAssignment()
-userInputType := "textBox"
-requestBody.SetUserInputType(&userInputType)
-options := &msgraphsdk.IdentityUserFlowAttributeAssignmentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-identityUserFlowAttributeAssignmentId := "identityUserFlowAttributeAssignment-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Patch(options)
+requestBody := graphmodels.NewIdentityUserFlowAttributeAssignment()
+userInputType := graphmodels.TEXTBOX_IDENTITYUSERFLOWATTRIBUTEINPUTTYPE 
+requestBody.SetUserInputType(&userInputType) 
+
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignmentsById("identityUserFlowAttributeAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

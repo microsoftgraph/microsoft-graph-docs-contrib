@@ -5,20 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCloudPcOrganizationSettings()
-userAccountType := "standardUser"
-requestBody.SetUserAccountType(&userAccountType)
-osVersion := "windows11"
-requestBody.SetOsVersion(&osVersion)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
-}
-options := &msgraphsdk.OrganizationSettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(options)
+requestBody := graphmodels.NewCloudPcOrganizationSettings()
+enableMEMAutoEnroll := true
+requestBody.SetEnableMEMAutoEnroll(&enableMEMAutoEnroll) 
+osVersion := graphmodels.WINDOWS11_CLOUDPCOPERATINGSYSTEM 
+requestBody.SetOsVersion(&osVersion) 
+userAccountType := graphmodels.STANDARDUSER_CLOUDPCUSERACCOUNTTYPE 
+requestBody.SetUserAccountType(&userAccountType) 
+windowsSettings := graphmodels.NewCloudPcWindowsSettings()
+language := "en-US"
+windowsSettings.SetLanguage(&language) 
+requestBody.SetWindowsSettings(windowsSettings)
+
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

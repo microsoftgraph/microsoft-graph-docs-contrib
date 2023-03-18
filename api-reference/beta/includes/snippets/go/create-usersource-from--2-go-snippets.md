@@ -5,19 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewUserSource()
+requestBody := graphmodels.NewUserSource()
 email := "adelev@contoso.com"
-requestBody.SetEmail(&email)
-includedSources := "mailbox"
-requestBody.SetIncludedSources(&includedSources)
-options := &msgraphsdk.UserSourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).UserSources().Post(options)
+requestBody.SetEmail(&email) 
+includedSources := graphmodels.MAILBOX_SOURCETYPE 
+requestBody.SetIncludedSources(&includedSources) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHoldsById("legalHold-id").UserSources().Post(context.Background(), requestBody, nil)
 
 
 ```

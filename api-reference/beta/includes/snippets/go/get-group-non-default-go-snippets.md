@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
-	Select: "allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount",
+requestParameters := &graphconfig.GroupItemRequestBuilderGetQueryParameters{
+	Select: [] string {"allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"},
 }
-options := &msgraphsdk.GroupRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.GroupItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Get(options)
+
+result, err := graphClient.GroupsById("group-id").Get(context.Background(), configuration)
 
 
 ```

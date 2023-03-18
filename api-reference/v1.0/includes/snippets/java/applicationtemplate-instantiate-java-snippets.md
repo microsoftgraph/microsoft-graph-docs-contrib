@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String displayName = "My custom name";
+String displayName = "Azure AD SAML Toolkit";
 
-graphClient.applicationTemplates("{id}")
+graphClient.applicationTemplates("229946b9-a9fb-45b8-9531-efa47453ac9e")
 	.instantiate(ApplicationTemplateInstantiateParameterSet
 		.newBuilder()
 		.withDisplayName(displayName)

@@ -1,7 +1,7 @@
 ---
 title: "List scopedMembers for a directory role"
 description: "Retrieve a list of scopedRoleMembership objects for a directory role."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -22,10 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{role-id}/scopedMembers
-GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/scopedMembers
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -47,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+The following is an example of a request for a directory role **id** `43a63cc2-582b-4d81-a79d-1591f91d5558`.
 
 
 # [HTTP](#tab/http)
@@ -56,18 +59,15 @@ The following is an example of a request for a directory role **id** `41d12a2f-c
   "name": "get_scopedmembers_directoryrole"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
+GET https://graph.microsoft.com/v1.0/directoryRoles/43a63cc2-582b-4d81-a79d-1591f91d5558/scopedMembers
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedmembers-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-scopedmembers-directoryrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-scopedmembers-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -82,8 +82,11 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-scopedmembers-directoryrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-scopedmembers-directoryrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 The following example shows the response. 
@@ -104,7 +107,7 @@ Content-type: application/json
     "value": [
         {
             "id": "LyrRQajKPk66FAXlECzghXFuYtw3SOtAvkq8KdiKEXiTwZeOU-r8RIHrq2vQ4F1wU",
-            "roleId": "41d12a2f-caa8-4e3e-ba14-05e5102ce085",
+            "roleId": "43a63cc2-582b-4d81-a79d-1591f91d5558",
             "administrativeUnitId": "dc626e71-4837-40eb-be4a-bc29d88a1178",
             "roleMemberInfo": {
                 "id": "8e97c193-ea53-44fc-81eb-ab6bd0e05d70",
@@ -127,8 +130,8 @@ The following is an example of a request for a directory role with **roleTemplat
   "blockType": "ignored",
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+```http
+GET https://graph.microsoft.com/v1.0/directoryRoles(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
 ```
 
 

@@ -5,31 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewB2xIdentityUserFlow()
+requestBody := graphmodels.NewB2xIdentityUserFlow()
 id := "UserFlowWithAPIConnector"
-requestBody.SetId(&id)
-userFlowType := "signUpOrSignIn"
-requestBody.SetUserFlowType(&userFlowType)
+requestBody.SetId(&id) 
+userFlowType := graphmodels.SIGNUPORSIGNIN_USERFLOWTYPE 
+requestBody.SetUserFlowType(&userFlowType) 
 userFlowTypeVersion := float32(1)
-requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-apiConnectorConfiguration := msgraphsdk.NewUserFlowApiConnectorConfiguration()
-requestBody.SetApiConnectorConfiguration(apiConnectorConfiguration)
-postFederationSignup := msgraphsdk.NewIdentityApiConnector()
+requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion) 
+apiConnectorConfiguration := graphmodels.NewUserFlowApiConnectorConfiguration()
+postFederationSignup := graphmodels.NewIdentityApiConnector()
+additionalData := map[string]interface{}{
+	"odataId" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
+}
+postFederationSignup.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostFederationSignup(postFederationSignup)
-postFederationSignup.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1/identity/apiConnectors/{id}",
+postAttributeCollection := graphmodels.NewIdentityApiConnector()
+additionalData := map[string]interface{}{
+	"odataId" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
 }
-postAttributeCollection := msgraphsdk.NewIdentityApiConnector()
+postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
-postAttributeCollection.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1/identity/apiConnectors/{id}",
-}
-options := &msgraphsdk.B2xUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().B2xUserFlows().Post(options)
+requestBody.SetApiConnectorConfiguration(apiConnectorConfiguration)
+
+result, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

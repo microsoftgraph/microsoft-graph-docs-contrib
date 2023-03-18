@@ -5,21 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.MeRequestBuilderGetQueryParameters{
-	Expand: "manager($levels=max;$select=id,displayName)",
-	Select: "id,displayName",
-	Count: true,
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+requestParameters := &graphconfig.MeRequestBuilderGetQueryParameters{
+	Expand: [] string {"manager($levels=max;$select=id,displayName)"},
+	Select: [] string {"id","displayName"},
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.MeRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.MeRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Me().Get(options)
+
+result, err := graphClient.Me().Get(context.Background(), configuration)
 
 
 ```

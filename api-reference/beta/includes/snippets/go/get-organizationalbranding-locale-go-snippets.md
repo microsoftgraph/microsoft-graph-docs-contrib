@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Accept-Language": "fr-FR"
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "fr-FR")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.BrandingRequestBuilderGetOptions{
-	H: headers,
-}
-organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
+
+result, err := graphClient.OrganizationById("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

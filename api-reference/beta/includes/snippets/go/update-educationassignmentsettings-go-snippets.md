@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationAssignmentSettings()
+requestBody := graphmodels.NewEducationAssignmentSettings()
 submissionAnimationDisabled := true
-requestBody.SetSubmissionAnimationDisabled(&submissionAnimationDisabled)
-options := &msgraphsdk.AssignmentSettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentSettings().Patch(options)
+requestBody.SetSubmissionAnimationDisabled(&submissionAnimationDisabled) 
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

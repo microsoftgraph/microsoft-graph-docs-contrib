@@ -3,7 +3,7 @@ title: deviceHealth resource type
 description: Represents a device's health, including any errors.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

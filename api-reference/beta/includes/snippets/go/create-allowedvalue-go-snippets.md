@@ -5,18 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAllowedValue()
+requestBody := graphmodels.NewAllowedValue()
 id := "Alpine"
-requestBody.SetId(&id)
-isActive := "true"
-requestBody.SetIsActive(&isActive)
-options := &msgraphsdk.AllowedValuesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValues().Post(options)
+requestBody.SetId(&id) 
+isActive := true
+requestBody.SetIsActive(&isActive) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").AllowedValues().Post(context.Background(), requestBody, nil)
 
 
 ```

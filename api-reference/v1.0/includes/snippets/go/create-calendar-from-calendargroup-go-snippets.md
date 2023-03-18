@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCalendar()
+requestBody := graphmodels.NewCalendar()
 name := "Marketing calendar"
-requestBody.SetName(&name)
-options := &msgraphsdk.CalendarsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().CalendarGroupsById("calendarGroup-id").Calendars().Post(context.Background(), requestBody, nil)
 
 
 ```

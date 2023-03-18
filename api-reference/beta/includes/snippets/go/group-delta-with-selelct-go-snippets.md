@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
-	Select: "displayName,description,mailNickname",
+requestParameters := &graphconfig.GroupsDelta()RequestBuilderGetQueryParameters{
+	Select: [] string {"displayName","description","mailNickname"},
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.GroupsDelta()RequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Delta()().Get(options)
+
+result, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
 
 
 ```

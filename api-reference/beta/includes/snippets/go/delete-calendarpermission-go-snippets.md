@@ -5,11 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-userId := "user-id"
-calendarPermissionId := "calendarPermission-id"
-graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Delete(nil)
+
+graphClient.UsersById("user-id").Calendar().CalendarPermissionsById("calendarPermission-id").Delete(context.Background(), nil)
 
 
 ```

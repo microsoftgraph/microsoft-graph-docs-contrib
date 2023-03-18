@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewOutlookTaskGroup()
+requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Personal Tasks"
-requestBody.SetName(&name)
-options := &msgraphsdk.OutlookTaskGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-outlookTaskGroupId := "outlookTaskGroup-id"
-graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Outlook().TaskGroupsById("outlookTaskGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

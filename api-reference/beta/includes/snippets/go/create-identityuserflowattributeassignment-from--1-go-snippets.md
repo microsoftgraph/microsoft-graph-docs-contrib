@@ -5,28 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewIdentityUserFlowAttributeAssignment()
+requestBody := graphmodels.NewIdentityUserFlowAttributeAssignment()
 isOptional := false
-requestBody.SetIsOptional(&isOptional)
+requestBody.SetIsOptional(&isOptional) 
 requiresVerification := false
-requestBody.SetRequiresVerification(&requiresVerification)
-userInputType := "TextBox"
-requestBody.SetUserInputType(&userInputType)
+requestBody.SetRequiresVerification(&requiresVerification) 
+userInputType := graphmodels.TEXTBOX_IDENTITYUSERFLOWATTRIBUTEINPUTTYPE 
+requestBody.SetUserInputType(&userInputType) 
 displayName := "Shoe size"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetUserAttributeValues( []UserAttributeValuesItem {
+requestBody.SetDisplayName(&displayName) 
+userAttributeValues := []graphmodels.UserAttributeValuesItemable {
+
 }
-userAttribute := msgraphsdk.NewIdentityUserFlowAttribute()
-requestBody.SetUserAttribute(userAttribute)
+requestBody.SetUserAttributeValues(userAttributeValues)
+userAttribute := graphmodels.NewIdentityUserFlowAttribute()
 id := "extension_guid_shoeSize"
-userAttribute.SetId(&id)
-options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().Post(options)
+userAttribute.SetId(&id) 
+requestBody.SetUserAttribute(userAttribute)
+
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserAttributeAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

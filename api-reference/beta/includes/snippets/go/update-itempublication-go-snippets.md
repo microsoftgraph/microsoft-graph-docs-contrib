@@ -5,19 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewItemPublication()
+requestBody := graphmodels.NewItemPublication()
 publisher := "International Association of Branding Management Publishing"
-requestBody.SetPublisher(&publisher)
+requestBody.SetPublisher(&publisher) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
-options := &msgraphsdk.ItemPublicationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-itemPublicationId := "itemPublication-id"
-graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
+
+result, err := graphClient.UsersById("user-id").Profile().PublicationsById("itemPublication-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,15 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTodoTaskList()
+requestBody := graphmodels.NewTodoTaskList()
 displayName := "Travel items"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Todo().Lists().Post(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Todo().Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

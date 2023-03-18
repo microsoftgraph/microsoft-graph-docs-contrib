@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const user = {
   passwordProfile: {
-    forceChangePasswordNextSignIn: false,
+    forceChangePasswordNextSignIn: true,
     password: 'xWwvJ]6NMw+bWH-d'
   }
 };

@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a governanceRoleDefin
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # Get governanceRoleDefinition

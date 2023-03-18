@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAttachment()
+requestBody := graphmodels.NewAttachment()
 name := "menu.txt"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.fileAttachment",
-	"contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+	"contentBytes" : "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Me().EventsById("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

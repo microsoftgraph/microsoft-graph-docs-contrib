@@ -5,17 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.ChatsRequestBuilderGetQueryParameters{
-	Expand: "members",
-	Filter: "members/any(o:%20o/displayname%20eq%20'Peter%20Parker')",
+
+requestFilter := "members/any"
+
+requestParameters := &graphconfig.UserItemChatsRequestBuilderGetQueryParameters{
+	Expand: [] string {"members"},
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.ChatsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.UserItemChatsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Chats().Get(options)
+
+result, err := graphClient.UsersById("user-id").Chats().Get(context.Background(), configuration)
 
 
 ```

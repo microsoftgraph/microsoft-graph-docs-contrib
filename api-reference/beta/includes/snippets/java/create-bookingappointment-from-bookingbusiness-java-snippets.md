@@ -49,6 +49,7 @@ bookingAppointment.invoiceStatus = BookingInvoiceStatus.OPEN;
 bookingAppointment.invoiceUrl = "theInvoiceUrl";
 bookingAppointment.isLocationOnline = true;
 bookingAppointment.optOutOfCustomerEmail = false;
+bookingAppointment.anonymousJoinWebUrl = null;
 bookingAppointment.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
 bookingAppointment.preBuffer = DatatypeFactory.newInstance().newDuration("PT5M");
 bookingAppointment.price = 10.0d;
@@ -153,7 +154,7 @@ customers.customQuestionAnswers = customQuestionAnswersList;
 customersList.add(customers);
 bookingAppointment.customers = customersList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").appointments()
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").appointments()
 	.buildRequest()
 	.post(bookingAppointment);
 

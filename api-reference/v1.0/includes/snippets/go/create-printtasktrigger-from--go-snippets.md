@@ -5,19 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPrintTaskTrigger()
-event := "jobStarted"
-requestBody.SetEvent(&event)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"definition@odata.bind": "https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}",
+requestBody := graphmodels.NewPrintTaskTrigger()
+event := graphmodels.JOBSTARTED_PRINTEVENT 
+requestBody.SetEvent(&event) 
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}", 
 }
-options := &msgraphsdk.TaskTriggersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).TaskTriggers().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Print().PrintersById("printer-id").TaskTriggers().Post(context.Background(), requestBody, nil)
 
 
 ```

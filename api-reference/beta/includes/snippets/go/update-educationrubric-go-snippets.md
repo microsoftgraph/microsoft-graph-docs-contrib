@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationRubric()
+requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Credit Rubric after display name patch"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.EducationRubricRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-educationRubricId := "educationRubric-id"
-graphClient.Education().Me().RubricsById(&educationRubricId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Education().Me().RubricsById("educationRubric-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

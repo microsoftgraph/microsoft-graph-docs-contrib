@@ -5,20 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewChannel()
+requestBody := graphmodels.NewChannel()
 displayName := "Architecture Discussion"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "This channel is where we debate all future architecture plans"
-requestBody.SetDescription(&description)
-membershipType := "standard"
-requestBody.SetMembershipType(&membershipType)
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+requestBody.SetDescription(&description) 
+membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
+
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

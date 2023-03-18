@@ -1,15 +1,16 @@
 ---
-title: "Specify the default channel for education assignment notifications using the Microsoft Graph API"
-description: "Use the education API in Microsoft Graph to specify the default Microsoft Teams channel to which to send notifications about an **assignment**."
+title: "Specify the default channel for education assignment notifications"
+description: "Use the education API in Microsoft Graph to specify the default Microsoft Teams channel to send notifications to about an assignment."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
+ms.collection: "education"
 doc_type: conceptualPageType
 ---
 
 # Specify the default channel for education assignment notifications using the Microsoft Graph API
 
-This article describes how to use the education API in Microsoft Graph to specify the default Microsoft Teams channel to which to send notifications about an **assignment**. Specifying the default channel involves building the **notificationChannelUrl** string property for an [educationAssignment](/graph/api/resources/educationassignment). The default value for this property is `null`.
+This article describes how to use the education API in Microsoft Graph to specify the default Microsoft Teams channel to send notifications to about an **assignment**. Specifying the default channel involves building the **notificationChannelUrl** string property for an [educationAssignment](/graph/api/resources/educationassignment). The default value for this property is `null`.
 
 ## Prerequisites
 
@@ -30,14 +31,16 @@ The following steps describe how to build the property value.
 ### Step 1 - Get the team ID based on your team name
 To find the team id, make a GET request with the team name. If you already have the team id, skip this step.
 
-#### Request example
+#### Request
+
 The following example shows the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'English Fall ''21'
 ```
 
-#### Response example
+#### Response
+
 The following example shows the response.
 
 ```http
@@ -73,14 +76,16 @@ Content-type: application/json
 ### Step 2 - Get the channel ID based on channel name and team ID
 Make a GET request with the team ID obtained in the previous step and the channel name. Skip this step if you already have the channel id.
 
-#### Request example
+#### Request
+
 The following example shows the request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels?$filter=displayName eq 'General'
 ```
 
-#### Response example
+#### Response
+
 The following example shows the response.
 
 ```http
@@ -220,6 +225,7 @@ Content-Type: application/json
 ```
 
 ##### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

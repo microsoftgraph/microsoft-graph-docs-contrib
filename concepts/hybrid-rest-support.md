@@ -1,6 +1,6 @@
 ---
 title: "Use REST APIs to access mailboxes in Exchange hybrid deployments (deprecated)"
-description: "The use of REST APIs in Exchange hybrid deployments is deprecated and will no longer be supported effective March 2023."
+description: "Effective March 2023, the use of REST APIs in Exchange hybrid deployments is deprecated and will no longer be supported."
 ms.localizationpriority: high
 ---
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let event = await client.api('/me/events/AAMkAGIAAAoZDOFAAA=')
+let event = await client.api('/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA=')
 	.header('Prefer','outlook.timezone="Pacific Standard Time"')
 	.select('subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees')
 	.get();

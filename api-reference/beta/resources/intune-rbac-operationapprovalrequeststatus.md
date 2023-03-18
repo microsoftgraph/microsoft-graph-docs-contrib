@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalRequestStatus enum type"
 description: "Status of the current Approval Request"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,7 +27,4 @@ Status of the current Approval Request
 |cancelled|4|Approval request cancelled by the user, requiring no further action.|
 |completed|5|Approval request completed, requiring no further action.|
 |expired|6|Approval request has expired, a new approval must be made in order to complete this request.|
-
-
-
-
+|unknownFutureValue|99|Placeholder for future Operation Approval Request Statuses.|

@@ -1,7 +1,7 @@
 ---
 title: "Create operationApprovalRequest"
 description: "Create a new operationApprovalRequest object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the o
 |lastModifiedDateTime|DateTimeOffset|Last modified DateTime. This property is read-only.|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the requestor. This property is read-only.|
 |approver|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the approver. This property is read-only.|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
+|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
 |requestJustification|String|The request justification. This property is read-only.|
 |approvalJustification|String|The justification for the approval of the request. This property is read-only.|
 |operationApprovalPolicies|String|The operational approval policies used in the request. This property is read-only.|
@@ -175,7 +175,3 @@ Content-Length: 1528
   "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
-
-
-
-

@@ -5,32 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTenantCustomizedInformation()
+requestBody := graphmodels.NewTenantCustomizedInformation()
 tenantId := "String"
-requestBody.SetTenantId(&tenantId)
-requestBody.SetContacts( []TenantContactInformation {
-	msgraphsdk.NewTenantContactInformation(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
-		"name": "String",
-		"title": "String",
-		"email": "String",
-		"phone": "String",
-		"notes": "String",
-	}
+requestBody.SetTenantId(&tenantId) 
+
+
+tenantContactInformation := graphmodels.NewTenantContactInformation()
+name := "String"
+tenantContactInformation.SetName(&name) 
+title := "String"
+tenantContactInformation.SetTitle(&title) 
+email := "String"
+tenantContactInformation.SetEmail(&email) 
+phone := "String"
+tenantContactInformation.SetPhone(&phone) 
+notes := "String"
+tenantContactInformation.SetNotes(&notes) 
+
+contacts := []graphmodels.TenantContactInformationable {
+	tenantContactInformation,
+
 }
+requestBody.SetContacts(contacts)
 website := "String"
-requestBody.SetWebsite(&website)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
-}
-options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
+requestBody.SetWebsite(&website) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,17 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewMessageIdsRequestBody()
-requestBody.SetMessageIds( []String {
+requestBody := graphmodels.NewUnarchivePostRequestBody()
+messageIds := []string {
 	"MC172851",
 	"MC167983",
+
 }
-options := &msgraphsdk.UnarchiveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(options)
+requestBody.SetMessageIds(messageIds)
+
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(context.Background(), requestBody, nil)
 
 
 ```

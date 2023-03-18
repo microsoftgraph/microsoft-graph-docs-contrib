@@ -17,7 +17,10 @@ Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-r
 In order to call the beta API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
 
 ```csharp
-using Microsoft.Graph;
+// Version 5.x
+using Microsoft.Graph.Beta;
+// Version 4.x and earlier
+// using Microsoft.Graph;
 
 // Create a new instance of GraphServiceClient.
 GraphServiceClient graphClient = new GraphServiceClient(...);
@@ -110,14 +113,12 @@ In order to call the beta API, you must install the [Microsoft Graph Beta SDK fo
 ```go
 import (
     msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-    a "github.com/microsoft/kiota-authentication-azure-go"
 )
-
-auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
-
-adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
-
-client := msgraphsdk.NewGraphServiceClient(adapter)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(credentials, scopes)
 ```
 
 ---
+
+
+## See also
+[SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).

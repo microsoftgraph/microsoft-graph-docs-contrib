@@ -5,20 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationOutcome()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+requestBody := graphmodels.NewEducationOutcome()
+additionalData := map[string]interface{}{
+feedback := graphmodels.New()
+text := graphmodels.New()
+content := "This is feedback for the assignment as a whole."
+text.SetContent(&content) 
+contentType := "text"
+text.SetContentType(&contentType) 
+	feedback.SetText(text)
+	requestBody.SetFeedback(feedback)
 }
-options := &msgraphsdk.EducationOutcomeRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-educationOutcomeId := "educationOutcome-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").OutcomesById("educationOutcome-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

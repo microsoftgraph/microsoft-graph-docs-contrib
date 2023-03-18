@@ -1,7 +1,7 @@
 ---
 title: "Get aospDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the aospDeviceOwnerEnterpriseWiFiConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [aospDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1888
+Content-Length: 1984
 
 {
   "value": {
@@ -109,6 +109,9 @@ Content-Length: 1888
     "preSharedKey": "Pre Shared Key value",
     "preSharedKeyIsSet": true,
     "eapType": "eapTtls",
+    "trustedServerCertificateNames": [
+      "Trusted Server Certificate Names value"
+    ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -116,7 +119,3 @@ Content-Length: 1888
   }
 }
 ```
-
-
-
-

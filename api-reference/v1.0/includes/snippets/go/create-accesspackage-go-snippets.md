@@ -5,23 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAccessPackage()
+requestBody := graphmodels.NewAccessPackage()
 displayName := "sales reps"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "outside sales representatives"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 isHidden := false
-requestBody.SetIsHidden(&isHidden)
-catalog := msgraphsdk.NewAccessPackageCatalog()
-requestBody.SetCatalog(catalog)
+requestBody.SetIsHidden(&isHidden) 
+catalog := graphmodels.NewAccessPackageCatalog()
 id := "66584aae-98bb-48cc-9458-7bee5d2a6577"
-catalog.SetId(&id)
-options := &msgraphsdk.AccessPackagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(options)
+catalog.SetId(&id) 
+requestBody.SetCatalog(catalog)
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(context.Background(), requestBody, nil)
 
 
 ```

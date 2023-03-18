@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OAuth2PermissionGrantCollectionWithReferencesPage oauth2PermissionGrants = graphClient.users("7d54cb02-aaa3-4016-9f9c-a4b49422dd9b").oauth2PermissionGrants()
+OAuth2PermissionGrantCollectionWithReferencesPage oauth2PermissionGrants = graphClient.users("6e7b768e-07e2-4810-8459-485f84f8f204").oauth2PermissionGrants()
 	.buildRequest()
 	.get();
 

@@ -5,15 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter%20: "%20principalId%20eq%20'f1847572-48aa-47aa-96a3-2ec61904f41f'",
+
+requestFilter := " principalId eq '5bde3e51-d13b-4db1-9948-fe4b109d11a7'"
+
+requestParameters := &graphconfig.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.RoleManagementDirectoryRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Get(options)
+
+result, err := graphClient.RoleManagement().Directory().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
-title: "Sending emails with MIME content"
-description: "Email clients have the ability to send emails through Exchange in a MIME message format."
+title: "Send emails with MIME content using the Outlook mail API"
+description: "Email clients can send messages through Exchange in a MIME message format and communicate across multiple email platforms."
 author: "isvargasmsft"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -32,13 +32,13 @@ For more information on MIME format, see [getting MIME content of a message](out
 | Reply to a message | [reply](/graph/api/message-reply) |
 | Create a draft to reply to a message | [createReply](/graph/api/message-createreply) |
 | ReplyAll to a message | [replyAll](/graph/api/message-replyall) | 
-| Create a draft to replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
+| Create a draft to replyAll to a message | [createReplyAll](/graph/api/message-createreplyall) |
 | Forward a message | [forward](/graph/api/message-forward) |
-| Create a draft to forward a message | [createForward](/graph/api-reference/api/message-createforward) | 
+| Create a draft to forward a message | [createForward](/graph/api/message-createforward) | 
 
 
 ## Specify request header and MIME message body
-You can create a [message](/graph/api/resources/user) in JSON or MIME format. Specify the intended format in the request header:
+You can create a [message](/graph/api/resources/message.md) in JSON or MIME format. Specify the intended format in the request header:
 
 - `Content-Type: application/json` to use JSON format in the request body.
 - `Content-Type: text/plain` to use MIME format in the request body.
@@ -190,4 +190,7 @@ CgAAAA==
 |--------|------|----|-------|
 | MIME content malformed, missing | POST, PUT | 400 | Invalid base64 string for MIME content. |
 
+## Next steps
 
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0

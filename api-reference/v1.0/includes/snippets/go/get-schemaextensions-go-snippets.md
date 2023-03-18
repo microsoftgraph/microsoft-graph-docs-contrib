@@ -5,15 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.SchemaExtensionsRequestBuilderGetQueryParameters{
-	Filter: "id%20eq%20'graphlearn_test'",
+
+requestFilter := "id eq 'graphlearn_test'"
+
+requestParameters := &graphconfig.SchemaExtensionsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.SchemaExtensionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.SchemaExtensions().Get(options)
+
+result, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
 
 
 ```

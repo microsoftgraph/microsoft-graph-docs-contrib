@@ -5,52 +5,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationSchool()
+requestBody := graphmodels.NewEducationSchool()
 displayName := "String"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "String"
-requestBody.SetDescription(&description)
-externalSource := "String"
-requestBody.SetExternalSource(&externalSource)
+requestBody.SetDescription(&description) 
+externalSource := graphmodels.STRING_EDUCATIONEXTERNALSOURCE 
+requestBody.SetExternalSource(&externalSource) 
 externalSourceDetail := "String"
-requestBody.SetExternalSourceDetail(&externalSourceDetail)
+requestBody.SetExternalSourceDetail(&externalSourceDetail) 
 principalEmail := "String"
-requestBody.SetPrincipalEmail(&principalEmail)
+requestBody.SetPrincipalEmail(&principalEmail) 
 principalName := "String"
-requestBody.SetPrincipalName(&principalName)
+requestBody.SetPrincipalName(&principalName) 
 externalPrincipalId := "String"
-requestBody.SetExternalPrincipalId(&externalPrincipalId)
+requestBody.SetExternalPrincipalId(&externalPrincipalId) 
 lowestGrade := "String"
-requestBody.SetLowestGrade(&lowestGrade)
+requestBody.SetLowestGrade(&lowestGrade) 
 highestGrade := "String"
-requestBody.SetHighestGrade(&highestGrade)
+requestBody.SetHighestGrade(&highestGrade) 
 schoolNumber := "String"
-requestBody.SetSchoolNumber(&schoolNumber)
+requestBody.SetSchoolNumber(&schoolNumber) 
 externalId := "String"
-requestBody.SetExternalId(&externalId)
+requestBody.SetExternalId(&externalId) 
 phone := "String"
-requestBody.SetPhone(&phone)
+requestBody.SetPhone(&phone) 
 fax := "String"
-requestBody.SetFax(&fax)
-createdBy := msgraphsdk.NewIdentitySet()
+requestBody.SetFax(&fax) 
+createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
-createdBy.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.identitySet",
-}
-address := msgraphsdk.NewPhysicalAddress()
+address := graphmodels.NewPhysicalAddress()
 requestBody.SetAddress(address)
-address.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.physicalAddress",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationSchool",
-}
-options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Schools().Post(options)
+
+result, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
 
 
 ```

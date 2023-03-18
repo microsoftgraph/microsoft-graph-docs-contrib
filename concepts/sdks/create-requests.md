@@ -5,13 +5,13 @@ ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
-<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD025 MD051 -->
 
 # Make API calls using the Microsoft Graph SDKs
 
 The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started.md), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating.md).
+There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
@@ -38,6 +38,12 @@ To read information from Microsoft Graph, you first need to create a request obj
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-read.md)]
 
 ---
 
@@ -67,6 +73,12 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-select.md)]
 
 ---
 
@@ -98,6 +110,12 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-list.md)]
+
 ---
 
 The object returned when retrieving a list of entities is likely to be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
@@ -128,6 +146,12 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-index.md)]
+
 ---
 
 ## Use $expand to access related entities
@@ -155,6 +179,12 @@ You can use the `$expand` filter to request a related entity, or collection of e
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-expand.md)]
 
 ---
 
@@ -184,6 +214,12 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-delete.md)]
+
 ---
 
 ## Make a POST request to create a new entity
@@ -211,6 +247,12 @@ For SDKs that support a fluent style, new items can be added to collections with
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-create.md)]
 
 ---
 
@@ -240,6 +282,12 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-update.md)]
+
 ---
 
 ## Use HTTP headers to control request behavior
@@ -268,6 +316,12 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
 
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-headers.md)]
+
 ---
 
 ## Provide custom query parameters
@@ -295,5 +349,12 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 [!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
+
+# [Python](#tab/Python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+TODO
+[!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---

@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-graphClient.RoleManagement().CloudPC().RoleDefinitionsById(&unifiedRoleDefinitionId).Delete(nil)
+
+graphClient.RoleManagement().CloudPC().RoleDefinitionsById("unifiedRoleDefinition-id").Delete(context.Background(), nil)
 
 
 ```

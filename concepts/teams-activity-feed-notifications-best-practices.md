@@ -1,6 +1,6 @@
 ---
 title: "Best practices for using Microsoft Teams activity feed notifications"
-description: "This article provides best practices and examples for working with activity feed notifications in Microsoft Graph."
+description: "Get tips for enhancing the Microsoft Teams activity feed notification experience in Microsoft Graph and learn when to choose notifications or bot framework messages."
 author: "KirtiPereira"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -31,20 +31,20 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
 * Notifications should convey important information that is relevant to the user. For example, *Diego assigned a sales ticket to you* is a relevant message; *Joni left the sales team* is not.
 * Avoid sending notifications that are promotional in nature, such as *Try the new feature in the Cycling app*.
-* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
+* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [choose activity feed notifications or bot framework messages](#choose-activity-feed-notifications-or-bot-framework-messages).
 * Use the **text preview** section in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
 * Don't add a period at the end of the notification title, to be consistent with all other notification settings in Teams.
 * Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
 * Make sure that the feed experience is self-contained. For example, any pop-ups and modals must remain in the app.
-* Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
+* Verify that your app does not send more than 20 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 20.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
     > [!NOTE]
     > The 30-day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
-## Activity feed notifications or bot framework messages
+## Choose activity feed notifications or bot framework messages
 
-You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each. 
+You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each.
 
 ### Activity feed notifications
 
@@ -68,4 +68,5 @@ It is useful for the alert to be consumed as a chat or channel message; for exam
 
 ## See also
 
-[Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile) 
+- [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
+- [Microsoft Teams API overview](teams-concept-overview.md)

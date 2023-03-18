@@ -48,7 +48,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`.|
+|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** is not allowed.|
 
 
 ## Response
@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK response` code and the updated **ch
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_chat"
+  "name": "update_chat",
+  "sampleKeys": ["19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2"]
 }
 -->
 ``` http
@@ -73,16 +74,13 @@ Content-Type: application/json
     "topic": "Group chat title update"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -97,9 +95,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-chat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

@@ -5,25 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAgreement()
+requestBody := graphmodels.NewAgreement()
 displayName := "Contoso ToU for guest users"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 isViewingBeforeAcceptanceRequired := true
-requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired)
-requestBody.SetFiles( []AgreementFileLocalization {
-	msgraphsdk.NewAgreementFileLocalization(),
-	SetAdditionalData(map[string]interface{}{
-		"fileName": "TOU.pdf",
-		"language": "en",
-		"isDefault": true,
-	}
+requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired) 
+
+
+agreementFileLocalization := graphmodels.NewAgreementFileLocalization()
+fileName := "TOU.pdf"
+agreementFileLocalization.SetFileName(&fileName) 
+language := "en"
+agreementFileLocalization.SetLanguage(&language) 
+isDefault := true
+agreementFileLocalization.SetIsDefault(&isDefault) 
+fileData := graphmodels.NewAgreementFileData()
+data := []byte("sGVsbG8gd29ybGQ=//truncated-binary")
+fileData.SetData(&data) 
+agreementFileLocalization.SetFileData(fileData)
+
+files := []graphmodels.AgreementFileLocalizationable {
+	agreementFileLocalization,
+
 }
-options := &msgraphsdk.AgreementsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(options)
+requestBody.SetFiles(files)
+
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
 
 
 ```

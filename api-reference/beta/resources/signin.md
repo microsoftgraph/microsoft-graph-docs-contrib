@@ -24,6 +24,8 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |:---------------|:--------|:----------|
 |[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
 |[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of a signIn object.|
+|[Confirm compromised](../api/signin-confirmcompromised.md)|None|Mark an event in the Azure AD sign in logs as risky.|
+|[Confirm safe](../api/signin-confirmsafe.md)|None|mark an event in Azure AD sign in logs as safe.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,6 +33,9 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |appDisplayName|String|The application name displayed in the Azure Portal. Supports `$filter` (`eq` and `startsWith` operators only).|
 |appId|String|The application identifier in Azure Active Directory. Supports `$filter` (`eq` operator only).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, that were triggered by the corresponding events in the sign-in event.|
+|authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during an Azure AD authentication step.|
+|authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Azure AD policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
@@ -114,6 +119,19 @@ The following is a JSON representation of the resource.
   "appliedConditionalAccessPolicies": [
     {
       "@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"
+    }
+  ],
+  "appliedEventListeners": [
+    {
+      "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"
+    }
+  ],
+  "authenticationAppDeviceDetails": {
+      "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
+  },
+  "authenticationAppPolicyEvaluationDetails": [
+    {
+      "@odata.type": "microsoft.graph.authenticationAppPolicyDetails"
     }
   ],
   "authenticationDetails": [

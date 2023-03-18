@@ -54,18 +54,15 @@ Here is an example of the request.
 -->
 
 ```msgraph-interactive
-GET /education/classes/{educationClassId}
+GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9aaa197cb212
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -80,8 +77,11 @@ GET /education/classes/{educationClassId}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -99,24 +99,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.educationClass",
-    "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
-    "displayName": "String",
-    "mailNickname": "String",
-    "description": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "classCode": "String",
-    "externalName": "String",
-    "externalId": "String",
-    "externalSource": "String",
-    "externalSourceDetail": "String",
-    "grade": "String",
-    "term": {
-      "@odata.type": "microsoft.graph.educationTerm"
-    }
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes/$entity",
+    "id": "7e4ec76c-8276-43ef-ba10-9aaa197cb212",
+    "description": "Leadership 101 training",
+    "displayName": "Leadership 101",
+    "mailNickname": "Leadership101"
 }
 ```

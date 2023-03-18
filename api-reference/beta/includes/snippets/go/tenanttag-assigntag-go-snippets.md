@@ -5,17 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTenantIdsRequestBody()
-requestBody.SetTenantIds( []String {
+requestBody := graphmodels.NewAssignTagPostRequestBody()
+tenantIds := []string {
 	"String",
+
 }
-options := &msgraphsdk.AssignTagRequestBuilderPostOptions{
-	Body: requestBody,
-}
-tenantTagId := "tenantTag-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).AssignTag(tenantTag-id).Post(options)
+requestBody.SetTenantIds(tenantIds)
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").ManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

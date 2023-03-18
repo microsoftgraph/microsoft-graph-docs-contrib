@@ -5,52 +5,73 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewBookingCustomer()
+requestBody := graphmodels.NewBookingCustomer()
 displayName := "Joni Sherman"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 emailAddress := "jonis@relecloud.com"
-requestBody.SetEmailAddress(&emailAddress)
-requestBody.SetAddresses( []PhysicalAddress {
-	msgraphsdk.NewPhysicalAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"postOfficeBox": "",
-		"street": "4567 Main Street",
-		"city": "Buffalo",
-		"state": "NY",
-		"countryOrRegion": "USA",
-		"postalCode": "98052",
-		"type": "home",
-	}
-	msgraphsdk.NewPhysicalAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"postOfficeBox": "",
-		"street": "4570 Main Street",
-		"city": "Buffalo",
-		"state": "NY",
-		"countryOrRegion": "USA",
-		"postalCode": "98054",
-		"type": "business",
-	}
+requestBody.SetEmailAddress(&emailAddress) 
+
+
+physicalAddress := graphmodels.NewPhysicalAddress()
+postOfficeBox := ""
+physicalAddress.SetPostOfficeBox(&postOfficeBox) 
+street := "4567 Main Street"
+physicalAddress.SetStreet(&street) 
+city := "Buffalo"
+physicalAddress.SetCity(&city) 
+state := "NY"
+physicalAddress.SetState(&state) 
+countryOrRegion := "USA"
+physicalAddress.SetCountryOrRegion(&countryOrRegion) 
+postalCode := "98052"
+physicalAddress.SetPostalCode(&postalCode) 
+type := graphmodels.HOME_PHYSICALADDRESSTYPE 
+physicalAddress.SetType(&type) 
+physicalAddress1 := graphmodels.NewPhysicalAddress()
+postOfficeBox := ""
+physicalAddress1.SetPostOfficeBox(&postOfficeBox) 
+street := "4570 Main Street"
+physicalAddress1.SetStreet(&street) 
+city := "Buffalo"
+physicalAddress1.SetCity(&city) 
+state := "NY"
+physicalAddress1.SetState(&state) 
+countryOrRegion := "USA"
+physicalAddress1.SetCountryOrRegion(&countryOrRegion) 
+postalCode := "98054"
+physicalAddress1.SetPostalCode(&postalCode) 
+type := graphmodels.BUSINESS_PHYSICALADDRESSTYPE 
+physicalAddress1.SetType(&type) 
+
+addresses := []graphmodels.PhysicalAddressable {
+	physicalAddress,
+	physicalAddress1,
+
 }
-requestBody.SetPhones( []Phone {
-	msgraphsdk.NewPhone(),
-	SetAdditionalData(map[string]interface{}{
-		"number": "206-555-0100",
-		"type": "home",
-	}
-	msgraphsdk.NewPhone(),
-	SetAdditionalData(map[string]interface{}{
-		"number": "206-555-0200",
-		"type": "business",
-	}
+requestBody.SetAddresses(addresses)
+
+
+phone := graphmodels.NewPhone()
+number := "206-555-0100"
+phone.SetNumber(&number) 
+type := graphmodels.HOME_PHONETYPE 
+phone.SetType(&type) 
+phone1 := graphmodels.NewPhone()
+number := "206-555-0200"
+phone1.SetNumber(&number) 
+type := graphmodels.BUSINESS_PHONETYPE 
+phone1.SetType(&type) 
+
+phones := []graphmodels.Phoneable {
+	phone,
+	phone1,
+
 }
-options := &msgraphsdk.CustomersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Customers().Post(options)
+requestBody.SetPhones(phones)
+
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,44 +12,57 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of [bookingService](../resources/bookingservice.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/services
 ```
+
 ## Optional query parameters
+
 This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [bookingService](../resources/bookingservice.md) objects in the response body.
+
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
 ```
 
 ### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -70,9 +83,10 @@ Content-type: application/json
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",
             "displayName": "Initial service",
             "defaultDuration": "PT10M",
-            "defaultPrice": 0,
+            "defaultPrice": 0.0,
             "defaultPriceType": "notSet",
             "description": "Not sure how to choose? Let us introduce you to our traditional family recipes.",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "This is where you can add notes about this service that only you and your staff see.",
             "preBuffer": "PT0S",
@@ -80,6 +94,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
@@ -110,9 +125,10 @@ Content-type: application/json
             "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "displayName": "Catered bento",
             "defaultDuration": "PT30M",
-            "defaultPrice": 10,
+            "defaultPrice": 10.0,
             "defaultPriceType": "fixedPrice",
             "description": "Catered individual bento box lunch",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -120,6 +136,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -156,9 +173,10 @@ Content-type: application/json
             "id": "635a7b7c-4230-4d3b-a42b-698e89927528",
             "displayName": "Kaiseki",
             "defaultDuration": "PT1H30M",
-            "defaultPrice": 30,
+            "defaultPrice": 30.0,
             "defaultPriceType": "fixedPrice",
             "description": "Individual kaiseki lunch delivery",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -166,6 +184,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",

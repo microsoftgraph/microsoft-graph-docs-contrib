@@ -5,15 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.MailFoldersRequestBuilderGetQueryParameters{
-	IncludeHiddenFolders: true,
+
+requestIncludehiddenfolders := true
+
+requestParameters := &graphconfig.MeMailFoldersRequestBuilderGetQueryParameters{
+	Includehiddenfolders: &requestIncludehiddenfolders,
 }
-options := &msgraphsdk.MailFoldersRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.MeMailFoldersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().MailFolders().Get(options)
+
+result, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
 
 
 ```

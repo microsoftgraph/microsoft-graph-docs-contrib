@@ -5,20 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
-	Filter: "extensionAttributes/extensionAttribute1%20eq%20'BYOD-Device'",
-	Count: true,
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestFilter := "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'"
+requestCount := true
+
+requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+	Count: &requestCount,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.DevicesRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Devices().Get(options)
+
+result, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```

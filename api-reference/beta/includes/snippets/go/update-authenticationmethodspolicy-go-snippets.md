@@ -5,31 +5,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAuthenticationMethodsPolicy()
-registrationEnforcement := msgraphsdk.NewRegistrationEnforcement()
-requestBody.SetRegistrationEnforcement(registrationEnforcement)
-authenticationMethodsRegistrationCampaign := msgraphsdk.NewAuthenticationMethodsRegistrationCampaign()
-registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
+requestBody := graphmodels.NewAuthenticationMethodsPolicy()
+registrationEnforcement := graphmodels.NewRegistrationEnforcement()
+authenticationMethodsRegistrationCampaign := graphmodels.NewAuthenticationMethodsRegistrationCampaign()
 snoozeDurationInDays := int32(1)
-authenticationMethodsRegistrationCampaign.SetSnoozeDurationInDays(&snoozeDurationInDays)
-state := "enabled"
-authenticationMethodsRegistrationCampaign.SetState(&state)
-authenticationMethodsRegistrationCampaign.SetExcludeTargets( []ExcludeTarget {
+authenticationMethodsRegistrationCampaign.SetSnoozeDurationInDays(&snoozeDurationInDays) 
+state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
+authenticationMethodsRegistrationCampaign.SetState(&state) 
+excludeTargets := []graphmodels.ExcludeTargetable {
+
 }
-authenticationMethodsRegistrationCampaign.SetIncludeTargets( []AuthenticationMethodsRegistrationCampaignIncludeTarget {
-	msgraphsdk.NewAuthenticationMethodsRegistrationCampaignIncludeTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-		"targetType": "group",
-		"targetedAuthenticationMethod": "microsoftAuthenticator",
-	}
+authenticationMethodsRegistrationCampaign.SetExcludeTargets(excludeTargets)
+
+
+authenticationMethodsRegistrationCampaignIncludeTarget := graphmodels.NewAuthenticationMethodsRegistrationCampaignIncludeTarget()
+id := "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+authenticationMethodsRegistrationCampaignIncludeTarget.SetId(&id) 
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetType(&targetType) 
+targetedAuthenticationMethod := "microsoftAuthenticator"
+authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthenticationMethod(&targetedAuthenticationMethod) 
+
+includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
+	authenticationMethodsRegistrationCampaignIncludeTarget,
+
 }
-options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
+registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
+requestBody.SetRegistrationEnforcement(registrationEnforcement)
+
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

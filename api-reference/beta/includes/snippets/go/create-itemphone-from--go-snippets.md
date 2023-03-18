@@ -5,17 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewItemPhone()
+requestBody := graphmodels.NewItemPhone()
 displayName := "Car Phone"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 number := "+7 499 342 22 13"
-requestBody.SetNumber(&number)
-options := &msgraphsdk.PhonesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Phones().Post(options)
+requestBody.SetNumber(&number) 
+
+result, err := graphClient.Me().Profile().Phones().Post(context.Background(), requestBody, nil)
 
 
 ```

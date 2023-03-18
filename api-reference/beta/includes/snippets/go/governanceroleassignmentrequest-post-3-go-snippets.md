@@ -5,28 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewGovernanceRoleAssignmentRequest()
+requestBody := graphmodels.NewGovernanceRoleAssignmentRequest()
 roleDefinitionId := "bc75b4e6-7403-4243-bf2f-d1f6990be122"
-requestBody.SetRoleDefinitionId(&roleDefinitionId)
+requestBody.SetRoleDefinitionId(&roleDefinitionId) 
 resourceId := "fb016e3a-c3ed-4d9d-96b6-a54cd4f0b735"
-requestBody.SetResourceId(&resourceId)
+requestBody.SetResourceId(&resourceId) 
 subjectId := "918e54be-12c4-4f4c-a6d3-2ee0e3661c51"
-requestBody.SetSubjectId(&subjectId)
+requestBody.SetSubjectId(&subjectId) 
 assignmentState := "Active"
-requestBody.SetAssignmentState(&assignmentState)
+requestBody.SetAssignmentState(&assignmentState) 
 type := "UserRemove"
-requestBody.SetType(&type)
+requestBody.SetType(&type) 
 reason := "Deactivate the role"
-requestBody.SetReason(&reason)
+requestBody.SetReason(&reason) 
 linkedEligibleRoleAssignmentId := "cb8a533e-02d5-42ad-8499-916b1e4822ec"
-requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId) 
+
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-unifiedRbacResourceNamespaceId := "unifiedRbacResourceNamespace-id"
-result, err := graphClient.RoleManagement().Directory().ResourceNamespacesById(&unifiedRbacResourceNamespaceId).Get(nil)
+
+result, err := graphClient.RoleManagement().Directory().ResourceNamespacesById("unifiedRbacResourceNamespace-id").Get(context.Background(), nil)
 
 
 ```

@@ -1,17 +1,18 @@
 ---
 title: "Working with groups in Microsoft Graph"
-description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
+description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
 author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
+ms.date: 11/16/2022
 ---
 
 # Working with groups in Microsoft Graph
 
 Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
 
-Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality. 
+Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality.
 
 > [!NOTE]
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
@@ -25,6 +26,9 @@ Azure Active Directory (Azure AD) supports the following types of groups.
 - Security groups
 - Mail-enabled security groups
 - Distribution groups
+
+> [!NOTE]
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
 
 Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
 
@@ -88,9 +92,9 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
 
-**Mail-enabled security groups** are used in the same way as security groups, but with the added feature of a shared mailbox. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
+**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
-The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
+The following JSON object shows a sample representation of a security group when you call the Microsoft Graph groups API.
 
 ```http
 HTTP/1.1 201 Created
@@ -114,14 +118,40 @@ Content-type: application/json
 }
 ```
 
-## Dynamic membership
+## Group membership
 
-All types of groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group. 
+Not all object types can be members of both Microsoft 365 and security groups.
 
-The dynamic membership rules are specified through the **membershipRule** property during group creation. For example, `"membershipRule": 'user.department -eq "Marketing"'`. The **groupType** property must also include `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property.
+[!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
+
+### Dynamic membership
+
+Microsoft 365 and security groups can have dynamic membership rules that automatically add or remove members from the group based on the principal's properties. For example, a "Marketing employees" group can define a dynamic membership rule that only users with their department property set to "Marketing" can be members of the group. In this case, any user's who leave the department are automatically removed from the group.
+
+Only users and devices are supported as members in dynamic membership groups. You can create a dynamic membership group for devices or users, but not both.
+
+The dynamic membership rules are specified through the **membershipRule** property during group creation. A single expression follows this syntax: `Property Operator Value`.
+
+- The `Property` is defined following this syntax: `object.property`. For example `user.department` or `device.accountEnabled`.
+- The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
+- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Azure portal because the expression isn't enclosed in double quotes.
+
+The following example shows a complete rule.
+
+`"membershipRule": "user.department -eq \"Marketing\""`.
+
+You can combine multiple expressions in a rule using the `and`, `or`, and `not` operators.
+
+The **groupType** property must also include the `"DynamicMembership"` value in the collection. The dynamic membership rule can be turned on or off through the **membershipRuleProcessingState** property. You can update a group with assigned membership to have dynamic membership.
 
 The following example request creates a new Microsoft 365 group that can only include employees in the Marketing department.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "groups_overview_createdynamicgroup"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -136,18 +166,75 @@ Content-type: application/json
     "mailEnabled": true,
     "mailNickname": "marketing",
     "securityEnabled": false,
-    "membershipRule": "'user.department -eq 'Marketing'",
+    "membershipRule": "user.department -eq \"Marketing\"",
     "membershipRuleProcessingState": "on"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/groups-overview-createdynamicgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/groups-overview-createdynamicgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/groups-overview-createdynamicgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/groups-overview-createdynamicgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/groups-overview-createdynamicgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/groups-overview-createdynamicgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `201 Created` response code and the newly created group object in the response body.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "6f7cd676-5445-47c4-9c2b-c47da4671da2",
+    "createdDateTime": "2023-01-20T07:00:31Z",
+    "description": "Marketing department folks",
+    "displayName": "Marketing department",
+    "groupTypes": [
+        "Unified",
+        "DynamicMembership"
+    ],
+    "mail": "marketing@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "marketing",
+    "membershipRule": "user.department -eq \"Marketing\"",
+    "membershipRuleProcessingState": "On"
 }
 ```
 
 To learn more about formulating membership rules, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 
-> **Note**: Dynamic membership rules requires the tenant to have at least an Azure AD Premium P1 license for each unique user that is a member of one or more dynamic groups.
+> [!NOTE]
+> Dynamic membership rules requires the tenant to have at least an Azure AD Premium P1 license for each unique user that is a member of one or more dynamic groups.
 
 ## Other types of groups
 
-Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
+Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](/rest/api/yammer).
 
 ## Group search limitations for guest users in organizations
 
@@ -157,16 +244,13 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
 
-For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 
 You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
-
-Using Microsoft Graph, you can perform the following common operations.
-
 
 Using Microsoft Graph, you can perform the following common operations on groups.
 

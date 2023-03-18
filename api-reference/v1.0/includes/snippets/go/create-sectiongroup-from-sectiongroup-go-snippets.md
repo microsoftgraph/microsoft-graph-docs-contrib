@@ -5,17 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"displayName": "Section group name",
+requestBody := graphmodels.NewSectionGroupsPostRequestBody()
+additionalData := map[string]interface{}{
+	"displayName" : "Section group name", 
 }
-options := &msgraphsdk.SectionGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-sectionGroupId := "sectionGroup-id"
-graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Me().Onenote().SectionGroupsById("sectionGroup-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

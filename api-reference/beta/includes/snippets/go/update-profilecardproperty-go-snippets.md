@@ -5,22 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewProfileCardProperty()
-requestBody.SetAnnotations( []ProfileCardAnnotation {
-	msgraphsdk.NewProfileCardAnnotation(),
-	SetAdditionalData(map[string]interface{}{
-		"localizations":  []Object {
-		}
-	}
+requestBody := graphmodels.NewProfileCardProperty()
+
+
+profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
+
+
+displayNameLocalization := graphmodels.NewDisplayNameLocalization()
+languageTag := "no-NB"
+displayNameLocalization.SetLanguageTag(&languageTag) 
+displayName := "Kostnads Senter"
+displayNameLocalization.SetDisplayName(&displayName) 
+
+localizations := []graphmodels.DisplayNameLocalizationable {
+	displayNameLocalization,
+
 }
-options := &msgraphsdk.ProfileCardPropertyRequestBuilderPatchOptions{
-	Body: requestBody,
+profileCardAnnotation.SetLocalizations(localizations)
+
+annotations := []graphmodels.ProfileCardAnnotationable {
+	profileCardAnnotation,
+
 }
-organizationId := "organization-id"
-profileCardPropertyId := "profileCardProperty-id"
-graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(options)
+requestBody.SetAnnotations(annotations)
+
+result, err := graphClient.OrganizationById("organization-id").Settings().ProfileCardPropertiesById("profileCardProperty-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

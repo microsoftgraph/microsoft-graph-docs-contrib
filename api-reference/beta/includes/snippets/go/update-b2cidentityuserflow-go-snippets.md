@@ -5,18 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewB2cIdentityUserFlow()
+requestBody := graphmodels.NewB2cIdentityUserFlow()
 isLanguageCustomizationEnabled := true
-requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
+requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled) 
 defaultLanguageTag := "en"
-requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
-options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
+requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
+
+result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

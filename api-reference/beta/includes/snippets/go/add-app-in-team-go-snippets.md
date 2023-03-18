@@ -5,17 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTeamsAppInstallation()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+requestBody := graphmodels.NewTeamsAppInstallation()
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a", 
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).InstalledApps().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.TeamsById("team-id").InstalledApps().Post(context.Background(), requestBody, nil)
 
 
 ```

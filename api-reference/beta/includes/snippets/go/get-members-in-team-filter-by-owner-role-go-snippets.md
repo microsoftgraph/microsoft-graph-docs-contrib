@@ -5,16 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.MembersRequestBuilderGetQueryParameters{
-	Filter: "roles/any(r:r%20eq%20'owner')",
+
+requestFilter := "roles/any"
+
+requestParameters := &graphconfig.TeamItemMembersRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.MembersRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.TeamItemMembersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().Get(options)
+
+result, err := graphClient.TeamsById("team-id").Members().Get(context.Background(), configuration)
 
 
 ```

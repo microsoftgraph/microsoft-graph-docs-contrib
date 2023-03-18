@@ -5,28 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
-requestBody.SetMemberEntityType(&memberEntityType)
-requestBody.SetAddMembers( []String {
+requestBody.SetMemberEntityType(&memberEntityType) 
+addMembers := []string {
 	"String",
+
 }
-requestBody.SetRemoveMembers( []String {
+requestBody.SetAddMembers(addMembers)
+removeMembers := []string {
 	"String",
+
 }
-requestBody.SetAddExclusions( []String {
+requestBody.SetRemoveMembers(removeMembers)
+addExclusions := []string {
 	"String",
+
 }
-requestBody.SetRemoveExclusions( []String {
+requestBody.SetAddExclusions(addExclusions)
+removeExclusions := []string {
 	"String",
+
 }
-options := &msgraphsdk.UpdateAudienceByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById(deployment-id).Post(options)
+requestBody.SetRemoveExclusions(removeExclusions)
+
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().WindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

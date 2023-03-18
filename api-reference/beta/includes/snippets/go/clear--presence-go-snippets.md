@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewSessionIdRequestBody()
+requestBody := graphmodels.NewClearPresencePostRequestBody()
 sessionId := "22553876-f5ab-4529-bffb-cfe50aa89f87"
-requestBody.SetSessionId(&sessionId)
-options := &msgraphsdk.ClearPresenceRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-graphClient.UsersById(&userId).Presence().ClearPresence(user-id).Post(options)
+requestBody.SetSessionId(&sessionId) 
+
+graphClient.UsersById("user-id").Presence().ClearPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

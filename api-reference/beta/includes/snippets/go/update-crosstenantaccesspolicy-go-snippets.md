@@ -5,15 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCrossTenantAccessPolicy()
-displayName := "CrossTenantAccessPolicy"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.CrossTenantAccessPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
+requestBody := graphmodels.NewCrossTenantAccessPolicy()
+allowedCloudEndpoints := []string {
+	"microsoftonline.us",
+	"partner.microsoftonline.cn",
+
 }
-graphClient.Policies().CrossTenantAccessPolicy().Patch(options)
+requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
+
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

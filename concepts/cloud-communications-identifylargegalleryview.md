@@ -1,22 +1,21 @@
 --- 
-title: "Identify large gallery view participants in a roster when using the Microsoft Graph cloud communications API"
-description: "Learn how to identify large gallery view participants in a roster."
+title: "Identify large gallery view participants by using the cloud communications API"
+description: "Identify a large gallery view participant in a roster so that you can subscribe to their video feed by using the cloud communications API in Microsoft Graph."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: conceptualPageType
 ---
 
-# Identify large gallery view participants in a roster when using the Microsoft Graph cloud communications API
+# Identify large gallery view participants in a roster
 
-The cloud communications API provides an endpoint for [adding the large gallery view](/graph/api/call-addlargegalleryview) to a call. 
-After the large gallery view is successfully added to a call, you can subscribe to a participant's video feed.
+The cloud communications API in Microsoft Graph provides an endpoint for [adding the large gallery view](/graph/api/call-addlargegalleryview) to a call. After the large gallery view is successfully added to a call, you can subscribe to a participant's video feed.
 
-This article describes how to identify a large gallery view participant in a roster, so that you can retrieve the relevant data to subscribe to the video feed.
+This article describes how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed.
 
 ## Roster example with large gallery view participant
 
-The following example shows a roster the application receives after the large gallery view is successfully added to a call.
+The following example shows a roster that the application receives after the large gallery view is successfully added to a call.
 
 ```json
 {
@@ -326,13 +325,13 @@ The following example shows a roster the application receives after the large ga
 }
 ```
 
-## Identifying large gallery view participants
+## Identify large gallery view participants
 
-Use the following data from the roster example to identify the large gallery view participant:
+Use the following data from the roster example to identify a large gallery view participant:
 
 - The **ApplicationType** of the participant will be set as `LargeGallery-V2`.
 - The **direction** of the video media stream will be set to `sendReceive`.
-- The **metadata** will be included which will contain more details such as paging.
+- The **metadata** will be included that will contain more details such as paging.
 
 ### Participant data example
 
@@ -413,3 +412,6 @@ Use the following definition to deserialize the **metadata** property and extrac
     }
 ```
 
+## See also
+
+- [Teams API overview](teams-concept-overview.md)

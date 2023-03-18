@@ -24,7 +24,7 @@ end.timeZone = "Pacific Standard Time";
 item.end = end;
 attachment.item = item;
 
-graphClient.me().events("{AAMkAGI1AAAt9AHjAAA=}").attachments()
+graphClient.me().events("AAMkAGI1AAAt9AHjAAA=").attachments()
 	.buildRequest()
 	.post(attachment);
 

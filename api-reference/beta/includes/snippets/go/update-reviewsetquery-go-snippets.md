@@ -5,18 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewReviewSetQuery()
+requestBody := graphmodels.NewReviewSetQuery()
 displayName := "My Query 1 - Renamed"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ReviewSetQueryRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-reviewSetId := "reviewSet-id"
-reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

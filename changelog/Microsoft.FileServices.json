@@ -3,6 +3,124 @@
     {
       "ChangeList": [
         {
+          "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignSensitivityLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) method to the driveItem resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-09-02T16:49:52.2813343Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLegacyAuthProtocolsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        },
+        {
+          "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        }
+      ],
+      "Id": "5e44fa6c-354b-4727-b0dd-f7fa60d058ce",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-08-01T21:52:28.1485706Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharepoint** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
+          "Target": "settings"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource type.",
+          "Target": "sharepoint"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
+        }
+      ],
+      "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-23T02:50:58.3570719Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
           "ApiChange": "EnumType",
           "ChangedApiName": "sensitivityLabelAssignmentMethod",
@@ -15,7 +133,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "extractSensitivityLabelsResult",
           "ChangeType": "Addition",
-          "Description": "Added the [extractSensitivityLabelsResult](https://docs.microsoft.com/en-us/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the [extractSensitivityLabelsResult](https://learn.microsoft.com/en-us/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-beta) resource type.",
           "Target": "extractSensitivityLabelsResult"
         },
         {
@@ -23,7 +141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensitivityLabelAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [sensitivityLabelAssignment](https://docs.microsoft.com/en-us/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Added the [sensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-beta) resource type.",
           "Target": "sensitivityLabelAssignment"
         },
         {
@@ -31,7 +149,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "extractSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-beta) method to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [extractSensitivityLabels](https://learn.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         }
       ],
@@ -49,7 +167,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -57,7 +175,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -65,7 +183,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -73,7 +191,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -81,7 +199,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentity",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     },
     {
@@ -89,7 +207,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     }
   ],
@@ -107,7 +225,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -115,7 +233,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -123,7 +241,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -131,7 +249,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -139,7 +257,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentity",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     },
     {
@@ -147,7 +265,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     }
   ],
@@ -165,7 +283,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -173,7 +291,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -181,7 +299,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -189,7 +307,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -197,7 +315,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentity",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
       "Target": "permission"
     },
     {
@@ -205,7 +323,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
       "Target": "permission"
     }
   ],
@@ -223,7 +341,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -231,7 +349,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -239,7 +357,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -247,7 +365,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -255,7 +373,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentity",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
       "Target": "permission"
     },
     {
@@ -263,7 +381,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
       "Target": "permission"
     }
   ],
@@ -281,7 +399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bundle",
           "ChangeType": "addition",
-          "Description": "Added the [bundle](https://docs.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Added the [bundle](https://learn.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-1.0) resource and associated methods.",
           "Target": "bundle"
         },
         {
@@ -289,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "album",
           "ChangeType": "addition",
-          "Description": "Added the [album](https://docs.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-1.0) resource.",
+          "Description": "Added the [album](https://learn.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-1.0) resource.",
           "Target": "album"
         },
         {
@@ -297,7 +415,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "bundles",
           "ChangeType": "addition",
-          "Description": "Added the **bundles** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Description": "Added the **bundles** navigation property to the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
           "Target": "drive"
         },
         {
@@ -305,7 +423,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bundle",
           "ChangeType": "addition",
-          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **bundle** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "driveItem"
         }
       ],
@@ -319,11 +437,101 @@
     {
       "ChangeList":[
         {
+          "Id": "FA782B9D-526C-403F-AA57-8144A4E736FB",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "FA782B9D-526C-403F-AA57-8144A4E736FB",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "26776B71-9B2E-45A3-B0CD-D6ECF7CF82C3",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        }
+    ],
+    "Id": "26776B71-9B2E-45A3-B0CD-D6ECF7CF82C3",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Sites and lists",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "96E5DE9E-A56A-4FD1-B8E2-23BA9D180975",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [invite](https://learn.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "invite"
+        }
+    ],
+    "Id": "96E5DE9E-A56A-4FD1-B8E2-23BA9D180975",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "B90040F5-2D0D-4C16-BFA0-EBCD27BD5361",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "B90040F5-2D0D-4C16-BFA0-EBCD27BD5361",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-03-02T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "C68D4B2B-9D39-4562-92D7-1754A687EF64",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "retainInheritedPermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **retainInheritedPermissions** (string) parameter to the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Target": "invite"
+        }
+    ],
+    "Id": "C68D4B2B-9D39-4562-92D7-1754A687EF64",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2022-01-12T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
           "ApiChange": "Parameter",
           "ChangedApiName": "type",
           "ChangeType": "Change",
-          "Description": "Changed **type** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Changed **type** (string) property in [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource from required to optional.",
           "Target": "createLink"
         }
     ],
@@ -341,7 +549,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createLink",
           "ChangeType": "Addition",
-          "Description": "Added the [createLink](https://docs.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Description": "Added the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
           "Target": "listItem"
         }
     ],
@@ -359,7 +567,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "media",
           "ChangeType": "Addition",
-          "Description": "Added the **media** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the **media** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         },
         {
@@ -367,7 +575,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "source",
           "ChangeType": "Addition",
-          "Description": "Added the **source** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the **source** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         },
         {
@@ -375,7 +583,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driveItemSource",
           "ChangeType": "Addition",
-          "Description": "Added the [driveItemSource](https://docs.microsoft.com/en-us/graph/api/resources/driveItemSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [driveItemSource](https://learn.microsoft.com/en-us/graph/api/resources/driveItemSource?view=graph-rest-beta) resource type.",
           "Target": "driveItemSource"
         },
         {
@@ -383,7 +591,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "media",
           "ChangeType": "Addition",
-          "Description": "Added the [media](https://docs.microsoft.com/en-us/graph/api/resources/media?view=graph-rest-beta) resource type.",
+          "Description": "Added the [media](https://learn.microsoft.com/en-us/graph/api/resources/media?view=graph-rest-beta) resource type.",
           "Target": "media"
         },
         {
@@ -391,7 +599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mediaSource",
           "ChangeType": "Addition",
-          "Description": "Added the [mediaSource](https://docs.microsoft.com/en-us/graph/api/resources/mediaSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [mediaSource](https://learn.microsoft.com/en-us/graph/api/resources/mediaSource?view=graph-rest-beta) resource type.",
           "Target": "mediaSource"
         }
       ],
@@ -405,11 +613,29 @@
     {
       "ChangeList": [
         {
+          "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-beta) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-18T12:44:48Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permissions** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         }
       ],
@@ -427,7 +653,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissions** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
@@ -445,7 +671,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
           "ChangeType": "Addition",
-          "Description": "Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
+          "Description": "Added the [revokeGrants](https://learn.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
           "Target": "revokeGrants,permission"
         }
       ],
@@ -463,7 +689,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingOperations](https://docs.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-1.0) and [pendingContentUpdate](https://docs.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-1.0) resources. The **pendingOperations** resource applies to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [pendingOperations](https://learn.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-1.0) and [pendingContentUpdate](https://learn.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-1.0) resources. The **pendingOperations** resource applies to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
@@ -471,7 +697,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-1.0) action to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-1.0) action to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
           "Target": "restore,driveItem"
         },
         {
@@ -479,7 +705,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
-          "Description": "Added the **orientation** property to the [photo](https://docs.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-1.0) resource.",
+          "Description": "Added the **orientation** property to the [photo](https://learn.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-1.0) resource.",
           "Target": "photo"
         },
         {
@@ -487,7 +713,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
-          "Description": "Added the **sha256Hash** property to the [hashes](https://docs.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sha256Hash** property to the [hashes](https://learn.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-1.0) resource.",
           "Target": "hashes"
         },
         {
@@ -495,7 +721,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
-          "Description": "Added the **deferCommit** parameter to the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) action.",
+          "Description": "Added the **deferCommit** parameter to the [createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) action.",
           "Target": "createUploadSession"
         },
         {
@@ -503,7 +729,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [storagePlanInformation](https://docs.microsoft.com/en-us/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](https://docs.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-1.0) resource.",
+          "Description": "Added the [storagePlanInformation](https://learn.microsoft.com/en-us/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](https://learn.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-1.0) resource.",
           "Target": "storagePlanInformation,quota"
         },
         {
@@ -511,7 +737,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "fileSize",
           "ChangeType": "Addition",
-          "Description": "Added the **fileSize** property to the [driveItemUploadableProperties](https://docs.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
+          "Description": "Added the **fileSize** property to the [driveItemUploadableProperties](https://learn.microsoft.com/en-us/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
           "Target": "driveItemUploadableProperties"
         },
         {
@@ -519,7 +745,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "name",
           "ChangeType": "Addition",
-          "Description": "Added the **name** property to the [contentTypeInfo](https://docs.microsoft.com/en-us/graph/api/resources/contentTypeInfo?view=graph-rest-1.0) resource.",
+          "Description": "Added the **name** property to the [contentTypeInfo](https://learn.microsoft.com/en-us/graph/api/resources/contentTypeInfo?view=graph-rest-1.0) resource.",
           "Target": "contentTypeInfo"
         }
       ],
@@ -537,7 +763,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "check in,check out,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [check in](https://docs.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](https://docs.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [check in](https://learn.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](https://learn.microsoft.com/en-us/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "check in,check out,driveItem"
         },
         {
@@ -545,7 +771,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password,message",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "createLink,driveItem"
         },
         {
@@ -553,7 +779,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
-          "Description": "Added the **preventsDownload** property on the [sharingLink](https://docs.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
+          "Description": "Added the **preventsDownload** property on the [sharingLink](https://learn.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
           "Target": "sharingLink"
         },
         {
@@ -561,7 +787,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
-          "Description": "Added the **permission** property on the [sharedDriveItem](https://docs.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permission** property on the [sharedDriveItem](https://learn.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
           "Target": "sharedDriveItem"
         },
         {
@@ -569,7 +795,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,hasPassword,grantedToIdentities",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource.",
           "Target": "permission"
         },
         {
@@ -577,7 +803,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](https://learn.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "invite,driveItem"
         }
       ],
@@ -595,7 +821,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "image,video",
           "ChangeType": "Addition",
-          "Description": "Added **image** and **video** properties on the [remoteItem](https://docs.microsoft.com/en-us/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
+          "Description": "Added **image** and **video** properties on the [remoteItem](https://learn.microsoft.com/en-us/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
           "Target": "remoteItem"
         },
         {
@@ -603,7 +829,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) entity.",
+          "Description": "Added the **grant** action to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) entity.",
           "Target": "permission"
         },
         {
@@ -611,7 +837,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
-          "Description": "Added the **following** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) entity.",
+          "Description": "Added the **following** navigation property to the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) entity.",
           "Target": "drive"
         },
         {
@@ -619,7 +845,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [follow](https://docs.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-1.0) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
+          "Description": "Added the [follow](https://learn.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-1.0) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "follow,driveItem"
         },
         {
@@ -627,7 +853,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](https://docs.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-1.0) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
+          "Description": "Added the [unfollow](https://learn.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-1.0) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "unfollow,driveItem"
         }
       ],
@@ -645,7 +871,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingOperations](https://docs.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](https://docs.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [pendingOperations](https://learn.microsoft.com/en-us/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](https://learn.microsoft.com/en-us/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
@@ -653,7 +879,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "restore,driveItem"
         },
         {
@@ -661,7 +887,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
-          "Description": "Added the **orientation** property to the [photo](https://docs.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-beta) resource.",
+          "Description": "Added the **orientation** property to the [photo](https://learn.microsoft.com/en-us/graph/api/resources/photo?view=graph-rest-beta) resource.",
           "Target": "photo"
         },
         {
@@ -669,7 +895,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
-          "Description": "Added the **sha256Hash** property to the [hashes](https://docs.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-beta) resource.",
+          "Description": "Added the **sha256Hash** property to the [hashes](https://learn.microsoft.com/en-us/graph/api/resources/hashes?view=graph-rest-beta) resource.",
           "Target": "hashes"
         }
       ],
@@ -687,7 +913,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](https://docs.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the [unfollow](https://learn.microsoft.com/en-us/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "unfollow,driveItem"
         }
       ],
@@ -705,7 +931,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDatetime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
+          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
           "Target": "createLink"
         }
       ],
@@ -723,7 +949,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the [bundle](https://docs.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-beta) complex type",
+          "Description": "Added the [bundle](https://learn.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-beta) complex type",
           "Target": "bundle"
         },
         {
@@ -731,7 +957,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "album",
           "ChangeType": "Addition",
-          "Description": "Added the [album](https://docs.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-beta) complex type",
+          "Description": "Added the [album](https://learn.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-beta) complex type",
           "Target": "album"
         },
         {
@@ -739,7 +965,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bundles",
           "ChangeType": "Addition",
-          "Description": "Added the **bundles** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Description": "Added the **bundles** navigation property to the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
           "Target": "drive"
         },
         {
@@ -747,7 +973,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **bundle** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -755,7 +981,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Description": "Added the **grant** action to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
           "Target": "permission"
         }
       ],
@@ -773,7 +999,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the driveItem_invite DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -781,7 +1007,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the driveItem_invite string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -799,7 +1025,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
+          "Description": "Added the **subscriptions** navigation property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         }
       ],
@@ -817,7 +1043,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the driveItem_invite DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
@@ -825,7 +1051,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/en-us/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the driveItem_invite string type.",
           "Target": "driveItem_invite"
         }
       ],
@@ -843,7 +1069,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deferCommit",
           "ChangeType": "Addition",
-          "Description": "Added the **deferCommit** argument to the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the **deferCommit** argument to the [createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "createUploadSession,driveItem"
         },
         {
@@ -851,7 +1077,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the [storagePlanInformation](https://docs.microsoft.com/en-us/graph/api/resources/storageplaninformation?view=graph-rest-beta) complex type",
+          "Description": "Added the [storagePlanInformation](https://learn.microsoft.com/en-us/graph/api/resources/storageplaninformation?view=graph-rest-beta) complex type",
           "Target": "storagePlanInformation"
         },
         {
@@ -859,7 +1085,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
-          "Description": "Added the **storagePlanInformation** property to the [quota](https://docs.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-beta) complex type",
+          "Description": "Added the **storagePlanInformation** property to the [quota](https://learn.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-beta) complex type",
           "Target": "quota"
         },
         {
@@ -867,7 +1093,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
-          "Description": "Added the **following** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Description": "Added the **following** navigation property to the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) entity",
           "Target": "drive"
         },
         {
@@ -875,7 +1101,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [follow](https://docs.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the [follow](https://learn.microsoft.com/en-us/graph/api/driveitem-follow?view=graph-rest-beta) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "follow,driveItem"
         },
         {
@@ -883,7 +1109,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hasPassword",
           "ChangeType": "Addition",
-          "Description": "Added the **hasPassword** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Description": "Added the **hasPassword** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) entity",
           "Target": "permission"
         },
         {
@@ -891,7 +1117,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
-          "Description": "Added the **preventsDownload** property to the [sharingLink](https://docs.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-beta) complex type",
+          "Description": "Added the **preventsDownload** property to the [sharingLink](https://learn.microsoft.com/en-us/graph/api/resources/sharinglink?view=graph-rest-beta) complex type",
           "Target": "sharingLink"
         },
         {
@@ -899,7 +1125,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
-          "Description": "Added the **permission** navigation property to the [sharedDriveItem](https://docs.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **permission** navigation property to the [sharedDriveItem](https://learn.microsoft.com/en-us/graph/api/resources/shareddriveitem?view=graph-rest-beta) entity",
           "Target": "sharedDriveItem"
         },
         {
@@ -907,7 +1133,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "geolocation",
           "ChangeType": "Addition",
-          "Description": "Added the **geolocation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columndefinition?view=graph-rest-beta) entity",
+          "Description": "Added the **geolocation** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columndefinition?view=graph-rest-beta) entity",
           "Target": "columnDefinition"
         },
         {
@@ -915,7 +1141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [geolocationColumn](https://docs.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-beta) complex type",
+          "Description": "Added the [geolocationColumn](https://learn.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-beta) complex type",
           "Target": "geolocationColumn"
         },
         {
@@ -923,7 +1149,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -931,7 +1157,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
           "Target": "site"
         },
         {
@@ -939,7 +1165,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Description": "Added the **analytics** property to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
           "Target": "listItem"
         },
         {
@@ -947,7 +1173,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
@@ -955,7 +1181,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity",
           "Target": "site"
         },
         {
@@ -963,7 +1189,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity",
           "Target": "listItem"
         },
         {
@@ -971,7 +1197,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity",
+          "Description": "Added the [itemAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity",
           "Target": "itemAnalytics"
         },
         {
@@ -979,7 +1205,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity",
+          "Description": "Added the [itemActivityStat](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity",
           "Target": "itemActivityStat"
         },
         {
@@ -987,7 +1213,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type",
+          "Description": "Added the [itemActionStat](https://learn.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type",
           "Target": "itemActionStat"
         },
         {
@@ -995,7 +1221,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type",
+          "Description": "Added the [accessAction](https://learn.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type",
           "Target": "accessAction"
         },
         {
@@ -1003,7 +1229,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type",
+          "Description": "Added the [incompleteData](https://learn.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type",
           "Target": "incompleteData"
         },
         {
@@ -1011,7 +1237,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Description": "Added the **access** property to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
           "Target": "itemActivity"
         },
         {
@@ -1019,7 +1245,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Description": "Added the **location** property to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
           "Target": "itemActivity"
         }
       ],
@@ -1037,7 +1263,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preview",
           "ChangeType": "Addition",
-          "Description": "Added the **preview** action on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the **preview** action on the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -1045,7 +1271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [itemPreviewInfo](https://docs.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type",
+          "Description": "Added the [itemPreviewInfo](https://learn.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type",
           "Target": "itemPreviewInfo"
         }
       ],
@@ -1063,7 +1289,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemPreviewInfo",
           "ChangeType": "Addition",
-          "Description": "Added new complex type:, [itemPreviewInfo](https://docs.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
+          "Description": "Added new complex type: [itemPreviewInfo](https://learn.microsoft.com/en-us/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
           "Target": "itemPreviewInfo"
         },
         {
@@ -1071,7 +1297,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentTypeInfo",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Ename\u003C/b\u003E property to the [contentTypeInfo](https://docs.microsoft.com/en-us/graph/api/resources/contenttypeinfo?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003Ename\u003C/b\u003E property to the [contentTypeInfo](https://learn.microsoft.com/en-us/graph/api/resources/contenttypeinfo?view=graph-rest-beta) complex type",
           "Target": "contentTypeInfo"
         },
         {
@@ -1079,7 +1305,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deleteAction",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EobjectType\u003C/b\u003E property to the [deleteAction](https://docs.microsoft.com/en-us/graph/api/resources/deleteaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EobjectType\u003C/b\u003E property to the [deleteAction](https://learn.microsoft.com/en-us/graph/api/resources/deleteaction?view=graph-rest-beta) complex type",
           "Target": "deleteAction"
         },
         {
@@ -1087,7 +1313,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "renameAction",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EnewName\u003C/b\u003E property to the [renameAction](https://docs.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EnewName\u003C/b\u003E property to the [renameAction](https://learn.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
           "Target": "renameAction"
         },
         {
@@ -1095,7 +1321,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharepointIds",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003EtenantId\u003C/b\u003E property to the [sharepointIds](https://docs.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003EtenantId\u003C/b\u003E property to the [sharepointIds](https://learn.microsoft.com/en-us/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
           "Target": "sharepointIds"
         },
         {
@@ -1103,7 +1329,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "itemActivityTimeSet",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003ElastRecordedDateTime\u003C/b\u003E property to the [itemActivityTimeSet](https://docs.microsoft.com/en-us/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) complex type",
+          "Description": "Added the \u003Cb\u003ElastRecordedDateTime\u003C/b\u003E property to the [itemActivityTimeSet](https://learn.microsoft.com/en-us/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) complex type",
           "Target": "itemActivityTimeSet"
         },
         {
@@ -1111,7 +1337,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preview,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [preview](https://docs.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) action for the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the [preview](https://learn.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) action for the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "preview,driveItem"
         }
       ],
@@ -1129,7 +1355,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseItemVersion,driveItemVersion,listItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added new entities:, [baseItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
+          "Description": "Added new entities: [baseItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
           "Target": "baseItemVersion,driveItemVersion,listItemVersion"
         },
         {
@@ -1137,7 +1363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicationFacet",
           "ChangeType": "Addition",
-          "Description": "Added new complex types:, [publicationFacet](https://docs.microsoft.com/en-us/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
+          "Description": "Added new complex types: [publicationFacet](https://learn.microsoft.com/en-us/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
           "Target": "publicationFacet"
         },
         {
@@ -1145,7 +1371,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Epublication\u003C/b\u003E property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Epublication\u003C/b\u003E property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -1153,7 +1379,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         },
         {
@@ -1161,7 +1387,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "listItem",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) entity",
           "Target": "listItem"
         },
         {
@@ -1169,7 +1395,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "siteCollection",
           "ChangeType": "Addition",
-          "Description": "Added the \u003Cb\u003Eroot\u003C/b\u003E property to the [siteCollection](https://docs.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) entity",
+          "Description": "Added the \u003Cb\u003Eroot\u003C/b\u003E property to the [siteCollection](https://learn.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) entity",
           "Target": "siteCollection"
         },
         {
@@ -1177,7 +1403,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,driveItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [restoreVersion](https://docs.microsoft.com/en-us/graph/api/driveitemversion-restore?view=graph-rest-1.0) action for the [driveItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0) entity",
+          "Description": "Added the [restoreVersion](https://learn.microsoft.com/en-us/graph/api/driveitemversion-restore?view=graph-rest-1.0) action for the [driveItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/driveitemversion?view=graph-rest-1.0) entity",
           "Target": "restoreVersion,driveItemVersion"
         },
         {
@@ -1185,7 +1411,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "restoreVersion,listItemVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [restoreVersion](https://docs.microsoft.com/en-us/graph/api/listitemversion-restore?view=graph-rest-1.0) action for the [listItemVersion](https://docs.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0) entity",
+          "Description": "Added the [restoreVersion](https://learn.microsoft.com/en-us/graph/api/listitemversion-restore?view=graph-rest-1.0) action for the [listItemVersion](https://learn.microsoft.com/en-us/graph/api/resources/listitemversion?view=graph-rest-1.0) entity",
           "Target": "restoreVersion,listItemVersion"
         }
       ],
@@ -1375,7 +1601,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "configuratorUrl,webHtml,sharingLink,folderView,view,folder,listItem,driveItem,list,drive",
           "ChangeType": "Change",
-          "Description": "Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. ,  Added the **folderView** resource type and the **view** property to the **folder** resource type. ,  Added the **listItem** navigation property to **driveItem**. ,  Added the **list** navigation property to **drive**.",
+          "Description": "Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. Added the **folderView** resource type and the **view** property to the **folder** resource type.  Added the **listItem** navigation property to **driveItem**. Added the **list** navigation property to **drive**.",
           "Target": ""
         }
       ],
@@ -1401,7 +1627,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sourceItemId,thumbnail,siteUrl,sharepointIds,sharedBy,sharedDateTime,shared,shared,remoteItem,sharepointIds,drive,itemReference,lastAccessedDateTime,fileSystemInfo,driveItem,site,sharedDriveItem,parentReference,baseItem",
           "ChangeType": "Addition",
-          "Description": "Added the **sourceItemId** property to **thumbnail**. ,  Added the **siteUrl** property to **sharepointIds**. ,  Added the **sharedBy** and **sharedDateTime** properties to **shared**. ,  Added the **shared** property to **remoteItem**. ,  Added the **sharepointIds** property to **drive** and **itemReference**. ,  Added **lastAccessedDateTime** to **fileSystemInfo**. ,  Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. ,  Added the **parentReference** property to **baseItem**.",
+          "Description": "Added the **sourceItemId** property to **thumbnail**. Added the **siteUrl** property to **sharepointIds**. Added the **sharedBy** and **sharedDateTime** properties to **shared**. Added the **shared** property to **remoteItem**. Added the **sharepointIds** property to **drive** and **itemReference**. Added **lastAccessedDateTime** to **fileSystemInfo**. Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. Added the **parentReference** property to **baseItem**.",
           "Target": ""
         },
         {
@@ -1409,7 +1635,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driveItem,sharedDriveItem,baseItem,identity",
           "ChangeType": "Change",
-          "Description": "Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. ,  Marked **identity** as an Open Type.",
+          "Description": "Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. Marked **identity** as an Open Type.",
           "Target": ""
         }
       ],
@@ -1660,203 +1886,203 @@
         "ApiChange": "Property",
         "ChangedApiName": "validation",
         "ChangeType": "Addition",
-        "Description": "Added the **validation** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **validation** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3b947f84-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "contentApprovalStatus",
         "ChangeType": "Addition",
-        "Description": "Added the **contentApprovalStatus** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **contentApprovalStatus** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3b96e0ff-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "hyperlinkOrPicture",
         "ChangeType": "Addition",
-        "Description": "Added the **hyperlinkOrPicture** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **hyperlinkOrPicture** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3b9943d2-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "isDeletable",
         "ChangeType": "Addition",
-        "Description": "Added the **isDeletable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **isDeletable** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3b9ba4e5-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "isReorderable",
         "ChangeType": "Addition",
-        "Description": "Added the **isReorderable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **isReorderable** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3b9e08b8-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "isSealed",
         "ChangeType": "Addition",
-        "Description": "Added the **isSealed** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **isSealed** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3ba06d0a-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "propagateChanges",
         "ChangeType": "Addition",
-        "Description": "Added the **propagateChanges** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **propagateChanges** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3ba2ce53-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "term",
         "ChangeType": "Addition",
-        "Description": "Added the **term** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **term** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3ba52efc-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "thumbnail",
         "ChangeType": "Addition",
-        "Description": "Added the **thumbnail** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **thumbnail** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3ba79387-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "type",
         "ChangeType": "Addition",
-        "Description": "Added the **type** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **type** property to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3ba9f3c8-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "sourceColumn",
         "ChangeType": "Addition",
-        "Description": "Added the **sourceColumn** relationship to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Description": "Added the **sourceColumn** relationship to [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
         "Target": "columnDefinition"
       }, {
         "Id": "3bac5752-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "associatedHubsUrls",
         "ChangeType": "Addition",
-        "Description": "Added the **associatedHubsUrls** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **associatedHubsUrls** property to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3baeba51-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "documentSet",
         "ChangeType": "Addition",
-        "Description": "Added the **documentSet** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **documentSet** property to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bb11bbd-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "documentTemplate",
         "ChangeType": "Addition",
-        "Description": "Added the **documentTemplate** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **documentTemplate** property to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bb37e68-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "isBuiltIn",
         "ChangeType": "Addition",
-        "Description": "Added the **isBuiltIn** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **isBuiltIn** property to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bb5e085-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Property",
         "ChangedApiName": "propagateChanges",
         "ChangeType": "Addition",
-        "Description": "Added the **propagateChanges** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **propagateChanges** property to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bb844a3-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "base",
         "ChangeType": "Addition",
-        "Description": "Added the **base** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **base** relationship to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bbaa58e-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "baseTypes",
         "ChangeType": "Addition",
-        "Description": "Added the **baseTypes** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **baseTypes** relationship to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bbd0822-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "columnPositions",
         "ChangeType": "Addition",
-        "Description": "Added the **columnPositions** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **columnPositions** relationship to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bbf6ac4-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "columns",
         "ChangeType": "Addition",
-        "Description": "Added the **columns** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the **columns** relationship to [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bc1cb23-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Relationship",
         "ChangedApiName": "externalColumns",
         "ChangeType": "Addition",
-        "Description": "Added the **externalColumns** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
+        "Description": "Added the **externalColumns** relationship to [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
         "Target": "site"
       }, {
         "Id": "3bc42f02-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "columnValidation",
         "ChangeType": "Addition",
-        "Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-beta) resource type",
+        "Description": "Added the [columnValidation](https://learn.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-beta) resource type",
         "Target": "columnValidation"
       }, {
         "Id": "3bc690a5-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "contentApprovalStatusColumn",
         "ChangeType": "Addition",
-        "Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-beta) resource type",
+        "Description": "Added the [contentApprovalStatusColumn](https://learn.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-beta) resource type",
         "Target": "contentApprovalStatusColumn"
       }, {
         "Id": "3bc8f384-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "displayNameLocalization",
         "ChangeType": "Addition",
-        "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-beta) resource type",
+        "Description": "Added the [displayNameLocalization](https://learn.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-beta) resource type",
         "Target": "displayNameLocalization"
       }, {
         "Id": "3bcb5608-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "documentSet",
         "ChangeType": "Addition",
-        "Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-beta) resource type",
+        "Description": "Added the [documentSet](https://learn.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-beta) resource type",
         "Target": "documentSet"
       }, {
         "Id": "3bcdb7c2-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "documentSetContent",
         "ChangeType": "Addition",
-        "Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-beta) resource type",
+        "Description": "Added the [documentSetContent](https://learn.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-beta) resource type",
         "Target": "documentSetContent"
       }, {
         "Id": "3bd01a73-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "hyperlinkOrPictureColumn",
         "ChangeType": "Addition",
-        "Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-beta) resource type",
+        "Description": "Added the [hyperlinkOrPictureColumn](https://learn.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-beta) resource type",
         "Target": "hyperlinkOrPictureColumn"
       }, {
         "Id": "3bd27d21-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "termColumn",
         "ChangeType": "Addition",
-        "Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource type",
+        "Description": "Added the [termColumn](https://learn.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource type",
         "Target": "termColumn"
       }, {
         "Id": "3bd4dfb4-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Resource",
         "ChangedApiName": "thumbnailColumn",
         "ChangeType": "Addition",
-        "Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-beta) resource type",
+        "Description": "Added the [thumbnailColumn](https://learn.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-beta) resource type",
         "Target": "thumbnailColumn"
       }, {
         "Id": "3bd74177-6b7c-11eb-83a5-b441f1c9dab3",
@@ -1870,49 +2096,49 @@
         "ApiChange": "Method",
         "ChangedApiName": "addCopy",
         "ChangeType": "Addition",
-        "Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/contentType-addCopy?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [addCopy](https://learn.microsoft.com/en-us/graph/api/contentType-addCopy?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bdc0649-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "associateWithHubSites",
         "ChangeType": "Addition",
-        "Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [associateWithHubSites](https://learn.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3bde6804-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "copyToDefaultContentLocation",
         "ChangeType": "Addition",
-        "Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [copyToDefaultContentLocation](https://learn.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3be0c9bf-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "publish",
         "ChangeType": "Addition",
-        "Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3be32e41-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "unpublish",
         "ChangeType": "Addition",
-        "Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [unpublish](https://learn.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }, {
         "Id": "3be58f88-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "getApplicableContentTypesForList",
         "ChangeType": "Addition",
-        "Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta) method to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
+        "Description": "Added the [getApplicableContentTypesForList](https://learn.microsoft.com/en-us/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
         "Target": "site"
       }, {
         "Id": "3be7f374-6b7c-11eb-83a5-b441f1c9dab3",
         "ApiChange": "Method",
         "ChangedApiName": "isPublished",
         "ChangeType": "Addition",
-        "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/contentType-isPublished?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Description": "Added the [isPublished](https://learn.microsoft.com/en-us/graph/api/contentType-isPublished?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
         "Target": "contentType"
       }],
       "Id": "3b8fbbdf-6b7c-11eb-83a5-b441f1c9dab3",
@@ -1928,28 +2154,28 @@
     			"ApiChange": "Method",
     			"ChangedApiName": "associateWithHubSites",
     			"ChangeType": "Change",
-    			"Description": "Changed the return type for the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method.",
+    			"Description": "Changed the return type for the [associateWithHubSites](https://learn.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method.",
     			"Target": "associateWithHubSites"
     		}, {
     			"Id": "7a7f6ce8-8196-11eb-9fc2-269673f51d94",
     			"ApiChange": "Method",
     			"ChangedApiName": "copyToDefaultContentLocation",
     			"ChangeType": "Change",
-    			"Description": "Changed the return type for the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method.",
+    			"Description": "Changed the return type for the [copyToDefaultContentLocation](https://learn.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method.",
     			"Target": "copyToDefaultContentLocation"
     		}, {
     			"Id": "7a81cfec-8196-11eb-9fc2-269673f51d94",
     			"ApiChange": "Method",
     			"ChangedApiName": "publish",
     			"ChangeType": "Change",
-    			"Description": "Changed the return type for the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method.",
+    			"Description": "Changed the return type for the [publish](https://learn.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method.",
     			"Target": "publish"
     		}, {
     			"Id": "7a8433f7-8196-11eb-9fc2-269673f51d94",
     			"ApiChange": "Method",
     			"ChangedApiName": "unpublish",
     			"ChangeType": "Change",
-    			"Description": "Changed the return type for the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method.",
+    			"Description": "Changed the return type for the [unpublish](https://learn.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method.",
     			"Target": "unpublish"
     		}],
     		"Id": "7a7aa807-8196-11eb-9fc2-269673f51d94",
@@ -1974,7 +2200,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "columnValidation",
           "ChangeType": "Addition",
-          "Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [columnValidation](https://learn.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-1.0) resource type.",
           "Target": "columnValidation"
         },
         {
@@ -1982,7 +2208,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentApprovalStatusColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [contentApprovalStatusColumn](https://learn.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-1.0) resource type.",
           "Target": "contentApprovalStatusColumn"
         },
         {
@@ -1990,7 +2216,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "displayNameLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [displayNameLocalization](https://learn.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
           "Target": "displayNameLocalization"
         },
         {
@@ -1998,7 +2224,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSet",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [documentSet](https://learn.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-1.0) resource type.",
           "Target": "documentSet"
         },
         {
@@ -2006,7 +2232,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetContent",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [documentSetContent](https://learn.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-1.0) resource type.",
           "Target": "documentSetContent"
         },
         {
@@ -2014,7 +2240,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hyperlinkOrPictureColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [hyperlinkOrPictureColumn](https://learn.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-1.0) resource type.",
           "Target": "hyperlinkOrPictureColumn"
         },
         {
@@ -2022,7 +2248,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "termColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [termColumn](https://learn.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-1.0) resource type.",
           "Target": "termColumn"
         },
         {
@@ -2030,7 +2256,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "thumbnailColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [thumbnailColumn](https://learn.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-1.0) resource type.",
           "Target": "thumbnailColumn"
         },
         {
@@ -2038,7 +2264,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentApprovalStatus",
           "ChangeType": "Addition",
-          "Description": "Added the **contentApprovalStatus** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **contentApprovalStatus** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2046,7 +2272,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hyperlinkOrPicture",
           "ChangeType": "Addition",
-          "Description": "Added the **hyperlinkOrPicture** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **hyperlinkOrPicture** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2054,7 +2280,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDeletable",
           "ChangeType": "Addition",
-          "Description": "Added the **isDeletable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isDeletable** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2062,7 +2288,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isReorderable",
           "ChangeType": "Addition",
-          "Description": "Added the **isReorderable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isReorderable** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2070,7 +2296,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSealed",
           "ChangeType": "Addition",
-          "Description": "Added the **isSealed** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isSealed** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2078,7 +2304,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "propagateChanges",
           "ChangeType": "Addition",
-          "Description": "Added the **propagateChanges** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **propagateChanges** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2086,7 +2312,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "term",
           "ChangeType": "Addition",
-          "Description": "Added the **term** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **term** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2094,7 +2320,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "thumbnail",
           "ChangeType": "Addition",
-          "Description": "Added the **thumbnail** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **thumbnail** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2102,7 +2328,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "type",
           "ChangeType": "Addition",
-          "Description": "Added the **type** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **type** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2110,7 +2336,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "validation",
           "ChangeType": "Addition",
-          "Description": "Added the **validation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **validation** property to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2118,7 +2344,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sourceColumn",
           "ChangeType": "Addition",
-          "Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -2126,7 +2352,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "associatedHubsUrls",
           "ChangeType": "Addition",
-          "Description": "Added the **associatedHubsUrls** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **associatedHubsUrls** property to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2134,7 +2360,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "documentSet",
           "ChangeType": "Addition",
-          "Description": "Added the **documentSet** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **documentSet** property to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2142,7 +2368,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "documentTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the **documentTemplate** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **documentTemplate** property to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2150,7 +2376,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isBuiltIn",
           "ChangeType": "Addition",
-          "Description": "Added the **isBuiltIn** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isBuiltIn** property to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2158,7 +2384,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "propagateChanges",
           "ChangeType": "Addition",
-          "Description": "Added the **propagateChanges** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **propagateChanges** property to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2166,7 +2392,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "base",
           "ChangeType": "Addition",
-          "Description": "Added the **base** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **base** relationship to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2174,7 +2400,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "baseTypes",
           "ChangeType": "Addition",
-          "Description": "Added the **baseTypes** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **baseTypes** relationship to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2182,7 +2408,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "columnPositions",
           "ChangeType": "Addition",
-          "Description": "Added the **columnPositions** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **columnPositions** relationship to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2190,7 +2416,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "columns",
           "ChangeType": "Addition",
-          "Description": "Added the **columns** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **columns** relationship to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -2198,7 +2424,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "externalColumns",
           "ChangeType": "Addition",
-          "Description": "Added the **externalColumns** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Description": "Added the **externalColumns** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         },
         {
@@ -2206,7 +2432,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addCopy",
           "ChangeType": "Addition",
-          "Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) method to the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) resource.",
+          "Description": "Added the addCopy method to the addCopy resource.",
           "Target": "addCopy"
         },
         {
@@ -2214,7 +2440,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "associateWithHubSites",
           "ChangeType": "Addition",
-          "Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) method to the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) resource.",
+          "Description": "Added the associateWithHubSites method to the associateWithHubSites resource.",
           "Target": "associateWithHubSites"
         },
         {
@@ -2222,7 +2448,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "copyToDefaultContentLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) method to the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) resource.",
+          "Description": "Added the copyToDefaultContentLocation method to the copyToDefaultContentLocation resource.",
           "Target": "copyToDefaultContentLocation"
         },
         {
@@ -2230,7 +2456,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) method to the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) resource.",
+          "Description": "Added the publish method to the publish resource.",
           "Target": "publish"
         },
         {
@@ -2238,7 +2464,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unpublish",
           "ChangeType": "Addition",
-          "Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) method to the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) resource.",
+          "Description": "Added the unpublish method to the unpublish resource.",
           "Target": "unpublish"
         },
         {
@@ -2246,7 +2472,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getApplicableContentTypesForList",
           "ChangeType": "Addition",
-          "Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) method to the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) resource.",
+          "Description": "Added the getApplicableContentTypesForList method to the getApplicableContentTypesForList resource.",
           "Target": "getApplicableContentTypesForList"
         },
         {
@@ -2254,7 +2480,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "isPublished",
           "ChangeType": "Addition",
-          "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) method to the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) resource.",
+          "Description": "Added the isPublished method to the isPublished resource.",
           "Target": "isPublished"
         }
       ],
@@ -2335,14 +2561,14 @@
         "ApiChange": "Property",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
-        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Description": "Added the **malware** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
         "Target": "driveItem"
       }, {
         "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
         "ApiChange": "Resource",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
-        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Description": "Added the [malware](https://learn.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
         "Target": "malware"
       }, {
         "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
@@ -2365,14 +2591,14 @@
         "ApiChange": "Property",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
-        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Description": "Added the **malware** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
         "Target": "driveItem"
       }, {
         "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
         "ApiChange": "Resource",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
-        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Description": "Added the [malware](https://learn.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
         "Target": "malware"
       }, {
         "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
@@ -2428,7 +2654,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "parentTerm",
           "ChangeType": "Addition",
-          "Description": "Added the **parentTerm** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
+          "Description": "Added the **parentTerm** relationship to the [termColumn](https://learn.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
           "Target": "termColumn"
         },
         {
@@ -2436,7 +2662,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "termSet",
           "ChangeType": "Addition",
-          "Description": "Added the **termSet** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
+          "Description": "Added the **termSet** relationship to the [termColumn](https://learn.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
           "Target": "termColumn"
         }
       ],
@@ -2454,7 +2680,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "siteSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/api/resources/siteSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [siteSettings](https://learn.microsoft.com/en-us/graph/api/resources/siteSettings?view=graph-rest-beta) resource type.",
           "Target": "siteSettings"
         },
         {
@@ -2462,7 +2688,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the **settings** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **settings** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         },
         {
@@ -2470,7 +2696,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [Get siteSettings](https://docs.microsoft.com/en-us/graph/api/sitesettings-get?view=graph-rest-beta) action to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get siteSettings](https://learn.microsoft.com/en-us/graph/api/sitesettings-get?view=graph-rest-beta) action to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
@@ -2488,7 +2714,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersionItem",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetVersionItem](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersionItem?view=graph-rest-beta) resource type.",
+          "Description": "Added the [documentSetVersionItem](https://learn.microsoft.com/en-us/graph/api/resources/documentSetVersionItem?view=graph-rest-beta) resource type.",
           "Target": "documentSetVersionItem"
         },
         {
@@ -2496,7 +2722,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [documentSetVersion](https://learn.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-beta) resource and supported methods.",
           "Target": "documentSetVersion"
         },
         {
@@ -2504,7 +2730,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "documentSetVersions",
           "ChangeType": "Addition",
-          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource.",
+          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource.",
           "Target": "listItem"
         }
       ],
@@ -2512,6 +2738,408 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-25T03:24:57.6436095Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "richLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [richLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "richLongRunningOperation"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "addCopyFromContentTypeHub",
+          "ChangeType": "Addition",
+          "Description": "Added the addCopyFromContentTypeHub method to the contentType resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCompatibleHubContentTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the getCompatibleHubContentTypes method to the contentType resource.",
+          "Target": "contentType"
+        }
+      ],
+      "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-03T06:10:35.3472999Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersionItem](https://learn.microsoft.com/en-us/graph/api/resources/documentsetversionitem?view=graph-rest-1.0) resource type.",
+          "Target": "documentSetVersionItem"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetVersion](https://learn.microsoft.com/en-us/graph/api/resources/documentsetversion?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "documentSetVersion"
+        },
+        {
+          "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "documentSetVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentSetVersions** relationship to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "b7269ffc-d6e7-46fb-8c8b-af9931aa869b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-09T05:35:55.0887308Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "horizontalSectionLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **horizontalSectionLayoutType** enumeration type.",
+          "Target": "horizontalSectionLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pageLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageLayoutType** enumeration type.",
+          "Target": "pageLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pagePromotionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pagePromotionType** enumeration type.",
+          "Target": "pagePromotionType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionEmphasisType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionEmphasisType** enumeration type.",
+          "Target": "sectionEmphasisType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaLayoutType** enumeration type.",
+          "Target": "titleAreaLayoutType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaTextAlignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaTextAlignmentType** enumeration type.",
+          "Target": "titleAreaTextAlignmentType"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyStringPair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyStringPair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyStringPair?view=graph-rest-beta) resource type.",
+          "Target": "metaDataKeyStringPair"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyValuePair?view=graph-rest-beta) resource type.",
+          "Target": "metaDataKeyValuePair"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reactionsFacet",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactionsFacet](https://learn.microsoft.com/en-us/graph/api/resources/reactionsFacet?view=graph-rest-beta) resource type.",
+          "Target": "reactionsFacet"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serverProcessedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [serverProcessedContent](https://learn.microsoft.com/en-us/graph/api/resources/serverProcessedContent?view=graph-rest-beta) resource type.",
+          "Target": "serverProcessedContent"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sitePageData",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sitePageData** resource type.",
+          "Target": "sitePageData"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "titleArea",
+          "ChangeType": "Addition",
+          "Description": "Added the [titleArea](https://learn.microsoft.com/en-us/graph/api/resources/titleArea?view=graph-rest-beta) resource type.",
+          "Target": "titleArea"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartData",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartData](https://learn.microsoft.com/en-us/graph/api/resources/webPartData?view=graph-rest-beta) resource type.",
+          "Target": "webPartData"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartPosition](https://learn.microsoft.com/en-us/graph/api/resources/webPartPosition?view=graph-rest-beta) resource type.",
+          "Target": "webPartPosition"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "canvasLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-beta) resource.",
+          "Target": "canvasLayout"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-beta) resource and associated methods.",
+          "Target": "horizontalSection"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSectionColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-beta) resource and associated methods.",
+          "Target": "horizontalSectionColumn"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageLayout** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageLayoutType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **pageLayoutType** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "promotionKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **promotionKind** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "reactions",
+          "ChangeType": "Addition",
+          "Description": "Added the **reactions** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "showComments",
+          "ChangeType": "Addition",
+          "Description": "Added the **showComments** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "showRecommendedPages",
+          "ChangeType": "Addition",
+          "Description": "Added the **showRecommendedPages** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "thumbnailWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **thumbnailWebUrl** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "titleArea",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleArea** property to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "webParts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **webParts** property from the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "canvasLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webParts",
+          "ChangeType": "Addition",
+          "Description": "Added the **webParts** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "standardWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource.",
+          "Target": "standardWebPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "textWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-beta) resource.",
+          "Target": "textWebPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verticalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-beta) resource and associated methods.",
+          "Target": "verticalSection"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPositionOfWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the getPositionOfWebPart method to the webPart resource.",
+          "Target": "webPart"
+        },
+        {
+          "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebPartsByPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the getWebPartsByPosition method to the sitePage resource.",
+          "Target": "sitePage"
+        }
+      ],
+      "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-05T03:42:44.8308328Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) method of [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta).",
+          "Target": "createLink"
+        }
+      ],
+      "Id": "59cd1acf-d56a-4cd3-a213-643cbcc3c3ab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sendNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the `sendNotification` parameter to the [createLink](https://learn.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) method of [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Target": "createLink"
+        }
+      ],
+      "Id": "b5aef9f7-ffc6-4018-997a-b7f5dcbfe30f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }

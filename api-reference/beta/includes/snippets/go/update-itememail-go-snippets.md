@@ -5,19 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewItemEmail()
+requestBody := graphmodels.NewItemEmail()
 displayName := "Business Email"
-requestBody.SetDisplayName(&displayName)
-type := "work"
-requestBody.SetType(&type)
-options := &msgraphsdk.ItemEmailRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-itemEmailId := "itemEmail-id"
-graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+type := graphmodels.WORK_EMAILTYPE 
+requestBody.SetType(&type) 
+
+result, err := graphClient.UsersById("user-id").Profile().EmailsById("itemEmail-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

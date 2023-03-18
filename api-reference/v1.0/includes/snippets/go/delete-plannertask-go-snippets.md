@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
+headers := abstractions.NewRequestHeaders()
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerTaskItemRequestBuilderDeleteRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.PlannerTaskRequestBuilderDeleteOptions{
-	H: headers,
-}
-plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).Delete(options)
+
+graphClient.Planner().TasksById("plannerTask-id").Delete(context.Background(), configuration)
 
 
 ```

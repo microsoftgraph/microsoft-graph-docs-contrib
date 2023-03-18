@@ -4,7 +4,7 @@ description: "The statistics summary for a particular role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # privilegedRoleSummary resource type

@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 ---
 
 # ItemActivityTimeSet resource type

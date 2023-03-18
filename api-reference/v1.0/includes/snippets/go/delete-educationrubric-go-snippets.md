@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-educationRubricId := "educationRubric-id"
-graphClient.Education().Me().RubricsById(&educationRubricId).Delete(nil)
+
+graphClient.Education().Me().RubricsById("educationRubric-id").Delete(context.Background(), nil)
 
 
 ```

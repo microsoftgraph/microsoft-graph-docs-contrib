@@ -5,28 +5,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewChatMessage()
-body := msgraphsdk.NewItemBody()
+requestBody := graphmodels.NewChatMessage()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "<div><div><at id=\"0\">TestTag</at>&nbsp;Testing Tags</div></div>"
+body.SetContent(&content) 
 requestBody.SetBody(body)
-contentType := "html"
-body.SetContentType(&contentType)
-content := "<div><div><at id="0">TestTag</at>&nbsp;Testing Tags</div></div>"
-body.SetContent(&content)
-requestBody.SetMentions( []ChatMessageMention {
-	msgraphsdk.NewChatMessageMention(),
-	SetAdditionalData(map[string]interface{}{
-		"id": ,
-		"mentionText": "TestTag",
-	}
+
+
+chatMessageMention := graphmodels.NewChatMessageMention()
+id := int32(0)
+chatMessageMention.SetId(&id) 
+mentionText := "TestTag"
+chatMessageMention.SetMentionText(&mentionText) 
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
+tag := graphmodels.NewTeamworkTagIdentity()
+id := "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM2OGEzZTM2NS1mN2Q5LTRhNTYtYjQ5OS0yNDMzMmE5Y2M1NzIjI3RTMERJZ1Z1ZQ=="
+tag.SetId(&id) 
+displayName := "TestTag"
+tag.SetDisplayName(&displayName) 
+mentioned.SetTag(tag)
+chatMessageMention.SetMentioned(mentioned)
+
+mentions := []graphmodels.ChatMessageMentionable {
+	chatMessageMention,
+
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+requestBody.SetMentions(mentions)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

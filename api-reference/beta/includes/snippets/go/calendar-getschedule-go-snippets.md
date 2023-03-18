@@ -5,35 +5,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetSchedules( []String {
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.MeCalendarGetScheduleRequestBuilderPostRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewGetSchedulePostRequestBody()
+schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
+
 }
-startTime := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetStartTime(startTime)
+requestBody.SetSchedules(schedules)
+startTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-03-15T09:00:00"
-startTime.SetDateTime(&dateTime)
+startTime.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-startTime.SetTimeZone(&timeZone)
-endTime := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetEndTime(endTime)
+startTime.SetTimeZone(&timeZone) 
+requestBody.SetStartTime(startTime)
+endTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2019-03-15T18:00:00"
-endTime.SetDateTime(&dateTime)
+endTime.SetDateTime(&dateTime) 
 timeZone := "Pacific Standard Time"
-endTime.SetTimeZone(&timeZone)
+endTime.SetTimeZone(&timeZone) 
+requestBody.SetEndTime(endTime)
 availabilityViewInterval := int32(60)
-requestBody.SetAvailabilityViewInterval(&availabilityViewInterval)
-headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
-}
-options := &msgraphsdk.GetScheduleRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
-}
-result, err := graphClient.Me().Calendar().GetSchedule().Post(options)
+requestBody.SetAvailabilityViewInterval(&availabilityViewInterval) 
+
+result, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
 
 
 ```

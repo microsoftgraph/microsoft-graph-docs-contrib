@@ -5,25 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewItemPublication()
+requestBody := graphmodels.NewItemPublication()
 description := "One persons journey to the top of the branding management field."
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Got Brands? The story of Innocenty Popov and his journey to the top."
-requestBody.SetDisplayName(&displayName)
-publishedDate := "Date"
-requestBody.SetPublishedDate(&publishedDate)
+requestBody.SetDisplayName(&displayName) 
+publishedDate := date
+requestBody.SetPublishedDate(&publishedDate) 
 publisher := "International Association of Branding Management Publishing"
-requestBody.SetPublisher(&publisher)
+requestBody.SetPublisher(&publisher) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
 webUrl := "https://www.iabm.io"
-requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.PublicationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Publications().Post(options)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Me().Profile().Publications().Post(context.Background(), requestBody, nil)
 
 
 ```

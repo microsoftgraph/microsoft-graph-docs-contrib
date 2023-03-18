@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.MessageRequestBuilderGetQueryParameters{
-	Select: "internetMessageHeaders",
+requestParameters := &graphconfig.MeMessageItemRequestBuilderGetQueryParameters{
+	Select: [] string {"internetMessageHeaders"},
 }
-options := &msgraphsdk.MessageRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.MeMessageItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Get(options)
+
+result, err := graphClient.Me().MessagesById("message-id").Get(context.Background(), configuration)
 
 
 ```

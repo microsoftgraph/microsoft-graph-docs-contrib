@@ -1,7 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -21,6 +21,3 @@ Not yet documented
 |notConfigured|0|Device default value, no intent.|
 |enabled|1|Enables the setting on the device.|
 |disabled|2|Disables the setting on the device.|
-
-
-

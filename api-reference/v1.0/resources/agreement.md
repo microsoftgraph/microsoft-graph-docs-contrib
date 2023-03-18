@@ -11,7 +11,7 @@ author: "raprakasMSFT"
 
 Namespace: microsoft.graph
 
-Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the [Azure Active Directory Terms of Use feature](/azure/active-directory/conditional-access/terms-of-use) according to your scenario.
+Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the [Azure Active Directory Terms of Use feature](#see-also) according to your scenario.
 
 ## Methods
 
@@ -60,13 +60,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.agreement",
-  "id": "String (identifier)",
   "displayName": "String",
+  "id": "String (identifier)",
+  "isPerDeviceAcceptanceRequired": "Boolean",
+  "isViewingBeforeAcceptanceRequired": "Boolean",
   "termsExpiration": {
     "@odata.type": "microsoft.graph.termsExpiration"
   },
-  "userReacceptRequiredFrequency": "String (duration)",
-  "isViewingBeforeAcceptanceRequired": "Boolean",
-  "isPerDeviceAcceptanceRequired": "Boolean"
+  "userReacceptRequiredFrequency": "String (duration)"
 }
 ```
+
+## See also
+
++ [Azure Active Directory Terms of Use](/azure/active-directory/conditional-access/terms-of-use) 

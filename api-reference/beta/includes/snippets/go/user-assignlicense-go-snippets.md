@@ -5,31 +5,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAddLicenses( []AssignedLicense {
-	msgraphsdk.NewAssignedLicense(),
-	SetAdditionalData(map[string]interface{}{
-		"disabledPlans":  []String {
-			"11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
-		}
-		"skuId": "skuId-value-1",
-	}
-	msgraphsdk.NewAssignedLicense(),
-	SetAdditionalData(map[string]interface{}{
-		"disabledPlans":  []String {
-			"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235",
-		}
-		"skuId": "skuId-value-2",
-	}
+requestBody := graphmodels.NewAssignLicensePostRequestBody()
+
+
+assignedLicense := graphmodels.NewAssignedLicense()
+disabledPlans := []string {
+ := uuid.MustParse("8a256a2b-b617-496d-b51b-e76466e88db0")
+assignedLicense.Set(&) 
+
 }
-requestBody.SetRemoveLicenses( []string {
+assignedLicense.SetDisabledPlans(disabledPlans)
+skuId := uuid.MustParse("84a661c4-e949-4bd2-a560-ed7766fcaf2b")
+assignedLicense.SetSkuId(&skuId) 
+assignedLicense1 := graphmodels.NewAssignedLicense()
+disabledPlans := []string {
+
 }
-options := &msgraphsdk.AssignLicenseRequestBuilderPostOptions{
-	Body: requestBody,
+assignedLicense1.SetDisabledPlans(disabledPlans)
+skuId := uuid.MustParse("f30db892-07e9-47e9-837c-80727f46fd3d")
+assignedLicense1.SetSkuId(&skuId) 
+
+addLicenses := []graphmodels.AssignedLicenseable {
+	assignedLicense,
+	assignedLicense1,
+
 }
-result, err := graphClient.Me().AssignLicense().Post(options)
+requestBody.SetAddLicenses(addLicenses)
+removeLicenses := []string {
+
+}
+requestBody.SetRemoveLicenses(removeLicenses)
+
+result, err := graphClient.Me().AssignLicense().Post(context.Background(), requestBody, nil)
 
 
 ```

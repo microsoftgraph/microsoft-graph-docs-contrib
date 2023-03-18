@@ -5,15 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewStore()
+requestBody := graphmodels.NewStore()
 defaultLanguageTag := "en-US"
-requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
-options := &msgraphsdk.TermStoreRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.TermStore().Patch(options)
+requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
+
+result, err := graphClient.TermStore().Patch(context.Background(), requestBody, nil)
 
 
 ```

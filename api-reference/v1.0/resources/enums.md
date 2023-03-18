@@ -11,6 +11,176 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### userPurpose values
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
+### bookingsAvailabilityStatus values
+|Member|
+|:---|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
+### expirationPatternType values 
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### recurrencePatternType values 
+
+|Member|
+|:---|
+|daily|
+|weekly|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### unifiedRoleManagementPolicyRuleTargetOperations values 
+
+|Member|
+|:---|
+|all|
+|activate|
+|deactivate|
+|assign|
+|update|
+|remove|
+|extend|
+|renew|
+|unknownFutureValue|
+
+### unifiedRoleScheduleRequestActions values 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
 ### accessReviewExpirationBehavior values
 
 |Member|
@@ -160,6 +330,13 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### accessReviewStageFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### volumeType values
 
 |Member|
@@ -205,6 +382,16 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### educationFeedbackResourceOutcomeStatus values
+
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -228,6 +415,20 @@ Namespace: microsoft.graph
 |:---|
 |allow|
 |block|
+
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
 
 ### attestationLevel values
 
@@ -399,6 +600,17 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
+### templateScenarios values
+|Member             |
+|:------------------|
+|new                |
+|secureFoundation   |
+|zeroTrust          |
+|remoteWork         |
+|protectAdmins      |
+|emergingThreats    |
+|unknownFutureValue |
+
 ### operationResult values
 
 |Member|
@@ -548,6 +760,7 @@ Namespace: microsoft.graph
 |signin|
 |user|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### riskDetectionTimingType values
 
@@ -931,6 +1144,15 @@ Namespace: microsoft.graph
 | radio
 
 
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
+
+
 ### plannerPreviewType values
 
 | Member
@@ -1245,9 +1467,12 @@ Possible values for user account types (group membership), per Windows definitio
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
 |hidden|
+|adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
+|m365DAdminDismissedDetection|
 
 ### riskEventTypes values
 
@@ -1451,13 +1676,6 @@ Possible values for user account types (group membership), per Windows definitio
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
-### channelMembershipType values
-
-| Member             | Value |Description|
-| :----------------- | :---- |:-----------|
-| standard           | 0     |Channel inherits the list of members of the parent team.|
-| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
-| unknownFutureValue | 2     |      |
 ### wellknownListName values
 | Member
 |:----------------------
@@ -1780,6 +1998,15 @@ Possible values for user account types (group membership), per Windows definitio
 |customer|
 |unknownFutureValue|
 
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
+
 ### serviceHealthStatus values 
 
 |Member|
@@ -1893,6 +2120,27 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
+|unknownFutureValue|
+
 ### teamworkCallEventType values 
 
 |Member|
@@ -1920,6 +2168,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|teamMember|
 
 ### answerInputType values 
 
@@ -1962,4 +2212,96 @@ Possible values for user account types (group membership), per Windows definitio
 |notReviewed|
 |dontKnow|
 |notNotified|
+|unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
+|unknownFutureValue|
+
+### onPremisesDirectorySynchronizationDeletionPreventionType values
+
+|Member|
+|:-----|
+|disabled|
+|enabledForCount|
+|enabledForPercentage|
+
+### searchContent values 
+
+|Member|
+|:---|
+|sharedContent|
+|privateContent|
 |unknownFutureValue|

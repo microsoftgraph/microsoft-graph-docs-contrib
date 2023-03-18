@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalRequest resource type"
 description: "The OperationApprovalRequest Entity"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,7 +42,7 @@ The OperationApprovalRequest Entity
 |lastModifiedDateTime|DateTimeOffset|Last modified DateTime. This property is read-only.|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the requestor. This property is read-only.|
 |approver|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the approver. This property is read-only.|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
+|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
 |requestJustification|String|The request justification. This property is read-only.|
 |approvalJustification|String|The justification for the approval of the request. This property is read-only.|
 |operationApprovalPolicies|String|The operational approval policies used in the request. This property is read-only.|
@@ -107,7 +107,3 @@ Here is a JSON representation of the resource.
   "operationApprovalPolicies": "String"
 }
 ```
-
-
-
-

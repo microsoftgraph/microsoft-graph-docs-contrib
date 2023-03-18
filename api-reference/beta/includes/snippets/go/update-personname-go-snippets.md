@@ -5,16 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPersonName()
+requestBody := graphmodels.NewPersonName()
 nickname := "Kesha"
-requestBody.SetNickname(&nickname)
-options := &msgraphsdk.PersonNameRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-personNameId := "personName-id"
-graphClient.Me().Profile().NamesById(&personNameId).Patch(options)
+requestBody.SetNickname(&nickname) 
+
+result, err := graphClient.Me().Profile().NamesById("personName-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

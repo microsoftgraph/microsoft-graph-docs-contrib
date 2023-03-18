@@ -5,17 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAuthenticationFlowsPolicy()
-selfServiceSignUp := msgraphsdk.NewSelfServiceSignUpAuthenticationFlowConfiguration()
-requestBody.SetSelfServiceSignUp(selfServiceSignUp)
+requestBody := graphmodels.NewAuthenticationFlowsPolicy()
+selfServiceSignUp := graphmodels.NewSelfServiceSignUpAuthenticationFlowConfiguration()
 isEnabled := true
-selfServiceSignUp.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.AuthenticationFlowsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthenticationFlowsPolicy().Patch(options)
+selfServiceSignUp.SetIsEnabled(&isEnabled) 
+requestBody.SetSelfServiceSignUp(selfServiceSignUp)
+
+result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

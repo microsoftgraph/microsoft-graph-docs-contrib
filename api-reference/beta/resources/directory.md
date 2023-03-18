@@ -21,30 +21,32 @@ Inherits from [entity](entity.md).
 
 ## Methods
 
-| Method         | Return Type | Description |
-|:---------------|:------------|:------------|
-|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted item. |
-|[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
-|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
-|[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
-|[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+| Method                                                                                     | Return Type                                      | Description                            |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------- |
+| [Get deleted item](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
+| [Restore deleted item](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
+| [List deleted items](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
+| [Permanently delete an item](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
+| [List deleted items owned by a user](../api/directory-deleteditems-getuserownedobjects.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|id|String| A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
+| Property | Type   | Description                                                                                                                                              |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id       | String | A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md). |
 
 ## Relationships
 
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|administrativeUnits|[administrativeUnit](administrativeunit.md) collection| Conceptual container for user and group directory objects.|
-|attributeSets|[attributeSet](attributeset.md) collection| Group of related custom security attribute definitions.|
-|customSecurityAttributeDefinitions|[customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection|Schema of a custom security attributes (key-value pairs).|
-|deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
-|featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
-|federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+| Relationship                       | Type                                                                                     | Description                                                                                                               |
+| :--------------------------------- | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
+| administrativeUnits                | [administrativeUnit](administrativeunit.md) collection                                   | Conceptual container for user and group directory objects.                                                                |
+| attributeSets                      | [attributeSet](attributeset.md) collection                                               | Group of related custom security attribute definitions.                                                                   |
+| customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection     | Schema of a custom security attributes (key-value pairs).                                                                 |
+| deleteditems                       | [directoryObject](directoryobject.md) collection                                         | Recently deleted items. Read-only. Nullable.                                                                              |
+| featureRolloutPolicies             | [featureRolloutPolicy](featurerolloutpolicy.md) collection                               | Nullable.                                                                                                                 |
+| federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
+| onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
+| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.             |
 
 ## JSON representation
 

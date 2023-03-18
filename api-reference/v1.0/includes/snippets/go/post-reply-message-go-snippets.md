@@ -5,22 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewChatMessage()
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "html"
-body.SetContentType(&contentType)
+requestBody := graphmodels.NewChatMessage()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Hello World"
-body.SetContent(&content)
-options := &msgraphsdk.RepliesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-channelId := "channel-id"
-chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Replies().Post(options)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Replies().Post(context.Background(), requestBody, nil)
 
 
 ```

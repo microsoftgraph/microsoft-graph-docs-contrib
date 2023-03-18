@@ -4,7 +4,7 @@ description: "Represents the settings for a privileged role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # privilegedRoleSettings resource type

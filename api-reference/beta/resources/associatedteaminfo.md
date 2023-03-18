@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [team](team.md) that is associated with a [user](../resources/user.md). 
+Represents a [team](team.md) that is associated with a [user](../resources/user.md).
+
 Currently, a [user](../resources/user.md) can be associated with a [team](../resources/team.md) in two different ways:
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
 * A [user](../resources/user.md) can be a member of a shared [channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
@@ -30,7 +31,8 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the team. Inherited from [teamInfo](../resources/teaminfo.md).|
+|displayName|String|The name of the [team](team.md). Inherited from [teamInfo](../resources/teaminfo.md).|
+|id|String|The unique identifier for the [team](team.md). Read-only.|
 |tenantId|String|The ID of the Azure Active Directory tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
 

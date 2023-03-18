@@ -5,21 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAssetsRequestBody()
-requestBody.SetAssets( []UpdatableAsset {
-	msgraphsdk.NewUpdatableAsset(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-		"id": "String (identifier)",
-	}
+requestBody := graphmodels.NewAddMembersPostRequestBody()
+
+
+updatableAsset := graphmodels.NewUpdatableAsset()
+id := "String (identifier)"
+updatableAsset.SetId(&id) 
+
+assets := []graphmodels.Objectable {
+	updatableAsset,
+
 }
-options := &msgraphsdk.AddMembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembers(updatableAsset-id).Post(options)
+requestBody.SetAssets(assets)
+
+graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").WindowsUpdatesAddMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

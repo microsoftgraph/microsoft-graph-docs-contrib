@@ -101,7 +101,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activeuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D7')
 ```
 

@@ -5,23 +5,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewConversationThread()
+requestBody := graphmodels.NewConversationThread()
 topic := "New Conversation Thread Topic"
-requestBody.SetTopic(&topic)
-requestBody.SetPosts( []Post {
-	msgraphsdk.NewPost(),
-	SetAdditionalData(map[string]interface{}{
-		"newParticipants":  []Object {
-		}
-	}
+requestBody.SetTopic(&topic) 
+
+
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "this is body content"
+body.SetContent(&content) 
+post.SetBody(body)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+name := "Alex Darrow"
+emailAddress.SetName(&name) 
+address := "alexd@contoso.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+newParticipants := []graphmodels.Recipientable {
+	recipient,
+
 }
-options := &msgraphsdk.ThreadsRequestBuilderPostOptions{
-	Body: requestBody,
+post.SetNewParticipants(newParticipants)
+
+posts := []graphmodels.Postable {
+	post,
+
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Threads().Post(options)
+requestBody.SetPosts(posts)
+
+result, err := graphClient.GroupsById("group-id").Threads().Post(context.Background(), requestBody, nil)
 
 
 ```
