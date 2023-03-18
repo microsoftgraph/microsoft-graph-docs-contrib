@@ -21,7 +21,7 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 |Method|Return type|Description|
 |:---|:---|:---|
 |[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application. |
-|[Add secrets](../api/synchronization-synchronization-secrets.md)|None| Provide credentials for establishing connectivity with the target system. |
+|[Add secrets](../api/synchronization-serviceprincipal-put-synchronization.md)|None| Provide credentials for establishing connectivity with the target system. |
 
 <!--
 |Method|Return type|Description|
