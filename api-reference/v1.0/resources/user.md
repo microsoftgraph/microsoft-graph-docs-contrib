@@ -529,6 +529,7 @@ The following is a JSON representation of the resource.
   "schools": ["String"],
   "securityIdentifier": "String",
   "showInAddressList": true,
+  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"},
   "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["String"],
   "state": "String",
