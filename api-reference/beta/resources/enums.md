@@ -213,6 +213,17 @@ Namespace: microsoft.graph
 |requestReceived|
 |unknownFutureValue|
 
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionStage values 
 
 |Member|
