@@ -79,6 +79,9 @@ The following is an example of the response.
 } -->
 
 ```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "id": "id-value",
     "systemVersion": "17806",
