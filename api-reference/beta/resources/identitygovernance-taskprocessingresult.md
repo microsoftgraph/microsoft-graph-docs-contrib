@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityGovernance.taskProcessingResult",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
