@@ -50,7 +50,7 @@ PATCH /policies/authenticationMethodsPolicy
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](authenticationmethodspolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object in the response body.
 
 ## Examples
 
