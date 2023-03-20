@@ -19399,33 +19399,33 @@ items:
       - name: Synchronization profile (deprecated)
         href: resources/educationsynchronizationprofile.md
         items:
-        - name: List profile (deprecated)
+        - name: List profile
           href: api/educationsynchronizationprofile-list.md
-        - name: Create profile (deprecated)
+        - name: Create profile
           href: api/educationsynchronizationprofile-post.md
-        - name: Get profile (deprecated)
+        - name: Get profile
           href: api/educationsynchronizationprofile-get.md
-        - name: Delete profile (deprecated)
+        - name: Delete profile
           href: api/educationsynchronizationprofile-delete.md
-        - name: Start sync (deprecated)
+        - name: Start sync
           href: api/educationsynchronizationprofile-start.md
-        - name: Pause sync (deprecated)
+        - name: Pause sync
           href: api/educationsynchronizationprofile-pause.md
-        - name: Resume sync (deprecated)
+        - name: Resume sync
           href: api/educationsynchronizationprofile-resume.md
-        - name: Reset sync (deprecated)
+        - name: Reset sync
           href: api/educationsynchronizationprofile-reset.md
-        - name: Get upload URL (deprecated)
+        - name: Get upload URL
           href: api/educationsynchronizationprofile-uploadurl.md
       - name: Synchronization profile status (deprecated)
         href: resources/educationsynchronizationprofilestatus.md
         items:
-        - name: Get (deprecated)
+        - name: Get
           href: api/educationsynchronizationprofilestatus-get.md
       - name: Synchronization errors (deprecated)
         href: resources/educationsynchronizationerror.md
         items:
-        - name: Get (deprecated)
+        - name: Get
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:
