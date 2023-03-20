@@ -69,8 +69,8 @@ You can integrate industry data APIs with third-party apps. For details about ho
 | Use case                                                   | REST resource                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
 | Create an activity to import a delimited data set          | [inboundFileFlow](../resources/industrydata-inboundfileflow.md)               | [inboundFileFlow methods](../resources/industrydata-inboundfileflow.md#methods)               |
-| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 | Define a source of inbound data                             | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | [sourceSystemDefinition methods](../resources/industrydata-sourcesystemdefinition.md#methods) |
+| [IF CSV] Create a connector to post data to an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 
 <!--
 ## Concepts
