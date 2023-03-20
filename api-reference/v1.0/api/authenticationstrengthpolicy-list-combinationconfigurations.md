@@ -1,7 +1,7 @@
 ---
 title: "List combinationConfigurations"
 description: "Get the authenticationCombinationConfiguration objects for an authentication strength policy."
-author: "InbarckMS"
+author: "InbarckMS" 
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
