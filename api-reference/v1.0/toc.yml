@@ -4820,7 +4820,7 @@ items:
       - name: Overview
         displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
-      - name: Customer relationship management
+      - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
           items:
