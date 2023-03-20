@@ -81,7 +81,7 @@ Content-type: application/json
 To request the children of a special folder, you can request the `children`
 collection or use the [expand](/graph/query-parameters) option to expand the children collection.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
