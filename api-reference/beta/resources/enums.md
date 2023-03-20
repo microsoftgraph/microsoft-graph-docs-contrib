@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
 ### userPurpose values
 
 | Member             | 
@@ -201,6 +211,17 @@ Namespace: microsoft.graph
 |:---|
 |requestSent|
 |requestReceived|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
 |unknownFutureValue|
 
 ### accessPackageCustomExtensionStage values 
