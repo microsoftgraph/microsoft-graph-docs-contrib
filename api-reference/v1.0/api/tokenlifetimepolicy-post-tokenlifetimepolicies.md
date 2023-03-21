@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a new [toke
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request that creates a token lifetime policy that sets the access and ID token lifetime to eight hours.
 
 
 # [HTTP](#tab/http)
@@ -66,11 +66,11 @@ POST https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "definition": [
+        "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}"
+    ],
+    "displayName": "Contoso token lifetime policy",
+    "isOrganizationDefault": true
 }
 ```
 
@@ -117,12 +117,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/tokenLifetimePolicies/$entity",
+    "id": "4d2f137b-e8a9-46da-a5c3-cc85b2b840a4",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}"
+    ],
+    "displayName": "Contoso token lifetime policy",
+    "isOrganizationDefault": true
 }
 ```
 

@@ -55,14 +55,17 @@ If successful, this method returns an `HTTP 200 OK` response code and a collecti
 
 ## Examples
 
-### Request
+### Example 1: Basic call to perform a search request
 
-The following is an example of the request.
+The following example shows how to perform a search to get expected connector items.
+
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "search_query"
+  "name": "query"
 }-->
 
 ```HTTP
@@ -120,7 +123,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -160,6 +163,77 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Basic call to use queryTemplate
+
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "query": {
+        "queryString": "contoso",
+        "queryTemplate":"{searchTerms} CreatedBy:Bob"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+### Response
+
+The following example shows the response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "contoso"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "1",
+                            "rank": 1,
+                            "summary": "_summary-value",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "id": "c23c7035-73d6-4bad-8901-9e2930d4be8e",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Bob",
+                                        "email": "Bob@contoso.com"
+                                    }
+                                },
+                                "createdDateTime": "2021-11-19T17:04:18Z",
+                                "lastModifiedDateTime": "2023-03-09T18:52:26Z"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ]
+}
+```
+
 ## See also
 
 - Search [mail messages](/graph/search-concept-messages)
@@ -167,6 +241,7 @@ Content-type: application/json
 - Search [person](/graph/search-concept-person)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
