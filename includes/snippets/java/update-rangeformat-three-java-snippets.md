@@ -13,7 +13,7 @@ workbookRangeFormat.verticalAlignment = "Top";
 workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
+graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
 	.range(WorkbookWorksheetRangeParameterSet
 		.newBuilder()
 		.withAddress("$C$1")
