@@ -881,6 +881,49 @@
 			"CreatedDateTime": "2021-10-18T21:20:59.3487047Z",
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
-		}
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthUsage",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthUsage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthUsage?view=graph-rest-1.0) resource type.",
+				"Target": "authenticationStrengthUsage"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrength",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrength](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls?view=graph-rest-1.0) resource",
+				"Target": "conditionalAccessGrantControls"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Resource",
+				"ChangedApiName": "authenticationStrengthPolicy",
+				"ChangeType": "Addition",
+				"Description": "Added the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource",
+				"Target": "authenticationStrengthPolicy"
+			  },
+			  {
+				"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+				"ApiChange": "Method",
+				"ChangedApiName": "usage",
+				"ChangeType": "Addition",
+				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+				"Target": "authenticationStrengthPolicy"
+			  }
+			],
+			"Id": "7208e6e3-6f7d-4490-a27b-c529578f9f8a",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-03-21T18:00:00.5059025Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  }
+	  
 	]
 }

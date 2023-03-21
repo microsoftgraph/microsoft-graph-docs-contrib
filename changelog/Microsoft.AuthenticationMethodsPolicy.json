@@ -365,7 +365,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationMethodModes",
           "ChangeType": "Addition",
@@ -373,7 +373,7 @@
           "Target": "authenticationMethodModes"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationStrengthPolicyType",
           "ChangeType": "Addition",
@@ -381,7 +381,7 @@
           "Target": "authenticationStrengthPolicyType"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationStrengthRequirements",
           "ChangeType": "Addition",
@@ -389,7 +389,7 @@
           "Target": "authenticationStrengthRequirements"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "baseAuthenticationMethod",
           "ChangeType": "Addition",
@@ -397,7 +397,15 @@
           "Target": "baseAuthenticationMethod"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateAllowedCombinationsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinationsResult](https://learn.microsoft.com/en-us/graph/api/resources/updateAllowedCombinationsResult?view=graph-rest-1.0) resource type.",
+          "Target": "updateAllowedCombinationsResult"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationCombinationConfiguration",
           "ChangeType": "Addition",
@@ -405,7 +413,7 @@
           "Target": "authenticationCombinationConfiguration"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethodModeDetail",
           "ChangeType": "Addition",
@@ -413,7 +421,7 @@
           "Target": "authenticationMethodModeDetail"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthPolicy",
           "ChangeType": "Addition",
@@ -421,7 +429,7 @@
           "Target": "authenticationStrengthPolicy"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthRoot",
           "ChangeType": "Addition",
@@ -429,7 +437,7 @@
           "Target": "authenticationStrengthRoot"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessRoot",
           "ChangeType": "Addition",
@@ -437,7 +445,7 @@
           "Target": "conditionalAccessRoot"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "fido2CombinationConfiguration",
           "ChangeType": "Addition",
@@ -445,18 +453,26 @@
           "Target": "fido2CombinationConfiguration"
         },
         {
-          "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationStrengthPolicies",
           "ChangeType": "Addition",
           "Description": "Added the **authenticationStrengthPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource.",
           "Target": "policyRoot"
+        },
+        {
+          "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateAllowedCombinations",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+          "Target": "authenticationStrengthPolicy"
         }
       ],
-      "Id": "d2389d20-9566-4e94-9497-5a27e4c5058e",
+      "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-02-06T15:25:07.2648051Z",
+      "CreatedDateTime": "2023-03-21T18:00:00.5046382Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
