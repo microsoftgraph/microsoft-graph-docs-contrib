@@ -10614,6 +10614,8 @@ items:
             href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Get shift work access state
+            href: api/cloudpc-getshiftworkcloudpcaccessstate.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
