@@ -110,7 +110,8 @@ Content-Type: application/json
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationMethodsPolicy"
 }
 -->
 ``` http
