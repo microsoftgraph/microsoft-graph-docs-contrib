@@ -1357,7 +1357,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_11",
@@ -1375,18 +1374,6 @@ Content-type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Java](#tab/java)
-
-# [Go](#tab/go)
-
-# [PowerShell](#tab/powershell)
-
-# [PHP](#tab/php)
 
 ---
 
