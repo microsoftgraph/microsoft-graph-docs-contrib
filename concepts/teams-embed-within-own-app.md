@@ -175,7 +175,7 @@ Microsoft Graph provides several ways to retrieve chat messages:
 
 By using `/getAllMessages`, you can get messages across all chats for a user. This API is designed for backend applications, such as audit and compliance applications, which often get messages across all chats at once. It supports [application](/graph/auth/auth-concepts) permissions only. Also, this is a [metered API](/graph/metered-api-overview).
 
-By using `/messages`, you can make API calls from the UI using [delegated](/graph/auth/auth-concepts) permissions, as described in [Step 1](#step-1-design-and-setup-architecture).
+By using `/messages`, you can make API calls from the UI using [delegated](/graph/auth/auth-concepts) permissions, as described in [Step 1](#step-1-design-and-set-up-architecture).
 
 Different APIs have different [throttling limits](/graph/throttling-limits#microsoft-teams-service-limits). For example, the per-chat `/messages` API has a limit of 30 requests per second (rps) per app per tenant. If a tenant has 50 users and each user has 15 chats on average, and you want to retrieve messages for all users and all chats at the start of your system, you would need at least 50 users x 15 chat requests/user = 750 requests. In this case, it's best to spread the requests over at least 750 requests / 30 rps = 25 seconds. Because there is a limit (maximum `$top=50`) to the number of messages that are returned in a response, you might need to make multiple requests to get all the messages.
 
@@ -614,7 +614,7 @@ Content-type: application/json
 }
 ```
 
-The viewpoint of a chat for a user is updated whenever the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/chat-hideforuser), or [unhides the chat](/graph/api/chat-unhideforuser).
+The viewpoint of a chat for a user is updated whenever the user [marks the chat as read](/graph/api/chat-markchatreadforuser), [marks the chat as unread](/graph/api/chat-markchatunreadforuser), [hides the chat](/graph/api/chat-hideforuser), or [unhides the chat](/graph/api/chat-unhideforuser).
 
 ## Cost estimation
 
