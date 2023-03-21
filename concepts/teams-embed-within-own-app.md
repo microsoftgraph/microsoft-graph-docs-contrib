@@ -117,9 +117,19 @@ Content-type: application/json
   }
 }
 ```
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
