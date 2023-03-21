@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents a FIDO2 authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+
 
 ## Methods
 |Method|Return type|Description|
@@ -25,6 +27,7 @@ Represents a FIDO2 authentication methods policy. Authentication methods policie
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
@@ -56,6 +59,11 @@ The following is a JSON representation of the resource.
   "keyRestrictions": {
     "@odata.type": "microsoft.graph.fido2KeyRestrictions"
   },
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```
