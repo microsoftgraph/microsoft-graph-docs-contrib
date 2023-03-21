@@ -326,7 +326,7 @@ Limits are expressed as requests per second (rps).
  POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
 | PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
 | DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  |
-| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs.)  |  15 rps                         | 150 rps  |
+| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  |
 | DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
 | DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
