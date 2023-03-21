@@ -128,12 +128,14 @@ Content-Type: application/json
           "searchablePlainTexts": [],
           "imageSources": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyStringPair",
               "key": "imageSource",
               "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
             }
           ],
           "customMetadata": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyValuePair",
               "key": "imageSource",
               "value": {
                 "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
