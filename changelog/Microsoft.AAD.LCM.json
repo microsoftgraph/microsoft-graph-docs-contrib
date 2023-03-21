@@ -365,8 +365,24 @@
           "ApiChange": "Property",
           "ChangedApiName": "emailSettings",
           "ChangeType": "Addition",
-          "Description": "Added the `emailSettings` property to the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **emailSettings** property to the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-beta) resource.",
           "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdPopTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Target": "azureAdPopTokenAuthentication"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizedApps** property to the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customtaskextensioncallbackconfiguration?view=graph-rest-beta) resource.",
+          "Target": "customTaskExtensionCallbackConfiguration"
         }
       ],
       "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
@@ -374,26 +390,8 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-16T09:13:11.1773353Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
-    {
-      "ChangeList": [
-              {
-                "Id": "941da7c9-88fc-45e6-8513-70a8c1b817a4",
-                "ApiChange": "Property",
-                "ChangedApiName": "AuthorizedApps",
-                "ChangeType": "Addition",
-                "Description": "Added the **AuthorizedApps** property to the [customextensioncallbackconfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customextensioncallbackconfiguration?view=graph-rest-beta) resource. **customextensioncallbackconfiguration** is an entity type that's inherited by the following derived types: [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customTaskExtensionCallbackConfiguration?view=graph-rest-beta).",
-                "Target": "customextensioncallbackconfiguration"
-              }
-            ],
-            "Id": "941da7c9-88fc-45e6-8513-70a8c1b817a4",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-03-21T00:00:00.0000000Z",
-            "WorkloadArea": "Identity and access",
-            "SubArea": "Governance"
-      },
     {
       "ChangeList": [
         {

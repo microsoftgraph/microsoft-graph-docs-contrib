@@ -20,7 +20,7 @@ Defines the settings for emails sent from Lifecycle workflow [tasks](identitygov
 |Property|Type|Description|
 |:---|:---|:---|
 |senderDomain|String|Specifies the [domain](domain.md) that should be used when sending email notifications. This domain must be [verified](../api/domain-verify.md) in order to be used.|
-|useCompanyBranding|Boolean|Specifies if the organization’s banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If **true** the banner logo will be taken from the tenant’s [organizationalBranding](organizationalbranding.md). This value can only be set to true if the [organizationalBranding](organizationalbranding.md) bannerLogo property is set. |
+|useCompanyBranding|Boolean|Specifies if the organization’s banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If `true` the banner logo will be taken from the tenant’s [branding settings](organizationalbranding.md). This value can only be set to `true` if the [organizationalBranding](organizationalbranding.md) **bannerLogo** property is set. |
 
 ## Relationships
 None.

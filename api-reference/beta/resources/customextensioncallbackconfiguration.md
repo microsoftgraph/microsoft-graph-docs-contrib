@@ -19,7 +19,6 @@ Callback settings that define how long Azure AD can wait for a resume signal for
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizedApps|microsoft.graph.application collection| Unique identifier for the application object.|
 |timeoutDuration|Duration|The maximum duration in ISO 8601 format that Azure AD will wait for a resume action for the callout it sent to the logic app. The valid range for custom extensions in lifecycle workflows is five minutes to three hours. The valid range for custom extensions in entitlement management is between 5 minutes and 14 days. For example, `PT3H` refers to three hours, `P3D` refers to three days, `PT10M` refers to ten minutes.|
 
 
@@ -35,13 +34,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"@odata.type": "#microsoft.graph.customExtensionCallbackConfiguration",
-"timeoutDuration": "String (duration)",
-"authorizedApps":[
-{
-"@odata.type": "microsoft.graph.application"
-}
-] 
+  "@odata.type": "#microsoft.graph.customExtensionCallbackConfiguration",
+  "timeoutDuration": "String (duration)"
 }
 ```
 
