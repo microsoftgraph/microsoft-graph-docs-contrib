@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
-.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,6 +78,7 @@ The following is an example of a request to retrieve the collection of **authent
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
+```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationmethodmodedetail-csharp-snippets.md)]
