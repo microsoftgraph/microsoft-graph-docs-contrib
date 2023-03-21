@@ -91,7 +91,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/user
 
 ---
 
-
 ### Response
 
 <!-- {

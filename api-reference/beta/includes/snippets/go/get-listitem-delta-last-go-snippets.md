@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestToken := "1230919asd190410jlka"
 
-requestParameters := &graphconfig.SiteItemListItemItemsMicrosoft.graph.delta()RequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.SiteItemListItemItemsDelta()RequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphconfig.SiteItemListItemItemsMicrosoft.graph.delta()RequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SiteItemListItemItemsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

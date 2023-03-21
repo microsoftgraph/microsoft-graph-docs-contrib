@@ -4,15 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
-{
-	new QueryOption("select", "emphasis,expand=webparts")
-};
+var result = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].CanvasLayout.VerticalSection.GetAsync();
 
-var verticalSection = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].CanvasLayout.VerticalSection
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

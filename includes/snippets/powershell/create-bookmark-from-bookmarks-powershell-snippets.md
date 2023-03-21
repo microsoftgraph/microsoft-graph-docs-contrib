@@ -20,18 +20,6 @@ $params = @{
 		)
 		MatchSimilarKeywords = $true
 	}
-	AvailabilityStartDateTime = $null
-	AvailabilityEndDateTime = $null
-	Platforms = @(
-		"windows"
-	)
-	TargetedVariations = @(
-		@{
-			LanguageTag = "es-es"
-			DisplayName = "Sitio de instalación Contoso"
-			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
-		}
-	)
 	State = "published"
 }
 

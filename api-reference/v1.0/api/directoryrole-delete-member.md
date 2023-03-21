@@ -97,7 +97,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",

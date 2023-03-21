@@ -77,16 +77,11 @@ GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationSimulat
 [!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationsimulationusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportsrootthisgetattacksimulationsimulationusercoverage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/securityreportsrootthisgetattacksimulationsimulationusercoverage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

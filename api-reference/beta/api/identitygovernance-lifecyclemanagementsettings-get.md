@@ -1,5 +1,5 @@
 ---
-title: "Get lifecycleManagementSettings (tenant settings for Lifecycle Workflows)"
+title: "Get lifecycleManagementSettings"
 description: "Read the properties and relationships of a lifecycleManagementSettings object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Get lifecycleManagementSettings (tenant settings for Lifecycle Workflows)
+# Get lifecycleManagementSettings
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/setti
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

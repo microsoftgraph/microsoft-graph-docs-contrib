@@ -120,7 +120,6 @@ Content-Length: 464
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -798,7 +797,6 @@ Content-Length: 464
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

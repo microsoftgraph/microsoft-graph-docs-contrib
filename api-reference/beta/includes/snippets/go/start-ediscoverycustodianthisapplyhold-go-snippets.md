@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewApplyHoldPostRequestBody()
 ids := []string {
@@ -15,7 +15,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Custodians().ApplyHold().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Custodians().SecurityApplyHold().Post(context.Background(), requestBody, nil)
 
 
 ```

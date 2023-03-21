@@ -63,16 +63,15 @@ The following is an example of a request.
 DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 ```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-bundle-php-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
