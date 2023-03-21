@@ -626,7 +626,7 @@ Content-type: application/json
   "verifiableCredentialSettings":
   {
     "credentialTypes":[{
-      "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>…"],
+      "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>"],
       "credentialType": "VerifiedCredentialExpert"
     }]
   }
