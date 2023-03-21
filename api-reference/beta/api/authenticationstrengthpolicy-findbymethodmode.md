@@ -19,7 +19,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
-Get a list of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) objects and their properties filtered to only include policies that include the authentication method mode specified in the request.
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 
@@ -28,7 +27,7 @@ Get a list of the [authenticationStrengthPolicy](../resources/authenticationstre
 > [!NOTE]
 > The `findByMethodMode` function is only available in `/beta` and will not be available in `/v1.0`. Use the following syntax instead.
 >
-> `GET /policies/authenticationStrengthPolicies?$filter[allowedCombinations/any(x:x has 'sms, password')]`
+> `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')`
 
 
 ## HTTP request

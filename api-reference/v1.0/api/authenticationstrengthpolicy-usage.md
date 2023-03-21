@@ -11,7 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Allows the caller to see which Conditional Access policies reference a specified authentication strength policy. The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim. Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -66,23 +68,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "mfa": [{
-      "displayName": "Conditional Access Policy 1",
-      "id": "a26dbede-a6c0-4156-92e1-6c86dd7bc561",
-      "grantControls": {
-        "authenticationStrength": {"id": "00000000-0000-0000-0000-000000000003"},
-        "controls": ["MfaAndChangePassword"]
-      }
-    }],
-  "none": [{
-      "displayName": "Conditional Access Policy 2",
-      "id": "5d7d5a7f-dd35-412b-a18d-5411d8eafe8f",
-      "grantControls": {
-        "authenticationStrength": {"id": "00000000-0000-0000-0000-000000000003"},
-        "controls": ["RequireCompliantDevice"]
-      }
-  }]
+    "mfa": [
+        {
+            "displayName": "Conditional Access Policy 1",
+            "id": "a26dbede-a6c0-4156-92e1-6c86dd7bc561",
+            "grantControls": {
+                "authenticationStrength": {
+                    "id": "00000000-0000-0000-0000-000000000003"
+                },
+                "controls": [
+                    "MfaAndChangePassword"
+                ]
+            }
+        }
+    ],
+    "none": [
+        {
+            "displayName": "Conditional Access Policy 2",
+            "id": "5d7d5a7f-dd35-412b-a18d-5411d8eafe8f",
+            "grantControls": {
+                "authenticationStrength": {
+                    "id": "00000000-0000-0000-0000-000000000003"
+                },
+                "controls": [
+                    "RequireCompliantDevice"
+                ]
+            }
+        }
+    ]
 }
-
 ```
 

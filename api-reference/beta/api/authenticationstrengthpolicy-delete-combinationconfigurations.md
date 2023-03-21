@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/6cbbcfd0-5054-4a59-a10e-2d21fe09305d
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/6cbbcfd0-5054-4a59-a10e-2d21fe09305d/$ref
 ```
 
 # [C#](#tab/csharp)

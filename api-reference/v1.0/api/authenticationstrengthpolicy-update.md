@@ -67,6 +67,7 @@ Content-length: 239
   "description": "An auth strength allowing only FIDO2 security keys."
 }
 ```
+
 ### Response
 The following is an example of the response
 <!-- {
