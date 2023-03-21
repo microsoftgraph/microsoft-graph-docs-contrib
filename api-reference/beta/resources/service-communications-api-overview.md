@@ -20,6 +20,15 @@ For more information on access tokens, app registration, and delegated and appli
 
 Delegated permissions are needed to access the service communications API on behalf of a signed-in user. Customer-facing canvas applications, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (accessible only to admin roles), can call the service communications API to get the service health and service announcements data for the signed-in user's tenant, _on behalf of the signed-in user_. Users can find out whether their subscribed services are healthy or have issues. They can also learn about any current service issues affecting their tenants. 
 
+#### Role-based access control for delegation access
+
+The service communications API applies role-based access control (RBAC) to identify whether the signed-in user who is on-behalf of has a required Azure Active Directory (Azure AD) role. The signed-in user who is on-behalf of must have at least one of the admin roles.
+
+For more information about the AZure AD administrator roles, see:
+* [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
+* [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
+* [Roles in Microsoft 365, including Azure AD, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
+
 ### Access service communications API without user
 
 Application permissions are needed to access the service communications API without a signed-in user. Applications that run as backend services, such as monitoring or alert services, can call the service communications API with their own identity and not on behalf of a user. These backend services can build custom monitoring/alert pipelines and call the service communications API to get service health and service announcements data. 
@@ -46,7 +55,6 @@ That service communications API is available in all Microsoft national cloud dep
 |Microsoft Graph global service| https://graph.microsoft.com/beta/admin/serviceAnnouncement/|
 |Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/beta/admin/serviceAnnouncement/|
 |Microsoft Graph for US Government L5 (DoD)|https://dod-graph.microsoft.us/beta/admin/serviceAnnouncement/|
-|Microsoft Graph Germany|https://graph.microsoft.de/beta/admin/serviceAnnouncement/|
 |Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/beta/admin/serviceAnnouncement/|
 
 ## Service communications limits
