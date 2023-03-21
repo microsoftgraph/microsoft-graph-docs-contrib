@@ -26,7 +26,7 @@
                     "ChangedApiName": "sessions",
                     "ChangeType": "Change",
                     "Description": "Changed the maximum page size to 60 sessions in a query for the [callRecords](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) resource.",
-                    "Target": "callRecord"
+                    "Target": "callRecords"
                 }
             ],
             "Id": "62e788b4-e9ae-42ab-8318-a7732199d52c",
