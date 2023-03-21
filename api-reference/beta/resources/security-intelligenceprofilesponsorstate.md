@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An `intelligenceProfileSponsorState` communicates a known state-sponsor of an actor related to a threat or vulnerability outlined in an Intelligence Profile.
+An `intelligenceProfileSponsorState` communicates a known state-sponsor of an actor related to a threat or vulnerability outlined in an Intelligence Profile. This is also known as the Country/Region of Origin for the given actor or threat.
 
 ## Properties
 |Property|Type|Description|

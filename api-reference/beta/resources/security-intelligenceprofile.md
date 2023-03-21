@@ -30,7 +30,7 @@ The Microsoft Threat Intelligence Profiles (Intel Profile) API provides the most
 |firstActiveDateTime|DateTimeOffset|The date and time that this Intelligence Profiles was first active|
 |id|String|The system generated id for this Intelligence Profile|
 |kind|microsoft.graph.security.intelligenceProfileKind|A categorization of the type of this `intelligenceProfile`. The possible values are: `actor`, `tool`, `unknownFutureValue`.|
-|sponsorStates|[microsoft.graph.security.intelligenceProfileSponsorState](../resources/security-intelligenceprofilesponsorstate.md) collection|Known States (such as a Country or Government) who have sponsored threat actors associated with this Intelligence Profiles|
+|sponsorStates|[microsoft.graph.security.intelligenceProfileSponsorState](../resources/security-intelligenceprofilesponsorstate.md) collection|Known States (such as a Country or Government) who have sponsored threat actors associated with this Intelligence Profiles. This is also known as the Country/Region of Origin for the given actor or threat.|
 |summary|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A short summary of this IntelligenceProfile|
 |targets|String collection|Known Targets related to this Intelligence Profile|
 |title|String|The title of this Intelligence Profile|
