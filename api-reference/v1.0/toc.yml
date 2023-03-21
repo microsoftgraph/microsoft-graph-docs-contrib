@@ -321,6 +321,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -330,6 +332,8 @@ items:
           href: api/user-post-approleassignments.md
         - name: Remove
           href: api/user-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -363,6 +367,8 @@ items:
       - name: Directory object
         href: resources/directoryobject.md
         items:
+        - name: Get delta
+          href: api/directoryobject-delta.md
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Export personal data
@@ -477,6 +483,8 @@ items:
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
+        - name: Remove manager
+          href: api/user-delete-manager.md
       - name: Outlook settings
         items:
         - name: Mailbox settings
@@ -618,6 +626,8 @@ items:
           href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
         - name: List joined teams
@@ -684,6 +694,8 @@ items:
           href: api/group-post-approleassignments.md
         - name: Remove
           href: api/group-delete-approleassignments.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
       - name: Attachment
         items:
         - name: Attachment
@@ -768,6 +780,8 @@ items:
       - name: Directory object
         href: resources/directoryobject.md
         items:
+        - name: Get delta
+          href: api/directoryobject-delta.md
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
@@ -871,6 +885,8 @@ items:
           href: api/application-delete.md
         - name: Get delta
           href: api/application-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: List deleted applications owned by user
@@ -992,6 +1008,8 @@ items:
           href: api/directory-deleteditems-restore.md
         - name: Get delta
           href: api/serviceprincipal-delta.md
+        - name: Get delta for directory object
+          href: api/directoryobject-delta.md
         - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
@@ -1721,6 +1739,8 @@ items:
               href: api/intune-apps-androidstoreapp-update.md
           - name: App configuration setting item
             href: resources/intune-apps-appconfigurationsettingitem.md
+          - name: Certificate status
+            href: resources/intune-apps-certificatestatus.md
           - name: Device app management
             href: resources/intune-apps-deviceappmanagement.md
             items:
@@ -1755,6 +1775,19 @@ items:
               href: api/intune-books-ebookinstallsummary-get.md
             - name: Update
               href: api/intune-books-ebookinstallsummary-update.md
+          - name: Enterprise code signing certificate
+            href: resources/intune-apps-enterprisecodesigningcertificate.md
+            items:
+            - name: List
+              href: api/intune-apps-enterprisecodesigningcertificate-list.md
+            - name: Get
+              href: api/intune-apps-enterprisecodesigningcertificate-get.md
+            - name: Create
+              href: api/intune-apps-enterprisecodesigningcertificate-create.md
+            - name: Delete
+              href: api/intune-apps-enterprisecodesigningcertificate-delete.md
+            - name: Update
+              href: api/intune-apps-enterprisecodesigningcertificate-update.md
           - name: File encryption info
             href: resources/intune-apps-fileencryptioninfo.md
           - name: Install state
@@ -1774,6 +1807,19 @@ items:
               href: api/intune-apps-ioslobapp-delete.md
             - name: Update
               href: api/intune-apps-ioslobapp-update.md
+          - name: iOS LOB app provisioning configuration assignment
+            href: resources/intune-apps-ioslobappprovisioningconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-apps-ioslobappprovisioningconfigurationassignment-update.md
           - name: iOS LOB app assignment settings
             href: resources/intune-apps-ioslobappassignmentsettings.md
           - name: iOS minimum operating system
@@ -4352,7 +4398,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md      
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Service health and communications
         items:
         - name: Overview
@@ -4846,6 +4892,8 @@ items:
             href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Update
             href: api/administrativeunit-update.md
           - name: Delete
@@ -4896,6 +4944,8 @@ items:
         - name: Device
           href: resources/device.md
           items:
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: List devices
             href: api/device-list.md
           - name: Create device
@@ -4951,6 +5001,8 @@ items:
             href: api/directoryobject-getbyids.md
           - name: Validate properties
             href: api/directoryobject-validateproperties.md
+          - name: Get delta
+            href: api/directoryobject-delta.md
         - name: Directory role
           href: resources/directoryrole.md
           items:
@@ -4970,6 +5022,8 @@ items:
             href: api/directoryrole-list-scopedmembers.md
           - name: Get delta
             href: api/directoryrole-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -5018,6 +5072,8 @@ items:
             href: api/orgcontact-get.md
           - name: Get delta
             href: api/orgcontact-delta.md
+          - name: Get delta for directory object
+            href: api/directoryobject-delta.md
           - name: Groups
             href: resources/group.md
             items:
@@ -7984,6 +8040,13 @@ items:
             href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Complete migration for team
             href: api/team-completemigration.md
+          - name: Deleted team
+            href: resources/deletedteam.md
+            items:
+            - name: List
+              href: api/teamwork-list-deletedteams.md
+            - name: Get all messages
+              href: api/deletedteam-getallmessages.md
         - name: Tag
           href: resources/teamworktag.md
           items:
