@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-  "baseType": "microsoft.graph.identityGovernance.customExtensionCallbackConfiguration"
+  "baseType": "microsoft.graph.customExtensionCallbackConfiguration"
 }
 -->
 ``` json
