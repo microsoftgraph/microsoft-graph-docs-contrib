@@ -342,6 +342,77 @@ Content-Type: application/json
     "accessReviewSettings": null
 }
 ```
+### Example 3: Remove the customExtensionStageSettings from a policy
+
+To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object.
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_delete_customExtensionStageSettings"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+Content-Type: application/json
+
+{
+    "id": "5540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with access package custom workflow extension",
+    "description": "Run specified access package custom workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionHandlers": []
+}
+```
+
+
+
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with access package custom workflow extension",
+    "description": "Run specified access package custom workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null
+}
+```
 
 <!--
 {
