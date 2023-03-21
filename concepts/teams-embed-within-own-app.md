@@ -81,13 +81,6 @@ Content-Type: application/json
 }
 -->
 ``` http
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph...)",
-  "name": "get_groups"
-} -->
-
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -110,12 +103,11 @@ Members within the chat can send messages to each other. The following example s
 
 ### Request
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 POST https://graph.microsoft.com/v1.0/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages
 Content-type: application/json
 
@@ -183,7 +175,7 @@ Microsoft Graph provides several ways to retrieve chat messages:
 
 By using `/getAllMessages`, you can get messages across all chats for a user. This API is designed for backend applications, such as audit and compliance applications, which often get messages across all chats at once. It supports [application](/graph/auth/auth-concepts) permissions only. Also, this is a [metered API](/graph/metered-api-overview).
 
-By using `/messages`, you can make API calls from the UI using [delegated](/graph/auth/auth-concepts) permissions, as described in [Step 1](#step-1-design-and-setup-the-architecture).
+By using `/messages`, you can make API calls from the UI using [delegated](/graph/auth/auth-concepts) permissions, as described in [Step 1](#step-1-design-and-setup-architecture).
 
 Different APIs have different [throttling limits](/graph/throttling-limits#microsoft-teams-service-limits). For example, the per-chat `/messages` API has a limit of 30 requests per second (rps) per app per tenant. If a tenant has 50 users and each user has 15 chats on average, and you want to retrieve messages for all users and all chats at the start of your system, you would need at least 50 users x 15 chat requests/user = 750 requests. In this case, it's best to spread the requests over at least 750 requests / 30 rps = 25 seconds. Because there is a limit (maximum `$top=50`) to the number of messages that are returned in a response, you might need to make multiple requests to get all the messages.
 
@@ -193,12 +185,11 @@ Typical interactive messaging apps display only the most recent messages by defa
 
 ### Request
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
 ```
 
@@ -383,12 +374,11 @@ For more details about this example, see [Create subscription](/graph/api/subscr
 
 ### Request
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
@@ -438,12 +428,11 @@ When you create the subscription, make sure that the **includeResourceData** pro
 
 ### Request (sent by Microsoft Graph)
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient
 Content-type: application/json
 
@@ -548,12 +537,11 @@ The following example shows how to renew a subscription.
 
 ### Request
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
 Content-type: application/json
 
@@ -595,12 +583,11 @@ To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/
 
 ### Request
 
-```http
 <!-- {
   "blockType": "request",
   "name": "get_group"
 }-->
-
+```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
 ```
 
@@ -652,4 +639,4 @@ You can also add more advanced features in your chat application by:
 
 ## Related articles
 
-- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](https://learn.microsoft.com/en-us/events/build-2022/od20-bring-microsoft-teams-chats-channel-collaboration-to-your-apps-by-leveraging-microsoft-graph)
+- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](/events/build-2022/od20-bring-microsoft-teams-chats-channel-collaboration-to-your-apps-by-leveraging-microsoft-graph)
