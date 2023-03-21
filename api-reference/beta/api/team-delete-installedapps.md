@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f82
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

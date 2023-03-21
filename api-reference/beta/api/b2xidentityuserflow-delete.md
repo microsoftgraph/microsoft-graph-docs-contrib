@@ -95,7 +95,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

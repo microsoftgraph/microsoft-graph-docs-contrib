@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

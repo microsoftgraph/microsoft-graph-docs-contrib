@@ -88,7 +88,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-03T17:53:43.5042993Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -461,6 +461,112 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-23T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+        {
+      "ChangeList": [
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customExtensionCalloutInstanceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionCalloutInstanceStatus** enumeration type.",
+          "Target": "customExtensionCalloutInstanceStatus"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestCallbackData",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestCallbackData?view=graph-rest-beta) resource type.",
+          "Target": "accessPackageAssignmentRequestCallbackData"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdPopTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Target": "azureAdPopTokenAuthentication"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCallbackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCallbackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionCallbackConfiguration"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionCalloutInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionCalloutInstance](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutInstance?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionCalloutInstance"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionData",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionData](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionData?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionData"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Property",
+          "ChangedApiName": "url",
+          "ChangeType": "Addition",
+          "Description": "Added the `url` property to the [logicAppTriggerEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-beta) resource.",
+          "Target": "logicAppTriggerEndpointConfiguration"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionCalloutInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionStageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionStageSettings** relationship to the [accessPackageAssignmentPolicy](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionCalloutInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestWorkflowExtension?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignmentRequestWorkflowExtension"
+        },
+        {
+          "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentWorkflowExtension](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentWorkflowExtension?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignmentWorkflowExtension"
+        }
+      ],
+      "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-17T02:51:10.3743047Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

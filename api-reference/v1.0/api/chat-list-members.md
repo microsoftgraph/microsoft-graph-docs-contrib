@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:09ddc990-3821-4ceb-8019-24d3999
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

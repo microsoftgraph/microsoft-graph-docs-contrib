@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 
