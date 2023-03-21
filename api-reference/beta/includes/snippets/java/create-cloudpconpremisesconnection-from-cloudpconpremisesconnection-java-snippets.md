@@ -10,7 +10,6 @@ CloudPcOnPremisesConnection cloudPcOnPremisesConnection = new CloudPcOnPremisesC
 cloudPcOnPremisesConnection.displayName = "test-canary-02";
 cloudPcOnPremisesConnection.type = CloudPcOnPremisesConnectionType.HYBRID_AZURE_A_D_JOIN;
 cloudPcOnPremisesConnection.subscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff";
-cloudPcOnPremisesConnection.subscriptionName = "CPC customer 001 test subscription";
 cloudPcOnPremisesConnection.adDomainName = "contoso001.com";
 cloudPcOnPremisesConnection.adDomainUsername = "dcadmin";
 cloudPcOnPremisesConnection.organizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com";
