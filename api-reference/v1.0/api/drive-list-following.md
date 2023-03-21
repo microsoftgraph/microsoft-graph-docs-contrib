@@ -23,7 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## HTTP request
+
+## Example
+
+### Request
 
 
 # [HTTP](#tab/http)
@@ -48,7 +51,7 @@ GET /me/drive/following
 ---
 
 
-## Response
+### Response
 
 This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
 If no items were found, an empty collection is returned.

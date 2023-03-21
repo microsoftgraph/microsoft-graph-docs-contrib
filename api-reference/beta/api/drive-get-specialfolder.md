@@ -30,8 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
-## HTTP Request
+## Examples
 
+### Example 1
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
@@ -55,15 +58,15 @@ GET /me/drive/special/{name}
 ---
 
 
-### Special folder names
+#### Special folder names
 [!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
 
 
-### Optional query parameters
+#### Optional query parameters
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Response
+#### Response
 
 This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
@@ -85,12 +88,12 @@ Content-type: application/json
 }
 ```
 
-## Get children of a special folder
+### Example 2: Get children of a special folder
 
 To request the children of a special folder, you can request the `children`
 collection or use the [expand](/graph/query-parameters) option to expand the children collection.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -115,7 +118,7 @@ GET /me/drive/special/{name}/children
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

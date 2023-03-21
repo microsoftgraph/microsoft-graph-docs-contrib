@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## HTTP request
+## Example
+
+### Request
 
 
 # [HTTP](#tab/http)
@@ -54,7 +56,7 @@ GET /me/drive/recent
 ---
 
 
-## Response
+### Response
 
 This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
 

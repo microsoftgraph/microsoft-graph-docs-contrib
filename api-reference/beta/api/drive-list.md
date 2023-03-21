@@ -25,11 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## List a group's drives
+## Examples
+
+### Example 1: List a group's drives
 
 To list the document libraries for a group, your app requests the **drives** relationship on the Group.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -66,10 +68,11 @@ GET /groups/{groupId}/drives
 ---
 
 
-## List a site's drives
+### Example 2: List a site's drives
 
 To list the document libraries for a site, your app requests the **drives** relationship on the Site.
 
+#### Request 
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
@@ -105,8 +108,9 @@ GET /sites/{siteId}/drives
 ---
 
 
-## List a user's drives
+### Example 3: List a user's drives
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
@@ -142,8 +146,9 @@ GET /users/{userId}/drives
 ---
 
 
-## List the current user's drives
+### Example 4 List the current user's drives
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
@@ -179,11 +184,11 @@ GET /me/drives
 ---
 
 
-## Optional query parameters
+### Optional query parameters
 
 This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Response
+### Response
 
 If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.
 

@@ -76,12 +76,14 @@ Content-type: application/json
 }
 ```
 
-## Get children of a special folder
+## Examples
+
+### Get children of a special folder
 
 To request the children of a special folder, you can request the `children`
 collection or use the [expand](/graph/query-parameters) option to expand the children collection.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -106,7 +108,7 @@ GET /me/drive/special/{special-folder-name}/children
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
