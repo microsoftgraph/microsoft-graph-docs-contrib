@@ -84,7 +84,7 @@ Content-type: application/json
     "isRequestorJustificationRequired": false,
     "approvalMode": "NoApproval",
     "approvalStages": []
-  },
+  }
 }
 ```
 
