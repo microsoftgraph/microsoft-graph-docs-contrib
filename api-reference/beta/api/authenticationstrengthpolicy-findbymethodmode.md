@@ -1,13 +1,13 @@
 ---
 title: "authenticationStrengthPolicy: findByMethodMode"
 description: "Get authentication strength policies that include the specified authentication method modes."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# authenticationStrengthPolicy: findByMethodMode (deprecated) 
+# authenticationStrengthPolicy: findByMethodMode (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
