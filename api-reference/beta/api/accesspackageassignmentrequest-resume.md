@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |source|String|Source from where customer is trying to resume the request, which can be stored in service and will be helpful for auditing.|
 |type|String|Indicate at which stage the custom callout extension was executed. The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
-|data|[customExtensionData](../resources/customextensiondata.md)| Contains information about the instance of the callout that was made to the customer endpoint. |
+|data|[accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentrequestcallbackdata.md)| Contains information about the instance of the callout that was made to the customer endpoint. |
 
 
 
