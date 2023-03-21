@@ -12656,6 +12656,8 @@ items:
               href: api/accesspackageassignmentrequest-cancel.md
             - name: Reprocess
               href: api/accesspackageassignmentrequest-reprocess.md
+            - name: Resume
+              href: api/accesspackageassignmentrequest-resume.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
@@ -13153,7 +13155,7 @@ items:
             - name: Create localized files
               href: api/agreement-post-files.md
             - name: List localized files
-              href: api/agreement-list-files.md 
+              href: api/agreement-list-files.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods

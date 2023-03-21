@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodConfiguration resource type"
-description: "Represents a Text Message authentication methods policy."
+description: "Represents a text message authentication methods policy."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -8,11 +8,10 @@ doc_type: resourcePageType
 ---
 
 # smsAuthenticationMethodConfiguration resource type
+
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents a Text Message authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
+Represents a text message authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
