@@ -103,6 +103,7 @@ Content-Type: application/json
       "id": "6346d908-f20d-4528-902f-3c2a9c8c2442",
       "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
       "data": {
+        "audiences": [],
         "dataVersion": "1.9",
         "description": "Show an image on your page",
         "title": "Image",
@@ -121,6 +122,10 @@ Content-Type: application/json
           "alignment": "Center"
         },
         "serverProcessedContent": {
+          "componentDependencies": [],
+          "htmlStrings": [],
+          "links": [],
+          "searchablePlainTexts": [],
           "imageSources": [
             {
               "key": "imageSource",
