@@ -913,7 +913,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "usage",
 				"ChangeType": "Addition",
-				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
 				"Target": "authenticationStrengthPolicy"
 			  }
 			],
