@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 OnPremisesPublishingProfile onPremisesPublishingProfile = graphClient.onPremisesPublishingProfiles("provisioning")
 	.buildRequest()
-	.expand("agentGroups")
+	.expand("publishedResources,agents,agentGroups")
 	.get();
 
 ```

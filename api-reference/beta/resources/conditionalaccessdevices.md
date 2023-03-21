@@ -2,7 +2,7 @@
 title: "conditionalAccessDevices resource type"
 description: "Represents devices in the policy scope."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

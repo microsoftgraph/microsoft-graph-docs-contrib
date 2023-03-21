@@ -11,12 +11,16 @@ Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-r
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
+<!-- markdownlint-disable MD025 -->
 # [C#](#tab/CS)
 
 In order to call the beta API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
 
 ```csharp
-using Microsoft.Graph;
+// Version 5.x
+using Microsoft.Graph.Beta;
+// Version 4.x and earlier
+// using Microsoft.Graph;
 
 // Create a new instance of GraphServiceClient.
 GraphServiceClient graphClient = new GraphServiceClient(...);
@@ -64,7 +68,7 @@ The [Microsoft Graph SDK for ObjC](https://github.com/microsoftgraph/msgraph-sdk
 
 However, the models in the [Microsoft Graph Models SDK](https://github.com/microsoftgraph/msgraph-sdk-objc-models) are generated from objects in the v1.0 API, so they may not work with beta objects.
 
-```objc
+```objectivec
 // GET /me
 NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.microsoft.com/beta"];
 
@@ -100,4 +104,21 @@ class UseBeta
 }
 ```
 
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+In order to call the beta API, you must install the [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) package.
+
+```go
+import (
+    msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+)
+client := msgraphsdk.NewGraphServiceClientWithCredentials(credentials, scopes)
+```
+
 ---
+
+
+## See also
+[SDKs in preview or GA status](sdks-overview.md#sdks-in-preview-or-ga-status).

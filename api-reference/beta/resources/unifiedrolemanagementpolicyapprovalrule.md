@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyApprovalRule resource type"
-description: "A unifiedRoleManagementPolicyApprovalRule specifies the approval rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
-author: "shauliu1"
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approving a role assignment."
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -11,16 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A unifiedRoleManagementPolicyApprovalRule specifies the approval rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule.
-
-Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines rules for approving a role assignment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|setting|[approvalSettings](../resources/approvalsettings.md)|The approval setting for the rule.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|The target for the rule rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|setting|[approvalSettings](../resources/approvalsettings.md)|The settings for approval of the role assignment.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the approval rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

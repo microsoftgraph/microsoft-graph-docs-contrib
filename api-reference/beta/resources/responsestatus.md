@@ -4,7 +4,7 @@ description: "The response status of a meeting request."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "harini84"
+author: "iamgirishck"
 ---
 
 # responseStatus resource type
@@ -21,7 +21,7 @@ You can get the response status of an attendee or organizer through the **respon
 
 | Property | Type           | Description |
 |:---------|:---------------|:------------|
-| response | String         | The response type. Possible values are: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>To differentiate between `none` and `notResponded`: as an example, if attendee Alex hasn't responded to a meeting request, getting Alex' response status for that event in Alex' calendar returns `notResponded`. Getting Alex' response from the calendar of any other attendee or the organizer's returns `none`. Getting the organizer's response for the event in anybody's calendar also returns `none`. 
+| response | String         | The response type. Possible values are: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>To differentiate between `none` and `notResponded`: <br><br> `none` – from organizer's perspective. This value is used when the status of an attendee/participant is reported to the organizer of a meeting. <br><br> `notResponded` – from attendee's perspective. Indicates the attendee has not responded to the meeting request. <br><br> Clients can treat `notResponded` == `none`. <br><br> As an example, if attendee Alex hasn't responded to a meeting request, getting Alex' response status for that event in Alex' calendar returns `notResponded`. Getting Alex' response from the calendar of any other attendee or the organizer's returns `none`. Getting the organizer's response for the event in anybody's calendar also returns `none`. 
 | time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`
 
 ## JSON representation

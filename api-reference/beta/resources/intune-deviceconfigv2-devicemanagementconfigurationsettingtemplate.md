@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationSettingTemplate resource type"
 description: "Setting Template"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -35,7 +35,7 @@ Setting Template
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
+|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -65,6 +65,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-

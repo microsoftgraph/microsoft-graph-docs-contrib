@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelServer resource type"
 description: "Entity that represents a single Microsoft Tunnel server"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -28,16 +28,17 @@ Entity that represents a single Microsoft Tunnel server
 |[getHealthMetrics action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection|Not yet documented|
 |[getHealthMetricTimeSeries action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrictimeseries.md)|[metricTimeSeriesDataPoint](../resources/intune-mstunnel-metrictimeseriesdatapoint.md) collection|Not yet documented|
 |[createServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-createserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Not yet documented|
+|[generateServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-generateserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The MicrosoftTunnelServer's Id|
-|displayName|String|The MicrosoftTunnelServer's display name|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|The MicrosoftTunnelServer's health status. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
-|lastCheckinDateTime|DateTimeOffset|When the MicrosoftTunnelServer last checked in|
-|agentImageDigest|String|The digest of the current agent image running on this server |
-|serverImageDigest|String|The digest of the current server image running on this server |
+|id|String|The unique identifier for the managed server. This id is assigned at enrollment time. Supports: $delete. $Update, $insert, $skip, $top is not supported. Read-only.|
+|displayName|String|The display name for the server. This property is required when a server is created and cannot be cleared during updates.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
+|lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in|
+|agentImageDigest|String|The digest of the current agent image running on this server|
+|serverImageDigest|String|The digest of the current server image running on this server|
 
 ## Relationships
 None
@@ -61,6 +62,3 @@ Here is a JSON representation of the resource.
   "serverImageDigest": "String"
 }
 ```
-
-
-

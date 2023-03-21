@@ -26,7 +26,7 @@ A top-level container for service communications resources.
 None.
 
 ## Relationships
-|Property|Type|Description|
+|Relationship|Type|Description|
 |-|-|-|
 |messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|A collection of service messages for tenant. This property is a contained navigation property, it is nullable and readonly.|
 |healthOverviews|Collection([serviceHealth](servicehealth.md))|A collection of service health information for tenant. This property is a contained navigation property, it is nullable and readonly.|

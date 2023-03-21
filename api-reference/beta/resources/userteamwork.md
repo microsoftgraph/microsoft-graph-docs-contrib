@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) collection|Retrieve the list of apps installed in the personal scope of the specified user.|
+
 ## Properties
 
 | Property | Type | Description |
@@ -26,6 +31,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+|associatedTeams|[associatedTeamInfo](associatedteaminfo.md) collection| The list of [associatedTeamInfo](associatedteaminfo.md) objects that a [user](user.md) is associated with.|
 
 ## JSON representation
 
@@ -57,4 +63,6 @@ The following is a JSON representation of the resource.
 }
 -->
 
+## See also
 
+- [teamwork resource type](teamwork.md)

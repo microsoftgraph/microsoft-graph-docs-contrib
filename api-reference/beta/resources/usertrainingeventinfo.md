@@ -1,7 +1,7 @@
 ---
 title: "userTrainingEventInfo resource type"
 description: "Represents events of a training assigned to a user in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Represents events of a training assigned to a user in an attack simulation and t
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the training.|
-|latestTrainingStatus|trainingStatus|Latest status of the training assigned to the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|latestTrainingStatus|trainingStatus|Latest status of the training assigned to the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `unknownFutureValue`.|
 |trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of the training when it was assigned to the user.|
 |trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of the training when it was completed by the user.|
 |trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of the training when it was updated/in-progress by the user.|
@@ -42,12 +42,11 @@ The following is a JSON representation of the resource.
   "trainingAssignedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingUpdatedProperties": {
+  "trainingCompletedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   },
-  "trainingCompletedProperties": {
+  "trainingUpdatedProperties": {
     "@odata.type": "microsoft.graph.userTrainingContentEventInfo"
   }
 }
 ```
-

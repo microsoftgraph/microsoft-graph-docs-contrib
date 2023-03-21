@@ -1,7 +1,7 @@
 ---
 title: "androidLobApp resource type"
 description: "Contains properties and inherited properties for Android Line Of Business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -56,11 +56,11 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name.|
+|identityName|String|The Identity Name. This property is deprecated starting  in February 2023 (Release 2302).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of Android Line of Business (LoB) app.|
 |versionCode|String|The version code of Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version.|
+|identityVersion|String|The identity version. This property is deprecated starting  in February 2023 (Release 2302).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -139,6 +139,3 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
-

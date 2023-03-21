@@ -4,10 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var organizationalBranding = await graphClient.Organization["{organization-id}"].Branding
-	.Request()
-	.GetAsync();
+var result = await graphClient.Organization["{organization-id}"].Branding.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Accept-Language", "0");
+});
+
 
 ```

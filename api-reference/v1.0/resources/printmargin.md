@@ -11,17 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Specifies the margin widths to use when printing.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|top|Int32|The margin in microns from the top edge.|
 |bottom|Int32|The margin in microns from the bottom edge.|
-|right|Int32|The margin in microns from the right edge.|
 |left|Int32|The margin in microns from the left edge.|
+|right|Int32|The margin in microns from the right edge.|
+|top|Int32|The margin in microns from the top edge.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

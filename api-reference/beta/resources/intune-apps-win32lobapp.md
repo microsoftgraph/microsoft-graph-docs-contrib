@@ -1,7 +1,7 @@
 ---
 title: "win32LobApp resource type"
 description: "Contains properties and inherited properties for Win32 apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -72,6 +72,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
 |displayVersion|String|The version displayed in the UX for this app.|
+|allowAvailableUninstall|Boolean|When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an Available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -205,9 +206,7 @@ Here is a JSON representation of the resource.
   },
   "setupFilePath": "String",
   "minimumSupportedWindowsRelease": "String",
-  "displayVersion": "String"
+  "displayVersion": "String",
+  "allowAvailableUninstall": true
 }
 ```
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalPolicy resource type"
 description: "Operation Approval Policy"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -25,7 +25,7 @@ Operation Approval Policy
 |[Create operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-create.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Create a new [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) object.|
 |[Delete operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|None|Deletes a [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md).|
 |[Update operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-update.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Update the properties of a [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) object.|
-|[getOperationsAllowedApproval function](../api/intune-rbac-operationapprovalpolicy-getoperationsallowedapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
+|[getApprovableOperations function](../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
 |[getOperationsRequiringApproval function](../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md)|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) collection|Not yet documented|
 
 ## Properties
@@ -35,8 +35,7 @@ Operation Approval Policy
 |displayName|String|The display name of this OperationApprovalPolicy|
 |description|String|The description of this OperationApprovalPolicy|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of this OperationApprovalPolicy. This property is read-only.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `unknownFutureValue`.|
-|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|The applicable platform(s) for this OperationApprovalPolicy. Possible values are: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`.|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `deviceResetPasscode`, `unknownFutureValue`.|
 |approverGroupIds|String collection|The group IDs for the approvers for this OperationApprovalPolicy|
 
 ## Relationships
@@ -58,12 +57,8 @@ Here is a JSON representation of the resource.
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "policyType": "String",
-  "policyPlatform": "String",
   "approverGroupIds": [
     "String"
   ]
 }
 ```
-
-
-

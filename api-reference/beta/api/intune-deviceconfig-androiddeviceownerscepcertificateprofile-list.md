@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerScepCertificateProfiles"
 description: "List properties and relationships of the androidDeviceOwnerScepCertificateProfile objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2427
+Content-Length: 2680
 
 {
   "value": [
@@ -125,11 +125,15 @@ Content-Length: 2427
           "sanType": "emailAddress",
           "name": "Name value"
         }
+      ],
+      "certificateAccessType": "specificApps",
+      "silentCertificateAccessDetails": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+          "packageId": "Package Id value"
+        }
       ]
     }
   ]
 }
 ```
-
-
-

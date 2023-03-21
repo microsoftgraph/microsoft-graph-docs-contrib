@@ -1,6 +1,6 @@
 ---
 title: "SharePoint sites and content API overview"
-description: "SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content."
+description: "Use the SharePoint REST API in Microsoft Graph to integrate solutions with SharePoint sites and content that users collaborate on and share across an organization."
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 ms.custom: scenarios:getting-started

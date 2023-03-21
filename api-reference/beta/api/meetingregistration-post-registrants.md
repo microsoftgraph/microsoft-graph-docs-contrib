@@ -53,6 +53,9 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 In the request body, supply a JSON representation of the editable properties of a [meetingRegistrant](../resources/meetingRegistrant.md) object.
 
+> [!IMPORTANT]
+> You must supply the **@odata.type** property to specify the registrant type. For more details, see the following [example](#examples).
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a partial [meetingRegistrant](../resources/meetingRegistrant.md) object in the response body.
@@ -71,9 +74,12 @@ The following example shows how to enroll a signed-in registrant with the regist
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-user"
+  "name": "add-registratrant-user",
+  "sampleKeys": ["16664f75-11dc-4870-bec6-38c1aaa81431", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -81,6 +87,7 @@ POST https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa81431
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Frederick",
   "lastName": "Cormier",
   "email": "frederick.cormier@contoso.com",
@@ -97,6 +104,16 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -111,6 +128,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,E4jbleVFdE6BDf6ei3YBOA,KvXQzK4zfU-5LQj_ZLWgow,A7_SArco00S-Qr707l0vBA,UFakyZrk1K9vBacExW1muA",
   "registrationDateTime": null,
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmE4Mzg1OTItYjg2Ni00ZmNmLWI5NjMtODNkZDJiMWNlNTVi%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5131-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%2c%22prid%22%3a%22gWWckDBR6UOI8_yzWCzeNw%2c6pAAiSa1bkGqzLnbHG_muA%2cbzLh6uR-5EGdsCvtvIvs6Q%2cE4jbleVFdE6BDf6ei3YBOA%2cKvXQzK4zfU-5LQj_ZLWgow%2cA7_SArco00S-Qr707l0vBA%2cUFaiyZrk1K9vBacExW1muA%22%2c%22isPublic%22%3afalse%7d",
@@ -128,9 +146,12 @@ The following example shows how to enroll an anonymous registrant with applicati
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add-registratrant-app"
+  "name": "add-registratrant-app",
+  "sampleKeys": ["dc17674c-81d9-4adb-bfb2-8f6a442e4622", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ"]
 }-->
 
 ```http
@@ -138,6 +159,7 @@ POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Lisa",
   "lastName": "Adkins",
   "email": "lisa.adkins@contoso.com",
@@ -154,6 +176,16 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-registratrant-app-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-registratrant-app-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -168,6 +200,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+    "@odata.type": "#microsoft.graph.meetingRegistrant",
     "id": "",
     "registrationDateTime": null,
     "joinWebUrl": "",

@@ -1,7 +1,7 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6694
+Content-Length: 6648
 
 {
   "value": {
@@ -197,14 +197,14 @@ Content-Length: 6694
       "blockActiveDirectorySiteAutoDiscovery": true,
       "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
       "modeCredentialUsed": "Mode Credential Used value",
-      "usernameLableCustom": "Username Lable Custom value",
+      "usernameLabelCustom": "Username Label Custom value",
       "userSetupDelayed": true,
       "signInHelpText": "Sign In Help Text value",
       "kerberosAppsInBundleIdACLIncluded": true,
       "managedAppsInBundleIdACLIncluded": true,
       "credentialsCacheMonitored": true,
-      "singleSignOnExtensionPreferredKDCs": [
-        "Single Sign On Extension Preferred KDCs value"
+      "preferredKDCs": [
+        "Preferred KDCs value"
       ],
       "tlsForLDAPRequired": true
     },
@@ -256,6 +256,3 @@ Content-Length: 6694
   }
 }
 ```
-
-
-

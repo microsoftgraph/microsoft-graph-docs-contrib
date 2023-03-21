@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a document being printed.
 
 ## Methods
@@ -24,9 +22,9 @@ Represents a document being printed.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The document's identifier. Read-only.|
-|displayName|String|The document's name. Read-only.|
 |contentType|String|The document's content (MIME) type. Read-only.|
+|displayName|String|The document's name. Read-only.|
+|id|String|The document's identifier. Read-only.|
 |size|Int64|The document's size in bytes. Read-only.|
 
 ## Relationships

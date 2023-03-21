@@ -1,9 +1,9 @@
 ---
 title: "managementActionDeploymentStatus resource type"
 description: "Represents the deployment status for a given managed tenant."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

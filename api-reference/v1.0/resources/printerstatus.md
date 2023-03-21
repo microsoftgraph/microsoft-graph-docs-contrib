@@ -11,16 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents the processing status of the printer, including any errors.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|printerProcessingState|The current processing state. Valid values are described in the following table. Read-only.|
-|details|printerProcessingStateDetail collection|The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
 |description|String|A human-readable description of the printer's current processing state. Read-only.|
+|details|printerProcessingStateDetail collection|The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
+|state|printerProcessingState|The current processing state. Valid values are described in the following table. Read-only.|
 
 ### printerProcessingState values
 

@@ -2,7 +2,7 @@
 title: "officeClientCheckinStatus resource type"
 description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -56,6 +56,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-

@@ -1,0 +1,109 @@
+{
+    "redirections": [
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentrequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-assignmentrequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-assignmentrequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageassignmentrequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignmentrequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentpolicies.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-assignmentpolicies.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentpolicies?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageassignmentpolicies.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-assignmentpolicies?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignmentpolicies.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackagecatalogs.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-catalogs?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-catalogs.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackagecatalogs?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackagecatalogs.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-catalogs?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-catalogs.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageassignments.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-assignments?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignments.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/conditionalaccessroot-post-authenticationcontextclassreferences.md",
+            "redirect_url": "/graph/api/authenticationcontextclassreference-update?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/concepts/change-notifications-delivery.md",
+            "redirect_url": "/graph/change-notifications-delivery-event-hubs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-directory-extension-attributes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md",
+            "redirect_url": "/graph/synchronization-configure-with-custom-target-attributes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/synchronization-synchronizationjob-provision-on-demand.md",
+            "redirect_url": "/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/synchronization-quarantine.md",
+            "redirect_url": "/graph/api/resources/synchronization-synchronizationquarantine?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/synchronization-synchronization-secrets.md",
+            "redirect_url": "/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta",
+            "redirect_document_id": true
+        }
+    ]
+}

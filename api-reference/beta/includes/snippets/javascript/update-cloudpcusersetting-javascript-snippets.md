@@ -14,6 +14,10 @@ const cloudPcUserSetting = {
   '@odata.type': '#microsoft.graph.cloudPcUserSetting',
   displayName: 'Example',
   selfServiceEnabled: true,
+  restorePointSetting: {
+    frequencyInHours: 16,
+    userRestoreEnabled: true
+  },
   localAdminEnabled: false
 };
 

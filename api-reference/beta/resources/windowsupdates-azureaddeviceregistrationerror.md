@@ -1,7 +1,7 @@
 ---
 title: "azureADDeviceRegistrationError resource type"
 description: "An error in the registration process of an Azure AD device that prevents the service from enrolling the device in update management or deploying content to the device."
-author: "Alice-at-Microsoft"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reason|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
+|reason|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`, `unknownFutureValue`.|
 
 ## Relationships
 None.

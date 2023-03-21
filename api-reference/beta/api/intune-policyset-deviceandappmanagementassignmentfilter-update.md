@@ -1,7 +1,7 @@
 ---
 title: "Update deviceAndAppManagementAssignmentFilter"
 description: "Update the properties of a deviceAndAppManagementAssignmentFilter object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -56,6 +56,7 @@ The following table shows the properties that are required when you create the [
 |platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|String|Rule definition of the Assignment Filter.|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 Content-type: application/json
-Content-length: 274
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
@@ -79,6 +80,15 @@ Content-length: 274
   "rule": "Rule value",
   "roleScopeTags": [
     "Role Scope Tags value"
+  ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
   ]
 }
 ```
@@ -88,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 715
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
@@ -101,9 +111,15 @@ Content-Length: 446
   "rule": "Rule value",
   "roleScopeTags": [
     "Role Scope Tags value"
+  ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
   ]
 }
 ```
-
-
-

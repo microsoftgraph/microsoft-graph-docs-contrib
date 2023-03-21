@@ -20,7 +20,7 @@ const term = {
   ]
 };
 
-await client.api('/termStore/sets/{setId}/terms')
+await client.api('/termStore/sets/{setId}/children')
 	.version('beta')
 	.post(term);
 

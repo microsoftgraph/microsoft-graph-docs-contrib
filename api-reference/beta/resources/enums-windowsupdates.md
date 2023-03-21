@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
-author: "Alice-at-Microsoft"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: enumTypes
@@ -19,6 +19,7 @@ Namespace: microsoft.graph.windowsUpdates
 |invalidAzureADDeviceId|
 |missingTrustType|
 |invalidAzureADJoin|
+|unknownFutureValue|
 
 ### deploymentStateReasonValue values 
 
@@ -28,6 +29,8 @@ Namespace: microsoft.graph.windowsUpdates
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|unknownFutureValue|
+|faultedByContentOutdated|
 
 ### deploymentStateValue values 
 
@@ -38,13 +41,7 @@ Namespace: microsoft.graph.windowsUpdates
 |paused|
 |faulted|
 |archived|
-
-### equivalentContentOption values 
-
-|Member|
-|:---|
-|none|
-|latestSecurity|
+|unknownFutureValue|
 
 ### monitoringAction values 
 
@@ -52,12 +49,14 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |alertError|
 |pauseDeployment|
+|unknownFutureValue|
 
 ### monitoringSignal values 
 
 |Member|
 |:---|
 |rollback|
+|unknownFutureValue|
 
 ### qualityUpdateClassification values 
 
@@ -66,6 +65,7 @@ Namespace: microsoft.graph.windowsUpdates
 |all|
 |security|
 |nonSecurity|
+|unknownFutureValue|
 
 ### requestedDeploymentStateValue values 
 
@@ -74,6 +74,23 @@ Namespace: microsoft.graph.windowsUpdates
 |none|
 |paused|
 |archived|
+|unknownFutureValue|
+
+### resourceConnectionState values 
+
+|Member|
+|:---|
+|connected|
+|notAuthorized|
+|notFound|
+|unknownFutureValue|
+
+### safeguardCategory values 
+
+|Member|
+|:---|
+|likelyIssues|
+|unknownFutureValue|
 
 ### updateCategory values 
 
@@ -81,6 +98,8 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |feature|
 |quality|
+|unknownFutureValue|
+|driver|
 
 <!--
 {

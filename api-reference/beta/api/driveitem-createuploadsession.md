@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
-title: driveItem: createUploadSession
+title: "driveItem: createUploadSession"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
@@ -46,6 +46,7 @@ Alternatively, you can defer final creation of the file in the destination until
 POST /drives/{driveId}/items/{itemId}/createUploadSession
 POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
 POST /me/drive/items/{itemId}/createUploadSession
+POST /me/drive/items/{itemId}:/{fileName}:/createUploadSession
 POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
@@ -88,10 +89,10 @@ The following example controls the behavior if the filename is already taken, an
 
 ## Parameters
 
-| Parameter            | Type                          | Description
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
-| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+| Parameter   | Type                                                                           | Description                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Boolean                                                                        | If set to `true`, the final creation of the file in the destination will require an explicit request. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded.                                                                   |
 
 ### Request
 
@@ -420,6 +421,10 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
+
+## See also
+
+[Large file upload](/graph/sdks/large-file-upload)
 
 <!--
 {

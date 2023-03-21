@@ -1,7 +1,7 @@
 ---
 title: "Create managedMobileApp"
 description: "Create a new managedMobileApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
+POST /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps
 POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```
@@ -96,6 +97,3 @@ Content-Length: 276
   "version": "Version value"
 }
 ```
-
-
-

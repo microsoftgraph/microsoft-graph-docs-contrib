@@ -2,7 +2,7 @@
 title: "rbacApplicationMultiple resource type"
 description: "Role management navigation property"
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers that support multiple principals and multiple scopes in a single role assignment. 
-
-This is different from [rbacApplication](rbacapplication.md) resource type. 
+Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers that support multiple principals and multiple scopes in a single role assignment. This is different from the [rbacApplication](rbacapplication.md) resource type.
 
 Cloud PC and Microsoft Intune are examples of such RBAC providers. A role assignment in these providers can have an array of principals and an array of scope groups.
 
 For role definitions, the cloud PC provider currently supports the [list](../api/rbacapplication-list-roledefinitions.md) operation but not the [create](../api/rbacapplication-post-roledefinitions.md).
 
+Inherits from [entity](entity.md).
 
 ## Methods
 
@@ -37,7 +36,11 @@ None
 
 ## Relationships
 
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions.|
+|roleAssignments|[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) collection| Resource to grant access to users or groups. |
+|roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
 
 ## JSON representation
 

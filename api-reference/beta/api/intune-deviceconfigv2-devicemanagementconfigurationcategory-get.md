@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementConfigurationCategory"
 description: "Read properties and relationships of the deviceManagementConfigurationCategory object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
@@ -55,7 +56,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### Response
@@ -63,13 +64,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 563
+Content-Length: 621
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
     "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
     "description": "Description value",
+    "categoryDescription": "Category Description value",
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
@@ -84,6 +86,3 @@ Content-Length: 563
   }
 }
 ```
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "windowsDriverUpdateProfile resource type"
 description: "Windows Driver Update Profile"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -27,6 +27,7 @@ Windows Driver Update Profile
 |[Update windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Update the properties of a [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) object.|
 |[assign action](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|None|Not yet documented|
 |[executeAction action](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Not yet documented|
+|[syncInventory action](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|None|Sync the driver inventory of a WindowsDriverUpdateProfile.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,6 +42,7 @@ Windows Driver Update Profile
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Driver Update entity.|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|Driver inventory sync status for this profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -70,9 +72,11 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "String (timestamp)",
+    "driverInventorySyncState": "String"
+  }
 }
 ```
-
-
-

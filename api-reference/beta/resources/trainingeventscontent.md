@@ -1,7 +1,7 @@
 ---
 title: "trainingEventsContent resource type"
 description: "Represents training events in an attack simulation and training campaign."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
@@ -34,12 +34,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.trainingEventsContent",
-  "trainingsAssignedUserCount": "Integer",
   "assignedTrainingsInfos": [
     {
       "@odata.type": "microsoft.graph.assignedTrainingInfo"
     }
-  ]
+  ],
+  "trainingsAssignedUserCount": "Int32"
 }
 ```
-

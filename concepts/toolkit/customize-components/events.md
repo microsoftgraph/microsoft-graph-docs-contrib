@@ -2,7 +2,7 @@
 title: "Handle events exposed by Microsoft Graph Toolkit components"
 description: "Many Microsoft Graph Toolkit components emit custom events. Attaching event handlers to these events allows you to respond to them and control the behavior of your app."
 ms.localizationpriority: medium
-author: waldekmastykarz
+author: sebastienlevert
 ---
 
 # Handle events exposed by Microsoft Graph Toolkit components
@@ -23,7 +23,7 @@ Microsoft Graph Toolkit uses the standard [`EventTarget.dispatchEvent()`](https:
 For example, to handle the `itemClick` event emitted by the File list component, add the following to your code.
 
 ```javascript
-document.querySelector('mgt-file-list').addEventListener('itemClick' e => {
+document.querySelector('mgt-file-list').addEventListener('itemClick', e => {
   // your event handler code goes here
 });
 ```

@@ -24,12 +24,16 @@ Specifies which participants can bypass the meeting lobby.
 
 ### lobbyBypassScope values
 
-| Value                    | Description     | 
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `invited`, `organizationExcludingGuests`.
+
+| Value                    | Description     |
 | ------------------------ | --------------------------------------------------- |
-| organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| organization | Only the participants from the same company and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| organizationAndFederated | Only the participants from the same company or trusted organization and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| everyone | Everyone is admitted into the meeting. No participants are placed in the meeting lobby. | 
+| organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organization | Only the participants from the same company **and guests** are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organizationAndFederated | Only the participants from the same company or trusted organization and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| everyone | Everyone is admitted into the meeting. No participants are placed in the meeting lobby. |
+| invited | Only people the organizer invites are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organizationExcludingGuests |  Only the participants from the same company are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation

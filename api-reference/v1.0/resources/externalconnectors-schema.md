@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
   "properties": [
     {
       "name": "String",
-      "type": "String",
+      "type": "String"
     }
   ]
 }

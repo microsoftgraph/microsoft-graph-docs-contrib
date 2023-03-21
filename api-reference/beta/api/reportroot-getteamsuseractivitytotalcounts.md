@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsUserActivityTotalCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users."
+description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or non-licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users.
+Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or non-licensed users.
 
 ## Permissions
 
@@ -66,14 +66,21 @@ The CSV file has the following headers for columns.
 - Report Refresh Date
 - Report Date
 - Team Chat Messages
+- Post Messages
+- Reply Messages
 - Private Chat Messages
 - Calls
 - Meetings
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Meetings Organized
+- Meetings Attended
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a [teamsUserActivityCounts](../resources/teamsuseractivitycounts.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Example
 
@@ -118,7 +125,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 
 ### JSON
@@ -148,24 +155,30 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 475
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
       "teamChatMessages": 26, 
+      "postMessages": 3,
+      "replyMessages": 1,
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
+      "audioDuration": 00:00:00,
+      "videoDuration": 00:00:00,
+      "screenShareDuration": 00:00:00,
+      "meetingsOrganized": 0,
+      "meetingsAttended": 0,
       "reportPeriod": "7"
     }
   ]

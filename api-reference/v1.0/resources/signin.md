@@ -27,8 +27,8 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |:---------------|:--------|:----------|
 |appDisplayName|String|App name displayed in the Azure Portal. Supports `$filter` (`eq` and `startsWith` operators only).|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory. Supports `$filter` (`eq` operator only).|
-|appliedConditionalAccessPolicy|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
-|clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes `Browser`, `Exchange Active Sync`, `modern clients`, `IMAP`, `MAPI`, `SMTP`, and `POP`. Supports `$filter` (`eq` operator only).|
+|appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser` and `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. Supports `$filter` (`eq` operator only).|
 |conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
 |correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. Supports `$filter` (`eq` operator only).|
 |createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|

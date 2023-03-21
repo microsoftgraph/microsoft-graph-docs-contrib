@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -14,6 +14,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [microsoftTunnelConfiguration](/graph/api/resources/microsofttunnelconfiguration) <li> [microsoftTunnelHealthThreshold](/graph/api/resources/microsofttunnelhealththreshold) <li> [microsoftTunnelServer](/graph/api/resources/microsofttunnelserver) <li> [microsoftTunnelServerLogCollectionResponse](/graph/api/resources/microsofttunnelserverlogcollectionresponse) <li> [microsoftTunnelSite](/graph/api/resources/microsofttunnelsite) </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [microsoftTunnelConfiguration](/graph/api/resources/intune-mstunnel-microsofttunnelconfiguration) <li> [microsoftTunnelHealthThreshold](/graph/api/resources/intune-mstunnel-microsofttunnelhealththreshold) <li> [microsoftTunnelServer](/graph/api/resources/intune-mstunnel-microsofttunnelserver) <li> [microsoftTunnelServerLogCollectionResponse](/graph/api/resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse) <li> [microsoftTunnelSite](/graph/api/resources/intune-mstunnel-microsofttunnelsite) </ul> |

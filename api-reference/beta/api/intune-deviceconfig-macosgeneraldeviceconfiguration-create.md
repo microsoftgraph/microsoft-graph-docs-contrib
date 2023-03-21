@@ -1,7 +1,7 @@
 ---
 title: "Create macOSGeneralDeviceConfiguration"
 description: "Create a new macOSGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -116,6 +116,9 @@ The following table shows the properties that are required when you create the m
 |softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of major OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
 |softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of minor OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
 |softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of non-OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
+|touchIdTimeoutInHours|Int32|Maximum hours after which the user must enter their password to unlock the device instead of using Touch ID. Available for devices running macOS 12 and later. Valid values 0 to 2147483647|
+|iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running macOS 12 and later.|
+|iCloudDesktopAndDocumentsBlocked|Boolean|When TRUE the synchronization of cloud desktop and documents is blocked. When FALSE, synchronization of the cloud desktop and documents are allowed. Available for devices running macOS 10.12.4 and later.|
 
 
 
@@ -129,7 +132,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4900
+Content-length: 5014
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -264,7 +267,10 @@ Content-length: 4900
   "eraseContentAndSettingsBlocked": true,
   "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+  "touchIdTimeoutInHours": 5,
+  "iCloudPrivateRelayBlocked": true,
+  "iCloudDesktopAndDocumentsBlocked": true
 }
 ```
 
@@ -273,7 +279,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5072
+Content-Length: 5186
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -411,9 +417,9 @@ Content-Length: 5072
   "eraseContentAndSettingsBlocked": true,
   "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+  "touchIdTimeoutInHours": 5,
+  "iCloudPrivateRelayBlocked": true,
+  "iCloudDesktopAndDocumentsBlocked": true
 }
 ```
-
-
-

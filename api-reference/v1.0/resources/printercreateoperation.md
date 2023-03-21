@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a long-running printer registration operation. Derived from [printOperation](printoperation.md).
 
 Inherits from [printOperation](printoperation.md).
@@ -25,10 +23,10 @@ Inherits from [printOperation](printoperation.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|certificate|String|The signed certificate created during the registration process. Read-only.|
+|createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 |id|String|The operation's identifier. Read-only.|
 |status|[printOperationStatus](printoperationstatus.md)|The status of the registration operation. Contains the operation's progress and whether it completed successfully. Read-only.|
-|createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
-|certificate|String|The signed certificate created during the registration process. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

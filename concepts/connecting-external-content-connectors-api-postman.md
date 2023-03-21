@@ -1,6 +1,6 @@
 ---
 title: "Use Postman with the Microsoft Graph connectors API"
-description: "Try connectors APIs using Postman"
+description: "Follow the steps in this guide to create a Microsoft Graph connectors API by using the Postman API platform."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -9,86 +9,87 @@ ms.prod: search
 
 # Use Postman with the Microsoft Graph connectors API
 
-This topic describes how you can use the Microsoft Graph connector APIs with Postman.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so that you can create better APIs faster.
+
+This article describes how you can use the Microsoft Graph connectors API with Postman.
 
 ## Prerequisites
 
 * Either a Microsoft account or work or school account.
-* Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program] to get a free developer subscription.
+* Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) to get a free developer subscription.
 
-## Step 1 - Fork the Microsoft Graph Postman collection
+## Step 1: Fork the Microsoft Graph Postman collection
 
 To use the Postman collection, you need to fork it into your Postman workspace. Do this from a web browser.
 
 1. Go to [Postman](https://identity.getpostman.com/signup) and sign up. If you already have a Postman account, you can [sign in](https://identity.getpostman.com/login).
 
-2. After you sign in, go to the following URL: `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148`, and select the Microsoft Graph collection.
+2. After you sign in, go to the following URL: `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148` and select the Microsoft Graph collection.
 
-3. Select the three dots to the right, and select the option to **Create a fork**.
+3. Select the three dots to the right, and then select **Create a fork**.
 
-![Screenshot showing the Microsoft Graph collection in Postman and the option to create a fork](./images/connectors-images/16-postman.png)
+   ![Screenshot showing the Microsoft Graph collection in Postman and the option to create a fork](./images/connectors-images/16-postman.png)
 
-4. In the dialog that opens, enter a label to identify your fork. In the **Workspace** dropdown menu select **My workspace** , and select **Fork Collection**.
+4. In the dialog that opens, enter a label to identify your fork. In the **Workspace** dropdown menu, select **My Workspace**, and then select **Fork Collection**.
 
-![Screenshot showing the Fork collection dialog in Postman and the options to enter a label, and select My Workspace](./images/connectors-images/17-postman.png)
+   ![Screenshot showing the Fork collection dialog in Postman and the options to enter a label, and select My Workspace](./images/connectors-images/17-postman.png)
 
-3. You can now go to **Workspaces** > **My Workspace**, and see the fork you created. You'll find the Microsoft Graph connectors folder under **Application**.
+3. Go to **Workspaces** > **My Workspace** to see the fork that you created. You can find the Microsoft Graph connectors folder under **Application**.
 
-![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
+   ![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
 
-## Step 2 - Download the Postman Agent (Optional - Postman Web browser only)
+## Step 2: Download the Postman Agent (optional - Postman web browser only)
 
-To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
-"The maximum number of [connection](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resources per Microsoft 365 tenant."
+To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). 
 
-> [!NOTE]
-> You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
+You can't use Postman for the web without this due to CORS restrictions in the web browser:
+"The maximum number of [connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant."
 
-## Step 3 - Create an Azure AD application
+You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you see this collection in your workspace.
 
-To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call.
+## Step 3: Create an Azure AD application
 
-1. Go to [portal.azure.com](https://portal.azure.com/) and **Sign in** with your developer tenant administrator account.
-2. Under Azure Services, select **Azure Active Directory**.
-3. On the left menu, select **App registrations**.
-4. On the horizontal menu, select **New registration**.
-5. Set the Application name to "Parts Inventory".
-6. Set the Redirect URI to https://oauth.pstmn.io/v1/browser-callback.
-7. Select **Register**.
-8. On the left menu, select **API Permissions**.
-9. In the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions**.
-10. Start typing `ExternalItem.ReadWrite.All` and check `ExternalItem.ReadWrite.All`.
-11. Select **Application permissions**, type "User"., and check **Application Permissions**.
-12. Expand the **User options** and check **`ExternalItem.ReadWrite.All`**.
-13. Select **Add permissions**.
-14. In the horizontal menu, select **Grant admin consent for**, and select **Yes**.
-15. In the left menu, select **Overview**. From here, you can get the Application (client) ID and Directory (tenant) ID. You will need these in step 4.
-16. In the left menu, select **Certificates and secrets**.
-17. Select **New client secret**, enter a description, and select **Add**. Copy the new client secret value, you will need this in step 4.
+To use this collection in your own developer tenant, create an Azure Active Directory (Azure AD) application and give it the appropriate permissions for the requests that you want to call.
 
-The Azure AD application now has permissions to make requests on behalf of a user to call `ExternalItem.ReadWrite.All`, and as an application for `ExternalItem.ReadWrite.All`.
+1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
+1. Under **Azure Services**, select **Azure Active Directory**.
+1. On the left menu, select **App registrations**.
+1. On the horizontal menu, select **New registration**.
+1. Set the **Application name** to `Parts Inventory`.
+1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
+1. Select **Register**.
+1. On the left menu, select **API Permissions**.
+1. On the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions** or **Application Permissions**.
+1. Start typing `External` and choose the delegated or application permissions necessary for the API you are calling. Search for **Search Permissions** in the Graph [Permissions](/graph/permissions-reference#search-permissions) reference for more details.
+1. Select **Add permissions**.
+1. On the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
+1. On the left menu, select **Overview**. From here, you can get the **application (client) ID** and **directory (tenant) ID**. You'll need these in step 4.
+1. On the left menu, select **Certificates and secrets**.
+1. Select **New client secret**, enter a description, and then select **Add**. Copy the new client secret value; you'll need this in step 4.
 
-## Step 4 – Configure authentication
+The application now has two permissions configured. `ExternalItem.ReadWrite.All` is added as a delegated permission, which is a permission that requires a signed-in user. The application can read/write external items on behalf of the user. `ExternalItem.ReadWrite.All` is added as an application permission, which is a permission that does not require a signed-in user. The application can read/write external items on its own behalf.
 
-Set up the variables in Postman. This information is used to generate the access token.
+## Step 4: Configure authentication
+
+In this step, you set up the environment variables in Postman that you use to retrieve an access token.
 
 1. Select the **Microsoft Graph** tab and go to the **Variables** section.
 
-![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
+   ![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
 
-2. In the Variables section, provide the required information using the information from step 3.
+2. In the **Variables** section, provide the required information by using the information from step 3:
 
-- Set the  **Current value**  of **client\_id** to the Application (client) ID value from step 3.15.
-- Set the  **Current value** of **client\_secret** to the Client Secret value from step 3.17.
-- Set the  **Current value**  of **tenant** to the Directory (tenant) ID value from step 3.15.
-- Set the  **Current value**  of **username** to `admin@xxxxxxx.onmicrosoft.com`
-- Set the  **Current value**  of **password** to tenant admin password.
+   - Set the current value of **tenant** to the directory (tenant) ID value from step 3.15.
+   - Set the current value of **client\_id** to the application (client) ID value from step 3.15.
+   - Set the current value of **client\_secret** to the client secret value from step 3.17.
+   - Set the current value of **userName** to `admin@xxxxxxx.onmicrosoft.com`.
+   - Set the current value of **password** to tenant admin password.
 
-![Screenshot showing the selected Variables](./images/connectors-images/08-postman.png)
+   ![Screenshot showing the selected Variables](./images/connectors-images/08-postman.png)
 
 3. Select  **Save** / **Update**.
 
-## Step 5 - Get an authentication token
+## Step 5: Get an authentication token
 
 You need to get an access token because this is the first time you are running a request as an application authentication flow. Get the app access token by making the following POST request:
 
@@ -106,6 +107,7 @@ client_id={{client_id}}
 &client_secret={{client_secret}} 
 &grant_type=client_credentials 
 ```
+
 The following example shows a successful response:
 ```html
 { 
@@ -116,11 +118,12 @@ The following example shows a successful response:
 } 
 ```
 
-Note that you are using the [client credential flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get an app access token and not a user access token.
+> [!NOTE]
+> You are using the [client credential flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get an app access token and not a user access token.
 
-## Step 6 – Create a new connection
+## Step 6: Create a new connection
 
-A [connection](/concepts/connecting-external-content-manage-connections.md) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, description, and ID. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 ```http
 POST /external/connections
@@ -163,9 +166,9 @@ The following is a screenshot of the **Create connection** section.
 
  ![Screenshot of the Create connection section](./images/connectors-images/10-postman.png)
 
-## Step 7 - Register connection schema
+## Step 7: Register connection schema
 
-The connection schema determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+The connection schema determines how your content is used in various Microsoft Graph experiences. The schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ```http
 POST /external/connections/{id}/schema 
@@ -233,13 +236,13 @@ Location: https://graph.microsoft.com/beta/external/connections/contosotasks/ope
 > GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 > ```
 
-The following is another example of request.
+The following is another example of the request.
 ```http
 Request 
 GET https://graph.microsoft.com/beta/external/connections/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 ```
 
-And next the respective example of response.
+The following is another example of the response.
 
 ```http
 HTTP/1.1 200 OK 
@@ -262,11 +265,11 @@ After the connection schema operation status changes from **InProgress** to **Co
 
 After the connection state changes from **draft** to **ready**, you can ingest items into the current connection.
 
-## Step 8 - Add external group member (optional)
+## Step 8: Add external group member (optional)
 
-If your external service uses non-Azure AD ACLs, sync those permissions.  
+If your external service uses non-Azure AD access control lists (ACLs), sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 This is an example of a request.
 
@@ -282,7 +285,7 @@ Content-Type: application/json
 } 
 ```
 
-And next is an example of the response.
+This is an example of the response.
 
 ```http
 HTTP/1.1 201 Created 
@@ -296,18 +299,18 @@ Content-Type: application/json
 } 
 ```
 
-## Step 9 - Ingest Items
+## Step 9: Ingest Items
 
-After you created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This ID is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
+After you create a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
 
 If you have binary files, you must parse to get the metadata and a text version of the content. If you have non-text content such as a PDF or BMP file, you must use object character recognition to convert content to text.  
 
-You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant.
+You are responsible for converting your source permissions to `grant` or `deny`. `Deny` takes higher precedence over `grant`.
 
-The following is an example of request.
+The following is an example of a request.
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
 { 
@@ -346,4 +349,8 @@ HTTP/1.1 200 OK
 
 ## Error handling
 
-For details about how to resolve errors, see [Microsoft Graph authorization errors](/graph/resolve-auth-errors).
+For details about how to resolve errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors).
+
+## See also
+
+- [Use Postman with the Microsoft Graph API](use-postman.md)

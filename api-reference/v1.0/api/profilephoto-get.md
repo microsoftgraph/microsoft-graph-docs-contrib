@@ -1,19 +1,17 @@
 ---
-title: "Get photo"
+title: "Get profilePhoto"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Get photo
+# Get profilePhoto
 
 Namespace: microsoft.graph
 
-Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
-
-> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
@@ -26,13 +24,13 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### To retrieve the profile photo of a user
+### To retrieve the profile photo of a contact
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
-|Application      |    User.Read.All, User.ReadWrite.All           |
+|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
+|Application      |    Contacts.Read, Contacts.ReadWrite           |
 
 ### To retrieve the profile photo of a group
 
@@ -42,17 +40,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Not supported.            |
 |Application      |    Group.Read.All, Group.ReadWrite.All           |
 
-### To retrieve the profile photo of a contact
+### To retrieve the profile photo of a team
+
+| Permission Type | Permissions (from least to most privileged)                   |
+| --------------- | ------------------------------------------------------------- |
+| Delegated (work or school account)        | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+| Delegated (personal Microsoft account)    | Not supported.                      |
+| Application                               | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+
+### To retrieve the profile photo of a user
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
-|Application      |    Contacts.Read, Contacts.ReadWrite           |
+|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
+|Application      |    User.Read.All, User.ReadWrite.All           |
 
-> **Note:**  
-> 1. Metadata operation is not supported for personal Microsoft accounts. 
+> [!NOTE]
+> 
+> 1. Metadata operation is not supported for personal Microsoft accounts.
 > 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> 3. Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
 
@@ -67,6 +75,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
 
 ### Get the metadata of the photo
@@ -81,6 +90,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### Get the metadata for a specific photo size
@@ -118,7 +128,7 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 ## Examples
 
 ### Example 1: Get the photo for the signed-in user in the largest available size
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -127,11 +137,11 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ### Example 2: Get the 48x48 photo for the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -141,11 +151,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
 ### Example 3: Get the metadata of the user photo of the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -154,7 +164,7 @@ Contains the binary data of the requested 48x48 photo. The HTTP response code is
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### Response
+#### Response
 
 The following response data shows the photo metadata.
 
@@ -172,7 +182,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
-    "id": "240X240",
+    "id": "240x240",
     "width": 240,
     "height": 240
 }
@@ -195,11 +205,66 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
-    "id": "1X1",
+    "id": "1x1",
     "width": 1,
     "height": 1
 }
 ```
+### Example 4: Get the metadata of the team photo
+
+#### Request
+
+Here is an example of the request to get the metadata of the team photo.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### Response
+
+Here is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### Example 5: Get the team photo's binary data
+
+Here is an example of the request to get the team photo's binary data.
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### Response
+
+Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ## Using the binary data of the requested photo
 

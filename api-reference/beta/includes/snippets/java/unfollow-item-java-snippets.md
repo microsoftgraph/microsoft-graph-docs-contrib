@@ -9,6 +9,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 graphClient.me().drive().items("{item-id}")
 	.unfollow()
 	.buildRequest()
-	.delete();
+	.post();
 
 ```

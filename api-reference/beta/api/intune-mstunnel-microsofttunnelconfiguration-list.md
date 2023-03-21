@@ -1,7 +1,7 @@
 ---
 title: "List microsoftTunnelConfigurations"
 description: "List properties and relationships of the microsoftTunnelConfiguration objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 950
+Content-Length: 1124
 
 {
   "value": [
@@ -80,6 +80,12 @@ Content-Length: 950
       "routesExclude": [
         "Routes Exclude value"
       ],
+      "routeIncludes": [
+        "Route Includes value"
+      ],
+      "routeExcludes": [
+        "Route Excludes value"
+      ],
       "splitDNS": [
         "Split DNS value"
       ],
@@ -94,11 +100,9 @@ Content-Length: 950
       "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "disableUdpConnections": true
     }
   ]
 }
 ```
-
-
-

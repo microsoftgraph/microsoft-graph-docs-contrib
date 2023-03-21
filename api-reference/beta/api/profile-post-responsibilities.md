@@ -70,7 +70,6 @@ If successful, this method returns a `201 Created` response code and a [personRe
 ``` http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
-Content-length: 413
 
 {
   "description": "Member of the Microsoft API Council",
@@ -80,16 +79,12 @@ Content-length: 413
   ]
 }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-personresponsibility-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-personresponsibility-from-profile-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

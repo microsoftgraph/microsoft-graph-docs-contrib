@@ -1,7 +1,7 @@
 ---
 title: "Get appleVpnConfiguration"
 description: "Read properties and relationships of the appleVpnConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3284
+Content-Length: 3419
 
 {
   "value": {
@@ -148,7 +148,11 @@ Content-Length: 3284
         "domains": [
           "Domains value"
         ],
-        "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+        "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+        "interfaceTypeMatch": "ethernet",
+        "dnsServerAddressMatch": [
+          "Dns Server Address Match value"
+        ]
       }
     ],
     "providerType": "appProxy",
@@ -171,6 +175,3 @@ Content-Length: 3284
   }
 }
 ```
-
-
-

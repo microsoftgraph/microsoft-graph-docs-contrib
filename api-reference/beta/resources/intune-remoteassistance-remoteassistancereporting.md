@@ -1,7 +1,7 @@
 ---
 title: "remoteAssistanceReporting resource type"
 description: "RemoteAssistanceReporting resources represents the metadata of a given Remote Assistance reporting payload"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |id|String|The unique identifier for a session and for each sessions's reporting payload|
 |startDateTime|DateTimeOffset|Start time for the session|
 |endDateTime|DateTimeOffset|End time for the session|
-|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Type of the remote assistance session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`. Possible values are: `viewOnly`, `fullControl`, `elevation`.|
+|remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Type of the remote assistance session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`. Possible values are: `viewOnly`, `fullControl`, `elevation`, `unattended`.|
 |helperEmail|String|Login email used by the helper to establish the session|
 |helperTenantId|String|Tenant id for the helper|
 |helperFirstName|String|Helper's first name|
@@ -40,6 +40,7 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |sharerDeviceName|String|Sharer's device name|
 |sharerOs|String|Sharer's operating system|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the sharer's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|sharerDeviceSerialNumber|String|Sharer device serial number|
 
 ## Relationships
 None
@@ -73,9 +74,7 @@ Here is a JSON representation of the resource.
   "sharerDeviceAadId": "String",
   "sharerDeviceName": "String",
   "sharerOs": "String",
-  "sharerEnrollmentState": "String"
+  "sharerEnrollmentState": "String",
+  "sharerDeviceSerialNumber": "String"
 }
 ```
-
-
-

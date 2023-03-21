@@ -11,13 +11,22 @@ const options = {
 const client = Client.init(options);
 
 const cloudPcProvisioningPolicy = {
-  '@odata.type': '#microsoft.graph.cloudPcProvisioningPolicy',
-  displayName: 'Display Name value',
-  description: 'Description value',
-  onPremisesConnectionId: '6bf90392-5fea-459a-9e9d-a2484abbffff',
-  imageId: 'Image ID value',
-  imageDisplayName: 'Image Display Name value',
-  imageType: 'gallery'
+    '@odata.type': '#microsoft.graph.cloudPcProvisioningPolicy',
+    description: 'Description value',
+    displayName: 'Display Name value',
+    domainJoinConfiguration: {
+        domainJoinType: 'hybridAzureADJoin',
+        onPremisesConnectionId: '16ee6c71-fc10-438b-88ac-daa1ccafffff'
+    },
+    enableSingleSignOn: true,
+    imageDisplayName: 'Windows-10 19h1-evd',
+    imageId: 'MicrosoftWindowsDesktop_Windows-10_19h1-evd',
+    imageType: 'gallery',
+    onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
+    windowsSettings: {
+        language: 'en-US'
+    },
+    provisioningType: 'dedicated'
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')

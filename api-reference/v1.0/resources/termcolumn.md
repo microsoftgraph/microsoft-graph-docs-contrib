@@ -14,12 +14,17 @@ Represents a managed metadata column in SharePoint.
 
 ## Properties
 
-| Property name | Type   | Description|
+| Property | Type   | Description|
 |:--------------|:-------|:----------------------------------------------------|
 | allowMultipleValues | Boolean | Specifies whether the column will allow more than one value.|
-| parentTerm     | microsoft.graph.termStore.term | Specifies the term GUID whose children can be selected as column's value.  |
 | showFullyQualifiedName | Boolean | Specifies whether to display the entire term path or only the term label.  |
-| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. |
+
+## Relationships
+
+| Relationship   | Type                      | Description
+|:----------------|:--------------------------|:-------------------------------
+| parentTerm     | microsoft.graph.termStore.term | Specifies the parent term for which the child terms can be selected as the column value.
+| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. 
 
 ## JSON representation
 
@@ -29,9 +34,7 @@ Here is a JSON representation of a **termColumn** resource.
 ```json
 {
     "allowMultipleValues": true,
-    "parentTerm": { "@type": "microsoft.graph.termStore.term" },
     "showFullyQualifiedName": false,
-    "termSet": { "@type": "microsoft.graph.termStore.set" }
 }
 ```
 

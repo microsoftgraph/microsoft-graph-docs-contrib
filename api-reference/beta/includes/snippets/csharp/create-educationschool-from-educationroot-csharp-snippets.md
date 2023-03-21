@@ -4,13 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationSchool = new EducationSchool
+var requestBody = new EducationSchool
 {
 	DisplayName = "Fabrikam High School",
 	Description = "Magnate school for the arts. Los Angeles School District",
-	Status = "String",
 	ExternalSource = EducationExternalSource.Sis,
 	PrincipalEmail = "AmyR@fabrikam.com",
 	PrincipalName = "Amy Roebuck",
@@ -24,14 +23,12 @@ var educationSchool = new EducationSchool
 		CountryOrRegion = "United States",
 		PostalCode = "98055",
 		State = "CA",
-		Street = "12345 Main St."
+		Street = "12345 Main St.",
 	},
 	ExternalId = "10002",
-	Phone = "+1 (253) 555-0102"
+	Phone = "+1 (253) 555-0102",
 };
+var result = await graphClient.Education.Schools.PostAsync(requestBody);
 
-await graphClient.Education.Schools
-	.Request()
-	.AddAsync(educationSchool);
 
 ```

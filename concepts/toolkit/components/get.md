@@ -1,11 +1,11 @@
 ---
-title: "Get component in the Microsoft Graph Toolkit"
+title: "Get component in Microsoft Graph Toolkit"
 description: "A Get component allows you to make any GET query from Microsoft Graph directly in your HTML."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
-# Get component in the Microsoft Graph Toolkit
+# Get component in Microsoft Graph Toolkit
 
 You can use `mgt-get` to make any GET query from Microsoft Graph directly in your HTML. The component does not provide a default UI and requires that you write a template.
 
@@ -61,10 +61,11 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 | value | Data item from the returned `value` array | Use the `value` template instead of the `default` template when expecting the response from the graph to contain an array of items - such as **messages**, **files**, or **users**. The `value` template will automatically be repeated for each item returned by the resource. The `value` template will also start rendering the items as soon as they are ready (unlike the default template).|
 | error | The error from Microsoft Graph. | This template will be used if there is an error making the request. |
 | loading | N/A | This template is used while the request is being made. |
+| no-data | N/A | This template is used when the request returned no data. |
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
