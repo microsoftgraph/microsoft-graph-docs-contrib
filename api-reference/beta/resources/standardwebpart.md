@@ -19,11 +19,12 @@ Inherits from [webPart](../resources/webpart.md).
 
 ## Properties
 
-| Property    | Type                                       | Description                                                                          |
-| :---------- | :----------------------------------------- | :----------------------------------------------------------------------------------- |
-| data        | [webPartData](../resources/webpartdata.md) | Data of the webPart.                                                                 |
-| id          | String                                     | Instance identifier of the webPart. Inherited from [entity](../resources/entity.md). |
-| webPartType | String                                     | A Guid which indicates the type of the webParts                                      |
+| Property               | Type                                       | Description                                                                                                     |
+| :--------------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| containerTextWebPartId | string                                     | Instance identifier of the container text webPart. Only works for inline standard webPart in rich text webPart. |
+| data                   | [webPartData](../resources/webpartdata.md) | Data of the webPart.                                                                                            |
+| id                     | String                                     | Instance identifier of the webPart. Inherited from [entity](../resources/entity.md).                            |
+| webPartType            | String                                     | A Guid which indicates the type of the webParts                                                                 |
 
 ## Relationships
 
@@ -45,6 +46,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.standardWebPart",
+  "containerTextWebPartId": "String",
   "id": "String (identifier)",
   "webPartType": "String",
   "data": {
