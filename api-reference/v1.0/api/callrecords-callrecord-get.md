@@ -20,7 +20,7 @@ There are two ways to get the **id** of a **callRecord**:
 
 > [!WARNING]
 >
-> A call record is created after a call or meeting ends and will remain available for **30 days** after the start of the call. Requests for call records older than 30 days will receive a `404 Not Found` response.
+> A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
 
 ## Permissions
 

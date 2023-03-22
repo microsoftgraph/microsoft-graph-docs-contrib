@@ -9,7 +9,7 @@ ms.localizationpriority: high
 
 # Working with the call records API in Microsoft Graph
 
-Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days from the start of the call.
+Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days.
 
 The call records API is defined in the OData sub-namespace, `microsoft.graph.callRecords`.
 
