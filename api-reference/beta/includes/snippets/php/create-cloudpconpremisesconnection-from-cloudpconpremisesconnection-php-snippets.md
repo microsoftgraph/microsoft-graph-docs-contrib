@@ -10,7 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CloudPcOnPremisesConnection();
-
 $requestBody->setDisplayName('test-canary-02');
 
 $requestBody->setType(new CloudPcOnPremisesConnectionType('hybridazureadjoin'));
