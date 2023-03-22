@@ -217,9 +217,10 @@ Content-type: application/json
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 
-```http
+```msgraph-interactive
 GET /sites/getAllSites
 ```
 
