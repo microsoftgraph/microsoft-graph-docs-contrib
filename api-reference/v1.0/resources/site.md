@@ -19,7 +19,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------|:----------
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
-| [Get_all_sites_multigeo][] collection of site  | Access all sites in a multi geo tenant.
+| [List root sites across geographies][] |  collection of site  | List sites across all geographies in an organization
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
@@ -36,8 +36,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
 
 [Get site]: ../api/site-get.md
-[Get_all_sites_multigeo]: ../api/site_list_all_multigeo_sites.md
 [Get root site]: ../api/site-get.md
+[List root sites across geographies]: ../api/site-list.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
