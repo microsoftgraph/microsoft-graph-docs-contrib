@@ -204,7 +204,7 @@ Content-Type: application/json
                 "sms,federatedSingleFactor",
                 "voice,federatedSingleFactor"
             ],
-            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
             "combinationConfigurations": []
         }
     ]

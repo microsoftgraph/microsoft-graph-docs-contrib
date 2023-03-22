@@ -489,9 +489,9 @@
         {
           "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
           "ApiChange": "Method",
-          "ChangedApiName": "authenticationStrengths",
+          "ChangedApiName": "findByMethodMode",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **findByMethodMode** function of the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource. To retrieve authentication strength policies that include specified authentication method modes, use the following syntax: `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')` instead.",
+          "Description": "Deprecated the **findByMethodMode** function of the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource. To retrieve authentication strength policies that include specified authentication method modes, use the following syntax: `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')`.",
           "Target": "authenticationStrengthPolicy"
         }
       ],
