@@ -20,9 +20,9 @@ Specific filter criteria and query options are also supported and described belo
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
 In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
-If you want to enumerate all sites in a multi geo environment, use [list_multigeo_sites][].
+If you want to list all sites across geographies, use '/sites/getAllSites'. @odata.nextLink would iterate over all sites across geographies in the organization.
+The /getAllSites endpoint won't support the filter and query criteria above.
 
-[list_multigeo_sites]: site_list_all_multigeo_sites.md
 [$search]: site-search.md
 [sites]: ../resources/site.md
 
@@ -55,6 +55,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites
 GET /sites?$filter=siteCollection/root ne null
+GET /sites/getAllSites
 ```
 
 ## Example
@@ -152,6 +153,59 @@ Content-type: application/json
       "webUrl": "https://contoso.sharepoint.com/sites/siteB"
     }
   ]
+}
+```
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /sites/getAllSites
+```
+
+### Response
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "contoso.sharepoint.com,bf6fb551-d508-4946-a439-b2a6154fc1d9,65a04b8b-1f44-442b-a1fc-9e5852fb946c",
+      "name": "Root Site",
+      "root": { },
+      "siteCollection": {
+        "hostName": "contoso.sharepoint.com",
+        "dataLocationCode": "NAM",
+        "root": { }
+      },
+      "webUrl": "https://contoso.sharepoint.com"
+    },
+    {
+      "id": "contoso.sharepoint.com,d9ecf079-9b13-4376-ac5d-f242dda55626,746dbcc1-fa2b-4120-b657-2670bae5bb6f",
+      "name": "Site A",
+      "root": { },
+      "siteCollection": {
+        "hostName": "contoso.sharepoint.com"
+      },
+      "webUrl": "https://contoso.sharepoint.com/sites/siteA"
+    },
+    {
+      "id": "contoso.sharepoint.com,fd1a778f-263e-4c43-acdf-d5c2519d80eb,c06016db-dfec-4f79-83a1-09c6dbfd7022",
+      "name": "Site B",
+      "root": { },
+      "siteCollection": {
+        "hostName": "contoso.sharepoint.com"
+      },
+      "webUrl": "https://contoso.sharepoint.com/sites/siteB"
+    }
+  ],
+  "@odata.nextLink": "https://contoso.sharepoint.com//_api/v2.1/sites/oneDrive.getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 }
 ```
 
