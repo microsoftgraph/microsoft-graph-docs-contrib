@@ -136,7 +136,7 @@ The dynamic membership rules are specified through the **membershipRule** proper
 - The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 - A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Azure portal because the expression isn't enclosed in double quotes.
 
-The following example shows shows a complete rule.
+The following example shows a complete rule.
 
 `"membershipRule": "user.department -eq \"Marketing\""`.
 

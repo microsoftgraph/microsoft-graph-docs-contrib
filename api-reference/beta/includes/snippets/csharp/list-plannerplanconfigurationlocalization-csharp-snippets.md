@@ -6,10 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations.GetAsync((requestConfiguration) =>
-{
-	requestConfiguration.QueryParameters.Filter = "languageTag eq 'en-us'";
-});
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations.GetAsync();
 
 
 ```
