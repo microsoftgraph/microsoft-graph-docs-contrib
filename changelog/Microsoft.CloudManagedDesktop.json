@@ -3047,6 +3047,24 @@
         "CreatedDateTime": "2023-03-31T10:52:16.0017488Z",
         "WorkloadArea": "Devices and apps",
         "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "shiftWorkCloudPcAccessState",
+            "ChangeType": "Change",
+            "Description": "Rename the `hibernated` member to `standbyMode` in **shiftWorkCloudPcAccessState** enumeration type.",
+            "Target": "shiftWorkCloudPcAccessState"
+          }
+        ],
+        "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-03-22T15:30:16.0017488Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
       }
     ]
 }
