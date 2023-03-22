@@ -378,6 +378,8 @@ items:
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Get shift work access state
+          href: api/cloudpc-getshiftworkcloudpcaccessstate.md
         - name: Reboot
           href: api/cloudpc-reboot.md
         - name: Rename
@@ -397,8 +399,6 @@ items:
         items:
         - name: Get delta
           href: api/directoryobject-delta.md
-        - name: Activate service plan (deprecated)
-          href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Export personal data
@@ -2067,6 +2067,22 @@ items:
             href: api/printtask-get.md
           - name: Update task
             href: api/printtaskdefinition-update-task.md
+        - name: Quota
+          items:
+          - name: Unified storage quota
+            href: resources/unifiedstoragequota.md
+            items:
+            - name: Get
+              href: api/unifiedstoragequota-get.md
+            - name: List
+              href: api/unifiedstoragequota-list-services.md
+          - name: Service storage quota breakdown 
+            href: resources/servicestoragequotabreakdown.md
+            items:
+            - name: Get
+              href: api/servicestoragequotabreakdown-get.md
+            - name: List
+              href: api/unifiedstoragequota-list-services.md
         - name: Reports
           items:
           - name: Organized by printer
@@ -10612,6 +10628,8 @@ items:
             href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Get shift work access state
+            href: api/cloudpc-getshiftworkcloudpcaccessstate.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -12203,8 +12221,6 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
-          - name: Activate service (deprecated)
-            href: api/organization-activateservice.md
         - name: Organization settings
           href: resources/organizationSettings.md
           items:
@@ -12980,6 +12996,15 @@ items:
                 href: api/authenticationmethodspolicy-get.md
               - name: Update
                 href: api/authenticationmethodspolicy-update.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: FIDO2 policy
               href: resources/fido2authenticationmethodconfiguration.md
               items:
@@ -12989,6 +13014,51 @@ items:
                 href: api/fido2authenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+            - name: Text Message policy
+              href: resources/smsAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/smsAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/smsAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/smsAuthenticationMethodConfiguration-delete.md
+            - name: Third-party software OATH policy
+              href: resources/softwareoathAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/softwareoathAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/softwareoathAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
+            - name: Voice call policy
+              href: resources/voiceAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/voiceAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/voiceAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/voiceAuthenticationMethodConfiguration-delete.md
             - name: X509 certificate
               displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md
@@ -12999,15 +13069,6 @@ items:
                 href: api/x509certificateauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/x509certificateauthenticationmethodconfiguration-delete.md
-            - name: Microsoft Authenticator policy
-              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
             - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
               href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
               items:
@@ -13017,51 +13078,6 @@ items:
                 href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-            - name: Temporary Access Pass policy
-              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Email policy
-              href: resources/emailauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/emailauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/emailauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/emailauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
-              href: resources/smsAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/smsAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/smsAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/smsAuthenticationMethodConfiguration-delete.md
-            - name: Voice call policy
-              href: resources/voiceAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/voiceAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/voiceAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/voiceAuthenticationMethodConfiguration-delete.md
-            - name: Third-party software OATH policy
-              href: resources/softwareoathAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/softwareoathAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/softwareoathAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -13673,6 +13689,8 @@ items:
               href: api/accesspackageassignmentrequest-cancel.md
             - name: Reprocess
               href: api/accesspackageassignmentrequest-reprocess.md
+            - name: Resume
+              href: api/accesspackageassignmentrequest-resume.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
@@ -13697,6 +13715,35 @@ items:
               href: api/accesspackagecatalog-list-accesspackageresources.md
             - name: List resource roles
               href: api/accesspackagecatalog-list-accesspackageresourceroles.md
+          - name: Access package custom workflow extension
+            displayName: Custom authentication extensionsCustom authentication extensions
+            items:
+            - name: Assignment request workflow extension
+              href: resources/accesspackageassignmentrequestworkflowextension.md
+              items:
+              - name: List
+                href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+              - name: Create
+                href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+              - name: Get
+                href: api/accesspackageassignmentrequestworkflowextension-get.md
+              - name: Update
+                href: api/accesspackageassignmentrequestworkflowextension-update.md
+              - name: Delete
+                href: api/accesspackageassignmentrequestworkflowextension-delete.md
+            - name: Assignment workflow extension
+              href: resources/accesspackageassignmentworkflowextension.md
+              items:
+              - name: List
+                href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+              - name: Create
+                href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+              - name: Get
+                href: api/accesspackageassignmentworkflowextension-get.md
+              - name: Update
+                href: api/accesspackageassignmentworkflowextension-update.md
+              - name: Delete
+                href: api/accesspackageassignmentworkflowextension-delete.md
           - name: Access package resource request
             href: resources/accesspackageresourcerequest.md
             items:
@@ -13829,6 +13876,8 @@ items:
                 items:
                 - name: List user processing results
                   href: api/identitygovernance-workflow-list-userprocessingresults.md
+                - name: Get user processing result
+                  href: api/identitygovernance-userprocessingresult-get.md
                 - name: Get summary
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
@@ -13856,8 +13905,6 @@ items:
                   href: api/identitygovernance-run-list-taskprocessingresults.md  
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
-                - name: Get user processing result
-                  href: api/identitygovernance-userprocessingresult-get.md
               - name: Task processing result
                 items:
                 - name: Task processing result
@@ -15164,6 +15211,8 @@ items:
             href: api/reportroot-getteamsteamactivitycounts.md
           - name: Get team activity distribution counts
             href: api/reportroot-getteamsteamactivitydistributioncounts.md
+          - name: Get team counts
+            href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -15854,7 +15903,7 @@ items:
           - name: Export (preview)
             href: api/security-ediscoveryreviewset-export.md
             items:
-            - name: Get download url
+            - name: Get download URL (deprecated)
               href: api/security-ediscoveryexportoperation-getdownloadurl.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
@@ -15872,7 +15921,7 @@ items:
             - name: Export (preview)
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
-              - name: Get download url
+              - name: Get download URL (deprecated)
                 href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
@@ -17229,7 +17278,7 @@ items:
             href: api/team-completemigration.md
           - name: List permission grants
             href: api/team-list-permissiongrants.md
-          - name: Team template (preview)
+          - name: Team template
             items:
               - name: Team template
                 href: resources/teamtemplate.md

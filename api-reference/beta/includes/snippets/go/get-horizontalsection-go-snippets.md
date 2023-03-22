@@ -7,14 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.SiteItemPageItemCanvasLayoutHorizontalSectionItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","expand=columns"},
-}
-configuration := &graphconfig.SiteItemPageItemCanvasLayoutHorizontalSectionItemRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").CanvasLayout().HorizontalSectionsById("horizontalSection-id").Get(context.Background(), configuration)
+result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").CanvasLayout().HorizontalSectionsById("horizontalSection-id").Get(context.Background(), nil)
 
 
 ```
