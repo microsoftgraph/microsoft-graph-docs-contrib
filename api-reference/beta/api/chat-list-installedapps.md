@@ -27,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat*, TeamsAppInstallation.ReadWriteAndConsentForChat* |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Application | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All*, TeamsAppInstallation.ReadWriteAndConsentForChat.All* |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -338,6 +338,71 @@ Content-type: application/json
     ]
 }
 ```
+### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified chat
+
+In the following example, if the teamsAppInstallations for a specified chat has resource specific permissions [teamsAppResourceSpecificPermission](../resources/teamsAppResourceSpecificPermission.md) consented for it, then the set of consented permissions [consentedPermissionSet](../resources/teamsapppermissionset.md) can be fetched using the select query.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2/installedApps?$select=consentedPermissionSet,id
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/chats('19%3A5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2')/installedApps(consentedPermissionSet,id)",
+    "value": [
+        {
+            "id": "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyM0ZTVhNmMzYy1jOTU5LTRiY2EtOGRiNy0wMGRiM2E0ODdjZTE=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "ChatMessage.Read.Chat",
+                        "permissionType": "application"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyMyYjUyNGUyOC05NWNlLTRjOWItOTc3My00YTViZDZlYzE3NzA=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "OnlineMeetingIncomingAudio.Detect.Chat",
+                        "permissionType": "delegated"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
 
 ## See also
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

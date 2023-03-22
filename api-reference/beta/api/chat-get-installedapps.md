@@ -47,9 +47,11 @@ GET /chats/{chat-id}/installedApps/{app-installation-id}
 
 If successful, this method returns a `200 OK` and a [teamsApp](../resources/teamsapp.md) object in the body.
 
-## Example
+## Examples
 
-### Request
+### Example 1 : Get the app installed in the specified chat
+
+#### Request
 
 The following example gets an app installed in the specified chat.
 
@@ -91,7 +93,7 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -109,6 +111,54 @@ Content-type: application/json
     "id": "MTk6ZDY1NzEzYmM0OThjNGE0MjhjNzFlZjkzNTNlNmNlMjBAdGhyZWFkLnYyIyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc="
 }
 ```
+### Example 4: Get the set of resource specific permissions consented for the app installed in the specified chat
+
+In the following example, if the teamsAppInstallation for a specified chat has resource specific permissions [teamsAppResourceSpecificPermission](../resources/teamsAppResourceSpecificPermission.md) consented for it, then the set of consented permissions [consentedPermissionSet](../resources/teamsapppermissionset.md) can be fetched using the select query.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_installedApps_in_chat_select_consentedPermissionSet",
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2/installedApps/MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyMyYjUyNGUyOC05NWNlLTRjOWItOTc3My00YTViZDZlYzE3NzA=?$select=consentedPermissionSet,id
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_installedApps_in_chat_select_consentedPermissionSet",
+  "truncated": true,
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/chats('19%3A5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2')/installedApps(consentedPermissionSet,id)/$entity",
+    "id": "MTk6NWJkODZlYzdmNmIyNDdkM2I5ZTUxOWIwYmZlZjVkMDNAdGhyZWFkLnYyIyMyYjUyNGUyOC05NWNlLTRjOWItOTc3My00YTViZDZlYzE3NzA=",
+    "consentedPermissionSet": {
+        "resourceSpecificPermissions": [
+            {
+                "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+                "permissionType": "delegated"
+            },
+            {
+                "permissionValue": "OnlineMeetingIncomingAudio.Detect.Chat",
+                "permissionType": "delegated"
+            }
+        ]
+    }
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

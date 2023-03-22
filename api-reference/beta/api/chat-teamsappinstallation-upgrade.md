@@ -17,7 +17,6 @@ Upgrade an [app installation](../resources/teamsappinstallation.md) within a [ch
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
-> - Currently, this operation does not support upgrade of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## Permissions
 
@@ -25,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteAndConsentSelfForChat*, TeamsAppInstallation.ReadWriteAndConsentForChat* |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Application | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All*, TeamsAppInstallation.ReadWriteAndConsentForChat.All* |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -37,14 +36,23 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 ```
+## Request body
+
+Following table shows additional parameters that can be used with the upgrade action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Upgrade the teams app installed in chat.
+
+#### Request
 
 The following example upgrades an app installed in a chat.
 
@@ -85,13 +93,55 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions.
+
+#### Request
+
+The following example upgrades an app installed in a chat.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "upgrade_installedApps_in_chat",
+  "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2", "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=/upgrade
+Content-Type: application/json
+
+{
+  "consentedPermissionSet": {
+      "resourceSpecificPermissions": [
+      {
+        "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+        "permissionType": "Delegated"
+      },
+      {
+        "permissionValue": "ChatMember.Read.Chat",
+        "permissionType": "Application"
+      }]
+    }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
 
 ```http
 HTTP/1.1 204 No Content

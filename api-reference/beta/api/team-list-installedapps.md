@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
@@ -342,6 +342,72 @@ Content-type: application/json
          }
       }
    ]
+}
+```
+### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified team
+
+In the following example, if the teamsAppInstallations for a specified team has resource specific permissions [teamsAppResourceSpecificPermission](../resources/teamsAppResourceSpecificPermission.md) consented for it, then the set of consented permissions [consentedPermissionSet](../resources/teamsapppermissionset.md) can be fetched using the select query.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/teams/7eeb5a95-f602-4861-ab67-49714fa5a020/installedApps?$select=consentedPermissionSet,id
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "list_installed_apps_in_team_select_consentedPermissionSet",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/teams('7eeb5a95-f602-4861-ab67-49714fa5a020')/installedApps(consentedPermissionSet,id)",
+    "@odata.count": 70,
+    "value": [
+        {
+            "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=",
+            "consentedPermissionSet": null
+        },
+        {
+            "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "OnlineMeeting.ReadBasic.Chat",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "ChannelMeeting.ReadBasic.Group",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "MeetingStage.Write.Chat",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "ChannelMeetingStage.Write.Group",
+                        "permissionType": "delegated"
+                    }
+                ]
+            }
+        },
+    ]
 }
 ```
 
