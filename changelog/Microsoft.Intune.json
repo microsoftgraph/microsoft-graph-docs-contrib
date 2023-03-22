@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppX",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-windowsAppX?view=graph-rest-1.0) resource",
+          "Target": "windowsAppX"
+        }
+      ],
+      "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-22T02:24:40.9164229Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
           "ApiChange": "Enumeration",
           "ChangedApiName": "certificateStatus",
@@ -1387,7 +1405,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",          
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         }
       ],
