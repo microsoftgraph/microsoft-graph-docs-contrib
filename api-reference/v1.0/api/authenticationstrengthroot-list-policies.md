@@ -49,14 +49,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: Get all authentication strength policies
 
+#### Request
+
+The following is an example of a request.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies
 ```
-### Response
+
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -141,3 +144,69 @@ Content-Type: application/json
 }
 ```
 
+
+### Example 2: Get policies that include specific authentication method modes
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationstrengthpolicy_filter_allowedCombinations"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.authenticationStrengthPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationStrengthPolicies",
+    "value": [
+        {
+            "id": "00000000-0000-0000-0000-000000000002",
+            "createdDateTime": "2021-12-01T00:00:00Z",
+            "modifiedDateTime": "2021-12-01T00:00:00Z",
+            "displayName": "Multifactor authentication",
+            "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+            "policyType": "builtIn",
+            "requirementsSatisfied": "mfa",
+            "allowedCombinations": [
+                "windowsHelloForBusiness",
+                "fido2",
+                "x509CertificateMultiFactor",
+                "deviceBasedPush",
+                "temporaryAccessPassOneTime",
+                "temporaryAccessPassMultiUse",
+                "password,microsoftAuthenticatorPush",
+                "password,softwareOath",
+                "password,hardwareOath",
+                "password,sms",
+                "password,voice",
+                "federatedMultiFactor",
+                "microsoftAuthenticatorPush,federatedSingleFactor",
+                "softwareOath,federatedSingleFactor",
+                "hardwareOath,federatedSingleFactor",
+                "sms,federatedSingleFactor",
+                "voice,federatedSingleFactor"
+            ],
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
+            "combinationConfigurations": []
+        }
+    ]
+}
+```

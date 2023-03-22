@@ -1,5 +1,5 @@
 ---
-title: "authenticationStrengthPolicy: findByMethodMode"
+title: "authenticationStrengthPolicy: findByMethodMode (deprecated)"
 description: "Get authentication strength policies that include the specified authentication method modes."
 author: "InbarckMS"
 ms.localizationpriority: medium
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
 > [!NOTE]
-> The `findByMethodMode` function is only available in `/beta` and will not be available in `/v1.0`. Use the following syntax instead.
+> The `findByMethodMode` function is deprecated and will be retired on March 31, 2023. Use the following syntax instead.
 >
 > `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')`
 

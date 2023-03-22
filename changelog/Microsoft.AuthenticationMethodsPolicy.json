@@ -465,16 +465,42 @@
           "ApiChange": "Method",
           "ChangedApiName": "updateAllowedCombinations",
           "ChangeType": "Addition",
-          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+          "Description": "Added the [updateAllowedCombinations](https://learn.microsoft.com/en-us/graph/api/authenticationstrengthpolicy-updateallowedcombinations.md?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
           "Target": "authenticationStrengthPolicy"
         }
       ],
       "Id": "04f2aadc-7c54-414e-bc3a-d70d78ac4146",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-03-21T18:00:00.5046382Z",
+      "CreatedDateTime": "2023-03-21T00:00:00.7593978Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationStrengths",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **authenticationStrengths** relationship of the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessRoot?view=graph-rest-beta) resource. See the **authenticationStrength** relationship instead.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+          "ApiChange": "Method",
+          "ChangedApiName": "authenticationStrengths",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **findByMethodMode** function of the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-beta) resource. To retrieve authentication strength policies that include specified authentication method modes, use the following syntax: `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')` instead.",
+          "Target": "authenticationStrengthPolicy"
+        }
+      ],
+      "Id": "66342c44-4bd8-4324-b5f1-5002171a8e51",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-22T00:00:00.7593978Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
   ]
 }

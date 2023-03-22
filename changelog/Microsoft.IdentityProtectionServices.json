@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-1.0) resource.",
           "Target": "riskyServicePrincipal"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "dismiss",
           "ChangeType": "Addition",
-          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyServicePrincipal?view=graph-rest-1.0) resource.",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-1.0) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-1.0) resource.",
           "Target": "riskyServicePrincipal"
         }
       ],
@@ -450,7 +450,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "confirmCompromised",
 				"ChangeType": "Addition",
-				"Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta) resource.",
 				"Target": "riskyServicePrincipal"
 			  },
 			  {
@@ -458,7 +458,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "dismiss",
 				"ChangeType": "Addition",
-				"Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta) resource.",
 				"Target": "riskyServicePrincipal"
 			  },
 			  {
@@ -913,7 +913,7 @@
 				"ApiChange": "Method",
 				"ChangedApiName": "usage",
 				"ChangeType": "Addition",
-				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+				"Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy-usage?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
 				"Target": "authenticationStrengthPolicy"
 			  }
 			],
