@@ -470,7 +470,7 @@ Content-Type: application/json
         "allowedRequestors": []
     },
     "accessReviewSettings": null,
-    "verifiableCredentialSettings": {}
+    "verifiableCredentialSettings": null
 }
 ```
 
