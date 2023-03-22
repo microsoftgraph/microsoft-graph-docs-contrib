@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

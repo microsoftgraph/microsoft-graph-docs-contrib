@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationMethodsPolicy"
 description: "Read the properties and relationships of an authenticationMethodsPolicy object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -93,8 +93,6 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 
 ---
 
-
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -157,7 +155,40 @@ Content-Type: application/json
                     "targetType": "group",
                     "id": "all_users",
                     "isRegistrationRequired": false,
-                    "authenticationMode": "any"
+                    "authenticationMode": "any",
+                    "outlookMobileAllowedState": "default",
+                    "displayAppInformationRequiredState": "default",
+                    "numberMatchingRequiredState": "default"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+            "id": "Sms",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "isUsableForSignIn": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+            "id": "TemporaryAccessPass",
+            "state": "disabled",
+            "defaultLifetimeInMinutes": 60,
+            "defaultLength": 8,
+            "minimumLifetimeInMinutes": 60,
+            "maximumLifetimeInMinutes": 480,
+            "isUsableOnce": false,
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
                 }
             ]
         },

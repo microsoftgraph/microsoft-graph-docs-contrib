@@ -14,6 +14,7 @@ $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
 $queryParameters = new GroupsRequestBuilderGetQueryParameters();
 $queryParameters->select = ["id","assignedLicenses"];
 $queryParameters->filter = "assignedLicenses/any()";
+$queryParameters->expand = ["members($select=id,displayName)"];
 
 $requestConfiguration->queryParameters = $queryParameters;
 

@@ -24,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
 
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
+
 ## HTTP Request
 
 `{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in the Azure portal.
@@ -97,7 +99,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of a response.

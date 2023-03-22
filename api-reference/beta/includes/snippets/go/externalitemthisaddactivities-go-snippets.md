@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAddActivitiesPostRequestBody()
 
@@ -22,7 +22,7 @@ activities := []graphmodels.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").AddActivities().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").ExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

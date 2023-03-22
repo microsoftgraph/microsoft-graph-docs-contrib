@@ -46,9 +46,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 
 ## JSON representation
 

@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ---
 
-
 ### Response
 
 The following is an example of a response with all related activity statistics for a user. This response only shows the first day of a week's activities to shorten it for readability.

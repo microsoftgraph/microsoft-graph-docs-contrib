@@ -48,10 +48,10 @@ You can specify the following properties when you create a **learningProvider**.
 |:---|:---|:---|
 |displayName|String|The display name that appears in Viva Learning. Required.|
 |loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
-|longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-|longLogoWebUrlForLightTheme|String|The long logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
-|squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-|squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode, which needs to be a publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
+|squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
+|squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 
 
 ## Response
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST /employeeExperience/learningProviders 
+POST https://graph.microsoft.com/beta/employeeExperience/learningProviders 
 Content-Type: application/json
 
 {
@@ -104,7 +104,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

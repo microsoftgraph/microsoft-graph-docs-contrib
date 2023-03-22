@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 ---
 
-
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
