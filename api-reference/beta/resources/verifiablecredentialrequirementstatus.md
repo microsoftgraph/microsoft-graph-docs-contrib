@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-Abstract type representing the verifiable credential requirement status for an access package.
+Abstract type representing the verifiable credential requirement status for an access package. Inherited by [verifiableCredentialRequired](verifiablecredentialrequired.md), [verifiableCredentialRetrieved](verifiablecredentialretrieved.md), [verifiableCredentialVerified](verifiablecredentialverified.md).
 
 ## Properties
 None.
