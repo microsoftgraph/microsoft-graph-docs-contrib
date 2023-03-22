@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/presence
 
 ---
 
-
----
-
-
 #### Response
 
 <!-- {
@@ -156,10 +152,6 @@ GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 #### Response
 
@@ -224,10 +216,6 @@ GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 #### Response
 

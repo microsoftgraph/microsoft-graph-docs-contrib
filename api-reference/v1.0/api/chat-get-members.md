@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:d0f51aeb0e8e43d0befb24be72b09ea7@t
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

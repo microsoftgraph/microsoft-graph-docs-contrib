@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.CloudPCRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"},
 }
-configuration := &graphconfig.CloudPCRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/22aa2acd-
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

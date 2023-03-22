@@ -2,7 +2,7 @@
 title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -197,7 +196,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

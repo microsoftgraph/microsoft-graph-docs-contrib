@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"]
-	.EndGracePeriod()
-	.Request()
-	.PostAsync();
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"].EndGracePeriod.PostAsync();
+
 
 ```

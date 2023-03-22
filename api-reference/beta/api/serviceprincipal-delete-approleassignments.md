@@ -95,7 +95,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

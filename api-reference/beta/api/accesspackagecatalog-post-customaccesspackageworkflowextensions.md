@@ -1,7 +1,7 @@
 ---
 title: "Create customAccessPackageWorkflowExtensions"
 description: "Create a new customAccessPackageWorkflowExtension object."
-author: "currenmehta"
+author: "currenmehta-zz"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [customAc
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_customaccesspackageworkflowextension_from_"
+  "name": "create_customaccesspackageworkflowextension_"
 }
 -->
 ``` http
@@ -112,8 +112,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

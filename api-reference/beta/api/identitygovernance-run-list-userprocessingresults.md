@@ -1,5 +1,5 @@
 ---
-title: "List userProcessingResults (for a run of a lifecycle workflow)"
+title: "List userProcessingResults"
 description: "List user processing results of a workflow run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List userProcessingResults (for a run of a lifecycle workflow)
+# List userProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 ---
 
-
 #### Response
 
 The following is an example of the response
@@ -196,7 +195,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

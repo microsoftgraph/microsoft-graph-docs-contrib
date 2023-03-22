@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizati
 
 ---
 
-
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -105,6 +103,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
     "enableMEMAutoEnroll": false,
+    "enableSingleSignOn": true,
     "id": "8660bf17-bf17-8660-17bf-608617bfffff",
     "osVersion": "windows11",
     "userAccountType": "standardUser",

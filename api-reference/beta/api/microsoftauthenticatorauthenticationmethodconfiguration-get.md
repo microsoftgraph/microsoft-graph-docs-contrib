@@ -91,8 +91,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -121,6 +119,17 @@ Content-Type: application/json
     "excludeTargets": [],
     "isSoftwareOathEnabled": true,
     "featureSettings": {
+        "companionAppAllowedState" : {
+            "state": "enabled",
+            "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "S4B-695S-0OP1-BC52-F72P6EBQG6CE"
+            }
+        },
         "numberMatchingRequiredState" : {
             "state": "enabled",
               "includeTarget": {

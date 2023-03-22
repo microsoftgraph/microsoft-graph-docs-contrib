@@ -36,10 +36,12 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|customSettings|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service|
+|customSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|settings|[deviceManagementConfigurationSetting](../resources/intune-mam-devicemanagementconfigurationsetting.md) collection|List of settings contained in this App Configuration policy|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

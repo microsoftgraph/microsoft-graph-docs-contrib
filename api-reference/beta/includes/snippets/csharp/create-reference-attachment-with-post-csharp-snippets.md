@@ -4,31 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var post = new Post
+var requestBody = new Microsoft.Graph.Beta.Groups.Item.Threads.Item.Reply.ReplyPostRequestBody
 {
-	Body = new ItemBody
+	Post = new Post
 	{
-		ContentType = BodyType.Text,
-		Content = "I attached a reference to a file on OneDrive."
-	},
-	Attachments = new PostAttachmentsCollectionPage()
-	{
-		new ReferenceAttachment
+		Body = new ItemBody
 		{
-			Name = "Personal pictures",
-			SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-			ProviderType = ReferenceAttachmentProvider.OneDriveConsumer,
-			Permission = ReferenceAttachmentPermission.Edit,
-			IsFolder = true
-		}
-	}
+			ContentType = BodyType.Text,
+			Content = "I attached a reference to a file on OneDrive.",
+		},
+		Attachments = new List<Attachment>
+		{
+			new Attachment
+			{
+				OdataType = "#microsoft.graph.referenceAttachment",
+				Name = "Personal pictures",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"sourceUrl" , "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+					},
+					{
+						"providerType" , "oneDriveConsumer"
+					},
+					{
+						"permission" , "Edit"
+					},
+					{
+						"isFolder" , "True"
+					},
+				},
+			},
+		},
+	},
 };
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Reply.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"]
-	.Reply(post)
-	.Request()
-	.PostAsync();
 
 ```

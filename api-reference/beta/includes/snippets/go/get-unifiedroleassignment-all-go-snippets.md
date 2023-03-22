@@ -5,20 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
 
 requestCount := true
 requestFilter := "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516'"
 
-requestParameters := &graphconfig.TransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.RoleManagementDirectoryTransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.RoleManagementDirectoryTransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
