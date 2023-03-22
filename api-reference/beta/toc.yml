@@ -378,6 +378,8 @@ items:
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Get shift work access state
+          href: api/cloudpc-getshiftworkcloudpcaccessstate.md
         - name: Reboot
           href: api/cloudpc-reboot.md
         - name: Rename
@@ -10626,6 +10628,8 @@ items:
             href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Get shift work access state
+            href: api/cloudpc-getshiftworkcloudpcaccessstate.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
