@@ -37,7 +37,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -50,7 +50,7 @@ To review *only inactive users* assigned to the group:
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -64,7 +64,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
+    "query": "/groups/{groupId}/transitiveMembers/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -286,7 +286,7 @@ In this example, the access review scope is all users who are members of a team,
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+            "query": "/groups/{groupId}/transitiveMembers",
             "queryType": "MicrosoftGraph",
             "queryRoot": null
         },
