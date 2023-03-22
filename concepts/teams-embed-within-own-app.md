@@ -295,6 +295,11 @@ We recommend that your app monitors to the [chatMessage.policyViolation.dlpActio
 
 Some messages are [system messages](/graph/system-messages). For example, the following system message shows that a new member joined the chat.
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.chatMessage"
+}-->
 ```json
 {
   "id": "1616883610266",
@@ -476,6 +481,11 @@ Content-type: application/json
 ```
 ### Decrypted content
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.chatMessage"
+}-->
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/$metadata#chats('19%3Ab1234aaa12345a123aa12aa12aaaa1a9%40thread.v2')/messages/$entity",
