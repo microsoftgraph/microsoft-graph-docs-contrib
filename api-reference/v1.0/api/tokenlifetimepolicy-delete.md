@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}
+DELETE https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4
 ```
 
 # [C#](#tab/csharp)
@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -98,8 +98,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
 
 ---
 
-
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

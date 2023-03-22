@@ -50,8 +50,8 @@ The request should be a JSON object with the following properties.
 | **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
 | **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
+| **retainInheritedPermissions** |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
-
 
 ### Link types
 
@@ -85,6 +85,7 @@ The response will be `201 Created` if a new sharing link is created for the item
 
 The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 ### Request
 
@@ -102,7 +103,8 @@ Content-type: application/json
 {
   "type": "view",
   "password": "ThisIsMyPrivatePassword",
-  "scope": "anonymous"
+  "scope": "anonymous",
+  "retainInheritedPermissions": false
 }
 ```
 

@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

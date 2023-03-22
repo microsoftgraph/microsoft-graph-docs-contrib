@@ -4,30 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationAssignment = new EducationAssignment
+var requestBody = new EducationAssignment
 {
 	DueDateTime = DateTimeOffset.Parse("2022-09-16T00:00:00Z"),
 	DisplayName = "Reading test 09.14",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Read chapter 4"
+		Content = "Read chapter 4",
 	},
-	Grading = new EducationAssignmentPointsGradeType
+	Grading = new EducationAssignmentGradeType
 	{
-		MaxPoints = 50f
+		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"maxPoints" , 50
+			},
+		},
 	},
-	AssignTo = new EducationAssignmentClassRecipient
+	AssignTo = new EducationAssignmentRecipient
 	{
+		OdataType = "#microsoft.graph.educationAssignmentClassRecipient",
 	},
 	Status = EducationAssignmentStatus.Draft,
-	AllowStudentsToAddResourcesToSubmission = true
+	AllowStudentsToAddResourcesToSubmission = true,
 };
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments.PostAsync(requestBody);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments
-	.Request()
-	.AddAsync(educationAssignment);
 
 ```

@@ -2,6 +2,8 @@
 title: "Review access to your security groups using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to review access to a security group in your Azure AD tenant and test API calls before you automate them into scripts or apps."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
@@ -82,7 +84,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -144,7 +145,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-creategroup-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -168,7 +169,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -283,7 +283,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -385,7 +384,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ---
 
-
 ### Response
 
 In this response, the **status** of the instance is `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be `Completed`.
@@ -465,7 +463,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ---
 
-
 ### Response
 
 The following response shows that the two members of the **Building security** group were notified of their pending review.
@@ -543,7 +540,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -819,7 +815,6 @@ DELETE https://graph.microsoft.com/beta/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f89
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -871,7 +866,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -921,7 +915,6 @@ DELETE https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7e
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

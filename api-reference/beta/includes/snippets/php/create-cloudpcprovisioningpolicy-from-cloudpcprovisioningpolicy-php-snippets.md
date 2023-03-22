@@ -27,7 +27,7 @@ $domainJoinConfiguration->setAdditionalData($additionalData);
 
 
 $requestBody->setDomainJoinConfiguration($domainJoinConfiguration);
-$requestBody->setId('1d164206-bf41-4fd2-8424-a3192d39ffff');
+$requestBody->setEnableSingleSignOn(true);
 
 $requestBody->setImageDisplayName('Windows-10 19h1-evd');
 
@@ -42,6 +42,8 @@ $windowsSettings->setLanguage('en-US');
 
 
 $requestBody->setWindowsSettings($windowsSettings);
+$requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
+
 
 
 $requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody);

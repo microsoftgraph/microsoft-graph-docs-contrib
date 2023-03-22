@@ -1,6 +1,6 @@
 ---
 title: "plannerBucket resource type"
-description: "Represents a bucket for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
+description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -29,7 +29,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |:---------------|:--------|:----------|
 |id|String| Read-only. ID of the bucket. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |name|String|Name of the bucket.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
 
 ## Relationships

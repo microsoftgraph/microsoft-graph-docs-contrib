@@ -48,13 +48,12 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|outputName|String| Name of the export. Required. |
-|description|String| Description of the export |
-|azureBlobContainer|String| when you export to your own Azure storage account, this is the container URL. |
-|azureBlobToken|String| when you export to your own Azure storage account, SAS token for the container URL. |
-|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|description|String| Description of the export. |
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo` (deprecated), `tags`. The `fileInfo` member is deprecated and will stop returning data on April 30th, 2023. Going forward, the summary and load file are always included.|
 |exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
-
+|outputName|String| Name of the export. Required. |
+|azureBlobContainer (deprecated) |String| When you export to your own Azure storage account, this is the container URL. The **azureBlobContainer** property is deprecated and will stop returning data on April 30th, 2023. |
+|azureBlobToken (deprecated) |String| When you export to your own Azure storage account, SAS token for the container URL. The **azureBlobToken** property is deprecated and will stop returning data on April 30th, 2023. |
 
 ## Response
 
@@ -99,17 +98,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetquerythisexport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewsetquerythisexport-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoveryreviewsetquerythisexport-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

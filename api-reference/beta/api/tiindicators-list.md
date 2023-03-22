@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/security/tiIndicators
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

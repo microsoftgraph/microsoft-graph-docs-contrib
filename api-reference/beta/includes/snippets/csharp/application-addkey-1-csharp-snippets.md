@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var keyCredential = new KeyCredential
+var requestBody = new Microsoft.Graph.Beta.Applications.Item.AddKey.AddKeyPostRequestBody
 {
-	Type = "AsymmetricX509Cert",
-	Usage = "Verify",
-	Key = Convert.FromBase64String("MIIDYDCCAki...")
+	KeyCredential = new KeyCredential
+	{
+		Type = "AsymmetricX509Cert",
+		Usage = "Verify",
+		Key = Convert.FromBase64String("MIIDYDCCAki..."),
+	},
+	PasswordCredential = null,
+	Proof = "eyJ0eXAiOiJ...",
 };
+var result = await graphClient.Applications["{application-id}"].AddKey.PostAsync(requestBody);
 
-PasswordCredential passwordCredential = null;
-
-var proof = "eyJ0eXAiOiJ...";
-
-await graphClient.Applications["{application-id}"]
-	.AddKey(keyCredential,proof,passwordCredential)
-	.Request()
-	.PostAsync();
 
 ```

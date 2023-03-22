@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contact = new Contact
+var requestBody = new Contact
 {
 	ParentFolderId = "parentFolderId-value",
 	Birthday = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	FileAs = "fileAs-value",
 	DisplayName = "displayName-value",
 	GivenName = "givenName-value",
-	Initials = "initials-value"
+	Initials = "initials-value",
 };
+var result = await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts.PostAsync(requestBody);
 
-await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts
-	.Request()
-	.AddAsync(contact);
 
 ```

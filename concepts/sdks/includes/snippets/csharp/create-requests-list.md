@@ -4,12 +4,10 @@
 // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
 
 var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(m => new {
-        m.Subject,
-        m.Sender
-    })
-    .Filter("<filter condition>")
-    .OrderBy("receivedDateTime")
-    .GetAsync();
+    .GetAsync( requestConfig => 
+                {
+                    requestConfig.QueryParameters.Select = new string[] { "subject", "sender"};
+                    requestConfig.QueryParameters.Filter = "<filter condition>";
+                    requestConfig.QueryParameters.Orderby = new string[] { "receivedDateTime" };
+                });
 ```

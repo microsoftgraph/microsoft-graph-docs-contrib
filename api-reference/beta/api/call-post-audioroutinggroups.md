@@ -99,7 +99,6 @@ Content-Length: 233
 
 ---
 
-
 In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
 ##### Response
