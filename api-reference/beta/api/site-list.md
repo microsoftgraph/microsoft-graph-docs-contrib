@@ -215,7 +215,7 @@ Content-type: application/json
 }
 ```
 
-#### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
@@ -224,7 +224,7 @@ Content-type: application/json
 GET /sites/getAllSites
 ```
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
