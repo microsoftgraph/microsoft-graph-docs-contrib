@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Data containing the metadata of the issuing authority, presented credentials and the verified claims.
-Used for the **verifiedCredentialsData** property of [access package assignment request](accessPackageAssignmentRequest.md).
+Used for the **verifiedCredentialsData** property of [access package assignment request](accesspackageassignmentrequest.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |authority|String| The authority ID for the issuer. |
-|type|String Collection| The list of credential types provided by the issuer. |
+|type|String collection| The list of credential types provided by the issuer. |
 |claims|[verifiedCredentialClaims](verifiedcredentialclaims.md)| Key value pair of claims retrieved from the credential that was provided and verified. |
 
 ## Relationships

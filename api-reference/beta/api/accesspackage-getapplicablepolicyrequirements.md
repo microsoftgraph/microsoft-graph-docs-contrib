@@ -300,7 +300,7 @@ Content-Type: application/json
             "existingAnswers": [],
             "verifiableCredentialRequirementStatus": {
                 "@odata.type": "#microsoft.graph.verifiableCredentialRetrieved",
-                "expiryDateTime": "2022-05-10T23:32:47.8232759Z",
+                "expiryDateTime": "2022-05-10T23:32:47.8232759Z"
             }
         }
     ]

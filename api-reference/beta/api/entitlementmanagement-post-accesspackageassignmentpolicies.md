@@ -744,7 +744,7 @@ The following example shows how to create an access package policy with a verifi
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_verifiablecredentials"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
 {

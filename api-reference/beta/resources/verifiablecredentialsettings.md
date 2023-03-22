@@ -17,12 +17,12 @@ Settings containing verifiable credentials types that are required for a present
 
 Used for the **verifiableCredentialSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md).
 
-Subtypes include [verifiableCredentialType](verifiableCredentialType.md).
+Subtypes include [verifiableCredentialType](verifiablecredentialtype.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|credentialTypes|[verifiableCredentialType](verifiableCredentialType.md) collection| List of verifiable credential type references.|
+|credentialTypes|[verifiableCredentialType](verifiablecredentialtype.md) collection| List of verifiable credential type references.|
 
 ## Relationships
 None.
