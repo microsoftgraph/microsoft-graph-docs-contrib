@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"User-Agent": "ContosoLOBApp/1.0",
-}
-configuration := &graphconfig.ExtractContentLabelRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("User-Agent", "ContosoLOBApp/1.0")
+
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.extractContentLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewExtractContentLabelPostRequestBody()
@@ -74,7 +74,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().ExtractContentLabel().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

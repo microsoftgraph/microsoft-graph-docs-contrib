@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

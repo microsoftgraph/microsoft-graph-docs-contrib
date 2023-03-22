@@ -74,7 +74,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -190,7 +189,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -378,8 +376,8 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user's Teams message or the message the user is included in.
-- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage.md). You can use the [Teams API](/graph/api/chatmessage-get.md) to retrieve more details about any single message.
-- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer.md) type contains the number of results on the page, not the total number of matching results.
+- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
+- For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for messages.
 - You can't use this API with other entity types at this time.
 

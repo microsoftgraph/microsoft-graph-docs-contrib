@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -29,7 +29,3 @@ Describes which technology this setting can be deployed with
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
 |unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-

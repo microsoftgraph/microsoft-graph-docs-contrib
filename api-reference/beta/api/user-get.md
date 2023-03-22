@@ -1,5 +1,5 @@
 ---
-title: "Get a user"
+title: "Get user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Get a user
+# Get user
 
 Namespace: microsoft.graph
 
@@ -188,7 +188,6 @@ GET https://graph.microsoft.com/beta/users/{id}
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -258,7 +257,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -284,43 +282,43 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get the custom security attribute assignments of the specified user
+### Example 4: Get the custom security attribute assignments for a user
 
-The following example gets the custom security attributes of the specified user.
+The following example shows how to get the custom security attribute assignments for a user.
 
 Attribute #1
 
-+ Attribute set: `Engineering`
-+ Attribute: `Project`
-+ Attribute data type: Collection of Strings
-+ Attribute value: `["Baker","Cascade"]`
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `["Baker","Cascade"]`
 
 Attribute #2
 
-+ Attribute set: `Engineering`
-+ Attribute: `CostCenter`
-+ Attribute data type: Collection of Integers
-+ Attribute value: `[1001]`
+- Attribute set: `Engineering`
+- Attribute: `CostCenter`
+- Attribute data type: Collection of Integers
+- Attribute value: `[1001]`
 
 Attribute #3
 
-+ Attribute set: `Engineering`
-+ Attribute: `Certification`
-+ Attribute data type: Boolean
-+ Attribute value: `true`
+- Attribute set: `Engineering`
+- Attribute: `Certification`
+- Attribute data type: Boolean
+- Attribute value: `true`
 
 Attribute #4
 
-+ Attribute set: `Marketing`
-+ Attribute: `Level`
-+ Attribute data type: String
-+ Attribute value: `"Public"`
+- Attribute set: `Marketing`
+- Attribute: `EmployeeId`
+- Attribute data type: String
+- Attribute value: `"QN26904"`
 
 To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
+For more examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
 #### Request
-
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -357,8 +355,6 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 
 ---
 
-
-
 #### Response
 
 <!-- {
@@ -373,6 +369,10 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
     "customSecurityAttributes": {
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "EmployeeId": "QN26904"
+        },
         "Engineering": {
             "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
             "Project@odata.type": "#Collection(String)",
@@ -385,10 +385,6 @@ Content-type: application/json
                 1001
             ],
             "Certification": true
-        },
-        "Marketing": {
-            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
-            "Level": "Public"
         }
     }
 }
@@ -406,7 +402,83 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get the value of a schema extension for a user
+### Example 5: Use `$filter` to retrieve specific users based on a property value
+
+This example shows how to use the `$filter` query parameter along with the `endswith` clause to retrieve a user with a specific value in the **mail** attribute. This request filters and returns all users with a mail address ending with contoso.com.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_filter"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "name": "get_user_filter"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
+    "@odata.count": 1350,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@contoso.com')&ConsistencyLevel=eventual&$skiptoken=m~AQAnOzEyN2NjN2I3NTQzYzQ0YzA4NjlhYjU5MzUzYmNhNGI2OzswOzA7",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Phantom Space",
+            "givenName": "Space",
+            "jobTitle": null,
+            "mail": "Space.Phantom@cloudezzy.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Phantom",
+            "userPrincipalName": "Space.Phantom@contoso.com",
+            "id": "00111916-c5c5-4dd2-9e31-aab96af7511e"
+        }
+    ]
+}
+```
+
+### Example 6: Get the value of a schema extension for a user
 
 In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 
@@ -448,7 +520,6 @@ GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -470,9 +541,6 @@ Content-type: application/json
     }
 }
 ```
-
-
-
 
 ## See also
 

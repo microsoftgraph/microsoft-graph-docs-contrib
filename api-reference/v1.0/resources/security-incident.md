@@ -29,20 +29,21 @@ Because piecing the individual alerts together to gain insight into an attack ca
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier to represent the incident.|
-|displayName|String|The incident name.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
+|customTags|String collection|Array of custom tags associated with an incident.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|tenantId|String|The Azure Active Directory tenant in which the alert was created.|
+|displayName|String|The incident name.|
+|id|String|Unique identifier to represent the incident.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
-|customTags|String collection|Array of custom tags associated with an incident.|
+|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
+|tenantId|String|The Azure Active Directory tenant in which the alert was created.|
+
 
 
 ### incidentStatus values 
@@ -51,6 +52,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 | :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
 | active			        | The incident is in active state.                                                                                      |
 | resolved            | The incident is in resolved state.                                                                                    |
+| inProgress          | The incident is in mitigation progress.                                                                               |
 | redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
 

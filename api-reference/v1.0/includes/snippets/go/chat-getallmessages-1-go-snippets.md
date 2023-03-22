@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestTop := int32(2)
 
-requestParameters := &graphconfig.GetAllMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetQueryParameters{
 	Top: &requestTop,
 }
-configuration := &graphconfig.GetAllMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemChatsGetAllMessages()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

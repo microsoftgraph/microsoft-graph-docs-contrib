@@ -1,7 +1,7 @@
 ---
 title: "microsoftTunnelConfiguration resource type"
 description: "Entity that represents a collection of Microsoft Tunnel settings"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -98,8 +98,3 @@ Here is a JSON representation of the resource.
   "disableUdpConnections": true
 }
 ```
-
-
-
-
-

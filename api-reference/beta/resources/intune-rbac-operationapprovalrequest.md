@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalRequest resource type"
 description: "The OperationApprovalRequest Entity"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -107,8 +107,3 @@ Here is a JSON representation of the resource.
   "operationApprovalPolicies": "String"
 }
 ```
-
-
-
-
-

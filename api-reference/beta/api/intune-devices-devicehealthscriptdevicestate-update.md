@@ -1,7 +1,7 @@
 ---
 title: "Update deviceHealthScriptDeviceState"
 description: "Update the properties of a deviceHealthScriptDeviceState object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |remediationScriptError|String|Error output of the remediation script|
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
-|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`, `unknownFutureValue`.|
 |assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 
@@ -118,8 +118,3 @@ Content-Length: 880
   ]
 }
 ```
-
-
-
-
-

@@ -55,6 +55,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
+| id | string | The unique identifier of the team. The group has the same ID as the team. This property is read-only, and is inherited from the base entity type. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
@@ -99,6 +100,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+| templateDefinition | [teamtemplatedefinition](teamtemplatedefinition.md)| Generic representation of a team template definition for a team with a specific structure and configuration.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
 |tags|[teamworkTag](../resources/teamworktag.md) collection|The tags associated with the team.|
 

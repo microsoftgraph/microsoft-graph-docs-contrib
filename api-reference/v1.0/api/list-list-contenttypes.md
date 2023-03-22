@@ -85,8 +85,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/contentType
 
 ---
 
-
-
 ### Response
 
 <!-- {

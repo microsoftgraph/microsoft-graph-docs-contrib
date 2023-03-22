@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Prefer": "outlook.body-content-type=\"text\"",
-}
-requestParameters := &graphconfig.MessageRequestBuilderGetQueryParameters{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
+requestParameters := &graphconfig.MeMessageItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","uniqueBody"},
 }
-configuration := &graphconfig.MessageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeMessageItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

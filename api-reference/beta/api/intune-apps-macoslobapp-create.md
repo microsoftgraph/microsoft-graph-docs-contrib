@@ -1,7 +1,7 @@
 ---
 title: "Create macOSLobApp"
 description: "Create a new macOSLobApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [macOSLobApp](../resources/intune-apps-macoslobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -76,7 +76,7 @@ The following table shows the properties that are required when you create the m
 |buildNumber|String|The build number of the package. This should match the package CFBundleShortVersionString of the .pkg file.|
 |versionNumber|String|The version number of the package. This should match the package CFBundleVersion in the packageinfo file.|
 |childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) collection|List of ComplexType macOSLobChildApp objects. Represents the apps expected to be installed by the package.|
-|identityVersion|String|The identity version. This property is being deprecated in 2211(November 2022).|
+|identityVersion|String|The identity version. This property is deprecated starting  in 2211(November 2022).|
 |md5HashChunkSize|Int32|The chunk size for MD5 hash. This is '0' or empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
 |md5Hash|String collection|The MD5 hash codes. This is empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
 |ignoreVersionDetection|Boolean|When TRUE, indicates that the app's version will NOT be used to detect if the app is installed on a device. When FALSE, indicates that the app's version will be used to detect if the app is installed on a device. Set this to true for apps that use a self update feature.|
@@ -233,8 +233,3 @@ Content-Length: 1934
   "installAsManaged": true
 }
 ```
-
-
-
-
-

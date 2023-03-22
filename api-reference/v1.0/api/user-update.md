@@ -18,12 +18,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
+|Application | User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - To update user properties, such as **businessPhones**, **mobilePhone** and **otherMails** for users with more privileged administrator roles, applications need to be assigned the *Directory.AccessAsUser.All* delegated permission and either the Global Admin role or the Privileged Auth Admin role. For more information about who can update sensitive properties or reset passwords, see [Authorization and privileges](/graph/api/resources/users#authorization-and-privileges).
+> - To update sensitive user properties, such as **accountEnabled**, **mobilePhone**, and **otherMails** for users with privilged administrator roles, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 > - Your personal Microsoft account must be tied to an Azure AD tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 > - Updating the **identities** property requires the *User.ManageIdentities.All* permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
@@ -59,9 +59,10 @@ In the request body, supply the values for relevant fields that should be update
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><br> For delegated scenarios, the calling user must have the Global Administrator role and the calling app assigned the _User.Read.All_ and _User-LifeCycleInfo.ReadWrite.All_ delegated permissions. |
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. |
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Cannot be updated to `null`. |
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
@@ -209,7 +210,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -271,7 +271,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -330,6 +329,7 @@ Content-type: application/json
 
 ---
 
+To remove the value of the schema extension from the user object, set the **ext55gb1l09_msLearnCourses** property to `null`.
 
 #### Response
 
@@ -339,17 +339,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
->**Note:** To remove the value of the schema extension from the user object, set the property to `null`. For example:
->
->```http
->PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
->Content-type: application/json
->
->{
->    "ext55gb1l09_msLearnCourses": null
->}
->```
 
 ## See also
 

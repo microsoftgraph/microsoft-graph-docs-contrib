@@ -53,7 +53,7 @@ Content-type: application/json
      "hits": [
       {
        "@odata.type": "#microsoft.graph.searchHit",
-       "hitId": "AAMkADEwODY2NzllLTQ3MmEtNGRlMC05ZTUyLTE4ZDRhYmU1ZGM3NABGAAAAAAA3+iYQBnJnQabRVDelNhnzBwAejhWkAOAxQ6M4c1c9NwfrAAAAAAENAAAejhWkAOAxQ6M4c1c9NwfrAABbUZLJAAA=",
+       "hitId": "a9f59c69-f4a1-42ac-820e-0f35114300f8",
        "rank": 1,
        "resource": {
           "@odata.type": "#microsoft.graph.search.acronym",
@@ -78,7 +78,7 @@ Content-type: application/json
 ## Known issues
 
 - Sorting, aggregation, and pagination are not supported for acronym searches.
-- Combination search with other entity types is not supported.
+- Combination searches with non-answer entity types (for example, driveItem, list) are not supported. 
 
 ## Next steps
 

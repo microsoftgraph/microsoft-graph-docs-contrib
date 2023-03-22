@@ -15,6 +15,8 @@ Retrieve a single [chat](../resources/chat.md) (without its messages).
 
 This method supports federation. To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +66,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_group_chat",
-  "sampleKeys": ["19:d0f51aeb0e8e43d0befb24be72b09ea7@thread.v2"]
+  "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
@@ -95,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -167,7 +168,6 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -206,7 +206,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_chat_withmembers",
-  "sampleKeys": ["19:d0f51aeb0e8e43d0befb24be72b09ea7@thread.v2"]
+  "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
@@ -237,7 +237,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -371,7 +370,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLW
 
 ---
 
-
 #### Response
 The following example shows the response.
 
@@ -417,7 +415,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_meeting_chat",
-  "sampleKeys": ["19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2"]
+  "sampleKeys": ["19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@thread.v2?$expand=lastMessagePreview
@@ -448,7 +446,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:ebe3857aa388434bab0cad9d2e09f4de@t
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.

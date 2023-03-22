@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var itemAddress = new ItemAddress
+var requestBody = new ItemAddress
 {
 	AllowedAudiences = AllowedAudiences.Me,
-	DisplayName = "Secret Hideout"
+	DisplayName = "Secret Hideout",
 };
+var result = await graphClient.Users["{user-id}"].Profile.Addresses["{itemAddress-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Profile.Addresses["{itemAddress-id}"]
-	.Request()
-	.UpdateAsync(itemAddress);
 
 ```
