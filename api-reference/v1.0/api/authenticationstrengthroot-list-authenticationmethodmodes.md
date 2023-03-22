@@ -146,22 +146,22 @@ Content-Type: application/json
     },
     {
         "id" : "x509CertificateSingleFactor",
-        "displayName" : "Certificate-based authentication (single-factor)",
+        "displayName" : "Certificate-based authentication (single factor)",
         "authenticationMethod" : "x509Certificate"
     },
     {
         "id" : "federatedMultiFactor",
-        "displayName" : "Federation (multi-factor)",
+        "displayName" : "Federation (multifactor)",
         "authenticationMethod" : "federation"
     },
     {
         "id" : "federatedSingleFactor",
-        "displayName" : "Federation (single-factor)",
+        "displayName" : "Federation (single factor)",
         "authenticationMethod" : "federation"
     },
     {
         "id": "x509CertificateMultiFactor",
-        "displayName" : "Certificate-based authentication (multi-factor)",
+        "displayName" : "Certificate-based authentication (multifactor)",
         "authenticationMethod" : "x509Certificate"
     }
   ]

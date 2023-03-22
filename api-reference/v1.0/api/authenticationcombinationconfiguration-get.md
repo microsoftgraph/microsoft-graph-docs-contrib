@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get authenticationCombinationConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.
 
 ## Permissions

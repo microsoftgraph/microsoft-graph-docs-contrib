@@ -182,8 +182,8 @@ Content-Type: application/json
       "id": "00000000-0000-0000-0000-000000000004",
       "createdDateTime": "2022-09-30T10:59:01Z",
       "modifiedDateTime": "2022-09-30T10:59:01Z",
-      "displayName": "Phishing-resistant MFA",
-      "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+      "displayName": "Phishing resistant MFA",
+      "description": "Phishing resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
       "policyType": "builtIn",
       "requirementsSatisfied": "mfa",
       "allowedCombinations": [
