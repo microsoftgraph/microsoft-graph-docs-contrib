@@ -39,8 +39,7 @@ Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must c
 
 ### Request
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/chats
@@ -104,8 +103,7 @@ Members within the chat can send messages to each other. The following example s
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages
@@ -117,19 +115,13 @@ Content-type: application/json
   }
 }
 ```
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
-} -->
 ### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
-}
--->
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -180,7 +172,7 @@ To improve the response time for your application, to minimize throttling, and t
 
 Microsoft Graph provides several ways to retrieve chat messages:
 
-- [Get chatMessage in a channel or chat](/graph/api/chatmessage-get) (across all chats): `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
+- [Get all messages from all chats](/graph/api/chats-getallmessages) (across all chats): `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
 - [List messages in a chat](/graph/api/chat-list-messages) (per chat): `GET /chats/{chat-id}/messages`
 
 By using `/getAllMessages`, you can get messages across all chats for a user. This API is designed for backend applications, such as audit and compliance applications, which often get messages across all chats at once. It supports [application](/graph/auth/auth-concepts) permissions only. Also, this is a [metered API](/graph/metered-api-overview).
@@ -196,8 +188,7 @@ Typical interactive messaging apps display only the most recent messages by defa
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
@@ -205,6 +196,12 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -385,8 +382,7 @@ For more details about this example, see [Create subscription](/graph/api/subscr
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -406,6 +402,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -440,7 +441,6 @@ When you create the subscription, make sure that the **includeResourceData** pro
 
 <!-- {
   "blockType": "request",
-  "name": "get_group"
 }-->
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient
@@ -548,8 +548,7 @@ The following example shows how to renew a subscription.
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
@@ -562,6 +561,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -594,8 +598,7 @@ To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_group"
+  "blockType": "request"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
@@ -603,6 +606,11 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
