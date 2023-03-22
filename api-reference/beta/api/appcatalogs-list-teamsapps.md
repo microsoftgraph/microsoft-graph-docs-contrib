@@ -355,7 +355,14 @@ Content-Type: application/json
           "displayName": "Test App",
           "version": "1.0.1",
           "requiredResourceSpecificApplicationPermissions": [],
-          "publishingState": "published"
+          "publishingState": "published",
+          "authorization": 
+          {
+            "requiredPermissionSet": 
+            {
+              "resourceSpecificPermissions": []
+            }
+          }
         }
       ]
     }
@@ -454,6 +461,11 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
+                    "authorization": {
+                        "requiredPermissionSet": {
+                            "resourceSpecificPermissions": []
+                        }
+                    },
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
@@ -486,6 +498,11 @@ Content-Type: application/json
                             "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
                             "displayName": null,
                             "userIdentityType": "aadUser"
+                        }
+                    },
+                    "authorization": {
+                        "requiredPermissionSet": {
+                            "resourceSpecificPermissions": []
                         }
                     },
                     "bot": {
@@ -577,6 +594,91 @@ Content-Type: application/json
     ]
 }
 ```
+### Example 7: List applications with a given ID, and return the resource specific permissions
+
+The following example lists the apps with a given ID and returns resource specific permissions associated with it.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_rsc_permissions"
+}-->
+
+```http
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228c26-a9ae-4702-90e0-79a5246d2f7d'&$expand=appDefinitions
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_rsc_permissions",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions())",
+    "value": [
+        {
+            "id": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
+            "externalId": "a55ec032-36e9-4b60-b604-34b2fe55abf1",
+            "displayName": "teamsDelegatedRscTests",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions",
+            "appDefinitions": [
+                {
+                    "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
+                    "teamsAppId": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
+                    "azureADAppId": "b1da2dc2-06ff-4efd-a499-19c44989578d",
+                    "displayName": "teamsDelegatedRscTests",
+                    "version": "1.0.0",
+                    "requiredResourceSpecificApplicationPermissions": [
+                        "Channel.Create.Group",
+                        "Channel.Delete.Group"
+                    ],
+                    "publishingState": "published",
+                    "shortdescription": "",
+                    "description": "",
+                    "lastModifiedDateTime": null,
+                    "allowedInstallationScopes": "team,groupChat",
+                    "createdBy": null,
+                    "authorization": {
+                        "requiredPermissionSet": {
+                            "resourceSpecificPermissions": [
+                                {
+                                    "permissionValue": "Channel.Create.Group",
+                                    "permissionType": "application"
+                                },
+                                {
+                                    "permissionValue": "Channel.Delete.Group",
+                                    "permissionType": "application"
+                                },
+                                {
+                                    "permissionValue": "ChannelMeeting.ReadBasic.Group",
+                                    "permissionType": "delegated"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+>**Note:** requiredResourceSpecificApplicationPermissions section shows only the application resource specific permissions. resourceSpecificPermissions section contains both the application and delegated resource specific permissions.
 
 
 ## See also
@@ -584,6 +686,7 @@ Content-Type: application/json
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
+- [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 
 
