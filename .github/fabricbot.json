@@ -4229,6 +4229,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - changes requested",
@@ -4333,6 +4339,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - complete",

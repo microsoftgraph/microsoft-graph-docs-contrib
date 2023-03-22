@@ -119,6 +119,7 @@ Content-Type: application/json
             "id": "all_users",
             "isRegistrationRequired": false
         }
-    ]
+    ],
+    "excludeTargets": []
 }
 ```
