@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app with a [accessPackageAssignmentRequestWorkflowExtensions](../resources/accessPackageAssignmentRequestWorkflowExtension.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accessPackageAssignmentWorkflowExtension.md) object. 
 
-Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Inherits from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
 None.
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
 }
 ```
-

@@ -8,7 +8,6 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new CloudPcOnPremisesConnection
 {
-	OdataType = "#microsoft.graph.cloudPcOnPremisesConnection",
 	DisplayName = "test-canary-02",
 	Type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	SubscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
