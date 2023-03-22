@@ -23,6 +23,8 @@ A summary of runs for a specified time period. This summary allows the administr
 |failedTasks|Int32|The number of failed tasks of a workflow.|
 |successfulRuns|Int32|The number of successful workflow runs.|
 |totalRuns|Int32|The total number of runs for a workflow.|
+|totalTasks|Int32|The total number of tasks processed by a workflow.|
+|totalUsers|Int32|The total number of users processed by a workflow.|
 
 ## Relationships
 
@@ -42,6 +44,8 @@ The following is a JSON representation of the resource.
   "failedRuns": "Integer",
   "failedTasks": "Integer",
   "successfulRuns": "Integer",
-  "totalRuns": "Integer"
+  "totalRuns": "Integer",
+  "totalTasks": "Integer",
+  "totalUsers": "Integer"
 }
 ```
