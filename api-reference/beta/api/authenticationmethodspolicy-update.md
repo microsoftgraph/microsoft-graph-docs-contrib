@@ -145,7 +145,6 @@ Content-Type: application/json
   "systemCredentialPreferences": {
     "@odata.type": "#microsoft.graph.systemCredentialPreferences",
     "excludeTargets": [],
-    "id": "systemCredentialPreferences",
     "includeTargets": [
       {
         "id": "all_users",

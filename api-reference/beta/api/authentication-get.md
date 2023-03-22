@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -73,11 +73,21 @@ GET https://graph.microsoft.com/beta/me/authentication
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authentication"
-}
+<!-- "systemCredentialPreferences": {
+        "state": "enabled",
+        "excludeTargets": [
+            {
+                "id": "d1411007-6fcf-4b4c-8d70-1da1857ed33c",
+                "targetType": "group"
+            }
+        ],
+        "includeTargets": [
+            {
+                "id": "all_users",
+                "targetType": "group"
+            }
+        ]
+    }
 -->
 ``` http
 HTTP/1.1 200 OK

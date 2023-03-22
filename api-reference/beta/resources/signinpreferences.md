@@ -1,15 +1,15 @@
 ---
 title: "signInPreferences resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A complex type that defines various settings and preferences related to a user's sign-in experience."
+author: "msft-poulomi"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
 # signInPreferences resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.signInPreferences
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
