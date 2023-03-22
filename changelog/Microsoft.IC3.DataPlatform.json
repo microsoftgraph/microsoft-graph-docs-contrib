@@ -43,7 +43,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "azureADAppId",
                     "ChangeType": "Addition",
-                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta) resource.",
                     "Target": "clientUserAgent"
                 },
                 {
@@ -51,7 +51,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "communicationServiceId",
                     "ChangeType": "Addition",
-                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-beta) resource.",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta) resource.",
                     "Target": "clientUserAgent"
                 }
             ],
@@ -69,7 +69,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "azureADAppId",
                     "ChangeType": "Addition",
-                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Description": "Added the `azureADAppId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0) resource.",
                     "Target": "clientUserAgent"
                 },
                 {
@@ -77,7 +77,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "communicationServiceId",
                     "ChangeType": "Addition",
-                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/clientUserAgent?view=graph-rest-1.0) resource.",
+                    "Description": "Added the `communicationServiceId` property to the [clientUserAgent](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0) resource.",
                     "Target": "clientUserAgent"
                 }
             ],
@@ -139,7 +139,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "directRoutingLogRow",
                     "ChangeType": "Addition",
-                    "Description": "Added the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/directRoutingLogRow) resource type.",
+                    "Description": "Added the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-1.0) resource type.",
                     "Target": "directRoutingLogRow"
                 },
                 {
@@ -147,7 +147,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "pstnCallLogRow",
                     "ChangeType": "Addition",
-                    "Description": "Added the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/pstnCallLogRow) resource type.",
+                    "Description": "Added the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-1.0) resource type.",
                     "Target": "pstnCallLogRow"
                 },
                 {
@@ -155,7 +155,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getDirectRoutingCalls",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getDirectRoutingCalls](https://learn.microsoft.com/en-us/graph/api/getDirectRoutingCalls) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord) resource.",
+                    "Description": "Added the [getDirectRoutingCalls](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-1.0) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) resource.",
                     "Target": "callRecord"
                 },
                 {
@@ -163,7 +163,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getPstnCalls",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getPstnCalls](https://learn.microsoft.com/en-us/graph/api/getPstnCalls) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord) resource.",
+                    "Description": "Added the [getPstnCalls](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-1.0) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) resource.",
                     "Target": "callRecord"
                 }
             ],
@@ -189,7 +189,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "callDurationSource",
                     "ChangeType": "Addition",
-                    "Description": "Added the **callDurationSource** property to [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/pstnCallLogRow?view=graph-rest-beta) resource.",
+                    "Description": "Added the **callDurationSource** property to [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta) resource.",
                     "Target": "pstnCallLogRow"
                 },
                 {
@@ -197,7 +197,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "operator",
                     "ChangeType": "Addition",
-                    "Description": "Added the **operator** property to [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/pstnCallLogRow?view=graph-rest-beta) resource.",
+                    "Description": "Added the **operator** property to [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta) resource.",
                     "Target": "pstnCallLogRow"
                 }
             ],
