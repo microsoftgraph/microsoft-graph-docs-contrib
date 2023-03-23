@@ -1,6 +1,6 @@
 ---
 title: "signInPreferences resource type"
-description: "A complex type that defines various settings and preferences related to a user's sign-in experience."
+description: "Represents settings and preferences for to the sign-in experience of a user."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -9,17 +9,17 @@ doc_type: resourcePageType
 
 # signInPreferences resource type
 
-Namespace: microsoft.graph.signInPreferences
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents settings and preferences for to the sign-in experience of a user.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system is enabled or not.|
+|isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system is enabled.|
 
 ## Relationships
 
