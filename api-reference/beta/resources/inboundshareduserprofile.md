@@ -20,7 +20,7 @@ Represents an Azure AD user from an external Azure AD tenant whose profile data 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get inboundSharedUserProfile](../api/inboundshareduserprofile-get.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|Read the properties of an inboundSharedUserProfile.|
-|[List inboundSharedUserProfile](../api/inboundshareduserprofile-list.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md) collection|Retrieve all inboundSharedUserProfiles in the directory.|
+|[List inboundSharedUserProfile](../api/directory-list-inboundshareduserprofiles.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md) collection|Retrieve all inboundSharedUserProfiles in the directory.|
 |[Remove personal data](../api/inboundshareduserprofile-removepersonaldata.md)|None|Creates a request to remove all personal data associated with the inboundSharedUserProfile from the directory.|
 |[Export personal data](../api/inboundshareduserprofile-exportpersonaldata.md)|None|Creates a request to export all personal data associated with the inboundSharedUserProfile and stores it in the specified location. The storage location must be an Azure Storage Account.|
 
@@ -28,10 +28,10 @@ Represents an Azure AD user from an external Azure AD tenant whose profile data 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| userId | String | The object identifier of the external user in their home Azure AD tenant. Read-only. Key.|
-| userPrincipalName | String | The user principal name (UPN) of the external user in their home Azure AD tenant. Read-only. |
-| displayName | String | The name displayed in the address book for the user at the time when the sharing record was created. Read-only. |
-| homeTenantId | String | The identifier of the home Azure AD tenant for the external user. Read-only. |
+| displayName | String | The name displayed in the address book for teh user at the time when the sharing record was created. Read-only. |
+| homeTenantId | String | The home tenant id of the external user. Read-only. |
+| userId | String | The object id of the external user. Read-only. |
+| userPrincipalName | String | The user principal name (UPN) of the external user. Read-only. |
 
 ## Relationships
 

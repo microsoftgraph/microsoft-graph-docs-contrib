@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
 
-An account assigned with the Global Reader or Global Administrator role will be able to export data for all [inboundSharedUserProfiles](../resources/inboundshareduserprofile.md).
+For delegated scenarios, the user must be assigned the *Global Reader* or *Global Administrator* Azure AD role.
 
 ## HTTP request
 

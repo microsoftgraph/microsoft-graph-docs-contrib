@@ -1,5 +1,5 @@
 ---
-title: "outboundSharedUserProfile: removePersonalData"
+title: "tenantReference: removePersonalData"
 description: "Create a request to remove the personal data for an outboundSharedUserProfile."
 author: "jkdouglas"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# outboundSharedUserProfiles: removePersonalData
+# tenantReference: removePersonalData
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 All users have `CrossTenantUserProfileSharing.ReadWrite` assigned to be able to create removal requests of their own personal data.
 
-An account assigned with the Global Reader or Global Administrator role will be able to retrieve all [outboundSharedUserProfiles](../resources/outboundshareduserprofile.md).
+An account assigned with the Global Administrator role will be able to remove data for all [outboundSharedUserProfiles](../resources/outboundshareduserprofile.md).
 
 ## HTTP request
 
@@ -35,9 +35,8 @@ An account assigned with the Global Reader or Global Administrator role will be 
   "blockType": "ignored"
 }
 -->
-
 ``` http
-GET /directory/outboundSharedUserProfiles/userId/removePersonalData
+POST /directory/outboundSharedUserProfiles/{userId}/tenants/{tenantId}/removePersonalData
 ```
 
 ## Request headers
@@ -48,38 +47,35 @@ GET /directory/outboundSharedUserProfiles/userId/removePersonalData
 
 ## Request body
 
-Provide a request body with the following parameters.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|bindingParameter|[microsoft.graph.outboundSharedUserProfile](../resources/outboundshareduserprofile.md)|The binding parameter of the action. This is the user id of the inbound shared user profile.|
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No content` response code.
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "inboundshareuserprofile_removepersonaldata"
+  "name": "tenantreferencethis.removepersonaldata"
 }
 -->
-
 ``` http
-POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
+POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants/62bfb458-9474-4c44-896b-b30942d055f0/removePersonalData
 ```
 
 ### Response
 
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-
 ``` http
 HTTP/1.1 204 No Content
 ```

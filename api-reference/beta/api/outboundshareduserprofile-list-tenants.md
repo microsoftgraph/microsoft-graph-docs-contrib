@@ -1,19 +1,19 @@
 ---
-title: "Get outboundSharedUserProfile"
-description: "Read the properties of an outboundSharedUserProfile."
+title: "Get tenantReferences"
+description: "List the tenant references of an outboundSharedUserProfile."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get outboundSharedUserProfile
+# Get tenantReferences
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
+List the tenant references of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
 
-All users will have `CrossTenantUserProfileSharing.Read` and `CrossTenantUserProfileSharing.ReadWrite` to enable them get their own cross-tenant user profile information.
+All users have `CrossTenantUserProfileSharing.Read` and will be able to retrieve their own [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
 
 An account assigned with the Global Reader or Global Administrator role will be able to retrieve all [outboundSharedUserProfiles](../resources/outboundshareduserprofile.md).
 
@@ -37,7 +37,7 @@ An account assigned with the Global Reader or Global Administrator role will be 
 -->
 
 ``` http
-GET /directory/outboundSharedUserProfiles/{userId}
+GET /directory/outboundSharedUserProfiles/{userId}/tenants
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [outboundShare
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
+GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants
 ```
 
 ### Response

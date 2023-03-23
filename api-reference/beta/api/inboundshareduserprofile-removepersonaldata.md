@@ -25,9 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.ReadWrite.All|
 
-All users have `CrossTenantUserProfileSharing.ReadWrite` assigned to be able to create removal requests of their own personal data.
-
-An account assigned with the Global Reader or Global Administrator role will be able to retrieve all [inboundSharedUserProfiles](../resources/inboundshareduserprofile.md).
+For delegated scenarios, the account must be assigned the *Global Administrator* Azure AD role.
 
 ## HTTP request
 

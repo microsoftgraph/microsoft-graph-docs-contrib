@@ -649,17 +649,17 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_CrossTenantUserProfileSharing.Read_ |Read current user's cross-tenant information sharing details  |Allows the app to list and query the logged-in user's profile information sharing. |No | Yes |
-|_CrossTenantUserProfileSharing.Read.All_ |Read all cross-tenant user profile data sharing details  |Allows the app to list and query all the user profile information sharing from and to the current tenant. |No | Yes |
-|_CrossTenantUserProfileSharing.ReadWrite_ |Remove external user's data from the current tenant. |Allows an application to delete an user's data from an external tenant, when performed by the owner of that data. |No |No|
-|_CrossTenantUserProfileSharing.ReadWrite.All_ |Remove user's data from an external tenant. |Allows the app to create, read, update, and delete user contacts. |Yes |No|
+|_CrossTenantUserProfileSharing.Read_ |Read shared cross-tenant user profile and export data  |Allows the application to list and query user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), associated with the current tenant on behalf of the signed-in user. |No | Yes |
+|_CrossTenantUserProfileSharing.Read.All_ |Read all shared cross-tenant user profiles and export their data  |Allows the application to list and query any shared user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant on behalf of the signed-in user. |No | Yes |
+|_CrossTenantUserProfileSharing.ReadWrite_ |Read shared cross-tenant user profile and export or delete data |Allows the application to list and query user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export and remove external user data (e.g. customer content or system-generated logs), associated with the current tenant on behalf of the signed-in user. |No |No|
+|_CrossTenantUserProfileSharing.ReadWrite.All_ |Allows the application to list and query any shared user profile information associated with the current tenant on behalf of the signed-in user.  It also permits the application to export and remove external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant on behalf of the signed-in user. |Yes |No|
 
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_CrossTenantUserProfileSharing.Read.All_ |Read all cross-tenant user profile data sharing details  |Allows the app to list and query all the user profile information sharing from and to the current tenant. |No | Yes |
-|_CrossTenantUserProfileSharing.ReadWrite.All_ |Remove user's data from an external tenant. |Allows the app to create, read, update, and delete user contacts. |Yes |No|
+|_CrossTenantUserProfileSharing.Read.All_ |Allows the application to list and query any shared user profile information associated with the current tenant without a signed-in user.  It also permits the application to export external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant without a signed-in user. | Yes |
+|_CrossTenantUserProfileSharing.ReadWrite.All_ |Allows the application to list and query any shared user profile information associated with the current tenant without a signed-in user.  It also permits the application to export and remove external user data (e.g. customer content or system-generated logs), for any user associated with the current tenant without a signed-in user. |No|
 
 ## Contacts permissions
 

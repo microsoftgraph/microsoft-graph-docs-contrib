@@ -19,19 +19,21 @@ Represents an Azure AD user that has shared their profile data with an external 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get outboundSharedUserProfile](../api/outboundshareduserprofile-get.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md)|Read the properties of an outboundSharedUserProfile.|
-|[List outboundSharedUserProfile](../api/outboundshareduserprofile-list.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
-|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|None| **ADD DESCRIPTION**.|
+|[List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofiles.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
+|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|None| Get all Azure AD tenants that a user has shared their data with as an Azure AD B2B direct connect user.|
 |[Remove personal data](../api/tenantreference-removepersonaldata.md)|None| Create a request to remove all personal data associated with a remote user in an external Azure AD tenant.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-| userId | String | The object identifier of the user. Read-only. Key. |
-| tenants | [tenantReference](../resources/tenantreference.md) collection | The collection of external Azure AD tenants that the user has shared profile data with. Read-only. |
+| userId | String | The object id of the external user. Read-only. |
 
 ## Relationships
+
+|Property|Type|Description|
+|:---|:---|:---|
+| tenants | [tenantReference](../resources/tenantreference.md) collection | The collection of external Azure AD tenants that the user has shared profile data with. Read-only. |
 
 None.
 

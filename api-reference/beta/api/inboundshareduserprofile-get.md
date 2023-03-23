@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
 
-For delegated scenarios, the calling user must also be assigned the *Global Reader* Azure AD role.
+For delegated scenarios, the calling user must also be assigned the *Global Reader* or *Global Administrator* Azure AD role.
 
 ## HTTP request
 

@@ -12687,6 +12687,28 @@ items:
               href: api/crosstenantidentitysyncpolicypartner-update.md
             - name: Delete
               href: api/crosstenantidentitysyncpolicypartner-delete.md
+        - name: Cross-tenant shared user profiles
+          items:
+          - name: Inbound shared user profiles
+            href: resources/inboundshareduserprofile.md
+            items:
+            - name: Get
+              href: api/inboundshareduserprofile-get.md
+            - name: List
+              href: api/inboundshareduserprofile-list.md
+            - name: Export personal data
+              href: api/inboundshareduserprofile-exportpersonaldata.md
+            - name: Remove personal data
+              href: api/inboundshareduserprofile-removepersonaldata.md 
+          - name: Outbound shared user profiles
+            href: resources/outboundshareduserprofile.md
+            items:
+            - name: Get
+              href: api/outboundshareduserprofile-get.md
+            - name: List
+              href: api/outboundshareduserprofile-list.md
+            - name: Remove personal data
+              href: api/outboundshareduserprofile-removepersonaldata.md  
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -13176,29 +13198,7 @@ items:
             - name: Get
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
-              href: api/identitysecuritydefaultsenforcementpolicy-update.md
-        - name: Shared user profiles
-          items:
-          - name: Inbound shared user profiles
-            href: resources/inboundshareduserprofile.md
-            items:
-            - name: Get
-              href: api/inboundshareduserprofile-get.md
-            - name: List
-              href: api/inboundshareduserprofile-list.md
-            - name: Export personal data
-              href: api/inboundshareduserprofile-exportpersonaldata.md
-            - name: Remove personal data
-              href: api/inboundshareduserprofile-removepersonaldata.md 
-          - name: Outbound shared user profiles
-            href: resources/outboundshareduserprofile.md
-            items:
-            - name: Get
-              href: api/outboundshareduserprofile-get.md
-            - name: List
-              href: api/outboundshareduserprofile-list.md
-            - name: Remove personal data
-              href: api/outboundshareduserprofile-removepersonaldata.md                     
+              href: api/identitysecuritydefaultsenforcementpolicy-update.md                   
         - name: Trust Framework Keyset
           href: resources/trustframeworkkeyset.md
           items:
