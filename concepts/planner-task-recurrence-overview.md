@@ -737,18 +737,18 @@ PATCH https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5F
 HTTP/1.1 204 NO CONTENT
 ```
 
-#### Get the task with the new recurrence schedule
+### Get the task with the new recurrence schedule
 
 The following example request and response demonstrate retrieving the task with the new recurrence schedule.
 The **recurrence** properties (except **schedule**) remain unchanged, and the task has _active recurrence_, even while the **dueDateTime** property remains `null`.
 
-##### Request
+#### Request
 
 ```json
 GET https://graph.microsoft.com/beta/planner/tasks/GxOo0ms1iEu3eBI1-6lk85UAI5FI
 ```
 
-##### Response
+#### Response
 
 ```json
 HTTP/1.1 200 OK

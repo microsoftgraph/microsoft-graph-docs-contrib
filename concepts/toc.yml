@@ -662,7 +662,7 @@ items:
           - name: Business scenarios (preview)
             href: businessscenarios-concept-overview.md
           - name: Configuring task recurrence (preview)
-            href: planner-task-recurrence-concept.md
+            href: planner-task-recurrence-overview.md
           - name: Configuring task rules (preview)
             href: planner-task-rules-overview.md
         displayName: Planner
