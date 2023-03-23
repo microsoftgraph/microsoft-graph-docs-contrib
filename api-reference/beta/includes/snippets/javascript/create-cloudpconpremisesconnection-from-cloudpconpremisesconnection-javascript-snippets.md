@@ -11,11 +11,9 @@ const options = {
 const client = Client.init(options);
 
 const cloudPcOnPremisesConnection = {
-  '@odata.type': '#microsoft.graph.cloudPcOnPremisesConnection',
   displayName: 'test-canary-02',
   type: 'hybridAzureADJoin',
   subscriptionId: '0ac520ee-14c0-480f-b6c9-0a90c585ffff',
-  subscriptionName: 'CPC customer 001 test subscription',
   adDomainName: 'contoso001.com',
   adDomainUsername: 'dcadmin',
   organizationalUnit: 'OU=Domain Controllers, DC=contoso001, DC=com',

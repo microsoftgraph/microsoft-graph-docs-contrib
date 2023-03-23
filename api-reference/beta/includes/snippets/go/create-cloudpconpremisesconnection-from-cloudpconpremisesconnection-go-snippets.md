@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewCloudPcOnPremisesConnection()
 displayName := "test-canary-02"
@@ -14,8 +14,6 @@ type := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCONPREMISESCONNECTIONTYPE
 requestBody.SetType(&type) 
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
 requestBody.SetSubscriptionId(&subscriptionId) 
-subscriptionName := "CPC customer 001 test subscription"
-requestBody.SetSubscriptionName(&subscriptionName) 
 adDomainName := "contoso001.com"
 requestBody.SetAdDomainName(&adDomainName) 
 adDomainUsername := "dcadmin"

@@ -1,18 +1,22 @@
 ---
-title: "ediscoveryExportOperation: getDownloadUrl"
-description: "return a downloadUrl from where the export content is delivered as a stream"
+title: "ediscoveryExportOperation: getDownloadUrl (deprecated)"
+description: "Return a download URL from where the export content is delivered as a stream."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# ediscoveryExportOperation: getDownloadUrl
+# ediscoveryExportOperation: getDownloadUrl (deprecated)
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If a Azure blob url is not provided in export action, the export operation exports the files to an internal store. Contents of this store can be fetched by calling into this function. This will return a downloadUrl where the zipped content is delivered as a stream.
+> [!CAUTION]
+> The **getDownloadUrl** function is deprecated and will stop returning data on April 30th, 2023. Please use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-ediscoverycase-get.md) API instead.
+
+If an Azure blob URL is not provided in export action, the export operation exports the files to an internal store. Contents of this store can be fetched by calling into this function. This returns a download URL where the zipped content is delivered as a stream.
 
 
 ## Permissions

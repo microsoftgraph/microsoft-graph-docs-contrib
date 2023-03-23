@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -101,21 +101,13 @@ Content-Type: application/json
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-  "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-  "state": "String"
-}
+HTTP/1.1 204 No Content
 ```
 
