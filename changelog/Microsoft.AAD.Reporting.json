@@ -251,7 +251,40 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     }, 
-
+    {
+      "ChangeList": [
+        {
+          "Id": "521518ca-a80a-48ee-beb4-a8f3ad3de926",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "managedServiceIdentityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedServiceIdentityType** enumeration type.",
+          "Target": "managedServiceIdentityType"
+        },
+        {
+          "Id": "521518ca-a80a-48ee-beb4-a8f3ad3de926",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource type.",
+          "Target": "managedIdentity"
+        },
+        {
+          "Id": "521518ca-a80a-48ee-beb4-a8f3ad3de926",
+          "ApiChange": "Property",
+          "ChangedApiName": "managedServiceIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the `managedServiceIdentity` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "521518ca-a80a-48ee-beb4-a8f3ad3de926",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-23T06:30:01.6659043Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
     {
          "ChangeList": [
            {
