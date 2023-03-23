@@ -3142,6 +3142,24 @@
       "CreatedDateTime": "2023-03-01T10:39:05.8609784Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c4086413-821d-4b86-a751-830602979001",
+          "ApiChange": "Property",
+          "ChangedApiName": "containerTextWebPartId",
+          "ChangeType": "Addition",
+          "Description": "Added the `containerTextWebPartId` property to the [standardWebPart](https://learn.microsoft.com/en-us/graph/resources/standardWebPart?view=graph-rest-beta) resource.",
+          "Target": "standardWebPart"
+        }
+      ],
+      "Id": "c4086413-821d-4b86-a751-830602979001",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-23T10:39:05.8609784Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }
