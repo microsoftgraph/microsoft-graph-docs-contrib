@@ -657,14 +657,9 @@ For the most up-to-date pricing information, see [Microsoft Teams API licensing 
 
 ## See also
 
-You can also add more advanced features in your chat application by:
-
-- [Adding reactions to chat messages](/graph/api/chatmessage-setreaction), such as thumbs up and smileys.
-- [Adding @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples), so messages can contain rich contents.
-- [Hiding a chat from users](/graph/api/chat-hideforuser) to declutter the chat list, or [removing a member from a chat](/graph/api/chat-delete-members) when it is no longer needed for them.
-- [Checking chat membership](/graph/api/chat-list), in case users have joined or left chat groups, especially if they can do that outside of your app.
-- [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview), such as chats and memberships, not just messages.
-
-## Related articles
-
-- [Bring Microsoft Teams (Chats & Channel) collaboration to your Apps by leveraging Microsoft Graph](/events/build-2022/od20-bring-microsoft-teams-chats-channel-collaboration-to-your-apps-by-leveraging-microsoft-graph)
+- [Add reactions to chat messages](/graph/api/chatmessage-setreaction)
+- [Add @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples)
+- [Hide a chat from users](/graph/api/chat-hideforuser) 
+- [Remove a member from a chat](/graph/api/chat-delete-members)
+- [Check chat membership](/graph/api/chat-list)
+- [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview)
