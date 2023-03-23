@@ -21,7 +21,7 @@ Inherits from [webPart](../resources/webpart.md).
 
 | Property               | Type                                       | Description                                                                                                     |
 | :--------------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
-| containerTextWebPartId | string                                     | The instance identifier of the container text webPart. It only works for inline standard webPart in rich text webPart. |
+| containerTextWebPartId | string                                     | The instance identifier of the container text webPart. It only works for inline standard webPart in rich text webParts. |
 | data                   | [webPartData](../resources/webpartdata.md) | Data of the webPart.                                                                                            |
 | id                     | String                                     | Instance identifier of the webPart. Inherited from [entity](../resources/entity.md).                            |
 | webPartType            | String                                     | A Guid that indicates the webPart type.                                                         |
