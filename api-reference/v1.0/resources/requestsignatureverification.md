@@ -16,7 +16,7 @@ Specifies whether this application requires Azure AD to verify the signed authen
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedWeakAlgorithms|weakAlgorithms|Specifies whether this application accepts weak algorithms. <br><br> The possible values are: `rsaSha1`, `unknownFutureValue`.|
+|allowedWeakAlgorithms|weakAlgorithms|Specifies which weak algorithms are allowed. <br><br> The possible values are: `rsaSha1`, `unknownFutureValue`.|
 |isSignedRequestRequired|Boolean|Specifies whether signed authentication requests for this application should be required.|
 
 ## Relationships
