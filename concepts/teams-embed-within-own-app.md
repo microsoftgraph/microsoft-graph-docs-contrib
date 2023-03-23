@@ -39,7 +39,8 @@ Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must c
 
 ### Request
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_2"
 }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/chats
@@ -103,7 +104,8 @@ Members within the chat can send messages to each other. The following example s
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_3"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages
@@ -188,7 +190,8 @@ Typical interactive messaging apps display only the most recent messages by defa
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_4"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2/messages?$top=2&$filter=lastModifiedDateTime gt 2021-03-17T07:13:28.000z&$orderBy=createdDateTime desc
@@ -387,7 +390,8 @@ For more details about this example, see [Create subscription](/graph/api/subscr
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_6"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -446,6 +450,7 @@ When you create the subscription, make sure that the **includeResourceData** pro
 
 <!-- {
   "blockType": "request",
+  "name": "step_7"
 }-->
 ```http
 POST https://webhook.azurewebsites.net/api/send/myNotifyClient
@@ -558,7 +563,8 @@ The following example shows how to renew a subscription.
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_8"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/88aa8a88-88a8-88a8-8888-88a8aa88a88a
@@ -608,7 +614,8 @@ To get the viewpoint of a chat, use the `GET` HTTP method on the [chats](/graph/
 ### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "step_9"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/19:b1234aaa12345a123aa12aa12aaaa1a9@thread.v2
