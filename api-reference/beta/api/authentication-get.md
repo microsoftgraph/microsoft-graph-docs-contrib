@@ -1,6 +1,6 @@
 ---
 title: "Get authentication"
-description: "Get the dynamically chosen authentication method prompted to a user."
+description: "Get the dynamically-chosen authentication method prompted to a user."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dynamically chosen [authentication](../resources/authentication.md) method prompted to a user.
+Get the dynamically-chosen [authentication](../resources/authentication.md) method prompted to a user.
 
 ## Permissions
 
@@ -73,22 +73,12 @@ GET https://graph.microsoft.com/beta/me/authentication
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
-<!-- "systemCredentialPreferences": {
-        "state": "enabled",
-        "excludeTargets": [
-            {
-                "id": "d1411007-6fcf-4b4c-8d70-1da1857ed33c",
-                "targetType": "group"
-            }
-        ],
-        "includeTargets": [
-            {
-                "id": "all_users",
-                "targetType": "group"
-            }
-        ]
-    }
--->
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authentication"
+} -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
