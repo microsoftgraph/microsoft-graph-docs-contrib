@@ -19,7 +19,7 @@ Given a non-recurring task, a client can make it into a recurring task by specif
 
 When a _task with active recurrence_ is marked complete (**percentComplete** set to `100`), a new task is created to continue the series. Alternately, if a _task with active recurrence_ is deleted without cancelling recurrence, a new task is also created to continue the series. If the series should be discontinued, the **schedule** should first be set to `null`, then the task can be deleted and recurrence stops.
 
-For more details, see [Configuring task recurrence in Planner](/graph/planner-task-recurrence-concept).
+For more details, see [Configuring task recurrence in Planner](/graph/planner-task-recurrence-overview).
 
 ## Properties
 
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource. For real-looking examples that include this resource, see [Configuring task recurrence in Planner](/graph/planner-task-recurrence-concept).
+The following is a JSON representation of the resource. For real-looking examples that include this resource, see [Configuring task recurrence in Planner](/graph/planner-task-recurrence-overview).
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerTaskRecurrence"
