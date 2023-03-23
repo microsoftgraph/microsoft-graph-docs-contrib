@@ -15,7 +15,7 @@ Namespace: microsoft.graph.externalConnectors
 
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
-This is an abstract type.
+This is an abstract base type of [itemIdResolver](externalconnectors-itemidresolver.md)..
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ This is an abstract type.
 |priority|Int32|The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated. |
 
 ## Relationships
-An existing subtype of the urlToItemResolverBase resource type is the [itemIdResolver resource type](externalconnectors-itemidresolver.md).
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
