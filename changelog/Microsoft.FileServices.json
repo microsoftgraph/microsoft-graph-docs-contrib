@@ -3150,7 +3150,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "containerTextWebPartId",
           "ChangeType": "Addition",
-          "Description": "Added the `containerTextWebPartId` property to the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource.",
+          "Description": "Added the **containerTextWebPartId** property to the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-beta) resource.",
           "Target": "standardWebPart"
         }
       ],
