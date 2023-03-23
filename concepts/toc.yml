@@ -719,6 +719,8 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
+          - name: Embed Teams into your app
+            href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
