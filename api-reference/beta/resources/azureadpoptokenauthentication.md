@@ -1,7 +1,7 @@
 ---
 title: "azureAdPopTokenAuthentication resource type"
-description: "Defines the Azure AD Proof Of Possession (PoP) used to authenticate with a workflow extension."
-author: "vikama-microsoft"
+description: "Defines the Azure AD application used to authenticate with a custom access package workflow extension."
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -13,26 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app with a [accessPackageAssignmentRequestWorkflowExtensions](../resources/accessPackageAssignmentRequestWorkflowExtension.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accessPackageAssignmentWorkflowExtension.md) object. 
-
-Inherits from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Defines the Azure AD application used to authenticate a logic app with a [custom task extension](../resources/identitygovernance-customtaskextension.md). Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
-None.
 
-## Relationships
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.customExtensionAuthenticationConfiguration",
-  "@odata.type": "microsoft.graph.azureAdPopTokenAuthentication"
+  "@odata.type": "microsoft.graph.azureAdPopTokenAuthentication",
+  "baseType": "microsoft.graph.customExtensionAuthenticationConfiguration"
 }
 -->
+
 ``` json
-{
-  "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
-}
+{ 
+  "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication", 
+  "resourceId": "String" 
+ } 
 ```
