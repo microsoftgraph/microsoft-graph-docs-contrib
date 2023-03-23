@@ -84,7 +84,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

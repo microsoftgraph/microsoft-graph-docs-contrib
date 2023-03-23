@@ -19,8 +19,8 @@ Planner currently supports the container types listed in the following table. Wh
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|group| Plan is contained by a [group](group.md).| https://graph.microsoft.com/beta/groups/&lt;id&gt;|
-|roster| Plan is contained by a [plannerRoster](plannerroster.md). | https://graph.microsoft.com/beta/planner/rosters/&lt;id&gt;|
+|group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/beta/groups/<id>` |
+|roster| Plan is contained by a [plannerRoster](plannerroster.md). | `https://graph.microsoft.com/beta/planner/rosters/<id>` |
 |project| Plan is contained by a Project from [Microsoft Project for the web](/project-for-the-web/projectforweb-admin-home). | Microsoft Project currently doesn't have a resource path on Microsoft Graph. Project details and members can be managed from [Microsoft Project](https://project.microsoft.com). |
 
 ## Properties

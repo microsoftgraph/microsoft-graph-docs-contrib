@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/3007
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"]
-	.SetUpResourcesFolder()
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Education.Classes.Item.Assignments.Item.Submissions.Item.SetUpResourcesFolder.SetUpResourcesFolderPostRequestBody
+{
+};
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].SetUpResourcesFolder.PostAsync(requestBody);
+
 
 ```
