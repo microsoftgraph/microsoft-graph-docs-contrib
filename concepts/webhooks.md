@@ -104,7 +104,6 @@ Content-Type: application/json
 
 ---
 
-
 The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription) for property definitions and values.
 
 The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
@@ -195,7 +194,6 @@ Content-Type: application/json
 
 ---
 
-
 If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
@@ -237,7 +235,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
@@ -356,7 +353,7 @@ The following table lists the latency to expect between an event happening in th
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
-## Deployment resources
+## Additional resources
 
 - [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
 - [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
