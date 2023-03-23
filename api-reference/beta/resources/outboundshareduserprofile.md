@@ -21,7 +21,7 @@ Represents an Azure AD user that has shared their profile data with an external 
 |:---|:---|:---|
 |[List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofiles.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
 |[Get outboundSharedUserProfile](../api/outboundshareduserprofile-get.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve a specific outboundSharedUserProfile from the directory.|
-|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](..resources/tenantreference.md) collection| Get all Azure AD tenants that a user has shared their data with as an Azure AD B2B direct connect user.|
+|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](../resources/tenantreference.md) collection| Get all Azure AD tenants that a user has shared their data with as an Azure AD B2B direct connect user.|
 |[Remove personal data](../api/tenantreference-removepersonaldata.md)|None| Create a request to remove all personal data associated with a remote user in an external Azure AD tenant.|
 
 ## Properties

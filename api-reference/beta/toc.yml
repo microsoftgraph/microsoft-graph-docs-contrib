@@ -12695,7 +12695,7 @@ items:
             - name: Get
               href: api/inboundshareduserprofile-get.md
             - name: List
-              href: api/inboundshareduserprofile-list.md
+              href: api/directory-list-inboundshareduserprofiles.md
             - name: Export personal data
               href: api/inboundshareduserprofile-exportpersonaldata.md
             - name: Remove personal data
@@ -12706,7 +12706,9 @@ items:
             - name: Get
               href: api/outboundshareduserprofile-get.md
             - name: List
-              href: api/outboundshareduserprofile-list.md
+              href: api/directory-list-outboundshareduserprofiles.md
+            - name: List tenant references
+              href: api/outboundshareduserprofile-list-tenants.md
             - name: Remove personal data
               href: api/outboundshareduserprofile-removepersonaldata.md  
         - name: Data policy operation
