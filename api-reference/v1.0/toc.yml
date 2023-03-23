@@ -5591,6 +5591,15 @@ items:
                 href: api/authenticationmethodspolicy-get.md
               - name: Update
                 href: api/authenticationmethodspolicy-update.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: FIDO2 policy
               href: resources/fido2authenticationmethodconfiguration.md
               items:
@@ -5618,15 +5627,6 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Email policy
-              href: resources/emailauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/emailauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/emailauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: X509 certificate
               displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md

@@ -213,6 +213,17 @@ Namespace: microsoft.graph
 |requestReceived|
 |unknownFutureValue|
 
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionStage values 
 
 |Member|
@@ -3694,6 +3705,7 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
 
 ### authenticationEventType values
 
