@@ -65,7 +65,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the assignment has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **Assignment**.  You can't PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`.|
+|status|string| Status of the **Assignment**.  You can't PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`and `inactive`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships

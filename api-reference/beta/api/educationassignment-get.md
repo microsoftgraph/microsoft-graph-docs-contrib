@@ -165,7 +165,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
-  "name": "get_inactiveAssignment"
+  "name": "get_inactiveAssignment_withheader"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
@@ -268,7 +268,7 @@ The following is an example of the request, where the status is unknownFutureVal
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
-  "name": "get_inactiveAssignment"
+  "name": "getinactiveAssignment"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
