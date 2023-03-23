@@ -22,7 +22,7 @@ The following permission is required to call the API. To learn more, including h
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+| Application                            | Presence.ReadWrite.All                              |
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
