@@ -378,6 +378,8 @@ items:
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Get shift work access state
+          href: api/cloudpc-getshiftworkcloudpcaccessstate.md
         - name: Reboot
           href: api/cloudpc-reboot.md
         - name: Rename
@@ -10626,6 +10628,8 @@ items:
             href: api/cloudpc-getcloudpcconnectivityhistory.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Get shift work access state
+            href: api/cloudpc-getshiftworkcloudpcaccessstate.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Get review status
@@ -12843,6 +12847,8 @@ items:
                 items:
                 - name: List user processing results
                   href: api/identitygovernance-workflow-list-userprocessingresults.md
+                - name: Get user processing result
+                  href: api/identitygovernance-userprocessingresult-get.md
                 - name: Get summary
                   href: api/identitygovernance-userprocessingresult-summary.md
                 - name: List task processing results
@@ -12870,8 +12876,6 @@ items:
                   href: api/identitygovernance-run-list-taskprocessingresults.md  
                 - name: List user processing results
                   href: api/identitygovernance-run-list-userprocessingresults.md
-                - name: Get user processing result
-                  href: api/identitygovernance-userprocessingresult-get.md
               - name: Task processing result
                 items:
                 - name: Task processing result
@@ -13649,36 +13653,38 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
-          - name: Application authentication method policy (preview)
+          - name: Application authentication method policy
             items:
             - name: Overview
-              href: resources/applicationAuthenticationMethodPolicy.md
+              href: resources/applicationauthenticationmethodpolicy.md
             - name: Tenant app management policy
               items:
               - name: Tenant app management policy
-                href: resources/tenantAppManagementPolicy.md
+                href: resources/tenantappmanagementpolicy.md
               - name: Get
-                href: api/tenantAppManagementPolicy-get.md
+                href: api/tenantappmanagementpolicy-get.md
               - name: Update
-                href: api/tenantAppManagementPolicy-update.md
+                href: api/tenantappmanagementpolicy-update.md
             - name: App management policy
               items:
               - name: App management policy
-                href: resources/appManagementPolicy.md
+                href: resources/appmanagementpolicy.md
               - name: List
-                href: api/appManagementPolicy-list.md
+                href: api/appmanagementpolicy-list.md
               - name: Get
-                href: api/appManagementPolicy-get.md
+                href: api/appmanagementpolicy-get.md
               - name: Create
-                href: api/appManagementPolicy-post.md
+                href: api/appmanagementpolicy-post.md
               - name: Update
-                href: api/appManagementPolicy-update.md
+                href: api/appmanagementpolicy-update.md
               - name: Delete
-                href: api/appManagementPolicy-delete.md
+                href: api/appmanagementpolicy-delete.md
               - name: Create appliesTo
-                href: api/appManagementPolicy-post-appliesTo.md
+                href: api/appmanagementpolicy-post-appliesto.md
               - name: List appliesTo
-                href: api/appManagementPolicy-list-appliesTo.md
+                href: api/appmanagementpolicy-list-appliesto.md
+              - name: Delete appliesTo
+                href: api/appmanagementpolicy-delete-appliesto.md
           - name: Authentication events policy
             items:
             - name: Authentication events policy
@@ -13720,6 +13726,15 @@ items:
                 href: api/authenticationmethodspolicy-get.md
               - name: Update
                 href: api/authenticationmethodspolicy-update.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: FIDO2 policy
               href: resources/fido2authenticationmethodconfiguration.md
               items:
@@ -13729,6 +13744,51 @@ items:
                 href: api/fido2authenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+            - name: Text Message policy
+              href: resources/smsAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/smsAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/smsAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/smsAuthenticationMethodConfiguration-delete.md
+            - name: Third-party software OATH policy
+              href: resources/softwareoathAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/softwareoathAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/softwareoathAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
+            - name: Voice call policy
+              href: resources/voiceAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/voiceAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/voiceAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/voiceAuthenticationMethodConfiguration-delete.md
             - name: X509 certificate
               displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md
@@ -13739,15 +13799,6 @@ items:
                 href: api/x509certificateauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/x509certificateauthenticationmethodconfiguration-delete.md
-            - name: Microsoft Authenticator policy
-              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
             - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
               href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
               items:
@@ -13757,51 +13808,6 @@ items:
                 href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-            - name: Temporary Access Pass policy
-              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Email policy
-              href: resources/emailauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/emailauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/emailauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/emailauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
-              href: resources/smsAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/smsAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/smsAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/smsAuthenticationMethodConfiguration-delete.md
-            - name: Voice call policy
-              href: resources/voiceAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/voiceAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/voiceAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/voiceAuthenticationMethodConfiguration-delete.md
-            - name: Third-party software OATH policy
-              href: resources/softwareoathAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/softwareoathAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/softwareoathAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
