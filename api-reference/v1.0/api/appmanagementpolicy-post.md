@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
 ## Permissions
@@ -42,6 +40,7 @@ POST /policies/appManagementPolicies
 
 > [!IMPORTANT]
 > Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
+
 ## Request body
 
 In the request body, supply a JSON representation of the [appManagementPolicy](../resources/appmanagementpolicy.md) object.
@@ -57,7 +56,7 @@ You can specify the following properties when creating an **appManagementPolicy*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code with the new [appManagementPolicy](../resources/appmanagementpolicy.md) object in the response payload.
+If successful, this method returns a `201 Created` response code with the new [appManagementPolicy ](../resources/appmanagementpolicy.md) object in the response payload.
 
 ## Examples
 
@@ -70,15 +69,13 @@ The following is an example of the request. This request created an app manageme
 - Enforces lifetime on password secrets and key credentials for applications created on or after 2014-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_appManagementPolicy"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/policies/appManagementPolicies
+POST https://graph.microsoft.com/v1.0/policies/appManagementPolicies
 
 {
     "displayName": "Credential management policy",
@@ -119,27 +116,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-appmanagementpolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-appmanagementpolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -156,7 +133,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/appManagementPolicies/$entity",
     "id": "a4ab1ed9-46bb-4bef-88d4-86fd6398dd5d",
     "displayName": "credential management policy",
     "description": "Lorem ipsum",
