@@ -27,7 +27,7 @@ Currently, subscriptions are enabled for the following resources.
 - The [presence][] of a user in Microsoft Teams.
 - A [team][team] in Microsoft Teams.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
-- A [todoTask][] of a user in Microsoft To Do.
+- A [todoTask][] of a user in Microsoft To Do (webhooks are only available in the worldwide endpoint and no other national clouds).
 - A [user][] in Azure Active Directory.
 
 [channel]: /graph/api/resources/channel

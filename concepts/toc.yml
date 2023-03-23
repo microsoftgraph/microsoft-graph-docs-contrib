@@ -721,6 +721,8 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
+          - name: Embed Teams in your app
+            href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
@@ -926,7 +928,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK (preview)
+          - name: Use the connectors SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-overview.md
