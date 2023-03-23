@@ -44,22 +44,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.learningAssignment",
-  "externalcourseActivityId": "String",
-  "learningProviderId": "String",
-  "learningContentId": "String",
-  "learnerUserId": "String",
-  "status": "String",
+  "assignedDateTime": "String (timestamp)",
+  "assignerUserId": "String",
+  "assignmentType": "String",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Integer",
-  "assignmentType": "String",
-  "assignerUserId": "String",
-  "assignedDateTime": "String (timestamp)",
   "dueDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
+  "externalcourseActivityId": "String",
+  "learnerUserId": "String",
+  "learningContentId": "String",
+  "learningProviderId": "String",
   "notes": {
     "@odata.type": "microsoft.graph.itemBody"
-  }
+  },
+  "status": "String"
 }
 ```
 
