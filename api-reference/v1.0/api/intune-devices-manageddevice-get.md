@@ -35,9 +35,6 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}
 ```
 
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 |Header|Value|
 |:---|:---|

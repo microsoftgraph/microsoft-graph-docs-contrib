@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAddMembersPostRequestBody()
 
@@ -20,7 +20,7 @@ assets := []graphmodels.Objectable {
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").AddMembers().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").WindowsUpdatesAddMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

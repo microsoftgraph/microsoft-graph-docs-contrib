@@ -4,18 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.ServicePrincipals.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true"),
-	new QueryOption("$search", "\"displayName:Team\"")
-};
+	requestConfiguration.QueryParameters.Search = "\"displayName:Team\"";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.Select = new string []{ "accountEnabled","displayName","publisherName","servicePrincipalType","signInAudience" };
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var servicePrincipals = await graphClient.ServicePrincipals
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Select("accountEnabled,displayName,publisherName,servicePrincipalType,signInAudience")
-	.GetAsync();
 
 ```

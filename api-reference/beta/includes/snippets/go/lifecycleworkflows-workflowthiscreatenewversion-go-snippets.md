@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewCreateNewVersionPostRequestBody()
 workflow := graphmodels.NewWorkflow()
@@ -73,7 +73,7 @@ tasks := []graphmodels.Taskable {
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").CreateNewVersion().Post(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").IdentityGovernanceCreateNewVersion().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -127,7 +127,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-
 ##### Response 1
 
 Here is an example of the response. The **body** property is returned in the default format of HTML.

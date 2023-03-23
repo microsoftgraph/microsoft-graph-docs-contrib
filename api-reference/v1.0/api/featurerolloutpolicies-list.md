@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

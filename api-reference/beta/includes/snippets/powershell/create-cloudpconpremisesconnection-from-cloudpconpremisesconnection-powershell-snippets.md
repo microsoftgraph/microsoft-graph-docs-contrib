@@ -7,11 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.cloudPcOnPremisesConnection"
 	DisplayName = "test-canary-02"
 	Type = "hybridAzureADJoin"
 	SubscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
-	SubscriptionName = "CPC customer 001 test subscription"
 	AdDomainName = "contoso001.com"
 	AdDomainUsername = "dcadmin"
 	OrganizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com"

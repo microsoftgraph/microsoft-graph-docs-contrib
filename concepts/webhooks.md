@@ -7,7 +7,7 @@ ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 02/23/2022
+ms.date: 03/23/2022
 ---
 
 # Set up notifications for changes in resource data
@@ -90,7 +90,7 @@ The following code samples are available on GitHub.
 
 ## See also
 
-- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation

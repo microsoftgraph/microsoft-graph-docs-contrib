@@ -4,29 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var regionalAndLanguageSettings = new RegionalAndLanguageSettings
+var requestBody = new RegionalAndLanguageSettings
 {
-	AuthoringLanguages = new List<LocaleInfo>()
+	AuthoringLanguages = new List<LocaleInfo>
 	{
 		new LocaleInfo
 		{
-			Locale = "en-US"
+			Locale = "en-US",
 		},
 		new LocaleInfo
 		{
-			Locale = "es-MX"
-		}
+			Locale = "es-MX",
+		},
 	},
 	DefaultRegionalFormat = new LocaleInfo
 	{
-		Locale = "en-US"
-	}
+		Locale = "en-US",
+	},
 };
+var result = await graphClient.Me.Settings.RegionalAndLanguageSettings.PatchAsync(requestBody);
 
-await graphClient.Me.Settings.RegionalAndLanguageSettings
-	.Request()
-	.UpdateAsync(regionalAndLanguageSettings);
 
 ```

@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
