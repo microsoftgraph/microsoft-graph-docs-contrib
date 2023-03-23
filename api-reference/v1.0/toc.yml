@@ -5858,6 +5858,38 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Application authentication method policy
+            items:
+            - name: Overview
+              href: resources/applicationauthenticationmethodpolicy.md
+            - name: Tenant app management policy
+              items:
+              - name: Tenant app management policy
+                href: resources/tenantappmanagementpolicy.md
+              - name: Get
+                href: api/tenantappmanagementpolicy-get.md
+              - name: Update
+                href: api/tenantappmanagementpolicy-update.md
+            - name: App management policy
+              items:
+              - name: App management policy
+                href: resources/appmanagementpolicy.md
+              - name: List
+                href: api/appmanagementpolicy-list.md
+              - name: Get
+                href: api/appmanagementpolicy-get.md
+              - name: Create
+                href: api/appmanagementpolicy-post.md
+              - name: Update
+                href: api/appmanagementpolicy-update.md
+              - name: Delete
+                href: api/appmanagementpolicy-delete.md
+              - name: Create applies to
+                href: api/appmanagementpolicy-post-appliesto.md
+              - name: List applies to
+                href: api/appmanagementpolicy-list-appliesto.md
+              - name: Delete applies to
+                href: api/appmanagementpolicy-delete-appliesto.md
           - name: Authentication flows policy
             items:
             - name: Authentication flows policy
@@ -5877,6 +5909,15 @@ items:
                 href: api/authenticationmethodspolicy-get.md
               - name: Update
                 href: api/authenticationmethodspolicy-update.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: FIDO2 policy
               href: resources/fido2authenticationmethodconfiguration.md
               items:
@@ -5904,15 +5945,6 @@ items:
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Email policy
-              href: resources/emailauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/emailauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/emailauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/emailauthenticationmethodconfiguration-delete.md
             - name: X509 certificate
               displayName: certificate-based authentication, CBA
               href: resources/x509Certificateauthenticationmethodconfiguration.md
