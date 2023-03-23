@@ -14,7 +14,6 @@ $requestConfiguration = new MeRequestBuilderGetRequestConfiguration();
 $queryParameters = new MeRequestBuilderGetQueryParameters();
 $queryParameters->expand = ["manager($levels=max;$select=id,displayName)"];
 $queryParameters->select = ["id","displayName"];
-$queryParameters->count = true;
 
 $headers = [
 'ConsistencyLevel' => 'eventual',

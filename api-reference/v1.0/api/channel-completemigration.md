@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 ---
 
-
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
 ### Response

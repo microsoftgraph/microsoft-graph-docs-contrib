@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var getCompatibleHubContentTypes = await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes
-	.GetCompatibleHubContentTypes()
-	.Request()
-	.GetAsync();
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes.GetCompatibleHubContentTypes.GetAsync();
+
 
 ```

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var reason = RejectReason.None;
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Reject.RejectPostRequestBody
+{
+	Reason = RejectReason.None,
+};
+await graphClient.Communications.Calls["{call-id}"].Reject.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Reject(reason,null)
-	.Request()
-	.PostAsync();
 
 ```

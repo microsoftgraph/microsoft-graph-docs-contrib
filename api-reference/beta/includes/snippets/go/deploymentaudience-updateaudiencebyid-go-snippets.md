@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
@@ -31,7 +31,7 @@ removeExclusions := []string {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().WindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

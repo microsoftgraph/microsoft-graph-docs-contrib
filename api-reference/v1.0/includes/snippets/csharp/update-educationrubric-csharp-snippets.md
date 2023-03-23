@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationRubric = new EducationRubric
+var requestBody = new EducationRubric
 {
-	DisplayName = "Example Credit Rubric after display name patch"
+	DisplayName = "Example Credit Rubric after display name patch",
 };
+var result = await graphClient.Education.Me.Rubrics["{educationRubric-id}"].PatchAsync(requestBody);
 
-await graphClient.Education.Me.Rubrics["{educationRubric-id}"]
-	.Request()
-	.UpdateAsync(educationRubric);
 
 ```

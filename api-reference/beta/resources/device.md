@@ -25,6 +25,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |[List devices](../api/device-list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device-update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete device](../api/device-delete.md) | None |Delete the device object. |
+|[delta](../api/device-delta.md)|[device](device.md) collection| Get incremental changes for devices. |
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|

@@ -82,7 +82,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following example response shows the **uploadSession** resource returned for the message.
 
@@ -154,8 +153,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following example response shows the **uploadSession** resource returned for the event.

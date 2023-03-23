@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new User
+var requestBody = new User
 {
 	OnPremisesExtensionAttributes = new OnPremisesExtensionAttributes
 	{
 		ExtensionAttribute1 = "skypeId.adeleVance",
-		ExtensionAttribute13 = null
-	}
+		ExtensionAttribute13 = null,
+	},
 };
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(user);
 
 ```
