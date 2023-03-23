@@ -1,19 +1,17 @@
 ---
-title: "List appManagementPolicies"
-description: "Get a list of application management policies."
+title: "Get appManagementPolicy"
+description: "Get an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# List appManagementPolicies
+# Get appManagementPolicy
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve a list of [appManagementPolicy](../resources/appManagementPolicy.md) objects.
+Read the properties of an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
 ## Permissions
 
@@ -25,16 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
-## Optional query parameters
-
-This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /policies/appManagementPolicies
+GET /policies/appManagementPolicies/{id}
 ```
 
 ## Request headers
@@ -49,50 +43,25 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [appManagementPolicy](../resources/appManagementPolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a single [appManagementPolicy](../resources/appManagementPolicy.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
+- Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
+- Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_appManagementPolicies"
+  "name": "get_appManagementPolicy"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/appManagementPolicies
+GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-appmanagementpolicies-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-appmanagementpolicies-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-appmanagementpolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-appmanagementpolicies-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-appmanagementpolicies-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicies-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -109,7 +78,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
+   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/appManagementPolicies",
    "value": [
       {
          "id": "db9d4b58-3488-4da4-9994-49773c454e33",
@@ -156,7 +125,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "get appManagementPolicies",
+  "description": "get appManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

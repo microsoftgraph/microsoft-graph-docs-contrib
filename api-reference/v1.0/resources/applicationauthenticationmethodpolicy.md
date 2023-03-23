@@ -11,8 +11,6 @@ doc_type: "conceptualPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Azure Active Directory (Azure AD). The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
 
 These policies allow organizations to take advantage of the new app security hardening features. By enforcing restrictions that are based on the application or service principal created date, an organization can review their current app security posture, inventory apps, and enforce controls per their resourcing schedules and needs. This approach using the created date allows the organization to enforce the policy for new applications and also apply it to existing applications.
@@ -44,19 +42,18 @@ When both the tenant default policy and an app management policy exist, the app 
 
 The application authentication methods policy API offers the following restrictions:
 
-| Restriction name       | Description                                                            | Examples                                                                                                    |
-| :--------------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| passwordAddition       | Restrict password secrets on applications altogether.                  | Block new passwords on applications created on or after '01/01/2019'.                                       |
-| passwordLifetime       | Enforce a max lifetime range for a password secret.                    | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.        |
-| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
-| symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                    |
-| symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
-| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019.  |
+| Restriction name       | Description                                                            | Examples                                                                                                   |
+| :--------------------- | :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| passwordAddition       | Restrict password secrets on applications altogether.                  | Block new passwords on applications created on or after '01/01/2019'.                                      |
+| passwordLifetime       | Enforce a max lifetime range for a password secret.                    | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.       |
+| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom password secrets on applications created after 01/01/2015.                         |
+| symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                   |
+| symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.         |
+| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019. |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
->
-> Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
+> Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Azure AD generated application password secrets.
 
 ### Single vs multi-tenant apps
 
