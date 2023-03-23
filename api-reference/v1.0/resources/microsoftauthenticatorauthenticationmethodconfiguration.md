@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Represents a Microsoft Authenticator authentication methods policy. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -22,6 +24,7 @@ Represents a Microsoft Authenticator authentication methods policy. Authenticati
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
@@ -45,7 +48,15 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ],
+  "featureSettings": {
+    "@odata.type": "microsoft.graph.microsoftAuthenticatorFeatureSettings"
+  }
 }
 ```
 

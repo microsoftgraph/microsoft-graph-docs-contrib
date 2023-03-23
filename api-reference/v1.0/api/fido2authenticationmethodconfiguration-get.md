@@ -1,7 +1,7 @@
 ---
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -90,8 +90,6 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 
@@ -124,7 +122,8 @@ Content-type: application/json
             "id": "all_users",
             "isRegistrationRequired": false
         }
-    ]
+    ],
+    "excludeTargets": []
 }
 ```
 

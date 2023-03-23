@@ -19,20 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List lifecycleWorkflowsContainers](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md)|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) collection|Get a list of the [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) objects and their properties.|
-|[Create lifecycleWorkflowsContainer](../api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md)|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md)|Create a new [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
-|[Get lifecycleWorkflowsContainer](../api/identitygovernance-workflow-get.md)|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md)|Read the properties and relationships of a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
-|[Update lifecycleWorkflowsContainer](../api/identitygovernance-workflow-update.md)|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md)|Update the properties of a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
-|[Delete lifecycleWorkflowsContainer](../api/identitygovernance-workflow-delete.md)|None|Deletes a [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
-|[List customTaskExtensions](../api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|Get the customTaskExtension resources from the customTaskExtensions navigation property.|
-|[Create customTaskExtension](../api/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions.md)|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md)|Create a new customTaskExtension object.|
-|[List deletedItemContainer](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[microsoft.graph.deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get the deletedItemContainer resources from the deletedItems navigation property.|
-|[List taskDefinitions](../api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions.md)|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|Get the taskDefinition resources from the taskDefinitions navigation property.|
-|[List Deleted workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|Get the deleted workflow resources from the workflows navigation property.|
-|[Create workflow](../api/identitygovernance-lifecycleworkflowscontainer-post-workflows.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Create a new workflow object.|
-|[List workflowTemplates](../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md)|[microsoft.graph.identityGovernance.workflowTemplate](../resources/identitygovernance-workflowtemplate.md) collection|Get the workflowTemplate resources from the workflowTemplates navigation property.|
+None.
 
 ## Properties
 
@@ -68,3 +55,4 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
+

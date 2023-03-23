@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeOutlookTaskItemMicrosoft.graph.completeRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.MeOutlookTaskItemCompleteRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 

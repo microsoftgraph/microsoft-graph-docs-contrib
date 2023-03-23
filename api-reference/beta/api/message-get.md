@@ -343,7 +343,6 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-
 #### Response
 
 Here is an example of the response. 
@@ -417,7 +416,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -504,7 +502,6 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is the response. The MIME content begins with the `MIME-Version` header. 

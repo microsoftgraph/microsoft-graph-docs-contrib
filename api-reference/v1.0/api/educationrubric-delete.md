@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

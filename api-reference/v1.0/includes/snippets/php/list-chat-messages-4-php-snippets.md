@@ -14,7 +14,7 @@ $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
 $queryParameters = new MessagesRequestBuilderGetQueryParameters();
 $queryParameters->top = 2;
 $queryParameters->orderby = ["lastModifiedDateTime desc"];
-$queryParameters->filter = "lastModifiedDateTime ge 2022-09-22T00:00:00.000Z and lastModifiedDateTime le 2022-09-24T00:00:00.000Z";
+$queryParameters->filter = "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and lastModifiedDateTime lt 2022-09-24T00:00:00.000Z";
 
 $requestConfiguration->queryParameters = $queryParameters;
 
