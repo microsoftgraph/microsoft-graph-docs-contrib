@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestFilter := "requestType eq 'Assign'"
+
+requestParameters := &graphconfig.PrivilegedOperationEventsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+}
+configuration := &graphconfig.PrivilegedOperationEventsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.PrivilegedOperationEvents().Get(context.Background(), configuration)
+
+
+```
