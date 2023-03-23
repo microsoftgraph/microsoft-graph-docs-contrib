@@ -1,8 +1,9 @@
 $schemaFileName = "Changelog.Schema.json"
-$schema = Get-Content $schemaFileName  | Out-String
+$schemaPath = "changelog/" + $schemaFileName
+$schema = Get-Content $schemaPath  | Out-String
 
 $err = "";
-Get-ChildItem -Filter "*.json" | Where-Object { $schemaFileName -notcontains $_.Name} | ForEach-Object { 
+Get-ChildItem -Filter "changelog/*.json" | Where-Object { $schemaFileName -notcontains $_.Name} | ForEach-Object { 
     
     # first test only json parsing to not mixup error
     $json = Get-Content $_ | Out-String -ErrorAction:SilentlyContinue
