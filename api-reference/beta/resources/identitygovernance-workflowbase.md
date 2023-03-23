@@ -40,9 +40,7 @@ None.
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
-|runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|A history of every time a workflow ran.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
-|userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The results of a user processed by the workflow.|
 
 ## JSON representation
 

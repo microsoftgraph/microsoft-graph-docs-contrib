@@ -5,30 +5,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewBookingStaffMemberBase()
 additionalData := map[string]interface{}{
 
 
  := graphmodels.New()
-"day@odata.type" := "#microsoft.graph.dayOfWeek"
-.Set"day@odata.type"(&"day@odata.type") 
+odataType := "#microsoft.graph.dayOfWeek"
+.SetOdataType(&odataType) 
 day := "monday"
 .SetDay(&day) 
-"timeSlots@odata.type" := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-.Set"timeSlots@odata.type"(&"timeSlots@odata.type") 
+odataType := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+.SetOdataType(&odataType) 
 timeSlots := []graphmodels.able {
 
 }
 .SetTimeSlots(timeSlots)
  := graphmodels.New()
-"day@odata.type" := "#microsoft.graph.dayOfWeek"
-.Set"day@odata.type"(&"day@odata.type") 
+odataType := "#microsoft.graph.dayOfWeek"
+.SetOdataType(&odataType) 
 day := "tuesday"
 .SetDay(&day) 
-"timeSlots@odata.type" := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-.Set"timeSlots@odata.type"(&"timeSlots@odata.type") 
+odataType := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+.SetOdataType(&odataType) 
 
 
  := graphmodels.New()
@@ -43,12 +43,12 @@ timeSlots := []graphmodels.Objectable {
 }
 .SetTimeSlots(timeSlots)
  := graphmodels.New()
-"day@odata.type" := "#microsoft.graph.dayOfWeek"
-.Set"day@odata.type"(&"day@odata.type") 
+odataType := "#microsoft.graph.dayOfWeek"
+.SetOdataType(&odataType) 
 day := "wednesday"
 .SetDay(&day) 
-"timeSlots@odata.type" := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-.Set"timeSlots@odata.type"(&"timeSlots@odata.type") 
+odataType := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+.SetOdataType(&odataType) 
 
 
  := graphmodels.New()
@@ -63,12 +63,12 @@ timeSlots := []graphmodels.Objectable {
 }
 .SetTimeSlots(timeSlots)
  := graphmodels.New()
-"day@odata.type" := "#microsoft.graph.dayOfWeek"
-.Set"day@odata.type"(&"day@odata.type") 
+odataType := "#microsoft.graph.dayOfWeek"
+.SetOdataType(&odataType) 
 day := "thursday"
 .SetDay(&day) 
-"timeSlots@odata.type" := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-.Set"timeSlots@odata.type"(&"timeSlots@odata.type") 
+odataType := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+.SetOdataType(&odataType) 
 
 
  := graphmodels.New()
@@ -83,12 +83,12 @@ timeSlots := []graphmodels.Objectable {
 }
 .SetTimeSlots(timeSlots)
  := graphmodels.New()
-"day@odata.type" := "#microsoft.graph.dayOfWeek"
-.Set"day@odata.type"(&"day@odata.type") 
+odataType := "#microsoft.graph.dayOfWeek"
+.SetOdataType(&odataType) 
 day := "friday"
 .SetDay(&day) 
-"timeSlots@odata.type" := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-.Set"timeSlots@odata.type"(&"timeSlots@odata.type") 
+odataType := "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+.SetOdataType(&odataType) 
 
 
  := graphmodels.New()
