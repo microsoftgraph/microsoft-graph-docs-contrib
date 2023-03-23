@@ -1,19 +1,19 @@
 ---
-title: "Get tenantReferences"
-description: "List the tenant references of an outboundSharedUserProfile."
+title: "Get outboundSharedUserProfile"
+description: "Get the details of an outboundSharedUserProfile."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get tenantReferences
+# Get outboundSharedUserProfile
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the tenant references of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
+Get the details of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
 
 ## Permissions
 
@@ -37,7 +37,7 @@ An account assigned with the Global Reader or Global Administrator role will be 
 -->
 
 ``` http
-GET /directory/outboundSharedUserProfiles/{userId}/tenants
+GET /directory/outboundSharedUserProfiles/{userId}
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [tenantReferences](../resources/tenantreference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [outboundSharedUserProfile](../resources/outboundshareduserprofile.md) object in the response body.
 
 ## Examples
 
@@ -60,12 +60,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_outboundshareduserprofile_tenants"
+  "name": "get_outboundshareduserprofile"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants
+GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
 ### Response
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantReference"
+  "@odata.type": "microsoft.graph.outboundSharedUserProfile"
 }
 -->
 
@@ -82,14 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/outboundSharedUserProfiles('c228b2ae-c4fb-4eda-9620-7e73dddd1cac')/tenants",
-  "value": [
-        {
-            "tenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
-        },
-        {
-            "tenantId":"5269b458-9474-4a44-996b-a30942d05000"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/outboundSharedUserProfiles/$entity",
+  "userId": "c228b2ae-c4fb-4eda-9620-7e73dddd1cac"
 }
 ```
