@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSitePageCanvaLayoutVerticalSection -SiteId $siteId -SitePageId $sitePageId -Property "emphasis,expand" 
+Get-MgSitePageCanvaLayoutVerticalSection -SiteId $siteId -SitePageId $sitePageId
 
 ```

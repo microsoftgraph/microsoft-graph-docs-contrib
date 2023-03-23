@@ -77,7 +77,7 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
-      - name: API metering
+      - name: Metered APIs
         items:
           - name: Overview
             href: metered-api-overview.md
@@ -472,12 +472,14 @@ items:
                   - name: Rules for Azure AD roles
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Customize and update rules for Azure AD roles
+                  - name: Customize and update rules
                     href: how-to-pim-update-rules.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Assign Azure AD roles with PIM
+                  - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+      - name: Industry data ETL (preview)
+        href: industrydata-concept-overview.md
       - name: Mail
         items:
           - name: Overview
@@ -719,6 +721,8 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
+          - name: Embed Teams in your app
+            href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
@@ -924,7 +928,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK (preview)
+          - name: Use the connectors SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-overview.md
