@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 
 > [!CAUTION]
-> The **getDownloadUrl** method is deprecated and will stop returning data on April, 30th 2023. Please use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-caseoperation-get.md) API instead.
+> The **getDownloadUrl** method is deprecated and will stop returning data on April 30th, 2023. Please use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-caseoperation-get.md) API instead.
 
 
 If an Azure blob URL is not provided in export action, the export operation exports the files to an internal store. Contents of this store can be fetched by calling into this function. This returns a download URL where the zipped content is delivered as a stream.
