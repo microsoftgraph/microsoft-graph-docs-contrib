@@ -1,6 +1,6 @@
 ---
 title: "List appliesTo"
-description: "List resources assigned to an application management policy."
+description: "List application or service principal resources assigned to an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
@@ -11,9 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-List application and service principal objects assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
+List application and service principal objects that are assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
 ## Permissions
 
@@ -38,8 +36,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves the **appId** and **displayName** of applications or service principals that are assigned the policy.
 
 ``` http
-
-https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=appId,displayName
+https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo?$select=appId,displayName
 ```
 
 For general information, see [OData query parameters](/graph/query-parameters).
@@ -67,41 +64,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_appManagementPolicyAppliesTo"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-appmanagementpolicyappliesto-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-appmanagementpolicyappliesto-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-appmanagementpolicyappliesto-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-appmanagementpolicyappliesto-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-appmanagementpolicyappliesto-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicyappliesto-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -119,7 +91,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
   "value": [
     {
       "@odata.type": "#microsoft.graph.application",
@@ -138,41 +110,14 @@ Content-type: application/json
 
 The following is an example of the request using $select query option.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_appManagementPolicyAppliesTo_select"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
+GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-appmanagementpolicyappliesto-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-appmanagementpolicyappliesto-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-appmanagementpolicyappliesto-select-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-appmanagementpolicyappliesto-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-appmanagementpolicyappliesto-select-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-appmanagementpolicyappliesto-select-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -189,7 +134,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects(id,appId,displayName,createdDateTime)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,appId,displayName,createdDateTime)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.application",
