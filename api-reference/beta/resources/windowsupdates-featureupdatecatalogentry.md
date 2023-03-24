@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents metadata for a Windows 10 feature update that you can approve for deployment.
 
-Windows 10 feature updates are released bi-annually and contain new features for Windows 10. Installing these updates increases the Windows 10 build number and typically results in a new servicing lifecycle and end of service date. Microsoft recommends organizations regularly deploy new feature updates as part of adopting Windows as a service.
+Windows 10 feature updates are released bi-annually and contain new features for Windows 10. Installing these updates increases the Windows 10 build number and typically results in a new servicing lifecycle and end of service date. We recommend organizations regularly deploy new feature updates as part of adopting Windows as a service.
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
