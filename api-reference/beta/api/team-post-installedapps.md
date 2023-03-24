@@ -53,7 +53,7 @@ POST /teams/{team-id}/installedApps
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
 
 > **Note**:
-> The permissions consented during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. Please follow this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
+> The permissions consented during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. Please follow this [example](../api/appcatalogs-list-teamsapps.md?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
 
 ## Response
 
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
-The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
+The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps.md?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
 
 #### Request
 
