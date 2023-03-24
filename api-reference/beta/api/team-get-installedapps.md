@@ -217,6 +217,8 @@ GET https://graph.microsoft.com/beta/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
   "blockType": "response",
   "name": "get_installedApps_in_team_select_consentedPermissionSet",
   "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": false
 } -->
 
 ```http

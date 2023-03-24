@@ -46,7 +46,7 @@ GET /chats/{chat-id}/installedApps/{app-installation-id}
 
 ## Response
 
-If successful, this method returns a `200 OK` and a [teamsApp](../resources/teamsapp.md) object in the body.
+If successful, this method returns a `200 OK` response code and [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
 
 ## Examples
 
@@ -136,6 +136,8 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
   "blockType": "response",
   "name": "get_installedApps_in_chat_select_consentedPermissionSet",
   "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": false
 } -->
 
 ```http
