@@ -21,7 +21,7 @@ The resource-specific permission associated with a teamsApp. Supported types for
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionType|teamsAppResourceSpecificPermissionType|The type of permission.The possible values are: `delegated`, `application`.|
+|permissionType|String|The type of permission.The possible values are: `delegated`, `application`.|
 |permissionValue|String|The name of the resource-specific permission.|
 
 ## Relationships
