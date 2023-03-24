@@ -266,7 +266,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "managedIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource type.",
+          "Description": "Added the [managedIdentity](https://learn.microsoft.com/graph/api/resources/managedIdentity?view=graph-rest-beta) resource type.",
           "Target": "managedIdentity"
         },
         {
@@ -274,7 +274,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "managedServiceIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the `managedServiceIdentity` property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the `managedServiceIdentity` property to the [signIn](https://learn.microsoft.com/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],
