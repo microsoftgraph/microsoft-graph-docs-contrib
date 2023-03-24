@@ -8,7 +8,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new ConditionalAccessPolicy
 {
-	DisplayName = "Policy for risky sign-in block access",
+	DisplayName = "Policy for risky sign-in",
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{
@@ -37,7 +37,7 @@ var requestBody = new ConditionalAccessPolicy
 		Operator = "OR",
 		BuiltInControls = new List<ConditionalAccessGrantControl?>
 		{
-			ConditionalAccessGrantControl.Block,
+			ConditionalAccessGrantControl.Mfa,
 		},
 	},
 };

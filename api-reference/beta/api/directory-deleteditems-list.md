@@ -67,7 +67,9 @@ The OData cast type is a required part of the URI and calling `GET /directory/de
 
 ## Optional query parameters
 
-This method supports the query parameters that are supported by the resource that is specified by the OData cast. That is, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` query parameters. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
+This method supports the query parameters that are supported by the resource that is specified by the OData cast. That is, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` query parameters. This API returns 100 objects by default and supports returning up to 999 objects per page using `$top`. 
+
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime

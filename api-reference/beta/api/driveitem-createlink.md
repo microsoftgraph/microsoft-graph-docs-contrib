@@ -59,7 +59,7 @@ The request should be a JSON object with the following properties.
 |password|String|Optional.The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 | retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
-|sendNotification|Boolean|If `true`, a [sharing link](../resources/permission.md#sharing-links) is sent to the recipient. Only works with recipients on OneDrive for Business and SharePoint. The default value is `false`. Optional.|
+|sendNotification|Boolean|If `true`, this method sends a [sharing link](../resources/permission.md#sharing-links) in an email to users specified in `recipients`. Applicable to OneDrive for Business or SharePoint. The default value is `false`. Optional.|
 
 ### Link types
 
