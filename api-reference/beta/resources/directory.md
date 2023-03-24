@@ -49,6 +49,7 @@ Inherits from [entity](entity.md).
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
 |pendingExternalUserProfiles|[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Collection of pending external user profiles representing collaborators in the directory that have not yet redeemed.|
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
+| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.             |
 
 ## JSON representation
 

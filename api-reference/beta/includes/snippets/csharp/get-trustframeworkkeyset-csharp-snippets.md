@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var trustFrameworkKeySet = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"].GetAsync();
+
 
 ```

@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.ApplicationRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ApplicationItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","appId","displayName","requiredResourceAccess"},
 }
-configuration := &graphconfig.ApplicationRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ApplicationItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
+Add an owner for the [servicePrincipal](../resources/serviceprincipal.md). Service principal owners can be users, the service principal itself, or other service principals.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -88,7 +88,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 ### Response

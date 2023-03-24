@@ -1,10 +1,13 @@
 ---
 title: "Register your app with the Azure AD v2.0 endpoint"
 description: "Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
+ms.date: 12/09/2022
 ---
 
 # Register an application with the Microsoft identity platform

@@ -1,7 +1,7 @@
 ---
 title: "Get emailAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of an emailAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -25,11 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global Reader
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
 
 ## HTTP request
 
@@ -118,7 +114,8 @@ Content-Type: application/json
     "id": "Email",
     "state": "enabled",
     "allowExternalIdToUseEmailOtp": "default",
-    "includeTargets": []
+    "includeTargets": [],
+    "excludeTargets": []
 }
 ```
 

@@ -16,8 +16,8 @@ An error that occurs during an action.
 ## Properties
 | Property	   | Type	|Description|
 |:-----|:-----|:-----|
-| message | String | The error message. |
 | code | String | The error code. |
+| message | String | The error message. |
 
 ## JSON representation
 

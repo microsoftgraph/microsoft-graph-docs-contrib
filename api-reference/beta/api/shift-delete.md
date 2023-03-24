@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

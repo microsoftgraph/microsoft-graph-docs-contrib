@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var term = new Microsoft.Graph.TermStore.Term
+var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Term
 {
-	Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
+	Labels = new List<Microsoft.Graph.Beta.Models.TermStore.LocalizedLabel>
 	{
-		new Microsoft.Graph.TermStore.LocalizedLabel
+		new Microsoft.Graph.Beta.Models.TermStore.LocalizedLabel
 		{
 			Name = "changedLabel",
 			LanguageTag = "en-US",
-			IsDefault = true
-		}
-	}
+			IsDefault = true,
+		},
+	},
 };
+var result = await graphClient.TermStore.Sets["{set-id}"].Terms["{term-id}"].PatchAsync(requestBody);
 
-await graphClient.TermStore.Sets["{termStore.set-id}"].Terms["{termStore.term-id}"]
-	.Request()
-	.UpdateAsync(term);
 
 ```

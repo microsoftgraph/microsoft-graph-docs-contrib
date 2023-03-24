@@ -97,7 +97,6 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 ---
 
-
 <br/>
 
 ### Response

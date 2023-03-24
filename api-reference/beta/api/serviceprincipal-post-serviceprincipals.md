@@ -28,10 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
-> [!IMPORTANT]
-> The following additional requirements must be met for an app to create a service principal:
-> + If the backing application is registered in the calling app's home tenant, the calling app must be the owner of the backing application.
-> + If the backing application is registered in another Azure AD tenant, the calling app must be assigned the `Cloud Application Administrator` or `Application Administrator` role.
+For multi-tenant apps, the calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
++ Global Administrator
++ Application Administrator
++ Cloud Application Administrator roles
+
+For single-tenant apps where the calling user is a non-admin user but is the owner of the backing application, the user must have the *Application Developer* role.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -96,7 +99,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here is an example of the response.

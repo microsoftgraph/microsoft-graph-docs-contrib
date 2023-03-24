@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -75,7 +75,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-

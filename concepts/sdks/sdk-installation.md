@@ -46,7 +46,6 @@ The Microsoft Graph Go SDK is included in the following packages:
 ```Shell
 go get github.com/microsoftgraph/msgraph-sdk-go
 go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
-go get github.com/microsoft/kiota-authentication-azure-go
 ```
 
 ## Install the Microsoft Graph Java SDK
@@ -135,18 +134,17 @@ Install-Module Microsoft.Graph
 If you're upgrading from the preview modules, run `Install-Module` with `AllowClobber` and `Force` parameters to avoid command name conflicts:
 
 ``` powershell
- Install-Module Microsoft.Graph -AllowClobber -Force
+Install-Module Microsoft.Graph -AllowClobber -Force
 ```
 
 ## Install the Microsoft Graph Python SDK (preview)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-The [Microsoft Graph Core Python Client Library (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core) is available on [PyPI](https://pypi.org/).
+The [Microsoft Graph Python SDK (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
 
-```Shell
-python -m pip install msgraph-core
-python -m pip install azure-identity
+```py
+pip install msgraph-sdk
 ```
 
 ## See also

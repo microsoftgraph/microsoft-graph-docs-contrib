@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewTokenLifetimePolicy()
 definition := []string {
-	"definition-value",
+	"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}",
 
 }
 requestBody.SetDefinition(definition)
-displayName := "displayName-value"
+displayName := "Contoso token lifetime policy"
 requestBody.SetDisplayName(&displayName) 
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 

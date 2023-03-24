@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageCatalog = new AccessPackageCatalog
+var requestBody = new AccessPackageCatalog
 {
 	DisplayName = "sales",
 	Description = "for employees working with sales and outside sales partners",
-	IsExternallyVisible = true
+	IsExternallyVisible = true,
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs
-	.Request()
-	.AddAsync(accessPackageCatalog);
 
 ```

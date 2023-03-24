@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.
+Update the properties of an [educationOutcome](../resources/educationoutcome.md) object. Only teachers can perform this operation.
 
 ## Permissions
 
@@ -138,7 +138,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -228,7 +227,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -338,7 +336,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

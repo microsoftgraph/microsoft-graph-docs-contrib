@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestFilter := "userDisplayName eq 'MyTestUser1'"
 
-requestParameters := &graphconfig.RiskyUsersRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.RiskyUsersRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

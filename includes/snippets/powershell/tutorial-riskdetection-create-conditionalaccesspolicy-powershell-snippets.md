@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	DisplayName = "Policy for risky sign-in block access"
+	DisplayName = "Policy for risky sign-in"
 	State = "enabled"
 	Conditions = @{
 		SignInRiskLevels = @(
@@ -28,7 +28,7 @@ $params = @{
 	GrantControls = @{
 		Operator = "OR"
 		BuiltInControls = @(
-			"block"
+			"mfa"
 		)
 	}
 }
