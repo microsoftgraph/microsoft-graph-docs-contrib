@@ -76,14 +76,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.hostTracker",
-    "id": "0e60c906-7f9b-9b03-174f-80876c800916",
-    "firstSeenDateTime": "String (timestamp)",
-    "lastSeenDateTime": "String (timestamp)",
-    "value": "String",
-    "kind": "String"
-  }
+  "@odata.type": "#microsoft.graph.security.hostTracker",
+  "id": "0e60c906-7f9b-9b03-174f-80876c800916",
+  "firstSeenDateTime": "String (timestamp)",
+  "lastSeenDateTime": "String (timestamp)",
+  "value": "String",
+  "kind": "String"
 }
 ```
 

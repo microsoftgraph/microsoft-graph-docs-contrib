@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.security.indicator](../resources/security-indicat
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|This relationship |
+|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|This relationship |
 
 ## JSON representation
 The following is a JSON representation of the resource.

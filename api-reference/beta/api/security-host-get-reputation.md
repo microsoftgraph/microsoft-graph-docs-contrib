@@ -4,6 +4,7 @@ description: "Get the hostReputation resources from the reputation navigation pr
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get hostReputation
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [hostReputatio
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_hostreputation"
+  "name": "get_hostreputation"
 }
 -->
 ``` http
@@ -67,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.hostReputation)"
+  "@odata.type": "microsoft.graph.security.hostReputation"
 }
 -->
 ``` json
