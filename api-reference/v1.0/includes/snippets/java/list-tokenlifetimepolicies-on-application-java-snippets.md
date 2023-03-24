@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-TokenLifetimePolicyCollectionWithReferencesPage tokenLifetimePolicies = graphClient.applications("acc848e9-e8ec-4feb-a521-8d58b5482e09").tokenLifetimePolicies()
+TokenLifetimePolicyCollectionWithReferencesPage tokenLifetimePolicies = graphClient.applications("3ccc9971-9ae7-45d6-8de8-263fd25fe116").tokenLifetimePolicies()
 	.buildRequest()
 	.get();
 
