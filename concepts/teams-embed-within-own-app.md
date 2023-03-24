@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Embed Microsoft Teams in your app
 
-This article describes how to embed the Microsoft Teams experience within your application. By embedding Teams in your app, your users can read and send Teams messages directly from your application, without having to switch between your application and Teams.
+This article describes how to embed the Microsoft Teams experience within your application. By embedding Teams in your app, your users can read and send Teams messages directly from your app, without having to switch between your app and Teams.
 
 To improve your app's response time and help lower costs, you'll want to minimize the number of times a message is read from Microsoft Graph. This article explains how to retrieve messages once and cache them, and then use change notifications to get only the subsequent messages.
 
