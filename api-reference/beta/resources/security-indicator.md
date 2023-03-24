@@ -28,7 +28,7 @@ This is an abstract type, representing an indicator of compromise or increased r
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|The artifact related to this Indicator.|
+|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|The artifact related to this Indicator.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

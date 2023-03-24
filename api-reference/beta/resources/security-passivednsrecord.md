@@ -35,22 +35,22 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) related to this passiveDnsRecord entry.|
-|parentHost|[host](../resources/security-host.md)|The parent [host](../resources/security-host.md) related to this passiveDnsRecord entry. Generally, this is the value that would have been searched to discover this passiveDnsRecord value.|
+|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) related to this passiveDnsRecord entry.|
+|parentHost|[microsoft.graph.security.host](../resources/security-host.md)|The parent [host](../resources/security-host.md) related to this passiveDnsRecord entry. Generally, this is the value that would have been searched to discover this passiveDnsRecord value.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security.passiveDns",
+  "@odata.type": "microsoft.graph.security.passiveDnsRecord",
   "baseType": "microsoft.graph.security.artifact",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.passiveDns",
+  "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
   "id": "String (identifier)",
   "firstSeenDateTime": "String (timestamp)",
   "lastSeenDateTime": "String (timestamp)",

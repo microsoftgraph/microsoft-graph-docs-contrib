@@ -34,7 +34,7 @@ The Relationship from an `intelligenceProfileIndicator` to an [artifact](../reso
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) that is reported in this `intelligenceProfileIndicator`. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md)|
+|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) that is reported in this `intelligenceProfileIndicator`. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

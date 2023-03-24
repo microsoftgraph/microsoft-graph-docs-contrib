@@ -47,7 +47,7 @@ Inherits from [microsoft.graph.security.host](../resources/security-host.md).
 |cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|`hostCookies` that are associated with this [host](../resources/security-host.md)|
 |passiveDns|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Passive DNS retrieval about this [host](../resources/security-host.md)|
 |passiveDnsReverse|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection| Reverse Passive DNS retrieval about this [host](../resources/security-host.md).|
-|reputation|[hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this [host](../resources/security-host.md)|
+|reputation|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this [host](../resources/security-host.md)|
 |trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|`hostTrackers` that are associated with this [host](../resources/security-host.md)|
 
 ## JSON representation

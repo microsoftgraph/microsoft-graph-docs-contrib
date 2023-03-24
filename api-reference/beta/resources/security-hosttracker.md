@@ -37,7 +37,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this `hostTracker`. When navigating to a `hostTracker` from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this `hostTracker`. When navigating to a `hostTracker` from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

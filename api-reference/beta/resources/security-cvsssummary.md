@@ -18,7 +18,7 @@ A `cvssSummary` represents a Common Vulnerability Scoring System (CVSS) evaluati
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|score|Decimal|The CVSS score about this vulnerability.|
+|score|Edm.Double|The CVSS score about this vulnerability.|
 |severity|microsoft.graph.security.vulnerabilitySeverity|The CVSS severity rating for this vulnerability. The possible values are: `none`, `low`, `medium`, `high`, `critical`, `unknownFutureValue`.|
 |vectorString|String|The CVSS vector string for this vulnerability.|
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.cvssSummary",
-  "score": "Decimal",
+  "score": "Double",
   "severity": "String",
   "vectorString": "String"
 }
