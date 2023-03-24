@@ -57,13 +57,13 @@ In the request body, provide a JSON representation of a [pendingExternalUserProf
 |companyName|String|The company name of the pending external user profile. |
 |deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object hasn't been deleted. |
 |department|String|The department of the pending external user profile. |
-|displayName|String|The display name of the pending external user profile.|
+|displayName|String|The display name of the pending external user profile. **Required**.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
 |id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
 |isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory.|
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
-|phoneNumber|String|The phone number of the pending external user profile. Must be in E164 format.|
+|phoneNumber|String|The phone number of the pending external user profile. Must be in E164 format. **Required**.|
 |supervisorId|String|The object id of the supervisor of the pending external user profile.|
 
 ## Response

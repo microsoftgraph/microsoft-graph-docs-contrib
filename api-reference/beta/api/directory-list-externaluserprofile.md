@@ -43,12 +43,8 @@ GET /directory/externalUserProfiles/{id}
 
 You can use `$filter` to only return specific external user profiles. The following properties can be used to `$filter`:
 
-* isEnabled
-* isDiscoverable
-* displayName
-* department
-* jobTitle
-* phoneNumber
+* companyName
+* supervisorId
 
 For more information, see [OData query parameters](/graph/query-parameters).
 

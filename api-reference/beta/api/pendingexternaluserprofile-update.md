@@ -61,7 +61,6 @@ The following table shows the properties that are able to be updated after you c
 |isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory.|
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
-|phoneNumber|String|The phone number of the pending external user profile. Must be in E164 format.|
 |supervisorId|String|The object id of the supervisor of the pending external user profile.|
 
 ## Response
