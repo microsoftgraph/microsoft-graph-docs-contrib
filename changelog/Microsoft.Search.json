@@ -1581,7 +1581,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "rankingHint",
           "ChangeType": "Addition",
-          "Description": "Added the [rankingHint](https://learn.microsoft.com/en-us/graph/api/resources/rankingHint?view=graph-rest-beta) resource.",
+          "Description": "Added the [rankingHint](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-rankingHint?view=graph-rest-beta) resource.",
           "Target": "rankingHint"
         },
         {
