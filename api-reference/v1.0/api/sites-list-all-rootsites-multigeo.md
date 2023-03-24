@@ -1,8 +1,12 @@
 ---
+title: "Enumerate sites across geographies"
+description: "List all root sites across geographies in an organization - OneDrive API"
 author: tkanaujia
 ms.author: tkanaujia
 ms.date: 24/03/2023
-title: List all root sites across geographies in an organization - OneDrive API
+ms.localizationpriority: medium
+ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 
 # Enumerate multigeo sites
@@ -15,7 +19,7 @@ For more guidance about building applications that use site discovery for scanni
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### List all site collections
 
