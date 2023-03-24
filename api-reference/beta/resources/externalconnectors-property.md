@@ -25,9 +25,10 @@ A [schema](externalconnectors-schema.md) property definition for a Microsoft Sea
 | isRefinable   | Boolean           | Specifies if the property is refinable.  Refinable properties can be used to filter search results in the [Search API](search-api-overview.md) and add a refiner control in the Microsoft Search user experience. Optional.  |
 | isRetrievable | Boolean           | Specifies if the property is retrievable. Retrievable properties are returned in the result set when items are returned by the search API. Retrievable properties are also available to add to the display template used to render search results. Optional. |
 | isSearchable  | Boolean           | Specifies if the property is searchable. Only properties of type `string` or `stringCollection` can be searchable. Non-searchable properties are not added to the search index. Optional. |
-| labels        | microsoft.graph.externalConnectors.label collection | Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.<br><br>The possible values are: `title`, `url`, `createdBy`, `lastModifiedBy`, `authors`, `createdDateTime`, `lastModifiedDateTime`, `fileName`, `fileExtension`, `unknownFutureValue`, `iconUrl`, `containerName`, `containerUrl`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `iconUrl`, `containerName`, `containerUrl`.|
+| labels        | microsoft.graph.externalConnectors.label collection | Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.<br><br>The possible values are: `title`, `url`, `createdBy`, `lastModifiedBy`, `authors`, `createdDateTime`, `lastModifiedDateTime`, `fileName`, `fileExtension`, `iconUrl`, `containerName`, `containerUrl`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `iconUrl`, `containerName`, `containerUrl`.|
 | name          | String            | The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: `:`, `;`, `,`, `(`, `)`, `[`, `]`, `{`, `}`, `%`, `$`, `+`, `!`, `*`, `=`, `&`, `?`, `@`, `#`, `\`, `~`, `'`, `"`, `<`, `>`, `` ` ``, `^`.  Required.                |
-| type          | microsoft.graph.externalConnectors.propertyType         | The data type of the property. Possible values are: `string`, `int64`, `double`, `dateTime`, `boolean`, `stringCollection`, `int64Collection`, `doubleCollection`, `dateTimeCollection`, `unknownFutureValue`. Required. |
+| rankingHint   | [microsoft.graph.externalConnectors.rankingHint](externalconnectors-rankinghint.md) | Specifies the property ranking hint. Ranking hints help Microsoft Search determine the search relevance of the content. |
+| type          | microsoft.graph.externalConnectors.propertyType         | The data type of the property. Possible values are: `string`, `int64`, `double`, `dateTime`, `boolean`, `stringCollection`, `int64Collection`, `doubleCollection`, `dateTimeCollection`. Required. |
 
 ## JSON representation
 
@@ -52,7 +53,10 @@ The following is a JSON representation of the resource.
   "isExactMatchRequired": true,
   "labels": [ "string" ],
   "name": "string",
-  "type": "string"
+  "type": "string",
+  "rankingHint": { 
+    "importanceScore": "string" 
+  }
 }
 ```
 
