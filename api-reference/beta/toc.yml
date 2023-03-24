@@ -11353,6 +11353,10 @@ items:
           href: api/educationassignment-delete-rubric.md
         - name: Get delta
           href: api/educationassignment-delta.md
+        - name: Activate assignment
+          href: api/educationassignment-activate.md
+        - name: Deactivate assignment
+          href: api/educationassignment-deactivate.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
