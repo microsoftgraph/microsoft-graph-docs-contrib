@@ -17,6 +17,7 @@ Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resour
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
+> - Currently, this operation is not supported in application context.
 
 ## Permissions
 
@@ -58,6 +59,9 @@ Following table shows additional parameters that can be used with the request bo
 |Parameter|Type|Description|
 |:---|:---|:---|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
+
+> **Note**:
+> The permissions consented during the install must be same as the resource-specific permissions present in the teamsAppDefinition of the app. Please follow this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
 
 ## Response
 

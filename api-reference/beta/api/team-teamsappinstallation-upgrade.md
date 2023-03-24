@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
 
+**Known issue:**
+> - Currently, this operation is not supported in application context.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,6 +51,9 @@ Following table shows additional parameters that can be used with the upgrade ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
+
+> **Note**:
+> The permissions consented during the upgrade must be same as the resource-specific permissions present in the teamsAppDefinition of the app. Please follow this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
 
 ## Response
 
