@@ -1,6 +1,6 @@
 ---
 title: "redundancyDetectionSettings resource type"
-description: "Redundancy settings for an eDiscovery case."
+description: "Represents redundancy settings for an eDiscovery case."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redundancy (email threading and near duplicate detection) settings for an eDiscovery case.
+Represents redundancy (email threading and near duplicate detection) settings for an eDiscovery case.
 
 
 ## Properties

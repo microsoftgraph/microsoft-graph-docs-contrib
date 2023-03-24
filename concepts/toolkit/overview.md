@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Toolkit overview"
-description: "Microsoft Graph Toolkit is a collection of authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
+description: "Use Microsoft Graph Toolkit to find authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---

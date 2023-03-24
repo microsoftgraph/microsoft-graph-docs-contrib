@@ -5,39 +5,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-message := msgraphsdk.NewMessage()
-requestBody.SetMessage(message)
+requestBody := graphmodels.NewSendMailPostRequestBody()
+message := graphmodels.NewMessage()
 subject := "9/9/2018: concert"
-message.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-message.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
+message.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The group represents Nevada."
-body.SetContent(&content)
-message.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-emailAddress := msgraphsdk.NewEmailAddress()
-	SetEmailAddress(emailAddress)
+body.SetContent(&content) 
+message.SetBody(body)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
 address := "AlexW@contoso.OnMicrosoft.com"
-	emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
-message.SetInternetMessageHeaders( []InternetMessageHeader {
-	msgraphsdk.NewInternetMessageHeader(),
+message.SetToRecipients(toRecipients)
+
+
+internetMessageHeader := graphmodels.NewInternetMessageHeader()
 name := "x-custom-header-group-name"
-	SetName(&name)
+internetMessageHeader.SetName(&name) 
 value := "Nevada"
-	SetValue(&value)
-	msgraphsdk.NewInternetMessageHeader(),
+internetMessageHeader.SetValue(&value) 
+internetMessageHeader1 := graphmodels.NewInternetMessageHeader()
 name := "x-custom-header-group-id"
-	SetName(&name)
+internetMessageHeader1.SetName(&name) 
 value := "NV001"
-	SetValue(&value)
+internetMessageHeader1.SetValue(&value) 
+
+internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
+	internetMessageHeader,
+	internetMessageHeader1,
+
 }
-graphClient.Me().SendMail().Post(requestBody)
+message.SetInternetMessageHeaders(internetMessageHeaders)
+requestBody.SetMessage(message)
+
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

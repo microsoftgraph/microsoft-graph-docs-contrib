@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: SearchResult
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 # SearchResult resource type
 

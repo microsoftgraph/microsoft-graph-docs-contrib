@@ -5,22 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewForwardPostRequestBody()
 comment := "comment-value"
-requestBody.SetComment(&comment)
-requestBody.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-emailAddress := msgraphsdk.NewEmailAddress()
-	SetEmailAddress(emailAddress)
+requestBody.SetComment(&comment) 
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
 name := "name-value"
-	emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
 address := "address-value"
-	emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(requestBody)
+requestBody.SetToRecipients(toRecipients)
+
+graphClient.Me().MessagesById("message-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

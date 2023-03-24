@@ -5,22 +5,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"enabled": true,
-	"timeZone": "America/Chicago",
-	"provisionStatus": "Completed",
-	"provisionStatusCode": nil,
-	"openShiftsEnabled": true,
-	"swapShiftsRequestsEnabled": true,
-	"offerShiftRequestsEnabled": true,
-	"timeOffRequestsEnabled": true,
-	"timeClockEnabled": true,
-}
-teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(requestBody)
+requestBody := graphmodels.NewSchedule()
+enabled := true
+requestBody.SetEnabled(&enabled) 
+timeZone := "America/Chicago"
+requestBody.SetTimeZone(&timeZone) 
+provisionStatus := graphmodels.COMPLETED_OPERATIONSTATUS 
+requestBody.SetProvisionStatus(&provisionStatus) 
+provisionStatusCode := null
+requestBody.SetProvisionStatusCode(&provisionStatusCode) 
+openShiftsEnabled := true
+requestBody.SetOpenShiftsEnabled(&openShiftsEnabled) 
+swapShiftsRequestsEnabled := true
+requestBody.SetSwapShiftsRequestsEnabled(&swapShiftsRequestsEnabled) 
+offerShiftRequestsEnabled := true
+requestBody.SetOfferShiftRequestsEnabled(&offerShiftRequestsEnabled) 
+timeOffRequestsEnabled := true
+requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
+timeClockEnabled := true
+requestBody.SetTimeClockEnabled(&timeClockEnabled) 
+timeClockSettings := graphmodels.NewTimeClockSettings()
+approvedLocation := graphmodels.NewGeoCoordinates()
+altitude := float64(1024.13)
+approvedLocation.SetAltitude(&altitude) 
+latitude := float64(26.13246)
+approvedLocation.SetLatitude(&latitude) 
+longitude := float64(24.34616)
+approvedLocation.SetLongitude(&longitude) 
+timeClockSettings.SetApprovedLocation(approvedLocation)
+requestBody.SetTimeClockSettings(timeClockSettings)
+
+result, err := graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

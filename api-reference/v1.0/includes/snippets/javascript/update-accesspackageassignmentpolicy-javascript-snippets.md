@@ -15,6 +15,7 @@ const accessPackageAssignmentPolicy = {
   displayName: 'All Users',
   description: 'All users can request for access to the directory.',
   allowedTargetScope: 'allDirectoryUsers',
+  automaticRequestSettings: null,
   specificAllowedTargets: [],
   expiration: {
       type: 'noExpiration'

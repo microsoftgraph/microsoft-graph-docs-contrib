@@ -47,7 +47,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 - Check [mail tips](/graph/api/resources/mailtips) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
 
-- Make use of the [people API](people-example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
+- Make use of the [people API](people-insights-overview.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
 
 - Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights](/graph/api/resources/officegraphinsights) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 
@@ -56,7 +56,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers) or [sending](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message) a new message, or a reply to a message.
 
-If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
+If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#4-open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#3-schema-extensions) discoverable and shareable.
 
 ## Where is the data?
 

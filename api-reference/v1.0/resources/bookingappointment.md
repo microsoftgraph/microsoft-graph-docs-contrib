@@ -10,26 +10,30 @@ doc_type: resourcePageType
 # bookingAppointment resource type
 
 Namespace: microsoft.graph
- 
+
 Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
+> [!NOTE]
+> If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](bookingbusiness.md). |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](bookingbusiness.md). |
 |[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
-|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
+|[Update](../api/bookingappointment-update.md) | None |Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
 |[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property     | Type |Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
-|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
+|anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
@@ -54,6 +58,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -70,6 +75,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "additionalInformation": "String",
+  "anonymousJoinWebUrl": "String",
   "customers": [
     {
       "@odata.type": "microsoft.graph.bookingCustomerInformation"
@@ -77,13 +84,15 @@ The following is a JSON representation of the resource.
   ],
   "duration": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "filledAttendeesCount": "Int32",
   "id": "String (identifier)",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
+  "maximumAttendeesCount": "Int32",
   "optOutOfCustomerEmail": "Boolean",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
-  "price": "Integer",
+  "price": "Double",
   "priceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",
@@ -93,11 +102,8 @@ The following is a JSON representation of the resource.
   "serviceNotes": "String",
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "maximumAttendeesCount": "Integer",
-  "filledAttendeesCount": "Integer"
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -112,5 +118,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

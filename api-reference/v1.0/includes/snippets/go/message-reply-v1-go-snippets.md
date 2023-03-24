@@ -5,31 +5,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-message := msgraphsdk.NewMessage()
-requestBody.SetMessage(message)
-message.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-emailAddress := msgraphsdk.NewEmailAddress()
-	SetEmailAddress(emailAddress)
+requestBody := graphmodels.NewReplyPostRequestBody()
+message := graphmodels.NewMessage()
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
 address := "samanthab@contoso.onmicrosoft.com"
-	emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Samantha Booth"
-	emailAddress.SetName(&name)
-	msgraphsdk.NewRecipient(),
-emailAddress := msgraphsdk.NewEmailAddress()
-	SetEmailAddress(emailAddress)
+emailAddress.SetName(&name) 
+recipient.SetEmailAddress(emailAddress)
+recipient1 := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
 address := "randiw@contoso.onmicrosoft.com"
-	emailAddress.SetAddress(&address)
+emailAddress.SetAddress(&address) 
 name := "Randi Welch"
-	emailAddress.SetName(&name)
+emailAddress.SetName(&name) 
+recipient1.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+	recipient1,
+
 }
+message.SetToRecipients(toRecipients)
+requestBody.SetMessage(message)
 comment := "Samantha, Randi, would you name the group please?"
-requestBody.SetComment(&comment)
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Reply(message-id).Post(requestBody)
+requestBody.SetComment(&comment) 
+
+graphClient.Me().MessagesById("message-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

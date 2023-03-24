@@ -5,22 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationAssignmentResource()
+requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
-requestBody.SetDistributeForStudentWork(&distributeForStudentWork)
-resource := msgraphsdk.NewEducationResource()
-requestBody.SetResource(resource)
+requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
+resource := graphmodels.NewEducationResource()
 displayName := "Issues and PR in guthub.docx"
-resource.SetDisplayName(&displayName)
-resource.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.educationWordResource",
-	"fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+resource.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"fileUrl" : "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2", 
 }
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(requestBody)
+resource.SetAdditionalData(additionalData)
+requestBody.SetResource(resource)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

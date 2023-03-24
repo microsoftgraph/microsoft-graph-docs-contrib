@@ -15,9 +15,10 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | Limit type | Limit |
 | ---------- | ----- |
-| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 10 |
-| [Items](/graph/api/resources/externalconnectors-externalitem) per connection | 700,000 |
-| Connection byte size | 70 GB |
+| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 30 |
+| [Items](/graph/api/resources/externalconnectors-externalitem) per connection | 5,000,000 |
+| Connection byte size | 500 GB |
+| Items per tenant | 50,000,000 |
 
 ## Schema limits
 
@@ -36,7 +37,7 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | Limit type | Limit |
 | ---------- | ----- |
-| Throughput limit to ingest items through a connection | 4 items/sec <br> (250 MB/hour) |
+| Throughput limit to ingest items through a connection | 25 items/sec |
 | Item size; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
 | Property size | N/A |
 

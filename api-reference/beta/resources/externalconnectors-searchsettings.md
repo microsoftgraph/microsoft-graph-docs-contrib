@@ -18,7 +18,7 @@ Collects all configurable settings related to search over connector content.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) collection|Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.|
+|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) collection|Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.|
 
 ## Relationships
 None.
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
       "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
       "priority": 0
     },
-        {
+    {
       "id": "String (identifier)",
       "rules": [
         {

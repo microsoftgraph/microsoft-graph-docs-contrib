@@ -54,7 +54,7 @@ conceptualContent:
         - url: ./security-concept-overview.md
           itemType: overview
           text: Connect Microsoft security products, services, and partners to streamline security operations.
-    - title: Microsoft Teams teamwork
+    - title: Microsoft Teams teamwork and communications
       links:
         - url: ./teams-concept-overview.md
           itemType: overview
@@ -106,9 +106,9 @@ additionalContent:
         - title: Learning paths and tutorials
           links:
             - text: Microsoft Graph fundamentals
-              url: /learn/paths/m365-msgraph-fundamentals/
+              url: /training/paths/m365-msgraph-fundamentals/
             - text: Microsoft learning paths
-              url: /learn/browse/?products=ms-graph&resource_type=learning%20path
+              url: /training/browse/?products=ms-graph&resource_type=learning%20path
             - text: Tutorials
               url: /graph/tutorials
         # Card

@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPersonAnnualEvent()
-allowedAudiences := "contacts"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-personAnnualEventId := "personAnnualEvent-id"
-graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(requestBody)
+requestBody := graphmodels.NewPersonAnnualEvent()
+allowedAudiences := graphmodels.CONTACTS_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+
+result, err := graphClient.Me().Profile().AnniversariesById("personAnnualEvent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

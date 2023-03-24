@@ -1,18 +1,18 @@
 ---
-title: "Create dataSource"
-description: "Create a new dataSource object."
+title: "Add additional sources"
+description: "Create a new additional source associated with an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create dataSource
+# Add additional sources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new dataSource object.
+Create a new [additional source](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,9 +42,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 In the request body, supply a JSON representation of the [dataSource](../resources/security-datasource.md) object.
 
-You can specify the following properties when creating a **dataSource**.
+You can specify the following properties when you create a **dataSource**.
 
->**Note:** Either **email** or **site** are required, not both. 
+>**Note:** Either **email** or **site** is required, but not both.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +54,7 @@ You can specify the following properties when creating a **dataSource**.
 
 ## Response
 
-If successful, this method returns a `201 Created`.
+If successful, this method returns a `201 Created` and a [microsoft.graph.security.dataSource](../resources/security-datasource.md) object in the response body.
 
 ## Examples
 
@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from_"
+  "name": "create_additional_source_associated_ediscovery_search"
 }
 -->
 ``` http
@@ -73,31 +73,35 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 {
     "@odata.type": "microsoft.graph.security.siteSource",
     "site": {
-        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+        "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
     }
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-additional-source-associated-ediscovery-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-datasource-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-additional-source-associated-ediscovery-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-additional-source-associated-ediscovery-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-additional-source-associated-ediscovery-search-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-additional-source-associated-ediscovery-search-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -109,16 +113,18 @@ The following is an example of the response
 HTTP/1.1 201 Created
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
-    "displayName": "Secret Site",
-    "createdDateTime": "2021-08-11T23:35:02.33986Z",
-    "id": "42393244-3838-4636-3437-453030334136",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/searches('c61a5860-d634-4d14-aea7-d82b6f4eb7af')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.siteSource",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/46303732-3434-4630-3832-363333363441",
+    "displayName": "Design - top secret",
+    "createdDateTime": "2022-07-15T22:45:36.1096267Z",
+    "holdStatus": "0",
+    "id": "46303732-3434-4630-3832-363333363441",
     "createdBy": {
+        "application": null,
         "user": {
-            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
-            "displayName": "Edisco Admin",
-            "userPrincipalname": "ediscoadmin@contoso.com"
+            "id": null,
+            "displayName": null
         }
     }
 }

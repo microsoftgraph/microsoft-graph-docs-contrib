@@ -5,21 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewMeetingRegistrationQuestion()
-answerInputType := "radioButton"
-requestBody.SetAnswerInputType(&answerInputType)
-requestBody.SetAnswerOptions( []String {
+requestBody := graphmodels.NewMeetingRegistrationQuestion()
+answerInputType := graphmodels.RADIOBUTTON_ANSWERINPUTTYPE 
+requestBody.SetAnswerInputType(&answerInputType) 
+answerOptions := []string {
 	"Software Engineer",
 	"Software Development Manager",
 	"Product Manager",
 	"Data scientist",
 	"Other",
+
 }
-onlineMeetingId := "onlineMeeting-id"
-meetingRegistrationQuestionId := "meetingRegistrationQuestion-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(requestBody)
+requestBody.SetAnswerOptions(answerOptions)
+
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().CustomQuestionsById("meetingRegistrationQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

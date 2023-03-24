@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPermission()
-requestBody.SetRoles( []String {
+requestBody := graphmodels.NewPermission()
+roles := []string {
 	"read",
+
 }
-siteId := "site-id"
-permissionId := "permission-id"
-graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(requestBody)
+requestBody.SetRoles(roles)
+
+result, err := graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

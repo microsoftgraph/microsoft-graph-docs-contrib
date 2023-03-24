@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
-	Select: "displayName,emailAddresses",
+requestParameters := &graphconfig.MeContactsRequestBuilderGetQueryParameters{
+	Select: [] string {"displayName","emailAddresses"},
 }
-options := &msgraphsdk.ContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Contacts().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

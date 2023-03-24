@@ -5,11 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-privilegedAccessId := "privilegedAccess-id"
-governanceRoleAssignmentRequestId := "governanceRoleAssignmentRequest-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequestsById(&governanceRoleAssignmentRequestId).UpdateRequest(privilegedAccess-id, governanceRoleAssignmentRequest-id).Post()
+
+result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequestsById("governanceRoleAssignmentRequest-id").UpdateRequest().Post(context.Background(), nil)
 
 
 ```

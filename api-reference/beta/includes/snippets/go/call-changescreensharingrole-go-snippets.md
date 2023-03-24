@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewRoleRequestBody()
-role := "viewer"
-requestBody.SetRole(&role)
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole(call-id).Post(requestBody)
+requestBody := graphmodels.NewChangeScreenSharingRolePostRequestBody()
+role := graphmodels.VIEWER_SCREENSHARINGROLE 
+requestBody.SetRole(&role) 
+
+graphClient.Communications().CallsById("call-id").ChangeScreenSharingRole().Post(context.Background(), requestBody, nil)
 
 
 ```

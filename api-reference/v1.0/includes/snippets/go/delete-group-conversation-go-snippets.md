@@ -5,11 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-groupId := "group-id"
-conversationId := "conversation-id"
-graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Delete()
+
+graphClient.GroupsById("group-id").ConversationsById("conversation-id").Delete(context.Background(), nil)
 
 
 ```

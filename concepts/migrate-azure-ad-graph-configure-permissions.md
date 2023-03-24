@@ -1,9 +1,12 @@
 ---
 title: "Configure required Azure AD Graph permissions for an app registration"
-description: "Configure required Azure AD Graph permissions for an app registration."
+description: "Before Azure AD Graph is retired, you can use these options to configure required permissions for your app registration."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Configure required Azure AD Graph permissions for an app registration
@@ -92,6 +95,8 @@ Azure AD Graph is identified as a servicePrincipal object with `00000002-0000-00
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
@@ -100,6 +105,32 @@ Azure AD Graph is identified as a servicePrincipal object with `00000002-0000-00
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000002-0000-0000-c000-000000000000'
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/migrate-azureadgraph-get-serviceprincipal-azureadgraph-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/migrate-azureadgraph-get-serviceprincipal-azureadgraph-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/migrate-azureadgraph-get-serviceprincipal-azureadgraph-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/migrate-azureadgraph-get-serviceprincipal-azureadgraph-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/migrate-azureadgraph-get-serviceprincipal-azureadgraph-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/migrate-azureadgraph-get-serviceprincipal-azureadgraph-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -112,7 +143,6 @@ In the response object, details for Azure AD Graph application permissions are l
   "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 
-```http
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -181,6 +211,8 @@ The following example calls the [Update application](/graph/api/application-upda
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "migrate-azureadgraph-update-application"
@@ -207,6 +239,32 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/migrate-azureadgraph-update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/migrate-azureadgraph-update-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/migrate-azureadgraph-update-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/migrate-azureadgraph-update-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/migrate-azureadgraph-update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -255,20 +313,7 @@ Azure AD Graph is identified as a ServicePrincipal object with `00000002-0000-00
 
 Create a new PowerShell script named **fetchPermissions.ps1** and add the following code. This code retrieves Azure AD Graph permission IDs and types. The output displays and formats the output of the **AppRoles** and **Oauth2PermissionScopes** objects.
 
-```powershell
-# Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All"
-
-# Retrieve the service principal details for Azure AD Graph API.
-$AADGraph = Get-MgServicePrincipal -Filter "appId eq '00000002-0000-0000-c000-000000000000'"
-
-# Format output of the request above and display AppRoles (application permissions) and oauth2PermissionScopes (delegated permissions)
-Echo "Azure AD Graph service principal object and its supported permissions:"
-Echo "Application permissions:"
-$AADGraph.AppRoles | Format-List
-Echo "Delegated permissions:"
-$AADGraph.Oauth2PermissionScopes | Format-List
-```
+[!INCLUDE [fetchPermissions](includes/azure-ad-graph-migration-scripts/fetchpermissions.md)]
 
 Run the script using the following command
 ```powershell
@@ -279,35 +324,7 @@ Run the script using the following command
 
 The following is an example of the output.
 
-```powershell
-Welcome To Microsoft Graph!
-Azure AD Graph service principal object and its supported permissions:
-Application permissions:
-
-
-AllowedMemberTypes   : {Application}
-Description          : Allows the app to read applications and service principals without a signed-in user
-DisplayName          : Read all applications
-Id                   : 3afa6a7d-9b1a-42eb-948e-1650a849e176
-IsEnabled            : True
-Origin               : Application
-Value                : Application.Read.All
-AdditionalProperties : {}
-
-Delegated permissions:
-
-
-AdminConsentDescription : Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.
-AdminConsentDisplayName : Sign in and read user profile
-Id                      : 311a71cc-e848-46a1-bdf8-97ff7156d8e6
-IsEnabled               : True
-Origin                  :
-Type                    : User
-UserConsentDescription  : Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.
-UserConsentDisplayName  : Sign you in and read your profile
-Value                   : User.Read
-AdditionalProperties    : {}
-```
+[!INCLUDE [fetchPermissions-Response](includes/azure-ad-graph-migration-scripts/fetchpermissions-response.md)]
 
 From this output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the permission ID of the *User.Read* delegated permission while `3afa6a7d-9b1a-42eb-948e-1650a849e176` is the permission ID of the *Application.Read.All* application permission.
 
@@ -320,53 +337,12 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 #### Request
 
-```powershell
-## Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All" 
+# [Azure AD Graph permissions only](#tab/updatepermissions-azureadgraph-powershell)
+[!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
+# [Azure AD and Microsoft Graph permissions](#tab/updatepermissions-azureadgraph-msgraph-powershell)
+[!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
 
-## Azure AD Graph's globally unique appId is 00000002-0000-0000-c000-000000000000 identified by the ResourceAppId
-$graphResourceId = "00000002-0000-0000-c000-000000000000"
-
-## Replace 581088ba-83c5-4975-b8af-11d2d7a76e98 with the object ID of the app you wish to add new permissions to
-$applicationId = "581088ba-83c5-4975-b8af-11d2d7a76e98" 
-
-## Define the new permissions to be added to the target app
-$newResourceAccess = @{  
-    ResourceAppId = $graphResourceId; 
-    ResourceAccess = @( 
-
-        ## Replace the following with values of ID and type for all permissions you want to configure for the app
-        @{ 
-            # User.Read scope (delegated permission) to sign-in and read user profile 
-            id = "311a71cc-e848-46a1-bdf8-97ff7156d8e6";  
-            type = "Scope"; 
-        },
-
-        @{ 
-            # Application.Read.All app role (application permission) to view application data
-            id = "3afa6a7d-9b1a-42eb-948e-1650a849e176"; 
-            type = "Role"; 
-        }
-    ) 
-}
-
-$app = Get-MgApplication -ApplicationId $applicationId
-
-## Get the existing permissions of the application
-$existingResourceAccess = $app.RequiredResourceAccess
-
-## If the app has no existing permissions, or no existing permissions from our new permissions resource
-if ( ([string]::IsNullOrEmpty($existingResourceAccess) ) -or ($existingResourceAccess | Where-Object { $_.ResourceAppId -eq $graphResourceId } -eq $null) ) {
-    $existingResourceAccess += $newResourceAccess
-    Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $existingResourceAccess
-}
-
-## If the app already has existing permissions from our new permissions resource
-else {
-    $newResourceAccess.ResourceAccess += $existingResourceAccess.ResourceAccess
-    Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $newResourceAccess
-}
-```
+---
 
 Run the script using the following command.
 ```powershell
@@ -387,3 +363,4 @@ Welcome To Microsoft Graph!
 
 + [application API](/graph/api/resources/application)
 + [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)
++ [Grant permissions programmatically without interactive consent](/graph/permissions-grant-via-msgraph)

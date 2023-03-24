@@ -5,15 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.UsedRequestBuilderGetQueryParameters{
-	Orderby: "LastUsed/LastAccessedDateTime%20desc",
+requestParameters := &graphconfig.MeInsightsUsedRequestBuilderGetQueryParameters{
+	Orderby: [] string {"LastUsed/LastAccessedDateTime desc"},
 }
-options := &msgraphsdk.UsedRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeInsightsUsedRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Insights().Used().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Me().Insights().Used().Get(context.Background(), configuration)
 
 
 ```

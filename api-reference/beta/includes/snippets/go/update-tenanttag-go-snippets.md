@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTenantTag()
+requestBody := graphmodels.NewTenantTag()
 displayName := "Onboarding"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Tenants that we are currently onboarding"
-requestBody.SetDescription(&description)
-tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(requestBody)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

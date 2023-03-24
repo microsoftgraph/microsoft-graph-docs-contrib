@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-outlookCategoryId := "outlookCategory-id"
-result, err := graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Get()
+
+result, err := graphClient.Me().Outlook().MasterCategoriesById("outlookCategory-id").Get(context.Background(), nil)
 
 
 ```

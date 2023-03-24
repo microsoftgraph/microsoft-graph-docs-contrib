@@ -5,17 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTeam()
+requestBody := graphmodels.NewTeam()
 displayName := "My Class Team"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "My Class Team’s Description"
-requestBody.SetDescription(&description)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
+requestBody.SetDescription(&description) 
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')", 
 }
-result, err := graphClient.Teams().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

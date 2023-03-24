@@ -5,16 +5,56 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"baseType": "microsoft.graph.externalItem",
-	"properties":  []Object {
+requestBody := graphmodels.NewSchemaPostRequestBody()
+additionalData := map[string]interface{}{
+	"baseType" : "microsoft.graph.externalItem", 
+
+
+ := graphmodels.New()
+name := "ticketTitle"
+.SetName(&name) 
+type := "String"
+.SetType(&type) 
+isSearchable := "true"
+.SetIsSearchable(&isSearchable) 
+isRetrievable := "true"
+.SetIsRetrievable(&isRetrievable) 
+labels := []string {
+	"title",
+
+}
+.SetLabels(labels)
+ := graphmodels.New()
+name := "priority"
+.SetName(&name) 
+type := "String"
+.SetType(&type) 
+isQueryable := "true"
+.SetIsQueryable(&isQueryable) 
+isRetrievable := "true"
+.SetIsRetrievable(&isRetrievable) 
+isSearchable := "false"
+.SetIsSearchable(&isSearchable) 
+ := graphmodels.New()
+name := "assignee"
+.SetName(&name) 
+type := "String"
+.SetType(&type) 
+isRetrievable := "true"
+.SetIsRetrievable(&isRetrievable) 
+
+	properties := []graphmodels.Objectable {
+		,
+		,
+		,
+
 	}
 }
-externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Schema().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.External().ConnectionsById("externalConnection-id").Schema().Post(context.Background(), requestBody, nil)
 
 
 ```

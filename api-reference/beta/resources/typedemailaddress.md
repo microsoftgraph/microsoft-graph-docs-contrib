@@ -3,7 +3,7 @@ title: "typedEmailAddress resource type"
 description: "Represents the name, email addresses, and their corresponding email address type of a contact."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: mail
 author: "kevinbellinger"
 ---
 

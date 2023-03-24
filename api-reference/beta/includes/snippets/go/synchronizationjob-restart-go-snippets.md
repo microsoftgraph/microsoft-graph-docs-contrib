@@ -5,22 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCriteriaRequestBody()
-criteria := msgraphsdk.NewSynchronizationJobRestartCriteria()
-requestBody.SetCriteria(criteria)
-resetScope := "Watermark, Escrows, QuarantineState"
-criteria.SetResetScope(&resetScope)
-headers := map[string]string{
-	"Authorization": "Bearer <token>"
-}
-options := &msgraphsdk.RestartRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer <token>")
+
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewRestartPostRequestBody()
+criteria := graphmodels.NewSynchronizationJobRestartCriteria()
+resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOBRESTARTSCOPE 
+criteria.SetResetScope(&resetScope) 
+requestBody.SetCriteria(criteria)
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -5,30 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAccessPackageResourceRequest()
+requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "de9315c1-272b-4905-924b-cc112ca180c7"
-requestBody.SetCatalogId(&catalogId)
-accessPackageResource := msgraphsdk.NewAccessPackageResource()
-requestBody.SetAccessPackageResource(accessPackageResource)
+requestBody.SetCatalogId(&catalogId) 
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Community Outreach"
-accessPackageResource.SetDisplayName(&displayName)
+accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/CSR"
-accessPackageResource.SetDescription(&description)
+accessPackageResource.SetDescription(&description) 
 resourceType := "SharePoint Online Site"
-accessPackageResource.SetResourceType(&resourceType)
+accessPackageResource.SetResourceType(&resourceType) 
 originId := "https://contoso.sharepoint.com/sites/CSR"
-accessPackageResource.SetOriginId(&originId)
+accessPackageResource.SetOriginId(&originId) 
 originSystem := "SharePointOnline"
-accessPackageResource.SetOriginSystem(&originSystem)
-accessPackageResourceEnvironment := msgraphsdk.NewAccessPackageResourceEnvironment()
-accessPackageResource.SetAccessPackageResourceEnvironment(accessPackageResourceEnvironment)
+accessPackageResource.SetOriginSystem(&originSystem) 
+accessPackageResourceEnvironment := graphmodels.NewAccessPackageResourceEnvironment()
 originId := "https://contoso-admin.sharepoint.com/"
-accessPackageResourceEnvironment.SetOriginId(&originId)
+accessPackageResourceEnvironment.SetOriginId(&originId) 
+accessPackageResource.SetAccessPackageResourceEnvironment(accessPackageResourceEnvironment)
+requestBody.SetAccessPackageResource(accessPackageResource)
 requestType := "AdminAdd"
-requestBody.SetRequestType(&requestType)
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+requestBody.SetRequestType(&requestType) 
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

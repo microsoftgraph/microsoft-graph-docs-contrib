@@ -62,7 +62,8 @@ The following example updates a **trustFrameworkPolicy**.
 
 <!-- {
   "blockType": "ignored",
-  "name": "update_trustframeworkpolicy"
+  "name": "update_trustframeworkpolicy",
+  "sampleKeys": ["B2C_1A_SocialAndLocalAccounts_Base"]
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/$value

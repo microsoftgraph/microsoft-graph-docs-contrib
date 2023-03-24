@@ -1,6 +1,6 @@
 ---
 title: "Migrate Exchange Web Services (EWS) apps to Microsoft Graph"
-description: "Describes how to migrate Exchange Web Services (EWS) apps to Microsoft Graph."
+description: "Because there is no longer an active investment in EWS APIs for Exchange Online, you can migrate your EWS apps that access Exchange Online to Microsoft Graph."
 author: "sumithra-maran"
 ms.localizationpriority: medium
 ms.prod: "exchange"

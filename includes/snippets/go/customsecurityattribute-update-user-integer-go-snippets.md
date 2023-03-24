@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+requestBody := graphmodels.NewUser()
+customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
+additionalData := map[string]interface{}{
+engineering := graphmodels.New()
+odataType := "#Int32"
+engineering.SetOdataType(&odataType) 
+numVendors := int32(8)
+engineering.SetNumVendors(&numVendors) 
+	customSecurityAttributes.SetEngineering(engineering)
+}
+customSecurityAttributes.SetAdditionalData(additionalData)
+requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
+
+result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+
+
+```

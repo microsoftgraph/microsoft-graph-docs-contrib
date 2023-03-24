@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md).
 
+This method supports federation. For one-on-one chats, at least one chat member must belong to the tenant the request initiates from. For group chats, the chat must be initiated by a user in the tenant the request initiates from.
+
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
@@ -66,21 +68,19 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_conversation_members_1"
+  "name": "list_conversation_members_1",
+  "sampleKeys": ["19:09ddc990-3821-4ceb-8019-24d39998f93e_48d31887-5fad-4d73-a9f5-3c356e68a038@unq.gbl.spaces"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
+GET https://graph.microsoft.com/v1.0/me/chats/19:09ddc990-3821-4ceb-8019-24d39998f93e_48d31887-5fad-4d73-a9f5-3c356e68a038@unq.gbl.spaces/members
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,8 +95,11 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-conversation-members-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-conversation-members-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -113,46 +116,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
-   "@odata.count":3,
-   "value":[
-      {
-         "@odata.type":"#microsoft.graph.aadUserConversationMember",
-         "id":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-         "roles":[
-            "owner"
-         ],
-         "displayName":"John Doe",
-         "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-         "email":null,
-         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
-         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
-      },
-      {
-         "@odata.type":"#microsoft.graph.aadUserConversationMember",
-         "id":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
-         "roles":[
-            "owner"
-         ],
-         "displayName":"Bart Hogan",
-         "userId":"2de87aaf-844d-4def-9dee-2c317f0be1b3",
-         "email":null,
-         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
-         "visibleHistoryStartDateTime":"0001-01-01T00:00:00Z"
-      },
-      {
-         "@odata.type":"#microsoft.graph.aadUserConversationMember",
-         "id":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-         "roles":[
-            "owner"
-         ],
-         "displayName":"Minna Pham",
-         "userId":"07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-         "email":null,
-         "tenantId":"6e5147da-6a35-4275-b3f3-fc069456b6eb",
-         "visibleHistoryStartDateTime":"2019-04-18T23:51:43.255Z"
-      }
-   ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/chats('19%3A09ddc990-3821-4ceb-8019-24d39998f93e_48d31887-5fad-4d73-a9f5-3c356e68a038%40unq.gbl.spaces')/members",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MCMjMCMjZGNkMjE5ZGQtYmM2OC00YjliLWJmMGItNGEzM2E3OTZiZTM1IyMxOTowOWRkYzk5MC0zODIxLTRjZWItODAxOS0yNGQzOTk5OGY5M2VfNDhkMzE4ODctNWZhZC00ZDczLWE5ZjUtM2MzNTZlNjhhMDM4QHVucS5nYmwuc3BhY2VzIyM0OGQzMTg4Ny01ZmFkLTRkNzMtYTlmNS0zYzM1NmU2OGEwMzg=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "Megan Bowen",
+            "visibleHistoryStartDateTime": "2021-11-25T01:56:31.313Z",
+            "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+            "email": "MeganB@M365x214355.onmicrosoft.com",
+            "tenantId": "dcd219dd-bc68-4b9b-bf0b-4a33a796be35"
+        }
+    ]
 }
 ```
 

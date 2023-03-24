@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.AppliesToRequestBuilderGetQueryParameters{
-	Select: "id,appId,displayName,createdDateTime",
+requestParameters := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetQueryParameters{
+	Select: [] string {"id","appId","displayName","createdDateTime"},
 }
-options := &msgraphsdk.AppliesToRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.PoliciesAppManagementPolicieItemAppliesToRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-appManagementPolicyId := "appManagementPolicy-id"
-result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).AppliesTo().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Policies().AppManagementPoliciesById("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
 
 
 ```

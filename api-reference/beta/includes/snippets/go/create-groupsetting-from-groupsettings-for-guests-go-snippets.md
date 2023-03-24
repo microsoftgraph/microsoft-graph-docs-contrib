@@ -5,20 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewDirectorySetting()
+requestBody := graphmodels.NewDirectorySetting()
 templateId := "08d542b9-071f-4e16-94b0-74abb372e3d9"
-requestBody.SetTemplateId(&templateId)
-requestBody.SetValues( []SettingValue {
-	msgraphsdk.NewSettingValue(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "AllowToAddGuests",
-		"value": "false",
-	}
+requestBody.SetTemplateId(&templateId) 
+
+
+settingValue := graphmodels.NewSettingValue()
+name := "AllowToAddGuests"
+settingValue.SetName(&name) 
+value := "false"
+settingValue.SetValue(&value) 
+
+values := []graphmodels.SettingValueable {
+	settingValue,
+
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Settings().Post(requestBody)
+requestBody.SetValues(values)
+
+result, err := graphClient.GroupsById("group-id").Settings().Post(context.Background(), requestBody, nil)
 
 
 ```

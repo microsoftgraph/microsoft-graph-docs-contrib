@@ -5,24 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewSecureScoreControlProfile()
-vendorInformation := msgraphsdk.NewSecurityVendorInformation()
-requestBody.SetVendorInformation(vendorInformation)
+requestBody := graphmodels.NewSecureScoreControlProfile()
+vendorInformation := graphmodels.NewSecurityVendorInformation()
 provider := "SecureScore"
-vendorInformation.SetProvider(&provider)
-vendorInformation.SetProviderVersion(nil)
-vendorInformation.SetSubProvider(nil)
+vendorInformation.SetProvider(&provider) 
+providerVersion := null
+vendorInformation.SetProviderVersion(&providerVersion) 
+subProvider := null
+vendorInformation.SetSubProvider(&subProvider) 
 vendor := "Microsoft"
-vendorInformation.SetVendor(&vendor)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"assignedTo": "",
-	"comment": "control is reviewed",
-	"state": "Reviewed",
+vendorInformation.SetVendor(&vendor) 
+requestBody.SetVendorInformation(vendorInformation)
+additionalData := map[string]interface{}{
+	"assignedTo" : "", 
+	"comment" : "control is reviewed", 
+	"state" : "Reviewed", 
 }
-secureScoreControlProfileId := "secureScoreControlProfile-id"
-graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

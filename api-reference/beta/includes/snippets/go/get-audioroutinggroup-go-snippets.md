@@ -5,11 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-callId := "call-id"
-audioRoutingGroupId := "audioRoutingGroup-id"
-result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Get()
+
+result, err := graphClient.Communications().CallsById("call-id").AudioRoutingGroupsById("audioRoutingGroup-id").Get(context.Background(), nil)
 
 
 ```

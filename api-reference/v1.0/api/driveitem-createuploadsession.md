@@ -1,13 +1,12 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Resumable file upload
+title: "driveItem: createUploadSession"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
 ---
-# Upload large files with an upload session
+# driveItem: createUploadSession
 
 Namespace: microsoft.graph
 
@@ -44,6 +43,7 @@ Alternatively, you can defer final creation of the file in the destination until
 POST /drives/{driveId}/items/{itemId}/createUploadSession
 POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
 POST /me/drive/items/{itemId}/createUploadSession
+POST /me/drive/items/{itemId}:/{fileName}:/createUploadSession
 POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
@@ -84,10 +84,10 @@ The following example controls the behavior if the filename is already taken, an
 
 ## Parameters
 
-| Parameter            | Type                          | Description
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
-| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+| Parameter   | Type                                                                           | Description                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Boolean                                                                        | If set to `true`, the final creation of the file in the destination will require an explicit request. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded.                                                                   |
 
 ### Request
 

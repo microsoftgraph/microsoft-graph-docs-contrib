@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPrivilegedApproval()
-approvalState := "approvalState-value"
-requestBody.SetApprovalState(&approvalState)
+requestBody := graphmodels.NewPrivilegedApproval()
+approvalState := graphmodels.APPROVALSTATE-VALUE_APPROVALSTATE 
+requestBody.SetApprovalState(&approvalState) 
 approverReason := "approverReason-value"
-requestBody.SetApproverReason(&approverReason)
-privilegedApprovalId := "privilegedApproval-id"
-graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(requestBody)
+requestBody.SetApproverReason(&approverReason) 
+
+result, err := graphClient.PrivilegedApprovalById("privilegedApproval-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

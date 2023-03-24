@@ -5,60 +5,85 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewContentType()
+requestBody := graphmodels.NewContentType()
 name := "updatedCt"
-requestBody.SetName(&name)
-documentSet := msgraphsdk.NewDocumentSet()
-requestBody.SetDocumentSet(documentSet)
+requestBody.SetName(&name) 
+documentSet := graphmodels.NewDocumentSet()
 shouldPrefixNameToFile := true
-documentSet.SetShouldPrefixNameToFile(&shouldPrefixNameToFile)
-documentSet.SetAllowedContentTypes( []ContentTypeInfo {
-	msgraphsdk.NewContentTypeInfo(),
+documentSet.SetShouldPrefixNameToFile(&shouldPrefixNameToFile) 
+
+
+contentTypeInfo := graphmodels.NewContentTypeInfo()
 id := "0x0101"
-	SetId(&id)
+contentTypeInfo.SetId(&id) 
 name := "Document"
-	SetName(&name)
+contentTypeInfo.SetName(&name) 
+
+allowedContentTypes := []graphmodels.ContentTypeInfoable {
+	contentTypeInfo,
+
 }
-documentSet.SetDefaultContents( []DocumentSetContent {
-	msgraphsdk.NewDocumentSetContent(),
+documentSet.SetAllowedContentTypes(allowedContentTypes)
+
+
+documentSetContent := graphmodels.NewDocumentSetContent()
 fileName := "a.txt"
-	SetFileName(&fileName)
-contentType := msgraphsdk.NewContentTypeInfo()
-	SetContentType(contentType)
+documentSetContent.SetFileName(&fileName) 
+contentType := graphmodels.NewContentTypeInfo()
 id := "0x0101"
-	contentType.SetId(&id)
-	msgraphsdk.NewDocumentSetContent(),
+contentType.SetId(&id) 
+documentSetContent.SetContentType(contentType)
+documentSetContent1 := graphmodels.NewDocumentSetContent()
 fileName := "b.txt"
-	SetFileName(&fileName)
-contentType := msgraphsdk.NewContentTypeInfo()
-	SetContentType(contentType)
+documentSetContent1.SetFileName(&fileName) 
+contentType := graphmodels.NewContentTypeInfo()
 id := "0x0101"
-	contentType.SetId(&id)
+contentType.SetId(&id) 
+documentSetContent1.SetContentType(contentType)
+
+defaultContents := []graphmodels.DocumentSetContentable {
+	documentSetContent,
+	documentSetContent1,
+
 }
-documentSet.SetSharedColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
+documentSet.SetDefaultContents(defaultContents)
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
 name := "Description"
-	SetName(&name)
+columnDefinition.SetName(&name) 
 id := "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
-	SetId(&id)
-	msgraphsdk.NewColumnDefinition(),
+columnDefinition.SetId(&id) 
+columnDefinition1 := graphmodels.NewColumnDefinition()
 name := "Address"
-	SetName(&name)
+columnDefinition1.SetName(&name) 
 id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
-	SetId(&id)
+columnDefinition1.SetId(&id) 
+
+sharedColumns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+	columnDefinition1,
+
 }
-documentSet.SetWelcomePageColumns( []ColumnDefinition {
-	msgraphsdk.NewColumnDefinition(),
+documentSet.SetSharedColumns(sharedColumns)
+
+
+columnDefinition := graphmodels.NewColumnDefinition()
 name := "Address"
-	SetName(&name)
+columnDefinition.SetName(&name) 
 id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
-	SetId(&id)
+columnDefinition.SetId(&id) 
+
+welcomePageColumns := []graphmodels.ColumnDefinitionable {
+	columnDefinition,
+
 }
-siteId := "site-id"
-contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(requestBody)
+documentSet.SetWelcomePageColumns(welcomePageColumns)
+requestBody.SetDocumentSet(documentSet)
+
+result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

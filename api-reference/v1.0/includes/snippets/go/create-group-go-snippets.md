@@ -5,23 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewGroup()
+requestBody := graphmodels.NewGroup()
 description := "Self help community for library"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Library Assist"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetGroupTypes( []String {
+requestBody.SetDisplayName(&displayName) 
+groupTypes := []string {
 	"Unified",
+
 }
+requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true
-requestBody.SetMailEnabled(&mailEnabled)
+requestBody.SetMailEnabled(&mailEnabled) 
 mailNickname := "library"
-requestBody.SetMailNickname(&mailNickname)
+requestBody.SetMailNickname(&mailNickname) 
 securityEnabled := false
-requestBody.SetSecurityEnabled(&securityEnabled)
-result, err := graphClient.Groups().Post(requestBody)
+requestBody.SetSecurityEnabled(&securityEnabled) 
+
+result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,36 +5,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-topic := msgraphsdk.NewTeamworkActivityTopic()
-requestBody.SetTopic(topic)
-source := "entityUrl"
-topic.SetSource(&source)
+requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+topic := graphmodels.NewTeamworkActivityTopic()
+source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
+topic.SetSource(&source) 
 value := "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}"
-topic.SetValue(&value)
+topic.SetValue(&value) 
+requestBody.SetTopic(topic)
 activityType := "approvalRequired"
-requestBody.SetActivityType(&activityType)
-previewText := msgraphsdk.NewItemBody()
-requestBody.SetPreviewText(previewText)
+requestBody.SetActivityType(&activityType) 
+previewText := graphmodels.NewItemBody()
 content := "Deployment requires your approval"
-previewText.SetContent(&content)
-recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+previewText.SetContent(&content) 
+requestBody.SetPreviewText(previewText)
+recipient := graphmodels.NewTeamworkNotificationRecipient()
+additionalData := map[string]interface{}{
+	"userId" : "569363e2-4e49-4661-87f2-16f245c5d66a", 
+}
+recipient.SetAdditionalData(additionalData)
 requestBody.SetRecipient(recipient)
-recipient.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
-	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
-}
-requestBody.SetTemplateParameters( []KeyValuePair {
-	msgraphsdk.NewKeyValuePair(),
+
+
+keyValuePair := graphmodels.NewKeyValuePair()
 name := "approvalTaskId"
-	SetName(&name)
+keyValuePair.SetName(&name) 
 value := "2020AAGGTAPP"
-	SetValue(&value)
+keyValuePair.SetValue(&value) 
+
+templateParameters := []graphmodels.KeyValuePairable {
+	keyValuePair,
+
 }
-chatId := "chat-id"
-graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(requestBody)
+requestBody.SetTemplateParameters(templateParameters)
+
+graphClient.ChatsById("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

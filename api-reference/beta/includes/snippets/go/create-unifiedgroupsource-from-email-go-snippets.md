@@ -5,18 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewUnifiedGroupSource()
-group := msgraphsdk.NewGroup()
-requestBody.SetGroup(group)
+requestBody := graphmodels.NewUnifiedGroupSource()
+group := graphmodels.NewGroup()
 mail := "SecretGroup@contoso.com"
-group.SetMail(&mail)
-includedSources := "mailbox, site"
-requestBody.SetIncludedSources(&includedSources)
-caseId := "case-id"
-custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSources().Post(requestBody)
+group.SetMail(&mail) 
+requestBody.SetGroup(group)
+includedSources := graphmodels.MAILBOX, SITE_SOURCETYPE 
+requestBody.SetIncludedSources(&includedSources) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").UnifiedGroupSources().Post(context.Background(), requestBody, nil)
 
 
 ```

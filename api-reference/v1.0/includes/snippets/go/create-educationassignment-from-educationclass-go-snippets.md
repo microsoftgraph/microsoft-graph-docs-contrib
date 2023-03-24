@@ -5,36 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewEducationAssignment()
-dueDateTime, err := time.Parse(time.RFC3339, "2021-09-07T00:00:00Z")
-requestBody.SetDueDateTime(&dueDateTime)
-displayName := "Reading test 09.03 #4"
-requestBody.SetDisplayName(&displayName)
-instructions := msgraphsdk.NewEducationItemBody()
-requestBody.SetInstructions(instructions)
-contentType := "text"
-instructions.SetContentType(&contentType)
+requestBody := graphmodels.NewEducationAssignment()
+dueDateTime , err := time.Parse(time.RFC3339, "2022-09-16T00:00:00Z")
+requestBody.SetDueDateTime(&dueDateTime) 
+displayName := "Reading test 09.14"
+requestBody.SetDisplayName(&displayName) 
+instructions := graphmodels.NewEducationItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+instructions.SetContentType(&contentType) 
 content := "Read chapter 4"
-instructions.SetContent(&content)
-grading := msgraphsdk.NewEducationAssignmentGradeType()
+instructions.SetContent(&content) 
+requestBody.SetInstructions(instructions)
+grading := graphmodels.NewEducationAssignmentGradeType()
+additionalData := map[string]interface{}{
+	"maxPoints" : int32(50) , 
+}
+grading.SetAdditionalData(additionalData)
 requestBody.SetGrading(grading)
-grading.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-	"maxPoints": ,
-}
-assignTo := msgraphsdk.NewEducationAssignmentRecipient()
+assignTo := graphmodels.NewEducationAssignmentRecipient()
 requestBody.SetAssignTo(assignTo)
-assignTo.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.educationAssignmentClassRecipient",
-}
-status := "draft"
-requestBody.SetStatus(&status)
+status := graphmodels.DRAFT_EDUCATIONASSIGNMENTSTATUS 
+requestBody.SetStatus(&status) 
 allowStudentsToAddResourcesToSubmission := true
-requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission)
-educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Post(requestBody)
+requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission) 
+
+result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

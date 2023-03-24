@@ -9,7 +9,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -46,6 +47,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure_docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
@@ -66,6 +73,7 @@
     "redirects/.openpublishing.redirection.0921.json",
     "redirects/.openpublishing.redirection.1121.json",
     "redirects/.openpublishing.redirection.1221.json",
-    "redirects/.openpublishing.redirection.0522.json"
+    "redirects/.openpublishing.redirection.0522.json",
+    "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

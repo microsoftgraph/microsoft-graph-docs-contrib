@@ -155,8 +155,7 @@ YW5vdGhlciBtYWlsLg0K
 You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event), [message](/graph/api/resources/message), [task](/graph/api/resources/outlooktask), or group [post](/graph/api/resources/post) that your app can access.
 
 To do that, identify the message attachment, and append the `$value` segment when 
-[getting that attachment](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
-). The following shows a few common ways to access an attachment. See [get attachment](/graph/api/attachment-get#http-request) for more information.
+[getting that attachment](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment). The following shows a few common ways to access an attachment. See [get attachment](/graph/api/attachment-get#http-request) for more information.
 
 If the message is attached to an event in the user's default calendar:
 <!-- { "blockType": "ignored" } -->
@@ -274,6 +273,8 @@ e.</p>
 ```
 
 ## Next steps
+
+Find out more about:
 
 - [Get the MIME content of an item attachment](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)

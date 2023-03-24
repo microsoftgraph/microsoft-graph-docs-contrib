@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
+requestBody := graphmodels.NewUploadPkcs12PostRequestBody()
 key := "Base64-encoded-pfx-content"
-requestBody.SetKey(&key)
+requestBody.SetKey(&key) 
 password := "password-value"
-requestBody.SetPassword(&password)
-trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12(trustFrameworkKeySet-id).Post(requestBody)
+requestBody.SetPassword(&password) 
+
+result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").UploadPkcs12().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,24 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewUser()
+requestBody := graphmodels.NewUser()
 accountEnabled := true
-requestBody.SetAccountEnabled(&accountEnabled)
+requestBody.SetAccountEnabled(&accountEnabled) 
 displayName := "Adele Vance"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 mailNickname := "AdeleV"
-requestBody.SetMailNickname(&mailNickname)
+requestBody.SetMailNickname(&mailNickname) 
 userPrincipalName := "AdeleV@contoso.onmicrosoft.com"
-requestBody.SetUserPrincipalName(&userPrincipalName)
-passwordProfile := msgraphsdk.NewPasswordProfile()
-requestBody.SetPasswordProfile(passwordProfile)
+requestBody.SetUserPrincipalName(&userPrincipalName) 
+passwordProfile := graphmodels.NewPasswordProfile()
 forceChangePasswordNextSignIn := true
-passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
+passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 password := "xWwvJ]6NMw+bWH-d"
-passwordProfile.SetPassword(&password)
-result, err := graphClient.Users().Post(requestBody)
+passwordProfile.SetPassword(&password) 
+requestBody.SetPasswordProfile(passwordProfile)
+
+result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

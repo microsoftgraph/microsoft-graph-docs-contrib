@@ -5,16 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.IdentityProviderBaseRequestBuilderGetQueryParameters{
-	Filter: "domains/any(x:%20x/id%20eq%20'contoso.com')",
+
+requestFilter := "domains/any"
+
+requestParameters := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-identityProviderBaseId := "identityProviderBase-id"
-result, err := graphClient.Directory().FederationConfigurationsById(&identityProviderBaseId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Get(context.Background(), configuration)
 
 
 ```

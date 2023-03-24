@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-onenotePageId := "onenotePage-id"
-graphClient.Me().Onenote().PagesById(&onenotePageId).Delete()
+
+graphClient.Me().Onenote().PagesById("onenotePage-id").Delete(context.Background(), nil)
 
 
 ```

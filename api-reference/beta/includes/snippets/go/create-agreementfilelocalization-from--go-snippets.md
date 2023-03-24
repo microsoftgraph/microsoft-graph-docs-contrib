@@ -5,25 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAgreementFileLocalization()
+requestBody := graphmodels.NewAgreementFileLocalization()
 fileName := "Contoso ToU for guest users (French)"
-requestBody.SetFileName(&fileName)
+requestBody.SetFileName(&fileName) 
 language := "fr-FR"
-requestBody.SetLanguage(&language)
+requestBody.SetLanguage(&language) 
 isDefault := false
-requestBody.SetIsDefault(&isDefault)
+requestBody.SetIsDefault(&isDefault) 
 isMajorVersion := false
-requestBody.SetIsMajorVersion(&isMajorVersion)
+requestBody.SetIsMajorVersion(&isMajorVersion) 
 displayName := "Contoso ToU for guest users (French)"
-requestBody.SetDisplayName(&displayName)
-fileData := msgraphsdk.NewAgreementFileData()
-requestBody.SetFileData(fileData)
+requestBody.SetDisplayName(&displayName) 
+fileData := graphmodels.NewAgreementFileData()
 data := []byte("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data")
-fileData.SetData(&data)
-agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Files().Post(requestBody)
+fileData.SetData(&data) 
+requestBody.SetFileData(fileData)
+
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Files().Post(context.Background(), requestBody, nil)
 
 
 ```

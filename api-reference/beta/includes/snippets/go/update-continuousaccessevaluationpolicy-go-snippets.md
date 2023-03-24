@@ -5,15 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewContinuousAccessEvaluationPolicy()
+requestBody := graphmodels.NewContinuousAccessEvaluationPolicy()
 migrate := true
-requestBody.SetMigrate(&migrate)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-}
-graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(requestBody)
+requestBody.SetMigrate(&migrate) 
+
+result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

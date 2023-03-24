@@ -44,7 +44,7 @@ POST /security/cases/ediscoveryCases
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
-You can specify the following properties when creating an **ediscoveryCase**.
+You can specify the following properties when you create an **ediscoveryCase**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +54,7 @@ You can specify the following properties when creating an **ediscoveryCase**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
 
 ## Examples
 
@@ -77,6 +77,7 @@ Content-Type: application/json
     "externalId": "324516"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverycase-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,12 +98,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverycase-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverycase-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "iosLobAppProvisioningConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource."
-author: "rolyon"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -31,8 +31,8 @@ This topic provides descriptions of the declared methods, properties and relatio
 |[hasPayloadLinks action](../api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
 
 ## Properties
-| Property | Type | Description |
-| --- | --- | --- |
+|Property|Type|Description|
+|:---|:---|:---|
 |id|String|Key of the entity.|
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
@@ -78,6 +78,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-

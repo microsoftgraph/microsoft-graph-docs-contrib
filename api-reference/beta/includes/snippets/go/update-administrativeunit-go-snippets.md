@@ -5,13 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewAdministrativeUnit()
-displayName := "Greater Seattle District Technical Schools"
-requestBody.SetDisplayName(&displayName)
-administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Patch(requestBody)
+requestBody := graphmodels.NewAdministrativeUnit()
+additionalData := map[string]interface{}{
+	"membershipType" : "Dynamic", 
+	"membershipRule" : "(user.country -eq \"United States\")", 
+	"membershipRuleProcessingState" : "On", 
+}
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

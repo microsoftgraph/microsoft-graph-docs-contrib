@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test",
-	"@odata.type": "#microsoft.graph.identityProvider",
+requestBody := graphmodels.New$refPatchRequestBody()
+additionalData := map[string]interface{}{
+	"odataId" : "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test", 
 }
-b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProviders().$ref().Patch(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserFlowIdentityProviders().Ref().Patch(context.Background(), requestBody, nil)
 
 
 ```

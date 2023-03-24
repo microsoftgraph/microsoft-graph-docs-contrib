@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamsApps = await graphClient.AppCatalogs.TeamsApps
-	.Request()
-	.Filter("externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-	.GetAsync();
+var result = await graphClient.AppCatalogs.TeamsApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'";
+});
+
 
 ```

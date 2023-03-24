@@ -5,14 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewCustodian()
-applyHoldToSources := "false"
-requestBody.SetApplyHoldToSources(&applyHoldToSources)
-caseId := "case-id"
-custodianId := "custodian-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(requestBody)
+requestBody := graphmodels.NewCustodian()
+applyHoldToSources := false
+requestBody.SetApplyHoldToSources(&applyHoldToSources) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

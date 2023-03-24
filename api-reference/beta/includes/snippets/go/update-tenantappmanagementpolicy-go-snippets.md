@@ -5,57 +5,77 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTenantAppManagementPolicy()
+requestBody := graphmodels.NewTenantAppManagementPolicy()
 isEnabled := true
-requestBody.SetIsEnabled(&isEnabled)
-applicationRestrictions := msgraphsdk.NewAppManagementConfiguration()
+requestBody.SetIsEnabled(&isEnabled) 
+applicationRestrictions := graphmodels.NewAppManagementConfiguration()
+
+
+passwordCredentialConfiguration := graphmodels.NewPasswordCredentialConfiguration()
+restrictionType := graphmodels.PASSWORDADDITION_APPCREDENTIALRESTRICTIONTYPE 
+passwordCredentialConfiguration.SetRestrictionType(&restrictionType) 
+maxLifetime := null
+passwordCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
+passwordCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+passwordCredentialConfiguration1 := graphmodels.NewPasswordCredentialConfiguration()
+restrictionType := graphmodels.PASSWORDLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
+passwordCredentialConfiguration1.SetRestrictionType(&restrictionType) 
+maxLifetime , err := abstractions.ParseISODuration("P4DT12H30M5S")
+passwordCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2017-01-01T10:37:00Z")
+passwordCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+passwordCredentialConfiguration2 := graphmodels.NewPasswordCredentialConfiguration()
+restrictionType := graphmodels.SYMMETRICKEYADDITION_APPCREDENTIALRESTRICTIONTYPE 
+passwordCredentialConfiguration2.SetRestrictionType(&restrictionType) 
+maxLifetime := null
+passwordCredentialConfiguration2.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
+passwordCredentialConfiguration2.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+passwordCredentialConfiguration3 := graphmodels.NewPasswordCredentialConfiguration()
+restrictionType := graphmodels.CUSTOMPASSWORDADDITION_APPCREDENTIALRESTRICTIONTYPE 
+passwordCredentialConfiguration3.SetRestrictionType(&restrictionType) 
+maxLifetime := null
+passwordCredentialConfiguration3.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+passwordCredentialConfiguration3.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+passwordCredentialConfiguration4 := graphmodels.NewPasswordCredentialConfiguration()
+restrictionType := graphmodels.SYMMETRICKEYLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
+passwordCredentialConfiguration4.SetRestrictionType(&restrictionType) 
+maxLifetime , err := abstractions.ParseISODuration("P40D")
+passwordCredentialConfiguration4.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+passwordCredentialConfiguration4.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+
+passwordCredentials := []graphmodels.PasswordCredentialConfigurationable {
+	passwordCredentialConfiguration,
+	passwordCredentialConfiguration1,
+	passwordCredentialConfiguration2,
+	passwordCredentialConfiguration3,
+	passwordCredentialConfiguration4,
+
+}
+applicationRestrictions.SetPasswordCredentials(passwordCredentials)
+
+
+keyCredentialConfiguration := graphmodels.NewKeyCredentialConfiguration()
+restrictionType := graphmodels.ASYMMETRICKEYLIFETIME_APPKEYCREDENTIALRESTRICTIONTYPE 
+keyCredentialConfiguration.SetRestrictionType(&restrictionType) 
+maxLifetime , err := abstractions.ParseISODuration("P30D")
+keyCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
+keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+
+keyCredentials := []graphmodels.KeyCredentialConfigurationable {
+	keyCredentialConfiguration,
+
+}
+applicationRestrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
-applicationRestrictions.SetPasswordCredentials( []PasswordCredentialConfiguration {
-	msgraphsdk.NewPasswordCredentialConfiguration(),
-restrictionType := "passwordAddition"
-	SetRestrictionType(&restrictionType)
-	SetMaxLifetime(nil)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-	msgraphsdk.NewPasswordCredentialConfiguration(),
-restrictionType := "passwordLifetime"
-	SetRestrictionType(&restrictionType)
-maxLifetime := "P4DT12H30M5S"
-	SetMaxLifetime(&maxLifetime)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2017-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-	msgraphsdk.NewPasswordCredentialConfiguration(),
-restrictionType := "symmetricKeyAddition"
-	SetRestrictionType(&restrictionType)
-	SetMaxLifetime(nil)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2021-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-	msgraphsdk.NewPasswordCredentialConfiguration(),
-restrictionType := "customPasswordAddition"
-	SetRestrictionType(&restrictionType)
-	SetMaxLifetime(nil)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-	msgraphsdk.NewPasswordCredentialConfiguration(),
-restrictionType := "symmetricKeyLifetime"
-	SetRestrictionType(&restrictionType)
-maxLifetime := "P40D"
-	SetMaxLifetime(&maxLifetime)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-}
-applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
-	msgraphsdk.NewKeyCredentialConfiguration(),
-restrictionType := "asymmetricKeyLifetime"
-	SetRestrictionType(&restrictionType)
-maxLifetime := "P30D"
-	SetMaxLifetime(&maxLifetime)
-restrictForAppsCreatedAfterDateTime, err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
-	SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime)
-}
-graphClient.Policies().DefaultAppManagementPolicy().Patch(requestBody)
+
+result, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

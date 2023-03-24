@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewDisableUserAccountsRequestBody()
+requestBody := graphmodels.NewForceDeletePostRequestBody()
 disableUserAccounts := true
-requestBody.SetDisableUserAccounts(&disableUserAccounts)
-domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(requestBody)
+requestBody.SetDisableUserAccounts(&disableUserAccounts) 
+
+graphClient.DomainsById("domain-id").ForceDelete().Post(context.Background(), requestBody, nil)
 
 
 ```

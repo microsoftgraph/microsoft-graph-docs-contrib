@@ -4,19 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups["{group-id}"].TransitiveMembers.GraphUser.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.QueryParameters.Orderby = new string []{ "displayName" };
+	requestConfiguration.QueryParameters.Search = "\"displayName:tier\"";
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","id" };
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var user = await graphClient.Groups["{group-id}"].TransitiveMembers
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Search("displayName:tier")
-	.Select("displayName,id")
-	.OrderBy("displayName")
-	.GetAsync();
 
 ```

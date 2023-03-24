@@ -1,15 +1,14 @@
 ---
-title: "Use the Microsoft Search API to trim duplicate search results (preview)"
-description: "Learn how to use the Microsoft Search API to trim duplicate search results."
+title: "Use the Microsoft Search API to trim duplicate search results"
+description: "You can use the Microsoft Search API trimDuplicates property in Microsoft Graph to trim duplicate search results. Only supported on SharePoint files."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to trim duplicate search results (preview)
+# Use the Microsoft Search API to trim duplicate search results
 
-In this article, you will learn how to use the Microsoft Search API to trim duplicate search results. Specify the **trimDuplicates** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object to trim away the duplicate search results. 
-The **trimDuplicates** property is only supported on files hosted in SharePoint. The default value is `false`.
+You can use the Microsoft Search API in Microsoft Graph to trim duplicate search results. Specify the **trimDuplicates** property in a [searchRequest](/graph/api/resources/searchrequest) object to trim away the duplicate search results. The **trimDuplicates** property is only supported on files hosted in SharePoint. The default value is `false`.
 
 ## Example
 The following example shows a request that searches for files hosted in SharePoint and uses the **trimDuplicates** property to trim away the duplicate search results.
@@ -141,4 +140,4 @@ The **trimDuplicates** property is not supported for the following resources: **
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

@@ -5,16 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.ServicePrincipalRequestBuilderGetQueryParameters{
-	Select: "customSecurityAttributes",
+requestParameters := &graphconfig.ServicePrincipalItemRequestBuilderGetQueryParameters{
+	Select: [] string {"customSecurityAttributes"},
 }
-options := &msgraphsdk.ServicePrincipalRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ServicePrincipalItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Get(context.Background(), configuration)
 
 
 ```

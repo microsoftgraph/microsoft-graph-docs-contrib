@@ -5,31 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewColumnDefinition()
+requestBody := graphmodels.NewColumnDefinition()
 description := "test"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 enforceUniqueValues := false
-requestBody.SetEnforceUniqueValues(&enforceUniqueValues)
+requestBody.SetEnforceUniqueValues(&enforceUniqueValues) 
 hidden := false
-requestBody.SetHidden(&hidden)
+requestBody.SetHidden(&hidden) 
 indexed := false
-requestBody.SetIndexed(&indexed)
+requestBody.SetIndexed(&indexed) 
 name := "Title"
-requestBody.SetName(&name)
-text := msgraphsdk.NewTextColumn()
-requestBody.SetText(text)
+requestBody.SetName(&name) 
+text := graphmodels.NewTextColumn()
 allowMultipleLines := false
-text.SetAllowMultipleLines(&allowMultipleLines)
+text.SetAllowMultipleLines(&allowMultipleLines) 
 appendChangesToExistingText := false
-text.SetAppendChangesToExistingText(&appendChangesToExistingText)
+text.SetAppendChangesToExistingText(&appendChangesToExistingText) 
 linesForEditing := int32(0)
-text.SetLinesForEditing(&linesForEditing)
+text.SetLinesForEditing(&linesForEditing) 
 maxLength := int32(255)
-text.SetMaxLength(&maxLength)
-siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Columns().Post(requestBody)
+text.SetMaxLength(&maxLength) 
+requestBody.SetText(text)
+
+result, err := graphClient.SitesById("site-id").Columns().Post(context.Background(), requestBody, nil)
 
 
 ```

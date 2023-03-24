@@ -1,22 +1,22 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to refine queries with aggregations"
-description: "You can use the Microsoft Search API to retrieve aggreations"
-author: "nmoreau"
+title: "Use the Microsoft Search API to refine queries with aggregations"
+description: "You can use the Microsoft Search API aggregationOption in Microsoft Graph to refine search results and show their distribution in the index."
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to refine queries with aggregations
+# Use the Microsoft Search API to refine queries with aggregations
 
-You can use the Microsoft Search API in Microsoft Graph to refine search results and show their distribution in the index. 
+You can use the Microsoft Search API in Microsoft Graph to refine search results and show their distribution in the index.
 
-To refine the results, in the [search request](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true), specify the [aggregationOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true). Each **aggregationOption** specifies the property on which the aggregation should be computed, and the number of [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) items to be returned in the response.
+To refine the results, in the [search request](/graph/api/resources/searchRequest), specify the [aggregationOption](/graph/api/resources/aggregationOption). Each **aggregationOption** specifies the property on which the aggregation should be computed and the number of [searchBucket](/graph/api/resources/searchBucket) items to be returned in the response.
 
 ## Example 1: Request aggregations by string fields
 
 The following example searches **listItem** resources and aggregates results by their file type, content class, and last modified time, all of which are string values.
 
-The response includes two [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) objects for the two aggregations:
+The response includes two [searchBucket](/graph/api/resources/searchbucket) objects for the two aggregations:
 - The **key** property specifies the actual value (by `fileType`, `contentclass`, or `lastModifiedTime`) for those matching **listItem** objects that are aggregated in the same bucket by that value.
 - The **count** property specifies the number of such objects aggregated in the same bucket. Note that this number is an approximation of the number of matches and will not provide an exact number of matches.
 - Buckets of results aggregated by file type are sorted by count in descending order. In this example, there are 3 buckets for 3 file types: `docx`, `xlsx`, and `pptx`.
@@ -373,8 +373,8 @@ Content-type: application/json
 
 ## Known limitations
 
-Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message** or **event**.
+Aggregations are supported only for SharePoint, OneDrive, or external items. They are not supported for **message** or **event** types.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

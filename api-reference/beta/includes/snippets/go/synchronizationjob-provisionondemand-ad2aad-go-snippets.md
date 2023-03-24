@@ -5,24 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewParametersRequestBody()
-requestBody.SetParameters( []SynchronizationJobApplicationParameters {
-	msgraphsdk.NewSynchronizationJobApplicationParameters(),
+requestBody := graphmodels.NewProvisionOnDemandPostRequestBody()
+
+
+synchronizationJobApplicationParameters := graphmodels.NewSynchronizationJobApplicationParameters()
 ruleId := "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
-	SetRuleId(&ruleId)
-	SetSubjects( []SynchronizationJobSubject {
-		msgraphsdk.NewSynchronizationJobSubject(),
+synchronizationJobApplicationParameters.SetRuleId(&ruleId) 
+
+
+synchronizationJobSubject := graphmodels.NewSynchronizationJobSubject()
 objectId := "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
-		SetObjectId(&objectId)
+synchronizationJobSubject.SetObjectId(&objectId) 
 objectTypeName := "user"
-		SetObjectTypeName(&objectTypeName)
-	}
+synchronizationJobSubject.SetObjectTypeName(&objectTypeName) 
+
+subjects := []graphmodels.SynchronizationJobSubjectable {
+	synchronizationJobSubject,
+
 }
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(requestBody)
+synchronizationJobApplicationParameters.SetSubjects(subjects)
+
+parameters := []graphmodels.SynchronizationJobApplicationParametersable {
+	synchronizationJobApplicationParameters,
+
+}
+requestBody.SetParameters(parameters)
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
 
 
 ```

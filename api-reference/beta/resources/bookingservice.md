@@ -72,33 +72,32 @@ The following is a JSON representation of the resource.
 ```json
 {
   "additionalInformation": "String",
+  "customQuestions": [
+    {
+      "@odata.type": "microsoft.graph.bookingQuestionAssignment"
+    }
+  ],
   "defaultDuration": "String (timestamp)",
   "defaultLocation": {"@odata.type": "microsoft.graph.location"},
-  "defaultPrice": 1024,
+  "defaultPrice": "Double",
   "defaultPriceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "languageTag": "String",
-  "isHiddenFromCustomers": true,
+  "isAnonymousJoinEnabled": "Boolean",
+  "isHiddenFromCustomers": "Boolean",
   "isLocationOnline": "Boolean",
+  "languageTag": "String",
+  "maximumAttendeesCount": "Int32",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "customQuestions": [
-    {
-      "@odata.type": "microsoft.graph.bookingQuestionAssignment"
-    }
-  ],
-  "maximumAttendeesCount": "Integer",
-  "isAnonymousJoinEnabled": "Boolean",
   "webUrl": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

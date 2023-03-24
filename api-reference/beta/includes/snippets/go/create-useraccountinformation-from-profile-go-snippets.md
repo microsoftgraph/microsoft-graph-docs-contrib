@@ -5,14 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewUserAccountInformation()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
+requestBody := graphmodels.NewUserAccountInformation()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
 countryCode := "NO"
-requestBody.SetCountryCode(&countryCode)
-result, err := graphClient.Me().Profile().Account().Post(requestBody)
+requestBody.SetCountryCode(&countryCode) 
+
+result, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
 
 
 ```

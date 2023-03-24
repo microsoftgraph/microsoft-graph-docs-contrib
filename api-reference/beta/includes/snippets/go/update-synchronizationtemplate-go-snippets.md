@@ -5,23 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"id": "Slack",
-	"applicationId": "{id}",
-	"factoryTag": "CustomSCIM",
-}
-headers := map[string]string{
-	"Authorization": "Bearer <token>"
-}
-options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer <token>")
+
+configuration := &graphconfig.ApplicationItemSynchronizationTemplateItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
-applicationId := "application-id"
-synchronizationTemplateId := "synchronizationTemplate-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+requestBody := graphmodels.NewTemplate()
+additionalData := map[string]interface{}{
+	"id" : "Slack", 
+	"applicationId" : "{id}", 
+	"factoryTag" : "CustomSCIM", 
+}
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.ApplicationsById("application-id").Synchronization().TemplatesById("synchronizationTemplate-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

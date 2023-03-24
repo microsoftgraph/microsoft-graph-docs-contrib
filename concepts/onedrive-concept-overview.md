@@ -2,7 +2,7 @@
 title: "OneDrive file storage API overview"
 description: "Use OneDrive, the files hub in Microsoft 365, to access files no matter where they are stored. Use Microsoft Graph to use a single API to work with these files. "
 ms.localizationpriority: high
-ms.prod: "onedrive"
+ms.prod: "files"
 ms.custom: scenarios:getting-started
 ---
 
@@ -60,8 +60,8 @@ Use the [delta API][] to see what changed since the last time your app synchroni
 ## API reference
 Looking for the API reference for this service?
 
-- [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
-- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
+- [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive)
+- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive)
 
 ## Next steps
 

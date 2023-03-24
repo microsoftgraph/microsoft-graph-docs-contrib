@@ -5,22 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTerm()
-requestBody.SetLabels( []LocalizedLabel {
-	msgraphsdk.NewLocalizedLabel(),
+requestBody := graphmodels.NewTerm()
+
+
+localizedLabel := graphmodels.NewLocalizedLabel()
 name := "changedLabel"
-	SetName(&name)
+localizedLabel.SetName(&name) 
 languageTag := "en-US"
-	SetLanguageTag(&languageTag)
+localizedLabel.SetLanguageTag(&languageTag) 
 isDefault := true
-	SetIsDefault(&isDefault)
+localizedLabel.SetIsDefault(&isDefault) 
+
+labels := []graphmodels.LocalizedLabelable {
+	localizedLabel,
+
 }
-siteId := "site-id"
-setId := "set-id"
-termId := "term-id"
-graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Patch(requestBody)
+requestBody.SetLabels(labels)
+
+result, err := graphClient.SitesById("site-id").TermStore().SetsById("set-id").TermsById("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

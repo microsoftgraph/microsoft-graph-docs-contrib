@@ -5,21 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Filter: "endswith(mail,'a@contoso.com')",
-	Orderby: "userPrincipalName",
-	Count: true,
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestFilter := "endswith(mail,'a@contoso.com')"
+requestCount := true
+
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+	Orderby: [] string {"userPrincipalName"},
+	Count: &requestCount,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
-}
-options := &msgraphsdk.UsersRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
 	Headers: headers,
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+result, err := graphClient.Users().Get(context.Background(), configuration)
 
 
 ```

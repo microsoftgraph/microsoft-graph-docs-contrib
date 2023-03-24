@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -30,6 +30,7 @@ Entity that represents an intent to apply settings to a device
 |[createCopy action](../api/intune-deviceintent-devicemanagementintent-createcopy.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Not yet documented|
 |[assign action](../api/intune-deviceintent-devicemanagementintent-assign.md)|None|Not yet documented|
 |[compare function](../api/intune-deviceintent-devicemanagementintent-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection|Not yet documented|
+|[getCustomizedSettings function](../api/intune-deviceintent-devicemanagementintent-getcustomizedsettings.md)|[deviceManagementIntentCustomizedSetting](../resources/intune-deviceintent-devicemanagementintentcustomizedsetting.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -76,7 +77,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-

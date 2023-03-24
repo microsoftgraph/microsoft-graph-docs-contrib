@@ -4,7 +4,7 @@ description: "A scoped-role membership describes a user's membership of a direct
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "abhijeetsinha"
+author: "DougKirschner"
 ---
 
 # scopedRoleMembership resource type

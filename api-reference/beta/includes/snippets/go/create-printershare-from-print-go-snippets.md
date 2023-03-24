@@ -5,15 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPrinterShare()
+requestBody := graphmodels.NewPrinterShare()
 name := "name-value"
-requestBody.SetName(&name)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}",
+requestBody.SetName(&name) 
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/beta/print/printers/{id}", 
 }
-result, err := graphClient.Print().Shares().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Print().Shares().Post(context.Background(), requestBody, nil)
 
 
 ```

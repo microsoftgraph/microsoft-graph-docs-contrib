@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("includeHiddenFolders", "true"));
 
-MailFolderCollectionPage childFolders = graphClient.me().mailFolders("{id}").childFolders()
+MailFolderCollectionPage childFolders = graphClient.me().mailFolders("AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAFNAAA=").childFolders()
 	.buildRequest( requestOptions )
 	.get();
 

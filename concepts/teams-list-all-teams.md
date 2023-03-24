@@ -1,6 +1,6 @@
 ---
 title: "List all teams in Microsoft Teams for an organization"
-description: "To list all teams "
+description: "Use the Microsoft Teams API in Microsoft Graph to list all teams in an organization by finding all groups that have teams and getting information for each team."
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -8,23 +8,26 @@ ms.prod: "microsoft-teams"
 
 # List all teams in Microsoft Teams for an organization
 
-To list all [teams](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) 
-in an organization (tenant), you find all groups that have teams, and then get information for each team.
+To use the Microsoft Teams API in Microsoft Graph to list all [teams](/graph/api/resources/team) in an organization (tenant), you find all groups that have teams, and then get information for each team.
 
 ## Get a list of groups
 
-#### Example 1: Get list of groups that contain a team
-To get a list of all [groups](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) in the organization that have teams,
-get a [list of all groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true) and then in code find the ones that have
-a **resourceProvisioningOptions** property that contains "Team".
+### Example 1: Get a list of groups that contain a team
+
+To get a list of all [groups](/graph/api/resources/group) in the organization that have teams, get a [list of all groups](/graph/api/group-list), and then in code find the ones that have a **resourceProvisioningOptions** property that contains "Team".
 
 Use the API with `$filter` to return only the groups that have teams.
+
+#### Request
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Note**: Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+
+#### Response
 
 The following is an example of the response. 
 
@@ -73,16 +76,22 @@ Content-type: application/json
 }
 ```
 
-#### Example 2: Get list of groups by selecting required properties only
+### Example 2: Get a list of groups by selecting required properties only
+
 Because groups are large objects, use `$select` to only get the properties of the group you care about.
+
+#### Request
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Note**: Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
-The following is an example of the response. 
+#### Response
+
+The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
@@ -108,16 +117,20 @@ Content-type: application/json
 
 ## Get team information for a group
 
-To get team information for the team in a particular group, 
-call the [get team](/graph/api/team-get?view=graph-rest-1.0&preserve-view=true) API and include the group ID.
+To get team information for the team in a particular group, call the [get team](/graph/api/team-get) API and include the group ID.
+
+### Request
 
 ```http
 GET /teams/{group-id}
 ```
 
+### Response
+
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -158,5 +171,6 @@ Content-type: application/json
 
 ## See also
 
-- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)
-- [List groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)
+- [List joinedTeams](/graph/api/user-list-joinedteams)
+- [List groups](/graph/api/group-list)
+- [Microsoft Teams API overview](teams-concept-overview.md)

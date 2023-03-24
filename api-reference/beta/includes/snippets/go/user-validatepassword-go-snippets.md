@@ -5,12 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewPasswordRequestBody()
+requestBody := graphmodels.NewValidatePasswordPostRequestBody()
 password := "1234567890"
-requestBody.SetPassword(&password)
-result, err := graphClient.Users().ValidatePassword().Post(requestBody)
+requestBody.SetPassword(&password) 
+
+result, err := graphClient.Users().ValidatePassword().Post(context.Background(), requestBody, nil)
 
 
 ```

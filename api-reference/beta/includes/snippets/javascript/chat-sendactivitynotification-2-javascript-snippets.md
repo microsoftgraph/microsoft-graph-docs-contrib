@@ -20,7 +20,7 @@ const sendActivityNotification = {
         content: 'Deployment requires your approval'
     },
     recipient: {
-        '@odata.type': 'Microsoft.Teams.GraphSvc.aadUserNotificationRecipient',
+        '@odata.type': 'microsoft.graph.aadUserNotificationRecipient',
         userId: '569363e2-4e49-4661-87f2-16f245c5d66a'
     },
     templateParameters: [

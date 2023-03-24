@@ -6,13 +6,13 @@ ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Get started with the cloud communications API
+# Register a bot with the cloud communications API
 
 You can use the cloud communications API in Microsoft Graph to build bots to respond to your customers' needs and facilitate collaboration. This article describes how to register your bot and then manage the state of your bot.
 
 ## Prerequisites
 
-Before  you get started, it will be helpful to familiarize yourself with the following:
+Before you get started, it will be helpful to familiarize yourself with the following:
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
@@ -67,4 +67,4 @@ In the requests to our APIs, sensitive data should not be sent in any client-sid
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

@@ -41,8 +41,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "protected": true,
-  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" },
+  "protected": true
 }
 
 ```

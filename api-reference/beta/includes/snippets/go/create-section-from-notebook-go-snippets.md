@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewOnenoteSection()
+requestBody := graphmodels.NewOnenoteSection()
 displayName := "Section name"
-requestBody.SetDisplayName(&displayName)
-notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).Sections().Post(requestBody)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").Sections().Post(context.Background(), requestBody, nil)
 
 
 ```

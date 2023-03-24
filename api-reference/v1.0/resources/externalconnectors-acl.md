@@ -32,9 +32,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "accessType": "String",
   "type": "String",
-  "value": "String",
-  "accessType": "String"
+  "value": "String"
 }
 ```
 

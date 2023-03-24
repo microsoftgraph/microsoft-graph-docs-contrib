@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AttachmentItem attachmentItem = new AttachmentItem();
 attachmentItem.attachmentType = AttachmentType.FILE;
 attachmentItem.name = "flower";
-attachmentItem.size = 3483322;
+attachmentItem.size = 3483322L;
 
 graphClient.me().events("AAMkADU5CCmSAAA=").attachments()
-	.createUploadSession(attachmentItem)
+	.createUploadSession(AttachmentCreateUploadSessionParameterSet
+		.newBuilder()
+		.withAttachmentItem(attachmentItem)
+		.build())
 	.buildRequest()
 	.post();
 

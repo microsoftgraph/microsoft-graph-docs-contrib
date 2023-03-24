@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph SDK overview"
-description: "Describes the SDKs that are available, the languages they support, and the value they provide to developers."
+description: "The Microsoft Graph SDK is available for the following languages: C#, PowerShell, TypeScript, JavaScript, Java, Go, PHP, and Python."
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
@@ -24,7 +24,16 @@ SDKs are currently available for the following languages:
 - [Java](https://github.com/microsoftgraph/msgraph-sdk-java)
 - [Go](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
-- [Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core)
+- [Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python)
+
+
+## SDKs in preview or GA status
+A release of an SDK can be in _preview_ status upon debut or a significant update. Do not assume that a preview release will always be promoted to generally available (GA) status. 
+
+In addition, do not use a preview release of an SDK in production apps, regardless of the version of Microsoft Graph API (v1.0 or beta) it uses.
+
+A release of an SDK in _GA_ status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, do not use in production apps a GA release of an SDK that accesses the Microsoft Graph API beta endpoint.
+
 
 ## Microsoft 365 developer subscription
 

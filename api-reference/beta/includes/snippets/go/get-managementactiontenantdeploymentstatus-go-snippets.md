@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-managementActionTenantDeploymentStatusId := "managementActionTenantDeploymentStatus-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatusesById(&managementActionTenantDeploymentStatusId).Get()
+
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatusesById("managementActionTenantDeploymentStatus-id").Get(context.Background(), nil)
 
 
 ```

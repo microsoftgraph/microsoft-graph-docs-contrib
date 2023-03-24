@@ -7,7 +7,7 @@
                     "ApiChange": "Header",
                     "ChangedApiName": "User-Agent",
                     "ChangeType": "Addition",
-                    "Description": "Added the `User-Agent` header as required for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-1.0) resource.",
+                    "Description": "Added the `User-Agent` header as required for the list and get operations of the [bitlockerRecoveryKey](https://learn.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-1.0) resource.",
                     "Target": "bitlockerRecoveryKey"
                 }
             ],
@@ -25,7 +25,7 @@
                     "ApiChange": "Header",
                     "ChangedApiName": "User-Agent",
                     "ChangeType": "Addition",
-                    "Description": "Added the `User-Agent` header as required for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
+                    "Description": "Added the `User-Agent` header as required for the list and get operations of the [bitlockerRecoveryKey](https://learn.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
                     "Target": "bitlockerRecoveryKey"
                 }
             ],
@@ -43,7 +43,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlocker",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bitlocker](https://docs.microsoft.com/en-us/graph/api/resources/bitlocker?view=graph-rest-beta) resource. This is the parent resource that exposes the **bitlockerRecoveryKey** navigation property which contains the actual BitLocker recovery key.",
+                    "Description": "Added the [bitlocker](https://learn.microsoft.com/en-us/graph/api/resources/bitlocker?view=graph-rest-beta) resource. This is the parent resource that exposes the **bitlockerRecoveryKey** navigation property which contains the actual BitLocker recovery key.",
                     "Target": "bitlocker"
                 },
                 {
@@ -51,7 +51,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlockerrecoverykey",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource and associated methods. This is the resource that exposes the actual recovery key.",
+                    "Description": "Added the [bitlockerRecoveryKey](https://learn.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource and associated methods. This is the resource that exposes the actual recovery key.",
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
@@ -77,7 +77,7 @@
                     "ApiChange": "Header",
                     "ChangedApiName": "ocp-client-name",
                     "ChangeType": "Change",
-                    "Description": "Changed the request header `ocp-client-name` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
+                    "Description": "Changed the request header `ocp-client-name` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://learn.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
@@ -85,7 +85,7 @@
                     "ApiChange": "Header",
                     "ChangedApiName": "ocp-client-version",
                     "ChangeType": "Change",
-                    "Description": "Changed the request header `ocp-client-version` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
+                    "Description": "Changed the request header `ocp-client-version` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://learn.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
                     "Target": "bitlockerRecoveryKey"
                 }
             ],

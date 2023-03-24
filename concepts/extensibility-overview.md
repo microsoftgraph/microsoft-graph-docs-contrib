@@ -1,163 +1,989 @@
 ---
 title: "Add custom data to resources using extensions"
-description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
-author: "dkershaw10"
+description: "You can extend Microsoft Graph with your own application data. Add custom properties for storing custom data in Microsoft Graph resources without requiring an external data store."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: high
+ms.prod: "extensions"
 ms.custom: graphiamtop20
+ms.date: 02/02/2023
 ---
 
 # Add custom data to resources using extensions
 
-Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
+Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph by adding custom properties to resource instances without requiring an external data store.
 
-For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier to the **user** resource.
+In this article, we'll discuss how Microsoft Graph supports extending its resources, the options available to add custom properties and when to use them.
 
-Microsoft Graph offers two types of extensions. Choose the extension type that best suits your application needs:
+> [!IMPORTANT]
+> Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+>
+> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with directory extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-directory-extensions).
 
-- **Open extensions**: A good way for developers to get started.
-- **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future, being able to perform input data validation and authorization.
+## Why add custom data to Microsoft Graph?
 
-> **Important:** You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+- As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
+- Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
+- As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
 
-## Supported resources
+## Custom data options in Microsoft Graph
 
-The following table lists the resources that support open and schema extensions, and indicates whether they have reached general availability (GA - available in both the v1.0 and beta endpoints) or are in preview (available only in the beta endpoint).
+Microsoft Graph offers four types of extensions for adding custom data.
 
-|Resource |Open extensions |Schema extensions |
-|:------- |:------ |:------ |
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) | Preview only | Preview only |
-| [Calendar event](/graph/api/resources/event) | GA | GA |
-| [Device](/graph/api/resources/device) | GA | GA |
-| [Group](/graph/api/resources/group) | GA | GA |
-| [Group calendar event](/graph/api/resources/event) | GA | GA |
-| [Group conversation post](/graph/api/resources/post) | GA | GA |
-| [Message](/graph/api/resources/message) | GA | GA |
-| [Organization](/graph/api/resources/organization) | GA | GA |
-| [Personal contact](/graph/api/resources/contact)| GA | GA |
-| [User](/graph/api/resources/user) | GA | GA |
-| [To-do task](/graph/api/resources/todotask) | GA | GA |
-| [To-do task list](/graph/api/resources/todotasklist) | GA | GA |
+- Extension attributes
+- Directory (Azure AD) extensions
+- Schema extensions
+- Open extensions
 
-You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
+### Extension attributes
 
-## Open extensions
+Azure AD offers a set of 15 extension attributes with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
-[Open extensions](/graph/api/resources/opentypeextension) (formerly known as Office 365 data extensions) are
-[open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
-add untyped app data directly to a resource instance.
+#### Developer experience
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+You can use the 15 extension attributes to store String values on **user** or **device** resource instances, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned when creating a new resource instance or when updating an existing resource instance. You can also filter by the values.
 
-Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
-The **extensionName** property is the only _pre-defined_, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant.
+##### Add or update data in extension attributes
 
-One way to do this is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`.
-
-Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
-
-You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation (note [known limitation](known-issues.md#extensions) for some of the supported resources).
-
-You can subsequently [read](/graph/api/opentypeextension-get, [update](/graph/api/opentypeextension-update), or [delete](/graph/api/opentypeextension-delete)
-the extension and its data.
-
-Open extension example: [Add custom data to users using open extensions](extensibility-open-users.md)
-
-## Schema extensions
+The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
 
 
-[Schema extensions](/graph/api/resources/schemaextension) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
-be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-extattributes1-15-update-user"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b
 
+{
+    "onPremisesExtensionAttributes": {
+        "extensionAttribute1": "skypeId.adeleVance",
+        "extensionAttribute13": null
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-extattributes1-15-update-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-extattributes1-15-update-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-extattributes1-15-update-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-extattributes1-15-update-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-extattributes1-15-update-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `204 No Content` response object.
+
+##### Read the extension attributes
+
+###### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-extattributes1-15-get"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExtensionAttributes
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-extattributes1-15-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-extattributes1-15-get-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-extattributes1-15-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-extattributes1-15-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/extensibility-overview-extattributes1-15-get-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-extattributes1-15-get-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+###### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,onPremisesExtensionAttributes)",
+    "value": [
+        {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "onPremisesExtensionAttributes": {
+                "extensionAttribute1": "Contractor",
+                "extensionAttribute2": "50",
+                "extensionAttribute3": null,
+                "extensionAttribute4": "1478354",
+                "extensionAttribute5": "10239390",
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": "11",
+                "extensionAttribute11": null,
+                "extensionAttribute12": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF47SPDLT)/cn=Recipients/cn=5ee781fc7egc7aa0b9394bddb44e7f04-Adele Vance",
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
+#### Considerations for using extension attribute properties
+
+The **onPremisesExtensionAttributes** object can be updated only for objects that aren't synced from on-premises AD.
+
+The 15 extension attributes are already predefined in Microsoft Graph and their property names can't be changed. Therefore, you can't use custom names such as **SkypeId** for the extension attributes. This requires you and the organization to be aware of the extension attribute properties that are in use so that the values aren't inadvertently overwritten by other apps.
+
+### Directory (Azure AD) extensions
+
+[Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly typed, discoverable and filterable extension experience for directory objects.
+
+Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific and supported directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
+
+For the list of resource types that can be specified as target objects for a directory extension, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+
+#### Developer experience
+
+Directory extension definitions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the REST API requests that you use to manage the resource instance.
+
+##### Define the directory extension
+
+Before you can add a directory extension to a resource instance, you must first define the directory extension.
+
+###### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-create"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
+
+{
+    "name": "jobGroupTracker",
+    "dataType": "String",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-directoryextensions-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-directoryextensions-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-directoryextensions-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-directoryextensions-create-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+###### Response
+
+A directory extension property named `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` is created with an extension name that follows the following naming convention: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties/$entity",
+    "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
+    "deletedDateTime": null,
+    "appDisplayName": "HR-sync-app",
+    "dataType": "String",
+    "isSyncedFromOnPremises": false,
+    "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+##### Add a directory extension property to a target object
+
+After defining the directory extension, you can now add it to an instance of a target object type. You can store data in the directory extension when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the directory extension when creating a new **user** object.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-add-users"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/users
+
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@contoso.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "JobGroupN"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-directoryextensions-add-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-directoryextensions-add-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-directoryextensions-add-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-add-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `201 Created` response code and a [user](/graph/api/resources/user) object in the response body.
+
+##### Retrieve a directory extension
+
+The following example shows how the directory extensions and associated data are presented on a resource instance. The extension property will be returned by default through the `beta` endpoint, but only on `$select` through the `v1.0` endpoint.
+
+##### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-get-users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-directoryextensions-get-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-directoryextensions-get-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-directoryextensions-get-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-directoryextensions-get-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/extensibility-overview-directoryextensions-get-users-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-get-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable)",
+    "value": [
+        {
+            "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+            "displayName": "Adele Vance",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": true
+        }
+    ]
+}
+```
+
+##### Update or delete directory extensions
+
+To update or delete the value of the directory extension for a resource instance, use the PATCH method. To delete the extension property and its associated value, set its value to `null`.
+
+The following request updates the value of one directory extension and deletes another extension property.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-directoryextensions-update-users"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a2
+
+{
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": null,
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-directoryextensions-update-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-directoryextensions-update-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-directoryextensions-update-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-directoryextensions-update-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `204 No Content` response code.
+
+#### Considerations for using directory extensions
+
+If you accidentally delete a directory extension definition, any data that's stored in the associated property becomes undiscoverable. To resolve this, create a new directory extension definition on the same owner app and with exactly the same name as the deleted definition.
+
+When a definition object is deleted before the corresponding extension property is updated to `null`, the property will still count against the 100-limit for the object.
+
+When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
+
+Deleting an owner app in the home tenant makes the associated directory extensions and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal. NO changes are made to other tenants where the app has been consented to.
+
+<!-- Needs further testing; weird behavior.
+If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.
+-->
+
+### Schema extensions
+
+[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you define your schema extension. Then, use it to extend supported resource instances with strongly typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
+
+For the list of resource types that support schema extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
+#### Developer experience
+
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
-- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you have verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. For example, if your vanity domain is contoso.com, you can define an **id** of, `contoso_mySchema`. This is the preferred option.
-- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  For example, `extkvbmkofy_mySchema`.
+- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
+- Alternatively, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
 
-You will see this unique name in **id** used as the name of the complex type that will store your custom data on the extended resource instance.
+The **id** will be the name of the complex type that will store your data on the extended resource instance.
 
-Unlike open extensions, managing schema extension definitions ([list](/graph/api/schemaextension-list), [create](/graph/api/schemaextension-post-schemaextensions), [get](/graph/api/schemaextension-get), [update](/graph/api/schemaextension-update), and [delete](/graph/api/schemaextension-delete))
-and managing their data (add, get, update, and delete data) are separate sets of API operations.
+Once you register a schema extension, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write data on any extensions defined on the target object.
 
-Because schema extensions are accessible as complex types in instances of the targeted resources, you can do CRUD operations on the custom data in a schema extension in the following ways:
+You manage the [schema extension definitions](/graph/api/resources/schemaextension) and the data in the corresponding schema extension property using separate sets of API operations. To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
 
-- Use the resource `POST` method to specify custom data when creating a new resource instance. Note that there is a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that requires creating a schema extension using a `PATCH` operation.
-- Use the resource `GET` method to read the custom data.
-- Use the resource `PATCH` method to add or update custom data in an existing resource instance.
-- Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance.
+- Use POST to store data in the schema extension property when you're creating a new user.
+- Use PATCH to either store data in the schema extension property or update or delete the stored data.
+    - To delete data from a property, set its value to `null`.
+    - To delete data from *all* properties, set its value to `null`. If all properties are `null`, the schema extension object is also deleted.
+    - To update any property, you must specify all properties in the request body. Otherwise, Microsoft Graph will update the unspecified properties to `null`.
+- Use GET to read the schema extension properties for all users or individual users in the tenant.
 
-Schema extension example: [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
+##### Define a schema extension
 
-### Schema extensions lifecycle
+###### Request
 
-When your app creates a schema extension definition, the app is marked as the owner of that schema extension.
 
-The owner app can move the extension through different states of a lifecycle, using a PATCH operation on its **status** property.
-Depending on the current state, the owner app may be able to update or delete the extension. Any updates to a schema extension should always only be additive and non-breaking.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-create"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/schemaExtensions
 
-|State |Lifecycle state behavior |
-|:-------------|:------------|
-| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (as long as the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
-| Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
-| Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
+{
+    "id": "graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
-> **Note:** Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-schemaextensions-create-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Supported property data types
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-schemaextensions-create-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-The following data types are supported when defining a property in a schema extension:
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-schemaextensions-create-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-| Property Type | Remarks |
-|:-------------|:------------|
-| Binary | 256 bytes maximum. |
-| Boolean | Not supported for messages, events and posts. |
-| DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
-| Integer | 32-bit value. Not supported for messages, events and posts. |
-| String | 256 characters maximum. |
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-schemaextensions-create-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> **Note:** Multi-value properties are not supported.
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Azure AD directory schema extensions
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-create-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject) resources. You can use the Microsoft Graph API to manage the [extension property definitions](/graph/api/resources/extensionproperty) and add, get, update and delete _data_ in the properties of these extensions.
+---
 
-## Permissions
+###### Response
 
-The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#schemaExtensions/$entity",
+    "id": "extkmpdyld2_graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "status": "InDevelopment",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
-Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.
+##### Add a schema extension to a resource instance
 
-## Data limits
+After defining the schema extension, you can now add the extension property to an instance of a target object type. You can store data in the schema extension when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the schema extension property when creating a new user object.
 
-### Open extension limits
 
-The following limits apply to directory resources (**user**, **group**, **device**, **administrativeUnit**, **organization**):
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-add-users"
+}-->
+```http
+POST https://graph.microsoft.com/beta/users
 
-- Each open extension can have up to 2 KB of data (including the extension definition itself).
-- An application can add up to two open extensions per resource instance.
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extkmpdyld2_graphLearnCourses": {
+        "courseId": 100,
+        "courseName": "Explore Microsoft Graph",
+        "courseType": "Online"
+    }
+}
+```
 
-The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-schemaextensions-add-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-- Each open extension is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](/graph/api/resources/opentypeextension).
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-schemaextensions-add-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Schema extension limits
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-An application may create no more than five **schema extension** definitions.
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-schemaextensions-add-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-add-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
+
+##### Update or delete a schema extension property
+
+Use the PATCH operation to update a schema extension or delete an existing schema extension. To delete the extension property and its associated value from the resource instance, set its value to `null`.
+
+The following example deletes the value of the **courseId** property and updates the **courseType** property. To delete the `extkmpdyld2_graphLearnCourses` extension property in its entirety, set its value to `null`.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-update-users"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e
+
+{
+    "extkmpdyld2_graphLearnCourses": {
+        "courseType": "Instructor-led",
+        "courseId": null
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-schemaextensions-update-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-schemaextensions-update-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-schemaextensions-update-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-update-users-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `204 No Content` response object.
+
+##### Retrieve the schema extension property
+
+To read the schema extension properties on a resource instance, specify the extension name in a `$select` request.
+
+###### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-schemaextensions-get-user"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?$select=id,displayName,extkmpdyld2_graphLearnCourses
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-schemaextensions-get-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-schemaextensions-get-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-schemaextensions-get-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-schemaextensions-get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/extensibility-overview-schemaextensions-get-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-schemaextensions-get-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+###### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,extkmpdyld2_graphLearnCourses)/$entity",
+    "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+    "displayName": "Adele Vance",
+    "extkmpdyld2_graphLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Instructor-led",
+        "courseName": "Explore Microsoft Graph",
+        "courseId": null
+    }
+}
+```
+
+#### Considerations for using schema extensions
+
+A schema extension must have an owner app. Ownership of the schema extension can't be reassigned to another app.
+
+Deleting a schema extension definition without setting the schema extension to `null` makes the property and its associated user data undiscoverable.
+
+Deleting an owner app in the home tenant doesn't delete the associated schema extension definition or the property and the data it stores. The schema extension property can still be read, deleted, or updated for users. However, the schema extension definition can't be updated.
+
+<!--
+To verify: Can you recover a schema extension definition by creating one with exactly the same structure (ID, name, properties) - Would only apply for schema extensions where the ID was in the format `{domainName}_{schemaName}`
+-->
+
+### Open extensions
+
+[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
+
+For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
+#### Developer experience
+
+Open extensions, together with their data, are accessible through the **extensions** navigation property of the resource instance. They allow you to group related properties for easier access and management.
+
+You define and manage open extensions on the fly on resource instances. They're considered unique for each object, and it's not required to apply a universally consistent pattern for all objects. For example, in the same tenant:
+
+- The user object for Adele can have an open extension named *socialSettings* that has three properties: **linkedInProfile**, **skypeId**, and **xboxGamertag**.
+- The user object for Bruno can have no open extension property.
+- The user object for Alex can have an open extension named *socialSettings* with five properties: **theme**, **color**, **language**, **font**, and **fontSize**.
+
+##### Create an open extension
+
+The following example shows an open extension definition with three properties and how the custom properties and associated data are presented on a resource instance.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-create-user"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
+
+{
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "extensionName": "com.contoso.socialSettings",
+    "skypeId": "skypeId.AdeleV",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "xboxGamerTag": "AwesomeAdele",
+    "id": "com.contoso.socialSettings"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-openextensions-create-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-openextensions-create-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-openextensions-create-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-create-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `201 Created` response code and an [openTypeExtension](/graph/api/resources/opentypeextension) object in the response body.
+
+##### Update an existing open extension
+
+To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties will be updated to `null` and deleted from the open extension.
+
+The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-update-user"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
+{
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-openextensions-update-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-openextensions-update-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-openextensions-update-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-update-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+This request returns a `204 No Content` response code.
+
+
+##### Retrieve the open extensions
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "extensibility-overview-openextensions-get-user"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('3fbd929d-8c56-4462-851e-0eb9a7b3a2a5')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "id": "com.contoso.socialSettings"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/extensibility-overview-openextensions-get-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/extensibility-overview-openextensions-get-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/extensibility-overview-openextensions-get-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/extensibility-overview-openextensions-get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/extensibility-overview-openextensions-get-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Considerations for using open extensions
+
+Deleting a creator app doesn't affect the open extension and the data it stores.
+
+## Choose an extension type for your application
+
+The table below contrasts and compares the extension types, which should help you decide which option is most appropriate for your scenario.
+
+| Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
+|--|--|--|--|--|
+| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] |
+| Strongly typed | No | Yes | Yes | No |
+| Filterable | Yes | Yes | Yes | No |
+| Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
+| Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
+| Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
+| Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
+| Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
+| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2 Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
+
+> [!NOTE]
+> 
+> <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+>
+> <sup>2</sup> These limits on open extensions apply to the following directory resources: **user**, **group**, **device**, <!--**administrativeUnit**,--> and **organization**.
+>
+> <sup>3</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
+>
+> You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
+
+## Permissions and privileges
+
+The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, for an app to update any user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* Microsoft Graph permission.
 
 ## Known limitations
 
 For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
 
-## Extension examples
+## Next steps
 
+- [Training module: Add custom data to your app using extensions in Microsoft Graph](/training/modules/msgraph-extensions/)
 - [Add custom data to users using open extensions](extensibility-open-users.md)
-
 - [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
-## See also
+<!-- Links -->
 
-- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
-
-- [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+[user]: /graph/api/resources/user
+[group]: /graph/api/resources/group
+[contact]: /graph/api/resources/contact
+[administrativeUnit]: /graph/api/resources/administrativeunit
+[application]: /graph/api/resources/application
+[device]: /graph/api/resources/device
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
+[organization]: /graph/api/resources/organization
+[post]: /graph/api/resources/post
+[todoTask]: /graph/api/resources/todotask
+[todoTaskList]: /graph/api/resources/todotasklist
+[servicePrincipal]: /graph/api/resources/serviceprincipal
+[AD connect]: /azure/active-directory/hybrid/whatis-hybrid-identity?context=/azure/active-directory/enterprise-users/context/ugr-context
+[ADConnect-YES]: /azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions
+[dynamic membership rules]: /azure/active-directory/enterprise-users/groups-dynamic-membership
+[DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
+[DirectoryExt-CustomClaims]: /azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims
+[B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
+[MAPI-named-property]: /office/client-developer/outlook/mapi/mapi-named-properties

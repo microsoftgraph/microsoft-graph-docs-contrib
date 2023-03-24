@@ -5,42 +5,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewDeployment()
-content := msgraphsdk.NewDeployableContent()
+requestBody := graphmodels.NewDeployment()
+content := graphmodels.NewDeployableContent()
+additionalData := map[string]interface{}{
+catalogEntry := graphmodels.New()
+id := "f341705b-0b15-4ce3-aaf2-6a1681d78606"
+catalogEntry.SetId(&id) 
+	content.SetCatalogEntry(catalogEntry)
+}
+content.SetAdditionalData(additionalData)
 requestBody.SetContent(content)
-content.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-	"version": "20H2",
+settings := graphmodels.NewDeploymentSettings()
+schedule := graphmodels.NewScheduleSettings()
+gradualRollout := graphmodels.NewGradualRolloutSettings()
+durationBetweenOffers , err := abstractions.ParseISODuration("P7D")
+gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
+additionalData := map[string]interface{}{
+	"devicePerOffer" : int32(100) , 
 }
-settings := msgraphsdk.NewDeploymentSettings()
-requestBody.SetSettings(settings)
-rollout := msgraphsdk.NewRolloutSettings()
-settings.SetRollout(rollout)
-devicesPerOffer := int32(100)
-rollout.SetDevicesPerOffer(&devicesPerOffer)
-monitoring := msgraphsdk.NewMonitoringSettings()
-settings.SetMonitoring(monitoring)
-monitoring.SetMonitoringRules( []MonitoringRule {
-	msgraphsdk.NewMonitoringRule(),
-signal := "rollback"
-	SetSignal(&signal)
+gradualRollout.SetAdditionalData(additionalData)
+schedule.SetGradualRollout(gradualRollout)
+settings.SetSchedule(schedule)
+monitoring := graphmodels.NewMonitoringSettings()
+
+
+monitoringRule := graphmodels.NewMonitoringRule()
+signal := graphmodels.ROLLBACK_MONITORINGSIGNAL 
+monitoringRule.SetSignal(&signal) 
 threshold := int32(5)
-	SetThreshold(&threshold)
-action := "pauseDeployment"
-	SetAction(&action)
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
-	}
+monitoringRule.SetThreshold(&threshold) 
+action := graphmodels.PAUSEDEPLOYMENT_MONITORINGACTION 
+monitoringRule.SetAction(&action) 
+
+monitoringRules := []graphmodels.MonitoringRuleable {
+	monitoringRule,
+
 }
-settings.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-}
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
+monitoring.SetMonitoringRules(monitoringRules)
+settings.SetMonitoring(monitoring)
+requestBody.SetSettings(settings)
+
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(context.Background(), requestBody, nil)
 
 
 ```

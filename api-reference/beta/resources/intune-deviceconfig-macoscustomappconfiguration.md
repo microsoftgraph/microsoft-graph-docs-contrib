@@ -1,7 +1,7 @@
 ---
 title: "macOSCustomAppConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomAppConfiguration resource."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -30,8 +30,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |[Update macOSCustomAppConfiguration](../api/intune-deviceconfig-macoscustomappconfiguration-update.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Update the properties of a [macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md) object.|
 
 ## Properties
-| Property | Type | Description |
-| --- | --- | --- |
+|Property|Type|Description|
+|:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -105,7 +105,3 @@ Here is a JSON representation of the resource.
   "configurationXml": "binary"
 }
 ```
-
-
-
-

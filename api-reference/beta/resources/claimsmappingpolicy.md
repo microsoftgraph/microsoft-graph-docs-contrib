@@ -46,7 +46,6 @@ Inherits from [stsPolicy](stsPolicy.md).
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
-|description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|Ignore this property. The claims-mapping policy can only be applied to service principals and can't be set globally for the organization.|
 
@@ -113,7 +112,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "definition": ["String"],
-  "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "isOrganizationDefault": false,

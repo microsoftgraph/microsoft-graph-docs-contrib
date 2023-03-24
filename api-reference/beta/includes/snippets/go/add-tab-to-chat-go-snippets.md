@@ -5,26 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := msgraphsdk.NewTeamsTab()
+requestBody := graphmodels.NewTeamsTab()
 displayName := "My Contoso Tab"
-requestBody.SetDisplayName(&displayName)
-configuration := msgraphsdk.NewTeamsTabConfiguration()
-requestBody.SetConfiguration(configuration)
+requestBody.SetDisplayName(&displayName) 
+configuration := graphmodels.NewTeamsTabConfiguration()
 entityId := "2DCA2E6C7A10415CAF6B8AB6661B3154"
-configuration.SetEntityId(&entityId)
+configuration.SetEntityId(&entityId) 
 contentUrl := "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView"
-configuration.SetContentUrl(&contentUrl)
+configuration.SetContentUrl(&contentUrl) 
 websiteUrl := "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154"
-configuration.SetWebsiteUrl(&websiteUrl)
+configuration.SetWebsiteUrl(&websiteUrl) 
 removeUrl := "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
-configuration.SetRemoveUrl(&removeUrl)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
+configuration.SetRemoveUrl(&removeUrl) 
+requestBody.SetConfiguration(configuration)
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8", 
 }
-chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Post(requestBody)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.ChatsById("chat-id").Tabs().Post(context.Background(), requestBody, nil)
 
 
 ```

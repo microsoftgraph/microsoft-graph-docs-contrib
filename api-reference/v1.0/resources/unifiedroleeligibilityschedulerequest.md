@@ -41,7 +41,7 @@ For more information about PIM scenarios you can define through the **unifiedRol
 |id|String|The unique identifier for the **unifiedRoleEligibilityScheduleRequest** object. Key, not nullable, Read-only.  Inherited from [entity](../resources/entity.md).|
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create they create the **unifiedRoleEligibilityScheduleRequest** object.|
-|principalId|String|Identifier of the principal that has been granted the role eligibility. Supports `$filter` (`eq`, `ne`).|
+|principalId|String|Identifier of the principal that has been granted the role eligibility. Can be a user or a role-assignable group. You can grant only [active assignments](unifiedroleassignmentschedulerequest.md) service principals.Supports `$filter` (`eq`, `ne`).|
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Supports `$filter` (`eq`, `ne`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role eligibility. Recurring schedules are currently unsupported.|
 |status|String|The status of the role eligibility request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`).|
@@ -51,10 +51,10 @@ For more information about PIM scenarios you can define through the **unifiedRol
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the role eligibility is scoped to an app. Nullable. Supports `$expand`.|
+|appScope|[appScope](../resources/appscope.md)|Read-only property with details of the app-specific scope when the role eligibility is scoped to an app. Nullable. Supports `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|The directory object that is the scope of the role eligibility. Read-only. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|The principal that's getting a role eligibility through the request. Supports `$expand`.|
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Detailed information for the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is referenced through the **roleDefinitionId** property. Supports `$expand`.|
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Detailed information for the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is referenced through the **roleDefinitionId** property. Supports `$expand`.|
 |targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|The schedule for a role eligibility that is referenced through the **targetScheduleId** property. Supports `$expand`.|
 
 ## JSON representation
