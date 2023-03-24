@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.teamsAppPermissionSet",
   "resourceSpecificPermissions": [
-      "@odata.type": "microsoft.graph.teamsAppResourceSpecificPermission"
+      {"@odata.type": "microsoft.graph.teamsAppResourceSpecificPermission"}
   ]
 }
 ```
