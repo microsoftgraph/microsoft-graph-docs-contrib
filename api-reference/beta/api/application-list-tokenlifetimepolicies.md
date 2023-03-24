@@ -69,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
+GET https://graph.microsoft.com/beta/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies
 ```
 
 # [C#](#tab/csharp)
@@ -116,16 +116,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.tokenLifetimePolicy)",
+    "value": [
+        {
+            "id": "4d2f137b-e8a9-46da-a5c3-cc85b2b840a4",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}"
+            ],
+            "displayName": "Contoso token lifetime policy",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

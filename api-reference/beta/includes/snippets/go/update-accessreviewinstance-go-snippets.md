@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAccessReviewInstance()
 scope := graphmodels.NewAccessReviewScope()
@@ -51,7 +51,7 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 
 }
@@ -69,7 +69,7 @@ accessReviewReviewerScope1.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope1.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.Objectable {
+fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 	accessReviewReviewerScope1,
 
