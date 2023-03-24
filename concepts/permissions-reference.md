@@ -2373,6 +2373,10 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadForTeam_ | Read installed Teams apps in teams| Allows the app to read the Teams apps that are installed in teams the signed-in user can access. Does not give the ability to read application-specific settings.| Yes | No |
 | _TeamsAppInstallation.ReadWriteForTeam_ | Manage installed Teams apps in teams| Allows the app to read, install, upgrade, and uninstall Teams apps in teams the signed-in user can access. Does not give the ability to read application-specific settings.| Yes | No |
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ | Allow the app to manage itself in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentForChat_ | Manage installed Teams apps in chats| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentForTeam_ | Manage installed Teams apps in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForChat_ | Allow the Teams app to manage itself and its permission grants in chats| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForTeam_ | Allow the Teams app to manage itself and its permission grants in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 
 #### Application permissions
 |   Permission    |  Display String   |  Description | Admin Consent Required |
@@ -2383,6 +2387,10 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadForTeam.All_ | Read installed Teams apps for all teams| Allows the app to read the Teams apps that are installed in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentForChat.All_ | Manage installation and permission grants of Teams apps for all chats| Allows the app to read, install, upgrade, and uninstall Teams apps in any chat, without a signed-in user. Gives the ability to manage permission grants for accessing those specific chats' data.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentForTeam.All_ | Manage installation and permission grants of Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Gives the ability to manage permission grants for accessing those specific teams' data.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All_ | Allow the Teams app to manage itself and its permission grants for all chats| Allows a Teams app to read, install, upgrade, and uninstall itself for any chat, without a signed-in user, and manage its permission grants for accessing those specific chats' data.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All_ | Allow the Teams app to manage itself and its permission grants for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself for any team, without a signed-in user, and manage its permission grants for accessing those specific teams' data.| Yes |
 
 ## Teams app settings permissions
 

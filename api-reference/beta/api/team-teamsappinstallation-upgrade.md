@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteForTeam*,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam*, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam<sup>1</sup>, TeamsAppInstallation.ReadWriteForTeam<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, Group.ReadWrite.All<sup>2</sup>, Directory.ReadWrite.All<sup>2</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All*, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All*, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Application | TeamsAppInstallation.ReadWriteSelfForTeam.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForTeam.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.ReadWrite.All<sup>2</sup>, Directory.ReadWrite.All<sup>2</sup> |
 
 > **Note**:
-> 1. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> 2. Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+<br><sup>1</sup> These permissions cannot be used for installing apps that require consent to [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
+<br><sup>2</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -108,11 +108,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-### Example 2: Upgrade app installed in a team and consent to the resource specific permissions.
+### Example 2: Upgrade app installed in a team and consent to the resource-specific permissions required by the app
+The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "upgrade_installedApps_in_team",
@@ -148,6 +148,9 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+## See also
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

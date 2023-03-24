@@ -24,11 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteAndConsentSelfForChat*, TeamsAppInstallation.ReadWriteAndConsentForChat* |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat, TeamsAppInstallation.ReadWriteAndConsentForChat |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All*, TeamsAppInstallation.ReadWriteAndConsentForChat.All* |
+|Application | Chat.Manage.Chat<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: 
+<br><sup>1</sup> These permissions cannot be used for installing apps that require consent to resource-specific permissions.
+<br><sup>2</sup> These permissions are [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 
 ## HTTP request
 
@@ -63,7 +65,7 @@ If successful, this method returns a `201 Created` response code.
 
 ## Examples
 
-### Example 1: Install app in a chat.
+### Example 1: Install app in a chat
 
 #### Request
 
@@ -119,11 +121,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
-### Example 2: Install app in a chat and consent to the resource specific permissions.
+### Example 2: Install app in a chat and and consent to the resource-specific permissions required by the app
+The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_app_in_chat",
@@ -167,6 +169,10 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
+
+## See also
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

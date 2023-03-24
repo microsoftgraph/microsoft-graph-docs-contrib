@@ -27,11 +27,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat*, TeamsAppInstallation.ReadWriteAndConsentForChat* |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat,  TeamsAppInstallation.ReadWriteAndConsentSelfForChat<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat<sup>1</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All*, TeamsAppInstallation.ReadWriteAndConsentForChat.All* |
+|Application | TeamsAppInstallation.Read.Chat<sup>1</sup>, Chat.Manage.Chat<sup>1</sup>, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: 
+<br><sup>1</sup> These permissions are [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 
 ## HTTP request
 
@@ -340,7 +341,7 @@ Content-type: application/json
 ```
 ### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified chat
 
-In the following example, if the teamsAppInstallations for a specified chat has resource specific permissions [teamsAppResourceSpecificPermission](../resources/teamsAppResourceSpecificPermission.md) consented for it, then the set of consented permissions [consentedPermissionSet](../resources/teamsapppermissionset.md) can be fetched using the select query.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md)as part of installation. A $select query is required for consented permission set to be shown.
 
 #### Request
 
@@ -406,6 +407,7 @@ Content-type: application/json
 
 ## See also
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

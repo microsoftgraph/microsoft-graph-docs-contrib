@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, Group.Read.All<sup>1</sup>, Group.ReadWrite.All<sup>1</sup>, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Application | TeamsAppInstallation.Read.Group<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.Read.All<sup>1</sup>, Group.ReadWrite.All<sup>1</sup>, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
@@ -346,13 +346,13 @@ Content-type: application/json
 ```
 ### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified team
 
-In the following example, if the teamsAppInstallations for a specified team has resource specific permissions [teamsAppResourceSpecificPermission](../resources/teamsAppResourceSpecificPermission.md) consented for it, then the set of consented permissions [consentedPermissionSet](../resources/teamsapppermissionset.md) can be fetched using the select query.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsAppResourceSpecificPermission.md) as part of installation. A $select query is required for consented permission set to be shown.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "list_installed_apps_in_chat_select_consentedPermissionSet",
+  "name": "list_installed_apps_in_team_select_consentedPermissionSet",
   "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
 }
 -->
@@ -410,6 +410,9 @@ Content-type: application/json
     ]
 }
 ```
+## See also
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

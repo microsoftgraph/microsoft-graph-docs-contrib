@@ -25,11 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All**, Directory.ReadWrite.All** |
+| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**: 
+<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -354,7 +355,6 @@ Content-Type: application/json
           "azureADAppId": null,
           "displayName": "Test App",
           "version": "1.0.1",
-          "requiredResourceSpecificApplicationPermissions": [],
           "publishingState": "published",
           "authorization": 
           {
@@ -446,7 +446,6 @@ Content-Type: application/json
                     "azureADAppId": null,
                     "displayName": "Ducks-3",
                     "version": "1.0.9",
-                    "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "rejected",
                     "shortdescription": "quaerat quasi magnam. slight change. 5",
                     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
@@ -485,7 +484,6 @@ Content-Type: application/json
                     "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
                     "displayName": "Self-Install-App-E2E-Tests",
                     "version": "6.0.0",
-                    "requiredResourceSpecificApplicationPermissions": [],
                     "publishingState": "submitted",
                     "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
                     "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
@@ -594,7 +592,7 @@ Content-Type: application/json
     ]
 }
 ```
-### Example 7: List applications with a given ID, and return the resource specific permissions
+### Example 7: List applications with a given ID and return the resource specific permissions
 
 The following example lists the apps with a given ID and returns resource specific permissions associated with it.
 
@@ -643,10 +641,6 @@ Content-Type: application/json
                     "azureADAppId": "b1da2dc2-06ff-4efd-a499-19c44989578d",
                     "displayName": "teamsDelegatedRscTests",
                     "version": "1.0.0",
-                    "requiredResourceSpecificApplicationPermissions": [
-                        "Channel.Create.Group",
-                        "Channel.Delete.Group"
-                    ],
                     "publishingState": "published",
                     "shortdescription": "",
                     "description": "",
@@ -678,15 +672,12 @@ Content-Type: application/json
 }
 ```
 
->**Note:** requiredResourceSpecificApplicationPermissions section shows only the application resource specific permissions. resourceSpecificPermissions section contains both the application and delegated resource specific permissions.
-
-
 ## See also
 
 - [List apps installed in a team](team-list-installedapps.md)
 - [List apps installed in a chat](chat-list-installedapps.md)
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
-- [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 
 

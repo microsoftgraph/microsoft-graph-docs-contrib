@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The resource-specific permission associated with a teamsApp. Resource-specific permission can be of type delegated or application only.
+The resource-specific permission associated with a teamsApp. Supported types for resource-specific permissions are 
+- delegated 
+- application 
+<br>For more details, please see [understanding resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## Properties
 |Property|Type|Description|
