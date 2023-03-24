@@ -21,7 +21,7 @@ Used for the **verifiableCredentialRequirementStatus** property of [access packa
 |Property|Type|Description|
 |:---|:---|:---|
 |expiryDateTime|DateTimeOffset| The specific date and time that the presentation request will expire and a new one will need to be generated. |
-|url|String| The deep link URL that directs the user to their digital wallet to provide the desired credentials.|
+|url|String| A URL that launches the digital wallet and starts the presentation process. You can present this URL to the user if they can't scan the QR code. |
 
 ## Relationships
 None.

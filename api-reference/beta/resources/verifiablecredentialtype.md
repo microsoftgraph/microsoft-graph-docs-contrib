@@ -20,7 +20,7 @@ Used for the **credentialType** property of [verifiable credential settings](ver
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|issuers|String collection| List of accepted issuers authority as identified by DID, for example, 'did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>…' |
+|issuers|String collection| List of accepted issuers authority as identified by DID, for example, 'did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...' |
 |credentialType|String| Issued credential type, for example, 'BusinessCardCredential'|
 
 ## Relationships
