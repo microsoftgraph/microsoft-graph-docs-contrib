@@ -98,7 +98,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training module: Access user data"
+          - name: "Training: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
@@ -111,7 +111,7 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training module: Manage group lifecycle"
+          - name: "Training: Manage group lifecycle"
             href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
@@ -192,7 +192,7 @@ items:
           - name: Overview
             href: webhooks.md
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: "Training module: Use change notifications"
+          - name: "Training: Use change notifications"
             href: /training/modules/msgraph-changenotifications-trackchanges
           - name: Notifications delivery channels
             items:
@@ -424,7 +424,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: "Examples: Custom security attributes (preview)"
+              - name: "Manage custom security attribute assignments (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -816,7 +816,7 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training module: Optimize requests with query parameters"
+              - name: "Training: Optimize requests with query parameters"
                 displayName: OData query parameters, OData
                 href: /training/modules/optimize-data-usage
           - name: Batching
@@ -830,7 +830,7 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training module: Optimize network traffic"
+              - name: "Training: Optimize network traffic"
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
