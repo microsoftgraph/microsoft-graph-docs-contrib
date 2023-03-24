@@ -16468,6 +16468,8 @@ items:
           href: api/planneruser-list-favoriteplans.md
         - name: List user's recent plans
           href: api/planneruser-list-recentplans.md
+        - name: Get delta
+          href: api/plannerplan-delta.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -16481,6 +16483,8 @@ items:
           href: api/plannertask-delete.md
         - name: List user's tasks
           href: api/planneruser-list-tasks.md
+        - name: Get delta
+          href: api/plannertask-delta.md
       - name: Bucket
         href: resources/plannerbucket.md
         items:
@@ -16494,6 +16498,8 @@ items:
           href: api/plannerbucket-update.md
         - name: Delete bucket
           href: api/plannerbucket-delete.md
+        - name: Get delta
+          href: api/plannerbucket-delta.md
       - name: Business scenarios (preview)
         items:
         - name: Overview
