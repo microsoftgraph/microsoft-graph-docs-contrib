@@ -17,7 +17,7 @@ Upgrade an [app installation](../resources/teamsappinstallation.md) within a [ch
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
-> - Currently, this operation is not supported in application context.
+> - Currently, the operation of upgrading an app that requires RSC permissions is not supported in application context.
 
 ## Permissions
 
@@ -48,7 +48,8 @@ Following table shows additional parameters that can be used with the upgrade ac
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
 
 > **Note**:
-> The permissions consented during the upgrade must be same as the resource-specific permissions present in the teamsAppDefinition of the app. Please follow this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
+> **Note**:
+> The permissions consented during the upgrade must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. Please follow this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
 
 ## Response
 
@@ -113,7 +114,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions
 
-The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
+The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps?view=graph-rest-beta&preserve-view=true&tabs=http#example-7-list-applications-with-a-given-id-and-return-the-resource-specific-permissions).
 
 #### Request
 

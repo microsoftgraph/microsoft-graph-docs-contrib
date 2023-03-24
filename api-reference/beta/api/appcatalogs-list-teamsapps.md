@@ -592,7 +592,7 @@ Content-Type: application/json
     ]
 }
 ```
-### Example 7: List applications with a given ID and return the resource specific permissions
+### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
 
 The following example lists the apps with a given ID and returns resource specific permissions associated with it.
 
@@ -606,7 +606,7 @@ The following is an example of a request.
 }-->
 
 ```http
-GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228c26-a9ae-4702-90e0-79a5246d2f7d'&$expand=appDefinitions
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228c26-a9ae-4702-90e0-79a5246d2f7d'&$expand=appDefinitions($select=id,authorization)
 ```
 
 #### Response
@@ -626,27 +626,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions())",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,authorization))",
     "value": [
         {
             "id": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
             "externalId": "a55ec032-36e9-4b60-b604-34b2fe55abf1",
             "displayName": "teamsDelegatedRscTests",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('a5228c26-a9ae-4702-90e0-79a5246d2f7d')/appDefinitions(id,authorization)",
             "appDefinitions": [
                 {
                     "id": "YTUyMjhjMjYtYTlhZS00NzAyLTkwZTAtNzlhNTI0NmQyZjdkIyMxLjAuMCMjUHVibGlzaGVk",
-                    "teamsAppId": "a5228c26-a9ae-4702-90e0-79a5246d2f7d",
-                    "azureADAppId": "b1da2dc2-06ff-4efd-a499-19c44989578d",
-                    "displayName": "teamsDelegatedRscTests",
-                    "version": "1.0.0",
-                    "publishingState": "published",
-                    "shortdescription": "",
-                    "description": "",
-                    "lastModifiedDateTime": null,
-                    "allowedInstallationScopes": "team,groupChat",
-                    "createdBy": null,
                     "authorization": {
                         "requiredPermissionSet": {
                             "resourceSpecificPermissions": [
