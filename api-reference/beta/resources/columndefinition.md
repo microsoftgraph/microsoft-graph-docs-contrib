@@ -110,7 +110,7 @@ The following is a JSON representation of the resource.
   "geolocation": {"@odata.type": "microsoft.graph.geolocationColumn"},
   "hidden": "Boolean",
   "hyperlinkOrPicture": {"@odata.type": "microsoft.graph.hyperlinkOrPictureColumn"},
-  "id": ""String (identifier)"",
+  "id": "String (identifier)",
   "indexed": "Boolean",
   "isDeletable": "Boolean",
   "isReorderable": "Boolean",
