@@ -13,18 +13,21 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `formattedContent` represents formatted data content, and indicates both the content and format of that data. This will not represent large binary contents.
+Represents formatted data content, and indicates both the content and format of that data. This resource doesn't represent large binary contents.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|The content of this `formattedContent`.  |
+|content|String|The content of this **formattedContent**.  |
 |format|microsoft.graph.security.contentFormat|The format of the content. The possible values are: `text`, `html`, `markdown`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following is a JSON representation of the resource.
   "format": "String"
 }
 ```
-

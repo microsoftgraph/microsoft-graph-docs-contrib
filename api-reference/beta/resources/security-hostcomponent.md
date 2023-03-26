@@ -1,6 +1,6 @@
 ---
 title: "hostComponent resource type"
-description: "Web components are details describing a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan."
+description: "Web components are details that describe a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,32 +15,35 @@ Namespace: microsoft.graph.security
 
 Web components are details describing a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan. These components allow a user to understand the makeup of a webpage or the technology and services driving a specific piece of infrastructure. Pivoting on unique components can find actors' infrastructure or other sites that are compromised. Users can also understand if a website might be vulnerable to a specific attack or compromise based on the technologies that it is running.
 
-These `HostComponent` Entities have specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
-
+The **hostComponent** entity has specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|Read the properties and relationships of a [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String| The type of component that was detected (e.g. Operating System, Framework, Remote Access, Server).|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this web Component was observed by Microsoft Threat Intelligence.|
-|id|String|A system-generated id for this `hostComponent`. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this web Component was observed by Microsoft Threat Intelligence.|
-|name|String|A name  running on the artifact (e.g. Microsoft IIS).|
-|version|String|The component version running on the artifact (e.g. v8.5). This should not be assumed to be strictly numerical|
+|category|String| The type of component that was detected (for example, `Operating System`, `Framework`, `Remote Access`, or `Server`).|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this web component was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|A system-generated ID for this **hostComponent**. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this web component was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|name|String|A name running on the artifact, for example, `Microsoft IIS`.|
+|version|String|The component version running on the artifact, for example, `v8.5`. This should not be assumed to be strictly numerical.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[microsoft.graph.security.host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this component. This is a reverse Navigation Property. When navigating to Components from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The **host** related to this component. This is a reverse navigation property. When navigating to components from a **host**, this should be assumed to be a return reference.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -61,4 +64,3 @@ The following is a JSON representation of the resource.
   "category": "String"
 }
 ```
-

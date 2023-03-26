@@ -1,6 +1,6 @@
 ---
 title: "host resource type"
-description: "Represents an Hostname or IP Address which is (or has been) addressible over the internet"
+description: "Represents a hostname or IP address that is (or has been) addressable over the internet and Microsoft Threat Intelligence has knowledge."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,16 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md) which is (or has been) addressible over the internet and Microsoft Threat Intelligence has knowledge. 
+Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is (or has been) addressable over the internet and Microsoft Threat Intelligence has knowledge.
 
 This is an abstract type. Implementations of this type include:
+
 * [microsoft.graph.security.hostname](../resources/security-hostname.md)
 * [microsoft.graph.security.ipAddress](../resources/security-ipaddress.md)
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
 
-
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get host](../api/security-host-get.md)|[microsoft.graph.security.host](../resources/security-host.md)|Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object.|
@@ -34,23 +35,26 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |[List trackers](../api/security-host-list-trackers.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Get the hostTracker resources from the trackers navigation property.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this host was observed|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String| The hostname or IP Address for this host. Read-only|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this host was observed|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|components|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|`hostComponents` that are associated with this host|
-|cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|`hostCookies` that are associated with this host|
-|passiveDns|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Passive DNS retrieval about this host|
-|passiveDnsReverse|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection| Reverse Passive DNS retrieval about this host.|
-|reputation|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this host|
-|trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|`hostTrackers` that are associated with this host|
+|components|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|The **hostComponents** that are associated with this host.|
+|cookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|The **hostCookies** that are associated with this host.|
+|passiveDns|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Passive DNS retrieval about this host.|
+|passiveDnsReverse|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection| Reverse passive DNS retrieval about this host.|
+|reputation|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Represents a calculated reputation of this host.|
+|trackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|The **hostTrackers** that are associated with this host.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -68,4 +72,3 @@ The following is a JSON representation of the resource.
   "lastSeenDateTime": "String (timestamp)"
 }
 ```
-

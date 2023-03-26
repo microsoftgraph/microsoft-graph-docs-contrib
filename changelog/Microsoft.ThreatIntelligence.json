@@ -4,7 +4,7 @@
         "ChangeList": [
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "contentFormat",
             "ChangeType": "Addition",
             "Description": "Added the **contentFormat** enumeration type.",
@@ -12,7 +12,7 @@
           },
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "hostReputationClassification",
             "ChangeType": "Addition",
             "Description": "Added the **hostReputationClassification** enumeration type.",
@@ -20,7 +20,7 @@
           },
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "hostReputationRuleSeverity",
             "ChangeType": "Addition",
             "Description": "Added the **hostReputationRuleSeverity** enumeration type.",
@@ -28,7 +28,7 @@
           },
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "indicatorSource",
             "ChangeType": "Addition",
             "Description": "Added the **indicatorSource** enumeration type.",
@@ -36,7 +36,7 @@
           },
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "intelligenceProfileKind",
             "ChangeType": "Addition",
             "Description": "Added the **intelligenceProfileKind** enumeration type.",
@@ -44,7 +44,7 @@
           },
           {
             "Id": "29495af2-28ab-4012-bd65-215593281a1c",
-            "ApiChange": "Enumeration",
+            "ApiChange": "Enum type",
             "ChangedApiName": "vulnerabilitySeverity",
             "ChangeType": "Addition",
             "Description": "Added the **vulnerabilitySeverity** enumeration type.",
@@ -103,7 +103,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "article",
             "ChangeType": "Addition",
-            "Description": "Added the [article](https://learn.microsoft.com/en-us/graph/api/resources/security-article?view=graph-rest-beta) resource",
+            "Description": "Added the [article](https://learn.microsoft.com/en-us/graph/api/resources/security-article?view=graph-rest-beta) resource and a supported method.",
             "Target": "article"
           },
           {
@@ -111,7 +111,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "articleIndicator",
             "ChangeType": "Addition",
-            "Description": "Added the [articleIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-articleIndicator?view=graph-rest-beta) resource",
+            "Description": "Added the [articleIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-articleIndicator?view=graph-rest-beta) resource and a supported method.",
             "Target": "articleIndicator"
           },
           {
@@ -119,7 +119,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "artifact",
             "ChangeType": "Addition",
-            "Description": "Added the [artifact](https://learn.microsoft.com/en-us/graph/api/resources/security-artifact?view=graph-rest-beta) resource",
+            "Description": "Added the [artifact](https://learn.microsoft.com/en-us/graph/api/resources/security-artifact?view=graph-rest-beta) resource type.",
             "Target": "artifact"
           },
           {
@@ -127,7 +127,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "host",
             "ChangeType": "Addition",
-            "Description": "Added the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource",
+            "Description": "Added the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource and a supported method.",
             "Target": "host"
           },
           {
@@ -135,7 +135,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "hostComponent",
             "ChangeType": "Addition",
-            "Description": "Added the [hostComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostComponent?view=graph-rest-beta) resource",
+            "Description": "Added the [hostComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostComponent?view=graph-rest-beta) resource and a supported method.",
             "Target": "hostComponent"
           },
           {
@@ -143,7 +143,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "hostCookie",
             "ChangeType": "Addition",
-            "Description": "Added the [hostCookie](https://learn.microsoft.com/en-us/graph/api/resources/security-hostCookie?view=graph-rest-beta) resource",
+            "Description": "Added the [hostCookie](https://learn.microsoft.com/en-us/graph/api/resources/security-hostCookie?view=graph-rest-beta) resource and a supported method.",
             "Target": "hostCookie"
           },
           {
@@ -151,7 +151,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "hostname",
             "ChangeType": "Addition",
-            "Description": "Added the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-beta) resource",
+            "Description": "Added the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-beta) resource type.",
             "Target": "hostname"
           },
           {
@@ -159,7 +159,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "hostReputation",
             "ChangeType": "Addition",
-            "Description": "Added the [hostReputation](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputation?view=graph-rest-beta) resource",
+            "Description": "Added the [hostReputation](https://learn.microsoft.com/en-us/graph/api/resources/security-hostReputation?view=graph-rest-beta) resource type.",
             "Target": "hostReputation"
           },
           {
@@ -167,7 +167,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "hostTracker",
             "ChangeType": "Addition",
-            "Description": "Added the [hostTracker](https://learn.microsoft.com/en-us/graph/api/resources/security-hostTracker?view=graph-rest-beta) resource",
+            "Description": "Added the [hostTracker](https://learn.microsoft.com/en-us/graph/api/resources/security-hostTracker?view=graph-rest-beta) resource and a supported method.",
             "Target": "hostTracker"
           },
           {
@@ -175,7 +175,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "indicator",
             "ChangeType": "Addition",
-            "Description": "Added the [indicator](https://learn.microsoft.com/en-us/graph/api/resources/security-indicator?view=graph-rest-beta) resource",
+            "Description": "Added the [indicator](https://learn.microsoft.com/en-us/graph/api/resources/security-indicator?view=graph-rest-beta) resource type.",
             "Target": "indicator"
           },
           {
@@ -183,7 +183,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "intelligenceProfile",
             "ChangeType": "Addition",
-            "Description": "Added the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-beta) resource",
+            "Description": "Added the [intelligenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfile?view=graph-rest-beta) resource and a supported method.",
             "Target": "intelligenceProfile"
           },
           {
@@ -191,7 +191,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "intelligenceProfileIndicator",
             "ChangeType": "Addition",
-            "Description": "Added the [intelligenceProfileIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileIndicator?view=graph-rest-beta) resource",
+            "Description": "Added the [intelligenceProfileIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-intelligenceProfileIndicator?view=graph-rest-beta) resource and a supported method.",
             "Target": "intelligenceProfileIndicator"
           },
           {
@@ -199,7 +199,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "ipAddress",
             "ChangeType": "Addition",
-            "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipAddress?view=graph-rest-beta) resource",
+            "Description": "Added the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipAddress?view=graph-rest-beta) resource type.",
             "Target": "ipAddress"
           },
           {
@@ -207,7 +207,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "passiveDnsRecord",
             "ChangeType": "Addition",
-            "Description": "Added the [passiveDnsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-passiveDnsRecord?view=graph-rest-beta) resource",
+            "Description": "Added the [passiveDnsRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-passiveDnsRecord?view=graph-rest-beta) resource and a supported method.",
             "Target": "passiveDnsRecord"
           },
           {
@@ -215,7 +215,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "threatIntelligence",
             "ChangeType": "Addition",
-            "Description": "Added the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource",
+            "Description": "Added the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource type.",
             "Target": "threatIntelligence"
           },
           {
@@ -223,7 +223,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "unclassifiedArtifact",
             "ChangeType": "Addition",
-            "Description": "Added the [unclassifiedArtifact](https://learn.microsoft.com/en-us/graph/api/resources/security-unclassifiedArtifact?view=graph-rest-beta) resource",
+            "Description": "Added the [unclassifiedArtifact](https://learn.microsoft.com/en-us/graph/api/resources/security-unclassifiedArtifact?view=graph-rest-beta) resource type.",
             "Target": "unclassifiedArtifact"
           },
           {
@@ -231,7 +231,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "vulnerability",
             "ChangeType": "Addition",
-            "Description": "Added the [vulnerability](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerability?view=graph-rest-beta) resource",
+            "Description": "Added the [vulnerability](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerability?view=graph-rest-beta) resource and a supported method.",
             "Target": "vulnerability"
           },
           {
@@ -239,7 +239,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "vulnerabilityComponent",
             "ChangeType": "Addition",
-            "Description": "Added the [vulnerabilityComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerabilityComponent?view=graph-rest-beta) resource",
+            "Description": "Added the [vulnerabilityComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-vulnerabilityComponent?view=graph-rest-beta) resource and a supported method.",
             "Target": "vulnerabilityComponent"
           }
         ],

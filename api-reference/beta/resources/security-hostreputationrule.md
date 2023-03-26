@@ -1,6 +1,6 @@
 ---
 title: "hostReputationRule resource type"
-description: "A rule that is used (in combination with other rules) to determine the Reputation of a host"
+description: "Represents a rule that is used (in combination with other rules) to determine the reputation of a hostname or IP address."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,20 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A rule that is used (in combination with other rules) to determine the Reputation of a [Hostname](../resources/security-hostname.md) or [IP Address](../resources/security-ipaddress.md). Eacth `hostReputationRule` only applies within the parent [hostReputation](../resources/security-hostreputation.md).
+Represents a rule that is used (in combination with other rules) to determine the reputation of a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md). Each **hostReputationRule** only applies within the parent [hostReputation](../resources/security-hostreputation.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A description of the rule which gives more context|
-|relatedDetailsUrl|String| link to a web page with details related to this rule|
-|name|String|A name of the rule|
-|severity|microsoft.graph.security.hostReputationRuleSeverity|An indication of the serverity this rule has against the reputation score.The possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|description|String|The description of the rule that gives more context.|
+|relatedDetailsUrl|String| Link to a web page with details related to this rule.|
+|name|String|The name of the rule.|
+|severity|microsoft.graph.security.hostReputationRuleSeverity|Indicates the severity that this rule has against the reputation score. The possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following is a JSON representation of the resource.
   "relatedDetailsUrl": "String"
 }
 ```
-
