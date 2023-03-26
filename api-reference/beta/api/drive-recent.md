@@ -42,7 +42,7 @@ This method returns a collection of [DriveItem](../resources/driveitem.md) resou
 ### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", name": "view-recent-files" } -->
+<!-- { "blockType": "request", "name": "view-recent-files" } -->
 
 ```msgraph-interactive
 GET /me/drive/recent
