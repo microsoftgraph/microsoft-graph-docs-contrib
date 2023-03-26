@@ -113,7 +113,10 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+	"Error: range(address={var}):
+      Couldn't find definition for parameter address={var} in range(address={var}) after looking in /api/range-update.md"
+  ]
 }
 -->
 

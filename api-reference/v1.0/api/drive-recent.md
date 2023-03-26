@@ -24,17 +24,22 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## Example
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/drive/recent
+```
+
+## Response
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
+
+## Examples
 
 ### Request
 
-
 # [HTTP](#tab/http)
-<!-- { "blockType": "request",
-       "name": "view-recent-files", 
-       "scopes": "files.read",
-       "tags": "service.graph",
-       "target": "action" } -->
+<!-- { "blockType": "request", "name": "view-recent-files" } -->
 
 ```msgraph-interactive
 GET /me/drive/recent
@@ -57,11 +62,11 @@ GET /me/drive/recent
 
 ### Response
 
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
-
-<!-- { "blockType": "response",
-       "@odata.type": "Collection(microsoft.graph.driveItem)",
-       "truncated": true} -->
+<!-- { 
+    "blockType": "response",
+     "@odata.type": "Collection(microsoft.graph.driveItem)",
+     "truncated": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -123,4 +128,3 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "suppressions": [
   ]
 } -->
-

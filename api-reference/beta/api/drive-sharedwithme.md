@@ -28,13 +28,22 @@ One of the following permissions is required to call this API. To learn more, in
 **Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.
 Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.
 
-## Example
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/drive/sharedWithMe
+```
+
+## Response
+If successful, this method returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
+
+## Examples
 
 ### Request
 
-
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me" } -->
 
 ```msgraph-interactive
 GET /me/drive/sharedWithMe
@@ -54,10 +63,8 @@ GET /me/drive/sharedWithMe
 
 ---
 
-
 ### Response
 
-This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
 In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
@@ -121,5 +128,4 @@ By default, **sharedWithMe** returns items shared within your own tenant. To inc
   ]
 }
 -->
-
 

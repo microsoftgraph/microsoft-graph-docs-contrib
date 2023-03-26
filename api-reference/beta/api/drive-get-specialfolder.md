@@ -30,14 +30,35 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
-## Examples
+## HTTP Request
 
-### Example 1
+<!-- { "blockType": "ignored"} -->
+
+```http
+GET /me/drive/special/{name}
+```
+
+### Special folder names
+[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
+
+### Optional query parameters
+
+This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
+
+## Response
+
+This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
+
+You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.
+
+## Examples 
+
+### Example 1: Get special folder by name
 
 #### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-folder" } -->
 
 ```msgraph-interactive
 GET /me/drive/special/{name}
@@ -57,21 +78,7 @@ GET /me/drive/special/{name}
 
 ---
 
-
-#### Special folder names
-[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
-
-
-#### Optional query parameters
-
-This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
-
 #### Response
-
-This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
-
-You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.
-
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
@@ -88,13 +95,13 @@ Content-type: application/json
 }
 ```
 
+
 ### Example 2: Get children of a special folder
 
 To request the children of a special folder, you can request the `children`
 collection or use the [expand](/graph/query-parameters) option to expand the children collection.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
@@ -155,5 +162,4 @@ error if the special folder does not already exist.
   ]
 }
 -->
-
 

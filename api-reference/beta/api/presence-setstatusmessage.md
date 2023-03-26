@@ -180,7 +180,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-### Example 2:  Get another user presence
+### Example 3:  Get another user presence
 This request should be executed on behalf of another user.
 
 #### Request
