@@ -125,16 +125,6 @@ Namespace: microsoft.graph.security
 |tool|
 |unknownFutureValue|
 
-### passiveDnsSource values 
-
-
-
-|Member|
-|:---|
-|microsoftDefenderThreatIntelligence|
-|pingly|
-|unknownFutureValue|
-
 ### queryType values 
 
 
