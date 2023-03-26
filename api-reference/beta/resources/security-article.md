@@ -56,20 +56,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.article",
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)",
-  "title": "String",
-  "summary": {
+  "body": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   },
-  "featured": "Boolean",
-  "body": {
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "imageUrl": "String",
+  "isFeatured": "Boolean",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "summary": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   },
   "tags": [
     "String"
   ],
-  "imageUrl": "String"
+  "title": "String"
 }
 ```

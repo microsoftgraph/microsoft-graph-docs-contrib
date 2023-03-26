@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.security.host](../resources/security-host.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |firstSeenDateTime|DateTimeOffset|The first date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
-|id|String| The hostname for this [host](../resources/security-host.md). Read-only|
+|id|String| Unique identifier for the hostname. Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
 |lastSeenDateTime|DateTimeOffset|The most recent date and time that this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).|
 |registrant|String|The company or individual who registered this hostname, from WHOIS data.|
 |registrar|String|The registrar for this hostname, from WHOIS data. |
@@ -64,8 +64,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostname",
-  "id": "String (identifier)",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)",
   "registrar": "String",
   "registrant": "String"

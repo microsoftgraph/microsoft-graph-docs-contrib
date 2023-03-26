@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |Property|Type|Description|
 |:---|:---|:---|
 |firstSeenDateTime|DateTimeOffset|The first date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String| The hostname or IP Address for this host. Read-only|
+|id|String| Unique identifier for the host. Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
 |lastSeenDateTime|DateTimeOffset|The most recent date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
@@ -67,8 +67,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.host",
-  "id": "String (identifier)",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)"
 }
 ```

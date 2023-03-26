@@ -53,16 +53,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.intelligenceProfile",
-  "id": "String (identifier)",
-  "kind": "String",
-  "title": "String",
-  "firstActiveDateTime": "String (timestamp)",
   "aliases": [
     "String"
   ],
-  "targets": [
-    "String"
-  ],
+  "description": {
+    "@odata.type": "microsoft.graph.security.formattedContent"
+  },
+  "firstActiveDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "kind": "String",
   "sponsorStates": [
     {
       "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState"
@@ -71,9 +70,10 @@ The following is a JSON representation of the resource.
   "summary": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   },
-  "description": {
-    "@odata.type": "microsoft.graph.security.formattedContent"
-  },
+  "targets": [
+    "String"
+  ],
+  "title": "String",
   "tradecraft": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   }

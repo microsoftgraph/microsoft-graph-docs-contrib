@@ -51,11 +51,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
-  "id": "String (identifier)",
-  "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)",
   "collectedDateTime": "String (timestamp)",
+  "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "lastSeenDateTime": "String (timestamp)",
   "recordType": "String"
 }
 ```
-

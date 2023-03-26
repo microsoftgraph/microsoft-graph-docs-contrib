@@ -56,11 +56,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostComponent",
-  "id": "String (identifier)",
+  "category": "String",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)",
   "name": "String",
-  "version": "String",
-  "category": "String"
+  "version": "String"
 }
 ```

@@ -49,10 +49,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.intelligenceProfileIndicator",
-  "id": "String (identifier)",
-  "source": "String",
   "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)"
+  "id": "String (identifier)",
+  "lastSeenDateTime": "String (timestamp)",
+  "source": "String"
 }
 ```
 

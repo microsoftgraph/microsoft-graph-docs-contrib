@@ -49,13 +49,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostReputation",
-  "id": "String (identifier)",
   "classification": "String",
-  "score": "Int32",
+  "id": "String (identifier)",
   "rules": [
     {
       "@odata.type": "microsoft.graph.security.hostReputationRule"
     }
-  ]
+  ],
+  "score": "Int32"
 }
 ```

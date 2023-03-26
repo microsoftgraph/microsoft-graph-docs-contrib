@@ -52,11 +52,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostTracker",
-  "id": "String (identifier)",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "kind": "String",
   "lastSeenDateTime": "String (timestamp)",
-  "value": "String",
-  "kind": "String"
+  "value": "String"
 }
 ```
 

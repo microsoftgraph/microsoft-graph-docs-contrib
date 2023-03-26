@@ -63,15 +63,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ipAddress",
-  "id": "String (identifier)",
-  "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)",
-  "countryOrRegion": "String",
-  "netblock": "String",
   "autonomousSystem": {
     "@odata.type": "microsoft.graph.security.autonomousSystem"
   },
-  "hostingProvider": "String"
+  "countryOrRegion": "String",
+  "firstSeenDateTime": "String (timestamp)",
+  "hostingProvider": "String",
+  "id": "String (identifier)",
+  "lastSeenDateTime": "String (timestamp)",
+  "netblock": "String"
 }
 ```
 

@@ -18,8 +18,8 @@ An `intelligenceProfileSponsorState` communicates a known state-sponsor of an ac
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|countryOrRegionCode|String|A codified representation for this sponsor state.|
-|countryOrRegionLabel|String|A display label for this sponsor state.|
+|code|String|A codified representation for this sponsor state.|
+|label|String|A display label for this sponsor state.|
 
 ## Relationships
 None.
@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.intelligenceProfileSponsorState",
-  "countryOrRegionLabel": "String",
-  "countryOrRegionCode": "String"
+  "code": "String",
+  "label": "String"
 }
 ```
 

@@ -39,9 +39,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostReputationRule",
-  "name": "String",
   "description": "String",
-  "severity": "String",
-  "relatedDetailsUrl": "String"
+  "name": "String",
+  "relatedDetailsUrl": "String",
+  "severity": "String"
 }
 ```

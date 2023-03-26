@@ -55,10 +55,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.hostCookie",
-  "id": "String (identifier)",
+  "domain": "String",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)",
-  "name": "String",
-  "domain": "String"
+  "name": "String"
 }
 ```
