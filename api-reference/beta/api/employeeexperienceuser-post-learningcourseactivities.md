@@ -46,20 +46,20 @@ You can specify the following properties when creating a **learningCourseActivit
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
-|assignmentType|[assignmentType](../resources/assignmentType.md)|assignmentType for the course activity (required/recommended)|
-|learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
-|learnerUserId|String|The user id of the learner|
-|registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
-|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
-|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
-|assignerUserId|String|The user id of the assigner (Optional)|
-|notes|String|Notes for the course activity (Optional)|
-|dueDateTime|DateTimeOffset|Due date for the course activity (Optional)|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity (Optional)|
+|assignmentType|[assignmentType](../resources/assignmentType.md)|assignmentType for the course activity (required/recommended)|
+|assignerUserId|String|The user id of the assigner (Optional)|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
+|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
+|dueDateTime|DateTimeOffset|Due date for the course activity (Optional)|
 |externalcourseActivityId|String|A course activity id generated at provider (Optional)|
 |Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
-|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
+|learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
+|learnerUserId|String|The user id of the learner|
+|notes|String|Notes for the course activity (Optional)|
+|registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
+|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
+|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
 
 ## Response
 
@@ -156,15 +156,15 @@ You can specify the following properties when creating a **learningCourseActivit
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
+|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
+|externalcourseActivityId|String|A course activity id generated at provider (Optional)|
+|Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
 |registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
-|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Accepted values are (inProgress/completed)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
-|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
-|externalcourseActivityId|String|A course activity id generated at provider (Optional)|
-|Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
-|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive)|
+|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Accepted values are (inProgress/completed)|
 
 ## Response
 
