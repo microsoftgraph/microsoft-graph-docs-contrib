@@ -204,17 +204,6 @@ The following are some of the most popular requests for working with the Microso
 |Submit TI Indicators|[Submit tiIndicators](../api/tiindicator-submittiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 |Update TI Indicators|[Update tiIndicator](../api/tiindicator-update.md) </br>[Update multiple tiIndicators](../api/tiindicator-updatetiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Delete TI Indicators|[Delete tiIndicator](../api/tiindicator-delete.md) </br>[Delete multiple tiIndicators](../api/tiindicator-deletetiindicators.md) </br>[Delete tiIndicator by externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)| DELETE </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-| **Threat intelligence** |||
-| Get Host Details | | |
-| Get Article | | https://graph.microsoft.com/beta/security/threatIntelligence/articles/{id} |
-| List Articles | |https://graph.microsoft.com/beta/security/threatIntelligence/articles |
-| Get Article Indicator | | |
-| Get Intel Profile | | https://graph.microsoft.com/beta/security/threatIntelligence/threatIntel/{id} |
-| List Intel Profiles | | https://graph.microsoft.com/beta/security/threatIntelligence/threatIntel |
-| Get Intel Profile Indicator | | |
-| Get Host Component | | |
-| Get Host Cookie | | |
-| Get Host Tracker | | |
 | **Threat submission**|||
 |Get email threat submission|[Get emailThreat](../api/security-emailthreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreats/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |List email threat submissions | [List emailThreats](../api/security-emailthreatsubmission-list.md) | [https://graph.microsoft.com/beta/threatSubmission/emailThreats](https://developer.microsoft.com/graph/graph-explorer?request=threatSubmission/emailThreats&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
