@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_hostcookie"
+  "name": "get_hostcookie",
+  "sampleKeys": ["c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ=="]
 }
 -->
 ``` http

@@ -61,7 +61,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/fake-malicious.site/reputation
 ```
 
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -108,4 +107,3 @@ Content-Type: application/json
   ]
 }
 ```
-

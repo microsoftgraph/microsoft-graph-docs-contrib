@@ -79,16 +79,19 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
-      "id": "6c559be2-93a3-bc87-bf89-2b8858d18c59",
-      "firstSeenDateTime": "String (timestamp)",
-      "lastSeenDateTime": "String (timestamp)",
-      "collectedDateTime": "String (timestamp)",
-      "recordType": "String",
-      "sources": [
-        "String"
-      ]
+      "id": "bWljcm9zb2Z0LmNvbTcxNDA5MjAuMTAzLjg1LjMz",
+      "firstSeenDateTime": "2022-04-18T10:31:12Z",
+      "lastSeenDateTime": "2023-03-07T13:19:35Z",
+      "collectedDateTime": "2023-03-07T13:59:34.735Z",
+      "recordType": "CNAME",
+      "parentHost": {
+          "id": "contoso.com"
+      },
+      "artifact": {
+          "@odata.type": "#microsoft.graph.security.hostname",
+          "id": "www.contoso.com"
+      }
     }
   ]
 }
 ```
-

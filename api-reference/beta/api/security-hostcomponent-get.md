@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_hostcomponent"
+  "name": "get_hostcomponent",
+  "sampleKeys": ["TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t"]
 }
 -->
 ``` http

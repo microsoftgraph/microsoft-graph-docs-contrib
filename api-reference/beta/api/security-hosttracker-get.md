@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_hosttracker"
+  "name": "get_hosttracker",
+  "sampleKeys": ["Y29udG9zby1hZHZlcnRpc2luZzkyNDEwQ29udG9zb0lkOTI0MTBhYm91dC5hZHMuY29udG9zby5jb20="]
 }
 -->
 ``` http
@@ -77,11 +78,14 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.hostTracker",
-  "id": "0e60c906-7f9b-9b03-174f-80876c800916",
-  "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)",
-  "value": "String",
-  "kind": "String"
+  "id": "Y29udG9zby1hZHZlcnRpc2luZzkyNDEwQ29udG9zb0lkOTI0MTBhYm91dC5hZHMuY29udG9zby5jb20=",
+  "firstSeenDateTime": "2019-06-13T17:25:22.761Z",
+  "lastSeenDateTime": "2023-03-25T23:59:32.157Z",
+  "kind": "ContosoId",
+  "value": "contoso-advertising",
+    "host": {
+        "id": "about.ads.contoso.com"
+    }
 }
 ```
 

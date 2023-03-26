@@ -79,7 +79,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
-      "id": "bWljcm9zb2Z0LmNvbTcxNDA5MjAuMTAzLjg1LjMz",
+      "id": "Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U=",
       "firstSeenDateTime": "2022-04-18T10:31:12Z",
       "lastSeenDateTime": "2023-03-07T13:19:35Z",
       "collectedDateTime": "2023-03-07T13:59:34.735Z",

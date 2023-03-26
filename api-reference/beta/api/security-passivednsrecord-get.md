@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/threatIntelligence/passiveDnsRecord/{passiveDnsRecordId}
+GET /security/threatIntelligence/passiveDnsRecords/{passiveDnsRecordId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.passiveDns](../resources/security-passivednsrecord.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,12 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_passivedns"
+  "name": "get_passivedns",
+  "sampleKeys": ["Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/passiveDns/{passiveDnsId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/passiveDnsRecords/Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U=
 ```
 
 
@@ -78,7 +79,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.passiveDnsRecord",
-    "id": "bWljcm9zb2Z0LmNvbTcxNDA5MjAuMTAzLjg1LjMz",
+    "id": "Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U=",
     "firstSeenDateTime": "2022-04-18T10:31:12Z",
     "lastSeenDateTime": "2023-03-07T13:19:35Z",
     "collectedDateTime": "2023-03-07T13:59:34.735Z",

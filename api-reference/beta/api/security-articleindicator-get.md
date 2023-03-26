@@ -54,11 +54,12 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_articleindicator"
+  "name": "get_articleindicator",
+  "sampleKeys": ["ZmFrZS1tYWxpY2lvdXMuc2l0ZQ=="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/articleIndicators/{articleIndicatorId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/articleIndicators/ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==
 ```
 
 
