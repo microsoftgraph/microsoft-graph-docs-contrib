@@ -1,6 +1,6 @@
 ---
 title: "autonomousSystem resource type"
-description: "This represents data assigned in an Autonomous System."
+description: "Represents data assigned in an autonomous system."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,20 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This represents data assigned in an Autonomous System.
+Represents data assigned in an autonomous system.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the Autonomous System.|
-|number|Int32|The Autonomous System Number, assigned by IANA.|
-|organization|String|The Automous System Organization name.   |
-|value|String|A displayable value for these Autonomous System details.|
+|name|String|The name of the autonomous system.|
+|number|Int32|The autonomous system number, assigned by IANA.|
+|organization|String|The name of the autonomous system organization.   |
+|value|String|A displayable value for these autonomous system details.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -37,9 +40,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.security.autonomousSystem",
   "name": "String",
-  "number": "Integer",
+  "number": "Int32",
   "organization": "String",
   "value": "String"
 }
 ```
-

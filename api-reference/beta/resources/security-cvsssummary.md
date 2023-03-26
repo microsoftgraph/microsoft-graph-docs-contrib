@@ -1,6 +1,6 @@
 ---
 title: "cvssSummary resource type"
-description: "Represents a Common Vulnerability Scoring System (CVSS) evaluation of a vulnerability."
+description: "Represents a common vulnerability scoring system (CVSS) evaluation of a vulnerability."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,9 +13,10 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A `cvssSummary` represents a Common Vulnerability Scoring System (CVSS) evaluation of a vulnerability.
+Represents a common vulnerability scoring system (CVSS) evaluation of a vulnerability.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |score|Edm.Double|The CVSS score about this vulnerability.|
@@ -23,9 +24,11 @@ A `cvssSummary` represents a Common Vulnerability Scoring System (CVSS) evaluati
 |vectorString|String|The CVSS vector string for this vulnerability.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -40,4 +43,3 @@ The following is a JSON representation of the resource.
   "vectorString": "String"
 }
 ```
-

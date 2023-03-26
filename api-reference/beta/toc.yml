@@ -16093,22 +16093,22 @@ items:
           href: api/tiindicator-deletetiindicators.md
         - name: Delete multiple by external ID
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
-      - name: Threat Intelligence (preview)
+      - name: Threat intelligence (preview)
         href: resources/security-threatintelligence-overview.md
         items:
         - name: Article
           items:
           - name: Article
             href: resources/security-article.md
-          - name: Get Article
+          - name: Get 
             href: api/security-article-get.md
-          - name: List Articles
+          - name: List
             href: api/security-article-list.md
-          - name: List Article Indicators
+          - name: List article indicators
             href: api/security-article-list-indicators.md
-        - name: Article Indicator
+        - name: Article indicator
           items:
-            - name: Article Indicator
+            - name: Article indicator
               href: resources/security-articleindicator.md
             - name: Get
               href: api/security-articleindicator-get.md
@@ -16116,57 +16116,57 @@ items:
           items:
             - name: Host
               href: resources/security-host.md
-            - name: Get Host
+            - name: Get
               href: api/security-host-get.md
-            - name: List Components
+            - name: List components
               href: api/security-host-list-components.md
-            - name: List Cookies
+            - name: List cookies
               href: api/security-host-list-cookies.md
-            - name: List Passive DNS
+            - name: List passive DNS
               href: api/security-host-list-passivedns.md
-            - name: List Passive DNS Reverse
+            - name: List passive DNS reverse
               href: api/security-host-list-passivednsreverse.md
-            - name: Get Reputation
+            - name: Get reputation
               href: api/security-host-get-reputation.md
-            - name: List Trackers
+            - name: List trackers
               href: api/security-host-list-trackers.md
-        - name: Host Component
+        - name: Host component
           items:
-          - name: Host Component
+          - name: Host component
             href: resources/security-hostcomponent.md
           - name: Get
             href: api/security-hostcomponent-get.md
-        - name: Host Cookie
+        - name: Host cookie
           items:
-            - name: Host Cookie
+            - name: Host cookie
               href: resources/security-hostcookie.md
             - name: Get
               href: api/security-hostcookie-get.md
-        - name: Host Tracker
+        - name: Host tracker
           items:
-          - name: Host Tracker
+          - name: Host tracker
             href: resources/security-hosttracker.md
           - name: Get
             href: api/security-hosttracker-get.md
-        - name: Intelligence Profile (Intel Profile)
+        - name: Intelligence profile
           items:
-          - name: Intelligence Profile
+          - name: Intelligence profile
             href: resources/security-intelligenceprofile.md
-          - name: Get Intelligence Profile 
+          - name: Get
             href: api/security-intelligenceprofile-get.md
-          - name: List Intelligence Profiles
+          - name: List
             href: api/security-intelligenceprofile-list.md
-          - name: List Intelligence Profile Indicators
+          - name: List intelligence profile indicators
             href: api/security-intelligenceprofile-list-indicators.md
-        - name: Intelligence Profile Indicator
+        - name: Intelligence profile indicator
           items:
-          - name: Intelligence Profile Indicator
+          - name: Intelligence profile indicator
             href: resources/security-intelligenceprofileindicator.md
           - name: Get
             href: api/security-intelligenceprofileindicator-get.md
-        - name: Passive DNS Record
+        - name: Passive DNS record
           items:
-          - name: Passive DNS Record
+          - name: Passive DNS record
             href: resources/security-passivednsrecord.md
           - name: Get
             href: api/security-passivednsrecord-get.md
@@ -16174,14 +16174,16 @@ items:
           items:
           - name: Vulnerability
             href: resources/security-vulnerability.md
-          - name: Get Vulnerability
+          - name: Get
             href: api/security-vulnerability-get.md
-          - name: List Vulnerability Components
+          - name: List vulnerability components
             href: api/security-vulnerability-list-components.md
-        - name: Vulnerability Component
+        - name: Vulnerability component
           items:
-          - name: Vulnerability Componet
+          - name: Vulnerability componet
             href: resources/security-vulnerabilitycomponent.md
+          - name: Get
+            href: api/security-vulnerabilitycomponent-get.md
       - name: Threat submission (preview)
         href: resources/security-threatsubmission.md
         items:

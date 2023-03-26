@@ -1,6 +1,6 @@
 ---
 title: "hostReputation resource type"
-description: "Represents the reputation of a host based on a series of rules"
+description: "Represents the reputation of a host based on a series of rules."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,27 +13,31 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities (such as First and Last Seen timestamps or [Autonomous System](../resources/security-autonomoussystem.md) details) and a list of rules that impact the reputation score when applicable.
+Represents the reputation of a host based on a series of rules. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities (such as first and last seen timestamps or [autonomous system](../resources/security-autonomoussystem.md) details) and a list of rules that impact the reputation score when applicable.
 
-Reputation data is important to understanding the trustworthiness of your own attack surface and is also useful when assessing unknown [hostNames](../resources/security-hostname.md) or [IP addresses](../resources/security-ipaddress.md) that appear in investigations. These scores will uncover any prior malicious or suspicious activity that impacted the entity, or other known indicators of compromise that should be considered.
+Reputation data is important to understanding the trustworthiness of your own attack surface and is also useful when assessing unknown [hostnames](../resources/security-hostname.md) or [IP addresses](../resources/security-ipaddress.md) that appear in investigations. These scores uncover any prior malicious or suspicious activity that impacted the entity, or other known indicators of compromise that should be considered.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get hostReputation](../api/security-host-get-reputation.md)|[microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)|Read the properties and relationships of a [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md) object, for a given [microsoft.graph.security.host](../resources/security-host.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |classification|microsoft.graph.security.hostReputationClassification|The calculated reputation of the host. The possible values are: `unknown`, `neutral`, `suspicious`, `malicious`, `unknownFutureValue`.|
-|id|String|A system-generated id for this `hostReputation`|
+|id|String|A system-generated ID for this **hostReputation**.|
 |rules|[microsoft.graph.security.hostReputationRule](../resources/security-hostreputationrule.md) collection|A collection of rules that have been used to calculate the classification and score.|
 |score|Int32|The calculated score (0-100) of the requested host. A higher value indicates that this [host](../resources/security-host.md) is more likely to be suspicious or malicious.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -47,7 +51,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.hostReputation",
   "id": "String (identifier)",
   "classification": "String",
-  "score": "Integer",
+  "score": "Int32",
   "rules": [
     {
       "@odata.type": "microsoft.graph.security.hostReputationRule"
@@ -55,4 +59,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

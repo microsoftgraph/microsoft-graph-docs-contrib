@@ -11,9 +11,7 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
-### contentFormat values 
-
-
+### contentFormat values
 
 |Member|
 |:---|
@@ -90,9 +88,7 @@ Namespace: microsoft.graph.security
 |notAvaliable|
 |unknownFutureValue|
 
-### hostReputationClassification values 
-
-
+### hostReputationClassification values
 
 |Member|
 |:---|
@@ -102,9 +98,7 @@ Namespace: microsoft.graph.security
 |malicious|
 |unknownFutureValue|
 
-### hostReputationRuleSeverity values 
-
-
+### hostReputationRuleSeverity values
 
 |Member|
 |:---|
@@ -114,9 +108,7 @@ Namespace: microsoft.graph.security
 |high|
 |unknownFutureValue|
 
-### indicatorSource values 
-
-
+### indicatorSource values
 
 |Member|
 |:---|
@@ -125,9 +117,7 @@ Namespace: microsoft.graph.security
 |public|
 |unknownFutureValue|
 
-### intelligenceProfileKind values 
-
-
+### intelligenceProfileKind values
 
 |Member|
 |:---|
@@ -169,9 +159,7 @@ Namespace: microsoft.graph.security
 |dateOfEvent|
 |unknownFutureValue|
 
-### vulnerabilitySeverity values 
-
-
+### vulnerabilitySeverity values
 
 |Member|
 |:---|

@@ -1,6 +1,6 @@
 ---
 title: "artifact resource type"
-description: "An abstract representation of an entity found online by Microsoft's Security services"
+description: "Represents an abstract entity found online by security services of Microsoft."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`artifact` is not an addressible EntityType. Instead, it is used as an abstract representation of an entity found online by Microsoft's Security services.
+Represents an abstract entity found online by security services of Microsoft.
 
 Current types of artifacts include:
 
@@ -23,22 +23,25 @@ Current types of artifacts include:
 * [hostComponent](../resources/security-hostcomponent.md)
 * [hostCookie](../resources/security-hostcookie.md)
 * [hostTracker](../resources/security-hosttracker.md)
-* [passiveDnsRecord](../resources/security-passiveDnsRecord.md)
+* [passiveDnsRecord](../resources/security-passivednsrecord.md)
 * [unclassifiedArtifact](../resources/security-unclassifiedartifact.md)
 
-Instances of `artifact` identified in the following Microsoft Security API Groups should handle the possible implementations. Microsoft Security APIs that currently support `artifact` type:
+Instances of **artifact** identified in the following Microsoft Security API groups should handle the possible implementations. Microsoft Security APIs that currently support the **artifact** type:
 
 * [Microsoft Threat Intelligence](../resources/security-threatintelligence-overview.md)
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|A system-generated id.|
+|id|String|Unique identifier for the **artifact**.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -53,4 +56,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
