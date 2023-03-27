@@ -247,8 +247,9 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-03-24T02:39:03.2321081Z",
-        "WorkloadArea": "Microsoft.ThreatIntelligence",
+        "WorkloadArea": "Security",
         "SubArea": ""
       }
     ]
   }
+  
