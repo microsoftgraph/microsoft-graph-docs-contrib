@@ -30,17 +30,17 @@ Represents the image resource on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The image's display name.|
+|displayName|String|The display name of the image.|
 |expirationDate|Date|The date the image became unavailable.|
 |id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
-|osBuildNumber|String|The image's OS build version. For example: 1909.|
+|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`.|
+|osBuildNumber|String|The OS build version of the image. For example, `1909`.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknownFutureValue`.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}`.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
-|version|String|The image version. For example: 0.0.1, 1.5.13.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
+|version|String|The image version. For example, `0.0.1` and `1.5.13`.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -88,16 +88,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-  "id": "String (identifier)",
   "displayName": "String",
+  "expirationDate": "String (timestamp)",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
   "operatingSystem": "String",
   "osBuildNumber": "String",
-  "version": "String",
-  "lastModifiedDateTime": "String (timestamp)",
+  "osStatus": "String",
+  "sourceImageResourceId": "String",
   "status": "String",
   "statusDetails": "String",
-  "sourceImageResourceId": "String",
-  "expirationDate":"String (timestamp)",
-  "osStatus":"String"
+  "version": "String"
 }
 ```
