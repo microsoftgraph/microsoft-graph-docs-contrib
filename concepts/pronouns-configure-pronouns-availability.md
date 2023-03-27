@@ -105,9 +105,52 @@ Content-Type: application/json
 }
 ```
 
+## Configure Pronouns settings using PowerShell
+
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to make pronouns available in your organization.
+
+### Additional prerequisites
+
+* **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+* **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+### Command examples
+
+> [!NOTE]
+> Because pronouns settings commands are only available in beta, switch to the beta profile before calling it.
+> ```powershell
+>    Select-MgProfile beta
+> ```
+
+To get pronouns settings configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+
+```powershell
+   Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
+```
+
+By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to change that and make pronouns available in your organization.
+
+> [!NOTE]
+> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> ```powershell
+>    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All,"
+> ```
+
+Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
+```
+
+Alternatively, you can make pronouns unavailable for your organization using the following comman, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$false
+```
+
 ## See also
 - [Turn pronouns on or off for your organization in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off)
 - [Pronouns in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85)
 - [Profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
-- [Add or delete custom attributes on a profile card using the profile card API](add-properties-profilecard.md)
+- 
 
