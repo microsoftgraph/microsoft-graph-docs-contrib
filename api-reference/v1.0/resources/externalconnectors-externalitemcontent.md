@@ -31,8 +31,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "value": "String",
-  "type": "String"
+  "type": "String",
+  "value": "String"
 }
 ```
 

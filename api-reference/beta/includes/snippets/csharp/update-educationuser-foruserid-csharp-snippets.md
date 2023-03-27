@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationUser = new EducationUser
+var requestBody = new EducationUser
 {
-	RelatedContacts = new List<RelatedContact>()
+	RelatedContacts = new List<RelatedContact>
 	{
 		new RelatedContact
 		{
@@ -16,7 +16,7 @@ var educationUser = new EducationUser
 			EmailAddress = "father@time.com",
 			MobilePhone = "4251231234",
 			Relationship = ContactRelationship.Guardian,
-			AccessConsent = true
+			AccessConsent = true,
 		},
 		new RelatedContact
 		{
@@ -24,13 +24,11 @@ var educationUser = new EducationUser
 			EmailAddress = "mother@nature.co.uk",
 			MobilePhone = "3251231234",
 			Relationship = ContactRelationship.Parent,
-			AccessConsent = true
-		}
-	}
+			AccessConsent = true,
+		},
+	},
 };
+var result = await graphClient.Education.Users["{educationUser-id}"].PatchAsync(requestBody);
 
-await graphClient.Education.Users["{educationUser-id}"]
-	.Request()
-	.UpdateAsync(educationUser);
 
 ```

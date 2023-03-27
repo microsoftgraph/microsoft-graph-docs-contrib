@@ -94,8 +94,6 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 
 ---
 
-
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -113,6 +111,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.teamsAppSettings",
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
+    "allowUserRequestsForAppAccess": true,
     "isChatResourceSpecificConsentEnabled": "true"
   }
 }

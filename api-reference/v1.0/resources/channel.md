@@ -114,14 +114,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "createdDateTime": "string (timestamp)",
   "description": "string",
   "displayName": "string",
+  "email": "string",
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
-  "email": "string",
-  "webUrl": "string",
   "membershipType": "String",
-  "createdDateTime": "string (timestamp)"
+  "webUrl": "string"
 }
 ```
 
@@ -137,3 +137,8 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+## See also
+
+- [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
+- [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

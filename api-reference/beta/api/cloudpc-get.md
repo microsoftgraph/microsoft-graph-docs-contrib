@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -155,7 +154,9 @@ Content-Type: application/json
     },
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```
 
@@ -202,7 +203,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -297,7 +297,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac1
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -343,6 +342,8 @@ Content-Type: application/json
     },
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
+    "provisioningType": "shared",
+    "diskEncryptionState": "notAvailable"
 }
 ```

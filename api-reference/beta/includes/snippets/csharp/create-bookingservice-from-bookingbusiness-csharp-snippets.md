@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookingService = new BookingService
+var requestBody = new BookingService
 {
-	DefaultDuration = new Duration("PT1H30M"),
+	OdataType = "#microsoft.graph.bookingService",
+	DefaultDuration = TimeSpan.Parse("PT1H30M"),
 	DefaultLocation = new Location
 	{
+		OdataType = "#microsoft.graph.location",
 		Address = new PhysicalAddress
 		{
+			OdataType = "#microsoft.graph.physicalAddress",
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
@@ -20,10 +23,12 @@ var bookingService = new BookingService
 			State = "NY",
 			Street = "4567 First Street",
 			Type = null,
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"type@odata.type", "#microsoft.graph.physicalAddressType"}
-			}
+				{
+					"type@odata.type" , "#microsoft.graph.physicalAddressType"
+				},
+			},
 		},
 		Coordinates = null,
 		DisplayName = "Contoso Lunch Delivery",
@@ -32,26 +37,33 @@ var bookingService = new BookingService
 		LocationUri = null,
 		UniqueId = null,
 		UniqueIdType = null,
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"locationType@odata.type", "#microsoft.graph.locationType"},
-			{"uniqueIdType@odata.type", "#microsoft.graph.locationUniqueIdType"}
-		}
+			{
+				"locationType@odata.type" , "#microsoft.graph.locationType"
+			},
+			{
+				"uniqueIdType@odata.type" , "#microsoft.graph.locationUniqueIdType"
+			},
+		},
 	},
-	DefaultPrice = 10,
+	DefaultPrice = 10d,
 	DefaultPriceType = BookingPriceType.FixedPrice,
-	DefaultReminders = new List<BookingReminder>()
+	DefaultReminders = new List<BookingReminder>
 	{
 		new BookingReminder
 		{
+			OdataType = "#microsoft.graph.bookingReminder",
 			Message = "Please be reminded that this service is tomorrow.",
-			Offset = new Duration("P1D"),
+			Offset = TimeSpan.Parse("P1D"),
 			Recipients = BookingReminderRecipients.AllAttendees,
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"recipients@odata.type", "#microsoft.graph.bookingReminderRecipients"}
-			}
-		}
+				{
+					"recipients@odata.type" , "#microsoft.graph.bookingReminderRecipients"
+				},
+			},
+		},
 	},
 	Description = "Individual bento box lunch delivery",
 	DisplayName = "Bento",
@@ -60,32 +72,37 @@ var bookingService = new BookingService
 	LanguageTag = "en-US",
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",
-	PostBuffer = new Duration("PT10M"),
-	PreBuffer = new Duration("PT5M"),
+	PostBuffer = TimeSpan.Parse("PT10M"),
+	PreBuffer = TimeSpan.Parse("PT5M"),
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
+		OdataType = "#microsoft.graph.bookingSchedulingPolicy",
 		AllowStaffSelection = true,
-		MaximumAdvance = new Duration("P10D"),
-		MinimumLeadTime = new Duration("PT10H"),
+		MaximumAdvance = TimeSpan.Parse("P10D"),
+		MinimumLeadTime = TimeSpan.Parse("PT10H"),
 		SendConfirmationsToOwner = true,
-		TimeSlotInterval = new Duration("PT1H")
+		TimeSlotInterval = TimeSpan.Parse("PT1H"),
 	},
-	StaffMemberIds = new List<String>()
+	StaffMemberIds = new List<string>
 	{
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
-		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
+		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
 	},
 	IsAnonymousJoinEnabled = false,
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"defaultPriceType@odata.type", "#microsoft.graph.bookingPriceType"},
-		{"defaultReminders@odata.type", "#Collection(microsoft.graph.bookingReminder)"},
-		{"staffMemberIds@odata.type", "#Collection(String)"}
-	}
+		{
+			"defaultPriceType@odata.type" , "#microsoft.graph.bookingPriceType"
+		},
+		{
+			"defaultReminders@odata.type" , "#Collection(microsoft.graph.bookingReminder)"
+		},
+		{
+			"staffMemberIds@odata.type" , "#Collection(String)"
+		},
+	},
 };
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services.PostAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services
-	.Request()
-	.AddAsync(bookingService);
 
 ```

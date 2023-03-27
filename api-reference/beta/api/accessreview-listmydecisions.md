@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 ---
 
-
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

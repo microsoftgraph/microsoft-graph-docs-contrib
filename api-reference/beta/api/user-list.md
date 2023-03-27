@@ -334,7 +334,6 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -550,7 +549,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -627,7 +625,6 @@ ConsistencyLevel: eventual
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -679,7 +676,7 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-to-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -703,7 +700,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -785,7 +781,6 @@ GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$fil
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -870,7 +865,6 @@ GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
 
 ---
 
-
 #### Response
 
 In the following response, the schema extension property `ext55gb1l09_msLearnCourses` is unassigned in two of the user objects.
@@ -902,6 +896,120 @@ Content-type: application/json
 
 > **Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
 
+### Example 13: List all users with a custom security attribute assignment that equals a value
+
+The following example shows how to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+
+User #1
+
+- Attribute set: `Marketing`
+- Attribute: `AppCountry`
+- Attribute data type: Collection of Strings
+- Attribute value: `["India","Canada"]`
+
+User #2
+
+- Attribute set: `Marketing`
+- Attribute: `AppCountry`
+- Attribute data type: Collection of Strings
+- Attribute value: `["Canada","Mexico"]`
+
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+For examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "customsecurityattribute_filter_users_equals_value"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'
+ConsistencyLevel: eventual
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customsecurityattribute-filter-users-equals-value-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customsecurityattribute-filter-users-equals-value-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/customsecurityattribute-filter-users-equals-value-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customsecurityattribute-filter-users-equals-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customsecurityattribute-filter-users-equals-value-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/customsecurityattribute-filter-users-equals-value-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,customSecurityAttributes)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "dbaf3778-4f81-4ea0-ac1c-502a293c12ac",
+            "displayName": "Jiya",
+            "customSecurityAttributes": {
+                "Engineering": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "Datacenter@odata.type": "#Collection(String)",
+                    "Datacenter": [
+                        "India"
+                    ]
+                },
+                "Marketing": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "AppCountry@odata.type": "#Collection(String)",
+                    "AppCountry": [
+                        "India",
+                        "Canada"
+                    ],
+                    "EmployeeId": "KX19476"
+                }
+            }
+        },
+        {
+            "id": "6bac433c-48c6-4213-a316-1428de32701b",
+            "displayName": "Jana",
+            "customSecurityAttributes": {
+                "Marketing": {
+                    "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+                    "AppCountry@odata.type": "#Collection(String)",
+                    "AppCountry": [
+                        "Canada",
+                        "Mexico"
+                    ],
+                    "EmployeeId": "GS46982"
+                }
+            }
+        }
+    ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

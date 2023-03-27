@@ -43,8 +43,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "servicePrincipal": { "@odata.type": "microsoft.graph.servicePrincipal" },
-  "application": { "@odata.type": "microsoft.graph.application" }
+  "application": { "@odata.type": "microsoft.graph.application" },
+  "servicePrincipal": { "@odata.type": "microsoft.graph.servicePrincipal" }
 }
 ```
 
