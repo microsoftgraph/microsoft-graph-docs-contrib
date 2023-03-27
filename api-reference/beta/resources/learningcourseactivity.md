@@ -32,19 +32,18 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
-|assignmentType|assignmentType|**assignmentType for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`**
-|registrationId|String|**Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s**
-|startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
-|assignerUserId|String|**The user id of the assigner**
-|dueDateTime|DateTimeTimeZone|**Due date for the course activity**
 |assignedDateTime|DateTimeOffset|**Date time value when the assignment was completed**
+|assignerUserId|String|**The user id of the assigner**
+|assignmentType|assignmentType|**assignmentType for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`**
 |completedDateTime|DateTimeOffset|**Date time value when the assignment was completed**|
 |completionPercentage|Int32|**Percenatge completion value of course**|
+|dueDateTime|DateTimeTimeZone|**Due date for the course activity**
 |externalcourseActivityId|String|**A course activity id generated at provider**|
 |Id|String|**The resultant id of this request can be used to make further interactions to the course activity API’s**
-|learnerUserId|String|**The user id of the learner**|
 |learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent graph API’s**|
-|learningProviderId|String|**he registration Id of the provider**|
+|learnerUserId|String|**The user id of the learner**|
+|learningProviderId|String|**The registration Id of the provider**|
+|startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
 |status|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
 
 
@@ -77,13 +76,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.learningCourseActivity",
-  "externalcourseActivityId": "String",
-  "learningProviderId": "String",
-  "learningContentId": "String",
-  "learnerUserId": "String",
-  "status": "String",
   "completedDateTime": "String (timestamp)",
-  "completionPercentage": "Integer"
+  "completionPercentage": "Integer",
+  "externalcourseActivityId": "String",
+  "learningContentId": "String",
+  "learningProviderId": "String",
+  "learnerUserId": "String",
+  "status": "String"
 }
 ```
 

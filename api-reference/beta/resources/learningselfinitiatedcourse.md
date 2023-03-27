@@ -25,7 +25,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
-|registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
+|learningProviderId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |[status](../resources/courseStatus.md)|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Accpeted values are (inProgress/completed)|
 
@@ -37,13 +37,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
-  "externalcourseActivityId": "String",
-  "learningProviderId": "String",
-  "learningContentId": "String",
-  "learnerUserId": "String",
-  "status": "String",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Integer",
-  "startedDateTime": "String (timestamp)"
+  "externalcourseActivityId": "String",
+  "learningContentId": "String",
+  "learningProviderId": "String",
+  "learnerUserId": "String",
+  "startedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

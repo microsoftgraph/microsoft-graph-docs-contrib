@@ -89,41 +89,40 @@ Content-Type: application/json
  "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/employeeExperience/learningCourseActivities$entity", 
  "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#me/employeeExperience/learningCourseActivities?$skip=10", 
  "value": [ 
- { 
-  "@odata.type": "#microsoft.graph.learningAssignment", 
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('7ba2228a-e020-11ec-9d64-0242ac120002')$entity",
-  "assignmentType": "required", 
-  "notes":  { 
-    "contentType": "text", 
-    "content": "required assignment added for user"
+  { 
+    "@odata.type": "#microsoft.graph.learningAssignment", 
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('7ba2228a-e020-11ec-9d64-0242ac120002')$entity",
+    "assignedDateTime": "2021-05-11T22:57:17+00:00",
+    "assignmentType": "required", 
+    "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
+    "completedDateTime": null,
+    "completionPercentage":null,
+    "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+    "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+    "dueDateTime":{ 
+    "dateTime": "2022-09-22T16:05:00.0000000",
+    "timeZone": "UTC"
+    },
+    "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+    "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
+    "notes":  { 
+      "contentType": "text", 
+      "content": "required assignment added for user"
+    }, 
+    "status": "NotStarted"
   },
-  "dueDateTime":{ 
-   "dateTime": "2022-09-22T16:05:00.0000000",
-   "timeZone": "UTC"
-  }, 
-  "dueDateTime": "2021-05-11T22:57:17+00:00",
-  "assignedDateTime": "2021-05-11T22:57:17+00:00",
-  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
-  "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
-  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
-  "status": "NotStarted",
-  "completedDateTime": null,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002"
-  "completionPercentage":null
-}
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('be2f4d76-e020-11ec-9d64-0242ac120002')$entity", 
-  "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse", 
-  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002", 
-  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002", 
-  "status": "InProgress", 
-  "completedDateTime": null, 
-  "startedDateTime": "2021-05-21T22:57:17+00:00", 
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002", 
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002", 
-  "completionPercentage":20 
-}] 
+  {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('be2f4d76-e020-11ec-9d64-0242ac120002')$entity", 
+    "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse", 
+    "completedDateTime": null, 
+    "completionPercentage":20,
+    "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002", 
+    "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+    "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002", 
+    "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002", 
+    "startedDateTime": "2021-05-21T22:57:17+00:00", 
+    "status": "InProgress"
+  }] 
 }
 
 ```

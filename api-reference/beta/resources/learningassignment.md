@@ -30,8 +30,8 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |Id|String|The resultant id of this request can be used to make further interactions to the course activity API’s|
 |learningContentId|String| The Id of Learning Content received when Learning Content is created on Viva Learning using LearningContent graph API’s|
 |learnerUserId|String|The user id of the learner|
+|learningProviderId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
 |notes|String|Notes for the course activity (Optional)|
-|registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner|
 |status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed)|
 

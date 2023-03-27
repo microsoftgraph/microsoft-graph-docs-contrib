@@ -67,25 +67,25 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.learningAssignment",
+  "assignedDateTime": "2021-05-11T22:57:17+00:00",
   "assignmentType": "required",
+  "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
+  "completedDateTime": null,
+  "completionPercentage":20,
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
+  "dueDateTime": {
+  "dateTime": "2022-09-22T16:05:00.0000000",
+  "timeZone": "UTC"
+  },
+  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
+  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
   "notes":
   {
-    "contentType": "text",
-    "content": "required assignment added for user"
+  "contentType": "text",
+  "content": "required assignment added for user"
   },
-  "dueDateTime": {
-    "dateTime": "2022-09-22T16:05:00.0000000",
-    "timeZone": "UTC"
-  },
-  "assignedDateTime": "2021-05-11T22:57:17+00:00",
-  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
-  "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
-  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
-  "status": "InProgress",
-  "completedDateTime": null,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "completionPercentage":20
+  "status": "InProgress"
 }
 
 ```
@@ -123,13 +123,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
-  "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
-  "startedDateTime": "2021-05-11T22:57:17+00:00",
-  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
-  "status": "InProgress",
   "completedDateTime": null,
+  "completionPercentage":30,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "completionPercentage":30
+  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+  "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",  
+  "startedDateTime": "2021-05-11T22:57:17+00:00",
+  "status": "InProgress"  
 }
 
 ```
