@@ -31,7 +31,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "PendingExternalUserProfile.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the `PendingExternalUserProfile.Read.All` delegated and application permissions to query pending external user profiles through the [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/pendingexternaluserprofile?view=graph-rest-beta) methods.",
+          "Description": "Added the `PendingExternalUserProfile.Read.All` delegated and application permissions to query pending external user profiles through the [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta) methods.",
           "Target": "pendingExternalUserProfile"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "PendingExternalUserProfile.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the `PendingExternalUserProfile.ReadWrite.All` delegated and application permissions to query and write pending external user profiles through the [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/pendingexternaluserprofile?view=graph-rest-beta) methods.",
+          "Description": "Added the `PendingExternalUserProfile.ReadWrite.All` delegated and application permissions to query and write pending external user profiles through the [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta) methods.",
           "Target": "pendingExternalUserProfile"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ExternalUserProfile.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the `ExternalUserProfile.Read.All` delegated and application permissions to query external user profiles through the [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/externaluserprofile?view=graph-rest-beta) methods.",
+          "Description": "Added the `ExternalUserProfile.Read.All` delegated and application permissions to query external user profiles through the [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/externaluserprofile?view=graph-rest-beta) methods.",
           "Target": "externalUserProfile"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ExternalUserProfile.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the `ExternalUserProfile.ReadWrite.All` delegated and application permissions to query  and write external user profiles through the [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/externaluserprofile?view=graph-rest-beta) methods.",
+          "Description": "Added the `ExternalUserProfile.ReadWrite.All` delegated and application permissions to query  and write external user profiles through the [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/externaluserprofile?view=graph-rest-beta) methods.",
           "Target": "externalUserProfile"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "directoryObject",
           "ChangeType": "Addition",
-          "Description": "Added the [externalProfile](https://learn.microsoft.com/en-us/graph/api/resources/externalprofile?view=graph-rest-beta), [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/externaluserprofiles?view=graph-rest-beta), and [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/pendingexternaluserprofiles?view=graph-rest-beta) navigation properties to the [directory](https://learn.microsoft.com/graph/api/resources/directoryobject?view=graph-rest-beta) resource.",
+          "Description": "Added the [externalProfile](https://learn.microsoft.com/en-us/graph/api/resources/externalprofile?view=graph-rest-beta), [externalUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/externaluserprofiles?view=graph-rest-beta), and [pendingExternalUserProfiles](https://learn.microsoft.com/en-us/graph/api/pendingexternaluserprofiles?view=graph-rest-beta) navigation properties to the [directory](https://learn.microsoft.com/graph/api/resources/directoryobject?view=graph-rest-beta) resource.",
           "Target": "directoryObject"
         }
       ],
