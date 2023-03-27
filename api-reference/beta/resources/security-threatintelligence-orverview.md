@@ -1,13 +1,13 @@
 ---
-title: "Use the Threat Intelligence APIs in Microsoft Graph (preview)"
-description: "The Threat Intelligence APIs in Microsoft Graph lets apps manage administrator tasks for organizations."
+title: "Use the threat intelligence APIs in Microsoft Graph (preview)"
+description: "The threat intelligence APIs in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: conceptualPageType
 ---
 
-# Use the Threat Intelligence APIs in Microsoft Graph (preview)
+# Use the threat intelligence APIs in Microsoft Graph (preview)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,17 +17,17 @@ Microsoft Threat Intelligence APIs (preview) allow you to operationalize intelli
 
 ## Authorization
 
-To call the Threat Intelligence APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/concepts/auth/auth-concepts). Your app also needs the appropriate permissions. For more information, see [Threat Intelligence permissions](/concepts/permissions-reference#threat-intelligence-permissions).
+To call the threat intelligence APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/concepts/auth/auth-concepts). Your app also needs the appropriate permissions. For more information, see [Threat intelligence permissions](/concepts/permissions-reference#threat-intelligence-permissions).
 
 ## Common use cases
 
-The following describes some common use cases of the Threat Intelligence APIs.
+The following describes some common use cases of the threat intelligence APIs.
 
 | Use cases | REST resources | See also |
 |:----------|:---------------|:---------|
 | Read information about a host | [host](../resources/security-host.md) | [Methods of host](../resources/security-host.md#methods) |
-| Read articles about Threat Intelligence | [article](../resources/security-article.md) | [Methods of article](../resources/security-article.md#methods) |
-| Read Intelligence Profiles | [intelligenceProfile](../resources/security-intelligenceProfile.md) | [Methods of intelligenceProfile](../resources/security-intelligenceProfile.md#methods) |
+| Read articles about threat intelligence | [article](../resources/security-article.md) | [Methods of article](../resources/security-article.md#methods) |
+| Read intelligence profiles | [intelligenceProfile](../resources/security-intelligenceprofile.md) | [Methods of intelligenceProfile](../resources/security-intelligenceprofile.md#methods) |
 | Read details about a vulnerability | [vulnerability](../resources/security-vulnerability.md) | [Methods of vulnerability](../resources/security-vulnerability.md#methods) |
 
 ## What's new
@@ -36,7 +36,7 @@ Find out about the [latest new features and updates](/concepts/whats-new-overvie
 
 ## Next steps
 
-The Threat Intelligence APIs in Microsoft Graph can help protect your organization from modern cyber threats. To learn more:
+The threat intelligence APIs in Microsoft Graph can help protect your organization from modern cyber threats. To learn more:
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
