@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.security.indicator](../resources/security-indicat
 |:---|:---|:---|
 |firstSeenDateTime|DateTimeOffset| Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.|
 |id|String|A system generated ID for this **intelligenceProfileIndicator**. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md).|
-|lastSeenDateTime|DateTimeOffset|Designate when an artifact was most-recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.|
+|lastSeenDateTime|DateTimeOffset|Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.|
 |source|microsoft.graph.security.indicatorSource|Communicates the source of this **intelligenceProfileIndicator**. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md). The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
 
 ## Relationships
