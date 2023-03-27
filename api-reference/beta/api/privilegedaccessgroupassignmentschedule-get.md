@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
 
 ## Examples
 
-### Example 1: Retrieve an assignment schedule that's scoped to a group
+### Example 1: Retrieve an assignment schedule
 
 #### Request
 <!-- {
