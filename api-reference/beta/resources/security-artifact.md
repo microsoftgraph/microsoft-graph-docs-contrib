@@ -28,7 +28,7 @@ Current types of artifacts include:
 
 Instances of **artifact** identified in the following Microsoft Security API groups should handle the possible implementations. Microsoft Security APIs that currently support the **artifact** type:
 
-* [Microsoft Threat Intelligence](../resources/security-threatintelligence-overview.md)
+* [Microsoft Threat Intelligence](../resources/security-threatintelligence.md)
 
 ## Properties
 
