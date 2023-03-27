@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.passiveDnsRecord](../resources/security-passiveDnsRecord.md) object.
+Read the properties and relationships of a [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) object.
 
 ## Permissions
 
