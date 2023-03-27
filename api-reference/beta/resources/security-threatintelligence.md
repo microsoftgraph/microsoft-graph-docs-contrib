@@ -21,8 +21,8 @@ Microsoft Threat Intelligence APIs (preview) allow you to operationalize intelli
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articles](../api/security-article-list.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get the **article** resources from the **articles** navigation property.|
-|[Get article](../api/security-article-get.md)|[microsoft.graph.security.article](../resources/security-article.md) |Get the **article** resources from the **articles** navigation property.|
+|[List articles](../api/security-article-list.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get a list of **article** objects, including their properties and relationships.|
+|[Get article](../api/security-article-get.md)|[microsoft.graph.security.article](../resources/security-article.md) |Read the properties and relationships of an **article** object.|
 |[Get articleIndicator](../api/security-articleindicator-get.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) |Get the **articleIndicator** resources from the **articleIndicators** navigation property.|
 |[Get host](../api/security-host-get.md)|[microsoft.graph.security.host](../resources/security-host.md) |Get the **host** resources from the **hosts** navigation property.|
 |[Get hostComponent](../api/security-hostcomponent-get.md)|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) |Get the **hostComponent** resources.|
