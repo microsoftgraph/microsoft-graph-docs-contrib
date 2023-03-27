@@ -17,7 +17,7 @@ Microsoft Threat Intelligence APIs (preview) allow you to operationalize intelli
 
 ## Authorization
 
-To call the threat intelligence APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/concepts/auth/auth-concepts). Your app also needs the appropriate permissions. For more information, see [Threat intelligence permissions](/concepts/permissions-reference#threat-intelligence-permissions).
+To call the threat intelligence APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/auth-concepts). Your app also needs the appropriate permissions. For more information, see [Threat intelligence permissions](/graph/permissions-reference#threat-intelligence-permissions).
 
 ## Common use cases
 
@@ -32,7 +32,7 @@ The following describes some common use cases of the threat intelligence APIs.
 
 ## What's new
 
-Find out about the [latest new features and updates](/concepts/whats-new-overview) for this API set.
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 
