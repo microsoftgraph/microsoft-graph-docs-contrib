@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Graph Threat Intelligence APIs
+# threatIntelligence resource type
 
 Namespace: microsoft.graph.security
 
@@ -15,9 +15,10 @@ Namespace: microsoft.graph.security
 
 Microsoft Threat Intelligence APIs delivers world-class threat intelligence to help protect your organization from modern cyber threats. Using Microsoft Threat Intelligence APIs you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
 
-Microsoft's Threat Intelligence APIs (Preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including Indicators of Compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
+Microsoft Threat Intelligence APIs (preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including indicators of compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List articles](../api/security-article-list.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get the article resources from the articles navigation property.|
@@ -33,17 +34,37 @@ Microsoft's Threat Intelligence APIs (Preview) allow you to operationalize intel
 |[Get passiveDnsRecord](../api/security-passiveDnsRecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passiveDnsRecord.md) |Get the hostTracker resource from the trackers navigation property.|
 |[Get vulnerabilities](../api/security-vulnerability-get.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the vulnerability resources from the vulnerabilities navigation property.|
 
+## Properties
+
+None.
+
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|Returns a list of `aricles`.|
+|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|A list of **article** objects.|
 |articleIndicators|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [microsoft.graph.security.article](../resources/security-article.md). **Note**: List retrieval is not yet supported.|
-|hosts|[microsoft.graph.security.host](../resources/security-host.md) collection|Refers to [microsoft.graph.security.host](../resources/security-host.md)s that Microsoft Threat Intelligence has observed. **Note**: List retrieval is not yet supported.|
-|hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Retrieve details about [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)s. **Note**: List retrieval is not yet supported.|
-|hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Retrieve details about [microsoft.graph.security.hostCookie](../resources/security-hostCookie.md)s. **Note**: List retrieval is not yet supported.|
-|hostTrackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Retrieve details about [microsoft.graph.security.hostTracker](../resources/security-hostTracker.md)s. **Note**: List retrieval is not yet supported.|
+|hosts|[microsoft.graph.security.host](../resources/security-host.md) collection|Refers to [microsoft.graph.security.host](../resources/security-host.md) objects that Microsoft Threat Intelligence has observed. **Note**: List retrieval is not yet supported.|
+|hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Retrieve details about [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) objects. **Note**: List retrieval is not yet supported.|
+|hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Retrieve details about [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) objects. **Note**: List retrieval is not yet supported.|
+|hostTrackers|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection|Retrieve details about [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) objects. **Note**: List retrieval is not yet supported.|
 |intelProfiles|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Intelligence Profiles provide the most up-to-date threat actor and tooling infrastructure visibility in the industry today, enabling Threat Intel and SecOps teams to streamline their advanced threat hunting and analysis workflows.|
-|intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [microsoft.graph.security.intelligenceprofile](../resources/security-intelligenceprofile.md). **Note**: List retrieval is not yet supported.|
-|passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passiveDnsRecord.md)s. **Note**: List retrieval is not yet supported.|
+|intelProfileIndicators|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Refers to indicators of threat or compromise highlighted in a [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md). **Note**: List retrieval is not yet supported.|
+|passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) objects. **Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [microsoft.graph.security.vulnerabilities](../resources/security-vulnerability.md). **Note**: List retrieval is not yet supported.|
 
+## JSON representation
+
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.security.threatIntelligence",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.threatIntelligence"
+}
+```

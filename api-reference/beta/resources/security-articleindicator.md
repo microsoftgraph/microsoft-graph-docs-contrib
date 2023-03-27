@@ -29,14 +29,14 @@ Inherits from [microsoft.graph.security.indicator](../resources/security-indicat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The system-generated ID for the **articleIndicator**.|
-|source|microsoft.graph.security.indicatorSource|Communicates where this **articleIndicator** originated. The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`.|
+|id|String|The system-generated ID for the **articleIndicator**. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md).|
+|source|microsoft.graph.security.indicatorSource|Communicates where this **articleIndicator** originated. The possible values are: `microsoftDefenderThreatIntelligence`, `openSourceIntelligence`, `public`, `unknownFutureValue`. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) that is reported in this `articleIndicator`. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md). |
+|artifact|[microsoft.graph.security.artifact](../resources/security-artifact.md)|The [artifact](../resources/security-artifact.md) that is reported in this **articleIndicator**. Inherited from [microsoft.graph.security.indicator](../resources/security-indicator.md). |
 
 ## JSON representation
 

@@ -13,33 +13,36 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Trackers are unique codes or values found within web pages and often used to track user interaction. These codes can be used to correlate a disparate group of websites to a central entity. Often, actors will copy the source code of a victim’s website they are looking to impersonate for a phishing campaign. Seldomly will actors take the time to remove these IDs that allow users to identify these fraudulent sites using Microsoft’s Trackers data set. Actors may also deploy tracker IDs to see how successful their cyber-attack campaigns are. This is similar to marketers when they leverage SEO IDs, such as a Google Analytics Tracker ID, to track the success of their marketing campaign.
+Trackers are unique codes or values found within web pages and often used to track user interaction. These codes can be used to correlate a disparate group of websites to a central entity. Often, actors copy the source code of a victim’s website they are looking to impersonate for a phishing campaign. Seldomly, actors take the time to remove these IDs that allow users to identify these fraudulent sites using the trackers data set of Microsoft. Actors might also deploy tracker IDs to see how successful their cyber-attack campaigns are. This is similar to marketers when they leverage SEO IDs, such as a Google Analytics Tracker ID, to track the success of their marketing campaign.
 
-These `HostTracker` Entities have specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
-
+The **hostTracker** entity has specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md)|Read the properties and relationships of a [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this `hostTracker` was observed by Microsoft Threat Intelligence.|
-|id|String| A system-generated id for this `hostTracker`.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|kind|String|The kind of hostTracker that was detected (e.g. GoogleAnalyticsID, JarmHash)|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this `hostTracker` was observed by Microsoft Threat Intelligence. |
-|value|String|The identification value for the hostTracker|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this **hostTracker** was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String| A system-generated ID for this **hostTracker**.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|kind|String|The kind of **hostTracker** that was detected. For example, `GoogleAnalyticsID` or `JarmHash`.|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this **hostTracker** was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|value|String|The identification value for the **hostTracker**.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[microsoft.graph.security.host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this `hostTracker`. When navigating to a `hostTracker` from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The [host](../resources/security-host.md) related to this **hostTracker**. When navigating to a **hostTracker** from a [host](../resources/security-host.md), this should be assumed to be a return reference.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -59,4 +62,3 @@ The following is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
