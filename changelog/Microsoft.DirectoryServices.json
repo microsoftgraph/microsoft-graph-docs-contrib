@@ -1231,9 +1231,9 @@
       "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-01-12T10:27:35.8718807Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "CreatedDateTime": "2023-03-27T00:00:00.8718807Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [
