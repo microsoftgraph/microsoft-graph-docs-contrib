@@ -1,6 +1,6 @@
 ---
 title: "threatIntelligence resource type"
-description: "Provides APIs to retrieve Threat Intelligence information, such as about a host or an article on a threat."
+description: "Provides APIs to retrieve threat intelligence information, such as about a host or an article on a threat."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Provides APIs to retrieve threat intelligence information, such as about a host or an article on a threat.
 
 Microsoft Threat Intelligence APIs delivers world-class threat intelligence to help protect your organization from modern cyber threats. Using Microsoft Threat Intelligence APIs you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
 
