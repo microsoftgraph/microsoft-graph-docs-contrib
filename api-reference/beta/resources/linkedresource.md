@@ -33,7 +33,7 @@ Some **linkedResource** objects are not associated with any web URLs, in which c
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationName|String|The app name of the source that is sends the **linkedResource**.|
+|applicationName|String|The app name of the source that sends the **linkedResource**.|
 |displayName|String|The title of the **linkedResource**.|
 |externalId|String|ID of the object that is associated with this task on the third-party/partner system.|
 |id|String|Server generated ID for the **linkedResource**. Inherited from [entity](../resources/entity.md).|
