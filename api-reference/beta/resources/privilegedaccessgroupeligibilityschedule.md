@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessGroupEligibilitySchedule resource type"
 description: "Represents the schedule of eligible ownership and membership to groups that are governed by PIM."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

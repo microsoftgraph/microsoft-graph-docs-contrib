@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleRequest resource type"
 description: "Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for groups."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

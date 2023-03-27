@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessGroupEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve schedules of membership and ownership eligibility requests for the calling principal."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

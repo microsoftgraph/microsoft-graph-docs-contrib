@@ -1,7 +1,7 @@
 ---
 title: "List eligibilitySchedules"
 description: "Get a list of the privilegedAccessGroupEligibilitySchedule objects and their properties."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

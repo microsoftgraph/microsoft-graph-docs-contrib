@@ -1,7 +1,7 @@
 ---
 title: "Get privilegedAccessGroupAssignmentScheduleInstance"
 description: "Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessScheduleRequest resource type"
 description: "An abstract type that exposes properties used to configure access eligibility and assignment in privileged identity management (PIM) governance operations for groups."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

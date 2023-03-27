@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser"
 description: "Return instances of membership and ownership eligibility schedules for the calling principal."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

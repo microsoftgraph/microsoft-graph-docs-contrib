@@ -1,7 +1,7 @@
 ---
 title: "Get privilegedAccessGroupEligibilitySchedule"
 description: "Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

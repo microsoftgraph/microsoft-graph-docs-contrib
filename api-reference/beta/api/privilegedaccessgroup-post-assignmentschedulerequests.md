@@ -1,7 +1,7 @@
 ---
 title: "Create assignmentScheduleRequest"
 description: "Create a new privilegedAccessGroupAssignmentScheduleRequest object."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

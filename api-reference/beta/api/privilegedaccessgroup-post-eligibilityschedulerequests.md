@@ -1,7 +1,7 @@
 ---
 title: "Create eligibilityScheduleRequest"
 description: "Create a new privilegedAccessGroupEligibilityScheduleRequest object."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

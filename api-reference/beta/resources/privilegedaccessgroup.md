@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessGroup resource type"
 description: "The entry point for all resources related to Privileged Identity Management (PIM) for groups."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

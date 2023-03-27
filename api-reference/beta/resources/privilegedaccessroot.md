@@ -1,7 +1,7 @@
 ---
 title: "privilegedAccessRoot resource type"
 description: "Represents the entry point for resources related to Privileged Identity Management (PIM)."
-author: "mandardalvi"
+author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
