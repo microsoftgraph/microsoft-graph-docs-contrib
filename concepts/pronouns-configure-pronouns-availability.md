@@ -124,7 +124,7 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 
 #### Confirm your current settings
 
-To get pronouns settings configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+To get pronouns settings configuration for an organization, use the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
 
 ```powershell
    Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
@@ -132,7 +132,7 @@ To get pronouns settings configuration for an organization, use the Microsoft Gr
 
 #### Enabling pronouns in your organization
 
-By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to change that and make pronouns available in your organization.
+By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
 
 > [!NOTE]
 > The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
