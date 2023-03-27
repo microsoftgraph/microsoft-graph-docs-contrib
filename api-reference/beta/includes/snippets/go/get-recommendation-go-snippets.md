@@ -8,16 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "recommendationType eq 'turnOffPerUserMFA'"
-
-requestParameters := &graphconfig.DirectoryRecommendationsRequestBuilderGetQueryParameters{
-	Filter: &requestFilter,
-}
-configuration := &graphconfig.DirectoryRecommendationsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
-
-result, err := graphClient.Directory().Recommendations().Get(context.Background(), configuration)
+result, err := graphClient.Directory().RecommendationsById("recommendation-id").Get(context.Background(), nil)
 
 
 ```
