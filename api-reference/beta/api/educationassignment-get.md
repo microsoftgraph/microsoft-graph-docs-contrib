@@ -177,8 +177,7 @@ The following is an example of the response with status as inactive, when `Prefe
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.educationAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -251,8 +250,7 @@ The following is an example of the response when Prefer: include-unknown-enum-me
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.educationAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
