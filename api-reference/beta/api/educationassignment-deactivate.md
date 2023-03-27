@@ -1,5 +1,5 @@
 ---
-title: "Deactive educationAssignment"
+title: "Deactivate educationAssignment"
 description: "A teacher wants to mark an assigned assignment as inactive to signal that the assignment has no further action items for both teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
