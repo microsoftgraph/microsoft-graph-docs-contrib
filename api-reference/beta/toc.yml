@@ -16071,28 +16071,6 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicator (preview)
-        items:
-        - name: Threat intelligence indicator
-          href: resources/tiindicator.md
-        - name: List
-          href: api/tiindicators-list.md
-        - name: Create
-          href: api/tiindicators-post.md
-        - name: Submit multiple
-          href: api/tiindicator-submittiindicators.md
-        - name: Get
-          href: api/tiindicator-get.md
-        - name: Update
-          href: api/tiindicator-update.md
-        - name: Update multiple
-          href: api/tiindicator-updatetiindicators.md
-        - name: Delete
-          href: api/tiindicator-delete.md
-        - name: Delete multiple
-          href: api/tiindicator-deletetiindicators.md
-        - name: Delete multiple by external ID
-          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Threat intelligence (preview)
         items:
         - name: Overview
@@ -16185,6 +16163,28 @@ items:
             href: resources/security-vulnerabilitycomponent.md
           - name: Get
             href: api/security-vulnerabilitycomponent-get.md
+      - name: Threat intelligence indicator (preview)
+        items:
+        - name: Threat intelligence indicator
+          href: resources/tiindicator.md
+        - name: List
+          href: api/tiindicators-list.md
+        - name: Create
+          href: api/tiindicators-post.md
+        - name: Submit multiple
+          href: api/tiindicator-submittiindicators.md
+        - name: Get
+          href: api/tiindicator-get.md
+        - name: Update
+          href: api/tiindicator-update.md
+        - name: Update multiple
+          href: api/tiindicator-updatetiindicators.md
+        - name: Delete
+          href: api/tiindicator-delete.md
+        - name: Delete multiple
+          href: api/tiindicator-deletetiindicators.md
+        - name: Delete multiple by external ID
+          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Threat submission (preview)
         href: resources/security-threatsubmission.md
         items:
