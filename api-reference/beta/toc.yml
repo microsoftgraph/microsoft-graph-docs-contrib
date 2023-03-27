@@ -16094,7 +16094,7 @@ items:
         - name: Delete multiple by external ID
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Threat intelligence (preview)
-        href: resources/security-threatintelligence-overview.md
+        href: resources/security-threatintelligence.md
         items:
         - name: Article
           items:
