@@ -102,8 +102,8 @@ Content-Type: application/json
       "sponsorStates": [
         {
           "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",
-          "label": "Russia",
-          "code": "ru"
+          "label": "Country/Region",
+          "code": "Country/Region code"
         }
       ],
       "summary": {

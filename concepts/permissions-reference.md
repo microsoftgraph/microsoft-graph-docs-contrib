@@ -2657,6 +2657,36 @@ Threat hunting permissions are valid only on work or school accounts.
 
 ---
 
+## Threat Intelligence permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatIntelligence.Read.All_ | Read all Threat Intelligence information | Allows the app to read threat intelligence information, such as indicators, observations, and articles, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatIntelligence.Read.All_ | Read all Threat Intelligence information | Allows the app to read threat intellgence information, such as indicators, observations, and and articles, without a signed in user. | Yes |
+
+### Remarks
+
+Threat Intelligence permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatIntelligence.Read.All_: List Threat Intelligence Articles on behalf of the signed in user (`GET /security/threatIntelligence/articles`)
+
+#### Application
+
+* _ThreatIntelligence.Read.All_: Get Host Reputation information, whitout a signed-in user (`GET /security/threatIntelligence/hosts/contoso.com/reputation`)
+
+---
 
 ## Universal Print permissions
 
