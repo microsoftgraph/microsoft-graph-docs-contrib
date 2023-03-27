@@ -893,6 +893,42 @@
 			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
 			"WorkloadArea": "Security",
 			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "80f01572-343e-4e95-831d-178af626446e",
+					"ApiChange": "Property",
+					"ChangedApiName": "displayName",
+					"ChangeType": "Addition",
+                    "Description": "Added the **displayName** property to the [security-useraccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-1.0) resource.",
+                    "Target": "security-useraccount"
+				}
+			],
+			"Id": "80f01572-343e-4e95-831d-178af626446e",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-03-22T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "2004c955-fd84-4997-83da-10d8c5cd370c",
+					"ApiChange": "Property",
+					"ChangedApiName": "displayName",
+					"ChangeType": "Addition",
+                    "Description": "Added the **displayName** property to the [security-useraccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-beta) resource.",
+                    "Target": "security-useraccount"
+				}
+			],
+			"Id": "2004c955-fd84-4997-83da-10d8c5cd370c",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-03-22T13:00:00.0000000Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
 		}
 	]
 }
