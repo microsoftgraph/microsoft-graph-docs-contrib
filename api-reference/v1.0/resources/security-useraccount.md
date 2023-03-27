@@ -22,6 +22,7 @@ User account common properties.
 |domainName|String|The name of the Active Directory domain of which the user is a member.|
 |userPrincipalName|String|The user principal name of the account in Azure AD.|
 |userSid|String|The local security identifier of the user account.|
+|displayName|String|The user display name in Azure AD.|
 
 ## Relationships
 None.
@@ -40,6 +41,7 @@ The following is a JSON representation of the resource.
   "domainName": "String",
   "userSid": "String",
   "azureAdUserId": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "displayName": "String"
 }
 ```
