@@ -36,40 +36,6 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
 
-
-authenticationMethodConfiguration := graphmodels.NewAuthenticationMethodConfiguration()
-id := "Fido2"
-authenticationMethodConfiguration.SetId(&id) 
-state := graphmodels.DISABLED_AUTHENTICATIONMETHODSTATE 
-authenticationMethodConfiguration.SetState(&state) 
-additionalData := map[string]interface{}{
-	isSelfServiceRegistrationAllowed := false
-authenticationMethodConfiguration.SetIsSelfServiceRegistrationAllowed(&isSelfServiceRegistrationAllowed) 
-	isAttestationEnforced := false
-authenticationMethodConfiguration.SetIsAttestationEnforced(&isAttestationEnforced) 
-keyRestrictions := graphmodels.New()
-	isEnforced := false
-keyRestrictions.SetIsEnforced(&isEnforced) 
-enforcementType := "block"
-keyRestrictions.SetEnforcementType(&enforcementType) 
-	aaGuids := []graphmodels.able {
-
-	}
-	keyRestrictions.SetAaGuids(aaGuids)
-	authenticationMethodConfiguration.SetKeyRestrictions(keyRestrictions)
-}
-authenticationMethodConfiguration.SetAdditionalData(additionalData)
-
-authenticationMethodConfigurations := []graphmodels.AuthenticationMethodConfigurationable {
-	authenticationMethodConfiguration,
-
-}
-requestBody.SetAuthenticationMethodConfigurations(authenticationMethodConfigurations)
-additionalData := map[string]interface{}{
-	"odataContext" : "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy", 
-}
-requestBody.SetAdditionalData(additionalData)
-
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
