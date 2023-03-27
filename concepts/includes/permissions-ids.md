@@ -718,7 +718,6 @@ ms.topic: include
 | User.Read.All                                           | Delegated   | a154be20-db9c-4678-8ab7-66f6cc099a59 |
 | User.Read.All                                           | Application | df021288-bdef-4463-88db-98f22de89214 |
 | User.ReadBasic.All                                      | Delegated   | b340eb25-3456-403f-be2f-af7a0d370277 |
-| User.ReadBasic.All                                      | Application | 97235f07-e226-4f63-ace3-39588e11d3a1 |
 | User.ReadWrite                                          | Delegated   | b4e74841-8e56-480b-be8b-910348b18b4c |
 | User.ReadWrite.All                                      | Delegated   | 204e0828-b5ca-4ad8-b9f3-f32a958e7cc4 |
 | User.ReadWrite.All                                      | Application | 741f803b-c850-494e-b5df-cde7c675a1ca |

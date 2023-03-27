@@ -252,7 +252,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response 2
 
 Here is the response of the second example which shows the updated `expirationDate` in the extension.

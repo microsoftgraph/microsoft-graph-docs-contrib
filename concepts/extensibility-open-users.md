@@ -217,7 +217,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -269,7 +268,6 @@ DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSetting
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

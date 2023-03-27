@@ -83,7 +83,6 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 
 ---
 
-
 ## Response
 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.

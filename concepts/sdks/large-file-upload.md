@@ -18,26 +18,27 @@ using var fileStream = System.IO.File.OpenRead(filePath);
 
 // Use properties to specify the conflict behavior
 // in this case, replace
-var uploadProps = new DriveItemUploadableProperties
+var uploadSessionRequestBody = new CreateUploadSessionPostRequestBody
 {
-    AdditionalData = new Dictionary<string, object>
+    Item = new DriveItemUploadableProperties
     {
-        { "@microsoft.graph.conflictBehavior", "replace" }
+        AdditionalData = new Dictionary<string, object>
+        {
+            { "@microsoft.graph.conflictBehavior", "replace" }
+        }
     }
 };
 
 // Create the upload session
 // itemPath does not need to be a path to an existing item
-var uploadSession = await graphClient.Me.Drive.Root
+var uploadSession = await graphClient.Drive.Root
     .ItemWithPath(itemPath)
-    .CreateUploadSession(uploadProps)
-    .Request()
-    .PostAsync();
+    .CreateUploadSession
+    .PostAsync(uploadSessionRequestBody);
 
 // Max slice size must be a multiple of 320 KiB
 int maxSliceSize = 320 * 1024;
-var fileUploadTask =
-    new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
+var fileUploadTask = new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize, graphClient.RequestAdapter);
 
 var totalLength = fileStream.Length;
 // Create a callback that is invoked after each slice is uploaded
