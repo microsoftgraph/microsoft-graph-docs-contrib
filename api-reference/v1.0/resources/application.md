@@ -180,6 +180,7 @@ The following is a JSON representation of the resource.
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
+  "requestSignatureVerification": {"@odata.type": "microsoft.graph.requestSignatureVerification"},
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "serviceManagementReference": "String",
   "signInAudience": "String",
