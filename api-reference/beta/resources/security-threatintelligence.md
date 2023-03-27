@@ -1,6 +1,6 @@
 ---
 title: "threatIntelligence resource type"
-description: "An Overview of Microsoft's Threat Intelligence APIs"
+description: "Provides APIs to retrieve Threat Intelligence information, such as about a host or an article on a threat."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
