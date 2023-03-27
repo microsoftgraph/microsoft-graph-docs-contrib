@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directorySettingTemplate = await graphClient.DirectorySettingTemplates["{directorySettingTemplate-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.DirectorySettingTemplates["{directorySettingTemplate-id}"].GetAsync();
+
 
 ```

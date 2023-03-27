@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 let groups = await client.api('/groups')
 	.filter('assignedLicenses/any()')
+	.expand('members($select=id,displayName)')
 	.select('id,assignedLicenses')
 	.get();
 

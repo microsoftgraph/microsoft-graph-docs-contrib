@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List tasks](../api/identitygovernance-workflow-list-task.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Get a list of the [task](../resources/identitygovernance-task.md) objects and their properties.|
 |[Get task](../api/identitygovernance-task-get.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|Read the properties and relationships of a [task](../resources/identitygovernance-task.md) object.|
+|[Update task](../api/identitygovernance-task-update.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md)|update the properties of a [task](../resources/identitygovernance-task.md) object.|
 
 
 ## Properties
@@ -42,10 +43,6 @@ Inherits from [entity](../resources/entity.md).
 |taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
 
 ### Supported tasks
-<!-- Comment out CRR until we can resolve the links problem
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
--->
 
 [!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
 
@@ -93,7 +90,5 @@ The following is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/identitygovernance-task.md:\r\n    Exception processing links.\r\n    Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->

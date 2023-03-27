@@ -1,7 +1,9 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
-author: "jyothig123"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
@@ -35,7 +37,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -48,7 +50,7 @@ To review *only inactive users* assigned to the group:
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -62,7 +64,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
+    "query": "/groups/{groupId}/transitiveMembers/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -186,7 +188,7 @@ This review won't include B2B direct connect users in teams with shared channels
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')",
+    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}' and catalogId eq 'id')",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -284,7 +286,7 @@ In this example, the access review scope is all users who are members of a team,
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+            "query": "/groups/{groupId}/transitiveMembers",
             "queryType": "MicrosoftGraph",
             "queryRoot": null
         },

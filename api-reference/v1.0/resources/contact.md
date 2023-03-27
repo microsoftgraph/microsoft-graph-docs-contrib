@@ -161,15 +161,14 @@ The following is a JSON representation of the resource.
   "otherAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "parentFolderId": "string",
   "personalNotes": "string",
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "profession": "string",
   "spouseName": "string",
   "surname": "string",
   "title": "string",
   "yomiCompanyName": "string",
   "yomiGivenName": "string",
-  "yomiSurname": "string",
-
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
+  "yomiSurname": "string"
 }
 ```
 

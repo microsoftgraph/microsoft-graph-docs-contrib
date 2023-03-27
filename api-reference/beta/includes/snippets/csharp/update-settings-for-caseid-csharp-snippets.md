@@ -4,33 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var caseSettings = new Microsoft.Graph.Ediscovery.CaseSettings
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.CaseSettings
 {
-	RedundancyDetection = new Microsoft.Graph.Ediscovery.RedundancyDetectionSettings
+	RedundancyDetection = new Microsoft.Graph.Beta.Models.Ediscovery.RedundancyDetectionSettings
 	{
 		IsEnabled = false,
 		SimilarityThreshold = 70,
 		MinWords = 12,
-		MaxWords = 400000
+		MaxWords = 400000,
 	},
-	TopicModeling = new Microsoft.Graph.Ediscovery.TopicModelingSettings
+	TopicModeling = new Microsoft.Graph.Beta.Models.Ediscovery.TopicModelingSettings
 	{
 		IsEnabled = false,
 		IgnoreNumbers = false,
 		TopicCount = 50,
-		DynamicallyAdjustTopicCount = false
+		DynamicallyAdjustTopicCount = false,
 	},
-	Ocr = new Microsoft.Graph.Ediscovery.OcrSettings
+	Ocr = new Microsoft.Graph.Beta.Models.Ediscovery.OcrSettings
 	{
 		IsEnabled = true,
-		MaxImageSize = 12000
-	}
+		MaxImageSize = 12000,
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Settings.PatchAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
-	.Request()
-	.UpdateAsync(caseSettings);
 
 ```

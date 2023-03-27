@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "eventPropagationResult",
           "ChangeType": "Addition",
-          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/eventPropagationResult?view=graph-rest-beta) resource type.",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/security-eventPropagationResult?view=graph-rest-beta) resource type.",
           "Target": "eventPropagationResult"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "eventQuery",
           "ChangeType": "Addition",
-          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/eventQuery?view=graph-rest-beta) resource type.",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQueries?view=graph-rest-beta) resource type.",
           "Target": "eventQuery"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionDuration",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionDuration](https://learn.microsoft.com/en-us/graph/api/resources/retentionDuration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [retentionDuration](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDuration?view=graph-rest-beta) resource type.",
           "Target": "retentionDuration"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionDurationForever",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionDurationForever](https://learn.microsoft.com/en-us/graph/api/resources/retentionDurationForever?view=graph-rest-beta) resource type.",
+          "Description": "Added the [retentionDurationForever](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDurationForever?view=graph-rest-beta) resource type.",
           "Target": "retentionDurationForever"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionDurationInDays",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionDurationInDays](https://learn.microsoft.com/en-us/graph/api/resources/retentionDurationInDays?view=graph-rest-beta) resource type.",
+          "Description": "Added the [retentionDurationInDays](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDurationInDays?view=graph-rest-beta) resource type.",
           "Target": "retentionDurationInDays"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionEventStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventStatus?view=graph-rest-beta) resource type.",
           "Target": "retentionEventStatus"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dispositionReviewStage",
           "ChangeType": "Addition",
-          "Description": "Added the [dispositionReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/dispositionReviewStage?view=graph-rest-beta) resource",
+          "Description": "Added the [dispositionReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/security-dispositionReviewStage?view=graph-rest-beta) resource",
           "Target": "dispositionReviewStage"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/retentionEvent?view=graph-rest-beta) resource",
+          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEvent?view=graph-rest-beta) resource",
           "Target": "retentionEvent"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionEventType",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventType?view=graph-rest-beta) resource",
+          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventType?view=graph-rest-beta) resource",
           "Target": "retentionEventType"
         },
         {
@@ -135,24 +135,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "retentionLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/retentionLabel?view=graph-rest-beta) resource",
+          "Description": "Added the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
           "Target": "retentionLabel"
-        },
-        {
-          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
-          "ApiChange": "Resource",
-          "ChangedApiName": "retentionEvent",
-          "ChangeType": "Addition",
-          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/retentionEvent?view=graph-rest-beta) resource",
-          "Target": "retentionEvent"
-        },
-        {
-          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
-          "ApiChange": "Resource",
-          "ChangedApiName": "retentionEventType",
-          "ChangeType": "Addition",
-          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/retentionEventType?view=graph-rest-beta) resource",
-          "Target": "retentionEventType"
         }
       ],
       "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
@@ -161,6 +145,79 @@
       "CreatedDateTime": "2022-06-23T20:00:41.5572363Z",
       "WorkloadArea": "Security",
       "SubArea": "Records management"
-    }
-  ]
+    },
+    {
+      "ChangeList": [
+        {"Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventPropagationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventPropagationStatus** enumeration type.",
+          "Target": "eventPropagationStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventStatusType",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventStatusType** enumeration type.",
+          "Target": "eventStatusType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "queryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryType** enumeration type.",
+          "Target": "queryType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventPropagationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/security-eventPropagationResult?view=graph-rest-1.0) resource type.",
+          "Target": "eventPropagationResult"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQuery?view=graph-rest-1.0) resource type.",
+          "Target": "eventQuery"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventStatus?view=graph-rest-1.0) resource type.",
+          "Target": "retentionEventStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEvent?view=graph-rest-1.0) resource",
+          "Target": "retentionEvent"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventType?view=graph-rest-1.0) resource",
+          "Target": "retentionEventType"
+        }
+      ],
+      "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-09T20:00:41.5572363Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+      } 
+    ]
 }

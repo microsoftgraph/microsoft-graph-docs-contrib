@@ -92,12 +92,13 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 ```json
 {
-  "id": "string",
+  
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
   "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "id": "string",
   "items": [{"@odata.type": "microsoft.graph.driveItem"}],
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",

@@ -33,7 +33,7 @@ For the possible resource path values for each supported resource, see [Use the 
 |---|---|---|
 | applicationId | String | Optional. Identifier of the application used to create the subscription. Read-only. |
 | changeType | String | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>**Note:** <li> Drive root item and list change notifications support only the `updated` changeType. <li>[User](../resources/user.md) and [group](../resources/user.md) change notifications support `updated` and `deleted` changeType. Use `updated` to receive notifications when user or group is created, updated or soft deleted.  Use `deleted` to receive notifications when user or group is permanently deleted. |
-| clientState | String | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. |
+| clientState | String | Required. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. |
 | creatorId | String | Optional. Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
 | encryptionCertificate | String | Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when **includeResourceData** is `true`. |
 | encryptionCertificateId | String | Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. |
@@ -49,28 +49,7 @@ For the possible resource path values for each supported resource, see [Use the 
 
 ### Maximum length of subscription per resource type
 
-| Resource            | Maximum expiration time  |
-|:--------------------|:-------------------------|
-| Security **alert**     | 43200 minutes (under 30 days)  |
-| Teams **callRecord**    | 4230 minutes (under 3 days)  |
-| Teams **channel**    | 60 minutes (1 hour)  |
-| Teams **chat**    | 60 minutes (1 hour)  |
-| Teams **chatMessage**    | 60 minutes (1 hour)  |
-| Teams **conversationMember**    | 60 minutes (1 hour)  |
-| Teams **team**    | 60 minutes (1 hour)  |
-| Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
-| SharePoint **list**    | 42300 minutes (under 30 days)    |
-| Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
-| **presence**        | 60 minutes (1 hour) |
-| Print **printer** | 4230 minutes (under 3 days)    |
-| Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
-| **todoTask**              | 4230 minutes (under 3 days)    |
-
-
-
-> **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
+[!INCLUDE [change-notifications-subscription-lifetime](../../../concepts/includes/change-notifications-subscription-lifetime.md)]
 
 ## Relationships
 

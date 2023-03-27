@@ -2,6 +2,8 @@
 title: "Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 12/20/2022
@@ -88,7 +90,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -169,7 +170,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -262,7 +262,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -347,7 +346,6 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -443,7 +441,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -549,7 +546,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -614,7 +610,6 @@ DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -666,7 +661,6 @@ DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "deploymentAudience: updateAudience"
 description: "Update the members and exclusions collections of a deploymentAudience."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -40,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
+POST /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}]/updateAudience
 ```
 
 ## Request headers
@@ -79,7 +79,7 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
+POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/2d477566-6976-4c2d-97eb-d2acd1c2864e/updateAudience
 Content-Type: application/json
 
 {
@@ -89,24 +89,6 @@ Content-Type: application/json
       "id": "String (identifier)"
     }
   ],
-  "removeMembers": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-      "id": "String (identifier)"
-    }
-  ],
-  "addExclusions": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-      "id": "String (identifier)"
-    }
-  ],
-  "removeExclusions": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-      "id": "String (identifier)"
-    }
-  ]
 }
 ```
 
@@ -126,17 +108,11 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudience-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/deploymentaudience-updateaudience-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/deploymentaudience-updateaudience-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 
@@ -148,4 +124,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

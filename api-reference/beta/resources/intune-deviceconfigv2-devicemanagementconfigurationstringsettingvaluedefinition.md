@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 String constraints
 
 
-Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
+Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|format|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Pre-defined format of the string. Possible values are: `none`, `email`, `guid`, `ip`, `base64`, `url`, `version`, `xml`, `date`, `time`, `binary`, `regEx`, `json`, `dateTime`, `surfaceHub`.|
+|format|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Pre-defined format of the string. Possible values are: `none`, `email`, `guid`, `ip`, `base64`, `url`, `version`, `xml`, `date`, `time`, `binary`, `regEx`, `json`, `dateTime`, `surfaceHub`, `bashScript`, `unknownFutureValue`.|
 |inputValidationSchema|String|Regular expression or any xml or json schema that the input string should match|
 |maximumLength|Int64|Maximum length of string. Valid values 0 to 87516|
 |minimumLength|Int64|Minimum length of string. Valid values 0 to 87516|

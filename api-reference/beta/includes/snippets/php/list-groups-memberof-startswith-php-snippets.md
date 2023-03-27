@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->memberOf()->group()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->memberOf()->graphGroup()->get($requestConfiguration);
 
 
 ```
