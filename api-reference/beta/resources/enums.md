@@ -342,6 +342,15 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
+### managedServiceIdentityType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
+|unknownFutureValue|
+
 ### multiFactorAuthConfiguration values
 
 | Member             | Value | Description |
