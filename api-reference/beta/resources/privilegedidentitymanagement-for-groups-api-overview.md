@@ -107,7 +107,7 @@ The PIM API requires an Azure AD Premium P2 license. For more information, see [
   "description": "Govern membership and ownership of Azure AD groups using the privileged identity management (PIM) API for groups",
   "section": "documentation",
   "suppressions": [
-    Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
-      Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value
+    "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
+      Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value"
   ]
 }-->
