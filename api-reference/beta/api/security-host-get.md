@@ -96,9 +96,3 @@ Content-Type: application/json
   }
 }
 ```
-"registrar": "MarkMonitor Inc.",
-    "registrant": "Microsoft Corporation"
-  }
-}
-```
-
