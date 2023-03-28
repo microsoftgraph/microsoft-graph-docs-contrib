@@ -1,6 +1,6 @@
 ---
 title: "List trackers"
-description: "Get the hostTracker resources from the trackers navigation property."
+description: "Get a list of hostTracker resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [hostTracker](../resources/security-hosttracker.md) resources from the **trackers** navigation property.
+Get a list of [hostTracker](../resources/security-hosttracker.md) resources.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [hostTracker](../resources/security-hosttracker.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) objects in the response body.
 
 ## Examples
 
