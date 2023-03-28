@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) object.
+Read the properties and relationships of a [hostTracker](../resources/security-hosttracker.md) object.
 
 ## Permissions
 

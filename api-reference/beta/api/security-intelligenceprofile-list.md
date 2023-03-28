@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.
+Get a list of the [intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.
 
 ## Permissions
 
