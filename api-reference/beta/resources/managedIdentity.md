@@ -1,6 +1,6 @@
 ---
 title: "managedIdentity resource type"
-description: "Managed Identity resource type has 2 properties for managed identity type and associated resource Id. "
+description: "Managed Identity resource type has 2 properties for managed identity type and associated resource Id."
 author: "phoebeweiser"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|associatedResourceId|String|The resource Id of the Azure resource associated with the managed identity used for signin.|
+|associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for signin.|
 |msiType|managedServiceIdentityType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
 ## Relationships
