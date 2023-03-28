@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [microsoft.graph.security.article](../resources/security-article.md) objects, including their properties and relationships.
+Get a list of [article](../resources/security-article.md) objects, including their properties and relationships.
 
 ## Permissions
 
