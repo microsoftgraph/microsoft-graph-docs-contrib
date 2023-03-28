@@ -12840,6 +12840,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource type.",
           "Target": "signInPreferences"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeTarget](https://learn.microsoft.com/en-us/graph/api/resources/includeTarget?view=graph-rest-beta) resource type.",
+          "Target": "includeTarget"
         }
       ],
       "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",

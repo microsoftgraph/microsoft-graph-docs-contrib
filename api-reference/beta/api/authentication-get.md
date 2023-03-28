@@ -88,7 +88,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.authentication",
     "id": "608d62cf-89e2-3945-21ce-c8b18397b959",
     "signInPreferences": {
-      "@odata.type": "microsoft.graph.signInPreferences"
+      "isSystemPreferredAuthenticationMethodEnabled": true
     }
   }
 }
