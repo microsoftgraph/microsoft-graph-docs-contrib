@@ -16073,6 +16073,98 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: Threat intelligence (preview)
+        items:
+        - name: Overview
+          href: resources/security-threatintelligence-overview.md
+        - name: Article
+          items:
+          - name: Article
+            href: resources/security-article.md
+          - name: Get 
+            href: api/security-article-get.md
+          - name: List
+            href: api/security-article-list.md
+          - name: List article indicators
+            href: api/security-article-list-indicators.md
+        - name: Article indicator
+          items:
+            - name: Article indicator
+              href: resources/security-articleindicator.md
+            - name: Get
+              href: api/security-articleindicator-get.md
+        - name: Host
+          items:
+            - name: Host
+              href: resources/security-host.md
+            - name: Get
+              href: api/security-host-get.md
+            - name: List components
+              href: api/security-host-list-components.md
+            - name: List cookies
+              href: api/security-host-list-cookies.md
+            - name: List passive DNS
+              href: api/security-host-list-passivedns.md
+            - name: List passive DNS reverse
+              href: api/security-host-list-passivednsreverse.md
+            - name: Get reputation
+              href: api/security-host-get-reputation.md
+            - name: List trackers
+              href: api/security-host-list-trackers.md
+        - name: Host component
+          items:
+          - name: Host component
+            href: resources/security-hostcomponent.md
+          - name: Get
+            href: api/security-hostcomponent-get.md
+        - name: Host cookie
+          items:
+            - name: Host cookie
+              href: resources/security-hostcookie.md
+            - name: Get
+              href: api/security-hostcookie-get.md
+        - name: Host tracker
+          items:
+          - name: Host tracker
+            href: resources/security-hosttracker.md
+          - name: Get
+            href: api/security-hosttracker-get.md
+        - name: Intelligence profile
+          items:
+          - name: Intelligence profile
+            href: resources/security-intelligenceprofile.md
+          - name: Get
+            href: api/security-intelligenceprofile-get.md
+          - name: List
+            href: api/security-intelligenceprofile-list.md
+          - name: List intelligence profile indicators
+            href: api/security-intelligenceprofile-list-indicators.md
+        - name: Intelligence profile indicator
+          items:
+          - name: Intelligence profile indicator
+            href: resources/security-intelligenceprofileindicator.md
+          - name: Get
+            href: api/security-intelligenceprofileindicator-get.md
+        - name: Passive DNS record
+          items:
+          - name: Passive DNS record
+            href: resources/security-passivednsrecord.md
+          - name: Get
+            href: api/security-passivednsrecord-get.md
+        - name: Vulnerability
+          items:
+          - name: Vulnerability
+            href: resources/security-vulnerability.md
+          - name: Get
+            href: api/security-vulnerability-get.md
+          - name: List vulnerability components
+            href: api/security-vulnerability-list-components.md
+        - name: Vulnerability component
+          items:
+          - name: Vulnerability componet
+            href: resources/security-vulnerabilitycomponent.md
+          - name: Get
+            href: api/security-vulnerabilitycomponent-get.md
       - name: Threat intelligence indicator (preview)
         items:
         - name: Threat intelligence indicator
