@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 |Property|Type|Description|
 |:---|:---|:---|
 |associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for signin.|
-|msiType|managedServiceIdentityType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
+|msiType|msiType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -342,7 +342,7 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
-### managedServiceIdentityType values 
+### msiType values 
 
 |Member|
 |:---|
