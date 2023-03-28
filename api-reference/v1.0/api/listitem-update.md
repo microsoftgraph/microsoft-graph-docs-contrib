@@ -28,12 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 Update the properties on a listItem.
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 Update column values on a listItem.
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## Optional request headers

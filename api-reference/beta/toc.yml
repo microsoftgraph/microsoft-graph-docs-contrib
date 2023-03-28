@@ -2670,6 +2670,8 @@ items:
               href: api/intune-apps-macosvppappassignedlicense-delete.md
             - name: Update
               href: api/intune-apps-macosvppappassignedlicense-update.md
+          - name: macOS VPP app assignment settings
+            href: resources/intune-apps-macosvppappassignmentsettings.md
           - name: macOS VPP app revoke licenses action result
             href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
           - name: Managed android LOB app
@@ -3224,6 +3226,8 @@ items:
               href: api/intune-apps-windowsappx-delete.md
             - name: Update
               href: api/intune-apps-windowsappx-update.md
+          - name: Windows AppX app assignment settings
+            href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture
             href: resources/intune-apps-windowsarchitecture.md
           - name: Windows device type
@@ -3362,8 +3366,6 @@ items:
               href: api/intune-apps-windowsuniversalappx-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappx-update.md
-          - name: Windows universal AppX app assignment settings
-            href: resources/intune-apps-windowsuniversalappxappassignmentsettings.md
           - name: Windows universal AppX contained app
             href: resources/intune-apps-windowsuniversalappxcontainedapp.md
             items:
@@ -4333,6 +4335,8 @@ items:
               href: api/intune-deviceconfig-androidwificonfiguration-update.md
           - name: Android Wi-Fi security type
             href: resources/intune-deviceconfig-androidwifisecuritytype.md
+          - name: Android work profile account use
+            href: resources/intune-deviceconfig-androidworkprofileaccountuse.md
           - name: Android work profile certificate profile base
             href: resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md
             items:
@@ -6115,6 +6119,8 @@ items:
               href: api/intune-deviceconfig-macospkcscertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-macospkcscertificateprofile-update.md
+          - name: macOS priority
+            href: resources/intune-deviceconfig-macospriority.md
           - name: macOS privacy access control item
             href: resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md
           - name: macOS process identifier type
@@ -6622,6 +6628,8 @@ items:
             href: resources/intune-deviceconfig-vpnservercertificatetype.md
           - name: VPN service exception action
             href: resources/intune-deviceconfig-vpnserviceexceptionaction.md
+          - name: VPN traffic direction
+            href: resources/intune-deviceconfig-vpntrafficdirection.md
           - name: VPN traffic rule
             href: resources/intune-deviceconfig-vpntrafficrule.md
           - name: VPN traffic rule app type
@@ -10542,8 +10550,6 @@ items:
             href: resources/intune-shared-win32lobappnotification.md
           - name: Win32 LOB app restart settings
             href: resources/intune-shared-win32lobapprestartsettings.md
-          - name: Windows AppX app assignment settings
-            href: resources/intune-shared-windowsappxappassignmentsettings.md
           - name: Windows autopilot deployment profile
             href: resources/intune-shared-windowsautopilotdeploymentprofile.md
             items:
@@ -10566,6 +10572,8 @@ items:
               href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
             - name: Update
               href: api/intune-shared-windowsdomainjoinconfiguration-update.md
+          - name: Windows universal AppX app assignment settings
+            href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
           - name: Windows update state
             href: resources/intune-shared-windowsupdatestate.md
             items:
@@ -11867,67 +11875,6 @@ items:
       - name: Overview
         displayName: Azure AD, Microsoft identity platform, Identity and access
         href: resources/azure-ad-overview.md
-      - name: Customer relationship management
-        items:
-        - name: Granular delegated admin privileges
-          items:
-          - name: Overview
-            displayName: GDAP, Partner Center, CSP, VAR
-            href: resources/delegatedadminrelationships-api-overview.md
-          - name: Delegated admin relationships
-            href: resources/delegatedadminrelationship.md
-            items:
-            - name: Create
-              href: api/tenantrelationship-post-delegatedadminrelationships.md
-            - name: List
-              href: api/tenantrelationship-list-delegatedadminrelationships.md
-            - name: Get
-              href: api/delegatedadminrelationship-get.md
-            - name: Update
-              href: api/delegatedadminrelationship-update.md
-            - name: Delete
-              href: api/delegatedadminrelationship-delete.md
-          - name: Delegated admin access assignments
-            href: resources/delegatedadminaccessassignment.md
-            items:
-            - name: Create
-              href: api/delegatedadminrelationship-post-accessassignments.md
-            - name: List
-              href: api/delegatedadminrelationship-list-accessassignments.md
-            - name: Get
-              href: api/delegatedadminaccessassignment-get.md
-            - name: Update
-              href: api/delegatedadminaccessassignment-update.md
-            - name: Delete
-              href: api/delegatedadminaccessassignment-delete.md
-          - name: Delegated admin relationship requests
-            href: resources/delegatedadminrelationshiprequest.md
-            items:
-            - name: Create
-              href: api/delegatedadminrelationship-post-requests.md
-            - name: List
-              href: api/delegatedadminrelationship-list-requests.md
-            - name: Get
-              href: api/delegatedadminrelationshiprequest-get.md
-          - name: Delegated admin relationship operations
-            href: resources/delegatedadminrelationshipoperation.md
-            items:
-            - name: List
-              href: api/delegatedadminrelationship-list-operations.md
-            - name: Get
-              href: api/delegatedadminrelationshipoperation-get.md
-          - name: Delegated admin customer
-            href: resources/delegatedadmincustomer.md
-            items:
-            - name: List
-              href: api/tenantrelationship-list-delegatedadmincustomers.md
-            - name: Get
-              href: api/delegatedadmincustomer-get.md
-            - name: Service management details
-              href: resources/delegatedadminservicemanagementdetail.md
-              items:
-              - name: List
-                href: api/delegatedadmincustomer-list-servicemanagementdetails.md
       - name: Directory management
         items:
         - name: Administrative unit
@@ -12432,974 +12379,6 @@ items:
               href: api/tenantrelationship-findtenantinformationbydomainname.md
             - name: Find tenant by tenant ID
               href: api/tenantrelationship-findtenantinformationbytenantid.md
-      - name: Identity and sign-in
-        items:
-        - name: Authentication methods
-          items:
-          - name: Overview
-            href: resources/authenticationmethods-overview.md
-          - name: Authentication methods
-            href: resources/authenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-methods.md
-          - name: FIDO2 security keys
-            href: resources/fido2authenticationmethod.md
-            items:
-            - name: List
-              href: api/fido2authenticationmethod-list.md
-            - name: Get
-              href: api/fido2authenticationmethod-get.md
-            - name: Delete
-              href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator
-            href: resources/microsoftauthenticatorauthenticationmethod.md
-            items:
-            - name: List
-              href: api/microsoftauthenticatorauthenticationmethod-list.md
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethod-get.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethod-delete.md
-          - name: Software OATH token
-            href: resources/softwareOathAuthenticationMethod.md
-            items:
-            - name: List
-              href: api/authentication-list-softwareoathmethods.md
-            - name: Get
-              href: api/softwareOathAuthenticationMethod-get.md
-            - name: Delete
-              href: api/softwareOathAuthenticationMethod-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
-            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
-            items:
-            - name: List
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
-            - name: Get
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
-            - name: Delete
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
-          - name: Windows Hello for Business
-            href: resources/windowshelloforbusinessauthenticationmethod.md
-            items:
-            - name: List
-              href: api/windowshelloforbusinessauthenticationmethod-list.md
-            - name: Get
-              href: api/windowshelloforbusinessauthenticationmethod-get.md
-            - name: Delete
-              href: api/windowshelloforbusinessauthenticationmethod-delete.md
-          - name: Temporary Access Pass
-            displayName: TAP
-            href: resources/temporaryaccesspassauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-temporaryaccesspassmethods.md
-            - name: Create
-              href: api/authentication-post-temporaryaccesspassmethods.md
-            - name: Get
-              href: api/temporaryaccesspassauthenticationmethod-get.md
-            - name: Delete
-              href: api/temporaryaccesspassauthenticationmethod-delete.md
-          - name: Phone
-            href: resources/phoneauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-phonemethods.md
-            - name: Get
-              href: api/phoneauthenticationmethod-get.md
-            - name: Update
-              href: api/phoneauthenticationmethod-update.md
-            - name: Delete
-              href: api/phoneauthenticationmethod-delete.md
-            - name: Add
-              href: api/authentication-post-phonemethods.md
-            - name: Enable SMS sign-in
-              href: api/phoneauthenticationmethod-enablesmssignin.md
-            - name: Disable SMS sign-in
-              href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: Email
-            href: resources/emailauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-emailmethods.md
-            - name: Get
-              href: api/emailauthenticationmethod-get.md
-            - name: Update
-              href: api/emailauthenticationmethod-update.md
-            - name: Delete
-              href: api/emailauthenticationmethod-delete.md
-            - name: Add
-              href: api/authentication-post-emailmethods.md
-          - name: Password
-            href: resources/passwordauthenticationmethod.md
-            items:
-            - name: List
-              href: api/authentication-list-passwordmethods.md
-            - name: Get
-              href: api/passwordauthenticationmethod-get.md
-            - name: Reset
-              href: api/authenticationmethod-resetpassword.md
-            - name: Get operation status
-              href: api/authenticationoperation-get.md
-        - name: Authentication strengths
-          items:
-          - name: Overview
-            href: resources/authenticationstrengths-overview.md
-          - name: Authentication strengths policy
-            href: resources/authenticationstrengthpolicy.md
-            items:
-            - name: List
-              href: api/authenticationstrengthroot-list-policies.md
-            - name: Create
-              href: api/authenticationstrengthroot-post-policies.md
-            - name: Get
-              href: api/authenticationstrengthpolicy-get.md
-            - name: Update
-              href: api/authenticationstrengthpolicy-update.md
-            - name: Delete
-              href: api/authenticationstrengthroot-delete-policies.md
-            - name: Find by method mode
-              href: api/authenticationstrengthpolicy-findbymethodmode.md
-            - name: List usage
-              href: api/authenticationstrengthpolicy-usage.md
-          - name: Authentication combination configurations
-            items:
-            - name: Authentication combination configuration
-              href: resources/authenticationcombinationconfiguration.md
-            - name: FIDO2 combination configuration
-              href: resources/fido2combinationconfiguration.md
-            - name: Create
-              href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
-            - name: List
-              href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
-            - name: Get
-              href: api/authenticationcombinationconfiguration-get.md
-            - name: Update
-              href: api/authenticationcombinationconfiguration-update.md
-            - name: Delete
-              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
-            - name: Update allowed combinations
-              href: api/authenticationstrengthpolicy-updateallowedcombinations.md
-          - name: Authentication method modes
-            href: resources/authenticationmethodmodedetail.md
-            items:
-            - name: List authentication combinations and method modes
-              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
-            - name: Get authentication method modes
-              href: api/authenticationmethodmodedetail-get.md
-        - name: Certificate-based authentication configuration
-          displayName: CBA
-          href: resources/certificatebasedauthconfiguration.md
-          items:
-          - name: List
-            href: api/certificatebasedauthconfiguration-list.md
-          - name: Get
-            href: api/certificatebasedauthconfiguration-get.md
-          - name: Create
-            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-          - name: Delete
-            href: api/certificatebasedauthconfiguration-delete.md
-        - name: Conditional Access
-          items:
-          - name: Conditional Access
-            href: resources/conditionalaccessroot.md
-          - name: Policies
-            items:
-            - name: Conditional Access policy
-              href: resources/conditionalaccesspolicy.md
-            - name: List
-              href: api/conditionalaccessroot-list-policies.md
-            - name: Create
-              href: api/conditionalaccessroot-post-policies.md
-            - name: Get
-              href: api/conditionalaccesspolicy-get.md
-            - name: Update
-              href: api/conditionalaccesspolicy-update.md
-            - name: Delete
-              href: api/conditionalaccesspolicy-delete.md
-          - name: Named locations
-            items:
-            - name: Named location
-              items:
-              - name: Named location
-                href: resources/namedlocation.md
-              - name: List
-                href: api/conditionalaccessroot-list-namedlocations.md
-              - name: Get
-                href: api/namedlocation-get.md
-              - name: Delete
-                href: api/namedlocation-delete.md
-              - name: Country named location
-                items:
-                - name: Country named location
-                  href: resources/countrynamedlocation.md
-                - name: List
-                  href: api/conditionalaccessroot-list-namedlocations.md
-                - name: Create
-                  href: api/conditionalaccessroot-post-namedlocations.md
-                - name: Get
-                  href: api/countrynamedlocation-get.md
-                - name: Update
-                  href: api/countrynamedlocation-update.md
-                - name: Delete
-                  href: api/countrynamedlocation-delete.md
-              - name: IP named location
-                items:
-                - name: IP named location
-                  href: resources/ipnamedlocation.md
-                - name: List
-                  href: api/conditionalaccessroot-list-namedlocations.md
-                - name: Create
-                  href: api/conditionalaccessroot-post-namedlocations.md
-                - name: Get
-                  href: api/ipnamedlocation-get.md
-                - name: Update
-                  href: api/ipnamedlocation-update.md
-                - name: Delete
-                  href: api/ipnamedlocation-delete.md
-          - name: Authentication context
-            items:
-            - name: Authentication context class reference
-              href: resources/authenticationcontextclassreference.md
-            - name: List
-              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-            - name: Create
-              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
-            - name: Get
-              href: api/authenticationcontextclassreference-get.md
-            - name: Update
-              href: api/authenticationcontextclassreference-update.md
-            - name: Delete
-              href: api/authenticationcontextclassreference-delete.md
-          - name: Templates
-            items:
-            - name: Conditional access template
-              href: resources/conditionalAccessTemplate.md
-            - name: List
-              href: api/conditionalaccessroot-list-templates.md
-            - name: Get
-              href: api/conditionalaccesstemplate-get.md
-        - name: Cross-tenant access
-          items:
-          - name: Overview
-            displayName: Cross-tenant access settings, XTAP
-            href: resources/crosstenantaccesspolicy-overview.md
-          - name: Policy
-            items:
-            - name: Cross-tenant access policy
-              href: resources/crosstenantaccesspolicy.md
-            - name: Get
-              href: api/crosstenantaccesspolicy-get.md
-            - name: Update
-              href: api/crosstenantaccesspolicy-update.md
-          - name: Default settings
-            items:
-            - name: Cross-tenant access default settings
-              href: resources/crosstenantaccesspolicyconfigurationdefault.md
-            - name: Get
-              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
-            - name: Update
-              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
-            - name: Reset to system default
-              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-          - name: Partner settings
-            items:
-            - name: Cross-tenant access partner settings
-              href: resources/crosstenantaccesspolicyconfigurationpartner.md
-            - name: List
-              href: api/crosstenantaccesspolicy-list-partners.md
-            - name: Create
-              href: api/crosstenantaccesspolicy-post-partners.md
-            - name: Get
-              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
-            - name: Update
-              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
-            - name: Delete
-              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
-          - name: Partner user sync settings
-            items:
-            - name: Cross-tenant access partner user sync settings
-              href: resources/crosstenantidentitysyncpolicypartner.md
-            - name: Create
-              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
-            - name: Get
-              href: api/crosstenantidentitysyncpolicypartner-get.md
-            - name: Update
-              href: api/crosstenantidentitysyncpolicypartner-update.md
-            - name: Delete
-              href: api/crosstenantidentitysyncpolicypartner-delete.md
-        - name: Data policy operation
-          href: resources/datapolicyoperation.md
-          items:
-          - name: Get data policy operation
-            href: api/datapolicyoperation-get.md
-        - name: Delegated permission grant
-          href: resources/oauth2permissiongrant.md
-          items:
-          - name: List
-            href: api/oauth2permissiongrant-list.md
-          - name: Get
-            href: api/oauth2permissiongrant-get.md
-          - name: Create
-            href: api/oauth2permissiongrant-post.md
-          - name: Update
-            href: api/oauth2permissiongrant-update.md
-          - name: Delete
-            href: api/oauth2permissiongrant-delete.md
-          - name: Get delta
-            href: api/oauth2permissiongrant-delta.md
-        - name: External identities policy (preview)
-          href: resources/externalidentitiespolicy.md
-          items:
-          - name: Get
-            href: api/externalidentitiespolicy-get.md
-          - name: Update
-            href: api/externalidentitiespolicy-update.md
-        - name: Identity protection
-          href: resources/identityprotection-overview.md
-          items:
-          - name: Risk detection
-            items:
-            - name: Risk detection
-              href: resources/riskdetection.md
-            - name: List risk detections
-              href: api/riskdetection-list.md
-            - name: Get risk detection
-              href: api/riskdetection-get.md
-          - name: Risky user
-            items:
-            - name: Risky user
-              href: resources/riskyuser.md
-            - name: List risky users
-              href: api/riskyusers-list.md
-            - name: Get risky user
-              href: api/riskyusers-get.md
-            - name: List history
-              href: api/riskyuser-list-history.md
-            - name: Confirm compromised
-              href: api/riskyusers-confirmcompromised.md
-            - name: Dismiss
-              href: api/riskyusers-dismiss.md
-          - name: Service principal risk detection
-            items:
-            - name: Risk detection
-              href: resources/serviceprincipalriskdetection.md
-            - name: List
-              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
-            - name: Get
-              href: api/serviceprincipalriskdetection-get.md
-          - name: Risky service principal
-            items:
-            - name: Risky service principal
-              href: resources/riskyserviceprincipal.md
-            - name: List risky service principals
-              href: api/identityprotectionroot-list-riskyserviceprincipals.md
-            - name: Get risky service principal
-              href: api/riskyserviceprincipal-get.md
-            - name: List history
-              href: api/riskyserviceprincipal-list-history.md
-            - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md
-            - name: Dismiss
-              href: api/riskyserviceprincipal-dismiss.md
-        - name: Identity provider
-          items:
-          - name: Identity provider base
-            href: resources/identityproviderbase.md
-          - name: External identities
-            items:
-            - name: Built-in identity provider type
-              href: resources/builtinidentityprovider.md
-            - name: Social identity provider type
-              href: resources/socialidentityprovider.md
-            - name: Apple identity provider type
-              href: resources/applemanagedidentityprovider.md
-            - name: OpenID Connect identity provider type
-              href: resources/openidconnectidentityprovider.md
-            - name: List available identity providers
-              href: api/identityproviderbase-availableprovidertypes.md
-            - name: List configured identity providers
-              href: api/identitycontainer-list-identityproviders.md
-            - name: Create identity provider
-              href: api/identitycontainer-post-identityproviders.md
-            - name: Get identity provider
-              href: api/identityproviderbase-get.md
-            - name: Update identity provider
-              href: api/identityproviderbase-update.md
-            - name: Delete identity provider
-              href: api/identityproviderbase-delete.md
-          - name: Domain-based external identities
-            items:
-            - name: SAML/Ws-Fed external domain federation
-              href: resources/samlorwsfedexternaldomainfederation.md
-            - name: List federated configurations
-              href: api/samlorwsfedexternaldomainfederation-list.md
-            - name: Get federated configuration
-              href: api/samlorwsfedexternaldomainfederation-get.md
-            - name: Create federated configuration
-              href: api/samlorwsfedexternaldomainfederation-post.md
-            - name: Update federated configuration
-              href: api/samlorwsfedexternaldomainfederation-update.md
-            - name: Delete federated configuration
-              href: api/samlorwsfedexternaldomainfederation-delete.md
-            - name: List domains
-              href: api/samlorwsfedexternaldomainfederation-list-domains.md
-            - name: Create domain
-              href: api/samlorwsfedexternaldomainfederation-post-domains.md
-          - name: Federation with Azure AD
-            items:
-            - name: Federated domain configuration
-              href: resources/internaldomainfederation.md
-            - name: Get
-              href: api/internaldomainfederation-get.md
-            - name: Create
-              href: api/domain-post-federationconfiguration.md
-            - name: Update
-              href: api/internaldomainfederation-update.md
-            - name: Delete
-              href: api/internaldomainfederation-delete.md
-        - name: Identity provider (deprecated)
-          items:
-          - name: Identity provider type
-            href: resources/identityprovider.md
-          - name: OpenID Connect identity provider type
-            href: resources/openidconnectprovider.md
-          - name: List
-            href: api/identityprovider-list.md
-          - name: Create
-            href: api/identityprovider-post-identityproviders.md
-          - name: Get
-            href: api/identityprovider-get.md
-          - name: Update
-            href: api/identityprovider-update.md
-          - name: Delete
-            href: api/identityprovider-delete.md
-          - name: List available provider types
-            href: api/identityprovider-list-availableprovidertypes.md
-        - name: Invitation manager
-          href: resources/invitation.md
-          items:
-          - name: Create invitation
-            href: api/invitation-post.md
-        - name: Organization
-          href: resources/organization.md
-          items:
-          - name: Get org details
-            href: api/organization-get.md
-          - name: Update org details
-            href: api/organization-update.md
-        - name: Organizational branding
-          href: resources/organizationalbranding.md
-          items:
-          - name: Get
-            href: api/organizationalbranding-get.md
-          - name: Update
-            href: api/organizationalbranding-update.md
-          - name: Branding localization
-            href: resources/organizationalbrandinglocalization.md
-            items:
-            - name: List
-              href: api/organizationalbranding-list-localizations.md
-            - name: Create
-              href: api/organizationalbranding-post-localizations.md
-            - name: Get
-              href: api/organizationalbrandinglocalization-get.md
-            - name: Update
-              href: api/organizationalbrandinglocalization-update.md
-            - name: Delete
-              href: api/organizationalbrandinglocalization-delete.md
-        - name: Policies
-          items:
-          - name: Overview
-            href: resources/policy-overview.md
-          - name: Activity-based timeout policy
-            href: resources/activitybasedtimeoutpolicy.md
-            items:
-            - name: Create
-              href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-            - name: List
-              href: api/activitybasedtimeoutpolicy-list.md
-            - name: Get
-              href: api/activitybasedtimeoutpolicy-get.md
-            - name: Update
-              href: api/activitybasedtimeoutpolicy-update.md
-            - name: Delete
-              href: api/activitybasedtimeoutpolicy-delete.md
-          - name: Application authentication method policy (preview)
-            items:
-            - name: Overview
-              href: resources/applicationAuthenticationMethodPolicy.md
-            - name: Tenant app management policy
-              items:
-              - name: Tenant app management policy
-                href: resources/tenantAppManagementPolicy.md
-              - name: Get
-                href: api/tenantAppManagementPolicy-get.md
-              - name: Update
-                href: api/tenantAppManagementPolicy-update.md
-            - name: App management policy
-              items:
-              - name: App management policy
-                href: resources/appManagementPolicy.md
-              - name: List
-                href: api/appManagementPolicy-list.md
-              - name: Get
-                href: api/appManagementPolicy-get.md
-              - name: Create
-                href: api/appManagementPolicy-post.md
-              - name: Update
-                href: api/appManagementPolicy-update.md
-              - name: Delete
-                href: api/appManagementPolicy-delete.md
-              - name: Create appliesTo
-                href: api/appManagementPolicy-post-appliesTo.md
-              - name: List appliesTo
-                href: api/appManagementPolicy-list-appliesTo.md
-          - name: Authentication events policy
-            items:
-            - name: Authentication events policy
-              href: resources/authenticationeventspolicy.md
-            - name: Sign-up-start event
-              items:
-              - name: Authentication listener
-                href: resources/authenticationlistener.md
-              - name: Invoke user flow listener type
-                href: resources/invokeuserflowlistener.md
-              - name: List listeners
-                href: api/authenticationeventspolicy-list-onsignupstart.md
-              - name: Create listener
-                href: api/authenticationeventspolicy-post-onsignupstart.md
-              - name: Get listener
-                href: api/authenticationlistener-get.md
-              - name: Update listener
-                href: api/authenticationlistener-update.md
-              - name: Put listener
-                href: api/authenticationlistener-put.md
-              - name: Delete listener
-                href: api/authenticationlistener-delete.md
-          - name: Authentication flows policy
-            items:
-            - name: Authentication flows policy
-              href: resources/authenticationflowspolicy.md
-            - name: Get
-              href: api/authenticationflowspolicy-get.md
-            - name: Update
-              href: api/authenticationflowspolicy-update.md
-          - name: Authentication methods policy
-            items:
-            - name: Overview
-              href: resources/authenticationmethodspolicies-overview.md
-            - name: Authentication methods policy
-              href: resources/authenticationmethodspolicy.md
-              items:
-              - name: Get
-                href: api/authenticationmethodspolicy-get.md
-              - name: Update
-                href: api/authenticationmethodspolicy-update.md
-            - name: Email policy
-              href: resources/emailauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/emailauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/emailauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/emailauthenticationmethodconfiguration-delete.md
-            - name: FIDO2 policy
-              href: resources/fido2authenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/fido2authenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/fido2authenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/fido2authenticationmethodconfiguration-delete.md
-            - name: Microsoft Authenticator policy
-              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-            - name: Temporary Access Pass policy
-              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-            - name: Text Message policy
-              href: resources/smsAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/smsAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/smsAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/smsAuthenticationMethodConfiguration-delete.md
-            - name: Third-party software OATH policy
-              href: resources/softwareoathAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/softwareoathAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/softwareoathAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
-            - name: Voice call policy
-              href: resources/voiceAuthenticationMethodConfiguration.md
-              items:
-              - name: Get
-                href: api/voiceAuthenticationMethodConfiguration-get.md
-              - name: Update
-                href: api/voiceAuthenticationMethodConfiguration-update.md
-              - name: Delete
-                href: api/voiceAuthenticationMethodConfiguration-delete.md
-            - name: X509 certificate
-              displayName: certificate-based authentication, CBA
-              href: resources/x509Certificateauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/x509certificateauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/x509certificateauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/x509certificateauthenticationmethodconfiguration-delete.md
-            - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
-              href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
-              items:
-              - name: Get
-                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
-              - name: Update
-                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-              - name: Delete
-                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Authorization policy
-            href: resources/authorizationpolicy.md
-            items:
-            - name: Get
-              href: api/authorizationpolicy-get.md
-            - name: Update
-              href: api/authorizationpolicy-update.md
-          - name: B2C authentication methods policy
-            href: resources/b2cauthenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/b2cauthenticationmethodspolicy-get.md
-            - name: Update
-              href: api/b2cauthenticationmethodspolicy-update.md
-          - name: Claims mapping policy
-            href: resources/claimsmappingpolicy.md
-            items:
-            - name: Create
-              href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-            - name: List
-              href: api/claimsmappingpolicy-list.md
-            - name: Get
-              href: api/claimsmappingpolicy-get.md
-            - name: Update
-              href: api/claimsmappingpolicy-update.md
-            - name: Delete
-              href: api/claimsmappingpolicy-delete.md
-            - name: List applied to applications
-              href: api/claimsmappingpolicy-list-appliesto.md
-          - name: Continuous access evaluation policy
-            href: resources/continuousaccessevaluationpolicy.md
-            items:
-            - name: Get
-              href: api/continuousaccessevaluationpolicy-get.md
-            - name: Update
-              href: api/continuousaccessevaluationpolicy-update.md
-          - name: Device registration policy (preview)
-            href: resources/deviceregistrationpolicy.md
-            items:
-            - name: Get
-              href: api/deviceregistrationpolicy-get.md
-            - name: Update
-              href: api/deviceregistrationpolicy-update.md
-          - name: Feature rollout policy
-            href: resources/featurerolloutpolicy.md
-            items:
-            - name: List
-              href: api/list-featurerolloutpolicies.md
-            - name: Get
-              href: api/featurerolloutpolicy-get.md
-            - name: Create
-              href: api/post-featurerolloutpolicies.md
-            - name: Update
-              href: api/featurerolloutpolicy-update.md
-            - name: Delete
-              href: api/featurerolloutpolicy-delete.md
-            - name: Create appliesTo
-              href: api/featurerolloutpolicy-post-appliesto.md
-            - name: Delete appliesTo
-              href: api/featurerolloutpolicy-delete-appliesto.md
-          - name: Home realm discovery policy
-            href: resources/homerealmdiscoverypolicy.md
-            items:
-            - name: Create
-              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-            - name: List
-              href: api/homerealmdiscoverypolicy-list.md
-            - name: Get
-              href: api/homerealmdiscoverypolicy-get.md
-            - name: Update
-              href: api/homerealmdiscoverypolicy-update.md
-            - name: Delete
-              href: api/homerealmdiscoverypolicy-delete.md
-            - name: List applied to applications
-              href: api/homerealmdiscoverypolicy-list-appliesto.md
-          - name: Permission grant policy
-            href: resources/permissiongrantpolicy.md
-            items:
-            - name: Create
-              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
-            - name: List
-              href: api/permissiongrantpolicy-list.md
-            - name: Get
-              href: api/permissiongrantpolicy-get.md
-            - name: Update
-              href: api/permissiongrantpolicy-update.md
-            - name: Delete
-              href: api/permissiongrantpolicy-delete.md
-            - name: Permission grant condition sets
-              href: resources/permissiongrantconditionset.md
-              items:
-              - name: List includes
-                href: api/permissiongrantpolicy-list-includes.md
-              - name: Create in includes
-                href: api/permissiongrantpolicy-post-includes.md
-              - name: Delete from includes
-                href: api/permissiongrantpolicy-delete-includes.md
-              - name: List excludes
-                href: api/permissiongrantpolicy-list-excludes.md
-              - name: Create in excludes
-                href: api/permissiongrantpolicy-post-excludes.md
-              - name: Delete from excludes
-                href: api/permissiongrantpolicy-delete-excludes.md
-          - name: Token issuance policy
-            href: resources/tokenissuancepolicy.md
-            items:
-            - name: Create
-              href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-            - name: List
-              href: api/tokenissuancepolicy-list.md
-            - name: Get
-              href: api/tokenissuancepolicy-get.md
-            - name: Update
-              href: api/tokenissuancepolicy-update.md
-            - name: Delete
-              href: api/tokenissuancepolicy-delete.md
-            - name: List applied to applications
-              href: api/tokenissuancepolicy-list-appliesto.md
-          - name: Token lifetime policy
-            href: resources/tokenlifetimepolicy.md
-            items:
-            - name: Create
-              href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-            - name: List
-              href: api/tokenlifetimepolicy-list.md
-            - name: Get
-              href: api/tokenlifetimepolicy-get.md
-            - name: Update
-              href: api/tokenlifetimepolicy-update.md
-            - name: Delete
-              href: api/tokenlifetimepolicy-delete.md
-            - name: List applied to applications
-              href: api/tokenlifetimepolicy-list-appliesto.md
-          - name: Security defaults policy
-            href: resources/identitysecuritydefaultsenforcementpolicy.md
-            items:
-            - name: Get
-              href: api/identitysecuritydefaultsenforcementpolicy-get.md
-            - name: Update
-              href: api/identitysecuritydefaultsenforcementpolicy-update.md
-        - name: Trust Framework Keyset
-          href: resources/trustframeworkkeyset.md
-          items:
-          - name: List
-            href: api/trustframework-list-keysets.md
-          - name: Create
-            href: api/trustframework-post-keysets.md
-          - name: Get
-            href: api/trustframeworkkeyset-get.md
-          - name: Update
-            href: api/trustframeworkkeyset-update.md
-          - name: Delete
-            href: api/trustframeworkkeyset-delete.md
-          - name: Generate key
-            href: api/trustframeworkkeyset-generatekey.md
-          - name: Get active key
-            href: api/trustframeworkkeyset-getactivekey.md
-          - name: Upload certificate
-            href: api/trustframeworkkeyset-uploadcertificate.md
-          - name: Upload PKCS12 certificate
-            href: api/trustframeworkkeyset-uploadpkcs12.md
-          - name: Upload secret
-            href: api/trustframeworkkeyset-uploadsecret.md
-        - name: Trust Framework policy
-          href: resources/trustframeworkpolicy.md
-          items:
-          - name: List
-            href: api/trustframework-list-trustframeworkpolicies.md
-          - name: Create
-            href: api/trustframework-post-trustframeworkpolicy.md
-          - name: Get
-            href: api/trustframeworkpolicy-get.md
-          - name: Update
-            href: api/trustframework-put-trustframeworkpolicy.md
-          - name: Delete
-            href: api/trustframeworkpolicy-delete.md
-        - name: User flows
-          items:
-          - name: User flow (deprecated)
-            items:
-            - name: User flow
-              href: resources/identityuserflow.md
-            - name: List
-              href: api/identityuserflow-list.md
-            - name: Create
-              href: api/identityuserflow-post-userflows.md
-            - name: Get
-              href: api/identityuserflow-get.md
-            - name: Delete
-              href: api/identityuserflow-delete.md
-          - name: B2C user flows (preview)
-            items:
-            - name: B2C user flow
-              href: resources/b2cidentityuserflow.md
-            - name: List
-              href: api/identitycontainer-list-b2cuserflows.md
-            - name: Create
-              href: api/identitycontainer-post-b2cuserflows.md
-            - name: Get
-              href: api/b2cidentityuserflow-get.md
-            - name: Update
-              href: api/b2cidentityuserflow-update.md
-            - name: Delete
-              href: api/b2cidentityuserflow-delete.md
-            - name: List identity providers
-              href: api/b2cidentityuserflow-list-userflowidentityproviders.md
-            - name: Add identity provider
-              href: api/b2cidentityuserflow-userflowidentityproviders-update.md
-            - name: Remove identity provider
-              href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
-            - name: List identity providers (deprecated)
-              href: api/b2cidentityuserflow-list-identityproviders.md
-            - name: Add identity provider (deprecated)
-              href: api/b2cidentityuserflow-post-identityproviders.md
-            - name: Remove identity provider (deprecated)
-              href: api/b2cidentityuserflow-delete-identityproviders.md
-            - name: List user attribute assignments
-              href: api/b2cidentityuserflow-list-userattributeassignments.md
-            - name: Create user attribute assignment
-              href: api/b2cidentityuserflow-post-userattributeassignments.md
-            - name: List languages
-              href: api/b2cidentityuserflow-list-languages.md
-            - name: Create or update language
-              href: api/b2cidentityuserflow-put-languages.md
-            - name: Get API connectors configuration
-              href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
-            - name: Configure an API connector
-              href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows
-            items:
-            - name: Self-service sign up user flow
-              href: resources/b2xidentityuserflow.md
-            - name: List
-              href: api/identitycontainer-list-b2xuserflows.md
-            - name: Create
-              href: api/identitycontainer-post-b2xuserflows.md
-            - name: Get
-              href: api/b2xidentityuserflow-get.md
-            - name: Delete
-              href: api/b2xidentityuserflow-delete.md
-            - name: List identity providers
-              href: api/b2xidentityuserflow-list-userflowidentityproviders.md
-            - name: Add identity provider
-              href: api/b2xidentityuserflow-userflowidentityproviders-update.md
-            - name: Delete identity provider
-              href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
-            - name: List identity providers (deprecated)
-              href: api/b2xidentityuserflow-list-identityproviders.md
-            - name: Add identity provider (deprecated)
-              href: api/b2xidentityuserflow-post-identityproviders.md
-            - name: Delete identity provider (deprecated)
-              href: api/b2xidentityuserflow-delete-identityproviders.md
-            - name: List user attribute assignments
-              href: api/b2xidentityuserflow-list-userattributeassignments.md
-            - name: Create user attribute assignment
-              href: api/b2xidentityuserflow-post-userattributeassignments.md
-            - name: List languages
-              href: api/b2xidentityuserflow-list-languages.md
-            - name: Get API connectors configuration
-              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-            - name: Configure an API connector
-              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
-          - name: User flow attributes
-            items:
-            - name: User flow attribute
-              href: resources/identityuserflowattribute.md
-            - name: List
-              href: api/identityuserflowattribute-list.md
-            - name: Create
-              href: api/identityuserflowattribute-post.md
-            - name: Get
-              href: api/identityuserflowattribute-get.md
-            - name: Update
-              href: api/identityuserflowattribute-update.md
-            - name: Delete
-              href: api/identityuserflowattribute-delete.md
-          - name: User flow attribute assignment
-            items:
-            - name: User
-              ref: resources/identityuserflowattributeassignment.md
-            - name: Get
-              href: api/identityuserflowattributeassignment-get.md
-            - name: Update
-              href: api/identityuserflowattributeassignment-update.md
-            - name: Delete
-              href: api/identityuserflowattributeassignment-delete.md
-          - name: User flow language configuration
-            items:
-            - name: User flow language configuration
-              href: resources/userflowlanguageconfiguration.md
-            - name: Get user flow language configuration
-              href: api/userflowlanguageconfiguration-get.md
-            - name: Delete user flow language configuration
-              href: api/userflowlanguageconfiguration-delete.md
-            - name: List defaultPages
-              href: api/userflowlanguageconfiguration-list-defaultpages.md
-            - name: List overridesPages
-              href: api/userflowlanguageconfiguration-list-overridespages.md
-            - name: User flow language page
-              href: resources/userflowlanguagepage.md
-            - name: Get user flow language page
-              href: api/userflowlanguagepage-get.md
-            - name: Update user flow language page
-              href: api/userflowlanguagepage-put.md
-            - name: Delete user flow language page
-              href: api/userflowlanguagepage-delete.md
-          - name: API connectors
-            items:
-            - name: API connector
-              href: resources/identityapiconnector.md
-            - name: List
-              href: api/identityapiconnector-list.md
-            - name: Create
-              href: api/identityapiconnector-create.md
-            - name: Get
-              href: api/identityapiconnector-get.md
-            - name: Update
-              href: api/identityapiconnector-update.md
-            - name: Upload a client certificate
-              href: api/identityapiconnector-uploadclientcertificate.md
-            - name: Delete
-              href: api/identityapiconnector-delete.md
       - name: Governance
         href: resources/identitygovernance-overview.md
         displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -14189,6 +13168,1037 @@ items:
               href: api/agreement-post-files.md
             - name: List localized files
               href: api/agreement-list-files.md
+      - name: Identity and sign-in
+        items:
+        - name: Authentication methods
+          items:
+          - name: Overview
+            href: resources/authenticationmethods-overview.md
+          - name: Authentication methods
+            href: resources/authenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-methods.md
+          - name: FIDO2 security keys
+            href: resources/fido2authenticationmethod.md
+            items:
+            - name: List
+              href: api/fido2authenticationmethod-list.md
+            - name: Get
+              href: api/fido2authenticationmethod-get.md
+            - name: Delete
+              href: api/fido2authenticationmethod-delete.md
+          - name: Microsoft Authenticator
+            href: resources/microsoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/microsoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/microsoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Software OATH token
+            href: resources/softwareOathAuthenticationMethod.md
+            items:
+            - name: List
+              href: api/authentication-list-softwareoathmethods.md
+            - name: Get
+              href: api/softwareOathAuthenticationMethod-get.md
+            - name: Delete
+              href: api/softwareOathAuthenticationMethod-delete.md
+          - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
+            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+            items:
+            - name: List
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+            - name: Get
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+            - name: Delete
+              href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+          - name: Windows Hello for Business
+            href: resources/windowshelloforbusinessauthenticationmethod.md
+            items:
+            - name: List
+              href: api/windowshelloforbusinessauthenticationmethod-list.md
+            - name: Get
+              href: api/windowshelloforbusinessauthenticationmethod-get.md
+            - name: Delete
+              href: api/windowshelloforbusinessauthenticationmethod-delete.md
+          - name: Temporary Access Pass
+            displayName: TAP
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-temporaryaccesspassmethods.md
+            - name: Create
+              href: api/authentication-post-temporaryaccesspassmethods.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+          - name: Phone
+            href: resources/phoneauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-phonemethods.md
+            - name: Get
+              href: api/phoneauthenticationmethod-get.md
+            - name: Update
+              href: api/phoneauthenticationmethod-update.md
+            - name: Delete
+              href: api/phoneauthenticationmethod-delete.md
+            - name: Add
+              href: api/authentication-post-phonemethods.md
+            - name: Enable SMS sign-in
+              href: api/phoneauthenticationmethod-enablesmssignin.md
+            - name: Disable SMS sign-in
+              href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-emailmethods.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/authentication-post-emailmethods.md
+          - name: Password
+            href: resources/passwordauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-passwordmethods.md
+            - name: Get
+              href: api/passwordauthenticationmethod-get.md
+            - name: Reset
+              href: api/authenticationmethod-resetpassword.md
+            - name: Get operation status
+              href: api/authenticationoperation-get.md
+        - name: Authentication strengths
+          items:
+          - name: Overview
+            href: resources/authenticationstrengths-overview.md
+          - name: Authentication strengths policy
+            href: resources/authenticationstrengthpolicy.md
+            items:
+            - name: List
+              href: api/authenticationstrengthroot-list-policies.md
+            - name: Create
+              href: api/authenticationstrengthroot-post-policies.md
+            - name: Get
+              href: api/authenticationstrengthpolicy-get.md
+            - name: Update
+              href: api/authenticationstrengthpolicy-update.md
+            - name: Delete
+              href: api/authenticationstrengthroot-delete-policies.md
+            - name: Find by method mode
+              href: api/authenticationstrengthpolicy-findbymethodmode.md
+            - name: List usage
+              href: api/authenticationstrengthpolicy-usage.md
+          - name: Authentication combination configurations
+            items:
+            - name: Authentication combination configuration
+              href: resources/authenticationcombinationconfiguration.md
+            - name: FIDO2 combination configuration
+              href: resources/fido2combinationconfiguration.md
+            - name: Create
+              href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
+            - name: List
+              href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
+            - name: Get
+              href: api/authenticationcombinationconfiguration-get.md
+            - name: Update
+              href: api/authenticationcombinationconfiguration-update.md
+            - name: Delete
+              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+            - name: Update allowed combinations
+              href: api/authenticationstrengthpolicy-updateallowedcombinations.md
+          - name: Authentication method modes
+            href: resources/authenticationmethodmodedetail.md
+            items:
+            - name: List authentication combinations and method modes
+              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
+            - name: Get authentication method modes
+              href: api/authenticationmethodmodedetail-get.md
+        - name: Certificate-based authentication configuration
+          displayName: CBA
+          href: resources/certificatebasedauthconfiguration.md
+          items:
+          - name: List
+            href: api/certificatebasedauthconfiguration-list.md
+          - name: Get
+            href: api/certificatebasedauthconfiguration-get.md
+          - name: Create
+            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+          - name: Delete
+            href: api/certificatebasedauthconfiguration-delete.md
+        - name: Conditional Access
+          items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
+          - name: Policies
+            items:
+            - name: Conditional Access policy
+              href: resources/conditionalaccesspolicy.md
+            - name: List
+              href: api/conditionalaccessroot-list-policies.md
+            - name: Create
+              href: api/conditionalaccessroot-post-policies.md
+            - name: Get
+              href: api/conditionalaccesspolicy-get.md
+            - name: Update
+              href: api/conditionalaccesspolicy-update.md
+            - name: Delete
+              href: api/conditionalaccesspolicy-delete.md
+          - name: Named locations
+            items:
+            - name: Named location
+              items:
+              - name: Named location
+                href: resources/namedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Get
+                href: api/namedlocation-get.md
+              - name: Delete
+                href: api/namedlocation-delete.md
+              - name: Country named location
+                items:
+                - name: Country named location
+                  href: resources/countrynamedlocation.md
+                - name: List
+                  href: api/conditionalaccessroot-list-namedlocations.md
+                - name: Create
+                  href: api/conditionalaccessroot-post-namedlocations.md
+                - name: Get
+                  href: api/countrynamedlocation-get.md
+                - name: Update
+                  href: api/countrynamedlocation-update.md
+                - name: Delete
+                  href: api/countrynamedlocation-delete.md
+              - name: IP named location
+                items:
+                - name: IP named location
+                  href: resources/ipnamedlocation.md
+                - name: List
+                  href: api/conditionalaccessroot-list-namedlocations.md
+                - name: Create
+                  href: api/conditionalaccessroot-post-namedlocations.md
+                - name: Get
+                  href: api/ipnamedlocation-get.md
+                - name: Update
+                  href: api/ipnamedlocation-update.md
+                - name: Delete
+                  href: api/ipnamedlocation-delete.md
+          - name: Authentication context
+            items:
+            - name: Authentication context class reference
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
+            - name: Delete
+              href: api/authenticationcontextclassreference-delete.md
+          - name: Templates
+            items:
+            - name: Conditional access template
+              href: resources/conditionalAccessTemplate.md
+            - name: List
+              href: api/conditionalaccessroot-list-templates.md
+            - name: Get
+              href: api/conditionalaccesstemplate-get.md
+        - name: Cross-tenant access
+          items:
+          - name: Overview
+            displayName: Cross-tenant access settings, XTAP
+            href: resources/crosstenantaccesspolicy-overview.md
+          - name: Policy
+            items:
+            - name: Cross-tenant access policy
+              href: resources/crosstenantaccesspolicy.md
+            - name: Get
+              href: api/crosstenantaccesspolicy-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicy-update.md
+          - name: Default settings
+            items:
+            - name: Cross-tenant access default settings
+              href: resources/crosstenantaccesspolicyconfigurationdefault.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+            - name: Reset to system default
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+          - name: Partner settings
+            items:
+            - name: Cross-tenant access partner settings
+              href: resources/crosstenantaccesspolicyconfigurationpartner.md
+            - name: List
+              href: api/crosstenantaccesspolicy-list-partners.md
+            - name: Create
+              href: api/crosstenantaccesspolicy-post-partners.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+            - name: Delete
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+          - name: Partner user sync settings
+            items:
+            - name: Cross-tenant access partner user sync settings
+              href: resources/crosstenantidentitysyncpolicypartner.md
+            - name: Create
+              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+            - name: Get
+              href: api/crosstenantidentitysyncpolicypartner-get.md
+            - name: Update
+              href: api/crosstenantidentitysyncpolicypartner-update.md
+            - name: Delete
+              href: api/crosstenantidentitysyncpolicypartner-delete.md
+        - name: Data policy operation
+          href: resources/datapolicyoperation.md
+          items:
+          - name: Get data policy operation
+            href: api/datapolicyoperation-get.md
+        - name: Delegated permission grant
+          href: resources/oauth2permissiongrant.md
+          items:
+          - name: List
+            href: api/oauth2permissiongrant-list.md
+          - name: Get
+            href: api/oauth2permissiongrant-get.md
+          - name: Create
+            href: api/oauth2permissiongrant-post.md
+          - name: Update
+            href: api/oauth2permissiongrant-update.md
+          - name: Delete
+            href: api/oauth2permissiongrant-delete.md
+          - name: Get delta
+            href: api/oauth2permissiongrant-delta.md
+        - name: External identities policy (preview)
+          href: resources/externalidentitiespolicy.md
+          items:
+          - name: Get
+            href: api/externalidentitiespolicy-get.md
+          - name: Update
+            href: api/externalidentitiespolicy-update.md
+        - name: Identity protection
+          href: resources/identityprotection-overview.md
+          items:
+          - name: Risk detection
+            items:
+            - name: Risk detection
+              href: resources/riskdetection.md
+            - name: List risk detections
+              href: api/riskdetection-list.md
+            - name: Get risk detection
+              href: api/riskdetection-get.md
+          - name: Risky user
+            items:
+            - name: Risky user
+              href: resources/riskyuser.md
+            - name: List risky users
+              href: api/riskyusers-list.md
+            - name: Get risky user
+              href: api/riskyusers-get.md
+            - name: List history
+              href: api/riskyuser-list-history.md
+            - name: Confirm compromised
+              href: api/riskyusers-confirmcompromised.md
+            - name: Dismiss
+              href: api/riskyusers-dismiss.md
+          - name: Service principal risk detection
+            items:
+            - name: Risk detection
+              href: resources/serviceprincipalriskdetection.md
+            - name: List
+              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
+            - name: Get
+              href: api/serviceprincipalriskdetection-get.md
+          - name: Risky service principal
+            items:
+            - name: Risky service principal
+              href: resources/riskyserviceprincipal.md
+            - name: List risky service principals
+              href: api/identityprotectionroot-list-riskyserviceprincipals.md
+            - name: Get risky service principal
+              href: api/riskyserviceprincipal-get.md
+            - name: List history
+              href: api/riskyserviceprincipal-list-history.md
+            - name: Confirm compromised
+              href: api/riskyserviceprincipal-confirmcompromised.md
+            - name: Dismiss
+              href: api/riskyserviceprincipal-dismiss.md
+        - name: Identity provider
+          items:
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: External identities
+            items:
+            - name: Built-in identity provider type
+              href: resources/builtinidentityprovider.md
+            - name: Social identity provider type
+              href: resources/socialidentityprovider.md
+            - name: Apple identity provider type
+              href: resources/applemanagedidentityprovider.md
+            - name: OpenID Connect identity provider type
+              href: resources/openidconnectidentityprovider.md
+            - name: List available identity providers
+              href: api/identityproviderbase-availableprovidertypes.md
+            - name: List configured identity providers
+              href: api/identitycontainer-list-identityproviders.md
+            - name: Create identity provider
+              href: api/identitycontainer-post-identityproviders.md
+            - name: Get identity provider
+              href: api/identityproviderbase-get.md
+            - name: Update identity provider
+              href: api/identityproviderbase-update.md
+            - name: Delete identity provider
+              href: api/identityproviderbase-delete.md
+          - name: Domain-based external identities
+            items:
+            - name: SAML/Ws-Fed external domain federation
+              href: resources/samlorwsfedexternaldomainfederation.md
+            - name: List federated configurations
+              href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get federated configuration
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create federated configuration
+              href: api/samlorwsfedexternaldomainfederation-post.md
+            - name: Update federated configuration
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete federated configuration
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create domain
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
+        - name: Identity provider (deprecated)
+          items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: OpenID Connect identity provider type
+            href: resources/openidconnectprovider.md
+          - name: List
+            href: api/identityprovider-list.md
+          - name: Create
+            href: api/identityprovider-post-identityproviders.md
+          - name: Get
+            href: api/identityprovider-get.md
+          - name: Update
+            href: api/identityprovider-update.md
+          - name: Delete
+            href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
+        - name: Invitation manager
+          href: resources/invitation.md
+          items:
+          - name: Create invitation
+            href: api/invitation-post.md
+        - name: Organization
+          href: resources/organization.md
+          items:
+          - name: Get org details
+            href: api/organization-get.md
+          - name: Update org details
+            href: api/organization-update.md
+        - name: Organizational branding
+          href: resources/organizationalbranding.md
+          items:
+          - name: Get
+            href: api/organizationalbranding-get.md
+          - name: Update
+            href: api/organizationalbranding-update.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
+        - name: Policies
+          items:
+          - name: Overview
+            href: resources/policy-overview.md
+          - name: Activity-based timeout policy
+            href: resources/activitybasedtimeoutpolicy.md
+            items:
+            - name: Create
+              href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+            - name: List
+              href: api/activitybasedtimeoutpolicy-list.md
+            - name: Get
+              href: api/activitybasedtimeoutpolicy-get.md
+            - name: Update
+              href: api/activitybasedtimeoutpolicy-update.md
+            - name: Delete
+              href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Application authentication method policy
+            items:
+            - name: Overview
+              href: resources/applicationauthenticationmethodpolicy.md
+            - name: Tenant app management policy
+              items:
+              - name: Tenant app management policy
+                href: resources/tenantappmanagementpolicy.md
+              - name: Get
+                href: api/tenantappmanagementpolicy-get.md
+              - name: Update
+                href: api/tenantappmanagementpolicy-update.md
+            - name: App management policy
+              items:
+              - name: App management policy
+                href: resources/appmanagementpolicy.md
+              - name: List
+                href: api/appmanagementpolicy-list.md
+              - name: Get
+                href: api/appmanagementpolicy-get.md
+              - name: Create
+                href: api/appmanagementpolicy-post.md
+              - name: Update
+                href: api/appmanagementpolicy-update.md
+              - name: Delete
+                href: api/appmanagementpolicy-delete.md
+              - name: Create appliesTo
+                href: api/appmanagementpolicy-post-appliesto.md
+              - name: List appliesTo
+                href: api/appmanagementpolicy-list-appliesto.md
+              - name: Delete appliesTo
+                href: api/appmanagementpolicy-delete-appliesto.md
+          - name: Authentication events policy
+            items:
+            - name: Authentication events policy
+              href: resources/authenticationeventspolicy.md
+            - name: Sign-up-start event
+              items:
+              - name: Authentication listener
+                href: resources/authenticationlistener.md
+              - name: Invoke user flow listener type
+                href: resources/invokeuserflowlistener.md
+              - name: List listeners
+                href: api/authenticationeventspolicy-list-onsignupstart.md
+              - name: Create listener
+                href: api/authenticationeventspolicy-post-onsignupstart.md
+              - name: Get listener
+                href: api/authenticationlistener-get.md
+              - name: Update listener
+                href: api/authenticationlistener-update.md
+              - name: Put listener
+                href: api/authenticationlistener-put.md
+              - name: Delete listener
+                href: api/authenticationlistener-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication methods policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+            - name: Text Message policy
+              href: resources/smsAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/smsAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/smsAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/smsAuthenticationMethodConfiguration-delete.md
+            - name: Third-party software OATH policy
+              href: resources/softwareoathAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/softwareoathAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/softwareoathAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/softwareoathAuthenticationMethodConfiguration-delete.md
+            - name: Voice call policy
+              href: resources/voiceAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/voiceAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/voiceAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/voiceAuthenticationMethodConfiguration-delete.md
+            - name: X509 certificate
+              displayName: certificate-based authentication, CBA
+              href: resources/x509Certificateauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/x509certificateauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/x509certificateauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/x509certificateauthenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
+              href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Authorization policy
+            href: resources/authorizationpolicy.md
+            items:
+            - name: Get
+              href: api/authorizationpolicy-get.md
+            - name: Update
+              href: api/authorizationpolicy-update.md
+          - name: B2C authentication methods policy
+            href: resources/b2cauthenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/b2cauthenticationmethodspolicy-get.md
+            - name: Update
+              href: api/b2cauthenticationmethodspolicy-update.md
+          - name: Claims mapping policy
+            href: resources/claimsmappingpolicy.md
+            items:
+            - name: Create
+              href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+            - name: List
+              href: api/claimsmappingpolicy-list.md
+            - name: Get
+              href: api/claimsmappingpolicy-get.md
+            - name: Update
+              href: api/claimsmappingpolicy-update.md
+            - name: Delete
+              href: api/claimsmappingpolicy-delete.md
+            - name: List applied to applications
+              href: api/claimsmappingpolicy-list-appliesto.md
+          - name: Continuous access evaluation policy
+            href: resources/continuousaccessevaluationpolicy.md
+            items:
+            - name: Get
+              href: api/continuousaccessevaluationpolicy-get.md
+            - name: Update
+              href: api/continuousaccessevaluationpolicy-update.md
+          - name: Device registration policy (preview)
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md
+          - name: Feature rollout policy
+            href: resources/featurerolloutpolicy.md
+            items:
+            - name: List
+              href: api/list-featurerolloutpolicies.md
+            - name: Get
+              href: api/featurerolloutpolicy-get.md
+            - name: Create
+              href: api/post-featurerolloutpolicies.md
+            - name: Update
+              href: api/featurerolloutpolicy-update.md
+            - name: Delete
+              href: api/featurerolloutpolicy-delete.md
+            - name: Create appliesTo
+              href: api/featurerolloutpolicy-post-appliesto.md
+            - name: Delete appliesTo
+              href: api/featurerolloutpolicy-delete-appliesto.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: Create
+              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+            - name: List
+              href: api/homerealmdiscoverypolicy-list.md
+            - name: Get
+              href: api/homerealmdiscoverypolicy-get.md
+            - name: Update
+              href: api/homerealmdiscoverypolicy-update.md
+            - name: Delete
+              href: api/homerealmdiscoverypolicy-delete.md
+            - name: List applied to applications
+              href: api/homerealmdiscoverypolicy-list-appliesto.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+              - name: List includes
+                href: api/permissiongrantpolicy-list-includes.md
+              - name: Create in includes
+                href: api/permissiongrantpolicy-post-includes.md
+              - name: Delete from includes
+                href: api/permissiongrantpolicy-delete-includes.md
+              - name: List excludes
+                href: api/permissiongrantpolicy-list-excludes.md
+              - name: Create in excludes
+                href: api/permissiongrantpolicy-post-excludes.md
+              - name: Delete from excludes
+                href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Create
+              href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+            - name: List
+              href: api/tokenissuancepolicy-list.md
+            - name: Get
+              href: api/tokenissuancepolicy-get.md
+            - name: Update
+              href: api/tokenissuancepolicy-update.md
+            - name: Delete
+              href: api/tokenissuancepolicy-delete.md
+            - name: List applied to applications
+              href: api/tokenissuancepolicy-list-appliesto.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Create
+              href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/tokenlifetimepolicy-list.md
+            - name: Get
+              href: api/tokenlifetimepolicy-get.md
+            - name: Update
+              href: api/tokenlifetimepolicy-update.md
+            - name: Delete
+              href: api/tokenlifetimepolicy-delete.md
+            - name: List applied to applications
+              href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Security defaults policy
+            href: resources/identitysecuritydefaultsenforcementpolicy.md
+            items:
+            - name: Get
+              href: api/identitysecuritydefaultsenforcementpolicy-get.md
+            - name: Update
+              href: api/identitysecuritydefaultsenforcementpolicy-update.md
+        - name: Trust Framework Keyset
+          href: resources/trustframeworkkeyset.md
+          items:
+          - name: List
+            href: api/trustframework-list-keysets.md
+          - name: Create
+            href: api/trustframework-post-keysets.md
+          - name: Get
+            href: api/trustframeworkkeyset-get.md
+          - name: Update
+            href: api/trustframeworkkeyset-update.md
+          - name: Delete
+            href: api/trustframeworkkeyset-delete.md
+          - name: Generate key
+            href: api/trustframeworkkeyset-generatekey.md
+          - name: Get active key
+            href: api/trustframeworkkeyset-getactivekey.md
+          - name: Upload certificate
+            href: api/trustframeworkkeyset-uploadcertificate.md
+          - name: Upload PKCS12 certificate
+            href: api/trustframeworkkeyset-uploadpkcs12.md
+          - name: Upload secret
+            href: api/trustframeworkkeyset-uploadsecret.md
+        - name: Trust Framework policy
+          href: resources/trustframeworkpolicy.md
+          items:
+          - name: List
+            href: api/trustframework-list-trustframeworkpolicies.md
+          - name: Create
+            href: api/trustframework-post-trustframeworkpolicy.md
+          - name: Get
+            href: api/trustframeworkpolicy-get.md
+          - name: Update
+            href: api/trustframework-put-trustframeworkpolicy.md
+          - name: Delete
+            href: api/trustframeworkpolicy-delete.md
+        - name: User flows
+          items:
+          - name: User flow (deprecated)
+            items:
+            - name: User flow
+              href: resources/identityuserflow.md
+            - name: List
+              href: api/identityuserflow-list.md
+            - name: Create
+              href: api/identityuserflow-post-userflows.md
+            - name: Get
+              href: api/identityuserflow-get.md
+            - name: Delete
+              href: api/identityuserflow-delete.md
+          - name: B2C user flows (preview)
+            items:
+            - name: B2C user flow
+              href: resources/b2cidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2cuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2cuserflows.md
+            - name: Get
+              href: api/b2cidentityuserflow-get.md
+            - name: Update
+              href: api/b2cidentityuserflow-update.md
+            - name: Delete
+              href: api/b2cidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2cidentityuserflow-list-userflowidentityproviders.md
+            - name: Add identity provider
+              href: api/b2cidentityuserflow-userflowidentityproviders-update.md
+            - name: Remove identity provider
+              href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+            - name: List identity providers (deprecated)
+              href: api/b2cidentityuserflow-list-identityproviders.md
+            - name: Add identity provider (deprecated)
+              href: api/b2cidentityuserflow-post-identityproviders.md
+            - name: Remove identity provider (deprecated)
+              href: api/b2cidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2cidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2cidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2cidentityuserflow-list-languages.md
+            - name: Create or update language
+              href: api/b2cidentityuserflow-put-languages.md
+            - name: Get API connectors configuration
+              href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
+          - name: Self-service sign up user flows
+            items:
+            - name: Self-service sign up user flow
+              href: resources/b2xidentityuserflow.md
+            - name: List
+              href: api/identitycontainer-list-b2xuserflows.md
+            - name: Create
+              href: api/identitycontainer-post-b2xuserflows.md
+            - name: Get
+              href: api/b2xidentityuserflow-get.md
+            - name: Delete
+              href: api/b2xidentityuserflow-delete.md
+            - name: List identity providers
+              href: api/b2xidentityuserflow-list-userflowidentityproviders.md
+            - name: Add identity provider
+              href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+            - name: Delete identity provider
+              href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+            - name: List identity providers (deprecated)
+              href: api/b2xidentityuserflow-list-identityproviders.md
+            - name: Add identity provider (deprecated)
+              href: api/b2xidentityuserflow-post-identityproviders.md
+            - name: Delete identity provider (deprecated)
+              href: api/b2xidentityuserflow-delete-identityproviders.md
+            - name: List user attribute assignments
+              href: api/b2xidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2xidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2xidentityuserflow-list-languages.md
+            - name: Get API connectors configuration
+              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+          - name: User flow attributes
+            items:
+            - name: User flow attribute
+              href: resources/identityuserflowattribute.md
+            - name: List
+              href: api/identityuserflowattribute-list.md
+            - name: Create
+              href: api/identityuserflowattribute-post.md
+            - name: Get
+              href: api/identityuserflowattribute-get.md
+            - name: Update
+              href: api/identityuserflowattribute-update.md
+            - name: Delete
+              href: api/identityuserflowattribute-delete.md
+          - name: User flow attribute assignment
+            items:
+            - name: User
+              ref: resources/identityuserflowattributeassignment.md
+            - name: Get
+              href: api/identityuserflowattributeassignment-get.md
+            - name: Update
+              href: api/identityuserflowattributeassignment-update.md
+            - name: Delete
+              href: api/identityuserflowattributeassignment-delete.md
+          - name: User flow language configuration
+            items:
+            - name: User flow language configuration
+              href: resources/userflowlanguageconfiguration.md
+            - name: Get user flow language configuration
+              href: api/userflowlanguageconfiguration-get.md
+            - name: Delete user flow language configuration
+              href: api/userflowlanguageconfiguration-delete.md
+            - name: List defaultPages
+              href: api/userflowlanguageconfiguration-list-defaultpages.md
+            - name: List overridesPages
+              href: api/userflowlanguageconfiguration-list-overridespages.md
+            - name: User flow language page
+              href: resources/userflowlanguagepage.md
+            - name: Get user flow language page
+              href: api/userflowlanguagepage-get.md
+            - name: Update user flow language page
+              href: api/userflowlanguagepage-put.md
+            - name: Delete user flow language page
+              href: api/userflowlanguagepage-delete.md
+          - name: API connectors
+            items:
+            - name: API connector
+              href: resources/identityapiconnector.md
+            - name: List
+              href: api/identityapiconnector-list.md
+            - name: Create
+              href: api/identityapiconnector-create.md
+            - name: Get
+              href: api/identityapiconnector-get.md
+            - name: Update
+              href: api/identityapiconnector-update.md
+            - name: Upload a client certificate
+              href: api/identityapiconnector-uploadclientcertificate.md
+            - name: Delete
+              href: api/identityapiconnector-delete.md
+      - name: Partner customer administration
+        items:
+        - name: Granular delegated admin privileges
+          items:
+          - name: Overview
+            displayName: GDAP, Partner Center, CSP, VAR
+            href: resources/delegatedadminrelationships-api-overview.md
+          - name: Delegated admin relationships
+            href: resources/delegatedadminrelationship.md
+            items:
+            - name: Create
+              href: api/tenantrelationship-post-delegatedadminrelationships.md
+            - name: List
+              href: api/tenantrelationship-list-delegatedadminrelationships.md
+            - name: Get
+              href: api/delegatedadminrelationship-get.md
+            - name: Update
+              href: api/delegatedadminrelationship-update.md
+            - name: Delete
+              href: api/delegatedadminrelationship-delete.md
+          - name: Delegated admin access assignments
+            href: resources/delegatedadminaccessassignment.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-accessassignments.md
+            - name: List
+              href: api/delegatedadminrelationship-list-accessassignments.md
+            - name: Get
+              href: api/delegatedadminaccessassignment-get.md
+            - name: Update
+              href: api/delegatedadminaccessassignment-update.md
+            - name: Delete
+              href: api/delegatedadminaccessassignment-delete.md
+          - name: Delegated admin relationship requests
+            href: resources/delegatedadminrelationshiprequest.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-requests.md
+            - name: List
+              href: api/delegatedadminrelationship-list-requests.md
+            - name: Get
+              href: api/delegatedadminrelationshiprequest-get.md
+          - name: Delegated admin relationship operations
+            href: resources/delegatedadminrelationshipoperation.md
+            items:
+            - name: List
+              href: api/delegatedadminrelationship-list-operations.md
+            - name: Get
+              href: api/delegatedadminrelationshipoperation-get.md
+          - name: Delegated admin customer
+            href: resources/delegatedadmincustomer.md
+            items:
+            - name: List
+              href: api/tenantrelationship-list-delegatedadmincustomers.md
+            - name: Get
+              href: api/delegatedadmincustomer-get.md
+            - name: Service management details
+              href: resources/delegatedadminservicemanagementdetail.md
+              items:
+              - name: List
+                href: api/delegatedadmincustomer-list-servicemanagementdetails.md
     - name: Industry data ETL (preview)
       items:
         - name: Overview
@@ -16071,6 +16081,98 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: Threat intelligence (preview)
+        items:
+        - name: Overview
+          href: resources/security-threatintelligence-overview.md
+        - name: Article
+          items:
+          - name: Article
+            href: resources/security-article.md
+          - name: Get 
+            href: api/security-article-get.md
+          - name: List
+            href: api/security-article-list.md
+          - name: List article indicators
+            href: api/security-article-list-indicators.md
+        - name: Article indicator
+          items:
+            - name: Article indicator
+              href: resources/security-articleindicator.md
+            - name: Get
+              href: api/security-articleindicator-get.md
+        - name: Host
+          items:
+            - name: Host
+              href: resources/security-host.md
+            - name: Get
+              href: api/security-host-get.md
+            - name: List components
+              href: api/security-host-list-components.md
+            - name: List cookies
+              href: api/security-host-list-cookies.md
+            - name: List passive DNS
+              href: api/security-host-list-passivedns.md
+            - name: List passive DNS reverse
+              href: api/security-host-list-passivednsreverse.md
+            - name: Get reputation
+              href: api/security-host-get-reputation.md
+            - name: List trackers
+              href: api/security-host-list-trackers.md
+        - name: Host component
+          items:
+          - name: Host component
+            href: resources/security-hostcomponent.md
+          - name: Get
+            href: api/security-hostcomponent-get.md
+        - name: Host cookie
+          items:
+            - name: Host cookie
+              href: resources/security-hostcookie.md
+            - name: Get
+              href: api/security-hostcookie-get.md
+        - name: Host tracker
+          items:
+          - name: Host tracker
+            href: resources/security-hosttracker.md
+          - name: Get
+            href: api/security-hosttracker-get.md
+        - name: Intelligence profile
+          items:
+          - name: Intelligence profile
+            href: resources/security-intelligenceprofile.md
+          - name: Get
+            href: api/security-intelligenceprofile-get.md
+          - name: List
+            href: api/security-intelligenceprofile-list.md
+          - name: List intelligence profile indicators
+            href: api/security-intelligenceprofile-list-indicators.md
+        - name: Intelligence profile indicator
+          items:
+          - name: Intelligence profile indicator
+            href: resources/security-intelligenceprofileindicator.md
+          - name: Get
+            href: api/security-intelligenceprofileindicator-get.md
+        - name: Passive DNS record
+          items:
+          - name: Passive DNS record
+            href: resources/security-passivednsrecord.md
+          - name: Get
+            href: api/security-passivednsrecord-get.md
+        - name: Vulnerability
+          items:
+          - name: Vulnerability
+            href: resources/security-vulnerability.md
+          - name: Get
+            href: api/security-vulnerability-get.md
+          - name: List vulnerability components
+            href: api/security-vulnerability-list-components.md
+        - name: Vulnerability component
+          items:
+          - name: Vulnerability componet
+            href: resources/security-vulnerabilitycomponent.md
+          - name: Get
+            href: api/security-vulnerabilitycomponent-get.md
       - name: Threat intelligence indicator (preview)
         items:
         - name: Threat intelligence indicator
@@ -16466,6 +16568,8 @@ items:
           href: api/planneruser-list-favoriteplans.md
         - name: List user's recent plans
           href: api/planneruser-list-recentplans.md
+        - name: Get delta
+          href: api/plannerplan-delta.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -16479,6 +16583,8 @@ items:
           href: api/plannertask-delete.md
         - name: List user's tasks
           href: api/planneruser-list-tasks.md
+        - name: Get delta
+          href: api/plannertask-delta.md
       - name: Bucket
         href: resources/plannerbucket.md
         items:
@@ -16492,6 +16598,8 @@ items:
           href: api/plannerbucket-update.md
         - name: Delete bucket
           href: api/plannerbucket-delete.md
+        - name: Get delta
+          href: api/plannerbucket-delta.md
       - name: Business scenarios (preview)
         items:
         - name: Overview
