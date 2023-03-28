@@ -1,5 +1,6 @@
 ---
-title: "Get host"description: "Read the properties and relationships of a host object."
+title: "Get host"
+description: "Read the properties and relationships of a host object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
