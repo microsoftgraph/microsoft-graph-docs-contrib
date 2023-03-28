@@ -15,9 +15,9 @@ Namespace: microsoft.graph.security
 
 Represents an IP address which is (or has been) addressable over the internet. This resource acts as a grouping mechanism for related details about the hostname or IP address, such as the reputation, any related trackers or cookies, and so on.
 
-This resource does not support direct retrievals. You can leverage access through the [microsoft.graph.security.host](../resources/security-host.md) type.
+You cannot retrieve this type directly. To access it, retrieve the [host](../resources/security-host.md) resource.
 
-Inherits from [microsoft.graph.security.host](../resources/security-host.md).
+Inherits from [host](../resources/security-host.md).
 
 ## Methods
 

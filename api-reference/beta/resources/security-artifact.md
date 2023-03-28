@@ -1,6 +1,6 @@
 ---
 title: "artifact resource type"
-description: "Represents an abstract entity found online by security services of Microsoft."
+description: "Represents an abstract entity found online by Microsoft security services."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract entity found online by security services of Microsoft.
+Represents an abstract entity found online by Microsoft security services.
 
 Current types of artifacts include:
 
@@ -28,7 +28,7 @@ Current types of artifacts include:
 
 Instances of **artifact** identified in the following Microsoft Security API groups should handle the possible implementations. Microsoft Security APIs that currently support the **artifact** type:
 
-* [Microsoft Threat Intelligence](../resources/security-threatintelligence.md)
+* [Threat intelligence](../resources/security-threatintelligence.md)
 
 ## Properties
 

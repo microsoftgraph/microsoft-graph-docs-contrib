@@ -1,6 +1,6 @@
 ---
 title: "hostComponent resource type"
-description: "Web components are details that describe a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan."
+description: "Represents a web component that provides details about a web page or server infrastructure gleaned from a web crawl or scan."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Web components are details describing a web page or server infrastructure gleaned from Microsoft performing a web crawl or scan. These components allow a user to understand the makeup of a webpage or the technology and services driving a specific piece of infrastructure. Pivoting on unique components can find actors' infrastructure or other sites that are compromised. Users can also understand if a website might be vulnerable to a specific attack or compromise based on the technologies that it is running.
+Represents a web component that provides details about a web page or server infrastructure gleaned from a web crawl or scan. This information can be used to detect bad actors or sites that are compromised. It can also help users understand whether a site is vulnerable to a specific attack or compromise.
 
-The **hostComponent** entity has specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
+A host component is associated with a [host](../resources/security-host.md) resource.
 
-Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
+Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 
@@ -30,9 +30,9 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |Property|Type|Description|
 |:---|:---|:---|
 |category|String| The type of component that was detected (for example, `Operating System`, `Framework`, `Remote Access`, or `Server`).|
-|firstSeenDateTime|DateTimeOffset|The first date and time when this web component was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|A system-generated ID for this **hostComponent**. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time when this web component was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |name|String|A name running on the artifact, for example, `Microsoft IIS`.|
 |version|String|The component version running on the artifact, for example, `v8.5`. This should not be assumed to be strictly numerical.|
 

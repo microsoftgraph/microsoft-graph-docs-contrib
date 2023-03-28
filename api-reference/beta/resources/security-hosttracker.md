@@ -29,10 +29,10 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first date and time when this **hostTracker** was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this **hostTracker** was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String| A system-generated ID for this **hostTracker**.  Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
 |kind|String|The kind of **hostTracker** that was detected. For example, `GoogleAnalyticsID` or `JarmHash`.|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time when this **hostTracker** was observed by Microsoft Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this **hostTracker** was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |value|String|The identification value for the **hostTracker**.|
 
 ## Relationships

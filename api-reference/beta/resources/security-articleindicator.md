@@ -15,15 +15,15 @@ Namespace: microsoft.graph.security
 
 Represents a resource that communicates indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
-The relationship from an **articleIndicator** to an [artifact](../resources/security-artifact.md) provides the means for Microsoft Threat Intelligence API users to further evaluate details about reported indicator.
+The relationship from an **articleIndicator** to an [artifact](../resources/security-artifact.md) provides the means for threat intelligence API users to further evaluate details about reported indicator.
 
-Inherits from [microsoft.graph.security.indicator](../resources/security-indicator.md).
+Inherits from [indicator](../resources/security-indicator.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get articleIndicator](../api/security-articleindicator-get.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md)|Read the properties and relationships of a [microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) object.|
+|[Get articleIndicator](../api/security-articleindicator-get.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md)|Read the properties and relationships of a [articleIndicator](../resources/security-articleindicator.md) object.|
 
 ## Properties
 

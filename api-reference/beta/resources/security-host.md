@@ -1,6 +1,6 @@
 ---
 title: "host resource type"
-description: "Represents a hostname or IP address that is (or has been) addressable over the internet and Microsoft Threat Intelligence has knowledge."
+description: "Represents a hostname or IP address that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Threat Intelligence has detected.
+Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected.
 
 This is an abstract type. Implementations of this type include:
 

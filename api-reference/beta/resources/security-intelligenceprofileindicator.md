@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Represents an indicator of threat or compromise related to the contents of an [intelligenceProfile](../resources/security-intelligenceprofile.md).
 
-The relationship from an **intelligenceProfileIndicator** to an [artifact](../resources/security-artifact.md) provides the means for Microsoft Threat Intelligence API users to further evaluate details about reported indicator.
+The relationship from an **intelligenceProfileIndicator** to an [artifact](../resources/security-artifact.md) provides the means for threat intelligence API users to further evaluate details about reported indicator.
 
 Inherits from [microsoft.graph.security.indicator](../resources/security-indicator.md).
 
