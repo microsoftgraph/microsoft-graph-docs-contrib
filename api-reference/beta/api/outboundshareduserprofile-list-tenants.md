@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.Read.All, CrossTenantUserProfileSharing.ReadWrite.All|
 
-All users have `CrossTenantUserProfileSharing.Read` and will be able to retrieve their own [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
+A user can retrieve their own [outboundSharedUserProfile](../resources/outboundshareduserprofile.md) data when the app is granted the `CrossTenantUserProfileSharing.Read` delegated permission on their behalf.
 
-An account assigned with the Global Reader or Global Administrator role will be able to retrieve all [outboundSharedUserProfiles](../resources/outboundshareduserprofile.md).
+[!INCLUDE [rbac-cross-tenant-access-shared-user-profiles-apis-read](../includes/rbac-for-apis/rbac-cross-tenant-access-shared-user-profiles-apis-read.md)]
 
 ## HTTP request
 

@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.ReadWrite.All|
 
-For delegated scenarios, the account must be assigned the *Global Administrator* Azure AD role.
+[!INCLUDE [rbac-cross-tenant-access-shared-user-profiles-apis-write](../includes/rbac-for-apis/rbac-cross-tenant-access-shared-user-profiles-apis-write.md)]
 
 ## HTTP request
 

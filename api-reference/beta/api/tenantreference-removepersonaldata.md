@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not applicable|
 |Application|CrossTenantUserProfileSharing.ReadWrite.All|
 
-All users have `CrossTenantUserProfileSharing.ReadWrite` assigned to be able to create removal requests of their own personal data.
+A user can create a request to remove their own personal data when the app is granted the `CrossTenantUserProfileSharing.ReadWrite` delegated permission on their behalf.
 
-An account assigned with the Global Administrator role will be able to remove data for all [outboundSharedUserProfiles](../resources/outboundshareduserprofile.md).
+[!INCLUDE [rbac-cross-tenant-access-shared-user-profiles-apis-write](../includes/rbac-for-apis/rbac-cross-tenant-access-shared-user-profiles-apis-write.md)]
 
 ## HTTP request
 
