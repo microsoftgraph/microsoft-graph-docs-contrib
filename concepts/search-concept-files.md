@@ -458,39 +458,44 @@ Content-Type: application/json
 
 ### driveItem response
 
+```HTTP
+POST /search/query
+Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
-  "value": [
-    {
-      "searchTerms": [],
-      "hitsContainers": [
+    "value": [
         {
-          "hits": [
-            {
-              "hitId": "01SWVK7NZFPB6EAQPNVFDLA2TXYRKZYPEI",
-              "rank": 1,
-              "summary": "",
-              "resource": {
-                "@odata.type": "#microsoft.graph.driveItem",
-                "listItem": {
-                  "@odata.type": "#microsoft.graph.listItem",
-                  "fields": {
-                    "listId": "a6a27920-6750-4c20-9efe-33f0631124a0",
-                    "author": "John",
-                    "title": "The new Bing"
-                  },
-                  "id": "407c7825-ed41-46a9-b06a-77c4559c3c88"
+            "searchTerms": [],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "01YOWRGSD34TVVP25X7NAZAW3P2JRL7FWE",
+                            "rank": 1,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "fields": {
+                                        "listId": "3b6a49d3-6bea-4549-bed8-8b1c92a12345",
+                                        "author": "Robin",
+                                        "title": "Test Notebook"
+                                    },
+                                    "id": "57ebe47b-b7eb-41fb-905b-123452bf96c4"
+                                }
+                            }
+                        }
+                    ],
+                    "total": 371,
+                    "moreResultsAvailable": true
                 }
-              }
-            }
-          ],
-          "total": 37420104,
-          "moreResultsAvailable": true
+            ]
         }
-      ]
-    }
-  ]
+    ],
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)"
 }
+```
 
 ## Known limitations
 
