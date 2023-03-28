@@ -13,7 +13,7 @@ Webhooks may not be suitable for receiving change notifications in high throughp
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources across a large set of organizations.
 
-This article walks you through managing your Microsoft Graph subscription and receiving change notifications through Azure Event Hubs.
+The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through Azure Event Hubs.
 
 ## Using Azure Event Hubs to receive change notifications
 
@@ -21,7 +21,7 @@ This article walks you through managing your Microsoft Graph subscription and re
 Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK will relay the notifications to your application.
-- You don't need to reply to the [notification URL validation](webhooks.md#notification-endpoint-validation). You can ignore the validation message that you receive.
+- You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You'll need to provision an Azure Event Hub.
 - You'll need to provision an Azure Key Vault.
 
