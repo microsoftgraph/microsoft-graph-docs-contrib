@@ -1,6 +1,6 @@
 ---
 title: "List components"
-description: "Get the hostComponent resources from the components navigation property."
+description: "Get a list of hostComponent resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [hostComponent](../resources/security-hostcomponent.md) resources from the **components** navigation property.
+Get a list of [hostComponent](../resources/security-hostcomponent.md) resources.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [hostComponent](../resources/security-hostcomponent.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) objects in the response body.
 
 ## Examples
 
