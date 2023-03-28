@@ -21,8 +21,8 @@ Represents an Azure AD user from an external Azure AD tenant whose profile data 
 |:---|:---|:---|
 |[Get inboundSharedUserProfile](../api/inboundshareduserprofile-get.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md)|Read the properties of an inboundSharedUserProfile.|
 |[List inboundSharedUserProfile](../api/directory-list-inboundshareduserprofiles.md)|[inboundSharedUserProfile](../resources/inboundshareduserprofile.md) collection|Retrieve all inboundSharedUserProfiles in the directory.|
-|[Remove personal data](../api/inboundshareduserprofile-removepersonaldata.md)|None|Creates a request to remove all personal data associated with the inboundSharedUserProfile from the directory.|
-|[Export personal data](../api/inboundshareduserprofile-exportpersonaldata.md)|None|Creates a request to export all personal data associated with the inboundSharedUserProfile and stores it in the specified location. The storage location must be an Azure Storage Account.|
+|[Remove personal data](../api/inboundshareduserprofile-removepersonaldata.md)|None|Create a request to remove all personal data associated with the inboundSharedUserProfile from the directory.|
+|[Export personal data](../api/inboundshareduserprofile-exportpersonaldata.md)|None|Create a request to export all personal data associated with the inboundSharedUserProfile and stores it in the specified location. The storage location must be an Azure Storage Account.|
 
 ## Properties
 
