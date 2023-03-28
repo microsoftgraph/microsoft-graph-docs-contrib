@@ -1,5 +1,5 @@
 ---
-title: "Get settings"
+title: "Get sharepointSettings"
 description: "Get the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
@@ -8,9 +8,11 @@ doc_type: apiPageType
 ---
 
 # Get settings
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
-Get the tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the tenant-level [settings](../resources/sharepointSettings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [settings](../resources/tenantadmin-settings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [settings](../resources/sharepointSettings.md) object in the response body.
 
 ## Examples
 
@@ -65,22 +67,27 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/sharepoint/settings
+GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 ```
 
 # [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-at-tenant-level-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-at-tenant-level-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-settings-at-tenant-level-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-settings-at-tenant-level-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-settings-at-tenant-level-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,7 +100,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantAdmin.settings"
+  "@odata.type": "microsoft.graph.sharepointSettings"
 }
 -->
 ``` http
@@ -102,7 +109,7 @@ Content-Type: application/json
 
 {
     "value": {
-        "@odata.type": "#microsoft.graph.tenantAdmin.settings",
+        "@odata.type": "#microsoft.graph.sharepointSettings",
         "allowedDomainGuidsForSyncApp": [
             "bdd1ab9b-3fd0-4def-a761-ec8d7471732c", 
             "ad31vb6b-5zd0-7tyg-m231-kj8d6578432c"

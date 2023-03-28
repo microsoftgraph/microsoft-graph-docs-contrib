@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "imageTaggingChoice"
         },
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingCapabilities",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "sharingCapabilities"
         },
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingDomainRestrictionMode",
           "ChangeType": "Addition",
@@ -27,31 +27,137 @@
           "Target": "sharingDomainRestrictionMode"
         },
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/tenantAdmin-idleSessionSignOut?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-beta) resource type.",
           "Target": "idleSessionSignOut"
         },
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "settings",
-          "ChangeType": "Addition",
-          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantAdmin-settings?view=graph-rest-1.0) resource",
-          "Target": "settings"
-        },
-        {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
-          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantAdmin-sharepoint?view=graph-rest-1.0) resource",
+          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint?view=graph-rest-beta) resource",
           "Target": "sharepoint"
         },
         {
-          "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepointSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-beta) resource",
+          "Target": "sharepointSettings"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **idleSessionSignOut** resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **settings** resource type.",
+          "Target": "settings"
+        },
+        {
+          "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharepoint** resource type.",
+          "Target": "sharepoint"
+        }
+      ],
+      "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-27T08:55:31.6736123Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "idleSessionSignOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-1.0) resource type.",
+          "Target": "idleSessionSignOut"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint?view=graph-rest-1.0) resource",
+          "Target": "sharepoint"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepointSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-1.0) resource",
+          "Target": "sharepointSettings"
+        },
+        {
+          "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
           "ApiChange": "Resource",
           "ChangedApiName": "admin",
           "ChangeType": "Addition",
@@ -59,10 +165,10 @@
           "Target": "admin"
         }
       ],
-      "Id": "4959f30d-dcab-4262-833e-d0259e812a7c",
+      "Id": "6228d4bf-89fe-434a-b717-799f9c58550d",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-03-20T21:01:24.8037302Z",
+      "CreatedDateTime": "2023-03-27T08:55:31.6744546Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },

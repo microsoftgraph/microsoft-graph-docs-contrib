@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # idleSessionSignOut resource type
 
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Represents the idle session sign-out policy settings for SharePoint.
 
 The following is a JSON representation of the resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.tenantAdmin.idleSessionSignOut" } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.idleSessionSignOut" } -->
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-title: "settings resource type"
+title: "sharepointSettings resource type"
 description: "Represents the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
@@ -7,8 +7,10 @@ ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
-# settings resource type
-Namespace: microsoft.graph.tenantAdmin
+# sharepointSettings resource type
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the tenant-level settings for SharePoint and OneDrive.
 
@@ -17,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
-|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
+|[Get settings](../api/sharepointSettings-get.md)|[microsoft.graph.sharepointSettings](../resources/sharepointSettings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
+|[Update settings](../api/sharepointSettings-update.md) | [microsoft.graph.sharepointSettings](../resources/sharepointSettings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 | availableManagedPathsForSiteCreation               | String collection            | Collection of managed paths available for site creation. Read-only.                                                                                                                                            |
 | deletedUserPersonalSiteRetentionPeriodInDays       | Int32                        | The number of days for preserving a deleted user's OneDrive.                                                                                                                                                   |
 | excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                           |
-| idleSessionSignOut                                 | [tenantAdmin.idleSessionSignOut](../resources/tenantadmin-idlesessionsignout.md) | Specifies the idle session sign-out policies for the tenant.                                                                                               |
-| imageTaggingOption                                 | [tenantAdmin.imageTaggingChoice](../resources/tenantadmin-settings.md#imagetaggingchoice-values) | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                   |
+| idleSessionSignOut                                 | [microsoft.graph.idleSessionSignOut](../resources/idlesessionsignout.md) | Specifies the idle session sign-out policies for the tenant.                                                                                               |
+| imageTaggingOption                                 | [microsoft.graph.imageTaggingChoice](../resources/sharepointSettings.md#imagetaggingchoice-values) | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                   |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates whether comments are allowed on modern site pages in SharePoint.                                                                                                                                     |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates whether push notifications are enabled for OneDrive events.                                                                                                                                          |
 | isLegacyAuthProtocolsEnabled                       | Boolean                      | Indicates whether legacy authentication protocols are enabled for the tenant.                                                                                                                                  |
-| isLoopEnabled                                      | Boolean                      | Indicates whether if Fluid Framework is allowed on SharePoint sites.                                                                                                                                            |
+| isLoopEnabled                                      | Boolean                      | Indicates whetherif Fluid Framework is allowed on SharePoint sites.                                                                                                                                            |
 | isMacSyncAppEnabled                                | Boolean                      | Indicates whether files can be synced using the OneDrive sync app for Mac.                                                                                                                                     |
 | isRequireAcceptingUserToMatchInvitedUserEnabled    | Boolean                      | Indicates whether guests must sign in using the same account to which sharing invitations are sent.                                                                                                            |
 | isResharingByExternalUsersEnabled                  | Boolean                      | Indicates whether guests are allowed to reshare files, folders, and sites they don't own.                                                                                                                      |
@@ -47,8 +49,8 @@ Inherits from [entity](../resources/entity.md).
 | personalSiteDefaultStorageLimitInMB                | Int64                        | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                                           |
 | sharingAllowedDomainList                           | String collection            | Collection of email domains that are allowed for sharing outside the organization.                                                                                                                             |
 | sharingBlockedDomainList                           | String collection            | Collection of email domains that are blocked for sharing outside the organization.                                                                                                                             |
-| sharingCapability                                  | [tenantAdmin.sharingCapabilities](#sharingcapabilities-values)          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.    |
-| sharingDomainRestrictionMode                       | [tenantAdmin.sharingDomainRestrictionMode](#sharingdomainrestrictionmode-values) | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                    |
+| sharingCapability                                  | [microsoft.graph.sharingCapabilities](#sharingcapabilities-values)          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.    |
+| sharingDomainRestrictionMode                       | [microsoft.graph.sharingDomainRestrictionMode](#sharingdomainrestrictionmode-values) | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                    |
 | siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
 | tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites. For a list of possible values, see [SPRegionalSettings.TimeZones property](/dotnet/api/microsoft.sharepoint.spregionalsettings.timezones).                                      |
@@ -82,7 +84,7 @@ Inherits from [entity](../resources/entity.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantAdmin.settings",
+  "@odata.type": "microsoft.graph.sharepointSettings",
   "openType": "false"
 }
 -->
@@ -92,7 +94,7 @@ The following is a JSON representation of the resource.
     "availableManagedPathsForSiteCreation": ["string"],
     "deletedUserPersonalSiteRetentionPeriodInDays": "Int32",
     "excludedFileExtensionsForSyncApp": ["string"],
-    "idleSessionSignOut": "microsoft.graph.tenantAdmin.idleSessionSignOut",
+    "idleSessionSignOut": "microsoft.graph.idleSessionSignOut",
     "imageTaggingOption": "string",
     "isCommentingOnSitePagesEnabled": "boolean",
     "isFileActivityNotificationEnabled": "boolean",
@@ -127,6 +129,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "namespace": "microsoft.graph.tenantAdmin"
+  "namespace": "microsoft.graph"
 }
 -->

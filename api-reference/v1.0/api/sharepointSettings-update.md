@@ -1,5 +1,5 @@
 ---
-title: "Update settings"
+title: "Update sharepointSettings"
 description: "Update one or more tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
@@ -8,9 +8,9 @@ doc_type: apiPageType
 ---
 
 # Update settings
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
-Update one or more tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
+Update one or more tenant-level [settings](../resources/sharepointSettings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ PATCH /admin/sharepoint/settings
 | allowedDomainGuidsForSyncApp                       | GUID collection              | Collection of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                  |
 | deletedUserPersonalSiteRetentionPeriodInDays       | Int32                        | The number of days for preserving a deleted user's OneDrive.                                                                                                                                                   |
 | excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                           |
-| idleSessionSignOut                                 | [tenantAdmin.idleSessionSignOut](../resources/tenantadmin-idlesessionsignout.md)           | Specifies the idle session sign-out policies for the tenant.                                                                                     |
+| idleSessionSignOut                                 | [microsoft.graph.idleSessionSignOut](../resources/idlesessionsignout.md)           | Specifies the idle session sign-out policies for the tenant.                                                                                     |
 | imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                                                                                       |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates whether comments are allowed on modern site pages in SharePoint.                                                                                                                                     |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates whether push notifications are enabled for OneDrive events.                                                                                                                                          |
@@ -78,7 +78,7 @@ PATCH /admin/sharepoint/settings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [settings](../resources/tenantadmin-settings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [settings](../resources/sharepointSettings.md) object in the response body.
 
 ## Examples
 
@@ -135,7 +135,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantAdmin.settings"
+  "@odata.type": "microsoft.graph.sharepointSettings"
 }
 -->
 ``` http
@@ -143,7 +143,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.tenantAdmin.settings",
+    "@odata.type": "#microsoft.graph.sharepointSettings",
     "allowedDomainGuidsForSyncApp": [
         "bdd1ab9b-3fd0-4def-a761-ec8d7471732c", 
         "ad31vb6b-5zd0-7tyg-m231-kj8d6578432c"
