@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents artifacts observed by Microsoft Security services that do not have a supporting API. While the Microsoft Threat Intelligence APIs provide API support for many types of [artifacts](../resources/security-artifact.md), there are some data elements that either are not yet supported or cannot be supported. This **unclassifiedArtifact** extends artifacts, communicating what information has been gathered to allow for information analysis but does not yet have an API available for further details.
+Represents artifacts observed by Microsoft Security services that do not have a supporting API. While the threat intelligence APIs provide API support for many types of [artifacts](../resources/security-artifact.md), some data elements either are not yet supported or cannot be supported. The **unclassifiedArtifact** resource extends artifacts, communicating what information has been gathered to allow for information analysis. An API is not currently available to provide for further details.
 
 This resource is not an addressable. The data contained is meant to communicate available information where applicable.
 
@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The system-generated ID for this **unclassifiedArtifact**. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
-|kind|String|The kind for this **unclassifiedArtifact**, describing what this value means.|
+|kind|String|The kind for this **unclassifiedArtifact** resource, describing what this value means.|
 |value|String|The value for this **unclassifiedArtifact**.|
 
 ## Relationships
