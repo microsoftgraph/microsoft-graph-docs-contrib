@@ -1,7 +1,7 @@
 ---
 title: "customExtensionClientConfiguration resource type (deprecated)"
 description: "HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection. Only timeoutInMilliseconds is supported."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
