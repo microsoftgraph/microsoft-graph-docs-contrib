@@ -1,6 +1,6 @@
 ---
 title: "List cookies"
-description: "Get the hostCookie resources from the cookies navigation property."
+description: "Get a list of hostCookie resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [hostCookie](../resources/security-hostcookie.md) resources from the **cookies** navigation property.
+Get a list of [hostCookie](../resources/security-hostcookie.md) resources.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [hostCookie](../resources/security-hostcookie.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) objects in the response body.
 
 ## Examples
 
