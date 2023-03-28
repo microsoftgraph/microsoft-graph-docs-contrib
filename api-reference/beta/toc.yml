@@ -13487,7 +13487,7 @@ items:
             - name: List tenant references
               href: api/outboundshareduserprofile-list-tenants.md
             - name: Remove personal data
-              href: api/outboundshareduserprofile-removepersonaldata.md 
+              href: api/tenantreference-removepersonaldata.md 
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
