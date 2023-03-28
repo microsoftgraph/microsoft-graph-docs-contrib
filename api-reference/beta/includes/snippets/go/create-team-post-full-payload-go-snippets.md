@@ -124,10 +124,6 @@ messagingSettings.SetAllowTeamMentions(&allowTeamMentions)
 allowChannelMentions := true
 messagingSettings.SetAllowChannelMentions(&allowChannelMentions) 
 requestBody.SetMessagingSettings(messagingSettings)
-discoverySettings := graphmodels.NewTeamDiscoverySettings()
-showInTeamsSearchAndSuggestions := true
-discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
-requestBody.SetDiscoverySettings(discoverySettings)
 
 
 teamsAppInstallation := graphmodels.NewTeamsAppInstallation()
@@ -148,7 +144,11 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+discoverySettings := graphmodels.New()
+	showInTeamsSearchAndSuggestions := true
+discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
+	requestBody.SetDiscoverySettings(discoverySettings)
 }
 requestBody.SetAdditionalData(additionalData)
 
