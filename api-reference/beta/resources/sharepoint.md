@@ -22,7 +22,6 @@ The SharePoint API exposes three major resource types:
 * [Site](site.md) _(top-level object)_
 * [List](list.md)
 * [ListItem](listitem.md)
-* [settings](sharepointSettings.md)
 
 The following is an example of a listItem resource.
 
