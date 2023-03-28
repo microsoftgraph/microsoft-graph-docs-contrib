@@ -11,9 +11,9 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Threat Intelligence APIs delivers world-class threat intelligence to help protect your organization from modern cyber threats. Using Microsoft Threat Intelligence APIs you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
+Microsoft Graph threat intelligence APIs deliver world-class threat intelligence to help protect your organization from modern cyber threats. Using Microsoft Threat Intelligence APIs, you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
 
-Microsoft Threat Intelligence APIs (preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including indicators of compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
+Threat intelligence APIs allow you to operationalize intelligence found within the UI. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including indicators of compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Authorization
 
@@ -21,7 +21,7 @@ To call the threat intelligence APIs in Microsoft Graph, your app needs to acqui
 
 ## Common use cases
 
-The following describes some common use cases of the threat intelligence APIs.
+The following describes some common use cases for the threat intelligence APIs.
 
 | Use cases | REST resources | See also |
 |:----------|:---------------|:---------|
@@ -41,4 +41,3 @@ The threat intelligence APIs in Microsoft Graph can help protect your organizati
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
