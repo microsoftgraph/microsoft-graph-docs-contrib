@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationMethodsPolicy"
 description: "Update the properties of an authenticationMethodsPolicy object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -21,10 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
 
@@ -43,10 +40,14 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [authenticationMethodConfigurations](../resources/authenticationmethodconfiguration.md) object to prompt users to set up targeted authentication methods. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+|Property|Type|Description|
+|:---|:---|:---|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object in the response body.
 
 ## Examples
 
@@ -64,8 +65,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
-    "registrationEnforcement": {
+  "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
         "snoozeDurationInDays": 1,
         "state": "enabled",
@@ -77,22 +77,8 @@ Content-Type: application/json
                 "targetedAuthenticationMethod": "microsoftAuthenticator"
             }
         ]
-      }
-    },
-    "authenticationMethodConfigurations": [
-        {
-            "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-            "id": "Fido2",
-            "state": "disabled",
-            "isSelfServiceRegistrationAllowed": false,
-            "isAttestationEnforced": false,
-            "keyRestrictions": {
-                "isEnforced": false,
-                "enforcementType": "block",
-                "aaGuids": []
-            }
-        }
-    ]
+    }
+  }
 }
 ```
 
@@ -121,10 +107,34 @@ Content-Type: application/json
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationMethodsPolicy"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
 
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+  "id": "authenticationMethodsPolicy",
+  "displayName": "Authentication Methods Policy",
+  "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+  "lastModifiedDateTime": "2021-05-25T01:08:08.6712279Z",
+  "policyVersion": "1.4",
+  "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+    }
+  }
+}
 ```

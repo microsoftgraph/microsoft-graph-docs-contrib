@@ -52,7 +52,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcLaun
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcthis.getcloudpclaunchinfo"
+  "name": "cloudpc.getcloudpclaunchinfo"
 }
 -->
 ``` http
