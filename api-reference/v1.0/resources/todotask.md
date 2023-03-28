@@ -41,18 +41,21 @@ This resource supports the following:
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone that the task was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone that the task is to be finished.|
+|hasAttachments|Boolean|Indicates whether the task has attachments.|
 |id|String|Unique identifier for the task. By default, this value changes when the item is moved from one list to another.|
 |importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone for a reminder alert of the task to occur.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone at which the task is scheduled to start.|
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|attachments|[taskFileAttachment](../resources/taskfileattachment.md) collection| A collection of file attachments for the task.|
 |checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|

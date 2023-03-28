@@ -4,31 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Message
 {
 	Subject = "Did you see last night's game?",
 	Importance = Importance.Low,
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "They were <b>awesome</b>!"
+		Content = "They were <b>awesome</b>!",
 	},
-	ToRecipients = new List<Recipient>()
+	ToRecipients = new List<Recipient>
 	{
 		new Recipient
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AdeleV@contoso.onmicrosoft.com"
-			}
-		}
-	}
+				Address = "AdeleV@contoso.onmicrosoft.com",
+			},
+		},
+	},
 };
+var result = await graphClient.Me.Messages.PostAsync(requestBody);
 
-await graphClient.Me.Messages
-	.Request()
-	.AddAsync(message);
 
 ```

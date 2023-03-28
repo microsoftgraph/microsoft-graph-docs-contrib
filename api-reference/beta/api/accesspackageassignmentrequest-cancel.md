@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequest-cancel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequest-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,8 +84,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 ---
 
-
-
 ### Response
 The following is an example of the response.
 
@@ -91,6 +93,6 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Status OK
 ```
 

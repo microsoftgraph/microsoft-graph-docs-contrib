@@ -41,10 +41,15 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ## HTTP request
 
+Get details of your own password authentication method.
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /me/authentication/passwordMethods
+```
+
+Get details of your own or another user's password authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/passwordMethods
 ```
 
@@ -109,7 +114,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

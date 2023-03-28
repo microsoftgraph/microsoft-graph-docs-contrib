@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewB2xIdentityUserFlow()
 id := "UserFlowWithAPIConnector"
@@ -17,13 +17,13 @@ requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 apiConnectorConfiguration := graphmodels.NewUserFlowApiConnectorConfiguration()
 postFederationSignup := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"@odata.id" : "{apiConnectorId}", 
+	"odataId" : "{apiConnectorId}", 
 }
 postFederationSignup.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostFederationSignup(postFederationSignup)
 postAttributeCollection := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"@odata.id" : "{apiConnectorId}", 
+	"odataId" : "{apiConnectorId}", 
 }
 postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)

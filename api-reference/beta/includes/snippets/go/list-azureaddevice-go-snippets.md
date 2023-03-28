@@ -5,19 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "isof('microsoft.graph.windowsUpdates.azureADDevice')"
-
-requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
-	Filter: &requestFilter,
-}
-configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
-
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(context.Background(), configuration)
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").Get(context.Background(), nil)
 
 
 ```

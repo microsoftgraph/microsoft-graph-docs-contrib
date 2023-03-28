@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewSendMailPostRequestBody()
 message := graphmodels.NewMessage()
@@ -21,7 +21,7 @@ message.SetBody(body)
 
 recipient := graphmodels.NewRecipient()
 emailAddress := graphmodels.NewEmailAddress()
-address := "fannyd@contoso.onmicrosoft.com"
+address := "frannis@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 

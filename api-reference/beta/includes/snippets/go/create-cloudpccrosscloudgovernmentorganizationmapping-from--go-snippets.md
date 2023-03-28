@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"X-MS-CloudPC-USGovCloudTenantAADToken": "{token}",
-}
-configuration := &graphconfig.CrossCloudGovernmentOrganizationMappingRequestBuilderPostRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}")
+
+configuration := &graphconfig.DeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMappingRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewCrossCloudGovernmentOrganizationMappingPostRequestBody()

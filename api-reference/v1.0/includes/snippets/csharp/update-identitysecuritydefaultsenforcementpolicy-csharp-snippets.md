@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identitySecurityDefaultsEnforcementPolicy = new IdentitySecurityDefaultsEnforcementPolicy
+var requestBody = new IdentitySecurityDefaultsEnforcementPolicy
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Policies.IdentitySecurityDefaultsEnforcementPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.IdentitySecurityDefaultsEnforcementPolicy
-	.Request()
-	.UpdateAsync(identitySecurityDefaultsEnforcementPolicy);
 
 ```

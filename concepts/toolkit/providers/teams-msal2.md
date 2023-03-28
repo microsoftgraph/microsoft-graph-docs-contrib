@@ -27,7 +27,7 @@ The provider can be used in interactive client side auth mode or SSO mode.
 In client-side authentication (or interactive authentication), the user will be asked to authenticate when they first launch the app. The user will need to use a sign in button to initiate the authentication flow. This can be done on the client and does not require a backend service.
 
 ### SSO authentication
-To avoid asking the user to authenticate to the app, [Microsoft Teams tabs can also use SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) to automatically authenticate users. However, this process requires a backend service that is used to exchange the Microsoft Teams-provided token with an access token that can be used to access Microsoft Graph.
+To avoid asking the user to authenticate to the app, [Microsoft Teams tabs can also use SSO](/microsoftteams/platform/tabs/how-to/authentication/tab-sso-overview) to automatically authenticate users. However, this process requires a backend service that is used to exchange the Microsoft Teams-provided token with an access token that can be used to access Microsoft Graph.
 
 Teams MSAL2 provider supports SSO mode, which is enabled when `ssoUrl` \ `sso-url` are set to a backend service that is capable of exchanging the tokens. The backend service is required to expose an API (such as `api/token`) that will receive an authentication token from Microsoft Teams and use the `on-behalf-of` flow to exchange the token for an access token that can access Microsoft Graph. For a reference implementation of a node backend service, see the [Microsoft Teams Node SSO sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
 

@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReview = new AccessReview
+var requestBody = new AccessReview
 {
-	DisplayName = "TestReview new name"
+	DisplayName = "TestReview new name",
 };
+var result = await graphClient.AccessReviews["{accessReview-id}"].PatchAsync(requestBody);
 
-await graphClient.AccessReviews["{accessReview-id}"]
-	.Request()
-	.UpdateAsync(accessReview);
 
 ```

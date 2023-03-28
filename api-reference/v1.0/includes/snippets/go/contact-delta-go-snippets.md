@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Prefer": "odata.maxpagesize=2",
-}
-requestParameters := &graphconfig.DeltaRequestBuilderGetQueryParameters{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "odata.maxpagesize=2")
+
+requestParameters := &graphconfig.MeContactFolderItemContactsDelta()RequestBuilderGetQueryParameters{
 	Select: [] string {"displayName"},
 }
-configuration := &graphconfig.DeltaRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.MeContactFolderItemContactsDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

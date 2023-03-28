@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-}
-configuration := &graphconfig.TimeOffRequestBuilderPutRequestConfiguration{
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphconfig.TeamItemScheduleTimesOffItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewTimesOff()

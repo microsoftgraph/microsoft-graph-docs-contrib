@@ -2,7 +2,42 @@
   "changelog": [
     {
       "ChangeList": [
-        
+        {
+          "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
+          "Target": "task"
+        }
+     ],
+     "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+     "Cloud": "Prod",
+     "Version": "beta",
+     "CreatedDateTime": "2023-01-24T00:00:00.4220905Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "66538043-58e5-48fb-82d7-a603551c232f",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the **List** operation to [retrieve users that are in scope of execution conditions of a workflow](https://learn.microsoft.com/en-us/graph/api/workflow-list-executionscope?view=graph-rest-beta) in Lifecycle Workflows.",
+          "Target": "workflow"
+        }
+     ],
+     "Id": "66538043-58e5-48fb-82d7-a603551c232f",
+     "Cloud": "Prod",
+     "Version": "beta",
+     "CreatedDateTime": "2023-02-02T00:00:00.4220905Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Relationship",
@@ -90,14 +125,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta) resource and its associated methods.",
           "Target": "workflowVersion"
-        },
-        {
-          "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "usersProcessingSummary",
-          "ChangeType": "Addition",
-          "Description": "Added the [usersProcessingSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-usersProcessingSummary?view=graph-rest-beta) resource and its associated methods.",
-          "Target": "usersProcessingSummary"
         },
         {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
@@ -320,6 +347,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-31T00:00:00.8909237Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailSettings](https://learn.microsoft.com/en-us/graph/api/resources/emailSettings?view=graph-rest-beta) resource type.",
+          "Target": "emailSettings"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Property",
+          "ChangedApiName": "emailSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **emailSettings** property to the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-beta) resource.",
+          "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdPopTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Target": "azureAdPopTokenAuthentication"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizedApps** property to the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customtaskextensioncallbackconfiguration?view=graph-rest-beta) resource.",
+          "Target": "customTaskExtensionCallbackConfiguration"
+        }
+      ],
+      "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-21T09:13:11.1773353Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

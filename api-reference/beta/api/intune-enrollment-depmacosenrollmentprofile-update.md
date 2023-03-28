@@ -1,7 +1,7 @@
 ---
 title: "Update depMacOSEnrollmentProfile"
 description: "Update the properties of a depMacOSEnrollmentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -74,6 +74,7 @@ The following table shows the properties that are required when you create the [
 |screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |registrationDisabled|Boolean|Indicates if registration is disabled|
 |fileVaultDisabled|Boolean|Indicates if file vault is disabled|
 |iCloudDiagnosticsDisabled|Boolean|Indicates if iCloud Analytics screen is disabled|
@@ -83,20 +84,17 @@ The following table shows the properties that are required when you create the [
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
 |autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
+|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
+|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
 |dontAutoPopulatePrimaryAccountInfo|Boolean|Indicates whether Setup Assistant will auto populate the primary account information|
-|lockPrimaryAccountInfo|Boolean|Indicates whether the primary account information will be locked|
-|managedLocalUserShortName|Boolean|Indicates whether or not this is the short name of the local account to manage|
 |primaryAccountFullName|String|Indicates what the full name for the primary account is|
 |primaryAccountUserName|String|Indicates what the account name for the primary account is|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
-|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
-|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
-|isLocalPrimaryAccount|Boolean|Indicates whether the profile is a local account|
-|isPrimaryUser|Boolean|Indicates whether the profile is a primary user|
-|primaryUser|String|Indicates who the primary user of the profile is|
-|primaryUserFullName|String|Indicates who the primary user of the profile is|
-|prefillAccountInfo|Boolean|Indicates whether the user will prefill their account info|
 |enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
+|adminAccountUserName|String|Indicates what the user name for the admin account is|
+|adminAccountFullName|String|Indicates what the full name for the admin account is|
+|adminAccountPassword|String|Indicates what the password for the admin account is|
+|hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
+|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 
 
@@ -110,7 +108,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1944
+Content-length: 1951
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -139,6 +137,9 @@ Content-length: 1944
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "Enabled Skip Keys value"
+  ],
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -148,20 +149,17 @@ Content-length: 1944
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
   "autoUnlockWithWatchDisabled": true,
+  "skipPrimarySetupAccountCreation": true,
+  "setPrimarySetupAccountAsRegularUser": true,
   "dontAutoPopulatePrimaryAccountInfo": true,
-  "lockPrimaryAccountInfo": true,
-  "managedLocalUserShortName": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "requestRequiresNetworkTether": true,
-  "setPrimarySetupAccountAsRegularUser": true,
-  "skipPrimarySetupAccountCreation": true,
-  "isLocalPrimaryAccount": true,
-  "isPrimaryUser": true,
-  "primaryUser": "Primary User value",
-  "primaryUserFullName": "Primary User Full Name value",
-  "prefillAccountInfo": true,
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "Admin Account User Name value",
+  "adminAccountFullName": "Admin Account Full Name value",
+  "adminAccountPassword": "Admin Account Password value",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```
 
@@ -170,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 2000
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -200,6 +198,9 @@ Content-Length: 1993
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "Enabled Skip Keys value"
+  ],
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -209,25 +210,16 @@ Content-Length: 1993
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
   "autoUnlockWithWatchDisabled": true,
+  "skipPrimarySetupAccountCreation": true,
+  "setPrimarySetupAccountAsRegularUser": true,
   "dontAutoPopulatePrimaryAccountInfo": true,
-  "lockPrimaryAccountInfo": true,
-  "managedLocalUserShortName": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "requestRequiresNetworkTether": true,
-  "setPrimarySetupAccountAsRegularUser": true,
-  "skipPrimarySetupAccountCreation": true,
-  "isLocalPrimaryAccount": true,
-  "isPrimaryUser": true,
-  "primaryUser": "Primary User value",
-  "primaryUserFullName": "Primary User Full Name value",
-  "prefillAccountInfo": true,
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "Admin Account User Name value",
+  "adminAccountFullName": "Admin Account Full Name value",
+  "adminAccountPassword": "Admin Account Password value",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```
-
-
-
-
-
-

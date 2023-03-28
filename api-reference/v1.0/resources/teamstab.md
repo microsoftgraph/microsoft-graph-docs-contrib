@@ -30,10 +30,10 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
-|  displayName            |   string                  |  Name of the tab.     |
-|  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
+|  displayName            |   string                  |  Name of the tab.     |
+|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
+|  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
 
 ## Relationships
 

@@ -101,8 +101,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ---
 
-
-
 ### Response
 
 The following is an example of the response.

@@ -63,9 +63,10 @@ In the request body, provide a JSON object with the following parameters.
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
-| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
-| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
+| roles            | Collection(String)                              | Specifies the roles that are be granted to the recipients of the sharing invitation.                         |
+| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **xpirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
+| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
 
 ## Example
 

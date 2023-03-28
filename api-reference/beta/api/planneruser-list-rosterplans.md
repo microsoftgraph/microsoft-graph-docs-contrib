@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|Tasks.Read.All, Tasks.ReadWrite.All|
 
 ## HTTP request
 
@@ -91,8 +91,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

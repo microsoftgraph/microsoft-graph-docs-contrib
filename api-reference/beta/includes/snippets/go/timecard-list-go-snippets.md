@@ -5,17 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestTop := int32(2)
 requestFilter := "state eq 'clockedOut'"
 
-requestParameters := &graphconfig.TimeCardsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
 	Top: &requestTop,
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

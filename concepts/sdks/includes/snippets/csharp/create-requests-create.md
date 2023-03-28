@@ -9,6 +9,5 @@ var calendar = new Calendar
 };
 
 var newCalendar = await graphClient.Me.Calendars
-    .Request()
-    .AddAsync(calendar);
+    .PostAsync(calendar);
 ```

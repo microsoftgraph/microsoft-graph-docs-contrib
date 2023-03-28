@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Represents the impact of an alert event.
 
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
+
 ## Properties
 
 |Property|Type|Description|

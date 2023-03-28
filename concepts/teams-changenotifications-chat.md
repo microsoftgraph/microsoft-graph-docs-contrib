@@ -187,26 +187,29 @@ The following payload describes the information sent in the request for notifica
 
 ```json
 {
-	"subscriptionId": "8d85051d-779d-45bc-be92-e433f0a5d8ac",
-	"changeType": "Created",
-	"tenantId": "<<--TenantForWhichNotificationWasSent-->>",
-	"clientState": "<<--SpecifiedClientState-->>",
-	"subscriptionExpirationDateTime": "2021-06-03T10:26:09.8959595+00:00",
-	"resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')",
-	"resourceData": {
-		"id": "19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
-		"@odata.type": "#microsoft.graph.chat",
-		"@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')"
-	}
+  "subscriptionId": "8d85051d-779d-45bc-be92-e433f0a5d8ac",
+  "changeType": "Created",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "clientState": "<<--SpecifiedClientState-->>",
+  "subscriptionExpirationDateTime": "2021-06-03T10:26:09.8959595+00:00",
+  "resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')",
+  "resourceData": {
+    "id": "19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+    "@odata.type": "#microsoft.graph.chat",
+    "@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')"
+  }
 }
 ```
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat details. GET calls will always return the current state of the chat details. If the chat details were updated between when the notification is sent and when the chat details were retrieved, the operation will return the updated chat details.
 
 ## See also
+
 - [Microsoft Graph change notifications](webhooks.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
+- [Change notifications team or channel C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification-team-channel/csharp)
+- [Change notifications team or channel Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-change-notification-team-channel/nodejs)

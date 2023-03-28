@@ -11,8 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
-> **Note**: While creating a channel, you can only add one member per shared channel; however, you can add up to 200 members per private channel.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body.  When you create a channel, the maximum length of the channel's `displayName` is 50 characters. This is the name that appears to the user in Microsoft Teams.
+
+If you're creating a private channel, you can add a maximum of 200 members.
+
+> [!NOTE]
+> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
 
 ## Permissions
 
@@ -104,8 +108,6 @@ Content-type: application/json
 
 ---
 
-
-
 #### Response
 
 The following is an example of the response.
@@ -188,9 +190,6 @@ Content-type: application/json
 
 ---
 
-
-
-
 #### Response
 
 The following is an example of the response.
@@ -268,8 +267,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -359,10 +356,6 @@ Content-type: application/json
 
 ---
 
-
-
----
-
 #### Response
 
 The following is an example of the response.
@@ -449,7 +442,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
