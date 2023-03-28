@@ -1,6 +1,6 @@
 ---
 title: "List indicators"
-description: "Get the articleIndicator resources from the indicators navigation property."
+description: "Get a list of articleIndicator objects that represent indicators of threat or compromise related to the contents of an article."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent ndicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
+Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
 ## Permissions
 
