@@ -19,7 +19,7 @@ Represents settings and preferences for to the sign-in experience of a user.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system is enabled.|
+|isSystemPreferredAuthenticationMethodEnabled|Boolean|Indicates whether the credential preferences of the system are enabled.|
 
 ## Relationships
 
