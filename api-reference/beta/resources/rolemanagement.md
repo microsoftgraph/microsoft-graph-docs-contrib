@@ -20,7 +20,7 @@ The unified role management API currently supports the following RBAC providers 
 - device management (Intune)
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
-- Exchange
+- Exchange Online
  
 For more information, see: 
 * [Roles in Microsoft 365, including Azure AD, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 

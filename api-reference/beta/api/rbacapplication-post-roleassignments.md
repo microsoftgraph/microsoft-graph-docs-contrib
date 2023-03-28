@@ -35,6 +35,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+### For an Exchange Online provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 
 Create a role assignment for the directory provider:
@@ -371,6 +379,83 @@ Content-type: application/json
     "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
     "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
     "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+### Example 5: Create a role assignment for Exchange Online provider with administrative unit scope
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece",
+    "roleDefinitionId": "f66ab1ee-3cac-4d03-8a64-dadc56e563f8",
+    "directoryScopeId": "/AdministrativeUnits/8b532c7a-4d3e-4e99-8ffa-2dfec92c62eb",
+    "appScopeId": null
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment3-from-rbacapplication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment3-from-rbacapplication-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment3-from-rbacapplication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment3-from-rbacapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment3-from-rbacapplication-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignment3-from-rbacapplication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/exchange/roleAssignments/$entity",
+    "id": "c5dd3ab8-374f-42e9-b163-eb7c54b53755",
+    "principalId": "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece",
+    "roleDefinitionId": "f66ab1ee-3cac-4d03-8a64-dadc56e563f8",
+    "directoryScopeId": "/AdministrativeUnits/8b532c7a-4d3e-4e99-8ffa-2dfec92c62eb",
+    "appScopeId": null
 }
 ```
 

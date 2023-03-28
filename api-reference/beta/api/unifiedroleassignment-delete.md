@@ -35,6 +35,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+### For an Exchange Online provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 
 Remove a role assignment from a directory provider:

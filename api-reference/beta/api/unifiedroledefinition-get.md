@@ -20,6 +20,7 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
+- Exchange Online
 
 ## Permissions
 
@@ -56,6 +57,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+
+### For an Exchange Online provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 
