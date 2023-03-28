@@ -1,6 +1,5 @@
 ---
-title: "Get host"
-description: "Read the properties and relationships of a host object."
+title: "Get host"description: "Read the properties and relationships of a host object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,10 +12,10 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.host](../resources/security-host.md) object. The [host](../resources/security-host.md) resource is the abstract base type that returns an implementation. Currently-supported implementations are:
+Read the properties and relationships of a [most](../resources/security-host.md) object. The [host](../resources/security-host.md) resource is the abstract base type that returns an implementation. A host can be of one of the following types:
 
-* [microsoft.graph.security.hostname](../resources/security-hostname.md)
-* [microsoft.graph.security.ipAddress](../resources/security-ipaddress.md)
+* [hostname](../resources/security-hostname.md)
+* [ipAddress](../resources/security-ipaddress.md)
 
 ## Permissions
 
@@ -96,3 +95,9 @@ Content-Type: application/json
   }
 }
 ```
+"registrar": "MarkMonitor Inc.",
+    "registrant": "Microsoft Corporation"
+  }
+}
+```
+

@@ -13,14 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is (or has been) addressable over the internet and Microsoft Threat Intelligence has knowledge.
+Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Threat Intelligence has detected.
 
 This is an abstract type. Implementations of this type include:
 
-* [microsoft.graph.security.hostname](../resources/security-hostname.md)
-* [microsoft.graph.security.ipAddress](../resources/security-ipaddress.md)
+* [hostname](../resources/security-hostname.md)
+* [ipAddress](../resources/security-ipaddress.md)
 
-Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
+Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 
