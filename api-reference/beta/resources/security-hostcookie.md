@@ -17,7 +17,7 @@ Represents a cookie, which is a small piece of data sent from a server to a clie
 
 The **hostCookie** is associated with a [host](../resources/security-host.md) resource.
 
-Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
+Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 

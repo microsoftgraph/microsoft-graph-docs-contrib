@@ -1,6 +1,6 @@
 ---
 title: "hostTracker resource type"
-description: "Trackers are unique codes or values found within web pages and often used to track user interaction."
+description: "Represents a unique code or value found within web pages and often used to track user interaction."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Trackers are unique codes or values found within web pages and often used to track user interaction. These codes can be used to correlate a disparate group of websites to a central entity. Often, actors copy the source code of a victim’s website they are looking to impersonate for a phishing campaign. Seldomly, actors take the time to remove these IDs that allow users to identify these fraudulent sites using the trackers data set of Microsoft. Actors might also deploy tracker IDs to see how successful their cyber-attack campaigns are. This is similar to marketers when they leverage SEO IDs, such as a Google Analytics Tracker ID, to track the success of their marketing campaign.
+Represents a unique code or value found within web pages and often used to track user interaction. These codes can be used to correlate a disparate group of websites to a central entity. Often, actors copy the source code of a victim’s website they want to impersonate for a phishing campaign. Seldomly, actors take the time to remove these IDs. Actors might also deploy tracker IDs to see how successful their cyberattack campaigns are. This is similar to marketers using SEO IDs, such as a Google Analytics Tracker ID, to track the success of their marketing campaign.
 
-The **hostTracker** entity has specifically been observed against the related [microsoft.graph.security.host](../resources/security-host.md).
+The **hostTracker** is associated with a [host](../resources/security-host.md) resource.
 
-Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
+Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 
