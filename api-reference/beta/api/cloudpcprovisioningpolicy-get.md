@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -125,6 +124,7 @@ Content-Type: application/json
         "domainJoinType": "hybridAzureADJoin",
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
     },
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -133,7 +133,8 @@ Content-Type: application/json
     "windowsSettings": {
       "language": "en-US"
     },
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -180,7 +181,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -206,6 +206,7 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
@@ -224,7 +225,8 @@ Content-Type: application/json
           }
       }
     ],
-    "managedBy": "windows365"
+    "managedBy": "windows365",
+    "provisioningType": "dedicated"
 }
 ```
 
@@ -274,7 +276,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -302,6 +303,7 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "enableSingleSignOn": true,
     "gracePeriodInHours": 2,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "myCustomImage",
@@ -312,6 +314,7 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "provisioningType": "dedicated"
 }
 ```

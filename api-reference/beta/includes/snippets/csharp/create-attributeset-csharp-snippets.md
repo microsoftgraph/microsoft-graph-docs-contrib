@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attributeSet = new AttributeSet
+var requestBody = new AttributeSet
 {
 	Id = "Engineering",
 	Description = "Attributes for engineering team",
-	MaxAttributesPerSet = 25
+	MaxAttributesPerSet = 25,
 };
+var result = await graphClient.Directory.AttributeSets.PostAsync(requestBody);
 
-await graphClient.Directory.AttributeSets
-	.Request()
-	.AddAsync(attributeSet);
 
 ```

@@ -102,7 +102,6 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ap
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -153,7 +152,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -203,7 +201,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

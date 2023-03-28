@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var projectParticipation = new ProjectParticipation
+var requestBody = new ProjectParticipation
 {
 	AllowedAudiences = AllowedAudiences.Organization,
 	Client = new CompanyDetail
 	{
 		Department = "Corporate Marketing",
-		WebUrl = "https://www.contoso.com"
-	}
+		WebUrl = "https://www.contoso.com",
+	},
 };
+var result = await graphClient.Me.Profile.Projects["{projectParticipation-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.Projects["{projectParticipation-id}"]
-	.Request()
-	.UpdateAsync(projectParticipation);
 
 ```

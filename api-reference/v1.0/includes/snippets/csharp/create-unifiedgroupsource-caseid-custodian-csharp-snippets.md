@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedGroupSource = new Microsoft.Graph.Security.UnifiedGroupSource
+var requestBody = new Microsoft.Graph.Beta.Models.Security.UnifiedGroupSource
 {
 	Group = new Group
 	{
-		Mail = "SOCTeam@M365x809305.onmicrosoft.com"
+		Mail = "SOCTeam@M365x809305.onmicrosoft.com",
 	},
-	IncludedSources = Microsoft.Graph.Security.SourceType.Mailbox | Microsoft.Graph.Security.SourceType.Site
+	IncludedSources = Microsoft.Graph.Beta.Models.Security.SourceType.Mailbox | Microsoft.Graph.Beta.Models.Security.SourceType.Site,
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].UnifiedGroupSources.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Custodians["{security.ediscoveryCustodian-id}"].UnifiedGroupSources
-	.Request()
-	.AddAsync(unifiedGroupSource);
 
 ```

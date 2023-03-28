@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
+GET /onPremisesPublishingProfiles/{publishingType}/publishedResources
 ```
 
 ## Optional query parameters
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{publishingTyp
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

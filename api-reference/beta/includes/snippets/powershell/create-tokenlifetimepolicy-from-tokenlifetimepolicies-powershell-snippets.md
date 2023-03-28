@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	Definition = @(
-		"definition-value"
+		"{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}"
 	)
-	DisplayName = "displayName-value"
+	DisplayName = "Contoso token lifetime policy"
 	IsOrganizationDefault = $true
 }
 

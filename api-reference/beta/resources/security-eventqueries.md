@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.eventQuery",
+  "@odata.type": "#microsoft.graph.security.eventQueries",
   "queryType": "String",
   "query": "String"
 }

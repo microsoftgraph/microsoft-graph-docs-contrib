@@ -91,8 +91,6 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 ---
 
-
-
 ### Response
 <!-- {
   "blockType": "response",

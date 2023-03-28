@@ -149,7 +149,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f1
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -231,10 +230,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 #### Response
 
@@ -340,10 +335,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 #### Response
 
@@ -514,8 +505,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/d403
 
 ---
 
-
-
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -598,8 +587,6 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

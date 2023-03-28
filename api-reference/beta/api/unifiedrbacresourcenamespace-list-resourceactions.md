@@ -95,8 +95,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 ---
 
-
-
 #### Response
 >**Note:** The response object shown here has been shortened for readability.
 <!-- {
@@ -180,8 +178,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 <!-- {
