@@ -39,12 +39,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own Microsoft Authenticator authentication methods.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods
+```
+
+Get details of your own or another user's Microsoft Authenticator authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 ```
 

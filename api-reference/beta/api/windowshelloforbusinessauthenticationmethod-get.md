@@ -41,12 +41,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Read details of your own Windows Hello For Business authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
+```
+
+Read details of your own or another user's Windows Hello For Business authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
