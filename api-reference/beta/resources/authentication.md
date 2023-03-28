@@ -19,14 +19,16 @@ Inherits from [entity](entity.md).
 
 ## Methods
 
-None.
+| Method | Return Type | Description |
+|:------ |:----------- |:----------- |
+| [Get authentication](../api/authentication-get.md) | [authentication](../resources/authentication.md) | Get the dynamically-chosen **authentication** method prompted to a user. |
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the **authentication**.|
-|signInPreferences|[signInPreferences](../resources/signinpreferences.md)||
+|signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for to the sign-in experience of a user.|
 
 ## Relationships
 

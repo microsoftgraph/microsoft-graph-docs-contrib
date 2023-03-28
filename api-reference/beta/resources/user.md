@@ -43,6 +43,8 @@ This resource supports:
 | [List appRoleAssignedResources](../api/user-list-approleassignedresources.md) | [servicePrincipal](serviceprincipal.md) collection | Get the apps that a user has an app role assignment either directly or through group membership. |
 | [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
 | [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from a user. |
+| **Authentication**|||
+| [Get authentication](../api/authentication-get.md) | [authentication](../resources/authentication.md) | Get the dynamically-chosen **authentication** method prompted to a user. |
 | **Calendar** |||
 | [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
 | [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
