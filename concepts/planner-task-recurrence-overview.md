@@ -1,6 +1,6 @@
 ---
 title: "Configuring task recurrence in Planner (preview)"
-description: "Learn how to use recurrence with Planner tasks to automate creation of repetitive tasks."
+description: "Learn how to use recurrence with Planner tasks to automate the creation of repetitive tasks."
 author: "DavidMoksha"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Configuring task recurrence in Planner (preview)
 
-This article describes how to use recurrence with [Planner tasks](/graph/api/resources/plannertask) to automate creation of repetitive tasks. The **recurrence** property on a Planner task allows users to automate creation of future tasks, representing a real-life task that needs to be completed repetitively.
+This article describes how to use recurrence with [Planner tasks](/graph/api/resources/plannertask) to automate the creation of repetitive tasks. The **recurrence** property on a Planner task allows users to automate the creation of future tasks that represent real-life tasks that need to be completed repetitively.
 
 ## User scenarios
 
@@ -19,15 +19,13 @@ The following scenarios are supported:
 
 - Edit the recurrence schedule for an existing recurring series.
 
-- Continue a series:
-  - Marking a task complete results in a new task being generated to continue the series, according to the recurrence schedule.
-  - If the active task in a series is deleted, the user should be prompted to determine whether they want to continue the series or terminate the series. If the client doesn't know about recurrence and doesn't offer a prompt, the series should continue. It shouldn't be terminated accidentally.
+- Continue a series. Marking a task complete results in the generation of a new task to continue the series, according to the recurrence schedule. If the active task in a series is deleted, the user should be prompted to determine whether they want to continue or terminate the series. If the client doesn't know about recurrence and doesn't offer a prompt, the series should continue. It shouldn't be terminated accidentally.
 
-- Terminate a series:
-  - By deleting the active task in the series (and choosing **yes** to terminate the series)
-  - By terminating the series without deleting the active task
+- Terminate a series by:
+  - Deleting the active task in the series (and choosing **yes** to terminate the series).
+  - Terminating the series without deleting the active task.
 
-- Revive a series: If recurrence was terminated via one of the previously described options, it should be possible to reinstate the series.
+- Revive a series. If recurrence was terminated, it should be possible to reinstate the series.
 
 ### Conceptual differences between recurring meetings and recurring tasks
 
