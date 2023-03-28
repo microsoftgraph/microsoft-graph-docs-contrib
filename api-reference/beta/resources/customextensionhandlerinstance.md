@@ -1,5 +1,5 @@
 ---
-title: "customExtensionHandlerInstance resource type"
+title: "customExtensionHandlerInstance resource type (deprecated)"
 description: "Used to record the status a custom workflow extension instance being run on an access package assignment request."
 author: "currenmehta"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# customExtensionHandlerInstance resource type
+# customExtensionHandlerInstance resource type (deprecated)
 
 Namespace: microsoft.graph
 
