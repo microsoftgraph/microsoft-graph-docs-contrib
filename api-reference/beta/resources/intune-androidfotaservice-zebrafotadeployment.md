@@ -87,6 +87,7 @@ Here is a JSON representation of the resource.
   "deploymentStatus": {
     "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
     "state": "String",
+    "errorCode": "String",
     "totalDevices": 1024,
     "totalCreated": 1024,
     "totalScheduled": 1024,

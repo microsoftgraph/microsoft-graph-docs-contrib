@@ -36,12 +36,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+Get details of your own temporary access pass (TAP) authentication method.
+<!-- { "blockType": "ignored" } -->
+```http
 GET /me/authentication/temporaryAccessPassMethods
+```
+
+Get details of your own or another user's temporary access pass (TAP) authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 
