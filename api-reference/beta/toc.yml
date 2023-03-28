@@ -2670,6 +2670,8 @@ items:
               href: api/intune-apps-macosvppappassignedlicense-delete.md
             - name: Update
               href: api/intune-apps-macosvppappassignedlicense-update.md
+          - name: macOS VPP app assignment settings
+            href: resources/intune-apps-macosvppappassignmentsettings.md
           - name: macOS VPP app revoke licenses action result
             href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
           - name: Managed android LOB app
@@ -3224,6 +3226,8 @@ items:
               href: api/intune-apps-windowsappx-delete.md
             - name: Update
               href: api/intune-apps-windowsappx-update.md
+          - name: Windows AppX app assignment settings
+            href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture
             href: resources/intune-apps-windowsarchitecture.md
           - name: Windows device type
@@ -3362,8 +3366,6 @@ items:
               href: api/intune-apps-windowsuniversalappx-delete.md
             - name: Update
               href: api/intune-apps-windowsuniversalappx-update.md
-          - name: Windows universal AppX app assignment settings
-            href: resources/intune-apps-windowsuniversalappxappassignmentsettings.md
           - name: Windows universal AppX contained app
             href: resources/intune-apps-windowsuniversalappxcontainedapp.md
             items:
@@ -4333,6 +4335,8 @@ items:
               href: api/intune-deviceconfig-androidwificonfiguration-update.md
           - name: Android Wi-Fi security type
             href: resources/intune-deviceconfig-androidwifisecuritytype.md
+          - name: Android work profile account use
+            href: resources/intune-deviceconfig-androidworkprofileaccountuse.md
           - name: Android work profile certificate profile base
             href: resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md
             items:
@@ -6115,6 +6119,8 @@ items:
               href: api/intune-deviceconfig-macospkcscertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-macospkcscertificateprofile-update.md
+          - name: macOS priority
+            href: resources/intune-deviceconfig-macospriority.md
           - name: macOS privacy access control item
             href: resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md
           - name: macOS process identifier type
@@ -6622,6 +6628,8 @@ items:
             href: resources/intune-deviceconfig-vpnservercertificatetype.md
           - name: VPN service exception action
             href: resources/intune-deviceconfig-vpnserviceexceptionaction.md
+          - name: VPN traffic direction
+            href: resources/intune-deviceconfig-vpntrafficdirection.md
           - name: VPN traffic rule
             href: resources/intune-deviceconfig-vpntrafficrule.md
           - name: VPN traffic rule app type
@@ -10542,8 +10550,6 @@ items:
             href: resources/intune-shared-win32lobappnotification.md
           - name: Win32 LOB app restart settings
             href: resources/intune-shared-win32lobapprestartsettings.md
-          - name: Windows AppX app assignment settings
-            href: resources/intune-shared-windowsappxappassignmentsettings.md
           - name: Windows autopilot deployment profile
             href: resources/intune-shared-windowsautopilotdeploymentprofile.md
             items:
@@ -10566,6 +10572,8 @@ items:
               href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
             - name: Update
               href: api/intune-shared-windowsdomainjoinconfiguration-update.md
+          - name: Windows universal AppX app assignment settings
+            href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
           - name: Windows update state
             href: resources/intune-shared-windowsupdatestate.md
             items:
