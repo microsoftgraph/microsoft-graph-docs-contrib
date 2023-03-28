@@ -84,7 +84,6 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 ---
 
-
 ##### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -118,7 +117,7 @@ HTTP/1.1 204 No Content
   "name": "participant-invite-nonactive-participant"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -167,7 +166,6 @@ Content-Length: 464
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -215,7 +213,7 @@ Content-Type: application/json
   "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
 ```
 
 # [C#](#tab/csharp)
@@ -243,7 +241,6 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
-Only the student assigned to the submission can perform this operation.
+Only teachers and students can perform this operation.
 
-The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
 
 To create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
 
@@ -110,7 +110,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 
@@ -205,7 +204,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -298,7 +296,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 
@@ -393,7 +390,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -487,7 +483,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response. 
 
@@ -580,7 +575,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 

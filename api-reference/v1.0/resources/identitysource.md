@@ -10,8 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) and [externalDomainFederation](externaldomainfederation.md), are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
+The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md), [externalDomainFederation](externaldomainfederation.md) and [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md) are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
 
 ## Properties
 

@@ -3,7 +3,7 @@ title: "Delete tenantTag"
 description: "Delete a tenantTag object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -86,8 +86,6 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

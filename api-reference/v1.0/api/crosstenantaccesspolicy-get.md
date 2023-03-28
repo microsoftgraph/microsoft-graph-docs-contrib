@@ -52,7 +52,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -90,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -108,7 +106,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
     "displayName": "CrossTenantAccessPolicy",
-    "definition": "Cross tenant access policy..."
+    "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
   }
 }
 ```

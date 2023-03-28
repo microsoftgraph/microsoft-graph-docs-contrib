@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 ---
 
-
 ### Response
 The following example shows the response.
 
@@ -152,7 +151,8 @@ Content-type: application/json
             "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616989750004",
@@ -191,7 +191,8 @@ Content-type: application/json
             "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616989747416",
@@ -230,7 +231,8 @@ Content-type: application/json
             "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         }
     ]
 }

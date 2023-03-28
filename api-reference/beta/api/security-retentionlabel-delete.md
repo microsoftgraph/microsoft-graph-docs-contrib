@@ -3,7 +3,7 @@ title: "Delete retentionLabel"
 description: "Deletes a retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -85,8 +85,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retenti
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >

@@ -73,7 +73,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_informationprotectionpolicysetting"
+  "name": "get_informationprotectionpolicysetting",
+  "sampleKeys": ["bob@contoso.com"]
 }
 -->
 ``` http
@@ -101,8 +102,6 @@ GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationP
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 

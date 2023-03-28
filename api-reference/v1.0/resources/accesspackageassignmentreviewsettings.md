@@ -36,24 +36,25 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentReviewSettings",
+  "expirationBehavior": "String",
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
+  ],
   "isEnabled": "Boolean",
-  "schedule": {
-    "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  },
+  "isRecommendationEnabled": "Boolean",
+  "isReviewerJustificationRequired": "Boolean",
   "isSelfReview": "Boolean",
   "primaryReviewers": [
     {
       "@odata.type": "microsoft.graph.singleUser"
     }
   ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
-  "expirationBehavior": "String",
-  "isRecommendationEnabled": "Boolean",
-  "isReviewerJustificationRequired": "Boolean"
+  "schedule": {
+    "@odata.type": "microsoft.graph.entitlementManagementSchedule"
+  }
+  
 }
 ```
 

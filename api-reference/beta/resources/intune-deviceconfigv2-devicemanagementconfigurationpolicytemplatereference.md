@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationPolicyTemplateReference resource type"
 description: "Policy template reference information"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -21,7 +21,7 @@ Policy template reference information
 |Property|Type|Description|
 |:---|:---|:---|
 |templateId|String|Template id|
-|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Template Family of the referenced Template. This property is read-only. Possible values are: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `baseline`.|
+|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Template Family of the referenced Template. This property is read-only. Possible values are: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `endpointSecurityEndpointPrivilegeManagement`, `enrollmentConfiguration`, `appQuietTime`, `baseline`, `unknownFutureValue`, `deviceConfigurationScripts`.|
 |templateDisplayName|String|Template Display Name of the referenced template. This property is read-only.|
 |templateDisplayVersion|String|Template Display Version of the referenced Template. This property is read-only.|
 
@@ -44,9 +44,3 @@ Here is a JSON representation of the resource.
   "templateDisplayVersion": "String"
 }
 ```
-
-
-
-
-
-

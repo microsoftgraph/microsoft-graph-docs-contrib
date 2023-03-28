@@ -1,5 +1,5 @@
 ---
-title: "List taskReports (for a lifecycle workflow)"
+title: "List taskReports"
 description: "Get a list of the taskReport objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List taskReports (for a lifecycle workflow)
+# List taskReports
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -25,11 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
 
 ## HTTP request
 
@@ -57,15 +53,16 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [taskReport](../resources/identitygovernance-taskreport.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) objects in the response body.
 
 ## Examples
 
-### Request
+### Example 1: List the task reports for a workflow
+
+#### Request
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_taskreport"
@@ -75,34 +72,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/taskReports
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskreport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskreport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskreport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskreport-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskreport-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-taskreport-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### Response
+#### Response
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -167,6 +137,66 @@ Content-Type: application/json
             "startedDateTime": "2022-08-25T00:15:05.2771389Z",
             "completedDateTime": "2022-08-25T00:15:11.8535443Z",
             "lastUpdatedDateTime": "2022-08-25T00:20:05.9002556Z"
+        }
+    ]
+}
+```
+
+### Example 2: List the task reports for a workflow
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_list_taskreport_select"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/taskReports?$select=id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityGovernance.taskReport)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('15239232-66ed-445b-8292-2f5bbb2eb833')/taskReports(id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults)",
+    "value": [
+        {
+            "id": "443c7611-45df-48c0-bf5e-dc6068c402f0",
+            "processingStatus": "completed",
+            "successfulUsersCount": 1,
+            "failedUsersCount": 0,
+            "unprocessedUsersCount": 0,
+            "totalUsersCount": 1
+        },
+        {
+            "id": "92bbb4a0-3815-48a7-8f83-f5dadc4f6793",
+            "processingStatus": "completed",
+            "successfulUsersCount": 1,
+            "failedUsersCount": 0,
+            "unprocessedUsersCount": 0,
+            "totalUsersCount": 1
+        },
+        {
+            "id": "d64d2b78-3823-4ec8-b6d3-efd3d41a5e98",
+            "processingStatus": "completed",
+            "successfulUsersCount": 1,
+            "failedUsersCount": 0,
+            "unprocessedUsersCount": 0,
+            "totalUsersCount": 1
         }
     ]
 }

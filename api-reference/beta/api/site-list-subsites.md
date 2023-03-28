@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

@@ -53,6 +53,13 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
+### contentExperienceType values
+|Member
+|:--------------
+| search
+| compliance
+| unknownFutureValue
+
 ### externalActivityType values
 
 |Member
@@ -63,7 +70,6 @@ Namespace: microsoft.graph.externalConnectors
 |commented
 |unknownFutureValue
 
-
 ### externalGroupMemberType values
 
 | Member
@@ -71,7 +77,6 @@ Namespace: microsoft.graph.externalConnectors
 | user
 | group
 | unknownFutureValue
-
 
 ### externalItemContentType values
 

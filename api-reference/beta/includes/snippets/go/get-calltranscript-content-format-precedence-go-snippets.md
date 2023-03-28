@@ -5,18 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-headers := map[string]string{
-	"Accept": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-}
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept", "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+
 
 requestFormat := "text/vtt"
 
-requestParameters := &graphconfig.ContentRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemOnlineMeetingItemTranscriptItemContentRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }

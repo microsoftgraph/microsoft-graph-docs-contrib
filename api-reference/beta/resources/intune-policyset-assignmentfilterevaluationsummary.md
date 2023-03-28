@@ -1,7 +1,7 @@
 ---
 title: "assignmentFilterEvaluationSummary resource type"
 description: "Represent result summary for assignment filter evaluation"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ Represent result summary for assignment filter evaluation
 |assignmentFilterId|String|Unique identifier for the assignment filter object|
 |assignmentFilterLastModifiedDateTime|DateTimeOffset|The time the assignment filter was last modified.|
 |assignmentFilterDisplayName|String|The admin defined name for assignment filter.|
-|assignmentFilterPlatform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|The platform for which this assignment filter is created. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|assignmentFilterPlatform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|The platform for which this assignment filter is created. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Assignment filter evaluation result. Possible values are: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
 |evaluationDateTime|DateTimeOffset|The time assignment filter was evaluated.|
 |assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Indicate filter type either include or exclude. Possible values are: `none`, `include`, `exclude`.|
@@ -58,9 +58,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

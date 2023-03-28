@@ -27,11 +27,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 > A service principal can retrieve its own application and service principal details without being granted any application permissions.
+> The *Application.ReadWrite.OwnedBy* permission allows an app to call `GET /applications` and `GET /servicePrincipals` to list all applications and service principals in the tenant. This scope of access has been allowed for the permission.
+
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}
+GET /servicePrincipals(appId='{appId}')
 ```
 
 ## Optional query parameters
@@ -94,7 +99,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -102,7 +107,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here is an example of the response.
@@ -304,8 +308,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 

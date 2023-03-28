@@ -55,7 +55,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
+  "sampleKeys": ["c42f493f-42b4-4e7d-8148-af894cbc518b", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "delete_educationassignment_1"
 }-->
 
@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/c42f493f-42b4-4e7d-814
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response. 

@@ -3,7 +3,7 @@ title: "templateParameter resource type"
 description: "Represents a parameter utilized in a management template."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

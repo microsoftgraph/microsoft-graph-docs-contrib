@@ -4,7 +4,7 @@ description: "Represents a company's used and total directory quota."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jumasure"
+author: "adimitui"
 ---
 
 # directorySizeQuota resource type

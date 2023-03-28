@@ -29,9 +29,10 @@ You'll use your Microsoft Partner Network (MPN) ID and the [Customer Digital Exp
 Tenant name, Country/Region, Notification email, any of the demo personas. Custom tenants will not start the provisioning process until you choose **Finish**.
 Standard Microsoft 365 tenants take approximately 12-48 hours to proviion (not including add-ons). Dynamics 365 tenants take approximately 24-60 hours to provision.
 
-5. Select the Tenant period from the following.
+5. Select the tenant period from the following.
     - **90 days:** 90 day tenants include the latest services and content at time of provisioning. This is the recommended option for specific customizations related to a customer engagement. 90 day tenants will not be extended.
-    - **1 year:** 1 year tenants include the latest services and content at time of provisioning. This is the recommended option for customization and learning such as creating Hybrid environments. Only 1 year tenants can be extended. If a tenant is required long term, this is the best choice.
+    - **1 year:** 1 year tenants include the latest services and content at time of provisioning. This is the recommended option for customization and learning, such as creating hybrid environments. Only 1 year tenants can be extended. If a tenant is required long term, this is the best choice.
+        > After one year, you need to [get new codes to renew](https://aka.ms/edupartnerportal).
 
 6. Look for **Microsoft Education Demo Content** and choose **Create tenant**.
 
@@ -47,10 +48,10 @@ Standard Microsoft 365 tenants take approximately 12-48 hours to proviion (not i
 
 For information about tenant licensing and user permissions, see the following:
 
-- [Understand subscriptions and licenses](/microsoft-365/commerce/licenses/subscriptions-and-licenses?view=o365-worldwide)
-- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
-- [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide)
-- [Buy or remove licenses from your subscription](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide)
+- [Understand subscriptions and licenses](/microsoft-365/commerce/licenses/subscriptions-and-licenses?view=o365-worldwide&preserve-view=true)
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true)
+- [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide&preserve-view=true)
+- [Buy or remove licenses from your subscription](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide&preserve-view=true)
 
 ## Next steps
 

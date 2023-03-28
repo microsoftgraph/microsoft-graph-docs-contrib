@@ -13,17 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce sign-in frequency. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce sign-in frequency. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
+|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is `everyTime` .|
 |value         |Int32        | The number of `days` or `hours`.|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
-|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
+
 
 ## Relationships
 

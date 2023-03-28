@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const tentativelyAccept = {
-  comment: "I will probably be able to make it.",
+  comment: 'I will probably be able to make it.',
   sendResponse: true
 };
 
-let res = await client.api('/me/events/AAMkADADVj3fyAABZ5ieyAAA=/tentativelyAccept')
+await client.api('/me/events/AAMkADADVj3fyAABZ5ieyAAA=/tentativelyAccept')
 	.post(tentativelyAccept);
 
 ```

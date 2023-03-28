@@ -3,7 +3,7 @@ title: "List managementActions"
 description: "Get a list of the managementAction objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -87,8 +87,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

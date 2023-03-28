@@ -24,6 +24,14 @@ When the connector needs to run on a different port, you need to update the port
 
 ![Screenshot of the services window with GcaHostService running](images/connectors-sdk/services.png)
 
+## Connection failure after GCA upgrade
+
+If you notice connection failures after upgrading from a GCA version 1.8.0.0 or lower, follow the following steps:
+
+1. Open the GCA Control panel. In **Programs and features**, select **Graph connector agent** from the list of programs, and choose **Repair**.
+2. Update the new port map file configuration with the previous configurations.
+3. Resume any failed connections from Microsoft 365 admin center.
+
 ## Connector service is unavailable
 
 If the crawls are failing with a connector unavailable on specified port error, verify the following:  
@@ -38,11 +46,45 @@ If you see any RPC errors during the communication between the Microsoft Graph c
 
 If the error code is **Unknown**, there's likely an unhandled exception in your connector code. Make sure that you send a response with success/failure operation status in all cases.
 
+## Locating the log file for your custom connector
+
+If you're using the [GraphConnectorsTemplate](https://marketplace.visualstudio.com/items?itemName=ms-graph-connectors.graphConnectors) to develop your custom connector, the **AppData** folder of the current user account is used to store logs by default. You can also provide an absolute path for storing logs in the **ConnectorServer.cs** file of the template. The user account should have access to the absolute path you've provided.
+
+The following are the locations of the log path, depending on your use case:
+
+- Connector not hosted as a Windows service:
+
+    ``` Path
+    C:\Users\{User Account}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
+
+    ``` Path
+    C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the virtual account:
+
+    ``` Path
+    C:\Windows\ServiceProfiles\{Network Service Name}\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+- Connector hosted as a Windows service under the LOCAL SYSTEM account:
+
+    ``` Path
+    C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\{Connector Name}\Logs\ConnectorLog.log
+    ```
+
+>[!Note]
+>- **GraphConnectorsTemplate v2.1** and above supports storing logs for connectors hosted as a Windows service.
+>- Make sure you provide a unique connector name in the **ConnectorServer.cs** file to ensure that logs for each unique connector are stored separately.
+
 ## Errors with hosting a connector as a Windows service
 
-### Service failed to start due to Access denied error
+### Service failed to start due to access denied error
 
-Use the following steps to make sure that the path of the executable is accessible to the LocalSystem account.
+Use the following steps to make sure that the path of the executable is accessible to the LocalService account.
 
 1. Right-click the folder that contains the executable and choose **Properties**.
 
@@ -62,6 +104,12 @@ If the service fails to start, check the event viewer error logs. Open the event
 
 ![Screenshot of the error logs in the event viewer](images/connectors-sdk/troubleshoot4.png)
 
+## More help
+
+If you need more help troubleshooting an issue, you can raise an [issue](https://github.com/microsoftgraph/msgraph-connectors-sdk/issues) or start a [discussion](https://github.com/microsoftgraph/msgraph-connectors-sdk/discussions) on relevant topics through our GitHub repository.
+
+You can also reach out to the [Microsoft Graph Connectors team](mailto:MicrosoftGraphConnectorsFeedback@service.microsoft.com) for more help and troubleshooting.
+
 ## See also
 
-* [Best practices](/graph/custom-connector-sdk-best-practices)
+- [Best practices](/graph/custom-connector-sdk-best-practices)

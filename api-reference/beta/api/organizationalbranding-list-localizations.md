@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
+| Delegated (work or school account)     | User.Read, Organization.Read.All, User.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Organization.Read.All |
 
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -119,6 +118,8 @@ Content-Type: application/json
             "customAccountResetCredentialsUrl": null,
             "customCannotAccessYourAccountText": null,
             "customCannotAccessYourAccountUrl": null,
+            "customCSS": null,
+            "customCSSRelativetUrl": null,
             "customForgotMyPasswordText": null,
             "customPrivacyAndCookiesText": null,
             "customPrivacyAndCookiesUrl": null,
@@ -127,10 +128,16 @@ Content-Type: application/json
             "customResetItNowText": null,
             "faviconRelativeUrl": null,
             "headerBackgroundColor": null,
+            "headerLogoRelativeUrl": null,
             "signInPageText": "Contoso",
             "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
             "squareLogoDarkRelativeUrl": null,
             "usernameHintText": " ",
+            "loginPageLayoutConfiguration": {
+              "layoutTemplateType": "default",
+              "isHeaderShown": false,
+              "isFooterShown": true
+             },
             "loginPageTextVisibilitySettings": {
               "hideCannotAccessYourAccount": false,
               "hideForgotMyPassword": false,
@@ -149,6 +156,8 @@ Content-Type: application/json
             "customAccountResetCredentialsUrl": null,
             "customCannotAccessYourAccountText": null,
             "customCannotAccessYourAccountUrl": null,
+            "customCSS": null,
+            "customCSSRelativetUrl": null,
             "customForgotMyPasswordText": null,
             "customPrivacyAndCookiesText": null,
             "customPrivacyAndCookiesUrl": null,
@@ -157,10 +166,16 @@ Content-Type: application/json
             "customResetItNowText": null,
             "faviconRelativeUrl": null,
             "headerBackgroundColor": null,
+            "headerLogoRelativeUrl": null,
             "signInPageText": "Contoso",
             "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
             "squareLogoDarkRelativeUrl": null,
             "usernameHintText": " ",
+            "loginPageLayoutConfiguration": {
+              "layoutTemplateType": "default",
+              "isHeaderShown": false,
+              "isFooterShown": true
+             },
             "loginPageTextVisibilitySettings": {
               "hideCannotAccessYourAccount": false,
               "hideForgotMyPassword": false,

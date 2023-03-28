@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthCo
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

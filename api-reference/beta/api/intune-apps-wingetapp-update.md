@@ -1,7 +1,7 @@
 ---
 title: "Update winGetApp"
 description: "Update the properties of a winGetApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [winGetApp](../resources/intune-apps-wingetapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -70,6 +70,7 @@ The following table shows the properties that are required when you create the [
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|manifestHash|String|Hash of package metadata properties used to validate that the application matches the metadata in the source repository.|
 |packageIdentifier|String|The PackageIdentifier from the WinGet source repository REST API. This also maps to the Id when using the WinGet client command line application. Required at creation time, cannot be modified on existing objects.|
 |installExperience|[winGetAppInstallExperience](../resources/intune-apps-wingetappinstallexperience.md)|The install experience settings associated with this application, which are used to ensure the desired install experiences on the target device are taken into account. This includes the account type (System or User) that actions should be run as on target devices. Required at creation time.|
 
@@ -85,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 943
+Content-length: 985
 
 {
   "@odata.type": "#microsoft.graph.winGetApp",
@@ -112,6 +113,7 @@ Content-length: 943
   "dependentAppCount": 1,
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
+  "manifestHash": "Manifest Hash value",
   "packageIdentifier": "Package Identifier value",
   "installExperience": {
     "@odata.type": "microsoft.graph.winGetAppInstallExperience",
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1115
+Content-Length: 1157
 
 {
   "@odata.type": "#microsoft.graph.winGetApp",
@@ -155,6 +157,7 @@ Content-Length: 1115
   "dependentAppCount": 1,
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
+  "manifestHash": "Manifest Hash value",
   "packageIdentifier": "Package Identifier value",
   "installExperience": {
     "@odata.type": "microsoft.graph.winGetAppInstallExperience",
@@ -162,9 +165,3 @@ Content-Length: 1115
   }
 }
 ```
-
-
-
-
-
-

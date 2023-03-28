@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementConfigurationPolicy"
 description: "Create a new deviceManagementConfigurationPolicy object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagementConfigurationPolicy
 POST /deviceManagement/configurationPolicies
 POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
@@ -54,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |name|String|Policy name|
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `enrollment`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `edgeMAM`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Policy creation date and time|
 |lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
 |settingCount|Int32|Number of settings|
@@ -62,6 +61,7 @@ The following table shows the properties that are required when you create the d
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
+|priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
 
 
@@ -73,9 +73,9 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagementConfigurationPolicy
+POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 Content-type: application/json
-Content-length: 687
+Content-length: 809
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -95,6 +95,10 @@ Content-length: 687
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```
@@ -104,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 859
+Content-Length: 981
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -127,12 +131,10 @@ Content-Length: 859
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```
-
-
-
-
-
-

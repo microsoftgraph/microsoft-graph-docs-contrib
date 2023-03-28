@@ -74,7 +74,6 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- { 
   "blockType": "request",
-  "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
   "name": "create_calendarpermissions"
 }-->
 

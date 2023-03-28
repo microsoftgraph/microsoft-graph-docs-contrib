@@ -1,7 +1,7 @@
 ---
 title: "comanagementEligibleDevice resource type"
 description: "Device Co-Management eligibility state"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -48,7 +48,7 @@ Device Co-Management eligibility state
 |upn|String|UPN|
 |userEmail|String|UserEmail|
 |userName|String|UserName|
-|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Possible values are: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`, `scheduledForEnrollment`.|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Possible values are: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`, `scheduledForEnrollment`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -86,9 +86,3 @@ Here is a JSON representation of the resource.
   "status": "String"
 }
 ```
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 title: "List registeredOwners"
 description: "Retrieve a list of users that are registered owners of the device."
 ms.localizationpriority: medium
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
+GET /devices(deviceId='{deviceId}')/registeredOwners
 ```
 ## Optional query parameters
 

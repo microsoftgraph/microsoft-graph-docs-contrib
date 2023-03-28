@@ -1,7 +1,7 @@
 ---
 title: "List class assignments"
 description: "Retrieve a list of assignment objects."
-author: "mmast-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of assignment objects. 
+Retrieve a list of assignment objects. Only teachers, students, and applications with application permissions can perform this operation.
 
 A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
@@ -33,9 +33,9 @@ GET /education/classes/{id}/assignments
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-The following are the available `$expand` options for this method: `categories`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
+This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -203,7 +202,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

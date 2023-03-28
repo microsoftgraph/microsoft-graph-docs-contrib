@@ -26,10 +26,11 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **userSource** was created.|
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **userSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 |id|String|The ID of the **userSource**. This is not the ID of the actual group.|
 |includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 |siteWebUrl|String|The URL of the user's OneDrive for Business site. Read-only.|
-|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **userSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
+
 
 ### userSourceHoldStatus values
 

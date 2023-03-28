@@ -3,7 +3,7 @@ title: "Get cloudPcConnection"
 description: "Read the properties and relationships of a cloudPcConnection object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcC
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

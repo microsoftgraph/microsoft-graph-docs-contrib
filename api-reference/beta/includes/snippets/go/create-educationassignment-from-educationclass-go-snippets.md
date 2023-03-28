@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewEducationAssignment()
-dueDateTime , err := time.Parse(time.RFC3339, "2021-09-07T00:00:00Z")
+dueDateTime , err := time.Parse(time.RFC3339, "2022-09-16T00:00:00Z")
 requestBody.SetDueDateTime(&dueDateTime) 
-displayName := "Reading test 09.03 #4"
+displayName := "Reading test 09.14 Beta"
 requestBody.SetDisplayName(&displayName) 
 instructions := graphmodels.NewEducationItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 

@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.AgentGroupsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.OnPremisesPublishingProfileItemAgentGroupsRequestBuilderGetQueryParameters{
 	Expand: [] string {"agents","publishedResources"},
 }
-configuration := &graphconfig.AgentGroupsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.OnPremisesPublishingProfileItemAgentGroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

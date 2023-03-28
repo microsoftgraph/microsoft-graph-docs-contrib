@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewPrinter()
 name := "PrinterName"
@@ -19,7 +19,7 @@ altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters) 
 requestBody.SetLocation(location)
 
-graphClient.Print().PrintersById("printer-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Print().PrintersById("printer-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

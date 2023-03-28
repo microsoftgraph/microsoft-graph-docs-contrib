@@ -1,7 +1,7 @@
 ---
 title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -28,10 +28,42 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* Users
+* Directory Readers
+* Directory Writers
+* Compliance Administrator
+* Device Managers
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Desktop Analytics Administrator
+* Microsoft Managed Desktop Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Directory Reviewer
+* Windows 365 Administrator
+
 ## HTTP request
+
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredUsers
+GET /devices(deviceId='{deviceId}')/registeredUsers
 ```
 
 > Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.

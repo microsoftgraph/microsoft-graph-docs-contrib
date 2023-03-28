@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
->**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -76,17 +76,11 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskyserviceprincipalhistoryitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-riskyserviceprincipalhistoryitem-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-riskyserviceprincipalhistoryitem-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -114,7 +108,6 @@ Content-Type: application/json
        "displayName": "Contoso App",
        "appId": "ede08db0-9492-4a0c-8ae3-8ggg056c5d75",
        "servicePrincipalType": "Application",
-       "servicePrincipalId": "0fbef39d-9e8c-777b-860e-8ae5abcdffd7",
        "initiatedBy": null,
        "activity": null
      }

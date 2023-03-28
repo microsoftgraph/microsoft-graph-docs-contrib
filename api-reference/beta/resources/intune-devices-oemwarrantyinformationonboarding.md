@@ -1,7 +1,7 @@
 ---
 title: "oemWarrantyInformationOnboarding resource type"
 description: "Warranty status entity for a given OEM"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -56,9 +56,3 @@ Here is a JSON representation of the resource.
   "available": true
 }
 ```
-
-
-
-
-
-

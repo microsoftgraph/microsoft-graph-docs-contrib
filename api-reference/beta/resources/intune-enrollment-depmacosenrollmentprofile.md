@@ -1,7 +1,7 @@
 ---
 title: "depMacOSEnrollmentProfile resource type"
 description: "The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,7 +40,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -58,6 +58,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |registrationDisabled|Boolean|Indicates if registration is disabled|
 |fileVaultDisabled|Boolean|Indicates if file vault is disabled|
 |iCloudDiagnosticsDisabled|Boolean|Indicates if iCloud Analytics screen is disabled|
@@ -67,20 +68,17 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
 |autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
+|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
+|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
 |dontAutoPopulatePrimaryAccountInfo|Boolean|Indicates whether Setup Assistant will auto populate the primary account information|
-|lockPrimaryAccountInfo|Boolean|Indicates whether the primary account information will be locked|
-|managedLocalUserShortName|Boolean|Indicates whether or not this is the short name of the local account to manage|
 |primaryAccountFullName|String|Indicates what the full name for the primary account is|
 |primaryAccountUserName|String|Indicates what the account name for the primary account is|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
-|setPrimarySetupAccountAsRegularUser|Boolean|Indicates whether Setup Assistant will set the account as a regular user|
-|skipPrimarySetupAccountCreation|Boolean|Indicates whether Setup Assistant will skip the user interface for primary account setup|
-|isLocalPrimaryAccount|Boolean|Indicates whether the profile is a local account|
-|isPrimaryUser|Boolean|Indicates whether the profile is a primary user|
-|primaryUser|String|Indicates who the primary user of the profile is|
-|primaryUserFullName|String|Indicates who the primary user of the profile is|
-|prefillAccountInfo|Boolean|Indicates whether the user will prefill their account info|
 |enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
+|adminAccountUserName|String|Indicates what the user name for the admin account is|
+|adminAccountFullName|String|Indicates what the full name for the admin account is|
+|adminAccountPassword|String|Indicates what the password for the admin account is|
+|hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
+|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 ## Relationships
 None
@@ -122,6 +120,9 @@ Here is a JSON representation of the resource.
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "String"
+  ],
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -131,26 +132,16 @@ Here is a JSON representation of the resource.
   "chooseYourLockScreenDisabled": true,
   "accessibilityScreenDisabled": true,
   "autoUnlockWithWatchDisabled": true,
+  "skipPrimarySetupAccountCreation": true,
+  "setPrimarySetupAccountAsRegularUser": true,
   "dontAutoPopulatePrimaryAccountInfo": true,
-  "lockPrimaryAccountInfo": true,
-  "managedLocalUserShortName": true,
   "primaryAccountFullName": "String",
   "primaryAccountUserName": "String",
-  "requestRequiresNetworkTether": true,
-  "setPrimarySetupAccountAsRegularUser": true,
-  "skipPrimarySetupAccountCreation": true,
-  "isLocalPrimaryAccount": true,
-  "isPrimaryUser": true,
-  "primaryUser": "String",
-  "primaryUserFullName": "String",
-  "prefillAccountInfo": true,
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "String",
+  "adminAccountFullName": "String",
+  "adminAccountPassword": "String",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```
-
-
-
-
-
-
-

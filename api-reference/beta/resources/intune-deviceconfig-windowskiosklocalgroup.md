@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskLocalGroup resource type"
 description: "The class used to identify a local group for the kiosk configuration"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -41,9 +41,3 @@ Here is a JSON representation of the resource.
   "groupName": "String"
 }
 ```
-
-
-
-
-
-

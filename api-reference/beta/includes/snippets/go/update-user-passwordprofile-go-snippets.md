@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewUser()
 passwordProfile := graphmodels.NewPasswordProfile()
-forceChangePasswordNextSignIn := false
+forceChangePasswordNextSignIn := true
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn) 
 password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 

@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Tasks.Read.All, Tasks.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -98,6 +98,10 @@ Content-type: application/json
 
 {
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
+  "notes": {
+    "content": "<div style=\"white-space:pre-wrap\">Task details properties:\nchecklist:Sub items\nreferences:Related links</div>",
+    "contentType": "html"
+  },
   "previewType": "automatic",
   "references": {
     "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {

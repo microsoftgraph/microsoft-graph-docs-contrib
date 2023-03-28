@@ -33,7 +33,12 @@ const subjectRightsRequest = {
     ],
     siteLocations: {
         '@odata.type': 'microsoft.graph.subjectRightsRequestAllSiteLocation'
-    }
+    },
+    approvers: [
+        {
+            id: '1B761ED2-AA7E-4D82-9CF5-C09D737B6167'
+        }
+    ]
 };
 
 await client.api('/privacy/subjectRightsRequests')

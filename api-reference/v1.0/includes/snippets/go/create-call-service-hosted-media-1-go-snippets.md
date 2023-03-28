@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
@@ -33,6 +33,10 @@ requestedModalities := []graphmodels.Modalityable {
 
 }
 requestBody.SetRequestedModalities(requestedModalities)
+callOptions := graphmodels.NewCallOptions()
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+requestBody.SetCallOptions(callOptions)
 mediaConfig := graphmodels.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 

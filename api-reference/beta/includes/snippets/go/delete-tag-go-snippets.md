@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestForcedelete := true
 
-requestParameters := &graphconfig.TagRequestBuilderDeleteQueryParameters{
+requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
 	Forcedelete: &requestForcedelete,
 }
-configuration := &graphconfig.TagRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

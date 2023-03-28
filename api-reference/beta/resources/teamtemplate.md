@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a logical container for all the definitions and versions of the same team template.
 
+
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

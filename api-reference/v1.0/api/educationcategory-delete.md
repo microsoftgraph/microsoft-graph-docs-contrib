@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an existing [category](../resources/educationcategory.md).
+Delete an existing [category](../resources/educationcategory.md). Only teachers can perform this operation.
 
 ## Permissions
 
@@ -87,7 +87,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/c42f493f-42b4-4e7d-814
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

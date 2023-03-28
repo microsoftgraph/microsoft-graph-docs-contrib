@@ -1,7 +1,7 @@
 ---
 title: "depOnboardingSetting resource type"
 description: "The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -86,9 +86,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

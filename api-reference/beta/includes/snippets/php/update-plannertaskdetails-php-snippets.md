@@ -68,6 +68,8 @@ $checklist->setAdditionalData($additionalData);
 
 
 $requestBody->setChecklist($checklist);
+$requestBody->setDescription('Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links');
+
 
 $requestConfiguration = new DetailsRequestBuilderPatchRequestConfiguration();
 

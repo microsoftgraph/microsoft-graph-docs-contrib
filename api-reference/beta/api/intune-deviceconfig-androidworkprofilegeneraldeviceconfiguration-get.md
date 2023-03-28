@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3482
+Content-Length: 3711
 
 {
   "value": {
@@ -111,6 +111,7 @@ Content-Length: 3482
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordRequiredType": "lowSecurityBiometric",
+    "requiredPasswordComplexity": "low",
     "workProfileAllowAppInstallsFromUnknownSources": true,
     "workProfileDataSharingType": "preventAny",
     "workProfileBlockNotificationsWhileDeviceLocked": true,
@@ -138,18 +139,17 @@ Content-Length: 3482
     "workProfilePasswordPreviousPasswordBlockCount": 13,
     "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
     "workProfilePasswordRequiredType": "lowSecurityBiometric",
+    "workProfileRequiredPasswordComplexity": "low",
     "workProfileRequirePassword": true,
     "securityRequireVerifyApps": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnEnableAlwaysOnLockdownMode": true,
     "workProfileAllowWidgets": true,
-    "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+    "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+    "workProfileAccountUse": "blockAll",
+    "allowedGoogleAccountDomains": [
+      "Allowed Google Account Domains value"
+    ]
   }
 }
 ```
-
-
-
-
-
-

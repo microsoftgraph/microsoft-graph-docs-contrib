@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec12
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

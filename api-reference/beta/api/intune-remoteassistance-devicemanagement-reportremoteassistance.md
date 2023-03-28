@@ -1,7 +1,7 @@
 ---
 title: "reportRemoteAssistance action"
 description: "A post call to submit the reporting payload"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 A post call to submit the reporting payload
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 1044
+Content-length: 1195
 
 {
   "reportingPayload": {
@@ -74,9 +74,11 @@ Content-length: 1044
     "remoteAssistanceSessionType": "fullControl",
     "helperEmail": "Helper Email value",
     "helperTenantId": "Helper Tenant Id value",
+    "helperUserId": "Helper User Id value",
     "helperFirstName": "Helper First Name value",
     "helperLastName": "Helper Last Name value",
     "helperOs": "Helper Os value",
+    "deviceId": "Device Id value",
     "helperDeviceAadId": "Helper Device Aad Id value",
     "helperDeviceName": "Helper Device Name value",
     "helperEnrollmentState": "enrolled",
@@ -87,7 +89,8 @@ Content-length: 1044
     "sharerDeviceAadId": "Sharer Device Aad Id value",
     "sharerDeviceName": "Sharer Device Name value",
     "sharerOs": "Sharer Os value",
-    "sharerEnrollmentState": "enrolled"
+    "sharerEnrollmentState": "enrolled",
+    "sharerDeviceSerialNumber": "Sharer Device Serial Number value"
   }
 }
 ```
@@ -97,9 +100,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
