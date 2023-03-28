@@ -1,6 +1,6 @@
 ---
 title: "List passiveDns"
-description: "Get the passiveDnsRecord resources from the passiveDns navigation property."
+description: "Get a list of passiveDnsRecord resources."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [passiveDnsRecord](../resources/security-passivednsrecord.md) resources from the **passiveDns** navigation property.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [passiveDnsRecord](../resources/security-passivednsrecord.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) objects in the response body.
 
 ## Examples
 
