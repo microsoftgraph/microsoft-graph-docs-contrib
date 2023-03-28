@@ -12814,7 +12814,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "systemCredentialPreferences",
           "ChangeType": "Addition",
-          "Description": "Added the **systemCredentialPreferences** to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **systemCredentialPreferences** property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
           "Target": "authenticationMethodsPolicy"
         },
         {
@@ -12822,7 +12822,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "signInPreferences",
           "ChangeType": "Addition",
-          "Description": "Added the **signInPreferences** to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Description": "Added the **signInPreferences** property to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
           "Target": "authentication"
         },
         {
