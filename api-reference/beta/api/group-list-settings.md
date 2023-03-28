@@ -36,13 +36,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-List tenant-wide or group settings
+List tenant-wide or group settings.
 ```http
 GET /settings
 ```
 
 <!-- { "blockType": "ignored" } -->
-List group-specific settings
+List group-specific settings.
 ```http
 GET /groups/{groupId}/settings
 ```
@@ -60,12 +60,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [directorySetting](../resources/directorysetting.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directorySetting](../resources/directorysetting.md) objects in the response body.
 
 ## Example
 
 ### Request
-Here is an example of the request.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {

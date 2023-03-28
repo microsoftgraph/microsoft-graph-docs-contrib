@@ -333,6 +333,7 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-application-basics-create-serviceprincipal-approles"
@@ -384,6 +385,8 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+## Manage owners
 
 ### Identify ownerless service principals and service principals with one owner
 
