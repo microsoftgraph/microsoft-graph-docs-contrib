@@ -173,6 +173,10 @@ It's possible that the **Microsoft Graph Change Tracking** service principal is 
 
 Query details: `0bf30f3b-4a52-48df-9a82-234910c4a086` is the global appId for the Microsoft Graph Change Tracking application.
 
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-eventhubs-create-changetrackingapp-sp"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 
