@@ -53,9 +53,9 @@ GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethod
 ```
 
 The value of `phoneMethodId` corresponding to the phoneType is one of the following:
-+ `b6332ec1-7057-4abe-9331-3d72feddfe41` to delete the `alternateMobile` **phoneType**.
-+ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to delete the `office` **phoneType**.
-+ `3179e48a-750b-4051-897c-87b9720928f7` to delete the `mobile` **phoneType**.
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` to retrieve the `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to retrieve the `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` to retrieve the `mobile` **phoneType**.
 
 ## Optional query parameters
 

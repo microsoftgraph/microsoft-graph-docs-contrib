@@ -48,9 +48,9 @@ PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId
 ```
 
 The value of `phoneMethodId` corresponding to the phoneType to update is one of the following:
-+ `b6332ec1-7057-4abe-9331-3d72feddfe41` to delete the `alternateMobile` **phoneType**.
-+ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to delete the `office` **phoneType**.
-+ `3179e48a-750b-4051-897c-87b9720928f7` to delete the `mobile` **phoneType**.
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` to update the `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to update the `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` to update the `mobile` **phoneType**.
 
 ## Request headers
 
