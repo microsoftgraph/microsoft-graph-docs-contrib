@@ -1,6 +1,6 @@
 ---
 title: "Get authentication"
-description: "Get the dynamically-chosen authentication method prompted to a user."
+description: "Get the dynamically chosen authentication method that the user is prompted with."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dynamically chosen [authentication](../resources/authentication.md) method that is prompted to a user.
+Get the dynamically chosen [authentication](../resources/authentication.md) method that the user is prompted with.
 
 ## Permissions
 
