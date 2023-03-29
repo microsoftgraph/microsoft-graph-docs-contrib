@@ -24,39 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
+> [!NOTE]
+> To view the members with a hidden membership in an administrative unit, the app must be granted the `Member.Read.Hidden` delegated or application permission.
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-
-* Global Administrator
-* User
-* Directory Readers
-* Directory Writers
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Directory Reviewer
-* Guest User
-* Restricted Guest User
-* User Administrator
+[!INCLUDE [rbac-admin-units-apis-read](../includes/rbac-for-apis/rbac-admin-units-apis-read.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
