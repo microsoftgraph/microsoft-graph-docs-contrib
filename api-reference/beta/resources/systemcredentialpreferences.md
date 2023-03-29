@@ -1,6 +1,6 @@
 ---
 title: "systemCredentialPreferences resource type"
-description: "Represents a resource that dynamically detects and prompts users with the users preferred multifactor authentication method from the registered methods."
+description: "Dynamically detects and prompts users with their preferred multifactor authentication method from the registered methods."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a resource that dynamically detects and prompts users with the users preferred multifactor authentication method from the registered methods.
+Dynamically detects and prompts users with their preferred multifactor authentication method from the registered methods.
 
 ## Properties
 
