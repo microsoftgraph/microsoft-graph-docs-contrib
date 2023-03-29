@@ -31,8 +31,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-beta) resource type.",
-          "Target": "idleSessionSignOut"
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Target": "idlesessionsignout"
         },
         {
           "Id": "51810ca0-0fc6-46a4-9b32-683f60e021c2",
