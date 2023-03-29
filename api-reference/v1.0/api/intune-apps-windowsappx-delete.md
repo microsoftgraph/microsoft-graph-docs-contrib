@@ -1,30 +1,28 @@
 ---
-title: "enableEndpointPrivilegeManagement action"
-description: "Triggers onboarding of tenant to Microsoft Managed Platform - Cloud (MMP-C)."
+title: "Delete windowsAppX"
+description: "Deletes a windowsAppX."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# enableEndpointPrivilegeManagement action
+# Delete windowsAppX
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Triggers onboarding of tenant to Microsoft Managed Platform - Cloud (MMP-C).
+Deletes a [windowsAppX](../resources/intune-apps-windowsappx.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/enableEndpointPrivilegeManagement
+DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## Request headers
@@ -45,14 +43,14 @@ POST /deviceManagement/enableEndpointPrivilegeManagement
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/enableEndpointPrivilegeManagement
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response
