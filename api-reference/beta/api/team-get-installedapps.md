@@ -231,15 +231,7 @@ Content-type: application/json
     "consentedPermissionSet": {
         "resourceSpecificPermissions": [
             {
-                "permissionValue": "OnlineMeeting.ReadBasic.Chat",
-                "permissionType": "delegated"
-            },
-            {
                 "permissionValue": "ChannelMeeting.ReadBasic.Group",
-                "permissionType": "delegated"
-            },
-            {
-                "permissionValue": "MeetingStage.Write.Chat",
                 "permissionType": "delegated"
             },
             {
