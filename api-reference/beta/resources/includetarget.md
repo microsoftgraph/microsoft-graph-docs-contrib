@@ -1,6 +1,6 @@
 ---
 title: "includeTarget resource type"
-description: "Represents a complex type that defines users and groups that are included in a set of changes."
+description: "Defines the users and groups that are included in a set of changes."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a complex type that defines users and groups that are included in a set of changes.
+Defines the users and groups that are included in a set of changes.
 
 ## Properties
 
