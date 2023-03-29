@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dynamically-chosen [authentication](../resources/authentication.md) method prompted to a user.
+Get the dynamically chosen [authentication](../resources/authentication.md) method that is prompted to a user.
 
 ## Permissions
 
