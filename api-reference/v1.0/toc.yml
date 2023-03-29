@@ -7520,14 +7520,18 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Tenant settings
+      - name: SharePoint settings
         items:
-          - name: Settings
+          - name: sharepointSettings
             href: resources/sharepointSettings.md
           - name: Get settings
             href: api/sharepointSettings-get.md
           - name: Update settings
             href: api/sharepointSettings-update.md
+      - name: idle session signout
+        items:
+          - name: IdleSessionSignout
+            href: resources/idlesessionsignout.md
     - name: Tasks and plans
       displayName: Planner
       items:
