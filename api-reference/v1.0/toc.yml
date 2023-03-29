@@ -2343,6 +2343,19 @@ items:
             href: resources/intune-apps-win32lobappruleoperator.md
           - name: Win32 LOB app rule type
             href: resources/intune-apps-win32lobappruletype.md
+          - name: Windows AppX
+            href: resources/intune-apps-windowsappx.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsappx-list.md
+            - name: Get
+              href: api/intune-apps-windowsappx-get.md
+            - name: Create
+              href: api/intune-apps-windowsappx-create.md
+            - name: Delete
+              href: api/intune-apps-windowsappx-delete.md
+            - name: Update
+              href: api/intune-apps-windowsappx-update.md
           - name: Windows AppX app assignment settings
             href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture
