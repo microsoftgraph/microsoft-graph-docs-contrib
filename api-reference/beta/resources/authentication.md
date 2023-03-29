@@ -21,7 +21,7 @@ Inherits from [entity](entity.md).
 
 | Method | Return Type | Description |
 |:------ |:----------- |:----------- |
-| [Get authentication](../api/authentication-get.md) | [authentication](../resources/authentication.md) | Get the dynamically-chosen **authentication** method prompted to a user. |
+| [Get authentication](../api/authentication-get.md) | [authentication](../resources/authentication.md) | Get the dynamically chosen authentication method that the user is prompted with. |
 
 ## Properties
 
