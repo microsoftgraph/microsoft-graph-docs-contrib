@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = await graphClient.Me.Events["{event-id}"]
-	.Request()
-	.Expand("exceptionOccurrences,cancelledOccurrences")
-	.Select("subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences")
-	.GetAsync();
+var result = await graphClient.Me.Events["{event-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "subject","start","end","occurrenceId","exceptionOccurrences","cancelledOccurrences" };
+	requestConfiguration.QueryParameters.Expand = new string []{ "exceptionOccurrences" };
+});
+
 
 ```

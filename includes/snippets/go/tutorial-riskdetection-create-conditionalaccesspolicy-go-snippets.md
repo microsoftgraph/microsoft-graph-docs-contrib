@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
-displayName := "Policy for risky sign-in block access"
+displayName := "Policy for risky sign-in"
 requestBody.SetDisplayName(&displayName) 
 state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE 
 requestBody.SetState(&state) 
@@ -40,7 +40,7 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	conditionalAccessGrantControl := graphmodels.BLOCK_CONDITIONALACCESSGRANTCONTROL 
+	conditionalAccessGrantControl := graphmodels.MFA_CONDITIONALACCESSGRANTCONTROL 
 	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }

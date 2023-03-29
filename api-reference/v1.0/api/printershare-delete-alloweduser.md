@@ -80,7 +80,6 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUse
 
 ---
 
-
 ### Response
 The following is an example of the response.
 

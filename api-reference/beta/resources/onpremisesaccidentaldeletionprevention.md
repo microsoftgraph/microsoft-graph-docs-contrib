@@ -20,7 +20,7 @@ Contains the accidental deletion prevention configuration for a tenant. This con
 | Property                      | Type                                                     | Description                                                                                                                                             |
 | :---------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | alertThreshold                | Int32                                                    | Threshold value which triggers accidental deletion prevention. The threshold is either an absolute number of objects or a percentage number of objects. |
-| synchronizationPreventionType | onPremisesDirectorySynchronizationDeletionPreventionType | The status of the accidental deletion prevention feature. The possible values are: `disabled`, `enabledForCount`, `enabledForPercentage`.               |
+| synchronizationPreventionType | onPremisesDirectorySynchronizationDeletionPreventionType | The status of the accidental deletion prevention feature. The possible values are: `disabled`, `enabledForCount`, `enabledForPercentage`, `unknownFutureValue`.               |
 
 ## Relationships
 
