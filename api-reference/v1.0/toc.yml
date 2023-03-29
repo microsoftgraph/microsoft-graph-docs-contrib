@@ -7528,7 +7528,7 @@ items:
             href: api/sharepointSettings-get.md
           - name: Update settings
             href: api/sharepointSettings-update.md
-      - name: idle session signout
+      - name: IdleSessionSignout
         items:
           - name: IdleSessionSignout
             href: resources/idlesessionsignout.md
