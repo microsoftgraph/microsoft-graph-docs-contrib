@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Add gradingCategory
+# Update gradingCategory
 
 Namespace: microsoft.graph
 

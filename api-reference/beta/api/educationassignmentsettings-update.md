@@ -117,12 +117,11 @@ Content-Type: application/json
   "submissionAnimationDisabled": true
 }
 ```
-### Example 2: Crreate grading categories
-
+### Example 2: Create grading categories
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
