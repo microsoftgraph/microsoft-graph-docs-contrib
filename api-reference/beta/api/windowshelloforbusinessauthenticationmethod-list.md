@@ -36,17 +36,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
-> [!NOTE]
-> The authentication administrator only sees masked phone numbers.
-
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Retrieve details of your own Windows Hello For Business authentication methods.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods
+```
+
+Retrieve details of your own or another user's Windows Hello For Business authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
