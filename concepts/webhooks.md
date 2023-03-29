@@ -62,7 +62,7 @@ You manage the subscription using the [subscription resource type](/graph/api/re
 For more information about managing subscriptions for the different delivery channels using Microsoft Graph, see the following articles.
 
 - [Receive change notification through webhooks](./change-notifications-delivery-webhooks.md).
-- [Receive change notification through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Receive change notification through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
 
 ## Code samples
 

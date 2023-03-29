@@ -44,10 +44,15 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ## HTTP request
 
+List your own phone authentication methods.
 <!-- { "blockType": "ignored" } -->
-
-```http
+``` http
 GET /me/authentication/phoneMethods
+```
+
+List your own or another user's phone authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 

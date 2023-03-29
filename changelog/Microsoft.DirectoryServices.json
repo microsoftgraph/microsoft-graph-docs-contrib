@@ -1204,6 +1204,40 @@
     {
       "ChangeList": [
         {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "weakAlgorithms",
+          "ChangeType": "Addition",
+          "Description": "Added the **weakAlgorithms** enumeration type.",
+          "Target": "weakAlgorithms"
+        },
+        {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the [requestSignatureVerification](https://learn.microsoft.com/en-us/graph/api/resources/requestSignatureVerification?view=graph-rest-1.0) resource type.",
+          "Target": "requestSignatureVerification"
+        },
+        {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the `requestSignatureVerification` property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-27T00:00:00.8718807Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+      {
           "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
           "ApiChange": "Property",
           "ChangedApiName": "links",
