@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff";
+var requestBody = new Microsoft.Graph.Beta.GroupLifecyclePolicies.RenewGroup.RenewGroupPostRequestBody
+{
+	GroupId = "ffffffff-ffff-ffff-ffff-ffffffffffff",
+};
+var result = await graphClient.GroupLifecyclePolicies.RenewGroup.PostAsync(requestBody);
 
-await graphClient.GroupLifecyclePolicies
-	.RenewGroup(groupId)
-	.Request()
-	.PostAsync();
 
 ```

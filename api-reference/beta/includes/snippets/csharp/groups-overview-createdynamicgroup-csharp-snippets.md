@@ -4,26 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var group = new Group
+var requestBody = new Group
 {
 	Description = "Marketing department folks",
 	DisplayName = "Marketing department",
-	GroupTypes = new List<String>()
+	GroupTypes = new List<string>
 	{
 		"Unified",
-		"DynamicMembership"
+		"DynamicMembership",
 	},
 	MailEnabled = true,
 	MailNickname = "marketing",
 	SecurityEnabled = false,
 	MembershipRule = "user.department -eq \"Marketing\"",
-	MembershipRuleProcessingState = "on"
+	MembershipRuleProcessingState = "on",
 };
+var result = await graphClient.Groups.PostAsync(requestBody);
 
-await graphClient.Groups
-	.Request()
-	.AddAsync(group);
 
 ```

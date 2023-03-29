@@ -101,7 +101,6 @@ DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

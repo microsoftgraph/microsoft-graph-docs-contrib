@@ -1,7 +1,7 @@
 ---
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
-author: "Sumana Chakrabarti"
+author: "sumanac"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ms.localizationpriority: medium

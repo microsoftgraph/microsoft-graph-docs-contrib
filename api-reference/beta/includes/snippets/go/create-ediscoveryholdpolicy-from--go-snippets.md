@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewEdiscoveryHoldPolicy()
 displayname := "My legalHold with sources"
@@ -19,7 +19,7 @@ additionalData := map[string]interface{}{
 email := "SalesTeam@M365x809305.OnMicrosoft.com"
 .SetEmail(&email) 
 
-	"userSources@odata.bind" := []graphmodels.Objectable {
+	odataBind := []graphmodels.Objectable {
 		,
 
 	}
@@ -31,7 +31,7 @@ webUrl := "https://m365x809305.sharepoint.com/sites/Design-topsecret"
 site.SetWebUrl(&webUrl) 
 .SetSite(site)
 
-	"siteSources@odata.bind" := []graphmodels.Objectable {
+	odataBind := []graphmodels.Objectable {
 		,
 
 	}

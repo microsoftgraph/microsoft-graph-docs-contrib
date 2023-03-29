@@ -88,8 +88,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSet
 
 ---
 
-
-
 ### Response
 
 <!-- {

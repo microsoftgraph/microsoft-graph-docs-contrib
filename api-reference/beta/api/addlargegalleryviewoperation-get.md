@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b24
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

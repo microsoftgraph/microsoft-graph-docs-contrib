@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 
 ---
 
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.

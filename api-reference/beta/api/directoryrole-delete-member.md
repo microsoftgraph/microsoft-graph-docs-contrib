@@ -103,7 +103,6 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",

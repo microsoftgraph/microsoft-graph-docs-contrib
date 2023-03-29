@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
+PATCH /policies/authenticationFlowsPolicy
 ```
 
 ## Request headers
@@ -99,7 +99,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 <!-- {

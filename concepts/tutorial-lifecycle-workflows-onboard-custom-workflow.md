@@ -130,7 +130,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -220,7 +219,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 
 ---
 
-
 ### Response
 
 
@@ -274,7 +272,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -349,7 +346,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -411,7 +407,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -507,7 +502,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
 
