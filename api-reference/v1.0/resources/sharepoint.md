@@ -82,7 +82,7 @@ The following examples are relative to `https://graph.microsoft.com/v1.0`.
 | /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
 | /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
 | /groups/{group-id}/sites/root          | Access a group's team [site][].
-| /admin/sharepoint/settings             | Access the organization's admin level [settings]().
+| /admin/sharepoint/settings             | Access the organization's admin level [settings](sharepointSettings.md).
 
 Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
 You can optionally transition back to addressing the resource model by putting another colon at the end.
