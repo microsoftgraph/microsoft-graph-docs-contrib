@@ -20,7 +20,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
-| sharepoint |[microsoft.graph](sharepoint.md)| A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive.|
+| sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
 
 
 ## JSON representation
