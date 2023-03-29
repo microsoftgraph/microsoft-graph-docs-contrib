@@ -56,7 +56,9 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Examples
 
-### Request
+### Example 1: Update submissionAnimationDisabled
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,4 +117,79 @@ Content-Type: application/json
   "submissionAnimationDisabled": true
 }
 ```
+### Example 2: Crreate grading categories
 
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
+  "name": "update_gradingCategoties"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+{
+"gradingCategories": [
+        {
+            "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
+            "displayName": "Quiz-1",
+            "percentageWeight": 10
+        },
+        {
+            "id": "6fd19981-588f-495c-91a8-712a645c95b7",
+            "displayName": "Cat2",
+            "percentageWeight": 80
+        },
+        {
+            "id": "54f637a5-2cef-4e48-a88e-028854ca8089",
+            "displayName": "cat3",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+### Response
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.gradingCategory"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    {
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_wus2gradingcategories/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": false,
+    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_wus2gradingcategories/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
+            "displayName": "Quiz-1",
+            "percentageWeight": 10
+        },
+        {
+            "id": "6fd19981-588f-495c-91a8-712a645c95b7",
+            "displayName": "Cat2",
+            "percentageWeight": 80
+        },
+        {
+            "id": "54f637a5-2cef-4e48-a88e-028854ca8089",
+            "displayName": "cat3",
+            "percentageWeight": 10
+        }
+    ]
+}
+}
+```
