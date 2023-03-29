@@ -37,6 +37,54 @@ A common scenario that global administrators can enable is the display of any pr
 >
 > When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process may take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers becomes visible in Microsoft 365 experiences, such as profile cards.
 
+## Configure Pronouns settings using PowerShell
+
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to make pronouns available in your organization.
+
+#### Additional prerequisites
+
+* **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+* **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+> [!NOTE]
+> Because pronouns settings commands are only available in beta, switch to the beta profile before calling it.
+> ```powershell
+>    Select-MgProfile beta
+> ```
+
+#### Confirm your current settings
+
+To get pronouns settings configuration for an organization, use the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+
+```powershell
+   Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
+```
+
+#### Enabling pronouns in your organization
+
+By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
+
+> [!NOTE]
+> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> ```powershell
+>    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All"
+> ```
+
+Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
+```
+
+#### Disabling pronouns in your organization
+
+Alternatively, you can make pronouns unavailable for your organization using the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$false
+```
+
+
 ## Configure pronouns settings using Microsoft Graph REST API
 
 #### Confirm your current settings
@@ -105,53 +153,6 @@ Content-Type: application/json
 {
   "isEnabledInOrganization": false
 }
-```
-
-## Configure Pronouns settings using PowerShell
-
-Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to make pronouns available in your organization.
-
-#### Additional prerequisites
-
-* **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
-* **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
-
-> [!NOTE]
-> Because pronouns settings commands are only available in beta, switch to the beta profile before calling it.
-> ```powershell
->    Select-MgProfile beta
-> ```
-
-#### Confirm your current settings
-
-To get pronouns settings configuration for an organization, use the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
-
-```powershell
-   Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
-```
-
-#### Enabling pronouns in your organization
-
-By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
-
-> [!NOTE]
-> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
-> ```powershell
->    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All"
-> ```
-
-Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
-
-```powershell
-   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
-```
-
-#### Disabling pronouns in your organization
-
-Alternatively, you can make pronouns unavailable for your organization using the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
-
-```powershell
-   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$false
 ```
 
 ## See also
