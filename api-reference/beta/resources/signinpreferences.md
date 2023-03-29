@@ -1,6 +1,6 @@
 ---
 title: "signInPreferences resource type"
-description: "Represents settings and preferences for to the sign-in experience of a user."
+description: "Represents settings and preferences for the sign-in experience of a user."
 author: "msft-poulomi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings and preferences for to the sign-in experience of a user.
+Represents settings and preferences for the sign-in experience of a user.
 
 ## Properties
 
