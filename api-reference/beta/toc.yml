@@ -16437,11 +16437,11 @@ items:
       - name: Tenant settings
         items:
           - name: Settings
-            href: resources/tenantadmin-settings.md
+            href: resources/sharepointSettings.md
           - name: Get settings
-            href: api/tenantadmin-settings-get.md
+            href: api/sharepointSettings-get.md
           - name: Update settings
-            href: api/tenantadmin-settings-update.md
+            href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
