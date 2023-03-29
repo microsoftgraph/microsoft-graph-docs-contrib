@@ -90,6 +90,11 @@ The following table shows the properties that are required when you create the d
 |primaryAccountFullName|String|Indicates what the full name for the primary account is|
 |primaryAccountUserName|String|Indicates what the account name for the primary account is|
 |enableRestrictEditing|Boolean|Indicates whether the user will enable blockediting|
+|adminAccountUserName|String|Indicates what the user name for the admin account is|
+|adminAccountFullName|String|Indicates what the full name for the admin account is|
+|adminAccountPassword|String|Indicates what the password for the admin account is|
+|hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
+|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 
 
@@ -103,7 +108,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1702
+Content-length: 1951
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -149,7 +154,12 @@ Content-length: 1702
   "dontAutoPopulatePrimaryAccountInfo": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "Admin Account User Name value",
+  "adminAccountFullName": "Admin Account Full Name value",
+  "adminAccountPassword": "Admin Account Password value",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```
 
@@ -158,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1751
+Content-Length: 2000
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -205,6 +215,11 @@ Content-Length: 1751
   "dontAutoPopulatePrimaryAccountInfo": true,
   "primaryAccountFullName": "Primary Account Full Name value",
   "primaryAccountUserName": "Primary Account User Name value",
-  "enableRestrictEditing": true
+  "enableRestrictEditing": true,
+  "adminAccountUserName": "Admin Account User Name value",
+  "adminAccountFullName": "Admin Account Full Name value",
+  "adminAccountPassword": "Admin Account Password value",
+  "hideAdminAccount": true,
+  "requestRequiresNetworkTether": true
 }
 ```

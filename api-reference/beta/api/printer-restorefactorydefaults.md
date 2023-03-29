@@ -83,7 +83,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 <!-- {

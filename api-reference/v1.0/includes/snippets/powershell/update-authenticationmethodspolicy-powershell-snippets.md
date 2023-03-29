@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	"@odata.context" = "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy"
 	RegistrationEnforcement = @{
 		AuthenticationMethodsRegistrationCampaign = @{
 			SnoozeDurationInDays = 1
@@ -23,15 +22,6 @@ $params = @{
 			)
 		}
 	}
-	AuthenticationMethodConfigurations = @(
-		@{
-			"@odata.type" = "#microsoft.graph.fido2AuthenticationMethodConfiguration"
-			Id = "Fido2"
-			State = "disabled"
-			IsSelfServiceRegistrationAllowed = $false
-			IsAttestationEnforced = $false
-		}
-	)
 }
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params

@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
 ---
----
 
 # urlToItemResolverBase resource type
 
@@ -14,9 +13,9 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the rules for resolving a URL to the ID of an [externalItem](microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md).
+Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
-This is an abstract type.
+This is an abstract base type of [itemIdResolver](externalconnectors-itemidresolver.md)..
 
 ## Properties
 |Property|Type|Description|

@@ -166,7 +166,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}?select=i
 
 ---
 
-
 #### Response
 
 The following is an example of the response

@@ -1,7 +1,7 @@
 ---
 title: "chatMessage: softDelete"
 description: "Delete a single message or message reply in a channel or a chat."
-author: "Ramjot Singh"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+
+>**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 ## Permissions
 
@@ -104,7 +106,6 @@ POST https://graph.microsoft.com/beta/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -157,7 +158,6 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -209,7 +209,6 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

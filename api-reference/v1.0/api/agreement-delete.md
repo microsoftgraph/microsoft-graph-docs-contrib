@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",

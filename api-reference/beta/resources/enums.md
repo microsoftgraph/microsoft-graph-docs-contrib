@@ -11,6 +11,28 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
+### userPurpose values
+
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
 ### recommendationCategory values 
 
 |Member|
@@ -191,6 +213,17 @@ Namespace: microsoft.graph
 |requestReceived|
 |unknownFutureValue|
 
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionStage values 
 
 |Member|
@@ -347,7 +380,7 @@ Namespace: microsoft.graph
 ### synchronizationSecret values
 
 |Member|
-|:----|
+|:---|
 |None|
 |UserName|
 |Password|
@@ -382,6 +415,9 @@ Namespace: microsoft.graph
 |Oauth2AuthorizationCode|
 |Oauth2RedirectUri|
 |ApplicationTemplateIdentifier|
+|Oauth2TokenExchangeUri|
+|Oauth2AuthorizationUri|
+|AuthenticationType|
 |Server|
 |PerformInboundEntitlementGrants|
 |HardDeletesEnabled|
@@ -389,6 +425,54 @@ Namespace: microsoft.graph
 |SyncAgentADContainer|
 |ValidateDomain|
 |TestReferences|
+|ConnectionString|
+
+### synchronizationScheduleState values 
+
+|Member|
+|:---|
+|Active|
+|Disabled|
+|Paused|
+
+### synchronizationStatusCode values
+
+|Member|
+|:---|
+|NotConfigured|
+|NotRun|
+|Active|
+|Paused|
+|Quarantine|
+
+### synchronizationTaskExecutionResult values 
+
+|Member|
+|:---|
+|Succeeded|
+|Failed|
+|EntryLevelErrors|
+
+### quarantineReason values 
+
+|Member|
+|:---|
+|EncounteredBaseEscrowThreshold|
+|EncounteredTotalEscrowThreshold|
+|EncounteredEscrowProportionThreshold|
+|EncounteredQuarantineException|
+|Unknown|
+|QuarantinedOnDemand|
+|TooManyDeletes|
+|IngestionInterrupted|
+
+### attributeMappingSourceType values 
+
+|Member|
+|:---|
+|Attribute|
+|Constant|
+|Function|
 
 ### filterMode values
 
@@ -476,6 +560,13 @@ Namespace: microsoft.graph
 |Binary|
 |Boolean|
 |DateTime|
+
+### scopeOperatorType values 
+
+|Member|
+|:---|
+|Binary|
+|Unary|
 
 ### mutability values
 
@@ -2217,14 +2308,15 @@ Possible values for user account types (group membership), per Windows definitio
 |flowWhenChanged|
 |flowAlways|
 
-### attributeFlowType values
+### attributeFlowType values 
 
 |Member|
 |:---|
-|always|
-|objectAddOnly|
-|multiValueAddOnly|
-|restId|
+|Always|
+|ObjectAddOnly|
+|MultiValueAddOnly|
+|ValueAddOnly|
+|AttributeAddOnly|
 
 ### objectFlowTypes values
 
@@ -2457,6 +2549,7 @@ Possible values for user account types (group membership), per Windows definitio
 |b2bDirectConnectUser|
 |otherExternalUser|
 |serviceProvider|
+|microsoftAdminPortals|
 
 ### signInAccessType values 
 
@@ -3482,6 +3575,21 @@ Possible values for user account types (group membership), per Windows definitio
 |mfa|
 |unknownFutureValue|
 
+### authenticationStrengthResult values
+
+|Member|
+|:---|
+|notSet|
+|skippedForProofUp|
+|satisfied|
+|singleChallengeRequired|
+|multipleChallengesRequired|
+|singleRegistrationRequired|
+|multipleRegistrationsRequired|
+|cannotSatisfyDueToCombinationConfiguration|
+|cannotSatisfy|
+|unknownFutureValue|
+
 ### authenticationMethodModes values
 
 |Member|
@@ -3597,6 +3705,7 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
 
 ### authenticationEventType values
 
@@ -3604,4 +3713,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |tokenIssuanceStart|
 |pageRenderStart|
+|unknownFutureValue|
+
+### microsoftAuthenticatorAuthenticationMethodClientAppName values
+
+|Member|
+|:-----|
+|microsoftAuthenticator|
+|outlookMobile|
 |unknownFutureValue|
