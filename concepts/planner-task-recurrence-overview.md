@@ -35,24 +35,24 @@ The following example involves a report that must be completed regularly and uti
 
 The report and its associated task are due every 2 weeks on Friday; the series started on May 14, 2021. The first report is due on that date, Friday, May 14. Fast forward to January 7, 2022, 34 weeks later. The person who did the reports took some time off in December, and nobody completed the reports. The current recurring task (and corresponding report) is due on December 10. The report and its associated task are now 4 weeks overdue.
 
->**Note:** At this point, a contrast between recurring meetings and events can be detected. Meetings don't need to be _marked complete_ in order for an automated system to schedule the next meeting on the calendar. Whereas completing an overdue task can generate another task that is due in the past, there is no concept of _completing a meeting in the past_. The next instance of a meeting is always in the future, based on _today's date_. The _today's date_ isn't used for calculating due dates of recurring tasks, in order to avoid losing track of late work.
+>**Note:** At this point, the contrast between recurring meetings and events becomes apparent. Meetings don't need to be _marked complete_ in order for an automated system to schedule the next meeting on the calendar. Completing an overdue task can generate another task that is due in the past, but there is no concept of _completing a meeting in the past_. The next instance of a meeting is always in the future, based on _today's date_. The _today's date_ isn't used to calculate due dates of recurring tasks, in order to avoid losing track of late work.
 
-For this task, if the recurrence schedule isn't edited, and the December 10 task is marked complete, then the next task for the series is instantiated with a due date of December 24.
+For this task, if the recurrence schedule isn't edited, and the December 10 task is marked complete, the next task for the series is instantiated with a due date of December 24.
 
-However, suppose it is decided that going forward, this report should be done every 3 weeks, rather than every 2 weeks. It might even be decided that the 3-week cadence should be retroactive for the overdue reports. This change invites different possible options of how the continuation of the series can be defined.
+However, suppose a decision is made that going forward, this report should be done every 3 weeks, rather than every 2 weeks. The decision might even be that the 3-week cadence should be retroactive for the overdue reports. This change invites different possible options for how the continuation of the series can be defined:
 
 - Should the December 10 due date be changed?
 - When should the next task be due?
 
-Quickly reviewing the state of the recurring task, and decision:
+The following is the current state of the recurring task, and decision:
 
 - The current task has a due date of December 10, 2021.
 - The previous completed task was due on November 26, 2021.
 - A decision is made to change the cadence from 2 weeks to 3 weeks; the change applies retroactively for the overdue reports.
 
-Given the context, two options can be considered, both valid customer stories for how the series can be changed to accommodate the new 3-week cadence:
+Given the context, two options are possible, and both are valid customer stories for how the series can be changed to accommodate the new 3-week cadence.
 
-Option 1: Change the December 10 task to be due 3 weeks after our previous November 26 task. The current task has its due date changed to December 17, and the following task is due on January 7.
+Option 1: Change the December 10 task to be due 3 weeks after the previous November 26 task. The current task has its due date changed to December 17, and the following task is due on January 7.
 
 Option 2: Keep the current December 10 due date, and change the cadence for the following task that is due on December 31.
 
@@ -64,13 +64,13 @@ The following terms are used to discuss and describe Planner tasks with recurren
 
 ### Definition of a task with active recurrence
 
-If the following three conditions are met, then a **plannerTask** has _active recurrence:_
+If the following three conditions are met, a **plannerTask** has _active recurrence:_
 
 - **percentComplete** property has a value less than `100`.
 - **recurrence.nextInSeriesTaskId** is `null` or undefined.
 - **recurrence.schedule** contains a valid **plannerRecurrenceSchedule** with a non-null **nextOccurrenceDateTime**.
 
-A task with _active recurrence_ (call it _task A_) can trigger the recurrence mechanism of the service that creates a new task (_task B_) to continue the recurring series. When that happens, _task A_ has its **recurrence.nextInSeriesTaskId** set to the ID of _task B_. Since _task A_ no longer meets condition 2, it no longer has _active recurrence_. _Task A_ can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
+A task with _active recurrence_ (call it _task A_) can trigger the recurrence mechanism of the service that creates a new task (_task B_) to continue the recurring series. When that happens, _task A_ has its **recurrence.nextInSeriesTaskId** set to the ID of _task B_. Because _task A_ no longer meets condition 2, it no longer has _active recurrence_. _Task A_ can never have _active recurrence_ ever again, as **nextInSeriesTaskId** is a read-only property and the service never deletes its value.
 
 ### Definition of a recurrence series
 
@@ -83,11 +83,11 @@ A _recurrence series_ (also known as _recurring series_) is a sequential series 
 
 ### Avoiding the ambiguous term recurring task
 
-In common speech, the term _recurring task_ sometimes refers to the unique _task with active recurrence_ within a series; and sometimes refers to the _recurrence series_ itself, or all the tasks within the recurrence series. This ambiguity is common in spoken English: in the same way, _the weekly report_ might refer to one instance of the report, or to the recurring responsibility of doing the report each week. Due to this ambiguity, the usage of the term _recurring task_ is avoided, preferring instead one of the following terms: _task with active recurrence_ or _recurrence series_.
+In common speech, the term _recurring task_ sometimes refers to the unique _task with active recurrence_ within a series; and sometimes refers to the _recurrence series_ itself, or all the tasks within the recurrence series. This ambiguity is common in spoken English: in the same way, _the weekly report_ might refer to one instance of the report, or to the recurring responsibility of doing the report each week. Due to this ambiguity, the usage of the term _recurring task_ is avoided; instead, one of the following terms is preferred: _task with active recurrence_ or _recurrence series_.
 
 ## Resource type details
 
-Working with recurrence for Planner tasks entails the use of many resource types: [plannerTaskRecurrence](/graph/api/resources/plannertaskrecurrence), [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule), and [recurrencePattern](/graph/api/resources/recurrencepattern); the following provides further details about the latter two of these resource types.
+Working with recurrence for Planner tasks entails the use of many resource types: [plannerTaskRecurrence](/graph/api/resources/plannertaskrecurrence), [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule), and [recurrencePattern](/graph/api/resources/recurrencepattern). the following sections provide more details about the latter two resource types.
 
 ### plannerRecurrenceSchedule
 
@@ -95,15 +95,15 @@ The [plannerRecurrenceSchedule](/graph/api/resources/plannerrecurrenceschedule) 
 
 The **pattern** is a [recurrencePattern](/graph/api/resources/recurrencepattern); for details, see [Planner-specific notes about the recurrencePattern](#planner-specific-notes-about-the-recurrencepattern).
 
-The **patternStartDateTime** indicates the starting date and time of the series as a **DateTimeOffset**. A non-null value must be assigned to **patternStartDateTime** whenever the **pattern** property is used; this is currently the only way to define recurrence. Clients should generally reassign this value when they make a change to the **recurrence.schedule.pattern** to indicate the starting date of the new pattern, however if clients don't include a value then the service continues the series using a sane default value based on the schedule. For more details, see the following notes and clarifications.
+The **patternStartDateTime** indicates the starting date and time of the series as a **DateTimeOffset**. A non-null value must be assigned to **patternStartDateTime** whenever the **pattern** property is used; this is currently the only way to define recurrence. Clients should generally reassign this value when they make a change to the **recurrence.schedule.pattern** to indicate the starting date of the new pattern; however, if clients don't include a value, the service continues the series using a default value based on the schedule. For more details, see the following notes and clarifications.
 
 The **nextOccurrenceDateTime** is a read-only system-generated field. It provides the service-calculated date that is used as the **dueDateTime** for the next [plannerTask](/graph/api/resources/plannertask) in the series. The **nextOccurrenceDateTime** is calculated from the **pattern** along with either the **patternStartDateTime** or an _anchor value_ that tracks the originally scheduled date of the given task.
 
->**Note:** Planner doesn't utilize the **recurrenceRange** resource type at this time.
+>**Note:** Planner doesn't currently use the **recurrenceRange** resource type.
 
 ### Planner-specific notes about the recurrencePattern
 
-Planner-specific restrictions for [recurrencePattern](/graph/api/resources/recurrencepattern):
+The following are Planner-specific restrictions for [recurrencePattern](/graph/api/resources/recurrencepattern):
 
 - `relativeMonthly` and `relativeYearly` patterns might not specify more than one day for **daysOfWeek**.
 - For `weekly` patterns, if **daysOfWeek** contains more than one day, the **interval** must be `1`.
@@ -113,7 +113,7 @@ Clarifications about **recurrencePattern**:
 - Whenever any property within a **recurrencePattern** is changed, all relevant pattern properties must be specified. For example, a pattern with **type** = `daily` and **interval** = `1` can't be patched with only **interval** = `2`; otherwise, the service returns a `400 Bad Request` response code. The **type** = `daily` property must also be specified, even though the **type** isn't changing. This is normal behavior for the **recurrencePattern** resource type, although some other Planner properties work differently.
 
 - Unused properties are automatically assigned a default value.
-  - For example, the **month** property is only used for yearly patterns, with valid values from `1` to `12`. However, `daily`, `weekly`, and `monthly` patterns have `0` assigned to the **month** property, since `0` is the default for an integer value.
+  - For example, the **month** property is only used for yearly patterns, with valid values from `1` to `12`. However, `daily`, `weekly`, and `monthly` patterns have `0` assigned to the **month** property, because `0` is the default for an integer value.
   - Enum properties, including **firstDayOfWeek** and **index**, get default values that correspond to the first enum value: `sunday` and `first`, respectively.
 
 - For `absoluteMonthly` patterns, if the selected **dayOfMonth** doesn't exist in a particular month, the _last_ day of the month is substituted.
@@ -132,7 +132,7 @@ Given a _task with active recurrence_ with the following properties:
 - The **dueDateTime** is Wednesday 2/2
 - The **nextOccurrenceDateTime** is Wednesday 2/9
 
-Three possible changes to the **pattern** are examined, and the resulting **nextOccurrenceDateTime** are determined for each:
+Three changes to the **pattern** are possible, and the resulting **nextOccurrenceDateTime** are shown in the following table.
 
 |Pattern change|Resulting nextOccurrenceDateTime|
 |:---|:---|
@@ -140,7 +140,7 @@ Three possible changes to the **pattern** are examined, and the resulting **next
 |Weekly every Thursday|Thursday 2/10|
 |Weekly every Thursday and **firstDayOfWeek** changed to Thursday|Thursday 2/3|
 
-Note particularly the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** = `Thursday`, Thursday 2/3 is _not in the same week_ as Wednesday 2/2 because a new week starts on Thursday; whereas if the **firstDayOfWeek** isn't `Thursday`, then Thursday 2/3 is in the _same week_ as Wednesday 2/2, and Thursday 2/10 is in the _next week_.
+Note the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** = `Thursday`, Thursday 2/3 is _not in the same week_ as Wednesday 2/2 because a new week starts on Thursday; whereas if the **firstDayOfWeek** isn't `Thursday`, then Thursday 2/3 is in the _same week_ as Wednesday 2/2, and Thursday 2/10 is in the _next week_.
 
 ### Notes about the schedule and due date
 
