@@ -120,6 +120,7 @@ The following table shows the properties that are required when you create the [
 |touchIdTimeoutInHours|Int32|Maximum hours after which the user must enter their password to unlock the device instead of using Touch ID. Available for devices running macOS 12 and later. Valid values 0 to 2147483647|
 |iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running macOS 12 and later.|
 |iCloudDesktopAndDocumentsBlocked|Boolean|When TRUE the synchronization of cloud desktop and documents is blocked. When FALSE, synchronization of the cloud desktop and documents are allowed. Available for devices running macOS 10.12.4 and later.|
+|activationLockWhenSupervisedAllowed|Boolean|When TRUE, activation lock is allowed when the devices is in the supervised mode. When FALSE, activation lock is not allowed. Default is false.|
 
 
 
@@ -133,7 +134,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5014
+Content-length: 5062
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -271,7 +272,8 @@ Content-length: 5014
   "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
   "touchIdTimeoutInHours": 5,
   "iCloudPrivateRelayBlocked": true,
-  "iCloudDesktopAndDocumentsBlocked": true
+  "iCloudDesktopAndDocumentsBlocked": true,
+  "activationLockWhenSupervisedAllowed": true
 }
 ```
 
@@ -280,7 +282,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5186
+Content-Length: 5234
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -421,6 +423,7 @@ Content-Length: 5186
   "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
   "touchIdTimeoutInHours": 5,
   "iCloudPrivateRelayBlocked": true,
-  "iCloudDesktopAndDocumentsBlocked": true
+  "iCloudDesktopAndDocumentsBlocked": true,
+  "activationLockWhenSupervisedAllowed": true
 }
 ```
