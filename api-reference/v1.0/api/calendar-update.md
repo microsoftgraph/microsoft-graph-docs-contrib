@@ -2,7 +2,7 @@
 title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

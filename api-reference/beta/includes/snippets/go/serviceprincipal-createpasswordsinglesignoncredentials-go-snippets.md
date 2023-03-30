@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/CreatePasswordSingleSignOnCredentials"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCreatePasswordSingleSignOnCredentialsPostRequestBody()
 id := "5793aa3b-cca9-4794-679a240f8b58"
@@ -13,19 +21,19 @@ requestBody.SetId(&id)
 
 
 credential := graphmodels.NewCredential()
-additionalData := map[string]interface{}{
-	"fieldId" : "param_username", 
-	"value" : "myusername", 
-	"type" : "username", 
-}
-credential.SetAdditionalData(additionalData)
+fieldId := "param_username"
+credential.SetFieldId(&fieldId) 
+value := "myusername"
+credential.SetValue(&value) 
+type := "username"
+credential.SetType(&type) 
 credential1 := graphmodels.NewCredential()
-additionalData := map[string]interface{}{
-	"fieldId" : "param_password", 
-	"value" : "pa$$w0rd", 
-	"type" : "password", 
-}
-credential1.SetAdditionalData(additionalData)
+fieldId := "param_password"
+credential1.SetFieldId(&fieldId) 
+value := "pa$$w0rd"
+credential1.SetValue(&value) 
+type := "password"
+credential1.SetType(&type) 
 
 credentials := []graphmodels.Credentialable {
 	credential,
@@ -34,7 +42,7 @@ credentials := []graphmodels.Credentialable {
 }
 requestBody.SetCredentials(credentials)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").CreatePasswordSingleSignOnCredentials().Post(requestBody)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").CreatePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -17,6 +17,7 @@ Generic representation of a team template definition for a team with a specific 
 
 Inherits from [entity](../resources/entity.md).
 
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

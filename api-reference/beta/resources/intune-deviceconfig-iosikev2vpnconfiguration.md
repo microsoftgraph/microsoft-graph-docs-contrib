@@ -1,7 +1,7 @@
 ---
 title: "iosikEv2VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the iOS device to connect to desired IKEv2 VPN endpoint."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -291,7 +291,3 @@ Here is a JSON representation of the resource.
   "mtuSizeInBytes": 1024
 }
 ```
-
-
-
-

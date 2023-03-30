@@ -1,5 +1,5 @@
 ---
-title: "Remove owner"
+title: "Remove service principal owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
 ms.localizationpriority: medium
@@ -7,11 +7,12 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Remove owner
+# Remove service principal owner
 
 Namespace: microsoft.graph
 
-Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.
+Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object. As a recommended best practice, service principals should have at least two owners.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,11 +24,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## HTTP request
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /servicePrincipals/{id}/owners/{id}/$ref
-
+DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals(appId='{appId}')/owners/{id}/$ref
 ```
+
 ## Request headers
 | Name | Description|
 |:---- |:---------- |
@@ -74,8 +79,19 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-owners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delete-owners-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-delete-owners-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

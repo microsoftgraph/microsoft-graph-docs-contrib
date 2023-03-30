@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'"  -OutFile $outFileId
+Get-MgPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'" 
 
 ```

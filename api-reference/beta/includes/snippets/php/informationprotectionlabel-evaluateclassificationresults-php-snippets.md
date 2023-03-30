@@ -29,13 +29,11 @@ $contentInfo->setAdditionalData($additionalData);
 
 $requestBody->setContentInfo($contentInfo);
 $classificationResultsClassificationResult1 = new ClassificationResult();
-$additionalData = [
-'sensitiveTypeId' => 'cb353f78-2b72-4c3c-8827-92ebe4f69fdf', 
-'count' => 4,
-'confidenceLevel' => 75,
-];
-$classificationResultsClassificationResult1->setAdditionalData($additionalData);
+$classificationResultsClassificationResult1->setSensitiveTypeId('cb353f78-2b72-4c3c-8827-92ebe4f69fdf');
 
+$classificationResultsClassificationResult1->setCount(4);
+
+$classificationResultsClassificationResult1->setConfidenceLevel(75);
 
 
 $classificationResultsArray []= $classificationResultsClassificationResult1;

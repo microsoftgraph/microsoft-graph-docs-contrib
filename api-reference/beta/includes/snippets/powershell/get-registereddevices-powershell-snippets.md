@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
-Get-MgUserRegisteredDevice -UserId $userId -OutFile $outFileId
+Get-MgUserRegisteredDevice -UserId $userId
 
 ```

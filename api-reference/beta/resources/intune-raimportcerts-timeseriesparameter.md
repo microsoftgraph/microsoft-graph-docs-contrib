@@ -1,7 +1,7 @@
 ---
 title: "timeSeriesParameter resource type"
 description: "Parameter passed to GetHealthMetricTimeSeries when requesting snapshot time series."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,7 +42,3 @@ Here is a JSON representation of the resource.
   "endDateTime": "String (timestamp)"
 }
 ```
-
-
-
-

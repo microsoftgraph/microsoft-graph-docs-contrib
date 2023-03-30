@@ -5,9 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Groups/Item/Team"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewTeamPostRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTeamPutRequestBody()
 additionalData := map[string]interface{}{
 memberSettings := graphmodels.New()
 	allowCreatePrivateChannels := true
@@ -30,7 +38,7 @@ funSettings.SetGiphyContentRating(&giphyContentRating)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.GroupsById("group-id").Team().Put(requestBody)
+graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: restoreCloudPc"
-description: "Restore a Cloud PC device to a previous state from a snapshot."
+description: "Restore a Cloud PC device to a previous state with an Intune managed device ID."
 author: "rongting"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a Cloud PC device to a previous state from a snapshot.
+Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -100,8 +100,6 @@ Content-length: 37
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

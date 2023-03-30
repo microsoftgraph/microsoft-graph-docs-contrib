@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewIdentityUserFlowAttribute()
 displayName := "Hobby"
@@ -15,7 +23,7 @@ requestBody.SetDescription(&description)
 dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
 requestBody.SetDataType(&dataType) 
 
-result, err := graphClient.Identity().UserFlowAttributes().Post(requestBody)
+result, err := graphClient.Identity().UserFlowAttributes().Post(context.Background(), requestBody, nil)
 
 
 ```

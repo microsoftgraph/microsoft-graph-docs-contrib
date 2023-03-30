@@ -62,7 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List attendance records
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -102,8 +103,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 
 ---
 
-
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -155,6 +155,107 @@ Content-Type: application/json
         }
       ]
     }
+  ]
+}
+```
+
+### Example 2: List attendance records containing Azure Communication Services users
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_attendancerecord_acsUser"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-attendancerecord-acsuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-attendancerecord-acsuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-attendancerecord-acsuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-acsuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attendancerecord-acsuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-attendancerecord-acsuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+      {
+        "id": "00000012-518d-e776-71d3-44482200c7c4",
+        "emailAddress": "",
+        "totalAttendanceInSeconds": 274,
+        "role": "Presenter",
+        "registrantId": null,
+        "identity": {
+            "@odata.type": "#microsoft.graph.azureCommunicationServicesUserIdentity",
+            "id": "8:acs:0c6204c3-70b6-4981-9f2c-5194ced1cdd1_00000012-518d-e776-71d3-44482200c7c3",
+            "displayName": "Misty Croft",
+            "azureCommunicationServicesResourceId": "0c6204c3-70b6-4981-9f2c-5194ced1cdd1"
+        },
+        "attendanceIntervals": [
+            {
+                "joinDateTime": "2022-06-29T22:54:43.656285Z",
+                "leaveDateTime": "2022-06-29T22:59:18.5180137Z",
+                "durationInSeconds": 274
+            }
+        ]
+      },
+      {
+          "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e7",
+          "emailAddress": "RayBonilla@contoso.com",
+          "totalAttendanceInSeconds": 209,
+          "role": "Presenter",
+          "registrantId": null,
+          "identity": {
+              "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+              "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e7",
+              "displayName": "Raymond  Bonilla",
+              "tenantId": "160eec3a-e45f-488b-b127-3dd106c48843"
+          },
+          "attendanceIntervals": [
+              {
+                  "joinDateTime": "2022-06-29T22:55:49.1084865Z",
+                  "leaveDateTime": "2022-06-29T22:59:18.5180137Z",
+                  "durationInSeconds": 209
+              }
+          ]
+      }
   ]
 }
 ```

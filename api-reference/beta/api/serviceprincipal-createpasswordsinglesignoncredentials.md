@@ -32,8 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 ```http
 POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
+POST /servicePrincipals(appId='{appId}')/createPasswordSingleSignOnCredentials
 ```
 
 ## Request headers
@@ -114,7 +116,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

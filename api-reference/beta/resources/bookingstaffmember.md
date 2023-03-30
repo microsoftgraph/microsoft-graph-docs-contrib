@@ -29,11 +29,11 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List staff members](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Create bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingstaffmember-update.md) | None	|Update the properties of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Delete](../api/bookingstaffmember-delete.md) | None |Delete a staff member in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List staff members](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Create bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Get bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md).|
+|[Update](../api/bookingstaffmember-update.md) | None	|Update the properties of a **bookingStaffMember** in the specified [bookingBusiness](../resources/bookingbusiness.md).|
+|[Delete](../api/bookingstaffmember-delete.md) | None |Delete a staff member in the specified [bookingBusiness](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -43,8 +43,8 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
-|IsEmailNotificationEnabled|Boolean|`True` means staff member will be notified via email when a booking assigned to them is created or changed.
-|role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler` and `member`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this `[evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`: `scheduler`, `member`. Required. |
+|isEmailNotificationEnabled|Boolean|`True` indicates that a staff member will be notified via email when a booking assigned to them is created or changed.|
+|role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler`, `teamMember`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `scheduler`, `teamMember`. Required. |
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
 |workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the **businessHours** property of the business.|
@@ -67,16 +67,16 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 1024,
+  "availabilityIsAffectedByPersonalCalendar": "Boolean",
+  "colorIndex": "Int32",
   "displayName": "String",
   "emailAddress": "String",
   "id": "String (identifier)",
+  "isEmailNotificationEnabled": "Boolean",
   "role": {"@odata.type": "microsoft.graph.bookingStaffRole"},
-  "useBusinessHours": true,
-  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
   "timeZone": "String",
-  "IsEmailNotificationEnabled": "Boolean"
+  "useBusinessHours": "Boolean",
+  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
 }
 
 ```

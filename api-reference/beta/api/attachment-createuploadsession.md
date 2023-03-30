@@ -142,7 +142,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -185,7 +184,7 @@ For an inline attachment, set _isInline_ property to `true` and use the _content
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession
+POST https://graph.microsoft.com/beta/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession
 Content-type: application/json
 
 {

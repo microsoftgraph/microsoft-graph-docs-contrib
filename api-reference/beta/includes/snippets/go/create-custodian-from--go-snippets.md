@@ -5,15 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCustodian()
 email := "AdeleV@contoso.com"
 requestBody.SetEmail(&email) 
-applyHoldToSources := "true"
+applyHoldToSources := true
 requestBody.SetApplyHoldToSources(&applyHoldToSources) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Custodians().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Custodians().Post(context.Background(), requestBody, nil)
 
 
 ```

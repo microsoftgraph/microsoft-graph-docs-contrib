@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/CheckMemberObjects"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCheckMemberObjectsPostRequestBody()
 ids := []string {
@@ -17,7 +25,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Me().CheckMemberObjects().Post(requestBody)
+result, err := graphClient.Me().CheckMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

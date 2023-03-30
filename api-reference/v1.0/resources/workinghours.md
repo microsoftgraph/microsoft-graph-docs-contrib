@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents the days of the week and hours in a specific time zone that the user works.
 
 Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
-You can [get](../api/user-get-mailboxsettings.md#example-3) and [set](../api/user-update-mailboxsettings.md#example-2) the 
+You can [get](../api/user-get-mailboxsettings.md#example-3-get-specifically-the-working-hour-settings-of-the-signed-in-users-mailbox) and [set](../api/user-update-mailboxsettings.md#example-2) the 
 working hours of a user as part of the user's [mailbox settings](mailboxsettings.md). 
 
 You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 
@@ -28,8 +28,8 @@ appropriate time zone.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | daysOfWeek | dayOfWeek collection | The days of the week on which the user works. |
-| startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
 | endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
+| startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
 | timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
 
 ## JSON representation
@@ -47,8 +47,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "String (timeofday)",
   "endTime": "String (timeofday)",
+  "startTime": "String (timeofday)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 ```

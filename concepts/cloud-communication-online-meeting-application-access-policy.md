@@ -91,4 +91,4 @@ Follow the steps in this article to create and/or grant an application access po
 - [Get-CsApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
 - [Set-CsApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
 - [Remove-CsApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Teams API overview](teams-concept-overview.md)

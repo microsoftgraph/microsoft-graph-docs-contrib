@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Sites/Item/ContentTypes/Item/CopyToDefaultContentLocation"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCopyToDefaultContentLocationPostRequestBody()
 sourceFile := graphmodels.NewItemReference()
@@ -19,7 +27,7 @@ requestBody.SetSourceFile(sourceFile)
 destinationFileName := "newname.txt"
 requestBody.SetDestinationFileName(&destinationFileName) 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").CopyToDefaultContentLocation().Post(requestBody)
+graphClient.SitesById("site-id").ContentTypesById("contentType-id").CopyToDefaultContentLocation().Post(context.Background(), requestBody, nil)
 
 
 ```

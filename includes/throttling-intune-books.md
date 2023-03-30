@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -16,6 +16,6 @@ ms.topic: include
 The preceding limits apply to the following resources: 
 
  
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [deviceInstallState](/graph/api/resources/deviceinstallstate) <li> [eBookInstallSummary](/graph/api/resources/ebookinstallsummary) <li> [iosVppEBook](/graph/api/resources/iosvppebook) <li> [iosVppEBookAssignment](/graph/api/resources/iosvppebookassignment) <li> [managedEBook](/graph/api/resources/managedebook) <li> [managedEBookAssignment](/graph/api/resources/managedebookassignment) <li> [managedEBookCategory](/graph/api/resources/managedebookcategory) <li> [userInstallStateSummary](/graph/api/resources/userinstallstatesummary) </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [deviceInstallState](/graph/api/resources/intune-books-deviceinstallstate) <li> [eBookInstallSummary](/graph/api/resources/intune-books-ebookinstallsummary) <li> [iosVppEBook](/graph/api/resources/intune-books-iosvppebook) <li> [iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment) <li> [managedEBook](/graph/api/resources/intune-books-managedebook) <li> [managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment) <li> [managedEBookCategory](/graph/api/resources/intune-books-managedebookcategory) <li> [userInstallStateSummary](/graph/api/resources/intune-books-userinstallstatesummary) </ul> |

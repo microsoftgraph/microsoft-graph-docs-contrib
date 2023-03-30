@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Create a page in the site pages list of a site
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
 
@@ -35,14 +36,12 @@ POST /sites/{site-id}/pages
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sitePage][] resource to create.
+In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
 
 ## Example
 
 The following example shows how to create a new page.
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -50,77 +49,96 @@ POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
-    "name": "Events.aspx",
-    "title": "Team Events",
-    "publishingState": {
-        "level": "checkedOut",
-        "versionId": "0.1"
-    },
-    "webParts": [
-        {
-            "type": "rte",
-            "data": {
-                "innerHTML": "<p>Here are the team's upcoming events:</p>"
-            }
-        },
-        {
-            "type": "d1d91016-032f-456d-98a4-721247c305e8",
-            "data": {
-                "title": "Events",
-                "description": "Display upcoming events",
-                "serverProcessedContent": {
-                    "htmlStrings": {},
-                    "searchablePlainTexts": {
-                        "title": ""
-                    },
-                    "imageSources": {},
-                    "links": {
-                        "baseUrl": "https://www.contoso.com/sites/Engineering"
-                    },
-                    "componentDependencies": {
-                        "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"
-                    }
-                },
-                "dataVersion": "1.0",
-                "properties": {
-                    "selectedListId": "032e08ab-89b0-4d8f-bc10-73094233615c",
-                    "selectedCategory": "",
-                    "dateRangeOption": 0,
-                    "startDate": "",
-                    "endDate": "",
-                    "isOnSeeAllPage": false,
-                    "layoutId": "FilmStrip",
-                    "dataProviderId": "Event",
-                    "webId": "0764c419-1ecc-4126-ba32-0c25ae0fffe8",
-                    "siteId": "6b4ffc7a-cfc2-4a76-903a-1cc3686dee23"
+  "name": "test.aspx",
+  "title": "test",
+  "pageLayout": "article",
+  "showComments": true,
+  "showRecommendedPages": false,
+  "titleArea": {
+    "enableGradientEffect": true,
+    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "layout": "colorBlock",
+    "showAuthor": true,
+    "showPublishedDate": false,
+    "showTextBlockAboveTitle": false,
+    "textAboveTitle": "TEXT ABOVE TITLE",
+    "textAlignment": "left",
+    "imageSourceType": 2,
+    "title": "sample1"
+  },
+  "canvasLayout": {
+    "horizontalSections": [
+      {
+        "layout": "oneThirdRightColumn",
+        "id": "1",
+        "emphasis": "none",
+        "columns": [
+          {
+            "id": "1",
+            "width": 8,
+            "webparts": [
+              {
+                "id": "6f9230af-2a98-4952-b205-9ede4f9ef548",
+                "innerHtml": "<p><b>Hello!</b></p>"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "width": 4,
+            "webparts": [
+              {
+                "id": "73d07dde-3474-4545-badb-f28ba239e0e1",
+                "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
+                "data": {
+                  "dataVersion": "1.9",
+                  "description": "Show an image on your page",
+                  "title": "Image",
+                  "properties": {
+                    "imageSourceType": 2,
+                    "altText": "",
+                    "overlayText": "",
+                    "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+                    "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+                    "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
+                    "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+                    "imgWidth": 4288,
+                    "imgHeight": 2848,
+                    "fixAspectRatio": false,
+                    "captionText": "",
+                    "alignment": "Center"
+                  },
+                  "serverProcessedContent": {
+                    "imageSources": [
+                      {
+                        "key": "imageSource",
+                        "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
+                      }
+                    ],
+                    "customMetadata": [
+                      {
+                        "key": "imageSource",
+                        "value": {
+                          "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+                          "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+                          "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
+                          "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+                          "width": "4288",
+                          "height": "2848"
+                        }
+                      }
+                    ]
+                  }
                 }
-            }
-        }
+              }
+            ]
+          }
+        ]
+      }
     ]
+  }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-page-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-page-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ## Response
@@ -134,84 +152,57 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
-    "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
-    "createdDateTime": "2016-12-06T20:04:40Z",
-    "lastModifiedDateTime": "2016-12-06T20:05:09Z",
-    "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
+    "@odata.type": "microsoft.graph.sitePage",
+    "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
+    "name": "test.aspx",
+    "webUrl": "SitePages/test.aspx",
+    "title": "test",
+    "pageLayout": "article",
+    "showComments": true,
+    "showRecommendedPages": false,
     "createdBy": {
-        "user": {
-            "email": "rahmit",
-            "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal"
-        }
+      "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+      }
     },
     "lastModifiedBy": {
+      "user": {
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
+      }
+    },
+    "publishingState": {
+      "level": "checkout",
+      "versionId": "0.1",
+      "checkedOutBy": {
         "user": {
-            "email": "rahmit",
-            "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal"
+          "displayName": "Rahul Mittal",
+          "email": "rahmit@contoso.com"
         }
+      }
     },
-    "parentReference": {
-        "id": "eb3bfd48-56f8-4c1e-8312-e58588b22e7c"
-    },
-    "contentType": {
-        "id": "0x0101009D1CB255DA76424F860D91F20E6C411800C9E7033636784C4B88A284B1823C45FD",
-        "name": "Site Page"
-    },
-    "description": "",
-    "title": "Team Events",
-    "webParts": [
-        {
-            "type": "rte",
-            "data": {
-                "innerHTML": "<p>Here are the team's upcoming events:</p>"
-            }
-        },
-        {
-            "type": "d1d91016-032f-456d-98a4-721247c305e8",
-            "data": {
-                "title": "Events",
-                "description": "Display upcoming events",
-                "serverProcessedContent": {
-                    "htmlStrings": {},
-                    "searchablePlainTexts": {
-                        "title": ""
-                    },
-                    "imageSources": {},
-                    "links": {
-                        "baseUrl": "https://www.contoso.com/teams/Engineering"
-                    },
-                    "componentDependencies": {
-                        "layoutComponentId": "8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027"
-                    }
-                },
-                "dataVersion": "1.0",
-                "properties": {
-                    "selectedListId": "032e08ab-89b0-4d8f-bc10-73094233615c",
-                    "selectedCategory": "",
-                    "dateRangeOption": 0,
-                    "startDate": "",
-                    "endDate": "",
-                    "isOnSeeAllPage": false,
-                    "layoutId": "FilmStrip",
-                    "dataProviderId": "Event",
-                    "webId": "0764c419-1ecc-4126-ba32-0c25ae0fffe8",
-                    "siteId": "6b4ffc7a-cfc2-4a76-903a-1cc3686dee23"
-                }
-            }
-        }
-    ]
+    "titleArea": {
+        "enableGradientEffect": true,
+        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "layout": "colorBlock",
+        "showAuthor": true,
+        "showPublishedDate": false,
+        "showTextBlockAboveTitle": false,
+        "textAboveTitle": "TEXT ABOVE TITLE",
+        "textAlignment": "left",
+        "title": "sample4",
+        "imageSourceType": 2
+    }
 }
 ```
 
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
 [list]: ../resources/list.md
-[listItem]: ../resources/listitem.md
+[listitem]: ../resources/listitem.md
 [site]: ../resources/site.md
-[sitePage]: ../resources/sitepage.md
+[sitepage]: ../resources/sitepage.md
 
 <!--
 {
@@ -223,5 +214,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

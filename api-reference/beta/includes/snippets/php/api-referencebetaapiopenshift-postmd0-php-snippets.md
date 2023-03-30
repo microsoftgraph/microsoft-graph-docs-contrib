@@ -14,7 +14,7 @@ $requestBody->setId('OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8');
 
 $requestBody->setSchedulingGroupId('TAG_228940ed-ff84-4e25-b129-1b395cf78be0');
 
-$sharedOpenShift = new SharedOpenShift();
+$sharedOpenShift = new OpenShiftItem();
 $sharedOpenShift->setNotes('InventoryManagement');
 
 $sharedOpenShift->setOpenSlotCount(2);

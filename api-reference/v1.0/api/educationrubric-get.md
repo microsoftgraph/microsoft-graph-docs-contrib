@@ -2,7 +2,7 @@
 title: "Get educationRubric"
 description: "Retrieve the properties and relationships of an educationrubric object."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -11,9 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
-
-Note that when getting the [rubric of an assignment](educationassignment-get-rubric.md), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
+Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. Only teachers and students can perform this operation.
 
 ## Permissions
 
@@ -23,14 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Application                            | Not supported. |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
+GET /education/me/rubrics/{id}
 ```
 
 ## Request headers
@@ -61,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
+GET https://graph.microsoft.com/v1.0/education/me/rubrics/bf040af7-a5ff-4abe-a8c8-1bdc532344c2
 ```
 
 # [C#](#tab/csharp)
@@ -89,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

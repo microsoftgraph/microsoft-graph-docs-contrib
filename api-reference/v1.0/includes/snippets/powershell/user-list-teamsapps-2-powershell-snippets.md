@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgUserTeamworkInstalledApp -UserId $userId -OutFile $outFileId
+Get-MgUserTeamworkInstalledApp -UserId $userId
 
 ```

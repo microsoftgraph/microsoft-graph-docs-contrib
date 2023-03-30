@@ -127,7 +127,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembersById('bookingStaffMemberBase-id')->patch($requestBody);
+$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembersById('bookingStaffMemberBase-id')->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ configuration := &graphconfig.DriveItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SharesById("sharedDriveItem-id").DriveItem().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.SharesById("sharedDriveItem-id").DriveItem().Get(context.Background(), configuration)
 
 
 ```

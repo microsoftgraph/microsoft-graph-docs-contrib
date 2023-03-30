@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewB2cAuthenticationMethodsPolicy()
 isEmailPasswordAuthenticationEnabled := false
@@ -15,7 +23,7 @@ requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled)
 isPhoneOneTimePasswordAuthenticationEnabled := true
 requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled) 
 
-graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(requestBody)
+result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

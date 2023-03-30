@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/SendMail"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSendMailPostRequestBody()
 message := graphmodels.NewMessage()
@@ -44,10 +52,10 @@ ccRecipients := []graphmodels.Recipientable {
 }
 message.SetCcRecipients(ccRecipients)
 requestBody.SetMessage(message)
-saveToSentItems := "false"
+saveToSentItems := false
 requestBody.SetSaveToSentItems(&saveToSentItems) 
 
-graphClient.Me().SendMail().Post(requestBody)
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

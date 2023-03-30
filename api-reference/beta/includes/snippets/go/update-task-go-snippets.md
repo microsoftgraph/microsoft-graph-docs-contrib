@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPrintTask()
 status := graphmodels.NewPrintTaskStatus()
@@ -15,7 +23,7 @@ description := "completed"
 status.SetDescription(&description) 
 requestBody.SetStatus(status)
 
-graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Patch(requestBody)
+result, err := graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

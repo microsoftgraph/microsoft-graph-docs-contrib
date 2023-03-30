@@ -5,18 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//managedTenants"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTenantCustomizedInformation()
-"@odata.type" := "#microsoft.graph.managedTenants.tenantCustomizedInformation"
-requestBody.Set"@odata.type"(&"@odata.type") 
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
 
 tenantContactInformation := graphmodels.NewTenantContactInformation()
-"@odata.type" := "microsoft.graph.managedTenants.tenantContactInformation"
-tenantContactInformation.Set"@odata.type"(&"@odata.type") 
 name := "String"
 tenantContactInformation.SetName(&name) 
 title := "String"
@@ -36,7 +40,7 @@ requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(requestBody)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

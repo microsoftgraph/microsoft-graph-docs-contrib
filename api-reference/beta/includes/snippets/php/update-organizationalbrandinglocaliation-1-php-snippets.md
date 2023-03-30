@@ -24,7 +24,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->organizationById('organization-id')->branding()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->patch($requestBody, $requestConfiguration);
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 messageType := graphmodels.MESSAGE_CHATMESSAGETYPE 
@@ -20,7 +28,7 @@ importance := graphmodels.NORMAL_CHATMESSAGEIMPORTANCE
 requestBody.SetImportance(&importance) 
 locale := "en-us"
 requestBody.SetLocale(&locale) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 application := null
 from.SetApplication(&application) 
 device := null
@@ -58,7 +66,7 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "Raghav"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 application := null
 mentioned.SetApplication(&application) 
 device := null
@@ -81,7 +89,7 @@ id := int32(1)
 chatMessageMention1.SetId(&id) 
 mentionText := "TestGlobalBot"
 chatMessageMention1.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 application := graphmodels.NewIdentity()
 id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
 application.SetId(&id) 
@@ -110,8 +118,12 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+}
+requestBody.SetMessageHistory(messageHistory)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

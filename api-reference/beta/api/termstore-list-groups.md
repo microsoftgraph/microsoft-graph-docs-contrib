@@ -1,6 +1,6 @@
 ---
 title: "List groups"
-description: "Get the groups from the groups navigation property."
+description: "Get the list of group objects of a store."
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not Supported. |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,10 +88,11 @@ GET https://graph.microsoft.com/beta/termStore/groups
 
 ---
 
-
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

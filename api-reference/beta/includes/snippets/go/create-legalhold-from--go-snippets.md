@@ -5,18 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewLegalHold()
-"@odata.type" := "#microsoft.graph.ediscovery.legalHold"
-requestBody.Set"@odata.type"(&"@odata.type") 
 description := "String"
 requestBody.SetDescription(&description) 
 createdBy := graphmodels.NewIdentitySet()
-"@odata.type" := "microsoft.graph.identitySet"
-createdBy.Set"@odata.type"(&"@odata.type") 
 requestBody.SetCreatedBy(createdBy)
-isEnabled := "Boolean"
+isEnabled := boolean
 requestBody.SetIsEnabled(&isEnabled) 
 status := graphmodels.STRING_LEGALHOLDSTATUS 
 requestBody.SetStatus(&status) 
@@ -30,7 +34,7 @@ requestBody.SetErrors(errors)
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Post(requestBody)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewShift()
 id := "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -14,7 +22,7 @@ userId := "c5d0c76b-80c4-481c-be50-923cd8d680a1"
 requestBody.SetUserId(&userId) 
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId) 
-sharedShift := graphmodels.NewsharedShift()
+sharedShift := graphmodels.NewShiftItem()
 displayName := "Day shift"
 sharedShift.SetDisplayName(&displayName) 
 notes := "Please do inventory as part of your shift."
@@ -45,7 +53,7 @@ activities := []graphmodels.ShiftActivityable {
 }
 sharedShift.SetActivities(activities)
 requestBody.SetSharedShift(sharedShift)
-draftShift := graphmodels.NewdraftShift()
+draftShift := graphmodels.NewShiftItem()
 displayName := "Day shift"
 draftShift.SetDisplayName(&displayName) 
 notes := "Please do inventory as part of your shift."
@@ -77,7 +85,7 @@ activities := []graphmodels.ShiftActivityable {
 draftShift.SetActivities(activities)
 requestBody.SetDraftShift(draftShift)
 
-result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Post(context.Background(), requestBody, nil)
 
 
 ```

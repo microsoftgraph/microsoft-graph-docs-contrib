@@ -27,7 +27,7 @@ $moderationSettings->setAllowNewMessageFromConnectors(true);
 $requestBody->setModerationSettings($moderationSettings);
 
 
-$graphServiceClient->teamsById('team-id')->channelsById('channel-id')->patch($requestBody);
+$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->patch($requestBody);
 
 
 ```

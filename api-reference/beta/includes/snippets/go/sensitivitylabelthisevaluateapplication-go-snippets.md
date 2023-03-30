@@ -5,18 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Security/InformationProtection/SensitivityLabels/SecurityEvaluateApplication"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"User-Agent": "ContosoLobApp/1.0",
-}
-configuration := &graphconfig.EvaluateApplicationRequestBuilderPostRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("User-Agent", "ContosoLobApp/1.0")
+
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.evaluateApplicationRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateApplicationPostRequestBody()
 contentInfo := graphmodels.NewContentInfo()
-"@odata.type" := "#microsoft.graph.security.contentInfo"
-contentInfo.Set"@odata.type"(&"@odata.type") 
 contentFormat := "File"
 contentInfo.SetContentFormat(&contentFormat) 
 identifier := null
@@ -26,50 +34,36 @@ contentInfo.SetState(&state)
 
 
 keyValuePair := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled"
 keyValuePair.SetName(&name) 
 value := "True"
 keyValuePair.SetValue(&value) 
 keyValuePair1 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair1.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method"
 keyValuePair1.SetName(&name) 
 value := "Standard"
 keyValuePair1.SetValue(&value) 
 keyValuePair2 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair2.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate"
 keyValuePair2.SetName(&name) 
 value := "1/1/0001 12:00:00 AM"
 keyValuePair2.SetValue(&value) 
 keyValuePair3 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair3.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId"
 keyValuePair3.SetName(&name) 
 value := "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
 keyValuePair3.SetValue(&value) 
 keyValuePair4 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair4.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name"
 keyValuePair4.SetName(&name) 
 value := "LabelScopedToBob_Tests"
 keyValuePair4.SetValue(&value) 
 keyValuePair5 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair5.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits"
 keyValuePair5.SetName(&name) 
 value := "0"
 keyValuePair5.SetValue(&value) 
 keyValuePair6 := graphmodels.NewKeyValuePair()
-"@odata.type" := "#microsoft.graph.security.keyValuePair"
-keyValuePair6.Set"@odata.type"(&"@odata.type") 
 name := "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId"
 keyValuePair6.SetName(&name) 
 value := "00000000-0000-0000-0000-000000000000"
@@ -87,16 +81,14 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.security.contentFormat", 
+	"odataType" : "#microsoft.graph.security.contentFormat", 
 	"format" : "default", 
-	"state@odata.type" : "#microsoft.graph.security.contentState", 
-	"metadata@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"odataType" : "#microsoft.graph.security.contentState", 
+	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 labelingOptions := graphmodels.NewLabelingOptions()
-"@odata.type" := "#microsoft.graph.security.labelingOptions"
-labelingOptions.Set"@odata.type"(&"@odata.type") 
 assignmentMethod := graphmodels.STANDARD_ASSIGNMENTMETHOD 
 labelingOptions.SetAssignmentMethod(&assignmentMethod) 
 labelId := "836ff34f-b604-4a62-a68c-d6be4205d569"
@@ -112,14 +104,14 @@ extendedProperties := []graphmodels.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"assignmentMethod@odata.type" : "#microsoft.graph.security.assignmentMethod", 
-	"labelId@odata.type" : "#Guid", 
-	"extendedProperties@odata.type" : "#Collection(microsoft.graph.security.keyValuePair)", 
+	"odataType" : "#microsoft.graph.security.assignmentMethod", 
+	"odataType" : "#Guid", 
+	"odataType" : "#Collection(microsoft.graph.security.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().EvaluateApplication().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateApplication().Post(context.Background(), requestBody, configuration)
 
 
 ```

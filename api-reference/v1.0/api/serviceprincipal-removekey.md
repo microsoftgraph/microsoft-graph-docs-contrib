@@ -29,10 +29,13 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /servicePrincipals/{id}/removeKey
+POST /serviceprincipals/{id}/removeKey
+POST /servicePrincipals(appId='{appId}')/removeKey
 ```
 
 ## Request headers
@@ -101,7 +104,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

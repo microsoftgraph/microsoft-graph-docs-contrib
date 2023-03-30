@@ -103,7 +103,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -154,7 +153,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 

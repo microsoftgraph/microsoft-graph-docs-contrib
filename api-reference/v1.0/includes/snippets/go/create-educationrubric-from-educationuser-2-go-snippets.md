@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Points Rubric"
@@ -28,8 +36,6 @@ contentType := graphmodels.TEXT_BODYTYPE
 description.SetContentType(&contentType) 
 rubricLevel.SetDescription(description)
 grading := graphmodels.NewEducationAssignmentGradeType()
-"@odata.type" := "#microsoft.graph.educationAssignmentPointsGradeType"
-grading.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"maxPoints" : int32(2) , 
 }
@@ -45,8 +51,6 @@ contentType := graphmodels.TEXT_BODYTYPE
 description.SetContentType(&contentType) 
 rubricLevel1.SetDescription(description)
 grading := graphmodels.NewEducationAssignmentGradeType()
-"@odata.type" := "#microsoft.graph.educationAssignmentPointsGradeType"
-grading.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"maxPoints" : int32(1) , 
 }
@@ -133,11 +137,9 @@ qualities := []graphmodels.RubricQualityable {
 }
 requestBody.SetQualities(qualities)
 grading := graphmodels.NewEducationAssignmentGradeType()
-"@odata.type" := "#microsoft.graph.educationAssignmentPointsGradeType"
-grading.Set"@odata.type"(&"@odata.type") 
 requestBody.SetGrading(grading)
 
-result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
+result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
 
 
 ```

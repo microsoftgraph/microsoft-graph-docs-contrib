@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/solutions"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.BookingBusinessesRequestBuilderGetQueryParameters{
-	Query: "Adventure",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestQuery := "Adventure"
+
+requestParameters := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetQueryParameters{
+	Query: &requestQuery,
 }
-configuration := &graphconfig.BookingBusinessesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.SolutionsBookingBusinessesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BookingBusinesses().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Solutions().BookingBusinesses().Get(context.Background(), configuration)
 
 
 ```

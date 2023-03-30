@@ -1,7 +1,7 @@
 ---
 title: "Delete calendarPermission"
 description: "Delete calendarPermission."
-author: "Harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -100,7 +100,6 @@ DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

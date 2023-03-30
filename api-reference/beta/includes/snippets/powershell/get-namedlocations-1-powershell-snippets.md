@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityConditionalAccessNamedLocation -OutFile $outFileId
+Get-MgIdentityConditionalAccessNamedLocation
 
 ```

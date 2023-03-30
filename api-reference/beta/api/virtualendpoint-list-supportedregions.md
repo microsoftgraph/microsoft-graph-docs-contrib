@@ -97,8 +97,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/supportedR
 
 ---
 
-
-
 ### Response
 
 The following is an example of the response.
@@ -121,7 +119,9 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcSupportedRegion",
       "id": "109919f3-19f3-1099-f319-9910f3199910",
       "displayName": "Demo-1",
-      "regionStatus": "available"
+      "regionStatus": "available",
+      "supportedSolution": "windows365",
+      "regionGroup": "usCentral"    
     }
   ]
 }

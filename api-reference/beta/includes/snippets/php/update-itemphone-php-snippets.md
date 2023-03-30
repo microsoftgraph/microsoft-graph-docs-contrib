@@ -14,7 +14,7 @@ $requestBody->setType(new PhoneType('other'));
 
 
 
-$graphServiceClient->usersById('user-id')->profile()->phonesById('itemPhone-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->profile()->phonesById('itemPhone-id')->patch($requestBody);
 
 
 ```

@@ -16,6 +16,8 @@ Add a key credential to an [application](../resources/application.md). This meth
 > [!NOTE]
 > [Create application](../api/application-post-applications.md) and
 [Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.
+>
+> You should only provide the public key value when adding a certificate credential to your application. Adding a private key certificate to your application risks compromising the application.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
@@ -117,7 +119,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -192,7 +193,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

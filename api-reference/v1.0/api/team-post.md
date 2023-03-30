@@ -101,11 +101,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -177,11 +172,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -230,7 +220,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "displayName": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://learn.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
@@ -292,7 +282,7 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-full-payload-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -383,10 +373,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",
@@ -474,11 +460,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",
@@ -541,12 +522,6 @@ Content-Type: application/json
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/convert-team-from-non-standard-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
----
 
 ---
 
@@ -638,11 +613,6 @@ Content-Type: application/json
 
 ---
 
-
-
----
-
----
 #### Response
 <!-- {
   "blockType": "response",
@@ -758,8 +728,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 <!-- {

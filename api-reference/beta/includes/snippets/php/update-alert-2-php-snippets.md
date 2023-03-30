@@ -39,7 +39,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->security()->alertsById('alert-id')->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->security()->alertsById('alert-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

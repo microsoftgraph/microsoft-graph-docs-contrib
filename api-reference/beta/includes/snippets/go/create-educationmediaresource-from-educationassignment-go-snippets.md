@@ -5,14 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
 resource := graphmodels.NewEducationResource()
-"@odata.type" := "microsoft.graph.educationMediaResource"
-resource.Set"@odata.type"(&"@odata.type") 
 displayName := "homework example.PNG"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -21,7 +27,7 @@ additionalData := map[string]interface{}{
 resource.SetAdditionalData(additionalData)
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(requestBody)
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

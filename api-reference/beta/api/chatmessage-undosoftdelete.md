@@ -1,7 +1,7 @@
 ---
 title: "chatMessage: undoSoftDelete"
 description: "Undelete a single message or a message reply in a channel or a chat."
-author: "Ramjot Singh"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChatMessage.ReadWrite |
+|Delegated (work or school account)| Chat.ReadWrite |
 |Delegated (personal Microsoft account)| Not supported |
 |Application| Not supported |
 
@@ -106,7 +106,6 @@ POST https://graph.microsoft.com/beta/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ap
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -158,7 +157,6 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -209,7 +207,6 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

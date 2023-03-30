@@ -1,7 +1,7 @@
 ---
 title: "importedAppleDeviceIdentity resource type"
 description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -71,7 +71,3 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
-
-

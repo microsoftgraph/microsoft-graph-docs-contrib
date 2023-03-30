@@ -13,7 +13,7 @@ $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new UserRequestBuilderGetQueryParameters();
 $queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
+$queryParameters->orderby = ["displayName"];
 $queryParameters->filter = "startswith(displayName,%20'a')";
 
 $headers = [
@@ -24,7 +24,7 @@ $requestConfiguration->queryParameters = $queryParameters;
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->user()->get($requestConfiguration);
+$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphUser()->get($requestConfiguration);
 
 
 ```

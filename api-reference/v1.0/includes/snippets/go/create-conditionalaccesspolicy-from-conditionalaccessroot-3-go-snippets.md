@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
 displayName := "Demo app for documentation"
@@ -14,15 +22,20 @@ state := graphmodels.DISABLED_CONDITIONALACCESSPOLICYSTATE
 requestBody.SetState(&state) 
 conditions := graphmodels.NewConditionalAccessConditionSet()
 signInRiskLevels := []graphmodels.RiskLevelable {
-	"high",
-	"medium",
+	riskLevel := graphmodels.HIGH_RISKLEVEL 
+	conditions.SetRiskLevel(&riskLevel) 
+	riskLevel := graphmodels.MEDIUM_RISKLEVEL 
+	conditions.SetRiskLevel(&riskLevel) 
 
 }
 conditions.SetSignInRiskLevels(signInRiskLevels)
 clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
-	"mobileAppsAndDesktopClients",
-	"exchangeActiveSync",
-	"other",
+	conditionalAccessClientApp := graphmodels.MOBILEAPPSANDDESKTOPCLIENTS_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
+	conditionalAccessClientApp := graphmodels.EXCHANGEACTIVESYNC_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
+	conditionalAccessClientApp := graphmodels.OTHER_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
 
 }
 conditions.SetClientAppTypes(clientAppTypes)
@@ -83,13 +96,16 @@ users.SetExcludeRoles(excludeRoles)
 conditions.SetUsers(users)
 platforms := graphmodels.NewConditionalAccessPlatforms()
 includePlatforms := []graphmodels.ConditionalAccessDevicePlatformable {
-	"all",
+	conditionalAccessDevicePlatform := graphmodels.ALL_CONDITIONALACCESSDEVICEPLATFORM 
+	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
 
 }
 platforms.SetIncludePlatforms(includePlatforms)
 excludePlatforms := []graphmodels.ConditionalAccessDevicePlatformable {
-	"iOS",
-	"windowsPhone",
+	conditionalAccessDevicePlatform := graphmodels.IOS_CONDITIONALACCESSDEVICEPLATFORM 
+	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
+	conditionalAccessDevicePlatform := graphmodels.WINDOWSPHONE_CONDITIONALACCESSDEVICEPLATFORM 
+	platforms.SetConditionalAccessDevicePlatform(&conditionalAccessDevicePlatform) 
 
 }
 platforms.SetExcludePlatforms(excludePlatforms)
@@ -112,11 +128,16 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	"mfa",
-	"compliantDevice",
-	"domainJoinedDevice",
-	"approvedApplication",
-	"compliantApplication",
+	conditionalAccessGrantControl := graphmodels.MFA_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
+	conditionalAccessGrantControl := graphmodels.COMPLIANTDEVICE_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
+	conditionalAccessGrantControl := graphmodels.DOMAINJOINEDDEVICE_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
+	conditionalAccessGrantControl := graphmodels.APPROVEDAPPLICATION_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
+	conditionalAccessGrantControl := graphmodels.COMPLIANTAPPLICATION_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }
 grantControls.SetBuiltInControls(builtInControls)
@@ -136,13 +157,13 @@ applicationEnforcedRestrictions := null
 sessionControls.SetApplicationEnforcedRestrictions(&applicationEnforcedRestrictions) 
 persistentBrowser := null
 sessionControls.SetPersistentBrowser(&persistentBrowser) 
-cloudAppSecurity := graphmodels.NewcloudAppSecurity()
+cloudAppSecurity := graphmodels.NewCloudAppSecuritySessionControl()
 cloudAppSecurityType := graphmodels.BLOCKDOWNLOADS_CLOUDAPPSECURITYSESSIONCONTROLTYPE 
 cloudAppSecurity.SetCloudAppSecurityType(&cloudAppSecurityType) 
 isEnabled := true
 cloudAppSecurity.SetIsEnabled(&isEnabled) 
 sessionControls.SetCloudAppSecurity(cloudAppSecurity)
-signInFrequency := graphmodels.NewsignInFrequency()
+signInFrequency := graphmodels.NewSignInFrequencySessionControl()
 value := int32(4)
 signInFrequency.SetValue(&value) 
 type := graphmodels.HOURS_SIGNINFREQUENCYTYPE 
@@ -152,7 +173,7 @@ signInFrequency.SetIsEnabled(&isEnabled)
 sessionControls.SetSignInFrequency(signInFrequency)
 requestBody.SetSessionControls(sessionControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

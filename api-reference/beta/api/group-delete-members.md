@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > [!IMPORTANT]
-> To remove members from a role-assignable group, the calling user or app must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+> To remove members from a role-assignable group, the calling user must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
 
 ## HTTP request
 

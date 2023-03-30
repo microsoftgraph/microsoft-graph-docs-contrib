@@ -2,7 +2,7 @@
 title: "onPremisesExtensionAttributes resource type"
 description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties. "
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: resourcePageType
 ---

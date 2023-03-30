@@ -55,14 +55,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageCatalog",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
   "catalogType": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean",
   "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isExternallyVisible": "Boolean",
+  "modifiedDateTime": "String (timestamp)",
+  "state": "String",
 }
 ```
 

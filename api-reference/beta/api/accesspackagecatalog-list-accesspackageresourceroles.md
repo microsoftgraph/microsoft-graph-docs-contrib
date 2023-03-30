@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -128,7 +127,7 @@ Content-type: application/json
 
 ### Example 2: Retrieve the roles of a resource for a SharePoint Online site
 
-This is an example of retrieving the roles of a resource, to obtain the **originId** of each role.  This would be used after a SharePoint Online site has been added as a resource to the catalog, as the **originId** of a role is needed to add the role to an access package.
+This is an example of retrieving the roles of a resource, to obtain the **originId** of each role.  This would be used after a SharePoint Online site has been added as a resource to the catalog, as the **originId** of a SharePoint site role, the sequence number of the role in the site, is needed to add the role to an access package.
 
 #### Request
 
@@ -171,9 +170,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
 
 #### Response
 

@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
-"@odata.type" := "#microsoft.graph.unifiedRoleAssignmentMultiple"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "My test role assignment 1"
 requestBody.SetDisplayName(&displayName) 
 roleDefinitionId := "c2cf284d-6c41-4e6b-afac-4b80928c9034"
@@ -26,7 +32,7 @@ appScopeIds := []string {
 }
 requestBody.SetAppScopeIds(appScopeIds)
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(requestBody)
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

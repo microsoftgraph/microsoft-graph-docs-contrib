@@ -5,17 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCloudPcExternalPartnerSetting()
-"@odata.type" := "#microsoft.graph.cloudPcExternalPartnerSetting"
-requestBody.Set"@odata.type"(&"@odata.type") 
 partnerId := "198d7140-80bb-4843-8cc4-811377a49a92"
 requestBody.SetPartnerId(&partnerId) 
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

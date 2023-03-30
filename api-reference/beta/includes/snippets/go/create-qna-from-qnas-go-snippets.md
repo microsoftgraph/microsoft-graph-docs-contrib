@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewQna()
 displayName := "Global Country Holidays"
@@ -46,14 +55,15 @@ languageTags := []string {
 }
 requestBody.SetLanguageTags(languageTags)
 platforms := []graphmodels.DevicePlatformTypeable {
-	"ios",
+	devicePlatformType := graphmodels.IOS_DEVICEPLATFORMTYPE 
+	requestBody.SetDevicePlatformType(&devicePlatformType) 
 
 }
 requestBody.SetPlatforms(platforms)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Qnas().Post(requestBody)
+result, err := graphClient.Search().Qnas().Post(context.Background(), requestBody, nil)
 
 
 ```

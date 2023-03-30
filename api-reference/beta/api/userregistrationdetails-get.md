@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Application|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 
 ## HTTP request
 
@@ -87,8 +87,6 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmissionResource"
 description: "Retrieve the properties of a specific resource associated with the submission."
-author: "sharad-sharma-msft"
+author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific resource associated with a [submission](../resources/educationsubmissionresource.md).
+Retrieve the properties of a specific resource associated with a [submission](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 This resource is in the "working" resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
@@ -29,8 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/resources/{resource-id}
 ```
+
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 | Header       | Value |
@@ -82,7 +85,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response. 

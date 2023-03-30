@@ -5,19 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/Transfer"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
-"@odata.type" := "#microsoft.graph.invitationParticipantInfo"
-transferTarget.Set"@odata.type"(&"@odata.type") 
 identity := graphmodels.NewIdentitySet()
-"@odata.type" := "#microsoft.graph.identitySet"
-identity.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 phone := graphmodels.New()
-"@odata.type" := "#microsoft.graph.identity"
-phone.Set"@odata.type"(&"@odata.type") 
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -38,7 +40,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").Transfer().Post(requestBody)
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

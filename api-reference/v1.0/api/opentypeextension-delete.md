@@ -48,8 +48,12 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId}/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/{userId}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
+DELETE /me/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
@@ -112,7 +116,6 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The second example deletes an extension in the specified group event.
 

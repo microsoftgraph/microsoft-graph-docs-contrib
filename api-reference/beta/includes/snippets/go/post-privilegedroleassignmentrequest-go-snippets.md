@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPrivilegedRoleAssignmentRequest()
 duration := "2"
@@ -27,7 +35,7 @@ requestBody.SetAssignmentState(&assignmentState)
 roleId := "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 requestBody.SetRoleId(&roleId) 
 
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(requestBody)
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

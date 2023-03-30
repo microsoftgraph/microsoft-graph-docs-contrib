@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"  -OutFile $outFileId
+Get-MgAllTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewWebAccount()
 description := "My Github contributions!"
@@ -19,7 +27,7 @@ webUrl := "https://github.com"
 service.SetWebUrl(&webUrl) 
 requestBody.SetService(service)
 
-result, err := graphClient.Me().Profile().WebAccounts().Post(requestBody)
+result, err := graphClient.Me().Profile().WebAccounts().Post(context.Background(), requestBody, nil)
 
 
 ```

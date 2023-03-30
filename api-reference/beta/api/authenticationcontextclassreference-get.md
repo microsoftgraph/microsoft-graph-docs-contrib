@@ -2,7 +2,7 @@
 title: "Get authenticationContextClassReference"
 description: "Retrieve the properties and relationships of a authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "calebb"
+author: "bakerCaleb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method does not support OData query parameters.
 
 ## Request headers
 
@@ -42,13 +42,9 @@ This method does not support optional query parameters to customize the response
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## Request body
-
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [authenticationContextClassReferences](../resources/\authenticationcontextclassreference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object in the response body.
 
 ## Examples
 
@@ -70,33 +66,30 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationcontextclassreference-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identity-conditionalaccess-authenticationcontextclassreferences-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationcontextclassreference-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identity-conditionalaccess-authenticationcontextclassreferences-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationcontextclassreference-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-identity-conditionalaccess-authenticationcontextclassreferences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationcontextclassreference-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-identity-conditionalaccess-authenticationcontextclassreferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationcontextclassreference-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identity-conditionalaccess-authenticationcontextclassreferences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-authenticationcontextclassreference-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-identity-conditionalaccess-authenticationcontextclassreferences-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
 
 ### Response
 

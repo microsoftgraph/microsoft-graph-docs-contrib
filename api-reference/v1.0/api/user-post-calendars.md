@@ -1,7 +1,7 @@
 ---
 title: "Create calendar"
 description: "Create a new calendar for a user."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType

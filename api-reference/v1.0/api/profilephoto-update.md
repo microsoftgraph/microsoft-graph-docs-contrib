@@ -37,15 +37,15 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)      |   Group.ReadWrite.All           |
 |Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    Group.ReadWrite.All           |
+|Application      |    Not supported.           |
 
 ### To update the profile photo of a team
 
 | Permission Type | Permissions (from least to most privileged)  |
 | --------------- | -------------------------------------------- |
-| Delegated (work or school account)        | TeamSettingsReadWriteAll |
+| Delegated (work or school account)        | TeamSettings.ReadWrite.All |
 | Delegated (personal Microsoft account)    | Not supported.     |
-| Application                               | TeamSettingsReadWriteAll |
+| Application                               | Not supported. |
 
 ### To update the profile photo of the signed-in user
 
@@ -118,10 +118,6 @@ Binary data for the image
 
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilephoto-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -162,10 +158,6 @@ Content-type: image/jpeg
 Binary data for the image
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-team-photo-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-team-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -175,7 +167,6 @@ Binary data for the image
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -130,7 +129,8 @@ Content-Type: application/json
       "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
       "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
       "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-      "healthCheckStatus": "passed"
+      "healthCheckStatus": "passed",
+      "virtualNetworkLocation": "westus2"
     }
   ]
 }

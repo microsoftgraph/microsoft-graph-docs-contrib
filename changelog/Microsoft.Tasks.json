@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseTaskList",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource and related operations and methods. Use the [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) resource instead.",
+          "Description": "Deprecated the [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource and related operations and methods. Use the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) resource instead.",
           "Target": "baseTaskList"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "wellKnownTaskList",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [wellKnownTaskList](https://docs.microsoft.com/en-us/graph/api/resources/wellknowntasklist?view=graph-rest-beta) resource. Use the [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) resource instead.",
+          "Description": "Deprecated the [wellKnownTaskList](https://learn.microsoft.com/en-us/graph/api/resources/wellknowntasklist?view=graph-rest-beta) resource. Use the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) resource instead.",
           "Target": "wellKnownTaskList"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **delta** function of [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the **delta** function of [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "baseTaskList"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [create](https://learn.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [get](https://learn.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [update](https://learn.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [delete](https://learn.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseTask",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource and related operations and methods. Use the [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) resource instead.",
+          "Description": "Deprecated the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource and related operations and methods. Use the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) resource instead.",
           "Target": "baseTask"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Delta",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [delta](https://docs.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) function of [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [delta](https://learn.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) function of [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [create](https://learn.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [get](https://learn.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [update](https://learn.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [delete](https://learn.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "openTypeExtension"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) operation of [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "subscription"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "subscription"
         },
         {
@@ -135,7 +135,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) operation of [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "subscription"
         },
         {
@@ -143,7 +143,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) operation of [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "subscription"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) operation of [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "subscription"
         }
       ],
@@ -169,7 +169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personalTaskProperties",
           "ChangeType": "Change",
-          "Description": "Renamed the **personalTaskProperties** resource type to [taskViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/taskViewpoint?view=graph-rest-beta).",
+          "Description": "Renamed the **personalTaskProperties** resource type to [taskViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/taskViewpoint?view=graph-rest-beta).",
           "Target": "taskViewpoint"
         },
         {
@@ -177,7 +177,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "textBody",
           "ChangeType": "Deletion",
-          "Description": "Renamed the **body** property to **textBody** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
+          "Description": "Renamed the **body** property to **textBody** in [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
@@ -185,7 +185,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "viewpoint",
           "ChangeType": "Change",
-          "Description": "Renamed the **personalProperties** property to **viewpoint** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
+          "Description": "Renamed the **personalProperties** property to **viewpoint** in [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
@@ -193,7 +193,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "textBody",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **textBody** property of the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource from **itemBody** to String.",
+          "Description": "Changed the type of the **textBody** property of the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource from **itemBody** to String.",
           "Target": "baseTask"
         }
       ],
@@ -227,7 +227,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personalTaskProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [personalTaskProperties](https://docs.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) complex type",
+          "Description": "Added the [personalTaskProperties](https://learn.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) complex type",
           "Target": "personalTaskProperties"
         },
         {
@@ -235,7 +235,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseTask",
           "ChangeType": "Addition",
-          "Description": "Added the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Description": "Added the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -243,7 +243,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "checklistItems",
           "ChangeType": "Addition",
-          "Description": "Added the **checklistItems** navigation property to the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Description": "Added the **checklistItems** navigation property to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -251,7 +251,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "extensions",
           "ChangeType": "Addition",
-          "Description": "Added the **extensions** navigation property to the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Description": "Added the **extensions** navigation property to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -259,7 +259,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "linkedResources",
           "ChangeType": "Addition",
-          "Description": "Added the **linkedResources** navigation property to the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Description": "Added the **linkedResources** navigation property to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -267,7 +267,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "parentList",
           "ChangeType": "Addition",
-          "Description": "Added the **parentList** navigation property to the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Description": "Added the **parentList** navigation property to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -275,7 +275,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "baseTaskList",
           "ChangeType": "Addition",
-          "Description": "Added the [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Description": "Added the [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
           "Target": "baseTaskList"
         },
         {
@@ -283,7 +283,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "extensions",
           "ChangeType": "Addition",
-          "Description": "Added the **extensions** navigation property to the [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Description": "Added the **extensions** navigation property to the [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
           "Target": "baseTaskList"
         },
         {
@@ -291,7 +291,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "tasks",
           "ChangeType": "Addition",
-          "Description": "Added the **tasks** navigation property to the [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Description": "Added the **tasks** navigation property to the [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
           "Target": "baseTaskList"
         },
         {
@@ -299,7 +299,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "checklistItem",
           "ChangeType": "Addition",
-          "Description": "Added the [checklistItem](https://docs.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource",
+          "Description": "Added the [checklistItem](https://learn.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource",
           "Target": "checklistItem"
         },
         {
@@ -307,7 +307,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "linkedResource_v2",
           "ChangeType": "Addition",
-          "Description": "Added the [linkedResource_v2](https://docs.microsoft.com/en-us/graph/api/resources/linkedResource_v2?view=graph-rest-beta) resource",
+          "Description": "Added the [linkedResource_v2](https://learn.microsoft.com/en-us/graph/api/resources/linkedResource_v2?view=graph-rest-beta) resource",
           "Target": "linkedResource_v2"
         },
         {
@@ -315,7 +315,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task",
           "ChangeType": "Addition",
-          "Description": "Added the [task](https://docs.microsoft.com/en-us/graph/api/resources/task?view=graph-rest-beta) resource",
+          "Description": "Added the [task](https://learn.microsoft.com/en-us/graph/api/resources/task?view=graph-rest-beta) resource",
           "Target": "task"
         },
         {
@@ -323,7 +323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskList",
           "ChangeType": "Addition",
-          "Description": "Added the [taskList](https://docs.microsoft.com/en-us/graph/api/resources/taskList?view=graph-rest-beta) resource",
+          "Description": "Added the [taskList](https://learn.microsoft.com/en-us/graph/api/resources/taskList?view=graph-rest-beta) resource",
           "Target": "taskList"
         },
         {
@@ -331,7 +331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tasks",
           "ChangeType": "Addition",
-          "Description": "Added the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Description": "Added the [tasks](https://learn.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
           "Target": "tasks"
         },
         {
@@ -339,7 +339,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "alltasks",
           "ChangeType": "Addition",
-          "Description": "Added the **alltasks** navigation property to the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Description": "Added the **alltasks** navigation property to the [tasks](https://learn.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
           "Target": "tasks"
         },
         {
@@ -347,7 +347,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "lists",
           "ChangeType": "Addition",
-          "Description": "Added the **lists** navigation property to the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Description": "Added the **lists** navigation property to the [tasks](https://learn.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
           "Target": "tasks"
         },
         {
@@ -355,7 +355,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "wellKnownTaskList",
           "ChangeType": "Addition",
-          "Description": "Added the [wellKnownTaskList](https://docs.microsoft.com/en-us/graph/api/resources/wellKnownTaskList?view=graph-rest-beta) resource",
+          "Description": "Added the [wellKnownTaskList](https://learn.microsoft.com/en-us/graph/api/resources/wellKnownTaskList?view=graph-rest-beta) resource",
           "Target": "wellKnownTaskList"
         },
         {
@@ -363,7 +363,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "move",
           "ChangeType": "Addition",
-          "Description": "Added the [move](https://docs.microsoft.com/en-us/graph/api/basetask-move?view=graph-rest-beta) method to the [baseTask]((https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
+          "Description": "Added the [move](https://learn.microsoft.com/en-us/graph/api/basetask-move?view=graph-rest-beta) method to the [baseTask]((https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
           "Target": "baseTask"
         },
         {
@@ -371,7 +371,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/basetasklist-delta?view=graph-rest-beta) method to the [baseTaskList]((https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta)) resource",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetasklist-delta?view=graph-rest-beta) method to the [baseTaskList]((https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta)) resource",
           "Target": "baseTaskList"
         },
         {
@@ -379,7 +379,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) method to the [baseTask]((https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) method to the [baseTask]((https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
           "Target": "baseTask"
         }
       ],
@@ -397,7 +397,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "tasks",
           "ChangeType": "Addition",
-          "Description": "Added the **tasks** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource",
+          "Description": "Added the **tasks** navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource",
           "Target": "user"
         }
       ],

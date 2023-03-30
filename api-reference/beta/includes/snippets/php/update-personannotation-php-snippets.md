@@ -14,7 +14,7 @@ $requestBody->setAllowedAudiences(new AllowedAudiences('organization'));
 
 
 
-$graphServiceClient->usersById('user-id')->profile()->notesById('personAnnotation-id')->patch($requestBody);
+$requestResult = $graphServiceClient->usersById('user-id')->profile()->notesById('personAnnotation-id')->patch($requestBody);
 
 
 ```

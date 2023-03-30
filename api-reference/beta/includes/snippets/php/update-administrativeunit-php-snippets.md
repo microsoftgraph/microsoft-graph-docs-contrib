@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
+$requestResult = $graphServiceClient->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
 
 
 ```

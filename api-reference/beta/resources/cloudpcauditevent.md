@@ -27,18 +27,19 @@ Represents the audit event entity.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the audit entity. Read-only.|
-|displayName|String|Event display name. Read-only.|
-|componentName|String|Component name. Read-only.|
-|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Azure AD user and application associated with the audit event. Read-only.|
 |activity|String|Friendly name of the activity. Optional.|
 |activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed. Read-only.|
-|activityType|String|The type of activity that was performed. Read-only.|
 |activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only.|
 |activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Read-only.|
-|correlationId|String|The client request identifier, used to correlate activity within the system. Read-only.|
-|resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|List of cloudPcAuditResource objects. Read-only.|
+|activityType|String|The type of activity that was performed. Read-only.|
+|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Azure AD user and application associated with the audit event. Read-only.|
 |category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Read-only.|
+|componentName|String|Component name. Read-only.|
+|correlationId|String|The client request identifier, used to correlate activity within the system. Read-only.|
+|displayName|String|Event display name. Read-only.|
+|id|String|Key of the audit entity. Read-only.|
+|resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|List of cloudPcAuditResource objects. Read-only.|
+
 
 ### cloudPcAuditActivityOperationType values
 

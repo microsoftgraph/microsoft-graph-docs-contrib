@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgOrganizationSettingProfileCardProperty -OrganizationId $organizationId -OutFile $outFileId
+Get-MgOrganizationSettingProfileCardProperty -OrganizationId $organizationId
 
 ```

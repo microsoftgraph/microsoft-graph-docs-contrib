@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Print/Printers/Create"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCreatePostRequestBody()
 displayName := "Test Printer"
@@ -27,7 +35,7 @@ requestBody.SetCertificateSigningRequest(certificateSigningRequest)
 connectorId := null
 requestBody.SetConnectorId(&connectorId) 
 
-graphClient.Print().Printers().Create().Post(requestBody)
+graphClient.Print().Printers().Create().Post(context.Background(), requestBody, nil)
 
 
 ```

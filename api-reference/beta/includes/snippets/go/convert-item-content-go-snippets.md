@@ -7,14 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+
+requestFormat := "{format}"
+
 requestParameters := &graphconfig.ContentRequestBuilderGetQueryParameters{
-	Format: "{format}",
+	Format: &requestFormat,
 }
 configuration := &graphconfig.ContentRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.Drive().ItemsById("driveItem-id").Content().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.Drive().ItemsById("driveItem-id").Content().Get(context.Background(), configuration)
 
 
 ```

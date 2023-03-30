@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getAttackSimulationSimulationUserCoverage"
 description: "List simulation coverage for users of a tenant in attack simulation and training campaigns."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: apiPageType
@@ -78,16 +78,11 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCo
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationsimulationusercoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationsimulationusercoverage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getattacksimulationsimulationusercoverage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId -OutFile $outFileId
+Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
 
 ```

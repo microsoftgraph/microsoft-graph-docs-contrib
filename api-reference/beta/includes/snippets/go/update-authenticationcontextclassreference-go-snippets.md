@@ -5,28 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAuthenticationContextClassReference()
-additionalData := map[string]interface{}{
-
-
- := graphmodels.New()
-displayName := "Contoso trusted locations"
-.SetDisplayName(&displayName) 
-description := "Access is only allowed from trusted locations"
-.SetDescription(&description) 
+id := "c1"
+requestBody.SetId(&id) 
+displayName := "Contoso medium"
+requestBody.SetDisplayName(&displayName) 
+description := "Medium protection level defined for Contoso policy"
+requestBody.SetDescription(&description) 
 isAvailable := true
-.SetIsAvailable(&isAvailable) 
+requestBody.SetIsAvailable(&isAvailable) 
 
-	value := []graphmodels.Objectable {
-		,
-
-	}
-}
-requestBody.SetAdditionalData(additionalData)
-
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

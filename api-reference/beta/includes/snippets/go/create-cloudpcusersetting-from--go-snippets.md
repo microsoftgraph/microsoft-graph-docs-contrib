@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCloudPcUserSetting()
-"@odata.type" := "#microsoft.graph.cloudPcUserSetting"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Example"
 requestBody.SetDisplayName(&displayName) 
 selfServiceEnabled := false
@@ -23,7 +29,7 @@ userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(requestBody)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

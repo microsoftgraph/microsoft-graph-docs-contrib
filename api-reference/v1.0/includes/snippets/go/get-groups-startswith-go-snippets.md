@@ -5,15 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestFilter := "startswith(displayName,%20'a')"
+requestCount := true
+requestTop := int32(1)
+
 requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
-	Filter: "startswith(displayName,%20'a')",
-	Count: true,
-	Top: 1,
+	Filter: &requestFilter,
+	Count: &requestCount,
+	Top: &requestTop,
 	Orderby: [] string {"displayName"},
 }
 configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
@@ -21,7 +35,7 @@ configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Groups().Get(context.Background(), configuration)
 
 
 ```

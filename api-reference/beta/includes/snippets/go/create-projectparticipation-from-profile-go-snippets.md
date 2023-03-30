@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewProjectParticipation()
 categories := []string {
@@ -42,7 +50,7 @@ summary := "A 6 month project to help Contoso rebrand after they were divested f
 detail.SetSummary(&summary) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Projects().Post(requestBody)
+result, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
 
 
 ```

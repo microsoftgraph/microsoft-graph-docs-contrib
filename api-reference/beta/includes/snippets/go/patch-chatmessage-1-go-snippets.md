@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 messageType := graphmodels.MESSAGE_CHATMESSAGETYPE 
@@ -18,7 +26,7 @@ importance := graphmodels.NORMAL_CHATMESSAGEIMPORTANCE
 requestBody.SetImportance(&importance) 
 locale := "en-us"
 requestBody.SetLocale(&locale) 
-from := graphmodels.Newfrom()
+from := graphmodels.NewChatMessageFromIdentitySet()
 application := null
 from.SetApplication(&application) 
 device := null
@@ -57,8 +65,12 @@ reactions := []graphmodels.ChatMessageReactionable {
 
 }
 requestBody.SetReactions(reactions)
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+}
+requestBody.SetMessageHistory(messageHistory)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

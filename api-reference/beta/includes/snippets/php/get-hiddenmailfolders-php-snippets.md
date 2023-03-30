@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestConfiguration = new MailFoldersRequestBuilderGetRequestConfiguration();
 
 $queryParameters = new MailFoldersRequestBuilderGetQueryParameters();
-$queryParameters->includeHiddenFolders = true;
+$queryParameters->includehiddenfolders = true;
 
 $requestConfiguration->queryParameters = $queryParameters;
 

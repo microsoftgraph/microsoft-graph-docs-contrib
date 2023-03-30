@@ -11,53 +11,53 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
+$participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+
+$participantsInvitationParticipantInfo1->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
+
+$participantsInvitationParticipantInfo1Identity = new IdentitySet();
+$participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+
+$participantsInvitationParticipantInfo1IdentityUser = new Identity();
+$participantsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.graph.identity');
+
+$participantsInvitationParticipantInfo1IdentityUser->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'identity' => $participantsInvitationParticipantInfo1 = new Identity();
-$		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$		user->set@odatatype('#microsoft.graph.identity');
-
-$		user->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
-
-$		user->setIdentityProvider('AAD');
-
-
-$participantsInvitationParticipantInfo1->setUser($user);
-
-$participantsInvitationParticipantInfo1->setIdentity($identity);
-
+'identityProvider' => 'AAD', 
 ];
-$participantsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$participantsInvitationParticipantInfo1IdentityUser->setAdditionalData($additionalData);
 
 
+
+$participantsInvitationParticipantInfo1Identity->setUser($participantsInvitationParticipantInfo1IdentityUser);
+
+$participantsInvitationParticipantInfo1->setIdentity($participantsInvitationParticipantInfo1Identity);
 
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $participantsInvitationParticipantInfo2 = new InvitationParticipantInfo();
+$participantsInvitationParticipantInfo2->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+
+$participantsInvitationParticipantInfo2->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
+
+$participantsInvitationParticipantInfo2Identity = new IdentitySet();
+$participantsInvitationParticipantInfo2Identity->set@odatatype('#microsoft.graph.identitySet');
+
+$participantsInvitationParticipantInfo2IdentityUser = new Identity();
+$participantsInvitationParticipantInfo2IdentityUser->set@odatatype('#microsoft.graph.identity');
+
+$participantsInvitationParticipantInfo2IdentityUser->setId('1e126418-44a0-4a94-a6f8-0efe1ad71acb');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'identity' => $participantsInvitationParticipantInfo2 = new Identity();
-$		participantsInvitationParticipantInfo2->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$		user->set@odatatype('#microsoft.graph.identity');
-
-$		user->setId('1e126418-44a0-4a94-a6f8-0efe1ad71acb');
-
-$		user->setIdentityProvider('AAD');
-
-
-$participantsInvitationParticipantInfo2->setUser($user);
-
-$participantsInvitationParticipantInfo2->setIdentity($identity);
-
+'identityProvider' => 'AAD', 
 ];
-$participantsInvitationParticipantInfo2->setAdditionalData($additionalData);
+$participantsInvitationParticipantInfo2IdentityUser->setAdditionalData($additionalData);
 
 
+
+$participantsInvitationParticipantInfo2Identity->setUser($participantsInvitationParticipantInfo2IdentityUser);
+
+$participantsInvitationParticipantInfo2->setIdentity($participantsInvitationParticipantInfo2Identity);
 
 $participantsArray []= $participantsInvitationParticipantInfo2;
 $requestBody->setParticipants($participantsArray);

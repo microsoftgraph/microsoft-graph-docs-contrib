@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Review inactive guests on teams"
@@ -15,8 +23,6 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "Information security is everyone's responsibility. Review our access policy for more."
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 instanceEnumerationScope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-instanceEnumerationScope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')", 
 	"queryType" : "MicrosoftGraph", 
@@ -24,8 +30,6 @@ additionalData := map[string]interface{}{
 instanceEnumerationScope.SetAdditionalData(additionalData)
 requestBody.SetInstanceEnumerationScope(instanceEnumerationScope)
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')", 
 	"queryType" : "MicrosoftGraph", 
@@ -82,7 +86,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-05-04T00:00:00.000Z"
+startDate := 2020-05-04T00:00:00.000Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
@@ -94,7 +98,7 @@ autoApplyDecisionsEnabled := true
 settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

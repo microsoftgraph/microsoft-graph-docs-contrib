@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPersonWebsite()
 categories := []string {
@@ -18,7 +26,7 @@ requestBody.SetDisplayName(&displayName)
 webUrl := "www.lyndamer.no"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Websites().Post(requestBody)
+result, err := graphClient.Me().Profile().Websites().Post(context.Background(), requestBody, nil)
 
 
 ```

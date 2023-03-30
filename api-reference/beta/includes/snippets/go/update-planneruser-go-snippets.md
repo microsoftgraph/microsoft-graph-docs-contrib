@@ -5,21 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-	"If-Match": "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"",
-}
-configuration := &graphconfig.PlannerRequestBuilderPatchRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=\"")
+
+configuration := &graphconfig.ItemPlannerRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerUser()
 favoritePlanReferences := graphmodels.NewPlannerFavoritePlanReferenceCollection()
 additionalData := map[string]interface{}{
 jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
-"@odata.type" := "#microsoft.graph.plannerFavoritePlanReference"
-jd8S5gOaFk2S8aWCIAJz42QAAxtD.Set"@odata.type"(&"@odata.type") 
 orderHint := " !"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetOrderHint(&orderHint) 
 planTitle := "Next Release Discussion"
@@ -33,8 +41,6 @@ requestBody.SetFavoritePlanReferences(favoritePlanReferences)
 recentPlanReferences := graphmodels.NewPlannerRecentPlanReferenceCollection()
 additionalData := map[string]interface{}{
 jd8S5gOaFk2S8aWCIAJz42QAAxtD := graphmodels.New()
-"@odata.type" := "#microsoft.graph.plannerRecentPlanReference"
-jd8S5gOaFk2S8aWCIAJz42QAAxtD.Set"@odata.type"(&"@odata.type") 
 lastAccessedDateTime := "2018-01-02T22:49:46.155Z"
 jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetLastAccessedDateTime(&lastAccessedDateTime) 
 planTitle := "Next Release Discussion"
@@ -44,7 +50,7 @@ jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetPlanTitle(&planTitle)
 recentPlanReferences.SetAdditionalData(additionalData)
 requestBody.SetRecentPlanReferences(recentPlanReferences)
 
-graphClient.Me().Planner().PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Planner().Patch(context.Background(), requestBody, configuration)
 
 
 ```

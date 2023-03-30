@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/v1.0/contacts/25caf6a2-d5cb-470d-8940-20ba795ef6
 
 ---
 
-
 ##### Response
 The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability. 

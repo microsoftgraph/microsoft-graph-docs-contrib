@@ -1,6 +1,6 @@
 ---
 title: "presence: clearUserPreferredPresence"
-description: "Clear the user preferred presence for a user"
+description: "Clear the preferred availability and activity status for a user."
 author: "mkhribech"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -21,14 +21,15 @@ The following permission is required to call the API. To learn more, including h
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
-## HTTP Request
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/presence/clearUserPreferredPresence
 ```
+
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
@@ -37,16 +38,16 @@ POST /users/{userId}/presence/clearUserPreferredPresence
 
 ## Request body
 
-This request only contains an empty object.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-The following request clears the user preferred presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
+### Request
 
-#### Request
+The following is an example of a request that clears the preferred availability and activity status for a user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,10 +75,23 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clearuserpreferredpresence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clearuserpreferredpresence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clearuserpreferredpresence-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/clearuserpreferredpresence-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

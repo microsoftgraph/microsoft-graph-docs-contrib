@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMessage()
 receivedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
@@ -23,7 +32,7 @@ requestBody.SetBody(body)
 bodyPreview := "bodyPreview-value"
 requestBody.SetBodyPreview(&bodyPreview) 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Post(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Groups/Item/Threads/Item/Posts/Item/Reply"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
@@ -38,15 +46,12 @@ post.SetConversationThreadId(&conversationThreadId)
 
 
 recipient := graphmodels.NewRecipient()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+emailAddress := graphmodels.NewEmailAddress()
 name := "name-value"
 emailAddress.SetName(&name) 
 address := "address-value"
 emailAddress.SetAddress(&address) 
-	recipient.SetEmailAddress(emailAddress)
-}
-recipient.SetAdditionalData(additionalData)
+recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
@@ -68,13 +73,11 @@ categories := []string {
 post.SetCategories(categories)
 id := "id-value"
 post.SetId(&id) 
-inReplyTo := graphmodels.NewinReplyTo()
+inReplyTo := graphmodels.NewPost()
 post.SetInReplyTo(inReplyTo)
 
 
 attachment := graphmodels.NewAttachment()
-"@odata.type" := "#microsoft.graph.fileAttachment"
-attachment.Set"@odata.type"(&"@odata.type") 
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "datetime-value")
 attachment.SetLastModifiedDateTime(&lastModifiedDateTime) 
 name := "name-value"
@@ -95,7 +98,7 @@ attachments := []graphmodels.Attachmentable {
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

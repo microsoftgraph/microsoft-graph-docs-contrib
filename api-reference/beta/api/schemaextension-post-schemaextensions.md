@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
+Create a new [schemaExtension](../resources/schemaextension.md) definition and its associated schema extension property to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
 
 Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
 [state](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
@@ -132,7 +132,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 
@@ -235,7 +234,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -342,7 +340,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
