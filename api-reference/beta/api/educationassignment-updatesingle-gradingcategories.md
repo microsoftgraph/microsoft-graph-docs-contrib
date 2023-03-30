@@ -1,6 +1,6 @@
 ---
 title: "Update gradingCategory"
-description: "Update single gradingCategory to the assignments."
+description: "Update a single gradingCategory."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
