@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppAuthorization",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppAuthorization](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppAuthorization?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppAuthorization](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppAuthorization?view=graph-rest-beta) resource type.",
           "Target": "teamsAppAuthorization"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppPermissionSet",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppPermissionSet](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppPermissionSet?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppPermissionSet](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppPermissionSet?view=graph-rest-beta) resource type.",
           "Target": "teamsAppPermissionSet"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppResourceSpecificPermission",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppResourceSpecificPermission](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppResourceSpecificPermission?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppResourceSpecificPermission](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppResourceSpecificPermission?view=graph-rest-beta) resource type.",
           "Target": "teamsAppResourceSpecificPermission"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorization",
           "ChangeType": "Addition",
-          "Description": "Added the `authorization` property to the [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the `authorization` property to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "consentedPermissionSet",
           "ChangeType": "Addition",
-          "Description": "Added the `consentedPermissionSet` property to the [teamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
+          "Description": "Added the `consentedPermissionSet` property to the [teamsAppInstallation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
           "Target": "teamsAppInstallation"
         }
       ],
