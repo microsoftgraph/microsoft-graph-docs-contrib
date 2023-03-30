@@ -15,7 +15,7 @@ List all available [sites][] across geographies in an organization.
 
 [sites]: ../resources/site.md
 
-For more guidance about building applications that use site discovery for scanning purposes please see https://aka.ms/scanguidance.
+For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance.md).
 
 ## Permissions
 
