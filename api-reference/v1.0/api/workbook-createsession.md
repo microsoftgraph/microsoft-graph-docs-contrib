@@ -129,7 +129,7 @@ With the `202 Accepted` response, please see [Work with APIs that take a long ti
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_excel_session"
+  "name": "create_excel_session_"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession

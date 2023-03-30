@@ -265,7 +265,7 @@ This request updates the font style and size of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_two"
+  "name": "update_rangeformat_font_two_"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font
@@ -315,7 +315,7 @@ This request updates the background color of the second cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_two"
+  "name": "update_rangeformat_fill_two_"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/fill
