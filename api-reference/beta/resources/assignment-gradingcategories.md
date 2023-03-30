@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
+Add Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
 
 ## Methods
 
