@@ -41,13 +41,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Update your own phone authentication method.
 <!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /me/authentication/phoneMethods/{id}
-PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+``` http
+PATCH /me/authentication/phoneMethods/{phoneMethodId}
 ```
-The value of `id` corresponding to the phoneType to update is one of the following:
+
+Update your own or another user's phone authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
+```
+
+The value of `phoneMethodId` corresponding to the phoneType to update is one of the following:
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` to update the `alternateMobile` **phoneType**.
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` to update the `office` **phoneType**.
 + `3179e48a-750b-4051-897c-87b9720928f7` to update the `mobile` **phoneType**.
