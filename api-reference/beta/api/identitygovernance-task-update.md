@@ -53,6 +53,9 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskI
 |description|String|Describes the purpose of the task for administrative use.|
 |displayName|String|A unique string that identifies the task within the workflow.|
 
+> [!NOTE]
+> All other properties can be updated by creating a new workflow version. For more information, see: [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
+
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
