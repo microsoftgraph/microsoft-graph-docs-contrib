@@ -1,6 +1,6 @@
 ---
 title: "Add gradingCategory"
-description: "Add gradingCategory to the assignments."
+description: "Add a gradingCategory to an assignment."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
