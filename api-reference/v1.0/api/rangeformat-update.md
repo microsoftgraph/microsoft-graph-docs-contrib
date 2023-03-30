@@ -411,7 +411,7 @@ This request updates the font style, size, and color of the third cell. Note tha
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_font_three"
+  "name": "update_rangeformat_font_three_"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
@@ -462,7 +462,7 @@ This request updates the background color of the third cell.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_rangeformat_fill_three"
+  "name": "update_rangeformat_fill_three_"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill

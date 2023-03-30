@@ -49,7 +49,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "close_excel_session"
+  "name": "close_excel_session_"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
