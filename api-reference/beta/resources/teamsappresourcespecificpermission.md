@@ -19,7 +19,7 @@ The resource-specific permission associated with a teamsApp.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionType|[teamsAppResourceSpecificPermissionType](../resources/teamsAppResourceSpecificPermission.md#teamsAppResourceSpecificPermissionType-values)|The type of permission.|
+|permissionType|[teamsAppResourceSpecificPermissionType](../resources/teamsAppResourceSpecificPermission.md#teamsAppResourceSpecificPermissionType-values)|The type of resource-specific permission.|
 |permissionValue|String|The name of the resource-specific permission.|
 
 ### teamsAppResourceSpecificPermissionType values
