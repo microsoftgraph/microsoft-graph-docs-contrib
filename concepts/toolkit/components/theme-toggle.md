@@ -58,3 +58,13 @@ The theme toggle component does not need authentication to work.
 ## Cache
 
 The theme toggle component does not cache any data.
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name | Default value  |
+| ----------- | -------------- |
+| label       | 'Color mode: ' |
+| on          | 'Dark'         |
+| off         | 'Light'        |
