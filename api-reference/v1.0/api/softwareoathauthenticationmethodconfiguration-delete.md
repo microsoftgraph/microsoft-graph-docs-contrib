@@ -85,7 +85,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {

@@ -37,12 +37,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own FIDO2 authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/fido2Methods/{id}
+```
+
+Get details of your own or another user's FIDO2 authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
