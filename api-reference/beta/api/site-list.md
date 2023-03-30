@@ -22,11 +22,11 @@ Specific filter criteria and query options are also supported and described belo
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
 In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
-If you want to list all sites across all geographies, refer to [sites-list-all-rootsites-multigeo.md][].
+If you want to list all sites across all geographies, refer to [sites-getallsites.md][].
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
-[sites-list-all-rootsites-multigeo.md]: sites-list-all-rootsites-multigeo.md
+[sites-getallsites.md]: sites-getallsites.md
 
 For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
 

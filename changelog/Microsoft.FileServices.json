@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllSites",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) method to the site resource to fetch all sites across all geographies in an organization.",
+          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/sites-getallsites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllSites",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) method to the site resource to fetch all sites across all geographies in an organization.",
+          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/sites-getallsites?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         }
       ],

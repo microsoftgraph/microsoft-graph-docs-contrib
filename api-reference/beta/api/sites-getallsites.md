@@ -1,5 +1,5 @@
 ---
-title: "Enumerate sites across geographies"
+title: "sites: getAllSites"
 description: "List all root sites across geographies in an organization - OneDrive API"
 author: tkanaujia
 ms.author: tkanaujia
@@ -9,13 +9,13 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Enumerate multigeo sites
+# sites: getAllSites
 
-List all available [sites][] across geographies in an organization.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[sites]: ../resources/site.md
+List all available [sites](../resources/site.md) across geographies in an organization.
 
-For more guidance about building applications that use site discovery for scanning purposes please see https://aka.ms/scanguidance.
+For more guidance about building applications that use site discovery for scanning purposes please see <https://aka.ms/scanguidance>.
 
 ## Permissions
 
@@ -42,6 +42,7 @@ GET /sites/getAllSites
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "ignored" } -->
 
 ```msgraph-interactive
