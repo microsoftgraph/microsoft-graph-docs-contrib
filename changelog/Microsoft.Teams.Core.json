@@ -6342,7 +6342,7 @@
       "CreatedDateTime": "2023-04-05T12:44:49.407Z", 
       "WorkloadArea": "Teamwork and communications", 
       "SubArea": "Calls and online meetings"
-	},
+    },
     {
       "ChangeList": [
         {
@@ -6353,7 +6353,7 @@
           "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -6361,7 +6361,7 @@
           "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "17375642-1dd9-40d5-9557-60666af89db3",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -6369,7 +6369,7 @@
           "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "173b69eb-4b51-42ad-a9a0-69d01a7c8157",
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
@@ -6377,7 +6377,7 @@
           "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "1d2dd249-298c-4f2d-be8f-820179dfa0a7",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
@@ -6385,7 +6385,7 @@
           "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "1c19a825-dc16-4707-8f1f-4183354e1229",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -6393,7 +6393,7 @@
           "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "192bccc9-a7d1-4bca-a3de-17b29f97c035",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -6401,7 +6401,7 @@
           "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "1643e918-6db1-4c0d-a3c6-07cfe0895f54",
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
@@ -6409,7 +6409,7 @@
           "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "1cf602d1-fffb-4398-998c-05ce64b1e2a8",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
@@ -6417,7 +6417,7 @@
           "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "13e701bc-aeb5-470a-8ff4-650804bce647",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -6425,7 +6425,7 @@
           "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "29c808ad-7b07-433f-8f35-a80509344a08",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -6433,7 +6433,7 @@
           "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
           "Target": "subscription"
         },
-		{
+        {
           "Id": "107d9f4d-643c-4f9f-8009-0f71428ab05e",
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
