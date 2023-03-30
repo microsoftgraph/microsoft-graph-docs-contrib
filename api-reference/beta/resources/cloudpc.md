@@ -69,7 +69,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`, `restoring`.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `deprovisioning`, `failed`, `inGracePeriod`, `notProvisioned`, `provisioning`, `provisioned`, `provisionedWithWarnings`, `pendingProvision`, `resizing`, `restoring`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|

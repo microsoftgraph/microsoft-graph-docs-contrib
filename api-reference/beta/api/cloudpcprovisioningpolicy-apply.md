@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/353b6a8e-67c5-4f68-8d89-4360487576c4/apply
 ```
 
 
