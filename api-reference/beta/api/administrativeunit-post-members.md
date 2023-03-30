@@ -36,7 +36,7 @@ To add a user, group, or device to an administrative unit, the calling user must
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference):
+To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
