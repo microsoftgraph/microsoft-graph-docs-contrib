@@ -30,23 +30,23 @@ Represents a Cloud PC provisioning policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alternateResourceUrl|String|The URL of the alternate resource that links to this provisioning policy. Read-only. Supports: $filter, $select, $orderBy.|
-|cloudPcGroupDisplayName|String|The display name of the Cloud PC group that the Cloud PCs reside in. Read-only. Supports: $filter, $select, $orderBy.|
-|description|String|The provisioning policy description. Supports: $filter, $select, $orderBy.|
-|displayName|String|The display name for the provisioning policy. Supports: $filter, $select, $orderBy.|
-|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory. Supports: $select.|
-|enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional. Supports: $filter, $select.|
-|gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only. Supports: $filter, $select, $orderBy.|
-|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only. Supports: $filter, $select, $orderBy.|
-|imageDisplayName|String|The display name for the OS image you’re provisioning. Supports: $filter, $select, $orderBy.|
+|alternateResourceUrl|String|The URL of the alternate resource that links to this provisioning policy. Read-only. Supports: `$filter`, `$select`, `$orderBy`.|
+|cloudPcGroupDisplayName|String|The display name of the Cloud PC group that the Cloud PCs reside in. Read-only. Supports: `$filter`, `$select`, `$orderBy`.|
+|description|String|The provisioning policy description. Supports: `$filter`, `$select`, `$orderBy`.|
+|displayName|String|The display name for the provisioning policy. Supports: `$filter`, `$select`, `$orderBy`.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory. Supports: `$select`.|
+|enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. Default value is `false`. Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional. Supports: `$filter`, `$select`.|
+|gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only. Supports: `$filter`, `$select`, `$orderBy`.|
+|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only. Supports: `$filter`, `$select`, `$orderBy`.|
+|imageDisplayName|String|The display name for the OS image you’re provisioning. Supports: `$filter`, `$select`, `$orderBy`.|
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul> Supports: $filter, $select, $orderBy.|
-|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`. Supports: $filter, $select, $orderBy.|
-|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. Read-only. Supports: $filter, $select, $orderBy.|
+|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`. Supports: `$filter`, `$select`, `$orderBy`.|
+|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. Read-only. Supports: `$filter`, `$select`, `$orderBy`.|
 |managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Read-only. Supports: $filter, $select, $orderBy.|
-|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it. Supports: $filter, $select, $orderBy.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service. Supports: $filter, $select, $orderBy.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Supports: $filter, $select, $orderBy.|
-|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure while creating Cloud PCs for this provisioning policy. Supports: $select.|
+|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it. Supports: `$filter`, `$select`, `$orderBy`.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service. Supports: `$filter`, `$select`, `$orderBy`.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Supports: `$filter`, `$select`, `$orderBy`.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure while creating Cloud PCs for this provisioning policy. Supports: `$select`.|
 
 ### cloudPcProvisioningType values
 
