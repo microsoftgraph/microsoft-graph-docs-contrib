@@ -40,10 +40,10 @@ Use application permissions and [search all shared or private content on SharePo
 - [Get a list](/graph/api/simulationautomation-list-runs) of [automated runs of attack simulation](/graph/api/resources/simulationautomationrun) for a tenant.
 
 ### Teamwork and communications | Calls and online meetings
-A user can participate in an [online meeting](/graph/api/resources/onlinemeeting) in the [role](/graph/api/resources/meetingparticipantinfo#onlinemeetingrole-values) of a coorganizer.
+Support a user to participate in an [online meeting](/graph/api/resources/onlinemeeting) in the [role](/graph/api/resources/meetingparticipantinfo#onlinemeetingrole-values) of a coorganizer.
 
 ### Teamwork and communications | Messaging
-An [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember) can participate in a [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), or [chat](/graph/api/resources/chat).
+Support an [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember) to participate in a [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), or [chat](/graph/api/resources/chat).
 
 ### To-do tasks
 Use a single POST operation to [attach a file](/graph/api/todotask-post-attachments) up to 3MB to a [to-do task](/graph/api/resources/todotask), or [create an upload session](/graph/api/taskfileattachment-createuploadsession) to iteratively upload portions of a file up to 25 MB total size to attach it to a task.
@@ -81,7 +81,7 @@ Use the [recommendation](/graph/api/resources/recommendation?view=graph-rest-bet
 Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) [participant](/graph/api/resources/meetingparticipants?view=graph-rest-beta&preserve-view=true) being [restricted](/graph/api/resources/onlineMeetingRestricted?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
-An [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta&preserve-view=true) can participate in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+Support an [Azure Communication Services user](/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-beta&preserve-view=true) to participate in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 
 
 ## Want to stay in the loop?

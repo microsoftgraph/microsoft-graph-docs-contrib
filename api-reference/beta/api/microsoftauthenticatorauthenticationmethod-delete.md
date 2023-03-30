@@ -38,12 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete your own Microsoft Authenticator authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+```
+
+Delete your own or another user's Microsoft Authenticator authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 

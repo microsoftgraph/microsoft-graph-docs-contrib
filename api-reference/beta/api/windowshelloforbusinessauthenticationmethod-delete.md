@@ -38,12 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete your own Windows Hello For Business authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
+```
+
+Delete your own or another user's Windows Hello For Business authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 DELETE /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 

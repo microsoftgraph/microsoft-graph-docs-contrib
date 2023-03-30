@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass method.
+Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass (TAP) method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,12 +39,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+Get details of your own temporary access pass (TAP) authentication method.
+<!-- { "blockType": "ignored" } -->
+```http
 GET /me/authentication/temporaryAccessPassMethods
+```
+
+Get details of your own or another user's temporary access pass (TAP) authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 

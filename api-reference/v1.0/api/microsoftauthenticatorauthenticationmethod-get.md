@@ -34,17 +34,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
-> [!NOTE]
-> The authentication administrator only sees masked phone numbers.
-
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own Microsoft Authenticator authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+```
+
+Get details of your own or another user's Microsoft Authenticator authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 

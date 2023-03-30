@@ -63,7 +63,7 @@ The following is an example of the request.  From the response, the app manageme
   "name": "get_appManagementPolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 ```
 
