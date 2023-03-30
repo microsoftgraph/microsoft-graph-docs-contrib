@@ -119,7 +119,7 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 
 ## License checks
 
-The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 license. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
 
 ## Role and application permission authorization checks
 
