@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.
+Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object. Only the properties listed in the [request body](identitygovernance-workflow-update.md#request-body) table can be updated. To update any other workflow properties, see [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
 
 ## Permissions
 
@@ -55,6 +55,8 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
+> [!NOTE]
+> You can also update task name and description within a workflow without creating a new version. For details about these properties, see [task resource type (lifecycle workflow tasks)](../resources/identitygovernance-task.md).
 
 ## Response
 
