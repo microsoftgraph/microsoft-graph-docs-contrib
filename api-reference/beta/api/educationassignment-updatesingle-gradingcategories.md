@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The new name for a grading category.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [gradingCategory](../resources/educationrubric.md) object in the response body
+If successful, this method returns a `200 OK` response code and an updated [gradingCategory](../resources/assignment-gradingcategories.md) object in the response body.
 
 ## Example
 
