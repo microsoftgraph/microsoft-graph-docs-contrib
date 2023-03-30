@@ -94,6 +94,19 @@ Content-Type: application/json
           "id": "1991210caf!104"
         }
       }
+    },
+    {
+      "id": "1312ghi",
+      "remoteItem": {
+        "id": "987def!654",
+        "name": "January Service Review.pptx",
+        "file": { },
+        "size": 145362,
+        "parentReference": {
+          "driveId": "987def",
+          "id": "987def!321"
+        }
+      }
     }
   ]
 }
@@ -107,8 +120,16 @@ To access the shared DriveItem resource, you will need to make a request using t
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
 ```http
-GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
+GET /drives/{remoteItem-parentReference-driveId}/items/{remoteItem-id}
 ```
+
+Continuing the example above, metadata about the shared item with name `"January Service Review.pptx"` can be accessed as follows:
+
+```http
+GET /drives/987def/items/987def!654
+```
+
+
 By default, **sharedWithMe** returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
 
 <!--
