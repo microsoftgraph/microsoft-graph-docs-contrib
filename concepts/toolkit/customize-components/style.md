@@ -11,7 +11,7 @@ Each Microsoft Graph Toolkit component documents a set of [CSS custom properties
 
 ```css
 mgt-person {
-  --avatar-size: 34px;
+  --person-avatar-size: 34px;
 }
 ```
 
@@ -21,48 +21,53 @@ For more flexibility, consider using [custom templates](./templates.md).
 
 ## Apply themes
 
-Two themes are available - light and dark. By default, all components are styled with light theme. To switch to dark theme, you can simply apply `class="mgt-dark"` to the  section of your HTML page. The components inside that section will have dark theme applied. The following examples show how themes will apply based on how you structure your HTML.
+Two themes are available - light and dark. These themes are supported out of the box because the mgt components are upgraded to use [Fluent UI web elements](/fluent-ui/web-components/) under the hood. By default, all components are in the light theme. To switch to dark theme, you can do it globally for the entire document using the `mgt-toggle-theme` component or theme a component by setting the custom CSS tokens values on the component.
 
-Example 1: Global theme
+### Example 1: Global theme using mgt-theme-toggle
+
+Using the [mgt-theme-toggle](../components/theme-toggle.md) component, you can set the theming for the document by placing it anywhere that's convenient for your theming experience. This component will render a toggle button that you can use to switch between `light` and `dark` modes.
 
 ```html
-<body class="mgt-light">
-    <!-- light theme will apply to all components in this section -->
+<body>
+    <mgt-theme-toggle></mgt-theme-toggle>
     <header><mgt-login></mgt-login></header>
     <article><mgt-agenda></mgt-agend></article>
     <footer></footer>
 </body>
 ```
 
-Example 2: Individual component theme
+### Example 2: Customize CSS tokens of a component
+
+We have exposed several CSS tokens that you can use to style a component if you want to override the current theme colors. Check the particular component page to get the listed tokens that are available.
+
+> NOTE: customizing these tokens means that your set values are the default values that are used and there will be no effect using the `mgt-theme-toggle` component.
 
 ```html
-<mgt-person-card class="mgt-dark"></mgt-person-card>
+<mgt-people-picker></mgt-people-picker>
 ```
 
-Example 3: Regional theme
-
-```html
-<div class="mgt-light">
-    <header class="mgt-dark">
-        // login component will have dark theme
-        <mgt-login></mgt-login>
-    </header>
-    <article>
-        // agenda component will have light theme
-        <mgt-agenda></mgt-agenda>
-    </article>
-</div>
-```
-
-Example 4: Customize CSS with theme
-
-```html
-<mgt-people-picker class="mgt-dark custom-class"></mgt-people-picker>
-```
 ```css
-mgt-people-picker.custom-class {
-    --input-background-color: $custom-background-color;
-    --input-border: $custom-input-border;
+mgt-people-picker {
+  --people-picker-selected-option-background-color: orange;
+  --people-picker-selected-option-highlight-background-color: red;
+  --people-picker-dropdown-background-color: blue;
+  --people-picker-dropdown-result-background-color: yellow;
+  --people-picker-dropdown-result-hover-background-color: gold;
+  --people-picker-dropdown-result-focus-background-color: green;
+  --people-picker-no-results-text-color: orange;
+  --people-picker-input-background: gray;
+  --people-picker-input-border-color: yellow;
+  --people-picker-input-hover-background: green;
+  --people-picker-input-hover-border-color: red;
+  --people-picker-input-focus-background: purple;
+  --people-picker-input-focus-border-color: orange;
+  --people-picker-input-placeholder-focus-text-color: yellow;
+  --people-picker-input-placeholder-hover-text-color: gold;
+  --people-picker-input-placeholder-text-color: white;
+  --people-picker-search-icon-color: yellow;
+  --people-picker-remove-selected-close-icon-color: blue;
+  /** You can also change the person tokens **/
+  --person-line1-text-color: blue;
+  --person-line2-text-color: red;
 }
 ```
