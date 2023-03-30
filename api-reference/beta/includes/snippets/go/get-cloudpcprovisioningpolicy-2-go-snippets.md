@@ -5,12 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.CloudPcProvisioningPolicyRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointProvisioningPolicieItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"assignments"},
 }
-configuration := &graphconfig.CloudPcProvisioningPolicyRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceManagementVirtualEndpointProvisioningPolicieItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

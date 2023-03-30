@@ -1,13 +1,13 @@
 ---
-title: 'sitepage: get webparts by position'
-description: 'Get a collection of webParts by position information'
+title: "sitepage: getWebPartsByPosition"
+description: "Get a collection of webParts by position information"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# sitepage: get webparts by position
+# sitepage: getWebPartsByPosition
 
 Namespace: microsoft.graph
 
@@ -67,13 +67,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+
 <!-- {
   "blockType": "request",
-  "name": "list_webpart"
+  "name": "get_webparts_by_position"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
 ```
 

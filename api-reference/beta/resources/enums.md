@@ -11,6 +11,105 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
+### userPurpose values
+
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
+### recommendationCategory values 
+
+|Member|
+|:---|
+|identityBestPractice|
+|identitySecureScore|
+|unknownFutureValue|
+
+### recommendationFeatureAreas values 
+
+|Member|
+|:---|
+|users|
+|groups|
+|devices|
+|applications|
+|accessReviews|
+|conditionalAccess|
+|governance|
+|unknownFutureValue|
+
+### recommendationPriority values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+
+### recommendationStatus values 
+
+|Member|
+|:---|
+|active|
+|completedBySystem|
+|completedByUser|
+|dismissed|
+|postponed|
+|unknownFutureValue|
+
+### recommendationType values 
+
+|Member|
+|:---|
+|adfsAppsMigration|
+|enableDesktopSSO|
+|enablePHS|
+|enableProvisioning|
+|switchFromPerUserMFA|
+|tenantMFA|
+|thirdPartyApps|
+|turnOffPerUserMFA|
+|useAuthenticatorApp|
+|useMyApps|
+|staleApps|
+|staleAppCreds|
+|applicationCredentialExpiry|
+|servicePrincipalKeyExpiry|
+|adminMFAV2|
+|blockLegacyAuthentication|
+|integratedApps|
+|mfaRegistrationV2|
+|pwagePolicyNew|
+|passwordHashSync|
+|oneAdmin|
+|roleOverlap|
+|selfServicePasswordReset|
+|signinRiskPolicy|
+|userRiskPolicy|
+|verifyAppPublisher|
+|privateLinkForAAD|
+|appRoleAssignmentsGroups|
+|appRoleAssignmentsUsers|
+|managedIdentity|
+|overprivilegedApps|
+|unknownFutureValue|
+
 ### layoutTemplateType values
 
 | Member             |
@@ -112,6 +211,17 @@ Namespace: microsoft.graph
 |:---|
 |requestSent|
 |requestReceived|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
 |unknownFutureValue|
 
 ### accessPackageCustomExtensionStage values 
@@ -270,7 +380,7 @@ Namespace: microsoft.graph
 ### synchronizationSecret values
 
 |Member|
-|:----|
+|:---|
 |None|
 |UserName|
 |Password|
@@ -305,6 +415,9 @@ Namespace: microsoft.graph
 |Oauth2AuthorizationCode|
 |Oauth2RedirectUri|
 |ApplicationTemplateIdentifier|
+|Oauth2TokenExchangeUri|
+|Oauth2AuthorizationUri|
+|AuthenticationType|
 |Server|
 |PerformInboundEntitlementGrants|
 |HardDeletesEnabled|
@@ -312,6 +425,54 @@ Namespace: microsoft.graph
 |SyncAgentADContainer|
 |ValidateDomain|
 |TestReferences|
+|ConnectionString|
+
+### synchronizationScheduleState values 
+
+|Member|
+|:---|
+|Active|
+|Disabled|
+|Paused|
+
+### synchronizationStatusCode values
+
+|Member|
+|:---|
+|NotConfigured|
+|NotRun|
+|Active|
+|Paused|
+|Quarantine|
+
+### synchronizationTaskExecutionResult values 
+
+|Member|
+|:---|
+|Succeeded|
+|Failed|
+|EntryLevelErrors|
+
+### quarantineReason values 
+
+|Member|
+|:---|
+|EncounteredBaseEscrowThreshold|
+|EncounteredTotalEscrowThreshold|
+|EncounteredEscrowProportionThreshold|
+|EncounteredQuarantineException|
+|Unknown|
+|QuarantinedOnDemand|
+|TooManyDeletes|
+|IngestionInterrupted|
+
+### attributeMappingSourceType values 
+
+|Member|
+|:---|
+|Attribute|
+|Constant|
+|Function|
 
 ### filterMode values
 
@@ -399,6 +560,13 @@ Namespace: microsoft.graph
 |Binary|
 |Boolean|
 |DateTime|
+
+### scopeOperatorType values 
+
+|Member|
+|:---|
+|Binary|
+|Unary|
 
 ### mutability values
 
@@ -2140,14 +2308,15 @@ Possible values for user account types (group membership), per Windows definitio
 |flowWhenChanged|
 |flowAlways|
 
-### attributeFlowType values
+### attributeFlowType values 
 
 |Member|
 |:---|
-|always|
-|objectAddOnly|
-|multiValueAddOnly|
-|restId|
+|Always|
+|ObjectAddOnly|
+|MultiValueAddOnly|
+|ValueAddOnly|
+|AttributeAddOnly|
 
 ### objectFlowTypes values
 
@@ -2380,6 +2549,7 @@ Possible values for user account types (group membership), per Windows definitio
 |b2bDirectConnectUser|
 |otherExternalUser|
 |serviceProvider|
+|microsoftAdminPortals|
 
 ### signInAccessType values 
 
@@ -3062,7 +3232,7 @@ Possible values for user account types (group membership), per Windows definitio
 |externalGuest|
 |unknownFutureValue|
 |scheduler|
-|member|
+|teamMember|
 
 ### bookingReminderRecipients values 
 
@@ -3405,6 +3575,21 @@ Possible values for user account types (group membership), per Windows definitio
 |mfa|
 |unknownFutureValue|
 
+### authenticationStrengthResult values
+
+|Member|
+|:---|
+|notSet|
+|skippedForProofUp|
+|satisfied|
+|singleChallengeRequired|
+|multipleChallengesRequired|
+|singleRegistrationRequired|
+|multipleRegistrationsRequired|
+|cannotSatisfyDueToCombinationConfiguration|
+|cannotSatisfy|
+|unknownFutureValue|
+
 ### authenticationMethodModes values
 
 |Member|
@@ -3462,6 +3647,40 @@ Possible values for user account types (group membership), per Windows definitio
 |actionUndefined|
 |unknownFutureValue|
 
+### plannerRelationshipUserRoles values
+
+|Member|
+|:---|
+|defaultRules|
+|groupOwners|
+|groupMembers|
+|taskAssignees|
+|applications|
+|unknownFutureValue|
+
+### plannerRuleKind values
+
+|Member|
+|:---|
+|taskRule|
+|bucketRule|
+|planRule|
+|unknownFutureValue|
+
+### plannerUserRoleKind values
+
+|Member|
+|:---|
+|relationship|
+|unknownFutureValue|
+
+### plannerTaskTargetKind values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+
 ### onPremisesDirectorySynchronizationDeletionPreventionType values
 
 |Member|
@@ -3469,4 +3688,37 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |enabledForCount|
 |enabledForPercentage|
+|enabledForPercentage|
+|unknownFutureValue|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:-----|
+|group|
+|unknownFutureValue|
+
+### authenticationMethodsPolicyMigrationState values
+
+|Member|
+|:-----|
+|premigration|
+|migrationInProgress|
+|migrationComplete|
+|unknownFutureValue|
+
+### authenticationEventType values
+
+|Member|
+|:---|
+|tokenIssuanceStart|
+|pageRenderStart|
+|unknownFutureValue|
+
+### microsoftAuthenticatorAuthenticationMethodClientAppName values
+
+|Member|
+|:-----|
+|microsoftAuthenticator|
+|outlookMobile|
 |unknownFutureValue|

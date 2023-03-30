@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to events in a calendar view"
 description: "Track event changes in calendar view using GET requests with the delta function. Example shows how to synchronize a user's default calendar in a set time range."
-author: "jumasure"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -113,8 +113,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Sample initial response
 
@@ -230,7 +228,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Sample second response 
 
@@ -348,7 +345,6 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-
 ### Sample third and final response
 
 The third response returns the only remaining event in the calendar view, and a `@odata.deltaLink` URL which indicates 
@@ -443,7 +439,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### The next round: sample first response
 

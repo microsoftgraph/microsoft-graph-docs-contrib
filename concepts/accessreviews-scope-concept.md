@@ -1,10 +1,13 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
-author: "jyothig123"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
+ms.date: 06/30/2022
 ---
 
 # Configure the scope of your access review using the Microsoft Graph API
@@ -34,7 +37,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -47,7 +50,7 @@ To review *only inactive users* assigned to the group:
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -61,7 +64,7 @@ The following example scopes the review to both direct and transitive members of
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
+    "query": "/groups/{groupId}/transitiveMembers/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -84,7 +87,7 @@ The following example scopes the review to only direct members of the group who 
 
 ### Example 4: Review all users assigned to all Microsoft 365 groups
 
-The following example creates a review of each Microsoft 365 group that contains guest users. For the review instance on each group, the review is scoped to only direct members of the group who are guest users.
+The following example creates a review of all Microsoft 365 groups in the tenant. The review is scoped to only direct members of the group.
 
 ```http
 "instanceEnumerationScope": {
@@ -185,7 +188,7 @@ This review won't include B2B direct connect users in teams with shared channels
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')",
+    "query": "/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}' and catalogId eq 'id')",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -283,7 +286,7 @@ In this example, the access review scope is all users who are members of a team,
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
+            "query": "/groups/{groupId}/transitiveMembers",
             "queryType": "MicrosoftGraph",
             "queryRoot": null
         },

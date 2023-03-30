@@ -5,12 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Authorization": "Bearer {token}",
-}
-configuration := &graphconfig.OpenShiftChangeRequestsRequestBuilderPostRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer {token}")
+
+configuration := &graphconfig.TeamItemScheduleOpenShiftChangeRequestsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewOpenShiftChangeRequest()

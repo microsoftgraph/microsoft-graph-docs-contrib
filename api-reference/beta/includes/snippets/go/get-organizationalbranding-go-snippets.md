@@ -5,12 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/organization"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Accept-Language": "0",
-}
-configuration := &graphconfig.BrandingRequestBuilderGetRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "0")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

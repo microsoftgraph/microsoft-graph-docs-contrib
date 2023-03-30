@@ -48,10 +48,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"},
   "overlay": true,
   "position": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
+  "visible": true
 }
 
 ```

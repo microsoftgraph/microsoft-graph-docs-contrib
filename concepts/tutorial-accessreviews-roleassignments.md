@@ -2,8 +2,11 @@
 title: "Review access to privileged roles using the access reviews API in Microsoft Graph"
 description: "Learn how to use the access reviews API to periodically review users and groups with access to privileged roles, including both active and eligible roles."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Review access to privileged roles using the access reviews API in Microsoft Graph
@@ -133,7 +136,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -272,7 +274,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ---
 
-
 ### Response
 
 In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the **accessReviewScheduleDefinition** object. *Only one instance is returned representing the first recurrence of only one resource under review.*
@@ -381,7 +382,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -517,7 +517,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-decisionsforgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -541,7 +541,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -575,7 +574,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-priviegedroles-decisionsforuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -599,7 +598,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -665,7 +663,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 <!-- {
@@ -849,7 +846,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 <!-- {

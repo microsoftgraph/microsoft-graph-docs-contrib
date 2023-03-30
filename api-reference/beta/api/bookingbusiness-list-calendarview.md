@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 ---
 
-
 ### Response
 The following is an example of the response. 
 
@@ -170,11 +169,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1003",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",
@@ -294,11 +293,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",

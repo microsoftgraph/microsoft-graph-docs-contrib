@@ -24,11 +24,12 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
+|[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. After it is set, this property can’t be updated. Required.|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated. Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -98,5 +99,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Get history"
 description: "Read the properties and relationships of a riskyUserHistoryItem object."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/41a31b00-3b3b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

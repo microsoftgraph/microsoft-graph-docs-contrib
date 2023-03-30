@@ -2,7 +2,7 @@
 title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 ms.localizationpriority: medium
-author: "ebasseri"
+author: "tracyshi"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 ---
 
-
 #### Response
 
 Here is an example of the response.
@@ -187,7 +186,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -278,7 +276,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=r
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

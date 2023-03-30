@@ -5,12 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.MessageRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ItemMessageItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"mentions"},
 }
-configuration := &graphconfig.MessageRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemMessageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

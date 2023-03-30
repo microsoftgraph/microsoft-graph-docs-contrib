@@ -1,7 +1,7 @@
 ---
 title: "Create deviceAndAppManagementAssignmentFilter"
 description: "Create a new deviceAndAppManagementAssignmentFilter object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter.|
 |displayName|String|DisplayName of the Assignment Filter.|
 |description|String|Description of the Assignment Filter.|
-|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |rule|String|Rule definition of the Assignment Filter.|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
 |payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter|
@@ -123,8 +123,3 @@ Content-Length: 715
   ]
 }
 ```
-
-
-
-
-

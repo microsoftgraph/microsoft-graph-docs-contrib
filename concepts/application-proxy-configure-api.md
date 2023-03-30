@@ -2,9 +2,12 @@
 title: "Configure Application Proxy using the Microsoft Graph API"
 description: "Provide remote access and single sign-on to on-premises applications by configuring Application Proxy using the Microsoft Graph API."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dhruvinshah
 ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 01/11/2022
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
@@ -68,7 +71,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -167,7 +169,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -236,7 +237,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -288,7 +288,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -366,7 +365,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -431,7 +429,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -484,7 +481,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -549,7 +545,6 @@ Content-type: appplication/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -577,7 +572,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-get-approles-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -601,7 +596,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -686,7 +680,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -765,7 +758,6 @@ Content-type: appRoleAssignments/json
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -839,7 +831,6 @@ DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -888,7 +879,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fd
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -928,7 +918,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -936,7 +926,6 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

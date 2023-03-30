@@ -1,7 +1,7 @@
 ---
 title: "Get riskDetection"
 description: "Read the properties and relationships of a riskDetection object."
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

@@ -5,15 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/appcatalogs"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-requestParameters := &graphconfig.TeamsAppsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamsAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.AppCatalogsTeamsAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

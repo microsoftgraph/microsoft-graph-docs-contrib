@@ -88,8 +88,6 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/ba9cc2d6-c2
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

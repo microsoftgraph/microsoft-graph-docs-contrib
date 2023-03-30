@@ -6,6 +6,7 @@
         "/cloud-app-security",
         "/concepts",
         "/defender-for-identity",
+        "/deployedge",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -20,6 +21,7 @@
         "/office365",
         "/onedrive",
         "/openspecs",
+        "/partner-center",
         "/powershell",
         "/previous-versions",
         "/rest",
@@ -27,9 +29,9 @@
         "/skypeforbusiness",
         "/sharepoint",
         "/universal-print",
+        "/training",
         "/troubleshoot",
         "/windows",
-        "/windows-hardware",
-        "/deployedge"
+        "/windows-hardware"
     ]
 }

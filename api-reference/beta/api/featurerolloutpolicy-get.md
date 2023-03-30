@@ -167,7 +167,6 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 ---
 
-
 #### Response
 
 The following is an example of the response.

@@ -5,12 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/policies"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.UnifiedRoleManagementPolicyRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.PoliciesRoleManagementPolicieItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"effectiveRules","rules"},
 }
-configuration := &graphconfig.UnifiedRoleManagementPolicyRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.PoliciesRoleManagementPolicieItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

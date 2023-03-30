@@ -5,15 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "isEnabled eq true"
 
-requestParameters := &graphconfig.LanguagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.LanguagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

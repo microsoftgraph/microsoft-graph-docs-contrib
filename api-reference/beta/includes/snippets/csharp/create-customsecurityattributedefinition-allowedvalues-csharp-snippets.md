@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
+var requestBody = new CustomSecurityAttributeDefinition
 {
 	AttributeSet = "Engineering",
 	Description = "Active projects for user",
@@ -16,28 +16,26 @@ var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
 	Status = "Available",
 	Type = "String",
 	UsePreDefinedValuesOnly = true,
-	AllowedValues = new CustomSecurityAttributeDefinitionAllowedValuesCollectionPage()
+	AllowedValues = new List<AllowedValue>
 	{
 		new AllowedValue
 		{
 			Id = "Alpine",
-			IsActive = true
+			IsActive = true,
 		},
 		new AllowedValue
 		{
 			Id = "Baker",
-			IsActive = true
+			IsActive = true,
 		},
 		new AllowedValue
 		{
 			Id = "Cascade",
-			IsActive = true
-		}
-	}
+			IsActive = true,
+		},
+	},
 };
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions
-	.Request()
-	.AddAsync(customSecurityAttributeDefinition);
 
 ```

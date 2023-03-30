@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerProgressTaskBoardTaskFormat = await graphClient.Planner.Tasks["{plannerTask-id}"].ProgressTaskBoardFormat
-	.Request()
-	.GetAsync();
+var result = await graphClient.Planner.Tasks["{plannerTask-id}"].ProgressTaskBoardFormat.GetAsync();
+
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let response = await client.api('/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}?select=id,expand=webparts')
+let horizontalSectionColumn = await client.api('/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}')
 	.version('beta')
 	.get();
 

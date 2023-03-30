@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of an [assignment](../resources/educationassignment.md). 
+Get the properties and relationships of an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 

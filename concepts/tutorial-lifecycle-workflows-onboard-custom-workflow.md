@@ -1,9 +1,12 @@
 ---
 title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs"
 description: "Learn how to automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
-author: "AlexFilipin"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
@@ -18,7 +21,7 @@ This pre-hire scenario will generate a temporary password for the new employee a
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ The tenant you want to use to preview the Lifecycle Workflows feature with an Azure AD Premium P2 license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Lifecycle Administrator or Global Administrator Azure AD role.
 + Grant yourself the following *LifecycleWorkflows.ReadWrite.All* delegated permission.
 + You must have two user accounts to use for this tutorial, one for the new hire and another for their manager.
@@ -127,7 +130,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -217,7 +219,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/work
 
 ---
 
-
 ### Response
 
 
@@ -271,7 +272,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -346,7 +346,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -408,7 +407,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/LifecycleWorkflows/workf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -504,7 +502,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 When a workflow is scheduled, Lifecycle Workflows will check every three hours for users in the associated execution condition and execute the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
 
