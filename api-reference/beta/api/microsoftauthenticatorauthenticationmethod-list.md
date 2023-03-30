@@ -34,20 +34,19 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
-* Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+[!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own Microsoft Authenticator authentication methods.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods
+```
+
+Get details of your own or another user's Microsoft Authenticator authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 ```
 
@@ -110,8 +109,6 @@ GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/mi
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -132,7 +129,8 @@ Content-Type: application/json
       "displayName": "Sandeep's iPhone",
       "deviceTag": "",
       "phoneAppVersion": "6.5.4",
-      "createdDateTime": "2020-12-03T23:16:12Z"
+      "createdDateTime": "2020-12-03T23:16:12Z",
+      "clientAppName": "microsoftAuthenticator"
     }
   ]
 }

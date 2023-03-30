@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var temporaryAccessPassMethods = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods
-	.Request()
-	.GetAsync();
+var result = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods.GetAsync();
+
 
 ```

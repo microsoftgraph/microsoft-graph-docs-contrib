@@ -4,33 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Teamwork.SendActivityNotification.SendActivityNotificationPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}"
-};
-
-var activityType = "taskCreated";
-
-var previewText = new ItemBody
-{
-	Content = "New Task Created"
-};
-
-var templateParameters = new List<KeyValuePair>()
-{
-	new KeyValuePair
+	Topic = new TeamworkActivityTopic
 	{
-		Name = "taskId",
-		Value = "Task 12322"
-	}
+		Source = TeamworkActivityTopicSource.EntityUrl,
+		Value = "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}",
+	},
+	ActivityType = "taskCreated",
+	PreviewText = new ItemBody
+	{
+		Content = "New Task Created",
+	},
+	TemplateParameters = new List<KeyValuePair>
+	{
+		new KeyValuePair
+		{
+			Name = "taskId",
+			Value = "Task 12322",
+		},
+	},
 };
+await graphClient.Users["{user-id}"].Teamwork.SendActivityNotification.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Teamwork
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters)
-	.Request()
-	.PostAsync();
 
 ```

@@ -88,16 +88,11 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 [!INCLUDE [sample-code](../includes/snippets/go/list-horizontalsectioncolumn-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-horizontalsectioncolumn-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-horizontalsectioncolumn-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
