@@ -1,6 +1,6 @@
 ---
 title: "Remove gradingCategory"
-description: "Remove gradingCategory from the assignments."
+description: "Remove gradingCategory from the assignment."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
