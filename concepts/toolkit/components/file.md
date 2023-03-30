@@ -35,6 +35,8 @@ You can use several properties to customize the component.
 | insight-id     | insightId     | ID of the insight resource.                                                                                                                                                                                                                                                                                                                                                                                               |
 | file-details   | fileDetails   | Set to an object representing a file                                                                                                                                                                                                                                                                                                                                                                                      |
 | file-icon      | fileIcon      | URL path where the icon is stored.                                                                                                                                                                                                                                                                                                                                                                                        |
+| -              | driveItem     | Object containing Graph details on item.                                                                                                                                                                                                                                                                                                                                                                                  |
+| -              | fileDetails   | Object containing the DriveItem.                                                                                                                                                                                                                                                                                                                                                                                          |
 | view           | view          | Set to control how the file is rendered. The default is `oneline`. <br>`image` - show only the icon <br>`oneline` - show the icon and one line of text (default is file `name`) <br>`twolines` - show the icon and two lines of text (`name` and `lastModifiedDateTime` by default)<br> `threelines` - show the icon and three lines of text (`name`, `lastModifiedDateTime`, and `displayName` of the author by default) |
 | line1-property | line1Property | Sets the property of `fileDetails` to use for the first line of text. Default is `name` of the file.                                                                                                                                                                                                                                                                                                                      |
 | line2-property | line2Property | Sets the property of `fileDetails` to use for the second line of text. Default is `lastModifiedDateTime`.                                                                                                                                                                                                                                                                                                                 |
@@ -189,3 +191,12 @@ The control uses the global authentication provider described in the [authentica
 | `fileQueries`  | List of files by queries  | Used when `fileQuery` is provided                    |
 
 For details about how to configure the cache, see [Caching](../customize-components/cache.md).
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name      | Default value |
+| ---------------- | ------------- |
+| modifiedSubtitle | 'Modified'    |
+| sizeSubtitle     | 'Size'        |
