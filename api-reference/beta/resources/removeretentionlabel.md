@@ -1,7 +1,7 @@
 ---
 title: "driveItem: removeRetentionLabel"
 description: "Remove a retention label from a driveItem."
-author: "kyrachurney and asaiganesh"
+author: "kyrachurney"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
@@ -23,7 +23,7 @@ For more information about retention labels from an administrator's perspective,
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
-| ---------------------------------------|-------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
+| ---------------------------------------|-------------------------------- | --------------------------------------
 | Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                                        |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                               
 | Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
