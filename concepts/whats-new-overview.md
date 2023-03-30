@@ -30,7 +30,8 @@ When [sharing an item on SharePoint](/graph/api/listitem-createlink?view=graph-r
 As part of a [policy for access package assignment](/graph/api/resources/accesspackageassignmentpolicy), you can specify or get the required regex pattern for a requestor to answer an [access package question](/graph/api/resources/accesspackagequestion).
 
 ### Identity and access | Identity and sign-in
-Specify in a [cross-tenant access policy](/graph/api/resources/crosstenantaccesspolicy) to enable B2B collaboration across Azure clouds, for example, between tenants in Azure Commercial and Azure Government clouds, and between Azure Commercial and Azure China clouds.
+- Specify in a [cross-tenant access policy](/graph/api/resources/crosstenantaccesspolicy) to enable B2B collaboration across Azure clouds, for example, between tenants in Azure Commercial and Azure Government clouds, and between Azure Commercial and Azure China clouds.
+- Enable or disable the ability for specified users to approve authenticaion push notifications  on supported Microsoft 365 apps.
 
 ### Search | Query
 Use application permissions and [search all shared or private content on SharePoint sites](search-concept-searchall.md) that belong to the app owner in a specified region. 
