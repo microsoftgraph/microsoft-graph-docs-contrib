@@ -1,8 +1,9 @@
 ---
-author: asaiganesh and kyrachurney
-ms.author: asaiganesh and kyrachurney
+author: kyrachurney
+ms.author:kyrachurney
 ms.date: 3/20/2023
-title: itemRetentionLabel entity
+title: itemRetentionLabel entity type
+description: "Groups retention, compliance related properties on an item into a single structure"
 ---
 
 # itemRetentionLabel entity type
