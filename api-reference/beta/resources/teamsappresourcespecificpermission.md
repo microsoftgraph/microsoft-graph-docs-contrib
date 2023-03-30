@@ -22,7 +22,7 @@ The resource-specific permission associated with a teamsApp.
 |permissionType|[teamsAppResourceSpecificPermissionType](../resources/teamsAppResourceSpecificPermission.md#teamsAppResourceSpecificPermissionType-values)|The type of resource-specific permission.|
 |permissionValue|String|The name of the resource-specific permission.|
 
-### teamsAppResourceSpecificPermissionType values
+## teamsAppResourceSpecificPermissionType values
 
 | Member             | Description                                                                                               |
 |:-------------------|:----------------------------------------------------------------------------------------------------------|
