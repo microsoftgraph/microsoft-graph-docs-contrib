@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "powerState",
                     "ChangeType": "Addition",
-                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc.md).",
+                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudpc"
                 },
                 {
