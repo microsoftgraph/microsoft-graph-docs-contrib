@@ -4,6 +4,14 @@
             "ChangeList": [
                 {
                     "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcResizeValidationCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcResizeValidationCode** enumeration type.",
+                    "Target": "cloudPcResizeValidationResult"
+                },
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcResizeValidationResult",
                     "ChangeType": "Addition",
