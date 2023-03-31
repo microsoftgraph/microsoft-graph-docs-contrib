@@ -5,16 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemExecutionScopeRequestBuilderGetQueryParameters{
-	Select: [] string {"id"},
-}
-configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemExecutionScopeRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").ExecutionScope().Get(context.Background(), configuration)
+
+
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").ExecutionScope().Get(context.Background(), nil)
 
 
 ```
