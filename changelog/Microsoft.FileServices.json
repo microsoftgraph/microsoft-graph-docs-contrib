@@ -37,14 +37,6 @@
         {
           "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
-          "ChangedApiName": "sharepoint",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint?view=graph-rest-beta) resource",
-          "Target": "sharepoint"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
           "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-beta) resource",
@@ -139,14 +131,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-1.0) resource type.",
           "Target": "idleSessionSignOut"
-        },
-        {
-          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepoint",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint?view=graph-rest-1.0) resource",
-          "Target": "sharepoint"
         },
         {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
