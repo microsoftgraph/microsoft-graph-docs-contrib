@@ -73,7 +73,6 @@ Inherits from [entity](../resources/entity.md).
 | unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
 ### sharingDomainRestrictionMode values
-The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this evolvable enum: {list those members beyond `unknownFutureValue`}.
 | Member                          | Description                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | none                            | No restrictions apply.                                                                                                |
