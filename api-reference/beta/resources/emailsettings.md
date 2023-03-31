@@ -19,7 +19,7 @@ Defines the settings for emails sent from Lifecycle workflow [tasks](identitygov
 
 |Property|Type|Description|
 |:---|:---|:---|
-|senderDomain|String|Specifies the [domain](domain.md) that should be used when sending email notifications. This domain must be [verified](../api/domain-verify.md) in order to be used.|
+|senderDomain|String|Specifies the [domain](domain.md) that should be used when sending email notifications. This domain must be [verified](../api/domain-verify.md) in order to be used. The recommendation is to use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX as this then complies with the [RFC compliance](https://www.ietf.org/rfc/rfc2142.txt) for sending and receiving email. Please see [Learn more about Exchange Online Email Routing](/exchange/mail-flow-best-practices/mail-flow-best-practices) for more information.|
 |useCompanyBranding|Boolean|Specifies if the organization’s banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If `true` the banner logo will be taken from the tenant’s [branding settings](organizationalbranding.md). This value can only be set to `true` if the [organizationalBranding](organizationalbranding.md) **bannerLogo** property is set. |
 
 ## Relationships
