@@ -17,8 +17,6 @@ Generic representation of a team template definition for a team with a specific 
 
 Inherits from [entity](../resources/entity.md).
 
-> **Note**: This API is currently in private preview only. When it reaches public preview, we will publish a blog post announcement on the [Microsoft 365 Developer blog](https://devblogs.microsoft.com/microsoft365dev/).
-
 
 ## Methods
 |Method|Return type|Description|

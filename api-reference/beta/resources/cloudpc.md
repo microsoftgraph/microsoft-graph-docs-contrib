@@ -40,6 +40,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
+|[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values)|Get the access state of the shift work Cloud PC. The possible values are: {unassigned, noLicensesAvailable, activationFailed, active, activating, waitlisted, unknownFutureValue, hibernated}. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values): {hibernated}.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
 
@@ -48,7 +49,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |Property|Type|Description|
 |:---|:---|:---|
 |aadDeviceId|String|The Azure Active Directory (Azure AD) device ID of the Cloud PC.|
-|connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC is able to be connected or not.|
+|connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -62,7 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
-|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The Power State of the Cloud PC. Possible values include running, poweredOff. This is only supported for Cloud PCs with the provisioningType set to 'shared'.|
+|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The Power State of the Cloud PC. Possible values include running, poweredOff. This is only supported for shift work CloudPCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
@@ -100,13 +101,16 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
-#### cloudPCPowerState values
+The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `hibernated`.
 
 |Member|Description|
 |:---|:---|
-|running|Indicates that Cloud PC is running.|
-|poweredOff|Indicates that Cloud PC is powered off.|
+|unassigned|Set to unassigned if the Cloud PC is not consuming any shared-use licenses. The default value is unassigned.|
+|noLicensesAvailable|Indicates that all shared-use licenses are in use.|
+|activationFailed|Indicates that the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
+|active|Indicates that the shift work Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|hibernated|Indicates that the shift work Cloud PC is in the hibernated state before it's shut down and deallocated. A shift work Cloud PC in hibernated state is still accessible by the user.|
 
 ## Relationships
 

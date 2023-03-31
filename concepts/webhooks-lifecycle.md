@@ -111,12 +111,12 @@ A few things to note about this type of notification:
 
 ### Actions to take
 
-1. [Acknowledge](webhooks.md#change-notifications) the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
-2. [Validate](webhooks.md#change-notifications) the authenticity of the lifecycle notification.
+1. [Acknowledge](webhooks.md#receive-notifications the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
+2. [Validate](webhooks.md#receive-notifications the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step. 
   > **Note:** If you're using one of the [authentication libraries](/azure/active-directory/develop/reference-v2-libraries), they will handle this for you by either reusing a valid cached token, or obtaining a new token, including asking the user to sign in again (with a new password). Note that obtaining a new token might fail, because the conditions of access might have changed, and the caller might no longer be allowed access to the resource data.
 
-4. Create a new subscription using the standard process described [here](webhooks.md#subscription-request-example).
+4. Create a new subscription using the standard process described [here](change-notifications-delivery-webhooks.md#change-notification-example).
 
   > **Note:** This action might fail, because the authorization checks performed by the system might deny the app or the user access to the resource. It might be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You can retry these actions later, at any time; for example, when the conditions of access have changed. Any resource changes in the time period from when the lifecycle notification was sent, to when the app recreates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
@@ -152,9 +152,9 @@ A few things to note about this type of notification:
 
 ### Actions to take
 
-1. [Acknowledge](webhooks.md#change-notifications) the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
+1. [Acknowledge](webhooks.md#receive-notifications the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
     - If you ignore these signals, do nothing else. Otherwise:
-2. [Validate](webhooks.md#change-notifications) the authenticity of the lifecycle notification.
+2. [Validate](webhooks.md#receive-notifications the authenticity of the lifecycle notification.
 3. Perform a full data resync of the resource to identify the changes that were not delivered as notifications. 
 
 ## Responding to reauthorizationRequired notifications
@@ -199,7 +199,7 @@ The following steps represent the flow of an authorization challenge for an acti
     - Reauthorize the subscription. This does not extend the expiration date of the subscription.
     - Renew the subscription. This reauthorizes and extends the expiration date.
 
-    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiration](webhooks.md#renewing-a-subscription).
+    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](change-notifications-delivery-webhooks.md#create-a-subscription) or [renewing a subscription before its expiration](change-notifications-delivery-webhooks.md#renew-a-subscription).
 
 4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused. Please note that Microsoft graph will drop the notifications four hours after they are paused.
 
@@ -228,8 +228,8 @@ A few things to note about this type of notification:
 
 ### Actions to take
 
-1. [Acknowledge](webhooks.md#change-notifications) the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
-2. [Validate](webhooks.md#change-notifications) the authenticity of the lifecycle notification.
+1. [Acknowledge](webhooks.md#receive-notifications the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
+2. [Validate](webhooks.md#receive-notifications the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step. 
   > **Note:** If you're using one of the [authentication libraries](/azure/active-directory/develop/reference-v2-libraries), they will handle this for you by either reusing a valid cached token, or obtaining a new token, including asking the user to sign in again (with a new password). Note that obtaining a new token might fail, because the conditions of access might have changed, and the caller might no longer be allowed access to the resource data.
 
@@ -260,7 +260,7 @@ The following information can help you understand authorization challenges:
 
 - Authorization challenges do not replace the need to renew a resource change subscription before it expires. 
 
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
+    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](change-notifications-delivery-webhooks.md#renew-a-subscription) before they expire.
 
 - The frequency of authorization challenges is subject to change.
 
