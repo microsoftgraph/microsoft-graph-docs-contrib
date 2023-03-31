@@ -1,6 +1,6 @@
 ---
-author: kyrachurney
-ms.author:kyrachurney
+author: kyracatwork
+ms.author: kyracatwork
 ms.date: 3/20/2023
 title: itemRetentionLabel entity type
 description: "Groups retention, compliance related properties on an item into a single structure"
