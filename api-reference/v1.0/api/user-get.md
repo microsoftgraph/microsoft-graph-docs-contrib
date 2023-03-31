@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Get user
+# Get a user
 
 Namespace: microsoft.graph
 
