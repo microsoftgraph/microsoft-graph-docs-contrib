@@ -967,8 +967,8 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Change type | Version | Description                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Change      | beta    | The [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) resource has been deprecated.                                                  |
-| Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) resource now supports updating the **content** and **properties** properties.      |
-| Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) resources now return a `Retry-After` header when they are throttled. |
+| Change      | beta    | The [externalItem](/graph/api/resources/externalconnectors-externalitem) resource now supports updating the **content** and **properties** properties.      |
+| Change      | beta    | Operations on [externalItem](/graph/api/resources/externalconnectors-externalitem) resources now return a `Retry-After` header when they are throttled. |
 
 ### Sites and lists
 
@@ -1278,7 +1278,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) for new and edited channel messages, and new and edited chat messages. |
 | Addition | Beta | Added the [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true) resource and associated methods.|
 | Addition | Beta | Added new relationship `shiftPreferences` to [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) entity. |
-| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta&preserve-view=true), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true). **Note:** Applications permissions are currently in private preview and are not available for public use.|
+| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true). **Note:** Applications permissions are currently in private preview and are not available for public use.|
 
 ## November 2019
 
@@ -1410,7 +1410,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [openshift](/graph/api/resources/openshift?view=graph-rest-beta&preserve-view=true), [openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapShiftChangeRequest?view=graph-rest-beta&preserve-view=true), and [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) resources and associated methods.|
+| Addition | Beta | Added the [openshift](/graph/api/resources/openshift?view=graph-rest-beta&preserve-view=true), [openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) resources and associated methods.|
 | Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition        | Beta          | Added an additional route to retrieve a [driveItem] using a team and channel ID, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta&preserve-view=true). |
 
