@@ -38,4 +38,3 @@ The following is a JSON representation of the resource.
   "associatedResourceId": "String"
 }
 ```
-
