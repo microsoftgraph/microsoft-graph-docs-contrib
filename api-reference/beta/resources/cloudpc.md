@@ -63,7 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
-|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The Power State of the Cloud PC. Possible values include running, poweredOff. This is only supported for shift work CloudPCs.|
+|powerState|[cloudPcPowerStatus](#cloudpcpowerstatus-values)|The Power State of the Cloud PC. Possible values include `running`, `poweredOff`, `deallocated`, `hibernated`, `unknown`. This is only supported for shift work CloudPCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
@@ -100,6 +100,16 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### cloudPcPowerStatus values
+
+|Member|Description|
+|:---|:---|
+|running|The Cloud PC is in running status.|
+|poweredOff|The Cloud PC is in power off status.|
+|deallocated|The Cloud PC is in deallocated status.|
+|hibernated|The Cloud PC is in hibernated status.|
+|unknown|The Cloud PC is in unknown status.|
 
 ### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `hibernated`.
