@@ -1,6 +1,6 @@
 ---
-author: kyrachurney
-ms.author: kyrachurney
+author: kyracatwork
+ms.author: kyracatwork
 ms.date: 3/20/2023
 title: retentionLabelSettings resource type
 description: gGroups all the compliance retention restrictions on the item into a single structure
