@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
 ## Properties

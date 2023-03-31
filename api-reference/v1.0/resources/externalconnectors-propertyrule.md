@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the set of conditions to display a [displayTemplate](../resources/externalconnectors-displaytemplate.md). Rules use the format: (property from the item schema) + (operation) + (value). For example, a **propertyRule** can specify that "itemTitle" "contains" "contoso". Therefore, the **displayTemplate** will not be displayed unless itemTitle contains the value "contoso".
 
 ## Properties
