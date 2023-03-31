@@ -1,9 +1,9 @@
 ---
 author: kyracatwork
-ms.author: kyracatwork
+ms.author: kyrachurney
 ms.date: 3/20/2023
 title: retentionLabelSettings resource type
-description: gGroups all the compliance retention restrictions on the item into a single structure
+description: Groups all the compliance retention restrictions on the item into a single structure
 ---
 
 # retentionLabelSettings resource type
