@@ -1,6 +1,7 @@
 {
   "changelog": [
-          "ChangeList": [
+    {
+      "ChangeList": [
         {
           "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
