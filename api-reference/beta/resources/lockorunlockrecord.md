@@ -24,8 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
 | ---------------------------------------|-------------------------------- | --------------------------------------
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                                        |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                               
 | Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
 | Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
 | Delegated (personal Microsoft account) | Not supported.                                                           |                                                                       
