@@ -5,16 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.SiteItemPageItemCanvasLayoutVerticalSectionRequestBuilderGetQueryParameters{
-	Select: [] string {"emphasis","expand=webparts"},
-}
-configuration := &graphconfig.SiteItemPageItemCanvasLayoutVerticalSectionRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").CanvasLayout().VerticalSection().Get(context.Background(), configuration)
+
+
+result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").CanvasLayout().VerticalSection().Get(context.Background(), nil)
 
 
 ```

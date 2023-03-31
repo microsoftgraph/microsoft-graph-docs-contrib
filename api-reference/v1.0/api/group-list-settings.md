@@ -45,7 +45,7 @@ GET /groupSettings
 
 <!-- { "blockType": "ignored" } -->
 
-List group-specific settings
+List group-specific settings.
 
 ```http
 GET /groups/{groupId}/settings
@@ -67,13 +67,15 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [groupSetting](../resources/groupsetting.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [groupSetting](../resources/groupsetting.md) objects in the response body.
 
 ## Examples
 
-### Example: Retrieve the tenant-level group settings
+### Example 1: Retrieve the tenant-level group settings
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 
@@ -109,6 +111,8 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ---
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -197,6 +201,8 @@ Content-type: application/json
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 
 <!-- {
@@ -231,6 +237,8 @@ GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd
 ---
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

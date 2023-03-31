@@ -68,7 +68,7 @@ The rest of this article walks through an example to subscribe to change notific
 
 ## Creating a subscription
 
-To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
+To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](change-notifications-delivery-webhooks.md#create-a-subscription):
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
 - **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
@@ -76,7 +76,7 @@ To have resource data included in change notifications, you **must** specify the
 
 Keep the following in mind:
 
-- Validate both endpoints as described in [Notification endpoint validation](webhooks.md#notification-endpoint-validation). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
+- Validate both endpoints as described in [Notification endpoint validation](change-notifications-delivery-webhooks.md#notificationurl-validation). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
 
 ### Subscription request example
 
@@ -124,7 +124,7 @@ For more information about how to receive and respond to lifecycle notifications
 
 Apps often run business logic based on resource data included in change notifications. Verifying the authenticity of each change notification first is important. Otherwise, a third party can spoof your app with false change notifications and make it run its business logic incorrectly, and this can lead to a security incident.
 
-For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
+For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](change-notifications-delivery-webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
 
 For change notifications that deliver resource data, perform a more thorough validation before processing the data.
 

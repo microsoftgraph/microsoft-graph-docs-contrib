@@ -11,6 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CreateNewVersionPostRequestBody();
 $workflow = new Workflow();
+$workflow->setCategory(new LifecycleWorkflowCategory('joiner'));
+
 $workflow->setDescription('Configure new hire tasks for onboarding employees on their first day');
 
 $workflow->setDisplayName('Global onboard new hire employee');
