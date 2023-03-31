@@ -28,22 +28,6 @@
         },
         {
           "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "idleSessionSignOut",
-          "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-beta) resource type.",
-          "Target": "idleSessionSignOut"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepointSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-beta) resource",
-          "Target": "sharepointSettings"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Deletion",
