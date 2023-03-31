@@ -100,7 +100,7 @@ Content-Type: application/json
 {
     "value": [
       {
-        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcBulkRemoteActionResult",
+        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcRemoteActionResult",
         "actionName": "Resize",
         "actionState": "pending",
         "startDateTime": "2021-06-23T09:28:32.8260335Z",
@@ -110,7 +110,7 @@ Content-Type: application/json
         "statusDetails": null
       },
       {
-        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcBulkRemoteActionResult",
+        "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcRemoteActionResult",
         "actionName": "Resize",
         "actionState": "failed",
         "startDateTime": "2021-06-23T09:28:32.8260335Z",
