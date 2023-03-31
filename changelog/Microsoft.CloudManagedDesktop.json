@@ -5,9 +5,9 @@
                 {
                     "Id": "b44e2995-4ab6-4714-85b6-6e3119d4c4cc",
                     "ApiChange": "Method",
-                    "ChangedApiName": "getProvisionedCludPcs",
+                    "ChangedApiName": "getProvisionedCloudPcs",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getProvisionedCludPcs](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) for end-user.",
+                    "Description": "Added the [getProvisionedCloudPcs](https://learn.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) for end-user.",
                     "Target": "cloudPC"
                 }
             ],
