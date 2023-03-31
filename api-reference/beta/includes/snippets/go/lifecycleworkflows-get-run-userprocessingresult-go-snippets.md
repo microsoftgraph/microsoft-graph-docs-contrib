@@ -5,16 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemRunItemUserProcessingResultItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"},
-}
-configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemRunItemUserProcessingResultItemRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").RunsById("run-id").UserProcessingResultsById("userProcessingResult-id").Get(context.Background(), configuration)
+
+
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").RunsById("run-id").UserProcessingResultsById("userProcessingResult-id").Get(context.Background(), nil)
 
 
 ```
