@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "list_appManagementPolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 ```
 
