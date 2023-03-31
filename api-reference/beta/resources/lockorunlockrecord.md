@@ -1,7 +1,7 @@
 ---
 title: "driveItem: lockorunlockrecord"
 description: "Lock or unlock a retention label on a driveItem that classifies content as records."
-author: "kyrachurney"
+author: "kyracatwork"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Lock or unlock a retention label on a [driveItem][item-resource] that classifies content as records.
 
-For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario?view=o365-worldwide).
+For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
-For more information on locking and unlocking retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning?view=o365-worldwide). 
+For more information on locking and unlocking retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning). 
 
 
 ## Permissions
