@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **keyCredential**.
 
-To add a keyCredential using Microsoft Graph, see [https://learn.microsoft.com/en-us/graph/applications-how-to-add-certificate](/graph/applications-how-to-add-certificate).
+To add a keyCredential using Microsoft Graph, see [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate).
 
 ## Properties
 | Property	   | Type	|Description|
