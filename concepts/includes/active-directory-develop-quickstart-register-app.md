@@ -111,7 +111,7 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 :::image type="content" source="../images/quickstart-register-app/portal-05-app-reg-04-credentials.png" alt-text="Screenshot of the Azure portal, showing the Certificates and secrets pane in an app registration.":::
 
-### Add a certificate
+### Option 1: Add a certificate
 
 Sometimes called a _public key_, a certificate is the recommended credential type because they're considered more secure than client secrets. For more information about using a certificate as an authentication method in your application, see [Microsoft identity platform application authentication certificate credentials](/azure/active-directory/develop/active-directory-certificate-credentials).
 
@@ -120,7 +120,7 @@ Sometimes called a _public key_, a certificate is the recommended credential typ
 1. Select the file you want to upload. It must be one of the following file types: _.cer_, _.pem_, _.crt_.
 1. Select **Add**.
 
-### Add a client secret
+### Option 2: Add a client secret
 
 Sometimes called an _application password_, a client secret is a string value your app can use in place of a certificate to identity itself.
 
@@ -138,7 +138,7 @@ Client secrets are considered less secure than certificate credentials. Applicat
 For application security recommendations, see [Microsoft identity platform best practices and recommendations](/azure/active-directory/develop/identity-platform-integration-checklist#security).
 
 
-### Add a federated credential
+### Option 3: Add a federated credential
 
 Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Azure AD protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
 

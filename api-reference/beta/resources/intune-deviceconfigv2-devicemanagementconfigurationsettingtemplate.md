@@ -35,7 +35,7 @@ Setting Template
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
+|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

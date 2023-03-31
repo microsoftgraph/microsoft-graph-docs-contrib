@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |source|String|Source from where customer is trying to resume the request, which can be stored in service and will be helpful for auditing.|
 |type|String|Indicate at which stage the custom callout extension was executed. The possible values are: `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestApproved`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestGranted`, `microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestRemoved`|
-|data|[customExtensionData](../resources/customextensiondata.md)| Contains information about the instance of the callout that was made to the customer endpoint. |
+|data|[accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentrequestcallbackdata.md)| Contains information about the instance of the callout that was made to the customer endpoint. |
 
 
 
@@ -62,6 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 #### Request
 The following is an example of a call to resume an access package assignment request that's waiting for a callback.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequestthis.resume"
@@ -83,6 +84,27 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequestthisresume-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequestthisresume-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequestthisresume-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequestthisresume-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/accesspackageassignmentrequestthisresume-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response

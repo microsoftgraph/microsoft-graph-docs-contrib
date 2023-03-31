@@ -21,10 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
 <!-- {
@@ -42,7 +39,6 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 The following properties can be updated.
 
 |Property|Type|Description|
@@ -55,7 +51,7 @@ The following properties can be updated.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code and an updated [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
