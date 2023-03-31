@@ -13,9 +13,9 @@
                 {
                     "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
                     "ApiChange": "Enum type",
-                    "ChangedApiName": "cloudPcPowerState",
+                    "ChangedApiName": "cloudPcPowerStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcPowerState** enumeration type.",
+                    "Description": "Added the **cloudPcPowerStatus** enumeration type.",
                     "Target": "cloudpc"
                 }
             ],
