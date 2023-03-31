@@ -10624,6 +10624,8 @@ items:
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk resize
+            href: api/cloudpc-bulkresize.md
           - name: Bulk-restore remotely
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Bulk-set review status
@@ -10664,8 +10666,6 @@ items:
             href: api/cloudpc-troubleshoot.md
           - name: Retry partner agent installation
             href: api/cloudpc-retrypartneragentinstallation.md
-          - name: Bulk resize
-            href: api/cloudpc-bulkresize.md
         - name: Cloud PC audit event
           href: resources/cloudpcauditevent.md
           items:

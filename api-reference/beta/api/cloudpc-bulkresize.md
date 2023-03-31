@@ -51,8 +51,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The identifier id of a set of Cloud PC.|
-|targetServicePlanId|String|The identifier id of targeted resized service plan.|
+|cloudPcIds|String collection|The Cloud PC id list for selected Cloud PC devices to be set as pending resize.|
+|targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
 
 ## Response
 
