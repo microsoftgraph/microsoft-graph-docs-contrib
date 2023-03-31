@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET driveitem/retentionLabel
-2
 GET /drives/{drive-id}/items/{item-id}/retentionLabel
 GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```
