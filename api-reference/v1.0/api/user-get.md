@@ -1,5 +1,5 @@
 ---
-title: "Get user"
+title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.localizationpriority: high
