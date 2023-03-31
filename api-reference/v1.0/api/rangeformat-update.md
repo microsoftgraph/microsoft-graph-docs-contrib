@@ -117,10 +117,12 @@ This request updates the font style, size, and color of the first cell.
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/font
 Content-type: application/json
@@ -211,10 +213,12 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_two"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format
 Content-type: application/json
@@ -409,10 +413,12 @@ This request updates the font style, size, and color of the third cell. Note tha
 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat_font_t"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
 Content-type: application/json
