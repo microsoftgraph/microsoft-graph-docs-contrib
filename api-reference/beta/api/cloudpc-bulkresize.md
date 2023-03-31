@@ -88,7 +88,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "Collection(microsoft.graph.cloudPcBulkRemoteActionResult)",
+  "@odata.type": "Collection(microsoft.graph.cloudPcRemoteActionResult)",
   "name": "cloudpc.bulkResize"
 }
 -->
