@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate selected a bulk of [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.
+Validate a bulk of selected [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.
 
 ## Permissions
 
@@ -52,8 +52,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The identifier id of a set of Cloud PC.|
-|targetServicePlanId|String|The identifier id of targeted resized service plan.|
+|cloudPcIds|String collection|The Cloud PC id list for selected Cloud PC devices to be validated. Max count is 2000.|
+|targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
 
 ## Response
 

@@ -43,7 +43,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values)|Get the access state of the shift work Cloud PC. The possible values are: {unassigned, noLicensesAvailable, activationFailed, active, activating, waitlisted, unknownFutureValue, hibernated}. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values): {hibernated}.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents which failed to install on the [cloudPC](../resources/cloudpc.md).|
-|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate selected a bulk of [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.|
+|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate a bulk of selected [cloudPC](../resources/cloudpc.md) to see if their states meet the requirements to perform Bulk Resize.|
 
 ## Properties
 

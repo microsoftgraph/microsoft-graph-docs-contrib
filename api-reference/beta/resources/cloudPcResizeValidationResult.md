@@ -13,26 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the validation result of single resized Cloud PC in bulk resize action.
+Represents the validation result of single Cloud PC in bulk resize action.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |cloudPcId|String|The id of [cloudPC](../resources/cloudpc.md) with the result refers to.|
-|validationResult|[cloudPcResizeValidationCode](#cloudpcresizevalidationcode-values)|The validation result for the Cloud PC resize action.|
+|validationResult|[cloudPcResizeValidationCode](#cloudpcresizevalidationcode-values)|Describes a list of the validation result for the Cloud PC resize action. Possible values are: `success`, `cloudPcNotFound`, `operationCnflict`, `operationNotSupported`, `targetLicenseHasAssigned`, `internalServerError`, `unknownFutureValue`.|
 
 
 ### cloudPcResizeValidationCode values
-|Member|Value|Description|
-|:---|:-|:---|
-|success|0|Indicates that resize validation is success.|
-|cloudPcNotFound|1|Indicates that the Cloud PC is not found.|
-|operationConflict|2|Indicates that resize action has conflict with other action.|
-|operationNotSupported|3|Indicates that the resize action is not supported for the Cloud PC.|
-|targetLicenseHasAssigned|4|Indicates that the target license has already been assigned to the User.|
-|internalServerError|5|Indicates that the validation is failed with internal server error.|
-|unknownFutureValue|6|Evolvable enumeration sentinel value. Do not use.|
+|Member|Description|
+|:---|:---|
+|success|Indicates that resize validation is success.|
+|cloudPcNotFound|Indicates that the Cloud PC is not found.|
+|operationConflict|Indicates that resize action has conflict with other action.|
+|operationNotSupported|Indicates that the resize action is not supported for the Cloud PC.|
+|targetLicenseHasAssigned|Indicates that the target license has already been assigned to the User.|
+|internalServerError|Indicates that the validation is failed with internal server error.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
