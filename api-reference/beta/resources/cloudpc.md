@@ -101,6 +101,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
+### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `hibernated`.
 
 |Member|Description|
@@ -109,6 +110,8 @@ The following table lists the members of an [evolvable enumeration](#shiftworkcl
 |noLicensesAvailable|Indicates that all shared-use licenses are in use.|
 |activationFailed|Indicates that the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
 |active|Indicates that the shift work Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
+|activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
+|waitlisted (deprecated)|Indicates that the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used. This value is deprecated and will stop returning on May 17, 2023. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |hibernated|Indicates that the shift work Cloud PC is in the hibernated state before it's shut down and deallocated. A shift work Cloud PC in hibernated state is still accessible by the user.|
 
@@ -144,9 +147,9 @@ The following is a JSON representation of the resource.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
+  "powerState": "String",
   "osVersion": "String",
   "partnerAgentInstallResults": "String",
-  "powerState": "String",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
   "provisioningType": "String",
