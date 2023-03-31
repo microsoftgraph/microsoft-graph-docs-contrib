@@ -416,7 +416,7 @@ This request updates the font style, size, and color of the third cell. Note tha
 
 <!-- {
   "blockType": "request",
-  "name": "update_font3_rangeformat"
+  "name": "update_font_rangeformat"
 }-->
 
 ```http
