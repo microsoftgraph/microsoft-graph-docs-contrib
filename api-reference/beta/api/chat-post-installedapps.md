@@ -60,8 +60,7 @@ Following table shows additional parameters that can be used with the request bo
 |:---|:---|:---|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
 
-> **Note**:
-> The permissions consented during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. Please follow this [example](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app) to get the application and delegated resource-specific permissions. If there are only delegated resource-specific permissions present in teamsAppDefinition, then permissions can be omitted in the body of this request.
+> **Note**: The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
