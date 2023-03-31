@@ -83,6 +83,9 @@ Content-type: application/json
 Content-length: 450
 
 {
+  "accountName": "accountName-value",
+  "accountId": "accountId-value",
+  "appliesTo": "appliesTo-value",
   "capabilityStatus": "capabilityStatus-value",
   "consumedUnits": 99,
   "prepaidUnits": {
@@ -99,7 +102,8 @@ Content-length: 450
     }
   ],
   "skuId": "skuId-value",
-  "skuPartNumber": "skuPartNumber-value"
+  "skuPartNumber": "skuPartNumber-value",
+  "subscriptionIds": ["subscriptionId-value"]
 }
 ```
 

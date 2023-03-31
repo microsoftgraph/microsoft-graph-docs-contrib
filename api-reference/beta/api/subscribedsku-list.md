@@ -88,6 +88,9 @@ Content-length: 547
 {
   "value": [
     {
+      "accountName": "accountName-value",
+      "accountId": "accountId-value",
+      "appliesTo": "appliesTo-value",
       "capabilityStatus": "capabilityStatus-value",
       "consumedUnits": 99,
       "prepaidUnits": {
@@ -104,7 +107,8 @@ Content-length: 547
         }
       ],
       "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value"
+      "skuPartNumber": "skuPartNumber-value",
+      "subscriptionIds": ["subscriptionId-value"]
     }
   ]
 }
