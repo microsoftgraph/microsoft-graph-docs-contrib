@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "imageTaggingChoice"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingCapabilities",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "sharingCapabilities"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingDomainRestrictionMode",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "sharingDomainRestrictionMode"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "idleSessionSignOut"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "sharepoint"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
@@ -51,15 +51,7 @@
           "Target": "sharepointSettings"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "storage",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **storage** resource type.",
-          "Target": "storage"
-        },
-        {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Deletion",
@@ -67,7 +59,7 @@
           "Target": "imageTaggingChoice"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingCapabilities",
           "ChangeType": "Deletion",
@@ -75,7 +67,7 @@
           "Target": "sharingCapabilities"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingDomainRestrictionMode",
           "ChangeType": "Deletion",
@@ -83,7 +75,7 @@
           "Target": "sharingDomainRestrictionMode"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Deletion",
@@ -91,7 +83,7 @@
           "Target": "idleSessionSignOut"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "settings",
           "ChangeType": "Deletion",
@@ -99,33 +91,25 @@
           "Target": "settings"
         },
         {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Deletion",
           "Description": "Removed the **sharepoint** resource type.",
           "Target": "sharepoint"
-        },
-        {
-          "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Dictionary",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Dictionary** resource type.",
-          "Target": "Dictionary"
         }
       ],
-      "Id": "dbf3330f-9717-43e3-afd4-35a2c72d6a6e",
+      "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-03-31T16:01:23.3598884Z",
+      "CreatedDateTime": "2023-03-31T17:18:06.3348506Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Addition",
@@ -133,7 +117,7 @@
           "Target": "imageTaggingChoice"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingCapabilities",
           "ChangeType": "Addition",
@@ -141,7 +125,7 @@
           "Target": "sharingCapabilities"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "sharingDomainRestrictionMode",
           "ChangeType": "Addition",
@@ -149,7 +133,7 @@
           "Target": "sharingDomainRestrictionMode"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
@@ -157,7 +141,7 @@
           "Target": "idleSessionSignOut"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
@@ -165,7 +149,7 @@
           "Target": "sharepoint"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Resource",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
@@ -173,7 +157,7 @@
           "Target": "sharepointSettings"
         },
         {
-          "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Resource",
           "ChangedApiName": "admin",
           "ChangeType": "Addition",
@@ -181,10 +165,10 @@
           "Target": "admin"
         }
       ],
-      "Id": "01cf11e2-cd6d-442b-bc1d-231a0dd51358",
+      "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-03-31T16:01:23.3598906Z",
+      "CreatedDateTime": "2023-03-31T17:18:06.3356617Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
