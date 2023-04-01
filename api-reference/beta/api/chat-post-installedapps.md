@@ -17,7 +17,7 @@ Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resour
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
-> - Currently, the operation of installing an app that requires RSC permissions is not supported in application context.
+> - Currently, installing an app that requires resource-specific consent permissions is not supported in application context.
 
 ## Permissions
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Chat.Manage.Chat<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
 > **Note**: 
-<br><sup>1</sup> These permissions cannot be used for installing apps that require consent to resource-specific permissions.
-<br><sup>2</sup> These permissions are [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
+<br><sup>1</sup> These permissions cannot be used to install apps that require consent to resource-specific permissions.
+<br><sup>2</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -53,12 +53,11 @@ POST /chats/{chat-id}/installedApps
 ## Request body
 
 The request body should contain the catalog app's generated app ID. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
-
-Following table shows additional parameters that can be used with the request body.
+The fFollowing table lists additional parameters that can be used with the request body.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource-specific permissions that are being consented to.|
 
 > **Note**: The permissions consented to during the install must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
@@ -125,7 +124,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 ### Example 2: Install app in a chat and and consent to the resource-specific permissions required by the app
-The list of resource-specific permissions required by the app can be found by getting the app from appCatalog as shown in this [example](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
+To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
 
