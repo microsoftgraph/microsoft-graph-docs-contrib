@@ -114,7 +114,7 @@ Content-type: application/json
 ```
 ### Example 2: Get the set of resource-specific permissions consented for the app installed in the specified chat
 
-The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A $select query is required for consented permission set to be shown.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameterd is required to show the consented permission set.
 
 #### Request
 
