@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 ## Examples
 
-### Example 1: Install app in a chat.
+### Example 1: Install app in a chat
 
 #### Request
 
