@@ -58,7 +58,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-09T00:00:00.601897Z",
       "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
+      "SubArea": "Azure AD activity reports"
     },
     {
       "ChangeList": [
