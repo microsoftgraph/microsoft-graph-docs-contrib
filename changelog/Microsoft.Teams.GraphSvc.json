@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorization",
           "ChangeType": "Addition",
-          "Description": "Added the `authorization` property to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the **authorization** property to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
           "Target": "teamsAppDefinition"
         },
         {
@@ -47,14 +47,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "consentedPermissionSet",
           "ChangeType": "Addition",
-          "Description": "Added the `consentedPermissionSet` property to the [teamsAppInstallation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
+          "Description": "Added the **consentedPermissionSet** property to the [teamsAppInstallation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
           "Target": "teamsAppInstallation"
         }
       ],
       "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-03-06T00:51:19.3981715Z",
+      "CreatedDateTime": "2023-03-31T00:51:19.3981715Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Microsoft.Teams.Shifts"
     },
