@@ -46,14 +46,14 @@ POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 
 ## Request body
 
-Following table shows additional parameters that can be used with the upgrade action.
+The following table shows additional parameters that can be used with the upgrade action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|Set of resource specific permissions that are being consented.|
 
 > **Note**:
-> The permissions consented during the upgrade must be same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
+> The permissions consented to during the upgrade must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsAppDefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in **teamsAppDefinition**, permissions can be omitted in the body of this request.
 
 ## Response
 
