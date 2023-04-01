@@ -52,8 +52,8 @@ POST /chats/{chat-id}/installedApps
 
 ## Request body
 
-The request body should contain the catalog app's generated app ID. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
-The fFollowing table lists additional parameters that can be used with the request body.
+The request body should contain the catalog generated app ID for the app catalog. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
+The following table lists additional parameters that can be used with the request body.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
