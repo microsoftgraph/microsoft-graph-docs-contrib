@@ -10,7 +10,6 @@ doc_type: apiPageType
 # Get employeeExperience
 Namespace: microsoft.graph
 
-
 Retrieves course activity details for a user using courseActivityId.
 
 Read the properties and relationships of an [learningCourseActivity](../resources/learningcourseactivity.md) object.
@@ -72,10 +71,9 @@ Request for the signed-in user to retrieve course activity details:
 GET https://graph.microsoft.com/beta/me/employeeExperience/learningCourseActivities/{id}
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

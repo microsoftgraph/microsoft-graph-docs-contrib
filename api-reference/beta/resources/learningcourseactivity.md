@@ -31,20 +31,20 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course**
-|assignedDateTime|DateTimeOffset|**Date time value when the assignment was completed**
-|assignerUserId|String|**The user id of the assigner**
-|assignmentType|assignmentType|**assignmentType for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`**
-|completedDateTime|DateTimeOffset|**Date time value when the assignment was completed**|
-|completionPercentage|Int32|**Percenatge completion value of course**|
-|dueDateTime|DateTimeTimeZone|**Due date for the course activity**
-|externalcourseActivityId|String|**A course activity id generated at provider**|
-|Id|String|**The resultant id of this request can be used to make further interactions to the course activity API’s**
-|learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent graph API’s**|
-|learnerUserId|String|**The user id of the learner**|
-|learningProviderId|String|**The registration Id of the provider**|
-|startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner**
-|status|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed)**|
+|@odata.type|String|**Type to determine if it’s a LearningAssignment or SelfInitiated course.**
+|assignedDateTime|DateTimeOffset|**Date time value when the assignment was completed.**
+|assignerUserId|String|**The user id of the assigner.**
+|assignmentType|assignmentType|**assignmentType for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`.**
+|completedDateTime|DateTimeOffset|**Date time value when the assignment was completed.**|
+|completionPercentage|Int32|**Percenatge completion value of course.**|
+|dueDateTime|DateTimeTimeZone|**Due date for the course activity.**
+|externalcourseActivityId|String|**A course activity id generated at provider.**|
+|Id|String|**The resultant id of this request can be used to make further interactions to the course activity API’s.**
+|learningContentId|String|**The Id of learning content received when learning content is created on Viva Learning using learningContent Microsoft Graph API’s.**|
+|learnerUserId|String|**The user id of the learner.**|
+|learningProviderId|String|**The registration Id of the provider.**|
+|startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner.**
+|status|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed).**|
 
 
 ## Error Conditions and Messages
@@ -55,15 +55,15 @@ Inherits from [entity](../resources/entity.md).
 |Forbidden|POST, GET, DELETE, PATCH|403|Forbidden|**You do not have a service plan adequate for this request.** 
 |Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**This provider isn't enabled for the given tenant.** 
 |Bad Request|POST, DELETE, PATCH, GET|400|BadRequest|**There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.**
-|Bad Request|PATCH|400|BadRequest|**Required fields are missing**
-|Bad Request|PATCH|400|BadRequest|**Input fields are invalid**
-|Multiple Field validations failed|PATCH, POST|400|BadRequest|**BadRequest - Input field shouldn't be empty or null**
+|Bad Request|PATCH|400|BadRequest|**Required fields are missing.**
+|Bad Request|PATCH|400|BadRequest|**Input fields are invalid.**
+|Multiple Field validations failed|PATCH, POST|400|BadRequest|**BadRequest - Input field shouldn't be empty or null.**
 |Bad Request|DELETE, GET, PATCH|404|NotFound|**The requested assignment doesn’t exist."**
 |Internal Server Error|POST, GET, DELETE, PATCH|500|InternalServerError|**Internal Server Error.** 
-|Request throttled|POST, GET, DELETE, PATCH|429|Too Many Requests|**TooManyRequests in a accepted interval - Retry after x minutes**
-|Service Unavailable|POST, GET, DELETE, PATCH|503|Service Unavailable|**ServiceUnavailable - Retry after x minutes**
-|Forbidden|POST, PATCH|403|Forbidden|**The provider is not valid to create course activity for the given learning content - When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created**
-|Forbidden|POST, PATCH|403|Forbidden|**User License is not valid to perform the operation - When the user for which Assignment is being created does not have a premium license**
+|Request throttled|POST, GET, DELETE, PATCH|429|Too Many Requests|**TooManyRequests in a accepted interval - Retry after x minutes.**
+|Service Unavailable|POST, GET, DELETE, PATCH|503|Service Unavailable|**ServiceUnavailable - Retry after x minutes.**
+|Forbidden|POST, PATCH|403|Forbidden|**The provider is not valid to create course activity for the given learning content - When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created.**
+|Forbidden|POST, PATCH|403|Forbidden|**User License is not valid to perform the operation - When the user for which Assignment is being created does not have a premium license.**
 
 
 

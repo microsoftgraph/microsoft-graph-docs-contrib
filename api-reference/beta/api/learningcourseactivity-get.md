@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieves the Course Activity via CourseActivity id that is sent by VivaLearning in the Create 
-course activity api call
+course activity api call.
 
 Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
@@ -57,7 +57,6 @@ The following is an example of request and response of an assigned learning cour
 ``` http
 GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
-
 
 ### Response
 
