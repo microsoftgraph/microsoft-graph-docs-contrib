@@ -13098,7 +13098,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [group](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-beta) resource.",
+          "Description": "Added the retryServiceProvisioning method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         },
         {
@@ -13106,7 +13106,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-beta) resource.",
+          "Description": "Added the retryServiceProvisioning method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
           "Target": "orgContact"
         },
         {
@@ -13114,7 +13114,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Added the retryServiceProvisioning method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
