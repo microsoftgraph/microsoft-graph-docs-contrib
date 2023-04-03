@@ -26,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
+
 ## HTTP request
 
 You can address the directory role using either its **id** or **roleTemplateId**.

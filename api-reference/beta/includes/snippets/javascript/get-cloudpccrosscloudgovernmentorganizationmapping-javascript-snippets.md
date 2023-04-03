@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 let cloudPcCrossCloudGovernmentOrganizationMapping = await client.api('/deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping')
 	.version('beta')
-	.header('X-MS-CloudPC-USGovCloudTenantAADToken','{token}')
 	.get();
 
 ```

@@ -12,8 +12,6 @@ $params = @{
 			SynchronizationPreventionType = "enabledForCount"
 			AlertThreshold = 500
 		}
-		SynchronizationInterval = "PT30M"
-		CustomerRequestedSynchronizationInterval = "PT1H"
 	}
 	Features = @{
 		GroupWriteBackEnabled = $true

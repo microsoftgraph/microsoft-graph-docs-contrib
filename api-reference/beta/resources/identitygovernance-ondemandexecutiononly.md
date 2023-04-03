@@ -30,7 +30,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.onDemandExecutionOnly"
+  "@odata.type": "microsoft.graph.identityGovernance.onDemandExecutionOnly",
+  "baseType": "microsoft.graph.identityGovernance.workflowExecutionConditions"
 }
 -->
 ``` json

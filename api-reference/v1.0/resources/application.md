@@ -100,12 +100,13 @@ This resource supports:
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | publisherDomain | String | The verified publisher domain for the application. Read-only. For more information, see [How to: Configure an application's publisher domain](/azure/active-directory/develop/howto-configure-publisher-domain). Supports `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
+| requestSignatureVerification | [requestSignatureVerification](requestsignatureverification.md)| Specifies whether this application requires Azure AD to verify the signed authentication requests.|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. <br/><br/>No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | samlMetadataUrl | String | The URL where the service exposes SAML metadata for federation. This property is valid only for single-tenant applications. Nullable. |
 | serviceManagementReference | String | References application or service contact information from a Service or Asset Management database. Nullable. |
 | signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table](#signinaudience-values). <br/><br/>The value of this object also limits the number of permissions an app can request. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). <br><br>The value for this property has implications on other app object properties. As a result, if you change this property, you may need to change other properties first. For more information, see [Validation differences for signInAudience](/azure/active-directory/develop/supported-accounts-validation?context=graph/context).<br><br>Supports `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
-| tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. <br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+| tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here will also appear in the **tags** property of any associated [service principals](serviceprincipal.md).<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application. For more information about how publisher verification helps support application security, trustworthiness, and compliance, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
@@ -132,6 +133,7 @@ This resource supports:
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|appManagementPolicies|[appManagementPolicy](../resources/appManagementPolicy.md) collection| The appManagementPolicy applied to this application.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Supports `$filter` (`/$count eq 0`, `/$count ne 0`). Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`).|
 |federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. Supports `$expand` and `$filter` (`startsWith`, `/$count eq 0`, `/$count ne 0`).|
@@ -178,6 +180,7 @@ The following is a JSON representation of the resource.
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
+  "requestSignatureVerification": {"@odata.type": "microsoft.graph.requestSignatureVerification"},
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "serviceManagementReference": "String",
   "signInAudience": "String",

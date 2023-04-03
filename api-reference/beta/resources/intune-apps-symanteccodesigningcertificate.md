@@ -28,7 +28,7 @@ Not yet documented
 |:---|:---|:---|
 |id|String|The key of the entity.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
+|status|certificateStatus|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject value for the cert.|
