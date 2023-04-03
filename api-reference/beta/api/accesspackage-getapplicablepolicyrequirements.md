@@ -137,7 +137,11 @@ Content-Type: application/json
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_req_for_given_user"
+}-->
+
 ```http
 POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
 
