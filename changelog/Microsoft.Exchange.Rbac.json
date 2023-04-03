@@ -4,34 +4,10 @@
       "ChangeList": [
         {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRolePermission",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRolePermission](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRolePermission?view=graph-rest-beta) resource type.",
-          "Target": "unifiedRolePermission"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "appScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [appScope](https://learn.microsoft.com/en-us/graph/api/resources/appScope?view=graph-rest-beta) resource",
-          "Target": "appScope"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "directoryObject",
-          "ChangeType": "Addition",
-          "Description": "Added the [directoryObject](https://learn.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-beta) resource",
-          "Target": "directoryObject"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [roleManagement](https://learn.microsoft.com/en-us/graph/api/resources/roleManagement?view=graph-rest-beta) resource",
+          "Description": "Added the **exchange** relationship to the [roleManagement](https://learn.microsoft.com/en-us/graph/api/resources/roleManagement?view=graph-rest-beta) resource.",
           "Target": "roleManagement"
         },
         {
@@ -41,38 +17,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource type.",
           "Target": "unifiedRbacApplication"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRbacResourceAction",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRbacResourceAction](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacResourceAction?view=graph-rest-beta) resource",
-          "Target": "unifiedRbacResourceAction"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRbacResourceNamespace",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRbacResourceNamespace](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacResourceNamespace?view=graph-rest-beta) resource",
-          "Target": "unifiedRbacResourceNamespace"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRoleAssignment",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleAssignment"
-        },
-        {
-          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRoleDefinition",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleDefinition"
         }
       ],
       "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
