@@ -12770,6 +12770,72 @@
       "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-beta) resource type.",
+          "Target": "serviceProvisioningError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-beta) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-03T06:03:02.8820444Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
