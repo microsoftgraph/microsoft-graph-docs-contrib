@@ -3,7 +3,7 @@ title: "orgContact: retryServiceProvisioning"
 description: "Retries orgContact service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "orgContacts"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
