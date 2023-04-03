@@ -3,7 +3,7 @@ title: "group: retryServiceProvisioning"
 description: "Retries group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "group"
+ms.prod: "groups"
 doc_type: "apiPageType"
 ---
 
@@ -33,11 +33,10 @@ POST /groups/{id}/retryServiceProvisioning
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required.|
-
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Response
 
