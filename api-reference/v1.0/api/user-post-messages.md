@@ -321,7 +321,7 @@ Content-type: application/json
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "message_create_draft_mime_v1"
 }-->
 
