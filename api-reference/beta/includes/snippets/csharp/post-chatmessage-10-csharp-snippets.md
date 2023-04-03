@@ -8,23 +8,47 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new ChatMessage
 {
-	Subject = null,
+	Subject = "Announcement Subheading",
 	Body = new ItemBody
 	{
-		ContentType = BodyType.Html,
-		Content = "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>",
+		ContentType = BodyType.Text,
+		Content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text",
 	},
 	Attachments = new List<ChatMessageAttachment>
 	{
 		new ChatMessageAttachment
 		{
-			Id = "74d20c7f34aa4a7fb74e2b30004247c5",
-			ContentType = "application/vnd.microsoft.card.thumbnail",
+			Id = "d7ddbf876ae340c3a03bada395ec7da7",
+			ContentType = "application/vnd.microsoft.teams.messaging-announcementBanner",
 			ContentUrl = null,
-			Content = "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\\"http://microsoft.com/\\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+			Content = "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}",
 			Name = null,
 			ThumbnailUrl = null,
-			TeamsAppId = "881b8843-fd91-49e5-9ac2-47ec497ffbe5",
+		},
+	},
+	HostedContents = new List<ChatMessageHostedContent>
+	{
+		new ChatMessageHostedContent
+		{
+			ContentBytes = Convert.FromBase64String("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4"),
+			ContentType = "image/png",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"@microsoft.graph.temporaryId" , "1"
+				},
+			},
+		},
+		new ChatMessageHostedContent
+		{
+			ContentBytes = Convert.FromBase64String("iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4"),
+			ContentType = "image/png",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"@microsoft.graph.temporaryId" , "2"
+				},
+			},
 		},
 	},
 };

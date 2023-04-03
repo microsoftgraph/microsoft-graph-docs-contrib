@@ -145,7 +145,6 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?filter=isof('microso
 
 ---
 
-
 #### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property which includes the ids of member objects in the group.
@@ -245,7 +244,6 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d34
 
 ---
 
-
 #### Response
 
 The following is an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
@@ -328,7 +326,6 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('micros
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
