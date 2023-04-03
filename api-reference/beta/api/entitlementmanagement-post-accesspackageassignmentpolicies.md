@@ -747,6 +747,7 @@ The following example shows how to create an access package policy with a verifi
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
+
 {
   "displayName": "policy-with-verified-id",
   "description": "test",
