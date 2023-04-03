@@ -1,63 +1,6 @@
 {
   "changelog": [
     {
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "imageTaggingChoice",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **imageTaggingChoice** enumeration type.",
-          "Target": "imageTaggingChoice"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "sharingCapabilities",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharingCapabilities** enumeration type.",
-          "Target": "sharingCapabilities"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "sharingDomainRestrictionMode",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharingDomainRestrictionMode** enumeration type.",
-          "Target": "sharingDomainRestrictionMode"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "idleSessionSignOut",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **idleSessionSignOut** resource type.",
-          "Target": "idleSessionSignOut"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "settings",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **settings** resource type.",
-          "Target": "settings"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepoint",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharepoint** resource type.",
-          "Target": "sharepoint"
-        }
-      ],
-      "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-03-31T17:18:06.3348506Z",
-      "WorkloadArea": "Files",
-      "SubArea": ""
-    },
-    {
       "ChangeList": [
         {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
