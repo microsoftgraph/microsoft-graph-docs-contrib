@@ -26,7 +26,7 @@ Represents a Cloud PC provisioning policy.
 |[Delete cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|None|Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 |[Apply cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-apply.md)|None|Apply current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, you can only change the region.|
-|[applyConfig](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the [cloudPcProvisioningPolicy: apply](cloudpcprovisioningpolicy-apply.md) API.|
+|[applyConfig](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the [cloudPcProvisioningPolicy: apply](../api/cloudpcprovisioningpolicy-apply.md) API.|
 
 ## Properties
 
