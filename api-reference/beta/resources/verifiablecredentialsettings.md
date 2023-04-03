@@ -21,7 +21,7 @@ Used for the **verifiableCredentialSettings** property of an [access package ass
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|credentialTypes|[verifiableCredentialType](verifiablecredentialtype.md) collection| List of verifiable credential type references.|
+|credentialTypes|[verifiableCredentialType](verifiablecredentialtype.md) collection| The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.|
 
 ## Relationships
 None.
