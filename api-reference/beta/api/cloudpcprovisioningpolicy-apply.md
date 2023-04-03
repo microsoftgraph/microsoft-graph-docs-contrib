@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: apply"
-description: "Apply current provisioning policy config to all Cloud PC devices under this specified policy. Currently it only supports changing the region, more config modifications will be supported in the future."
+description: "Apply current provisioning policy configuration to all Cloud PC devices under a specified policy."
 author: "Guoan Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply current provisioning policy config to all Cloud PC devices under this specified policy. Currently it only supports changing the region, more config modifications will be supported in the future.
-
+Apply current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, you can only change the region.
 
 ## Permissions
 
@@ -56,8 +55,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "apply_cloudpcprovisioningpolicy"
@@ -65,11 +64,12 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/353b6a8e-67c5-4f68-8d89-4360487576c4/apply
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
 ```
 
-
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
