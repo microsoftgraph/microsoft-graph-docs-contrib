@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_wus2gradingcategories/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories/$entity",
     "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
     "displayName": "Quiz-1",
     "percentageWeight": 10
