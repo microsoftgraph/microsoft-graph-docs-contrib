@@ -45,7 +45,7 @@ None.
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
 |directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of an Azure AD RBAC provider. Read-only. Nullable.|
 |entitlementManagement|[rbacApplication](rbacapplication.md)| Provides access to role definitions and role assignments of Azure AD entitlement management. Read-only. Nullable.|
-|exchange|[unifiedRbacApplication](unifiedrbacapplication.md)| Provides access to role definitions and role assignments of Exchange provider. Read-only. Nullable.|
+|exchange|[unifiedRbacApplication](unifiedrbacapplication.md)| Provides access to role definitions and role assignments of Exchange providers. Read-only. Nullable.|
 
 ## JSON representation
 
