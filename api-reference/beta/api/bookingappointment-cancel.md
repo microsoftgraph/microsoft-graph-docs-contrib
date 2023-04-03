@@ -29,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
-
 ```
 
 ## Request headers
@@ -53,8 +52,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 If you attempt to cancel an appointment that does not exist, this method returns `HTTP 404 Not found`.
 
 ## Example
-
-The following is an example of how to call this API.
 
 ### Request
 
@@ -123,5 +120,3 @@ HTTP/1.1 204 No content
   ]
 }
 -->
-
-
