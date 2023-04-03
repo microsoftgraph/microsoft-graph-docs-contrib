@@ -48,11 +48,11 @@ POST /teams/{team-id}/installedApps
 
 The request body should contain the catalog app's generated app ID. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
 
-Following table shows additional parameters that can be used with the request body.
+The following table lists additional properties that can be included in the request body.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+|teamsApp|String|The ID of the app to add.|
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
 
 > **Note**:
