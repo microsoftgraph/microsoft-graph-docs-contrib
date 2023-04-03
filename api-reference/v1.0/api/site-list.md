@@ -60,7 +60,10 @@ GET /sites?$filter=siteCollection/root ne null
 ### Request
 
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "list_sites_example1"
+}-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
@@ -104,7 +107,10 @@ Content-type: application/json
 
 ### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "list_sites_example2"
+}-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites
