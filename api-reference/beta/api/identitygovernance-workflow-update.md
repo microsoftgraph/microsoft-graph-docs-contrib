@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.
+Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object. Only the properties listed in the [request body](identitygovernance-workflow-update.md#request-body) table can be updated. To update any other workflow properties, see [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
 
 ## Permissions
 
@@ -55,6 +55,8 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 |isEnabled|Boolean|A boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
 
+> [!NOTE]
+> You can also update task name and description within a workflow without creating a new version. For more information on these properties, see: [update task](identitygovernance-task-update.md).
 
 ## Response
 
@@ -66,6 +68,7 @@ If successful, this action returns a `204 No Content` response code.
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_update_workflow"
@@ -83,6 +86,32 @@ Content-length: 454
     "isSchedulingEnabled": false
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-update-workflow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-update-workflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-update-workflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-update-workflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-update-workflow-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-update-workflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

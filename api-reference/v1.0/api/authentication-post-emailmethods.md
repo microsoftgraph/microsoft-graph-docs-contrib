@@ -35,10 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Add an email method to your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- {  "blockType": "ignored" } -->
+``` http
+POST /me/authentication/emailMethods
+```
+
+Add an email authentication method to another user's account.
+<!-- {  "blockType": "ignored" } -->
 ``` http
 POST /users/{id | userPrincipalName}/authentication/emailMethods
 ```
