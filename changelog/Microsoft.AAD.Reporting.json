@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c81d114e-4e16-4699-a780-9e6c411121dc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-1.0) resource. **signInActivity** allows you to see the last time a user signed in, letting you identify and manage stale user accounts.",
+          "Target": "signInActivity"
+        },
+        {
+          "Id": "c81d114e-4e16-4699-a780-9e6c411121dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInActivity** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "c81d114e-4e16-4699-a780-9e6c411121dc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-31T00:00:00.601897Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "376c7fac-b9f8-4d4c-b9e4-4e7c8eda2122",
           "ApiChange": "Property",
           "ChangedApiName": "authenticationStrengthResult",
@@ -32,7 +58,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-03-09T00:00:00.601897Z",
       "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
+      "SubArea": "Azure AD activity reports"
     },
     {
       "ChangeList": [

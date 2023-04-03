@@ -13464,6 +13464,30 @@ items:
               href: api/crosstenantidentitysyncpolicypartner-update.md
             - name: Delete
               href: api/crosstenantidentitysyncpolicypartner-delete.md
+        - name: Cross-tenant shared user profiles
+          items:
+          - name: Inbound shared user profiles
+            href: resources/inboundshareduserprofile.md
+            items:
+            - name: Get
+              href: api/inboundshareduserprofile-get.md
+            - name: List
+              href: api/directory-list-inboundshareduserprofiles.md
+            - name: Export personal data
+              href: api/inboundshareduserprofile-exportpersonaldata.md
+            - name: Remove personal data
+              href: api/inboundshareduserprofile-removepersonaldata.md 
+          - name: Outbound shared user profiles
+            href: resources/outboundshareduserprofile.md
+            items:
+            - name: Get
+              href: api/outboundshareduserprofile-get.md
+            - name: List
+              href: api/directory-list-outboundshareduserprofiles.md
+            - name: List tenant references
+              href: api/outboundshareduserprofile-list-tenants.md
+            - name: Remove personal data
+              href: api/tenantreference-removepersonaldata.md 
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:

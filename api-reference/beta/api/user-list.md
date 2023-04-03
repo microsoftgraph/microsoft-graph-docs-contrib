@@ -270,6 +270,7 @@ Content-type: application/json
     {
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
+      "id": "1aecaf40-dc3a-461f-88a8-d06994e12898",
       "signInActivity": {
         "lastSignInDateTime": "2021-06-17T16:41:33Z",
         "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
@@ -280,6 +281,7 @@ Content-type: application/json
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
+      "id": "f0662ee5-84b1-43d6-8338-769cce1bc141",
       "signInActivity": {
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
