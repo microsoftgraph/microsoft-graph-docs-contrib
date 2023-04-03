@@ -1,6 +1,6 @@
 ---
 title: "educationGradingCategory resource type"
-description: "A Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade."
+description: "Add Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
+Add Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
 
 **Note:** Configure grading categories using [Assignment settings](../api/resources/educationassignmentsettings?view=graph-rest-beta).
 
@@ -29,7 +29,11 @@ A Grading Categories to the existing class-wide settings to weight assignments d
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+<<<<<<< HEAD
 |id|String|The grading category's ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from entity. Read-only.|
+=======
+|id|String|The grading category's ID.|
+>>>>>>> cd68cf9b7a8dd36135344a2334ee7ebaf5fad6e5
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
 

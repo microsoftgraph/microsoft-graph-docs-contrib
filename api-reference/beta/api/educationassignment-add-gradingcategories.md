@@ -1,6 +1,6 @@
 ---
 title: "Add gradingCategory"
-description: "Add gradingCategory to the assignments."
+description: "Add a gradingCategory to an assignment."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds gradingCategory to an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
+Adds a [gradingCategory](../resources/assignment-gradingcategories.md) to an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
