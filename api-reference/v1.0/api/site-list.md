@@ -55,9 +55,11 @@ GET /sites
 GET /sites?$filter=siteCollection/root ne null
 ```
 
-## Example
+## Examples
 
-### Request
+### Example 1: List sites using query parameters
+
+#### Request
 
 
 <!-- {
@@ -69,7 +71,7 @@ GET /sites?$filter=siteCollection/root ne null
 GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -105,7 +107,8 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 2: List all sites
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -116,7 +119,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/sites
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
