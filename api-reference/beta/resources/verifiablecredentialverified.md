@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialVerified resource type"
-description: "Verifiable credential requirements status indicating that the credential verification is completed and the issued credentials are not expired."
+description: "Represents the status where the service has validated the verifiable credential that the user presented."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"

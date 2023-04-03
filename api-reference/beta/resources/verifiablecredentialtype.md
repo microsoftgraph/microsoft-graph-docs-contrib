@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialType resource type"
-description: "Verifiable credentials type reference containing the type of the credential issued and list of accepted issuers."
+description: "Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifiable credentials type reference containing the type of the credential issued and list of accepted issuers.
-Used for the **credentialType** property of [verifiable credential settings](verifiablecredentialsettings.md).
+Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers. Used for the **credentialType** property of [verifiableCredentialSettings](verifiablecredentialsettings.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|issuers|String collection| List of accepted issuers authority as identified by DID, for example, 'did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...' |
-|credentialType|String| Issued credential type, for example, 'BusinessCardCredential'|
+|issuers|String collection| List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, `did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...` |
+|credentialType|String| The type of credential issued, for example, `BusinessCardCredential'`.|
 
 ## Relationships
 None.

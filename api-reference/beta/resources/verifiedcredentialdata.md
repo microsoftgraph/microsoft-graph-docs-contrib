@@ -1,6 +1,6 @@
 ---
 title: "verifiedCredentialData resource type"
-description: "Data containing the metadata of the issuing authority, presented credentials and the verified claims."
+description: "Represents the metadata of the verifiable credential including the issuing authority, presented credentials, and the verified claims."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -21,7 +21,7 @@ Used for the **verifiedCredentialsData** property of [access package assignment 
 |:---|:---|:---|
 |authority|String| The authority ID for the issuer. |
 |type|String collection| The list of credential types provided by the issuer. |
-|claims|[verifiedCredentialClaims](verifiedcredentialclaims.md)| Key value pair of claims retrieved from the credential that was provided and verified. |
+|claims|[verifiedCredentialClaims](verifiedcredentialclaims.md)| Key-value pair of claims retrieved from the credential that the user presented, and the service verified. |
 
 ## Relationships
 None.

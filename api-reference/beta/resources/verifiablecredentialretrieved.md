@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialRetrieved resource type"
-description: "Verifiable credential requirements status indicating that the credential verification is still required but the presentation request has been retrieved by the user."
+description: "Represents the status where a service requires a verifiable credential to be presented and the user has retrieved the presentation request."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"

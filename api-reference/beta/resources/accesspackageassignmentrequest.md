@@ -43,7 +43,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd`, `UserUpdate` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
-|verifiedCredentialsData|[verifiedCredentialData](../resources/verifiedcredentialdata.md) collection|Verified claims provided by the requester.Read-only|
+|verifiedCredentialsData|[verifiedCredentialData](../resources/verifiedcredentialdata.md) collection| The details of the verifiable credential that was presented by the requestor, such as the issuer and claims. Read-only.|
 
 ## Relationships
 

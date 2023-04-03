@@ -1,6 +1,6 @@
 ---
 title: "verifiedCredentialClaims resource type"
-description: "Open type containing the key value pair of the claims retrieved from the credentials. Names must be valid property names, values may be restricted to a list of types via an annotation with term `Validation.OpenPropertyTypeConstraint`."
+description: "Open type containing the key-value pair of the claims retrieved from the credentials."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -17,9 +17,7 @@ Open type containing the key value pair of the claims retrieved from the credent
 Used for the **claims** property of [verified credential data](verifiedCredentialData.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-Any simple identifier | Any type listed in `Validation.OpenPropertyTypeConstraint`, or any type if there is no constraint
+None.
 
 ## Relationships
 None.

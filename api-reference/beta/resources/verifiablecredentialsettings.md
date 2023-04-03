@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialSettings resource type"
-description: "Settings containing verifiable credentials types that are required for a presentation scenario. Administrators may configure an access package policy with these settings to require a requester to provide credentials while requesting for the package."
+description: "Settings for verifiable credential types that a requestor can present to a service such as Entitlement Management."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -17,7 +17,6 @@ Settings containing verifiable credentials types that are required for a present
 
 Used for the **verifiableCredentialSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md).
 
-Subtypes include [verifiableCredentialType](verifiablecredentialtype.md).
 
 ## Properties
 |Property|Type|Description|

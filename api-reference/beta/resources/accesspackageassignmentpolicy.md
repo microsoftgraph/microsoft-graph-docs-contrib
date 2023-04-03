@@ -47,7 +47,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
-|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Claims and issuers settings for Verifiable credentials.|
+|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Settings for verifiable credentials set up through the Azure AD Verified ID service. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package.|
 
 
 ## Relationships
