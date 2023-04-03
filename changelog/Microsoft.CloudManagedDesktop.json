@@ -5,17 +5,17 @@
                 {
                     "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
                     "ApiChange": "Method",
-                    "ChangedApiName": "power on",
+                    "ChangedApiName": "powerOn",
                     "ChangeType": "Addition",
-                    "Description": "Added the [power on](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweron?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [powerOn](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweron?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 },
                 {
                     "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
                     "ApiChange": "Method",
-                    "ChangedApiName": "power off",
+                    "ChangedApiName": "powerOff",
                     "ChangeType": "Addition",
-                    "Description": "Added the [power off](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweroff?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [powerOff](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweroff?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],
