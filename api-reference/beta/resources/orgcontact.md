@@ -101,7 +101,7 @@ Here is a JSON representation of the resource
   "onPremisesSyncEnabled": true,
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "proxyAddresses": ["string"],
-  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningError"}],
+  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningXmlError"}],
   "surname": "string"
 }
 ```

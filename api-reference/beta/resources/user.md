@@ -465,7 +465,7 @@ Here is a JSON representation of the resource
   "responsibilities": ["String"],
   "schools": ["String"],
   "securityIdentifier": "String",
-  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningError"}],
+  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningXmlError"}],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["String"],
