@@ -12,19 +12,13 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Simulation();
 $requestBody->setDisplayName('Graph Simulation');
 
-$requestBody->setPayloadDeliveryPlatform(new PayloadDeliveryPlatform('email'));
-
 $requestBody->setDurationInDays(7);
 
 $requestBody->setAttackTechnique(new SimulationAttackTechnique('credentialharvesting'));
 
-$requestBody->setAttackType(new SimulationAttackType('social'));
-
 $requestBody->setStatus(new SimulationStatus('scheduled'));
 
-$requestBody->setCompletionDateTime(new DateTime('2022-09-16T06:13:08.4297612Z'));
-
-$requestBody->setLaunchDateTime(new DateTime('2022-09-05T06:13:08.4297612Z'));
+$requestBody->setDurationInDays(3);
 
 $includedAccountTarget = new AccountTargetContent();
 $includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');

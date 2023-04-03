@@ -1,6 +1,6 @@
 ---
 title: "Get plannerBucket"
-description: "Retrieve the properties and relationships of **plannerBucket** object."
+description: "Retrieve the properties and relationships of a plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of **plannerBucket** object.
+Retrieve the properties and relationships of a [plannerBucket](../resources/plannerbucket.md) object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,21 +38,22 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [plannerBucket](../resources/plannerbucket.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_plannerbucket"
+  "name": "get_plannerbucket",
+  "sampleKeys": ["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
+GET https://graph.microsoft.com/v1.0/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
 ```
 
 # [C#](#tab/csharp)
@@ -80,8 +82,9 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,4 +113,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

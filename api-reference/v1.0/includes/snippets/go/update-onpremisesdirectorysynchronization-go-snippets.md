@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewOnPremisesDirectorySynchronization()
 configuration := graphmodels.NewOnPremisesDirectorySynchronizationConfiguration()
@@ -15,10 +23,6 @@ accidentalDeletionPrevention.SetSynchronizationPreventionType(&synchronizationPr
 alertThreshold := int32(500)
 accidentalDeletionPrevention.SetAlertThreshold(&alertThreshold) 
 configuration.SetAccidentalDeletionPrevention(accidentalDeletionPrevention)
-synchronizationInterval , err := abstractions.ParseISODuration("PT30M")
-configuration.SetSynchronizationInterval(&synchronizationInterval) 
-customerRequestedSynchronizationInterval , err := abstractions.ParseISODuration("PT1H")
-configuration.SetCustomerRequestedSynchronizationInterval(&customerRequestedSynchronizationInterval) 
 requestBody.SetConfiguration(configuration)
 features := graphmodels.NewOnPremisesDirectorySynchronizationFeature()
 groupWriteBackEnabled := true

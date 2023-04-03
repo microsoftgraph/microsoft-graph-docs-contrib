@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# conditionalAccessRulesSatisfied resource type
+# conditionalAccessRuleSatisfied resource type
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Indicates the attributes related to applied conditional access policy or policie
 | Property   | Type	|Description|
 |:---------------|:--------|:----------|
 |conditionalAccessCondition|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`, `ipAddressSeenByAzureAD`, `ipAddressSeenByResourceProvider`, `unknownFutureValue`, `servicePrincipals`, `servicePrincipalRisk`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals`, `servicePrincipalRisk`.|
-|ruleSatisfied|conditionalAccessRule|Refers to the conditional access policy conditions that were satisfied. The possible values are: `allApps`, `firstPartyApps`, `office365`, `appId`, `acr`, `appFilter`, `allUsers`, `guest`, `groupId`, `roleId`, `userId`, `allDevicePlatforms`, `devicePlatform`, `allLocations`, `insideCorpnet`, `allTrustedLocations`, `locationId`, `allDevices`, `deviceFilter`, `deviceState`, `unknownFutureValue`, `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`, `anonymizedIPAddress`, `unfamiliarFeatures`, `nationStateIPAddress`, `realTimeThreatIntelligence`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`.|
+|ruleSatisfied|conditionalAccessRule|Refers to the conditional access policy conditions that were satisfied. The possible values are: `allApps`, `firstPartyApps`, `office365`, `appId`, `acr`, `appFilter`, `allUsers`, `guest`, `groupId`, `roleId`, `userId`, `allDevicePlatforms`, `devicePlatform`, `allLocations`, `insideCorpnet`, `allTrustedLocations`, `locationId`, `allDevices`, `deviceFilter`, `deviceState`, `unknownFutureValue`, `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`, `anonymizedIPAddress`, `unfamiliarFeatures`, `nationStateIPAddress`, `realTimeThreatIntelligence`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `microsoftAdminPortals`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `deviceFilterIncludeRuleNotMatched`, `allDeviceStates`, `anonymizedIPAddress`, `unfamiliarFeatures`, `nationStateIPAddress`, `realTimeThreatIntelligence`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`, `otherExternalUser`, `serviceProvider`, `microsoftAdminPortals`.|
 
 
 ## JSON representation
