@@ -44,7 +44,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Tetry orgContact serviceProvisioning with orgContactId
+### Example 1: Retry orgContact serviceProvisioning with orgContactId
 
 #### Request
 

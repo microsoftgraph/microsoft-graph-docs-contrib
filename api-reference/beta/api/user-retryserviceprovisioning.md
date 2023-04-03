@@ -44,7 +44,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Tetry user serviceProvisioning with userId
+### Example 1: Retry user serviceProvisioning with userId
 
 #### Request
 
