@@ -2125,7 +2125,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "markAsJunk",
             "ChangeType": "Addition",
-            "Description": "Added the [markAsJunk](https://learn.microsoft.com/en-us/graph/api/message?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/message?view=graph-rest-beta) resource.",
+            "Description": "Added the ability to mark the message as junk.",
             "Target": "message"
           },
           {
@@ -2133,7 +2133,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "markAsNotJunk",
             "ChangeType": "Addition",
-            "Description": "Added the [markAsNotJunk](https://learn.microsoft.com/en-us/graph/api/message?view=graph-rest-beta) method to the [message](https://learn.microsoft.com/en-us/graph/api/message?view=graph-rest-beta) resource.",
+            "Description": "Added the ability to mark the message as not junk.",
             "Target": "message"
           }
         ],
