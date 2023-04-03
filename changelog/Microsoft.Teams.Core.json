@@ -6332,7 +6332,7 @@
           "ApiChange": "Property", 
           "ChangedApiName": "metadataContent", 
           "ChangeType": "Addition", 
-          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript) resource.", 
+          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
           "Target": "callTranscript" 
         } 
       ], 
