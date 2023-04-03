@@ -17,6 +17,38 @@
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource type.",
           "Target": "unifiedRbacApplication"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta), [POST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
         }
       ],
       "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
