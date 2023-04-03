@@ -1,31 +1,6 @@
 {
   "changelog": [
     {
-      "ChangeList": [
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "imageTaggingChoice",
-          "ChangeType": "Addition",
-          "Description": "Added the **imageTaggingChoice** enumeration type.",
-          "Target": "imageTaggingChoice"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "sharingCapabilities",
-          "ChangeType": "Addition",
-          "Description": "Added the **sharingCapabilities** enumeration type.",
-          "Target": "sharingCapabilities"
-        },
-        {
-          "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "sharingDomainRestrictionMode",
-          "ChangeType": "Addition",
-          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
-          "Target": "sharingDomainRestrictionMode"
-        },
         {
           "Id": "ae514e81-2c17-46b9-9917-39b469575d4f",
           "ApiChange": "Enumeration",
