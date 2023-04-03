@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-If you attempt to cancel an appointment that does not exist, this method returns `HTTP 404 Not found`.
+If you attempt to cancel an appointment that does not exist, this method returns `HTTP 404 Not Found`.
 
 ## Example
 
