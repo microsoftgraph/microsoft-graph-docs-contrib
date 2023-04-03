@@ -10751,12 +10751,12 @@ items:
             href: api/cloudpcprovisioningpolicy-update.md
           - name: Delete
             href: api/cloudpcprovisioningpolicy-delete.md
-          - name: Assign
-            href: api/cloudpcprovisioningpolicy-assign.md
           - name: Apply
             href: api/cloudpcprovisioningpolicy-apply.md
           - name: Apply configuration
             href: api/cloudpcprovisioningpolicy-applyconfig.md
+          - name: Assign
+            href: api/cloudpcprovisioningpolicy-assign.md
         - name: Cloud PC reports
           items:
             - name: Cloud PC reports

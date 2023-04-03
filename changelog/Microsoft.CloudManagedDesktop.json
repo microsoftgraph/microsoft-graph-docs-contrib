@@ -3,32 +3,6 @@
         {
             "ChangeList": [
                 {
-                    "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "apply",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcProvisioningPolicy"
-                },
-                {
-                    "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "applyConfig",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [applyConfig](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcProvisioningPolicy"
-                }
-            ],
-            "Id": "73fac662-2262-4969-89ac-0b67adbe2a5b",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-02-23T08:20:05.2461949Z",
-            "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
                     "Id": "7f706f6a-ee66-49b5-9325-f55149f952ac",
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningType",

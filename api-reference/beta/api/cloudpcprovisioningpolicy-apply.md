@@ -1,7 +1,7 @@
 ---
 title: "cloudPcProvisioningPolicy: apply"
 description: "Apply current provisioning policy configuration to all Cloud PC devices under a specified policy."
-author: "Guoan Tang"
+author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -64,7 +64,7 @@ The following is an example of a request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/353b6a8e-67c5-4f68-8d89-4360487576c4/apply
 ```
 
 ### Response

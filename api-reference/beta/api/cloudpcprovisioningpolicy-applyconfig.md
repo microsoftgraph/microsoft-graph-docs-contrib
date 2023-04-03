@@ -1,13 +1,14 @@
 ---
 title: "cloudPcProvisioningPolicy: applyConfig"
 description: "Update the provisioning policy configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the apply API."
-author: "Guoan Tang"
+author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
 # cloudPcProvisioningPolicy: applyConfig
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the [cloudPcProvisioningPolicy: apply](cloudpcprovisioningpolicy-apply.md) API.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,15 +36,17 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/applyConfig
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -50,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
