@@ -1,6 +1,6 @@
 ---
 title: "teamsAppResourceSpecificPermission resource type"
-description: "The resource-specific permission associated with a teamsApp."
+description: "Represents the resource-specific permission associated with a teamsApp."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The resource-specific permission associated with a teamsApp.
-<br>For more details, please see [understanding resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+Represents the resource-specific permission associated with a **teamsApp**.
+
+For details, see [understanding resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## Properties
 |Property|Type|Description|

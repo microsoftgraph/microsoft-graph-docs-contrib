@@ -346,7 +346,7 @@ Content-type: application/json
 ```
 ### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified team
 
-The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsAppResourceSpecificPermission.md) as part of installation. A $select query is required for consented permission set to be shown.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsAppResourceSpecificPermission.md) as part of installation. A `$select` query parameter is required to show the consented permission set.
 
 #### Request
 

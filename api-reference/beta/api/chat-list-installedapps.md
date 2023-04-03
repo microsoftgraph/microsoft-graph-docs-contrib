@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp**s installed in the meeting will be listed.
+If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp**s installed in the meeting will be listed.
 
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.Read.Chat<sup>1</sup>, Chat.Manage.Chat<sup>1</sup>, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentForChat.All<sup>1</sup> |
 
 > **Note**: 
-<br><sup>1</sup> These permissions are [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
+<br><sup>1</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -341,7 +341,7 @@ Content-type: application/json
 ```
 ### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified chat
 
-The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md)as part of installation. A $select query is required for consented permission set to be shown.
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameter is required to show the consented permission set.
 
 #### Request
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
 > **Note**: 
-<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+<br><sup>1</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -594,7 +594,7 @@ Content-Type: application/json
 ```
 ### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
 
-The following example lists the apps with a given ID and returns resource specific permissions associated with it.
+The following example lists the apps with a given ID and returns the resource-specific permissions that are associated with it.
 
 #### Request
 
