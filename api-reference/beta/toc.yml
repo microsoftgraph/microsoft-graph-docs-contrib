@@ -325,6 +325,8 @@ items:
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
+        - name: Retry service provisioning
+          href: api/user-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -743,6 +745,8 @@ items:
           href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
+        - name: Retry service provisioning
+          href: api/group-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -12252,6 +12256,8 @@ items:
             href: api/orgcontact-delta.md
           - name: Directory objects
             href: resources/directoryobject.md
+          - name: Retry service provisioning
+            href: api/orgcontact-retryserviceprovisioning.md
             items:
             - name: Get member groups
               href: api/directoryobject-getmembergroups.md

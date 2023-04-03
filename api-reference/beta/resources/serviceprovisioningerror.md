@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 author: "PaulEkirapa"
 ---
 
-# serviceProvisioningErro resource type
+# serviceProvisioningError resource type
 
 Namespace: microsoft.graph
 
