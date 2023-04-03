@@ -5,10 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/LifecycleWorkflows/Workflows/Item/IdentityGovernanceCreateNewVersion"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCreateNewVersionPostRequestBody()
 workflow := graphmodels.NewWorkflow()
+category := graphmodels.JOINER_LIFECYCLEWORKFLOWCATEGORY 
+workflow.SetCategory(&category) 
 description := "Configure new hire tasks for onboarding employees on their first day"
 workflow.SetDescription(&description) 
 displayName := "Global onboard new hire employee"

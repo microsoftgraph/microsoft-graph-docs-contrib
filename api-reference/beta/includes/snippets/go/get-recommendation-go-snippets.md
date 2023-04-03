@@ -5,19 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "recommendationType eq 'turnOffPerUserMFA'"
 
-requestParameters := &graphconfig.DirectoryRecommendationsRequestBuilderGetQueryParameters{
-	Filter: &requestFilter,
-}
-configuration := &graphconfig.DirectoryRecommendationsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
-
-result, err := graphClient.Directory().Recommendations().Get(context.Background(), configuration)
+result, err := graphClient.Directory().RecommendationsById("recommendation-id").Get(context.Background(), nil)
 
 
 ```
