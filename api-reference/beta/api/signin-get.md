@@ -223,6 +223,10 @@ Content-type: application/json
         "networkNames":["North America"]
       }
     ],
+    "managedServiceIdentity":{
+          "msiType":"systemAssigned",
+          "associatedResourceId":"/subscriptions/a89523b8-b5db-4697-9c1b-2f7dcfd074d9/resourcegroups/Scenario-TestRPToKeyVaultSAJob_USCentral/providers/Providers.Test/msiStateful/testrp30964"
+          },
   "authenticationDetails":[
       {
         "authenticationStepDateTime":"2021-06-30T16:34:32Z",
