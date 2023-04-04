@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4/appliesTo
 ```
 
 # [JavaScript](#tab/javascript)
@@ -95,12 +95,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.application",
+            "id": "3ccc9971-9ae7-45d6-8de8-263fd25fe116",
+            "appId": "6e4a2285-a438-4bcc-9d76-6c45fb91d4b0",
+            "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+            "displayName": "Contoso IWA App",
+            "publisherDomain": "Contoso.com",
+            "signInAudience": "AzureADMyOrg"
+        }
+    ]
 }
 ```
 
