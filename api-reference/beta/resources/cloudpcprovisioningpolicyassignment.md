@@ -25,7 +25,7 @@ Represents a defined collection of provisioning policy assignments.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignedUsers|[user](../resources/user.md) collection|The assignment targeted users for the provisioning policy. This list of users is computed based on assignments, licenses, group memberships, and policies. This property is ReadOnly. Supports $expand.|
+|assignedUsers|[user](../resources/user.md) collection|The assignment targeted users for the provisioning policy. This list of users is computed based on assignments, licenses, group memberships, and policies. This property is read-only. Supports` $expand`.|
 
 ## JSON representation
 
