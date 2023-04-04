@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop your own Cloud PC. Currently, only Shift Work Cloud PC is supported.
+Stop your own Cloud PC. Currently, only shift work Cloud PC is supported.
 
 ## Permissions
 
@@ -56,6 +56,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "user_stop_cloudpc"
@@ -67,6 +69,8 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -30,8 +30,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID.|
 |[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
-|[Start](../api/cloudpc-start.md)|None|Start specific [cloudPC](../resources/cloudpc.md) object. Cover Shift Work CloudPC end user scenarios. |
-|[Stop](../api/cloudpc-stop.md)|None|Stop a specific [cloudPC](../resources/cloudpc.md) object. Cover Shift Work CloudPC end user scenarios. |
+|[Start](../api/cloudpc-start.md)|None|Start a specific [cloudPC](../resources/cloudpc.md) for a user. Currently, only shift work Cloud PC is supported. |
+|[Stop](../api/cloudpc-stop.md)|None|Stop a specific [cloudPC](../resources/cloudpc.md) for a user. Currently, only shift work Cloud PC is supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore](../api/cloudpc-restore.md)|None|Restore a [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.|
