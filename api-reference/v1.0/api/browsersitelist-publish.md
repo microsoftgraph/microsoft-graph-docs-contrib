@@ -40,7 +40,7 @@ POST /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/publish
 
 ## Request body
 
-In the request body, omit both sites and share cookies to publish the entire site list. Optionally, you can publish specific sites and shared cookies by specifying a collection of IDs.
+In the request body, omit both sites and shared cookies to publish the entire site list. Optionally, you can publish specific sites and shared cookies by specifying a collection of IDs.
 
 
 |Property|Type|Description|
