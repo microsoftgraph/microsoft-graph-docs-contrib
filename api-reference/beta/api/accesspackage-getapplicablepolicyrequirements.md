@@ -143,7 +143,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST /identityGovernance/entitlementManagement/accessPackages(`b15419bb-5ffc-ea11-b207-c8d9d21f4e9a`)/getApplicablePolicyRequirements
+POST /identityGovernance/entitlementManagement/accessPackages('b15419bb-5ffc-ea11-b207-c8d9d21f4e9a')/getApplicablePolicyRequirements
 
 {
         "subject": {
