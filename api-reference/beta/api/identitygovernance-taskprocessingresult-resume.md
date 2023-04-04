@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not Supported.|
+|Application|LifecycleWorkflows.ReadWrite.All|
+
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
 
 > [!IMPORTANT]
 > Only the Azure Logic Apps system-assigned managed identity that's specified in the [custom task extension authentication Configuration](../resources/identitygovernance-customtaskextension.md) can call this API. The authorized resource doesn't require any Microsoft Graph permissions.
