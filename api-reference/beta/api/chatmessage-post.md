@@ -1591,7 +1591,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphsumanach/$metadata#chats('19%3A7fb82b685f9c457296a0ab6a1d98b4c1%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A7fb82b685f9c457296a0ab6a1d98b4c1%40thread.v2')/messages/$entity",
     "id": "1675459162626",
     "replyToId": null,
     "etag": "1675459162626",
