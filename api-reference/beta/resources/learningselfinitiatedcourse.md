@@ -34,6 +34,15 @@ None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.learningSelfInitiatedCourse",
+  "openType": false
+}
+-->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
