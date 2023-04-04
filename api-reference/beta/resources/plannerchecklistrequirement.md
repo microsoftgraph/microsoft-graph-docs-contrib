@@ -1,6 +1,6 @@
 ---
 title: "plannerChecklistRequirement resource type"
-description: "Represents a checklist completion requirement on task."
+description: "Represents a checklist completion requirement on a plannerTask."
 author: "prasad5596"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a checklist completion requirement on [plannerTask](plannerTask.md).
+Represents a checklist completion requirement on a [plannerTask](plannertask.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|requiredChecklistItemIds|`Collection(Edm.String)`|Collection of identifiers of [plannerChecklistItems](plannerchecklistitems.md) that are required to be checked to be able to complete the [plannerTask](plannertask.md).|
-
+|requiredChecklistItemIds|String collection|A collection of required [plannerChecklistItems](plannerchecklistitems.md) identifiers to complete the [plannerTask](plannertask.md).|
 
 ## Relationships
 
@@ -30,9 +29,13 @@ None.
 
 The following is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.plannerChecklistRequirement"
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerChecklistRequirement",
-  "requiredChecklistItemIds": ["12345"] // checklist item id collection
+  "requiredChecklistItemIds": ["String"]
 }
 ```

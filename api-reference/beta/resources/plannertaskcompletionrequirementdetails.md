@@ -1,6 +1,6 @@
 ---
 title: "plannerTaskCompletionRequirementDetails resource type"
-description: "This is the structure that stores requirements for the task completion"
+description: "Represents detailed information about completionRequirements for a plannerTask."
 author: "prasad5596"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the detail information about [completionRequirements](plannerTaskCompletionRequirements.md) for the [plannerTask](plannertask.md).
+Represents detailed information about [completionRequirements](plannertask.md#plannertaskcompletionrequirements-values) for a [plannerTask](plannertask.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|checklistRequirement|[plannerChecklistRequirement](plannerChecklistRequirement.md)|Contains information about checklist completion requirement.|
+|checklistRequirement|[plannerChecklistRequirement](plannerchecklistrequirement.md)|Information about the requirements for completing the checklist.|
 
 ## Relationships
 
@@ -29,6 +29,10 @@ None.
 
 The following is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
