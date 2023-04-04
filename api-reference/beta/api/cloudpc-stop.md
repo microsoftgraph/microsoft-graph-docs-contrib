@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: stop"
-description: "Stop a specific Cloud PC."
+description: "Stop a specific Cloud PC for a user."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop your own Cloud PC. Currently, only shift work Cloud PC is supported.
+Stop a specific Cloud PC for a user. Currently, only shift work Cloud PC is supported.
 
 ## Permissions
 
