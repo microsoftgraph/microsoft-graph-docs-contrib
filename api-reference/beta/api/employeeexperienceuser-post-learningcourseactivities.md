@@ -11,7 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.
-Learning course activity is of two types: 
+
+A learning course activity can be one of two types: 
 - Assignment
 - Self-initiated
 
@@ -42,10 +43,10 @@ POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivi
 
 ### Example 1: Create an assigned learning course activity
 
-Sample request to create a [learningAssignment](../resources/learningassignment.md):
+The following example shows how to create a [learningAssignment](../resources/learningassignment.md).
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 ``` http
 POST https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/{registrationId}/learningCourseActivities
@@ -76,7 +77,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
@@ -110,12 +111,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create an self-initiated learning course activity
+### Example 2: Create a self-initiated learning course activity
 
-Sample request to create a [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course:
+The following example creates a [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 ``` http
 POST https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/{registrationId}/learningCourseActivities
@@ -134,7 +135,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
