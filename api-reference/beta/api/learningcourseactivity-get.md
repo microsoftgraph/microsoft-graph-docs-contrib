@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 The following is an example of request and response of an assigned learning course activity.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
 
 ### Response
@@ -94,7 +94,7 @@ Content-Type: application/json
 The following is an example of request and response of an self-initiated learning course activity.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
 
 ### Response

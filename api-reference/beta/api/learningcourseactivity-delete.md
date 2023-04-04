@@ -45,7 +45,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
+DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
 ```
 
 

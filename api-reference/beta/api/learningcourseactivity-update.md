@@ -62,7 +62,7 @@ If successful, this method returns a `204 OK` response code.
 The following is an example of a request.
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 Content-Type: application/json
 
 {
@@ -118,7 +118,7 @@ If successful, this method returns a `204 OK` response code.
 The following is an example of a request.
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 Content-Type: application/json
 
 {
