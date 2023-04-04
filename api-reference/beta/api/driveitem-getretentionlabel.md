@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get metadata information for a retention label applied on a [driveItem](../resources/driveitem.md). 
 
-For more information about retention labels from an administrator's perspective, see [use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario?view=o365-worldwide).
+For more information about retention labels from an administrator's perspective, see [use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
 
 ## Permissions
