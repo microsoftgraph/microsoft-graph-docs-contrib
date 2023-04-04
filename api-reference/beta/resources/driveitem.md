@@ -72,7 +72,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Revoke grants](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
 | [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 | [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel`                   |
-| [Get retention label](../api/driveitem-getretentionlabel.md)                       | `GET /drives/{drive-id}/items/{item-id}/retentionLabel`                |
+| [Get retention label](../api/driveitem-getretentionlabel.md)                 | `GET /drives/{drive-id}/items/{item-id}/retentionLabel`                |
 | [Set retention label](../api/driveitem-setretentionlabel.md)                 | `PATCH /drives/{drive-id}/items/{item-id}/retentionLabel`              |
 | [Remove retention label](../api/driveitem-removeretentionlabel.md)           | `DELETE /drives/{drive-id}/items/{item-id}/retentionLabel`             |
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | `PATCH /drives/{drive-id}/items/{item-id}/retentionLabel`              |
@@ -132,7 +132,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-|retentionLabel           | [itemRetentionLabel]                | Information about retention label and settings enforced on the driveitem. Read-write.
+|retentionLabel      | [itemRetentionLabel][]      | Information about retention label and settings enforced on the driveitem. Read-write.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
