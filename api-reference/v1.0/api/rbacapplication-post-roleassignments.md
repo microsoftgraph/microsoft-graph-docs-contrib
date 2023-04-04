@@ -2,7 +2,7 @@
 title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -15,7 +15,10 @@ Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obje
 
 ## Permissions
 
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For the directory (Azure AD) provider
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -23,13 +26,32 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | RoleManagement.ReadWrite.Directory |
 
+### For the entitlement management provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | EntitlementManagement.ReadWrite.All |
+
 ## HTTP request
+
+Create a role assignment for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /roleManagement/directory/roleAssignments
 ```
+
+Create a role assignment for the entitlement management provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/entitlementManagement/roleAssignments
+```
+
 
 ## Request headers
 
@@ -39,7 +61,7 @@ POST /roleManagement/directory/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative units, or applications. For more information on appScope, see [appScope](../resources/appscope.md).
+In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative unit, or application. For more information on appScope, see [appScope](../resources/appscope.md).
 
 The following table shows the properties that are required when you create a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
@@ -56,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment with a tenant-wide scope
+### Example 1: Create a role assignment with tenant scope
 
 #### Request
 
@@ -81,6 +103,7 @@ Content-type: application/json
     "directoryScopeId": "/"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,17 +112,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-from-rbacapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-from-rbacapplication-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignment-from-rbacapplication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 
@@ -126,11 +155,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create a role assignment with an administrative unit scope
+### Example 2 : Create a role assignment with administrative unit scope
 
 #### Request
 
-The following example assigns a principal the User Administrator role over an administrative unit.
+The following example assigns the User Administrator role to a principal with administrative unit scope.
 
 
 
@@ -151,6 +180,7 @@ Content-type: application/json
     "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-over-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -159,17 +189,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-over-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-over-administrativeunit-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-over-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignment-over-administrativeunit-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 
@@ -196,7 +232,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3 : Create a role assignment with an application scope
+### Example 3 : Create a role assignment with application scope
 
 #### Request
 
@@ -221,6 +257,7 @@ Content-type: application/json
     "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-over-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -229,17 +266,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-over-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-over-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-over-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignment-over-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 
@@ -266,6 +309,81 @@ Content-type: application/json
     "resourceScope": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+}
+```
+
+### Example 4: Create a role assignment with access package catalog scope
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication_4"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment3-from-rbacapplication-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment3-from-rbacapplication-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment3-from-rbacapplication-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment3-from-rbacapplication-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment3-from-rbacapplication-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignment3-from-rbacapplication-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
 

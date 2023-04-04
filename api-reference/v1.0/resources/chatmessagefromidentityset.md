@@ -21,7 +21,7 @@ Inherits from [identitySet](../resources/identityset.md).
 |:---|:---|:---|
 |application|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents the application (for instance, bot) that sent the message.|
 |device|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). Not used.|
-|user|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents the user that sent the message.|
+|user|[teamworkUserIdentity](../resources/teamworkUserIdentity.md)|If present, represents the user that sent the message.|
 
 ## Relationships
 None.
@@ -36,13 +36,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatMessageFromIdentitySet",
-  "user": {
-    "@odata.type": "microsoft.graph.identity"
-  },
   "application": {
     "@odata.type": "microsoft.graph.identity"
   },
   "device": {
+    "@odata.type": "microsoft.graph.identity"
+  },
+  "user": {
     "@odata.type": "microsoft.graph.identity"
   }
 }

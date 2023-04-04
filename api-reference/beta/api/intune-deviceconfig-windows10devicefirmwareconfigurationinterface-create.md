@@ -1,8 +1,8 @@
 ---
 title: "Create windows10DeviceFirmwareConfigurationInterface"
 description: "Create a new windows10DeviceFirmwareConfigurationInterface object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -69,6 +69,18 @@ The following table shows the properties that are required when you create the w
 |bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Front Camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable rear camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|infraredCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Infrared camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphone|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Microphone. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bluetooth|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Bluetooth. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wireless Wide Area Network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Near Field Communication. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wiFi|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable WiFi. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable USB Type A Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|sdCard|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable SD Card Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake on LAN. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake On Power. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -82,7 +94,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1397
+Content-length: 1754
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -122,7 +134,19 @@ Content-length: 1397
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
 
@@ -131,7 +155,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1569
+Content-Length: 1926
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -174,9 +198,18 @@ Content-Length: 1569
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
-
-
-

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a printer that is intended to be discoverable by users and printing applications.
 
 Inherits from [printerBase](../resources/printerbase.md).
@@ -36,17 +34,18 @@ Inherits from [printerBase](../resources/printerbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| The printerShare's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
-|displayName|String|The name of the printer share that print clients should display. Inherited from [printerBase](../resources/printerbase.md).|
+|allowAllUsers|Boolean|If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
+|defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
+|displayName|String|The name of the printer share that print clients should display. Inherited from [printerBase](../resources/printerbase.md).|
+|id|String| The printerShare's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
+|isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
 |manufacturer|String|The manufacturer reported by the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
 |model|String|The model name reported by the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
-|isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
-|defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
 |status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share.Inherited from [printerBase](../resources/printerbase.md). Read-only.|
-|allowAllUsers|Boolean|If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
+
 
 ## Relationships
 |Relationship|Type|Description|

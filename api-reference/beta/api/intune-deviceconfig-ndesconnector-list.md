@@ -1,8 +1,8 @@
 ---
 title: "List ndesConnectors"
 description: "List properties and relationships of the ndesConnector objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 520
 
 {
   "value": [
@@ -69,11 +69,14 @@ Content-Length: 285
       "id": "e71fa706-a706-e71f-06a7-1fe706a71fe7",
       "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
       "state": "active",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "machineName": "Machine Name value",
+      "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "connectorVersion": "Connector Version value"
     }
   ]
 }
 ```
-
-
-

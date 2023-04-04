@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Describes print activity for a user during a specified time period (usageDate).
 
 ## Methods
@@ -25,12 +23,12 @@ Describes print activity for a user during a specified time period (usageDate).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of this usage summary.|
-|userPrincipalName|String|The UPN of the user represented by these statistics.|
-|usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user on the associated date.|
+|id|String|The ID of this usage summary.|
 |incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed, on the associated date.|
+|usageDate|Date|The date associated with these statistics.|
+|userPrincipalName|String|The UPN of the user represented by these statistics.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

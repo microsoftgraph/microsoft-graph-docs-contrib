@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let agreement = await client.api('/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be')
-	.expand('files')
+let agreement = await client.api('/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')
 	.get();
 
 ```

@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/drive/items/{id}/workbook/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
-POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/rows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 
 ## Request headers
@@ -72,13 +72,12 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "Table1"],
-  "name": "tablerowcollection_add_1"
+  "name": "tablerowcollection_add_table_row"
 }-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tables/Table1/rows
 Content-type: application/json
-Content-length: 90
 
 {
   "values": "[
@@ -87,20 +86,13 @@ Content-length: 90
   ]"
 }
 ```
+
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/tablerowcollection-add-1-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +111,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
@@ -137,10 +128,12 @@ For async features, the user usually needs to issue two or three requests: this 
 
 Here is an example of the async request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it will work like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "Table1"],
-  "name": "tablerowcollection_add_1"
+  "name": "tablerowcollection_add_table_row_async"
 }-->
 
 ```http
@@ -148,7 +141,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5X
 Content-type: application/json
 Prefer: respond-async
 Workbook-Session-Id: {Workbook-Session-Id}
-Content-length: 51
 
 {
   "values": "[
@@ -157,6 +149,16 @@ Content-length: 51
   ]"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-async-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -172,7 +174,6 @@ Here is another example of the response that will lead to an async operation. Fo
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/operations/0195cfac-bd22-4f91-b276-dece0aa2378b?sessionId=Y2x1c3Rlcj1QU0c0JnNlc3Npb249MTUuU0cyUEVQRjAwMDI4RjI1MS5BMTE2LjEuVTM2LmM4MGRiNjkwLTQwMTktNGNkNS1hYWJiLTJmYzczM2YxZTQ5ZjE0LjUuZW4tVVM1LmVuLVVTMjQuMTAwM2JmZmRhYzUyMzkzOS1Qcml2YXRlMS5TMjQuJTJmUEI0JTJmWjJqZmt1aXhJZHBjeE8xYmclM2QlM2QxNi4xNi4wLjE0NDEwLjM1MDUwMTQuNS5lbi1VUzUuZW4tVVMxLk0xLk4wLjEuUyZ1c2lkPWExOTMyNTU0LTlhNDAtNzYzNi1mNDU3LWEyNjExMmFkNDg2YQ==
 Content-type: application/json
-Content-length: 45
 
 {
 }

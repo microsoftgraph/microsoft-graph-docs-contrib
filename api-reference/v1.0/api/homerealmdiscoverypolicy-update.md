@@ -73,23 +73,18 @@ PATCH https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
+    "definition": [
+    "{\"HomeRealmDiscoveryPolicy\":
+     {\"AccelerateToFederatedDomain\":true,
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "Contoso default HRD Policy"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-homerealmdiscoverypolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-homerealmdiscoverypolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-homerealmdiscoverypolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -98,31 +93,17 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -2,7 +2,7 @@
 title: "Working with Excel in Microsoft Graph"
 description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive."
 ms.localizationpriority: high
-author: "grangery"
+author: "AmandaHan123"
 ms.prod: "excel"
 doc_type: conceptualPageType
 ---
@@ -1258,7 +1258,7 @@ The following request updates the selected range with the text of "Sample text".
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B100")
 
 {
   "values" : "Sample text"

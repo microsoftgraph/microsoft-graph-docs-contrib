@@ -25,6 +25,7 @@ An [educationOutcome](educationoutcome.md) that provides a graded rubric.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationRubricOutcome.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|A copy of the rubricQualityFeedback property that is made when the grade is released to the student.|
@@ -51,6 +52,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "id": "String (identifier)",
   "publishedRubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],
   "publishedRubricQualitySelectedLevels": [{"@odata.type": "microsoft.graph.rubricQualitySelectedColumnModel"}],
   "rubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],

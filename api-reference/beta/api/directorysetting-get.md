@@ -1,5 +1,5 @@
 ---
-title: "Get a directory setting"
+title: "Get directorySetting"
 description: "Retrieve the properties of a specific directory setting object."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get a directory setting
+# Get directorySetting
 
 Namespace: microsoft.graph
 
@@ -15,26 +15,45 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+
+### List tenant-wide settings
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### List group-specific settings
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
-Get a specific tenant-wide or group setting
+
+Get a tenant-wide setting.
+
 ```http
-GET /settings/{id}
-GET /groups/{id}/settings/{id}
+GET /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Get a group-specific setting.
+```http
+GET /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -61,6 +80,7 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -69,18 +89,25 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directorysetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directorysetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directorysetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-directorysetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
+### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -98,6 +125,10 @@ Content-type: application/json
   "displayName": "Group.Unified",
   "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "NewUnifiedGroupWritebackDefault",
+      "value": "false"
+    },
     {
       "name": "EnableMIPLabels",
       "value": "true"

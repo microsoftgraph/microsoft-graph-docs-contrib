@@ -3,7 +3,7 @@ title: "printJob: cancel"
 description: Cancel a print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,17 @@ Cancel a print job. Print jobs can be canceled only on behalf of a user, using d
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Not supported. |
+
+For an app with delegated permissions to cancel other users' jobs, the signed-in user must be a member of one of the following administrator roles:
+- Global Administrator
+- Printer Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +41,7 @@ POST /print/printers/{id}/jobs/{id}/cancel
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Request body should be empty.
+Do not supply a request body with this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -56,16 +60,9 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/printjob-cancel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-cancel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -73,7 +70,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response. 

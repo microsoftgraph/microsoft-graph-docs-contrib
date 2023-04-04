@@ -1,8 +1,8 @@
 ---
 title: "androidRequiredPasswordType enum type"
 description: "Android required password type."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -28,6 +28,3 @@ Android required password type.
 |numeric|5|Numeric password required.|
 |numericComplex|6|Numeric complex password required.|
 |any|7|A password or pattern is required, and any is acceptable.|
-
-
-

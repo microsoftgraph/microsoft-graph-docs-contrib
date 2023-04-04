@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementSubscriptionState enum type"
 description: "Tenant mobile device management subscription state."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,3 @@ Tenant mobile device management subscription state.
 |deleted|4|Deleted|
 |blocked|5|Blocked|
 |lockedOut|8|LockedOut|
-
-
-
-

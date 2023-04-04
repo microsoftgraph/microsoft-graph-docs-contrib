@@ -4,15 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directoryObject = new DirectoryObject
+var requestBody = new Microsoft.Graph.DirectoryNamespace.AdministrativeUnits.Item.Members.MembersPostRequestBody
 {
-	Id = "{id}"
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"@odata.type" , "#microsoft.graph.group"
+		},
+		{
+			"description" , "Self help community for golf"
+		},
+		{
+			"displayName" , "Golf Assist"
+		},
+		{
+			"groupTypes" , new List<string>
+			{
+				"Unified",
+			}
+		},
+		{
+			"mailEnabled" , true
+		},
+		{
+			"mailNickname" , "golfassist"
+		},
+		{
+			"securityEnabled" , false
+		},
+	},
 };
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"].Members.References
-	.Request()
-	.AddAsync(directoryObject);
 
 ```

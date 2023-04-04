@@ -1,8 +1,8 @@
 ---
 title: "Get aospDeviceOwnerDeviceConfiguration"
 description: "Read properties and relationships of the aospDeviceOwnerDeviceConfiguration object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [aospDeviceOwnerDeviceConfiguration](../resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2012
+Content-Length: 1870
 
 {
   "value": {
@@ -101,12 +101,10 @@ Content-Length: 2012
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "appsAllowInstallFromUnknownSources": true,
+    "appsBlockInstallFromUnknownSources": true,
     "bluetoothBlocked": true,
     "bluetoothBlockConfiguration": true,
-    "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
-    "cellularBlockWiFiTethering": true,
     "factoryResetBlocked": true,
     "passwordMinimumLength": 5,
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -114,14 +112,9 @@ Content-Length: 2012
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "screenCaptureBlocked": true,
     "securityAllowDebuggingFeatures": true,
-    "storageAllowUsb": true,
     "storageBlockExternalMedia": true,
     "storageBlockUsbFileTransfer": true,
-    "backupBlocked": true,
     "wifiBlockEditConfigurations": true
   }
 }
 ```
-
-
-

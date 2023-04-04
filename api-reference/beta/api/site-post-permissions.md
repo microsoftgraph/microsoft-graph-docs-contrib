@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [permission](../resources/permission.md) object on a site.
 
+>**Note:** You can only use this method to create a new application permission; you can't use it to create a new user site permission.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -74,6 +76,7 @@ Content-Type: application/json
    ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-permission-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,17 +85,23 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-permission-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-permission-from--objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-permission-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-permission-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-permission-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-permission-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 
@@ -108,10 +117,19 @@ Content-Type: application/json
 
 {
    "id":"1",
+   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
    "roles":[
       "write"
    ],
    "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
+      }
+   ],
+   "grantedToIdentitiesV2":[
       {
          "application":{
             "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",

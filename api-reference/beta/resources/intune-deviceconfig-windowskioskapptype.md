@@ -1,8 +1,8 @@
 ---
 title: "windowsKioskAppType enum type"
 description: "The type of Windows kiosk app."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ The type of Windows kiosk app.
 |store|1|Store App.|
 |desktop|2|Desktop App.|
 |aumId|3|Input by AUMID.|
-
-
-

@@ -4,8 +4,8 @@ description: "Retrieve the properties and relationships of a governanceRoleSetti
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
----
+author: "rkarim-ms"
+--- 
 
 # Get governanceRoleSetting
 
@@ -14,38 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-#privileged-access-permissions).
 
-### Azure resources
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
+| [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
 
-### Azure AD
+The requestor must also have at least one role assignment on the resource which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.
 
-| Permission type | Permissions |
-|:--------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureAD |
-
-### Groups
-
-|Permission type | Permissions |
-|:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
-
-Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a [governanceRol
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/80dc5d6f-8d89-47b3-953f-01dc909ed3f9
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,12 +67,20 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-governancerolesetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governancerolesetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-governancerolesetting-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,7 +94,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 370
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings/$entity",

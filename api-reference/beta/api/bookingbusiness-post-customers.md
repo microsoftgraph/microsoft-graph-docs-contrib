@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,33 +32,65 @@ POST /bookingBusinesses/{id}/customers
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
+In the request body, supply a JSON representation of a [bookingCustomer](../resources/bookingcustomer.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookingcustomer_from_bookingbusiness"
+  "name": "create_bookingcustomer_from_bookingbusiness",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers
+POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers
 Content-type: application/json
 
 {
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingcustomer-from-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -67,19 +99,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingcustomer-from-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-bookingcustomer-from-bookingbusiness-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingcustomer-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-bookingcustomer-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingcustomer-from-bookingbusiness-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-bookingcustomer-from-bookingbusiness-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,10 +131,40 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

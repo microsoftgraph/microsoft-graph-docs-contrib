@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcAuditE
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcauditevent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -73,16 +74,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcauditevent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcauditevent-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcauditevent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcauditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcauditevent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcauditevent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -99,17 +107,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
       "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
       "componentName": "Component Name value",  
       "activity": "Activity value",  
-      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",  
+      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",
       "activityType": " Activity Type value",  
-      "activityOperationType": "Activity Operation Type value",  
+      "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",  
-      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",  
+      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",
       "category": "Category value",
       "actor": {
           "@odata.type": "microsoft.graph.cloudPcAuditActor",
@@ -148,7 +155,6 @@ Content-Type: application/json
           "type": "Type value",
           "resourceId": "Resource Id value"
         }
-      ],
-  }
+      ]
 }
 ```

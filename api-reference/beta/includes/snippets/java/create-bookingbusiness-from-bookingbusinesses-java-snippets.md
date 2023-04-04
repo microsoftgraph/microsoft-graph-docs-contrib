@@ -9,7 +9,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 BookingBusiness bookingBusiness = new BookingBusiness();
 bookingBusiness.displayName = "Fourth Coffee";
 PhysicalAddress address = new PhysicalAddress();
-address.type = PhysicalAddressType.UNKNOWN;
 address.postOfficeBox = "P.O. Box 123";
 address.street = "4567 Main Street";
 address.city = "Buffalo";

@@ -35,10 +35,10 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
 | [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
-| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects belonging to this class.                      |
+| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
 | [Delete](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
-| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**                                          |
+| [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
 
@@ -46,8 +46,8 @@ Students are regular members of the class, and Teachers are owners and have appr
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                   | String                                | Unique identifier for the class.                                                                                                                                     |
 | classCode            | String                                | Class code used by the school to identify the class.                                                                                                                 |
-| course               | [educationCourse](educationcourse.md) | Course information for the class                                                                                                                                     |
-| createdBy            | [identitySet]                         | Entity who created the class                                                                                                                                         |
+| course               | [educationCourse](educationcourse.md) | Course information for the class.                                                                                                                                     |
+| createdBy            | [identitySet]                         | Entity who created the class.                                                                                                                                         |
 | description          | String                                | Description of the class.                                                                                                                                            |
 | displayName          | String                                | Name of the class.                                                                                                                                                   |
 | externalId           | String                                | ID of the class from the syncing system.                                                                                                                             |
@@ -66,6 +66,9 @@ Students are regular members of the class, and Teachers are owners and have appr
 | members      | [educationUser] collection       | All users in the class. Nullable.                         |
 | schools      | [educationSchool] collection     | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser] collection       | All teachers in the class. Nullable.                      |
+|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
+|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
+|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 
 ## JSON representation
 

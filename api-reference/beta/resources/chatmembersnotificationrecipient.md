@@ -1,9 +1,9 @@
 ---
 title: "chatMembersNotificationRecipient resource type"
-description:  Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the chat members.
-author: eddie-lee-msft
+description: "Represents the recipient (chat members) of a notification sent in a Microsoft Teams activity feed."
+author: "eddie-lee-msft"
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -18,9 +18,9 @@ Represents the recipient of a notification sent in a Microsoft Teams activity fe
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|chatId|String|The chat's identifier.|
+| Property | Type   | Description                                                                        |
+|:---------|:-------|:-----------------------------------------------------------------------------------|
+| chatId   | String | The unique identifier for the chat whose members should receive the notifications. |
 
 ## Relationships
 None.
@@ -39,4 +39,3 @@ The following is a JSON representation of the resource.
   "chatId": "String"
 }
 ```
-

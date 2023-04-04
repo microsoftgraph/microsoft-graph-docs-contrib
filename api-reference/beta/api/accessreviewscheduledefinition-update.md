@@ -2,7 +2,7 @@
 title: "Update accessReviewScheduleDefinition"
 description: "Update an existing accessReviewScheduleDefinition object to change one or more of its properties."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -46,12 +46,13 @@ The following table shows the properties accepted to update an accessReviewSched
 
 | Property | Type | Description |
 |:-------------|:------------|:------------|
-| displayName | String | Name of access review series. |
 | descriptionForAdmins | String | Context of the review provided to admins. |
 | descriptionForReviewers | String | Context of the review provided to reviewers. |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| displayName | String | Name of access review series. |
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). The **reviewers** property is only updatable if individual users are assigned as reviewers. See [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection| Defines how many stages each instance of an access review series will have. Stages will be created sequentially based on the **dependsOn** property. Each stage can have different set of reviewer, fallback reviewers and settings. Only reviewers and fallback reviewers are updatable. See [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Optional.|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (deprecated)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** automatically populates the same values to the other property. |
 
 A **PUT** request expects the full object to be passed in, which includes all writable properties, not just the properties being updated.
@@ -83,10 +84,12 @@ Content-type: application/json
   "descriptionForAdmins": "Test world",
   "descriptionForReviewers": "Test world",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
     "queryType": "MicrosoftGraph"
   },
@@ -113,25 +116,24 @@ Content-type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewscheduledefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewscheduledefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewscheduledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewscheduledefinition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 <!-- {

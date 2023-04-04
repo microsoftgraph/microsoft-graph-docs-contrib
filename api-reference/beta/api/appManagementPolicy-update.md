@@ -19,11 +19,11 @@ Update an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
 
 ## HTTP request
 
@@ -46,12 +46,12 @@ In the request body, supply the values for relevant fields from the [appManageme
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance, don't include existing values that haven't changed.
 
-| Property                | Type                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|:------------------------|:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](../resources/policybase.md).                                        |
-| description  | String                                                      | The description of the policy. Inherited from [policyBase](../resources/policybase.md).                                         |
-| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                      |
-| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
+| Property     | Type                                                                     | Description                                                                              |
+| :----------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| displayName  | String                                                                   | The display name of the policy. Inherited from [policyBase](../resources/policybase.md). |
+| description  | String                                                                   | The description of the policy. Inherited from [policyBase](../resources/policybase.md).  |
+| isEnabled    | Boolean                                                                  | Denotes whether the policy is enabled.                                                   |
+| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object.                   |
 
 ## Response
 
@@ -70,7 +70,7 @@ The following is an example of the request.
   "name": "update_appManagementPolicy"
 }-->
 
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 {
@@ -78,6 +78,7 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 }
 
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-appmanagementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,16 +87,19 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-appmanagementpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-appmanagementpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-appmanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appmanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-appmanagementpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

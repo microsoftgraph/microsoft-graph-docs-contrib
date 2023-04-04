@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to request spelling corrections"
-description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification for search query."
-author: "nmoreau"
+title: "Use the Microsoft Search API to request spelling corrections"
+description: "Use the Microsoft Search API in Microsoft Graph to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents."
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to request spelling correction (preview)
+# Use the Microsoft Search API to request spelling corrections
 
-You can use the Microsoft Search API to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents. To request spelling corrections, specify the following properties in the **queryAlterationOptions** property of request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:
+You can use the Microsoft Search API in Microsoft Graph to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents. To request spelling corrections, specify the following properties in the **queryAlterationOptions** property of the [searchRequest](/graph/api/resources/searchrequest):
 
 - **enableSuggestion** to enable/disable spelling suggestions for the user query. You can pass `true` to get the suggested spelling correction information for typos in the user query.
 
@@ -16,13 +16,15 @@ You can use the Microsoft Search API to request spelling corrections to handle m
 
 The priority of spelling modification is higher than spelling suggestion if they are both enabled.
 
+If speller suggestion is disabled while speller modification is enabled, results can still contain the speller suggestion for the original query with the typo. This is by design, because the feature provides the spelling suggestion by default if spelling modification is enabled.
+
 All the user query strings should be the same to enable spelling corrections for searches of multiple entities.
 
 ## Example 1: Request spelling suggestions
 
-The following example queries **listItem** resources that contain the string "accountt" and requests a spelling suggestion for the query.
+The following example queries **listItem** resources that contain the string `accountt` and requests a spelling suggestion for the query.
 
-The response contains [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) objects for the spelling suggestion.
+The response contains [alterationResponse](/graph/api/resources/alterationResponse) objects for the spelling suggestion.
 
 ### Request
 
@@ -40,13 +42,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": false
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": false
-    }
+    ]
 }
 ```
 
@@ -68,34 +70,34 @@ Content-type: application/json
                     "total": 0,
                     "moreResultsAvailable": false
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Suggestion"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Suggestion"
-    }
+    ]
 }
 ```
 
 ## Example 2: Request spelling modifications
 
-The following example queries **listItem** resources that contain the string "accountt" and requests a spelling modification for the query.
+The following example queries **listItem** resources that contain the string `accountt` and requests a spelling modification for the query.
 
-In this example, there are no results for original query with typo "accountt". The response contains results related to corrected string "account" and [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) objects for the spelling modification.
+In this example, there are no results for the original query with typo `accountt`. The response contains results related to corrected string `account` and [alterationResponse](/graph/api/resources/alterationResponse) objects for the spelling modification.
 
 ### Request
 
@@ -113,13 +115,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": true
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": true
-    }
+    ]
 }
 ```
 
@@ -175,33 +177,33 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Modification"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Modification"
-    }
+    ]
 }
 ```
 
 ## Known limitations
 
-Spelling correction is only supported for the following resources: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
+Spelling correction is only supported for the following resources: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem**, and **externalItem**.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

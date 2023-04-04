@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -18,4 +18,4 @@ The preceding limits apply to the following resources:
  
 | <!-- fake header--> | <!-- fake header--> |
 |--|--|
-|<ul> <li> [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/androiddeviceownerenrollmentprofile) <li> [androidForWorkAppConfigurationSchema](/graph/api/resources/androidforworkappconfigurationschema) <li> [androidForWorkEnrollmentProfile](/graph/api/resources/androidforworkenrollmentprofile) <li> [androidForWorkSettings](/graph/api/resources/androidforworksettings) <li> [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/androidmanagedstoreaccountenterprisesettings) <li> [androidManagedStoreAppConfigurationSchema](/graph/api/resources/) </ul>|
+|<ul> <li> [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile) <li> [androidForWorkAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidforworkappconfigurationschema) <li> [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile) <li> [androidForWorkSettings](/graph/api/resources/intune-androidforwork-androidforworksettings) <li> [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings) <li> [androidManagedStoreAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschema) </ul>|

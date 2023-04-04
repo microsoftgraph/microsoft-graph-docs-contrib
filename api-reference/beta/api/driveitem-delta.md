@@ -1,19 +1,19 @@
 ---
 author: JeremyKelley
-description: "This method allows your app to track changes to a drive and its children over time."
+description: "Track changes in a drive item and its children over time."
 ms.date: 09/10/2017
-title: Sync the contents of a drive
+title: "driveItem: delta"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Track changes for a drive
+# driveItem: delta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This method allows your app to track changes to a drive and its children over time.
+Track changes in a [driveItem](../resources/driveitem.md) and its children over time.
 
 Your app begins by calling `delta` without any parameters. 
 The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
@@ -59,6 +59,16 @@ GET /users/{userId}/drive/root/delta
 
 This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.
@@ -70,11 +80,13 @@ In addition to the collection of DriveItems, the response will also include one 
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
-## Example (Initial Request)
+## Examples
+
+### Example 1: Initial request
 
 Here is an example of how to call this API to establish your local state.
 
-### Request
+#### Request
 
 Here is an example of the initial request.
 
@@ -85,16 +97,9 @@ Here is an example of the initial request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-first-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-delta-first-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-first-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -103,8 +108,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 ---
 
-
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -139,11 +143,11 @@ Content-type: application/json
 This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
 Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
 
-## Example (Last page in a set)
+### Example 2: Last page in a set
 
 Here is an example of how to call this API to update your local state.
 
-### Request
+#### Request
 
 Here is an example request after the initial request.
 
@@ -154,16 +158,9 @@ Here is an example request after the initial request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410jlka')
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-last-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-delta-last-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-last-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -172,8 +169,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 ---
 
-
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -214,46 +210,39 @@ After finishing the full enumeration, compare the returned items with your local
 | `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
-## Retrieving the current deltaLink
+### Example 3: Retrieving the current deltaLink
 
 In some scenarios, it may be useful to request the current deltaLink value without first enumerating all of the items in the drive already.
 
 This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
 To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
 
->**Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
+> **Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
 Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
 Using `delta` is the only way to guarantee that you've read all of the data you need to.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-with_latest_token", "scope": "files.read", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-latest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-with-latest-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-with-latest-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -264,6 +253,64 @@ Content-type: application/json
 {
     "value": [ ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+}
+```
+
+### Example 4: Retrieving delta results using a timestamp
+
+In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, e.g. `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+
+Using a timestamp in place of a token is only supported on OneDrive for Business and SharePoint.
+
+> **Note:** Clients should use the deltaLink provided by `delta` queries when possible, rather than generating their own token. This capability should only be utilized when the deltaLink is not known.
+
+
+#### Request
+
+
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+
+```msgraph-interactive
+GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-timestamp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-timestamp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "0123456789abc",
+            "name": "folder2",
+            "folder": { },
+            "deleted": { }
+        },
+        {
+            "id": "123010204abac",
+            "name": "file.txt",
+            "file": { }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
@@ -297,11 +344,20 @@ When the `Prefer: hierarchicalsharing` header is provided, sharing information w
 
 In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes will have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
-> **Note:** The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joined together in a single header: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
+> [!NOTE]
+> * The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joined together in a single header: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
+>
+> * In order to process permissions correctly your application will need to request **Sites.FullControl.All** permissions.
+
+For additional guidance about scanning scenarios see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance).
 
 ## Error responses
 
 In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
+
+## See also
+[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

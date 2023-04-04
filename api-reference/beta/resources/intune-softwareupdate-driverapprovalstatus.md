@@ -1,8 +1,8 @@
 ---
 title: "driverApprovalStatus enum type"
 description: "An enum type to represent approval status of a driver."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ An enum type to represent approval status of a driver.
 |declined|1|This indicates IT admin has declined a driver.|
 |approved|2|This indicates IT admin has approved a driver.|
 |suspended|3|This indicates IT admin has suspended a driver.|
-
-
-

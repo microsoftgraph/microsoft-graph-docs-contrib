@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementReports resource type"
 description: "DeviceManagementReports class for Reporting V2"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -49,6 +49,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-

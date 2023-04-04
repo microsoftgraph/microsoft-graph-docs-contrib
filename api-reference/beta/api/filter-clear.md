@@ -1,13 +1,13 @@
 ---
-title: "Filter: clear"
+title: "filter: clear"
 description: "Clear the filter on the given column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 ---
 
-# Filter: clear
+# filter: clear
 
 Namespace: microsoft.graph
 
@@ -44,9 +44,9 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,16 +56,9 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/filter-clear-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/filter-clear-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/filter-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -74,9 +67,8 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 ---
 
-
-##### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->

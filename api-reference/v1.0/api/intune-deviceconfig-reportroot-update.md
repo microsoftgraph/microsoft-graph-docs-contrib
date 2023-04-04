@@ -1,8 +1,8 @@
 ---
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -79,7 +79,3 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
-
-
-

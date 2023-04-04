@@ -1,8 +1,8 @@
 ---
 title: "secureAssessmentAccountType enum type"
 description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAcc
 |domainAccount|1|Indicates a domain account in format of domain\user or user@domain.com.|
 |localAccount|2|Indicates a local account in format of username.|
 |localGuestAccount|3|Indicates a local guest account in format of test name.|
-
-
-

@@ -3,7 +3,7 @@ title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: non-product-specific
 author: "abheek-das"
 ---
 
@@ -196,7 +196,6 @@ Content-type: application/json
             "address": "christine@contoso.com"
         }
     },
-    "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
     "multiValueExtendedProperties": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",

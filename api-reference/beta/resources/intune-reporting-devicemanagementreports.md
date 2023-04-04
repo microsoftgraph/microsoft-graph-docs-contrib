@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementReports resource type"
 description: "Singleton entity that acts as a container for all reports functionality."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,6 +23,16 @@ Singleton entity that acts as a container for all reports functionality.
 |[Get deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-reporting-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) object.|
 |[getDeviceNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md)|Stream|Not yet documented|
+|[getNoncompliantDevicesAndSettingsReport action](../api/intune-reporting-devicemanagementreports-getnoncompliantdevicesandsettingsreport.md)|Stream|Not yet documented|
+|[getDeviceStatusSummaryByCompliacePolicyReport action](../api/intune-reporting-devicemanagementreports-getdevicestatussummarybycompliacepolicyreport.md)|Stream|Not yet documented|
+|[getDeviceStatusByCompliacePolicyReport action](../api/intune-reporting-devicemanagementreports-getdevicestatusbycompliacepolicyreport.md)|Stream|Not yet documented|
+|[getDeviceStatusSummaryByCompliancePolicySettingsReport action](../api/intune-reporting-devicemanagementreports-getdevicestatussummarybycompliancepolicysettingsreport.md)|Stream|Not yet documented|
+|[getDeviceStatusByCompliancePolicySettingReport action](../api/intune-reporting-devicemanagementreports-getdevicestatusbycompliancepolicysettingreport.md)|Stream|Not yet documented|
+|[getDevicesStatusByPolicyPlatformComplianceReport action](../api/intune-reporting-devicemanagementreports-getdevicesstatusbypolicyplatformcompliancereport.md)|Stream|Not yet documented|
+|[getDevicesStatusBySettingReport action](../api/intune-reporting-devicemanagementreports-getdevicesstatusbysettingreport.md)|Stream|Not yet documented|
+|[getDevicePoliciesComplianceReport action](../api/intune-reporting-devicemanagementreports-getdevicepoliciescompliancereport.md)|Stream|Not yet documented|
+|[getDevicePolicySettingsComplianceReport action](../api/intune-reporting-devicemanagementreports-getdevicepolicysettingscompliancereport.md)|Stream|Not yet documented|
+|[getDevicesWithoutCompliancePolicyReport action](../api/intune-reporting-devicemanagementreports-getdeviceswithoutcompliancepolicyreport.md)|Stream|Not yet documented|
 |[getPolicyNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md)|Stream|Not yet documented|
 |[getPolicyNonComplianceMetadata action](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md)|Stream|Not yet documented|
 |[getPolicyNonComplianceSummaryReport action](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md)|Stream|Not yet documented|
@@ -49,7 +59,6 @@ Singleton entity that acts as a container for all reports functionality.
 |:---|:---|:---|
 |cachedReportConfigurations|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) collection|Entity representing the configuration of a cached report|
 |exportJobs|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) collection|Entity representing a job to export a report|
-|reportSchedules|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) collection|Entity representing a schedule for which reports are delivered|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -65,6 +74,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-

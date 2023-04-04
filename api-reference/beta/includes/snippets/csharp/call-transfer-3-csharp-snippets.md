@@ -4,28 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var transferTarget = new InvitationParticipantInfo
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Transfer.TransferPostRequestBody
 {
-	EndpointType = EndpointType.Default,
-	Identity = new IdentitySet
+	TransferTarget = new InvitationParticipantInfo
 	{
-		AdditionalData = new Dictionary<string, object>()
+		EndpointType = EndpointType.Default,
+		Identity = new IdentitySet
 		{
-			{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
-		}
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"phone" , new 
+					{
+						OdataType = "#microsoft.graph.identity",
+						Id = "+12345678901",
+					}
+				},
+			},
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"languageId" , "languageId-value"
+			},
+			{
+				"region" , "region-value"
+			},
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"languageId", "languageId-value"},
-		{"region", "region-value"}
-	}
 };
+await graphClient.Communications.Calls["{call-id}"].Transfer.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Transfer(transferTarget)
-	.Request()
-	.PostAsync();
 
 ```

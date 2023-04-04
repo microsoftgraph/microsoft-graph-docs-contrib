@@ -2,7 +2,7 @@
 title: "Build a Microsoft Teams tab with the Microsoft Graph Toolkit"
 description: "Get started building a Microsoft Teams tab using the Microsoft Graph Toolkit."
 ms.localizationpriority: medium
-author: simonagren
+author: sebastienlevert
 ---
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
@@ -27,8 +27,8 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 
 ```html
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
-<script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
 ```
 
 # [npm](#tab/npm)
@@ -51,8 +51,8 @@ The following is an example of basic page that handles the auth flow in the popu
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+    <script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
   </head>
 
   <body>
@@ -82,7 +82,7 @@ Make sure to set the `redirect URI` in your app registration to point to the aut
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams MSAL2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
-You can choose to initialize the provider in either your HTML or your JavaScript code. 
+You can choose to initialize the provider in either your HTML or your JavaScript code.
 
 # [html](#tab/html)
 
@@ -90,14 +90,14 @@ You can choose to initialize the provider in either your HTML or your JavaScript
 Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
 
 ```html
-<mgt-teams-msal2-provider 
+<mgt-teams-msal2-provider
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/tabauth"
   scopes="User.Read,Mail.ReadBasic"
   ></mgt-teams-msal2-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `auth-popup-url` with the full or relative path to your auth page. 
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `auth-popup-url` with the full or relative path to your auth page.
 
 # [js](#tab/js)
 
@@ -136,3 +136,4 @@ If you're using React, we recommend using the React components instead from the 
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
+- Check out the [Microsoft Teams samples](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit).

@@ -1,8 +1,8 @@
 ---
 title: "List windows10VpnConfigurations"
 description: "List properties and relationships of the windows10VpnConfiguration objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5260
+Content-Length: 5371
 
 {
   "value": [
@@ -117,6 +117,7 @@ Content-Length: 5260
       "dnsSuffixes": [
         "Dns Suffixes value"
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,
@@ -180,7 +181,8 @@ Content-Length: 5260
           "appId": "App Id value",
           "appType": "desktop",
           "routingPolicyType": "splitTunnel",
-          "claims": "Claims value"
+          "claims": "Claims value",
+          "vpnTrafficDirection": "inbound"
         }
       ],
       "routes": [
@@ -218,6 +220,3 @@ Content-Length: 5260
   ]
 }
 ```
-
-
-

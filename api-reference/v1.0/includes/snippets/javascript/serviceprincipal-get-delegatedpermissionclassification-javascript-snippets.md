@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let delegatedPermissionClassifications = await client.api('/servicePrincipals/{id}/delegatedPermissionClassifications')
+let delegatedPermissionClassifications = await client.api('/servicePrincipals/00063ffc-54e9-405d-b8f3-56124728e051/delegatedPermissionClassifications')
 	.get();
 
 ```

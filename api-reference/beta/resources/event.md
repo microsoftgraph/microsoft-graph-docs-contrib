@@ -1,7 +1,7 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -66,7 +66,7 @@ This resource supports:
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
+|allowNewTimeProposals| Boolean | `true` if the meeting organizer allows invitees to propose a new time when responding; otherwise `false`. Optional. Default is `true`. |
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
@@ -75,7 +75,7 @@ This resource supports:
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
-|exceptionOccurrences|String collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
+|exceptionOccurrences|[event](event.md) collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Case-sensitive and read-only.|
@@ -168,7 +168,7 @@ Here is a JSON representation of the resource
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
+  "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
   "uid": "string",
@@ -219,6 +219,8 @@ Here is a JSON representation of the resource
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
+- [Bulk meetings C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/csharp)
+- [Bulk meetings Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-bulk-meetings/nodejs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

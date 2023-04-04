@@ -1,8 +1,8 @@
 ---
 title: "androidManagedStoreAppTrack resource type"
 description: "Contains track information for Android Managed Store apps."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -40,6 +40,3 @@ Here is a JSON representation of the resource.
   "trackAlias": "String"
 }
 ```
-
-
-

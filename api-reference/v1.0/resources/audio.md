@@ -16,6 +16,8 @@ The **Audio** resource groups audio-related properties on an item into a single 
 If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file.
 The properties of the **Audio** resource are populated by extracting metadata from the file. 
 
+The **Audio** resource is only supported on OneDrive Personal.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->

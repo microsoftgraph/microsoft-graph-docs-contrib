@@ -1,8 +1,8 @@
 ---
 title: "windowsPhone81CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 8.1 Mobile."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -95,6 +95,3 @@ Here is a JSON representation of the resource.
   "storageRequireEncryption": true
 }
 ```
-
-
-

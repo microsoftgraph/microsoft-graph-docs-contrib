@@ -11,8 +11,6 @@ ms.prod: cloud-printing
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Describes the document that is being uploaded
 
 ## Properties

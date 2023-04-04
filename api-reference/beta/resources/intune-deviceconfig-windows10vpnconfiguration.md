@@ -1,8 +1,8 @@
 ---
 title: "windows10VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Windows 10 device (desktop or mobile) to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -47,12 +47,13 @@ Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windows
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Profile target type. Possible values are: `user`, `device`, `autoPilotDevice`.|
-|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`, `unknownFutureValue`, `microsoftTunnel`.|
 |enableSplitTunneling|Boolean|Enable split tunneling.|
 |enableAlwaysOn|Boolean|Enable Always On mode.|
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
 |enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
 |dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
+|microsoftTunnelSiteId|String|ID of the Microsoft Tunnel site associated with the VPN profile.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
@@ -143,6 +144,7 @@ Here is a JSON representation of the resource.
   "dnsSuffixes": [
     "String"
   ],
+  "microsoftTunnelSiteId": "String",
   "authenticationMethod": "String",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -206,7 +208,8 @@ Here is a JSON representation of the resource.
       "appId": "String",
       "appType": "String",
       "routingPolicyType": "String",
-      "claims": "String"
+      "claims": "String",
+      "vpnTrafficDirection": "String"
     }
   ],
   "routes": [
@@ -242,6 +245,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-

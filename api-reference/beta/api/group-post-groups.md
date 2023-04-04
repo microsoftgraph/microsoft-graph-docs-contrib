@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
-author: "Jordanndahl"
+author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -15,34 +15,42 @@ Namespace: microsoft.graph
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
-* Microsoft 365 group (unified group)
-* Security group
+- Microsoft 365 group (unified group)
+- Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                |
+| :------------------------------------- | :--------------------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All               |
+| Delegated (personal Microsoft account) | Not supported.                                             |
+| Application                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+For an app create a group with owners or members while it has the *Group.Create* permission, the app must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
++ The app can assign itself as the group's owner or member.
++ To create the group with users as owners or members, the app must have at least the *User.Read.All* permission.
++ To create the group with other service principals as owners or members, the app must have at least the *Application.Read.All* permission.
++ To create the group with either users or service principals as owners or members, the app must have at least the *Directory.Read.All* permission.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -50,19 +58,20 @@ In the request body, supply a JSON representation of the [group](../resources/gr
 
 The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. Required. |
-| mailEnabled | boolean | Set to `true` for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
+| Property        | Type    | Description                                                                                                                                                                                                                                                                                                                                |
+| :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName     | string  | The name to display in the address book for the group. Maximum length is 256 characters. Required.                                                                                                                                                                                                                                         |
+| mailEnabled     | boolean | Set to `true` for mail-enabled groups. Required.                                                                                                                                                                                                                                                                                           |
+| mailNickname    | string  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. Required. |
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
-> + Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
 >
->+ Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
+> - Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
 >
->+ To following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
+>
+> - To following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can add custom properties with your own data to the group while creating it.
 
@@ -70,10 +79,10 @@ Because the **group** resource supports [extensions](/graph/extensibility-overvi
 
 Use the **groupTypes** property to control the type of group and its membership, as shown.
 
-| Type of group | Assigned membership | Dynamic membership |
-|:--------------|:------------------------|:---------------|
-| Microsoft 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
+| Type of group                     | Assigned membership | Dynamic membership                |
+| :-------------------------------- | :------------------ | :-------------------------------- |
+| Microsoft 365 (aka unified group) | `["Unified"]`       | `["Unified","DynamicMembership"]` |
+| Dynamic                           | `[]` (_null_)       | `["DynamicMembership"]`           |
 
 ## Response
 
@@ -83,21 +92,22 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ### Example 1: Create a Microsoft 365 group
 
-The following example creates a Microsoft 365 group.
+The following example creates a Microsoft 365 group. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
 
 #### Request
 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for golf",
@@ -110,6 +120,7 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,22 +129,29 @@ Content-length: 244
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -141,7 +159,8 @@ The following is an example of the response. The value of the **preferredDataLoc
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -190,11 +209,14 @@ The following example creates a security group with an owner and members specifi
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -216,11 +238,37 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-prepopulated-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-prepopulated-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-prepopulated-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -228,7 +276,8 @@ The following is an example of a successful response. It includes only default p
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -281,17 +330,18 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.  The calling user or app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups. 
+The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
-**NOTE:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
-
+A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_role_enabled_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -314,6 +364,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-role-enabled-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -322,12 +373,20 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-role-enabled-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-role-enabled-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-role-enabled-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-role-enabled-group-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -342,7 +401,8 @@ The following is an example of the response. The value of the **preferredDataLoc
   "@odata.type": "microsoft.graph.group",
   "name": "create_role_enabled_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -401,7 +461,6 @@ Content-type: application/json
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -415,5 +474,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

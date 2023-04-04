@@ -1,7 +1,7 @@
 ---
 title: "Get microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -17,11 +17,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.AuthenticationMethod|
+|Application|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the Global admin role. For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
 
 ## HTTP request
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-microsoftauthenticatorauthenticationmethodconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -66,17 +67,23 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-microsoftauthenticatorauthenticationmethodconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-microsoftauthenticatorauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-microsoftauthenticatorauthenticationmethodconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -91,11 +98,43 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-    "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String"
-  }
+    "id": "MicrosoftAuthenticator",
+    "state": "disabled",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "authenticationMode": "any"
+        }
+    ],
+    "excludeTargets": [],
+    "featureSettings": {
+        "displayAppContextRequiredState" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
+            }
+        },
+        "displayLocationContextRequiredState" : {
+            "state": "enabled",
+              "includeTarget": {
+                "targetType": "group",
+                "id": "all_users"
+            },
+            "excludeTarget": {
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
+            }
+        }
+    }
 }
 ```
 

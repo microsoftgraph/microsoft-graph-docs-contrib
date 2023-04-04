@@ -1,8 +1,8 @@
 ---
 title: "Create windows10EndpointProtectionConfiguration"
 description: "Create a new windows10EndpointProtectionConfiguration object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -143,7 +143,7 @@ The following table shows the properties that are required when you create the w
 |localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|This security setting determines what additional permissions will be granted for anonymous connections to the computer.|
 |localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|This security setting determines whether to allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares.|
 |localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. It’s not stored by default.|
-|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. Possible values are: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
+|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. Possible values are: `noAction`, `lockWorkstation`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
 |defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
 |defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
 |defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
@@ -299,7 +299,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 31268
+Content-length: 31275
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -761,7 +761,7 @@ Content-length: 31268
   "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
   "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
   "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-  "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+  "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
   "defenderSecurityCenterDisableAppBrowserUI": true,
   "defenderSecurityCenterDisableFamilyUI": true,
   "defenderSecurityCenterDisableHealthUI": true,
@@ -1049,7 +1049,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 31440
+Content-Length: 31447
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1514,7 +1514,7 @@ Content-Length: 31440
   "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
   "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
   "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-  "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+  "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
   "defenderSecurityCenterDisableAppBrowserUI": true,
   "defenderSecurityCenterDisableFamilyUI": true,
   "defenderSecurityCenterDisableHealthUI": true,
@@ -1796,6 +1796,3 @@ Content-Length: 31440
   }
 }
 ```
-
-
-

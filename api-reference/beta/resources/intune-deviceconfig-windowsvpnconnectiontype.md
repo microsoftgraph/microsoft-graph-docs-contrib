@@ -1,8 +1,8 @@
 ---
 title: "windowsVpnConnectionType enum type"
 description: "Windows VPN connection type."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Windows VPN connection type.
 |f5EdgeClient|1|F5 Edge Client.|
 |dellSonicWallMobileConnect|2|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|3|Check Point Capsule VPN.|
-
-
-

@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -17,4 +17,4 @@ The preceding limits apply to the following resources:
 
 | <!-- fake header-->                                                                            |
 |------------------------------------------------------------------------------------------------|
-| <ul> <li> [chromeOSOnboardingSettings](/graph/api/resources/chromeosonboardingsettings)  </ul> |
+| <ul> <li> [chromeOSOnboardingSettings](/graph/api/resources/intune-chromebooksync-chromeosonboardingsettings)  </ul> |

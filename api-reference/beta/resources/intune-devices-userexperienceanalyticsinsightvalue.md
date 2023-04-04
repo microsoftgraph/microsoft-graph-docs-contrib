@@ -1,8 +1,8 @@
 ---
 title: "userExperienceAnalyticsInsightValue resource type"
 description: "The value in an user experience analytics insight."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -36,6 +36,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
-
-
-

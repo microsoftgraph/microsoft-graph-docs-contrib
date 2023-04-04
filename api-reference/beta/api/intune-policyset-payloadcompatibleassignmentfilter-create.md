@@ -1,8 +1,8 @@
 ---
 title: "Create payloadCompatibleAssignmentFilter"
 description: "Create a new payloadCompatibleAssignmentFilter object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -53,9 +53,10 @@ The following table shows the properties that are required when you create the p
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |displayName|String|DisplayName of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |description|String|Description of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
-|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |rule|String|Rule definition of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter. Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter Inherited from [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|
 |payloadType|[assignmentFilterPayloadType](../resources/intune-policyset-assignmentfilterpayloadtype.md)|PayloadType of the Assignment Filter. Possible values are: `notSet`, `enrollmentRestrictions`.|
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 Content-type: application/json
-Content-length: 313
+Content-length: 582
 
 {
   "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
@@ -81,6 +82,15 @@ Content-length: 313
   "roleScopeTags": [
     "Role Scope Tags value"
   ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
+  ],
   "payloadType": "enrollmentRestrictions"
 }
 ```
@@ -90,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 754
 
 {
   "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
@@ -104,9 +114,15 @@ Content-Length: 485
   "roleScopeTags": [
     "Role Scope Tags value"
   ],
+  "payloads": [
+    {
+      "@odata.type": "microsoft.graph.payloadByFilter",
+      "payloadId": "Payload Id value",
+      "payloadType": "deviceConfigurationAndCompliance",
+      "groupId": "Group Id value",
+      "assignmentFilterType": "include"
+    }
+  ],
   "payloadType": "enrollmentRestrictions"
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "Create macOSSoftwareUpdateConfiguration"
 description: "Create a new macOSSoftwareUpdateConfiguration object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [macOSSoftwareUpdateConfiguration](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,13 +60,15 @@ The following table shows the properties that are required when you create the m
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|criticalUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for critical updates. Possible values are: `notConfigured`, `default`.|
-|configDataUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for configuration data file updates. Possible values are: `notConfigured`, `default`.|
-|firmwareUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for firmware updates. Possible values are: `notConfigured`, `default`.|
-|allOtherUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for all other updates. Possible values are: `notConfigured`, `default`.|
+|criticalUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for critical updates. Possible values are: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|configDataUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for configuration data file updates. Possible values are: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|firmwareUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for firmware updates. Possible values are: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|allOtherUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Update behavior for all other updates. Possible values are: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
 |updateScheduleType|[macOSSoftwareUpdateScheduleType](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|Custom Time windows when updates will be allowed or blocked. This collection can contain a maximum of 20 elements.|
 |updateTimeWindowUtcOffsetInMinutes|Int32|Minutes indicating UTC offset for each update time window|
+|maxUserDeferralsCount|Int32|The maximum number of times the system allows the user to postpone an update before it’s installed. Supported values: 0 - 366. Valid values 0 to 365|
+|priority|[macOSPriority](../resources/intune-deviceconfig-macospriority.md)|The scheduling priority for downloading and preparing the requested update. Default: Low. Possible values: Null, Low, High. Possible values are: `low`, `high`, `unknownFutureValue`.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1542
+Content-length: 1596
 
 {
   "@odata.type": "#microsoft.graph.macOSSoftwareUpdateConfiguration",
@@ -126,7 +128,9 @@ Content-length: 1542
       "endTime": "12:03:02.3740000"
     }
   ],
-  "updateTimeWindowUtcOffsetInMinutes": 2
+  "updateTimeWindowUtcOffsetInMinutes": 2,
+  "maxUserDeferralsCount": 5,
+  "priority": "high"
 }
 ```
 
@@ -135,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1714
+Content-Length: 1768
 
 {
   "@odata.type": "#microsoft.graph.macOSSoftwareUpdateConfiguration",
@@ -184,9 +188,8 @@ Content-Length: 1714
       "endTime": "12:03:02.3740000"
     }
   ],
-  "updateTimeWindowUtcOffsetInMinutes": 2
+  "updateTimeWindowUtcOffsetInMinutes": 2,
+  "maxUserDeferralsCount": 5,
+  "priority": "high"
 }
 ```
-
-
-

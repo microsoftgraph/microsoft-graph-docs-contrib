@@ -1,8 +1,8 @@
 ---
 title: "List groupPolicyConfigurations"
 description: "List properties and relationships of the groupPolicyConfiguration objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 448
+Content-Length: 501
 
 {
   "value": [
@@ -72,12 +72,10 @@ Content-Length: 448
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "policyConfigurationIngestionType": "custom",
       "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }
   ]
 }
 ```
-
-
-

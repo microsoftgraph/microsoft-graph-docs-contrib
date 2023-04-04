@@ -1,8 +1,8 @@
 ---
 title: "Update chromeOSOnboardingSettings"
 description: "Update the properties of a chromeOSOnboardingSettings object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The ChromebookTenant's Id|
 |ownerUserPrincipalName|String|The ChromebookTenant's OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. Possible values are: `unknown`, `inprogress`, `onboarded`, `failed`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. Possible values are: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|The ChromebookTenant's LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|The ChromebookTenant's LastDirectorySyncDateTime|
 
@@ -92,6 +92,3 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
-
-
-

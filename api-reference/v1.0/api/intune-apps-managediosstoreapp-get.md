@@ -1,8 +1,8 @@
 ---
 title: "Get managedIOSStoreApp"
 description: "Read properties and relationships of the managedIOSStoreApp object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1391
+Content-Length: 1413
 
 {
   "value": {
@@ -101,12 +101,9 @@ Content-Length: 1391
       "v11_0": true,
       "v12_0": true,
       "v13_0": true,
-      "v14_0": true
+      "v14_0": true,
+      "v15_0": true
     }
   }
 }
 ```
-
-
-
-

@@ -27,11 +27,13 @@ Defines authentication methods and the users that are allowed to use them to sig
 |id|String|The identifier of the policy. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time of the last update to the policy. Read-only.|
 |policyVersion|String|The version of the policy in use. Read-only.|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
+|policyMigrationState|authenticationMethodsPolicyMigrationState|The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service password reset (SSPR) policies. The possible values are: <br/><li>`premigration` - means the authentication methods policy is used for authentication only, legacy policies are respected. <li>`migrationInProgress` - means the authentication methods policy is used for both authentication and SSPR, legacy policies are respected. <li>`migrationComplete` - means the authentication methods policy is used for authentication and SSPR, legacy policies are ignored. <li>`unknownFutureValue` - Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Represents the settings for each authentication method.|
+|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Represents the settings for each authentication method. Automatically expanded on `GET /policies/authenticationMethodsPolicy`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -46,10 +48,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
+  "policyMigrationState": "String",
+  "registrationEnforcement": {
+    "@odata.type": "microsoft.graph.registrationEnforcement"
+  } 
 }
 ```

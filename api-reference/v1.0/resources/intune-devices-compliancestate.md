@@ -1,8 +1,8 @@
 ---
 title: "complianceState enum type"
 description: "Compliance state."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,3 @@ Compliance state.
 |error|4|Error.|
 |inGracePeriod|254|Device is non-compliant but still has access to corporate resources|
 |configManager|255|Managed by Config Manager|
-
-
-
-

@@ -54,7 +54,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/messages
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",
@@ -68,9 +67,6 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-mailfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-mailfolder-javascript-snippets.md)]
@@ -78,6 +74,14 @@ Content-length: 248
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-message-from-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-message-from-mailfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,7 +97,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

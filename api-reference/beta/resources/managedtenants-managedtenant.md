@@ -1,9 +1,9 @@
 ---
 title: "managedTenant resource type"
 description: "Represent the available operations that interact with the multi-tenant management platform."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 
@@ -24,6 +24,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |aggregatedPolicyCompliances|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) collection|Aggregate view of device compliance policies across managed tenants.|
+|auditEvents|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md) collection|The collection of audit events across managed tenants.|
 |cloudPcConnections|[microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) collection|The collection of cloud PC connections across managed tenants.|
 |cloudPcDevices|[microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) collection|The collection of cloud PC devices across managed tenants.|
 |cloudPcsOverview|[microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) collection|Overview of cloud PC information across managed tenants.|
@@ -36,12 +37,13 @@ None.
 |managementActionTenantDeploymentStatuses|[microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) collection|The tenant level status of management actions across managed tenants.|
 |managementIntents|[microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md) collection|The collection of baseline management intents across managed tenants.|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|The collection of baseline management templates across managed tenants.|
-|riskyUsers|[microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md) collection|The collection of users flagged for risk across managed tenants.|
+|myRoles|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|The collection of role assignments to a signed-in user for a managed tenant.|
 |tenantGroups|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|The collection of a logical grouping of managed tenants used by the multi-tenant management platform.|
 |tenants|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) collection|The collection of tenants associated with the managing entity.|
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|The collection of tenant level customized information across managed tenants.|
 |tenantsDetailedInformation|[microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md) collection|The collection tenant level detailed information across managed tenants.|
 |tenantTags|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) collection|The collection of tenant tags across managed tenants.|
+|tenantUsage|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|The collection of tenant usage across managed tenants.|
 |windowsDeviceMalwareStates|[microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md) collection|The state of malware for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.|
 |windowsProtectionStates|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|The protection state for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.|
 

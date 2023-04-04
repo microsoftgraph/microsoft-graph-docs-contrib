@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementReusablePolicySetting resource type"
 description: "Graph model for a reusable setting"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -43,7 +43,7 @@ Graph model for a reusable setting
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting|
+|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -281,6 +281,3 @@ Here is a JSON representation of the resource.
   "referencingConfigurationPolicyCount": 1024
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "macOSOfficeSuiteApp resource type"
 description: "Contains properties and inherited properties for the MacOS Office Suite App."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -82,7 +82,3 @@ Here is a JSON representation of the resource.
   "publishingState": "String"
 }
 ```
-
-
-
-

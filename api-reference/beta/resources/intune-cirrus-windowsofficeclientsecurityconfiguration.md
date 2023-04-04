@@ -1,8 +1,8 @@
 ---
 title: "windowsOfficeClientSecurityConfiguration resource type"
 description: "Not yet documented"
-ms.localizationpriority: medium
-author: "dougeby"
+localization_priority: Normal
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -86,6 +86,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-

@@ -1,11 +1,10 @@
 ---
 author: daspek
 description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
-ms.date: 10/06/2017
 title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "files"
 ---
 # Get item activity stats by interval
 
@@ -19,17 +18,15 @@ Get [itemActivityStats][] for the activities that took place under this resource
 
 Analytics aggregates might not be available for all action types.
 
-[itemActivityStats]: ../resources/itemactivitystat.md
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Permission type                        | Permissions (from least to most privileged)|
+|:--------------------------------------|:-------------------------------------|
+|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Delegated (personal Microsoft account) | Not supported.|
+|Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,10 +46,25 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | endDateTime    | string (timestamp) | The end time over which to aggregate activities.
 | interval       | string             | The aggregation interval.
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an [itemActivityStats][] object in the response body.
+
 ## Example
 
-#### Request
+### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
@@ -60,16 +72,13 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activities-by-interval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activities-by-interval-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-activities-by-interval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -79,7 +88,9 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 ---
 
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
@@ -116,6 +127,8 @@ Content-type: application/json
     ]
 }
 ```
+
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 <!--
 {

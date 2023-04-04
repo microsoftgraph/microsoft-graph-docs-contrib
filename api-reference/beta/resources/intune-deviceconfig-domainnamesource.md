@@ -1,8 +1,8 @@
 ---
 title: "domainNameSource enum type"
 description: "Domainname source."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,6 +22,3 @@ Domainname source.
 |:---|:---|:---|
 |fullDomainName|0|Full domain name.|
 |netBiosDomainName|1|net bios domain name.|
-
-
-

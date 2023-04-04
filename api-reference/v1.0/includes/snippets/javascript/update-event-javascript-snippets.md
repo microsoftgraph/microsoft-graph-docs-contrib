@@ -18,7 +18,6 @@ const event = {
     time: 'datetime-value'
   },
   recurrence: null,
-  iCalUId: 'iCalUId-value',
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
   onlineMeetingProvider: 'teamsForBusiness',

@@ -1,8 +1,8 @@
 ---
 title: "Update androidManagedAppProtection"
 description: "Update the properties of a androidManagedAppProtection object."
-author: "rolyon"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -100,7 +100,7 @@ The following table shows the properties that are required when you create the [
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app.|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app.|
-|exemptedAppPackages|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|App packages in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|App packages in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |minimumWipePatchVersion|String|Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data.|
 |allowedAndroidDeviceManufacturers|String|Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. Possible values are: `block`, `wipe`, `warn`.|
@@ -274,9 +274,3 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
-
-
-
-
-

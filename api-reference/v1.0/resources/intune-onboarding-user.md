@@ -1,8 +1,8 @@
 ---
 title: "user resource type"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,6 +23,8 @@ Not yet documented
 |[Create user](../api/intune-onboarding-user-create.md)|[user](../resources/intune-onboarding-user.md)|Create a new [user](../resources/intune-onboarding-user.md) object.|
 |[Delete user](../api/intune-onboarding-user-delete.md)|None|Deletes a [user](../resources/intune-onboarding-user.md).|
 |[Update user](../api/intune-onboarding-user-update.md)|[user](../resources/intune-onboarding-user.md)|Update the properties of a [user](../resources/intune-onboarding-user.md) object.|
+|[exportDeviceAndAppManagementData function](../api/intune-onboarding-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Not yet documented|
+|[exportDeviceAndAppManagementData function](../api/intune-onboarding-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -48,7 +50,3 @@ Here is a JSON representation of the resource.
   "deviceEnrollmentLimit": 1024
 }
 ```
-
-
-
-

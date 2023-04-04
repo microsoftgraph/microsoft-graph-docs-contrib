@@ -1,8 +1,8 @@
 ---
 title: "unaryManagementConditionExpression resource type"
 description: "A management condition expression that is evaluated using a unary operation."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -158,6 +158,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "certificateStatus enum type"
 description: "Not yet documented"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,6 +22,3 @@ Not yet documented
 |:---|:---|:---|
 |notProvisioned|0|Not yet documented|
 |provisioned|1|Not yet documented|
-
-
-

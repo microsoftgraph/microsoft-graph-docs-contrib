@@ -28,6 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* Domain Name Administrator
+* Partner Tier2 Support
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +67,6 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 ```http
 POST https://graph.microsoft.com/beta/domains
 Content-type: application/json
-Content-length: 192
 
 {
   "id": "contoso.com"
@@ -78,7 +83,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

@@ -1,8 +1,8 @@
 ---
 title: "certificateConnectorDetails resource type"
 description: "Entity used to retrieve information about Intune Certificate Connectors."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -36,6 +36,7 @@ Entity used to retrieve information about Intune Certificate Connectors.
 |machineName|String|Name of the machine hosting this connector service.|
 |enrollmentDateTime|DateTimeOffset|Date/time when this connector was enrolled.|
 |lastCheckinDateTime|DateTimeOffset|Date/time when this connector last connected to the service.|
+|connectorVersion|String|Version of the connector installed.|
 
 ## Relationships
 None
@@ -55,9 +56,7 @@ Here is a JSON representation of the resource.
   "connectorName": "String",
   "machineName": "String",
   "enrollmentDateTime": "String (timestamp)",
-  "lastCheckinDateTime": "String (timestamp)"
+  "lastCheckinDateTime": "String (timestamp)",
+  "connectorVersion": "String"
 }
 ```
-
-
-

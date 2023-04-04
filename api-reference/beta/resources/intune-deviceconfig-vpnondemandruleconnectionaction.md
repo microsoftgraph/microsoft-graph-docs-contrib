@@ -1,8 +1,8 @@
 ---
 title: "vpnOnDemandRuleConnectionAction enum type"
 description: "VPN On-Demand Rule Connection Action."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ VPN On-Demand Rule Connection Action.
 |evaluateConnection|1|Evaluate Connection.|
 |ignore|2|Ignore.|
 |disconnect|3|Disconnect.|
-
-
-

@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
 description: "Remove access to a DriveItem."
-ms.prod: ""
+ms.prod: files
 doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
@@ -59,16 +59,13 @@ This example removes the permission identified as {perm-id} from the item {item-
 ```http
 DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

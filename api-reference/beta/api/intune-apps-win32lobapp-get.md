@@ -1,8 +1,8 @@
 ---
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3866
+Content-Length: 3904
 
 {
   "value": {
@@ -180,10 +180,8 @@ Content-Length: 3866
     },
     "setupFilePath": "Setup File Path value",
     "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-    "displayVersion": "Display Version value"
+    "displayVersion": "Display Version value",
+    "allowAvailableUninstall": true
   }
 }
 ```
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -68,7 +68,7 @@ The following table shows the properties that are required when you create the i
 |server|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|VPN Server on the network. Make sure end users can access this network location. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |identifier|String|Identifier provided by VPN vendor when connection type is set to Custom VPN. For example: Cisco AnyConnect uses an identifier of the form com.cisco.anyconnect.applevpn.plugin Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. This collection can contain a maximum of 25 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. This collection can contain a maximum of 25 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. This collection can contain a maximum of 25 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method for this VPN connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -101,7 +101,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3368
+Content-length: 3495
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -180,7 +180,11 @@ Content-length: 3368
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -224,7 +228,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3540
+Content-Length: 3667
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -306,7 +310,11 @@ Content-Length: 3540
       "domains": [
         "Domains value"
       ],
-      "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
+      "probeRequiredUrl": "https://example.com/probeRequiredUrl/",
+      "interfaceTypeMatch": "ethernet",
+      "dnsServerAddressMatch": [
+        "Dns Server Address Match value"
+      ]
     }
   ],
   "providerType": "appProxy",
@@ -344,6 +352,3 @@ Content-Length: 3540
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
-
-
-

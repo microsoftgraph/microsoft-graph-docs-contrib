@@ -1,7 +1,7 @@
 ---
 title: "Deploy a feature update using the Windows Update for Business deployment service"
-description: "With the Windows Update for Business deployment service, you can deploy Windows feature updates to devices in an Azure AD tenant."
-author: "Alice-at-Microsoft"
+description: "Follow these steps to deploy Windows feature updates to devices in an Azure AD tenant by using the Windows Update for Business deployment service."
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -9,11 +9,14 @@ doc_type: conceptualPageType
 
 # Deploy a feature update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10 feature updates and expedited security updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For infomation about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 When you deploy a feature update to a device, Windows Update offers the specified update to the device if it has not yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or above version 20H2, it stays on its current version. If the device is not enrolled in feature update management, the device is not affected by this operation.
 
 As long as a device remains enrolled in feature update management, the device does not receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
+
+> [!IMPORTANT]
+> By using the Windows Update for Business deployment service to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
 
 ## Prerequisites
 
@@ -64,10 +67,7 @@ Content-Type: application/json
 
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). The targeted devices are specified in the next step.
-
-> [!NOTE]
-> If you do not specify a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) when creating a deployment, a default monitoring rule is created. This default monitoring rule has a **signal** of `rollback​`, a **threshold** of `20​`, and an **action** of `alertError​`. In a future update of the API, this behavior will change and a default monitoring rule will not be created.
+Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). [Safeguards](windowsupdates-manage-safeguards.md) are applied by default. The targeted devices are specified in the next step.
 
 ### Request
 
@@ -78,19 +78,24 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "cd45877c-87a9-4ed1-b184-fd89230207b1"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D"
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         },
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -113,26 +118,21 @@ Content-Type: application/json
     "state": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
         "value": "offering",
-        "reasons": [
-            {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
-                "value": "offeringByRequest"
-            }
-        ],
+        "reasons": [],
         "requestedValue": "none",
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
-        "rollout": {
-            "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D",
-            "startDateTime": null,
-            "endDateTime": null
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "schedule": {
+            "gradualRollout": {
+                "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+                "durationBetweenOffers": "P7D",
+                "devicePerOffer": 100
+            }
         },
         "monitoring": {
             "monitoringRules": [
@@ -157,7 +157,7 @@ After a deployment is created, you can assign devices to the [deployment audienc
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-The follwoing example shows how to add Azure AD devices as members of the deployment audience.
+The following example shows how to add Azure AD devices as members of the deployment audience.
 
 ### Request
 

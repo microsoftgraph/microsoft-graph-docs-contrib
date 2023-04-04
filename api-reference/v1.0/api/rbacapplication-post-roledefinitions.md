@@ -1,17 +1,17 @@
 ---
-title: "Create unifiedRoleDefinition"
+title: "Create roleDefinitions"
 description: "Create a new unifiedRoleDefinition object."
 ms.localizationpriority: medium
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
-# Create unifiedRoleDefinition
+# Create roleDefinitions
 
 Namespace: microsoft.graph
 
-Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
+Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. This feature requires an Azure AD Premium P1 or P2 license.
 
 ## Permissions
 
@@ -87,6 +87,7 @@ Content-type: application/json
     "isEnabled" : true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,17 +96,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroledefinition-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroledefinition-from-rbacapplication-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroledefinition-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroledefinition-from-rbacapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroledefinition-from-rbacapplication-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroledefinition-from-rbacapplication-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 
@@ -129,7 +136,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -139,8 +146,7 @@ Content-type: application/json
             ],
             "condition": null
         }
-    ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom"
+    ]
 }
 ```
 

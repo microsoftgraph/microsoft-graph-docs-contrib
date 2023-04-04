@@ -1,8 +1,8 @@
 ---
 title: "Get windows10DeviceFirmwareConfigurationInterface"
 description: "Read properties and relationships of the windows10DeviceFirmwareConfigurationInterface object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1670
+Content-Length: 2051
 
 {
   "value": {
@@ -109,10 +109,19 @@ Content-Length: 1670
     "bootFromExternalMedia": "enabled",
     "bootFromBuiltInNetworkAdapters": "enabled",
     "windowsPlatformBinaryTable": "enabled",
-    "simultaneousMultiThreading": "enabled"
+    "simultaneousMultiThreading": "enabled",
+    "frontCamera": "enabled",
+    "rearCamera": "enabled",
+    "infraredCamera": "enabled",
+    "microphone": "enabled",
+    "bluetooth": "enabled",
+    "wirelessWideAreaNetwork": "enabled",
+    "nearFieldCommunication": "enabled",
+    "wiFi": "enabled",
+    "usbTypeAPort": "enabled",
+    "sdCard": "enabled",
+    "wakeOnLAN": "enabled",
+    "wakeOnPower": "enabled"
   }
 }
 ```
-
-
-

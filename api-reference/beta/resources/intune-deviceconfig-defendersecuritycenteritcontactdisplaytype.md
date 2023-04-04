@@ -1,8 +1,8 @@
 ---
 title: "defenderSecurityCenterITContactDisplayType enum type"
 description: "Possible values for defenderSecurityCenterITContactDisplay"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,6 +24,3 @@ Possible values for defenderSecurityCenterITContactDisplay
 |displayInAppAndInNotifications|1|Display in app and in notifications|
 |displayOnlyInApp|2|Display only in app|
 |displayOnlyInNotifications|3|Display only in notifications|
-
-
-

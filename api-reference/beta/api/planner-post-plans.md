@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
+| Delegated (work or school account)     | Tasks.ReadWrite, Group.ReadWrite.All        |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+| Application                            | Tasks.ReadWrite.All         |
 
 ## HTTP request
 
@@ -42,21 +42,27 @@ POST /planner/plans
 ## Request body
 
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
-The **plannerPlan** container property must be set.
+
+The following table shows the properties that are required when you create a [plannerPlan](../resources/plannerplan.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated.|
+|title|String|The title of the plan.|
 
 >**Note:** If the container is a Microsoft 365 group, the user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [plannerPlan](../resources/plannerplan.md) object in the response body.
 
-This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
+This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,7 +72,6 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 140
 
 {
   "container": {
@@ -75,6 +80,7 @@ Content-length: 140
   "title": "title-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerplan-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,22 +89,29 @@ Content-length: 140
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerplan-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-plannerplan-from-planner-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-plannerplan-from-planner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-plannerplan-from-planner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-plannerplan-from-planner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +120,6 @@ Here is an example of the response.
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 544
 
 {
   "createdBy": {
@@ -143,5 +155,3 @@ Content-length: 544
   ]
 }
 -->
-
-

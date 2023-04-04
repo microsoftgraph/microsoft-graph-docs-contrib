@@ -1,8 +1,8 @@
 ---
 title: "Create deviceManagementConfigurationPolicy"
 description: "Create a new deviceManagementConfigurationPolicy object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,15 +52,16 @@ The following table shows the properties that are required when you create the d
 |id|String|Key of the policy document. Automatically generated.|
 |name|String|Policy name|
 |description|String|Policy description|
-|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|createdDateTime|DateTimeOffset|Policy creation date and time. This property is read-only.|
-|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time. This property is read-only.|
-|settingCount|Int32|Number of settings. This property is read-only.|
+|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `edgeMAM`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|Policy creation date and time|
+|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
+|settingCount|Int32|Number of settings|
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
+|priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
 
 
@@ -74,13 +75,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
 Content-type: application/json
-Content-length: 685
+Content-length: 809
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingCount": 12,
   "creationSource": "Creation Source value",
@@ -94,6 +95,10 @@ Content-length: 685
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```
@@ -103,14 +108,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 857
+Content-Length: 981
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -126,9 +131,10 @@ Content-Length: 857
     "templateFamily": "endpointSecurityAntivirus",
     "templateDisplayName": "Template Display Name value",
     "templateDisplayVersion": "Template Display Version value"
+  },
+  "priorityMetaData": {
+    "@odata.type": "microsoft.graph.deviceManagementPriorityMetaData",
+    "priority": 8
   }
 }
 ```
-
-
-

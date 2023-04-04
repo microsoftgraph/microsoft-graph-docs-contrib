@@ -1,8 +1,8 @@
 ---
 title: "List depMacOSEnrollmentProfiles"
 description: "List properties and relationships of the depMacOSEnrollmentProfile objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1522
+Content-Length: 2233
 
 {
   "value": [
@@ -92,6 +92,9 @@ Content-Length: 1522
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "configurationWebUrl": true,
+      "enabledSkipKeys": [
+        "Enabled Skip Keys value"
+      ],
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -99,11 +102,20 @@ Content-Length: 1522
       "zoomDisabled": true,
       "iCloudStorageDisabled": true,
       "chooseYourLockScreenDisabled": true,
-      "accessibilityScreenDisabled": true
+      "accessibilityScreenDisabled": true,
+      "autoUnlockWithWatchDisabled": true,
+      "skipPrimarySetupAccountCreation": true,
+      "setPrimarySetupAccountAsRegularUser": true,
+      "dontAutoPopulatePrimaryAccountInfo": true,
+      "primaryAccountFullName": "Primary Account Full Name value",
+      "primaryAccountUserName": "Primary Account User Name value",
+      "enableRestrictEditing": true,
+      "adminAccountUserName": "Admin Account User Name value",
+      "adminAccountFullName": "Admin Account Full Name value",
+      "adminAccountPassword": "Admin Account Password value",
+      "hideAdminAccount": true,
+      "requestRequiresNetworkTether": true
     }
   ]
 }
 ```
-
-
-

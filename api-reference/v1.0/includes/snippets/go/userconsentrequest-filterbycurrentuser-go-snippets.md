@@ -1,0 +1,31 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := " "
+
+requestParameters := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemUserConsentRequestItemRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+}
+configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemUserConsentRequestItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").UserConsentRequestsById("userConsentRequest-id").Get(context.Background(), configuration)
+
+
+```

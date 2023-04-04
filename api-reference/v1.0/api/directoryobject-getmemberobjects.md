@@ -1,6 +1,6 @@
 ---
 title: "Get member objects"
-description: " Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. "
+description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -11,40 +11,113 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. 
+Return all IDs for the groups, administrative units, and directory roles that a [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
 
-**Note:** Only users can be members of directory roles.
+**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Memberships for a directory object
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All and Group.Read.All, Directory.Read.All    |
+|Delegated (work or school account) | Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All and Group.Read.All, Directory.Read.All |
+|Application | Directory.Read.All |
+
+### Memberships for a user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+### Memberships for a group
+
+| Permission type                        | Permissions (from least to most privileged)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+
+### Memberships for a service principal
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+### Memberships for an organizational contact
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
+
+### Memberships for a device
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
+
+Memberships for a directory object
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryObjects/{id}/getMemberObjects
+```
+
+Memberships for a user
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
 POST /users/{id | userPrincipalName}/getMemberObjects
-POST /groups/{id}/getMemberGroups
-POST /directoryObjects/{id}/getMemberObjects
-
 ```
+
+Memberships for a group
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/getMemberObjects
+```
+
+Memberships for a service principal
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/getMemberObjects
+```
+
+Memberships for an organizational contact
+<!-- { "blockType": "ignored" } -->
+```http
+POST /contacts/{id}/getMemberObjects
+```
+
+Memberships for a device
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberObjects
+```
+
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type   | string  | application/json  |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type   | application/json  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| `true` to specify that only security groups that the entity is a member of should be returned; `false` to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is `true`. |
+|securityEnabledOnly|Boolean| `true` to specify that only security groups that the entity is a member of should be returned; `false` to specify that all groups, administrative units, and directory roles that the entity is a member of should be returned. |
 
 ## Response
 
@@ -67,6 +140,7 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,16 +149,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmemberobjects-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmemberobjects-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/directoryobject-getmemberobjects-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 >**Note:** The response object shown here might be shortened for readability.

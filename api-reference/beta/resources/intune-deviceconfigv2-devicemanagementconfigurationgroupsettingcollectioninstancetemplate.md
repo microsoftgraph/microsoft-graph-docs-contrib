@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementConfigurationGroupSettingCollectionInstanceTemplate resource type"
 description: "Group Setting Collection Instance Template"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -70,6 +70,3 @@ Here is a JSON representation of the resource.
   "allowUnmanagedValues": true
 }
 ```
-
-
-

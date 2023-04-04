@@ -1,8 +1,8 @@
 ---
 title: "managedInstallerStatus enum type"
 description: "ManagedInstallerStatus"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,6 +22,3 @@ ManagedInstallerStatus
 |:---|:---|:---|
 |disabled|0|Managed Installer is Disabled|
 |enabled|1|Managed Installer is Enabled|
-
-
-

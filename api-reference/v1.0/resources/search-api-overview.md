@@ -2,7 +2,7 @@
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -28,8 +28,10 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Sort search results](#sort-search-results)| **sort** |
+|[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**|
 
 ## Scope search based on entity types
 
@@ -38,6 +40,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
@@ -52,19 +55,20 @@ Control pagination of the search results by specifying the following two propert
 
 - **from** - An integer that indicates the 0-based starting point to list search results on the page. The default value is 0.
 
-- **size** - An integer that indicates the number of results to be returned for a page. The default value is 25.
+- **size** - An integer that indicates the number of results to be returned for a page. The default is 25 results. The maximum is 1000 results.
 
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 25 for **message** and **event**. 
+- The maximum number of results per page (**size**) is 25 for **message** and **event**. 
 
-There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
+The upper limit for SharePoint or OneDrive items is 1000. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
 Best practices:
 
 - Specify a smaller first page in the initial request. For example, specify **from** as 0, **size** as 25.
 - Paginate subsequent pages by updating the **from** and **size** properties. You can increase the page size in each subsequent request. The following table shows an example.
+
 
     | Page | from | size |
     |:-----|:-----|:-----|
@@ -94,7 +98,7 @@ If you do not specify any **fields** in the request,  you will get the default s
 
 ## Keyword Query Language (KQL) support
 
-Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
+Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The [XRANK](/graph/search-concept-xrank) operator boosts the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
 Depending on the entity type, the searchable properties vary. For details, see:
 
@@ -108,7 +112,7 @@ Search results in the response are sorted in the following default sort order:
 - **message** and **event** are sorted by date.
 - All SharePoint, OneDrive, person and connector types are sorted by relevance.
 
-The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [sortProperty](sortproperty.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
 Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
@@ -130,7 +134,23 @@ Once the response is returned containing the collection of [searchBucket](search
 
 Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
 
-See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
+For examples that show how to use aggregation to enhance and narrow down search results, see [Refine search results](/graph/search-concept-aggregation).
+
+## Request spelling correction
+
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchResponse](searchresponse.md).
+
+In the request body of the [query](/graph/api/search-query) method, specify the **queryAlterationOptions** that should be applied to the query for the spelling corrections. The description of **queryAlterationOptions** is defined in the [searchRequest](./searchrequest.md).
+
+For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
+
+## Search display layout
+
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview) by using the display layout or the result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+
+To get the result template in the [searchResponse](searchresponse.md) you have to set the **enableResultTemplate** property to **true**, which is defined in the [resultTemplateOptions](./resulttemplateoption.md) in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [searchHit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is part of the response.
+
+For examples that show how to render search results, see [Use search display layout](/graph/search-concept-display-layout).
 
 ## Error handling
 
@@ -144,25 +164,44 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
+
+| Entity Type |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     | site       |
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|
+|  message    |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+| chatMessage |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+|    drive    |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  driveItem  |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   event     |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |
+|externalItem |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   list      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  listItem   |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
+|    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **chatMessage**, **event**, **person**, or **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
-- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+- The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## See also
 
 - Learn more about a few key use cases:
+  - [Search Teams messages](/graph/search-concept-chat-messages)
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
+  - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
+  - [Search content with application permission](/graph/search-concept-searchall)
+  - [XRANK search results](/graph/search-concept-xrank)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

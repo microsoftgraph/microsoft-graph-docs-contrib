@@ -1,7 +1,7 @@
 ---
 title: "Update apiConnectorConfiguration"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
-author: "nickgmicrosoft"
+author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -66,7 +66,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup",
+  "sampleKeys": ["B2X_1_testuserflow", "postFederationSignup"]
 }
 -->
 
@@ -78,16 +79,9 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}"   
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -95,7 +89,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response 
 
@@ -120,7 +113,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_postAttributeCollection",
+  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
@@ -132,16 +126,9 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}"   
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -149,7 +136,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -175,7 +161,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
+  "name": "put_b2xuserflows-apiconnectorconfiguration_disable-postAttributeCollection",
+  "sampleKeys": ["B2X_1_testuserflow", "postAttributeCollection"]
 }
 -->
 
@@ -185,12 +172,9 @@ Content-Type: application/json
 
 { }
 ```
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2xuserflows-apiconnectorconfiguration-disable-postattributecollection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/put-b2xuserflows-apiconnectorconfiguration-disable-postattributecollection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -198,9 +182,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
 
 #### Response
 

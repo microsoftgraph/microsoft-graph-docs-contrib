@@ -26,11 +26,11 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 |:---|:---|:---|
 |description|String|Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes. Read-only.|
 |displayName|String| The value is always `Continuous Access Evaluation`. Read-only.|
-|groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
+|groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty. Read-only.|
 |id|String|Specifies the identifier of a [continuousAccessEvaluationPolicy](#continuousaccessevaluationpolicy-resource-type) object. Read-only.|
-|isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
-|users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty.|
-
+|isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. Read-only.|
+|users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty. Read-only.|
+|migrate|Boolean| `true` to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy. |
 ## Relationships
 None.
 
@@ -56,6 +56,7 @@ The following is a JSON representation of the resource.
   ],
   "groups": [
     "String"
-  ]
+  ],
+  "migrate": "Boolean"
 }
 ```

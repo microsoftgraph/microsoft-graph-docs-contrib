@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 > [!NOTE]
-> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.  
 
 ## HTTP request
 
@@ -47,10 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
-|isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
-|users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty.|
-
+|migrate|Boolean| `true` to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy. |
 
 ## Response
 
@@ -72,10 +69,10 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-  "users": [ "88139f01-1f8d-4c06-ad74-a2544cee9aee" ],
-  "groups": [ "9972fb3f-7a40-49f5-85f6-129d9dfbd47a", "ea178055-4713-4d9a-a06c-ff17466b7e77"]
+  "migrate": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-continuousaccessevaluationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,17 +81,23 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-continuousaccessevaluationpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-continuousaccessevaluationpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-continuousaccessevaluationpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-continuousaccessevaluationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-continuousaccessevaluationpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-continuousaccessevaluationpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Determines the condition under which a new [printTask](printtask.md) will be triggered based on the associated [printTaskDefinition](printtaskdefinition.md).
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
@@ -26,8 +24,9 @@ For details about how to use this resource to add pull printing support to Unive
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The printTaskTrigger's identifier. Read-only.|
 |event|printEvent|The Universal Print event that will cause a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
+|id|String|The printTaskTrigger's identifier. Read-only.|
+
 
 ### printEvent values
 

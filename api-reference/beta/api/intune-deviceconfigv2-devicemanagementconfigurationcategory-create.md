@@ -1,8 +1,8 @@
 ---
 title: "Create deviceManagementConfigurationCategory"
 description: "Create a new deviceManagementConfigurationCategory object."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/complianceCategories
 POST /deviceManagement/configurationCategories
 ```
 
@@ -50,12 +51,13 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|Identifier for item|
 |description|String|Description of the item|
+|categoryDescription|String|Description of the category header|
 |helpText|String|Help text of the item|
 |name|String|Name of the item|
 |displayName|String|Display name of the item|
-|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`.|
+|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `edgeMAM`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`, `compliance`.|
 |parentCategoryId|String|Parent id of the category.|
 |rootCategoryId|String|Root id of the category.|
 |childCategoryIds|String collection|List of child ids of the category.|
@@ -70,17 +72,18 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationCategories
+POST https://graph.microsoft.com/beta/deviceManagement/complianceCategories
 Content-type: application/json
-Content-length: 465
+Content-length: 523
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",
@@ -96,16 +99,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 572
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",
@@ -115,6 +119,3 @@ Content-Length: 514
   ]
 }
 ```
-
-
-

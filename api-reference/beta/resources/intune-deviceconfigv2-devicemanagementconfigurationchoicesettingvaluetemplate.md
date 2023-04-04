@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementConfigurationChoiceSettingValueTemplate resource type"
 description: "Choice Setting Value Template"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -111,6 +111,3 @@ Here is a JSON representation of the resource.
   "settingValueTemplateId": "String"
 }
 ```
-
-
-

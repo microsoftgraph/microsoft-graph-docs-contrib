@@ -1,8 +1,8 @@
 ---
 title: "iPv6Range resource type"
 description: "IPv6 Range definition."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -43,6 +43,3 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
-
-
-

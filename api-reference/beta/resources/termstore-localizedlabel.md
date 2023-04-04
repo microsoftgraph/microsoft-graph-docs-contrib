@@ -3,7 +3,7 @@ title: "localizedLabel resource type"
 description: "Represents the label for a term in the term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

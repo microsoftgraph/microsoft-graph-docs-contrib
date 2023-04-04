@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let userFlowApiConnectorConfiguration = await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration')
 	.version('beta')
-	.expand('postAttributeCollection')
+	.expand('postFederationSignup,postAttributeCollection')
 	.get();
 
 ```

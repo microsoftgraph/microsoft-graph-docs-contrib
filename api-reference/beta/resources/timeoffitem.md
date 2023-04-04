@@ -1,7 +1,7 @@
 ---
 title: "timeOffItem resource type"
 description: "Represents a version of the timeOff."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

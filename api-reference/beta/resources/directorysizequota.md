@@ -4,7 +4,7 @@ description: "Represents a company's used and total directory quota."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "Jumaodhiss"
+author: "adimitui"
 ---
 
 # directorySizeQuota resource type
@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "used": 123,
-  "total": 1234
+  "used": "Int32",
+  "total": "Int32"
 }
 ```

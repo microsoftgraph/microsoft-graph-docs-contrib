@@ -1,6 +1,6 @@
 ---
 title: "Attach large files to Outlook messages or events"
-description: "Depending on the size of the file, you can choose one of two ways to attach a file to a message or event."
+description: "Create and use an upload session to add large file attachments over 3 MB to Outlook items. Each step shows the corresponding code for a message and an event."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -8,17 +8,16 @@ ms.prod: "outlook"
 
 # Attach large files to Outlook messages or events
 
-Using the Microsoft Graph API, you can attach files up to 150 MB to an Outlook [message](/graph/api/resources/message) or [event](/graph/api/resources/event) item. 
-Depending on the file size, choose one of two ways to attach the file:
+Using the Microsoft Graph API, you can attach files up to 150 MB to an Outlook [message](/graph/api/resources/message) or [event](/graph/api/resources/event) item. Depending on the file size, choose one of two ways to attach the file:
 - If the file size is under 3 MB, do a single POST on the **attachments** navigation property of the Outlook item; see how to do this [for a message](/graph/api/message-post-attachments) or [for an event](/graph/api/event-post-attachments). The successful `POST` response includes the ID of the file attachment.
-- If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
+- If the file size is between 3 MB and 150 MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
 
 To attach multiple files to a message, choose the approach for each file based on its file size and attach the files individually.
 
-This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata. 
+This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3 MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata. 
 
 > [!IMPORTANT] 
-> Be aware of a [known issue](known-issues.md#attaching-large-files-to-messages) if you're attaching large files to a message or event in a shared or delegated mailbox.
+> Be aware of a [known issue](known-issues.md#attaching-large-files-to-messages-with-delegated-permissions-can-fail) if you're attaching large files to a message or event in a shared or delegated mailbox.
 
 ## Step 1: Create an upload session
 
@@ -34,7 +33,7 @@ Make sure to request `Mail.ReadWrite` permission to create the **uploadSession**
 The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
 
-### Example: create an upload session for a message
+### Example: Create an upload session for a message
 
 #### Request
 
@@ -56,6 +55,7 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -64,16 +64,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/walkthrough-create-uploadsession-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/walkthrough-create-uploadsession-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-message-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/walkthrough-create-uploadsession-message-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example response shows the **uploadSession** resource returned for the message.
@@ -98,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-### Example: create an upload session for an event
+### Example: Create an upload session for an event
 #### Request 
 
 
@@ -120,6 +127,7 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -128,17 +136,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-event-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/walkthrough-create-uploadsession-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/walkthrough-create-uploadsession-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/walkthrough-create-uploadsession-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/walkthrough-create-uploadsession-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 The following example response shows the **uploadSession** resource returned for the event.
@@ -188,16 +202,16 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 ### Response
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
-- The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1.
-- The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- The **expirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1.
+- The **nextExpectedRanges** specifies the next byte location to start uploading from, for example, `"nextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
-### Example: first upload to the message
+### Example: First upload to the message
 #### Request
 <!-- {
   "blockType": "ignored"
@@ -215,7 +229,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### Response
 
-The following example response shows in the **NextExpectedRanges** property the start of the next byte range that the server expects.
+The following example response shows in the **nextExpectedRanges** property the start of the next byte range that the server expects.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -226,11 +240,11 @@ Content-type: application/json
 {
   "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA%3D')/AttachmentSessions/$entity",
   "ExpirationDateTime":"2019-09-25T01:09:30.7671707Z",
-  "NextExpectedRanges":["2097152"]
+  "nextExpectedRanges":["2097152"]
 }
 ```
 
-### Example: first upload to the event
+### Example: First upload to the event
 #### Request
 <!-- {
   "blockType": "ignored"
@@ -248,7 +262,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### Response
 
-The following example response shows in the **NextExpectedRanges** property the start of the next byte range that the server expects.
+The following example response shows in the **nextExpectedRanges** property the start of the next byte range that the server expects.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -259,20 +273,20 @@ Content-type: application/json
 {
     "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
     "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
-    "NextExpectedRanges":["2097152"]
+    "nextExpectedRanges":["2097152"]
 }
 ```
 
 
 ## Step 3: Continue uploading byte ranges until the entire file has been uploaded
 
-Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **NextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
+Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **nextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
 Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment in the `https://outlook.office.com` domain. You can get the attachment ID from the URL and save it for later use. Depending on your scenario, you can use that ID to [get the metadata of the attachment](/graph/api/attachment-get), or [remove the attachment from the Outlook item](/graph/api/attachment-delete) using the Microsoft Graph endpoint.
 
 The following examples show uploading the last byte range of the file to the message and to the event in the preceding steps.
 
-### Example: final upload to the message
+### Example: Final upload to the message
 #### Request
 <!-- {
   "blockType": "ignored"
@@ -301,7 +315,7 @@ Location: https://outlook.office.com/api/v2.0/Users('a8e8e219-4931-95c1-b73d-626
 Content-Length: 0
 ```
 
-### Example: final upload to the event
+### Example: Final upload to the event
 #### Request
 <!-- {
   "blockType": "ignored"
@@ -422,7 +436,7 @@ At any point of time before the upload session expires, if you have to cancel th
 ### Permissions
 Because the initial opaque URL is pre-authenticated and contains the appropriate authorization token for subsequent queries for that upload session, do not specify an Authorization request header for this operation.
 
-### Example: cancel the upload session for the message
+### Example: Cancel the upload session for the message
 
 #### Request
 <!-- {

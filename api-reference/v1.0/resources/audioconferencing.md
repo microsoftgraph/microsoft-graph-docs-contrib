@@ -1,7 +1,7 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -15,12 +15,19 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## Properties
 
-| Property            | Type    | Description                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | A URL to the externally-accessible web page that contains dial-in information. |
-| conferenceId        | String  | The conference id of the online meeting.      |
-| tollFreeNumber      | String  | The toll-free number that connects to the Audio Conference Provider.              |
-| tollNumber          | String  | The toll number that connects to the Audio Conference Provider.                   |
+| Property                    | Type              | Description                                                                    |
+| :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
+| conferenceId                | String            | The conference id of the online meeting.                                       |
+| dialinUrl                   | String            | A URL to the externally-accessible web page that contains dial-in information. |
+| tollFreeNumbers             | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
+| tollNumbers                 | String collection | List of toll numbers that are displayed in the meeting invite.                 |
+| tollFreeNumber (deprecated) | String            | The toll-free number that connects to the Audio Conference Provider.           |
+| tollNumber (deprecated)     | String            | The toll number that connects to the Audio Conference Provider.                |
+
+> [!CAUTION]
+>
+>- The **tollFreeNumber** and **tollNumber** properties are deprecated. Use the **tollFreeNumbers** and **tollNumbers** properties instead.
+>- For backward compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
 
 ## JSON representation
 
@@ -35,10 +42,10 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumber": "String",
-  "tollNumber": "String"
+  "dialinUrl": "String",
+  "tollFreeNumbers": [ "String" ],
+  "tollNumbers": [ "String" ]
 }
 ```
 

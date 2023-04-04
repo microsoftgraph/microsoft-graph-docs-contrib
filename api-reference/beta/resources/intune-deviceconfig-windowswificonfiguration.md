@@ -1,8 +1,8 @@
 ---
 title: "windowsWifiConfiguration resource type"
 description: "Device Configuration."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -125,6 +125,3 @@ Here is a JSON representation of the resource.
   "forceFIPSCompliance": true
 }
 ```
-
-
-

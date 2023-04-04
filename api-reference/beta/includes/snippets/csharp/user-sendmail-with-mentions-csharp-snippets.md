@@ -4,38 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Microsoft.Graph.Beta.Me.SendMail.SendMailPostRequestBody
 {
-	Subject = "Project kickoff",
-	ToRecipients = new List<Recipient>()
+	Message = new Message
 	{
-		new Recipient
+		Subject = "Project kickoff",
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Name = "Samantha Booth",
-				Address = "samanthab@contoso.onmicrosoft.com"
-			}
-		}
+				EmailAddress = new EmailAddress
+				{
+					Name = "Samantha Booth",
+					Address = "samanthab@contoso.onmicrosoft.com",
+				},
+			},
+		},
+		Mentions = new List<Mention>
+		{
+			new Mention
+			{
+				Mentioned = new EmailAddress
+				{
+					Name = "Dana Swope",
+					Address = "danas@contoso.onmicrosoft.com",
+				},
+			},
+		},
 	},
-	Mentions = new MessageMentionsCollectionPage()
-	{
-		new Mention
-		{
-			Mentioned = new EmailAddress
-			{
-				Name = "Dana Swope",
-				Address = "danas@contoso.onmicrosoft.com"
-			}
-		}
-	}
 };
+await graphClient.Me.SendMail.PostAsync(requestBody);
 
-await graphClient.Me
-	.SendMail(message,null)
-	.Request()
-	.PostAsync();
 
 ```

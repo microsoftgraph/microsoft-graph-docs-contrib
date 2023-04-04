@@ -1,8 +1,8 @@
 ---
 title: "List deviceManagementConfigurationCategories"
 description: "List properties and relationships of the deviceManagementConfigurationCategory objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/complianceCategories
 GET /deviceManagement/configurationCategories
 ```
 
@@ -52,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
+GET https://graph.microsoft.com/beta/deviceManagement/complianceCategories
 ```
 
 ### Response
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 603
+Content-Length: 665
 
 {
   "value": [
@@ -68,10 +69,11 @@ Content-Length: 603
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
       "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
       "description": "Description value",
+      "categoryDescription": "Category Description value",
       "helpText": "Help Text value",
       "name": "Name value",
       "displayName": "Display Name value",
-      "platforms": "macOS",
+      "platforms": "android",
       "technologies": "mdm",
       "settingUsage": "configuration",
       "parentCategoryId": "Parent Category Id value",
@@ -83,6 +85,3 @@ Content-Length: 603
   ]
 }
 ```
-
-
-

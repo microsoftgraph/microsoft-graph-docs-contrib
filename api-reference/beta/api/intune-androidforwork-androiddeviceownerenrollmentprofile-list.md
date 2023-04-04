@@ -1,8 +1,8 @@
 ---
 title: "List androidDeviceOwnerEnrollmentProfiles"
 description: "List properties and relationships of the androidDeviceOwnerEnrollmentProfile objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1051
+Content-Length: 1302
 
 {
   "value": [
@@ -78,6 +78,7 @@ Content-Length: 1051
       "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
       "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
       "enrolledDeviceCount": 3,
+      "enrollmentTokenUsageCount": 9,
       "qrCodeContent": "Qr Code Content value",
       "qrCodeImage": {
         "@odata.type": "microsoft.graph.mimeContent",
@@ -86,11 +87,14 @@ Content-Length: 1051
       },
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "configureWifi": true,
+      "wifiSsid": "Wifi Ssid value",
+      "wifiPassword": "Wifi Password value",
+      "wifiSecurityType": "wpa",
+      "wifiHidden": true,
+      "isTeamsDeviceProfile": true
     }
   ]
 }
 ```
-
-
-

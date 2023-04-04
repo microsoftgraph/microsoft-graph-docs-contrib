@@ -1,8 +1,8 @@
 ---
 title: "groupPolicyPresentationDropdownList resource type"
 description: "Represents an ADMX dropdownList element and an ADMX enum element."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Represents an ADMX dropdownList element and an ADMX enum element.
 
 
-Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Inherits from [groupPolicyUploadedPresentation](../resources/intune-grouppolicy-grouppolicyuploadedpresentation.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -73,6 +73,3 @@ Here is a JSON representation of the resource.
   "required": true
 }
 ```
-
-
-

@@ -14,57 +14,50 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 ## [C#](#tab/csharp)
 
 ```csharp
-using (var fileStream = System.IO.File.OpenRead(filePath))
+using var fileStream = System.IO.File.OpenRead(filePath);
+
+// Use properties to specify the conflict behavior
+// in this case, replace
+var uploadSessionRequestBody = new CreateUploadSessionPostRequestBody
 {
-    // Use properties to specify the conflict behavior
-    // in this case, replace
-    var uploadProps = new DriveItemUploadableProperties
+    Item = new DriveItemUploadableProperties
     {
-        ODataType = null,
         AdditionalData = new Dictionary<string, object>
         {
             { "@microsoft.graph.conflictBehavior", "replace" }
         }
-    };
-
-    // Create the upload session
-    // itemPath does not need to be a path to an existing item
-    var uploadSession = await graphClient.Me.Drive.Root
-        .ItemWithPath(itemPath)
-        .CreateUploadSession(uploadProps)
-        .Request()
-        .PostAsync();
-
-    // Max slice size must be a multiple of 320 KiB
-    int maxSliceSize = 320 * 1024;
-    var fileUploadTask =
-        new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
-
-    // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(prog => {
-        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
-    });
-
-    try
-    {
-        // Upload the file
-        var uploadResult = await fileUploadTask.UploadAsync(progress);
-
-        if (uploadResult.UploadSucceeded)
-        {
-            // The ItemResponse object in the result represents the
-            // created item.
-            Console.WriteLine($"Upload complete, item ID: {uploadResult.ItemResponse.Id}");
-        }
-        else
-        {
-            Console.WriteLine("Upload failed");
-        }
     }
-    catch (ServiceException ex)
-    {
-        Console.WriteLine($"Error uploading: {ex.ToString()}");
-    }
+};
+
+// Create the upload session
+// itemPath does not need to be a path to an existing item
+var uploadSession = await graphClient.Drive.Root
+    .ItemWithPath(itemPath)
+    .CreateUploadSession
+    .PostAsync(uploadSessionRequestBody);
+
+// Max slice size must be a multiple of 320 KiB
+int maxSliceSize = 320 * 1024;
+var fileUploadTask = new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize, graphClient.RequestAdapter);
+
+var totalLength = fileStream.Length;
+// Create a callback that is invoked after each slice is uploaded
+IProgress<long> progress = new Progress<long>(prog => {
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
+});
+
+try
+{
+    // Upload the file
+    var uploadResult = await fileUploadTask.UploadAsync(progress);
+
+    Console.WriteLine(uploadResult.UploadSucceeded ?
+        $"Upload complete, item ID: {uploadResult.ItemResponse.Id}" :
+        "Upload failed");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Error uploading: {ex.ToString()}");
 }
 ```
 
@@ -201,7 +194,54 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 ### [C#](#tab/csharp)
 
 ```csharp
-// TODO
+// Create message
+var draftMessage = new Message
+{
+    Subject = "Large attachment"
+};
+
+var savedDraft = await graphClient.Me
+    .Messages
+    .Request()
+    .AddAsync(draftMessage);
+
+using var fileStream = System.IO.File.OpenRead(filePath);
+var largeAttachment = new AttachmentItem
+{
+    AttachmentType = AttachmentType.File,
+    Name = "largefile.gif",
+    Size = fileStream.Length
+};
+
+var uploadSession = await graphClient.Me
+    .Messages[savedDraft.Id]
+    .Attachments
+    .CreateUploadSession(largeAttachment)
+    .Request()
+    .PostAsync();
+
+// Max slice size must be a multiple of 320 KiB
+int maxSliceSize = 320 * 1024;
+var fileUploadTask =
+    new LargeFileUploadTask<FileAttachment>(uploadSession, fileStream, maxSliceSize);
+
+var totalLength = fileStream.Length;
+// Create a callback that is invoked after each slice is uploaded
+IProgress<long> progress = new Progress<long>(prog => {
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
+});
+
+try
+{
+    // Upload the file
+    var uploadResult = await fileUploadTask.UploadAsync(progress);
+
+    Console.WriteLine(uploadResult.UploadSucceeded ? "Upload complete" : "Upload failed");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Error uploading: {ex.ToString()}");
+}
 ```
 
 ### [TypeScript](#tab/typescript)
@@ -259,7 +299,59 @@ try {
 ### [Java](#tab/java)
 
 ```java
-// TODO
+final String[] scopes = { "Mail.ReadWrite" };
+ensureGraphClient(scopes);
+
+final String localFilePath = "largefile.gif";
+
+final Message draftMessage = new Message();
+draftMessage.subject = "Large attachment";
+
+final Message savedDraft = graphClient
+    .me()
+    .messages()
+    .buildRequest()
+    .post(draftMessage);
+
+File file = new File(localFilePath);
+// Get an input stream for the file
+InputStream fileStream = new FileInputStream(file);
+
+final AttachmentItem largeAttachment = new AttachmentItem();
+largeAttachment.attachmentType = AttachmentType.FILE;
+largeAttachment.name = "largefile.gif";
+largeAttachment.size = file.length();
+
+final AttachmentCreateUploadSessionParameterSet upParams =
+    AttachmentCreateUploadSessionParameterSet.newBuilder()
+    .withAttachmentItem(largeAttachment)
+    .build();
+
+final UploadSession uploadSession = graphClient
+    .me()
+    .messages(savedDraft.id)
+    .attachments()
+    .createUploadSession(upParams)
+    .buildRequest()
+    .post();
+
+// Create a callback used by the upload provider
+IProgressCallback callback = new IProgressCallback() {
+    @Override
+    // Called after each slice of the file is uploaded
+    public void progress(final long current, final long max) {
+        System.out.println(
+            String.format("Uploaded %d bytes of %d total bytes", current, max)
+        );
+    }
+};
+
+LargeFileUploadTask<FileAttachment> uploadTask =
+    new LargeFileUploadTask<FileAttachment>
+        (uploadSession, graphClient, fileStream, file.length(), FileAttachment.class);
+
+// Do the upload
+uploadTask.upload(0, null, callback);
 ```
 
 ---

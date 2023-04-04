@@ -19,6 +19,8 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems). 
+
 **driveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
@@ -54,7 +56,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
-| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
+| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing invite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
 | [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
 | [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
@@ -66,13 +68,14 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Read-only. Only on OneDrive Personal.
+| bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
 | content              | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
 | deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
+| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
 | eTag                 | String             | eTag for the entire item (metadata + content). Read-only.
 | file                 | [file][]           | File metadata, if the item is a file. Read-only.
 | fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
@@ -147,7 +150,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
@@ -156,6 +159,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -192,10 +196,10 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
-  "id": "string (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
@@ -215,6 +219,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[bundle]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemVersion]: driveitemversion.md

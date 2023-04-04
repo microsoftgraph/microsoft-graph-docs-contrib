@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementConfigurationTemplateFamily enum type"
 description: "Describes the TemplateFamily for the Template entity"
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -28,6 +28,9 @@ Describes the TemplateFamily for the Template entity
 |endpointSecurityAttackSurfaceReduction|14|Template Family for EndpointSecurityAttackSurfaceReduction that help reduce your attack surfaces, by minimizing the places where your organization is vulnerable to cyberthreats and attacks|
 |endpointSecurityAccountProtection|15|Template Family for EndpointSecurityAccountProtection that facilitates protecting the identity and accounts of users|
 |endpointSecurityApplicationControl|16|Template Family for ApplicationControl that helps mitigate security threats by restricting the applications that users can run and the code that runs in the System Core (kernel)|
-
-
-
+|endpointSecurityEndpointPrivilegeManagement|17|Template Family for EPM Elevation Rules|
+|enrollmentConfiguration|18|Template Family for EnrollmentConfiguration|
+|appQuietTime|19|Template Family for QuietTimeIndicates Template Family for all the Apps QuietTime policies and templates|
+|baseline|20|Template Family for Baseline|
+|unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
+|deviceConfigurationScripts|22|Template Family for device configuration scripts|

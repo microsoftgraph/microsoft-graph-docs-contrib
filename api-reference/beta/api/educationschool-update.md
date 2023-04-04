@@ -44,17 +44,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property            | Type                                               | Description                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Display name of the school         |
-| description         | String                                             | Description of the school          |
-| principalEmail      | String                                             | Email address of the principal     |
-| principalName       | String                                             | Name of the principal              |
-| externalPrincipalId | String                                             | Id of principal in syncing system. |
+| displayName         | String                                             | Display name of the school.        |
+| description         | String                                             | Description of the school.         |
+| principalEmail      | String                                             | Email address of the principal.    |
+| principalName       | String                                             | Name of the principal.             |
+| externalPrincipalId | String                                             | ID of principal in syncing system. |
 | highestGrade        | String                                             | Highest grade taught.              |
 | lowestGrade         | String                                             | Lowest grade taught.               |
 | schoolNumber        | String                                             | School Number.                     |
-| externalId          | String                                             | Id of school in syncing system.    |
+| externalId          | String                                             | ID of school in syncing system.    |
 | phone               | String                                             | Phone number of school.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the School.             |
+| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the school.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Entity who created the school.     |
 
 ## Response
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -70,35 +70,46 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_educationschool"
+  "name": "update_educationschool",
+  "sampleKeys": ["10002"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationschool-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-educationschool-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
@@ -112,7 +123,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

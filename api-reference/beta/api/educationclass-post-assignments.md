@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new assignment. 
+Create a new assignment.
 
 Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments
+POST /education/classes/{class-id}/assignments
 ```
 ## Request headers
 | Header       | Value |
@@ -45,10 +45,8 @@ In the request body, supply a JSON representation of an [educationAssignment](..
 If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,28 +54,28 @@ The following is an example of the request.
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/8b8cec7f-d0d8-4974-982a-e29396ddbe7f/assignments
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
-Content-length: 279
 
-{ 
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "displayName": "Midterm 1",
-    "instructions":  {
-      "contentType": "text",
-      "content": "Read chapters 1 through 3"
+{
+    "dueDateTime": "2022-09-16T00:00:00Z",
+    "displayName": "Reading test 09.14 Beta",
+    "instructions": {
+        "contentType": "text",
+        "content": "Read chapter 4"
     },
-      "grading": {
+    "grading": {
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
-      },
-      "assignTo": {
+        "maxPoints": 50
+    },
+    "assignTo": {
         "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-      },
-      "status":"draft",
-      "allowStudentsToAddResourcesToSubmission": true
+    },
+    "status": "draft",
+    "allowStudentsToAddResourcesToSubmission": true
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationassignment-from-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,19 +84,27 @@ Content-length: 279
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationassignment-from-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationassignment-from-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationassignment-from-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationassignment-from-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationassignment-from-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-educationassignment-from-educationclass-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -111,55 +117,60 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 279
 
 {
-  "addedStudentAction": "none",
-  "allowLateSubmissions": true,
-  "allowStudentsToAddResourcesToSubmission": true,
-  "assignDateTime": "2014-02-01T00:00:00Z",
-  "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-  "assignedDateTime": "2014-02-01T00:00:00Z",
-  "classId": "11018",
-  "closeDateTime": "2014-02-11T00:00:00Z",
-  "createdBy": {
-      "application": null,
-      "device": null,
-      "user": {
-          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-          "displayName": null
-      }
-  },
-  "createdDateTime": "2014-02-01T00:00:00Z",
-  "displayName": "published",
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "grading": {
-    "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-    "maxPoints": 100
-  },
-  "instructions": {
-    "contentType": "text",
-    "content": "Read chapters 1 through 3"
-  },
-  "lastModifiedBy": {
-      "application": null,
-      "device": null,
-      "user": {
-          "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-          "displayName": null
-      }
-  },
-  "lastModifiedDateTime": "2014-02-01T00:00:00Z",
-  "notificationChannelUrl": null,
-  "resourcesFolderUrl": null,
-  "allowStudentsToAddResourcesToSubmission": false,
-  "status": "draft",
-  "notificationChannelUrl": null,
-  "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7b%22subEntityId%22%3a%22%7b%5c%22version%5c%22%3a%5c%221.0%5c%22%2c%5c%22config%5c%22%3a%7b%5c%22classes%5c%22%3a%5b%7b%5c%22id%5c%22%3a%5c%228b8cec7f-d0d8-4974-982a-e29396ddbe7f%5c%22%2c%5c%22displayName%5c%22%3anull%2c%5c%22assignmentIds%5c%22%3a%5b%5c%22107dac08-35a5-4546-b4b5-1736fea56847%5c%22%5d%7d%5d%7d%2c%5c%22action%5c%22%3a%5c%22navigate%5c%22%2c%5c%22view%5c%22%3a%5c%22assignment-viewer%5c%22%7d%22%2c%22channelId%22%3anull%7d",  
-  "addToCalendarAction": "none",
-  "addedStudentAction": "none"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments/$entity",
+    "classId": "f4a941ff-9da6-4707-ba5b-0eae93cad0b4",
+    "displayName": "Reading test 09.14 Beta",
+    "closeDateTime": null,
+    "dueDateTime": "2022-09-16T00:00:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": null,
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2022-09-14T21:24:11.8578804Z",
+    "lastModifiedDateTime": "2022-09-14T21:24:11.8578831Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "draft",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22f4a941ff-9da6-4707-ba5b-0eae93cad0b4%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22b58c972d-585a-4ed8-8e0e-9c66e5506d26%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "id": "b58c972d-585a-4ed8-8e0e-9c66e5506d26",
+    "instructions": {
+        "content": "Read chapter 4",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 50
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## See also
+
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

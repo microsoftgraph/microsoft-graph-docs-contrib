@@ -1,8 +1,8 @@
 ---
 title: "List androidDeviceOwnerDerivedCredentialAuthenticationConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerDerivedCredentialAuthenticationConfiguration objects."
-author: "dougeby"
-ms.localizationpriority: medium
+author: "jaiprakashmb"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1398
+Content-Length: 1651
 
 {
   "value": [
@@ -97,11 +97,15 @@ Content-Length: 1398
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7
+      "version": 7,
+      "certificateAccessType": "specificApps",
+      "silentCertificateAccessDetails": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSilentCertificateAccess",
+          "packageId": "Package Id value"
+        }
+      ]
     }
   ]
 }
 ```
-
-
-

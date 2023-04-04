@@ -1,8 +1,8 @@
 ---
 title: "windowsOfficeClientConfiguration resource type"
 description: "Entity that describes office policy settings for Windows."
-ms.localizationpriority: medium
-author: "dougeby"
+localization_priority: Normal
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -86,6 +86,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-

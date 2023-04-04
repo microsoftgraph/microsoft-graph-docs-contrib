@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -29,14 +28,30 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET /sites/{site-id}/lists/{list-id}/items
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {code}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response 
+
+If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body. 
 
 ## Example
 
-#### Request
+### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -45,6 +60,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -53,18 +69,27 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-items-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-list-items-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-list-items-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+### Response
 
-#### Response
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
