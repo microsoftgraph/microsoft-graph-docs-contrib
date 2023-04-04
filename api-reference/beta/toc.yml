@@ -11601,9 +11601,9 @@ items:
           href: api/driveitem-extractsensitivitylabels.md
         - name: Assign sensitivity label
           href: api/driveitem-assignsensitivitylabel.md
-         - name: Get retention label
+        - name: Get retention label
           href: api/driveitem-getretentionlabel.md 
-         - name: Set retention label
+        - name: Set retention label
           href: api/driveitem-setretentionlabel.md    
         - name: Remove retention label
           href: api/driveitem-removeretentionlabel.md   
