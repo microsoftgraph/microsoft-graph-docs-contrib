@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/identity/apiConnectors
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

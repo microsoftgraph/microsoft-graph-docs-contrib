@@ -4,46 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conditionalAccessPolicy = new ConditionalAccessPolicy
+var requestBody = new ConditionalAccessPolicy
 {
-	DisplayName = "Policy for risky sign-in block access",
+	DisplayName = "Policy for risky sign-in",
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{
-		SignInRiskLevels = new List<RiskLevel>()
+		SignInRiskLevels = new List<RiskLevel?>
 		{
 			RiskLevel.High,
-			RiskLevel.Medium
+			RiskLevel.Medium,
 		},
 		Applications = new ConditionalAccessApplications
 		{
-			IncludeApplications = new List<String>()
+			IncludeApplications = new List<string>
 			{
-				"All"
-			}
+				"All",
+			},
 		},
 		Users = new ConditionalAccessUsers
 		{
-			IncludeUsers = new List<String>()
+			IncludeUsers = new List<string>
 			{
-				"4628e7df-dff3-407c-a08f-75f08c0806dc"
-			}
-		}
+				"4628e7df-dff3-407c-a08f-75f08c0806dc",
+			},
+		},
 	},
 	GrantControls = new ConditionalAccessGrantControls
 	{
 		Operator = "OR",
-		BuiltInControls = new List<ConditionalAccessGrantControl>()
+		BuiltInControls = new List<ConditionalAccessGrantControl?>
 		{
-			ConditionalAccessGrantControl.Block
-		}
-	}
+			ConditionalAccessGrantControl.Mfa,
+		},
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.Policies.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.Policies
-	.Request()
-	.AddAsync(conditionalAccessPolicy);
 
 ```

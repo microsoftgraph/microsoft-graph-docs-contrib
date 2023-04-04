@@ -115,7 +115,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8
 
 ---
 
-
 #### Response
 The following example shows the response.`chatId` identifies the [chat](../resources/chat.md) that contains this message.
 
@@ -152,9 +151,11 @@ Content-type: application/json
         "device": null,
         "conversation": null,
         "user": {
+            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
-            "userIdentityType": "aadUser"
+            "userIdentityType": "aadUser",
+            "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
         }
     },
     "body": {
@@ -208,7 +209,6 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 ---
 
-
 #### Response
 The following example shows the response.`channelIdentity` identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.
 
@@ -244,9 +244,11 @@ Content-type: application/json
         "device": null,
         "conversation": null,
         "user": {
+            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
-            "userIdentityType": "aadUser"
+            "userIdentityType": "aadUser",
+            "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
         }
     },
     "body": {
@@ -304,7 +306,6 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 ---
 
-
 #### Response
 The following example shows the response.`replyToId` contains the `id` of the root message.
 
@@ -341,9 +342,11 @@ Content-type: application/json
         "device": null,
         "conversation": null,
         "user": {
+            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
-            "userIdentityType": "aadUser"
+            "userIdentityType": "aadUser",
+            "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
         }
     },
     "body": {

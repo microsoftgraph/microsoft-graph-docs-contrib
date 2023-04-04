@@ -94,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/userFlowAttributes/extension_d0
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

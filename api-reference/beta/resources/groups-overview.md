@@ -92,7 +92,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
 
-**Mail-enabled security groups** are used in the same way as security groups, but with the added feature of a shared mailbox. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
+**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups). 
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
@@ -196,7 +196,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The request returns a `201 Created` response code and the newly created group object in the response body.
 

@@ -89,7 +89,6 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

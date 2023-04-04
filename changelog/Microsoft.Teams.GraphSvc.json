@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamsAppResourceSpecificPermissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppResourceSpecificPermissionType** enumeration type.",
+          "Target": "teamsAppResourceSpecificPermissionType"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppAuthorization",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppAuthorization](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppAuthorization?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppAuthorization"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppPermissionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppPermissionSet](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppPermissionSet?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppPermissionSet"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppResourceSpecificPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppResourceSpecificPermission](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppResourceSpecificPermission?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppResourceSpecificPermission"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorization",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorization** property to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+          "ApiChange": "Property",
+          "ChangedApiName": "consentedPermissionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the **consentedPermissionSet** property to the [teamsAppInstallation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppInstallation?view=graph-rest-beta) resource.",
+          "Target": "teamsAppInstallation"
+        }
+      ],
+      "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-04T00:51:19.3981715Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "adc688c0-193c-44da-bf01-bebf53fbf02d",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMembersNotificationRecipient",
@@ -31,6 +89,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-29T19:48:01.454Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "aec797bc-1676-49bf-a12a-1736503a424b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "templateDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateDefinition** relationship to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "aec797bc-1676-49bf-a12a-1736503a424b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-03T23:56:58.0415632Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
@@ -845,6 +921,50 @@
       "CreatedDateTime": "2023-02-10T22:01:09.3277508Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1DE5FDD7-A053-4A64-B928-FDEC71191278",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureCommunicationServicesUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureCommunicationServicesUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserConversationMember?view=graph-rest-1.0) resource.",
+          "Target": "azureCommunicationServicesUserConversationMember"
+        }
+      ],
+      "Id": "0d00d1b1-db8b-490d-b3c2-73ca296139df",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-28T22:39:35.4042034Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedTeam",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletedTeam](https://learn.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-1.0) resource.",
+          "Target": "deletedTeam"
+        },
+        {
+          "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedTeams** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "02694965-8e9f-459a-ae7a-08d006fdb510",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-14T05:32:34.8477703Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
