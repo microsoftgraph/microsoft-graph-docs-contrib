@@ -303,7 +303,7 @@ The following is a JSON representation of the resource.
   "securityEnabled": true,
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [
-    { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
+    { "@odata.type": "microsoft.graph.serviceProvisioningError" }
   ],
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
