@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lock or unlock a retention label on a [driveItem][item-resource] that classifies content as records.
+Lock or unlock a retention label on a [driveItem](../resources/driveitem.md) that classifies content as records.
 
 For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
@@ -22,10 +22,10 @@ For more information on locking and unlocking retention labels, see [Use record 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
-| ---------------------------------------|-------------------------------- | --------------------------------------
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
+| Type                                   | Permissions (from least to most privileged)                              | 
+| ---------------------------------------|-------------------------------- 
+| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 |
 | Delegated (personal Microsoft account) | Not supported.                                                           |                                                                       
 
 ## HTTP request
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-PATCH driveitem/retentionLabel
+PATCH /driveitem/retentionLabel
 
 PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 Content-Type: application/json

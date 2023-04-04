@@ -38,10 +38,7 @@ Here is a JSON representation of a **microsoft.graph.itemRetentionLabel** resour
   "name": "string",
   "isLabelAppliedExplicitly": { "@odata.type": "bool" },
   "labelAppliedDateTime": "string (timestamp)",
-  "labelAppliedBy": { "@odata.type": "identitySet" },
-
-  /* relationships */
-  "retentionSettings": { "@odata.type": "retentionLabelSettings" }
+  "labelAppliedBy": { "@odata.type": "identitySet" }  
 }
 ```
 

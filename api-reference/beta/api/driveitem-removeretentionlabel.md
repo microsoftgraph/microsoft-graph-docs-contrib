@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
 | ---------------------------------------|-------------------------------- | --------------------------------------
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
+| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All, Sites.FullControl.All                                 | Remove Retention Label from the document, Remove Retention Label that classifies as a record from the document |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                  | Remove Retention Label from the document|
 | Delegated (personal Microsoft account) | Not supported.                                                           |                                                                       
 
 ## HTTP request
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-DELETE driveitem/retentionLabel
+DELETE /driveitem/retentionLabel
 DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
