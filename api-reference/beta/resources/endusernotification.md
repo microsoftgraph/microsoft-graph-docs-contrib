@@ -21,33 +21,28 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.|
-|[Create endUserNotification](../api/attacksimulationroot-post-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md)|Create a new [endUserNotification](../resources/endusernotification.md) object.|
 |[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
-|[Update endUserNotification](../api/endusernotification-update.md)|[endUserNotification](../resources/endusernotification.md)|Update the properties of an [endUserNotification](../resources/endusernotification.md) object.|
-|[Delete endUserNotification](../api/attacksimulationroot-delete-endusernotifications.md)|None|Delete an [endUserNotification](../resources/endusernotification.md) object.|
 |[List details](../api/endusernotification-list-details.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Get the endUserNotificationDetail resources from the details navigation property.|
-|[Add endUserNotificationDetail](../api/endusernotification-post-details.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Add details by posting to the details collection.|
-|[Remove details](../api/endusernotification-delete-details.md)|None|Remove an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|notificationType|endUserNotificationType|**TODO: Add Description**.The possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
-|source|simulationContentSource|**TODO: Add Description**.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationContentStatus|**TODO: Add Description**.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
-|supportedLocales|String collection|**TODO: Add Description**|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the training.||
+|createdDateTime|DateTimeOffset|Datetime when the training was created.|
+|description|String|Detail about training.|
+|displayName|String|Training name|
+|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|User who modified the training.|
+|lastModifiedDateTime|DateTimeOffset|Datetime when training was lsat modified.|
+|notificationType|endUserNotificationType|Type of notification.The possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
+|source|simulationContentSource|Source.The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationContentStatus|Status.The possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|supportedLocales|String collection|Supported locales for endUserNotification content.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|details|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|**TODO: Add Description**|
+|details|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Fetches endUserNotification details.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

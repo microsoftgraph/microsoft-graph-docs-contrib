@@ -1,9 +1,10 @@
 ---
 title: "noTrainingNotificationSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "No notification setting for simulation creation."
+description: "Details required for oAuth technique"
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,18 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+No notification setting for simulation creation.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|settingType|endUserNotificationSettingType|**TODO: Add Description** Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
-|simulationNotification|[simulationNotification](../resources/simulationnotification.md)|**TODO: Add Description**|
+|notificationPreference|endUserNotificationPreference|Notification preferance. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|settingType|endUserNotificationSettingType|Setting type. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
+|simulationNotification|[simulationNotification](../resources/simulationnotification.md)|Notification for user part of simulation.|
 
 ## Relationships
 None.

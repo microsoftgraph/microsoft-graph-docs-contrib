@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |availabilityStatus|trainingAvailabilityStatus|Training availability status.The possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the traiing.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|User who created the training.|
 |createdDateTime|DateTimeOffset|Creation date and time.|
 |description|String|Description|
 |displayName|String|Display name|

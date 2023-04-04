@@ -1,9 +1,10 @@
 ---
 title: "endUserNotificationSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "End user notification setting for simulation creation."
+description: "Details required for oAuth technique"
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+End user notification setting for simulation creation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|**TODO: Add Description**.The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
-|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|**TODO: Add Description**|
-|settingType|endUserNotificationSettingType|**TODO: Add Description**.The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
+|notificationPreference|endUserNotificationPreference|Notification preferance.The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement detail.|
+|settingType|endUserNotificationSettingType|End user notification type.The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
 
 ## Relationships
 None.

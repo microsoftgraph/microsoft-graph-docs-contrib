@@ -1,9 +1,9 @@
 ---
 title: "oAuthConsentAppDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Details required for oAuth technique"
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Details required for oAuth technique
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appScope|oAuthAppScope|**TODO: Add Description**.The possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
-|displayLogo|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|appScope|oAuthAppScope|App scope..The possible values are: `unknown`, `readCalendar`, `readContact`, `readMail`, `readAllChat`, `readAllFile`, `readAndWriteMail`, `sendMail`, `unknownFutureValue`.|
+|displayLogo|String|App display logo.|
+|displayName|String|App name.|
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "endUserNotificationDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "End user language specific content details."
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+End user language specific content details.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -30,13 +29,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|emailContent|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isDefaultLangauge|Boolean|**TODO: Add Description**|
-|language|String|**TODO: Add Description**|
-|locale|String|**TODO: Add Description**|
-|sentFrom|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|subject|String|**TODO: Add Description**|
+|emailContent|String|Email html content.|
+|id|String|Identifier. Inherited from [entity](../resources/entity.md).|
+|isDefaultLangauge|Boolean|Tells if this language is default.|
+|language|String|Notification language.|
+|locale|String|Notification locale.|
+|sentFrom|[emailIdentity](../resources/emailidentity.md)|Email details of sender.|
+|subject|String|Mail subject.|
 
 ## Relationships
 None.

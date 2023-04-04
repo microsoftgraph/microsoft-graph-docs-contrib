@@ -1,9 +1,9 @@
 ---
 title: "microsoftManagedTrainingSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Microsoft managed training setting for simulation creation."
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Microsoft tmanaged training setting for simulation creation.
 
 Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completionDateTime|DateTimeOffset|**TODO: Add Description**|
-|settingType|trainingSettingType|**TODO: Add Description** Inherited from [trainingSetting](../resources/trainingsetting.md).The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
-|trainingCompletionDuration|trainingCompletionDuration|**TODO: Add Description**.The possible values are: `weekly`, `biWeekly`, `monthly`, `unknownFutureValue`.|
+|completionDateTime|DateTimeOffset|Training completion date|
+|settingType|trainingSettingType|Setting type. Inherited from [trainingSetting](../resources/trainingsetting.md).The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`.|
+|trainingCompletionDuration|trainingCompletionDuration|Completion duration (to be provided before schedule).The possible values are: `weekly`, `biWeekly`, `monthly`, `unknownFutureValue`.|
 
 ## Relationships
 None.
