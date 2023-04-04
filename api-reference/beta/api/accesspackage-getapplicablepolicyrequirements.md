@@ -156,6 +156,13 @@ POST /identityGovernance/entitlementManagement/accessPackages(`b15419bb-5ffc-ea1
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
