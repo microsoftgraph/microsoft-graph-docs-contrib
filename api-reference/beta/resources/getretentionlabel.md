@@ -1,7 +1,7 @@
 ---
 title: "driveItem: getRetentionLabel"
 description: "Get metadata information for a retention label applied on a driveItem."
-author: "kyrachurney and asaiganesh"
+author: "kyracatwork"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
@@ -14,22 +14,17 @@ Namespace: microsoft.graph
 
 Get metadata information for a retention label applied on a [driveItem][item-resource]. 
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API with application permissions, you must [request access](https://aka.ms/PreviewSPOPremiumAPI). 
-
-For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario?view=o365-worldwide).
+For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
-| ---------------------------------------|-------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                                        |
+| ---------------------------------------|-------------------------------- | --------------------------------------|
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                                        
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                               
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
-| Delegated (personal Microsoft account) | Not supported.                                                           |                                                                       
-
+                                                    
 ## HTTP request
 
 <!-- {
@@ -38,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET driveitem/retentionLabel
-2
 GET /drives/{drive-id}/items/{item-id}/retentionLabel
 GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```

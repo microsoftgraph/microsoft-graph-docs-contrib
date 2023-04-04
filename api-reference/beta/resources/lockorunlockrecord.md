@@ -1,7 +1,7 @@
 ---
 title: "driveItem: lockorunlockrecord"
 description: "Lock or unlock a retention label on a driveItem that classifies content as records."
-author: "kyrachurney and asaiganesh"
+author: "kyracatwork"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
@@ -14,20 +14,16 @@ Namespace: microsoft.graph
 
 Lock or unlock a retention label on a [driveItem][item-resource] that classifies content as records.
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API with application permissions, you must [request access](https://aka.ms/PreviewSPOPremiumAPI). 
+For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
-For more information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario?view=o365-worldwide).
-
-For more information on locking and unlocking retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning?view=o365-worldwide). 
+For more information on locking and unlocking retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning). 
 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Type                                   | Permissions (from least to most privileged)                              | Entities/APIs Covered                                                       |
-| ---------------------------------------|-------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                                        |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | Get Retention Label on the document                                          |                               
+| ---------------------------------------|-------------------------------- | --------------------------------------
 | Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
 | Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                                 | Update, Remove Retention Label on the document and Lock, Unlock the document |
 | Delegated (personal Microsoft account) | Not supported.                                                           |                                                                       

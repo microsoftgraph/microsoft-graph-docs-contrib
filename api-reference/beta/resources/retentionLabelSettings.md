@@ -1,8 +1,9 @@
 ---
-author: asaiganesh and kyrachurney
-ms.author: asaiganesh and kyrachurney
+author: kyracatwork
+ms.author: kyrachurney
 ms.date: 3/20/2023
-title: itemRetentionLabel entity
+title: retentionLabelSettings resource type
+description: Groups all the compliance retention restrictions on the item into a single structure
 ---
 
 # retentionLabelSettings resource type
