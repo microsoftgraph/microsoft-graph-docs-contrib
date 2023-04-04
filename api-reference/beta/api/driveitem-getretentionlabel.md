@@ -20,12 +20,12 @@ For more information about retention labels from an administrator's perspective,
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                              |
-| ---------------------------------------|-------------------------------- 
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |                                           |                                  
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                          |                                  
-| Delegated (personal Microsoft account)                            | Not Supported                                          |                               
-                                                    
+| Type                                    | Permissions (from least to most privileged)                              
+| --------------------------------------- | -------------------------------- 
+| Delegated (work or school account)      | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Application                             | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account)  | Not Supported                                                            |
+                                               
 ## HTTP request
 
 <!-- {
