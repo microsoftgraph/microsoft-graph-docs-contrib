@@ -404,7 +404,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
 ### Outlook service batching
-If a [batch](/graph/concepts/json-batching) request contains multiple requests to Outlook service resources within it, then by default 4 requests will be executed in parallel at any point (irrespective of the target mailbox) to stay within the concurrency limits of the Outlook service. However, the batch execution can be made fully sequential using the [dependsOn](/graph/concepts/json-batching#sequencing-requests-with-the-dependson-property) property.
+If a [batch](json-batching.md) request contains multiple requests to Outlook service resources within it, then by default 4 requests will be executed in parallel at any point (irrespective of the target mailbox) to stay within the concurrency limits of the Outlook service. However, the batch execution can be made fully sequential using the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property.
   
 Thus when targetting the same mailbox, applications that have an ability to run multiple batch threads in parallel can either run - 
 1. No more that 4 threads (batches contain dependsOn), or 
