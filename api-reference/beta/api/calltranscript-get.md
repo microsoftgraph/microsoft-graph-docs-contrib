@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 ## Examples
 
 > [!NOTE]
-> The docx format for transcripts will be deprecated in 60 days. As a result, example 4 and 5 will be removed.
+> The docx format for transcripts will be deprecated from May 31, 2023.
 
 ### Example 1: Get a callTranscript
 #### Request
@@ -257,7 +257,7 @@ WEBVTT
 
 ### Example 4: Get a callTranscript content specifying Accept header
 
->**Note:** As docx format is getting deprecated, the `Accept` header will also be deprecated.
+>**Note:** The docx format and `Accept` header will be deprecated from May 31, 2023.
 
 #### Request
 
@@ -319,7 +319,7 @@ This is a transcript test.
 ```
 ### Example 5: Get a callTranscript content with $format getting precedence over the Accept header
 
->**Note:** As docx format is getting deprecated, the `$format` query parameter will also be deprecated.
+>**Note:** The docx format and `$format` query parameter will be deprecated from May 31, 2023.
 
 #### Request
 
@@ -383,7 +383,11 @@ WEBVTT
 
 ### Example 6: Get a callTranscript metadataContent
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_metadatacontent"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
@@ -391,7 +395,12 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
 ```http
 WEBVTT
 
