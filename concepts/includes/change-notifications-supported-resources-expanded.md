@@ -1,5 +1,5 @@
 ---
-author: jumasure
+author: faithombongi
 ms.topic: include
 ms.date: 12/15/2022
 ms.localizationpriority: medium
@@ -38,6 +38,9 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 
 The following resources support rich notifications (notifications with resource data):
 
+- Outlook [event][]
+- Outlook [message][]
+- Outlook personal [contact][]
 - Teams [chat][]
 - Teams [chatMessage][]
 - Teams [channel][]

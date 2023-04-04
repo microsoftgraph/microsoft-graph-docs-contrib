@@ -1,6 +1,6 @@
 ---
-title: "Advanced query capabilities on Azure AD directory objects"
-description: "Azure AD directory objects support advanced query capabilities to efficiently access data."
+title: "Advanced query capabilities on Azure AD objects"
+description: "Azure AD objects support advanced query capabilities to efficiently access data."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
@@ -10,9 +10,9 @@ ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 11/23/2022
 ---
 
-# Advanced query capabilities on Azure AD directory objects
+# Advanced query capabilities on Azure AD objects
 
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
@@ -39,7 +39,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
     ConsistencyLevel: eventual
     ```
 
-These advanced query capabilities are supported only on Azure AD directory objects and their relationships, including the following frequently used objects:
+These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
 | Object                                                                                            | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -78,7 +78,7 @@ The following table lists query scenarios on directory objects that are supporte
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-## Support for filter on properties of Azure AD directory objects
+## Support for filter on properties of Azure AD (directory) objects
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
@@ -382,4 +382,4 @@ Content-type: application/json
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](known-issues.md#some-limitations-apply-to-query-parameters)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
-+ [Explore advanced query capabilities for Azure AD directory objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
++ [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

@@ -17,26 +17,36 @@ Update a user's email address associated with an [email Authentication Method](.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions acting on self
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### Permissions acting on other users
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 Users without one of the supported Azure AD roles cannot update their own email authentication method.
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Update the email method for your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- {  "blockType": "ignored" } -->
+``` http
+PATCH /me/authentication/emailMethods/{id}
+```
+
+Update the email authentication method for another user's account.
+<!-- {  "blockType": "ignored" } -->
 ``` http
 PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```

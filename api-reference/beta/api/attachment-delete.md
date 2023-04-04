@@ -45,7 +45,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) belonging to the user.
+Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) that belongs to the user.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -57,13 +57,13 @@ DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
+Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) that belongs to the user's default [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 ```
-Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
+Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) that belongs to a user's [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
@@ -85,8 +85,8 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
-example below shows one level of nesting, but a message can be located in a child of a child and so on.
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox. The following
+example shows one level of nesting, but a message can be located in a child of a child and so on.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -102,7 +102,7 @@ DELETE /me/outlook/tasks/{id}/attachments/{id}
 DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
-Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) that belongs to a [conversation](../resources/conversation.md) of a group.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -122,13 +122,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to delete an attachment on an event.
+The following is an example of the request to delete an attachment on an event.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -168,7 +168,7 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -191,5 +191,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

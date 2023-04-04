@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Application.Read.All and User.Read, Application.ReadWrite.All and User.Read |
-|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 [!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
 
