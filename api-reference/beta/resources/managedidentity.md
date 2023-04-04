@@ -1,6 +1,6 @@
 ---
 title: "managedIdentity resource type"
-description: "Represents details of the managed identity that was used to sign into the target resource"
+description: "Represents details of the managed identity that was used to sign into the target resource."
 author: "phoebeweiser"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details of the managed identity that was used to sign into the target resource
+Represents details of the managed identity that was used to sign into the target resource.
 
 ## Properties
 |Property|Type|Description|
