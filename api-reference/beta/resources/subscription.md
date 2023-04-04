@@ -26,11 +26,12 @@ For the possible resource path values for each supported resource, see [Use the 
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
+| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribe a listener application to receive change notifications when Microsoft Graph data changes. |
 | [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renew a subscription by updating its expiration time. |
-| [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
+| [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | List active subscriptions. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Read properties and relationships of subscription object. |
 | [Delete subscription](../api/subscription-delete.md) | None | Delete a subscription object. |
+|[reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
 
 ## Properties
 

@@ -26,6 +26,7 @@ For the possible resource path values for each supported resource, see [Use the 
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
 | [Delete subscription](../api/subscription-delete.md) | None | Deletes a subscription object. |
+|[reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
 
 ## Properties
 
