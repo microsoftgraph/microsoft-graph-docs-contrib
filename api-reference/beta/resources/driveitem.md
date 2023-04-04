@@ -72,7 +72,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Revoke grants](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
 | [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 | [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel`                   |
-| [Get retention](../api/driveitem-getretentionlabel.md)                       | `GET /drives/{drive-id}/items/{item-id}/retentionLabel`                |
+| [Get retention label](../api/driveitem-getretentionlabel.md)                       | `GET /drives/{drive-id}/items/{item-id}/retentionLabel`                |
 | [Set retention label](../api/driveitem-setretentionlabel.md)                 | `PATCH /drives/{drive-id}/items/{item-id}/retentionLabel`              |
 | [Remove retention label](../api/driveitem-removeretentionlabel.md)           | `DELETE /drives/{drive-id}/items/{item-id}/retentionLabel`             |
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | `PATCH /drives/{drive-id}/items/{item-id}/retentionLabel`              |
