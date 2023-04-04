@@ -121,7 +121,8 @@ Content-type: application/json
     }
   },
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
-  "priority": 5
+  "priority": 5,
+  "recurrence": null
 }
 ```
 
