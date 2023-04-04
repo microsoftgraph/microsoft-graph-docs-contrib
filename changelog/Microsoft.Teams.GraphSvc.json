@@ -54,9 +54,9 @@
       "Id": "75cd8c39-4f8b-467f-aadb-a1b184720427",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-03-31T00:51:19.3981715Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "CreatedDateTime": "2023-04-04T00:51:19.3981715Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     },
     {
       "ChangeList": [
