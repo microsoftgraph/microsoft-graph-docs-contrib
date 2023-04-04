@@ -49,6 +49,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |title|String|Title of the task.|
@@ -105,6 +106,7 @@ The following is a JSON representation of the resource.
   "planId": "String",
   "previewType": "String",
   "priority": "Int32",
+  "recurrence": {"@odata.type": "microsoft.graph.plannerTaskRecurrence"},
   "referenceCount": "Int32",
   "specifiedCompletionRequirements": "String",
   "startDateTime": "String (timestamp)",
@@ -124,5 +126,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
