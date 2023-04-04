@@ -389,7 +389,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints   |
 
 ### Outlook service resources
 
@@ -403,7 +403,13 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-
+### Outlook service batching
+If a `$batch` contains multiple requests to Outlook service resources within it, then by default 4 requests will be executed in parallel at any point (irrespective of the target mailbox) to stay within the concurrency limits of the Outlook service. However, the batch execution can be made fully sequential using the [dependsOn](json-batching#sequencing-requests-with-the-dependson-property) property.
+  
+Thus when targetting the same mailbox, applications that have an ability to run multiple threads in parallel can either run - 
+1. No more that 4 threads (batches contain dependsOn), or 
+2. A single batch request without dependsOn.
+  
 ## Project Rome service limits
 
 | Request type | Limit per user for all apps |
