@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 ## Examples
 
 > [!NOTE]
-> The docx format for transcripts will be deprecated from May 31, 2023.
+> The docx format for transcripts will be deprecated starting May 31, 2023.
 
 ### Example 1: Get a callTranscript
 #### Request
@@ -257,7 +257,7 @@ WEBVTT
 
 ### Example 4: Get a callTranscript content specifying Accept header
 
->**Note:** The docx format and `Accept` header will be deprecated from May 31, 2023.
+>**Note:** The docx format and `Accept` header will be deprecated starting May 31, 2023.
 
 #### Request
 
@@ -319,7 +319,7 @@ This is a transcript test.
 ```
 ### Example 5: Get a callTranscript content with $format getting precedence over the Accept header
 
->**Note:** The docx format and `$format` query parameter will be deprecated from May 31, 2023.
+>**Note:** The docx format and `$format` query parameter will be deprecated starting May 31, 2023.
 
 #### Request
 
