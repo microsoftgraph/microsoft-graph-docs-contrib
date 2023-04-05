@@ -17080,10 +17080,10 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
+          - name: Virtual appointment (preview)
             - name: Get Virtual appointment 
-              href: api/onlinemeeting-getvirtualappointmentjoinweburl.md
-          - name: Virtual appointment (deprecated)
-            href: resources/virtualappointment.md
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+            href: resources/virtualappointment.md (deprecated)
             items:
             - name: Create
               href: api/virtualappointment-put.md
