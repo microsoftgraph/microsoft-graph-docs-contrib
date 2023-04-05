@@ -38,8 +38,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebURL
-GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebURL
+GET /me/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebUrl
+GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebUurl
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/getVirtualAppointmentJoinWebURL
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/getVirtualAppointmentJoinWebUrl
 ```
 
 # [C#](#tab/csharp)
