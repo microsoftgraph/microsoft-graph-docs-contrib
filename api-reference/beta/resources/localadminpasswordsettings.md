@@ -1,4 +1,4 @@
---
+---
 title: "localAdminPasswordSettings resource type"
 description: "Represents the policy scope of an Azure Active Directory tenant that controls Local Admin Password Solution (LAPS) setting."
 author: "sandeo-MSFT"
