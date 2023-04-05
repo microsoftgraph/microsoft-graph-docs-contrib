@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: power on
+# cloudPC: powerOn
 
 Namespace: microsoft.graph
 
