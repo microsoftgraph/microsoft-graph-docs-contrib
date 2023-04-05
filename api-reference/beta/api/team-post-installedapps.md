@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_team",
+  "name": "add_app_in_team_e1",
   "sampleKeys": ["87654321-0abc-zqf0-321456789q"]
 }-->
 ```http
@@ -131,7 +131,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 
 <!-- {
   "blockType": "request",
-  "name": "add_app_in_team",
+  "name": "add_app_in_team_e2",
   "sampleKeys": ["7023576d-9e40-47ca-9cf2-daae6838e785"]
 }-->
 
