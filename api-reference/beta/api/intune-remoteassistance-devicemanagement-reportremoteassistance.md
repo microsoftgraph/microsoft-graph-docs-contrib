@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 1114
+Content-length: 1195
 
 {
   "reportingPayload": {
@@ -74,9 +74,11 @@ Content-length: 1114
     "remoteAssistanceSessionType": "fullControl",
     "helperEmail": "Helper Email value",
     "helperTenantId": "Helper Tenant Id value",
+    "helperUserId": "Helper User Id value",
     "helperFirstName": "Helper First Name value",
     "helperLastName": "Helper Last Name value",
     "helperOs": "Helper Os value",
+    "deviceId": "Device Id value",
     "helperDeviceAadId": "Helper Device Aad Id value",
     "helperDeviceName": "Helper Device Name value",
     "helperEnrollmentState": "enrolled",

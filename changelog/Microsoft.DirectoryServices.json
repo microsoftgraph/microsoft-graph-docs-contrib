@@ -5,6 +5,87 @@
         {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
+          "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `CrossTenantUserProfileSharing.ReadWrite.All` application and delegated permissions.",
+          "Target": "inboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CrossTenantUserProfileSharing.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `CrossTenantUserProfileSharing.Read.All` application and delegated permissions.",
+          "Target": "inboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added the `CrossTenantUserProfileSharing.ReadWrite` delegated permission.",
+          "Target": "inboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CrossTenantUserProfileSharing.Read",
+          "ChangeType": "Addition",
+          "Description": "Added the `CrossTenantUserProfileSharing.Read` delegated permission.",
+          "Target": "inboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "inboundSharedUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **inboundSharedUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },{
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "outboundSharedUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **outboundSharedUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundSharedUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundSharedUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/inboundshareduserprofile?view=graph-rest-beta) resource.",
+          "Target": "inboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outboundSharedUserProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the [outboundSharedUserProfiles](https://learn.microsoft.com/en-us/graph/api/resources/outboundshareduserprofile?view=graph-rest-beta) resource.",
+          "Target": "outboundSharedUserProfiles"
+        },
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantReference](https://learn.microsoft.com/en-us/graph/api/resources/tenantreference?view=graph-rest-beta) resource.",
+          "Target": "tenantReference"
+        }
+      ],
+      "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-29T00:00:00.0123959Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
+          "ApiChange": "Permission",
           "ChangedApiName": "Synchronization.ReadWrite.All",
           "ChangeType": "Addition",
           "Description": "Added the `Synchronization.ReadWrite.All` application and delegated permissions to configure [synchronization settings](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-overview?view=graph-rest-beta).",
@@ -1204,6 +1285,40 @@
     {
       "ChangeList": [
         {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "weakAlgorithms",
+          "ChangeType": "Addition",
+          "Description": "Added the **weakAlgorithms** enumeration type.",
+          "Target": "weakAlgorithms"
+        },
+        {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the [requestSignatureVerification](https://learn.microsoft.com/en-us/graph/api/resources/requestSignatureVerification?view=graph-rest-1.0) resource type.",
+          "Target": "requestSignatureVerification"
+        },
+        {
+          "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestSignatureVerification",
+          "ChangeType": "Addition",
+          "Description": "Added the `requestSignatureVerification` property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-27T00:00:00.8718807Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+      {
           "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
           "ApiChange": "Property",
           "ChangedApiName": "links",

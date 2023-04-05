@@ -39,17 +39,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
-> [!NOTE]
-> The authentication administrator only sees masked phone numbers.
-
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own Microsoft Authenticator Passwordless Phone Sign-in authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
+```
+
+Get details of your own or another user's Microsoft Authenticator Passwordless Phone Sign-in authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenticatorMethods/{id}
 ```
 
