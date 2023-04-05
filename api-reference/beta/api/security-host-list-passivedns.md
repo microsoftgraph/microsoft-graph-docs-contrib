@@ -1,6 +1,6 @@
 ---
 title: "List passiveDns"
-description: "Get a list of passiveDnsRecord resources."
+description: "Get a list of passiveDnsRecord resources associated to a host."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated to a host.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
