@@ -22,7 +22,7 @@ Inherits from  [customExtensionCallbackConfiguration](../resources/customextensi
 |Property|Type|Description|
 |:---|:---|:---|
 |timeoutDuration|Duration| Callback time out in ISO 8601 time duration. Accepted time durations are between five minutes to three hours. For example, PT5M for five minutes and PT3H for three hours. Inherited from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).|
-|authorizedApps|microsoft.graph.application collection| Unique identifier for the application object. |
+|authorizedApps|microsoft.graph.application collection| A collection of unique identifieres `appId` of the applications that are allowed to [resume](../api/identitygovernance-taskprocessingresult-resume) a task processing result.|
 
 
 ## Relationships
