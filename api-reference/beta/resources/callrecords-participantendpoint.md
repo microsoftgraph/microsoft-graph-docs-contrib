@@ -22,6 +22,10 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 |:-------------|:------------|:------------|
 |userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 |feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
+|name|String|Name of the device used by the media endpoint.|
+|cpuName|String|CPU name used by the media endpoint.|
+|cpuCoresCount|Int32|CPU number of cores used by the media endpoint.|
+|cpuProcessorSpeedInMhz|Int32|CPU processor speed used by the media endpoint.|
 |identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
 
 ## JSON representation
@@ -39,9 +43,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},
-  "feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+    "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},"feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},"name": "String",
+    "cpuName": "String",
+    "cpuCoresCount": "Int32",
+    "cpuProcessorSpeedInMhz": "Int32",
+    "identity": {"@odata.type": "microsoft.graph.identitySet"}
 }
 ```
 
