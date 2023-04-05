@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_outboundshareduserprofile"
+  "name": "get_outboundshareduserprofile_e1"
 }
 -->
 

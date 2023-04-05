@@ -59,7 +59,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_inboundflow"
+  "name": "delete_inboundflow_e1"
 }
 -->
 

@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_inboundfileflow"
+  "name": "update_inboundfileflow_e1"
 }
 -->
 

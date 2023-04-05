@@ -59,7 +59,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_azuredatalakeconnector",
+  "name": "delete_azuredatalakeconnector_e1",
   "sampleKeys": ["8c010e87-c28b-4350-bdc1-65ec29258b93"]
 }
 -->
