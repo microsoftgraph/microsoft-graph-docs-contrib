@@ -43,7 +43,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "LifecycleWorkflows.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `LifecycleWorkflows.ReadWrite.All` delegated and application permissions to the read and write operations of the [taskProcessingResult: resume](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta) API call.",
+          "Description": "Added support for the **LifecycleWorkflows.ReadWrite.All** delegated and application permissions to the read and write operations of the [taskProcessingResult: resume](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta) API call.",
           "Target": "taskProcessingResult"
         }
       ],
