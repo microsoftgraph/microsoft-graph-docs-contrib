@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete learningCourseActivity
 Namespace: microsoft.graph
 
-Delete a [learningCourseActivity](../resources/learningcourseactivity.md) using a course activity Id of a Learning Assignment or Self-initiated.
+Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object by using the course activity ID of either an assignment or a self-initiated activity.
 
 ## Permissions
 One of the following permissions is required to call this API based on the type of learning course activity. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
