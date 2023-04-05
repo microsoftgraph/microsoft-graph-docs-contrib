@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 This function returns a web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/en-us/microsoft-365/frontline/virtual-appointments?view=o365-worldwide).
 
+> [!NOTE]
+> For the preview period, customers with access to virtual appointments with their Microsoft 365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details on the licensing requirements before the preview period ends.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All
 
 > [!NOTE]
-> Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. We'll provide additional details on when online meeting permissions will no longer be supported before the preview period ends.
+> When this API is made generally available later this year, Virtual appointment will transition to requiring virtual appointment permissions and no longer accept online meeting permissions. This will give developers more granular control over virtual appointment permissions.
 
 
 ## HTTP request
@@ -51,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a String in the response body. The value field represents the web URL join link for Microsoft Virtual Appointments.
+If successful, this method returns a `200 OK` response code and a String in the response body. The value field represents the web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/en-us/microsoft-365/frontline/virtual-appointments?view=o365-worldwide).
 
 ## Examples
 
