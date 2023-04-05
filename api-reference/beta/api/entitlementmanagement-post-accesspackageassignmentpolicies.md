@@ -693,7 +693,6 @@ Content-type: application/json
 
 
 
-
 #### Response
 
 The following is an example of the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension stage settings for a policy](accesspackageassignmentpolicy-get.md#example-3-retrieve-the-custom-extension-stage-settings-for-a-policy)

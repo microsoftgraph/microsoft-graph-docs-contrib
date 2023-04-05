@@ -40,12 +40,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Retrieve details of your own phone authentication method.
 <!-- { "blockType": "ignored" } -->
-
-```http
+``` http
 GET /me/authentication/phoneMethods/{phoneMethodId}
+```
+
+Retrieve details of your own or another user's phone authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
+
 The value of `phoneMethodId` corresponding to the phoneType is one of the following:
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` to retrieve the `alternateMobile` **phoneType**.
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` to retrieve the `office` **phoneType**.

@@ -41,13 +41,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Enable SMS sign-in for your own mobile phone authentication method.
 <!-- { "blockType": "ignored" } -->
-
-```http
-POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
-POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
+``` http
+POST /me/authentication/phoneMethods/{mobilePhoneMethodId}/enableSmsSignIn
 ```
-The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
+
+Enable SMS sign-in for your own or another user's mobile phone authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+POST /users/{id | userPrincipalName}/authentication/phoneMethods/{mobilePhoneMethodId}/enableSmsSignIn
+```
+
+The value of `mobilePhoneMethodId` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
 
