@@ -24,7 +24,7 @@ This request updates the vertical alignment, row height, and column height of th
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat"
+  "name": "update_rangeformat_e1"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
@@ -82,7 +82,7 @@ This request updates the font style, size, and color of the first cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font"
+  "name": "update_rangeformat_font_e2"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
@@ -140,7 +140,7 @@ This request updates the background color of the first cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill"
+  "name": "update_rangeformat_fill_e3"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
@@ -191,7 +191,7 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_two"
+  "name": "update_rangeformat_two_e4"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
@@ -250,7 +250,7 @@ This request updates the font style and size of the second cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font_two"
+  "name": "update_rangeformat_font_two_e5"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
@@ -307,7 +307,7 @@ This request updates the background color of the second cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill_two"
+  "name": "update_rangeformat_fill_two_e6"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
@@ -358,7 +358,7 @@ This request updates the horizontal alignment, vertical alignment, row height, a
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_three"
+  "name": "update_rangeformat_three_e7"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
@@ -419,7 +419,7 @@ This request updates the font style, size, and color of the third cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_font_three"
+  "name": "update_rangeformat_font_three_e8"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
@@ -477,7 +477,7 @@ This request updates the background color of the third cell.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Sheet1"],
-  "name": "update_rangeformat_fill_three"
+  "name": "update_rangeformat_fill_three_e9"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
