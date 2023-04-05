@@ -1,5 +1,5 @@
 ---
-title: "Get user"
+title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "yyuank"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Get user
+# Get a user
 
 Namespace: microsoft.graph
 
@@ -232,7 +232,7 @@ To retrieve specific properties, use the OData `$select` query parameter. For ex
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_select"
+  "name": "get_user_select_e3"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?$select=displayName,givenName,postalCode,identities

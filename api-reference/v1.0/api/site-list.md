@@ -24,7 +24,7 @@ In addition, you can use a **[$search][]** query against the `/sites` collection
 [$search]: site-search.md
 [sites]: ../resources/site.md
 
-For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions
 
@@ -55,18 +55,23 @@ GET /sites
 GET /sites?$filter=siteCollection/root ne null
 ```
 
-## Example
+## Examples
 
-### Request
+### Example 1: List sites using query parameters
+
+#### Request
 
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "list_sites_example1"
+}-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -102,15 +107,19 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 2: List all sites
+#### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "list_sites_example2"
+}-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
