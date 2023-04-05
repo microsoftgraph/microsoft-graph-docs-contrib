@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET servicePrincipals/{id}/synchronization/templates
-GET applications/{id}/synchronization/templates
+GET /servicePrincipals/{id}/synchronization/templates
+GET /applications/{id}/synchronization/templates
 ```
 
 ## Request headers
