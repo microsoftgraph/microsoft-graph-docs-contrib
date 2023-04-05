@@ -21,8 +21,7 @@ None.
 
 ## Methods
 
-| Method | Return Type | Description |
-|:------ |:----------- |:----------- |
+None.
 
 ## Properties
 
