@@ -163,7 +163,7 @@ The following example shows a more complex policy with two stages of approval an
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_2"
 }
 -->
@@ -305,7 +305,7 @@ The following example shows a policy that automatically creates assignments for 
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_autoassignment"
 }
 -->
@@ -362,7 +362,7 @@ The following example shows a policy that automatically creates assignments for 
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_autoassignment"
 }
 -->

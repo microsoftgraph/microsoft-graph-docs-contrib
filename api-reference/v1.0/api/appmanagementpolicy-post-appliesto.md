@@ -58,7 +58,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "assign_appliesTo_ex1"
 }-->
 
 ```http
@@ -114,7 +114,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "assign_appliesTo_ex2"
 }-->
 
 ``` http

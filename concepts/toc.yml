@@ -117,24 +117,32 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Manage applications
-            href: tutorial-applications-basics.md
-          - name: Validation differences for signInAudience
-            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
-          - name: Grant or revoke permissions
-            displayName: grant delegated and application permissions
-            href: permissions-grant-via-msgraph.md
-          - name: Add a certificate to an app
-            displayName: app-only authentication
-            href: applications-how-to-add-certificate.md
-          - name: Automate SAML-based SSO configuration
-            href: application-saml-sso-configure-api.md
-          - name: Configure application proxy
-            href: application-proxy-configure-api.md
-          - name: Automate provisioning
-            href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
-          - name: Generate proof of possession tokens for rolling keys
-            href: application-rollkey-prooftoken.md
+          - name: Applications and service principals
+            items:
+            - name: Manage applications
+              href: tutorial-applications-basics.md
+            - name: Validation differences for signInAudience
+              href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
+            - name: Grant or revoke permissions
+              displayName: grant delegated and application permissions
+              href: permissions-grant-via-msgraph.md
+            - name: Add a certificate to an app
+              displayName: app-only authentication
+              href: applications-how-to-add-certificate.md
+            - name: Automate SAML-based SSO configuration
+              href: application-saml-sso-configure-api.md
+            - name: Configure application proxy
+              href: application-proxy-configure-api.md
+            - name: Automate provisioning
+              href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
+            - name: Generate proof of possession tokens for rolling keys
+              href: application-rollkey-prooftoken.md
+          - name: Synchronization
+            items:
+            - name: Synchronize custom target attributes
+              href: synchronization-configure-with-custom-target-attributes.md
+            - name: Synchronize directory extension attributes
+              href: synchronization-configure-with-directory-extension-attributes.md
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
