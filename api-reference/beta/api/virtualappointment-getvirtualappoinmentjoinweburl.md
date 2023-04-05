@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.Read, OnlineMeetings.Read                                  |
+| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite, OnlineMeetings.Read, OnlineMeetings.ReadWrite                                  |
 | Delegated (personal Microsoft account) | Not supported.                                                                         |
-| Application                            | VirtualAppointment.Read.All
+| Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All
 
 > [!NOTE]
 > Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. We'll provide additional details on when online meeting permissions will no longer be supported before the preview period ends.
@@ -39,9 +39,6 @@ GET /me/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebURL
 GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebURL
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 | Name            | Description               |
@@ -54,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a VirtualAppointmentJoinWebURL in the response body.
+If successful, this method returns a `200 OK` response code and a String in the response body. The value field represents the web URL join link for Microsoft Virtual Appointments.
 
 ## Examples
 
@@ -69,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/getVirtualAppointmentJoinWebURL
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/getVirtualAppointmentJoinWebURL
 ```
 
 # [C#](#tab/csharp)
@@ -101,9 +98,5 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-    "value": {
-        "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
-    }
-}
+{ "value": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True" }
 ```
