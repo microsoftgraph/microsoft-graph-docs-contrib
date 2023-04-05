@@ -17,11 +17,12 @@ Exposes relationships that represent the authentication methods supported by Azu
 
 Inherits from [entity](entity.md).
 
+None.
+
 ## Methods
 
 | Method | Return Type | Description |
 |:------ |:----------- |:----------- |
-| [Get authentication](../api/authentication-get.md) | [authentication](../resources/authentication.md) | Get the dynamically chosen authentication method that the user is prompted with. |
 
 ## Properties
 
@@ -45,6 +46,7 @@ Inherits from [entity](entity.md).
 |windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
