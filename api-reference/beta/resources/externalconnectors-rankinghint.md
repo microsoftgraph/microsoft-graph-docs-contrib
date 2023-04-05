@@ -18,7 +18,7 @@ Specifies the schema property's ranking hint.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|importanceScore|microsoft.graph.externalConnectors.importanceScore | Specifies the schema property importance. Possible values are: `low`, `medium`, `high`, `veryHigh`. Required. |
+|importanceScore|microsoft.graph.externalConnectors.importanceScore | Specifies the schema property importance. Possible values are: `low`, `medium`, `high`, `veryHigh`, `unknownFutureValue`. Required. |
 
 ## Relationships
 None.
