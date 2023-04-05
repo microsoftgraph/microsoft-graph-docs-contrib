@@ -23,7 +23,7 @@ The following example shows you how to add a new number to a table and then find
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_excel_session"
+  "name": "create_excel_session_1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
@@ -161,7 +161,7 @@ content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "close_excel_session"
+  "name": "close_excel_session2"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
