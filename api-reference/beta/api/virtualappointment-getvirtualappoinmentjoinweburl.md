@@ -1,5 +1,5 @@
 ---
-title: "virtualAppointment: getVirtualAppointmentJoinWebURL"
+title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
 description: "Function to return virtualAppointment join link."
 author: "benmicrosoft"
 ms.localizationpriority: medium
