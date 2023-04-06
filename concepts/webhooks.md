@@ -7,7 +7,7 @@ ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 03/23/2022
+ms.date: 03/23/2023
 ---
 
 # Set up notifications for changes in resource data
