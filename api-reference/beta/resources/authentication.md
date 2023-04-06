@@ -17,8 +17,6 @@ Exposes relationships that represent the authentication methods supported by Azu
 
 Inherits from [entity](entity.md).
 
-None.
-
 ## Methods
 
 None.
