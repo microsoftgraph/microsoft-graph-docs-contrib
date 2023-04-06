@@ -59,7 +59,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_inboundflow"
+  "name": "delete_inboundflow_e1"
 }
 -->
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-inboundflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-inboundflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

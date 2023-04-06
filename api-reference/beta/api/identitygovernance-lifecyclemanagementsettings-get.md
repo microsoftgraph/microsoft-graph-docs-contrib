@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/setti
 
 ---
 
-
 ### Response
 
 The following is an example of the response

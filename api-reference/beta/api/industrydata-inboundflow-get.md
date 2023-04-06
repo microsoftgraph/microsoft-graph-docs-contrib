@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_inboundflow",
+  "name": "get_inboundflow_e1",
   "sampleKeys": ["7bd62d17-8c37-4494-f68d-08daddab2911"]
 }
 -->
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/external/industryData/inboundFlows/7bd62d17
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-inboundflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-inboundflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
