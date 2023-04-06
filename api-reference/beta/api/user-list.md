@@ -299,8 +299,6 @@ Content-type: application/json
 
 The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
 
->**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving the **signInActivity** property.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -372,8 +370,6 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
-
->**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving the **signInActivity** property.
 
 <!-- {
   "blockType": "ignored",
