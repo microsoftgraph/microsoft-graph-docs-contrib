@@ -27,6 +27,7 @@ Describes which technology this setting can be deployed with
 |appleRemoteManagement|64|Setting can be deployed through the AppleRemoteManagement channel|
 |microsoftSense|128|Setting can be deployed through the SENSE agent channel|
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
+|edgeMAM|512|Setting can be deployed through the Edge MAM agent channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|

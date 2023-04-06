@@ -77,7 +77,7 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
-      - name: API metering
+      - name: Metered APIs
         items:
           - name: Overview
             href: metered-api-overview.md
@@ -98,7 +98,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training module: Access user data"
+          - name: "Training: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
@@ -111,7 +111,7 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training module: Manage group lifecycle"
+          - name: "Training: Manage group lifecycle"
             href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
@@ -192,15 +192,17 @@ items:
           - name: Overview
             href: webhooks.md
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: "Training module: Use change notifications"
+          - name: "Training: Use change notifications"
             href: /training/modules/msgraph-changenotifications-trackchanges
-          - name: Notifications through webhooks
-            href: change-notifications-delivery-webhooks.md
-          - name: Notifications through Azure Event Hubs
-            href: change-notifications-delivery-event-hubs.md
+          - name: Notifications delivery channels
+            items:
+              - name: Notifications through webhooks
+                href: change-notifications-delivery-webhooks.md
+              - name: Notifications through Azure Event Hubs
+                href: change-notifications-delivery-event-hubs.md
           - name: Lifecycle notifications for subscriptions
             href: webhooks-lifecycle.md
-          - name: Notifications with resource data (rich notifications)
+          - name: Rich notifications
             href: webhooks-with-resource-data.md
           - name: Tutorials
             displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
@@ -422,7 +424,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: "Examples: Custom security attributes (preview)"
+              - name: "Manage custom security attribute assignments (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -472,12 +474,14 @@ items:
                   - name: Rules for Azure AD roles
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Customize and update rules for Azure AD roles
+                  - name: Customize and update rules
                     href: how-to-pim-update-rules.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Assign Azure AD roles with PIM
+                  - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+      - name: Industry data ETL (preview)
+        href: industrydata-concept-overview.md
       - name: Mail
         items:
           - name: Overview
@@ -659,6 +663,8 @@ items:
             href: planner-concept-overview.md
           - name: Business scenarios (preview)
             href: businessscenarios-concept-overview.md
+          - name: Configuring task recurrence (preview)
+            href: planner-task-recurrence-overview.md
           - name: Configuring task rules (preview)
             href: planner-task-rules-overview.md
         displayName: Planner
@@ -719,6 +725,8 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
+          - name: Embed Teams in your app
+            href: teams-embed-within-own-app.md
           - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
@@ -810,7 +818,7 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training module: Optimize requests with query parameters"
+              - name: "Training: Optimize requests with query parameters"
                 displayName: OData query parameters, OData
                 href: /training/modules/optimize-data-usage
           - name: Batching
@@ -824,7 +832,7 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training module: Optimize network traffic"
+              - name: "Training: Optimize network traffic"
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
@@ -924,7 +932,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK (preview)
+          - name: Use the connectors SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-overview.md

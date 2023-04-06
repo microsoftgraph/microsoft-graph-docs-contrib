@@ -10,9 +10,9 @@ var requestBody = new TokenLifetimePolicy
 {
 	Definition = new List<string>
 	{
-		"definition-value",
+		"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}",
 	},
-	DisplayName = "displayName-value",
+	DisplayName = "Contoso token lifetime policy",
 	IsOrganizationDefault = true,
 };
 var result = await graphClient.Policies.TokenLifetimePolicies["{tokenLifetimePolicy-id}"].PatchAsync(requestBody);

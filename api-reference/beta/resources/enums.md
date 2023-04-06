@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
 ### userPurpose values
 
 | Member             | 
@@ -203,6 +213,17 @@ Namespace: microsoft.graph
 |requestReceived|
 |unknownFutureValue|
 
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionStage values 
 
 |Member|
@@ -319,6 +340,15 @@ Namespace: microsoft.graph
 |:---|
 |strictEnforcement|
 |disabled|
+|unknownFutureValue|
+
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
 |unknownFutureValue|
 
 ### multiFactorAuthConfiguration values
@@ -3684,6 +3714,7 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
 
 ### authenticationEventType values
 
