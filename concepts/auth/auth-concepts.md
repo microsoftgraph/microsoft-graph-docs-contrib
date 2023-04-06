@@ -49,11 +49,11 @@ In this access scenario, the application can interact with data on its own, with
 
 Apps get privileges to call Microsoft Graph with their own identity through one of the following ways:
 
-+ When the app is assigned *application permissions*, also called *app roles*
-+ When the app is assigned ownership of the resource that it intends to manage
+- When the app is assigned *application permissions*, also called *app roles*
+- When the app is assigned ownership of the resource that it intends to manage
 
 > [!NOTE]
-> An app can also get permissions through Azure AD role-based access control (Azure AD RBAC). To get the list of permissions that are available through Azure AD RBAC, see [Azure AD roles](/azure/active-directory/roles/permissions-reference).
+> An app can also get permissions through a role-based access control system such as [Azure AD RBAC](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Graph permissions
 
@@ -64,7 +64,7 @@ Microsoft Graph exposes two types of permissions for the supported [access scena
 - Delegated permissions: Also called *scopes*, allow the application to act on behalf of the signed-in user.
 - Application permissions: Also called *app roles*, allow the app to access data on its own, without a signed-in user.
 
-When a user signs in to your app they, or, in some cases, administrators, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, administrators should preconsent to the application permissions when the app is installed.
+When a user signs in to your app they, or, in some cases, administrators, are given a chance to consent to the delegated permissions. If they grant consent, your app is given access to the resources, and APIs that it has requested. For apps that access resources and APIs without a signed-in user, administrators should grant the required permissions when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 

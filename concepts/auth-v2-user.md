@@ -1,6 +1,6 @@
 ---
 title: "Get access on behalf of a user"
-description: "Learn how an app uses the OAuth 2.0 authorization code grant flow to obtain an access token from the Microsoft identity platform and call Microsoft Graph on behalf of a user."
+description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph on behalf of a user."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
@@ -14,7 +14,7 @@ ms.date: 02/22/2022
 
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph on behalf of a user](./auth/auth-concepts.md#access-scenarios), also called *delegated access*.
 
-This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). The authorization and token requests in this article are abstracted to you when you use a [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). A [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) handles the authorization and token requests and helps you to get access tokens and call Microsoft Graph.
 
 ## Prerequisites
 
@@ -167,7 +167,7 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 | scope         | Required              | A space-separated list of scopes. Don't percent-encode the spaces. The scopes that your app requests in this leg must be equivalent to or a subset of the scopes that it requested in the authorization leg in Step 2. If the scopes specified in this request span multiple resource servers, then the v2.0 endpoint returns a token for the resource specified in the first scope.                                                                                                                                                                   |
 | code          | Required              | The authorization **code** that you acquired in the authorization leg in Step 2.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | redirect_uri  | Required              | The same redirect URI value that was used to acquire the authorization **code** in Step 2.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. It shouldn't be used in a native app, because client secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.                                                                                                                                                                                  |
+| client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. It shouldn't be used in a native app, because client secrets can't be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.                                                                                                                                                                                  |
 
 ### Token response
 
@@ -303,7 +303,7 @@ curl --location 'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token' \
 | grant_type    | Required              | Must be `refresh_token`.                                                                                                                                                                                                                                                                                          |
 | scope         | Optional              | A space-separated list of permissions (scopes). Don't percent-encode the spaces. The permissions that your app requests must be equivalent to or a subset of the permissions that it requested in the original authorization code request in Step 2.                                                                                                                             |
 | refresh_token | Required              | The refresh_token that your app acquired during the token request in Step 3.                                                                                                                                                                                                                                                     |
-| client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. Don't use the secret in a native app, because client_secrets can’t be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
+| client_secret | Required for web apps | The client secret that you created in the app registration portal for your app. Don't use the secret in a native app, because client_secrets can't be reliably stored on devices. It's required for web apps and web APIs, which have the ability to store the client_secret securely on the server side. |
 
 ### Response
 
