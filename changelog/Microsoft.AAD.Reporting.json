@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "lastModifiedBy",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedBy** relationship to the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastModifiedBy** navigation property to the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource.",
           "Target": "membershipOutlierInsight"
         }
       ],
