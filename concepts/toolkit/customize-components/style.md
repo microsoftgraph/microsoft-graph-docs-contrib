@@ -31,7 +31,7 @@ Using the [mgt-theme-toggle](../components/theme-toggle.md) component, you can s
 <body>
     <mgt-theme-toggle></mgt-theme-toggle>
     <header><mgt-login></mgt-login></header>
-    <article><mgt-agenda></mgt-agend></article>
+    <article><mgt-agenda></mgt-agenda></article>
     <footer></footer>
 </body>
 ```
