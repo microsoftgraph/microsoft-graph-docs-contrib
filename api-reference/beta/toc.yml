@@ -319,8 +319,6 @@ items:
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
-        - name: Get authentication
-          href: api/authentication-get.md
         - name: Get delta
           href: api/user-delta.md
         - name: Get delta for directory object
