@@ -25,7 +25,7 @@ Represents a single secret value.
 ### Supported key value pairs
 | Key	   |Value|
 |:---------------|:----------|
-|Base Address| The tenant URL / SCIM end point that you are trying to provision.|
+|BaseAddress| The tenant URL / SCIM end point that you are trying to provision.|
 |SecretToken	| The token to authorize access to the application. This token is provided by the application developer. |
 |SyncNotificationSettings	|This property is used to determine if quarantine emails are sent.|
 |SyncAll	|Determines scope of sync between all users and groups or only ones that are assigned. When provisioning users into applications, the value is generally “True”.|
