@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: power off"
-description: "Power off specific Cloud PC."
+description: "Power off a specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
