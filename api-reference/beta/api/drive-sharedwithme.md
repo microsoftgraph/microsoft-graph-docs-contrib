@@ -1,19 +1,21 @@
 ---
-author: JeremyKelley
-description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
-ms.date: 09/10/2017
-title: List Files Shared With Me
+author: "JeremyKelley"
+description: "Get a list of driveItem objects that have been shared with the owner of a drive."
+title: "drive: sharedWithMe"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# List items shared with the signed-in user
+
+# drive: sharedWithMe
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
+Get a list of [driveItem](../resources/driveitem.md) objects that have been shared with the owner of a [drive](../resources/drive.md).
+
+The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.
 
 ## Permissions
 
@@ -25,17 +27,55 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.
-Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.
+> **Note:**
+>
+> * A `/sharedWithMe` request succeeds with `Files.Read` or `Files.ReadWrite` permissions; however, some properties might be missing.
+> * You can't access shared items returned from this API if the request doesn't contain one of the `*.All` permissions.
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/drive/sharedWithMe
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [driveItem](../resources/driveitem.md) objects in the response body.
+
+By default, this method returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to a GET request.
+
+## Examples
+
+### Example 1: Get driveItems shared with me
+
+The following example gets a collection of [driveItem](../resources/driveitem.md) resources that are shared with the owner of the drive.
+
+#### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
-
+<!-- {
+  "blockType": "request",
+  "name": "get_driveItems_shared_with_me"
+}
+-->
 ```msgraph-interactive
-GET /me/drive/sharedWithMe
+GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
 ```
 
 # [C#](#tab/csharp)
@@ -52,13 +92,15 @@ GET /me/drive/sharedWithMe
 
 ---
 
+#### Response
 
-## Response
+The following is an example of the response that returns items shared with the signed-in user, since the drive is the user's default drive.
 
-This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
-In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
-
-<!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
+<!-- {
+  "blockType": "response",
+  "@odata.type": "Collection(microsoft.graph.driveItem)",
+  "truncated": true}
+-->
 
 ```http
 HTTP/1.1 200 OK
@@ -109,25 +151,67 @@ Content-Type: application/json
 }
 ```
 
-## Remarks
+### Example 2: Get a shared driveItem object
 
-DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive.
-To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
+The following example shows how to access the shared **driveItem** that requires a request using the **id** of the **parentReference** within the **remoteItem** object.
 
-<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "drives-get-remoteitem",
+  "sampleKeys": ["{remoteItem-parentReference-driveId}", "{remoteItem-id}"]
+}
+-->
 
 ```http
-GET /drives/{remoteItem-parentReference-driveId}/items/{remoteItem-id}
+GET https://graph.microsoft.com/beta/drives/{remoteItem-parentReference-driveId}/items/{remoteItem-id}
 ```
 
-Continuing the example above, metadata about the shared item with name `"January Service Review.pptx"` can be accessed as follows:
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "",
+  "truncated": true}
+-->
+
+
+
+### Example 3: Get metadata about a shared driveItem object
+
+The following example gets metadata about the shared **driveItem** with name `January Service Review.pptx`.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "drives-get-remoteitem-metadata",
+  "sampleKeys": ["987def", "987def!654"]
+}
+-->
 
 ```http
-GET /drives/987def/items/987def!654
+GET https://graph.microsoft.com/beta/drives/987def/items/987def!654
 ```
 
+#### Response
 
-By default, **sharedWithMe** returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "",
+  "truncated": true}
+-->
+
+
 
 <!--
 {
@@ -140,5 +224,3 @@ By default, **sharedWithMe** returns items shared within your own tenant. To inc
   ]
 }
 -->
-
-
