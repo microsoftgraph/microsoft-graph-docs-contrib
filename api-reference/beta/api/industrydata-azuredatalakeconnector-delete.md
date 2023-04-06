@@ -59,7 +59,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_azuredatalakeconnector",
+  "name": "delete_azuredatalakeconnector_e1",
   "sampleKeys": ["8c010e87-c28b-4350-bdc1-65ec29258b93"]
 }
 -->
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c0
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-azuredatalakeconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-azuredatalakeconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
