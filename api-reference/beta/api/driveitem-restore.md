@@ -65,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "restore-item",
+  "name": "restore-item-e1",
   "scopes": "files.readwrite",
   "target": "action"
 }-->

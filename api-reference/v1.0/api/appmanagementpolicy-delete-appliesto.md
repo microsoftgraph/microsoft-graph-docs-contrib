@@ -57,7 +57,7 @@ The following is an example of the request to remove an appManagementPolicy from
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "remove_appliesTo"
+  "name": "remove_appliesTo_e1"
 }-->
 
 ```http
@@ -113,7 +113,7 @@ The following is an example of the request to remove an appManagementPolicy from
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "remove_appliesTo"
+  "name": "remove_appliesTo_e2"
 }-->
 
 ``` http
@@ -145,7 +145,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPoli
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

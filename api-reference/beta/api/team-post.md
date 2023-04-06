@@ -64,7 +64,7 @@ The following is an example of a minimal request. By omitting other properties, 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post"
+  "name": "create_team_post_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -109,8 +109,8 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -131,7 +131,7 @@ The following is an example of a minimal request using application permissions. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_minimal"
+  "name": "create_team_post_minimal_e2"
 }-->
 
 ```http
@@ -182,8 +182,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_minimal"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -203,7 +203,7 @@ The following is a request with a full payload. The client can override values i
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_full_payload"
+  "name": "create_team_post_full_payload_e3"
 }-->
 
 ```http
@@ -319,8 +319,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_full_payload"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -346,7 +346,7 @@ A few things to note about this call:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_from_group"
+  "name": "create_team_from_group_e4"
 }-->
 
 ```http
@@ -387,8 +387,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_from_group"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -410,7 +410,7 @@ To learn more about supported base template types and supported properties, see 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_group"
+  "name": "convert_team_from_group_e5"
 }-->
 
 ```http
@@ -476,8 +476,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_group"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -501,7 +501,7 @@ To learn more about supported base template types, see [Get started with Teams t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_non_standard"
+  "name": "convert_team_from_non_standard_e6"
 }-->
 
 ```http
@@ -543,8 +543,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_non_standard"
+  "blockType": "response", 
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -563,7 +563,7 @@ Choose your team template from the defintion list returned by the [List definiti
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_non_standard_localized"
+  "name": "convert_team_from_non_standard_localized_e7"
 }-->
 
 ```http
@@ -609,8 +609,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_non_standard_localized"
+  "blockType": "response", 
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -631,7 +631,7 @@ To learn more about supported base template types and supported properties, see 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_non_standard2"
+  "name": "convert_team_from_non_standard2_e8"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -697,8 +697,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_non_standard2",
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -719,6 +719,11 @@ The following example shows how to create a team for imported messages.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_team_in_migration_mode_e9"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -733,6 +738,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response", 
+  "truncated": true
+}-->
 
 ```http
 HTTP/1.1 202 Accepted
@@ -753,7 +763,7 @@ The following are common reasons for this response:
 * **createdDateTime** is set in the future.
 * **createdDateTime** is correctly specified but the **teamCreationMode** instance attribute is missing or set to an invalid value.
 
-### Example 9: Application permissions using user principal name
+### Example 10: Application permissions using user principal name
 
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
@@ -763,7 +773,7 @@ The following is an example of a minimal request using application permissions. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_upn"
+  "name": "create_team_post_upn_e10"
 }-->
 
 ```http
@@ -814,8 +824,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_upn"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
