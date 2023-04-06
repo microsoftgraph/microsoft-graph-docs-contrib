@@ -149,39 +149,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a shared driveItem object
+### Example 2: Get metadata about a shared driveItem object
 
-The following example shows how to access the shared **driveItem** that requires a request using the **id** of the **parentReference** within the **remoteItem** object.
-
-#### Request
-
-The following is an example of a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "drives-get-remoteitem",
-  "sampleKeys": ["{remoteItem-parentReference-driveId}", "{remoteItem-id}"]
-}
--->
-
-```http
-GET https://graph.microsoft.com/v1.0/drives/{remoteItem-parentReference-driveId}/items/{remoteItem-id}
-```
-
-#### Response
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "",
-  "truncated": true}
--->
-
-
-
-### Example 3: Get metadata about a shared driveItem object
-
+The following example shows how to access the shared **driveItem** that requires a request using the **driveId** of the **parentReference** within the **remoteItem** object.
 The following example gets metadata about the shared **driveItem** with name `January Service Review.pptx`.
 
 #### Request
@@ -205,10 +175,25 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "",
+  "@odata.type": "microsoft.graph.driveItem",
   "truncated": true}
 -->
 
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "987def!654",
+  "name": "January Service Review.pptx",
+  "file": { },
+  "size": 145362,
+  "parentReference": {
+    "driveId": "987def",
+    "id": "987def!321"
+  }
+}
+```
 
 
 <!--
