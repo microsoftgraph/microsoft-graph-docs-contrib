@@ -61,7 +61,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_article",
+  "name": "get_article_e1",
   "sampleKeys": ["a272d5ab"]
 }
 -->

@@ -109,7 +109,7 @@ The following is an example of the request. There is no `$select` parameter, so 
 
 <!-- {
   "blockType": "request",
-  "name": "group_delta"
+  "name": "group_delta_e1"
 }-->
 
 ```msgraph-interactive
@@ -170,7 +170,7 @@ The next example shows the initial request selecting 3 properties for change tra
 
 <!-- {
   "blockType": "request",
-  "name": "group_delta_with_selelct"
+  "name": "group_delta_with_selelct_e2"
 }-->
 
 ```msgraph-interactive
@@ -235,7 +235,7 @@ The next example shows the initial request selecting 3 properties for change tra
 
 <!-- {
   "blockType": "request",
-  "name": "group_delta_minimal"
+  "name": "group_delta_minimal_e3"
 }-->
 
 ```msgraph-interactive

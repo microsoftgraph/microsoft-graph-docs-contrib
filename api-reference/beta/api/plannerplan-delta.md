@@ -65,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta",
+  "name": "plannerplanthis.delta_e1",
   "sampleKeys": ["-W4K7hIak0WlAwgJCn1sEWQABgjH"]
 }
 -->
@@ -147,7 +147,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta",
+  "name": "plannerplanthis.delta_e2",
   "sampleKeys": ["ebf3b108-5234-4e22-b93d-656d7dae5874"]
 }
 -->

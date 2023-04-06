@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users
@@ -148,7 +148,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signinname_users"
+  "name": "get_signinname_users_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
@@ -217,7 +217,7 @@ The following is an example of the request. Details for the **signInActivity** p
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_last_time"
+  "name": "get_signin_last_time_e3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName,signInActivity
@@ -304,7 +304,7 @@ The following is an example of the request. Details for the **signInActivity** p
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_last_time_filter"
+  "name": "get_signin_last_time_filter_e4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
@@ -377,7 +377,7 @@ The following is an example of the request. Details for the **signInActivity** p
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_signin_last_time_range"
+  "name": "get_signin_last_time_range_e5"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z
@@ -435,7 +435,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_count_only"
+  "name": "get_count_only_e6"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/$count
@@ -469,7 +469,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_startswith"
+  "name": "list_users_startswith_e7"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -518,7 +518,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count_endsWith"
+  "name": "get_a_count_endsWith_e8"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=endswith(mail,'a@contoso.com')&$orderby=userPrincipalName&$count=true
@@ -594,7 +594,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_wa_count"
+  "name": "get_wa_count_e9"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=displayName&$count=true
@@ -670,7 +670,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_to_count"
+  "name": "get_to_count_e10"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:ad"&$orderby=displayName&$count=true
@@ -752,7 +752,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_assignedLicenses"
+  "name": "get_user_assignedLicenses_e11"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
@@ -835,7 +835,7 @@ In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_schemaextension"
+  "name": "list_schemaextension_e12"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
@@ -925,7 +925,7 @@ For examples of custom security attribute assignments, see [Examples: Assign, up
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "customsecurityattribute_filter_users_equals_value"
+  "name": "customsecurityattribute_filter_users_equals_value_e13"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'

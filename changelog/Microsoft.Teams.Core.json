@@ -6325,6 +6325,23 @@
       "CreatedDateTime": "2023-02-23T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    { "ChangeList": [ 
+        { 
+          "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+          "ApiChange": "Property", 
+          "ChangedApiName": "metadataContent", 
+          "ChangeType": "Addition", 
+          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
+          "Target": "callTranscript" 
+        } 
+      ], 
+      "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+      "Cloud": "prd", 
+      "Version": "beta", 
+      "CreatedDateTime": "2023-04-05T12:44:49.407Z", 
+      "WorkloadArea": "Teamwork and communications", 
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
