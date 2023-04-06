@@ -38,12 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Get details of your own software OATH token authentication methods.
+<!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/softwareOathMethods
+```
+
+Get details of your own or another user's software OATH token authentication methods.
+<!-- { "blockType": "ignored" } -->
+``` http
 GET /users/{id | userPrincipalName}/authentication/softwareOathMethods
 ```
 

@@ -30,8 +30,8 @@ To use application permission for this API, tenant administrators must create an
 To delete an **onlineMeeting** using the meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
-DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+DELETE /me/onlineMeetings/{meetingId}
+DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
