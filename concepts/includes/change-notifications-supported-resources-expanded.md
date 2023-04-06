@@ -30,13 +30,13 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages` <br><br> Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages` <br><br> Changes to chat messages in all chats: `/chats/getAllMessages`  <br><br> Changes to chat messages in a specific chat: `/chats/{id}/messages` <br><br> Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` | Maximum subscription quotas: <li> Per app and channel or chat combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | Teams [channel][] | Changes to channels in all teams: `/teams/getAllChannels` <br><br> Changes to channel in a specific team: `/teams/{id}/channels` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | Teams [conversationMember][] | Changes to membership in a specific team: `/teams/{id}/members` <br><br> Changes to membership in all channels under a specific team: `teams/{id}/channels/getAllMembers` <br><br> Changes to membership in a specific chat: `/chats/{id}/members` <br><br> Changes to membership in all chats: `/teams/getAllMembers` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
-| Teams [onlineMeeting][] * | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` |  |
-| Teams [presence][] * | Changes to a single user's presence:  `/communications/presences/{id}` <br><br> Changes to multiple user presences:  `/communications/presences?$filter=id in ({id},{id}...)` |  |
+| Teams [onlineMeeting][] <sup>*<sup> <sup>1<sup> | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` |  |
+| Teams [presence][] <sup>1<sup>| Changes to a single user's presence:  `/communications/presences/{id}` <br><br> Changes to multiple user presences:  `/communications/presences?$filter=id in ({id},{id}...)` |  |
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>A [known issue](/graph/known-issues#change-notifications) for the subscription **changeType**. |
 
-The following resources support rich notifications (notifications with resource data):
+The following resources support rich notifications (notifications with resource data).
 
 - Outlook [event][]
 - Outlook [message][]
@@ -46,8 +46,10 @@ The following resources support rich notifications (notifications with resource 
 - Teams [channel][]
 - Teams [conversationMember][]
 - Teams [onlineMeeting][] *
-- Teams [presence][] *
+- Teams [presence][]
 - Teams [team][]
+
+For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
