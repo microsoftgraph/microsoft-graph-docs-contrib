@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the reasons for a participant's restricted media experience. Please note this is not a security feature because it relies on the client application to implement the watermarking.
+Indicates whether a watermark should be applied to any content type. Please note this is not a security feature because it relies on the client application to implement the watermarking.
 
 ## Properties
 
