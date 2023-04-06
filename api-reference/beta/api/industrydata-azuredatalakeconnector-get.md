@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_azuredatalakeconnector",
+  "name": "get_azuredatalakeconnector_e1",
   "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->

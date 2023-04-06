@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_inboundflow",
+  "name": "get_inboundflow_e1",
   "sampleKeys": ["7bd62d17-8c37-4494-f68d-08daddab2911"]
 }
 -->
