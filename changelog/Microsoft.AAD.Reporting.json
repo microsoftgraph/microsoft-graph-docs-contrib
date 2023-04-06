@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "d46f7136-1ef8-47e4-b10e-8e31a87d47f4",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "lastModifiedBy",
           "ChangeType": "Addition",
           "Description": "Added the **lastModifiedBy** relationship to the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource.",
