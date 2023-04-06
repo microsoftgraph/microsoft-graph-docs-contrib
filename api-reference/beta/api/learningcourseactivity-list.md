@@ -1,6 +1,6 @@
 ---
 title: "List learningCourseActivities"
-description: "Get a list of the learningCourseActivity objects and their properties."
+description: "Get a list of the learningCourseActivity courses for a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List learningCourseActivities
 Namespace: microsoft.graph
 
-Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) courses (assigned, recommended and self-initiated) for a user using UserId.
+Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) courses (assigned, recommended, and self-initiated) for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
