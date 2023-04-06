@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /me/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebUrl
-GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebUurl
+GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWebUrl
 ```
 
 ## Request headers
