@@ -1,6 +1,6 @@
 ---
 title: "taskProcessingResult: resume"
-description: "An Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's in progress."
+description: "In the default case an Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's in progress."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
