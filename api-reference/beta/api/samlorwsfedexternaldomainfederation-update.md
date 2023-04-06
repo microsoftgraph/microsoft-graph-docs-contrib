@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [saml
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_samlorwsfedexternaldomainfederation"
+  "name": "update_samlorwsfedexternaldomainfederation_e1"
 }
 -->
 
