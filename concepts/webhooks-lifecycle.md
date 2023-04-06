@@ -7,17 +7,17 @@ ms.reviewer: jumasure
 ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
-ms.date: 04/04/2023
+ms.date: 04/06/2023
 ---
 
-# Reduce missing change notifications and removed subscriptions
+# Reduce missing subscriptions and change notifications
 
-In the lifetime of a subscription, Microsoft Graph sends special kinds of notifications to help you minimize the risk of removed subscriptions or missed change notifications. These notifications are called **lifecycle notifications**.
+In the lifetime of a subscription, Microsoft Graph sends special kinds of notifications to help you minimize the risk of missing subscriptions and change notifications. These notifications are called **lifecycle notifications**.
 
 There are three types of lifecycle events:
 
 - **reauthorizationRequired** notifications
-- **removed** subscriptions notifications
+- Subscription **removed** notifications
 - **missed** notifications
 
 If you ignore these events, it might break the change notification flow; you can handle the events by implementing logic in your app to resume a continuous change notification flow.
@@ -52,7 +52,7 @@ The **lifecycleNotificationUrl** endpoint can be the same as the **notificationU
 
 Existing subscriptions without a **lifecycleNotificationUrl** property don't receive the lifecycle notifications. To add the **lifecycleNotificationUrl** property, you should remove such existing subscriptions and create new subscriptions while specifying the property during subscription creation.
 
-When using the webhooks delivery channel, you must [validate both endpoints](./change-notifications-delivery-webhooks.md#notificationurl-validation). If you choose to use the same URL for both endpoints, Microsoft Graph sends two validation requests that you should respond to.
+When using the webhooks delivery channel, you must [validate both endpoints](./change-notifications-delivery-webhooks.md#notificationurl-validation).
 
 ## Structure of a lifecycle notification
 
@@ -92,7 +92,7 @@ While you can provide a **lifecycleNotificationUrl** when creating a subscriptio
 `reauthorizationRequired` lifecycle events alert you when Microsoft Graph requires the app to reauthorize the subscription, for example in the following cases:
 
 - When the access token is about to expire.
-- When a [subscription is about to expire](./webhooks.md#subscription-lifetime)
+- When a [subscription is about to expire](./webhooks.md#subscription-lifetime).
 - When a tenant administrator has revoked your app's permissions to read a resource.
 
 Before any of these conditions become true, Microsoft Graph sends an authorization challenge to the **lifecycleNotificationUrl**. 
@@ -123,11 +123,11 @@ The following steps represent the flow of an authorization challenge for an acti
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**.
 
-    The flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action.
+    The flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action. Any notifications about resource changes that happen when the change notification delivery pauses and the time when the app successfully creates the subscription again would be lost. In such cases, the app should separately fetch those changes, for example using the [delta query](/graph/delta-query-overview).
 
 ### Actions to take
 
-1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted`.
+1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted` response code.
 2. Validate the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step.
 4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
@@ -140,7 +140,6 @@ The following steps represent the flow of an authorization challenge for an acti
         }-->
         ```http
         POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-        Content-type: application/json
         ```
 
     - Perform a regular "renew" action to reauthorize *and* renew the subscription at the same time.
@@ -158,18 +157,17 @@ The following steps represent the flow of an authorization challenge for an acti
         }
         ```
 
-      Renewing may fail if the app is no longer authorized to access to the resource. It may then be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription.
-      
-      You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the lifecycle notification was sent and the time when the app successfully creates the subscription again would be lost. In such cases, the app should separately fetch those changes, for example using the [delta query](/graph/delta-query-overview).
+      Renewing may fail if the app is no longer authorized to access to the resource. It may then be necessary for the app to obtain a new access token to successfully reauthorize a subscription.
+
+      You may retry these actions later, at any time, and succeed if the conditions of access change.
 
 /// At what stage do you get subscriptionRemoved?
-
 
 ### Additional information
 
 - Authorization challenges don't replace the need to renew a subscription before it expires.
 
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that doesn't have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](change-notifications-delivery-webhooks.md#renew-a-subscription) before they expire.
+    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that doesn't have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](/graph/api/subscription-update) before they expire.
 
 - The frequency of authorization challenges is subject to change.
 
@@ -188,17 +186,19 @@ The following flow shows the flow of a **subscriptionRemoved** event:
     There's no set cadence for these events. They might occur frequently for some resources, and almost never for others.
 
 2. Microsoft Graph sends a `subscriptionRemoved` lifecycle notification to the **lifecycleNotificationUrl** (if specified).  
+    
+    No lifecycle notifications are available from the period when the `subscriptionRemoved` lifecycle notification was sent to when the app recreates the subscription successfully. The app needs to fetch those changes on its own.
 
 ### Actions to take
 
-1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted`.
+1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted` response code.
 2. Validate the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step.
 4. Create a new subscription.
 
-    - This action might fail, because the authorization checks performed by the system might deny the app access to the resource. It might be necessary for the app to obtain a new access token to successfully reauthorize a subscription. You can retry these actions later, at any time; for example, when the conditions of access have changed. No lifecycle notifications are available from the period when the `subscriptionRemoved` lifecycle notification was sent to when the app recreates the subscription successfully. The app needs to fetch those changes on its own.
+    This action might fail, because the authorization checks performed by the system might deny the app access to the resource. It might be necessary for the app to obtain a new access token to successfully reauthorize a subscription. You can retry these actions later, at any time; for example, when the conditions of access have changed.
 
-5. After creating the new subscription, you can sync the resource data to identify any missing changes; for example using the [delta query](/graph/delta-query-overview).
+5. After creating the new subscription, you can sync the resource data to identify any missed change notifications; for example using the [delta query](/graph/delta-query-overview).
 
 ## Responding to missed notifications
 
@@ -206,7 +206,7 @@ The following flow shows the flow of a **subscriptionRemoved** event:
 
 ### Actions to take
 
-1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted`.
+1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted` response code.
 2. Validate the authenticity of the lifecycle notification.
 3. Perform a full data resync of the resource to identify the changes that weren't delivered as notifications; for example, using the [delta query](/graph/delta-query-overview).
 

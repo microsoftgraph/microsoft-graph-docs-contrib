@@ -99,7 +99,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/subscriptions/fddf9ac7-44ee-480d-b304-6cc4057b7f5a/reauthorize
+POST https://graph.microsoft.com/beta/subscriptions/{subscriptionsId}/reauthorize
 ```
 
 
