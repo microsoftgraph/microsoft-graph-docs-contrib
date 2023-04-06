@@ -65,7 +65,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_verticalsection"
+  "name": "get_verticalsection_e1"
 }
 -->
 
@@ -133,7 +133,7 @@ With `select` and `expand` statements, you can retrieve verticalSection metadata
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_verticalsection"
+  "name": "get_verticalsection_e2"
 }
 -->
 
