@@ -1,6 +1,6 @@
 ---
 title: "List deviceLocalCredentials"
-description: "Get a list of deviceLocalCredentials (excluding passwords) and their properties."
+description: "Get a list of deviceLocalCredentialInfo and their properties excluding deviceLocalCredential ."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [deviceLocalCredentials](../resources/devicelocalcredentialinfo.md) objects and their properties excluding local admin passwords. 
+Get a list of the [**deviceLocalCredentialInfo**](../resources/devicelocalcredentialinfo.md) objects and their properties excluding [**deviceLocalCredential**](../resources/devicelocalcredential.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
 
-For delegated permissions to allow apps to get [**deviceCredentialInfo**](../resources/devicelocalcredentialinfo.md) resources excluding [**deviceCredential**](../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles:
+For delegated permissions to allow apps to get [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) resources excluding [deviceLocalCredential](../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles:
 
 * Global administrator
 * Cloud device administrator
@@ -34,7 +34,7 @@ For delegated permissions to allow apps to get [**deviceCredentialInfo**](../res
 * Global reader
 
 ## HTTP request
-To get a list of deviceLocalCredentials within the tenant:
+To get a list of deviceLocalCredentialInfo within the tenant:
 
 <!-- {
   "blockType": "ignored"
@@ -59,7 +59,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects excluding [**deviceCredential**](../resources/devicelocalcredential.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects excluding [deviceLocalCredential](../resources/devicelocalcredential.md) objects in the response body.
 
 ## Examples
 
@@ -69,8 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
-  "name": "get_deviceLocalCredentials"
+  "blockType": "request"
 }
 -->
 ``` http
@@ -98,14 +97,14 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
       "id": "String (identifier)",
-      "deviceName": "TString"
+      "deviceName": "String"
       "lastBackupDateDateTime": "DateTimeOffset",
       "refreshDateDateTime": "DateTimeOffset"
     },
     {
       "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
       "id": "String (identifier)",
-      "deviceName": "TString"
+      "deviceName": "String"
       "lastBackupDateDateTime": "DateTimeOffset",
       "refreshDateDateTime": "DateTimeOffset"
     }
