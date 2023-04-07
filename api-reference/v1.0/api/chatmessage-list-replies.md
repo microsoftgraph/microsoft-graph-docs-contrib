@@ -133,7 +133,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
                     "userIdentityType": "aadUser",
@@ -173,7 +173,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
                     "userIdentityType": "aadUser",
@@ -213,7 +213,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
                     "userIdentityType": "aadUser",
