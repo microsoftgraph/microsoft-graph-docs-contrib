@@ -18,8 +18,8 @@ Represents deviceLocalCredentials including metadata and the actual password for
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceLocationCredentials](../api/laps-devicelocalcredentails-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcedentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredentials.md) objects and their properties.|
-|[Get deviceLocalCredentials](../api/laps-devicelocalcredentails-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcedentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
+|[List deviceLocationCredentials](../api/laps-devicelocalcredentials-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredentials.md) objects and their properties.|
+|[Get deviceLocalCredentials](../api/laps-devicelocalcredentials-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
 
 > **Note**: Only some roles have the permissions to call these APIs.
 
@@ -58,4 +58,3 @@ The following is a JSON representation of the resource.
     }
 }
 ```
-
