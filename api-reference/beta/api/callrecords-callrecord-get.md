@@ -20,6 +20,8 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
+The `$expand` query parameter can be used to optionally include session and segment details as illustrated in the [Get full details](#example-2-get-full-details) example below. When expanding session details, the maximum page size is 60 sessions.
+
 > [!WARNING]
 >
 > A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
@@ -46,11 +48,18 @@ GET /communications/callRecords/{id}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+| Name      |Description|
+|:----------|:----------|
+| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. |
+| $expand | Use the `$expand` query parameter to include the expanded resource or collection referenced by a single relationship in your results. |
+
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
+| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinal value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 
 ## Request body
 
