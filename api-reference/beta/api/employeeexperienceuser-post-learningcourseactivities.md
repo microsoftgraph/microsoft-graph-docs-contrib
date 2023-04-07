@@ -137,7 +137,7 @@ Content-Type: application/json
   "dueDateTime": {
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"
-  }
+  },
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
