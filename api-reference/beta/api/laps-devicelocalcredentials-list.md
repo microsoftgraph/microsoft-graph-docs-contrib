@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List recoveryKeys
+# List deviceLocalCredentials
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -95,18 +95,16 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
-      "id": "String (identifier)",
-      "deviceName": "String"
-      "lastBackupDateDateTime": "DateTimeOffset",
-      "refreshDateDateTime": "DateTimeOffset"
+      "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+      "deviceName": "LAPS_TEST",
+      "lastBackupDateTime": "2023-04-21T13:45:30.0000000Z",
+      "refreshDateTime": "2020-05-20T13:45:30.0000000Z"
     },
     {
-      "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
-      "id": "String (identifier)",
-      "deviceName": "String"
-      "lastBackupDateDateTime": "DateTimeOffset",
-      "refreshDateDateTime": "DateTimeOffset"
+      "id": "c9a5d9e6-d2bd-4ff6-8a47-38b98800600c",
+      "deviceName": "LAPS_TEST2",
+      "lastBackupDateTime": "2023-04-21T13:45:30.0000000Z",
+      "refreshDateTime": "2020-05-20T13:45:30.0000000Z"
     }
   ]
 }
