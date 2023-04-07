@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_onpremisesdirectorysynchronization"
+  "name": "get_onpremisesdirectorysynchronization_e1"
 }
 -->
 ``` http

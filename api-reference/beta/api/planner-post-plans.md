@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_plannerplan_from_planner"
+  "name": "create_plannerplan_from_planner_e1"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans

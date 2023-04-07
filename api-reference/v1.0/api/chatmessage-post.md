@@ -163,7 +163,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -281,7 +281,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -414,7 +414,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -538,7 +538,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -664,7 +664,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -790,7 +790,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -920,7 +920,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -1058,7 +1058,7 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
             "userIdentityType": "aadUser",
@@ -1373,6 +1373,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_11",
@@ -1390,6 +1391,32 @@ Content-type: application/json
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-11-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-11-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-11-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-11-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-11-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
