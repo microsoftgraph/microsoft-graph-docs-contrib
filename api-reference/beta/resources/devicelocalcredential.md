@@ -1,6 +1,6 @@
 ---
 title: "deviceLocalCredential resource type"
-description: "Represents device local credential of a device object in Azure Active Directory that is enabled with Local Admin PAssword Solution (LAPS).
+description: "Represents device local credential of a device object in Azure Active Directory that is enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceLocalCredential",
   "accountName": "String"
   "accountSid": "String"
-  "backupDateDateTime": "DateTimeOffset",
+  "backupDateTime": "DateTimeOffset",
   "passwordBase64": "String"
 }
 ```
