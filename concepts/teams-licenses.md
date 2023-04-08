@@ -14,11 +14,11 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 
 The following table lists the APIs that currently support payment models.
 
-| Scenario | APIs |
-|:---------|:-----|
-|[Export Teams content](/microsoftteams/export-teams-content)| [channel: getAllMessages](/graph/api/channel-getallmessages)</br>[chats: getAllMessages](/graph/api/chats-getallmessages) |
-| Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
-| [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
+| Scenario | APIs | Payment Models |
+|:---------|:-----|:---------------|
+|[Export Teams content](/microsoftteams/export-teams-content)| [GET /users/{id}/chats/getAllMessages](/graph/api/chats-getallmessages)</br>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)TODO?</br>[GET /teams/{id}/channels/getAllMessages](/graph/api/channel-getallmessages) | A, B |
+| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) | [PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</br>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</br>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update) | A |
+| [Change notifications](/graph/api/subscription-post-subscriptions) | "resource":</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) | A?TODO, B |
 
 > [!NOTE]
 > Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
