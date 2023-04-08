@@ -1,6 +1,6 @@
 ---
 title: "deviceLocalCredentialInfo resource type"
-description: "Local Admin Password Solution (LAPS) password recovery resource"
+description: "Represents device local credential info of all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -18,7 +18,7 @@ Represents deviceLocalCredentials including metadata and the actual password for
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceLocationCredentials](../api/laps-devicelocalcredentials-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredentials.md) objects and their properties.|
+|[List deviceLocationCredentials](../api/laps-devicelocalcredentials-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
 |[Get deviceLocalCredentials](../api/laps-devicelocalcredentials-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
 
 > **Note**: Only some roles have the permissions to call these APIs.
@@ -51,8 +51,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
   "id": "String (identifier)",
   "deviceName": "TString"
-  "lastBackupDateDateTime": "DateTimeOffset",
-  "refreshDateDateTime": "DateTimeOffset",
+  "lastBackupDateTime": "DateTimeOffset",
+  "refreshDateTime": "DateTimeOffset",
   "credentials": {
     "@odata.type": "microsoft.graph.deviceLocalCredential"
     }
