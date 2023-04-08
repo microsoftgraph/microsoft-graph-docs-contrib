@@ -1,9 +1,9 @@
 ---
 title: "filePlanReferenceTemplate resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -16,23 +16,22 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).
+Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filePlanReferenceTemplates](../api/security-fileplandescriptor-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get a list of the [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) objects and their properties.|
-|[Create filePlanReferenceTemplate](../api/security-fileplandescriptor-post-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
-|[Get filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-get.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Read the properties and relationships of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
-|[Update filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-update.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Update the properties of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
-|[Delete filePlanReferenceTemplate](../api/security-fileplandescriptor-delete-fileplanreferencetemplate.md)|None|Delete a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
+|[List filePlanReferenceTemplates](../api/security-fileplandescriptor-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) collection|Get a list of the [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) objects and their properties.|
+|[Create filePlanReferenceTemplate](../api/security-fileplandescriptor-post-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md)|Create a new [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) object.|
+|[Get filePlanReferenceTemplate](../api/security-fileplandescriptor-fileplanreferencetemplate-get.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md)|Read the properties and relationships of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) object.|
+|[Delete filePlanReferenceTemplate](../api/security-fileplandescriptor-delete-fileplanreferencetemplate.md)|None|Delete a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships

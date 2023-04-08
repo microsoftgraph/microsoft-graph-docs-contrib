@@ -1,9 +1,9 @@
 ---
 title: "subCategoryTemplate resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -16,23 +16,22 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).
+Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List subCategoryTemplates](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) objects and their properties.|
-|[Create subCategoryTemplate](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
-|[Get subCategoryTemplate](../api/security-subcategorytemplate-get.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
-|[Update subCategoryTemplate](../api/security-subcategorytemplate-update.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Update the properties of a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
-|[Delete subCategoryTemplate](../api/security-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[List subCategoryTemplates](../api/security-fileplandescriptor-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) objects and their properties.|
+|[Create subCategoryTemplate](../api/security-fileplandescriptor-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md)|Create a new [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
+|[Get subCategoryTemplate](../api/security-fileplandescriptor-subcategorytemplate-get.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
+|[Delete subCategoryTemplate](../api/security-fileplandescriptor-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships

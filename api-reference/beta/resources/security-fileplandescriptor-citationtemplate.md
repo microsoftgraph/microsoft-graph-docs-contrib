@@ -1,9 +1,9 @@
 ---
 title: "citationTemplate resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -16,25 +16,24 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).
+Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List citationTemplates](../api/security-fileplandescriptor-list-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.|
-|[Create citationTemplate](../api/security-fileplandescriptor-post-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Get citationTemplate](../api/security-citationtemplate-get.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Update citationTemplate](../api/security-citationtemplate-update.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Update the properties of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Delete citationTemplate](../api/security-fileplandescriptor-delete-citationtemplate.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[List citationTemplates](../api/security-fileplandescriptor-list-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) objects and their properties.|
+|[Create citationTemplate](../api/security-fileplandescriptor-post-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.|
+|[Get citationTemplate](../api/security-fileplandescriptor-citationtemplate-get.md)|[microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md)|Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.|
+|[Delete citationTemplate](../api/security-fileplandescriptor-delete-citationtemplate.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |citationJurisdiction|String|**TODO: Add Description**|
 |citationUrl|String|**TODO: Add Description**|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptort.md).|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships

@@ -1,9 +1,9 @@
 ---
 title: "departmentTemplate resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -16,23 +16,22 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).
+Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List departmentTemplates](../api/security-fileplandescriptor-list-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) objects and their properties.|
-|[Create departmentTemplate](../api/security-fileplandescriptor-post-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
-|[Get departmentTemplate](../api/security-departmenttemplate-get.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Read the properties and relationships of a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
-|[Update departmentTemplate](../api/security-departmenttemplate-update.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Update the properties of a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
-|[Delete departmentTemplate](../api/security-fileplandescriptor-delete-departmenttemplate.md)|None|Delete a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
+|[List departmentTemplates](../api/security-fileplandescriptor-list-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) collection|Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) objects and their properties.|
+|[Create departmentTemplate](../api/security-fileplandescriptor-post-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md)|Create a new [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.|
+|[Get departmentTemplate](../api/security-fileplandescriptor-departmenttemplate-get.md)|[microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md)|Read the properties and relationships of a [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.|
+|[Delete departmentTemplate](../api/security-fileplandescriptor-delete-departmenttemplate.md)|None|Delete a [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
