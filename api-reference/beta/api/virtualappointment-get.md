@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION] 
-  > The Virtual appointment resource is deprecated and will stop returning data on May 31, 2023. Existing apps that use this feature should be updated to the new [Virtual appointment API](api-reference/beta/api/virtualappointment-getvirtualappointmentjoinweburl.md).
+  > The Virtual appointment resource is deprecated and will stop returning data on May 31, 2023. Existing apps that use this feature should be updated to the new [Virtual appointment API](../api/virtualappointment-getvirtualappointmentjoinweburl.md).
 
 Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.
 
