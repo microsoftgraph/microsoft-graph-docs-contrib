@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|
+
 ### appCredentialRestrictionType values
 
 | Member               |
