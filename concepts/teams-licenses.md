@@ -14,11 +14,16 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 
 The following table lists the APIs that currently support payment models.
 
-| Scenario | APIs | Payment Models |
+| Scenario | APIs or resources | Payment Models |
 |:---------|:-----|:---------------|
-|[Export Teams content](/microsoftteams/export-teams-content)| [GET /users/{id}/chats/getAllMessages](/graph/api/chats-getallmessages)</br>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)TODO?</br>[GET /teams/{id}/channels/getAllMessages](/graph/api/channel-getallmessages) | A, B |
-| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) | [PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</br>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</br>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update) | A |
-| [Change notifications](/graph/api/subscription-post-subscriptions) | "resource":</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) | A?TODO, B |
+|[Get messages across all channels](/graph/api/channel-getallmessages)| APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li></ul> | A, B |
+|[Get messages across all chats for user](/graph/api/chats-getallmessages)| APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)TODO?</li></ul> | A, B |
+| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) | APIs: <ul><li>[PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
+| [Change notifications for `chatMessage`](/graph/api/subscription-post-subscriptions) | `resources`: <ul><li>/teams/getAllMessages</li><li>/chats/getAllMessges</li></ul> | A, B |
+| [Change notifications for `conversationMember`](/graph/api/subscription-post-subscriptions) | `resources`: <ul><li>/teams/getAllMembers</li><li>/chats/getAllMembers</li></ul> | A, B |
+| [Change notifications for `chatMessage` for user](/graph/api/subscription-post-subscriptions) | `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li></ul> | B |
+| [Change notifications for `chatMessage` for app](/graph/api/subscription-post-subscriptions) | `resources`: <ul><li>/appCatalogs/teamsApps/{app-id}/installedToChat</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
+
 
 > [!NOTE]
 > Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
@@ -51,7 +56,7 @@ The following APIs support the `model=A` parameter.
 | conversationMember change notifications | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Requests returning an empty list, will be charged 1 message. Seeded capacity is shared with channel export. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message | Requests returning an empty list will be charged 1 message. Seeded capacity is shared with chat export. |
-| [Updat a chatMessage policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
+| [Update a chatMessage policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 #### Required licenses for `model=A` 
 
