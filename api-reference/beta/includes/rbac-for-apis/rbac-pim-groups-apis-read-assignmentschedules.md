@@ -7,4 +7,5 @@ ms.author: ilyalushnikov
 
 The calling user must also be the owner or member of the group or be assigned one of the following Azure AD Roles: <br/><ul><li> For role-assignable groups: *Global Reader* or *Privileged Role Administrator*</li><li> For non-role-assignable groups: *Global Reader*, *Directory Writer*, *Groups Administrator*, *Identity Governance Administrator*, or *User Administrator*</li></ul>
 The role assignments for the calling user should be scoped at directory level.
+
 **Note:** Other roles with permissions to manage groups (such as Exchange Administrators) and administrators with assignments scoped at administrative unit level can manage groups through groups API and override changes made in Azure AD PIM through PIM for groups API.
