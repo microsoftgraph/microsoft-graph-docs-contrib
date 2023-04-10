@@ -32,7 +32,6 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
-| allowAccessToMeetingChatHistory | Boolean | Indicates whether attendees can access meeting chat history. |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
@@ -57,6 +56,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingChatHistoryDefaultMode-values) | Specifies whether meeting chat history is shared with participants. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
@@ -92,6 +92,14 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
 | unknownFutureValue | Unknown future value.                                                  |
 
+### meetingChatHistoryDefaultMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meting chat history is shared.                                      |
+| unknownFutureValue | Unknown future value.                                                  |
+
 ## Relationships
 
 | Relationship | Type | Description |
@@ -117,7 +125,6 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 }-->
 ```json
 {
-  "allowAccessToMeetingChatHistory": "Boolean",
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
@@ -140,6 +147,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "recording": "Stream",
+  "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
   "startDateTime": "String (timestamp)",  
   "subject": "String",
   "videoTeleconferenceId": "String",
