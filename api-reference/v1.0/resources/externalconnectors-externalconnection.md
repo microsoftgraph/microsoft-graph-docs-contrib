@@ -53,16 +53,16 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "activitySettings": {
-    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
-  }
-  "description": "String",
   "id": "String (identifier)",
   "name": "String",
+  "description": "String",
+  "state": "String",
   "searchSettings": {
     "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
   },
-  "state": "String",
+  "activitySettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
+  }
 }
 ```
 
