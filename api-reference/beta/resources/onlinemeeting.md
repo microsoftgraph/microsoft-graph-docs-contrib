@@ -56,7 +56,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
-| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingChatHistoryDefaultMode-values) | Specifies whether meeting chat history is shared with participants. |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
