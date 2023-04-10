@@ -45,7 +45,7 @@ If successful, this method returns `200 OK` response code and [audioRoutingGroup
 
 ### Example 1: One-to-one audio routing group
 
-##### Request
+#### Request
 The following example shows the request.
 
 
@@ -100,7 +100,7 @@ Content-Length: 233
 
 In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -127,7 +127,7 @@ Content-Length: 233
 ```
 ### Example 2: Multicast audioRoutingGroup
 
-##### Request
+#### Request
 The following example shows the request.
 
 ```http
@@ -158,7 +158,7 @@ Content-Length: 233
 
 In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

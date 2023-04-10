@@ -43,7 +43,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGr
 ---
 
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

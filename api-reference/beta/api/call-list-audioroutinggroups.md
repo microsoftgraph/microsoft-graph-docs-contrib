@@ -56,7 +56,7 @@ The following is an example of a request.
   "name": "get-audioRoutingGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/communications/calls/{id}/audioRoutingGroups
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
 
 # [C#](#tab/csharp)
