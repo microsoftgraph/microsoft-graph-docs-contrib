@@ -79,15 +79,15 @@ The following Microsoft Graph permissions are required to call the PIM for group
 
 | Permission | Supported operations | Endpoints |
 |---|---|---|
-| PrivilegedAssignmentSchedule.Read.AzureADGroup | LIST, GET | assignmentSchedule <br/> assignmentScheduleInstance |
-| PrivilegedEligibilitySchedule.Read.AzureADGroup | LIST, GET | eligibilitySchedule <br/> eligibilityScheduleInstance |
-| PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup  | CREATE, LIST, GET, UPDATE, DELELE | assignmentSchedule <br/> assignmentScheduleInstance <br/> assignmentScheduleRequest |
-| PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup  | CREATE, LIST, GET, UPDATE, DELELE | eligibilitySchedule <br/> eligibilityScheduleInstance <br/> eligibilityScheduleRequest |
+| assignmentSchedule <br/> assignmentScheduleInstance | LIST, GET | PrivilegedAssignmentSchedule.Read.AzureADGroup <br/> PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| assignmentScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| eligibilitySchedule <br/> eligibilityScheduleInstance | LIST, GET | PrivilegedEligibilitySchedule.Read.AzureADGroup <br/> PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
+| eligibilityScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
 
 
-In addition, for delegated scenarios, the calling principal requires one of the following roles.
+In addition, for delegated scenarios, the calling principal needs one of the following roles.
 
-| Group type | Role | Supported operations |
+| Group | Role | Supported operations |
 |---|---|---|
 | Role-assignable | Privileged Role Administrator <br/> Group owner* <br/> Group member* | CREATE, UPDATE, DELELE |
 | Role-assignable | Global Reader <br/> Privileged Role Administrator <br/> Group owner* <br/> Group member* | LIST, GET |
@@ -96,10 +96,6 @@ In addition, for delegated scenarios, the calling principal requires one of the 
 
 `*` Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) but not any other principal's request.
 
-<!--## Licensing
-
-The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
--->
 
 ## See also
 
