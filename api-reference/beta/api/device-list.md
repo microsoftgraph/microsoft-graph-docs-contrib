@@ -26,6 +26,35 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* Users
+* Directory Readers
+* Directory Writers
+* Compliance Administrator
+* Device Managers
+* Application Administrator
+* Security Reader
+* Security Administrator
+* Privileged Role Administrator
+* Cloud Application Administrator
+* Customer LockBox Access Approver
+* Dynamics 365 Administrator
+* Power BI Administrator
+* Desktop Analytics Administrator
+* Microsoft Managed Desktop Administrator
+* Teams Communications Administrator
+* Teams Communications Support Engineer
+* Teams Communications Support Specialist
+* Teams Administrator
+* Compliance Data Administrator
+* Security Operator
+* Kaizala Administrator
+* Global Reader
+* Directory Reviewer
+* Windows 365 Administrator
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -63,7 +92,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_devices"
+  "name": "get_devices_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices
@@ -135,7 +164,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_count_only"
+  "name": "get_count_only_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/$count
@@ -167,7 +196,7 @@ Content-type: text/plain
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_devices_select"
+  "name": "get_devices_select_e3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
@@ -198,7 +227,6 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -250,7 +278,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_devices_startswith"
+  "name": "list_devices_startswith_e4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
@@ -282,7 +310,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -337,7 +364,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_video_count"
+  "name": "get_video_count_e5"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$search="displayName:Android"&$count=true
@@ -388,7 +415,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_devices_by_extensionAttribute"
+  "name": "get_devices_by_extensionAttribute_e6"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttribute1 eq 'BYOD-Device'&$count=true
@@ -420,7 +447,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

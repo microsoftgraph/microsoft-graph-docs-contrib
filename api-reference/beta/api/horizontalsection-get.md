@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_horizontalsection"
+  "name": "get_horizontalsection_e1"
 }
 -->
 
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -137,7 +136,7 @@ With `select` and `expand` statements, you can retrieve horizontalSection metada
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_horizontalsection"
+  "name": "get_horizontalsection_e2"
 }
 -->
 
@@ -170,7 +169,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLa
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

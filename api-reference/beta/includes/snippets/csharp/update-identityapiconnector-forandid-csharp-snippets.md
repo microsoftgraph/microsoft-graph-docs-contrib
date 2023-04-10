@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityApiConnector = new IdentityApiConnector
+var requestBody = new IdentityApiConnector
 {
 	DisplayName = "New Test API",
 	TargetUrl = "https://otherapi.com/api/endpoint",
-	AuthenticationConfiguration = new BasicAuthentication
+	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
 	{
-		Username = "<NEW_USERNAME>",
-		Password = "<NEW_PASSWORD>"
-	}
+		OdataType = "microsoft.graph.basicAuthentication",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"username" , "<NEW_USERNAME>"
+			},
+			{
+				"password" , "<NEW_PASSWORD>"
+			},
+		},
+	},
 };
+var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"]
-	.Request()
-	.UpdateAsync(identityApiConnector);
 
 ```

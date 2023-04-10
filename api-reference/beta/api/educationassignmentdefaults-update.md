@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_educationassignmentdefaults"
+  "name": "update_educationassignmentdefaults_e1"
 }
 -->
 ``` http
@@ -100,8 +100,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

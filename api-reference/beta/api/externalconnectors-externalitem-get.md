@@ -69,7 +69,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_externalitem",
+  "name": "get_externalitem_e1",
   "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 ### Response

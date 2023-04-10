@@ -65,7 +65,7 @@ If successful, this method returns a `200 Ok` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_acronym_from_acronyms"
+  "name": "create_acronym_from_acronyms_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/search/acronyms
@@ -105,8 +105,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 Here is an example of the response.

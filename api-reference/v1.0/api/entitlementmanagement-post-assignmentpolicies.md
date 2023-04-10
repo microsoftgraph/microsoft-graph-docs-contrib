@@ -114,10 +114,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -139,7 +135,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -168,7 +163,7 @@ The following example shows a more complex policy with two stages of approval an
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_2"
 }
 -->
@@ -310,7 +305,7 @@ The following example shows a policy that automatically creates assignments for 
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_autoassignment"
 }
 -->
@@ -367,7 +362,7 @@ The following example shows a policy that automatically creates assignments for 
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_autoassignment"
 }
 -->

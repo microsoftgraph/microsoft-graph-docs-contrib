@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_samlorwsfedexternaldomainfederation_from_"
+  "name": "create_samlorwsfedexternaldomainfederation_from_e1"
 }
 -->
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-samlorwsfedexternaldomainfederation-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-samlorwsfedexternaldomainfederation-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -111,7 +115,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

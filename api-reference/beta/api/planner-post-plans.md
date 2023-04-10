@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_plannerplan_from_planner"
+  "name": "create_plannerplan_from_planner_e1"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
@@ -106,7 +106,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

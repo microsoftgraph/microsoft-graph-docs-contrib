@@ -71,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_mailfolders"
+  "name": "get_mailfolders_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders
@@ -228,7 +228,7 @@ The next example uses the `includeHiddenFolders` query parameter to get a list o
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_hiddenmailfolders"
+  "name": "get_hiddenmailfolders_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
@@ -259,7 +259,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

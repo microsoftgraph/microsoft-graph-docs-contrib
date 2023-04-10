@@ -219,6 +219,10 @@ Content-type: application/json
             "value":"True"
           }
         ],
+      "managedServiceIdentity":{
+          "msiType":"systemAssigned",
+          "associatedResourceId":"/subscriptions/a89523b8-b5db-4697-9c1b-2f7dcfd074d9/resourcegroups/Scenario-TestRPToKeyVaultSAJob_USCentral/providers/Providers.Test/msiStateful/testrp30964"
+      },
       "networkLocationDetails":[
           {
             "networkType":"namedNetwork",
@@ -258,7 +262,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDi
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -282,7 +286,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -416,7 +419,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-ne-noninteractiveuser-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -440,8 +443,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

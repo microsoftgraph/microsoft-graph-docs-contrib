@@ -75,7 +75,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_plannerplanconfigurationlocalization",
+  "name": "list_plannerplanconfigurationlocalization_e1",
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -197,7 +196,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_plannerplanconfigurationlocalization",
+  "name": "list_plannerplanconfigurationlocalization_e2",
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
@@ -230,7 +229,6 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups or administrative units that this device is a direct member of. This operation is not transitive."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -244,7 +243,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

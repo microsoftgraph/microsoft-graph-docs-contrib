@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_userflowlanguageconfiguration",
+  "name": "delete_userflowlanguageconfiguration_1",
   "sampleKeys": ["B2C_1_Customer", "es-ES"]
 }
 -->
@@ -101,7 +101,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

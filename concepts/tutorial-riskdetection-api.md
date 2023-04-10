@@ -80,7 +80,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -153,7 +152,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -281,7 +279,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response 
 <!-- {
   "blockType": "response",
@@ -386,7 +383,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -436,7 +432,7 @@ Instead of providing the opportunity for the user to self-remediate, you can blo
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
+  "name": "tutorial_riskdetection_block_user"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
@@ -493,7 +489,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 <!-- {
@@ -603,7 +598,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -652,7 +646,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userD
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {
@@ -724,7 +717,6 @@ DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806
 
 ---
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -773,7 +765,6 @@ DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-144572767
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 <!-- {

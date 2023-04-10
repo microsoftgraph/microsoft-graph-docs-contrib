@@ -11,6 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CreateNewVersionPostRequestBody();
 $workflow = new Workflow();
+$workflow->setCategory(new LifecycleWorkflowCategory('joiner'));
+
 $workflow->setDescription('Configure new hire tasks for onboarding employees on their first day');
 
 $workflow->setDisplayName('Global onboard new hire employee');
@@ -84,7 +86,7 @@ $workflow->setTasks($tasksArray);
 $requestBody->setWorkflow($workflow);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->createNewVersion()->post($requestBody);
+$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->identityGovernanceCreateNewVersion()->post($requestBody);
 
 
 ```

@@ -98,8 +98,6 @@ Content-length: 106
 
 ---
 
-
-
 ### Response
 
 <!-- {
