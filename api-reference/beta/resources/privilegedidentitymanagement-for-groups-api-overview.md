@@ -77,7 +77,7 @@ PIM APIs support organizations to adopt a Zero Trust approach to secure the iden
 
 The following Microsoft Graph permissions are required to call the PIM for groups APIs.
 
-| Permission | Supported operations | Endpoints |
+| Endpoints | Supported operations | Permissions |
 |---|---|---|
 | assignmentSchedule <br/> assignmentScheduleInstance | LIST, GET | PrivilegedAssignmentSchedule.Read.AzureADGroup <br/> PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
 | assignmentScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
