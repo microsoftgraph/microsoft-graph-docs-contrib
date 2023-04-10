@@ -1,5 +1,6 @@
 {
     "pathsToIgnore": [
+        "adaptive-cards",
         "/aspnet",
         "/azure",
         "/compliance",
