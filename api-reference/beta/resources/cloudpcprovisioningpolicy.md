@@ -80,6 +80,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
   "alternateResourceUrl": "String",
   "cloudPcGroupDisplayName": "String",
+  "cloudPcNamingTemplate": String
   "description": "String",
   "displayName": "String",
   "domainJoinConfiguration": {
