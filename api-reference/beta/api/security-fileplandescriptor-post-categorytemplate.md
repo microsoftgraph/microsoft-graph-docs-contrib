@@ -1,9 +1,9 @@
 ---
 title: "Create categoryTemplate"
 description: "Create a new microsoft.graph.security.categoryTemplate object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.
+Create a new [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,22 +40,22 @@ POST /security/labels/categories
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object.
 
 You can specify the following properties when creating a **categoryTemplate**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptortemplate.md). Optional.|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object in the response body.
 
 ## Examples
 

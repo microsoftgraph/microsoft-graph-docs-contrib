@@ -1,9 +1,9 @@
 ---
 title: "List subCategories"
 description: "Get the subCategoryTemplate resources from the subCategories navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [subCategoryTemplate](../resources/subcategorytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) objects in the response body.
 
 ## Examples
 

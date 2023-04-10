@@ -1,9 +1,9 @@
 ---
 title: "List departmentTemplates"
 description: "Get a list of the microsoft.graph.security.departmentTemplate objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) objects and their properties.
+Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [departmentTemplate](../resources/departmenttemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) objects in the response body.
 
 ## Examples
 
