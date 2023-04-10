@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and the newly c
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chat_oneOnOne"
+  "name": "create_chat_oneOnOne_e1"
 }
 -->
 ``` http
@@ -397,7 +397,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chat_oneOnOne_federated"
+  "name": "create_chat_oneOnOne_federated_e5"
 }
 -->
 ``` http

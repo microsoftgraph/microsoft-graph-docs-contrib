@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_inboundfileflow"
+  "name": "update_inboundfileflow_e1"
 }
 -->
 
@@ -95,6 +95,10 @@ Content-length: 246
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-inboundfileflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-inboundfileflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

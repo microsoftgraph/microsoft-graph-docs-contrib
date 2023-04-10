@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **user** property on the [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessagefromidentityset?view=graph-rest-1.0) resource from **identitySet** to **teamworkUserIdentitySet**.",
+          "Target": "chatMessageFromIdentitySet"
+        },
+        {
+          "Id": "1e5ea407-c4ec-42fc-a09e-b7849f7dd9f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [teamworkUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkuseridentity?view=graph-rest-1.0) resource.",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **user** property [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessagefromidentityset?view=graph-rest-beta) from **identitySet** to **teamworkUserIdentitySet**..",
+          "Target": "chatMessageFromIdentitySet"
+        },
+        {
+          "Id": "bc4785cb-8b28-40f8-b726-e459f4375b23",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [teamworkUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkuseridentity?view=graph-rest-beta) resource.",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-31T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
           "ApiChange": "Parameter",
           "ChangedApiName": "chatMessage",
@@ -6037,8 +6089,8 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },    
-	  {
+    },
+    {
       "ChangeList": [
         {
           "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
@@ -6072,7 +6124,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-10-20T20:34:40.595Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "" 
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -6273,6 +6325,23 @@
       "CreatedDateTime": "2023-02-23T10:11:41.458Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    { "ChangeList": [ 
+        { 
+          "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+          "ApiChange": "Property", 
+          "ChangedApiName": "metadataContent", 
+          "ChangeType": "Addition", 
+          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
+          "Target": "callTranscript" 
+        } 
+      ], 
+      "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+      "Cloud": "prd", 
+      "Version": "beta", 
+      "CreatedDateTime": "2023-04-05T12:44:49.407Z", 
+      "WorkloadArea": "Teamwork and communications", 
+      "SubArea": "Calls and online meetings"
     }
   ]
 }

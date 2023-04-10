@@ -67,7 +67,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_recommendation"
+  "name": "list_recommendation_e1"
 }
 -->
 ``` http
@@ -174,7 +174,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_recommendation"
+  "name": "get_recommendation_e2"
 }
 -->
 ``` http
@@ -278,7 +278,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_recommendation"
+  "name": "get_recommendation_e3"
 }
 -->
 ``` http

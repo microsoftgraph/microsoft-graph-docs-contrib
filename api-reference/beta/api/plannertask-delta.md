@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannertaskthis.delta"
+  "name": "plannertaskthis_delta_e1"
 }
 -->
 
@@ -233,7 +233,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannertaskthis.delta"
+  "name": "plannertaskthis_delta_e2"
 }
 -->
 
