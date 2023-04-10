@@ -73,7 +73,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b", "01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ"],
-  "name": "workbook_tablerowoperationresult"
+  "name": "workbook_tablerowoperationresult_e1"
 }
 -->
 ``` http

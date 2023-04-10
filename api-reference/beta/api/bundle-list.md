@@ -66,7 +66,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
+<!-- { "blockType": "request", "name": "list-all-bundles_e1", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
@@ -126,7 +126,7 @@ To filter the list of bundles returned from a request to the bundles collection,
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
+<!-- {"blockType": "request", "name": "list-album-bundles-e2", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null

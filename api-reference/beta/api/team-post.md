@@ -64,7 +64,7 @@ The following is an example of a minimal request. By omitting other properties, 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post"
+  "name": "create_team_post_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -109,8 +109,8 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -131,7 +131,7 @@ The following is an example of a minimal request using application permissions. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_minimal"
+  "name": "create_team_post_minimal_e2"
 }-->
 
 ```http
@@ -182,8 +182,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_minimal"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -203,7 +203,7 @@ The following is a request with a full payload. The client can override values i
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_full_payload"
+  "name": "create_team_post_full_payload_e3"
 }-->
 
 ```http
@@ -300,7 +300,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-full-payload-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -319,8 +319,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_full_payload"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -346,7 +346,7 @@ A few things to note about this call:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_from_group"
+  "name": "create_team_from_group_e4"
 }-->
 
 ```http
@@ -387,8 +387,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_from_group"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -410,7 +410,7 @@ To learn more about supported base template types and supported properties, see 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_group"
+  "name": "convert_team_from_group_e5"
 }-->
 
 ```http
@@ -476,8 +476,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_group"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -501,7 +501,7 @@ To learn more about supported base template types, see [Get started with Teams t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_non_standard"
+  "name": "convert_team_from_non_standard_e6"
 }-->
 
 ```http
@@ -543,8 +543,74 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_non_standard"
+  "blockType": "response", 
+  "truncated": true
+}-->
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+Content-Length: 0
+```
+### Example 7: Create a team with a localized non-standard base template type 
+Base template types can be localized to your preferred language choice, which enables you to create templates in your preferred language. 
+
+Choose your team template from the defintion list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard_localized_e7"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+
+    "templateDefinition@odata.bind": "https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.template.ManageAProject/definitions/Y29tLm1pY3Jvc29mdC50ZWFtcy50ZW1wbGF0ZS5NYW5hZ2VBUHJvamVjdCMjUHVibGljIyNhci1TQQ==",
+
+    "displayName": "My Sample Team",
+
+    "description": "My Sample Team’s Description"
+
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-localized-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-team-from-non-standard-localized-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response", 
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -554,7 +620,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 7: Create a team with a non-standard base template type with extended properties
+### Example 8: Create a team with a non-standard base template type with extended properties
 
 Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
 
@@ -565,7 +631,7 @@ To learn more about supported base template types and supported properties, see 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "convert_team_from_non_standard2"
+  "name": "convert_team_from_non_standard2_e8"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -631,8 +697,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "convert_team_from_non_standard2",
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http
@@ -643,7 +709,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### Example 8: Create a team in migration mode
+### Example 9: Create a team in migration mode
 
 #### Request
 
@@ -652,6 +718,11 @@ The following example shows how to create a team for imported messages.
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_team_in_migration_mode_e9"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -667,6 +738,11 @@ Content-Type: application/json
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response", 
+  "truncated": true
+}-->
 
 ```http
 HTTP/1.1 202 Accepted
@@ -687,7 +763,7 @@ The following are common reasons for this response:
 * **createdDateTime** is set in the future.
 * **createdDateTime** is correctly specified but the **teamCreationMode** instance attribute is missing or set to an invalid value.
 
-### Example 9: Application permissions using user principal name
+### Example 10: Application permissions using user principal name
 
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
@@ -697,7 +773,7 @@ The following is an example of a minimal request using application permissions. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_upn"
+  "name": "create_team_post_upn_e10"
 }-->
 
 ```http
@@ -748,8 +824,8 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "name": "create_team_post_upn"
+  "blockType": "response", 
+  "truncated": true
 }-->
 
 ```http

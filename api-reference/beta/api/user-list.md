@@ -38,7 +38,7 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively, except when you specify `$select=signInActivity` or `$filter=signInActivity`. When `signInActivity` is selected or filtered on, the maximum page size is 120. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
 
 [Extension properties](/graph/extensibility-overview) also support query parameters, in some cases, only with advanced query parameters. For more information, see [support for `$filter` by extension properties](/graph/aad-advanced-queries#:~:text=The%20following%20table%20shows%20support%20for%20%24filter%20by%20extension%20properties%20on%20the%20user%20object.).
 
@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users
@@ -148,7 +148,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signinname_users"
+  "name": "get_signinname_users_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
@@ -211,13 +211,13 @@ Content-type: application/json
 
 The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
 
->**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving the **signInActivity** property.
+>**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will fail. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. 
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_last_time"
+  "name": "get_signin_last_time_e3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName,signInActivity
@@ -270,6 +270,7 @@ Content-type: application/json
     {
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
+      "id": "1aecaf40-dc3a-461f-88a8-d06994e12898",
       "signInActivity": {
         "lastSignInDateTime": "2021-06-17T16:41:33Z",
         "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
@@ -280,6 +281,7 @@ Content-type: application/json
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
+      "id": "f0662ee5-84b1-43d6-8338-769cce1bc141",
       "signInActivity": {
         "lastSignInDateTime": "2021-07-29T15:53:27Z",
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
@@ -302,7 +304,7 @@ The following is an example of the request. Details for the **signInActivity** p
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_last_time_filter"
+  "name": "get_signin_last_time_filter_e4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
@@ -375,7 +377,7 @@ The following is an example of the request. Details for the **signInActivity** p
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_signin_last_time_range"
+  "name": "get_signin_last_time_range_e5"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z
@@ -433,7 +435,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_count_only"
+  "name": "get_count_only_e6"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/$count
@@ -467,7 +469,7 @@ The following is an example of the request. This request requires the **Consiste
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_startswith"
+  "name": "list_users_startswith_e7"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -516,7 +518,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count_endsWith"
+  "name": "get_a_count_endsWith_e8"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=endswith(mail,'a@contoso.com')&$orderby=userPrincipalName&$count=true
@@ -592,7 +594,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_wa_count"
+  "name": "get_wa_count_e9"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=displayName&$count=true
@@ -668,7 +670,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_to_count"
+  "name": "get_to_count_e10"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:ad"&$orderby=displayName&$count=true
@@ -750,7 +752,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_assignedLicenses"
+  "name": "get_user_assignedLicenses_e11"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
@@ -833,7 +835,7 @@ In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_schemaextension"
+  "name": "list_schemaextension_e12"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
@@ -923,7 +925,7 @@ For examples of custom security attribute assignments, see [Examples: Assign, up
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "customsecurityattribute_filter_users_equals_value"
+  "name": "customsecurityattribute_filter_users_equals_value_e13"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$count=true&$select=id,displayName,customSecurityAttributes&$filter=customSecurityAttributes/Marketing/AppCountry eq 'Canada'

@@ -22,8 +22,8 @@ Most education software developers learn early on that class roster is one of th
 
 [Microsoft School Data Sync](https://sds.microsoft.com/), combined with the industry data API, addresses this challenge for application developers and schools. The following are some of the scenarios that the industry data API enables:
 
-- [Uploading and validating CSV data](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true#uploading-and-validating-csv-data)
-- [Validating uploaded files](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true#validating-uploaded-files)
+- [Upload and validate CSV data](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#upload-and-validate-csv-data)
+- [Validate uploaded files](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#validate-uploaded-files)
 
 ### Enable school admins to manage identity and roster sync using School Data Sync (preview)
 
@@ -35,11 +35,11 @@ School Data Sync helps automate the process of importing and synchronizing stude
 
 Looking for the API reference for this service?
 
-- [Industry data API in Microsoft Graph beta](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true)
+- [Industry data API in Microsoft Graph beta](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-- To learn more about the industry data APIs as tailored to the education sector, see [Use the industry data API as an extract, transform, and load (ETL) engine](/graph/api/resources/industry-data-overview?view=graph-rest-beta&preserve-view=true).
+- To learn more about the industry data APIs as tailored to the education sector, see [Use the industry data API as an extract, transform, and load (ETL) engine](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true).
 - Learn more about [education scenarios in Microsoft Graph](education-concept-overview.md).
-- Set up an [education demo developer tenant](/graph/msgraph-onboarding-overview), [School Data Sync](msgraph-onboarding-sds.md), and [Microsoft Teams](msgraph-onboarding-msteams.md).
+- Set up an [education demo developer tenant](/graph/msgraph-onboarding-overview), [School Data Sync](/schooldatasync/school-data-sync-overview), and [Microsoft Teams](msgraph-onboarding-msteams.md).
 - Try the industry data APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

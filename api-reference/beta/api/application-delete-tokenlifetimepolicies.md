@@ -69,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+DELETE https://graph.microsoft.com/beta/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4/$ref
 ```
 
 # [C#](#tab/csharp)
@@ -101,8 +101,6 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
