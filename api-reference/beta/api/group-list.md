@@ -171,6 +171,8 @@ Content-type: application/json
          "resourceProvisioningOptions":[
          ],
          "securityEnabled":false,
+         "serviceProvisioningErrors": [
+         ],
          "theme":null,
          "visibility":"Public",
          "onPremisesProvisioningErrors":[
@@ -207,6 +209,8 @@ Content-type: application/json
          "resourceProvisioningOptions":[
          ],
          "securityEnabled":false,
+         "serviceProvisioningErrors": [
+         ],
          "theme":null,
          "visibility":null,
          "onPremisesProvisioningErrors":[
