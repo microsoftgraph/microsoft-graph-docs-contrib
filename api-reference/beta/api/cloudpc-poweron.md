@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform power on for a Cloud PC. This is to cover [Frontline](https://www.microsoft.com/en/windows-365/frontline) CloudPC for MEM admin scenarios.
+Power on a Frontline Cloud PC.  This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
 CloudPC will be allocated for assigned end user immediately and license will be assigned for Frontline CloudPC. The API only targets IT admin consumers.
 
