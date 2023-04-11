@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform power off for a Cloud PC. This is to cover [Frontline](https://www.microsoft.com/en/windows-365/frontline) CloudPC for MEM admin scenarios.
+Power off a Frontline Cloud PC. This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
 CloudPC will be de-allocated immediately and license will be revoked for Frontline CloudPCs. The API only targets IT admin consumers.
 
