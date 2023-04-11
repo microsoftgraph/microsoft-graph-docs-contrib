@@ -2728,7 +2728,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualAppointment",
           "ChangeType": "Addition",
-          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get.md) get function.",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http)get function.",
           "Target": "getVirtualAppointmentJoinWebUrl"
         },
       ],
