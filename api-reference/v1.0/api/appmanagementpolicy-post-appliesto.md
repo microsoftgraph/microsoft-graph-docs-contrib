@@ -58,7 +58,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "assign_appliesTo_ex1"
 }-->
 
 ```http
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/assign-appliesto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-appliesto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -114,7 +118,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "assign_appliesTo"
+  "name": "assign_appliesTo_ex2"
 }-->
 
 ``` http
@@ -139,6 +143,10 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolici
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/assign-appliesto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-appliesto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

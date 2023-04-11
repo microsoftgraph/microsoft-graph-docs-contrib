@@ -1,5 +1,5 @@
 ---
-title: "Remove appliesTo"
+title: "Remove appliesTo on a featureRolloutPolicy"
 description: "Remove a directoryObject from feature rollout."
 ms.localizationpriority: medium
 author: "madhavpatel6"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Remove appliesTo
+# Remove appliesTo on a featureRolloutPolicy
 
 Namespace: microsoft.graph
 
