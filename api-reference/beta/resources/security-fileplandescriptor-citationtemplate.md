@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 |:---|:---|:---|
 |citationJurisdiction|String|**TODO: Add Description**|
 |citationUrl|String|**TODO: Add Description**|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptort.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|

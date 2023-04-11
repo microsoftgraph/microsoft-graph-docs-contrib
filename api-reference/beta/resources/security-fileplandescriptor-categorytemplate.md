@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subCategories|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|**TODO: Add Description**|
+|subCategories|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.

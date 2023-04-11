@@ -34,10 +34,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Remove citationTemplate](../api/security-fileplandescriptor-delete-citationtemplate.md)|None|Remove a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.|
 |[List departmentTemplate](../api/security-fileplandescriptor-list-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) collection|Get the departmentTemplate resources from the departmentTemplate navigation property.|
 |[Add departmentTemplate](../api/security-fileplandescriptor-post-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md)|Add departmentTemplate by posting to the departmentTemplate collection.|
-|[Remove departmentTemplate](../api/security-fileplandescriptor-delete-departmenttemplate.md)|None|Remove a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
-|[List filePlanReferenceTemplate](../api/security-fileplandescriptor-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get the filePlanReferenceTemplate resources from the filePlanReferenceTemplate navigation property.|
-|[Add filePlanReferenceTemplate](../api/security-fileplandescriptor-post-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Add filePlanReferenceTemplate by posting to the filePlanReferenceTemplate collection.|
-|[Remove filePlanReferenceTemplate](../api/security-fileplandescriptor-delete-fileplanreferencetemplate.md)|None|Remove a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
+|[Remove departmentTemplate](../api/security-fileplandescriptor-delete-departmenttemplate.md)|None|Remove a [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.|
+|[List filePlanReferenceTemplate](../api/security-fileplandescriptor-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) collection|Get the filePlanReferenceTemplate resources from the filePlanReferenceTemplate navigation property.|
+|[Add filePlanReferenceTemplate](../api/security-fileplandescriptor-post-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md)|Add filePlanReferenceTemplate by posting to the filePlanReferenceTemplate collection.|
+|[Remove filePlanReferenceTemplate](../api/security-fileplandescriptor-delete-fileplanreferencetemplate.md)|None|Remove a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -52,11 +52,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorityTemplate|[authorityTemplate](../resources/security-authoritytemplate.md)|Represent the properties of 'authority' file plan descriptor.|
-|categoryTemplate|[categoryTemplate](../resources/security-categorytemplate.md)|Represent the properties of 'category' file plan descriptor.|
-|citationTemplate|[citationTemplate](../resources/security-citationtemplate.md)|Represent the properties of 'citation' file plan descriptor.|
-|departmentTemplate|[departmentTemplate](../resources/security-departmenttemplate.md)|Represent the properties of 'department' file plan descriptor.|
-|filePlanReferenceTemplate|[filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Represent the properties of 'file plan reference identification' file plan descriptor.|
+|authorityTemplate|[authorityTemplate](../resources/security-fileplandescriptor-authoritytemplate.md)|Represent the properties of 'authority' file plan descriptor.|
+|categoryTemplate|[categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md)|Represent the properties of 'category' file plan descriptor.|
+|citationTemplate|[citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md)|Represent the properties of 'citation' file plan descriptor.|
+|departmentTemplate|[departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md)|Represent the properties of 'department' file plan descriptor.|
+|filePlanReferenceTemplate|[filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md)|Represent the properties of 'file plan reference identification' file plan descriptor.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
