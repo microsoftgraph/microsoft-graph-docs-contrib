@@ -16,14 +16,14 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorbase.md).
+Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |citationJurisdiction|String|**TODO: Add Description**|
 |citationUrl|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorbase.md).|
+|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 
 ## Relationships
 None.

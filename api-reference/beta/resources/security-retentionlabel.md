@@ -55,7 +55,7 @@ Represents how customers can manage their data, including whether and for how lo
 |:---|:---|:---|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.|
 |eventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event.|
-|descriptors|[filePlanDescriptor](../resources/security-fileplandescriptor.md)|Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.|
+|descriptors|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.|
 
 
 

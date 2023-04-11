@@ -1,6 +1,6 @@
 ---
 title: "subCategoryTemplate resource type"
-description: "**TODO: Add Description**"
+description: "Represents the 'sub-category' file plan descriptor for retention labels."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the 'sub-category' file plan descriptor for retention labels.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
