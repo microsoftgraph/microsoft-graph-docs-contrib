@@ -27,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-title}
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET /sites/{site-id}/lists/{list-id}
+GET /sites/{site-id}/lists/{list-title}
+GET /sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## Request body

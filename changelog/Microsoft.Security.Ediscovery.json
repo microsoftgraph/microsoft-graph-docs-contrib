@@ -493,7 +493,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "exportFileMetadata",
 			"ChangeType": "Addition",
-			"Description": "Added the [exportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-beta) resource type.",
+			"Description": "Added the [exportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportfilemetadata?view=graph-rest-beta) resource type.",
 			"Target": "exportFileMetadata"
 		  },
 		  {

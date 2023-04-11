@@ -1531,6 +1531,55 @@ items:
     - name: Device and app management
       expanded: true
       items:
+      - name: Browser management
+        displayName: Edge, Internet Explorer, IE mode, site list
+        items:
+        - name: Overview
+          href: resources/browser-edge-api-overview.md
+        - name: Browser site list
+          items:
+          - name: Browser site list
+            href: resources/browsersitelist.md
+          - name: List
+            href: api/internetexplorermode-list-sitelists.md
+          - name: Create
+            href: api/internetexplorermode-post-sitelists.md
+          - name: Get
+            href: api/browsersitelist-get.md
+          - name: Update
+            href: api/browsersitelist-update.md
+          - name: Delete
+            href: api/internetexplorermode-delete-sitelists.md
+          - name: Publish
+            href: api/browsersitelist-publish.md
+        - name: Browser site
+          items:
+          - name: Browser site
+            href: resources/browsersite.md
+          - name: List
+            href: api/browsersitelist-list-sites.md
+          - name: Create
+            href: api/browsersitelist-post-sites.md
+          - name: Get
+            href: api/browsersite-get.md
+          - name: Update
+            href: api/browsersite-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sites.md
+        - name: Shared cookie
+          items:
+          - name: Shared cookie
+            href: resources/browsersharedcookie.md
+          - name: List
+            href: api/browsersitelist-list-sharedcookies.md
+          - name: Create
+            href: api/browsersitelist-post-sharedcookies.md
+          - name: Get
+            href: api/browsersharedcookie-get.md
+          - name: Update
+            href: api/browsersharedcookie-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sharedcookies.md
       - name: Cloud printing
         items:
         - name: Print
@@ -2294,6 +2343,19 @@ items:
             href: resources/intune-apps-win32lobappruleoperator.md
           - name: Win32 LOB app rule type
             href: resources/intune-apps-win32lobappruletype.md
+          - name: Windows AppX
+            href: resources/intune-apps-windowsappx.md
+            items:
+            - name: List
+              href: api/intune-apps-windowsappx-list.md
+            - name: Get
+              href: api/intune-apps-windowsappx-get.md
+            - name: Create
+              href: api/intune-apps-windowsappx-create.md
+            - name: Delete
+              href: api/intune-apps-windowsappx-delete.md
+            - name: Update
+              href: api/intune-apps-windowsappx-update.md
           - name: Windows AppX app assignment settings
             href: resources/intune-apps-windowsappxappassignmentsettings.md
           - name: Windows architecture

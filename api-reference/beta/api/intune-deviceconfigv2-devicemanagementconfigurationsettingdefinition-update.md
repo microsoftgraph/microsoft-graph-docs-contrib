@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md) object.
+Update the properties of a [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,25 +46,25 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md) object.
+In the request body, supply a JSON representation for the [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md).
+The following table shows the properties that are required when you create the [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicability|[deviceManagementConfigurationSettingApplicability](../resources/intune-shared-devicemanagementconfigurationsettingapplicability.md)|Details which device setting is applicable on|
-|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md)|Read/write access mode of the setting. Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
+|applicability|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Details which device setting is applicable on|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Read/write access mode of the setting. Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
 |keywords|String collection|Tokens which to search settings on|
 |infoUrls|String collection|List of links more info for the setting can be found at|
-|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md)|Indicates whether the setting is required or not|
+|occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indicates whether the setting is required or not|
 |baseUri|String|Base CSP Path|
 |offsetUri|String|Offset CSP Path from Base|
 |rootDefinitionId|String|Root setting definition if the setting is a child setting.|
 |categoryId|String|Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-shared-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`, `compliance`.|
-|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-shared-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-shared-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: `none`, `settingsCatalog`, `template`.|
-|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`, `compliance`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information.|
 |id|String|Identifier for item|
 |description|String|Description of the item|
 |helpText|String|Help text of the item|
@@ -75,7 +75,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagementConfigurationSettingDefinition](../resources/intune-shared-devicemanagementconfigurationsettingdefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) object in the response body.
 
 ## Example
 
