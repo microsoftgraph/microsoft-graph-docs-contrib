@@ -61,7 +61,7 @@ ElectronAuthenticator.initialize(config);
 | authority   | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | mainWindow  | Instance of the main BrowserWindow that requires authentication.                                                                                                                                                                                                      |
 | cachePlugin | Cache plugin you would like to use for persistent storage of tokens. See [Microsoft Authentication Extensions for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Optional.                       |
-| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints). The default value is `https://graph.microsoft.com`.                                                          |
+| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.                                                          |
 
 >**Note:** Currently, the provider does not support incremental support. As a best practice, be sure to consent to all the scopes that the components require.
     
