@@ -11,9 +11,17 @@ A Person-Card component is a responsive component to display more information re
 
 For more information about the `mgt-person` component, see [mgt-person](./person.md).
 
-## Example
+## Example using mgt-person
 
-The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
+The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover or click on the person to see the Person Card.
+  
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-properties--person-card&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-properties--person-card&source=docs)
+
+## Example on using mgt-person-card as a standalone component
+
+The following example shows the use of the `mgt-person-card` component. Use the code editor to see how [properties](#properties) change the behavior of the component.
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
@@ -141,17 +149,32 @@ The `mgt-person-card` component defines the following CSS custom properties.
 
 ```css
 mgt-person {
-  --person-card-display-name-font-size: 40px;
-  --person-card-display-name-color: #ffffff;
-  --person-card-title-font-size: 20px;
-  --person-card-title-color: #ffffff;
-  --person-card-subtitle-font-size: 10px;
-  --person-card-subtitle-color: #ffffff;
-  --person-card-details-title-font-size: 10px;
-  --person-card-details-title-color: #b3bf0a;
-  --person-card-details-item-font-size: 20px;
-  --person-card-details-item-color: #3abf0a;
-  --person-card-background-color: #000000;
+  --person-card-nav-back-arrow-hover-color: green;
+  --person-card-icon-color: red;
+  --person-card-line1-font-size: 30px;
+  --person-card-line1-font-weight: 800;
+  --person-card-line1-line-height: 38px;
+  --person-card-line2-font-size: 24px;
+  --person-card-line2-font-weight: 600;
+  --person-card-line2-line-height: 30px;
+  --person-card-line3-font-size: 24px;
+  --person-card-line3-font-weight: 300;
+  --person-card-line3-line-height: 29px;
+  --person-card-avatar-size: 85px;
+  --person-card-details-left-spacing: 25px;
+  --person-card-avatar-top-spacing: 25px;
+  --person-card-details-bottom-spacing: 20px;
+  --person-card-background-color: pink;
+  --person-card-expanded-background-color-hover: blue;
+  --person-card-icon-hover-color: magenta;
+  --person-card-show-more-color: blue;
+  --person-card-show-more-hover-color: green;
+  --person-card-fluent-background-color: yellow;
+  --person-card-line1-text-color: purple;
+  --person-card-line2-text-color: blue;
+  --person-card-line3-text-color: green;
+  --person-card-fluent-background-color-hover: orange;
+  --person-card-base-icons-left-spacing: 110px
 }
 ```
 
