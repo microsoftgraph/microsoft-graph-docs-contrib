@@ -14,7 +14,7 @@ $requestBody->setContentType('https://graph.microsoft.com/beta/sites/id/contentT
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->addCopy()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->contentTypes()->addCopy()->post($requestBody);
 
 
 ```

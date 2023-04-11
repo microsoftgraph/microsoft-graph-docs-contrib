@@ -22,7 +22,7 @@ $requestBody->setClientState('SecretClientState');
 
 
 
-$requestResult = $graphServiceClient->subscriptions()->post($requestBody);
+$result = $graphServiceClient->subscriptions()->post($requestBody);
 
 
 ```

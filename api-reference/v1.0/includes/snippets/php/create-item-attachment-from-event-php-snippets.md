@@ -15,7 +15,7 @@ $requestBody->set@odatatype('#microsoft.graph.itemAttachment');
 $requestBody->setName('Holiday event');
 
 $additionalData = [
-'item' => $requestBody = new Item();
+		'item' => $requestBody = new Item();
 $		requestBody->set@odatatype('microsoft.graph.event');
 
 $		requestBody->setSubject('Discuss gifts for children');
@@ -50,7 +50,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
 
 
 ```

@@ -13,14 +13,14 @@ $requestBody = new DataSource();
 $requestBody->set@odatatype('microsoft.graph.ediscovery.userSource');
 
 $additionalData = [
-'email' => 'badguy@contoso.com', 
+		'email' => 'badguy@contoso.com', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->additionalSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->additionalSources()->post($requestBody);
 
 
 ```

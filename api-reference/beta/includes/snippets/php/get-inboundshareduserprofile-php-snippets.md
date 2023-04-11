@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->directory()->inboundSharedUserProfilesById('inboundSharedUserProfile-userId')->get();
+$result = $graphServiceClient->directory()->inboundSharedUserProfilesById('inboundSharedUserProfile-userId')->get();
 
 
 ```
