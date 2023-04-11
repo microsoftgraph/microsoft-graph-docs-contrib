@@ -330,67 +330,12 @@ Content-type: application/json
                 }
             }
         }
-    ]
-}
-```
-
-### Example 4: Retrieve a policy that contains a verifiable credentials requirement
-
-#### Request
-
-The following is an example of a request to retrieve a policy that has a verified credentials requirement.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_accesspackageassignmentpolicy_with_verifiableCredentialSettings"
-}-->
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
-```
-
----
-
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "id": "4540a08f-8ab5-43f6-a923-015275799197",
-    "displayName": "policy with verifiable credentials requirement",
-    "description": "Users must present the VerifiedCredentialExpert credential for access.",
-    "canExtend": true,
-    "durationInDays": 0,
-    "expirationDateTime": null,
-    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
-    "accessReviewSettings": null,
-    "requestorSettings": {
-        "scopeType": "AllExistingDirectorySubjects",
-        "acceptRequests": true,
-        "allowedRequestors": []
-    },
-    "requestApprovalSettings": {
-        "isApprovalRequired": false,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": false,
-        "approvalMode": "NoApproval",
-        "approvalStages": []
-    },
-    "customExtensionHandlers": [],
+    ],
     "verifiableCredentialSettings": {
-      "credentialTypes":[{
-        "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."],
-        "credentialType": "VerifiedCredentialExpert"
-      }]
+        "credentialTypes":[{
+            "issuers": ["did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>..."],
+            "credentialType": "VerifiedCredentialExpert"
+        }]
     }
 }
 ```

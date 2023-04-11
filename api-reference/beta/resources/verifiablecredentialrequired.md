@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.verifiableCredentialRequired",
-  "expiryDateTime": "2023-02-10T00:35:53.214Z",
-  "url": "openid://vc/?request_uri=https://beta.did.msidentity.com/v1.0/87654321-0000-0000-0000-000000000000/verifiablecredentials/request/e4ef27ca-eb8c-4b63-823b-3b95140eac11"
+  "expiryDateTime": "String (timestamp)",
+  "url": "String"
 }
 ```

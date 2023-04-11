@@ -36,8 +36,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.verifiableCredentialType",
   "issuers": [
-    "did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W<SNIP>…"
+    "String"
   ],
-  "credentialType": "VerifiedCredentialExpert"
+  "credentialType": "String"
 }
 ```

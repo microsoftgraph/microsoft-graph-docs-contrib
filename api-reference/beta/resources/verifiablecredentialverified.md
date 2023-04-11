@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifiable credential requirements status indicating that the credential verification is completed and the issued credentials are not expired.
+Represents the status where the service has validated the verifiable credential that the user presented.
 Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
 Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](accessPackageAssignmentRequestRequirements.md).
 

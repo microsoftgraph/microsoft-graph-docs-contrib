@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Data containing the metadata of the issuing authority, presented credentials and the verified claims.
+Represents the metadata of the verifiable credential including the issuing authority, presented credentials, and the verified claims.
 Used for the **verifiedCredentialsData** property of [access package assignment request](accesspackageassignmentrequest.md).
 
 ## Properties
@@ -36,9 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.verifiedCredentialData",
-  "authority": "did:ion:…..",
+  "authority": "String",
   "type": [
-    "VerifiedCredentialExpert"
+    "String"
   ],
   "claims": {
     "@odata.type": "microsoft.graph.verifiedCredentialClaims"

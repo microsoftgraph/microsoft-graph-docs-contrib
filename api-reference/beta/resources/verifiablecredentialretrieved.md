@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifiable credential requirements status indicating that the credential verification is still required but the presentation request has been retrieved by the user.
+Represents the status where a service requires a verifiable credential to be presented and the user has retrieved the presentation request.
 Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
 Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](accessPackageAssignmentRequestRequirements.md).
 
@@ -36,6 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.verifiableCredentialRetrieved",
-  "expiryDateTime": "2023-02-10T00:35:53.214Z"
+  "expiryDateTime": "String (timestamp)"
 }
 ```
