@@ -67,7 +67,7 @@ The following example upgrades an app installed in a chat.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "upgrade_installedApps_in_chat",
+  "name": "upgrade_installedApps_in_chat_e1",
   "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2", "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="]
 }-->
 
@@ -121,7 +121,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 
 <!-- {
   "blockType": "request",
-  "name": "upgrade_installedApps_in_chat",
+  "name": "upgrade_installedApps_in_chat_e2",
   "sampleKeys": ["19:ea28e88c00e94c7786b065394a61f296@thread.v2", "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="]
 }-->
 

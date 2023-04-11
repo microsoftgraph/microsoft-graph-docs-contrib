@@ -72,7 +72,7 @@ If successful, this method returns a `201 Created` response code with the ID of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_bookmark_from_bookmarks"
+  "name": "create_bookmark_from_bookmarks_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/search/bookmarks
