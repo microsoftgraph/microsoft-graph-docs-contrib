@@ -1,7 +1,7 @@
 ---
 title: "virtualEventRegistrationQuestionAnswer resource type"
 description: "Information about registration question answer of a virtual event."
-author: "**TODO: add PM alias**"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -21,7 +21,7 @@ Represents the answer(s) of a [virtualEventRegistrationQuestion](../resources/vi
 |:---|:---|:---|
 |booleanValue|Boolean|Boolean answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `boolean`. |
 |displayName|String|Display name of the registration question.|
-|multiChoiceValues|String collection|Boolean|Collection of text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `multiChoice`.|
+|multiChoiceValues|String|collection|Boolean|Collection of text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `multiChoice`.|
 |questionId|String|**id** of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).|
 |value|String|Text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
 

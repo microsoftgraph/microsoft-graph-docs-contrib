@@ -1,7 +1,7 @@
 ---
 title: "virtualEventPresenterDetails resource type"
 description: "Detail information about a virtual event presenter."
-author: "**TODO: add PM alias**"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

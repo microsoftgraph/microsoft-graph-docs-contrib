@@ -1,7 +1,7 @@
 ---
 title: "Get virtualEventSession"
 description: "Read the properties and relationships of a virtualEventSession object."
-author: "**TODO: add PM alias**"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

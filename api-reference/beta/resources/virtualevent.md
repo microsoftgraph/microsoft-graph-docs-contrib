@@ -1,7 +1,7 @@
 ---
 title: "virtualEvent resource type"
 description: "Information about a virtual event."
-author: "**TODO: add PM alias**"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -27,9 +27,9 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
 |description|String|Description of the virtual event.|
 |displayName|String|Display name of the virtual event|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|End time of the virtual event.|
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event.|
 |id|String|Unqiue identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|Start time of the virtual event.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event.|
 |status|virtualEventStatus|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "virtualEventSession resource type"
 description: "Information about a virtual event session."
-author: "**TODO: add PM alias**"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
