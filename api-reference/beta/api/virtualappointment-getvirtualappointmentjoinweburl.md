@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualAppointment: getVirtualAppointmentJoinWebURL
+# virtualAppointment: getVirtualAppointmentJoinWebUrl
 
 Namespace: microsoft.graph
 
