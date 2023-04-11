@@ -70,7 +70,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_executionScope"
+  "name": "lifecycleworkflows_list_executionScope_e1"
 }
 -->
 ``` http
@@ -140,7 +140,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_list_executionScope"
+  "name": "lifecycleworkflows_list_executionScope_e2"
 }
 -->
 ``` http
