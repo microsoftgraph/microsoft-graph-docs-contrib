@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop a specific Cloud PC for a user. Currently, only shift work Cloud PC is supported.
+Stop a specific Cloud PC for a user. Currently, only [Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PC is supported.
 
 ## Permissions
 
@@ -31,8 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
-To stop the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
 ```http
 POST /me/cloudPCs/{cloudPCId}/stop
