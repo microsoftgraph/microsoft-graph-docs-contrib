@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and an updated [attr
 
 ## Examples
 
+The following example updates the description and the maximum number of attributes for an attribute set named `Engineering`.
 ### Request
 The following is an example of a request.
 <!-- {
@@ -67,8 +68,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+  "description": "Attributes for engineering team",
+  "maxAttributesPerSet": "20"
 }
 ```
 
@@ -88,8 +89,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.attributeSet",
   "id": "58b91e55-5f03-83f0-e1bd-29c0c532e514",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+  "description": "Attributes for engineering team",
+  "maxAttributesPerSet": "20"
 }
 ```
 

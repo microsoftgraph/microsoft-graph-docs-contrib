@@ -64,7 +64,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.allowedValue",
-  "isActive": "Boolean"
+  "isActive": "false"
 }
 ```
 
@@ -84,6 +84,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.allowedValue",
   "id": "e18a0d39-a256-262e-2fc4-9f8e1ebfdea1",
-  "isActive": "Boolean"
+  "isActive": "false"
 }
 ```

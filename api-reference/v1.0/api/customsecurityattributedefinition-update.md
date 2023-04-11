@@ -72,9 +72,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-  "description": "String",
-  "status": "String",
-  "usePreDefinedValuesOnly": "Boolean"
+  "description": "Target completion date (YYYY/MM/DD)",
+  "status": "Deprecated",
+  "usePreDefinedValuesOnly": "true"
 }
 ```
 
@@ -94,8 +94,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
   "id": "ae2dd02c-6061-896c-9f53-3583b6a7163b",
-  "description": "String",
-  "status": "String",
-  "usePreDefinedValuesOnly": "Boolean"
+  "description": "Target completion date (YYYY/MM/DD)",
+  "status": "Deprecated",
+  "usePreDefinedValuesOnly": "true"
 }
 ```
