@@ -37,13 +37,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete your own temporary access pass authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+DELETE /me/authentication/temporaryAccessPassMethods/{id}
+```
+
+Delete your own or another user's temporary access pass authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}
-DELETE /me/authentication/temporaryAccessPassMethods/{id}
 ```
 
 ## Request headers

@@ -62,7 +62,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
+<!-- { "blockType": "request", "name": "get-bundle-metadata_e1" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
@@ -117,7 +117,7 @@ Use the `expand` [query string parameter](/graph/query-parameters) to include th
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
+<!-- { "blockType": "request", "name": "get-bundle-and-children_e2" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children

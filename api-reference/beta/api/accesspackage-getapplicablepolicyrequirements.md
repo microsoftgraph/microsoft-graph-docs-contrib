@@ -137,9 +137,14 @@ Content-Type: application/json
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b15419bb-5ffc-ea11-b207-c8d9d21f4e9a"],
+  "name": "get_req_for_given_user"
+}-->
+
 ```http
-POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11-b207-c8d9d21f4e9a/getApplicablePolicyRequirements
 
 {
         "subject": {
@@ -151,6 +156,13 @@ POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-e
 
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK

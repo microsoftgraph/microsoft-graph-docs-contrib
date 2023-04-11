@@ -70,7 +70,7 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessreviewinstance"
+  "name": "update_accessreviewinstance_e1"
 }
 -->
 ```msgraph-interactive

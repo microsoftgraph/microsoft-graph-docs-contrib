@@ -35,10 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Update the email method for your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- {  "blockType": "ignored" } -->
+``` http
+PATCH /me/authentication/emailMethods/{id}
+```
+
+Update the email authentication method for another user's account.
+<!-- {  "blockType": "ignored" } -->
 ``` http
 PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
