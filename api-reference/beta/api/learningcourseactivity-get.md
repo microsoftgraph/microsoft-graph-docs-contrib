@@ -54,11 +54,22 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 ### Request
 The following is an example of request and response of an assigned learning course activity.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_learning_courseactivity_details_id"
+}-->
+
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
 ```
 
 ### Response
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.learningAssignment"
+}-->
 
 ``` http
 HTTP/1.1 200 OK

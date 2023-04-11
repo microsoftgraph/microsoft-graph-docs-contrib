@@ -23,6 +23,11 @@ One of the following permissions is required to call this API based on the type 
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ``` http
 DELETE /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
 ```
@@ -45,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
+DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
 ```
 
 

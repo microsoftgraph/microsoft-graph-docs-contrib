@@ -10,16 +10,16 @@ doc_type: apiPageType
 # List learningCourseActivities
 Namespace: microsoft.graph
 
-Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) courses (assigned, recommended, and self-initiated) for a user.
+Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) courses (assigned or self-initiated) for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearningAssignedCourse.Read.All,LearningSelfInitiatedCourse.Read.All**|
-|Delegated (personal Microsoft account)|**Not supported**|
-|Application|**Not supported**|
+|Delegated (work or school account)|LearningAssignedCourse.Read.All, LearningSelfInitiatedCourse.Read.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -27,18 +27,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-Request for the signed-in user to retrieve all the course activities belonging to the user:
+To retrieve the course activity list for a signed-in user:
 
 ``` http
 GET me/employeeExperience/learningCourseActivities
 ```
 or
 
-Request for a provider to retrieve all the course activities of a given user:
+To retrieve the course activity list for a user:
 
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities
 ```
+
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -68,13 +69,7 @@ Request for a provider to retrieve all the course activities of a given user:
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities
 ```
-or
 
-Request for the signed-in user to retrieve all the course activities belonging to the user:
-
-``` http
-GET https://graph.microsoft.com/beta/me/employeeExperience/learningCourseActivities
-```
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.

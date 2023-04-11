@@ -1,16 +1,16 @@
 ---
-title: "Get employeeExperience"
-description: "Read the properties and relationships of an employeeExperience object."
+title: "Get learning course activity for a user"
+description: "Fetch details of a learning course activity object belonging to a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
 doc_type: apiPageType
 ---
 
-# Get employeeExperience
+# Get learningCourseActivity details for a user
 Namespace: microsoft.graph
 
-Retrieves course activity details for a user using courseActivityId.
+Retrieves course activity details belonging to a user using courseActivityId.
 
 Read the properties and relationships of an [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
@@ -19,20 +19,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**LearningAssignedCourse.Read,LearningSelfInitiatedCourse.Read**|
-|Delegated (personal Microsoft account)|**Not supported**|
-|Application|**LearningAssignedCourse.Read.All,LearningSelfInitiatedCourse.Read.All**|
+|Delegated (work or school account)|LearningAssignedCourse.Read, LearningSelfInitiatedCourse.Read|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|LearningAssignedCourse.Read.All, LearningSelfInitiatedCourse.Read.All|
 
 ## HTTP request
 
-Request for a provider to retrieve course activity details of a given user. Appropriate Application permission of course activity type is required to access the api.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+To retrieve the course activity details for a user:
 
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
 ```
 or
 
-Request for the signed-in user to retrieve course activity details. Appropriate Delegated permission of course activity type is required to access the api.
+To retrieve course activity details for the signed-in user:
 
 ``` http
 GET me/employeeExperience/learningCourseActivities/{id}
@@ -56,23 +61,27 @@ If successful, this method returns a 200 OK response code and a [learningCourseA
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows the request to get details of a learning course activity:
 
-Request for a provider to retrieve course activity details of a given user:
+<!-- {
+  "blockType": "request",
+  "name": "get_learning_courseactivity_details"
+}-->
 
-``` http
-GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities/{id}
-```
-or
-
-Request for the signed-in user to retrieve course activity details:
+To retrieve the course activity details for a user:
 
 ``` http
-GET https://graph.microsoft.com/beta/me/employeeExperience/learningCourseActivities/{id}
+GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
 ```
 
 ### Response
 The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.learningAssignment"
+}-->
+
 
 ``` http
 HTTP/1.1 200 OK

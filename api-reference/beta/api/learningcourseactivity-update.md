@@ -10,9 +10,7 @@ doc_type: apiPageType
 # Update learningCourseActivity
 Namespace: microsoft.graph
 
-Updates the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object. 
-After creating a course activity in Viva Learning, Provider should have ability to update the following properties using the Viva Learning CourseActivity Id generated when 
-creating the assignment.
+Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|LearningAssignedCourse.ReadWrite.All, LearningSelfInitiatedCourse.ReadWrite.All|
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ``` http
 PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
@@ -38,8 +41,14 @@ PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ## Request body
 In the request body, supply a JSON representation of the [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
+## Response
+If successful, this method returns a `204 OK` response code.
 
-Below properties are eligible to update a learning assignment course activity:
+## Examples
+
+### Example 1: Update an assigned learning course activity
+
+The following table lists the properties of a assigned learning course activity that can be updated:
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -52,17 +61,17 @@ Below properties are eligible to update a learning assignment course activity:
 |notes|String|Notes for the course activity. (Optional)|
 |status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed).|
 
-## Response
-
-If successful, this method returns a `204 OK` response code.
-
-## Examples
-
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update_assigned_learning_courseactivity"
+}-->
+
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
+
 Content-Type: application/json
 
 {
@@ -98,7 +107,9 @@ HTTP/1.1 204 OK
 No Content
 ```
 
-Below properties are eligible to update a self-initiated course activity:
+### Example 2: Update an self-initiated learning course activity
+
+The following table lists the properties of a self-initiated learning course activity that can be updated:
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -108,14 +119,13 @@ Below properties are eligible to update a self-initiated course activity:
 |status|[courseStatus](../resources/courseStatus.md)|Represents of the course activity. Accepted values are (inProgress/completed).|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner.|
 
-## Response
-
-If successful, this method returns a `204 OK` response code.
-
-## Examples
-
 ### Request
 The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_selfinitiated_learning_courseactivity"
+}-->
 
 ``` http
 PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}

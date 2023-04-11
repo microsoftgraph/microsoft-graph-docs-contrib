@@ -1,5 +1,5 @@
 ---
-title: "Get learningCourseActivityByExternalCourseActivityId"
+title: "learningCourseActivity: getByExternalCourseActivityId"
 description: "Read the properties and relationships of a learningCourseActivity object."
 author: "malabikaroy"
 ms.localizationpriority: medium
@@ -10,9 +10,7 @@ doc_type: apiPageType
 # Get learningCourseActivity by ExternalCourseActivityId
 Namespace: microsoft.graph
 
-Retrieves the Course Activity using ExternalCourseActivityId that is sent by learning provider in the Create course activity api call.
-
-Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.
+Retrieves a [learningCourseActivity](../resources/learningcourseactivity.md) object using externalCourseActivityId belonging to learning provider. ExternalCourseActivityId is set at the time of learning course activity creation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,10 +47,22 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
 
-## Example-1
+## Example
+
+### Request
+The following example shows the request to get details of a learning course activity using external course activity id:
+
+<!-- {
+  "blockType": "request",
+  "name": "get_learning_courseactivity_details_externalId"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningCourseActivities(externalCourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
+```
 
 ### Response
-The following is an example response of an assigned learning course activity.
+The following is an example response of an assigned learning course activity by external course activityId.
 
 ``` http
 HTTP/1.1 200 OK
@@ -82,29 +92,5 @@ Content-Type: application/json
     "content": "required assignment added for user"
   },  
   "status": "NotStarted"
-}
-```
-## Example-2
-
-### Response
-The following is an example response of an self-initiated learning course activity.
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-
-  e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('be2f4d76-e020-11ec-9d64-
-  0242ac120002')$entity",
-  "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
-  "completedDateTime": null,
-  "completionPercentage":null,
-  "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
-  "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
-  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
-  "startedDateTime": "2021-05-21T22:57:17+00:00",
-  "status": "InProgress",  
 }
 ```

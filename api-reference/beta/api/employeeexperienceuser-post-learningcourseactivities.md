@@ -30,7 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ``` http
 POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivities
@@ -74,7 +77,7 @@ If successful, this method returns a `201 Created` response code and a [learning
 
 The following example shows how to create a [learningAssignment](../resources/learningassignment.md).
 
-#### Request
+### Request
 The following example shows the request.
 
 <!-- {
@@ -110,7 +113,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 <!-- {
@@ -154,7 +157,7 @@ Content-Type: application/json
 
 The following example creates a [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.
 
-#### Request
+### Request
 The following example shows the request.
 
 <!-- {
@@ -178,7 +181,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 <!-- {
