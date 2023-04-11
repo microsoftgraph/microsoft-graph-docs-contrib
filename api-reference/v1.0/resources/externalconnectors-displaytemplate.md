@@ -34,6 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
     {
       "id": "String",
+      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "String"}]},
+      "priority": 0,
       "rules": [
         {
           "property": "String",
@@ -44,8 +46,6 @@ The following is a JSON representation of the resource.
               "String"
           ]
         }
-      ],
-      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "String"}]},
-      "priority": 0
+      ]      
     }
 ```
