@@ -33,12 +33,12 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "property": "String",
   "operation": "String",
-  "valuesJoinedBy": "String",
+  "property": "String",
   "values": [
     "String"
-  ]
+  ],
+  "valuesJoinedBy": "String"
 }
 ```
 
