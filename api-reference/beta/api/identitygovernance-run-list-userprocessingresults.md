@@ -1,5 +1,5 @@
 ---
-title: "List userProcessingResults (for a run of a lifecycle workflow)"
+title: "List userProcessingResults"
 description: "List user processing results of a workflow run."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List userProcessingResults (for a run of a lifecycle workflow)
+# List userProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -25,11 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-- Global administrator
-- Global reader
-- Lifecycle workflows administrator
+[!INCLUDE [rbac-lifecycle-workflows-apis-read](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-read.md)]
 
 ## HTTP request
 
@@ -158,7 +154,6 @@ Content-Type: application/json
 #### Request
 
 The following is an example of a request.
-
 
 # [HTTP](#tab/http)
 <!-- {

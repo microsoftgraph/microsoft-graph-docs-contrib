@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
 registrationEnforcement := graphmodels.NewRegistrationEnforcement()
@@ -35,40 +43,6 @@ includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignInclude
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
-
-
-authenticationMethodConfiguration := graphmodels.NewAuthenticationMethodConfiguration()
-id := "Fido2"
-authenticationMethodConfiguration.SetId(&id) 
-state := graphmodels.DISABLED_AUTHENTICATIONMETHODSTATE 
-authenticationMethodConfiguration.SetState(&state) 
-additionalData := map[string]interface{}{
-	isSelfServiceRegistrationAllowed := false
-authenticationMethodConfiguration.SetIsSelfServiceRegistrationAllowed(&isSelfServiceRegistrationAllowed) 
-	isAttestationEnforced := false
-authenticationMethodConfiguration.SetIsAttestationEnforced(&isAttestationEnforced) 
-keyRestrictions := graphmodels.New()
-	isEnforced := false
-keyRestrictions.SetIsEnforced(&isEnforced) 
-enforcementType := "block"
-keyRestrictions.SetEnforcementType(&enforcementType) 
-	aaGuids := []graphmodels.able {
-
-	}
-	keyRestrictions.SetAaGuids(aaGuids)
-	authenticationMethodConfiguration.SetKeyRestrictions(keyRestrictions)
-}
-authenticationMethodConfiguration.SetAdditionalData(additionalData)
-
-authenticationMethodConfigurations := []graphmodels.AuthenticationMethodConfigurationable {
-	authenticationMethodConfiguration,
-
-}
-requestBody.SetAuthenticationMethodConfigurations(authenticationMethodConfigurations)
-additionalData := map[string]interface{}{
-	"@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 

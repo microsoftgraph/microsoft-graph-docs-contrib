@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents a Temporary Access Pass authentication methods policy that defines the configuration settings and users or groups who are enabled to use the [Temporary Access Pass authentication method](temporaryaccesspassauthenticationmethod.md).
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

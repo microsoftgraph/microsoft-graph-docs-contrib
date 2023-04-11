@@ -52,7 +52,6 @@ const accessReviewInstance = {
 };
 
 await client.api('/identityGovernance/accessReviews/definitions/5dcfcc88-da88-4252-8629-a0807b4b076d/instances/720b8ee0-cee4-42ac-b164-894c48703acc')
-	.version('beta')
 	.update(accessReviewInstance);
 
 ```

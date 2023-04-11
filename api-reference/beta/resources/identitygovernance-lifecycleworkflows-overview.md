@@ -53,11 +53,6 @@ Each workflow contains general descriptive information such as it's identifier, 
 
 Workflow tasks are specific actions that run automatically when a workflow is triggered. Lifecycle Workflows defines the following preconfigured and read-only tasks that are allowed for the specified workflow categories. These task definitions show the settings for the task type, guiding you as you create tasks for your workflow.
 
-<!-- Comment out CRR until we can resolve the links problem
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
--->
-
 [!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
 
 Use the [taskDefinition resource type](identitygovernance-taskdefinition.md) and its associated methods to discover all the predefined tasks that you can configure for your workflow and the settings for the properties The [task](identitygovernance-task.md) resource type and its associated GET methods allow you to view the tasks that are configured for your workflow.
@@ -124,7 +119,7 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 
 ## License checks
 
-The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 license. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
 
 ## Role and application permission authorization checks
 
@@ -132,8 +127,8 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
-| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All | Global Admin, Global Reader or Lifecycle Workflows Administrator |
-| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Global Administrator or Lifecycle Workflows Administrator |
+| Read | LifecycleWorkflows.Read.All or LifecycleWorkflows.ReadWrite.All |Global Reader or Lifecycle Workflows Administrator |
+| Create, Update or Delete | LifecycleWorkflows.ReadWrite.All | Lifecycle Workflows Administrator |
 
 ## See also
 
@@ -146,7 +141,5 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "suppressions": [
-    "Error: /resources/identitygovernance-lifecycleworkflows-overview.md:\r\n    Exception processing links.\r\n    Link Definition was null. Link text: !INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md) (Parameter 'Definition')"
-  ]
+  "suppressions": []
 } -->
