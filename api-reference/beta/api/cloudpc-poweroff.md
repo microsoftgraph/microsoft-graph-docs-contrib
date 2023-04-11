@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform power off for a Cloud PC. This is to cover Shift Work CloudPC for MEM admin scenarios.
+Perform power off for a Cloud PC. This is to cover [Frontline](https://www.microsoft.com/en/windows-365/frontline) CloudPC for MEM admin scenarios.
 
-CloudPC will be de-allocated immediately and license will be revoked for Shift Work CloudPCs.
+CloudPC will be de-allocated immediately and license will be revoked for Frontline CloudPCs. The API only targets IT admin consumers.
 
 ## Permissions
 
@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
-To power off the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
 ``` http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/poweroff
