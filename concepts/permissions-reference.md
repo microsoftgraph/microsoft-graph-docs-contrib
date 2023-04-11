@@ -2933,6 +2933,27 @@ With these permissions, all authentication methods can be read and managed on a 
 * Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
 * Self-Service Password Reset/SSPR (email address, and so on)
 
+---
+
+## Virtual event permissions
+
+#### Delegated permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read_|Read your virtual events.|Allows the app to read virtual events created by the you.|Yes|
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+|_VirtualEvent.Read.All_|Read all users' virtual events.|Allows the app to read all virtual events without a signed-in user. |Yes|
+
+### Example usage
+
+* _VirtualEvent.Read_: Retrieve a virtual event created by the signed-in user (`GET /solutions/virtualEvents/webinars/{id}`).
+* _VirtualEvent.Read.All_: Retrieve a virtual event created by any user in the tenant (`GET /solutions/virtualEvents/webinars/{id}`).
+
+---
+
 ## Windows updates permissions
 
 #### Delegated permissions
