@@ -9,7 +9,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 ExtensionProperty extensionProperty = new ExtensionProperty();
 extensionProperty.name = "jobGroup";
 extensionProperty.dataType = "String";
-extensionProperty.isMultiValued = true;
 LinkedList<String> targetObjectsList = new LinkedList<String>();
 targetObjectsList.add("User");
 extensionProperty.targetObjects = targetObjectsList;
