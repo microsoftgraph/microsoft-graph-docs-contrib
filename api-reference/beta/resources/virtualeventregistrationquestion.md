@@ -21,10 +21,21 @@ Represents a registration question associated with a [virtualEventRegistration](
 |Property|Type|Description|
 |:---|:---|:---|
 |answerChoices|String collection|Answer choices when **answerInputType** is `singleChoice` or `multiChoice`. |
-|answerInputType|virtualEventRegistrationQuestionAnswerInputType|Input type of the registration question answer.The possible values are: `text`, `multilineText`, `singleChoice`, `multiChoice`, `boolean`, `unknownFutureValue`.|
+|answerInputType|[virtualEventRegistrationQuestionAnswerInputType](#virtualeventregistrationquestionanswerinputtype-values)|Input type of the registration question answer.|
 |displayName|String|Display name of the registration question.|
 |id|String|Unique identifier of the registration question. Inherited from [entity](../resources/entity.md).|
 |isRequired|Boolean| Indicates whether the question is required to answer. Default value is `false`.|
+
+### virtualEventRegistrationQuestionAnswerInputType values
+
+| Value | Description |
+| ----- | ----------- |
+| text | The registration question accepts single-line text. |
+| multilineText | The registration question accepts multi-line text. |
+| singleChoice | The registration question accepts one anwer from a list of options. |
+| multiChoice | The registration question accepts more than one answers from a list of options. |
+| boolean | The registration question accepts a yes or no answer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 

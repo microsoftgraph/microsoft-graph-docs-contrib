@@ -34,8 +34,19 @@ Inherits from [entity](../resources/entity.md).
 |lastName|String|Last name of the registrant.|
 |registrationDateTime|DateTimeOffset|Time in UTC when the registrant registers for the virtual event.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
-|status|virtualEventAttendeeRegistrationStatus|Registration status of the registrant. Read-only.The possible values are: `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, `unknownFutureValue`.|
+|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only.|
 |userId|String|The registrant's AAD user ID. Only appears when the registrant is registered in AAD.|
+
+### virtualEventAttendeeRegistrationStatus values
+
+| Value | Description |
+| ----- | ----------- |
+| `registered` | The attendee has successfully registered for the virtual event. |
+| `canceled` | The attendee has canceled registeration for the virtual event. |
+| `waitlisted` | Waitlist has been enabled and the virtual event is at full capacity. The attendee is placed on the waitlist. |
+| `pendingApproval` | Manual approval has been enabled and the attendee is pending approval from the organizer. |
+| `rejectedByOrganizer` | Manual approval has been enabled and the attendee is rejected by the organizer. |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 

@@ -28,7 +28,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) | Identity information of co-organizers of the webinar. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of co-organizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | String | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
