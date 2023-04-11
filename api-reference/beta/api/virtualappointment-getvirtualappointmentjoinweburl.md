@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This function returns a web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/microsoft-365/frontline/virtual-appointments?view=o365-worldwide).
+This function returns a web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/microsoft-365/frontline/virtual-appointments).
 
 > [!NOTE]
 > For the preview period, customers with access to virtual appointments with their Microsoft 365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details on the licensing requirements before the preview period ends.
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a String in the response body. The value field represents the web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/microsoft-365/frontline/virtual-appointments?view=o365-worldwide).
+If successful, this method returns a `200 OK` response code and a String in the response body. The value field represents the web URL join link for [Microsoft Virtual Appointments](https://learn.microsoft.com/microsoft-365/frontline/virtual-appointments).
 
 ## Examples
 
