@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-organizationId := "organization-id"
-certificateBasedAuthConfigurationId := "certificateBasedAuthConfiguration-id"
-result, err := graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfigurationById(&certificateBasedAuthConfigurationId).Get(nil)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+result, err := graphClient.OrganizationById("organization-id").CertificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").Get(context.Background(), nil)
 
 
 ```

@@ -5,17 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.TagRequestBuilderDeleteQueryParameters{
-	Forcedelete: true,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestForcedelete := true
+
+requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
+	Forcedelete: &requestForcedelete,
 }
-options := &msgraphsdk.TagRequestBuilderDeleteOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-caseId := "case-id"
-tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Delete(options)
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Delete(context.Background(), configuration)
 
 
 ```

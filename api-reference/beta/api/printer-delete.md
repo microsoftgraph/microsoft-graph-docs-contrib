@@ -1,9 +1,9 @@
 ---
-title: Delete printer
-description: Delete (unregister) a printer.
-author: braedenp-msft
+title: "Delete printer"
+description: "Delete (unregister) a printer"
+author: "braedenp-msft"
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: "cloud-printing"
 doc_type: apiPageType
 ---
 
@@ -23,14 +23,15 @@ To use the Universal Print service, the user or app's tenant must have an active
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Printer.FullControl.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /print/printers/{id}
 ```
+
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
@@ -43,7 +44,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -54,16 +55,13 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/print/printers/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-printer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -78,11 +76,14 @@ DELETE https://graph.microsoft.com/beta/print/printers/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-printer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-printer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

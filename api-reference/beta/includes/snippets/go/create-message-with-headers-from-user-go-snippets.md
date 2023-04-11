@@ -5,38 +5,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewMessage()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMessage()
 subject := "9/8/2018: concert"
-requestBody.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "HTML"
-body.SetContentType(&contentType)
+requestBody.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The group represents Washington."
-body.SetContent(&content)
-requestBody.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+body.SetContent(&content) 
+requestBody.SetBody(body)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+address := "AlexW@contoso.OnMicrosoft.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
-requestBody.SetInternetMessageHeaders( []InternetMessageHeader {
-	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-name",
-		"value": "Washington",
-	}
-	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-id",
-		"value": "WA001",
-	}
+requestBody.SetToRecipients(toRecipients)
+
+
+internetMessageHeader := graphmodels.NewInternetMessageHeader()
+name := "x-custom-header-group-name"
+internetMessageHeader.SetName(&name) 
+value := "Washington"
+internetMessageHeader.SetValue(&value) 
+internetMessageHeader1 := graphmodels.NewInternetMessageHeader()
+name := "x-custom-header-group-id"
+internetMessageHeader1.SetName(&name) 
+value := "WA001"
+internetMessageHeader1.SetValue(&value) 
+
+internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
+	internetMessageHeader,
+	internetMessageHeader1,
+
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+requestBody.SetInternetMessageHeaders(internetMessageHeaders)
+
+result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAppHealthDeviceModelPerformance resource type"
 description: "The user experience analytics device model performance entity contains device model performance details."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -36,7 +36,7 @@ The user experience analytics device model performance entity contains device mo
 |meanTimeToFailureInMinutes|Int32|The mean time to failure for the model device in minutes. Valid values -2147483648 to 2147483647|
 |modelAppHealthScore|Double|The app health score of the device model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |modelAppHealthStatus|String|The overall app health status of the device model.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -62,7 +62,3 @@ Here is a JSON representation of the resource.
   "healthStatus": "String"
 }
 ```
-
-
-
-

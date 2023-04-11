@@ -1,9 +1,12 @@
 ---
 title: "Examine Azure AD Graph APIs app usage"
 description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Examine Azure AD Graph APIs app usage
@@ -21,6 +24,7 @@ Microsoft Graph supports many of the same features and capabilities of Azure AD 
 - [Resource type differences](migrate-azure-ad-graph-resource-differences.md)
 - [Property differences](migrate-azure-ad-graph-property-differences.md)
 - [Method differences](migrate-azure-ad-graph-method-differences.md)
+- [Permissions differences](migrate-azure-ad-graph-permissions-differences.md)
 
 You'll also want to verify the permissions required for the features your app is using.  In some cases, more granular permissions are available.
 

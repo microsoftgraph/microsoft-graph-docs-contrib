@@ -5,20 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
-	Select: "subject,body,bodyPreview",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
+requestParameters := &graphconfig.ItemEventItemRequestBuilderGetQueryParameters{
+	Select: [] string {"subject","body","bodyPreview"},
 }
-headers := map[string]string{
-	"Prefer": "outlook.body-content-type="text""
+configuration := &graphconfig.ItemEventItemRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.EventRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Get(options)
+
+result, err := graphClient.Me().EventsById("event-id").Get(context.Background(), configuration)
 
 
 ```

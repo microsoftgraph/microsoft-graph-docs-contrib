@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAccessReview()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAccessReview()
 displayName := "TestReview new name"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessReviewRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-accessReviewId := "accessReview-id"
-graphClient.AccessReviewsById(&accessReviewId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.AccessReviewsById("accessReview-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

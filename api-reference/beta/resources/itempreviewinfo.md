@@ -5,7 +5,7 @@ ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: files
 ---
 
 # ItemPreviewInfo resource type

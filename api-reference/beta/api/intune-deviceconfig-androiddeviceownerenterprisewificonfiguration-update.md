@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidDeviceOwnerEnterpriseWiFiConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -68,6 +68,11 @@ The following table shows the properties that are required when you create the [
 |wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md). Possible values are: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
 |preSharedKeyIsSet|Boolean|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values include none, manual, and automatic. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md). Possible values are: `none`, `manual`, `automatic`.|
+|proxyManualAddress|String|Specify the proxy server IP address. Android documentation does not specify IPv4 or IPv6. For example: 192.168.1.1. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|proxyManualPort|Int32|Specify the proxy server port. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|Specify the proxy server configuration script URL. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
+|proxyExclusionList|String|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com. Inherited from [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)|
 |eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|Indicates the type of EAP protocol set on the Wi-Fi endpoint (router). Possible values are: `eapTls`, `eapTtls`, `peap`.|
 |trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users' devices when they connect to this Wi-Fi network.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
@@ -87,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1702
+Content-length: 1960
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
@@ -126,6 +131,11 @@ Content-length: 1702
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
   "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value",
   "eapType": "eapTtls",
   "trustedServerCertificateNames": [
     "Trusted Server Certificate Names value"
@@ -142,7 +152,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1874
+Content-Length: 2132
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
@@ -184,6 +194,11 @@ Content-Length: 1874
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
   "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value",
   "eapType": "eapTtls",
   "trustedServerCertificateNames": [
     "Trusted Server Certificate Names value"
@@ -194,7 +209,3 @@ Content-Length: 1874
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
-
-
-

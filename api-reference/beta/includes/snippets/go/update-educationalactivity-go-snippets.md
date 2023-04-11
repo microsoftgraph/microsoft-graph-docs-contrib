@@ -5,31 +5,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewEducationalActivity()
-institution := msgraphsdk.NewInstitutionData()
-requestBody.SetInstitution(institution)
-location := msgraphsdk.NewPhysicalAddress()
-institution.SetLocation(location)
-type := "business"
-location.SetType(&type)
-location.SetPostOfficeBox(nil)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEducationalActivity()
+institution := graphmodels.NewInstitutionData()
+location := graphmodels.NewPhysicalAddress()
+type := graphmodels.BUSINESS_PHYSICALADDRESSTYPE 
+location.SetType(&type) 
+postOfficeBox := null
+location.SetPostOfficeBox(&postOfficeBox) 
 street := "12000 E Prospect Rd"
-location.SetStreet(&street)
+location.SetStreet(&street) 
 city := "Fort Collins"
-location.SetCity(&city)
+location.SetCity(&city) 
 state := "Colorado"
-location.SetState(&state)
+location.SetState(&state) 
 countryOrRegion := "USA"
-location.SetCountryOrRegion(&countryOrRegion)
+location.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "80525"
-location.SetPostalCode(&postalCode)
-options := &msgraphsdk.EducationalActivityRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-educationalActivityId := "educationalActivity-id"
-graphClient.Me().Profile().EducationalActivitiesById(&educationalActivityId).Patch(options)
+location.SetPostalCode(&postalCode) 
+institution.SetLocation(location)
+requestBody.SetInstitution(institution)
+
+result, err := graphClient.Me().Profile().EducationalActivitiesById("educationalActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Identity/B2xUserFlows/Item/IdentityProviders/Item"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewIdentityProvider()
+additionalData := map[string]interface{}{
+	"odataId" : "https://graph.microsoft.com/beta/identityProviders/{id}", 
 }
-options := &msgraphsdk.IdentityProviderRequestBuilderPostOptions{
-	Body: requestBody,
-}
-b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-identityProviderId := "identityProvider-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").IdentityProvidersById("identityProvider-id").Post(context.Background(), requestBody, nil)
 
 
 ```

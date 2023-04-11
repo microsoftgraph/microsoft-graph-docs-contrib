@@ -5,24 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//windowsUpdates"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDeployment()
-state := msgraphsdk.NewDeploymentState()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDeployment()
+state := graphmodels.NewDeploymentState()
+requestedValue := graphmodels.PAUSED_REQUESTEDDEPLOYMENTSTATEVALUE 
+state.SetRequestedValue(&requestedValue) 
 requestBody.SetState(state)
-requestedValue := "paused"
-state.SetRequestedValue(&requestedValue)
-state.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.windowsUpdates.deploymentState",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
-}
-options := &msgraphsdk.DeploymentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
+
+result, err := graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

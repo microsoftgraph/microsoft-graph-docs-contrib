@@ -5,17 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Onenote/SectionGroups/Item/SectionGroups"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"displayName": "Section group name",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSectionGroupsPostRequestBody()
+additionalData := map[string]interface{}{
+	"displayName" : "Section group name", 
 }
-options := &msgraphsdk.SectionGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-sectionGroupId := "sectionGroup-id"
-graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Me().Onenote().SectionGroupsById("sectionGroup-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,10 +1,11 @@
 ---
 title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Azure AD Identity Protection."
-author: "cloudhandler"
+author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
+ms.date: 12/06/2022
 ---
 
 # Use the Microsoft Graph identity protection APIs
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization. 
+Azure Active Directory (Azure AD) [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization.
 
 Use the following Microsoft Graph APIs to query user and service principal risks detected by Azure AD Identity Protection:
 
@@ -50,7 +51,18 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 ## What licenses do I need?
 
-Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license.
+Azure AD Identity Protection is a premium feature. You need specific licenses to access full details. 
+
+### For users
+You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license. 
+
+### For service principals
+You need a Workload Identities Premium license to access the Microsoft Graph [servicePrincipalRiskDetection API](serviceprincipalriskdetection.md) (Tenants without that license receive limited risk information). The [riskyServicePrincipals API](riskyserviceprincipal.md) is only available with an Entra Workload Identity Premium license.
+
+## How much data is available?
+
+The availability of risk data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+
 
 ## See also
 

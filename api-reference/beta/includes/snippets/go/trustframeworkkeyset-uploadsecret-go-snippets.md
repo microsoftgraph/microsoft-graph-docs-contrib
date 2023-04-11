@@ -5,22 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TrustFramework/KeySets/Item/UploadSecret"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUploadSecretPostRequestBody()
 use := "use-value"
-requestBody.SetUse(&use)
+requestBody.SetUse(&use) 
 k := "application-secret-to-be-uploaded"
-requestBody.SetK(&k)
+requestBody.SetK(&k) 
 nbf := int64(1508969811)
-requestBody.SetNbf(&nbf)
+requestBody.SetNbf(&nbf) 
 exp := int64(1508973711)
-requestBody.SetExp(&exp)
-options := &msgraphsdk.UploadSecretRequestBuilderPostOptions{
-	Body: requestBody,
-}
-trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadSecret(trustFrameworkKeySet-id).Post(options)
+requestBody.SetExp(&exp) 
+
+result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").UploadSecret().Post(context.Background(), requestBody, nil)
 
 
 ```

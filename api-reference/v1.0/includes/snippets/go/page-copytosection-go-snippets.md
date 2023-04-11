@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Onenote/Pages/Item/CopyToSection"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCopyToSectionPostRequestBody()
 id := "id-value"
-requestBody.SetId(&id)
+requestBody.SetId(&id) 
 groupId := "groupId-value"
-requestBody.SetGroupId(&groupId)
-options := &msgraphsdk.CopyToSectionRequestBuilderPostOptions{
-	Body: requestBody,
-}
-onenotePageId := "onenotePage-id"
-result, err := graphClient.Me().Onenote().PagesById(&onenotePageId).CopyToSection(onenotePage-id).Post(options)
+requestBody.SetGroupId(&groupId) 
+
+result, err := graphClient.Me().Onenote().PagesById("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
 
 
 ```

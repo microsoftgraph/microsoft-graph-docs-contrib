@@ -35,11 +35,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.channelRenamedEventMessageDetail",
-  "channelId": "String",
   "channelDisplayName": "String",
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
-  }
+  },
+  "channelId": "String"
 }
 ```
 

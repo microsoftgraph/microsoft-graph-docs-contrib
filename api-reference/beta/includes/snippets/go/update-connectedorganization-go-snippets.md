@@ -5,20 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewConnectedOrganization()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConnectedOrganization()
 displayName := "Connected organization new name"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Connected organization new description"
-requestBody.SetDescription(&description)
-state := "configured"
-requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-connectedOrganizationId := "connectedOrganization-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(options)
+requestBody.SetDescription(&description) 
+state := graphmodels.CONFIGURED_CONNECTEDORGANIZATIONSTATE 
+requestBody.SetState(&state) 
+
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

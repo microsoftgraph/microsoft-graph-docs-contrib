@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.ChildFoldersRequestBuilderGetQueryParameters{
-	IncludeHiddenFolders: true,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestIncludehiddenfolders := true
+
+requestParameters := &graphconfig.ItemMailFolderItemChildFoldersRequestBuilderGetQueryParameters{
+	Includehiddenfolders: &requestIncludehiddenfolders,
 }
-options := &msgraphsdk.ChildFoldersRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ItemMailFolderItemChildFoldersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Get(options)
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Get(context.Background(), configuration)
 
 
 ```

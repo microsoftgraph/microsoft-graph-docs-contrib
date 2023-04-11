@@ -5,20 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/EntitlementManagement/AccessPackageCatalogs/Item/CustomAccessPackageWorkflowExtensions/Item"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
-	"displayName": "test_action_0124_email",
-	"description": "this is for graph testing only",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCustomAccessPackageWorkflowExtension()
+additionalData := map[string]interface{}{
+	"displayName" : "test_action_0124_email", 
+	"description" : "this is for graph testing only", 
 }
-options := &msgraphsdk.CustomAccessPackageWorkflowExtensionRequestBuilderPutOptions{
-	Body: requestBody,
-}
-accessPackageCatalogId := "accessPackageCatalog-id"
-customAccessPackageWorkflowExtensionId := "customAccessPackageWorkflowExtension-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensionsById(&customAccessPackageWorkflowExtensionId).Put(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensionsById("customAccessPackageWorkflowExtension-id").Put(context.Background(), requestBody, nil)
 
 
 ```

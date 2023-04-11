@@ -1,7 +1,7 @@
 ---
 title: "evaluateAssignmentFilter action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 235
+Content-length: 266
 
 {
   "data": {
@@ -74,7 +74,8 @@ Content-length: 235
     "skip": 4,
     "orderBy": [
       "Order By value"
-    ]
+    ],
+    "search": "Search value"
   }
 }
 ```
@@ -90,7 +91,3 @@ Content-Length: 91
   "value": "ZXZhbHVhdGVBc3NpZ25tZW50RmlsdGVyIEludHVuZSBEb2MgU2FtcGxlIC0yNTU4NTk4OTA="
 }
 ```
-
-
-
-

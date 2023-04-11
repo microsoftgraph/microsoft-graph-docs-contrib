@@ -5,19 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/GetMailTips"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetEmailAddresses( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGetMailTipsPostRequestBody()
+emailAddresses := []string {
 	"danas@contoso.onmicrosoft.com",
 	"fannyd@contoso.onmicrosoft.com",
+
 }
-mailTipsOptions := "automaticReplies, mailboxFullStatus"
-requestBody.SetMailTipsOptions(&mailTipsOptions)
-options := &msgraphsdk.GetMailTipsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().GetMailTips().Post(options)
+requestBody.SetEmailAddresses(emailAddresses)
+mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
+requestBody.SetMailTipsOptions(&mailTipsOptions) 
+
+result, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,17 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.TeamsTabRequestBuilderGetQueryParameters{
-	Expand: "teamsApp",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ChatItemTabItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"teamsApp"},
 }
-options := &msgraphsdk.TeamsTabRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ChatItemTabItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-chatId := "chat-id"
-teamsTabId := "teamsTab-id"
-result, err := graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Get(options)
+
+result, err := graphClient.ChatsById("chat-id").TabsById("teamsTab-id").Get(context.Background(), configuration)
 
 
 ```

@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDevice()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDevice()
 accountEnabled := false
-requestBody.SetAccountEnabled(&accountEnabled)
-options := &msgraphsdk.DeviceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-deviceId := "device-id"
-graphClient.DevicesById(&deviceId).Patch(options)
+requestBody.SetAccountEnabled(&accountEnabled) 
+
+result, err := graphClient.DevicesById("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

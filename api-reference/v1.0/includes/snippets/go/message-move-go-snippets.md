@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Messages/Item/Move"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDestinationIdRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMovePostRequestBody()
 destinationId := "deleteditems"
-requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.MoveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Move(message-id).Post(options)
+requestBody.SetDestinationId(&destinationId) 
+
+result, err := graphClient.Me().MessagesById("message-id").Move().Post(context.Background(), requestBody, nil)
 
 
 ```

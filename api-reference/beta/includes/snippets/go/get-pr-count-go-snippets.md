@@ -5,24 +5,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
-	Count: true,
-	Orderby: "displayName",
-	Search: "%22displayName:Pr%22",
-	Select: "displayName,id",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+requestSearch := "\"displayName:Pr\""
+
+requestParameters := &graphconfig.GroupItemMembersGraph.userRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Orderby: [] string {"displayName"},
+	Search: &requestSearch,
+	Select: [] string {"displayName","id"},
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.GroupItemMembersGraph.userRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.GroupsById(&groupId).MembersById(&directoryObjectId).Get(options)
+
+result, err := graphClient.GroupsById("group-id").Members().GraphUser().Get(context.Background(), configuration)
 
 
 ```

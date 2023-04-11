@@ -5,19 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
-	Select: "displayName,description,mailNickname",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=minimal")
+
+requestParameters := &graphconfig.GroupsDelta()RequestBuilderGetQueryParameters{
+	Select: [] string {"displayName","description","mailNickname"},
 }
-headers := map[string]string{
-	"Prefer": "return=minimal"
+configuration := &graphconfig.GroupsDelta()RequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Groups().Delta()().Get(options)
+
+result, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
 
 
 ```

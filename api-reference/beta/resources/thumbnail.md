@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Thumbnail
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # Thumbnail resource type
 

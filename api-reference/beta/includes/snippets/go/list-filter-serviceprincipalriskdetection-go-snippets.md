@@ -5,15 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identityprotection"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.ServicePrincipalRiskDetectionsRequestBuilderGetQueryParameters{
-	Filter: "riskEventType%20eq%20'investigationsThreatIntelligence'%20or%20riskLevel%20eq%20'medium'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
+
+requestParameters := &graphconfig.IdentityProtectionServicePrincipalRiskDetectionsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.ServicePrincipalRiskDetectionsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.IdentityProtectionServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().Get(options)
+
+result, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().Get(context.Background(), configuration)
 
 
 ```

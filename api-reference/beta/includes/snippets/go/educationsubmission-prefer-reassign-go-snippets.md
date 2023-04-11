@@ -5,18 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/education"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "include-unknown-enum-members"
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "include-unknown-enum-members")
+
+configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemReassignRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.ReassignRequestBuilderPostOptions{
-	H: headers,
-}
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Reassign(educationClass-id, educationAssignment-id, educationSubmission-id).Post(options)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Reassign().Post(context.Background(), configuration)
 
 
 ```

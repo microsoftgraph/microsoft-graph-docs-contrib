@@ -5,16 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPlannerRoster()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.plannerRoster",
-}
-options := &msgraphsdk.RostersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Planner().Rosters().Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPlannerRoster()
+
+result, err := graphClient.Planner().Rosters().Post(context.Background(), requestBody, nil)
 
 
 ```

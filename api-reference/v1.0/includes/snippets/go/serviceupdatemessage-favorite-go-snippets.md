@@ -5,17 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Admin/ServiceAnnouncement/Messages/Favorite"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewMessageIdsRequestBody()
-requestBody.SetMessageIds( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewFavoritePostRequestBody()
+messageIds := []string {
 	"MC172851",
 	"MC167983",
+
 }
-options := &msgraphsdk.FavoriteRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(options)
+requestBody.SetMessageIds(messageIds)
+
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(context.Background(), requestBody, nil)
 
 
 ```

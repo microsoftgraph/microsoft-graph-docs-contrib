@@ -5,19 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewOrganizationalBrandingLocalization()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewOrganizationalBrandingLocalization()
 signInPageText := "Welcome to Contoso France."
-requestBody.SetSignInPageText(&signInPageText)
+requestBody.SetSignInPageText(&signInPageText) 
 usernameHintText := " "
-requestBody.SetUsernameHintText(&usernameHintText)
-options := &msgraphsdk.OrganizationalBrandingLocalizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-organizationId := "organization-id"
-organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
+requestBody.SetUsernameHintText(&usernameHintText) 
+
+result, err := graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

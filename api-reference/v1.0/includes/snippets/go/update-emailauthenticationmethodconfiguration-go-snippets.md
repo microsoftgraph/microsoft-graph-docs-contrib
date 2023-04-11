@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAuthenticationMethodConfiguration()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-	"allowExternalIdToUseEmailOtp": "enabled",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAuthenticationMethodConfiguration()
+additionalData := map[string]interface{}{
+	"allowExternalIdToUseEmailOtp" : "enabled", 
 }
-options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

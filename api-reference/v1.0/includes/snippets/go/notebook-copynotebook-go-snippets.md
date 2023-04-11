@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Onenote/Notebooks/Item/CopyNotebook"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCopyNotebookPostRequestBody()
 groupId := "groupId-value"
-requestBody.SetGroupId(&groupId)
+requestBody.SetGroupId(&groupId) 
 renameAs := "renameAs-value"
-requestBody.SetRenameAs(&renameAs)
-options := &msgraphsdk.CopyNotebookRequestBuilderPostOptions{
-	Body: requestBody,
-}
-notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).CopyNotebook(notebook-id).Post(options)
+requestBody.SetRenameAs(&renameAs) 
+
+result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").CopyNotebook().Post(context.Background(), requestBody, nil)
 
 
 ```

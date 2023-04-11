@@ -5,19 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPersonAward()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonAward()
 issuingAuthority := "International Association of Branding Management"
-requestBody.SetIssuingAuthority(&issuingAuthority)
+requestBody.SetIssuingAuthority(&issuingAuthority) 
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
-requestBody.SetThumbnailUrl(&thumbnailUrl)
-options := &msgraphsdk.PersonAwardRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-personAwardId := "personAward-id"
-graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options)
+requestBody.SetThumbnailUrl(&thumbnailUrl) 
+
+result, err := graphClient.UsersById("user-id").Profile().AwardsById("personAward-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

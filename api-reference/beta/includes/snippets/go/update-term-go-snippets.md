@@ -5,23 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//termStore"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTerm()
-requestBody.SetLabels( []LocalizedLabel {
-	msgraphsdk.NewLocalizedLabel(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "changedLabel",
-		"languageTag": "en-US",
-		"isDefault": true,
-	}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTerm()
+
+
+localizedLabel := graphmodels.NewLocalizedLabel()
+name := "changedLabel"
+localizedLabel.SetName(&name) 
+languageTag := "en-US"
+localizedLabel.SetLanguageTag(&languageTag) 
+isDefault := true
+localizedLabel.SetIsDefault(&isDefault) 
+
+labels := []graphmodels.LocalizedLabelable {
+	localizedLabel,
+
 }
-options := &msgraphsdk.TermRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-setId := "set-id"
-termId := "term-id"
-graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
+requestBody.SetLabels(labels)
+
+result, err := graphClient.TermStore().SetsById("set-id").TermsById("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

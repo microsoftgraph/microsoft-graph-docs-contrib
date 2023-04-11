@@ -5,17 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.InstancesRequestBuilderGetQueryParameters{
-	Top: 100,
-	Skip: 0,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestTop := int32(100)
+requestSkip := int32(0)
+
+requestParameters := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetQueryParameters{
+	Top: &requestTop,
+	Skip: &requestSkip,
 }
-options := &msgraphsdk.InstancesRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInstancesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).Instances().Get(options)
+
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Instances().Get(context.Background(), configuration)
 
 
 ```

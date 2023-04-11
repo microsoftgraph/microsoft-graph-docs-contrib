@@ -5,33 +5,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChat()
-chatType := "oneOnOne"
-requestBody.SetChatType(&chatType)
-requestBody.SetMembers( []ConversationMember {
-	msgraphsdk.NewConversationMember(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"roles":  []String {
-			"owner",
-		}
-		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
-	}
-	msgraphsdk.NewConversationMember(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"roles":  []String {
-			"owner",
-		}
-		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('alex@contoso.com')",
-	}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChat()
+chatType := graphmodels.ONEONONE_CHATTYPE 
+requestBody.SetChatType(&chatType) 
+
+
+conversationMember := graphmodels.NewConversationMember()
+roles := []string {
+	"owner",
+
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-	Body: requestBody,
+conversationMember.SetRoles(roles)
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
-result, err := graphClient.Chats().Post(options)
+conversationMember.SetAdditionalData(additionalData)
+conversationMember1 := graphmodels.NewConversationMember()
+roles := []string {
+	"owner",
+
+}
+conversationMember1.SetRoles(roles)
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')", 
+}
+conversationMember1.SetAdditionalData(additionalData)
+
+members := []graphmodels.ConversationMemberable {
+	conversationMember,
+	conversationMember1,
+
+}
+requestBody.SetMembers(members)
+
+result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

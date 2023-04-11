@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.AgreementRequestBuilderGetQueryParameters{
-	Expand: "files",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.IdentityGovernanceTermsOfUseAgreementItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"files"},
 }
-options := &msgraphsdk.AgreementRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.IdentityGovernanceTermsOfUseAgreementItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Get(options)
+
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Get(context.Background(), configuration)
 
 
 ```

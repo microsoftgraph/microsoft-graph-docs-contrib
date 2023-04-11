@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewExternalConnection()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewExternalConnection()
 name := "Contoso HR Service Tickets"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 description := "Connection to index HR service tickets"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.ExternalConnectionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.External().ConnectionsById("externalConnection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

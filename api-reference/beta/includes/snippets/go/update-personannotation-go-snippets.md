@@ -5,17 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPersonAnnotation()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-options := &msgraphsdk.PersonAnnotationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-personAnnotationId := "personAnnotation-id"
-graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Patch(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonAnnotation()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+
+result, err := graphClient.UsersById("user-id").Profile().NotesById("personAnnotation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

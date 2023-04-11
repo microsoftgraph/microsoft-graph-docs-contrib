@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.DeviceRequestBuilderGetQueryParameters{
-	Select: "id,extensionAttributes",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.DeviceItemRequestBuilderGetQueryParameters{
+	Select: [] string {"id","extensionAttributes"},
 }
-options := &msgraphsdk.DeviceRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.DeviceItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Get(options)
+
+result, err := graphClient.DevicesById("device-id").Get(context.Background(), configuration)
 
 
 ```

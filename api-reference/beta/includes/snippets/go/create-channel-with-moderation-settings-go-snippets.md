@@ -5,30 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChannel()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChannel()
 displayName := "TestChannelModeration"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Test channel moderation."
-requestBody.SetDescription(&description)
-membershipType := "standard"
-requestBody.SetMembershipType(&membershipType)
-moderationSettings := msgraphsdk.NewChannelModerationSettings()
-requestBody.SetModerationSettings(moderationSettings)
-userNewMessageRestriction := "everyoneExceptGuests"
-moderationSettings.SetUserNewMessageRestriction(&userNewMessageRestriction)
-replyRestriction := "everyone"
-moderationSettings.SetReplyRestriction(&replyRestriction)
+requestBody.SetDescription(&description) 
+membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
+moderationSettings := graphmodels.NewChannelModerationSettings()
+userNewMessageRestriction := graphmodels.EVERYONEEXCEPTGUESTS_USERNEWMESSAGERESTRICTION 
+moderationSettings.SetUserNewMessageRestriction(&userNewMessageRestriction) 
+replyRestriction := graphmodels.EVERYONE_REPLYRESTRICTION 
+moderationSettings.SetReplyRestriction(&replyRestriction) 
 allowNewMessageFromBots := true
-moderationSettings.SetAllowNewMessageFromBots(&allowNewMessageFromBots)
+moderationSettings.SetAllowNewMessageFromBots(&allowNewMessageFromBots) 
 allowNewMessageFromConnectors := true
-moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors)
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors) 
+requestBody.SetModerationSettings(moderationSettings)
+
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

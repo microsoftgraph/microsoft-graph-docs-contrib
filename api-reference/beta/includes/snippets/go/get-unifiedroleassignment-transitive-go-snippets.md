@@ -5,20 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
-	Count: true,
-	Filter: "principalId%20eq%20'2c7936bc-3517-40f3-8eda-4806637b6516'%20and%20roleDefinitionId%20eq%20'fe930be7-5e62-47db-91af-98c3a49a38b1'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+requestFilter := "principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516' and roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'"
+
+requestParameters := &graphconfig.RoleManagementDirectoryTransitiveRoleAssignmentsRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Filter: &requestFilter,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.RoleManagementDirectoryTransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(options)
+
+result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

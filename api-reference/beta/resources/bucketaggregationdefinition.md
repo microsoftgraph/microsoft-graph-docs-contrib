@@ -2,7 +2,7 @@
 title: "bucketAggregationDefinition resource type"
 description: "Provides the details on how to generate the agregations in the results"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

@@ -3,7 +3,7 @@ title: "FilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
 ---
 

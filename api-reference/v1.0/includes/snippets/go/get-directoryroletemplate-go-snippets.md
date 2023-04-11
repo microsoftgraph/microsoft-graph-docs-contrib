@@ -5,10 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
 
-directoryRoleTemplateId := "directoryRoleTemplate-id"
-result, err := graphClient.DirectoryRoleTemplatesById(&directoryRoleTemplateId).Get(nil)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+result, err := graphClient.DirectoryRoleTemplatesById("directoryRoleTemplate-id").Get(context.Background(), nil)
 
 
 ```

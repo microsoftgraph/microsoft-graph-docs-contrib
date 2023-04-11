@@ -5,30 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewWorkforceIntegration()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewWorkforceIntegration()
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 apiVersion := int32(99)
-requestBody.SetApiVersion(&apiVersion)
-encryption := msgraphsdk.NewWorkforceIntegrationEncryption()
-requestBody.SetEncryption(encryption)
-protocol := "protocol-value"
-encryption.SetProtocol(&protocol)
+requestBody.SetApiVersion(&apiVersion) 
+encryption := graphmodels.NewWorkforceIntegrationEncryption()
+protocol := graphmodels.PROTOCOL-VALUE_WORKFORCEINTEGRATIONENCRYPTIONPROTOCOL 
+encryption.SetProtocol(&protocol) 
 secret := "secret-value"
-encryption.SetSecret(&secret)
+encryption.SetSecret(&secret) 
+requestBody.SetEncryption(encryption)
 isActive := true
-requestBody.SetIsActive(&isActive)
+requestBody.SetIsActive(&isActive) 
 url := "url-value"
-requestBody.SetUrl(&url)
-supports := "supports-value"
-requestBody.SetSupports(&supports)
-options := &msgraphsdk.WorkforceIntegrationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-workforceIntegrationId := "workforceIntegration-id"
-graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
+requestBody.SetUrl(&url) 
+supports := graphmodels.SUPPORTS-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
+requestBody.SetSupports(&supports) 
+
+result, err := graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

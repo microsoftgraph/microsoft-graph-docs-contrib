@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.CloudPcUserSettingRequestBuilderGetQueryParameters{
-	Expand: "assignments",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"assignments"},
 }
-options := &msgraphsdk.CloudPcUserSettingRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get(options)
+
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Get(context.Background(), configuration)
 
 
 ```

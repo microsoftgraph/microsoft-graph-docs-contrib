@@ -1,0 +1,302 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
+          "Target": "identity"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "emailThreats",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailThreats](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "GraphService"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "emailThreatSubmissionPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailThreatSubmissionPolicies](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "GraphService"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "fileThreats",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileThreats](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "GraphService"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "urlThreats",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlThreats](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "GraphService"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "threatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "GraphService"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [longRunningOperationStatus](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionCategory](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionCategory"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionClientSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionClientSource](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionClientSource"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionContentType](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionContentType"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionResultCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionResultCategory](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionResultCategory"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionResultDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionResultDetail](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionResultDetail"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "submissionSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionSource](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "submissionSource"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "tenantAllowBlockListAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowBlockListAction](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "tenantAllowBlockListAction"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "tenantAllowBlockListEntryType",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowBlockListEntryType](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "tenantAllowBlockListEntryType"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "userMailboxSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [userMailboxSetting](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "userMailboxSetting"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attackSimulationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attackSimulationInfo](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationInfo?view=graph-rest-beta) resource.",
+          "Target": "attackSimulationInfo"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionAdminReview",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionAdminReview](https://learn.microsoft.com/en-us/graph/api/resources/submissionAdminReview?view=graph-rest-beta) resource.",
+          "Target": "submissionAdminReview"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionDetectedFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionDetectedFile](https://learn.microsoft.com/en-us/graph/api/resources/submissionDetectedFile?view=graph-rest-beta) resource.",
+          "Target": "submissionDetectedFile"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionResult](https://learn.microsoft.com/en-us/graph/api/resources/submissionResult?view=graph-rest-beta) resource.",
+          "Target": "submissionResult"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/submissionUserIdentity?view=graph-rest-beta) resource.",
+          "Target": "submissionUserIdentity"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAllowBlockListEntryResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowBlockListEntryResult](https://learn.microsoft.com/en-us/graph/api/resources/tenantAllowBlockListEntryResult?view=graph-rest-beta) resource.",
+          "Target": "tenantAllowBlockListEntryResult"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAllowOrBlockListAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAllowOrBlockListAction](https://learn.microsoft.com/en-us/graph/api/resources/tenantAllowOrBlockListAction?view=graph-rest-beta) resource.",
+          "Target": "tenantAllowOrBlockListAction"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailContentThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailContentThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "emailContentThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "emailThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailThreatSubmissionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailThreatSubmissionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/emailThreatSubmissionPolicy?view=graph-rest-beta) resource.",
+          "Target": "emailThreatSubmissionPolicy"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailUrlThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/emailUrlThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "emailUrlThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileContentThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileContentThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileContentThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "fileContentThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "fileThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileUrlThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileUrlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/fileUrlThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "fileUrlThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/threatSubmission?view=graph-rest-beta) resource.",
+          "Target": "threatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatSubmissionRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatSubmissionRoot](https://learn.microsoft.com/en-us/graph/api/resources/threatSubmissionRoot?view=graph-rest-beta) resource.",
+          "Target": "threatSubmissionRoot"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlThreatSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlThreatSubmission](https://learn.microsoft.com/en-us/graph/api/resources/urlThreatSubmission?view=graph-rest-beta) resource.",
+          "Target": "urlThreatSubmission"
+        },
+        {
+          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+          "ApiChange": "Method",
+          "ChangedApiName": "review",
+          "ChangeType": "Addition",
+          "Description": "Added the [review](https://learn.microsoft.com/en-us/graph/api/review?view=graph-rest-beta) resource.",
+          "Target": "review"
+        }
+      ],
+      "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-18T06:16:30.715023Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}

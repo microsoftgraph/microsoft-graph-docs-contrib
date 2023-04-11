@@ -5,16 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone="Pacific Standard Time""
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.ItemOutlookTaskItemCompleteRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.CompleteRequestBuilderPostOptions{
-	H: headers,
-}
-outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Complete(outlookTask-id).Post(options)
+
+result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Complete().Post(context.Background(), configuration)
 
 
 ```

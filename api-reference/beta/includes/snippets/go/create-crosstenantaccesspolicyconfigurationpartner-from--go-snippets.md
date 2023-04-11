@@ -5,41 +5,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCrossTenantAccessPolicyConfigurationPartner()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationPartner()
 tenantId := "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
-requestBody.SetTenantId(&tenantId)
-b2bDirectConnectOutbound := msgraphsdk.NewCrossTenantAccessPolicyB2BSetting()
-requestBody.SetB2bDirectConnectOutbound(b2bDirectConnectOutbound)
-usersAndGroups := msgraphsdk.NewCrossTenantAccessPolicyTargetConfiguration()
+requestBody.SetTenantId(&tenantId) 
+b2bDirectConnectOutbound := graphmodels.NewCrossTenantAccessPolicyB2BSetting()
+usersAndGroups := graphmodels.NewCrossTenantAccessPolicyTargetConfiguration()
+accessType := graphmodels.BLOCKED_CROSSTENANTACCESSPOLICYTARGETCONFIGURATIONACCESSTYPE 
+usersAndGroups.SetAccessType(&accessType) 
+
+
+crossTenantAccessPolicyTarget := graphmodels.NewCrossTenantAccessPolicyTarget()
+target := "6f546279-4da5-4b53-a095-09ea0cef9971"
+crossTenantAccessPolicyTarget.SetTarget(&target) 
+targetType := graphmodels.GROUP_CROSSTENANTACCESSPOLICYTARGETTYPE 
+crossTenantAccessPolicyTarget.SetTargetType(&targetType) 
+
+targets := []graphmodels.CrossTenantAccessPolicyTargetable {
+	crossTenantAccessPolicyTarget,
+
+}
+usersAndGroups.SetTargets(targets)
 b2bDirectConnectOutbound.SetUsersAndGroups(usersAndGroups)
-accessType := "blocked"
-usersAndGroups.SetAccessType(&accessType)
-usersAndGroups.SetTargets( []CrossTenantAccessPolicyTarget {
-	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "6f546279-4da5-4b53-a095-09ea0cef9971",
-		"targetType": "group",
-	}
+requestBody.SetB2bDirectConnectOutbound(b2bDirectConnectOutbound)
+b2bDirectConnectInbound := graphmodels.NewCrossTenantAccessPolicyB2BSetting()
+applications := graphmodels.NewCrossTenantAccessPolicyTargetConfiguration()
+accessType := graphmodels.ALLOWED_CROSSTENANTACCESSPOLICYTARGETCONFIGURATIONACCESSTYPE 
+applications.SetAccessType(&accessType) 
+
+
+crossTenantAccessPolicyTarget := graphmodels.NewCrossTenantAccessPolicyTarget()
+target := "Office365"
+crossTenantAccessPolicyTarget.SetTarget(&target) 
+targetType := graphmodels.APPLICATION_CROSSTENANTACCESSPOLICYTARGETTYPE 
+crossTenantAccessPolicyTarget.SetTargetType(&targetType) 
+
+targets := []graphmodels.CrossTenantAccessPolicyTargetable {
+	crossTenantAccessPolicyTarget,
+
 }
-b2bDirectConnectInbound := msgraphsdk.NewCrossTenantAccessPolicyB2BSetting()
-requestBody.SetB2bDirectConnectInbound(b2bDirectConnectInbound)
-applications := msgraphsdk.NewCrossTenantAccessPolicyTargetConfiguration()
+applications.SetTargets(targets)
 b2bDirectConnectInbound.SetApplications(applications)
-accessType := "allowed"
-applications.SetAccessType(&accessType)
-applications.SetTargets( []CrossTenantAccessPolicyTarget {
-	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "Office365",
-		"targetType": "application",
-	}
-}
-options := &msgraphsdk.PartnersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(options)
+requestBody.SetB2bDirectConnectInbound(b2bDirectConnectInbound)
+
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(context.Background(), requestBody, nil)
 
 
 ```

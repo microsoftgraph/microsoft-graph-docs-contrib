@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,6 +39,8 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Administrator
 + Security Operator
 + Security Reader
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## HTTP request
 
@@ -72,21 +76,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1"
+  "name": "get_signin_1",
+  "sampleKeys": ["66ea54eb-blah-4ee5-be62-ff5a759b0100"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-ff5a759b0100
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -101,8 +103,11 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-signin-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-signin-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -138,6 +143,7 @@ Content-type: application/json
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
   "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
   "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
   "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
   "conditionalAccessStatus":"notApplied",
@@ -160,6 +166,8 @@ Content-type: application/json
   "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
   "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "authenticationAppDeviceDetails": null,
+  "authenticationAppPolicyDetails": null,
   "authenticationMethodsUsed":[],
   "authenticationRequirement":"singleFactorAuthentication",
   "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",

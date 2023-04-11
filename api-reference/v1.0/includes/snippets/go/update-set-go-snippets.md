@@ -5,17 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//termStore"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewSet()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSet()
 description := "mySet"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.SetRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-siteId := "site-id"
-setId := "set-id"
-graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.SitesById("site-id").TermStore().SetsById("set-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

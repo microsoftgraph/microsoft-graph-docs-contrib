@@ -5,19 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//externalConnectors"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewExternalGroup()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewExternalGroup()
 displayName := "Contoso Marketing"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "The product marketing team"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.ExternalGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-externalConnectionId := "externalConnection-id"
-externalGroupId := "externalGroup-id"
-graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.External().ConnectionsById("externalConnection-id").GroupsById("externalGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

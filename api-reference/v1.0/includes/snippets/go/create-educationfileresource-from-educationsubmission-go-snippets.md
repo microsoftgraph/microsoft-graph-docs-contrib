@@ -5,24 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewEducationSubmissionResource()
-resource := msgraphsdk.NewEducationResource()
-requestBody.SetResource(resource)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEducationSubmissionResource()
+resource := graphmodels.NewEducationResource()
 displayName := "_FTP_EDC-61424749-250820211136.pdf"
-resource.SetDisplayName(&displayName)
-resource.SetAdditionalData(map[string]interface{}{
-	"fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3",
-	"@odata.type": "#microsoft.graph.educationFileResource",
+resource.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"fileUrl" : "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3", 
 }
-options := &msgraphsdk.ResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-educationClassId := "educationClass-id"
-educationAssignmentId := "educationAssignment-id"
-educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Resources().Post(options)
+resource.SetAdditionalData(additionalData)
+requestBody.SetResource(resource)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SubmissionsById("educationSubmission-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

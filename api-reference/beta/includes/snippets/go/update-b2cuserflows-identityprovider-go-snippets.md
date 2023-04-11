@@ -5,18 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}",
-}
-options := &msgraphsdk.IdentityProviderRequestBuilderPostOptions{
-	Body: requestBody,
-}
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-identityProviderId := "identityProvider-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/beta/identityProviders/{id}"
+requestBody.SetOdataId(&odataId) 
+
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").IdentityProviders().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

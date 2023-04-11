@@ -5,17 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/TenantTags/Item/ManagedTenantsUnassignTag"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTenantIdsRequestBody()
-requestBody.SetTenantIds( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUnassignTagPostRequestBody()
+tenantIds := []string {
 	"String",
+
 }
-options := &msgraphsdk.UnassignTagRequestBuilderPostOptions{
-	Body: requestBody,
-}
-tenantTagId := "tenantTag-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).UnassignTag(tenantTag-id).Post(options)
+requestBody.SetTenantIds(tenantIds)
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").ManagedTenantsUnassignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,20 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/Synchronization/AcquireAccessToken"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCredentialsRequestBody()
-requestBody.SetCredentials( []SynchronizationSecretKeyStringValuePair {
-	msgraphsdk.NewSynchronizationSecretKeyStringValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair",
-	}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAcquireAccessTokenPostRequestBody()
+
+
+synchronizationSecretKeyStringValuePair := graphmodels.NewSynchronizationSecretKeyStringValuePair()
+
+credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
+	synchronizationSecretKeyStringValuePair,
+
 }
-options := &msgraphsdk.AcquireAccessTokenRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(options)
+requestBody.SetCredentials(credentials)
+
+graphClient.ApplicationsById("application-id").Synchronization().AcquireAccessToken().Post(context.Background(), requestBody, nil)
 
 
 ```

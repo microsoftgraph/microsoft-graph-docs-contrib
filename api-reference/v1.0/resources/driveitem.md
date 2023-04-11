@@ -19,7 +19,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
-For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems). 
 
 **driveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
@@ -56,7 +56,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
-| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
+| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing invite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
 | [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
 | [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
@@ -196,10 +196,10 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
-  "id": "string (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",

@@ -5,20 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/ManagementActions/Item/ManagedTenantsApply"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewApplyPostRequestBody()
 tenantId := "String"
-requestBody.SetTenantId(&tenantId)
+requestBody.SetTenantId(&tenantId) 
 tenantGroupId := "String"
-requestBody.SetTenantGroupId(&tenantGroupId)
+requestBody.SetTenantGroupId(&tenantGroupId) 
 managementTemplateId := "String"
-requestBody.SetManagementTemplateId(&managementTemplateId)
-options := &msgraphsdk.ApplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-managementActionId := "managementAction-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById(&managementActionId).Apply(managementAction-id).Post(options)
+requestBody.SetManagementTemplateId(&managementTemplateId) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById("managementAction-id").ManagedTenantsApply().Post(context.Background(), requestBody, nil)
 
 
 ```

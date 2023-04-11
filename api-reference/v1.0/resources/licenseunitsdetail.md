@@ -2,7 +2,7 @@
 title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
 ms.localizationpriority: medium
-author: "michaelcurnutt "
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**. For more information on the progression states of a subscription, see [What if my subscription expires?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**. For more information on the progression states of a subscription, see [What if my subscription expires?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide&preserve-view=true)
 
 ## Properties
 | Property	   | Type	|Description|

@@ -5,22 +5,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/WindowsUpdatesUnenrollAssetsById"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-updateCategory := "feature"
-requestBody.SetUpdateCategory(&updateCategory)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUnenrollAssetsByIdPostRequestBody()
+updateCategory := graphmodels.FEATURE_UPDATECATEGORY 
+requestBody.SetUpdateCategory(&updateCategory) 
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
-requestBody.SetMemberEntityType(&memberEntityType)
-requestBody.SetIds( []String {
+requestBody.SetMemberEntityType(&memberEntityType) 
+ids := []string {
 	"String",
 	"String",
 	"String",
+
 }
-options := &msgraphsdk.UnenrollAssetsByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Admin().Windows().Updates().UpdatableAssets().UnenrollAssetsById().Post(options)
+requestBody.SetIds(ids)
+
+graphClient.Admin().Windows().Updates().UpdatableAssets().WindowsUpdatesUnenrollAssetsById().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "userConsentRequest resource type"
-description: "A request created by a user to use an app that requires access to organizational data the user is unauthorized to grant consent to themselves."
+description: "Represents the details of the consent request a user creates when they request to access an app or to grant permissions to an app. The details include justification for requesting access, the status of the request, and the approval details."
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [userConsentRequest](../resources/userconsentrequest.md) is created by a user when they are requesting access to an application which requires an admin authorization to access. 
+Represents the details of the consent request a user creates when they request to access an app or to grant permissions to an app. The details include justification for requesting access, the status of the request, and the approval details.
+
+The user can create a consent request when an app or a permission requires admin authorization and only when the [admin consent workflow](adminconsentrequestpolicy.md) is enabled.
 
 ## Methods
 |Method|Return type|Description|

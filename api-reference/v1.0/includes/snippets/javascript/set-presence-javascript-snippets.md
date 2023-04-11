@@ -18,7 +18,6 @@ const setPresence = {
 };
 
 await client.api('/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setPresence')
-	.version('beta')
 	.post(setPresence);
 
 ```

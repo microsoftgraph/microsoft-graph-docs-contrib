@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/SetVerifiedPublisher"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewVerifiedPublisherIdRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSetVerifiedPublisherPostRequestBody()
 verifiedPublisherId := "1234567"
-requestBody.SetVerifiedPublisherId(&verifiedPublisherId)
-options := &msgraphsdk.SetVerifiedPublisherRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).SetVerifiedPublisher(application-id).Post(options)
+requestBody.SetVerifiedPublisherId(&verifiedPublisherId) 
+
+graphClient.ApplicationsById("application-id").SetVerifiedPublisher().Post(context.Background(), requestBody, nil)
 
 
 ```

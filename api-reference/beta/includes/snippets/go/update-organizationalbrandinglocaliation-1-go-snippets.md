@@ -5,22 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/organization"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewOrganizationalBranding()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Accept-Language", "0")
+
+configuration := &graphconfig.OrganizationItemBrandingRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewOrganizationalBranding()
 signInPageText := "Default"
-requestBody.SetSignInPageText(&signInPageText)
+requestBody.SetSignInPageText(&signInPageText) 
 usernameHintText := "DefaultHint"
-requestBody.SetUsernameHintText(&usernameHintText)
-headers := map[string]string{
-	"Accept-Language": "0"
-}
-options := &msgraphsdk.BrandingRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
-}
-organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Branding().Patch(options)
+requestBody.SetUsernameHintText(&usernameHintText) 
+
+result, err := graphClient.OrganizationById("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
 
 
 ```

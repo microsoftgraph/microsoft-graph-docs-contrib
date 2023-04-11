@@ -14,13 +14,13 @@ This pattern provides your app a way to poll for status updates on a long runnin
 The general pattern follows these steps:
 
 1. Your app requests a long running action via the API. The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.
-2. Your app requests the action status report URL and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response with the progress of the long running action.
+2. Your app requests the action status report URL and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus) response with the progress of the long running action.
 3. The long running action completes. 
-4. Your app requests the action status report URL again and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response showing the completion of the action.
+4. Your app requests the action status report URL again and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus) response showing the completion of the action.
 
 ## Initial action request
 
-Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta) scenario.
+Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy) scenario.
 In this scenario, your app requests to copy a folder that contains a large amount of data.
 This request will likely take several seconds to complete since the amount of data is large.
 
@@ -39,20 +39,16 @@ Content-Type: application/json
   "name": "Copy of LargeFolder1"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lro-copy-item-example-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.
 
@@ -139,20 +135,16 @@ You can address this new item using the resourceId, for example:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-complete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lro-copy-item-example-complete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -174,7 +166,7 @@ Long running actions are supported on the following API methods
 
 | **Resource** | **API** |
 |:------ | :------ |
-| DriveItem | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
+| DriveItem | [Copy](/graph/api/driveitem-copy) |
 
 ## Prerequisites
 

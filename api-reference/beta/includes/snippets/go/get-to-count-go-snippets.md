@@ -5,21 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Search: "%22displayName:wa%22%20OR%20%22displayName:ad%22",
-	Orderby: "displayName",
-	Count: true,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestSearch := "\"displayName:wa\" OR \"displayName:ad\""
+requestCount := true
+
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+	Search: &requestSearch,
+	Orderby: [] string {"displayName"},
+	Count: &requestCount,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.UsersRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Users().Get(options)
+
+result, err := graphClient.Users().Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "List simulationAutomations"
 description: "Get a list of attack simulation automations for a tenant."
-author: "Gopal-MSFT"
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -68,9 +68,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Request
+
 The following is an example of a request.
 
-### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulationautomation"
@@ -80,6 +82,31 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulationautomation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulationautomation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-simulationautomation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulationautomation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulationautomation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-simulationautomation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

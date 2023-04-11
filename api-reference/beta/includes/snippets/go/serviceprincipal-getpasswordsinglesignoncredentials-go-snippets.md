@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/GetPasswordSingleSignOnCredentials"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewIdRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGetPasswordSingleSignOnCredentialsPostRequestBody()
 id := "5793aa3b-cca9-4794-679a240f8b58"
-requestBody.SetId(&id)
-options := &msgraphsdk.GetPasswordSingleSignOnCredentialsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetPasswordSingleSignOnCredentials(servicePrincipal-id).Post(options)
+requestBody.SetId(&id) 
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").GetPasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

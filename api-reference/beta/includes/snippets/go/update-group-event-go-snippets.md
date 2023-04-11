@@ -5,31 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewEvent()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEvent()
 originalStartTimeZone := "originalStartTimeZone-value"
-requestBody.SetOriginalStartTimeZone(&originalStartTimeZone)
+requestBody.SetOriginalStartTimeZone(&originalStartTimeZone) 
 originalEndTimeZone := "originalEndTimeZone-value"
-requestBody.SetOriginalEndTimeZone(&originalEndTimeZone)
-responseStatus := msgraphsdk.NewResponseStatus()
+requestBody.SetOriginalEndTimeZone(&originalEndTimeZone) 
+responseStatus := graphmodels.NewResponseStatus()
+time , err := time.Parse(time.RFC3339, "datetime-value")
+responseStatus.SetTime(&time) 
 requestBody.SetResponseStatus(responseStatus)
-response := ""
-responseStatus.SetResponse(&response)
-time, err := time.Parse(time.RFC3339, "datetime-value")
-responseStatus.SetTime(&time)
 uid := "iCalUId-value"
-requestBody.SetUid(&uid)
+requestBody.SetUid(&uid) 
 reminderMinutesBeforeStart := int32(99)
-requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
+requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart) 
 isReminderOn := true
-requestBody.SetIsReminderOn(&isReminderOn)
-options := &msgraphsdk.EventRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-eventId := "event-id"
-graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(options)
+requestBody.SetIsReminderOn(&isReminderOn) 
+
+result, err := graphClient.GroupsById("group-id").EventsById("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,19 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPersonCertification()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonCertification()
 issuingAuthority := "International Academy of Marketing Excellence"
-requestBody.SetIssuingAuthority(&issuingAuthority)
+requestBody.SetIssuingAuthority(&issuingAuthority) 
 issuingCompany := "International Academy of Marketing Excellence"
-requestBody.SetIssuingCompany(&issuingCompany)
-options := &msgraphsdk.PersonCertificationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-personCertificationId := "personCertification-id"
-graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(options)
+requestBody.SetIssuingCompany(&issuingCompany) 
+
+result, err := graphClient.UsersById("user-id").Profile().CertificationsById("personCertification-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

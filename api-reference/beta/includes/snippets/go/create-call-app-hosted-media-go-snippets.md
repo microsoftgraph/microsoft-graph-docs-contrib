@@ -5,54 +5,64 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCall()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
-requestBody.SetCallbackUri(&callbackUri)
-source := msgraphsdk.NewParticipantInfo()
-requestBody.SetSource(source)
-identity := msgraphsdk.NewIdentitySet()
-source.SetIdentity(identity)
-application := msgraphsdk.NewIdentity()
-identity.SetApplication(application)
+requestBody.SetCallbackUri(&callbackUri) 
+source := graphmodels.NewParticipantInfo()
+identity := graphmodels.NewIdentitySet()
+application := graphmodels.NewIdentity()
 displayName := "Calling Bot"
-application.SetDisplayName(&displayName)
+application.SetDisplayName(&displayName) 
 id := "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
-application.SetId(&id)
-application.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.identity",
+application.SetId(&id) 
+identity.SetApplication(application)
+source.SetIdentity(identity)
+region := null
+source.SetRegion(&region) 
+languageId := null
+source.SetLanguageId(&languageId) 
+requestBody.SetSource(source)
+
+
+invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
+displayName := "John"
+user.SetDisplayName(&displayName) 
+id := "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+user.SetId(&id) 
+identity.SetUser(user)
+invitationParticipantInfo.SetIdentity(identity)
+
+targets := []graphmodels.InvitationParticipantInfoable {
+	invitationParticipantInfo,
+
 }
-identity.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.identitySet",
+requestBody.SetTargets(targets)
+requestedModalities := []graphmodels.Modalityable {
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
+
 }
-source.SetRegion(nil)
-source.SetLanguageId(nil)
-source.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.participantInfo",
+requestBody.SetRequestedModalities(requestedModalities)
+mediaConfig := graphmodels.NewMediaConfig()
+additionalData := map[string]interface{}{
+	"blob" : "<Media Session Configuration>", 
 }
-requestBody.SetTargets( []InvitationParticipantInfo {
-	msgraphsdk.NewInvitationParticipantInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.invitationParticipantInfo",
-	}
-}
-requestBody.SetRequestedModalities( []Modality {
-	"audio",
-}
-mediaConfig := msgraphsdk.NewMediaConfig()
+mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.appHostedMediaConfig",
-	"blob": "<Media Session Configuration>",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.call",
-}
-options := &msgraphsdk.CallsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Communications().Calls().Post(options)
+
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

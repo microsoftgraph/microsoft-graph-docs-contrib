@@ -3,7 +3,7 @@ title: printTaskTrigger resource type
 description: Determines the conditions under which a new printTask will be executed based on the associated printTaskDefinition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

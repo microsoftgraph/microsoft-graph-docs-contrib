@@ -1,11 +1,11 @@
 ---
-title: "Login component in the Microsoft Graph Toolkit"
+title: "Login component in Microsoft Graph Toolkit"
 description: "A Login component is a button and flyout control to facilitate Microsoft identity platform authentication."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Login component in the Microsoft Graph Toolkit
+# Login component in Microsoft Graph Toolkit
 
 A Login component is a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 * When user is not signed in, the control is a simple button to initiate the sign in process.
@@ -13,7 +13,7 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 
 ## Example
 
-The following example shows the `mgt-login` component with a signed-in user. 
+The following example shows the `mgt-login` component with a signed-in user.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
 
@@ -21,10 +21,12 @@ The following example shows the `mgt-login` component with a signed-in user.
 
 ## Using the control without an authentication provider
 
-The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details. 
+The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.
 
 | Attribute | Property | Description |
 | --- | --- | -- |
+| login-view | loginView | Determines the view style to apply to the logged in user. Options are 'full', 'compact', 'avatar', defaults to 'full' |
+| show-presence | showPresence | Displays the presence indicator for the current user on the mgt-person when the control is at rest with an authenticated user. |
 | user-details | userDetails | Set the user object that will be displayed on the control. |
 
 The following example sets the person details.
@@ -40,7 +42,7 @@ loginControl.userDetails = {
 
 Setting `userDetails` to `null` will go to the signed out state.
 
-Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out. 
+Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out.
 
 ## CSS custom properties
 
@@ -50,17 +52,19 @@ The `mgt-login` component defines the following CSS custom properties.
 mgt-login {
   --font-size: 14px;
   --font-weight: 600;
-  --weith: '100%';
-  --height: '100%';
   --margin: 0;
-  --padding: 12px 20px;
-  --button-color: #201f1e;
+  --button-color: #1a1a1a;
   --button-color--hover: var(--theme-primary-color);
-  --button-background-color: transparent;
   --button-background-color--hover: #edebe9;
   --popup-background-color: white;
+  --popup-button-color--hover: #efefef;
+  --popup-color: #1a1a1a;
+  --popup-command-margin: 16px 0 0;
   --popup-command-font-size: 12px;
-  --popup-color: #201f1e;
+  --popup-padding: 12px 4px;
+  --profile-spacing: 12px 0 28px 0;
+  --profile-spacing-full: 21px 0 28px 0;
+  --add-account-button-color: #717171;
 }
 ```
 
@@ -82,7 +86,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `mgt-login` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
+The `mgt-login` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -103,7 +107,7 @@ When using the default `signed-in-button-content` and `flyout-person-details` te
 
 ## Authentication
 
-The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
+The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Cache
 

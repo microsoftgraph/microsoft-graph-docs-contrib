@@ -1,10 +1,13 @@
 ---
-title: Configure Application Proxy using Microsoft Graph APIs
-description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-author: davidmu1
-ms.topic: conceptual
+title: "Configure Application Proxy using the Microsoft Graph API"
+description: "Provide remote access and single sign-on to on-premises applications by configuring Application Proxy using the Microsoft Graph API."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dhruvinshah
+ms.topic: "conceptual"
 ms.localizationpriority: medium
-ms.prod: applications
+ms.prod: "applications"
+ms.date: 01/11/2022
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
@@ -14,20 +17,8 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 ## Prerequisites
 
 - This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
-- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
-    1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-        ![Set permissions](./images/application-proxy-configure-api/set-permissions.png)
-        
-    4. Scroll through the list of permissions to **Directory (3)**, expand and then select `Directory.ReadWrite.All`.
-
-        ![Search for permissions](./images/application-proxy-configure-api/select-permissions.png)
-    
-    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-        ![Accept permissions](./images/application-proxy-configure-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
+- Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
 > [!NOTE]
 > The response objects shown might be shortened for readability. 
@@ -40,6 +31,12 @@ Record the **id**, **appId**, **servicePrincipalId** of the application to use l
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_applicationtemplates"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
@@ -49,8 +46,38 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationTemplates"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -88,38 +115,132 @@ Content-type: application/json
 
 ## Step 2: Configure Application Proxy
 
-Use the **id** that you recorded for the application to start the configuration of Application Proxy. Update the following properties:
+Insert the **id** that you recorded for the application into the URL to start the configuration of Application Proxy. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. Update the following properties in the request body:
 
-- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external URL configured in the **onPremisesPublishing** property.
-- **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+- **identifierUri**, **redirectUri**, and **homepageUrl** - Set each to the same external URL.
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_application"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: application/json
+
+{
+    "identifierUris": [
+        "https://contosoiwaapp-contoso.msappproxy.net"
+    ],
+    "web": {
+        "redirectUris": [
+            "https://contosoiwaapp-contoso.msappproxy.net"
+        ],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No content
+```
+
+Update the following properties in the request body:
+
+- **internalUrl** - Set to the internal URL.
+- **externalUrl** - Set to the external URL.
+- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_application_2"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: application/json
 
 {
-  "onPremisesPublishing": {
-    "externalAuthenticationType": "aadPreAuthentication",
-    "internalUrl": "https://contosoiwaapp.com",
-    "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  }
-  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-  "web": {
-    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
-    "implicitGrantSettings": {
-      "enableIdTokenIssuance": true,
-      "enableAccessTokenIssuance": false
+    "onPremisesPublishing": {
+        "externalAuthenticationType": "aadPreAuthentication",
+        "internalUrl": "https://contosoiwaapp.com",
+        "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+        "isHttpOnlyCookieEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "isPersistentCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isStateSessionEnabled": true,
+        "isTranslateHostHeaderEnabled": true,
+        "isTranslateLinksInBodyEnabled": true
     }
-  }
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-application-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-application-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-application-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-application-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-update-application-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-application-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -132,12 +253,48 @@ List the connectors that are available. Record the **id** of the connector that 
 
 #### Request
 
-```http
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_get_connectors"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-get-connectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-get-connectors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-get-connectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-get-connectors-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-get-connectors-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-get-connectors-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connector"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -167,6 +324,12 @@ For this example, a new connectorGroup is created named `IWA Demo Connector Grou
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_connectorgroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
@@ -176,8 +339,38 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectorGroup"
+} -->
 ```http
 HTTP/1.1 201
 Content-type: connectorGroup/json
@@ -195,6 +388,12 @@ Content-type: connectorGroup/json
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_connector_memberof"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/f2cab422-a1c8-4d70-a47e-2cb297a2e051/memberOf/$ref
 Content-type: application/json
@@ -204,8 +403,36 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-connector-memberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-connector-memberof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-connector-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-connector-memberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-connector-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-connector-memberof-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -214,6 +441,12 @@ HTTP/1.1 204 No content
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_assign_application_connectorgroup"
+}-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83/connectorGroup/$ref
 Content-type: application/json
@@ -223,8 +456,36 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-assign-application-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-assign-application-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-assign-application-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-assign-application-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-assign-application-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-assign-application-connectorgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -235,6 +496,12 @@ This application uses Integrated Windows Authentication (IWA). To configure IWA,
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_update_app_sso"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
@@ -252,8 +519,36 @@ Content-type: appplication/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-app-sso-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-app-sso-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-app-sso-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-app-sso-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-app-sso-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No content
 ```
@@ -266,12 +561,49 @@ Get the app roles for the application using the **id** of the service principal.
 
 #### Request
 
-```http
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_get_approles"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-get-approles-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-get-approles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -300,6 +632,12 @@ For this tutorial, you create a user account that is assigned to the app role. I
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_user"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -316,8 +654,39 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -345,6 +714,12 @@ In the following example, replace the values of these properties:
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_create_serviceprincipal_approleassignment"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
 Content-type: appRoleAssignments/json
@@ -357,8 +732,39 @@ Content-type: appRoleAssignments/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignment"
+} -->
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -389,12 +795,46 @@ Delete the MyTestUser1 user account.
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -403,12 +843,46 @@ No Content - 204
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_application"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-application-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -417,12 +891,46 @@ No Content - 204
 
 #### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_configure_appproxy_delete_connectorgroup"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-connectorgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -430,13 +938,4 @@ No Content - 204
 ## See also
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)

@@ -5,19 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Compliance/Ediscovery/Cases/Item/SourceCollections/Item/NoncustodialSources/Item"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewNoncustodialSource()
+additionalData := map[string]interface{}{
+	"odataId" : "https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246", 
 }
-options := &msgraphsdk.NoncustodialDataSourceRequestBuilderPostOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-sourceCollectionId := "sourceCollection-id"
-noncustodialDataSourceId := "noncustodialDataSource-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).NoncustodialSourcesById(&noncustodialDataSourceId).Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").NoncustodialSourcesById("noncustodialDataSource-id").Post(context.Background(), requestBody, nil)
 
 
 ```

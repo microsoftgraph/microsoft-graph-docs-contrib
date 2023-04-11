@@ -5,15 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewIsSyncedFromOnPremisesRequestBody()
-isSyncedFromOnPremises := true
-requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises)
-options := &msgraphsdk.GetAvailableExtensionPropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(context.Background(), nil)
 
 
 ```

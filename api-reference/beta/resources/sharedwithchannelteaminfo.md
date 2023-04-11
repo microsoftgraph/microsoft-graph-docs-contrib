@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [team](team.md) that is shared with a channel. A [team](team.md) can be shared with multiple channels.
+Represents information for a [team](team.md) with which a channel is shared. A [team](team.md) can be shared multiple channels.
 
 
 Inherits from [teamInfo](../resources/teaminfo.md).
@@ -29,7 +29,8 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the team. Inherited from [teamInfo](../resources/teaminfo.md).|
+|displayName|String|The name of the [team](team.md). Inherited from [teamInfo](../resources/teaminfo.md).|
+|id|String|The unique identifier for the [team](team.md). Read-only.|
 |isHostTeam|Boolean|Indicates whether the [team](team.md) is the host of the [channel](channel.md).|
 |tenantId|String|The ID of the Azure Active Directory tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 

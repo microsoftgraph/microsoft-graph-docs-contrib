@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DirectoryObjects/Item/GetMemberGroups"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewSecurityEnabledOnlyRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGetMemberGroupsPostRequestBody()
 securityEnabledOnly := false
-requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
-options := &msgraphsdk.GetMemberGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberGroups(directoryObject-id).Post(options)
+requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
+
+result, err := graphClient.DirectoryObjectsById("directoryObject-id").GetMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,12 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-chatId := "chat-id"
-chatMessageId := "chatMessage-id"
-chatMessageHostedContentId := "chatMessageHostedContent-id"
-result, err := graphClient.ChatsById(&chatId).MessagesById(&chatMessageId).HostedContentsById(&chatMessageHostedContentId).Get(nil)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+result, err := graphClient.ChatsById("chat-id").MessagesById("chatMessage-id").HostedContentsById("chatMessageHostedContent-id").Get(context.Background(), nil)
 
 
 ```

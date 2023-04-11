@@ -5,15 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/policies"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetQueryParameters{
-	Filter: "scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "scopeId eq '/' and scopeType eq 'DirectoryRole'"
+
+requestParameters := &graphconfig.PoliciesRoleManagementPoliciesRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.PoliciesRoleManagementPoliciesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Policies().RoleManagementPolicies().Get(options)
+
+result, err := graphClient.Policies().RoleManagementPolicies().Get(context.Background(), configuration)
 
 
 ```

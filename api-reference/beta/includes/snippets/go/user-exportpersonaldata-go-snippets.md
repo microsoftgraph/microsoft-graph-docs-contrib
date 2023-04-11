@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/ExportPersonalData"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewStorageLocationRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewExportPersonalDataPostRequestBody()
 storageLocation := "storageLocation-value"
-requestBody.SetStorageLocation(&storageLocation)
-options := &msgraphsdk.ExportPersonalDataRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-graphClient.UsersById(&userId).ExportPersonalData(user-id).Post(options)
+requestBody.SetStorageLocation(&storageLocation) 
+
+graphClient.UsersById("user-id").ExportPersonalData().Post(context.Background(), requestBody, nil)
 
 
 ```

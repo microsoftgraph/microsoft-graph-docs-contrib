@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewEducationCategory()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEducationCategory()
 displayName := "Quizzes"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AssignmentCategoriesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

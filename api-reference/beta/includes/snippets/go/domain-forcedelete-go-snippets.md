@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Domains/Item/ForceDelete"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDisableUserAccountsRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewForceDeletePostRequestBody()
 disableUserAccounts := true
-requestBody.SetDisableUserAccounts(&disableUserAccounts)
-options := &msgraphsdk.ForceDeleteRequestBuilderPostOptions{
-	Body: requestBody,
-}
-domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(options)
+requestBody.SetDisableUserAccounts(&disableUserAccounts) 
+
+graphClient.DomainsById("domain-id").ForceDelete().Post(context.Background(), requestBody, nil)
 
 
 ```

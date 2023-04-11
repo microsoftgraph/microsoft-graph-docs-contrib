@@ -5,18 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"emailAddress": "kim@contoso.com",
-}
-options := &msgraphsdk.EmailAuthenticationMethodRequestBuilderPutOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-emailAuthenticationMethodId := "emailAuthenticationMethod-id"
-graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEmailAuthenticationMethod()
+emailAddress := "kim@contoso.com"
+requestBody.SetEmailAddress(&emailAddress) 
+
+result, err := graphClient.UsersById("user-id").Authentication().EmailMethodsById("emailAuthenticationMethod-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

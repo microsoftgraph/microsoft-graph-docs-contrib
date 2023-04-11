@@ -5,15 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCalendar()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCalendar()
 name := "Social events"
-requestBody.SetName(&name)
-options := &msgraphsdk.CalendarRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Me().Calendar().Patch(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Calendar().Patch(context.Background(), requestBody, nil)
 
 
 ```

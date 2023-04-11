@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The default configuration defined for inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
 
-Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -29,11 +27,12 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 
 |Property|Type|Description|
 |:---|:---|:---|
-| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the default configuration for trusting other Conditional Access claims from external Azure AD organizations. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
+| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. |
+| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. |
+| b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. |
+| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
+| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the default configuration for trusting other Conditional Access claims from external Azure AD organizations. |
+| automaticUserConsentSettings | [inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md) | Determines the default configuration for automatic user consent settings. `inboundAllowed` and `outboundAllowed` will always be false and cannot be updated in the default configuration. **Read only**. |
 | isServiceDefault | Boolean | If `true`, the default configuration is set to the system default configuration. If `false`, the default settings have been customized. |
 
 ## Relationships
@@ -47,7 +46,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
-  "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
 }
 -->
@@ -69,6 +67,9 @@ The following is a JSON representation of the resource.
   },
   "b2bDirectConnectInbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+  },
+  "automaticUserConsentSettings": {
+    "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
   },
   "isServiceDefault": "Boolean"
 }

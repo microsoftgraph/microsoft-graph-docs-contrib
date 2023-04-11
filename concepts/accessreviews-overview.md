@@ -1,15 +1,18 @@
 --- 
-title: "Overview of access reviews API" 
-description: "The access reviews API allows you to programmatically review access to your Azure AD resources. This helps to ensure that the right identities have the right access to the right resources in the organization." 
+title: "Overview of the access reviews API" 
+description: "Use the access reviews API to programmatically review access to your Azure AD resources to ensure that the right identities have the right access to the right resources." 
 author: "FaithOmbongi" 
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium 
 ms.prod: "governance" 
 doc_type: conceptualPageType 
+ms.date: 08/24/2022
 --- 
 
 # Overview of the access reviews API
 
-[Azure Active Directory (Azure AD) access reviews](/azure/active-directory/governance/access-reviews-overview) is a feature of Azure AD Identity Governance that helps to ensure that the right identities (or principals) have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
+Azure Active Directory (Azure AD) access reviews is a feature of Azure AD Identity Governance that helps to ensure that the right identities (or principals) have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
 
 ## Participants in an access review
 
@@ -38,8 +41,9 @@ This is the logical blueprint that contains the settings of an access review and
 + The principals that access the resource.
 + The reviewers who attest to the need for the principals to maintain access to resources.
 + The frequency of the access review.
-+ The stages of the access review (for a multi-stage access review).
++ The stages of the access review (for a multi-stage access review) and the whether decisions from preceding stage can be provided to reviewers in subsequent stages.
 + Default decisions to apply if decisions aren't recorded.
++ Whether to apply recommendations for decisions that are based on various insights (preview).
 
 ### 2. Access review instance
 

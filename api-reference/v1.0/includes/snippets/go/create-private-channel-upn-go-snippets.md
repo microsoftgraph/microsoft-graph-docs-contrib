@@ -5,33 +5,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChannel()
-membershipType := "private"
-requestBody.SetMembershipType(&membershipType)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChannel()
+membershipType := graphmodels.PRIVATE_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
 displayName := "My First Private Channel"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "This is my first private channels"
-requestBody.SetDescription(&description)
-requestBody.SetMembers( []ConversationMember {
-	msgraphsdk.NewConversationMember(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
-		"roles":  []String {
-			"owner",
-		}
-	}
+requestBody.SetDescription(&description) 
+
+
+conversationMember := graphmodels.NewConversationMember()
+roles := []string {
+	"owner",
+
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#Microsoft.Graph.channel",
+conversationMember.SetRoles(roles)
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
+conversationMember.SetAdditionalData(additionalData)
+
+members := []graphmodels.ConversationMemberable {
+	conversationMember,
+
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+requestBody.SetMembers(members)
+
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

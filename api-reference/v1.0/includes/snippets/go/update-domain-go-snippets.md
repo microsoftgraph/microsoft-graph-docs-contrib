@@ -5,20 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDomain()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDomain()
 isDefault := true
-requestBody.SetIsDefault(&isDefault)
-requestBody.SetSupportedServices( []String {
+requestBody.SetIsDefault(&isDefault) 
+supportedServices := []string {
 	"Email",
 	"OfficeCommunicationsOnline",
+
 }
-options := &msgraphsdk.DomainRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-domainId := "domain-id"
-graphClient.DomainsById(&domainId).Patch(options)
+requestBody.SetSupportedServices(supportedServices)
+
+result, err := graphClient.DomainsById("domain-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

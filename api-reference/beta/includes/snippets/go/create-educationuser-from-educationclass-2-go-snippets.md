@@ -5,18 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/beta/education/users/14011",
-}
-options := &msgraphsdk.EducationUserRequestBuilderPostOptions{
-	Body: requestBody,
-}
-educationClassId := "educationClass-id"
-educationUserId := "educationUser-id"
-graphClient.Education().ClassesById(&educationClassId).TeachersById(&educationUserId).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/beta/education/users/14011"
+requestBody.SetOdataId(&odataId) 
+
+graphClient.Education().ClassesById("educationClass-id").Teachers().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

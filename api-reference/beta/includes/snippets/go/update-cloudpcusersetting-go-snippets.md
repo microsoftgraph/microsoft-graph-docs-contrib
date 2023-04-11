@@ -5,29 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCloudPcUserSetting()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCloudPcUserSetting()
 displayName := "Example"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 selfServiceEnabled := true
-requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
-restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
-requestBody.SetRestorePointSetting(restorePointSetting)
+requestBody.SetSelfServiceEnabled(&selfServiceEnabled) 
+restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
-restorePointSetting.SetFrequencyInHours(&frequencyInHours)
+restorePointSetting.SetFrequencyInHours(&frequencyInHours) 
 userRestoreEnabled := true
-restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
+restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
+requestBody.SetRestorePointSetting(restorePointSetting)
 localAdminEnabled := false
-requestBody.SetLocalAdminEnabled(&localAdminEnabled)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.cloudPcUserSetting",
-}
-options := &msgraphsdk.CloudPcUserSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
+requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
+
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

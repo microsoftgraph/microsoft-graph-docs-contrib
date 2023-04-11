@@ -5,15 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
-	Filter: "createdDateTime%20ge%202019-09-01T00:00:00Z",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "createdDateTime ge 2019-09-01T00:00:00Z"
+
+requestParameters := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options)
+
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), configuration)
 
 
 ```

@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/MailFolders/Item/Move"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDestinationIdRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMovePostRequestBody()
 destinationId := "destinationId-value"
-requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.MoveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move(mailFolder-id).Post(options)
+requestBody.SetDestinationId(&destinationId) 
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Move().Post(context.Background(), requestBody, nil)
 
 
 ```

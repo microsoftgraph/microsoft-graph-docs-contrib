@@ -12,44 +12,58 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingCustomer](../resources/bookingcustomer.md) object.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/customers/{id}
 ```
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
+
 ## Optional query parameters
+
 This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 ```
 
 ### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

@@ -5,32 +5,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCall()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
-requestBody.SetCallbackUri(&callbackUri)
-requestBody.SetTargets( []InvitationParticipantInfo {
-	msgraphsdk.NewInvitationParticipantInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.invitationParticipantInfo",
-	}
+requestBody.SetCallbackUri(&callbackUri) 
+
+
+invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
+displayName := "John"
+user.SetDisplayName(&displayName) 
+id := "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+user.SetId(&id) 
+identity.SetUser(user)
+invitationParticipantInfo.SetIdentity(identity)
+
+targets := []graphmodels.InvitationParticipantInfoable {
+	invitationParticipantInfo,
+
 }
-requestBody.SetRequestedModalities( []Modality {
-	"audio",
+requestBody.SetTargets(targets)
+requestedModalities := []graphmodels.Modalityable {
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
+
 }
-mediaConfig := msgraphsdk.NewMediaConfig()
+requestBody.SetRequestedModalities(requestedModalities)
+callOptions := graphmodels.NewCallOptions()
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
+requestBody.SetCallOptions(callOptions)
+mediaConfig := graphmodels.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
-mediaConfig.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-}
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.call",
-}
-options := &msgraphsdk.CallsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Communications().Calls().Post(options)
+
+result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

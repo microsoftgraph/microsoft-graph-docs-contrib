@@ -5,18 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
-}
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-directoryObjectId := "directoryObject-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).OwnersById(&directoryObjectId).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+requestBody.SetOdataId(&odataId) 
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").Owners().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

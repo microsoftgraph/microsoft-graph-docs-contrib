@@ -27,6 +27,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
+|automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy.|
@@ -43,6 +44,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. |
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
+|questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -56,29 +58,38 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
   "allowedTargetScope": "String",
-  "specificAllowedTargets": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
+  "automaticRequestSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAutomaticRequestSettings"
+  },
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
   "expiration": {
     "@odata.type": "microsoft.graph.expirationPattern"
   },
+  "id": "String (identifier)",
+  "modifiedDateTime": "String (timestamp)",
   "requestorSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
   },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
+    }
+  ],
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
   },
   "reviewSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "specificAllowedTargets": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
+  ]
+ 
 }
 ```
 

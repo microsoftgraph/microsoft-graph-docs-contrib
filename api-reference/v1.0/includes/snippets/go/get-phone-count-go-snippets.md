@@ -5,20 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/contacts"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
-	Search: "%22displayName:wa%22",
-	Count: true,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestSearch := "\"displayName:wa\""
+requestCount := true
+
+requestParameters := &graphconfig.ContactsRequestBuilderGetQueryParameters{
+	Search: &requestSearch,
+	Count: &requestCount,
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.ContactsRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.ContactsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Contacts().Get(options)
+
+result, err := graphClient.Contacts().Get(context.Background(), configuration)
 
 
 ```

@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPublishedResource()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPublishedResource()
 displayName := "New provisioning"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 resourceName := "domain1.contoso.com"
-requestBody.SetResourceName(&resourceName)
-options := &msgraphsdk.PublishedResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(options)
+requestBody.SetResourceName(&resourceName) 
+
+result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResources().Post(context.Background(), requestBody, nil)
 
 
 ```

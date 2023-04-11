@@ -5,27 +5,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewUnifiedRoleDefinition()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUnifiedRoleDefinition()
 description := "Update basic properties of application registrations"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 displayName := "Application Registration Support Administrator"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetRolePermissions( []UnifiedRolePermission {
-	msgraphsdk.NewUnifiedRolePermission(),
-	SetAdditionalData(map[string]interface{}{
-		"allowedResourceActions":  []String {
-			"microsoft.directory/applications/basic/read",
-		}
-	}
+requestBody.SetDisplayName(&displayName) 
+
+
+unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
+allowedResourceActions := []string {
+	"microsoft.directory/applications/basic/read",
+
 }
-isEnabled := "true"
-requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.RoleDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
+unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
+
+rolePermissions := []graphmodels.UnifiedRolePermissionable {
+	unifiedRolePermission,
+
 }
-result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(options)
+requestBody.SetRolePermissions(rolePermissions)
+isEnabled := true
+requestBody.SetIsEnabled(&isEnabled) 
+
+result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

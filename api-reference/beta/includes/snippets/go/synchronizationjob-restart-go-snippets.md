@@ -5,23 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/Synchronization/Jobs/Item/Restart"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCriteriaRequestBody()
-criteria := msgraphsdk.NewSynchronizationJobRestartCriteria()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer <token>")
+
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewRestartPostRequestBody()
+criteria := graphmodels.NewSynchronizationJobRestartCriteria()
+resetScope := graphmodels.WATERMARK, ESCROWS, QUARANTINESTATE_SYNCHRONIZATIONJOBRESTARTSCOPE 
+criteria.SetResetScope(&resetScope) 
 requestBody.SetCriteria(criteria)
-resetScope := "Watermark, Escrows, QuarantineState"
-criteria.SetResetScope(&resetScope)
-headers := map[string]string{
-	"Authorization": "Bearer <token>"
-}
-options := &msgraphsdk.RestartRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
-}
-servicePrincipalId := "servicePrincipal-id"
-synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Restart(servicePrincipal-id, synchronizationJob-id).Post(options)
+
+graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Restart().Post(context.Background(), requestBody, configuration)
 
 
 ```

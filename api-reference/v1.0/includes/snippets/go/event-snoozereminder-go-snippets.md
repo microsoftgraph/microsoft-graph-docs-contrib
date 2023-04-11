@@ -5,20 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Events/Item/SnoozeReminder"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewNewReminderTimeRequestBody()
-newReminderTime := msgraphsdk.NewDateTimeTimeZone()
-requestBody.SetNewReminderTime(newReminderTime)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSnoozeReminderPostRequestBody()
+newReminderTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "dateTime-value"
-newReminderTime.SetDateTime(&dateTime)
+newReminderTime.SetDateTime(&dateTime) 
 timeZone := "timeZone-value"
-newReminderTime.SetTimeZone(&timeZone)
-options := &msgraphsdk.SnoozeReminderRequestBuilderPostOptions{
-	Body: requestBody,
-}
-eventId := "event-id"
-graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(options)
+newReminderTime.SetTimeZone(&timeZone) 
+requestBody.SetNewReminderTime(newReminderTime)
+
+graphClient.Me().EventsById("event-id").SnoozeReminder().Post(context.Background(), requestBody, nil)
 
 
 ```

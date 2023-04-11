@@ -5,17 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.MeetingAttendanceReportRequestBuilderGetQueryParameters{
-	Expand: "attendanceRecords",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ItemOnlineMeetingItemAttendanceReportItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"attendanceRecords"},
 }
-options := &msgraphsdk.MeetingAttendanceReportRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ItemOnlineMeetingItemAttendanceReportItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-onlineMeetingId := "onlineMeeting-id"
-meetingAttendanceReportId := "meetingAttendanceReport-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).AttendanceReportsById(&meetingAttendanceReportId).Get(options)
+
+result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").AttendanceReportsById("meetingAttendanceReport-id").Get(context.Background(), configuration)
 
 
 ```

@@ -31,16 +31,16 @@ Represents the current status of a user's response to a company's customizable t
 |agreementFileId|String|ID of the agreement file accepted by the user.|
 |agreementId|String|ID of the agreement.|
 |deviceDisplayName|String|The display name of the device used for accepting the agreement.|
-|deviceId|String|The unique identifier of the device used for accepting the agreement.|
+|deviceId|String|The unique identifier of the device used for accepting the agreement. Supports `$filter` (`eq`) and `eq` for `null` values.|
 |deviceOSType|String|The operating system used for accepting the agreement.|
-|deviceOSVersion|String|The operating system version of the device used for accepting the agreement.	|
-|expirationDateTime|DateTimeOffset|The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|id|String| Read-only.|
-|recordedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|deviceOSVersion|String|The operating system version of the device used for accepting the agreement.|
+|expirationDateTime|DateTimeOffset|The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`, `ge`, `le`) and `eq` for `null` values.|
+|id|String| The identifier of the agreement acceptance. Read-only. Supports `$filter` (`eq`).|
+|recordedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`) and `eq` for `null` values.|
 |state|string| Possible values are: `accepted`, `declined`. Supports `$filter` (`eq`).|
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
-|userId|String|ID of the user who accepted the agreement.|
+|userId|String|ID of the user who accepted the agreement. Supports `$filter` (`eq`).|
 |userPrincipalName|String|UPN of the user when the acceptance was recorded.|
 
 ## Relationships

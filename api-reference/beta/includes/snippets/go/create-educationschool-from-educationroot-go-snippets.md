@@ -5,47 +5,53 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewEducationSchool()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewEducationSchool()
 displayName := "Fabrikam High School"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Magnate school for the arts. Los Angeles School District"
-requestBody.SetDescription(&description)
-externalSource := "String"
-requestBody.SetExternalSource(&externalSource)
+requestBody.SetDescription(&description) 
+externalSource := graphmodels.STRING_EDUCATIONEXTERNALSOURCE 
+requestBody.SetExternalSource(&externalSource) 
 principalEmail := "AmyR@fabrikam.com"
-requestBody.SetPrincipalEmail(&principalEmail)
+requestBody.SetPrincipalEmail(&principalEmail) 
 principalName := "Amy Roebuck"
-requestBody.SetPrincipalName(&principalName)
+requestBody.SetPrincipalName(&principalName) 
 externalPrincipalId := "14007"
-requestBody.SetExternalPrincipalId(&externalPrincipalId)
+requestBody.SetExternalPrincipalId(&externalPrincipalId) 
 highestGrade := "12"
-requestBody.SetHighestGrade(&highestGrade)
+requestBody.SetHighestGrade(&highestGrade) 
 lowestGrade := "9"
-requestBody.SetLowestGrade(&lowestGrade)
+requestBody.SetLowestGrade(&lowestGrade) 
 schoolNumber := "10002"
-requestBody.SetSchoolNumber(&schoolNumber)
-address := msgraphsdk.NewPhysicalAddress()
-requestBody.SetAddress(address)
+requestBody.SetSchoolNumber(&schoolNumber) 
+address := graphmodels.NewPhysicalAddress()
 city := "Los Angeles"
-address.SetCity(&city)
+address.SetCity(&city) 
 countryOrRegion := "United States"
-address.SetCountryOrRegion(&countryOrRegion)
+address.SetCountryOrRegion(&countryOrRegion) 
 postalCode := "98055"
-address.SetPostalCode(&postalCode)
+address.SetPostalCode(&postalCode) 
 state := "CA"
-address.SetState(&state)
+address.SetState(&state) 
 street := "12345 Main St."
-address.SetStreet(&street)
+address.SetStreet(&street) 
+requestBody.SetAddress(address)
 externalId := "10002"
-requestBody.SetExternalId(&externalId)
+requestBody.SetExternalId(&externalId) 
 phone := "+1 (253) 555-0102"
-requestBody.SetPhone(&phone)
-options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Schools().Post(options)
+requestBody.SetPhone(&phone) 
+
+result, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
 
 
 ```

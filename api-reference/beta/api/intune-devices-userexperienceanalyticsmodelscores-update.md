@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsModelScores"
 description: "Update the properties of a userExperienceAnalyticsModelScores object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -56,7 +56,8 @@ The following table shows the properties that are required when you create the [
 |startupPerformanceScore|Double|The user experience analytics model startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appReliabilityScore|Double|The user experience analytics model app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |workFromAnywhereScore|Double|The user experience analytics model work from anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthScore|Double|The user experience analytics model battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 Content-type: application/json
-Content-length: 384
+Content-length: 414
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -81,6 +82,7 @@ Content-length: 384
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 433
+Content-Length: 463
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -102,10 +104,7 @@ Content-Length: 433
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```
-
-
-
-

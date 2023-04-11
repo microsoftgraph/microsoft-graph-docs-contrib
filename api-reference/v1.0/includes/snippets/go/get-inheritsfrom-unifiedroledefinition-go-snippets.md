@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/rolemanagement"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderGetQueryParameters{
-	Expand: "inheritsPermissionsFrom",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"inheritsPermissionsFrom"},
 }
-options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.RoleManagementDirectoryRoleDefinitionItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Get(options)
+
+result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById("unifiedRoleDefinition-id").Get(context.Background(), configuration)
 
 
 ```

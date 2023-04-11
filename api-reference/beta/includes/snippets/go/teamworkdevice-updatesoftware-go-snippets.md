@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teamwork/Devices/Item/UpdateSoftware"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-softwareType := "teamsClient"
-requestBody.SetSoftwareType(&softwareType)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewUpdateSoftwarePostRequestBody()
+softwareType := graphmodels.TEAMSCLIENT_TEAMWORKSOFTWARETYPE 
+requestBody.SetSoftwareType(&softwareType) 
 softwareVersion := "1.0.96.22"
-requestBody.SetSoftwareVersion(&softwareVersion)
-options := &msgraphsdk.UpdateSoftwareRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamworkDeviceId := "teamworkDevice-id"
-graphClient.Teamwork().DevicesById(&teamworkDeviceId).UpdateSoftware(teamworkDevice-id).Post(options)
+requestBody.SetSoftwareVersion(&softwareVersion) 
+
+graphClient.Teamwork().DevicesById("teamworkDevice-id").UpdateSoftware().Post(context.Background(), requestBody, nil)
 
 
 ```

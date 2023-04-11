@@ -5,18 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Directory/AdministrativeUnits/Item/Members"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/groups/{id}",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMembersPostRequestBody()
+additionalData := map[string]interface{}{
+	"description" : "Self help community for golf", 
+	"displayName" : "Golf Assist", 
+	groupTypes := []string {
+		"Unified",
+
+	}
+	mailEnabled := true
+requestBody.SetMailEnabled(&mailEnabled) 
+	"mailNickname" : "golfassist", 
+	securityEnabled := false
+requestBody.SetSecurityEnabled(&securityEnabled) 
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-	Body: requestBody,
-}
-administrativeUnitId := "administrativeUnit-id"
-directoryObjectId := "directoryObject-id"
-graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).MembersById(&directoryObjectId).Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

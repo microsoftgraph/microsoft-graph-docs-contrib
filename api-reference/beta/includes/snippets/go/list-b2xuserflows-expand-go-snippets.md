@@ -5,15 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.B2xUserFlowsRequestBuilderGetQueryParameters{
-	Expand: "identityProviders",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.IdentityB2xUserFlowsRequestBuilderGetQueryParameters{
+	Expand: [] string {"identityProviders"},
 }
-options := &msgraphsdk.B2xUserFlowsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.IdentityB2xUserFlowsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().B2xUserFlows().Get(options)
+
+result, err := graphClient.Identity().B2xUserFlows().Get(context.Background(), configuration)
 
 
 ```

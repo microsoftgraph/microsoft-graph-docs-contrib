@@ -5,24 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPlannerAssignedToTaskBoardTaskFormat()
-orderHintsByAssignee := msgraphsdk.NewPlannerOrderHintsByAssignee()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphconfig.PlannerTaskItemAssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
+requestBody := graphmodels.NewPlannerAssignedToTaskBoardTaskFormat()
+orderHintsByAssignee := graphmodels.NewPlannerOrderHintsByAssignee()
+additionalData := map[string]interface{}{
+	"aaa27244-1db4-476a-a5cb-004607466324" : "8566473P 957764Jk!", 
+}
+orderHintsByAssignee.SetAdditionalData(additionalData)
 requestBody.SetOrderHintsByAssignee(orderHintsByAssignee)
-orderHintsByAssignee.SetAdditionalData(map[string]interface{}{
-	"aaa27244-1db4-476a-a5cb-004607466324": "8566473P 957764Jk!",
-}
-headers := map[string]string{
-	"Prefer": "return=representation"
-	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
-}
-options := &msgraphsdk.AssignedToTaskBoardFormatRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
-}
-plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).AssignedToTaskBoardFormat().Patch(options)
+
+result, err := graphClient.Planner().TasksById("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

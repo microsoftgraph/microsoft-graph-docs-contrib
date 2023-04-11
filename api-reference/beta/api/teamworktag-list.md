@@ -1,9 +1,9 @@
 ---
 title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
-author: "anniecolonna"
+author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [tags](../resources/teamworktag.md) objects and their properties.
+Get a list of the [tag](../resources/teamworktag.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,11 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
-
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|members|[teamworkTag](../resources/teamworktag.md) collection|Tags assigned to a team.|
 
 ## HTTP request
 
@@ -39,7 +34,7 @@ GET /teams/{team-Id}/tags
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -66,16 +61,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamworktag-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-teamworktag-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-teamworktag-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,9 +82,11 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworktag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-teamworktag-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

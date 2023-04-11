@@ -5,17 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.AttachmentRequestBuilderGetQueryParameters{
-	Expand: "microsoft.graph.itemattachment/item",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ItemMessageItemAttachmentItemRequestBuilderGetQueryParameters{
+	Expand: [] string {"microsoft.graph.itemattachment/item"},
 }
-options := &msgraphsdk.AttachmentRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ItemMessageItemAttachmentItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-messageId := "message-id"
-attachmentId := "attachment-id"
-result, err := graphClient.Me().MessagesById(&messageId).AttachmentsById(&attachmentId).Get(options)
+
+result, err := graphClient.Me().MessagesById("message-id").AttachmentsById("attachment-id").Get(context.Background(), configuration)
 
 
 ```

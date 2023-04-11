@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChat()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChat()
 topic := "Group chat title update"
-requestBody.SetTopic(&topic)
-options := &msgraphsdk.ChatRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-chatId := "chat-id"
-graphClient.ChatsById(&chatId).Patch(options)
+requestBody.SetTopic(&topic) 
+
+result, err := graphClient.ChatsById("chat-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

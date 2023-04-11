@@ -5,15 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewOutlookTaskGroup()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Leisure tasks"
-requestBody.SetName(&name)
-options := &msgraphsdk.TaskGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Outlook().TaskGroups().Post(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Outlook().TaskGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

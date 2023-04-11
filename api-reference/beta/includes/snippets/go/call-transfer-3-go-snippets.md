@@ -5,26 +5,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Transfer"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-transferTarget := msgraphsdk.NewInvitationParticipantInfo()
-requestBody.SetTransferTarget(transferTarget)
-endpointType := "default"
-transferTarget.SetEndpointType(&endpointType)
-identity := msgraphsdk.NewIdentitySet()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTransferPostRequestBody()
+transferTarget := graphmodels.NewInvitationParticipantInfo()
+endpointType := graphmodels.DEFAULT_ENDPOINTTYPE 
+transferTarget.SetEndpointType(&endpointType) 
+identity := graphmodels.NewIdentitySet()
+additionalData := map[string]interface{}{
+phone := graphmodels.New()
+id := "+12345678901"
+phone.SetId(&id) 
+	identity.SetPhone(phone)
+}
+identity.SetAdditionalData(additionalData)
 transferTarget.SetIdentity(identity)
-identity.SetAdditionalData(map[string]interface{}{
+additionalData := map[string]interface{}{
+	"languageId" : "languageId-value", 
+	"region" : "region-value", 
 }
-transferTarget.SetAdditionalData(map[string]interface{}{
-	"languageId": "languageId-value",
-	"region": "region-value",
-}
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+transferTarget.SetAdditionalData(additionalData)
+requestBody.SetTransferTarget(transferTarget)
+
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,18 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}",
-}
-options := &msgraphsdk.GroupRequestBuilderPostOptions{
-	Body: requestBody,
-}
-printerShareId := "printerShare-id"
-groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/v1.0/groups/{groupId}"
+requestBody.SetOdataId(&odataId) 
+
+graphClient.Print().SharesById("printerShare-id").AllowedGroups().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

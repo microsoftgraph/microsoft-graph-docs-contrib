@@ -5,23 +5,66 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewConversation()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConversation()
 topic := "Does anyone have a second?"
-requestBody.SetTopic(&topic)
-requestBody.SetThreads( []ConversationThread {
-	msgraphsdk.NewConversationThread(),
-	SetAdditionalData(map[string]interface{}{
-		"Posts":  []Object {
-		}
+requestBody.SetTopic(&topic) 
+
+
+conversationThread := graphmodels.NewConversationThread()
+
+
+post := graphmodels.NewPost()
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
+content := "This is urgent!"
+body.SetContent(&content) 
+post.SetBody(body)
+
+
+extension := graphmodels.NewExtension()
+additionalData := map[string]interface{}{
+	"extensionName" : "Com.Contoso.Benefits", 
+	"companyName" : "Contoso", 
+	"expirationDate" : "2016-08-03T11:00:00.000Z", 
+	topPicks := []string {
+		"Employees only",
+		"Add spouse or guest",
+		"Add family",
+
 	}
 }
-options := &msgraphsdk.ConversationsRequestBuilderPostOptions{
-	Body: requestBody,
+extension.SetAdditionalData(additionalData)
+
+extensions := []graphmodels.Extensionable {
+	extension,
+
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Conversations().Post(options)
+post.SetExtensions(extensions)
+
+posts := []graphmodels.Postable {
+	post,
+
+}
+conversationThread.SetPosts(posts)
+
+threads := []graphmodels.ConversationThreadable {
+	conversationThread,
+
+}
+requestBody.SetThreads(threads)
+
+result, err := graphClient.GroupsById("group-id").Conversations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -25,14 +25,14 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackageAssignmentApprovals|[approval](../resources/approval.md) collection | Approval stages for assignment requests.|
-|accessPackages|[accessPackage](../resources/accesspackage.md) collection|Represents access package objects.|
-|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Access package assignment policies.|
-|assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Represents access package assignment requests created by or on behalf of a user.|
-|assignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection| Represents the grant of an access package to a subject (user or group).|
-|catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection| Represents a collection of access packages.|
-|connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Represents references to a directory or domain of another organization whose users can request access.|
-|settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| Represents the settings that control the behavior of Azure AD entitlement management.|
+|accessPackageAssignmentApprovals|[approval](../resources/approval.md) collection | Approval stages for decisions associated with access package assignment requests.|
+|accessPackages|[accessPackage](../resources/accesspackage.md) collection|Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.|
+|assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Access package assignment requests created by or on behalf of a subject.|
+|assignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection| The assignment of an access package to a subject for a period of time.|
+|catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|A container for access packages.|
+|connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|References to a directory or domain of another organization whose users can request access.|
+|settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| The settings that control the behavior of Azure AD entitlement management.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

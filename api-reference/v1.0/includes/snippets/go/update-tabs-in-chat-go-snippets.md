@@ -5,17 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTeamsTab()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTeamsTab()
 displayName := "My Contoso Tab - updated again"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.TeamsTabRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-chatId := "chat-id"
-teamsTabId := "teamsTab-id"
-graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.ChatsById("chat-id").TabsById("teamsTab-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,17 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPersonAnnualEvent()
-type := "birthday"
-requestBody.SetType(&type)
-date := "1980-01-08"
-requestBody.SetDate(&date)
-options := &msgraphsdk.AnniversariesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Anniversaries().Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPersonAnnualEvent()
+type := graphmodels.BIRTHDAY_PERSONANNUALEVENTTYPE 
+requestBody.SetType(&type) 
+date := 1980-01-08
+requestBody.SetDate(&date) 
+
+result, err := graphClient.Me().Profile().Anniversaries().Post(context.Background(), requestBody, nil)
 
 
 ```

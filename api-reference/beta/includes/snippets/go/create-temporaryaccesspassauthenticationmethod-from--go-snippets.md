@@ -5,23 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTemporaryAccessPassAuthenticationMethod()
-startDateTime, err := time.Parse(time.RFC3339, "2021-01-26T00:00:00.000Z")
-requestBody.SetStartDateTime(&startDateTime)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTemporaryAccessPassAuthenticationMethod()
+startDateTime , err := time.Parse(time.RFC3339, "2022-06-05T00:00:00.000Z")
+requestBody.SetStartDateTime(&startDateTime) 
 lifetimeInMinutes := int32(60)
-requestBody.SetLifetimeInMinutes(&lifetimeInMinutes)
+requestBody.SetLifetimeInMinutes(&lifetimeInMinutes) 
 isUsableOnce := false
-requestBody.SetIsUsableOnce(&isUsableOnce)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-}
-options := &msgraphsdk.TemporaryAccessPassMethodsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-result, err := graphClient.UsersById(&userId).Authentication().TemporaryAccessPassMethods().Post(options)
+requestBody.SetIsUsableOnce(&isUsableOnce) 
+
+result, err := graphClient.UsersById("user-id").Authentication().TemporaryAccessPassMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

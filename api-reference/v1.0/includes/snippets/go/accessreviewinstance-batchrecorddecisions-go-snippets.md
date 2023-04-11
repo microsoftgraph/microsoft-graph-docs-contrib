@@ -5,21 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/IdentityGovernance/AccessReviews/Definitions/Item/Instances/Item/BatchRecordDecisions"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewBatchRecordDecisionsPostRequestBody()
 decision := "Approve"
-requestBody.SetDecision(&decision)
+requestBody.SetDecision(&decision) 
 justification := "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
-requestBody.SetJustification(&justification)
+requestBody.SetJustification(&justification) 
 resourceId := "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
-requestBody.SetResourceId(&resourceId)
-options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
-accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewScheduleDefinition-id, accessReviewInstance-id).Post(options)
+requestBody.SetResourceId(&resourceId) 
+
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").BatchRecordDecisions().Post(context.Background(), requestBody, nil)
 
 
 ```

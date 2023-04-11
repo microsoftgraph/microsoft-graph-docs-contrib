@@ -6,7 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-InputStream stream = graphClient.customRequest("/reports/getM365AppPlatformUserCounts(period='D7')/content", InputStream.class)
+InputStream stream = graphClient.reports()
+	.getM365AppPlatformUserCounts(ReportRootGetM365AppPlatformUserCountsParameterSet
+		.newBuilder()
+		.withPeriod("D7")
+		.build())
 	.buildRequest()
 	.get();
 

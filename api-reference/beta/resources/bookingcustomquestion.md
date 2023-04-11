@@ -24,7 +24,7 @@ Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
 | [List bookingCustomQuestions](../api/bookingbusiness-list-customquestions.md)            | [bookingCustomQuestion](../resources/bookingcustomquestion.md) collection | Get a list of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) objects and their properties.    |
 | [Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md) | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Create a new [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                               |
 | [Get bookingCustomQuestion](../api/bookingcustomquestion-get.md)               | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object. |
-| [Update bookingCustomQuestion](../api/bookingcustomquestion-update.md)         | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                 |
+| [Update bookingCustomQuestion](../api/bookingcustomquestion-update.md)         | None     | Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                 |
 | [Delete bookingCustomQuestion](../api/bookingcustomquestion-delete.md)         | None                                                                      | Delete a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.                                  |
 
 ## Properties

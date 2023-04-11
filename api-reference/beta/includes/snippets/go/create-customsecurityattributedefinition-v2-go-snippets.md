@@ -5,29 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 attributeSet := "Engineering"
-requestBody.SetAttributeSet(&attributeSet)
+requestBody.SetAttributeSet(&attributeSet) 
 description := "Active projects for user"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 isCollection := true
-requestBody.SetIsCollection(&isCollection)
+requestBody.SetIsCollection(&isCollection) 
 isSearchable := true
-requestBody.SetIsSearchable(&isSearchable)
+requestBody.SetIsSearchable(&isSearchable) 
 name := "Project"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 status := "Available"
-requestBody.SetStatus(&status)
+requestBody.SetStatus(&status) 
 type := "String"
-requestBody.SetType(&type)
+requestBody.SetType(&type) 
 usePreDefinedValuesOnly := true
-requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

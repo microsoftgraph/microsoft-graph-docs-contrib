@@ -5,19 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAdministrativeUnit()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAdministrativeUnit()
 displayName := "Seattle District Technical Schools"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Seattle district technical schools administration"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 visibility := "HiddenMembership"
-requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.AdministrativeUnitsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Directory().AdministrativeUnits().Post(options)
+requestBody.SetVisibility(&visibility) 
+
+result, err := graphClient.Directory().AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

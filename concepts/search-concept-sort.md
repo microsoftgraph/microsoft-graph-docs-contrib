@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API to sort search results (preview)"
-description: "You sort search results using the Microsoft Search API."
-author: "nmoreau"
+title: "Use the Microsoft Search API to sort search results"
+description: "You can use the Microsoft Search API sortProperties property in Microsoft Graph to sort search results. You can do a single-level or multi-level sort."
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to sort search results
 
-You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
+You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
 
 Sorting is supported for SharePoint and OneDrive items. The property of SharePoint and OneDrive items to be sorted on should be *sortable* in the search schema.
 
@@ -317,4 +317,4 @@ Content-type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

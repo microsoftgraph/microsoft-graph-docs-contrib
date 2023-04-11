@@ -5,19 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Participants/MuteAll"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetParticipants( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMuteAllPostRequestBody()
+participants := []string {
 	"",
+
 }
+requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"
-requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.MuteAllRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().MuteAll(call-id).Post(options)
+requestBody.SetClientContext(&clientContext) 
+
+result, err := graphClient.Communications().CallsById("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
 
 
 ```

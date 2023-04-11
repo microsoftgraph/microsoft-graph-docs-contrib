@@ -5,18 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Identity/B2cUserFlows/Item/Languages/Item"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"isEnabled": false,
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewLanguage()
+additionalData := map[string]interface{}{
+	isEnabled := false
+requestBody.SetIsEnabled(&isEnabled) 
 }
-options := &msgraphsdk.UserFlowLanguageConfigurationRequestBuilderPutOptions{
-	Body: requestBody,
-}
-b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).Put(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").Put(context.Background(), requestBody, nil)
 
 
 ```

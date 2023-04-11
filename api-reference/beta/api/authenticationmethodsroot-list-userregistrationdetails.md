@@ -1,7 +1,7 @@
 ---
 title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for the user as defined in the userRegistrationDetails object."
-author: "danielwood95"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegated (work or school account)|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Application|UserAuthenticationMethod.Read.All and AuditLog.Read.All|
 
 ## HTTP request
 
@@ -61,16 +61,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-userregistrationdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-userregistrationdetails-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-userregistrationdetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -85,9 +82,11 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-userregistrationdetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-userregistrationdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -108,6 +107,7 @@ Content-Type: application/json
             "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
             "userPrincipalName": "AlexW@Contoso.com",
             "userDisplayName": "Alex Wilber",
+            "isAdmin": false,
             "isSsprRegistered": false,
             "isSsprEnabled": false,
             "isSsprCapable": false,
@@ -117,24 +117,30 @@ Content-Type: application/json
             "methodsRegistered": [
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush",
+            "userType": "member"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
             "userPrincipalName": "AllanD@Contoso.com",
             "userDisplayName": "Allan Deyoung",
+            "isAdmin": false,
             "isSsprRegistered": false,
             "isSsprEnabled": false,
             "isSsprCapable": false,
             "isMfaRegistered": false,
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
-            "methodsRegistered": []
+            "methodsRegistered": [],
+            "defaultMethod": "", 
+            "userType": "guest"  
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
             "userPrincipalName": "BiancaP@Contoso.com",
             "userDisplayName": "Bianca Pisani",
+            "isAdmin": false,
             "isSsprRegistered": true,
             "isSsprEnabled": false,
             "isSsprCapable": false,
@@ -145,7 +151,9 @@ Content-Type: application/json
                 "mobilePhone",
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "mobilePhone",
+            "userType": "member"
         }
     ]
 }

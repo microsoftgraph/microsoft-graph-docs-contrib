@@ -61,7 +61,7 @@ workingHours4.timeSlots = timeSlotsList4;
 workingHoursList.add(workingHours4);
 bookingStaffMember.workingHours = workingHoursList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").staffMembers("8ee1c803-a1fa-406d-8259-7ab53233f148")
+graphClient.bookingBusinesses("contosolunchdelivery@contoso.onmicrosoft.com").staffMembers("8ee1c803-a1fa-406d-8259-7ab53233f148")
 	.buildRequest()
 	.patch(bookingStaffMember);
 

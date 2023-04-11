@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewServicePrincipal()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewServicePrincipal()
 appRoleAssignmentRequired := true
-requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired)
-options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired) 
+
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

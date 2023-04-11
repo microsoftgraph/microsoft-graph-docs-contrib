@@ -3,7 +3,7 @@ title: "process resource type"
 description: "Contains stateful information about the process related to the alert."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 

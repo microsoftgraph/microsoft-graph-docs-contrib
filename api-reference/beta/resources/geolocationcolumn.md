@@ -5,7 +5,7 @@ ms.date: 09/10/2018
 title: GeolocationColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # geolocationColumn resource type
 

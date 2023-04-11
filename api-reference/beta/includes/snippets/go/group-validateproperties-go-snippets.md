@@ -5,20 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/ValidateProperties"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewValidatePropertiesPostRequestBody()
 displayName := "Myprefix_test_mysuffix"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 mailNickname := "Myprefix_test_mysuffix"
-requestBody.SetMailNickname(&mailNickname)
-onBehalfOfUserId := "onBehalfOfUserId-value"
-requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId)
-options := &msgraphsdk.ValidatePropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-graphClient.GroupsById(&groupId).ValidateProperties(group-id).Post(options)
+requestBody.SetMailNickname(&mailNickname) 
+onBehalfOfUserId := uuid.MustParse("onBehalfOfUserId-value")
+requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId) 
+
+graphClient.GroupsById("group-id").ValidateProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

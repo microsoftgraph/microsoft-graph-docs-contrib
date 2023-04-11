@@ -5,21 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewPrinterShare()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewPrinterShare()
 displayName := "PrinterShare Name"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 allowAllUsers := false
-requestBody.SetAllowAllUsers(&allowAllUsers)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"printer@odata.bind": "https://graph.microsoft.com/v1.0/print/printers/{printerId}",
+requestBody.SetAllowAllUsers(&allowAllUsers) 
+additionalData := map[string]interface{}{
+	"odataBind" : "https://graph.microsoft.com/v1.0/print/printers/{printerId}", 
 }
-options := &msgraphsdk.PrinterShareRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-printerShareId := "printerShare-id"
-graphClient.Print().SharesById(&printerShareId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Print().SharesById("printerShare-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

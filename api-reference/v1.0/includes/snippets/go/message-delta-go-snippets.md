@@ -5,16 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "odata.maxpagesize=2"
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "odata.maxpagesize=2")
+
+configuration := &graphconfig.ItemMailFolderItemMessagesDelta()RequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	H: headers,
-}
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()(mailFolder-id).Get(options)
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Delta().Get(context.Background(), configuration)
 
 
 ```

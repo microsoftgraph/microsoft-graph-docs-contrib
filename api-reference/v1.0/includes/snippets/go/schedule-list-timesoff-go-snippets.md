@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.TimesOffRequestBuilderGetQueryParameters{
-	Filter: "sharedTimeOff/startDateTime%20ge%202019-03-11T00:00:00.000Z%20and%20sharedTimeOff/endDateTime%20le%202019-03-18T00:00:00.000Z%20and%20draftTimeOff/startDateTime%20ge%202019-03-11T00:00:00.000Z%20and%20draftTimeOff/endDateTime%20le%202019-03-18T00:00:00.000Z",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z"
+
+requestParameters := &graphconfig.TeamItemScheduleTimesOffRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.TimesOffRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.TeamItemScheduleTimesOffRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Get(options)
+
+result, err := graphClient.TeamsById("team-id").Schedule().TimesOff().Get(context.Background(), configuration)
 
 
 ```

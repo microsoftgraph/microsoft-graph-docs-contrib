@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/VirtualEndpoint/CloudPCs/Item/ChangeUserAccountType"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewUserAccountTypeRequestBody()
-userAccountType := "administrator"
-requestBody.SetUserAccountType(&userAccountType)
-options := &msgraphsdk.ChangeUserAccountTypeRequestBuilderPostOptions{
-	Body: requestBody,
-}
-cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).ChangeUserAccountType(cloudPC-id).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChangeUserAccountTypePostRequestBody()
+userAccountType := graphmodels.ADMINISTRATOR_CLOUDPCUSERACCOUNTTYPE 
+requestBody.SetUserAccountType(&userAccountType) 
+
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").ChangeUserAccountType().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,34 +5,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChatMessage()
-createdDateTime, err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
-requestBody.SetCreatedDateTime(&createdDateTime)
-from := msgraphsdk.NewChatMessageFromIdentitySet()
-requestBody.SetFrom(from)
-user := msgraphsdk.NewIdentity()
-from.SetUser(user)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChatMessage()
+createdDateTime , err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
+requestBody.SetCreatedDateTime(&createdDateTime) 
+from := graphmodels.NewChatMessageFromIdentitySet()
+user := graphmodels.NewIdentity()
 id := "id-value"
-user.SetId(&id)
+user.SetId(&id) 
 displayName := "Joh Doe"
-user.SetDisplayName(&displayName)
-user.SetAdditionalData(map[string]interface{}{
-	"userIdentityType": "aadUser",
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
 }
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-contentType := "html"
-body.SetContentType(&contentType)
+user.SetAdditionalData(additionalData)
+from.SetUser(user)
+requestBody.SetFrom(from)
+body := graphmodels.NewItemBody()
+contentType := graphmodels.HTML_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "Hello World"
-body.SetContent(&content)
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+body.SetContent(&content) 
+requestBody.SetBody(body)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

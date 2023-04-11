@@ -5,24 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewBookingCustomQuestion()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewBookingCustomQuestion()
 displayName := "What is your age?"
-requestBody.SetDisplayName(&displayName)
-answerInputType := "text"
-requestBody.SetAnswerInputType(&answerInputType)
-requestBody.SetAnswerOptions( []string {
+requestBody.SetDisplayName(&displayName) 
+answerInputType := graphmodels.TEXT_ANSWERINPUTTYPE 
+requestBody.SetAnswerInputType(&answerInputType) 
+answerOptions := []string {
+
 }
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.bookingCustomQuestion",
-}
-options := &msgraphsdk.BookingCustomQuestionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-bookingBusinessId := "bookingBusiness-id"
-bookingCustomQuestionId := "bookingCustomQuestion-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
+requestBody.SetAnswerOptions(answerOptions)
+
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

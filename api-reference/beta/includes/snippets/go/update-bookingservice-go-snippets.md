@@ -5,20 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewBookingService()
-defaultDuration := "PT30M"
-requestBody.SetDefaultDuration(&defaultDuration)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.bookingService",
-}
-options := &msgraphsdk.BookingServiceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-bookingBusinessId := "bookingBusiness-id"
-bookingServiceId := "bookingService-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewBookingService()
+defaultDuration , err := abstractions.ParseISODuration("PT30M")
+requestBody.SetDefaultDuration(&defaultDuration) 
+
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").ServicesById("bookingService-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

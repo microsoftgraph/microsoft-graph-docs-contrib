@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/ChangeScreenSharingRole"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewRoleRequestBody()
-role := "viewer"
-requestBody.SetRole(&role)
-options := &msgraphsdk.ChangeScreenSharingRoleRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole(call-id).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChangeScreenSharingRolePostRequestBody()
+role := graphmodels.VIEWER_SCREENSHARINGROLE 
+requestBody.SetRole(&role) 
+
+graphClient.Communications().CallsById("call-id").ChangeScreenSharingRole().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTiIndicator()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTiIndicator()
 description := "description-updated"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-tiIndicatorId := "tiIndicator-id"
-graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Security().TiIndicatorsById("tiIndicator-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

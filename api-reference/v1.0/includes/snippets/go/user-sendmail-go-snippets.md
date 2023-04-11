@@ -5,35 +5,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/SendMail"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-message := msgraphsdk.NewMessage()
-requestBody.SetMessage(message)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSendMailPostRequestBody()
+message := graphmodels.NewMessage()
 subject := "Meet for lunch?"
-message.SetSubject(&subject)
-body := msgraphsdk.NewItemBody()
-message.SetBody(body)
-contentType := "Text"
-body.SetContentType(&contentType)
+message.SetSubject(&subject) 
+body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "The new cafeteria is open."
-body.SetContent(&content)
-message.SetToRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+body.SetContent(&content) 
+message.SetBody(body)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+address := "frannis@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+toRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
-message.SetCcRecipients( []Recipient {
-	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+message.SetToRecipients(toRecipients)
+
+
+recipient := graphmodels.NewRecipient()
+emailAddress := graphmodels.NewEmailAddress()
+address := "danas@contoso.onmicrosoft.com"
+emailAddress.SetAddress(&address) 
+recipient.SetEmailAddress(emailAddress)
+
+ccRecipients := []graphmodels.Recipientable {
+	recipient,
+
 }
-saveToSentItems := "false"
-requestBody.SetSaveToSentItems(&saveToSentItems)
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+message.SetCcRecipients(ccRecipients)
+requestBody.SetMessage(message)
+saveToSentItems := false
+requestBody.SetSaveToSentItems(&saveToSentItems) 
+
+graphClient.Me().SendMail().Post(context.Background(), requestBody, nil)
 
 
 ```

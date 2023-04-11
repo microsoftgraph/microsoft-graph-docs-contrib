@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTodoTaskList()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTodoTaskList()
 displayName := "Vacation Plan"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.TodoTaskListRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-todoTaskListId := "todoTaskList-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

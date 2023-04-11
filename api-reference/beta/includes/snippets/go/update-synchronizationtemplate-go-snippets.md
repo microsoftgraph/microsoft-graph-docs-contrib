@@ -5,24 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/Synchronization/Templates/Item"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"id": "Slack",
-	"applicationId": "{id}",
-	"factoryTag": "CustomSCIM",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Authorization", "Bearer <token>")
+
+configuration := &graphconfig.ApplicationItemSynchronizationTemplateItemRequestBuilderPutRequestConfiguration{
+	Headers: headers,
 }
-headers := map[string]string{
-	"Authorization": "Bearer <token>"
+requestBody := graphmodels.NewTemplate()
+additionalData := map[string]interface{}{
+	"id" : "Slack", 
+	"applicationId" : "{id}", 
+	"factoryTag" : "CustomSCIM", 
 }
-options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutOptions{
-	Body: requestBody,
-	H: headers,
-}
-applicationId := "application-id"
-synchronizationTemplateId := "synchronizationTemplate-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).Put(options)
+requestBody.SetAdditionalData(additionalData)
+
+graphClient.ApplicationsById("application-id").Synchronization().TemplatesById("synchronizationTemplate-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

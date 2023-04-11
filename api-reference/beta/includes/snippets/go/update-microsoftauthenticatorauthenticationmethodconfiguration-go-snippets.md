@@ -5,19 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAuthenticationMethodConfiguration()
-state := "String"
-requestBody.SetState(&state)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-}
-options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAuthenticationMethodConfiguration()
+state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
+requestBody.SetState(&state) 
+
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

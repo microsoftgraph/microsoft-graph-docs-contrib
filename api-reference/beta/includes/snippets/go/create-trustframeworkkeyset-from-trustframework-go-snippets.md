@@ -5,38 +5,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTrustFrameworkKeySet()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTrustFrameworkKeySet()
 id := "keyset1"
-requestBody.SetId(&id)
-requestBody.SetKeys( []TrustFrameworkKey {
-	msgraphsdk.NewTrustFrameworkKey(),
-	SetAdditionalData(map[string]interface{}{
-		"k": "k-value",
-		"x5c":  []String {
-			"x5c-value",
-		}
-		"x5t": "x5t-value",
-		"kty": "kty-value",
-		"use": "use-value",
-		"exp": ,
-		"nbf": ,
-		"kid": "kid-value",
-		"e": "e-value",
-		"n": "n-value",
-		"d": "d-value",
-		"p": "p-value",
-		"q": "q-value",
-		"dp": "dp-value",
-		"dq": "dq-value",
-		"qi": "qi-value",
-	}
+requestBody.SetId(&id) 
+
+
+trustFrameworkKey := graphmodels.NewTrustFrameworkKey()
+k := "k-value"
+trustFrameworkKey.SetK(&k) 
+x5c := []string {
+	"x5c-value",
+
 }
-options := &msgraphsdk.KeySetsRequestBuilderPostOptions{
-	Body: requestBody,
+trustFrameworkKey.SetX5c(x5c)
+x5t := "x5t-value"
+trustFrameworkKey.SetX5t(&x5t) 
+kty := "kty-value"
+trustFrameworkKey.SetKty(&kty) 
+use := "use-value"
+trustFrameworkKey.SetUse(&use) 
+exp := int64(99)
+trustFrameworkKey.SetExp(&exp) 
+nbf := int64(99)
+trustFrameworkKey.SetNbf(&nbf) 
+kid := "kid-value"
+trustFrameworkKey.SetKid(&kid) 
+e := "e-value"
+trustFrameworkKey.SetE(&e) 
+n := "n-value"
+trustFrameworkKey.SetN(&n) 
+d := "d-value"
+trustFrameworkKey.SetD(&d) 
+p := "p-value"
+trustFrameworkKey.SetP(&p) 
+q := "q-value"
+trustFrameworkKey.SetQ(&q) 
+dp := "dp-value"
+trustFrameworkKey.SetDp(&dp) 
+dq := "dq-value"
+trustFrameworkKey.SetDq(&dq) 
+qi := "qi-value"
+trustFrameworkKey.SetQi(&qi) 
+
+keys := []graphmodels.TrustFrameworkKeyable {
+	trustFrameworkKey,
+
 }
-result, err := graphClient.TrustFramework().KeySets().Post(options)
+requestBody.SetKeys(keys)
+
+result, err := graphClient.TrustFramework().KeySets().Post(context.Background(), requestBody, nil)
 
 
 ```

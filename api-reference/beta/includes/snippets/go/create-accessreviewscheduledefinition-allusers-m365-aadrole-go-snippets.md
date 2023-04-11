@@ -5,84 +5,129 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAccessReviewScheduleDefinition()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Review employee access to LinkedIn"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 descriptionForAdmins := "Review employee access to LinkedIn"
-requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
-scope := msgraphsdk.NewAccessReviewScope()
+requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
+scope := graphmodels.NewAccessReviewScope()
+additionalData := map[string]interface{}{
+
+
+ := graphmodels.New()
+query := "/users"
+.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+.SetQueryType(&queryType) 
+
+	principalScopes := []graphmodels.Objectable {
+		,
+
+	}
+
+
+ := graphmodels.New()
+query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
+.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+.SetQueryType(&queryType) 
+
+	resourceScopes := []graphmodels.Objectable {
+		,
+
+	}
+}
+scope.SetAdditionalData(additionalData)
 requestBody.SetScope(scope)
-scope.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
-	"principalScopes":  []Object {
-	}
-	"resourceScopes":  []Object {
-	}
+
+
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "./manager"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
+queryRoot := "decisions"
+accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
+
+reviewers := []graphmodels.Objectable {
+	accessReviewReviewerScope,
+
 }
-requestBody.SetReviewers( []AccessReviewReviewerScope {
-	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "./manager",
-		"queryType": "MicrosoftGraph",
-		"queryRoot": "decisions",
-	}
+requestBody.SetReviewers(reviewers)
+
+
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
+
+backupReviewers := []graphmodels.Objectable {
+	accessReviewReviewerScope,
+
 }
-requestBody.SetBackupReviewers( []AccessReviewReviewerScope {
-	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-		"queryType": "MicrosoftGraph",
-	}
+requestBody.SetBackupReviewers(backupReviewers)
+
+
+accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+accessReviewReviewerScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewReviewerScope.SetQueryType(&queryType) 
+
+fallbackReviewers := []graphmodels.Objectable {
+	accessReviewReviewerScope,
+
 }
-requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
-	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-		"queryType": "MicrosoftGraph",
-	}
-}
-settings := msgraphsdk.NewAccessReviewScheduleSettings()
-requestBody.SetSettings(settings)
+requestBody.SetFallbackReviewers(fallbackReviewers)
+settings := graphmodels.NewAccessReviewScheduleSettings()
 mailNotificationsEnabled := true
-settings.SetMailNotificationsEnabled(&mailNotificationsEnabled)
+settings.SetMailNotificationsEnabled(&mailNotificationsEnabled) 
 reminderNotificationsEnabled := true
-settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled)
+settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled) 
 justificationRequiredOnApproval := true
-settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval)
+settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval) 
 defaultDecisionEnabled := true
-settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled)
+settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
 defaultDecision := "Recommendation"
-settings.SetDefaultDecision(&defaultDecision)
+settings.SetDefaultDecision(&defaultDecision) 
 instanceDurationInDays := int32(180)
-settings.SetInstanceDurationInDays(&instanceDurationInDays)
+settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 autoApplyDecisionsEnabled := true
-settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled)
+settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled) 
 recommendationsEnabled := true
-settings.SetRecommendationsEnabled(&recommendationsEnabled)
-recurrence := msgraphsdk.NewPatternedRecurrence()
-settings.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "absoluteMonthly"
-pattern.SetType(&type)
+settings.SetRecommendationsEnabled(&recommendationsEnabled) 
+recurrence := graphmodels.NewPatternedRecurrence()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.ABSOLUTEMONTHLY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
 interval := int32(6)
-pattern.SetInterval(&interval)
+pattern.SetInterval(&interval) 
 dayOfMonth := int32(0)
-pattern.SetDayOfMonth(&dayOfMonth)
-range := msgraphsdk.NewRecurrenceRange()
+pattern.SetDayOfMonth(&dayOfMonth) 
+recurrence.SetPattern(pattern)
+range := graphmodels.NewRecurrenceRange()
+type := graphmodels.NUMBERED_RECURRENCERANGETYPE 
+range.SetType(&type) 
+startDate := 2021-05-05
+range.SetStartDate(&startDate) 
+endDate := 2022-05-05
+range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
-type := "numbered"
-range.SetType(&type)
-startDate := "2021-05-05"
-range.SetStartDate(&startDate)
-endDate := "2022-05-05"
-range.SetEndDate(&endDate)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+settings.SetRecurrence(recurrence)
+requestBody.SetSettings(settings)
+
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

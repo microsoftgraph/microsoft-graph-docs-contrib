@@ -5,24 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewNamedLocation()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewNamedLocation()
 displayName := "Updated named location without unknown countries and regions"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.countryNamedLocation",
-	"countriesAndRegions":  []String {
+requestBody.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	countriesAndRegions := []string {
 		"CA",
 		"IN",
+
 	}
-	"includeUnknownCountriesAndRegions": false,
+	includeUnknownCountriesAndRegions := false
+requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegions) 
 }
-options := &msgraphsdk.NamedLocationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-namedLocationId := "namedLocation-id"
-graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById("namedLocation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

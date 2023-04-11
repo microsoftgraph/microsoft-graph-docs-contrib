@@ -5,25 +5,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Applications/Item/AddKey"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-keyCredential := msgraphsdk.NewKeyCredential()
-requestBody.SetKeyCredential(keyCredential)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAddKeyPostRequestBody()
+keyCredential := graphmodels.NewKeyCredential()
 type := "AsymmetricX509Cert"
-keyCredential.SetType(&type)
+keyCredential.SetType(&type) 
 usage := "Verify"
-keyCredential.SetUsage(&usage)
-key := []byte("MIIDYDCCAki...")
-keyCredential.SetKey(&key)
-requestBody.SetPasswordCredential(nil)
+keyCredential.SetUsage(&usage) 
+key := []byte("mIIDYDCCAki...")
+keyCredential.SetKey(&key) 
+requestBody.SetKeyCredential(keyCredential)
+passwordCredential := null
+requestBody.SetPasswordCredential(&passwordCredential) 
 proof := "eyJ0eXAiOiJ..."
-requestBody.SetProof(&proof)
-options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).AddKey(application-id).Post(options)
+requestBody.SetProof(&proof) 
+
+result, err := graphClient.ApplicationsById("application-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

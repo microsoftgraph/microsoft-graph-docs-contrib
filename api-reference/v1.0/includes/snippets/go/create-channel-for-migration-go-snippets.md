@@ -5,23 +5,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewChannel()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewChannel()
 displayName := "Import_150958_99z"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Import_150958_99z"
-requestBody.SetDescription(&description)
-createdDateTime, err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
-requestBody.SetCreatedDateTime(&createdDateTime)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@microsoft.graph.channelCreationMode": "migration",
+requestBody.SetDescription(&description) 
+createdDateTime , err := time.Parse(time.RFC3339, "2020-03-14T11:22:17.067Z")
+requestBody.SetCreatedDateTime(&createdDateTime) 
+additionalData := map[string]interface{}{
+	"microsoftGraphChannelCreationMode" : "migration", 
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

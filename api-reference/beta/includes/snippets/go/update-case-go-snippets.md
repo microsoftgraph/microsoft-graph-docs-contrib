@@ -5,20 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//ediscovery"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCase()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCase()
 displayName := "My Case 1 - Renamed"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Updated description"
-requestBody.SetDescription(&description)
+requestBody.SetDescription(&description) 
 externalId := "Updated externalId"
-requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.CaseRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Patch(options)
+requestBody.SetExternalId(&externalId) 
+
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

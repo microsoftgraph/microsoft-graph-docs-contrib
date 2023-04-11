@@ -5,27 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/Transfer"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-transferTarget := msgraphsdk.NewInvitationParticipantInfo()
-requestBody.SetTransferTarget(transferTarget)
-identity := msgraphsdk.NewIdentitySet()
-transferTarget.SetIdentity(identity)
-user := msgraphsdk.NewIdentity()
-identity.SetUser(user)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTransferPostRequestBody()
+transferTarget := graphmodels.NewInvitationParticipantInfo()
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "550fae72-d251-43ec-868c-373732c2704f"
-user.SetId(&id)
+user.SetId(&id) 
 displayName := "Heidi Steen"
-user.SetDisplayName(&displayName)
-transferTarget.SetAdditionalData(map[string]interface{}{
-	"endpointType": "default",
+user.SetDisplayName(&displayName) 
+identity.SetUser(user)
+transferTarget.SetIdentity(identity)
+additionalData := map[string]interface{}{
+	"endpointType" : "default", 
 }
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
-callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+transferTarget.SetAdditionalData(additionalData)
+requestBody.SetTransferTarget(transferTarget)
+
+graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

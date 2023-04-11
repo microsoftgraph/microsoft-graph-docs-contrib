@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 description := "Target completion date (YYYY/MM/DD)"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

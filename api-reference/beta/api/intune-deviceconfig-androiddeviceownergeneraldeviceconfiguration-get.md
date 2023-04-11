@@ -1,7 +1,7 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9615
+Content-Length: 10890
 
 {
   "value": {
@@ -135,6 +135,29 @@ Content-Length: 9615
     "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
+    "detailedHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
+    "deviceOwnerLockScreenMessage": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
+    "securityCommonCriteriaModeEnabled": true,
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
@@ -239,11 +262,23 @@ Content-Length: 9615
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
     "passwordPreviousPasswordCountToBlock": 4,
     "passwordRequiredType": "required",
+    "passwordRequireUnlock": "daily",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "playStoreMode": "allowList",
     "screenCaptureBlocked": true,
     "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
+    "shortHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
     "statusBarBlocked": true,
     "stayOnModes": [
       "ac"
@@ -294,11 +329,10 @@ Content-Length: 9615
     "workProfilePasswordMinimumSymbolCharacters": 10,
     "workProfilePasswordPreviousPasswordCountToBlock": 15,
     "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "required"
+    "workProfilePasswordRequiredType": "required",
+    "workProfilePasswordRequireUnlock": "daily",
+    "locateDeviceUserlessDisabled": true,
+    "locateDeviceLostModeEnabled": true
   }
 }
 ```
-
-
-
-

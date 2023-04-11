@@ -5,17 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/RiskyUsers/ConfirmCompromised"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewUserIdsRequestBody()
-requestBody.SetUserIds( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewConfirmCompromisedPostRequestBody()
+userIds := []string {
 	"29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
 	"20f91ec9-d140-4d90-9cd9-f618587a1471",
+
 }
-options := &msgraphsdk.ConfirmCompromisedRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.RiskyUsers().ConfirmCompromised().Post(options)
+requestBody.SetUserIds(userIds)
+
+graphClient.RiskyUsers().ConfirmCompromised().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewMailFolder()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMailFolder()
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 isHidden := true
-requestBody.SetIsHidden(&isHidden)
-options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(options)
+requestBody.SetIsHidden(&isHidden) 
+
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

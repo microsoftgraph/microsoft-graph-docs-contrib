@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationMethodsPolicy"
 description: "Read the properties and relationships of an authenticationMethodsPolicy object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -21,11 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global Reader
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
 
 ## HTTP request
 
@@ -66,16 +62,13 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethodspolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -90,9 +83,11 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-authenticationmethodspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -127,7 +122,6 @@ Content-Type: application/json
             ]
         }
     },
-    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -140,7 +134,6 @@ Content-Type: application/json
                 "enforcementType": "block",
                 "aaGuids": []
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -153,13 +146,45 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
             "id": "MicrosoftAuthenticator",
             "state": "disabled",
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
                     "id": "all_users",
                     "isRegistrationRequired": false,
-                    "authenticationMode": "any"
+                    "authenticationMode": "any",
+                    "outlookMobileAllowedState": "default",
+                    "displayAppInformationRequiredState": "default",
+                    "numberMatchingRequiredState": "default"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+            "id": "Sms",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "isUsableForSignIn": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+            "id": "TemporaryAccessPass",
+            "state": "disabled",
+            "defaultLifetimeInMinutes": 60,
+            "defaultLength": 8,
+            "minimumLifetimeInMinutes": 60,
+            "maximumLifetimeInMinutes": 480,
+            "isUsableOnce": false,
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
                 }
             ]
         },
@@ -168,7 +193,6 @@ Content-Type: application/json
             "id": "Email",
             "state": "enabled",
             "allowExternalIdToUseEmailOtp": "default",
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": []
         }
     ]

@@ -5,17 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/ServiceAnnouncement/Messages/MarkUnread"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewMessageIdsRequestBody()
-requestBody.SetMessageIds( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewMarkUnreadPostRequestBody()
+messageIds := []string {
 	"MC172851",
 	"MC167983",
+
 }
-options := &msgraphsdk.MarkUnreadRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkUnread().Post(options)
+requestBody.SetMessageIds(messageIds)
+
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkUnread().Post(context.Background(), requestBody, nil)
 
 
 ```

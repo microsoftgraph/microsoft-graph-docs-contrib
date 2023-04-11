@@ -5,17 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTeamworkTag()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTeamworkTag()
 displayName := "Finance"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.TeamworkTagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-teamId := "team-id"
-teamworkTagId := "teamworkTag-id"
-graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

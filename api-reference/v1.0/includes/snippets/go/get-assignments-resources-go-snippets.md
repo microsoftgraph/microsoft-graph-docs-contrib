@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/education"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.AssignmentsRequestBuilderGetQueryParameters{
-	Expand: "resources",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.EducationClasseItemAssignmentsRequestBuilderGetQueryParameters{
+	Expand: [] string {"resources"},
 }
-options := &msgraphsdk.AssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.EducationClasseItemAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Get(options)
+
+result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

@@ -5,16 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Select: "id,mail,assignedLicenses",
-	Filter: "assignedLicenses/any(u:u/skuId%20eq%20cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "assignedLicenses/any"
+
+requestParameters := &graphconfig.UsersRequestBuilderGetQueryParameters{
+	Select: [] string {"id","mail","assignedLicenses"},
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.UsersRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.UsersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().Get(options)
+
+result, err := graphClient.Users().Get(context.Background(), configuration)
 
 
 ```

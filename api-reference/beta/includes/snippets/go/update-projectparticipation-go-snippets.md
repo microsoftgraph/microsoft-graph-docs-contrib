@@ -5,22 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewProjectParticipation()
-allowedAudiences := "organization"
-requestBody.SetAllowedAudiences(&allowedAudiences)
-client := msgraphsdk.NewCompanyDetail()
-requestBody.SetClient(client)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewProjectParticipation()
+allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
+client := graphmodels.NewCompanyDetail()
 department := "Corporate Marketing"
-client.SetDepartment(&department)
+client.SetDepartment(&department) 
 webUrl := "https://www.contoso.com"
-client.SetWebUrl(&webUrl)
-options := &msgraphsdk.ProjectParticipationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-projectParticipationId := "projectParticipation-id"
-graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(options)
+client.SetWebUrl(&webUrl) 
+requestBody.SetClient(client)
+
+result, err := graphClient.Me().Profile().ProjectsById("projectParticipation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

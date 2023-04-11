@@ -1,7 +1,7 @@
 ---
 title: "Get updatableAsset"
 description: "Read the properties and relationships of an updatableAsset object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -61,18 +61,15 @@ If successful, this method returns a `200 OK` response code and an [updatableAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-updatableasset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-updatableasset-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-updatableasset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -87,9 +84,11 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-updatableasset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-updatableasset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 
@@ -105,7 +104,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+    "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
     "id": "f5ba7065-7065-f5ba-6570-baf56570baf5"
   }
 }

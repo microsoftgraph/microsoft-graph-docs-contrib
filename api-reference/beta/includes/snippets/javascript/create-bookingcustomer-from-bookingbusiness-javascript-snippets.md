@@ -45,7 +45,7 @@ const bookingCustomer = {
      ]
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers')
+await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers')
 	.version('beta')
 	.post(bookingCustomer);
 

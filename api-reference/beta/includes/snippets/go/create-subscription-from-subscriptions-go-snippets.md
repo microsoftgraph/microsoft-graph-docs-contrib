@@ -5,25 +5,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewSubscription()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSubscription()
 changeType := "created"
-requestBody.SetChangeType(&changeType)
+requestBody.SetChangeType(&changeType) 
 notificationUrl := "https://webhook.azurewebsites.net/api/send/myNotifyClient"
-requestBody.SetNotificationUrl(&notificationUrl)
+requestBody.SetNotificationUrl(&notificationUrl) 
 resource := "me/mailFolders('Inbox')/messages"
-requestBody.SetResource(&resource)
-expirationDateTime, err := time.Parse(time.RFC3339, "2016-11-20T18:23:45.9356913Z")
-requestBody.SetExpirationDateTime(&expirationDateTime)
+requestBody.SetResource(&resource) 
+expirationDateTime , err := time.Parse(time.RFC3339, "2016-11-20T18:23:45.9356913Z")
+requestBody.SetExpirationDateTime(&expirationDateTime) 
 clientState := "secretClientValue"
-requestBody.SetClientState(&clientState)
+requestBody.SetClientState(&clientState) 
 latestSupportedTlsVersion := "v1_2"
-requestBody.SetLatestSupportedTlsVersion(&latestSupportedTlsVersion)
-options := &msgraphsdk.SubscriptionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Subscriptions().Post(options)
+requestBody.SetLatestSupportedTlsVersion(&latestSupportedTlsVersion) 
+
+result, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
 
 
 ```

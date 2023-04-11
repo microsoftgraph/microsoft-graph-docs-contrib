@@ -5,59 +5,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAccessReviewHistoryDefinition()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAccessReviewHistoryDefinition()
 displayName := "Last quarter's group reviews April 2021"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetDecisions( []AccessReviewHistoryDecisionFilter {
-	"approve",
-	"deny",
-	"dontKnow",
-	"notReviewed",
-	"notNotified",
+requestBody.SetDisplayName(&displayName) 
+decisions := []graphmodels.AccessReviewHistoryDecisionFilterable {
+	accessReviewHistoryDecisionFilter := graphmodels.APPROVE_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.DENY_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.DONTKNOW_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.NOTREVIEWED_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+	accessReviewHistoryDecisionFilter := graphmodels.NOTNOTIFIED_ACCESSREVIEWHISTORYDECISIONFILTER 
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
+
 }
-scheduleSettings := msgraphsdk.NewAccessReviewHistoryScheduleSettings()
-requestBody.SetScheduleSettings(scheduleSettings)
-reportRange := "P1M"
-scheduleSettings.SetReportRange(&reportRange)
-recurrence := msgraphsdk.NewPatternedRecurrence()
-scheduleSettings.SetRecurrence(recurrence)
-pattern := msgraphsdk.NewRecurrencePattern()
-recurrence.SetPattern(pattern)
-type := "monthly"
-pattern.SetType(&type)
-interval := int32(1)
-pattern.SetInterval(&interval)
-range := msgraphsdk.NewRecurrenceRange()
-recurrence.SetRange(range)
-type := "noEnd"
-range.SetType(&type)
-startDate := "2018-08-03T21:02:30.667Z"
-range.SetStartDate(&startDate)
-range.SetAdditionalData(map[string]interface{}{
-	"count": ,
+requestBody.SetDecisions(decisions)
+reviewHistoryPeriodStartDateTime , err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
+requestBody.SetReviewHistoryPeriodStartDateTime(&reviewHistoryPeriodStartDateTime) 
+reviewHistoryPeriodEndDateTime , err := time.Parse(time.RFC3339, "2021-04-30T23:59:59Z")
+requestBody.SetReviewHistoryPeriodEndDateTime(&reviewHistoryPeriodEndDateTime) 
+
+
+accessReviewScope := graphmodels.NewAccessReviewScope()
+additionalData := map[string]interface{}{
+	"queryType" : "MicrosoftGraph", 
+	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
+	queryRoot := null
+accessReviewScope.SetQueryRoot(&queryRoot) 
 }
-requestBody.SetScopes( []AccessReviewScope {
-	msgraphsdk.NewAccessReviewScope(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.accessReviewQueryScope",
-		"queryType": "MicrosoftGraph",
-		"query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-		"queryRoot": nil,
-	}
-	msgraphsdk.NewAccessReviewScope(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.accessReviewQueryScope",
-		"queryType": "MicrosoftGraph",
-		"query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-		"queryRoot": nil,
-	}
+accessReviewScope.SetAdditionalData(additionalData)
+accessReviewScope1 := graphmodels.NewAccessReviewScope()
+additionalData := map[string]interface{}{
+	"queryType" : "MicrosoftGraph", 
+	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
+	queryRoot := null
+accessReviewScope1.SetQueryRoot(&queryRoot) 
 }
-options := &msgraphsdk.HistoryDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
+accessReviewScope1.SetAdditionalData(additionalData)
+
+scopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+	accessReviewScope1,
+
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(options)
+requestBody.SetScopes(scopes)
+
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

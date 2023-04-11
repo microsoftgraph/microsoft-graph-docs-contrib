@@ -5,17 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCalendarPermission()
-role := "write"
-requestBody.SetRole(&role)
-options := &msgraphsdk.CalendarPermissionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-calendarPermissionId := "calendarPermission-id"
-graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Patch(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCalendarPermission()
+role := graphmodels.WRITE_CALENDARROLETYPE 
+requestBody.SetRole(&role) 
+
+result, err := graphClient.UsersById("user-id").Calendar().CalendarPermissionsById("calendarPermission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

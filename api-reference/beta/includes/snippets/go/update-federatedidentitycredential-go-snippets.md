@@ -5,26 +5,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewFederatedIdentityCredential()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewFederatedIdentityCredential()
 name := "testing02"
-requestBody.SetName(&name)
+requestBody.SetName(&name) 
 issuer := "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0"
-requestBody.SetIssuer(&issuer)
+requestBody.SetIssuer(&issuer) 
 subject := "a7d388c3-5e3f-4959-ac7d-786b3383006a"
-requestBody.SetSubject(&subject)
+requestBody.SetSubject(&subject) 
 description := "Updated description"
-requestBody.SetDescription(&description)
-requestBody.SetAudiences( []String {
+requestBody.SetDescription(&description) 
+audiences := []string {
 	"api://AzureADTokenExchange",
+
 }
-options := &msgraphsdk.FederatedIdentityCredentialRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-applicationId := "application-id"
-federatedIdentityCredentialId := "federatedIdentityCredential-id"
-graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options)
+requestBody.SetAudiences(audiences)
+
+result, err := graphClient.ApplicationsById("application-id").FederatedIdentityCredentialsById("federatedIdentityCredential-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,23 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewFeatureRolloutPolicy()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewFeatureRolloutPolicy()
 displayName := "PassthroughAuthentication rollout policy"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "PassthroughAuthentication rollout policy"
-requestBody.SetDescription(&description)
-feature := "passthroughAuthentication"
-requestBody.SetFeature(&feature)
+requestBody.SetDescription(&description) 
+feature := graphmodels.PASSTHROUGHAUTHENTICATION_STAGEDFEATURENAME 
+requestBody.SetFeature(&feature) 
 isEnabled := true
-requestBody.SetIsEnabled(&isEnabled)
+requestBody.SetIsEnabled(&isEnabled) 
 isAppliedToOrganization := false
-requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization)
-options := &msgraphsdk.FeatureRolloutPoliciesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().FeatureRolloutPolicies().Post(options)
+requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization) 
+
+result, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

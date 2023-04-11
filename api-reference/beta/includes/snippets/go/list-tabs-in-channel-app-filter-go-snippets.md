@@ -5,18 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.TabsRequestBuilderGetQueryParameters{
-	Expand: "teamsApp",
-	Filter: "teamsApp/id%20eq%20'com.microsoft.teamspace.tab.planner'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
+
+requestParameters := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetQueryParameters{
+	Expand: [] string {"teamsApp"},
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.TabsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.TeamItemChannelItemTabsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-teamId := "team-id"
-channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().Get(options)
+
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Tabs().Get(context.Background(), configuration)
 
 
 ```

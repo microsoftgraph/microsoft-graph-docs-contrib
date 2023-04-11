@@ -5,16 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/rolemanagement"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters{
-	Filter: "appScopeId%20eq%20'/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'",
-	Expand: "principal",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'"
+
+requestParameters := &graphconfig.RoleManagementEntitlementManagementRoleAssignmentsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+	Expand: [] string {"principal"},
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.RoleManagementEntitlementManagementRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Get(options)
+
+result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

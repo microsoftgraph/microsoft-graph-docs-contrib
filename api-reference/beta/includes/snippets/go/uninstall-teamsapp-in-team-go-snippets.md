@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-teamId := "team-id"
-teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Delete(nil)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Delete(context.Background(), nil)
 
 
 ```

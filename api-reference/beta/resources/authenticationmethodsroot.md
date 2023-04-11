@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot resource type"
 description: "Container for navigation properties for Azure AD authentication methods resources."
-author: "danielwood95"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

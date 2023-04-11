@@ -5,22 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/PrivilegedRoles/Item/SelfActivate"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSelfActivatePostRequestBody()
 reason := "reason-value"
-requestBody.SetReason(&reason)
+requestBody.SetReason(&reason) 
 duration := "duration-value"
-requestBody.SetDuration(&duration)
+requestBody.SetDuration(&duration) 
 ticketNumber := "ticketNumber-value"
-requestBody.SetTicketNumber(&ticketNumber)
+requestBody.SetTicketNumber(&ticketNumber) 
 ticketSystem := "ticketSystem-value"
-requestBody.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.SelfActivateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-privilegedRoleId := "privilegedRole-id"
-result, err := graphClient.PrivilegedRolesById(&privilegedRoleId).SelfActivate(privilegedRole-id).Post(options)
+requestBody.SetTicketSystem(&ticketSystem) 
+
+result, err := graphClient.PrivilegedRolesById("privilegedRole-id").SelfActivate().Post(context.Background(), requestBody, nil)
 
 
 ```

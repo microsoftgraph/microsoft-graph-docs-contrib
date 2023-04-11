@@ -5,17 +5,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
-	Select: "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences",
-	Expand: "exceptionOccurrences",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ItemEventItemRequestBuilderGetQueryParameters{
+	Select: [] string {"subject","start","end","occurrenceId","exceptionOccurrences","cancelledOccurrences"},
+	Expand: [] string {"exceptionOccurrences"},
 }
-options := &msgraphsdk.EventRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.ItemEventItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Get(options)
+
+result, err := graphClient.Me().EventsById("event-id").Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryInstance resource type"
 description: "Represents a recurrence of an accessReviewHistoryDefinition object."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

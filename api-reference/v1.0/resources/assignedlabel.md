@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a sensitivity label assigned to an Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Represents a sensitivity label assigned to an Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Purview Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels).
 
 ## Properties
 
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
-| labelId     | String | The unique identifier of the label.       |
 | displayName | String | The display name of the label. Read-only. |
+| labelId     | String | The unique identifier of the label.       |
 
 ## JSON representation
 
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "labelId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "labelId": "String"
 }
 ```
 

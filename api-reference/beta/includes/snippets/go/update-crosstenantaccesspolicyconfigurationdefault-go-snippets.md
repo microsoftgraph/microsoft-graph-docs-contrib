@@ -5,37 +5,55 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewCrossTenantAccessPolicyConfigurationDefault()
-b2bCollaborationOutbound := msgraphsdk.NewCrossTenantAccessPolicyB2BSetting()
-requestBody.SetB2bCollaborationOutbound(b2bCollaborationOutbound)
-usersAndGroups := msgraphsdk.NewCrossTenantAccessPolicyTargetConfiguration()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationDefault()
+b2bCollaborationOutbound := graphmodels.NewCrossTenantAccessPolicyB2BSetting()
+usersAndGroups := graphmodels.NewCrossTenantAccessPolicyTargetConfiguration()
+accessType := graphmodels.BLOCKED_CROSSTENANTACCESSPOLICYTARGETCONFIGURATIONACCESSTYPE 
+usersAndGroups.SetAccessType(&accessType) 
+
+
+crossTenantAccessPolicyTarget := graphmodels.NewCrossTenantAccessPolicyTarget()
+target := "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+crossTenantAccessPolicyTarget.SetTarget(&target) 
+targetType := graphmodels.GROUP_CROSSTENANTACCESSPOLICYTARGETTYPE 
+crossTenantAccessPolicyTarget.SetTargetType(&targetType) 
+
+targets := []graphmodels.CrossTenantAccessPolicyTargetable {
+	crossTenantAccessPolicyTarget,
+
+}
+usersAndGroups.SetTargets(targets)
 b2bCollaborationOutbound.SetUsersAndGroups(usersAndGroups)
-accessType := "blocked"
-usersAndGroups.SetAccessType(&accessType)
-usersAndGroups.SetTargets( []CrossTenantAccessPolicyTarget {
-	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "0be493dc-cb56-4a53-936f-9cf64410b8b0",
-		"targetType": "group",
-	}
+applications := graphmodels.NewCrossTenantAccessPolicyTargetConfiguration()
+accessType := graphmodels.BLOCKED_CROSSTENANTACCESSPOLICYTARGETCONFIGURATIONACCESSTYPE 
+applications.SetAccessType(&accessType) 
+
+
+crossTenantAccessPolicyTarget := graphmodels.NewCrossTenantAccessPolicyTarget()
+target := "AllApplications"
+crossTenantAccessPolicyTarget.SetTarget(&target) 
+targetType := graphmodels.APPLICATION_CROSSTENANTACCESSPOLICYTARGETTYPE 
+crossTenantAccessPolicyTarget.SetTargetType(&targetType) 
+
+targets := []graphmodels.CrossTenantAccessPolicyTargetable {
+	crossTenantAccessPolicyTarget,
+
 }
-applications := msgraphsdk.NewCrossTenantAccessPolicyTargetConfiguration()
+applications.SetTargets(targets)
 b2bCollaborationOutbound.SetApplications(applications)
-accessType := "blocked"
-applications.SetAccessType(&accessType)
-applications.SetTargets( []CrossTenantAccessPolicyTarget {
-	msgraphsdk.NewCrossTenantAccessPolicyTarget(),
-	SetAdditionalData(map[string]interface{}{
-		"target": "AllApplications",
-		"targetType": "application",
-	}
-}
-options := &msgraphsdk.DefaultRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(options)
+requestBody.SetB2bCollaborationOutbound(b2bCollaborationOutbound)
+
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,15 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/GetMemberGroups"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewSecurityEnabledOnlyRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGetMemberGroupsPostRequestBody()
 securityEnabledOnly := true
-requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
-options := &msgraphsdk.GetMemberGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().GetMemberGroups().Post(options)
+requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
+
+result, err := graphClient.Me().GetMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

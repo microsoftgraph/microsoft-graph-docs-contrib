@@ -5,18 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/VirtualEndpoint/CloudPCs/Item/Reprovision"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
-userAccountType := "administrator"
-requestBody.SetUserAccountType(&userAccountType)
-osVersion := "windows10"
-requestBody.SetOsVersion(&osVersion)
-options := &msgraphsdk.ReprovisionRequestBuilderPostOptions{
-	Body: requestBody,
-}
-cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Reprovision(cloudPC-id).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReprovisionPostRequestBody()
+userAccountType := graphmodels.ADMINISTRATOR_CLOUDPCUSERACCOUNTTYPE 
+requestBody.SetUserAccountType(&userAccountType) 
+osVersion := graphmodels.WINDOWS10_CLOUDPCOPERATINGSYSTEM 
+requestBody.SetOsVersion(&osVersion) 
+
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").Reprovision().Post(context.Background(), requestBody, nil)
 
 
 ```

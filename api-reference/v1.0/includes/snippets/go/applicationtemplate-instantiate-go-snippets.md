@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ApplicationTemplates/Item/Instantiate"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDisplayNameRequestBody()
-displayName := "My custom name"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.InstantiateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-applicationTemplateId := "applicationTemplate-id"
-result, err := graphClient.ApplicationTemplatesById(&applicationTemplateId).Instantiate(applicationTemplate-id).Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewInstantiatePostRequestBody()
+displayName := "Azure AD SAML Toolkit"
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
 
 
 ```

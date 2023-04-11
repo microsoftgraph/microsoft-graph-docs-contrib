@@ -5,20 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewAppRoleAssignment()
-principalId := "7679d9a4-2323-44cd-b5c2-673ec88d8b12"
-requestBody.SetPrincipalId(&principalId)
-resourceId := "076e8b57-bac8-49d7-9396-e3449b685055"
-requestBody.SetResourceId(&resourceId)
-appRoleId := "00000000-0000-0000-0000-000000000000"
-requestBody.SetAppRoleId(&appRoleId)
-options := &msgraphsdk.AppRoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).AppRoleAssignments().Post(options)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAppRoleAssignment()
+principalId := uuid.MustParse("7679d9a4-2323-44cd-b5c2-673ec88d8b12")
+requestBody.SetPrincipalId(&principalId) 
+resourceId := uuid.MustParse("076e8b57-bac8-49d7-9396-e3449b685055")
+requestBody.SetResourceId(&resourceId) 
+appRoleId := uuid.MustParse("00000000-0000-0000-0000-000000000000")
+requestBody.SetAppRoleId(&appRoleId) 
+
+result, err := graphClient.GroupsById("group-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

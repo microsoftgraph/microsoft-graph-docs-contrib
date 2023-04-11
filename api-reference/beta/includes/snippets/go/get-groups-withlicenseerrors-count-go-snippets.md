@@ -5,21 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
-	Count: true,
-	Filter: "hasMembersWithLicenseErrors%20eq%20true",
-	Select: "id,displayName",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+requestFilter := "hasMembersWithLicenseErrors eq true"
+
+requestParameters := &graphconfig.GroupsRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Filter: &requestFilter,
+	Select: [] string {"id","displayName"},
 }
-headers := map[string]string{
-	"ConsistencyLevel": "eventual"
+configuration := &graphconfig.GroupsRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
-}
-result, err := graphClient.Groups().Get(options)
+
+result, err := graphClient.Groups().Get(context.Background(), configuration)
 
 
 ```

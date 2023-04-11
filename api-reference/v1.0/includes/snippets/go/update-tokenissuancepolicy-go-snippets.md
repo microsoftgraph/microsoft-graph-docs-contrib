@@ -5,21 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTokenIssuancePolicy()
-requestBody.SetDefinition( []String {
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTokenIssuancePolicy()
+definition := []string {
 	"definition-value",
+
 }
+requestBody.SetDefinition(definition)
 displayName := "displayName-value"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 isOrganizationDefault := true
-requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
+requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
+
+result, err := graphClient.Policies().TokenIssuancePoliciesById("tokenIssuancePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

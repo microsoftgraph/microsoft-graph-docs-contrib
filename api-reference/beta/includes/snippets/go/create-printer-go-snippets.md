@@ -5,29 +5,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Print/Printers/Create"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCreatePostRequestBody()
 displayName := "Test Printer"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 manufacturer := "Test Printer Manufacturer"
-requestBody.SetManufacturer(&manufacturer)
+requestBody.SetManufacturer(&manufacturer) 
 model := "Test Printer Model"
-requestBody.SetModel(&model)
-requestBody.SetPhysicalDeviceId(nil)
+requestBody.SetModel(&model) 
+physicalDeviceId := null
+requestBody.SetPhysicalDeviceId(&physicalDeviceId) 
 hasPhysicalDevice := false
-requestBody.SetHasPhysicalDevice(&hasPhysicalDevice)
-certificateSigningRequest := msgraphsdk.NewPrintCertificateSigningRequest()
-requestBody.SetCertificateSigningRequest(certificateSigningRequest)
+requestBody.SetHasPhysicalDevice(&hasPhysicalDevice) 
+certificateSigningRequest := graphmodels.NewPrintCertificateSigningRequest()
 content := "{content}"
-certificateSigningRequest.SetContent(&content)
+certificateSigningRequest.SetContent(&content) 
 transportKey := "{sampleTransportKey}"
-certificateSigningRequest.SetTransportKey(&transportKey)
-requestBody.SetConnectorId(nil)
-options := &msgraphsdk.CreateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Print().Printers().Create().Post(options)
+certificateSigningRequest.SetTransportKey(&transportKey) 
+requestBody.SetCertificateSigningRequest(certificateSigningRequest)
+connectorId := null
+requestBody.SetConnectorId(&connectorId) 
+
+graphClient.Print().Printers().Create().Post(context.Background(), requestBody, nil)
 
 
 ```

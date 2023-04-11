@@ -1,10 +1,13 @@
 ---
 title: "Get access without a user"
 description: "Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these apps are background services or daemons that run on a server without the presence of a signed-in user."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
+ms.date: 08/12/2022
 ---
 
 # Get access without a user
@@ -138,7 +141,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | tenant        | Required  | The directory tenant that you want to request permission from. The value can be in GUID or a friendly name format.
 | client_id     | Required  | The application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
-| scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint to include in the access token all the app-level permissions the admin has consented to.
+| scope         | Required  | The value passed for the **scope** parameter in this request should be the identifier (app ID URI) of the resource you want, affixed with the `.default` suffix. For example, the Microsoft Graph resource app ID URI is `https://graph.microsoft.com/`. For Microsoft Graph, the value of **scope** is therefore `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint to include in the access token all the app-level permissions the admin has consented to.
 | client_secret | Required  | The client secret that you generated for your app in the app registration portal. Ensure that it's URL encoded.
 | grant_type    | Required  | Must be `client_credentials`.
 
@@ -150,15 +153,17 @@ A successful response looks like this:
 {
   "token_type": "Bearer",
   "expires_in": 3599,
+  "ext_expires_in":3599,
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
 }
 ```
 
-| Parameter     | Description
-|:--------------|:------------
-| access_token  | The requested access token. Your app can use this token in calls to Microsoft Graph.
-| token_type    | Indicates the token type value. The only type that Azure AD supports is `bearer`.
-| expires_in    | How long the access token is valid (in seconds).
+| Parameter      | Description                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| access_token   | The requested access token. Your app can use this token in calls to Microsoft Graph.          |
+| expires_in     | How long the access token is valid (in seconds).                                              |
+| ext_expires_in | Used to indicate an extended lifetime for the access token and to support resiliency when the token issuance service is not responding. |
+| token_type     | Indicates the token type value. The only type that Azure AD supports is `Bearer`.             |
 
 ## 5. Use the access token to call Microsoft Graph
 

@@ -5,17 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  //other-imports
+)
 
-requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
-	Select: "*,parentSiteId",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.SiteItemTermStoreGroupItemRequestBuilderGetQueryParameters{
+	Select: [] string {"*","parentSiteId"},
 }
-options := &msgraphsdk.GroupRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphconfig.SiteItemTermStoreGroupItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-siteId := "site-id"
-groupId := "group-id"
-result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).Get(options)
+
+result, err := graphClient.SitesById("site-id").TermStore().GroupsById("group-id").Get(context.Background(), configuration)
 
 
 ```

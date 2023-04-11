@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Messages/Item/Copy"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewDestinationIdRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewCopyPostRequestBody()
 destinationId := "destinationId-value"
-requestBody.SetDestinationId(&destinationId)
-options := &msgraphsdk.CopyRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Copy(message-id).Post(options)
+requestBody.SetDestinationId(&destinationId) 
+
+result, err := graphClient.Me().MessagesById("message-id").Copy().Post(context.Background(), requestBody, nil)
 
 
 ```

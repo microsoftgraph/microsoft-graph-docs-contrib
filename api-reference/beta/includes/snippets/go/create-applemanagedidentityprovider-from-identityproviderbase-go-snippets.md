@@ -5,22 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewIdentityProviderBase()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewIdentityProviderBase()
 displayName := "Sign in with Apple"
-requestBody.SetDisplayName(&displayName)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.appleManagedIdentityProvider",
-	"developerId": "UBF8T346G9",
-	"serviceId": "com.microsoft.rts.b2c.test.client",
-	"keyId": "99P6D879C4",
-	"certificateData": "******",
+requestBody.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"developerId" : "UBF8T346G9", 
+	"serviceId" : "com.microsoft.rts.b2c.test.client", 
+	"keyId" : "99P6D879C4", 
+	"certificateData" : "******", 
 }
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().IdentityProviders().Post(options)
+requestBody.SetAdditionalData(additionalData)
+
+result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,17 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//managedTenants"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewTenantTag()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTenantTag()
 displayName := "Support"
-requestBody.SetDisplayName(&displayName)
+requestBody.SetDisplayName(&displayName) 
 description := "Tenants that have purchased extended support"
-requestBody.SetDescription(&description)
-options := &msgraphsdk.TenantTagsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(context.Background(), requestBody, nil)
 
 
 ```

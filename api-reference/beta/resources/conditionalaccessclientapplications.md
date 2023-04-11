@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessClientApplications resource type"
 description: "Represents client applications (service principals and workload identities) included in and excluded from the policy scope."
-author: "danielwood95"
+author: "bakerCaleb"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -20,6 +20,7 @@ Represents client applications (service principals and workload identities) incl
 |:---|:---|:---|
 |excludeServicePrincipals|String collection|Service principal IDs excluded from the policy scope.|
 |includeServicePrincipals|String collection|Service principal IDs included in the policy scope, or `ServicePrincipalsInMyTenant`. |
+|servicePrincipalFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter that defines the dynamic-servicePrincipal-syntax rule to include/exclude service principals. A filter can use custom security attributes to include/exclude service principals. |
 
 ## Relationships
 None.
@@ -39,7 +40,8 @@ The following is a JSON representation of the resource.
   ],
   "excludeServicePrincipals": [
     "String"
-  ]
+  ],
+  "servicePrincipalFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"},
 }
 ```
 

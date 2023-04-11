@@ -4,7 +4,7 @@ description: 'A combination of an application and a servicePrincipal.'
 ms.localizationpriority: medium
 author: 'sureshja'
 ms.prod: 'applications'
-doc_type: 'resourcePageType'
+doc_type: resourcePageType
 ---
 
 # applicationServicePrincipal resource type
@@ -43,8 +43,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "servicePrincipal": { "@odata.type": "microsoft.graph.servicePrincipal" },
-  "application": { "@odata.type": "microsoft.graph.application" }
+  "application": { "@odata.type": "microsoft.graph.application" },
+  "servicePrincipal": { "@odata.type": "microsoft.graph.servicePrincipal" }
 }
 ```
 

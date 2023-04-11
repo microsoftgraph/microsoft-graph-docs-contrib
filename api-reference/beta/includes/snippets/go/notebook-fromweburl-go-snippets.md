@@ -5,15 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Onenote/Notebooks/GetNotebookFromWebUrl"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.NewWebUrlRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewGetNotebookFromWebUrlPostRequestBody()
 webUrl := "webUrl value"
-requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.GetNotebookFromWebUrlRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(options)
+requestBody.SetWebUrl(&webUrl) 
+
+result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(context.Background(), requestBody, nil)
 
 
 ```

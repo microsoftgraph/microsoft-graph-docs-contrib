@@ -16,7 +16,7 @@ $params = @{
 		Content = "Deployment requires your approval"
 	}
 	Recipient = @{
-		"@odata.type" = "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient"
+		"@odata.type" = "microsoft.graph.aadUserNotificationRecipient"
 		UserId = "jacob@contoso.com"
 	}
 	TemplateParameters = @(

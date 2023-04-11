@@ -5,16 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Messages/Item/ReplyAll"
+	  //other-imports
+)
 
-requestBody := msgraphsdk.New()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewReplyAllPostRequestBody()
 comment := "comment-value"
-requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyAllRequestBuilderPostOptions{
-	Body: requestBody,
-}
-messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(options)
+requestBody.SetComment(&comment) 
+
+graphClient.Me().MessagesById("message-id").ReplyAll().Post(context.Background(), requestBody, nil)
 
 
 ```
