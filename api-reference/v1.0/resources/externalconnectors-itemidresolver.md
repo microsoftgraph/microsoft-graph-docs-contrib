@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.externalConnectors.itemIdResolver",
+  "itemId": "String",  
   "priority": "Integer",
-  "itemId": "String",
   "urlMatchInfo": {
     "@odata.type": "microsoft.graph.externalConnectors.urlMatchInfo"
   }
