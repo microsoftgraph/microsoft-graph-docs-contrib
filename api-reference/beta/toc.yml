@@ -5130,13 +5130,6 @@ items:
             href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
           - name: Encryption state
             href: resources/intune-deviceconfig-encryptionstate.md
-          - name: Endpoint privilege management provisioning status
-            href: resources/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus.md
-            items:
-            - name: Get
-              href: api/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus-get.md
-            - name: Update
-              href: api/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus-update.md
           - name: File vault state
             href: resources/intune-deviceconfig-filevaultstate.md
           - name: Firewall certificate revocation list check method type
@@ -10313,8 +10306,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script

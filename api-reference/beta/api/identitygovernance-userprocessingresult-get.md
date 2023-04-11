@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_run_userprocessingresult"
+  "name": "lifecycleworkflows_get_run_userprocessingresult_e1"
 }
 -->
 ``` http
@@ -140,7 +140,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "lifecycleworkflows_get_run_userprocessingresult"
+  "name": "lifecycleworkflows_get_run_userprocessingresult_e2"
 }
 -->
 ``` http
