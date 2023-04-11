@@ -51,7 +51,7 @@ If the shared cookie was not previously published, then this method returns a `2
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersharedcookie",
+  "name": "delete_browsersharedcookie_v1_e1",
   "@odata.type": "microsoft.graph.browserSharedCookie",
   "sampleKeys": ["7cf831d2-8a9b-4826-b120-911566f6fd6a", "07b4cc32-237f-4a1a-9d7f-531efc26220e"]
 }
@@ -78,7 +78,7 @@ HTTP/1.1 204 No Content
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersharedcookie",
+  "name": "delete_browsersharedcookie_v1_e2",
   "sampleKeys": ["7cf831d2-8a9b-4826-b120-911566f6fd6a", "07f4030f-45ff-4ad1-9277-3b8f6ee74141"]
 }
 -->

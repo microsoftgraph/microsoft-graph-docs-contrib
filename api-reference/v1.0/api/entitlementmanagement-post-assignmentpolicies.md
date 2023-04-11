@@ -76,7 +76,7 @@ The following example shows a request to create an access package assignment pol
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_from_"
+  "name": "create_accesspackageassignmentpolicy_from_v1_e1"
 }
 -->
 ``` http
@@ -164,7 +164,7 @@ The following example shows a more complex policy with two stages of approval an
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_2"
+  "name": "create_accesspackageassignmentpolicy_2_v1_e2"
 }
 -->
 ```http
@@ -306,7 +306,7 @@ The following example shows a policy that automatically creates assignments for 
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_autoassignment"
+  "name": "create_accesspackageassignmentpolicy_autoassignment_v1_e3"
 }
 -->
 ```http
@@ -363,7 +363,7 @@ The following example shows a policy that automatically creates assignments for 
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_autoassignment"
+  "name": "create_accesspackageassignmentpolicy_autoassignment_v1_e4"
 }
 -->
 ```http

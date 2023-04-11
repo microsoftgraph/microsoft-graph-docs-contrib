@@ -51,7 +51,7 @@ If the site was not previously published, then this method returns a `204 No Con
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite",
+  "name": "delete_browsersite_v1_e1",
   "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
@@ -77,7 +77,7 @@ HTTP/1.1 204 No Content
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite",
+  "name": "delete_browsersite_v1_e2",
   "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
