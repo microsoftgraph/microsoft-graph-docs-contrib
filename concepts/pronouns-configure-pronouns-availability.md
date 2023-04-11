@@ -54,13 +54,13 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 
 #### Confirm your current settings
 
-To get pronouns settings configuration for an organization, use the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+To get pronoun settings configuration for an organization, use the following command, and replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
 
 ```powershell
    Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
 ```
 
-#### Enabling pronouns in your organization
+#### Enable pronouns in your organization
 
 By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
 
@@ -76,7 +76,7 @@ Use the following command, where you replace `$TenantId` with your Azure Active 
    Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
 ```
 
-#### Disabling pronouns in your organization
+#### Disable pronouns in your organization
 
 Alternatively, you can make pronouns unavailable for your organization using the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
 
@@ -85,13 +85,13 @@ Alternatively, you can make pronouns unavailable for your organization using the
 ```
 
 
-## Configure pronouns settings using Microsoft Graph REST API
+## Configure pronouns settings using the Microsoft Graph REST API
 
 #### Confirm your current settings
 
 Use the [get](/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
 
-The following example gets the current display settings, which have pronouns disabled: 
+The following example gets the current display settings, which have pronouns disabled. 
 
 ``` http
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
@@ -108,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-#### Enabling pronouns in your organization
+#### Enable pronouns in your organization
 
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable pronouns in your organization.
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-#### Disabling pronouns in your organization
+#### Disable pronouns in your organization
 
 Use the update operation to make pronouns unavailable in your organization.
 
