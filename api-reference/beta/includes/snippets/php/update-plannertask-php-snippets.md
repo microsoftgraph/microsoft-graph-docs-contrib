@@ -36,6 +36,21 @@ $appliedCategories->setAdditionalData($additionalData);
 
 
 $requestBody->setAppliedCategories($appliedCategories);
+$recurrence = new PlannerTaskRecurrence();
+$recurrenceSchedule = new PlannerRecurrenceSchedule();
+$recurrenceSchedulePattern = new RecurrencePattern();
+$recurrenceSchedulePattern->setType(new RecurrencePatternType('daily'));
+
+$recurrenceSchedulePattern->setInterval(3);
+
+
+$recurrenceSchedule->setPattern($recurrenceSchedulePattern);
+$recurrenceSchedule->setPatternStartDateTime(new DateTime('2022-02-22T02:10:33Z'));
+
+
+$recurrence->setSchedule($recurrenceSchedule);
+
+$requestBody->setRecurrence($recurrence);
 
 $requestConfiguration = new PlannerTaskRequestBuilderPatchRequestConfiguration();
 

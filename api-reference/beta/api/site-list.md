@@ -28,7 +28,7 @@ If you want to list all sites across all geographies, refer to [sites-getallsite
 [sites]: ../resources/site.md
 [sites-getallsites.md]: sites-getallsites.md
 
-For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions
 
@@ -52,10 +52,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To list all available sites in an organization:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites
+```
+
+To list all root-level site collections in an organization:
+<!-- { "blockType": "ignored" } -->
+
+```http
 GET /sites?$filter=siteCollection/root ne null
 ```
 

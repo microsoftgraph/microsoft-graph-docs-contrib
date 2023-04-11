@@ -54,7 +54,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_delete_owners"
+  "name": "serviceprincipal_delete_owners_e1"
 }-->
 
 ```http
