@@ -65,7 +65,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_horizontalsectioncolumn"
+  "name": "get_horizontalsectioncolumn_e1"
 }
 -->
 
@@ -133,7 +133,7 @@ With `select` and `expand` statements, you can retrieve horizontalSectionColumn 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_horizontalSectionColumn"
+  "name": "get_horizontalSectionColumn_e2"
 }
 -->
 
