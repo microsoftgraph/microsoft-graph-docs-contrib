@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer <token>")
 
-configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemMicrosoft.graph.restartRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.ServicePrincipalItemSynchronizationJobItemRestartRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewRestartPostRequestBody()

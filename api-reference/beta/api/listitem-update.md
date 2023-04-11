@@ -85,7 +85,6 @@ Content-Type: application/json
 
 ---
 
-
 ## Response
 
 If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.

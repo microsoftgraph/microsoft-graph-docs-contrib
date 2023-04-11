@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroup -Search "displayName:Video" OR "description:prod" -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgGroup -Search '"displayName:Video" OR "description:prod"' -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
 
 
 ```

@@ -4,30 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var profileCardProperty = new ProfileCardProperty
+var requestBody = new ProfileCardProperty
 {
 	DirectoryPropertyName = "CustomAttribute1",
-	Annotations = new List<ProfileCardAnnotation>()
+	Annotations = new List<ProfileCardAnnotation>
 	{
 		new ProfileCardAnnotation
 		{
 			DisplayName = "Cost Center",
-			Localizations = new List<DisplayNameLocalization>()
+			Localizations = new List<DisplayNameLocalization>
 			{
 				new DisplayNameLocalization
 				{
 					LanguageTag = "ru-RU",
-					DisplayName = "центр затрат"
-				}
-			}
-		}
-	}
+					DisplayName = "центр затрат",
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties.PostAsync(requestBody);
 
-await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties
-	.Request()
-	.AddAsync(profileCardProperty);
 
 ```

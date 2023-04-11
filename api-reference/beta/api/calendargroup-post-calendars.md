@@ -107,7 +107,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
 ##### Response

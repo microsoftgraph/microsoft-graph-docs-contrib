@@ -4,26 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2xIdentityUserFlow = new B2xIdentityUserFlow
+var requestBody = new B2xIdentityUserFlow
 {
 	Id = "Partner",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 1f,
-	IdentityProviders = new B2xIdentityUserFlowIdentityProvidersCollectionWithReferencesPage()
+	IdentityProviders = new List<IdentityProvider>
 	{
 		new IdentityProvider
 		{
 			Id = "Facebook-OAuth",
 			Type = "Facebook",
-			Name = "Facebook"
-		}
-	}
+			Name = "Facebook",
+		},
+	},
 };
+var result = await graphClient.Identity.B2xUserFlows.PostAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows
-	.Request()
-	.AddAsync(b2xIdentityUserFlow);
 
 ```

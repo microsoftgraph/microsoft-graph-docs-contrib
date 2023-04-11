@@ -118,7 +118,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -186,7 +185,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
