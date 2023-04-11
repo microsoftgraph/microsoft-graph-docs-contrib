@@ -1,6 +1,6 @@
 ---
 title: "appliedCategory resource type"
-description: "**TODO: Add Description**"
+description: "Represents the unique category applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the unique category applied to a retention label.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|Unique string that defines a category name applied to the label. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |subCategory|[microsoft.graph.security.subCategory](../resources/security-fileplandescriptor-subcategory.md)|**TODO: Add Description**|
 
 ## Relationships

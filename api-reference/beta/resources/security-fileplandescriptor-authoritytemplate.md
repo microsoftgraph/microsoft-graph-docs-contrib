@@ -28,10 +28,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the authority. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the authority is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |displayName|String|Unique string that defines a authority name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Unique ID of the authority. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 None.
