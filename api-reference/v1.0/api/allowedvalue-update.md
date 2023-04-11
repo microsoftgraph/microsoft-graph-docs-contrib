@@ -2,7 +2,8 @@
 title: "Update allowedValue"
 description: "Update the properties of an allowedValue object."
 author: "CecilyK"
-ms.localizdirectory-management"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -39,12 +40,9 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Optional.|
-
 
 
 ## Response

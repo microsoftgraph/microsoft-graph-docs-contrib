@@ -40,13 +40,6 @@ PATCH /directory
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [directory](../resources/directory.md) object in the response body.

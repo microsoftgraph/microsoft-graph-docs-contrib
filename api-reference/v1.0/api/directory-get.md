@@ -3,7 +3,7 @@ title: "Get directory"
 description: "Read the properties and relationships of a directory object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "*directory-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
