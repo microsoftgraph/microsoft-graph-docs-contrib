@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Power off a Frontline Cloud PC. This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
-Only IT admin users can perform this action. After powering off a Frontline CloudPC, it will be de-allocated, and licenses will be revoked immediately. 
+After powering off a Frontline CloudPC, it will be de-allocated, and licenses will be revoked immediately. Only IT admin users can perform this action. 
 
 ## Permissions
 
