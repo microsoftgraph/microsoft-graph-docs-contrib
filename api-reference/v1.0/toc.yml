@@ -4929,6 +4929,43 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
+        - name: Custom security attributes
+          items:
+          - name: Overview
+            href: resources/custom-security-attributes-overview.md
+          - name: Attribute sets
+            href: resources/attributeset.md
+            items:
+            - name: List
+              href: api/directory-list-attributesets.md
+            - name: Get
+              href: api/attributeset-get.md
+            - name: Create
+              href: api/directory-post-attributesets.md
+            - name: Update
+              href: api/attributeset-update.md
+          - name: Custom security attribute definitions
+            href: resources/customsecurityattributedefinition.md
+            items:
+            - name: List
+              href: api/directory-list-customsecurityattributedefinitions.md
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
+            - name: Create
+              href: api/directory-post-customsecurityattributedefinitions.md
+            - name: Update
+              href: api/customsecurityattributedefinition-update.md
+          - name: Allowed values
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Create
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
+            - name: Update
+              href: api/allowedvalue-update.md
         - name: Deleted items
           href: resources/directory.md
           items:
@@ -5803,9 +5840,9 @@ items:
             - name: Get risky service principal
               href: api/riskyserviceprincipal-get.md
             - name: List history
-              href: api/riskyserviceprincipal-list-history.md 
+              href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md 
+              href: api/riskyserviceprincipal-confirmcompromised.md
             - name: Dismiss
               href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
