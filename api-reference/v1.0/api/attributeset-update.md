@@ -67,7 +67,6 @@ PATCH https://graph.microsoft.com/v1.0/directory/attributeSets/{attributeSetId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
   "description": "Attributes for engineering team",
   "maxAttributesPerSet": "20"
 }
@@ -83,14 +82,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "id": "58b91e55-5f03-83f0-e1bd-29c0c532e514",
-  "description": "Attributes for engineering team",
-  "maxAttributesPerSet": "20"
-}
+HTTP/1.1 204 No Content
 ```
-

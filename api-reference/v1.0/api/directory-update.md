@@ -75,9 +75,6 @@ The following is an example of the response
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.directory",
-  "id": "29e00904-6589-f87a-aabf-021e17420337"
-}
+``` http
+HTTP/1.1 204 No Content
 ```
-

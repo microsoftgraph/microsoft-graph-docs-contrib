@@ -71,7 +71,6 @@ PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefiniti
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
   "description": "Target completion date (YYYY/MM/DD)",
   "status": "Deprecated",
   "usePreDefinedValuesOnly": "true"
@@ -88,14 +87,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-  "id": "ae2dd02c-6061-896c-9f53-3583b6a7163b",
-  "description": "Target completion date (YYYY/MM/DD)",
-  "status": "Deprecated",
-  "usePreDefinedValuesOnly": "true"
-}
+HTTP/1.1 204 No Content
 ```

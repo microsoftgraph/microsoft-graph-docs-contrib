@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 ## HTTP request
 
 <!-- {
@@ -63,7 +64,6 @@ PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefiniti
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
   "isActive": "false"
 }
 ```
@@ -78,12 +78,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "id": "e18a0d39-a256-262e-2fc4-9f8e1ebfdea1",
-  "isActive": "false"
-}
+HTTP/1.1 204 No Content
 ```
