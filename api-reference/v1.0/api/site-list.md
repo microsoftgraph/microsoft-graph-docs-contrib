@@ -48,10 +48,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To list all available sites in an organization:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /sites
+```
+
+To list all root-level site collections in an organization:
+<!-- { "blockType": "ignored" } -->
+
+```http
 GET /sites?$filter=siteCollection/root ne null
 ```
 
