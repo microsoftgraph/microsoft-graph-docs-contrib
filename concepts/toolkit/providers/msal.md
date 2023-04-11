@@ -45,7 +45,7 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | depends-on   | Element selector string of another higher priority provider component. Optional. 
 | domain-hint  | Query string of domain location for forwarding sign in experience. Optional.              
 | prompt | Selection for type of user interaction required to login. Valid options include: <ul><li>`login` forces the user to enter credentials on request </li><li>`none` for no interactive prompt</li> <li>`select_account` to send the user to an account picker</li><li>`consent` to send the user to a OAuth consent dialog</li></ul> For more prompt information, see the [prompt behavior in MSAL.js](/azure/active-directory/develop/msal-js-prompt-behavior) article. Optional.
-| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints). The default value is `https://graph.microsoft.com`.|
+| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
 
 
 ### Initialize in JavaScript
