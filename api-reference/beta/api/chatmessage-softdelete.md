@@ -44,8 +44,10 @@ To delete a **chatMessage** in a **channel**:
   "blockType": "ignored"
 }
 -->
+```
 POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/softDelete
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/softDelete
+```
 
 To delete a **chatMessage** in a **chat**:
 <!-- {
