@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Power on a Frontline Cloud PC.  This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
-CloudPC will be allocated for assigned end user immediately and license will be assigned for Frontline CloudPC. The API only targets IT admin consumers.
+After powering on a Frontline CloudPC, it will be allocated to a user, and licenses will be assigned immediately. Only IT admin users can perform this action. 
 
 ## Permissions
 
