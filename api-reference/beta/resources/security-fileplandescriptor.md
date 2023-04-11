@@ -46,7 +46,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Specifies a group of similar types of content in a certain department.|
 |citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Specifies the unique identification defining a rule or regulation, following which, the label and content to which it is applied is scheduled to be retained or to be deleted. Additionally, you can specify the direct url of the citation and the jurisdiction or agency which published it.|
 |department|[microsoft.graph.security.department](../resources/security-department.md)|Specifies the parent business vertical or department of an organization for a label and in turn the content to which it will be applied.|
-|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Specifies a unique identifier of a label category which co-relates it to the that organization’s retention schedule. It is an alpha-numeric identifier that maps the retention label to a row on their retention schedule. |
+|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplandescriptor-fileplanreference.md)|Specifies a unique identifier of a label category which co-relates it to the that organization’s retention schedule. It is an alpha-numeric identifier that maps the retention label to a row on their retention schedule. |
 
 
 ## Relationships

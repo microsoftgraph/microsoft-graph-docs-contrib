@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 |:---|:---|:---|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|displayName|String|Unique string that defines a authority name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.authorityTemplate",
-  "baseType": "microsoft.graph.security.filePlanDescriptorTemplate",
+  "baseType": "microsoft.graph.security.filePlanDescriptor",
   "openType": false
 }
 -->

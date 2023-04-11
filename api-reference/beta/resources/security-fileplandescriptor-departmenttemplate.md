@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.departmentTemplate",
-  "baseType": "microsoft.graph.security.filePlanDescriptorTemplate",
+  "baseType": "microsoft.graph.security.filePlanDescriptor",
   "openType": false
 }
 -->

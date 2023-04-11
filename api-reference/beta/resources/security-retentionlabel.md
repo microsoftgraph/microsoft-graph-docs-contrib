@@ -23,8 +23,8 @@ Represents how customers can manage their data, including whether and for how lo
 |[Get retentionLabel](../api/security-retentionlabel-get.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Delete retentionLabel](../api/security-retentionlabel-delete.md)|None|Delete a [retentionLabel](../resources/security-retentionlabel.md) object.|
-|[List filePlanDescriptor](../api/security-retentionlabel-list-descriptors.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) collection|Get the filePlanDescriptor resources from the descriptors navigation property.|
-|[Create filePlanDescriptor](../api/security-retentionlabel-post-descriptors.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Create a new filePlanDescriptor object.|
+|[List filePlanDescriptor](../api/security-retentionlabel-list.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) collection|Get the filePlanDescriptor resources from the descriptors navigation property.|
+|[Create filePlanDescriptor](../api/security-retentionlabel-post.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Create a new filePlanDescriptor object.|
 |[List retentionEventType](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the exapnd eventType navigation property.|
 |[Add retentionEventType](../api/security-retentioneventtype-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by adding the relevant odata property when creating a label.|
 
