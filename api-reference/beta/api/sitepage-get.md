@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Returns the metadata for a sitePage in the site pages list in a site."
 ms.date: 03/15/2018
 title: Get a page in a site
@@ -232,6 +232,15 @@ Content-type: application/json
     }]
 }
 ```
+
+### Example 3: Get a page with page content
+
+To access the page with page content, append `?expand=canvasLayout` to query string:
+
+```http
+GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
+```
+
 <!--
 {
   "type": "#page.annotation",
