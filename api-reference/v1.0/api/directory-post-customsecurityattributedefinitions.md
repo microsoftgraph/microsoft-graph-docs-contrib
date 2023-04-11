@@ -242,67 +242,12 @@ The following example adds a new custom security attribute definition with a lis
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition_allowedvalues"
 }
 -->
-``` http
-POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
-Content-Type: application/json
 
-{
-    "attributeSet": "Engineering",
-    "description": "Active projects for user",
-    "isCollection": true,
-    "isSearchable": true,
-    "name": "Project",
-    "status": "Available",
-    "type": "String",
-    "usePreDefinedValuesOnly": true,
-    "allowedValues": [
-        {
-            "id": "Alpine",
-            "isActive": true
-        },
-        {
-            "id": "Baker",
-            "isActive": true
-        },
-        {
-            "id": "Cascade",
-            "isActive": true
-        }
-    ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-allowedvalues-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-allowedvalues-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-allowedvalues-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-allowedvalues-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-allowedvalues-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customsecurityattributedefinition-allowedvalues-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
