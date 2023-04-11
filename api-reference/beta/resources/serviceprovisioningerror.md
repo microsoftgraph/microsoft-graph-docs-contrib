@@ -28,6 +28,13 @@ Represents information published by a federated service describing a non-transie
 
 Here is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.serviceProvisioningError"
+}-->
+
 ```json
 {
   "createdDateTime": "2020-01-31T17:45:18.00",
