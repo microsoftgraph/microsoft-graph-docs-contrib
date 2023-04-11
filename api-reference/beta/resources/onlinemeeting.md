@@ -97,7 +97,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
 | all                | All meeting chat history is shared.                                    |
-| none               | No meting chat history is shared.                                      |
+| none               | No meeting chat history is shared.                                      |
 | unknownFutureValue | Unknown future value.                                                  |
 
 ## Relationships
