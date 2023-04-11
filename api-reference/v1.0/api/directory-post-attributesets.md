@@ -23,6 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
+## HTTP request
 
 <!-- {
   "blockType": "ignored"
@@ -56,11 +57,16 @@ If successful, this method returns a `201 Created` response code and an [attribu
 
 ## Examples
 
+### Example: Add an attribute set
+
+The following example adds a new attribute set named `Engineering`.
+
 ### Request
-The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_attributeset_from_"
+  "name": "create_attributeset"
 }
 -->
 ``` http
@@ -68,16 +74,39 @@ POST https://graph.microsoft.com/v1.0/directory/attributeSets
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+    "id":"Engineering",
+    "description":"Attributes for engineering team",
+    "maxAttributesPerSet":25
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-attributeset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-attributeset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-attributeset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-attributeset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-attributeset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-attributeset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,9 +118,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "id": "58b91e55-5f03-83f0-e1bd-29c0c532e514",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/attributeSets/$entity",
+    "description": "Attributes for engineering team",
+    "id": "Engineering",
+    "maxAttributesPerSet": 25
 }
 ```
