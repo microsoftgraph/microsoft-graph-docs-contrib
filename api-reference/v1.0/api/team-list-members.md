@@ -297,6 +297,25 @@ Content-Type: application/json
     ]
 }
 ```
+
+# Note:
+
+For new tenants, the JIT provisioning error causing the 401s is unfortunately a known limitation for 1st party apps using MSGraph advanced AAD query capabilities (a.k.a. Mezzo). 1st party apps require provisioning a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so the provisioning cannot happen (advanced query endpoints are defined by the ConsistencyLevel=eventual header + $count or $search query arguments). A workaround is to hit AAD Graph or another "non-advanced" MSGraph endpoint (e.g. /users?$top=1), which takes care of the provisioning and things work from then on. That only has to happen once per tenant for a given app. Implementing a pattern like below:
+``` http
+{
+    try
+    {
+        $count
+    }
+    catch (unauthorized)
+    {
+        call /users?$top=1
+        wait a few minutes; // Provisioning is eventually consistent, so it might take a few minutes to propagate
+        retry $count
+    }
+}
+```
+
 ## See also
 
 - [List members in channel](channel-list-members.md)
