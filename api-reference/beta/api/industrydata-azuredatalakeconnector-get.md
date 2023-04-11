@@ -63,7 +63,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_azuredatalakeconnector",
+  "name": "get_azuredatalakeconnector_e1",
   "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-azuredatalakeconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-azuredatalakeconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
