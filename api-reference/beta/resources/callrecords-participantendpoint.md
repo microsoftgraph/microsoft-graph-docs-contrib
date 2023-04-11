@@ -43,7 +43,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},"feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},"name": "String",
+    "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},
+    "feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},
+    "name": "String",
     "cpuName": "String",
     "cpuCoresCount": "Int32",
     "cpuProcessorSpeedInMhz": "Int32",

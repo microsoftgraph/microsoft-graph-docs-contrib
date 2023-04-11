@@ -89,6 +89,7 @@ The following is a JSON representation of the resource.
   "maxRoundTripTime": "String (duration)",
   "packetUtilization": 1024,
   "postForwardErrorCorrectionPacketLossRate": "Double",
+  "rmsFreezeDuration": "String (duration)",
   "startDateTime": "String (timestamp)",
   "streamDirection": "String",
   "streamId": "String",
