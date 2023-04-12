@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	Description = "Health Level 1"
-	ClassCode = "Health 501"
-	DisplayName = "Health 1"
-	ExternalId = "11019"
-	ExternalName = "Health Level 1"
-	ExternalSource = "sis"
-	MailNickname = "fineartschool.net"
+	description = "Health Level 1"
+	classCode = "Health 501"
+	displayName = "Health 1"
+	externalId = "11019"
+	externalName = "Health Level 1"
+	externalSource = "sis"
+	mailNickname = "fineartschool.net"
 }
 
 New-MgEducationClass -BodyParameter $params

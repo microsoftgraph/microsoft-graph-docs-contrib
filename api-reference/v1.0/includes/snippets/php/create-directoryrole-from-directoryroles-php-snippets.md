@@ -14,7 +14,7 @@ $requestBody->setRoleTemplateId('fe930be7-5e62-47db-91af-98c3a49a38b1');
 
 
 
-$requestResult = $graphServiceClient->directoryRoles()->post($requestBody);
+$result = $graphServiceClient->directoryRoles()->post($requestBody);
 
 
 ```

@@ -13,18 +13,18 @@ $requestBody = new Extension();
 $requestBody->set@odatatype('Microsoft.OutlookServices.OpenTypeExtension');
 
 $additionalData = [
-'extensionName' => 'Com.Contoso.Estimate', 
-'companyName' => 'Contoso', 
-'expirationDate' => '2016-07-30T11:00:00.000Z', 
-'DealValue' => 1010100,
-'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
+		'extensionName' => 'Com.Contoso.Estimate', 
+		'companyName' => 'Contoso', 
+		'expirationDate' => '2016-07-30T11:00:00.000Z', 
+		'DealValue' => 1010100,
+		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->extensionsById('extension-id')->patch($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->postsById('post-id')->extensionsById('extension-id')->patch($requestBody);
 
 
 ```

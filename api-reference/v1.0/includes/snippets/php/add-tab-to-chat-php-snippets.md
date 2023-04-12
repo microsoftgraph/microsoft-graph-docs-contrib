@@ -24,14 +24,14 @@ $configuration->setRemoveUrl('https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6
 
 $requestBody->setConfiguration($configuration);
 $additionalData = [
-'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8', 
+		'teamsApp@odata.bind' => 'https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->tabs()->post($requestBody);
+$result = $graphServiceClient->chatsById('chat-id')->tabs()->post($requestBody);
 
 
 ```

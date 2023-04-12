@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->calendars()->get();
+$result = $graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->calendars()->get();
 
 
 ```

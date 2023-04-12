@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Settings settings = graphClient.admin().sharepoint().settings()
+SharepointSettings sharepointSettings = graphClient.admin().sharepoint().settings()
 	.buildRequest()
 	.get();
 
