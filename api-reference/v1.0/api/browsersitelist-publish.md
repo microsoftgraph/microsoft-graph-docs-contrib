@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "browsersitelist_publish",
+  "name": "browsersitelist_publish_v1_e1",
   "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
@@ -145,7 +145,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "browsersitelist_publish",
+  "name": "browsersitelist_publish_v1_e2",
   "sampleKeys": ["36ba61eb-c492-4283-a38b-963a1dbb2f69"]
 }
 -->
