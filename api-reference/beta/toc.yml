@@ -16060,6 +16060,75 @@ items:
             href: api/security-retentionlabel-update.md
           - name: Delete
             href: api/security-retentionlabel-delete.md
+          - name: File plan descriptors
+            href: resources/security-fileplandescriptors.md
+            items:
+            - name: File Plan Reference
+              href: resources/security-fileplandescriptors-filePlanReferenceTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-list-fileplanreferencetemplate.md
+              - name: Create
+                href: api\security-fileplandescriptor-post-fileplanreferencetemplate.md
+              - name: Get
+                href: api\security-fileplandescriptor-fileplanreferencetemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-delete-fileplanreferencetemplate.md
+            - name: Authority
+              href: resources/security-fileplandescriptors-authorityTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-list-authoritytemplate.md
+              - name: Create
+                href: api\security-fileplandescriptor-post-authoritytemplate.md
+              - name: Get
+                href: api\security-fileplandescriptor-authoritytemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-delete-authoritytemplate.md
+            - name: Category
+              href: resources/security-fileplandescriptors-categoryTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-list-categorytemplate.md
+              - name: Create
+                href: api\security-fileplandescriptor-post-categorytemplate.md
+              - name: Get
+                href: api\security-fileplandescriptor-categorytemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-delete-categorytemplate.md
+            - name: Sub-category
+              href: resources/security-fileplandescriptors-subcategoryTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-categorytemplate-list-subcategories.md
+              - name: Create
+                href: api\security-fileplandescriptor-categorytemplate-post-subcategories.md
+              - name: Get
+                href: api\security-fileplandescriptor-subcategorytemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-categorytemplate-delete-subcategories.md
+            - name: Department
+              href: resources/security-fileplandescriptors-departmentTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-list-departmenttemplate.md
+              - name: Create
+                href: api\security-fileplandescriptor-post-departmenttemplate.md
+              - name: Get
+                href: api\security-fileplandescriptor-departmenttemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-delete-departmenttemplate.md
+            - name: Citation
+              href: resources/security-fileplandescriptors-citationTemplate.md
+              items:
+              - name: List
+                href: api\security-fileplandescriptor-list-citationtemplate.md
+              - name: Create
+                href: api\security-fileplandescriptor-post-citationtemplate.md
+              - name: Get
+                href: api\security-fileplandescriptor-citationtemplate-get.md
+              - name: Delete
+                href: api\security-fileplandescriptor-delete-citationtemplate.md
         - name: Retention event
           href: resources/security-retentionevent.md
           items:
