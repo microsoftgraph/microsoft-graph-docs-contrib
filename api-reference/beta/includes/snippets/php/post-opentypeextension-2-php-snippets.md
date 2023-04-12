@@ -13,17 +13,17 @@ $requestBody = new Extension();
 $requestBody->set@odatatype('microsoft.graph.openTypeExtension');
 
 $additionalData = [
-'extensionName' => 'Com.Contoso.Referral', 
-'companyName' => 'Wingtip Toys', 
-'dealValue' => 500050,
-'expirationDate' => '2015-12-03T10:00:00.000Z', 
+		'extensionName' => 'Com.Contoso.Referral', 
+		'companyName' => 'Wingtip Toys', 
+		'dealValue' => 500050,
+		'expirationDate' => '2015-12-03T10:00:00.000Z', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->me()->messagesById('message-id')->extensions()->post($requestBody);
 
 
 ```

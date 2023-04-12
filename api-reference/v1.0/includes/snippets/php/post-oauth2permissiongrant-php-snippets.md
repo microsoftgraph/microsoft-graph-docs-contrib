@@ -20,7 +20,7 @@ $requestBody->setScope('DelegatedPermissionGrant.ReadWrite.All');
 
 
 
-$requestResult = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
+$result = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
 
 
 ```

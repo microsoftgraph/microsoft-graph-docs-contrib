@@ -21,7 +21,7 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 $additionalData = [
-'preFetchMedia' => $preFetchMedia1 = new ();
+	'preFetchMedia' => $preFetchMedia1 = new ();
 $	preFetchMedia1->setUri('https://cdn.contoso.com/beep.wav');
 
 $	preFetchMedia1->setResourceId('f8971b04-b53e-418c-9222-c82ce681a582');
@@ -60,7 +60,7 @@ $requestBody->setTenantId('86dc81db-c112-4228-9222-63f3esaa1edb');
 
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

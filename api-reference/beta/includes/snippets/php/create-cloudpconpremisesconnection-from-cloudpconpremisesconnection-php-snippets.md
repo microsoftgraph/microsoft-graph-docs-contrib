@@ -30,7 +30,7 @@ $requestBody->setSubnetId('/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/r
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->post($requestBody);
 
 
 ```

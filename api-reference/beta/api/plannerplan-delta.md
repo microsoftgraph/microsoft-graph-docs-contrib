@@ -65,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta",
+  "name": "plannerplanthis.delta_e1",
   "sampleKeys": ["-W4K7hIak0WlAwgJCn1sEWQABgjH"]
 }
 -->
@@ -75,27 +75,27 @@ GET https://graph.microsoft.com/beta/planner/rosters/-W4K7hIak0WlAwgJCn1sEWQABgj
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/plannerplanthisdelta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/plannerplanthisdelta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/plannerplanthisdelta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannerplanthisdelta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/plannerplanthisdelta-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/plannerplanthisdelta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/plannerplanthisdelta-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/plannerplanthisdelta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/plannerplanthisdelta-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/plannerplanthisdelta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/plannerplanthisdelta-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/plannerplanthisdelta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,7 +147,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "plannerplanthis.delta",
+  "name": "plannerplanthis.delta_e2",
   "sampleKeys": ["ebf3b108-5234-4e22-b93d-656d7dae5874"]
 }
 -->
@@ -157,27 +157,27 @@ GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/plannerplanthisdelta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/plannerplanthisdelta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/plannerplanthisdelta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannerplanthisdelta-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/plannerplanthisdelta-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/plannerplanthisdelta-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/plannerplanthisdelta-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/plannerplanthisdelta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/plannerplanthisdelta-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/plannerplanthisdelta-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/plannerplanthisdelta-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

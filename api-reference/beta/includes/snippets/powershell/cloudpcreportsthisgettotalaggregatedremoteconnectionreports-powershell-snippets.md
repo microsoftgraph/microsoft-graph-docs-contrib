@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Actions
 
 $params = @{
-	Top = 25
-	Skip = 0
-	Filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
-	Select = @(
+	top = 25
+	skip = 0
+	filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
+	select = @(
 		"CloudPcId"
 		"ManagedDeviceName"
 		"UserPrincipalName"

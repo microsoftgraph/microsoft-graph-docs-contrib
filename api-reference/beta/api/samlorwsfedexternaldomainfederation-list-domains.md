@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_externaldomainname"
+  "name": "list_externaldomainname_e1"
 }
 -->
 
@@ -71,11 +71,11 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/microsof
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-externaldomainname-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-externaldomainname-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-externaldomainname-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-externaldomainname-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
