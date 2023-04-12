@@ -92,11 +92,6 @@ The `mgt-file` component defines the following CSS custom properties.
 
 ```css
 mgt-file {
-  /**NOTE: default-* tokens will override anything you set in the component.
-      --default-font-size: 15px;
-      --default-font-weight: 2px;
-      */
-  --default-font-family: "Comic Sans MS", cursive, sans-serif;
   --file-type-icon-height: 30px;
   --file-border: 4px dotted #ffbdc3;
   --file-border-radius: 8px;
