@@ -7438,7 +7438,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isMultiValued",
           "ChangeType": "Addition",
-          "Description": "Added the `isMultiValued` property to the [extensionProperty](https://learn.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-beta) resource.",
+          "Description": "Added the `isMultiValued` property to the [extensionProperty](https://learn.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-beta) resource. You can now store a collection of values in a directory extension property.",
           "Target": "extensionProperty"
         }
       ],
