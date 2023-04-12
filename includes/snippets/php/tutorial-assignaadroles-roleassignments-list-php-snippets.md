@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RoleAssignmentsRequestBuilderGetQueryParameters();
+$queryParameters = RoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignments()->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->get($requestConfiguration);
 
 
 ```

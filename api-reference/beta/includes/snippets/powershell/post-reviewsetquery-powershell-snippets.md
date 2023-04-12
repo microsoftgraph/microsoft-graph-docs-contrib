@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	DisplayName = "My Query 1"
-	Query = "(subject:"Quarterly Financials")"
+	displayName = "My Query 1"
+	query = "(subject:"Quarterly Financials")"
 }
 
 New-MgComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params

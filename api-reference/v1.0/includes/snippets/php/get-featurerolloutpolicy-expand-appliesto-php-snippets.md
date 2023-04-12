@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new FeatureRolloutPolicyRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new FeatureRolloutPolicyRequestBuilderGetQueryParameters();
+$queryParameters = FeatureRolloutPolicyRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["appliesTo"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->featureRolloutPoliciesById('featureRolloutPolicy-id')->get($requestConfiguration);
+$result = $graphServiceClient->policies()->featureRolloutPoliciesById('featureRolloutPolicy-id')->get($requestConfiguration);
 
 
 ```

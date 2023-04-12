@@ -13,14 +13,14 @@ $requestBody = new PrinterShare();
 $requestBody->setName('name-value');
 
 $additionalData = [
-'printer@odata.bind' => 'https://graph.microsoft.com/beta/print/printers/{id}', 
+		'printer@odata.bind' => 'https://graph.microsoft.com/beta/print/printers/{id}', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->print()->shares()->post($requestBody);
+$result = $graphServiceClient->print()->shares()->post($requestBody);
 
 
 ```

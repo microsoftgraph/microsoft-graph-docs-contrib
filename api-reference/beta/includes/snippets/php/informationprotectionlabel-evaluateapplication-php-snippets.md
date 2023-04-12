@@ -86,9 +86,9 @@ $contentInfo->setMetadata($metadataArray);
 
 
 $additionalData = [
-'format@odata.type' => '#microsoft.graph.contentFormat', 
-'state@odata.type' => '#microsoft.graph.contentState', 
-'metadata@odata.type' => '#Collection(microsoft.graph.keyValuePair)', 
+	'format@odata.type' => '#microsoft.graph.contentFormat', 
+	'state@odata.type' => '#microsoft.graph.contentState', 
+	'metadata@odata.type' => '#Collection(microsoft.graph.keyValuePair)', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -118,15 +118,13 @@ $labelingOptions->setAdditionalData($additionalData);
 $requestBody->setLabelingOptions($labelingOptions);
 
 $requestConfiguration = new EvaluateApplicationRequestBuilderPostRequestConfiguration();
-
 $headers = [
 'User-Agent' => 'ContosoLOBApp/1.0',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateApplication()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->informationProtection()->policy()->labels()->evaluateApplication()->post($requestBody, $requestConfiguration);
 
 
 ```

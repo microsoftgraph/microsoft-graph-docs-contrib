@@ -14,7 +14,7 @@ $requestBody->setAllowEmailVerifiedUsersToJoinOrganization(false);
 
 
 
-$requestResult = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```
