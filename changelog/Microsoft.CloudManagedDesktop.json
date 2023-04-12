@@ -2975,7 +2975,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "ssoCheckKerberosConfigurationError",
                     "ChangeType": "Addition",
-                    "Description": "Added the **ssoCheckKerberosConfigurationError** property to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                    "Description": "Added the **ssoCheckKerberosConfigurationError** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
                     "Target": "cloudPcOnPremisesConnection"
                 }
             ],
