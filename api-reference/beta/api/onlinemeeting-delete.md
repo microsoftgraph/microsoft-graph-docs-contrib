@@ -1,7 +1,7 @@
 ---
 title: "Delete onlineMeeting"
 description: "Delete an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -30,8 +30,8 @@ To use application permission for this API, tenant administrators must create an
 To delete an **onlineMeeting** using the meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
-DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+DELETE /me/onlineMeetings/{meetingId}
+DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -77,6 +77,13 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
+      - name: Metered APIs
+        items:
+          - name: Overview
+            href: metered-api-overview.md
+            displayName: monetize, charge, cost, pricing
+          - name: List of metered APIs
+            href: metered-api-list.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -91,7 +98,7 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training module: Access user data"
+          - name: "Training: Access user data"
             href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
@@ -104,30 +111,38 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training module: Manage group lifecycle"
+          - name: "Training: Manage group lifecycle"
             href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Manage applications
-            href: tutorial-applications-basics.md
-          - name: Validation differences for signInAudience
-            href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
-          - name: Grant or revoke permissions
-            displayName: grant delegated and application permissions
-            href: permissions-grant-via-msgraph.md
-          - name: Add a certificate to an app
-            displayName: app-only authentication
-            href: applications-how-to-add-certificate.md
-          - name: Automate SAML-based SSO configuration
-            href: application-saml-sso-configure-api.md
-          - name: Configure application proxy
-            href: application-proxy-configure-api.md
-          - name: Automate provisioning
-            href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
-          - name: Generate proof of possession tokens for rolling keys
-            href: application-rollkey-prooftoken.md
+          - name: Applications and service principals
+            items:
+            - name: Manage applications
+              href: tutorial-applications-basics.md
+            - name: Validation differences for signInAudience
+              href: /azure/active-directory/develop/supported-accounts-validation?context=graph/context
+            - name: Grant or revoke permissions
+              displayName: grant delegated and application permissions
+              href: permissions-grant-via-msgraph.md
+            - name: Add a certificate to an app
+              displayName: app-only authentication
+              href: applications-how-to-add-certificate.md
+            - name: Automate SAML-based SSO configuration
+              href: application-saml-sso-configure-api.md
+            - name: Configure application proxy
+              href: application-proxy-configure-api.md
+            - name: Automate provisioning
+              href: /azure/active-directory/app-provisioning/application-provisioning-configuration-api?context=graph/context
+            - name: Generate proof of possession tokens for rolling keys
+              href: application-rollkey-prooftoken.md
+          - name: Synchronization
+            items:
+            - name: Synchronize custom target attributes
+              href: synchronization-configure-with-custom-target-attributes.md
+            - name: Synchronize directory extension attributes
+              href: synchronization-configure-with-directory-extension-attributes.md
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
@@ -180,6 +195,58 @@ items:
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
+      - name: Change notifications
+        items: 
+          - name: Overview
+            href: webhooks.md
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+          - name: "Training: Use change notifications"
+            href: /training/modules/msgraph-changenotifications-trackchanges
+          - name: Notifications delivery channels
+            items:
+              - name: Notifications through webhooks
+                href: change-notifications-delivery-webhooks.md
+              - name: Notifications through Azure Event Hubs
+                href: change-notifications-delivery-event-hubs.md
+          - name: Lifecycle notifications for subscriptions
+            href: webhooks-lifecycle.md
+          - name: Rich notifications
+            href: webhooks-with-resource-data.md
+          - name: Tutorials
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+            items:
+            - name: Notifications for cloud printing
+              href: universal-print-webhook-notifications.md
+            - name: Notifications for Microsoft Teams resources
+              items:
+                - name: Notification types and payloads
+                  href: teams-change-notification-in-microsoft-teams-overview.md
+                  displayName: change notifications, Teams, Microsoft Teams
+                - name: Teams and channels
+                  href: teams-changenotifications-team-and-channel.md
+                - name: Team and channel membership
+                  href: teams-changenotifications-teamMembership.md
+                - name: Chat and channel messages
+                  href: teams-changenotifications-chatmessage.md
+                - name: Chat
+                  href: teams-changenotifications-chat.md
+                - name: Chat membership
+                  href: teams-changenotifications-chatMembership.md
+            - name: Notifications for Outlook resources
+              href: outlook-change-notifications-overview.md
+      - name: Change tracking
+        items:
+          - name: Overview
+            href: delta-query-overview.md
+            displayName: Delta query, change tracking, polling
+          - name: Get changes to events (example)
+            href: delta-query-events.md
+          - name: Get changes to groups (example)
+            href: delta-query-groups.md
+          - name: Get changes to messages (example)
+            href: delta-query-messages.md
+          - name: Get changes to users (example)
+            href: delta-query-users.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -245,7 +312,7 @@ items:
       - name: Device and app management
         expanded: true
         items:
-          - name: Browser management (preview)
+          - name: Browser management
             href: browser-edge-concept-overview.md
             displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing
@@ -335,7 +402,7 @@ items:
               - name: Get links to assignments and submissions
                 href: get-links-to-assignments-and-submissions.md
               - name: Update assignment and grade data
-                href: update-assignment-and-grade-data.md               
+                href: update-assignment-and-grade-data.md           
               - name: Download all resources from a set of assignments
                 href: download-resources-from-assignment.md
               - name: Share assignments with an embedded Teams application
@@ -365,7 +432,7 @@ items:
             displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
-              - name: Manage custom security attributes (preview)
+              - name: "Manage custom security attribute assignments (preview)"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
@@ -415,12 +482,14 @@ items:
                   - name: Rules for Azure AD roles
                     href: identity-governance-pim-rules-overview.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Customize and update rules for Azure AD roles
+                  - name: Customize and update rules
                     href: how-to-pim-update-rules.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Assign Azure AD roles with PIM
+                  - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+      - name: Industry data ETL (preview)
+        href: industrydata-concept-overview.md
       - name: Mail
         items:
           - name: Overview
@@ -515,6 +584,8 @@ items:
             href: item-insights-overview.md
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
+          - name: Enable or disable pronouns (preview)
+            href: pronouns-configure-pronouns-availability.md
       - name: Personal contacts
         items:
           - name: Overview
@@ -538,26 +609,28 @@ items:
           - name: Overview
             href: search-concept-overview.md
             displayName: search
-          - name: Search messages
-            href: search-concept-messages.md
-          - name: Search Teams messages
-            href: search-concept-chat-messages.md
-          - name: Search events
-            href: search-concept-events.md
-          - name: Search content in OneDrive and SharePoint
-            href: search-concept-files.md
-          - name: Search connectors
-            href: search-concept-custom-types.md
-          - name: Search people
-            href: search-concept-person.md
           - name: Search acronyms
             href: search-concept-acronym.md
           - name: Search bookmarks
-            href: search-concept-bookmark.md
-          - name: Search qnas
-            href: search-concept-qna.md
+            href: search-concept-bookmark.md 
+          - name: Search connectors
+            href: search-concept-custom-types.md
+          - name: Search content in OneDrive and SharePoint
+            href: search-concept-files.md
           - name: Search with application permissions
             href: search-concept-searchall.md
+          - name: Search multiple entity types
+            href: search-concept-interleaving.md
+          - name: Search Outlook events
+            href: search-concept-events.md
+          - name: Search Outlook messages
+            href: search-concept-messages.md
+          - name: Search people
+            href: search-concept-person.md
+          - name: Search qnas
+            href: search-concept-qna.md
+          - name: Search Teams messages
+            href: search-concept-chat-messages.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
           - name: Manage search results layout
@@ -574,8 +647,6 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
-          - name: Search interleaving results
-            href: search-concept-interleaving.md
       - name: Security
         items:
           - name: Overview
@@ -600,6 +671,8 @@ items:
             href: planner-concept-overview.md
           - name: Business scenarios (preview)
             href: businessscenarios-concept-overview.md
+          - name: Configuring task recurrence (preview)
+            href: planner-task-recurrence-overview.md
           - name: Configuring task rules (preview)
             href: planner-task-rules-overview.md
         displayName: Planner
@@ -646,6 +719,8 @@ items:
                 href: cloud-communications-online-meeting-artifacts.md
               - name: Identify large gallery view participants
                 href: cloud-communications-identifylargegalleryview.md
+              - name: Manage watermarks for sensitive meetings
+                href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
               - name: Subscribe for teams, chats, channels
@@ -658,10 +733,14 @@ items:
                 href: teams-create-group-and-team.md
               - name: List all teams
                 href: teams-list-all-teams.md
-          - name: Licensing and payment models
+          - name: Embed Teams in your app
+            href: teams-embed-within-own-app.md
+          - name: Payment models and licensing requirements
             href: teams-licenses.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Implementation differences in national clouds
+            href: teamwork-national-cloud-differences.md
       - name: To-do tasks
         displayName: Microsoft To Do
         items:
@@ -747,7 +826,7 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training module: Optimize requests with query parameters"
+              - name: "Training: Optimize requests with query parameters"
                 displayName: OData query parameters, OData
                 href: /training/modules/optimize-data-usage
           - name: Batching
@@ -761,57 +840,20 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training module: Optimize network traffic"
+              - name: "Training: Optimize network traffic"
                 href: /training/modules/optimize-network-traffic
                 displayName: throttling
           - name: Change notifications
-            items:
-              - name: Overview
-                href: webhooks.md
-                displayName: change notifications, WebHooks, set up notifications for changes in resource data
-              - name: "Training module: Change notifications tutorial"
-                href: /training/modules/msgraph-changenotifications-trackchanges
-              - name: Missing change notifications
-                href: webhooks-lifecycle.md
-              - name: Notifications with resource data
-                href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways
-                href: change-notifications-delivery.md
-              - name: Change notifications for cloud printing
-                href: universal-print-webhook-notifications.md
-              - name: Change notifications for Microsoft Teams resources
-                items:
-                  - name: Notification types and payloads
-                    href: teams-change-notification-in-microsoft-teams-overview.md
-                    displayName: change notifications, Teams, Microsoft Teams
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
-                  - name: Team and channel membership
-                    href: teams-changenotifications-teamMembership.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
-                  - name: Chat
-                    href: teams-changenotifications-chat.md
-                  - name: Chat membership
-                    href: teams-changenotifications-chatMembership.md
-              - name: Change notifications for Outlook resources
-                href: outlook-change-notifications-overview.md
+            displayName: rich notifications, basic notifications, webhooks, Azure Event Hubs, Azure Event Grids
+            href: webhooks.md
           - name: Change tracking
-            items:
-              - name: Overview
-                href: delta-query-overview.md
-                displayName: Delta query, track changes, change tracking
-              - name: Get changes to events (example)
-                href: delta-query-events.md
-              - name: Get changes to groups (example)
-                href: delta-query-groups.md
-              - name: Get changes to messages (example)
-                href: delta-query-messages.md
-              - name: Get changes to users (example)
-                href: delta-query-users.md
+            displayName: delta query, polling
+            href: delta-query-overview.md
           - name: Add custom data
             displayName: directory extensions, schema extensions, open extensions, extension attributes
             href: extensibility-overview.md
+          - name: Enable metered APIs
+            href: metered-api-setup.md
           - name: Use Graph Explorer
             items:
               - name: Get started
@@ -898,7 +940,7 @@ items:
             href: sdks/large-file-upload.md
           - name: Use beta API
             href: sdks/use-beta.md
-          - name: Use the connectors SDK (preview)
+          - name: Use the connectors SDK
             items:
               - name: Overview
                 href: custom-connector-sdk-overview.md

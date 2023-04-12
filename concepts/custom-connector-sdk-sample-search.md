@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Follow the steps in this article to add Microsoft Graph connectors SDK (preview) data to Microsoft Search."
+description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
 ---
 
 # Surface the data in Microsoft Search

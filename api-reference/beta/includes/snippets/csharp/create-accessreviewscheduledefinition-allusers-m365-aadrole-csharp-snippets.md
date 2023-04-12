@@ -4,55 +4,65 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review employee access to LinkedIn",
 	DescriptionForAdmins = "Review employee access to LinkedIn",
-	Scope = new PrincipalResourceMembershipsScope
+	Scope = new AccessReviewScope
 	{
-		PrincipalScopes = new List<AccessReviewScope>()
+		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
+		AdditionalData = new Dictionary<string, object>
 		{
-			new AccessReviewQueryScope
 			{
-				Query = "/users",
-				QueryType = "MicrosoftGraph"
-			}
+				"principalScopes" , new List<>
+				{
+					new 
+					{
+						OdataType = "#microsoft.graph.accessReviewQueryScope",
+						Query = "/users",
+						QueryType = "MicrosoftGraph",
+					},
+				}
+			},
+			{
+				"resourceScopes" , new List<>
+				{
+					new 
+					{
+						OdataType = "#microsoft.graph.accessReviewQueryScope",
+						Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+						QueryType = "MicrosoftGraph",
+					},
+				}
+			},
 		},
-		ResourceScopes = new List<AccessReviewScope>()
-		{
-			new AccessReviewQueryScope
-			{
-				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
-				QueryType = "MicrosoftGraph"
-			}
-		}
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "./manager",
 			QueryType = "MicrosoftGraph",
-			QueryRoot = "decisions"
-		}
+			QueryRoot = "decisions",
+		},
 	},
-	BackupReviewers = new List<AccessReviewReviewerScope>()
+	BackupReviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
+	FallbackReviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -70,20 +80,18 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			{
 				Type = RecurrencePatternType.AbsoluteMonthly,
 				Interval = 6,
-				DayOfMonth = 0
+				DayOfMonth = 0,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.Numbered,
-				StartDate = new Date(2021,5,5),
-				EndDate = new Date(2022,5,5)
-			}
-		}
-	}
+				StartDate = new Date(DateTime.Parse("2021-05-05")),
+				EndDate = new Date(DateTime.Parse("2022-05-05")),
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

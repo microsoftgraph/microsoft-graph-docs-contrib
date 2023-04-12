@@ -1,5 +1,5 @@
 ---
-title: "Create workflow (lifecycle workflow)"
+title: "Create workflow"
 description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create workflow (lifecycle workflow)
+# Create workflow
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -25,10 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|LifecycleWorkflows.ReadWrite.All|
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-- Global administrator
-- Lifecycle workflows administrator
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
 
 ## HTTP request
 
@@ -76,6 +73,7 @@ The following is an example of a request that creates a workflow with the follow
 + It's a "leaver" workflow that's enabled and schedule to run.
 + It runs for new users that are based in Australia, on their employeeHireDate.
 + Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -151,7 +149,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a FIDO2 authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
+
 
 ## Methods
 |Method|Return type|Description|
@@ -54,7 +56,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
-    "excludeTargets": [
+  "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }

@@ -1,9 +1,10 @@
 ---
-title: "Microsoft Graph services and features"
+title: "Major services and features in Microsoft Graph"
 description: "Learn how Microsoft Graph's network of Microsoft 365 services and features manage, protect, and extract data to support a wide range of scenarios."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
+doc_type: conceptual
 ---
 
 # Major services and features in Microsoft Graph
@@ -12,7 +13,7 @@ Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows
 
 ## Users and groups
 
-At the core of Microsoft Graph are the concepts of the user and group. 
+At the core of Microsoft Graph are the concepts of the user and group.
 
 A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It is the focal point whose identity is protected and access is well-managed. The user's data is what drives businesses. Microsoft Graph services make this data available to businesses in rich contexts, real-time updates, and deep insights, and always only with the appropriate permissions.
 
@@ -20,7 +21,7 @@ A Microsoft 365 _group_ is the fundamental entity that lets users collaborate. I
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure AD and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
+| Users | Azure Active Directory (Azure AD) and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
 |Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | A Microsoft 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps
@@ -59,7 +60,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Calls and online meetings | Microsoft Teams, Skype | Lets apps and services interact with users through various communications-related features; for example, enabling bots to handle calls, integrating online meetings in line of business scenarios, showing users' presence status (preview), and looking up records for calls and online meetings (preview). | [Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork](teams-concept-overview.md#call-or-meet-virtually) |
-| Employee learning (preview) | Viva Learning | Empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms of Microsoft 365 that they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.  | [Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork](teams-concept-overview.md#enable-employee-learning-using-the-collaborative-capabilities-in-teams-preview) |
+| Employee learning | Viva Learning | Empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms of Microsoft 365 that they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.  | [Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork](teams-concept-overview.md#enable-employee-learning-using-the-collaborative-capabilities-in-teams) |
 | Shift management | Microsoft Shifts | Lets managers and frontline workers manage staff scheduling or capture data from workforce management systems to create optimized schedules for a business. | [Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork](teams-concept-overview.md#manage-shifts-and-staff-schedules) |
 | Sites and lists  | SharePoint | Web-based platform for users and Microsoft 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Microsoft 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
@@ -121,6 +122,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](education-concept-overview.md) |
+| Industry data ETL (preview) | Azure Data Lake, Education | A multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that includes support for the education sector, enabling applications to manage and move user and roster data from a student information system (SIS). | [Industry data overview](industrydata-concept-overview.md) |
 
 ## Business applications
 

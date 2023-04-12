@@ -81,7 +81,6 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 
 ---
 
-
 ##### Response
 Here is an example of the response. 
 

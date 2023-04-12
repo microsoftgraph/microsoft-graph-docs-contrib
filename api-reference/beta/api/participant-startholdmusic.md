@@ -1,7 +1,7 @@
 ---
 title: "participant: startHoldMusic"
 description: "Put a participant on hold and play music in the background."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -103,10 +103,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
----
-
 
 ### Response
 

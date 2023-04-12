@@ -37,7 +37,7 @@ $meetingInfo = new MeetingInfo();
 $meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
 
 $additionalData = [
-'organizer' => $meetingInfo = new Organizer();
+	'organizer' => $meetingInfo = new Organizer();
 $	meetingInfo->set@odatatype('#microsoft.graph.identitySet');
 
 $user = new User();
@@ -54,7 +54,7 @@ $meetingInfo->setUser($user);
 
 $meetingInfo->setOrganizer($organizer);
 
-'allowConversationWithoutHost' => true,
+	'allowConversationWithoutHost' => true,
 ];
 $meetingInfo->setAdditionalData($additionalData);
 
@@ -65,7 +65,7 @@ $requestBody->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
 
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

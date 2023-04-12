@@ -16,7 +16,7 @@ $requestBody->setDisplayName('displayName-value');
 
 
 
-$requestResult = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->patch($requestBody);
+$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->patch($requestBody);
 
 
 ```

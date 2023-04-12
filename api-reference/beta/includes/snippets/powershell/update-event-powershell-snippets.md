@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	OriginalStartTimeZone = "originalStartTimeZone-value"
-	OriginalEndTimeZone = "originalEndTimeZone-value"
-	ResponseStatus = @{
-		Response = ""
-		Time = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+	originalStartTimeZone = "originalStartTimeZone-value"
+	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
 	}
-	Recurrence = $null
-	Uid = "iCalUId-value"
-	ReminderMinutesBeforeStart = 99
-	IsOnlineMeeting = $true
-	OnlineMeetingProvider = "teamsForBusiness"
-	IsReminderOn = $true
-	HideAttendees = $false
-	Categories = @(
+	recurrence = $null
+	uid = "iCalUId-value"
+	reminderMinutesBeforeStart = 99
+	isOnlineMeeting = $true
+	onlineMeetingProvider = "teamsForBusiness"
+	isReminderOn = $true
+	hideAttendees = $false
+	categories = @(
 		"Red category"
 	)
 }

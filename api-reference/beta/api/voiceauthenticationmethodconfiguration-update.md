@@ -23,10 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
 
 ## HTTP request
 
@@ -45,9 +42,13 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [voiceAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-For the list of properties, see [voiceAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md).
+|Property|Type|Description|
+|:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
+|isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`.|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.voiceAuthenticationMethodConfiguration` must be included in the body.
 
@@ -101,8 +102,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response

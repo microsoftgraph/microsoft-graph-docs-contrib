@@ -24,7 +24,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 ## Why add custom data to Microsoft Graph?
 
 - As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
-- Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
+- Alternatively, you might want to retain your app's existing user profile store, and add an app-specific identifier to the **user** resource.
 - As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
 
 ## Custom data options in Microsoft Graph
@@ -46,7 +46,7 @@ You can use the 15 extension attributes to store String values on **user** or **
 
 ##### Add or update data in extension attributes
 
-The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
+The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute13** through an update operation with a PATCH method.
 
 
 # [HTTP](#tab/http)
@@ -91,7 +91,6 @@ PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0
 
 ---
 
-
 The request returns a `204 No Content` response object.
 
 ##### Read the extension attributes
@@ -133,7 +132,6 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExte
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ###### Response
 
@@ -239,7 +237,6 @@ POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69
 
 ---
 
-
 ###### Response
 
 A directory extension property named `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` is created with an extension name that follows the following naming convention: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
@@ -319,7 +316,6 @@ POST https://graph.microsoft.com/v1.0/users
 
 ---
 
-
 The request returns a `201 Created` response code and a [user](/graph/api/resources/user) object in the response body.
 
 ##### Retrieve a directory extension
@@ -363,7 +359,6 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -542,7 +537,6 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
 
 ---
 
-
 ###### Response
 
 <!-- {
@@ -632,7 +626,6 @@ POST https://graph.microsoft.com/beta/users
 
 ---
 
-
 The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
 
 ##### Update or delete a schema extension property
@@ -684,7 +677,6 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 
 ---
 
-
 The request returns a `204 No Content` response object.
 
 ##### Retrieve the schema extension property
@@ -728,7 +720,6 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ###### Response
 
@@ -831,7 +822,6 @@ POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The request returns a `201 Created` response code and an [openTypeExtension](/graph/api/resources/opentypeextension) object in the response body.
 

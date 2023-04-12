@@ -209,7 +209,6 @@ ms.topic: include
 | DeviceManagementServiceConfig.Read.All                  | Application | 06a5fe6d-c49d-46a7-b082-56b1b14103c7 |
 | DeviceManagementServiceConfig.ReadWrite.All             | Delegated   | 662ed50a-ac44-4eef-ad86-62eed9be2a29 |
 | DeviceManagementServiceConfig.ReadWrite.All             | Application | 5ac13192-7ace-4fcf-b828-1a26f28068ee |
-| DigitalHealthSettings.Read                              | Delegated   | c3ba73cd-1333-4ac0-9eb6-da00cf298dad |
 | Directory.AccessAsUser.All                              | Delegated   | 0e263e50-5827-48a4-b97c-d940288653c7 |
 | Directory.Read.All                                      | Delegated   | 06da0dbc-49e2-44d2-8312-53f166ab848a |
 | Directory.Read.All                                      | Application | 7ab1d382-f21e-4acd-a863-ba3e13f7da61 |
@@ -551,6 +550,10 @@ ms.topic: include
 | SecurityAlert.Read.All                                  | Application | 472e4a4d-bb4a-4026-98d1-0b0d74cb74a5 |
 | SecurityAlert.ReadWrite.All                             | Delegated   | 471f2a7f-2a42-4d45-a2bf-594d0838070d |
 | SecurityAlert.ReadWrite.All                             | Application | ed4fca05-be46-441f-9803-1873825f8fdb |
+| SecurityAnalyzedMessage.Read.All                        | Delegated   | 53e6783e-b127-4a35-ab3a-6a52d80a9077 |
+| SecurityAnalyzedMessage.Read.All                        | Application | b48f7ac2-044d-4281-b02f-75db744d6f5f |
+| SecurityAnalyzedMessage.ReadWrite.All                   | Delegated   | 48eb8c83-6e58-46e7-a6d3-8805822f5940 |
+| SecurityAnalyzedMessage.ReadWrite.All                   | Application | 04c55753-2244-4c25-87fc-704ab82a4f69 |
 | SecurityEvents.Read.All                                 | Delegated   | 64733abd-851e-478a-bffb-e47a14b18235 |
 | SecurityEvents.Read.All                                 | Application | bf394140-e372-4bf9-a898-299cfc7564e5 |
 | SecurityEvents.ReadWrite.All                            | Delegated   | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc |
@@ -703,6 +706,8 @@ ms.topic: include
 | TrustFrameworkKeySet.ReadWrite.All                      | Delegated   | 39244520-1e7d-4b4a-aee0-57c65826e427 |
 | TrustFrameworkKeySet.ReadWrite.All                      | Application | 4a771c9a-1cf2-4609-b88e-3d3e02d539cd |
 | UnifiedGroupMember.Read.AsGuest                         | Delegated   | 73e75199-7c3e-41bb-9357-167164dbb415 |
+| User.EnableDisableAccount.All                           | Delegated   | f92e74e7-2563-467f-9dd0-902688cb5863 |
+| User.EnableDisableAccount.All                           | Application | 3011c876-62b7-4ada-afa2-506cbbecc68c |
 | User.Export.All                                         | Delegated   | 405a51b5-8d8d-430b-9842-8be4b0e9f324 |
 | User.Export.All                                         | Application | 405a51b5-8d8d-430b-9842-8be4b0e9f324 |
 | User.Invite.All                                         | Delegated   | 63dd7cd9-b489-4adf-a28c-ac38b9a0f962 |
@@ -713,7 +718,6 @@ ms.topic: include
 | User.Read.All                                           | Delegated   | a154be20-db9c-4678-8ab7-66f6cc099a59 |
 | User.Read.All                                           | Application | df021288-bdef-4463-88db-98f22de89214 |
 | User.ReadBasic.All                                      | Delegated   | b340eb25-3456-403f-be2f-af7a0d370277 |
-| User.ReadBasic.All                                      | Application | 97235f07-e226-4f63-ace3-39588e11d3a1 |
 | User.ReadWrite                                          | Delegated   | b4e74841-8e56-480b-be8b-910348b18b4c |
 | User.ReadWrite.All                                      | Delegated   | 204e0828-b5ca-4ad8-b9f3-f32a958e7cc4 |
 | User.ReadWrite.All                                      | Application | 741f803b-c850-494e-b5df-cde7c675a1ca |

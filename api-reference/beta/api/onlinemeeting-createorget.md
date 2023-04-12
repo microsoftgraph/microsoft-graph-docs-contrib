@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting: createOrGet"
 description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the onlineMeeting object with that external ID."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -140,7 +140,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
@@ -273,7 +272,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

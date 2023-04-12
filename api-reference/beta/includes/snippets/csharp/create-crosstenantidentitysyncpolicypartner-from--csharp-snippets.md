@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var crossTenantIdentitySyncPolicyPartner = new CrossTenantIdentitySyncPolicyPartner
+var requestBody = new Microsoft.Graph.Beta.Policies.CrossTenantAccessPolicy.Partners.Item.IdentitySynchronization.IdentitySynchronizationPutRequestBody
 {
-	DisplayName = "Fabrikam",
-	UserSyncInbound = new CrossTenantUserSyncInbound
+	AdditionalData = new Dictionary<string, object>
 	{
-		IsSyncAllowed = true
-	}
+		{
+			"displayName" , "Fabrikam"
+		},
+		{
+			"userSyncInbound" , new 
+			{
+				IsSyncAllowed = true,
+			}
+		},
+	},
 };
+await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].IdentitySynchronization.PutAsync(requestBody);
 
-await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-id}"].IdentitySynchronization
-	.Request()
-	.PutAsync(crossTenantIdentitySyncPolicyPartner);
 
 ```

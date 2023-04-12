@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	AnswerInputType = "radioButton"
-	AnswerOptions = @(
+	answerInputType = "radioButton"
+	answerOptions = @(
 		"Software Engineer"
 		"Software Development Manager"
 		"Product Manager"

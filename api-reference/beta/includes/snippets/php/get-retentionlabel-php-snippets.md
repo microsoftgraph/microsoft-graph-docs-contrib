@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->get();
+$result = $graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->get();
 
 
 ```

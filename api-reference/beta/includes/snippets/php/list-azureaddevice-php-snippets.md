@@ -9,15 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UpdatableAssetsRequestBuilderGetRequestConfiguration();
 
-$queryParameters = new UpdatableAssetsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "isof('microsoft.graph.windowsUpdates.azureADDevice')";
-
-$requestConfiguration->queryParameters = $queryParameters;
-
-
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatableAssets()->get($requestConfiguration);
+$result = $graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->get();
 
 
 ```

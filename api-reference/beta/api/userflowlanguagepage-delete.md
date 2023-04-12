@@ -66,7 +66,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_userflowlanguagepage",
+  "name": "delete_userflowlanguagepage_beta_e1",
   "sampleKeys": ["B2C_1_Customer", "en", "phonefactor"]
 }
 -->
@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
