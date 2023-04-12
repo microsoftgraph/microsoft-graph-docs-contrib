@@ -19,7 +19,7 @@ $assignment->setId('a6bb6942-3ae1-4259-9908-0133aaee9377');
 $requestBody->setAssignment($assignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
 
 
 ```

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.ChangeNotifications
 
 $params = @{
-	ChangeType = "created"
-	NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient"
-	Resource = "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'"
-	ExpirationDateTime = [System.DateTime]::Parse("2022-01-01T21:42:18.2257768+00:00")
-	ClientState = "secretClientValue"
-	IncludeResourceData = $true
-	EncryptionCertificate = "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA=="
-	EncryptionCertificateId = "testCertificateId"
+	changeType = "created"
+	notificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient"
+	resource = "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'"
+	expirationDateTime = [System.DateTime]::Parse("2022-01-01T21:42:18.2257768+00:00")
+	clientState = "secretClientValue"
+	includeResourceData = $true
+	encryptionCertificate = "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA=="
+	encryptionCertificateId = "testCertificateId"
 }
 
 New-MgSubscription -BodyParameter $params

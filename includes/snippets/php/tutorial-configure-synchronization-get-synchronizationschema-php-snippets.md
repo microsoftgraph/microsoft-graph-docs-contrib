@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SchemaRequestBuilderGetRequestConfiguration();
-
 $headers = [
-	'Authorization' => 'Bearer {Token}',
-];
-
+		'Authorization' => 'Bearer {Token}',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->schema()->get($requestConfiguration);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->schema()->get($requestConfiguration);
 
 
 ```

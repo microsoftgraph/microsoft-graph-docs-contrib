@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	DisplayName = "Innocenty Popov"
-	First = "Innocenty"
-	Initials = "IP"
-	Last = "Popov"
-	LanguageTag = "en-US"
-	Maiden = $null
+	displayName = "Innocenty Popov"
+	first = "Innocenty"
+	initials = "IP"
+	last = "Popov"
+	languageTag = "en-US"
+	maiden = $null
 }
 
 # A UPN can also be used as -UserId.

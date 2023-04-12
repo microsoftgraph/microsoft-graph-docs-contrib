@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new OnlineMeetingsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new OnlineMeetingsRequestBuilderGetQueryParameters();
+$queryParameters = OnlineMeetingsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "joinMeetingIdSettings/joinMeetingId eq '1234567890'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetings()->get($requestConfiguration);
+$result = $graphServiceClient->me()->onlineMeetings()->get($requestConfiguration);
 
 
 ```

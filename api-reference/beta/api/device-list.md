@@ -99,27 +99,27 @@ GET https://graph.microsoft.com/beta/devices
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-devices-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-devices-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-devices-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-devices-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-devices-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,27 +203,27 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-select-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-select-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-select-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-select-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-devices-select-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-devices-select-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-devices-select-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-select-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-select-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-select-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-devices-select-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-devices-select-e3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -286,27 +286,27 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-startswith-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-startswith-e4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-startswith-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-startswith-e4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-devices-startswith-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-devices-startswith-e4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-devices-startswith-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-devices-startswith-e4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-devices-startswith-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-devices-startswith-e4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-devices-startswith-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-devices-startswith-e4-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -423,27 +423,27 @@ ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-by-extensionattribute-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-by-extensionattribute-e6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-by-extensionattribute-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-by-extensionattribute-e6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-devices-by-extensionattribute-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-devices-by-extensionattribute-e6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-devices-by-extensionattribute-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-by-extensionattribute-e6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-by-extensionattribute-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-by-extensionattribute-e6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-devices-by-extensionattribute-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-devices-by-extensionattribute-e6-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -18,9 +18,9 @@ $data = new CustomExtensionData();
 $data->set@odatatype('microsoft.graph.accessPackageAssignmentRequestCallbackData');
 
 $additionalData = [
-'stage' => 'assignmentRequestCreated', 
-'customExtensionStageInstanceId' => '957d0c50-466b-4840-bb5b-c92cea7141ff', 
-'customExtensionStageInstanceDetail' => 'This user is all verified', 
+		'stage' => 'assignmentRequestCreated', 
+		'customExtensionStageInstanceId' => '957d0c50-466b-4840-bb5b-c92cea7141ff', 
+		'customExtensionStageInstanceDetail' => 'This user is all verified', 
 ];
 $data->setAdditionalData($additionalData);
 

@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsAppInstallationRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TeamsAppInstallationRequestBuilderGetQueryParameters();
+$queryParameters = TeamsAppInstallationRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["consentedPermissionSet","id"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->get($requestConfiguration);
+$result = $graphServiceClient->chatsById('chat-id')->installedAppsById('teamsAppInstallation-id')->get($requestConfiguration);
 
 
 ```
