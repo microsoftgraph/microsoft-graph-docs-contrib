@@ -18,7 +18,7 @@ $requestBody->setClassification(new PermissionClassificationType('low'));
 
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->delegatedPermissionClassifications()->post($requestBody);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->delegatedPermissionClassifications()->post($requestBody);
 
 
 ```

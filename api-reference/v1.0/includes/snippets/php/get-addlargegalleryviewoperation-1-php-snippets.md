@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->operationsById('commsOperation-id')->get();
+$result = $graphServiceClient->communications()->callsById('call-id')->operationsById('commsOperation-id')->get();
 
 
 ```

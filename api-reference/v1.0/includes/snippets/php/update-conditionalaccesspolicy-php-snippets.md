@@ -20,7 +20,7 @@ $conditions->setRiskLevel(new RiskLevel('low'));
 $requestBody->setConditions($conditions);
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->policiesById('conditionalAccessPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->policiesById('conditionalAccessPolicy-id')->patch($requestBody);
 
 
 ```

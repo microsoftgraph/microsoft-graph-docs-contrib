@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Topic = "Take your wellness days and rest"
-	Threads = @(
+	topic = "Take your wellness days and rest"
+	threads = @(
 		@{
-			Posts = @(
+			posts = @(
 				@{
-					Body = @{
-						ContentType = "html"
-						Content = "Contoso cares about you: Rest and Recharge"
+					body = @{
+						contentType = "html"
+						content = "Contoso cares about you: Rest and Recharge"
 					}
-					NewParticipants = @(
+					newParticipants = @(
 						@{
-							EmailAddress = @{
-								Name = "Adele Vance"
-								Address = "AdeleV@contoso.onmicrosoft.com"
+							emailAddress = @{
+								name = "Adele Vance"
+								address = "AdeleV@contoso.onmicrosoft.com"
 							}
 						}
 					)

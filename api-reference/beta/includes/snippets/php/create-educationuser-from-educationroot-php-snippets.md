@@ -64,7 +64,7 @@ $residenceAddress->setStreet('12345 Main St.');
 $requestBody->setResidenceAddress($residenceAddress);
 
 
-$requestResult = $graphServiceClient->education()->users()->post($requestBody);
+$result = $graphServiceClient->education()->users()->post($requestBody);
 
 
 ```

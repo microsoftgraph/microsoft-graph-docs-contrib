@@ -14,7 +14,7 @@ $requestBody->setAction(new DelegatedAdminRelationshipRequestAction('lockforappr
 
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->requests()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->requests()->post($requestBody);
 
 
 ```
