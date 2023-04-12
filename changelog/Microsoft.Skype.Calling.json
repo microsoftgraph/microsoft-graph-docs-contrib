@@ -2858,6 +2858,22 @@
       "CreatedDateTime": "2022-12-16T00:17:48.4795689Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": {
+        "Id": "5a2264de-477e-43eb-a95e-4fe5bd0f7170",
+        "ApiChange": "Permission",
+        "ChangedApiName": "Presence.ReadWrite.All",
+        "ChangeType": "Addition",
+        "Description": "Added support for the application permission of `Presence.ReadWrite.All` to the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-beta) method of [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta).",
+        "Target": "presence-setstatusmessage"
+      },
+      "Id": "7d081787-a4a6-44e8-a239-52c7782854f1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T00:17:48.4795689Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
