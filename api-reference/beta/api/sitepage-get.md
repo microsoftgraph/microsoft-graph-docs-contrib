@@ -235,7 +235,7 @@ Content-type: application/json
 
 ### Example 3: Get a page with page content
 
-To access the page with page content, append `?expand=canvasLayout` to query string:
+To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
 GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
