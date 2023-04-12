@@ -22,7 +22,7 @@ $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversation
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'7640023f-fe43-gv3f-9gg4-84a9efe4acd6\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'7640023f-fe43-gv3f-9gg4-84a9efe4acd6\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
@@ -34,7 +34,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
 
 
 ```

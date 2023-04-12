@@ -16,7 +16,7 @@ $dataSource = new DataSource();
 $dataSource->set@odatatype('microsoft.graph.ediscovery.userSource');
 
 $additionalData = [
-'email' => 'adelev@contoso.com', 
+		'email' => 'adelev@contoso.com', 
 ];
 $dataSource->setAdditionalData($additionalData);
 
@@ -25,7 +25,7 @@ $dataSource->setAdditionalData($additionalData);
 $requestBody->setDataSource($dataSource);
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

@@ -26,7 +26,7 @@ $passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
 
 $requestBody->setPasswordProfile($passwordProfile);
 $additionalData = [
-'extkmpdyld2_graphLearnCourses' => $requestBody = new Extkmpdyld2_graphLearnCourses();
+		'extkmpdyld2_graphLearnCourses' => $requestBody = new Extkmpdyld2_graphLearnCourses();
 		$requestBody->setCourseId(100);
 
 $		requestBody->setCourseName('Explore Microsoft Graph');
@@ -42,7 +42,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->users()->post($requestBody);
+$result = $graphServiceClient->users()->post($requestBody);
 
 
 ```

@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var userRegistrationMethodSummary = await graphClient.Reports.AuthenticationMethods
-	.UsersRegisteredByMethod(IncludedUserTypes.All,IncludedUserRoles.All)
-	.Request()
-	.GetAsync();
+var result = await graphClient.Reports.AuthenticationMethods.UsersRegisteredByMethodWithIncludedUserTypesWithIncludedUserRoles("{includedUserTypes}","{includedUserRoles}").GetAsync();
+
 
 ```

@@ -27,9 +27,9 @@ $scopesAccessReviewScope1 = new AccessReviewScope();
 $scopesAccessReviewScope1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
 
 $additionalData = [
-'queryType' => 'MicrosoftGraph', 
-'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'accessPackageAssignments\')', 
-'queryRoot' => 	null,
+	'queryType' => 'MicrosoftGraph', 
+	'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'accessPackageAssignments\')', 
+	'queryRoot' => 	null,
 ];
 $scopesAccessReviewScope1->setAdditionalData($additionalData);
 
@@ -40,9 +40,9 @@ $scopesAccessReviewScope2 = new AccessReviewScope();
 $scopesAccessReviewScope2->set@odatatype('#microsoft.graph.accessReviewQueryScope');
 
 $additionalData = [
-'queryType' => 'MicrosoftGraph', 
-'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'/groups\')', 
-'queryRoot' => 	null,
+	'queryType' => 'MicrosoftGraph', 
+	'query' => '/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, \'/groups\')', 
+	'queryRoot' => 	null,
 ];
 $scopesAccessReviewScope2->setAdditionalData($additionalData);
 
@@ -54,7 +54,7 @@ $requestBody->setScopes($scopesArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->historyDefinitions()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->historyDefinitions()->post($requestBody);
 
 
 ```

@@ -32,7 +32,7 @@ $answersAccessPackageAnswer1AnsweredQuestion->setId('A714EC6F-4EE0-4614-BD81-37E
 
 $answersAccessPackageAnswer1->setAnsweredQuestion($answersAccessPackageAnswer1AnsweredQuestion);
 $additionalData = [
-'value' => 'Arizona', 
+		'value' => 'Arizona', 
 ];
 $answersAccessPackageAnswer1->setAdditionalData($additionalData);
 
@@ -50,7 +50,7 @@ $answersAccessPackageAnswer2AnsweredQuestion->setId('AA615EE9-D9D8-4C03-BE91-BEE
 
 $answersAccessPackageAnswer2->setAnsweredQuestion($answersAccessPackageAnswer2AnsweredQuestion);
 $additionalData = [
-'value' => 'Need access to marketing campaign material', 
+		'value' => 'Need access to marketing campaign material', 
 ];
 $answersAccessPackageAnswer2->setAdditionalData($additionalData);
 
@@ -62,7 +62,7 @@ $requestBody->setAnswers($answersArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
 
 
 ```

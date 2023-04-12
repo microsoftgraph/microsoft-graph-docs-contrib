@@ -7,33 +7,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Subject = $null
+	Subject = "Announcement Subheading"
 	Body = @{
-		ContentType = "html"
-		Content = "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
+		ContentType = "text"
+		Content = "<attachment id="d7ddbf876ae340c3a03bada395ec7da7"></attachment>Announcement text"
 	}
 	Attachments = @(
 		@{
-			Id = "74d20c7f34aa4a7fb74e2b30004247c5"
-			ContentType = "application/vnd.microsoft.card.thumbnail"
+			Id = "d7ddbf876ae340c3a03bada395ec7da7"
+			ContentType = "application/vnd.microsoft.teams.messaging-announcementBanner"
 			ContentUrl = $null
-			Content = "{
-  "title": "This is an example of posting a card",
-  "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
-  "buttons": [
-    {
-      "type": "messageBack",
-      "title": "Login to FakeBot",
-      "text": "login",
-      "displayText": "login",
-      "value": "login"
-    }
-  ]
-}"
+			Content = "{"title":"Announcement heading","cardImageType":"uploadedImage","cardImageDetails":{"uploadedImageDetail":{"originalImage":{"source":"../hostedContents/1/$value","width":1379,"height":268,"croppedWidth":918.0,"croppedHeight":178.4075416968818,"leftMargin":0.0,"topMargin":90.7962291515591,"imageContentType":"image/png"},"croppedImage":{"source":"../hostedContents/2/$value"}}}}"
 			Name = $null
 			ThumbnailUrl = $null
-			TeamsAppId = "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
+		}
+	)
+	HostedContents = @(
+		@{
+			"@microsoft.graph.temporaryId" = "1"
+			ContentBytes = [System.Text.Encoding]::ASCII.GetBytes("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4")
+			ContentType = "image/png"
+		}
+		@{
+			"@microsoft.graph.temporaryId" = "2"
+			ContentBytes = [System.Text.Encoding]::ASCII.GetBytes("iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4")
+			ContentType = "image/png"
 		}
 	)
 }

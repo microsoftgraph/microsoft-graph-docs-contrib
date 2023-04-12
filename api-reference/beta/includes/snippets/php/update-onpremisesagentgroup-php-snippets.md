@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Group New Name');
 
 
 
-$requestResult = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->agentGroupsById('onPremisesAgentGroup-id')->patch($requestBody);
+$result = $graphServiceClient->onPremisesPublishingProfilesById('onPremisesPublishingProfile-id')->agentGroupsById('onPremisesAgentGroup-id')->patch($requestBody);
 
 
 ```

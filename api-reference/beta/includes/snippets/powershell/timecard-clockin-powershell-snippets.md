@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	AtAprovedLocation = $true
-	Notes = @{
-		ContentType = "text"
-		Content = "clock in notes"
+	atAprovedLocation = $true
+	notes = @{
+		contentType = "text"
+		content = "clock in notes"
 	}
 }
 

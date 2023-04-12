@@ -4,40 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",
 	DescriptionForAdmins = "",
 	DescriptionForReviewers = "",
 	Scope = new AccessReviewScope
 	{
-		Query = "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-		QueryType = "MicrosoftGraph"
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
 	InstanceEnumerationScope = new AccessReviewScope
 	{
-		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
-		QueryType = "MicrosoftGraph"
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "./owners",
 			QueryType = "MicrosoftGraph",
-			QueryRoot = null
-		}
+			QueryRoot = null,
+		},
 	},
-	FallbackReviewers = new List<AccessReviewReviewerScope>()
+	FallbackReviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",
 			QueryType = "MicrosoftGraph",
-			QueryRoot = null
-		}
+			QueryRoot = null,
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -57,32 +71,31 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 				Interval = 3,
 				Month = 0,
 				DayOfMonth = 0,
-				DaysOfWeek = new List<DayOfWeek>()
+				DaysOfWeek = new List<DayOfWeek>
 				{
 				},
-				FirstDayOfWeek = DayOfWeek.Sunday,
-				Index = WeekIndex.First
+				FirstDayOfWeek = DayOfWeekObject.Sunday,
+				Index = WeekIndex.First,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.Numbered,
 				NumberOfOccurrences = 0,
 				RecurrenceTimeZone = null,
-				StartDate = new Date(2021,2,10),
-				EndDate = new Date(2022,12,21)
-			}
+				StartDate = new Date(DateTime.Parse("2021-02-10")),
+				EndDate = new Date(DateTime.Parse("2022-12-21")),
+			},
 		},
-		ApplyActions = new List<AccessReviewApplyAction>()
+		ApplyActions = new List<AccessReviewApplyAction>
 		{
-			new RemoveAccessApplyAction
+			new AccessReviewApplyAction
 			{
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.removeAccessApplyAction",
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

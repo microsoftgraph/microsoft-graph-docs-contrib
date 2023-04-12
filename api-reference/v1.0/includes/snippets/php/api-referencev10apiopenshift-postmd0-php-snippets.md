@@ -64,7 +64,7 @@ $lastModifiedByUser->setDisplayName('JohnDoe');
 
 $lastModifiedBy->setUser($lastModifiedByUser);
 $additionalData = [
-'conversation' => 	null,
+	'conversation' => 	null,
 ];
 $lastModifiedBy->setAdditionalData($additionalData);
 
@@ -73,15 +73,13 @@ $lastModifiedBy->setAdditionalData($additionalData);
 $requestBody->setLastModifiedBy($lastModifiedBy);
 
 $requestConfiguration = new OpenShiftsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Authorization' => 'Bearer {token}',
+	'Authorization' => 'Bearer {token}',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->openShifts()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->openShifts()->post($requestBody, $requestConfiguration);
 
 
 ```

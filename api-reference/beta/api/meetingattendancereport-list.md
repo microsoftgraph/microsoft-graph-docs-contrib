@@ -1,7 +1,7 @@
 ---
 title: "List meetingAttendanceReports"
 description: "Get a list of attendance reports for an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

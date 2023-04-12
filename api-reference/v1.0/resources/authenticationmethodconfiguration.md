@@ -16,10 +16,16 @@ The following authentication methods are derived from the **authenticationMethod
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
 + [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
++ [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
++ [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The policy name.|
 |state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
 
@@ -39,6 +45,11 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```

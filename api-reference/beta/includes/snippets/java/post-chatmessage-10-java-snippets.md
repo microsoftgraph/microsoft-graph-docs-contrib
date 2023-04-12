@@ -7,24 +7,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatMessage chatMessage = new ChatMessage();
-chatMessage.subject = null;
+chatMessage.subject = "Announcement Subheading";
 ItemBody body = new ItemBody();
-body.contentType = BodyType.HTML;
-body.content = "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>";
+body.contentType = BodyType.TEXT;
+body.content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text";
 chatMessage.body = body;
 LinkedList<ChatMessageAttachment> attachmentsList = new LinkedList<ChatMessageAttachment>();
 ChatMessageAttachment attachments = new ChatMessageAttachment();
-attachments.id = "74d20c7f34aa4a7fb74e2b30004247c5";
-attachments.contentType = "application/vnd.microsoft.card.thumbnail";
+attachments.id = "d7ddbf876ae340c3a03bada395ec7da7";
+attachments.contentType = "application/vnd.microsoft.teams.messaging-announcementBanner";
 attachments.contentUrl = null;
-attachments.content = "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}";
+attachments.content = "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}";
 attachments.name = null;
 attachments.thumbnailUrl = null;
-attachments.teamsAppId = "881b8843-fd91-49e5-9ac2-47ec497ffbe5";
 attachmentsList.add(attachments);
 chatMessage.attachments = attachmentsList;
+LinkedList<ChatMessageHostedContent> hostedContentsList = new LinkedList<ChatMessageHostedContent>();
+ChatMessageHostedContent hostedContents = new ChatMessageHostedContent();
+hostedContents.additionalDataManager().put("@microsoft.graph.temporaryId", new JsonPrimitive("1"));
+hostedContents.contentBytes = Base64.getDecoder().decode("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4");
+hostedContents.contentType = "image/png";
+hostedContentsList.add(hostedContents);
+ChatMessageHostedContent hostedContents1 = new ChatMessageHostedContent();
+hostedContents1.additionalDataManager().put("@microsoft.graph.temporaryId", new JsonPrimitive("2"));
+hostedContents1.contentBytes = Base64.getDecoder().decode("iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4");
+hostedContents1.contentType = "image/png";
+hostedContentsList.add(hostedContents1);
+ChatMessageHostedContentCollectionResponse chatMessageHostedContentCollectionResponse = new ChatMessageHostedContentCollectionResponse();
+chatMessageHostedContentCollectionResponse.value = hostedContentsList;
+ChatMessageHostedContentCollectionPage chatMessageHostedContentCollectionPage = new ChatMessageHostedContentCollectionPage(chatMessageHostedContentCollectionResponse, null);
+chatMessage.hostedContents = chatMessageHostedContentCollectionPage;
 
-graphClient.teams("fbe2bf47-16c8-47cf-b4a5-4b9b187c508b").channels("19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2").messages()
+graphClient.teams("5c884e2f-83f8-4cff-af8e-0177f260b9f8").channels("19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2").messages()
 	.buildRequest()
 	.post(chatMessage);
 

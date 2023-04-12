@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
-	Email = "admin@fabrikam.com"
-	SchedulingPolicy = @{
-		TimeSlotInterval = "PT60M"
-		MinimumLeadTime = "P1D"
-		MaximumAdvance = "P30D"
-		SendConfirmationsToOwner = $true
-		AllowStaffSelection = $true
+	email = "admin@fabrikam.com"
+	schedulingPolicy = @{
+		timeSlotInterval = "PT60M"
+		minimumLeadTime = "P1D"
+		maximumAdvance = "P30D"
+		sendConfirmationsToOwner = $true
+		allowStaffSelection = $true
 	}
 }
 

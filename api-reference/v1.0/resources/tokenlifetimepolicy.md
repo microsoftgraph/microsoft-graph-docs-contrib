@@ -29,6 +29,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Update a tokenLifetimePolicy object. |
 | [Delete tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Delete a tokenLifetimePolicy object. |
 | [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | None | Assign a tokenLifetimePolicy object to an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection | List the tokenLifetimePolicy objects that are assigned to an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
+| [Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | None | Remove a tokenLifetimePolicy object from an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
@@ -40,8 +43,8 @@ Inherits from [stsPolicy](stsPolicy.md).
 |id|String| Unique identifier for this policy. Read-only.|
 |isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
 
-
 ### Properties of a token lifetime policy definition
+
 The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. An example is shown below in JSON format:
 
 <!-- {

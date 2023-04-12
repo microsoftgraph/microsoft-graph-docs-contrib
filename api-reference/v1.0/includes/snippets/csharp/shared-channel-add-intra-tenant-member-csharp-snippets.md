@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conversationMember = new AadUserConversationMember
+var requestBody = new ConversationMember
 {
-	Roles = new List<String>()
+	OdataType = "#microsoft.graph.aadUserConversationMember",
+	Roles = new List<String>
 	{
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"user@odata.bind", "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"}
-	}
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members
-	.Request()
-	.AddAsync(conversationMember);
 
 ```
