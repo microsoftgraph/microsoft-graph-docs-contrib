@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: power on"
+title: "cloudPC: powerOn"
 description: "Power on specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Power on a Frontline Cloud PC.  This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
+Power on a Frontline Cloud PC. This action supports [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
-After powering on a Frontline CloudPC, it will be allocated to a user, and licenses will be assigned immediately. Only IT admin users can perform this action. 
+After a Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately. Only IT admin users can perform this action. 
 
 ## Permissions
 
