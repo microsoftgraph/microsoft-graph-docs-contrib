@@ -61,6 +61,14 @@ Create a role assignment for the entitlement management provider:
 POST /roleManagement/entitlementManagement/roleAssignments
 ```
 
+Create a role assignment for the Exchange Online provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/exchange/roleAssignments
+```
+
 
 ## Request headers
 
@@ -71,6 +79,11 @@ POST /roleManagement/entitlementManagement/roleAssignments
 ## Request body
 
 In the request body, supply a JSON representation of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD, such as **directoryScopeId**, or an application-specific scope, such as **appScopeId**. Examples of Azure AD scopes are tenant ("/"), administrative unit, attribute set, or application. Entitlement management uses tenant ("/") and access package catalog scopes. For more information, see [appScope](../resources/appscope.md).
+
+For Exchange Online provider, the `directoryScopeId` in the request body support following formats:
++ `/`: Tenant wide scope
++ `/Users/{ObjectId of user}`: scope the role assignment to a specific user
++ `/AdministrativeUnits/{ObjectId of AU}`: scope the role assignment to an Administrative Unit
 
 ## Response
 
@@ -390,7 +403,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignment3_from_rbacapplication"
+  "name": "create_unifiedroleassignment5_from_rbacapplication"
 }-->
 
 ```http
@@ -408,8 +421,6 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

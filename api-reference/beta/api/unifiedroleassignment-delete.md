@@ -61,6 +61,14 @@ Remove a role assignment from the entitlement management provider:
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
+Remove a role assignment from the Exchange Online provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/exchange/roleAssignments/{id}
+```
+
 
 ## Request headers
 
@@ -118,6 +126,35 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## Example 2: Delete role assignment from Exchange Online Provider
+
+### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_exchange_unifiedroleassignment",
+  "sampleKeys": ["e664cde0-fbdf-4b1e-bcb2-d134ef32194d"]
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments/e664cde0-fbdf-4b1e-bcb2-d134ef32194d
+```
 
 ### Response
 

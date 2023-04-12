@@ -94,6 +94,13 @@ Get a role definition for the entitlement management provider:
 GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
+Get a role definition for the Exchange Online provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/exchange/roleDefinitions/{id}
+```
+
 ## Optional query parameters
 
 This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -624,6 +631,55 @@ Content-type: application/json
             "allowedResourceActions": [
                 "microsoft.entitlementManagement/AccessPackageCatalog/Create"
             ]
+        }
+    ]
+}
+```
+
+## Example 6: Get the definition of a built-in role for the Exchange Online provider
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_exchange_role_unifiedroledefinition",
+  "sampleKeys": ["7224da60-d8e2-4f45-9380-8e4fda64e133"]
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/exchange/roleDefinitions/7224da60-d8e2-4f45-9380-8e4fda64e133
+```
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/exchange/roleDefinitions/$entity",
+    "id": "7224da60-d8e2-4f45-9380-8e4fda64e133",
+    "description": "This role enables administrators to manage address lists, global address lists, and offline address lists in an organization.",
+    "displayName": "Address Lists",
+    "isEnabled": true,
+    "version": "0.12 (14.0.451.0)",
+    "isBuiltIn": true,
+    "templateId": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "(Microsoft.Exchange.Management.PowerShell.E2010) Get-AddressBookPolicy -ErrorAction -ErrorVariable -Identity -OutBuffer -OutVariable -WarningAction -WarningVariable"
+            ],
+            "excludedResourceActions": [],
+            "condition": null
         }
     ]
 }
