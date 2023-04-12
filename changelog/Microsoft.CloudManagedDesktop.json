@@ -3047,8 +3047,8 @@
             "CreatedDateTime": "2022-11-08T10:52:16.0013428Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
-          },
-          {
+        },
+        {
             "ChangeList": [
               {
                 "Id": "90d99702-fe6e-44c7-a45a-a2ad1442bd22",
@@ -3065,6 +3065,6 @@
             "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
-          }
+        }
     ]
 }
