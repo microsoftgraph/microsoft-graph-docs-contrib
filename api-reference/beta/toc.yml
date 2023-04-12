@@ -17076,7 +17076,7 @@ items:
             - name: Get Virtual appointment join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
           - name: Virtual appointment (deprecated)
-              href: resources/virtualappointment.md (deprecated)
+              href: resources/virtualappointment.md
               items:
             - name: Create
               href: api/virtualappointment-put.md
