@@ -35,7 +35,7 @@ $requestBody->setLinkedEligibleRoleAssignmentId('e327f4be-42a0-47a2-8579-0a39b02
 
 
 
-$requestResult = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

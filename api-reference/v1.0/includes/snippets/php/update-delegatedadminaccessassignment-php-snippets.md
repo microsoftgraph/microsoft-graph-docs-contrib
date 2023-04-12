@@ -33,15 +33,13 @@ $accessDetails->setUnifiedRoles($unifiedRolesArray);
 $requestBody->setAccessDetails($accessDetails);
 
 $requestConfiguration = new DelegatedAdminAccessAssignmentRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-'If-Match' => 'W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="',
+	'If-Match' => 'W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->accessAssignmentsById('delegatedAdminAccessAssignment-id')->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationshipsById('delegatedAdminRelationship-id')->accessAssignmentsById('delegatedAdminAccessAssignment-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

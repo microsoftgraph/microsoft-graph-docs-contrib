@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ProfileRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ProfileRequestBuilderGetQueryParameters();
+$queryParameters = ProfileRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["names($select=first,last)","skills($select=displayName)"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->profile()->get($requestConfiguration);
+$result = $graphServiceClient->me()->profile()->get($requestConfiguration);
 
 
 ```

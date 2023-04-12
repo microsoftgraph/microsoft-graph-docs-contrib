@@ -43,7 +43,7 @@ The following tables show the least privileged permission or permissions require
 
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-| Delegated (work or school account)     | TeamSettings.ReadWrite.All* | Group.ReadWrite.All**, Directory.ReadWrite.All** |
+| Delegated (work or school account)     | TeamSettings.ReadWrite.All | Group.ReadWrite.All*, Directory.ReadWrite.All* |
 | Delegated (personal Microsoft account) | Not supported.                                                         | Not supported. |
 | Application                            | Not supported.                                                         | Not supported. |
 
@@ -57,8 +57,7 @@ The following tables show the least privileged permission or permissions require
 
 > [!NOTE]
 > - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
-> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> - Permissions marked with ** are supported only for backward compatibility. Please update your solutions to use an alternative permission and avoid using these permissions going forward.
+> - Permissions marked with * are supported only for backward compatibility. Please update your solutions to use an alternative permission and avoid using these permissions going forward.
 > - To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 

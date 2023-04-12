@@ -20,7 +20,7 @@ $requestBody->setDirectoryScopeId('/');
 
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->directory()->roleEligibilityScheduleRequests()->post($requestBody);
 
 
 ```

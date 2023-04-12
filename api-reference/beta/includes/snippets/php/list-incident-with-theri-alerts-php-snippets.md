@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new IncidentsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new IncidentsRequestBuilderGetQueryParameters();
+$queryParameters = IncidentsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["alerts"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->security()->incidents()->get($requestConfiguration);
+$result = $graphServiceClient->security()->incidents()->get($requestConfiguration);
 
 
 ```

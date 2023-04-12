@@ -11,20 +11,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Template();
 $additionalData = [
-'id' => 'Slack', 
-'applicationId' => '{id}', 
-'factoryTag' => 'CustomSCIM', 
+		'id' => 'Slack', 
+		'applicationId' => '{id}', 
+		'factoryTag' => 'CustomSCIM', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 $requestConfiguration = new SynchronizationTemplateRequestBuilderPutRequestConfiguration();
-
 $headers = [
-	'Authorization' => 'Bearer <token>',
-];
-
+		'Authorization' => 'Bearer <token>',
+	];
 $requestConfiguration->headers = $headers;
 
 
