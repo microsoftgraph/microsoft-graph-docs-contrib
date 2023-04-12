@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	Name = "Leisure tasks"
+	name = "Leisure tasks"
 }
 
 # A UPN can also be used as -UserId.

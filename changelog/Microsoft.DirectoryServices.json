@@ -9162,6 +9162,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4dd01e64-4410-46e2-b894-413759981eed",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToCreateTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToCreateTenants** property to the [defaultUserRolePermissions](https://learn.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-beta) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "4dd01e64-4410-46e2-b894-413759981eed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-05T19:59:11.0505166Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5b6de476-1f06-45d9-84c8-30f94daba7ef",
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
@@ -13058,6 +13076,56 @@
       "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Property",
+          "ChangedApiName": "systemCredentialPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **systemCredentialPreferences** property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsPolicy"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInPreferences** property to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "systemCredentialPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the [systemCredentialPreferences](https://learn.microsoft.com/en-us/graph/api/resources/systemCredentialPreferences?view=graph-rest-beta) resource type.",
+          "Target": "systemCredentialPreferences"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource type.",
+          "Target": "signInPreferences"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeTarget](https://learn.microsoft.com/en-us/graph/api/resources/includeTarget?view=graph-rest-beta) resource type.",
+          "Target": "includeTarget"
+        }
+      ],
+      "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }    
   ]
 }

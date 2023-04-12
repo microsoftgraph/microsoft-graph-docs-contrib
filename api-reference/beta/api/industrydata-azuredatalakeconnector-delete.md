@@ -59,7 +59,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_azuredatalakeconnector",
+  "name": "delete_azuredatalakeconnector_e1",
   "sampleKeys": ["8c010e87-c28b-4350-bdc1-65ec29258b93"]
 }
 -->
@@ -69,23 +69,27 @@ DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c0
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-azuredatalakeconnector-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-azuredatalakeconnector-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-azuredatalakeconnector-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-azuredatalakeconnector-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-azuredatalakeconnector-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-azuredatalakeconnector-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-azuredatalakeconnector-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-azuredatalakeconnector-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-azuredatalakeconnector-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-azuredatalakeconnector-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-azuredatalakeconnector-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

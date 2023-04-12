@@ -35,7 +35,9 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively, except when you specify `$select=signInActivity` or `$filter=signInActivity`. When `signInActivity` is selected or filtered on, the maximum page size is 120.
+
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
 
 By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**).To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.
 
@@ -616,27 +618,27 @@ GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-users-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-users-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-schemaextension-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-users-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-schemaextension-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-users-schemaextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-users-schemaextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-schemaextension-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-users-schemaextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -678,8 +680,9 @@ Content-type: application/json
 
 The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
 
->**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving the **signInActivity** property.
+>**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users_signin_last_time"
@@ -687,6 +690,32 @@ The following is an example of the request. Details for the **signInActivity** p
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-signin-last-time-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-signin-last-time-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-signin-last-time-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-users-signin-last-time-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-signin-last-time-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-users-signin-last-time-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

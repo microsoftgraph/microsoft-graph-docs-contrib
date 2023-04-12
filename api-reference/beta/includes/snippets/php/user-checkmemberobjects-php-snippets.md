@@ -14,7 +14,7 @@ $requestBody->setIds(['80a963dd-84af-4eb8-b2a6-781e444d4fb0', '62e90394-69f5-423
 
 
 
-$requestResult = $graphServiceClient->me()->checkMemberObjects()->post($requestBody);
+$result = $graphServiceClient->me()->checkMemberObjects()->post($requestBody);
 
 
 ```

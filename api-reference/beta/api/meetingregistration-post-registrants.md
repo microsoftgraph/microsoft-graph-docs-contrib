@@ -1,7 +1,7 @@
 ---
 title: "Create meetingRegistrant"
 description: "Enroll a meeting registrant."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
