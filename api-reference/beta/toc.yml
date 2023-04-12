@@ -12919,93 +12919,95 @@ items:
               href: api/identitygovernance-lifecyclemanagementsettings-get.md
             - name: Update
               href: api/identitygovernance-lifecyclemanagementsettings-update.md
-        - name: Privileged Identity Management v3
+        - name: Privileged Identity Management iteration 3
           displayName: Privileged Identity Management, PIM, Identity Governance
-          href: resources/privilegedidentitymanagementv3-overview.md
           items:
-          - name: Role assignment schedule requests
-            href: resources/unifiedroleassignmentschedulerequest.md
+          - name: PIM for Azure AD Roles
+            href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentschedulerequests.md
-            - name: Create
-              href: api/rbacapplication-post-roleassignmentschedulerequests.md
-            - name: Get
-              href: api/unifiedroleassignmentschedulerequest-get.md
-            - name: Cancel
-              href: api/unifiedroleassignmentschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-          - name: Role assignment schedules
-            href: resources/unifiedroleassignmentschedule.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentschedules.md
-            - name: Get
-              href: api/unifiedroleassignmentschedule-get.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-          - name: Role assignment schedule instances
-            href: resources/unifiedroleassignmentscheduleinstance.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleassignmentscheduleinstances.md
-            - name: Get
-              href: api/unifiedroleassignmentscheduleinstance-get.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
-          - name: Role eligibility schedule requests
-            href: resources/unifiedroleeligibilityschedulerequest.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityschedulerequests.md
-            - name: Create
-              href: api/rbacapplication-post-roleeligibilityschedulerequests.md
-            - name: Get
-              href: api/unifiedroleeligibilityschedulerequest-get.md
-            - name: Cancel
-              href: api/unifiedroleeligibilityschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-          - name: Role eligibility schedules
-            href: resources/unifiedroleeligibilityschedule.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityschedules.md
-            - name: Get
-              href: api/unifiedroleeligibilityschedule-get.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
-          - name: Role eligibility schedule instances
-            href: resources/unifiedroleeligibilityscheduleinstance.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
-            - name: Get
-              href: api/unifiedroleeligibilityscheduleinstance-get.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-          - name: Role management policies
-            items:
-            - name: Policies and rules
-              href: resources/unifiedrolemanagementpolicy.md
-            - name: List
-              href: api/policyroot-list-rolemanagementpolicies.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-            - name: Get rule
-              href: api/unifiedrolemanagementpolicyrule-get.md
-            - name: Update rule
-              href: api/unifiedrolemanagementpolicyrule-update.md
-          - name: Role management policy assignments
-            href: resources/unifiedrolemanagementpolicyassignment.md
-            items:
-            - name: List
-              href: api/policyroot-list-rolemanagementpolicyassignments.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicyassignment-get.md
+            - name: Role assignment schedule requests
+              href: resources/unifiedroleassignmentschedulerequest.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleassignmentschedulerequests.md
+              - name: Get
+                href: api/unifiedroleassignmentschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleassignmentschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+            - name: Role assignment schedules
+              href: resources/unifiedroleassignmentschedule.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentschedules.md
+              - name: Get
+                href: api/unifiedroleassignmentschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+            - name: Role assignment schedule instances
+              href: resources/unifiedroleassignmentscheduleinstance.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleassignmentscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+            - name: Role eligibility schedule requests
+              href: resources/unifiedroleeligibilityschedulerequest.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+              - name: Create
+                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedulerequest-get.md
+              - name: Cancel
+                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+            - name: Role eligibility schedules
+              href: resources/unifiedroleeligibilityschedule.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityschedules.md
+              - name: Get
+                href: api/unifiedroleeligibilityschedule-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+            - name: Role eligibility schedule instances
+              href: resources/unifiedroleeligibilityscheduleinstance.md
+              items:
+              - name: List
+                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+              - name: Get
+                href: api/unifiedroleeligibilityscheduleinstance-get.md
+              - name: Filter by current user
+                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+            - name: Role management policies
+              items:
+              - name: Policies and rules
+                href: resources/unifiedrolemanagementpolicy.md
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicies.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: List rules
+                href: api/unifiedrolemanagementpolicy-list-rules.md
+              - name: Get rule
+                href: api/unifiedrolemanagementpolicyrule-get.md
+              - name: Update rule
+                href: api/unifiedrolemanagementpolicyrule-update.md
+            - name: Role management policy assignments
+              href: resources/unifiedrolemanagementpolicyassignment.md
+              items:
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicyassignments.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: PIM for Groups
             href: resources/privilegedidentitymanagement-for-groups-api-overview.md
             items:
@@ -13071,11 +13073,11 @@ items:
                 href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
               - name: Filter by current user
                 href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
-        - name: Privileged Identity Management v2
+        - name: Privileged Identity Management iteration 2
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD (deprecated)
+<!--          - name: Azure AD (deprecated)
             items:
             - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
@@ -13139,7 +13141,7 @@ items:
               href: resources/privilegedoperationevent.md
               items:
               - name: List audit events
-                href: api/privilegedoperationevent-list.md
+                href: api/privilegedoperationevent-list.md -->
           - name: Azure resources
             items:
             - name: Azure resources
