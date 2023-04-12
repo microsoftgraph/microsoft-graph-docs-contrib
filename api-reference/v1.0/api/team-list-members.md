@@ -297,7 +297,6 @@ Content-Type: application/json
     ]
 }
 ```
-
 ## See also
 
 - [List members in channel](channel-list-members.md)
