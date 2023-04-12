@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Power on a [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PC. This action supports Microsoft Endpoint Manager (MEM) admin scenarios. 
 
-After a Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately. Only IT admin users can perform this action. 
+After a [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately. Only IT admin users can perform this action. 
 
 ## Permissions
 
