@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Power off a Frontline Cloud PC. This action supports [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
+Power off a Frontline Cloud PC. This action supports [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Microsoft Endpoint Manager (MEM) admin scenarios. 
 
 After a Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately. Only IT admin users can perform this action. 
 
