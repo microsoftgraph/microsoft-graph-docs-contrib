@@ -226,7 +226,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "appliedCategory",
             "ChangeType": "Addition",
-            "Description": "Added the [appliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-appliedCategory?view=graph-rest-beta) resource type.",
+            "Description": "Added the [appliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-appliedCategory?view=graph-rest-beta) resource type.",
             "Target": "appliedCategory"
           },
           {
@@ -234,7 +234,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "authority",
             "ChangeType": "Addition",
-            "Description": "Added the [authority](https://learn.microsoft.com/en-us/graph/api/resources/security-authority?view=graph-rest-beta) resource type.",
+            "Description": "Added the [authority](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-authority?view=graph-rest-beta) resource type.",
             "Target": "authority"
           },
           {
@@ -242,7 +242,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "citation",
             "ChangeType": "Addition",
-            "Description": "Added the [citation](https://learn.microsoft.com/en-us/graph/api/resources/security-citation?view=graph-rest-beta) resource type.",
+            "Description": "Added the [citation](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-citation?view=graph-rest-beta) resource type.",
             "Target": "citation"
           },
           {
@@ -250,7 +250,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "department",
             "ChangeType": "Addition",
-            "Description": "Added the [department](https://learn.microsoft.com/en-us/graph/api/resources/security-department?view=graph-rest-beta) resource type.",
+            "Description": "Added the [department](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-department?view=graph-rest-beta) resource type.",
             "Target": "department"
           },
           {
@@ -258,7 +258,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "filePlanReference",
             "ChangeType": "Addition",
-            "Description": "Added the [filePlanReference](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanReference?view=graph-rest-beta) resource type.",
+            "Description": "Added the [filePlanReference](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-filePlanReference?view=graph-rest-beta) resource type.",
             "Target": "filePlanReference"
           },
           {
@@ -266,7 +266,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "subCategory",
             "ChangeType": "Addition",
-            "Description": "Added the [subCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategory?view=graph-rest-beta) resource type.",
+            "Description": "Added the [subCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-subCategory?view=graph-rest-beta) resource type.",
             "Target": "subCategory"
           },
           {
@@ -274,7 +274,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "authorityTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [authorityTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-authorityTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [authorityTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-authorityTemplate?view=graph-rest-beta) resource",
             "Target": "authorityTemplate"
           },
           {
@@ -282,7 +282,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "categoryTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [categoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-categoryTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [categoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-categoryTemplate?view=graph-rest-beta) resource",
             "Target": "categoryTemplate"
           },
           {
@@ -290,7 +290,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "citationTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [citationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-citationTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [citationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-citationTemplate?view=graph-rest-beta) resource",
             "Target": "citationTemplate"
           },
           {
@@ -298,7 +298,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "departmentTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [departmentTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-departmentTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [departmentTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-departmentTemplate?view=graph-rest-beta) resource",
             "Target": "departmentTemplate"
           },
           {
@@ -314,7 +314,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "filePlanReferenceTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [filePlanReferenceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanReferenceTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [filePlanReferenceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-filePlanReferenceTemplate?view=graph-rest-beta) resource",
             "Target": "filePlanReferenceTemplate"
           },
           {
@@ -330,7 +330,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "subCategoryTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [subCategoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategoryTemplate?view=graph-rest-beta) resource",
+            "Description": "Added the [subCategoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandescriptor-subCategoryTemplate?view=graph-rest-beta) resource",
             "Target": "subCategoryTemplate"
           }
         ],

@@ -16061,10 +16061,10 @@ items:
           - name: Delete
             href: api/security-retentionlabel-delete.md
           - name: File plan descriptors
-            href: resources/security-fileplandescriptors.md
+            href: resources/security-fileplandescriptor.md
             items:
             - name: File Plan Reference
-              href: resources/security-fileplandescriptors-filePlanReferenceTemplate.md
+              href: resources/security-fileplandescriptor-filePlanReferenceTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-list-fileplanreferencetemplate.md
@@ -16075,7 +16075,7 @@ items:
               - name: Delete
                 href: api\security-fileplandescriptor-delete-fileplanreferencetemplate.md
             - name: Authority
-              href: resources/security-fileplandescriptors-authorityTemplate.md
+              href: resources/security-fileplandescriptor-authorityTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-list-authoritytemplate.md
@@ -16086,7 +16086,7 @@ items:
               - name: Delete
                 href: api\security-fileplandescriptor-delete-authoritytemplate.md
             - name: Category
-              href: resources/security-fileplandescriptors-categoryTemplate.md
+              href: resources/security-fileplandescriptor-categoryTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-list-categorytemplate.md
@@ -16097,7 +16097,7 @@ items:
               - name: Delete
                 href: api\security-fileplandescriptor-delete-categorytemplate.md
             - name: Sub-category
-              href: resources/security-fileplandescriptors-subcategoryTemplate.md
+              href: resources/security-fileplandescriptor-subcategoryTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-categorytemplate-list-subcategories.md
@@ -16108,7 +16108,7 @@ items:
               - name: Delete
                 href: api\security-fileplandescriptor-categorytemplate-delete-subcategories.md
             - name: Department
-              href: resources/security-fileplandescriptors-departmentTemplate.md
+              href: resources/security-fileplandescriptor-departmentTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-list-departmenttemplate.md
@@ -16119,7 +16119,7 @@ items:
               - name: Delete
                 href: api\security-fileplandescriptor-delete-departmenttemplate.md
             - name: Citation
-              href: resources/security-fileplandescriptors-citationTemplate.md
+              href: resources/security-fileplandescriptor-citationTemplate.md
               items:
               - name: List
                 href: api\security-fileplandescriptor-list-citationtemplate.md
