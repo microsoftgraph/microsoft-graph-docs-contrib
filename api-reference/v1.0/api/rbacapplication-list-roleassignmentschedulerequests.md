@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | RoleManagement.ReadWrite.Directory               |
+| Application                            | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory               |
 
 ## HTTP request
 
