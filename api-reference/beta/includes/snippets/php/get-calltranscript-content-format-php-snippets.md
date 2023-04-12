@@ -10,10 +10,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ContentRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ContentRequestBuilderGetQueryParameters();
+$queryParameters = ContentRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->format = "text/vtt";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 

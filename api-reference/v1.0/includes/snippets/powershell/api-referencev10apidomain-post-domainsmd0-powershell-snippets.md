@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	Id = "contoso.com"
+	id = "contoso.com"
 }
 
 New-MgDomain -BodyParameter $params

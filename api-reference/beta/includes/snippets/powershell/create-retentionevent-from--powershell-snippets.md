@@ -8,26 +8,26 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
-	DisplayName = "String"
-	Description = "String"
-	EventQueries = @(
+	displayName = "String"
+	description = "String"
+	eventQueries = @(
 		@{
 			"@odata.type" = "microsoft.graph.security.eventQueries"
 		}
 	)
-	EventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
-	CreatedBy = @{
+	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	EventPropagationResults = @(
+	eventPropagationResults = @(
 		@{
 			"@odata.type" = "microsoft.graph.security.eventPropagationResult"
 		}
 	)
-	EventStatus = @{
+	eventStatus = @{
 		"@odata.type" = "microsoft.graph.security.retentionEventStatus"
 	}
-	LastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
+	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
 }
 
 New-MgSecurityTriggerRetentionEvent -BodyParameter $params

@@ -13,14 +13,14 @@ $requestBody = new AuthenticationMethodConfiguration();
 $requestBody->set@odatatype('#microsoft.graph.voiceAuthenticationMethodConfiguration');
 
 $additionalData = [
-'isOfficePhoneAllowed' => 'false', 
+		'isOfficePhoneAllowed' => 'false', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

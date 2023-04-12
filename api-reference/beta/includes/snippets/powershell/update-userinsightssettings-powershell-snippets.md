@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	IsEnabled = "false"
+	isEnabled = "false"
 }
 
 Update-MgUserSettingItemInsight -UserId $userId -BodyParameter $params
