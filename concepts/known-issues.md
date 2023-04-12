@@ -449,6 +449,23 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel).
 
+### New Tenants get unauthorised response when calling get membership apis
+For new tenants, the JIT provisioning error causing the 401s is unfortunately a known limitation for 1st party apps using MSGraph advanced AAD query capabilities (a.k.a. Mezzo). 1st party apps require provisioning a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so the provisioning cannot happen (advanced query endpoints are defined by the ConsistencyLevel=eventual header + $count or $search query arguments). A workaround is to hit AAD Graph or another "non-advanced" MSGraph endpoint (e.g. /users?$top=1), which takes care of the provisioning and things work from then on. This is an issue with AAD and some TGS apis are backed by AAD. This issue happens once per tenant for a given app. Implementing a pattern like below:
+``` http
+{
+    try
+    {
+        $count
+    }
+    catch (unauthorized)
+    {
+        call /users?$top=1
+        wait a few minutes; // Provisioning is eventually consistent, so it might take a few minutes to propagate
+        retry $count
+    }
+}
+```
+
 ### TeamworkAppSettings permissions are not visible in the Azure portal
 
 The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
