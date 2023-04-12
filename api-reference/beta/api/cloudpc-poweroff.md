@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: power off"
+title: "cloudPC: powerOff"
 description: "Power off a specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Power off a Frontline Cloud PC. This action supports [Frontline](https://www.microsoft.com/en/windows-365/frontline) MEM admin scenarios. 
 
-After powering off a Frontline CloudPC, it will be de-allocated, and licenses will be revoked immediately. Only IT admin users can perform this action. 
+After a Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately. Only IT admin users can perform this action. 
 
 ## Permissions
 
