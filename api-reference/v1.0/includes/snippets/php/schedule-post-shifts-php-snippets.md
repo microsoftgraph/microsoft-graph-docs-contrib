@@ -76,7 +76,7 @@ $draftShift->setActivities($activitiesArray);
 $requestBody->setDraftShift($draftShift);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->shifts()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->shifts()->post($requestBody);
 
 
 ```

@@ -465,27 +465,27 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-block-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-create-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-block-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-create-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-block-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-create-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-block-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-create-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-block-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-create-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-block-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

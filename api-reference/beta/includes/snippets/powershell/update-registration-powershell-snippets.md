@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	Subject = "Microsoft Ignite: Day 1"
-	StartDateTime = [System.DateTime]::Parse("2021-11-02T08:00:00-08:00")
-	EndDateTime = [System.DateTime]::Parse("2021-11-02T15:45:00-08:00")
-	Speakers = @(
+	subject = "Microsoft Ignite: Day 1"
+	startDateTime = [System.DateTime]::Parse("2021-11-02T08:00:00-08:00")
+	endDateTime = [System.DateTime]::Parse("2021-11-02T15:45:00-08:00")
+	speakers = @(
 		@{
-			DisplayName = "Henry Ross"
-			Bio = "Chairman and Chief Executive Officer"
+			displayName = "Henry Ross"
+			bio = "Chairman and Chief Executive Officer"
 		}
 		@{
-			DisplayName = "Fred Ryan"
-			Bio = "CVP"
+			displayName = "Fred Ryan"
+			bio = "CVP"
 		}
 	)
 }
