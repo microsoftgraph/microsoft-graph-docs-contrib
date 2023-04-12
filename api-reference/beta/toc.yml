@@ -17078,14 +17078,14 @@ items:
           - name: Virtual appointment (deprecated)
               href: resources/virtualappointment.md (deprecated)
               items:
-              - name: Create
-                href: api/virtualappointment-put.md
-              - name: Get
-                href: api/virtualappointment-get.md
-              - name: Update
-                href: api/virtualappointment-update.md
-              - name: Delete
-                href: api/virtualappointment-delete.md
+            - name: Create
+              href: api/virtualappointment-put.md
+            - name: Get
+              href: api/virtualappointment-get.md
+            - name: Update
+              href: api/virtualappointment-update.md
+            - name: Delete
+              href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
           items:
