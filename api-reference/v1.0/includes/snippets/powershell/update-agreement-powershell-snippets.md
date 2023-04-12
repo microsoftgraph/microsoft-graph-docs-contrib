@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "All Contoso volunteers - Terms of use"
-	IsViewingBeforeAcceptanceRequired = $true
+	displayName = "All Contoso volunteers - Terms of use"
+	isViewingBeforeAcceptanceRequired = $true
 }
 
 Update-MgIdentityGovernanceTermOfUseAgreement -AgreementId $agreementId -BodyParameter $params

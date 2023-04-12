@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Participant();
 $additionalData = [
-'clientContext' => 'd45324c1-fcb5-430a-902c-f20af696537c', 
-'participantMixerLevels' => $participantMixerLevels1 = new ();
+		'clientContext' => 'd45324c1-fcb5-430a-902c-f20af696537c', 
+		'participantMixerLevels' => $participantMixerLevels1 = new ();
 $		participantMixerLevels1->setParticipant('550fae72-d251-43ec-868c-373732c2704f');
 
 		$participantMixerLevels1->setExclusive(true);

@@ -10,16 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PrivilegedOperationEventsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PrivilegedOperationEventsRequestBuilderGetQueryParameters();
+$queryParameters = PrivilegedOperationEventsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "(creationDateTime ge 2017-06-25T07:00:00Z) and ";
 $queryParameters->count = true;
 $queryParameters->orderby = ["creationDateTime desc"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->privilegedOperationEvents()->get($requestConfiguration);
+$result = $graphServiceClient->privilegedOperationEvents()->get($requestConfiguration);
 
 
 ```

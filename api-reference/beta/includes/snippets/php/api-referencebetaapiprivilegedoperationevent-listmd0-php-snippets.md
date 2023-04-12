@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PrivilegedOperationEventsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PrivilegedOperationEventsRequestBuilderGetQueryParameters();
+$queryParameters = PrivilegedOperationEventsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "requestType eq 'Assign'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->privilegedOperationEvents()->get($requestConfiguration);
+$result = $graphServiceClient->privilegedOperationEvents()->get($requestConfiguration);
 
 
 ```

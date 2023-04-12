@@ -14,7 +14,7 @@ $requestBody->setIsEnabled(false);
 
 
 
-$requestResult = $graphServiceClient->me()->settings()->contactMergeSuggestions()->patch($requestBody);
+$result = $graphServiceClient->me()->settings()->contactMergeSuggestions()->patch($requestBody);
 
 
 ```

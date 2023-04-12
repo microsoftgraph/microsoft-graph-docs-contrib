@@ -61,15 +61,13 @@ $requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsforbu
 
 
 $requestConfiguration = new EventsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->events()->post($requestBody, $requestConfiguration);
 
 
 ```

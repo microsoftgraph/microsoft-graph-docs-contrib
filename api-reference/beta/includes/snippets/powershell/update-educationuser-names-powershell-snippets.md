@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	DisplayName = "Rogelio Cazares"
-	GivenName = "Rogelio"
-	MiddleName = "Fernando"
-	Surname = "Cazares"
+	displayName = "Rogelio Cazares"
+	givenName = "Rogelio"
+	middleName = "Fernando"
+	surname = "Cazares"
 }
 
 Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params

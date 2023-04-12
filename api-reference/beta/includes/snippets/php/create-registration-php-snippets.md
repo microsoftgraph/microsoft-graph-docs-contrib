@@ -11,13 +11,13 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RegistrationPostRequestBody();
 $additionalData = [
-'@odata.type' => '#microsoft.graph.meetingRegistration', 
-'subject' => 'Microsoft Ignite', 
-'description' => 'Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.', 
-'startDateTime' => '2021-11-02T08:00:00-08:00', 
-'endDateTime' => '2021-11-04T04:00:00-08:00', 
-'allowedRegistrant' => 'everyone', 
-'speakers' => $speakers1 = new ();
+		'@odata.type' => '#microsoft.graph.meetingRegistration', 
+		'subject' => 'Microsoft Ignite', 
+		'description' => 'Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.', 
+		'startDateTime' => '2021-11-02T08:00:00-08:00', 
+		'endDateTime' => '2021-11-04T04:00:00-08:00', 
+		'allowedRegistrant' => 'everyone', 
+		'speakers' => $speakers1 = new ();
 $		speakers1->setDisplayName('Henry Ross');
 
 $		speakers1->setBio('Chairman and Chief Executive Officer');
@@ -34,7 +34,7 @@ $speakersArray []= $speakers2;
 $requestBody->setSpeakers($speakersArray);
 
 
-'customQuestions' => $customQuestions1 = new ();
+	'customQuestions' => $customQuestions1 = new ();
 $	customQuestions1->setDisplayName('Are you a developer?');
 
 $	customQuestions1->setAnswerInputType('radioButton');

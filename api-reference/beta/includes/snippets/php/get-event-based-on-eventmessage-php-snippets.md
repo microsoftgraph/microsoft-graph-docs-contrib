@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessageRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MessageRequestBuilderGetQueryParameters();
+$queryParameters = MessageRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["microsoft.graph.eventMessage/event"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
 
 
 ```
