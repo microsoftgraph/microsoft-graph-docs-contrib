@@ -597,8 +597,6 @@ items:
           - name: Overview
             href: search-concept-overview.md
             displayName: search
-          - name: Supported language codes
-            href: search-concept-acceptlanguage-header.md
           - name: Search acronyms
             href: search-concept-acronym.md
           - name: Search bookmarks
@@ -637,6 +635,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Supported language codes
+            href: search-concept-acceptlanguage-header.md
       - name: Security
         items:
           - name: Overview
