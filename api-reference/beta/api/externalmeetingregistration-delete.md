@@ -1,7 +1,7 @@
 ---
 title: "Delete externalMeetingRegistration"
 description: "Disable and delete an external meeting registration."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

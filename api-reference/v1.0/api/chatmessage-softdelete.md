@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Namespace: microsoft.graph
 
-Delete a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Delete a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
@@ -36,15 +36,23 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| Not supported. |
 
 ## HTTP request
+To delete a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/softDelete
+POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/softDelete
+```
 
+To delete a **chatMessage** in a **chat**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/softDelete
-POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/softDelete
-POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/softDelete
 ```
 
 ## Request headers

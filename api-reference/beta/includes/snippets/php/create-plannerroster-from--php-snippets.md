@@ -14,7 +14,7 @@ $requestBody->set@odatatype('#microsoft.graph.plannerRoster');
 
 
 
-$requestResult = $graphServiceClient->planner()->rosters()->post($requestBody);
+$result = $graphServiceClient->planner()->rosters()->post($requestBody);
 
 
 ```

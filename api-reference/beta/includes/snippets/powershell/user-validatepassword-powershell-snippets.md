@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Password = "1234567890"
+	password = "1234567890"
 }
 
 Test-MgUserPassword -BodyParameter $params

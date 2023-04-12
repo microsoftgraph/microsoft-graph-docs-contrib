@@ -16,7 +16,7 @@ $requestBody->setEndDateTime(new DateTime('2024-01-25T00:00:00Z'));
 
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addTokenSigningCertificate()->post($requestBody);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addTokenSigningCertificate()->post($requestBody);
 
 
 ```

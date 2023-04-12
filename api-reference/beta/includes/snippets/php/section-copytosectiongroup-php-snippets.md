@@ -18,7 +18,7 @@ $requestBody->setRenameAs('renameAs-value');
 
 
 
-$requestResult = $graphServiceClient->me()->onenote()->sectionsById('onenoteSection-id')->copyToSectionGroup()->post($requestBody);
+$result = $graphServiceClient->me()->onenote()->sectionsById('onenoteSection-id')->copyToSectionGroup()->post($requestBody);
 
 
 ```
