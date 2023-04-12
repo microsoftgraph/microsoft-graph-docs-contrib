@@ -17072,18 +17072,18 @@ items:
             - name: Create or get
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment (preview)
-            - name: Get Virtual appointment 
+            - name: Get Virtual appointment join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
               href: resources/virtualappointment.md (deprecated)
-              items:
-            - name: Create
-              href: api/virtualappointment-put.md
-            - name: Get
-              href: api/virtualappointment-get.md
-            - name: Update
-              href: api/virtualappointment-update.md
-            - name: Delete
-              href: api/virtualappointment-delete.md
+                items:
+              - name: Create
+                href: api/virtualappointment-put.md
+              - name: Get
+                href: api/virtualappointment-get.md
+              - name: Update
+                href: api/virtualappointment-update.md
+              - name: Delete
+                href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
           items:
