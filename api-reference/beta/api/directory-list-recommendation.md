@@ -75,27 +75,27 @@ GET https://graph.microsoft.com/beta/directory/recommendations
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-recommendation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-recommendation-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-recommendation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-recommendation-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-recommendation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-recommendation-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-recommendation-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-recommendation-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-recommendation-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-recommendation-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-recommendation-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-recommendation-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,27 +182,27 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommend
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recommendation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-recommendation-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recommendation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-recommendation-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -286,27 +286,27 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0c
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recommendation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-recommendation-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recommendation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-recommendation-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-e3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

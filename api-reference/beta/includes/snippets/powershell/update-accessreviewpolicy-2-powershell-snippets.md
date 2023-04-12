@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	IsGroupOwnerManagementEnabled = $true
+	isGroupOwnerManagementEnabled = $true
 }
 
 Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter $params

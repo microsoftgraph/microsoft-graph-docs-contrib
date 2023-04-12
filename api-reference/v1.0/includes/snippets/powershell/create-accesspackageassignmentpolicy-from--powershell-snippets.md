@@ -7,35 +7,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "New Policy"
-	Description = "policy for assignment"
-	AllowedTargetScope = "notSpecified"
-	SpecificAllowedTargets = @(
+	displayName = "New Policy"
+	description = "policy for assignment"
+	allowedTargetScope = "notSpecified"
+	specificAllowedTargets = @(
 	)
-	Expiration = @{
-		EndDateTime = $null
-		Duration = $null
-		Type = "noExpiration"
+	expiration = @{
+		endDateTime = $null
+		duration = $null
+		type = "noExpiration"
 	}
-	RequestorSettings = @{
-		EnableTargetsToSelfAddAccess = $false
-		EnableTargetsToSelfUpdateAccess = $false
-		EnableTargetsToSelfRemoveAccess = $false
-		AllowCustomAssignmentSchedule = $true
-		EnableOnBehalfRequestorsToAddAccess = $false
-		EnableOnBehalfRequestorsToUpdateAccess = $false
-		EnableOnBehalfRequestorsToRemoveAccess = $false
-		OnBehalfRequestors = @(
+	requestorSettings = @{
+		enableTargetsToSelfAddAccess = $false
+		enableTargetsToSelfUpdateAccess = $false
+		enableTargetsToSelfRemoveAccess = $false
+		allowCustomAssignmentSchedule = $true
+		enableOnBehalfRequestorsToAddAccess = $false
+		enableOnBehalfRequestorsToUpdateAccess = $false
+		enableOnBehalfRequestorsToRemoveAccess = $false
+		onBehalfRequestors = @(
 		)
 	}
-	RequestApprovalSettings = @{
-		IsApprovalRequiredForAdd = $false
-		IsApprovalRequiredForUpdate = $false
-		Stages = @(
+	requestApprovalSettings = @{
+		isApprovalRequiredForAdd = $false
+		isApprovalRequiredForUpdate = $false
+		stages = @(
 		)
 	}
-	AccessPackage = @{
-		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
+	accessPackage = @{
+		id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
 	}
 }
 

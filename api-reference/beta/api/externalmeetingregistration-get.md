@@ -1,7 +1,7 @@
 ---
 title: "Get externalMeetingRegistration"
 description: "Get external registration information of an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

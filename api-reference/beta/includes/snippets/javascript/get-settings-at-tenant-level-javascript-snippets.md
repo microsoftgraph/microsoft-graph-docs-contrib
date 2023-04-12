@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let settings = await client.api('/admin/sharepoint/settings')
+let sharepointSettings = await client.api('/admin/sharepoint/settings')
 	.version('beta')
 	.get();
 
