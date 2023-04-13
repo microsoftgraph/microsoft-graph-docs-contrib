@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the unique authority applied to a retention label.
+Represents a unique authority applied to a retention label.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
