@@ -104,3 +104,13 @@ The control exposes the following variables that can be localized. See how you s
 | String name        | Default value     |
 | ------------------ | ----------------- |
 | comboboxPlaceholder   | 'Select an item' |
+
+## CSS custom properties
+
+The `mgt-picker` component defines the following CSS custom properties.
+
+```css
+mgt-picker {
+  --picker-background-color: grey;
+}
+```
