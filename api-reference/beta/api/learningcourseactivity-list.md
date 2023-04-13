@@ -104,7 +104,7 @@ Content-Type: application/json
       "contentType": "text", 
       "content": "required assignment added for user"
     }, 
-    "status": "NotStarted"
+    "status": "notStarted"
   },
   {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('be2f4d76-e020-11ec-9d64-0242ac120002')$entity", 
@@ -116,7 +116,7 @@ Content-Type: application/json
     "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002", 
     "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002", 
     "startedDateTime": "2021-05-21T22:57:17+00:00", 
-    "status": "InProgress"
+    "status": "inProgress"
   }] 
 }
 

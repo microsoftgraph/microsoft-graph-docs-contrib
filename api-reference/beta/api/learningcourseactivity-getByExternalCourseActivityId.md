@@ -98,6 +98,6 @@ Content-Type: application/json
     "contentType": "text",
     "content": "required assignment added for user"
   },  
-  "status": "NotStarted"
+  "status": "notStarted"
 }
 ```

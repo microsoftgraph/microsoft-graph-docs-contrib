@@ -98,7 +98,7 @@ Content-Type: application/json
     "contentType": "text",
     "content": "required assignment added for user"
   },
-  "status": "NotStarted"
+  "status": "notStarted"
 }
 ```
 
@@ -122,7 +122,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
-  "status": "InProgress",
+  "status": "inProgress",
   "completedDateTime": null,
   "startedDateTime": "2021-05-21T22:57:17+00:00",
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",

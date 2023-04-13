@@ -88,7 +88,7 @@ The following is a JSON representation of the resource.
   "learningContentId": "String",
   "learningProviderId": "String",
   "learnerUserId": "String",
-  "status": "String"
+  "status": "@odata.type: microsoft.graph.courseStatus"
 }
 ```
 

@@ -53,6 +53,6 @@ The following is a JSON representation of the resource.
   "learningProviderId": "String",
   "learnerUserId": "String",
   "startedDateTime": "String (timestamp)",
-  "status": "String"
+  "status": "@odata.type: microsoft.graph.courseStatus"
 }
 ```

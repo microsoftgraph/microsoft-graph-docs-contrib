@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.learningAssignment",
   "assignedDateTime": "String (timestamp)",
   "assignerUserId": "String",
-  "assignmentType": "String",
+  "assignmentType": "@odata.type: microsoft.graph.assignmentType",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Integer",
   "dueDateTime": {
@@ -67,7 +67,7 @@ The following is a JSON representation of the resource.
   "notes": {
     "@odata.type": "microsoft.graph.itemBody"
   },
-  "status": "String"
+  "status": "@odata.type: microsoft.graph.courseStatus"
 }
 ```
 
