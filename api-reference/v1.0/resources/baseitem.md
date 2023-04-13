@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The baseItem resource is an abstract resource that contains a common set of properties shared among several other resources types."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # BaseItem resource type
@@ -35,11 +34,11 @@ Here is a JSON representation of a **baseItem** resource.
 
 ```json
 {
-  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "datetime",
   "name": "string",
@@ -52,11 +51,11 @@ Here is a JSON representation of a **baseItem** resource.
 
 | Property             | Type              | Description                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | The unique identifier of the drive. Read-only.                                         |
 | createdBy            | [identitySet][]   | Identity of the user, device, or application which created the item. Read-only.        |
 | createdDateTime      | dateTimeOffset    | Date and time of item creation. Read-only.                                             |
 | description          | String            | Provides a user-visible description of the item. Optional.                             |
 | eTag                 | string            | ETag for the item. Read-only.                                                          |
+| id                   | string            | The unique identifier of the drive. Read-only.                                         |
 | lastModifiedBy       | [identitySet][]   | Identity of the user, device, and application which last modified the item. Read-only. |
 | lastModifiedDateTime | dateTimeOffset    | Date and time the item was last modified. Read-only.                                   |
 | name                 | string            | The name of the item. Read-write.                                                      |

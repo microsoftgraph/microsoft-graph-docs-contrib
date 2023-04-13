@@ -1,7 +1,7 @@
 ---
 title: "groupPolicySettingMapping resource type"
 description: "The Group Policy setting to MDM/Intune mapping."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -43,7 +43,7 @@ The Group Policy setting to MDM/Intune mapping.
 |mdmCspName|String|The CSP name this group policy setting maps to.|
 |mdmSettingUri|String|The MDM CSP URI this group policy setting maps to.|
 |mdmMinimumOSVersion|Int32|The minimum OS version this mdm setting supports.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`, `appLockerRuleCollection`, `dataSourcesSettings`, `devicesSettings`, `driveMapSettings`, `environmentVariables`, `filesSettings`, `folderOptions`, `folders`, `iniFiles`, `internetOptions`, `localUsersAndGroups`, `networkOptions`, `networkShares`, `ntServices`, `powerOptions`, `printers`, `regionalOptionsSettings`, `registrySettings`, `scheduledTasks`, `shortcutSettings`, `startMenuSettings`.|
 |isMdmSupported|Boolean|Indicates if the setting is supported by Intune or not|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. Possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
@@ -92,9 +92,3 @@ Here is a JSON representation of the resource.
   "admxSettingDefinitionId": "String"
 }
 ```
-
-
-
-
-
-

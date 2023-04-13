@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Represents the column values in a listItem resource."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
@@ -26,8 +25,8 @@ Here is a JSON representation of a **fieldValueSet** resource.
 {
     "Author": "Brad Cleaver",
     "AuthorLookupId": "13",
-    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Color": "Red",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
     "Quantity": 350,
 }
 ```

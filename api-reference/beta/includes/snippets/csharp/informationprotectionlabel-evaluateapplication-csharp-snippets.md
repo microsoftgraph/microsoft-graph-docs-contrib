@@ -60,7 +60,7 @@ var contentInfo = new ContentInfo
 var labelingOptions = new LabelingOptions
 {
 	AssignmentMethod = AssignmentMethod.Standard,
-	LabelId = Guid.Parse("97309856-9c28-4ac6-9382-5f8bc20c457b"),
+	LabelId = "97309856-9c28-4ac6-9382-5f8bc20c457b",
 	DowngradeJustification = null,
 	ExtendedProperties = new List<KeyValuePair>()
 	{
@@ -73,7 +73,7 @@ var labelingOptions = new LabelingOptions
 	}
 };
 
-await graphClient.Informationprotection.Policy.Labels
+await graphClient.InformationProtection.Policy.Labels
 	.EvaluateApplication(contentInfo,labelingOptions)
 	.Request()
 	.Header("User-Agent","ContosoLOBApp/1.0")

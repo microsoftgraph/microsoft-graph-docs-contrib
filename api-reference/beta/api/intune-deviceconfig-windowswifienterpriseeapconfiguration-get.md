@@ -1,7 +1,7 @@
 ---
 title: "Get windowsWifiEnterpriseEAPConfiguration"
 description: "Read properties and relationships of the windowsWifiEnterpriseEAPConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2719
+Content-Length: 3028
 
 {
   "value": {
@@ -116,6 +116,7 @@ Content-Length: 2719
     "forceFIPSCompliance": true,
     "networkSingleSignOn": "prelogon",
     "maximumAuthenticationTimeoutInSeconds": 5,
+    "userBasedVirtualLan": true,
     "promptForAdditionalAuthenticationCredentials": true,
     "enablePairwiseMasterKeyCaching": true,
     "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -131,13 +132,14 @@ Content-Length: 2719
     "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
     "requireCryptographicBinding": true,
     "performServerValidation": true,
-    "disableUserPromptForServerValidation": true
+    "disableUserPromptForServerValidation": true,
+    "authenticationPeriodInSeconds": 13,
+    "authenticationRetryDelayPeriodInSeconds": 7,
+    "eapolStartPeriodInSeconds": 9,
+    "maximumEAPOLStartMessages": 9,
+    "maximumAuthenticationFailures": 13,
+    "cacheCredentials": true,
+    "authenticationType": "user"
   }
 }
 ```
-
-
-
-
-
-

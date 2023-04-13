@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getYammerGroupsActivityCounts"
 description: "Get the number of Yammer messages posted, read, and liked in groups."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -79,7 +79,7 @@ The following is an example of the request.
   "name": "reportroot_getyammergroupsactivitycounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityCounts(period='D7')
 ```
 

@@ -1,8 +1,8 @@
 ---
 title: "message: send"
-description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
-localization_priority: Normal
-author: "svpsiva"
+description: "Send an existing draft message."
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,12 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or
-a forward draft. The message is then saved in the Sent Items folder.
+Send an existing draft message. 
+
+The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md). 
+
+This method saves the message in the **Sent Items** folder.
+
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 
 ## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,14 +47,17 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | number | 0. Required. |
 
 ## Request body
+Since this method sends an already existing draft message, specifying a request body is not necessary.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Send an existing draft message
 
 Here is an example of how to call this API.
+
 ##### Request
 
 Here is an example of the request.
@@ -64,6 +71,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/send
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-send-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -72,8 +80,20 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-send-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-send-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-send-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/message-send-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -82,6 +102,7 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 ##### Response
 
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -104,5 +125,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

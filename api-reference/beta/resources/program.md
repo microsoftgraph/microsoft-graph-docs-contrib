@@ -1,17 +1,19 @@
 ---
-title: "program resource type"
+title: "program resource type (deprecated)"
 description: "In the Azure AD access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# program resource type
+# program resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  
 
@@ -31,9 +33,9 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  The feature-assigned identifier of the program.                    |
-| `displayName`               |`String`                              |  The name of the program.  Required on create.                  |
-| `description`               |`String`                              |  The description of the program.           |
+| id                        |String                              |  The feature-assigned identifier of the program.                    |
+| displayName               |String                              |  The name of the program.  Required on create.                  |
+| description               |String                              |  The description of the program.           |
 
 ## Relationships
 | Relationship | Type	|Description|

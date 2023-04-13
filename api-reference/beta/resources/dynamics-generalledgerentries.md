@@ -4,7 +4,7 @@ description: A general ledger entry in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -15,51 +15,50 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a generalLedgerEntry object in Dynamics 365 Business Central.
+Represents a general ledger entry in Dynamics 365 Business Central.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[Get generalLedgerEntries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntries|Get a G/L entry object.|
+|[Get generalLedgerEntries](../api/dynamics-generalledgerentries-get.md)|generalLedgerEntries|Get a general ledger entry object.|
 
 ## Properties
 | Property	         | Type	                 |Description                                  |
 |:-------------------|:----------------------|:--------------------------------------------|
-|id                  |numeric                |The unique ID of the G/L Entry.              |
-|postingDate         |date                   |Specifies the posting date of the G/L Entry. |
-|documentNumber      |string, maximum size 20|Specifies the document number of the G/L Entry.|
-|documentType        |string                 |Specifies the document type of the G/L Entry.|
-|accountId           |GUID                   |Specifies the accountId of the G/L Entry.    |
-|accountNumber       |string, maximum size 20|Specifies the accountNumber of the G/L Entry.|
-|description         |string, maximum size 50|Specifies the description of the G/L Entry.  |
-|debitAmount         |numeric                |Specifies the debitAmount of the G/L Entry.  |
-|creditAmount        |numeric                |Specifies the creditAmount of the G/L Entry. |
-|lastModifiedDateTime|datetime               |The last datetime the G/L Entry was modified.|
+|accountId           |GUID                   |Specifies the account ID of the general ledger entry.    |
+|accountNumber       |string |Specifies the account number of the general ledger entry. The maximum size is 20 characters.|
+|creditAmount        |numeric                |Specifies the credit amount of the general ledger entry. |
+|debitAmount         |numeric                |Specifies the debit amount of the general ledger entry.  |
+|description         |string |Specifies the description of the general ledger entry. The maximum size is 50 characters.  |
+|documentNumber      |string |Specifies the document number of the general ledger entry. The maximum size is 20 characters.|
+|documentType        |string                 |Specifies the document type of the general ledger entry.|
+|id                  |numeric                |The unique identifier for the general ledger entry.              |
+|lastModifiedDateTime|datetime               |The last date time when the general ledger entry was modified.|
+|postingDate         |date                   |Specifies the posting date of the general ledger entry. |
 
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 
 ```json
 {
-  "id": "int",
-  "postingDate": "Date",
-  "documentNumber": "string",
-  "documentType": "string",
   "accountId": "GUID",
-  "accountNumber": "string",
-  "description": "string",
-  "debitAmount": "decimal",
-  "creditAmount": "decimal",
-  "lastModifiedDateTime": "datetime"
+  "accountNumber": "String",  
+  "creditAmount": "Decimal",
+  "debitAmount": "Decimal",
+  "description": "String",
+  "documentNumber": "String",
+  "documentType": "String",
+  "id": "Int",
+  "lastModifiedDateTime": "Datetime",
+  "postingDate": "Date"
 }
-
 ```
 
 

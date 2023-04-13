@@ -1,8 +1,8 @@
 ---
 title: "outlookCategory resource type"
 description: "Represents a category by which a user can group Outlook items such as messages and events. In Outlook, the user defines categories in a master list, and can apply one or more of these user-defined"
-localization_priority: Normal
-author: "svpsiva"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -22,7 +22,7 @@ Using the REST API, you can [create](../api/outlookuser-post-mastercategories.md
 You can also [get this master list of categories](../api/outlookuser-list-mastercategories.md), [get a specific category](../api/outlookcategory-get.md), 
 [update](../api/outlookcategory-update.md) the color associated with a category, or [delete](../api/outlookcategory-delete.md) a category. 
 You can apply a category to an item by assigning the **displayName** property of the category to the **categories** collection of the item.
-Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), [outlookTask](outlooktask.md), and [post](post.md).   
+Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), [outlookTask](outlooktask.md), [post](post.md), and [todoTask](todotask.md).   
 
 Each category is attributed by 2 properties: **displayName** and **color**. The **displayName** value must be unique in a user's master list. 
 The **color** however does not have to be unique; multiple categories in the master list can be mapped to the same color. You can map up 
@@ -106,7 +106,6 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/outlookcategory.md:\r\n      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
   ]
 }
 -->

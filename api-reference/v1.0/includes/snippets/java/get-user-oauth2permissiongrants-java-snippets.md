@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IOAuth2PermissionGrantCollectionPage oauth2PermissionGrants = graphClient.users("{id}").oauth2PermissionGrants()
+OAuth2PermissionGrantCollectionWithReferencesPage oauth2PermissionGrants = graphClient.users("6e7b768e-07e2-4810-8459-485f84f8f204").oauth2PermissionGrants()
 	.buildRequest()
 	.get();
 

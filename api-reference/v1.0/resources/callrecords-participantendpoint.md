@@ -1,8 +1,8 @@
 ---
 title: "participantEndpoint resource type"
 description: "The participantEndpoint type"
-localization_priority: Normal
-author: "stephenjust"
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -18,9 +18,9 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 |feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
 |identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 
 ## JSON representation
 
@@ -37,9 +37,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},
   "feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.identitySet"},
+  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"}
 }
 ```
 

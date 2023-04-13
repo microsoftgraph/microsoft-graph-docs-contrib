@@ -1,8 +1,8 @@
 ---
 title: "Manage resource access certificates in Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that manage resource access certificates for a tenant organization."
-author: "rolyon"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -16,11 +16,4 @@ Namespace: microsoft.graph
 
 You can import PFX certificates using Microsoft Graph API for Intune.
 
-The following Graph resources are available to manage enrollment in Intune:
-
-- [User PFX certificate](intune-raimportcerts-userpfxcertificate.md)
-- [User PFX intended purpose](intune-raimportcerts-userpfxintendedpurpose.md)
-- [User PFX padding scheme](intune-raimportcerts-userpfxpaddingscheme.md)
-
-
-
+Use Graph resources to manage certificates in Intune. See the table of content for a list of resources.

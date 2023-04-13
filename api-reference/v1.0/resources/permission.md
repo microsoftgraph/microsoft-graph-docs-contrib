@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
-localization_priority: Priority
+ms.localizationpriority: high
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +15,10 @@ Namespace: microsoft.graph
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
 
 Sharing permissions have a number of different forms.
-The **Permission** resource represents these different forms through facets on the resource.
+The **permission** resource represents these different forms through facets on the resource.
+
+OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
+**grantedTo** and **grantedToIdentities** will be deprecated going forward and the response will be migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
 
 ## JSON representation
 
@@ -28,6 +30,8 @@ Here is a JSON representation of the resource
     "link",
     "grantedTo",
     "grantedToIdentities",
+    "grantedToV2",
+    "grantedToIdentitiesV2",
     "invitation",
     "inheritedFrom",
     "shareId",
@@ -39,34 +43,40 @@ Here is a JSON representation of the resource
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
+
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
+  "grantedToIdentitiesV2": [{"@odata.type": "microsoft.graph.sharePointIdentitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"
+  "hasPassword": "boolean"  
 }
 ```
 
 ## Properties
 
-| Property      | Type                                      | Description
-|:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
-| grantedTo     | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentities | Collection([IdentitySet](identityset.md)) | For link type permissions, the details of the users to whom permission was granted. Read-only.
-| invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
-| inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
-| link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
-| roles         | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
-| expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
-| hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+| Property                         | Type                                      | Description |
+|:---------------------------------|:------------------------------------------|:-----------------
+| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
+| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only. |
+| hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.. |
+| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users and applications for this permission. Read-only. |
+| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only. |
+| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only. |
+| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only. |
+| inheritedFrom                    | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only. |
+| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
+| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only. |
+| roles                            | Collection of String                      | The type of permission, for example, `read`. See below for the full list of roles. Read-only. |
+| shareId                          | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only. |
+
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -77,14 +87,15 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
+[SharePointIdentitySet]: sharePointIdentitySet.md
 
 ### Roles property values
 
-| Role              | Details                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| Value           | Description                                                                        |
+|:----------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |
-| sp.full control | For SharePoint and OneDrive for Business this represents the owner role.       |
+| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 ## Sharing links
 The most common type of permissions are sharing links.
@@ -152,6 +163,30 @@ This link provides read and write access to the specific people in the `grantedT
       }
     }
   ],
+  "grantedToIdentitiesV2": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      },
+      "siteUser": {
+        "id": "1",
+        "displayName": "Misty Suarez",
+        "loginName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      },
+      "siteUser": {
+        "id": "2",
+        "displayName": "Judith Clemons",
+        "loginName": "Judith Clemons"
+      }
+    }
+  ],
   "roles": ["write"],
   "link": {
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
@@ -198,7 +233,7 @@ signs in.
   "id": "1",
   "roles": ["write"],
   "invitation": {
-    "email": "jd@gmail.com",
+    "email": "jd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -217,11 +252,22 @@ property will contain the information about the account that redeemed the permis
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName": "Robin Danielsen"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "invitation": {
-    "email": "jd@outlook.com",
+    "email": "rd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -240,11 +286,6 @@ property will contain the information about the account that redeemed the permis
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
-
-## Remarks
-
-OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -254,4 +295,3 @@ OneDrive for Business and SharePoint document libraries do not return the **inhe
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
-

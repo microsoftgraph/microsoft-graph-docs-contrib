@@ -1,14 +1,14 @@
 ---
-title: "Best practices for Excel APIs in Microsoft Graph"
-description: "List best practices and examples for Excel APIs in Microsoft Graph"
+title: "Best practices for working with the Excel API"
+description: "Find tips for working with Excel APIs in Microsoft Graph. Learn how to manage sessions, work with APIs that take a long time to complete, and reduce throttling errors."
 author: "grangeryy"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
-# Best practices for working with the Excel API in Microsoft Graph
+# Best practices for working with the Excel API
 
-This article provides recommendations for working with the Excel APIs in Microsoft Graph.
+This article provides recommendations for working with the [Excel APIs](/graph/api/resources/excel) in Microsoft Graph.
 
 ## Manage sessions in the most efficient way
 
@@ -20,23 +20,46 @@ The following example shows you how to add a new number to a table and then find
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_excel_session"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 
 The following is a successful response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -48,6 +71,11 @@ Content-length: 52
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "add_a_table_row"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/Table1/rows/add
 Content-type: application/json
@@ -58,12 +86,30 @@ workbook-session-id: {session-id}
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-a-table-row-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookTableRow"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 42
 
 {
   "index": 6,
@@ -75,6 +121,11 @@ Content-length: 42
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "look_up_value_in_table"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/functions/vlookup
 Content-type: application/json
@@ -88,8 +139,27 @@ workbook-session-id: {session-id}
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/look-up-value-in-table-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/look-up-value-in-table-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookFunctionResult"
+} -->
 ```http
 HTTP code: 200 OK
 content-type: application/json
@@ -103,25 +173,47 @@ content-type: application/json
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "close_excel_session"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/close-excel-session-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/close-excel-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/close-excel-session-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-For more details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0) and [Close session](/graph/api/workbook-closesession?view=graph-rest-1.0).
+For more details, see [Create session](/graph/api/workbook-createsession) and [Close session](/graph/api/workbook-closesession).
 
-## Working with APIs that take a long time to complete
+## Work with APIs that take a long time to complete
 
 You might notice that some operations take an indeterminate amount time to complete; for example, opening a large workbook. It is easy to hit timeout while waiting for the response to these requests. To resolve this issue, we provide the long-running operation pattern. When you use this pattern, you don't need to worry about the timeout for the request.
 
@@ -138,8 +230,13 @@ The following example creates a session using the long-running operation pattern
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_excel_session_with_long_running"
+}-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/createSession
 Prefer: respond-async
 Content-type: application/json
 {
@@ -147,9 +244,28 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-with-long-running-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-with-long-running-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-with-long-running-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 #### Response
 The long-running operation pattern will return a `202 Accepted` response similar to the following.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -160,11 +276,14 @@ Content-type: application/json
 ```
 
 In some cases, if the creation succeeds within seconds, it won't enter the long-running operation pattern; instead, it returns as a regular create session and the successful request will return a `201 Created` response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -198,11 +317,13 @@ Content-type: application/json
 
 ### Poll status of the long-running create session
 
-
 With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "poll_status"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
 {
@@ -260,14 +381,17 @@ Content-type: application/json
 }
 ```
 
-For more details about errors, see [Error codes](/concepts/workbook-error-codes.md)
+For more details about errors, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
 
 ### Acquire session information
 
 #### Request
 
 With a status of `succeeded`, you can get the created session information through `resourceLocation` with a request similar to the following.
-
+<!-- {
+  "blockType": "request",
+  "name": "acquire_session_information"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
 {
@@ -276,7 +400,11 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 
 #### Response
 The following is the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -287,4 +415,25 @@ Content-type: application/json
 }
 ```
 
->**Note:** Acquire session information depends on the initial request. You don't need to acquire the result if the initial request doesn't return a response body.
+> [!NOTE]
+> Acquire session information depends on the initial request. You don't need to acquire the result if the initial request doesn't return a response body.
+
+## Reduce throttling errors
+
+Excel APIs in Microsoft Graph affect the resource usage of multiple dependency services. The impact can vary between different requests: for example, you might expect that updating a short string in a single cell of a small workbook would consume fewer resources than adding a big table with complex formulas to a large workbook.
+
+Even with the same API, parameters and target workbooks can introduce significant differences. Therefore Excel API throttling isn't defined with simple and universal limit numbers, as they would result in more restrictive limits. The following best practices will help you complete tasks more quickly with fewer throttling errors.
+
+### Retry-After header
+
+In many cases, a throttling response includes a `Retry-After` header. Respecting the value of the header and delaying similar requests would help the client recover from throttling. For details about handling error responses from Excel APIs in Microsoft Graph, see [Error handling for Excel APIs in Microsoft Graph](workbook-error-handling.md).
+
+### Throttling and concurrency
+
+Another factor related to throttling is request concurrency. We don't recommend increasing concurrency when using Excel APIs (for example, parallelizing the requests to the same workbook), especially for write requests. Instead, unless there is a specific concern, such as significant networking overhead compared to very short request execution time, we recommend sequential usage in the most common case: for each workbook, only send the next request after receiving a successful response to the current request.
+
+Concurrent write requests to the same workbook don’t usually run in parallel (although in some cases they do); rather, they are often the cause of throttling, timeout (when requests are queued on servers), merge conflict (when concurrent sessions are involved) and other types of failures. They also complicate error handling; for example, when you receive a failure response, there is no way to confirm the status of other pending requests, which makes it difficult to determine or to recover the state of the workbook.
+
+## See also
+
+* [Use the Excel REST API](/graph/api/resources/excel)

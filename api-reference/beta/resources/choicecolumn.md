@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
-description: "The choiceColumn on a columnDefinition resource indicates that the column's values can be selected from a list of choices."
+description: The choiceColumn on a columnDefinition resource indicates that the column's values can be selected from a list of choices.
 ms.date: 09/11/2017
 title: ChoiceColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # ChoiceColumn resource type
 
 Namespace: microsoft.graph
@@ -18,6 +19,7 @@ The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indic
 ## JSON representation
 
 Here is a JSON representation of a **choiceColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.choiceColumn" } -->
 
 ```json
@@ -30,12 +32,11 @@ Here is a JSON representation of a **choiceColumn** resource.
 
 ## Properties
 
-| Property name      | Type               | Description
-|:-------------------|:-------------------|:----------------------------------------------
-| **allowTextEntry** | boolean            | If true, allows custom values that aren't in the configured choices.
-| **choices**        | collection(string) | The list of values available for this column.
-| **displayAs**      | string             | How the choices are to be presented in the UX. Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`
-
+| Property           | Type               | Description                                                                                                   |
+| :----------------- | :----------------- | :------------------------------------------------------------------------------------------------------------ |
+| **allowTextEntry** | boolean            | If true, allows custom values that aren't in the configured choices.                                          |
+| **choices**        | collection(string) | The list of values available for this column.                                                                 |
+| **displayAs**      | string             | How the choices are to be presented in the UX. Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons` |
 
 <!--
 {
@@ -47,5 +48,3 @@ Here is a JSON representation of a **choiceColumn** resource.
   "suppressions": []
 }
 -->
-
-

@@ -3,15 +3,15 @@
     {
       "ChangeList": [
         {
-          "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
+          "Id": "6990ba5d-3fd0-4c0f-836d-2ce020b1d2f5",
           "ApiChange": "Property",
           "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
           "ChangeType": "Addition",
-          "Description": "Added the following properties to the [alert](https://docs.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](https://docs.microsoft.com/en-us/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](https://docs.microsoft.com/en-us/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
+          "Description": "Added the following properties to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](https://learn.microsoft.com/en-us/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](https://learn.microsoft.com/en-us/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
           "Target": "alert,securityResources,networkConnection"
         }
       ],
-      "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
+      "Id": "6990ba5d-3fd0-4c0f-836d-2ce020b1d2f5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -21,15 +21,15 @@
     {
       "ChangeList": [
         {
-          "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+          "Id": "7f201f04-85ef-49cb-849f-4885fdd08870",
           "ApiChange": "Resource",
           "ChangedApiName": "create,get,list,threatAssessmentRequest",
           "ChangeType": "Addition",
-          "Description": "Added [create](https://docs.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) and [list](https://docs.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) APIs to manage [threatAssessmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) resources.",
+          "Description": "Added [create](https://learn.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [get](https://learn.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) and [list](https://learn.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) APIs to manage [threatAssessmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) resources.",
           "Target": "create,get,list,threatAssessmentRequest"
         }
       ],
-      "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+      "Id": "7f201f04-85ef-49cb-849f-4885fdd08870",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-02-01T00:00:00",
@@ -39,15 +39,15 @@
     {
       "ChangeList": [
         {
-          "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
+          "Id": "403de8ef-1aea-40ed-a4f8-2549073bf79e",
           "ApiChange": "method",
           "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
           "ChangeType": "Change",
-          "Description": "The [Update alert](https://docs.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-1.0\u0026tabs=http) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
+          "Description": "The [Update alert](https://learn.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-1.0\u0026tabs=http) method now updates the **comments** field with the following values only: **Closed in IPC**, **Closed in MCAS**.",
           "Target": "Update alert"
         }
       ],
-      "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
+      "Id": "403de8ef-1aea-40ed-a4f8-2549073bf79e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-01-01T00:00:00",
@@ -57,23 +57,23 @@
     {
       "ChangeList": [
         {
-          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
           "ApiChange": "Resource",
           "ChangedApiName": "create,get,list,threatAssessmentRequest",
           "ChangeType": "Addition",
-          "Description": "Added [create](https://docs.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](https://docs.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.",
+          "Description": "Added [create](https://learn.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](https://learn.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](https://learn.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.",
           "Target": "create,get,list,threatAssessmentRequest"
         },
         {
-          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
           "ApiChange": "Resource",
           "ChangedApiName": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label",
           "ChangeType": "Addition",
-          "Description": "Added optional request header, User-Agent, to [evaluate application](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta).",
+          "Description": "Added optional request header, User-Agent, to [evaluate application](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta).",
           "Target": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label"
         }
       ],
-      "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+      "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -83,7 +83,7 @@
     {
       "ChangeList": [
         {
-          "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+          "Id": "2b9eca99-9c5d-486c-bac6-22d71dde6b4b",
           "ApiChange": "Resource",
           "ChangedApiName": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All"
         }
       ],
-      "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+      "Id": "2b9eca99-9c5d-486c-bac6-22d71dde6b4b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -101,55 +101,55 @@
     {
       "ChangeList": [
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "detectedSensitiveContent",
           "ChangeType": "Change",
-          "Description": "Changed **detectedSensitiveContent** entity name to [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Description": "Changed **detectedSensitiveContent** entity name to [classificationResult](https://learn.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "displayName,uniqueCount,matches",
           "ChangeType": "Deletion",
-          "Description": "Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Description": "Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](https://learn.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "id,sensitiveTypeId",
           "ChangeType": "Change",
-          "Description": "Changed **id** to **sensitiveTypeId** properties of [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Description": "Changed **id** to **sensitiveTypeId** properties of [classificationResult](https://learn.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "confidence,confidenceLevel",
           "ChangeType": "Change",
-          "Description": "Changed **confidence** to **confidenceLevel** property of [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Description": "Changed **confidence** to **confidenceLevel** property of [classificationResult](https://learn.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "count",
           "ChangeType": "Addition",
-          "Description": "Added **count** property to [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta)/.",
+          "Description": "Added **count** property to [classificationResult](https://learn.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta)/.",
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Deletion",
-          "Description": "Removed **actionSource** property from [labelingOptions](https://docs.microsoft.com/en-us/graph/api/resources/labelingoptions?view=graph-rest-beta).",
+          "Description": "Removed **actionSource** property from [labelingOptions](https://learn.microsoft.com/en-us/graph/api/resources/labelingoptions?view=graph-rest-beta).",
           "Target": "labelingOptions"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditInfo",
           "ChangeType": "Deletion",
@@ -157,95 +157,95 @@
           "Target": ""
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "protectByDoNotForwardAction",
           "ChangeType": "Change",
-          "Description": "Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](https://docs.microsoft.com/en-us/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta).",
+          "Description": "Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](https://learn.microsoft.com/en-us/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta).",
           "Target": "protectDoNotForwardAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "alignment",
           "ChangeType": "Addition",
-          "Description": "Added **alignment** property to [addContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentheaderaction?view=graph-rest-beta).",
+          "Description": "Added **alignment** property to [addContentHeaderAction](https://learn.microsoft.com/en-us/graph/api/resources/addcontentheaderaction?view=graph-rest-beta).",
           "Target": "addContentHeaderAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "labelId,label",
           "ChangeType": "Change",
-          "Description": "Changed **labelId** property to **label** in [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Changed **labelId** property to **label** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
           "ChangeType": "Change",
-          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
-          "Description": "Added **actionSource** property to [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Description": "Added **actionSource** property to [recommendLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "labelId,label",
           "ChangeType": "Change",
-          "Description": "Changed **labelId** property to **label** in [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Description": "Changed **labelId** property to **label** in [applyLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
           "ChangeType": "Change",
-          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
-          "Description": "Added **actionSource** property to [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Description": "Added **actionSource** property to [applyLabelAction](https://learn.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "file,default",
           "ChangeType": "Change",
-          "Description": "Change [contentFormat](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**.",
+          "Description": "Change [contentFormat](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**.",
           "Target": "contentFormat"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "mandatory",
           "ChangeType": "Deletion",
-          "Description": "Removed **mandatory** value from [actionSource](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum.",
+          "Description": "Removed **mandatory** value from [actionSource](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum.",
           "Target": "actionSource"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "policyDefault,default",
           "ChangeType": "Change",
-          "Description": "Removed [actionSource](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **policyDefault** to **default**.",
+          "Description": "Removed [actionSource](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **policyDefault** to **default**.",
           "Target": "actionSource"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditMetadataKey",
           "ChangeType": "Deletion",
@@ -253,39 +253,39 @@
           "Target": ""
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabel",
           "ChangeType": "Change",
-          "Description": "Change **applyLabel** API to [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta).",
+          "Description": "Change **applyLabel** API to [evaluateApplication](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta).",
           "Target": "evaluateApplication"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabelFromClassification",
           "ChangeType": "Change",
-          "Description": "Change **applyLabelFromClassification** API to [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta).",
+          "Description": "Change **applyLabelFromClassification** API to [evaluateClassificationResults](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta).",
           "Target": "evaluateClassificationResults"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "removeLabel",
           "ChangeType": "Change",
-          "Description": "Change **removeLabel** API to [evaluateRemoval](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta).",
+          "Description": "Change **removeLabel** API to [evaluateRemoval](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta).",
           "Target": "evaluateRemoval"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditInfo",
           "ChangeType": "Deletion",
-          "Description": "Removed **auditInfo** from [extractLabel](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta).",
+          "Description": "Removed **auditInfo** from [extractLabel](https://learn.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta).",
           "Target": "extractLabel"
         }
       ],
-      "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+      "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -295,15 +295,15 @@
     {
       "ChangeList": [
         {
-          "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
+          "Id": "dff64024-cfa4-48d8-b8db-fa879298b292",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](https://docs.microsoft.com/en-us/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://docs.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
+          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations: [secureScore](https://learn.microsoft.com/en-us/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
-      "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
+      "Id": "dff64024-cfa4-48d8-b8db-fa879298b292",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -313,31 +313,31 @@
     {
       "ChangeList": [
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
           "ChangeType": "Addition",
-          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](https://docs.microsoft.com/en-us/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](https://docs.microsoft.com/en-us/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
+          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [tiindicator](https://learn.microsoft.com/en-us/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](https://learn.microsoft.com/en-us/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](https://learn.microsoft.com/en-us/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](https://learn.microsoft.com/en-us/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](https://learn.microsoft.com/en-us/graph/api/tiindicator-update?view=graph-rest-beta), [Delete tiIndicator](https://learn.microsoft.com/en-us/graph/api/tiindicator-delete?view=graph-rest-beta), [deleteTiIndicators](https://learn.microsoft.com/en-us/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta), [deleteTiIndicatorsByExternalId](https://learn.microsoft.com/en-us/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta), [submitTiIndicators](https://learn.microsoft.com/en-us/graph/api/tiindicator-submittiindicators?view=graph-rest-beta), [updateTiIndicators](https://learn.microsoft.com/en-us/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta).",
           "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
         },
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
           "ChangeType": "Addition",
-          "Description": "Added the security action APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](https://docs.microsoft.com/en-us/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](https://docs.microsoft.com/en-us/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](https://docs.microsoft.com/en-us/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](https://docs.microsoft.com/en-us/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](https://docs.microsoft.com/en-us/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
+          "Description": "Added the security action APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [securityAction](https://learn.microsoft.com/en-us/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](https://learn.microsoft.com/en-us/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](https://learn.microsoft.com/en-us/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](https://learn.microsoft.com/en-us/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](https://learn.microsoft.com/en-us/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
           "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
         },
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "historyStates,updateAlerts",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [historyStates](https://docs.microsoft.com/en-us/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](https://docs.microsoft.com/en-us/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
+          "Description": "Introduced new complex type [historyStates](https://learn.microsoft.com/en-us/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](https://learn.microsoft.com/en-us/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
           "Target": "historyStates,updateAlerts"
         }
       ],
-      "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+      "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -347,23 +347,23 @@
     {
       "ChangeList": [
         {
-          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+          "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
           "ApiChange": "Resource",
           "ChangedApiName": "complianceInformation",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [complianceInformation](https://docs.microsoft.com/en-us/graph/api/complianceInformation/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [complianceInformation](https://learn.microsoft.com/en-us/graph/api/complianceInformation/team?view=graph-rest-beta).",
           "Target": "complianceInformation"
         },
         {
-          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+          "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
           "ApiChange": "Resource",
           "ChangedApiName": "certificationControl",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [certificationControl](https://docs.microsoft.com/en-us/graph/api/certificationControl/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [certificationControl](https://learn.microsoft.com/en-us/graph/api/certificationControl/team?view=graph-rest-beta).",
           "Target": "certificationControl"
         }
       ],
-      "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+      "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
@@ -373,23 +373,23 @@
     {
       "ChangeList": [
         {
-          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+          "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:, [secureScores](https://docs.microsoft.com/en-us/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](https://docs.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
+          "Description": "Added the Secure Score APIs to the [security API](https://learn.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations: [secureScores](https://learn.microsoft.com/en-us/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](https://learn.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](https://learn.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
           "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
         },
         {
-          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+          "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
           "ApiChange": "Resource",
           "ChangedApiName": "secureScoreControlStateUpdate",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [secureScoreControlStateUpdate](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta)",
+          "Description": "Introduced new complex type [secureScoreControlStateUpdate](https://learn.microsoft.com/en-us/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta)",
           "Target": "secureScoreControlStateUpdate"
         }
       ],
-      "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+      "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
@@ -399,15 +399,15 @@
     {
       "ChangeList": [
         {
-          "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
+          "Id": "03100c5f-2c9d-43ef-aed7-6e3da35c371d",
           "ApiChange": "Resource",
           "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
           "ChangeType": "Addition",
-          "Description": "Added new enum types:, [alertFeedback](https://docs.microsoft.com/en-us/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](https://docs.microsoft.com/en-us/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](https://docs.microsoft.com/en-us/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](https://docs.microsoft.com/en-us/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](https://docs.microsoft.com/en-us/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](https://docs.microsoft.com/en-us/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](https://docs.microsoft.com/en-us/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](https://docs.microsoft.com/en-us/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
+          "Description": "Added new enum types: [alertFeedback](https://learn.microsoft.com/en-us/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](https://learn.microsoft.com/en-us/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](https://learn.microsoft.com/en-us/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](https://learn.microsoft.com/en-us/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](https://learn.microsoft.com/en-us/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](https://learn.microsoft.com/en-us/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](https://learn.microsoft.com/en-us/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](https://learn.microsoft.com/en-us/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
           "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
         }
       ],
-      "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
+      "Id": "03100c5f-2c9d-43ef-aed7-6e3da35c371d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
@@ -417,20 +417,37 @@
     {
       "ChangeList": [
         {
-          "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
+          "Id": "f0b26b58-db86-4c69-b339-8896fd929d18",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
           "ChangeType": "Addition",
-          "Description": "Added the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [alert](https://docs.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](https://docs.microsoft.com/en-us/graph/api/alert-get?view=graph-rest-beta), [List alerts](https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-beta), [Update alert](https://docs.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-beta), , Added the following supporting documentation:, [Errors](https://docs.microsoft.com/en-us/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
+          "Description": "Added the [security API](https://learn.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations: [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](https://learn.microsoft.com/en-us/graph/api/alert-get?view=graph-rest-beta), [List alerts](https://learn.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-beta), [Update alert](https://learn.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-beta). Added the following supporting documentation: [Errors](https://learn.microsoft.com/en-us/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
           "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
         }
       ],
-      "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
+      "Id": "f0b26b58-db86-4c69-b339-8896fd929d18",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "7f8dd226-41d6-456c-8836-f833ebe5f662",
+        "ApiChange": "Property",
+        "ChangedApiName": "parent",
+        "ChangeType": "Addition",
+        "Description": "Added the **parent** property to the [informationProtectionLabel](https://learn.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource.",
+        "Target": "informationProtectionLabel"
+      }],
+      "Id": "7f8dd226-41d6-456c-8836-f833ebe5f662",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-25T19:36:30.757Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
+

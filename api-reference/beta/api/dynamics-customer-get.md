@@ -1,10 +1,10 @@
 ---
-title: Get customers 
-description: Gets a customer object in Dynamics 365 Business Central.
+title: "Get customers"
+description: "Gets a customer object in Dynamics 365 Business Central."
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a customer object for Dynamics 365 Business Central.
+Retrieve the properties and relationships of a [customer](../resources/dynamics-customer.md) object for Dynamics 365 Business Central.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
+```http
 GET /financials/companies/{id}/customers/{id}
 ```
 
@@ -45,19 +45,21 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a **customers** object in the response body.
 
-**Request**
+## Examples
 
-Here is an example of the request.
+### Request
 
-```json
+The following is an example of a request.
+
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

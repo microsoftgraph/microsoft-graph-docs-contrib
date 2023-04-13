@@ -1,8 +1,8 @@
 ---
 title: "person resource type"
-description: "An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype)."
+description: "An aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email)."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype).
+An aggregation of information about a person from across mail and contacts. People can be local contacts or your organization's directory, and people from recent communications (such as email).
 
 ## Methods
 

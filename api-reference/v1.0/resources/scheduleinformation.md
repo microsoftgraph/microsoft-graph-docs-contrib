@@ -1,8 +1,8 @@
 ---
 title: "scheduleInformation resource type"
 description: "Represents the availability of a user, distribution list, or resource for a specified time period."
-localization_priority: Normal
-author: "harini84"
+ms.localizationpriority: medium
+author: "iamgirishck"
 ms.prod: ""
 doc_type: resourcePageType
 ---

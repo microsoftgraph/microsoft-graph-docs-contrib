@@ -2,8 +2,8 @@
 title: "bitlocker type"
 description: "BitLocker resource"
 author: "hafowler"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

@@ -11,12 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-  displayName: "displayName-value",
-  description: "description-value",
-  visibility: "visibility-value"
+    displayName: 'Greater Seattle District Technical Schools'
 };
 
-let res = await client.api('/directory/administrativeUnits/{id}')
+await client.api('/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8')
 	.update(administrativeUnit);
 
 ```

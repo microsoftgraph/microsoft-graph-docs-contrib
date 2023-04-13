@@ -1,17 +1,19 @@
 ---
 title: "calendarPermission resource type"
 description: "The permissions of a user with whom the calendar is shared."
-localization_priority: Normal
-author: "sochowdh"
+author: "iamgirishck"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---
 
 # calendarPermission resource type
 
+Namespace: microsoft.graph
+
 The permissions of a user with whom the calendar has been shared or delegated in an Outlook client.
 
-Get, update, and delete of calendar permissions is supported on behalf of only the calendar owner.
+List, create, get, update, and delete of calendar permissions is supported on behalf of only the calendar owner.
 
 Getting the calendar permissions of a calendar on behalf of a sharee or delegate returns an empty calendar permissions collection.
 
@@ -21,6 +23,8 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List](../api/calendar-list-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Get a collection of calendarPermission objects that describe the identity and roles of users with whom the specified calendar has been shared or delegated. |
+| [Create](../api/calendar-post-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Create calendarPermission object. |
 | [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Read properties and relationships of calendarPermission object. |
 | [Update](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Update calendarPermission object. |
 | [Delete](../api/calendarpermission-delete.md) | None | Delete calendarPermission object. |
@@ -38,7 +42,7 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 
 ### calendarRoleType values
 
-| Values        | Description |
+| Member        | Description |
 |:--------------|:------------|
 | none | Calendar is not shared with the user. |
 | freeBusyRead | User is a sharee who can view free/busy status of the owner on the calendar. |
@@ -48,7 +52,6 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 | delegateWithoutPrivateEventAccess | User is a delegate who has write access but cannot view information of the owner's private events on the calendar. |
 | delegateWithPrivateEventAccess | User is a delegate who has write access and can view information of the owner's private events on the calendar. |
 | custom | User has custom permissions to the calendar. |
-
 
 ## JSON representation
 

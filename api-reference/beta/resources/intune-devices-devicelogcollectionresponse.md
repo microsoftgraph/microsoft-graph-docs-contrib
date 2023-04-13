@@ -1,7 +1,7 @@
 ---
 title: "deviceLogCollectionResponse resource type"
 description: "Windows Log Collection request entity."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,6 +39,7 @@ Windows Log Collection request entity.
 |initiatedByUserPrincipalName|String|The UPN for who initiated the request|
 |expirationDateTimeUTC|DateTimeOffset|The DateTime of the expiration of the logs|
 |size|Double|The size of the logs. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|enrolledByUser|String|The User Principal Name (UPN) of the user that enrolled the device|
 
 ## Relationships
 None
@@ -62,12 +63,7 @@ Here is a JSON representation of the resource.
   "receivedDateTimeUTC": "String (timestamp)",
   "initiatedByUserPrincipalName": "String",
   "expirationDateTimeUTC": "String (timestamp)",
-  "size": "4.2"
+  "size": "4.2",
+  "enrolledByUser": "String"
 }
 ```
-
-
-
-
-
-

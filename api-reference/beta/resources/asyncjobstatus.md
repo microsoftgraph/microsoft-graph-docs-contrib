@@ -3,9 +3,9 @@ author: JeremyKelley
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
 title: AsyncJobStatus
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 
 # AsyncJobStatus resource

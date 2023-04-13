@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOneDriveActivityUserCounts"
 description: "Get the trend in the number of active OneDrive users."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveactivityusercounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserCounts(period='D7')
 ```
 

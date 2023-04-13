@@ -1,17 +1,19 @@
 ---
-title: "Update open extension"
+title: "Update openTypeExtension"
 description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.prod: "extensions"
 ---
 
-# Update open extension
+# Update openTypeExtension
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
 
@@ -21,12 +23,16 @@ extension is updated.
 
 The data in an extension can be primitive types, or arrays of primitive types.
 
+See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+
 ## Permissions
 
-Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
@@ -35,9 +41,9 @@ Depending on the resource that the extension was created in and the permission t
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -46,30 +52,26 @@ navigation property of that instance to identify the extension, and do a `PATCH`
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{Id}/extensions/{extensionId}
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+PATCH /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+PATCH /devices/{deviceId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/extensions/{extensionId}
+PATCH /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+PATCH /organization/{organizationId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 
 All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
-
-## Path parameters
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an instance of the corresponding collection. Required.|
-|extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 ## Request headers
 | Name       | Value |
@@ -86,7 +88,13 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 | Name       | Value |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | Unique string |
+
+Use this operation to either store data in the open extension property, update the stored data, or delete the existing data.
+    - To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties.
+    - To delete data from a property in the open extension object, set its value to `null`.
+    - To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph will delete it.
+    - To delete data from all properties in the open extension object but keep the open extension object, update the values of the properties to `null`.
 
 ## Response
 
@@ -201,7 +209,8 @@ The following is the request and request body to change the `expirationDate` to 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_opentypeextension"
+  "name": "update_opentypeextension",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=","Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"]
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
@@ -220,6 +229,7 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -228,8 +238,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-opentypeextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-opentypeextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-opentypeextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

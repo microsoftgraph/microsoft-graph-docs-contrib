@@ -1,7 +1,7 @@
 ---
 title: "Update macOSCustomConfiguration"
 description: "Update the properties of a macOSCustomConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |payloadName|String|Name that is displayed to the user.|
 |payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1146
+Content-length: 1185
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -111,7 +112,8 @@ Content-length: 1146
   "version": 7,
   "payloadName": "Payload Name value",
   "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "payload": "cGF5bG9hZA==",
+  "deploymentChannel": "userChannel"
 }
 ```
 
@@ -120,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1318
+Content-Length: 1357
 
 {
   "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
@@ -157,12 +159,7 @@ Content-Length: 1318
   "version": 7,
   "payloadName": "Payload Name value",
   "payloadFileName": "Payload File Name value",
-  "payload": "cGF5bG9hZA=="
+  "payload": "cGF5bG9hZA==",
+  "deploymentChannel": "userChannel"
 }
 ```
-
-
-
-
-
-

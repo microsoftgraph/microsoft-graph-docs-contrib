@@ -1,7 +1,7 @@
 ---
 title: "iosKerberosSingleSignOnExtension resource type"
 description: "Represents a Kerberos-type Single Sign-On extension profile for iOS devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,6 +44,8 @@ Inherits from [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossin
 |passwordEnableLocalSync|Boolean|Enables or disables password syncing. This won't affect users logged in with a mobile account on macOS.|
 |blockActiveDirectorySiteAutoDiscovery|Boolean|Enables or disables whether the Kerberos extension can automatically determine its site name.|
 |passwordChangeUrl|String|Gets or sets the URL that the user will be sent to when they initiate a password change.|
+|signInHelpText|String|Text displayed to the user at the Kerberos sign in window. Available for devices running iOS and iPadOS versions 14 and later.|
+|managedAppsInBundleIdACLIncluded|Boolean|When set to True, the Kerberos extension allows managed apps, and any apps entered with the app bundle ID to access the credential. When set to False, the Kerberos extension allows all apps to access the credential. Available for devices running iOS and iPadOS versions 14 and later.|
 
 ## Relationships
 None
@@ -84,12 +86,8 @@ Here is a JSON representation of the resource.
   "activeDirectorySiteCode": "String",
   "passwordEnableLocalSync": true,
   "blockActiveDirectorySiteAutoDiscovery": true,
-  "passwordChangeUrl": "String"
+  "passwordChangeUrl": "String",
+  "signInHelpText": "String",
+  "managedAppsInBundleIdACLIncluded": true
 }
 ```
-
-
-
-
-
-

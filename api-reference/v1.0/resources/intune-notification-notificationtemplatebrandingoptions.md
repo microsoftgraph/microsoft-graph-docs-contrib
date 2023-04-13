@@ -1,7 +1,7 @@
 ---
 title: "notificationTemplateBrandingOptions enum type"
 description: "Branding Options for the Message Template. Branding is defined in the Intune Admin Console."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -18,16 +18,10 @@ Branding Options for the Message Template. Branding is defined in the Intune Adm
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|No Branding.|
-|includeCompanyLogo|1|Include Company Logo.|
-|includeCompanyName|2|Include Company Name.|
-|includeContactInformation|4|Include Contact Info.|
-
-
-
-
-
-
-
-
-
+|none|0|Indicates that no branding options are set in the message template.|
+|includeCompanyLogo|1|Indicates to include company logo in the message template.|
+|includeCompanyName|2|Indicates to include company name in the message template.|
+|includeContactInformation|4|Indicates to include contact information in the message template.|
+|includeCompanyPortalLink|8|Indicates to include company portal website link in the message template.|
+|includeDeviceDetails|16|Indicates to include device details in the message template.|
+|unknownFutureValue|32|Evolvable enumeration sentinel value. Do not use.|

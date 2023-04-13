@@ -1,7 +1,7 @@
 ---
 title: "workforceIntegrationEncryption resource type"
 description: "An encryption entity defining the protocol and secret for a workforce integration."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "managedIOSLobApp resource type"
 description: "Contains properties and inherited properties for Managed iOS Line Of Business apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -110,19 +110,12 @@ Here is a JSON representation of the resource.
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true,
+    "v15_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
   "buildNumber": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

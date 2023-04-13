@@ -1,8 +1,8 @@
 ---
 title: "chatMessageMention resource type"
 description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
-localization_priority: Normal
-author: nkramer
+ms.localizationpriority: medium
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -30,14 +30,14 @@ In the **content** property, the first mention has an HTML `id` attribute of 0. 
 
 The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.
 
-For a fuller context of the example, see [List channel message replies](../api/channel-list-messagereplies.md#example).
+For a fuller context of the example, see [List channel message replies](../api/chatmessage-list-replies.md#example).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
 |mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
-|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.  If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.|
+|mentioned|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|The entity (user, application, team, or channel) that was @mentioned.|
 
 
 ## JSON representation
@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
 {
   "id": 1024,
   "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
  }
 ```
 

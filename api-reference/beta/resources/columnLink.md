@@ -1,12 +1,13 @@
 ---
 author: daspek
-description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
+description: A columnLink on a contentType attaches a site columnDefinition to that content type.
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
+
 # ColumnLink resource type
 
 Namespace: microsoft.graph
@@ -20,6 +21,7 @@ A **columnLink** on a [contentType][] attaches a site **columnDefinition** to th
 ## JSON representation
 
 Here is a JSON representation of a **columnLink** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
@@ -31,10 +33,10 @@ Here is a JSON representation of a **columnLink** resource.
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | The unique identifier for the column.
-| **name**      | string | The name of the column  in this content type.
+| Property | Type   | Description                                   |
+| :------- | :----- | :-------------------------------------------- |
+| **id**   | string | The unique identifier for the column.         |
+| **name** | string | The name of the column  in this content type. |
 
 <!--
 {
@@ -46,5 +48,3 @@ Here is a JSON representation of a **columnLink** resource.
   "suppressions": []
 }
 -->
-
-

@@ -1,7 +1,7 @@
 ---
 title: "networkIPv6ConfigurationManagementCondition resource type"
 description: "IPv6 configuration-based management conditions may be defined that will trigger when a device detects certain IP network settings. An IP config management condition will only be considered TRUE when the network connection is active. IPv6 DHCP server addresses may not be matched. This is because Windows(circa Redstone) does not expose this information to the Natural Authentication service."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,7 +40,7 @@ Inherits from [networkManagementCondition](../resources/intune-fencing-networkma
 |createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag of the management condition. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|String|The IPv6 subnet to be connected to. e.g. 2001:db8::/32|
 |ipV6Gateway|String|The IPv6 gateway address to. e.g 2001:db8::1|
 |ipV6DNSServerList|String collection|An IPv6 DNS servers configured for the adapter.|
@@ -82,9 +82,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

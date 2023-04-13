@@ -1,0 +1,169 @@
+{
+  "redirections": [
+  {
+    "source_path_from_root": "/api-reference/beta/api/connectionoperation-get.md",
+    "redirect_url": "/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/external-post-connections.md",
+    "redirect_url": "/graph/api/externalconnectors-external-post-connections?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-delete.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-get.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-get?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-list.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-post-groups.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-post-schema.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-put-items.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalconnection-update.md",
+    "redirect_url": "/graph/api/externalconnectors-externalconnection-update?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalgroup-delete.md",
+    "redirect_url": "/graph/api/externalconnectors-externalgroup-delete?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalgroup-post-members.md",
+    "redirect_url": "/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalgroupmember-delete.md",
+    "redirect_url": "/graph/api/externalconnectors-externalgroupmember-delete?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalitem-delete.md",
+    "redirect_url": "/graph/api/externalconnectors-externalitem-delete?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalitem-get.md",
+    "redirect_url": "/graph/api/externalconnectors-externalitem-get?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/externalitem-update.md",
+    "redirect_url": "/graph/api/externalconnectors-externalitem-update?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/schema-get.md",
+    "redirect_url": "/graph/api/externalconnectors-schema-get?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/acl.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-acl?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/configuration.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-configuration?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/connectionoperation.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-connectionoperation?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/externalconnection.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/externalgroup.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/externalgroupmember.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-externalgroupmember?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/externalitem.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/externalitemcontent.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-externalitemcontent?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/property.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-property?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/schema.md",
+    "redirect_url": "/graph/api/resources/externalconnectors-schema?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/appleidentityprovider.md",
+    "redirect_url": "/graph/api/resources/applemanagedidentityprovider?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-list.md",
+    "redirect_url": "/graph/api/identitycontainer-list-identityproviders?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-post-identityproviders.md",
+    "redirect_url": "/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-list-availableprovidertypes.md",
+    "redirect_url": "/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-list.md",
+    "redirect_url": "/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-post-identityproviders.md",
+    "redirect_url": "/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-list-availableprovidertypes.md",
+    "redirect_url": "/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0",
+    "redirect_document_id": true
+  }
+]
+}

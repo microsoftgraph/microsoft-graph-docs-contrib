@@ -1,7 +1,7 @@
 ---
 title: "windowsEnrollmentStatusScreenSettings resource type"
 description: "Enrollment status screen setting"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -50,9 +50,3 @@ Here is a JSON representation of the resource.
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
-
-
-
-
-

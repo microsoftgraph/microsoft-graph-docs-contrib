@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerAction resource type"
 description: "Parameter for action triggerConfigurationManagerAction"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Parameter for action triggerConfigurationManagerAction
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|The action type to trigger on Configuration Manager client. Possible values are: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`.|
+|action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|The action type to trigger on Configuration Manager client. Possible values are: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`.|
 
 ## Relationships
 None
@@ -38,9 +38,3 @@ Here is a JSON representation of the resource.
   "action": "String"
 }
 ```
-
-
-
-
-
-

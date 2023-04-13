@@ -1,7 +1,7 @@
 ---
 title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -43,38 +43,70 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_schemaextension"
+  "blockType": "request",
+  "name": "get_schemaextension_extcivhhslh_sbtest1",
+  "sampleKeys": ["extcivhhslh_sbtest1"]
 }-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/schemaExtensions/extcivhhslh_sbtest1
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-extcivhhslh-sbtest1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-extcivhhslh-sbtest1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-extcivhhslh-sbtest1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-extcivhhslh-sbtest1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-extcivhhslh-sbtest1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-schemaextension-extcivhhslh-sbtest1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-    "id":"graphlearn_test",
-    "description": "Yet another test schema",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
+    "id": "extcivhhslh_sbtest1",
+    "description": "SbGraph test extensions",
     "targetTypes": [
-        "User", "Group"
+        "contact",
+        "group"
     ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+    "status": "Available",
+    "owner": "da033fe6-d48e-435d-8014-e98a4b166900",
     "properties": [
         {
-            "name": "testName",
+            "name": "customerType",
             "type": "String"
         }
     ]

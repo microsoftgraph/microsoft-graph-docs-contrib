@@ -1,7 +1,7 @@
 ---
 title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
@@ -10,8 +10,6 @@ doc_type: "resourcePageType"
 # roomList resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a group of [room](room.md) objects defined in the tenant.
 

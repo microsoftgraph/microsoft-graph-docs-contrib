@@ -1,10 +1,10 @@
 ---
 title: "convertIdResult resource type"
 description: "The result of an ID format conversion performed by the translateExchangeIds function."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # convertIdResult resource type
@@ -17,9 +17,9 @@ The result of an ID format conversion performed by the [translateExchangeIds](..
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
+| errorDetails | [genericError](genericerror.md) | An error object indicating the reason for the conversion failure. This value is not present if the conversion succeeded. |
 | sourceId | String | The identifier that was converted. This value is the original, un-converted identifier. |
 | targetId | String | The converted identifier. This value is not present if the conversion failed. |
-| errorDetails | [genericError](genericerror.md) | An error object indicating the reason for the conversion failure. This value is not present if the conversion succeeded. |
 
 ## JSON representation
 
@@ -36,11 +36,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "sourceId": "String",
-  "targetId": "String",
   "errorDetails": {
     "@odata.type": "microsoft.graph.genericError"
-  }
+  },
+  "sourceId": "String",
+  "targetId": "String"
 }
 ```
 

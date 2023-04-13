@@ -1,13 +1,13 @@
 ---
-title: "OneNoteResource resource type"
+title: "oneNoteResource resource type"
 description: "An image or other file resource on a OneNote page. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: ""
+ms.prod: notes
 doc_type: resourcePageType
 ---
 
-# OneNoteResource resource type
+# oneNoteResource resource type
 
 Namespace: microsoft.graph
 

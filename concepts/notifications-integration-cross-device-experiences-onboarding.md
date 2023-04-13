@@ -1,12 +1,15 @@
 ---
-title: "Onboarding to cross-device experiences for Microsoft Graph notifications "
-description: "Register your application on the Windows Dev Center to enable your app clients to receive cross-device notifications sent through Microsoft Graph."
-localization_priority: Priority
+title: "Onboard to cross-device experiences for notifications (deprecated)"
+description: "Your app needs to register cross-device information to authorize Microsoft Graph to send notifications via native push notification services (deprecated)."
+ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---
 
-# Onboarding to cross-device experiences for Microsoft Graph notifications
+# Onboarding to cross-device experiences for Microsoft Graph notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and stopped returning data in January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs). For more information, see the blog post [Retiring Microsoft Graph notifications API (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 >[!NOTE]
 >If you're only targeting web endpoints, you can go directly to setting up your [app service](notifications-integrating-app-server.md) to send notifications.

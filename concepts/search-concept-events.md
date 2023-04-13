@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search calendar events"
-description: "You are able to search in user’s own calendar."
+title: "Use the Microsoft Search API to search Outlook calendar events"
+description: "Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity is based on the auth token."
 author: "knightsu"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search calendar events
+# Use the Microsoft Search API to search Outlook calendar events
 
-Use the Microsoft Search API to search for events in the signed-in user’s primary calendar. The user identity for the search is based on the auth token.
+Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity for the search is based on the auth token.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -16,10 +16,10 @@ Use the Microsoft Search API to search for events in the signed-in user’s prim
 
 ### Request
 
-This example searches in the user's calendar for the keyword "contoso", and will return up to 25 results.
+This example searches in the user's calendar for the keyword "contoso", and returns up to 25 results.
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -38,14 +38,14 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
   {
    "@odata.type": "#microsoft.graph.searchResponse",
@@ -92,9 +92,9 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
-- For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.
+- For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

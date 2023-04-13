@@ -1,9 +1,9 @@
 ---
 title: "stsPolicy resource type"
 description: "Represents an abstract base type for policy types that control Microsoft identity platform behavior."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents an abstract base type for policy types that control [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/) behavior.
+Represents an abstract base type for policy types that control [Microsoft identity platform](/azure/active-directory/develop/) behavior.
 
 Inherits from [policyBase](policyBase.md).
 
@@ -23,10 +23,10 @@ None
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Unique identifier for this policy. Read-only. Inherited from [policyBase](policyBase.md).|
 |description|String| Description for this policy. Inherited from [policyBase](policyBase.md).|
 |displayName|String| Display name for this policy. Inherited from [policyBase](policyBase.md).|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.|
+|id|String| Unique identifier for this policy. Read-only. Inherited from [policyBase](policyBase.md).|
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 
 ## Relationships
@@ -66,4 +66,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

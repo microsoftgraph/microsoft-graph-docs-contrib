@@ -1,9 +1,9 @@
 ---
 title: "applicationEnforcedRestrictionsSessionControl resource type"
 description: "Session control to enforce application restrictions."
-localization_priority: Normal
-author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "davidspooner"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

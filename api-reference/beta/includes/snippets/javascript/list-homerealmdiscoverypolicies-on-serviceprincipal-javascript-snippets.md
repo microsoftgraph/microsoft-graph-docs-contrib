@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/homeRealmDiscoveryPolicies')
+let homeRealmDiscoveryPolicies = await client.api('/servicePrincipals/19c308f2-e088-464d-8ccb-7137b7bab660/homeRealmDiscoveryPolicies')
 	.version('beta')
 	.get();
 

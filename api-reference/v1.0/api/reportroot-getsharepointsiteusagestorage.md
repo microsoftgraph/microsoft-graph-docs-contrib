@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointSiteUsageStorage"
 description: "Get the trend of storage allocated and consumed during the reporting period."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusagestorage"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageStorage(period='D7')
 ```
 

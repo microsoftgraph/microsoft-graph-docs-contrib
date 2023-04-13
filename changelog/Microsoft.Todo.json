@@ -1,0 +1,382 @@
+{
+  "changelog":[
+    {
+      "ChangeList": [
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentInfo?view=graph-rest-1.0) resource.",
+          "Target": "attachmentInfo"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentBase?view=graph-rest-1.0) resource.",
+          "Target": "attachmentBase"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentSession?view=graph-rest-1.0) resource.",
+          "Target": "attachmentSession"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskFileAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskFileAttachment?view=graph-rest-1.0) resource.",
+          "Target": "taskFileAttachment"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachments** navigation property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDateTime** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-31T04:43:11.3139298Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+      {
+        "ChangeList": [
+          {
+            "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Tasks.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resources.",
+            "Target": "todoTask"
+          },
+          {
+            "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Tasks.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resources.",
+            "Target": "todoTask"
+          }
+        ],
+        "Id": "e9bffd04-83e7-4be4-8083-31e39f23da13",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-01-31T04:43:11.3139298Z",
+        "WorkloadArea": "To-do tasks",
+        "SubArea": ""
+      },
+    {
+      "ChangeList": [
+        {
+          "Id": "6e441013-7739-421a-8aad-c1489b499a19",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDateTime** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "6e441013-7739-421a-8aad-c1489b499a19",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-12T11:32:15.0505686Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentInfo](https://learn.microsoft.com/en-us/graph/api/resources/attachmentinfo?view=graph-rest-beta) resource type.",
+          "Target": "attachmentInfo"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentSession](https://learn.microsoft.com/en-us/graph/api/resources/attachmentsession?view=graph-rest-beta) resource type.",
+          "Target": "attachmentSession"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentBase](https://learn.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource type.",
+          "Target": "attachmentBase"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskFileAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskFileAttachment](https://learn.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource and supported methods.",
+          "Target": "taskFileAttachment"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attachments",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachments** relationship to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-05T11:32:54.7667846Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [checklistItem](https://learn.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-1.0) resource type",
+          "Target": "checklistItem"
+        },
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **checklistItems** relationship to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-31T07:00:09.3656536Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+     },
+     {
+      "ChangeList": [
+        {
+          "Id": "bebb4928-f4b8-4be7-928d-223cf77475c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [checklistItem](https://learn.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource type",
+          "Target": "checklistItem"
+        },
+        {
+          "Id": "bebb4928-f4b8-4be7-928d-223cf77475c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "bebb4928-f4b8-4be7-928d-223cf77475c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **checklistItems** relationship to [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "bebb4928-f4b8-4be7-928d-223cf77475c0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-31T10:55:17.3190865Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+     },
+     {
+      "ChangeList": [
+        {
+          "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoTask, change notifications",
+          "ChangeType": "Addition",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
+          "Target": "todoTask, change notifications"
+        }
+      ],
+      "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id":"ed102a69-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Resource",
+          "ChangedApiName":"todo",
+          "ChangeType":"Addition",
+          "Description":"Added the [todo](https://learn.microsoft.com/en-us/graph/api/resources/todo?view=graph-rest-1.0) resource type",
+          "Target":"todo"
+        },
+        {
+          "Id":"ed13de97-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Resource",
+          "ChangedApiName":"todoTaskList",
+          "ChangeType":"Addition",
+          "Description":"Added the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource type",
+          "Target":"todoTaskList"
+        },
+        {
+          "Id":"ed164316-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Resource",
+          "ChangedApiName":"todoTask",
+          "ChangeType":"Addition",
+          "Description":"Added the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource type",
+          "Target":"todoTask"
+        },
+        {
+          "Id":"ed18a510-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Resource",
+          "ChangedApiName":"linkedResource",
+          "ChangeType":"Addition",
+          "Description":"Added the [linkedResource](https://learn.microsoft.com/en-us/graph/api/resources/linkedResource?view=graph-rest-1.0) resource type",
+          "Target":"linkedResource"
+        },
+        {
+          "Id":"ed1b082b-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"wellknownListName",
+          "ChangeType":"Addition",
+          "Description":"Added the **wellknownListName** enumeration type",
+          "Target":"wellknownListName"
+        },
+        {
+          "Id":"ed1d739d-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"bodyType",
+          "ChangeType":"Addition",
+          "Description":"Added the **bodyType** enumeration type",
+          "Target":"bodyType"
+        },
+        {
+          "Id":"ed1fcb16-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"importance",
+          "ChangeType":"Addition",
+          "Description":"Added the **importance** enumeration type",
+          "Target":"importance"
+        },
+        {
+          "Id":"ed222fa6-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"taskStatus",
+          "ChangeType":"Addition",
+          "Description":"Added the **taskStatus** enumeration type",
+          "Target":"taskStatus"
+        },
+        {
+          "Id":"ed248f43-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Method",
+          "ChangedApiName":"delta",
+          "ChangeType":"Addition",
+          "Description":"Added the [delta](https://learn.microsoft.com/en-us/graph/api/todoTaskList-delta?view=graph-rest-1.0) method to the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todoTaskList?view=graph-rest-1.0) resource",
+          "Target":"todoTaskList"
+        },
+        {
+          "Id":"ed26f2d8-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Method",
+          "ChangedApiName":"delta",
+          "ChangeType":"Addition",
+          "Description":"Added the [delta](https://learn.microsoft.com/en-us/graph/api/todoTask-delta?view=graph-rest-1.0) method to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource",
+          "Target":"todoTask"
+        }
+      ],
+      "Id":"ed0b6656-1392-11eb-baa1-5b13c31fb2cd",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2020-10-21T11:45:32.803Z",
+      "WorkloadArea":"To-do tasks",
+      "SubArea":""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id":"ed0dc6bd-1392-11eb-baa1-5b13c31fb2cd",
+          "ApiChange":"Relationship",
+          "ChangedApiName":"todo",
+          "ChangeType":"Addition",
+          "Description":"Added the **todo** relationship to [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource",
+          "Target":"user"
+        }
+      ],
+      "Id":"ed0b6656-1392-11eb-baa1-5b13c31fb2cd",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2020-10-21T11:45:32.803Z",
+      "WorkloadArea":"Users",
+      "SubArea":""
+    }
+  ]
+}

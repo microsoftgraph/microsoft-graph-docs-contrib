@@ -1,8 +1,8 @@
 ---
 title: "deviceManagementAutopilotEvent resource type"
 description: "Represents an Autopilot flow event."
-author: "dougeby"
-localization_priority: Normal
+author: "jaiprakashmb"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # deviceManagementAutopilotEvent resource type
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -41,7 +39,10 @@ Represents an Autopilot flow event.
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot profile name.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Enrollment Status Page profile name|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|windows10EnrollmentCompletionPageConfigurationId|String|Enrollment Status Page profile ID|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page device setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page account setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Device operating system version.|
 |deploymentDuration|Duration|Autopilot deployment duration including enrollment.|
 |deploymentTotalDuration|Duration|Total deployment duration from enrollment to Desktop screen.|
@@ -82,7 +83,10 @@ Here is a JSON representation of the resource.
   "windowsAutopilotDeploymentProfileDisplayName": "String",
   "enrollmentState": "String",
   "windows10EnrollmentCompletionPageConfigurationDisplayName": "String",
+  "windows10EnrollmentCompletionPageConfigurationId": "String",
   "deploymentState": "String",
+  "deviceSetupStatus": "String",
+  "accountSetupStatus": "String",
   "osVersion": "String",
   "deploymentDuration": "String (duration)",
   "deploymentTotalDuration": "String (duration)",
@@ -96,9 +100,3 @@ Here is a JSON representation of the resource.
   "enrollmentFailureDetails": "String"
 }
 ```
-
-
-
-
-
-

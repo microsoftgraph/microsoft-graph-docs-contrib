@@ -1,7 +1,7 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -34,22 +34,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-
-  "Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune-mam-json.md, /api-reference/v1.0/resources/json.md"
-
-  ],
-
-}
--->
-
-
-
-
-
-
-
-

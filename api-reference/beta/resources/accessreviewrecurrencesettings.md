@@ -1,17 +1,19 @@
 ---
-title: "accessReviewRecurrenceSettings resource type"
+title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReviewRecurrenceSettings resource type
+# accessReviewRecurrenceSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 The **accessReviewRecurrenceSettings** resource type is used in the [accessReviewSettings](accessreviewsettings.md) resource and specifies that the access review recurs at regular intervals.
 
@@ -22,7 +24,7 @@ The **accessReviewRecurrenceSettings** resource type is used in the [accessRevie
 | recurrenceType | String | The recurrence interval. Possible vaules: `onetime`, `weekly`, `monthly`, `quarterly`, `halfyearly` or `annual`.                                                                   |
 | recurrenceEndType | String | How the recurrence ends. Possible values: `never`, `endBy`, `occurrences`, or `recurrenceCount`. If it is `never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | durationInDays | Int32 | The duration in days for recurrence. |
-| recurrenceCount | Int32 | The count of recurrences, if the value of **recurrenceEndType** is `occurrences`, or 0 otherwise. |
+| recurrenceCount | Int32 | The count of recurrences, if the value of **recurrenceEndType** is `occurrences`, or `0` otherwise. |
 
 ## JSON representation
 

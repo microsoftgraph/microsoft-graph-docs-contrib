@@ -1,9 +1,9 @@
 ---
 title: "secureScore resource type"
 description: "Represents a tenant's secure score per day of scoring data, at the tenant and control level."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 
@@ -27,16 +27,16 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 |Property |Type |Description |
 |:--|:--|:--|
-|id |String|Provider-generated GUID/unique identifier. Read-only. Required.|
-|	azureTenantId	|	String	|	GUID string for tenant ID.	|
 |	activeUserCount	|	Int32	|	Active user count of the given tenant.	|
+|	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
+|	azureTenantId	|	String	|	GUID string for tenant ID.	|
+|	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
 |	createdDateTime	|	DateTimeOffset	|	The date when the entity is created.  |
 |	currentScore	|	Double	|	Tenant current attained score on specified date.	|
 |	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).	|
+|id |String|Provider-generated GUID/unique identifier. Read-only. Required.|
 |	licensedUserCount	|	Int32	|	Licensed user count of the given tenant.	|
 |	maxScore |	Double	|	Tenant maximum possible score on specified date.	|
-|	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
-|	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
 |vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore). Required.|
 
 

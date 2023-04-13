@@ -10,11 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users')
+let users = await client.api('/users')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
 	.search('displayName:wa')
-	.orderby('displayName ')
+	.orderby('displayName')
 	.get();
 
 ```

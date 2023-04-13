@@ -1,10 +1,10 @@
 ---
 title: "synchronizationRule resource type"
 description: "Defines how the synchronization should be performed for the synchronization engine."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationRule resource type

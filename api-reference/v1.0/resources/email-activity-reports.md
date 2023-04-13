@@ -1,8 +1,8 @@
 ---
 title: "Email activity reports"
 description: "Use the email activity reports to get a high level view of email traffic within your organization. You can also drill into the Email Activity widget to understand the trends and details of the email activity per user in your organization."
-localization_priority: Priority
-author: "pranoychaudhuri"
+ms.localizationpriority: high
+author: "sarahwxy"
 ms.prod: "reports"
 doc_type: conceptualPageType
 ---

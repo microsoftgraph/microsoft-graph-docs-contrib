@@ -1,8 +1,8 @@
 ---
 title: "groupLifecyclePolicy: renewGroup"
 description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
-localization_priority: Normal
-author: "yyuank"
+ms.localizationpriority: medium
+author: "psaffaie"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -15,21 +15,22 @@ Namespace: microsoft.graph
 
 Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-> **Note:** When calling the v1.0 endpoint, use the [Renew group](/graph/api/group-renew?view=graph-rest-1.0) method.
+> **Note:** When calling the v1.0 endpoint, use the [Renew group](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) method.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All or Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
-|Application | Group.ReadWrite.All or Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)    |
+| :------------------------------------- | :--------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All or Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported                                  |
+| Application                            | Group.ReadWrite.All or Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupLifecyclePolicies/renewGroup
 
@@ -37,17 +38,18 @@ POST /groupLifecyclePolicies/renewGroup
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to renew. |
+| Parameter | Type | Description                   |
+| :-------- | :--- | :---------------------------- |
+| groupId   | Guid | The id of the group to renew. |
 
 ## Response
 
@@ -57,21 +59,22 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "grouplifecyclepolicy_renewgroup"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/renewGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-renewgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,20 +83,30 @@ Content-length: 57
 [!INCLUDE [sample-code](../includes/snippets/javascript/grouplifecyclepolicy-renewgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/grouplifecyclepolicy-renewgroup-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/grouplifecyclepolicy-renewgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/grouplifecyclepolicy-renewgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/grouplifecyclepolicy-renewgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/grouplifecyclepolicy-renewgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

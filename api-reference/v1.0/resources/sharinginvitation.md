@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: SharingInvitation
-localization_priority: Normal
-description: "The SharingInvitation resource groups invitation-related data items into a single structure."
-ms.prod: ""
+title: sharingInvitation resource type
+ms.localizationpriority: medium
+description: "The sharingInvitation resource groups invitation-related data items into a single structure."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# SharingInvitation resource type
+# sharingInvitation resource type
 
 Namespace: microsoft.graph
 
-The **SharingInvitation** resource groups invitation-related data items into a single structure.
+Groups invitation-related data items into a single structure.
 
 ## JSON representation
 
@@ -45,7 +44,7 @@ Here is a JSON representation of the resource.
 
 ## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
 [DriveItem]: driveitem.md
 [IdentitySet]: identityset.md

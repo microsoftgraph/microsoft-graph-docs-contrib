@@ -1,10 +1,10 @@
 ---
 title: "entity resource type"
-description: ""
-localization_priority: Normal
+description: "Represents an entity."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "MSGraphDocsVteam"
+ms.prod: "applications"
+author: "keylimesoda"
 ---
 
 # entity resource type
@@ -13,17 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents an entity.
+
 ## Properties
 | Property | Type  | Description |
 |:---------|:------|:------------|
-|id        |String | Read-only.  |
+|id        |String | The unique identifier for an entity. Read-only.  |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

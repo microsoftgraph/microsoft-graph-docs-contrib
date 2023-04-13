@@ -1,19 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: SharedDriveItem
-localization_priority: Normal
+title: sharedDriveItem resource type
+ms.localizationpriority: medium
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# SharedDriveItem resource type
+# sharedDriveItem resource type
 
 Namespace: microsoft.graph
 
-The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
+The **sharedDriveItem** resource is returned when using the [shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
 ## JSON representation
 
@@ -49,7 +47,7 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | The unique identifier for the share being accessed.              |
 | name     | String                        | The display name of the shared item.                             |
-| owner    | [IdentitySet](identityset.md) | Information about the owner of the shared item being referenced. |
+| owner    | [identitySet](identityset.md) | Information about the owner of the shared item being referenced. |
 
 ## Relationships
 
@@ -82,7 +80,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 ## Remarks
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

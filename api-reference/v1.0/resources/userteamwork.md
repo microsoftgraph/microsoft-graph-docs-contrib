@@ -1,9 +1,9 @@
 ---
 title: "userTeamwork resource type"
-description: "A container for Microsoft Teams features available per user. "
-author: "clearab"
+description: "A container for Microsoft Teams features available per user."
+author: "akjo"
 doc_type: resourcePageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -23,6 +23,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|associatedTeams|[associatedTeamInfo](associatedteaminfo.md) collection| The list of [associatedTeamInfo](associatedteaminfo.md) objects that a [user](user.md) is associated with.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
 
 ## JSON representation
@@ -39,7 +40,6 @@ The following is a JSON representation of the resource.
 {
   "id": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

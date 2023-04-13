@@ -2,7 +2,7 @@
 title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Calculated insight that includes the list of documents shared with a user.
+
+This insight includes documents hosted on OneDrive/SharePoint in the user's Microsoft 365 tenant that are shared with the user, and documents that are attached as files and sent to the user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 Get a list of documents shared with the signed-in user.
 
->**Note**: Only the user can make requests using the user's id or principal name.
+>**Note**: Only the user can make requests using the user's ID or principal name.
 
 ```http
 GET /me/insights/shared
@@ -67,48 +69,55 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.
 ## Example
 
-##### Request
+## Examples
 
-Here is an example of the request.
+### Request
+
+The following is an example of a request.
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "value": [
-        {   
-            "id": "id-value",
-            "lastShared" : { 
-                "sharedDateTime" : "sharedDateTime-value",  
-                "sharingSubject" : "sharingSubject-value",
-                "sharingType" : "sharingType-value", 
-                "sharedBy" : { 
-                    "displayName" : "displayName-value", 
-                    "id": "id-value" 
-                }
-                "sharingReference" : { 
-                    "webUrl" : "webUrl-value",
-                    "type: "type-value", 
-                    "id": "id-value"
-                } 
+        {
+            "id": "AWb0Qy4TEA1KhLW-k1L5mSjtxZAcxDFkTKiTNA-2kZDTXzrMX_4FhECOU0bKZVj1uReivYoYYoJNqTeuC-x1Agtm9EMuExANSoS1vpNS-ZkoBA",
+            "lastShared": {
+                "sharedDateTime": "2021-03-23T08:41:05Z",
+                "sharingType": "Direct",
+                "sharedBy": {
+                    "displayName": "Megan Bowen",
+                    "address": "MeganB@contoso.com",
+                    "id": "3e0c9f05-b9b8-4cf5-9b35-a4e11b24b5b7"
+                },
+                "sharingReference": {}
             },
-            "resourceVisualization": { 
-                "title" : "title-value, 
-                "type"  : "type-value",
-                "mediaType" : "mediaType-value",
-                "previewImageUrl" : previewImageUrl-value, 
-                "previewText" : "previewText-value", 
-                "containerWebUrl" : "containerWebUrl-value", 
-                "containerDisplayName" : "containerDisplayName-value", 
-                "containerType" : "containerType-value" 
-            }, 
-            "resourceReference" : { 
-                "webUrl" : "webUrl-value", 
-                "id": "id-value", 
-                "type: "type-value" 
+            "resourceVisualization": {
+                "title": "CE Annual Report",
+                "type": "Word",
+                "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "previewImageUrl": "https://contoso-my.sharepoint.com/_api/v2.0/drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL/thumbnails/0/small/thumbnailContent",
+                "previewText": "Contoso Annual Report Anne Wallace Sales Contoso today announced financial results for its most recent fi",
+                "containerWebUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/Documents/Forms/All.aspx",
+                "containerDisplayName": "Megan Bowen",
+                "containerType": "OneDriveBusiness"
+            },
+            "resourceReference": {
+                "webUrl": "https://contoso-my.sharepoint.com/personal/meganb_m365x841051_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B8ABDA217-6218-4D82-A937-AE0BEC75020B%7D&file=CE%20Annual%20Report.docx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "id": "drives/b!ZvRDLhMQDUqEtb6TUvmZKO3FkBzEMWRMqJM0D7aRkNNfOsxf_gWEQI5TRsplWPW5/items/01K6ZMU4QXUK6YUGDCQJG2SN5OBPWHKAQL",
+                "type": "microsoft.graph.driveItem"
+            }
+        }
+    ]
 }
 ```

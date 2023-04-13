@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSkypeForBusinessDeviceUsageUserDetail"
 description: "Get details about Skype for Business device usage by user."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -86,7 +86,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinessdeviceusageuserdetail"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageUserDetail(period='D7')
 ```
 

@@ -10,11 +10,11 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id", "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"}
+		{"@odata.id", "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde"}
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].HomeRealmDiscoveryPolicies
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies.References
 	.Request()
 	.AddAsync(homeRealmDiscoveryPolicy);
 

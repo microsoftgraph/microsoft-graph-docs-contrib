@@ -1,7 +1,7 @@
 ---
 title: "Get userExperienceAnalyticsOverview"
 description: "Read properties and relationships of the userExperienceAnalyticsOverview object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 1213
 
 {
   "value": {
@@ -72,6 +72,10 @@ Content-Length: 853
     "overallScore": 12,
     "deviceBootPerformanceOverallScore": 1,
     "bestPracticesOverallScore": 9,
+    "workFromAnywhereOverallScore": 12,
+    "appHealthOverallScore": 5,
+    "resourcePerformanceOverallScore": 15,
+    "batteryHealthOverallScore": 9,
     "insights": [
       {
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -88,13 +92,11 @@ Content-Length: 853
     ],
     "state": "insufficientData",
     "deviceBootPerformanceHealthState": "insufficientData",
-    "bestPracticesHealthState": "insufficientData"
+    "bestPracticesHealthState": "insufficientData",
+    "workFromAnywhereHealthState": "insufficientData",
+    "appHealthState": "insufficientData",
+    "resourcePerformanceHealthState": "insufficientData",
+    "batteryHealthState": "insufficientData"
   }
 }
 ```
-
-
-
-
-
-

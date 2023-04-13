@@ -1,0 +1,728 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "2ee81f9c-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource type",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "2eecd0a7-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchQuery](https://learn.microsoft.com/en-us/graph/api/resources/searchQuery?view=graph-rest-1.0) resource type",
+          "Target": "searchQuery"
+        },
+        {
+          "Id": "2eef29a4-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource type",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "2ef17baa-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchHitsContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchHitsContainer](https://learn.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource type",
+          "Target": "searchHitsContainer"
+        },
+        {
+          "Id": "2ef3f5b8-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchHit",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-1.0) resource type",
+          "Target": "searchHit"
+        },
+        {
+          "Id": "2ef65887-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource type",
+          "Target": "searchEntity"
+        },
+        {
+          "Id": "2ef8bfab-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "entityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **entityType** enumeration type",
+          "Target": "entityType"
+        },
+        {
+          "Id": "2efb3300-251c-11eb-8461-5e37877ca705",
+          "ApiChange": "Method",
+          "ChangedApiName": "query",
+          "ChangeType": "Addition",
+          "Description": "Added the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+          "Target": "searchEntity"
+        }
+      ],
+      "Id": "2ee31212-251c-11eb-8461-5e37877ca705",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-12T19:20:54.087Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "90839e99-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryAlterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "908600f4-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "value",
+          "ChangeType": "Addition",
+          "Description": "Added the **value** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "9088645a-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlterationOptions](https://learn.microsoft.com/en-us/graph/api/resources/searchAlterationOptions?view=graph-rest-beta) resource type.",
+          "Target": "searchAlterationOptions"
+        },
+        {
+          "Id": "908ac5ba-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchResultSet",
+          "ChangeType": "Addition",
+          "Description": "Added the searchResultSet resource type.",
+          "Target": "searchResultSet"
+        },
+        {
+          "Id": "908d291d-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [alterationResponse](https://learn.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-beta) resource type.",
+          "Target": "alterationResponse"
+        },
+        {
+          "Id": "908f8b1b-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAlteration",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlteration](https://learn.microsoft.com/en-us/graph/api/resources/searchAlteration?view=graph-rest-beta) resource type.",
+          "Target": "searchAlteration"
+        },
+        {
+          "Id": "9091ee4e-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alteredQueryToken",
+          "ChangeType": "Addition",
+          "Description": "Added the [alteredQueryToken](https://learn.microsoft.com/en-us/graph/api/resources/alteredQueryToken?view=graph-rest-beta) resource type.",
+          "Target": "alteredQueryToken"
+        },
+        {
+          "Id": "9094536b-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "searchAlterationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchAlterationType** enumeration type.",
+          "Target": "searchAlterationType"
+        },
+        {
+          "Id": "9096b4de-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "queryAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationOptions** parameter to the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
+          "Target": "query"
+        },
+        {
+          "Id": "909915c1-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "searchTerms",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **searchTerms** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "909b77d1-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitsContainers",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **hitsContainers** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "909ddbf4-a779-11eb-a835-c815efda831b",
+          "ApiChange": "Method",
+          "ChangedApiName": "query",
+          "ChangeType": "Change",
+          "Description": "Changed the return type for the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method.",
+          "Target": "query"
+        }
+      ],
+      "Id": "90813f52-a779-11eb-a835-c815efda831b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-27T16:56:52.220Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5902af1d-c7b6-4f13-ae56-139dedff79e8",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Change",
+          "Description": "Renamed the **unknownfuturevalue** member to **unknownFutureValue**.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "5902af1d-c7b6-4f13-ae56-139dedff79e8",
+          "ApiChange": "Member",
+          "ChangedApiName": "person",
+          "ChangeType": "Addition",
+          "Description": "Added the **person** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "5902af1d-c7b6-4f13-ae56-139dedff79e8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-06T14:12:02.1740756Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "33000df9-0ed3-4beb-9dab-abfc603fc1a2",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknownFutureValue** member to the **bucketAggregationSortProperty** enumeration.",
+          "Target": "bucketAggregationSortProperty"
+        },
+        {
+          "Id": "33000df9-0ed3-4beb-9dab-abfc603fc1a2",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknownFutureValue** member to the **searchAlterationType** enumeration.",
+          "Target": "searchAlterationType"
+        }
+      ],
+      "Id": "33000df9-0ed3-4beb-9dab-abfc603fc1a2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-13T08:21:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "bucketAggregationSortProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the **bucketAggregationSortProperty** enumeration type.",
+          "Target": "bucketAggregationSortProperty"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregationOption",
+          "ChangeType": "Addition",
+          "Description": "Added the [aggregationOption](https://learn.microsoft.com/en-us/graph/api/resources/aggregationOption?view=graph-rest-1.0) resource type.",
+          "Target": "aggregationOption"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bucketAggregationDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [bucketAggregationDefinition](https://learn.microsoft.com/en-us/graph/api/resources/bucketAggregationDefinition?view=graph-rest-1.0) resource type.",
+          "Target": "bucketAggregationDefinition"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bucketAggregationRange",
+          "ChangeType": "Addition",
+          "Description": "Added the [bucketAggregationRange](https://learn.microsoft.com/en-us/graph/api/resources/bucketAggregationRange?view=graph-rest-1.0) resource type.",
+          "Target": "bucketAggregationRange"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAggregation",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAggregation](https://learn.microsoft.com/en-us/graph/api/resources/searchAggregation?view=graph-rest-1.0) resource type.",
+          "Target": "searchAggregation"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchBucket",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchBucket](https://learn.microsoft.com/en-us/graph/api/resources/searchBucket?view=graph-rest-1.0) resource type.",
+          "Target": "searchBucket"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Property",
+          "ChangedApiName": "aggregations",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregations** property to [searchHitsContainer](https://learn.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource.",
+          "Target": "searchHitsContainer"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Property",
+          "ChangedApiName": "aggregationFilters",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregationFilters** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Property",
+          "ChangedApiName": "aggregations",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregations** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Property",
+          "ChangedApiName": "sortProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **sortProperties** property to [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sortProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [sortProperty](https://learn.microsoft.com/en-us/graph/api/resources/sortProperty?view=graph-rest-1.0) resource type.",
+          "Target": "sortProperty"
+        }
+      ],
+      "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-13T08:21:04.628851Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitsContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the **hitsContainers** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplates** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "searchTerms",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchTerms** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "value",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **value** property from the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchResultSet",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **searchResultSet** resource type.",
+          "Target": "searchResultSet"
+        },
+        {
+          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "query",
+          "ChangeType": "Change",
+          "Description": "Updated the [query](https://learn.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to return a collection of [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
+          "Target": "query"
+        }
+      ],
+      "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-28T12:49:29.5221544Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "searchAlterationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchAlterationType** enumeration type.",
+          "Target": "searchAlterationType"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [alterationResponse](https://learn.microsoft.com/en-us/graph/api/resources/alterationresponse?view=graph-rest-1.0) resource type.",
+          "Target": "alterationResponse"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alteredQueryToken",
+          "ChangeType": "Addition",
+          "Description": "Added the [alteredQueryToken](https://learn.microsoft.com/en-us/graph/api/resources/alteredquerytoken?view=graph-rest-1.0) resource type.",
+          "Target": "alteredQueryToken"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplate](https://learn.microsoft.com/en-us/graph/api/resources/resulttemplate?view=graph-rest-1.0) resource type.",
+          "Target": "resultTemplate"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplateOption",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplateOption](https://learn.microsoft.com/en-us/graph/api/resources/resulttemplateoption?view=graph-rest-1.0) resource type.",
+          "Target": "resultTemplateOption"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAlteration",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlteration](https://learn.microsoft.com/en-us/graph/api/resources/searchalteration?view=graph-rest-1.0) resource type.",
+          "Target": "searchAlteration"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlterationOptions](https://learn.microsoft.com/en-us/graph/api/resources/searchalterationoptions?view=graph-rest-1.0) resource type.",
+          "Target": "searchAlterationOptions"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateId** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-1.0) resource.",
+          "Target": "searchHit"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryAlterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplates** property to the [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "fca2af31-c9df-449e-b848-ecb564518c30",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-02-16T06:29:33.9252671Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09b50a1f-9206-4fef-a7d8-efd6ec0dca1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "Size",
+          "ChangeType": "Change",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta).",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "09b50a1f-9206-4fef-a7d8-efd6ec0dca1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd371113-6fc5-4790-bd13-788fc7231400",
+          "ApiChange": "Property",
+          "ChangedApiName": "Size",
+          "ChangeType": "Change",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0).",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "fd371113-6fc5-4790-bd13-788fc7231400",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c0112d11-a5ad-473c-bd83-ce6cd3d37d2c",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitId",
+          "ChangeType": "Change",
+          "Description": "Changed the **hitId** format for the [message](https://learn.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "c0112d11-a5ad-473c-bd83-ce6cd3d37d2c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "266b304d-06ba-43e1-b157-f63cd0b1797e",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitId",
+          "ChangeType": "Change",
+          "Description": "Changed the **hitId** format for the [message](https://learn.microsoft.com/en-us/graph/search-concept-messages) entity from REST syntax to EWS syntax.\nReplace '-' with '/' and replace '_' with '+' can format the EWS-syntax back to REST-syntax",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "266b304d-06ba-43e1-b157-f63cd0b1797e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-07-14T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "95e7245e-ce25-4944-9f4b-d1ab9b932e69",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-10T12:02:57.3248454Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a728a91-0c10-4a52-88df-609487321793",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Bookmark.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Bookmark.Read.All` to access [bookmark](https://learn.microsoft.com/en-us/graph/search-concept-bookmark)",
+          "Target": "bookmark"
+        }
+      ],
+      "Id": "4a728a91-0c10-4a52-88df-609487321793",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:11:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Acronym.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of `Acronym.Read.All` to access [acronym](https://learn.microsoft.com/en-us/graph/search-concept-acronym)",
+          "Target": "acronym"
+        }
+      ],
+      "Id": "9ed09e7e-eb50-4879-9c12-df9f57bb51e1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-04T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collapseProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [collapseProperty](https://learn.microsoft.com/en-us/graph/api/resources/collapseProperty?view=graph-rest-beta) resource type.",
+          "Target": "collapseProperty"
+        },
+        {
+          "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+          "ApiChange": "Property",
+          "ChangedApiName": "collapseProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **collapseProperties** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "7ef93dd9-b55d-4abf-8c3b-6c15f6409050",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-01T08:33:47.66211Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "76a83fe0-9c28-47eb-82ac-a9909d8af214",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCollapsed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCollapsed** property to the [searchHit](https://learn.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-beta) resource.",
+          "Target": "searchHit"
+        }
+      ],
+      "Id": "76a83fe0-9c28-47eb-82ac-a9909d8af214",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-27T08:44:58.7479522Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4039f744-de6c-4418-b4e9-868d99180b54",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Change",
+          "Description": "Changed the region value format from GUID to 3-letter region code.",
+          "Target": "searchResponse"
+        }
+      ],
+      "Id": "4039f744-de6c-4418-b4e9-868d99180b54",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-11-07T04:11:04.628137Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6380cd6b-1d32-49c3-a9ff-9f9a89edc00d",
+          "ApiChange": "Permission",
+          "ChangedApiName": "QnA.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `QnA.Read.All` to access the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-beta) resource.",
+          "Target": "qna"
+        }
+      ],
+      "Id": "65c699bb-49cf-4a9d-bee0-7e2950d966a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-12T04:12:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }
+  ]
+}

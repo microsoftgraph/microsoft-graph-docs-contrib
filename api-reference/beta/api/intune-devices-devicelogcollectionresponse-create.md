@@ -1,7 +1,7 @@
 ---
 title: "Create deviceLogCollectionResponse"
 description: "Create a new deviceLogCollectionResponse object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create the d
 |initiatedByUserPrincipalName|String|The UPN for who initiated the request|
 |expirationDateTimeUTC|DateTimeOffset|The DateTime of the expiration of the logs|
 |size|Double|The size of the logs. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|enrolledByUser|String|The User Principal Name (UPN) of the user that enrolled the device|
 
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/logCollectionRequests
 Content-type: application/json
-Content-length: 479
+Content-length: 526
 
 {
   "@odata.type": "#microsoft.graph.deviceLogCollectionResponse",
@@ -81,7 +82,8 @@ Content-length: 479
   "receivedDateTimeUTC": "2016-12-31T23:59:48.6545758-08:00",
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
   "expirationDateTimeUTC": "2017-01-01T00:02:49.2157996-08:00",
-  "size": 1.3333333333333333
+  "size": 1.3333333333333333,
+  "enrolledByUser": "Enrolled By User value"
 }
 ```
 
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceLogCollectionResponse",
@@ -102,12 +104,7 @@ Content-Length: 528
   "receivedDateTimeUTC": "2016-12-31T23:59:48.6545758-08:00",
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
   "expirationDateTimeUTC": "2017-01-01T00:02:49.2157996-08:00",
-  "size": 1.3333333333333333
+  "size": 1.3333333333333333,
+  "enrolledByUser": "Enrolled By User value"
 }
 ```
-
-
-
-
-
-

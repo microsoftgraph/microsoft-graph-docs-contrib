@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search messages"
-description: "You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
+title: "Use the Microsoft Search API to search Outlook messages"
+description: "You can use the Microsoft Search API in Microsoft Graph to search for information in email messages and return messages ranked by relevance."
 author: "knightsu"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search Outlook messages
 
-Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's own mailbox.
+Use the Microsoft Search API in Microsoft Graph to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's own mailbox.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -27,7 +27,7 @@ The following example queries messages in the signed-in user's mailbox that cont
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -55,7 +55,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -117,7 +117,7 @@ The following example uses the search query shown in Example 1, and sorts the re
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -137,13 +137,14 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
+
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -200,9 +201,9 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
-- For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.
+- For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 
 ## Next steps
 
-- [Use the Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

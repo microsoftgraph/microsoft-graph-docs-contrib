@@ -1,9 +1,9 @@
 ---
 title: "identitySource resource type"
 description: "The identitySource type is the abstract base type for an identity source for a connected organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) and [externalDomainFederation](externaldomainfederation.md), are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
+The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) and [externalDomainFederation](externaldomainfederation.md), are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
 
 ## Properties
 

@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Search across a SharePoint tenant for sites that match keywords provided."
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
+
+The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 [sites]: ../resources/site.md
 
@@ -27,34 +29,71 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Sites.Read.All, Sites.ReadWrite.All
 
+>**Note:** This method does not support the Sites.Selected application permission.
+
 ## HTTP request
-```http
-GET /sites?$search={query}
+
+<!-- { "blockType": "ignored" } -->
+
+``` http
+GET /sites?search={query}
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and the collection of [site](../resources/site.md) objects in the response body.
+
+## Examples
+
+### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$search={query}
+<!-- {
+  "blockType": "request",
+  "name": "list_permission_that_match_query"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/sites?search={query}
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-that-match-query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-that-match-query-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-that-match-query-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-permission-that-match-query-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-that-match-query-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-permission-that-match-query-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## Response
-
+### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -82,10 +121,8 @@ Content-type: application/json
   ]
 }
 ```
->**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -93,7 +130,4 @@ Content-type: application/json
   "tocPath": "Sites/Search",
   "suppressions": [
   ]
-}
--->
-
-
+} -->

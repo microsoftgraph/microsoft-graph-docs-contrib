@@ -2,8 +2,8 @@
 title: "Call Microsoft Graph from a Cloud Solution Provider application"
 description: "This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."
 author: "jackson-woods"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 
@@ -13,7 +13,9 @@ ms.custom: graphiamtop20
 
 This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta) resources.
+> [!IMPORTANT]
+> Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview) resources.
+> 
 
 ## What is a partner-managed application
 
@@ -36,7 +38,9 @@ The initial steps required here follow most of the same steps used to register a
 
 ### Pre-consent your app for all your customers
 
-Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD powershell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+
+# [Azure AD PowerShell](#tab/azuread)
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
@@ -61,6 +65,33 @@ Finally grant your partner-managed app those configured permissions for all your
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
+
+# [Microsoft Graph PowerShell](#tab/graphpowershell)
+
+1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
+
+    ```PowerShell
+    Connect-MgGraph
+    ```
+
+2. Find the group that represents the *Adminagents*.
+
+    ```PowerShell
+    $group = Get-MgGroup -Filter "displayName eq 'Adminagents'"
+    ```
+
+3. Find the service principal that has the same *appId* as your app.
+
+    ```PowerShell
+    $sp = Get-MgServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    ```
+
+4. Finally, add the service principal to the *Adminagents* group.
+
+    ```PowerShell
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
+    ```
+----
 
 ## Token acquisition flows
 

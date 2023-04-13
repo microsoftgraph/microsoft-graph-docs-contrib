@@ -1,9 +1,9 @@
 ---
 title: "Resolve Microsoft Graph authorization errors"
 description: "Find out how to resolve Microsoft Graph 401 and 403 authorization errors."
-author: "davidmu1"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+author: "FaithOmbongi"
+ms.localizationpriority: high
+ms.prod: "applications"
 ---
 
 # Resolve Microsoft Graph authorization errors
@@ -17,7 +17,7 @@ Authorization errors can occur as a result of several different issues, most of 
 
 ## Steps to resolve common errors
 
-To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one error might apply. You can also check the answers already available on Stack Overflow for [401 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50) and [403 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50). If you can't find a solution to your problem, [ask a new question on Stack Overflow](https://stackoverflow.com/questions/ask) and tag with *microsoft-graph*.
+To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one error might apply. You can also check the answers already available on Microsoft Q&A for [401 errors](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+401+&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user) and [403 errors](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+403&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user). If you can't find a solution to your problem, [ask a new question on Microsoft Q&A](/answers/products/m365#microsoft-graph) and tag with *microsoft-graph**.
 
 **401 Unauthorized error: Is your token valid?** <br>
 
@@ -33,9 +33,9 @@ Verify that you have requested the correct set of permissions based on the Micro
 **403 Forbidden error: Did your app acquire a token to match chosen permissions?** <br>
 
 Make sure that the type of permissions requested or granted matches the type of access token that your app acquires. You might be requesting and granting application permissions but using delegated interactive code flow tokens instead of client credential flow tokens, or requesting and granting delegated permissions but using client credential flow tokens instead of delegated code flow tokens. <br>
-* [Get access on behalf of users and delegated permissions](/graph/auth_v2_user) 
+* [Get access on behalf of users and delegated permissions](/graph/auth-v2-user) 
 * [Azure AD v2.0 - OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [Get access without a user (daemon service) and application permissions](/graph/auth_v2_service)
+* [Get access without a user (daemon service) and application permissions](/graph/auth-v2-service)
 * [Azure AD v2.0 - OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 **403 Forbidden error: Resetting password** <br>

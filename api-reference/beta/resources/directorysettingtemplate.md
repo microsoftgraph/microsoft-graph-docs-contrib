@@ -1,9 +1,9 @@
 ---
 title: "directorySettingTemplate resource type"
 description: "Directory setting templates represent system-defined settings available to the tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Directory setting templates represent system-defined settings available to the tenant. [Directory settings](directorysetting.md) can be created based on the available directorySettingTemplates, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings.  Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
+Directory setting templates represent system-defined settings available to the tenant. [Directory settings](directorysetting.md) can be created based on the available **directorySettingTemplates**, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings. Currently, the only templates available for groups apply to Microsoft 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
-> **Note**: The /beta version of the directorySettingTemplate resource type only applies to groups. The /v1.0 version has been renamed to groupSettingTemplate.
+For more information about each setting, see [group (directory) settings](/graph/group-directory-settings).
+
+> [!TIP]
+> The `/v1.0` version of this resource is named [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true).
 
 ## Methods
 

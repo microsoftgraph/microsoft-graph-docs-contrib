@@ -1,7 +1,7 @@
 ---
 title: "depIOSEnrollmentProfile resource type"
 description: "The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,9 +40,8 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportPhoneNumber|String|Support phone number Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -52,7 +51,6 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |termsAndConditionsDisabled|Boolean|Indicates if 'Terms and Conditions' setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |touchIdDisabled|Boolean|Indicates if touch id setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |applePayDisabled|Boolean|Indicates if Apple pay setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|zoomDisabled|Boolean|Indicates if zoom setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |siriDisabled|Boolean|Indicates if siri setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -60,6 +58,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -79,6 +78,16 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |preferredLanguageScreenDisabled|Boolean|Indicates if Preferred language screen is disabled|
 |deviceToDeviceMigrationDisabled|Boolean|Indicates if Device To Device Migration is disabled|
 |welcomeScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
+|zoomDisabled|Boolean|Indicates if zoom setup pane is disabled|
+|restoreCompletedScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|updateCompleteScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|forceTemporarySession|Boolean|Indicates if temporary sessions is enabled|
+|temporarySessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|userSessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|passcodeLockGracePeriodInSeconds|Int32|Indicates timeout before locked screen requires the user to enter the device passocde to unlock it|
+|carrierActivationUrl|String|Carrier URL for activating device eSIM.|
+|userlessSharedAadModeEnabled|Boolean|Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-ios|
 
 ## Relationships
 None
@@ -104,7 +113,6 @@ Here is a JSON representation of the resource.
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "String",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "String",
@@ -114,7 +122,6 @@ Here is a JSON representation of the resource.
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -122,6 +129,9 @@ Here is a JSON representation of the resource.
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String",
   "configurationWebUrl": true,
+  "enabledSkipKeys": [
+    "String"
+  ],
   "iTunesPairingMode": "String",
   "managementCertificates": [
     {
@@ -146,12 +156,16 @@ Here is a JSON representation of the resource.
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 1024,
+  "userSessionTimeoutInSeconds": 1024,
+  "passcodeLockGracePeriodInSeconds": 1024,
+  "carrierActivationUrl": "String",
+  "userlessSharedAadModeEnabled": true
 }
 ```
-
-
-
-
-
-

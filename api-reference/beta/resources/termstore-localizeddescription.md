@@ -2,8 +2,8 @@
 title: "localizedDescription resource type"
 description: "Represents the localized description used to describe a term in the term store."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

@@ -1,17 +1,19 @@
 ---
-title: "accessReview resource type"
+title: "accessReview resource type (deprecated)"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReview resource type
+# accessReview resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 Represents an Azure AD [access review](accessreviews-root.md).  
 

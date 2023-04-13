@@ -1,13 +1,13 @@
 ---
-title: "FormatProtection resource type"
+title: "formatProtection resource type"
 description: "Represents the format protection of a range object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
 ---
 
-# FormatProtection resource type
+# formatProtection resource type
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ Represents the format protection of a range object.
 |locked|boolean|Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation

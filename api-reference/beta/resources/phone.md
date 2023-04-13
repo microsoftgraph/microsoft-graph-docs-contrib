@@ -1,10 +1,10 @@
 ---
 title: "phone resource type"
 description: "Represents a phone number."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "davidmu1"
+ms.prod: "directory-management"
+author: "jumasure"
 ---
 
 # phone resource type

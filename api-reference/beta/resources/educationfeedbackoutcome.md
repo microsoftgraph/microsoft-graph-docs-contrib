@@ -1,7 +1,7 @@
 ---
 title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
@@ -25,6 +25,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationFeedbackOutcome.|
 |feedback|[educationFeedback](educationfeedback.md)|Teacher's written feedback to the student.|
 |publishedFeedback|[educationFeedback](educationfeedback.md)|A copy of the feedback property that is made when the grade is released to the student.|
 
@@ -42,12 +43,12 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationFeedbackOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

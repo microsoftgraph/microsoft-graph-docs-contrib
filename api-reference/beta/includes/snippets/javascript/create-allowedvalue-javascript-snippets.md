@@ -1,0 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const allowedValue = {
+    id: 'Alpine',
+    isActive: 'true'
+};
+
+await client.api('/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues')
+	.version('beta')
+	.post(allowedValue);
+
+```

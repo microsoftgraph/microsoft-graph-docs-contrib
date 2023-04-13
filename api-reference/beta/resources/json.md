@@ -1,9 +1,9 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: workbooks-and-charts
 author: "ruoyingl"
 ---
 
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Represents data returned in JSON format
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
-None
+None.
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!--{

@@ -2,7 +2,7 @@
 title: "educationOnPremisesInfo resource type"
 description: "Additional information used to associate an on-premises Active Directory user account to their Azure AD user object."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

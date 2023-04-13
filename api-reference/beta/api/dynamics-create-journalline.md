@@ -4,7 +4,7 @@ description: Creates a journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
@@ -53,7 +53,7 @@ If successful, this method returns ```201 Created``` response code and **journal
 
 Here is an example of a request.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines
 Content-type: application/json
 
@@ -71,7 +71,7 @@ Content-type: application/json
 ```
 **Response**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

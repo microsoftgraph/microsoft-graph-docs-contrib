@@ -2,7 +2,7 @@
 title: "contact resource type"
 description: "A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders."
 author: "kevinbellinger"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -17,7 +17,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/contact-delta.md) function.
 
 
@@ -45,7 +45,7 @@ by providing a [delta](../api/contact-delta.md) function.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
-|birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|The contact's business address.|
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String collection|The contact's business phone numbers.|
@@ -53,7 +53,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |children|String collection|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
-|createdDateTime|DateTimeOffset|The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
@@ -62,11 +62,11 @@ by providing a [delta](../api/contact-delta.md) function.
 |givenName|String|The contact's given name.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|
-|id|String|The contact's unique identifier. Read-only.|
+|id|String|The contact's unique identifier. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only.|
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|
-|lastModifiedDateTime|DateTimeOffset|The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |manager|String|The name of the contact's manager.
 |middleName|String|The contact's middle name.|
 |mobilePhone|String|The contact's mobile phone number.|
@@ -93,7 +93,7 @@ by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -161,17 +161,15 @@ Here is a JSON representation of the resource
   "otherAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "parentFolderId": "string",
   "personalNotes": "string",
+  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "profession": "string",
   "spouseName": "string",
   "surname": "string",
   "title": "string",
   "yomiCompanyName": "string",
   "yomiGivenName": "string",
-  "yomiSurname": "string",
-
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
+  "yomiSurname": "string"
 }
-
 ```
 
 ## See also

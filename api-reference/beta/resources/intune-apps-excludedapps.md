@@ -1,7 +1,7 @@
 ---
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -66,9 +66,3 @@ Here is a JSON representation of the resource.
   "word": true
 }
 ```
-
-
-
-
-
-

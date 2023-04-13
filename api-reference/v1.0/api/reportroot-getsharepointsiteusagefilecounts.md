@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointSiteUsageFileCounts"
 description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -79,7 +79,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusagefilecounts"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageFileCounts(period='D7')
 ```
 

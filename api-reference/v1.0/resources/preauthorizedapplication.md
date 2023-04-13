@@ -1,10 +1,10 @@
 ---
 title: "preAuthorizedApplication resource type"
 description: "Lists the pre-authorized client applications"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "sureshja"
+ms.prod: "applications"
+author: "psignoret"
 ---
 
 # preAuthorizedApplication resource type
@@ -12,6 +12,8 @@ author: "sureshja"
 Namespace: microsoft.graph
 
 Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs. Users are not required to consent to any pre-authorized application (for the permissions specified). However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.
+
+In some rare cases, an identifier listed in the `delegatedPermissionIds` property may actually identify an [app role](approle.md) (from the service principal's `appRoles` property), indicating that the client application identified by the `appId` property has been pre-authorized for that app role.
 
 ## Properties
 

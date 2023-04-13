@@ -1,8 +1,13 @@
 {
     "pathsToIgnore": [
+        "/adaptive-cards",
         "/aspnet",
         "/azure",
+        "/compliance",
         "/cloud-app-security",
+        "/concepts",
+        "/defender-for-identity",
+        "/deployedge",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -17,10 +22,16 @@
         "/office365",
         "/onedrive",
         "/openspecs",
+        "/partner-center",
         "/powershell",
         "/previous-versions",
+        "/project-for-the-web",
+        "/rest",
+        "/security",
         "/skypeforbusiness",
         "/sharepoint",
+        "/training",
+        "/troubleshoot",
         "/windows",
         "/windows-hardware"
     ]

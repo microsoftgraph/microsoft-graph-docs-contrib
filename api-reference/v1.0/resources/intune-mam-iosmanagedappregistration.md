@@ -1,8 +1,7 @@
 ---
 title: "iosManagedAppRegistration resource type"
-description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user.
- The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
-author: "dougeby"
+description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -74,27 +73,10 @@ Here is a JSON representation of the resource.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
     "bundleId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
-
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
-    Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
-
-
-
-
-
-
-

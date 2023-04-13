@@ -1,10 +1,10 @@
 ---
 title: "genericError resource type"
 description: "A general-purpose error."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "svpsiva"
+ms.prod: outlook
+author: "abheek-das"
 ---
 
 # genericError resource type
@@ -17,8 +17,8 @@ A general-purpose error.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| message | String | The error message. |
 | code | String | The error code. |
+| message | String | The error message. |
 
 ## JSON representation
 
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "message": "String",
-  "code": "String"
+  "code": "String",
+  "message": "String"
 }
 ```
 

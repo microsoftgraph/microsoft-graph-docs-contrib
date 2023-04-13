@@ -1,22 +1,20 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Image
-localization_priority: Normal
-description: "The Image resource groups image-related properties into a single structure."
-ms.prod: ""
+title: image resource type
+ms.localizationpriority: medium
+description: "The image resource groups image-related properties into a single structure."
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
-# Image resource type
+# image resource type
 
 Namespace: microsoft.graph
 
-The **Image** resource groups image-related properties into a single structure.
-If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
+The **image** resource groups image-related properties into a single structure.
+If a [**driveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
 
-**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.
+>**Note:** If the service is unable to determine the width and height of the image, the **image** resource may be empty.
 
 ## JSON representation
 
@@ -39,7 +37,7 @@ If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item repr
 
 In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a DriveItem, see [driveItem](driveitem.md).
 
 
 <!-- {

@@ -1,7 +1,7 @@
 ---
 title: "windowsManagementApp resource type"
 description: "Windows management app entity."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -22,12 +22,15 @@ Windows management app entity.
 |:---|:---|:---|
 |[Get windowsManagementApp](../api/intune-devices-windowsmanagementapp-get.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Read properties and relationships of the [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) object.|
 |[Update windowsManagementApp](../api/intune-devices-windowsmanagementapp-update.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Update the properties of a [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) object.|
+|[setAsManagedInstaller action](../api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md)|None|Set the Managed Installer status for the caller tenant|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the Windows management app|
 |availableVersion|String|Windows management app available version.|
+|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Managed Installer Status. Possible values are: `disabled`, `enabled`.|
+|managedInstallerConfiguredDateTime|String|Managed Installer Configured Date Time|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -46,12 +49,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsManagementApp",
   "id": "String (identifier)",
-  "availableVersion": "String"
+  "availableVersion": "String",
+  "managedInstaller": "String",
+  "managedInstallerConfiguredDateTime": "String"
 }
 ```
-
-
-
-
-
-

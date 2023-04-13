@@ -14,7 +14,7 @@ var plannerTaskDetails = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>()
 		{
 			{"http%3A//developer%2Emicrosoft%2Ecom", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"alias\":\"Documentation\",\"previewPriority\":\" !\",\"type\":\"Other\"}"},
-			{"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
+			{"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
 			{"http%3A//www%2Ebing%2Ecom", "null"}
 		}
 	},
@@ -26,11 +26,13 @@ var plannerTaskDetails = new PlannerTaskDetails
 			{"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff", "{\"@odata.type\":\"microsoft.graph.plannerChecklistItem\",\"isChecked\":true}"},
 			{"a93c93c5-10a6-4167-9551-8bafa09967a7", "null"}
 		}
-	}
+	},
+	Description = "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links"
 };
 
-await graphClient.Planner.Tasks["gcrYAaAkgU2EQUvpkNNXLGQAGTtu"].Details
+await graphClient.Planner.Tasks["{plannerTask-id}"].Details
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerTaskDetails);
 

@@ -11,12 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const ediscoveryCase = {
-  displayName: "My Case 1 - Renamed",
-  description: "Updated description",
-  externalId: "Updated externalId"
+    displayName: 'My Case 1 - Renamed',
+    description: 'Updated description'
 };
 
-let res = await client.api('/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583')
+await client.api('/security/cases/ediscoveryCases/22aa2acd-7554-4330-9ba9-ce20014aaae4')
 	.version('beta')
 	.update(ediscoveryCase);
 

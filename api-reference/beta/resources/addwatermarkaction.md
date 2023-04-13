@@ -1,17 +1,19 @@
 ---
-title: "addWatermarkAction resource type"
-description: "Represents an action that specifies the details on the content watermark to be added to the information, if applicable."
-localization_priority: Normal
+title: "addWatermarkAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content watermark to be added to the information, if applicable. Deprecated."
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# addWatermarkAction resource type
+# addWatermarkAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Represents an action that specifies the details on the content watermark to be added to the information, if applicable.
 

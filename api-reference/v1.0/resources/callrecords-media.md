@@ -1,8 +1,8 @@
 ---
 title: "media resource type"
 description: "The media type"
-localization_priority: Normal
-author: "stephenjust"
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -17,11 +17,11 @@ Represents the media (audio, video, video-based screen-sharing, etc.) used in a 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|label|String|How the media was identified during media negotiation stage.|
-|callerDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
-|callerNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
 |calleeDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the callee endpoint of this media.|
 |calleeNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the callee endpoint of this media.|
+|callerDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
+|callerNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
+|label|String|How the media was identified during media negotiation stage.|
 |streams|[microsoft.graph.callRecords.mediaStream](callrecords-mediastream.md) collection|Network streams associated with this media.|
 
 ## JSON representation
@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "label": "String",
-  "callerDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
-  "callerNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
   "calleeDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
   "calleeNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
+  "callerDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
+  "callerNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
+  "label": "String",
   "streams": [{"@odata.type": "microsoft.graph.callRecords.mediaStream"}]
 }
 ```

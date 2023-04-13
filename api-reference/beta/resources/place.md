@@ -1,7 +1,7 @@
 ---
 title: "place resource type"
 description: "Represents a place. This is the base type for a room or roomList."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md) and [roomList](roomlist.md).
+Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md).
 
 ### Using the places API
-Exchange Online administrators can organize meeting rooms in a tenant into room lists. Using the places API, you can get all the room lists or rooms in the tenant, or get all the rooms in a specific room list.
+Exchange Online administrators can organize meeting rooms and workspaces in a tenant into room lists. Using the places API, you can use the [list](../api/place-list.md) operation to get all the rooms, workspaces, or room lists in the tenant, or get the rooms and workspaces in a specific room list.
 
-Places like [room](room.md) and [roomList](roomlist.md) contain the basic **id**, display name and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
+Places like [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md) contain the basic **id**, display name, and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
 
-The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookup for rooms and room lists in a tenant. The following is a comparison between the places API and these functions.  If you are creating a production app, choose the places API as the API is now generally available in v1.0. Plan to update any existing code that uses **findRooms** or **findRoomLists** to use the places API, because **findRooms** or **findRoomLists** will be deprecated, and a timeline will be announced.
+The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookup for rooms and room lists in a tenant. The following is a comparison between the places API and these functions.  If you are creating a production app, choose the places API as the API is now generally available in v1.0. Plan to update any existing code that uses **findRooms** or **findRoomLists** to use the places API, because **findRooms** or **findRoomLists** will be deprecated at the end of 2022.
 
 |Places API |findRooms and findRoomLists functions|
 |:------------------------------------|:-----------------------------|
@@ -62,8 +62,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.place",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.place"
 }-->
 
 ```json

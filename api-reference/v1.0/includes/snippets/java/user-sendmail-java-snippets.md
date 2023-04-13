@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 message.subject = "Meet for lunch?";
@@ -15,7 +15,7 @@ message.body = body;
 LinkedList<Recipient> toRecipientsList = new LinkedList<Recipient>();
 Recipient toRecipients = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
-emailAddress.address = "fannyd@contoso.onmicrosoft.com";
+emailAddress.address = "frannis@contoso.onmicrosoft.com";
 toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 message.toRecipients = toRecipientsList;
@@ -30,7 +30,11 @@ message.ccRecipients = ccRecipientsList;
 boolean saveToSentItems = false;
 
 graphClient.me()
-	.sendMail(message,saveToSentItems)
+	.sendMail(UserSendMailParameterSet
+		.newBuilder()
+		.withMessage(message)
+		.withSaveToSentItems(saveToSentItems)
+		.build())
 	.buildRequest()
 	.post();
 

@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getEmailActivityUserCounts"
 description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -63,6 +63,8 @@ The CSV file has the following headers for columns.
 - Send
 - Receive
 - Read
+- Meeting Created
+- Meeting Interacted
 - Report Date
 - Report Period
 
@@ -108,7 +110,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

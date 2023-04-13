@@ -1,10 +1,10 @@
 ---
 title: "synchronizationJob resource type"
 description: "Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJob resource type

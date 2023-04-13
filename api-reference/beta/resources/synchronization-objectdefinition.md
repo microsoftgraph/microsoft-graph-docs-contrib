@@ -1,10 +1,10 @@
 ---
 title: "objectDefinition resource type"
 description: "Describes an object and its attributes."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectDefinition resource type

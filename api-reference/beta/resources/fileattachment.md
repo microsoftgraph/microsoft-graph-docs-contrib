@@ -1,10 +1,10 @@
 ---
 title: "fileAttachment resource type"
-description: "A file (such as a text file or Word document) attached to an event,"
-localization_priority: Normal
+description: "A file (such as a text file or Word document) attached to an event, message, task, or post."
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # fileAttachment resource type
@@ -32,8 +32,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read the properties, relationships, or raw contents of a fileAttachment object.|
-|[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read the properties, relationships, or raw contents of a **fileAttachment** object.|
+|[Delete](../api/attachment-delete.md) | None |Delete a **fileAttachment** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -43,18 +43,18 @@ Derived from [attachment](attachment.md).
 |contentLocation|String|Do not use this property as it is not supported.|
 |contentType|String|The content type of the attachment.|
 |id|String|The attachment ID.|
-|isInline|Boolean|Set to true if this is an inline attachment.|
+|isInline|Boolean|Set to `true` if this is an inline attachment.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified.|
 |name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
 |size|Int32|The size in bytes of the attachment.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -76,7 +76,7 @@ Here is a JSON representation of the resource
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": "Int32"
 }
 
 ```

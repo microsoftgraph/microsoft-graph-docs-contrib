@@ -1,10 +1,11 @@
 ---
 title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "Microsoft Graph for Azure Active Directory (Azure AD) provides REST APIs to help manage your organization, resources, and assets."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: ""
+ms.prod: "identity-and-access"
 author: "dkershaw10"
+ms.date: 11/29/2022
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph
@@ -39,9 +40,9 @@ The following table lists some common use cases for Azure AD resources.
 | Apply Azure AD policies to applications, service principals, groups, or the entire organization. Policies for claims mapping, token issuance, token lifetime, home realm discovery and more are supported.  | [Available policies](../resources/policy-overview.md) | N/A |
 | **Secure privileged access to Azure AD** | | |
 | Manage and monitor time-bound privileged access to directory and Azure resources for administrators and IT professionals with Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [What is Azure AD Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Monitor identity risk events like users signing in from malware-infected devices or from unfamiliar locations. | [Identity Protection Service API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory risk events](/azure/active-directory/active-directory-reporting-risk-events) |
+| Monitor identity risk events like users signing in from malware-infected devices or from unfamiliar locations. | [Identity Protection Service API](../resources/identityprotection-overview.md) | [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory risk events](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Manage devices** | | |
-| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/azure/active-directory/active-directory-device-registration-overview) |
+| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/mem/intune/enrollment/).<br/><br/>[What is Intune?](/mem/intune/fundamentals/what-is-intune)<br/><br/>[Enroll devices for management in Intune](/mem/intune/enrollment/) |
 | **App management** | | |
 | Manage app configuration in a developer tenant. | [application](../resources/application.md) | [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/active-directory-application-objects) |
 | Manage apps installed in a tenant. | [servicePrinicpal](../resources/serviceprincipal.md) | [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/active-directory-application-objects) |
@@ -54,8 +55,11 @@ The following table lists some common use cases for Azure AD resources.
 | Get information about an organization, such as its business address, technical and notification contacts, the service plans that it's subscribed to, and the domains associated with it. | [organization](../resources/organization.md) | N/A |
 | Get information about the service SKUs that a company is subscribed to. | [subscribedSku](../resources/subscribedsku.md) | N/A |
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbranding.md) | [Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding)|
 | **Access reviews** | | |
-| Ensure group memberships and application access rights are correct with access reviews | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Ensure group memberships and application access rights are correct with access reviews. | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **Consent requests** | | |
+| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-overview.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
@@ -66,4 +70,4 @@ Directory resources and APIs can open up new ways for you to engage with users a
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).

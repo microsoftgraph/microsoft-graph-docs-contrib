@@ -1,10 +1,10 @@
 ---
 title: "attributeMappingParameterSchema resource type"
 description: "Describes a single parameter used in an attributeMappingFunctionSchema."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMappingParameterSchema resource type

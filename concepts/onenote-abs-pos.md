@@ -1,13 +1,13 @@
 ---
-title: "Create absolute positioned elements in OneNote pages"
-description: "The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page."
+title: "Create absolute positioned elements on OneNote pages using the OneNote API"
+description: "Use the data-absolute-enabled and style attributes to create absolute positioned elements on a page, including multiple direct div, img, and object child elements."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 
 
-# Create absolute positioned elements in OneNote pages
+# Create absolute positioned elements on OneNote pages
 
 The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.
 
@@ -161,6 +161,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Update OneNote page content](onenote-update-page.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -1,8 +1,8 @@
 ---
 title: "searchQueryString resource type"
 description: "searchQueryString"
-localization_priority: Normal
-author: "nmoreau"
+ms.localizationpriority: medium
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

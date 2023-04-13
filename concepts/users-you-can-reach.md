@@ -1,28 +1,26 @@
 ---
 title: "Users you can reach with Microsoft Graph"
-description: "Microsoft offers services and solutions that expand modern work and modern life. "
-author: "dkershaw10"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+description: "Use the Microsoft Graph API to build Microsoft 365 applications that connect users to personal services, work services, and school services."
+ms.localizationpriority: high
 ---
 
 # Users you can reach with Microsoft Graph
 
 Microsoft offers services and solutions that expand modern work and modern life.
 
-As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for work, school, and personal productivity.
+As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft 365 products for work, school, and personal productivity.
 
 ## Connect to personal services
 
-Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com, or @live.com accounts. With their consent, you can use Microsoft Graph to access users' profiles, their Office services like OneDrive and Outlook mail, calendar, and contacts, and their Windows 10 devices and activities.
+Use Microsoft Graph to reach users with Microsoft personal accounts, such as @outlook.com, @hotmail.com, or @live.com accounts. With their consent, you can use Microsoft Graph to access users' profiles, their Office services like OneDrive and Outlook mail, calendar, and contacts, and their Windows devices and activities.
 
 ## Connect to work services
 
-Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise or education. These Microsoft 365 services include:
+Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise, or education. These Microsoft 365 services include:
 
 - Microsoft 365
 - Enterprise Mobility + Security
-- Windows 10
+- Windows
 
 With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. To learn more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
@@ -41,7 +39,7 @@ Use Microsoft Graph to reach students, teachers, and schools with licenses to Mi
 
 ## Next steps
 
-- Check out some [Featured scenarios](https://developer.microsoft.com/graph/examples).
+- Check out some [partner solutions](https://developer.microsoft.com/graph/partners).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.

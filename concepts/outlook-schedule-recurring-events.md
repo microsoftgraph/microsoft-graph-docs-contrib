@@ -1,26 +1,27 @@
 ---
 title: "Schedule repeating appointments as recurring events in Outlook"
-description: "Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager, or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once, and let the server fill in the rest of the series."
-author: "angelgolfer-ms"
-localization_priority: Priority
+description: "Create recurring events by using the recurrence rule, which includes the recurrence pattern - how often an event repeats - and the recurrence range - for how long."
+author: "iamgirishck"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
 # Schedule repeating appointments as recurring events in Outlook
 
-Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager, or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once, and let the server fill in the rest of the series.
+Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once and let the server fill in the rest of the series.
 
-The key bit of information that allows recurring events to "expand" into individual occurrences is the recurrence rule. The rule specifies both how often an event repeats, and for how long. The Outlook REST APIs model recurrence rules in the **recurrence** property of the [event resource](/graph/api/resources/event?view=graph-rest-1.0). 
+The key bit of information that allows recurring events to "expand" into individual occurrences is the recurrence rule. The rule specifies both how often an event repeats and for how long. The Outlook REST APIs model recurrence rules in the **recurrence** property of the [event resource](/graph/api/resources/event).
 
-Each recurrence is made up of two parts: the recurrence pattern (how often), and the recurrence range (for how long).
+Each recurrence is made up of two parts: the recurrence pattern (how often) and the recurrence range (for how long).
 
 ## Recurrence patterns
 
-The first part of a recurrence is the pattern. This specifies how often the event repeats. For example, an event could repeat "every 3 days," "every Thursday," or "on July 22 every year." A pattern is represented in the API by the [recurrencePattern resource](/graph/api/resources/recurrencepattern?view=graph-rest-1.0).
+The first part of a recurrence is the pattern. This specifies how often the event repeats. For example, an event could repeat "every 3 days," "every Thursday," or "on July 22 every year." A pattern is represented in the API by the [recurrencePattern resource](/graph/api/resources/recurrencepattern).
 
 Depending on the type of pattern, certain fields of the **recurrencePattern** are required, optional, or ignored.
 
-> **Note**: Even if a field is ignored, it is still validated. If a field has a set list of possible values, using a value outside the allowed set causes an error, even if that field is ignored.
+> [!NOTE]
+> Even if a field is ignored, it is still validated. If a field has a set list of possible values, using a value outside the allowed set causes an error, even if that field is ignored.
 
 Let's take a look at each of the possible pattern types.
 
@@ -216,11 +217,12 @@ The relative yearly pattern causes an event to repeat on the same day of the wee
 
 ## Recurrence ranges
 
-The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencepattern?view=graph-rest-1.0).
+The second part of a recurrence is the range. This specifies how long the pattern repeats. For example, an event could end after 10 occurrences, by a specific date, or could have no end. A range is represented in the API by the [recurrenceRange resource](/graph/api/resources/recurrencerange).
 
 Depending on the type of range, certain fields of **recurrenceRange** are required or ignored.
 
-> **Note**: Even if a field is ignored, it is still validated. If a field has a set list of possible values, using a value outside the allowed set causes an error, even if that field is ignored.
+> [!NOTE]
+> Even if a field is ignored, it is still validated. If a field has a set list of possible values, using a value outside the allowed set causes an error, even if that field is ignored.
 
 Let's take a look at each of the possible range types.
 
@@ -232,9 +234,9 @@ The numbered range causes an event to occur a fixed number of times (based on th
 
 | Property | Relevance | Description |
 |----------|-----------|-------------|
-| **numberOfOccurences** | Required | Specifies the number of occurrences. Must be a positive integer. |
+| **numberOfOccurrences** | Required | Specifies the number of occurrences. Must be a positive integer. |
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** property. If not specified, the time zone of the event is used. |
-| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event?view=graph-rest-1.0). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to `numbered`. |
 
 #### Examples
@@ -259,7 +261,7 @@ The end date range causes an event to occur on all days that fit the applicable 
 |----------|-----------|-------------|
 | **endDate** | Required | Specifies the date to stop applying the pattern. Note that the last occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** and **endDate** properties. If not specified, the time zone of the event is used. |
-| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event?view=graph-rest-1.0). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to **endDate**. |
 
 #### Examples
@@ -283,7 +285,7 @@ The no end range causes an event to occur on all days that fit the applicable pa
 | Property | Relevance | Description |
 |----------|-----------|-------------|
 | **recurrenceTimeZone** | Optional | Specifies the time zone for the **startDate** property. If not specified, the time zone of the event is used. |
-| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event?view=graph-rest-1.0). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
+| **startDate** | Required | Specifies the date to start applying the pattern. The value of **startDate** MUST correspond to the date value of the **start** property on the [event resource](/graph/api/resources/event). Note that the first occurrence of the meeting may not occur on this date if it does not fit the pattern. |
 | **type** | Required | Must be set to `noEnd`. |
 
 #### Examples
@@ -352,9 +354,9 @@ To create a recurrence rule, you must specify both a pattern and a range. Any pa
   Because the value of **startDate** is after the first Thursday in August, the first occurrence of this series will be in September.
 
 ## Next steps
-    
+
 - Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
 - See other recurring event examples in the calendar API reference:
-  - [Create a recurring event that occurs once a week](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
-  - [Create a daily recurring event](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+  - [Create a recurring event that occurs once a week](/graph/api/user-post-events#request-3)
+  - [Create a daily recurring event](/graph/api/user-post-events#request-4)
 

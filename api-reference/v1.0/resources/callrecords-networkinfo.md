@@ -1,8 +1,8 @@
 ---
 title: "networkInfo resource type"
-description: "The networkInfo type"
-localization_priority: Normal
-author: "stephenjust"
+description: "Represents information about the network used in a call."
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -25,6 +25,7 @@ Represents information about the network used in a call.
 |ipAddress|String|IP address of the media endpoint.|
 |linkSpeed|Int64|Link speed in bits per second reported by the network adapter used by the media endpoint.|
 |macAddress|String|The media access control (MAC) address of the media endpoint's network device.|
+|networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Network protocol used for the transmission of stream. Possible values are: `unknown`, `udp`, `tcp`, `unknownFutureValue`.|
 |port|Int32|Network port number used by media endpoint.|
 |receivedQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.|
 |reflexiveIPAddress|String|IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.|
@@ -32,6 +33,7 @@ Represents information about the network used in a call.
 |relayPort|Int32|Network port number allocated on the media relay server by the media endpoint.|
 |sentQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.|
 |subnet|String|Subnet used for media stream by the media endpoint.|
+|traceRouteHops|[microsoft.graph.callRecords.traceRouteHop](callrecords-traceroutehop.md) collection|List of network trace route hops collected for this media stream.\*|
 |wifiBand|microsoft.graph.callRecords.wifiBand|WiFi band used by the media endpoint. Possible values are: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Estimated remaining battery charge in percentage reported by the media endpoint.|
 |wifiChannel|Int32|WiFi channel used by the media endpoint.|
@@ -41,6 +43,9 @@ Represents information about the network used in a call.
 |wifiSignalStrength|Int32|WiFi signal strength in percentage reported by the media endpoint.|
 |wifiVendorDriver|String|Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.|
 |wifiVendorDriverVersion|String|Version of the WiFi driver used by the media endpoint.|
+
+> [!NOTE]
+> \*By default, **traceRouteHops** will always return an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
 
 ## JSON representation
 
@@ -63,22 +68,24 @@ The following is a JSON representation of the resource.
   "delayEventRatio": "Double",
   "dnsSuffix": "String",
   "ipAddress": "String",
-  "linkSpeed": 1024,
+  "linkSpeed": "Int64",
   "macAddress": "String",
-  "port": 1024,
+  "networkTransportProtocol": "String",
+  "port": "Int32",
   "receivedQualityEventRatio": "Double",
   "reflexiveIPAddress": "String",
   "relayIPAddress": "String",
-  "relayPort": 1024,
+  "relayPort": "Int32",
   "sentQualityEventRatio": "Double",
   "subnet": "String",
+  "traceRouteHops": [{"@odata.type": "microsoft.graph.callRecords.traceRouteHop"}],
   "wifiBand": "String",
-  "wifiBatteryCharge": 1024,
-  "wifiChannel": 1024,
+  "wifiBatteryCharge": "Int32",
+  "wifiChannel": "Int32",
   "wifiMicrosoftDriver": "String",
   "wifiMicrosoftDriverVersion": "String",
   "wifiRadioType": "String",
-  "wifiSignalStrength": 1024,
+  "wifiSignalStrength": "Int32",
   "wifiVendorDriver": "String",
   "wifiVendorDriverVersion": "String"
 }

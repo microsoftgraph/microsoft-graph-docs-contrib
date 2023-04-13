@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDriveItemDeltaCollectionPage delta = graphClient.me().drive().root()
-	.delta("1230919asd190410jlka")
+DriveItemDeltaCollectionPage delta = graphClient.me().drive().root()
+	.delta(DriveItemDeltaParameterSet
+		.newBuilder()
+		.withToken("MzslMjM0OyUyMzE7MzsyM2YwNDVhMS1lNmRmLTQ1N2MtOGQ5NS1hNmViZDVmZWRhNWQ7NjM3OTQzNzQwODQ3NTcwMDAwOzU4NTk2OTY0NDslMjM7JTIzOyUyMzA")
+		.build())
 	.buildRequest()
 	.get();
 

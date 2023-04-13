@@ -1,7 +1,7 @@
 ---
 title: "microsoftLauncherSearchBarPlacement enum type"
 description: "Microsoft Launcher Search Bar Placement selection."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,9 +24,3 @@ Microsoft Launcher Search Bar Placement selection.
 |top|1|Indicates that the search bar will be displayed on the top of the device.|
 |bottom|2|Indicates that the search bar will be displayed on the bottom of the device.|
 |hide|3|Indicates that the search bar will be hidden on the device.|
-
-
-
-
-
-

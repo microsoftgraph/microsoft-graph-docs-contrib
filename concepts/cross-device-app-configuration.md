@@ -1,11 +1,11 @@
 ---
 title: "Build cross-device apps powered by Project Rome "
-description: "You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. "
-localization_priority: Normal
+description: "Build experiences that cross devices and platforms seamlessly by using the activity feed and device relay APIs to reduce friction for users and drive app usage."
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 ---
 
-# Build cross-device apps powered by Project Rome 
+# Build cross-device apps powered by Project Rome
 
 You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. 
 
@@ -13,7 +13,7 @@ A cross-device app enables you to:
 
 - Use the Project Rome activity feed API in Microsoft Graph.  
 - Read and  write user activities published by a group of platform-specific applications by using the Project Rome SDK for Windows, Android, and/or iOS.
--  Target apps via the device relay capabilities in Project Rome by using the Project Rome SDK for Android or iOS.
+- Target apps via the device relay capabilities in Project Rome by using the Project Rome SDK for Android or iOS.
 
 **Pick up where you left off across devices with the activity feed API**
 
@@ -40,7 +40,7 @@ You can access all Project Rome capabilities using a cross-device app managed in
 ### Externally hosted JSON file (limited) 
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:  
 
-* Read and write user activities from all platforms using the [activity feed API](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
+* Read and write user activities from all platforms using the [activity feed API](/graph/api/resources/activity-feed-api-overview)
 * Write user activities from all platforms (Windows, iOS, Android, web) using the Project Rome SDKs.
 
 If you **only** access these capabilities, you can host your cross-device app configuration externally on your domain as a JSON file.
@@ -59,7 +59,7 @@ When using the Windows Dev Center to manage your cross-device app configuration,
 To assert your domain ownership for your cross-device app, you'll need to add a [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, sign in to the Windows Dev Center and choose **Cross-device experiences** from the left menu to start configuring a new cross-device app. After you give your new cross-device app a name, select **Verify your cross-device app domain** from the submenu. This page will display instructions with a unique value **inline** (for example, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Make sure to copy the entire value including 'MS='.
 
 ### Step 2: Collect your platform-specific application IDs
-Collect the platform-specific application IDs for each application and platform that will use [Project Rome APIs](/graph/api/resources/project-rome-overview?view=graph-rest-1.0).
+Collect the platform-specific application IDs for each application and platform that will use [Project Rome APIs](/graph/api/resources/project-rome-overview).
 
 You'll need to collect each of the platform-specific application IDs in order to associate them with your cross-device app identity. Using the Windows Dev Center, you'll be able to select from Universal Windows Platform apps associated with your developer account, but you'll need to manually provide application IDs for any of your win32, iOS, or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 IDs per platform. 
 
@@ -86,7 +86,8 @@ If you're building an application that will support Azure AD users, and you do n
 ### Step 4: Configure support for cross-platform push notifications (optional) 
 If you've opted to configure your cross-device app in the Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you're using Project Rome APIs for Microsoft Graph only, you don't need to perform this step. You can associate up to 10 sets of credentials per platform. 
 
->**Important:** Do not store push notification credentials in an externally hosted JSON file.
+> [!IMPORTANT]
+> Do not store push notification credentials in an externally hosted JSON file.
 
 To find the IDs:
 
@@ -94,7 +95,8 @@ To find the IDs:
 * **Apple Push Notification Service** -See [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** - See [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
-**Note:** If you're using Firebase to push notifications to iOS devices using Android credentials, you'll need to provide your APNs credentials as part of your cross-device app configuration. 
+> [!NOTE]
+> If you're using Firebase to push notifications to iOS devices using Android credentials, you'll need to provide your APNs credentials as part of your cross-device app configuration. 
 
 ## Configure a cross-device app using an externally hosted JSON file
 A cross-device app ID is represented as a domain that you own. The domain points to a mapping of your platform-specific app IDs stored either as a JSON file hosted on your domain or configurable via the Windows Dev Center. After you identify the domain you'll use to represent your cross-device app ID, you'll need to collect information to configure the associated profile. 
@@ -160,7 +162,8 @@ To enable cross-device experiences, your app users must sign in with either a M
 
 You can find your existing app ID/client IDs or provision new ones by signing in to the [Application Registration Portal](https://apps.dev.microsoft.com) with your developer account. When you sign in, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported. Use the platform type "msa" when you add the IDs used to enable support for a Microsoft account or Azure AD, as shown in the previous example.  
 
->**Note:** If you're building an application that supports Azure AD users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
+> [!NOTE]
+> If you're building an application that supports Azure AD users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
 
 To find the GUID in the Azure Portal for your tenant: 
 
@@ -179,7 +182,7 @@ The system will cache the contents of the JSON file to avoid generating frequent
 If you're using the client-side APIs for Windows, iOS, or Android, you'll need to make sure your app client is configured with the host value that represents your cross-device app identity (for example, contoso.com).
 
 ### Microsoft Graph apps 
-If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
+If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](/graph/api/resources/projectrome-activity).
 
 ### Universal Windows apps
 If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see 
@@ -190,7 +193,7 @@ If you have a Windows app, you will need to configure the host value in your app
 *Details coming soon.*
 -->
 
-## Maintaining your cross-device app configuration
+## Maintain your cross-device app configuration
 When releasing a new application that will generate user activities, it's important to update the cross-device app with the new configuration values in advance so that any new activities published are correctly associated with the cross-device app. The cross-device app configuration associated with user activities that have been published prior to a change in configuration will not be updated automatically. However, an update operation performed on any activity with an old configuration will be updated to the most recent version on file.  
 
 ## Troubleshooting

@@ -1,7 +1,7 @@
 ---
 title: "sideLoadingKey resource type"
 description: "SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line Of Business Apps for a tenant."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -58,9 +58,3 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String"
 }
 ```
-
-
-
-
-
-
