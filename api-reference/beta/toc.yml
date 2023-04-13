@@ -372,9 +372,9 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List cloudPCs
+        - name: List
           href: api/user-list-cloudpcs.md
-        - name: Get cloudPC
+        - name: Get
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
@@ -10607,11 +10607,11 @@ items:
           items:
           - name: Cloud PC
             href: resources/cloudpc.md
-          - name: List cloudPCs for organization
+          - name: List for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: List cloudPCs for user
+          - name: List for user
             href: api/user-list-cloudpcs.md
-          - name: Get cloudPC
+          - name: Get Cloud PC
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
