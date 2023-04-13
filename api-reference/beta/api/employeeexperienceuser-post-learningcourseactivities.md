@@ -65,7 +65,7 @@ You can specify the following properties when creating a **learningCourseActivit
 |notes|String|Notes for the course activity. (Optional)|
 |registrationId|String|Id of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration graph API’s.|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner.|
-|status|courseStatus|Represents status of the course activity. Values are (notStarted/inProgress/completed).|
+|status|courseStatus|Represents status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`.|
 
 ## Response
 
@@ -110,7 +110,7 @@ Content-Type: application/json
     "contentType": "text",
     "content": "required assignment added for user"
   },
-  "status": "NotStarted"
+  "status": "notStarted"
 }
 ```
 
@@ -150,7 +150,7 @@ Content-Type: application/json
     "contentType": "text",
     "content": "required assignment added for user"
   },
-  "status": "NotStarted"
+  "status": "notStarted"
 }
 ```
 
@@ -179,7 +179,7 @@ Content-Type: application/json
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
   "startedDateTime": "2021-05-21T22:57:17+00:00",
-  "status": "InProgress"
+  "status": "inProgress"
 }
 ```
 
@@ -207,6 +207,6 @@ Content-Type: application/json
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
   "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",
   "startedDateTime": "2021-05-21T22:57:17+00:00",
-  "status": "InProgress"  
+  "status": "inProgress"  
 }
 ```

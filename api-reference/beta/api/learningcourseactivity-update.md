@@ -59,7 +59,7 @@ The following table lists the properties of a assigned learning course activity 
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
 |dueDateTime|DateTimeOffset|Due date for the course activity. (Optional)|
 |notes|String|Notes for the course activity. (Optional)|
-|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed).|
+|status|courseStatus|Represents status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`.|
 
 ### Request
 The following is an example of a request.
@@ -94,7 +94,7 @@ Content-Type: application/json
   "contentType": "text",
   "content": "required assignment added for user"
   },
-  "status": "InProgress"
+  "status": "inProgress"
 }
 
 ```
@@ -120,7 +120,7 @@ The following table lists the properties of a self-initiated learning course act
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
-|status|[courseStatus](../resources/courseStatus.md)|Represents of the course activity. Accepted values are (inProgress/completed).|
+|status|courseStatus|Represents status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`.|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner.|
 
 ### Request
@@ -143,7 +143,7 @@ Content-Type: application/json
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",  
   "startedDateTime": "2021-05-11T22:57:17+00:00",
-  "status": "InProgress"  
+  "status": "inProgress"  
 }
 
 ```

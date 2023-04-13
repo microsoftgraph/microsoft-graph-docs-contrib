@@ -105,13 +105,13 @@ Content-Type: application/json
     "timeZone": "UTC"
   },
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
-  "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
+  "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
   "notes": {
     "contentType": "text",
     "content": "required assignment added for user"
   },
-  "status": "NotStarted"  
+  "status": "notStarted"  
 }
 ```
 
