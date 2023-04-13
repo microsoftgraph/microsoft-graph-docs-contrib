@@ -2413,16 +2413,16 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### courseStatus values
 
-|Member|
-|:-----|
-|notStarted|
-|inProgress|
-|completed|
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 
 ### assignmentType values
 
-|Member|
-|:-----|
-|required|
-|recommended|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| required           |
+| recommended        |
+| unknownFutureValue |
