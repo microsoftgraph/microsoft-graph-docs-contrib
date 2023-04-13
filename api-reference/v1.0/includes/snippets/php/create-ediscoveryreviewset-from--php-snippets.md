@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My review set 2');
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSets()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSets()->post($requestBody);
 
 
 ```

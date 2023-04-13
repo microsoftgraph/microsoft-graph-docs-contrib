@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CalendarViewRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new CalendarViewRequestBuilderGetQueryParameters();
+$queryParameters = CalendarViewRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->start = "2018-04-30T00:00:00Z";
 $queryParameters->end = "2018-05-10T00:00:00Z";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->calendarView()->get($requestConfiguration);
+$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->calendarView()->get($requestConfiguration);
 
 
 ```

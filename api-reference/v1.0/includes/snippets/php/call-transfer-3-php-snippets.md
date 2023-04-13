@@ -13,7 +13,7 @@ $requestBody = new TransferPostRequestBody();
 $transferTarget = new InvitationParticipantInfo();
 $transferTargetIdentity = new IdentitySet();
 $additionalData = [
-'phone' => $transferTargetIdentity = new Phone();
+		'phone' => $transferTargetIdentity = new Phone();
 $		transferTargetIdentity->set@odatatype('#microsoft.graph.identity');
 
 $		transferTargetIdentity->setId('+12345678901');
@@ -28,9 +28,9 @@ $transferTargetIdentity->setAdditionalData($additionalData);
 
 $transferTarget->setIdentity($transferTargetIdentity);
 $additionalData = [
-'endpointType' => 'default', 
-'languageId' => 'languageId-value', 
-'region' => 'region-value', 
+		'endpointType' => 'default', 
+		'languageId' => 'languageId-value', 
+		'region' => 'region-value', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 
@@ -38,7 +38,7 @@ $transferTarget->setAdditionalData($additionalData);
 
 $requestBody->setTransferTarget($transferTarget);
 $additionalData = [
-'clientContext' => '9e90d1c1-f61e-43e7-9f75-d420159aae08', 
+		'clientContext' => '9e90d1c1-f61e-43e7-9f75-d420159aae08', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

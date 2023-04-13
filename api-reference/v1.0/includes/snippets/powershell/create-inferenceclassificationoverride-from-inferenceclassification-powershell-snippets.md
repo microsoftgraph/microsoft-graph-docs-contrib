@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	ClassifyAs = "focused"
-	SenderEmailAddress = @{
-		Name = "Samantha Booth"
-		Address = "samanthab@adatum.onmicrosoft.com"
+	classifyAs = "focused"
+	senderEmailAddress = @{
+		name = "Samantha Booth"
+		address = "samanthab@adatum.onmicrosoft.com"
 	}
 }
 

@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	ApplyHoldToSource = $false
-	DataSource = @{
+	applyHoldToSource = $false
+	dataSource = @{
 		"@odata.type" = "microsoft.graph.ediscovery.siteSource"
 	}
 }

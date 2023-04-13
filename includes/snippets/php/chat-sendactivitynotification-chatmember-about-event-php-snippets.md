@@ -30,7 +30,7 @@ $recipient = new TeamworkNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.chatMembersNotificationRecipient');
 
 $additionalData = [
-'chatId' => '19:d65713bc498c4a428c71ef9353e6ce20@thread.v2', 
+		'chatId' => '19:d65713bc498c4a428c71ef9353e6ce20@thread.v2', 
 ];
 $recipient->setAdditionalData($additionalData);
 
