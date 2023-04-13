@@ -18,14 +18,14 @@ $notes->setContent('clock out smaple notes');
 
 $requestBody->setNotes($notes);
 $additionalData = [
-'atAprovedLocation' => true,
+		'atAprovedLocation' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->clockOut()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->clockOut()->post($requestBody);
 
 
 ```

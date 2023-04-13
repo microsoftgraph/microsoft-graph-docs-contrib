@@ -22,7 +22,7 @@ $executionConditions = new WorkflowExecutionConditions();
 $executionConditions->set@odatatype('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
 $additionalData = [
-'scope' => $executionConditions = new Scope();
+		'scope' => $executionConditions = new Scope();
 $		executionConditions->set@odatatype('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
 $		executionConditions->setRule('(department eq \'Sales\')');
@@ -30,7 +30,7 @@ $		executionConditions->setRule('(department eq \'Sales\')');
 
 $executionConditions->setScope($scope);
 
-'trigger' => $executionConditions = new Trigger();
+		'trigger' => $executionConditions = new Trigger();
 $		executionConditions->set@odatatype('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
 $		executionConditions->setTimeBasedAttribute('employeeHireDate');
@@ -81,7 +81,7 @@ $requestBody->setTasks($tasksArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
 
 
 ```

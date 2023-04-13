@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new VersionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new VersionsRequestBuilderGetQueryParameters();
+$queryParameters = VersionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["category","displayName","versionNumber"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->versions()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->versions()->get($requestConfiguration);
 
 
 ```

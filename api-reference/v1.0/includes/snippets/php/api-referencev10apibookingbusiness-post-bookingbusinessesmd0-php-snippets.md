@@ -24,7 +24,7 @@ $address->setCountryOrRegion('USA');
 $address->setPostalCode('98052');
 
 $additionalData = [
-'postOfficeBox' => 'P.O. Box 123', 
+		'postOfficeBox' => 'P.O. Box 123', 
 ];
 $address->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $requestBody->setDefaultCurrencyIso('USD');
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinesses()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinesses()->post($requestBody);
 
 
 ```

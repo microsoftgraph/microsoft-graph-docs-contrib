@@ -11,12 +11,12 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Shift();
 $additionalData = [
-'id' => 'SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8', 
-'createdDateTime' => '2019-03-14T04:32:51.451Z', 
-'lastModifiedDateTime' => '2019-03-14T05:32:51.451Z', 
-'userId' => 'c5d0c76b-80c4-481c-be50-923cd8d680a1', 
-'schedulingGroupId' => 'TAG_228940ed-ff84-4e25-b129-1b395cf78be0', 
-'lastModifiedBy' => $requestBody = new LastModifiedBy();
+		'id' => 'SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8', 
+		'createdDateTime' => '2019-03-14T04:32:51.451Z', 
+		'lastModifiedDateTime' => '2019-03-14T05:32:51.451Z', 
+		'userId' => 'c5d0c76b-80c4-481c-be50-923cd8d680a1', 
+		'schedulingGroupId' => 'TAG_228940ed-ff84-4e25-b129-1b395cf78be0', 
+		'lastModifiedBy' => $requestBody = new LastModifiedBy();
 		$requestBody->setApplication(null);
 
 		$requestBody->setDevice(null);
@@ -33,7 +33,7 @@ $requestBody->setUser($user);
 
 $requestBody->setLastModifiedBy($lastModifiedBy);
 
-'sharedShift' => $requestBody = new SharedShift();
+		'sharedShift' => $requestBody = new SharedShift();
 $		requestBody->setDisplayName('Day shift');
 
 $		requestBody->setNotes('Please do inventory as part of your shift.');
@@ -63,7 +63,7 @@ $requestBody->setActivities($activitiesArray);
 
 $requestBody->setSharedShift($sharedShift);
 
-'draftShift' => $requestBody = new DraftShift();
+	'draftShift' => $requestBody = new DraftShift();
 $	requestBody->setDisplayName('Day shift');
 
 $	requestBody->setNotes('Please do inventory as part of your shift.');
@@ -99,11 +99,9 @@ $requestBody->setAdditionalData($additionalData);
 
 
 $requestConfiguration = new ShiftRequestBuilderPutRequestConfiguration();
-
 $headers = [
 'Prefer' => 'return=representation',
 ];
-
 $requestConfiguration->headers = $headers;
 
 

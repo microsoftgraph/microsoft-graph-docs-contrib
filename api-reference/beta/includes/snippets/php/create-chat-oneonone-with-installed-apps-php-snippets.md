@@ -18,7 +18,7 @@ $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversation
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8b081ef6-4792-4def-b2c9-c363a1bf41d5\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'8b081ef6-4792-4def-b2c9-c363a1bf41d5\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
@@ -55,7 +55,7 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 
 
-$requestResult = $graphServiceClient->chats()->post($requestBody);
+$result = $graphServiceClient->chats()->post($requestBody);
 
 
 ```

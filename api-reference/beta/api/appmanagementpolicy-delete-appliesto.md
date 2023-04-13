@@ -60,7 +60,7 @@ The following is an example of the request to remove an appManagementPolicy from
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "remove_appliesTo"
+  "name": "remove_appliesTo_e1"
 }-->
 
 ```http
@@ -73,23 +73,23 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -118,7 +118,7 @@ The following is an example of the request to remove an appManagementPolicy from
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "remove_appliesTo"
+  "name": "remove_appliesTo_e2"
 }-->
 
 ``` http
@@ -130,27 +130,26 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPoli
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/remove-appliesto-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

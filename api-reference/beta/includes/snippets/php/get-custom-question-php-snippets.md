@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->customQuestionsById('meetingRegistrationQuestion-id')->get();
+$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->customQuestionsById('meetingRegistrationQuestion-id')->get();
 
 
 ```
