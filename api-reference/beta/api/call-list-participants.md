@@ -1,7 +1,7 @@
 ---
 title: "List participants"
 description: "Retrieve a list of participant objects in the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

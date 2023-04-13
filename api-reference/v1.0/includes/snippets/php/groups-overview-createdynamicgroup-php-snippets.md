@@ -28,7 +28,7 @@ $requestBody->setMembershipRuleProcessingState('on');
 
 
 
-$requestResult = $graphServiceClient->groups()->post($requestBody);
+$result = $graphServiceClient->groups()->post($requestBody);
 
 
 ```

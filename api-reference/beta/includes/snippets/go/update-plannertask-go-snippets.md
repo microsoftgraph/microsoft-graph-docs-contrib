@@ -43,6 +43,18 @@ appliedCategories.SetCategory4(&category4)
 }
 appliedCategories.SetAdditionalData(additionalData)
 requestBody.SetAppliedCategories(appliedCategories)
+recurrence := graphmodels.NewPlannerTaskRecurrence()
+schedule := graphmodels.NewPlannerRecurrenceSchedule()
+pattern := graphmodels.NewRecurrencePattern()
+type := graphmodels.DAILY_RECURRENCEPATTERNTYPE 
+pattern.SetType(&type) 
+interval := int32(3)
+pattern.SetInterval(&interval) 
+schedule.SetPattern(pattern)
+patternStartDateTime , err := time.Parse(time.RFC3339, "2022-02-22T02:10:33Z")
+schedule.SetPatternStartDateTime(&patternStartDateTime) 
+recurrence.SetSchedule(schedule)
+requestBody.SetRecurrence(recurrence)
 
 result, err := graphClient.Planner().TasksById("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 

@@ -29,7 +29,7 @@ $location->setAltitudeInMeters(3);
 $requestBody->setLocation($location);
 
 
-$requestResult = $graphServiceClient->print()->connectorsById('printConnector-id')->patch($requestBody);
+$result = $graphServiceClient->print()->connectorsById('printConnector-id')->patch($requestBody);
 
 
 ```

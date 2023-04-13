@@ -350,6 +350,15 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
+|unknownFutureValue|
+
 ### multiFactorAuthConfiguration values
 
 | Member             | Value | Description |

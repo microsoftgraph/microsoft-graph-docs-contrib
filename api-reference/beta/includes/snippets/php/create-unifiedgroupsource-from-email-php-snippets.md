@@ -19,7 +19,7 @@ $requestBody->setIncludedSources(new SourceType('mailbox, site'));
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodiansById('custodian-id')->unifiedGroupSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodiansById('custodian-id')->unifiedGroupSources()->post($requestBody);
 
 
 ```

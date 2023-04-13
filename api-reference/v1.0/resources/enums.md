@@ -2339,6 +2339,77 @@ Possible values for user account types (group membership), per Windows definitio
 |migrationComplete|
 |unknownFutureValue|
 
+### browserSharedCookieSourceEnvironment values
+
+| Member|
+|:-----------------|
+|microsoftEdge|
+|internetExplorer11|
+|both|
+|unknownFutureValue|
+
+### browserSiteCompatibilityMode values
+
+| Member|
+|:-----------------|
+|default|
+|internetExplorer8Enterprise|
+|internetExplorer7Enterprise|
+|internetExplorer11|
+|internetExplorer10|
+|internetExplorer9|
+|internetExplorer8|
+|internetExplorer7|
+|internetExplorer5|
+|unknownFutureValue|
+
+### browserSiteMergeType values
+
+| Member|
+|:-----------------|
+|noMerge|
+|default|
+|unknownFutureValue|
+
+### browserSiteTargetEnvironment values
+
+| Member|
+|:-----------------|
+|internetExplorerMode|
+|internetExplorer11|
+|microsoftEdge|
+|configurable|
+|none|
+|unknownFutureValue|
+
+### browserSiteStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSharedCookieStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSiteListStatus values
+
+| Member|
+|:-----------------|
+|draft|
+|published|
+|pending|
+|unknownFutureValue|
 
 ### courseStatus values
 

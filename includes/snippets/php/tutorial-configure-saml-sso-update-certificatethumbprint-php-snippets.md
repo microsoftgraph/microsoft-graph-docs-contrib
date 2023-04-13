@@ -14,7 +14,7 @@ $requestBody->setPreferredTokenSigningKeyThumbprint('A7D3C4626B8A84FDA868CCC67D2
 
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->patch($requestBody);
 
 
 ```

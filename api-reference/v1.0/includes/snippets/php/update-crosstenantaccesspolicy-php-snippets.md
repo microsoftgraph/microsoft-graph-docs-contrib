@@ -14,7 +14,7 @@ $requestBody->setAllowedCloudEndpoints(['microsoftonline.us', ]);
 
 
 
-$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->patch($requestBody);
 
 
 ```
