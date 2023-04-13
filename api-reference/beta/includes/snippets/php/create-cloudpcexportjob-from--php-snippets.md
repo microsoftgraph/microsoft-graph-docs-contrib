@@ -16,7 +16,7 @@ $requestBody->setSelect(['CloudPcId', 'ManagedDeviceName', 'UserPrincipalName', 
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->exportJobs()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->reports()->exportJobs()->post($requestBody);
 
 
 ```

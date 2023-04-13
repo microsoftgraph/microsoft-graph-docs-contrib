@@ -33,7 +33,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |completedDate|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|customExtensionHandlerInstances|[customExtensionHandlerInstance](../resources/customextensionhandlerinstance.md) collection| A collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request. Read-only. |
+|customExtensionCalloutInstances|[customExtensionCalloutInstance](../resources/customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment request workflow.|
+|customExtensionHandlerInstances|[customExtensionHandlerInstance](../resources/customextensionhandlerinstance.md) collection| A collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request. Read-only.|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
@@ -89,6 +90,11 @@ The following is a JSON representation of the resource.
   "customExtensionHandlerInstances": [
     {
       "@odata.type": "microsoft.graph.customExtensionHandlerInstance"
+    }
+  ],
+  "customExtensionCalloutInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionCalloutInstance"
     }
   ]
 }

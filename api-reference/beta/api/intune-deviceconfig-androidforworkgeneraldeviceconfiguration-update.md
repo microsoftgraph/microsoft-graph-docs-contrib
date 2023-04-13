@@ -105,6 +105,8 @@ The following table shows the properties that are required when you create the [
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
+|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
+|allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
 
 
 
@@ -118,7 +120,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3170
+Content-length: 3296
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -193,7 +195,11 @@ Content-length: 3170
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "blockAll",
+  "allowedGoogleAccountDomains": [
+    "Allowed Google Account Domains value"
+  ]
 }
 ```
 
@@ -202,7 +208,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3342
+Content-Length: 3468
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -280,6 +286,10 @@ Content-Length: 3342
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "blockAll",
+  "allowedGoogleAccountDomains": [
+    "Allowed Google Account Domains value"
+  ]
 }
 ```

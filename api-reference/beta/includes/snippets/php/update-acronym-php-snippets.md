@@ -14,7 +14,7 @@ $requestBody->setDescription('A deep neural network is a neural network with a c
 
 
 
-$requestResult = $graphServiceClient->search()->acronymsById('acronym-id')->patch($requestBody);
+$result = $graphServiceClient->search()->acronymsById('acronym-id')->patch($requestBody);
 
 
 ```

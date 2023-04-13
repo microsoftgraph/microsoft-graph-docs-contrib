@@ -37,7 +37,7 @@ $requestBody->setDefaultCurrencyIso('USD');
 
 
 
-$requestResult = $graphServiceClient->bookingBusinesses()->post($requestBody);
+$result = $graphServiceClient->bookingBusinesses()->post($requestBody);
 
 
 ```
