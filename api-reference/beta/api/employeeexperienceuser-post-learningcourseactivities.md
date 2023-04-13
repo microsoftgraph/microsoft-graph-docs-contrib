@@ -53,7 +53,7 @@ You can specify the following properties when creating a **learningCourseActivit
 |:---|:---|:---|
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. (Optional)|
-|assignmentType|String|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`.|
+|assignmentType|assignmentType|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`.|
 |assignerUserId|String|The user id of the assigner. (Optional)|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
