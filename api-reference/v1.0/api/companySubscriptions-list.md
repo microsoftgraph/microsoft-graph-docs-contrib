@@ -2,8 +2,8 @@
 title: "List companySubscriptions"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Normal
-author: "maheshwaria"
-ms.prod: "microsoft-identity-platform"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
@@ -65,21 +65,6 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/subscriptions
 ```
-
-# [C#](#tab/csharp)
-
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-companySubscriptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-companySubscriptions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sample-code](../includes/snippets/objc/get-companySubscriptions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

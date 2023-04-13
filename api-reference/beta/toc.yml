@@ -12259,6 +12259,8 @@ items:
               href: api/directoryobject-getmembergroups.md
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
+            - name: Get member objects
+              href: api/orgcontact-getmemberobjects.md
           - name: Org hierarchy
             items:
             - name: List direct reports
@@ -12305,8 +12307,6 @@ items:
             href: api/mobileappmanagementpolicies-post-includedgroups.md
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
-            - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
           - name: Subscribed sku
             href: resources/subscribedsku.md
             items:

@@ -71,8 +71,6 @@ The following is a JSON representation of the resource
 }
 ```
 
-```
-
 ## See also
 
 + [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
