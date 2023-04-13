@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 ## Example
 
 ### Request
-The following example shows the request to get details of a learning course activity using external course activity id:
+The following example shows the request to get details of a learning course activity using external course activity id.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,6 +64,11 @@ GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/137273
 
 ### Response
 The following is an example response of an assigned learning course activity by external course activityId.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.learningAssignment"
+}-->
 
 ``` http
 HTTP/1.1 200 OK

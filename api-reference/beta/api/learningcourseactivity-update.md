@@ -102,6 +102,12 @@ Content-Type: application/json
 ### Response
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
 ``` http
 HTTP/1.1 204 OK
 No Content
@@ -146,6 +152,12 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
 ``` http
 HTTP/1.1 204 OK

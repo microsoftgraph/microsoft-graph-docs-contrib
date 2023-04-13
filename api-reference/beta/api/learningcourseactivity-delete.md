@@ -53,9 +53,14 @@ The following is an example of a request.
 DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
 ```
 
-
 ### Response
 The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
 ``` http
 HTTP/1.1 204 OK
