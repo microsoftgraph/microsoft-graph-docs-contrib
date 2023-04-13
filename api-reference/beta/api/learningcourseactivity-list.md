@@ -99,6 +99,7 @@ Content-Type: application/json
     "timeZone": "UTC"
     },
     "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
+    "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
     "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
     "notes":  { 
       "contentType": "text", 
@@ -114,6 +115,7 @@ Content-Type: application/json
     "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002", 
     "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
     "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002", 
+    "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
     "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002", 
     "startedDateTime": "2021-05-21T22:57:17+00:00", 
     "status": "inProgress"
