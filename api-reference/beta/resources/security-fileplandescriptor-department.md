@@ -1,6 +1,6 @@
 ---
 title: "department resource type"
-description: "Represents the unique department applied to a retention label."
+description: "Represents a unique department applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
