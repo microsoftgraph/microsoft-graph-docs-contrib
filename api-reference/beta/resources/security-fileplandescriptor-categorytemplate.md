@@ -1,6 +1,6 @@
 ---
 title: "categoryTemplate resource type"
-description: "Represents the 'category' file plan descriptor for retention labels."
+description: "Represents the category file plan descriptor for retention labels."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
