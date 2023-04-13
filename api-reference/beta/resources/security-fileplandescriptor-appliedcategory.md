@@ -1,6 +1,6 @@
 ---
 title: "appliedCategory resource type"
-description: "Represents the unique category applied to a retention label."
+description: "Represents a unique category applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
