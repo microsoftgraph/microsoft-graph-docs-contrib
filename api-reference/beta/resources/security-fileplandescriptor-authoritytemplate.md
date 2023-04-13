@@ -1,6 +1,6 @@
 ---
 title: "authorityTemplate resource type"
-description: "**Represents the 'authority' file plan descriptor for retention labels."
+description: "Represents the authority file plan descriptor for retention labels."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
