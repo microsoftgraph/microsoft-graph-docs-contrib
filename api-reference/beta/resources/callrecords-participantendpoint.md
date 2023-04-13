@@ -20,13 +20,13 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
-|feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
-|name|String|Name of the device used by the media endpoint.|
-|cpuName|String|CPU name used by the media endpoint.|
 |cpuCoresCount|Int32|CPU number of cores used by the media endpoint.|
+|cpuName|String|CPU name used by the media endpoint.|
 |cpuProcessorSpeedInMhz|Int32|CPU processor speed used by the media endpoint.|
+|feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
 |identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
+|name|String|Name of the device used by the media endpoint.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 
 ## JSON representation
 
