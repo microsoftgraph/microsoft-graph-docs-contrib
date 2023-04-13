@@ -1,6 +1,6 @@
 ---
 title: "deviceLocalCredentialInfo resource type"
-description: "Represents device local credential info of all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS)."
+description: "Represents local administrator credential information for all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,24 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents deviceLocalCredentials including metadata and the actual password for local admin account enabled using Local Admin Password Solution (LAPS).
+Represents local administrator credential information for all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceLocationCredentials](../api/laps-devicelocalcredentials-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
-|[Get deviceLocalCredentials](../api/laps-devicelocalcredentials-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
-
-> **Note**: Only some roles have the permissions to call these APIs.
+|[List deviceLocationCredentials](../api/devicelocalcredentialinfo-list.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
+|[Get deviceLocalCredentials](../api/devicelocalcredentialinfo-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| ID of the device that the local credentials are associated with|
+|credentials|[deviceLocalCredential](../resources/devicelocalcredential.md) collection|The credentials of the device's local administrator account backed up to Azure Active Directory.|
+|id|String| ID of the device that the local credentials are associated with Key. This is same as deviceId in /devices.|
 |deviceName|String|Display name of the device that the local credentials are associated with|
-|lastBackupDateTime|DateTimeOffset|The date and time when the local credential was backed up to Azure Active Directory.|
-|refreshDateTime|DateTimeOffset|The date and time when the local credential will be refreshed and backed up to Azure Active Directory.|
-|credentials|[deviceLocalCredential](../resources/devicelocalcredential.md) collection|The credentials of the device local admin account backed up to Azure Active Directory.|
+|lastBackupDateTime|DateTimeOffset|When the local administrator account credential was backed up to Azure Active Directory.|
+|refreshDateTime|DateTimeOffset|When the local administrator account credential will be refreshed and backed up to Azure Active Directory.|
 
 
 ## Relationships
