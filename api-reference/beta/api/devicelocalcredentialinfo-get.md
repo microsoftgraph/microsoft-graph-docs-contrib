@@ -1,6 +1,6 @@
 ---
 title: "Get deviceLocalCredential"
-description: "Retrieve the properties of deviceLocalCredential on a specified device object."
+description: "Retrieve the properties of a deviceLocalCredential for a specified device object."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of [deviceLocalCredential](../resources/devicelocalcredential.md) on a specified device object. 
+Retrieve the properties of a [deviceLocalCredential](../resources/devicelocalcredential.md) for a specified device object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,10 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceLocalCredential.Read.All|
 
->**Note:** For delegated permissions to allow apps to get [**deviceLocalCredential**] (../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles: 
-* Global administrator
-* Cloud device administrator
-* Intune service administrator
+[!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
 
 ## HTTP request
 To get the device local credential for a specific device object:
@@ -46,6 +43,8 @@ GET /deviceLocalCredentials/{deviceId}
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
+## Optional query parameters
+This method supports the `$select`, `$filter`, `$search`, `$orderby`, `$top`, `$count` and `$skiptoken` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 Do not supply a request body for this method.
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 
 ## Examples
 
-### Example 1: Get the device local credential by specifying the key **id**
+### Example 1: Get a device's local adminstrator account credential info
 
 #### Request
 The following is an example of the request. This example does not return the **credentials** property.
@@ -99,7 +98,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the device local credential with the **credentials** property by specifying the key **id**
+### Example 2: Get the device local adminstrator account credential info with the **credentials** property
 
 #### Request
 The following is an example of the request.
@@ -136,7 +135,7 @@ Content-type: application/json
     "deviceName": "LAPS_TEST",
     "lastBackupDateTime": "2023-04-21T13:45:30.0000000Z",
     "refreshDateTime": "2020-05-20T13:45:30.0000000Z",
-    "credentials": "credentials": [
+    "credentials": [
       {
         "accountName": "ContosoLocalAdminAccount",
         "accountSid": "S-1-5-21-2318549658-1590267884-3984890135-1965",
