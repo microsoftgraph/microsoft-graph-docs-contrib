@@ -33,7 +33,7 @@ Represents information about a media stream between two endpoints in a call.
 |averageVideoFrameRate|Double|Average frames per second received for a video stream, computed over the duration of the session.|
 |averageVideoPacketLossRate|Double|Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.|
 |endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|isAudioForwardErrorCorrectionUsed|Boolean|True if the forward error correction (FEC) was used at some point during session, false otherwise. Null if no information was registered.|
+|isAudioForwardErrorCorrectionUsed|Boolean|Indicates if the forward error correction (FEC) was used at some point during the session. Null if no information was registered.|
 |lowFrameRateRatio|Double|Fraction of the call where frame rate is less than 7.5 frames per second.|
 |lowVideoProcessingCapabilityRatio|Double|Fraction of the call that the client is running less than 70% expected video processing capability.|
 |maxAudioNetworkJitter|Duration|Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
