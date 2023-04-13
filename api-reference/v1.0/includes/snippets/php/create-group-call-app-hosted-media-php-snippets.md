@@ -94,7 +94,7 @@ $mediaConfig->setAdditionalData($additionalData);
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

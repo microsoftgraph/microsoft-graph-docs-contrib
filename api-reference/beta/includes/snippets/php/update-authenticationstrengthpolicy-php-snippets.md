@@ -18,7 +18,7 @@ $requestBody->setDescription('An auth strength allowing only FIDO2 security keys
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationStrengthPoliciesById('authenticationStrengthPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationStrengthPoliciesById('authenticationStrengthPolicy-id')->patch($requestBody);
 
 
 ```

@@ -10,21 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$queryParameters = new ApplicationsRequestBuilderGetQueryParameters();
+$queryParameters = ApplicationsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->search = "\"displayName:Web\"";
 $queryParameters->count = true;
 $queryParameters->select = ["appId","identifierUris","displayName","publisherDomain","signInAudience"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->applications()->get($requestConfiguration);
+$result = $graphServiceClient->applications()->get($requestConfiguration);
 
 
 ```

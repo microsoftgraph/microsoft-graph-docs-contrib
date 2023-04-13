@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	OriginalStartTimeZone = "originalStartTimeZone-value"
-	OriginalEndTimeZone = "originalEndTimeZone-value"
-	ICalUId = "iCalUId-value"
-	ReminderMinutesBeforeStart = 
-	IsReminderOn = $true
+	originalStartTimeZone = "originalStartTimeZone-value"
+	originalEndTimeZone = "originalEndTimeZone-value"
+	iCalUId = "iCalUId-value"
+	reminderMinutesBeforeStart = 
+	isReminderOn = $true
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params

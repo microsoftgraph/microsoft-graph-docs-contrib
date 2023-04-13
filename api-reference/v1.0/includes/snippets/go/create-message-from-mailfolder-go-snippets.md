@@ -26,6 +26,8 @@ requestBody.SetHasAttachments(&hasAttachments)
 subject := "subject-value"
 requestBody.SetSubject(&subject) 
 body := graphmodels.NewItemBody()
+contentType := graphmodels.TEXT_BODYTYPE 
+body.SetContentType(&contentType) 
 content := "content-value"
 body.SetContent(&content) 
 requestBody.SetBody(body)

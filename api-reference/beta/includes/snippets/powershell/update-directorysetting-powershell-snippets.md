@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	Values = @(
+	values = @(
 		@{
-			Name = "CustomBlockedWordsList"
-			Value = "Contoso"
+			name = "CustomBlockedWordsList"
+			value = "Contoso"
 		}
 	)
 }

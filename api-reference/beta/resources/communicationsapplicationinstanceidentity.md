@@ -1,7 +1,7 @@
 --- 
 title: "communicationsApplicationInstanceIdentity resource type"
 description: "Represents the identity of an instance of an application."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

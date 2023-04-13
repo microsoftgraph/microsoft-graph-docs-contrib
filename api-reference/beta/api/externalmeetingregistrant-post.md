@@ -1,7 +1,7 @@
 ---
 title: "Create externalMeetingRegistrant"
 description: "Enroll an external meeting registrant."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

@@ -24,7 +24,7 @@ $requestBody->setMaiden(null);
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->names()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->names()->post($requestBody);
 
 
 ```

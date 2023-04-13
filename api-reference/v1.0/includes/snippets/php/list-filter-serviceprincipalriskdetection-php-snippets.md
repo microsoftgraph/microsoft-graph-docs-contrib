@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ServicePrincipalRiskDetectionsRequestBuilderGetQueryParameters();
+$queryParameters = ServicePrincipalRiskDetectionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityProtection()->servicePrincipalRiskDetections()->get($requestConfiguration);
+$result = $graphServiceClient->identityProtection()->servicePrincipalRiskDetections()->get($requestConfiguration);
 
 
 ```

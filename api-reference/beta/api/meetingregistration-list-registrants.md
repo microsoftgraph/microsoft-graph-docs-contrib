@@ -1,7 +1,7 @@
 ---
 title: "List registrants"
 description: "Get a list of the meetingRegistrants of an onlineMeeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

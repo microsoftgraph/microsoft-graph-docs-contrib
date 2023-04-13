@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RoleAssignmentScheduleRequestsRequestBuilderGetQueryParameters();
+$queryParameters = RoleAssignmentScheduleRequestsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["principalId","action","roleDefinitionId"];
 $queryParameters->expand = ["roleDefinition","activatedUsing","principal","targetSchedule"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->get($requestConfiguration);
 
 
 ```

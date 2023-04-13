@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RoleAssignmentsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RoleAssignmentsRequestBuilderGetQueryParameters();
+$queryParameters = RoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'";
 $queryParameters->expand = ["principal"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignments()->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->get($requestConfiguration);
 
 
 ```

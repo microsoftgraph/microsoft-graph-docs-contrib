@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"

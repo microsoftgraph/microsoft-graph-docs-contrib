@@ -1,7 +1,7 @@
 ---
 title: "participant: stopHoldMusic"
 description: "Reincorporate a participant previously put on hold to the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
