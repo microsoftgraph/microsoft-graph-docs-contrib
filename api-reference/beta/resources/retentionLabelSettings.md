@@ -34,7 +34,7 @@ Here is a JSON representation of a **microsoft.graph.retentionLabelSettings** re
 ```json
 {
   "isDeleteAllowed": false,
-  "behaviorDuringRetentionPeriod": "string",
+  "behaviorDuringRetentionPeriod": "retain",
   "isRecordLocked": false,
   "isMetadataUpdateAllowed": false,
   "isContentUpdateAllowed": false,
