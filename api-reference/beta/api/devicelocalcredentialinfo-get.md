@@ -140,19 +140,19 @@ Content-type: application/json
         "accountName": "ContosoLocalAdminAccount",
         "accountSid": "S-1-5-21-2318549658-1590267884-3984890135-1965",
         "backupDateTime": "2023-04-21T13:45:30.0000000Z",
-        "passwordBase64": "UQBRAEAAZAA4AGYAOABnAFkA",
+        "passwordBase64": "UQBRAEAAZAA4AGYAOABnAFkA"
       },
       {
         "accountName": "ContosoLocalAdminAccount",
         "accountSid": "S-1-5-21-2318549658-1590267884-3984890135-1965",
         "backupDateTime": "2023-03-22T13:45:30.0000000Z",
-        "passwordBase64": "KgBEADkAawBsAGsAZgAjADQA",
+        "passwordBase64": "KgBEADkAawBsAGsAZgAjADQA"
       },
       {
         "accountName": "Administrator",
         "accountSid": "S-1-5-21-2318549658-1590267884-3984890135-500",
         "backupDateTime": "2023-02-23T13:45:30.0000000Z"
-        "passwordBase64": "TABwAGQAOQAqACgAKQAzADQA",
+        "passwordBase64": "TABwAGQAOQAqACgAKQAzADQA"
       }
     ]
   }
