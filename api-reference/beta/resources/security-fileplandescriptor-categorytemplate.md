@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the 'category' file plan descriptor for retention labels.
+Represents the category file plan descriptor for retention labels.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
