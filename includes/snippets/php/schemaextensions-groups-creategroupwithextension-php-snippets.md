@@ -23,7 +23,7 @@ $requestBody->setMailNickname('newMan201703');
 $requestBody->setSecurityEnabled(false);
 
 $additionalData = [
-'graphlearn_courses' => $requestBody = new Graphlearn_courses();
+	'graphlearn_courses' => $requestBody = new Graphlearn_courses();
 $	requestBody->setCourseId('123');
 
 $	requestBody->setCourseName('New Managers');
@@ -39,7 +39,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->groups()->post($requestBody);
+$result = $graphServiceClient->groups()->post($requestBody);
 
 
 ```

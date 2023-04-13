@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Settings();
+$requestBody = new SharepointSettings();
 $requestBody->setDeletedUserPersonalSiteRetentionPeriodInDays(365);
 
 $requestBody->setExcludedFileExtensionsForSyncApp(['.mp3', ]);
@@ -28,7 +28,7 @@ $requestBody->setPersonalSiteDefaultStorageLimitInMB(120000);
 
 
 
-$requestResult = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
+$result = $graphServiceClient->admin()->sharepoint()->settings()->patch($requestBody);
 
 
 ```

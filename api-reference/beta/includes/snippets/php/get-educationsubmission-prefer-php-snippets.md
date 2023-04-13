@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EducationSubmissionRequestBuilderGetRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'include-unknown-enum-members',
-];
-
+		'Prefer' => 'include-unknown-enum-members',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->get($requestConfiguration);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->get($requestConfiguration);
 
 
 ```

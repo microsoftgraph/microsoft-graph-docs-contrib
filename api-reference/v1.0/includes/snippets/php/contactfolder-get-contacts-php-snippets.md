@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->get();
+$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->get();
 
 
 ```
