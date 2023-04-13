@@ -19,7 +19,7 @@ $valueAlert1->setComments(['String', ]);
 
 $valueAlert1Feedback = new AlertFeedback();
 $additionalData = [
-'@odata.type' => 'microsoft.graph.alertFeedback', 
+	'@odata.type' => 'microsoft.graph.alertFeedback', 
 ];
 $valueAlert1Feedback->setAdditionalData($additionalData);
 
@@ -30,7 +30,7 @@ $valueAlert1->setId('String (identifier)');
 
 $valueAlert1Status = new AlertStatus();
 $additionalData = [
-'@odata.type' => 'microsoft.graph.alertStatus', 
+	'@odata.type' => 'microsoft.graph.alertStatus', 
 ];
 $valueAlert1Status->setAdditionalData($additionalData);
 
@@ -53,7 +53,7 @@ $requestBody->setValue($valueArray);
 
 
 
-$requestResult = $graphServiceClient->security()->alerts()->updateAlerts()->post($requestBody);
+$result = $graphServiceClient->security()->alerts()->updateAlerts()->post($requestBody);
 
 
 ```

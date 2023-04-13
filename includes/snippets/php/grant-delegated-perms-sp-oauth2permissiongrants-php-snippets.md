@@ -22,7 +22,7 @@ $requestBody->setScope('User.Read.All Group.Read.All');
 
 
 
-$requestResult = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
+$result = $graphServiceClient->oauth2PermissionGrants()->post($requestBody);
 
 
 ```

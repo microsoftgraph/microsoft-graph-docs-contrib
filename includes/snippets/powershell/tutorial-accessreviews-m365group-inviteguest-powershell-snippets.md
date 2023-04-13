@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	InvitedUserDisplayName = "John Doe (Tailspin Toys)"
-	InvitedUserEmailAddress = "john@tailspintoys.com"
-	SendInvitationMessage = $false
-	InviteRedirectUrl = "https://myapps.microsoft.com"
+	invitedUserDisplayName = "John Doe (Tailspin Toys)"
+	invitedUserEmailAddress = "john@tailspintoys.com"
+	sendInvitationMessage = $false
+	inviteRedirectUrl = "https://myapps.microsoft.com"
 }
 
 New-MgInvitation -BodyParameter $params

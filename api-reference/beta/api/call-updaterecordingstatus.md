@@ -1,7 +1,7 @@
 ---
 title: "call: updateRecordingStatus"
 description: "Update the application's recording status associated with a call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

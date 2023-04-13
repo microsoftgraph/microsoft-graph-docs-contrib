@@ -13,7 +13,7 @@ $requestBody = new EducationOutcome();
 $requestBody->set@odatatype('#microsoft.graph.educationRubricOutcome');
 
 $additionalData = [
-'rubricQualityFeedback' => $rubricQualityFeedback1 = new ();
+		'rubricQualityFeedback' => $rubricQualityFeedback1 = new ();
 $		rubricQualityFeedback1->setQualityId('9a145aa8-f3d9-43a1-8f77-5387ff0693f2');
 
 $rubricQualityFeedback1Feedback = new Feedback();
@@ -40,7 +40,7 @@ $rubricQualityFeedbackArray []= $rubricQualityFeedback2;
 $requestBody->setRubricQualityFeedback($rubricQualityFeedbackArray);
 
 
-'rubricQualitySelectedLevels' => $rubricQualitySelectedLevels1 = new ();
+	'rubricQualitySelectedLevels' => $rubricQualitySelectedLevels1 = new ();
 $	rubricQualitySelectedLevels1->setQualityId('9a145aa8-f3d9-43a1-8f77-5387ff0693f2');
 
 $	rubricQualitySelectedLevels1->setColumnId('4fb17a1d-5681-46c2-a295-4e305c3eae23');
@@ -63,7 +63,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->outcomesById('educationOutcome-id')->patch($requestBody);
 
 
 ```

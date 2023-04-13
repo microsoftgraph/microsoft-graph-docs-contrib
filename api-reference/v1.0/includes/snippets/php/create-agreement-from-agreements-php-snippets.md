@@ -33,7 +33,7 @@ $requestBody->setFiles($filesArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->post($requestBody);
 
 
 ```

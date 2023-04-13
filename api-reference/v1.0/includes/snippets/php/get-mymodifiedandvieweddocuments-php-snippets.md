@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsedRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UsedRequestBuilderGetQueryParameters();
+$queryParameters = UsedRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->orderby = ["LastUsed/LastAccessedDateTime desc"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->insights()->used()->get($requestConfiguration);
+$result = $graphServiceClient->me()->insights()->used()->get($requestConfiguration);
 
 
 ```

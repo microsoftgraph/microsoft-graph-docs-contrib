@@ -55,7 +55,7 @@ $requestBody->setAttendees($attendeesArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->events()->post($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->events()->post($requestBody);
 
 
 ```

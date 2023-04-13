@@ -52,7 +52,7 @@ $requestBody->setKeys($keysArray);
 
 
 
-$requestResult = $graphServiceClient->trustFramework()->keySets()->post($requestBody);
+$result = $graphServiceClient->trustFramework()->keySets()->post($requestBody);
 
 
 ```

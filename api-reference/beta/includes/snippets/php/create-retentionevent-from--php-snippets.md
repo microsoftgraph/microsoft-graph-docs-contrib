@@ -48,7 +48,7 @@ $requestBody->setLastStatusUpdateDateTime(new DateTime('String (timestamp)'));
 
 
 
-$requestResult = $graphServiceClient->security()->triggers()->retentionEvents()->post($requestBody);
+$result = $graphServiceClient->security()->triggers()->retentionEvents()->post($requestBody);
 
 
 ```
