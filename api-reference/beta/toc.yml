@@ -12305,13 +12305,6 @@ items:
             href: api/mobileappmanagementpolicies-post-includedgroups.md
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
-          - name: Subscribed sku
-            href: resources/subscribedsku.md
-            items:
-            - name: List subscribedSkus
-              href: api/subscribedsku-list.md
-            - name: Get subscribedSku
-              href: api/subscribedsku-get.md
           - name: Company Subscriptions
             href: resources/companySubscriptions.md
             items:
