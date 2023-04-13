@@ -24,7 +24,7 @@ $requestBody->setSecurityEnabled(false);
 
 
 
-$requestResult = $graphServiceClient->groups()->post($requestBody);
+$result = $graphServiceClient->groups()->post($requestBody);
 
 
 ```

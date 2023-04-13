@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Comment = "I will probably be able to make it."
-	SendResponse = $true
+	comment = "I will probably be able to make it."
+	sendResponse = $true
 }
 
 # A UPN can also be used as -UserId.

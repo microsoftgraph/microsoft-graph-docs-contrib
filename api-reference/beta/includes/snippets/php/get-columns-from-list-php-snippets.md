@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->columns()->get();
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->columns()->get();
 
 
 ```

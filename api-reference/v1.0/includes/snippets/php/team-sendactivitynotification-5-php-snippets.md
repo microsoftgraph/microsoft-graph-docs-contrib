@@ -28,7 +28,7 @@ $recipient = new TeamworkNotificationRecipient();
 $recipient->set@odatatype('microsoft.graph.teamMembersNotificationRecipient');
 
 $additionalData = [
-'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
+		'teamId' => 'e8bece96-d393-4b9b-b8da-69cedef1a7e7', 
 ];
 $recipient->setAdditionalData($additionalData);
 

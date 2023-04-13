@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Vacation Plan');
 
 
 
-$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->patch($requestBody);
+$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->patch($requestBody);
 
 
 ```

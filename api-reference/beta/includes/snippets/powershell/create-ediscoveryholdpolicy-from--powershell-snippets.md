@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Displayname = "My legalHold with sources"
-	Description = "Created from Graph API"
-	"UserSources@odata.bind" = @(
+	displayname = "My legalHold with sources"
+	description = "Created from Graph API"
+	"userSources@odata.bind" = @(
 		@{
 			"@odata.type" = "microsoft.graph.security.userSource"
-			Email = "SalesTeam@M365x809305.OnMicrosoft.com"
+			email = "SalesTeam@M365x809305.OnMicrosoft.com"
 		}
 	)
-	"SiteSources@odata.bind" = @(
+	"siteSources@odata.bind" = @(
 		@{
 			"@odata.type" = "microsoft.graph.security.siteSource"
 		}
