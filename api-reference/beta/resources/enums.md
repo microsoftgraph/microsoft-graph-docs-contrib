@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member             | 
+|:-------------------|
+|Required            |
+|Recommeded          |
+|UnknownFutureValue  |
+
 ### usqState values
 
 | Member             | 
