@@ -212,6 +212,8 @@ mgt-person-card {
   --profile-background-color: grey;
   --profile-token-item-color: blue;
   --profile-token-overflow-color: purple;
+  --profile-section-title-color: black;
+  --profile-token-item-background-color: yellow;
 }
 ```
 
