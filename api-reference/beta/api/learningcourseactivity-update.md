@@ -107,10 +107,8 @@ The following is an example of the response.
   "truncated": true
 }
 -->
-
 ``` http
-HTTP/1.1 204 OK
-No Content
+HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Update an self-initiated learning course activity
@@ -158,8 +156,6 @@ The following is an example of the response.
   "truncated": true
 }
 -->
-
 ``` http
-HTTP/1.1 204 OK
-No Content
+HTTP/1.1 204 No Content
 ```
