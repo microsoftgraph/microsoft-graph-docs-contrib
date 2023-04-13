@@ -33,7 +33,7 @@ To get a list of deviceLocalCredentialInfo within the tenant:
 }
 -->
 ``` http
-GET /directory/deviceLocalCredentials
+GET /deviceLocalCredentials
 ```
 ## Optional query parameters
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -67,7 +67,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials
+GET https://graph.microsoft.com/beta/deviceLocalCredentials
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
