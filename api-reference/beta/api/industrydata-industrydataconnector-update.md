@@ -64,7 +64,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_azuredatalakeconnector",
+  "name": "update_industrydataconnector",
   "sampleKeys": ["51dca0a0-85f6-4478-f526-08daddab2271"]
 }
 -->

@@ -67,7 +67,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_webpart"
+  "name": "get_webpart_1"
 }
 -->
 
@@ -134,7 +134,7 @@ With `select` statement, you can retrieve selected webpart metadata in a request
 
 <!-- {
   "blockType": "request",
-  "name": "get_webpart"
+  "name": "get_webpart_2"
 }
 -->
 
