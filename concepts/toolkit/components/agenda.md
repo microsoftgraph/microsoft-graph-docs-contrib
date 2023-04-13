@@ -61,24 +61,26 @@ The `mgt-agenda` component defines these CSS custom properties
 
 ```css
 mgt-agenda {
-  --event-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.092);
-  --event-margin: 0px 10px 14px 10px;
-  --event-padding: 8px 0px;
-  --event-background-color: #ffffff;
-  --event-border: solid 2px rgba(0, 0, 0, 0);
+  --agenda-event-box-shadow: 0px 2px 30px pink;
+  --agenda-event-margin: 0px 10px 40px 10px;
+  --agenda-event-padding: 8px 0px;
+  --agenda-event-background-color: #8d696f;
+  --agenda-event-border: dotted 2px white;
 
-  --agenda-header-margin: 40px 10px 14px 10px;
-  --agenda-header-font-size: 24px;
-  --agenda-header-color: #333333;
+  --agenda-header-margin: 3px;
+  --agenda-header-font-size: 20px;
+  --agenda-header-color: #8d696f;
 
-  --event-time-font-size: 12px;
-  --event-time-color: #000000;
+  --agenda-event-time-font-size: 20px;
+  --agenda-event-time-color: white;
 
-  --event-subject-font-size: 19px;
-  --event-subject-color: #333333;
+  --agenda-event-subject-font-size: 12px;
+  --agenda-event-subject-color: white;
 
-  --event-location-font-size: 12px;
-  --event-location-color: #000000;
+  --agenda-event-location-font-size: 20px;
+  --agenda-event-location-color: white;
+
+  --agenda-event-attendees-color: gold;
 }
 ```
 
