@@ -27,7 +27,7 @@ Microsoft Graph provides the following PIM iteration 2 APIs to manage Azure AD r
 - APIs for Azure AD roles
 - [APIs for Azure resources](privilegedidentitymanagement-resources.md)
 
-## Migrate from PIM v2 to PIM v3 APIs
+## Migrate from PIM iteration 2 APIs to PIM iteration 3 APIs
 
 [!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 
