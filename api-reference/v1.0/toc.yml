@@ -5067,12 +5067,12 @@ items:
           - name: Get subscribedSku
             href: api/subscribedsku-get.md
         - name: Company Subscriptions
-            href: resources/companySubscriptions.md
-            items:
-            - name: List companySubscriptions
-              href: api/companySubscriptions-list.md
-            - name: Get companySubscriptions
-              href: api/companySubscriptions-get.md
+          href: resources/companySubscriptions.md
+          items:
+          - name: List companySubscriptions
+            href: api/companySubscriptions-list.md
+          - name: Get companySubscriptions
+            href: api/companySubscriptions-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
