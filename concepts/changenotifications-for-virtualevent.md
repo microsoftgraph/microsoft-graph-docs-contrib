@@ -21,8 +21,6 @@ Virtual event resources support subscription to change notifications. Subscripti
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
 | Application                           | VirutalEvent.Read.All                                    | beta               |
 
-The following resources are subscribeable for virtual events.
-
 ### Subscribeable resources
 
 | Resource Type                                          | Resource                                                                                  | Supported change types    |
@@ -31,14 +29,14 @@ The following resources are subscribeable for virtual events.
 | All Events (Tenant-level by organizer/coorganizer ids) | solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])       | created                   |
 | A webinar's events                                     | solutions/virtualEvents/webinars/{webinarId}                                              | updated                   |
 | A webinar's session events                             | solutions/virtualEvents/webinars/{webinarId}/sessions                                     | created, updated          |
-| Session meeting call                                   | communications/onlineMeetings/?$filter=JoinWebUrl eq '{meetingJoinUrl}'                   | updated                   |
 | A webinar's registrantion events                       | solutions/virtualEvents/webinars/{webinarId}/registration/registrants                     | created, updated          |
 
 **Note:** Replace values with parenthesis with actual values.
 
 ### Subscription to all created events in a tenant
 
-Subscriptions for all events for a unique app and tenant is accomplished by having `solutions/virtualEvents/events` as the resource in the subscription payload.
+Subscriptions for all events for a unique app and tenant can be specified with the following resource `solutions/virtualEvents/events` in the subscription payload.
+The subscription will designate the notification url to receive all event created notifications in a tenant for virtual events.
 Only event created notifications are supported for this subscription. A tenant may only have one type of this subscription per application.
 
 ```HTTP
@@ -58,7 +56,7 @@ Content-Type: application/json
 ### Subscribe to all created events with relevant organizerss.
 
 Subscriptions to all events that include any members of a set of organizers/coorganizers can be accomplished with the resource specified as 
-`"solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])"`. These subscriptions will receive any created notifications for events where id1 and id2 are either the organizer or co-organizer. This subscription is not distinct from subscriptions to all created events in a tenant.
+`"solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])"`. These subscriptions will receive any created notifications for all virtual events where id1 and id2 are either the organizer or co-organizer. This subscription is not distinct from subscriptions to all created events in a tenant.
 
 ```HTTP
 POST https://graph.microsoft.com/beta/subscriptions
@@ -76,7 +74,7 @@ Content-Type: application/json
 
 ### Subscribe to specific webinar's updated events
 
-To receive updated notifications for a particular webinar level event, a subscription must be created for that unique event id.
+To receive updated notifications for a particular webinar level event, a subscription must be created for that unique event id. Subscription to a webinar's updated events will relay events related to updates for a particular webinar. 
 This can be accomplished with the resource `solutions/virtualEvents/webinars/{eventId}` where eventId is the webinar id.
 
 A tenant can only create single subscription to each distinct webinar per application.
@@ -98,7 +96,7 @@ Content-Type: application/json
 ### Subscribe to session event notifications for a webinar.
 
 Session notifications for a particular webinar can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{eventId}/sessions` where eventId is the webinar id.
-
+Subscription will have all notifications related to a webinar's sessions events will be sent for the change types desired.
 A tenant may only have a single session level subscription for each distinct webinar per application.
 
 ```HTTP
@@ -122,7 +120,7 @@ To subscribe to a specific session's meeting call events, please see [Change not
 ### Subscribe to all registrants for a particular event
 
 Registant notifications for a particular event can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{eventId}/registration/registrants` where eventId is the webinar id.
-
+Subscription will relay all notifications of the relevant change types on registration events for a specific virtual event webinar.
 A tenant may only have a single registrant level subscription per distinct webinar and application combination.
 
 ```HTTP
