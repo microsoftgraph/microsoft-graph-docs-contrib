@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	IdentifierUris = @(
+	identifierUris = @(
 		"https://contosoiwaapp-contoso.msappproxy.net"
 	)
-	Web = @{
-		RedirectUris = @(
+	web = @{
+		redirectUris = @(
 			"https://contosoiwaapp-contoso.msappproxy.net"
 		)
-		HomePageUrl = "https://contosoiwaapp-contoso.msappproxy.net"
+		homePageUrl = "https://contosoiwaapp-contoso.msappproxy.net"
 	}
 }
 

@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'M
 
 ---
 
-
 ### Response
 
 The following object is an example of the response.
@@ -177,7 +176,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -242,7 +240,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-7
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -315,7 +312,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -331,6 +327,7 @@ You've learned how to manage app role grants for a service principal. This metho
 
 ## See also
 
++ [Tutorial: Grant app roles in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
 
 ::: zone-end
@@ -406,7 +403,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'M
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -510,7 +506,6 @@ Content-Type: application/json
 
 ---
 
-
 While the preceding request grants consent on behalf of a single user, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the previous request body except with the following changes:
 - The **consentType** is `AllPrincipals`, indicating that you're consenting on behalf of all users in the tenant.
 - The **principalId** property isn't supplied or can be `null`.
@@ -594,7 +589,6 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
@@ -672,7 +666,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -722,7 +715,6 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/47nZsM8O_UuNq5Jz3
 
 ---
 
-
 ### Response
 
 <!-- {
@@ -738,7 +730,8 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 ## See also
 
-+ [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
+- [Tutorial: Grant delegated permissions in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
+- [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
 
 ::: zone-end
 

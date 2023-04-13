@@ -16,7 +16,7 @@ $requestBody->setDescription('Magnate school for the arts. Los Angeles School Di
 
 
 
-$requestResult = $graphServiceClient->education()->schoolsById('educationSchool-id')->patch($requestBody);
+$result = $graphServiceClient->education()->schoolsById('educationSchool-id')->patch($requestBody);
 
 
 ```

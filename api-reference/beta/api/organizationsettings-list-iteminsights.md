@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 
 ---
 
-
 ### Response
 
 Here is an example of the response. 

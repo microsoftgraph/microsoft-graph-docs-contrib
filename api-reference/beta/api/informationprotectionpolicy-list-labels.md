@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

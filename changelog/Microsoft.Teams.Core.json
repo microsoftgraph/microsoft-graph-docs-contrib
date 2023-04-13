@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **user** property on the [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessagefromidentityset?view=graph-rest-1.0) resource from **identitySet** to **teamworkUserIdentitySet**.",
+          "Target": "chatMessageFromIdentitySet"
+        },
+        {
+          "Id": "1e5ea407-c4ec-42fc-a09e-b7849f7dd9f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [teamworkUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkuseridentity?view=graph-rest-1.0) resource.",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-01-13T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **user** property [chatMessageFromIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/chatMessagefromidentityset?view=graph-rest-beta) from **identitySet** to **teamworkUserIdentitySet**..",
+          "Target": "chatMessageFromIdentitySet"
+        },
+        {
+          "Id": "bc4785cb-8b28-40f8-b726-e459f4375b23",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [teamworkUserIdentity](https://learn.microsoft.com/en-us/graph/api/resources/teamworkuseridentity?view=graph-rest-beta) resource.",
+          "Target": "teamworkUserIdentity"
+        }
+      ],
+      "Id": "4c336ec2-2fa7-42e8-8aea-941251981e93",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-31T13:04:49.407Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "17c54352-c87f-47fd-ab92-e19ce2da7bcc",
           "ApiChange": "Parameter",
           "ChangedApiName": "chatMessage",
@@ -43,7 +95,7 @@
           "ApiChange": "Authentication",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Change",
-          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-update) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
+          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-1.0) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
           "Target": "chatMessage"
         }
       ],
@@ -61,7 +113,7 @@
           "ApiChange": "Authentication",
           "ChangedApiName": "Messaging",
           "ChangeType": "Change",
-          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/update-chatmessage) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
+          "Description": "Enabled validation on the sender tenant ID for the [Update chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-beta) operation. With this change, only the tenant of the user who sent the message can perform data loss prevention updates on the chat message; that is, change the **policyViolation** property on the chat message.",
           "Target": "chat"
         }
       ],
@@ -157,7 +209,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the **teamTemplates** relationship to the [teamwork and communications](https://learn.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Description": "Added the **teamTemplates** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamTemplates"
         }
       ],
@@ -921,7 +973,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [teamInfo](https://learn.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [teamInfo](https://learn.microsoft.com/en-us/graph/api/resources/teaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "teamInfo"
         },
         {
@@ -929,7 +981,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "associatedTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [associatedTeamInfo](https://learn.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [associatedTeamInfo](https://learn.microsoft.com/en-us/graph/api/resources/associatedteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "associatedTeamInfo"
         },
         {
@@ -937,7 +989,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharedWithChannelTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [sharedWithChannelTeamInfo](https://learn.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "sharedWithChannelTeamInfo"
         },
         {
@@ -945,7 +997,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "doesUserHaveAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [doesUserHaveAccess](https://learn.microsoft.com/en-us/graph/api/doesuserhaveaccess?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [doesUserHaveAccess](https://learn.microsoft.com/en-us/graph/api/channel-doesuserhaveaccess?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "channel"
         }
       ],
@@ -1159,7 +1211,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "messages",
           "ChangeType": "Change",
-          "Description": "Changed the [Create chatMessage in a channel](https://learn.microsoft.com/en-us/graph/api/channel-post-message?view=graph-rest-1.0&preserve-view=true) method to support migration scenario.",
+          "Description": "Changed the [Create chatMessage in a channel](https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) method to support migration scenario.",
           "Target": "messages"
         },
         {
@@ -1217,7 +1269,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkNotificationAudience",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkNotificationAudience](https://learn.microsoft.com/en-us/graph/api/resources/teamworkNotificationAudience?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **teamworkNotificationAudience** resource type.",
           "Target": "teamworkNotificationAudience"
         },
         {
@@ -1225,7 +1277,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aadUserNotificationAudience",
           "ChangeType": "Addition",
-          "Description": "Added the [aadUserNotificationAudience](https://learn.microsoft.com/en-us/graph/api/resources/aadUserNotificationAudience?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **aadUserNotificationAudience** resource type.",
           "Target": "aadUserNotificationAudience"
         },
         {
@@ -1389,7 +1441,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) for change notifications in delegated context to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageview=graph-rest-1.0).",
+          "Description": "Added support for the creation of [subscriptions](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) for change notifications in delegated context to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
           "Target": "chatMessage"
         }
       ],
@@ -1647,7 +1699,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicInnerError",
           "ChangeType": "Addition",
-          "Description": "Added the [PublicInnerError](https://learn.microsoft.com/en-us/graph/resources/publicinnererror?view=graph-rest-beta) resource.",
+          "Description": "Added the [PublicInnerError](https://learn.microsoft.com/en-us/graph/api/resources/publicinnererror?view=graph-rest-beta) resource.",
           "Target": "publicInnerError"
         },
         {
@@ -1655,7 +1707,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publicErrorDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [PublicErrorDetail](https://learn.microsoft.com/en-us/graph/resources/publicerrordetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [PublicErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/publicerrordetail?view=graph-rest-beta) resource.",
           "Target": "publicErrorDetail"
         },
         {
@@ -1663,7 +1715,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aadUserConversationMemberResult",
           "ChangeType": "Addition",
-          "Description": "Added the [AadUserConversationMemberResult](https://learn.microsoft.com/en-us/graph/resources/aaduserconversationmemberresult?view=graph-rest-beta) method.",
+          "Description": "Added the [AadUserConversationMemberResult](https://learn.microsoft.com/en-us/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta) method.",
           "Target": "aadUserConversationMemberResult"
         },
         {
@@ -1671,7 +1723,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "actionresultpart",
           "ChangeType": "Addition",
-          "Description": "Added the [ActionResultPart](https://learn.microsoft.com/en-us/graph/resources/actionresultpart?view=graph-rest-beta) resource.",
+          "Description": "Added the [ActionResultPart](https://learn.microsoft.com/en-us/graph/api/resources/actionresultpart?view=graph-rest-beta) resource.",
           "Target": "actionresultpart"
         },
         {
@@ -1879,7 +1931,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "chat-list-installedApps",
           "ChangeType": "Addition",
-          "Description": "Added [list apps in chat  APIs](https://learn.microsoft.com/en-us/graph/api/chat-list-installedapps.md?view=graph-rest-beta).",
+          "Description": "Added [list apps in chat  APIs](https://learn.microsoft.com/en-us/graph/api/chat-list-installedapps?view=graph-rest-beta).",
           "Target": "chat-list-installedApps"
         },
         {
@@ -1963,7 +2015,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkNotificationAudience",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkNotificationAudience](https://learn.microsoft.com/en-us/graph/api/resources/teamworkNotificationAudience?view=graph-rest-beta) resource type.",
+          "Description": "Added the **teamworkNotificationAudience** resource type.",
           "Target": "teamworkNotificationAudience"
         },
         {
@@ -1971,7 +2023,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aadUserNotificationAudience",
           "ChangeType": "Addition",
-          "Description": "Added the [aadUserNotificationAudience](https://learn.microsoft.com/en-us/graph/api/resources/aadUserNotificationAudience?view=graph-rest-beta) resource type.",
+          "Description": "Added the **aadUserNotificationAudience** resource type.",
           "Target": "aadUserNotificationAudience"
         },
         {
@@ -2487,10 +2539,10 @@
         {
           "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork and communications",
+          "ChangedApiName": "teamwork",
           "ChangeType": "Addition",
-          "Description": "Added new entity [teamwork and communications](https://learn.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-1.0).",
-          "Target": "teamwork and communications"
+          "Description": "Added new entity [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0).",
+          "Target": "teamwork"
         }
       ],
       "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
@@ -2661,7 +2713,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "channel messages delta query API",
           "ChangeType": "Addition",
-          "Description": "Added the ability to pull incremental messages from channels with the [channel messages delta query API](https://learn.microsoft.com/en-us/graph/api/channel-messages-delta?view=graph-rest-beta).",
+          "Description": "Added the ability to pull incremental messages from channels with the [channel messages delta query API](https://learn.microsoft.com/en-us/graph/api/chatmessage-delta?view=graph-rest-beta).",
           "Target": "channel messages delta query API"
         },
         {
@@ -2711,7 +2763,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List channel messages,Get channel message,List replies to a message,Get a reply to a message",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to [List channel messages](https://learn.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-beta), [Get channel message](https://learn.microsoft.com/en-us/graph/api/channel-get-message?view=graph-rest-beta), [List replies to a message](https://learn.microsoft.com/en-us/graph/api/channel-list-messagereplies?view=graph-rest-beta), and [Get a reply to a message](https://learn.microsoft.com/en-us/graph/api/channel-get-messagereply?view=graph-rest-beta).",
+          "Description": "Added support for application permissions to [List channel messages](https://learn.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-beta), [Get channel message](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta), [List replies to a message](https://learn.microsoft.com/en-us/graph/api/chatmessage-list-replies?view=graph-rest-beta), and [Get a reply to a message](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
           "Target": "List channel messages,Get channel message,List replies to a message,Get a reply to a message"
         },
         {
@@ -2741,10 +2793,10 @@
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamwork and communications",
+          "ChangedApiName": "teamwork",
           "ChangeType": "Addition",
-          "Description": "Added the [teamwork and communications](https://learn.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
-          "Target": "teamwork and communications"
+          "Description": "Added the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
         },
         {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
@@ -2759,7 +2811,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user,List apps installed for user,Install app for user,Uninstall app for user,Upgrade app installed for user",
           "ChangeType": "Addition",
-          "Description": "Added new methods to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource enabling the following methods with personal apps for users: \u003Cbr\u003E[List apps installed for user](https://learn.microsoft.com/en-us/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) \u003Cbr\u003E[Install app for user](https://learn.microsoft.com/en-us/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) \u003Cbr\u003E[Uninstall app for user](https://learn.microsoft.com/en-us/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) \u003Cbr\u003E[Upgrade app installed for user](https://learn.microsoft.com/en-us/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)",
+          "Description": "Added new methods to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource enabling the following methods with personal apps for users: \u003Cbr\u003E[List apps installed for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-list-installedapps?view=graph-rest-beta) \u003Cbr\u003E[Install app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-beta) \u003Cbr\u003E[Uninstall app for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-delete-installedapps?view=graph-rest-beta) \u003Cbr\u003E[Upgrade app installed for user](https://learn.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-beta).",
           "Target": "user,List apps installed for user,Install app for user,Uninstall app for user,Upgrade app installed for user"
         }
       ],
@@ -2777,7 +2829,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamDiscoverySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods.",
+          "Description": "Added the [teamDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta) resource and associated methods.",
           "Target": "teamDiscoverySettings"
         }
       ],
@@ -2829,7 +2881,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added the [chat](/api-reference/beta/resources/chat.md) resources and associated methods.",
+          "Description": "Added the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resources and associated methods.",
           "Target": "chat"
         },
         {
@@ -2837,7 +2889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "images",
           "ChangeType": "Addition",
-          "Description": "Added APIs to read [images](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in messages.",
+          "Description": "Added APIs to read images in messages.",
           "Target": "images"
         },
         {
@@ -2845,7 +2897,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conversation member",
           "ChangeType": "Addition",
-          "Description": "Added the [conversation member](/api-reference/beta/resources/conversationmember.md) resources and associated methods.",
+          "Description": "Added the [conversation member](https://learn.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) resources and associated methods.",
           "Target": "conversation member"
         }
       ],
@@ -2889,7 +2941,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schedule,schedulingGroup,shift,timeOffReason,timeOff",
           "ChangeType": "Addition",
-          "Description": "Added the [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) and [timeOff](/api-reference/beta/resources/timeoff.md) resources and associated methods.",
+          "Description": "Added the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-beta) and [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta) resources and associated methods.",
           "Target": "schedule,schedulingGroup,shift,timeOffReason,timeOff"
         }
       ],
@@ -2923,7 +2975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Create a message in a channel",
           "ChangeType": "Deletion",
-          "Description": "Removed the POST /teams/{id}/channels/{id}/chatThreads API. Use [Create a message in a channel](https://learn.microsoft.com/en-us/graph/api/channel-post-chatmessage?view=graph-rest-beta) instead.",
+          "Description": "Removed the POST /teams/{id}/channels/{id}/chatThreads API. Use [Create a message in a channel](https://learn.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-beta) instead.",
           "Target": "Create a message in a channel"
         },
         {
@@ -2957,7 +3009,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tabs",
           "ChangeType": "Addition",
-          "Description": "Added support for configuring Word, Excel, PowerPoint, PDF, and document library [tabs](teams-configuring-builtin-tabs.md).",
+          "Description": "Added support for configuring Word, Excel, PowerPoint, PDF, and document library [tabs](https://learn.microsoft.com/en-us/graph/teams-configuring-builtin-tabs).",
           "Target": "tabs"
         }
       ],
@@ -3469,7 +3521,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "GET /teams/{id}/channels",
           "ChangeType": "Addition",
-          "Description": "Added application permissions support to [GET /teams/{id}/channels](https://learn.microsoft.com/en-us/graph/api/group-list-channels?view=graph-rest-beta).",
+          "Description": "Added application permissions support to [GET /teams/{id}/channels](https://learn.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-beta).",
           "Target": "GET /teams/{id}/channels"
         },
         {
@@ -3559,7 +3611,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Chat reaction",
           "ChangeType": "Addition",
-          "Description": "Added [Chat reaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type",
+          "Description": "Added [Chat reaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type.",
           "Target": "Chat reaction"
         },
         {
@@ -3567,7 +3619,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get all channel messages API",
           "ChangeType": "Addition",
-          "Description": "Added [Get all channel messages API](https://learn.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-beta)",
+          "Description": "Added [Get all channel messages API](https://learn.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-beta).",
           "Target": "Get all channel messages API"
         },
         {
@@ -3575,7 +3627,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get channel message API",
           "ChangeType": "Addition",
-          "Description": "Added [Get channel message API](https://learn.microsoft.com/en-us/graph/api/channel-get-message?view=graph-rest-beta)",
+          "Description": "Added [Get channel message API](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
           "Target": "Get channel message API"
         },
         {
@@ -3583,7 +3635,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get all message replies API",
           "ChangeType": "Addition",
-          "Description": "Added [Get all message replies API](https://learn.microsoft.com/en-us/graph/api/channel-list-messagereplies?view=graph-rest-beta)",
+          "Description": "Added [Get all message replies API](https://learn.microsoft.com/en-us/graph/api/chatmessage-list-replies?view=graph-rest-beta).",
           "Target": "Get all message replies API"
         },
         {
@@ -3591,7 +3643,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get reply to a message API",
           "ChangeType": "Addition",
-          "Description": "Added [Get reply to a message API](https://learn.microsoft.com/en-us/graph/api/channel-get-messagereply?view=graph-rest-beta)",
+          "Description": "Added [Get reply to a message API](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
           "Target": "Get reply to a message API"
         },
         {
@@ -3615,7 +3667,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get channel message API",
           "ChangeType": "Addition",
-          "Description": "Added [Get channel message API](https://learn.microsoft.com/en-us/graph/api/channel-get-message?view=graph-rest-beta)",
+          "Description": "Added [Get channel message API](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta)",
           "Target": "Get channel message API"
         },
         {
@@ -3623,7 +3675,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get all message replies API",
           "ChangeType": "Addition",
-          "Description": "Added [Get all message replies API](https://learn.microsoft.com/en-us/graph/api/channel-list-messagereplies?view=graph-rest-beta)",
+          "Description": "Added [Get all message replies API](https://learn.microsoft.com/en-us/graph/api/chatmessage-list-replies?view=graph-rest-beta)",
           "Target": "Get all message replies API"
         },
         {
@@ -3631,7 +3683,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get reply to a message API",
           "ChangeType": "Addition",
-          "Description": "Added [Get reply to a message API](https://learn.microsoft.com/en-us/graph/api/channel-get-messagereply?view=graph-rest-beta)",
+          "Description": "Added [Get reply to a message API](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta)",
           "Target": "Get reply to a message API"
         },
         {
@@ -3663,7 +3715,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatmessage",
           "ChangeType": "Change",
-          "Description": "Updated [chatmessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta)) resource",
+          "Description": "Updated [chatmessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource",
           "Target": "chatmessage"
         },
         {
@@ -3775,7 +3827,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "list all teams in organization",
           "ChangeType": "Addition",
-          "Description": "Added API to [list all teams in organization](teams-list-all-teams.md).",
+          "Description": "Added API to [list all teams in organization](https://learn.microsoft.com/en-us/graph/teams-list-all-teams).",
           "Target": "list all teams in organization"
         }
       ],
@@ -4993,7 +5045,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "devices",
           "ChangeType": "Addition",
-          "Description": "Added the **devices** relationship to the [teamwork and communications](https://learn.microsoft.com/en-us/graph/api/resources/teamworkandcommunications?view=graph-rest-beta) resource.",
+          "Description": "Added the **devices** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork and communications"
         },
         {
@@ -5491,7 +5543,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "doesUserHaveAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [doesUserHaveAccess](https://learn.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [doesUserHaveAccess](https://learn.microsoft.com/en-us/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         }
       ],
@@ -6037,8 +6089,8 @@
       "CreatedDateTime": "2022-10-04T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },    
-	  {
+    },
+    {
       "ChangeList": [
         {
           "Id": "65fc6370-ff92-4df0-9134-da7a8759897a",
@@ -6072,7 +6124,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-10-20T20:34:40.595Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "" 
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -6186,7 +6238,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "5e52d67e-88f8-464f-8aff-d9ae40acf056",
@@ -6201,6 +6253,199 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-26T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id":"17f8d8ce-4acb-4ad1-8eea-a6881845bfff",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamTemplates.Read",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamTemplates.Read` delegated permission to access the [teamTemplate](https://learn.microsoft.com/en-us/graph/api/resources/teamTemplate?view=graph-rest-beta) resource.",
+          "Target":"teamTemplate"
+        },
+        {
+          "Id":"17f8d8ce-4acb-4ad1-8eea-a6881845bfff",
+          "ApiChange":"Permission",
+          "ChangedApiName":"TeamTemplates.Read.All",
+          "ChangeType":"Addition",
+          "Description":"Added the `TeamTemplates.Read.All` delegated permission to access the [teamTemplate](https://learn.microsoft.com/en-us/graph/api/resources/teamTemplate?view=graph-rest-beta) resource.",
+          "Target":"teamTemplate"
+        }
+    ],
+    "Id": "17f8d8ce-4acb-4ad1-8eea-a6881845bfff",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2023-02-27T18:02:43.7311444Z",
+    "WorkloadArea": "Teamwork and communications",
+    "SubArea": ""
+  },
+{
+      "ChangeList": [
+        {
+          "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new emoji support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource.",
+          "Target": "itemBody"
+        },
+        {
+          "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMessage.ReadWrite.All",
+          "ChangeType": "Deletion",
+          "Description": "Removed the application permission `ChannelMessage.ReadWrite.All` from the [Send replies to a message in a channel](https://learn.microsoft.com/en-us/graph/api/chatmessage-post-replies?view=graph-rest-beta) and [update](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-beta) operations of the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "ae5b528b-38cf-473b-8e01-475844067c9c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-14T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "31b9ae7d-a747-4642-9779-1bd60e3951b8",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ChannelMessage.ReadWrite.All",
+          "ChangeType": "Deletion",
+          "Description": "Removed the application permission `ChannelMessage.ReadWrite.All` from the [Send replies to a message in a channel](https://learn.microsoft.com/en-us/graph/api/chatmessage-post-replies?view=graph-rest-1.0) and [update](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-1.0) operations of the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "31b9ae7d-a747-4642-9779-1bd60e3951b8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-23T10:11:41.458Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    { "ChangeList": [ 
+        { 
+          "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+          "ApiChange": "Property", 
+          "ChangedApiName": "metadataContent", 
+          "ChangeType": "Addition", 
+          "Description": "Added the **metadataContent** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.", 
+          "Target": "callTranscript" 
+        } 
+      ], 
+      "Id": "82fb7fe7-4c12-4422-8112-563496de0f33", 
+      "Cloud": "prd", 
+      "Version": "beta", 
+      "CreatedDateTime": "2023-04-05T12:44:49.407Z", 
+      "WorkloadArea": "Teamwork and communications", 
+      "SubArea": "Calls and online meetings"
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "163505d3-b68c-4fc0-b9d5-ec67cd05f574",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "1c06c349-ae7e-457c-a361-c1f348e933ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "17375642-1dd9-40d5-9557-60666af89db3",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "173b69eb-4b51-42ad-a9a0-69d01a7c8157",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [app-scoped chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-v1.0#subscribe-to-changes-in-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "1d2dd249-298c-4f2d-be8f-820179dfa0a7",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "1c19a825-dc16-4707-8f1f-4183354e1229",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "192bccc9-a7d1-4bca-a3de-17b29f97c035",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "1643e918-6db1-4c0d-a3c6-07cfe0895f54",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [app-scoped chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-v1.0#subscribe-to-changes-in-membership-of-any-chat-in-a-tenant-where-a-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "1cf602d1-fffb-4398-998c-05ce64b1e2a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&preserve-view=true&tabs=http) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "13e701bc-aeb5-470a-8ff4-650804bce647",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-v1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "29c808ad-7b07-433f-8f35-a80509344a08",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-v1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
+          "Target": "subscription"
+        },
+        {
+          "Id": "107d9f4d-643c-4f9f-8009-0f71428ab05e",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-v1.0) a subscription for [app-scoped chat messaging notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmessage?view=graph-rest-v1.0#subscribe-to-messages-of-any-chat-in-a-tenant-where-a-specific-teams-app-is-installed).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "163505d3-b68c-4fc0-b9d5-ec67cd05f574",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-10T00:00:00",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }

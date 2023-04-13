@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 ---
 
-
 #### Response
 Here is an example of the response. 
 
@@ -201,7 +200,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7408235b-7540-4850-82fe-a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here is an example of the response.

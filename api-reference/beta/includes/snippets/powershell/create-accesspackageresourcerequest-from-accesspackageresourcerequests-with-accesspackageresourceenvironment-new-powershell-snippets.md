@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	CatalogId = "de9315c1-272b-4905-924b-cc112ca180c7"
-	AccessPackageResource = @{
-		DisplayName = "Community Outreach"
-		Description = "https://contoso.sharepoint.com/sites/CSR"
-		ResourceType = "SharePoint Online Site"
-		OriginId = "https://contoso.sharepoint.com/sites/CSR"
-		OriginSystem = "SharePointOnline"
-		AccessPackageResourceEnvironment = @{
-			OriginId = "https://contoso-admin.sharepoint.com/"
+	catalogId = "de9315c1-272b-4905-924b-cc112ca180c7"
+	accessPackageResource = @{
+		displayName = "Community Outreach"
+		description = "https://contoso.sharepoint.com/sites/CSR"
+		resourceType = "SharePoint Online Site"
+		originId = "https://contoso.sharepoint.com/sites/CSR"
+		originSystem = "SharePointOnline"
+		accessPackageResourceEnvironment = @{
+			originId = "https://contoso-admin.sharepoint.com/"
 		}
 	}
-	RequestType = "AdminAdd"
+	requestType = "AdminAdd"
 }
 
 New-MgEntitlementManagementAccessPackageResourceRequest -BodyParameter $params

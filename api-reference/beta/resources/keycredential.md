@@ -1,6 +1,6 @@
 ---
 title: "keyCredential resource type"
-description: "Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the application and servicePrincipal entities is a collection of **keyCredential**."
+description: "Contains a key credential associated with an application or a service principal. The keyCredentials property of the application and servicePrincipal entities is a collection of keyCredential."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **keyCredential**.
+
+To add a keyCredential using Microsoft Graph, see [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate).
 
 ## Properties
 | Property	   | Type	|Description|

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTeam()
 displayName := "My Sample Team"
@@ -21,7 +29,7 @@ roles := []string {
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
@@ -31,7 +39,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 additionalData := map[string]interface{}{
-	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var filterByCurrentUser = await graphClient.IdentityGovernance.EntitlementManagement.Assignments
-	.FilterByCurrentUser(AccessPackageAssignmentFilterByCurrentUserOptions.Target)
-	.Request()
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.EntitlementManagement.Assignments["{accessPackageAssignment-id}"].GetAsync();
+
 
 ```

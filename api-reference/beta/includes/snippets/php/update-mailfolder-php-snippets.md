@@ -14,7 +14,7 @@ $requestBody->setDisplayName('displayName-value');
 
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
+$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
 
 
 ```

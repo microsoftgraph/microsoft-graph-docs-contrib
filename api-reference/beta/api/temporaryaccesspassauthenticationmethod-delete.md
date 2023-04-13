@@ -33,20 +33,20 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+[!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+Delete your own temporary access pass authentication method.
+<!-- { "blockType": "ignored" } -->
+``` http
+DELETE /me/authentication/temporaryAccessPassMethods/{id}
+```
+
+Delete your own or another user's temporary access pass authentication method.
+<!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}
-DELETE /me/authentication/temporaryAccessPassMethods/{id}
 ```
 
 ## Request headers
@@ -100,7 +100,6 @@ DELETE https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

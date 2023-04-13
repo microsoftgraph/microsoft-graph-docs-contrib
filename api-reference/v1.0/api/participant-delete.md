@@ -1,7 +1,7 @@
 ---
 title: "Delete participant"
 description: "Delete a specific participant in the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -83,7 +83,6 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -167,7 +166,6 @@ Content-Length: 464
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -243,7 +241,6 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

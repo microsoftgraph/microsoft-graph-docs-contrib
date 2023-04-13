@@ -23,9 +23,13 @@ None.
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier for the **authentication**.|
+|signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for to the sign-in experience of a user.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Represents the email addresses registered to a user for authentication. |
@@ -39,6 +43,7 @@ None.
 |windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -49,7 +54,10 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.authentication"
+  "@odata.type": "#microsoft.graph.authentication",
+  "id": "String (identifier)",
+  "signInPreferences": {
+    "@odata.type": "microsoft.graph.signInPreferences"
+  }
 }
 ```
-

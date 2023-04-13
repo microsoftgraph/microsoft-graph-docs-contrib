@@ -10,21 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MeRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MeRequestBuilderGetQueryParameters();
-$queryParameters->expand = ["manager($levels=max;$select=id,displayName)"];
-$queryParameters->select = ["id","displayName"];
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = MeRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["manager($levels=max;$select=id,displayName)"];
+$queryParameters->select = ["id","displayName"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->get($requestConfiguration);
+
+$result = $graphServiceClient->me()->get($requestConfiguration);
 
 
 ```

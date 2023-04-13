@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	OnPremisesPublishing = @{
-		ExternalAuthenticationType = "aadPreAuthentication"
-		InternalUrl = "https://contosoiwaapp.com"
-		ExternalUrl = "https://contosoiwaapp-contoso.msappproxy.net"
-		IsHttpOnlyCookieEnabled = $true
-		IsOnPremPublishingEnabled = $true
-		IsPersistentCookieEnabled = $true
-		IsSecureCookieEnabled = $true
-		IsStateSessionEnabled = $true
-		IsTranslateHostHeaderEnabled = $true
-		IsTranslateLinksInBodyEnabled = $true
+	onPremisesPublishing = @{
+		externalAuthenticationType = "aadPreAuthentication"
+		internalUrl = "https://contosoiwaapp.com"
+		externalUrl = "https://contosoiwaapp-contoso.msappproxy.net"
+		isHttpOnlyCookieEnabled = $true
+		isOnPremPublishingEnabled = $true
+		isPersistentCookieEnabled = $true
+		isSecureCookieEnabled = $true
+		isStateSessionEnabled = $true
+		isTranslateHostHeaderEnabled = $true
+		isTranslateLinksInBodyEnabled = $true
 	}
 }
 

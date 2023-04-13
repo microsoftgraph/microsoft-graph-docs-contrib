@@ -18,7 +18,7 @@ $requestBody->setAlternateNotificationEmails('admin@contoso.com');
 
 
 
-$requestResult = $graphServiceClient->groupLifecyclePolicies()->post($requestBody);
+$result = $graphServiceClient->groupLifecyclePolicies()->post($requestBody);
 
 
 ```

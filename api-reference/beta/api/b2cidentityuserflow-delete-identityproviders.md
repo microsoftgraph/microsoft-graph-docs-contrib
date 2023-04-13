@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
