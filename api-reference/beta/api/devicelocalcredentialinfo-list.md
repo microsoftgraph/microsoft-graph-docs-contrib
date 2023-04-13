@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
 
-For delegated permissions to allow apps to get [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) resources excluding [deviceLocalCredential](../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles:
+For delegated permissions to allow apps to get [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) resources excluding [credentials](../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles:
 
 * Cloud Device Administrator
 * Helpdesk Administrator
