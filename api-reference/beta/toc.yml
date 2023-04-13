@@ -12259,8 +12259,6 @@ items:
               href: api/directoryobject-getmembergroups.md
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
-            - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
           - name: Org hierarchy
             items:
             - name: List direct reports
