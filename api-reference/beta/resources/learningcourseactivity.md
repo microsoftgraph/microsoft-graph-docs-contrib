@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the metadata of learner course activities for employee learning.
+Represents the metadata of learner course activities for employee learning. This is the base type of [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) types.
 
 Inherits from [entity](../resources/entity.md).
 
