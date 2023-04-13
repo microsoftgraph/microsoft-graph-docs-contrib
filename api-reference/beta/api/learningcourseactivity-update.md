@@ -71,7 +71,6 @@ The following is an example of a request.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
-
 Content-Type: application/json
 
 {
