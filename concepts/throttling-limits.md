@@ -383,12 +383,18 @@ The preceding limits apply to the following resources:
 
 ## Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Outlook service limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+
+### Limits per app ID
+Outlook can execute up to 4 concurrent requests. The requests can target user or group mailboxes. The limit applies to the v1.0 and beta endpoints, regardless of whether the requests all access the same mailbox, or access different mailboxes.
+
+### Limits per app ID and mailbox combination
+
+The limits in this section are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. 
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
 | 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints   |
 
 ### Outlook service resources
@@ -403,12 +409,13 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-### Outlook service batching
-If a [batch](json-batching.md) request contains multiple requests to Outlook service resources within it, then by default 4 requests will be executed in parallel at any point (irrespective of the target mailbox) to stay within the concurrency limits of the Outlook service. However, the batch execution can be made fully sequential using the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property.
+### Outlook service limits for JSON batching
+In a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, by default, the service executes up to 4 requests in parallel at any point, irrespective of the target mailbox, staying within [Outlook's concurrency limits](#limits-per-app-id). Alternatively, apps can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
   
-Thus when targetting the same mailbox, applications that have an ability to run multiple batch threads in parallel can either run - 
-1. No more that 4 threads (batches contain dependsOn), or 
-2. A single batch request without dependsOn.
+Thus when targeting the same mailbox, applications that allow multiple batch requests (multiple) to run asynchronously in parallel can either: 
+- Have up to 4 individual requests in a single batch request running concurrently (without specifying `dependsOn` in the batch request), or
+- Use the `dependsOn` property for each batch request and have up to 4 such batch requests running concurrently.
+ 
   
 ## Project Rome service limits
 
