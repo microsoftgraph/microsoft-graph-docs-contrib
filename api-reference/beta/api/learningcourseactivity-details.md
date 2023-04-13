@@ -63,6 +63,7 @@ If successful, this method returns a 200 OK response code and a [learningCourseA
 ### Request
 The following example shows the request to get details of a learning course activity:
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details"

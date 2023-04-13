@@ -80,6 +80,7 @@ The following example shows how to create a [learningAssignment](../resources/le
 ### Request
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_assigned_learning_courseactivity"
@@ -160,6 +161,7 @@ The following example creates a [learningSelfInitiated](../resources/learningsel
 ### Request
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_selfinitiated_learning_courseactivity"

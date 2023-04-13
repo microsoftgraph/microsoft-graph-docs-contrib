@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 ### Request
 The following example shows the request to get details of a learning course activity using external course activity id:
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details_externalId"

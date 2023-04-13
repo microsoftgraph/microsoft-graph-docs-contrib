@@ -64,6 +64,7 @@ The following table lists the properties of a assigned learning course activity 
 ### Request
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_assigned_learning_courseactivity"

@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 ### Request
 The following is an example of request and response of an assigned learning course activity.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details_id"
