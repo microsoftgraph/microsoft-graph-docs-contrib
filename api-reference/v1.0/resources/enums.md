@@ -2413,8 +2413,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### courseStatus values
 
-Enum for the status of course progress.
-
 |Member|
 |:-----|
 |notStarted|
@@ -2422,8 +2420,6 @@ Enum for the status of course progress.
 |completed|
 
 ### assignmentType values
-
-Enum for the type of assigned learning course activity.
 
 |Member|
 |:-----|
