@@ -742,12 +742,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 #### Delegated
 
 * DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
-* _BitlockerKey.Read.All_: Get a device local credential with the local adminstrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials)
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials).
 
 #### Application
 
 * DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
-* _BitlockerKey.Read.All_: Get a device local credential with the local adminstrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials)
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials).
 
 ---
 
