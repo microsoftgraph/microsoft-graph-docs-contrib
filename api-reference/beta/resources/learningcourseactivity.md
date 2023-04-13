@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |learnerUserId|String|**The user id of the learner.**|
 |learningProviderId|String|**The registration Id of the provider.**|
 |startedDateTime|DateTimeOffset|**date time value on which the self-initiated course was started by the learner.**
-|status|[courseStatus](../resources/courseStatus.md)|**Represents status of the course activity. Values are (notStarted/inProgress/completed).**|
+|status|courseStatus|**Represents status of the course activity. Possibly values are `notStarted`, `inProgress`, `completed`.**|
 
 
 ## Error Conditions and Messages

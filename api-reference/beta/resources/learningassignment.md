@@ -33,7 +33,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |learningProviderId|String|ID of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration Microsoft Graph API’s.|
 |notes|String|Notes for the course activity. (Optional)|
 |startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner.|
-|status|[courseStatus](../resources/courseStatus.md)|Represents status of the course activity. Values are (notStarted/inProgress/completed).|
+|status|courseStatus|Represents status of the course activity. Possibly values are `notStarted`, `inProgress`, `completed`.|
 
 ## Relationships
 None.

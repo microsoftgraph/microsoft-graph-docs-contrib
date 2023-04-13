@@ -2339,3 +2339,23 @@ Possible values for user account types (group membership), per Windows definitio
 |migrationComplete|
 |unknownFutureValue|
 
+
+### courseStatus values
+
+Enum for the status of course progress.
+
+|Member|
+|:-----|
+|notStarted|
+|inProgress|
+|completed|
+
+### assignmentType values
+
+Enum for the type of assigned learning course activity.
+
+|Member|
+|:-----|
+|required|
+|recommended|
+|unknownFutureValue|
