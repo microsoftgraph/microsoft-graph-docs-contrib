@@ -27,7 +27,7 @@ $answersAccessPackageAnswer1AnsweredQuestion->setId('8fe745e7-80b2-490d-bd22-4e7
 
 $answersAccessPackageAnswer1->setAnsweredQuestion($answersAccessPackageAnswer1AnsweredQuestion);
 $additionalData = [
-'value' => 'MultipleChoiceAnswerValue', 
+		'value' => 'MultipleChoiceAnswerValue', 
 ];
 $answersAccessPackageAnswer1->setAdditionalData($additionalData);
 
@@ -47,7 +47,7 @@ $answersAccessPackageAnswer2AnsweredQuestion->setId('7aaa18c9-8e4f-440f-bd5a-3a7
 
 $answersAccessPackageAnswer2->setAnsweredQuestion($answersAccessPackageAnswer2AnsweredQuestion);
 $additionalData = [
-'value' => 'This is my answer to a text input question.', 
+		'value' => 'This is my answer to a text input question.', 
 ];
 $answersAccessPackageAnswer2->setAdditionalData($additionalData);
 
@@ -59,7 +59,7 @@ $requestBody->setAnswers($answersArray);
 
 $assignment = new AccessPackageAssignment();
 $additionalData = [
-'accessPackageId' => '977c7ff4-ef8f-4910-9d31-49048ddf3120', 
+	'accessPackageId' => '977c7ff4-ef8f-4910-9d31-49048ddf3120', 
 ];
 $assignment->setAdditionalData($additionalData);
 
@@ -68,7 +68,7 @@ $assignment->setAdditionalData($additionalData);
 $requestBody->setAssignment($assignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody);
 
 
 ```

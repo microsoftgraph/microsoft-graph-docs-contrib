@@ -31,7 +31,7 @@ $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPoliciesById('cloudPcProvisioningPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPoliciesById('cloudPcProvisioningPolicy-id')->patch($requestBody);
 
 
 ```

@@ -1,7 +1,7 @@
 --- 
 title: "communicationsEncryptedIdentity resource type"
 description: "Represents the identity of a user whose underlying identity is not available to the application due to privacy restrictions."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

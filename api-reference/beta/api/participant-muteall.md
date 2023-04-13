@@ -1,7 +1,7 @@
 ---
 title: "participant: muteAll"
 description: "Mute all participants in the call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

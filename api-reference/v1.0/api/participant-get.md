@@ -1,7 +1,7 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

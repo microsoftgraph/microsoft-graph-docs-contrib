@@ -16,7 +16,7 @@ $requestBody->setDisplayName('API Monitor 60201009');
 
 
 
-$requestResult = $graphServiceClient->external()->industryData()->dataConnectorsById('industryDataConnector-id')->patch($requestBody);
+$result = $graphServiceClient->external()->industryData()->dataConnectorsById('industryDataConnector-id')->patch($requestBody);
 
 
 ```

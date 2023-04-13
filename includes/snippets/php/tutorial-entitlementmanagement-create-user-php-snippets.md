@@ -27,7 +27,7 @@ $passwordProfile->setPassword('Contoso1234');
 $requestBody->setPasswordProfile($passwordProfile);
 
 
-$requestResult = $graphServiceClient->users()->post($requestBody);
+$result = $graphServiceClient->users()->post($requestBody);
 
 
 ```

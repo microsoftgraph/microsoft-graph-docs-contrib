@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PeopleRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PeopleRequestBuilderGetQueryParameters();
+$queryParameters = PeopleRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->search = "\"Irene McGowen\"";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->people()->get($requestConfiguration);
+$result = $graphServiceClient->me()->people()->get($requestConfiguration);
 
 
 ```
