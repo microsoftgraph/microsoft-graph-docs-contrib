@@ -1,7 +1,7 @@
 ---
 title: "presence: clearUserPreferredPresence"
 description: "Clear the preferred availability and activity status for a user."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -88,7 +88,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

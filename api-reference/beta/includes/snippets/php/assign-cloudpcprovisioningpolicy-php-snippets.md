@@ -17,7 +17,7 @@ $assignmentsCloudPcProvisioningPolicyAssignment1Target = new CloudPcManagementAs
 $assignmentsCloudPcProvisioningPolicyAssignment1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
 
 $additionalData = [
-'groupId' => '64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
+		'groupId' => '64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
 ];
 $assignmentsCloudPcProvisioningPolicyAssignment1Target->setAdditionalData($additionalData);
 
@@ -30,7 +30,7 @@ $requestBody->setAssignments($assignmentsArray);
 
 
 $additionalData = [
-'@odata.type' => '#microsoft.graph.cloudPcProvisioningPolicyAssignment', 
+	'@odata.type' => '#microsoft.graph.cloudPcProvisioningPolicyAssignment', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

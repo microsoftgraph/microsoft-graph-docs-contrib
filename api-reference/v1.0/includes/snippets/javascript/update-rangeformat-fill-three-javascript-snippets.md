@@ -14,7 +14,7 @@ const workbookRangeFill = {
   color: '#0000FF'
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill')
+await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill')
 	.update(workbookRangeFill);
 
 ```

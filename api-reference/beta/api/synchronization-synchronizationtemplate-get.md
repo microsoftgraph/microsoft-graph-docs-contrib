@@ -18,17 +18,19 @@ Retrieve a synchronization template by its identifier.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.Read.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.Read.All, Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ### HTTP Request
 
 ```http
-GET applications/{id}/synchronization/templates/{templateId}
-GET servicePrincipals/{id}/synchronization/templates/{templateId}
+GET /applications/{id}/synchronization/templates/{templateId}
+GET /servicePrincipals/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers

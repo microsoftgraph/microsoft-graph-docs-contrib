@@ -82,16 +82,17 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 ---
 
-
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

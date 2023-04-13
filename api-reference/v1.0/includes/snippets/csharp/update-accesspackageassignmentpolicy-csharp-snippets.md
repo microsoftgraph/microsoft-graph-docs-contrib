@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
+var requestBody = new AccessPackageAssignmentPolicy
 {
 	Id = "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
 	DisplayName = "All Users",
 	Description = "All users can request for access to the directory.",
 	AllowedTargetScope = AllowedTargetScope.AllDirectoryUsers,
 	AutomaticRequestSettings = null,
-	SpecificAllowedTargets = new List<SubjectSet>()
+	SpecificAllowedTargets = new List<SubjectSet>
 	{
 	},
 	Expiration = new ExpirationPattern
 	{
-		Type = ExpirationPatternType.NoExpiration
+		Type = ExpirationPatternType.NoExpiration,
 	},
 	RequestorSettings = new AccessPackageAssignmentRequestorSettings
 	{
@@ -29,54 +29,66 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		EnableOnBehalfRequestorsToAddAccess = false,
 		EnableOnBehalfRequestorsToUpdateAccess = false,
 		EnableOnBehalfRequestorsToRemoveAccess = false,
-		OnBehalfRequestors = new List<SubjectSet>()
+		OnBehalfRequestors = new List<SubjectSet>
 		{
-		}
+		},
 	},
 	RequestApprovalSettings = new AccessPackageAssignmentApprovalSettings
 	{
 		IsApprovalRequiredForAdd = true,
 		IsApprovalRequiredForUpdate = false,
-		Stages = new List<AccessPackageApprovalStage>()
+		Stages = new List<AccessPackageApprovalStage>
 		{
 			new AccessPackageApprovalStage
 			{
-				DurationBeforeAutomaticDenial = new Duration("P2D"),
+				DurationBeforeAutomaticDenial = TimeSpan.Parse("P2D"),
 				IsApproverJustificationRequired = false,
 				IsEscalationEnabled = false,
-				DurationBeforeEscalation = new Duration("PT0S"),
-				PrimaryApprovers = new List<SubjectSet>()
+				DurationBeforeEscalation = TimeSpan.Parse("PT0S"),
+				PrimaryApprovers = new List<SubjectSet>
 				{
-					new RequestorManager
+					new SubjectSet
 					{
-						ManagerLevel = 1
-					}
+						OdataType = "#microsoft.graph.requestorManager",
+						AdditionalData = new Dictionary<string, object>
+						{
+							{
+								"managerLevel" , 1
+							},
+						},
+					},
 				},
-				FallbackPrimaryApprovers = new List<SubjectSet>()
+				FallbackPrimaryApprovers = new List<SubjectSet>
 				{
-					new SingleUser
+					new SubjectSet
 					{
-						UserId = "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2",
-						Description = "user"
-					}
+						OdataType = "#microsoft.graph.singleUser",
+						AdditionalData = new Dictionary<string, object>
+						{
+							{
+								"userId" , "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
+							},
+							{
+								"description" , "user"
+							},
+						},
+					},
 				},
-				EscalationApprovers = new List<SubjectSet>()
+				EscalationApprovers = new List<SubjectSet>
 				{
 				},
-				FallbackEscalationApprovers = new List<SubjectSet>()
+				FallbackEscalationApprovers = new List<SubjectSet>
 				{
-				}
-			}
-		}
+				},
+			},
+		},
 	},
 	AccessPackage = new AccessPackage
 	{
-		Id = "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
-	}
+		Id = "49d2c59b-0a81-463d-a8ec-ddad3935d8a0",
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies["{accessPackageAssignmentPolicy-id}"].PutAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies["{accessPackageAssignmentPolicy-id}"]
-	.Request()
-	.PutAsync(accessPackageAssignmentPolicy);
 
 ```

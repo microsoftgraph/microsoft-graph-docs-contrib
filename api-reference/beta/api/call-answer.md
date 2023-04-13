@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -114,7 +114,6 @@ Content-Length: 211
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here is an example of the response. 

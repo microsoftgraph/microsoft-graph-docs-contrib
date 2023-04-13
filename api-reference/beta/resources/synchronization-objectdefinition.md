@@ -22,6 +22,7 @@ Describes an object and its attributes. Object definitions are part of [director
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md) collection    | Defines attributes of the object. |
 |metadata       |[metadataEntry](synchronization-metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Name of the object. Must be unique within a directory definition. Not nullable.|
+|supportedApis|String collection|The API that the provisioning service queries to retrieve data for synchronization.|
 
 ## JSON representation
 

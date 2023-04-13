@@ -4,38 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var startDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00");
-
-var endDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00");
-
-var subject = "Create a meeting with customId provided";
-
-var externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
-
-var participants = new MeetingParticipants
+var requestBody = new Microsoft.Graph.Beta.Me.OnlineMeetings.CreateOrGet.CreateOrGetPostRequestBody
 {
-	Attendees = new List<MeetingParticipantInfo>()
+	StartDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00"),
+	EndDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00"),
+	Subject = "Create a meeting with customId provided",
+	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56",
+	Participants = new MeetingParticipants
 	{
-		new MeetingParticipantInfo
+		Attendees = new List<MeetingParticipantInfo>
 		{
-			Identity = new IdentitySet
+			new MeetingParticipantInfo
 			{
-				User = new Identity
+				Identity = new IdentitySet
 				{
-					Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
-				}
+					User = new Identity
+					{
+						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000",
+					},
+				},
+				Role = OnlineMeetingRole.Presenter,
+				Upn = "test1@contoso.com",
 			},
-			Role = OnlineMeetingRole.Presenter,
-			Upn = "test1@contoso.com"
-		}
-	}
+		},
+	},
 };
+var result = await graphClient.Me.OnlineMeetings.CreateOrGet.PostAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings
-	.CreateOrGet(externalId,null,endDateTime,participants,startDateTime,subject)
-	.Request()
-	.PostAsync();
 
 ```

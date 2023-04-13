@@ -20,9 +20,9 @@ Represents users, groups, and roles included in and excluded from the policy sco
 | excludeGroups | String collection | Group IDs excluded from scope of policy. |
 | excludeRoles | String collection | Role IDs excluded from scope of policy. |
 | excludeUsers | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
-| includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded, or `All`. |
-| includeRoles | String collection | Role IDs in scope of policy unless explicitly excluded, or `All`. |
-| includeUsers | String collection | User IDs in scope of policy unless explicitly excluded, or `None` or `All` or `GuestsOrExternalUsers`. |
+| includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded. |
+| includeRoles | String collection | Role IDs in scope of policy unless explicitly excluded. |
+| includeUsers | String collection | User IDs in scope of policy unless explicitly excluded, `None`, `All`, or `GuestsOrExternalUsers`. |
 
 ## Relationships
 

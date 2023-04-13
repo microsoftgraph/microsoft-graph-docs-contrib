@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

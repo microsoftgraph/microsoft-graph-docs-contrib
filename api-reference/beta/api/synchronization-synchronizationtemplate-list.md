@@ -18,17 +18,19 @@ List the synchronization templates associated with a given application or servic
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.Read.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.Read.All, Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.Read.All, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET servicePrincipals/{id}/synchronization/templates
-GET applications/{id}/synchronization/templates
+GET /servicePrincipals/{id}/synchronization/templates
+GET /applications/{id}/synchronization/templates
 ```
 
 ## Request headers
@@ -84,7 +86,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 The following is an example of a response.

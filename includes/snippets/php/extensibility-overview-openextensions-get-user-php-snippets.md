@@ -11,18 +11,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Extension();
 $additionalData = [
-'@odata.context' => 'https://graph.microsoft.com/beta/$metadata#users(\'3fbd929d-8c56-4462-851e-0eb9a7b3a2a5\')/extensions/$entity', 
-'@odata.type' => '#microsoft.graph.openTypeExtension', 
-'xboxGamerTag' => 'FierceAdele', 
-'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
-'id' => 'com.contoso.socialSettings', 
+		'@odata.context' => 'https://graph.microsoft.com/beta/$metadata#users(\'3fbd929d-8c56-4462-851e-0eb9a7b3a2a5\')/extensions/$entity', 
+		'@odata.type' => '#microsoft.graph.openTypeExtension', 
+		'xboxGamerTag' => 'FierceAdele', 
+		'linkedInProfile' => 'www.linkedin.com/in/testlinkedinprofile', 
+		'id' => 'com.contoso.socialSettings', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->extensionsById('extension-id')->get($requestBody);
+$result = $graphServiceClient->usersById('user-id')->extensionsById('extension-id')->get($requestBody);
 
 
 ```

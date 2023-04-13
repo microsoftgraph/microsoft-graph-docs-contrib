@@ -14,7 +14,7 @@ $requestBody->setOwnerAppIds(['44109254-4b2b-7a33-76ee-c890a167b295', '13eb9d8b-
 
 
 
-$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->patch($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setIds(['39333641443238353535383731453339', '463331313442393538344
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->removeHold()->post($requestBody);
+$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->securityRemoveHold()->post($requestBody);
 
 
 ```

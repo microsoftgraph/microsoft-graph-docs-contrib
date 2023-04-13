@@ -11,6 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CreateNewVersionPostRequestBody();
 $workflow = new Workflow();
+$workflow->setCategory(new LifecycleWorkflowCategory('joiner'));
+
 $workflow->setDescription('Configure new hire tasks for onboarding employees on their first day');
 
 $workflow->setDisplayName('Global onboard new hire employee');
@@ -23,7 +25,7 @@ $workflowExecutionConditions = new WorkflowExecutionConditions();
 $workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
 $additionalData = [
-'scope' => $workflowExecutionConditions = new Scope();
+		'scope' => $workflowExecutionConditions = new Scope();
 $		workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
 $		workflowExecutionConditions->setRule('(department eq \'Marketing\')');
@@ -31,7 +33,7 @@ $		workflowExecutionConditions->setRule('(department eq \'Marketing\')');
 
 $workflowExecutionConditions->setScope($scope);
 
-'trigger' => $workflowExecutionConditions = new Trigger();
+		'trigger' => $workflowExecutionConditions = new Trigger();
 $		workflowExecutionConditions->set@odatatype('#microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
 $		workflowExecutionConditions->setTimeBasedAttribute('employeeHireDate');
@@ -84,7 +86,7 @@ $workflow->setTasks($tasksArray);
 $requestBody->setWorkflow($workflow);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->createNewVersion()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->identityGovernanceCreateNewVersion()->post($requestBody);
 
 
 ```

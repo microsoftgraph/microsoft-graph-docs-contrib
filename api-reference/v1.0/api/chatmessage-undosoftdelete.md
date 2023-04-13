@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Namespace: microsoft.graph
 
-Undo soft deletion of a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Undo soft deletion of a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported |
 |Application| Not supported |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 ### Permissions for chat
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -36,14 +35,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To undo soft deletion of a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/undoSoftDelete
+POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/undoSoftDelete
+```
+
+To undo soft deletion of a **chatMessage** in a **chat**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/undoSoftDelete
-POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/undoSoftDelete
-POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/undoSoftDelete
 ```
 
 ## Request headers
@@ -102,7 +110,6 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ap
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -153,7 +160,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 ---
 
-
 #### Response
 
 <!-- {
@@ -203,7 +209,6 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

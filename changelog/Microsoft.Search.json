@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "more than one connection",
           "ChangeType": "Addition",
-          "Description": "Query external data across [more than one connection](search-concept-custom-types.md).",
+          "Description": "Query external data across [more than one connection](https://learn.microsoft.com/en-us/graph/search-concept-custom-types).",
           "Target": "more than one connection"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalFile",
           "ChangeType": "Change",
-          "Description": "The [externalFile](https://learn.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.",
+          "Description": "The **externalFile** resource has been deprecated.",
           "Target": "externalFile"
         },
         {
@@ -123,7 +123,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "content,properties",
           "ChangeType": "Change",
-          "Description": "The [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
+          "Description": "The [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
           "Target": "externalItem"
         },
         {
@@ -131,7 +131,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Retry-After",
           "ChangeType": "Change",
-          "Description": "Operations on [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
+          "Description": "Operations on [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
           "Target": "externalItem"
         }
       ],
@@ -149,7 +149,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Search API,querying,indexing",
           "ChangeType": "Addition",
-          "Description": "Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://learn.microsoft.com/en-us/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities.",
+          "Description": "Added the [Microsoft Search API](https://learn.microsoft.com/en-us/graph/search-concept-overview) that constitutes [querying](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://learn.microsoft.com/en-us/graph/api/resources/indexing-api-overview?view=graph-rest-beta) capabilities.",
           "Target": "Microsoft Search API,querying,indexing"
         },
         {
@@ -173,7 +173,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
           "ChangeType": "Addition",
-          "Description": "Added the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://learn.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and [externalFile](https://learn.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities.",
+          "Description": "Added the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://learn.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and **externalFile** entities, and methods exposed by these entities.",
           "Target": "externalConnection,schema,externalItem,externalFile"
         }
       ],
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "properties",
           "ChangeType": "Change",
-          "Description": "Moved the [properties](https://learn.microsoft.com/en-us/graph/api/resources/properties?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **properties** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "properties"
         },
         {
@@ -499,7 +499,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resultTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the [resultTemplate](https://learn.microsoft.com/en-us/graph/api/resources/searchresultset?view=graph-rest-beta) resource, with the search display layouts schema.",
+          "Description": "Added the [resultTemplate](https://learn.microsoft.com/en-us/graph/api/resources/resulttemplate?view=graph-rest-beta) resource, with the search display layouts schema.",
           "Target": "resultTemplate"
         },
         {
@@ -581,7 +581,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "properties",
           "ChangeType": "Addition",
-          "Description": "Added the [properties](https://learn.microsoft.com/en-us/graph/api/resources/properties?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [properties](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-properties?view=graph-rest-1.0) resource type.",
           "Target": "properties"
         },
         {
@@ -1295,7 +1295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalActivityBase",
           "ChangeType": "Addition",
-          "Description": "Added the [externalActivityBase](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityBase?view=graph-rest-beta) resource",
+          "Description": "Added the **externalActivityBase** resource",
           "Target": "externalActivityBase"
         },
         {
@@ -1335,7 +1335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "urlMatchInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [urlMatchInfo](https://learn.microsoft.com/en-us/graph/api/resources/urlMatchInfo?view=graph-rest-beta) resource",
+          "Description": "Added the [urlMatchInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-beta) resource",
           "Target": "urlMatchInfo"
         }
       ],
@@ -1505,6 +1505,98 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-12-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "searchContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchContent** enumeration type.",
+          "Target": "searchContent"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the **region** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointOneDriveOptions** property to the [searchRequest](https://learn.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointOneDriveOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointOneDriveOptions](https://learn.microsoft.com/en-us/graph/api/resources/sharePointOneDriveOptions?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointOneDriveOptions"
+        },
+        {
+            "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Files.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Files.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method.",
+            "Target": "query"
+         },
+         {
+            "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+            "ApiChange": "Permission",
+            "ChangedApiName": "Sites.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the `Sites.Read.All` application permission to the [searchEntity: query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method.",
+            "Target": "query"
+         }
+      ],
+      "Id": "35e3805f-2800-4be0-8de8-ccf3df1155d4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-23T04:11:04.628137Z",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "importanceScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **importanceScore** enumeration.",
+          "Target": "importanceScore"
+        },
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rankingHint",
+          "ChangeType": "Addition",
+          "Description": "Added the [rankingHint](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-rankingHint?view=graph-rest-beta) resource.",
+          "Target": "rankingHint"
+        },
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Property",
+          "ChangedApiName": "rankingHint",
+          "ChangeType": "Addition",
+          "Description": "Added the **rankingHint** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Target": "property"
+        }
+      ],
+      "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
     }
