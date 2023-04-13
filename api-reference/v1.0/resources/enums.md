@@ -2410,19 +2410,3 @@ Possible values for user account types (group membership), per Windows definitio
 |published|
 |pending|
 |unknownFutureValue|
-
-### courseStatus values
-
-| Member             |
-| :----------------- |
-| notStarted         |
-| inProgress         |
-| completed          |
-
-### assignmentType values
-
-| Member             |
-| :----------------- |
-| required           |
-| recommended        |
-| unknownFutureValue |
