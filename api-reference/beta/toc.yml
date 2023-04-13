@@ -372,9 +372,9 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List cloudPCs
+        - name: List
           href: api/user-list-cloudpcs.md
-        - name: Get cloudPC
+        - name: Get
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
@@ -386,6 +386,10 @@ items:
           href: api/cloudpc-rename.md
         - name: Reprovision
           href: api/cloudpc-reprovision.md
+        - name: Start
+          href: api/cloudpc-start.md
+        - name: Stop
+          href: api/cloudpc-stop.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
       - name: Delegated permission grant
@@ -10607,11 +10611,11 @@ items:
           items:
           - name: Cloud PC
             href: resources/cloudpc.md
-          - name: List cloudPCs for organization
+          - name: List for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: List cloudPCs for user
+          - name: List for user
             href: api/user-list-cloudpcs.md
-          - name: Get cloudPC
+          - name: Get Cloud PC
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
@@ -10635,6 +10639,10 @@ items:
             href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Get supported remote actions
             href: api/cloudpc-getsupportedcloudpcremoteactions.md
+          - name: Power on
+            href: api/cloudpc-poweron.md
+          - name: Power off
+            href: api/cloudpc-poweroff.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
@@ -16987,18 +16995,36 @@ items:
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
               href: api/callrecords-callrecord-getdirectroutingcalls.md
-          - name: PSTN calls
+          - name: PSTN blocked users log row
             items:
-            - name: PSTN log row
+              - name: PSTN blocked users log row
+                href: resources/callrecords-pstnblockeduserslogrow.md
+              - name: Get PSTN blocked users log
+                href: api/callrecords-callrecord-getpstnblockeduserslog.md
+          - name: PSTN call log row
+            items:
+            - name: PSTN call log row
               href: resources/callrecords-pstncalllogrow.md
-            - name: List PSTN calls
+            - name: Get PSTN calls
               href: api/callrecords-callrecord-getpstncalls.md
+          - name: PSTN online meeting dial-out report
+            items:
+              - name: PSTN online meeting dial-out report
+                href: resources/callrecords-pstnonlinemeetingdialoutreport.md
+              - name: Get PSTN online meeting dial-out report
+                href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
           - name: Session
             items:
             - name: Session
               href: resources/callrecords-session.md
             - name: List
               href: api/callrecords-session-list.md
+          - name: SMS
+            items:
+            - name: SMS log row
+              href: resources/callrecords-smslogrow.md
+            - name: Get SMS log
+              href: api/callrecords-callrecord-getsmslog.md
         - name: Online meetings
           items:
           - name: Attendance report
