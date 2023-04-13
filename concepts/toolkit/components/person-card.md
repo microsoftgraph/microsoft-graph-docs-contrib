@@ -149,7 +149,7 @@ For more information about handling events, see [events](../customize-components
 The `mgt-person-card` component defines the following CSS custom properties. 
 
 ```css
-mgt-person {
+mgt-person-card {
   --person-card-nav-back-arrow-hover-color: green;
   --person-card-icon-color: red;
   --person-card-line1-font-size: 30px;
@@ -175,7 +175,43 @@ mgt-person {
   --person-card-line2-text-color: blue;
   --person-card-line3-text-color: green;
   --person-card-fluent-background-color-hover: orange;
-  --person-card-base-icons-left-spacing: 110px
+  --person-card-base-icons-left-spacing: 110px;
+
+  /** person-card sections tokens */
+
+  /** Organization */
+  --organization-active-org-member-target-background-color: blue;
+  --organization-title-color: green;
+  --organization-sub-title-color: yellow;
+  --organization-hover-color: grey;
+  --organization-coworker-hover-color: grey;
+  --organization-coworker-border-color: purple;
+  --organization-active-org-member-border-color: red;
+
+  /** Files: Uses custom css properties for mgt-file-list and mgt-file */
+
+  /** Messages */
+
+  --message-subject-color: purple;
+  --message-from-color: blue;
+  --message-color: black;
+  --message-hover-color: grey;
+
+  /** Contact */
+
+  --contact-title-color: blue;
+  --contact-value-color: green;
+  --contact-link-color: red;
+  --contact-link-hover-color: purple;
+  --contact-background-color: grey;
+  --contact-copy-icon-color: yellow;
+
+  /** Profile */
+
+  --profile-title-color: blue;
+  --profile-background-color: grey;
+  --profile-token-item-color: blue;
+  --profile-token-overflow-color: purple;
 }
 ```
 
@@ -222,3 +258,21 @@ The Person-Card control uses the global authentication provider described in the
 |`users`|Person's user information|Used when `userId` is specified or the `personQuery` is set to `me`|
 
 See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name                 | Default value                      |
+| --------------------------- | ---------------------------------- |
+| endOfCard                   | 'End of the card'                  |
+| quickMessage                | 'Send a quick message              |
+| expandDetailsLabel          | 'Expand details'                   |
+| renderOverviewSectionLabel  | 'Render overview section'          |
+| sendMessageLabel            | 'Send message'                     |
+| emailButtonLabel            | 'Email'                            |
+| callButtonLabel             | 'Call'                             |
+| chatButtonLabel             | 'Chat'                             |
+| videoButtonLabel            | 'Video'                            |
+| closeCardLabel              | 'Close card'                       |
