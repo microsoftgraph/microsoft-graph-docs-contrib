@@ -198,12 +198,12 @@ Content-Type: application/json
   e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('be2f4d76-e020-11ec-9d64-
   0242ac120002')$entity",  
   "completedDateTime": null, 
-  "completionPercentage":20,
+  "completionPercentage": 20,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
   "id": "7ba2228a-e020-11ec-9d64-0242ac120002:749c8786-99bb-4b3b-8d5d-586428f6aaa3",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",  
   "learningProviderId": "01e8f81b-3060-4dec-acf0-0389665a0a38",
-  "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",
+  "learnerUserId": "7ba2228a-e020-11ec-9d64-0242ac120002",
   "startedDateTime": "2021-05-21T22:57:17+00:00",
   "status": "InProgress"  
 }
