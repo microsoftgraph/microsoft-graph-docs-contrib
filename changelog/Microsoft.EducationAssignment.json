@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Member",
+          "ChangedApiName": "inactive",
+          "ChangeType": "Addition",
+          "Description": "Added the `inactive` member to the **educationAssignmentStatus** enumeration.",
+          "Target": "educationAssignmentStatus"
+        },
+        {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/graph/api/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/graph/api/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
           "ApiChange": "Resource",
           "ChangedApiName": "educationTeamsAppResource",
