@@ -116,6 +116,32 @@
         {
             "ChangeList":[
                 {
+                    "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "powerOn",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [powerOn](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweron?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "powerOff",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [powerOff](https://learn.microsoft.com/en-us/graph/api/cloudpc-poweroff?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id":"31b20e34-5130-4eec-84c6-7abd2794d009",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2023-04-12T17:04:16.9388044Z",
+            "WorkloadArea":"Device and app management",
+            "SubArea":"Cloud PC"
+        },
+        {
+            "ChangeList":[
+                {
                     "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
                     "ApiChange":"Property",
                     "ChangedApiName":"enableSingleSignOn",
