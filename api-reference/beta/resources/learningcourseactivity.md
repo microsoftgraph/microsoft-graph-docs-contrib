@@ -84,7 +84,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.learningCourseActivity",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Integer",
-  "externalcourseActivityId": "String",
+  "externalCourseActivityId": "String",
   "learningContentId": "String",
   "learningProviderId": "String",
   "learnerUserId": "String",

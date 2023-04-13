@@ -21,7 +21,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
-|externalcourseActivityId|String|A course activity ID generated at provider. (Optional)|
+|externalCourseActivityId|String|A course activity ID generated at provider. (Optional)|
 |ID|String|The resultant ID of this request can be used to make further interactions to the course activity API’s.|
 |learningContentId|String| The ID of Learning Content received when Learning Content is created on Viva Learning using LearningContent Microsoft Graph API’s.|
 |learnerUserId|String|The user id of the learner.|
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.learningSelfInitiatedCourse",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Integer",
-  "externalcourseActivityId": "String",
+  "externalCourseActivityId": "String",
   "learningContentId": "String",
   "learningProviderId": "String",
   "learnerUserId": "String",

@@ -26,7 +26,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
 |completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
 |dueDateTime|DateTimeOffset|Due date for the course activity. (Optional)|
-|externalcourseActivityId|String|A course activity ID generated at provider. (Optional)|
+|externalCourseActivityId|String|A course activity ID generated at provider. (Optional)|
 |ID|String|The resultant ID of this request can be used to make further interactions to the course activity API’s.|
 |learningContentId|String| The ID of Learning Content received when Learning Content is created on Viva Learning using LearningContent Microsoft Graph API’s.|
 |learnerUserId|String|The user ID of the learner.|
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "dueDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
-  "externalcourseActivityId": "String",
+  "externalCourseActivityId": "String",
   "learnerUserId": "String",
   "learningContentId": "String",
   "learningProviderId": "String",
