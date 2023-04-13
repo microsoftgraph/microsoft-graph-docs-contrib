@@ -140,31 +140,3 @@ Content-Type: application/json
     }
 }
 ```
-
-### Request
-
-
-<!-- {
-  "blockType": "request",
-  "name": "update_deviceregistrationpolicy"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/deviceRegistrationPolicy
-Content-Type: application/json
-
-{
-  "localAdminPassword": {
-    "isEnabled": true
-  }
-}
-```
-
-### Response
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
