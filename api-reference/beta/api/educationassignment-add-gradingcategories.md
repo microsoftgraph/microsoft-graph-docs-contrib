@@ -37,11 +37,7 @@ PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-```
-{
-    "@odata.id": ".../education/classes/{classId}/assignmentSettings/gradingCategories/{gradingCategoryId}"
-}
-```
+In the request body, supply the odata.id of the existing [gradingCategory](../resources/assignment-gradingcategories.md) object(s) to add to this assignment.
 
 ## Response
 If successful, this method returns a `204` successful response code with no content in the response body.
@@ -60,6 +56,10 @@ The following is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories/$ref
 Content-type: application/json
+
+{
+    "@odata.id": ".../education/classes/{classId}/assignmentSettings/gradingCategories/{gradingCategoryId}"
+}
 ```
 
 ### Response
