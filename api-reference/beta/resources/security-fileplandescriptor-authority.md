@@ -1,6 +1,6 @@
 ---
 title: "authority resource type"
-description: "Represents the unique authority applied to a retention label."
+description: "Represents a unique authority applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
