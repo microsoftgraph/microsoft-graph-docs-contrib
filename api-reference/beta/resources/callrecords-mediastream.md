@@ -43,7 +43,7 @@ Represents information about a media stream between two endpoints in a call.
 |maxRoundTripTime|Duration|Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |packetUtilization|Int64|Packet count for the stream.|
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
-|rmsFreezeDuration|Duration|Root mean square for the received freeze duration related with video stream.|
+|rmsFreezeDuration|Duration|Root mean square of the received freeze duration related to the video stream.|
 |startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
