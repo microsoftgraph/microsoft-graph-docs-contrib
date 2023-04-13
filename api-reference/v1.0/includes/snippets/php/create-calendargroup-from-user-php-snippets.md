@@ -14,7 +14,7 @@ $requestBody->setName('Personal events');
 
 
 
-$requestResult = $graphServiceClient->me()->calendarGroups()->post($requestBody);
+$result = $graphServiceClient->me()->calendarGroups()->post($requestBody);
 
 
 ```

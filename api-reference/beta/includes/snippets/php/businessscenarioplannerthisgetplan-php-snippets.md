@@ -16,7 +16,7 @@ $target->set@odatatype('microsoft.graph.businessScenarioGroupTarget');
 $target->setTaskTargetKind(new PlannerTaskTargetKind('group'));
 
 $additionalData = [
-'groupId' => '7a339254-4b2b-4410-b295-c890a16776ee', 
+		'groupId' => '7a339254-4b2b-4410-b295-c890a16776ee', 
 ];
 $target->setAdditionalData($additionalData);
 
@@ -25,7 +25,7 @@ $target->setAdditionalData($additionalData);
 $requestBody->setTarget($target);
 
 
-$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->getPlan()->post($requestBody);
+$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->getPlan()->post($requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->termStore()->setsById('set-id')->get();
+$result = $graphServiceClient->sitesById('site-id')->termStore()->setsById('set-id')->get();
 
 
 ```
