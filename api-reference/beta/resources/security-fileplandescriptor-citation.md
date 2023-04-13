@@ -1,6 +1,6 @@
 ---
 title: "citation resource type"
-description: "Represents the unique citation applied to a retention label."
+description: "Represents a unique citation applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
