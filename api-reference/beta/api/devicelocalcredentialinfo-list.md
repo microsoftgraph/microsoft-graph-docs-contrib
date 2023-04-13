@@ -1,5 +1,5 @@
 ---
-title: "List deviceLocalCredentials"
+title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties excluding the credentials."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List deviceLocalCredentials
+# List deviceLocalCredentialInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,14 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
 
-For delegated permissions to allow apps to get [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) resources excluding [credentials](../resources/devicelocalcredential.md) resources, the signed-in user must be in one of the following directory roles:
-
-* Cloud Device Administrator
-* Helpdesk Administrator
-* Intune Service Administrator
-* Security Administrator
-* Security Reader
-* Global Reader
+[!INCLUDE [rbac-device-local-credentials-basic-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-basic-apis-read.md)]
 
 ## HTTP request
 To get a list of deviceLocalCredentialInfo within the tenant:
