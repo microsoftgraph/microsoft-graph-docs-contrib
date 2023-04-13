@@ -29,11 +29,7 @@ Add Grading Categories to the existing class-wide settings to weight assignments
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-<<<<<<< HEAD
-|id|String|The grading category's ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from entity. Read-only.|
-=======
-|id|String|The grading category's ID.|
->>>>>>> cd68cf9b7a8dd36135344a2334ee7ebaf5fad6e5
+|id|String|The grading category's ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from [entity](../resources/entity.md). Read-only.|
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
 
