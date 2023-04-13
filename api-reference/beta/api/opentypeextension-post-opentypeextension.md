@@ -202,7 +202,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response 1
 
 Here is the response for the first example. The response body includes properties of the new message,
@@ -335,7 +334,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response 2
 
 Here is the response for the second example. The response body includes the following for the new extension:
@@ -419,7 +417,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response 3
 
 Here is the response from the third example request.
@@ -491,7 +488,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -511,7 +508,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 4
 
@@ -583,7 +579,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -603,7 +599,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 5
 

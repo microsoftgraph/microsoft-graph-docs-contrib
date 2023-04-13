@@ -85,8 +85,6 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-
 
 ---
 
-
-
 ### Response
 <!-- {
   "blockType": "response",

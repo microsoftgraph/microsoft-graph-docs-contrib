@@ -17,7 +17,7 @@ $targetsInvitationParticipantInfo1Identity = new IdentitySet();
 $targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'phone' => $targetsInvitationParticipantInfo1Identity = new Phone();
+		'phone' => $targetsInvitationParticipantInfo1Identity = new Phone();
 $		targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
 
 $		targetsInvitationParticipantInfo1Identity->setId('+12345678901');

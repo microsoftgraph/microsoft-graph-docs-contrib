@@ -40,10 +40,20 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+To update a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+```
+
+To update a **chatMessage** in a **chat**:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
@@ -139,7 +149,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -233,7 +242,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -346,7 +354,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -443,7 +450,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -648,7 +654,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

@@ -31,16 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 Get a listItem
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 Get the column values of a listItem
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 Get specific column values of a listItem
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
@@ -95,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

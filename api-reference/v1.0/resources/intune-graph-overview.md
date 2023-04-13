@@ -25,15 +25,15 @@ The following example shows how you can determine whether an application is inst
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    https://graph.microsoft.com/users/{user}/ownedDevices 
+    `https://graph.microsoft.com/users/{user}/ownedDevices`
 
 2. Then view the list of applications for your tenant: 
 
-    https://graph.microsoft.com/deviceAppManagement/mobileApps  
+    `https://graph.microsoft.com/deviceAppManagement/mobileApps`
 
 3. Take the ID from the application and determine the installation state for the application (and therefore user):
 
-    https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
+    `https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/`
 
 ## Accessing the Microsoft Graph API for Intune
 

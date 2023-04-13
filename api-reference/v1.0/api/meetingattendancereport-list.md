@@ -1,7 +1,7 @@
 ---
 title: "List meetingAttendanceReports"
 description: "Get a list of attendance reports for an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
-> This method does not support channel meetings.
+>
+> This method does not support channel meetings, and only returns up to 50 of the most recent reports.
 
 ## Permissions
 
@@ -104,7 +105,6 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

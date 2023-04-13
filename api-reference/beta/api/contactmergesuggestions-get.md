@@ -47,9 +47,9 @@ If successful, this method returns a `200 OK` response code and a [contactMergeS
 
 ## Examples
 
-The following is an example of the request to get **contactMergeSuggestions** settings for the user.
-
 ### Request
+
+The following is an example of the request to get **contactMergeSuggestions** settings for the user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,9 +87,10 @@ GET https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
 
 ---
 
-
-
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,4 +107,3 @@ Content-Type: application/json
     "isEnabled": true
 }
 ```
-

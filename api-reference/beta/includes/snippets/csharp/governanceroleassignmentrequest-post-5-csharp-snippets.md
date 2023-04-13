@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
+var requestBody = new GovernanceRoleAssignmentRequest
 {
 	RoleDefinitionId = "70521f3e-3b95-4e51-b4d2-a2f485b02103",
 	ResourceId = "e5e7d29d-5465-45ac-885f-4716a5ee74b5",
@@ -17,12 +17,10 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 	{
 		Type = "Once",
 		StartDateTime = DateTimeOffset.Parse("2018-03-08T05:42:45.317Z"),
-		EndDateTime = DateTimeOffset.Parse("2018-06-05T05:42:31Z")
-	}
+		EndDateTime = DateTimeOffset.Parse("2018-06-05T05:42:31.000Z"),
+	},
 };
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
-await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests
-	.Request()
-	.AddAsync(governanceRoleAssignmentRequest);
 
 ```

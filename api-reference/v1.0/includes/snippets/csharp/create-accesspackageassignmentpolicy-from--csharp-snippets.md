@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
+var requestBody = new AccessPackageAssignmentPolicy
 {
 	DisplayName = "New Policy",
 	Description = "policy for assignment",
 	AllowedTargetScope = AllowedTargetScope.NotSpecified,
-	SpecificAllowedTargets = new List<SubjectSet>()
+	SpecificAllowedTargets = new List<SubjectSet>
 	{
 	},
 	Expiration = new ExpirationPattern
 	{
 		EndDateTime = null,
 		Duration = null,
-		Type = ExpirationPatternType.NoExpiration
+		Type = ExpirationPatternType.NoExpiration,
 	},
 	RequestorSettings = new AccessPackageAssignmentRequestorSettings
 	{
@@ -29,26 +29,24 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		EnableOnBehalfRequestorsToAddAccess = false,
 		EnableOnBehalfRequestorsToUpdateAccess = false,
 		EnableOnBehalfRequestorsToRemoveAccess = false,
-		OnBehalfRequestors = new List<SubjectSet>()
+		OnBehalfRequestors = new List<SubjectSet>
 		{
-		}
+		},
 	},
 	RequestApprovalSettings = new AccessPackageAssignmentApprovalSettings
 	{
 		IsApprovalRequiredForAdd = false,
 		IsApprovalRequiredForUpdate = false,
-		Stages = new List<AccessPackageApprovalStage>()
+		Stages = new List<AccessPackageApprovalStage>
 		{
-		}
+		},
 	},
 	AccessPackage = new AccessPackage
 	{
-		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
-	}
+		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b",
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies
-	.Request()
-	.AddAsync(accessPackageAssignmentPolicy);
 
 ```
