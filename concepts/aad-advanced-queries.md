@@ -7,32 +7,32 @@ ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/23/2022
+ms.date: 04/14/2023
 ---
 
 # Advanced query capabilities on Azure AD objects
 
-As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure Active Directory (Azure AD) objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-+ Option 1: Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
++ **Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
     <!-- {
       "blockType": "request",
-      "name": "get_users_accountenabled"
+      "name": "aad_advanced_queries_get_users_accountenabled"
     } -->
     ```msgraph-interactive
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
     ```
 
-+ Option 2: Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
++ **Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
     <!-- {
       "blockType": "request",
-      "name": "get_users_not_acountenabled"
+      "name": "aad_advanced_queries_get_users_not_acountenabled"
     } -->
     ```msgraph-interactive
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
@@ -73,7 +73,7 @@ The following table lists query scenarios on directory objects that are supporte
     
 > [!NOTE]
 >
-> + Using `$filter` and `$orderBy` together is supported only with advanced queries.
+> + Using `$filter` and `$orderby` together is supported only with advanced queries.
 > + `$expand` is not currently supported with advanced queries.
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
