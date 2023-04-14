@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Parameters = @(
+	parameters = @(
 		@{
-			RuleId = "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
-			Subjects = @(
+			ruleId = "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
+			subjects = @(
 				@{
-					ObjectId = "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
-					ObjectTypeName = "user"
+					objectId = "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
+					objectTypeName = "user"
 				}
 			)
 		}

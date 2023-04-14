@@ -1,7 +1,7 @@
 ---
 title: "call: reject"
 description: "Enable a bot to reject an incoming call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

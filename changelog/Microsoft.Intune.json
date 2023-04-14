@@ -3,6 +3,1022 @@
     {
       "ChangeList": [
         {
+          "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppX",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-windowsAppX?view=graph-rest-1.0) resource",
+          "Target": "windowsAppX"
+        }
+      ],
+      "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-22T02:24:40.9164229Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-ioslobappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosLobAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosstoreappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosStoreAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityVersion",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `identityVersion` property from the [macOSLobApp](https://learn.microsoft.com/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta) resource.",
+          "Target": "macOSLobApp"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-ioslobappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosLobAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosstoreappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosStoreAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "androidWorkProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidWorkProfileAccountUse** enumeration type.",
+          "Target": "androidWorkProfileAccountUse"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "macOSPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **macOSPriority** enumeration type.",
+          "Target": "macOSPriority"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "vpnTrafficDirection",
+          "ChangeType": "Addition",
+          "Description": "Added the **vpnTrafficDirection** enumeration type.",
+          "Target": "vpnTrafficDirection"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "vpnTrafficDirection",
+          "ChangeType": "Addition",
+          "Description": "Added the `vpnTrafficDirection` property to the [vpnTrafficRule](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-vpntrafficrule?view=graph-rest-beta) resource.",
+          "Target": "vpnTrafficRule"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedGoogleAccountDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedGoogleAccountDomains` property to the [androidForWorkGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the `workProfileAccountUse` property to the [androidForWorkGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedGoogleAccountDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedGoogleAccountDomains` property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the `workProfileAccountUse` property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "activationLockWhenSupervisedAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the `activationLockWhenSupervisedAllowed` property to the [macOSGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "maxUserDeferralsCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `maxUserDeferralsCount` property to the [macOSSoftwareUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSSoftwareUpdateConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the `priority` property to the [macOSSoftwareUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSSoftwareUpdateConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceUpdateStates",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceUpdateStates** relationship from the [windowsUpdateForBusinessConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "9f2798f1-1f00-485c-95d2-44f0cb83f249",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "9f2798f1-1f00-485c-95d2-44f0cb83f249",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "e83684d0-553e-47d9-bc25-d327c4d2be38",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMigratingToConfigurationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `isMigratingToConfigurationPolicy` property to the [deviceManagementIntent](https://learn.microsoft.com/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementIntent"
+        },
+        {
+          "Id": "a9e2162d-2320-4abb-97f5-20c2246da1b3",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "a9e2162d-2320-4abb-97f5-20c2246da1b3",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "209b9ecb-b9f0-46df-b742-409816693c6f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaErrorCode** enumeration type.",
+          "Target": "zebraFotaErrorCode"
+        },
+        {
+          "Id": "209b9ecb-b9f0-46df-b742-409816693c6f",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the `errorCode` property to the [zebraFotaDeploymentStatus](https://learn.microsoft.com/graph/api/resources/intune-androidfotaservice-zebrafotadeploymentstatus?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaDeploymentStatus"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesStatusByPolicyPlatformComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesStatusByPolicyPlatformComplianceReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusByCompliacePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusByCompliacePolicyReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusByCompliancePolicySettingReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusByCompliancePolicySettingReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusSummaryByCompliacePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusSummaryByCompliacePolicyReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusSummaryByCompliancePolicySettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusSummaryByCompliancePolicySettingsReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4db88a4f-4092-429e-b3c8-2ae7b85f3e8f",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "4db88a4f-4092-429e-b3c8-2ae7b85f3e8f",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        }
+      ],
+      "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-20T21:06:22.1135105Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateStatus** enumeration type.",
+          "Target": "certificateStatus"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enterpriseCodeSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [enterpriseCodeSigningCertificate](https://learn.microsoft.com/graph/api/resources/intune-enterpriseCodeSigningCertificate?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "enterpriseCodeSigningCertificate"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosLobAppProvisioningConfigurationAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosLobAppProvisioningConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-iosLobAppProvisioningConfigurationAssignment?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "iosLobAppProvisioningConfigurationAssignment"
+        }
+      ],
+      "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-24T19:29:25.3635133Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1b1df16b-4cd4-40a1-bf07-2be59450ef36",
+          "ApiChange": "Key",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagement](https://learn.microsoft.com/graph/api/resources/deviceManagement?view=graph-rest-beta) resource",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "1b1df16b-4cd4-40a1-bf07-2be59450ef36",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the `id` property to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "fe24a5d6-74eb-4b97-9f29-aea98b6c94fc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "licenseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **licenseType** enumeration type.",
+          "Target": "licenseType"
+        },
+        {
+          "Id": "20e6be90-7664-469b-ab65-3fa69cd4e1de",
+          "ApiChange": "Member",
+          "ChangedApiName": "deviceConfigurationScripts",
+          "ChangeType": "Addition",
+          "Description": "Added the `deviceConfigurationScripts` member to the **deviceManagementConfigurationTemplateFamily** enumeration.",
+          "Target": "deviceManagementConfigurationTemplateFamily"
+        },
+        {
+          "Id": "cdee27e2-ab7f-4dc9-8c75-28265c089e56",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsEnrollmentAssignments",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `windowsEnrollmentAssignments` property from the [complianceManagementPartner](https://learn.microsoft.com/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-beta) resource.",
+          "Target": "complianceManagementPartner"
+        },
+        {
+          "Id": "cdee27e2-ab7f-4dc9-8c75-28265c089e56",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsOnboarded",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `windowsOnboarded` property from the [complianceManagementPartner](https://learn.microsoft.com/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-beta) resource.",
+          "Target": "complianceManagementPartner"
+        },
+        {
+          "Id": "0ee6bb81-c2cd-44cf-ab5e-597ed886473c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementIntentCustomizedSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementIntentCustomizedSetting](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementIntentCustomizedSetting?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementIntentCustomizedSetting"
+        },
+        {
+          "Id": "0ee6bb81-c2cd-44cf-ab5e-597ed886473c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCustomizedSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCustomizedSettings](https://learn.microsoft.com/graph/api/intune-deviceManagementIntent?view=graph-rest-beta) method to the [deviceManagementIntent](https://learn.microsoft.com/graph/api/intune-deviceManagementIntent?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementIntent"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Member",
+          "ChangedApiName": "verifyingMicrosoftAccountIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the `verifyingMicrosoftAccountIdentity` member to the **deviceLicensingStatus** enumeration.",
+          "Target": "deviceLicensingStatus"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Member",
+          "ChangedApiName": "verifyingMirosoftAccountIdentity",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `verifyingMirosoftAccountIdentity` member from the **deviceLicensingStatus** enumeration.",
+          "Target": "deviceLicensingStatus"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftAccountVerificationFailed",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftAccountVerificationFailed` member to the **deviceLicensingStatus** enumeration.",
+          "Target": "deviceLicensingStatus"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Member",
+          "ChangedApiName": "mirosoftAccountVerificationFailed",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `mirosoftAccountVerificationFailed` member from the **deviceLicensingStatus** enumeration.",
+          "Target": "deviceLicensingStatus"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Member",
+          "ChangedApiName": "rotateLocalAdminPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the `rotateLocalAdminPassword` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Property",
+          "ChangedApiName": "sizeInKB",
+          "ChangeType": "Addition",
+          "Description": "Added the `sizeInKB` property to the [deviceLogCollectionResponse](https://learn.microsoft.com/graph/api/resources/intune-devices-devicelogcollectionresponse?view=graph-rest-beta) resource.",
+          "Target": "deviceLogCollectionResponse"
+        },
+        {
+          "Id": "982003a1-ba8f-416a-ba2f-133d598f3a3e",
+          "ApiChange": "Method",
+          "ChangedApiName": "rotateLocalAdminPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the [rotateLocalAdminPassword](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f5243eef-7d53-46a1-9400-cc32a210d301",
+          "ApiChange": "Property",
+          "ChangedApiName": "adminAccountFullName",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminAccountFullName` property to the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "f5243eef-7d53-46a1-9400-cc32a210d301",
+          "ApiChange": "Property",
+          "ChangedApiName": "adminAccountPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminAccountPassword` property to the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "f5243eef-7d53-46a1-9400-cc32a210d301",
+          "ApiChange": "Property",
+          "ChangedApiName": "adminAccountUserName",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminAccountUserName` property to the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "f5243eef-7d53-46a1-9400-cc32a210d301",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAdminAccount",
+          "ChangeType": "Addition",
+          "Description": "Added the `hideAdminAccount` property to the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "f5243eef-7d53-46a1-9400-cc32a210d301",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestRequiresNetworkTether",
+          "ChangeType": "Addition",
+          "Description": "Added the `requestRequiresNetworkTether` property to the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationAzureAdTrustType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationAzureAdTrustType** enumeration type.",
+          "Target": "deviceManagementConfigurationAzureAdTrustType"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationControlType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationControlType** enumeration type.",
+          "Target": "deviceManagementConfigurationControlType"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationDeviceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationDeviceMode** enumeration type.",
+          "Target": "deviceManagementConfigurationDeviceMode"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationPlatforms** enumeration type.",
+          "Target": "deviceManagementConfigurationPlatforms"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationSecretSettingValueState",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSecretSettingValueState** enumeration type.",
+          "Target": "deviceManagementConfigurationSecretSettingValueState"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationSettingAccessTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSettingAccessTypes** enumeration type.",
+          "Target": "deviceManagementConfigurationSettingAccessTypes"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationSettingUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSettingUsage** enumeration type.",
+          "Target": "deviceManagementConfigurationSettingUsage"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationSettingVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSettingVisibility** enumeration type.",
+          "Target": "deviceManagementConfigurationSettingVisibility"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationStringFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationStringFormat** enumeration type.",
+          "Target": "deviceManagementConfigurationStringFormat"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationTechnologies",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationTechnologies** enumeration type.",
+          "Target": "deviceManagementConfigurationTechnologies"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceManagementConfigurationWindowsSkus",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationWindowsSkus** enumeration type.",
+          "Target": "deviceManagementConfigurationWindowsSkus"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingCollectionInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingCollectionInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationChoiceSettingCollectionInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingCollectionInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationChoiceSettingInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationChoiceSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationDependentOn",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationDependentOn](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationDependentOn?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationDependentOn"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationExchangeOnlineSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationExchangeOnlineSettingApplicability](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationExchangeOnlineSettingApplicability?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationExchangeOnlineSettingApplicability"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingCollectionInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingCollectionInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationGroupSettingCollectionInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingCollectionInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationGroupSettingInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationGroupSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValueDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValueDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValueDefinition?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValueDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationOptionDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationOptionDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationOptionDefinition?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationOptionDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationReferenceSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationReferenceSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationReferenceSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationReferenceSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationReferredSettingInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationReferredSettingInformation](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationReferredSettingInformation?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationReferredSettingInformation"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSecretSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSecretSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSecretSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSecretSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingApplicability](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingApplicability?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingApplicability"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingDependedOnBy",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingDependedOnBy](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingDependedOnBy?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingDependedOnBy"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingGroupCollectionInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingGroupCollectionInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingGroupCollectionInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingGroupCollectionInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingGroupInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingGroupInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingGroupInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingGroupInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingInstanceTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingInstanceTemplateReference](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingInstanceTemplateReference?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingInstanceTemplateReference"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingOccurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingOccurrence](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingOccurrence?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingOccurrence"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingValueDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingValueDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingValueDefinition?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingValueDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingValueTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingValueTemplateReference](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingValueTemplateReference?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingValueTemplateReference"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingCollectionInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingCollectionInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSimpleSettingCollectionInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingCollectionInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingInstance](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSimpleSettingInstance?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingInstance"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSimpleSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationStringSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationStringSettingValue](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationStringSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationStringSettingValue"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationStringSettingValueDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationStringSettingValueDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationStringSettingValueDefinition?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationStringSettingValueDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationWindowsSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationWindowsSettingApplicability](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationWindowsSettingApplicability?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationWindowsSettingApplicability"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingCollectionDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingCollectionDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationChoiceSettingCollectionDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationChoiceSettingCollectionDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationChoiceSettingDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationChoiceSettingDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationRedirectSettingDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationRedirectSettingDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationRedirectSettingDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationRedirectSettingDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSetting](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSetting?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSetting"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSettingDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingGroupCollectionDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingGroupCollectionDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingGroupCollectionDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSettingGroupCollectionDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingGroupDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingGroupDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSettingGroupDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSettingGroupDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingCollectionDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingCollectionDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSimpleSettingCollectionDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSimpleSettingCollectionDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationSimpleSettingDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationSimpleSettingDefinition"
+        },
+        {
+          "Id": "37fd96bd-452a-4c76-9c41-7080d780ae2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** relationship to the [managedAppConfiguration](https://learn.microsoft.com/graph/api/resources/intune-mam-managedappconfiguration?view=graph-rest-beta) resource.",
+          "Target": "managedAppConfiguration"
+        },
+        {
+          "Id": "73a739db-7aa9-4f96-a8d1-0f58442ea5c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extendRemoteHelpSessionResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [extendRemoteHelpSessionResponse](https://learn.microsoft.com/graph/api/resources/intune-extendRemoteHelpSessionResponse?view=graph-rest-beta) resource",
+          "Target": "extendRemoteHelpSessionResponse"
+        },
+        {
+          "Id": "07f812f4-ed1b-495b-b890-8c9df09976b8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicePoliciesComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicePoliciesComplianceReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdevicepoliciescompliancereport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "07f812f4-ed1b-495b-b890-8c9df09976b8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicePolicySettingsComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicePolicySettingsComplianceReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdevicepolicysettingscompliancereport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "07f812f4-ed1b-495b-b890-8c9df09976b8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesStatusBySettingReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesStatusBySettingReport](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getdevicesstatusbysettingreport?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "1b1df16b-4cd4-40a1-bf07-2be59450ef36",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-23T17:51:20.2849381Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4a5f06b8-6d5d-41aa-80b4-54324f8c685a",
           "ApiChange": "Property",
           "ChangedApiName": "roleScopeTagIds",
@@ -119,7 +1135,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-26T03:28:35.6530846Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -465,7 +1481,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-01-21T05:00:51.2098683Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -547,7 +1563,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-04T17:32:27.4508092Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -685,7 +1701,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-27T19:38:22.6051064Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -743,7 +1759,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",          
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         }
       ],
@@ -751,7 +1767,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-10-26T21:12:54.2274365Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1033,7 +2049,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-24T16:00:37.4721718Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1179,7 +2195,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-09-23T16:37:09.541616Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1533,7 +2549,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-09-20T03:44:24.4116858Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -1791,7 +2807,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-17T14:56:13.6840353Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2153,7 +3169,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-17T15:18:01.980486Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2203,7 +3219,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-07-25T18:53:32.7807195Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2509,7 +3525,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-25T16:04:20.7470831Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2535,7 +3551,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-22T00:01:01.1312062Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -2697,7 +3713,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-06-21T22:22:25.0486576Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3083,7 +4099,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-23T19:55:40.7681825Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3717,7 +4733,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-25T16:31:12.488884Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -3991,7 +5007,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-21T19:31:11.5427286Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -8227,7 +9243,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": " Corporate management"
     },
     {
@@ -8405,7 +9421,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-11-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -8635,7 +9651,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -8837,7 +9853,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -8881,7 +9897,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -9259,7 +10275,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9301,7 +10317,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9361,7 +10377,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -9595,7 +10611,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -9661,7 +10677,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -9879,7 +10895,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10025,7 +11041,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10323,7 +11339,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10349,7 +11365,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10423,7 +11439,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10609,7 +11625,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10651,7 +11667,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -10677,7 +11693,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -10895,7 +11911,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11113,7 +12129,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11291,7 +12307,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -11525,7 +12541,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11711,7 +12727,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -11945,7 +12961,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -12203,7 +13219,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -12701,7 +13717,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13151,7 +14167,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13169,7 +14185,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13451,7 +14467,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13669,7 +14685,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -13903,7 +14919,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14217,7 +15233,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14427,7 +15443,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14501,7 +15517,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14735,7 +15751,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -14873,7 +15889,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15043,7 +16059,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15325,7 +16341,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15351,7 +16367,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15665,7 +16681,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15683,7 +16699,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -15773,7 +16789,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16097,7 +17113,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16131,7 +17147,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16501,7 +17517,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16883,7 +17899,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -16933,7 +17949,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17417,7 +18433,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17459,7 +18475,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -17693,7 +18709,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18135,7 +19151,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18393,7 +19409,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -18763,7 +19779,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-11-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19247,7 +20263,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19553,7 +20569,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-09-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19739,7 +20755,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -19933,7 +20949,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-07-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20337,7 +21353,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-06-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -20839,7 +21855,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -21209,7 +22225,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -21907,7 +22923,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22181,7 +23197,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-02-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22335,7 +23351,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-01-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22353,7 +23369,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-12-01T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
@@ -22376,4 +23392,3 @@
     }
   ]
 }
-

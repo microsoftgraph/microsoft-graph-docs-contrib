@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new WorkflowRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new WorkflowRequestBuilderGetQueryParameters();
+$queryParameters = WorkflowRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","category","displayName","description","version","executionConditions"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflowsById('workflow-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflowsById('workflow-id')->get($requestConfiguration);
 
 
 ```

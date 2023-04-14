@@ -17,7 +17,7 @@ $passwordCredential->setDisplayName('Password friendly name');
 $requestBody->setPasswordCredential($passwordCredential);
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addPassword()->post($requestBody);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->addPassword()->post($requestBody);
 
 
 ```

@@ -23,7 +23,7 @@ $hostedContentsChatMessageHostedContent1->setContentBytes(base64_decode('iVBORw0
 $hostedContentsChatMessageHostedContent1->setContentType('image/png');
 
 $additionalData = [
-'@microsoft.graph.temporaryId' => '1', 
+		'@microsoft.graph.temporaryId' => '1', 
 ];
 $hostedContentsChatMessageHostedContent1->setAdditionalData($additionalData);
 
@@ -35,7 +35,7 @@ $requestBody->setHostedContents($hostedContentsArray);
 
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
+$result = $graphServiceClient->chatsById('chat-id')->messages()->post($requestBody);
 
 
 ```

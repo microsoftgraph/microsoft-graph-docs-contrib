@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "Extensions/any"
 
-requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

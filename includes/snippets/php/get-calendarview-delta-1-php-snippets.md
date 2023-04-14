@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
-$queryParameters->startdatetime = "2016-12-01T00:00:00Z";
-$queryParameters->enddatetime = "2016-12-30T00:00:00Z";
-
 $headers = [
-'Prefer' => 'odata.maxpagesize=2',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'odata.maxpagesize=2',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->startdatetime = "2016-12-01T00:00:00Z";
+$queryParameters->enddatetime = "2016-12-30T00:00:00Z";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
+
+$result = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
 
 
 ```

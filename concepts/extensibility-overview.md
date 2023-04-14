@@ -24,7 +24,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 ## Why add custom data to Microsoft Graph?
 
 - As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
-- Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
+- Alternatively, you might want to retain your app's existing user profile store, and add an app-specific identifier to the **user** resource.
 - As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
 
 ## Custom data options in Microsoft Graph
@@ -46,7 +46,7 @@ You can use the 15 extension attributes to store String values on **user** or **
 
 ##### Add or update data in extension attributes
 
-The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
+The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute13** through an update operation with a PATCH method.
 
 
 # [HTTP](#tab/http)

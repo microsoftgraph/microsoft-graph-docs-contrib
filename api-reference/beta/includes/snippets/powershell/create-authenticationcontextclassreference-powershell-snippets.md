@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	Id = "c1"
-	DisplayName = "Contoso medium"
-	Description = "Medium protection level defined for Contoso policy"
-	IsAvailable = $true
+	id = "c1"
+	displayName = "Contoso medium"
+	description = "Medium protection level defined for Contoso policy"
+	isAvailable = $true
 }
 
 New-MgIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params

@@ -28,6 +28,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | content| Stream| A field that represents the content of the transcript. Read-only.|
 | createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the transcript. Read-only.|
+| metadataContent| Stream| A field that represents the time-aligned metadata of the utterances in the transcript. Read-only.|
 
 
 ## JSON representation
@@ -44,6 +45,7 @@ The following is a JSON representation of the resource.
 {
   "content": "stream",
   "createdDateTime": "dateTimeOffset",  
-  "id": "string (identifier)"
+  "id": "string (identifier)",
+  "metadataContent": "stream"
 }
 ```
