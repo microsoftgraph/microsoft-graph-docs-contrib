@@ -265,6 +265,7 @@ The following table shows support for `$filter` by extension properties on the *
 | device           | physicalIds/$count                  | ![Advanced][AQP] | ![NotSupported][NS] |
 | device           | systemLabels/$count                 | ![Advanced][AQP] | ![NotSupported][NS] |
 | group            | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| group            | owners/$count                       |                  | ![Advanced][AQP]    |
 | group            | proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
 | servicePrincipal | federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
 | servicePrincipal | ownedObjects/$count                 |                  | ![Advanced][AQP]    |
