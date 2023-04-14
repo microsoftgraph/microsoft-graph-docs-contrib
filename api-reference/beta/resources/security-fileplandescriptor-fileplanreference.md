@@ -1,6 +1,6 @@
 ---
 title: "filePlanReference resource type"
-description: "Represents the unique filePlanReference applied to a retention label."
+description: "Represents a unique filePlanReference applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
