@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceLocalCredential",
-  "accountName": "String"
-  "accountSid": "String"
+  "accountName": "String",
+  "accountSid": "String",
   "backupDateTime": "DateTimeOffset",
   "passwordBase64": "String"
 }
