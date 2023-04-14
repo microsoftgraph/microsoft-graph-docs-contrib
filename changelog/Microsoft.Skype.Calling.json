@@ -2728,16 +2728,16 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualAppointment",
           "ChangeType": "Addition",
-          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http)get function.",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http) function.",
           "Target": "getVirtualAppointmentJoinWebUrl"
-        },
+        }
       ],
       "Id": "fcbc337a-37d1-47d7-afc0-5b5fa30324c7",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-11T00:00:00",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Meetings and calling"
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
