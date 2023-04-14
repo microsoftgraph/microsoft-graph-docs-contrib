@@ -18,26 +18,26 @@ The Microsoft Graph query engine uses an index store to fulfill query requests. 
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-+ **Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
+**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
-    <!-- {
-      "blockType": "request",
-      "name": "aad_advanced_queries_get_users_accountenabled"
-    } -->
-    ```msgraph-interactive
-    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
-    ```
+<!-- {
+  "blockType": "request",
+  "name": "aad_advanced_queries_get_users_accountenabled"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+```
 
-+ **Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
+**Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
-    <!-- {
-      "blockType": "request",
-      "name": "aad_advanced_queries_get_users_not_acountenabled"
-    } -->
-    ```msgraph-interactive
-    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
-    ConsistencyLevel: eventual
-    ```
+<!-- {
+  "blockType": "request",
+  "name": "aad_advanced_queries_get_users_not_acountenabled"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+ConsistencyLevel: eventual
+```
 
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
