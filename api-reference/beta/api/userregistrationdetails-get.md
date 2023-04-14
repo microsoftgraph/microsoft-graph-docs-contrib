@@ -112,6 +112,7 @@ Content-Type: application/json
     "isMfaRegistered": true,
     "isMfaCapable": true,
     "isPasswordlessCapable": false,
+    "lastUpdatedDateTime": "2023-03-13T19:15:41.6195833Z",
     "methodsRegistered": [
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
