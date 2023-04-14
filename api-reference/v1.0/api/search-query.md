@@ -54,7 +54,7 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 
 ### Example 1: Basic call to perform a search request
 
-The following example shows how to perform a search to get expected connector items.
+The following example shows how to search for expected connector items.
 
 #### Request
 
