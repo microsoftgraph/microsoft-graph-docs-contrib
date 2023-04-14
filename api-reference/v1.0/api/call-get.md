@@ -1,7 +1,7 @@
 ---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

@@ -25,7 +25,7 @@ $grading = new EducationAssignmentGradeType();
 $grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
 
 $additionalData = [
-'maxPoints' => 50,
+		'maxPoints' => 50,
 ];
 $grading->setAdditionalData($additionalData);
 
@@ -43,7 +43,7 @@ $requestBody->setAllowStudentsToAddResourcesToSubmission(true);
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->post($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->post($requestBody);
 
 
 ```

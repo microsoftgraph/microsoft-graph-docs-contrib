@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Undo soft deletion of a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Undo soft deletion of a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -39,14 +39,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To undo soft deletion of a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/undoSoftDelete
+POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/undoSoftDelete
+```
+
+To undo soft deletion of a **chatMessage** in a **chat**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/undoSoftDelete
-POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/undoSoftDelete
-POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/undoSoftDelete
 ```
 
 ## Request headers

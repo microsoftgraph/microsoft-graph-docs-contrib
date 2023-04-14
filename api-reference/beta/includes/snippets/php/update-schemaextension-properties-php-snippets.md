@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new User();
 $additionalData = [
-'ext55gb1l09_msLearnCourses' => $requestBody = new Ext55gb1l09_msLearnCourses();
+		'ext55gb1l09_msLearnCourses' => $requestBody = new Ext55gb1l09_msLearnCourses();
 $		requestBody->setCourseType('Admin');
 
 
@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

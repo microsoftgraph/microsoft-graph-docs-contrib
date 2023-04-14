@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	Site = @{
-		WebUrl = "https://contoso.sharepoint.com/sites/HumanResources"
+	site = @{
+		webUrl = "https://contoso.sharepoint.com/sites/HumanResources"
 	}
 }
 

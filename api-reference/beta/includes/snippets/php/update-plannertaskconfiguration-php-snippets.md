@@ -22,7 +22,7 @@ $rulesPlannerTaskRoleBasedRule1Role->set@odatatype('#microsoft.graph.plannerRela
 $rulesPlannerTaskRoleBasedRule1Role->setRoleKind(new PlannerUserRoleKind('relationship'));
 
 $additionalData = [
-'role' => 'defaultRules', 
+		'role' => 'defaultRules', 
 ];
 $rulesPlannerTaskRoleBasedRule1Role->setAdditionalData($additionalData);
 
@@ -156,7 +156,7 @@ $editPolicy->setRules($rulesArray);
 $requestBody->setEditPolicy($editPolicy);
 
 
-$requestResult = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->taskConfiguration()->patch($requestBody);
+$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->taskConfiguration()->patch($requestBody);
 
 
 ```

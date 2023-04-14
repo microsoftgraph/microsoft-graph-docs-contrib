@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Description = "Lifetime Achievement award from the International Association of Branding Managers"
-	DisplayName = "Lifetime Achievement Award For Excellence in Branding"
-	IssuedDate = "Date"
-	IssuingAuthority = "International Association of Branding Management"
-	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
-	WebUrl = "https://www.iabm.io"
+	description = "Lifetime Achievement award from the International Association of Branding Managers"
+	displayName = "Lifetime Achievement Award For Excellence in Branding"
+	issuedDate = "Date"
+	issuingAuthority = "International Association of Branding Management"
+	thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
+	webUrl = "https://www.iabm.io"
 }
 
 # A UPN can also be used as -UserId.

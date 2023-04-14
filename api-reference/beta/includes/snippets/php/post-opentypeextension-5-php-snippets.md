@@ -25,10 +25,10 @@ $extensionsExtension1 = new Extension();
 $extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
 
 $additionalData = [
-'extensionName' => 'Com.Contoso.Benefits', 
-'companyName' => 'Contoso', 
-'expirationDate' => '2016-08-03T11:00:00.000Z', 
-'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
+		'extensionName' => 'Com.Contoso.Benefits', 
+		'companyName' => 'Contoso', 
+		'expirationDate' => '2016-08-03T11:00:00.000Z', 
+		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
 ];
 $extensionsExtension1->setAdditionalData($additionalData);
 
@@ -50,7 +50,7 @@ $requestBody->setThreads($threadsArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->conversations()->post($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->conversations()->post($requestBody);
 
 
 ```

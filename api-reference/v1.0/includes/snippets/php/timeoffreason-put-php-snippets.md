@@ -11,20 +11,18 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new TimeOffReason();
 $additionalData = [
-'displayName' => 'Vacation', 
-'iconType' => 'plane', 
-'isActive' => true,
+		'displayName' => 'Vacation', 
+		'iconType' => 'plane', 
+		'isActive' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 $requestConfiguration = new TimeOffReasonRequestBuilderPutRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'return=representation',
-];
-
+		'Prefer' => 'return=representation',
+	];
 $requestConfiguration->headers = $headers;
 
 
