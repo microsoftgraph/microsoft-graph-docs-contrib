@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|LearningAssignedCourse.Read, LearningSelfInitiatedCourse.Read|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|LearningAssignedCourse.Read.All, LearningSelfInitiatedCourse.Read.All|
 
 ## HTTP request
