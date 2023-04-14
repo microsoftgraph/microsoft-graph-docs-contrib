@@ -35,7 +35,7 @@ The `User.Read`, `Team.ReadBasic.All`, `Channel.ReadBasic.All`, and `ChannelMess
 Use the `mgc login` command to sign in with the required scopes.
 
 ```bash
- mgc login --scopes User.Read Team.ReadBasic.All Channel.ReadBasic.All ChannelMessage.Send
+mgc login --scopes User.Read Team.ReadBasic.All Channel.ReadBasic.All ChannelMessage.Send
 ```
 
 The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command completes. You only need to sign in once per session.
@@ -125,10 +125,10 @@ Compare this command to the previous command used to get the signed-in user. Ins
 
 ### List team channels
 
-Now use the team's ID as a parameter to the `mgc teams item channels list` command.
+Now use the team's ID as a parameter to the `mgc teams channels list` command.
 
 ```bash
-mgc teams item channels list --team-id ab41a24e-ed63-4725-abb7-d22f90a4fdc3 --select displayName,id
+mgc teams channels list --team-id ab41a24e-ed63-4725-abb7-d22f90a4fdc3 --select displayName,id
 ```
 
 ```json
@@ -150,14 +150,14 @@ mgc teams item channels list --team-id ab41a24e-ed63-4725-abb7-d22f90a4fdc3 --se
 }
 ```
 
-Notice the `item` command. By itself, `mgc teams` refers to a collection. The `item` command allows you to get a specific item from that collection by its ID. Select one of the channels and copy its `id`.
+Select one of the channels and copy its `id`.
 
 ### Send a message
 
 Now that you have both the Team ID and the channel ID, you can post a message to the channel. Use the following command to send the message.
 
 ```bash
-mgc teams item channels item messages create --team-id ab41a24e-ed63-4725-abb7-d22f90a4fdc3 --channel-id 19:YlJvOa8M094qgkEgjJR7l6AogKx9jDsLpuXsl7O8Ft81@thread.tacv2 --body '{"body": {"content": "Hello world!"}, "importance": "urgent"}'
+mgc teams channels messages create --team-id ab41a24e-ed63-4725-abb7-d22f90a4fdc3 --channel-id 19:YlJvOa8M094qgkEgjJR7l6AogKx9jDsLpuXsl7O8Ft81@thread.tacv2 --body '{"body": {"content": "Hello world!"}, "importance": "urgent"}'
 ```
 
 This command differs from the previous commands you used. Instead of querying data, it's actually creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `--body` parameter accepts a JSON representation of a `chatMessage`.
