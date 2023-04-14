@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|LearningAssignedCourse.Read.All, LearningSelfInitiatedCourse.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -32,8 +32,6 @@ To retrieve the course activity list for a signed-in user:
 ``` http
 GET me/employeeExperience/learningCourseActivities
 ```
-or
-
 To retrieve the course activity list for a user:
 
 ``` http
@@ -58,15 +56,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to retrieve all the course activities of a given user.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_learningcourseactivity"
 }
 -->
-Request for a provider to retrieve all the course activities of a given user:
 
 ``` http
 GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities
