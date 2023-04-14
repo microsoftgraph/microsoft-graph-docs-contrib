@@ -10,9 +10,6 @@ doc_type: apiPageType
 # Get learningCourseActivity
 Namespace: microsoft.graph
 
-Retrieves the Course Activity via CourseActivity id that is sent by VivaLearning in the Create 
-course activity api call.
-
 Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
 ## Permissions
@@ -51,8 +48,10 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 
 ## Examples
 
-### Request
-The following is an example of request and response of an assigned learning course activity.
+### Example 1: Get an assigned learning course activity
+
+#### Request
+The following examples shows a request to get an assigned learning course activity.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,8 +63,8 @@ The following is an example of request and response of an assigned learning cour
 GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
 ```
 
-### Response
-The following is an example of the response.
+#### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -102,15 +101,18 @@ Content-Type: application/json
   "status": "notStarted"
 }
 ```
+### Example 2: Get a self-initiated learning course activity
 
-### Request
-The following is an example of request and response of an self-initiated learning course activity.
+#### Request
+The following example shows a request to get a self-initiated learning course activity.
 
 ``` http
 GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
 
-### Response
+#### Response
+
+The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
