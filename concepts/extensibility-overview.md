@@ -181,7 +181,7 @@ The 15 extension attributes are already predefined in Microsoft Graph and their 
 
 Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific and supported directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
 
-For the list of resource types that can be specified as target objects for a directory extension, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+For the list of resource types that can be specified as target objects for a directory extension, see [Choose an extension type for your application](#comparison-of-extension-types).
 
 ### Developer experience
 
@@ -451,7 +451,7 @@ If a multi-tenant application creates additional directory extensions in an app 
 
 [Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you define your schema extension. Then, use it to extend supported resource instances with strongly typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
-For the list of resource types that support schema extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+For the list of resource types that support schema extensions, see [Choose an extension type for your application](#comparison-of-extension-types).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
@@ -761,7 +761,7 @@ To verify: Can you recover a schema extension definition by creating one with ex
 
 [Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
 
-For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#comparison-of-extension-types).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
 
