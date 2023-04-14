@@ -11,13 +11,14 @@ ms.custom: scenarios:getting-started
 
 ## Subscribe to notifications for virtual event updates.
 
-Virtual event resources support subscription to change notifications. Subscriptions for virtual events have a max period of a day. Renewal of subscription or a new subscription must be created to sustain notifications for virtual events subscribeable resources. Please review webhook subscriptions for more details about the subscription payload. Subscriptions to virtual event resources have a max expiration time of 1 day. Subscriptions must either be created again or renewed. Please review [Change notifications](/graph/api/resources/webhooks) for more details.
+Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a subscription.
+Virtual event subscriptions have a max period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user may decide to create a new subscription for the resource after the expiry of existing subscription. Please review [Change notifications](/graph/api/resources/webhooks) for more details.
 
 ### Permissions
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------------------------|:---------------------------------------------------------|:-------------------|
-| Delegated (work or school account)    | Not supported.                                           | Not support        |
+| Delegated (work or school account)    | Not supported.                                           | Not supported.        |
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
 | Application                           | VirutalEvent.Read.All                                    | beta               |
 
@@ -33,7 +34,7 @@ Virtual event resources support subscription to change notifications. Subscripti
 
 **Note:** Replace values with parenthesis with actual values.
 
-### Subscription to all created events in a tenant
+### Subscription to all Events created in a tenant
 
 Subscriptions for all events for a unique app and tenant can be specified with the following resource `solutions/virtualEvents/events` in the subscription payload.
 The subscription will designate the notification url to receive all event created notifications in a tenant for virtual events.
@@ -47,16 +48,16 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-  "resource": "solutions/virtualEvents/events/",
+  "resource": "solutions/virtualEvents/events",
   "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
   "clientState": "secretClientState"
 }
 ```
 
-### Subscribe to all created events with relevant organizerss.
+### Subscribe to all Events created in a tenant with relevant organizers.
 
 Subscriptions to all events that include any members of a set of organizers/coorganizers can be accomplished with the resource specified as 
-`"solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])"`. These subscriptions will receive any created notifications for all virtual events where id1 and id2 are either the organizer or co-organizer. This subscription is not distinct from subscriptions to all created events in a tenant.
+`"solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])"`. These subscriptions will receive any created notifications for all virtual events for a set of organizer or co-organizer ids. This subscription is considered a subscription to all Events created in a tenant.  
 
 ```HTTP
 POST https://graph.microsoft.com/beta/subscriptions
@@ -74,10 +75,10 @@ Content-Type: application/json
 
 ### Subscribe to specific webinar's updated events
 
-To receive updated notifications for a particular webinar level event, a subscription must be created for that unique event id. Subscription to a webinar's updated events will relay events related to updates for a particular webinar. 
-This can be accomplished with the resource `solutions/virtualEvents/webinars/{eventId}` where eventId is the webinar id.
+To receive updated notifications for a particular webinar, a subscription must be created for that unique webinar.
+This can be accomplished with the resource `solutions/virtualEvents/webinars/{webinarId}`.
 
-A tenant can only create single subscription to each distinct webinar per application.
+An application can have only one subscription per webinar inside a tenant.
 
 ```HTTP
 POST https://graph.microsoft.com/beta/subscriptions
@@ -87,7 +88,7 @@ Content-Type: application/json
   "changeType": "updated",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-  "resource": "solutions/virtualEvents/webinars/{eventId}",
+  "resource": "solutions/virtualEvents/webinars/{webinarId}",
   "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
   "clientState": "secretClientState"
 }
@@ -95,9 +96,9 @@ Content-Type: application/json
 
 ### Subscribe to session event notifications for a webinar.
 
-Session notifications for a particular webinar can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{eventId}/sessions` where eventId is the webinar id.
-Subscription will have all notifications related to a webinar's sessions events will be sent for the change types desired.
-A tenant may only have a single session level subscription for each distinct webinar per application.
+Notifications for Sessions created or updated in a webinar can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
+
+An application can only have a single session level subscription per webinar in a tenant.
 
 ```HTTP
 POST https://graph.microsoft.com/beta/subscriptions
@@ -107,7 +108,7 @@ Content-Type: application/json
   "changeType": "created, updated",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-  "resource": "solutions/virtualEvents/webinars/{eventId}/sessions",
+  "resource": "solutions/virtualEvents/webinars/{webinarId}/sessions",
   "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
   "clientState": "secretClientState"
 }
@@ -119,9 +120,9 @@ To subscribe to a specific session's meeting call events, please see [Change not
 
 ### Subscribe to all registrants for a particular event
 
-Registant notifications for a particular event can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{eventId}/registration/registrants` where eventId is the webinar id.
-Subscription will relay all notifications of the relevant change types on registration events for a specific virtual event webinar.
-A tenant may only have a single registrant level subscription per distinct webinar and application combination.
+Notifications for a webinars registration events can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`.
+
+An application can only have a single registrant level subscription per webinar inside a tenant.
 
 ```HTTP
 POST https://graph.microsoft.com/beta/subscriptions
@@ -131,7 +132,7 @@ Content-Type: application/json
   "changeType": "created, updated",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-  "resource": "solutions/virtualEvents/webinars/{eventId}/registration/registrants",
+  "resource": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants",
   "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
   "clientState": "secretClientState"
 }
@@ -139,7 +140,7 @@ Content-Type: application/json
 
 ## Receiving event notifications
 
-Notifications will include the resource url of the changed resource. A separate request to graph will be required to obtain the information of the changed resource.
+Notifications will include the resource url of the changed resource. A separate request to the resource url should be made to obtain the information of the resource that is created or updated.
 
 The below table indicates the supported notification and change types for the virtual events resource.
 
@@ -147,9 +148,9 @@ The below table indicates the supported notification and change types for the vi
 
 | Notification type                                                              | Resource id                                                                                    | Change types      |
 |:-------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)       | solutions/virtualEvents/webinar/{eventId}                                                      | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)       | solutions/virtualEvents/webinar/{eventId}/sessions/{sessionId}                                 | created, updated  |
-| [Registrant](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | solutions/virtualEvents/webinar/{eventId}/registration/registrants/{registrantId}              | created, updated  |
+| [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)       | solutions/virtualEvents/webinars/{webinarId}                                                      | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)       | solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}                                 | created, updated  |
+| [Registrant](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}              | created, updated  |
 
 ## Event notification examples
 ### Event created
@@ -163,9 +164,9 @@ The below table indicates the supported notification and change types for the vi
     "resource": "solutions/virtualEvents/events/",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/",
       "@odata.type": "#microsoft.graph.virtualEvent",
-      "id": "solutions/virtualEvents/webinars/{eventId}/"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/"
     }
   }]
 }
@@ -180,12 +181,12 @@ The below table indicates the supported notification and change types for the vi
     "clientState": "secret client state",
     "changeType": "updated",
     "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
-    "resource": "solutions/virtualEvents/webinars/{eventId}/",
+    "resource": "solutions/virtualEvents/webinars/{webinarId}/",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/",
       "@odata.type": "#microsoft.graph.virtualEvent",
-      "id": "solutions/virtualEvents/webinars/{eventId}/"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/"
     }
   }]
 }
@@ -200,12 +201,12 @@ The below table indicates the supported notification and change types for the vi
     "clientState": "secret client state",
     "changeType": "created",
     "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
-    "resource": "solutions/virtualEvents/webinars/{eventId}/sessions",
+    "resource": "solutions/virtualEvents/webinars/{webinarId}/sessions",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/sessions/{sessionId}",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}",
       "@odata.type": "#microsoft.graph.virtualEventSession",
-      "id": "solutions/virtualEvents/webinars/{eventId}/sessions/{sessionId}"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}"
     }
   }]
 }
@@ -219,12 +220,12 @@ The below table indicates the supported notification and change types for the vi
     "clientState": "secret client state",
     "changeType": "updated",
     "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
-    "resource": "solutions/virtualEvents/webinars/{eventId}/sessions",
+    "resource": "solutions/virtualEvents/webinars/{webinarId}/sessions",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/sessions/sessionId}{sessionId}",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/sessions/sessionId}{sessionId}",
       "@odata.type": "#microsoft.graph.agents.subscriptionManagement.entities.graphNotificationPayload+GraphResourceData",
-      "id": "solutions/virtualEvents/webinars/{eventId}/sessions/{sessionId}"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}"
     }
   }]
 }
@@ -242,12 +243,12 @@ For more information about the types of notifications received for meeting call 
     "clientState": "secret client state",
     "changeType": "created",
     "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
-    "resource": "solutions/virtualEvents/webinars/{eventId}/registration/registrants",
+    "resource": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/registration/registrants/{registrantId}",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}",
       "@odata.type": "#microsoft.graph.virtualEventRegistrant",
-      "id": "solutions/virtualEvents/webinars/{eventId}/registration/registrants/{registrantId}"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}"
     }
   }]
 }
@@ -261,12 +262,12 @@ For more information about the types of notifications received for meeting call 
     "clientState": "secret client state",
     "changeType": "updated",
     "tenantId": "f5b076c8-b508-4ba3-a1a7-19d1c0bcef03",
-    "resource": "solutions/virtualEvents/webinars/{eventId}/registration/registrants",
+    "resource": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants",
     "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "solutions/virtualEvents/webinars/{eventId}/registration/registrants/{registrantId}",
+      "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}",
       "@odata.type": "#microsoft.graph.virtualEventRegistrant",
-      "id": "solutions/virtualEvents/webinars/{eventId}/registration/registrants/{registrantId}"
+      "id": "solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}"
     }
   }]
 }
