@@ -74,6 +74,16 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinition
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
 ```
 
+To list role assignments for the Exchange Online provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/exchange/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/exchange/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+```
+
 ## Query parameters
 
 This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId`, `principalId` or `appScopeId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. The `$expand` query parameter is also supported on **principal**. For general information, see [OData query parameters](/graph/query-parameters).
