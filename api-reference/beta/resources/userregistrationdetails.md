@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |isSsprEnabled|Boolean|Whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Supports `$filter` (`eq`).|
 |isSsprRegistered|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Supports `$filter` (`eq`).|
 |methodsRegistered|String collection|Collection of authentication methods registered, such as `mobilePhone`, `email`, `fido2`. Supports `$filter` (`any` with `eq`).|
+|lastUpdatedDateTime|DateTimeOffset|Date and time (UTC) the record was last updated. Example: midnight on Jan 1, 2014 is reported as 2014-01-01T00:00:00Z.|
 |userDisplayName|String| The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
 |userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. The possible values are: `member`, `guest`, `unknownFutureValue`.|
@@ -66,6 +67,7 @@ The following is a JSON representation of the resource.
   "isSsprEnabled": "Boolean",
   "isSsprCapable": "Boolean",
   "isPasswordlessCapable": "Boolean",
+  "lastUpdatedDateTime": "String (timestamp)"
   "methodsRegistered": [
     "String"
   ]
