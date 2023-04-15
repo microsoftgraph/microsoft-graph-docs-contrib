@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+GET /me/mailFolders/inbox/messageRules
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ The following is an example of a request.
   "name": "get_messagerules"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
+GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules
 ```
 
 # [C#](#tab/csharp)

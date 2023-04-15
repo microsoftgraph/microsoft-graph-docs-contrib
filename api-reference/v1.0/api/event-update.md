@@ -54,8 +54,8 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+PATCH /me/calendarGroups/{id}/calendars/{id}/events/{id}
+PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}
 ```
 
 ## Request headers

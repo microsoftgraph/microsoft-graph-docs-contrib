@@ -26,12 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/categoryAxis
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/axes/categoryAxis
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "get_chartaxis"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 ```
 
 # [C#](#tab/csharp)
