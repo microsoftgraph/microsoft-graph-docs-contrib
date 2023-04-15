@@ -45,7 +45,7 @@ This method supports the following OData query parameters to help customize the 
 |$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users. Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. For information and examples, see the *Perform a fuzzy search* section at [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview#perform-a-fuzzy-search).|
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
 |$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
-|$top|int|Number of results to be returned.|
+|$top|int|The maximum number of results to be returned on a results page. For more information, see [top parameter](/graph/query-parameters?tabs=http#top-parameter).|
 
 ## Request headers
 

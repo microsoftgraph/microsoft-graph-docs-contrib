@@ -101,6 +101,8 @@ For OneDrive for Business and SharePoint users, use the `sendNotification` param
 All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_createlink"
@@ -176,6 +178,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-link-scoped",
@@ -239,6 +242,7 @@ When an embed link is created, the `webHtml` property contains the HTML code for
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-embedded-link",

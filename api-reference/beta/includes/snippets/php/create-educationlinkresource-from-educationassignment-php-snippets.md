@@ -18,8 +18,8 @@ $resource->setDisplayName('Where the Wonders of Learning Never Cease | Wonderopo
 $resource->set@odatatype('#microsoft.graph.educationLinkResource');
 
 $additionalData = [
-'link' => 'https://wonderopolis.org/', 
-'thumbnailPreviewUrl' => 		null,
+		'link' => 'https://wonderopolis.org/', 
+		'thumbnailPreviewUrl' => 		null,
 ];
 $resource->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $resource->setAdditionalData($additionalData);
 $requestBody->setResource($resource);
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

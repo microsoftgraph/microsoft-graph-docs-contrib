@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Teams search');
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->searchesById('ediscoverySearch-id')->patch($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->searchesById('ediscoverySearch-id')->patch($requestBody);
 
 
 ```

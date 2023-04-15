@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
+DELETE /organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
 ```
 
 ## Request headers

@@ -10,19 +10,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EventsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new EventsRequestBuilderGetQueryParameters();
-$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location"];
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = EventsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->events()->get($requestConfiguration);
+
+$result = $graphServiceClient->me()->events()->get($requestConfiguration);
 
 
 ```

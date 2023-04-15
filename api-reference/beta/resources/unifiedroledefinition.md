@@ -20,6 +20,7 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Azure AD) 
 - entitlement management (Azure AD)
+- Exchange Online
 
 
 ## Methods

@@ -66,18 +66,34 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
+<!-- { "blockType": "request", "name": "list-all-bundles_e1", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-all-bundles-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-bundles-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-bundles-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-all-bundles-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-all-bundles-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-all-bundles-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-all-bundles-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-all-bundles-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -126,18 +142,34 @@ To filter the list of bundles returned from a request to the bundles collection,
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
+<!-- {"blockType": "request", "name": "list-album-bundles-e2", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-album-bundles-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-album-bundles-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-album-bundles-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-album-bundles-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-album-bundles-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-album-bundles-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-album-bundles-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

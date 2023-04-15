@@ -1,7 +1,7 @@
 ---
 title: "call: mute"
 description: "Allows the application to mute itself."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

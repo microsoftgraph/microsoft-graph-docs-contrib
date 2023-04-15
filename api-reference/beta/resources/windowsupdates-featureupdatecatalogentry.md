@@ -1,6 +1,6 @@
 ---
 title: "featureUpdateCatalogEntry resource type"
-description: "Metadata for a Windows 10 feature update that you can approve for deployment."
+description: "Represents metadata for a Windows 10 feature update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for a Windows 10 feature update that you can approve for deployment.
+Represents metadata for a Windows 10 feature update that you can approve for deployment.
 
-Windows 10 feature updates are released bi-annually and contain new features for Windows 10. Installing these updates increases the Windows 10 build number and typically results in a new servicing lifecycle and end of service date. Microsoft recommends organizations regularly deploy new feature updates as part of adopting Windows as a service.
+Windows 10 feature updates are released bi-annually and contain new features for Windows 10. Installing these updates increases the Windows 10 build number and typically results in a new servicing lifecycle and end of service date. We recommend organizations regularly deploy new feature updates as part of adopting Windows as a service.
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
@@ -44,10 +44,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "releaseDateTime": "String (timestamp)",
   "deployableUntilDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "releaseDateTime": "String (timestamp)",
   "version": "String"
 }
 ```

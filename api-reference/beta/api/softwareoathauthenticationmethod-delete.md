@@ -39,11 +39,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+Remove a software OATH token authentication method from your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/authentication/softwareOathMethods/{id}
+```
+
+Remove a software OATH token authentication method from another user's account.
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 ```
 
