@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/datalabels
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_chartdatalabels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 
 # [C#](#tab/csharp)

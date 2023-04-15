@@ -51,7 +51,7 @@ includes the encoded, desired parameters.
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 ### OData query parameters
-- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarview` request. You cannot use `$select` to get only a subset of those properties.
+- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarView` request. You cannot use `$select` to get only a subset of those properties.
 
 - There are other OData query parameters that the **delta** function for **calendarView** doesn't support: `$expand`, `$filter`,`$orderby`, and `$search`. 
 
