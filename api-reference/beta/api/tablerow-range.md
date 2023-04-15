@@ -26,10 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/Range
-GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}/Range
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/Range
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 
 ```
 ## Request headers
@@ -55,7 +55,7 @@ Here is an example of the request.
   "name": "tablerow_range"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/Range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
 ```
 
 # [C#](#tab/csharp)

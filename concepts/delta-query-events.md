@@ -13,7 +13,7 @@ By using delta query, you can get new, updated, or deleted events in a specified
 > [!NOTE]
 > The capability for the former&mdash;getting incremental changes to events in a calendar not bound to a fixed start and end date range&mdash;is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta) function.
 
-A calendar view is a collection of events in a date/time range (../me/calendarview) from the default calendar or some other specified calendar of a user or from a group calendar. The returned events may include single instances or occurrences and exceptions of a recurring series. The delta data enables you to maintain and synchronize a local store of a user's events without having to fetch the entire set of the user's events from the server every time.
+A calendar view is a collection of events in a date/time range (../me/calendarView) from the default calendar or some other specified calendar of a user or from a group calendar. The returned events may include single instances or occurrences and exceptions of a recurring series. The delta data enables you to maintain and synchronize a local store of a user's events without having to fetch the entire set of the user's events from the server every time.
 
 Delta query supports both full synchronization that retrieves all the events in the specified calendar view, and incremental synchronization that retrieves those events that have changed in the calendar view since the last synchronization. Typically, you would do an initial full synchronization, and subsequently get incremental changes to that calendar view periodically.
 

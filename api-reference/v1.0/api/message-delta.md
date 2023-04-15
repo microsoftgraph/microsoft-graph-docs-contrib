@@ -38,14 +38,14 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 To specifically get only created, updated or deleted messages in the specified mailFolder:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailfolders/{id}/messages/delta?changeType=created
+GET /me/mailFolders/{id}/messages/delta?changeType=created
 GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
 
-GET /me/mailfolders/{id}/messages/delta?changeType=updated
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
+GET /me/mailFolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=updated
 
-GET /me/mailfolders/{id}/messages/delta?changeType=deleted
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
+GET /me/mailFolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=deleted
 ```
 
 ## Query parameters
@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",
