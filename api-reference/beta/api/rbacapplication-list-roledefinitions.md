@@ -578,7 +578,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: List privileged role assignments
+### Example 5: List privileged role definitions
 
 #### Request
 
@@ -586,11 +586,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_roleAssignments_isprivileged"
+  "name": "get_roledefinitions_isprivileged"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$expand=roleDefinition&$filter=roleDefinition/isPrivileged eq true
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$filter=isPrivileged eq true
 ```
 
 #### Response
@@ -601,7 +601,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
   "isCollection": true
 } -->
 
@@ -609,94 +609,62 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(roleDefinition())",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions",
     "value": [
         {
-            "id": "{id}",
-            "principalId": "{principalId}",
-            "principalOrganizationId": "{principalOrganizationId}",
-            "resourceScope": "/",
-            "directoryScopeId": "/",
-            "roleDefinitionId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
-            "roleDefinition": {
-                "id": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
-                "description": "Can manage Conditional Access capabilities.",
-                "displayName": "Conditional Access Administrator",
-                "isBuiltIn": true,
-                "isEnabled": true,
-                "isPrivileged": true,
-                "resourceScopes": [
-                    "/"
-                ],
-                "templateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
-                "version": "1",
-                "rolePermissions": [
-                    {
-                        "allowedResourceActions": [
-                            "microsoft.directory/namedLocations/create",
-                            "microsoft.directory/namedLocations/delete",
-                            "microsoft.directory/namedLocations/standard/read",
-                            "microsoft.directory/namedLocations/basic/update",
-                            "microsoft.directory/conditionalAccessPolicies/create",
-                            "microsoft.directory/conditionalAccessPolicies/delete",
-                            "microsoft.directory/conditionalAccessPolicies/standard/read",
-                            "microsoft.directory/conditionalAccessPolicies/owners/read",
-                            "microsoft.directory/conditionalAccessPolicies/policyAppliedTo/read",
-                            "microsoft.directory/conditionalAccessPolicies/basic/update",
-                            "microsoft.directory/conditionalAccessPolicies/owners/update",
-                            "microsoft.directory/conditionalAccessPolicies/tenantDefault/update"
-                        ],
-                        "condition": null
-                    }
-                ]
-            }
+            "id": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "description": "Can manage secrets for federation and encryption in the Identity Experience Framework (IEF).",
+            "displayName": "B2C IEF Keyset Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/b2cTrustFrameworkKeySet/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('aaf43236-0c0d-4d5f-883a-6955382ac081')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
         },
         {
-            "id": "{id}",
-            "principalId": "{principalId}",
-            "principalOrganizationId": "{principalOrganizationId}",
-            "resourceScope": "/",
-            "directoryScopeId": "/",
-            "roleDefinitionId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-            "roleDefinition": {
-                "id": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-                "description": "Can access to view, set and reset authentication method information for any non-admin user.",
-                "displayName": "Authentication Administrator",
-                "isBuiltIn": true,
-                "isEnabled": true,
-                "isPrivileged": true,
-                "resourceScopes": [
-                    "/"
-                ],
-                "templateId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-                "version": "1",
-                "rolePermissions": [
-                    {
-                        "allowedResourceActions": [
-                            "microsoft.directory/users/authenticationMethods/create",
-                            "microsoft.directory/users/authenticationMethods/delete",
-                            "microsoft.directory/users/authenticationMethods/standard/restrictedRead",
-                            "microsoft.directory/users/authenticationMethods/basic/update",
-                            "microsoft.directory/deletedItems.users/restore",
-                            "microsoft.directory/users/delete",
-                            "microsoft.directory/users/disable",
-                            "microsoft.directory/users/enable",
-                            "microsoft.directory/users/invalidateAllRefreshTokens",
-                            "microsoft.directory/users/restore",
-                            "microsoft.directory/users/basic/update",
-                            "microsoft.directory/users/manager/update",
-                            "microsoft.directory/users/password/update",
-                            "microsoft.directory/users/userPrincipalName/update",
-                            "microsoft.azure.serviceHealth/allEntities/allTasks",
-                            "microsoft.azure.supportTickets/allEntities/allTasks",
-                            "microsoft.office365.serviceHealth/allEntities/allTasks",
-                            "microsoft.office365.supportTickets/allEntities/allTasks",
-                            "microsoft.office365.webPortal/allEntities/standard/read"
-                        ],
-                        "condition": null
-                    }
-                ]
-            }
+            "id": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "description": "Can configure identity providers for use in direct federation.",
+            "displayName": "External Identity Provider Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/domains/federation/update",
+                        "microsoft.directory/identityProviders/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('be2f45a1-457d-42af-a067-6ec1fa63bc45')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
         }
     ]
 }
