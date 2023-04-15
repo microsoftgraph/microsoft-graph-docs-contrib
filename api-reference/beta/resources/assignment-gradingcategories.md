@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Add Grading Categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
 
-**Note:** Configure grading categories using [Assignment settings](../api/resources/educationassignmentsettings?view=graph-rest-beta).
+**Note:** Configure grading categories using [Assignment settings](../resources/educationassignmentsettings.md).
 
 ## Methods
 
