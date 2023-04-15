@@ -58,13 +58,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
-    "id": "string (identifier)",
-    "description": "string",
-    "displayName": "string",
-    "isEnabled": true,
-    "restrictions": {
-        "@odata.type": "microsoft.graph.appManagementConfiguration"
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
+  "id": "string (identifier)",
+  "description": "string",
+  "displayName": "string",
+  "isEnabled": true,
+  "restrictions": {
+    "@odata.type": "microsoft.graph.appManagementConfiguration"
+  }
 }
 ```
+
+
