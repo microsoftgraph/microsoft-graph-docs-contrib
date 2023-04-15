@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a join web URL for [Microsoft Virtual Appointments](https://learn.microsoft.com/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile broswer join and virtual lobby rooms. 
+Get a join web URL for [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile broswer join and virtual lobby rooms. 
 
 > [!NOTE]
 > For the preview period, customers with access to virtual appointments with their Microsoft 365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details about licensing requirements before the preview period ends.
