@@ -73,7 +73,7 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+POST https://graph.microsoft.com/beta/me/calendarGroups/AAMkADYAAAR9NR5AAA=/calendars
 Content-type: application/json
 
 {

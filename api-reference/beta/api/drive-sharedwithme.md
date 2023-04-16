@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 > * You can't access shared items returned from this API if the request doesn't contain one of the `*.All` permissions.
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
