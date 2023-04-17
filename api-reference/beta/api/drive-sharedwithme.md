@@ -21,11 +21,11 @@ The **driveItems** returned from the **sharedWithMe** method always include the 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                              |
+|:---------------------------------------|:-------------------------------------------------------------------------|
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 > **Note:**
 >
@@ -43,9 +43,9 @@ GET /me/drive/sharedWithMe
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -98,7 +98,8 @@ The following is an example of the response that returns items shared with the s
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.driveItem)",
-  "truncated": true}
+  "truncated": true
+}
 -->
 
 ```http
@@ -152,8 +153,7 @@ Content-Type: application/json
 
 ### Example 2: Get metadata about a shared driveItem object
 
-The following example shows how to access the shared **driveItem** that requires a request using the **driveId** of the **parentReference** within the **remoteItem** object.
-The following example gets metadata about the shared **driveItem** with name `January Service Review.pptx`.
+The following example shows how to access metadata about the shared **driveItem** with the name `January Service Review.pptx` that requires a request using the **driveId** of the **parentReference** within the **remoteItem** object.
 
 #### Request
 
@@ -177,7 +177,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.driveItem",
-  "truncated": true}
+  "truncated": true
+}
 -->
 
 ```http
@@ -195,7 +196,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 <!--
 {

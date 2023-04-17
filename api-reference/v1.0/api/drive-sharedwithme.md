@@ -96,7 +96,8 @@ The following is an example of the response that returns items shared with the s
 <!-- {
   "blockType": "response",
   "@odata.type": "Collection(microsoft.graph.driveItem)",
-  "truncated": true}
+  "truncated": true
+}
 -->
 
 ```http
@@ -150,8 +151,7 @@ Content-Type: application/json
 
 ### Example 2: Get metadata about a shared driveItem object
 
-The following example shows how to access the shared **driveItem** that requires a request using the **driveId** of the **parentReference** within the **remoteItem** object.
-The following example gets metadata about the shared **driveItem** with name `January Service Review.pptx`.
+The following example shows how to access metadata about the shared **driveItem** with the name `January Service Review.pptx` that requires a request using the **driveId** of the **parentReference** within the **remoteItem** object.
 
 #### Request
 
@@ -175,7 +175,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.driveItem",
-  "truncated": true}
+  "truncated": true
+}
 -->
 
 ```http
@@ -193,7 +194,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 <!--
 {
