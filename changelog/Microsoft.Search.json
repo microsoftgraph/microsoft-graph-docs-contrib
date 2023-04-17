@@ -1599,6 +1599,56 @@
       "CreatedDateTime": "2023-04-12T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "externalActivityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalActivityType** enumeration type.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivity](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalactivity?view=graph-rest-1.0) resource.",
+          "Target": "externalActivity"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivityResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityResult?view=graph-rest-1.0) resource.",
+          "Target": "externalActivityResult"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "activities",
+          "ChangeType": "Addition",
+          "Description": "Added the [activities](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalItem?view=graph-rest-1.0) navigation property to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Method",
+          "ChangedApiName": "addActivities",
+          "ChangeType": "Addition",
+          "Description": "Added the [addActivities](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0) method to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        }
+      ],
+      "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

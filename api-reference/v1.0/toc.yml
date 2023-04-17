@@ -6955,6 +6955,14 @@ items:
             href: api/externalconnectors-schema-create.md
           - name: Get
             href: api/externalconnectors-schema-get.md
+        - name: External activity
+          items:
+          - name: External activity
+            href: resources/externalconnectors-externalactivity.md
+        - name: External activity result
+          items:
+          - name: External activity result
+            href: resources/externalconnectors-externalactivityresult.md
         - name: External item
           items:
           - name: External item
@@ -6967,6 +6975,8 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
+          - name: Add activities
+            href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
           - name: External group

@@ -30,7 +30,6 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
-
 ### connectionOperationStatus values
 
 | Member
@@ -49,6 +48,16 @@ Namespace: microsoft.graph.externalConnectors
 | ready
 | obsolete
 | limitExceeded
+| unknownFutureValue
+
+### externalActivityType values
+
+|Member
+|:--------------
+| viewed
+| modified
+| created
+| commented
 | unknownFutureValue
 
 ### externalItemContentType values
