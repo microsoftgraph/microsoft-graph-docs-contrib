@@ -3,24 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "df8e7c9e-7666-422f-b2db-08b96b47d5d4",
-          "ApiChange": "Property",
-          "ChangedApiName": "completionRequirements",
-          "ChangeType": "Addition",
-          "Description": "Added the `completionRequirements` property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
-          "Target": "plannerTaskPropertyRule"
-        }
-      ],
-      "Id": "df8e7c9e-7666-422f-b2db-08b96b47d5d4",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-04-03T16:35:53.1772048Z",
-      "WorkloadArea": "Microsoft.BusinessExtensibility",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "132b2567-f3dd-4036-958e-ae2d53e23ad2",
           "ApiChange": "Enum type",
           "ChangedApiName": "plannerRelationshipUserRoles",
