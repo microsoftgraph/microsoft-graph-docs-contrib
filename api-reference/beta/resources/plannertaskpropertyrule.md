@@ -24,7 +24,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 |appliedCategories|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for applied categories. This value does not currently support overrides. Accepted values for the default rule and individual overrides are `allow`, `block`.|
 |assignments|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for assignments. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `addSelf`, `addOther`, `remove`, `removeSelf`, `removeOther`, `block`.|
 |checkLists|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for checklist. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `update`, `check`, `reorder`, `block`.|
-|completionRequirements|String collection|  |
+|completionRequirements|String collection|Rules and restrictions for changing the completion percentage of the task. Accepted values are `allow`, `add`, `remove`, `edit`, and `block`.  |
 |delete|String collection|Rules and restrictions for deleting the task. Accepted values are `allow` and `block`.|
 |dueDate|String collection|Rules and restrictions for changing the due date of the task. Accepted values are `allow` and `block`.|
 |move|String collection|Rules and restrictions for moving the task between buckets or plans. Accepted values are `allow`, `moveBetweenPlans`, `moveBetweenBuckets`, and `block`.|

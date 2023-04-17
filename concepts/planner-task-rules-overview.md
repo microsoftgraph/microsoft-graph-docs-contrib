@@ -99,6 +99,18 @@ This property supports the following override conditions. If an override doesn't
 * `userCreated`: Rules apply if the checklist item was created by a user.
 * `applicationCreated`: Rules apply if the checklist item was created using application permissions.
 
+### completionRequirements
+
+Specifies whether the task **completionRequirements** property can be changed. Accepted values are:
+
+* `block`: The task **completionRequirements** property can't be changed.
+* `add`: New completion requirements can be added.
+* `edit`: Existing completion requirements can be edited.
+* `remove`: Existing completion requirements can be removed.
+* `allow`: The task **completionRequirements** property can be changed.
+
+The collection can specify either a single `allow` or `block` value, or any combination of other values.
+
 ### dueDate
 
 Specifies whether the task due date can be changed. Accepted values are:
