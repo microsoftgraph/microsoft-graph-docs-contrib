@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a join web URL for [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile broswer join and virtual lobby rooms. 
-
-> [!NOTE]
-> For the preview period, customers with access to virtual appointments with their Microsoft 365 licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API. We'll provide additional details about licensing requirements before the preview period ends.
+Get a join web URL for [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile broswer join and virtual lobby rooms.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,10 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite, OnlineMeetings.Read, OnlineMeetings.ReadWrite                                  |
 | Delegated (personal Microsoft account) | Not supported.                                                                         |
 | Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All
-
-> [!NOTE]
-> When this API is made generally available later this year, Virtual appointment will transition to requiring virtual appointment permissions and no longer accept online meeting permissions. This will give developers more granular control over virtual appointment permissions.
-
 
 ## HTTP request
 
@@ -73,7 +66,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
