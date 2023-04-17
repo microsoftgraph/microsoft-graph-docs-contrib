@@ -59,7 +59,7 @@ The following example shows how to search for expected connector items.
 #### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
 {
@@ -125,7 +125,7 @@ The following example shows how to use the queryable property **createdBy** to r
 #### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
 {
