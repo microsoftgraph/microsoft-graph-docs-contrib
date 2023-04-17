@@ -124,6 +124,7 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a page using select and expand
+
 #### Request
 
 With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
@@ -235,10 +236,99 @@ Content-type: application/json
 
 ### Example 3: Get a page with page content
 
+#### Request
+
 To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
 GET /sites/{site-id}/pages/{page-id}?expand=canvasLayout
+```
+
+#### Response
+```json
+{
+  "description": "Reiciendis placeat dolores.",
+  "eTag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
+  "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
+  "lastModifiedDateTime": "2023-04-16T10:01:41Z",
+  "name": "autotest Electronic Convertible.aspx",
+  "webUrl": "SitePages/autotest Electronic Convertible.aspx",
+  "title": "autotest Electronic Convertible",
+  "pageLayout": "article",
+  "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/sitepagethumbnail.png",
+  "promotionKind": "page",
+  "showComments": false,
+  "showRecommendedPages": true,
+  "createdBy": {
+    "user": {
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+        "displayName": "Rahul Mittal",
+        "email": "rahmit@contoso.com"
+    }
+  },
+  "parentReference": {
+    "listId": "468fc883-e278-4773-ba09-91351a1e42ed",
+    "siteId": "45bb2a3b-0a4e-46f4-8c68-749c3fea75d3"
+  },
+  "contentType": {
+    "id": "0x0101009D1CB255DA76424F860D91F20E6C4118009E6554A5E299E84FB2E07731DD6C6D4A",
+    "name": "Site Page"
+  },
+  "publishingState": {
+    "level": "draft",
+    "versionId": "0.4"
+  },
+  "reactions": {},
+  "canvasLayout": {
+    "horizontalSections": [
+      {
+        "layout": "threeColumns",
+        "id": "1",
+        "emphasis": "neutral",
+        "columns": [
+          {
+            "id": "1",
+            "width": 4,
+            "webparts": [
+              {
+                "@odata.type": "#oneDrive.textWebPart",
+                "id": "f6d0ef70-c977-45e4-ae4b-4676a30d5aab",
+                "innerHtml": "<h1>sample content</h1>"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "width": 4,
+            "webparts": [
+              {
+                "@odata.type": "#oneDrive.textWebPart",
+                "id": "99f59f91-c853-433e-9e75-ad7a32e46106",
+                "innerHtml": "<h1>sample content</h1>"
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "width": 4,
+            "webparts": [
+              {
+                "@odata.type": "#oneDrive.textWebPart",
+                "id": "48998492-9633-48b8-a7e9-d293533b4fa6",
+                "innerHtml": "<h1>sample content</h1>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 <!--
