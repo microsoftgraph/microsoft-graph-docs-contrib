@@ -4,7 +4,7 @@ description: "Represents users, groups, and roles included in and excluded from 
 ms.localizationpriority: medium
 author: "davidspooner"
 ms.prod: "identity-and-sign-in"
-doc_type: resourcePageType
+doc_type: "resourcePageType"
 ---
 
 # conditionalAccessUsers resource type
