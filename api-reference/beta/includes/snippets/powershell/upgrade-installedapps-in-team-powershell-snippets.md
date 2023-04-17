@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	ConsentedPermissionSet = @{
-		ResourceSpecificPermissions = @(
+	consentedPermissionSet = @{
+		resourceSpecificPermissions = @(
 			@{
-				PermissionValue = "Channel.Create.Group"
-				PermissionType = "application"
+				permissionValue = "Channel.Create.Group"
+				permissionType = "application"
 			}
 			@{
-				PermissionValue = "ChannelMeeting.ReadBasic.Group"
-				PermissionType = "delegated"
+				permissionValue = "ChannelMeeting.ReadBasic.Group"
+				permissionType = "delegated"
 			}
 		)
 	}
