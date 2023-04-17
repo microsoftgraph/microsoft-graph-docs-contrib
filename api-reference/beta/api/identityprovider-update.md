@@ -86,6 +86,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider",
@@ -143,6 +144,7 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider_Azure_AD_B2C",

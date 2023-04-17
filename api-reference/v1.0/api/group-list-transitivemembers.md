@@ -182,7 +182,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/transitivemembers/microsoft.graph.group?$count=true
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/microsoft.graph.group?$count=true
 ConsistencyLevel: eventual
 ```
 
