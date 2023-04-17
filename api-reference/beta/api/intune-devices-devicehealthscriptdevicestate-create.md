@@ -1,9 +1,9 @@
 ---
 title: "Create deviceHealthScriptDeviceState"
 description: "Create a new deviceHealthScriptDeviceState object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device health script device state entity. This property is read-only.|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
@@ -118,3 +118,7 @@ Content-Length: 880
   ]
 }
 ```
+
+
+
+

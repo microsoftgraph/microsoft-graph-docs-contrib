@@ -1,9 +1,9 @@
 ---
 title: "assignmentFilterTypeAndEvaluationResult resource type"
 description: "Represents the filter type and evalaution result of the filter."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,3 +40,7 @@ Here is a JSON representation of the resource.
   "evaluationResult": "String"
 }
 ```
+
+
+
+

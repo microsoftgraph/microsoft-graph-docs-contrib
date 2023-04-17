@@ -1,9 +1,9 @@
 ---
 title: "keyUsages enum type"
 description: "Key Usage Options."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Key Usage Options.
 |:---|:---|:---|
 |keyEncipherment|1|Key Encipherment Usage.|
 |digitalSignature|2|Digital Signature Usage.|
+
+
+
+

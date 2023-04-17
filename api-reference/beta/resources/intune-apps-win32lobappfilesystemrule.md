@@ -1,9 +1,9 @@
 ---
 title: "win32LobAppFileSystemRule resource type"
 description: "A complex type to store file or folder rule data for a Win32 LOB app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -53,3 +53,7 @@ Here is a JSON representation of the resource.
   "comparisonValue": "String"
 }
 ```
+
+
+
+

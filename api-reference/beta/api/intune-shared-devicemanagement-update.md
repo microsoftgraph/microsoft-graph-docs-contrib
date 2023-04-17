@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -186,3 +186,14 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
+
+
+
+
+
+
+
+

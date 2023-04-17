@@ -1,9 +1,9 @@
 ---
 title: "microsoftTunnelServerLogCollectionResponse resource type"
 description: "Entity that stores the server log collection status."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -64,3 +64,7 @@ Here is a JSON representation of the resource.
   "expiryDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

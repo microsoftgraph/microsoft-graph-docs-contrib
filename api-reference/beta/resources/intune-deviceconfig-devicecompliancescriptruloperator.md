@@ -1,9 +1,9 @@
 ---
 title: "deviceComplianceScriptRulOperator enum type"
 description: "Operator for rules."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -45,3 +45,7 @@ Operator for rules.
 |orderedSetEquals|22|OrderedSetEquals operator.|
 |subsetOf|23|SubsetOf operator.|
 |excludesAll|24|ExcludesAll operator.|
+
+
+
+

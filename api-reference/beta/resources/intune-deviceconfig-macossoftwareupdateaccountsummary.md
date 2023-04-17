@@ -1,9 +1,9 @@
 ---
 title: "macOSSoftwareUpdateAccountSummary resource type"
 description: "MacOS software update account summary report for a device and user"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -70,3 +70,7 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "ratingNewZealandTelevisionType enum type"
 description: "TV content rating labels in New Zealand"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ TV content rating labels in New Zealand
 |general|2|The G classification excludes materials likely to harm children under 14|
 |parentalGuidance|3|The PGR classification encourages parents and guardians to supervise younger viewers|
 |adults|4|The AO classification is not suitable for children|
+
+
+
+

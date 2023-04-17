@@ -1,9 +1,9 @@
 ---
 title: "androidWorkProfileAccountUse enum type"
 description: "An enum representing possible values for account use in work profile."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ An enum representing possible values for account use in work profile.
 |blockAll|1|Block any account from being added in Android Work Profile. |
 |allowAll|2|Allow addition of all accounts (including Google accounts) in Android Work Profile.|
 |unknownFutureValue|3|Unknown future value for evolvable enum patterns.|
+
+
+
+

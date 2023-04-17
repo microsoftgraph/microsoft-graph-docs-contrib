@@ -1,9 +1,9 @@
 ---
 title: "resultantAppState enum type"
 description: "A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -27,3 +27,7 @@ A list of possible states for application status on an individual device. When d
 |pendingInstall|5|The installation of the application is in progress.|
 |unknown|99|The status of the application is unknown.|
 |notApplicable|-1|The application is not applicable.|
+
+
+
+

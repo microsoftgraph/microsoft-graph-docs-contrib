@@ -1,9 +1,9 @@
 ---
 title: "intuneBrandingProfileAssignment resource type"
 description: "This entity contains the properties used to assign a branding profile to a group."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -55,3 +55,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+

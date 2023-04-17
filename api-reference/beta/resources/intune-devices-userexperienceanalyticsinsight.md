@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsInsight resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -49,3 +49,7 @@ Here is a JSON representation of the resource.
   "severity": "String"
 }
 ```
+
+
+
+

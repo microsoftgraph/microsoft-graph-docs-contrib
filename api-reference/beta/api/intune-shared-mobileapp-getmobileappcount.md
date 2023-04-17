@@ -1,9 +1,9 @@
 ---
 title: "getMobileAppCount function"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -75,3 +75,11 @@ Content-Length: 18
   "value": 1
 }
 ```
+
+
+
+
+
+
+
+

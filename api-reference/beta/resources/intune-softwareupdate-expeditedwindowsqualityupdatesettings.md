@@ -1,9 +1,9 @@
 ---
 title: "expeditedWindowsQualityUpdateSettings resource type"
 description: "A complex type to store the expedited quality update settings such as release date and days until forced reboot."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,3 +40,7 @@ Here is a JSON representation of the resource.
   "daysUntilForcedReboot": 1024
 }
 ```
+
+
+
+

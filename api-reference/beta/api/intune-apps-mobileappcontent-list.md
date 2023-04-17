@@ -1,9 +1,9 @@
 ---
 title: "List mobileAppContents"
 description: "List properties and relationships of the mobileAppContent objects."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [mobileAppContent](../resources/intune-apps-mobileappcontent.md) objects.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -73,3 +73,7 @@ Content-Length: 148
   ]
 }
 ```
+
+
+
+

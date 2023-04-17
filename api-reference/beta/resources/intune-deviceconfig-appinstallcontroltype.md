@@ -1,9 +1,9 @@
 ---
 title: "appInstallControlType enum type"
 description: "App Install control Setting"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ App Install control Setting
 |storeOnly|2|Allow apps from Store only|
 |recommendations|3|Show me app recommendations|
 |preferStore|4|Warn me before installing apps from outside the Store|
+
+
+
+

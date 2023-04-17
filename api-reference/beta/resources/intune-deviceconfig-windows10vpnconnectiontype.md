@@ -1,9 +1,9 @@
 ---
 title: "windows10VpnConnectionType enum type"
 description: "VPN connection types."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -33,3 +33,7 @@ VPN connection types.
 |ciscoAnyConnect|10|Cisco AnyConnect|
 |unknownFutureValue|11|Sentinel member for cases where the client cannot handle the new enum values.|
 |microsoftTunnel|12|Microsoft Tunnel connection type|
+
+
+
+

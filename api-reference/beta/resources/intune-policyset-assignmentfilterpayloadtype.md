@@ -1,9 +1,9 @@
 ---
 title: "assignmentFilterPayloadType enum type"
 description: "Represents the payload type AssignmentFilter is being assigned to."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Represents the payload type AssignmentFilter is being assigned to.
 |:---|:---|:---|
 |notSet|0|NotSet|
 |enrollmentRestrictions|1|EnrollmentRestrictions|
+
+
+
+

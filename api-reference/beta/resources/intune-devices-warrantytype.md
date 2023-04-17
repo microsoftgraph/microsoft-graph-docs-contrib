@@ -1,9 +1,9 @@
 ---
 title: "warrantyType enum type"
 description: "Models and Manufactures meatadata for managed devices in the account"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Models and Manufactures meatadata for managed devices in the account
 |manufacturer|1|Manufacturer warranty|
 |contractual|2|Contractual warranty|
 |unknownFutureValue|255|Unknown future value|
+
+
+
+

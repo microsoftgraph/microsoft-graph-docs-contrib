@@ -1,9 +1,9 @@
 ---
 title: "endpointSecurityConfigurationApplicablePlatform enum type"
 description: "The endpoint security configuration applicable platform."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ The endpoint security configuration applicable platform.
 |macOS|1|MacOS.|
 |windows10AndLater|2|Windows 10 and later.|
 |windows10AndWindowsServer|3|Windows 10 and Windows Server.|
+
+
+
+

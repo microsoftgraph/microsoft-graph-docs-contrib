@@ -1,9 +1,9 @@
 ---
 title: "restrictedAppsViolation resource type"
 description: "Violation of restricted apps configuration profile per device per user"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -71,3 +71,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

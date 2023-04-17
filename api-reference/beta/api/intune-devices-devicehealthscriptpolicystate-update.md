@@ -1,9 +1,9 @@
 ---
 title: "Update deviceHealthScriptPolicyState"
 description: "Update the properties of a deviceHealthScriptPolicyState object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |policyName|String|Display name of the device health script|
 |userName|String|Name of the user whom ran the device health script|
 |osVersion|String|Value of the OS Version in string|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
@@ -136,3 +136,7 @@ Content-Length: 1094
   ]
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "androidEapType enum type"
 description: "Extensible Authentication Protocol (EAP) Configuration Types."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Extensible Authentication Protocol (EAP) Configuration Types.
 |eapTls|13|Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).|
 |eapTtls|21|Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS).|
 |peap|25|Protected Extensible Authentication Protocol (PEAP).|
+
+
+
+

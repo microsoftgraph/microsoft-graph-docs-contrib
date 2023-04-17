@@ -1,9 +1,9 @@
 ---
 title: "suggestedEnrollmentLimit resource type"
 description: "The suggestedEnrollmentLimit resource represents the suggested enrollment limit when given an enrollment type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -38,3 +38,7 @@ Here is a JSON representation of the resource.
   "suggestedDailyLimit": 1024
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationGroupSettingValueTemplate resource type"
 description: "Group Setting Value Template"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -55,3 +55,7 @@ Here is a JSON representation of the resource.
   "settingValueTemplateId": "String"
 }
 ```
+
+
+
+

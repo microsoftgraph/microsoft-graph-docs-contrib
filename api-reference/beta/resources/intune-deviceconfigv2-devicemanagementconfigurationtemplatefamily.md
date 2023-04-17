@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationTemplateFamily enum type"
 description: "Describes the TemplateFamily for the Template entity"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -34,3 +34,7 @@ Describes the TemplateFamily for the Template entity
 |baseline|20|Template Family for Baseline|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |deviceConfigurationScripts|22|Template Family for device configuration scripts|
+
+
+
+

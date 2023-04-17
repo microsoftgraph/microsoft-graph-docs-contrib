@@ -1,9 +1,9 @@
 ---
 title: "Create windowsAutopilotDeviceIdentity"
 description: "Create a new windowsAutopilotDeviceIdentity object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -157,3 +157,7 @@ Content-Length: 1420
   "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "termsAndConditionsGroupAssignment resource type"
 description: "A termsAndConditionsGroupAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -52,3 +52,7 @@ Here is a JSON representation of the resource.
   "targetGroupId": "String"
 }
 ```
+
+
+
+

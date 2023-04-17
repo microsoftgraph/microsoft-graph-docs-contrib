@@ -1,9 +1,9 @@
 ---
 title: "administratorConfiguredDeviceComplianceState enum type"
 description: "Administrator configured device compliance state Enum"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Administrator configured device compliance state Enum
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|0|Set compliance state based on other compliance polices|
 |nonCompliant|1|Set compliance to nonCompliant|
+
+
+
+

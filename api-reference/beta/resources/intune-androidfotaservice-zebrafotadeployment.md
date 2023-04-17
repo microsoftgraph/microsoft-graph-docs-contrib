@@ -1,9 +1,9 @@
 ---
 title: "zebraFotaDeployment resource type"
 description: "The Zebra FOTA deployment entity that describes settings, deployment device groups required to create a FOTA deployment, and deployment status."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -33,9 +33,10 @@ The Zebra FOTA deployment entity that describes settings, deployment device grou
 |id|String|System generated deployment id provided during creation of the deployment. Returned only if operation was a success.|
 |displayName|String|A human readable name of the deployment.|
 |description|String|A human readable description of the deployment.|
-|deploymentSettings|[zebraFotaDeploymentSettings](../resources/intune-androidfotaservice-zebrafotadeploymentsettings.md)|Represents settings required to create a deployment such as deployment type, artifact info, download and installation|
-|deploymentAssignments|[androidFotaDeploymentAssignment](../resources/intune-androidfotaservice-androidfotadeploymentassignment.md) collection|Collection of Android FOTA Assignment|
-|deploymentStatus|[zebraFotaDeploymentStatus](../resources/intune-androidfotaservice-zebrafotadeploymentstatus.md)|Represents the deployment status from Zebra. The status is a high level status of the deployment as opposed being a detailed status per device.|
+|deploymentSettings|** Unknown Type `microsoft.intune.core.msGraph.zebraFotaDeploymentSettings` **|Represents settings required to create a deployment such as deployment type, artifact info, download and installation|
+|deploymentAssignments|** Unknown Type `microsoft.intune.core.msGraph.androidFotaDeploymentAssignment` ** collection|Collection of Android FOTA Assignment|
+|deploymentStatus|** Unknown Type `microsoft.intune.core.msGraph.zebraFotaDeploymentStatus` **|Represents the deployment status from Zebra. The status is a high level status of the deployment as opposed being a detailed status per device.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
 
 ## Relationships
 None
@@ -54,53 +55,17 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "deploymentSettings": {
-    "@odata.type": "microsoft.graph.zebraFotaDeploymentSettings",
-    "deviceModel": "String",
-    "updateType": "String",
-    "timeZoneOffsetInMinutes": 1024,
-    "firmwareTargetArtifactDescription": "String",
-    "firmwareTargetBoardSupportPackageVersion": "String",
-    "firmwareTargetPatch": "String",
-    "firmwareTargetOsVersion": "String",
-    "scheduleMode": "String",
-    "scheduleDurationInDays": 1024,
-    "downloadRuleNetworkType": "String",
-    "downloadRuleStartDateTime": "String (timestamp)",
-    "installRuleStartDateTime": "String (timestamp)",
-    "installRuleWindowStartTime": "String (time of day)",
-    "installRuleWindowEndTime": "String (time of day)",
-    "batteryRuleMinimumBatteryLevelPercentage": 1024,
-    "batteryRuleRequireCharger": true
-  },
+  "deploymentSettings": "<Unknown None>",
   "deploymentAssignments": [
-    {
-      "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
-      "id": "String",
-      "displayName": "String",
-      "target": {
-        "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
-        "groupId": "String"
-      }
-    }
+    "<Unknown None>"
   ],
-  "deploymentStatus": {
-    "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
-    "state": "String",
-    "errorCode": "String",
-    "totalDevices": 1024,
-    "totalCreated": 1024,
-    "totalScheduled": 1024,
-    "totalDownloading": 1024,
-    "totalAwaitingInstall": 1024,
-    "totalSucceededInstall": 1024,
-    "totalCanceled": 1024,
-    "totalUnknown": 1024,
-    "totalFailedDownload": 1024,
-    "totalFailedInstall": 1024,
-    "completeOrCanceledDateTime": "String (timestamp)",
-    "cancelRequested": true,
-    "lastUpdatedDateTime": "String (timestamp)"
-  }
+  "deploymentStatus": "<Unknown None>",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
+
+
+
+

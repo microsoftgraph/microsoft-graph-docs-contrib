@@ -1,9 +1,9 @@
 ---
 title: "windowsInformationProtectionDeviceRegistration resource type"
 description: "Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -61,3 +61,7 @@ Here is a JSON representation of the resource.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

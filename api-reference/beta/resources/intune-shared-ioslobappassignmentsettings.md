@@ -1,9 +1,9 @@
 ---
 title: "iosLobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS LOB mobile app to a group."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -44,3 +44,7 @@ Here is a JSON representation of the resource.
   "uninstallOnDeviceRemoval": true
 }
 ```
+
+
+
+

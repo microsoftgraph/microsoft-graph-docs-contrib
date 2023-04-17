@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsDeviceStartupHistory resource type"
 description: "The user experience analytics device startup history entity contains device boot performance history details."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -80,3 +80,7 @@ Here is a JSON representation of the resource.
   "restartFaultBucket": "String"
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "macOSSoftwareUpdateScheduleType enum type"
 description: "Update schedule type for macOS software updates."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Update schedule type for macOS software updates.
 |alwaysUpdate|0|Always update.|
 |updateDuringTimeWindows|1|Update during time windows.|
 |updateOutsideOfTimeWindows|2|Update outside of time windows.|
+
+
+
+

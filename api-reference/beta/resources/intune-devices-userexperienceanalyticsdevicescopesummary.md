@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsDeviceScopeSummary resource type"
 description: "The user experience analytics tenant level information for all the device scope configurations"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -48,3 +48,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

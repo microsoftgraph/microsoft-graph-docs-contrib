@@ -1,9 +1,9 @@
 ---
 title: "androidManagedAppSafetyNetEvaluationType enum type"
 description: "An admin enforced Android SafetyNet evaluation type requirement on a managed app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ An admin enforced Android SafetyNet evaluation type requirement on a managed app
 |:---|:---|:---|
 |basic|0|Require basic evaluation|
 |hardwareBacked|1|Require hardware backed evaluation|
+
+
+
+

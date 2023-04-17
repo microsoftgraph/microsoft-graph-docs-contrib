@@ -1,9 +1,9 @@
 ---
 title: "windowsKioskSingleUWPApp resource type"
 description: "The class used to identify the UWP app info for the kiosk configuration"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -50,3 +50,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+

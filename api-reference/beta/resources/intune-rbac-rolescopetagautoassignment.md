@@ -1,9 +1,9 @@
 ---
 title: "roleScopeTagAutoAssignment resource type"
 description: "Contains the properties for auto-assigning a Role Scope Tag to a group to be applied to Devices."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -55,3 +55,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
+
+
+

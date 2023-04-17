@@ -1,9 +1,9 @@
 ---
 title: "androidManagedStoreWebApp resource type"
 description: "Contains properties and inherited properties for web apps configured to be distributed via the managed Android app store."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -126,3 +126,7 @@ Here is a JSON representation of the resource.
   "supportsOemConfig": true
 }
 ```
+
+
+
+

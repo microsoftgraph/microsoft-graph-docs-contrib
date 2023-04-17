@@ -1,9 +1,9 @@
 ---
 title: "vpnServiceExceptionAction enum type"
 description: "The VPN action to take for a specific service."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ The VPN action to take for a specific service.
 |forceTrafficViaVPN|0|Make all traffic from that service go through the VPN|
 |allowTrafficOutside|1|Allow the service outside of the VPN|
 |dropTraffic|2|Drop all traffic from the service|
+
+
+
+

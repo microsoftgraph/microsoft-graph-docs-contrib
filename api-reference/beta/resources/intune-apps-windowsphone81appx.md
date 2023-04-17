@@ -1,9 +1,9 @@
 ---
 title: "windowsPhone81AppX resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps. Inherits from graph.mobileLobApp. Will be deprecated in February 2023."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -140,3 +140,7 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
+
+
+
+

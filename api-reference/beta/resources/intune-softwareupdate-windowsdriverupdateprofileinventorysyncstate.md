@@ -1,9 +1,9 @@
 ---
 title: "windowsDriverUpdateProfileInventorySyncState enum type"
 description: "Windows DnF update inventory sync state."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Windows DnF update inventory sync state.
 |pending|0|Pending sync.|
 |success|1|Successful sync.|
 |failure|2|Failed sync.|
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "Get zebraFotaArtifact"
 description: "Read properties and relationships of the zebraFotaArtifact object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [zebraFotaArtifact](../resources/intune-androidfotaservice-zebrafotaartifact.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -68,7 +68,7 @@ Content-Length: 434
 {
   "value": {
     "@odata.type": "#microsoft.graph.zebraFotaArtifact",
-    "id": "37305f61-5f61-3730-615f-3037615f3037",
+    "id": "c81cfc78-fc78-c81c-78fc-1cc878fc1cc8",
     "deviceModel": "Device Model value",
     "osVersion": "Os Version value",
     "patchVersion": "Patch Version value",
@@ -78,3 +78,7 @@ Content-Length: 434
   }
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "iosDeviceType resource type"
 description: "Contains properties of the possible iOS device types the mobile app can run on."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,3 +40,7 @@ Here is a JSON representation of the resource.
   "iPhoneAndIPod": true
 }
 ```
+
+
+
+

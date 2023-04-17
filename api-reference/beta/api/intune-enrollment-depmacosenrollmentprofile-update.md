@@ -1,9 +1,9 @@
 ---
 title: "Update depMacOSEnrollmentProfile"
 description: "Update the properties of a depMacOSEnrollmentProfile object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -94,7 +94,6 @@ The following table shows the properties that are required when you create the [
 |adminAccountFullName|String|Indicates what the full name for the admin account is|
 |adminAccountPassword|String|Indicates what the password for the admin account is|
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 
 
@@ -108,7 +107,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1951
+Content-length: 1910
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -158,8 +157,7 @@ Content-length: 1951
   "adminAccountUserName": "Admin Account User Name value",
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
-  "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "hideAdminAccount": true
 }
 ```
 
@@ -168,7 +166,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2000
+Content-Length: 1959
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -219,7 +217,10 @@ Content-Length: 2000
   "adminAccountUserName": "Admin Account User Name value",
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
-  "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "hideAdminAccount": true
 }
 ```
+
+
+
+

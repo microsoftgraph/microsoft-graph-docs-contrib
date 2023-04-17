@@ -1,9 +1,9 @@
 ---
 title: "endpointSecurityConfigurationProfileType enum type"
 description: "The endpoint security policy profile type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -35,3 +35,7 @@ The endpoint security policy profile type.
 |applicationControl|12|Application control.|
 |attackSurfaceReductionRules|13|Attack surface reduction rules.|
 |accountProtection|14|Account protection.|
+
+
+
+

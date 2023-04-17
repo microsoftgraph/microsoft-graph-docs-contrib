@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerKioskModeFolderIcon enum type"
 description: "Android Device Owner Kiosk Mode folder icon type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Android Device Owner Kiosk Mode folder icon type.
 |darkCircle|2|Folder icon appears as dark circle.|
 |lightSquare|3|Folder icon appears as light square.|
 |lightCircle|4|Folder icon appears as light circle  .|
+
+
+
+

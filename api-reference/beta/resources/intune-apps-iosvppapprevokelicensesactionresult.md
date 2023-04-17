@@ -1,9 +1,9 @@
 ---
 title: "iosVppAppRevokeLicensesActionResult resource type"
 description: "Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -54,3 +54,7 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

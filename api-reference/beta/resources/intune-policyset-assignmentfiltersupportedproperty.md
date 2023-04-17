@@ -1,9 +1,9 @@
 ---
 title: "assignmentFilterSupportedProperty resource type"
 description: "Represents the information about the property which is supported in crafting the rule of AssignmentFilter."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -52,3 +52,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

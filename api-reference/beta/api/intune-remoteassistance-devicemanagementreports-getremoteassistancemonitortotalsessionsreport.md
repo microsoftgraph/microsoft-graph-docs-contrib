@@ -1,9 +1,9 @@
 ---
 title: "getRemoteAssistanceMonitorTotalSessionsReport action"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -103,3 +103,7 @@ Content-Length: 119
   "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JUb3RhbFNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIwNDgyNjQ4ODE="
 }
 ```
+
+
+
+

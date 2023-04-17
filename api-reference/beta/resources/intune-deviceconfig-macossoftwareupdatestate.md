@@ -1,9 +1,9 @@
 ---
 title: "macOSSoftwareUpdateState enum type"
 description: "MacOS Software Update State"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -35,3 +35,7 @@ MacOS Software Update State
 |installInsufficientPower|2005|There is not enough power to install the update|
 |installFailed|2006|Installation has failed for an unspecified reason|
 |commandFailed|2007|The schedule update command has failed for an unspecified reason|
+
+
+
+

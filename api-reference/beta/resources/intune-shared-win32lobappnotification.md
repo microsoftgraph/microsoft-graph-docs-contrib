@@ -1,9 +1,9 @@
 ---
 title: "win32LobAppNotification enum type"
 description: "Contains value for notification status."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Contains value for notification status.
 |showAll|0|Show all notifications.|
 |showReboot|1|Only show restart notification and suppress other notifications.|
 |hideAll|2|Hide all notifications.|
+
+
+
+

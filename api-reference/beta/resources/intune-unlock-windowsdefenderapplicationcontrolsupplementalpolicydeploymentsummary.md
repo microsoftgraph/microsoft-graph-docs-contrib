@@ -1,9 +1,9 @@
 ---
 title: "windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary resource type"
 description: "Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -49,3 +49,7 @@ Here is a JSON representation of the resource.
   "failedDeviceCount": 1024
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -126,3 +126,7 @@ Here is a JSON representation of the resource.
   "deviceLicensingLastErrorDescription": "String"
 }
 ```
+
+
+
+

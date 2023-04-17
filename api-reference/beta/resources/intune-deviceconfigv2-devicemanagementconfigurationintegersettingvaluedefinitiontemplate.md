@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationIntegerSettingValueDefinitionTemplate resource type"
 description: "Integer Setting Value Definition Template"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,3 +40,7 @@ Here is a JSON representation of the resource.
   "maxValue": 1024
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Windows 10 Enrollment Status Page Configuration"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -97,3 +97,7 @@ Here is a JSON representation of the resource.
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
+
+
+

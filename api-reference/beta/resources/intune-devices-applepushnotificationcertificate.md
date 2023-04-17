@@ -1,9 +1,9 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -63,3 +63,7 @@ Here is a JSON representation of the resource.
   "certificate": "String"
 }
 ```
+
+
+
+

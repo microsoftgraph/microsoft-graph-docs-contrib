@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsDeviceScope resource type"
 description: "The user experience analytics device scope entity contains device scope configuration values use to apply filtering on the endpoint analytics reports."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -71,3 +71,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

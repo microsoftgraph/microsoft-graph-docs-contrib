@@ -1,9 +1,9 @@
 ---
 title: "groupPolicySettingType enum type"
 description: "Setting type of the group policy."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -48,3 +48,7 @@ Setting type of the group policy.
 |scheduledTasks|25|ScheduledTasks setting type|
 |shortcutSettings|26|ShortcutSettings setting type|
 |startMenuSettings|27|StartMenuSettings setting type|
+
+
+
+

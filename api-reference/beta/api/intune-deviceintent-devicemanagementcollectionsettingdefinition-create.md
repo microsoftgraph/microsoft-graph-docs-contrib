@@ -1,9 +1,9 @@
 ---
 title: "Create deviceManagementCollectionSettingDefinition"
 description: "Create a new deviceManagementCollectionSettingDefinition object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementCollectionSettingDefinition](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -164,3 +164,7 @@ Content-Length: 1130
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Possible values for automatic update classification.
 |recommendedAndImportant|1|Recommended and important.|
 |important|2|Important.|
 |none|3|None.|
+
+
+
+

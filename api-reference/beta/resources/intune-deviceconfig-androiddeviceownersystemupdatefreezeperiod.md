@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerSystemUpdateFreezePeriod resource type"
 description: "Represents one item in the list of freeze periods for Android Device Owner system updates"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -44,3 +44,7 @@ Here is a JSON representation of the resource.
   "endDay": 1024
 }
 ```
+
+
+
+

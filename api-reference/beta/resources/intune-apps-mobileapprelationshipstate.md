@@ -1,9 +1,9 @@
 ---
 title: "mobileAppRelationshipState resource type"
-description: "Describes the installation status details of the child app in the context of UPN and device id."
-author: "jaiprakashmb"
+description: "Describes the installation status details of the child app in the context of UPN and device id. This will be deprecated in May, 2023 "
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Describes the installation status details of the child app in the context of UPN and device id.
+Describes the installation status details of the child app in the context of UPN and device id. This will be deprecated in May, 2023 
 
 ## Properties
 |Property|Type|Description|
@@ -54,3 +54,7 @@ Here is a JSON representation of the resource.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

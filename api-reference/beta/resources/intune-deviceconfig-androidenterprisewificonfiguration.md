@@ -1,9 +1,9 @@
 ---
 title: "androidEnterpriseWiFiConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -131,3 +131,7 @@ Here is a JSON representation of the resource.
   "preSharedKey": "String"
 }
 ```
+
+
+
+

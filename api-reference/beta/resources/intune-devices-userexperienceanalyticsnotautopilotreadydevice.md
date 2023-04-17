@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsNotAutopilotReadyDevice resource type"
 description: "The user experience analytics Device not windows autopilot ready."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -66,3 +66,7 @@ Here is a JSON representation of the resource.
   "azureAdJoinType": "String"
 }
 ```
+
+
+
+

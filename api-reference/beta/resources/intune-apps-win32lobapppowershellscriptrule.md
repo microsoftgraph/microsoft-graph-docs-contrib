@@ -1,9 +1,9 @@
 ---
 title: "win32LobAppPowerShellScriptRule resource type"
 description: "A complex type to store the PowerShell script rule data for a Win32 LOB app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -57,3 +57,7 @@ Here is a JSON representation of the resource.
   "comparisonValue": "String"
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "usernameSource enum type"
 description: "Username source."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Username source.
 |userPrincipalName|0|User principal name.|
 |primarySmtpAddress|1|Primary SMTP address.|
 |samAccountName|2|The user sam account name.|
+
+
+
+

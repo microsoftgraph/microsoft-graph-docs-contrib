@@ -1,9 +1,9 @@
 ---
 title: "vppTokenAccountType enum type"
 description: "Possible types of an Apple Volume Purchase Program token."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Possible types of an Apple Volume Purchase Program token.
 |:---|:---|:---|
 |business|0|Apple Volume Purchase Program token associated with an business program.|
 |education|1|Apple Volume Purchase Program token associated with an education program.|
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "eBookInstallSummary resource type"
 description: "Contains properties for the installation summary of a book for a device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -57,3 +57,7 @@ Here is a JSON representation of the resource.
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
+

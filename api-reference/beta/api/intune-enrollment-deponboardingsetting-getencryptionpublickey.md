@@ -1,9 +1,9 @@
 ---
 title: "getEncryptionPublicKey function"
 description: "Get a public key to use to encrypt the Apple device enrollment program token"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Get a public key to use to encrypt the Apple device enrollment program token
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -66,3 +66,7 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
+
+
+
+

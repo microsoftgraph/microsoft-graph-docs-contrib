@@ -1,9 +1,9 @@
 ---
 title: "extendRemoteHelpSessionResponse resource type"
 description: "Remote help - response we provide back to the helper after getting response from pubSub"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -54,3 +54,7 @@ Here is a JSON representation of the resource.
   "sessionExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

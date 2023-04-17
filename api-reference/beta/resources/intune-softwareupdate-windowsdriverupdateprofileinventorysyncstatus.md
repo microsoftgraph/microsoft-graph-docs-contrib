@@ -1,9 +1,9 @@
 ---
 title: "windowsDriverUpdateProfileInventorySyncStatus resource type"
 description: "A complex type to store the status of a driver and firmware profile inventory sync. The status includes the last successful sync date time and the state of the last sync."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -40,3 +40,7 @@ Here is a JSON representation of the resource.
   "driverInventorySyncState": "String"
 }
 ```
+
+
+
+

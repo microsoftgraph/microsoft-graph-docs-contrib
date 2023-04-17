@@ -1,9 +1,9 @@
 ---
 title: "wiredNetworkAuthenticationMethod enum type"
 description: "Wired Network authentication method."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Wired Network authentication method.
 |usernameAndPassword|1|Use username and password for authentication.|
 |derivedCredential|2|Use Derived Credential for authentication.|
 |unknownFutureValue|3|Sentinel member for cases where the client cannot handle the new enum values.|
+
+
+
+

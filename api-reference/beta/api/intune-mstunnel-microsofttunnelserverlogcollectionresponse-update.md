@@ -1,9 +1,9 @@
 ---
 title: "Update microsoftTunnelServerLogCollectionResponse"
 description: "Update the properties of a microsoftTunnelServerLogCollectionResponse object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -102,3 +102,7 @@ Content-Length: 444
   "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
+
+
+
+

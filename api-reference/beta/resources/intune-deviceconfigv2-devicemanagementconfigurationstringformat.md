@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationStringFormat enum type"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -37,3 +37,7 @@ Not yet documented
 |surfaceHub|14|Indicates a Windows SKU applicability value that maps to Intune.|
 |bashScript|19|String whose value is a bash script|
 |unknownFutureValue|20|Sentinel member for cases where the client cannot handle the new enum values.|
+
+
+
+

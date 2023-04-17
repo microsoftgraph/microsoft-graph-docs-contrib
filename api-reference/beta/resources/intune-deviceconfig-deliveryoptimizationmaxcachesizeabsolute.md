@@ -1,9 +1,9 @@
 ---
 title: "deliveryOptimizationMaxCacheSizeAbsolute resource type"
 description: "Delivery Optimization max cache size absolute type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,3 +42,7 @@ Here is a JSON representation of the resource.
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
+
+
+

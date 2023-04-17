@@ -1,9 +1,9 @@
 ---
 title: "appleVpnAlwaysOnConfiguration resource type"
 description: "Always On VPN configuration for MacOS and iOS IKEv2"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -61,3 +61,7 @@ Here is a JSON representation of the resource.
   "natKeepAliveOffloadEnable": true
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -105,3 +105,7 @@ Here is a JSON representation of the resource.
   "remediationStateLastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

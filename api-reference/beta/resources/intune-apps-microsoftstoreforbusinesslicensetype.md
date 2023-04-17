@@ -1,9 +1,9 @@
 ---
 title: "microsoftStoreForBusinessLicenseType enum type"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Not yet documented
 |:---|:---|:---|
 |offline|0|Not yet documented|
 |online|1|Not yet documented|
+
+
+
+

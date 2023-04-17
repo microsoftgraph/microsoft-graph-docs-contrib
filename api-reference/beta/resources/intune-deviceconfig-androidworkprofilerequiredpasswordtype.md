@@ -1,9 +1,9 @@
 ---
 title: "androidWorkProfileRequiredPasswordType enum type"
 description: "Android Work Profile required password type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -28,3 +28,7 @@ Android Work Profile required password type.
 |atLeastAlphabetic|5|At least alphabetic password required.|
 |atLeastAlphanumeric|6|At least alphanumeric password required.|
 |alphanumericWithSymbols|7|At least alphanumeric with symbols password required.|
+
+
+
+

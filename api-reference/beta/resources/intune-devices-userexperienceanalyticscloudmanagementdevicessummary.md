@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsCloudManagementDevicesSummary resource type"
 description: "The user experience work from anywhere Cloud management devices summary."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,3 +42,7 @@ Here is a JSON representation of the resource.
   "tenantAttachDeviceCount": 1024
 }
 ```
+
+
+
+

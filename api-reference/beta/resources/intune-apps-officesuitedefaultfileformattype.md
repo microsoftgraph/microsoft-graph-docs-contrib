@@ -1,9 +1,9 @@
 ---
 title: "officeSuiteDefaultFileFormatType enum type"
 description: "Describes the OfficeSuiteApp file format types that can be selected."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Describes the OfficeSuiteApp file format types that can be selected.
 |officeOpenXMLFormat|1|Office Open XML Format selected|
 |officeOpenDocumentFormat|2|Office Open Document Format selected|
 |unknownFutureValue|99|Placeholder for evolvable enum.|
+
+
+
+

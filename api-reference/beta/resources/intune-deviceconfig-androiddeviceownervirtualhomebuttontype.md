@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerVirtualHomeButtonType enum type"
 description: "Android Device Owner Kiosk Mode managed home screen virtual home button type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Android Device Owner Kiosk Mode managed home screen virtual home button type.
 |notConfigured|0|Not configured; this value is ignored.|
 |swipeUp|1|Swipe-up for home button.|
 |floating|2|Floating home button.|
+
+
+
+

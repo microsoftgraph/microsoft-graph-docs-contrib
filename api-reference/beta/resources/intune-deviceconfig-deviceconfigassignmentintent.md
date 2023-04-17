@@ -1,9 +1,9 @@
 ---
 title: "deviceConfigAssignmentIntent enum type"
 description: "The administrator intent for the assignment of the profile."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ The administrator intent for the assignment of the profile.
 |:---|:---|:---|
 |apply|0|Ensure that the configuration profile is applied to the devices in the assignment.|
 |remove|1|Ensure that the configuration profile is removed from devices that have previously installed the configuration profile.|
+
+
+
+

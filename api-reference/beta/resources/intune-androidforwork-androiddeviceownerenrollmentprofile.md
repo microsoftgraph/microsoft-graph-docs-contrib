@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -27,6 +27,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |[Update androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
 |[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|None|Not yet documented|
 |[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|None|Not yet documented|
+|[getDefaultTeamsDeviceNonGmsEnrollmentProfile action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md)|[enrollmentProfileForNonGmsTeamsDevice](../resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -98,3 +99,7 @@ Here is a JSON representation of the resource.
   "isTeamsDeviceProfile": true
 }
 ```
+
+
+
+

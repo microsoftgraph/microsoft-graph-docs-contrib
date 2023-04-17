@@ -1,9 +1,9 @@
 ---
 title: "autoRestartNotificationDismissalMethod enum type"
 description: "Auto restart required notification dismissal method"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Auto restart required notification dismissal method
 |automatic|1|Auto dismissal Indicates that the notification is automatically dismissed without user intervention|
 |user|2|User dismissal. Allows the user to dismiss the notification|
 |unknownFutureValue|3|Evolvable enum member|
+
+
+
+

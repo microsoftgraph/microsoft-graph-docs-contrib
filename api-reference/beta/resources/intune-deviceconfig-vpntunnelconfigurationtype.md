@@ -1,9 +1,9 @@
 ---
 title: "vpnTunnelConfigurationType enum type"
 description: "The type of tunnels that will be present to the VPN client for configuration"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ The type of tunnels that will be present to the VPN client for configuration
 |wifiAndCellular|0|WiFi and Cellular Tunnels|
 |cellular|1|Cellular Tunnel Only|
 |wifi|2|WiFi Tunnel Only|
+
+
+
+

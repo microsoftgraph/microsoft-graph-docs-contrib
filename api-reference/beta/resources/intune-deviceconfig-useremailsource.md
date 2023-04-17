@@ -1,9 +1,9 @@
 ---
 title: "userEmailSource enum type"
 description: "Possible values for username source or email source."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Possible values for username source or email source.
 |:---|:---|:---|
 |userPrincipalName|0|User principal name.|
 |primarySmtpAddress|1|Primary SMTP address.|
+
+
+
+

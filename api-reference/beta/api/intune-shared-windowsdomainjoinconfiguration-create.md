@@ -1,7 +1,7 @@
 ---
 title: "Create windowsDomainJoinConfiguration"
 description: "Create a new windowsDomainJoinConfiguration object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -127,3 +127,14 @@ Content-Length: 667
   "organizationalUnit": "Organizational Unit value"
 }
 ```
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "managedAppRemediationAction enum type"
 description: "An admin initiated action to be applied on a managed app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ An admin initiated action to be applied on a managed app.
 |block|0|app and the corresponding company data to be blocked|
 |wipe|1|app and the corresponding company data to be wiped|
 |warn|2|app and the corresponding user to be warned|
+
+
+
+

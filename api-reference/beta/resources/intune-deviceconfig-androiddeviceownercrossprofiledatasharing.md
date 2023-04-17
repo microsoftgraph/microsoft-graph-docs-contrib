@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerCrossProfileDataSharing enum type"
 description: "An enum representing possible values for cross profile data sharing."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ An enum representing possible values for cross profile data sharing.
 |dataSharingFromWorkToPersonalBlocked|2|Prevents users from sharing data from the work profile to apps in the personal profile. Personal data can be shared with work apps.|
 |crossProfileDataSharingAllowed|3|Data from either profile can be shared with the other profile.|
 |unkownFutureValue|4|Unknown future value (reserved, not used right now)|
+
+
+
+

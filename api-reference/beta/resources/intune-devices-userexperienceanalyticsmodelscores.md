@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsModelScores resource type"
 description: "The user experience analytics model scores entity consolidates the various endpoint analytics scores."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -66,3 +66,7 @@ Here is a JSON representation of the resource.
   "healthStatus": "String"
 }
 ```
+
+
+
+

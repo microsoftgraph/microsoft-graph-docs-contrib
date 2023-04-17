@@ -1,9 +1,9 @@
 ---
 title: "vpnOnDemandRuleInterfaceTypeMatch enum type"
 description: "VPN On-Demand Rule Connection network interface type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ VPN On-Demand Rule Connection network interface type.
 |ethernet|1|Ethernet.|
 |wiFi|2|WiFi.|
 |cellular|3|Cellular.|
+
+
+
+

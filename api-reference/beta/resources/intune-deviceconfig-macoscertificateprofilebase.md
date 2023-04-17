@@ -1,9 +1,9 @@
 ---
 title: "macOSCertificateProfileBase resource type"
 description: "Mac OS certificate profile."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -106,3 +106,7 @@ Here is a JSON representation of the resource.
   "certificateValidityPeriodScale": "String"
 }
 ```
+
+
+
+

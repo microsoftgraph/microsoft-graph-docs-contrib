@@ -1,9 +1,9 @@
 ---
 title: "assignmentFilterOperator enum type"
 description: "Represents the different type of operators which can be used to craft the AssignmentFilter rule."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -31,3 +31,7 @@ Represents the different type of operators which can be used to craft the Assign
 |notIn|8|NotIn.|
 |endsWith|9|EndsWith.|
 |notEndsWith|10|NotEndsWith.|
+
+
+
+

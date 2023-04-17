@@ -1,9 +1,9 @@
 ---
 title: "appleAppListItem resource type"
 description: "Represents an app in the list of managed Apple applications"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -47,3 +47,7 @@ Here is a JSON representation of the resource.
   "appId": "String"
 }
 ```
+
+
+
+

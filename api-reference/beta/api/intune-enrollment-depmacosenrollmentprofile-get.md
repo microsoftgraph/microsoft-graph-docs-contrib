@@ -1,9 +1,9 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2119
+Content-Length: 2076
 
 {
   "value": {
@@ -115,8 +115,11 @@ Content-Length: 2119
     "adminAccountUserName": "Admin Account User Name value",
     "adminAccountFullName": "Admin Account Full Name value",
     "adminAccountPassword": "Admin Account Password value",
-    "hideAdminAccount": true,
-    "requestRequiresNetworkTether": true
+    "hideAdminAccount": true
   }
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "vpnDnsRule resource type"
 description: "VPN DNS Rule definition."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -48,3 +48,7 @@ Here is a JSON representation of the resource.
   "persistent": true
 }
 ```
+
+
+
+

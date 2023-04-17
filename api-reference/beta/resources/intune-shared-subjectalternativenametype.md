@@ -1,9 +1,9 @@
 ---
 title: "subjectAlternativeNameType enum type"
 description: "Subject Alternative Name Options."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,3 +26,7 @@ Subject Alternative Name Options.
 |customAzureADAttribute|4|Custom Azure AD Attribute.|
 |domainNameService|8|Domain Name Service (DNS).|
 |universalResourceIdentifier|16|Universal Resource Identifier (URI).|
+
+
+
+

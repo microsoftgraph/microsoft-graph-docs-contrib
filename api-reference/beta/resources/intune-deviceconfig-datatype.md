@@ -1,9 +1,9 @@
 ---
 title: "dataType enum type"
 description: "Data types for rules."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -35,3 +35,7 @@ Data types for rules.
 |stringArray|12|String array data type.|
 |dateTimeArray|13|DateTime array data type.|
 |versionArray|14|Version array data type.|
+
+
+
+

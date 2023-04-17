@@ -1,9 +1,9 @@
 ---
 title: "mobileAppSupersedence resource type"
 description: "Describes a supersedence relationship between two mobile apps."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -67,3 +67,7 @@ Here is a JSON representation of the resource.
   "supersedingAppCount": 1024
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "defenderAttackSurfaceType enum type"
 description: "Possible values of Defender Attack Surface Reduction Rules"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Possible values of Defender Attack Surface Reduction Rules
 |auditMode|2|Evaluate how the ASR rule would impact your organization if enabled. Does not change functionality but generate logs.|
 |warn|6|Warning message to end user with ability to bypass block from attack surface reduction rule.|
 |disable|99|Disable the attack surface reduction rule|
+
+
+
+

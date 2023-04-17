@@ -1,9 +1,9 @@
 ---
 title: "deviceHealthScriptPolicyState resource type"
 description: "Contains properties for policy run state of the device health script."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Contains properties for policy run state of the device health script.
 |policyName|String|Display name of the device health script|
 |userName|String|Name of the user whom ran the device health script|
 |osVersion|String|Value of the OS Version in string|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
@@ -84,3 +84,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

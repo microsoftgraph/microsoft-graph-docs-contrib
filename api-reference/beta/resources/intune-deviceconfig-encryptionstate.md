@@ -1,9 +1,9 @@
 ---
 title: "encryptionState enum type"
 description: "Encryption state"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Encryption state
 |:---|:---|:---|
 |notEncrypted|0|Not encrypted|
 |encrypted|1|Encrypted|
+
+
+
+

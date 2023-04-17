@@ -1,9 +1,9 @@
 ---
 title: "certificateStore enum type"
 description: "CertificateStore types"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ CertificateStore types
 |:---|:---|:---|
 |user|1|Not yet documented|
 |machine|2|Not yet documented|
+
+
+
+

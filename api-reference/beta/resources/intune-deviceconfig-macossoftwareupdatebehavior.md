@@ -1,9 +1,9 @@
 ---
 title: "macOSSoftwareUpdateBehavior enum type"
 description: "Update behavior options for macOS software updates."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,3 +26,7 @@ Update behavior options for macOS software updates.
 |installASAP|3|Install an already downloaded software update.|
 |notifyOnly|4|Download the software update and notify the user via the App Store.|
 |installLater|5|Download the software update and install it at a later time.|
+
+
+
+

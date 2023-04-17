@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationSettingVisibility enum type"
 description: "Supported setting types"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -20,6 +20,11 @@ Supported setting types
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Not visible|
-|settingsCatalog|1|Visible to setting catalog UX|
-|template|2|Visible to template|
+|none|0|Default. Not visible.|
+|settingsCatalog|1|Visible to setting catalog policy type.|
+|template|2|Visible to template policy type.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+
+
+
+

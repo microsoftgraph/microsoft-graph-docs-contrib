@@ -1,9 +1,9 @@
 ---
 title: "cloudPCConnectivityIssue resource type"
 description: "The user experience analyte connectivity issue entity."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -60,3 +60,7 @@ Here is a JSON representation of the resource.
   "recommendedAction": "String"
 }
 ```
+
+
+
+

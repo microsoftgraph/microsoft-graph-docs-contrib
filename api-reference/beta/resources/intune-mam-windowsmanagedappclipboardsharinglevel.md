@@ -1,9 +1,9 @@
 ---
 title: "windowsManagedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Represents the level to which the device's clipboard may be shared between apps
 |:---|:---|:---|
 |anyDestinationAnySource|0|Org users can paste data from and cut/copy data to any account, document, location or application.|
 |none|1|Org users cannot cut, copy or paste data to or from external accounts, documents, locations or applications from or into the org context.|
+
+
+
+

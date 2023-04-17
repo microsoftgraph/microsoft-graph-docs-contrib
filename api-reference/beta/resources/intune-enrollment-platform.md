@@ -1,9 +1,9 @@
 ---
 title: "platform enum type"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,3 +26,7 @@ Not yet documented
 |windows|3|Windows device platform|
 |windowsMobile|4|WindowsMobile device platform|
 |macOS|5|Mac device platform|
+
+
+
+

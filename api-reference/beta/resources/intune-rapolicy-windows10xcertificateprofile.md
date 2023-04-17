@@ -1,9 +1,9 @@
 ---
 title: "windows10XCertificateProfile resource type"
 description: "Base Profile Type for Authentication Certificates (SCEP or PFX Create)"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -64,3 +64,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

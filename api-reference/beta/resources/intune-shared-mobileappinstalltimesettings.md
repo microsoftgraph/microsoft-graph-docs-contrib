@@ -1,9 +1,9 @@
 ---
 title: "mobileAppInstallTimeSettings resource type"
 description: "Contains properties used to determine when to offer an app to devices and when to install the app on devices."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,3 +42,7 @@ Here is a JSON representation of the resource.
   "deadlineDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

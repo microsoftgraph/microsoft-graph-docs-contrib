@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsAnomaly resource type"
 description: "The user experience analytics anomaly entity contains anomaly details."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -74,3 +74,7 @@ Here is a JSON representation of the resource.
   "assetPublisher": "String"
 }
 ```
+
+
+
+

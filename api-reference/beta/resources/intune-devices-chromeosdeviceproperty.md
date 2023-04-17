@@ -1,9 +1,9 @@
 ---
 title: "chromeOSDeviceProperty resource type"
 description: "Represents a property of the ChromeOS device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -44,3 +44,7 @@ Here is a JSON representation of the resource.
   "updatable": true
 }
 ```
+
+
+
+

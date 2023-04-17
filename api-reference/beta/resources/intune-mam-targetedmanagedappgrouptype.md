@@ -1,9 +1,9 @@
 ---
 title: "targetedManagedAppGroupType enum type"
 description: "Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Indicates a collection of apps to target which can be one of several pre-defined
 |allCoreMicrosoftApps|1|Target the core set of Microsoft apps (Office, Edge, etc).|
 |allMicrosoftApps|2|Target all apps with Microsoft as publisher.|
 |allApps|4|Target all apps with an available assignment.|
+
+
+
+

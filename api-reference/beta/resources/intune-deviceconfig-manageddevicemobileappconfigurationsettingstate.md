@@ -1,9 +1,9 @@
 ---
 title: "managedDeviceMobileAppConfigurationSettingState resource type"
 description: "Managed Device Mobile App Configuration Setting State for a given device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -69,3 +69,7 @@ Here is a JSON representation of the resource.
   "settingInstanceId": "String"
 }
 ```
+
+
+
+

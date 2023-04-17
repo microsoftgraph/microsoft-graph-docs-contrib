@@ -1,9 +1,9 @@
 ---
 title: "certificateConnectorHealthMetricValue resource type"
 description: "Metric snapshot value returned in response to a GetHealthMetricTimeSeries request."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -42,3 +42,7 @@ Here is a JSON representation of the resource.
   "failureCount": 1024
 }
 ```
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "retrieveRemoteHelpSessionResponse resource type"
 description: "Remote help - response we provide back to the helper on retrieve session API call"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -66,3 +66,7 @@ Here is a JSON representation of the resource.
   "sessionExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
+

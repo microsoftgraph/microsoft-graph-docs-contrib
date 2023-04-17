@@ -1,9 +1,9 @@
 ---
 title: "mobileAppPublishingState enum type"
 description: "Indicates the publishing state of an app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Indicates the publishing state of an app.
 |notPublished|0|The app is not yet published.|
 |processing|1|The app is pending service-side processing.|
 |published|2|The app is published.|
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "macOSSoftwareUpdateConfiguration resource type"
 description: "MacOS Software Update Configuration"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -125,3 +125,7 @@ Here is a JSON representation of the resource.
   "priority": "String"
 }
 ```
+
+
+
+

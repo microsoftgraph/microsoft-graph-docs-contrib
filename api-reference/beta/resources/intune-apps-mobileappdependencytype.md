@@ -1,9 +1,9 @@
 ---
 title: "mobileAppDependencyType enum type"
 description: "Indicates the dependency type associated with a relationship between two mobile apps."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Indicates the dependency type associated with a relationship between two mobile 
 |:---|:---|:---|
 |detect|0|Indicates that the child app should be detected before installing the parent app.|
 |autoInstall|1|Indicates that the child app should be installed before installing the parent app.|
+
+
+
+

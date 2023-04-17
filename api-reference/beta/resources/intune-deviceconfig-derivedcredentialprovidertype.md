@@ -1,9 +1,9 @@
 ---
 title: "derivedCredentialProviderType enum type"
 description: "Provider type for Derived Credentials."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Provider type for Derived Credentials.
 |purebred|2|Purebred - Defense Information Systems Agency.|
 |xTec|3|Xtec - AuthentX.|
 |intercede|4|Intercede.|
+
+
+
+

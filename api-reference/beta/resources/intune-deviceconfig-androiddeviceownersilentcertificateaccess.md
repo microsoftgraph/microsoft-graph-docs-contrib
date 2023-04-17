@@ -1,9 +1,9 @@
 ---
 title: "androidDeviceOwnerSilentCertificateAccess resource type"
 description: "Contain the package ID that has the pre-granted access to the certificate."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -38,3 +38,7 @@ Here is a JSON representation of the resource.
   "packageId": "String"
 }
 ```
+
+
+
+

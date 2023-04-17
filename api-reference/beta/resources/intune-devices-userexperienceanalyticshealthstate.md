@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsHealthState enum type"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Not yet documented
 |needsAttention|2|Not yet documented|
 |meetingGoals|3|Not yet documented|
 |unknownFutureValue|4|Evolvable enum member|
+
+
+
+

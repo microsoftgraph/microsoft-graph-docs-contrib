@@ -1,9 +1,9 @@
 ---
 title: "appListType enum type"
 description: "Possible values of the compliance app list."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Possible values of the compliance app list.
 |none|0|Default value, no intent.|
 |appsInListCompliant|1|The list represents the apps that will be considered compliant (only apps on the list are compliant).|
 |appsNotInListCompliant|2|The list represents the apps that will be considered non compliant (all apps are compliant except apps on the list).|
+
+
+
+

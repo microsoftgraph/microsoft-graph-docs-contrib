@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConstraint resource type"
 description: "Base entity for a constraint"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -36,3 +36,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementConstraint"
 }
 ```
+
+
+
+

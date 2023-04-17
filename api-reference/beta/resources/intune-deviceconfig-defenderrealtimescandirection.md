@@ -1,9 +1,9 @@
 ---
 title: "defenderRealtimeScanDirection enum type"
 description: "Possible values for monitoring file activity."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Possible values for monitoring file activity.
 |monitorAllFiles|0|0 (default) – Monitor all files(bi-directional)|
 |monitorIncomingFilesOnly|1|Monitor incoming files only.|
 |monitorOutgoingFilesOnly|2|Monitor outgoing files only.|
+
+
+
+

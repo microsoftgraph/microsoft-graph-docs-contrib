@@ -1,9 +1,9 @@
 ---
 title: "managedAppProtectionPolicySetItem resource type"
 description: "A class containing the properties used for managed app protection PolicySetItem."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -71,3 +71,7 @@ Here is a JSON representation of the resource.
   "targetedAppManagementLevels": "String"
 }
 ```
+
+
+
+

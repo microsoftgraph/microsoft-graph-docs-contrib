@@ -1,9 +1,9 @@
 ---
 title: "healthState enum type"
 description: "Indicates health state of the Windows management app."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Indicates health state of the Windows management app.
 |unknown|0|Unknown state.|
 |healthy|1|Healthy state.|
 |unhealthy|2|Unhealthy state.|
+
+
+
+

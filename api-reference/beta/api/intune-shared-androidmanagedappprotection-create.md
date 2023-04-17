@@ -1,9 +1,9 @@
 ---
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -274,3 +274,11 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
+
+
+
+
+
+
+

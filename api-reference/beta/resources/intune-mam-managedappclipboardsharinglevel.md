@@ -1,9 +1,9 @@
 ---
 title: "managedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Represents the level to which the device's clipboard may be shared between apps
 |managedAppsWithPasteIn|1|Sharing is allowed between all managed apps with paste in enabled|
 |managedApps|2|Sharing is allowed between all managed apps|
 |blocked|3|Sharing between apps is disabled|
+
+
+
+

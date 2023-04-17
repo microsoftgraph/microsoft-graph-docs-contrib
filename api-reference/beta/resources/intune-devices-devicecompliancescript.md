@@ -1,9 +1,9 @@
 ---
 title: "deviceComplianceScript resource type"
 description: "Intune will provide customer the ability to run their Powershell Compliance scripts (detection) on the enrolled windows 10 Azure Active Directory joined devices."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -77,3 +77,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

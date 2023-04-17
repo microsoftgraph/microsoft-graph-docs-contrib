@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsMetric resource type"
 description: "The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -52,3 +52,7 @@ Here is a JSON representation of the resource.
   "unit": "String"
 }
 ```
+
+
+
+

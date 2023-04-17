@@ -1,9 +1,9 @@
 ---
 title: "eapType enum type"
 description: "Extensible Authentication Protocol (EAP) configuration types."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -27,3 +27,7 @@ Extensible Authentication Protocol (EAP) configuration types.
 |peap|25|Protected Extensible Authentication Protocol (PEAP).|
 |eapFast|43|EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).|
 |teap|55|Tunnel Extensible Authentication Protocol (TEAP).|
+
+
+
+

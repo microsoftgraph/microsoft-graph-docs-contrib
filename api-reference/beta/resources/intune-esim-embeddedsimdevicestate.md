@@ -1,9 +1,9 @@
 ---
 title: "embeddedSIMDeviceState resource type"
 description: "Describes the embedded SIM activation code deployment state in relation to a device."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -64,3 +64,7 @@ Here is a JSON representation of the resource.
   "stateDetails": "String"
 }
 ```
+
+
+
+

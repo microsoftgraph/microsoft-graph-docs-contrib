@@ -1,9 +1,9 @@
 ---
 title: "driverCategory enum type"
 description: "An enum type to represent which category a driver belongs to."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ An enum type to represent which category a driver belongs to.
 |recommended|0|This indicates a driver is recommended by Microsoft.|
 |previouslyApproved|1|This indicates a driver was recommended by Microsoft and IT admin has taken some approval action on it.|
 |other|2|This indicates a driver is never recommended by Microsoft.|
+
+
+
+

@@ -1,9 +1,9 @@
 ---
 title: "comanagementEligibleType enum type"
 description: "Not yet documented"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -27,3 +27,7 @@ Not yet documented
 |ineligible|5|Not yet documented|
 |scheduledForEnrollment|6|Devices scheduled for Co-Management enrollment|
 |unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|
+
+
+
+

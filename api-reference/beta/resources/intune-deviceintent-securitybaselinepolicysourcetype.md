@@ -1,9 +1,9 @@
 ---
 title: "securityBaselinePolicySourceType enum type"
 description: "Authoring source of a policy"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -22,3 +22,7 @@ Authoring source of a policy
 |:---|:---|:---|
 |deviceConfiguration|0|Not yet documented|
 |deviceIntent|1|Not yet documented|
+
+
+
+

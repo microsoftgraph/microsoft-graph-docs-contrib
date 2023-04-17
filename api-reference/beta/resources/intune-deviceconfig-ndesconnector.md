@@ -1,9 +1,9 @@
 ---
 title: "ndesConnector resource type"
 description: "Entity which represents an OnPrem Ndes connector."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -64,3 +64,7 @@ Here is a JSON representation of the resource.
   "connectorVersion": "String"
 }
 ```
+
+
+
+

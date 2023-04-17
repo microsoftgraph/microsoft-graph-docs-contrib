@@ -1,9 +1,9 @@
 ---
 title: "androidWorkProfileVpnConnectionType enum type"
 description: "Android Work Profile VPN connection type."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -30,3 +30,7 @@ Android Work Profile VPN connection type.
 |microsoftTunnel|7|Microsoft Tunnel.|
 |netMotionMobility|8|NetMotion Mobility.|
 |microsoftProtect|9|Microsoft Protect.|
+
+
+
+

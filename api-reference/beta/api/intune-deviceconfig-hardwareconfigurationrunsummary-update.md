@@ -1,9 +1,9 @@
 ---
 title: "Update hardwareConfigurationRunSummary"
 description: "Update the properties of a hardwareConfigurationRunSummary object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [hardwareConfigurationRunSummary](../resources/intune-deviceconfig-hardwareconfigurationrunsummary.md) object.
 
-## Permissions
+## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -120,3 +120,7 @@ Content-Length: 518
   "lastRunDateTime": "2016-12-31T23:57:28.499537-08:00"
 }
 ```
+
+
+
+

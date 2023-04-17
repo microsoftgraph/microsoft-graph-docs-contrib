@@ -1,9 +1,9 @@
 ---
 title: "managedDeviceArchitecture enum type"
 description: "Processor architecture"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Processor architecture
 |x64|2|X64|
 |arm|3|ARM|
 |arM64|4|ARM64|
+
+
+
+

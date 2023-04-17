@@ -1,9 +1,9 @@
 ---
 title: "securityConfigurationTask resource type"
 description: "A security configuration task."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -48,7 +48,7 @@ Inherits from [deviceAppManagementTask](../resources/intune-partnerintegration-d
 |endpointSecurityPolicyProfile|[endpointSecurityConfigurationProfileType](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|The endpoint security policy profile. Possible values are: `unknown`, `antivirus`, `windowsSecurity`, `bitLocker`, `fileVault`, `firewall`, `firewallRules`, `endpointDetectionAndResponse`, `deviceControl`, `appAndBrowserIsolation`, `exploitProtection`, `webProtection`, `applicationControl`, `attackSurfaceReductionRules`, `accountProtection`.|
 |insights|String|Information about the mitigation.|
 |managedDeviceCount|Int32|The number of vulnerable devices. Valid values 0 to 65536|
-|intendedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|The intended settings and their values.|
+|intendedSettings|[keyValuePair](../resources/intune-partnerintegration-keyvaluepair.md) collection|The intended settings and their values.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,3 +91,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+

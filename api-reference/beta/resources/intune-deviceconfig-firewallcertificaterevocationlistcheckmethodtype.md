@@ -1,9 +1,9 @@
 ---
 title: "firewallCertificateRevocationListCheckMethodType enum type"
 description: "Possible values for firewallCertificateRevocationListCheckMethod"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -24,3 +24,7 @@ Possible values for firewallCertificateRevocationListCheckMethod
 |none|1|Do not check certificate revocation list|
 |attempt|2|Attempt CRL check and allow a certificate only if the certificate is confirmed by the check|
 |require|3|Require a successful CRL check before allowing a certificate|
+
+
+
+

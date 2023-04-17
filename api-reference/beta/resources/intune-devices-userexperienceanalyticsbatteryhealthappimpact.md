@@ -1,9 +1,9 @@
 ---
 title: "userExperienceAnalyticsBatteryHealthAppImpact resource type"
 description: "The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -60,3 +60,7 @@ Here is a JSON representation of the resource.
   "batteryUsagePercentage": "4.2"
 }
 ```
+
+
+
+

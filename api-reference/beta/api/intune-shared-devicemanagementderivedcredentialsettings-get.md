@@ -1,9 +1,9 @@
 ---
 title: "Get deviceManagementDerivedCredentialSettings"
 description: "Read properties and relationships of the deviceManagementDerivedCredentialSettings object."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
@@ -80,3 +80,9 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
+
+
+
+
+
+

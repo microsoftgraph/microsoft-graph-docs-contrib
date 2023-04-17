@@ -1,9 +1,9 @@
 ---
 title: "deviceScopeAction enum type"
 description: "Trigger on the service to either START or STOP computing metrics data based on a device scope configuration."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -20,5 +20,7 @@ Trigger on the service to either START or STOP computing metrics data based on a
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|stop|0|Stop computing metrics data| 
-|start|1|Start computing metrics data|
+
+
+
+

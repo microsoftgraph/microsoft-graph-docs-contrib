@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -26,3 +26,7 @@ Tenant mobile device management subscriptions.
 |intunePremium|4|Microsoft Intune Premium Subscription|
 |intune_EDU|8|Microsoft Intune for Education Subscription|
 |intune_SMB|16|Microsoft Intune for Small Businesses Subscription|
+
+
+
+

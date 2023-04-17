@@ -1,9 +1,9 @@
 ---
 title: "allowedRemoteAssistanceActions enum type"
 description: "Flags enumeration indicating whether a helper can establish a "View screen", "Take full control", "Elevation" and "Unattended" remote assistance action with a device or sharer"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -25,3 +25,7 @@ Flags enumeration indicating whether a helper can establish a "View screen", "Ta
 |elevation|4|Helper can take full control of the sharer's device with elevated privileges|
 |unattended|8|Helper can take unattended control on sharer's device|
 |unknownFutureValue|16|unknownFutureValue - For making the Enum evolvable|
+
+
+
+

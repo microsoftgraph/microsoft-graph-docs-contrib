@@ -2,8 +2,8 @@
 title: "mobileAppTroubleshootingEvent resource type"
 description: "Describes the mobileAppTroubleshootingEvent resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "jaiprakashmb"
-ms.prod: "intune"
+author: "dougeby"
+ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
@@ -95,3 +95,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
+
+
+

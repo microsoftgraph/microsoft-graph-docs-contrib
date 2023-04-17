@@ -1,9 +1,9 @@
 ---
 title: "androidProfileApplicability enum type"
 description: "Android profile applicability"
-author: "jaiprakashmb"
+author: "dougeby"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
@@ -23,3 +23,7 @@ Android profile applicability
 |default|0|Not yet documented|
 |androidWorkProfile|1|Not yet documented|
 |androidDeviceOwner|2|Not yet documented|
+
+
+
+
