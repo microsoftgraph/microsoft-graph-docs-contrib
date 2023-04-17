@@ -32,7 +32,7 @@ If your app uses Azure AD Graph directory extensions, you can continue to use th
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [Choose an extension type for your application](extensibility-overview.md#choose-an-extension-type-for-your-application).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [Choose an extension type for your application](extensibility-overview.md#comparison-of-extension-types).
 
 ### Recommended migration approach
 

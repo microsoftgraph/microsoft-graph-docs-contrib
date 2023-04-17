@@ -14,7 +14,7 @@ $requestBody->setIds(['fa8bf3dc-eca7-46b7-bad1-db199b62afc3', '66825e03-7ef5-42d
 
 
 
-$requestResult = $graphServiceClient->communications()->getPresencesByUserId()->post($requestBody);
+$result = $graphServiceClient->communications()->getPresencesByUserId()->post($requestBody);
 
 
 ```

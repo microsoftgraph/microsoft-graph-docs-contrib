@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.Read.Group<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, Group.Read.All<sup>1</sup>, Group.ReadWrite.All<sup>1</sup>, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+[!INCLUDE [teams-app-installation-permission-note](../../../includes/teams-app-installation-permission-note.md)]
 
 ## HTTP request
 
@@ -199,6 +199,7 @@ The following example gets the list of any [resource-specific permissions that w
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_installedApps_in_team_select_consentedPermissionSet",
@@ -206,9 +207,35 @@ The following example gets the list of any [resource-specific permissions that w
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2/installedApps/N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=?$select=consentedPermissionSet,id
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-installedapps-in-team-select-consentedpermissionset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-installedapps-in-team-select-consentedpermissionset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-installedapps-in-team-select-consentedpermissionset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-installedapps-in-team-select-consentedpermissionset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-installedapps-in-team-select-consentedpermissionset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-installedapps-in-team-select-consentedpermissionset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

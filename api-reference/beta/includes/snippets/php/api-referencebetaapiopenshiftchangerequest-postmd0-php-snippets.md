@@ -16,15 +16,13 @@ $requestBody->setOpenShiftId('577b75d2-a927-48c0-a5d1-dc984894e7b8');
 
 
 $requestConfiguration = new OpenShiftChangeRequestsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-	'Authorization' => 'Bearer {token}',
-];
-
+		'Authorization' => 'Bearer {token}',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->openShiftChangeRequests()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->openShiftChangeRequests()->post($requestBody, $requestConfiguration);
 
 
 ```

@@ -24,7 +24,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->settings()->post($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->settings()->post($requestBody);
 
 
 ```

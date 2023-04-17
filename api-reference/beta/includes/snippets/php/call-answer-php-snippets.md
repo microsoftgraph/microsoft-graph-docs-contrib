@@ -16,7 +16,7 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
 $additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
+		'blob' => '<Media Session Configuration Blob>', 
 ];
 $mediaConfig->setAdditionalData($additionalData);
 

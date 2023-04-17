@@ -7,28 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	BaseType = "microsoft.graph.externalItem"
-	Properties = @(
+	baseType = "microsoft.graph.externalItem"
+	properties = @(
 		@{
-			Name = "ticketTitle"
-			Type = "string"
-			IsSearchable = "true"
-			IsRetrievable = "true"
-			Labels = @(
+			name = "ticketTitle"
+			type = "string"
+			isSearchable = "true"
+			isRetrievable = "true"
+			labels = @(
 				"title"
 			)
 		}
 		@{
-			Name = "priority"
-			Type = "string"
-			IsQueryable = "true"
-			IsRetrievable = "true"
-			IsSearchable = "false"
+			name = "priority"
+			type = "string"
+			isQueryable = "true"
+			isRetrievable = "true"
+			isSearchable = "false"
 		}
 		@{
-			Name = "assignee"
-			Type = "string"
-			IsRetrievable = "true"
+			name = "assignee"
+			type = "string"
+			isRetrievable = "true"
 		}
 	)
 }

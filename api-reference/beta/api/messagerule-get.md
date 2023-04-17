@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+GET /me/mailFolders/inbox/messageRules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -55,7 +55,7 @@ Here is an example of the request.
   "sampleKeys": ["AQAAAJ5dZqA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
+GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 
 # [C#](#tab/csharp)

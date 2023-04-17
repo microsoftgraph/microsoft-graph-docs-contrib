@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Group();
 $additionalData = [
-'graphlearn_courses' => $requestBody = new Graphlearn_courses();
+		'graphlearn_courses' => $requestBody = new Graphlearn_courses();
 $		requestBody->setCourseId('123');
 
 $		requestBody->setCourseName('New Managers');
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->patch($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->patch($requestBody);
 
 
 ```

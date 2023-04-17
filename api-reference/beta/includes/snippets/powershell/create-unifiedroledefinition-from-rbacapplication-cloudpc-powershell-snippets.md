@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 
 $params = @{
-	Description = "An example custom role"
-	DisplayName = "ExampleCustomRole"
-	RolePermissions = @(
+	description = "An example custom role"
+	displayName = "ExampleCustomRole"
+	rolePermissions = @(
 		@{
-			AllowedResourceActions = @(
+			allowedResourceActions = @(
 				"Microsoft.CloudPC/CloudPCs/Read"
 			)
 		}
 	)
-	Condition = "null"
+	condition = "null"
 }
 
 New-MgRoleManagementCloudPcRoleDefinition -BodyParameter $params
