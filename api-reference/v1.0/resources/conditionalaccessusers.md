@@ -4,12 +4,14 @@ description: "Represents users, groups, and roles included in and excluded from 
 ms.localizationpriority: medium
 author: "davidspooner"
 ms.prod: "identity-and-sign-in"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessUsers resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents users, groups, and roles included in and excluded from the policy scope.
 
@@ -18,9 +20,11 @@ Represents users, groups, and roles included in and excluded from the policy sco
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | excludeGroups | String collection | Group IDs excluded from scope of policy. |
+| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users excluded in the policy scope. Optionally populated. |
 | excludeRoles | String collection | Role IDs excluded from scope of policy. |
 | excludeUsers | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
 | includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded. |
+| includeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users included in the policy scope. Optionally populated. |
 | includeRoles | String collection | Role IDs in scope of policy unless explicitly excluded. |
 | includeUsers | String collection | User IDs in scope of policy unless explicitly excluded, `None`, `All`, or `GuestsOrExternalUsers`. |
 
@@ -37,6 +41,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "includeUsers",
     "excludeUsers",
+    "includeGuestsOrExternalUsers",
+    "excludeGuestsOrExternalUsers",
     "includeGroups",
     "excludeGroups",
     "includeRoles",
@@ -51,9 +57,11 @@ The following is a JSON representation of the resource.
   "excludeGroups": ["String"],
   "excludeRoles": ["String"],
   "excludeUsers": ["String"],
+  "excludeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"},
   "includeGroups": ["String"],
   "includeRoles": ["String"],
-  "includeUsers": ["String"]
+  "includeUsers": ["String"],
+  "includeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"}
 }
 ```
 
