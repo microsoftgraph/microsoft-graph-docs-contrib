@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 An abstract type that represents external tenants in the policy scope. This abstract type is inherited by conditionalAccessAllExternalTenants and conditionalAccessEnumeratedExternalTenants.
 
 ## Properties
