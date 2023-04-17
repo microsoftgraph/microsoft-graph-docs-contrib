@@ -1,6 +1,6 @@
 ---
 title: "categoryTemplate resource type"
-description: "Represents the category file plan descriptor for retention labels."
+description: "Read the properties and relationships of a microsoft.graph.security.categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the category file plan descriptor for retention labels.
+Read the properties and relationships of a [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
