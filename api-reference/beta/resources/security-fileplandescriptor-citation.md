@@ -21,8 +21,8 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|citationJurisdiction|String|Represents the user who created the citation.|
-|citationUrl|String|**TODO: Add Description**|
+|citationJurisdiction|String|Represents the jurisdiction or agency that published the citation.|
+|citationUrl|String|Represents the URL to the published citation.|
 |displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 
 ## Relationships

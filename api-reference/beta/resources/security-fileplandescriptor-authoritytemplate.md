@@ -1,6 +1,6 @@
 ---
 title: "authorityTemplate resource type"
-description: "Represents the file plan descriptor of type authority for retention labels."
+description: "Read the properties and relationships of a microsoft.graph.security.authorityTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the authority file plan descriptor for retention labels.
+Read the properties and relationships of a [microsoft.graph.security.authorityTemplate](../resources/security-fileplandescriptor-authoritytemplate.md) object.
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 

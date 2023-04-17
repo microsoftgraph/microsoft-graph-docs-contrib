@@ -1,6 +1,6 @@
 ---
 title: "subCategoryTemplate resource type"
-description: "Represents the 'sub-category' file plan descriptor for retention labels."
+description: "Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the 'sub-category' file plan descriptor for retention labels.
+Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

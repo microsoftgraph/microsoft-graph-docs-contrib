@@ -1,6 +1,6 @@
 ---
 title: "filePlanReferenceTemplate resource type"
-description: "Represents the 'file plan reference' file plan descriptor for retention labels."
+description: "Read the properties and relationships of a microsoft.graph.security.filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the 'file plan reference' file plan descriptor for retention labels.
+Read the properties and relationships of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplandescriptor-fileplanreferencetemplate.md) object.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

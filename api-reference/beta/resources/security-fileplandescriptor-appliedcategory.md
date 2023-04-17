@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Unique string that defines a category name applied to the label. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|subCategory|[microsoft.graph.security.subCategory](../resources/security-fileplandescriptor-subcategory.md)|**TODO: Add Description**|
+|subCategory|[microsoft.graph.security.subCategory](../resources/security-fileplandescriptor-subcategory.md)|Represents the unique subcategory under this category that is applied to a retention label.|
 
 ## Relationships
 None.

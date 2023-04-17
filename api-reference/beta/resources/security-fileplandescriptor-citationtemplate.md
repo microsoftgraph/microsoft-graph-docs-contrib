@@ -1,6 +1,6 @@
 ---
 title: "citationTemplate resource type"
-description: "Represents the 'citation' file plan descriptor for retention labels."
+description: "Read the properties and relationships of a microsoft.graph.security.citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the 'citation' file plan descriptor for retention labels.
+Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
@@ -29,8 +29,8 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|citationJurisdiction|String|**TODO: Add Description**|
-|citationUrl|String|**TODO: Add Description**|
+|citationJurisdiction|String|Represents the jurisdiction or agency that published the citation.|
+|citationUrl|String|Represents the URL to the published citation.|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the citation. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the citation is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
 |displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
