@@ -55,7 +55,7 @@ The following example creates a task folder called Volunteer in the default task
   "name": "create_outlooktaskfolder_from_outlookuser"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskfolders 
+POST https://graph.microsoft.com/beta/me/outlook/taskFolders 
 Content-type: application/json
 
 {
