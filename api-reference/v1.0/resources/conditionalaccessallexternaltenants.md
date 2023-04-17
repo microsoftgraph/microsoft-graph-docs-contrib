@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md) resource. Represents all external tenants in the policy scope.
 
 ## Properties
