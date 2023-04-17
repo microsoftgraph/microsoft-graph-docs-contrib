@@ -20,7 +20,6 @@ A collection of groups that are enabled to use an authentication method as part 
 |id|String|Object Id of an Azure AD user or group.|
 |isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
 |targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
-|useForSignIn|Boolean|Determines if the authentication method can be used to sign in to Azure AD.|
 
 ## Relationships
 None.
