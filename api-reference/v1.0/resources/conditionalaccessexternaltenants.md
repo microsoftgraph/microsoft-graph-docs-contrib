@@ -2,7 +2,7 @@
 title: "conditionalAccessExternalTenants resource type"
 description: "An abstract type that represents external tenants in the policy scope. This abstract type is inherited by conditionalAccessAllExternalTenants and conditionalAccessEnumeratedExternalTenants."
 ms.localizationpriority: medium
-author: "dmilchuk"
+author: "sandeo"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
