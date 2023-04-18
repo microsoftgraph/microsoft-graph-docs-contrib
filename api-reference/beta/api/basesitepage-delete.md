@@ -40,6 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents a page in the site page library.
+This resource represents a baseSitePage in the site page library.
 Inherits from [baseItem](../resources/baseitem.md).
 
 ## Methods
