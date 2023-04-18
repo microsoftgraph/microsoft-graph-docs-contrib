@@ -151,7 +151,6 @@ The following properties of the **group** entity support `$count` of a collectio
 | Property                            | eq Count 0       | eq Count 1          |
 |-------------------------------------|------------------|---------------------|
 | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| owners/$count                       |                  | ![Advanced][AQP]    |
 | proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
 
 ## Organizational contacts properties
@@ -216,8 +215,6 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | Property                            | eq Count 0       | eq Count 1          |
 |-------------------------------------|------------------|---------------------|
 | federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| ownedObjects/$count                 |                  | ![Advanced][AQP]    |
-| owners/$count                       |                  | ![Advanced][AQP]    |
 
 ## User properties
 
@@ -314,9 +311,11 @@ The following properties of the **user** entity support `$count` of a collection
 
 | Property                            | eq Count 0       | eq Count 1          |
 |-------------------------------------|------------------|---------------------|
-| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| ownedObjects/$count                 |                  | ![Advanced][AQP]    |
-| owners/$count                       |                  | ![Advanced][AQP]    |
+| assignedLicenses/$count             | ![Advanced][AQP] | ![NotSupported][NS] |
+| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| otherMails/$count                   | ![Advanced][AQP] | ![NotSupported][NS] |
+| ownedObjects/$count                 | ![Advanced][AQP] | ![Advanced][AQP]    |
+| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg

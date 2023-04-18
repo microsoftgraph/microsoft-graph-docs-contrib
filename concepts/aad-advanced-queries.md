@@ -39,6 +39,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count
 ConsistencyLevel: eventual
 ```
 
+## Microsoft Graph objects that support advanced query capabilities
+
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
 | Object                                                                                            | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -53,6 +55,7 @@ These advanced query capabilities are supported only on directory objects and th
 | [servicePrincipal](/graph/api/resources/serviceprincipal)                                         | <li>[memberOf](/graph/api/serviceprincipal-list-memberof) <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li>[appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li>[appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li>[oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                           |
 | [user](/graph/api/resources/user)                                                                 | <li>[memberOf](/graph/api/user-list-memberof) <li>[transitiveMemberOf](/graph/api/user-list-transitivememberof)<li>[ownedObjects](/graph/api/user-list-ownedobjects) <li>[registeredDevices](/graph/api/user-list-registereddevices) <li>[ownedDevices](/graph/api/user-list-owneddevices) <li>[transitiveManagers](/graph/api/user-list-manager) <li>[directReports](/graph/api/user-list-directreports) <li>[transitiveReports](/graph/api/user-get-transitivereports) <li>[appRoleAssignments](/graph/api/user-list-approleassignments) <li>[oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
+## Query scenarios that require advanced query capabilities
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries:
 
@@ -78,7 +81,7 @@ The following table lists query scenarios on directory objects that are supporte
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-## Support for filter on properties of Azure AD (directory) objects
+## Support for filter by properties of Azure AD (directory) objects
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
@@ -90,7 +93,7 @@ Properties of directory objects behave differently in their support for query pa
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
   + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/filter-query-parameter#filter-using-lambda-operators).
 
-The following tables summarizes support for `$filter` operators by properties of directory objects supported by the advanced query capabilities.
+The following tables summarize support for `$filter` operators by properties of directory objects and indicates where querying is supported through advanced query capabilities.
 
 ### Legend
 
@@ -104,6 +107,34 @@ The following tables summarizes support for `$filter` operators by properties of
 + Properties that are not listed here do not support `$filter` at all.
 
 [!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
+
+## Support for sorting by properties of Azure AD (directory) objects
+
+The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
+
+| Directory object   | Property name                 | Supports $orderby |
+|--------------------|-------------------------------|-------------------|
+| administrativeUnit | createdDateTime               | ![Advanced][AQP]  |
+| administrativeUnit | deletedDateTime               | ![Advanced][AQP]  |
+| administrativeUnit | displayName                   | ![Advanced][AQP]  |
+| application        | createdDateTime               | ![Advanced][AQP]  |
+| application        | deletedDateTime               | ![Advanced][AQP]  |
+| application        | displayName                   | ![Advanced][AQP]  |
+| orgContact         | createdDateTime               | ![Advanced][AQP]  |
+| orgContact         | displayName                   | ![Advanced][AQP]  |
+| device             | approximateLastSignInDateTime | ![Advanced][AQP]  |
+| device             | createdDateTime               | ![Advanced][AQP]  |
+| device             | deletedDateTime               | ![Advanced][AQP]  |
+| device             | displayName                   | ![Advanced][AQP]  |
+| group              | deletedDateTime               | ![Advanced][AQP]  |
+| group              | displayName                   | ![Default][RDS]   |
+| servicePrincipal   | createdDateTime               | ![Advanced][AQP]  |
+| servicePrincipal   | deletedDateTime               | ![Advanced][AQP]  |
+| servicePrincipal   | displayName                   | ![Advanced][AQP]  |
+| user               | createdDateTime               | ![Advanced][AQP]  |
+| user               | deletedDateTime               | ![Advanced][AQP]  |
+| user               | displayName                   | ![Default][RDS]   |
+| user               | userPrincipalName             | ![Default][RDS]   |
 
 ## Error handling for advanced queries on directory objects
 
@@ -383,3 +414,9 @@ Content-type: application/json
 + [Query parameter limitations](known-issues.md#some-limitations-apply-to-query-parameters)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
+
+
+
+[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
+[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
+[NS]: ../concepts/images/yesandnosymbols/no.svg
