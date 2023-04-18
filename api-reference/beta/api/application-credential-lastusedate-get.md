@@ -3,8 +3,8 @@ title: "Get application credential last used activity date"
 doc_type: apiPageType
 description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
 localization_priority: Normal
-author: "madansr7"
-ms.prod: "microsoft-identity-platform"
+author: "madansr7
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get appCredentialSignInActivity

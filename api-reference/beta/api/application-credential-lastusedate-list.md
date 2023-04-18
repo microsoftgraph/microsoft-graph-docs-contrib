@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a list of appCredentialSignInActivity object that contains recent activity of application credentials."
 localization_priority: Normal
 author: "madansr7"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # List appCredentialSignInActivity

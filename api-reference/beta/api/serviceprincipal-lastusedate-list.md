@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a list servicePrincipalSignInActivity object that contains sign-in activity information for service principals in Azure Active Directory tenant."
 localization_priority: Normal
 author: "madansr7"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 
@@ -20,11 +20,11 @@ Get a [servicePrincipalSignInActivity](../resources/servicePrincipalSignInActivi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 
 ## HTTP request
@@ -38,16 +38,16 @@ GET /reports/servicePrincipalSignInActivities
 
 This method supports the following OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
-| Name | Description | Example |
-|:---- |:----------- |:------- |
-| [$filter](/graph/query-parameters#filter-parameter)| Filters results (rows). | `/reports/servicePrincipalSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'` |
-| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. |`/reports/servicePrincipalSignInActivities?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| Name                                                      | Description                                                                   | Example                                                                                             |
+| :-------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| [$filter](/graph/query-parameters#filter-parameter)       | Filters results (rows).                                                       | `/reports/servicePrincipalSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'` |
+| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/reports/servicePrincipalSignInActivities?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`          |
 
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body

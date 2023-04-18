@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in Azure Active Directory tenant."
 localization_priority: Normal
 author: "madansr7"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get servicePrincipalSignInActivities
@@ -19,11 +19,11 @@ Get a [servicePrincipalSignInActivity](../resources/servicePrincipalSignInActivi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 
 ## HTTP request
@@ -39,8 +39,8 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
