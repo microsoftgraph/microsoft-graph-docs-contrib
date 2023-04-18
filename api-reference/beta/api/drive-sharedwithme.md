@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
 
 #### Response
 
-The following is an example of the response that returns items shared with the signed-in user, since the drive is the user's default drive.
+The following is an example of the response that returns items shared with the signed-in user, because the drive is the user's default drive.
 
 <!-- {
   "blockType": "response",
