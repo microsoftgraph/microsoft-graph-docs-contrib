@@ -44,14 +44,12 @@ Use the employee learning APIs to do the following:
   - [Get the specified metadata of a provider's ingested content](../api/learningcontent-get.md) in Viva Learning.
   - [Delete the specfied metadata of a provider's ingested content](../api/learningprovider-delete-learningcontents.md).
  - Create and manage learning course activity:
+   - [Get the list of the courses for a user](../api/learningcourseactivity-list.md)
    - [Create a new learning course activity](../api/employeeexperienceuser-post-learningcourseactivities.md) in Viva Learning.
    - [Get details of learning course activity ](../api/learningcourseactivity-get.md) by using **learningCourseActivityId**.
-   - [Get details of learning course activity ](../api/learningcourseactivity-getByExternalCourseActivityId.md) by using **externalCourseActivityId**.
    - [Update details of learning course activity ](../api/learningcourseactivity-update.md) by using **learningCourseActivityId**.
    - [Delete learning course activity](../api/learningcourseactivity-delete.md)
-   - [Get the list of the courses for a user](../api/learningcourseactivity-list.md)
-   - [Get details of a course for a user](../api/learningcourseactivity-details.md) by using **learningCourseActivityId**
-
+   
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 

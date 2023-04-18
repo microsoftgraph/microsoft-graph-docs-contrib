@@ -23,8 +23,6 @@ Inherits from [entity](../resources/entity.md).
 |[List learningCourseActivity for user](../api/learningcourseactivity-list.md)|Collection of [learningCourseActivity](../resources/learningcourseactivity.md) object|Retrieve all courses for a user.|
 |[Create learningCourseActivity](../api/employeeexperienceuser-post-learningcourseactivities.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Get learningCourseActivity](../api/learningcourseactivity-get.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
-|[Get learningCourseActivity By ExternalCourseActivityId](../api/learningcourseactivity-getByExternalCourseActivityId.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Read the properties and relationships of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
-|[Get learningCourseActivity course details for a user](../api/learningcourseactivity-details.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Retrives a course details for a user.|
 |[Update learningCourseActivity](../api/learningcourseactivity-update.md)|[learningCourseActivity](../resources/learningcourseactivity.md)|Update the properties of a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 |[Delete learningCourseActivity](../api/learningcourseactivity-delete.md)|None|Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object.|
 
