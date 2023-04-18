@@ -27,18 +27,20 @@ The calling user must have the Privileged Role Administrator Azure AD role.
 
 ## HTTP requests
 
+To refresh incidents on all alerts, use the following request.
 <!-- {
   "blockType": "ignored"
 }
 -->
-1) To refresh incidents on all alerts, use the below request.
-
 ``` http
 POST /identityGovernance/roleManagementAlerts/alerts/refresh
 ```
 
-2) To refresh a single alert, use the below request.
-
+To refresh a single alert, use the below request.
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 POST /identityGovernance/roleManagementAlerts/alerts/{alertId}/refresh
 ```
