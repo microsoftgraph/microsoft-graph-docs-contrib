@@ -1,6 +1,6 @@
 ---
 title: "Activate educationAssignment"
-description: "A teacher wants to activate an inactive assignment to signal that the assignment has action items for teachers and students"
+description: "Activates an inactive assignment to signal that the assignment has action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
