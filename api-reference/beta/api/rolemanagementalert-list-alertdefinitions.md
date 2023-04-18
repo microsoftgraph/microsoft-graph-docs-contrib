@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRoleManagementAlertDefinition"
+title: "List alertDefinitions"
 description: "Get a list of the unifiedRoleManagementAlertDefinition objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleManagementAlertDefinition
+# List alertDefinitions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

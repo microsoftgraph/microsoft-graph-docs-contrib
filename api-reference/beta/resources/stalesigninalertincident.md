@@ -1,6 +1,6 @@
 ---
 title: "staleSignInAlertIncident resource type"
-description: "Represents an alert incident that is triggered if there are accounts in a privileged role which have not signed in to Azure AD within a specified time period. These accounts might be service or shared accounts that are not being maintained and are vulnerable to security threats."
+description: "Represents an alert incident that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified time period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"

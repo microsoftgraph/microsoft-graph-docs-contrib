@@ -13972,10 +13972,10 @@ items:
               href: api/rolemanagementalert-list-alerts.md
             - name: Get
               href: api/unifiedrolemanagementalert-get.md
-            - name: Refresh alert
-              href: api/unifiedrolemanagementalert-refresh.md
-            - name: Update alert
+            - name: Update
               href: api/unifiedrolemanagementalert-update.md
+            - name: Refresh
+              href: api/unifiedrolemanagementalert-refresh.md
           - name: Role management alert definitions
             href: resources/unifiedrolemanagementalertdefinition.md
             items:
@@ -13991,7 +13991,7 @@ items:
               href: api/rolemanagementalert-list-alertconfigurations.md
             - name: Get
               href: api/unifiedrolemanagementalertconfiguration-get.md
-            - name: Update rule
+            - name: Update
               href: api/unifiedrolemanagementalertconfiguration-update.md
           - name: Role management alert incidents
             href: resources/unifiedrolemanagementalertincident.md

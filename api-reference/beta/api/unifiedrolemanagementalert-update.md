@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Dismiss a [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object by setting the isActive property to false.
+Dismiss a [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object by setting the **isActive** property to `false`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAler
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isActive|Boolean|False by default. True if the alert is active. Set to false to dismiss the alert. Required.|
+|isActive|Boolean|`false` by default; `true` if the alert is active. Set to `false `to dismiss the alert. Required.|
 
 ## Response
 
@@ -74,7 +74,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

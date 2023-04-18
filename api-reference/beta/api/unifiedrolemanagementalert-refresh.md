@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlert: refresh"
-description: "Refresh incidents on all alerts or on a single alert for Privileged Identity Management (PIM) for Azure AD roles."
+description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Refresh incidents on all alerts or on a single alert for Privileged Identity Management (PIM) for Azure AD roles.
+Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,8 +56,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|scopeType|String|The type of the scope where the alert is created. DirectoryRole is the only supported one for Azure AD Roles. New types like Application and Group may be introduced.|
-|scopeId|String|The id of the scope where the alert is related. For example, directory id, application id, etc.|
+|scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Azure AD roles. |
+|scopeId|String|The ID of the scope where the alert applies. For example, directory ID or application ID.|
 
 For refreshing a single alert, a request body is not needed.
 
@@ -68,7 +68,7 @@ If successful, this action returns a `202 Accepted` response code with a 'Locati
 
 ## Examples
 
-### Example 1: Refresh all the alerts under a resource scope like tenant.
+### Example 1: Refresh all the alerts under a resource scope like a tenant
 
 #### Request
 The following is an example of a request.
@@ -86,7 +86,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -104,19 +103,17 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "unifiedrolemanagementalertthis.refresh"
+  "name": "unifiedrolemanagementalertthis.refresh.alertId"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_StaleSignInAlert/refresh
-
 Content-Type: application/json
 ```
 
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

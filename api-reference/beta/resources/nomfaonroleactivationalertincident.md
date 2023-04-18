@@ -1,6 +1,6 @@
 ---
 title: "noMfaOnRoleActivationAlertIncident resource type"
-description: "Represents an alert incident that is triggered if roles do not require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users."
+description: "Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation. 
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -20,9 +20,9 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md).|
-|roleDisplayName|String|The identifier for a directory role display name.|
-|roleTemplateId|String|The identifier for a directory role template.|
+|id|String|The identifier for an alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md).|
+|roleDisplayName|String|The name of the Azure AD [directory role](unifiedroledefinition.md).|
+|roleTemplateId|String|The globally unique identifier for a [directory role](unifiedroledefinition.md).|
 
 ## Relationships
 None.

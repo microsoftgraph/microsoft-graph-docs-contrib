@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRoleManagementAlertConfiguration"
+title: "List alertConfigurations"
 description: "Get a list of the unifiedRoleManagementAlertConfiguration objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleManagementAlertConfiguration
+# List alertConfigurations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,7 @@ The calling user must be a member user or have the Privileged Role Administrator
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alertConfigurations
+GET /identityGovernance/roleManagementAlerts/alertConfigurations?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## Optional query parameters

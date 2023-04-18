@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRoleManagementAlertIncidents"
+title: "List alertIncidents"
 description: "Get a list of the unifiedRoleManagementAlertIncident objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleManagementAlertIncidents
+# List alertIncidents
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the alert incidents with pagination for Azure AD roles under a resource scope like tenant.
+### Example 1: Get the top five alert incidents under a resource scope like the tenant
 
 #### Request
 The following is an example of a request.

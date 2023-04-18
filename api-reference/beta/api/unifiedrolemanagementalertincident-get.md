@@ -82,7 +82,7 @@ Content-Type: application/json
   "id": "a9f38501-74ec-43ea-8663-6c538602150d",
   "assigneeId": "a9f38501-74ec-43ea-8663-6c538602150d",
   "assigneeDisplayName": "testUser1",
-  "assigneeUserPrincipalName": "testuser1@azrbac.ccsctp.net"
+  "assigneeUserPrincipalName": "testuser1@Contoso.com"
 }
 ```
 

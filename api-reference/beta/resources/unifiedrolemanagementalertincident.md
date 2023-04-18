@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertIncident resource type"
-description: "Represents the alert incident resource that includes alert information for incidents in Privileged Identity Management (PIM)."
+description: "An abstract type that represents the details of a security alert incident in Privileged Identity Management (PIM) for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the alert incident resource that includes alert information for incidents in Privileged Identity Management (PIM).
-This is an abstract type.
+
+This abstract type is inherited by the following derived types:
+- [invalidLicenseAlertIncident](invalidlicensealertincident.md)
+- 
 
 Inherits from [entity](../resources/entity.md).
 

@@ -13,8 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the alert configuration resource that specifies the various configurations of an alert that can be updated and modified in Privileged Identity Management (PIM).
-This is an abstract type.
+An abstract type that exposes the various configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles.
+
+This abstract type is inherited by the following derived types:
+- [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)
+-
 
 Inherits from [entity](../resources/entity.md).
 

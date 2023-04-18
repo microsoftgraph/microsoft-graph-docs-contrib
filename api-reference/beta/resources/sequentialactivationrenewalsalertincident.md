@@ -1,6 +1,6 @@
 ---
 title: "sequentialActivationRenewalsAlertIncident resource type"
-description: "Represents an alert incident that is triggered if a user activates the same privileged role multiple times within the last 30 days."
+description: "Represents the details of an alert incident that is triggered if a user activates the same privileged role multiple times within the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if a user activates the same privileged role multiple times within the last 30 days.
+Represents an alert incident that is triggered if a user activates the same privileged role multiple times within the last 30 days. The threshold that triggers this alert when it's reached is defined in the [sequentialActivationRenewalsAlertConfiguration resource type](sequentialactivationrenewalsalertconfiguration.md).
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
@@ -28,8 +28,8 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |roleDefinitionId|String|The identifier for a directory role definition.|
 |roleDisplayName|String|The identifier for a directory role display name.|
 |roleTemplateId|String|The identifier for a directory role template.|
-|sequenceEndDateTime|DateTimeOffset|End date time of the sequential-activation sequence.|
-|sequenceStartDateTime|DateTimeOffset|Start date time of the sequential-activation sequence.|
+|sequenceEndDateTime|DateTimeOffset|End date time of the sequential activation event.|
+|sequenceStartDateTime|DateTimeOffset|Start date time of the sequential activation event.|
 
 ## Relationships
 None.
