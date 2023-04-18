@@ -33,16 +33,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /sites/{siteId}/pages/{pageId}/publish
+POST /sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/publish
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
-This message does not have a request body. Any request body sent will be ignored.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, the API call returns a `204 No Content`.
+If successful, this method returns a `204 No Content`. It does not return anything in the response body.
 
 <!-- { "blockType": "response" } -->
 

@@ -16425,58 +16425,68 @@ items:
           href: api/documentsetversion-restore.md
       - name: Pages (preview)
         items:
+        - name: Base Site page
+          href: resources/basesitepage.md
+          items: 
+          - name: List
+            href: api/basesitepage-list.md
+          - name: Get
+            href: api/basesitepage-get.md
+          - name: Delete
+            href: api/basesitepage-delete.md
         - name: Site page
           href: resources/sitepage.md
-        - name: List
-          href: api/sitepage-list.md
-        - name: Create
-          href: api/sitepage-create.md
-        - name: Get
-          href: api/sitepage-get.md
-        - name: Update
-          href: api/sitepage-update.md
-        - name: Delete
-          href: api/sitepage-delete.md
-        - name: Publish
-          href: api/sitepage-publish.md
-        - name: Horizontal section
-          items:
+          items: 
+          - name: List
+            href: api/sitepage-list.md
+          - name: Create
+            href: api/sitepage-create.md
+          - name: Get
+            href: api/sitepage-get.md
+          - name: Update
+            href: api/sitepage-update.md
+          - name: Delete
+            href: api/basesitepage-delete.md
+          - name: Publish
+            href: api/sitepage-publish.md
           - name: Horizontal section
-            href: resources/horizontalsection.md
-          - name: List
-            href: api/horizontalsection-list.md
-          - name: Get
-            href: api/horizontalsection-get.md
-          - name: Column
             items:
-            - name: Horizontal section column
-              href: resources/horizontalsectioncolumn.md
+            - name: Horizontal section
+              href: resources/horizontalsection.md
             - name: List
-              href: api/horizontalsectioncolumn-list.md
+              href: api/horizontalsection-list.md
             - name: Get
-              href: api/horizontalsectioncolumn-get.md
-        - name: Vertical section
-          items:
+              href: api/horizontalsection-get.md
+            - name: Column
+              items:
+              - name: Horizontal section column
+                href: resources/horizontalsectioncolumn.md
+              - name: List
+                href: api/horizontalsectioncolumn-list.md
+              - name: Get
+                href: api/horizontalsectioncolumn-get.md
           - name: Vertical section
-            href: resources/verticalsection.md
-          - name: Get
-            href: api/verticalsection-get.md
-        - name: Web part
-          items:
+            items:
+            - name: Vertical section
+              href: resources/verticalsection.md
+            - name: Get
+              href: api/verticalsection-get.md
           - name: Web part
-            href: resources/webpart.md
-          - name: Text web part
-            href: resources/textwebpart.md
-          - name: Standard WebPart
-            href: resources/standardwebpart.md
-          - name: List
-            href: api/webpart-list.md
-          - name: Get 
-            href: api/webpart-get.md
-          - name: Get position
-            href: api/webpart-getposition.md
-          - name: Get by position
-            href: api/sitepage-getwebpartsbyposition.md
+            items:
+            - name: Web part
+              href: resources/webpart.md
+            - name: Text web part
+              href: resources/textwebpart.md
+            - name: Standard WebPart
+              href: resources/standardwebpart.md
+            - name: List
+              href: api/webpart-list.md
+            - name: Get 
+              href: api/webpart-get.md
+            - name: Get position
+              href: api/webpart-getposition.md
+            - name: Get by position
+              href: api/sitepage-getwebpartsbyposition.md
       - name: Rich long-running operation
         items:
         - name: Rich long-running operation

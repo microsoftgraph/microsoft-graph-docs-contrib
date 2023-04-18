@@ -7,15 +7,15 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Delete page from the site pages list of a site
+# Delete baseSitePage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [sitePage][] from the site pages [list][] in a [site][].
+Removes a [baseSitePage][] from the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitepage.md
+[baseSitePage]: ../resources/basesitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -39,20 +39,19 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /sites/{site-id}/pages/{page-id}
 ```
 
-## Optional request headers
-
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
 
 Do not supply a request body with this method.
-<!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
 ## Response
 
-If successful, this call returns a `204 No Content` response to indicate that the resource was deleted and there was nothing to return.
+If successful, this method returns a `204 No Content`. It does not return anything in the response body.
 
 ## Example
 

@@ -33,10 +33,18 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /sites/{site-id}/pages
 ```
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
+
+> To ensure successful parsing of the request body, the '@odata.type=#microsoft.graph.sitePage' must be included in the request body.
 
 ## Example
 
@@ -49,6 +57,7 @@ POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.sitePage",
   "name": "test.aspx",
   "title": "test",
   "pageLayout": "article",

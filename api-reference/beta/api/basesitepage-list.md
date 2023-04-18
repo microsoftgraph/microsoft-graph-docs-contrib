@@ -1,22 +1,22 @@
 ---
 author: rahmit
-description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
+description: "Get the collection of baseSitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
-title: List SitePage
+title: List baseSitePage
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List SitePage
+# List baseSitePage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
+Get the collection of [baseSitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
 
-[sitePage]: ../resources/sitepage.md
+[baseSitePage]: ../resources/baseSitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -33,8 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/microsoft.graph.sitePage
+GET /sites/{site-id}/pages
 ```
+
 ## Optional query parameters
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
@@ -69,7 +70,7 @@ GET /sites/{site-id}/pages
 <!--
 {
     "blockType": "response",
-    "@odata.type": "microsoft.graph.sitePage",
+    "@odata.type": "microsoft.graph.baseSitePage",
     "truncated": true,
     "isCollection":true
 }
