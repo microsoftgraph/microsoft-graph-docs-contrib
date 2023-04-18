@@ -125,14 +125,14 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
-  "name": "update_gradingCategoties"
+  "name": "update_gradingCategories"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 Content-type: application/json
 
 {
-"gradingCategories": [
+  "gradingCategories": [
         {           
             "displayName": "Lab",
             "percentageWeight": 10
@@ -167,9 +167,9 @@ Content-type: application/json
 
 {
   {
-    "@odata.context": "https://graph.microsoft.com/beta/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
     "submissionAnimationDisabled": false,
-    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_wus2gradingcategories/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [
         {
             "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
