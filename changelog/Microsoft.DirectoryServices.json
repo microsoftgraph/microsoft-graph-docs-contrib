@@ -8096,7 +8096,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
           "ChangeType": "Addition",
-          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-1.0) resource.",
           "Target": "defaultUserRolePermissions"
         }
       ],
