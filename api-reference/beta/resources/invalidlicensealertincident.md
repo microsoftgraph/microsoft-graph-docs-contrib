@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if the current Azure AD organization does not have a valid Azure AD Premium P2 license.
+Represents the details of an alert incident that is triggered if the current tenant does not have a valid Azure AD Premium P2 license.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
