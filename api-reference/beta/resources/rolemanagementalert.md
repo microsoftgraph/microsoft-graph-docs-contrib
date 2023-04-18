@@ -28,10 +28,10 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertConfigurations|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|The various configurations of an alert for Azure AD roles. Pre-defined and cannot be created or deleted, but some of the configurations can be modified.|
-|alertDefinitions|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Contain description, impact, mitigation, prevention to describe alerts.|
+|alertConfigurations|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|The various configurations of an alert for Azure AD roles. The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.|
+|alertDefinitions|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection| Defines an alert, its impact, and measures to mitigate or prevent it.|
 |alerts|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) collection|Represents the alert entity.|
-|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents operations on resources which take a long time to complete and can run in the background until operation completion.|
+|operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents operations on resources that take a long time to complete and can run in the background until completion. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
