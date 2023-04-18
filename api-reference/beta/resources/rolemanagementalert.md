@@ -18,11 +18,7 @@ Represents an alert singleton that exposes alerts, alert definitions, and alert 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List alertConfigurations](../api/rolemanagementalert-list-alertconfigurations.md)|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md) collection|Get the unifiedRoleManagementAlertConfiguration resources from the alertConfigurations navigation property.|
-|[List alertDefinitions](../api/rolemanagementalert-list-alertdefinitions.md)|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) collection|Get the unifiedRoleManagementAlertDefinition resources from the alertDefinitions navigation property.|
-|[List alerts](../api/rolemanagementalert-list-alerts.md)|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) collection|Get the unifiedRoleManagementAlert resources from the alerts navigation property.|
+None.
 
 ## Properties
 |Property|Type|Description|
