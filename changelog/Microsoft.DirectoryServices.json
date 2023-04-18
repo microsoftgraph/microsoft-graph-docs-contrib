@@ -8092,6 +8092,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-17T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "67181041-3af7-4438-9581-36744181899c",
           "ApiChange": "Resource",
           "ChangedApiName": "",
