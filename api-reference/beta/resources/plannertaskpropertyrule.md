@@ -30,7 +30,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 |move|String collection|Rules and restrictions for moving the task between buckets or plans. Accepted values are `allow`, `moveBetweenPlans`, `moveBetweenBuckets`, and `block`.|
 |notes|String collection|Rules and restrictions for changing the notes of the task. Accepted values are `allow` and `block`.|
 |order|String collection|Rules and restrictions for changing the order of the task. Accepted values are `allow` and `block`.|
-|percentComplete|String collection|Rules and restrictions for changing the completion percentage of the task. Accepted values are `allow`, `setToComplete`, `setToNotStarted`, `setToInProgress`, and `block`.|
+|percentComplete|String collection|Rules and restrictions for changing the completion percentage of the task. Accepted values are `allow`, `setToComplete`, `overrideRequirements`, `setToNotStarted`, `setToInProgress`, and `block`.|
 |previewType|String collection|Rules and restrictions for changing the preview type of the task. Accepted values are `allow` and `block`.|
 |priority|String collection|Rules and restrictions for changing the priority of the task. Accepted values are `allow` and `block`.|
 |references|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for references. Allowed overrides are `userCreated` and `applicationCreated`. Accepted values for the default rule and individual overrides are `allow`, `add`, `remove`, `block`.|
