@@ -56,7 +56,7 @@ The following example creates a task folder called `Cooking` in the specified ta
   "sampleKeys": ["AAMkADIyAAAhrbe-AAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
+POST https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders
 Content-type: application/json
 
 {
