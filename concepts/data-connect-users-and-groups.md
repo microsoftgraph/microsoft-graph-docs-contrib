@@ -27,7 +27,7 @@ The following are the options for user-scoped datasets:
 
     * **All users in the tenant**: Returns data for all the users in the tenant. For details, see [User selection and filtering capabilities](/graph/data-connect-filtering).
     * **All users in the tenant with a scope filter**: Returns data for all the users in the tenant that are part of the scope filter applied. If the scope filter is left empty, all data for all users is returned. 
-    *	**Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the mentioned group from scope. Groups can be distribution groups, security groups, or Microsoft 365 groups.	Microsoft Graph Data Connect expands the list of users from the scoped groups provided and then extracts data for each of those users.
+    *	**Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the mentioned group from scope. Groups can be distribution groups, security groups, or Microsoft 365 groups. Microsoft Graph Data Connect expands the list of users from the scoped groups provided and then extracts data for each of those users.
 
 #### Example
 
