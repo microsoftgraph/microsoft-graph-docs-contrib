@@ -48,11 +48,13 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceLocalCredentialInfo",
   "id": "String (identifier)",
-  "deviceName": "String",
-  "lastBackupDateTime": "DateTimeOffset",
-  "refreshDateTime": "DateTimeOffset",
-  "credentials": {
-    "@odata.type": "microsoft.graph.deviceLocalCredential"
+  "credentials": [
+    {
+      "@odata.type": "microsoft.graph.deviceLocalCredential"
     }
+  ],
+  "deviceName": "String",
+  "lastBackupDateTime": "String (timestamp)",
+  "refreshDateTime": "String (timestamp)"
 }
 ```

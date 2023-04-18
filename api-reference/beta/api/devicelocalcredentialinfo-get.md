@@ -44,7 +44,7 @@ GET /deviceLocalCredentials/{deviceId}
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$search`, `$orderby`, `$top`, `$count` and `$skiptoken` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 Do not supply a request body for this method.
@@ -151,7 +151,7 @@ Content-type: application/json
       {
         "accountName": "Administrator",
         "accountSid": "S-1-5-21-2318549658-1590267884-3984890135-500",
-        "backupDateTime": "2023-02-23T13:45:30.0000000Z"
+        "backupDateTime": "2023-02-23T13:45:30.0000000Z",
         "passwordBase64": "TABwAGQAOQAqACgAKQAzADQA"
       }
     ]
