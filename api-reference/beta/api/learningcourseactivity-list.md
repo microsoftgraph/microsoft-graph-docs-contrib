@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List learningCourseActivities
 Namespace: microsoft.graph
 
-Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) courses (assigned or self-initiated) for a user.
+Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) objects (assigned or self-initiated) for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,23 +23,27 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To retrieve the course activity list for a signed-in user:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-To retrieve the course activity list for a signed-in user:
-
 ``` http
 GET me/employeeExperience/learningCourseActivities
 ```
 To retrieve the course activity list for a user:
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. OData query parameters like `$skip`, `$top`, `$count`, `$select` are supported. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$skip`, `$top`, `$count`, and `$select` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -56,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request to retrieve all the course activities of a given user.
+The following is an example of a request to retrieve all the course activities for a given user.
 
 <!-- {
   "blockType": "request",
@@ -69,7 +73,8 @@ GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/
 ```
 
 ### Response
-The following is an example of the response
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
