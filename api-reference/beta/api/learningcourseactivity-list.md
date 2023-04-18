@@ -74,7 +74,9 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.learningCourseActivity"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.learningCourseActivity",
+  "isCollection": true
 }
 -->
 
