@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert singleton that exposes alerts, alert definitions, and alert configuration.
+Represents an alert singleton that exposes security alerts, definitions, and configurations in PIM for Azure AD roles.
 
 Inherits from [entity](../resources/entity.md).
 
