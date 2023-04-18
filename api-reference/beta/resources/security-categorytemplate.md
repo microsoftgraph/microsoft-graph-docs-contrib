@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subCategories|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) collection|**TODO: Add Description**|
+|subCategories|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
