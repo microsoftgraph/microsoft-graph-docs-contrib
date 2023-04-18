@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teacher wants to activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students.
-
-Activate Assignment operation can only be performed by teacher on current Inactive assignments.
+Activates an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. The Activate Assignment operation can only be performed by teacher on current Inactive assignments.
 
 ## Permissions
 
