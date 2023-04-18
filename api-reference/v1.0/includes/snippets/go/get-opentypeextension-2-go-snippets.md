@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.GroupsById("group-id").EventsById("event-id").ExtensionsById("extension-id").Get(context.Background(), nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().ByExtensionId("extension-id").Get(context.Background(), nil)
 
 
 ```

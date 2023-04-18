@@ -32,7 +32,7 @@ singleSignOnSettings.SetSingleSignOnMode(&singleSignOnMode)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

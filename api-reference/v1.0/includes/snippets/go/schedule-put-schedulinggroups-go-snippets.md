@@ -36,7 +36,7 @@ requestBody.SetIsActive(&isActive)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().SchedulingGroupsById("schedulingGroup-id").Put(context.Background(), requestBody, configuration)
+graphClient.Teams().ByTeamId("team-id").Schedule().SchedulingGroups().BySchedulingGroupId("schedulingGroup-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

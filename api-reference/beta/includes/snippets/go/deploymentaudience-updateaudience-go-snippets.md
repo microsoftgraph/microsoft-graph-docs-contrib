@@ -28,7 +28,7 @@ addMembers := []graphmodels.Objectable {
 }
 requestBody.SetAddMembers(addMembers)
 
-graphClient.Admin().Windows().Updates().DeploymentAudiencesById("deploymentAudience-id").WindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").WindowsUpdatesUpdateAudience().Post(context.Background(), requestBody, nil)
 
 
 ```

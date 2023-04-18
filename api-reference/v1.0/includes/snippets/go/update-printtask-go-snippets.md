@@ -23,7 +23,7 @@ description := "completed"
 status.SetDescription(&description) 
 requestBody.SetStatus(status)
 
-result, err := graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").TasksById("printTask-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Print().TaskDefinitions().ByTaskDefinitionId("printTaskDefinition-id").Tasks().ByTaskId("printTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

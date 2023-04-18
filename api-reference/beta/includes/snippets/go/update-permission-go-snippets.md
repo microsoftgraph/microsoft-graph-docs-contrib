@@ -22,7 +22,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Permissions().ByPermissionId("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
