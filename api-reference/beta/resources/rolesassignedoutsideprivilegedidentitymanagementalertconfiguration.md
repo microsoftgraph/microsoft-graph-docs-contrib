@@ -1,6 +1,6 @@
 ---
 title: "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if roles are being assigned outside of Privileged Identity Management in the last 30 days."
+description: "Represents an alert configuration that is triggered if Azure AD roles have been assigned outside of Privileged Identity Management in the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
