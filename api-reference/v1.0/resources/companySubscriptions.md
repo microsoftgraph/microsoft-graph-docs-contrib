@@ -1,7 +1,7 @@
 ---
 title: "companySubscriptions resource type"
 description: "Represents the subscriptions for a tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
