@@ -25,6 +25,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/drive/following
+```
+
+## Response
+
+This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
+If no items were found, an empty collection is returned.
+
+## Examples
+
+### Request
+
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
@@ -47,12 +62,7 @@ GET /me/drive/following
 
 ---
 
-
-## Response
-
-This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
-If no items were found, an empty collection is returned.
-
+### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
 ```http
@@ -88,4 +98,3 @@ Content-type: application/json
   ]
 }
 -->
-
