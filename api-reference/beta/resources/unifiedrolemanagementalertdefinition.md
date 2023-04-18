@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the alert definition resource that contains description, impact, mitigation, prevention, and details for alerts in Privileged Identity Management (PIM).
+Represents the alert definition that contains the description, impact, and measures to mitigate or prevent a security alert from being triggered in your tenant in PIM for Azure AD roles.
 
 Inherits from [entity](../resources/entity.md).
 
