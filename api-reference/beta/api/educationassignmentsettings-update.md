@@ -157,7 +157,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.gradingCategory"
+  "@odata.type": "microsoft.graph.gradingCategory",
+  "isCollection": true
 } -->
 
 ```http
@@ -165,7 +166,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    {
+  {
     "@odata.context": "https://graph.microsoft.com/beta/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
     "submissionAnimationDisabled": false,
     "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodbetaeduasg_wus2gradingcategories/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
@@ -186,6 +187,101 @@ Content-type: application/json
             "percentageWeight": 10
         }
     ]
-}
+  }
 }
 ```
+
+### Example 3: Delta payload to delete, modify and add grading categories.
+
+### Request
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
+  "name": "update_gradingCategoties_delta"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+{
+    "gradingCategories@delta": [
+        {
+            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
+            "displayName": "Lab Test"
+        },
+        {
+            "@odata.context": "https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity",
+            "id": "e2a86277-24f9-4f29-8196-8c83fc69d00d",
+            "reason": "deleted"
+        },
+        {
+            "displayName": "Lab Practice",
+            "percentageWeight": 30
+        },
+        {
+            "displayName": "Lab Theory",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+### Response
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.gradingCategory"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": false,
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "fb4a4009-3cc4-4dea-9991-e0a0763659e3",
+            "displayName": "Homework",
+            "percentageWeight": 30
+        },
+        {
+            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
+            "displayName": "Lab Test",
+            "percentageWeight": 30
+        },
+        {
+            "id": "d47d7a3f-44a1-47e1-8aec-68b028f64b2e",
+            "displayName": "Lab Practice",
+            "percentageWeight": 30
+        },
+        {
+            "id": "021db844-0f03-4483-929d-1c1dbfd4fcb4",
+            "displayName": "Lab Theory",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+<!-- uuid: 37d99af7-cfc5-4e3b-8566-f7d40e4a2070
+2023-04-18 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update educationAssignmentSettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
