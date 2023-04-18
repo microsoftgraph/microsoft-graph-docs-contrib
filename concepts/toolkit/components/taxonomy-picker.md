@@ -16,11 +16,17 @@ The component retrieves the first level terms that are present under a specified
 
 ## Example
 
-The following example shows the use of the `mgt-taxonomy-picker` component to select a term from a termset. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
+The following example shows the use of the `mgt-taxonomy-picker` component to select a term from a term set.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker--taxonomy-picker&source=docs" height="500"></iframe>
+![mgt-taxonomy-picker-termset](./images/mgt-taxonomy-picker-termset.png)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker--taxonomy-picker&source=docs)
+The following example shows the use of the `mgt-taxonomy-picker` component to select a child term of a term in a term set.
+
+![mgt-taxonomy-picker-term](./images/mgt-taxonomy-picker-term.png)
+
+The following example shows the use of the `mgt-taxonomy-picker` component to select a child term of a term in a term set in a different language.
+
+![mgt-taxonomy-picker-locale-term](./images/mgt-taxonomy-picker-locale-term.png)
 
 ## Properties and attributes
 
@@ -50,6 +56,12 @@ The following example changes the behavior of the component to fetch first level
 
 ```html
 <mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235" term-id="a56caeb7-3b7d-4d22-93a9-0232e12905f6"></mgt-taxonomy-picker>
+```
+
+The following example changes the behavior of the component to fetch the French labels of the first level child terms of specified term
+
+```html
+<mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235" term-id="a56caeb7-3b7d-4d22-93a9-0232e12905f6" locale="fr-FR"></mgt-taxonomy-picker>
 ```
 
 The following example changes the behavior of the component to fetch first level child terms of specified term set that is present in a specified site
