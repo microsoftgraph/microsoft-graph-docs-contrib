@@ -15203,7 +15203,7 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
-        - name: Froms activity
+        - name: Forms activity
           href: resources/microsoft-forms-usage-reports.md
           items:
           - name: Get user detail
