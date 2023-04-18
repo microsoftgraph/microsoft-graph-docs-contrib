@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if the current Azure AD organization does not have a valid Azure AD Premium P2 license.
+Represents an alert configuration that's triggered if the tenant doesn't have a valid Azure AD Premium P2 license that's required to use the PIM for Azure AD roles feature.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
