@@ -24,7 +24,7 @@ Represents a role management container for unified role definitions and role ass
 | [List transitiveRoleAssignments](../api/rbacapplication-list-transitiveroleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. This API requires the **principalId** in a request. |
 | [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. |
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider. |
-| [List customAppScopes](../api/rbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customappscope](../resources/customappscope.md) objects for an RBAC provider. |
+| [List customAppScopes](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customappscope](../resources/customappscope.md) objects for an RBAC provider. |
 
 ## Properties
 

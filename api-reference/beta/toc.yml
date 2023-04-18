@@ -12370,13 +12370,13 @@ items:
             - name: List
               href: api/unifiedrbacapplication-list-customappscopes.md
             - name: Create
-              href: api/unifiedrbacapplication-post-customappscopes.md
+              href: api/unifiedrbacapplication-post-customappscope.md
             - name: Get
-              href: api/unifiedrbacapplication-get-customappscopes.md
+              href: api/unifiedrbacapplication-get-customappscope.md
             - name: Update
-              href: api/unifiedrbacapplication-update-customappscopes.md
+              href: api/unifiedrbacapplication-update-customappscope.md
             - name: Delete
-              href: api/unifiedrbacapplication-delete-customappscopes.md
+              href: /api/unifiedrbacapplication-delete-customappscope.md
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:
