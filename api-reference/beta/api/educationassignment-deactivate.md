@@ -1,6 +1,6 @@
 ---
 title: "Deactivate educationAssignment"
-description: "A teacher wants to mark an assigned assignment as inactive to signal that the assignment has no further action items for both teachers and students."
+description: "Marks an assigned assignment as inactive to signal that the assignment has no further action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teacher wants to mark an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for both teachers and students.
+Mark an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for teachers and students.
 
-Deactivate Assignment operation can only be performed by teacher on Assigned assignments.
+The Deactivate Assignment operation can only be performed by teacher on Assigned assignments.
 
 ## Permissions
 
