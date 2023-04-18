@@ -10758,7 +10758,7 @@ items:
               href: resources/cloudpcreports.md
             - name: Get daily aggregated remote connection reports
               href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-            - name: Get historical remote conneciton reports
+            - name: Get historical remote connection reports
               href: api/cloudpcreports-getremoteconnectionhistoricalreports.md
             - name: Get real time remote connection latency
               href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
