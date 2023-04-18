@@ -95,3 +95,32 @@ mgt-people-picker {
   --person-line2-text-color: red;
 }
 ```
+
+### Example 4: Customize Fluent UI CSS tokens
+
+You can customize the tokens used by Fluent UI to style the fluent UI component used in an `mgt` component. Fluent UI Web Components provides first-class support for Design Tokens and makes setting, getting, and using Design Tokens simple.
+
+See how to customize the Fluent UI web components [Design Tokens here](/fluent-ui/web-components/design-system/design-tokens).
+
+Alternatively, you can override existing design token values with your own values. However, this practise is discouraged because the value you set will be used throughout the DOM where and `mgt` component with an underlying Fluent UI element is used. It will not change in `light` or `dark` theme modes.
+
+```html
+<mgt-login></mgt-login>
+```
+
+```css
+body {
+  /**
+  * Overrides the default #ffffff color for dark theme and #000000 color for light theme
+  */
+  --neutral-foreground-rest: yellow !important;
+}
+```
+
+In `light` theme mode:
+
+![Fluent UI design token value changed to yellow](../images/login-fluentui-override.png)
+
+In `dark` theme mode:
+
+![Fluent UI design token value changed to yellow](../images/login-fluentui-override-dark.png)
