@@ -17192,7 +17192,7 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
-        - name: Learning course activities
+        - name: Learning course activities (preview)
           href: resources/learningcourseactivity.md
           items:
           - name: List
