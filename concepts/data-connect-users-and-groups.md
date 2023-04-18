@@ -8,19 +8,19 @@ ms.prod: "data-connect"
 
 # Use Microsoft Graph Data Connect to define the scope of a dataset
 
-This article aims to explain what groups are in Microsoft Graph Data Connect and what the options for scope selection are along with respective examples. 
+This article explains what groups are in Microsoft Graph Data Connect and the options for scope selection. 
 
-You can create and manage several different types of groups in the Microsoft 365 admin center; for details see [Compare Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). Below are the types of groups applicable to Microsoft Graph Data Connect:
+You can create and manage several different types of groups in the Microsoft 365 admin center; for details see [Compare Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). The following types of groups applicable to Microsoft Graph Data Connect:
 
 *  **Microsoft 365 Groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 * **Distribution groups** are used for sending email notifications to a group of people.
 * **Security groups** are used for granting access to resources such as SharePoint sites.
 * **Mail-enabled security groups** are used for granting access to resources such as SharePoint and emailing notifications to those users.
 
-# Scope selection in Microsoft Graph Data Connect
-You can scope Microsoft Graph Data Connect datasets by users or by groups. The following sections provide more details about the scope options for each.
+## Scope selection in Microsoft Graph Data Connect
+You can scope Microsoft Graph Data Connect datasets by users or by groups. The following sections provide details about the scope options for each.
 
-## User-scoped datasets
+### User-scoped datasets
 User-scoped datasets can be Messages, Events, Users, etc. These datasets focus on data around the individual user for the respective dataset.
 
 * Scope Options:
@@ -36,7 +36,7 @@ User-scoped datasets can be Messages, Events, Users, etc. These datasets focus o
 
 *	**Example**:  The customer wants to extract the Messages dataset and creates a security group of users A, B, and C in a tenant of 500 users, and passes this group. MGDC expands the provided security group into a list of users, extracts the messages data for those three users and delivers the data for those users to the customer. The customer will only receive the messages dataset for individual users A, B, and C out of their tenant of 500 users.
         
-## Group-scoped datasets
+### Group-scoped datasets
 
 Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages, Group Details, etc. These datasets focus on the collective data that a group in Outlook or Teams for the respective dataset.
 
@@ -68,7 +68,7 @@ Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages
 
 > **NOTE:**  For Teams group-scoped datasets, if the group in scope is not a teams enabled group, then it will return NO data. M365 Groups can be enabled as Teams groups, but distribution groups and security groups are NOT Teams enabled. Please check the steps below to see what type of groups are available to select. 
 
-## How to search and verify for group types
+## How to search for and verify group types
 
 These steps can help developers search for the types of groups their tenant have so they can understand what is compatible with the type of scope they want to select given the table above.
 
