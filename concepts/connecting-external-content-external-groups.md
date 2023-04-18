@@ -153,6 +153,11 @@ Keep the membership of your external group up to date in Microsoft Graph. When m
 
 You can use the groups API to manage your external groups and group membership. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup) and [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
+
+> [!NOTE]
+> User's external group membership should ideally be less than 2,049 external security groups in total. This includes both direct and indirect group memberships. When this limit is exceeded search results become unpredictable. Queries from users with more than 10,000 external security groups will fail with 400 response.
+
+
 ## Next steps
 
 - [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
