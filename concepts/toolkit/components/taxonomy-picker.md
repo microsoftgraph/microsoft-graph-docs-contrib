@@ -7,7 +7,7 @@ author: anoopt
 
 # Taxonomy picker component in the Microsoft Graph Toolkit
 
-The taxonomy picker is a component that can query the [Microsoft Graph API for Taxonomy](https://learn.microsoft.com/graph/api/resources/termstore-term?view=graph-rest-1.0) and render a dropdown control with terms, allowing selection of **a single** term based on the specified term set `id` or a combination of the specified term set `id` and the specified term `id`. 
+The taxonomy picker is a component that can query the [Microsoft Graph API for Taxonomy](/graph/api/resources/termstore-term?view=graph-rest-1.0) and render a dropdown control with terms, allowing selection of **a single** term based on the specified term set `id` or a combination of the specified term set `id` and the specified term `id`. 
 
 The component retrieves the first level terms that are present under a specified term set or term. If only the term set id is provided, it returns the first level terms under that term set. If both the term set id and term id are provided, it returns the first level terms under the specified term.
 
@@ -74,7 +74,7 @@ The following example changes the behavior of the component to fetch first level
 
 Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term which will of the type [`TermStore.Term`](https://learn.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0#json-representation) | No | Yes | Yes
+`selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term which will of the type [`TermStore.Term`](/graph/api/resources/termstore-term?view=graph-rest-1.0#json-representation) | No | Yes | Yes
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -112,7 +112,7 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 | Configuration | Permission | API
 | - | - | - |
-| default | TermStore.Read.All | [/termStore/sets/{setId}/children](https://learn.microsoft.com/en-us/graph/api/termstore-term-list-children?view=graph-rest-beta&tabs=http#http-request),<br> [/termStore/sets/{setId}/terms/{termId}/children](/termStore/sets/{setId}/terms/{termId}/children),<br> [sites/{site-id}/termStore/sets/{set-id}/children](https://learn.microsoft.com/en-us/graph/api/termstore-term-list-children?view=graph-rest-1.0&tabs=http#http-request),<br> [sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](https://learn.microsoft.com/en-us/graph/api/termstore-term-list-children?view=graph-rest-1.0&tabs=http#http-request)  |
+| default | TermStore.Read.All | [/termStore/sets/{setId}/children](/graph/api/termstore-term-list-children?view=graph-rest-beta&tabs=http#http-request),<br> [/termStore/sets/{setId}/terms/{termId}/children](/termStore/sets/{setId}/terms/{termId}/children),<br> [sites/{site-id}/termStore/sets/{set-id}/children](/graph/api/termstore-term-list-children?view=graph-rest-1.0&tabs=http#http-request),<br> [sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children](/graph/api/termstore-term-list-children?view=graph-rest-1.0&tabs=http#http-request)  |
 
 For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
