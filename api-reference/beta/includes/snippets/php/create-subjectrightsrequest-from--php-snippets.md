@@ -50,9 +50,17 @@ $siteLocations->set@odatatype('microsoft.graph.subjectRightsRequestAllSiteLocati
 
 
 $requestBody->setSiteLocations($siteLocations);
+$approversUser1 = new User();
+$approversUser1->setId('1B761ED2-AA7E-4D82-9CF5-C09D737B6167');
 
 
-$requestResult = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
+$approversArray []= $approversUser1;
+$requestBody->setApprovers($approversArray);
+
+
+
+
+$result = $graphServiceClient->privacy()->subjectRightsRequests()->post($requestBody);
 
 
 ```

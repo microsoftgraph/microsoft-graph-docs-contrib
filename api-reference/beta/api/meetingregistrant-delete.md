@@ -1,7 +1,7 @@
 ---
 title: "Delete meetingRegistrant"
 description: "Cancel an onlineMeeting registration for a meetingRegistrant."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

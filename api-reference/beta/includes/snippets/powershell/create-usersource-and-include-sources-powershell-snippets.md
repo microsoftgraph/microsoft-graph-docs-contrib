@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Email = "admin@M365x809305.onmicrosoft.com"
-	IncludedSources = "mailbox, site"
+	email = "admin@M365x809305.onmicrosoft.com"
+	includedSources = "mailbox, site"
 }
 
 New-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params

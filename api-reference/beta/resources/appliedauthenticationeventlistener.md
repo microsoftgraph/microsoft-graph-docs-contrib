@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the listeners, such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in an sign-in event.
+Represents the listeners, such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in a [sign-in event](../resources/signin.md).
 
 ## Properties
 |Property|Type|Description|

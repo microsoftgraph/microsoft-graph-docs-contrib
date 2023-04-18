@@ -14,7 +14,7 @@ $requestBody->setClassifyAs(new InferenceClassificationType('focused'));
 
 
 
-$requestResult = $graphServiceClient->me()->inferenceClassification()->overridesById('inferenceClassificationOverride-id')->patch($requestBody);
+$result = $graphServiceClient->me()->inferenceClassification()->overridesById('inferenceClassificationOverride-id')->patch($requestBody);
 
 
 ```

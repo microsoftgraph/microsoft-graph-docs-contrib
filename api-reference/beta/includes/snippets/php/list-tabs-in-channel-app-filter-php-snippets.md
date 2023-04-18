@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TabsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TabsRequestBuilderGetQueryParameters();
+$queryParameters = TabsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsApp"];
 $queryParameters->filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->tabs()->get($requestConfiguration);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->tabs()->get($requestConfiguration);
 
 
 ```

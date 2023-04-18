@@ -4,164 +4,175 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerTaskConfiguration = new PlannerTaskConfiguration
+var requestBody = new PlannerTaskConfiguration
 {
+	OdataType = "#microsoft.graph.plannerTaskConfiguration",
 	EditPolicy = new PlannerTaskPolicy
 	{
-		Rules = new List<PlannerTaskRoleBasedRule>()
+		Rules = new List<PlannerTaskRoleBasedRule>
 		{
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerRelationshipBasedUserType
+				Role = new PlannerTaskConfigurationRoleBase
 				{
+					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					Role = PlannerRelationshipUserRoles.DefaultRules
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"role" , "defaultRules"
+						},
+					},
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
-					PercentComplete = new List<String>()
+					PercentComplete = new List<string>
 					{
-						"allow"
+						"allow",
 					},
 					RuleKind = PlannerRuleKind.TaskRule,
 					Assignments = new PlannerFieldRules
 					{
-						DefaultRules = new List<String>()
+						DefaultRules = new List<string>
 						{
-							"addSelf"
+							"addSelf",
 						},
-						Overrides = new List<PlannerRuleOverride>()
+						Overrides = new List<PlannerRuleOverride>
 						{
-						}
-					}
-				}
+						},
+					},
+				},
 			},
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerRelationshipBasedUserType
+				Role = new PlannerTaskConfigurationRoleBase
 				{
+					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					Role = PlannerRelationshipUserRoles.TaskAssignees
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"role" , "taskAssignees"
+						},
+					},
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
-					StartDate = new List<String>()
+					StartDate = new List<string>
 					{
-						"allow"
+						"allow",
 					},
-					DueDate = new List<String>()
+					DueDate = new List<string>
 					{
-						"allow"
+						"allow",
 					},
-					PercentComplete = new List<String>()
+					PercentComplete = new List<string>
 					{
-						"allow"
+						"allow",
 					},
-					Order = new List<String>()
+					Order = new List<string>
 					{
-						"allow"
+						"allow",
 					},
 					RuleKind = PlannerRuleKind.TaskRule,
 					References = new PlannerFieldRules
 					{
-						DefaultRules = new List<String>()
+						DefaultRules = new List<string>
 						{
-							"allow"
+							"allow",
 						},
-						Overrides = new List<PlannerRuleOverride>()
+						Overrides = new List<PlannerRuleOverride>
 						{
 							new PlannerRuleOverride
 							{
 								Name = "userCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"allow"
-								}
+									"allow",
+								},
 							},
 							new PlannerRuleOverride
 							{
 								Name = "applicationCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"block"
-								}
-							}
-						}
+									"block",
+								},
+							},
+						},
 					},
 					CheckLists = new PlannerFieldRules
 					{
-						DefaultRules = new List<String>()
+						DefaultRules = new List<string>
 						{
-							"allow"
+							"allow",
 						},
-						Overrides = new List<PlannerRuleOverride>()
+						Overrides = new List<PlannerRuleOverride>
 						{
 							new PlannerRuleOverride
 							{
 								Name = "userCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"allow"
-								}
+									"allow",
+								},
 							},
 							new PlannerRuleOverride
 							{
 								Name = "applicationCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"check"
-								}
-							}
-						}
+									"check",
+								},
+							},
+						},
 					},
 					Assignments = new PlannerFieldRules
 					{
-						DefaultRules = new List<String>()
+						DefaultRules = new List<string>
 						{
-							"block"
+							"block",
 						},
-						Overrides = new List<PlannerRuleOverride>()
+						Overrides = new List<PlannerRuleOverride>
 						{
 							new PlannerRuleOverride
 							{
 								Name = "userCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"removeSelf"
-								}
+									"removeSelf",
+								},
 							},
 							new PlannerRuleOverride
 							{
 								Name = "applicationCreated",
-								Rules = new List<PlannerRuleOverride>()
+								Rules = new List<string>
 								{
-									"check"
-								}
-							}
-						}
+									"check",
+								},
+							},
+						},
 					},
 					AppliedCategories = new PlannerFieldRules
 					{
-						DefaultRules = new List<String>()
+						DefaultRules = new List<string>
 						{
-							"allow"
+							"allow",
 						},
-						Overrides = new List<PlannerRuleOverride>()
+						Overrides = new List<PlannerRuleOverride>
 						{
-						}
-					}
-				}
-			}
-		}
-	}
+						},
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.TaskConfiguration.PatchAsync(requestBody);
 
-await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.TaskConfiguration
-	.Request()
-	.UpdateAsync(plannerTaskConfiguration);
 
 ```

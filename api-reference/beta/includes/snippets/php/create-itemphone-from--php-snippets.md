@@ -16,7 +16,7 @@ $requestBody->setNumber('+7 499 342 22 13');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->phones()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->phones()->post($requestBody);
 
 
 ```

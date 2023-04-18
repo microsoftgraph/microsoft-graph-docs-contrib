@@ -16,18 +16,77 @@ Pronouns, in this context, are words used to replace a person's name in a senten
 Global administrators can enable or disable pronouns for everyone in the organization, using the Microsoft 365 Admin Center or Microsoft Graph API as described below. By default, pronouns are disabled.
 
 Enabling pronouns in an organization facilitates associating users with their preferred pronouns within the organization. This includes the following end user experiences:
-- When pronouns are enabled, a user can optionally add and manage pronouns in the profile card in Outlook on the web and Teams. 
-- Pronouns appear by the user's name on the profile card in Outlook and Teams. 
-- Pronouns are displayed only internally within the organization. 
-- Anyone that has an account in the organization, including guest accounts, can see pronouns on profile cards. 
+
+- When pronouns are enabled, a user can optionally add and manage pronouns in the profile card in Outlook on the web and Teams.
+- Pronouns appear by the user's name on the profile card in Outlook and Teams.
+- Pronouns are displayed only internally within the organization.
+- Anyone that has an account in the organization, including guest accounts, can see pronouns on profile cards.
 
 The end user experience with pronouns might evolve over time. For current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
 
-## Confirm your current settings
+Global administrators can decide whether to display pronouns that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true#properties) property to `true`. When this property is set to `true`, pronouns are displayed for everyone within the organization. When this property is set to `false`, pronouns are not displayed for anyone within or outside the organization. The default setting is `false`.
+
+> [!IMPORTANT]
+> When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours.
+>
+> When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process might take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profile cards.
+
+## Configure pronoun settings using PowerShell
+
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure pronoun settings in your organization.
+
+### Prerequisites
+
+- **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+> [!NOTE]
+> Because pronouns settings commands are only available in beta, switch to the beta profile before running the command.
+>
+> ```powershell
+>    Select-MgProfile beta
+> ```
+
+### Confirm your current settings
+
+To get pronoun settings configuration for an organization, use the following command, and replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+
+```powershell
+   Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
+```
+
+### Enable pronouns in your organization
+
+By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
+
+> [!NOTE]
+> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All"
+> ```
+
+Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
+```
+
+### Disable pronouns in your organization
+
+Alternatively, you can make pronouns unavailable for your organization using the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
+
+```powershell
+   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$false
+```
+
+## Configure pronouns settings using the Microsoft Graph REST API
+
+### Confirm your current settings
 
 Use the [get](/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
 
-The following example gets the current display settings, which have pronouns disabled: 
+The following example gets the current display settings, which have pronouns disabled. 
 
 ``` http
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
@@ -43,22 +102,8 @@ Content-Type: application/json
   "isEnabledInOrganization": false
 }
 ```
- 
-## Scenarios
 
-A common scenario that global administrators can enable is the display of any pronouns that users have set up in their profile cards.
-
-|Scenario | isEnabledInOrganization|
-|:---|:---|
-|Do not display pronouns in profile cards to anyone within and outside an organization (default). | False|
-|Display for everyone within the organization any pronouns that users have set up in their profile cards. | True|
-
-> [!IMPORTANT]
-> When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours. 
->
-> When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process may take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers becomes visible in Microsoft 365 experiences, such as profile cards.
-
-## Enabling pronouns in your organization
+### Enable pronouns in your organization
 
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable pronouns in your organization.
 
@@ -70,6 +115,7 @@ Content-Type: application/json
   "isEnabledInOrganization": true
 }
 ```
+
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
 
 ``` http
@@ -81,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-## Disabling pronouns in your organization
+### Disable pronouns in your organization
 
 Use the update operation to make pronouns unavailable in your organization.
 
@@ -106,8 +152,7 @@ Content-Type: application/json
 ```
 
 ## See also
+
 - [Turn pronouns on or off for your organization in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off)
 - [Pronouns in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85)
 - [Profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
-- [Add or delete custom attributes on a profile card using the profile card API](add-properties-profilecard.md)
-

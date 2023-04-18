@@ -183,7 +183,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 - **Spaces**: `hello world` => `hello`, `world`
 - **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -207,6 +207,7 @@ For example:
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo" OR "mail:onevideo"
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
@@ -247,6 +248,7 @@ This looks for all groups with display names that has `one` and `video` tokens, 
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)

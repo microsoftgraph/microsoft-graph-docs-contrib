@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->contractsById('contract-id')->get();
+$result = $graphServiceClient->contractsById('contract-id')->get();
 
 
 ```

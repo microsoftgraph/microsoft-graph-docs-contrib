@@ -1,7 +1,7 @@
 ---
 title: "Update meetingRegistration"
 description: "Update the details of a meeting registration associated with an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
