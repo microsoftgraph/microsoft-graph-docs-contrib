@@ -119,8 +119,8 @@ body {
 
 In `light` theme mode:
 
-![Fluent UI design token value changed to yellow](../images/login-fluentui-override.png)
+![Fluent UI design token value changed to yellow in light mode](../images/login-fluentui-override.png)
 
 In `dark` theme mode:
 
-![Fluent UI design token value changed to yellow](../images/login-fluentui-override-dark.png)
+![Fluent UI design token value changed to yellow in dark mode](../images/login-fluentui-override-dark.png)
