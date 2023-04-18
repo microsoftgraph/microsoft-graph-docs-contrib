@@ -42,6 +42,14 @@ author: "FaithOmbongi"
 | web/homePageUrl                               | ![Advanced][AQP]    | ![NotSupported][NS] |                 | ![Advanced][AQP]    |
 | web/redirectUris/any(p:p)                     | ![Advanced][AQP]    | ![Advanced][AQP]    |
 
+The following properties of the application entity support `$count` of a collection in a filter expression.
+
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| extensionProperties/$count          | ![Advanced][AQP] | ![NotSupported][NS] |
+| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| owners/$count                       | ![Advanced][AQP] | ![Advanced][AQP]    |
+
 ## Contract properties
 
 | Property          | eq              | startsWith      |
@@ -78,7 +86,7 @@ author: "FaithOmbongi"
 | hostnames/any(p:p)                               | ![Default][RDS]  | ![Default][RDS]     |                  |                     |
 | isCompliant                                      | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |
 | isManaged                                        | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |
-| mdmAppId                                         | ![Default][RDS]  |                     |                  |                     |
+| mdmAppId                                         | ![Default][RDS]  |                     |                  | ![Advanced][AQP]    |
 | onPremisesLastSyncDateTime                       | ![Default][RDS]  |                     | ![Default][RDS]  | ![NotSupported][NS] |
 | onPremisesSyncEnabled                            | ![Default][RDS]  |                     |                  | ![Advanced][AQP]    |
 | operatingSystem                                  | ![Default][RDS]  | ![Default][RDS]     |                  | ![Advanced][AQP]    |
@@ -87,6 +95,13 @@ author: "FaithOmbongi"
 | profileType                                      | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |
 | registrationDateTime                             | ![Advanced][AQP] |                     | ![Advanced][AQP] | ![Advanced][AQP]    |
 | trustType                                        | ![Default][RDS]  |                     |                  | ![NotSupported][NS] |
+
+The following properties of the **device** entity support `$count` of a collection in a filter expression.
+
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| physicalIds/$count                  | ![Advanced][AQP] | ![NotSupported][NS] |
+| systemLabels/$count                 | ![Advanced][AQP] | ![NotSupported][NS] |
 
 ## Directory role properties
 
@@ -131,6 +146,40 @@ author: "FaithOmbongi"
 | settings/any(s:s/displayName)                              | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
 | settings/any(s:s/id)                                       | ![Default][RDS]  |
 
+The following properties of the **group** entity support `$count` of a collection in a filter expression.
+
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| owners/$count                       |                  | ![Advanced][AQP]    |
+| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
+
+## Organizational contacts properties
+
+| Property                                                   | eq               | startsWith       | ge/le           | eq Null             |
+|------------------------------------------------------------|------------------|------------------|-----------------|---------------------|
+| companyName                                                | ![Advanced][AQP] | ![Advanced][AQP] |                 | ![Advanced][AQP]    |
+| department                                                 | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| displayName                                                | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| givenName                                                  | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| jobTitle                                                   | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| mail                                                       | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| mailNickname                                               | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| manager/id                                                 | ![Default][RDS]  |                  |                 |                     |
+| onPremisesLastSyncDateTime                                 | ![Default][RDS]  |                  | ![Default][RDS] | ![NotSupported][NS] |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
+| onPremisesSyncEnabled                                      | ![Default][RDS]  |                  |                 | ![Advanced][AQP]    |
+| proxyAddresses/any(p:p)                                    | ![Default][RDS]  | ![Default][RDS]  |                 |                     |
+| surname                                                    | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+
+The following properties of the **orgContact** entity support `$count` of a collection in a filter expression.
+
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
+
 ## Service principal properties
 
 | Property                                       | eq                  | startsWith          | ge/le           | eq Null             |
@@ -161,6 +210,14 @@ author: "FaithOmbongi"
 | servicePrincipalType                           | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | tags/any(p:p)                                  | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
 | verifiedPublisher/displayName                  | ![Advanced][AQP]    | ![NotSupported][NS] |                 | ![Advanced][AQP]    |
+
+The following properties of the **servicePrincipal** entity support `$count` of a collection in a filter expression.
+
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| ownedObjects/$count                 |                  | ![Advanced][AQP]    |
+| owners/$count                       |                  | ![Advanced][AQP]    |
 
 ## User properties
 
@@ -246,36 +303,20 @@ author: "FaithOmbongi"
 
 The following table shows support for `$filter` by extension properties on the **user** object.
 
-| Extension type                     | eq               | startsWith       | eq null          |
-|------------------------------------|------------------|------------------|------------------|
-| onPremisesExtensionAttributes 1-15 | ![Advanced][AQP] |                  | ![Advanced][AQP] |
-| Schema extensions                  | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP] |
-| Open extensions                    |                  |                  |                  |
-| Directory extensions               | ![Default][RDS]  |                  | ![Advanced][AQP] |
+| Extension type                                                                           | eq                  | startsWith          | eq null             |
+|------------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
+| [onPremisesExtensionAttributes 1-15](/graph/extensibility-overview#extension-attributes) | ![Advanced][AQP]    |                     | ![Advanced][AQP]    |
+| [Schema extensions](/graph/extensibility-overview#schema-extensions)                     | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
+| [Open extensions](/graph/extensibility-overview#open-extensions)                         | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
+| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     |                     | ![Advanced][AQP]    |
 
-## Count of a collection in a filter expression
+The following properties of the **user** entity support `$count` of a collection in a filter expression.
 
-| Directory object | Property                            | eq Count 0       | eq Count 1          |
-|------------------|-------------------------------------|------------------|---------------------|
-| application      | extensionProperties/$count          | ![Advanced][AQP] | ![NotSupported][NS] |
-| application      | federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| application      | owners/$count                       | ![Advanced][AQP] | ![Advanced][AQP]    |
-| orgContact       | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| orgContact       | proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
-| device           | physicalIds/$count                  | ![Advanced][AQP] | ![NotSupported][NS] |
-| device           | systemLabels/$count                 | ![Advanced][AQP] | ![NotSupported][NS] |
-| group            | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| group            | owners/$count                       |                  | ![Advanced][AQP]    |
-| group            | proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
-| servicePrincipal | federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| servicePrincipal | ownedObjects/$count                 |                  | ![Advanced][AQP]    |
-| servicePrincipal | owners/$count                       |                  | ![Advanced][AQP]    |
-| user             | assignedLicenses/$count             | ![Advanced][AQP] | ![NotSupported][NS] |
-| user             | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| user             | otherMails/$count                   | ![Advanced][AQP] | ![NotSupported][NS] |
-| user             | ownedObjects/$count                 | ![Advanced][AQP] | ![Advanced][AQP]    |
-| user             | proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
-
+| Property                            | eq Count 0       | eq Count 1          |
+|-------------------------------------|------------------|---------------------|
+| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| ownedObjects/$count                 |                  | ![Advanced][AQP]    |
+| owners/$count                       |                  | ![Advanced][AQP]    |
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
