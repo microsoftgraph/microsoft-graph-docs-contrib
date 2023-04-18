@@ -298,11 +298,10 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | userPrincipalName                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![NotSupported][NS] |
 | userType                                                   | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 
-The following table shows support for `$filter` by extension properties on the **user** object.
+The following table shows support for `$filter` by other extension properties on the **user** object.
 
 | Extension type                                                                           | eq                  | startsWith          | eq null             |
 |------------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
-| [onPremisesExtensionAttributes 1-15](/graph/extensibility-overview#extension-attributes) | ![Advanced][AQP]    |                     | ![Advanced][AQP]    |
 | [Schema extensions](/graph/extensibility-overview#schema-extensions)                     | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
 | [Open extensions](/graph/extensibility-overview#open-extensions)                         | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
 | [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     |                     | ![Advanced][AQP]    |
