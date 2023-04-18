@@ -1,6 +1,6 @@
 ---
 title: "redundantAssignmentAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if a user goes over a specified number of days without activating a role. Users that have been assigned privileged roles they do not need increases the chance of a security attack. It is also easier for security threats to remain unnoticed in accounts that are not actively being used."
+description: "Represents an alert configuration that is triggered if a user goes over a specified number of days without activating a role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
