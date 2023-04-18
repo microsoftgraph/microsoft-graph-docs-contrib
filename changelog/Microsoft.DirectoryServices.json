@@ -3,71 +3,71 @@
     {
       "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Resource",
-              "ChangedApiName": "onPremisesCurrentExportData",
-              "ChangeType": "Addition",
-              "Description": "Added the [onPremisesCurrentExportData](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesCurrentExportData?view=graph-rest-beta) resource type.",
-              "Target": "onPremisesCurrentExportData"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Property",
-              "ChangedApiName": "anchorAttribute",
-              "ChangeType": "Addition",
-              "Description": "Added the `anchorAttribute` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
-              "Target": "onPremisesDirectorySynchronizationConfiguration"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Property",
-              "ChangedApiName": "applicationId",
-              "ChangeType": "Addition",
-              "Description": "Added the `applicationId` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
-              "Target": "onPremisesDirectorySynchronizationConfiguration"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Property",
-              "ChangedApiName": "currentExportData",
-              "ChangeType": "Addition",
-              "Description": "Added the `currentExportData` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
-              "Target": "onPremisesDirectorySynchronizationConfiguration"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Property",
-              "ChangedApiName": "synchronizationClientVersion",
-              "ChangeType": "Addition",
-              "Description": "Added the `synchronizationClientVersion` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
-              "Target": "onPremisesDirectorySynchronizationConfiguration"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Property",
-              "ChangedApiName": "writebackConfiguration",
-              "ChangeType": "Addition",
-              "Description": "Added the `writebackConfiguration` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
-              "Target": "onPremisesDirectorySynchronizationConfiguration"
-            },
-            {
-              "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-              "ApiChange": "Resource",
-              "ChangedApiName": "onPremisesWritebackConfiguration",
-              "ChangeType": "Addition",
-              "Description": "Added the [onPremisesWritebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesWritebackConfiguration?view=graph-rest-beta) resource type.",
-              "Target": "onPremisesWritebackConfiguration"
-            }
-          ],
           "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2023-04-18T07:03:29.404951Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Directory management"
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesCurrentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesCurrentExportData](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesCurrentExportData?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesCurrentExportData"
         },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "anchorAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the `anchorAttribute` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationId",
+          "ChangeType": "Addition",
+          "Description": "Added the `applicationId` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "currentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the `currentExportData` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "synchronizationClientVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `synchronizationClientVersion` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `writebackConfiguration` property to the [onPremisesDirectorySynchronizationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesWritebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesWritebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesWritebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesWritebackConfiguration"
+        }
+      ],
+      "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-18T07:03:29.404951Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
