@@ -1,6 +1,6 @@
 ---
 title: "noMfaOnRoleActivationAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if roles do not require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users."
+description: "Represents an alert configuration that is triggered if roles do not require multi-factor authentication for activation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
