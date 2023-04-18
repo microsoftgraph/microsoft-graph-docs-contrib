@@ -38,5 +38,5 @@ None.
 |entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Container for entitlement management resources, including [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md), and [entitlementManagementSettings](entitlementmanagementsettings.md).|
 |termsOfUse|[termsOfUseContainer](termsofusecontainer.md)| Container for the resources that expose the terms of use API and its features, including [agreements](agreement.md) and [agreementAcceptances](agreementacceptance.md). |
 |lifecycleWorkflows|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](identitygovernance-lifecycleworkflowscontainer.md)| Container for Lifecycle Workflow resources, including [workflow](identitygovernance-workflow.md), [customTaskExtension](identitygovernance-customtaskextension.md), and [lifecycleManagementSettings](identitygovernance-lifecyclemanagementsettings.md).|
-|roleManagementAlert|[roleManagementAlert](rolemanagementalert).md)| Container for the base resources that expose the Privileged Identity Management (PIM) APIs for Azure AD role alerts, alert definitions, and alert configurations.|
+|roleManagementAlert|[roleManagementAlert](rolemanagementalert.md)| Container for the base resources that expose the security alerts relating to Privileged Identity Management (PIM) APIs for Azure AD roles.|
 
