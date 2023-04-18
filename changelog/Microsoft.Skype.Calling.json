@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "2b9babe7-efcd-4ddd-9482-df2636ec976e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "watermarkProtectionValues",
+          "ChangeType": "Addition",
+          "Description": "Added the [watermarkProtectionValues](https://learn.microsoft.com/en-us/graph/api/resources/watermarkProtectionValues?view=graph-rest-1.0) resource type.",
+          "Target": "watermarkProtectionValues"
+        },
+        {
+          "Id": "7225e1a9-2931-4ee2-bd06-ec29de99843e",
+          "ApiChange": "Property",
+          "ChangedApiName": "watermarkProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the **watermarkProtection** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "2b9babe7-efcd-4ddd-9482-df2636ec976e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-05T22:34:36.2871929Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "05977d57-f279-432f-b811-ff44dc36ad0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowParticipantsToChangeName",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowParticipantsToChangeName** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "05977d57-f279-432f-b811-ff44dc36ad0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-03T07:50:23.4733989Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "495e7bdf-a8f3-4d5d-b301-9963869cdf10",
           "ApiChange": "Enum type",
           "ChangedApiName": "onlineMeetingContentSharingDisabledReason",
@@ -2668,6 +2712,32 @@
       "CreatedDateTime": "2022-07-19T00:00:00",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Meetings and calling"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fcbc337a-37d1-47d7-afc0-5b5fa30324c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualAppointment",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [virtualAppointment](https://learn.microsoft.com/graph/api/resources/virtualappointment?view=graph-rest-beta) resource and supported methods.",
+          "Target": "virtualAppointment"
+        },
+        {
+          "Id": "fcbc337a-37d1-47d7-afc0-5b5fa30324c7",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualAppointment",
+          "ChangeType": "Addition",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http) function.",
+          "Target": "getVirtualAppointmentJoinWebUrl"
+        }
+      ],
+      "Id": "fcbc337a-37d1-47d7-afc0-5b5fa30324c7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-17T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e
 
 ---
 
-
 ### Response
 
 The following is an example of the response. 

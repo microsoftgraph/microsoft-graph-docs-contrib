@@ -15,7 +15,7 @@ $requestBody->set@odatatype('#Microsoft.OutlookServices.ItemAttachment');
 $requestBody->setName('name-value');
 
 $additionalData = [
-'item' => $requestBody = new Item();
+		'item' => $requestBody = new Item();
 $		requestBody->set@odatatype('microsoft.graph.message');
 
 
@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
 
 
 ```

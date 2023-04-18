@@ -74,7 +74,7 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete
+POST https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MT15rfAAA=/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -103,7 +103,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

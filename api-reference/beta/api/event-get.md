@@ -44,9 +44,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read    |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read    |
+|Application | Calendars.ReadBasic, Calendars.Read |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,8 +62,8 @@ GET /groups/{id}/calendar/events/{id}
 GET /me/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+GET /me/calendarGroups/{id}/calendars/{id}/events/{id}
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

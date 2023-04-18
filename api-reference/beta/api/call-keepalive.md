@@ -1,7 +1,7 @@
 ---
 title: "call: keepAlive"
 description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -91,7 +91,6 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

@@ -36,8 +36,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/dismissReminder
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
 
 <br/>
@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <br/>
 

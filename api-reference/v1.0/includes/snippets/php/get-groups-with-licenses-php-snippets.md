@@ -10,15 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupsRequestBuilderGetQueryParameters();
+$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","assignedLicenses"];
 $queryParameters->filter = "assignedLicenses/any()";
-
+$queryParameters->expand = ["members($select=id,displayName)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

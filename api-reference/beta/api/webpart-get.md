@@ -67,7 +67,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_webpart"
+  "name": "get_webpart_beta_e1"
 }
 -->
 
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/webParts
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -135,7 +134,7 @@ With `select` statement, you can retrieve selected webpart metadata in a request
 
 <!-- {
   "blockType": "request",
-  "name": "get_webpart"
+  "name": "get_webpart_beta_e2"
 }
 -->
 

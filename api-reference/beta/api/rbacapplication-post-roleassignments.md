@@ -35,6 +35,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+### For an Exchange Online provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
 
 Create a role assignment for the directory provider:
@@ -53,6 +61,14 @@ Create a role assignment for the entitlement management provider:
 POST /roleManagement/entitlementManagement/roleAssignments
 ```
 
+Create a role assignment for the Exchange Online provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/exchange/roleAssignments
+```
+
 
 ## Request headers
 
@@ -63,6 +79,11 @@ POST /roleManagement/entitlementManagement/roleAssignments
 ## Request body
 
 In the request body, supply a JSON representation of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD, such as **directoryScopeId**, or an application-specific scope, such as **appScopeId**. Examples of Azure AD scopes are tenant ("/"), administrative unit, attribute set, or application. Entitlement management uses tenant ("/") and access package catalog scopes. For more information, see [appScope](../resources/appscope.md).
+
+For Exchange Online provider, the `directoryScopeId` in the request body support following formats:
++ `/`: Tenant wide scope
++ `/Users/{ObjectId of user}`: scope the role assignment to a specific user
++ `/AdministrativeUnits/{ObjectId of AU}`: scope the role assignment to an Administrative Unit
 
 ## Response
 
@@ -120,7 +141,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -197,7 +217,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -276,7 +295,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -352,7 +370,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -378,6 +395,52 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Create a role assignment for Exchange Online provider with administrative unit scope
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment5_from_rbacapplication"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece",
+    "roleDefinitionId": "f66ab1ee-3cac-4d03-8a64-dadc56e563f8",
+    "directoryScopeId": "/AdministrativeUnits/8b532c7a-4d3e-4e99-8ffa-2dfec92c62eb",
+    "appScopeId": null
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/exchange/roleAssignments/$entity",
+    "id": "c5dd3ab8-374f-42e9-b163-eb7c54b53755",
+    "principalId": "/ServicePrincipals/0451dbb9-6336-42ea-b58f-5953dc053ece",
+    "roleDefinitionId": "f66ab1ee-3cac-4d03-8a64-dadc56e563f8",
+    "directoryScopeId": "/AdministrativeUnits/8b532c7a-4d3e-4e99-8ffa-2dfec92c62eb",
+    "appScopeId": null
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -388,4 +451,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

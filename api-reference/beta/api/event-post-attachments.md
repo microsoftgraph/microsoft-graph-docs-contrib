@@ -69,7 +69,7 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
+POST https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 
 {
@@ -104,7 +104,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
@@ -203,8 +202,6 @@ Content-type: application/json
 
 ---
 
-
-
 ### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -285,7 +282,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

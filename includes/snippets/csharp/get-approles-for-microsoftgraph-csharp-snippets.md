@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var servicePrincipals = await graphClient.ServicePrincipals
-	.Request()
-	.Filter("displayName eq 'Microsoft Graph'")
-	.Select("id,displayName,appId,appRoles")
-	.GetAsync();
+var result = await graphClient.ServicePrincipals.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "displayName eq 'Microsoft Graph'";
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","appId","appRoles" };
+});
+
 
 ```

@@ -17,7 +17,7 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('guidelines.txt');
 
 $additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
+		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 

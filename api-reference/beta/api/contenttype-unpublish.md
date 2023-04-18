@@ -85,7 +85,6 @@ POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId
 
 ---
 
-
 ### Response
 
 <!-- { "blockType": "response" } -->

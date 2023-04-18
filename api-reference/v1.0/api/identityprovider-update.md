@@ -60,7 +60,6 @@ The following example updates the definition of the token lifetime **identityPro
 
 ##### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,7 +97,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 

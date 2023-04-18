@@ -61,14 +61,14 @@ $requestBody->setBreaks($breaksArray);
 
 
 $additionalData = [
-'onBehalfOfUserId' => 'a3601044-a1b5-438e-b742-f78d01d68a67', 
+	'onBehalfOfUserId' => 'a3601044-a1b5-438e-b742-f78d01d68a67', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->post($requestBody);
 
 
 ```

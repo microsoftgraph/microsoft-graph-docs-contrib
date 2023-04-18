@@ -1,7 +1,7 @@
 ---
 title: "Update meetingRegistrationQuestion"
 description: "Update a custom meeting registration question associated with a meetingRegistration object."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -98,7 +98,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

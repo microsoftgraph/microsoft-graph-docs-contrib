@@ -10,19 +10,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->group()->get($requestConfiguration);
+
+$result = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphGroup()->get($requestConfiguration);
 
 
 ```

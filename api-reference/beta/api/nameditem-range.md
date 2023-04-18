@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{id}/workbook/names/{name}/Range
-GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
+GET /me/drive/items/{id}/workbook/names/{name}/range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "nameditem_range"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/Range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range
 ```
 
 # [C#](#tab/csharp)
@@ -68,8 +68,15 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/R
 [!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/nameditem-range-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/nameditem-range-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 Here is an example of the response. 

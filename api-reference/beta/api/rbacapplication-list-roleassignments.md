@@ -18,6 +18,7 @@ Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obj
 The following RBAC providers are currently supported:
 - directory (Azure AD)
 - entitlement management (Azure AD)
+- Exchange Online
 
 ## Permissions
 
@@ -37,6 +38,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+### For an Exchange Online provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -63,6 +72,16 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+```
+
+To list role assignments for the Exchange Online provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/exchange/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/exchange/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## Query parameters
@@ -127,7 +146,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -292,7 +310,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -372,7 +389,6 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -400,6 +416,65 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.user",
                 "id": "39228473-522e-4533-88cc-a9553180cb99"
             }    
+        }
+    ]
+}
+```
+
+### Example 4: List role assignments for a specific service principal in Exchange Online provider
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_4"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$filter=principalId eq '/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39'
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/exchange/roleAssignments",
+    "value": [
+        {
+            "id": "e664cde0-fbdf-4b1e-bcb2-d134ef32194d",
+            "principalId": "/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39",
+            "roleDefinitionId": "7224da60-d8e2-4f45-9380-8e4fda64e133",
+            "directoryScopeId": "/",
+            "appScopeId": null
+        },
+        {
+            "id": "6f0be5be-49f3-42e6-8086-cdcd67b6eac0",
+            "principalId": "/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39",
+            "roleDefinitionId": "ba6ab9a1-045c-4812-9e0b-f851f0da3907",
+            "directoryScopeId": "/Users/62ef60ab-0736-495b-b2b0-a4ca2c5b11d7",
+            "appScopeId": null
+        },
+        {
+            "id": "7ce3e76d-5997-447b-be59-798468265b41",
+            "principalId": "/ServicePrincipals/5d39cc4d-ba68-4c44-92c7-5056e3a1ce39",
+            "roleDefinitionId": "42f85b54-af39-40fd-acea-083b9c14d3f3",
+            "directoryScopeId": "/AdministrativeUnits/62ef60ab-0736-495b-b2b0-a4ca2c5b11d7",
+            "appScopeId": null
         }
     ]
 }

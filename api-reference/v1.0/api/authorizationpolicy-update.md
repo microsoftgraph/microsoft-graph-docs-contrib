@@ -104,7 +104,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -159,7 +158,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -218,7 +216,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -273,7 +270,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -331,7 +327,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -391,7 +386,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

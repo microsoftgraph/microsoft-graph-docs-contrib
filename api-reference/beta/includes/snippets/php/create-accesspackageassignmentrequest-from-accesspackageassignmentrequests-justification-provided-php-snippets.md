@@ -21,7 +21,7 @@ $requestBody->setJustification('Need access to New Hire access package');
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
 
 
 ```

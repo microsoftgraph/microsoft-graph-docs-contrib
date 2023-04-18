@@ -14,7 +14,7 @@ $requestBody->setDestinationId('destinationId-value');
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->copy()->post($requestBody);
+$result = $graphServiceClient->me()->messagesById('message-id')->copy()->post($requestBody);
 
 
 ```

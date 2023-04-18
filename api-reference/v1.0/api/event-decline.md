@@ -39,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/decline
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/decline
 ```
 
 <br/>
@@ -132,7 +132,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <br/>
 

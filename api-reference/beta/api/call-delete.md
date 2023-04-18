@@ -1,7 +1,7 @@
 ---
 title: "Delete call"
 description: "Delete or hang up an active call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -84,7 +84,6 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

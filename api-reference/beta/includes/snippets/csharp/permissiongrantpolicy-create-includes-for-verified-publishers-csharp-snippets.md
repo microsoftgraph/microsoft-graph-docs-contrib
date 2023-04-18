@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var permissionGrantConditionSet = new PermissionGrantConditionSet
+var requestBody = new PermissionGrantConditionSet
 {
 	PermissionType = PermissionType.Delegated,
-	ClientApplicationsFromVerifiedPublisherOnly = true
+	ClientApplicationsFromVerifiedPublisherOnly = true,
 };
+var result = await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes.PostAsync(requestBody);
 
-await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes
-	.Request()
-	.AddAsync(permissionGrantConditionSet);
 
 ```

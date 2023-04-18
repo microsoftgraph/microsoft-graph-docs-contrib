@@ -71,7 +71,7 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+POST https://graph.microsoft.com/v1.0/me/calendarGroups/AAMkADYAAAR9NR5AAA=/calendars
 Content-type: application/json
 
 {
@@ -104,7 +104,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 

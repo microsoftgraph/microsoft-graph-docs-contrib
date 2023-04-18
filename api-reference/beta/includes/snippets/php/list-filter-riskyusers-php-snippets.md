@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RiskyUsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RiskyUsersRequestBuilderGetQueryParameters();
+$queryParameters = RiskyUsersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "riskLevel eq microsoft.graph.riskLevel'medium'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityProtection()->riskyUsers()->get($requestConfiguration);
+$result = $graphServiceClient->identityProtection()->riskyUsers()->get($requestConfiguration);
 
 
 ```

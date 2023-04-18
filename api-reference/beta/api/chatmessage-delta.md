@@ -134,16 +134,11 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagedeltachannel-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Initial request response
 
@@ -186,9 +181,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -228,9 +225,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -282,16 +281,11 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagedeltachannel-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Second request response
 
@@ -333,9 +327,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -373,9 +369,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -427,16 +425,11 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-3-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagedeltachannel-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Third request response
 
@@ -478,9 +471,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -518,9 +513,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {
@@ -574,16 +571,11 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-4-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-chatmessagedeltachannel-4-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -624,9 +616,11 @@ Content-type: application/json
                 "device": null,
                 "conversation": null,
                 "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
-                    "userIdentityType": "aadUser"
+                    "userIdentityType": "aadUser",
+                    "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
                 }
             },
             "body": {

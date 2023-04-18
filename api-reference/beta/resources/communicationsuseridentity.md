@@ -1,7 +1,7 @@
 --- 
 title: "communicationsUserIdentity resource type"
 description: "Represents the identity of a user."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

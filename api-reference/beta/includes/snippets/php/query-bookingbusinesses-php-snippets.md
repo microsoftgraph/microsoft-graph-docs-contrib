@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new BookingBusinessesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new BookingBusinessesRequestBuilderGetQueryParameters();
+$queryParameters = BookingBusinessesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->query = "Adventure";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->bookingBusinesses()->get($requestConfiguration);
+$result = $graphServiceClient->bookingBusinesses()->get($requestConfiguration);
 
 
 ```

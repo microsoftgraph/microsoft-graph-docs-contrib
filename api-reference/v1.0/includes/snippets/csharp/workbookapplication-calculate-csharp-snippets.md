@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var calculationType = "calculationType-value";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Application.Calculate.CalculatePostRequestBody
+{
+	CalculationType = "calculationType-value",
+};
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Application.Calculate.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Application
-	.Calculate(calculationType)
-	.Request()
-	.PostAsync();
 
 ```

@@ -485,6 +485,72 @@
 		"CreatedDateTime": "2022-11-29T14:12:20.4783952Z",
 		"WorkloadArea": "Security",
 			"SubArea": "eDiscovery"
+	  },
+	  {
+		"ChangeList": [
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Resource",
+			"ChangedApiName": "exportFileMetadata",
+			"ChangeType": "Addition",
+			"Description": "Added the [exportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportfilemetadata?view=graph-rest-beta) resource type.",
+			"Target": "exportFileMetadata"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Property",
+			"ChangedApiName": "exportFileMetadata",
+			"ChangeType": "Addition",
+			"Description": "Added the **exportFileMetadata** property to the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryExportOperation?view=graph-rest-beta) resource.",
+			"Target": "ediscoveryExportOperation"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Member",
+			"ChangedApiName": "fileInfo",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the `fileInfo` member of the **exportOptions** enumeration.",
+			"Target": "exportOptions"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Method",
+			"ChangedApiName": "getDownloadUrl",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the [getDownloadUrl](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryexportoperation-getdownloadurl?view=graph-rest-beta) method of the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource. Use the **exportFileMetadata** property of the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource instead.",
+			"Target": "ediscoveryExportOperation"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Property",
+			"ChangedApiName": "azureBlobContainer",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **azureBlobContainer** property of the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource.",
+			"Target": "ediscoveryExportOperation"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Property",
+			"ChangedApiName": "azureBlobToken",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **azureBlobToken** property of the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource.",
+			"Target": "ediscoveryExportOperation"
+		  },
+		  {
+			"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+			"ApiChange": "Property",
+			"ChangedApiName": "outputFolderId",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **outputFolderId** property of the [ediscoveryExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource.",
+			"Target": "ediscoveryExportOperation"
+		  }
+		],
+		"Id": "4f56b8d2-3a5a-46be-9cc4-8f71a796c1c0",
+		"Cloud": "Prod",
+		"Version": "beta",
+		"CreatedDateTime": "2023-03-16T05:00:32.6189763Z",
+		"WorkloadArea": "Security",
+		"SubArea": "eDiscovery"
 	  }
 	]
   }

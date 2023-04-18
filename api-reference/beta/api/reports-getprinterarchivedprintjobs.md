@@ -79,8 +79,15 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 [!INCLUDE [sample-code](../includes/snippets/java/reports-getprinterarchivedprintjobs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reports-getprinterarchivedprintjobs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/reports-getprinterarchivedprintjobs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following is an example of the response.

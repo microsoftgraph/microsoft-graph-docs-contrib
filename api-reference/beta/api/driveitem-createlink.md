@@ -58,6 +58,8 @@ The request should be a JSON object with the following properties.
 |expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
 |password|String|Optional.The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
+| retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
+|sendNotification|Boolean|If `true`, this method sends a [sharing link](../resources/permission.md#sharing-links) in an email to users specified in `recipients`. Applicable to OneDrive for Business or SharePoint. The default value is `false`. Optional.|
 
 ### Link types
 
@@ -95,8 +97,12 @@ The response will be `201 Created` if a new sharing link is created for the **dr
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the **driveItem** specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
+For OneDrive for Business and SharePoint users, use the `sendNotification` parameter to create a sharing link. The sharing link is then sent to recipients via email.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_createlink"
@@ -114,7 +120,9 @@ Content-Type: application/json
     {
       "@odata.type": "microsoft.graph.driveRecipient"
     }
-  ]
+  ],
+  "sendNotification": true,
+  "retainInheritedPermissions": false
 }
 ```
 
@@ -170,6 +178,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-link-scoped",
@@ -227,12 +236,13 @@ Content-Type: application/json
 ### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
-When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
+When an embed link is created, the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
 >**Note:** Embed links are only supported for OneDrive personal.
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-embedded-link",

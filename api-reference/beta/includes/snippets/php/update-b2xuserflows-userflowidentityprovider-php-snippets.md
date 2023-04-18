@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new $refPatchRequestBody();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test', 
-'@odata.type' => '#microsoft.graph.identityProvider', 
+		'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test', 
+		'@odata.type' => '#microsoft.graph.identityProvider', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

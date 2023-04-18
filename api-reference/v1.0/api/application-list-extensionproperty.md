@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/applications/acc848e9-e8ec-4feb-a521-8d58b5
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

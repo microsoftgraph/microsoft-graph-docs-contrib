@@ -1,7 +1,7 @@
 ---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -210,7 +209,6 @@ GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 

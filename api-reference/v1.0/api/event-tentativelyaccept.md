@@ -36,8 +36,8 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -118,7 +118,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here is an example of the response.

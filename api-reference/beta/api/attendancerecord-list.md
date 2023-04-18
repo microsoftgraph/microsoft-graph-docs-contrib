@@ -1,7 +1,7 @@
 ---
 title: "List attendanceRecords"
 description: "Get a list of attendanceRecord objects and their properties."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -103,7 +103,6 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 
 ---
 
-
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -200,7 +199,6 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

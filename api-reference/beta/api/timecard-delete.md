@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{teamId}/schedule/timecards/{timeCardID}
+DELETE /teams/{teamId}/schedule/timeCards/{timeCardID}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f
+DELETE https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timeCards/3895809b-a618-4c0d-86a0-d42b25b7d74f
 ```
 
 # [C#](#tab/csharp)
@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var getRelyingPartyDetailedSummary = await graphClient.Reports
-	.GetRelyingPartyDetailedSummary("period_value")
-	.Request()
-	.GetAsync();
+var result = await graphClient.Reports.GetRelyingPartyDetailedSummaryWithPeriod("{period}").GetAsync();
+
 
 ```

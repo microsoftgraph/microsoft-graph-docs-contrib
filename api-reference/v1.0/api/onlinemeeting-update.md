@@ -1,7 +1,7 @@
 ---
 title: "Update onlineMeeting"
 description: "Update the properties of an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -131,7 +131,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -229,7 +228,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

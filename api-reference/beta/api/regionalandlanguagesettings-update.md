@@ -67,7 +67,7 @@ The following is an example of the request.
   "name": "put_regionalAndLanguageSettings"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
+PUT https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 Content-type: application/json
 
 {
@@ -161,7 +161,7 @@ The following is an example of the request.
   "name": "patch_regionalAndLanguageSettings"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
+PATCH https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 Content-type: application/json
 
 {
@@ -202,8 +202,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 

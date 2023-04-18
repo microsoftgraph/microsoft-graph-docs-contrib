@@ -47,8 +47,8 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/cancel
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/cancel
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -111,7 +111,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response.

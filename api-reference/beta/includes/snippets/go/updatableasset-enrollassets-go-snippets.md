@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/WindowsUpdatesEnrollAssets"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEnrollAssetsPostRequestBody()
 updateCategory := graphmodels.STRING_UPDATECATEGORY 
@@ -22,7 +30,7 @@ assets := []graphmodels.Objectable {
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().WindowsUpdatesEnrollAssets().Post(context.Background(), requestBody, nil)
 
 
 ```

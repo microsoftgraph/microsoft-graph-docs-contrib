@@ -1,7 +1,7 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -84,7 +84,6 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
