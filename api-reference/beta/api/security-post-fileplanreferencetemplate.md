@@ -1,18 +1,18 @@
 ---
-title: "Create authorityTemplate"
-description: "Create a new microsoft.graph.security.authorityTemplate object."
+title: "Create filePlanReferenceTemplate"
+description: "Create a new microsoft.graph.security.filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create authorityTemplate
+# Create filePlanReferenceTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.authorityTemplate](../resources/security-fileplandescriptor-authoritytemplate.md) object.
+Create a new [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/labels/authorities
+POST /security/labels/filePlanReferences
 ```
 
 ## Request headers
@@ -40,20 +40,20 @@ POST /security/labels/authorities
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.authorityTemplate](../resources/security-fileplandescriptor-authoritytemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.
 
-You can specify the following properties when creating a **authorityTemplate**.
+You can specify the following properties when creating a **filePlanReferenceTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|displayName|String|Unique string that defines a file plan reference name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
 
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.authorityTemplate](../resources/security-fileplandescriptor-authoritytemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object in the response body.
 
 ## Examples
 
@@ -61,15 +61,15 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_authoritytemplate_from_"
+  "name": "create_fileplanreferencetemplate_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/labels/authorities
+POST https://graph.microsoft.com/beta/security/labels/filePlanReferences
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.authorityTemplate",
+  "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -84,7 +84,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.authorityTemplate"
+  "@odata.type": "microsoft.graph.security.filePlanReferenceTemplate"
 }
 -->
 ``` http
@@ -92,8 +92,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.authorityTemplate",
-  "id": "a94af2e3-853b-6fcc-c898-d61d3a6d9efc",
+  "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
+  "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"

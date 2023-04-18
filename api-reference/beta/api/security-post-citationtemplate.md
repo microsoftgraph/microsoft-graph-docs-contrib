@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.
+Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,21 +40,20 @@ POST /security/labels/citations
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.
 
 You can specify the following properties when creating a **citationTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
-|citationUrl|String|**TODO: Add Description** Optional.|
-|citationJurisdiction|String|**TODO: Add Description** Optional.|
-
+|displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
+|citationUrl|String|Represents the URL to the published citation. Optional.|
+|citationJurisdiction|String|Represents the jurisdiction or agency that published the citation. Optional.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object in the response body.
 
 ## Examples
 

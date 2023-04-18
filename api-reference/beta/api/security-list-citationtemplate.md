@@ -1,18 +1,18 @@
 ---
-title: "Get citationTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.citationTemplate object."
+title: "List citationTemplates"
+description: "Get a list of the microsoft.graph.security.citationTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get citationTemplate
+# List citationTemplates
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object.
+Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/citations/{citationTemplateId}
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationTemplate
+GET /security/labels/citations
 ```
 
 ## Optional query parameters
@@ -47,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.citationTemplate](../resources/security-fileplandescriptor-citationtemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [citationTemplate](../resources/security-citationtemplate.md) objects in the response body.
 
 ## Examples
 
@@ -55,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_citationtemplate"
+  "name": "list_citationtemplate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/citations/{citationTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/citations
 ```
 
 
@@ -69,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.citationTemplate"
+  "@odata.type": "Collection(microsoft.graph.security.citationTemplate)"
 }
 -->
 ``` http
@@ -77,17 +76,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.citationTemplate",
-    "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
-    "displayName": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "citationUrl": "String",
-    "citationJurisdiction": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.citationTemplate",
+      "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
+      "displayName": "String",
+      "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "createdDateTime": "String (timestamp)",
+      "citationUrl": "String",
+      "citationJurisdiction": "String"
+    }
+  ]
 }
 ```
 

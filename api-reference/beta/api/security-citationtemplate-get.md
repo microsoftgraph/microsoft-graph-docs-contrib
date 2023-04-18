@@ -1,18 +1,18 @@
 ---
-title: "Get subCategoryTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.subCategoryTemplate object."
+title: "Get citationTemplate"
+description: "Read the properties and relationships of a microsoft.graph.security.citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get subCategoryTemplate
+# Get citationTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.
+Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET /security/labels/citations/{citationTemplateId}
+GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationTemplate
 ```
 
 ## Optional query parameters
@@ -46,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +55,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_subcategorytemplate"
+  "name": "get_citationtemplate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/citations/{citationTemplateId}
 ```
 
 
@@ -68,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.subCategoryTemplate"
+  "@odata.type": "microsoft.graph.security.citationTemplate"
 }
 -->
 ``` http
@@ -77,13 +78,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
-    "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
+    "@odata.type": "#microsoft.graph.security.citationTemplate",
+    "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
     "displayName": "String",
     "createdBy": {
       "@odata.type": "microsoft.graph.identitySet"
     },
-    "createdDateTime": "String (timestamp)"
+    "createdDateTime": "String (timestamp)",
+    "citationUrl": "String",
+    "citationJurisdiction": "String"
   }
 }
 ```

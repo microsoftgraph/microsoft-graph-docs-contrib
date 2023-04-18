@@ -1,18 +1,18 @@
 ---
-title: "List categoryTemplates"
-description: "Get a list of the microsoft.graph.security.categoryTemplate objects and their properties."
+title: "Get departmentTemplate"
+description: "Read the properties and relationships of a microsoft.graph.security.departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List categoryTemplates
+# Get departmentTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) objects and their properties.
+Read the properties and relationships of a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/categories
+GET /security/labels/departments/{departmentTemplateId}
+GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/departmentTemplate
 ```
 
 ## Optional query parameters
@@ -46,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +55,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_categorytemplate"
+  "name": "get_departmenttemplate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/categories
+GET https://graph.microsoft.com/beta/security/labels/departments/{departmentTemplateId}
 ```
 
 
@@ -68,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.categoryTemplate)"
+  "@odata.type": "microsoft.graph.security.departmentTemplate"
 }
 -->
 ``` http
@@ -76,17 +77,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.categoryTemplate",
-      "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
-      "displayName": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.security.departmentTemplate",
+    "id": "11b44677-9f06-c85a-4a0b-766b66904bf8",
+    "displayName": "String",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "createdDateTime": "String (timestamp)"
+  }
 }
 ```
 

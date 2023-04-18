@@ -1,18 +1,18 @@
 ---
-title: "Get categoryTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.categoryTemplate object."
+title: "Get filePlanReferenceTemplate"
+description: "Read the properties and relationships of a microsoft.graph.security.filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get categoryTemplate
+# Get filePlanReferenceTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object.
+Read the properties and relationships of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/categories/{categoryTemplateId}
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate
+GET /security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/filePlanReferenceTemplate
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.categoryTemplate](../resources/security-fileplandescriptor-categorytemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object in the response body.
 
 ## Examples
 
@@ -55,11 +55,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_categorytemplate"
+  "name": "get_fileplanreferencetemplate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/{filePlanReferenceTemplateId}
 ```
 
 
@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.categoryTemplate"
+  "@odata.type": "microsoft.graph.security.filePlanReferenceTemplate"
 }
 -->
 ``` http
@@ -78,8 +78,8 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.categoryTemplate",
-    "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
+    "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
+    "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
     "displayName": "String",
     "createdBy": {
       "@odata.type": "microsoft.graph.identitySet"

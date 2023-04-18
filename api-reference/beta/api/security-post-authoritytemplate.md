@@ -1,18 +1,18 @@
 ---
-title: "Create subCategoryTemplate"
-description: "Create a new subCategoryTemplate object."
+title: "Create authorityTemplate"
+description: "Create a new microsoft.graph.security.authorityTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create subCategoryTemplate
+# Create authorityTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new subCategoryTemplate object.
+Create a new [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST /security/labels/authorities
 ```
 
 ## Request headers
@@ -40,20 +40,20 @@ POST /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTem
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.
 
-You can specify the following properties when creating a **subCategoryTemplate**.
+You can specify the following properties when creating a **authorityTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|displayName|String|Unique string that defines an authortiy name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
 
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object in the response body.
 
 ## Examples
 
@@ -61,15 +61,15 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_subcategorytemplate_from_"
+  "name": "create_authoritytemplate_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST https://graph.microsoft.com/beta/security/labels/authorities
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+  "@odata.type": "#microsoft.graph.security.authorityTemplate",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -84,7 +84,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.subCategoryTemplate"
+  "@odata.type": "microsoft.graph.security.authorityTemplate"
 }
 -->
 ``` http
@@ -92,8 +92,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
-  "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
+  "@odata.type": "#microsoft.graph.security.authorityTemplate",
+  "id": "a94af2e3-853b-6fcc-c898-d61d3a6d9efc",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"

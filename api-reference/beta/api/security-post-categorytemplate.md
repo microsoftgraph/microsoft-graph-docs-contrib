@@ -1,18 +1,18 @@
 ---
-title: "Create departmentTemplate"
-description: "Create a new microsoft.graph.security.departmentTemplate object."
+title: "Create categoryTemplate"
+description: "Create a new microsoft.graph.security.categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Create departmentTemplate
+# Create categoryTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.
+Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/labels/departments
+POST /security/labels/categories
 ```
 
 ## Request headers
@@ -40,20 +40,20 @@ POST /security/labels/departments
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.
 
-You can specify the following properties when creating a **departmentTemplate**.
+You can specify the following properties when creating a **categoryTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|displayName|String|Unique string that defines a category name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
 
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.departmentTemplate](../resources/security-fileplandescriptor-departmenttemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object in the response body.
 
 ## Examples
 
@@ -61,15 +61,15 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_departmenttemplate_from_"
+  "name": "create_categorytemplate_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/labels/departments
+POST https://graph.microsoft.com/beta/security/labels/categories
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.departmentTemplate",
+  "@odata.type": "#microsoft.graph.security.categoryTemplate",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -84,7 +84,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.departmentTemplate"
+  "@odata.type": "microsoft.graph.security.categoryTemplate"
 }
 -->
 ``` http
@@ -92,8 +92,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.departmentTemplate",
-  "id": "11b44677-9f06-c85a-4a0b-766b66904bf8",
+  "@odata.type": "#microsoft.graph.security.categoryTemplate",
+  "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
   "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.
+Read the properties and relationships of a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List subCategoryTemplates](../api/security-fileplandescriptor-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) objects and their properties.|
-|[Create subCategoryTemplate](../api/security-fileplandescriptor-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md)|Create a new [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
-|[Get subCategoryTemplate](../api/security-fileplandescriptor-subcategorytemplate-get.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
-|[Delete subCategoryTemplate](../api/security-fileplandescriptor-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.|
+|[List subCategoryTemplates](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get a list of the [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) objects and their properties.|
+|[Create subCategoryTemplate](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[Get subCategoryTemplate](../api/security-subcategorytemplate-get.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
+|[Delete subCategoryTemplate](../api/security-categorytemplate-delete-subcategories.md)|None|Delete a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

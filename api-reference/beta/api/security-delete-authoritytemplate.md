@@ -1,18 +1,18 @@
 ---
-title: "Delete subCategoryTemplate"
-description: "Delete a microsoft.graph.security.subCategoryTemplate object."
+title: "Delete authorityTemplate"
+description: "Delete a microsoft.graph.security.authorityTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Delete subCategoryTemplate
+# Delete authorityTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [microsoft.graph.security.subCategoryTemplate](../resources/security-fileplandescriptor-subcategorytemplate.md) object.
+Delete a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|RecordsManagement.ReadWrite.All|
+|Application| RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}/$ref
+DELETE /security/labels/authorities/{authorityTemplateId}/$ref
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate/$ref
 ```
 
 ## Request headers
@@ -51,11 +52,11 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_subcategorytemplate"
+  "name": "delete_authoritytemplate"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/authorities/{authorityTemplateId}
 ```
 
 
