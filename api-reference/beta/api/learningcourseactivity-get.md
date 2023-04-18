@@ -59,7 +59,7 @@ The following examples shows a request to get an assigned learning course activi
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
+GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
 #### Response
@@ -89,7 +89,7 @@ Content-Type: application/json
     "timeZone": "UTC"
   },  
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+  "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",  
@@ -105,6 +105,11 @@ Content-Type: application/json
 #### Request
 The following example shows a request to get a self-initiated learning course activity.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_learning_courseactivity_details_id"
+}-->
+
 ``` http
 GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
 ```
@@ -112,6 +117,11 @@ GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities
 #### Response
 
 The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.learningSelfInitiatedCourse"
+}-->
 
 ``` http
 HTTP/1.1 200 OK
@@ -125,7 +135,7 @@ Content-Type: application/json
   "completedDateTime": null,
   "completionPercentage":null,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+  "id": "be2f4d76-e020-11ec-9d64-0242ac120002",
   "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002",
   "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
   "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002",

@@ -1,6 +1,6 @@
 ---
 title: "learningAssignment resource type"
-description: "Represents learner assignment record"
+description: "Represents the details of a learning activity assigned to a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the metadata of assigned course activity record of learner.
+Represents the details of a learning activity assigned to a user.
 
 
 Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
@@ -19,21 +19,21 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
-|assignedDateTime|DateTimeOffset|Assigned date for the course activity (Optional).|
-|assignerUserId|String|The user ID of the assigner (Optional).|
-|assignmentType|String|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`.|
-|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
-|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
-|dueDateTime|DateTimeOffset|Due date for the course activity. (Optional)|
-|externalCourseActivityId|String|A course activity ID generated at provider. (Optional)|
-|ID|String|The resultant ID of this request can be used to make further interactions to the course activity API’s.|
-|learningContentId|String| The ID of Learning Content received when Learning Content is created on Viva Learning using LearningContent Microsoft Graph API’s.|
-|learnerUserId|String|The user ID of the learner.|
-|learningProviderId|String|ID of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration Microsoft Graph API’s.|
-|notes|String|Notes for the course activity. (Optional)|
-|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner.|
-|status|courseStatus|Represents status of the course activity. Possibly values are `notStarted`, `inProgress`, `completed`.|
+|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
+|assignedDateTime|DateTimeOffset|Assigned date for the course activity Optional.|
+|assignerUserId|String|The user ID of the assigner. Optional.|
+|assignmentType|String|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`. Required.|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. Optional.|
+|completionPercentage|Integer|The percentage of the course completed by the user. If the value is provided, the value needs to be in between 0 and 100 (inclusive). Optional.|
+|dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
+|externalCourseActivityId|String|A course activity ID generated at provider. Optional.|
+|ID|String|The generated ID for a request and can be used to make further interactions to the course activity APIs.|
+|learningContentId|String| The ID of learning Content created in Viva Learning using LearningContent Microsoft Graph API’s. Required.|
+|learnerUserId|String|The user ID of the learner to whom the activity is assigned. Required.|
+|learningProviderId|String|ID of the provider. It’s a GUID which is generated when the provider registers on viva learning using provider registration Microsoft Graph API’s. Required.|
+|notes|String|Notes for the course activity. Optional.|
+|startedDateTime|DateTimeOffset|The date time value on which the self-initiated course was started by the learner. Optional.|
+|status|courseStatus|Represents status of the course activity. Possibly values are `notStarted`, `inProgress`, `completed`. Required.|
 
 ## Relationships
 None.

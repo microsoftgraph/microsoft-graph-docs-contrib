@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request.
 
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{registrationId}/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
+DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningCourseActivities/be2f4d76-e020-11ec-9d64-0242ac120002
 ```
 
 ### Response

@@ -52,26 +52,25 @@ The following table lists the properties of a assigned learning course activity 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Type to determine if it’s a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course.|
-|assignedDateTime|DateTimeOffset|Assigned date for the course activity. (Optional)|
-|assignmentType|assignmentType|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`.|
-|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. (Optional)|
-|completionPercentage|Integer|The percentage of the course completed by the user(Optional). If the value is provided, the value needs to be in between 0 and 100 (inclusive).|
-|dueDateTime|DateTimeOffset|Due date for the course activity. (Optional)|
-|notes|String|Notes for the course activity. (Optional)|
-|status|courseStatus|Represents status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`.|
+|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
+|assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
+|assignmentType|assignmentType|The assignment type for the course activity. Possibly values are `required`, `recommended`, `UnknownFutureValue`. Required.|
+|completedDateTime|DateTimeOffset|Date time value when the assignment was completed. Optional.|
+|completionPercentage|Integer|The percentage of the course completed by the user. If the value is provided, the value needs to be in between 0 and 100 (inclusive). Optional.|
+|dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
+|notes|String|Notes for the course activity. Optional.|
+|status|courseStatus|Represents status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
 
-### Request
+#### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_assigned_learning_courseactivity"
 }-->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 Content-Type: application/json
 
 {
@@ -99,7 +98,7 @@ Content-Type: application/json
 
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
@@ -132,7 +131,7 @@ The following is an example of a request.
 }-->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/{learningCourseActivityId}
+PATCH https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120004
 Content-Type: application/json
 
 {

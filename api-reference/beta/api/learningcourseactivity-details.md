@@ -63,7 +63,6 @@ If successful, this method returns a 200 OK response code and a [learningCourseA
 ### Request
 The following example shows the request to get details of a learning course activity:
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details"
@@ -72,7 +71,7 @@ The following example shows the request to get details of a learning course acti
 To retrieve the course activity details for a user:
 
 ``` http
-GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/7ba2228a-e020-11ec-9d64-0242ac120002
+GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
 ### Response
@@ -91,15 +90,14 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.learningAssignment",
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-
-  e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('7ba2228a-e020-11ec-9d64-
-  0242ac120002')$entity",
+  e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('8ba2228a-e020-11ec-9d64-0242ac120003')$entity",
   "assignedDateTime": "2021-05-11T22:57:17+00:00",
   "assignmentType": "required",
   "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
   "completedDateTime": null,
   "completionPercentage":20,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+  "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "dueDateTime": {
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"

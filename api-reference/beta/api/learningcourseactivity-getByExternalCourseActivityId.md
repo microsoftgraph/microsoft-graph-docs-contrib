@@ -52,7 +52,6 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 ### Request
 The following example shows the request to get details of a learning course activity using external course activity id.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details_externalId"
@@ -85,7 +84,7 @@ Content-Type: application/json
   "completedDateTime": null,  
   "completionPercentage":null,
   "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-  "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+  "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
   "dueDateTime": {
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"

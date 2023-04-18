@@ -39,7 +39,7 @@ GET users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. OData query parameters like `$skip`, `$top`, `$count`, `$select` are supported. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -65,12 +65,18 @@ The following is an example of a request to retrieve all the course activities o
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/users/{user-id}/employeeExperience/learningCourseActivities
+GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities
 ```
 
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.learningCourseActivity"
+}
+-->
 
 ``` http
 HTTP/1.1 200 OK
@@ -82,14 +88,14 @@ Content-Type: application/json
  "value": [ 
   { 
     "@odata.type": "#microsoft.graph.learningAssignment", 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('7ba2228a-e020-11ec-9d64-0242ac120002')$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningCourseActivities('8ba2228a-e020-11ec-9d64-0242ac120003')$entity",
     "assignedDateTime": "2021-05-11T22:57:17+00:00",
     "assignmentType": "required", 
     "assignerUserId": "cea1684d-57dc-438d-a9d1-e666ec1a7f3d",
     "completedDateTime": null,
     "completionPercentage":null,
     "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002",
-    "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+    "id": "8ba2228a-e020-11ec-9d64-0242ac120003",
     "dueDateTime":{ 
     "dateTime": "2022-09-22T16:05:00.0000000",
     "timeZone": "UTC"
@@ -109,7 +115,7 @@ Content-Type: application/json
     "completedDateTime": null, 
     "completionPercentage":20,
     "externalCourseActivityId": "12a2228a-e020-11ec-9d64-0242ac120002", 
-    "id": "7ba2228a-e020-11ec-9d64-0242ac120002",
+    "id": "be2f4d76-e020-11ec-9d64-0242ac120002",
     "learningContentId": "57baf9dc-e020-11ec-9d64-0242ac120002", 
     "learningProviderId": "13727311-e7bb-470d-8b20-6a23d9030d70",
     "learnerUserId":"7ba2228a-e020-11ec-9d64-0242ac120002", 
