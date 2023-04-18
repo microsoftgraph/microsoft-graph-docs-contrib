@@ -1,6 +1,6 @@
 ---
 title: "tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if there are too many global admins assigned to a tenant. Global administrator is the highest privileged role. If a Global Administrator is compromised, the malicious actor can gain access to all permissions, which puts the whole system at risk."
+description: "Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Azure AD role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
