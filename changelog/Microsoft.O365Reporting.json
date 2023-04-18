@@ -2011,6 +2011,48 @@
 		  "CreatedDateTime": "2023-03-16T03:46:16.421Z",
 		  "WorkloadArea": "Reports",
 		  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+			{
+			  "Id": "cc95a83d-b6f6-40ae-8e17-8cd0a58a0349",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [getTeamsTeamCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamCounts?view=graph-rest-1.0) method.",
+			  "Target": "getTeamsTeamCounts"
+			},
+			{
+			  "Id": "6618abcb-8016-492d-99d2-3361aa88cfff",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamActivityCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added support for the [getTeamsTeamActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityCounts?view=graph-rest-1.0) method.",
+			  "Target": "getTeamsTeamActivityCounts"
+			},
+			{
+			  "Id": "077539ca-82b7-442a-afd4-5656b778406d",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamActivityDistributionCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added support for the [getTeamsTeamActivityDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityDistributionCounts?view=graph-rest-1.0) method.",
+			  "Target": "getTeamsTeamActivityDistributionCounts"
+			},
+			{
+			  "Id": "40a20cf7-cbf0-4568-8e6a-52d95a165a46",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamActivityDetail",
+			  "ChangeType": "Addition",
+			  "Description": "Added support for the [getTeamsTeamActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityDetail?view=graph-rest-1.0) method.",
+			  "Target": "getTeamsTeamActivityDetail"
+		   	}
+		  ],
+		  "Id": "47532e4b-a639-48ff-b0bb-aa8bdd5cdf6b",
+		  "Cloud": "prd",
+		  "Version": "v1.0",
+		  "CreatedDateTime": "2023-03-16T03:46:16.421Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
 	}
   ]
 }

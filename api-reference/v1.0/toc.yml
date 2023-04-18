@@ -6704,6 +6704,17 @@ items:
             href: api/reportroot-getteamsuseractivitycounts.md
           - name: Get user counts
             href: api/reportroot-getteamsuseractivityusercounts.md
+        - name: Microsoft Teams team activity
+          href: resources/microsoft-teams-team-usage-reports.md
+          items:
+          - name: Get team detail
+            href: api/reportroot-getteamsteamactivitydetail.md
+          - name: Get team activity counts
+            href: api/reportroot-getteamsteamactivitycounts.md
+          - name: Get team activity distribution counts
+            href: api/reportroot-getteamsteamactivitydistributioncounts.md
+          - name: Get team counts
+            href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
