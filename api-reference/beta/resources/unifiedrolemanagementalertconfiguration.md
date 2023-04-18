@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertConfiguration resource type"
-description: "Represents the alert configuration resource that specifies the various configurations of an alert that can be updated and modified in Privileged Identity Management (PIM)."
+description: "An abstract type that exposes the various configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
