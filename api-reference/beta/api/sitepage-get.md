@@ -51,6 +51,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
+|Authorization|Bearer {token}. Required.|
 | Accept |application/json;odata.metadata=non|Remove all OData metadata from the response. It is recommended to include this header when utilizing the response will be use in another request. |
 
 ## Request body
