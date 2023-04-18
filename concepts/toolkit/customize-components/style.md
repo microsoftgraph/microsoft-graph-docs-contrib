@@ -21,7 +21,7 @@ For more flexibility, consider using [custom templates](./templates.md).
 
 ## Apply themes
 
-Two themes are available - `light` and `dark`. These themes are supported out of the box because the mgt components are upgraded to use [Fluent UI web elements](/fluent-ui/web-components/) under the hood. By default, all components are in the `light` theme. To switch to `dark` theme, you can do it globally for the entire document using the `mgt-theme-toggle` component or  you can theme a component by setting the custom CSS token values on the component.
+Two themes are available - `light` and `dark`. These themes are supported out of the box because the mgt components are upgraded to use [Fluent UI web elements](/fluent-ui/web-components/) under the hood. By default, all components are in the `light` theme. To switch to `dark` theme, you can do it globally for the entire document using the `mgt-theme-toggle` component or you can theme a component by setting the custom CSS token values on the component.
 
 ### Example 1: Global theme using mgt-theme-toggle
 
@@ -29,14 +29,38 @@ Using the [mgt-theme-toggle](../components/theme-toggle.md) component, you can s
 
 ```html
 <body>
-    <mgt-theme-toggle></mgt-theme-toggle>
-    <header><mgt-login></mgt-login></header>
-    <article><mgt-agenda></mgt-agenda></article>
-    <footer></footer>
+  <mgt-theme-toggle></mgt-theme-toggle>
+  <header><mgt-login></mgt-login></header>
+  <article><mgt-agenda></mgt-agenda></article>
+  <footer></footer>
 </body>
 ```
 
-### Example 2: Customize CSS tokens of a component
+### Example 2: Theming a component programatically without the theme-toggle
+
+You can theme an individual component programmatically without using the `theme-toggle` component. This is achieved by calling the `applyTheme` function from `@microsoft/mgt` that takes in the mode as `light` or `dark` and the HTML element. By default, all elements are rendered in the `light` theme.
+
+#### Setting specific elements to dark theme
+
+We can set the second `mgt-login` component to `dark` theme and leave the other two in `light` theme.
+
+```html
+<mgt-login id="login-one"></mgt-login>
+<mgt-login id="login-two"></mgt-login>
+<mgt-login id="login-one"></mgt-login>
+```
+
+```javascript
+import { applyTheme } from "@microsoft/mgt";
+
+const loginTwo = document.querySelector("#login-two");
+
+if (loginTwo) {
+  applyTheme("dark", loginTwo);
+}
+```
+
+### Example 3: Customize CSS tokens of a component
 
 We have exposed several CSS tokens that you can use to style a component if you want to override the current theme colors. Check the particular component page to get the listed tokens that are available.
 
