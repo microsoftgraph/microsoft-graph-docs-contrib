@@ -15203,6 +15203,15 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
+        - name: Forms activity
+          href: resources/microsoft-forms-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getformsuseractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getformsuseractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getformsuseractivityusercounts.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -17098,15 +17107,19 @@ items:
             - name: Create or get
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment (preview)
+            items:
+            - name: Get Virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+          - name: Virtual appointment (deprecated)
             href: resources/virtualappointment.md
             items:
-            - name: Create
+            - name: Create (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get
+            - name: Get (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update
+            - name: Update (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete
+            - name: Delete (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
