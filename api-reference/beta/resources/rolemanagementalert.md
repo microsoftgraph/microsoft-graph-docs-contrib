@@ -1,6 +1,6 @@
 ---
 title: "roleManagementAlert resource type"
-description: "Represents an alert singleton that exposes alerts, alert definitions, and alert configuration."
+description: "Represents an alert singleton that exposes security alerts, definitions, and configurations in PIM for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
