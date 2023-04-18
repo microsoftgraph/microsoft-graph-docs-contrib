@@ -17,6 +17,8 @@ Represents an alert incident that is triggered if a user goes over a specified n
 
 The threshold that triggers this incident when its reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
 
+The threshold that triggers this incident when its reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
+
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
 ## Properties
