@@ -2,7 +2,7 @@
 title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
 localization_priority: Normal
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -141,7 +141,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md) collection|User experience analytics device Startup History|
 |userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md) collection|User experience analytics device Startup Processes|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md) collection|User experience analytics device Startup Process Performance|
-|userExperienceAnalyticsStartupScoreHistory|[userExperienceAnalyticsStartupScoreHistory](../resources/userExperienceAnalyticsStartupScoreHistory.md) collection|User experience analytics device Startup Score History|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
@@ -216,7 +215,3 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
-
-
-
-

@@ -2158,6 +2158,8 @@ items:
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
             - name: createToken action
               href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+            - name: getDefaultTeamsDeviceNonGmsEnrollmentProfile action
+              href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md
           - name: Android device owner enrollment token type
             href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
           - name: Android enrollment company code
@@ -2390,6 +2392,10 @@ items:
               href: api/intune-books-ebookinstallsummary-get.md
             - name: Update
               href: api/intune-books-ebookinstallsummary-update.md
+          - name: Encrypted provisioning package extras
+            href: resources/intune-androidforwork-encryptedprovisioningpackageextras.md
+          - name: Enrollment profile for non gms teams device
+            href: resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md
           - name: Enterprise code signing certificate
             href: resources/intune-apps-enterprisecodesigningcertificate.md
             items:
@@ -2564,6 +2570,8 @@ items:
               href: api/intune-apps-iosipadoswebclip-delete.md
             - name: Update
               href: api/intune-apps-iosipadoswebclip-update.md
+          - name: Key/value pair
+            href: resources/intune-androidforwork-keyvaluepair.md
           - name: macOS dmg app
             href: resources/intune-apps-macosdmgapp.md
             items:
@@ -3023,39 +3031,6 @@ items:
               href: api/intune-apps-mobilelobapp-list.md
             - name: Get
               href: api/intune-apps-mobilelobapp-get.md
-          - name: Office client checkin status
-            href: resources/intune-cirrus-officeclientcheckinstatus.md
-          - name: Office client configuration
-            href: resources/intune-cirrus-officeclientconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-officeclientconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-officeclientconfiguration-get.md
-            - name: assign action
-              href: api/intune-cirrus-officeclientconfiguration-assign.md
-            - name: updatePriorities action
-              href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
-          - name: Office client configuration assignment
-            href: resources/intune-cirrus-officeclientconfigurationassignment.md
-            items:
-            - name: List
-              href: api/intune-cirrus-officeclientconfigurationassignment-list.md
-            - name: Get
-              href: api/intune-cirrus-officeclientconfigurationassignment-get.md
-            - name: Create
-              href: api/intune-cirrus-officeclientconfigurationassignment-create.md
-            - name: Delete
-              href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
-            - name: Update
-              href: api/intune-cirrus-officeclientconfigurationassignment-update.md
-          - name: Office configuration
-            href: resources/intune-cirrus-officeconfiguration.md
-            items:
-          - name: Office configuration assignment target
-            href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
-          - name: Office configuration group assignment target
-            href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
           - name: Office product id
             href: resources/intune-apps-officeproductid.md
           - name: Office suite app
@@ -3077,8 +3052,6 @@ items:
             href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
           - name: Office update channel
             href: resources/intune-apps-officeupdatechannel.md
-          - name: Office user checkin summary
-            href: resources/intune-cirrus-officeusercheckinsummary.md
           - name: Resultant app state
             href: resources/intune-apps-resultantappstate.md
           - name: Resultant app state detail
@@ -3264,32 +3237,6 @@ items:
               href: api/intune-apps-windowsmobilemsi-delete.md
             - name: Update
               href: api/intune-apps-windowsmobilemsi-update.md
-          - name: Windows office client configuration
-            href: resources/intune-cirrus-windowsofficeclientconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
-            - name: Create
-              href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
-            - name: Delete
-              href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
-            - name: Update
-              href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-          - name: Windows office client security configuration
-            href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
-            - name: Create
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
-            - name: Delete
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
-            - name: Update
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
           - name: Windows package information
             href: resources/intune-apps-windowspackageinformation.md
           - name: Windows Phone 8.1 AppX
@@ -5056,6 +5003,8 @@ items:
             href: resources/intune-deviceconfig-deviceplatformtype.md
           - name: Device threat protection level
             href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+          - name: Device type
+            href: resources/intune-deviceconfig-devicetype.md
           - name: Device types
             href: resources/intune-deviceconfig-devicetypes.md
           - name: Diagnostic data submission mode
@@ -5929,6 +5878,10 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
+          - name: Key/value pair
+            href: resources/intune-deviceconfig-keyvaluepair.md
+          - name: Key/value pair
+            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: Kiosk mode type
@@ -6479,6 +6432,8 @@ items:
               href: api/intune-deviceconfig-restrictedappsviolation-update.md
           - name: Retire scheduled managed device
             href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
+          - name: Run state
+            href: resources/intune-deviceconfig-runstate.md
           - name: Safe search filter type
             href: resources/intune-deviceconfig-safesearchfiltertype.md
           - name: Scheduled retire state
@@ -8107,6 +8062,8 @@ items:
               href: api/intune-devices-deviceshellscript-update.md
             - name: assign action
               href: api/intune-devices-deviceshellscript-assign.md
+          - name: Device type
+            href: resources/intune-devices-devicetype.md
           - name: Disk type
             href: resources/intune-devices-disktype.md
           - name: Embedded SIM activation code
@@ -8336,25 +8293,10 @@ items:
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
+          - name: Obliteration behavior
+            href: resources/intune-devices-obliterationbehavior.md
           - name: Oem warranty
             href: resources/intune-devices-oemwarranty.md
-          - name: Oem warranty information on-boarding
-            href: resources/intune-devices-oemwarrantyinformationonboarding.md
-            items:
-            - name: List
-              href: api/intune-devices-oemwarrantyinformationonboarding-list.md
-            - name: Get
-              href: api/intune-devices-oemwarrantyinformationonboarding-get.md
-            - name: Create
-              href: api/intune-devices-oemwarrantyinformationonboarding-create.md
-            - name: Delete
-              href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
-            - name: Update
-              href: api/intune-devices-oemwarrantyinformationonboarding-update.md
-            - name: enable action
-              href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
-            - name: disable action
-              href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
@@ -8452,6 +8394,8 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
+          - name: Run state
+            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -9214,19 +9158,6 @@ items:
               href: api/intune-mam-defaultmanagedappprotection-delete.md
             - name: Update
               href: api/intune-mam-defaultmanagedappprotection-update.md
-          - name: Device management configuration choice setting collection definition
-            href: resources/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingcollectiondefinition-update.md
           - name: Device management configuration setting
             href: resources/intune-mam-devicemanagementconfigurationsetting.md
             items:
@@ -9240,36 +9171,6 @@ items:
               href: api/intune-mam-devicemanagementconfigurationsetting-delete.md
             - name: Update
               href: api/intune-mam-devicemanagementconfigurationsetting-update.md
-          - name: Device management configuration setting group collection definition
-            href: resources/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupcollectiondefinition-update.md
-          - name: Device management configuration simple setting collection definition
-            href: resources/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingcollectiondefinition-update.md
-          - name: Device management configuration string format
-            href: resources/intune-mam-devicemanagementconfigurationstringformat.md
-          - name: Device management configuration string setting value definition
-            href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
           - name: Device management reports
             href: resources/intune-mam-devicemanagementreports.md
             items:
@@ -9322,6 +9223,8 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
+          - name: Key/value pair
+            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -10158,149 +10061,6 @@ items:
               href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
             - name: sendCustomNotificationToCompanyPortal action
               href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
-          - name: Device management configuration Azure ad trust type
-            href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
-          - name: Device management configuration choice setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
-          - name: Device management configuration choice setting definition
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettingdefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingdefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingdefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingdefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingdefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationchoicesettingdefinition-update.md
-          - name: Device management configuration choice setting instance
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
-          - name: Device management configuration choice setting value
-            href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
-          - name: Device management configuration control type
-            href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
-          - name: Device management configuration dependent on
-            href: resources/intune-shared-devicemanagementconfigurationdependenton.md
-          - name: Device management configuration device mode
-            href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
-          - name: Device management configuration exchange online setting applicability
-            href: resources/intune-shared-devicemanagementconfigurationexchangeonlinesettingapplicability.md
-          - name: Device management configuration group setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
-          - name: Device management configuration group setting instance
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
-          - name: Device management configuration group setting value
-            href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
-          - name: Device management configuration integer setting value
-            href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
-          - name: Device management configuration integer setting value definition
-            href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
-          - name: Device management configuration option definition
-            href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
-          - name: Device management configuration platforms
-            href: resources/intune-shared-devicemanagementconfigurationplatforms.md
-          - name: Device management configuration redirect setting definition
-            href: resources/intune-shared-devicemanagementconfigurationredirectsettingdefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationredirectsettingdefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationredirectsettingdefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationredirectsettingdefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationredirectsettingdefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationredirectsettingdefinition-update.md
-          - name: Device management configuration reference setting value
-            href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
-          - name: Device management configuration referred setting information
-            href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
-          - name: Device management configuration secret setting value
-            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
-          - name: Device management configuration secret setting value state
-            href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
-          - name: Device management configuration setting access types
-            href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
-          - name: Device management configuration setting applicability
-            href: resources/intune-shared-devicemanagementconfigurationsettingapplicability.md
-          - name: Device management configuration setting definition
-            href: resources/intune-shared-devicemanagementconfigurationsettingdefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationsettingdefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationsettingdefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationsettingdefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationsettingdefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationsettingdefinition-update.md
-          - name: Device management configuration setting depended on by
-            href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
-          - name: Device management configuration setting group collection instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
-          - name: Device management configuration setting group definition
-            href: resources/intune-shared-devicemanagementconfigurationsettinggroupdefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupdefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupdefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupdefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupdefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationsettinggroupdefinition-update.md
-          - name: Device management configuration setting group instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
-          - name: Device management configuration setting instance
-            href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
-          - name: Device management configuration setting instance template reference
-            href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
-          - name: Device management configuration setting occurrence
-            href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
-          - name: Device management configuration setting usage
-            href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
-          - name: Device management configuration setting value
-            href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
-          - name: Device management configuration setting value definition
-            href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
-          - name: Device management configuration setting value template reference
-            href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
-          - name: Device management configuration setting visibility
-            href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
-          - name: Device management configuration simple setting collection instance
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
-          - name: Device management configuration simple setting definition
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettingdefinition.md
-            items:
-            - name: List
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingdefinition-list.md
-            - name: Get
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingdefinition-get.md
-            - name: Create
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingdefinition-create.md
-            - name: Delete
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingdefinition-delete.md
-            - name: Update
-              href: api/intune-mam-devicemanagementconfigurationsimplesettingdefinition-update.md
-          - name: Device management configuration simple setting instance
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
-          - name: Device management configuration simple setting value
-            href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
-          - name: Device management configuration string setting value
-            href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
-          - name: Device management configuration technologies
-            href: resources/intune-shared-devicemanagementconfigurationtechnologies.md
-          - name: Device management configuration windows setting applicability
-            href: resources/intune-shared-devicemanagementconfigurationwindowssettingapplicability.md
-          - name: Device management configuration windows skus
-            href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
           - name: Device management derived credential settings
             href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             items:
@@ -10329,8 +10089,6 @@ items:
               href: api/intune-shared-devicemanagementscript-assign.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
-          - name: Device type
-            href: resources/intune-shared-devicetype.md
           - name: Enablement
             href: resources/intune-shared-enablement.md
           - name: Enrollment availability options
@@ -10399,12 +10157,8 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
-          - name: Key/value pair
-            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
-          - name: macOS VPP app assignment settings
-            href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type
             href: resources/intune-shared-manageddeviceownertype.md
           - name: Management agent type
@@ -10477,8 +10231,6 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
-          - name: Run state
-            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
