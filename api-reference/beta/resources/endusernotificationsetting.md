@@ -1,5 +1,4 @@
 ---
-title: "endUserNotificationSetting resource type"
 title: "End user notification setting for simulation creation."
 description: "Details required for oAuth technique"
 author: "stuartcl"

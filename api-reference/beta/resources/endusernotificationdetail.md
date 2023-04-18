@@ -20,11 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List endUserNotificationDetails](../api/endusernotification-list-details.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Get a list of the [endUserNotificationDetail](../resources/endusernotificationdetail.md) objects and their properties.|
-|[Create endUserNotificationDetail](../api/endusernotification-post-details.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Create a new [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
-|[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
-|[Update endUserNotificationDetail](../api/endusernotificationdetail-update.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Update the properties of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
-|[Delete endUserNotificationDetail](../api/endusernotification-delete-details.md)|None|Delete an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
+[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
 
 ## Properties
 |Property|Type|Description|

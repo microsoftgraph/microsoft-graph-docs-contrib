@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.landingPageDetail",
+      "@odata.type": "#microsoft.graph.landingPageDetail",u
       "id": "d495efad-a51b-d557-7ce3-ff1c8ed7db8a",
       "content": "String",
       "language": "String",
