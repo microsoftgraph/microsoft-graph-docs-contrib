@@ -12376,7 +12376,7 @@ items:
             - name: Update
               href: api/unifiedrbacapplication-update-customappscope.md
             - name: Delete
-              href: /api/unifiedrbacapplication-delete-customappscope.md
+              href: api/unifiedrbacapplication-delete-customappscope.md
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:

@@ -42,7 +42,12 @@ None
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.customAppScope"
+}
+-->
 ```json
 {
   "id": "String (identifier)",
