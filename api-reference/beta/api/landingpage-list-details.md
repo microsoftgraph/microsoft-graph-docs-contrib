@@ -1,10 +1,11 @@
 ---
 title: "List landingPageDetails"
 description: "Get a list of the landingPageDetail objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "security"
+doc_type: resourcePageType
+---
 ---
 
 # List landingPageDetails
@@ -17,11 +18,10 @@ Get a list of the [landingPageDetail](../resources/landingpagedetail.md) objects
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
