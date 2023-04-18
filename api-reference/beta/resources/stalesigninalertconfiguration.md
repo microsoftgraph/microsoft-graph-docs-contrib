@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if there are accounts in a privileged role which have not signed in to Azure AD within a specified time period. These accounts might be service or shared accounts that are not being maintained and are vulnerable to security threats.
+Represents an alert configuration that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified period. These accounts might be service or shared accounts that are not being maintained and are vulnerable to security threats.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
