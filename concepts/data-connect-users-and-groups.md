@@ -35,7 +35,7 @@ A customer wants to extract the messages dataset and creates a security group of
         
 ### Group-scoped datasets
 
-Group-scoped datasets can be Outlook group Conversations, Teams channel messages, group details, and so on. These datasets focus on the collective data for a group in Outlook or Teams for the respective dataset.
+Group-scoped datasets can be Outlook group conversations, Teams channel messages, group details, and so on. These datasets focus on the collective data for a group in Outlook or Teams for the respective dataset.
 
 The following are the options for group-scoped datasets:
     * **All groups in the tenant**: returns data for all the groups in the tenant.
