@@ -95,7 +95,7 @@ Properties of directory objects behave differently in their support for query pa
 
 The following tables summarize support for `$filter` operators by properties of directory objects and indicates where querying is supported through advanced query capabilities.
 
-### Legend
+**Legend**
 
 + ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
 + ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
@@ -111,6 +111,14 @@ The following tables summarize support for `$filter` operators by properties of 
 ## Support for sorting by properties of Azure AD (directory) objects
 
 The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
+
+**Legend**
+
++ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
++ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
+  + `ConsistencyLevel=eventual` header
+  + `$count=true` query string
++ Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).
 
 | Directory object   | Property name                 | Supports $orderby |
 |--------------------|-------------------------------|-------------------|
