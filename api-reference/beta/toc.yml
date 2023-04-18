@@ -12364,6 +12364,19 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+          - name: Custom app scope
+            href: resources/customappscope.md
+            items:
+            - name: List
+              href: api/unifiedrbacapplication-list-customappscopes.md
+            - name: Create
+              href: api/unifiedrbacapplication-post-customappscopes.md
+            - name: Get
+              href: api/unifiedrbacapplication-get-customappscopes.md
+            - name: Update
+              href: api/unifiedrbacapplication-update-customappscopes.md
+            - name: Delete
+              href: api/unifiedrbacapplication-delete-customappscopes.md
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:

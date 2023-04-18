@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScope](https://learn.microsoft.com/en-us/graph/api/resources/customAppScope?view=graph-rest-beta) resource type",
+          "Target": "customAppScope"
+        },
+        {
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAppScopes** relationship to the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource.",
+          "Target": "unifiedRbacApplication"
+        }
+      ],
+      "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T11:02:06.6580762Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
