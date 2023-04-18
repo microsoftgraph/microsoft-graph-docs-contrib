@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if roles are being assigned outside of Privileged Identity Management in the last 30 days.
+Represents an alert configuration that is triggered if Azure AD roles have been assigned outside of Privileged Identity Management in the last 30 days.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
