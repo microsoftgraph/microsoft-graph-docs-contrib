@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](../api/educationassignment-activate?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/graph/api/educationAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [activate](../api/educationassignment-activate.md) method to the [educationAssignment](../resources/educationAssignment.md) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "deactivate",
           "ChangeType": "Addition",
-          "Description": "Added the [deactivate](../api/educationassignment-deactivate?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/graph/api/educationAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [deactivate](../api/educationassignment-deactivate.md) method to the [educationAssignment](../resources/educationAssignment.md) resource.",
           "Target": "educationAssignment"
         }
       ],
