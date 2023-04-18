@@ -1,6 +1,6 @@
 ---
 title: "invalidLicenseAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if the current Azure AD organization does not have a valid Azure AD Premium P2 license."
+description: "Represents an alert configuration that's triggered if the tenant doesn't have a valid Azure AD Premium P2 license that's required to use the PIM for Azure AD roles feature."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
