@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get learningCourseActivity
 Namespace: microsoft.graph
 
-Get the specified [learningCourseActivity](../resources/learningcourseactivity.md) object using a Id or a externalCourseActivityId belonging to learning provider or retrieves course activity details belonging to a user using courseActivityId.
+Get the specified [learningCourseActivity](../resources/learningcourseactivity.md) object using either an ID or an **externalCourseActivityId** of the learning provider, or a **courseActivityId** of a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,33 +24,45 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To get a specific learning course activity based on its ID (primary key):
 <!-- {
   "blockType": "ignored"
 }
 -->
-For a specific learning course activity based on its Id (primary key):
 ``` http
 GET /employeeExperience/learningCourseActivities/{Id}
 ```
 
-For a specific learning course activity based on its externalCourseActivityId (secondary key):
+To get a specific learning course activity based on its **externalCourseActivityId** (secondary key):
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(extern
 alCourseActivityId={externalCourseActivityId})
 ```
 
-To retrieve the learning course activity details for a user:
+To get the learning course activity details for a user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
 ```
 
-To retrieve learning course activity details for the signed-in user:
+To get learning course activity details for the signed-in user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET me/employeeExperience/learningCourseActivities/{id}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. OData query parameters like `$select` are supported. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and other OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -66,10 +78,10 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 
 ## Examples
 
-### Example 1: Get a learning course activity based on its Id.
+### Example 1: Get a learning course activity based on its ID.
 
 #### Request
-The following examples shows a request to get an learning course activity using Id.
+The following examples shows a request to get an learning course activity using an ID.
 
 <!-- {
   "blockType": "request",
@@ -118,10 +130,10 @@ Content-Type: application/json
   "status": "notStarted"
 }
 ```
-### Example 2: Get a learning course activity based on externalCourseActivityId of learning provider.
+### Example 2: Get a learning course activity based on the externalCourseActivityId of the learning provider
 
 #### Request
-The following example shows the request to get details of a learning course activity using external course activity id.
+The following example shows a request to get the details of a learning course activity using an external course activity ID.
 
 <!-- {
   "blockType": "request",
@@ -133,7 +145,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f8
 ```
 
 #### Response
-The following is an example response of an assigned learning course activity by external course activityId.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -170,24 +182,22 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Get a learning course activity details for a user.
+### Example 3: Get a learning course activity details for a user
 
 #### Request
-The following example shows the request to get details of a learning course activity:
+The following example shows a request to get the details of a learning course activity for a user.
 
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details"
 }-->
 
-To retrieve the course activity details for a user:
-
 ``` http
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
