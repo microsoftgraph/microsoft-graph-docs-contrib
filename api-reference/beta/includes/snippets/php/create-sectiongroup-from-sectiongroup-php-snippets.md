@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SectionGroupsPostRequestBody();
 $additionalData = [
-'displayName' => 'Section group name', 
+		'displayName' => 'Section group name', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

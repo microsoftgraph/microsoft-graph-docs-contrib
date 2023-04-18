@@ -19,7 +19,7 @@ $transferTargetIdentity = new IdentitySet();
 $transferTargetIdentity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'phone' => $transferTargetIdentity = new Phone();
+		'phone' => $transferTargetIdentity = new Phone();
 $		transferTargetIdentity->set@odatatype('#microsoft.graph.identity');
 
 $		transferTargetIdentity->setId('+12345678901');
@@ -36,8 +36,8 @@ $transferTarget->setIdentity($transferTargetIdentity);
 $transferTarget->setReplacesCallId('e5d39592-99bd-4db8-bca8-30fb894ec51d');
 
 $additionalData = [
-'languageId' => 'en-us', 
-'region' => 'amer', 
+		'languageId' => 'en-us', 
+		'region' => 'amer', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 

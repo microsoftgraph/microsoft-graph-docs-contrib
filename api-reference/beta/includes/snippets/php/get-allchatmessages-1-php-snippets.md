@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MessagesRequestBuilderGetQueryParameters();
+$queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->top = 2;
 $queryParameters->orderby = ["createdDateTime desc"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->messages()->get($requestConfiguration);
+$result = $graphServiceClient->chatsById('chat-id')->messages()->get($requestConfiguration);
 
 
 ```

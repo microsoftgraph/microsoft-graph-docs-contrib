@@ -24,7 +24,7 @@ $requestBody->setRolePermissions($rolePermissionsArray);
 
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	AllowedCloudEndpoints = @(
+	allowedCloudEndpoints = @(
 		"microsoftonline.us"
 		"partner.microsoftonline.cn"
 	)

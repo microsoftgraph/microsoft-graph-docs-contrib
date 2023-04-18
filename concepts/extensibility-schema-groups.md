@@ -25,7 +25,7 @@ For this scenario, this article will show you how to:
 5. Read a group and the extension data.
 
 > [!NOTE]
-> Apart from groups, schema extensions are also supported and can be managed for [other resource types](extensibility-overview.md#choose-an-extension-type-for-your-application).
+> Apart from groups, schema extensions are also supported and can be managed for [other resource types](extensibility-overview.md#comparison-of-extension-types).
 
 ## 1. View available schema extensions
 

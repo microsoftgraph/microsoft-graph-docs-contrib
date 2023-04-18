@@ -56,6 +56,8 @@ If successful, this method returns `201 Created` response code and [outlookTask]
 ## Example
 ##### Request
 The following example shows the use of the `Prefer: outlook.timezone` header. It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"

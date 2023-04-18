@@ -10,7 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CloudPcOnPremisesConnection();
-
 $requestBody->setDisplayName('test-canary-02');
 
 $requestBody->setType(new CloudPcOnPremisesConnectionType('hybridazureadjoin'));
@@ -31,7 +30,7 @@ $requestBody->setSubnetId('/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/r
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->post($requestBody);
 
 
 ```
