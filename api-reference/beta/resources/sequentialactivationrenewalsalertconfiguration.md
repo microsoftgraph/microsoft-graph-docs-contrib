@@ -25,8 +25,8 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |isEnabled|Boolean|True if the alert is enabled. Setting to false will disable scanning for the specific alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope where the alert is related. For example, directory id, application id, etc. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeType|String|The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD Roles. New types like Application and Group may be introduced later. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
-|sequentialActivationCounterThreshold|Int32|Threshold number of sequential activations.|
-|timeIntervalBetweenActivations|Duration|Time internal between two adjacent activations of the same role.|
+|sequentialActivationCounterThreshold|Int32|The minimum number of activations within the timeIntervalBetweenActivations period to trigger an alert.|
+|timeIntervalBetweenActivations|Duration|Time interval between activations to trigger an alert.|
 
 ## Relationships
 |Relationship|Type|Description|
