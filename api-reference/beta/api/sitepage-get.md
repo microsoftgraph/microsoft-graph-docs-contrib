@@ -42,18 +42,18 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see `[OData query parameters](/graph/query-parameters)`.
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query string parameter to include the content of an item in the same call as retrieving the metadata of an item if the item has a **=canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **=canvasLayout** relationship.
 
 
 ## Request headers
 
-| Name       | Type | Description |
-|:---------------|:--------|:--------|
+| Name       | Description |
+|:---------------|:--------|
 |Authorization|Bearer {token}. Required.|
 | Content-Type  | application/json. Required. |
-| Accept |application/json;odata.metadata=none|Remove all OData metadata from the response. It is recommended to include this header when utilizing the response will be use in another request. |
+| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
 
 ## Request body
 
@@ -61,7 +61,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a [sitePage](../resources/sitepage.md) in the response body.
+If successful, this method returns a `200` and a [sitePage](../resources/sitepage.md) object in the response body.
 
 
 ## Examples
