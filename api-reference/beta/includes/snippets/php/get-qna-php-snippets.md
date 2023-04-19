@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->search()->qnasById('qna-id')->get();
+$result = $graphServiceClient->search()->qnasById('qna-id')->get();
 
 
 ```

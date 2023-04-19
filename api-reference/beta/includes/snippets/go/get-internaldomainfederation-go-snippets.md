@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DomainsById("domain-id").FederationConfigurationById("internalDomainFederation-id").Get(context.Background(), nil)
+result, err := graphClient.Domains().ByDomainId("domain-id").FederationConfiguration().ByFederationConfiguration().Id("internalDomainFederation-id").Get(context.Background(), nil)
 
 
 ```

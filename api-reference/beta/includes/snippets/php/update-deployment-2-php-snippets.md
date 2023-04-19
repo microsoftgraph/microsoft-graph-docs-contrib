@@ -34,7 +34,7 @@ $settings->setMonitoring($settingsMonitoring);
 $requestBody->setSettings($settings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->deploymentsById('deployment-id')->patch($requestBody);
 
 
 ```

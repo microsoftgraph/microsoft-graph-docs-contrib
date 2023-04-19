@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Web = @{
-		RedirectUris = @(
+	web = @{
+		redirectUris = @(
 			"https://signin.aws.amazon.com/saml"
 		)
 	}
-	IdentifierUris = @(
+	identifierUris = @(
 		"https://signin.aws.amazon.com/saml"
 	)
 }

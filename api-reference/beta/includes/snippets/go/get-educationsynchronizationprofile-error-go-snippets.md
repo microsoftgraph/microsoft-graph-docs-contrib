@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Education().SynchronizationProfilesById("educationSynchronizationProfile-id").Errors().Get(context.Background(), nil)
+result, err := graphClient.Education().SynchronizationProfiles().BySynchronizationProfileId("educationSynchronizationProfile-id").Errors().Get(context.Background(), nil)
 
 
 ```

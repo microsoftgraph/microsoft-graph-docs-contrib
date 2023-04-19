@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Name = "name-value"
-	Region = "region-value"
+	name = "name-value"
+	region = "region-value"
 }
 
 Update-MgOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -BodyParameter $params

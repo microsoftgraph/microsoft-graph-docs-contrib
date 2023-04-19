@@ -19,7 +19,7 @@ requestBody := graphmodels.NewEducationAssignmentSettings()
 submissionAnimationDisabled := true
 requestBody.SetSubmissionAnimationDisabled(&submissionAnimationDisabled) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

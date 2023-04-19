@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.BookingBusinessesById("bookingBusiness-id").CustomersById("bookingCustomer-id").Delete(context.Background(), nil)
+graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Customers().ByCustomerId("bookingCustomer-id").Delete(context.Background(), nil)
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	Vendor = "LMS Vendor"
+	vendor = "LMS Vendor"
 }
 
 Update-MgExternalIndustryDataSourceSystem -SourceSystemDefinitionId $sourceSystemDefinitionId -BodyParameter $params

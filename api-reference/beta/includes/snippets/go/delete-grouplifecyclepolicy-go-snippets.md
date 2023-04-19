@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Delete(context.Background(), nil)
+graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").Delete(context.Background(), nil)
 
 
 ```

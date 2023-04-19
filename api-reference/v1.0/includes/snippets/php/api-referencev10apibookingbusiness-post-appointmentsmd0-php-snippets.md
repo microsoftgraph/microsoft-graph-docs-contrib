@@ -49,7 +49,7 @@ $remindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 $remindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
 
 $additionalData = [
-'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
+		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
 ];
 $remindersBookingReminder1->setAdditionalData($additionalData);
 
@@ -66,7 +66,7 @@ $remindersBookingReminder2->setOffset(new \DateInterval('PT1H'));
 $remindersBookingReminder2->setRecipients(new BookingReminderRecipients('customer'));
 
 $additionalData = [
-'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
+		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
 ];
 $remindersBookingReminder2->setAdditionalData($additionalData);
 
@@ -83,7 +83,7 @@ $remindersBookingReminder3->setOffset(new \DateInterval('PT2H'));
 $remindersBookingReminder3->setRecipients(new BookingReminderRecipients('staff'));
 
 $additionalData = [
-'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
+		'recipients@odata.type' => '#microsoft.graph.bookingReminderRecipients', 
 ];
 $remindersBookingReminder3->setAdditionalData($additionalData);
 
@@ -112,9 +112,9 @@ $serviceLocationAddress->setState('NY');
 $serviceLocationAddress->setStreet('123 First Avenue');
 
 $additionalData = [
-'postOfficeBox' => 	null,
-'type@odata.type' => '#microsoft.graph.physicalAddressType', 
-'type' => 	null,
+	'postOfficeBox' => 	null,
+	'type@odata.type' => '#microsoft.graph.physicalAddressType', 
+	'type' => 	null,
 ];
 $serviceLocationAddress->setAdditionalData($additionalData);
 
@@ -136,8 +136,8 @@ $ServiceLocation->setUniqueId(null);
 $ServiceLocation->setUniqueIdType(null);
 
 $additionalData = [
-'locationType@odata.type' => '#microsoft.graph.locationType', 
-'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType', 
+	'locationType@odata.type' => '#microsoft.graph.locationType', 
+	'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType', 
 ];
 $serviceLocation->setAdditionalData($additionalData);
 
@@ -165,12 +165,12 @@ $customersBookingCustomerInformationBase1 = new BookingCustomerInformationBase()
 $customersBookingCustomerInformationBase1->set@odatatype('#microsoft.graph.bookingCustomerInformation');
 
 $additionalData = [
-'customerId' => '7ed53fa5-9ef2-4f2f-975b-27447440bc09', 
-'name' => 'Jordan Miller', 
-'emailAddress' => 'jordanm@contoso.com', 
-'phone' => '213-555-0199', 
-'notes' => 	null,
-'location' => $customersBookingCustomerInformationBase1 = new Location();
+	'customerId' => '7ed53fa5-9ef2-4f2f-975b-27447440bc09', 
+	'name' => 'Jordan Miller', 
+	'emailAddress' => 'jordanm@contoso.com', 
+	'phone' => '213-555-0199', 
+	'notes' => 	null,
+	'location' => $customersBookingCustomerInformationBase1 = new Location();
 $	customersBookingCustomerInformationBase1->set@odatatype('#microsoft.graph.location');
 
 $	customersBookingCustomerInformationBase1->setDisplayName('Customer');
@@ -216,8 +216,8 @@ $customersBookingCustomerInformationBase1->setCoordinates($coordinates);
 
 $customersBookingCustomerInformationBase1->setLocation($location);
 
-'timeZone' => 'America/Chicago', 
-'customQuestionAnswers' => $customQuestionAnswers1 = new ();
+	'timeZone' => 'America/Chicago', 
+	'customQuestionAnswers' => $customQuestionAnswers1 = new ();
 $	customQuestionAnswers1->setQuestionId('3bc6fde0-4ad3-445d-ab17-0fc15dba0774');
 
 $	customQuestionAnswers1->setQuestion('What is your age?');
@@ -256,7 +256,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->appointments()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->appointments()->post($requestBody);
 
 
 ```
