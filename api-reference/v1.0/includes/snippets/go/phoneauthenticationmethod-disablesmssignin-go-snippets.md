@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Authentication().PhoneMethodsById("phoneAuthenticationMethod-id").DisableSmsSignIn().Post(context.Background(), nil)
+graphClient.Me().Authentication().PhoneMethods().ByPhoneMethodId("phoneAuthenticationMethod-id").DisableSmsSignIn().Post(context.Background(), nil)
 
 
 ```

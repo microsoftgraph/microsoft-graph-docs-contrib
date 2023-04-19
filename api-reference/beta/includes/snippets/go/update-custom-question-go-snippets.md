@@ -28,7 +28,7 @@ answerOptions := []string {
 }
 requestBody.SetAnswerOptions(answerOptions)
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().CustomQuestionsById("meetingRegistrationQuestion-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().CustomQuestions().ByCustomQuestionId("meetingRegistrationQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

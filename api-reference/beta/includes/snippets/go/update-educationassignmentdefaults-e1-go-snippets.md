@@ -23,7 +23,7 @@ requestBody.SetAddToCalendarAction(&addToCalendarAction)
 notificationChannelUrl := "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 requestBody.SetNotificationChannelUrl(&notificationChannelUrl) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
 
 
 ```

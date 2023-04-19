@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById("serviceHealth-id").Get(context.Background(), nil)
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().ByHealthOverviewId("serviceHealth-id").Get(context.Background(), nil)
 
 
 ```

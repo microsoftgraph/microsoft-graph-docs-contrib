@@ -23,7 +23,7 @@ configuration := &graphconfig.UserItemOnlineMeetingItemTranscriptItemContentRequ
 	Headers: headers,
 }
 
-graphClient.UsersById("user-id").OnlineMeetingsById("onlineMeeting-id").TranscriptsById("callTranscript-id").Content().Get(context.Background(), configuration)
+graphClient.Users().ByUserId("user-id").OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Transcripts().ByTranscriptId("callTranscript-id").Content().Get(context.Background(), configuration)
 
 
 ```

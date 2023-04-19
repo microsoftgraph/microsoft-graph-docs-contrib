@@ -19,7 +19,7 @@ requestBody := graphmodels.NewPersonAnnotation()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-result, err := graphClient.UsersById("user-id").Profile().NotesById("personAnnotation-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Profile().Notes().ByNoteId("personAnnotation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

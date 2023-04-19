@@ -98,7 +98,7 @@ objectMappings := []graphmodels.Objectable {
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").Schema().Put(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").Schema().Put(context.Background(), requestBody, nil)
 
 
 ```
