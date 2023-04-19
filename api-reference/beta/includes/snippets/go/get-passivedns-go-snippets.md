@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().PassiveDnsRecordsById("passiveDnsRecord-id").Get(context.Background(), nil)
+result, err := graphClient.Security().ThreatIntelligence().PassiveDnsRecords().ByPassiveDnsRecordId("passiveDnsRecord-id").Get(context.Background(), nil)
 
 
 ```

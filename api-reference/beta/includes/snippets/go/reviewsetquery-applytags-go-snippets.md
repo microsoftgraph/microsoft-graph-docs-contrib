@@ -28,7 +28,7 @@ tagsToAdd := []graphmodels.Objectable {
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").ReviewSetsById("reviewSet-id").QueriesById("reviewSetQuery-id").EdiscoveryApplyTags().Post(context.Background(), requestBody, nil)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").Queries().ByQuerieId("reviewSetQuery-id").EdiscoveryApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

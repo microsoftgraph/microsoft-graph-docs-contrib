@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].GetAsync((requestConfiguration) =>
 {
-	new QueryOption("select", "name,lastModifiedDateTime"),
-	new QueryOption("expand", "columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))")
-};
+	requestConfiguration.QueryParameters.Select = new string []{ "name","lastModifiedDateTime" };
+	requestConfiguration.QueryParameters.Expand = new string []{ "columns(select=name,description)","items",")" };
+});
 
-var list = await graphClient.Sites["{site-id}"].Lists["{list-id}"]
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

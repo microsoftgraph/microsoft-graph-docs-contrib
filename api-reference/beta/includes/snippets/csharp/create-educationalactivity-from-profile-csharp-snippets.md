@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationalActivity = new EducationalActivity
+var requestBody = new EducationalActivity
 {
-	CompletionMonthYear = new Date(1900,1,1),
-	EndMonthYear = new Date(1900,1,1),
+	CompletionMonthYear = new Date(DateTime.Parse("Date")),
+	EndMonthYear = new Date(DateTime.Parse("Date")),
 	Institution = new InstitutionData
 	{
 		Description = null,
@@ -22,9 +22,9 @@ var educationalActivity = new EducationalActivity
 			City = "Fort Collins",
 			State = "Colorado",
 			CountryOrRegion = "USA",
-			PostalCode = "80525"
+			PostalCode = "80525",
 		},
-		WebUrl = "https://www.colostate.edu"
+		WebUrl = "https://www.colostate.edu",
 	},
 	Program = new EducationalActivityDetail
 	{
@@ -36,13 +36,11 @@ var educationalActivity = new EducationalActivity
 		FieldsOfStudy = null,
 		Grade = "3.9",
 		Notes = null,
-		WebUrl = "https://biz.colostate.edu"
+		WebUrl = "https://biz.colostate.edu",
 	},
-	StartMonthYear = new Date(1900,1,1)
+	StartMonthYear = new Date(DateTime.Parse("Date")),
 };
+var result = await graphClient.Me.Profile.EducationalActivities.PostAsync(requestBody);
 
-await graphClient.Me.Profile.EducationalActivities
-	.Request()
-	.AddAsync(educationalActivity);
 
 ```
