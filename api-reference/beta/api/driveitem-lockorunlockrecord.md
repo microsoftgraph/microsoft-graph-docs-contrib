@@ -102,7 +102,6 @@ Content-Type: application/json
         "behaviorDuringRetentionPeriod": "retain",
         "isDeleteAllowed": false,
         "isRecordLocked": true,
-
         "isMetadataUpdateAllowed": false,
         "isContentUpdateAllowed": false,
         "isLabelUpdateAllowed": false
