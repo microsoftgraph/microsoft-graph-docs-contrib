@@ -21,11 +21,13 @@ For information about retention labels from an administrator's perspective, see 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                     | Entities/APIs Covered                                                                                          |
-|:---------------------------------------|:----------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All, Sites.FullControl.All | Remove Retention Label from the document, Remove Retention Label that classifies as a record from the document |
-| Delegated (personal Microsoft account) | Not supported.                                                  |                                                                                                                |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                        | Remove Retention Label from the document                                                                       |
+| Type                                   | Permissions (from least to most privileged)                                     |
+|:---------------------------------------|:--------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.FullControl.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                  |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
+
+Note: Only some permission allow the ability to remove retention labels that classify contents as records from documents.
 
 ## HTTP request
 
