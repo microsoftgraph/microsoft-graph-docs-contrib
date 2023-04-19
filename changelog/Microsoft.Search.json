@@ -1607,7 +1607,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryTemplate",
           "ChangeType": "Addition",
-          "Description": "Added queryTemplate to the search [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0).",
+          "Description": "Added queryTemplate to the search [query](https://learn.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-1.0).",
           "Target": "query"
         }
       ],
