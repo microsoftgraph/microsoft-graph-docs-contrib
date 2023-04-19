@@ -7,7 +7,7 @@ ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/08/2022
+ms.date: 04/14/2023
 ---
 
 # Use the filter query parameter
@@ -251,6 +251,8 @@ These examples show how to use `$filter` to match against supported properties a
 | `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`<sup>*</sup>                    |
 | `not` and `$count` for empty collections | `~/users?$filter=not(assignedLicenses/$count eq 0)`<sup>*</sup>               |
 | `$count` for collections with one object | `~/servicePrincipals?$filter=owners/$count eq 1`<sup>*</sup>                  |
+
+For the list of all properties of directory objects that support count of a collection in a filter expression, see [Count of a collection in a filter expression](/graph/aad-advanced-queries#count-of-a-collection-in-a-filter-expression).
 
 <!--`in` - otherMails example; 
 `not` and `in`; 
