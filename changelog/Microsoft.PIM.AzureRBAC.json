@@ -547,6 +547,48 @@
       "CreatedDateTime": "2023-03-15T00:00:00.676618Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList" :[
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRole resource type.",
+          "Target": "privilegedRole"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignment",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleAssignment resource type.",
+          "Target": "privilegedRoleAssignment"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignmentRequest",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleAssignmentRequest resource type.",
+          "Target": "privilegedRoleAssignmentRequest"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedApproval",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedApproval resource type.",
+          "Target": "privilegedApproval"
+        }
+      ],
+      "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+      "Cloud":"Prod",
+      "Version":"beta",
+      "CreatedDateTime":"2023-04-19T00:00:00.0000000Z",
+      "WorkloadArea":"Identity and access",
+      "SubArea":"Governance"
     }
   ]
 }
