@@ -2287,14 +2287,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### attributeFlowType values 
 
-<<<<<<< HEAD
-| Member            |
-| :---------------- |
-| always            |
-| objectAddOnly     |
-| multiValueAddOnly |
-| restId            |
-=======
 | Member            |
 | :---------------- |
 | Always            |
@@ -2302,7 +2294,6 @@ Possible values for user account types (group membership), per Windows definitio
 | MultiValueAddOnly |
 | ValueAddOnly      |
 | AttributeAddOnly  |
->>>>>>> upstream/main
 
 ### objectFlowTypes values
 
@@ -2526,25 +2517,16 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### conditionalAccessDevicePlatform
 
-| Member       |
-<<<<<<< HEAD
-| :----------- |
-| android      |
-| iOS          |
-| windows      |
-| windowsPhone |
-| macOS        |
-| all          |
-=======
-|:--------------|
-|block|
-|mfa|
-|compliantDevice|
-|domainJoinedDevice|
-|approvedApplication|
-|compliantApplication|
-|passwordChange|
-|unknownFutureValue|
+| Member               |
+| :------------------- |
+| block                |
+| mfa                  |
+| compliantDevice      |
+| domainJoinedDevice   |
+| approvedApplication  |
+| compliantApplication |
+| passwordChange       |
+| unknownFutureValue   |
 
 ### conditionalAccessRule values 
 
@@ -2629,7 +2611,6 @@ Possible values for user account types (group membership), per Windows definitio
 | macOS              |
 | all                |
 | unknownFutureValue |
->>>>>>> upstream/main
 
 ### priority values
 
@@ -2790,26 +2771,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### externalGroupMemberType values
 
-| Member |
-<<<<<<< HEAD
-| :----- |
-| user   |
-| group  |
-
-### connectionState values
-
-| Member        |
-| :------------ |
-| draft         |
-| ready         |
-| obsolete      |
-| limitExceeded |
-=======
-|:--------|
-|unknown|
-|connected|
-|disconnected|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| connected          |
+| disconnected       |
+| unknownFutureValue |
 
 ### teamworkDeviceActivityState values
 
@@ -3281,4 +3248,3 @@ Possible values for user account types (group membership), per Windows definitio
 | microsoftAuthenticator |
 | outlookMobile          |
 | unknownFutureValue     |
->>>>>>> upstream/main

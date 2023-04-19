@@ -35,7 +35,7 @@ GET /reports/servicePrincipalSignInActivities/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -60,12 +60,11 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities/{id}
 ```
 
@@ -77,7 +76,8 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.signIn"
-} -->
+} 
+-->
 
 
 ```http

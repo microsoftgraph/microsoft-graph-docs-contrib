@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,13 +58,11 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
 ```
 #### Response
@@ -109,14 +107,9 @@ Content-length: 211
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=keyId eq '{keyId}'
 ```
-
-
 
 #### Response
 
@@ -152,13 +145,9 @@ Content-type: application/json
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
-
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=appId eq '{appId}'
 ```
-
-
 
 #### Response
 
@@ -182,6 +171,4 @@ Content-type: application/json
     "lastSignInRequestId": "guid1"
   }
 }
-
-```
 ```
