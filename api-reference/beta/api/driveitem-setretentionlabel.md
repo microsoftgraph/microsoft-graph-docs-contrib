@@ -72,7 +72,7 @@ PATCH https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retenti
 Content-Type: application/json
 
 {
-    "name": "retentionLabelName"
+    "name": "Retention label for Contracts"
 }
 ```
 
@@ -91,7 +91,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "name": "retentionLabelName",
+    "name": "Retention label for Contracts",
     "retentionSettings":
     {
         "behaviorDuringRetentionPeriod": "retain",
