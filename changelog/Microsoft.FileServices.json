@@ -4,11 +4,11 @@
       "ChangeList": [
         {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "behaviorDuringRetentionPeriod",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "retentionLabel",
           "ChangeType": "Addition",
-          "Description": "Added the **behaviorDuringRetentionPeriod** enumeration type.",
-          "Target": "behaviorDuringRetentionPeriod"
+          "Description": "Added the **retentionLabel** relationship to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
         },
         {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
@@ -21,18 +21,42 @@
         {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
           "ApiChange": "Resource",
-          "ChangedApiName": "retentionLabel",
+          "ChangedApiName": "itemRetentionLabel",
           "ChangeType": "Addition",
-          "Description": "Added the **retentionLabel** relationship to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [itemRetentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/itemRetentionLabel?view=graph-rest-beta) resource type.",
+          "Target": "itemRetentionLabel"
+        },
+        {
+          "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRetentionLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-getretentionlabel?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         },
         {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
-          "ApiChange": "Resource",
-          "ChangedApiName": "itemRetentionLabel",
+          "ApiChange": "Method",
+          "ChangedApiName": "lockOrUnlockRecord",
           "ChangeType": "Addition",
-          "Description": "Added the [itemRetentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/itemRetentionLabel?view=graph-rest-beta) resource",
-          "Target": "itemRetentionLabel"
+          "Description": "Added the [lockOrUnlockRecord](https://learn.microsoft.com/en-us/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeRetentionLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
+          "ApiChange": "Method",
+          "ChangedApiName": "setRetentionLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [setRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-setretentionlabel?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
         }
       ],
       "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
