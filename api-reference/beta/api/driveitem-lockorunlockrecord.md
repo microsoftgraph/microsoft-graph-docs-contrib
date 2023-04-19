@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "name": "retentionLabelName",
+    "name": "Retention label for Contracts",
     "retentionSettings":
     {
         "behaviorDuringRetentionPeriod": "retain",
