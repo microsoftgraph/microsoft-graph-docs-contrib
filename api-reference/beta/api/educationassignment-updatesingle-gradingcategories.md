@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a single gradingCategory on the [educationAssignmentSettings](../resources/educationassignmentsettings.md). Only teachers can perform this operation.
+Update a single [gradingCategory](../resources/assignment-gradingcategories.md) on the [educationAssignmentSettings](../resources/educationassignmentsettings.md). Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
