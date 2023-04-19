@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
@@ -22,7 +30,7 @@ chatMessageHostedContent.SetContentBytes(&contentBytes)
 contentType := "image/png"
 chatMessageHostedContent.SetContentType(&contentType) 
 additionalData := map[string]interface{}{
-	"@microsoft.graph.temporaryId" : "1", 
+	"microsoftGraphTemporaryId" : "1", 
 }
 chatMessageHostedContent.SetAdditionalData(additionalData)
 
@@ -32,7 +40,7 @@ hostedContents := []graphmodels.ChatMessageHostedContentable {
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.ChatsById("chat-id").Messages().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

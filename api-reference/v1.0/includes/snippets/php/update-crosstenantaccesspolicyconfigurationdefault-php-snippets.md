@@ -45,7 +45,7 @@ $b2bCollaborationOutbound->setApplications($b2bCollaborationOutboundApplications
 $requestBody->setB2bCollaborationOutbound($b2bCollaborationOutbound);
 
 
-$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->default()->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->default()->patch($requestBody);
 
 
 ```

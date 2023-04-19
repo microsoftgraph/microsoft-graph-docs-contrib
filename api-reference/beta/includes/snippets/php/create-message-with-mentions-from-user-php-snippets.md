@@ -40,7 +40,7 @@ $requestBody->setMentions($mentionsArray);
 
 
 
-$requestResult = $graphServiceClient->me()->messages()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->post($requestBody);
 
 
 ```

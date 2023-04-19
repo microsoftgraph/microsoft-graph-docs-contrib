@@ -34,6 +34,13 @@ var requestBody = new SubjectRightsRequest
 	{
 		OdataType = "microsoft.graph.subjectRightsRequestAllSiteLocation",
 	},
+	Approvers = new List<User>
+	{
+		new User
+		{
+			Id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+		},
+	},
 };
 var result = await graphClient.Privacy.SubjectRightsRequests.PostAsync(requestBody);
 

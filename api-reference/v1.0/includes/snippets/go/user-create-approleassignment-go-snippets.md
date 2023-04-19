@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "github.com/google/uuid"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAppRoleAssignment()
 principalId := uuid.MustParse("cde330e5-2150-4c11-9c5b-14bfdc948c79")
@@ -15,7 +24,7 @@ requestBody.SetResourceId(&resourceId)
 appRoleId := uuid.MustParse("00000000-0000-0000-0000-000000000000")
 requestBody.SetAppRoleId(&appRoleId) 
 
-result, err := graphClient.UsersById("user-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

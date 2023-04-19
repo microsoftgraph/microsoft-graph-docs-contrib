@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//identityGovernance"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCustomTaskExtension()
 displayName := "Grant manager access to mailbox and OneDrive"
@@ -39,7 +47,7 @@ timeoutDuration , err := abstractions.ParseISODuration("PT20M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensionsById("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().ByCustomTaskExtensionId("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

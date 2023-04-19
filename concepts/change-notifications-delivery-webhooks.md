@@ -1,9 +1,13 @@
 ---
 title: "Receive change notifications through webhooks"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through webhooks."
-author: "jumasure"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: jumasure
+ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
+ms.date: 03/23/2022
 ---
 
 # Receive change notifications through webhooks
@@ -12,7 +16,7 @@ A webhook is a HTTP-based user-defined callback API that you can set up in your 
 
 To receive change notifications through webhooks, you need to create a subscription to the resource for which you want to be notified of changes. While the subscription is valid, Microsoft Graph sends a notification to your app whenever a change is detected on the resource.
 
-This article walks you through managing your Microsoft Graph subscription and receiving change notifications through webhooks.
+The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through webhooks.
 
 ## Create a subscription
 
@@ -55,24 +59,24 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,11 +98,13 @@ Each subscription has a unique **subscriptionId**, even if you have multiple sub
 
 While the subscription is valid and there are changes to the resource that you subscribed to, Microsoft Graph sends a `POST` request to the **notificationUrl** with details of the changes. This payload is the **change notification**.
 
+For most subscriptions, Microsoft Graph doesn't delay sending notifications but [delivers all notifications within the SLA unless the service is experiencing an incident](./webhooks.md#latency).
+
 A change notification payload sent to your app can contain a collection of change notifications relating to your subscriptions.
 
 ### Change notification example
 
-This section shows an example of a notification for a new message. When the user receives an email, Microsoft Graph sends a change notification object to the client app as shown in the following example. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) and the related [changeNotification](/graph/api/resources/changenotification) for details of the notification payload.
+When the user receives an email, Microsoft Graph sends a change notification object to the client app as shown in the following example. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) and the related [changeNotification](/graph/api/resources/changenotification) for details of the notification payload.
 
 When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.
 
@@ -129,7 +135,7 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 Your service should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the notifications might be subject to throttling.
+1. After receiving the change notification, send a 2xx class code back to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it tries to resend the change notification multiple times, for up to 4 hours. If Microsoft Graph still doesn't receive a 2xx code within the period, it discards the change notification. If the client app consistently doesn't respond within 3 seconds, the [notifications might be subject to throttling](#throttling).
 
     If your service can take more than 3 seconds to process the change notification, it should persist the notification, return a `202 - Accepted` status code in the response to Microsoft Graph, then process the notifications at its capacity. If the notification isn't persisted, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
@@ -169,24 +175,24 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-renewal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-renewal-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-renewal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-renewal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-renewal-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-renewal-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-renewal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-renewal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-renewal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,38 +216,60 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-subscriptions-example-delete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-delete-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/change-notifications-subscriptions-example-delete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-subscriptions-example-delete-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-delete-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-subscriptions-example-delete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/change-notifications-subscriptions-example-delete-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-subscriptions-example-delete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
+## Throttling
+
+If a subscription notification URL is slow or fails to respond, and Microsoft Graph doesn't receive a 2xx class code within 3 seconds, Microsoft Graph tries to resend the change notification multiple times, for up to 4 hours. In this case Microsoft Graph might throttle notifications for the notification endpoint that's associated with the subscription.
+
+#### How Microsoft Graph handles throttling for change notifications using webhooks
+
+Notifications are published using an HTTP client with a 3-second timeout.
+
+1. If the publishing time is greater than 2900 ms, the response is considered slow.
+1. The change notification service then calculates the percentage of slow responses after the endpoint receives 100 notifications.
+1. If the percentage of slow responses reaches 10%, the endpoint associated with the notification URL is flagged as a slow endpoint. All notifications for all subscriptions associated with the endpoint are subjected to throttling.
+1. The evaluation continues in real time and the accumulation of responses is flushed every 10 minutes.
+
+When Microsoft Graph throttles an endpoint, notifications are subjected to a delay of 10 minutes and are offloaded to workers dedicated to failed and throttled notifications. Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes. Notifications are dropped if the throttled endpoint slow percentage is greater than or equal to 15%.
+
+## Firewall configuration
+
+You can configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph, reducing further exposure to invalid change notifications. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
+
+> [!NOTE]
+> The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+
 ## Summary
 
-This section is a summary of the processes involved in receiving change notifications through webhooks.
+In this article, you learned how to receive change notifications through webhooks.
 
-1. Send a POST request to the `/subscriptions` endpoint to create a subscription.
-2. Microsoft Graph validates the webhook notification endpoint before it completes the subscription creation process. A unique **subscriptionId** is linked to the subscription.
-3. While the subscription is still valid, and there are changes to the resource that you subscribed to, Microsoft Graph sends change notifications to the **notificationUrl** endpoint.
-4. Always renew the subscription to keep it valid and to continue receiving the changes that you subscribed to.
+1. Create a subscription by sending a POST request to the `/subscriptions` endpoint.
+2. Microsoft Graph will validate the webhook notification endpoint before it completes the subscription creation process. A unique **subscriptionId** is linked to the subscription.
+3. As long as the subscription is still valid and changes occur to the subscribed resource, Microsoft Graph will send change notifications to the **notificationUrl** endpoint.
+4. Regularly renew the subscription to maintain its validity and continue receiving updates on the subscribed changes.
 
 ## See also
 

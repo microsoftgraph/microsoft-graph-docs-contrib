@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var type = "ColumnStacked";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Add.AddPostRequestBody
+{
+	Type = "ColumnStacked",
+	SourceData = "A1:B1",
+	SeriesBy = "Auto",
+};
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts.Add.PostAsync(requestBody);
 
-var sourceData = JsonDocument.Parse(@"""A1:B1""");
-
-var seriesBy = "Auto";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts
-	.Add(type,seriesBy,sourceData)
-	.Request()
-	.PostAsync();
 
 ```

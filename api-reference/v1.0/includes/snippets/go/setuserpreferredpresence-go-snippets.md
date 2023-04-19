@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Users/Item/Presence/SetUserPreferredPresence"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSetUserPreferredPresencePostRequestBody()
 availability := "DoNotDisturb"
@@ -15,7 +24,7 @@ requestBody.SetActivity(&activity)
 expirationDuration , err := abstractions.ParseISODuration("PT8H")
 requestBody.SetExpirationDuration(&expirationDuration) 
 
-graphClient.UsersById("user-id").Presence().SetUserPreferredPresence().Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Presence().SetUserPreferredPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/solutions"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestStart := "2018-04-30T00:00:00Z"
@@ -19,7 +27,7 @@ configuration := &graphconfig.SolutionsBookingBusinesseItemCalendarViewRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

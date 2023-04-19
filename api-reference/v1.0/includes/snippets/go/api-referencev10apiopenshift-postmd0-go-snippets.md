@@ -5,7 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Authorization", "Bearer {token}")
@@ -75,7 +86,7 @@ lastModifiedBy.SetConversation(&conversation)
 lastModifiedBy.SetAdditionalData(additionalData)
 requestBody.SetLastModifiedBy(lastModifiedBy)
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().Post(context.Background(), requestBody, configuration)
 
 
 ```

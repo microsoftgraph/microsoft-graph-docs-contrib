@@ -41,7 +41,7 @@ $actions->setStopProcessingRules(true);
 $requestBody->setActions($actions);
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRules()->post($requestBody);
+$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRules()->post($requestBody);
 
 
 ```

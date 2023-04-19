@@ -13,7 +13,7 @@ Webhooks may not be suitable for receiving change notifications in high throughp
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources across a large set of organizations.
 
-This article walks you through managing your Microsoft Graph subscription and receiving change notifications through Azure Event Hubs.
+The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through Azure Event Hubs.
 
 ## Using Azure Event Hubs to receive change notifications
 
@@ -21,7 +21,7 @@ This article walks you through managing your Microsoft Graph subscription and re
 Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK will relay the notifications to your application.
-- You don't need to reply to the [notification URL validation](webhooks.md#notification-endpoint-validation). You can ignore the validation message that you receive.
+- You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You'll need to provision an Azure Event Hub.
 - You'll need to provision an Azure Key Vault.
 
@@ -173,6 +173,11 @@ It's possible that the **Microsoft Graph Change Tracking** service principal is 
 
 Query details: `0bf30f3b-4a52-48df-9a82-234910c4a086` is the global appId for the Microsoft Graph Change Tracking application.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-eventhubs-create-changetrackingapp-sp"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 
@@ -180,6 +185,28 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 > **Note:** You can get an access denied running this query. In this case, select the gear icon next to your account name in the top left corner. Then select **Select Permissions** and search for **Application.ReadWrite.All**. Check the permission and select **Consent**. After consenting to this new permission, run the request again.
 

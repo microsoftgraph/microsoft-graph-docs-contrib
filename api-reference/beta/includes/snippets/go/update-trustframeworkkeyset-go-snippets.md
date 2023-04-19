@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TrustFramework/KeySets/Item"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewKeySet()
 additionalData := map[string]interface{}{
@@ -55,7 +63,7 @@ qi := "qi-value"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
+graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
 
 
 ```

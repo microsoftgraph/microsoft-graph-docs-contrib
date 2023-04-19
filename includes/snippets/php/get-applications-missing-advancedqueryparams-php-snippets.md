@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ApplicationsRequestBuilderGetQueryParameters();
+$queryParameters = ApplicationsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->search = "\"displayName:Browser\"";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->applications()->get($requestConfiguration);
+$result = $graphServiceClient->applications()->get($requestConfiguration);
 
 
 ```

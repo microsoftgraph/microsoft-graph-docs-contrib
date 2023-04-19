@@ -24,7 +24,7 @@ $participantsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.g
 $participantsInvitationParticipantInfo1IdentityUser->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
 
 $additionalData = [
-'identityProvider' => 'AAD', 
+		'identityProvider' => 'AAD', 
 ];
 $participantsInvitationParticipantInfo1IdentityUser->setAdditionalData($additionalData);
 
@@ -49,7 +49,7 @@ $participantsInvitationParticipantInfo2IdentityUser->set@odatatype('#microsoft.g
 $participantsInvitationParticipantInfo2IdentityUser->setId('1e126418-44a0-4a94-a6f8-0efe1ad71acb');
 
 $additionalData = [
-'identityProvider' => 'AAD', 
+		'identityProvider' => 'AAD', 
 ];
 $participantsInvitationParticipantInfo2IdentityUser->setAdditionalData($additionalData);
 
@@ -67,7 +67,7 @@ $requestBody->setClientContext('f2fa86af-3c51-4bc2-8fc0-475452d9764f');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
+$result = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
 
 
 ```

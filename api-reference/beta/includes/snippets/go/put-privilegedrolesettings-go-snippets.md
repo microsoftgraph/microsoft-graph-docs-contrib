@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/PrivilegedRoles/Item/Settings"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSettingsPutRequestBody()
 additionalData := map[string]interface{}{
@@ -33,7 +41,7 @@ requestBody.SetApprovalOnElevation(&approvalOnElevation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(context.Background(), requestBody, nil)
+graphClient.PrivilegedRoles().ByPrivilegedRoleId("privilegedRole-id").Settings().Put(context.Background(), requestBody, nil)
 
 
 ```

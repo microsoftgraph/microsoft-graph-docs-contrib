@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewIdentityApiConnector()
 authenticationConfiguration := graphmodels.NewApiAuthenticationConfigurationBase()
@@ -16,7 +24,7 @@ additionalData := map[string]interface{}{
 authenticationConfiguration.SetAdditionalData(additionalData)
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.Identity().ApiConnectorsById("identityApiConnector-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ApiConnectors().ByApiConnectorId("identityApiConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

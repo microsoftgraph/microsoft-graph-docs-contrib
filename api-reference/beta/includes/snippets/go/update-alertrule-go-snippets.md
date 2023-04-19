@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//deviceManagement"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAlertRule()
 severity := graphmodels.INFORMATIONAL_RULESEVERITYTYPE 
@@ -63,7 +71,7 @@ notificationChannels := []graphmodels.NotificationChannelable {
 }
 requestBody.SetNotificationChannels(notificationChannels)
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRulesById("alertRule-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.DeviceManagement().Monitoring().AlertRules().ByAlertRuleId("alertRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

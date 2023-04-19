@@ -7,20 +7,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	RelatedContacts = @(
+	relatedContacts = @(
 		@{
-			DisplayName = "Father Time"
-			EmailAddress = "father@time.com"
-			MobilePhone = "4251231234"
-			Relationship = "guardian"
-			AccessConsent = $true
+			displayName = "Father Time"
+			emailAddress = "father@time.com"
+			mobilePhone = "4251231234"
+			relationship = "guardian"
+			accessConsent = $true
 		}
 		@{
-			DisplayName = "Mother Nature"
-			EmailAddress = "mother@nature.co.uk"
-			MobilePhone = "3251231234"
-			Relationship = "parent"
-			AccessConsent = $true
+			displayName = "Mother Nature"
+			emailAddress = "mother@nature.co.uk"
+			mobilePhone = "3251231234"
+			relationship = "parent"
+			accessConsent = $true
 		}
 	)
 }
