@@ -101,7 +101,7 @@ Content-Type: application/json
     {
         "behaviorDuringRetentionPeriod": "retain",
         "isDeleteAllowed": false,
-        "isRecordLocked": false,
+        "isRecordLocked": true,
 
         "isMetadataUpdateAllowed": false,
         "isContentUpdateAllowed": false,
