@@ -1,6 +1,6 @@
 ---
 title: "filePlanDescriptor resource type"
-description: "**TODO: Add Description**"
+description: "Represents a group of columns to improve the manageability and organization of the content you need to label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a group of columns to improve the manageability and organization of the content you need to label.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -42,21 +42,21 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Specifies the underlying authority that describes the type of content to be retained and the retention schedule for it. |
-|category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Specifies a group of similar types of content in a certain department.|
-|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Specifies the unique identification defining a rule or regulation, following which, the label and content to which it is applied is scheduled to be retained or to be deleted. Additionally, you can specify the direct url of the citation and the jurisdiction or agency which published it.|
+|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Specifies the underlying authority that describes the type of content to be retained and its retention schedule. |
+|category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Specifies a group of similar types of content in a particular department.|
+|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Specifies the unique rule or regulation published by a jurisdiction, following which, the label and content to which it is applied is scheduled to be retained or to be deleted. Additionally, you can specify a direct link to the citation and the jurisdiction or agency which published it.|
 |department|[microsoft.graph.security.department](../resources/security-department.md)|Specifies the parent business vertical or department of an organization for a label and in turn the content to which it will be applied.|
-|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Specifies a unique identifier of a label category which co-relates it to the that organization’s retention schedule. It is an alpha-numeric identifier that maps the retention label to a row on their retention schedule. |
+|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Specifies a unique identifier for an organization’s retention schedule.  |
 
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorityTemplate|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Represent the properties of 'authority' file plan descriptor.|
-|categoryTemplate|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Represent the properties of 'category' file plan descriptor.|
-|citationTemplate|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Represent the properties of 'citation' file plan descriptor.|
-|departmentTemplate|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Represent the properties of 'department' file plan descriptor.|
-|filePlanReferenceTemplate|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Represent the properties of 'file plan reference identification' file plan descriptor.|
+|authorityTemplate|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Represents the file plan descriptor of type authority for retention labels.|
+|categoryTemplate|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Represent the file plan descriptor of type category for retention labels.|
+|citationTemplate|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Represent the file plan descriptor of type citation for retention labels.|
+|departmentTemplate|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Represent the file plan descriptor of type department for retention labels.|
+|filePlanReferenceTemplate|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Represent the file plan descriptor of type file plan reference for retention labels.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

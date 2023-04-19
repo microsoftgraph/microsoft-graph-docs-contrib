@@ -1,6 +1,6 @@
 ---
 title: "subCategory resource type"
-description: "Represents the unique subcategory applied to a retention label."
+description: "Represents a unique subcategory applied to a retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the unique subcategory applied to a retention label.
+Represents a unique subcategory applied to a retention label.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
