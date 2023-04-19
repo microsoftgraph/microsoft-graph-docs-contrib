@@ -2742,6 +2742,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8a74709d-d633-4cc1-81e2-89a67f4ae290",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualAppointment",
+          "ChangeType": "Addition",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http) function.",
+          "Target": "getVirtualAppointmentJoinWebUrl"
+        }
+      ],
+      "Id": "8a74709d-d633-4cc1-81e2-89a67f4ae290",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-11T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ca3a97ab-9b3e-4533-b46e-c2c6788e5635",
           "ApiChange": "Resource",
           "ChangedApiName": "addLargeGalleryViewOperation",

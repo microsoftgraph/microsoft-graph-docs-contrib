@@ -7894,6 +7894,10 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
+          - name: Virtual appointment
+            items:
+            - name: Get Virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
         - name: Presence
           href: resources/presence.md
           items:
