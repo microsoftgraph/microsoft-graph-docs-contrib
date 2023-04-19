@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-description: "The driveItem resource represents a file, folder, or other item stored in a drive."
-title: driveItem
+author: "JeremyKelley"
+description: "Represents a file, folder, or other item stored in a drive."
+title: "driveItem resource type"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **driveItem** resource represents a file, folder, or other item stored in a drive.
+Represents a file, folder, or other item stored in a drive.
 
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources. Items in SharePoint document libraries can be represented as [listItem][] or **driveItem** resources.
 
@@ -132,7 +132,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-| retentionLabel      | [itemRetentionLabel][]      | Information about retention label and settings enforced on the driveitem. Read-write.
+| retentionLabel     | [itemRetentionLabel][]      | Information about retention label and settings enforced on the **driveItem**. Read-write.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.

@@ -11549,66 +11549,66 @@ items:
       - name: Drive items
         href: resources/driveitem.md
         items:
-        - name: List children
-          href: api/driveitem-list-children.md
         - name: Get item
           href: api/driveitem-get.md
-        - name: Get thumbnails
-          href: api/driveitem-list-thumbnails.md
-        - name: Check in files
-          href: api/driveitem-checkin.md
-        - name: Check out files
-          href: api/driveitem-checkout.md
-        - name: Create folder
-          href: api/driveitem-post-children.md
         - name: Update item
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
-        - name: Restore item
-          href: api/driveitem-restore.md
-        - name: Move item
-          href: api/driveitem-move.md
-        - name: Copy item
-          href: api/driveitem-copy.md
-        - name: Download file
-          href: api/driveitem-get-content.md
+        - name: Assign sensitivity label
+          href: api/driveitem-assignsensitivitylabel.md
+        - name: Check in files
+          href: api/driveitem-checkin.md
+        - name: Check out files
+          href: api/driveitem-checkout.md
         - name: Convert file
           href: api/driveitem-get-content-format.md
-        - name: Upload
-          href: api/driveitem-put-content.md
-        - name: Resumable Upload
+        - name: Copy item
+          href: api/driveitem-copy.md
+        - name: Create folder
+          href: api/driveitem-post-children.md
+        - name: Download file
+          href: api/driveitem-get-content.md
+        - name: Extract sensitivity labels
+          href: api/driveitem-extractsensitivitylabels.md
+        - name: Follow item
+          href: api/driveitem-follow.md
+        - name: Get activities by interval
+          href: api/itemactivity-getbyinterval.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
+        - name: Get preview link
+          href: api/driveitem-preview.md
+        - name: Get retention label
+          href: api/driveitem-getretentionlabel.md 
+        - name: Get thumbnails
+          href: api/driveitem-list-thumbnails.md
+        - name: List children
+          href: api/driveitem-list-children.md
+        - name: List versions
+          href: api/driveitem-list-versions.md
+        - name: Lock or unlock record
+          href: api/driveitem-lockorunlockrecord.md
+        - name: Move item
+          href: api/driveitem-move.md
+        - name: Preview item
+          href: api/driveitem-preview.md
+        - name: Remove retention label
+          href: api/driveitem-removeretentionlabel.md
+        - name: Restore item
+          href: api/driveitem-restore.md
+        - name: Resumable upload
           href: api/driveitem-createuploadsession.md
         - name: Search items
           href: api/driveitem-search.md
+        - name: Set retention label
+          href: api/driveitem-setretentionlabel.md
         - name: Track changes
           href: api/driveitem-delta.md
-        - name: Get preview link
-          href: api/driveitem-preview.md
-        - name: List versions
-          href: api/driveitem-list-versions.md
-        - name: Follow item
-          href: api/driveitem-follow.md
         - name: Unfollow item
           href: api/driveitem-unfollow.md
-        - name: Get item analytics
-          href: api/itemanalytics-get.md
-        - name: Get activities by interval
-          href: api/itemactivity-getbyinterval.md
-        - name: Preview item
-          href: api/driveitem-preview.md
-        - name: Extract sensitivity labels
-          href: api/driveitem-extractsensitivitylabels.md
-        - name: Assign sensitivity label
-          href: api/driveitem-assignsensitivitylabel.md
-        - name: Get retention label
-          href: api/driveitem-getretentionlabel.md 
-        - name: Set retention label
-          href: api/driveitem-setretentionlabel.md    
-        - name: Remove retention label
-          href: api/driveitem-removeretentionlabel.md   
-        - name: Lock or unlock record
-          href: api/driveitem-lockorunlockrecord.md           
+        - name: Upload
+          href: api/driveitem-put-content.md       
       - name: Bundles
         href: resources/bundle.md
         items:
