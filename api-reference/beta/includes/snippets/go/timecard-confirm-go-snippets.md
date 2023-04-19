@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Confirm().Post(context.Background(), nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ByTimeCardId("timeCard-id").Confirm().Post(context.Background(), nil)
 
 
 ```

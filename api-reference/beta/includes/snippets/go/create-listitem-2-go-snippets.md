@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").Fields().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").Fields().Patch(context.Background(), requestBody, nil)
 
 
 ```

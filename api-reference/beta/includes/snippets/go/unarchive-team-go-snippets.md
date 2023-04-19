@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").Unarchive().Post(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Unarchive().Post(context.Background(), nil)
 
 
 ```

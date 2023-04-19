@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").Resources().Get(context.Background(), nil)
+result, err := graphClient.PrivilegedAccess().ByPrivilegedAccesId("privilegedAccess-id").Resources().Get(context.Background(), nil)
 
 
 ```

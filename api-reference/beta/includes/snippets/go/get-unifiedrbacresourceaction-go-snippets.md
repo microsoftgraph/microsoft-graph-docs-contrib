@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().ResourceNamespacesById("unifiedRbacResourceNamespace-id").ResourceActionsById("unifiedRbacResourceAction-id").Get(context.Background(), nil)
+result, err := graphClient.RoleManagement().Directory().ResourceNamespaces().ByResourceNamespaceId("unifiedRbacResourceNamespace-id").ResourceActions().ByResourceActionId("unifiedRbacResourceAction-id").Get(context.Background(), nil)
 
 
 ```
