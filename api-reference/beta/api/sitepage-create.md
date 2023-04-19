@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
@@ -37,6 +37,8 @@ POST /sites/{site-id}/pages
 ## Request body
 
 In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
+
+> **Note:** If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
 
 ## Example
 

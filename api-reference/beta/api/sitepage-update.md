@@ -81,7 +81,6 @@ The following is an example of a request.
 ```http
 PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}
 Content-Type: application/json
-Content-length: 650
 
 {
   "@odata.type": "#microsoft.graph.sitePage",

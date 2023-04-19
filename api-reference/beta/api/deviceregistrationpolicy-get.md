@@ -125,6 +125,9 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedUsers": [],
         "allowedGroups": []
+    },
+    "localAdminPassword": {
+      "isEnabled": false
     }
 }
 ```
