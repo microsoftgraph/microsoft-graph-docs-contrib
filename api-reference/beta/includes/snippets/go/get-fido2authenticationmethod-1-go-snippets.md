@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().Fido2MethodsById("fido2AuthenticationMethod-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Authentication().Fido2Methods().ByFido2MethodId("fido2AuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

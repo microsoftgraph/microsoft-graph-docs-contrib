@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Users/Item/FollowedSites/Item"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewFollowedSite()
 additionalData := map[string]interface{}{
@@ -26,7 +34,7 @@ id := "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.UsersById("user-id").FollowedSitesById("site-id").Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").FollowedSites().ByFollowedSiteId("site-id").Post(context.Background(), requestBody, nil)
 
 
 ```

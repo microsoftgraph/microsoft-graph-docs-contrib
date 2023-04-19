@@ -26,7 +26,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenIssuancePoliciesById("tokenIssuancePolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().TokenIssuancePolicies().ByTokenIssuancePolicieId("tokenIssuancePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

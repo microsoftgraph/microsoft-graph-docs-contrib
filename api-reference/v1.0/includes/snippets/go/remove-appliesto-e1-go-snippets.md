@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").AppManagementPolicies().Ref().Delete(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").AppManagementPolicies().Ref().Delete(context.Background(), requestBody, nil)
 
 
 ```

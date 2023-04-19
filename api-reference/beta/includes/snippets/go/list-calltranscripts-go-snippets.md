@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.UsersById("user-id").OnlineMeetingsById("onlineMeeting-id").Transcripts().Get(context.Background(), nil)
+result, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Transcripts().Get(context.Background(), nil)
 
 
 ```

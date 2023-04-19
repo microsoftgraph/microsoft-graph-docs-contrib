@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.ChatsById("chat-id").Members().Get(context.Background(), nil)
+result, err := graphClient.Chats().ByChatId("chat-id").Members().Get(context.Background(), nil)
 
 
 ```

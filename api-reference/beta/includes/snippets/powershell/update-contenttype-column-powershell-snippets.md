@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Required = $true
-	Hidden = $false
-	PropagateChanges = $false
+	required = $true
+	hidden = $false
+	propagateChanges = $false
 }
 
 Update-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
