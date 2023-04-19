@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "DelegatedPermissionGrant.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](permissions-reference.md#application-resource-permissions).",
+          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](https://learn.microsoft.com/en-us/graph/permissions-reference#application-resource-permissions).",
           "Target": "DelegatedPermissionGrant.Read.All"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "DelegatedPermissionGrant.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](permissions-reference.md#application-resource-permissions).",
+          "Description": "Added app-only and delegated permissions [DelegatedPermissionGrant.Read.All](https://learn.microsoft.com/en-us/graph/permissions-reference#application-resource-permissions).",
           "Target": "DelegatedPermissionGrant.Read.All"
         }
       ],
