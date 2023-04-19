@@ -31,7 +31,7 @@ requestBody.SetReason(&reason)
 linkedEligibleRoleAssignmentId := "cb8a533e-02d5-42ad-8499-916b1e4822ec"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId) 
 
-result, err := graphClient.PrivilegedAccessById("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
+result, err := graphClient.PrivilegedAccess().ByPrivilegedAccesId("privilegedAccess-id").RoleAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

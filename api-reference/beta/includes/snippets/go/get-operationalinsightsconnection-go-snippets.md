@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Windows().Updates().ResourceConnectionsById("resourceConnection-id").Get(context.Background(), nil)
+result, err := graphClient.Admin().Windows().Updates().ResourceConnections().ByResourceConnectionId("resourceConnection-id").Get(context.Background(), nil)
 
 
 ```

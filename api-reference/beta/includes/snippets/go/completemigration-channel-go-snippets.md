@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").CompleteMigration().Post(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").CompleteMigration().Post(context.Background(), nil)
 
 
 ```
