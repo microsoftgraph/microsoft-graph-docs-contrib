@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TeamsById("team-id").Schedule().OfferShiftRequestsById("offerShiftRequest-id").Get(context.Background(), nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OfferShiftRequests().ByOfferShiftRequestId("offerShiftRequest-id").Get(context.Background(), nil)
 
 
 ```

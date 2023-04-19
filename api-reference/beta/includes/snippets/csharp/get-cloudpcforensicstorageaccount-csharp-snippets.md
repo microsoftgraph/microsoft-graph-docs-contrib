@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var getStorageAccounts = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots
-	.GetStorageAccounts("cb6ad4c4-8a17-4245-a644-e4436b1ee204")
-	.Request()
-	.GetAsync();
+var result = await graphClient.DeviceManagement.VirtualEndpoint.Snapshots["{cloudPcSnapshot-id}"].GetAsync();
+
 
 ```

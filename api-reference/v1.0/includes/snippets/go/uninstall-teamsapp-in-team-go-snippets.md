@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").InstalledAppsById("teamsAppInstallation-id").Delete(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").InstalledApps().ByInstalledAppId("teamsAppInstallation-id").Delete(context.Background(), nil)
 
 
 ```

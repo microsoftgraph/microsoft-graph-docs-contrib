@@ -27,7 +27,7 @@ configuration := &graphconfig.IdentityGovernanceAccessReviewsDefinitionItemInsta
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Instances().Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().Get(context.Background(), configuration)
 
 
 ```

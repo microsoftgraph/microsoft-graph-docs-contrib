@@ -22,7 +22,7 @@ configuration := &graphconfig.ItemMailFolderItemMessagesRequestBuilderGetRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").Messages().Get(context.Background(), configuration)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Get(context.Background(), configuration)
 
 
 ```

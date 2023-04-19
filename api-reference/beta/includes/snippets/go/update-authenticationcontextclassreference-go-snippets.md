@@ -25,7 +25,7 @@ requestBody.SetDescription(&description)
 isAvailable := true
 requestBody.SetIsAvailable(&isAvailable) 
 
-result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().ByAuthenticationContextClassReferenceId("authenticationContextClassReference-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

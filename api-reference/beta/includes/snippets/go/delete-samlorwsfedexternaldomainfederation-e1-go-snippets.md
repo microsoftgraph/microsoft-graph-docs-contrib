@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Delete(context.Background(), nil)
+graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Delete(context.Background(), nil)
 
 
 ```
