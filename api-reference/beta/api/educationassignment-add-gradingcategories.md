@@ -47,18 +47,17 @@ If successful, this method returns a `204` successful response code with no cont
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["9a5e4047-c1dc-4243-9628-580d3c64b80c"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","452184ea-a358-4a07-92b4-dce44601a612"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories/$ref
+PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/452184ea-a358-4a07-92b4-dce44601a612/gradingCategory/$ref
 Content-type: application/json
 
 {
-    "@odata.id": ".../education/classes/{classId}/assignmentSettings/gradingCategories/{gradingCategoryId}"
+    "@odata.id": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingCategories/fb4a4009-3cc4-4dea-9991-e0a0763659e3"
 }
 ```
 
@@ -73,3 +72,17 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 8fcb5dbd-d5aa-4681-8e31-b001d5168d79
+2023-04-19 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Add a gradingCategory to an assignment",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
