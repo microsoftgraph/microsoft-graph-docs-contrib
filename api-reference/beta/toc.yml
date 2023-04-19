@@ -17125,6 +17125,27 @@ items:
             href: api/presence-clearuserpreferredpresence.md
           - name: Set user status message
             href: api/presence-setstatusmessage.md
+        - name: Virtual event
+          href: resources/virtualevent.md
+          items:
+          - name: Webinar
+            href: resources/virtualeventwebinar.md
+            items:
+            - name: Get
+              href: api/virtualeventwebinar-get.md
+          - name: Session
+            href: resources/virtualeventsession.md
+            items:
+            - name: Get
+              href: api/virtualeventsession-get.md
+          - name: Registration
+            href: resources/virtualeventregistration.md
+            items:
+            - name: Registrants
+              href: resources/virtualeventregistrant.md
+              items:
+              - name: Get
+                href: api/virtualeventregistrant-get.md
       - name: Devices (preview)
         items:
         - name: Provisioned device
