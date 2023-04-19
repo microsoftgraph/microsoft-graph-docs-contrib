@@ -37,7 +37,7 @@ PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the odata.id of the existing [gradingCategory](../resources/assignment-gradingcategories.md) object(s) to add to this assignment.
+In the request body, supply the odata.id of the existing [gradingCategory](../resources/assignment-gradingcategories.md) object to add to this assignment.
 
 ## Response
 If successful, this method returns a `204` successful response code with no content in the response body.
