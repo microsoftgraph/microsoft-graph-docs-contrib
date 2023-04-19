@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 ```
 
-The **lifecycleNotificationUrl** endpoint can be the same as the **notificationUrl**. Use the same hostname for both notifications URLs.
+The **lifecycleNotificationUrl** endpoint can be the same as the **notificationUrl**.
 
 Existing subscriptions without a **lifecycleNotificationUrl** property don't receive the lifecycle notifications. To add the **lifecycleNotificationUrl** property, you should remove such existing subscriptions and create new subscriptions while specifying the property during subscription creation.
 
@@ -80,12 +80,11 @@ When you process the lifecycle notification and resume the flow of change notifi
 
 ### Resources that support lifecycle notifications
 
-While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types:
+While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
 
-- Outlook [message][]
-- Outlook [event][]
-- Outlook personal [contact][]
-- Teams [chatMessage][]
+- reauthorizationRequired notifications - All resources
+- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
+- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
 
 ## Responding to reauthorizationRequired notifications
 
@@ -160,8 +159,6 @@ The following steps represent the flow of an authorization challenge for an acti
       Renewing may fail if the app is no longer authorized to access to the resource. It may then be necessary for the app to obtain a new access token to successfully reauthorize a subscription.
 
       You may retry these actions later, at any time, and succeed if the conditions of access change.
-
-/// At what stage do you get subscriptionRemoved?
 
 ### Additional information
 
