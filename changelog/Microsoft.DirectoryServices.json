@@ -11,6 +11,14 @@
           "Target": "customAppScope"
         },
         {
+          "Id": "e5e2a1f1-7dea-43f9-a029-b1c89bfbcd24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScopeAttributesDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScopeAttributesDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customAppScopeAttributesDictionary?view=graph-rest-beta) resource type.",
+          "Target": "customAppScopeAttributesDictionary"
+        },
+        {
           "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
           "ApiChange": "Resource",
           "ChangedApiName": "customAppScopes",

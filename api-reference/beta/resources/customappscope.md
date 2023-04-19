@@ -33,7 +33,7 @@ Currently only Exchange Online provider is supported.
 | id | string | Id of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. This property is required. |
 | type | String | Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only. |
 | displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only. |
-| customAttributes | Dictionary | An open type dictionary that holds workload specific properties for scope object. |
+| customAttributes | [customAppScopeAttributesDictionary](customappscopeattributesdictionary.md) | An open type dictionary that holds workload specific properties for scope object. |
 
 ## Relationships
 
@@ -53,6 +53,8 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "type": "String",
   "displayName": "String",
-  "customAttributes": {}
+  "customAttributes": {
+    "@odata.type": "microsoft.graph.customAppScopeAttributesDictionary"
+  }
 }
 ```
