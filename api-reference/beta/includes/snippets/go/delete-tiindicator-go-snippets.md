@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().TiIndicatorsById("tiIndicator-id").Delete(context.Background(), nil)
+graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Delete(context.Background(), nil)
 
 
 ```

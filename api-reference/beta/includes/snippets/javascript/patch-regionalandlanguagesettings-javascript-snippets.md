@@ -22,7 +22,7 @@ const regionalAndLanguageSettings = {
    }
 };
 
-await client.api('/me/settings/regionalandlanguagesettings')
+await client.api('/me/settings/regionalAndLanguageSettings')
 	.version('beta')
 	.update(regionalAndLanguageSettings);
 

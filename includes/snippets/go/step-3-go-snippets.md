@@ -21,7 +21,7 @@ content := "Hello World"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 
-result, err := graphClient.ChatsById("chat-id").Messages().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

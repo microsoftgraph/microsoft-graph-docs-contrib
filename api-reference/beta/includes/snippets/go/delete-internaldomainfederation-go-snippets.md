@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DomainsById("domain-id").FederationConfigurationById("internalDomainFederation-id").Delete(context.Background(), nil)
+graphClient.Domains().ByDomainId("domain-id").FederationConfiguration().ByFederationConfiguration().Id("internalDomainFederation-id").Delete(context.Background(), nil)
 
 
 ```

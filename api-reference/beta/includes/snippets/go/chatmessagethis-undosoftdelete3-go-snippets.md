@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").UndoSoftDelete().Post(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").UndoSoftDelete().Post(context.Background(), nil)
 
 
 ```

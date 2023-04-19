@@ -27,7 +27,7 @@ configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
 
 
 ```

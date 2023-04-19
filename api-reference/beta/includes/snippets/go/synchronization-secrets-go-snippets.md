@@ -50,7 +50,7 @@ value := "false"
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().Secrets().Put(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Secrets().Put(context.Background(), requestBody, nil)
 
 
 ```
