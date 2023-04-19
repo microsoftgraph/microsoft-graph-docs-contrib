@@ -165,7 +165,8 @@
           "ChangeType": "Addition",
           "Description": "Added the **inboundSharedUserProfiles** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
           "Target": "directory"
-        },{
+        },
+        {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Relationship",
           "ChangedApiName": "outboundSharedUserProfiles",
@@ -1409,8 +1410,6 @@
     {
       "ChangeList": [
         {
-<<<<<<< HEAD
-=======
           "Id": "3fed95c9-0780-4973-b481-6aaf7227c340",
           "ApiChange": "Enumeration",
           "ChangedApiName": "weakAlgorithms",
@@ -1444,8 +1443,7 @@
     },
     {
       "ChangeList": [
-      {
->>>>>>> upstream/main
+        {
           "Id": "3dab5ede-46c2-4ee7-b8ce-bc09b7299e3f",
           "ApiChange": "Property",
           "ChangedApiName": "links",
@@ -3701,37 +3699,33 @@
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
-<<<<<<< HEAD
     {
-=======
-  {
-    "ChangeList": [
+      "ChangeList": [
         {
-            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
-            "ApiChange": "Method",
-            "ChangedApiName": "activateServicePlan",
-            "ChangeType": "Removal",
-            "Description": "Removed the previously deprecated **activateServicePlan** method (`/users/{id | userPrincipalName}/activateServicePlan` endpoint) from the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
-            "Target": "user"
+          "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateServicePlan",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated **activateServicePlan** method (`/users/{id | userPrincipalName}/activateServicePlan` endpoint) from the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+          "Target": "user"
         },
         {
-            "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
-            "ApiChange": "Method",
-            "ChangedApiName": "activateService",
-            "ChangeType": "Removal",
-            "Description": "Removed the previously deprecated **activateService** method (`/organization/{id}/activateService` endpoint) from the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
-            "Target": "organization"
+          "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateService",
+          "ChangeType": "Removal",
+          "Description": "Removed the previously deprecated **activateService** method (`/organization/{id}/activateService` endpoint) from the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method stopped returning data on June 30th, 2022.",
+          "Target": "organization"
         }
-    ],
-    "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
-    "Cloud": "prd",
-    "Version": "beta",
-    "CreatedDateTime": "2023-03-15T00:00:00.353Z",
-    "WorkloadArea": "Identity and access",
-    "SubArea": "Directory management"
-  },
-  {
->>>>>>> upstream/main
+      ],
+      "Id": "e458d82b-6b08-430a-a664-3e4d241e978a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-15T00:00:00.353Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
       "ChangeList": [
         {
           "Id": "3dc0432a-06f5-11ec-88de-83063b88343d",
@@ -13257,6 +13251,6 @@
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }    
+    }
   ]
 }
