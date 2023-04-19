@@ -14,7 +14,7 @@ $requestBody->setDisabledForGroup('edbfe4fb-ec70-4300-928f-dbb2ae86c981');
 
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->settings()->itemInsights()->patch($requestBody);
+$result = $graphServiceClient->organizationById('organization-id')->settings()->itemInsights()->patch($requestBody);
 
 
 ```

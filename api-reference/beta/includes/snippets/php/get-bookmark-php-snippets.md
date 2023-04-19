@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->search()->bookmarksById('bookmark-id')->get();
+$result = $graphServiceClient->search()->bookmarksById('bookmark-id')->get();
 
 
 ```

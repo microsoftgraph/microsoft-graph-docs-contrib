@@ -13,17 +13,17 @@ $requestBody = new Extension();
 $requestBody->set@odatatype('microsoft.graph.openTypeExtension');
 
 $additionalData = [
-'extensionName' => 'Com.Contoso.Deal', 
-'companyName' => 'Alpine Skis', 
-'dealValue' => 1010100,
-'expirationDate' => '2015-07-03T13:04:00.000Z', 
+		'extensionName' => 'Com.Contoso.Deal', 
+		'companyName' => 'Alpine Skis', 
+		'dealValue' => 1010100,
+		'expirationDate' => '2015-07-03T13:04:00.000Z', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->eventsById('event-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->eventsById('event-id')->extensions()->post($requestBody);
 
 
 ```

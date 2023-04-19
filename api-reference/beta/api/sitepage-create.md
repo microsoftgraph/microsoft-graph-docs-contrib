@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
@@ -38,10 +38,13 @@ POST /sites/{site-id}/pages
 
 In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
 
+> **Note:** If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+
 ## Example
 
 The following example shows how to create a new page.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -139,6 +142,28 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-page-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-page-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ## Response

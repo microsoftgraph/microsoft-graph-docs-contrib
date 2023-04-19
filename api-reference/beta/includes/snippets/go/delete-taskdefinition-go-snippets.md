@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").Delete(context.Background(), nil)
+graphClient.Print().TaskDefinitions().ByTaskDefinitionId("printTaskDefinition-id").Delete(context.Background(), nil)
 
 
 ```

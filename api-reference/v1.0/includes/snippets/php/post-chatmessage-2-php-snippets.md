@@ -29,7 +29,7 @@ $mentionsChatMessageMention1MentionedUser->setDisplayName('Jane Smith');
 $mentionsChatMessageMention1MentionedUser->setId('ef1c916a-3135-4417-ba27-8eb7bd084193');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $mentionsChatMessageMention1MentionedUser->setAdditionalData($additionalData);
 
@@ -45,7 +45,7 @@ $requestBody->setMentions($mentionsArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
 
 
 ```

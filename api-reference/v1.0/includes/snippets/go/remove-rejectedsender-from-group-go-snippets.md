@@ -25,7 +25,7 @@ configuration := &graphconfig.GroupItemRejectedSenders$refRequestBuilderDeleteRe
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
 
 
 ```

@@ -28,7 +28,7 @@ engineering := graphmodels.New()
 customSecurityAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

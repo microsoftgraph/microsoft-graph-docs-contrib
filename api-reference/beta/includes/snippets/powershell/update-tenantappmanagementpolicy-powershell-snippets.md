@@ -7,40 +7,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	IsEnabled = $true
-	ApplicationRestrictions = @{
-		PasswordCredentials = @(
+	isEnabled = $true
+	applicationRestrictions = @{
+		passwordCredentials = @(
 			@{
-				RestrictionType = "passwordAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictionType = "passwordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "passwordLifetime"
-				MaxLifetime = "P4DT12H30M5S"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
+				restrictionType = "passwordLifetime"
+				maxLifetime = "P4DT12H30M5S"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "symmetricKeyAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictionType = "symmetricKeyAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "customPasswordAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "customPasswordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "symmetricKeyLifetime"
-				MaxLifetime = "P40D"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "symmetricKeyLifetime"
+				maxLifetime = "P40D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
-		KeyCredentials = @(
+		keyCredentials = @(
 			@{
-				RestrictionType = "asymmetricKeyLifetime"
-				MaxLifetime = "P30D"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "asymmetricKeyLifetime"
+				maxLifetime = "P30D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
 	}

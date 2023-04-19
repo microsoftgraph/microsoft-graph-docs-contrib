@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	DisplayName = "New provisioning"
-	ResourceName = "domain1.contoso.com"
+	displayName = "New provisioning"
+	resourceName = "domain1.contoso.com"
 }
 
 New-MgOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params

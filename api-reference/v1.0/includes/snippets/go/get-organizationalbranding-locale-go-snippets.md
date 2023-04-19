@@ -23,7 +23,7 @@ configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestCo
 	Headers: headers,
 }
 
-result, err := graphClient.OrganizationById("organization-id").Branding().Get(context.Background(), configuration)
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```
