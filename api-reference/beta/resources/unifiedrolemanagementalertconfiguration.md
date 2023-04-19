@@ -16,8 +16,14 @@ Namespace: microsoft.graph
 An abstract type that exposes the various configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles.
 
 This abstract type is inherited by the following derived types:
+
 - [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)
--
+- [noMfaOnRoleActivationAlertConfiguration](../resources/nomfaonroleactivationalertconfiguration.md)
+- [redundantAssignmentAlertConfiguration](../resources/redundantassignmentalertconfiguration.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertConfiguration](../resources/sequentialactivationrenewalsalertconfiguration.md)
+- [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
 Inherits from [entity](../resources/entity.md).
 
