@@ -15596,6 +15596,10 @@ items:
             href: resources/externalconnectors-externalgroup.md
           - name: Create
             href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Get
+            href: api/externalconnectors-externalgroup-get.md
+          - name: Update
+            href: api/externalconnectors-externalgroup-update.md
           - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member

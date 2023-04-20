@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/{connectionsId}/items/{externalItemId}/addActivities
+POST /connections/contosohr/items/TSP228082938/addActivities
 ```
 
 ## Request headers
@@ -69,11 +69,11 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "externalitemthis.addactivities",
-  "sampleKeys": ["{connectionsId}", "{externalItemId}"]
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/connections/{connectionsId}/items/{externalItemId}/addActivities
+POST https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938/addActivities
 Content-Type: application/json
 Content-length: 190
 
@@ -81,8 +81,12 @@ Content-length: 190
   "activities": [
     {
       "@odata.type": "#microsoft.graph.externalConnectors.externalActivity",
-      "type": "String",
-      "startDateTime": "String (timestamp)"
+      "type": "created",
+      "startDateTime": "2021-04-06T18:04:31.033Z",
+      "performedBy": {
+        "type": "user",
+        "id": "1f0c997e-99f7-43f1-8cca-086f8d42be8d"
+      }
     }
   ]
 }
@@ -130,11 +134,9 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.externalConnectors.externalActivityResult",
-      "type": "String",
-      "startDateTime": "String (timestamp)",
-      "error": {
-        "@odata.type": "microsoft.graph.publicError"
-      }
+      "type": "created",
+      "startDateTime": "2021-04-06T18:04:31.033Z",
+      "error": null
     }
   ]
 }
