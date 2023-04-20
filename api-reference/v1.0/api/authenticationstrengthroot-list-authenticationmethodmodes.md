@@ -67,8 +67,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
-.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationmethodmodedetail"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```

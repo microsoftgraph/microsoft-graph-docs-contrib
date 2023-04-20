@@ -59,6 +59,11 @@ If successful, this method returns a `201 Created` response code and an [authent
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationstrengthpolicy_from_"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies
 Content-Type: application/json

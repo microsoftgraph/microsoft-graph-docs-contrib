@@ -51,6 +51,11 @@ If successful, this function returns a `200 OK` response code and an [authentica
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "authenticationstrengthpolicythis.usage"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/usage
 ```

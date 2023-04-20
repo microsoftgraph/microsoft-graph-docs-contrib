@@ -53,6 +53,11 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_authenticationstrengthpolicy"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/00000000-0000-0000-0000-000000000004
 ```

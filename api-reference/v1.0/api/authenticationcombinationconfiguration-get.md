@@ -53,6 +53,11 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_authenticationcombinationconfiguration"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/133b68c4-503b-4e87-839a-6c286a27381b
 ```

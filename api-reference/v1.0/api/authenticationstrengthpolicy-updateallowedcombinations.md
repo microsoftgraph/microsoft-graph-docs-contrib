@@ -56,7 +56,11 @@ If successful, this action returns a `200 OK` response code and a [updateAllowed
 
 ### Request
 The following is an example of a request.
-
+<!-- {
+  "blockType": "request",
+  "name": "authenticationstrengthpolicythis.updateallowedcombinations"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/33c5d2c0-884e-4b5d-a5b8-5395082b092c/updateAllowedCombinations
 Content-Type: application/json

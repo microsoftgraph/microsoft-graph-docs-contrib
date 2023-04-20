@@ -59,7 +59,11 @@ If successful, this method returns a `201 Created` response code and a [fido2Com
 ### Request
 The following is an example of a request.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationcombinationconfiguration_from_"
+}
+-->
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
 Content-Type: application/json

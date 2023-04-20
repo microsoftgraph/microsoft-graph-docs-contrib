@@ -50,6 +50,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following is an example of a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_authenticationcombinationconfiguration"
+}
+-->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/6cbbcfd0-5054-4a59-a10e-2d21fe09305d/$ref
 ```
