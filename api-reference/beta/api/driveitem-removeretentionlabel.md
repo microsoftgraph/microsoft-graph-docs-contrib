@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                  |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
 
-Note: Only some permission allow the ability to remove retention labels that classify contents as records from documents.
+>**Note:** Only some permission allow the ability to remove retention labels that classify contents as records from documents.
 
 ## HTTP request
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 

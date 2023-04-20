@@ -21,9 +21,9 @@ Inherits from [entity](entity.md).
 
 | Property                 | Type                       | Description                                                                                                                                                      |
 | :----------------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id| String                     | The unique identify (name) of the label. Read-only. 
+| id| String                     | The unique identifier (name) of the label. Read-only.
 | isLabelAppliedExplicitly | Boolean                       | Specifies whether the label is applied explicitly on the item. `True` indicates that the label is applied explicitly; otherwise, the label is inherited from its parent. Read-only. |
-| labelAppliedBy           | [identitySet](../resources/identityset.md)          | Identity of who applied the label. Read-only.                                                                                                                                     |
+| labelAppliedBy           | [identitySet](../resources/identityset.md)          | Identity of the user who applied the label. Read-only.                                                                                                                                     |
 | labelAppliedDateTime     | DateTimeOffset             | The date and time when the label was applied on the item. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.                                                                                              |
 | name                     | String                     | The retention label on the document. Read-write.                                                                                                                     |
 | retentionSettings        | [retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item. Read-write.                                                                                                             |
