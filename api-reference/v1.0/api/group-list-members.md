@@ -138,7 +138,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_count_only"
 }-->
 
@@ -169,7 +169,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_count_user_only"
 }-->
 
