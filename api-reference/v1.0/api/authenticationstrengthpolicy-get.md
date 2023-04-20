@@ -66,6 +66,12 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationStrengthPolicies/000
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationStrengthPolicy"
+}
+-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
