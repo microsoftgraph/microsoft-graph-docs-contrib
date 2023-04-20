@@ -71,7 +71,7 @@ GET /sites/{site-id}/pages/{page-id}
     "blockType": "response",
     "@odata.type": "microsoft.graph.baseSitePage",
     "truncated": true,
-    "isCollection":true
+    "isCollection":false
 }
 -->
 
