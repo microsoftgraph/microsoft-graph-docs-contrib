@@ -187,7 +187,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "get_count_only",
+  "name": "get_count_user_only",
   "truncated": true,
   "@odata.type": "string"
 } -->
