@@ -19,8 +19,8 @@ Contains details of a verifiable credential type, including the type of the cred
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|issuers|String collection| List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, `did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...` |
-|credentialType|String| The type of credential issued, for example, `BusinessCardCredential'`.|
+|issuers|String collection| List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, `did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...`. |
+|credentialType|String| The type of credential issued, for example, `BusinessCardCredential`.|
 
 ## Relationships
 None.
