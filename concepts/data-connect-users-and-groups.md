@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Use Microsoft Graph Data Connect to define the scope of a dataset
 
-This article aims to explain what groups are in Microsoft Graph Data Connect and what the options for scope selection are along with respective examples. 
+This article aims to explain what groups are in Microsoft Graph Data Connect and what the options for scope selection are along with respective examples. Scope selection allows you to specify how you wish to extract objects for "All users in the Office 365 tenant" or to "Select groups from the Office 365 tenant". For more information see [Demystifying User Scopes](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-demystifying-user-scopes/#:~:text=The%20user%20scope%20option%20lets%20you%20either%20specify,Azure%20Active%20Directory%20Security%20or%20Microsoft%20365%20groups.)
 
 You can create and manage several different types of groups in the Microsoft 365 admin center; for details see [Compare Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). Below are the types of groups applicable to Microsoft Graph Data Connect:
 
@@ -25,8 +25,8 @@ User-scoped datasets can be Messages, Events, Users, etc. These datasets focus o
 
 * Scope Options:
 
-    * **All users in the tenant**: returns data for all the users in the tenant. More information, see [User selection and filtering capabilities](https://learn.microsoft.com/en-us/graph/data-connect-filtering).
-    * **All users in the tenant with a scope filter**: returns data for all the users in the tenant that are part of the scope filter applied. 
+    * **All users in the tenant**: returns data for all the users in the tenant. Data is extracted for individual users in the selected group. More information, see [User selection and filtering capabilities](https://learn.microsoft.com/en-us/graph/data-connect-filtering).
+    * **All users in the tenant with a scope filter**: returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).
         * Scope Filter can help filter down the users desired, if left empty it returns all the data of the users. 
     *	**Select groups from the Microsoft 365 tenant**: data is extracted for individual users in the mentioned group from scope.
 
@@ -38,7 +38,7 @@ User-scoped datasets can be Messages, Events, Users, etc. These datasets focus o
         
 ## Group-scoped datasets
 
-Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages, Group Details, etc. These datasets focus on the collective data that a group in Outlook or Teams for the respective dataset.
+Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages, Group Details, etc. These datasets focus on the collective data in a group from Outlook or Teams.
 
 *	Scope Options:
     * **All groups in the tenant**: returns data for all the groups in the tenant.
@@ -46,23 +46,23 @@ Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages
     *   **Select groups from the Microsoft 365 tenant**: returns collective data of the selected groups. MGDC looks for data associated with those specific groups rather than the individuals of the group. 
 
 > **NOTE:**  When the customer specifies a group or groups to be the scope, MGDC looks for data associated with those specific groups rather than the individuals of the group. 
+ 
+* The table below maps the correct dataset per type of group. This can help developers understand which type of groups are compatible with select datasets when extracting and using scope filters. Groups can either be distribution groups, security groups or M365 groups.  The types of groups supported varies based on which dataset is being requested.
 
-*	Groups can either be distribution groups, security groups or M365 groups.  The types of groups supported varies based on which dataset is being requested. Please refer to the table below for the correct dataset for group mapping.
+|              Datasets                 | M365 Groups | Distribution Groups | Security Groups | Mail-Enabled Security  |
+|---------------------------------------|-------------|---------------------|-----------------|------------------------|
+|     TeamsStandardChannelMessages      | Yes*        | No                  | No              | No                     |
+|     TeamsChannelDetails_v0            | Yes*        | No                  | No              | No                     |
+|     OutlookGroupConversations         | Yes         | No                  | No              | No                     |
+|     GroupDetails                      | Yes         | Yes                 | Yes             | Yes                    |
+|     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
+|     GroupOwners                       | Yes         | Yes*                | Yes*            | Yes                    |
+|     Viva Insights                     | N/A         | N/A                 | N/A             | N/A                    |
+|     OneDrive and SharePoint Online    | N/A         | N/A                 | N/A             | N/A                    |
+|     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
 
-    |                                       | M365 Groups | Distribution Groups | Security Groups | Mail-Enabled Security  |
-    |---------------------------------------|-------------|---------------------|-----------------|------------------------|
-    | TeamsStandardChannelMessages          | Yes*        | No                  | No              | No                     |
-    | TeamsChannelDetails_v0                | Yes*        | No                  | No              | No                     |
-    | OutlookGroupConversations             | Yes         | No                  | No              | No                     |
-    | GroupDetails                          | Yes         | Yes                 | Yes             | Yes                    |
-    |     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
-    |     GroupOwners                       | Yes         | Yes*                | Yes*            | Yes                    |
-    |     Viva Insights                     | N/A         | N/A                 | N/A             | N/A                    |
-    |     OneDrive and SharePoint Online    | N/A         | N/A                 | N/A             | N/A                    |
-    |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
-
-    *For Teams datasets: M365 groups must also be Teams enabled.
-    *For Group datasets: These don’t contain a primary mailbox, their region will be defaulted to their tenant home region. 
+*For Teams datasets: M365 groups must also be Teams enabled.
+*For Group datasets: These don’t contain a primary mailbox, their region will be defaulted to their tenant home region. 
 
 *	**Example**: The customer wants to extract the Group Details dataset with a security group of users A, B, and C out of their tenant of 500 users. Since this is a group scoped dataset, the customer will only receive group details data for the specified group. The customer will NOT receive any individual data for users A, B, and C in the group.
 
