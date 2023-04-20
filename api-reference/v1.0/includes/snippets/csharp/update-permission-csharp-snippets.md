@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var permission = new Permission
+var requestBody = new Permission
 {
-	Roles = new List<String>()
+	Roles = new List<string>
 	{
-		"read"
-	}
+		"read",
+	},
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Permissions["{permission-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
-	.Request()
-	.UpdateAsync(permission);
 
 ```

@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users."
 title: "sitePage: publish"
 ms.localizationpriority: medium

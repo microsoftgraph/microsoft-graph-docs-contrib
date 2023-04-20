@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").OwnersById("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Owners().ByOwnerId("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
 
 
 ```

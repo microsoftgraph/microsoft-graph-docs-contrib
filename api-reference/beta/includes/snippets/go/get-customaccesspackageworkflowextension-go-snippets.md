@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensionsById("customAccessPackageWorkflowExtension-id").Get(context.Background(), nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().ByCustomAccessPackageWorkflowExtensionId("customAccessPackageWorkflowExtension-id").Get(context.Background(), nil)
 
 
 ```

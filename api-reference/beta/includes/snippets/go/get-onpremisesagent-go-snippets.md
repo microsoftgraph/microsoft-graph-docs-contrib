@@ -22,7 +22,7 @@ configuration := &graphconfig.OnPremisesPublishingProfileItemAgentItemRequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").AgentsById("onPremisesAgent-id").Get(context.Background(), configuration)
+result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").Agents().ByAgentId("onPremisesAgent-id").Get(context.Background(), configuration)
 
 
 ```

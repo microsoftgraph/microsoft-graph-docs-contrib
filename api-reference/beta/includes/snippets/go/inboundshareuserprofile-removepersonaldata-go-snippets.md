@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().InboundSharedUserProfilesById("inboundSharedUserProfile-userId").RemovePersonalData().Post(context.Background(), nil)
+graphClient.Directory().InboundSharedUserProfiles().ByInboundSharedUserProfileId("inboundSharedUserProfile-userId").RemovePersonalData().Post(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatusesById("managementActionTenantDeploymentStatus-id").Get(context.Background(), nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ByManagementActionTenantDeploymentStatuseId("managementActionTenantDeploymentStatus-id").Get(context.Background(), nil)
 
 
 ```
