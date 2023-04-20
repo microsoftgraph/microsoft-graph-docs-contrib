@@ -54,7 +54,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 <!--
 {
 	"blockType": "request",
-	"name": "get-page",
+	"name": "get-basesitepage",
 	"scopes": "sites.read.all",
 	"tags": "service.sharepoint"
 }

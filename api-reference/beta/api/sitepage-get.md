@@ -111,7 +111,6 @@ GET /sites/{site-id}/pages/{page-id}
 HTTP/1.1 200 OK
 Content-type: application/json
 
-<!--
 {
   "@odata.type": "microsoft.graph.sitePage",
   "description": "Here's the page description",
