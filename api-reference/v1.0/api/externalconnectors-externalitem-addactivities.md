@@ -8,17 +8,18 @@ doc_type: resourcePageType
 ---
 
 # externalItem: addActivities
+
 Namespace: microsoft.graph.externalConnectors
 
-Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an [externalitem](../resources/externalconnectors-externalitem.md).
+Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an [externalItem](../resources/externalconnectors-externalitem.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported                               |
-| Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
+| Permission type                        | Permissions (from least to most privileged)                |
+|-:--------------------------------------|-:----------------------------------------------------------|
+| Delegated (work or school account)     | Not supported.                                             |
+| Delegated (personal Microsoft account) | Not supported.                                             |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -37,21 +38,19 @@ POST /connections/{connectionsId}/items/{externalItemId}/addActivities
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|Collection of activities involving an **externalItem**.|
-
-
+|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|Collection of activities that involve an **externalItem**.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a collection of [externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
+If successful, this action returns a `200 OK` response code and a collection of [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
 
-If a `207` response is returned, this indicates that only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload, looking at the error field for each **externalActivityResult** to determine why the **externalActivity** instance was not processed and what action can be taken. If the error field is null, that indicates a successful **externalActivityResult**.
+A `207 Multi-Status` response code indicates that only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload, looking at the error field for each **externalActivityResult** to determine why the **externalActivity** instance was not processed and what action can be taken. A `null` error field indicates a successful **externalActivityResult**.
 
 ## Examples
 
@@ -59,8 +58,6 @@ If a `207` response is returned, this indicates that only some of the added **ex
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "externalitemthis.addactivities"
@@ -87,6 +84,7 @@ Content-length: 190
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
