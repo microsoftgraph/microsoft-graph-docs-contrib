@@ -1,7 +1,7 @@
 ---
 title: "getDevicesStatusByPolicyPlatformComplianceReport action"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -101,7 +101,3 @@ Content-Length: 123
   "value": "Z2V0RGV2aWNlc1N0YXR1c0J5UG9saWN5UGxhdGZvcm1Db21wbGlhbmNlUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDY3ODU3NDc0Mg=="
 }
 ```
-
-
-
-

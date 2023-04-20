@@ -1,7 +1,7 @@
 ---
 title: "List targetedManagedAppConfigurations"
 description: "List properties and relationships of the targetedManagedAppConfiguration objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -92,11 +92,3 @@ Content-Length: 731
   ]
 }
 ```
-
-
-
-
-
-
-
-

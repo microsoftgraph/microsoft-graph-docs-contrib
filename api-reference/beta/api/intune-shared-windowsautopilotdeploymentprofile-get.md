@@ -1,7 +1,7 @@
 ---
 title: "Get windowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -109,11 +109,3 @@ Content-Length: 1409
   }
 }
 ```
-
-
-
-
-
-
-
-

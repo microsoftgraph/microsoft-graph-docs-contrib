@@ -1,7 +1,7 @@
 ---
 title: "Create retrieveRemoteHelpSessionResponse"
 description: "Create a new retrieveRemoteHelpSessionResponse object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [retrieveRemoteHelpSessionResponse](../resources/intune-remoteassistance-retrieveremotehelpsessionresponse.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -109,7 +109,3 @@ Content-Length: 561
   "sessionExpirationDateTime": "2016-12-31T23:59:57.5564522-08:00"
 }
 ```
-
-
-
-
