@@ -187,12 +187,7 @@ Content-type: application/json
                     "htmlStrings": [],
                     "searchablePlainTexts": [],
                     "links": [],
-                    "imageSources": [
-                        {
-                            "key": "imageSource",
-                            "value": "https://loremflickr.com/640/480"
-                        }
-                    ]
+                    "imageSources": []
                 }
             }
         }

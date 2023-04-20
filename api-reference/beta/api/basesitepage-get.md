@@ -1,5 +1,5 @@
 ---
-author: rahmit
+author: sangle7
 description: "Returns the metadata for a sitePage in the site pages list in a site."
 ms.date: 03/15/2018
 title: Get baseSitePage
@@ -78,6 +78,7 @@ GET /sites/{site-id}/pages/{page-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.sitePage",
     "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",

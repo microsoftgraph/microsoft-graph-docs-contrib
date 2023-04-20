@@ -196,6 +196,7 @@ The following is an example of the response
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
     "description": "Reiciendis placeat dolores.Mollitia veniam tempora tempora quidem voluptatum.Quos animi maiores facilis.Dolores officiis consequatur provident beatae deleniti accusamus magni quam tenetur.",
