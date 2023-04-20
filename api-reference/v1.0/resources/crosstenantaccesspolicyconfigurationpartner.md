@@ -39,7 +39,9 @@ For any partner-specific property that is `null`, these settings will inherit th
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|identitySynchronization|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multi-tenant organization by automating creating, updating, and deleting users from one tenant to another.|
 
 ## JSON representation
 

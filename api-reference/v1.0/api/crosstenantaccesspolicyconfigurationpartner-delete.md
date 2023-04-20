@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy.
+Delete a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy. If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
 
 ## Permissions
 
@@ -49,6 +49,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Examples
+
+If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
 
 ### Request
 
