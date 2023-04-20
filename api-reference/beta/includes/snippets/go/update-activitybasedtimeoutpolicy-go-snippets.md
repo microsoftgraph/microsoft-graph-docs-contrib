@@ -26,7 +26,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().ActivityBasedTimeoutPoliciesById("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().ByActivityBasedTimeoutPolicieId("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

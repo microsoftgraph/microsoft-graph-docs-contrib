@@ -30,7 +30,7 @@ additionalData := map[string]interface{}{
 data.SetAdditionalData(additionalData)
 requestBody.SetData(data)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequestsById("accessPackageAssignmentRequest-id").Resume().Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().ByAccessPackageAssignmentRequestId("accessPackageAssignmentRequest-id").Resume().Post(context.Background(), requestBody, nil)
 
 
 ```
