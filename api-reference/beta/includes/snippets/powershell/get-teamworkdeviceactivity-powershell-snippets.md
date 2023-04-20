@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId -OutFile $outFileId
+Get-MgTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId
 
 ```

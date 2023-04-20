@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AddToReviewSetPostRequestBody();
-$search = new Search();
+$search = new EdiscoverySearch();
 $search->setId('c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7');
 
 
@@ -19,7 +19,7 @@ $requestBody->setAdditionalDataOptions(new AdditionalDataOptions('linkedfiles'))
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->addToReviewSet()->post($requestBody);
+$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->securityAddToReviewSet()->post($requestBody);
 
 
 ```

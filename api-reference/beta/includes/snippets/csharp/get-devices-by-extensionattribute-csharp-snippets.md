@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Devices.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Filter = "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var devices = await graphClient.Devices
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Filter("extensionAttributes/extensionAttribute1 eq 'BYOD-Device'")
-	.GetAsync();
 
 ```

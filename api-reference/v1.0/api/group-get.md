@@ -77,7 +77,7 @@ The following is an example of a GET request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group"
 }-->
 
@@ -110,7 +110,6 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -184,7 +183,7 @@ The following is an example of a GET request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_non_default"
 }-->
 

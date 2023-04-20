@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageResourceRequest()
 catalogId := "26ac0c0a-08bc-4a7b-a313-839f58044ba5"
@@ -14,7 +22,7 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
 justification := ""
 requestBody.SetJustification(&justification) 
-accessPackageResource := graphmodels.NewaccessPackageResource()
+accessPackageResource := graphmodels.NewAccessPackageResource()
 displayName := "Sales"
 accessPackageResource.SetDisplayName(&displayName) 
 description := "https://contoso.sharepoint.com/sites/Sales"
@@ -29,7 +37,7 @@ originSystem := "SharePointOnline"
 accessPackageResource.SetOriginSystem(&originSystem) 
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

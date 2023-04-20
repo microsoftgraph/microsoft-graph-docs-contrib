@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMessage()
 subject := "Party planning"
@@ -41,7 +49,7 @@ mentions := []graphmodels.Mentionable {
 }
 requestBody.SetMentions(mentions)
 
-result, err := graphClient.Me().Messages().Post(requestBody)
+result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

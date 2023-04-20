@@ -83,9 +83,6 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-85
 
 ---
 
-
----
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

@@ -5,22 +5,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+requestFilter := "startswith(displayName,%20'a')"
+
+requestParameters := &graphconfig.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+	Orderby: [] string {"displayName"},
+	Filter: &requestFilter,
 }
-requestParameters := &graphconfig.GroupRequestBuilderGetQueryParameters{
-	Count: true,
-	OrderBy: [] string {"displayName"},
-	Filter: "startswith(displayName,%20'a')",
-}
-configuration := &graphconfig.GroupRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DeviceItemTransitiveMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Group().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

@@ -5,16 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
-	Filter: "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')",
-}
-configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+
+
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").Get(context.Background(), nil)
 
 
 ```

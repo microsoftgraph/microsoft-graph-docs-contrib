@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).
+Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). Only teachers can perform this operation.
 
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
@@ -77,11 +77,25 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-setupfeedbackresourcesfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-setupfeedbackresourcesfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-setupfeedbackresourcesfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupfeedbackresourcesfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
 ### Response
+
 The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

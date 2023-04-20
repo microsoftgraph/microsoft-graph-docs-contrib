@@ -34,10 +34,12 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /servicePrincipals/{id}/addKey
+POST /servicePrincipals(appId='{appId}')/addKey
 ```
 
 ## Request headers
@@ -97,7 +99,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -152,7 +153,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

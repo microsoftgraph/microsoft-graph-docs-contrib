@@ -25,7 +25,7 @@ $requestBody->setBirthday(new DateTime('1974-07-22'));
 
 
 
-$graphServiceClient->me()->contactsById('contact-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->contactsById('contact-id')->patch($requestBody);
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/RecordResponse"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewRecordResponsePostRequestBody()
 bargeInAllowed := true
@@ -15,8 +23,6 @@ requestBody.SetClientContext(&clientContext)
 
 
 prompt := graphmodels.NewPrompt()
-"@odata.type" := "#microsoft.graph.mediaPrompt"
-prompt.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 mediaInfo := graphmodels.New()
 uri := "https://cdn.contoso.com/beep.wav"
@@ -48,7 +54,7 @@ stopTones := []string {
 }
 requestBody.SetStopTones(stopTones)
 
-result, err := graphClient.Communications().CallsById("call-id").RecordResponse().Post(requestBody)
+result, err := graphClient.Communications().CallsById("call-id").RecordResponse().Post(context.Background(), requestBody, nil)
 
 
 ```

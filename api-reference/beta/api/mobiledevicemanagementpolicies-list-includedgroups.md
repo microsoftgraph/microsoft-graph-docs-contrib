@@ -67,31 +67,30 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-mobiledevicepolicies-includedgroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-mobiledevicepolicies-includedgroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-mobiledevicepolicies-includedgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-mobiledevicepolicies-includedgroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-group-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-mobiledevicepolicies-includedgroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-group-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-mobiledevicepolicies-includedgroups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -17,8 +17,8 @@ Platforms included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
 |excludePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
+|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `linux`, `all`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includePlatforms": ["String"],
-  "excludePlatforms": ["String"]
+  "excludePlatforms": ["String"],
+  "includePlatforms": ["String"]
 }
 ```
 

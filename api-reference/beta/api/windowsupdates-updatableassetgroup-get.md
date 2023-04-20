@@ -1,7 +1,7 @@
 ---
 title: "Get updatableAssetGroup"
 description: "Read the properties and relationships of an updatableAssetGroup object."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 

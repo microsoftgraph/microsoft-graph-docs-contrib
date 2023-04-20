@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinterConnector -PrinterId $printerId -OutFile $outFileId
+Get-MgPrintPrinterConnector -PrinterId $printerId
 
 ```

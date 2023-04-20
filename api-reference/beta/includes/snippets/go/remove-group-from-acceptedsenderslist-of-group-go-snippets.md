@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.RefRequestBuilderDeleteQueryParameters{
-	Id: "https://graph.microsoft.com/beta/groups/{other-group-id}",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestId := "https://graph.microsoft.com/beta/groups/{other-group-id}"
+
+requestParameters := &graphconfig.GroupItemAcceptedSenders$refRequestBuilderDeleteQueryParameters{
+	Id: &requestId,
 }
-configuration := &graphconfig.RefRequestBuilderDeleteRequestConfiguration{
+configuration := &graphconfig.GroupItemAcceptedSenders$refRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").AcceptedSenders().$ref().DeleteWithRequestConfigurationAndResponseHandler(configuration, nil)
+graphClient.GroupsById("group-id").AcceptedSenders().Ref().Delete(context.Background(), configuration)
 
 
 ```

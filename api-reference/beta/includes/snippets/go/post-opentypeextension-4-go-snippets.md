@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/Threads/Item/Posts/Item/Reply"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
@@ -18,8 +26,6 @@ post.SetBody(body)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.HR", 
 	"companyName" : "Contoso", 
@@ -40,7 +46,7 @@ extensions := []graphmodels.Extensionable {
 post.SetExtensions(extensions)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(requestBody)
+graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").PostsById("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection. Only **timeoutInMilliseconds** is supported.
+HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection when trying to trigger the logic app. Only **timeoutInMilliseconds** is supported.
 
 ## Properties
 |Property|Type|Description|

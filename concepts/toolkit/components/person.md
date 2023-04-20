@@ -1,11 +1,11 @@
 ---
-title: "Person component in the Microsoft Graph Toolkit"
+title: "Person component in Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Person component in the Microsoft Graph Toolkit
+# Person component in Microsoft Graph Toolkit
 
 The person component is used to display a person or contact by using their photo, name, email address, or any other person details.
 
@@ -63,7 +63,8 @@ You can use several properties to customize the component.
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| vertical-layout   | verticalLayout   | Set the component layout to vertical.|
+| avatar-size     | avatarSize     | Set to `small`, `large`, or `auto` to  determine the size of avatar. This helps to set the correct size for the presence badge. Default is auto. |
+| vertical-layout | verticalLayout | Set the component layout to vertical.|
 | view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName` , `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `jobTitle`.|
@@ -233,7 +234,7 @@ The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indicates whether the person component can use the Microsoft Graph personal contacts API to search for contact details and photos. Default value is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person component can use Microsoft Graph personal contacts API to search for contact details and photos. Default value is `true`.  |
 
 ## Microsoft Graph permissions
 

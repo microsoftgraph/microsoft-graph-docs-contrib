@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Compliance
 
-Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId -OutFile $outFileId
+Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
 
 ```

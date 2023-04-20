@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/GetPresencesByUserId"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewGetPresencesByUserIdPostRequestBody()
 ids := []string {
@@ -15,7 +23,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Communications().GetPresencesByUserId().Post(requestBody)
+result, err := graphClient.Communications().GetPresencesByUserId().Post(context.Background(), requestBody, nil)
 
 
 ```

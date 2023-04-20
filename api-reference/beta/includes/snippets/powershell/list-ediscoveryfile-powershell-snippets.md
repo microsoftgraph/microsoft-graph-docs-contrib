@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5  -OutFile $outFileId
+Get-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -Top 5 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
 displayName := "Access to EXO requires MFA"
@@ -14,8 +22,10 @@ state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE
 requestBody.SetState(&state) 
 conditions := graphmodels.NewConditionalAccessConditionSet()
 clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
-	"mobileAppsAndDesktopClients",
-	"browser",
+	conditionalAccessClientApp := graphmodels.MOBILEAPPSANDDESKTOPCLIENTS_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
+	conditionalAccessClientApp := graphmodels.BROWSER_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
 
 }
 conditions.SetClientAppTypes(clientAppTypes)
@@ -50,13 +60,14 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	"mfa",
+	conditionalAccessGrantControl := graphmodels.MFA_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }
 grantControls.SetBuiltInControls(builtInControls)
 requestBody.SetGrantControls(grantControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

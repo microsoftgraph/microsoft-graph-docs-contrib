@@ -16,7 +16,8 @@ $requestBody->setDirection(new CallDirection('outgoing'));
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');

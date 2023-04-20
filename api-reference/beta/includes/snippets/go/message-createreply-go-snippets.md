@@ -5,10 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Messages/Item/CreateReply"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCreateReplyPostRequestBody()
-message := graphmodels.Newmessage()
+message := graphmodels.NewMessage()
 
 
 recipient := graphmodels.NewRecipient()
@@ -36,7 +44,7 @@ requestBody.SetMessage(message)
 comment := "Samantha, Randi, would you name the group if the project is approved, please?"
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().MessagesById("message-id").CreateReply().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").CreateReply().Post(context.Background(), requestBody, nil)
 
 
 ```

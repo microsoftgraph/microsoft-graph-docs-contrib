@@ -1,7 +1,7 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -104,7 +104,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 

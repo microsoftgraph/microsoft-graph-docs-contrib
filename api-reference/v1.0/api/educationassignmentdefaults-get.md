@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. 
 
-These are the class-level assignment defaults respected by new [assignments](../resources/educationassignment.md) created in the class. Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
+These are the class-level assignment defaults respected by new [assignments](../resources/educationassignment.md) created in the class. Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors. Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -89,9 +89,8 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 ---
 
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

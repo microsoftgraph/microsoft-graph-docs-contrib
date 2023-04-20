@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityProtection/RiskyServicePrincipals/Dismiss"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDismissPostRequestBody()
 servicePrincipalIds := []string {
@@ -14,7 +22,7 @@ servicePrincipalIds := []string {
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 
-graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(requestBody)
+graphClient.IdentityProtection().RiskyServicePrincipals().Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

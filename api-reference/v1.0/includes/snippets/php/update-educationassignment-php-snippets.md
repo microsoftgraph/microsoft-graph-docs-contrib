@@ -25,7 +25,7 @@ $requestBody->setAddedStudentAction(new EducationAddedStudentAction('none'));
 
 
 
-$graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->patch($requestBody);
+$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->patch($requestBody);
 
 
 ```

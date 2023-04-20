@@ -27,11 +27,19 @@ One of the following sets of permissions is required to call this API. To learn 
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+Token lifetime policies can be assigned to both applications and service principals.
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
+<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+DELETE /applications/{id}/tokenLifetimePolicies/$ref
+
+DELETE /applications(appId='{appId}')/tokenLifetimePolicies/$ref
+
+DELETE /servicePrincipals/{id}/tokenLifetimePolicies/$ref
+
+DELETE /servicePrincipals(appId='{appId}')/tokenLifetimePolicies/$ref
 ```
 
 ## Request headers
@@ -61,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+DELETE https://graph.microsoft.com/beta/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4/$ref
 ```
 
 # [C#](#tab/csharp)
@@ -90,12 +98,9 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

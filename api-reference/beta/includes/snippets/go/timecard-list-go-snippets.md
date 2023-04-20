@@ -5,17 +5,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.TimeCardsRequestBuilderGetQueryParameters{
-	Top: 2,
-	Filter: "state eq 'clockedOut'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestTop := int32(2)
+requestFilter := "state eq 'clockedOut'"
+
+requestParameters := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetQueryParameters{
+	Top: &requestTop,
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.TimeCardsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
 
 
 ```

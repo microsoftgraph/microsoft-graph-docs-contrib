@@ -27,11 +27,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+Token lifetime policies can be assigned to both applications and service principals.
 
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/tokenLifetimePolicies
+
+GET /applications(appId='{appId}')/tokenLifetimePolicies
+
 GET /servicePrincipals/{id}/tokenLifetimePolicies
+
+GET /servicePrincipals(appId='{appId}')/tokenLifetimePolicies
 ```
 
 ## Request headers
@@ -61,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
+GET https://graph.microsoft.com/beta/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/tokenLifetimePolicies
 ```
 
 # [C#](#tab/csharp)
@@ -90,7 +98,6 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -109,16 +116,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.tokenLifetimePolicy)",
+    "value": [
+        {
+            "id": "4d2f137b-e8a9-46da-a5c3-cc85b2b840a4",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}"
+            ],
+            "displayName": "Contoso token lifetime policy",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

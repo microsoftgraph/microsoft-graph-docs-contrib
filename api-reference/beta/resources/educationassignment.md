@@ -21,6 +21,8 @@ When an **assignment** is created, it is in a Draft state. Students can't see th
 
 The **assignment** APIs are exposed in the class namespace.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -44,8 +46,7 @@ The **assignment** APIs are exposed in the class namespace.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only.|
-|addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
+|addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none`. Supported values are: `none`, `assignIfOpen`. For example, a teacher can use `assignIfOpen` to indicate that an assignment should be assigned to any new student who joins the class while the assignment is still open, and `none` to indicate that an assignment should not be assigned to new students.|
 |addToCalendarAction| educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a **submission** or if they can only modify resources added by the teacher. |
@@ -60,6 +61,7 @@ The **assignment** APIs are exposed in the class namespace.
 |dueDateTime|DateTimeOffset|Date when the students **assignment** is due.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |feedbackResourcesFolderUrl|String|Folder URL where all the feedback file resources for this **assignment** are stored.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
+|id|String| The unique identifier for the **assignment**. Inherited from [entity](../resources/entity.md). Read-only.|
 |instructions|[itemBody](itembody.md)| Instructions for the **assignment**.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -91,11 +93,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
-  "addedStudentAction": "none",
-  "addToCalendarAction": "string",
-  "allowLateSubmissions": true,
-  "allowStudentsToAddResourcesToSubmission": true,
+  "addedStudentAction": "String",
+  "addToCalendarAction": "String",
+  "allowLateSubmissions": "Boolean",
+  "allowStudentsToAddResourcesToSubmission": "Boolean",
   "assignDateTime": "String (timestamp)",
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "String (timestamp)",
@@ -105,14 +106,16 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "dueDateTime": "String (timestamp)",
+  "feedbackResourcesFolderUrl": "String",
   "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
+  "id": "String (identifier)",
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "notificationChannelUrl": "string",
-  "status": "string",
-  "webUrl": "string",
-  "resourcesFolderUrl": "string"
+  "notificationChannelUrl": "String",
+  "status": "String",
+  "webUrl": "String",
+  "resourcesFolderUrl": "String"
 }
 ```
 

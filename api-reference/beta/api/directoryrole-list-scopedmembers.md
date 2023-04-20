@@ -23,12 +23,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+[!INCLUDE [rbac-directory-role-apis-read](../includes/rbac-for-apis/rbac-directory-role-apis-read.md)]
+
 ## HTTP request
+
+You can address the directory role using either its **id** or **roleTemplateId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{role-id}/scopedMembers
-GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
+GET /directoryRoles(roleTemplateId='{roleTemplateId}')/scopedMembers
 ```
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
@@ -119,44 +124,13 @@ Content-type: application/json
 #### Request
 The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
-
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_scopedmembers_directoryrole_templateId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+GET https://graph.microsoft.com/beta/directoryRoles(roleTemplateId='fdd7a751-b60b-444a-984c-02652fe8fa1c')/scopedMembers
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedmembers-directoryrole-templateid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-scopedmembers-directoryrole-templateid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-scopedmembers-directoryrole-templateid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-scopedmembers-directoryrole-templateid-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-scopedmembers-directoryrole-templateid-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-scopedmembers-directoryrole-templateid-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response

@@ -68,6 +68,8 @@ $checklist->setAdditionalData($additionalData);
 
 
 $requestBody->setChecklist($checklist);
+$requestBody->setDescription('Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links');
+
 
 $requestConfiguration = new DetailsRequestBuilderPatchRequestConfiguration();
 
@@ -79,7 +81,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
+$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->details()->patch($requestBody, $requestConfiguration);
 
 
 ```

@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.ShiftsRequestBuilderGetQueryParameters{
-	Filter: "sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z"
+
+requestParameters := &graphconfig.TeamItemScheduleShiftsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.ShiftsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemScheduleShiftsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().Shifts().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Get(context.Background(), configuration)
 
 
 ```

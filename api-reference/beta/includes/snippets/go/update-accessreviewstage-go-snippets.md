@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewStage()
-"@odata.type" := "#microsoft.graph.accessReviewStage"
-requestBody.Set"@odata.type"(&"@odata.type") 
 
 
 accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
@@ -43,7 +49,7 @@ fallbackReviewers := []graphmodels.Objectable {
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

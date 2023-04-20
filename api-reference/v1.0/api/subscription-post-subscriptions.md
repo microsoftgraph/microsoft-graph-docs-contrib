@@ -15,7 +15,7 @@ Subscribes a listener application to receive change notifications when the reque
 
 See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications. 
 
-Some resources support the option to include encrypted resource data in change notifications. These resources include [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), and [presence](../resources/presence.md). For more information, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notification-overview).
+Some resources support the option to include encrypted resource data in change notifications. These resources include [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), and [presence](../resources/presence.md). For more information, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notifications-overview).
 
 ## Permissions
 
@@ -154,7 +154,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.

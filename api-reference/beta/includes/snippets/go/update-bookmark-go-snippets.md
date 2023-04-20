@@ -5,13 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
 requestBody.SetDescription(&description) 
 
-graphClient.Search().BookmarksById("bookmark-id").Patch(requestBody)
+result, err := graphClient.Search().BookmarksById("bookmark-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -67,27 +67,23 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-azure-ad-dir-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-azure-ad-dir-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-azure-ad-dir-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-azure-ad-dir-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-azure-ad-dir-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,10 +146,6 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-b2c-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-b2c-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

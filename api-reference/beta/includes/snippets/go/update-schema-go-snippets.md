@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSchema()
 baseType := "microsoft.graph.externalItem"
@@ -17,12 +25,13 @@ name := "ticketTitle"
 property.SetName(&name) 
 type := graphmodels.STRING_PROPERTYTYPE 
 property.SetType(&type) 
-isSearchable := "true"
+isSearchable := true
 property.SetIsSearchable(&isSearchable) 
-isRetrievable := "true"
+isRetrievable := true
 property.SetIsRetrievable(&isRetrievable) 
 labels := []graphmodels.Labelable {
-	"title",
+	label := graphmodels.TITLE_LABEL 
+	property.SetLabel(&label) 
 
 }
 property.SetLabels(labels)
@@ -31,18 +40,18 @@ name := "priority"
 property1.SetName(&name) 
 type := graphmodels.STRING_PROPERTYTYPE 
 property1.SetType(&type) 
-isQueryable := "true"
+isQueryable := true
 property1.SetIsQueryable(&isQueryable) 
-isRetrievable := "true"
+isRetrievable := true
 property1.SetIsRetrievable(&isRetrievable) 
-isSearchable := "false"
+isSearchable := false
 property1.SetIsSearchable(&isSearchable) 
 property2 := graphmodels.NewProperty()
 name := "assignee"
 property2.SetName(&name) 
 type := graphmodels.STRING_PROPERTYTYPE 
 property2.SetType(&type) 
-isRetrievable := "true"
+isRetrievable := true
 property2.SetIsRetrievable(&isRetrievable) 
 
 properties := []graphmodels.Propertyable {
@@ -53,7 +62,7 @@ properties := []graphmodels.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(requestBody)
+result, err := graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```

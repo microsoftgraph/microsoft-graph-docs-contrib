@@ -114,8 +114,6 @@ Content-Type: application/json
 
 ---
 
-
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -177,32 +175,30 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-with3-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-with3-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-with3-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-with3-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-with3-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-chat-group-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-chat-group-with3-members-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -284,8 +280,6 @@ Content-Type: application/json
 
 ---
 
-
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -345,33 +339,32 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-with-guest-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-with-guest-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-with-guest-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-with-guest-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-with-guest-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-chat-group-with-guest-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -454,7 +447,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

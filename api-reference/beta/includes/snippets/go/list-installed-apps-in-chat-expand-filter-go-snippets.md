@@ -5,17 +5,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.InstalledAppsRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
+
+requestParameters := &graphconfig.ChatItemInstalledAppsRequestBuilderGetQueryParameters{
 	Expand: [] string {"teamsApp","teamsAppDefinition"},
-	Filter: "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'",
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.InstalledAppsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ChatItemInstalledAppsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ChatsById("chat-id").InstalledApps().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.ChatsById("chat-id").InstalledApps().Get(context.Background(), configuration)
 
 
 ```

@@ -107,7 +107,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -158,7 +157,8 @@ Content-type: application/json
     "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
@@ -221,7 +221,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -262,9 +261,10 @@ HTTP/1.1 200 OK
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
+   "attachments":[],
+   "mentions":[],
+   "reactions":[],
+   "messageHistory": []
 }
 ```
 

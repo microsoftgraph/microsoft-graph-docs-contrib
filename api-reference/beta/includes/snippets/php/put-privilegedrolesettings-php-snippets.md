@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SettingsPostRequestBody();
+$requestBody = new SettingsPutRequestBody();
 $additionalData = [
 'id' => '9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3', 
 'elevationDuration' => 'PT8H', 

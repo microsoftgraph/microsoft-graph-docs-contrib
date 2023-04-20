@@ -16,7 +16,7 @@ $requestBody->setUserId('c5d0c76b-80c4-481c-be50-923cd8d680a1');
 
 $requestBody->setSchedulingGroupId('TAG_228940ed-ff84-4e25-b129-1b395cf78be0');
 
-$sharedShift = new SharedShift();
+$sharedShift = new ShiftItem();
 $sharedShift->setDisplayName('Day shift');
 
 $sharedShift->setNotes('Please do inventory as part of your shift.');
@@ -45,7 +45,7 @@ $sharedShift->setActivities($activitiesArray);
 
 
 $requestBody->setSharedShift($sharedShift);
-$draftShift = new DraftShift();
+$draftShift = new ShiftItem();
 $draftShift->setDisplayName('Day shift');
 
 $draftShift->setNotes('Please do inventory as part of your shift.');

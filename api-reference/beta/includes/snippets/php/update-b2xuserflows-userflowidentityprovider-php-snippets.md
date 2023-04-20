@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new $refPostRequestBody();
+$requestBody = new $refPatchRequestBody();
 $additionalData = [
 '@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test', 
 '@odata.type' => '#microsoft.graph.identityProvider', 

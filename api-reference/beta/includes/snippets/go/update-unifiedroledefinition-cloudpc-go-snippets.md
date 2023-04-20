@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUnifiedRoleDefinition()
 description := "Update basic properties and permission of application registrations"
@@ -15,14 +23,12 @@ requestBody.SetDisplayName(&displayName)
 
 
 unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
-additionalData := map[string]interface{}{
-	allowedResourceActions := []string {
-		"Microsoft.CloudPC/CloudPCs/Read",
-		"Microsoft.CloudPC/CloudPCs/Reprovision",
+allowedResourceActions := []string {
+	"Microsoft.CloudPC/CloudPCs/Read",
+	"Microsoft.CloudPC/CloudPCs/Reprovision",
 
-	}
 }
-unifiedRolePermission.SetAdditionalData(additionalData)
+unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
@@ -30,7 +36,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 }
 requestBody.SetRolePermissions(rolePermissions)
 
-graphClient.RoleManagement().CloudPC().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(requestBody)
+result, err := graphClient.RoleManagement().CloudPC().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

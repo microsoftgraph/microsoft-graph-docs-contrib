@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new BookingService();
 $requestBody->set@odatatype('#microsoft.graph.bookingService');
 
-$requestBody->setDefaultDuration('PT1H30M');
+$requestBody->setDefaultDuration(new \DateInterval('PT1H30M'));
 
 $defaultLocation = new Location();
 $defaultLocation->set@odatatype('#microsoft.graph.location');
@@ -72,7 +72,7 @@ $defaultRemindersBookingReminder1->set@odatatype('#microsoft.graph.bookingRemind
 
 $defaultRemindersBookingReminder1->setMessage('Please be reminded that this service is tomorrow.');
 
-$defaultRemindersBookingReminder1->setOffset('P1D');
+$defaultRemindersBookingReminder1->setOffset(new \DateInterval('P1D'));
 
 $defaultRemindersBookingReminder1->setRecipients(new BookingReminderRecipients('allattendees'));
 
@@ -95,30 +95,34 @@ $requestBody->setIsLocationOnline(true);
 
 $requestBody->setSmsNotificationsEnabled(true);
 
+$requestBody->setLanguageTag('en-US');
+
 $requestBody->setIsHiddenFromCustomers(false);
 
 $requestBody->setNotes('Home-cooked special');
 
-$requestBody->setPostBuffer('PT10M');
+$requestBody->setPostBuffer(new \DateInterval('PT10M'));
 
-$requestBody->setPreBuffer('PT5M');
+$requestBody->setPreBuffer(new \DateInterval('PT5M'));
 
 $schedulingPolicy = new BookingSchedulingPolicy();
 $schedulingPolicy->set@odatatype('#microsoft.graph.bookingSchedulingPolicy');
 
 $schedulingPolicy->setAllowStaffSelection(true);
 
-$schedulingPolicy->setMaximumAdvance('P10D');
+$schedulingPolicy->setMaximumAdvance(new \DateInterval('P10D'));
 
-$schedulingPolicy->setMinimumLeadTime('PT10H');
+$schedulingPolicy->setMinimumLeadTime(new \DateInterval('PT10H'));
 
 $schedulingPolicy->setSendConfirmationsToOwner(true);
 
-$schedulingPolicy->setTimeSlotInterval('PT1H');
+$schedulingPolicy->setTimeSlotInterval(new \DateInterval('PT1H'));
 
 
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 $requestBody->setStaffMemberIds(['d90d1e8c-5cfe-48cf-a2d5-966267375b6a', '2f5f8794-0b29-45b5-b56a-2eb5ff7aa880', ]);
+
+$requestBody->setIsAnonymousJoinEnabled(false);
 
 $additionalData = [
 'defaultPriceType@odata.type' => '#microsoft.graph.bookingPriceType', 

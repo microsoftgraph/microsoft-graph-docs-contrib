@@ -33,7 +33,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData query parameters](/graph/query-parameter) to help customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

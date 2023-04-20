@@ -2,7 +2,7 @@
 title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
 ms.localizationpriority: high
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

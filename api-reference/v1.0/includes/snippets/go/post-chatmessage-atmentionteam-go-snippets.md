@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
@@ -21,8 +29,8 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "GraphTesting"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
-conversation := graphmodels.Newconversation()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
+conversation := graphmodels.NewTeamworkConversationIdentity()
 id := "68a3e365-f7d9-4a56-b499-24332a9cc572"
 conversation.SetId(&id) 
 displayName := "GraphTesting"
@@ -42,7 +50,7 @@ reactions := []graphmodels.ChatMessageReactionable {
 }
 requestBody.SetReactions(reactions)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

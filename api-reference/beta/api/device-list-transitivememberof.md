@@ -2,7 +2,7 @@
 title: "List device transitive memberships"
 description: "Get groups and administrative units that the device is a member of."
 ms.localizationpriority: medium
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -30,10 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+You can address the device using either its **id** or **deviceId**.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/transitiveMemberOf
+GET /devices(deviceId='{deviceId}')/transitiveMemberOf
 ```
 
 ## Optional query parameters
@@ -102,7 +104,6 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -249,7 +250,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

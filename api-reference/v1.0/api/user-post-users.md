@@ -1,7 +1,7 @@
 ---
 title: "Create User"
 description: "Use this API to create a new User."
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -120,7 +120,6 @@ Content-type: application/json
 
 ---
 
-
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
 #### Response
@@ -224,7 +223,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

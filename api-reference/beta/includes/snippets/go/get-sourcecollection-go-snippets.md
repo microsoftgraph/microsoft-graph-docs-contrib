@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.SourceCollectionRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"},
 }
-configuration := &graphconfig.SourceCollectionRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ComplianceEdiscoveryCaseItemSourceCollectionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").Get(context.Background(), configuration)
 
 
 ```

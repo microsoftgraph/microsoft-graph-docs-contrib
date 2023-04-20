@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/IdentityGovernance/AccessReviews/Definitions/Item"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDefinition()
 additionalData := map[string]interface{}{
@@ -14,16 +22,12 @@ additionalData := map[string]interface{}{
 	"descriptionForAdmins" : "Test world", 
 	"descriptionForReviewers" : "Test world", 
 scope := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
 query := "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers"
 scope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
 scope.SetQueryType(&queryType) 
 	requestBody.SetScope(scope)
 instanceEnumerationScope := graphmodels.New()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-instanceEnumerationScope.Set"@odata.type"(&"@odata.type") 
 query := "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f"
 instanceEnumerationScope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
@@ -67,7 +71,7 @@ range.SetStartDate(&startDate)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Put(requestBody)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Put(context.Background(), requestBody, nil)
 
 
 ```

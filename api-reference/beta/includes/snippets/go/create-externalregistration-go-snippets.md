@@ -5,16 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/OnlineMeetings/Item/Registration"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewRegistrationPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.externalMeetingRegistration", 
 	"allowedRegistrant" : "everyone", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(requestBody)
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(context.Background(), requestBody, nil)
 
 
 ```

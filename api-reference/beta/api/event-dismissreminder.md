@@ -1,7 +1,7 @@
 ---
 title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -95,7 +95,6 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here is an example of the response.

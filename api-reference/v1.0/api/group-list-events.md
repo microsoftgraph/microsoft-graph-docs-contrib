@@ -1,7 +1,7 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
-author: "Harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -84,7 +84,6 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.

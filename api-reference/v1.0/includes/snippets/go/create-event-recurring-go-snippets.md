@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEvent()
 subject := "Let's go for lunch"
@@ -35,7 +43,8 @@ pattern.SetType(&type)
 interval := int32(1)
 pattern.SetInterval(&interval) 
 daysOfWeek := []graphmodels.DayOfWeekable {
-	"Monday",
+	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
+	pattern.SetDayOfWeek(&dayOfWeek) 
 
 }
 pattern.SetDaysOfWeek(daysOfWeek)
@@ -43,9 +52,9 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.ENDDATE_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2017-09-04"
+startDate := 2017-09-04
 range.SetStartDate(&startDate) 
-endDate := "2017-12-31"
+endDate := 2017-12-31
 range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
 requestBody.SetRecurrence(recurrence)
@@ -73,7 +82,7 @@ requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(requestBody)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

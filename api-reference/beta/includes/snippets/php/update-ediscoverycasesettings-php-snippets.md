@@ -29,7 +29,7 @@ $ocr->set@odatatype('microsoft.graph.security.ocrSettings');
 $requestBody->setOcr($ocr);
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->settings()->patch($requestBody);
+$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->settings()->patch($requestBody);
 
 
 ```

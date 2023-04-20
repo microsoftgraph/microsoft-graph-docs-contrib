@@ -97,7 +97,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/apiConnectors/370eeb68-dfd3-4a4
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

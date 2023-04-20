@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationClass()
 description := "Health Level 1"
@@ -23,7 +31,7 @@ requestBody.SetExternalSource(&externalSource)
 mailNickname := "fineartschool.net"
 requestBody.SetMailNickname(&mailNickname) 
 
-result, err := graphClient.Education().Classes().Post(requestBody)
+result, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
 
 
 ```

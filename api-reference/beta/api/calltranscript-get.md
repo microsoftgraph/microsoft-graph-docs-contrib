@@ -17,7 +17,9 @@ Retrieve a [callTranscript](../resources/calltranscript.md) object associated wi
 
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> **Notes:** 
+> - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
 ## Permissions
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API would work for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
@@ -41,15 +43,15 @@ To use application permission for this API, tenant administrators must create an
 Get a single transcript of an online meeting.
 
 ```http
-GET /me/onlineMeetings({meetingId})/transcripts({transcriptId})
-GET /users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 ```
 
 Get the content of a single transcript of an online meeting.
 
 ```http
-GET me/onlineMeetings({meetingId})/transcripts({transcriptId})/content
-GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/content
+GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
 ## Request headers
@@ -74,7 +76,8 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript"
+  "name": "get_callTranscript",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -107,7 +110,6 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -135,7 +137,8 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content"
+  "name": "get_callTranscript_content",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -194,7 +197,8 @@ WEBVTT
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_format"
+  "name": "get_callTranscript_content_format",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -252,7 +256,8 @@ WEBVTT
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_Accept"
+  "name": "get_callTranscript_content_Accept",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http
@@ -310,7 +315,8 @@ This is a transcript test.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_format_precedence"
+  "name": "get_callTranscript_content_format_precedence",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
 ``` http

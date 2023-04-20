@@ -5,9 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/PrivilegedRoles/Item/Settings"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewSettingsPostRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewSettingsPutRequestBody()
 additionalData := map[string]interface{}{
 	"id" : "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3", 
 	"elevationDuration" : "PT8H", 
@@ -33,7 +41,7 @@ requestBody.SetApprovalOnElevation(&approvalOnElevation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(requestBody)
+graphClient.PrivilegedRolesById("privilegedRole-id").Settings().Put(context.Background(), requestBody, nil)
 
 
 ```

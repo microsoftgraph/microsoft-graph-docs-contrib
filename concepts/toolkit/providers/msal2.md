@@ -34,15 +34,16 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
     </mgt-msal2-provider> 
 ```
 
-| Attribute    | Description                                                                                                                                                                                                                                                           |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
-| login-type   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
-| scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
-| authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
-| redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
-| prompt       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
-| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
+| Attribute                    | Description                                                                                                                                                                                                                                                           |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| client-id                    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
+| login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
+| scopes                       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
+| authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+| redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
+| prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
+| base-url                     | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
+| incremental-consent-disabled | Specifies if incremental consent is disabled. Default `false`. Optional. |
 
 ### Initialize in JavaScript
 
@@ -73,6 +74,7 @@ interface Msal2Config {
   sid?: string; // Session ID
   loginHint?: string;
   domainHint?: string;
+  isIncrementalConsentDisabled?: boolean, //Disable incremental consent, true by default
   options?: Configuration // msal-browser Configuration object
 }
 ```
@@ -94,6 +96,7 @@ interface Msal2PublicClientApplicationConfig {
   sid?: string; // Session ID
   loginHint?: string;
   domainHint?: string;
+  isIncrementalConsentDisabled?: boolean, //Disable incremental consent, true by default
   options?: Configuration // msal-browser Configuration object
 }
 ```

@@ -14,7 +14,7 @@ $requestBody->setName('docSet');
 
 $requestBody->setDescription('custom docset');
 
-$base = new Base();
+$base = new ContentType();
 $base->setName('Document Set');
 
 $base->setId('0x0120D520');

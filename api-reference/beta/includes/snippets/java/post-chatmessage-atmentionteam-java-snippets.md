@@ -26,6 +26,8 @@ mentionsList.add(mentions);
 chatMessage.mentions = mentionsList;
 LinkedList<ChatMessageReaction> reactionsList = new LinkedList<ChatMessageReaction>();
 chatMessage.reactions = reactionsList;
+LinkedList<ChatMessageHistoryItem> messageHistoryList = new LinkedList<ChatMessageHistoryItem>();
+chatMessage.messageHistory = messageHistoryList;
 
 graphClient.teams("68a3e365-f7d9-4a56-b499-24332a9cc572").channels("19:0b50940236084d258c97b21bd01917b0@thread.skype").messages()
 	.buildRequest()

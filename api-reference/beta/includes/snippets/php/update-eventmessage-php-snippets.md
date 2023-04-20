@@ -10,11 +10,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Message();
-$requestBody->setIsRead('true');
+$requestBody->setIsRead(true);
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->patch($requestBody);
+$requestResult = $graphServiceClient->me()->messagesById('message-id')->patch($requestBody);
 
 
 ```

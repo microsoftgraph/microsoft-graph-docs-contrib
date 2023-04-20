@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingCustomQuestion()
-"@odata.type" := "#microsoft.graph.bookingCustomQuestion"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "What is your age?"
 requestBody.SetDisplayName(&displayName) 
 answerInputType := graphmodels.TEXT_ANSWERINPUTTYPE 
@@ -19,7 +25,7 @@ answerOptions := []string {
 }
 requestBody.SetAnswerOptions(answerOptions)
 
-graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Patch(requestBody)
+result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

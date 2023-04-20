@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewGroupSetting()
 templateId := "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -13,29 +21,25 @@ requestBody.SetTemplateId(&templateId)
 
 
 settingValue := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "GuestUsageGuidelinesUrl", 
-	"value" : "https://privacy.contoso.com/privacystatement", 
-}
-settingValue.SetAdditionalData(additionalData)
+name := "GuestUsageGuidelinesUrl"
+settingValue.SetName(&name) 
+value := "https://privacy.contoso.com/privacystatement"
+settingValue.SetValue(&value) 
 settingValue1 := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "EnableMSStandardBlockedWords", 
-	"value" : "true", 
-}
-settingValue1.SetAdditionalData(additionalData)
+name := "EnableMSStandardBlockedWords"
+settingValue1.SetName(&name) 
+value := "true"
+settingValue1.SetValue(&value) 
 settingValue2 := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "EnableMIPLabels", 
-	"value" : "true", 
-}
-settingValue2.SetAdditionalData(additionalData)
+name := "EnableMIPLabels"
+settingValue2.SetName(&name) 
+value := "true"
+settingValue2.SetValue(&value) 
 settingValue3 := graphmodels.NewSettingValue()
-additionalData := map[string]interface{}{
-	"name" : "PrefixSuffixNamingRequirement", 
-	"value" : "[Contoso-][GroupName]", 
-}
-settingValue3.SetAdditionalData(additionalData)
+name := "PrefixSuffixNamingRequirement"
+settingValue3.SetName(&name) 
+value := "[Contoso-][GroupName]"
+settingValue3.SetValue(&value) 
 
 values := []graphmodels.SettingValueable {
 	settingValue,
@@ -46,7 +50,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.GroupSettings().Post(requestBody)
+result, err := graphClient.GroupSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,19 +1,27 @@
 ---
-title: "Person-Card component in the Microsoft Graph Toolkit"
+title: "Person-Card component in Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Person-Card component in the Microsoft Graph Toolkit
+# Person-Card component in Microsoft Graph Toolkit
 
 A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
 For more information about the `mgt-person` component, see [mgt-person](./person.md).
 
-## Example
+## Example using mgt-person
 
-The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
+The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover or click on the person to see the Person Card.
+  
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-properties--person-card&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-properties--person-card&source=docs)
+
+## Example using mgt-person-card as a standalone component
+
+The following example shows the use of the `mgt-person-card` component. Use the code editor to see how [properties](#properties) change the behavior of the component.
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
@@ -37,7 +45,7 @@ The following properties are available on the config object.
 
 | Property | Description |
 | ------------ | ------------- |
-| useContactApis | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
+| useContactApis | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`.  |
 | sections | `object` - Configures what sections are shown in the person card.  |
 
 ### Person card sections
@@ -141,28 +149,71 @@ For more information about handling events, see [events](../customize-components
 The `mgt-person-card` component defines the following CSS custom properties. 
 
 ```css
-mgt-person {
-  --person-card-display-name-font-size: 40px;
-  --person-card-display-name-color: #ffffff;
-  --person-card-title-font-size: 20px;
-  --person-card-title-color: #ffffff;
-  --person-card-subtitle-font-size: 10px;
-  --person-card-subtitle-color: #ffffff;
-  --person-card-details-title-font-size: 10px;
-  --person-card-details-title-color: #b3bf0a;
-  --person-card-details-item-font-size: 20px;
-  --person-card-details-item-color: #3abf0a;
-  --person-card-background-color: #000000;
-  --person-card-contact-link-color: #ff0000;
-  --person-card-contact-link-hover-color: #00ff00;
-  --person-card-show-more-color: #ff0000;
-  --person-card-show-more-hover-color: #00ff00;
-  --person-card-base-links-color: #ff0000;
-  --person-card-base-links-hover-color: #00ff00;
-  --person-card-tab-nav-color: #ff0000;
-  --person-card-active-org-member-color: #ff0000;
-  --person-card-nav-back-arrow-hover-color: #00ff00;
-  --person-card-nav-back-arrow-color: #ff0000;
+mgt-person-card {
+  --person-card-nav-back-arrow-hover-color: green;
+  --person-card-icon-color: red;
+  --person-card-line1-font-size: 30px;
+  --person-card-line1-font-weight: 800;
+  --person-card-line1-line-height: 38px;
+  --person-card-line2-font-size: 24px;
+  --person-card-line2-font-weight: 600;
+  --person-card-line2-line-height: 30px;
+  --person-card-line3-font-size: 24px;
+  --person-card-line3-font-weight: 300;
+  --person-card-line3-line-height: 29px;
+  --person-card-avatar-size: 85px;
+  --person-card-details-left-spacing: 25px;
+  --person-card-avatar-top-spacing: 25px;
+  --person-card-details-bottom-spacing: 20px;
+  --person-card-background-color: pink;
+  --person-card-expanded-background-color-hover: blue;
+  --person-card-icon-hover-color: magenta;
+  --person-card-show-more-color: blue;
+  --person-card-show-more-hover-color: green;
+  --person-card-fluent-background-color: yellow;
+  --person-card-line1-text-color: purple;
+  --person-card-line2-text-color: blue;
+  --person-card-line3-text-color: green;
+  --person-card-fluent-background-color-hover: orange;
+  --person-card-base-icons-left-spacing: 110px;
+
+  /** person-card sections tokens */
+
+  /** Organization */
+  --organization-active-org-member-target-background-color: blue;
+  --organization-title-color: green;
+  --organization-sub-title-color: yellow;
+  --organization-hover-color: grey;
+  --organization-coworker-hover-color: grey;
+  --organization-coworker-border-color: purple;
+  --organization-active-org-member-border-color: red;
+
+  /** Files: Uses custom css properties for mgt-file-list and mgt-file */
+
+  /** Messages */
+
+  --message-subject-color: purple;
+  --message-from-color: blue;
+  --message-color: black;
+  --message-hover-color: grey;
+
+  /** Contact */
+
+  --contact-title-color: blue;
+  --contact-value-color: green;
+  --contact-link-color: red;
+  --contact-link-hover-color: purple;
+  --contact-background-color: grey;
+  --contact-copy-icon-color: yellow;
+
+  /** Profile */
+
+  --profile-title-color: blue;
+  --profile-background-color: grey;
+  --profile-token-item-color: blue;
+  --profile-token-overflow-color: purple;
+  --profile-section-title-color: black;
+  --profile-token-item-background-color: yellow;
 }
 ```
 
@@ -209,3 +260,21 @@ The Person-Card control uses the global authentication provider described in the
 |`users`|Person's user information|Used when `userId` is specified or the `personQuery` is set to `me`|
 
 See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+
+
+## Localization
+
+The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+
+| String name                 | Default value                      |
+| --------------------------- | ---------------------------------- |
+| endOfCard                   | 'End of the card'                  |
+| quickMessage                | 'Send a quick message              |
+| expandDetailsLabel          | 'Expand details'                   |
+| renderOverviewSectionLabel  | 'Render overview section'          |
+| sendMessageLabel            | 'Send message'                     |
+| emailButtonLabel            | 'Email'                            |
+| callButtonLabel             | 'Call'                             |
+| chatButtonLabel             | 'Chat'                             |
+| videoButtonLabel            | 'Video'                            |
+| closeCardLabel              | 'Close card'                       |

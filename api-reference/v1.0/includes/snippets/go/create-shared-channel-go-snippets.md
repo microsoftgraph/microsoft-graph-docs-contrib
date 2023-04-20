@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChannel()
 displayName := "My First Shared Channel"
@@ -17,15 +25,13 @@ requestBody.SetMembershipType(&membershipType)
 
 
 conversationMember := graphmodels.NewConversationMember()
-"@odata.type" := "#microsoft.graph.aadUserConversationMember"
-conversationMember.Set"@odata.type"(&"@odata.type") 
 roles := []string {
 	"owner",
 
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')", 
 }
 conversationMember.SetAdditionalData(additionalData)
 
@@ -35,7 +41,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

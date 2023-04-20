@@ -22,7 +22,9 @@ Similarly, an application can have its own presence session for a user and be ab
 
 The following is the precedence for how session states are aggregated, with "A > B" representing A having precedence over B:
 * User-preferred state > session-level states (user-preferred state overrides session-level states)
-* Among session-level states: DoNotDisturb (currently not supported for **setPresence**) > Busy > Available > Away
+* Among session-level states: DoNotDisturb > Busy > Available > Away
+
+> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it will take a few minutes to update the presence status.
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
@@ -68,12 +70,13 @@ In the request body, provide a JSON object with the following parameters.
 
 Supported combinations of `availability` and `activity` are:
 
-| availability | activity          | Description                                              |
-| :----------- | :---------------- | :------------------------------------------------------- |
-| Available    | Available         | Updates the presence session as Available.               |
-| Busy         | InACall           | Updates the presence session as Busy, InACall.           |
-| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall. |
-| Away         | Away              | Updates the presence session as Away.                    |
+| availability | activity          | Description                                               |
+| :----------- | :---------------- | :-------------------------------------------------------- |
+| Available    | Available         | Updates the presence session as Available.                |
+| Busy         | InACall           | Updates the presence session as Busy, InACall.            |
+| Busy         | InAConferenceCall | Updates the presence session as Busy, InAConferenceCall.  |
+| Away         | Away              | Updates the presence session as Away.                     |
+| DoNotDisturb | Presenting        | Updates the presence session as DoNotDisturb, Presenting. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -127,7 +130,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

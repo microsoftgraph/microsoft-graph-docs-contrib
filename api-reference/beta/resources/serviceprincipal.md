@@ -60,9 +60,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection|Get the list of groups, administrative units, and directory roles that this service principal is a member of.|
 |**Owners**| | |
-|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[Remove owner](../api/serviceprincipal-delete-owners.md) |None| Remove an owner from a serviceprincipal.|
+|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of a service principal.|
+|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to a service principal. Service principal owners can be users or other service principals.|
+|[Remove owner](../api/serviceprincipal-delete-owners.md) |None| Remove an owner from a service principal. As a recommended best practice, service principals should have at least two owners.|
 |**Policies**| | |
 |[Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Assign a claimsMappingPolicy to this object.|
 |[List claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Get all claimsMappingPolicies assigned to this object.|
@@ -89,7 +89,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
-| accountEnabled |Boolean| `true` if the service principal account is enabled; otherwise, `false`. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
+| accountEnabled |Boolean| `true` if the service principal account is enabled; otherwise, `false`. If set to `false`, then no users will be able to sign in to this app, even if they are assigned to it. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](/azure/active-directory/managed-identities-azure-resources/overview). Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |appDescription|String|The description exposed by the associated application.|
@@ -99,7 +99,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appOwnerOrganizationId|Guid|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`). |
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`).|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). Filter value is case sensitive.|
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 | description | String | Free text field to provide an internal end-user facing description of the service principal. End-user portals such [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access) will display the application description in this field. The maximum allowed size is 1024 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`.|
 | disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `not`).  |
@@ -119,6 +119,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Specifies the expiration date of the keyCredential used for token signing, marked by **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
 |publishedPermissionScopes|[permissionScope](permissionscope.md) collection|The delegated permissions exposed by the application. For more information see the **oauth2PermissionScopes** property on the [application](application.md) entity's **api** property. Not nullable. <br/>**Note:** This property is named **oauth2PermissionScopes** in v1.0.|
+|publisherName| String | The name of the Azure AD tenant that published the application. |
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
 |samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on.|
@@ -130,6 +131,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application which this service principal represents.|
 
 ## Relationships
+
+> [!IMPORTANT]
+> Specific usage of the `$filter` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#user-properties).
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
@@ -143,10 +147,12 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this service principal. Supports `$expand`.|
 |memberOf|[directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.|
-|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable. Supports `$expand`.|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports `$expand`.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable.  Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
+|synchronization | [synchronization](synchronization-synchronization.md)| Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. |
 |tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) collection|The tokenIssuancePolicies assigned to this service principal. Supports `$expand`.|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) collection|The tokenLifetimePolicies assigned to this service principal. Supports `$expand`.|
+
 
 ## JSON representation
 
@@ -198,6 +204,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "preferredSingleSignOnMode": "String",
   "preferredTokenSigningKeyEndDateTime": "DateTime",
   "preferredTokenSigningKeyThumbprint": "String",
+  "publisherName": "String",
   "replyUrls": ["String"],
   "samlMetadataUrl": "String",
   "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",

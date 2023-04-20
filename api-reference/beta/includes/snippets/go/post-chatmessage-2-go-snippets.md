@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
@@ -21,7 +29,7 @@ id := int32(0)
 chatMessageMention.SetId(&id) 
 mentionText := "Jane Smith"
 chatMessageMention.SetMentionText(&mentionText) 
-mentioned := graphmodels.Newmentioned()
+mentioned := graphmodels.NewChatMessageMentionedIdentitySet()
 user := graphmodels.NewIdentity()
 displayName := "Jane Smith"
 user.SetDisplayName(&displayName) 
@@ -40,7 +48,7 @@ mentions := []graphmodels.ChatMessageMentionable {
 }
 requestBody.SetMentions(mentions)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

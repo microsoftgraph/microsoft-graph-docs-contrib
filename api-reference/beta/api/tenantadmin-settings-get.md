@@ -71,28 +71,26 @@ GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-at-tenant-level-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-at-tenant-level-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-settings-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-settings-at-tenant-level-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-settings-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-settings-at-tenant-level-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-settings-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-settings-at-tenant-level-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 

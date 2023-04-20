@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewIdentityProvider()
-"@odata.type" := "microsoft.graph.identityProvider"
-requestBody.Set"@odata.type"(&"@odata.type") 
 name := "Login with Amazon"
 requestBody.SetName(&name) 
 type := "Amazon"
@@ -19,7 +25,7 @@ requestBody.SetClientId(&clientId)
 clientSecret := "000000000000"
 requestBody.SetClientSecret(&clientSecret) 
 
-result, err := graphClient.IdentityProviders().Post(requestBody)
+result, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

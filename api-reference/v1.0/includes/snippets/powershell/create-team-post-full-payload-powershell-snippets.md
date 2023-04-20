@@ -26,7 +26,7 @@ $params = @{
 					"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')"
 					DisplayName = "A Pinned Website"
 					Configuration = @{
-						ContentUrl = "https://docs.microsoft.com/microsoftteams/microsoft-teams"
+						ContentUrl = "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 					}
 				}
 				@{

@@ -25,6 +25,10 @@ $params = @{
 	RequestedModalities = @(
 		"audio"
 	)
+	CallOptions = @{
+		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
+		IsContentSharingNotificationEnabled = $true
+	}
 	MediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 	}

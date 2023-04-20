@@ -134,14 +134,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -304,12 +297,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-inactiveguests-m365-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-inactiveguests-m365-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -491,7 +479,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -510,14 +498,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-allusers-m365-aadrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-allusers-m365-aadrole-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -709,12 +690,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-group-multistage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewscheduledefinition-group-multistage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

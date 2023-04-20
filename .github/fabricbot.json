@@ -40,7 +40,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+              "comment": "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
             }
           },
           {
@@ -83,12 +83,12 @@
           "issues",
           "project_card"
         ],
-        "taskName": "Auto close non docs.microsoft.com submitted issues",
+        "taskName": "Auto close non learn.microsoft.com submitted issues",
         "actions": [
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://docs.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+              "comment": "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
             }
           },
           {
@@ -1907,7 +1907,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -1972,7 +1972,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2037,7 +2037,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2102,7 +2102,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2167,7 +2167,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2232,7 +2232,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2297,7 +2297,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2362,7 +2362,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2427,7 +2427,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2492,7 +2492,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2557,7 +2557,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2622,7 +2622,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2687,7 +2687,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2752,7 +2752,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2817,7 +2817,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2882,7 +2882,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -2947,7 +2947,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3012,7 +3012,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3077,7 +3077,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3142,7 +3142,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3207,7 +3207,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3272,7 +3272,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3337,7 +3337,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3402,7 +3402,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3467,7 +3467,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3532,7 +3532,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3597,7 +3597,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3662,7 +3662,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3727,7 +3727,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/products/graph)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/graph)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3820,7 +3820,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3885,7 +3885,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -3950,7 +3950,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -4015,7 +4015,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Tech Community](https://aka.ms/graphfeedback)."
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
             }
           },
           {
@@ -4072,6 +4072,287 @@
               "isOrgProject": true,
               "projectName": "Microsoft Graph Docs Content Review Queue",
               "columnName": "Ready for review"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "IssuesOnlyResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "or",
+          "operands": [
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "Q&A"
+                  }
+                },
+                {
+                  "name": "labelAdded",
+                  "parameters": {
+                    "label": "area: applications"
+                  }
+                }
+              ]
+            },
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "area: applications"
+                  }
+                },
+                {
+                  "name": "labelAdded",
+                  "parameters": {
+                    "label": "Q&A"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "eventType": "issue",
+        "eventNames": [
+          "issues",
+          "project_card"
+        ],
+        "taskName": "Close functionality issue and redirect to MS Q&A - Applications tag",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
+      "config": {
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          }
+        ],
+        "searchTerms": [
+          {
+            "name": "noActivitySince",
+            "parameters": {
+              "days": 14
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "changes requested"
+            }
+          },
+          {
+            "name": "isPr",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
+          }
+        ],
+        "taskName": "Notification for idle PRs - changes requested",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR has been in \"Changes requested\" state for more than 2 weeks. \n\nPlease address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. \n\nThank you!\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
+      "config": {
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          }
+        ],
+        "searchTerms": [
+          {
+            "name": "noActivitySince",
+            "parameters": {
+              "days": 14
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "content review complete"
+            }
+          },
+          {
+            "name": "isPr",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
+          }
+        ],
+        "taskName": "Notification for idle PRs - complete",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR was approved by your reviewer more than 2 weeks ago.\n\nPlease add the label \"ready to merge\" when you are ready to publish your PR.\n\nThank you!"
             }
           }
         ]

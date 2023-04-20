@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContentType()
 name := "updatedCt"
@@ -83,7 +91,7 @@ welcomePageColumns := []graphmodels.ColumnDefinitionable {
 documentSet.SetWelcomePageColumns(welcomePageColumns)
 requestBody.SetDocumentSet(documentSet)
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(requestBody)
+result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

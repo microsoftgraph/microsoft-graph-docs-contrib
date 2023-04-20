@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new StringKeyStringValuePairPostRequestBody();
+$requestBody = new ProvisionOnDemandPostRequestBody();
 $parametersSynchronizationJobApplicationParameters1 = new SynchronizationJobApplicationParameters();
 $subjectsSynchronizationJobSubject1 = new SynchronizationJobSubject();
 $subjectsSynchronizationJobSubject1->setObjectId('9bb0f679-a883-4a6f-8260-35b491b8b8c8');

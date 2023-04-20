@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewWorkforceIntegration()
 displayName := "displayName-value"
@@ -25,7 +33,7 @@ requestBody.SetUrl(&url)
 supportedEntities := graphmodels.SUPPORTEDENTITIES-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupportedEntities(&supportedEntities) 
 
-result, err := graphClient.Teamwork().WorkforceIntegrations().Post(requestBody)
+result, err := graphClient.Teamwork().WorkforceIntegrations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Update plannerBucketTaskBoardTaskFormat"
-description: "Update the properties of **plannerBucketTaskBoardTaskFormat** object."
+description: "Update the properties of plannerBucketTaskBoardTaskFormat object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Tasks.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +49,8 @@ If successful, this method returns `204 No Content` response and empty content. 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,8 +95,9 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

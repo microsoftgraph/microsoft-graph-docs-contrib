@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 policyViolation := graphmodels.NewChatMessagePolicyViolation()
@@ -26,7 +34,7 @@ dlpAction := graphmodels.BLOCKACCESS_CHATMESSAGEPOLICYVIOLATIONDLPACTIONTYPES
 policyViolation.SetDlpAction(&dlpAction) 
 requestBody.SetPolicyViolation(policyViolation)
 
-graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(requestBody)
+result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

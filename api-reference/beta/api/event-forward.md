@@ -1,7 +1,7 @@
 ---
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -82,9 +82,9 @@ Content-type: application/json
 {
   "ToRecipients":[
       {
-        "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
-          "name":"Dana Swope"
+        "EmailAddress": {
+          "Address":"danas@contoso.onmicrosoft.com",
+          "Name":"Dana Swope"
         }
       }
      ],
@@ -118,7 +118,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response.

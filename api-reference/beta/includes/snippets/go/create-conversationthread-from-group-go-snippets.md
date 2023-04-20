@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewConversationThread()
 topic := "New Conversation Thread Topic"
@@ -22,15 +30,12 @@ post.SetBody(body)
 
 
 recipient := graphmodels.NewRecipient()
-additionalData := map[string]interface{}{
-emailAddress := graphmodels.New()
+emailAddress := graphmodels.NewEmailAddress()
 name := "Alex Darrow"
 emailAddress.SetName(&name) 
 address := "alexd@contoso.com"
 emailAddress.SetAddress(&address) 
-	recipient.SetEmailAddress(emailAddress)
-}
-recipient.SetAdditionalData(additionalData)
+recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
@@ -44,7 +49,7 @@ posts := []graphmodels.Postable {
 }
 requestBody.SetPosts(posts)
 
-result, err := graphClient.GroupsById("group-id").Threads().Post(requestBody)
+result, err := graphClient.GroupsById("group-id").Threads().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,12 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"OData-Version": "4.01",
-}
-configuration := &graphconfig.CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("OData-Version", "4.01")
+
+configuration := &graphconfig.DirectoryCustomSecurityAttributeDefinitionItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
@@ -36,7 +46,7 @@ isActive := true
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").PatchWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

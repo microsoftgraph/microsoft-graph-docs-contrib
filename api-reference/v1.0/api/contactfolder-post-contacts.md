@@ -104,7 +104,6 @@ Content-type: application/json
 
 ---
 
-
 <br/>
 
 In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.

@@ -20,7 +20,7 @@ $requestBody->setDisplayName('Shoe size');
 
 $requestBody->setUserAttributeValues([]);
 
-$userAttribute = new UserAttribute();
+$userAttribute = new IdentityUserFlowAttribute();
 $userAttribute->setId('extension_guid_shoeSize');
 
 

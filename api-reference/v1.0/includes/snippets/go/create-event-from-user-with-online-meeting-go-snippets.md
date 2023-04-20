@@ -5,12 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "outlook.timezone=\"Pacific Standard Time\"",
-}
-configuration := &graphconfig.EventsRequestBuilderPostRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
+configuration := &graphconfig.ItemEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvent()
@@ -62,7 +72,7 @@ requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
 onlineMeetingProvider := graphmodels.TEAMSFORBUSINESS_ONLINEMEETINGPROVIDERTYPE 
 requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider) 
 
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, configuration, nil)
+result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

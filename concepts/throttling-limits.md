@@ -2,6 +2,8 @@
 title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jameskitindi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -35,7 +37,7 @@ The preceding limits apply to the following resources:
 
 - [educationAssignment](/graph/api/resources/educationassignment)
 - [educationSubmission](/graph/api/resources/educationsubmission)
-- [trending](/graph/api/resources/trending)
+- [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
 
 ## Cloud communication service limits
@@ -46,6 +48,17 @@ The preceding limits apply to the following resources:
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
+### Call records limits
+
+The limits listed in the following table apply to the following resource:
+
+- [callRecord](/graph/api/resources/callrecords-callrecord)
+
+| Limit type      | Limit    |
+| -------------- | ------------ |
+| Per tenant | 10,000 requests per 20 seconds |
+| Per application per tenant  | 1,500 requests per 20 seconds |
+| Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 
 ## Excel service limits
 
@@ -237,10 +250,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-- [people](/graph/api/resources/people)
-- [sharedInsight](/graph/api/resources/sharedinsight)
-- [trending](/graph/api/resources/trending)
-- [usedInsight](/graph/api/resources/usedinsight)
+- [people](/graph/api/resources/insightssettings)
+- [sharedInsight](/graph/api/resources/insights-shared)
+- [trending](/graph/api/resources/insights-trending)
+- [usedInsight](/graph/api/resources/insights-used)
 
 ## Intune service limits
 
@@ -319,6 +332,7 @@ Limits are expressed as requests per second (rps).
 | POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+|POST /teamwork/sendActivityNotificationToRecipients|2 rps|20 rps|
 | GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |
@@ -328,7 +342,8 @@ Limits are expressed as requests per second (rps).
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel.
+A maximum of 3000 messages per app per day can be sent to a given channel 
+(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -398,8 +413,8 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 The preceding limits apply to the following resources:
 
-- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
-- [userActivity](/graph/api/resources/useractivity)
+- [activityHistoryItem](/graph/api/resources/projectrome-historyitem)
+- [userActivity](/graph/api/resources/projectrome-activity)
 
 ## Security detections and incidents service limits
 
@@ -412,6 +427,13 @@ The following limits apply to any request on `/security`.
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
 
+## Security eDiscovery service limits
+
+The following limits apply to any request on `/security/eDiscoveryCases`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any | 5 requests per minute |
 
 ## Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.

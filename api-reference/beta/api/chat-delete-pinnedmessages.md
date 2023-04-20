@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageInfoId}
+DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageId}
 ```
 
 ## Request headers
@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec12
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

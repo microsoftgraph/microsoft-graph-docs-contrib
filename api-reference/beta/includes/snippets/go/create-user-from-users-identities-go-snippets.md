@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUser()
 displayName := "John Smith"
@@ -50,7 +58,7 @@ requestBody.SetPasswordProfile(passwordProfile)
 passwordPolicies := "DisablePasswordExpiration"
 requestBody.SetPasswordPolicies(&passwordPolicies) 
 
-result, err := graphClient.Users().Post(requestBody)
+result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

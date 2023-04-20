@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingBusiness()
 displayName := "Fourth Coffee"
@@ -33,7 +41,7 @@ requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso) 
 
-result, err := graphClient.BookingBusinesses().Post(requestBody)
+result, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
 
 
 ```

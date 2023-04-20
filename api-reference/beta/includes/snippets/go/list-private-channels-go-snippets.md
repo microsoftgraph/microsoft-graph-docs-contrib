@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.ChannelsRequestBuilderGetQueryParameters{
-	Filter: "membershipType eq 'private'",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "membershipType eq 'private'"
+
+requestParameters := &graphconfig.TeamItemChannelsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.ChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.TeamItemChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Channels().GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.TeamsById("team-id").Channels().Get(context.Background(), configuration)
 
 
 ```

@@ -11,28 +11,24 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
-$additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'replacesCallId' => 'a7ebfb2d-871e-419c-87af-27290b22e8db', 
-'identity' => $participantsInvitationParticipantInfo1 = new Identity();
-$		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
+$participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
 
-$user = new User();
-$		user->set@odatatype('#microsoft.graph.identity');
+$participantsInvitationParticipantInfo1->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
 
-$		user->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
+$participantsInvitationParticipantInfo1Identity = new IdentitySet();
+$participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
 
-$		user->setDisplayName('string');
+$participantsInvitationParticipantInfo1IdentityUser = new Identity();
+$participantsInvitationParticipantInfo1IdentityUser->set@odatatype('#microsoft.graph.identity');
 
+$participantsInvitationParticipantInfo1IdentityUser->setId('7e1b4346-85a6-4bdd-abe3-d11c5d420efe');
 
-$participantsInvitationParticipantInfo1->setUser($user);
-
-$participantsInvitationParticipantInfo1->setIdentity($identity);
-
-];
-$participantsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$participantsInvitationParticipantInfo1IdentityUser->setDisplayName('string');
 
 
+$participantsInvitationParticipantInfo1Identity->setUser($participantsInvitationParticipantInfo1IdentityUser);
+
+$participantsInvitationParticipantInfo1->setIdentity($participantsInvitationParticipantInfo1Identity);
 
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $requestBody->setParticipants($participantsArray);

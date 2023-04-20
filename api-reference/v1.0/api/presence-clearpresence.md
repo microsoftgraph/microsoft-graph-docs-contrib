@@ -20,7 +20,7 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
@@ -67,7 +67,7 @@ The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearPresence
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearPresence
 Content-Type: application/json
 
 {
@@ -100,7 +100,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -26,6 +26,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |[List alerts_v2](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.|
 |[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update alert](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
+|[Create comment for alert](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.|
 
 ## Properties
 |Property|Type|Description|

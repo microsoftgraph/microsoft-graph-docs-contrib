@@ -1,7 +1,7 @@
 ---
 title: "Delete calendarGroup"
 description: "Delete a calendar group other than the default calendar group."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 

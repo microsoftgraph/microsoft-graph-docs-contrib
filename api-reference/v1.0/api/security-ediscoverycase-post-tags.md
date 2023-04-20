@@ -75,28 +75,26 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ce
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-from--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-id-tags-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-id-tags-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-id-tags-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-id-tags-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-id-tags-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.
@@ -135,6 +133,8 @@ Content-Type: application/json
 ### Example 2: Create a tag with a parent
 #### Request
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryreviewtag_with_a_parent"
@@ -151,6 +151,27 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ce
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-with-a-parent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-with-a-parent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-with-a-parent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-with-a-parent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-with-a-parent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response.

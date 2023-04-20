@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalPolicyPlatform enum type"
 description: "The set of available platforms for the OperationApprovalPolicy"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -28,7 +28,3 @@ The set of available platforms for the OperationApprovalPolicy
 |windows10AndLater|16|Windows 10 and later|
 |windows81AndLater|32|Windows 8.1 and later|
 |windows10X|64|Windows 10X|
-
-
-
-

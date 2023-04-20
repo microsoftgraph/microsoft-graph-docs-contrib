@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContact()
 givenName := "Pavel"
@@ -51,7 +59,7 @@ phones := []graphmodels.Phoneable {
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.Me().Contacts().Post(requestBody)
+result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

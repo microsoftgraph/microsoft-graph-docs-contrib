@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups or administrative units that this device is a direct member of. This operation is not transitive."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -28,9 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+You can address the device using either its **id** or **deviceId**.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/memberOf
+GET /devices(deviceId='{deviceId}')/memberOf
 ```
 ## Optional query parameters
 
@@ -93,7 +96,6 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -241,7 +243,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

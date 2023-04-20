@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMessage()
 subject := "Annual review"
@@ -32,8 +40,6 @@ requestBody.SetToRecipients(toRecipients)
 
 
 extension := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-extension.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Referral", 
 	"companyName" : "Wingtip Toys", 
@@ -48,7 +54,7 @@ extensions := []graphmodels.Extensionable {
 }
 requestBody.SetExtensions(extensions)
 
-result, err := graphClient.Me().Messages().Post(requestBody)
+result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

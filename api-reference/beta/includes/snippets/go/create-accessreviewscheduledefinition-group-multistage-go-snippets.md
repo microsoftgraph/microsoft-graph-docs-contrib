@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Group Multi-stage Access Review"
@@ -15,8 +23,6 @@ requestBody.SetDescriptionForAdmins(&descriptionForAdmins)
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
 scope := graphmodels.NewAccessReviewScope()
-"@odata.type" := "#microsoft.graph.accessReviewQueryScope"
-scope.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
 	"queryType" : "MicrosoftGraph", 
@@ -99,16 +105,6 @@ stageSettings := []graphmodels.AccessReviewStageSettingsable {
 }
 requestBody.SetStageSettings(stageSettings)
 settings := graphmodels.NewAccessReviewScheduleSettings()
-mailNotificationsEnabled := true
-settings.SetMailNotificationsEnabled(&mailNotificationsEnabled) 
-reminderNotificationsEnabled := true
-settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled) 
-justificationRequiredOnApproval := true
-settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval) 
-defaultDecisionEnabled := false
-settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
-defaultDecision := "None"
-settings.SetDefaultDecision(&defaultDecision) 
 instanceDurationInDays := int32(4)
 settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 recurrence := graphmodels.NewPatternedRecurrence()
@@ -121,7 +117,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := "2020-09-08T12:02:30.667Z"
+startDate := 2020-09-08T12:02:30.667Z
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
@@ -129,7 +125,7 @@ decisionHistoriesForReviewersEnabled := true
 settings.SetDecisionHistoriesForReviewersEnabled(&decisionHistoriesForReviewersEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

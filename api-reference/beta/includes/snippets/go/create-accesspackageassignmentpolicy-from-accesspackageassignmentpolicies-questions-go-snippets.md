@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 accessPackageId := "b2eba9a1-b357-42ee-83a8-336522ed6cbf"
@@ -49,8 +57,6 @@ approvalStage.SetEscalationTimeInMinutes(&escalationTimeInMinutes)
 
 
 userSet := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.groupMembers"
-userSet.Set"@odata.type"(&"@odata.type") 
 isBackup := true
 userSet.SetIsBackup(&isBackup) 
 additionalData := map[string]interface{}{
@@ -59,8 +65,6 @@ additionalData := map[string]interface{}{
 }
 userSet.SetAdditionalData(additionalData)
 userSet1 := graphmodels.NewUserSet()
-"@odata.type" := "#microsoft.graph.externalSponsors"
-userSet1.Set"@odata.type"(&"@odata.type") 
 isBackup := false
 userSet1.SetIsBackup(&isBackup) 
 
@@ -99,8 +103,6 @@ localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-accessPackageQuestion.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 
 
@@ -189,8 +191,6 @@ localizedTexts := []graphmodels.AccessPackageLocalizedTextable {
 }
 text.SetLocalizedTexts(localizedTexts)
 accessPackageQuestion1.SetText(text)
-"@odata.type" := "#microsoft.graph.accessPackageTextInputQuestion"
-accessPackageQuestion1.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	isSingleLineQuestion := false
 accessPackageQuestion1.SetIsSingleLineQuestion(&isSingleLineQuestion) 
@@ -204,7 +204,7 @@ questions := []graphmodels.AccessPackageQuestionable {
 }
 requestBody.SetQuestions(questions)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

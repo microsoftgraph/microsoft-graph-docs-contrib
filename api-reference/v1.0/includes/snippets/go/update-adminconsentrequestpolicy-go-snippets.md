@@ -5,9 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Policies/AdminConsentRequestPolicy"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewAdminConsentRequestPolicyPostRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAdminConsentRequestPolicyPutRequestBody()
 additionalData := map[string]interface{}{
 	isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
@@ -37,7 +45,7 @@ queryType := "MicrosoftGraph"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().AdminConsentRequestPolicy().Put(requestBody)
+graphClient.Policies().AdminConsentRequestPolicy().Put(context.Background(), requestBody, nil)
 
 
 ```

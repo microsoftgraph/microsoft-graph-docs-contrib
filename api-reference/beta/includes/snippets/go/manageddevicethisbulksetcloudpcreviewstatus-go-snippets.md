@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/ManagedDevices/BulkSetCloudPcReviewStatus"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBulkSetCloudPcReviewStatusPostRequestBody()
 managedDeviceIds := []string {
@@ -23,7 +31,7 @@ azureStorageAccountId := "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/re
 reviewStatus.SetAzureStorageAccountId(&azureStorageAccountId) 
 requestBody.SetReviewStatus(reviewStatus)
 
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkSetCloudPcReviewStatus().Post(requestBody)
+result, err := graphClient.DeviceManagement().ManagedDevices().BulkSetCloudPcReviewStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

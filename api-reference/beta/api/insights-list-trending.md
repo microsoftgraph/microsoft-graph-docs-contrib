@@ -86,7 +86,7 @@ If item insights of targeted user have been disabled, this method returns `403 F
   }
 }
 ```
-For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).
+For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy).
 
 ## Example
 #### Request
@@ -101,10 +101,6 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-me-trending-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-me-trending-javascript-snippets.md)]

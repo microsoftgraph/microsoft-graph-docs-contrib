@@ -25,12 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+You can address the device using either its **id** or **deviceId**.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /devices/{objectId}/usageRights
+GET /devices(deviceId='{deviceId}')/usageRights
 ```
 
 ## Optional query parameters
@@ -99,7 +101,6 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -141,7 +142,7 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-2-csharp-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -165,7 +166,6 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

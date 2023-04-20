@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RoleAssignmentSchedule.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleAssignmentSchedule.ReadWrite.Directory|
+|Application|RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -122,8 +122,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -241,9 +239,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
-
 
 #### Response
 

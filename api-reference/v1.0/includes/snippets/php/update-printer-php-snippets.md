@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
+$requestResult = $graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
 
 
 ```

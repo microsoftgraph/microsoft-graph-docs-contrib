@@ -1,7 +1,7 @@
 ---
 title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -86,7 +86,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [calendarGroup](../resources/calendargroup.md) object.
 ### Response

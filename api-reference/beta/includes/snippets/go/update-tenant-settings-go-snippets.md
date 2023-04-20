@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//tenantAdmin"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSettings()
 deletedUserPersonalSiteRetentionPeriodInDays := int32(365)
@@ -28,7 +36,7 @@ requestBody.SetIsUnmanagedSyncAppForTenantRestricted(&isUnmanagedSyncAppForTenan
 personalSiteDefaultStorageLimitInMB := int64(120000)
 requestBody.SetPersonalSiteDefaultStorageLimitInMB(&personalSiteDefaultStorageLimitInMB) 
 
-graphClient.Admin().Sharepoint().Settings().Patch(requestBody)
+result, err := graphClient.Admin().Sharepoint().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "directoryObject: checkMemberObjects"
 description: "Check for membership in a list of groups, administrative units, or directory roles for the specified user, group, service principal, organizational contact, device, or directory object."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: "apiPageType"
 ---
@@ -178,7 +178,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

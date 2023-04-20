@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md).
 
+This method supports federation. For one-on-one chats, at least one chat member must belong to the tenant the request initiates from. For group chats, the chat must be initiated by a user in the tenant the request initiates from.
+
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
@@ -101,7 +103,6 @@ GET https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

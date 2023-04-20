@@ -5,11 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/OnlineMeetings/Item/Registration"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewRegistrationPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#microsoft.graph.meetingRegistration", 
 	"subject" : "Microsoft Ignite", 
 	"description" : "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.", 
 	"startDateTime" : "2021-11-02T08:00:00-08:00", 
@@ -64,7 +71,7 @@ isRequired := false
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(requestBody)
+graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "tenantGroup: tenantSearch"
 description: "Searches for the specified managed tenants across tenant groups."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -94,7 +94,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

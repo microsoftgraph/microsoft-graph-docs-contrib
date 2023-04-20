@@ -37,8 +37,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
+| connection-id | string | The **id** property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md). |
+| item-id       | string | The developer-provided **id** property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Request headers
 
@@ -98,8 +98,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 <!-- markdownlint-disable MD024 -->
 ### Response

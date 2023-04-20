@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Organization.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Organization.ReadWrite.All |
 
 ## HTTP request
 
@@ -88,8 +88,6 @@ DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 

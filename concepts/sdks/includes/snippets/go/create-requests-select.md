@@ -10,8 +10,8 @@ query := me.MeRequestBuilderGetQueryParameters{
 }
 
 options := me.MeRequestBuilderGetOptions{
-    Q: &query,
+    QueryParameters: &query,
 }
 
-result, err := client.Me().Get(&options)
+result, err := client.Me().Get(context.Background(), &options)
 ```

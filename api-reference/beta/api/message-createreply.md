@@ -50,6 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
+| Prefer: outlook.timezone | string | Sets the time zone for the `Sent` field of the reply draft message in HTML that this API creates based on the request body. The value can be any of the [supportedTimeZones](outlookuser-supportedtimezones.md) configured for the user. If not specified, that `Sent` field is in UTC.<br><br> Use this header only if you're specifying the `Content-Type: application/json` header to create the reply draft message in HTML. If you use the `Content-Type: text/plain` header, this `Prefer` header does not have any effect. Optional.|
 
 ## Request body
 When using JSON format, provide a JSON object with the following parameters.
@@ -128,7 +129,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.

@@ -28,7 +28,7 @@ Represents information about a virtual appointment, including the client join UR
 
 > [!TIP]
 >
-> When you create a virtual appointment resource for the first time in a tenant, the request returns a `503 Service Unavailable` response code with a retry header that indicates how long a caller should wait before making the request again. The service provisioning takes less than five minutes. This step is only required once per customer tenant.
+> When you create a virtual appointment resource for the first time in a tenant, the request returns a `409 Conflict` response code with a retry header that indicates how long a caller should wait before making the request again. The service provisioning takes less than five minutes. This step is only required once per customer tenant.
 
 ## Properties
 |Property|Type|Description|

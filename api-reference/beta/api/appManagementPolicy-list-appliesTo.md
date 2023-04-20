@@ -19,10 +19,10 @@ List application and service principal objects assigned an [appManagementPolicy]
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-| :------------------------------------- | :--------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                                                                  |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
+| Delegated (personal Microsoft account) | Not supported.                                                                                               |
 | Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

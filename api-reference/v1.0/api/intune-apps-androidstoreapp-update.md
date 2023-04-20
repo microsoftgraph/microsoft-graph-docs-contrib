@@ -1,7 +1,7 @@
 ---
 title: "Update androidStoreApp"
 description: "Update the properties of a androidStoreApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -76,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 978
+Content-length: 1092
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -107,6 +107,12 @@ Content-length: 978
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   }
@@ -118,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1150
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -152,13 +158,14 @@ Content-Length: 1150
     "v4_4": true,
     "v5_0": true,
     "v5_1": true,
+    "v6_0": true,
+    "v7_0": true,
+    "v7_1": true,
+    "v8_0": true,
+    "v8_1": true,
+    "v9_0": true,
     "v10_0": true,
     "v11_0": true
   }
 }
 ```
-
-
-
-
-

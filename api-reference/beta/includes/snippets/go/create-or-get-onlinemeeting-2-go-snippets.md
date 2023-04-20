@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/OnlineMeetings/CreateOrGet"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCreateOrGetPostRequestBody()
 chatInfo := graphmodels.NewChatInfo()
@@ -40,7 +49,7 @@ requestBody.SetParticipants(participants)
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,11 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/AdministrativeUnits/Item/Members"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMembersPostRequestBody()
 additionalData := map[string]interface{}{
-	"@odata.type" : "#Microsoft.Graph.Group", 
 	"description" : "Self help community for golf", 
 	"displayName" : "Golf Assist", 
 	groupTypes := []string {
@@ -24,7 +31,7 @@ requestBody.SetSecurityEnabled(&securityEnabled)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.AdministrativeUnitsById("administrativeUnit-id").Members().Post(requestBody)
+graphClient.AdministrativeUnitsById("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

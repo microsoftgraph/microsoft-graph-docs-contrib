@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSubjectRightsRequest()
 type := graphmodels.SUBJECTRIGHTSREQUESTTYPE_GRAPH_MICROSOFT_SUBJECTRIGHTSREQUESTTYPE 
@@ -39,7 +48,7 @@ additionalData := map[string]interface{}{
 dataSubject.SetAdditionalData(additionalData)
 requestBody.SetDataSubject(dataSubject)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

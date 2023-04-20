@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewExtension()
-"@odata.type" := "microsoft.graph.openTypeExtension"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"extensionName" : "Com.Contoso.Referral", 
 	"companyName" : "Wingtip Toys", 
@@ -18,7 +24,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MessagesById("message-id").Extensions().Post(requestBody)
+result, err := graphClient.Me().MessagesById("message-id").Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

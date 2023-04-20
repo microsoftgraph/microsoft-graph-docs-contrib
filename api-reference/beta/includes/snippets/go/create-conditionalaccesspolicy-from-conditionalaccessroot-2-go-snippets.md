@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
 displayName := "Block access to EXO non-trusted regions."
@@ -14,7 +22,8 @@ state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE
 requestBody.SetState(&state) 
 conditions := graphmodels.NewConditionalAccessConditionSet()
 clientAppTypes := []graphmodels.ConditionalAccessClientAppable {
-	"all",
+	conditionalAccessClientApp := graphmodels.ALL_CONDITIONALACCESSCLIENTAPP 
+	conditions.SetConditionalAccessClientApp(&conditionalAccessClientApp) 
 
 }
 conditions.SetClientAppTypes(clientAppTypes)
@@ -44,13 +53,14 @@ grantControls := graphmodels.NewConditionalAccessGrantControls()
 operator := "OR"
 grantControls.SetOperator(&operator) 
 builtInControls := []graphmodels.ConditionalAccessGrantControlable {
-	"block",
+	conditionalAccessGrantControl := graphmodels.BLOCK_CONDITIONALACCESSGRANTCONTROL 
+	grantControls.SetConditionalAccessGrantControl(&conditionalAccessGrantControl) 
 
 }
 grantControls.SetBuiltInControls(builtInControls)
 requestBody.SetGrantControls(grantControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

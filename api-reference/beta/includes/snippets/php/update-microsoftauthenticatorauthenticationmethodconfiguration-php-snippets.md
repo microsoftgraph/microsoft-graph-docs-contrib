@@ -12,11 +12,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AuthenticationMethodConfiguration();
 $requestBody->set@odatatype('#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration');
 
-$requestBody->setState(new AuthenticationMethodState('string'));
+$requestBody->setState(new AuthenticationMethodState('enabled'));
 
 
 
-$graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

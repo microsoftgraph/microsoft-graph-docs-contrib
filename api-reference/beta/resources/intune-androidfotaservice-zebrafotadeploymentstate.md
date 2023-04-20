@@ -1,7 +1,7 @@
 ---
 title: "zebraFotaDeploymentState enum type"
 description: "Represents the state of Zebra FOTA deployment."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -28,7 +28,3 @@ Represents the state of Zebra FOTA deployment.
 |pendingCancel|5|Admin has requested to cancel a deployment but Zebra has not confirmed cancellation.|
 |canceled|6|Deployment has been successfully canceled by Zebra.|
 |unknownFutureValue|99|Unknown future enum value.|
-
-
-
-

@@ -2,7 +2,7 @@
 title: "user: invalidateAllRefreshTokens"
 description: "Invalidates all of the user's refresh tokens issued to applications and session cookies in a user's browser."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -87,7 +87,6 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response. 

@@ -44,7 +44,7 @@ If the user or app is assigned only to catalog-specific administrative roles, th
 ### Example scenarios for using query parameters
 
 - To return the target subject and access package, include `$expand=target,accessPackage`.
-- To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.
+- To retrieve only delivered assignments, you can include a query `$filter=state eq 'Delivered'`.
 - To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 - To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 
@@ -102,8 +102,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

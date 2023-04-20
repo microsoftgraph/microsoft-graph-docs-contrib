@@ -1,7 +1,7 @@
 ---
 title: "Get event"
 description: "Get the properties and relationships of the specified event object."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -126,7 +126,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response 1
 

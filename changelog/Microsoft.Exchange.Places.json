@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "workspaces",
           "ChangeType": "Addition",
-          "Description": "Added the **workspaces** relationship to the [roomList](https://docs.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
+          "Description": "Added the **workspaces** relationship to the [roomList](https://learn.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
           "Target": "roomList"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workspace",
           "ChangeType": "Addition",
-          "Description": "Added the [workspace](https://docs.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Description": "Added the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
           "Target": "workspace"
         }
       ],

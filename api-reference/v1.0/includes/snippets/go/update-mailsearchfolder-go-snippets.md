@@ -5,17 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMailFolder()
-"@odata.type" := "microsoft.graph.mailSearchFolder"
-requestBody.Set"@odata.type"(&"@odata.type") 
 additionalData := map[string]interface{}{
 	"filterQuery" : "contains(subject, 'Analytics')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().MailFoldersById("mailFolder-id").Patch(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

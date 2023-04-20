@@ -1,6 +1,6 @@
 ---
 title: "Delete externalItem"
-description: "Deletes an externalItem object."
+description: "Delete an externalItem object."
 author: "mecampos"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-Deletes an [externalItem](../resources/externalconnectors-externalitem.md) object.
+Delete an [externalItem](../resources/externalconnectors-externalitem.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 | Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                               |
 | Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,11 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP
 
 ---
 
-
-
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -16,7 +16,7 @@ $requestBody->setInternalDueDateTime(new DateTime('2021-08-30T00:00:00Z'));
 
 
 
-$graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->patch($requestBody);
+$requestResult = $graphServiceClient->privacy()->subjectRightsRequestsById('subjectRightsRequest-id')->patch($requestBody);
 
 
 ```

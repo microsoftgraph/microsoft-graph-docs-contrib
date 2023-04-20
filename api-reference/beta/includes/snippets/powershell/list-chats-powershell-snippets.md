@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgUserChat -UserId $userId -OutFile $outFileId
+Get-MgUserChat -UserId $userId
 
 ```

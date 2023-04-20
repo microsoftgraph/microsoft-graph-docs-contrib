@@ -5,16 +5,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directory"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.IdentityProviderBaseRequestBuilderGetQueryParameters{
-	Filter: "domains/any",
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "domains/any"
+
+requestParameters := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityProviderBaseRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.DirectoryFederationConfigurationItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").GetWithRequestConfigurationAndResponseHandler(configuration, nil)
+result, err := graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Get(context.Background(), configuration)
 
 
 ```

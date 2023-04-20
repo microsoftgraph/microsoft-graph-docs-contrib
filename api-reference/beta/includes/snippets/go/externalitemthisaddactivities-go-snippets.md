@@ -5,14 +5,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Connections/Item/Items/Item/ExternalConnectorsAddActivities"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAddActivitiesPostRequestBody()
 
 
 externalActivity := graphmodels.NewExternalActivity()
-"@odata.type" := "#microsoft.graph.externalConnectors.externalActivity"
-externalActivity.Set"@odata.type"(&"@odata.type") 
 type := graphmodels.STRING_EXTERNALACTIVITYTYPE 
 externalActivity.SetType(&type) 
 startDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -24,7 +30,7 @@ activities := []graphmodels.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").AddActivities().Post(requestBody)
+result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").ExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

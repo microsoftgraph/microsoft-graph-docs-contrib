@@ -19,7 +19,7 @@ $createdBy->set@odatatype('microsoft.graph.identitySet');
 
 
 $requestBody->setCreatedBy($createdBy);
-$requestBody->setIsEnabled('Boolean');
+$requestBody->setIsEnabled(boolean);
 
 $requestBody->setStatus(new LegalHoldStatus('string'));
 

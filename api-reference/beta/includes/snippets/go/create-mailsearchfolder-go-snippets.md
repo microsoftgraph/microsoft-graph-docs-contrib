@@ -5,11 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMailFolder()
-"@odata.type" := "microsoft.graph.mailSearchFolder"
-requestBody.Set"@odata.type"(&"@odata.type") 
 displayName := "Weekly digests"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -23,7 +29,7 @@ requestBody.SetIncludeNestedFolders(&includeNestedFolders)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Post(requestBody)
+result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

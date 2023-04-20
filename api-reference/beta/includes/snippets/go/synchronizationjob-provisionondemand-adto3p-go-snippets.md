@@ -5,9 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/Synchronization/Jobs/Item/ProvisionOnDemand"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewStringKeyStringValuePairPostRequestBody()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewProvisionOnDemandPostRequestBody()
 
 
 synchronizationJobApplicationParameters := graphmodels.NewSynchronizationJobApplicationParameters()
@@ -33,7 +41,7 @@ parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 }
 requestBody.SetParameters(parameters)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(requestBody)
+result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().JobsById("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
 
 
 ```

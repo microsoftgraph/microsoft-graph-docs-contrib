@@ -27,7 +27,7 @@ The following Outlook resources support subscriptions with or without resource d
 
 ## Create a subscription
 
-To [create a subscription](webhooks.md#creating-a-subscription), specify the Outlook resource and the type of changes (creation, update, or deletion) for which you want to receive notifications. See an [example](#example-1-create-a-subscription-to-get-change-notifications-without-resource-data-when-the-user-receives-a-new-message).
+To create a subscription, specify the Outlook resource and the type of changes (creation, update, or deletion) for which you want to receive notifications. See an [example](#example-1-create-a-subscription-to-get-change-notifications-without-resource-data-when-the-user-receives-a-new-message).
 
 ### Request permissions
 
@@ -39,14 +39,14 @@ Depending on the resource, use the least privileged permission specified in the 
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
+|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
 ### Include resource data in notification payload (preview)
 
 > [!NOTE]
 > Notifications with resource data for Outlook resources are currently available only in the Microsoft Graph beta endpoint. 
 
-To have resource data included in a change notification, you **must** specify the following properties, in addition to those you normally include when [creating a subscription](webhooks.md#creating-a-subscription):
+To have resource data included in a change notification, you **must** specify the following properties, in addition to those you normally include when creating a subscription:
 
 - **includeResourceData**: Set this property to `true` to explicitly request resource data.
 - **resource**: This property specifies the resource URL. Make sure to use the `$select` query parameter to explicitly specify the Outlook resource properties to include in the notification payload.
@@ -178,6 +178,8 @@ The next example shows the payload of a notification that corresponds to an Outl
 The following example requests a notification for a message being created in the user's mailbox.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withoutresourcedata_for_message_resource"
@@ -195,6 +197,32 @@ Content-type: application/json
     "clientState": "secretClientState"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-withoutresourcedata-for-message-resource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-withoutresourcedata-for-message-resource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-withoutresourcedata-for-message-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subscription-withoutresourcedata-for-message-resource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-withoutresourcedata-for-message-resource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-subscription-withoutresourcedata-for-message-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -237,6 +265,8 @@ Content-type: application/json
 The following example subscribes to notifications with resource data for a message being created in the user's mailbox. The properties of the **message** resource to be included in the notification payload are specified using the `$select` query parameter.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withresourcedata_for_message_resource"
@@ -257,6 +287,32 @@ Content-type: application/json
     "encryptionCertificateId": "testCertificateId"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-withresourcedata-for-message-resource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-withresourcedata-for-message-resource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-withresourcedata-for-message-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subscription-withresourcedata-for-message-resource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-withresourcedata-for-message-resource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-subscription-withresourcedata-for-message-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -299,6 +355,8 @@ Content-type: application/json
 The following example subscribes to notifications with resource data for a message being created in the Drafts folder, containing one or more attachments, and of high importance.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withresourcedata_for_message_resource_basedonfilter"
@@ -319,6 +377,32 @@ Content-type: application/json
     "encryptionCertificateId": "testCertificateId"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-withresourcedata-for-message-resource-basedonfilter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-withresourcedata-for-message-resource-basedonfilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-withresourcedata-for-message-resource-basedonfilter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subscription-withresourcedata-for-message-resource-basedonfilter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-withresourcedata-for-message-resource-basedonfilter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-subscription-withresourcedata-for-message-resource-basedonfilter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

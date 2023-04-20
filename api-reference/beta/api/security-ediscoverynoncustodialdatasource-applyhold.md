@@ -79,32 +79,26 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/start-ediscoverynoncustialdatasourceapplyhold-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/start-ediscoverynoncustialdatasourceapplyhold-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/start-ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasourceapplyhold-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/start-ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/start-ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.
@@ -133,32 +127,26 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-singlenoncustodial-datastore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverynoncustialdatasourceapplyhold-singlenoncustodial-datastore-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-singlenoncustodial-datastore-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasourceapplyhold-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-singlenoncustodial-datastore-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-singlenoncustodial-datastore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 The following is an example of the response.

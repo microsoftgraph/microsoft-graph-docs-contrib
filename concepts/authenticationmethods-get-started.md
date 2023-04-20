@@ -1,12 +1,15 @@
 ---
-title: "Get started with the Microsoft Graph authentication methods API"
+title: Manage users' authentication methods using Microsoft Graph"
 description: "Learn how to manage your users' authentication methods and get users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
-author: "mmcla"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: michael.mclaughlin
 ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
+ms.date: 10/18/2022
 ---
 
-# Get started with the Microsoft Graph authentication methods API
+# Manage users' authentication methods using Microsoft Graph
 
 [Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD). Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 
@@ -36,7 +39,7 @@ Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#t
 * Privileged authentication administrator
 * Authentication administrator
 
-Next, modify your permissions. We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview) for this tutorial, so make sure it's enabled in Graph Explorer or your app.
+Next, modify your permissions. We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions) for this tutorial, so make sure it's enabled in Graph Explorer or your app.
 
 Once the scope is assigned and consented, you can start using the API. The examples here use a standard user named Avery Howard. You should use a preexisting test account or create a new one following [these instructions](/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user). These APIs are live so don't test them on real users.
 

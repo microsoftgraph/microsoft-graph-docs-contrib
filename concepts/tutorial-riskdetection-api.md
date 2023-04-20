@@ -1,12 +1,15 @@
 ---
-title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
+title: "Identify and remediate risk using Microsoft Graph"
 description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
+ms.date: 11/01/2022
 ---
 
-# Tutorial: Identify and remediate risks using Microsoft Graph APIs
+# Identify and remediate risks using Microsoft Graph
 
 Azure AD Identity Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation. For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
@@ -21,24 +24,8 @@ To successfully complete this tutorial, make sure that you have the required pre
 
 - You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 - This tutorial uses the Tor browser to sign in to the Azure portal anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
-- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
-    1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
-    3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
-
-        ![Set permissions](./images/tutorial-riskdetection-api/set-permissions.png)
-        
-    4. Scroll through the list of permissions to these permissions:
-        - **IdentityRiskEvents (2)**, expand and then select `IdentityRiskEvent.Read.All`
-        - **IdentityRiskyUser (2)**, expand and then select `IdentityRiskyUser.ReadWrite.All`
-        - **Policy (13)**, expand and then select `Policy.Read.All` and `Policy.ReadWrite.ConditionalAccess`
-        - **User (8)**, expand and then select `User.ReadWrite.All`
-        
-        ![Search for permissions](./images/tutorial-riskdetection-api/permissions-consent.png)
-    
-    5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
-
-        ![Accept permissions](./images/tutorial-riskdetection-api/accept-permissions.png)
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+- Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
 ## Step 1: Create a user account
 
@@ -46,6 +33,11 @@ For this tutorial, you create a user account that is used to test risk detection
 
 ### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_user"
+}-->
 ``` http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -62,8 +54,38 @@ Content-type: application/json
 }
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-create-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-create-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-create-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-create-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-create-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
@@ -96,12 +118,47 @@ When you signed in to the Azure portal using the anonymous browser, an `anonymiz
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_get_riskdetections"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-get-riskdetections-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-get-riskdetections-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-get-riskdetections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-get-riskdetections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-get-riskdetections-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-get-riskdetections-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#riskDetections",
@@ -161,6 +218,11 @@ The conditional access policy provides the ability to set the conditions of the 
 
 #### Request 
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies 
 Content-type: application/json
@@ -191,8 +253,38 @@ Content-type: application/json
 } 
 ```
 
-#### Response 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-create-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-create-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-create-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-create-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-create-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
 ```
 { 
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity", 
@@ -256,12 +348,47 @@ Because MFA was completed. Now, when you list risk detections the **riskState** 
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_get_riskdetections_filter"
+}-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-get-riskdetections-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-get-riskdetections-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-get-riskdetections-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-get-riskdetections-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-get-riskdetections-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-get-riskdetections-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
 ```http
 {
   "id": "ba9d45f16d8f87f6ae974efda7336b2120962a398cb362dfd9e5bdc8e9d149d0",
@@ -302,6 +429,11 @@ Instead of providing the opportunity for the user to self-remediate, you can blo
 
 ### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_create_conditionalaccesspolicy"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 Content-type: application/json
@@ -332,8 +464,38 @@ Content-type: application/json
 }
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-create-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-create-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-create-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-create-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-create-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-create-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity",
@@ -384,7 +546,7 @@ Content-type: application/json
 
 With this conditional access policy in place, the **MyTestUser1** account is now blocked from signing in because the sign-in risk level is `medium` or `high`.
 
-![Blocked sign-in](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
+![Blocked sign-in](./images/tutorials-identity/tutorial-risk-detection.conditionalaccess-policy.png)
 
 ## Step 5: Dismiss risky users
 
@@ -394,6 +556,11 @@ If you believe the user is not at risk, and you don’t want to enforce a condit
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_riskyusers.dismiss"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
@@ -405,8 +572,36 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-riskyusersdismiss-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-riskyusersdismiss-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-riskyusersdismiss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-riskyusersdismiss-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-riskyusersdismiss-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-riskyusersdismiss-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```        
@@ -417,12 +612,47 @@ After dismissing the risk user, you can see in the response when listing risky u
 
 #### Request
 
-```http
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_riskyusers.list"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-riskyuserslist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-riskyuserslist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-riskyuserslist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-riskyuserslist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-riskyuserslist-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-riskyuserslist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskyUser"
+} -->
 ```http
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers",
@@ -452,12 +682,45 @@ Delete the **MyTestUser1** user account.
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-delete-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-delete-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-delete-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```
@@ -468,12 +731,45 @@ Delete the conditional access policy that you created.
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial_riskdetection_delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-1445727678a8
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-riskdetection-delete-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-riskdetection-delete-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-riskdetection-delete-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-riskdetection-delete-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-riskdetection-delete-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-riskdetection-delete-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 No Content - 204
 ```

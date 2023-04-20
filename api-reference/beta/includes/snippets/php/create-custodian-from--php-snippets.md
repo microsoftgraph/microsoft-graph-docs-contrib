@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new Custodian();
 $requestBody->setEmail('AdeleV@contoso.com');
 
-$requestBody->setApplyHoldToSources('true');
+$requestBody->setApplyHoldToSources(true);
 
 
 

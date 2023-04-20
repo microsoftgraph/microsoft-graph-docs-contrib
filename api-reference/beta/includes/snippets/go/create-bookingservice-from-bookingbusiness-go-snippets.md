@@ -5,19 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingService()
-"@odata.type" := "#microsoft.graph.bookingService"
-requestBody.Set"@odata.type"(&"@odata.type") 
-defaultDuration := "PT1H30M"
+defaultDuration , err := abstractions.ParseISODuration("PT1H30M")
 requestBody.SetDefaultDuration(&defaultDuration) 
 defaultLocation := graphmodels.NewLocation()
-"@odata.type" := "#microsoft.graph.location"
-defaultLocation.Set"@odata.type"(&"@odata.type") 
 address := graphmodels.NewPhysicalAddress()
-"@odata.type" := "#microsoft.graph.physicalAddress"
-address.Set"@odata.type"(&"@odata.type") 
 city := "Buffalo"
 address.SetCity(&city) 
 countryOrRegion := "USA"
@@ -33,7 +36,7 @@ address.SetStreet(&street)
 type := null
 address.SetType(&type) 
 additionalData := map[string]interface{}{
-	"type@odata.type" : "#microsoft.graph.physicalAddressType", 
+	"odataType" : "#microsoft.graph.physicalAddressType", 
 }
 address.SetAdditionalData(additionalData)
 defaultLocation.SetAddress(address)
@@ -52,8 +55,8 @@ defaultLocation.SetUniqueId(&uniqueId)
 uniqueIdType := null
 defaultLocation.SetUniqueIdType(&uniqueIdType) 
 additionalData := map[string]interface{}{
-	"locationType@odata.type" : "#microsoft.graph.locationType", 
-	"uniqueIdType@odata.type" : "#microsoft.graph.locationUniqueIdType", 
+	"odataType" : "#microsoft.graph.locationType", 
+	"odataType" : "#microsoft.graph.locationUniqueIdType", 
 }
 defaultLocation.SetAdditionalData(additionalData)
 requestBody.SetDefaultLocation(defaultLocation)
@@ -64,16 +67,14 @@ requestBody.SetDefaultPriceType(&defaultPriceType)
 
 
 bookingReminder := graphmodels.NewBookingReminder()
-"@odata.type" := "#microsoft.graph.bookingReminder"
-bookingReminder.Set"@odata.type"(&"@odata.type") 
 message := "Please be reminded that this service is tomorrow."
 bookingReminder.SetMessage(&message) 
-offset := "P1D"
+offset , err := abstractions.ParseISODuration("P1D")
 bookingReminder.SetOffset(&offset) 
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
+	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder.SetAdditionalData(additionalData)
 
@@ -96,22 +97,20 @@ isHiddenFromCustomers := false
 requestBody.SetIsHiddenFromCustomers(&isHiddenFromCustomers) 
 notes := "Home-cooked special"
 requestBody.SetNotes(&notes) 
-postBuffer := "PT10M"
+postBuffer , err := abstractions.ParseISODuration("PT10M")
 requestBody.SetPostBuffer(&postBuffer) 
-preBuffer := "PT5M"
+preBuffer , err := abstractions.ParseISODuration("PT5M")
 requestBody.SetPreBuffer(&preBuffer) 
 schedulingPolicy := graphmodels.NewBookingSchedulingPolicy()
-"@odata.type" := "#microsoft.graph.bookingSchedulingPolicy"
-schedulingPolicy.Set"@odata.type"(&"@odata.type") 
 allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection) 
-maximumAdvance := "P10D"
+maximumAdvance , err := abstractions.ParseISODuration("P10D")
 schedulingPolicy.SetMaximumAdvance(&maximumAdvance) 
-minimumLeadTime := "PT10H"
+minimumLeadTime , err := abstractions.ParseISODuration("PT10H")
 schedulingPolicy.SetMinimumLeadTime(&minimumLeadTime) 
 sendConfirmationsToOwner := true
 schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner) 
-timeSlotInterval := "PT1H"
+timeSlotInterval , err := abstractions.ParseISODuration("PT1H")
 schedulingPolicy.SetTimeSlotInterval(&timeSlotInterval) 
 requestBody.SetSchedulingPolicy(schedulingPolicy)
 staffMemberIds := []string {
@@ -123,13 +122,13 @@ requestBody.SetStaffMemberIds(staffMemberIds)
 isAnonymousJoinEnabled := false
 requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled) 
 additionalData := map[string]interface{}{
-	"defaultPriceType@odata.type" : "#microsoft.graph.bookingPriceType", 
-	"defaultReminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
-	"staffMemberIds@odata.type" : "#Collection(String)", 
+	"odataType" : "#microsoft.graph.bookingPriceType", 
+	"odataType" : "#Collection(microsoft.graph.bookingReminder)", 
+	"odataType" : "#Collection(String)", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").Services().Post(requestBody)
+result, err := graphClient.BookingBusinessesById("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
 
 
 ```

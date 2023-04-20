@@ -2,7 +2,7 @@
 title: "Create calendarPermission"
 description: "Create the calendarpermission object."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -74,7 +74,6 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- { 
   "blockType": "request",
-  "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
   "name": "create_calendarpermissions"
 }-->
 

@@ -89,7 +89,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "Policy.ReadWrite.MobilityManagement",
                     "ChangeType": "Addition",
-                    "Description": "Added new [Policy.ReadWrite.MobilityManagement](https://docs.microsoft.com/en-us/graph/permissions-reference#policy-permissions) delegated permission for policy APIs.",
+                    "Description": "Added new [Policy.ReadWrite.MobilityManagement](https://learn.microsoft.com/en-us/graph/permissions-reference#policy-permissions) delegated permission for policy APIs.",
                     "Target": "policyRoot"
                 }
             ],
