@@ -8294,9 +8294,7 @@ items:
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
           - name: Obliteration behavior
-            href: resources/intune-devices-obliterationbehavior.md
-          - name: Oem warranty
-            href: resources/intune-devices-oemwarranty.md
+            href: resources/intune-devices-obliterationbehavior.md          
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
