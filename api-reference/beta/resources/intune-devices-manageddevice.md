@@ -1,7 +1,7 @@
 ---
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -61,7 +61,6 @@ Devices that are managed or pre-enrolled through Intune
 |[initiateMobileDeviceManagementKeyRecovery action](../api/intune-devices-manageddevice-initiatemobiledevicemanagementkeyrecovery.md)|None|Perform MDM key recovery and TPM attestation|
 |[initiateOnDemandProactiveRemediation action](../api/intune-devices-manageddevice-initiateondemandproactiveremediation.md)|None|Perform On Demand Proactive Remediation|
 |[rotateLocalAdminPassword action](../api/intune-devices-manageddevice-rotatelocaladminpassword.md)|None|Initiates a manual rotation for the local admin password on the device|
-|[getOemWarranty function](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Not yet documented|
 |[appDiagnostics function](../api/intune-devices-manageddevice-appdiagnostics.md)|[powerliftIncidentMetadata](../resources/intune-devices-powerliftincidentmetadata.md) collection|Not yet documented|
 |[downloadAppDiagnostics action](../api/intune-devices-manageddevice-downloadappdiagnostics.md)|Stream|Not yet documented|
 
@@ -143,7 +142,7 @@ Devices that are managed or pre-enrolled through Intune
 |specificationVersion|String|Specification version. This property is read-only.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family|
-|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
+|skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter.|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
@@ -384,7 +383,3 @@ Here is a JSON representation of the resource.
   "deviceFirmwareConfigurationInterfaceManaged": true
 }
 ```
-
-
-
-

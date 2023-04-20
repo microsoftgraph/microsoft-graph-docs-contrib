@@ -1,7 +1,7 @@
 ---
 title: "payloadByFilter resource type"
 description: "This entity represents a single payload with requested assignment filter Id"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,7 +44,3 @@ Here is a JSON representation of the resource.
   "assignmentFilterType": "String"
 }
 ```
-
-
-
-

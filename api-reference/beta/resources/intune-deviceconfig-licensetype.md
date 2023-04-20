@@ -1,7 +1,7 @@
 ---
 title: "licenseType enum type"
 description: "Indicates whether tenant has a valid Intune Endpoint Privilege Management license. Possible value are : 0 - notPaid, 1 - paid, 2 - trial. See LicenseType enum for more details. Default notPaid ."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,7 +24,3 @@ Indicates whether tenant has a valid Intune Endpoint Privilege Management licens
 |paid|1|Indicates the tenant has paid Endpoint Privilege Management license.|
 |trial|2|Indicates the tenant has trial Endpoint Privilege Management license.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntentCustomizedSetting resource type"
 description: "Default and customized value of a setting in a Security Baseline"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,7 +42,3 @@ Here is a JSON representation of the resource.
   "customizedJson": "String"
 }
 ```
-
-
-
-

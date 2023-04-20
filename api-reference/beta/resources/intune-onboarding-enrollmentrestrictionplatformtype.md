@@ -1,7 +1,7 @@
 ---
 title: "enrollmentRestrictionPlatformType enum type"
 description: "This enum indicates the platform type for which the enrollment restriction applies."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -29,7 +29,3 @@ This enum indicates the platform type for which the enrollment restriction appli
 |mac|7|Indicates that the enrollment configuration applies only to macOS devices|
 |linux|8|Indicates that the enrollment configuration applies only to Linux devices|
 |unknownFutureValue|9|Evolvable enumeration sentinel value. Do not use|
-
-
-
-

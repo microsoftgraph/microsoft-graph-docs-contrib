@@ -1,7 +1,7 @@
 ---
 title: "deviceEnrollmentNotificationConfiguration resource type"
 description: "Enrollment Notification Configuration which is used to send notification"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -85,7 +85,3 @@ Here is a JSON representation of the resource.
   "defaultLocale": "String"
 }
 ```
-
-
-
-

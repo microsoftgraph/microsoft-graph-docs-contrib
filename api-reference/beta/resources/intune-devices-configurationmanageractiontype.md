@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerActionType enum type"
 description: "Action type on Configuration Manager client"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,7 +27,3 @@ Action type on Configuration Manager client
 |quickScan|5|Evaluation application policy on Configuration Manager client|
 |fullScan|6|Evaluation application policy on Configuration Manager client|
 |windowsDefenderUpdateSignatures|7|Evaluation application policy on Configuration Manager client|
-
-
-
-

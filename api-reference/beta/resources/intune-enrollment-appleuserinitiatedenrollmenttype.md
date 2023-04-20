@@ -1,7 +1,7 @@
 ---
 title: "appleUserInitiatedEnrollmentType enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,7 +26,3 @@ Not yet documented
 |accountDrivenUserEnrollment|3|Account-driven user enrollment. Users will enroll from the iOS Settings app without using the iOS Company Portal. This enrollment type segregates corporate and personal data. Supported on devices running iOS/iPadOS 15 and higher.|
 |webDeviceEnrollment|4|Device enrollment via the web. Users will enroll without using the iOS Company Portal. This enrollment type does not segregate corporate and personal data. Supported on all Intune-supported iOS/iPadOS versions.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-

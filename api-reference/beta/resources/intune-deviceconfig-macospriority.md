@@ -1,7 +1,7 @@
 ---
 title: "macOSPriority enum type"
 description: "The scheduling priority options for downloading and preparing the requested mac OS update"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ The scheduling priority options for downloading and preparing the requested mac 
 |low|0|Indicates low scheduling priority for downloading and preparing the requested update|
 |high|1|Indicates high scheduling priority for downloading and preparing the requested update|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-

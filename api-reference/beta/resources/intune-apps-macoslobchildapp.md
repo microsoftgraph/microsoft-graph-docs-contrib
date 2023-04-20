@@ -1,7 +1,7 @@
 ---
 title: "macOSLobChildApp resource type"
 description: "Contains properties of a macOS .app in the package"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,7 +42,3 @@ Here is a JSON representation of the resource.
   "versionNumber": "String"
 }
 ```
-
-
-
-

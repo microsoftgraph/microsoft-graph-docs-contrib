@@ -1,7 +1,7 @@
 ---
 title: "createRemoteHelpSessionResponse resource type"
 description: "Remote help - response we provide back to the helper after successfully creating an ACS session"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -50,7 +50,3 @@ Here is a JSON representation of the resource.
   "sessionType": "String"
 }
 ```
-
-
-
-

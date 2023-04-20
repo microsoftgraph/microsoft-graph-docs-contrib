@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -32,7 +32,3 @@ Describes which technology this setting can be deployed with
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
 |unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-

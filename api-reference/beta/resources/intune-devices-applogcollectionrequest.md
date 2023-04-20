@@ -1,7 +1,7 @@
 ---
 title: "appLogCollectionRequest resource type"
 description: "Entity for AppLogCollectionRequest contains all logs values."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -59,7 +59,3 @@ Here is a JSON representation of the resource.
   "completedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-

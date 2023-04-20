@@ -1,7 +1,7 @@
 ---
 title: "dataProcessorServiceForWindowsFeaturesOnboarding resource type"
 description: "A configuration entity for MEM features that utilize Data Processor Service for Windows (DPSW) data."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,7 +40,3 @@ Here is a JSON representation of the resource.
   "areDataProcessorServiceForWindowsFeaturesEnabled": true
 }
 ```
-
-
-
-

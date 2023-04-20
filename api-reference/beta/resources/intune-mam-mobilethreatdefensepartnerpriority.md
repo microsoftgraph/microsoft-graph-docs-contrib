@@ -1,7 +1,7 @@
 ---
 title: "mobileThreatDefensePartnerPriority enum type"
 description: "Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,7 +23,3 @@ Determines the conflict resolution strategy, when more than one Mobile Threat De
 |defenderOverThirdPartyPartner|0|Indicates use of Microsoft Defender Endpoint over 3rd party MTD connectors|
 |thirdPartyPartnerOverDefender|1|Indicates use of a 3rd party MTD connector over Microsoft Defender Endpoint|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
