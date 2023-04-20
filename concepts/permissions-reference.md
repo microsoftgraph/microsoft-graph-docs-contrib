@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 02/17/2022
+ms.date: 04/12/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -718,6 +718,36 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
 | _CustomSecAttributeDefinition.Read.All_ | Read custom security attribute definitions | Allows the app to read custom security attribute definitions for the tenant without a signed in user. | Yes |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Yes |
+
+---
+
+## Device local credential permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DeviceLocalCredential.ReadBasic.All_ | Read basic device local credential information | Allows the app to read device local credential properties excluding passwords, on behalf of the signed-in user. | Yes | No |
+| _DeviceLocalCredential.Read.All_ | Read device local credential information | Allows the app to read device local credential properties including passwords, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DeviceLocalCredential.ReadBasic.All_ | Read basic device local credential information | Allows the app to read device local credential properties excluding passwords. | Yes | No |
+| _DeviceLocalCredential.Read.All_ | Read device local credential information | Allows the app to read device local credential properties including passwords. | Yes | No |
+
+### Example usage
+
+#### Delegated
+
+* DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials`).
+
+#### Application
+
+* DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials`).
 
 ---
 

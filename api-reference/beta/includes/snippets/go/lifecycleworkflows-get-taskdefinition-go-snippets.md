@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().TaskDefinitionsById("taskDefinition-id").Get(context.Background(), nil)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().TaskDefinitions().ByTaskDefinitionId("taskDefinition-id").Get(context.Background(), nil)
 
 
 ```

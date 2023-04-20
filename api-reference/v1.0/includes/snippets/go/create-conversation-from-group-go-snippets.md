@@ -58,7 +58,7 @@ threads := []graphmodels.ConversationThreadable {
 }
 requestBody.SetThreads(threads)
 
-result, err := graphClient.GroupsById("group-id").Conversations().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Conversations().Post(context.Background(), requestBody, nil)
 
 
 ```

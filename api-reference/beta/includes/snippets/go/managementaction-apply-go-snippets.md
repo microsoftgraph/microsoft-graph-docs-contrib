@@ -23,7 +23,7 @@ requestBody.SetTenantGroupId(&tenantGroupId)
 managementTemplateId := "String"
 requestBody.SetManagementTemplateId(&managementTemplateId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById("managementAction-id").ManagedTenantsApply().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActions().ByManagementActionId("managementAction-id").ManagedTenantsApply().Post(context.Background(), requestBody, nil)
 
 
 ```

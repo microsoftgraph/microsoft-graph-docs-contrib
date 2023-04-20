@@ -141,7 +141,7 @@ requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").StaffMembers().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").StaffMembers().Post(context.Background(), requestBody, nil)
 
 
 ```
