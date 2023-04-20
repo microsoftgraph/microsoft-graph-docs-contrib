@@ -177,7 +177,11 @@ Content-Type: application/json
 #### Request
 The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationcombinations"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/combinations
 ```

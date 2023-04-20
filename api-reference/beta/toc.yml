@@ -1578,8 +1578,8 @@ items:
           href: api/subscription-update.md
         - name: Delete
           href: api/subscription-delete.md
-      - name: Change notification collection
-        href: resources/changenotificationcollection.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -12481,23 +12481,55 @@ items:
             - name: List
               href: api/accessreviewset-list-historydefinitions.md
             - name: Create
-              href: api/authenticationstrengthroot-post-policies.md
-            - name: Get
-              href: api/authenticationstrengthpolicy-get.md
-            - name: Update
-              href: api/authenticationstrengthpolicy-update.md
-            - name: Delete
-              href: api/authenticationstrengthroot-delete-policies.md
-            - name: Find by method mode (deprecated)
-              href: api/authenticationstrengthpolicy-findbymethodmode.md
-            - name: List usage
-              href: api/authenticationstrengthpolicy-usage.md
-          - name: Authentication combination configurations
+              href: api/accessreviewset-post-historydefinitions.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items:
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                displayName: Downloadable access review history report
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
+        - name: Access reviews (deprecated)
+          href: resources/accessreviews-root.md
+          items:
+          - name: Access review
+            href: resources/accessreview.md
             items:
-            - name: Authentication combination configuration
-              href: resources/authenticationcombinationconfiguration.md
-            - name: FIDO2 combination configuration
-              href: resources/fido2combinationconfiguration.md
+            - name: List access reviews
+              href: api/accessreview-list.md
+            - name: Get access review
+              href: api/accessreview-get.md
+            - name: Create access review
+              href: api/accessreview-create.md
+            - name: Update access review
+              href: api/accessreview-update.md
+            - name: Delete access review
+              href: api/accessreview-delete.md
+            - name: Add reviewer
+              href: api/accessreview-addreviewer.md
+            - name: List decisions
+              href: api/accessreview-listdecisions.md
+            - name: List my decisions
+              href: api/accessreview-listmydecisions.md
+            - name: List reviewers
+              href: api/accessreview-listreviewers.md
+            - name: Remove reviewer
+              href: api/accessreview-removereviewer.md
+            - name: Reset
+              href: api/accessreview-reset.md
+            - name: Send reminder
+              href: api/accessreview-sendreminder.md
+            - name: Stop
+              href: api/accessreview-stop.md
+          - name: Business flow template
+            href: resources/businessflowtemplate.md
+            items:
+            - name: List
+              href: api/businessflowtemplate-list.md
+          - name: Program
+            href: resources/program.md
+            items:
             - name: Create
               href: api/program-create.md
             - name: Delete
@@ -12514,11 +12546,11 @@ items:
             - name: Create
               href: api/programcontrol-create.md
             - name: Delete
-              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
-            - name: Update allowed combinations 
-              href: api/authenticationstrengthpolicy-updateallowedcombinations.md
-          - name: Authentication method modes
-            href: resources/authenticationmethodmodedetail.md
+              href: api/programcontrol-delete.md
+            - name: List
+              href: api/programcontrol-list.md
+          - name: Program control type
+            href: resources/programcontroltype.md
             items:
             - name: List
               href: api/programcontroltype-list.md
@@ -17181,6 +17213,19 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
+        - name: Learning course activities (preview)
+          href: resources/learningcourseactivity.md
+          items:
+          - name: List
+            href: api/learningcourseactivity-list.md
+          - name: Create
+            href: api/employeeexperienceuser-post-learningcourseactivities.md
+          - name: Get
+            href: api/learningcourseactivity-get.md
+          - name: Update
+            href: api/learningcourseactivity-update.md
+          - name: Delete
+            href: api/learningcourseactivity-delete.md
       - name: Messaging
         items:
         - name: Activity feed
