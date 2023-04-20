@@ -49,7 +49,7 @@ Returns `202 Accepted` response code and a Location header with a uri to the [co
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
