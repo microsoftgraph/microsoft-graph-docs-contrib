@@ -7,7 +7,7 @@ ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 03/23/2023
+ms.date: 04/20/2023
 ---
 
 # Set up notifications for changes in resource data
@@ -44,6 +44,7 @@ Microsoft Graph can deliver change notifications to clients via the following ch
 
 - Webhooks. For more information, see [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
 - Azure Event Hubs. For more information, see [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
+- Azure Event Grid (preview). For more information, see [Receive change notification through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
 
 ## Subscription lifetime
 
@@ -63,6 +64,7 @@ For more information about managing subscriptions for the different delivery cha
 
 - [Receive change notification through webhooks](./change-notifications-delivery-webhooks.md).
 - [Receive change notification through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
+- [Receive change notification through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext) (preview).
 
 ## Code samples
 
