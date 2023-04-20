@@ -16500,6 +16500,10 @@ items:
               href: api/webpart-list.md
             - name: Get 
               href: api/webpart-get.md
+            - name: Create 
+              href: api/webpart-create.md
+            - name: Delete 
+              href: api/webpart-delete.md
             - name: Get position
               href: api/webpart-getposition.md
             - name: Get by position
