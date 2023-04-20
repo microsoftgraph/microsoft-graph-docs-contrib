@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDeviceScope"
 description: "Create a new userExperienceAnalyticsDeviceScope object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

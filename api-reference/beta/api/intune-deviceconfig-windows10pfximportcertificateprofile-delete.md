@@ -3,7 +3,7 @@ title: "Delete windows10PFXImportCertificateProfile"
 description: "Deletes a windows10PFXImportCertificateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceManagementIntentDeviceState resource type"
 description: "Entity that represents device state for an intent"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete roleAssignment"
 description: "Deletes a roleAssignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

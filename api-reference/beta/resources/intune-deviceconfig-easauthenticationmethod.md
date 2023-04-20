@@ -3,7 +3,7 @@ title: "easAuthenticationMethod enum type"
 description: "Exchange Active Sync authentication method."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

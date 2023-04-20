@@ -3,7 +3,7 @@ title: "androidManagedStoreAutoUpdateMode enum type"
 description: "Prioritization for automatic updates of Android Managed Store apps set on assignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

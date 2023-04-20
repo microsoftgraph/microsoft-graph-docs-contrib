@@ -3,7 +3,7 @@ title: "vpnServiceExceptionAction enum type"
 description: "The VPN action to take for a specific service."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

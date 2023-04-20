@@ -3,7 +3,7 @@ title: "payloadByFilter resource type"
 description: "This entity represents a single payload with requested assignment filter Id"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

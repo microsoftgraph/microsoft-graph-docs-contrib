@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDeviceScores resource type"
 description: "The user experience analytics device scores entity consolidates the various endpoint analytics scores."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

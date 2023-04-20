@@ -3,7 +3,7 @@ title: "Delete configManagerCollection"
 description: "Deletes a configManagerCollection."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

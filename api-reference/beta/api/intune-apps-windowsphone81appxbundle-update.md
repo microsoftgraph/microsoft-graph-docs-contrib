@@ -3,7 +3,7 @@ title: "Update windowsPhone81AppXBundle"
 description: "Update the properties of a windowsPhone81AppXBundle object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

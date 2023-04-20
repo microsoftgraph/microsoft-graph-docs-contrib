@@ -3,7 +3,7 @@ title: "Delete androidDeviceOwnerDerivedCredentialAuthenticationConfiguration"
 description: "Deletes a androidDeviceOwnerDerivedCredentialAuthenticationConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

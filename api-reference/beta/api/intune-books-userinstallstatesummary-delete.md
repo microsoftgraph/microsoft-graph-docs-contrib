@@ -3,7 +3,7 @@ title: "Delete userInstallStateSummary"
 description: "Deletes a userInstallStateSummary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

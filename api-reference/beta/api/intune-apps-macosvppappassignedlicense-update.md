@@ -3,7 +3,7 @@ title: "Update macOsVppAppAssignedLicense"
 description: "Update the properties of a macOsVppAppAssignedLicense object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

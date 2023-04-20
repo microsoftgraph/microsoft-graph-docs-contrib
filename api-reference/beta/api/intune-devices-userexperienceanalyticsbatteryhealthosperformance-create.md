@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsBatteryHealthOsPerformance"
 description: "Create a new userExperienceAnalyticsBatteryHealthOsPerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

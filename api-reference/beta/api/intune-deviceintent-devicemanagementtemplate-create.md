@@ -3,7 +3,7 @@ title: "Create deviceManagementTemplate"
 description: "Create a new deviceManagementTemplate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

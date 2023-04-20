@@ -3,7 +3,7 @@ title: "Delete officeSuiteApp"
 description: "Deletes a officeSuiteApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

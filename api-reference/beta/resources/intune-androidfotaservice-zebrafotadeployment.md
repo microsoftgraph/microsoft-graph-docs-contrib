@@ -3,7 +3,7 @@ title: "zebraFotaDeployment resource type"
 description: "The Zebra FOTA deployment entity that describes settings, deployment device groups required to create a FOTA deployment, and deployment status."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

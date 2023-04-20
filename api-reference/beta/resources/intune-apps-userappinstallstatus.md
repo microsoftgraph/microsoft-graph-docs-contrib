@@ -3,7 +3,7 @@ title: "userAppInstallStatus resource type"
 description: "Contains properties for the installation status for a user. This will be deprecated in May, 2023"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

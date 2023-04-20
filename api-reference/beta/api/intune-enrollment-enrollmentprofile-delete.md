@@ -3,7 +3,7 @@ title: "Delete enrollmentProfile"
 description: "Deletes a enrollmentProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

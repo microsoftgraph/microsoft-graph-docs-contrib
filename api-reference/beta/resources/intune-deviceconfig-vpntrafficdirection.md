@@ -3,7 +3,7 @@ title: "vpnTrafficDirection enum type"
 description: "Specify whether the rule applies to inbound traffic or outbound traffic."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

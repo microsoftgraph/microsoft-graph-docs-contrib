@@ -3,7 +3,7 @@ title: "Delete windowsInformationProtectionAppLockerFile"
 description: "Deletes a windowsInformationProtectionAppLockerFile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

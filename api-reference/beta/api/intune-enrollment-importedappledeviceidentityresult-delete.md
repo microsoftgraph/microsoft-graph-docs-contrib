@@ -3,7 +3,7 @@ title: "Delete importedAppleDeviceIdentityResult"
 description: "Deletes a importedAppleDeviceIdentityResult."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceAndAppManagementAssignmentTarget resource type"
 description: "Base type for assignment targets."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

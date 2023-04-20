@@ -3,7 +3,7 @@ title: "Get microsoftTunnelHealthThreshold"
 description: "Read properties and relationships of the microsoftTunnelHealthThreshold object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "identitySet resource type"
 description: "The Identity Set"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

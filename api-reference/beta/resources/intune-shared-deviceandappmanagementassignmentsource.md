@@ -3,7 +3,7 @@ title: "deviceAndAppManagementAssignmentSource enum type"
 description: "Represents source of assignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

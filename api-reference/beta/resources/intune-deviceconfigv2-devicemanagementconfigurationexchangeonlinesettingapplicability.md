@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationExchangeOnlineSettingApplicability resource
 description: "Applicability for an Exchange Online Setting"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

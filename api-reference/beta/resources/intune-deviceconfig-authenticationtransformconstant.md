@@ -3,7 +3,7 @@ title: "authenticationTransformConstant enum type"
 description: "Authentication transform values for Windows10 VPN policies with IKEv2 connection type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

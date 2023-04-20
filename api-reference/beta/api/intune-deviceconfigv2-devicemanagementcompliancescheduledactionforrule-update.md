@@ -3,7 +3,7 @@ title: "Update deviceManagementComplianceScheduledActionForRule"
 description: "Update the properties of a deviceManagementComplianceScheduledActionForRule object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

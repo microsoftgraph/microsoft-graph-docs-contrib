@@ -3,7 +3,7 @@ title: "Create hardwareConfigurationAssignment"
 description: "Create a new hardwareConfigurationAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

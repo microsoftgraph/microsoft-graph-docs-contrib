@@ -3,7 +3,7 @@ title: "androidManagedStoreAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android application's custom configuration schema."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

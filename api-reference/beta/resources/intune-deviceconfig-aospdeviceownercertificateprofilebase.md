@@ -3,7 +3,7 @@ title: "aospDeviceOwnerCertificateProfileBase resource type"
 description: "AOSP Device Owner certificate profile base."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

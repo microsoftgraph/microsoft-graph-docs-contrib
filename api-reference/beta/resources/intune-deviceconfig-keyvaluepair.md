@@ -3,7 +3,7 @@ title: "keyValuePair resource type"
 description: "Key value pair for storing custom settings"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

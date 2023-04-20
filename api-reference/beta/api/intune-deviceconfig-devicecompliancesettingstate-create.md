@@ -3,7 +3,7 @@ title: "Create deviceComplianceSettingState"
 description: "Create a new deviceComplianceSettingState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

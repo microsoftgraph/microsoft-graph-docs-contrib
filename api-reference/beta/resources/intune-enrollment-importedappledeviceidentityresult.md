@@ -3,7 +3,7 @@ title: "importedAppleDeviceIdentityResult resource type"
 description: "The importedAppleDeviceIdentityResult resource represents the result of attempting to import Apple devices identities."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

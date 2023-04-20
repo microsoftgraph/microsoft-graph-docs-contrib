@@ -3,7 +3,7 @@ title: "microsoftTunnelHealthThreshold resource type"
 description: "Entity that represents the health thresholds of a health metric"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

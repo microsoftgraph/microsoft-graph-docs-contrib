@@ -3,7 +3,7 @@ title: "Delete userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Deletes a userExperienceAnalyticsAppHealthDevicePerformanceDetails."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

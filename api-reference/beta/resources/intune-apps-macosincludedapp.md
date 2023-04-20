@@ -3,7 +3,7 @@ title: "macOSIncludedApp resource type"
 description: "Contains properties of an included .app in a MacOS app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

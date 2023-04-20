@@ -3,7 +3,7 @@ title: "win32LobAppDeliveryOptimizationPriority enum type"
 description: "Contains value for delivery optimization priority."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

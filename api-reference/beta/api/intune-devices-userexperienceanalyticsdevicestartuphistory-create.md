@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDeviceStartupHistory"
 description: "Create a new userExperienceAnalyticsDeviceStartupHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

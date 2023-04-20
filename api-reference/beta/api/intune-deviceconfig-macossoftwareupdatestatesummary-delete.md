@@ -3,7 +3,7 @@ title: "Delete macOSSoftwareUpdateStateSummary"
 description: "Deletes a macOSSoftwareUpdateStateSummary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

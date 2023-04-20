@@ -3,7 +3,7 @@ title: "wiFiSecurityType enum type"
 description: "Wi-Fi Security Types."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

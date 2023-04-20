@@ -3,7 +3,7 @@ title: "Delete macOSWiFiConfiguration"
 description: "Deletes a macOSWiFiConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

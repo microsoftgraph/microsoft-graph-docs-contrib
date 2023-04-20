@@ -3,7 +3,7 @@ title: "zebraFotaConnector resource type"
 description: "The Zebra FOTA connector entity that represents the tenant's authorization status for Intune to call Zebra Update Services."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

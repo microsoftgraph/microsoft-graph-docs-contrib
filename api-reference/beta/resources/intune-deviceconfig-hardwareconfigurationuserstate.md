@@ -3,7 +3,7 @@ title: "hardwareConfigurationUserState resource type"
 description: "Contains properties for User state of the hardware configuration"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

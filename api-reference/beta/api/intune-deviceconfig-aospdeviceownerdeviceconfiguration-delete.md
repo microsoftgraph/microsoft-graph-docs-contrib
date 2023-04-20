@@ -3,7 +3,7 @@ title: "Delete aospDeviceOwnerDeviceConfiguration"
 description: "Deletes a aospDeviceOwnerDeviceConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

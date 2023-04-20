@@ -3,7 +3,7 @@ title: "Create macOsVppAppAssignedLicense"
 description: "Create a new macOsVppAppAssignedLicense object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

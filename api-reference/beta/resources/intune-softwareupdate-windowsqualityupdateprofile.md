@@ -3,7 +3,7 @@ title: "windowsQualityUpdateProfile resource type"
 description: "Windows Quality Update Profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

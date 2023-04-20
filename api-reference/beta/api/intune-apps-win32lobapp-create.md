@@ -3,7 +3,7 @@ title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

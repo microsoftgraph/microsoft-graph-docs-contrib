@@ -3,7 +3,7 @@ title: "operationApprovalRequestStatus enum type"
 description: "Status of the current Approval Request"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

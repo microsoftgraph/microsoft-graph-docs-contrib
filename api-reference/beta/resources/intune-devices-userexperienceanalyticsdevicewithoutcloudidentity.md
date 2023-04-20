@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDeviceWithoutCloudIdentity resource type"
 description: "The user experience analytics Device without Cloud Identity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

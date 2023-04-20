@@ -3,7 +3,7 @@ title: "Delete windowsPhone81StoreApp"
 description: "Deletes a windowsPhone81StoreApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

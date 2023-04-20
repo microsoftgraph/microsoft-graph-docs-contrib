@@ -3,7 +3,7 @@ title: "Delete telecomExpenseManagementPartner"
 description: "Deletes a telecomExpenseManagementPartner."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "windowsInformationProtectionAppLearningSummary resource type"
 description: "Windows Information Protection AppLearning Summary entity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

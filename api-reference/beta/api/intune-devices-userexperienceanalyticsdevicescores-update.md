@@ -3,7 +3,7 @@ title: "Update userExperienceAnalyticsDeviceScores"
 description: "Update the properties of a userExperienceAnalyticsDeviceScores object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

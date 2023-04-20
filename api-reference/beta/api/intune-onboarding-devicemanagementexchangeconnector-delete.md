@@ -3,7 +3,7 @@ title: "Delete deviceManagementExchangeConnector"
 description: "Deletes a deviceManagementExchangeConnector."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

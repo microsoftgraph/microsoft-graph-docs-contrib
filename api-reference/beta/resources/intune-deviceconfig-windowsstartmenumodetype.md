@@ -3,7 +3,7 @@ title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

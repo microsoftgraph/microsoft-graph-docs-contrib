@@ -3,7 +3,7 @@ title: "Delete groupPolicyPresentationValueDecimal"
 description: "Deletes a groupPolicyPresentationValueDecimal."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

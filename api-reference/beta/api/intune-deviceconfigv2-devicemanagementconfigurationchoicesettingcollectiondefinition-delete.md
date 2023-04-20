@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationChoiceSettingCollectionDefinition"
 description: "Deletes a deviceManagementConfigurationChoiceSettingCollectionDefinition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

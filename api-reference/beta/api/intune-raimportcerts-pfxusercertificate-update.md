@@ -3,7 +3,7 @@ title: "Update pfxUserCertificate"
 description: "Update the properties of a pfxUserCertificate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

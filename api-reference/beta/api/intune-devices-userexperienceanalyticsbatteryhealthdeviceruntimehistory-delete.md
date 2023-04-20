@@ -3,7 +3,7 @@ title: "Delete userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory"
 description: "Deletes a userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

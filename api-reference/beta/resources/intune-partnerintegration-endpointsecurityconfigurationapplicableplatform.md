@@ -3,7 +3,7 @@ title: "endpointSecurityConfigurationApplicablePlatform enum type"
 description: "The endpoint security configuration applicable platform."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "windowsStartMenuAppListVisibilityType enum type"
 description: "Type of start menu app list visibility."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

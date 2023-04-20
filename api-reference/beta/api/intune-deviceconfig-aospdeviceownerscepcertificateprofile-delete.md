@@ -3,7 +3,7 @@ title: "Delete aospDeviceOwnerScepCertificateProfile"
 description: "Deletes a aospDeviceOwnerScepCertificateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

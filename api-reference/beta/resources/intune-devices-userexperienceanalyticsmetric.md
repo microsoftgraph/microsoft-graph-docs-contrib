@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsMetric resource type"
 description: "The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

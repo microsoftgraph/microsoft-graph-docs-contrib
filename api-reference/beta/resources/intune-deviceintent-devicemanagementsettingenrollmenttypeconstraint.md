@@ -3,7 +3,7 @@ title: "deviceManagementSettingEnrollmentTypeConstraint resource type"
 description: "Constraint that enforces the enrollment types applied to a setting"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

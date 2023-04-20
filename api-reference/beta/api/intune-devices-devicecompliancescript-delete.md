@@ -3,7 +3,7 @@ title: "Delete deviceComplianceScript"
 description: "Deletes a deviceComplianceScript."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

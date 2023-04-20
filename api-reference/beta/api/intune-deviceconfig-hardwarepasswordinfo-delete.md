@@ -3,7 +3,7 @@ title: "Delete hardwarePasswordInfo"
 description: "Deletes a hardwarePasswordInfo."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

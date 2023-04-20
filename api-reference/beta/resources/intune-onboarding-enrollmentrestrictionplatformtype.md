@@ -3,7 +3,7 @@ title: "enrollmentRestrictionPlatformType enum type"
 description: "This enum indicates the platform type for which the enrollment restriction applies."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

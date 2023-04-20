@@ -3,7 +3,7 @@ title: "Delete androidDeviceOwnerCompliancePolicy"
 description: "Deletes a androidDeviceOwnerCompliancePolicy."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

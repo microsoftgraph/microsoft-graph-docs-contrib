@@ -3,7 +3,7 @@ title: "Delete userExperienceAnalyticsBatteryHealthOsPerformance"
 description: "Deletes a userExperienceAnalyticsBatteryHealthOsPerformance."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

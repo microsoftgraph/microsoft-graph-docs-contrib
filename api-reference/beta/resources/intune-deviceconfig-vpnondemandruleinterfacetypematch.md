@@ -3,7 +3,7 @@ title: "vpnOnDemandRuleInterfaceTypeMatch enum type"
 description: "VPN On-Demand Rule Connection network interface type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

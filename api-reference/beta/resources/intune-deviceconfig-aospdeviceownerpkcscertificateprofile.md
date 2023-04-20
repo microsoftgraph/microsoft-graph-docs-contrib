@@ -3,7 +3,7 @@ title: "aospDeviceOwnerPkcsCertificateProfile resource type"
 description: "AOSP Device Owner PKCS certificate profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId resou
 description: "The user experience analytics application performance entity contains app performance by app version device id."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

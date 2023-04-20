@@ -3,7 +3,7 @@ title: "Create iosiPadOSWebClip"
 description: "Create a new iosiPadOSWebClip object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

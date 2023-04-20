@@ -3,7 +3,7 @@ title: "Delete userExperienceAnalyticsAnomalyDevice"
 description: "Deletes a userExperienceAnalyticsAnomalyDevice."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

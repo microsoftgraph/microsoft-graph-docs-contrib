@@ -3,7 +3,7 @@ title: "deviceManagementCertificationAuthority enum type"
 description: "Device Management Certification Authority Types."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationPolicyPolicySetItem"
 description: "Deletes a deviceManagementConfigurationPolicyPolicySetItem."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

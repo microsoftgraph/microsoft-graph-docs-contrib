@@ -3,7 +3,7 @@ title: "deviceCompliancePolicyPolicySetItem resource type"
 description: "A class containing the properties used for device compliance policy PolicySetItem."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

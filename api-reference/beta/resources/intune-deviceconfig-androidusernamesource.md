@@ -3,7 +3,7 @@ title: "androidUsernameSource enum type"
 description: "Android username source."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

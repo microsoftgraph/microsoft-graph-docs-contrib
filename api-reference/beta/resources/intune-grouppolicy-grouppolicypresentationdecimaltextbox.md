@@ -3,7 +3,7 @@ title: "groupPolicyPresentationDecimalTextBox resource type"
 description: "Represents an ADMX decimalTextBox element and an ADMX decimal element."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create windows10EasEmailProfileConfiguration"
 description: "Create a new windows10EasEmailProfileConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

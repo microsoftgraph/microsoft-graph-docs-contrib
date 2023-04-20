@@ -3,7 +3,7 @@ title: "extendRemoteHelpSessionResponse resource type"
 description: "Remote help - response we provide back to the helper after getting response from pubSub"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "mobileAppContent resource type"
 description: "Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

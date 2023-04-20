@@ -3,7 +3,7 @@ title: "Delete win32LobApp"
 description: "Deletes a win32LobApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

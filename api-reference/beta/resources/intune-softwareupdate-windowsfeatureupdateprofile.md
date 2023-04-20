@@ -3,7 +3,7 @@ title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

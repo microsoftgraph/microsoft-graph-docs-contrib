@@ -3,7 +3,7 @@ title: "managedAppNotificationRestriction enum type"
 description: "Restrict managed app notification"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

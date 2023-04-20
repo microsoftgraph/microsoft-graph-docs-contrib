@@ -3,7 +3,7 @@ title: "deviceManagementIntentCustomizedSetting resource type"
 description: "Default and customized value of a setting in a Security Baseline"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

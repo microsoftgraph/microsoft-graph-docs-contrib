@@ -3,7 +3,7 @@ title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

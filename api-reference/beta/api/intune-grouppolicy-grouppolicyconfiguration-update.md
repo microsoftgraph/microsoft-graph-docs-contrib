@@ -3,7 +3,7 @@ title: "Update groupPolicyConfiguration"
 description: "Update the properties of a groupPolicyConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

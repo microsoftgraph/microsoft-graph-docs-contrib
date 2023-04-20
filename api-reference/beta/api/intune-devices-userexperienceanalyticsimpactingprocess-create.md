@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsImpactingProcess"
 description: "Create a new userExperienceAnalyticsImpactingProcess object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

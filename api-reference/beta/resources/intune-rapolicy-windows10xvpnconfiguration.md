@@ -3,7 +3,7 @@ title: "windows10XVpnConfiguration resource type"
 description: "Windows X VPN configuration profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

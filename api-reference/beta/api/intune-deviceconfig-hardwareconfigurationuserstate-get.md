@@ -3,7 +3,7 @@ title: "Get hardwareConfigurationUserState"
 description: "Read properties and relationships of the hardwareConfigurationUserState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

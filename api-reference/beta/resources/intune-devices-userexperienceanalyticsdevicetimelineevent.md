@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDeviceTimelineEvent resource type"
 description: "The user experience analytics device event entity contains NRT device event details."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

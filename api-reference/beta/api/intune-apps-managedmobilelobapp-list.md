@@ -3,7 +3,7 @@ title: "List managedMobileLobApps"
 description: "List properties and relationships of the managedMobileLobApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

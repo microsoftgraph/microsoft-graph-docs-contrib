@@ -3,7 +3,7 @@ title: "Update iosiPadOSWebClip"
 description: "Update the properties of a iosiPadOSWebClip object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

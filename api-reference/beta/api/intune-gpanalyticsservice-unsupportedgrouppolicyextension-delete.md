@@ -3,7 +3,7 @@ title: "Delete unsupportedGroupPolicyExtension"
 description: "Deletes a unsupportedGroupPolicyExtension."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

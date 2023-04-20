@@ -3,7 +3,7 @@ title: "logoutSharedAppleDeviceActiveUser action"
 description: "Logout shared Apple device active user"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

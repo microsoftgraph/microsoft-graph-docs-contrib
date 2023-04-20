@@ -3,7 +3,7 @@ title: "Create iosEasEmailProfileConfiguration"
 description: "Create a new iosEasEmailProfileConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

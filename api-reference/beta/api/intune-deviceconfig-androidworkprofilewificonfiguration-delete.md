@@ -3,7 +3,7 @@ title: "Delete androidWorkProfileWiFiConfiguration"
 description: "Deletes a androidWorkProfileWiFiConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

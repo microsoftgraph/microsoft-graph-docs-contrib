@@ -3,7 +3,7 @@ title: "easEmailProfileConfigurationBase resource type"
 description: "Apple device features configuration profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

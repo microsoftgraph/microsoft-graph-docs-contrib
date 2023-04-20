@@ -3,7 +3,7 @@ title: "Create androidForWorkCompliancePolicy"
 description: "Create a new androidForWorkCompliancePolicy object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

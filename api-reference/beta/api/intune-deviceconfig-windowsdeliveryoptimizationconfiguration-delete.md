@@ -3,7 +3,7 @@ title: "Delete windowsDeliveryOptimizationConfiguration"
 description: "Deletes a windowsDeliveryOptimizationConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

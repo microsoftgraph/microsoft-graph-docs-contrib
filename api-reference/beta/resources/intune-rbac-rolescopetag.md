@@ -3,7 +3,7 @@ title: "roleScopeTag resource type"
 description: "Role Scope Tag"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

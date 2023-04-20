@@ -3,7 +3,7 @@ title: "deviceManagementTemplateSubtype enum type"
 description: "Template subtype"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

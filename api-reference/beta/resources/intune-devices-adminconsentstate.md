@@ -3,7 +3,7 @@ title: "adminConsentState enum type"
 description: "Admin consent state."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

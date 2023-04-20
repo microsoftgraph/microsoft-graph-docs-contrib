@@ -3,7 +3,7 @@ title: "Delete windowsAutopilotDeviceIdentity"
 description: "Deletes a windowsAutopilotDeviceIdentity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

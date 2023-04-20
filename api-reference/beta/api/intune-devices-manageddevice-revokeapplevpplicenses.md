@@ -3,7 +3,7 @@ title: "revokeAppleVppLicenses action"
 description: "Revoke all Apple Vpp licenses for a device"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

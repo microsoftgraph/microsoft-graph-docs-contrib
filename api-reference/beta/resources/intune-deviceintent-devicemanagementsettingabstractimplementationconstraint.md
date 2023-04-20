@@ -3,7 +3,7 @@ title: "deviceManagementSettingAbstractImplementationConstraint resource type"
 description: "Constraint that enforces an AbstractComplex type has or is set to a particular value"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

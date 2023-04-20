@@ -3,7 +3,7 @@ title: "proxiedDomain resource type"
 description: "Proxied Domain"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

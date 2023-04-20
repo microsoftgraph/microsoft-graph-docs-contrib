@@ -3,7 +3,7 @@ title: "Update windowsPrivacyDataAccessControlItem"
 description: "Update the properties of a windowsPrivacyDataAccessControlItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

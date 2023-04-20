@@ -3,7 +3,7 @@ title: "roleAssignmentScopeType enum type"
 description: "Specifies the type of scope for a Role Assignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

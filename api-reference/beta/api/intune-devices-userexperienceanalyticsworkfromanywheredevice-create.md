@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Create a new userExperienceAnalyticsWorkFromAnywhereDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

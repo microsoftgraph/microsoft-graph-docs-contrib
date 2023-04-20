@@ -3,7 +3,7 @@ title: "wiredNetworkAuthenticationMethod enum type"
 description: "Wired Network authentication method."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

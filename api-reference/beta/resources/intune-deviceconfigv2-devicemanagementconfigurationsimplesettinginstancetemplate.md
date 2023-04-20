@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSimpleSettingInstanceTemplate resource type
 description: "Simple Setting Instance Template"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

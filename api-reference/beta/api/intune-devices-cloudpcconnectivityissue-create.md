@@ -3,7 +3,7 @@ title: "Create cloudPCConnectivityIssue"
 description: "Create a new cloudPCConnectivityIssue object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

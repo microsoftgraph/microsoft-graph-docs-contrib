@@ -3,7 +3,7 @@ title: "Delete macOSCompliancePolicy"
 description: "Deletes a macOSCompliancePolicy."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

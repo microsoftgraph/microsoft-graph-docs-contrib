@@ -3,7 +3,7 @@ title: "Create deviceConfigurationGroupAssignment"
 description: "Create a new deviceConfigurationGroupAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

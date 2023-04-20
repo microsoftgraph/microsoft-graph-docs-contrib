@@ -3,7 +3,7 @@ title: "deviceConfigurationConflictSummary resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

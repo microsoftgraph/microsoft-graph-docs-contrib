@@ -3,7 +3,7 @@ title: "Update macOSSoftwareUpdateAccountSummary"
 description: "Update the properties of a macOSSoftwareUpdateAccountSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

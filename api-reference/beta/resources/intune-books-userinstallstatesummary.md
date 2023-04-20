@@ -3,7 +3,7 @@ title: "userInstallStateSummary resource type"
 description: "Contains properties for the installation state summary for a user."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

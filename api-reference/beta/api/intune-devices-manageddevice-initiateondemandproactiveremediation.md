@@ -3,7 +3,7 @@ title: "initiateOnDemandProactiveRemediation action"
 description: "Perform On Demand Proactive Remediation"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

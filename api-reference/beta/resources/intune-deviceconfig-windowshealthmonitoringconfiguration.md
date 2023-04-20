@@ -3,7 +3,7 @@ title: "windowsHealthMonitoringConfiguration resource type"
 description: "Windows device health monitoring configuration"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

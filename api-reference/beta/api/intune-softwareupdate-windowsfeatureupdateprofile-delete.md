@@ -3,7 +3,7 @@ title: "Delete windowsFeatureUpdateProfile"
 description: "Deletes a windowsFeatureUpdateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

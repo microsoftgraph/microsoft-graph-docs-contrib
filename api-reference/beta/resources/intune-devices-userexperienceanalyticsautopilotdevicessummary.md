@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAutopilotDevicesSummary resource type"
 description: "The user experience analytics summary of Devices not windows autopilot ready."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

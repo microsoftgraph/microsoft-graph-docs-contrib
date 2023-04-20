@@ -3,7 +3,7 @@ title: "androidWorkProfileAccountUse enum type"
 description: "An enum representing possible values for account use in work profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

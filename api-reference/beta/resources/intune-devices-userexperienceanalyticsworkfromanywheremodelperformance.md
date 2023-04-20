@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsWorkFromAnywhereModelPerformance resource type"
 description: "The user experience analytics work from anywhere model performance."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

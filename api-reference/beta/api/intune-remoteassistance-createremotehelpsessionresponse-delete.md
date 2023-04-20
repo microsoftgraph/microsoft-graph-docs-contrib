@@ -3,7 +3,7 @@ title: "Delete createRemoteHelpSessionResponse"
 description: "Deletes a createRemoteHelpSessionResponse."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

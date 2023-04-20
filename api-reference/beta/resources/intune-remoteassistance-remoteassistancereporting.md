@@ -3,7 +3,7 @@ title: "remoteAssistanceReporting resource type"
 description: "RemoteAssistanceReporting resources represents the metadata of a given Remote Assistance reporting payload"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

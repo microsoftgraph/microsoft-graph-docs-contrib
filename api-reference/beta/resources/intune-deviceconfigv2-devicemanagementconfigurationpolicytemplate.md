@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationPolicyTemplate resource type"
 description: "Device Management Configuration Policy Template"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

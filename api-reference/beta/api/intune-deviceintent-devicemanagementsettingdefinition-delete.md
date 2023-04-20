@@ -3,7 +3,7 @@ title: "Delete deviceManagementSettingDefinition"
 description: "Deletes a deviceManagementSettingDefinition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

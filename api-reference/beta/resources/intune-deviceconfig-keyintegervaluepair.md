@@ -3,7 +3,7 @@ title: "keyIntegerValuePair resource type"
 description: "A key-value pair with a string key and an integer value."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete macOSSoftwareUpdateConfiguration"
 description: "Deletes a macOSSoftwareUpdateConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

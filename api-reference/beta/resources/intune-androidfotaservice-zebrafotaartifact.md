@@ -3,7 +3,7 @@ title: "zebraFotaArtifact resource type"
 description: "Describes a single artifact for a specific device model."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create deviceManagementConfigurationPolicyTemplate"
 description: "Create a new deviceManagementConfigurationPolicyTemplate object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

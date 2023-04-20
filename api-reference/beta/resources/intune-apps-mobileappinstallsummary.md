@@ -3,7 +3,7 @@ title: "mobileAppInstallSummary resource type"
 description: "Contains properties for the installation summary of a mobile app. This will be deprecated in May, 2023"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create microsoftTunnelServerLogCollectionResponse"
 description: "Create a new microsoftTunnelServerLogCollectionResponse object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

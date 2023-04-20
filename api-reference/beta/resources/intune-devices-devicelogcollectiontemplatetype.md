@@ -3,7 +3,7 @@ title: "deviceLogCollectionTemplateType enum type"
 description: "Enum for the template type used for collecting logs"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

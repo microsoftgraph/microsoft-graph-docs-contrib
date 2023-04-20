@@ -3,7 +3,7 @@ title: "macOSMicrosoftDefenderApp resource type"
 description: "Contains properties and inherited properties for the macOS Microsoft Defender App."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "windowsPhone81CertificateProfileBase resource type"
 description: "Base Windows Phone 8.1+ certificate profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

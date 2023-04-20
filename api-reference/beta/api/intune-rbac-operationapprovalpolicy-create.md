@@ -3,7 +3,7 @@ title: "Create operationApprovalPolicy"
 description: "Create a new operationApprovalPolicy object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

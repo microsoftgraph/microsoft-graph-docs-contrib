@@ -3,7 +3,7 @@ title: "Delete macOSPkcsCertificateProfile"
 description: "Deletes a macOSPkcsCertificateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

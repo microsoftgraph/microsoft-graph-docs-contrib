@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsDeviceScope"
 description: "Read properties and relationships of the userExperienceAnalyticsDeviceScope object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

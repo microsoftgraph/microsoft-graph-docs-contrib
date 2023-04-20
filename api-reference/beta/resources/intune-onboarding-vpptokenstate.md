@@ -3,7 +3,7 @@ title: "vppTokenState enum type"
 description: "Possible states associated with an Apple Volume Purchase Program token."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

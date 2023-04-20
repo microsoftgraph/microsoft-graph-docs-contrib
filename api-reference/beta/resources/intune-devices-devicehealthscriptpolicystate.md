@@ -3,7 +3,7 @@ title: "deviceHealthScriptPolicyState resource type"
 description: "Contains properties for policy run state of the device health script."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

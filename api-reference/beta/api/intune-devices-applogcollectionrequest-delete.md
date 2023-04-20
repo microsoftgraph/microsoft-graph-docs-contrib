@@ -3,7 +3,7 @@ title: "Delete appLogCollectionRequest"
 description: "Deletes a appLogCollectionRequest."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

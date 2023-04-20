@@ -3,7 +3,7 @@ title: "Delete deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Deletes a deviceEnrollmentPlatformRestrictionsConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

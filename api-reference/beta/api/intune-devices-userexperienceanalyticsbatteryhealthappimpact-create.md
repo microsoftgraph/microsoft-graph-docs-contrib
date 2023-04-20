@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsBatteryHealthAppImpact"
 description: "Create a new userExperienceAnalyticsBatteryHealthAppImpact object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

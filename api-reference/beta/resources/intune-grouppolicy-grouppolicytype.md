@@ -3,7 +3,7 @@ title: "groupPolicyType enum type"
 description: "Type of Group Policy File or Definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

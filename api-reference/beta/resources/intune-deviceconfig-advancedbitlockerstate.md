@@ -3,7 +3,7 @@ title: "advancedBitLockerState enum type"
 description: "Advanced BitLocker State"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

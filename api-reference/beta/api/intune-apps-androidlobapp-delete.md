@@ -3,7 +3,7 @@ title: "Delete androidLobApp"
 description: "Deletes a androidLobApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

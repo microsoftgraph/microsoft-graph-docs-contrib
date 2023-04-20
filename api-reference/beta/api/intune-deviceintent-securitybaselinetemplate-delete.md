@@ -3,7 +3,7 @@ title: "Delete securityBaselineTemplate"
 description: "Deletes a securityBaselineTemplate."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

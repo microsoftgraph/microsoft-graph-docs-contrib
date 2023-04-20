@@ -3,7 +3,7 @@ title: "windowsFirewallRuleInterfaceTypes enum type"
 description: "Flags representing firewall rule interface types."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

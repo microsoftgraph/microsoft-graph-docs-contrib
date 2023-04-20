@@ -3,7 +3,7 @@ title: "managedInstallerStatus enum type"
 description: "ManagedInstallerStatus"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

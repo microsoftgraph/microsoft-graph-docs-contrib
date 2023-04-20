@@ -3,7 +3,7 @@ title: "groupPolicyConfigurationIngestionType enum type"
 description: "Group Policy Configuration Ingestion Type"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

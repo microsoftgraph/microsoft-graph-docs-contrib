@@ -3,7 +3,7 @@ title: "List deviceEnrollmentWindowsHelloForBusinessConfigurations"
 description: "List properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

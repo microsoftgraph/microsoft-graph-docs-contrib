@@ -3,7 +3,7 @@ title: "Delete mobileAppTroubleshootingEvent"
 description: "Describes the Delete mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

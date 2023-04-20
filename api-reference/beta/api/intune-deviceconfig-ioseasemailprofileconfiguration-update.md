@@ -3,7 +3,7 @@ title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

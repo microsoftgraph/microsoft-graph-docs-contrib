@@ -3,7 +3,7 @@ title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

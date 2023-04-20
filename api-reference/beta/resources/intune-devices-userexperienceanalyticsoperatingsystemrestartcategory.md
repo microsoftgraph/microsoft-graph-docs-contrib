@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsOperatingSystemRestartCategory enum type"
 description: "Operating System restart category"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

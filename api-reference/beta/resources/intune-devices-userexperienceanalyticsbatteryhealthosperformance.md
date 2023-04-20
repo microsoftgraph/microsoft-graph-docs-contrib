@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBatteryHealthOsPerformance resource type"
 description: "The user experience analytics battery health os performance entity contains battery related information for all operating system versions in their organization."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

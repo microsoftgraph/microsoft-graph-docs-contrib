@@ -3,7 +3,7 @@ title: "List windowsManagedAppProtections"
 description: "List properties and relationships of the windowsManagedAppProtection objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete windowsManagedAppProtection"
 description: "Deletes a windowsManagedAppProtection."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

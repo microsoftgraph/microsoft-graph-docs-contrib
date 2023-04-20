@@ -3,7 +3,7 @@ title: "operationApprovalPolicyType enum type"
 description: "Operation Approval Policy Type"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

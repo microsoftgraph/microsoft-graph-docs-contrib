@@ -3,7 +3,7 @@ title: "Delete iosStoreApp"
 description: "Deletes a iosStoreApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

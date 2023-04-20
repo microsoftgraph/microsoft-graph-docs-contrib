@@ -3,7 +3,7 @@ title: "Delete mobileAppContentFile"
 description: "Deletes a mobileAppContentFile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

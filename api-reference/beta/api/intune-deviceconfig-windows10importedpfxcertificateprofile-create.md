@@ -3,7 +3,7 @@ title: "Create windows10ImportedPFXCertificateProfile"
 description: "Create a new windows10ImportedPFXCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

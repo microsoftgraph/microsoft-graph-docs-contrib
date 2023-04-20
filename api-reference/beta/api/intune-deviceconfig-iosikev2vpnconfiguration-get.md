@@ -3,7 +3,7 @@ title: "Get iosikEv2VpnConfiguration"
 description: "Read properties and relationships of the iosikEv2VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

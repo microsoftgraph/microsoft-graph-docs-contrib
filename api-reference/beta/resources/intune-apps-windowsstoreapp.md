@@ -3,7 +3,7 @@ title: "windowsStoreApp resource type"
 description: "Contains properties and inherited properties for Windows Store apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

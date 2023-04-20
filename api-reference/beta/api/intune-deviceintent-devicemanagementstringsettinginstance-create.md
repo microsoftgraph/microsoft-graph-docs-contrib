@@ -3,7 +3,7 @@ title: "Create deviceManagementStringSettingInstance"
 description: "Create a new deviceManagementStringSettingInstance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List deviceManagementResourceAccessProfileBases"
 description: "List properties and relationships of the deviceManagementResourceAccessProfileBase objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

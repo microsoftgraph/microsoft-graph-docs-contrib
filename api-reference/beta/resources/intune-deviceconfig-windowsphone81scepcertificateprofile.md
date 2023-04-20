@@ -3,7 +3,7 @@ title: "windowsPhone81SCEPCertificateProfile resource type"
 description: "Windows Phone 8.1+ SCEP certificate profile"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

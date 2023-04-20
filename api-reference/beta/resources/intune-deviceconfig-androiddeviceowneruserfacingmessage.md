@@ -3,7 +3,7 @@ title: "androidDeviceOwnerUserFacingMessage resource type"
 description: "Represents a user-facing message with locale information as well as a default message to be used if the user's locale doesn't match with any of the localized messages"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "androidForWorkApp resource type"
 description: "Contains properties and inherited properties for Android for Work (AFW) Apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

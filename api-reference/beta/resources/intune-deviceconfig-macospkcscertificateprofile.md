@@ -3,7 +3,7 @@ title: "macOSPkcsCertificateProfile resource type"
 description: "MacOS PKCS certificate profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

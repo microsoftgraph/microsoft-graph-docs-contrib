@@ -3,7 +3,7 @@ title: "androidDeviceOwnerRequiredPasswordUnlock enum type"
 description: "An enum representing possible values for required password unlock."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

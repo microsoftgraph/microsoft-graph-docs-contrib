@@ -3,7 +3,7 @@ title: "windows10MobileCompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 10 Mobile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

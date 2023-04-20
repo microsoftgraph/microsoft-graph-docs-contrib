@@ -3,7 +3,7 @@ title: "wipeManagedAppRegistrationsByAzureAdDeviceId action"
 description: "Issues a wipe operation on an app registration with specified aad device Id."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

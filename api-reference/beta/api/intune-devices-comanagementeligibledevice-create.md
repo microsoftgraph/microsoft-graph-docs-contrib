@@ -3,7 +3,7 @@ title: "Create comanagementEligibleDevice"
 description: "Create a new comanagementEligibleDevice object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

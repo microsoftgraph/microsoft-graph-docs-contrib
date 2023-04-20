@@ -3,7 +3,7 @@ title: "aospWifiSecurityType enum type"
 description: "This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

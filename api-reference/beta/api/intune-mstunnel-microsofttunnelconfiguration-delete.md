@@ -3,7 +3,7 @@ title: "Delete microsoftTunnelConfiguration"
 description: "Deletes a microsoftTunnelConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

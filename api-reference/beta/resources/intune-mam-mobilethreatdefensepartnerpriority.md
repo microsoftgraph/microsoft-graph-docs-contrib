@@ -3,7 +3,7 @@ title: "mobileThreatDefensePartnerPriority enum type"
 description: "Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

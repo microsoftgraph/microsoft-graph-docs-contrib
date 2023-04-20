@@ -3,7 +3,7 @@ title: "revokeUserLicense action"
 description: "Revoke assigned iOS VPP user license for given app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

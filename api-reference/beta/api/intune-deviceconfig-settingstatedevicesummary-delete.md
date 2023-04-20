@@ -3,7 +3,7 @@ title: "Delete settingStateDeviceSummary"
 description: "Deletes a settingStateDeviceSummary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

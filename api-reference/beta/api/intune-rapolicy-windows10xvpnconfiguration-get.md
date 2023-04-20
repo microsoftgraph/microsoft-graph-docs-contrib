@@ -3,7 +3,7 @@ title: "Get windows10XVpnConfiguration"
 description: "Read properties and relationships of the windows10XVpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

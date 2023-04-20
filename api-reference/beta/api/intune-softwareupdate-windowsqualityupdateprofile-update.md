@@ -3,7 +3,7 @@ title: "Update windowsQualityUpdateProfile"
 description: "Update the properties of a windowsQualityUpdateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

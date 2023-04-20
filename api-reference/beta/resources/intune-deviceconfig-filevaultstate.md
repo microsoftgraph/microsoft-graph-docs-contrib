@@ -3,7 +3,7 @@ title: "fileVaultState enum type"
 description: "FileVault State"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

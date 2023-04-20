@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory resource type"
 description: "The user experience analytics battery health runtime history entity contains the trend of runtime of a device over a period of 30 days"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

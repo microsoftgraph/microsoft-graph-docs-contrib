@@ -3,7 +3,7 @@ title: "customUpdateTimeWindow resource type"
 description: "Custom update time window"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete windows10XVpnConfiguration"
 description: "Deletes a windows10XVpnConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

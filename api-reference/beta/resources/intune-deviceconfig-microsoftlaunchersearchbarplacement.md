@@ -3,7 +3,7 @@ title: "microsoftLauncherSearchBarPlacement enum type"
 description: "Microsoft Launcher Search Bar Placement selection."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

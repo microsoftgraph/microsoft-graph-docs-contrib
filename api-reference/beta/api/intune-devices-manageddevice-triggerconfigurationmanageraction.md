@@ -3,7 +3,7 @@ title: "triggerConfigurationManagerAction action"
 description: "Trigger action on ConfigurationManager client"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

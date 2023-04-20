@@ -3,7 +3,7 @@ title: "complianceManagementPartnerAssignment resource type"
 description: "User group targeting for Compliance Management Partner"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete iosiPadOSWebClip"
 description: "Deletes a iosiPadOSWebClip."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

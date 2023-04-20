@@ -3,7 +3,7 @@ title: "Create aospDeviceOwnerPkcsCertificateProfile"
 description: "Create a new aospDeviceOwnerPkcsCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create windowsIdentityProtectionConfiguration"
 description: "Create a new windowsIdentityProtectionConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

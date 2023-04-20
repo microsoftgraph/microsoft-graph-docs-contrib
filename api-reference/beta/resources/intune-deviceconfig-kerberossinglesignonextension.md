@@ -3,7 +3,7 @@ title: "kerberosSingleSignOnExtension resource type"
 description: "Represents a Kerberos-type Single Sign-On extension profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

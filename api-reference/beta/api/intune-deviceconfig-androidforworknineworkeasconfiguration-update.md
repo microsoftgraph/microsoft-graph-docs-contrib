@@ -3,7 +3,7 @@ title: "Update androidForWorkNineWorkEasConfiguration"
 description: "Update the properties of a androidForWorkNineWorkEasConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

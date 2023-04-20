@@ -3,7 +3,7 @@ title: "windowsManagedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

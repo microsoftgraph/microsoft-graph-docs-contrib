@@ -3,7 +3,7 @@ title: "vpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

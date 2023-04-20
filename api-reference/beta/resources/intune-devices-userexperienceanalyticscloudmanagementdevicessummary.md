@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsCloudManagementDevicesSummary resource type"
 description: "The user experience work from anywhere Cloud management devices summary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

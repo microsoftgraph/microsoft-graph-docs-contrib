@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSecretSettingValueState enum type"
 description: "type tracking the encryption state of a secret setting value"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

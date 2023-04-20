@@ -3,7 +3,7 @@ title: "Create windows81SCEPCertificateProfile"
 description: "Create a new windows81SCEPCertificateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "appInstallControlType enum type"
 description: "App Install control Setting"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

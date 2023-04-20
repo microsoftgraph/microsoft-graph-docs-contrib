@@ -3,7 +3,7 @@ title: "mobileAppRelationshipState resource type"
 description: "Describes the installation status details of the child app in the context of UPN and device id. This will be deprecated in May, 2023 "
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

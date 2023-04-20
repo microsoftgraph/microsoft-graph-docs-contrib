@@ -3,7 +3,7 @@ title: "deviceManagementExportJobLocalizationType enum type"
 description: "Configures how the requested export job is localized"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

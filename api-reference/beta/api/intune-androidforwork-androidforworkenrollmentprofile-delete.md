@@ -3,7 +3,7 @@ title: "Delete androidForWorkEnrollmentProfile"
 description: "Deletes a androidForWorkEnrollmentProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

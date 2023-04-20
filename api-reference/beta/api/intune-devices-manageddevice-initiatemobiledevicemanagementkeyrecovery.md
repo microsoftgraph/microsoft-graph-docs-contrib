@@ -3,7 +3,7 @@ title: "initiateMobileDeviceManagementKeyRecovery action"
 description: "Perform MDM key recovery and TPM attestation"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

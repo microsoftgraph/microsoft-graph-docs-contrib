@@ -3,7 +3,7 @@ title: "windowsArchitecture enum type"
 description: "Contains properties for Windows architecture."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete deviceManagementScriptAssignment"
 description: "Deletes a deviceManagementScriptAssignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

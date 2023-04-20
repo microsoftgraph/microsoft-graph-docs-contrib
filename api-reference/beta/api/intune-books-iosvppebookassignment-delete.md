@@ -3,7 +3,7 @@ title: "Delete iosVppEBookAssignment"
 description: "Deletes a iosVppEBookAssignment."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

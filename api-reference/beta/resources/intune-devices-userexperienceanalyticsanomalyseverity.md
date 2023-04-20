@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAnomalySeverity enum type"
 description: "Indicates the severity of the anomaly. Eg: anomaly severity can be high, medium, low, informational or other."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

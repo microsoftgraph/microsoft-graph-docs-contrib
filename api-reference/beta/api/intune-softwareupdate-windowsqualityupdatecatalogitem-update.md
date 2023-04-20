@@ -3,7 +3,7 @@ title: "Update windowsQualityUpdateCatalogItem"
 description: "Update the properties of a windowsQualityUpdateCatalogItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

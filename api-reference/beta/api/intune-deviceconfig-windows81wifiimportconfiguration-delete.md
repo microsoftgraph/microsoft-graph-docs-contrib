@@ -3,7 +3,7 @@ title: "Delete windows81WifiImportConfiguration"
 description: "Deletes a windows81WifiImportConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

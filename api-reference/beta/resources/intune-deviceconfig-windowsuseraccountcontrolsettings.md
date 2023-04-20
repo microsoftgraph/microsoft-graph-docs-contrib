@@ -3,7 +3,7 @@ title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

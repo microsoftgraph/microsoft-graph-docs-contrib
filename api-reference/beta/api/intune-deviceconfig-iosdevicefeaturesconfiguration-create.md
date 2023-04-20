@@ -3,7 +3,7 @@ title: "Create iosDeviceFeaturesConfiguration"
 description: "Create a new iosDeviceFeaturesConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

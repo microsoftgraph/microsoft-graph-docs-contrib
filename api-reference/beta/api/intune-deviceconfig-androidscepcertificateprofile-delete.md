@@ -3,7 +3,7 @@ title: "Delete androidScepCertificateProfile"
 description: "Deletes a androidScepCertificateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

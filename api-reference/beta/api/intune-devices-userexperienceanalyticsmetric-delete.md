@@ -3,7 +3,7 @@ title: "Delete userExperienceAnalyticsMetric"
 description: "Deletes a userExperienceAnalyticsMetric."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

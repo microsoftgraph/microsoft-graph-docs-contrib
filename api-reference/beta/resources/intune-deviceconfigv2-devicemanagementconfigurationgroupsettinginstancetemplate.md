@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationGroupSettingInstanceTemplate resource type"
 description: "Group Setting Instance Template"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

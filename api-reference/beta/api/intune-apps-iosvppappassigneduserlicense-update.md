@@ -3,7 +3,7 @@ title: "Update iosVppAppAssignedUserLicense"
 description: "Update the properties of a iosVppAppAssignedUserLicense object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

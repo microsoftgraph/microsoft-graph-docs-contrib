@@ -3,7 +3,7 @@ title: "expeditedWindowsQualityUpdateSettings resource type"
 description: "A complex type to store the expedited quality update settings such as release date and days until forced reboot."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

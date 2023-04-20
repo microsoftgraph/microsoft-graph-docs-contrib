@@ -3,7 +3,7 @@ title: "deliveryOptimizationGroupIdOptionsType enum type"
 description: "Possible values for the DeliveryOptimizationGroupIdOptionsType setting."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

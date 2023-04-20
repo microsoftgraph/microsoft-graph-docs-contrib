@@ -3,7 +3,7 @@ title: "Delete targetedManagedAppConfigurationPolicySetItem"
 description: "Deletes a targetedManagedAppConfigurationPolicySetItem."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

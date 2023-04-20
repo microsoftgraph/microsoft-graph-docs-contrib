@@ -3,7 +3,7 @@ title: "code enum type"
 description: "Error code for rule validation."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

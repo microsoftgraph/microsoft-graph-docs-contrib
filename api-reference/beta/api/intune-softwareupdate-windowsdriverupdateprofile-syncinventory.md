@@ -3,7 +3,7 @@ title: "syncInventory action"
 description: "Sync the driver inventory of a WindowsDriverUpdateProfile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

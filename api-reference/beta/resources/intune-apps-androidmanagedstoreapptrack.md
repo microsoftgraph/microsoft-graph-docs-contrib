@@ -3,7 +3,7 @@ title: "androidManagedStoreAppTrack resource type"
 description: "Contains track information for Android Managed Store apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

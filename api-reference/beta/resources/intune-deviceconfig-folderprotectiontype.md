@@ -3,7 +3,7 @@ title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

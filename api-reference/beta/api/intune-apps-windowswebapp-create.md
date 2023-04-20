@@ -3,7 +3,7 @@ title: "Create windowsWebApp"
 description: "Create a new windowsWebApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "macOSPriority enum type"
 description: "The scheduling priority options for downloading and preparing the requested mac OS update"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

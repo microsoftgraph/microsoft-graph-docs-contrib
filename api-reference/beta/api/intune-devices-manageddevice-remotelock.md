@@ -3,7 +3,7 @@ title: "remoteLock action"
 description: "Remote lock"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
