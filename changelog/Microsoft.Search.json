@@ -1603,6 +1603,24 @@
     {
       "ChangeList": [
         {
+          "Id": "affa85e4-b3d9-4c62-a8a9-a39c0fb6f866",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryTemplate** property to the [searchQuery](https://learn.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-1.0) resource.",
+          "Target": "query"
+        }
+      ],
+      "Id": "5cbf1eb2-c4fe-44c5-8865-48307d19d3c8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-19T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Enum type",
           "ChangedApiName": "externalActivityType",

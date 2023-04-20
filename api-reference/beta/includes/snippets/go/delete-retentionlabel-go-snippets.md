@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().Labels().RetentionLabelsById("retentionLabel-id").Delete(context.Background(), nil)
+graphClient.Security().Labels().RetentionLabels().ByRetentionLabelId("retentionLabel-id").Delete(context.Background(), nil)
 
 
 ```

@@ -40,7 +40,7 @@ requestBody.SetStatus(&status)
 allowStudentsToAddResourcesToSubmission := true
 requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

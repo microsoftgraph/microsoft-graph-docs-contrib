@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.PrivilegedApprovalById("privilegedApproval-id").Get(context.Background(), nil)
+result, err := graphClient.PrivilegedApproval().ByPrivilegedApproval().Id("privilegedApproval-id").Get(context.Background(), nil)
 
 
 ```

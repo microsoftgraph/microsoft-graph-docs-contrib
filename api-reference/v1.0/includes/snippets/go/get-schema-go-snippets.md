@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").Schema().Get(context.Background(), nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Get(context.Background(), nil)
 
 
 ```

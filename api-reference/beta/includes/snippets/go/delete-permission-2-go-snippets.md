@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.SitesById("site-id").PermissionsById("permission-id").Delete(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").Permissions().ByPermissionId("permission-id").Delete(context.Background(), nil)
 
 
 ```

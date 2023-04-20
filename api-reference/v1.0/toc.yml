@@ -1364,16 +1364,18 @@ items:
           href: resources/subscription.md
         - name: Change notification collection
           href: resources/changenotificationcollection.md
-        - name: List subscription
+        - name: List
           href: api/subscription-list.md
-        - name: Get subscription
+        - name: Get
           href: api/subscription-get.md
-        - name: Create subscription
+        - name: Create
           href: api/subscription-post-subscriptions.md
-        - name: Update subscription
+        - name: Update
           href: api/subscription-update.md
-        - name: Delete subscription
+        - name: Delete
           href: api/subscription-delete.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:

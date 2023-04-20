@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
 description := "Target completion date (YYYY/MM/DD)"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().ByCustomSecurityAttributeDefinitionId("customSecurityAttributeDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

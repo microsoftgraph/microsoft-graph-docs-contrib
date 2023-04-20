@@ -27,7 +27,7 @@ externalObjectVersion := "000003"
 businessScenarioProperties.SetExternalObjectVersion(&externalObjectVersion) 
 requestBody.SetBusinessScenarioProperties(businessScenarioProperties)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().TasksById("businessScenarioTask-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().ByTaskId("businessScenarioTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
