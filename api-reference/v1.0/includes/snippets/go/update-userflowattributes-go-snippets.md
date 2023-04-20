@@ -19,7 +19,7 @@ requestBody := graphmodels.NewIdentityUserFlowAttribute()
 description := "Your new hobby"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Identity().UserFlowAttributesById("identityUserFlowAttribute-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().UserFlowAttributes().ByUserFlowAttributeId("identityUserFlowAttribute-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

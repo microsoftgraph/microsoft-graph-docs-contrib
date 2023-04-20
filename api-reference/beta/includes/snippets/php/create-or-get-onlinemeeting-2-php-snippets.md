@@ -44,7 +44,7 @@ $requestBody->setSubject('Create a meeting with customId provided');
 
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetings()->createOrGet()->post($requestBody);
+$result = $graphServiceClient->me()->onlineMeetings()->createOrGet()->post($requestBody);
 
 
 ```

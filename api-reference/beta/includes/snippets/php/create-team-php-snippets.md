@@ -36,7 +36,7 @@ $discoverySettings->setShowInTeamsSearchAndSuggestions(true);
 $requestBody->setDiscoverySettings($discoverySettings);
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->team()->put($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->team()->put($requestBody);
 
 
 ```

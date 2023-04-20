@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().SkillsById("skillProficiency-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Profile().Skills().BySkillId("skillProficiency-id").Get(context.Background(), nil)
 
 
 ```

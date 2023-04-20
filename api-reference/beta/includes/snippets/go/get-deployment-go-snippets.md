@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Get(context.Background(), nil)
+result, err := graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Get(context.Background(), nil)
 
 
 ```
