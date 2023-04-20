@@ -1578,8 +1578,8 @@ items:
           href: api/subscription-update.md
         - name: Delete
           href: api/subscription-delete.md
-      - name: Change notification collection
-        href: resources/changenotificationcollection.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
