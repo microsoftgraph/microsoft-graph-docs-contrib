@@ -125,7 +125,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 }
 ```
 
-##### Notification - operation completed
+#### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
