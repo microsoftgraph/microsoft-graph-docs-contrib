@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Communications().CallsById("call-id").AudioRoutingGroupsById("audioRoutingGroup-id").Delete(context.Background(), nil)
+graphClient.Communications().Calls().ByCallId("call-id").AudioRoutingGroups().ByAudioRoutingGroupId("audioRoutingGroup-id").Delete(context.Background(), nil)
 
 
 ```

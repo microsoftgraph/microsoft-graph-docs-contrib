@@ -25,7 +25,7 @@ configuration := &graphconfig.SiteItemListItemItemsDelta()RequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").ListsById("list-id").Items().Delta().Get(context.Background(), configuration)
+result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Delta().Get(context.Background(), configuration)
 
 
 ```

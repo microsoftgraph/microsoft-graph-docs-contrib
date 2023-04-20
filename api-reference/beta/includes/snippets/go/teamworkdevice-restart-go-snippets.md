@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Teamwork().DevicesById("teamworkDevice-id").Restart().Post(context.Background(), nil)
+graphClient.Teamwork().Devices().ByDeviceId("teamworkDevice-id").Restart().Post(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().EventsById("event-id").DismissReminder().Post(context.Background(), nil)
+graphClient.Me().Events().ByEventId("event-id").DismissReminder().Post(context.Background(), nil)
 
 
 ```
