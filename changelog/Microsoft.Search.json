@@ -1603,7 +1603,7 @@
     {
       "ChangeList": [
         {
-          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Enum type",
           "ChangedApiName": "externalActivityType",
           "ChangeType": "Addition",
@@ -1611,31 +1611,31 @@
           "Target": "externalConnection"
         },
         {
-          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Resource",
           "ChangedApiName": "externalActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [externalActivity](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalactivity?view=graph-rest-1.0) resource.",
+          "Description": "Added the [externalActivity](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalactivity?view=graph-rest-1.0) resource type.",
           "Target": "externalActivity"
         },
         {
-          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Resource",
           "ChangedApiName": "externalActivityResult",
           "ChangeType": "Addition",
-          "Description": "Added the [externalActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the [externalActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityResult?view=graph-rest-1.0) resource type.",
           "Target": "externalActivityResult"
         },
         {
-          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Relationship",
           "ChangedApiName": "activities",
           "ChangeType": "Addition",
-          "Description": "Added the [activities](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalItem?view=graph-rest-1.0) navigation property to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activities** relationship to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalItem"
         },
         {
-          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "Id": "a0289337-0e04-498f-8360-74ab8eb197c5",
           "ApiChange": "Method",
           "ChangedApiName": "addActivities",
           "ChangeType": "Addition",
