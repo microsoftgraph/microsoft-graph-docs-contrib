@@ -13,7 +13,7 @@ Education institutions have custom tools to update assignment and grade data. Fo
 
 Before you can update data, you must get the relevant class and member information.
 
-> **Note:** You can use [Graph Explorer](/graph/graph-explorer) to test the [Education APIs](/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+> **Note:** You can use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to test the [Education APIs](/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
 ## Get class and member information
 

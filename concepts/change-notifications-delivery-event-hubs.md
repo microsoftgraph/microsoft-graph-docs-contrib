@@ -5,6 +5,7 @@ author: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
+ms.date: 03/23/2023
 ---
 
 # Receive change notifications through Azure Event Hubs
