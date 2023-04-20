@@ -5742,6 +5742,18 @@ items:
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
             - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
+          - name: Partner user sync settings
+            items:
+            - name: Cross-tenant access partner user sync settings
+              href: resources/crosstenantidentitysyncpolicypartner.md
+            - name: Create
+              href: api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+            - name: Get
+              href: api/crosstenantidentitysyncpolicypartner-get.md
+            - name: Update
+              href: api/crosstenantidentitysyncpolicypartner-update.md
+            - name: Delete
+              href: api/crosstenantidentitysyncpolicypartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
