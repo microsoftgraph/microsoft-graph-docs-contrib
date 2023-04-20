@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->directorySettingTemplatesById('directorySettingTemplate-id')->get();
+$result = $graphServiceClient->directorySettingTemplatesById('directorySettingTemplate-id')->get();
 
 
 ```

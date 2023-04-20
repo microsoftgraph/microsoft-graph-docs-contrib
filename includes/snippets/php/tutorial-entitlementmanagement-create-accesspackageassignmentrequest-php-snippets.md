@@ -23,7 +23,7 @@ $accessPackageAssignment->setAccessPackageId('88203d16-0e31-41d4-87b2-dd402f1435
 $requestBody->setAccessPackageAssignment($accessPackageAssignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
 
 
 ```

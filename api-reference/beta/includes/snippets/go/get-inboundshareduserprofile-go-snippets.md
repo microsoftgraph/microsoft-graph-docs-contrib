@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().InboundSharedUserProfilesById("inboundSharedUserProfile-userId").Get(context.Background(), nil)
+result, err := graphClient.Directory().InboundSharedUserProfiles().ByInboundSharedUserProfileId("inboundSharedUserProfile-userId").Get(context.Background(), nil)
 
 
 ```

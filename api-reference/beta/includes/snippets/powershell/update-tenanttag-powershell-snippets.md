@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.ManagedTenants
 
 $params = @{
-	DisplayName = "Onboarding"
-	Description = "Tenants that we are currently onboarding"
+	displayName = "Onboarding"
+	description = "Tenants that we are currently onboarding"
 }
 
 Update-MgTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params

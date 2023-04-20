@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	Use = "sig"
-	Kty = "RSA"
-	Nbf = 1508969811
-	Exp = 1508969811
+	use = "sig"
+	kty = "RSA"
+	nbf = 1508969811
+	exp = 1508969811
 }
 
 New-MgTrustFrameworkKeySetKey -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params

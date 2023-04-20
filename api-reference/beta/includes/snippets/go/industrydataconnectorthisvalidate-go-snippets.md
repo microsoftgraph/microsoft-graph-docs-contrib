@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.External().IndustryData().DataConnectorsById("industryDataConnector-id").IndustryDataValidate().Post(context.Background(), nil)
+graphClient.External().IndustryData().DataConnectors().ByDataConnectorId("industryDataConnector-id").IndustryDataValidate().Post(context.Background(), nil)
 
 
 ```

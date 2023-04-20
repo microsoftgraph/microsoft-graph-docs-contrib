@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let workbookRange = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/Range')
+let workbookRange = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range')
 	.version('beta')
 	.get();
 

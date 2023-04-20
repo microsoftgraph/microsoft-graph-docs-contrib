@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SecureScoresRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SecureScoresRequestBuilderGetQueryParameters();
+$queryParameters = SecureScoresRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->top = 1;
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->security()->secureScores()->get($requestConfiguration);
+$result = $graphServiceClient->security()->secureScores()->get($requestConfiguration);
 
 
 ```

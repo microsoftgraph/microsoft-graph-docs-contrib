@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AttachmentRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AttachmentRequestBuilderGetQueryParameters();
+$queryParameters = AttachmentRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["microsoft.graph.itemattachment/item"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachmentsById('attachment-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messagesById('message-id')->attachmentsById('attachment-id')->get($requestConfiguration);
 
 
 ```
