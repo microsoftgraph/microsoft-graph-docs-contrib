@@ -62,7 +62,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "externalitemthis.addactivities"
+  "name": "externalitemthis.addactivities",
+  "sampleKeys": ["{connectionsId}", "{externalItemId}"]
 }
 -->
 ``` http
