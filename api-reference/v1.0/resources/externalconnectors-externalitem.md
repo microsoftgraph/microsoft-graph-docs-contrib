@@ -20,7 +20,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | [Get externalItem](../api/externalconnectors-externalitem-get.md)        | [externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Update externalItem](../api/externalconnectors-externalitem-update.md)  | [externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Delete externalItem](../api/externalconnectors-externalitem-delete.md)  | None |Deletes an [externalItem](../resources/externalconnectors-externalitem.md) object.|
-| [addActivities](../api/externalconnectors-externalitem-addactivities.md) | [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection | Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
+| [Add activities](../api/externalconnectors-externalitem-addactivities.md) | [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection | Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties
 |Property|Type|Description|
