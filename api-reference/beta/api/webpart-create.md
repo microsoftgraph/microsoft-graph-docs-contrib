@@ -1,6 +1,6 @@
 ---
 author: sangle7
-description: 'Create a new sitePage in the site pages list in a site.'
+description: 'Create a new webPart at the specified position in the a sitePage'
 ms.date: 05/07/2018
 title: Create WebPart
 ms.localizationpriority: medium

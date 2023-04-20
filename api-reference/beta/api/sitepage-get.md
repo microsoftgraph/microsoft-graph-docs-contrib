@@ -151,7 +151,6 @@ Content-type: application/json
 
 With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -162,8 +161,6 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 ```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
-
-### Response
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitepage-go-snippets.md)]

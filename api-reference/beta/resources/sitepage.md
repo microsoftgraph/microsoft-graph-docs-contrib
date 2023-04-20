@@ -1,6 +1,6 @@
 ---
 title: SitePage
-description: This resource represents a page in the SitePages list.
+description: This resource represents a site page in the SitePages list.
 author: Sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
