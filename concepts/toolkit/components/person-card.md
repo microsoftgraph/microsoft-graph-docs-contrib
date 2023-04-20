@@ -19,7 +19,7 @@ The following example shows the use of the `mgt-person-card` component with a `m
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-properties--person-card&source=docs)
 
-## Example on using mgt-person-card as a standalone component
+## Example using mgt-person-card as a standalone component
 
 The following example shows the use of the `mgt-person-card` component. Use the code editor to see how [properties](#properties) change the behavior of the component.
   
