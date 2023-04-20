@@ -29,7 +29,7 @@ The component works with a provider and Microsoft Graph out of the box. However,
 | Attribute     | Property     | Description                                                                                                                                    |
 | ------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | login-view    | loginView    | Determines the view style to apply to the logged in user. Options are 'full', 'compact', 'avatar', defaults to 'full'                          |
-| show-presence | showPresence | Determines if the presence indicator for the current user on the `mgt-person` control is shown with an authenticated user. Default is `false`. |
+| show-presence | showPresence | Determines whether the presence indicator for the current user on the `mgt-person` control is shown with an authenticated user. Default is `false`. |
 | user-details  | userDetails  | Allows setting the user object details that the component will display.                                                                        |
 
 The following example sets the person details.
@@ -151,10 +151,10 @@ In this case, ensure the login component continues to work as expected by overri
 
 ## Localization
 
-The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details, see [Localizing components](../customize-components/localization.md).
 
 | String name                 | Default value                      |
 | --------------------------- | ---------------------------------- |
-| signInLinkSubtitle          | 'Sign In'                          |
-| signOutLinkSubtitle         | 'Sign Out'                         |
-| signInWithADifferentAccount | 'Sign in with a different account' |
+| signInLinkSubtitle          | `Sign In`                          |
+| signOutLinkSubtitle         | `Sign Out`                         |
+| signInWithADifferentAccount | `Sign in with a different account` |
