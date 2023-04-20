@@ -196,6 +196,13 @@ The following example defines a template for the person component.
     </div>
   </template>
 </mgt-person>
+
+<!-- Person-card template -->
+<mgt-person person-query="me" view="twolines" person-card="hover">
+	<template data-type="person-card">
+		My custom person card experience
+	</template>
+</mgt-person>
 ```
 
 ## Person card
