@@ -32,12 +32,14 @@ POST /connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
