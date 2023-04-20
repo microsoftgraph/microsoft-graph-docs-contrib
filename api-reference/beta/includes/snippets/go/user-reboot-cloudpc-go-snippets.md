@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().CloudPCsById("cloudPC-id").Reboot().Post(context.Background(), nil)
+graphClient.Me().CloudPCs().ByCloudPCId("cloudPC-id").Reboot().Post(context.Background(), nil)
 
 
 ```

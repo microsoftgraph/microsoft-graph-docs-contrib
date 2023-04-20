@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 02/17/2022
+ms.date: 04/12/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -721,6 +721,36 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Device local credential permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DeviceLocalCredential.ReadBasic.All_ | Read basic device local credential information | Allows the app to read device local credential properties excluding passwords, on behalf of the signed-in user. | Yes | No |
+| _DeviceLocalCredential.Read.All_ | Read device local credential information | Allows the app to read device local credential properties including passwords, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DeviceLocalCredential.ReadBasic.All_ | Read basic device local credential information | Allows the app to read device local credential properties excluding passwords. | Yes | No |
+| _DeviceLocalCredential.Read.All_ | Read device local credential information | Allows the app to read device local credential properties including passwords. | Yes | No |
+
+### Example usage
+
+#### Delegated
+
+* DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials`).
+
+#### Application
+
+* DeviceLocalCredential.ReadBasic.All_: List the device local credential for all devices in the tenant without returning the 'credentials' property (`GET /deviceLocalCredentials`).
+* DeviceLocalCredential.Read.All_: Get a device local credential with the local administrator account password in Base64 encoded value (`GET /deviceLocalCredentials/{deviceId}?$select=credentials`).
+
+---
+
 ## Granular delegated admin privileges (GDAP) permissions
 
 #### Delegated permissions
@@ -953,6 +983,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
 | _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
 | _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningAssignedCourse.Read_  |    Read assignment | Allows the app to read data for assignment record in organization's directory on behalf of the signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.Read_  |    Read self-initiated course | Allows the app to read data for self-initiated course record in organization's directory on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -960,6 +992,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _LearningContent.Read.All_ |    Read all learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
 | _LearningContent.ReadWrite.All_  |    Manage all learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningAssignedCourse.Read.All_ |    Read learning assignment | Allows the app to read data for learning assignment record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.Read.All_ |    Read learning self-initiated course| Allows the app to read data for learning self-initiated course record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningAssignedCourse.ReadWrite.All_ |    Manage all learning assignment for learner | Allows the app to create/read/update/delete data for learning assignment record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.ReadWrite.All_ |    Manage all self-initiated course for learner | Allows the app to create/read/update/delete data for self-initiated course record in organization's directory, without a signed-in user. | Yes | No |
 
 
 ---

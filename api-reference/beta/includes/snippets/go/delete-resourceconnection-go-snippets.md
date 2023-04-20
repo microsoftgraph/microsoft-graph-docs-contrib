@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Admin().Windows().Updates().ResourceConnectionsById("resourceConnection-id").Delete(context.Background(), nil)
+graphClient.Admin().Windows().Updates().ResourceConnections().ByResourceConnectionId("resourceConnection-id").Delete(context.Background(), nil)
 
 
 ```

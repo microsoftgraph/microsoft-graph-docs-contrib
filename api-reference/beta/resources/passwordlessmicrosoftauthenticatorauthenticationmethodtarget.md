@@ -4,7 +4,7 @@ description: "A collection of groups enabled to use Microsoft Authenticator Pass
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type (deprecated)

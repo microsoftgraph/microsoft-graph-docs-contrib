@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Search().BookmarksById("bookmark-id").Delete(context.Background(), nil)
+graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Delete(context.Background(), nil)
 
 
 ```
