@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Search().BookmarksById("bookmark-id").Get(context.Background(), nil)
+result, err := graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Get(context.Background(), nil)
 
 
 ```

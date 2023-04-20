@@ -17,7 +17,7 @@ $participantsInvitationParticipantInfo1Identity = new IdentitySet();
 $participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
 
 $additionalData = [
-'phone' => $participantsInvitationParticipantInfo1Identity = new Phone();
+		'phone' => $participantsInvitationParticipantInfo1Identity = new Phone();
 $		participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
 
 $		participantsInvitationParticipantInfo1Identity->setId('+12345678901');
@@ -40,7 +40,7 @@ $requestBody->setClientContext('f2fa86af-3c51-4bc2-8fc0-475452d9764f');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
+$result = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
 
 
 ```

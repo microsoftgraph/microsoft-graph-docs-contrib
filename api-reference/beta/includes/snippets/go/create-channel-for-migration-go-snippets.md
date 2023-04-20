@@ -28,7 +28,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

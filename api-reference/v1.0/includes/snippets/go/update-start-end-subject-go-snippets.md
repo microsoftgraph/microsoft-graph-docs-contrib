@@ -24,7 +24,7 @@ requestBody.SetEndDateTime(&endDateTime)
 subject := "Patch Meeting Subject"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
