@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Windows().Updates().DeploymentAudiencesById("deploymentAudience-id").Exclusions().Get(context.Background(), nil)
+result, err := graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").Exclusions().Get(context.Background(), nil)
 
 
 ```

@@ -8,17 +8,17 @@ Import-Module Microsoft.Graph.Compliance
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.ediscovery.legalHold"
-	Description = "String"
-	CreatedBy = @{
+	description = "String"
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	IsEnabled = "Boolean"
-	Status = "String"
-	ContentQuery = "String"
-	Errors = @(
+	isEnabled = "Boolean"
+	status = "String"
+	contentQuery = "String"
+	errors = @(
 		"String"
 	)
-	DisplayName = "String"
+	displayName = "String"
 }
 
 New-MgComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params

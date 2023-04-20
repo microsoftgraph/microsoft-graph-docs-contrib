@@ -37,13 +37,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventPresenterDetails",
-  "company": "String",
-  "jobTitle": "String",
   "bio": {
     "@odata.type": "microsoft.graph.itemBody"
   },
-  "personalSiteWebUrl": "String",
+  "company": "String",
+  "jobTitle": "String",
   "linkedInProfileWebUrl": "String",
+  "personalSiteWebUrl": "String",
   "twitterProfileWebUrl": "String"
 }
 ```

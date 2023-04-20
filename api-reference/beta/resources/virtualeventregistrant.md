@@ -62,18 +62,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrant",
-  "id": "String (identifier)",
-  "userId": "String",
-  "firstName": "String",
-  "lastName": "String",
-  "email": "String",
-  "status": "String",
-  "registrationDateTime": "String (timestamp)",
   "cancelationDateTime": "String (timestamp)",
+  "email": "String",
+  "firstName": "String",
+  "id": "String (identifier)",  
+  "lastName": "String",
+  "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [
     {
       "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"
     }
-  ]
+  ],
+  "status": "String",
+  "userId": "String"
 }
 ```

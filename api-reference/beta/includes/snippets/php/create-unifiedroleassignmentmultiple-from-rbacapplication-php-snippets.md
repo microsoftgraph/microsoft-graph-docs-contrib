@@ -22,7 +22,7 @@ $requestBody->setDirectoryScopeIds(['28ca5a85-489a-49a0-b555-0a6d81e56f0d', '815
 
 
 
-$requestResult = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->deviceManagement()->roleAssignments()->post($requestBody);
 
 
 ```

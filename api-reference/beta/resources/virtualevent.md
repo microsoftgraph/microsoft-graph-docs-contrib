@@ -53,18 +53,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEvent",
-  "id": "String (identifier)",
-  "status": "String",
-  "displayName": "String",
-  "description": "String",
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  "createdBy": {
+    "@odata.type": "microsoft.graph.communicationsIdentitySet"
   },
+  "description": "String",
+  "displayName": "String",
   "endDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  }
+  "id": "String (identifier)",
+  "startDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "status": "String"
 }
 ```

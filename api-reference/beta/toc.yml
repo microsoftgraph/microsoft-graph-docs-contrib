@@ -372,9 +372,9 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List cloudPCs
+        - name: List
           href: api/user-list-cloudpcs.md
-        - name: Get cloudPC
+        - name: Get
           href: api/cloudpc-get.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
@@ -386,6 +386,10 @@ items:
           href: api/cloudpc-rename.md
         - name: Reprovision
           href: api/cloudpc-reprovision.md
+        - name: Start
+          href: api/cloudpc-start.md
+        - name: Stop
+          href: api/cloudpc-stop.md
         - name: Troubleshoot
           href: api/cloudpc-troubleshoot.md
       - name: Delegated permission grant
@@ -10607,11 +10611,11 @@ items:
           items:
           - name: Cloud PC
             href: resources/cloudpc.md
-          - name: List cloudPCs for organization
+          - name: List for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: List cloudPCs for user
+          - name: List for user
             href: api/user-list-cloudpcs.md
-          - name: Get cloudPC
+          - name: Get Cloud PC
             href: api/cloudpc-get.md
           - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
@@ -10635,6 +10639,10 @@ items:
             href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Get supported remote actions
             href: api/cloudpc-getsupportedcloudpcremoteactions.md
+          - name: Power on
+            href: api/cloudpc-poweron.md
+          - name: Power off
+            href: api/cloudpc-poweroff.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
@@ -12005,6 +12013,14 @@ items:
             href: api/device-list-transitivememberof.md
           - name: List device usage rights
             href: api/device-list-usagerights.md
+        - name: Device local credential (preview)
+          items:
+          - name: Device local credential 
+            href: resources/devicelocalcredentialinfo.md
+          - name: List
+            href: api/devicelocalcredentialinfo-list.md
+          - name: Get
+            href: api/devicelocalcredentialinfo-list.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
@@ -15195,6 +15211,15 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
+        - name: Forms activity
+          href: resources/microsoft-forms-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getformsuseractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getformsuseractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getformsuseractivityusercounts.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -16987,18 +17012,36 @@ items:
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
               href: api/callrecords-callrecord-getdirectroutingcalls.md
-          - name: PSTN calls
+          - name: PSTN blocked users log row
             items:
-            - name: PSTN log row
+              - name: PSTN blocked users log row
+                href: resources/callrecords-pstnblockeduserslogrow.md
+              - name: Get PSTN blocked users log
+                href: api/callrecords-callrecord-getpstnblockeduserslog.md
+          - name: PSTN call log row
+            items:
+            - name: PSTN call log row
               href: resources/callrecords-pstncalllogrow.md
-            - name: List PSTN calls
+            - name: Get PSTN calls
               href: api/callrecords-callrecord-getpstncalls.md
+          - name: PSTN online meeting dial-out report
+            items:
+              - name: PSTN online meeting dial-out report
+                href: resources/callrecords-pstnonlinemeetingdialoutreport.md
+              - name: Get PSTN online meeting dial-out report
+                href: api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
           - name: Session
             items:
             - name: Session
               href: resources/callrecords-session.md
             - name: List
               href: api/callrecords-session-list.md
+          - name: SMS
+            items:
+            - name: SMS log row
+              href: resources/callrecords-smslogrow.md
+            - name: Get SMS log
+              href: api/callrecords-callrecord-getsmslog.md
         - name: Online meetings
           items:
           - name: Attendance report
@@ -17072,15 +17115,19 @@ items:
             - name: Create or get
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment (preview)
+            items:
+            - name: Get Virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+          - name: Virtual appointment (deprecated)
             href: resources/virtualappointment.md
             items:
-            - name: Create
+            - name: Create (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get
+            - name: Get (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update
+            - name: Update (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete
+            - name: Delete (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
@@ -17099,6 +17146,27 @@ items:
             href: api/presence-clearuserpreferredpresence.md
           - name: Set user status message
             href: api/presence-setstatusmessage.md
+        - name: Virtual event
+          href: resources/virtualevent.md
+          items:
+          - name: Webinar
+            href: resources/virtualeventwebinar.md
+            items:
+            - name: Get
+              href: api/virtualeventwebinar-get.md
+          - name: Session
+            href: resources/virtualeventsession.md
+            items:
+            - name: Get
+              href: api/virtualeventsession-get.md
+          - name: Registration
+            href: resources/virtualeventregistration.md
+            items:
+            - name: Registrants
+              href: resources/virtualeventregistrant.md
+              items:
+              - name: Get
+                href: api/virtualeventregistrant-get.md
       - name: Devices (preview)
         items:
         - name: Provisioned device

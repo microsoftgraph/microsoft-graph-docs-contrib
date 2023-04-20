@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EventsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new EventsRequestBuilderGetQueryParameters();
+$queryParameters = EventsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->orderby = ["createdDateTime"];
 $queryParameters->skip = 20;
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->events()->get($requestConfiguration);
+$result = $graphServiceClient->me()->events()->get($requestConfiguration);
 
 
 ```

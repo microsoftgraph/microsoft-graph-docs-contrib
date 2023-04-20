@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
+	newReminderTime = @{
+		dateTime = "dateTime-value"
+		timeZone = "timeZone-value"
 	}
 }
 

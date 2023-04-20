@@ -36,12 +36,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationQuestionAnswer",
-  "questionId": "String",
-  "displayName": "String",
-  "value": "String",
   "booleanValue": "Boolean",
+  "displayName": "String",
   "multiChoiceValues": [
     "String"
-  ]
+  ],
+  "questionId": "String",
+  "value": "String"
 }
 ```

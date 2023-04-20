@@ -43,8 +43,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
+  "capacity": "Integer",  
   "id": "String (identifier)",
-  "registrationWebUrl": "String",
-  "capacity": "Integer"
+  "registrationWebUrl": "String"
 }
 ```

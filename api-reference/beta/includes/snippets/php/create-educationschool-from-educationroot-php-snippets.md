@@ -47,7 +47,7 @@ $requestBody->setPhone('+1 (253) 555-0102');
 
 
 
-$requestResult = $graphServiceClient->education()->schools()->post($requestBody);
+$result = $graphServiceClient->education()->schools()->post($requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.GroupsById("group-id").OwnersById("directoryObject-id").Ref().Delete(context.Background(), nil)
+graphClient.Groups().ByGroupId("group-id").Owners().ByOwnerId("directoryObject-id").Ref().Delete(context.Background(), nil)
 
 
 ```

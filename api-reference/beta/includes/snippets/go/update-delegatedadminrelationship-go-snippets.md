@@ -58,7 +58,7 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

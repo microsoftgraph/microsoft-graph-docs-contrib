@@ -50,7 +50,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.SchemaExtensionsById("schemaExtension-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.SchemaExtensions().BySchemaExtensionId("schemaExtension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

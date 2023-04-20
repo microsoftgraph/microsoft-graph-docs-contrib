@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().IndustryData().RunsById("industryDataRun-id").Get(context.Background(), nil)
+result, err := graphClient.External().IndustryData().Runs().ByRunId("industryDataRun-id").Get(context.Background(), nil)
 
 
 ```

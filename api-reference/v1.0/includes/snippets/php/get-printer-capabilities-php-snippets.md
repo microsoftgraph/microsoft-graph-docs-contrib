@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PrinterRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PrinterRequestBuilderGetQueryParameters();
+$queryParameters = PrinterRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","capabilities"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->print()->printersById('printer-id')->get($requestConfiguration);
+$result = $graphServiceClient->print()->printersById('printer-id')->get($requestConfiguration);
 
 
 ```

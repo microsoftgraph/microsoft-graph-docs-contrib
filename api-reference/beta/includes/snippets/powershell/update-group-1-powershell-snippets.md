@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Description = "Contoso Life v2.0"
-	DisplayName = "Contoso Life Renewed"
+	description = "Contoso Life v2.0"
+	displayName = "Contoso Life Renewed"
 }
 
 Update-MgGroup -GroupId $groupId -BodyParameter $params

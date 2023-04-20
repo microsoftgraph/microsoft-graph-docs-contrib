@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RegistrationPostRequestBody();
 $additionalData = [
-'@odata.type' => '#microsoft.graph.externalMeetingRegistration', 
-'allowedRegistrant' => 'everyone', 
+		'@odata.type' => '#microsoft.graph.externalMeetingRegistration', 
+		'allowedRegistrant' => 'everyone', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
