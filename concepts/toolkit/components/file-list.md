@@ -113,7 +113,7 @@ The following example excludes upload of files with file extensions ".doc,.pdf".
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | reload(clearCache = false) | Call the method to reload the component with potential new data based on its properties. Pass `true` to clear the cache before reloading. |
 
-### Example on reloading
+### Reloading example
 
 You can use the `reload()` method that is exposed on `mgt-file-list` by getting the `mgt-file-list` reference from the DOM and triggering the method in a button using the `click` event.
 
@@ -253,7 +253,7 @@ The `mgt-file-list` component supports several [templates](../customize-componen
 | no-data   | No data context is passed     | The template used when no data is available.                      |
 | loading   | No data context is passed     | The template used while the component loads state.                |
 
-### Example template usage
+### Template usage example
 
 ```html
 <mgt-file-list insight-type="shared">
