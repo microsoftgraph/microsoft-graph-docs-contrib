@@ -62,13 +62,13 @@ Namespace: microsoft.graph.externalConnectors
 
 ### externalActivityType values
 
-| Member
-|:--------------
-| viewed
-| modified
-| created
-| commented
-| unknownFutureValue
+| Member             |
+|:-------------------|
+| viewed             |
+| modified           |
+| created            |
+| commented          |
+| unknownFutureValue |
 
 ### externalGroupMemberType values
 
