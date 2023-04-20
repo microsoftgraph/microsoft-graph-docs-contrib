@@ -10,40 +10,37 @@ ms.prod: "data-connect"
 
 This article aims to explain what groups are in Microsoft Graph Data Connect and what the options for scope selection are along with respective examples. Scope selection allows you to specify how you wish to extract objects for "All users in the Office 365 tenant" or to "Select groups from the Office 365 tenant". For more information see [Demystifying User Scopes](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-demystifying-user-scopes/#:~:text=The%20user%20scope%20option%20lets%20you%20either%20specify,Azure%20Active%20Directory%20Security%20or%20Microsoft%20365%20groups.)
 
-You can create and manage several different types of groups in the Microsoft 365 admin center; for details see [Compare Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). Below are the types of groups applicable to Microsoft Graph Data Connect:
+You can create and manage several different types of groups in the Microsoft 365 admin center; for details see [Compare Groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). The following types of groups applicable to Microsoft Graph Data Connect:
 
 *  **Microsoft 365 Groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 * **Distribution groups** are used for sending email notifications to a group of people.
 * **Security groups** are used for granting access to resources such as SharePoint sites.
 * **Mail-enabled security groups** are used for granting access to resources such as SharePoint and emailing notifications to those users.
 
-# Scope selection in Microsoft Graph Data Connect
-You can scope Microsoft Graph Data Connect datasets by users or by groups. The following sections provide more details about the scope options for each.
+## Scope selection in Microsoft Graph Data Connect
+You can scope Microsoft Graph Data Connect datasets by users or by groups. The following sections provide details about the scope options for each.
 
-## User-scoped datasets
-User-scoped datasets can be Messages, Events, Users, etc. These datasets focus on data around the individual user for the respective dataset.
+### User-scoped datasets
+User-scoped datasets can be messages, events, users, and so on. These datasets focus on data around the individual user for the respective dataset.
 
-* Scope Options:
-
+The following are the options for user-scoped datasets:
     * **All users in the tenant**: returns data for all the users in the tenant. Data is extracted for individual users in the selected group. More information, see [User selection and filtering capabilities](https://learn.microsoft.com/en-us/graph/data-connect-filtering).
     * **All users in the tenant with a scope filter**: returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).
         * Scope Filter can help filter down the users desired, if left empty it returns all the data of the users. 
     *	**Select groups from the Microsoft 365 tenant**: data is extracted for individual users in the mentioned group from scope.
 
-*	Groups can be distribution groups, security groups, or M365 groups.
+#### Example
 
-*	MGDC expands the list of users from the scoped groups provided and then extracts data for each of those users.
-
-*	**Example**:  The customer wants to extract the Messages dataset and creates a security group of users A, B, and C in a tenant of 500 users, and passes this group. MGDC expands the provided security group into a list of users, extracts the messages data for those three users and delivers the data for those users to the customer. The customer will only receive the messages dataset for individual users A, B, and C out of their tenant of 500 users.
+A customer wants to extract the messages dataset and creates a security group of users A, B, and C in a tenant of 500 users, and passes this group. Microsoft Graph Data Connect expands the provided security group into a list of users, extracts the messages data for those three users, and delivers the data for those users to the customer. The customer will only receive the messages dataset for individual users A, B, and C out of their tenant of 500 users.
         
-## Group-scoped datasets
+### Group-scoped datasets
 
 Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages, Group Details, etc. These datasets focus on the collective data in a group from Outlook or Teams.
 
-*	Scope Options:
+The following are the options for group-scoped datasets:
     * **All groups in the tenant**: returns data for all the groups in the tenant.
-    * **All groups in the tenant with a scope filter**: returns data for all the groups in the tenant with the scope filter applied. Scope Filter can help filter down the groups desired. 
-    *   **Select groups from the Microsoft 365 tenant**: returns collective data of the selected groups. MGDC looks for data associated with those specific groups rather than the individuals of the group. 
+    * **All groups in the tenant with a scope filter**: Returns data for all the groups in the tenant with the scope filter applied. The scope Filter can help narrow down the list of groups. 
+    *   **Select groups from the Microsoft 365 tenant**: Returns collective data of the selected groups. Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
 
 > **NOTE:**  When the customer specifies a group or groups to be the scope, MGDC looks for data associated with those specific groups rather than the individuals of the group. 
  
@@ -64,31 +61,32 @@ Group-scoped datasets can be Outlook Group Conversations, Teams Channel Messages
 *For Teams datasets: M365 groups must also be Teams enabled.
 *For Group datasets: These don’t contain a primary mailbox, their region will be defaulted to their tenant home region. 
 
-*	**Example**: The customer wants to extract the Group Details dataset with a security group of users A, B, and C out of their tenant of 500 users. Since this is a group scoped dataset, the customer will only receive group details data for the specified group. The customer will NOT receive any individual data for users A, B, and C in the group.
+#### Example
+A customer wants to extract the group details dataset with a security group of users A, B, and C out of their tenant of 500 users. Because this is a group-scoped dataset, the customer will only receive group details data for the specified group. The customer will not receive any individual data for users A, B, and C in the group.
 
-> **NOTE:**  For Teams group-scoped datasets, if the group in scope is not a teams enabled group, then it will return NO data. M365 Groups can be enabled as Teams groups, but distribution groups and security groups are NOT Teams enabled. Please check the steps below to see what type of groups are available to select. 
+> **Note:**  For Teams group-scoped datasets, if the group in scope is not a Teams- enabled group, it will not return any data. Microsoft 365 groups can be enabled as Teams groups, but distribution groups and security groups are not Teams-enabled. The following section provides details about the type of groups that are available to select. 
 
-## How to search and verify for group types
+## Search for and verify group types
 
-These steps can help developers search for the types of groups their tenant have so they can understand what is compatible with the type of scope they want to select given the table above.
+Use the following steps to search for the types of groups in your tenant to help you determine what is compatible with the type of scope you want to select.
 
-1. Once you have selected the group-scoped dataset, search and add a group(s) or group IDs.
+1. After you select the group-scoped dataset, search for and add a group or groups or group IDs.
     
     ![image1](images/data-connect-groups-1.png)
 
-2. Once you have added groups, you can view the group ID. Please copy the group IDs of the groups you would like to verify.
+2. After you add groups, you can view the group ID. Copy the group IDs of the groups you want to verify.
 
     ![image2](images/data-connect-groups-2.png)
 
-3. In a new tab, go to the [Azure homepage](www.portal.azure.com) and click on "Azure Active Directory".
+3. In a new tab, go to the [Azure homepage](www.portal.azure.com) and choose **Azure Active Directory**.
 
     ![image2.5](images/data-connect-groups-2.5.png)
 
-4. Paste the group ID copied from step #2 and click on the Groups tab.
+4. Paste the group ID copied from step 2 and choose the **Groups** tab.
 
     ![image3](images/data-connect-groups-3.png)
 
-5. You can verify the type of group you have once you have clicked on the Groups tab.
+5. Verify the type of group that you have.
 
     ![image4](images/data-connect-groups-4.png)
  
