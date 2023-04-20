@@ -15582,10 +15582,6 @@ items:
             href: resources/externalconnectors-externalitem.md
           - name: Create
             href: api/externalconnectors-externalconnection-put-items.md
-          - name: Get
-            href: api/externalconnectors-externalitem-get.md
-          - name: Update
-            href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
           - name: Add activities
