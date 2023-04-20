@@ -68,7 +68,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "externalitemthis.addactivities"
+  "name": "externalitemthis.addactivities",
+  "sampleKeys": ["{connectionsId}", "{externalItemId}"]
 }
 -->
 ``` http
