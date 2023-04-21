@@ -21,21 +21,13 @@ Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API for online meeting. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). Please note that the virtual event permissions are only required for virtual event attendnace report.
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
-| Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All, VirtualEvent.Read |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | OnlineMeetingArtifact.Read.All |
-
-One of the following permissions is required to call this API for virtual event. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|VirtualEvent.Read, OnlineMeetingArtifact.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All, OnlineMeetingArtifact.Read.All |
+| Application | OnlineMeetingArtifact.Read.All, VirtualEvent.Read.All|
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 

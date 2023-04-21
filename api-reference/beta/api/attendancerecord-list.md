@@ -19,21 +19,13 @@ Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and t
 
 ## Permissions
 
-One of the following permissions is required to call this API for online meeting. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). Please note that the virtual event permissions are only required for virtual event attendnace report.
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
-| Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All, VirtualEvent.Read |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | OnlineMeetingArtifact.Read.All |
-
-One of the following permissions is required to call this API for virtual event. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|VirtualEvent.Read, OnlineMeetingArtifact.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All, OnlineMeetingArtifact.Read.All |
+| Application | OnlineMeetingArtifact.Read.All, VirtualEvent.Read.All|
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -46,7 +38,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a virtual event's attendance report:
+To get attendance records of a virtual event session's attendance report:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
@@ -274,14 +266,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List attendance records of a virtual event attendance report
+### Example 3: List attendance records of a virtual event session's attendance report
 
 #### Request
 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventsession"
+  "name": "get_virtualeventsession_record"
 }
 -->
 ``` http
