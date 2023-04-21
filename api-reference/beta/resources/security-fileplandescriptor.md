@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Specifies the underlying authority that describes the type of content to be retained and its retention schedule. |
 |category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Specifies a group of similar types of content in a particular department.|
-|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Specifies the unique rule or regulation published by a jurisdiction, following which, the label and content to which it is applied is scheduled to be retained or to be deleted. Additionally, you can specify a direct link to the citation and the jurisdiction or agency which published it.|
+|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. 
 |department|[microsoft.graph.security.department](../resources/security-department.md)|Specifies the parent business vertical or department of an organization for a label and in turn the content to which it will be applied.|
 |filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Specifies a unique identifier for an organization’s retention schedule.  |
 
