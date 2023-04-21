@@ -1,6 +1,6 @@
 ---
 title: "categoryTemplate resource type"
-description: "Represents the file plan descriptor of type category for retention labels."
+description: "Specifies a group of similar types of content in a particular department."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type category for retention labels.
+Specifies a group of similar types of content in a particular department.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

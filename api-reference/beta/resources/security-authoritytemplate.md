@@ -1,6 +1,6 @@
 ---
 title: "authorityTemplate resource type"
-description: "Represents the file plan descriptor of type authority for retention labels."
+description: "Specifies the underlying authority that describes the type of content to be retained and its retention schedule."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type authority for retention labels.
+Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "departmentTemplate resource type"
-description: "Represents the file plan descriptor of type department for retention labels."
+description: "Specifies the  department or business unit of an organization to which a label belongs."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type department for retention labels.
+Specifies the  department or business unit of an organization to which a label belongs.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

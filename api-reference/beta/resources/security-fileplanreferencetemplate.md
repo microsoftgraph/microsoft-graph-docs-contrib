@@ -1,6 +1,6 @@
 ---
 title: "filePlanReferenceTemplate resource type"
-description: "Represents the file plan descriptor of type file plan reference for retention labels."
+description: "Specifies a unique alpha-numeric identifier for an organization’s retention schedule."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type file plan reference for retention labels.
+Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

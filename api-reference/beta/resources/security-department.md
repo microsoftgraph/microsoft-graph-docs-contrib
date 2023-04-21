@@ -1,6 +1,6 @@
 ---
 title: "department resource type"
-description: "Represents a unique department applied to a retention label."
+description: "Represents the file plan descriptor of type department applied to a particular retention labels."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a unique department applied to a retention label.
+Represents the file plan descriptor of type department applied to a particular retention labels.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).

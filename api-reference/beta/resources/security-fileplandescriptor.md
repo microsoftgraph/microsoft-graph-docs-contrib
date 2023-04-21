@@ -42,21 +42,21 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Specifies the underlying authority that describes the type of content to be retained and its retention schedule. |
-|category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Specifies a group of similar types of content in a particular department.|
-|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. 
-|department|[microsoft.graph.security.department](../resources/security-department.md)|Specifies the parent business vertical or department of an organization for a label and in turn the content to which it will be applied.|
-|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Specifies a unique identifier for an organization’s retention schedule.  |
+|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Represents the file plan descriptor of type authority applied to a particular retention labels.|
+|appliedcategory|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention labels.|
+|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Represents the file plan descriptor of type citation applied to a particular retention labels.|
+|department|[microsoft.graph.security.department](../resources/security-department.md)|Represents the file plan descriptor of type department applied to a particular retention labels.|
+|filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Represents the file plan descriptor of type filePlanReference applied to a particular retention labels.  |
 
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorityTemplate|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Represents the file plan descriptor of type authority for retention labels.|
-|categoryTemplate|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Represent the file plan descriptor of type category for retention labels.|
-|citationTemplate|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Represent the file plan descriptor of type citation for retention labels.|
-|departmentTemplate|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Represent the file plan descriptor of type department for retention labels.|
-|filePlanReferenceTemplate|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Represent the file plan descriptor of type file plan reference for retention labels.|
+|authorityTemplate|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)| Specifies the underlying authority that describes the type of content to be retained and its retention schedule.|
+|categoryTemplate|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Specifies a group of similar types of content in a particular department.|
+|citationTemplate|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. |
+|departmentTemplate|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Specifies the  department or business unit of an organization to which a label belongs.|
+|filePlanReferenceTemplate|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Specifies a unique alpha-numeric identifier for an organization’s retention schedule.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

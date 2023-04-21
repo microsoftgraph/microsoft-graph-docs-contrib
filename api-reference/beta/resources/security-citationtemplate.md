@@ -1,6 +1,6 @@
 ---
 title: "citationTemplate resource type"
-description: "Represents the file plan descriptor of type citation for retention labels."
+description: "he specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type citation for retention labels.
+he specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
