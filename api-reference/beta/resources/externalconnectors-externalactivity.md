@@ -32,7 +32,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|performedBy|[identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity.|
+|performedBy|[microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity.|
 
 ## JSON representation
 
