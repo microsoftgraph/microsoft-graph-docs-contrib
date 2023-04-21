@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().MessagesById("message-id").Send().Post(context.Background(), nil)
+graphClient.Me().Messages().ByMessageId("message-id").Send().Post(context.Background(), nil)
 
 
 ```

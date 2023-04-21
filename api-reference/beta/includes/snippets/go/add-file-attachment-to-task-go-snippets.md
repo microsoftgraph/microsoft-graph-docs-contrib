@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

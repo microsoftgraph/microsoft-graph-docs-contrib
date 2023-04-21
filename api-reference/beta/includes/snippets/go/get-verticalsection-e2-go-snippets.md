@@ -22,7 +22,7 @@ configuration := &graphconfig.SiteItemPageItemCanvasLayoutVerticalSectionRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").CanvasLayout().VerticalSection().Get(context.Background(), configuration)
+result, err := graphClient.Sites().BySiteId("site-id").Pages().ByPageId("sitePage-id").CanvasLayout().VerticalSection().Get(context.Background(), configuration)
 
 
 ```
