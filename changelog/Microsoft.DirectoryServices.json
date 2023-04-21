@@ -62,6 +62,30 @@
       "ChangeList": [
         {
           "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **inboundOutboundPolicyConfiguration** resource.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
           "ChangeType": "Addition",

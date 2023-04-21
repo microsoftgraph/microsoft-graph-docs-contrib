@@ -29,6 +29,7 @@ For any partner-specific property that is `null`, these settings will inherit th
 
 |Property|Type|Description|
 |:---|:---|:---|
+| automaticUserConsentSettings | [inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md) | Determines the partner-specific configuration for automatic user consent settings. Unless specifically configured, the `inboundAllowed` and `outboundAllowed` properties will be **null** and inherit from the default settings, which is always `false`. |
 | b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. |
 | b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. |
@@ -71,6 +72,9 @@ The following is a JSON representation of the resource.
   },
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  },
+  "automaticUserConsentSettings": {
+    "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
   },
   "isServiceProvider": "Boolean",
   "tenantId": "String (identifier)"
