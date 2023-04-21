@@ -20,10 +20,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authorityTemplates](../api/security-list-authoritytemplate.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Get a list of the [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) objects and their properties.|
-|[Create authorityTemplate](../api/security-post-authoritytemplate.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Create a new [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
+|[List authorityTemplates](../api/security-authoritytemplate-list.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Get a list of the [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) objects and their properties.|
+|[Create authorityTemplate](../api/security-authoritytemplate-post.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Create a new [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
 |[Get authorityTemplate](../api/security-authoritytemplate-get.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
-|[Delete authorityTemplate](../api/security-delete-authoritytemplate.md)|None|Delete a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
+|[Delete authorityTemplate](../api/security-authoritytemplate-delete.md)|None|Delete a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

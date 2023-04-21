@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List citationTemplates](../api/security-list-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.|
-|[Create citationTemplate](../api/security-post-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[List citationTemplates](../api/security-citationtemplate-list.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get a list of the [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) objects and their properties.|
+|[Create citationTemplate](../api/security-citationtemplate-post.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
 |[Get citationTemplate](../api/security-citationtemplate-get.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Read the properties and relationships of a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
-|[Delete citationTemplate](../api/security-delete-citationtemplate.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
+|[Delete citationTemplate](../api/security-citationtemplate-delete.md)|None|Delete a [microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

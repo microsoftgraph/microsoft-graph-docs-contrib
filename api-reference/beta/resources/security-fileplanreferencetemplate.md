@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filePlanReferenceTemplates](../api/security-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get a list of the [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) objects and their properties.|
-|[Create filePlanReferenceTemplate](../api/security-post-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
+|[List filePlanReferenceTemplates](../api/security-fileplanreferencetemplate-list.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get a list of the [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) objects and their properties.|
+|[Create filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-post.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
 |[Get filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-get.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Read the properties and relationships of a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
-|[Delete filePlanReferenceTemplate](../api/security-delete-fileplanreferencetemplate.md)|None|Delete a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
+|[Delete filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-delete.md)|None|Delete a [microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|

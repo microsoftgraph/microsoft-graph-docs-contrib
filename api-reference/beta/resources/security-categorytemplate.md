@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List categoryTemplates](../api/security-list-categorytemplate.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) collection|Get a list of the [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) objects and their properties.|
-|[Create categoryTemplate](../api/security-post-categorytemplate.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
+|[List categoryTemplates](../api/security-categorytemplate-list.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) collection|Get a list of the [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) objects and their properties.|
+|[Create categoryTemplate](../api/security-categorytemplate-post.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[Get categoryTemplate](../api/security-categorytemplate-get.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
-|[Delete categoryTemplate](../api/security-delete-categorytemplate.md)|None|Delete a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
+|[Delete categoryTemplate](../api/security-categorytemplate-delete.md)|None|Delete a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[List subCategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get the subCategoryTemplate resources from the subCategories navigation property.|
 |[Create subCategoryTemplate](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new subCategoryTemplate object.|
 

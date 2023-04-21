@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/securit
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List departmentTemplates](../api/security-list-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) objects and their properties.|
-|[Create departmentTemplate](../api/security-post-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
+|[List departmentTemplates](../api/security-departmenttemplate-list.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get a list of the [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) objects and their properties.|
+|[Create departmentTemplate](../api/security-departmenttemplate-post.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
 |[Get departmentTemplate](../api/security-departmenttemplate-get.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Read the properties and relationships of a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
-|[Delete departmentTemplate](../api/security-delete-departmenttemplate.md)|None|Delete a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
+|[Delete departmentTemplate](../api/security-departmenttemplate-delete.md)|None|Delete a [microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) object.|
 
 ## Properties
 |Property|Type|Description|
