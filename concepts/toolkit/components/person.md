@@ -79,38 +79,34 @@ The `mgt-person` component defines the following CSS custom properties.
 
 ```css
 mgt-person {
-  --avatar-size: 48px;
-  --avatar-border: 0;
-  --avatar-border-radius: 50%;
-  --avatar-cursor: default;
-
-  --initials-color: white;
-  --initials-background-color: magenta;
-
-  --presence-background-color: #ffffff;
-  --presence-icon-color: #ffffff;
-
-  --font-family: 'Segoe UI';
-  --font-size: 14px;
-  --font-weight: 500;
-  --color: black;
-  --text-transform: none;
-
-  --line2-font-size: 12px;
-  --line2-font-weight: 400;
-  --line2-color: black;
-  --line2-text-transform: none;
-
-  --line3-font-size: 12px;
-  --line3-font-weight: 400;
-  --line3-color: black;
-  --line3-text-transform: none;
-
-  --details-spacing: 12px;
-
-  --person-flex-direction: row;
-
-  --focus-offset: 11px;
+  --person-background-color: #616161;
+  --person-background-border-radius: 30%;
+  --person-avatar-size: 40px;
+  --person-avatar-border: 3px solid yellow;
+  --person-avatar-border-radius: 54%;
+  --person-initials-text-color: white;
+  --person-initials-background-color: blue;
+  --person-line1-font-size: 32px;
+  --person-line1-font-weight: 600;
+  --person-line1-text-color: red;
+  --person-line1-text-transform: capitalize;
+  --person-line1-text-line-height: 20px;
+  --person-line2-font-size: 28px;
+  --person-line2-font-weight: 500;
+  --person-line2-text-color: orange;
+  --person-line2-text-transform: full-width;
+  --person-line2-text-line-height: 16px;
+  --person-line3-font-size: 24px;
+  --person-line3-font-weight: 400;
+  --person-line3-text-color: blue;
+  --person-line3-text-transform: uppercase;
+  --person-line3-text-line-height: 12px;
+  --person-line4-font-size: 20px;
+  --person-line4-font-weight: 300;
+  --person-line4-text-color: green;
+  --person-line4-text-transform: lowercase;
+  --person-line4-text-line-height: 12px;
+  --person-details-spacing: 30px;
 }
 ```
 
@@ -199,6 +195,13 @@ The following example defines a template for the person component.
       {{person.mail}}
     </div>
   </template>
+</mgt-person>
+
+<!-- Person-card template -->
+<mgt-person person-query="me" view="twolines" person-card="hover">
+	<template data-type="person-card">
+		My custom person card experience
+	</template>
 </mgt-person>
 ```
 
