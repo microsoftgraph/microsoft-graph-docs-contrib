@@ -1,6 +1,6 @@
 ---
 title: "externalActivityResult resource type"
-description: "Represents the result of processing an externalActivity"
+description: "Represents the result of processing an externalActivity."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
