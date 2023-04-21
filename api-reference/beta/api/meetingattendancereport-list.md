@@ -21,13 +21,21 @@ Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API for online meeting. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
+
+One of the following permissions is required to call this API for virtual event. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|VirtualEvent.Read and OnlineMeetingArtifact.Read.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|VirtualEvent.Read.All and OnlineMeetingArtifact.Read.All |
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -38,6 +46,12 @@ To get all attendance reports for an online meeting with delegated (`/me`) and a
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
+```
+
+To get all attendance reports for a virtual event session:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
 ```
 
 > [!TIP]
@@ -67,6 +81,8 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 > The **attendanceRecords** property is empty in the response.
 
 ## Example
+
+### Example 1: List attendance reports for an online meeting
 
 ### Request
 
@@ -139,6 +155,52 @@ Content-Type: application/json
       "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
       "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
       "attendanceRecords": []
+    }
+  ]
+}
+```
+### Example 2 : List attendance reports for a virtual event session
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualevent_attendancereport"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.meetingAttendanceReport)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports/$entity",
+  "value": [
+    {
+      "id": "c9b6db1c-d5eb-427d-a5c0-2022d7",
+      "totalParticipantCount": 1,
+      "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
+      "meetingEndDateTime": "2021-10-05T04:43:49.77Z"
+    },
+    {
+      "id": "2c2c2454-7613-4d6e-9c7c-4ce89",
+      "totalParticipantCount": 2,
+      "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+      "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
     }
   ]
 }

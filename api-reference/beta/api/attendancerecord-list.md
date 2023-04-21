@@ -19,13 +19,21 @@ Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API for online meeting. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
+
+One of the following permissions is required to call this API for virtual event. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|VirtualEvent.Read and OnlineMeetingArtifact.Read.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|VirtualEvent.Read.All and OnlineMeetingArtifact.Read.All |
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -36,6 +44,12 @@ To get attendance records of an attendance report with delegated (`/me`) and app
 ``` http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+```
+
+To get attendance records of a virtual event's attendance report:
+<!-- {"blockType": "ignored"}-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
@@ -256,6 +270,77 @@ Content-Type: application/json
               }
           ]
       }
+  ]
+}
+```
+
+### Example 3: List attendance records of a virtual event attendance report
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventsession"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendancerecords
+```
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('336f94f4-3a81-5130-43e9-88f3-fcb3582cde37')/sessions('a0f934c324b7785c')/attendanceReports('2c2454-7613-4d6e-9c7c-4c8')/attendancerecords",
+   "value": [
+    {
+      "emailAddress": "frederick.cormier@contoso.com",
+      "totalAttendanceInSeconds": 322,
+      "role": "Organizer",
+      "registrantId": null,
+      "identity": {
+        "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
+        "displayName": "Frederick Cormier",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-05T04:38:27.6027225Z",
+          "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
+          "durationInSeconds": 322
+        }
+      ]
+    },
+    {
+      "emailAddress": "lisa.adkins@contoso.com",
+      "totalAttendanceInSeconds": 314,
+      "role": "Presenter",
+      "registrantId": null,
+      "identity": {
+        "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
+        "displayName": "Lisa Adkins",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-04T23:13:43.3776519Z",
+          "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
+          "durationInSeconds": 314
+        }
+      ]
+    }
   ]
 }
 ```
