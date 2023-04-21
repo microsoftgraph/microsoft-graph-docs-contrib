@@ -4,7 +4,7 @@ description: "A collection of groups that are enabled to use an authentication m
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodTarget resource type
