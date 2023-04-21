@@ -12020,7 +12020,7 @@ items:
           - name: List
             href: api/devicelocalcredentialinfo-list.md
           - name: Get
-            href: api/devicelocalcredentialinfo-list.md
+            href: api/devicelocalcredentialinfo-get.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
