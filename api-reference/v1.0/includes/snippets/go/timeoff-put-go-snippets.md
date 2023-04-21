@@ -49,7 +49,7 @@ draftTimeOff.SetTheme(&theme)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().TimesOffById("timeOff-id").Put(context.Background(), requestBody, configuration)
+graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().ByTimesOff().Id("timeOff-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

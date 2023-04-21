@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").EdiscoveryClose().Post(context.Background(), nil)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").EdiscoveryClose().Post(context.Background(), nil)
 
 
 ```

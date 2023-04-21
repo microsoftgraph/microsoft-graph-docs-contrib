@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.UsersById("user-id").Authentication().TemporaryAccessPassMethodsById("temporaryAccessPassAuthenticationMethod-id").Get(context.Background(), nil)
+result, err := graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().ByTemporaryAccessPassMethodId("temporaryAccessPassAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

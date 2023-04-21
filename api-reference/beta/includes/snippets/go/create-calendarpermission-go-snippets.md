@@ -29,7 +29,7 @@ requestBody.SetIsRemovable(&isRemovable)
 role := graphmodels.READ_CALENDARROLETYPE 
 requestBody.SetRole(&role) 
 
-result, err := graphClient.UsersById("user-id").Calendar().CalendarPermissions().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Communications().CallsById("call-id").KeepAlive().Post(context.Background(), nil)
+graphClient.Communications().Calls().ByCallId("call-id").KeepAlive().Post(context.Background(), nil)
 
 
 ```

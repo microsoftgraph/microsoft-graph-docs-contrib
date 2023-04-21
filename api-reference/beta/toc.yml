@@ -1578,8 +1578,8 @@ items:
           href: api/subscription-update.md
         - name: Delete
           href: api/subscription-delete.md
-      - name: Change notification collection
-        href: resources/changenotificationcollection.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -12013,6 +12013,14 @@ items:
             href: api/device-list-transitivememberof.md
           - name: List device usage rights
             href: api/device-list-usagerights.md
+        - name: Device local credential (preview)
+          items:
+          - name: Device local credential 
+            href: resources/devicelocalcredentialinfo.md
+          - name: List
+            href: api/devicelocalcredentialinfo-list.md
+          - name: Get
+            href: api/devicelocalcredentialinfo-get.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
@@ -13293,7 +13301,7 @@ items:
               href: api/authenticationstrengthpolicy-update.md
             - name: Delete
               href: api/authenticationstrengthroot-delete-policies.md
-            - name: Find by method mode
+            - name: Find by method mode (deprecated)
               href: api/authenticationstrengthpolicy-findbymethodmode.md
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
@@ -15203,6 +15211,15 @@ items:
             href: api/adminreportsettings-get.md
           - name: Update
             href: api/adminreportsettings-update.md
+        - name: Forms activity
+          href: resources/microsoft-forms-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getformsuseractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getformsuseractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getformsuseractivityusercounts.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -17167,15 +17184,19 @@ items:
             - name: Create or get
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment (preview)
+            items:
+            - name: Get Virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+          - name: Virtual appointment (deprecated)
             href: resources/virtualappointment.md
             items:
-            - name: Create
+            - name: Create (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get
+            - name: Get (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update
+            - name: Update (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete
+            - name: Delete (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
@@ -17261,6 +17282,19 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
+        - name: Learning course activities (preview)
+          href: resources/learningcourseactivity.md
+          items:
+          - name: List
+            href: api/learningcourseactivity-list.md
+          - name: Create
+            href: api/employeeexperienceuser-post-learningcourseactivities.md
+          - name: Get
+            href: api/learningcourseactivity-get.md
+          - name: Update
+            href: api/learningcourseactivity-update.md
+          - name: Delete
+            href: api/learningcourseactivity-delete.md
       - name: Messaging
         items:
         - name: Activity feed
