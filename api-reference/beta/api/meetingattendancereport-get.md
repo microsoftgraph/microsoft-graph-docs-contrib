@@ -32,9 +32,9 @@ One of the following permissions is required to call this API for virtual event.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|VirtualEvent.Read and OnlineMeetingArtifact.Read.All |
+|Delegated (work or school account)|VirtualEvent.Read, OnlineMeetingArtifact.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All and OnlineMeetingArtifact.Read.All |
+|Application|VirtualEvent.Read.All, OnlineMeetingArtifact.Read.All |
 
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
