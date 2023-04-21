@@ -1,0 +1,11 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData -OutboundSharedUserProfileUserId $outboundSharedUserProfileUserId -TenantReferenceTenantId $tenantReferenceTenantId
+
+```

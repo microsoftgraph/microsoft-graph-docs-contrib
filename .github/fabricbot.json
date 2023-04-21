@@ -1236,10 +1236,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1289,10 +1294,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1366,10 +1376,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -4229,6 +4244,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - changes requested",
@@ -4236,7 +4257,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "Hello, @${issueAuthor}. \n\nYour PR has been in \"Changes requested\" state for 2 weeks. \n\nPlease address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. \n\nThank you!\n"
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR has been in \"Changes requested\" state for more than 2 weeks. \n\nPlease address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. \n\nThank you!\n"
             }
           }
         ]
@@ -4333,6 +4354,12 @@
           {
             "name": "isOpen",
             "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
           }
         ],
         "taskName": "Notification for idle PRs - complete",
@@ -4340,7 +4367,7 @@
           {
             "name": "addReply",
             "parameters": {
-              "comment": "Hello, @${issueAuthor}. \n\nYour PR was approved by your reviewer 2 weeks ago.\n\nPlease add the label \"ready to merge\" when you are ready to publish your PR.\n\nThank you!"
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR was approved by your reviewer more than 2 weeks ago.\n\nPlease add the label \"ready to merge\" when you are ready to publish your PR.\n\nThank you!"
             }
           }
         ]

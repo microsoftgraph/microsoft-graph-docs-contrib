@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Settings/ShiftPreferences"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewShiftPreferencesPutRequestBody()
 additionalData := map[string]interface{}{
@@ -45,7 +53,7 @@ timeSlots := null
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.UsersById("user-id").Settings().ShiftPreferences().Put(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Put(context.Background(), requestBody, nil)
 
 
 ```

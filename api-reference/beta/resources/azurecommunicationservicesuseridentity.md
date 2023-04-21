@@ -1,7 +1,7 @@
 --- 
 title: "azureCommunicationServicesUserIdentity resource type"
 description: "Represents the identity of a participant who joined the communication via Azure Communication Services."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

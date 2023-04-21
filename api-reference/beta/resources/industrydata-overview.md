@@ -19,7 +19,7 @@ The industry data API is defined in the OData subnamespace `microsoft.graph.indu
 
 ## Industry data API and education
 
-The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake, the API utilizes the data in multiple outbound flows, synchronizing data with [Insights for Education Leaders](https://support.microsoft.com/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export) for custom analytics scenarios.
+The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake <!-- the API utilizes the data in multiple outbound flows, --> SDS can synchronize the data with [Insights for Education Leaders](/schooldatasync/enable-sync-with-insights), for use with the Insights app in Teams for Education, and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export), for custom analytics scenarios.
 
 ![Illustration of the industry data ETL process](/graph/images/industrydata-overview.png)
 
@@ -69,8 +69,8 @@ You can integrate industry data APIs with third-party apps. For details about ho
 | Use case                                                   | REST resource                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
 | Create an activity to import a delimited data set          | [inboundFileFlow](../resources/industrydata-inboundfileflow.md)               | [inboundFileFlow methods](../resources/industrydata-inboundfileflow.md#methods)               |
-| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 | Define a source of inbound data                             | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | [sourceSystemDefinition methods](../resources/industrydata-sourcesystemdefinition.md#methods) |
+| Create a connector to post data to an Azure Data Lake (if CSV)| [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 
 <!--
 ## Concepts

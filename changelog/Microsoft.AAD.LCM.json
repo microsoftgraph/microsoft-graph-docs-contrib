@@ -39,6 +39,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2a266136-d0ba-48a7-a979-38439d2173a8",
+          "ApiChange": "Permission",
+          "ChangedApiName": "LifecycleWorkflows.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the **LifecycleWorkflows.ReadWrite.All** delegated and application permissions to the read and write operations of the [taskProcessingResult: resume](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta) API call.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "2a266136-d0ba-48a7-a979-38439d2173a8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-05T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecycleWorkflows",
@@ -347,6 +365,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-31T00:00:00.8909237Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailSettings](https://learn.microsoft.com/en-us/graph/api/resources/emailSettings?view=graph-rest-beta) resource type.",
+          "Target": "emailSettings"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Property",
+          "ChangedApiName": "emailSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **emailSettings** property to the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-beta) resource.",
+          "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdPopTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Target": "azureAdPopTokenAuthentication"
+        },
+        {
+          "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizedApps** property to the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customtaskextensioncallbackconfiguration?view=graph-rest-beta) resource.",
+          "Target": "customTaskExtensionCallbackConfiguration"
+        }
+      ],
+      "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-21T09:13:11.1773353Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

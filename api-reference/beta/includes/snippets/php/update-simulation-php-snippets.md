@@ -26,7 +26,7 @@ $includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTarget
 $includedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
 $additionalData = [
-'accountTargetEmails' => ['faiza@contoso.com', ],
+		'accountTargetEmails' => ['faiza@contoso.com', ],
 ];
 $includedAccountTarget->setAdditionalData($additionalData);
 
@@ -39,7 +39,7 @@ $excludedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTarget
 $excludedAccountTarget->setType(new AccountTargetContentType('addressbook'));
 
 $additionalData = [
-'accountTargetEmails' => ['sam@contoso.com', ],
+	'accountTargetEmails' => ['sam@contoso.com', ],
 ];
 $excludedAccountTarget->setAdditionalData($additionalData);
 
@@ -55,7 +55,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->patch($requestBody);
+$result = $graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->patch($requestBody);
 
 
 ```

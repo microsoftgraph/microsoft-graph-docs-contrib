@@ -8,20 +8,20 @@ Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	Message = @{
-		Subject = "Project kickoff"
-		ToRecipients = @(
+		subject = "Project kickoff"
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Name = "Samantha Booth"
-					Address = "samanthab@contoso.onmicrosoft.com"
+				emailAddress = @{
+					name = "Samantha Booth"
+					address = "samanthab@contoso.onmicrosoft.com"
 				}
 			}
 		)
-		Mentions = @(
+		mentions = @(
 			@{
-				Mentioned = @{
-					Name = "Dana Swope"
-					Address = "danas@contoso.onmicrosoft.com"
+				mentioned = @{
+					name = "Dana Swope"
+					address = "danas@contoso.onmicrosoft.com"
 				}
 			}
 		)

@@ -11,10 +11,10 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CustomQuestion();
 $additionalData = [
-'@odata.type' => '#microsoft.graph.bookingCustomQuestion', 
-'displayName' => 'What is your age?', 
-'answerInputType' => 'text', 
-'answerOptions' => [],
+		'@odata.type' => '#microsoft.graph.bookingCustomQuestion', 
+		'displayName' => 'What is your age?', 
+		'answerInputType' => 'text', 
+		'answerOptions' => [],
 ];
 $requestBody->setAdditionalData($additionalData);
 
