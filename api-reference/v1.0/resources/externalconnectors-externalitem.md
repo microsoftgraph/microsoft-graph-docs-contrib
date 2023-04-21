@@ -31,9 +31,10 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
 
 ## Relationships
+
 | Relationship | Type                                                     | Description |
 |:-------------|:---------------------------------------------------------|:---|
-| activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Write-only property. Returns a list of activities performed on the item. |
+| activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Returns a list of activities performed on the item. Write-only. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
