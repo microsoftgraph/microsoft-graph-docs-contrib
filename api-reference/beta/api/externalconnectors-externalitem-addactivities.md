@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/contosohr/items/TSP228082938/addActivities
+POST /connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
 
-A `207 Multi-Status` response code indicates that only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload, looking at the error field for each **externalActivityResult** to determine why the **externalActivity** instance was not processed and what action can be taken. A `null` error field indicates a successful **externalActivityResult**.
+A `207 Multi-Status` response code indicates that only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload, looking at the error field for each **externalActivityResult** to determine why the **externalActivity** instance was not processed and what action can be taken. A `null` **error** property indicates a successful **externalActivityResult**.
 
 ## Examples
 
