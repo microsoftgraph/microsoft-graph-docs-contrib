@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of ZebraFotaConnector.|
-|state|** Unknown Type `microsoft.intune.core.msGraph.zebraFotaConnectorState` **|The Zebra connector state.|
+|state|[zebraFotaConnectorState](../resources/intune-androidfotaservice-zebrafotaconnectorstate.md)|The Zebra connector state. Possible values are: `none`, `connected`, `disconnected`, `unknownFutureValue`.|
 |enrollmentToken|String|Tenant enrollment token from Zebra. The token is used to enroll Zebra devices in the FOTA Service via app config.|
 |enrollmentAuthorizationUrl|String|Complete account enrollment authorization URL. This corresponds to verification_uri_complete in the Zebra API documentations.|
 |lastSyncDateTime|DateTimeOffset|Date and time when the account was last synched with Zebra|
@@ -67,11 +67,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/zebraFotaConnector
 Content-type: application/json
-Content-length: 311
+Content-length: 306
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaConnector",
-  "state": "<Unknown None>",
+  "state": "connected",
   "enrollmentToken": "Enrollment Token value",
   "enrollmentAuthorizationUrl": "https://example.com/enrollmentAuthorizationUrl/",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -84,12 +84,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 360
+Content-Length: 355
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaConnector",
-  "id": "38820961-0961-3882-6109-823861098238",
-  "state": "<Unknown None>",
+  "id": "2301310a-310a-2301-0a31-01230a310123",
+  "state": "connected",
   "enrollmentToken": "Enrollment Token value",
   "enrollmentAuthorizationUrl": "https://example.com/enrollmentAuthorizationUrl/",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
