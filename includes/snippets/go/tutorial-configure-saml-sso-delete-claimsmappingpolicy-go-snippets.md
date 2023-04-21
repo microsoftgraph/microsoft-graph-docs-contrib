@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().ClaimsMappingPoliciesById("claimsMappingPolicy-id").Delete(context.Background(), nil)
+graphClient.Policies().ClaimsMappingPolicies().ByClaimsMappingPolicieId("claimsMappingPolicy-id").Delete(context.Background(), nil)
 
 
 ```

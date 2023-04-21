@@ -25,7 +25,7 @@ answerOptions := []string {
 }
 requestBody.SetAnswerOptions(answerOptions)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").CustomQuestionsById("bookingCustomQuestion-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").CustomQuestions().ByCustomQuestionId("bookingCustomQuestion-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

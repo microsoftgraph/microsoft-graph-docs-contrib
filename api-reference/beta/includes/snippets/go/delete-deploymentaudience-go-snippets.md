@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Admin().Windows().Updates().DeploymentAudiencesById("deploymentAudience-id").Delete(context.Background(), nil)
+graphClient.Admin().Windows().Updates().DeploymentAudiences().ByDeploymentAudienceId("deploymentAudience-id").Delete(context.Background(), nil)
 
 
 ```

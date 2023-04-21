@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").SourceCollectionsById("sourceCollection-id").NoncustodialSourcesById("noncustodialDataSource-id").Post(context.Background(), requestBody, nil)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").SourceCollections().BySourceCollectionId("sourceCollection-id").NoncustodialSources().ByNoncustodialSourceId("noncustodialDataSource-id").Post(context.Background(), requestBody, nil)
 
 
 ```

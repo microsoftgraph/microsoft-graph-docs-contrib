@@ -21,7 +21,7 @@ isDialInBypassEnabled := true
 lobbyBypassSettings.SetIsDialInBypassEnabled(&isDialInBypassEnabled) 
 requestBody.SetLobbyBypassSettings(lobbyBypassSettings)
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

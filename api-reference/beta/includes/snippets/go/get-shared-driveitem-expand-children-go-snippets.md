@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/shares"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.DriveItemRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ShareItemDriveItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"children"},
 }
-configuration := &graphconfig.DriveItemRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ShareItemDriveItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SharesById("sharedDriveItem-id").DriveItem().Get(context.Background(), configuration)
+result, err := graphClient.Shares().ByShareId("sharedDriveItem-id").DriveItem().Get(context.Background(), configuration)
 
 
 ```

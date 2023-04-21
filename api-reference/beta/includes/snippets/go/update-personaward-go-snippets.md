@@ -21,7 +21,7 @@ requestBody.SetIssuingAuthority(&issuingAuthority)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl) 
 
-result, err := graphClient.UsersById("user-id").Profile().AwardsById("personAward-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Profile().Awards().ByAwardId("personAward-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

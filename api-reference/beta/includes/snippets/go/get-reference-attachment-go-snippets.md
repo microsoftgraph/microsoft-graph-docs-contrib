@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().EventsById("event-id").AttachmentsById("attachment-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().ByAttachmentId("attachment-id").Get(context.Background(), nil)
 
 
 ```

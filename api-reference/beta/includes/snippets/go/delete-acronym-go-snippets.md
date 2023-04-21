@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Search().AcronymsById("acronym-id").Delete(context.Background(), nil)
+graphClient.Search().Acronyms().ByAcronymId("acronym-id").Delete(context.Background(), nil)
 
 
 ```
