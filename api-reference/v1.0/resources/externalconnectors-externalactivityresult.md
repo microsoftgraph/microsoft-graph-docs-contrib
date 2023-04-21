@@ -27,7 +27,7 @@ Inherits from [externalActivity](../resources/externalconnectors-externalactivit
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|performedBy|[identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity. Inherited from [externalActivity](../resources/externalconnectors-externalactivity.md).|
+|performedBy|[microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md)|Represents an identity used to identify who is responsible for the activity. Inherited from [externalActivity](../resources/externalconnectors-externalactivity.md).|
 
 ## JSON representation
 
