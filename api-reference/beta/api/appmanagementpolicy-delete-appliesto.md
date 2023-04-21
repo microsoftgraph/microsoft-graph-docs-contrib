@@ -64,7 +64,7 @@ The following is an example of the request to remove an appManagementPolicy from
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$ref
+DELETE https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/{App Management Policy ID}/$ref
 Content-type: application/json
 
 {
@@ -122,7 +122,7 @@ The following is an example of the request to remove an appManagementPolicy from
 }-->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolicies/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolicies/{App Management Policy ID}/$ref
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
