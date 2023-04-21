@@ -15,6 +15,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object.
 
+Base type of [externalActivityResult](../resources/externalconnectors-externalactivityresult.md).
+
 ## Methods
 
 None.
