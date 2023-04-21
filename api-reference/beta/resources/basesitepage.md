@@ -22,7 +22,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 | :--------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
 | [List baseSitePage](../api/baseSitePage-list.md)     | [baseSitePage](../resources/baseSitePage.md) collection | Get a list of the [baseSitePage](../resources/baseSitePage.md) objects and their properties. |
 | [Get baseSitePage](../api/baseSitePage-get.md)       | [baseSitePage](../resources/sitepage.md)                | Read the properties and relationships of a [sitePage](../resources/sitepage.md) object.      |
-| [Delete baseSitePage](../api/baseSitePage-delete.md) | None                                                    | Deletes a [baseSitePage](../resources/baseSitePage.md) object.                               |
+| [Delete baseSitePage](../api/baseSitePage-delete.md) | None                                                    | Delete a [baseSitePage](../resources/baseSitePage.md) object.                               |
 
 ## Properties
 
