@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners?$select=tenantId&$expand=identitySynchronization
+GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partners?$select=tenantId&$expand=identitySynchronization
 ```
 
 #### Response
