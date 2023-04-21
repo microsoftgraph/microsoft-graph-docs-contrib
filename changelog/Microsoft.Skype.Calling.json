@@ -9,32 +9,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **meetingChatHistoryDefaultMode** enumeration type.",
           "Target": "meetingChatHistoryDefaultMode"
-        }
-      ],
-      "Id": "ff343287-bb5a-446a-b91f-7ea65d7842db",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-01-25T06:54:01.89062Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
-    },
-    {
-      "ChangeList": [
+        },
         {
           "Id": "700d5989-32ce-41d8-8b4e-de666698df3c",
           "ApiChange": "Property",
           "ChangedApiName": "shareMeetingChatHistoryDefault",
           "ChangeType": "Addition",
-          "Description": "Added the `shareMeetingChatHistoryDefault` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **shareMeetingChatHistoryDefault** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "700d5989-32ce-41d8-8b4e-de666698df3c",
+      "Id": "ff343287-bb5a-446a-b91f-7ea65d7842db",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-01-25T06:54:01.8912554Z",
+      "CreatedDateTime": "2023-04-20T06:54:01.89062Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Call"
     },
     {
       "ChangeList": [
