@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-Represents the result of processing an [externalActivity](../resources/externalconnectors-externalactivity.md). A `null` in the response object indicates a successful request.
+Represents the result of processing an [externalActivity](../resources/externalconnectors-externalactivity.md). A `null` **error** property in the response object indicates a successful request.
 
 Inherits from [externalActivity](../resources/externalconnectors-externalactivity.md).
 
