@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of processing an [externalActivity](../resources/externalconnectors-externalactivity.md). A `null` in the response object indicates a successful request.
+Represents the result of processing an [externalActivity](../resources/externalconnectors-externalactivity.md). A `null` **error** property in the response object indicates a successful request.
 
 Inherits from [externalActivity](../resources/externalconnectors-externalactivity.md).
 
