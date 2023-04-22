@@ -21,7 +21,7 @@ allowedToCreateApps := false
 defaultUserRolePermissions.SetAllowedToCreateApps(&allowedToCreateApps) 
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 
-result, err := graphClient.Policies().AuthorizationPolicyById("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().AuthorizationPolicy().ByAuthorizationPolicy().Id("authorizationPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetAllowedAudiences(&allowedAudiences)
 displayName := "Secret Hideout"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.UsersById("user-id").Profile().AddressesById("itemAddress-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Profile().Addresses().ByAddresseId("itemAddress-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

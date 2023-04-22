@@ -38,7 +38,7 @@ keyCredentials := []graphmodels.KeyCredentialable {
 }
 requestBody.SetKeyCredentials(keyCredentials)
 
-result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

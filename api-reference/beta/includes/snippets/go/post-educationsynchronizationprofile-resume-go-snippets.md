@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Education().SynchronizationProfilesById("educationSynchronizationProfile-id").Resume().Post(context.Background(), nil)
+graphClient.Education().SynchronizationProfiles().BySynchronizationProfileId("educationSynchronizationProfile-id").Resume().Post(context.Background(), nil)
 
 
 ```
