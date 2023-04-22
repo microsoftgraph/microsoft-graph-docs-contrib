@@ -19,7 +19,7 @@ This API provides calling functionality as well as the ability to create and ret
 One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the cloud communications API. These permissions need to be granted by the administrator.
 
 | Scenario     | Permissions                                                                                                                     |
-|-:------------|-:-------------------------------------------------------------------------------------------------------------------------------|
+|:-------------|:--------------------------------------------------------------------------------------------------------------------------------|
 | Call records | CallRecords.Read.All                                                                                                            |
 | Calling      | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.AccessMedia.All |
 | Meetings     | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All                                                                           |
