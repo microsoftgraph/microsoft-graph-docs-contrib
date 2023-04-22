@@ -1578,8 +1578,8 @@ items:
           href: api/subscription-update.md
         - name: Delete
           href: api/subscription-delete.md
-      - name: Change notification collection
-        href: resources/changenotificationcollection.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -12020,7 +12020,7 @@ items:
           - name: List
             href: api/devicelocalcredentialinfo-list.md
           - name: Get
-            href: api/devicelocalcredentialinfo-list.md
+            href: api/devicelocalcredentialinfo-get.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
@@ -13301,7 +13301,7 @@ items:
               href: api/authenticationstrengthpolicy-update.md
             - name: Delete
               href: api/authenticationstrengthroot-delete-policies.md
-            - name: Find by method mode
+            - name: Find by method mode (deprecated)
               href: api/authenticationstrengthpolicy-findbymethodmode.md
             - name: List usage
               href: api/authenticationstrengthpolicy-usage.md
@@ -17213,6 +17213,19 @@ items:
             href: api/learningcontent-update.md
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
+        - name: Learning course activities (preview)
+          href: resources/learningcourseactivity.md
+          items:
+          - name: List
+            href: api/learningcourseactivity-list.md
+          - name: Create
+            href: api/employeeexperienceuser-post-learningcourseactivities.md
+          - name: Get
+            href: api/learningcourseactivity-get.md
+          - name: Update
+            href: api/learningcourseactivity-update.md
+          - name: Delete
+            href: api/learningcourseactivity-delete.md
       - name: Messaging
         items:
         - name: Activity feed

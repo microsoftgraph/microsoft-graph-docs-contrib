@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AuthenticationMethodModeDetail authenticationMethodModeDetail = graphClient.identity().conditionalAccess().authenticationStrengths().authenticationMethodModes("windowsHelloForBusiness")
+AuthenticationMethodModeDetail authenticationMethodModeDetail = graphClient.identity().conditionalAccess().authenticationStrength().authenticationMethodModes("windowsHelloForBusiness")
 	.buildRequest()
 	.get();
 
