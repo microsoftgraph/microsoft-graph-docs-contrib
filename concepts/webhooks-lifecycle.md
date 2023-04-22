@@ -7,7 +7,7 @@ ms.reviewer: jumasure
 ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
-ms.date: 04/06/2023
+ms.date: 04/20/2023
 ---
 
 # Reduce missing subscriptions and change notifications
