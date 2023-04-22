@@ -9,10 +9,8 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for Microsoft Teams virtual event updates
 
-## Subscribe to notifications for virtual event updates
-
-Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a subscription.
-Virtual event subscriptions have a max period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user may decide to create a new subscription for the resource after the expiry of existing subscription. For more details, see [Change notifications](/graph/api/resources/webhooks).
+Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events.
+Virtual event subscriptions have a max period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user may decide to create a new subscription for the resource after the expiry of existing subscription. Please review [Change notifications](/graph/api/resources/webhooks) for more details.
 
 ### Permissions
 
