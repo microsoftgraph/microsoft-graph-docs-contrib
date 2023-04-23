@@ -70,13 +70,13 @@ The following is a JSON representation of the resource.
   "assignmentType": "String",
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Int32",
-  "dueDateTime": String (timestamp),
+  "dueDateTime": "String (timestamp)",
   "externalCourseActivityId": "String",
   "id": "String (identifier)",
   "learnerUserId": "String",
   "learningContentId": "String",
   "learningProviderId": "String",
-  "startedDateTime": String (timestamp),
+  "startedDateTime": "String (timestamp)",
   "status": "String"
 }
 ```
