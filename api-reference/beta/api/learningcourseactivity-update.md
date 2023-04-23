@@ -52,9 +52,9 @@ The following table lists the properties that you can change for a assigned lear
 |:---|:---|:---|
 |@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
-|assignmentType|assignmentType|The assignment type for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`. Required.|
+|assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
-|completionPercentage|Int32|The percentage of the course completed by the user. If the value is provided, the value needs to be in between `0` and `100` (inclusive). Optional.|
+|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
 |notes|String|Notes for the course activity. Optional.|
 |status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
@@ -65,8 +65,8 @@ The following table lists the properties that you can change for a self-initiate
 |:---|:---|:---|
 |@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
-|completionPercentage|Int32|The percentage of the course completed by the user. If the value is provided, the value needs to be in between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
+|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
+|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner.|
 
 
