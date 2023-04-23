@@ -26,7 +26,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |assignerUserId|String|The user ID of the assigner. Optional.|
 |assignmentType|String|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
-|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive).. Optional.|
+|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
 |externalCourseActivityId|String|A course activity ID generated at provider. Optional.|
 |id|String|The generated ID for a request that can be used to make further interactions to the course activity APIs.|
