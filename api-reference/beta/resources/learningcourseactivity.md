@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |assignerUserId|String|The user ID of the assigner. Optional.|
-|assignmentType|assignmentType|Assignment type for the course activity. Possible values are `required`, `recommended`, `unknownFutureValue`. Required.|
+|assignmentType|assignmentType|Assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage completion value of the course activity. Optional.|
 |dueDateTime|DateTimeTimeZone|Due date for the course activity. Optional.|
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |learningContentId|String|The ID of the learning content created in Viva Learning. Required.|
 |learningProviderId|String|The registration ID of the provider. Required.|
 |startedDateTime|DateTimeOffset|Date and time when the self-initiated course was started by the learner. Optional.|
-|status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 
 ## Relationships
 
