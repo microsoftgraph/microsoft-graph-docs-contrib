@@ -41,11 +41,10 @@ To get a specific learning course activity based on its **externalCourseActivity
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(extern
-alCourseActivityId={externalCourseActivityId})
+GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId={externalCourseActivityId})
 ```
 
-To get the learning course activity details for a user:
+To get the details of a learning course activity for a user:
 <!-- {
   "blockType": "ignored"
 }
@@ -54,7 +53,7 @@ To get the learning course activity details for a user:
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
 ```
 
-To get the learning course activity details for the signed-in user:
+To get the details of a learning course activity for the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
