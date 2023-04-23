@@ -69,6 +69,6 @@ The following is a JSON representation of the resource.
   "learningProviderId": "String",
   "notes": "String",
   "startedDateTime": "String (timestamp)",
-  "status": String"
+  "status": "String"
 }
 ```
