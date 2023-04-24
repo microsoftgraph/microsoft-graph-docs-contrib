@@ -23,11 +23,11 @@ Change notifications in Microsoft Graph support subscription to virtual events. 
 
 | Resource Type                                          | Resource                                                                                  | Supported change types    |
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|
-| All Events (Tenant-level)                              | solutions/virtualEvents/events                                                            | created                   |
-| All Events (Tenant-level by organizer/coorganizer IDs) | solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])       | created                   |
-| The events of a webinar                                     | solutions/virtualEvents/webinars/{webinarId}                                              | updated                   |
-| The session events of a webinar                              | solutions/virtualEvents/webinars/{webinarId}/sessions                                     | created, updated          |
-| The registration events of a webinar                      | solutions/virtualEvents/webinars/{webinarId}/registration/registrants                     | created, updated          |
+| All Events (Tenant-level)                              | `solutions/virtualEvents/events`                                                            | created                   |
+| All Events (Tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`       | created                   |
+| The events of a webinar                                     | `solutions/virtualEvents/webinars/{webinarId}`                                              | updated                   |
+| The session events of a webinar                              | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                     | created, updated          |
+| The registration events of a webinar                      | `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`                     | created, updated          |
 
 >**Note:** Replace values with parenthesis with actual values.
 
