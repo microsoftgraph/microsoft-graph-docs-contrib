@@ -396,6 +396,27 @@ adapter, err :=
 client := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
+## [PHP](#tab/PHP)
+
+```php
+<?php
+use Microsoft\Graph\Core\GraphClientFactory;
+use Microsoft\Graph\GraphRequestAdapter;
+
+// Configure proxy URLs on the Guzzle client
+$guzzleConfig = [
+    'proxy' => [
+        'http'  => 'http://proxy-url', // Use this proxy with "http"
+        'https' => 'http://proxy-url', // Use this proxy with "https"
+    ]
+];
+
+$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
+$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+```
+
 ## [Python](#tab/Python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
