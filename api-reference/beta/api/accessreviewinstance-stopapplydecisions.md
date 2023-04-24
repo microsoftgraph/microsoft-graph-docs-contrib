@@ -1,14 +1,13 @@
 ---
-title: "Stop applyDecisions on accessReviewInstance"
-description: "Stops the effect of apply decision Action on accessReviewInstance which is in applying state."
+title: "accessReviewInstance: stopApplyDecisions"
+description: "Stops apply decision Action on accessReviewInstance which is in applying state."
+author: "rahulsharm0210"
 ms.localizationpriority: medium
-author: "rahulsharm"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Stop applyDecision on a accessReviewInstance
-
+# accessReviewInstance: stopApplyDecisions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,40 +19,45 @@ Stopping the applyDecision on an instance will not effect future instances.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            | AccessReview.ReadWrite.All |
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/stopApplyDecisions
 ```
 
 ## Request headers
-None.
-
+|Name|Description|
+|:---|:---|
+None
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+
+If successful, this action returns a `204 No Content` response code.
 
 ## Examples
+
 ### Request
-
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "stopapplydecisions_accessReviewInstance"
-}-->
-```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d/instances/61a617dd-238f-4037-8fa5-d800e515f5bc/stopApplyDecisions
+  "name": "accessreviewinstancethis.stopapplydecisions"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/stopApplyDecisions
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstance-stopapplydecisions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,24 +84,16 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 ---
 
+
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false
-} -->
-```http
+  "truncated": true
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "description": "StopAppyDecisions accessReviewInstance",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
