@@ -1657,7 +1657,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addActivities",
           "ChangeType": "Addition",
-          "Description": "Added the [addActivities](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0) method to the [externalItem](https://learn.microsoft.com/en-us/graph/api/externalItem?view=graph-rest-1.0) resource.",
+          "Description": "Added the [addActivities](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0) method to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalItem"
         }
       ],
