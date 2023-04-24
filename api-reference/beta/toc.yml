@@ -12427,6 +12427,8 @@ items:
               href: api/accessreviewinstance-acceptrecommendations.md
             - name: Apply decisions
               href: api/accessreviewinstance-applydecisions.md
+            - name: Stop Apply Decisions
+              href: api/accessreviewinstance-stopapplydecisions.md
             - name: Batch record decisions
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions

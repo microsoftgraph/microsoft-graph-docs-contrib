@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
+|Delegated (personal Microsoft account) |Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
 
 ## HTTP request
@@ -48,34 +48,34 @@ If successful, this method returns a `204, No Content` response code. It does no
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "stop_accessReviewInstance"
+  "name": "stopapplydecisions_accessReviewInstance"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d/instances/61a617dd-238f-4037-8fa5-d800e515f5bc/stop
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d/instances/61a617dd-238f-4037-8fa5-d800e515f5bc/stopApplyDecisions
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/stopApplyDecisions-accessreviewinstance-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstance-stopapplydecisions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/stopApplyDecisions-accessreviewinstance-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-stopapplydecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/stopApplyDecisions-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-stopapplydecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/stopApplyDecisions-accessreviewinstance-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/stopapplydecisions-accessreviewinstance-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/stopApplyDecisions-accessreviewinstance-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/stopapplydecisions-accessreviewinstance-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/stopApplyDecisions-accessreviewinstance-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/stopapplydecisions-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,7 +93,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Stop accessReviewInstance",
+  "description": "StopAppyDecisions accessReviewInstance",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
