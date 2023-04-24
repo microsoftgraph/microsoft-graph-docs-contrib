@@ -2,8 +2,8 @@
 
 ```php
 try {
-    $response = $graphServiceClient->usersById('USER_ID or USER_PRINCIPAL_NAME')->get();
-    $user = $response->wait();
+    $user = $graphServiceClient->me()->get()->wait();
+  
     echo "Hello, I am {$user->getGivenName()}";
 
 } catch (ApiException $ex) {
