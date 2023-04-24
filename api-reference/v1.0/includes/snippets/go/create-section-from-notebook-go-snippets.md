@@ -19,7 +19,7 @@ requestBody := graphmodels.NewOnenoteSection()
 displayName := "Section name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").Sections().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Onenote().Notebooks().ByNotebookId("notebook-id").Sections().Post(context.Background(), requestBody, nil)
 
 
 ```

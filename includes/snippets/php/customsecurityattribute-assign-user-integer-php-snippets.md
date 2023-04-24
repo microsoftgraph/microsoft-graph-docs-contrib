@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new User();
 $customSecurityAttributes = new CustomSecurityAttributeValue();
 $additionalData = [
-'Engineering' => $customSecurityAttributes = new Engineering();
+		'Engineering' => $customSecurityAttributes = new Engineering();
 $		customSecurityAttributes->set@odatatype('#Microsoft.DirectoryServices.CustomSecurityAttributeValue');
 
 $		customSecurityAttributes->setNumVendors@odatatype('#Int32');
@@ -30,7 +30,7 @@ $customSecurityAttributes->setAdditionalData($additionalData);
 $requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

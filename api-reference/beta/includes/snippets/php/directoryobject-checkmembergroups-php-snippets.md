@@ -14,7 +14,7 @@ $requestBody->setGroupIds(['f448435d-3ca7-4073-8152-a1fd73c0fd09', 'bd7c6263-4dd
 
 
 
-$requestResult = $graphServiceClient->directoryObjectsById('directoryObject-id')->checkMemberGroups()->post($requestBody);
+$result = $graphServiceClient->directoryObjectsById('directoryObject-id')->checkMemberGroups()->post($requestBody);
 
 
 ```

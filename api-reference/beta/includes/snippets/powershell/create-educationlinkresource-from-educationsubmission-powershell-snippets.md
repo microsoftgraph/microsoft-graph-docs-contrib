@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Education
 
 $params = @{
-	Resource = @{
-		DisplayName = "Wikipedia"
-		Link = "https://en.wikipedia.org/wiki/Main_Page"
+	resource = @{
+		displayName = "Wikipedia"
+		link = "https://en.wikipedia.org/wiki/Main_Page"
 		"@odata.type" = "#microsoft.graph.educationLinkResource"
 	}
 }

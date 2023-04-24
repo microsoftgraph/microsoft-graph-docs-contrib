@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().ApiConnectorsById("identityApiConnector-id").Get(context.Background(), nil)
+result, err := graphClient.Identity().ApiConnectors().ByApiConnectorId("identityApiConnector-id").Get(context.Background(), nil)
 
 
 ```

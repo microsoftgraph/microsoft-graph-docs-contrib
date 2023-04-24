@@ -23,7 +23,7 @@ configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionsReques
 	Headers: headers,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Submissions().Get(context.Background(), configuration)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().Get(context.Background(), configuration)
 
 
 ```

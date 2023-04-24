@@ -18,9 +18,9 @@ $endpointConfiguration = new CustomExtensionEndpointConfiguration();
 $endpointConfiguration->set@odatatype('#microsoft.graph.logicAppTriggerEndpointConfiguration');
 
 $additionalData = [
-'subscriptionId' => 'c500b67c-e9b7-4ad2-a90d-77d41385ae55', 
-'resourceGroupName' => 'RG-LCM', 
-'logicAppWorkflowName' => 'ManagerAccess', 
+		'subscriptionId' => 'c500b67c-e9b7-4ad2-a90d-77d41385ae55', 
+		'resourceGroupName' => 'RG-LCM', 
+		'logicAppWorkflowName' => 'ManagerAccess', 
 ];
 $endpointConfiguration->setAdditionalData($additionalData);
 
@@ -31,7 +31,7 @@ $authenticationConfiguration = new CustomExtensionAuthenticationConfiguration();
 $authenticationConfiguration->set@odatatype('#microsoft.graph.azureAdTokenAuthentication');
 
 $additionalData = [
-'resourceId' => '542dc01a-0b5d-4edc-b3f9-5cfe6393f557', 
+		'resourceId' => '542dc01a-0b5d-4edc-b3f9-5cfe6393f557', 
 ];
 $authenticationConfiguration->setAdditionalData($additionalData);
 
@@ -44,7 +44,7 @@ $clientConfiguration->set@odatatype('#microsoft.graph.customExtensionClientConfi
 $clientConfiguration->setTimeoutInMilliseconds(1000);
 
 $additionalData = [
-'maximumRetries' => 1,
+		'maximumRetries' => 1,
 ];
 $clientConfiguration->setAdditionalData($additionalData);
 
@@ -60,7 +60,7 @@ $callbackConfiguration->setTimeoutDuration(new \DateInterval('PT5M'));
 $requestBody->setCallbackConfiguration($callbackConfiguration);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->customTaskExtensions()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->customTaskExtensions()->post($requestBody);
 
 
 ```

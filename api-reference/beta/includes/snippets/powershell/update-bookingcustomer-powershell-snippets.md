@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
-	DisplayName = "Adele"
-	EmailAddress = "adele@relecloud.com"
+	displayName = "Adele"
+	emailAddress = "adele@relecloud.com"
 }
 
 Update-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId -BodyParameter $params

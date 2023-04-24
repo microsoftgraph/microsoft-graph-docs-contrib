@@ -19,7 +19,7 @@ requestBody := graphmodels.NewIdentityProviderBase()
 displayName := "Apple"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Identity().IdentityProvidersById("identityProviderBase-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().IdentityProviders().ByIdentityProviderId("identityProviderBase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

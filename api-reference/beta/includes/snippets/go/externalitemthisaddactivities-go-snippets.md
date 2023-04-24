@@ -30,7 +30,7 @@ activities := []graphmodels.ExternalActivityable {
 }
 requestBody.SetActivities(activities)
 
-result, err := graphClient.ConnectionsById("externalConnection-id").ItemsById("externalItem-id").ExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").ExternalConnectorsAddActivities().Post(context.Background(), requestBody, nil)
 
 
 ```
