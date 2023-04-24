@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MeRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MeRequestBuilderGetQueryParameters();
+$queryParameters = MeRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","mail","mobilePhone"];
 $queryParameters->expand = ["extensions"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->get($requestConfiguration);
+$result = $graphServiceClient->me()->get($requestConfiguration);
 
 
 ```

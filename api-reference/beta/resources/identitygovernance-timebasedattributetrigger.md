@@ -33,7 +33,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.timeBasedAttributeTrigger"
+  "@odata.type": "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+  "baseType": "microsoft.graph.identityGovernance.workflowExecutionTrigger"
 }
 -->
 ``` json

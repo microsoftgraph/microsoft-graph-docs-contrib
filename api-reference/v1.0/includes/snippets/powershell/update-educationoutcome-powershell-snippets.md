@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationRubricOutcome"
-	RubricQualityFeedback = @(
+	rubricQualityFeedback = @(
 	)
-	RubricQualitySelectedLevels = @(
+	rubricQualitySelectedLevels = @(
 	)
 }
 

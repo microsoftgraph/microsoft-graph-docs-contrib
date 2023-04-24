@@ -39,7 +39,7 @@ $attachmentsAttachment1->setName('attachment.txt');
 $attachmentsAttachment1->setContentType('text/plain');
 
 $additionalData = [
-'contentBytes' => 'SGVsbG8gV29ybGQh', 
+	'contentBytes' => 'SGVsbG8gV29ybGQh', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 

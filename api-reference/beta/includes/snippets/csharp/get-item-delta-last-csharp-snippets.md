@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var delta = await graphClient.Me.Drive.Root
-	.Delta("1230919asd190410jlka")
-	.Request()
-	.GetAsync();
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].DeltaWithToken("{token}").GetAsync();
+
 
 ```

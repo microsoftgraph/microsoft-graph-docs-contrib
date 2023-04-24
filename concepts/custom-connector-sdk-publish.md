@@ -5,12 +5,12 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK (preview) to the Microsoft 365 admin center."
+description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
 ---
 
 # Publish custom connectors to the Microsoft 365 admin center
 
-When you use the Microsoft Graph connectors SDK (preview), you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
+When you use the Microsoft Graph connectors SDK, you can publish your custom connectors through the Microsoft 365 admin center, the same way that Microsoft built-in connectors are published.
 
 >[!Note]
 > Read the [Setup for your Graph connector](/microsoftsearch/configure-connector) article to understand the general Graph connectors setup instructions.
@@ -27,28 +27,7 @@ Use the following steps to publish a connection for your custom connector:
 
 2. Add a Microsoft Graph connector in the Microsoft 365 admin center from the [Data Sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) in the Search & Intelligence section. For details, see [Add a Microsoft Graph connector in the Microsoft 365 admin center](/microsoftsearch/configure-connector#step-1-add-a-microsoft-graph-connector-in-the-microsoft-365-admin-center).
 
-3. Choose **Custom Connector** and provide manifest details in the following format.
-
-    ```json
-    {
-      // This is the unique connector ID/provider ID.
-      "connectorId": "<ConnectorGuid>",
-    
-      // This is a list of all supported auth types. Remove the ones that the connector does not support.
-      "authTypes": [ "Windows", "Basic", "Anonymous", "OAuth2ClientCredentials" ],
-      
-      // The list of additional crawl types that the connector supports in addition to full and periodic full crawl. This is an optional field.
-      "additionalCrawlsSupported": [ "Incremental" ]
-    }
-
-    ```
-
-    - **connectorId** should be a GUID. This field is the same as **ConnectorUniqueId** in the Connector Info Service implementation file or the GUID that you define.
-    - **AuthTypes** must be a non-empty array with one or more of the following types: `Anonymous`, `Basic`, `Windows`, `OAuth`.
-    - **additionalCrawlsSupported** is optional; you can define crawl types in addition to full and periodic full crawl, depending on your implementation and the data source support.
-
-    >[!Note]
-    > The manifest file is automatically generated in the output directory of your project if you're using the C# project template. You can edit/update the manifest file as required.
+3. Choose **Custom Connector** and provide the manifest validated by the test application.
 
 4. Name the connection. For details, see [Step 2: Name the connection](/microsoftsearch/configure-connector#step-2-name-the-connection).
 
@@ -60,7 +39,7 @@ Use the following steps to publish a connection for your custom connector:
 
     The data in the parameter is opaque to the platform. It's serialized and stored as a string and passed to the connector. The connector can deserialize this data as required and use it.
 
-7. On the [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) page, assign semantic labels to your source properties.
+7. On the [Assign property labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) page, assign semantic labels to your source properties. The default result type will not work if semantic labels are not assigned.
 
 8. Manage the schema:
   

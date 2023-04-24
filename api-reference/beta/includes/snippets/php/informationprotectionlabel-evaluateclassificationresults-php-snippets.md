@@ -20,8 +20,8 @@ $ContentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 
 $additionalData = [
-'format@odata.type' => '#microsoft.graph.contentFormat', 
-'state@odata.type' => '#microsoft.graph.contentState', 
+		'format@odata.type' => '#microsoft.graph.contentFormat', 
+		'state@odata.type' => '#microsoft.graph.contentState', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -42,15 +42,13 @@ $requestBody->setClassificationResults($classificationResultsArray);
 
 
 $requestConfiguration = new EvaluateClassificationResultsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'User-Agent' => 'ContosoLOBApp/1.0',
+	'User-Agent' => 'ContosoLOBApp/1.0',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateClassificationResults()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->informationProtection()->policy()->labels()->evaluateClassificationResults()->post($requestBody, $requestConfiguration);
 
 
 ```

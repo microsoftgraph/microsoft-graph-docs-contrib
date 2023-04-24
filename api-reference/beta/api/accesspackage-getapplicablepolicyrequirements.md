@@ -68,24 +68,24 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 [!INCLUDE [sample-code](../includes/snippets/csharp/accesspackage-getapplicablepolicyrequirements-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackage-getapplicablepolicyrequirements-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackage-getapplicablepolicyrequirements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-getapplicablepolicyrequirements-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackage-getapplicablepolicyrequirements-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/accesspackage-getapplicablepolicyrequirements-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-getapplicablepolicyrequirements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,9 +137,15 @@ Content-Type: application/json
 
 #### Request
 
-<!-- { "blockType": "ignored" } -->
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b15419bb-5ffc-ea11-b207-c8d9d21f4e9a"],
+  "name": "get_req_for_given_user"
+}-->
+
 ```http
-POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11-b207-c8d9d21f4e9a/getApplicablePolicyRequirements
 
 {
         "subject": {
@@ -148,9 +154,42 @@ POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-e
     }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-req-for-given-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-req-for-given-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-req-for-given-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-req-for-given-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK
@@ -201,5 +240,76 @@ Content-Type: application/json
             "schedule": []
         }
     ]
+}
+```
+
+### Example 3: Get policy requirements for verifiable credential status requirements
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+```
+
+
+#### Response
+
+Here is an example of the response if this is the first time credentials are requested and the requestor has not yet scanned the QR code or clicked the URL.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+        {
+            "policyId": "a93f6641-bcba-ec11-9d14-001a7dda7113",
+            "policyDisplayName": "VC Policy 1",
+            "policyDescription": "VC Policy Description 1",
+            "isApprovalRequiredForAdd": false,
+            "isApprovalRequiredForUpdate": false,
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isCustomAssignmentScheduleAllowed": true,
+            "allowCustomAssignmentSchedule": true,
+            "isRequestorJustificationRequired": false,
+            "schedule": {
+                "startDateTime": null,
+                "duration": "P365D",
+                "stopDateTime": null,
+                "expiration": {
+                "endDateTime": null,
+                "duration": "P365D",
+                "type": "afterDuration"
+                },
+                "recurrence": null
+            },
+            "questions": [],
+            "existingAnswers": [],
+            "verifiableCredentialRequirementStatus": {
+                "@odata.type": "#microsoft.graph.verifiableCredentialRequired",
+                "expiryDateTime": "2022-05-10T23:32:47.8232759Z",
+                "url": "openid://vc/?request_uri=https://beta.did.msidentity.com/v1.0/87654321-0000-0000-0000-000000000000/verifiablecredentials/request/e4ef27ca-eb8c-4b63-823b-3b95140eac11",
+            }
+        }
+    ]
+}
+```
+
+If the requestor has scanned the QR code or clicked the URL, the verifiableCredentialRequirementStatus will be in the following format.
+
+```json
+"verifiableCredentialRequirementStatus": {
+    "@odata.type": "#microsoft.graph.verifiableCredentialRetrieved",
+    "expiryDateTime": "2022-05-10T23:32:47.8232759Z"
+}
+```
+
+If the requestor has presented valid credential, the verifiableCredentialRequirementStatus will be in the following format.
+
+```json
+"verifiableCredentialRequirementStatus": {
+    "@odata.type": "#microsoft.graph.verifiableCredentialVerified"
 }
 ```
