@@ -149,11 +149,16 @@ We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pas
 use Microsoft\Graph\Core\GraphClientFactory;
 use Microsoft\Graph\GraphRequestAdapter;
 
-$guzzleConfig = [
-    // your custom config
-];
-$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
+// Get default middleware stack from SDK
+$handlerStack = GraphClientFactory::getDefaultHandlerStack();
+
+// Add a custom handler or extra handlers not added by default
+// Add Chaos handler to simulate random server failure responses
+$handlerStack->push(KiotaMiddleware::chaos());
+
+$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
 $requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
+$graphServiceClient = new GraphServiceClient($requestAdapter);
 ```
 
 ## [Go](#tab/Go)
