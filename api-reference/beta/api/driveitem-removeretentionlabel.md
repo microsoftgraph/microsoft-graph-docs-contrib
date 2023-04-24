@@ -23,11 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged)                                     |
 |:---------------------------------------|:--------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.FullControl.All, Sites.ReadWrite.All |
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All, Sites.FullControl.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                  |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
 
-Note: Only some permission allow the ability to remove retention labels that classify contents as records from documents.
+Note: Only Sites.FullControl.All allows the ability to remove retention labels that classify the contents as records.
 
 ## HTTP request
 

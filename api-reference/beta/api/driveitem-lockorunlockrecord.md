@@ -49,7 +49,9 @@ PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 
 ## Request body
 
-
+|Property|Type|Description|
+|:---|:---|:---|
+|retentionSettings|[retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item.   
 
 
 ## Response
