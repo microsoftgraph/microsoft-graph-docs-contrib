@@ -69,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938/addActivities
+POST https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938/addActivities
 Content-Type: application/json
 Content-length: 190
 
