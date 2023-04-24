@@ -4,39 +4,36 @@ description: "Use change notifications in Microsoft Graph to enable you to subsc
 author: "awang119"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
-ms.custom: scenarios:getting-started
+ms.custom: "scenarios:getting-started"
 ---
 
 # Get change notifications for Microsoft Teams virtual event updates
 
-Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events.
-Virtual event subscriptions have a max period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user may decide to create a new subscription for the resource after the expiry of existing subscription. Please review [Change notifications](/graph/api/resources/webhooks) for more details.
+Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events. Virtual event subscriptions have a maximum period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user might decide to create a new subscription for the resource after the expiry of an existing subscription. For more details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
 
-### Permissions
+## Permissions
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------------------------|:---------------------------------------------------------|:-------------------|
 | Delegated (work or school account)    | Not supported.                                           | Not supported.     |
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
-| Application                           | VirtualEvent.Read.All                                    | beta               |
+| Application                           | VirtualEvent.Read.All                                    | Beta               |
 
-### Subscribeable resources
+## Subscribable resources
 
 | Resource Type                                          | Resource                                                                                  | Supported change types    |
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|
 | All Events (Tenant-level)                              | solutions/virtualEvents/events                                                            | created                   |
-| All Events (Tenant-level by organizer/coorganizer ids) | solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])       | created                   |
-| A webinar's events                                     | solutions/virtualEvents/webinars/{webinarId}                                              | updated                   |
-| A webinar's session events                             | solutions/virtualEvents/webinars/{webinarId}/sessions                                     | created, updated          |
-| A webinar's registrantion events                       | solutions/virtualEvents/webinars/{webinarId}/registration/registrants                     | created, updated          |
+| All Events (Tenant-level by organizer/coorganizer IDs) | solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])       | created                   |
+| The events of a webinar                                     | solutions/virtualEvents/webinars/{webinarId}                                              | updated                   |
+| The session events of a webinar                              | solutions/virtualEvents/webinars/{webinarId}/sessions                                     | created, updated          |
+| The registration events of a webinar                      | solutions/virtualEvents/webinars/{webinarId}/registration/registrants                     | created, updated          |
 
 >**Note:** Replace values with parenthesis with actual values.
 
-### Subscription to all events created in a tenant
+## Subscription to all events created in a tenant
 
-Subscriptions for all events for a unique app and tenant can be specified with the following resource `solutions/virtualEvents/events` in the subscription payload.
-The subscription designates the notification URL to receive all event created notifications in a tenant for virtual events.
-Only event created notifications are supported for this subscription. A tenant may only have one type of this subscription per application.
+You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following resource `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant may only have one type of this subscription per application.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -52,10 +49,10 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to all events created in a tenant with relevant organizers
+## Subscribe to all events created in a tenant with relevant organizers
 
-Subscriptions to all events that include any members of a set of organizers/coorganizers can be accomplished with the resource specified as
-`"solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])"`. These subscriptions receive any created notifications for all virtual events for a set of organizer or co-organizer ids. This subscription is considered a subscription to all Events created in a tenant.  
+Subscriptions to all events that include any members of a set of organizers or coorganizers can be accomplished with the resource specified as
+`solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`. These subscriptions receive any created notifications for all virtual events for a set of organizer or coorganizer IDs. This subscription is considered a subscription to all events created in a tenant.  
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -65,16 +62,15 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.contoso.com/api",
   "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-  "resource": "solutions/virtualEvents/events/geteventsfromorganizers(organizerIds=['id1', 'id2'])",
+  "resource": "solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])",
   "expirationDateTime": "2021-02-01T11:00:00.0000000Z",
   "clientState": "secretClientState"
 }
 ```
 
-### Subscribe to updated events of a specific webinar
+## Subscribe to updated events of a specific webinar
 
-To receive updated notifications for a particular webinar, a subscription must be created for that unique webinar.
-This can be accomplished with the resource `solutions/virtualEvents/webinars/{webinarId}`.
+To receive updated notifications for a particular webinar, you need to create a subscription for that unique webinar. Use the following resource to accomplished this `solutions/virtualEvents/webinars/{webinarId}`.
 
 An application can have only one subscription per webinar inside a tenant.
 
@@ -92,9 +88,9 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to session event notifications for a webinar
+## Subscribe to session event notifications for a webinar
 
-Notifications for Sessions created or updated in a webinar can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
+To subscribe to notifications for sessions that are created or updated in a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
 
 An application can only have a single session level subscription per webinar in a tenant.
 
@@ -112,13 +108,13 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to meeting call events of a specific session
+## Subscribe to meeting call events of a specific session
 
-To subscribe to meeting call events of a specific session, see [Change notifications for online meetings](changenotifications-for-onlinemeetings.md) for more information.
+For information about how to subscribe to meeting call events of a specific session, see [Get change notifications for Microsoft Teams meeting call updates](/graph/changenotifications-for-onlinemeeting).
 
-### Subscribe to all registrants for a particular event
+## Subscribe to all registrants for a particular event
 
-Notifications for a webinars registration events can be subscribed to by specifying the resource as `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`.
+To subscribe to notifications for registration events of a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`.
 
 An application can only have a single registrant level subscription per webinar inside a tenant.
 
@@ -138,19 +134,21 @@ Content-Type: application/json
 
 ## Receiving event notifications
 
-Notifications include the resource URL of the changed resource. A separate request to the resource URL should be made to obtain the information of the resource that is created or updated.
-
-The below table indicates the supported notification and change types for the virtual events resource.
+Notifications include the resource URL of the changed resource. You can send a separate request to the resource URL, to get information about a created or updated resource.
 
 ### Notification types
 
-| Notification type                                                              | Resource id                                                                                    | Change types      |
+The following table indicates the supported notification and change types for the virtual events resource.
+
+| Notification type                                                              | Resource ID                                                                                    | Change types      |
 |:-------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)       | solutions/virtualEvents/webinars/{webinarId}                                                      | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)       | solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}                                 | created, updated  |
-| [Registrant](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}              | created, updated  |
+| [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)       | `solutions/virtualEvents/webinars/{webinarId}`                                                      | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                                 | created, updated  |
+| [Registrant](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | `solutions/virtualEvents/webinars/{webinarId}/registration/registrants/{registrantId}`              | created, updated  |
 
 ## Event notification examples
+
+The following JSON examples show the responses for each supported change type of an event.
 
 ### Event created
 
@@ -198,6 +196,8 @@ The below table indicates the supported notification and change types for the vi
 
 ## Session notification examples
 
+The following JSON examples show the responses for each supported change type of a session.
+
 ### Session created
 
 ```json
@@ -244,9 +244,11 @@ The below table indicates the supported notification and change types for the vi
 
 ### Session meeting call updated events
 
-For information about the types of notifications received for meeting call updates, see [Online meeting notification types](changenotifications-for-onlinemeeting.md#event-notifications-types).
+For information about the types of notifications received for meeting call updates, see [Event notifications types](/graph/changenotifications-for-onlinemeeting#event-notifications-types).
 
 ## Registrant notifications examples
+
+The following JSON examples show the responses for each supported change type of a registrant.
 
 ### Registrant created
 
