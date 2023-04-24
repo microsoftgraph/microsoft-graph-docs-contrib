@@ -37,7 +37,7 @@ requestBody.SetCallOptions(callOptions)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 
 
-graphClient.Communications().CallsById("call-id").Answer().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -32,7 +32,7 @@ configuration := &graphconfig.GroupItemMembersRequestBuilderGetRequestConfigurat
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").Members().Get(context.Background(), configuration)
+result, err := graphClient.Groups().ByGroupId("group-id").Members().Get(context.Background(), configuration)
 
 
 ```

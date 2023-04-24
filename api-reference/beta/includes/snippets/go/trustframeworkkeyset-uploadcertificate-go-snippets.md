@@ -19,7 +19,7 @@ requestBody := graphmodels.NewUploadCertificatePostRequestBody()
 key := "key-value"
 requestBody.SetKey(&key) 
 
-result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").UploadCertificate().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").UploadCertificate().Post(context.Background(), requestBody, nil)
 
 
 ```

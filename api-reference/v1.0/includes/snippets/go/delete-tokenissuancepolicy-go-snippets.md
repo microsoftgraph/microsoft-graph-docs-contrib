@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().TokenIssuancePoliciesById("tokenIssuancePolicy-id").Delete(context.Background(), nil)
+graphClient.Policies().TokenIssuancePolicies().ByTokenIssuancePolicieId("tokenIssuancePolicy-id").Delete(context.Background(), nil)
 
 
 ```

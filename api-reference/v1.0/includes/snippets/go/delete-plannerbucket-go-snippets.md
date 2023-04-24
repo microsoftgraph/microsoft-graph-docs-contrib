@@ -23,7 +23,7 @@ configuration := &graphconfig.PlannerBucketItemRequestBuilderDeleteRequestConfig
 	Headers: headers,
 }
 
-graphClient.Planner().BucketsById("plannerBucket-id").Delete(context.Background(), configuration)
+graphClient.Planner().Buckets().ByBucketId("plannerBucket-id").Delete(context.Background(), configuration)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().ConditionalAccess().NamedLocationsById("namedLocation-id").Delete(context.Background(), nil)
+graphClient.Identity().ConditionalAccess().NamedLocations().ByNamedLocationId("namedLocation-id").Delete(context.Background(), nil)
 
 
 ```

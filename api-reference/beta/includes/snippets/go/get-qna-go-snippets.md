@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Search().QnasById("qna-id").Get(context.Background(), nil)
+result, err := graphClient.Search().Qnas().ByQnaId("qna-id").Get(context.Background(), nil)
 
 
 ```

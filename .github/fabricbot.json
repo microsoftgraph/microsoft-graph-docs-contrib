@@ -1236,10 +1236,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1289,10 +1294,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1366,10 +1376,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
