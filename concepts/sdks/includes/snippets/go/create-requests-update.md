@@ -24,5 +24,5 @@ options := teams.TeamRequestBuilderPatchOptions{
     Body: team,
 }
 
-client.TeamsById(teamId).Patch(context.Background(), &options)
+client.Teams().ByTeamId(teamId).Patch(context.Background(), &options)
 ```
