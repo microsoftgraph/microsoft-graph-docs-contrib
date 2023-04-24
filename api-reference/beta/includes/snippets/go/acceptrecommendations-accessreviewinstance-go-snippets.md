@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().PendingAccessReviewInstancesById("accessReviewInstance-id").AcceptRecommendations().Post(context.Background(), nil)
+graphClient.Me().PendingAccessReviewInstances().ByPendingAccessReviewInstanceId("accessReviewInstance-id").AcceptRecommendations().Post(context.Background(), nil)
 
 
 ```

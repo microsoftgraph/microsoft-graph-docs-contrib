@@ -30,7 +30,7 @@ values := []graphmodels.SettingValueable {
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.GroupsById("group-id").SettingsById("groupSetting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Settings().BySettingId("groupSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

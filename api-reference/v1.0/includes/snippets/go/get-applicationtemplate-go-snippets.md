@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.ApplicationTemplatesById("applicationTemplate-id").Get(context.Background(), nil)
+result, err := graphClient.ApplicationTemplates().ByApplicationTemplateId("applicationTemplate-id").Get(context.Background(), nil)
 
 
 ```

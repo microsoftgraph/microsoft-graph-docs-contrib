@@ -35,7 +35,7 @@ giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE
 funSettings.SetGiphyContentRating(&giphyContentRating) 
 requestBody.SetFunSettings(funSettings)
 
-result, err := graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

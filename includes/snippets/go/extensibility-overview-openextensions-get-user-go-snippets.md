@@ -24,7 +24,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.UsersById("user-id").ExtensionsById("extension-id").Get(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Extensions().ByExtensionId("extension-id").Get(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().ConnectorsById("printConnector-id").Delete(context.Background(), nil)
+graphClient.Print().Connectors().ByConnectorId("printConnector-id").Delete(context.Background(), nil)
 
 
 ```
