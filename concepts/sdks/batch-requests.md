@@ -247,6 +247,15 @@ events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseab
 fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
 ```
 
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
+```
+
 ---
 
 ## Batches with dependent requests
@@ -569,6 +578,15 @@ events, _ := msgraphgocore.GetBatchResponseById[models.EventCollectionResponseab
     batchResponse, *eventsRequestItem.GetId(),
     models.CreateEventCollectionResponseFromDiscriminatorValue)
 fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue()))
+```
+
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
 ```
 
 ---

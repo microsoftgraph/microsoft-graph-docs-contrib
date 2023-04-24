@@ -163,6 +163,15 @@ LargeFileUploadTask<DriveItem> largeFileUploadTask =
 largeFileUploadTask.upload(0, null, callback);
 ```
 
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
+```
+
 ---
 
 ## Resuming a file upload
@@ -186,6 +195,15 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 
 > [!NOTE]
 > The Java SDK does not currently support resuming in-progress downloads.
+
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
+```
 
 ---
 
@@ -352,6 +370,15 @@ LargeFileUploadTask<FileAttachment> uploadTask =
 
 // Do the upload
 uploadTask.upload(0, null, callback);
+```
+
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
 ```
 
 ---

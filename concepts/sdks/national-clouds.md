@@ -194,4 +194,13 @@ adapter.SetBaseUrl("https://graph.microsoft.us/v1.0")
 graphClient := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
+# [PHP](#tab/PHP)
+
+```php
+<?php
+//Sample here
+
+
+```
+
 ---
