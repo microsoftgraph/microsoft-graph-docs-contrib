@@ -471,7 +471,7 @@ use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\OnBehalfOfContext;
 
-// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+// Create an auth provider object. We are using the OnBehalfOfContextContext library in this example.
 $tokenRequestContext = new OnBehalfOfContext(
     'TENANT_ID',
     'CLIENT_ID',
