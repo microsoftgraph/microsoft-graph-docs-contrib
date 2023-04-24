@@ -54,7 +54,7 @@ PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 
 ## Response
 
-When a file is applied with a retention label for the first time, this method returns a `201 Created` response code and an updated [itemRetentionLabel](../resources/itemretentionlabel.md) object in the response body. Subsequent updates on **retentionLabel** returns a "200 OK" response code.
+When a file is applied with a retention label for the first time, this method returns a `201 Created` response code and an updated [itemRetentionLabel](../resources/itemretentionlabel.md) object in the response body. Subsequent updates on **retentionLabel** returns a `200 OK` response code.
 
 ## Examples
 
