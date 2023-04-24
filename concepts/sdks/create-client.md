@@ -116,9 +116,6 @@ use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-//Missing comment to explain these 2 statements
-set_include_path(__DIR__);
-require 'vendor/autoload.php';
 
 // Create an auth provider object. We are using the ClientCredentialContext library in this example.
 $tokenRequestContext = new ClientCredentialContext(
