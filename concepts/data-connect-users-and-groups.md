@@ -56,8 +56,8 @@ The following table maps the correct dataset per type of group. This helps you t
 |     GroupDetails                      | Yes         | Yes                 | Yes             | Yes                    |
 |     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
 |     GroupOwners                       | Yes         | Yes*                | Yes*            | Yes                    |
-|     Viva Insights                     | N/A         | N/A                 | N/A             | N/A                    |
-|     OneDrive and SharePoint Online    | N/A         | N/A                 | N/A             | N/A                    |
+|     Viva Insights                     | N/A         | NA                  | NA              | NA                     |
+|     OneDrive and SharePoint Online    | N/A         | NA                  | NA              | NA                     |
 |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
 
 \*For Teams datasets, Microsoft 365 groups must also be Teams-enabled.
