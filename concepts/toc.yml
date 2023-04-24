@@ -208,6 +208,8 @@ items:
                 href: change-notifications-delivery-webhooks.md
               - name: Notifications through Azure Event Hubs
                 href: change-notifications-delivery-event-hubs.md
+              - name: Notifications through Azure Event Grid (preview)
+                href: /azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext
           - name: Lifecycle notifications for subscriptions
             href: webhooks-lifecycle.md
           - name: Rich notifications
@@ -312,7 +314,7 @@ items:
       - name: Device and app management
         expanded: true
         items:
-          - name: Browser management (preview)
+          - name: Browser management
             href: browser-edge-concept-overview.md
             displayName: Edge, Internet Explorer, IE mode, site list
           - name: Cloud printing

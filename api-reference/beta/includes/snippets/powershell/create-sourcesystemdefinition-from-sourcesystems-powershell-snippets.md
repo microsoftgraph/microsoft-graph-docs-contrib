@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	DisplayName = "Rostering source"
-	UserMatchingSettings = @(
+	displayName = "Rostering source"
+	userMatchingSettings = @(
 		@{
-			MatchTarget = @{
-				Code = "userPrincipalName"
+			matchTarget = @{
+				code = "userPrincipalName"
 			}
-			PriorityOrder = 0
-			"RoleGroup@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff"
-			SourceIdentifier = @{
-				Code = "username"
+			priorityOrder = 0
+			"roleGroup@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff"
+			sourceIdentifier = @{
+				code = "username"
 			}
 		}
 		@{
-			MatchTarget = @{
-				Code = "userPrincipalName"
+			matchTarget = @{
+				code = "userPrincipalName"
 			}
-			PriorityOrder = 1
-			"RoleGroup@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')"
-			SourceIdentifier = @{
-				Code = "username"
+			priorityOrder = 1
+			"roleGroup@odata.bind" = "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')"
+			sourceIdentifier = @{
+				code = "username"
 			}
 		}
 	)

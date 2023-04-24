@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	PostponeUntilDateTime = [System.DateTime]::Parse("2023-02-01T02:53:00Z")
+	postponeUntilDateTime = [System.DateTime]::Parse("2023-02-01T02:53:00Z")
 }
 
 Invoke-MgPostponeDirectoryRecommendation -RecommendationId $recommendationId -BodyParameter $params

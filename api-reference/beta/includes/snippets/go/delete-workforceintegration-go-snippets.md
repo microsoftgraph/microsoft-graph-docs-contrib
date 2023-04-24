@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Delete(context.Background(), nil)
+graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Delete(context.Background(), nil)
 
 
 ```

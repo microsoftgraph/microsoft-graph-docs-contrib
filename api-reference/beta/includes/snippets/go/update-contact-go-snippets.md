@@ -42,7 +42,7 @@ emailAddresses := []graphmodels.Objectable {
 }
 requestBody.SetEmailAddresses(emailAddresses)
 
-result, err := graphClient.Me().ContactsById("contact-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Contacts().ByContactId("contact-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

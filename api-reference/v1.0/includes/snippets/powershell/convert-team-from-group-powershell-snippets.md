@@ -7,31 +7,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	"Template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
-	"Group@odata.bind" = "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"
-	Channels = @(
+	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+	"group@odata.bind" = "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"
+	channels = @(
 		@{
-			DisplayName = "Class Announcements 📢"
-			IsFavoriteByDefault = $true
+			displayName = "Class Announcements 📢"
+			isFavoriteByDefault = $true
 		}
 		@{
-			DisplayName = "Homework 🏋️"
-			IsFavoriteByDefault = $true
+			displayName = "Homework 🏋️"
+			isFavoriteByDefault = $true
 		}
 	)
-	MemberSettings = @{
-		AllowCreateUpdateChannels = $false
-		AllowDeleteChannels = $false
-		AllowAddRemoveApps = $false
-		AllowCreateUpdateRemoveTabs = $false
-		AllowCreateUpdateRemoveConnectors = $false
+	memberSettings = @{
+		allowCreateUpdateChannels = $false
+		allowDeleteChannels = $false
+		allowAddRemoveApps = $false
+		allowCreateUpdateRemoveTabs = $false
+		allowCreateUpdateRemoveConnectors = $false
 	}
-	InstalledApps = @(
+	installedApps = @(
 		@{
-			"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
 		}
 		@{
-			"TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+			"teamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
 		}
 	)
 }
