@@ -138,7 +138,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_count_only"
 }-->
 
@@ -152,7 +152,10 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "name": "get_count_only",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 
 ```http
@@ -169,7 +172,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_count_user_only"
 }-->
 
@@ -183,7 +186,10 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "name": "get_count_user_only",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 
 ```http

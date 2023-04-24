@@ -255,9 +255,12 @@ Content-Type: application/json
 
 
 
-### Example 2: Remove the customExtensionHandlers from a policy
+### Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy
 
 To remove the collection of **customExtensionHandlers** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionHandlers** object.
+
+To remove the verifiable credentials requirement from a policy, assign an empty collection to the **verifiableCredentialSettings** object.
+
 
 #### Request
 
@@ -350,6 +353,7 @@ Content-Type: application/json
     "accessReviewSettings": null
 }
 ```
+
 ### Example 3: Remove the customExtensionStageSettings from a policy
 
 To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object.
