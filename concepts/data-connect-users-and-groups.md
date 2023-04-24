@@ -48,7 +48,7 @@ The following are the options for group-scoped datasets:
  
 The following table maps the correct dataset per type of group. This helps you to understand which types of groups are compatible with which datasets when you extract data and use scope filters. Groups can either be distribution groups, security groups, or Microsoft 365 groups. The types of groups supported varies based on which dataset you're requesting.
 
-|              Datasets                 | Microsoft 365 groups | Distribution groups | Security groups | Mail-enabled security group  |
+|              Dataset                 | Microsoft 365 group | Distribution group | Security group | Mail-enabled security group  |
 |---------------------------------------|-------------|---------------------|-----------------|------------------------|
 |     TeamsStandardChannelMessages      | Yes*        | No                  | No              | No                     |
 |     TeamsChannelDetails_v0            | Yes*        | No                  | No              | No                     |
