@@ -6673,6 +6673,24 @@
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToCreateTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToCreateTenants** property to the [defaultUserRolePermissions](https://learn.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-1.0) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-24T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
