@@ -67,15 +67,15 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/stopapplydecisions-accessreviewinstance-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstance-stopapplydecisions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/stopapplydecisions-accessreviewinstance-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstance-stopapplydecisions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/stopapplydecisions-accessreviewinstance-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstance-stopapplydecisions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
