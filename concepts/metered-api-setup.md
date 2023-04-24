@@ -32,20 +32,23 @@ To enable an application to use metered APIs and services in Microsoft Graph, it
 
 Use the following steps to create and link a **Microsoft.GraphServices/accounts** Azure resource to your application:
 
->**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account.
+>**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface install the [Azure CLI](/cli/azure/).
 
 1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
 
-2. Use **az provider register** to register the **Microsoft.GraphServices** resource provider on your active subscription to create an Azure resource. Copy the following command into your command-line interface, and type  <**Enter**>.
+2. Use **az resource create** to create a new instance of the **Microsoft.GraphServices/accounts** resource type to associate your application registration with the active subscription. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
 
-  ```PowerShell
-  az provider register --namespace Microsoft.GraphServices
-  ```
-
-3. Use **az resource create** to create a new instance of the **Microsoft.GraphServices/accounts** resource type to associate your application registration with the active subscription. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the newly created resource.
-
+# [Azure Cloud Shell](#tab/azurecloudshell)
   ```PowerShell
   az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{`"appId`": `"myAppGUID`"}" --location Global --subscription mySubscriptionGUID
+  ```
+# [PowerShell](#tab/powershell)
+  ```PowerShell
+  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{\`"appId\`": \`"myAppGUID\`"}" --location Global --subscription mySubscriptionGUID
+  ```
+# [Windows Command Prompt](#tab/commandprompt)
+  ```CommandPrompt
+  az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{""appId"": ""myAppGUID""}" --location Global --subscription mySubscriptionGUID
   ```
 
   | Parameter | Description |
