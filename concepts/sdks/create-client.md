@@ -117,7 +117,7 @@ use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
 
-// Create an auth provider object. We are using the ClientCredentialContext library in this example.
+// Get access without a logged in user. Use the AuthorizationCodeContext or OnBehalfOfContext with a logged in user
 $tokenRequestContext = new ClientCredentialContext(
     'TENANT_ID',
     'CLIENT_ID',
