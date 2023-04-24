@@ -156,10 +156,6 @@ use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\AuthorizationCodeContext;
 
-//Missing comment to explain these 2 statements
-set_include_path(__DIR__);
-require 'vendor/autoload.php';
-
 // Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
 $tokenRequestContext = new AuthorizationCodeContext(
     'tenantId',
@@ -345,18 +341,15 @@ use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-//Missing comment to explain these 2 statements
-set_include_path(__DIR__);
-require 'vendor/autoload.php';
-
 // Create an auth provider object. We are using the ClientCredentialContext library in this example.
 $tokenRequestContext = new ClientCredentialContext(
     'TENANT_ID',
     'CLIENT_ID',
     'CLIENT_SECRET'
 );
-$scopes = ['https://graph.microsoft.com/.default'];
-$authProvider = new PhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+// Authenticates using the https://graph.microsoft.com/.default scopes
+$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
 
 //Initialize the request adapter. This handles HTTP concerns
 $requestAdapter = new GraphRequestAdapter($authProvider);
@@ -478,10 +471,6 @@ use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\OnBehalfOfContext;
 
-//Missing comment to explain these 2 statements
-set_include_path(__DIR__);
-require 'vendor/autoload.php';
-
 // Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
 $tokenRequestContext = new OnBehalfOfContext(
     'TENANT_ID',
@@ -489,8 +478,9 @@ $tokenRequestContext = new OnBehalfOfContext(
     'CLIENT_SECRET', 
     'USER_ASSERTION'
 );
-$scopes = ['https://graph.microsoft.com/.default'];
-$authProvider = new PhpLeagueAuthenticationProvider($tokenRequestContext, $scopes);
+
+// Authenticates using the https://graph.microsoft.com/.default scopes
+$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
 
 //Initialize the request adapter. This handles HTTP concerns
 $requestAdapter = new GraphRequestAdapter($authProvider);
