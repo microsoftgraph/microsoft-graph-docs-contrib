@@ -23,7 +23,7 @@ configuration := &graphconfig.ItemOutlookTaskItemCompleteRequestBuilderPostReque
 	Headers: headers,
 }
 
-result, err := graphClient.Me().Outlook().TasksById("outlookTask-id").Complete().Post(context.Background(), configuration)
+result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Complete().Post(context.Background(), configuration)
 
 
 ```

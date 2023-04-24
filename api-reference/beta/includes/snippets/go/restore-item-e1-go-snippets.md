@@ -23,7 +23,7 @@ requestBody.SetParentReference(parentReference)
 name := "String"
 requestBody.SetName(&name) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Restore().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Restore().Post(context.Background(), requestBody, nil)
 
 
 ```

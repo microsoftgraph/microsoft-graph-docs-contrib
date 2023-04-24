@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().DeletedItemsById("directoryObject-id").Post(context.Background(), requestBody, nil)
+graphClient.Directory().DeletedItems().ByDeletedItemId("directoryObject-id").Post(context.Background(), requestBody, nil)
 
 
 ```

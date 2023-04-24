@@ -23,7 +23,7 @@ requestBody.SetTicketNumber(&ticketNumber)
 ticketSystem := "ticketSystem-value"
 requestBody.SetTicketSystem(&ticketSystem) 
 
-result, err := graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").MakePermanent().Post(context.Background(), requestBody, nil)
+result, err := graphClient.PrivilegedRoleAssignments().ByPrivilegedRoleAssignmentId("privilegedRoleAssignment-id").MakePermanent().Post(context.Background(), requestBody, nil)
 
 
 ```
