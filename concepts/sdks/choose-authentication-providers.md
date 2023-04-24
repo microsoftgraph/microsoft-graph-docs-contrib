@@ -349,7 +349,7 @@ use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 set_include_path(__DIR__);
 require 'vendor/autoload.php';
 
-// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+// Create an auth provider object. We are using the ClientCredentialContext library in this example.
 $tokenRequestContext = new ClientCredentialContext(
     'TENANT_ID',
     'CLIENT_ID',
