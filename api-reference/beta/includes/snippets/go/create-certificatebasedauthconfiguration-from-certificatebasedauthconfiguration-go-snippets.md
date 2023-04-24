@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Organization/Item/CertificateBasedAuthConfiguration"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCertificateBasedAuthConfigurationPostRequestBody()
 additionalData := map[string]interface{}{
@@ -24,7 +32,7 @@ certificate := "Binary"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.OrganizationById("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
+graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

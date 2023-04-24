@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMeetingRegistration()
 subject := "Microsoft Ignite: Day 1"
@@ -34,7 +43,7 @@ speakers := []graphmodels.MeetingSpeakerable {
 }
 requestBody.SetSpeakers(speakers)
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
 
 
 ```

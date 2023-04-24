@@ -4,7 +4,7 @@ description: "A collection of groups that are enabled to use an authentication m
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodTarget resource type
@@ -39,8 +39,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodTarget",
   "id": "String (identifier)",
-  "targetType": "String",
   "isRegistrationRequired": "Boolean",
+  "targetType": "String",
   "useForSignIn": "Boolean"
 }
 ```

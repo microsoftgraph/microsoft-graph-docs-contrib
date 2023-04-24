@@ -6,6 +6,7 @@
 import (
     graph "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
     teams "github.com/microsoftgraph/msgraph-sdk-go/teams/item"
+    "context"
 )
 
 teamId := "71766077-aacc-470a-be5e-ba47db3b2e88"
@@ -23,5 +24,5 @@ options := teams.TeamRequestBuilderPatchOptions{
     Body: team,
 }
 
-client.TeamsById(teamId).Patch(&options)
+client.TeamsById(teamId).Patch(context.Background(), &options)
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTodoTask()
 title := "A new task"
@@ -31,7 +39,7 @@ linkedResources := []graphmodels.LinkedResourceable {
 }
 requestBody.SetLinkedResources(linkedResources)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

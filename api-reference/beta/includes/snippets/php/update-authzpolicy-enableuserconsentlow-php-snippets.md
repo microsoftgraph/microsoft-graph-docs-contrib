@@ -14,7 +14,7 @@ $requestBody->setPermissionGrantPolicyIdsAssignedToDefaultUserRole(['managePermi
 
 
 
-$requestResult = $graphServiceClient->policies()->authorizationPolicyById('authorizationPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicyById('authorizationPolicy-id')->patch($requestBody);
 
 
 ```

@@ -17,11 +17,11 @@ Returns the user or organizational contact assigned as the user's manager. Optio
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                    |
+| :------------------------------------- | :----------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -33,6 +33,7 @@ Get the manager:
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+
 Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,19 +45,20 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
 
->**Note:** 
-> + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
-> + When the `$levels` parameter is not specified, only the immediate manager is returned.  
-> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`.
+>**Note:**
+>
+> + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.
+> + When the `$levels` parameter is not specified, only the immediate manager is returned.
+> + You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`.
 > + `$levels` parameter is only supported on a single user (`/users/{id}` or `me` endpoints) and not on the entire list of users.
-> + `$levels` requires the **ConsistencyLevel** header set to `eventual` and `$count=true` in query string. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> + `$levels` requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
-| Header       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. Required when the request includes the `$count=true` query string. |
+| Header           | Value                                                                                          |
+| :--------------- | :--------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                      |
+| ConsistencyLevel | eventual. Required when the request includes the `$levels=n` in the `$expand` query parameter. |
 
 ## Request body
 
@@ -64,7 +66,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.
 
 ## Examples
 
@@ -87,24 +89,24 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-manager-2-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-manager-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-manager-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -144,7 +146,7 @@ The following example shows a request to get the manager chain up to the root le
   "name": "get_transitive_managers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName
 ConsistencyLevel: eventual
 ```
 
@@ -152,29 +154,27 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitive-managers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-managers-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitive-managers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-transitive-managers-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-managers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-transitive-managers-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 

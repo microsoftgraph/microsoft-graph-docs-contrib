@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy.
+Delete a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy. If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
 
 ## Permissions
 
@@ -52,6 +52,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
+
 ### Request
 
 
@@ -70,28 +72,27 @@ DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partner
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-crosstenantaccesspolicyconfigurationpartner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 

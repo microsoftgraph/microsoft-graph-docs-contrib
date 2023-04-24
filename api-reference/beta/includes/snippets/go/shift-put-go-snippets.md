@@ -5,12 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teams/Item/Schedule/Shifts/Item"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "return=representation",
-}
-configuration := &graphconfig.ShiftRequestBuilderPutRequestConfiguration{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphconfig.TeamItemScheduleShiftItemRequestBuilderPutRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewShift()
@@ -99,7 +109,7 @@ displayName := "Lunch"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TeamsById("team-id").Schedule().ShiftsById("shift-id").Put(context.Background(), requestBody, configuration)
+graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().ByShiftId("shift-id").Put(context.Background(), requestBody, configuration)
 
 
 ```

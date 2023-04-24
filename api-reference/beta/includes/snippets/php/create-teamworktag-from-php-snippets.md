@@ -27,7 +27,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->tags()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->tags()->post($requestBody);
 
 
 ```

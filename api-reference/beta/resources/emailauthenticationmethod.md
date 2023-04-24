@@ -4,7 +4,7 @@ description: "A representation of an email address registered to a user. Email i
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # emailAuthenticationMethod resource type
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 A representation of an email address registered to a user. Email is an authentication method available only to self-service password reset (SSPR). Users may only have one email authentication method.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|

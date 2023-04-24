@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationalActivity()
 institution := graphmodels.NewInstitutionData()
@@ -27,7 +35,7 @@ location.SetPostalCode(&postalCode)
 institution.SetLocation(location)
 requestBody.SetInstitution(institution)
 
-result, err := graphClient.Me().Profile().EducationalActivitiesById("educationalActivity-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().EducationalActivities().ByEducationalActivitieId("educationalActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

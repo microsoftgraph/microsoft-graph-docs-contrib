@@ -1,7 +1,7 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -42,8 +42,8 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "dialinUrl": "String",
   "conferenceId": "String",
+  "dialinUrl": "String",
   "tollFreeNumbers": [ "String" ],
   "tollNumbers": [ "String" ]
 }

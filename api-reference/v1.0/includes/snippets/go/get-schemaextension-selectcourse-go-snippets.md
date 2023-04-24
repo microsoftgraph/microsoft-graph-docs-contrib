@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.UserRequestBuilderGetQueryParameters{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.UserItemRequestBuilderGetQueryParameters{
 	Select: [] string {"ext55gb1l09_msLearnCourses"},
 }
-configuration := &graphconfig.UserRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.UserItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Get(context.Background(), configuration)
+result, err := graphClient.Users().ByUserId("user-id").Get(context.Background(), configuration)
 
 
 ```

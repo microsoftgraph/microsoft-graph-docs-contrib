@@ -1,206 +1,47 @@
 ---
-title: "Advanced query capabilities on Azure AD directory objects"
-description: "Azure AD directory objects support advanced query capabilities to efficiently access data."
-author: "Licantrop0"
+title: "Advanced query capabilities on Azure AD objects"
+description: "Azure AD objects support advanced query capabilities to efficiently access data."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
+ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/23/2022
+ms.date: 04/14/2023
 ---
 
-# Advanced query capabilities on Azure AD directory objects
+# Advanced query capabilities on Azure AD objects
 
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure Active Directory (Azure AD) objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-<!-- markdownlint-disable MD023 MD024 MD025 -->
-+ Option 1: Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
+**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
-    # [HTTP](#tab/http)
-    <!-- {
-      "blockType": "request",
-      "name": "get_users_enabled"
-    } -->
-    ```msgraph-interactive
-    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
-    ```
+<!-- {
+  "blockType": "request",
+  "name": "aad_advanced_queries_get_users_accountenabled"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+```
 
-    # [C#](#tab/csharp)
+**Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
-    ```csharp
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=CS
-    var user = await graphClient.Users.Request()
-        .Filter("accountEnabled eq false")
-        .GetAsync();
-    ```
+<!-- {
+  "blockType": "request",
+  "name": "aad_advanced_queries_get_users_not_acountenabled"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+ConsistencyLevel: eventual
+```
 
-    # [JavaScript](#tab/javascript)
+## Microsoft Graph objects that support advanced query capabilities
 
-    ```javascript
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Javascript
-    let users = await client.api('/users')
-      .filter('accountEnabled eq false')
-      .get();
-    ```
-
-    # [Objective-C](#tab/objc)
-
-    ```objectivec
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Objective-C
-    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled eq false"]]];
-    [urlRequest setHTTPMethod:@"GET"];
-
-    MSURLSessionDataTask *usersDataTask = [httpClient dataTaskWithRequest:urlRequest
-    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
-
-      NSError *jsonError = nil;
-      MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-      MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
-
-    }];
-
-    [usersDataTask execute];
-    ```
-
-    # [Java](#tab/java)
-
-    ```java
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Java
-    UserCollectionPage users = graphClient.users()
-        .buildRequest()
-        .filter("accountEnabled eq false")
-        .get();
-    ```
-
-    # [Go](#tab/go)
-
-    ```go
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Go
-    requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-        Filter: "accountEnabled eq false",
-    }
-
-    options := &msgraphsdk.UsersRequestBuilderGetOptions{
-        Q: requestParameters,
-    }
-
-    result, err := client.Users().Get(options)
-    ```
-
-    # [PowerShell](#tab/powershell)
-
-    ```powershell
-    Import-Module Microsoft.Graph.Users
-
-    Get-MgUser -Filter "accountEnabled eq false"
-    ```
-
-    ---
-
-+ Option 2: Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
-
-    # [HTTP](#tab/http)
-    <!-- {
-      "blockType": "request",
-      "name": "get_users_not_enabled"
-    } -->
-    ```msgraph-interactive
-    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
-    ConsistencyLevel: eventual
-    ```
-
-    # [C#](#tab/csharp)
-
-    ```csharp
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=CS
-    var user = await graphClient.Users.Request()
-        .Request(new Option[] { new QueryOption("$count", "true")})
-        .Header("ConsistencyLevel", "eventual")
-        .Filter("accountEnabled ne true")
-        .GetAsync();
-    ```
-
-    # [JavaScript](#tab/javascript)
-
-    ```javascript
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Javascript
-    let users = await client.api('/users')
-      .header('ConsistencyLevel','eventual')
-      .filter('accountEnabled ne true')
-      .count(true)
-      .get();
-    ```
-
-    # [Objective-C](#tab/objc)
-
-    ```objectivec
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Objective-C
-    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled ne true&$count=true"]]];
-    [urlRequest setHTTPMethod:@"GET"];
-    [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
-
-    MSURLSessionDataTask *usersDataTask = [httpClient dataTaskWithRequest:urlRequest
-    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
-
-      NSError *jsonError = nil;
-      MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-      MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
-
-    }];
-
-    [usersDataTask execute];
-    ```
-
-    # [Java](#tab/java)
-
-    ```java
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Java
-    LinkedList<Option> requestOptions = new LinkedList<Option>();
-    requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
-    requestOptions.add(new QueryOption("$count", "true"))
-
-    UserCollectionPage users = graphClient.users()
-        .buildRequest(requestOptions)
-        .filter("accountEnabled ne true")
-        .get();
-    ```
-
-    # [Go](#tab/go)
-
-    ```go
-    // See https://learn.microsoft.com/graph/sdks/create-client?tabs=Go
-    requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-        Filter: "accountEnabled ne true",
-        Count: true,
-    }
-
-    headers := map[string]string{
-        "ConsistencyLevel": "eventual"
-    }
-
-    options := &msgraphsdk.UsersRequestBuilderGetOptions{
-        Q: requestParameters,
-        H: headers,
-    }
-
-    result, err := client.Users().Get(options)
-    ```
-
-    # [PowerShell](#tab/powershell)
-
-    ```powershell
-    Import-Module Microsoft.Graph.Users
-
-    Get-MgUser -Filter "accountEnabled ne true" -CountVariable CountVar -ConsistencyLevel eventual
-    ```
-
-    ---
-
-<!-- markdownlint-enable MD023 MD024 MD025 -->
-
-These advanced query capabilities are supported only on Azure AD directory objects and their relationships, including the following frequently used objects:
+These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
 | Object                                                                                            | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -214,6 +55,7 @@ These advanced query capabilities are supported only on Azure AD directory objec
 | [servicePrincipal](/graph/api/resources/serviceprincipal)                                         | <li>[memberOf](/graph/api/serviceprincipal-list-memberof) <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li>[appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li>[appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li>[oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                           |
 | [user](/graph/api/resources/user)                                                                 | <li>[memberOf](/graph/api/user-list-memberof) <li>[transitiveMemberOf](/graph/api/user-list-transitivememberof)<li>[ownedObjects](/graph/api/user-list-ownedobjects) <li>[registeredDevices](/graph/api/user-list-registereddevices) <li>[ownedDevices](/graph/api/user-list-owneddevices) <li>[transitiveManagers](/graph/api/user-list-manager) <li>[directReports](/graph/api/user-list-directreports) <li>[transitiveReports](/graph/api/user-get-transitivereports) <li>[appRoleAssignments](/graph/api/user-list-approleassignments) <li>[oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
+## Query scenarios that require advanced query capabilities
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries:
 
@@ -234,12 +76,12 @@ The following table lists query scenarios on directory objects that are supporte
     
 > [!NOTE]
 >
-> + Using `$filter` and `$orderBy` together is supported only with advanced queries.
+> + Using `$filter` and `$orderby` together is supported only with advanced queries.
 > + `$expand` is not currently supported with advanced queries.
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-## Support for filter on properties of Azure AD directory objects
+## Support for filter by properties of Azure AD (directory) objects
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
@@ -249,11 +91,11 @@ Properties of directory objects behave differently in their support for query pa
 + Getting empty collections (`/$count eq 0`, `/$count ne 0`) and collections with less than one object (`/$count eq 1`, `/$count ne 1`) is supported only with advanced query parameters.
 + The `not` and `ne` negation operators are supported only with advanced query parameters.
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
-  + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/query-parameters#filter-using-lambda-operators).
+  + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/filter-query-parameter#filter-using-lambda-operators).
 
-The following tables summarizes support for `$filter` operators by properties of directory objects supported by the advanced query capabilities.
+The following tables summarize support for `$filter` operators by properties of directory objects and indicates where querying is supported through advanced query capabilities.
 
-### Legend
+**Legend**
 
 + ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
 + ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
@@ -266,17 +108,81 @@ The following tables summarizes support for `$filter` operators by properties of
 
 [!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
 
+## Support for sorting by properties of Azure AD (directory) objects
+
+The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
+
+**Legend**
+
++ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
++ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
+  + `ConsistencyLevel=eventual` header
+  + `$count=true` query string
++ Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).
+
+| Directory object   | Property name                 | Supports $orderby |
+|--------------------|-------------------------------|-------------------|
+| administrativeUnit | createdDateTime               | ![Advanced][AQP]  |
+| administrativeUnit | deletedDateTime               | ![Advanced][AQP]  |
+| administrativeUnit | displayName                   | ![Advanced][AQP]  |
+| application        | createdDateTime               | ![Advanced][AQP]  |
+| application        | deletedDateTime               | ![Advanced][AQP]  |
+| application        | displayName                   | ![Advanced][AQP]  |
+| orgContact         | createdDateTime               | ![Advanced][AQP]  |
+| orgContact         | displayName                   | ![Advanced][AQP]  |
+| device             | approximateLastSignInDateTime | ![Advanced][AQP]  |
+| device             | createdDateTime               | ![Advanced][AQP]  |
+| device             | deletedDateTime               | ![Advanced][AQP]  |
+| device             | displayName                   | ![Advanced][AQP]  |
+| group              | deletedDateTime               | ![Advanced][AQP]  |
+| group              | displayName                   | ![Default][RDS]   |
+| servicePrincipal   | createdDateTime               | ![Advanced][AQP]  |
+| servicePrincipal   | deletedDateTime               | ![Advanced][AQP]  |
+| servicePrincipal   | displayName                   | ![Advanced][AQP]  |
+| user               | createdDateTime               | ![Advanced][AQP]  |
+| user               | deletedDateTime               | ![Advanced][AQP]  |
+| user               | displayName                   | ![Default][RDS]   |
+| user               | userPrincipalName             | ![Default][RDS]   |
+
 ## Error handling for advanced queries on directory objects
 
 Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header is not specified, the request returns an error when the `$count` URL segment is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users_count_bad"
+  "name": "get_users_count_missing_advancedqueryparams"
 } -->
-```http
-https://graph.microsoft.com/v1.0/users/$count
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/$count
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-count-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-users-count-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-count-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-count-missing-advancedqueryparams-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-users-count-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 <!-- {
   "blockType": "response",
@@ -299,13 +205,41 @@ https://graph.microsoft.com/v1.0/users/$count
 
 For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_applications_search_displayName"
+  "name": "get_applications_missing_advancedqueryparams"
 } -->
-```http
-https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applications-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applications-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applications-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applications-missing-advancedqueryparams-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applications-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applications-missing-advancedqueryparams-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ```json
 {
@@ -323,13 +257,41 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 
 If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users_filer_endsWith"
+  "name": "get_users_missing_advancedqueryparams"
 } -->
-```http
-https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-users-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-missing-advancedqueryparams-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-users-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-missing-advancedqueryparams-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ```json
 {
@@ -347,14 +309,42 @@ https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 
 If a property has not been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_groups_unindexed_bad"
+  "name": "get_groups_missing_advancedqueryparams"
 } -->
-```http
-https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-missing-advancedqueryparams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-groups-missing-advancedqueryparams-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-missing-advancedqueryparams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-missing-advancedqueryparams-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-groups-missing-advancedqueryparams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-missing-advancedqueryparams-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ```json
 {
@@ -374,9 +364,41 @@ However, it is important to note that query parameters specified in a request mi
 This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
 
-```http
-https://graph.microsoft.com/v1.0/users?$count=true
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_users_silent_fail"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$count=true
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-silent-fail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-users-silent-fail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-silent-fail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-silent-fail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-users-silent-fail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-silent-fail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ```http
 HTTP/1.1 200 OK
@@ -399,4 +421,10 @@ Content-type: application/json
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](known-issues.md#some-limitations-apply-to-query-parameters)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
-+ [Explore advanced query capabilities for Azure AD directory objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
++ [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
+
+
+
+[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
+[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
+[NS]: ../concepts/images/yesandnosymbols/no.svg

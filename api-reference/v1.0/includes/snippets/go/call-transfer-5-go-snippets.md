@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/Transfer"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
@@ -37,7 +45,7 @@ participantId := "909c6581-5130-43e9-88f3-fcb3582cde37"
 transferee.SetParticipantId(&participantId) 
 requestBody.SetTransferee(transferee)
 
-graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcCrossCloudGovernmentOrganizationMapping"
 description: "Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object."
-author: "SuyliuMS"
+author: "GuojMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -40,7 +40,6 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Azure AD token of the government cloud tenant.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -61,36 +60,33 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCrossC
 -->
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
-X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpccrosscloudgovernmentorganizationmapping-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpccrosscloudgovernmentorganizationmapping-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpccrosscloudgovernmentorganizationmapping-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpccrosscloudgovernmentorganizationmapping-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpccrosscloudgovernmentorganizationmapping-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpccrosscloudgovernmentorganizationmapping-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpccrosscloudgovernmentorganizationmapping-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpccrosscloudgovernmentorganizationmapping-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpccrosscloudgovernmentorganizationmapping-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 <!-- {

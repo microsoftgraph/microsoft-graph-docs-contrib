@@ -1,6 +1,6 @@
 ---
 title: "taskProcessingResult: resume"
-description: "An Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's in progress."
+description: "In the default case an Azure Logic Apps system-assigned managed identity calls this API to resume the task processing result that's in progress."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resume a task processing result that's `inProgress`. An Azure Logic Apps system-assigned managed identity calls this API.
+Resume a task processing result that's `inProgress`. In the default case an Azure Logic Apps system-assigned managed identity calls this API. For more information read about [Lifecycle Workflows extensibility approach](/azure/active-directory/governance/lifecycle-workflow-extensibility).
 
 ## Permissions
 
@@ -21,12 +21,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not Supported.|
+|Application|LifecycleWorkflows.ReadWrite.All (See note below for least privileged)|
+
+[!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)].
 
 > [!IMPORTANT]
-> Only the Azure Logic Apps system-assigned managed identity that's specified in the [custom task extension authentication Configuration](../resources/identitygovernance-customtaskextension.md) can call this API. The authorized resource doesn't require any Microsoft Graph permissions.
+> Apps specified in `authorizedApps` within the [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) are allowed to resume the task processing result without application permissions or role assignments.
+> The app specified in `resourceId` within the [azureAdTokenAuthentication](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md) of the [custom task extension](../resources/identitygovernance-customtaskextension.md) is allowed to resume the task processing result without an application permission or role assignment.
 
 ## HTTP request
 
@@ -87,20 +90,15 @@ Content-length: 155
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-taskprocessingresultthisresume-csharp-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-taskprocessingresultthisresume-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-taskprocessingresultthisresume-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-taskprocessingresultthisresume-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 

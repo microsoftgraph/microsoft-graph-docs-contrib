@@ -5,13 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContactFolder()
 displayName := "Family"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFoldersById("contactFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

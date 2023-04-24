@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "scenarios has 'secureFoundation'"
 
-requestParameters := &graphconfig.TemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetQueryParameters{
 	Select: [] string {"name","description","id","scenarios"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityConditionalAccessTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

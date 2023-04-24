@@ -4,20 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var lookupValue = JsonDocument.Parse(@"""pear""");
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Functions.Vlookup.VlookupPostRequestBody
+{
+	LookupValue = "pear",
+	TableArray = new Json
+	{
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"Address" , "Sheet1!B2:C7"
+			},
+		},
+	},
+	ColIndexNum = 2,
+	RangeLookup = false,
+};
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Functions.Vlookup.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("workbook-session-id", "{session-id}");
+});
 
-var tableArray = JsonDocument.Parse("{"Address":"Sheet1!B2:C7"}");
-
-var colIndexNum = JsonDocument.Parse("2");
-
-var rangeLookup = JsonDocument.Parse("false");
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Functions
-	.Vlookup(lookupValue,tableArray,colIndexNum,rangeLookup)
-	.Request()
-	.Header("workbook-session-id","{session-id}")
-	.PostAsync();
 
 ```

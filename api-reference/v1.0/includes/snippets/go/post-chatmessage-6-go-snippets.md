@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 subject := null
@@ -45,7 +53,7 @@ chatMessageHostedContent.SetContentBytes(&contentBytes)
 contentType := "image/png"
 chatMessageHostedContent.SetContentType(&contentType) 
 additionalData := map[string]interface{}{
-	"@microsoft.graph.temporaryId" : "1", 
+	"microsoftGraphTemporaryId" : "1", 
 }
 chatMessageHostedContent.SetAdditionalData(additionalData)
 chatMessageHostedContent1 := graphmodels.NewChatMessageHostedContent()
@@ -54,7 +62,7 @@ chatMessageHostedContent1.SetContentBytes(&contentBytes)
 contentType := "image/png"
 chatMessageHostedContent1.SetContentType(&contentType) 
 additionalData := map[string]interface{}{
-	"@microsoft.graph.temporaryId" : "2", 
+	"microsoftGraphTemporaryId" : "2", 
 }
 chatMessageHostedContent1.SetAdditionalData(additionalData)
 
@@ -65,7 +73,7 @@ hostedContents := []graphmodels.ChatMessageHostedContentable {
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Chats/Item/MarkChatUnreadForUser"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewMarkChatUnreadForUserPostRequestBody()
 user := graphmodels.NewTeamworkUserIdentity()
@@ -19,7 +28,7 @@ requestBody.SetUser(user)
 lastMessageReadDateTime , err := time.Parse(time.RFC3339, "2021-05-27T22:13:01.577Z")
 requestBody.SetLastMessageReadDateTime(&lastMessageReadDateTime) 
 
-graphClient.ChatsById("chat-id").MarkChatUnreadForUser().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").MarkChatUnreadForUser().Post(context.Background(), requestBody, nil)
 
 
 ```

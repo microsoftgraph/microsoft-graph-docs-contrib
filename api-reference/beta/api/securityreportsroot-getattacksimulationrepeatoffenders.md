@@ -67,20 +67,16 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatO
 [!INCLUDE [sample-code](../includes/snippets/csharp/securityreportsrootthisgetattacksimulationrepeatoffenders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/securityreportsrootthisgetattacksimulationrepeatoffenders-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationrepeatoffenders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securityreportsrootthisgetattacksimulationrepeatoffenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/securityreportsrootthisgetattacksimulationrepeatoffenders-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityreportsrootthisgetattacksimulationrepeatoffenders-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securityreportsrootthisgetattacksimulationrepeatoffenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -88,8 +84,6 @@ GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationRepeatO
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

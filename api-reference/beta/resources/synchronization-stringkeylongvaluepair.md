@@ -18,8 +18,8 @@ Represents a key-value pair where the key is a string and the value is an Int64.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|key|String|Key.|
-|value|Int64|Value.|
+|key|String| The mapping of the user type from the source system to the target system. For example:<br/><li>`User to User` - For Azure AD to Azure AD synchronization <br/><li>`worker to user` - For Workday to Azure AD synchronization. <br/> |
+|value|Int64|Total number of synchronized objects.|
 
 ## JSON representation
 

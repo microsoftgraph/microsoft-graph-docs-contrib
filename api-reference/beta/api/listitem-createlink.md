@@ -58,6 +58,8 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
+| retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
+|sendNotification|Boolean|If `true`, this method sends a [sharing link](../resources/permission.md#sharing-links) in an email to users specified in `recipients`. Applicable to OneDrive for Business and SharePoint. The default value is `false`. Optional.|
 
 ### Link types
 
@@ -95,6 +97,8 @@ The response will be `201 Created` if a new sharing link is created for the list
 ### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
+For OneDrive for Business and SharePoint users, use the `sendNotification` parameter to create a sharing link. The `sharingLink` is then sent to recipients via email.
+All existing permissions are removed when sharing for the first time if `retainInheritedPermissions` is false.
 
 #### Request
 
@@ -116,7 +120,9 @@ Content-Type: application/json
     {
       "@odata.type": "microsoft.graph.driveRecipient"
     }
-  ]
+  ],
+  "sendNotification": true,
+  "retainInheritedPermissions": false
 }
 ```
 
@@ -178,28 +184,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/listitem-createlink-create-company-shareable-links-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-create-company-shareable-links-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-create-company-shareable-links-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-create-company-shareable-links-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-create-company-shareable-links-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-create-company-shareable-links-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-create-company-shareable-links-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/listitem-createlink-create-company-shareable-links-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-create-company-shareable-links-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -227,7 +232,7 @@ Content-Type: application/json
 ### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
-When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
+When an embed link is created, the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
 >**Note:** Embed links are only supported for OneDrive personal.
 
@@ -253,28 +258,27 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/listitem-createlink-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-3-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-3-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/listitem-createlink-3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/Deployments/Item/Audience/WindowsUpdatesUpdateAudienceById"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
@@ -31,7 +39,7 @@ removeExclusions := []string {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().DeploymentsById("deployment-id").Audience().UpdateAudienceById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Audience().WindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

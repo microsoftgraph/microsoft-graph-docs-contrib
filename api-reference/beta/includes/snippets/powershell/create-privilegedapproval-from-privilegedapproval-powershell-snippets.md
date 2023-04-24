@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	UserId = "userId-value"
-	RoleId = "roleId-value"
-	ApprovalType = "approvalType-value"
-	ApprovalState = "approvalState-value"
-	ApprovalDuration = "datetime-value"
+	userId = "userId-value"
+	roleId = "roleId-value"
+	approvalType = "approvalType-value"
+	approvalState = "approvalState-value"
+	approvalDuration = "datetime-value"
 }
 
 New-MgPrivilegedApproval -BodyParameter $params

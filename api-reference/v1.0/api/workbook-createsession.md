@@ -84,16 +84,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-with-long-running-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-with-long-running-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-excel-session-with-long-running-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-with-long-running-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-with-long-running-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-excel-session-with-long-running-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability. 
@@ -124,7 +131,7 @@ Content-type: application/json
   ]
 }-->
 
-With the `202 Accepted` response, please see [Work with APIs that take a long time to complete](/concepts/workbook-best-practice.md#work-with-apis-that-take-a-long-time-to-complete) for how to retrieve the operation status and get the session creation result.
+With the `202 Accepted` response, please see [Work with APIs that take a long time to complete](/graph/workbook-best-practice?tabs=http#work-with-apis-that-take-a-long-time-to-complete) for how to retrieve the operation status and get the session creation result.
 
 ### Example 2: Basic session creation
 
@@ -134,7 +141,7 @@ With the `202 Accepted` response, please see [Work with APIs that take a long ti
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_excel_session"
+  "name": "create_workbook_session"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
@@ -146,15 +153,23 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workbook-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-workbook-session-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-workbook-session-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workbook-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-workbook-session-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

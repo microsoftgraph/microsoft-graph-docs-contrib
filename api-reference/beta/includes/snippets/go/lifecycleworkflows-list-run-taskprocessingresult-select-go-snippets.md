@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
 
-requestParameters := &graphconfig.TaskProcessingResultsRequestBuilderGetQueryParameters{
-	Select: [] string {"id","failureReason","processingStatus","subject","task"},
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemRunItemTaskProcessingResultsRequestBuilderGetQueryParameters{
+	Select: [] string {"id","failureReason","processingStatus","subject"},
 }
-configuration := &graphconfig.TaskProcessingResultsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemRunItemTaskProcessingResultsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").RunsById("run-id").UserProcessingResultsById("userProcessingResult-id").TaskProcessingResults().Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Runs().ByRunId("run-id").TaskProcessingResults().Get(context.Background(), configuration)
 
 
 ```

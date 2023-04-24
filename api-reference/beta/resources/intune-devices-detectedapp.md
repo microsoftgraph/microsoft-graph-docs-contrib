@@ -1,7 +1,7 @@
 ---
 title: "detectedApp resource type"
 description: "A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -62,8 +62,3 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
-
-
-

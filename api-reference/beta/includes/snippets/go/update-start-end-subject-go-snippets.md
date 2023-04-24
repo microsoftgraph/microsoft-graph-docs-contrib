@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewOnlineMeeting()
 startDateTime , err := time.Parse(time.RFC3339, "2020-09-09T14:33:30.8546353-07:00")
@@ -15,7 +24,7 @@ requestBody.SetEndDateTime(&endDateTime)
 subject := "Patch Meeting Subject"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
