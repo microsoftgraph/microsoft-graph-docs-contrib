@@ -59,27 +59,27 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/stopApplyDecisions
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstance-stopapplydecisions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/stopApplyDecisions-accessreviewinstance-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-stopapplydecisions-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/stopApplyDecisions-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-stopapplydecisions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/stopApplyDecisions-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstance-stopapplydecisions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/stopApplyDecisions-accessreviewinstance-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstance-stopapplydecisions-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/stopApplyDecisions-accessreviewinstance-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstance-stopapplydecisions-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/stopApplyDecisions-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
