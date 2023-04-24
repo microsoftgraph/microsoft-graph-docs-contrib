@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().ConditionalAccess().PoliciesById("conditionalAccessPolicy-id").Delete(context.Background(), nil)
+graphClient.Identity().ConditionalAccess().Policies().ByPolicieId("conditionalAccessPolicy-id").Delete(context.Background(), nil)
 
 
 ```

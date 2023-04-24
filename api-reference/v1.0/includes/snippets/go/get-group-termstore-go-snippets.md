@@ -22,7 +22,7 @@ configuration := &graphconfig.SiteItemTermStoreGroupItemRequestBuilderGetRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").TermStore().GroupsById("group-id").Get(context.Background(), configuration)
+result, err := graphClient.Sites().BySiteId("site-id").TermStore().Groups().ByGroupId("group-id").Get(context.Background(), configuration)
 
 
 ```

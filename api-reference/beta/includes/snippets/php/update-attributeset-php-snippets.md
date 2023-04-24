@@ -16,7 +16,7 @@ $requestBody->setMaxAttributesPerSet(20);
 
 
 
-$requestResult = $graphServiceClient->directory()->attributeSetsById('attributeSet-id')->patch($requestBody);
+$result = $graphServiceClient->directory()->attributeSetsById('attributeSet-id')->patch($requestBody);
 
 
 ```

@@ -81,7 +81,7 @@ $requestBody->setTasks($tasksArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->post($requestBody);
 
 
 ```

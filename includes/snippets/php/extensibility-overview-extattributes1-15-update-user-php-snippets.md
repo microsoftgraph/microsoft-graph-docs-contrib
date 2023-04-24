@@ -19,7 +19,7 @@ $OnPremisesExtensionAttributes->setExtensionAttribute13(null);
 $requestBody->setOnPremisesExtensionAttributes($onPremisesExtensionAttributes);
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

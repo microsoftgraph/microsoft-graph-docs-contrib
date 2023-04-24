@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new KeySet();
 $additionalData = [
-'keys' => $keys1 = new ();
+		'keys' => $keys1 = new ();
 $		keys1->setK('k-value');
 
 $keys1->setX5c(['x5c-value', ]);

@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **exchange** relationship to the [roleManagement](https://learn.microsoft.com/en-us/graph/api/resources/roleManagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource type.",
+          "Target": "unifiedRbacApplication"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta), [POST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-14T07:49:08.3091941Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite.All",
@@ -8030,6 +8088,24 @@
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-1.0) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-21T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").EndGracePeriod().Post(context.Background(), nil)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").EndGracePeriod().Post(context.Background(), nil)
 
 
 ```

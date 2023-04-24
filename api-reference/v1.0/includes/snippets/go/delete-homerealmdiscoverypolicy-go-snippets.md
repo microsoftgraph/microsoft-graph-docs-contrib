@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").Delete(context.Background(), nil)
+graphClient.Policies().HomeRealmDiscoveryPolicies().ByHomeRealmDiscoveryPolicieId("homeRealmDiscoveryPolicy-id").Delete(context.Background(), nil)
 
 
 ```

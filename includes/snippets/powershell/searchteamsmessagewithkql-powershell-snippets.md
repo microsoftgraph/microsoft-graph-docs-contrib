@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Search
 
 $params = @{
-	Requests = @(
+	requests = @(
 		@{
-			EntityTypes = @(
+			entityTypes = @(
 				"chatMessage"
 			)
-			Query = @{
-				QueryString = "contoso from:bob to:alice sent>2022-07-14"
+			query = @{
+				queryString = "contoso from:bob to:alice sent>2022-07-14"
 			}
-			From = 0
-			Size = 15
-			EnableTopResults = $true
+			from = 0
+			size = 15
+			enableTopResults = $true
 		}
 	)
 }

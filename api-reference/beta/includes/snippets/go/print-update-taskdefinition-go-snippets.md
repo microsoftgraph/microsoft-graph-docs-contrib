@@ -23,7 +23,7 @@ displayName := "Requesting App Display Name"
 createdBy.SetDisplayName(&displayName) 
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Print().TaskDefinitions().ByTaskDefinitionId("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -22,7 +22,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.TeamsById("team-id").MembersById("conversationMember-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Members().ByMemberId("conversationMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

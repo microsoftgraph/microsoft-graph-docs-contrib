@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.SubscriptionsById("subscription-id").Delete(context.Background(), nil)
+graphClient.Subscriptions().BySubscriptionId("subscription-id").Delete(context.Background(), nil)
 
 
 ```
