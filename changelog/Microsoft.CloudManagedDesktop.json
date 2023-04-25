@@ -3098,6 +3098,32 @@
         "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
         "WorkloadArea": "Devices and apps",
         "SubArea": "Cloud PC"
-      }
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+                "ApiChange": "Property",
+                "ChangedApiName": "udpConnectivityCheckTurnUrlNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the **udpConnectivityCheckTurnUrlNotAllowListed** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+                "Id": "1625de52-ebc2-496e-a15c-87474fcc0e0e",
+                "ApiChange": "Property",
+                "ChangedApiName": "udpConnectivityCheckUrlsNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the **udpConnectivityCheckUrlsNotAllowListed** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+        ],
+        "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
+    }
     ]
 }
