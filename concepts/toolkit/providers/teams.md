@@ -36,6 +36,13 @@ Next, import and use the provider.
 import * as microsoftTeams from "@microsoft/teams-js";
 import {Providers, TeamsProvider} from '@microsoft/mgt';
 
+const config: TeamsConfig = {
+  baseURL: 'https://graph.microsoft.us', // change the base URL
+  clientId: '2dfea037-xxx-c05708a1b241',
+  ... // rest of the config
+}
+Providers.globalProvider = new TeamsProvider(config);
+
 TeamsProvider.microsoftTeamsLib = microsoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
 ```
@@ -48,6 +55,7 @@ export interface TeamsConfig {
   authPopupUrl: string; // see below for creating the popup page
   scopes?: string[];
   msalOptions?: Configuration;
+  baseURL?: GraphEndpoint;
 }
 ```
 
@@ -63,6 +71,7 @@ export interface TeamsConfig {
   auth-popup-url="/AUTH-PATH"
   scopes="User.Read,People.Read..."
   authority=""
+  base-url="https://graph.microsoft.us" // change this attribute if you want to use a different M365 endpoint.
 ></mgt-teams-provider>
 ```
 
@@ -74,6 +83,7 @@ export interface TeamsConfig {
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
 | depends-on | Element selector string of another higher-priority provider component. Optional. |
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+| base-url | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints). The default value is `https://graph.microsoft.com`.|
 
 ---
 
@@ -91,6 +101,19 @@ TeamsProvider.microsoftTeamsLib = microsoftTeams;
 TeamsProvider.handleAuth();
 ```
 
+When you use a different Microsoft 365 endpoint, you need to pass the `baseURL` to the `TeamsProvider.handleAuth()` static method.
+
+```ts
+...// rest of the setup code
+
+const config: TeamsConfig = {
+  baseURL: 'https://graph.microsoft.com', // change the base URL
+  clientId: '2dfea037-xxx-c05708a1b241',
+  ... // rest of the config
+}
+TeamsProvider.handleAuth(config.baseURL);
+```
+
 # [unpkg](#tab/html)
 
 ```html
@@ -99,6 +122,14 @@ TeamsProvider.handleAuth();
 
 <script>
   mgt.TeamsProvider.handleAuth();
+</script>
+```
+
+When you use a different Microsoft 365 endpoint, you need to pass the `baseURL` to the `TeamsProvider.handleAuth()` static method.
+```html
+... // rest of the setup code
+<script>
+  mgt.TeamsProvider.handleAuth('https://graph.microsoft.us')
 </script>
 ```
 ---
