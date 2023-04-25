@@ -83,7 +83,7 @@ export interface TeamsConfig {
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
 | depends-on | Element selector string of another higher-priority provider component. Optional. |
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
-| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints). The default value is `https://graph.microsoft.com`.|
+| base-url | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints). The default value is `https://graph.microsoft.com`.|
 
 ---
 
