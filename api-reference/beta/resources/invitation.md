@@ -49,6 +49,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
+|invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 Here is a JSON representation of the resource
