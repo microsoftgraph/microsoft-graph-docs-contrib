@@ -42,7 +42,7 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 | authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
-| base-url                     | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
+| base-url                     | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
 | incremental-consent-disabled | Specifies if incremental consent is disabled. Default `false`. Optional. |
 
 ### Initialize in JavaScript
@@ -117,7 +117,7 @@ const config: Msal2Config = {
 Providers.globalProvider = new Msal2Provider(config);
 ```
 
-Alternatively,
+Alternatively:
 
 ```html
 <mgt-msal2-provider
