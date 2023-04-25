@@ -77,10 +77,9 @@ PATCH https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retenti
 Content-Type: application/json
 
 {
-    "retentionSettings":
-    {
-        "isRecordLocked": true
-    }
+  "retentionSettings": {
+    "isRecordLocked": true
+  }
 }
 ```
 
