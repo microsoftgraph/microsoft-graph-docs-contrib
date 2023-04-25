@@ -112,7 +112,7 @@ const config: MsalConfig = {
 Providers.globalProvider = new MsalProvider(config);
 ```
 
-Alternatively,
+Alternatively:
 
 ```html
 <mgt-msal-provider
