@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## Optional query parameters
 
-This method supports `$select`, `$filter` and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter`, `$count` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
