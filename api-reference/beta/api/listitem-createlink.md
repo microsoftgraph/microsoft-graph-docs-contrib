@@ -109,7 +109,7 @@ All existing permissions are removed when sharing for the first time i
 }-->
 
 ```http
-POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
+POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 
 {

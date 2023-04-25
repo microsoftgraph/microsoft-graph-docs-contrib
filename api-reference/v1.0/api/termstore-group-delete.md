@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE sites/{site-id}/termStore/groups/{group-id}
+DELETE /sites/{site-id}/termStore/groups/{group-id}
 ```
 
 ## Request headers
