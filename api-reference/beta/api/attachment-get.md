@@ -341,7 +341,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 
 ---
 
-
 #### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
