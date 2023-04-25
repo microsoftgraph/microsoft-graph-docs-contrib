@@ -46,7 +46,7 @@ The following are the options for group-scoped datasets:
 
 > **Note:**  When the customer specifies a group or groups to be the scope, Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
  
-The following table maps the correct dataset per type of group. This helps you to understand which types of groups are compatible with which datasets when you extract data and use scope filters. Groups can either be distribution groups, security groups, or Microsoft 365 groups. The types of groups supported varies based on which dataset you're requesting.
+The following table maps certain datasets with certain types of group. This helps you to understand which types of groups are compatible with which datasets when you extract data and use scope filters. Groups can either be distribution groups, security groups, or Microsoft 365 groups. The types of groups supported varies based on which dataset you're requesting.
 
 |              Dataset                 | Microsoft 365 group | Distribution group | Security group | Mail-enabled security group  |
 |---------------------------------------|-------------|---------------------|-----------------|------------------------|
@@ -55,7 +55,7 @@ The following table maps the correct dataset per type of group. This helps you t
 |     OutlookGroupConversations         | Yes         | No                  | No              | No                     |
 |     GroupDetails                      | Yes         | Yes                 | Yes             | Yes                    |
 |     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
-|     GroupOwners                       | Yes         | Yes*                | Yes*            | Yes                    |
+|     GroupOwners                       | Yes         | Yes**               | Yes**           | Yes                    |
 |     Viva Insights                     | N/A         | NA                  | NA              | NA                     |
 |     OneDrive and SharePoint Online    | N/A         | NA                  | NA              | NA                     |
 |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
