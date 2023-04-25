@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
+PATCH /deviceManagement/virtualEndpoint/userSettings/{id}
 ```
 
 ## Request headers
