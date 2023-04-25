@@ -102,7 +102,7 @@ export interface TeamsMsal2Config {
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | sso-url  | Absolute or relative path to the backend API that handles the OBO token exchange. Optional. |
 | http-method  | Type of HTTP method to use for calling the backend API. `POST` or `GET`. Default is `GET`. Optional |
-| base-url | The graph endpoint to be used for graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
+| base-url | The Microsoft Graph endpoint to be used for Microsoft Graph calls. It can be any of the supported [National cloud deployments](/graph/deployments). The default value is `https://graph.microsoft.com`.    
 
 ---
 ### Create the popup page
