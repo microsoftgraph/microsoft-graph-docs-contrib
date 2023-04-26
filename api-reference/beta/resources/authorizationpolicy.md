@@ -67,18 +67,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "id": "String (identifier)",
+  "allowEmailVerifiedUsersToJoinOrganization": "Boolean",
+  "allowInvitesFrom": "String",
+  "allowUserConsentForRiskyApps": "Boolean",
+  "allowedToSignUpEmailBasedSubscriptions": "Boolean",
+  "allowedToUseSSPR": "Boolean",
+  "blockMsolPowerShell": "Boolean",
+  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "description": "String",
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
   "guestUserRoleId": "Guid",
-  "allowUserConsentForRiskyApps": false,
-  "blockMsolPowerShell": true,
-  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
-  "allowedToUseSSPR": true,
-  "allowedToSignUpEmailBasedSubscriptions": true,
-  "allowEmailVerifiedUsersToJoinOrganization": true,
-  "allowInvitesFrom": "String",
+  "id": "String (identifier)",
   "permissionGrantPolicyIdsAssignedToDefaultUserRole": "[String]"
 }
 ```
