@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().PrintersById("printer-id").RestoreFactoryDefaults().Post(context.Background(), nil)
+graphClient.Print().Printers().ByPrinterId("printer-id").RestoreFactoryDefaults().Post(context.Background(), nil)
 
 
 ```

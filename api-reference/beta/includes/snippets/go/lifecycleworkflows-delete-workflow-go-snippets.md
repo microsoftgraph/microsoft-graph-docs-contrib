@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Delete(context.Background(), nil)
+graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Delete(context.Background(), nil)
 
 
 ```

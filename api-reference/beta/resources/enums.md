@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+
 ### usqState values
 
 | Member             | 
@@ -3730,4 +3746,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----|
 |microsoftAuthenticator|
 |outlookMobile|
+|unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
 |unknownFutureValue|

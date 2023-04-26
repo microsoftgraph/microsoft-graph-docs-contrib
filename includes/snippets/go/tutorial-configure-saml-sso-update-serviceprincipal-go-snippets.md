@@ -19,7 +19,7 @@ requestBody := graphmodels.NewServicePrincipal()
 preferredSingleSignOnMode := "saml"
 requestBody.SetPreferredSingleSignOnMode(&preferredSingleSignOnMode) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

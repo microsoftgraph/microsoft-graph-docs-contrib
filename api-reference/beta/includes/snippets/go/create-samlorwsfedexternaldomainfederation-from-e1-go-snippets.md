@@ -36,7 +36,7 @@ id := "contoso.com"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Post(context.Background(), requestBody, nil)
+graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Post(context.Background(), requestBody, nil)
 
 
 ```

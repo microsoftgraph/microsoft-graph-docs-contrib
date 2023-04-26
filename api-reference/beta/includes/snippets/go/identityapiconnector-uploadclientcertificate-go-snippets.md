@@ -21,7 +21,7 @@ requestBody.SetPkcs12Value(&pkcs12Value)
 password := "<password>"
 requestBody.SetPassword(&password) 
 
-result, err := graphClient.Identity().ApiConnectorsById("identityApiConnector-id").UploadClientCertificate().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ApiConnectors().ByApiConnectorId("identityApiConnector-id").UploadClientCertificate().Post(context.Background(), requestBody, nil)
 
 
 ```

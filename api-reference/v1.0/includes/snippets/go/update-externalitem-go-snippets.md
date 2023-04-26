@@ -34,7 +34,7 @@ accessType := "grant"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(context.Background(), requestBody, nil)
+graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
