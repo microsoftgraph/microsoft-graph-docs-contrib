@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2233
+Content-Length: 2188
 
 {
   "value": [
@@ -113,8 +113,7 @@ Content-Length: 2233
       "adminAccountUserName": "Admin Account User Name value",
       "adminAccountFullName": "Admin Account Full Name value",
       "adminAccountPassword": "Admin Account Password value",
-      "hideAdminAccount": true,
-      "requestRequiresNetworkTether": true
+      "hideAdminAccount": true
     }
   ]
 }

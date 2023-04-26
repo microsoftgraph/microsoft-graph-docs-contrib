@@ -43,7 +43,7 @@ externalBucketId := "deliveryBucket"
 businessScenarioProperties.SetExternalBucketId(&externalBucketId) 
 requestBody.SetBusinessScenarioProperties(businessScenarioProperties)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().Tasks().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

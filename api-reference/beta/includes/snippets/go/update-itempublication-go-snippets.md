@@ -21,7 +21,7 @@ requestBody.SetPublisher(&publisher)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl) 
 
-result, err := graphClient.UsersById("user-id").Profile().PublicationsById("itemPublication-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Profile().Publications().ByPublicationId("itemPublication-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

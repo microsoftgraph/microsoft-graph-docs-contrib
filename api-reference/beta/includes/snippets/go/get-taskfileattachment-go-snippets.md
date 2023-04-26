@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").AttachmentsById("attachmentBase-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").Attachments().ByAttachmentId("attachmentBase-id").Get(context.Background(), nil)
 
 
 ```

@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCustodian()
 applyHoldToSources := false
 requestBody.SetApplyHoldToSources(&applyHoldToSources) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Custodians().ByCustodianId("custodian-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
