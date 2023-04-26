@@ -193,14 +193,14 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 ## Localization
 
-The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details about localization, see [Localizing components](../customize-components/localization.md).
 
 | String name          | Default value                 |
 | -------------------- | ----------------------------- |
-| inputPlaceholderText | 'Start typing a name'         |
-| noResultsFound       | `We didn't find any matches.` |
-| loadingMessage       | 'Loading...'                  |
-| suggestedContact     | 'suggested contact'           |
-| suggestedContacts    | 'suggested contacts'          |
-| selected             | 'selected'                    |
-| removeSelectedItem   | 'remove selected item'        |
+| inputPlaceholderText | Start typing a name         |
+| noResultsFound       | We didn't find any matches. |
+| loadingMessage       | Loading...                  |
+| suggestedContact     | suggested contact           |
+| suggestedContacts    | suggested contacts          |
+| selected             | selected                    |
+| removeSelectedItem   | remove selected item        |
