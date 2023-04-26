@@ -21,7 +21,7 @@ For more flexibility, consider using [custom templates](./templates.md).
 
 ## Apply themes
 
-Two themes are available - `light` and `dark`. These themes are supported out of the box because the mgt components are upgraded to use [Fluent UI web elements](/fluent-ui/web-components/) under the hood. By default, all components are in the `light` theme. To switch to `dark` theme, you can do it globally for the entire document using the `mgt-theme-toggle` component or you can theme a component by setting the custom CSS token values on the component.
+Two themes are available - `light` and `dark`. These themes are supported automatically because the mgt components use [Fluent UI web elements](/fluent-ui/web-components/). By default, all components are in `light` theme. To switch to `dark` theme, you can do it globally for the entire document by using the `mgt-theme-toggle` component, or you can update the theme for a component by setting the custom CSS token values on the component.
 
 ### Example 1: Global theme using mgt-theme-toggle
 
