@@ -1,6 +1,6 @@
 ---
 title: "appliedCategory resource type"
-description: "Represents the file plan descriptor of the type category applied to a particular retention label."
+description: "Represents the file plan descriptor of type category applied to a particular retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
