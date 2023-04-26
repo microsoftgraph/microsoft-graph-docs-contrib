@@ -3747,3 +3747,11 @@ Possible values for user account types (group membership), per Windows definitio
 |microsoftAuthenticator|
 |outlookMobile|
 |unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
+|unknownFutureValue|

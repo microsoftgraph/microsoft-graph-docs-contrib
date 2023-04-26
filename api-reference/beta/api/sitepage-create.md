@@ -178,7 +178,6 @@ Content-Type: application/json
 
 ---
 
-
 ## Response
 
 If successful, this method returns a [sitePage][] in the response body for the created page.
