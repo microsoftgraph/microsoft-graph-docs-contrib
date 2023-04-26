@@ -90,6 +90,80 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 }
 ```
 
+## Verify setup
+Use the following steps to verify that an application is properly enabled to use metered APIs and services in Microsoft Graph.
+
+>**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface install the [Azure CLI](/cli/azure/).
+
+1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
+
+2. Use **az resource list** to list the resources associated with the active Azure subscription. Copy the following command into your command-line interface and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the resources associated with the active Azure subscription.
+
+```PowerShell
+  az resource list --resource-type Microsoft.GraphServices/accounts
+```
+
+A successful JSON result will look something like this:
+
+```
+[
+  {
+    "changedTime": "2023-04-25T18:12:30.586342+00:00",
+    "createdTime": "2023-04-25T18:02:30.141407+00:00",
+    "extendedLocation": null,
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+    "identity": null,
+    "kind": null,
+    "location": "global",
+    "managedBy": null,
+    "name": "myGraphAppBilling",
+    "plan": null,
+    "properties": null,
+    "provisioningState": "Succeeded",
+    "resourceGroup": "myRG",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.GraphServices/accounts"
+  }
+]
+```
+
+3. Using the values returned in step 2 use **az resource show** to show the full details of the resource. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the requested resource.
+
+```PowerShell
+  az resource show --resource-group myRg --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts
+```
+
+| Parameter | Description |
+  |:--------------------------|:----------------------------------------|
+  | myRG | The name of the Azure resource group provided in the result of step 2. |
+  | myGraphAppBilling | The name of the resource provided in the result of step 2. |
+
+  A successful JSON result will look something like this:
+
+```
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.GraphServices/accounts/myGraphAppBilling",
+  "identity": null,
+  "kind": null,
+  "location": "Global",
+  "managedBy": null,
+  "name": "myGraphAppBilling",
+  "plan": null,
+  "properties": {
+    "appId": "00000000-0000-0000-0000-000000000000",
+    "billingPlanId": "00000000-0000-0000-0000-000000000000"
+  },
+  "resourceGroup": "myRG",
+  "sku": null,
+  "tags": null,
+  "type": "microsoft.graphservices/accounts"
+}
+```
+
+The "properties" property will include the application ID of the associated application registration.
+
 ## Consume metered APIs in your application
 After you associate your application registration and subscription, your application can start using metered APIs and services in Microsoft Graph. Costs generated from those requests will be charged to the Azure subscription associated with the application.
 
