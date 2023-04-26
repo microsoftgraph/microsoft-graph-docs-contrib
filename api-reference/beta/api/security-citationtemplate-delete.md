@@ -1,6 +1,6 @@
 ---
 title: "Delete citationTemplate"
-description: "Delete a microsoft.graph.security.citationTemplate object."
+description: "Delete a citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

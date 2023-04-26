@@ -1,6 +1,6 @@
 ---
 title: "Delete subCategoryTemplate"
-description: "Delete a microsoft.graph.security.subCategoryTemplate object."
+description: "Delete a subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

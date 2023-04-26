@@ -1,6 +1,6 @@
 ---
 title: "Delete departmentTemplate"
-description: "Delete a microsoft.graph.security.departmentTemplate object."
+description: "Delete a departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

@@ -1,6 +1,6 @@
 ---
 title: "Delete authorityTemplate"
-description: "Delete a microsoft.graph.security.authorityTemplate object."
+description: "Delete an authorityTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

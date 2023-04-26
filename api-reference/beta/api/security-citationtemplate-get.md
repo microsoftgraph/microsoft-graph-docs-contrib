@@ -1,6 +1,6 @@
 ---
 title: "Get citationTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.citationTemplate object."
+description: "Read the properties and relationships of a citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

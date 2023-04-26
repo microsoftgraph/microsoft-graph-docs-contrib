@@ -1,6 +1,6 @@
 ---
 title: "Create filePlanReferenceTemplate"
-description: "Create a new microsoft.graph.security.filePlanReferenceTemplate object."
+description: "Create a new filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

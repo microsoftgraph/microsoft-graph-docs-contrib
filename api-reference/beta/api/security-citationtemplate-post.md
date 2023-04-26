@@ -1,6 +1,6 @@
 ---
 title: "Create citationTemplate"
-description: "Create a new microsoft.graph.security.citationTemplate object."
+description: "Create a new citationTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

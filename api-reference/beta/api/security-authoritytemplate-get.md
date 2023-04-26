@@ -1,6 +1,6 @@
 ---
 title: "Get authorityTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.authorityTemplate object."
+description: "Read the properties and relationships of an authorityTemplate."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

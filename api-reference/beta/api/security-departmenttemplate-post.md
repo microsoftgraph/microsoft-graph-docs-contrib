@@ -1,6 +1,6 @@
 ---
 title: "Create departmentTemplate"
-description: "Create a new microsoft.graph.security.departmentTemplate object."
+description: "Create a new departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

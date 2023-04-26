@@ -1,6 +1,6 @@
 ---
 title: "Delete categoryTemplate"
-description: "Delete a microsoft.graph.security.categoryTemplate object."
+description: "Delete a categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

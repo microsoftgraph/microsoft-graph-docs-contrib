@@ -1,6 +1,6 @@
 ---
 title: "List departmentTemplates"
-description: "Get a list of the microsoft.graph.security.departmentTemplate objects and their properties."
+description: "Get a list of the departmentTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

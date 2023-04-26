@@ -1,6 +1,6 @@
 ---
 title: "Delete filePlanReferenceTemplate"
-description: "Delete a microsoft.graph.security.filePlanReferenceTemplate object."
+description: "Delete a filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

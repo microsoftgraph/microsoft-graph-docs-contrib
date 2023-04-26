@@ -1,6 +1,6 @@
 ---
 title: "Get subCategoryTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.subCategoryTemplate object."
+description: "Read the properties and relationships of a subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

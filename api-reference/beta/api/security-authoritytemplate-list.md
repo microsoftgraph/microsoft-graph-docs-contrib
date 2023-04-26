@@ -1,6 +1,6 @@
 ---
 title: "List authorityTemplates"
-description: "Get a list of the microsoft.graph.security.authorityTemplate objects and their properties."
+description: "Get a list of the authorityTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

@@ -1,6 +1,6 @@
 ---
 title: "Get departmentTemplate"
-description: "Read the properties and relationships of a microsoft.graph.security.departmentTemplate object."
+description: "Read the properties and relationships of a departmentTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

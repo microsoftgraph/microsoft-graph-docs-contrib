@@ -1,6 +1,6 @@
 ---
 title: "Create authorityTemplate"
-description: "Create a new microsoft.graph.security.authorityTemplate object."
+description: "Create a new authorityTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

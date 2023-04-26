@@ -1,6 +1,6 @@
 ---
 title: "List filePlanReferenceTemplates"
-description: "Get a list of the microsoft.graph.security.filePlanReferenceTemplate objects and their properties."
+description: "Get a list of the filePlanReferenceTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

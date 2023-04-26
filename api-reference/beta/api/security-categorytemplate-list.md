@@ -1,6 +1,6 @@
 ---
 title: "List categoryTemplates"
-description: "Get a list of the microsoft.graph.security.categoryTemplate objects and their properties."
+description: "Get a list of the categoryTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

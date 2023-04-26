@@ -1,6 +1,6 @@
 ---
 title: "Create categoryTemplate"
-description: "Create a new microsoft.graph.security.categoryTemplate object."
+description: "Create a new categoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"

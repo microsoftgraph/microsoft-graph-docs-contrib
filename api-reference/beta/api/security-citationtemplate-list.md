@@ -1,6 +1,6 @@
 ---
 title: "List citationTemplates"
-description: "Get a list of the microsoft.graph.security.citationTemplate objects and their properties."
+description: "Get a list of the citationTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
