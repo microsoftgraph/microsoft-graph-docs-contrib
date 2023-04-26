@@ -1,5 +1,79 @@
 {
 	"changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration type.",
+          "Target": "conditionalAccessExternalTenantsMembershipKind"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration type.",
+          "Target": "conditionalAccessGuestOrExternalUserTypes"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessAllExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessAllExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessAllExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessEnumeratedExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessEnumeratedExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessExternalTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessExternalTenants"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-1.0) resource type.",
+          "Target": "conditionalAccessGuestsOrExternalUsers"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the `excludeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessUsers"
+        },
+        {
+          "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeGuestsOrExternalUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Target": "conditionalAccessUsers"
+        }
+      ],
+      "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-26T16:31:23.725417Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
 	    {
       "ChangeList": [
         {
@@ -923,80 +997,6 @@
 			"CreatedDateTime": "2023-04-20T00:00:00.5059025Z",
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
-		  },
-      {
-        "ChangeList": [
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
-            "ChangeType": "Addition",
-            "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration type.",
-            "Target": "conditionalAccessExternalTenantsMembershipKind"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
-            "ChangeType": "Addition",
-            "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration type.",
-            "Target": "conditionalAccessGuestOrExternalUserTypes"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Resource",
-            "ChangedApiName": "conditionalAccessAllExternalTenants",
-            "ChangeType": "Addition",
-            "Description": "Added the [conditionalAccessAllExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAllExternalTenants?view=graph-rest-1.0) resource type.",
-            "Target": "conditionalAccessAllExternalTenants"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Resource",
-            "ChangedApiName": "conditionalAccessEnumeratedExternalTenants",
-            "ChangeType": "Addition",
-            "Description": "Added the [conditionalAccessEnumeratedExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessEnumeratedExternalTenants?view=graph-rest-1.0) resource type.",
-            "Target": "conditionalAccessEnumeratedExternalTenants"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Resource",
-            "ChangedApiName": "conditionalAccessExternalTenants",
-            "ChangeType": "Addition",
-            "Description": "Added the [conditionalAccessExternalTenants](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessExternalTenants?view=graph-rest-1.0) resource type.",
-            "Target": "conditionalAccessExternalTenants"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Resource",
-            "ChangedApiName": "conditionalAccessGuestsOrExternalUsers",
-            "ChangeType": "Addition",
-            "Description": "Added the [conditionalAccessGuestsOrExternalUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGuestsOrExternalUsers?view=graph-rest-1.0) resource type.",
-            "Target": "conditionalAccessGuestsOrExternalUsers"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Property",
-            "ChangedApiName": "excludeGuestsOrExternalUsers",
-            "ChangeType": "Addition",
-            "Description": "Added the `excludeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
-            "Target": "conditionalAccessUsers"
-          },
-          {
-            "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-            "ApiChange": "Property",
-            "ChangedApiName": "includeGuestsOrExternalUsers",
-            "ChangeType": "Addition",
-            "Description": "Added the `includeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
-            "Target": "conditionalAccessUsers"
-          }
-        ],
-        "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-        "Cloud": "Prod",
-        "Version": "v1.0",
-        "CreatedDateTime": "2023-04-26T16:31:23.725417Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Identity and sign-in"
-      }
+		  }
 	]
 }
