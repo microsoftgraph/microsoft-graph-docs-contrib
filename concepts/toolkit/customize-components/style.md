@@ -42,7 +42,7 @@ You can theme an individual component programmatically without using the `theme-
 
 #### Setting specific elements to dark theme
 
-We can set the second `mgt-login` component to `dark` theme and leave the other two in `light` theme.
+You can set the second `mgt-login` component to `dark` theme and leave the other two in `light` theme.
 
 ```html
 <mgt-login id="login-one"></mgt-login>
@@ -62,9 +62,9 @@ if (loginTwo) {
 
 ### Example 3: Customize CSS tokens of a component
 
-We have exposed several CSS tokens that you can use to style a component if you want to override the current theme colors. Check the particular component page to get the listed tokens that are available.
+You can use several CSS tokens to style a component if you want to override the current theme colors. Check the particular component page to get the list of tokens that are available.
 
-> NOTE: customizing these tokens means that your set values are the default values that are used and there will be no effect using the `mgt-theme-toggle` component.
+> **Note:** customizing these tokens means that your set values are the default values that are used and using the `mgt-theme-toggle` component will have no effect.
 
 ```html
 <mgt-people-picker></mgt-people-picker>
@@ -100,9 +100,9 @@ mgt-people-picker {
 
 You can customize the tokens used by Fluent UI to style the fluent UI component used in an `mgt` component. Fluent UI Web Components provides first-class support for Design Tokens and makes setting, getting, and using Design Tokens simple.
 
-See how to customize the Fluent UI web components [Design Tokens here](/fluent-ui/web-components/design-system/design-tokens).
+For details about how to customize the Fluent UI web components, see [Design Tokens](/fluent-ui/web-components/design-system/design-tokens).
 
-Alternatively, you can override existing design token values with your own values. However, this practise is discouraged because the value you set will be used throughout the DOM where and `mgt` component with an underlying Fluent UI element is used. It will not change in `light` or `dark` theme modes.
+Alternatively, you can override existing design token values with your own values. We don't recommend this practice because the value you set will be used throughout the DOM where an `mgt` component with an underlying Fluent UI element is used. It will not change in `light` or `dark` theme modes.
 
 ```html
 <mgt-login></mgt-login>
