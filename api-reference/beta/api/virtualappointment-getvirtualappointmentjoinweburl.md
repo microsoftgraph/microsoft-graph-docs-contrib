@@ -57,7 +57,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_virtualappointment",
+  "name": "get_virtualappointment_getVirtualAppointmentJoinWebUrl",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
