@@ -61,6 +61,7 @@ The following table maps certain datasets with certain types of groups. This hel
 |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
 
 \*For Teams datasets, Microsoft 365 groups must also be Teams-enabled.
+
 \**Group datasets don't contain a primary mailbox; the region defaults to the region of the tenant. 
 
 #### Example
