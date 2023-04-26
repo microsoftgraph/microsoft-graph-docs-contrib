@@ -15,7 +15,7 @@ const workbookChartAxisTitle = {
   visible: true
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title')
 	.version('beta')
 	.update(workbookChartAxisTitle);
 

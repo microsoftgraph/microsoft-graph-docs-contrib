@@ -22,7 +22,7 @@ $requestBody->setReading(new LanguageProficiencyLevel('nativeorbilingual'));
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->languages()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->languages()->post($requestBody);
 
 
 ```

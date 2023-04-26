@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().InformationProtection().Policy().LabelsById("informationProtectionLabel-id").Get(context.Background(), nil)
+result, err := graphClient.Me().InformationProtection().Policy().Labels().ByLabelId("informationProtectionLabel-id").Get(context.Background(), nil)
 
 
 ```

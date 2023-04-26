@@ -15,14 +15,14 @@ $requestBody->set@odatatype('#microsoft.graph.fileAttachment');
 $requestBody->setName('smile');
 
 $additionalData = [
-'contentBytes' => 'R0lGODdhEAYEAA7', 
+		'contentBytes' => 'R0lGODdhEAYEAA7', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
 
 
 ```

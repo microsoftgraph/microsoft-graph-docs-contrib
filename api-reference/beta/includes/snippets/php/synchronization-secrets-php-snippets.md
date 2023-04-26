@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SynchronizationSecretKeyStringValuePair();
 $additionalData = [
-'value' => $value1 = new ();
+		'value' => $value1 = new ();
 $		value1->setKey('BaseAddress');
 
 $		value1->setValue('user@domain.com');
@@ -48,7 +48,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->secrets()->put($requestBody);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->secrets()->put($requestBody);
 
 
 ```

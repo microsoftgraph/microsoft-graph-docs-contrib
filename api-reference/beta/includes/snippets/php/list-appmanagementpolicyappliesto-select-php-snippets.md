@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AppliesToRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AppliesToRequestBuilderGetQueryParameters();
+$queryParameters = AppliesToRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","appId","displayName","createdDateTime"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get($requestConfiguration);
+$result = $graphServiceClient->policies()->appManagementPoliciesById('appManagementPolicy-id')->appliesTo()->get($requestConfiguration);
 
 
 ```

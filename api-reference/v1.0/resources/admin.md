@@ -19,6 +19,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+| edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 
 

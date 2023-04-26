@@ -14,7 +14,7 @@ $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.updatableAssetGroup
 
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatableAssets()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatableAssets()->post($requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().Onenote().SectionGroupsById("sectionGroup-id").SectionGroups().Post(context.Background(), requestBody, nil)
+graphClient.Me().Onenote().SectionGroups().BySectionGroupId("sectionGroup-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```
