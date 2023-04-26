@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Print().PrintersById("printer-id").Get(context.Background(), nil)
+result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Get(context.Background(), nil)
 
 
 ```

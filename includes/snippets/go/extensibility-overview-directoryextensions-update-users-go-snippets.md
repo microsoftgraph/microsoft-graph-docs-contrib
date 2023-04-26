@@ -23,7 +23,7 @@ requestBody.SetExtension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable(
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
