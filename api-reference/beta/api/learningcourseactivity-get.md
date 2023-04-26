@@ -193,6 +193,7 @@ Content-Type: application/json
 
 The following example shows a request to get the details of a learning course activity for a user.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_learning_courseactivity_details"
@@ -201,6 +202,16 @@ The following example shows a request to get the details of a learning course ac
 ``` http
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-learning-courseactivity-details-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-learning-courseactivity-details-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

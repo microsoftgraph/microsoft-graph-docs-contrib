@@ -71,6 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request to retrieve all the course activities for a given user.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_learningcourseactivity"
@@ -80,6 +81,16 @@ The following is an example of a request to retrieve all the course activities f
 ``` http
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-learningcourseactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-learningcourseactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

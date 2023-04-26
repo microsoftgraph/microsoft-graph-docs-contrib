@@ -20,6 +20,7 @@ For example, to retrieve only inactive user accounts, you can run either of thes
 
 **Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "aad_advanced_queries_get_users_accountenabled"
@@ -28,8 +29,35 @@ For example, to retrieve only inactive user accounts, you can run either of thes
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/aad-advanced-queries-get-users-accountenabled-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/aad-advanced-queries-get-users-accountenabled-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/aad-advanced-queries-get-users-accountenabled-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/aad-advanced-queries-get-users-accountenabled-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/aad-advanced-queries-get-users-accountenabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/aad-advanced-queries-get-users-accountenabled-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 **Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "aad_advanced_queries_get_users_not_acountenabled"
@@ -38,6 +66,32 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/aad-advanced-queries-get-users-not-acountenabled-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/aad-advanced-queries-get-users-not-acountenabled-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/aad-advanced-queries-get-users-not-acountenabled-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/aad-advanced-queries-get-users-not-acountenabled-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/aad-advanced-queries-get-users-not-acountenabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/aad-advanced-queries-get-users-not-acountenabled-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Microsoft Graph objects that support advanced query capabilities
 
