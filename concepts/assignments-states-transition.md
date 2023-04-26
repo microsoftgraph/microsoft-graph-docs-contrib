@@ -20,8 +20,9 @@ An assignment represents a task or unit of work assigned to a student or team me
 | Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, categories, rubrics |
 | Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
 | Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
-| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students. | `POST /education/classes/{id}/assignments/{id}/publish` | Submissions |
+| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students, or the assignment is active again. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
 | Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` | |
+| Inactive | The assignment has no further action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
 
 The following diagram shows the state transitions that can occur for assignments.
 
@@ -46,8 +47,10 @@ The caller must use the [GET assignment](/graph/api/educationassignment-get) ope
 | Scheduled | Cancel schedule | Draft |
 | Scheduled | Reschedule | Scheduled |
 | Assigned | Discarded | |
+| Assigned | Deactivated | Inactive |
 | Pending |	Copy completed | Draft |
 | Pending | Discarded | |
+| Inactive | Activated | Assigned |
 
 > [!NOTE]
 > Any action and state transition not listed in the table is not allowed.
@@ -64,6 +67,8 @@ Synchronous operations are performed one at a time and only when one operation i
 | `POST /education/classes/{id}/assignments/{id}/publish` | Async | Poll |
 | `PATCH /education/classes/{id}/assignments/{id}` | Async | Poll |
 | `POST /education/classes/{id}/assignments` | Async | Poll |
+| `POST /education/classes/{id}/assignments/{id}/deactivate` | Async | Poll |
+| `POST /education/classes/{id}/assignments/{id}/activate` | Async | Poll |
 
 ### Limits
 
