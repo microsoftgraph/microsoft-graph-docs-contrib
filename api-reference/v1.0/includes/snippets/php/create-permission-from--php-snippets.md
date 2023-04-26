@@ -27,7 +27,7 @@ $requestBody->setGrantedToIdentities($grantedToIdentitiesArray);
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->permissions()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->permissions()->post($requestBody);
 
 
 ```

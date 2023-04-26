@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Calendar
 
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
-	ExtensionName = "Com.Contoso.Deal"
-	CompanyName = "Alpine Skis"
-	DealValue = 
-	ExpirationDate = "2015-07-03T13:04:00.000Z"
+	extensionName = "Com.Contoso.Deal"
+	companyName = "Alpine Skis"
+	dealValue = 
+	expirationDate = "2015-07-03T13:04:00.000Z"
 }
 
 New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params

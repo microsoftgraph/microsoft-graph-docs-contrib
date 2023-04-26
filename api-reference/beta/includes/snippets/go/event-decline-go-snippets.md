@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Events/Item/Decline"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDeclinePostRequestBody()
 comment := "I won't be able to make this week. How about next week?"
@@ -27,7 +35,7 @@ end.SetTimeZone(&timeZone)
 proposedNewTime.SetEnd(end)
 requestBody.SetProposedNewTime(proposedNewTime)
 
-graphClient.Me().EventsById("event-id").Decline().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Decline().Post(context.Background(), requestBody, nil)
 
 
 ```

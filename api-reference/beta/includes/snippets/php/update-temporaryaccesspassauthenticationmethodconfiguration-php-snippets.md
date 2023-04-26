@@ -13,14 +13,14 @@ $requestBody = new AuthenticationMethodConfiguration();
 $requestBody->set@odatatype('#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration');
 
 $additionalData = [
-'isUsableOnce' => true,
+		'isUsableOnce' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

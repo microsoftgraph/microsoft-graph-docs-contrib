@@ -18,10 +18,6 @@ $configurationAccidentalDeletionPrevention->setAlertThreshold(500);
 
 
 $configuration->setAccidentalDeletionPrevention($configurationAccidentalDeletionPrevention);
-$configuration->setSynchronizationInterval(new \DateInterval('PT30M'));
-
-$configuration->setCustomerRequestedSynchronizationInterval(new \DateInterval('PT1H'));
-
 
 $requestBody->setConfiguration($configuration);
 $features = new OnPremisesDirectorySynchronizationFeature();
@@ -31,7 +27,7 @@ $features->setGroupWriteBackEnabled(true);
 $requestBody->setFeatures($features);
 
 
-$requestResult = $graphServiceClient->directory()->onPremisesSynchronizationById('onPremisesDirectorySynchronization-id')->patch($requestBody);
+$result = $graphServiceClient->directory()->onPremisesSynchronizationById('onPremisesDirectorySynchronization-id')->patch($requestBody);
 
 
 ```

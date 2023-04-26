@@ -14,7 +14,7 @@ $requestBody->setEmail('AdeleV@contoso.com');
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->custodians()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->custodians()->post($requestBody);
 
 
 ```

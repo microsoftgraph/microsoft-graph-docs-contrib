@@ -22,7 +22,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->settingsById('groupSetting-id')->patch($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->settingsById('groupSetting-id')->patch($requestBody);
 
 
 ```

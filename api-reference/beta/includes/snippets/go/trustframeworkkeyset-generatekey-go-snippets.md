@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TrustFramework/KeySets/Item/GenerateKey"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewGenerateKeyPostRequestBody()
 use := "sig"
@@ -17,7 +25,7 @@ requestBody.SetNbf(&nbf)
 exp := int64(1508969811)
 requestBody.SetExp(&exp) 
 
-result, err := graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").GenerateKey().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").GenerateKey().Post(context.Background(), requestBody, nil)
 
 
 ```

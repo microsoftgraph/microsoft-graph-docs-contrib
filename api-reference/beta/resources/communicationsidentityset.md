@@ -1,7 +1,7 @@
 --- 
 title: "communicationsIdentitySet resource type"
 description: "A combination of user and application identities that together identify a participant in a call or meeting."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

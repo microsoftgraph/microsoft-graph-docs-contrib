@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestId := "https://graph.microsoft.com/beta/groups/{other-group-id}"
@@ -17,7 +25,7 @@ configuration := &graphconfig.GroupItemRejectedSenders$refRequestBuilderDeleteRe
 	QueryParameters: requestParameters,
 }
 
-graphClient.GroupsById("group-id").RejectedSenders().$ref().Delete(context.Background(), configuration)
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Delete(context.Background(), configuration)
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/Synchronization/AcquireAccessToken"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAcquireAccessTokenPostRequestBody()
 
@@ -18,7 +26,7 @@ credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 }
 requestBody.SetCredentials(credentials)
 
-graphClient.ApplicationsById("application-id").Synchronization().AcquireAccessToken().Post(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").Synchronization().AcquireAccessToken().Post(context.Background(), requestBody, nil)
 
 
 ```
