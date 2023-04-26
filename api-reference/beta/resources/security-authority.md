@@ -1,6 +1,6 @@
 ---
 title: "authority resource type"
-description: "Represents the file plan descriptor of type authority applied to a particular retention labels."
+description: "Represents the file plan descriptor of type authority applied to a particular retention label."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type authority applied to a particular retention labels.
+Represents the file plan descriptor of type authority applied to a particular retention label.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
