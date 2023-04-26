@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
   "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "description": "String",
   "displayName": "String",
-  "guestUserRoleId": "Guid"
-  "id": "String (identifier)",
+  "guestUserRoleId": "Guid",
+  "id": "String (identifier)"
 }
 ```
