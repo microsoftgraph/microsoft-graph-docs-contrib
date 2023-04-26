@@ -3107,15 +3107,15 @@
                 "ChangedApiName": "udpConnectivityCheckTurnUrlNotAllowListed",
                 "ChangeType": "Addition",
                 "Description": "Added the **udpConnectivityCheckTurnUrlNotAllowListed** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
-                "Target": "cloudPcOnPremisesConnection"
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
             },
             {
-                "Id": "1625de52-ebc2-496e-a15c-87474fcc0e0e",
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
                 "ApiChange": "Property",
                 "ChangedApiName": "udpConnectivityCheckUrlsNotAllowListed",
                 "ChangeType": "Addition",
                 "Description": "Added the **udpConnectivityCheckUrlsNotAllowListed** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
-                "Target": "cloudPcOnPremisesConnection"
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
             }
         ],
         "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
