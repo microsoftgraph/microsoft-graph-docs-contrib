@@ -2744,10 +2744,10 @@
         {
           "Id": "8a74709d-d633-4cc1-81e2-89a67f4ae290",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualAppointment",
+          "ChangedApiName": "getVirtualAppointmentJoinWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http) function.",
-          "Target": "getVirtualAppointmentJoinWebUrl"
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-v1.0) method.",
+          "Target": "virtualAppointment"
         }
       ],
       "Id": "8a74709d-d633-4cc1-81e2-89a67f4ae290",
