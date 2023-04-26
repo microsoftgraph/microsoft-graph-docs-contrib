@@ -46,7 +46,7 @@ The following are the options for group-scoped datasets:
 
 > **Note:**  When the customer specifies a group or groups to be the scope, Microsoft Graph Data Connect looks for data associated with those specific groups rather than the individuals of the group. 
  
-The following table maps certain datasets with certain types of group. This helps you to understand which types of groups are compatible with which datasets when you extract data and use scope filters. Groups can either be distribution groups, security groups, or Microsoft 365 groups. The types of groups supported varies based on which dataset you're requesting.
+The following table maps certain datasets with certain types of groups. This helps you to understand which types of groups are compatible with which datasets when you extract data and use scope filters. Groups can either be distribution groups, security groups, or Microsoft 365 groups. The types of groups supported varies based on which dataset you're requesting.
 
 |              Dataset                 | Microsoft 365 group | Distribution group | Security group | Mail-enabled security group  |
 |---------------------------------------|-------------|---------------------|-----------------|------------------------|
@@ -56,17 +56,17 @@ The following table maps certain datasets with certain types of group. This help
 |     GroupDetails                      | Yes         | Yes                 | Yes             | Yes                    |
 |     GroupMembers                      | Yes         | Yes                 | Yes             | Yes                    |
 |     GroupOwners                       | Yes         | Yes**               | Yes**           | Yes                    |
-|     Viva Insights                     | N/A         | NA                  | NA              | NA                     |
-|     OneDrive and SharePoint Online    | N/A         | NA                  | NA              | NA                     |
+|     Viva Insights                     | NA          | NA                  | NA              | NA                     |
+|     OneDrive and SharePoint Online    | NA          | NA                  | NA              | NA                     |
 |     All other datasets                | Yes         | Yes                 | Yes             | Yes                    |
 
 \*For Teams datasets, Microsoft 365 groups must also be Teams-enabled.
-\*Group datasets don't contain a primary mailbox; the region defaults to the region of the tenant. 
+\**Group datasets don't contain a primary mailbox; the region defaults to the region of the tenant. 
 
 #### Example
 A customer wants to extract the group details dataset with a security group of users A, B, and C out of their tenant of 500 users. Because this is a group-scoped dataset, the customer will only receive group details data for the specified group. The customer will not receive any individual data for users A, B, and C in the group.
 
-> **Note:**  For Teams group-scoped datasets, if the group in scope is not a Teams-enabled group, it will not return any data. Microsoft 365 groups can be enabled as Teams groups, but distribution groups and security groups are not Teams-enabled. The following section provides details about the type of groups that are available to select. 
+> **Note:** For Teams group-scoped datasets, if the group in scope is not a Teams-enabled group, it will not return any data. Microsoft 365 groups can be enabled as Teams groups, but distribution groups and security groups are not Teams-enabled. The following section provides details about the type of groups that are available to select. 
 
 ## Search for and verify group types
 
