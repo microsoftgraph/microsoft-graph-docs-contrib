@@ -21,9 +21,9 @@ Add Grading Categories to the existing class-wide settings to weight assignments
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-add-gradingcategories.md) | [gradingCategory](assignment-gradingcategories.md) | Add a new **gradingCategory**.|
-|[Remove gradingCategory](../api/educationassignment-remove-gradingcategories.md) | [educationCategory](assignment-gradingcategories.md) | Remove existing **gradingCategory**.|
-|[Update gradingCategory](../api/educationassignment-updatesingle-gradingcategories.md) | [educationCategory](assignment-gradingcategories.md) | Update a single **gradingCategory**.|
+|[Add gradingCategory](../api/educationassignment-add-gradingcategories.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Remove gradingCategory](../api/educationassignment-remove-gradingcategories.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
+|[Update gradingCategory](../api/educationassignment-updatesingle-gradingcategories.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
 
 ## Properties
@@ -42,11 +42,12 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.gradingCategory"
+  "@odata.type": "microsoft.graph.educationGradingCategory"
 }-->
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.educationGradingCategory",
   "id": "String (identifier)",
   "displayName": "String",
   "percentageWeight": "Int32"

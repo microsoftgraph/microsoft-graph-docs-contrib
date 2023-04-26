@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a [gradingCategory](../resources/assignment-gradingcategories.md) to an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
+Adds a [gradingCategory](../resources/educationgradingcategory.md) to an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +37,7 @@ PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the odata.id of the existing [gradingCategory](../resources/assignment-gradingcategories.md) object to add to this assignment.
+In the request body, supply the odata.id of the existing [gradingCategory](../resources/educationgradingcategory.md) object to add to this assignment.
 
 ## Response
 If successful, this method returns a `204` successful response code with no content in the response body.

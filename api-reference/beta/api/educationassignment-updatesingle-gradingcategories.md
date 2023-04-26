@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a single [gradingCategory](../resources/assignment-gradingcategories.md) on the [educationAssignmentSettings](../resources/educationassignmentsettings.md). Only teachers can perform this operation.
+Update a single [gradingCategory](../resources/educationgradingcategory.md) on the [educationAssignmentSettings](../resources/educationassignmentsettings.md). Only teachers can perform this operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The new name for a grading category.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [gradingCategory](../resources/assignment-gradingcategories.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [gradingCategory](../resources/educationgradingcategory.md) object in the response body.
 
 ## Example
 
