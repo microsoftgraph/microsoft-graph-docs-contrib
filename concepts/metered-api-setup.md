@@ -47,9 +47,10 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
   az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{\`"appId\`": \`"myAppGUID\`"}" --location Global --subscription mySubscriptionGUID
   ```
 # [Windows Command Prompt](#tab/commandprompt)
-  ```Command Prompt
+  ```CommandPrompt
   az resource create --resource-group myRG --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts --properties  "{""appId"": ""myAppGUID""}" --location Global --subscription mySubscriptionGUID
   ```
+
 
   | Parameter | Description |
   |:--------------------------|:----------------------------------------|
