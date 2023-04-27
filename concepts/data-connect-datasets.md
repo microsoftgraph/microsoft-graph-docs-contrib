@@ -8,7 +8,17 @@ ms.prod: "data-connect"
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This topic describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that data connect utilizes through Azure Data Factory.
+Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
+
+The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
+
+>****Note:*** This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access.** This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see  [Azure IP Ranges and Service Tags.](https://www.microsoft.com/en-us/download/details.aspx?id=56519) 
+
+For details on this destination storage region restriction, see: 
+
+[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](https://learn.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage) 
+
+[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
 
 ## Datasets
 
@@ -37,13 +47,22 @@ Data connect supports the following datasets today. To view the schemas for each
 
 Data Connect supports extracting data from a variety of different Microsoft 365 regions. To successfully move data from the Microsoft 365 data center into your Microsoft Azure storage, the Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement.
 
-| Office region      | Azure region                                                                                                                                                               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Asia-Pacific**   | <ul><li>East Asia</li><li>Southeast Asia</li></ul>                                                                                                                         |
-| **Australia**      | <ul><li>Australia East</li><li>Australia Southeast</li></ul>                                                                                                               |
-| **Europe**         | <ul><li>North Europe</li><li>West Europe</li></ul>                                                                                                                         |
-| **North America**  | <ul><li>Central US</li><li>East US</li><li>East US 2</li><li>North Central US</li><li>South Central US</li><li>West Central US</li><li>West US</li><li>West US 2</li></ul> |
-| **United Kingdom** | <ul><li>UK South</li><li>UK West</li></ul>                                                                                                                                 |
+| Office region | Azure region | Alternate Azure regions to use |
+| ------------- | ------------ | ------------------------------ |
+| **Asia-Pacific**   | <ul><li>East Asia</li><li>Southeast Asia*</li></ul> |  |
+| **Australia**      | <ul><li>Australia East</li><li>Australia Southeast*</li></ul> |  |
+| **Europe**         | <ul><li>North Europe</li><li>West Europe*</li></ul> |  |
+| **North America**  | <ul><li>Central US</li><li>East US*</li><li>East US 2</li><li>North Central US</li><li>South Central US</li><li>West Central US</li><li>West US</li><li>West US 2</li></ul> |  |
+| **United Kingdom** | <ul><li>UK South*</li><li>UK West</li></ul> |  |
+| **Canada (CAN)** | <ul><li>Canada Central</li><li>Canada East*</li></ul> |  |
+| **Japan (JPN)** | <ul><li>Japan West</li><li>Japan East*</li></ul> |  |
+| **India (IND)** | <ul><li>South India*</li><li>Central India</li></ul> |  |
+| **Korea (KOR)** | <ul><li>Korea Central</li><li>Korea South</li></ul> |  |
+| **Switzerland (CHE)** | <ul><li>Switzerland North</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
+| **Germany (DEU)** | <ul><li>Germany West Central*</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
+| **Norway (NOR)** | <ul><li>Norway East*</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
+| **France (FRA)** | <ul><li>France Central*</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
+| **UAE (UAE)** | <ul><li>UAE North*</li></ul> | <ul><li>East Asia</li> <li>Southeast Asia</li></ul> |
 
 ## Sinks
 
