@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET sites/{site-id}/termStore
+GET /sites/{site-id}/termStore
 ```
 
 ## Request headers
