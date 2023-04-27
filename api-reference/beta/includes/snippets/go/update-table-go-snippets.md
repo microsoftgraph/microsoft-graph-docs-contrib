@@ -25,7 +25,7 @@ requestBody.SetShowTotals(&showTotals)
 style := "style-value"
 requestBody.SetStyle(&style) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().TablesById("workbookTable-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

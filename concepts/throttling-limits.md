@@ -272,7 +272,6 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
 [!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
 [!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]

@@ -31,7 +31,7 @@ homePageUrl := "https://contosoiwaapp-contoso.msappproxy.net"
 web.SetHomePageUrl(&homePageUrl) 
 requestBody.SetWeb(web)
 
-result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

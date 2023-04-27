@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Reports.GetYammerDeviceUsageUserDetailWithDate("{date}").GetAsync();
+await graphClient.Reports.GetYammerDeviceUsageUserDetailWithDate(new Date(DateTime.Parse("{date}"))).GetAsync();
 
 
 ```

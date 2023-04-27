@@ -48,7 +48,7 @@ relatedContacts := []graphmodels.RelatedContactable {
 }
 requestBody.SetRelatedContacts(relatedContacts)
 
-result, err := graphClient.Education().UsersById("educationUser-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Users().ByUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -28,7 +28,7 @@ requestBody.SetAtAprovedLocation(&atAprovedLocation)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().ClockIn().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ClockIn().Post(context.Background(), requestBody, nil)
 
 
 ```
