@@ -82,7 +82,7 @@ The data available is from the last 21 days (about three weeks). For example, if
 
 Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
 
-The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
+The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement.
 
 &nbsp;
 
@@ -110,12 +110,30 @@ Sinks are the output location that Azure Synapse or Azure Data Factory uses to p
 - [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
 - [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
+- [Azure SQL DB](https://azure.microsoft.com/products/azure-sql/database/?ef_id=_k_790773b85b8d1e4ef64317867aeee8a0_k_&OCID=AIDcmm5edswduu_SEM__k_790773b85b8d1e4ef64317867aeee8a0_k_&msclkid=790773b85b8d1e4ef64317867aeee8a0) (MDF only)
 
 The following characteristics apply to sinks:
 
-- The output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Microsoft Graph Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
 - Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Microsoft 365 as the source.
+
 - When using Azure Storage Blob as the sink, you must ensure that your application has Storage Blob Data Contributor access to the Azure Storage Blob location.
+
+- For Copy Activity, the output files are of format JSON lines. The output format is fixed, and there is no support for modifying the format of the output. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Microsoft Graph Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
+
+- MDF: [Microsoft Graph Data Connect overview - Microsoft Graph | Microsoft Learn](/graph/data-connect-concept-overview)
+
+    - Output can be in parquet format. Find more information on the supported data transformations [here](/azure/data-factory/data-flow-flatten). 
+
+    - MGDC on MDF supports direct output of the data into Azure SQL DB.
+
+&nbsp;
+
+| Area | Copy Activity | MDF |
+| ---- | ------------- | ------------------------------ |
+| Output data formats supported | JSON | JSON, Parquet  |
+| Data transformation (normalization/flattening/etc.)  | Requires additional transformation step in the ADF/Synapse pipeline | Supports inline transformations |
+| Supported data sinks  | ADLS gen2, Azure Blob  | ADLS gen2, Azure Blob, Azure SQL DB  |
+| Azure VNET IR   | Not supported | Supported |
 
 ## See also
 

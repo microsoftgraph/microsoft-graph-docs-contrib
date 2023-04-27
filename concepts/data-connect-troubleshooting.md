@@ -79,7 +79,7 @@ If the destination storage account needs to be closed for public access, you nee
 
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see table below). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
-> [!NOTE]
+> [!*NOTE]
 > This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
 
 For details on this destination storage region restriction, see:
@@ -135,6 +135,20 @@ The following example describes how to troubleshoot network access issue:
 7.	For the ADF destination linked service to also access the destination storage account, they need to create and use an Integration Runtime on the West Europe region, or use auto resolve IR instead.
 
 8.	 The user lists these IP addresses and moves the destination storage to North Europe because the Office region is EUR, and the Azure region is West Europe. 
+
+## Issues with running your pipeline using mapping data flows 
+
+First time runs of [MGDC-MDF](/azure/data-factory/connector-office-365?tabs=data-factory#transform-data-with-the-microsoft-365-connector) activity for a new dataset are expected to fail with the “Consent Pending” error. This triggers a consent request for the tenant admin who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
+
+1. The consent request is only valid for 24-hrs. Please contact your tenant admin to approve within this timeframe.  
+
+    a. If not approved in that timeframe, subsequent runs will fail with the same error and regenerate a consent request.
+
+    b. Once approved, the pipeline can be rerun at any time to retrieve data.
+
+    ![An image that shows the error the first time MGDC-MDF runs](images/data-connect-mdf-error.png)
+
+2. Please verify that the destination storage is correctly setup to allow the appId to write data into it.
 
 ## See also
 
