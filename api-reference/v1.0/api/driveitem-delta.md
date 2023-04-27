@@ -327,7 +327,6 @@ GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 
 ---
 
-
 #### Response
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
