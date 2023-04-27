@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UserRequestBuilderGetQueryParameters();
+$queryParameters = UserRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["customSecurityAttributes"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
+$result = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
 
 
 ```

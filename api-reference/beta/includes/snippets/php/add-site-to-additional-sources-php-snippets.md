@@ -13,7 +13,7 @@ $requestBody = new DataSource();
 $requestBody->set@odatatype('microsoft.graph.ediscovery.siteSource');
 
 $additionalData = [
-'site' => $requestBody = new Site();
+		'site' => $requestBody = new Site();
 $		requestBody->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
 
 
@@ -25,7 +25,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->additionalSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->additionalSources()->post($requestBody);
 
 
 ```

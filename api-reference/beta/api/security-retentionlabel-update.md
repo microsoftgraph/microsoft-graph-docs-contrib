@@ -48,20 +48,10 @@ PATCH /security/labels/retentionLabels/{retentionLabelId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|microsoft.graph.security.actionAfterRetentionPeriod| Specifies the action to be applied on a document with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
-|behaviorDuringRetentionPeriod|microsoft.graph.security.behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the retentionLabel.|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the retentionLabel is created.|
 |descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
 |descriptionForUsers|String|This is an optional property that provides the label information for the user.|
-|displayName|String|Unique string that defines a label name.|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained.|
-|id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
-|isInUse|Boolean|Specifies whether the label is currently being used.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionLabel was modified.|
-|retentionDuration|[microsoft.graph.security.retentionduration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content.|
-|retentionTrigger|microsoft.graph.security.retentionTrigger|Specifies whether the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
+|retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content.|
 |defaultRecordBehavior|microsoft.graph.security.defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
 |labelToBeApplied|String|Specifies the replacement label to be applied automatically after the retention period of the current label ends. |
 
@@ -88,19 +78,11 @@ Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
   "retentionDuration": {
     "@odata.type": "microsoft.graph.security.retentionDuration"
   },
-  "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "labelToBeApplied": "String",
   "defaultRecordBehavior": "String"
 }
@@ -110,29 +92,27 @@ Content-length: 555
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-retentionlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-retentionlabel-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-retentionlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-retentionlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-retentionlabel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-retentionlabel-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-retentionlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-retentionlabel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-retentionlabel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -149,24 +129,11 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
   "retentionDuration": {
     "@odata.type": "microsoft.graph.security.retentionDuration"
   },
-  "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
   "labelToBeApplied": "String",
   "defaultRecordBehavior": "String"
 }

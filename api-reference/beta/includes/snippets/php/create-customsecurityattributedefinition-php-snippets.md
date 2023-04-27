@@ -28,7 +28,7 @@ $requestBody->setUsePreDefinedValuesOnly(false);
 
 
 
-$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->post($requestBody);
+$result = $graphServiceClient->directory()->customSecurityAttributeDefinitions()->post($requestBody);
 
 
 ```

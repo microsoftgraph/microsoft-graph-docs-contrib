@@ -5,34 +5,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewTeamPutRequestBody()
-additionalData := map[string]interface{}{
-memberSettings := graphmodels.New()
-	allowCreateUpdateChannels := true
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewTeam()
+memberSettings := graphmodels.NewTeamMemberSettings()
+allowCreateUpdateChannels := true
 memberSettings.SetAllowCreateUpdateChannels(&allowCreateUpdateChannels) 
-	requestBody.SetMemberSettings(memberSettings)
-messagingSettings := graphmodels.New()
-	allowUserEditMessages := true
+requestBody.SetMemberSettings(memberSettings)
+messagingSettings := graphmodels.NewTeamMessagingSettings()
+allowUserEditMessages := true
 messagingSettings.SetAllowUserEditMessages(&allowUserEditMessages) 
-	allowUserDeleteMessages := true
+allowUserDeleteMessages := true
 messagingSettings.SetAllowUserDeleteMessages(&allowUserDeleteMessages) 
-	requestBody.SetMessagingSettings(messagingSettings)
-funSettings := graphmodels.New()
-	allowGiphy := true
+requestBody.SetMessagingSettings(messagingSettings)
+funSettings := graphmodels.NewTeamFunSettings()
+allowGiphy := true
 funSettings.SetAllowGiphy(&allowGiphy) 
-giphyContentRating := "strict"
+giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE 
 funSettings.SetGiphyContentRating(&giphyContentRating) 
-	requestBody.SetFunSettings(funSettings)
-discoverySettings := graphmodels.New()
-	showInTeamsSearchAndSuggestions := true
+requestBody.SetFunSettings(funSettings)
+discoverySettings := graphmodels.NewTeamDiscoverySettings()
+showInTeamsSearchAndSuggestions := true
 discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
-	requestBody.SetDiscoverySettings(discoverySettings)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetDiscoverySettings(discoverySettings)
 
-graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

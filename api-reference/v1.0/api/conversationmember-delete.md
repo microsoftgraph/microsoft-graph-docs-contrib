@@ -50,7 +50,6 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_conversation_member"
@@ -58,13 +57,6 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 ```
-# [C#](#tab/csharp)
-
-# [JavaScript](#tab/javascript)
-
-# [Objective-C](#tab/objc)
-
----
 
 ### Response
 

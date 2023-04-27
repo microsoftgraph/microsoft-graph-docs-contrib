@@ -19,11 +19,11 @@ Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
 
 ## HTTP request
 
@@ -40,13 +40,24 @@ POST /policies/appManagementPolicies
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+> [!IMPORTANT]
+> Service principals with a createdDateTime `null` are treated as having being created on 01/01/2019.
 ## Request body
 
-In the request body, provide a JSON representation of an [appManagementPolicy](../resources/appManagementPolicy.md).
+In the request body, supply a JSON representation of the [appManagementPolicy](../resources/appmanagementpolicy.md) object.
+
+You can specify the following properties when creating an **appManagementPolicy**.
+
+| Property     | Type                                                        | Description                                                            |
+| :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| displayName  | String                                                      | The display name of the policy. Required.                                       |
+| description  | String                                                      | The description of the policy. Required.                                       |
+| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.  Optional.                                    |
+| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. Optional. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code with the new [appManagementPolicy ](../resources/appmanagementpolicy.md) object in the response payload.
+If successful, this method returns a `201 Created` response code with the new [appManagementPolicy](../resources/appmanagementpolicy.md) object in the response payload.
 
 ## Examples
 
@@ -112,16 +123,16 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-appmanagementpolicy-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -129,7 +140,6 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

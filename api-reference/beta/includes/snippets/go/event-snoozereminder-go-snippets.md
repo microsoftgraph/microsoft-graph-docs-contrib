@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Events/Item/SnoozeReminder"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSnoozeReminderPostRequestBody()
 newReminderTime := graphmodels.NewDateTimeTimeZone()
@@ -15,7 +23,7 @@ timeZone := "timeZone-value"
 newReminderTime.SetTimeZone(&timeZone) 
 requestBody.SetNewReminderTime(newReminderTime)
 
-graphClient.Me().EventsById("event-id").SnoozeReminder().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").SnoozeReminder().Post(context.Background(), requestBody, nil)
 
 
 ```

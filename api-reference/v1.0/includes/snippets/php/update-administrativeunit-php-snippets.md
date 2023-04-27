@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Greater Seattle District Technical Schools');
 
 
 
-$requestResult = $graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
+$result = $graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
 
 
 ```

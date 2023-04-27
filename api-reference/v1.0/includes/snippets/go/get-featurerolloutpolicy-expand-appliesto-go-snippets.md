@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/policies"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestParameters := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"appliesTo"},
@@ -14,7 +22,7 @@ configuration := &graphconfig.PoliciesFeatureRolloutPolicieItemRequestBuilderGet
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Get(context.Background(), configuration)
+result, err := graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicieId("featureRolloutPolicy-id").Get(context.Background(), configuration)
 
 
 ```

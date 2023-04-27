@@ -5,13 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewReferenceCreate()
-"@odata.id" := "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
-requestBody.Set"@odata.id"(&"@odata.id") 
+odataId := "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+requestBody.SetOdataId(&odataId) 
 
-graphClient.GroupsById("group-id").AcceptedSenders().$ref().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").AcceptedSenders().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

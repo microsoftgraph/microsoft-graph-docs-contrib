@@ -17,7 +17,7 @@ $requestBody->setId('X509Certificate');
 $requestBody->setState(new AuthenticationMethodState('enabled'));
 
 $additionalData = [
-'certificateUserBindings' => $certificateUserBindings1 = new ();
+		'certificateUserBindings' => $certificateUserBindings1 = new ();
 $		certificateUserBindings1->setX509CertificateField('PrincipalName');
 
 $		certificateUserBindings1->setUserProperty('onPremisesUserPrincipalName');
@@ -29,7 +29,7 @@ $certificateUserBindingsArray []= $certificateUserBindings1;
 $requestBody->setCertificateUserBindings($certificateUserBindingsArray);
 
 
-'authenticationModeConfiguration' => $requestBody = new AuthenticationModeConfiguration();
+	'authenticationModeConfiguration' => $requestBody = new AuthenticationModeConfiguration();
 $	requestBody->setX509CertificateAuthenticationDefaultMode('x509CertificateMultiFactor');
 
 $rules1 = new ();
@@ -74,7 +74,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

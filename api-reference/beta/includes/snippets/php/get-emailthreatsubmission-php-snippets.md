@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->security()->threatSubmission()->emailThreatsById('emailThreatSubmission-id')->get();
+$result = $graphServiceClient->security()->threatSubmission()->emailThreatsById('emailThreatSubmission-id')->get();
 
 
 ```

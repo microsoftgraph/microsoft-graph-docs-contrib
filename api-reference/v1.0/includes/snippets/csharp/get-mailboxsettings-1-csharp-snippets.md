@@ -4,13 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var me = await graphClient.Me
-	.Request()
-	.Select("MailboxSettings")
-	.GetAsync();
+var result = await graphClient.Me.MailboxSettings.GetAsync();
 
-var mailboxSettings = me.MailboxSettings;
 
 ```

@@ -26,6 +26,7 @@ For the possible resource path values for each supported resource, see [Use the 
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
 | [Delete subscription](../api/subscription-delete.md) | None | Deletes a subscription object. |
+|[reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
 
 ## Properties
 
@@ -33,7 +34,7 @@ For the possible resource path values for each supported resource, see [Use the 
 |---|---|---|
 | applicationId | String | Optional. Identifier of the application used to create the subscription. Read-only. |
 | changeType | String | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>**Note:** <li> Drive root item and list change notifications support only the `updated` changeType. <li>[User](../resources/user.md) and [group](../resources/user.md) change notifications support `updated` and `deleted` changeType. Use `updated` to receive notifications when user or group is created, updated or soft deleted.  Use `deleted` to receive notifications when user or group is permanently deleted. |
-| clientState | String | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. |
+| clientState | String | Required. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. |
 | creatorId | String | Optional. Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
 | encryptionCertificate | String | Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when **includeResourceData** is `true`. |
 | encryptionCertificateId | String | Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. |
@@ -43,34 +44,13 @@ For the possible resource path values for each supported resource, see [Use the 
 | latestSupportedTlsVersion | String | Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
 | lifecycleNotificationUrl | String | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved`, `reauthorizationRequired`, and `missed` notifications. This URL must make use of the HTTPS protocol. |
 | notificationQueryOptions | String | Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource `isFetchable` property value becomes `true` etc. <br/><br/> Supported only for Universal Print Service. For more information, see [Subscribe to change notifications from cloud printing APIs using Microsoft Graph](/graph/universal-print-webhook-notifications).  |
-| notificationUrl | String | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. |
+| notificationUrl | String | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.|
 | notificationUrlAppId | String | Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received. |
 | resource | String | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource. |
 
 ### Maximum length of subscription per resource type
 
-| Resource            | Maximum expiration time  |
-|:--------------------|:-------------------------|
-| Security **alert**     | 43200 minutes (under 30 days)  |
-| Teams **callRecord**    | 4230 minutes (under 3 days)  |
-| Teams **channel**    | 60 minutes (1 hour)  |
-| Teams **chat**    | 60 minutes (1 hour)  |
-| Teams **chatMessage**    | 60 minutes (1 hour)  |
-| Teams **conversationMember**    | 60 minutes (1 hour)  |
-| Teams **team**    | 60 minutes (1 hour)  |
-| Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
-| SharePoint **list**    | 42300 minutes (under 30 days)    |
-| Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
-| **presence**        | 60 minutes (1 hour) |
-| Print **printer** | 4230 minutes (under 3 days)    |
-| Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
-| **todoTask**              | 4230 minutes (under 3 days)    |
-
-
-
-> **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
+[!INCLUDE [change-notifications-subscription-lifetime](../../../concepts/includes/change-notifications-subscription-lifetime.md)]
 
 ## Relationships
 

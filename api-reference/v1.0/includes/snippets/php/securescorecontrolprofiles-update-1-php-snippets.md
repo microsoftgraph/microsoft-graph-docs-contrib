@@ -22,16 +22,16 @@ $vendorInformation->setVendor('Microsoft');
 
 $requestBody->setVendorInformation($vendorInformation);
 $additionalData = [
-'assignedTo' => '', 
-'comment' => 'control is reviewed', 
-'state' => 'Reviewed', 
+		'assignedTo' => '', 
+		'comment' => 'control is reviewed', 
+		'state' => 'Reviewed', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
+$result = $graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
 
 
 ```

@@ -34,9 +34,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite  |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite  |
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 
@@ -80,11 +80,11 @@ Apply the **delta** function on all the events or events starting on or after a 
 * To get incremental changes all the events, or of events starting on or after the specified date/time _in the specified calendar group and calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
-  GET /me/calendargroups/{id}/calendars/{id}/events/delta 
-  GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta 
+  GET /me/calendarGroups/{id}/calendars/{id}/events/delta 
+  GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/delta 
 
-  GET /me/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime} 
-  GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime}
+  GET /me/calendarGroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime} 
+  GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
 <!-- Add back and fix html when group calendars are supported
@@ -143,7 +143,7 @@ includes the encoded, desired parameters.
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 ### OData query parameters
-- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarview` request. You cannot use `$select` to get only a subset of those properties.
+- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarView` request. You cannot use `$select` to get only a subset of those properties.
 
 - The **delta** function doesn't support the following query parameters for events in a user calendar, or events in a **calendarView**: `$expand`, `$filter`,`$orderby`, `$search`, and `$select`. 
 
@@ -166,7 +166,7 @@ the **id**, **type**, **start** and **end** properties for performance reasons. 
 ### Delta function on calendarView
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body.
 
-Expect to get all the properties you'd normally get from a `GET /calendarview` request. 
+Expect to get all the properties you'd normally get from a `GET /calendarView` request. 
 
 Within a round of **delta** function calls bound by the date range of a **calendarView**, you may find a **delta** call returning two types of events under `@removed` with the reason `deleted`: 
 - Events that are within the date range and that have been deleted since the previous **delta** call.
@@ -195,16 +195,11 @@ GET https://graph.microsoft.com/beta/me/calendar/events/delta?startDateTime=2020
 Prefer: odata.maxpagesize=1
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-events-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -261,21 +256,16 @@ in the response.
   "name": "event_delta_calendarview"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview/delta?startDateTime=2020-06-01T00:00:00Z&endDateTime=2020-06-10T00:00:00Z
+GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarView/delta?startDateTime=2020-06-01T00:00:00Z&endDateTime=2020-06-10T00:00:00Z
 
 Prefer: odata.maxpagesize=2
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -300,7 +290,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview/delta?$skiptoken=R0usmcdvmMu7jxWP8",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarView/delta?$skiptoken=R0usmcdvmMu7jxWP8",
     "value": [
         {
             "@odata.type": "#microsoft.graph.event",

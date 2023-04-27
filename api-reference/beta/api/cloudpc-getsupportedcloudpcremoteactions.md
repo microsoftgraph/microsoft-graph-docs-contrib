@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | CloudPC.Read.All                            |
+| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CloudPC.ReadWrite.All                       |
+| Application                            | CloudPC.Read.All, CloudPC.ReadWrite.All     |
 
 ## HTTP request
 
@@ -72,20 +72,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/8
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpc-getsupportedcloudpcremoteactions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpc-getsupportedcloudpcremoteactions-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpc-getsupportedcloudpcremoteactions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpc-getsupportedcloudpcremoteactions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpc-getsupportedcloudpcremoteactions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpc-getsupportedcloudpcremoteactions-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpc-getsupportedcloudpcremoteactions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -93,7 +89,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

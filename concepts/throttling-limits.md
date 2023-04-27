@@ -48,6 +48,17 @@ The preceding limits apply to the following resources:
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
+### Call records limits
+
+The limits listed in the following table apply to the following resource:
+
+- [callRecord](/graph/api/resources/callrecords-callrecord)
+
+| Limit type      | Limit    |
+| -------------- | ------------ |
+| Per tenant | 10,000 requests per 20 seconds |
+| Per application per tenant  | 1,500 requests per 20 seconds |
+| Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 
 ## Excel service limits
 
@@ -261,7 +272,6 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
 [!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
 [!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
@@ -321,6 +331,7 @@ Limits are expressed as requests per second (rps).
 | POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+|POST /teamwork/sendActivityNotificationToRecipients|2 rps|20 rps|
 | GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |

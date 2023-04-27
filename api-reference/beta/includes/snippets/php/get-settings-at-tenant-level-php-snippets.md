@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->admin()->sharepoint()->settings()->get();
+$result = $graphServiceClient->admin()->sharepoint()->settings()->get();
 
 
 ```
