@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a notification for the creation, update, or deletion of a [participant](participant.md) in a meeting. This resource is published by communications servers to notify changed participants since last update.
+Represents a notification for the creation, update, or deletion of a [participant](participant.md) in a meeting. This resource is published by communications servers as a notification of participant changes since the last update.
 
 ## Properties
 
