@@ -9,7 +9,7 @@ ms.custom: "scenarios:getting-started"
 
 # Get change notifications for Microsoft Teams virtual event updates
 
-Change notifications in Microsoft Graph support subscription to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events. Virtual event subscriptions have a maximum period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user might decide to create a new subscription for the resource after the expiry of an existing subscription. For more details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
+Change notifications in Microsoft Graph support subscriptions to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events. Virtual event subscriptions have a maximum period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user might decide to create a new subscription for the resource after the expiry of an existing subscription. For more details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
 
 ## Permissions
 
@@ -21,19 +21,19 @@ Change notifications in Microsoft Graph support subscription to virtual events. 
 
 ## Subscribable resources
 
-| Resource Type                                          | Resource                                                                                  | Supported change types    |
+| Resource type                                          | Resource                                                                                  | Supported change types    |
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|
-| All Events (Tenant-level)                              | `solutions/virtualEvents/events`                                                            | created                   |
-| All Events (Tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`       | created                   |
+| All events (tenant-level)                              | `solutions/virtualEvents/events`                                                            | created                   |
+| All events (tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`       | created                   |
 | The events of a webinar                                     | `solutions/virtualEvents/webinars/{webinarId}`                                              | updated                   |
 | The session events of a webinar                              | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                     | created, updated          |
 | The registration events of a webinar                      | `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`                     | created, updated          |
 
->**Note:** Replace values with parenthesis with actual values.
+>**Note:** Replace valuesin with parenthesis with actual values.
 
-## Subscription to all events created in a tenant
+## Subscribe to all events created in a tenant
 
-You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following resource `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant may only have one type of this subscription per application.
+You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following syntax: `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant can only have one type of this subscription per application.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ## Subscribe to all events created in a tenant with relevant organizers
 
-Subscriptions to all events that include any members of a set of organizers or coorganizers can be accomplished with the resource specified as
+You can subscribe to all events that include any members of a set of organizers or coorganizers by using the following resource: 
 `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`. These subscriptions receive any created notifications for all virtual events for a set of organizer or coorganizer IDs. This subscription is considered a subscription to all events created in a tenant.  
 
 ```http
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ## Subscribe to updated events of a specific webinar
 
-To receive updated notifications for a particular webinar, you need to create a subscription for that unique webinar. Use the following resource to accomplished this `solutions/virtualEvents/webinars/{webinarId}`.
+To receive updated notifications for a particular webinar, you need to create a subscription for that unique webinar by using the following resource:  `solutions/virtualEvents/webinars/{webinarId}`.
 
 An application can have only one subscription per webinar inside a tenant.
 
@@ -134,7 +134,7 @@ Content-Type: application/json
 
 ## Receiving event notifications
 
-Notifications include the resource URL of the changed resource. You can send a separate request to the resource URL, to get information about a created or updated resource.
+Notifications include the resource URL of the changed resource. You can send a separate request to the resource URL to get information about a created or updated resource.
 
 ### Notification types
 
