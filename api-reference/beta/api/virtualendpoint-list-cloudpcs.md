@@ -148,15 +148,13 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcs"
+  "name": "list_cloudpcs_with_top_query"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$top=2
 ```
-
----
 
 #### Response
 
