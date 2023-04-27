@@ -75,21 +75,21 @@ Use the following steps to search for the types of groups in your tenant to help
 
 1. After you select the group-scoped dataset, search for and add a group or groups, or group IDs.
     
-    ![image1](images/data-connect-groups-1.png)
+    ![Screenshot describes ADF and adding user groups](images/data-connect-groups-1.png)
 
 2. After you add groups, you can view the group ID. Copy the IDs of the groups you want to verify.
 
-    ![image2](images/data-connect-groups-2.png)
+    ![Screenshot describes the group ID. You can match the group ID](images/data-connect-groups-2.png)
 
 3. In a new tab, go to the [Azure homepage](www.portal.azure.com) and choose **Azure Active Directory**.
 
-    ![image2.5](images/data-connect-groups-2.5.png)
+    ![Screenshot describes the different options on the azure homepage](images/data-connect-groups-2.5.png)
 
 4. Paste the group ID copied from step 2 and choose the **Groups** tab.
 
-    ![image3](images/data-connect-groups-3.png)
+    ![Screenshot describes Overview](images/data-connect-groups-3.png)
 
 5. Verify the type of group that you have.
 
-    ![image4](images/data-connect-groups-4.png)
+    ![Screenshot describes the type of group have](images/data-connect-groups-4.png)
  
