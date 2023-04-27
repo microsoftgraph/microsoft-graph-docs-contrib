@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/assignments-submissions-states-transition.md",
+      "redirect_url": "/concepts/sample-assignment-submission-overview.md",
+      "redirect_document_id": true
+    }
+  ]
+}
