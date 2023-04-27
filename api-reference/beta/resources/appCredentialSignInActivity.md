@@ -19,25 +19,29 @@ The A sign-in activity for an application credential.  Contains information abou
 
 | Method                                                                          | Return Type                 | Description                                                                |
 | :------------------------------------------------------------------------------ | :-------------------------- | :------------------------------------------------------------------------- |
-| [List appCredentialSignInActivity](../api/serviceprincipal-lastusedate-list.md) | appCredentialSignInActivity | Retrieve a list of appCredentialSignInActivity objects.                    |
-| [Get appCredentialSignInActivity](../api/serviceprincipal-lastusedate-get.md)   | appCredentialSignInActivity | Read properties and relationships of a appCredentialSignInActivity object. |
+| [List appCredentialSignInActivity](../api/reportroot-list-appcredentialsigninactivities.md) | appCredentialSignInActivity | Retrieve a list of appCredentialSignInActivity objects.                    |
+| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | appCredentialSignInActivity | Read properties and relationships of a appCredentialSignInActivity object. |
 
 ## Properties
 
 | Property                 | Type                           | Description                                                                                           |
 | ------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| id                       | string                         | The unique identifier of the appCredentialSignInActivity instance in the response.                    |
-| keyId                    | string                         | The key id of the credential.                                                                         |
-| keyType                  | string                         | Specifies the key type; "certificate" or "secret".                                                    |
-| keyUsage                 | enum                           | Specifies what the key was used for; possible values are "sign" or "verify".                          |
-| appId                    | string                         | The id of the credential application.                                                                 |
-| appObjectId              | string                         | The id of the credential application instance.                                                        |
-| servicePrincipalObjectId | string                         | The id of the service principal.                                                                      |
-| resourceId               | string                         | The id of the accessed resource.                                                                      |
-| credentialOrigin         | enum                           | The type the key credential originated from; possible values are "application" or "servicePrincipal". |
+| appId                    | String                         | The id of the credential application.                                                                 |
+| appObjectId              | String                         | The id of the credential application instance.                                                        |
 | createdDateTime          | DateTimeOffset                 | The dateTimeOffset when the credential was created.                                                   |
+| credentialOrigin         | applicationKeyOrigin | The type the key credential originated from; possible values are "application" or "servicePrincipal". |
 | expirationDateTime       | DateTimeOffset                 | The dateTimeOffset the credential is set to expire.                                                   |
-| signInActivity           | microsoft.graph.signInActivity | The sign-in activity of the credential across all flows.                                              |
+| id                       | String                         | The unique identifier of the appCredentialSignInActivity instance in the response.                    |
+| keyId                    | String                         | The key id of the credential.                                                                         |
+| keyType                  | applicationKeyType | Specifies the key type. The possible values are: `clientSecret`, `certificate`, `unknownFutureValue`.||
+| keyUsage                 | applicationKeyUsage                           | Specifies the how the key was used. The possible values are: `sign`, `verify`, `unknownFutureValue`.|                          |
+| resourceId               | String                         | The id of the accessed resource.                                                                      |
+| servicePrincipalObjectId | String                         | The id of the service principal.                                                                      |
+
+
+
+
+| signInActivity           | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the credential across all flows.                                              |
 
 ## Relationships
 
@@ -46,21 +50,31 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.appCredentialSignInActivity",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
 ```json
 {
-    "id": "string",
-    "keyId": "string",
+  "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
+  "id": "String (identifier)",
+  "keyId": "String",
     "keyType": "string",
-    "keyUsage": "enum",
+    "keyUsage": "String",
     "appId": "string",
     "appObjectId": "string",
     "servicePrincipalObjectId": "string",
     "resourceId": "string",
-    "credentialOrigin": "enum",
-    "createdDateTime": "DateTimeOffset",
-    "expirationDateTime": "DateTimeOffset",
-    "signInActivity": "microsoft.graph.signInActivity"
+    "credentialOrigin": "String",
+    "createdDateTime": "String (timestamp)",
+    "expirationDateTime": "String (timestamp)",
+    "signInActivity": {
+    "@odata.type": "microsoft.graph.signInActivity"
+  }
 }
 ```
 
