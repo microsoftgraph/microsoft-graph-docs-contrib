@@ -12179,8 +12179,6 @@ items:
             href: api/directoryobject-delta.md
           - name: Directory objects
             href: resources/directoryobject.md
-          - name: Retry service provisioning
-            href: api/orgcontact-retryserviceprovisioning.md
             items:
             - name: Get member groups
               href: api/directoryobject-getmembergroups.md
@@ -12190,6 +12188,8 @@ items:
               href: api/directoryobject-getmemberobjects.md
             - name: Check member objects
               href: api/directoryobject-checkmemberobjects.md
+          - name: Retry service provisioning
+            href: api/orgcontact-retryserviceprovisioning.md
           - name: Groups
             href: resources/group.md
             items:
