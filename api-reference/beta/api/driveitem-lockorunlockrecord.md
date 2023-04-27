@@ -49,10 +49,11 @@ PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 
 ## Request body
 
+In the request body, provide a JSON object with the following parameter.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|retentionSettings|[retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item.   
-
+|retentionSettings|[retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item. |
 
 ## Response
 
@@ -76,8 +77,7 @@ PATCH https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retenti
 Content-Type: application/json
 
 {
-    "retentionSettings":
-    {
+    "retentionSettings": {
         "isRecordLocked": true
     }
 }

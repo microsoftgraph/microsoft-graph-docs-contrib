@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                  |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
 
-Note: Only Sites.FullControl.All allows the ability to remove retention labels that classify the contents as records.
+>**Note:** Only `Sites.FullControl.All` supports the removal of retention labels that classify the content as records.
 
 ## HTTP request
 

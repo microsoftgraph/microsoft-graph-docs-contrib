@@ -51,10 +51,11 @@ PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 
 ## Request body
 
-|Property|Type|Description|
-|:---|:---|:---|
-|retentionLabelName|String| Specifies the name of the retention label.
+In the request body, provide a JSON object with the following parameter.
 
+| Property | Type   | Description                                |
+|:---------|:-------|:-------------------------------------------|
+| name     | String | Specifies the name of the retention label. |
 
 ## Response
 
