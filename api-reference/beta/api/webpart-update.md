@@ -1,22 +1,20 @@
 ---
-title: "Create webPart"
-description: "Create a new webPart at the specified position in the a sitePage"
+title: "Update webPart"
+description: "Update a new webPart"
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# Create WebPart
+
+# Update webPart
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [webPart] at the specified position in the a [sitePage]
-
-[sitepage]: ../resources/sitePage.md
-[webPart]: ../resources/webPart.md
+Update the properties of a [webPart](../resources/webpart.md) object.
 
 ## Permissions
 
@@ -30,18 +28,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored"
+}
+-->
 
 ```http
-POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts
-POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts/{webPartIndex}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
 ```
-
-## Optional query parameters
-
-| Name  | Description                     |
-| :---- | :------------------------------ |
-| index | The position at which the web part should be inserted in the collection of web parts |
 
 ## Request headers
 
@@ -56,16 +52,20 @@ In the request body, supply a JSON representation of the [textWebPart](../resour
 
 To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.textwebpart` or `@odata.type=#microsoft.graph.standardwebpart` must be included in the request body.
 
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [webPart](../resources/webpart.md) object in the response body.
+
 ## Example
 
-The following example shows how to create a new webpart.
+The following example shows how to update a webpart.
 
 # [HTTP](#tab/http)
 
-<!-- { "blockType": "request", "name": "create-webpart", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "update-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webpartId}
 Content-Type: application/json
 
 {
@@ -78,12 +78,12 @@ Content-Type: application/json
 
 ## Response
 
-If successful, this method returns a [webPart][] in the response body for the created webPart.
+If successful, this method returns a [webPart][] in the response body for the updated webpart.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.webPart", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
@@ -98,10 +98,10 @@ Content-type: application/json
 <!--
 {
   "type": "#webpart.annotation",
-  "description": "Create a WebPart.",
+  "description": "Update a WebPart.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "WebParts/Create",
+  "tocPath": "WebParts/Update",
   "suppressions": []
 }
 -->

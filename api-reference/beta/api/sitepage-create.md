@@ -49,7 +49,7 @@ POST /sites/{site-id}/pages
 In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
 
 > **Notes:** :
-> 1. To ensure successful parsing of the request body, the '@odata.type=#microsoft.graph.sitePage' must be included in the request body.
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
 > 2. If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
 
 ## Example

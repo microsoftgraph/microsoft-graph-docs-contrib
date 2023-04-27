@@ -16430,6 +16430,8 @@ items:
               href: api/webpart-get.md
             - name: Create 
               href: api/webpart-create.md
+            - name: Update 
+              href: api/webpart-update.md
             - name: Delete 
               href: api/webpart-delete.md
             - name: Get position

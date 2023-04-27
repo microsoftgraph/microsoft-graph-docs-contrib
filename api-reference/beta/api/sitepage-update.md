@@ -45,6 +45,8 @@ PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 
 ## Request body
 
+> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 These fields and be used in update requests.
