@@ -78,7 +78,6 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |adminAccountFullName|String|Indicates what the full name for the admin account is|
 |adminAccountPassword|String|Indicates what the password for the admin account is|
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 ## Relationships
 None
@@ -141,7 +140,6 @@ Here is a JSON representation of the resource.
   "adminAccountUserName": "String",
   "adminAccountFullName": "String",
   "adminAccountPassword": "String",
-  "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "hideAdminAccount": true
 }
 ```

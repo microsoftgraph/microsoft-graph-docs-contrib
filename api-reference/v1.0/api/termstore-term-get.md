@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ``` http
-GET sites/{site-id}/termStore/groups/{group-id}/sets/{set-id}/terms/{term-id}
-GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
+GET /sites/{site-id}/termStore/groups/{group-id}/sets/{set-id}/terms/{term-id}
+GET /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 ```
 
 ## Optional query parameters
