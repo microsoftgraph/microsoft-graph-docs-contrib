@@ -84,13 +84,13 @@ Microsoft Graph Data Connect supports extracting data from a variety of Microsof
 
 The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
 
->****Note:*** This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access.** This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see  [Azure IP Ranges and Service Tags.](https://www.microsoft.com/en-us/download/details.aspx?id=56519) 
+>****Note:*** This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access.** This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see  [Azure IP Ranges and Service Tags.](https://www.microsoft.com/download/details.aspx?id=56519)
 
-For details on this destination storage region restriction, see: 
+For details on this destination storage region restriction, see:
 
-[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](https://learn.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage) 
+[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](https://learn.microsoft.com/azure/data-factory/azure-integration-runtime-ip-addresses)
 
-[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
+[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](https://learn.microsoft.com/azure/storage/common/storage-network-security?tabs=azure-portal)
 
 &nbsp;
 
