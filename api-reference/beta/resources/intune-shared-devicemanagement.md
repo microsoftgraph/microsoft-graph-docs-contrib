@@ -2,7 +2,7 @@
 title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
 localization_priority: Normal
-author: "rolyon"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -25,7 +25,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Device intent settings
 - Device management
 - Electronic SIM (ESIM)
-- Fencing
 - Group Policy Analytics
 - Notifications
 - Onboarding policies, settings, and details
@@ -150,9 +149,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**Embedded SIM**|
 |embeddedSIMActivationCodePools|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) collection|The embedded SIM activation code pools created by this account.|
-|**Fencing**|
-|managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|The management conditions associated with device management of the company.|
-|managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
 |**MicrosoftTunnel**|
@@ -215,6 +211,3 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
-
-
-

@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var todoTask = new TodoTask
+var requestBody = new TodoTask
 {
 	Title = "A new task",
-	LinkedResources = new TodoTaskLinkedResourcesCollectionPage()
+	Categories = new List<string>
+	{
+		"Important",
+	},
+	LinkedResources = new List<LinkedResource>
 	{
 		new LinkedResource
 		{
 			WebUrl = "http://microsoft.com",
 			ApplicationName = "Microsoft",
-			DisplayName = "Microsoft"
-		}
-	}
+			DisplayName = "Microsoft",
+		},
+	},
 };
+var result = await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks.PostAsync(requestBody);
 
-await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks
-	.Request()
-	.AddAsync(todoTask);
 
 ```

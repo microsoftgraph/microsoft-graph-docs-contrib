@@ -1,7 +1,7 @@
 ---
 title: "meetingRegistrant resource type"
 description: "Represents a meeting registrant who has enrolled in an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md).
+Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md). 
+
+Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
 ## Methods
 
@@ -30,7 +32,7 @@ Represents a meeting registrant who has enrolled in an [online meeting](onlineme
 | customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) collection | The registrant's answer to custom questions. |
 | email | String | The email address of the registrant. |
 | firstName | String | The first name of the registrant. |
-| id | String | The ID of the registrant. Read-only. |
+| id | String | The unique identifier of the registrant. Read-only. |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only. |
 | lastName | String | The last name of the registrant. |
 | registrationDateTime | String | Time in UTC when the registrant registers for the meeting. Read-only. |

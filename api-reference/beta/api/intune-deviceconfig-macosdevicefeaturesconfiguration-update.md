@@ -1,7 +1,7 @@
 ---
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -86,7 +86,7 @@ The following table shows the properties that are required when you create the [
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
 |contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determines what type of content is allowed to be cached by Apple's content caching service. Possible values are: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int32|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
+|contentCachingMaxSizeBytes|Int64|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
 |contentCachingDataPath|String|The path to the directory used to store cached content. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Boolean|Disables internet connection sharing.|
 |contentCachingForceConnectionSharing|Boolean|Forces internet connection sharing. contentCachingDisableConnectionSharing overrides this setting.|
@@ -116,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6256
+Content-length: 6089
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -244,16 +244,12 @@ Content-length: 6256
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
     "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
     "preferredKDCs": [
       "Preferred KDCs value"
     ],
@@ -312,7 +308,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6428
+Content-Length: 6261
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -443,16 +439,12 @@ Content-Length: 6428
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
     "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
     "preferredKDCs": [
       "Preferred KDCs value"
     ],
@@ -505,6 +497,3 @@ Content-Length: 6428
   "contentCachingPort": 2
 }
 ```
-
-
-

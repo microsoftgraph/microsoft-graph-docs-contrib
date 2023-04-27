@@ -11,17 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents the current status of a print job.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|printJobProcessingState|The print job's current processing state. Valid values are described in the following table. Read-only.|
-|details|printJobProcessingDetail collection|Additional details for print job state. Valid values are described in the following table. Read-only.|
 |description|String|A human-readable description of the print job's current processing state. Read-only.|
+|details|printJobProcessingDetail collection|Additional details for print job state. Valid values are described in the following table. Read-only.|
 |isAcquiredByPrinter|Boolean|True if the job was acknowledged by a printer; false otherwise. Read-only.|
+|state|printJobProcessingState|The print job's current processing state. Valid values are described in the following table. Read-only.|
 
 ### printJobProcessingState values
 

@@ -1,7 +1,7 @@
 ---
 title: "driverApprovalAction enum type"
 description: "An enum type to represent approval actions of single or list of drivers."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,6 +23,3 @@ An enum type to represent approval actions of single or list of drivers.
 |approve|0|This indicates the action to approve single or list of drivers.|
 |decline|1|This indicates the action to approve single or list of drivers.|
 |suspend|2|This indicates the action to suspend single or list of drivers.|
-
-
-

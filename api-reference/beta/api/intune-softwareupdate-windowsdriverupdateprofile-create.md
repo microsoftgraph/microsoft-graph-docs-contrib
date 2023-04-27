@@ -1,7 +1,7 @@
 ---
 title: "Create windowsDriverUpdateProfile"
 description: "Create a new windowsDriverUpdateProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the w
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Driver Update entity.|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|Driver inventory sync status for this profile.|
 
 
 
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles
 Content-type: application/json
-Content-length: 322
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -83,7 +84,12 @@ Content-length: 322
   "deploymentDeferralInDays": 8,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 
@@ -92,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 727
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -107,9 +113,11 @@ Content-Length: 494
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
-
-
-

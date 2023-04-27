@@ -1,7 +1,7 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
-author: "jpettere"
+author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -73,7 +73,6 @@ Here is an example request on how to opt-out a user from Delve and disable his c
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings
 Content-type: application/json
-Content-length: 37
 
 {
   "contributionToContentDiscoveryDisabled": true
@@ -87,7 +86,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

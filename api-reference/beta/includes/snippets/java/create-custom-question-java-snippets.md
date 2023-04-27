@@ -11,7 +11,7 @@ meetingRegistrationQuestion.displayName = "What's your job position?";
 meetingRegistrationQuestion.isRequired = false;
 meetingRegistrationQuestion.answerInputType = AnswerInputType.TEXT;
 
-graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").registration().customQuestions()
+graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").registration().microsoft.graph.meetingRegistration().customQuestions()
 	.buildRequest()
 	.post(meetingRegistrationQuestion);
 

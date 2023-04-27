@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,9 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLog.Read.All and Directory.Read.All | 
 
-> [!IMPORTANT]
-> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
-
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
 In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
@@ -37,6 +36,8 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Administrator
 + Security Operator
 + Security Reader
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## HTTP request
 
@@ -72,29 +73,38 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1"
+  "name": "get_signin_1",
+  "sampleKeys": ["66ea54eb-blah-4ee5-be62-ff5a759b0100"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-ff5a759b0100
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signin-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-signin-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signin-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -113,101 +123,118 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-  "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-  "userDisplayName": "Test contoso",
-  "userPrincipalName": "testaccount1@contoso.com",
-  "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-  "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-  "appDisplayName": "Graph explorer",
-  "authenticationRequirement": "MultifactorAuthentication",
-  "ipAddress": "131.107.159.37",
-  "clientAppUsed": "Browser",
-  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-  "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-  "conditionalAccessStatus": "notApplied",
-  "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-  "isInteractive": true,
-  "tokenIssuerName": "",
-  "tokenIssuerType": "AzureAD",
-  "processingTimeInMilliseconds": 541,
-  "riskDetail": "none",
-  "riskLevelAggregated": "none",
-  "riskLevelDuringSignIn": "none",
-  "riskState": "none",
-  "riskEventTypes": [],
-  "riskEventTypes_v2": [],
-  "resourceDisplayName": "Microsoft Graph",
-  "resourceId": "00000003-0000-0000-c000-000000000000",
-  "authenticationMethodsUsed": [],
-  "alternateSignInName": "testaccount2@contoso.com",
-  "servicePrincipalName": null,
-  "servicePrincipalId": "",
-  "mfaDetail": null,
-  "status": {
-    "errorCode": 0,
-    "failureReason": null,
-    "additionalDetails": null
-  },
-  "deviceDetail": {
-    "deviceId": "",
-    "displayName": null,
-    "operatingSystem": "Windows 10",
-    "browser": "Edge 80.0.361",
-    "isCompliant": null,
-    "isManaged": null,
-    "trustType": null
-  },
-  "location": {
-    "city": "Redmond",
-    "state": "Washington",
-    "countryOrRegion": "US",
-    "geoCoordinates": {
-      "altitude": null,
-      "latitude": 47.68050003051758,
-      "longitude": -122.12094116210938
-    }
-  },
-  "appliedConditionalAccessPolicies": [
-    {
-      "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-      "displayName": "SharePoint limited access for guest workers",
-      "enforcedGrantControls": [],
-      "enforcedSessionControls": [],
-      "result": "notEnabled",
-      "conditionsSatisfied": "none",
-      "conditionsNotSatisfied": "none"
-    },
-    {
-      "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-      "displayName": "Medium signin risk block",
-      "enforcedGrantControls": [],
-      "enforcedSessionControls": [],
-      "result": "notEnabled",
-      "conditionsSatisfied": "none",
-      "conditionsNotSatisfied": "none"
-    },
+  "id":"66ea54eb-blah-4ee5-be62-ff5a759b0100",
+  "createdDateTime":"2021-06-30T16:34:32Z",
+  "userDisplayName":"Test contoso",
+  "userPrincipalName":"testaccount1@contoso.com",
+  "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
+  "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+  "appDisplayName":"Azure Portal",
+  "authenticationContextClassReferences": [
+      {
+        "id":"C1",
+        "details":"required"
+      }
   ],
-  "authenticationProcessingDetails": [],
-  "networkLocationDetails": [],
-  "authenticationDetails": [
+  "authenticationProtocol": "oAuth2",
+  "incomingTokenType": "Primary Refresh Token",
+  "ipAddress":"131.107.159.37",
+  "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
+  "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
+  "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
+  "conditionalAccessStatus":"notApplied",
+  "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
+  "homeTenantId": "4f7a7bc2-28e2-46a3-b90e-5ade5bc90138",
+  "homeTenantName": "",
+  "isTenantRestricted": false,
+  "isInteractive":true,
+  "tokenIssuerName":"",
+  "tokenIssuerType":"AzureAD",
+  "processingTimeInMilliseconds":761,
+  "riskDetail":"none",
+  "riskLevelAggregated":"none",
+  "riskLevelDuringSignIn":"none",
+  "riskState":"none",
+  "riskEventTypes_v2":[],
+  "resourceDisplayName":"Windows Azure Service Management API",
+  "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+  "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
+  "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
+  "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "authenticationAppDeviceDetails": null,
+  "authenticationAppPolicyDetails": null,
+  "authenticationMethodsUsed":[],
+  "authenticationRequirement":"singleFactorAuthentication",
+  "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+  "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
+  "signInIdentifier":"testaccount1@contoso.com",
+  "signInEventTypes":["interactiveUser"],
+  "servicePrincipalId":"",
+  "sessionLifetimePolicies": [
     {
-      "authenticationStepDateTime": "2018-11-06T18:48:03.8313489Z",
-      "authenticationMethod": "FIDO2",
-      "authenticationMethodDetail": "1G54395783",
-      "succeeded": true,
-      "authenticationStepResultDetail": "methodSucceeded",
-      "authenticationStepRequirement": "Primary authentication"
-    },
-    {
-      "authenticationStepDateTime": "2018-11-06T18:48:12.94725647Z",
-      "authenticationMethod": "Claim in access token",
-      "authenticationMethodDetail": null,
-      "succeeded": true,
-      "authenticationStepResultDetail": "methodSucceeded",
-      "authenticationStepRequirement": "MFA"
+      "expirationRequirement": "tenantTokenLifetimePolicy",
+      "detail": "The user was required to sign in again according to the tenant session lifetime policy"
     }
   ],
-  "authenticationRequirementPolicies": []
+  "userType":"member",
+  "flaggedForReview":false,
+  "isTenantRestricted":false,
+  "autonomousSystemNumber":3598,
+  "crossTenantAccessType":"none",
+  "status":{
+      "errorCode":50126,
+      "failureReason":"Error validating credentials due to invalid username or password.",
+      "additionalDetails":"The user didn't enter the right credentials. \u00a0It's expected to see some number of these errors in your logs due to users making mistakes."
+    },
+  "deviceDetail":{
+      "deviceId":"",
+      "displayName":"",
+      "operatingSystem":"Windows 10",
+      "browser":"Edge 91.0.864",
+      "isCompliant":false,
+      "isManaged":false,
+      "trustType":""
+    },
+  "location":{
+      "city":"Redmond",
+      "state":"Washington",
+      "countryOrRegion":"US",
+      "geoCoordinates":{
+        "altitude":null,
+        "latitude":47.6807,
+        "longitude":-122.1231
+      }
+    },
+  "appliedConditionalAccessPolicies":[],
+  "authenticationProcessingDetails":[
+      {
+        "key":"Login Hint Present",
+        "value":"True"
+      }
+    ],
+  "networkLocationDetails":[
+      {
+        "networkType":"namedNetwork",
+        "networkNames":["North America"]
+      }
+    ],
+    "managedServiceIdentity":{
+          "msiType":"systemAssigned",
+          "associatedResourceId":"/subscriptions/a89523b8-b5db-4697-9c1b-2f7dcfd074d9/resourcegroups/Scenario-TestRPToKeyVaultSAJob_USCentral/providers/Providers.Test/msiStateful/testrp30964"
+          },
+  "authenticationDetails":[
+      {
+        "authenticationStepDateTime":"2021-06-30T16:34:32Z",
+        "authenticationMethod":"Password",
+        "authenticationMethodDetail":"Password in the cloud",
+        "succeeded":false,
+        "authenticationStepResultDetail":"Invalid username or password or Invalid on-premise username or password.",
+        "authenticationStepRequirement":"Primary authentication"
+      }
+    ],
+  "authenticationRequirementPolicies":[],
+  "sessionLifetimePolicies":[]
 }
 ```

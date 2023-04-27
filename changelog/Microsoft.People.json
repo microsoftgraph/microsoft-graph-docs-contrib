@@ -1,0 +1,174 @@
+{
+	"changelog": [
+		{
+			"ChangeList": [
+				{
+					"Id": "043cf008-630e-455e-93fa-7ea838441b67",
+					"ApiChange": "Resource",
+					"ChangedApiName": "insightsSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-beta) resource.",
+					"Target": "insightsSettings"
+				},
+				{
+					"Id": "043cf008-630e-455e-93fa-7ea838441b67",
+					"ApiChange": "Resource",
+					"ChangedApiName": "itemInsightsSettings",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **itemInsightsSettings** resource type.",
+					"Target": "itemInsightsSettings"
+				},
+				{
+					"Id": "043cf008-630e-455e-93fa-7ea838441b67",
+					"ApiChange": "Resource",
+					"ChangedApiName": "peopleInsights",
+					"ChangeType": "Addition",
+					"Description": "Added the **peopleInsights** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+					"Target": "organizationSettings"
+				}
+			],
+			"Id": "043cf008-630e-455e-93fa-7ea838441b67",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-12-06T13:32:51.9103157Z",
+			"WorkloadArea": "People and workplace intelligence",
+			"SubArea": "People"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "contactMergeSuggestions",
+					"ChangeType": "Addition",
+					"Description": "Added the **contactMergeSuggestions** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
+					"Target": "userSettings"
+				},
+				{
+					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
+					"ApiChange": "Resource",
+					"ChangedApiName": "contactMergeSuggestions",
+					"ChangeType": "Addition",
+					"Description": "Added the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource type.",
+					"Target": "contactMergeSuggestions"
+				},
+				{
+					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
+					"ApiChange": "Method",
+					"ChangedApiName": "GET",
+					"ChangeType": "Addition",
+					"Description": "Added the [GET](https://learn.microsoft.com/en-us/graph/api/contactmergesuggestions-get?view=graph-rest-beta) method to the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Target": "contactMergeSuggestions"
+				},
+				{
+					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
+					"ApiChange": "Method",
+					"ChangedApiName": "PATCH",
+					"ChangeType": "Addition",
+					"Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/contactmergesuggestions-update?view=graph-rest-beta) method to the [contactMergeSuggestions](https://learn.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Target": "contactMergeSuggestions"
+				}
+			],
+			"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-04T06:53:12.168Z",
+			"WorkloadArea": "Personal contacts",
+			"SubArea": ""
+		},
+		{
+		  "ChangeList": [
+			{
+			  "Id": "37e9a406-b8c0-4ae1-a8bf-b1e9d2c0dea6",
+			  "ApiChange": "Resource",
+			  "ChangedApiName": "microsoftApplicationDataAccessSettings",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [microsoftApplicationDataAccessSettings](https://learn.microsoft.com/en-us/graph/api/resources/microsoftApplicationDataAccessSettings?view=graph-rest-beta) resource.",
+			  "Target": "microsoftApplicationDataAccessSettings"
+			},
+			{
+			  "Id": "37e9a406-b8c0-4ae1-a8bf-b1e9d2c0dea6",
+			  "ApiChange": "Relationship",
+			  "ChangedApiName": "microsoftApplicationDataAccess",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **microsoftApplicationDataAccess** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+			  "Target": "organizationSettings"
+			}
+		  ],
+		  "Id": "37e9a406-b8c0-4ae1-a8bf-b1e9d2c0dea6",
+		  "Cloud": "Prod",
+		  "Version": "beta",
+		  "CreatedDateTime": "2022-03-29T10:43:26.7401281Z",
+		  "WorkloadArea": "People and workplace intelligence",
+		  "SubArea": "People"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "contactInsights",
+					"ChangeType": "Addition",
+					"Description": "Added the contactInsights navigation property to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource",
+					"Target": "organizationSettings"
+				},
+				{
+					"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
+					"ApiChange": "Method",
+					"ChangedApiName": "GET",
+					"ChangeType": "Addition",
+					"Description": "Added a [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-contactinsights?view=graph-rest-beta&tabs=http) operation to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource, to get the tenant-level settings for contact insights",
+					"Target": "insightsSettings"
+				}
+			],
+			"Id": "109fc26e-a37d-4001-bce1-f7d72caf97b5",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-10-03T13:58:56.9132926Z",
+			"WorkloadArea": "Personal contacts",
+			"SubArea": "Org control for contact insights"
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				"ApiChange": "Resource",
+				"ChangedApiName": "pronounsSettings",
+				"ChangeType": "Addition",
+				"Description": "Added the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounsSettings?view=graph-rest-beta) resource",
+				"Target": "pronounsSettings"
+			  },
+			  {
+				  "Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "GET",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to get the tenant-level settings for pronouns",
+				  "Target": "pronounsSettings"
+			  },
+			  {
+				  "Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "PATCH",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [udpate](https://learn.microsoft.com/en-us/graph/api/pronounssettings-update?view=graph-rest-beta&tabs=http) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-beta) resource, to update the tenant-level settings for pronouns",
+				  "Target": "pronounsSettings"
+			  },
+			  {
+				"Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "pronounsSettings",
+				"ChangeType": "Addition",
+				"Description": "Added the **pronounsSettings** relationship to the [organizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+				"Target": "organizationSettings"
+			  }
+			],
+			"Id": "827d51a9-63d6-4d06-a157-262bf134e8d8",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-02-27T07:44:37.4668752Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Directory management"
+		  }
+	]
+}

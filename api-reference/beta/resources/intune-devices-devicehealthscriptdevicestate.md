@@ -1,7 +1,7 @@
 ---
 title: "deviceHealthScriptDeviceState resource type"
 description: "Contains properties for device run state of the device health script."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,7 +39,7 @@ Contains properties for device run state of the device health script.
 |remediationScriptError|String|Error output of the remediation script|
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
-|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`, `unknownFutureValue`.|
 |assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 ## Relationships
@@ -74,6 +74,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-

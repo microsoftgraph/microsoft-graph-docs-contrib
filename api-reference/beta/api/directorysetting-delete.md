@@ -1,5 +1,5 @@
 ---
-title: "Delete a directory setting"
+title: "Delete directorySetting"
 description: "Delete a directory setting."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Delete a directory setting
+# Delete directorySetting
 
 Namespace: microsoft.graph
 
@@ -15,25 +15,40 @@ Namespace: microsoft.graph
 
 Delete a directory setting.
 
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Delete groupSettings*.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For all settings except the Consent Policy Settings object
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
+### For the Consent Policy Settings object
+
+The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Policy.ReadWrite.Authorization |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-Delete a specific tenant-wide or group setting
+Delete a tenant-wide setting.
 ```http
-DELETE /settings/{id}
-DELETE /groups/{id}/settings/{id}
-
+DELETE /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Delete a group-specific setting.
+```http
+DELETE /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -47,7 +62,7 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -55,28 +70,37 @@ Here is an example of the request.
   "blockType": "request",
   "name": "delete_directorysetting"
 }-->
-```http
-DELETE https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-directorysetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-directorysetting-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directorysetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-directorysetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-directorysetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directorysetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

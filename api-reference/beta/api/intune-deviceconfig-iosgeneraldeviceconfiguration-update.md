@@ -1,7 +1,7 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -246,6 +246,7 @@ The following table shows the properties that are required when you create the [
 |wiFiConnectToAllowedNetworksOnlyForced|Boolean|Require devices to use Wi-Fi networks set up via configuration profiles. Available for devices running iOS and iPadOS versions 14.5 and later.|
 |onDeviceOnlyTranslationForced|Boolean|When set to TRUE, the setting disables connections to Siri servers so that users can’t use Siri to translate text. When set to FALSE, the setting allows connections to to Siri servers to users can use Siri to translate text. Available for devices running iOS and iPadOS versions 15.0 and later.|
 |managedPasteboardRequired|Boolean|Open-in management controls how people share data between unmanaged and managed apps. Setting this to true enforces copy/paste restrictions based on how you configured <b>Block viewing corporate documents in unmanaged apps </b> and <b> Block viewing non-corporate documents in corporate apps.</b>|
+|iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running iOS 15 and later.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -260,7 +261,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10907
+Content-length: 10945
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -558,6 +559,7 @@ Content-length: 10907
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -567,7 +569,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11079
+Content-Length: 11117
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -868,9 +870,7 @@ Content-Length: 11079
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
-
-

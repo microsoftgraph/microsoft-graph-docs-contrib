@@ -1,5 +1,5 @@
 ---
-title: "Listing versions of a DriveItem"
+title: "List versions of a driveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -7,7 +7,7 @@ author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
-# Listing versions of a DriveItem
+# List versions of a driveItem
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 This example retrieves the versions of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -57,24 +57,32 @@ This example retrieves the versions of a file in the current user's drive.
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-previous-versions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-previous-versions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-previous-versions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -127,6 +135,8 @@ Content-Type: application/json
 ```
 
 ## Remarks
+
+Versions are returned in descending order (newest to oldest). The OData `$orderBy` query string parameter is not supported.
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 

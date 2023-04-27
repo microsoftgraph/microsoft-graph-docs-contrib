@@ -7,46 +7,51 @@ metadata:
   level: Beginner
   displayType: one-column
   ms.date: 04/30/2021
-  author: fercobo-msft
+  author: rimisra2
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
 items:
   - title: Build your first Microsoft Graph Data Connect application
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](data-connect-quickstart-01.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-01.md)]
 
   - title: Set up your Microsoft 365 tenant and enable Microsoft Graph Data Connect
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](data-connect-quickstart-02.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
 
   - title: Set up your Azure Active Directory app registration
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](data-connect-quickstart-03.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
 
   - title: Set up your Azure Storage resource
     durationInMinutes: 10
     content: |
-      [!INCLUDE [](data-connect-quickstart-04.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
 
   - title: Set up your Azure Data Factory resource
     durationInMinutes: 15
     content: |
-      [!INCLUDE [](data-connect-quickstart-05.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
 
-  - title: Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
+  - title: Set up your Azure Data Synapse resource
+    durationInMinutes: 15
+    content: |
+      [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
+
+  - title: Monitor data consent requests with Microsoft 365 Admin Center or PowerShell
     durationInMinutes: 5
     content: |
-      [!INCLUDE [](data-connect-quickstart-06.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
 
   - title: Create your ASP.NET web application to process the exported data
     durationInMinutes: 25
     content: |
-      [!INCLUDE [](data-connect-quickstart-07.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
   
   - title: Congratulations!
     durationInMinutes: 0
     content: |
-      [!INCLUDE [](data-connect-quickstart-08.md)]
+      [!INCLUDE [](../includes/data-connect-quickstart-09.md)]

@@ -1,18 +1,21 @@
 ---
-title: "App migration planning checklist"
-description: "Checklist for migrating your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
-author: "dkershaw10"
+title: "Azure Active Directory (Azure AD) Graph app migration checklist"
+description: "Use this checklist to migrate your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
-# App migration planning checklist
+# Azure AD Graph app migration planning checklist
 
-Use the following checklist to plan your migration.
+Use the following checklist to plan your migration from Azure Active Directory (Azure AD) Graph to Microsoft Graph.
 
 ## Step 1: Review the differences between the APIs
 
-In many respects, Microsoft Graph is similar to the earlier Azure Active Directory (Azure AD) Graph. In many cases, simply change the endpoint service name and version in your code, and everything should continue to work.
+In many respects, Microsoft Graph is similar to the earlier Azure AD Graph. In many cases, simply change the endpoint service name and version in your code, and everything should continue to work.
 
 Nonetheless, there are differences. Certain resources, properties, methods, and core capabilities have changed.
 
@@ -23,6 +26,7 @@ Specifically, look for differences in the following areas:
 - [Entity resource names](migrate-azure-ad-graph-resource-differences.md) and their types
 - [Properties](migrate-azure-ad-graph-property-differences.md) of request and response objects
 - [Methods](migrate-azure-ad-graph-method-differences.md), including parameters and types
+- [Permissions](migrate-azure-ad-graph-permissions-differences.md)
 
 ## Step 2: Examine API use
 
@@ -48,6 +52,6 @@ Now you've made the switch to Microsoft Graph, it's never been easier for you to
 
 [Microsoft authentication library](/azure/active-directory/develop/reference-v2-libraries) (MSAL) is now the recommended authentication library for use with the Microsoft identity platform. If you're currently using the [Azure Active Directory Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), plan to switch to MSAL. See further guidance to [migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 
-## Next Steps
+## Next steps
 
 - Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.

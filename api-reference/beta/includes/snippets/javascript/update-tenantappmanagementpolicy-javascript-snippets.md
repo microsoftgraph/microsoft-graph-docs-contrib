@@ -17,22 +17,27 @@ const tenantAppManagementPolicy = {
             {
                 restrictionType: 'passwordAddition',
                 maxLifetime: null,
-                restrictForAppsCreatedAfterDateTime: '2021-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2021-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'passwordLifetime',
                 maxLifetime: 'P4DT12H30M5S',
-                restrictForAppsCreatedAfterDateTime: '2019-01-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2017-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'symmetricKeyAddition',
                 maxLifetime: null,
-                restrictForAppsCreatedAfterDateTime: '2021-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2021-01-01T10:37:00Z'
+            },
+            {
+                restrictionType: 'customPasswordAddition',
+                maxLifetime: null,
+                restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
             },
             {
                 restrictionType: 'symmetricKeyLifetime',
                 maxLifetime: 'P40D',
-                restrictForAppsCreatedAfterDateTime: '2015-04-01T10:37:00Z'
+                restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
             }
         ],
         keyCredentials: [

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsBatteryHealthRuntimeDetails resource type"
 description: "The user experience analytics battery health runtime entity contains count of devices broken down into 3 categories - devices with runtime > 5 hours, devices with runtime 3-5 hours and devices with runtime < 3 hours.This API provides the count of devices in these 3 categories."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -31,6 +31,7 @@ The user experience analytics battery health runtime entity contains count of de
 |batteryRuntimeGood|Int32|Number of devices  whose active runtime is greater than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimeFair|Int32|Number of devices whose active runtime is greater than 3 hours but lesser than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimePoor|Int32|Number of devices whose active runtime is lesser than 3 hours. Valid values -2147483648 to 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Recorded date time of this runtime details instance.|
 
 ## Relationships
 None
@@ -50,9 +51,7 @@ Here is a JSON representation of the resource.
   "activeDevices": 1024,
   "batteryRuntimeGood": 1024,
   "batteryRuntimeFair": 1024,
-  "batteryRuntimePoor": 1024
+  "batteryRuntimePoor": 1024,
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-
-
-

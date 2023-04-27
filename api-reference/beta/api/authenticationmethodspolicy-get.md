@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationMethodsPolicy"
 description: "Read the properties and relationships of an authenticationMethodsPolicy object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -23,11 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global Reader
-* Authentication Policy Administrator
-* Global Administrator
+[!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
 
 ## HTTP request
 
@@ -67,25 +63,32 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethodspolicy-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-authenticationmethodspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationmethodspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -100,25 +103,111 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-    "lastModifiedDateTime": "2021-05-24T18:02:30.5288302Z",
+    "lastModifiedDateTime": "2022-01-26T10:47:26.6044384Z",
     "policyVersion": "1.4",
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
-            "snoozeDurationInDays": 2,
-            "state": "enabled",
+            "snoozeDurationInDays": 1,
+            "state": "default",
             "excludeTargets": [],
             "includeTargets": [
                 {
-                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 }
             ]
         }
-    }
+    },
+    "authenticationMethodConfigurations": [
+        {
+            "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+            "id": "Fido2",
+            "state": "disabled",
+            "isSelfServiceRegistrationAllowed": true,
+            "isAttestationEnforced": true,
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "block",
+                "aaGuids": []
+            },
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
+            "id": "MicrosoftAuthenticator",
+            "state": "disabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "authenticationMode": "any",
+                    "outlookMobileAllowedState": "default",
+                    "displayAppInformationRequiredState": "default",
+                    "numberMatchingRequiredState": "default"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+            "id": "Sms",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "isUsableForSignIn": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+            "id": "TemporaryAccessPass",
+            "state": "disabled",
+            "defaultLifetimeInMinutes": 60,
+            "defaultLength": 8,
+            "minimumLifetimeInMinutes": 60,
+            "maximumLifetimeInMinutes": 480,
+            "isUsableOnce": false,
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+            "id": "Email",
+            "state": "enabled",
+            "allowExternalIdToUseEmailOtp": "default",
+            "includeTargets": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+            "id": "systemCredentialPreferences",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users"
+                }
+            ],
+            "excludeTargets": []
+        }
+    ]
 }
 ```

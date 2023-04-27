@@ -1,5 +1,5 @@
 ---
-title: "Update a directory setting"
+title: "Update directorySetting"
 description: "Update the properties of a specific directory setting object."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Update a directory setting
+# Update directorySetting
 
 Namespace: microsoft.graph
 
@@ -15,24 +15,42 @@ Namespace: microsoft.graph
 
 Update the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Update groupSettings*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For all settings except the Consent Policy Settings object
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
+### For the Consent Policy Settings object
+
+The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Policy.ReadWrite.Authorization |
+
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-Update a tenant-wide or group specific setting.
+Update a tenant-wide setting.
 ```http
-PATCH /settings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Update a group-specific setting.
+```http
+PATCH /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
@@ -47,10 +65,10 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -58,44 +76,52 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
-Content-length: 178
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "CustomBlockedWordsList",
+            "value": "Contoso"
+        }
+    ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-directorysetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-directorysetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-directorysetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-directorysetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-directorysetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

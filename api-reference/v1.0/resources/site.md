@@ -1,13 +1,13 @@
 ---
 author: JeremyKelley
-title: site resource
+title: "site resource type"
 description: The site resource provides metadata and relationships for a Sharepoint site. 
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# site resource
+# site resource type
 
 Namespace: microsoft.graph
 
@@ -32,6 +32,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+| [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -54,11 +55,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Property            | Type                                | Description                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
 | **description**          | string                              | The descriptive text for the site.                                                             |
 | **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **eTag**                 | string                              | ETag for the item. Read-only.                                                                  |
+| **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
 | **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
@@ -89,6 +90,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.
 | **lists**         | Collection([list][])                             | The collection of lists under this site.
 | **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
+| **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.
 | **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
 | **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
@@ -108,7 +110,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-Here is a JSON representation of a **site** resource.
+The following is a JSON representation of the resource.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
@@ -143,6 +145,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],

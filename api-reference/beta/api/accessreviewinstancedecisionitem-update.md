@@ -1,8 +1,8 @@
 ---
 title: "Update accessReviewInstanceDecisionItem"
-description: "Update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
+description: "Update an existing accessReviewInstanceDecisionItem object for which the calling user is the reviewer."
 ms.localizationpriority: medium
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -27,14 +27,23 @@ One of the following permissions is required to call this API. Delegated permiss
 |Delegated (personal Microsoft account)|Not supported.|
 
 ## HTTP request
+
+To update a decision on an accessReviewInstance:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
+
+To update a decision on a stage of an accessReviewInstance that has multiple stages:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+```
+
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-|Authorization|Bearer {token}. Required.|
+| Authorization|Bearer {token}. Required.|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -46,54 +55,117 @@ The following table shows the properties accepted to update an `accessReviewInst
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 
 ## Response
-If successful, this method returns a `204, NoContent` response code and no response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 
-### Request
+
 ## Examples
 
-This is an example of approving access for a user represented by an `accessReviewInstanceDecisionItem`.
+### Example 1: Update a decision on an accessReviewInstance
+
+#### Request
+
+The following is an example of a decision to approve access for a user.
 
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_accessReviewInstanceDecisionItem"
+  "name": "update_accessReviewDEfinitionInstanceDecisionsItem"
 }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 Content-Type: application/json
-Content-length: 730
 
 {
   "decision": "Approve",
   "justification": "This person is still on my team",
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewdefinitioninstancedecisionsitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewinstancedecisionitem-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewdefinitioninstancedecisionsitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewdefinitioninstancedecisionsitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewdefinitioninstancedecisionsitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewdefinitioninstancedecisionsitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewdefinitioninstancedecisionsitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 Accepted
+```
+
+
+### Example 2: Update a decision on an stage in a multi-stage access review
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accessReviewDEfinitionInstanceDecisionsStage"
+}-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+Content-Type: application/json
+
+{
+  "decision": "Approve",
+  "justification": "This person is still on my team",
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewdefinitioninstancedecisionsstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewdefinitioninstancedecisionsstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewdefinitioninstancedecisionsstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewdefinitioninstancedecisionsstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewdefinitioninstancedecisionsstage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewdefinitioninstancedecisionsstage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### Response
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

@@ -3,7 +3,7 @@ title: printOperation resource type
 description: Represents a long-running Universal Print operation. Base class for operation types such as printerCreateOperation.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

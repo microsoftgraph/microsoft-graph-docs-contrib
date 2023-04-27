@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var personAnnualEvent = new PersonAnnualEvent
+var requestBody = new PersonAnnualEvent
 {
-	AllowedAudiences = AllowedAudiences.Contacts
+	AllowedAudiences = AllowedAudiences.Contacts,
 };
+var result = await graphClient.Me.Profile.Anniversaries["{personAnnualEvent-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Profile.Anniversaries["{personAnnualEvent-id}"]
-	.Request()
-	.UpdateAsync(personAnnualEvent);
 
 ```

@@ -40,8 +40,12 @@ Represents a participant in a call.
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
+| removedState | [removedState](removedstate.md)        | Indicates the reason why the **participant** was removed from the roster. |
+| restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons why media content from this participant is restricted. |
+| rosterSequenceNumber | Int64        | Indicates the roster sequence number the **participant** was last updated in. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -59,11 +63,14 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "isInLobby": true,
-  "isMuted": true,
+  "isInLobby": "Boolean",
+  "isMuted": "Boolean",
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
-  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" },
+  "removedState": { "@odata.type": "#microsoft.graph.removedState" },
+  "restrictedExperience": { "@odata.type": "#microsoft.graph.onlineMeetingRestricted" },
+  "rosterSequenceNumber": "Int64"
 }
 ```
 
@@ -79,5 +86,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

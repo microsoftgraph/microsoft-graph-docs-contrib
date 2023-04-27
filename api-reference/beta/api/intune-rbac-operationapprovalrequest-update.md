@@ -1,7 +1,7 @@
 ---
 title: "Update operationApprovalRequest"
 description: "Update the properties of a operationApprovalRequest object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -54,9 +54,10 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|Last modified DateTime. This property is read-only.|
 |requestor|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the requestor. This property is read-only.|
 |approver|[identitySet](../resources/intune-rbac-identityset.md)|The identity of the approver. This property is read-only.|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
+|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
 |requestJustification|String|The request justification. This property is read-only.|
 |approvalJustification|String|The justification for the approval of the request. This property is read-only.|
+|operationApprovalPolicies|String|The operational approval policies used in the request. This property is read-only.|
 
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 Content-type: application/json
-Content-length: 1346
+Content-length: 1415
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -114,7 +115,8 @@ Content-length: 1346
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
 
@@ -123,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1459
+Content-Length: 1528
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -169,9 +171,7 @@ Content-Length: 1459
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
-
-
-

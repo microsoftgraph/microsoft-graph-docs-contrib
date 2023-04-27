@@ -1,7 +1,7 @@
 ---
 title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -163,7 +163,11 @@ Here is a JSON representation of the resource.
       "domains": [
         "String"
       ],
-      "probeRequiredUrl": "String"
+      "probeRequiredUrl": "String",
+      "interfaceTypeMatch": "String",
+      "dnsServerAddressMatch": [
+        "String"
+      ]
     }
   ],
   "providerType": "String",
@@ -185,6 +189,3 @@ Here is a JSON representation of the resource.
   "optInToDeviceIdSharing": true
 }
 ```
-
-
-

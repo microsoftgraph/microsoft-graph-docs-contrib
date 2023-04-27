@@ -2,7 +2,7 @@
 title: "assignLicense"
 description: "Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this Technet article."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "jconley76"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -49,9 +49,11 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.
 
-## Example
-Add licenses to the user.
-##### Request
+## Examples
+
+### Example 1: Assign licenses to the signed-in user
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,58 +63,48 @@ Add licenses to the user.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
-  "addLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
-    },
-    {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
-    }
-  ],
-  "removeLicenses": []
+    "addLicenses": [
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+    "removeLicenses": []
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-assignlicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-assignlicense-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-## Example
-Remove licenses from the user.
-
-##### Request
-```http
-POST https://graph.microsoft.com/beta/me/assignLicense
-Content-type: application/json
-Content-length: 185
-
-{
-  "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
-}
-```
-
-##### Response
-In both examples, the response is the updated user object. Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,29 +113,87 @@ In both examples, the response is the updated user object. Note: The response ob
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,
   "assignedLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+  "city": "Nairobi",
+  "companyName": "Contoso"
+}
+```
+
+### Example 2: Remove licenses from the signed-in user
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "user_assignlicense_removelicenses"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/assignLicense
+Content-type: application/json
+
+{
+    "addLicenses": [],
+    "removeLicenses": [
+        "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-assignlicense-removelicenses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-removelicenses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-removelicenses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-removelicenses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-removelicenses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [],
+  "city": "Nairobi",
+  "companyName": "Contoso"
 }
 ```
 

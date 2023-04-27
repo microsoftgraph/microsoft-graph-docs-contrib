@@ -1,7 +1,7 @@
 ---
 title: "List simulations"
-description: "List attack simulations of a tenant."
-author: "Gopal-MSFT"
+description: "Get a list of attack simulation campaigns for a tenant."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List attack simulations of a tenant.
+Get a list of attack simulation campaigns for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -34,11 +34,10 @@ GET /security/attackSimulation/simulations
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`.
 
-The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
 
-Use `@odata.nextLink` for pagination.
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 The following are examples of their use:
 
@@ -51,10 +50,10 @@ GET /security/attackSimulation/simulations?$count=true
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}
+GET /security/attackSimulation/simulations?$skipToken={skipToken}
 GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
-
-For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -81,25 +80,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-simulation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -125,27 +131,21 @@ Content-Type: application/json
       "createdDateTime": "2021-01-01T01:01:01.01Z",
       "createdBy": {
         "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
       },
       "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
       "lastModifiedBy": {
         "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
-        "displayName": "Sample User",
-        "email": "sampleuser@contoso.com"
+        "displayName": "Reed Flores",
+        "email": "reed@contoso.com"
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
-      "mode": "real",
+      "durationInDays": 4,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

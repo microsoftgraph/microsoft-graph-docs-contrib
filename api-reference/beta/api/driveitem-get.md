@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
 description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
-ms.date: 09/10/2017
-title: Get a file or folder
+title: Get driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.prod: "files"
 doc_type: apiPageType
 ---
-# Get a DriveItem resource
+# Get driveItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
+Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
 
 ## Permissions
 
@@ -78,25 +77,18 @@ Here is an example of the request to the root folder of the user's OneDrive.
 ```msgraph-interactive
 GET /me/drive/root
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-metadata-csharp-snippets.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-## Response
+### Response
 
 Here is an example of the response.
 
@@ -132,10 +124,9 @@ Content-type: application/json
 }
 ```
 
-## Remarks
+## See also
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

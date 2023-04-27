@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 
 ## Methods
@@ -26,14 +24,14 @@ Represents a print connector that has been registered by using a Universal Print
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| Read-only.|
+|appVersion|String|The connector's version.|
 |displayName|String|The name of the connector.|
 |fullyQualifiedDomainName|String|The connector machine's hostname.|
-|operatingSystem|String|The connector machine's operating system version.|
-|appVersion|String|The connector's version.|
+|id|String| Read-only.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the connector.|
-|registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
+|operatingSystem|String|The connector machine's operating system version.|
 |registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
+|registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
 
 ## Relationships
 None.

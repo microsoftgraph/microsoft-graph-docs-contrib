@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "raprakasMSFT"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,12 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/agreementAcceptances
+
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
-<!--
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
--->
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
+
 
 ## Request headers
 | Name      |Description|
@@ -43,7 +45,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -53,25 +55,34 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreementacceptances-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-agreementacceptances-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreementacceptances-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreementacceptances-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agreementacceptances-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-agreementacceptances-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementacceptances-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -83,19 +94,27 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 303
 
 {
-  "value": [
-    {
-      "agreementId": "agreementId-value",
-      "userId": "userId-value",
-      "agreementFileId": "agreementFileId-value",
-      "recordedDateTime": "datetime-value",
-      "userDisplayName": "userDisplayName-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreementAcceptances",
+    "value": [
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd_d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "agreementId": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "userId": "d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "deviceId": "00000000-0000-0000-0000-000000000000",
+            "deviceDisplayName": null,
+            "deviceOSType": null,
+            "deviceOSVersion": null,
+            "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
+            "userDisplayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
+            "expirationDateTime": null,
+            "state": "accepted"
+        }
+    ]
 }
 ```
 

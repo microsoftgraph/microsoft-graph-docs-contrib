@@ -75,6 +75,15 @@ Namespace: microsoft.graph.callRecords
 | tunnel
 | unknownFutureValue
 
+### networkTransportProtocol values
+
+| Member             |
+|:-------------------|
+| unknown            |
+| udp                |
+| tcp                |
+| unknownFutureValue |
+
 ### productFamily values
 
 | Member
@@ -84,6 +93,7 @@ Namespace: microsoft.graph.callRecords
 | skypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### serviceRole values
 
@@ -153,6 +163,59 @@ Namespace: microsoft.graph.callRecords
 |:---|
 |microsoft|
 |operator|
+
+### audioCodec values 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| invalid            |
+| cn                 |
+| pcma               |
+| pcmu               |
+| amrWide            |
+| g722               |
+| g7221              |
+| g7221c             |
+| g729               |
+| multiChannelAudio  |
+| muchv2             |
+| opus               |
+| satin              |
+| satinFullband      |
+| rtAudio8           |
+| rtAudio16          |
+| silk               |
+| silkNarrow         |
+| silkWide           |
+| siren              |
+| xmsRta             |
+| unknownFutureValue |
+
+### videoCodec values 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| invalid            |
+| av1                |
+| h263               |
+| h264               |
+| h264s              |
+| h264uc             |
+| h265               |
+| rtvc1              |
+| rtVideo            |
+| xrtvc1             |
+| unknownFutureValue |
+
+### pstnUserBlockMode values 
+
+|Member|
+|:---|
+|blocked|
+|unblocked|
+|unknownFutureValue|
 
 <!--
 {

@@ -4,7 +4,7 @@ description: " for example, `privilegedAccess/azureResources` represents PIM man
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "rkarim-ms"
 ---
 
 # privilegedAccess resource type

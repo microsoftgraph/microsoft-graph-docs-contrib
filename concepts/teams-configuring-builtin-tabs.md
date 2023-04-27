@@ -1,23 +1,20 @@
 ---
-title: "Configuring the built-in tab types in Microsoft Teams"
-description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs"
+title: "Configure the built-in tab types in Microsoft Teams"
+description: "You can use the Microsoft Graph API to create a Microsoft Teams tab. Learn how to get the app ID and appropriate values for the various built-in tab types."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
-# Configuring the built-in tab types in Microsoft Teams
+# Configure the built-in tab types in Microsoft Teams
 
-To [create](/graph/api/channel-post-tabs?view=graph-rest-1.0) or [configure](/graph/api/channel-patch-tabs?view=graph-rest-1.0) a Microsoft Teams tab using Microsoft Graph APIs, 
-you need to know the `teamsAppId` of the app, and the
-`entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
-This article explains how to get those values for the built-in tab types.
+To [create](/graph/api/channel-post-tabs) or [configure](/graph/api/channel-patch-tabs) a Microsoft Teams tab using the Microsoft Graph API, you need to know the `teamsAppId` of the app, and the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app. This article explains how to get those values for the built-in tab types.
 
 ## Custom tabs
 
 To use Microsoft Graph to configure a tab associated with a [tab provider](/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
 identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
-that the app's [configuration UI provides to Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
+that the app's [configuration UI provides to Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true),
 and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
 
 The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
@@ -48,8 +45,8 @@ The following is the configuration.
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| contentUrl | string      | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| entityId   | string      | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get). |
+| contentUrl | string      | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get). |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                       |
 
@@ -137,4 +134,11 @@ Configuration is not supported.
 
 For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
-If you want to configure the tab, consider using a Website tab.
+
+## SharePoint Framework-based tabs
+
+Custom tabs built using SharePoint Framework can be created using Microsoft Graph, but configuration is not supported.
+
+## See also
+
+- [Microsoft Teams API overview](teams-concept-overview.md)

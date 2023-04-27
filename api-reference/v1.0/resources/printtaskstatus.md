@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents the current execution status of a [printTask](printtask.md). 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|printTaskProcessingState|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
 |description|String|A human-readable description of the current processing state of the [printTask](printtask.md).|
+|state|printTaskProcessingState|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
 
 ### printTaskProcessingState values
 

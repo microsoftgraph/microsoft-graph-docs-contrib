@@ -1,7 +1,7 @@
 ---
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9086
+Content-Length: 9630
 
 {
   "value": {
@@ -119,7 +119,16 @@ Content-Length: 9086
       "esimIdentifier": "Esim Identifier value",
       "systemManagementBIOSVersion": "System Management BIOSVersion value",
       "tpmManufacturer": "Tpm Manufacturer value",
-      "tpmVersion": "Tpm Version value"
+      "tpmVersion": "Tpm Version value",
+      "wiredIPv4Addresses": [
+        "Wired IPv4Addresses value"
+      ],
+      "batteryLevelPercentage": 7.333333333333333,
+      "residentUsersCount": 2,
+      "productName": "Product Name value",
+      "deviceLicensingStatus": "licenseRefreshPending",
+      "deviceLicensingLastErrorCode": 12,
+      "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -253,7 +262,8 @@ Content-Length: 9086
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
       "clientIdentifier": "Client Identifier value",
-      "isBlocked": true
+      "isBlocked": true,
+      "clientVersion": "Client Version value"
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
@@ -272,10 +282,9 @@ Content-Length: 9086
         "updatable": true
       }
     ],
-    "enrollmentProfileName": "Enrollment Profile Name value"
+    "enrollmentProfileName": "Enrollment Profile Name value",
+    "bootstrapTokenEscrowed": true,
+    "deviceFirmwareConfigurationInterfaceManaged": true
   }
 }
 ```
-
-
-

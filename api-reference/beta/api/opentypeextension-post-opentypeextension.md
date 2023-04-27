@@ -1,5 +1,5 @@
 ---
-title: "Create open extension"
+title: "Create openTypeExtension"
 description: "Create an open extension (openTypeExtension object) and add custom properties"
 ms.localizationpriority: medium
 author: "dkershaw10"
@@ -7,14 +7,15 @@ doc_type: apiPageType
 ms.prod: "extensions"
 ---
 
-# Create open extension
+# Create openTypeExtension
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
-in a new or existing instance of a supported resource.
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource. You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation, except for specific resources. See [known limitations of open extensions](/graph/known-issues#extensions) for more information.
 
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
@@ -34,9 +35,13 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 
@@ -46,13 +51,15 @@ Use the same REST request that you use to create the instance.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/events
-POST /users/{id|userPrincipalName}/messages
-POST /groups/{id}/events
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/events
+POST /users/{userId|userPrincipalName}/messages
+POST /groups/{userId}/events
+POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
+POST /users/{userId|userPrincipalName}/contacts
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes
@@ -66,30 +73,26 @@ Identify the resource instance in the request and do a `POST` to the **extension
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeunits/{id}/extensions
-POST /devices/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /groups/{id}/extensions
-POST /groups/{id}/events/{id}/extensions
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /organization/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
+POST /administrativeunits/{administrativeUnitId}/extensions
+POST /devices/{deviceId}/extensions
+POST /users/{userId|userPrincipalName}/events/{eventId}/extensions
+POST /groups/{groupId}/extensions
+POST /groups/{groupId}/events/{eventId}/extensions
+POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
+POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /organization/{organizationId}/extensions
+POST /users/{userId|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 ```
 
 >**Note:** This syntax shows some common ways to identify a resource instance, in order to create an
 extension in it. All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
-
-## Path parameters
-
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## Request headers
 
@@ -107,7 +110,7 @@ primitive types.
 | Name       | Value |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | Unique string |
 
 When creating an extension in a _new_ resource instance, in addition to the
 new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.
@@ -176,20 +179,28 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 1
 
@@ -255,8 +266,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -287,7 +296,8 @@ extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_2"
+  "name": "post_opentypeextension_2",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
@@ -301,20 +311,28 @@ Content-Type: application/json
   "expirationDate" : "2015-12-03T10:00:00.000Z"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 2
 
@@ -361,7 +379,8 @@ extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_3"
+  "name": "post_opentypeextension_3",
+  "sampleKeys": ["f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
@@ -375,20 +394,28 @@ Content-type: application/json
   "expirationDate" : "2015-07-03T13:04:00.000Z"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 3
 
@@ -430,7 +457,8 @@ the **body** of the new post, and the following data for the new extension:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_4"
+  "name": "post_opentypeextension_4",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6", "AAQkADJizZJpEWwqDHsEpV_KA==", "AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
@@ -458,20 +486,28 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 4
 
@@ -505,7 +541,8 @@ in turn contains the **body** of the new post, and the following data for the ex
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_opentypeextension_5"
+  "name": "post_opentypeextension_5",
+  "sampleKeys": ["37df2ff0-0de0-4c33-8aee-75289364aef6"]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
@@ -540,20 +577,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-opentypeextension-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-opentypeextension-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-opentypeextension-5-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 5
 
@@ -578,7 +623,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

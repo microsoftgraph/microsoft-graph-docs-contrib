@@ -33,6 +33,7 @@ See [Education rubric overview](/graph/education-rubric-overview) for more infor
 |description|[itemBody](itembody.md)|The description of this rubric.|
 |displayName|String|The name of this rubric.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|The grading type of this rubric -- null for a no-points rubric, or [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) for a points rubric.|
+|id|String|Unique identifier for the rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
 |lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |levels|[rubricLevel](rubriclevel.md) collection|The collection of levels making up this rubric.|
@@ -62,6 +63,7 @@ The following is a JSON representation of the resource.
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
+  "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "levels": [{"@odata.type": "microsoft.graph.rubricLevel"}],

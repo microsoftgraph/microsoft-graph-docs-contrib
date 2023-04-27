@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "dkershaw10"
 ms.prod: "identity-and-access"
 doc_type: conceptualPageType
+ms.date: 07/07/2022
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph
@@ -34,7 +35,7 @@ The following table lists some common use cases for Azure AD resources.
 | Activate directory roles in an Azure AD tenant and manage user memberships in directory roles. Directory roles are also known as administrator roles. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) |
 | Apply predefined group settings across a tenant or to individual resource instances. Group settings control behaviors like blocked word lists for group display names, whether guest users are allowed to be group owners, and much more. | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | **Manage devices** | | |
-| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/azure/active-directory/active-directory-device-registration-overview).<br/><br/>[What is InTune?](/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Enroll devices for management in InTune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
+| Manage devices registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication. | [device](../resources/device.md) | [Getting started with Azure Active Directory device registration](/mem/intune/enrollment/).<br/><br/>[What is Intune?](/mem/intune/fundamentals/what-is-intune)<br/><br/>[Enroll devices for management in Intune](/mem/intune/enrollment/) |
 | **Partner tenant management** | | |
 | Get information about partnerships with customer tenants.<br/><br/>**Note:** This applies to partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of the [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs. | [contract](../resources/contract.md) | [Call Microsoft Graph from a Cloud Solution Provider application](/graph/auth-cloudsolutionprovider) |
 | Manage domains associated with a tenant. Domain operations enable registrars to automate domain association for services such as Microsoft 365. | [domain](../resources/domain.md) | [Add a custom domain name to Azure Active Directory](/azure/active-directory/active-directory-domains-add-azure-portal) |
@@ -44,7 +45,7 @@ The following table lists some common use cases for Azure AD resources.
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 | Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbranding.md) | [Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding)|
 | **Consent requests** | | |
-| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-root.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-overview.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

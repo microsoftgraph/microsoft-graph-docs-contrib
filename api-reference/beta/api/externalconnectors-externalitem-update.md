@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -81,7 +81,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
-  "@odata.type": "microsoft.graph.externalConnectors.acl"
+  "sampleKeys": ["contosohr", "TSP228082938"]
 }-->
 
 ```http
@@ -94,30 +94,32 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-externalitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 <!-- markdownlint-disable MD024 -->
 ### Response
@@ -142,7 +144,6 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
@@ -151,7 +152,6 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
@@ -170,5 +170,3 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

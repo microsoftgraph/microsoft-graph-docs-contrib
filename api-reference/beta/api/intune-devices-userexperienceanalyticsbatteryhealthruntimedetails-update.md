@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsBatteryHealthRuntimeDetails"
 description: "Update the properties of a userExperienceAnalyticsBatteryHealthRuntimeDetails object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsBatteryHealthRuntimeDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |batteryRuntimeGood|Int32|Number of devices  whose active runtime is greater than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimeFair|Int32|Number of devices whose active runtime is greater than 3 hours but lesser than 5 hours. Valid values -2147483648 to 2147483647|
 |batteryRuntimePoor|Int32|Number of devices whose active runtime is lesser than 3 hours. Valid values -2147483648 to 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Recorded date time of this runtime details instance.|
 
 
 
@@ -66,14 +67,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 Content-type: application/json
-Content-length: 200
+Content-length: 265
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -82,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 249
+Content-Length: 314
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthRuntimeDetails",
@@ -90,9 +92,7 @@ Content-Length: 249
   "activeDevices": 13,
   "batteryRuntimeGood": 2,
   "batteryRuntimeFair": 2,
-  "batteryRuntimePoor": 2
+  "batteryRuntimePoor": 2,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
-
-
-

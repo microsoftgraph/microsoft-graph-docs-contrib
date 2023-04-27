@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = new Event
+var requestBody = new Event
 {
 	OriginalStartTimeZone = "originalStartTimeZone-value",
 	OriginalEndTimeZone = "originalEndTimeZone-value",
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
+		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	},
 	Recurrence = null,
 	Uid = "iCalUId-value",
@@ -22,14 +22,12 @@ var @event = new Event
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 	IsReminderOn = true,
 	HideAttendees = false,
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Red category"
-	}
+		"Red category",
+	},
 };
+var result = await graphClient.Me.Events["{event-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Events["{event-id}"]
-	.Request()
-	.UpdateAsync(@event);
 
 ```

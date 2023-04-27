@@ -44,6 +44,7 @@ The values of `start` and `end` are interpreted using the timezone offset specif
 This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
@@ -52,7 +53,8 @@ This method also supports some of the [OData query parameters](/graph/query-para
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.
+
+If successful, this method returns a `200 OK` response code and a collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -62,29 +64,38 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bookingbusiness_getcalendarview"
+  "name": "bookingbusiness_getcalendarview",
+  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-getcalendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-getcalendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusiness-getcalendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getcalendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response. 
@@ -102,17 +113,53 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "anonymousJoinWebUrl": null,
             "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
             "customerPhone": "213-555-0156",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
+                    "name": "Adele Vance",
+                    "emailAddress": "adelev@proseware.com",
+                    "phone": "213-555-0156",
+                    "notes": null,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,
@@ -122,11 +169,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1003",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",
@@ -201,6 +248,42 @@ Content-type: application/json
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+                    "name": "Jordan Miller",
+                    "emailAddress": "jordanm@contoso.com",
+                    "phone": "213-555-0199",
+                    "notes": null,
+                    "smsNotificationsEnabled": false,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,
@@ -210,11 +293,11 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
+            "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
             "invoiceUrl": "theInvoiceUrl",

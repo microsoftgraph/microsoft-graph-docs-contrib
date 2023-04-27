@@ -1,7 +1,7 @@
 ---
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |
@@ -52,6 +52,10 @@ If the request contains an `Accept-Language` HTTP header, the `content` of `join
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
+> [!CAUTION]
+>
+> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported.
+
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
@@ -62,6 +66,8 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 The following example creates an online meeting with a user token.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,25 +84,36 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onlinemeeting-user-token-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-onlinemeeting-user-token-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-onlinemeeting-user-token-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -112,35 +129,40 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.onlineMeeting",
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4053e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
   "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "2425999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+    "tollNumber": "+1252578",
+    "tollFreeNumber": "+18588",
+    "ConferenceId": "24999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12faf--bc69-b8de580ba330?id=24299"
   },
   "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "threadId": "19:meeting_M2IzYzczNTItYzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "id": "MSpkYzE3NjctYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-87cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
       "identity": {
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "id": "550fae72-d25-868c-373732c2704f",
           "displayName": "Heidi Steen"
         }
       },
       "upn": "upn-value"
     }
   },
-  "subject": "User Token Meeting"
+  "subject": "User Token Meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
 }
 ```
 > [!NOTE]
@@ -161,8 +183,10 @@ Content-Type: application/json
 }-->
 #### Request
 
+The following is an example of a request.
+
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
 
 {
@@ -179,6 +203,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here has been shortened for readability. 
 
@@ -205,9 +231,9 @@ Content-Type: application/json
       "role": "producer",
       "identity": {
         "user": {
-          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "id": "dc17674c-81d9-4ada442e4622",
           "displayName": null,
-          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "tenantId": "909c6581-5130cb3582cde38",
           "identityProvider": "AAD"
         }
       }
@@ -218,9 +244,9 @@ Content-Type: application/json
         "role": "producer",
         "identity": {
           "user": {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "id": "dc17674c-81d9--8f6a442e4622",
             "displayName": null,
-            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "tenantId": "909c6581-51f3-fcb3582cde38",
             "identityProvider": "AAD"
           }
         }
@@ -232,9 +258,9 @@ Content-Type: application/json
         "role": "producer",
         "identity": {
           "user": {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "id": "dc17674c-81d9-4adf6a442e4622",
             "displayName": null,
-            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "tenantId": "909c6581-5f3-fcb3582cde38",
             "identityProvider": "AAD"
           }
         }
@@ -246,11 +272,253 @@ Content-Type: application/json
     "scope": "organization",
     "isDialInBypassEnabled": false
   },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  },
   "isBroadcast": true,
   "broadcastSettings": {
     "allowedAudience": "organization",
     "isRecordingEnabled": true,
     "isAttendeeReportEnabled": true
+  }
+}
+```
+
+### Example 3: Create an online meeting that requires a passcode
+
+The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+
+#### Request
+
+The following is an example of a request.
+
+>**Note:** The passcode is automatically generated and a custom passcode is not supported.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-with-passcode"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": true
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-with-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-online-meeting-with-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-online-meeting-with-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-online-meeting-with-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-online-meeting-with-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-with-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4086-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12525478",
+    "tollFreeNumber": "+18690588",
+    "ConferenceId": "2999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22fa0-499f-435b-bc69-b8dea330?id=2999"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b523985568b776357c1dd79%40thread.skype",
+    "messageId": "15629053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3iMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%22f8bf-86f1-41af-91ab-2011db47%22%2c%22Oid%22%3a%20fae72-d251-43ec-86c-377304f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "5e72-d251-43ec-868c-3732704f",
+          "tenantId": "72fbf-86f1-41af-91ab-2d71db47",
+          "displayName": "Mario Rogers"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": true,
+    "joinMeetingId": "1234567890",
+    "passcode": "123abc"
+  }
+}
+```
+
+### Example 4: Create an online meeting that does not require a passcode
+
+When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+
+#### Request
+
+The following is an example of a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-online-meeting-without-passcode"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-without-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-online-meeting-without-passcode-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-online-meeting-without-passcode-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-online-meeting-without-passcode-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-online-meeting-without-passcode-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-without-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+OR
+
+```http
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel."
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f4053f86-17cc-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12525478",
+    "tollFreeNumber": "+186390588",
+    "ConferenceId": "24999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-45b-bc69-b8de580ba330?id=2425999"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-1ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-c-373732c2704f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ecc-373732c2704f",
+          "tenantId": "72f98841af-91ab-2d7cd011db47",
+          "displayName": "Tyler Stein"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   }
 }
 ```

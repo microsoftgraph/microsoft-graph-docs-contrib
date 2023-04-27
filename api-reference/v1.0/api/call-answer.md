@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "ananmishr"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                        |
-| Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
+| Delegated (work or school account)     | Not supported.                       |
+| Delegated (personal Microsoft account) | Not supported.                       |
+| Application     | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All     |
 
 > **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
@@ -43,10 +43,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+| callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
-|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
-| participantCapacity | Int | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
+| callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
+| mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
+| participantCapacity | Int32 | The number of participant that the application can handle for the call, for [Teams policy-based recording](/microsoftteams/teams-recording-policy) scenario.                                                     |
 
 ## Response
 This method returns a `202 Accepted` response code.
@@ -54,7 +55,7 @@ This method returns a `202 Accepted` response code.
 ## Examples
 The following example shows how to call this API.
 
-##### Request
+#### Request
 The following example shows the request.
 
 
@@ -77,32 +78,42 @@ Content-Length: 211
   "acceptedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "participantCapacity": 200
 }
 ```
-This blob is the serialized configuration for media sessions which is generated from the media SDK.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
-Here is an example of the response. 
+#### Response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +125,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,8 +177,10 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-service-hosted-media"
@@ -195,7 +208,33 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-service-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-service-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-answer-service-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-service-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-answer-service-hosted-media-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -204,7 +243,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -233,8 +272,9 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -263,10 +303,11 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
 ### Example 2: Answer VOIP call with application hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -320,7 +361,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -341,26 +382,34 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/call-answer-app-hosted-media-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -370,7 +419,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -399,8 +448,9 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -429,6 +479,55 @@ Content-Type: application/json
   ]
 }
 ```
+>**Note:** Call establishing/established notifications may arrive out of order.
+
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
 
 ### Example 3: Answer a policy-based recording call
 
@@ -438,7 +537,7 @@ The join information can be found under the **botData** property. The bot can th
 When `participantCapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](../resources/participantJoiningNotification.md) instead of
 new incoming call notification, until number of participants that current call instance is handling has reached the number specified in `participantCapacity`.
 
-Here is an example of the incoming call notification that a bot would recieve in this case.
+The following is an example of the incoming call notification that a bot would receive in this case.
 
 ```json
 {

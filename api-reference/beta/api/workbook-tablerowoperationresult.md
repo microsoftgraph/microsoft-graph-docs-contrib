@@ -39,7 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## Function parameters
@@ -67,16 +68,39 @@ If successful, this function returns a `200 OK` response code and a [workbookTab
 
 ### Request
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b"],
-  "name": "workbook_tablerowoperationresult"
+  "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b", "01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ"],
+  "name": "workbook_tablerowoperationresult_e1"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
+GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workbook-tablerowoperationresult-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workbook-tablerowoperationresult-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbook-tablerowoperationresult-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workbook-tablerowoperationresult-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workbook-tablerowoperationresult-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

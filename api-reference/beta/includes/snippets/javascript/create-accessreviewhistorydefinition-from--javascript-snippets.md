@@ -20,7 +20,7 @@ const accessReviewHistoryDefinition = {
     'notNotified'
   ],
   reviewHistoryPeriodStartDateTime: '2021-01-01T00:00:00Z',
-  reviewHistoryPeriodEndDateTime: '2021-04-05T00:00:00Z',
+  reviewHistoryPeriodEndDateTime: '2021-04-30T23:59:59Z',
   scopes: [
     {
       '@odata.type': '#microsoft.graph.accessReviewQueryScope',

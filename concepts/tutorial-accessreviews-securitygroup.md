@@ -1,62 +1,56 @@
 ---
-title: "Tutorial: Use the access reviews API to review access to your security groups"
-description: "Use the access reviews API to review access to your security groups"
+title: "Review access to your security groups using the access reviews API in Microsoft Graph"
+description: "Learn how to use the access reviews API to review access to a security group in your Azure AD tenant and test API calls before you automate them into scripts or apps."
 author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
+ms.date: 11/01/2022
 ---
 
-# Tutorial: Use the access reviews API to review access to your security groups
+# Review access to your security groups using the access reviews API in Microsoft Graph
 
-In this tutorial, you will use Graph Explorer to review access to a security group in your tenant.
+The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most efficient and effective methods to manage access privileges for principals to other resources is through Azure AD security groups. For example, hundreds of users can be assigned to a security group and the security group assigned access to a folder. Using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
 
-You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
+Suppose you use Azure AD security groups to assign identities (also called *principals*) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
 
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
+This tutorial guides you to use the access reviews API to review access to a security group in your Azure AD tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Log in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-  + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You will log in later in this tutorial.
-+ The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
-
-To consent to the required permissions in Graph Explorer:
-1. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
+  + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
++ Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
    
-   ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
-
-2. Scroll through the list of permissions to these permissions:
-   + AccessReview (3), expand and then select **AccessReview.ReadWrite.All**.
-   + Group (2), expand and then select **Group.ReadWrite.All**.
-  
-    Select **Consent**, and in the pop window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
+>[!NOTE]
+>The response objects shown in this tutorial might be shortened for readability.
+>
+> Review of Privileged Access Groups will only assign active owners as the reviewers. Eligible owners are not included. At least one fallback reviewer is required for a Privileged Access Groups review. If there are no active owners when the review begins, the fallback reviewers will be assigned to the review.
    
-   ![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
-
 ## Step 1: Create test users in your tenant
 
-Create three new test users by running the request below three times, changing the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record their **id**s.
+Create three new test users by running the request below three times, changing the values of the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record the IDs of the three new test users.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-createUser"
 }-->
 ```http
-POST /users
+POST https://graph.microsoft.com/v1.0/users
 Content-Type: application/json
 
 {
     "accountEnabled": true,
-    "displayName": "Aline Dupuy",
-    "mailNickname": "AlineD",
-    "userPrincipalName": "AlineD@contoso.com",
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@Contoso.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": true,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -64,7 +58,35 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-createuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-createuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-createuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-createuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-createuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-createuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,59 +98,85 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "id": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
-    "displayName": "Aline Dupuy",
-    "mailNickname": "AlineD",
-    "userPrincipalName": "AlineD@contoso.com",
-    "userType": "Member"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+    "displayName": "Adele Vance",
+    "userPrincipalName": "AdeleV@Contoso.com"
 }
 ```
 
 ## Step 2: Create a security group, assign owners, and add members
 
-Create a security group named **Building security group** that is the target of the access reviews in this tutorial. Assign to this group two group owners and two members. These members will be the subject of review by the group owners.
+Create a security group named **Building security** that is the target of the access reviews in this tutorial. Assign to this group one group owner and two members.
 
 ### Request
 
-In this call, replace:
-+ `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the **id**s of your two group owners.
-  + One of the **id**s belongs to one of the users you created in Step 1.
-  + The other is your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
-+ `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the **id**s of you two group members. These are the other two members you created in Step 1.
+From the previous step, you created three test users. One of the users will be the group owner while the other two will be group members.
 
+In this call, replace:
++ `d3bcdff4-4f80-4418-a65e-7bf3778c5dca` with the ID of your group owner.
++ `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` and `bf59c5ba-5304-4c9b-9192-e5a4cb8444e7` with the IDs of the two group members.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-creategroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups
+POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-    "description": "Building security group",
-    "displayName": "Building security group",
+    "description": "Building security",
+    "displayName": "Building security",
     "groupTypes": [],
     "mailEnabled": false,
     "mailNickname": "buildingsecurity",
     "securityEnabled": true,
     "owners@odata.bind": [
-        "https://graph.microsoft.com/beta/users/010b2de0-0ed4-4ece-bfa2-22fff71d0497",
-        "https://graph.microsoft.com/beta/users/b828cc0e-4240-46ed-bb25-888744487e2d"
+        "https://graph.microsoft.com/beta/users/d3bcdff4-4f80-4418-a65e-7bf3778c5dca"
     ],
     "members@odata.bind": [
-        "https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab",
-        "https://graph.microsoft.com/beta/users/859924d0-7115-422a-9ee8-ea8c0c014707"
+        "https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+        "https://graph.microsoft.com/beta/users/bf59c5ba-5304-4c9b-9192-e5a4cb8444e7"
     ]
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-creategroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-creategroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-creategroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-creategroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-creategroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-creategroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "name": "create_group"
+  "@odata.type": "microsoft.graph.group"
 } -->
 
 ```http
@@ -136,58 +184,63 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-    "id": "825f1b5e-6fb2-4d9a-b393-d491101acc0c",
-    "displayName": "Building security group",
-    "groupTypes": []
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
+    "description": "Building security",
+    "displayName": "Building security",
+    "mailNickname": "buildingsecurity",
+    "securityEnabled": true
 }
 ```
-From the response, record the **id** of the new group to use it later in this tutorial.
+
+From the response, record the ID of the new group to use it later in this tutorial.
 
 ## Step 3: Create an access review for the security group
 
-Create an access review for members of the security group, using the following settings:
-+ It is a self-reviewing access review. In this case, users under review will self-attest to their need for access to the group.
-+ This is a one-time access review. In this case, once access is granted, the user does not need to self-attest again within the access review period.
-+ The review scope is limited to members of **Building security group**.
-
 ### Request
 
-In this call, replace the following:
-+ `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security group**.
-+ The scope specifies that the review is applied to all group members of the the **Building security group**. For more options for configuring the scope, see the [See also](#see-also) section.
-+ Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.
+In this call, replace the following values:
++ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the **Building security** group. The scope specifies that the review is applied to all members of the **Building security** group. For more options for configuring the scope, see the [See also](#see-also) section.
++ Value of **startDate** with today's date and value of **endDate** with a date five days from the start date.
 
-By failing to specify the value of the **reviewers** property, this access review is configured as self-reviewing with the members as the reviewers.
+The access review has the following settings:
 
++ It's a self-review as inferred when you don't specify a value for the **reviewers** property. Therefore, each group member will self-attest to their need to maintain access to the group.
++ The scope of the review is members (direct and indirect) of the **Building security** group.
++ The reviewer must provide justification for why they need to maintain access to the group.
++ The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires. The `Deny` decision removes the group members from the group.
++ It's a one-time access review that ends after five days. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
++ The principals who are defined in the scope of the review will receive email notifications and reminders prompting them to self-attest to their need to maintain access.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {
-    "displayName": "One-time self-review for members of Building security group",
-    "descriptionForAdmins": "One-time self-review for members of Building security group",
-    "descriptionForReviewers": "One-time self-review for members of Building security group",
+    "displayName": "One-time self-review for members of Building security",
+    "descriptionForAdmins": "One-time self-review for members of Building security",
+    "descriptionForReviewers": "One-time self-review for members of Building security",
     "scope": {
-        "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c/transitiveMembers",
+        "query": "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers",
         "queryType": "MicrosoftGraph"
     },
     "instanceEnumerationScope": {
-        "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c",
+        "query": "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
         "queryType": "MicrosoftGraph"
     },
-    "reviewers": [],
     "settings": {
         "mailNotificationsEnabled": true,
         "reminderNotificationsEnabled": true,
         "justificationRequiredOnApproval": true,
-        "defaultDecisionEnabled": false,
+        "defaultDecisionEnabled": true,
         "defaultDecision": "Deny",
-        "instanceDurationInDays": 0,
+        "instanceDurationInDays": 5,
         "autoApplyDecisionsEnabled": true,
         "recommendationsEnabled": true,
         "recurrence": {
@@ -196,18 +249,39 @@ Content-type: application/json
                 "type": "numbered",
                 "numberOfOccurrences": 0,
                 "recurrenceTimeZone": null,
-                "startDate": "2021-02-09",
-                "endDate": "2022-12-31"
+                "startDate": "2022-02-11",
+                "endDate": "2022-02-16"
             }
-        },
-        "applyActions": [
-            {
-                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-            }
-        ]
+        }
     }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-create-accessreviewscheduledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 <!-- {
@@ -221,28 +295,31 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
-    "id": "d7286a17-3a01-406a-b872-986b6b40317c",
-    "displayName": "One-time self-review for members of Building security group",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
+    "id": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
+    "displayName": "One-time self-review for members of Building security",
+    "createdDateTime": null,
+    "lastModifiedDateTime": null,
     "status": "NotStarted",
+    "descriptionForAdmins": "One-time self-review for members of Building security",
+    "descriptionForReviewers": "One-time self-review for members of Building security",
     "createdBy": {
-        "id": "b828cc0e-4240-46ed-bb25-888744487e2d",
+        "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
+        "type": null,
+        "userPrincipalName": "admin@Contoso.com"
     },
-    "scope": {
-        "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c/transitiveMembers",
-        "queryType": "MicrosoftGraph"
-    },
-    "instanceEnumerationScope": {
-        "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c",
-        "queryType": "MicrosoftGraph"
-    },
+    "scope": {},
+    "instanceEnumerationScope": {},
     "reviewers": [],
-    "backupReviewers": [],
+    "fallbackReviewers": [],
     "settings": {
-        "defaultDecisionEnabled": false,
+        "mailNotificationsEnabled": true,
+        "reminderNotificationsEnabled": true,
+        "justificationRequiredOnApproval": true,
+        "defaultDecisionEnabled": true,
         "defaultDecision": "Deny",
+        "instanceDurationInDays": 5,
         "autoApplyDecisionsEnabled": true,
         "recommendationsEnabled": true,
         "recurrence": {
@@ -251,38 +328,65 @@ Content-type: application/json
                 "type": "numbered",
                 "numberOfOccurrences": 0,
                 "recurrenceTimeZone": null,
-                "startDate": "2021-02-09",
-                "endDate": "2022-12-31"
+                "startDate": "2022-02-11",
+                "endDate": "2022-02-16"
             }
         },
-        "applyActions": [
-            {
-                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-            }
-        ]
-    }
+        "applyActions": []
+    },
+    "additionalNotificationRecipients": []
 }
 ```
 
+The status of the above access review is marked as **NotStarted**. You may retrieve the access review (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) to monitor the status and when it's marked as **InProgress**, then instances have been created for the access review and decisions can be posted. You can also retrieve the access review to see the full settings of the access review.
+
 ## Step 4: List instances of the access review
 
-The following query lists all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose **id** is the same as the access definition’s **id**.
+Once the **status** of the access review is marked as `InProgress`, run the following query to list all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance with an ID like the schedule definition's ID.
 
 ### Request
 
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition returned in Step 3.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
 }-->
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-accessreviewinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-list-accessreviewinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-list-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-list-accessreviewinstance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-list-accessreviewinstance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-list-accessreviewinstance-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-In this response, the **status** of the access review instance is `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be `Completed`.
+In this response, the **status** of the instance is `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be `Completed`.
 
 <!-- {
   "blockType": "response",
@@ -295,41 +399,151 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('d7286a17-3a01-406a-b872-986b6b40317c')/instances",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2d56c364-0695-4ec6-8b92-4c1db7c80f1b')/instances",
     "value": [
         {
-            "id": "d7286a17-3a01-406a-b872-986b6b40317c",
-            "startDateTime": "2021-02-10T15:09:40.153Z",
-            "endDateTime": "2022-12-31T08:00:00Z",
+            "id": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
+            "startDateTime": "2022-02-11T17:35:25.24Z",
+            "endDateTime": "2022-02-16T08:00:00Z",
             "status": "InProgress",
             "scope": {
-                "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c/transitiveMembers",
-                "queryType": "MicrosoftGraph"
-            }
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers/microsoft.graph.user",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
+            },
+            "reviewers": [],
+            "fallbackReviewers": []
         }
     ]
 }
 ```
 
-## Step 5: Get decisions
+## Step 5: Who was contacted for the review?
 
-You are interested in the decisions taken for the instance of the access review.
+You can confirm that all members of the **Building security** group were contacted to post their review decisions for this instance of the access review.
 
 ### Request
 
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition.
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_contactedReviewers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/contactedReviewers
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-contactedreviewers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-list-contactedreviewers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-list-contactedreviewers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-list-contactedreviewers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-list-contactedreviewers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-list-contactedreviewers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following response shows that the two members of the **Building security** group were notified of their pending review.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewReviewer",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2d56c364-0695-4ec6-8b92-4c1db7c80f1b')/instances('2d56c364-0695-4ec6-8b92-4c1db7c80f1b')/contactedReviewers",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com",
+            "createdDateTime": "2022-02-11T17:35:34.4092545Z"
+        },
+        {
+            "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
+            "displayName": "Alex Wilber",
+            "userPrincipalName": "AlexW@Contoso.com",
+            "createdDateTime": "2022-02-11T17:35:34.4092545Z"
+        }
+    ]
+}
+```
+
+## Step 6: Get decisions
+
+You're interested in the decisions taken for the instance of the access review.
+
+### Request
+
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and the instance.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
 }-->
-```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-list-accessreviewinstancedecisionitem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-The following response shows the decision taken for the instance of the review.
+The following response shows the decisions taken on the instance of the review. Because **Building security** has two members, two decision items are expected.
 
 <!-- {
   "blockType": "response",
@@ -342,151 +556,264 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('d7286a17-3a01-406a-b872-986b6b40317c')/instances('d7286a17-3a01-406a-b872-986b6b40317c')/decisions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2d56c364-0695-4ec6-8b92-4c1db7c80f1b')/instances('2d56c364-0695-4ec6-8b92-4c1db7c80f1b')/decisions",
     "@odata.count": 2,
     "value": [
         {
-            "id": "1c74f500-9082-4dfe-80ac-784a6edb71d7",
-            "accessReviewId": "d7286a17-3a01-406a-b872-986b6b40317c",
+            "id": "4db68765-472d-4aa2-847a-433ea94bcfaf",
+            "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
+            "reviewedDateTime": null,
             "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
+            "resourceLink": "https://graph.microsoft.com/v1.0/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
             "reviewedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
+                "type": null,
                 "userPrincipalName": ""
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
+                "type": null,
                 "userPrincipalName": ""
             },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
-                "userDisplayName": "Alex Wilber",
-                "userPrincipalName": "AlexW@contoso.com"
+            "resource": {
+                "id": "eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
+                "displayName": "Building security",
+                "type": "group"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "43b12b0c-ee2c-4257-96fe-505d823e06ab",
+                "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
                 "displayName": "Alex Wilber",
-                "userPrincipalName": "AlexW@contoso.com"
+                "type": "user",
+                "userPrincipalName": "AlexW@Contoso.com",
+                "lastUserSignInDateTime": "2/11/2022 5:31:37 PM +00:00"
             }
         },
         {
-            "id": "7744be81-7d17-40c9-8fd3-c9072b1ccace",
-            "accessReviewId": "d7286a17-3a01-406a-b872-986b6b40317c",
+            "id": "c7de8fba-4d6a-4fab-a659-62ff0c02643d",
+            "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
+            "reviewedDateTime": null,
             "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+            "resourceLink": "https://graph.microsoft.com/v1.0/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
             "reviewedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
+                "type": null,
                 "userPrincipalName": ""
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
+                "type": null,
                 "userPrincipalName": ""
             },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "859924d0-7115-422a-9ee8-ea8c0c014707",
-                "userDisplayName": "Allan Deyoung",
-                "userPrincipalName": "AllanD@contoso.com"
+            "resource": {
+                "id": "eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
+                "displayName": "Building security",
+                "type": "group"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "859924d0-7115-422a-9ee8-ea8c0c014707",
-                "displayName": "Allan Deyoung",
-                "userPrincipalName": "AllanD@contoso.com"
+                "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+                "displayName": "Adele Vance",
+                "type": "user",
+                "userPrincipalName": "AdeleV@Contoso.com",
+                "lastUserSignInDateTime": "2/11/2022 4:58:13 PM +00:00"
             }
         }
     ]
 }
 ```
 
-From the call, the **decision** property has the value of `NotReviewed`. This is because none of the two members has completed their self-attestation. Follow step 6 to learn how each member can self-attest to their need for access review.
+From the call, the **decision** property has the value of `NotReviewed` because the group members haven't completed their self-attestation. Follow Step 7 to learn how each member can self-attest to their need for access review.
 
-## Step 6: Self-review your pending access
+## Step 7: Self-review a pending access decision
 
-In Step 3, you configured the access review as a self-reviewing. This means that both members of **Building security group** must self-attest to their need to maintain access to the group. You will complete this step as one of the two members of Building security group.
+In Step 3, you configured the access review as self-reviewing. This configuration requires that both members of the **Building security** group self-attest to their need to maintain their access to the group.
 
-In this step, you will:
-1. List your pending access review instances.
-2. Complete the access review self-attestation process.
+>[!NOTE]
+>Complete this step as one of the two members of the **Building security** group.
 
-Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and log in as one of the two members of **Building security group**. By doing so, you will not interrupt your current session as a user in the global administrator role. Alternatively, you can interrupt your current session by logging out of Graph Explorer and logging back in as one of the two group members.
+In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, you'll let the default decisions be applied to their access review.
 
-### List your pending access review instances
+Start a new **incognito**, **anonymous**, or **InPrivate browsing** browser session, and sign in as one of the two members of the **Building security** group. By doing so, you won't interrupt your current administrator session. We'll sign in as Adele Vance. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
 
-In the incognito browser session and in Graph Explorer, run the following query to list your pending access review instances:
+### Method 1: Use the access reviews API to self-review pending access
 
-#### Request
+#### List your access reviews decision items
+
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition.
+
+##### Request
 
 ```http
-GET /me/pendingAccessReviewInstances
+GET https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-#### Response
-From the response below, user Alex Wilber of **id** `43b12b0c-ee2c-4257-96fe-505d823e06ab` has 1 pending access review to self-attest to.
+##### Response
+From the response below, you (Adele Vance) have one pending access review (**decision** is `NotReviewed`) to self-attest to. The **principal** and **resource** properties indicate the principal that the decision applies to and the resource to which access is under review. In this case, Adele Vance and the **Building security** group respectively.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43b12b0c-ee2c-4257-96fe-505d823e06ab')/pendingAccessReviewInstances",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(accessReviewInstanceDecisionItem)",
     "@odata.count": 1,
     "value": [
         {
-            "id": "d7286a17-3a01-406a-b872-986b6b40317c",
-            "startDateTime": "2021-02-10T15:09:40.153Z",
-            "endDateTime": "2022-12-31T08:00:00Z",
-            "status": "InProgress",
-            "scope": {
-                "query": "/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c/transitiveMembers",
-                "queryType": "MicrosoftGraph"
+            "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
+            "id": "c7de8fba-4d6a-4fab-a659-62ff0c02643d",
+            "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+            "resourceLink": "https://graph.microsoft.com/v1.0/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
+            "reviewedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "appliedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "resource": {
+                "id": "eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
+                "displayName": "Building security",
+                "type": "group"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
+                "displayName": "Adele Vance",
+                "type": "user",
+                "userPrincipalName": "AdeleV@Contoso.com",
+                "lastUserSignInDateTime": "2/15/2022 9:35:23 AM +00:00"
             }
         }
     ]
 }
 ```
-Using the call `/me/pendingAccessReviewInstances` in a user context has a number of advantages:
-+ No service principal is required. A user can call and read their pending access review actions.
-+ Can be used by widgets or plugins on an Intranet page, or a bot or daemon that run as a background service. These can notify you of new access reviews or of updates to access reviews. 
 
-### Complete the access review self-attestation
+#### Record a decision
 
-In the same incognito browser session, log in to https://myaccess.microsoft.com/ to complete the self-attestation. From the right navigation bar, select **access reviews** and choose your access review. Select **Yes**, that you still need access to **Building security group**, enter a reason, then click **Submit**.
+To complete the access review, Adele Vance will confirm the need to maintain access to the **Building security** group.
 
-   ![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to access review":::-->
+##### Request
 
-You can now logout and exit the incognito browser session.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and `c7de8fba-4d6a-4fab-a659-62ff0c02643d` with the ID of the pending decision item returned in the previous step.
 
-Back in the main browser session where you are still logged in as the global administrator user, repeat Step 4 to see that the **decision** property for the member who completed step 5 is now `Approve`.
+```http
+PATCH https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/c7de8fba-4d6a-4fab-a659-62ff0c02643d
 
-Congratulations! You have created an access review and self-attested to the need for access. You only do this once, and maintain access until when the access review definition expires.
+{
+    "decision": "Approve",
+    "justification": "As the assistant security manager, I still need access to the building security group."
+}
+```
 
-## Step 7: Clean up resources
+##### Response
 
-Delete the resources that you created for this tutorial—**Building security group**, the access review schedule definition, and the three test users..
+```http
+HTTP/1.1 204 No Content
+```
+
+
+#### Verify the decisions
+
+To verify the decisions you've recorded for your access review, [list your access review decision items](#list-your-access-reviews-decision-items). While the access review period hasn't expired nor the decisions applies, the **applyResult** will be marked as `New` and you're allowed to change the decision.
+
+You can now sign out and exit the incognito browser session.
+
+### Method 2: Use the My Access portal
+
+Reviewers can also visit the [My Access portal](https://myaccess.microsoft.com/) portal to check their pending access review instances.
+
++ List the pending access reviews. The user can follow one of two ways to get there:
+  + Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is like the following screenshot. Selecting this button directs them to the pending access review.
+
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-emailnotification.png" alt-text="Email notification to review your access." border="true":::
+
+  + Option 2: Go to the [My Access portal](https://myaccess.microsoft.com/) portal. Select the **Access reviews** menu and select the **Groups and Apps** tab.
+
++ From the list of access reviews, select the access review for which you want to post the decision. Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
+
+  :::image type="content" source="images/tutorials-identity/tutorial-access-reviews-selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
+
+
+You can now sign out and exit the incognito browser session.
+
+## Step 8: Confirm the decisions and the status of the access review
+
+Back in the main browser session where you're still logged in as a global administrator, repeat Step 4 to see that the **decision** property for Adele Vance is now `Approve`. When the access review ends or expires, the default decision of `Deny` will be recorded for Alex Wilber. The decisions will then be automatically applied because the **autoApplyDecisionsEnabled** was set to `true` and the period of the access review instance will have ended. Adele will then maintain access to the **Building security** group and Alex will automatically be removed from the group.
+
+Congratulations! You've created an access review and self-attested to your need to maintain access. You only self-attested once, and will maintain access until it's removed through either a `Deny` decision of another access review instance, or through another internal process.
+
+## Step 9: Clean up resources
+
+Delete the resources that you created for this tutorial—the **Building security** group, the access review schedule definition, and the three test users.
 
 ### Delete the security group
 
 #### Request
 
-In this call, replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security group**.
+In this call, replace `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the **id** of **Building security**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
+DELETE https://graph.microsoft.com/beta/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-delete-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-delete-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-delete-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-delete-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-delete-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -496,21 +823,48 @@ DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101ac
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ### Delete the access review definition
 
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
+DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-delete-accessreviewscheduledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -519,21 +873,48 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ### Delete the three test users
-In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the **id** of your test user. Repeat this twice with the **id**s of the other two users to delete them.
+In this call, replace `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` with the ID of one of your test users. Repeat this step twice with the IDs of the other two users to delete them.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
+DELETE https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-accessreviews-securitygroup-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tutorial-accessreviews-securitygroup-delete-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tutorial-accessreviews-securitygroup-delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-accessreviews-securitygroup-delete-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/tutorial-accessreviews-securitygroup-delete-user-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-accessreviews-securitygroup-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -542,17 +923,15 @@ DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
+## Conclusion
+
+You've created an access review in which the principals have self-attested to their need to maintain their access to a resource, in this case, the **Building security** group.
+
+This tutorial has demonstrated one of the scenarios by the Azure AD access reviews API. The access reviews API supports different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview).
 
 ## See also
 
-+ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
-+ [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
-+ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
++ [What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)
++ [Review access for yourself to groups or applications in Azure AD access reviews](/azure/active-directory/governance/review-your-access)

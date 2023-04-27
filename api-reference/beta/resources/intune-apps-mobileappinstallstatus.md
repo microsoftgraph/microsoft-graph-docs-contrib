@@ -1,7 +1,7 @@
 ---
 title: "mobileAppInstallStatus resource type"
-description: "Contains properties for the installation state of a mobile app for a device."
-author: "dougeby"
+description: "Contains properties for the installation state of a mobile app for a device. This will be deprecated in May, 2023"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties for the installation state of a mobile app for a device.
+Contains properties for the installation state of a mobile app for a device. This will be deprecated in May, 2023
 
 ## Methods
 |Method|Return Type|Description|
@@ -74,6 +74,3 @@ Here is a JSON representation of the resource.
   "displayVersion": "String"
 }
 ```
-
-
-

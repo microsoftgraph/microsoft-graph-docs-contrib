@@ -1,7 +1,7 @@
 ---
 title: "bulkDriverActionResult resource type"
 description: "A complex type to represent the result of bulk driver action."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -48,6 +48,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-

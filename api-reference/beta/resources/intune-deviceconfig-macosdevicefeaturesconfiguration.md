@@ -1,7 +1,7 @@
 ---
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -68,7 +68,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
 |contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determines what type of content is allowed to be cached by Apple's content caching service. Possible values are: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int32|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
+|contentCachingMaxSizeBytes|Int64|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
 |contentCachingDataPath|String|The path to the directory used to store cached content. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Boolean|Disables internet connection sharing.|
 |contentCachingForceConnectionSharing|Boolean|Forces internet connection sharing. contentCachingDisableConnectionSharing overrides this setting.|
@@ -236,16 +236,12 @@ Here is a JSON representation of the resource.
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "String",
     "modeCredentialUsed": "String",
-    "usernameLableCustom": "String",
     "usernameLabelCustom": "String",
     "userSetupDelayed": true,
     "signInHelpText": "String",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "String"
-    ],
     "preferredKDCs": [
       "String"
     ],
@@ -298,6 +294,3 @@ Here is a JSON representation of the resource.
   "contentCachingPort": 1024
 }
 ```
-
-
-

@@ -2,7 +2,7 @@
 title: "conditionalAccessGrantControls resource type"
 description: "Represents grant controls that must be fulfilled to pass the policy."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -17,14 +17,14 @@ Represents grant controls that must be fulfilled to pass the policy.
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | builtInControls | conditionalAccessGrantControl collection | List of values of built-in controls required by the policy. Possible values: `block`, `mfa`, `compliantDevice`, `domainJoinedDevice`, `approvedApplication`, `compliantApplication`, `passwordChange`, `unknownFutureValue`. |
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. For more information, see [Custom controls](/azure/active-directory/conditional-access/controls). |
+| operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | termsOfUse | String collection | List of [terms of use](/graph/api/resources/agreement) IDs required by the policy. |
 
 ### Special considerations when using `passwordChange` as a control
 
-Consider the following when you use the `passwordChange` control: 
+Consider the following when you use the `passwordChange` control:
 
 - `passwordChange` must be accompanied by `mfa` using an `AND` operator. This combination ensures that the password will be updated in a secure way.
 - `passwordChange` must be used in a policy containing `userRiskLevels`. This is designed to enable scenarios where users must use a secure change password to reset their user risk.
@@ -33,7 +33,10 @@ Consider the following when you use the `passwordChange` control:
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+| authenticationStrength | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) | The authentication strength required by the conditional access policy. Optional.|
+
 
 ## JSON representation
 
@@ -50,13 +53,13 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.conditionalAccessGrantControls",
   "baseType": null
 }-->
-
 ```json
 {
   "builtInControls": ["String"],
   "customAuthenticationFactors": ["String"],
   "operator": "String",
-  "termsOfUse": ["String"]
+  "termsOfUse": ["String"],
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrengthPolicy"}
 }
 ```
 

@@ -4,7 +4,7 @@ ms.date: 09/11/2017
 title: DateTimeColumn
 ms.localizationpriority: medium
 description: "The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # DateTimeColumn resource type

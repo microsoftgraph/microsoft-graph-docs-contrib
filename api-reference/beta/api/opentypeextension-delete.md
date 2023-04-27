@@ -1,5 +1,5 @@
 ---
-title: "Delete open extension"
+title: "Delete openTypeExtension"
 description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource. "
 ms.localizationpriority: medium
 author: "dkershaw10"
@@ -7,11 +7,13 @@ doc_type: apiPageType
 ms.prod: "extensions"
 ---
 
-# Delete open extension
+# Delete openTypeExtension
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource. 
 
@@ -23,6 +25,8 @@ Depending on the resource you're deleting the extension from and the permission 
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [baseTasklist](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
@@ -31,9 +35,9 @@ Depending on the resource you're deleting the extension from and the permission 
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -42,28 +46,24 @@ navigation property of that instance to identify the extension, and do a `DELETE
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{Id}/extensions/{extensionId}
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+DELETE /devices/{deviceId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/extensions/{extensionId}
+DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
+DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /organization/{organizationId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
-
-## Path parameters
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an instance in the corresponding collection. Required.|
-|extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
 ## Request headers
 | Name       | Value |
@@ -84,29 +84,38 @@ The first example references an extension by its name and deletes the extension 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_opentypeextension"
+  "name": "delete_opentypeextension",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===", "Com.Contoso.Referral"]
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral/
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-opentypeextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-opentypeextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 The second example deletes an extension in the specified group event.
 

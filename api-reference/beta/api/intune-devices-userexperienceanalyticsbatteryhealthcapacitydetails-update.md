@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsBatteryHealthCapacityDetails"
 description: "Update the properties of a userExperienceAnalyticsBatteryHealthCapacityDetails object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |batteryCapacityGood|Int32|Number of devices whose battery maximum capacity is greater than 80%. Valid values -2147483648 to 2147483647|
 |batteryCapacityFair|Int32|Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%. Valid values -2147483648 to 2147483647|
 |batteryCapacityPoor|Int32|Number of devices whose battery maximum capacity is lesser than 50%. Valid values -2147483648 to 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Recorded date time of this capacity details instance.|
 
 
 
@@ -66,14 +67,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 Content-type: application/json
-Content-length: 204
+Content-length: 269
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -82,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
+Content-Length: 318
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
@@ -90,9 +92,7 @@ Content-Length: 253
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
-
-
-

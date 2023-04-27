@@ -1,7 +1,7 @@
 ---
-title: "Get simulation report overview."
-description: "Get report overview for an attack simulation campaign."
-author: "Gopal-MSFT"
+title: "Get simulationReportOverview"
+description: "Get an overview of an attack simulation and training campaign."
+author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (work or school account)     | AttackSimulation.Read.All                   |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Application                            | AttackSimulation.Read.All                   |
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/simulations/{id}/report/overview
+GET /security/attackSimulation/simulations/{simulationId}/report/overview
 ```
 
 ## Request headers
@@ -49,6 +49,8 @@ If successful, this method returns a `200 OK` response code and a [simulationRep
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -56,29 +58,23 @@ If successful, this method returns a `200 OK` response code and a [simulationRep
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/overview
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-simulationreportoverview-csharp-snippets.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-simulationreportoverview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-simulationreportoverview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-simulationreportoverview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-simulationreportoverview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
-
 ### Response
+
+The following is an example of the request.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewNotificationRecipientItem resource type"
 description: "Defines users or groups who will receive notifications access review notifications."
-author: "isabelleatmsft"
+author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) notification event on an instance of a review. This item contains an email template type and recipient properties to enable sending certain type of notifications for a given [access review instance](accessreviewinstance.md).
+Represents an Azure AD [access review](accessreviewsv2-overview.md) notification event on an instance of a review. This item contains an email template type and recipient properties to enable sending certain type of notifications for a given [access review instance](accessreviewinstance.md).
 
 ## Properties
 

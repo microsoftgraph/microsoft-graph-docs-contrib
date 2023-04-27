@@ -3,8 +3,7 @@ title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
 author: "JeremyKelley"
-ms.prod: ""
-ms.date: 08/06/2019
+ms.prod: files
 doc_type: "apiPageType"
 ---
 
@@ -14,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. **NOTE**: This functionality is currently only available for OneDrive Personal.
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. 
+
+>**Note**: This functionality is currently only available for OneDrive Personal.
 
 ## Permissions
 
@@ -64,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "restore-item",
+  "name": "restore-item-e1",
   "scopes": "files.readwrite",
   "target": "action"
 }-->
@@ -80,24 +81,32 @@ Content-type: application/json
   "name": "String"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/restore-item-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/restore-item-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restore-item-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/restore-item-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/restore-item-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

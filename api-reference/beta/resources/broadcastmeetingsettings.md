@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingSettings resource type"
-description: "Settings related to a Teams live event"
-author: "mkhribech"
+description: "Represents settings related to a live event in Microsoft Teams."
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings related to a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).
+Represents settings related to a [live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in Microsoft Teams.
 
 ## Properties
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the Teams live event. Possible values are listed in the following table. |
+| captions | [broadcastMeetingCaptionSettings](../resources/broadcastmeetingcaptionsettings.md) | Caption settings of a Teams live event. |
 | isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this Teams live event. Default value is `false`.          |
 | isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this Teams live event. Default value is `false`.    |
 | isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this Teams live event. Default value is `false`.                |
@@ -40,16 +41,19 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [],
   "@odata.type": "microsoft.graph.broadcastMeetingSettings"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.broadcastMeetingSettings",
   "allowedAudience": "String",
   "isRecordingEnabled": "Boolean",
   "isAttendeeReportEnabled": "Boolean",
   "isQuestionAndAnswerEnabled": "Boolean",
-  "isVideoOnDemandEnabled": "Boolean"
+  "isVideoOnDemandEnabled": "Boolean",
+  "captions": {
+    "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"
+  }
 }
 ```
 

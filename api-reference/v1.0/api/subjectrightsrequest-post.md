@@ -17,12 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All*|
+|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
-
->[!IMPORTANT]
->Permissions marked with an asterisk (*) are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
 
 ## HTTP request
 
@@ -73,7 +70,6 @@ If successful, this method returns a `201 Created` response code and a [subjectR
 ``` http
 POST https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 Content-Type: application/json
-Content-length: 849
 
 {
     "type": "microsoft.graph.subjectRightsRequestType",
@@ -92,21 +88,24 @@ Content-length: 849
     }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subjectrightsrequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subjectrightsrequest-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-subjectrightsrequest-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

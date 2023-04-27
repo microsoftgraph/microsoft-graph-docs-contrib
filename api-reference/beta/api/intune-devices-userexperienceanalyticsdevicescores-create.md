@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsDeviceScores"
 description: "Create a new userExperienceAnalyticsDeviceScores object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -56,7 +56,8 @@ The following table shows the properties that are required when you create the u
 |startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appReliabilityScore|Double|The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |workFromAnywhereScore|Double|The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthScore|Double|The user experience analytics device battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores
 Content-type: application/json
-Content-length: 397
+Content-length: 427
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -81,6 +82,7 @@ Content-length: 397
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 476
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -102,9 +104,7 @@ Content-Length: 446
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
   "workFromAnywhereScore": 7.0,
+  "batteryHealthScore": 6.0,
   "healthStatus": "insufficientData"
 }
 ```
-
-
-

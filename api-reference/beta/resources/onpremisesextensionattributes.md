@@ -4,7 +4,7 @@ description: "The **onPremisesExtensionAttributes** property of the user entity 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
-author: "jpettere"
+author: "yyuank"
 ---
 
 # onPremisesExtensionAttributes resource type
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The return type of the **onPremisesExtensionAttributes** property of the [user](user.md) object and **extensionAttributes** property of the [device](device.md) object. Returns fifteen custom extension attribute properties.
 
-On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties cannot be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
+On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false` or `null`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties cannot be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
 
 The **extensionAttributes** property of the [device](device.md) entity is managed only in Azure AD during device [creation](../api/device-post-devices.md) or [update](../api/device-update.md).
 

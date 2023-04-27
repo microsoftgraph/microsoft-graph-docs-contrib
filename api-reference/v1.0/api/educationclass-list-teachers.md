@@ -49,22 +49,31 @@ The following is an example of the request.
   "name": "get_teachers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
+GET https://graph.microsoft.com/v1.0/education/classes/7e4ec76c-8276-43ef-ba10-9aaa197cb212/teachers
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teachers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teachers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-teachers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-teachers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-teachers-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-teachers-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-teachers-java-snippets.md)]
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teachers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -83,42 +92,25 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
-  "value": [
-    {
-      "id": "14006",
-      "displayName": "Kristie Mitchell",
-      "givenName": "Kristie",
-      "middleName": "Anne",
-      "surname": "Mitchell",
-      "mail": "kristiem@Contoso.com",
-      "mobilePhone": "+1 (253) 555-0101",
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.educationUser)",
+    "value": [
+        {
+            "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+            "accountEnabled": true,
+            "displayName": "Adele Vance",
+            "givenName": "Adele",
+            "surname": "Vance",
+            "userPrincipalName": "AdeleV@M365x214355.onmicrosoft.com",
+            "userType": "Member",
+            "primaryRole": "teacher",
+            "onPremisesInfo": {
+                "immutableId": null
+            },
+            "teacher": {}
         }
-      },
-      "externalSource": "Edu",
-      "mailingAddress": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "primaryRole": "Teacher",
-      "residenceAddress": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-    }
-  ]
+    ]
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Get userInstallStateSummary"
 description: "Read properties and relationships of the userInstallStateSummary object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -76,6 +76,3 @@ Content-Length: 269
   }
 }
 ```
-
-
-

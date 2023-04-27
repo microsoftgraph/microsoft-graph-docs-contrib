@@ -1,16 +1,19 @@
 ---
-title: "Request differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph"
-description: "Describes how Microsoft Graph requests differ from Azure Active Directory (Azure AD) Graph requests, which helps migrate apps to the newer service.."
-author: "dkershaw10"
+title: "Request differences between Azure AD Graph and Microsoft Graph"
+description: "Describes how Microsoft Graph requests differ from Azure Active Directory (Azure AD) Graph requests, which helps migrate apps to the newer service."
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
-# Request differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph
+# Request differences between Azure AD Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Microsoft Graph and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters. However, the syntax varies between these two APIs.
+Microsoft Graph and the Azure Active Directory (Azure AD) Graph API are both REST APIs and they each support OData conventions for query parameters. However, the syntax varies between these two APIs.
 
 Use [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
 
@@ -105,18 +108,18 @@ Relationships (or navigation properties) are a key concept in Azure AD Graph and
 
 Relationships also define memberships, such as the groups a user belongs to, the members belonging to a group or a directory role, and so on.
 
-Azure AD Graph requests use `$link` to indicate relationships between resources.  In Microsoft Graph this uses the ODATA 4.01 `$ref` notation instead.
+Azure AD Graph requests use `$links` to indicate relationships between resources.  In Microsoft Graph this uses the OData  v4.01 `$ref` notation instead.
 
 The following table shows several examples:
 
 | Task | Azure AD Graph | Microsoft Graph |
 |------|----------------|-----------------|
-| Add member        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
-| List member links | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
-| List members      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
-| Remove member     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
+| Add member        | `POST /groups/{id}/$links/members`        | `POST /groups/{id}/members/$ref`        |
+| List member links | `GET /groups/{id}/$links/members`         | `GET /groups/{id}/members/$ref`         |
+| List members      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`               |
+| Remove member     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
-When migrating your apps to Microsoft Graph, look for requests that use `$link` to associate resources; change these to use `$ref` instead.
+When migrating your apps to Microsoft Graph, look for requests that use `$links` to associate resources; change these to use `$ref` instead.
 
 ## Next Steps
 

@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var grantees = new List<DriveRecipient>()
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Permissions.Item.RevokeGrants.RevokeGrantsPostRequestBody
 {
-	new DriveRecipient
+	Grantees = new List<DriveRecipient>
 	{
-		Email = "ryan@contoso.com"
-	}
+		new DriveRecipient
+		{
+			Email = "ryan@contoso.com",
+		},
+	},
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Permissions["{permission-id}"].RevokeGrants.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
-	.RevokeGrants(grantees)
-	.Request()
-	.PostAsync();
 
 ```

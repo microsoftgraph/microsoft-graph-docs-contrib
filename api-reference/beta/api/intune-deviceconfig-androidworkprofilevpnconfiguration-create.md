@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileVpnConfiguration"
 description: "Create a new androidWorkProfileVpnConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -263,6 +263,3 @@ Content-Length: 2594
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
-
-
-

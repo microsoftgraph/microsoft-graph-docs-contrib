@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to search messages"
-description: "You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
+title: "Use the Microsoft Search API to search Outlook messages"
+description: "You can use the Microsoft Search API in Microsoft Graph to search for information in email messages and return messages ranked by relevance."
 author: "knightsu"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search Outlook messages
 
-Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's own mailbox.
+Use the Microsoft Search API in Microsoft Graph to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the signed-in user's own mailbox.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -137,7 +137,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
+
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -205,4 +206,4 @@ Content-type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API](/graph/api/resources/search-api-overview)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

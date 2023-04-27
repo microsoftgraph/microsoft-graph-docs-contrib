@@ -1,7 +1,7 @@
 ---
 title: "resultantAppStateDetail enum type"
 description: "Enum indicating additional details regarding why an application has a particular install state."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -56,6 +56,3 @@ Enum indicating additional details regarding why an application has a particular
 |minimumOsVersionNotMet|-1002|OS version on the target device is less than the configured minimum.|
 |minimumDiskSpaceNotMet|-1001|Available disk space on the target device is less than the configured minimum.|
 |processorArchitectureNotApplicable|-1000|Device architecture (e.g. x86/amd64) is not applicable for the application.|
-
-
-

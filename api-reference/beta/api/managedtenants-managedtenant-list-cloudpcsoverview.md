@@ -1,9 +1,9 @@
 ---
 title: "List cloudPcOverviews"
 description: "Get a list of the cloudPcOverview objects and their properties."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: apiPageType
 ---
 
@@ -61,25 +61,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcsOverview
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcoverview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcoverview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-cloudpcoverview-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcoverview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcoverview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcoverview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcoverview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcoverview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -94,28 +101,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
-      "id": "34298981-4fc8-4974-9486-c8909ed1521b",
-      "tenantDisplayName": "Fourth Coffee",
-      "totalCloudPcStatus": 18,
-      "numberOfCloudPcStatusNotProvisioned": 4,
-      "numberOfCloudPcStatusProvisioning": 0,
-      "numberOfCloudPcStatusProvisioned": 14,
-      "numberOfCloudPcStatusUpgrading": 0,
-      "numberOfCloudPcStatusInGracePeriod": 0,
-      "numberOfCloudPcStatusDeprovisioning": 0,
-      "numberOfCloudPcStatusFailed": 0,
-      "numberOfCloudPcStatusUnknown": 0,
-      "totalCloudPcConnectionStatus": 25,
-      "numberOfCloudPcConnectionStatusPending": 0,
-      "numberOfCloudPcConnectionStatusRunning": 0,
-      "numberOfCloudPcConnectionStatusPassed": 17,
-      "numberOfCloudPcConnectionStatusFailed": 6,
-      "numberOfCloudPcConnectionStatusUnkownFutureValue": 0,
-      "lastRefreshedDateTime": "2021-07-11T17:18:46.4830816Z"
-    }
-  ]
+    "value": [
+        {
+            "id":"8fd04a0b-ed49-46c0-a62d-e7980d829022",
+            "organizationDisplayName":"Fabrikam",
+            "cloudPcStatus_total": 100,
+            "numberOfCloudPcStatusNotProvisioned": 10,
+            "numberOfCloudPcStatusProvisioning": 20,
+            "numberOfCloudPcStatusProvisioned": 30,
+            "numberOfCloudPcStatusUpgrading": 1,
+            "numberOfCloudPcStatusInGracePeriod": 2,
+            "numberOfCloudPcStatusDeprovisioning": 2,
+            "numberOfCloudPcStatusFailed": 30,
+            "numberOfCloudPcStatusUnknown": 5,
+            "totalCloudPcConnectionStatus": 40,
+            "numberOfCloudPcConnectionStatusPending": 10,
+            "numberOfCloudPcConnectionStatusRunning": 3,
+            "numberOfCloudPcConnectionStatusPassed": 12,
+            "numberOfCloudPcConnectionStatusFailed": 15,
+            "numberOfCloudPcConnectionStatusUnkownFutureValue": 0,
+            "totalEnterpriseLicenses":  43,
+            "totalEnterpriseLicenses":  57,
+            "lastRefreshedDateTime":"2021-02-01T09:28:32.8260338Z"
+        },
+        {
+            "id":"8fd04a0b-ed49-46c0-a62d-e7980d829051",
+            "organizationDisplayName":"Alpine Skis",
+            "cloudPcStatus_total": 100,
+            "numberOfCloudPcStatusNotProvisioned": 10,
+            "numberOfCloudPcStatusProvisioning": 20,
+            "numberOfCloudPcStatusProvisioned": 30,
+            "numberOfCloudPcStatusUpgrading": 1,
+            "numberOfCloudPcStatusInGracePeriod": 2,
+            "numberOfCloudPcStatusDeprovisioning": 2,
+            "numberOfCloudPcStatusFailed": 30,
+            "numberOfCloudPcStatusUnknown": 5,
+            "totalCloudPcConnectionStatus": 40,
+            "numberOfCloudPcConnectionStatusPending": 10,
+            "numberOfCloudPcConnectionStatusRunning": 3,
+            "numberOfCloudPcConnectionStatusPassed": 12,
+            "numberOfCloudPcConnectionStatusFailed": 15,
+            "numberOfCloudPcConnectionStatusUnkownFutureValue": 0,
+            "totalEnterpriseLicenses": 43,
+            "totalEnterpriseLicenses": 57,
+            "lastRefreshedDateTime":"2021-03-01T09:28:32.8260338Z"
+        }
+    ]
 }
 ```

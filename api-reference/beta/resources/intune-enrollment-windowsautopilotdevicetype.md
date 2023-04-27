@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotDeviceType enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,6 +26,3 @@ Not yet documented
 |surfaceHub2S|3|SurfaceHub2S|
 |virtualMachine|4|VirtualMachine|
 |unknownFutureValue|99|Placeholder for evolvable enum, but this enum is never returned to the caller, so it shouldn't be necessary.         |
-
-
-

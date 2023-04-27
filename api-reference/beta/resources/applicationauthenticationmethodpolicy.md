@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD application authentication methods API overview (preview)
+# Azure AD application authentication methods API overview 
 
 Namespace: microsoft.graph
 
@@ -44,13 +44,19 @@ When both the tenant default policy and an app management policy exist, the app 
 
 The application authentication methods policy API offers the following restrictions:
 
-| Restriction name      | Description                                           | Examples                                                                                     |
-| :--------------- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| passwordAddition | Restrict password secrets on applications altogether. | Block new passwords on applications created on or after '01/01/2019'.                        |
-| passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015. |
-| symmetricKeyAddition | Restrict symmetric keys on applications. | Block new symmetric keys on applications created on or after 01/01/2019. |
-| symmetricKeyLifetime | Enforce a max lifetime range for a symmetric key.   | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019. |
-| asymmetricKeyLifetime | Enforce a max lifetime range for an asymmetric key (certificate).   | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019. |
+| Restriction name       | Description                                                            | Examples                                                                                                    |
+| :--------------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| passwordAddition       | Restrict password secrets on applications altogether.                  | Block new passwords on applications created on or after '01/01/2019'.                                       |
+| passwordLifetime       | Enforce a max lifetime range for a password secret.                    | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.        |
+| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
+| symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                    |
+| symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
+| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019.  |
+
+> [!Note]
+> All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
+>
+> Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
 
 ### Single vs multi-tenant apps
 
@@ -62,13 +68,13 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 
 ### Summary of key differences between the tenant default policy and app management policies
 
-| Tenant default policy                                                     | App management policy                                                                      |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Policy always exists.                                              | Policy objects can be created or updated to override default policy.                                         |
-| Restrictions are disabled by default for app/SP.                   | Allows customization for single tenant or multi tenant(backing app in home tenant or provisioned apps).     |
-| Allows only single restriction object definition for all resources.| Allows multiple policy objects to be defined, but only one can be applied to a resource.                  |
-|Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                             |
-| Applies all restrictions configured to all apps or service principals.              |  Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+| Tenant default policy                                                              | App management policy                                                                                                                               |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Policy always exists.                                                              | Policy objects can be created or updated to override default policy.                                                                                |
+| Restrictions are disabled by default for app/SP.                                   | Allows customization for single tenant or multi tenant(backing app in home tenant or provisioned apps).                                             |
+| Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
+| Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
+| Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
 
 ## Next steps
 

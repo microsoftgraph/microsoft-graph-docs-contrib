@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsAppHealthDevicePerformance"
 description: "Create a new userExperienceAnalyticsAppHealthDevicePerformance object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Create a new [userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the u
 |meanTimeToFailureInMinutes|Int32|The mean time to failure for the device in minutes. Valid values -2147483648 to 2147483647|
 |deviceAppHealthScore|Double|The app health score of the device. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |deviceAppHealthStatus|String|The overall app health status of the device.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 |deviceId|String|The id of the device.|
 |deviceDisplayName|String|The name of the device.|
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 Content-type: application/json
-Content-length: 551
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -86,6 +87,7 @@ Content-length: 551
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -96,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 600
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -110,10 +112,8 @@ Content-Length: 600
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
-

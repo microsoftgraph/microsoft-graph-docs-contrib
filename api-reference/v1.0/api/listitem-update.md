@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 title: Update listItem
-description: Update the properties on a **[listItem][]**.
+description: Update the properties on a listItem.
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -28,12 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 Update the properties on a listItem.
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 Update column values on a listItem.
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## Optional request headers
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 
 ## Response 
 
-If successful, this method returns a `201 Created` response code and a [fieldValueSet][] in the response body for the updated list item.
+If successful, this method returns a `200 Ok` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
@@ -68,31 +68,35 @@ Content-Type: application/json
     "Quantity": 934
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-listitem-objc-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-listitem-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-listitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 
 {

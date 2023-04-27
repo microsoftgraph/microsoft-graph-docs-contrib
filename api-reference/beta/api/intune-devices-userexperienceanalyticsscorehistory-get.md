@@ -1,7 +1,7 @@
 ---
 title: "Get userExperienceAnalyticsScoreHistory"
 description: "Read properties and relationships of the userExperienceAnalyticsScoreHistory object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 583
+Content-Length: 657
 
 {
   "value": {
@@ -76,15 +76,14 @@ Content-Length: 583
     "coreSigninScore": 15,
     "recommendedSoftwareScore": 8,
     "appHealthOverallScore": 5,
+    "workFromAnywhereScore": 5,
     "batteryHealthScore": 2,
     "startupTotalDevices": 3,
     "recommendedSoftwareTotalDevices": 15,
     "appHealthTotalDevices": 5,
+    "workFromAnywhereTotalDevices": 12,
     "batteryHealthTotalDevices": 9,
     "restartScore": 12
   }
 }
 ```
-
-
-

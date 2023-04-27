@@ -1,7 +1,7 @@
 ---
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -58,6 +58,7 @@ The following table specifies the properties that can be updated.
 |multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. |
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
+|localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)| Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
 
 ## Response
 
@@ -66,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ## Examples
 
 ### Request
+
 
 <!-- {
   "blockType": "request",
@@ -93,9 +95,13 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedUsers": [],
         "allowedGroups": []
+    },
+    localAdminPassword: {
+      "isEnabled": true
     }
 }
 ```
+
 
 ### Response
 
@@ -128,6 +134,9 @@ Content-Type: application/json
         "isAdminConfigurable": true,
         "allowedUsers": [],
         "allowedGroups": []
+    },
+    localAdminPassword: {
+      "isEnabled": true
     }
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsBatteryHealthDevicePerformance"
 description: "Update the properties of a userExperienceAnalyticsBatteryHealthDevicePerformance object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,11 +52,12 @@ The following table shows the properties that are required when you create the [
 |deviceId|String|The unique identifier of the device, Intune DeviceID.|
 |deviceName|String|Device friendly name.|
 |model|String|The model name of the device.|
+|manufacturer|String|The manufacturer name of the device.|
 |maxCapacityPercentage|Int32|Ratio of current capacity and design capacity of the battery with the lowest capacity. Unit in percentage and values range from 0-100. Valid values -2147483648 to 2147483647|
 |estimatedRuntimeInMinutes|Int32|The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values -2147483648 to 2147483647|
 |batteryAgeInDays|Int32|Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647|
 |deviceBatteryHealthScore|Int32|A weighted average of a device’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647|
-|healthStatus|String|The overall battery health status of the device.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 
 
@@ -70,18 +71,19 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance/{userExperienceAnalyticsBatteryHealthDevicePerformanceId}
 Content-type: application/json
-Content-length: 362
+Content-length: 400
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 411
+Content-Length: 449
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthDevicePerformance",
@@ -98,13 +100,11 @@ Content-Length: 411
   "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "model": "Model value",
+  "manufacturer": "Manufacturer value",
   "maxCapacityPercentage": 5,
   "estimatedRuntimeInMinutes": 9,
   "batteryAgeInDays": 0,
   "deviceBatteryHealthScore": 8,
-  "healthStatus": "Health Status value"
+  "healthStatus": "insufficientData"
 }
 ```
-
-
-

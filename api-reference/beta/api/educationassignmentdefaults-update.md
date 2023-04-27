@@ -40,7 +40,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields of the [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -61,13 +61,12 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_educationassignmentdefaults"
+  "name": "update_educationassignmentdefaults_e1"
 }
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",
@@ -75,28 +74,35 @@ Content-length: 181
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentdefaults-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentdefaults-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentdefaults-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignmentdefaults-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignmentdefaults-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-educationassignmentdefaults-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignmentdefaults-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,8 +116,10 @@ Content-Type: application/json
 {
   "addedStudentAction": "assignIfOpen",
   "addToCalendarAction": "studentsAndTeamOwners",
-  "dueTime": "23:59:00",
+  "dueTime": "2021-08-30T23:59:00Z",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+## See also
 
+* [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

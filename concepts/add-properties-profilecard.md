@@ -1,22 +1,24 @@
 ---
-title: "Customize the profile card using the profile API in Microsoft Graph (preview)"
-description: "This article describes how you can customize the profile card by making additional attributes visible, or adding custom attributes."
+title: "Add or delete custom attributes on a profile card (preview)"
+description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or delete custom attributes on a profile card."
 author: "PollyNincevic"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
-# Add additional properties to the profile card using the profile card API in Microsoft Graph (preview)
+# Add or delete custom attributes on a profile card using the profile card API (preview)
 
-On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
+On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
 
-Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization, by:
+Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization by:
 
 * Making additional attributes visible
 * Adding custom attributes
 
-Additional properties will display in the **Contact** section of the profile card in Microsoft 365.
+Additional properties display in the **Contact** section of the profile card in Microsoft 365.
+
+You can also [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) custom attributes from profile cards of the organization.
 
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
@@ -73,7 +75,7 @@ Content-type: application/json
 }
 ```
 
-## Adding custom attributes
+## Add a custom attribute
 
 You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
@@ -105,6 +107,8 @@ The following table shows how the Azure AD custom extension attribute names corr
 
 The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
 
+#### Request
+
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
@@ -129,6 +133,8 @@ If a language is not supported, the property name will be shown with the default
 
 If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German on the profile card. For all other users, **Cost center** will be displayed on the profile card.
 
+#### Response
+
 ``` http
 HTTP/1.1 201 OK
 Content-type: application/json
@@ -147,6 +153,26 @@ Content-type: application/json
     }
   ]
 }
+```
+
+## Delete a custom attribute
+
+Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) operation, as shown in the following example.
+
+### Example
+
+The following example deletes the custom attribute `customAttribute5` from the organization settings. A successful deletion returns `HTTP 204`.
+
+#### Request
+
+``` http
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/customAttribute5
+```
+
+#### Response
+
+``` http
+HTTP/1.1 204 No Content
 ```
 
 ## See also

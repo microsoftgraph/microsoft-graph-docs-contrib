@@ -80,7 +80,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
@@ -88,24 +87,32 @@ Content-length: 142
   "contentBytes": "R0lGODdhEAYEAA7"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-v1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-v1-objc-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-from-message-v1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-message-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-file-attachment-from-message-v1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-file-attachment-from-message-v1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
@@ -119,7 +126,6 @@ Here is an example of the response.
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 202
 
 {
     "id": "AAMkADNkN2R",
@@ -148,7 +154,6 @@ Here is an example of the request.
 ```
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -184,7 +189,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
   "id":"AAMkADNkNJp5JVnQIe9r0=",
