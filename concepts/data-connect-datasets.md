@@ -8,17 +8,7 @@ ms.prod: "data-connect"
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
-
-The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
-
->****Note:*** This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access.** This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see  [Azure IP Ranges and Service Tags.](https://www.microsoft.com/en-us/download/details.aspx?id=56519) 
-
-For details on this destination storage region restriction, see: 
-
-[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](https://learn.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage) 
-
-[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
+Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This article describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that Microsoft Graph Data Connect utilizes through Azure Synapse or Azure Data Factory.
 
 ## Datasets
 
@@ -90,9 +80,19 @@ The data available is from the last 21 days (about three weeks). For example, if
 
 ## Regions
 
-Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data.
+Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 datacenter into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
 
-The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement.
+The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
+
+>****Note:*** This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access.** This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see  [Azure IP Ranges and Service Tags.](https://www.microsoft.com/en-us/download/details.aspx?id=56519) 
+
+For details on this destination storage region restriction, see: 
+
+[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](https://learn.microsoft.com/en-us/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage) 
+
+[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
+
+&nbsp;
 
 | Office region | Azure region | Alternate Azure regions to use |
 | ------------- | ------------ | ------------------------------ |
