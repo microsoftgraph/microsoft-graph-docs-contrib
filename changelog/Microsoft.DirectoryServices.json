@@ -13139,6 +13139,14 @@
         },
         {
           "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningXmlError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-beta) resource type.",
+          "Target": "serviceProvisioningXmlError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
           "ApiChange": "Property",
           "ChangedApiName": "serviceProvisioningErrors",
           "ChangeType": "Addition",
