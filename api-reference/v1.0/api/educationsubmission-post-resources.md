@@ -626,7 +626,7 @@ Content-type: application/json
 ## See also
 
 * [States, transitions, and limitations for submissions](/graph/submissions-states-transition)
-* [State transiton for Student and Teacher role](/graph/sample-assignment-submission-overview)
+* [State transiton for Student and Teacher role](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

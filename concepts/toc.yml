@@ -307,7 +307,7 @@ items:
           - name: Assignment and submission states
             items:
               - name: Overview
-                href: sample-assignment-submission-overview.md
+                href: assignments-submissions-states-transition.md
               - name: Assignment states transition
                 href: assignments-states-transition.md
               - name: Submission states transition
