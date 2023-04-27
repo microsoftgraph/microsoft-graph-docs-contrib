@@ -52,17 +52,16 @@ Do not supply a request body with this method.
 
 If successful, this method returns a `204 No Content`. It does not return anything in the response body.
 
-## Examples
 ## Example
 
 <!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
 
-##### Request
+### Request
 
 ```http
 DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/webParts/{webPartId}
 ```
-##### Response
+### Response
 
 <!-- { "blockType": "response" } -->
 

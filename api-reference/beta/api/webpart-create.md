@@ -58,11 +58,14 @@ To ensure successful parsing of the request body, the `@odata.type=#microsoft.gr
 
 ## Example
 
+### Request
+
 The following example shows how to create a new webpart.
 
 # [HTTP](#tab/http)
 
 <!-- { "blockType": "request", "name": "create-webpart", "scopes": "sites.readwrite.all" } -->
+
 
 ```http
 POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitepage/canvasLayout/verticalSection/webparts
@@ -76,7 +79,7 @@ Content-Type: application/json
 
 ---
 
-## Response
+### Response
 
 If successful, this method returns a [webPart][] in the response body for the created webPart.
 

@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code and an updated [webP
 
 ## Example
 
+### Request
+
 The following example shows how to update a webpart.
 
 # [HTTP](#tab/http)
@@ -74,9 +76,7 @@ Content-Type: application/json
 }
 ```
 
----
-
-## Response
+### Response
 
 If successful, this method returns a [webPart][] in the response body for the updated webpart.
 
