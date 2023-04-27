@@ -71,4 +71,4 @@ The following limits apply to all API calls:
 
 ## See also
 
-- [States, transitions, and limitations for assignments](/graph/assignments-states-transition)
+- [States, transitions, and limitations for assignments](assignments-states-transition)

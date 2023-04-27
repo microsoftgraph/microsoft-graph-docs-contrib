@@ -44,5 +44,5 @@ The following state transition rules are applicable for student and teacher:
 
 ## See also
 
-- [States, transitions, and limitations for assignments](/graph/assignments-states-transition)
-- [States, transitions, and limitations for submissions](/graph/submissions-states-transition)
+- [States, transitions, and limitations for assignments](assignments-states-transition)
+- [States, transitions, and limitations for submissions](submissions-states-transition)

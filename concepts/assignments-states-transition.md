@@ -80,4 +80,4 @@ The following limits apply to all API calls:
 
 ## See also
 
-- [States, transitions, and limitations for submissions](/graph/submissions-states-transition)
+- [States, transitions, and limitations for submissions](submissions-states-transition)
