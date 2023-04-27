@@ -19,17 +19,19 @@ Change notifications in Microsoft Graph support subscriptions to virtual events.
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
 | Application                           | VirtualEvent.Read.All                                    | Beta               |
 
-## Subscribable resources
+## Subscribable virtual events
 
-| Resource type                                          | Resource                                                                                  | Supported change types    |
+The following table provides a summary of subscribable virtual event types, the resource url used in subscription payload, and the supported change types of the notifications subscription supports.
+
+| Virtual event types                                     | Resource url                                                                             | Supported change types    |
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|
 | All events (tenant-level)                              | `solutions/virtualEvents/events`                                                            | created                   |
 | All events (tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`       | created                   |
-| The events of a webinar                                     | `solutions/virtualEvents/webinars/{webinarId}`                                              | updated                   |
+| The events of a specific webinar                                     | `solutions/virtualEvents/webinars/{webinarId}`                                              | updated                   |
 | The session events of a webinar                              | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                     | created, updated          |
 | The registration events of a webinar                      | `solutions/virtualEvents/webinars/{webinarId}/registration/registrants`                     | created, updated          |
 
->**Note:** Replace valuesin with parenthesis with actual values.
+>**Note:** Replace values in with parenthesis with actual values.
 
 ## Subscribe to all events created in a tenant
 
