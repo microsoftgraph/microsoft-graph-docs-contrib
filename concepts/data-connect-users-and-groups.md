@@ -71,9 +71,9 @@ A customer wants to extract the group details dataset with a security group of u
 
 ## Search for and verify group types
 
-Use the following steps to search for the types of groups in your tenant to help you determine what is compatible with the type of scope you want to select.
+Use the following steps to search for the types of groups in your tenant to help you determine what is compatible with the type of scope you want to select. Please log into your ADF portal and select your tenant. Once you're in the layout, click on source and verify the details around datasets and groups.
 
-1. After you select the group-scoped dataset, search for and add a group or groups, or group IDs.
+1. Scroll down to the pane, and click on scope. After you select the group-scoped dataset, search for and add a group or groups, or group IDs.
     
     ![Screenshot describes ADF and adding user groups](images/data-connect-groups-1.png)
 
