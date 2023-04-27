@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Delete(context.Background(), nil)
+graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").Delete(context.Background(), nil)
 
 
 ```

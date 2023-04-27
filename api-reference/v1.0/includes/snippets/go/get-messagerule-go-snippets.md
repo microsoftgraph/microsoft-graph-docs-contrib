@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").MessageRulesById("messageRule-id").Get(context.Background(), nil)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().ByMessageRuleId("messageRule-id").Get(context.Background(), nil)
 
 
 ```

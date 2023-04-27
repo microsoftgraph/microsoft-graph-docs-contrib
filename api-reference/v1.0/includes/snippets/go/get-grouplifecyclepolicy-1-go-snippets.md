@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Get(context.Background(), nil)
+result, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").Get(context.Background(), nil)
 
 
 ```

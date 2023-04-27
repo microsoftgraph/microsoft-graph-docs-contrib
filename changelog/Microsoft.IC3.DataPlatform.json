@@ -3,6 +3,96 @@
         {
             "ChangeList": [
                 {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getPstnOnlineMeetingDialoutReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getPstnOnlineMeetingDialoutReport](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-getpstnonlinemeetingdialoutreport?view=graph-rest-beta) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "pstnOnlineMeetingDialoutReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [pstnOnlineMeetingDialoutReport](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstnonlinemeetingdialoutreport?view=graph-rest-beta) resource type.",
+                    "Target": "pstnOnlineMeetingDialoutReport"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getSmsLog",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getSmsLog](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-getsmslog?view=graph-rest-beta) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "smsLogRow",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [smsLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-smslogrow?view=graph-rest-beta) resource type.",
+                    "Target": "smsLogRow"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getPstnBlockedUsersLog",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getPstnBlockedUsersLog](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-getpstnblockeduserslog?view=graph-rest-beta) method to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "pstnBlockedUsersLogRow",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [pstnBlockedUsersLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstnblockeduserslogrow?view=graph-rest-beta) resource type.",
+                    "Target": "pstnBlockedUsersLogRow"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "pstnUserBlockMode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **pstnUserBlockMode** enumeration type.",
+                    "Target": "pstnUserBlockMode"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "otherPartyCountryCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **otherPartyCountryCode** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
+                    "Target": "directRoutingLogRow"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "userCountryCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **userCountryCode** property to the [directRoutingLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta) resource.",
+                    "Target": "directRoutingLogRow"
+                },
+                {
+                    "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "otherPartyCountryCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **otherPartyCountryCode** property to the [pstnCallLogRow](https://learn.microsoft.com/en-us/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta) resource.",
+                    "Target": "pstnCallLogRow"
+                }
+            ],
+            "Id": "7032bc3a-d753-4589-9834-4c07d3c89f19",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-04-12T10:13:45.8792532Z",
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "588cac11-3d88-4e1d-a284-af3b1ceb6cbf",
                     "ApiChange": "Property",
                     "ChangedApiName": "sessions",
@@ -375,6 +465,80 @@
             "CreatedDateTime": "2022-06-06T11:36:15.7523446Z",
             "WorkloadArea": "Teamwork and communications",
             "SubArea": "Calls and online meetings"
+        },
+        {
+            "ChangeList": [
+                 {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "averageFreezeDuration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `averageFreezeDuration` property to the [mediaStream](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-mediaStream?view=graph-rest-beta) resource.",
+                    "Target": "mediaStream"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "isAudioForwardErrorCorrectionUsed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `isAudioForwardErrorCorrectionUsed` property to the [mediaStream](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-mediaStream?view=graph-rest-beta) resource.",
+                    "Target": "mediaStream"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "rmsFreezeDuration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `rmsFreezeDuration` property to the [mediaStream](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-mediaStream?view=graph-rest-beta) resource.",
+                    "Target": "mediaStream"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cpuCoresCount",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cpuCoresCount` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cpuName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cpuName` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cpuProcessorSpeedInMhz",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cpuProcessorSpeedInMhz` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "name",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `name` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "isTest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `isTest` property to the [session](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-session?view=graph-rest-beta) resource.",
+                    "Target": "session"
+                }
+            ],
+            "Id": "4ad9e0f3-e074-4f8e-a726-d1c4a410e386",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-04-24T15:04:35.701151Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Online meeting"
         }
     ]
 }

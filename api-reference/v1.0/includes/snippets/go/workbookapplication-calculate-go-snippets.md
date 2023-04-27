@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalculatePostRequestBody()
 calculationType := "calculationType-value"
 requestBody.SetCalculationType(&calculationType) 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().Application().Calculate().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Application().Calculate().Post(context.Background(), requestBody, nil)
 
 
 ```
