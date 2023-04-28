@@ -55,7 +55,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0)  resource",
+          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
           "Target": "admin"
         }
       ],
