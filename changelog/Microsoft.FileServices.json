@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "admin",
           "ChangeType": "Addition",
-          "Description": "Added the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
+          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-1.0) resource",
           "Target": "admin"
         }
       ],
