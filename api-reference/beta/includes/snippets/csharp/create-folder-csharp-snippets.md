@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var driveItem = new DriveItem
+var requestBody = new DriveItem
 {
 	Name = "New Folder",
 	Folder = new Folder
 	{
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@microsoft.graph.conflictBehavior", "rename"}
-	}
+		{
+			"@microsoft.graph.conflictBehavior" , "rename"
+		},
+	},
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Children.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Root.Children
-	.Request()
-	.AddAsync(driveItem);
 
 ```

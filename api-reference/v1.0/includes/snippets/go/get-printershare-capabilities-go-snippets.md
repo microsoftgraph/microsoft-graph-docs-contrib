@@ -22,7 +22,7 @@ configuration := &graphconfig.PrintShareItemRequestBuilderGetRequestConfiguratio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().SharesById("printerShare-id").Get(context.Background(), configuration)
+result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Get(context.Background(), configuration)
 
 
 ```

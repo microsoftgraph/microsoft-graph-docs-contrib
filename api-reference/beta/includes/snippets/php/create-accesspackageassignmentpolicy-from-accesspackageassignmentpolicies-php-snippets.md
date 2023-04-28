@@ -42,7 +42,7 @@ $requestApprovalSettings->setApprovalStages([]);
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->post($requestBody);
 
 
 ```

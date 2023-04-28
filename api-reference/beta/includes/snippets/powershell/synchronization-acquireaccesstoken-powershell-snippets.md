@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	Credentials = @(
+	credentials = @(
 		@{
 			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
 		}

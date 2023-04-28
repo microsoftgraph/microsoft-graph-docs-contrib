@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Detail = @{
-		Company = @{
-			DisplayName = "Adventureworks Ltd."
-			Department = "Consulting"
-			OfficeLocation = "AW23/344"
-			Address = @{
-				Type = "business"
-				Street = "123 Patriachy Ponds"
-				City = "Moscow"
-				CountryOrRegion = "Russian Federation"
-				PostalCode = "RU-34621"
+	detail = @{
+		company = @{
+			displayName = "Adventureworks Ltd."
+			department = "Consulting"
+			officeLocation = "AW23/344"
+			address = @{
+				type = "business"
+				street = "123 Patriachy Ponds"
+				city = "Moscow"
+				countryOrRegion = "Russian Federation"
+				postalCode = "RU-34621"
 			}
-			WebUrl = "https://www.adventureworks.com"
+			webUrl = "https://www.adventureworks.com"
 		}
-		JobTitle = "Senior Product Branding Manager II"
-		Role = "consulting"
+		jobTitle = "Senior Product Branding Manager II"
+		role = "consulting"
 	}
-	IsCurrent = $true
+	isCurrent = $true
 }
 
 # A UPN can also be used as -UserId.

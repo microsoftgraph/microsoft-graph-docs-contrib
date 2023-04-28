@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Delete(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().ByOpenShiftId("openShift-id").Delete(context.Background(), nil)
 
 
 ```

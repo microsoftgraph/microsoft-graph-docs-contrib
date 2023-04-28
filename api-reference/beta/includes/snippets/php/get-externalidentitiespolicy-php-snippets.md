@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->policies()->externalIdentitiesPolicy()->get();
+$result = $graphServiceClient->policies()->externalIdentitiesPolicy()->get();
 
 
 ```

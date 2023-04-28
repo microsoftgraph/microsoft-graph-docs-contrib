@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceUpdate()
 odataId := "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.ApplicationsById("application-id").ConnectorGroup().Ref().Put(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").ConnectorGroup().Ref().Put(context.Background(), requestBody, nil)
 
 
 ```
