@@ -29,14 +29,6 @@
         {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Resource",
-          "ChangedApiName": "admin",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-1.0) resource",
-          "Target": "admin"
-        }
-        {
-          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
-          "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
           "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idleSessionSignOut?view=graph-rest-1.0) resource type.",
