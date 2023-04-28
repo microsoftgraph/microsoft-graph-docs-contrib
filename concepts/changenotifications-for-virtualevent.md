@@ -21,7 +21,7 @@ Change notifications in Microsoft Graph support subscriptions to virtual events.
 
 ## Subscribable virtual events
 
-The following table provides a summary of subscribable virtual event types, their resource URLs used in the subscription payload, and the supported change types for notification subscription.
+The following table provides a summary of subscribable virtual event types, the resource URLs used in the subscription payload, and the supported change types for notification subscription.
 
 | Virtual event types                                     | Resource URL                                                                             | Supported change types    |
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|
