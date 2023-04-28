@@ -50,6 +50,14 @@
           "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
           "Target": "admin"
         }
+         {
+           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
+           "ApiChange": "Resource",
+           "ChangedApiName": "tenantadmin-sharepoint",
+           "ChangeType": "Deletion",
+           "Description": "Removed the [tenantadmin-sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource.",
+           "Target": "tenantadmin-sharepoint"
+        },        
       ],
       "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
       "Cloud": "Prod",
