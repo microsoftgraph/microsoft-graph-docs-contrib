@@ -50,7 +50,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
 |cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|cloudPcInGracePeriodScenario |Indicates that the alert rule was triggered when Cloud PC entered the in grace period. For a system rule, the alert rule was triggered when Cloud PC entered the in grace period.|
+|cloudPcInGracePeriodScenario |Indicates that the alert rule was triggered when the Cloud PC entered the grace period, regardless of whether it was a system rule or not.|
 
 ### ruleSeverityType values
 
