@@ -15,11 +15,10 @@ Namespace: microsoft.graph
 
 Apply (set) a retention label asynchronously on a [driveItem](/resources/driveitem.md) (files and folders). 
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API with application permissions, you must request permission.
-
-Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions are considered [Premium metered APIs](https://learn.microsoft.com/en-us/graph/metered-api-overview). These APIs will be monetized through Azure commerce meters and require you to have a valid Azure subscription. Proposed pricing at General Availability is to be determined.
 
 When a retention label is applied to a folder, then all the items in the folder are tagged with the same retention label. Conflict resolution happens by the following principle: explicit wins over implicit. For example, if a file in the folder has already been explicitly tagged with a label, then that file doesn't inherit the label of the parent. For information about retention labels from an administrator's perspective, see: [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
+
+[!INCLUDE [premium-metered-apis-disclaimer](../../includes/premium-meter-apis-disclaimer.md)]
 
 ## Permissions
 
@@ -30,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All    |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Files.ReadWrite.All, Sites.ReadWrite.All    |
+
+[!INCLUDE [premium-metered-apis-request-access-disclaimer](../../includes/premium-meter-apis-request-access-disclaimer.md)]
 
 ## HTTP request
 

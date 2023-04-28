@@ -22,6 +22,7 @@ The following table lists the metered APIs and services.
 | Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | No charge while API is in preview | [SharePoint preview enrollment form](https://aka.ms/PreviewSPOPremiumAPI) |
+| SharePoint and OneDrive for Business [setRetentionLabel](/graph/api/driveitem-setretentionlabel) | No charge while API is in preview | Pending |
 
 ## See also
 
