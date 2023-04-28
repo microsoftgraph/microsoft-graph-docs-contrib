@@ -67,7 +67,15 @@
            "ChangeType": "Deletion",
            "Description": "Removed the [tenantadmin-sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource.",
            "Target": "tenantadmin-sharepoint"
-        }
+        },
+         {
+          "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharepointSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource",
+          "Target": "admin"
+        } 
       ],
          "Id": "a4a26d2c-47f7-4aa2-9a38-8c979cc811a1",
       "Cloud": "Prod",
