@@ -379,22 +379,22 @@ You can find additional information about best practices in [OneNote API throttl
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
 
-
 ## Outlook service limits
 
-Outlook service limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Outlook service limits apply to the public cloud and [national cloud deployments](./deployments.md).
 
 ### Limits per app ID
+
 Outlook can execute up to 4 concurrent requests. The requests can target user or group mailboxes. The limit applies to the v1.0 and beta endpoints, regardless of whether the requests all access the same mailbox, or access different mailboxes.
 
 ### Limits per app ID and mailbox combination
 
-The limits in this section are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. 
+The limits in this section are evaluated for each app ID and mailbox combination. In detail, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox.
 
-| Limit                                                      | Applies to      |
-|------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints   |
+| Limit                                                             | Applies to              |
+|-------------------------------------------------------------------|-------------------------|
+| 10,000 API requests in a 10 minute period                         | v1.0 and beta endpoints |
+| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints |
 
 ### Outlook service resources
 
@@ -409,13 +409,14 @@ The limits in this section are evaluated for each app ID and mailbox combination
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
 ### Outlook service limits for JSON batching
-In a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, by default, the service executes up to 4 requests in parallel at any point, irrespective of the target mailbox, staying within [Outlook's concurrency limits](#limits-per-app-id). Alternatively, apps can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
+
+By default, when you send a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, the service executes up to 4 requests in parallel at any point, irrespective of the target mailbox. This limit ensures that the requests stay within the [concurrency limits of Outlook](#limits-per-app-id). Apps can also use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
   
-Thus when targeting the same mailbox, applications that allow multiple batch requests (multiple) to run asynchronously in parallel can either: 
-- Have up to 4 individual requests in a single batch request running concurrently (without specifying `dependsOn` in the batch request), or
-- Use the `dependsOn` property for each batch request and have up to 4 such batch requests running concurrently.
- 
-  
+Applications that allow multiple batch requests (multiple) to run asynchronously in parallel, have two possible options that apply when targeting the same mailbox:
+
+- Have up to 4 individual requests in a single batch request running concurrently (without specifying **dependsOn** in the batch request)
+- Use the **dependsOn** property for each batch request and have up to 4 such batch requests running concurrently
+
 ## Project Rome service limits
 
 | Request type | Limit per user for all apps |
