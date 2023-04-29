@@ -21,9 +21,9 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 
 | Method                                                          | Return Type  |Description             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[Get itemCategories](../api/dynamics-itemcategories-get.md)      |[itemCategories](dynamics-itemcategories.md.md)|Get an item category.   |
-|[Post itemCategories](../api/dynamics-create-itemcategories.md)  |[itemCategories](dynamics-itemcategories.md.md)|Create an item category.|
-|[Patch itemCategories](../api/dynamics-itemcategories-update.md) |[itemCategories](dynamics-itemcategories.md.md)|Update an item category.|
+|[Get itemCategories](../api/dynamics-itemcategories-get.md)      |[itemCategories](dynamics-itemcategories.md)|Get an item category.   |
+|[Post itemCategories](../api/dynamics-create-itemcategories.md)  |[itemCategories](dynamics-itemcategories.md)|Create an item category.|
+|[Patch itemCategories](../api/dynamics-itemcategories-update.md) |[itemCategories](dynamics-itemcategories.md)|Update an item category.|
 |[Delete itemCategories](../api/dynamics-itemcategories-delete.md)|None          |Delete an item category.|
 
 ## Properties
