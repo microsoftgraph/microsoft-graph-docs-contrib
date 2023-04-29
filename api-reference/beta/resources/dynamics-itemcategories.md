@@ -27,6 +27,7 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 |[Delete itemCategories](../api/dynamics-itemcategories-delete.md)|None          |Delete an item category.|
 
 ## Properties
+
 | Property	         | Type	  |Description                                     |
 |:-------------------|:-------|:-----------------------------------------------|
 |code                |String  |The item category code.                          |
@@ -36,17 +37,18 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 
 
 ## Relationships
-None
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the itemCategories.
+The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
   "code": "String",
   "displayName": "String",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "Datetime"
 }
 ```
