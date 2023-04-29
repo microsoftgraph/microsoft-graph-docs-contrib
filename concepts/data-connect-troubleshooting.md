@@ -77,16 +77,15 @@ If the destination storage account needs to be closed for public access, you nee
 > [!NOTE]
 > The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect does not extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it will only extract the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
 
-2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see table below). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
+2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see the following table). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
-> [!*NOTE]
+> [!NOTE]
 > This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be added to the allow list to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
 
-For details on this destination storage region restriction, see:
+For details about this destination storage region restriction, see:
 
-[Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage)
-
-[Configure Azure Storage firewalls and virtual networks | Microsoft Docs](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
+- [Azure Integration Runtime IP addresses - Azure Data Factory | Microsoft Docs](/azure/data-factory/azure-integration-runtime-ip-addresses#known-issue-with-azure-storage)
+- [Configure Azure Storage firewalls and virtual networks | Microsoft Docs](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range)
 
 &nbsp;
 
@@ -138,17 +137,17 @@ The following example describes how to troubleshoot network access issue:
 
 ## Issues with running your pipeline using mapping data flows 
 
-First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with the “Consent Pending” error. This triggers a consent request for the tenant admin who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
+First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with a `Consent Pending` error. This triggers a consent request for the tenant admin, who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
 
-1. The consent request is only valid for 24 hours. Please contact your tenant admin to approve within this timeframe.  
+1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
 
     a. If not approved in that timeframe, subsequent runs will fail with the same error and regenerate a consent request.
 
     b. When approved, the pipeline can be rerun at any time to retrieve data.
 
-    ![An image that shows the error the first time MGDC-MDF runs](images/data-connect-mdf-error.png)
+    ![An image that shows the error the first time  Microsoft Graph Data Connect and the mapping data flow runs](images/data-connect-mdf-error.png)
 
-2. Please verify that the destination storage is set up correctly to allow the app to write data into it.
+2. Verify that the destination storage is set up correctly to allow the app to write data into it.
 
 ## See also
 
