@@ -1,6 +1,6 @@
 ---
-title: "Deactivate educationAssignment"
-description: "Marks an assigned assignment as inactive to signal that the assignment has no further action items for teachers and students."
+title: "educationAssignment: deactivate"
+description: "Mark an assigned assignment as inactive to signal that the assignment has no further action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for teachers and students.  The Deactivate Assignment operation can only be performed by teacher on Assigned assignments.
+Mark an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for teachers and students. This action can only be performed by a teacher on assigned assignments.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a/deactivate
 ```
 #### Response
-The following is an example of the response when Prefer: include-unknown-enum-members is NOT provided in the request header.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -137,7 +137,7 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 Prefer: include-unknown-enum-members
 ```
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header.
+The following is an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
