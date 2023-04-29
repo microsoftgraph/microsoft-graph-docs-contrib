@@ -385,7 +385,7 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 ### Limits per app ID
 
-Outlook can execute up to 4 concurrent requests. The requests can target user or group mailboxes. The limit applies to the v1.0 and beta endpoints, regardless of whether the requests all access the same mailbox, or access different mailboxes.
+Outlook can run up to four concurrent requests. The requests can target user or group mailboxes. The limit applies to the v1.0 and beta endpoints, regardless of whether the requests all access the same mailbox, or access different mailboxes.
 
 ### Limits per app ID and mailbox combination
 
@@ -410,11 +410,11 @@ The limits in this section are evaluated for each app ID and mailbox combination
 
 ### Outlook service limits for JSON batching
 
-By default, when you send a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, the service executes up to 4 requests in parallel at any point, irrespective of the target mailbox. This limit ensures that the requests stay within the [concurrency limits of Outlook](#limits-per-app-id). Apps can also use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
+By default, when you send a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, the service runs up to four requests in parallel at any point, irrespective of the target mailbox. This limit ensures that the requests stay within the [concurrency limits of Outlook](#limits-per-app-id). Apps can also use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
   
 Applications that allow multiple batch requests (multiple) to run asynchronously in parallel, have two possible options that apply when targeting the same mailbox:
 
-- Have up to 4 individual requests in a single batch request running concurrently (without specifying **dependsOn** in the batch request)
+- Have up to four individual requests in a single batch request running concurrently (without specifying **dependsOn** in the batch request)
 - Use the **dependsOn** property for each batch request and have up to 4 such batch requests running concurrently
 
 ## Project Rome service limits
