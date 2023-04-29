@@ -1,19 +1,19 @@
 ---
-title: "Activate educationAssignment"
-description: "Activates an inactive assignment to signal that the assignment has action items for teachers and students."
+title: "educationAssignment: activate"
+description: "Activate an inactive assignment to signal that the assignment has action items for teachers and students."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Activate educationAssignment
+# educationAssignment: activate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activates an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. The Activate Assignment operation can only be performed by teacher on current Inactive assignments.
+Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
 
 ## Permissions
 
@@ -44,20 +44,19 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [status](/graph/api/resources/educationassignment?#properties) `assigned` in the response body.
+If successful, this method returns a `200 OK` response code and a [status](/graph/api/resources/educationassignment?#properties) value of `assigned` in the response body.
 
 ## Example
 
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
   "name": "post_activateAssignment"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a/activate
 ```
 ### Response
