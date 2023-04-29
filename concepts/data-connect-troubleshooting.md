@@ -70,9 +70,9 @@ You can resolve this issue with an SSP request: `INTERNT PROXY (SWG) - EXCEPTION
 
 ## Issues adding network IP address to allow list with Azure integration runtime
 
-If the destination storage account needs to be closed for public access, you need to allow access for a particular set of Azure service IP addresses. Customers will need to allow list IPs based on the targeted office region. To do this:
+If the destination storage account needs to be closed for public access, you need to allow access for a particular set of Azure service IP addresses. Customers will need to allow list IPs based on the targeted Office region. To do this:
 
-1. Find an Office-to-Azure region mapping. To look up which Office region you will be extracting user data from, see the table below.
+1. Find an Office-to-Azure region mapping. To look up which Office region you will be extracting user data from, see the following table.
 
 > [!NOTE]
 > The Azure region you're running a pipeline in must map to an Office region to extract the users for the tenant. Microsoft Graph Data Connect does not extract data across regions. For example, if you're running a pipeline in the West Europe Azure region, it will only extract the users for the Europe (EUR) Office region because the West Europe Azure region maps to the Europe Office region.
@@ -80,7 +80,7 @@ If the destination storage account needs to be closed for public access, you nee
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see table below). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
 > [!*NOTE]
-> This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be allowlisted to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
+> This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be added to the allow list to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
 
 For details on this destination storage region restriction, see:
 
@@ -92,15 +92,15 @@ For details on this destination storage region restriction, see:
 
 | Office region | Azure region | Alternate Azure regions to use |
 | ------------- | ------------ | ------------------------------ |
-| **Asia-Pacific**   | <ul><li>East Asia</li><li>Southeast Asia*</li></ul> |  |
-| **Australia**      | <ul><li>Australia East</li><li>Australia Southeast*</li></ul> |  |
-| **Europe**         | <ul><li>North Europe</li><li>West Europe*</li></ul> |  |
-| **North America**  | <ul><li>Central US</li><li>East US*</li><li>East US 2</li><li>North Central US</li><li>South Central US</li><li>West Central US</li><li>West US</li><li>West US 2</li></ul> |  |
-| **United Kingdom** | <ul><li>UK South*</li><li>UK West</li></ul> |  |
-| **Canada (CAN)** | <ul><li>Canada Central</li><li>Canada East*</li></ul> |  |
-| **Japan (JPN)** | <ul><li>Japan West</li><li>Japan East*</li></ul> |  |
-| **India (IND)** | <ul><li>South India*</li><li>Central India</li></ul> |  |
-| **Korea (KOR)** | <ul><li>Korea Central</li><li>Korea South</li></ul> |  |
+| **Asia-Pacific**   | <ul><li>East Asia</li><li>Southeast Asia*</li></ul> |   NA |
+| **Australia**      | <ul><li>Australia East</li><li>Australia Southeast*</li></ul> | NA |
+| **Europe**         | <ul><li>North Europe</li><li>West Europe*</li></ul> | NA |
+| **North America**  | <ul><li>Central US</li><li>East US*</li><li>East US 2</li><li>North Central US</li><li>South Central US</li><li>West Central US</li><li>West US</li><li>West US 2</li></ul> | NA |
+| **United Kingdom** | <ul><li>UK South*</li><li>UK West</li></ul> | NA |
+| **Canada (CAN)** | <ul><li>Canada Central</li><li>Canada East*</li></ul> | NA |
+| **Japan (JPN)** | <ul><li>Japan West</li><li>Japan East*</li></ul> | NA |
+| **India (IND)** | <ul><li>South India*</li><li>Central India</li></ul> | NA |
+| **Korea (KOR)** | <ul><li>Korea Central</li><li>Korea South</li></ul> | NA |
 | **Switzerland (CHE)** | <ul><li>Switzerland North</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
 | **Germany (DEU)** | <ul><li>Germany West Central*</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
 | **Norway (NOR)** | <ul><li>Norway East*</li></ul> | <ul><li>North Europe</li> <li>West Europe</li></ul> |
@@ -138,17 +138,17 @@ The following example describes how to troubleshoot network access issue:
 
 ## Issues with running your pipeline using mapping data flows 
 
-First time runs of [MGDC-MDF](/azure/data-factory/connector-office-365?tabs=data-factory#transform-data-with-the-microsoft-365-connector) activity for a new dataset are expected to fail with the “Consent Pending” error. This triggers a consent request for the tenant admin who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
+First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with the “Consent Pending” error. This triggers a consent request for the tenant admin who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
 
-1. The consent request is only valid for 24-hrs. Please contact your tenant admin to approve within this timeframe.  
+1. The consent request is only valid for 24 hours. Please contact your tenant admin to approve within this timeframe.  
 
     a. If not approved in that timeframe, subsequent runs will fail with the same error and regenerate a consent request.
 
-    b. Once approved, the pipeline can be rerun at any time to retrieve data.
+    b. When approved, the pipeline can be rerun at any time to retrieve data.
 
     ![An image that shows the error the first time MGDC-MDF runs](images/data-connect-mdf-error.png)
 
-2. Please verify that the destination storage is correctly setup to allow the appId to write data into it.
+2. Please verify that the destination storage is set up correctly to allow the app to write data into it.
 
 ## See also
 
