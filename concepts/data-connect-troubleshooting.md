@@ -137,7 +137,7 @@ The following example describes how to troubleshoot network access issue:
 
 ## Issues with running your pipeline using mapping data flows 
 
-First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with a `Consent Pending` error. This triggers a consent request for the tenant admin, who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request.  
+First time runs of Microsoft Graph Data Connect and the mapping data flow activity for a new dataset are expected to fail with a `Consent Pending` error. This triggers a consent request for the tenant admin, who can use [Privileged Access Management](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=6) to review and approve/decline the data access request. To resolve the issue:
 
 1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
 
