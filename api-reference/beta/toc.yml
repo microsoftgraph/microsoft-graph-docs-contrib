@@ -13576,6 +13576,82 @@ items:
           items:
           - name: Create invitation
             href: api/invitation-post.md
+        - name: Multi-tenant organization
+          items:
+          - name: Multi-tenant organization
+            items:
+            - name: Multi-tenant organization
+              href: resources/multitenantorganization.md
+            - name: List
+              href: api/tenantrelationship-list-multitenantorganization.md
+            - name: Create
+              href: api/tenantrelationship-post-multitenantorganization.md
+            - name: Get
+              href: api/multitenantorganization-get.md
+            - name: Update
+              href: api/multitenantorganization-update.md
+            - name: Delete
+              href: api/tenantrelationship-delete-multitenantorganization.md
+          - name: Join request record
+            items:
+            - name: Join request record
+              href: resources/multitenantorganization.md
+            - name: List
+              href: api/multitenantorganization-list-joinrequest.md
+            - name: Create
+              href: api/multitenantorganization-post-joinrequest.md
+            - name: Get
+              href: api/multitenantorganizationjoinrequestrecord-get.md
+            - name: Update
+              href: api/multitenantorganizationjoinrequestrecord-update.md
+            - name: Delete
+              href: api/multitenantorganization-delete-joinrequest.md
+          - name: Member
+            items:
+            - name: Member
+              href: resources/multitenantorganizationmember.md
+            - name: List
+              href: api/multitenantorganization-list-tenants.md
+            - name: Create
+              href: api/multitenantorganization-post-tenants.md
+            - name: Get
+              href: api/multitenantorganizationmember-get.md
+            - name: Update
+              href: api/multitenantorganizationmember-update.md
+            - name: Delete
+              href: api/multitenantorganization-delete-tenants.md
+          - name: Partner configuration template
+            items:
+            - name: Partner configuration template
+              href: resources/multitenantorganizationmember.md
+            - name: List
+              href: api/policytemplate-list-multitenantorganizationpartnerconfiguration.md
+            - name: Create
+              href: api/policytemplate-post-multitenantorganizationpartnerconfiguration.md
+            - name: Get
+              href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+            - name: Update
+              href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+            - name: Delete
+              href: api/policytemplate-delete-multitenantorganizationpartnerconfiguration.md
+            - name: resetToDefaultSettings
+              href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+          - name: Identity sync policy template
+            items:
+            - name: Identity sync policy template
+              href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+            - name: List
+              href: api/policytemplate-list-multitenantorganizationidentitysynchronization.md
+            - name: Create
+              href: api/policytemplate-post-multitenantorganizationidentitysynchronization.md
+            - name: Get
+              href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+            - name: Update
+              href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+            - name: Delete
+              href: api/policytemplate-delete-multitenantorganizationidentitysynchronization.md
+            - name: resetToDefaultSettings
+              href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
         - name: Organization
           href: resources/organization.md
           items:
