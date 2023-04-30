@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [timeCard](../resources/timeCard.md) instance in a [schedule](../resources/schedule.md).
+Delete a [timeCard](../resources/timecard.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
