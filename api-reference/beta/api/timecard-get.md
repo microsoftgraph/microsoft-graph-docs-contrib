@@ -1,6 +1,6 @@
 ---
 title: "Get timeCard"
-description: "Get a timeCard by ID."
+description: "Get the properties and relationships of a timeCard object by ID."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [timeCard](../resources/timeCard.md) object by ID.
+Get the properties and relationships of a [timeCard](../resources/timecard.md) object by ID.
 
 ## Permissions
 
@@ -33,11 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /teams/{teamId}/schedule/timeCards/{timecardID}
-
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to customize the response.
+This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -51,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
 ## Example
 
