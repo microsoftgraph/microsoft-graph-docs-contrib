@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET sites/{site-id}/termStore/sets/{set-id}/children
-GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
+GET /sites/{site-id}/termStore/sets/{set-id}/children
+GET /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ```
 
 ## Optional query parameters

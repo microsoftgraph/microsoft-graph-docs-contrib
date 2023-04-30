@@ -112,7 +112,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the sharing link.
