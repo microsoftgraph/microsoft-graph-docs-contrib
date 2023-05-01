@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "conditionalAccessExternalTenantsMembershipKind",
           "ChangeType": "Addition",
           "Description": "Added the **conditionalAccessExternalTenantsMembershipKind** enumeration type.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "5dd1a692-b492-4bfa-a614-60cc544aafd7",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "conditionalAccessGuestOrExternalUserTypes",
           "ChangeType": "Addition",
           "Description": "Added the **conditionalAccessGuestOrExternalUserTypes** enumeration type.",
@@ -55,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "excludeGuestsOrExternalUsers",
           "ChangeType": "Addition",
-          "Description": "Added the `excludeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Description": "Added the **excludeGuestsOrExternalUsers** property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
           "Target": "conditionalAccessUsers"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includeGuestsOrExternalUsers",
           "ChangeType": "Addition",
-          "Description": "Added the `includeGuestsOrExternalUsers` property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
+          "Description": "Added the **includeGuestsOrExternalUsers** property to the [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers?view=graph-rest-1.0) resource.",
           "Target": "conditionalAccessUsers"
         }
       ],
