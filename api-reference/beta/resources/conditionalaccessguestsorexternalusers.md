@@ -20,7 +20,7 @@ Represents internal guests and external users in a policy scope.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | externalTenants | [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md) | The tenant IDs of the selected types of external users. Either all B2B tenant or a collection of tenant IDs. External tenants can be specified only when the property **guestOrExternalUserTypes** is not `null` or an empty String. |
-| guestOrExternalUserTypes | conditionalAccessGuestOrExternalUserTypes | Indicates internal guests or external user types. This is a multi-valued property. Possible values are: `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`,  `otherExternalUser`, `serviceProvider`, `unknownFutureValue`. |
+| guestOrExternalUserTypes | conditionalAccessGuestOrExternalUserTypes | Indicates internal guests or external user types. This is a multi-valued property. Possible values are: `none`, `internalGuest`, `b2bCollaborationGuest`, `b2bCollaborationMember`, `b2bDirectConnectUser`,  `otherExternalUser`, `serviceProvider`, `unknownFutureValue`. |
 
 ## Relationships
 
