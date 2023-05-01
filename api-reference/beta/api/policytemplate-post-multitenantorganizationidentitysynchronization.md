@@ -45,6 +45,7 @@ In the request body, supply a JSON representation of the [multiTenantOrganizatio
 You can specify the following properties when creating a **multiTenantOrganizationIdentitySyncPolicyTemplate**.
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |userSyncInbound|[Microsoft.DirectoryServices.crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|

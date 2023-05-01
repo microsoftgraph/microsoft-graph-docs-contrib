@@ -44,6 +44,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartner
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |inboundTrust|[Microsoft.DirectoryServices.crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|**TODO: Add Description** Optional.|

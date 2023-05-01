@@ -44,6 +44,7 @@ PATCH /tenantRelationships/multiTenantOrganization
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|

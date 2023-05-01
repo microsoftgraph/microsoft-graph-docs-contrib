@@ -45,6 +45,7 @@ In the request body, supply a JSON representation of the [multiTenantOrganizatio
 You can specify the following properties when creating a **multiTenantOrganizationPartnerConfigurationTemplate**.
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |inboundTrust|[Microsoft.DirectoryServices.crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|**TODO: Add Description** Optional.|

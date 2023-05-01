@@ -44,6 +44,7 @@ PATCH /tenantRelationships/multiTenantOrganization/myTenant
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description** Required.|

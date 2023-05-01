@@ -44,6 +44,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentit
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |userSyncInbound|[Microsoft.DirectoryServices.crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description** Optional.|

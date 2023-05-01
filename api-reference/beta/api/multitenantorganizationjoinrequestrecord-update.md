@@ -44,6 +44,7 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |addedByTenantId|String|**TODO: Add Description** Optional.|

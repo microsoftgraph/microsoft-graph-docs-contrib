@@ -45,6 +45,7 @@ In the request body, supply a JSON representation of the [multiTenantOrganizatio
 You can specify the following properties when creating a **multiTenantOrganization**.
 
 **TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
