@@ -1,9 +1,9 @@
 ---
 title: "Delete multiTenantOrganizationPartnerConfigurationTemplate"
 description: "Delete a multiTenantOrganizationPartnerConfigurationTemplate object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
