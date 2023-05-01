@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessEnumeratedExternalTenants resource type"
-description: "Represents a list of external tenants in the policy scope."
+description: "Represents a list of external tenants in a policy scope."
 ms.localizationpriority: medium
 author: "sandeo"
 ms.prod: "identity-and-sign-in"
@@ -11,13 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a list of external tenants in the policy scope.
+Represents a list of external tenants in a policy scope.
+
+Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | members | String collection | Represents a collection of tenant ids in the scope of Conditional Access for guests and external users policy targeting. |
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object. Inherited from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md). |
 
 ## Relationships
 
@@ -33,11 +36,13 @@ The following is a JSON representation of the resource.
     "members"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessEnumeratedExternalTenants",
-  "baseType": null
+  "baseType": "microsoft.graph.conditionalAccessExternalTenants"
 }-->
 
 ```json
 {
-   "members": ["String"]
+  "@odata.type": "#microsoft.graph.conditionalAccessEnumeratedExternalTenants",
+  "members": ["String"],
+  "membershipKind": "String"
 }
 ```

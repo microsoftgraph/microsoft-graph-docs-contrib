@@ -18,7 +18,7 @@ Represents users, groups, and roles included in and excluded from the policy sco
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | excludeGroups | String collection | Group IDs excluded from scope of policy. |
-| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users excluded in the policy scope. Optionally populated. |
+| excludeGuestsOrExternalUsers | [conditionalAccessGuestsOrExternalUsers](conditionalaccessguestsorexternalusers.md) | Internal guests or external users excluded from the policy scope. Optionally populated. |
 | excludeRoles | String collection | Role IDs excluded from scope of policy. |
 | excludeUsers | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
 | includeGroups | String collection | Group IDs in scope of policy unless explicitly excluded. |
@@ -53,13 +53,13 @@ The following is a JSON representation of the resource.
 ```json
 {
   "excludeGroups": ["String"],
+  "excludeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"},
   "excludeRoles": ["String"],
   "excludeUsers": ["String"],
-  "excludeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"},
   "includeGroups": ["String"],
+  "includeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"},
   "includeRoles": ["String"],
-  "includeUsers": ["String"],
-  "includeGuestsOrExternalUsers": {"@odata.type": "microsoft.graph.conditionalAccessGuestOrExternalUsers"}
+  "includeUsers": ["String"]  
 }
 ```
 
