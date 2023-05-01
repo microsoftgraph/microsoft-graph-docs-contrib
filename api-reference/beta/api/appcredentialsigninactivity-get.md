@@ -2,7 +2,7 @@
 title: "Get application credential last used activity date"
 doc_type: apiPageType
 description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
-localization_priority: Normal
+localization_priority: medium
 author: "madansr7
 ms.prod: "identity-and-sign-in"
 ---
@@ -38,9 +38,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name          | Description    |
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

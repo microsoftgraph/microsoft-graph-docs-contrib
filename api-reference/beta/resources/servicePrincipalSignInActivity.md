@@ -17,17 +17,17 @@ The sign-in activities for a servicePrincipal. Contains information about last u
 
 ## Methods
 
-| Method                                                                             | Return Type                    | Description                                                                   |
-| :--------------------------------------------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------- |
-| [List servicePrincipalSignInActivity](../api/reportroot-list-serviceprincipalsigninactivities.md) | servicePrincipalSignInActivity | Retrieve a list of servicePrincipalSignInActivity objects.                    |
+| Method                                                                               | Return Type                    | Description                                                                   |
+| :----------------------------------------------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------- |
+| [List servicePrincipalSignInActivity](../api/serviceprincipalsigninactivity-list.md) | servicePrincipalSignInActivity | Retrieve a list of servicePrincipalSignInActivity objects.                    |
 | [Get servicePrincipalSignInActivity](../api/serviceprincipalsigninactivity-get.md)   | servicePrincipalSignInActivity | Read properties and relationships of a servicePrincipalSignInActivity object. |
 
 ## Properties
 
-| Property                                        | Type                           | Description                                                                                                                                     |
-| :---------------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                                              | String                         | The unique id for each service principal sign-in event.                                                                                         |
-| appId                                           | String                         | The application id of the resource.                                                                                                             |
+| Property                                        | Type                                             | Description                                                                                                                                     |
+| :---------------------------------------------- | :----------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                              | String                                           | The unique id for each service principal sign-in event.                                                                                         |
+| appId                                           | String                                           | The application id of the resource.                                                                                                             |
 | delegatedClientSignInActivity                   | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a client.                       |
 | delegatedResourceSignInActivity                 | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a delegated flow (user sign in) where the application is acting like a resource.                     |
 | applicationAuthenticationClientSignInActivity   | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the application in a app-only auth flow (app to app tokens) where the application is acting like a client.              |
