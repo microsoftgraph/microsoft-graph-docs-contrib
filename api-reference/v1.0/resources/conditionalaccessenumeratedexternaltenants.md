@@ -19,7 +19,7 @@ Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenant
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| members | String collection | Represents a collection of tenant ids in the scope of Conditional Access for guests and external users policy targeting. |
+| members | String collection | A collection of tenant IDs that define the scope of a policy targeting conditional access for guests and external users. |
 | membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object. Inherited from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md). |
 
 ## Relationships
