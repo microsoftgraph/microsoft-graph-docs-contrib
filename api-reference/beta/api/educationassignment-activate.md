@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [status](/graph/api/resources/educationassignment?#properties) value of `assigned` in the response body.
+If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object with `assigned` status in the response body.
 
 ## Example
 
@@ -58,6 +58,7 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a/activate
+Content-type: application/json
 ```
 ### Response
 The following is an example of the response.

@@ -17,6 +17,8 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
+You can use the `Prefer` header in your request to get the `inactive` status in case of the assignment be deactivated, otherwise you will get an `unknownFutureValue` value in the response.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -35,13 +37,14 @@ GET /education/classes/{id}/assignments/{id}
 This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
-
 The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required. |
+| Prefer        | include-unknown-enum-members |
 
 ## Request body
 Don't supply a request body for this method.
@@ -156,7 +159,7 @@ Content-length: 279
 }
 ```
 
-## Example 2: Get assignment in inactive state with optional Prefer header
+### Example 2: Get assignment in inactive state with optional Prefer header
 #### Request
 The following is an example of the request.
 
