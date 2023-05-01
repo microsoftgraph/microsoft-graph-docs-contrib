@@ -410,12 +410,12 @@ The limits in this section are evaluated for each app ID and mailbox combination
 
 ### Outlook service limits for JSON batching
 
-By default, when you send a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, the service runs up to four requests in parallel at any point, irrespective of the target mailbox. This limit ensures that the requests stay within the [concurrency limits of Outlook](#limits-per-app-id). Apps can also use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to execute each individual request in the batch sequentially.
-  
+By default, when you send a [JSON batch](json-batching.md) request that consists of multiple individual requests to the Outlook service, the service runs up to four requests in parallel at any point, irrespective of the target mailbox. This limit ensures that the requests stay within the [concurrency limits of Outlook](#limits-per-app-id). Apps can also use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to specify an order to run each individual request in the batch sequentially.
+
 Applications that allow multiple batch requests (multiple) to run asynchronously in parallel, have two possible options that apply when targeting the same mailbox:
 
 - Have up to four individual requests in a single batch request running concurrently (without specifying **dependsOn** in the batch request)
-- Use the **dependsOn** property for each batch request and have up to 4 such batch requests running concurrently
+- Use the **dependsOn** property for each batch request and have up to four such batch requests running concurrently
 
 ## Project Rome service limits
 
