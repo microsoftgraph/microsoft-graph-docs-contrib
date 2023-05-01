@@ -122,7 +122,7 @@ Content-type: application/json
 
 {
   "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
-    "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
+  "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
   "keyType":"secret",
   "keyUsage": "sign",
