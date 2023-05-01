@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TeamsById("team-id").TagsById("teamworkTag-id").Get(context.Background(), nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Tags().ByTagId("teamworkTag-id").Get(context.Background(), nil)
 
 
 ```

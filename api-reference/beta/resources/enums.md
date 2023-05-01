@@ -23,8 +23,7 @@ Namespace: microsoft.graph
 | application
 | servicePrincipal
 
-### usqState values
-
+### assignmentType values
 | Member    |
 | :-------- |
 | norma.    |

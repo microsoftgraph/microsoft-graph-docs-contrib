@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.AccessReviewsById("accessReview-id").Stop().Post(context.Background(), nil)
+graphClient.AccessReviews().ByAccessReviewId("accessReview-id").Stop().Post(context.Background(), nil)
 
 
 ```

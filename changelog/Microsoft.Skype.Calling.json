@@ -1,5 +1,31 @@
 {
   "changelog": [
+   {
+      "ChangeList": [
+        {
+          "Id": "ff343287-bb5a-446a-b91f-7ea65d7842db",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingChatHistoryDefaultMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatHistoryDefaultMode** enumeration type.",
+          "Target": "meetingChatHistoryDefaultMode"
+        },
+        {
+          "Id": "700d5989-32ce-41d8-8b4e-de666698df3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareMeetingChatHistoryDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareMeetingChatHistoryDefault** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "ff343287-bb5a-446a-b91f-7ea65d7842db",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-20T06:54:01.89062Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {
@@ -2882,6 +2908,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-12-16T00:17:48.4795689Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7b116627-863d-41cd-a828-26d71fe05118",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the [removedState](https://learn.microsoft.com/en-us/graph/api/resources/removedState?view=graph-rest-beta) resource type.",
+          "Target": "removedState"
+        },
+        {
+          "Id": "7b116627-863d-41cd-a828-26d71fe05118",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deltaParticipants",
+          "ChangeType": "Addition",
+          "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-beta) resource type.",
+          "Target": "deltaParticipants"
+        },
+        {
+          "Id": "7b116627-863d-41cd-a828-26d71fe05118",
+          "ApiChange": "Property",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the **removedState** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "7b116627-863d-41cd-a828-26d71fe05118",
+          "ApiChange": "Property",
+          "ChangedApiName": "rosterSequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosterSequenceNumber** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "7b116627-863d-41cd-a828-26d71fe05118",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04026T18:53:05.923296Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

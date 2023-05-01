@@ -42,7 +42,7 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 }
 requestBody.SetBuckets(buckets)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
 
 
 ```

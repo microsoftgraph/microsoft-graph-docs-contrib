@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/v1.0/groups/{id}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Members().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Directory().AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Members().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

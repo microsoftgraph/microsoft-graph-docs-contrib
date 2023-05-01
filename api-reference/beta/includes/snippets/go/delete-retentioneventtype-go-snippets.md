@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().TriggerTypes().RetentionEventTypesById("retentionEventType-id").Delete(context.Background(), nil)
+graphClient.Security().TriggerTypes().RetentionEventTypes().ByRetentionEventTypeId("retentionEventType-id").Delete(context.Background(), nil)
 
 
 ```

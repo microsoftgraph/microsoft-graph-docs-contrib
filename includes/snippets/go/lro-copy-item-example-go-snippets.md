@@ -23,7 +23,7 @@ requestBody.SetParentReference(parentReference)
 name := "Copy of LargeFolder1"
 requestBody.SetName(&name) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Copy().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Copy().Post(context.Background(), requestBody, nil)
 
 
 ```

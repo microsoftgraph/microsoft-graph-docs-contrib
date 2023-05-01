@@ -208,6 +208,8 @@ items:
                 href: change-notifications-delivery-webhooks.md
               - name: Notifications through Azure Event Hubs
                 href: change-notifications-delivery-event-hubs.md
+              - name: Notifications through Azure Event Grid (preview)
+                href: /azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext
           - name: Lifecycle notifications for subscriptions
             href: webhooks-lifecycle.md
           - name: Rich notifications
@@ -647,6 +649,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Supported language codes
+            href: search-concept-acceptlanguage-header.md
       - name: Security
         items:
           - name: Overview
