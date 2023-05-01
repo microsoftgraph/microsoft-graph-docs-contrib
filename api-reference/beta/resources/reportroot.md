@@ -38,10 +38,12 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|appCredentialSignInActivities|[appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection|**TODO: Add Description**|
 |applicationSignInDetailedSummary|[applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) collection|Represents a detailed summary of an application sign-in.|
 |authenticationMethods|[authenticationMethodsRoot](../resources/authenticationmethodsroot.md)|Container for navigation properties for Azure AD authentication methods resources.|
 |credentialUserRegistrationDetails|[credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection|Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.|
 |security|[securityReportsRoot](../resources/securityreportsroot.md)|Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.|
+|servicePrincipalSignInActivities|[servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection|**TODO: Add Description**|
 |userCredentialUsageDetails|[userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection|Represents the self-service password reset (SSPR) usage for a given tenant.|
 
 ## JSON representation
@@ -50,11 +52,13 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.reportRoot",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.reportRoot"
+  "id": "String (identifier)"
 }
 ```

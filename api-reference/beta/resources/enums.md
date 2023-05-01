@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 |sign
 |verify
 
-### credentialOrigin values
+### applicationKeyOrigin values 
 | Member
 |:--------------
 | application

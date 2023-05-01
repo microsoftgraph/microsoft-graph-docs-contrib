@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [appCredentialSignInActivity](../resources/appCredentialSignInActivity.md) object that contains recent activity of an application credential.
+Read the properties and relationships of an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential.
 
 ## Permissions
 
@@ -29,18 +29,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
+GET /reports/appCredentialSignInActivities/{appCredentialSignInActivityId}
 ```
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name          | Description    |
-| :------------ | :------------- |
-| Authorization | Bearer {token} |
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [signIn](../resources/appCredentialSignInActivity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object in the response body.
 
 ## Examples
 
@@ -60,10 +60,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1"
+  "name": "get_appcredentialsigninactivity"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{id}
+GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/{appCredentialSignInActivityId}
 ```
 #### Response
 
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.signIn"
+  "@odata.type": "microsoft.graph.appCredentialSignInActivity"
 } -->
 
 
@@ -83,6 +83,7 @@ Content-length: 211
 
 
 {
+ "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
   "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
   "keyType":"certificate",
@@ -121,6 +122,7 @@ Content-type: application/json
 
 {
   "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
+    "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
   "keyType":"secret",
   "keyUsage": "sign",
@@ -158,6 +160,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+ "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u",
   "keyId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
   "keyType":"secret",

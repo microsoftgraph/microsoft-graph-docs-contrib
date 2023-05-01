@@ -15156,18 +15156,18 @@ items:
             href: resources/servicePrincipalSignInActivity.md
             items:
             - name: Get service principal activity
-              href: api/serviceprincipal-lastusedate-get.md
+              href: api/serviceprincipalsigninactivity-get.md
             - name: List service principal activity
-              href: api/serviceprincipal-lastusedate-list.md
+              href: api/serviceprincipalsigninactivity-list.md
         - name: Application credential activity
           items:
           - name: Application credential activity
             href: resources/appCredentialSignInActivity.md
             items:
             - name: Get application credential activity
-              href: api/application-credential-lastusedate-get.md
+              href: api/appcredentialsigninactivity-get.md
             - name: List application credential activity
-              href: api/application-credential-lastusedate-list.md           
+              href: api/appcredentialsigninactivity-list.md           
         - name: Registration and usage
           items:
           - name: Overview

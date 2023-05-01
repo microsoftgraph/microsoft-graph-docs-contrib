@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [appCredentialSignInActivity](../resources/appCredentialSignInActivity.md) object that contains recent activity of application credentials.
+Read a list of [appCredentialSignInActivity](../resources/appCredentialSignInActivity.md) objects that contains recent activity of application credentials.
 
 ## Permissions
 
