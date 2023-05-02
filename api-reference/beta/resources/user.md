@@ -202,7 +202,7 @@ This resource supports:
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on `$select`. |
-| isLicenseReconciliationNeeded | Boolean | Indicates whether license reconciliation is needed for the user. <br><br> Read only. |
+| isLicenseReconciliationNeeded | Boolean | Indicates whether license reconciliation is needed for the user. <br><br> Read only. <br><br> Supports `$filter`  for users who require license license reconciliation only i.e. `eq true`  |
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
