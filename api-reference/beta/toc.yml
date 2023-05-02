@@ -16510,10 +16510,6 @@ items:
             href: api/sharepointSettings-get.md
           - name: Update settings
             href: api/sharepointSettings-update.md
-      - name: IdleSessionSignout setting
-        items:
-          - name: IdleSessionSignout
-            href: resources/idlesessionsignout.md
     - name: Tasks and plans
       displayName: Planner
       items:
