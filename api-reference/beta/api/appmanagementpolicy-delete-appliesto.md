@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /applications/{applicationObjectId}/appManagementPolicies/{appManagementPolicyId}/$ref
+DELETE /servicePrincipals/{servicePrincipalObjectId}/appManagementPolicies/{appManagementPolicyId}/$ref
 ```
 
 ## Request headers
