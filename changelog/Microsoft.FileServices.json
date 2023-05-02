@@ -49,7 +49,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
           "Target": "admin"
-        },      
+        }
       ],
       "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
       "Cloud": "Prod",
@@ -60,7 +60,7 @@
     },
     {
       "ChangeList": [
-    {
+        {
           "Id": "a4a26d2c-47f7-4aa2-9a38-8c979cc811a1",
            "ApiChange": "Resource",
            "ChangedApiName": "tenantadmin-sharepoint",
@@ -68,7 +68,7 @@
            "Description": "Removed the [tenantadmin-sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource.",
            "Target": "tenantadmin-sharepoint"
         },
-         {
+        {
           "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
           "ApiChange": "Relationship",
           "ChangedApiName": "sharepointSettings",
@@ -77,14 +77,14 @@
           "Target": "admin"
         } 
       ],
-         "Id": "a4a26d2c-47f7-4aa2-9a38-8c979cc811a1",
+      "Id": "a4a26d2c-47f7-4aa2-9a38-8c979cc811a1",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-28T21:52:28.1485706Z",
       "WorkloadArea": "Files",
       "SubArea": ""
-       },
-      {
+    },
+    {
       "ChangeList": [
         {
           "Id": "bb775eb6-032d-4958-946f-a5b608a5be43",
@@ -245,237 +245,237 @@
       "SubArea": ""
     },
     {
-  "ChangeList":[
-    {
+      "ChangeList":[
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedTo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentities",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentitiesV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+          "Target": "permission"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+          "Target": "permission"
+        }
+      ],
       "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedTo",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
-      "Target": "permission"
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     },
     {
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentities",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
-      "Target": "permission"
-    },
-    {
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentitiesV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentity",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
-      "Target": "permission"
-    },
-    {
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentitySet",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
-      "Target": "permission"
-    }
-  ],
-  "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
-  "Cloud": "prd",
-  "Version": "v1.0",
-  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
-  "WorkloadArea": "Files",
-  "SubArea": ""
-},
-{
-  "ChangeList":[
-    {
+      "ChangeList":[
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedTo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentities",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentitiesV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+          "Target": "permission"
+        },
+        {
+          "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+          "Target": "permission"
+        }
+      ],
       "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedTo",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
-      "Target": "permission"
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-11T22:39:56.000Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     },
     {
-      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentities",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
-      "Target": "permission"
-    },
-    {
-      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentitiesV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentity",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
-      "Target": "permission"
-    },
-    {
-      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentitySet",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
-      "Target": "permission"
-    }
-  ],
-  "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
-  "Cloud": "prd",
-  "Version": "v1.0",
-  "CreatedDateTime": "2021-09-11T22:39:56.000Z",
-  "WorkloadArea": "Sites and lists",
-  "SubArea": ""
-},
-{
-  "ChangeList":[
-    {
+      "ChangeList":[
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedTo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentities",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentitiesV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+          "Target": "permission"
+        },
+        {
+          "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+          "Target": "permission"
+        }
+      ],
       "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedTo",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
-      "Target": "permission"
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     },
     {
-      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentities",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
-      "Target": "permission"
-    },
-    {
-      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentitiesV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentity",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
-      "Target": "permission"
-    },
-    {
-      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentitySet",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
-      "Target": "permission"
-    }
-  ],
-  "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
-  "Cloud": "prd",
-  "Version": "beta",
-  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
-  "WorkloadArea": "Files",
-  "SubArea": ""
-},
-{
-  "ChangeList":[
-    {
+      "ChangeList":[
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedTo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentities",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+          "Target": "permission"
+        },
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantedToIdentitiesV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+          "Target": "permission"
+        },
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+          "Target": "permission"
+        },
+        {
+          "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+          "Target": "permission"
+        }
+      ],
       "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedTo",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedTo** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
-      "Target": "permission"
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     },
-    {
-      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentities",
-      "ChangeType": "Deprecation",
-      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
-      "Target": "permission"
-    },
-    {
-      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Property",
-      "ChangedApiName": "grantedToIdentitiesV2",
-      "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
-      "Target": "permission"
-    },
-    {
-      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentity",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
-      "Target": "permission"
-    },
-    {
-      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-      "ApiChange": "Resource",
-      "ChangedApiName": "sharePointIdentitySet",
-      "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
-      "Target": "permission"
-    }
-  ],
-  "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
-  "Cloud": "prd",
-  "Version": "beta",
-  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
-  "WorkloadArea": "Sites and lists",
-  "SubArea": ""
-},
     {
       "ChangeList":[
         {
@@ -2273,7 +2273,7 @@
       "ChangeList": [
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Enumeration",
+          "ApiChange": "EnumType",
           "ChangedApiName": "columnTypes",
           "ChangeType": "Addition",
           "Description": "Added the **columnTypes** enumeration type.",
