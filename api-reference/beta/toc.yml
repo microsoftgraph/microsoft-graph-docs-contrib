@@ -16506,10 +16506,11 @@ items:
         items:
           - name: Sharepoint Settings
             href: resources/sharepointSettings.md
-          - name: Get Sharepoint settings
-            href: api/sharepointSettings-get.md
-          - name: Update Sharepoint settings
-            href: api/sharepointSettings-update.md
+            items:
+            - name: Get Sharepoint settings
+              href: api/sharepointSettings-get.md
+            - name: Update Sharepoint settings
+              href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
