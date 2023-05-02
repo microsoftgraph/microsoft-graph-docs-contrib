@@ -13202,6 +13202,32 @@
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "5037c838-ee0a-4207-8969-620185db4240",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationBehaviors",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource type.",
+          "Target": "authenticationBehaviors"
+        },
+        {
+          "Id": "5037c838-ee0a-4207-8969-620185db4240",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationBehaviors",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationBehaviors` property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "5037c838-ee0a-4207-8969-620185db4240",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-20T01:47:34.2749095Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }    
   ]
 }
