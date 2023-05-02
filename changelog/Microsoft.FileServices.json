@@ -2273,7 +2273,7 @@
       "ChangeList": [
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "columnTypes",
           "ChangeType": "Addition",
           "Description": "Added the **columnTypes** enumeration type.",
