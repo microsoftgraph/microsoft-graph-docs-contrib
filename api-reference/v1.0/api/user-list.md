@@ -35,7 +35,7 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. You must specify `$select=signInActivity` or `$filter=signInActivity` while [listing users](../api/user-list.md), as it's not listed by default.
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. You must specify `$select=signInActivity` or `$filter=signInActivity` while [listing users](../api/user-list.md), as the signInActivity property is not returned by default.
 
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
 
