@@ -11,6 +11,24 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### authenticationAttributeCollectionInputType values 
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
+
+### userType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
 ### usqState values
 
 | Member             | 

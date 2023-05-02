@@ -28,6 +28,7 @@ None.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |apiConnectors|[identityApiConnector](identityApiConnector.md) collection|Represents entry point for API connectors.|
+|authenticationEventsFlows|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Represents entry point for Self-Service User Flows for both AAD Workforce and AAD Customer tenants.|
 |b2cUserFlows|[b2cIdentityUserFlow](b2cIdentityUserFlow.md) collection|Represents entry point for B2C identity userflows.|
 |b2xUserFlows|[b2xIdentityUserFlow](b2xIdentityUserFlow.md) collection| Represents entry point for B2X and self-service sign-up identity userflows.|
 |identityProviders|[identityProviderBase](identityProviderBase.md) collection| Represents entry point for identity provider base.|

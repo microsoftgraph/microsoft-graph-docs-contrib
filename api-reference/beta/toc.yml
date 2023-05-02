@@ -14102,6 +14102,38 @@ items:
               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+          - name: Authentication Events Flows (preview)
+            items:
+            - name: Authentication events flow base
+              href: resources/authenticationeventsflow.md
+            - name: Self-service sign up user flow
+              href: resources/externaluserselfservicesignupeventsflow.md
+            - name: List
+              href: api/identitycontainer-list-authenticationeventsflows.md
+            - name: Create
+              href: api/identitycontainer-post-authenticationeventsflows.md
+            - name: Get
+              href: api/authenticationeventsflow-get.md
+            - name: Update
+              href: api/authenticationeventsflow-update.md
+            - name: Delete
+              href: api/authenticationeventsflow-delete.md
+            - name: List identity providers (auth methods)
+              href: api/b2xidentityuserflow-list-userflowidentityproviders.md
+            - name: Add identity provider (auth method)
+              href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+            - name: Delete identity provider
+              href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+            - name: List user attribute assignments
+              href: api/b2xidentityuserflow-list-userattributeassignments.md
+            - name: Create user attribute assignment
+              href: api/b2xidentityuserflow-post-userattributeassignments.md
+            - name: List languages
+              href: api/b2xidentityuserflow-list-languages.md
+            - name: Get API connectors configuration
+              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+            - name: Configure an API connector
+              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md              
           - name: User flow attributes
             items:
             - name: User flow attribute
