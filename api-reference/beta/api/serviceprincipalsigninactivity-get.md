@@ -103,7 +103,7 @@ Content-type: application/json
      "applicationAuthenticationResourceSignInActivity": {
           "lastSignInDateTime": "2021-04-01T00:00:00Z",
           "lastSignInRequestId": "53e6981f-2272-4deb-972c-c8272aca986d"
-     }
+     },
      "lastSignInActivity": {
           "lastSignInDateTime": "2021-04-01T00:00:00Z",
           "lastSignInRequestId": "cd9733e8-d75a-468f-a63d-6e82bd48c05e"
