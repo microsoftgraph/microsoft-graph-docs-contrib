@@ -16504,7 +16504,7 @@ items:
             href: api/termStore-relation-post.md
       - name: Tenant settings
         items:
-          - name: Settings
+          - name: Sharepoint Settings
             href: resources/sharepointSettings.md
           - name: Get settings
             href: api/sharepointSettings-get.md
