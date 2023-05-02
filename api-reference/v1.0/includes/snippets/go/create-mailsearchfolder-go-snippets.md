@@ -29,7 +29,7 @@ requestBody.SetIncludeNestedFolders(&includeNestedFolders)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MailFoldersById("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

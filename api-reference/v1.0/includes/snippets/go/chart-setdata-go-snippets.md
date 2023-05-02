@@ -21,7 +21,7 @@ requestBody.SetSourceData(&sourceData)
 seriesBy := "seriesBy-value"
 requestBody.SetSeriesBy(&seriesBy) 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().WorksheetsById("workbookWorksheet-id").ChartsById("workbookChart-id").SetData().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").SetData().Post(context.Background(), requestBody, nil)
 
 
 ```

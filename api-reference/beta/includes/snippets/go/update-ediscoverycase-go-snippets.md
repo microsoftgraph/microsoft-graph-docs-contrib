@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Updated description"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

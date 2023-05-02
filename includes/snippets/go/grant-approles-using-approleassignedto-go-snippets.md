@@ -24,7 +24,7 @@ requestBody.SetResourceId(&resourceId)
 appRoleId := uuid.MustParse("df021288-bdef-4463-88db-98f22de89214")
 requestBody.SetAppRoleId(&appRoleId) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AppRoleAssignedTo().Post(context.Background(), requestBody, nil)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AppRoleAssignedTo().Post(context.Background(), requestBody, nil)
 
 
 ```

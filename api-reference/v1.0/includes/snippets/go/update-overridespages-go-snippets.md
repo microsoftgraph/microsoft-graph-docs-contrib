@@ -38,7 +38,7 @@ value := "Are you sure that you want to cancel entering your information?"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").LanguagesById("userFlowLanguageConfiguration-id").OverridesPagesById("userFlowLanguagePage-id").Value().Put(context.Background(), requestBody, nil)
+graphClient.Identity().B2xUserFlows().ByB2xUserFlowId("b2xIdentityUserFlow-id").Languages().ByLanguageId("userFlowLanguageConfiguration-id").OverridesPages().ByOverridesPageId("userFlowLanguagePage-id").Value().Put(context.Background(), requestBody, nil)
 
 
 ```

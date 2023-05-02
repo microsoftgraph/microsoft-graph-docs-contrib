@@ -23,7 +23,7 @@ configuration := &graphconfig.TenantRelationshipsDelegatedAdminRelationshipItemR
 	Headers: headers,
 }
 
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Delete(context.Background(), configuration)
+graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Delete(context.Background(), configuration)
 
 
 ```
