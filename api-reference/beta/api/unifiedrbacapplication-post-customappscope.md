@@ -1,6 +1,6 @@
 ---
 title: "Create customAppScope"
-description: "Create a new customAppScope object."
+description: "Create a new customAppScope object for an RBAC provider."
 ms.localizationpriority: medium
 author: "bili1"
 ms.prod: "directory-management"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [customAppScope](../resources/customappscope.md) object.
+Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider.
+
+Currently only the Exchange Online RBAC provider is supported.
 
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-### For an Exchange Online provider
+<!--### For an Exchange Online provider-->
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,7 +31,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-Create a custom app scope for the Exchange Online provider:
+For an Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,12 +39,12 @@ Create a custom app scope for the Exchange Online provider:
 POST /roleManagement/exchange/customAppScopes
 ```
 
-
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}              |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -54,13 +56,17 @@ If successful, this method returns a `201 Created` response code and a new [cust
 
 ## Examples
 
-### Example 1: Create a custom app scope object with recipient scope type for Exchange Online Provider
+<!--### Example 1: Create a custom app scope object with recipient scope type for Exchange Online Provider-->
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows how to create a **customAppScope** object with **type** `RecipientScope` for an Exchange Online provider.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "post_customAppScope_ExchangeOnlineProvider"
+}
+-->
 ```http
 POST https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 Content-type: application/json
@@ -75,7 +81,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 

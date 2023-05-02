@@ -1,6 +1,6 @@
 ---
 title: "Update customAppScope"
-description: "Update an existing customAppScope object."
+description: "Update an existing customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
 author: "bili1"
 ms.prod: "directory-management"
@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.
 
+Currently only the Exchange Online RBAC provider is supported.
+
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-### For an Exchange Online provider
+<!--### For an Exchange Online provider-->
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,9 +31,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To update an existing customAppScope for the Exchange Online provider:
-<!-- { "blockType": "ignored" } -->
+For an Exchange Online provider:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /roleManagement/exchange/customAppScopes/{id}
 ```
@@ -52,13 +54,18 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Examples
 
-### Example 1: Update an existing custom app scope object for Exchange Online Provider
+<!--### Example 1: Update an existing custom app scope object for Exchange Online Provider-->
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows how to update an existing **customAppScope** of an Exchange Online provider.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "update_customAppScope_ExchangeOnlineProvider",
+  "sampleKeys": ["d101e64d-4684-4970-ba7b-735b6b27628f"]
+}
+-->
 ```http
 PATCH https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/d101e64d-4684-4970-ba7b-735b6b27628f
 Content-type: application/json
@@ -70,10 +77,15 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```

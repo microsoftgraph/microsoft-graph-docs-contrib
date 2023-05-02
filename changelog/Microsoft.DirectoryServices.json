@@ -7,11 +7,11 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customAppScope",
           "ChangeType": "Addition",
-          "Description": "Added the [customAppScope](https://learn.microsoft.com/en-us/graph/api/resources/customAppScope?view=graph-rest-beta) resource type",
+          "Description": "Added the [customAppScope](https://learn.microsoft.com/en-us/graph/api/resources/customAppScope?view=graph-rest-beta) resource and supported methods.",
           "Target": "customAppScope"
         },
         {
-          "Id": "e5e2a1f1-7dea-43f9-a029-b1c89bfbcd24",
+          "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
           "ApiChange": "Resource",
           "ChangedApiName": "customAppScopeAttributesDictionary",
           "ChangeType": "Addition",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "customAppScopes",
           "ChangeType": "Addition",
           "Description": "Added the **customAppScopes** relationship to the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource.",

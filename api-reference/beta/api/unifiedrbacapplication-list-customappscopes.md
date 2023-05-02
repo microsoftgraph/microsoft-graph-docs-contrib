@@ -1,6 +1,6 @@
 ---
 title: "List customAppScopes"
-description: "Get a list of customAppScope objects."
+description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
 author: "bili1"
 ms.prod: "directory-management"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [customAppScope](../resources/customappscope.md) objects for the provider. Currently only Exchange Online RBAC provider is supported.
+Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider.
+
+Currently only the Exchange Online RBAC provider is supported.
 
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-### For an Exchange Online provider
+<!--### For an Exchange Online provider-->
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -27,10 +29,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
-
 ## HTTP request
 
-To list custom app scopes for an Exchange Online provider:
+For an Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -54,22 +55,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request all custom app scope objects for Exchange Online Provider
+<!--### Example 1: Request all custom app scope objects for Exchange Online Provider-->
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows how to request all **customAppScope** objects of an Exchange Online provider.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_customAppScope_ExchangeOnlineProvider"
+}
+-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 ```
 
-#### Response
-
-> **Note:** The response object shown here might be shortened for readability.
+### Response
 
 The following is an example of the response.
 
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.customAppScope)"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
