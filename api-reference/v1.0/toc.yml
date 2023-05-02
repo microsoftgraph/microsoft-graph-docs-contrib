@@ -7627,9 +7627,8 @@ items:
           - name: Create
             href: api/termStore-relation-post.md
       - name: SharePoint settings
+        href: resources/sharepointSettings.md
         items:
-          - name: sharepointSettings
-            href: resources/sharepointSettings.md
           - name: Get settings
             href: api/sharepointSettings-get.md
           - name: Update settings
