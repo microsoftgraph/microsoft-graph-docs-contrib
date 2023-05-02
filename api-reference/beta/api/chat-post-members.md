@@ -331,12 +331,12 @@ Here is an example of the request.
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g",
     "roles": ["guest"]
 }
 ```
@@ -398,12 +398,12 @@ Here is an example of the request.
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d",
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d",
     "roles": ["owner"],
     "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
 }
