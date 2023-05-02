@@ -76,7 +76,6 @@ DELETE /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu/
 
 ---
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

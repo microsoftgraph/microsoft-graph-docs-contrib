@@ -49,7 +49,7 @@ GET /roleManagement/directory/roleDefinitions
 To list role definitions for the entitlement management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
-/roleManagement/entitlementManagement/roleDefinitions
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-provider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

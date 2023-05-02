@@ -88,7 +88,6 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 
 ---
 
-
 ### Response
 <!-- {
   "blockType": "response",
