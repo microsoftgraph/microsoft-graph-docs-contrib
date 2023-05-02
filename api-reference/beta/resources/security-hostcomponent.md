@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Represents a web component that provides details about a web page or server infrastructure gleaned from a web crawl or scan. This information can be used to detect bad actors or sites that are compromised. It can also help users understand whether a site is vulnerable to a specific attack or compromise.
 
 A host component is associated with a [host](../resources/security-host.md) resource.

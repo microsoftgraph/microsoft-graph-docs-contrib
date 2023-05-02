@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Represents a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md) that is currently or was previously available on the Internet and Microsoft Defender Threat Intelligence has detected.
 
 This is an abstract type. Implementations of this type include:

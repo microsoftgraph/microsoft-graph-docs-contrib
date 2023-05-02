@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Represents an IP address which is (or has been) addressable over the internet. This resource acts as a grouping mechanism for related details about the hostname or IP address, such as the reputation, any related trackers or cookies, and so on.
 
 You cannot retrieve this type directly. To access it, retrieve the [host](../resources/security-host.md) resource.

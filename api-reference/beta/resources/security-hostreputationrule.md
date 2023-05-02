@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Represents a rule that is used (in combination with other rules) to determine the reputation of a [hostname](../resources/security-hostname.md) or [IP address](../resources/security-ipaddress.md). Each **hostReputationRule** only applies within the parent [hostReputation](../resources/security-hostreputation.md).
 
 ## Properties

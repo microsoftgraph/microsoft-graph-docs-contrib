@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Get the [intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) resources from the **indicators** navigation property of an [intelligenceProfile](../resources/security-intelligenceprofile.md).
 
 ## Permissions

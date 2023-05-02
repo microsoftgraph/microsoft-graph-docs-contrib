@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> **Note:** The Microsoft Graph API for Threat Intelligence requires an [active Defender Threat Intelligence Portal license and API add-on license](https://go.microsoft.com/fwlink/?linkid=2235706) for the tenant.
+
 Represents artifacts observed by Microsoft Security services that do not have a supporting API. While the threat intelligence APIs provide API support for many types of [artifacts](../resources/security-artifact.md), some data elements either are not yet supported or cannot be supported. The **unclassifiedArtifact** resource extends artifacts, communicating what information has been gathered to allow for information analysis. An API is not currently available to provide for further details.
 
 This resource is not an addressable. The data contained is meant to communicate available information where applicable.
