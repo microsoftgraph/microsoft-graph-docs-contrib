@@ -411,7 +411,7 @@ When an app makes a [JSON batch](json-batching.md) request that consists of mult
 
 Alternatively, an app can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to order requests within a batch. Microsoft Graph sends the Outlook service one request from the batch at a time following the specified order, and Outlook executes each individual request in the batch sequentially.
   
-In other words, when targeting the _same mailbox_, apps that allow multiple batch requests (multiple) to run in parallel can use either of the following approaches: 
+In other words, when targeting the _same mailbox_, apps that allow multiple batch requests to run in parallel can use either of the following approaches: 
 - If the individual requests do not have to be ordered, have individual requests from a single batch run concurrently. 
 - Use the `dependsOn` property to order requests in a batch, and have up to 4 such batch requests run concurrently.
 
