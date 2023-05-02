@@ -69,9 +69,9 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the **assignment** has been published.|
+|resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
-|resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -117,9 +117,10 @@ The following is a JSON representation of the resource.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "notificationChannelUrl": "String",
+  "resourcesFolderUrl": "String",
   "status": "String",
-  "webUrl": "String",
-  "resourcesFolderUrl": "String"
+  "webUrl": "String"
+ 
 }
 ```
 
