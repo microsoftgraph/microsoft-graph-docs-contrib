@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServicePrincipalsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ServicePrincipalsRequestBuilderGetQueryParameters();
-$queryParameters->select = ["id","appId","displayName"];
-$queryParameters->filter = "startswith(displayName,%20'salesforce')";
-
 $headers = [
-'Authorization' => 'Bearer {Token}',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Authorization' => 'Bearer {Token}',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["id","appId","displayName"];
+$queryParameters->filter = "startswith(displayName,%20'salesforce')";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
+
+$result = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
 
 
 ```

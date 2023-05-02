@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The description of the tag as it will appear to the user in Microsoft Teams.|
+|description|String|The description of the tag as it will appear to the user in Microsoft Teams. A **teamworkTag** can't have more than 200 **teamworkTagMembers**.|
 |displayName|String|The name of the tag as it will appear to the user in Microsoft Teams.|
 |id|String|The unique identifier for the tag. Inherited from [entity](../resources/entity.md).|
 |memberCount|Int32|The number of users assigned to the tag.|

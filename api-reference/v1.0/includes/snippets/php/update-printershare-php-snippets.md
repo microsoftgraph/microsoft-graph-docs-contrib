@@ -15,14 +15,14 @@ $requestBody->setDisplayName('PrinterShare Name');
 $requestBody->setAllowAllUsers(false);
 
 $additionalData = [
-'printer@odata.bind' => 'https://graph.microsoft.com/v1.0/print/printers/{printerId}', 
+		'printer@odata.bind' => 'https://graph.microsoft.com/v1.0/print/printers/{printerId}', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->print()->sharesById('printerShare-id')->patch($requestBody);
+$result = $graphServiceClient->print()->sharesById('printerShare-id')->patch($requestBody);
 
 
 ```

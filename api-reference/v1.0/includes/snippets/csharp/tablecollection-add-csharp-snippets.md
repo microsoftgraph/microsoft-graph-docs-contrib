@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var address = "Sheet1!A1:D5";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Add.AddPostRequestBody
+{
+	Address = "Sheet1!A1:D5",
+	HasHeaders = true,
+};
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables.Add.PostAsync(requestBody);
 
-var hasHeaders = true;
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables
-	.Add(hasHeaders,address)
-	.Request()
-	.PostAsync();
 
 ```

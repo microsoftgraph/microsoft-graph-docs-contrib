@@ -272,7 +272,6 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
 [!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
 [!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
@@ -332,6 +331,7 @@ Limits are expressed as requests per second (rps).
 | POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
 | POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+|POST /teamwork/sendActivityNotificationToRecipients|2 rps|20 rps|
 | GET /teams/```{team-id}```/members | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/members | 60 rps | 1200 rps |

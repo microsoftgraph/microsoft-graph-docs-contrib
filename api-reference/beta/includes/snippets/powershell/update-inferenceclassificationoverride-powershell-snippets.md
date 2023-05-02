@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	ClassifyAs = "focused"
+	classifyAs = "focused"
 }
 
 # A UPN can also be used as -UserId.

@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	RequiredResourceAccess = @(
+	requiredResourceAccess = @(
 		@{
-			ResourceAppId = "00000002-0000-0000-c000-000000000000"
-			ResourceAccess = @(
+			resourceAppId = "00000002-0000-0000-c000-000000000000"
+			resourceAccess = @(
 				@{
-					Id = "311a71cc-e848-46a1-bdf8-97ff7156d8e6"
-					Type = "Scope"
+					id = "311a71cc-e848-46a1-bdf8-97ff7156d8e6"
+					type = "Scope"
 				}
 				@{
-					Id = "3afa6a7d-9b1a-42eb-948e-1650a849e176"
-					Type = "Role"
+					id = "3afa6a7d-9b1a-42eb-948e-1650a849e176"
+					type = "Role"
 				}
 			)
 		}

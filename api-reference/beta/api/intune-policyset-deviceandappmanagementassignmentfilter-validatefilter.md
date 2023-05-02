@@ -63,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/validateFilter
 
 Content-type: application/json
-Content-length: 807
+Content-length: 854
 
 {
   "deviceAndAppManagementAssignmentFilter": {
@@ -86,7 +86,8 @@ Content-length: 807
         "groupId": "Group Id value",
         "assignmentFilterType": "include"
       }
-    ]
+    ],
+    "assignmentFilterManagementType": "apps"
   }
 }
 ```
