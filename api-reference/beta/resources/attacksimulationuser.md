@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.attackSimulationUser",
   "displayName": "String",
-  "email": "String"
+  "email": "String",
   "outOfOfficeDays": "Int",
   "userId": "String"
 }
