@@ -7631,7 +7631,7 @@ items:
         items:
           - name: Get Sharepoint settings
             href: api/sharepointSettings-get.md
-          - name: Update settings
+          - name: Update Sharepoint settings
             href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
