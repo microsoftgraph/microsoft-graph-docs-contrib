@@ -21,6 +21,8 @@ changeType := "created,updated"
 requestBody.SetChangeType(&changeType) 
 notificationUrl := "https://webhook.azurewebsites.net/notificationClient"
 requestBody.SetNotificationUrl(&notificationUrl) 
+lifecycleNotificationUrl := "https://webhook.azurewebsites.net/api/lifecycleNotifications"
+requestBody.SetLifecycleNotificationUrl(&lifecycleNotificationUrl) 
 resource := "/me/mailfolders('inbox')/messages"
 requestBody.SetResource(&resource) 
 expirationDateTime , err := time.Parse(time.RFC3339, "2016-03-20T11:00:00.0000000Z")

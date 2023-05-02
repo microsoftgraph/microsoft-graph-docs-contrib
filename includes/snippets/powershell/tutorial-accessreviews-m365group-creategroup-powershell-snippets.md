@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Description = "Feelgood Marketing Campaign with external partners and vendors."
-	DisplayName = "Feelgood Marketing Campaign"
-	GroupTypes = @(
+	description = "Feelgood Marketing Campaign with external partners and vendors."
+	displayName = "Feelgood Marketing Campaign"
+	groupTypes = @(
 		"Unified"
 	)
-	MailEnabled = $true
-	MailNickname = "FeelGoodCampaign"
-	SecurityEnabled = $true
-	"Owners@odata.bind" = @(
+	mailEnabled = $true
+	mailNickname = "FeelGoodCampaign"
+	securityEnabled = $true
+	"owners@odata.bind" = @(
 		"https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7"
 	)
-	"Members@odata.bind" = @(
+	"members@odata.bind" = @(
 		"https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
 	)
 }

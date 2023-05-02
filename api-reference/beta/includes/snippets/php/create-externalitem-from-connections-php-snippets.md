@@ -37,9 +37,9 @@ $requestBody->setAcl($aclArray);
 
 $properties = new Properties();
 $additionalData = [
-'title' => 'Error in the payment gateway', 
-'priority' => 1,
-'assignee' => 'john@contoso.com', 
+	'title' => 'Error in the payment gateway', 
+	'priority' => 1,
+	'assignee' => 'john@contoso.com', 
 ];
 $properties->setAdditionalData($additionalData);
 
@@ -55,7 +55,7 @@ $content->setType(new ExternalItemContentType('text'));
 $requestBody->setContent($content);
 
 
-$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
+$result = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
 
 
 ```

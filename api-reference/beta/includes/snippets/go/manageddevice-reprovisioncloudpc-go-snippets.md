@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().ManagedDevicesById("managedDevice-id").ReprovisionCloudPc().Post(context.Background(), nil)
+graphClient.DeviceManagement().ManagedDevices().ByManagedDeviceId("managedDevice-id").ReprovisionCloudPc().Post(context.Background(), nil)
 
 
 ```

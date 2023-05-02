@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DriveItemRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DriveItemRequestBuilderGetQueryParameters();
+$queryParameters = DriveItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["children"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sharesById('sharedDriveItem-id')->driveItem()->get($requestConfiguration);
+$result = $graphServiceClient->sharesById('sharedDriveItem-id')->driveItem()->get($requestConfiguration);
 
 
 ```

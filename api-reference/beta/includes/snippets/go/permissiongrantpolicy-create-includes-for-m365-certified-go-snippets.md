@@ -21,7 +21,7 @@ requestBody.SetPermissionType(&permissionType)
 certifiedClientApplicationsOnly := true
 requestBody.SetCertifiedClientApplicationsOnly(&certifiedClientApplicationsOnly) 
 
-result, err := graphClient.Policies().PermissionGrantPoliciesById("permissionGrantPolicy-id").Includes().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicieId("permissionGrantPolicy-id").Includes().Post(context.Background(), requestBody, nil)
 
 
 ```

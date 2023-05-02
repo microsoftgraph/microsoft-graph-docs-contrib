@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
-	Name = "menu.txt"
-	ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+	name = "menu.txt"
+	contentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 
 # A UPN can also be used as -UserId.

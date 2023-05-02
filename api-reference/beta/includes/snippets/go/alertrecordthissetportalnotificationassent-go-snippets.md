@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().Monitoring().AlertRecordsById("alertRecord-id").DeviceManagementSetPortalNotificationAsSent().Post(context.Background(), nil)
+graphClient.DeviceManagement().Monitoring().AlertRecords().ByAlertRecordId("alertRecord-id").DeviceManagementSetPortalNotificationAsSent().Post(context.Background(), nil)
 
 
 ```
