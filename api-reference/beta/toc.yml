@@ -16506,7 +16506,7 @@ items:
         items:
           - name: Sharepoint Settings
             href: resources/sharepointSettings.md
-          - name: Get settings
+          - name: Get Sharepoint settings
             href: api/sharepointSettings-get.md
           - name: Update settings
             href: api/sharepointSettings-update.md
