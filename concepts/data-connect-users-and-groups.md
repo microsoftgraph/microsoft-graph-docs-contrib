@@ -71,25 +71,27 @@ A customer wants to extract the group details dataset with a security group of u
 
 ## Search for and verify group types
 
-Use the following steps to search for the types of groups in your tenant to help you determine what is compatible with the type of scope you want to select. Please log into your ADF portal and select your tenant. Once you're in the layout, click on source and verify the details around datasets and groups.
+Use the following steps to search for the types of groups in your tenant to help you determine what is compatible with the type of scope you want to select:
 
-1. Scroll down to the pane, and click on scope. After you select the group-scoped dataset, search for and add a group or groups, or group IDs.
+1. Sign in to your ADF portal and select your tenant. Choose **Source** and verify the details around datasets and groups.
+
+1. On the **Scope** tab, select the group-scoped dataset, search for and add a group or groups, or group IDs, and choose **Add**.
     
-    ![Screenshot describes ADF and adding user groups](images/data-connect-groups-1.png)
+    ![Screenshot of the ADF portal with Add user groups and the Add button highlighted](images/data-connect-groups-1.png)
 
-2. After you add groups, you can view the group ID. Copy the IDs of the groups you want to verify.
+2. View the group ID. Copy the IDs of the groups you want to verify.
 
-    ![Screenshot describes the group ID. You can match the group ID](images/data-connect-groups-2.png)
+    ![Screenshot of the ADF portal with the returned list of groups and group IDs highlighted](images/data-connect-groups-2.png)
 
-3. In a new tab, go to the [Azure homepage](www.portal.azure.com) and choose **Azure Active Directory**.
+3. In a new tab, go to the [Azure homepage](https://www.portal.azure.com) and choose **Azure Active Directory**.
 
-    ![Screenshot describes the different options on the azure homepage](images/data-connect-groups-2.5.png)
+    ![Screenshot of the Azure homepage with Azure Active Directory hihglighted](images/data-connect-groups-2.5.png)
 
 4. Paste the group ID copied from step 2 and choose the **Groups** tab.
 
-    ![Screenshot describes Overview](images/data-connect-groups-3.png)
+    ![Screenshot of the Azure portal with the group ID field highlighted](images/data-connect-groups-3.png)
 
 5. Verify the type of group that you have.
 
-    ![Screenshot describes the type of group have](images/data-connect-groups-4.png)
+    ![Screenshot of the group in the Azure portal with the Type field highlighted](images/data-connect-groups-4.png)
  
