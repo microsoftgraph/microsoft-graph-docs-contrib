@@ -649,6 +649,8 @@ items:
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
+          - name: Supported language codes
+            href: search-concept-acceptlanguage-header.md
       - name: Security
         items:
           - name: Overview
