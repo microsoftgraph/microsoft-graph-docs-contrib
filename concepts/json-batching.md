@@ -205,7 +205,7 @@ An additional use case for JSON batching is to bypass URL length limitations. In
 
 JSON batch requests are currently limited to 20 individual requests in addition to the following limitations:
 
-* Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Depending on the APIs that are part of the batch request, the [underlying services impose their own throttling limits](throttling-limits.md) that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
 
 For more information, see [Throttling and batching][throttling-and-batching].
