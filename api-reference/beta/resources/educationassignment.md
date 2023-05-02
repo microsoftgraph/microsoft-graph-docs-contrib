@@ -80,6 +80,7 @@ Inherits from [entity](../resources/entity.md).
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there is a **submission** object for each student representing their work and grade.  Read-only. Nullable.|
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type.  Read-only. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
+|Grading categories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 
