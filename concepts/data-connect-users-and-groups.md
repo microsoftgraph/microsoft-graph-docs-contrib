@@ -87,11 +87,11 @@ Use the following steps to search for the types of groups in your tenant to help
 
     ![Screenshot of the Azure homepage with Azure Active Directory hihglighted](images/data-connect-groups-2.5.png)
 
-4. Paste the group ID copied from step 2 and choose the **Groups** tab.
+4. On the Overview tab, paste the group ID copied from step 2, and then and choose the **Groups** tab.
 
-    ![Screenshot of the Azure portal with the group ID field highlighted](images/data-connect-groups-3.png)
+    ![Screenshot of the Azure portal with the group ID field and Groups tab highlighted](images/data-connect-groups-3.png)
 
-5. Verify the type of group that you have.
+5. In the **Type** field for the group, verify the type of group that you have.
 
     ![Screenshot of the group in the Azure portal with the Type field highlighted](images/data-connect-groups-4.png)
  
