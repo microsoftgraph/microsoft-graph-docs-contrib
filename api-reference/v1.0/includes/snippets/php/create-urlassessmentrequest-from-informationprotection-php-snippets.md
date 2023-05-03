@@ -17,14 +17,14 @@ $requestBody->setExpectedAssessment(new ThreatExpectedAssessment('block'));
 $requestBody->setCategory(new ThreatCategory('phishing'));
 
 $additionalData = [
-'url' => 'http://test.com', 
+		'url' => 'http://test.com', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->informationProtection()->threatAssessmentRequests()->post($requestBody);
+$result = $graphServiceClient->informationProtection()->threatAssessmentRequests()->post($requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetApprovalState(&approvalState)
 approverReason := "approverReason-value"
 requestBody.SetApproverReason(&approverReason) 
 
-result, err := graphClient.PrivilegedApprovalById("privilegedApproval-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.PrivilegedApproval().ByPrivilegedApproval().Id("privilegedApproval-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

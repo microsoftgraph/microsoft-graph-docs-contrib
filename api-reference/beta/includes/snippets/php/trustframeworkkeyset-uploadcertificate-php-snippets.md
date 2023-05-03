@@ -14,7 +14,7 @@ $requestBody->setKey('key-value');
 
 
 
-$requestResult = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadCertificate()->post($requestBody);
+$result = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadCertificate()->post($requestBody);
 
 
 ```

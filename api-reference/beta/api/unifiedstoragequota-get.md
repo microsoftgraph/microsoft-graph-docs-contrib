@@ -94,7 +94,8 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedstoragequotabyuserid"
+  "name": "get_unifiedstoragequotabyuserid",
+  "sampleKeys": ["1234BBS1121YY95"]
 }
 -->
 ``` http

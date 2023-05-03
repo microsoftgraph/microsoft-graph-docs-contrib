@@ -26,7 +26,7 @@ customTags := []string {
 }
 requestBody.SetCustomTags(customTags)
 
-result, err := graphClient.Security().IncidentsById("incident-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Incidents().ByIncidentId("incident-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

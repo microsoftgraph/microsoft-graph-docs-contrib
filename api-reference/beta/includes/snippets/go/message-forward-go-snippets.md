@@ -38,7 +38,7 @@ requestBody.SetMessage(message)
 comment := "Dana, just want to make sure you get this."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().MessagesById("message-id").Forward().Post(context.Background(), requestBody, nil)
+graphClient.Me().Messages().ByMessageId("message-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

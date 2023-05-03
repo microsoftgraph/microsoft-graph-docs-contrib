@@ -17,14 +17,14 @@ $requestBody->setName('smile');
 $requestBody->setContentType('image/gif');
 
 $additionalData = [
-'contentBytes' => 'a0b1c76de9f7=', 
+		'contentBytes' => 'a0b1c76de9f7=', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->attachments()->post($requestBody);
 
 
 ```

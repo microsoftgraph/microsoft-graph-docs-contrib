@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	Id = "5540a08f-8ab5-43f6-a923-015275799197"
-	DisplayName = "policy with access package custom workflow extension"
-	Description = "Run specified access package custom workflow extension at different stages."
-	AccessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
-	RequestApprovalSettings = $null
-	RequestorSettings = @{
-		AcceptRequests = $true
-		ScopeType = "AllExistingDirectorySubjects"
-		AllowedRequestors = @(
+	id = "5540a08f-8ab5-43f6-a923-015275799197"
+	displayName = "policy with access package custom workflow extension"
+	description = "Run specified access package custom workflow extension at different stages."
+	accessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	requestApprovalSettings = $null
+	requestorSettings = @{
+		acceptRequests = $true
+		scopeType = "AllExistingDirectorySubjects"
+		allowedRequestors = @(
 		)
 	}
-	AccessReviewSettings = $null
-	CustomExtensionHandlers = @(
+	accessReviewSettings = $null
+	customExtensionHandlers = @(
 	)
 }
 

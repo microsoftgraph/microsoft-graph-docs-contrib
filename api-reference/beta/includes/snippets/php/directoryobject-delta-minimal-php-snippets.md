@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
-$queryParameters->filter = "isof or isof";
-$queryParameters->select = ["microsoft.graph.user/surname","microsoft.graph.group/displayName"];
-
 $headers = [
-'Prefer' => 'return=minimal',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'return=minimal',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "isof or isof";
+$queryParameters->select = ["microsoft.graph.user/surname","microsoft.graph.group/displayName"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration);
+
+$result = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration);
 
 
 ```

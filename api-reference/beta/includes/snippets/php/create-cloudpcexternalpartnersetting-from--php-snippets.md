@@ -18,7 +18,7 @@ $requestBody->setEnableConnection(true);
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettings()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettings()->post($requestBody);
 
 
 ```

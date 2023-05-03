@@ -17,7 +17,7 @@ $site->setWebUrl('https://contoso.sharepoint.com/sites/HumanResources');
 $requestBody->setSite($site);
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodiansById('custodian-id')->siteSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodiansById('custodian-id')->siteSources()->post($requestBody);
 
 
 ```

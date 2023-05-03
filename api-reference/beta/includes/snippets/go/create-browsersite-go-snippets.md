@@ -29,7 +29,7 @@ requestBody.SetCompatibilityMode(&compatibilityMode)
 allowRedirect := true
 requestBody.SetAllowRedirect(&allowRedirect) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteListsById("browserSiteList-id").Sites().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").Sites().Post(context.Background(), requestBody, nil)
 
 
 ```

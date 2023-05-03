@@ -11,6 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
 ### authenticationAttributeCollectionInputType values 
 
 |Member|
@@ -28,6 +29,22 @@ Namespace: microsoft.graph
 |member|
 |guest|
 |unknownFutureValue|
+
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
 
 ### usqState values
 
@@ -358,6 +375,15 @@ Namespace: microsoft.graph
 |:---|
 |strictEnforcement|
 |disabled|
+|unknownFutureValue|
+
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
 |unknownFutureValue|
 
 ### multiFactorAuthConfiguration values
@@ -3739,4 +3765,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----|
 |microsoftAuthenticator|
 |outlookMobile|
+|unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
 |unknownFutureValue|

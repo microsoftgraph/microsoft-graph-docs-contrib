@@ -1364,16 +1364,18 @@ items:
           href: resources/subscription.md
         - name: Change notification collection
           href: resources/changenotificationcollection.md
-        - name: List subscription
+        - name: List
           href: api/subscription-list.md
-        - name: Get subscription
+        - name: Get
           href: api/subscription-get.md
-        - name: Create subscription
+        - name: Create
           href: api/subscription-post-subscriptions.md
-        - name: Update subscription
+        - name: Update
           href: api/subscription-update.md
-        - name: Delete subscription
+        - name: Delete
           href: api/subscription-delete.md
+        - name: Reauthorize
+          href: api/subscription-reauthorize.md
     - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -1531,6 +1533,55 @@ items:
     - name: Device and app management
       expanded: true
       items:
+      - name: Browser management
+        displayName: Edge, Internet Explorer, IE mode, site list
+        items:
+        - name: Overview
+          href: resources/browser-edge-api-overview.md
+        - name: Browser site list
+          items:
+          - name: Browser site list
+            href: resources/browsersitelist.md
+          - name: List
+            href: api/internetexplorermode-list-sitelists.md
+          - name: Create
+            href: api/internetexplorermode-post-sitelists.md
+          - name: Get
+            href: api/browsersitelist-get.md
+          - name: Update
+            href: api/browsersitelist-update.md
+          - name: Delete
+            href: api/internetexplorermode-delete-sitelists.md
+          - name: Publish
+            href: api/browsersitelist-publish.md
+        - name: Browser site
+          items:
+          - name: Browser site
+            href: resources/browsersite.md
+          - name: List
+            href: api/browsersitelist-list-sites.md
+          - name: Create
+            href: api/browsersitelist-post-sites.md
+          - name: Get
+            href: api/browsersite-get.md
+          - name: Update
+            href: api/browsersite-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sites.md
+        - name: Shared cookie
+          items:
+          - name: Shared cookie
+            href: resources/browsersharedcookie.md
+          - name: List
+            href: api/browsersitelist-list-sharedcookies.md
+          - name: Create
+            href: api/browsersitelist-post-sharedcookies.md
+          - name: Get
+            href: api/browsersharedcookie-get.md
+          - name: Update
+            href: api/browsersharedcookie-update.md
+          - name: Delete
+            href: api/browsersitelist-delete-sharedcookies.md
       - name: Cloud printing
         items:
         - name: Print
@@ -5577,6 +5628,48 @@ items:
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
+        - name: Authentication strengths
+          items:
+          - name: Overview
+            href: resources/authenticationstrengths-overview.md
+          - name: Authentication strengths policy
+            href: resources/authenticationstrengthpolicy.md
+            items:
+            - name: List
+              href: api/authenticationstrengthroot-list-policies.md
+            - name: Create
+              href: api/authenticationstrengthroot-post-policies.md
+            - name: Get
+              href: api/authenticationstrengthpolicy-get.md
+            - name: Update
+              href: api/authenticationstrengthpolicy-update.md
+            - name: Delete
+              href: api/authenticationstrengthroot-delete-policies.md
+            - name: List usage
+              href: api/authenticationstrengthpolicy-usage.md
+          - name: Authentication combination configurations
+            items:
+            - name: Authentication combination configuration
+              href: resources/authenticationcombinationconfiguration.md
+            - name: FIDO2 combination configuration
+              href: resources/fido2combinationconfiguration.md
+            - name: Create
+              href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
+            - name: List
+              href: api/authenticationstrengthpolicy-list-combinationconfigurations.md
+            - name: Get
+              href: api/authenticationcombinationconfiguration-get.md
+            - name: Update
+              href: api/authenticationcombinationconfiguration-update.md
+            - name: Delete
+              href: api/authenticationstrengthpolicy-delete-combinationconfigurations.md
+          - name: Authentication method modes
+            href: resources/authenticationmethodmodedetail.md
+            items:
+            - name: List authentication combinations and method modes
+              href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
+            - name: Get authentication method modes
+              href: api/authenticationmethodmodedetail-get.md
         - name: Conditional Access
           items:
           - name: Conditional Access
