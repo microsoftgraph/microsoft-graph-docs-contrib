@@ -62,22 +62,46 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "provisioningAction":  "String",
+  "provisioningAction": "String",
   "activityDateTime": "String (timestamp)",
   "changeId": "String",
   "cycleId": "String",
   "durationInMilliseconds": 1024,
   "id": "String (identifier)",
-  "initiatedBy": {"@odata.type": "microsoft.graph.initiator"},
+  "initiatedBy": {
+    "@odata.type": "microsoft.graph.initiator"
+  },
   "jobId": "String",
-  "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
-  "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
-  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
-  "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
-  "provisioningStatusInfo": {"@odata.type": "microsoft.graph.provisioningStatusInfo"},
-  "targetIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
+  "modifiedProperties": [
+    {
+      "@odata.type": "microsoft.graph.modifiedProperty"
+    }
+  ],
+  "provisioningSteps": [
+    {
+      "@odata.type": "microsoft.graph.provisioningStep"
+    }
+  ],
+  "servicePrincipal": [
+    {
+      "@odata.type": "microsoft.graph.provisioningServicePrincipal"
+    }
+  ],
+  "sourceIdentity": {
+    "@odata.type": "microsoft.graph.provisionedIdentity"
+  },
+  "sourceSystem": {
+    "@odata.type": "microsoft.graph.provisioningSystem"
+  },
+  "provisioningStatusInfo": {
+    "@odata.type": "microsoft.graph.provisioningStatusInfo"
+  },
+  "targetIdentity": {
+    "@odata.type": "microsoft.graph.provisionedIdentity"
+  },
+  "targetSystem": {
+    "@odata.type": "microsoft.graph.provisioningSystem"
+  },
   "tenantId": "String"
 }
 ```

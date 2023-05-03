@@ -37,7 +37,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
+  "details": {
+    "@odata.type": "microsoft.graph.detailsInfo"
+  },
   "displayName": "String",
   "id": "String"
 }

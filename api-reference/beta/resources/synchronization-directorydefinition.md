@@ -22,6 +22,8 @@ In general, the default [synchronization schema](synchronization-synchronization
 
 Directory definitions are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -32,7 +34,7 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|id           |String     |Directory identifier. Not nullable.|
+|id           |String     |Directory identifier. Not nullable. Inherited from [entity](../resources/entity.md).|
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.|
 |objects        |[objectDefinition](synchronization-objectdefinition.md) collection    |Collection of objects supported by the directory.|
 |readOnly|Boolean| Whether this object is read-only.|
@@ -57,12 +59,19 @@ The following is a JSON representation of the resource.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
+    }
+  ],
   "name": "String",
-  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}],
+  "objects": [
+    {
+      "@odata.type": "microsoft.graph.objectDefinition"
+    }
+  ],
   "version": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

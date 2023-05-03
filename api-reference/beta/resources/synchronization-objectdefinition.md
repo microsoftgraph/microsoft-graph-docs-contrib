@@ -24,35 +24,7 @@ Describes an object and its attributes. Object definitions are part of [director
 |name           |String     |Name of the object. Must be unique within a directory definition. Not nullable.|
 |supportedApis|String collection|The API that the provisioning service queries to retrieve data for synchronization.|
 
-## JSON representation
-
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectDefinition"
-}-->
-
-```json
-{
-  "attributes": [{"@odata.type": "microsoft.graph.attributeDefinition"}],
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "name": "String"
-}
-```
-
-## JSON Example
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectDefinition"
-}-->
+### JSON example
 
 ```json
 {
@@ -434,6 +406,34 @@ The following is a JSON representation of the resource.
         }
     ],
     "name": "User"
+}
+```
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectDefinition"
+}-->
+
+```json
+{
+  "attributes": [
+    {
+      "@odata.type": "microsoft.graph.attributeDefinition"
+    }
+  ],
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.metadataEntry"
+    }
+  ],
+  "name": "String"
 }
 ```
 

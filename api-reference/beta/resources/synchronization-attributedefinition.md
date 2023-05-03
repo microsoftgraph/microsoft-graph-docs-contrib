@@ -48,15 +48,22 @@ The following is a JSON representation of the resource.
   "caseExact": true,
   "defaultValue": "String",
   "flowNullValues": true,
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.metadataEntry"
+    }
+  ],
   "multivalued": true,
   "mutability": "String",
   "name": "String",
-  "referencedObjects": [{"@odata.type": "microsoft.graph.referencedObject"}],
+  "referencedObjects": [
+    {
+      "@odata.type": "microsoft.graph.referencedObject"
+    }
+  ],
   "required": true,
   "type": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

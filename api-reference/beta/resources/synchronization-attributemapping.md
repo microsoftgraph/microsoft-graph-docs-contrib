@@ -46,10 +46,11 @@ The following is a JSON representation of the resource.
   "flowBehavior": "String",
   "flowType": "String",
   "matchingPriority": 1024,
-  "source": {"@odata.type": "microsoft.graph.attributeMappingSource"},
+  "source": {
+    "@odata.type": "microsoft.graph.attributeMappingSource"
+  },
   "targetAttributeName": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

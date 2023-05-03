@@ -18,7 +18,7 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|errorInfo|[provisioningErrorInfo](provisioningErrorInfo.md)| If status is not success/ skipped details for the error are contained in this.|
+|errorInformation|[provisioningErrorInfo](provisioningErrorInfo.md)| If status is not success/ skipped details for the error are contained in this.|
 |status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
@@ -36,7 +36,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "status": "String"
+  "status": "String",
+  "errorInformation": {
+    "@odata.type": "microsoft.graph.provisioningErrorInfo"
+  }
 }
 ```
 

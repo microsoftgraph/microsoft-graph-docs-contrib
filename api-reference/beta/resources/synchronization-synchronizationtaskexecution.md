@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Summarizes the results of the synchronization job run.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |activityIdentifier           |String |Identifier of the job run.|
 |countEntitled                |Int64  |Count of processed entries that were assigned for this application.|
@@ -57,12 +57,13 @@ The following is a JSON representation of the resource.
   "countImported": 1024,
   "countImportedDeltas": 1024,
   "countImportedReferenceDeltas": 1024,
-  "error": {"@odata.type": "microsoft.graph.synchronizationError"},
+  "error": {
+    "@odata.type": "microsoft.graph.synchronizationError"
+  },
   "state": "String",
   "timeBegan": "String (timestamp)",
   "timeEnded": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

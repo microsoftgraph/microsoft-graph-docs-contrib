@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 >[!CAUTION]
 >The **action** and **statusInfo** properties are deprecated. Property **action** should be replaced by **provisioningAction**. Property **statusInfo** should be replaced by **provisioningStatusInfo**.
 
-Represents an action performed by the Azure AD Provisioning service and its associated properties. 
+Represents an action performed by the Azure AD Provisioning service and its associated properties.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -33,7 +35,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |changeId|String|Unique ID of this change in this cycle.|
 |cycleId|String|Unique ID per job iteration.|
 |durationInMilliseconds|Int32|Indicates how long this provisioning action took to finish. Measured in milliseconds.|
-|id|String| Indicates the unique ID for the activity. This is a read-only GUID.|
+|id|String| Indicates the unique ID for the activity. This is a read-only GUID. Inherited from [entity](../resources/entity.md).|
 |initiatedBy|[initiator](initiator.md)|Details of who initiated this provisioning.|
 |jobId|String|The unique ID for the whole provisioning job.|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
@@ -62,28 +64,53 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "keyProperty": "id"
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json
 {
   "action": "String",
-  "provisioningAction":  "String",
+  "provisioningAction": "String",
   "activityDateTime": "String (timestamp)",
   "changeId": "String",
   "cycleId": "String",
-  "durationInMilliseconds": 1024,
+  "durationInMilliseconds": "Integer",
   "id": "String (identifier)",
-  "initiatedBy": {"@odata.type": "microsoft.graph.initiator"},
+  "initiatedBy": {
+    "@odata.type": "microsoft.graph.initiator"
+  },
   "jobId": "String",
-  "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
-  "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
-  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
-  "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
-  "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
-  "targetIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
+  "modifiedProperties": [
+    {
+      "@odata.type": "microsoft.graph.modifiedProperty"
+    }
+  ],
+  "provisioningSteps": [
+    {
+      "@odata.type": "microsoft.graph.provisioningStep"
+    }
+  ],
+  "servicePrincipal": [
+    {
+      "@odata.type": "microsoft.graph.provisioningServicePrincipal"
+    }
+  ],
+  "sourceIdentity": {
+    "@odata.type": "microsoft.graph.provisionedIdentity"
+  },
+  "sourceSystem": {
+    "@odata.type": "microsoft.graph.provisioningSystem"
+  },
+  "statusInfo": {
+    "@odata.type": "microsoft.graph.statusBase"
+  },
+  "targetIdentity": {
+    "@odata.type": "microsoft.graph.provisionedIdentity"
+  },
+  "targetSystem": {
+    "@odata.type": "microsoft.graph.provisioningSystem"
+  },
   "tenantId": "String"
 }
 ```

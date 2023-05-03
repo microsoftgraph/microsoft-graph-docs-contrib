@@ -41,7 +41,7 @@ Performs synchronization by periodically running in the background, polling for 
 |templateId     |String    |Identifier of the [synchronization template](synchronization-synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |schema|[synchronizationSchema](synchronization-synchronizationschema.md)| The synchronization schema configured for the job.|
 
@@ -61,12 +61,17 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "schedule": {"@odata.type": "microsoft.graph.synchronizationSchedule"},
-  "status": {"@odata.type": "microsoft.graph.synchronizationStatus"},
-  "synchronizationJobSettings": {"@odata.type": "microsoft.graph.keyValuePair"},
+  "schedule": {
+    "@odata.type": "microsoft.graph.synchronizationSchedule"
+  },
+  "status": {
+    "@odata.type": "microsoft.graph.synchronizationStatus"
+  },
+  "synchronizationJobSettings": {
+    "@odata.type": "microsoft.graph.keyValuePair"
+  },
   "templateId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

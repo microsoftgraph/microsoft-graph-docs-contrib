@@ -30,32 +30,7 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 |sourceObjectName           |String     |Name of the object in the source directory. Must match the object name from the source [directory definition](synchronization-directorydefinition.md).|
 |targetObjectName           |String     |Name of the object in target directory. Must match the object name from the target [directory definition](synchronization-directorydefinition.md).|
 
-## JSON representation
-
-The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
-```json
-{
-  "attributeMappings": [{"@odata.type": "microsoft.graph.attributeMapping"}],
-  "enabled": true,
-  "flowTypes": "String",
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
-  "name": "String",
-  "scope": {"@odata.type": "microsoft.graph.filter"},
-  "sourceObjectName": "String",
-  "targetObjectName": "String"
-}
-```
-
-## JSON Example
+### JSON example
 
 <!-- {
   "blockType": "example",
@@ -343,6 +318,41 @@ The following is a JSON representation of the resource.
     "scope": null,
     "sourceObjectName": "User",
     "targetObjectName": "User"
+}
+```
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.objectMapping"
+}-->
+
+```json
+{
+  "attributeMappings": [
+    {
+      "@odata.type": "microsoft.graph.attributeMapping"
+    }
+  ],
+  "enabled": true,
+  "flowTypes": "String",
+  "metadata": [
+    {
+      "@odata.type": "microsoft.graph.metadataEntry"
+    }
+  ],
+  "name": "String",
+  "scope": {
+    "@odata.type": "microsoft.graph.filter"
+  },
+  "sourceObjectName": "String",
+  "targetObjectName": "String"
 }
 ```
 

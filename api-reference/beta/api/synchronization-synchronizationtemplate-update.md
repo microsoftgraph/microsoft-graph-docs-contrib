@@ -60,7 +60,6 @@ The following is an example of a request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/synchronization/templates/{templateId}
-Authorization: Bearer <token>
 Content-type: application/json
 
 {
