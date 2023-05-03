@@ -7629,10 +7629,10 @@ items:
       - name: SharePoint settings
         href: resources/sharepointSettings.md
         items:
-          - name: Get Sharepoint settings
-            href: api/sharepointSettings-get.md
-          - name: Update Sharepoint settings
-            href: api/sharepointSettings-update.md
+          - name: Get
+            href: api/sharepointsettings-get.md
+          - name: Update
+            href: api/sharepointsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
