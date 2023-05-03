@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-1.0) resource",
+          "Description": "Added the [sharepointSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointSettings?view=graph-rest-1.0) resource.",
           "Target": "sharepointSettings"
         },
         {
@@ -47,15 +47,15 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
+          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
           "Target": "admin"
         }
       ],
       "Id": "5348d8d7-63da-44f6-a85b-96fe17fe342f",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-03-31T17:18:06.3356617Z",
-      "WorkloadArea": "Files",
+      "CreatedDateTime": "2023-05-02T17:18:06.3356617Z",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {
@@ -65,7 +65,7 @@
            "ApiChange": "Resource",
            "ChangedApiName": "tenantadmin-sharepoint",
            "ChangeType": "Deletion",
-           "Description": "Removed the [tenantadmin-sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource.",
+           "Description": "Removed the **sharepoint** resource from the tenantAdmin subnamespace resource.",
            "Target": "tenantadmin-sharepoint"
         },
         {
@@ -73,15 +73,15 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharepointSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource",
+          "Description": "Added the **sharepointSettings** navigation property to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
           "Target": "admin"
         } 
       ],
       "Id": "a4a26d2c-47f7-4aa2-9a38-8c979cc811a1",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-04-28T21:52:28.1485706Z",
-      "WorkloadArea": "Files",
+      "CreatedDateTime": "2023-05-02T21:52:28.1485706Z",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {
