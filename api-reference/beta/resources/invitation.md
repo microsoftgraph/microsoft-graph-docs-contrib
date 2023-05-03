@@ -46,10 +46,10 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |status|String|The status of the invitation. Possible values: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
-|invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description**|
+|invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|The users or groups who are sponsors of the invited user. |
 
 ## JSON representation
 Here is a JSON representation of the resource

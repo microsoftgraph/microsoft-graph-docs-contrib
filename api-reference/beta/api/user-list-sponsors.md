@@ -1,0 +1,109 @@
+---
+title: "List sponsors"
+description: "Get user's sponsors. Returns the users or groups assigned as the user's sponsors."
+ms.localizationpriority: medium
+author: "sdshl"
+ms.prod: "users"
+doc_type: apiPageType
+---
+
+# List sponsors
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get user's sponsors. Returns the users or groups assigned as the user's sponsors.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged)                                    |
+| :------------------------------------- | :----------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+## HTTP request
+
+Get sponsors:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/sponsors
+```
+
+## Optional query parameters
+
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
+
+>**Note:**
+
+> + You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
+
+## Request headers
+
+| Header           | Value                                                                                          |
+| :--------------- | :--------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                      |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and [group](../resources/group.md) objects in the response body.
+
+## Examples
+
+### Example: Get sponsors
+
+The following example shows a request to get the sponsors.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_sponsor"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/users/{user-id}/sponsors
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "263a1289-8282-4bf7-91f7-550d9bba8c02",
+            "displayName": "Sara Davis",
+            "jobTitle": "Finance VP",
+            "mail": "SaraD@contoso.onmicrosoft.com",
+            "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "08143e93-989e-4771-ac78-803bcdac52d2",
+            "mail": "groupforsponsors@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "groupforsponsors",
+            "securityEnabled": true
+        }
+    ]
+```
