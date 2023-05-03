@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d46f7136-1ef8-47e4-b10e-8e31a87d47f4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** navigation property to the [membershipOutlierInsight](https://learn.microsoft.com/en-us/graph/api/resources/membershipOutlierInsight?view=graph-rest-beta) resource.",
+          "Target": "membershipOutlierInsight"
+        }
+      ],
+      "Id": "d46f7136-1ef8-47e4-b10e-8e31a87d47f4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-02T22:19:06.7781678Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c81d114e-4e16-4699-a780-9e6c411121dc",
           "ApiChange": "Resource",
           "ChangedApiName": "signInActivity",
