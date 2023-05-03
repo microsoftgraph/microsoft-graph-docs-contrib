@@ -1,5 +1,5 @@
 ---
-title: "Use the threat intelligence APIs in Microsoft Graph (preview)"
+title: "Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence (preview)"
 description: "The threat intelligence APIs in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,13 +7,14 @@ ms.prod: "security"
 doc_type: conceptualPageType
 ---
 
-# Use the threat intelligence APIs in Microsoft Graph (preview)
+# Use the Microsoft Graph APIs for Microsoft Defender Threat Intelligence (preview)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph threat intelligence APIs deliver world-class threat intelligence to help protect your organization from modern cyber threats. Using threat intelligence APIs, you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
+[Microsoft Defender Threat Intelligence](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence.
+This platform exposes threat intelligence APIs on Microsoft Graph to deliver world-class threat intelligence that helps protect your organization from modern cyber threats. Using the threat intelligence APIs, you can identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
 
-Threat intelligence APIs allow you to operationalize intelligence found within the UI. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including indicators of compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
+The threat intelligence APIs allow you to operationalize intelligence found within the UI. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including indicators of compromise (IoCs) and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Authorization
 
