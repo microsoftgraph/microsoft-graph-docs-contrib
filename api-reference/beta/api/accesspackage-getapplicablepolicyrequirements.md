@@ -180,7 +180,6 @@ POST /identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11
 
 ---
 
-
 #### Response
 
 <!-- {
