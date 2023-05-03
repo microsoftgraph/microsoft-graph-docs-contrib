@@ -1,6 +1,6 @@
 ---
 title: "Delete customAppScope"
-description: "Delete a customAppScope object."
+description: "Delete a customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
 author: "bili1"
 ms.prod: "directory-management"
@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider.
 
+Currently only the Exchange Online RBAC provider is supported.
+
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference).
 
-### For an Exchange Online provider
+<!--### For an Exchange Online provider-->
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,8 +31,8 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To delete a customAppScope for an Exchange Online provider:
-
+For an Exchange Online provider:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /roleManagement/exchange/customAppScopes/{id}
 ```
@@ -51,12 +53,18 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-### Example 1: Delete a customAppScope object in an Exchange Online provider
+<!--### Example 1: Delete a customAppScope object in an Exchange Online provider-->
 
 ### Request
 
-The following is an example of the request.
+The following example shows how to delete a **customAppScope** object in an Exchange Online provider.
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_customAppScope_ExchangeOnlineProvider",
+  "sampleKeys": ["d101e64d-4684-4970-ba7b-735b6b27628f"]
+}
+-->
 ```http
 DELETE https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/d101e64d-4684-4970-ba7b-735b6b27628f
 ```
@@ -65,6 +73,11 @@ DELETE https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
