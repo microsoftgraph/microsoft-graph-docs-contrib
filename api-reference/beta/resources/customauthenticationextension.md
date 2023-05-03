@@ -1,9 +1,9 @@
 ---
 title: "customAuthenticationExtension resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Custom authentication extensions let you interact with external systems during a user authentication"
+author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom Extensions are cool.
-This is an abstract type.
+Custom authentication extensions define interactions with external systems during a user authentication. This is an abstract type.
 
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
@@ -27,18 +26,18 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |[Get customAuthenticationExtension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Delete customAuthenticationExtension](../api/identitycontainer-delete-customauthenticationextensions.md)|None|Deletes a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: Add Description**|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: Add Description**|
+|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: What is this for?**|
+|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: Why is this duplicated?**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|description|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|**TODO: Add Description** Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|description|String|The description of the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|displayName|String|The display name for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint that this custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|id|String|Identifier for the customAuthenticationExtension. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
