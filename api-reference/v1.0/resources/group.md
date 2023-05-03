@@ -163,7 +163,7 @@ This resource supports:
 | :--------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Public           | Anyone can join the group without needing owner permission.<br>Anyone can view the attributes of the group.<br>Anyone can see the members of the group.                                                                                                                                                        |
 | Private          | Owner permission is needed to join the group.<br>Anyone can view the attributes of the group.<br>Anyone can see the members of the group.                                                                                                                                                              |
-| HiddenMembership | Owner permission is needed to join the group.<br>Guests cannot view the attributes of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL). |
+| HiddenMembership | Owner permission is needed to join the group.<br>Guest users cannot view the attributes of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL). |
 
 ## Relationships
 
