@@ -28,14 +28,6 @@ Defines how a value should be extracted (or transformed) from the source object.
 
 Simple attribute to attribute mapping.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
-
 ```json
 {
     "expression": "[mail]",
@@ -45,14 +37,6 @@ Simple attribute to attribute mapping.
 ```
 
 Expression extracting first 8 characters from the source attribute.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
 
 ```json
  {
