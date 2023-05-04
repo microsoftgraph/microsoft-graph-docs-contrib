@@ -1,6 +1,6 @@
 ---
 title: "group: retryServiceProvisioning"
-description: "Retries group service provisioning."
+description: "Retry the group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retries [group](../resources/group.md) service provisioning.
+Retry the [group](../resources/group.md) service provisioning.
 
 ## Permissions
 
