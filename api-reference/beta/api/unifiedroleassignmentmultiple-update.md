@@ -48,14 +48,14 @@ To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /roleManagement/cloudPC/roleAssignments/id
+PATCH /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
 To update an existing unfiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /roleManagement/deviceManagement/roleAssignments/id
+PATCH /roleManagement/deviceManagement/roleAssignments/{id}
 ```
 
 ## Request headers
