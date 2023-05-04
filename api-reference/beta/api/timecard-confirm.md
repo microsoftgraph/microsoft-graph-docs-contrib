@@ -1,6 +1,6 @@
 ---
 title: "timeCard: confirm"
-description: "Confirm a specific timecard."
+description: "Confirm a specific timeCard."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Confirm a specific [timeCard](../resources/timeCard.md).
+Confirm a specific [timeCard](../resources/timecard.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timeCards/{timeCardID}/confirm
+POST /teams/{teamId}/schedule/timeCards/{timeCardId}/confirm
 ```
 
 ## Request headers
