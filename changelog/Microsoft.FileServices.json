@@ -3156,7 +3156,7 @@
         },
         {
           "Id": "acbe1bc4-3ced-4e51-b941-36a370205d1f",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "canvasLayout",
           "ChangeType": "Addition",
           "Description": "Added the **canvasLayout** relationship to the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-beta) resource.",
