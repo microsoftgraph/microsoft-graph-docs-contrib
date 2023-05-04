@@ -24,7 +24,7 @@ Defines how a value should be extracted (or transformed) from the source object.
 |parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
 |type                   | attributeMappingSourceType                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.|
 
-### JSON examples
+### Sample syntaxes
 
 Simple attribute to attribute mapping.
 
