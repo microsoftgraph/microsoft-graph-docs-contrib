@@ -21,7 +21,7 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see [keyValuePair names and values](#keyvaluepair-names-and-values).|
+|name|String|`AllowDefaultEntitlement`,  `AzureIngestionAttributeOptimization`, `LookaheadQueryEnabled`,   `LookaheadQueryIntervalValue`, `QuarantineTooManyDeletes`, `QuarantineTooManyDeletesThreshold `.|
 |value|String|Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see [keyValuePair names and values](#keyvaluepair-names-and-values).|
 
 ### keyValuePair names and values
@@ -30,8 +30,12 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 | Property | Possible values |
 |:-|:-|
-| name | `AdditionalWSFedEndpointCheckResult`,  `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`,   `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`,  `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult`,  `RequestMFAFromClaimsProvidersCheckResult`, `SignedSamlRequestsRequiredCheckResult`, `AdditionalAuthenticationRulesCheckResult`, `TokenLifetimeCheckResult`,  `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`, `IssuanceTransformRulesCheckResult`. |
-| value | `0` (when the validation check passed), `1` (when the validation check failed), or `2` (when the validation check is a warning). |
+| AllowDefaultEntitlement |  We will allow provisioning for users that just have msiam_access entitlement grant. |
+| AzureIngestionAttributeOptimization | A boolean value for enabling an optimization for incremental sync when the amount of users managed is in the hundreds of thousands. |
+| LookaheadQueryEnabled |  For inbound scenario, this is for looking ahead in the source directory to see the deletes that are going to occur. This is related to the early terminations scenario in Workday.|
+| LookaheadQueryIntervalValue | The interval we want to lookback relating to the above flag. |
+| QuarantineTooManyDeletes | A boolean value of whether we want to quarantine a RunProfile if more than a certain number of deletes occur within a period of time. |
+| QuarantineTooManyDeletesThreshold | The number of deletes for the quarantine to trigger for the above flag. |
 
 ### Supported by Lifecycle Workflows tasks
 
