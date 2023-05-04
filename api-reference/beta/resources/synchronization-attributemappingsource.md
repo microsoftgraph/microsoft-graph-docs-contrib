@@ -24,6 +24,7 @@ Defines how a value should be extracted (or transformed) from the source object.
 |parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
 |type                   | attributeMappingSourceType                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.|
 
+<!--
 ### Sample syntaxes
 
 Simple attribute to attribute mapping.
@@ -74,21 +75,18 @@ Expression extracting first 8 characters from the source attribute.
     "type": "Function"
 }
 ```
+-->
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.attributeMappingSource"
-}-->
-
-```json
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.attributeMappingSource",
   "expression": "String",
   "name": "String",
   "parameters": [
@@ -112,5 +110,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
