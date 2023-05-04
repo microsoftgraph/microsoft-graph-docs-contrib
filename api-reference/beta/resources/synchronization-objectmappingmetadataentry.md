@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.objectMappingMetadataEntry",
   "key": "String",
   "value": "String"
 }
