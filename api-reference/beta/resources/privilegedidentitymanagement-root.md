@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->The Privileged Identity Management (PIM) API for **Azure AD roles** iteration 1 is deprecated and stopped returning data on May 31, 2021. Use the [PIM v3 for managing Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview).
 >
 >The Privileged Identity Management (PIM) iteration 2 APIs for managing **Azure resources** will be deprecated soon. Use the new [Azure REST PIM APIs for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests). For more information, see the [migration guidance](/graph/api/resources/privilegedidentitymanagement-root).
 
