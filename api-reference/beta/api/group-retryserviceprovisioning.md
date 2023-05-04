@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "group_retryServiceProvisioning"
+  "name": "group_retryserviceprovisioning"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/retryServiceProvisioning
