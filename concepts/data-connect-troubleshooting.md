@@ -54,7 +54,7 @@ Keep the following in mind when customers with multi-geo tenants extract data:
 
 To combine files:
 
-1. Add a new **opy data activity** after the extraction.
+1. Add a new **Copy data activity** after the extraction.
 
     ![Screenshot of Microsoft Azure showing the copy data activity](../concepts/images/data-connect-troubleshooting-copy-adf.png)
 
