@@ -14,6 +14,7 @@ The SharePoint API in Microsoft Graph supports the following core scenarios:
 * Access to SharePoint **sites**, **lists**, and **drives** (document libraries)
 * Read-only support for **site** resources (no ability to create new sites)
 * Read-write support for **lists**, **listItems**, and **driveItems**
+* Read-write support for tenant-level **SharePointSettings**
 * Address resources by SharePoint ID, URL, or relative path
 
 The SharePoint API exposes three major resource types:
@@ -81,6 +82,7 @@ The following examples are relative to `https://graph.microsoft.com/beta`.
 | /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
 | /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
 | /groups/{group-id}/sites/root          | Access a group's team [site][].
+| /admin/sharepoint/settings             | Access the organization's admin level [settings](sharepointSettings.md).
 
 Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
 You can optionally transition back to addressing the resource model by putting another colon at the end.
@@ -171,6 +173,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md
+[settings]: sharepointSettings.md
 
 <!-- {
   "type": "#page.annotation",
