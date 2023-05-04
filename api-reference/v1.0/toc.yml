@@ -7626,7 +7626,7 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Tenant SharePoint settings
+      - name: Tenant settings
         items:
           - name: Sharepoint settings
             href: resources/sharepointSettings.md
