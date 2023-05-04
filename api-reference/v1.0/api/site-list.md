@@ -24,7 +24,7 @@ If you want to list all sites across all geographies, refer to [sites-getallsite
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
-[sites-getallsites.md]: sites-getallsites.md
+[site-getallsites.md]: site-getallsites.md
 
 For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
