@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllSites",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/sites-getallsites?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAllsites](https://learn.microsoft.com/en-us/graph/api/site-getallsites?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         }
       ],
