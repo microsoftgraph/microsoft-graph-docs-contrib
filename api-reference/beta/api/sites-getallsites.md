@@ -1,7 +1,7 @@
 ---
 title: "sites: getAllSites"
 description: "List all root sites across geographies in an organization - OneDrive API"
-author: tkanaujia
+author: tushar20
 ms.author: tkanaujia
 ms.date: 24/03/2023
 ms.localizationpriority: medium
