@@ -37,7 +37,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/deactivate
 | :------------ | :------------------------   |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
-| Prefer        | include-unknown-enum-members |
+| Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
 
