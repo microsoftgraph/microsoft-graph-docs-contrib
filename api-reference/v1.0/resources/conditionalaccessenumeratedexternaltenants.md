@@ -1,19 +1,17 @@
 ---
-title: "conditionalAccessAllExternalTenants resource type"
-description: "Represents all external tenants in a policy scope."
+title: "conditionalAccessEnumeratedExternalTenants resource type"
+description: "Represents a list of external tenants in a policy scope."
 ms.localizationpriority: medium
 author: "sandeo"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# conditionalAccessAllExternalTenants resource type
+# conditionalAccessEnumeratedExternalTenants resource type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents all external tenants in a policy scope.
+Represents a list of external tenants in a policy scope.
 
 Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md).
 
@@ -21,6 +19,7 @@ Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenant
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+| members | String collection | A collection of tenant IDs that define the scope of a policy targeting conditional access for guests and external users. |
 | membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object. Inherited from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md). |
 
 ## Relationships
@@ -33,12 +32,17 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.conditionalAccessAllExternalTenants"
-}
--->
-``` json
+  "optionalProperties": [
+    "members"
+  ],
+  "@odata.type": "microsoft.graph.conditionalAccessEnumeratedExternalTenants",
+  "baseType": "microsoft.graph.conditionalAccessExternalTenants"
+}-->
+
+```json
 {
-  "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+  "@odata.type": "#microsoft.graph.conditionalAccessEnumeratedExternalTenants",
+  "members": ["String"],
   "membershipKind": "String"
 }
 ```
