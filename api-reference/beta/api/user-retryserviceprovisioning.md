@@ -38,6 +38,10 @@ POST /users/{id}/retryServiceProvisioning
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
+## Request body
+
+This operation has no request content.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -55,7 +59,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/retryServiceProvisioning
-Content-type: application/json
 ```
 
 ### Response
