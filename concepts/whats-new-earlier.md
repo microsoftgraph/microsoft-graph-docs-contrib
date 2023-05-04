@@ -417,8 +417,8 @@ Manage the [version history of a document set](/graph/api/resources/documentsetv
 Intune [August updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2022-08-01&to=2022-08-31) for the beta version.
 
 ### Files
-[Get](/graph/api/tenantadmin-settings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/tenantadmin-settings-update?view=graph-rest-beta&preserve-view=true) tenant-wide [settings](/graph/api/resources/tenantadmin-settings?view=graph-rest-beta&preserve-view=true) for SharePoint and OneDrive:
-- The [idle session sign-out policy settings](/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta&preserve-view=true) for SharePoint.
+[Get](/graph/api/sharepointsettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/sharepointsettings-update?view=graph-rest-beta&preserve-view=true) tenant-wide [settings](/graph/api/resources/sharepointsettings?view=graph-rest-beta&preserve-view=true) for SharePoint and OneDrive:
+- The [idle session sign-out policy settings](/graph/api/resources/idlesessionsignout?view=graph-rest-beta&preserve-view=true) for SharePoint.
 - Whether legacy authentication protocols are enabled for the tenant.
 - Whether guests must sign in using the same account to which sharing invitations are sent.
 

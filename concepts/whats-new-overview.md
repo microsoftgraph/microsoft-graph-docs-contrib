@@ -21,7 +21,7 @@ Administrators can use the [Edge API in Microsoft Graph](/graph/api/resources/br
 ## April 2023: New in preview only
 
 ### Identity and access | Governance
-Use the new `LifecycleWorkflows.ReadWrite.All` delegated and application permissions to [resume](/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta&preserve-view=true) a task-processing result that's in progress.
+Use the new `LifecycleWorkflows.ReadWrite.All` delegated or application permission to [resume](/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta&preserve-view=true) a task-processing result that's in progress.
 
 ### Reports | Azure AD activity reports
 List any [managed identity](/graph/api/resources/managedIdentity?view=graph-rest-beta&preserve-view=true) used for a [sign-in](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) activity, including the identity type and associated Azure Resource Manager (ARM) resource ID.
