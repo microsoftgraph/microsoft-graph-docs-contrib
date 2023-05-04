@@ -17,7 +17,7 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
-You can use the `Prefer` header in your request to get the `inactive` status in case of the assignment be deactivated, otherwise you will get an `unknownFutureValue` value in the response.
+You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ The available `$expand` options for this method are: `categories`, `resources`, 
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required. |
-| Prefer        | include-unknown-enum-members |
+| Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -235,7 +235,7 @@ Content-type: application/json
 
 ## Example 3: Get assignment in inactive state without optional Prefer header
 #### Request
-The following is an example of the request, where the status is unknownFutureValue. Prefer: include-unknown-enum-members is not provided in the request header.
+The following is an example of the request, where the status is `unknownFutureValue`. `Prefer: include-unknown-enum-members` is not provided in the request header.
 
 <!-- {
   "blockType": "request",
@@ -246,7 +246,7 @@ The following is an example of the request, where the status is unknownFutureVal
 GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
 ```
 #### Response
-The following is an example of the response when Prefer: include-unknown-enum-members is not provided in the request header.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
