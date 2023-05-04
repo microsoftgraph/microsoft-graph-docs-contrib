@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b26bc4bc-505d-4f58-8ec5-3b851b23fc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "b26bc4bc-505d-4f58-8ec5-3b851b23fc78",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-18T22:22:46.6246645Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",

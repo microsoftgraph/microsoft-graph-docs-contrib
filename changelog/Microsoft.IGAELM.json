@@ -1,5 +1,23 @@
 ﻿{
   "changelog": [
+      {  
+        "ChangeList": [
+        {
+          "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetUserSponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetUserSponsors](https://learn.microsoft.com/en-us/graph/api/resources/targetUserSponsors?view=graph-rest-beta) resource type.",
+          "Target": "targetUserSponsors"
+        }
+       ],
+       "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
+       "Cloud": "Prod",
+       "Version": "beta",
+       "CreatedDateTime": "2023-04-18T22:22:46.6246683Z",
+       "WorkloadArea": "Identity and access",
+       "SubArea": "Identity governance"
+      },
       {
         "ChangeList": [
         {
