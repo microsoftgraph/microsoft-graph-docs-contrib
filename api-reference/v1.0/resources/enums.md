@@ -18,6 +18,27 @@ Namespace: microsoft.graph
 |or|
 |and|
 
+### conditionalAccessExternalTenantsMembershipKind values
+
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
+
+### conditionalAccessGuestOrExternalUserTypes values
+
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
+
 ### appCredentialRestrictionType values
 
 | Member               |
