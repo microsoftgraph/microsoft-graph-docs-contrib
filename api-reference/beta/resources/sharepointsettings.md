@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
-# SharepointSettings resource type
+# sharepointSettings resource type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
