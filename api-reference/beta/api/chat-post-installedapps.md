@@ -17,7 +17,6 @@ Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resour
 
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
-> - Currently, installing an app that requires resource-specific consent permissions is not supported in application context.
 
 ## Permissions
 
