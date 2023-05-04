@@ -211,7 +211,7 @@ Content-type: application/json
 
 The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
 
->**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. 
+>**Note:** signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. You must specify `$select=signInActivity` or `$filter=signInActivity` while [listing users](../api/user-list.md), as the signInActivity property is not returned by default. This property is not returned for a user who has never signed in or last signed in before April 2020.|
 
 
 # [HTTP](#tab/http)
