@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+|Delegated (work or school account)|PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+|Application|PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
 
 [!INCLUDE [rbac-pim-groups-apis-write-eligibilityschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-write-eligibilityschedulerequests.md)]
 
