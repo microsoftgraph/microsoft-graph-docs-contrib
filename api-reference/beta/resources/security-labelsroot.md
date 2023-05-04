@@ -23,16 +23,16 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |[List retentionLabels](../api/security-retentionlabel-list.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.|
 |[Create retentionLabel](../api/security-retentionlabel-post.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
-|[List authorities](../api/security-fileplandescriptor-list-authoritytemplate.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Get the authorityTemplate resources from the authorities navigation property.|
-|[Create authorityTemplate](../api/security-labelsroot-post-authorities.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Create a new authorityTemplate object.|
-|[List categories](../api/security-fileplandescriptor-list-categorytemplate.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) collection|Get the categoryTemplate resources from the categories navigation property.|
-|[Create categoryTemplate](../api/security-labelsroot-post-categories.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new categoryTemplate object.|
-|[List citations](../api/security-fileplandescriptor-list-citationtemplate.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get the citationTemplate resources from the citations navigation property.|
-|[Create citationTemplate](../api/security-labelsroot-post-citations.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new citationTemplate object.|
-|[List departments](../api/security-fileplandescriptor-list-departmenttemplate.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get the departmentTemplate resources from the departments navigation property.|
-|[Create departmentTemplate](../api/security-labelsroot-post-departments.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new departmentTemplate object.|
-|[List filePlanReferences](../api/security-fileplandescriptor-list-fileplanreferencetemplate.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get the filePlanReferenceTemplate resources from the filePlanReferences navigation property.|
-|[Create filePlanReferenceTemplate](../api/security-labelsroot-post-fileplanreferences.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new filePlanReferenceTemplate object.|
+|[List authorities](../api/security-authoritytemplate-list.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Get the authorityTemplate resources from the authorities navigation property.|
+|[Create authorityTemplate](../api/security-authoritytemplate-post.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Create a new authorityTemplate object.|
+|[List categories](../api/security-categorytemplate-list.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) collection|Get the categoryTemplate resources from the categories navigation property.|
+|[Create categoryTemplate](../api/security-categorytemplate-post.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new categoryTemplate object.|
+|[List citations](../api/security-citationtemplate-list.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|Get the citationTemplate resources from the citations navigation property.|
+|[Create citationTemplate](../api/security-citationtemplate-post.md)|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md)|Create a new citationTemplate object.|
+|[List departments](../api/security-departmenttemplate-list.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get the departmentTemplate resources from the departments navigation property.|
+|[Create departmentTemplate](../api/security-departmenttemplate-post.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new departmentTemplate object.|
+|[List filePlanReferences](../api/security-fileplanreferencetemplate-list.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get the filePlanReferenceTemplate resources from the filePlanReferences navigation property.|
+|[Create filePlanReferenceTemplate](../api/security-fileplanreferencetemplate-post.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new filePlanReferenceTemplate object.|
 
 ## Properties
 |Property|Type|Description|
