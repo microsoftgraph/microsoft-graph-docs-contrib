@@ -106,9 +106,11 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to membership changes in all private channels of a particular team
+## Subscribe to membership changes in all private & shared channels of a particular team
 
-To get change notifications for membership changes in all private channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in all the private & shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+>**Note:** Change notifications shared channels membership updates are only supported in beta. This is not currently available for v1.0. In this case, a subscriber to this resource in v1.0 context will receive notifications only for private channels under a particular team, not for private channels.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
@@ -116,7 +118,7 @@ To get change notifications for membership changes in all private channels in a 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported. |
+|Delegated (work or school account) | ChannelMember.Read.All. |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelMember.Read.All   |
 
