@@ -13226,8 +13226,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-20T01:47:34.2749095Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }    
   ]
 }

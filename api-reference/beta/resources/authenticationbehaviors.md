@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the Authentication Behaviors set in the context of an application. Authentication Behaviors provide applications flexibility in adopting breaking-change behaviors related to token issuance. These updated token issuance behaviors can be related to security mitigations, security improvements, or feature deprecations. 
+Describes the authentication behaviors set in the context of an application. Authentication behaviors provide applications flexibility in adopting breaking-change behaviors related to token issuance. These updated token issuance behaviors can be related to security mitigations, security improvements, or feature deprecations. 
 
 Applications can adopt new breaking changes by enabling a behavior, or continue using pre-existing behavior by disabling it. It should be noted that certain behaviors are not modifiable for an application in the interest of Microsoft maintaining a strong security posture. 
 
@@ -21,7 +21,7 @@ Applications can adopt new breaking changes by enabling a behavior, or continue 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|removeUnverifiedEmailClaim|Boolean|**TODO: Add Description**|
+|removeUnverifiedEmailClaim|Boolean| Removes the `email` claim from tokens sent to an application when the email address's domain cannot be verified. |
 |requireClientServicePrincipal|Boolean| Requires a client application attempting to acquire a cross-tenant token from a resource application to have a Service Principal as a pre-requisite. |
 
 ## Relationships
