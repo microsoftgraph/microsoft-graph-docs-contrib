@@ -52,7 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/sitepage-list.md
 [List root sites]: ../api/site-list.md
-[List root sites across geographies]: ../api/sites-getallsites.md
+[List root sites across geographies]: ../api/site-getallsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
