@@ -128,7 +128,7 @@ A successful JSON result will look something like this:
 ]
 ```
 
-3. Using the values returned in step 2 use **az resource show** to show the full details of the resource. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the requested resource.
+3. With the values returned in step 2, use **az resource show** to show the full details of the resource. Copy the following command into your command-line interface, replace the parameters listed in the table with your own values, and type <**Enter**>. If the command succeeds, the response will include a JSON representation of the requested resource.
 
 ```PowerShell
   az resource show --resource-group myRg --name myGraphAppBilling --resource-type Microsoft.GraphServices/accounts
