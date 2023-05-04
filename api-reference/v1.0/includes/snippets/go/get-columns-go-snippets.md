@@ -27,7 +27,7 @@ configuration := &graphconfig.DriveItemItemItemWorkbookTableItemColumnsRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().TablesById("workbookTable-id").Columns().Get(context.Background(), configuration)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Columns().Get(context.Background(), configuration)
 
 
 ```

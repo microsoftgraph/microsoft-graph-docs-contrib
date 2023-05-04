@@ -22,7 +22,7 @@ configuration := &graphconfig.AdminServiceAnnouncementHealthOverviewItemRequestB
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById("serviceHealth-id").Get(context.Background(), configuration)
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().ByHealthOverviewId("serviceHealth-id").Get(context.Background(), configuration)
 
 
 ```

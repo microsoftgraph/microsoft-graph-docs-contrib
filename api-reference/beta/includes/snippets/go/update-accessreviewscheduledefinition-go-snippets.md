@@ -71,7 +71,7 @@ range.SetStartDate(&startDate)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").Put(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Put(context.Background(), requestBody, nil)
 
 
 ```
