@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/deviceRegistrationPolicy
+PUT https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 Content-Type: application/json
 
 {
@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/deviceRegistrationPolicy",
     "id": "deviceRegistrationPolicy",
     "displayName": "Device Registration Policy",
     "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
