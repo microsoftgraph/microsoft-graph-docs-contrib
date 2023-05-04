@@ -39,6 +39,9 @@ For an Exchange Online provider:
 GET /roleManagement/exchange/customAppScopes
 ```
 
+## Optional query parameters
+This method supports the `$filter` and `$count` [OData query parameters](/graph/query-parameters) to help customize the response. Please note that `$filter` doesn't work for nested properties stored in `customAttributes`.
+
 ## Request headers
 
 | Name      |Description|

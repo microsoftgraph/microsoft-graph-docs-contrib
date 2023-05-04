@@ -39,6 +39,9 @@ For an Exchange Online provider:
 GET /roleManagement/exchange/customAppScopes/{id}
 ```
 
+## Optional query parameters
+This method does not support optional query parameters to customize the response.
+
 ## Request headers
 
 | Name      |Description|
