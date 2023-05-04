@@ -33,19 +33,17 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.attributeMapping"
-}-->
-
-```json
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.attributeMapping",
   "defaultValue": "String",
   "exportMissingReferences": "Boolean",
   "flowBehavior": "String",
   "flowType": "String",
-  "matchingPriority": 1024,
+  "matchingPriority": "Integer",
   "source": {
     "@odata.type": "microsoft.graph.attributeMappingSource"
   },
