@@ -26,15 +26,15 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |Property|Type|Description|
 |:---|:---|:---|
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility to the group that is governed by PIM. Required. The possible values are: `owner`, `member`.|
-|createdDateTime|DateTimeOffset|When the schedule was created. Optional. Inherited from privilegedAccessSchedule.|
-|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional. Inherited from privilegedAccessSchedule.|
+|createdDateTime|DateTimeOffset|When the schedule was created. Optional. Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
+|createdUsing|String|The identifier of the access assignment or eligibility request that creates this schedule. Optional. Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
 |groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required.|
 |id|String|The identifier of the schedule. Required. Inherited from [entity](../resources/entity.md).|
 |memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a group assignment. It can further imply whether the caller can manage the schedule. Required. The possible values are: `direct`, `group`, `unknownFutureValue`.|
-|modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional. Inherited from privilegedAccessSchedule.|
+|modifiedDateTime|DateTimeOffset|When the schedule was last modified. Optional. Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
 |principalId|String|The identifier of the principal whose membership or ownership eligibility is granted through PIM for groups. Required.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required. Inherited from privilegedAccessSchedule.|
-|status|String|The status of the access assignment or eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Optional. Inherited from privilegedAccessSchedule.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Represents the period of the access assignment or eligibility. The scheduleInfo can represent a single occurrence or multiple recurring instances. Required. Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
+|status|String|The status of the access assignment or eligibility request. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable. Optional. Inherited from [privilegedAccessSchedule](../resources/privilegedaccessschedule.md).|
 
 ## Relationships
 |Relationship|Type|Description|
