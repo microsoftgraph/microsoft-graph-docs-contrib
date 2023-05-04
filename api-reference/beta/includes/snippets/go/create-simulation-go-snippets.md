@@ -38,7 +38,7 @@ additionalData := map[string]interface{}{
 includedAccountTarget.SetAdditionalData(additionalData)
 requestBody.SetIncludedAccountTarget(includedAccountTarget)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)", 
 }
 requestBody.SetAdditionalData(additionalData)
 

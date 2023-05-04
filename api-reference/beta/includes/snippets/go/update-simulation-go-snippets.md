@@ -50,7 +50,7 @@ excludedAccountTarget.SetAdditionalData(additionalData)
 requestBody.SetExcludedAccountTarget(excludedAccountTarget)
 additionalData := map[string]interface{}{
 	"odataEtag" : "\"0100aa9b-0000-0100-0000-6396fa270000\"", 
-	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 
+	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)", 
 }
 requestBody.SetAdditionalData(additionalData)
 

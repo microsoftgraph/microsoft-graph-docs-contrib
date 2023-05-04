@@ -84,7 +84,7 @@ Content-type: application/json
 
 {
   "displayName": "Graph Simulation",
-  "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+  "payload@odata.bind":"https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)",
   "durationInDays": 7,
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",

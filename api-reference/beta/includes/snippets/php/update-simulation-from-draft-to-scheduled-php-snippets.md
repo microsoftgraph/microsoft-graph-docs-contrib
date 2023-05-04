@@ -50,7 +50,7 @@ $excludedAccountTarget->setAdditionalData($additionalData);
 $requestBody->setExcludedAccountTarget($excludedAccountTarget);
 $additionalData = [
 '@odata.etag' => '\"0100aa9b-0000-0100-0000-6396fa270000\"', 
-'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a', 
+'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

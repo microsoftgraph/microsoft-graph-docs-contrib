@@ -10,7 +10,7 @@ Simulation simulation = new Simulation();
 simulation.additionalDataManager().put("@odata.etag", new JsonPrimitive("\"0100aa9b-0000-0100-0000-6396fa270000\""));
 simulation.id = "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc";
 simulation.displayName = "Graph Simulation";
-simulation.additionalDataManager().put("payload@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"));
+simulation.additionalDataManager().put("payload@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)"));
 simulation.durationInDays = 7;
 simulation.attackTechnique = SimulationAttackTechnique.CREDENTIAL_HARVESTING;
 simulation.attackType = SimulationAttackType.SOCIAL;

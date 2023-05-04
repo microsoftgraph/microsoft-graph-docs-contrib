@@ -30,7 +30,7 @@ var requestBody = new Simulation
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"payload@odata.bind" , "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"
+			"payload@odata.bind" , "https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)"
 		},
 	},
 };

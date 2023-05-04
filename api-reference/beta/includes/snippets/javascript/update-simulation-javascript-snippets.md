@@ -13,7 +13,7 @@ const client = Client.init(options);
 const simulation = {
   '@odata.etag': '\"0100aa9b-0000-0100-0000-6396fa270000\"',
   displayName: 'Graph Simulation',
-  'payload@odata.bind':'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a',
+  'payload@odata.bind':'https://graph.microsoft.com/beta/security/attacksimulation/payloads(12345678-9abc-def0-123456789a)',
   durationInDays: 7,
   attackTechnique: 'credentialHarvesting',
   attackType: 'social',
