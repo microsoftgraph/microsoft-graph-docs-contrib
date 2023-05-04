@@ -473,7 +473,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentSchedule"
         },
         {
@@ -481,7 +481,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentScheduleInstance"
         },
         {
@@ -489,7 +489,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentScheduleRequest"
         },
         {
@@ -497,7 +497,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilitySchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilitySchedule"
         },
         {
@@ -505,7 +505,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilityScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilityScheduleInstance"
         },
         {
@@ -513,7 +513,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilityScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-beta) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilityScheduleRequest"
         },
         {
@@ -539,12 +539,44 @@
           "ChangeType": "Addition",
           "Description": "Added the [privilegedAccessScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleRequest?view=graph-rest-beta) resource.",
           "Target": "privilegedAccessScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedEligibilitySchedule.Read.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedEligibilitySchedule.Read.AzureADGroup` delegated and application permissions to the read operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupEligibilityScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup` delegated and application permissions to the read and write operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupEligibilityScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedAssignmentSchedule.Read.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedAssignmentSchedule.Read.AzureADGroup` delegated and application permissions to the read operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
+        },
+        {
+          "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the `PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup` delegated and application permissions to the read and write operations of [privileged identity management (PIM) for groups APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta).",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
         }
       ],
       "Id": "42b24db2-6255-4607-af43-9cb97c5230e5",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-03-15T00:00:00.676618Z",
+      "CreatedDateTime": "2023-05-05T00:00:00.676618Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
@@ -555,7 +587,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRole",
           "ChangeType": "Deletion",
-          "Description": "Removed the privilegedRole resource type.",
+          "Description": "Removed the privilegedRole resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
           "Target": "privilegedRole"
         },
         {
@@ -563,7 +595,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignment",
           "ChangeType": "Deletion",
-          "Description": "Removed the privilegedRoleAssignment resource type.",
+          "Description": "Removed the privilegedRoleAssignment resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
           "Target": "privilegedRoleAssignment"
         },
         {
@@ -571,7 +603,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignmentRequest",
           "ChangeType": "Deletion",
-          "Description": "Removed the privilegedRoleAssignmentRequest resource type.",
+          "Description": "Removed the privilegedRoleAssignmentRequest resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
           "Target": "privilegedRoleAssignmentRequest"
         },
         {
@@ -579,14 +611,38 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedApproval",
           "ChangeType": "Deletion",
-          "Description": "Removed the privilegedApproval resource type.",
+          "Description": "Removed the privilegedApproval resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
           "Target": "privilegedApproval"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleSummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleSummary resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleSummary"
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleSettings ",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedRoleSettings resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedRoleSettings "
+        },
+        {
+          "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedOperationEvent",
+          "ChangeType": "Deletion",
+          "Description": "Removed the privilegedOperationEvent resource type and its associated methods. Use the [privileged identity management (PIM) iteration 3 APIs](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-1.0) to manage Azure AD roles.",
+          "Target": "privilegedOperationEvent"
         }
       ],
       "Id":"f52b3a96-4c8f-44b4-968a-ccc0c3f24a92",
       "Cloud":"Prod",
       "Version":"beta",
-      "CreatedDateTime":"2023-04-19T00:00:00.0000000Z",
+      "CreatedDateTime":"2023-05-05T00:00:00.0000000Z",
       "WorkloadArea":"Identity and access",
       "SubArea":"Governance"
     }
