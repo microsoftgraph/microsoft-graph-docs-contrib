@@ -7,7 +7,7 @@ author: "ArvindHarinder1"
 ms.prod: "applications"
 ---
 
-# metadataEntry resource type
+# attributeDefinitionMetadataEntry resource type
 
 Namespace: microsoft.graph
 
