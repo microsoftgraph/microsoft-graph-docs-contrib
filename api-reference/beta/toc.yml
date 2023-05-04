@@ -16315,6 +16315,8 @@ items:
           href: api/site-list-operations.md
         - name: Get site settings
           href: api/sitesettings-get.md
+        - name: List all root sites
+          href: api/sites-getallsites.md
       - name: List
         items:
         - name: List
