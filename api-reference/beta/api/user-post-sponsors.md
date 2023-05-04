@@ -1,7 +1,7 @@
 ---
 title: "Assign sponsors"
 description: "Assign a user or group as the user's sponsor."
-author: "sdshl"
+author: "sadia353"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

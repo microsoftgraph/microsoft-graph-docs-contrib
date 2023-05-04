@@ -141,7 +141,7 @@ This resource supports:
 | **Schema extensions** |||
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Sponsors** |||
-| [Assign sponsors](../api/user-post-sponsors.md) | [directoryObject](../resources/directoryobject.md) | Assign a user or group as this user's sponsor. |
+| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user or group as this user's sponsor. |
 | [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
 | [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user or group as the sponsor of this user. |
 | **Teamwork** |||

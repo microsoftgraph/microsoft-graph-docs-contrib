@@ -1,7 +1,7 @@
 ---
 title: "Remove sponsors"
 description: "Remove a user's sponsor."
-author: "sdshl"
+author: "sadia353"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

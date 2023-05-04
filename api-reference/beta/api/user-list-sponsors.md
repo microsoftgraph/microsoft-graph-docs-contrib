@@ -2,7 +2,7 @@
 title: "List sponsors"
 description: "Get user's sponsors. Returns the users or groups assigned as the user's sponsors."
 ms.localizationpriority: medium
-author: "sdshl"
+author: "sadia353"
 ms.prod: "users"
 doc_type: apiPageType
 ---

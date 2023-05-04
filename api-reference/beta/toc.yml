@@ -646,6 +646,14 @@ items:
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
+      - name: Sponsors
+        items:
+        - name: Assign sponsors
+          href: api/user-post-sponsors.md
+        - name: List sponsors
+          href: api/user-list-sponsors.md
+        - name: Remove sponsors
+          href: api/user-delete-sponsors.md
       - name: Teamwork and communications
         items:
         - name: Installed app
