@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/deviceRegistrationPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceRegistrationPolicy",
     "id": "deviceRegistrationPolicy",
     "displayName": "Device Registration Policy",
     "description": "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
