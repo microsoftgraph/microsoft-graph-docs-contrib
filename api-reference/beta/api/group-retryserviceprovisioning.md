@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/retryServiceProvisioning
 ```
@@ -42,17 +42,27 @@ POST /groups/{id}/retryServiceProvisioning
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
+## Example
 
-### Example 1: Retry group serviceProvisioning with groupId
-
-#### Request
+### Request
 
 The following is an example of the request.
-
+<!-- {
+  "blockType": "request",
+  "name": "group_retryServiceProvisioning"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/retryServiceProvisioning
 Content-type: application/json
+```
 
+### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
 HTTP/1.1 204 No Content
 ```

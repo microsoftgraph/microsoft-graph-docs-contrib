@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retries [orgContact](../resources/orgContact.md) service provisioning.
+Retry the [orgContact](../resources/orgContact.md) service provisioning.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /orgContacts/{id}/retryServiceProvisioning
 ```
@@ -44,15 +44,25 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Retry orgContact serviceProvisioning with orgContactId
-
-#### Request
+### Request
 
 The following is an example of the request.
-
+<!-- {
+  "blockType": "request",
+  "name": "orgContact_retryServiceProvisioning"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/orgContacts/{id}/retryServiceProvisioning
 Content-type: application/json
+```
 
+### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
 HTTP/1.1 204 No Content
 ```

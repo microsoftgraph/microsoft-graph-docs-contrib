@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retries [user](../resources/user.md) service provisioning.
+Retry the [user](../resources/user.md) service provisioning.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All                 |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/retryServiceProvisioning
 ```
@@ -44,15 +44,25 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Retry user serviceProvisioning with userId
-
-#### Request
+### Request
 
 The following is an example of the request.
-
+<!-- {
+  "blockType": "request",
+  "name": "user_retryServiceProvisioning"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/retryServiceProvisioning
 Content-type: application/json
+```
 
+### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
 HTTP/1.1 204 No Content
 ```
