@@ -1,0 +1,9 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "api-reference/beta/resources/privilegedidentitymanagement-directory.md",
+        "redirect_url": "api-reference/beta/resources/privilegedidentitymanagementv3-overview.md",
+        "redirect_document_id": true
+      }
+    ]
+}
