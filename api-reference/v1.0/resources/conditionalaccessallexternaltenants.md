@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents all external tenants in a policy scope.
 
 Inherits from [conditionalAccessExternalTenants](conditionalaccessexternaltenants.md).
