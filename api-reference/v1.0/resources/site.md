@@ -37,7 +37,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
-[List root sites across geographies]: ../api/sites-getallsites.md
+[List root sites across geographies]: ../api/site-getallsites.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
