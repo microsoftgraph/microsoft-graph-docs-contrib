@@ -22,7 +22,7 @@ Specific filter criteria and query options are also supported and described belo
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
 In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
-If you want to list all sites across all geographies, refer to [sites-getallsites.md][].
+If you want to list all sites across all geographies, refer to [site-getallsites.md][].
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
