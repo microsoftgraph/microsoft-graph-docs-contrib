@@ -4,7 +4,7 @@ description: "When OAuth2 Client Credentials Grant is to be used to connect to t
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource

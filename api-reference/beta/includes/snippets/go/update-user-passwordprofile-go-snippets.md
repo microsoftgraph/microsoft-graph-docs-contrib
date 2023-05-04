@@ -23,7 +23,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-result, err := graphClient.UsersById("user-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

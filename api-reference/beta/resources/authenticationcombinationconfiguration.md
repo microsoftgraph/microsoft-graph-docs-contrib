@@ -1,7 +1,7 @@
 ---
 title: "authenticationCombinationConfiguration resource type"
 description: "An abstract configuration for a given auth method applied to certain combinations. "
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 An authentication combination configuration sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
 
-This is an abstract type. In use, [fido2combinationConfigurations](fido2combinationconfiguration.md) may be created and managed as described below. 
+This is an abstract type. In use, [fido2combinationConfigurations](fido2combinationconfiguration.md) may be created and managed as described below.
 
 Inherits from [entity](../resources/entity.md).
 

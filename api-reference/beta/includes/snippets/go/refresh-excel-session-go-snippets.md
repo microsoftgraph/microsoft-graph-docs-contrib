@@ -25,7 +25,7 @@ configuration := &graphconfig.DriveItemItemItemWorkbookRefreshSessionRequestBuil
 }
 requestBody := graphmodels.NewRefreshSessionPostRequestBody()
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().RefreshSession().Post(context.Background(), requestBody, configuration)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().RefreshSession().Post(context.Background(), requestBody, configuration)
 
 
 ```

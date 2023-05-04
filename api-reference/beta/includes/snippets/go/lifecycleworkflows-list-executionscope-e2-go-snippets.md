@@ -22,7 +22,7 @@ configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemEx
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").ExecutionScope().Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").ExecutionScope().Get(context.Background(), configuration)
 
 
 ```

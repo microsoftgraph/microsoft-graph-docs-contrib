@@ -4,7 +4,7 @@ description: "An application auth method policy for enforcing app management res
 author: "madansr7"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # appManagementPolicy resource type

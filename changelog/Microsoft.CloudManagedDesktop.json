@@ -3098,6 +3098,24 @@
         "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
         "WorkloadArea": "Devices and apps",
         "SubArea": "Cloud PC"
-      }
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+                "ApiChange": "Property",
+                "ChangedApiName": "ssoCheckKerberosConfigurationError",
+                "ChangeType": "Addition",
+                "Description": "Added the **ssoCheckKerberosConfigurationError** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+        ],
+        "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
+    }
     ]
 }

@@ -11,6 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+
 ### usqState values
 
 | Member             | 
@@ -120,26 +136,26 @@ Namespace: microsoft.graph
 
 ### conditionalAccessExternalTenantsMembershipKind values
 
-|Member|
-|:---|
-|all|
-|enumerated|
-|unknownFutureValue|
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
 
 ### conditionalAccessGuestOrExternalUserTypes values
 
-|Member|
-|:---|
-|none|
-|internalGuest|
-|b2bCollaborationGuest|
-|b2bCollaborationMember|
-|b2bDirectConnectUser|
-|otherExternalUser|
-|serviceProvider|
-|unknownFutureValue|
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
 
-### teamTemplateAudience values 
+### teamTemplateAudience values
 
 |Member|
 |:---|
@@ -3730,4 +3746,12 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----|
 |microsoftAuthenticator|
 |outlookMobile|
+|unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
 |unknownFutureValue|

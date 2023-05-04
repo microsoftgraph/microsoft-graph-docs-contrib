@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimesOffById("timeOff-id").Get(context.Background(), nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().ByTimesOff().Id("timeOff-id").Get(context.Background(), nil)
 
 
 ```
