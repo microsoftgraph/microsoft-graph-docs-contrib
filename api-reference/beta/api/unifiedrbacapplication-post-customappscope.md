@@ -43,7 +43,7 @@ POST /roleManagement/exchange/customAppScopes
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}              |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required. |
 
 ## Request body

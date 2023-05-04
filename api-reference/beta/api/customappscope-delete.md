@@ -41,7 +41,7 @@ DELETE /roleManagement/exchange/customAppScopes/{id}
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

@@ -43,6 +43,7 @@ PATCH /roleManagement/exchange/customAppScopes/{id}
 | Name | Description |
 |:---- |:----------- |
 | Authorization | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
