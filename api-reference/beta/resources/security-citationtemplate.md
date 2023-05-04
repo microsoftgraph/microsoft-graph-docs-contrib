@@ -1,6 +1,6 @@
 ---
 title: "citationTemplate resource type"
-description: "he specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
+description: "The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
