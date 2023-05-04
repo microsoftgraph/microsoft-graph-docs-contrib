@@ -7416,6 +7416,8 @@ items:
           href: api/site-search.md
         - name: List operations
           href: api/site-list-operations.md
+        - name: List all root sites
+          href: api/site-getallsites.md
         - name: Permission
           href: resources/permission.md
           items:
