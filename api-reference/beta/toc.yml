@@ -16510,14 +16510,15 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Tenant settings (preview)
+      - name: Tenant settings
         items:
-          - name: Settings
-            href: resources/tenantadmin-settings.md
-          - name: Get settings
-            href: api/tenantadmin-settings-get.md
-          - name: Update settings
-            href: api/tenantadmin-settings-update.md
+          - name: Sharepoint Settings
+            href: resources/sharepointSettings.md
+            items:
+            - name: Get Sharepoint settings
+              href: api/sharepointSettings-get.md
+            - name: Update Sharepoint settings
+              href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
