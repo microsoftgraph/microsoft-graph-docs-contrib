@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new CalendarViewRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new CalendarViewRequestBuilderGetQueryParameters();
-$queryParameters->startDateTime = "2017-01-01T19:00:00-08:00";
-$queryParameters->endDateTime = "2017-10-01T19:00:00.00-08:00";
-
 $headers = [
-'Prefer' => 'outlook.body-content-type="text"',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'outlook.body-content-type="text"',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = CalendarViewRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->startDateTime = "2017-01-01T19:00:00-08:00";
+$queryParameters->endDateTime = "2017-10-01T19:00:00.00-08:00";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groupsById('group-id')->calendarView()->get($requestConfiguration);
+
+$result = $graphServiceClient->groupsById('group-id')->calendarView()->get($requestConfiguration);
 
 
 ```

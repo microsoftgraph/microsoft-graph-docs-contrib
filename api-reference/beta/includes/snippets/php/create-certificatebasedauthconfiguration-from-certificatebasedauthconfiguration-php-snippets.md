@@ -9,25 +9,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new CertificateBasedAuthConfigurationPostRequestBody();
-$additionalData = [
-'certificateAuthorities' => $certificateAuthorities1 = new ();
-		$certificateAuthorities1->setIsRootAuthority(true);
+$requestBody = new CertificateBasedAuthConfiguration();
+$certificateAuthoritiesCertificateAuthority1 = new CertificateAuthority();
+$certificateAuthoritiesCertificateAuthority1->setIsRootAuthority(true);
 
-$		certificateAuthorities1->setCertificate('Binary');
+$certificateAuthoritiesCertificateAuthority1->setCertificate(base64_decode('Binary'));
 
 
-$certificateAuthoritiesArray []= $certificateAuthorities1;
+$certificateAuthoritiesArray []= $certificateAuthoritiesCertificateAuthority1;
 $requestBody->setCertificateAuthorities($certificateAuthoritiesArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
 
 
-
-
-$graphServiceClient->organizationById('organization-id')->certificateBasedAuthConfiguration()->post($requestBody);
+$result = $graphServiceClient->organizationById('organization-id')->certificateBasedAuthConfiguration()->post($requestBody);
 
 
 ```

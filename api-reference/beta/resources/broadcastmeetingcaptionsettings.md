@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingCaptionSettings resource type"
 description: "Represents caption settings of a Microsoft Teams live event."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

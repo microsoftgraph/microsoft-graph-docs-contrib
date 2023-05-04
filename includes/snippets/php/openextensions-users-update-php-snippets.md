@@ -11,16 +11,16 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Extension();
 $additionalData = [
-'theme' => 'light', 
-'color' => 'yellow', 
-'lang' => 'Swahili', 
+		'theme' => 'light', 
+		'color' => 'yellow', 
+		'lang' => 'Swahili', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->extensionsById('extension-id')->patch($requestBody);
+$result = $graphServiceClient->me()->extensionsById('extension-id')->patch($requestBody);
 
 
 ```

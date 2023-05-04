@@ -2,6 +2,32 @@
     "changelog": [
         {
             "ChangeList": [
+              {
+                "Id": "c228429d-a285-407d-b2d3-5c24f0565c48",
+                "ApiChange": "Resource",
+                "ChangedApiName": "localAdminPasswordSettings",
+                "ChangeType": "Addition",
+                "Description": "Added the [localAdminPasswordSettings](https://learn.microsoft.com/en-us/graph/api/resources/localAdminPasswordSettings?view=graph-rest-beta) resource type.",
+                "Target": "localAdminPasswordSettings"
+              },
+              {
+                "Id": "c228429d-a285-407d-b2d3-5c24f0565c48",
+                "ApiChange": "Property",
+                "ChangedApiName": "localAdminPassword",
+                "ChangeType": "Addition",
+                "Description": "Added the `localAdminPassword` property to the [deviceRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/deviceRegistrationPolicy?view=graph-rest-beta) resource.",
+                "Target": "deviceRegistrationPolicy"
+              }
+            ],
+            "Id": "c228429d-a285-407d-b2d3-5c24f0565c48",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-04-18T20:17:03.5263912Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity and sign-in"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "19a7a5eb-980a-11eb-8cb0-33bc249d550e",
                     "ApiChange": "Resource",
@@ -56,7 +82,7 @@
             "Version": "beta",
             "CreatedDateTime": "2021-10-05T00:00:00.228Z",
             "WorkloadArea": "Identity and access",
-            "SubArea": "Directory management"
+            "SubArea": "Identity and sign-in"
         }
     ]
 }

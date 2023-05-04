@@ -26,7 +26,7 @@ $userMatchingSettingsUserMatchingSetting1SourceIdentifier->setCode('username');
 
 $userMatchingSettingsUserMatchingSetting1->setSourceIdentifier($userMatchingSettingsUserMatchingSetting1SourceIdentifier);
 $additionalData = [
-'roleGroup@odata.bind' => 'https://graph.microsoft.com/beta/external/industryData/roleGroups/staff', 
+		'roleGroup@odata.bind' => 'https://graph.microsoft.com/beta/external/industryData/roleGroups/staff', 
 ];
 $userMatchingSettingsUserMatchingSetting1->setAdditionalData($additionalData);
 
@@ -47,7 +47,7 @@ $userMatchingSettingsUserMatchingSetting2SourceIdentifier->setCode('username');
 
 $userMatchingSettingsUserMatchingSetting2->setSourceIdentifier($userMatchingSettingsUserMatchingSetting2SourceIdentifier);
 $additionalData = [
-'roleGroup@odata.bind' => 'https://graph.microsoft.com/beta/external/industryData/roleGroups(\'students\')', 
+		'roleGroup@odata.bind' => 'https://graph.microsoft.com/beta/external/industryData/roleGroups(\'students\')', 
 ];
 $userMatchingSettingsUserMatchingSetting2->setAdditionalData($additionalData);
 
@@ -59,7 +59,7 @@ $requestBody->setUserMatchingSettings($userMatchingSettingsArray);
 
 
 
-$requestResult = $graphServiceClient->external()->industryData()->sourceSystems()->post($requestBody);
+$result = $graphServiceClient->external()->industryData()->sourceSystems()->post($requestBody);
 
 
 ```

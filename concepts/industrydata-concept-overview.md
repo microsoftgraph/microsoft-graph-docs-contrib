@@ -10,9 +10,7 @@ doc_type: conceptual
 
 # Overview of the industry data API in Microsoft Graph (preview)
 
-The industry data API in Microsoft Graph is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. Use the API to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
-
-Currently, the API is highly tailored to the education industry.
+The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. The API provides resources that you can use to get statistics after the data is processed, and assist with monitoring and troubleshooting.
 
 ## Why integrate with the industry API?
 

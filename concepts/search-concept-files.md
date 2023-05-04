@@ -356,13 +356,11 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 ## Example 6: Specify select properties
 
-You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
+You can specify the fields you want back in the response, as part of the **fields** sub-property in listItem or an internal **listItem** sub-property in driveItem of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
-Note that property selection for custom properties in SharePoint is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
+Note that property selection for custom properties in SharePoint is only available for **listItem** or **driveItem** because these are the only two SharePoint entities in Microsoft Graph that support custom properties.
 
-To retrieve a custom property for a **driveItem**, query **listItem** instead.
-
-### Request
+### listItem request
 
 ```HTTP
 POST /search/query
@@ -386,7 +384,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+### listItem response
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -430,6 +428,72 @@ Content-type: application/json
       ]
     }
   ]
+}
+```
+
+### driveItem request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "driveItem"
+      ],
+      "query": {
+        "queryString": "contoso"
+      },
+      "fields": [
+          "listId",
+          "author",
+          "title"
+      ]
+    }
+  ]
+}
+```
+
+### driveItem response
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "01YOWRGSD34TVVP25X7NAZAW3P2JRL7FWE",
+                            "rank": 1,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.driveItem",
+                                "listItem": {
+                                    "@odata.type": "#microsoft.graph.listItem",
+                                    "fields": {
+                                        "listId": "3b6a49d3-6bea-4549-bed8-8b1c92a12345",
+                                        "author": "Robin",
+                                        "title": "Test Notebook"
+                                    },
+                                    "id": "57ebe47b-b7eb-41fb-905b-123452bf96c4"
+                                }
+                            }
+                        }
+                    ],
+                    "total": 371,
+                    "moreResultsAvailable": true
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)"
 }
 ```
 

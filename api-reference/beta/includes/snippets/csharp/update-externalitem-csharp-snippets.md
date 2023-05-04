@@ -6,19 +6,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalItem
+var requestBody = new Microsoft.Graph.Beta.External.Connections.Item.Items.Item.Item
 {
-	Acl = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Acl>
+	AdditionalData = new Dictionary<string, object>
 	{
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Acl
 		{
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.AclType.Everyone,
-			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = Microsoft.Graph.Beta.Models.ExternalConnectors.AccessType.Grant,
+			"acl" , new List<>
+			{
+				new 
+				{
+					Type = "everyone",
+					Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+					AccessType = "grant",
+				},
+			}
 		},
 	},
 };
-var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PatchAsync(requestBody);
+await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PatchAsync(requestBody);
 
 
 ```

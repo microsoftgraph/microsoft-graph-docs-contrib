@@ -5,6 +5,7 @@ author: "jumasure"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
+ms.date: 03/23/2023
 ---
 
 # Receive change notifications through Azure Event Hubs
@@ -173,6 +174,11 @@ It's possible that the **Microsoft Graph Change Tracking** service principal is 
 
 Query details: `0bf30f3b-4a52-48df-9a82-234910c4a086` is the global appId for the Microsoft Graph Change Tracking application.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-eventhubs-create-changetrackingapp-sp"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 
@@ -180,6 +186,28 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 > **Note:** You can get an access denied running this query. In this case, select the gear icon next to your account name in the top left corner. Then select **Select Permissions** and search for **Application.ReadWrite.All**. Check the permission and select **Consent**. After consenting to this new permission, run the request again.
 

@@ -35,14 +35,15 @@ A class containing the properties used for Assignment Filter.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Assignment Filter.|
-|createdDateTime|DateTimeOffset|Creation time of the Assignment Filter.|
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter.|
-|displayName|String|DisplayName of the Assignment Filter.|
-|description|String|Description of the Assignment Filter.|
-|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|rule|String|Rule definition of the Assignment Filter.|
-|roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
-|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Associated assignments for a specific filter|
+|createdDateTime|DateTimeOffset|The creation time of the assignment filter. The value cannot be modified and is automatically populated during new assignment filter process. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'|
+|displayName|String|The name of the Assignment Filter.|
+|description|String|Optional description of the Assignment Filter.|
+|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Indicates filter is applied to which flatform. Possible values are android,androidForWork,iOS,macOS,windowsPhone81,windows81AndLater,windows10AndLater,androidWorkProfile, unknown, androidAOSP,androidMobileApplicationManagement, iOSMobileApplicationManagement. Default filter will be applied to 'unknown'. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|rule|String|Rule definition of the assignment filter.|
+|roleScopeTags|String collection|Indicates role scope tags assigned for the assignment filter.|
+|payloads|[payloadByFilter](../resources/intune-policyset-payloadbyfilter.md) collection|Indicates associated assignments for a specific filter.|
+|assignmentFilterManagementType|[assignmentFilterManagementType](../resources/intune-policyset-assignmentfiltermanagementtype.md)|Indicates filter is applied to either 'devices' or 'apps' management type. Possible values are devices, apps. Default filter will be applied to 'devices'. Possible values are: `devices`, `apps`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -76,6 +77,7 @@ Here is a JSON representation of the resource.
       "groupId": "String",
       "assignmentFilterType": "String"
     }
-  ]
+  ],
+  "assignmentFilterManagementType": "String"
 }
 ```

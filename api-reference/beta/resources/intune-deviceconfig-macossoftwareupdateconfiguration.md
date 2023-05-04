@@ -50,6 +50,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |updateScheduleType|[macOSSoftwareUpdateScheduleType](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|Custom Time windows when updates will be allowed or blocked. This collection can contain a maximum of 20 elements.|
 |updateTimeWindowUtcOffsetInMinutes|Int32|Minutes indicating UTC offset for each update time window|
+|maxUserDeferralsCount|Int32|The maximum number of times the system allows the user to postpone an update before it’s installed. Supported values: 0 - 366. Valid values 0 to 365|
+|priority|[macOSPriority](../resources/intune-deviceconfig-macospriority.md)|The scheduling priority for downloading and preparing the requested update. Default: Low. Possible values: Null, Low, High. Possible values are: `low`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -118,6 +120,8 @@ Here is a JSON representation of the resource.
       "endTime": "String (time of day)"
     }
   ],
-  "updateTimeWindowUtcOffsetInMinutes": 1024
+  "updateTimeWindowUtcOffsetInMinutes": 1024,
+  "maxUserDeferralsCount": 1024,
+  "priority": "String"
 }
 ```

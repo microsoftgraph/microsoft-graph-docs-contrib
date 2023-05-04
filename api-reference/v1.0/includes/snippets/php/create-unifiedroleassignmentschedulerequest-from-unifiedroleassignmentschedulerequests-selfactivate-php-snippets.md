@@ -41,7 +41,7 @@ $ticketInfo->setTicketSystem('MS Project');
 $requestBody->setTicketInfo($ticketInfo);
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->post($requestBody);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->post($requestBody);
 
 
 ```

@@ -53,6 +53,9 @@ PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskI
 |description|String|Describes the purpose of the task for administrative use.|
 |displayName|String|A unique string that identifies the task within the workflow.|
 
+> [!NOTE]
+> All other properties can be updated by creating a new workflow version. For details, see [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
+
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
@@ -63,6 +66,7 @@ If successful, this action returns a `204 No Content` response code.
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_update_task"
@@ -79,6 +83,15 @@ Content-length: 454
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-update-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-update-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
