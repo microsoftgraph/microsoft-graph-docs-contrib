@@ -1,5 +1,5 @@
 ---
-title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
+title: "onlineMeeting: getVirtualAppointmentJoinWebUrl"
 description: "Get a virtual appointment join link."
 author: "benmicrosoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualAppointment: getVirtualAppointmentJoinWebUrl
+# onlineMeeting: getVirtualAppointmentJoinWebUrl
 
 Namespace: microsoft.graph
 

@@ -17072,7 +17072,7 @@ items:
             - name: Create or get
               href: api/onlinemeeting-createorget.md
             - name: Get virtual appointment join link
-              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+              href: api/onlinemeeting-getvirtualappointmentjoinweburl.md
           - name: Virtual appointment (deprecated)
             href: resources/virtualappointment.md
             items:
