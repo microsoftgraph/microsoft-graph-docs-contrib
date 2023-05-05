@@ -6,7 +6,8 @@ ms.prod: "applications"
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
-ms.date: 12/20/2022
+ms.date: 05/05/2023
+ms.custom: ai-gen-docs
 ---
 
 # Generate proof of possession tokens for rolling keys
@@ -26,6 +27,7 @@ The token should contain the following claims:
 
 You can use the following code example to generate this proof of possession token.
 
+# [C#](#tab/csharp)
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -74,5 +76,40 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
     }
 }
 ```
+
+# [PowerShell](#tab/powershell)
+```powershell
+# Configure the following
+$pfxFilePath = "<Path to your certificate file>"
+$password = "<Certificate password>"
+$objectId = "<id of the application or servicePrincipal object>"
+
+# Get signing certificate
+$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($pfxFilePath, $password)
+
+# audience
+$aud = "00000002-0000-0000-c000-000000000000"
+
+# aud and iss are the only required claims.
+$claims = @{
+    "aud" = $aud
+    "iss" = $objectId
+}
+
+# token validity should not be more than 10 minutes
+$now = Get-Date -Utc
+$securityTokenDescriptor = @{
+    Claims = $claims
+    NotBefore = $now
+    Expires = $now.AddMinutes(10)
+    SigningCredentials = New-Object Microsoft.IdentityModel.Tokens.X509SigningCredentials($cert)
+}
+
+$handler = New-Object Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler
+$token = $handler.CreateToken($securityTokenDescriptor)
+Write-Output $token
+```
+
+---
 
 > **Note:** The proof can be generated using other tools, such as PowerShell or signature using Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload, or an **Authentication_MissingOrMalformed** error will be returned.
