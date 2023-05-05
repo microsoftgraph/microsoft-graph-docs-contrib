@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   "caseExact": true,
   "defaultValue": "String",
   "flowNullValues": true,
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [{"@odata.type": "microsoft.graph.attributeDefinitionMetadataEntry"}],
   "multivalued": true,
   "mutability": "String",
   "name": "String",
