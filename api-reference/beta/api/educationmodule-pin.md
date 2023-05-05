@@ -1,21 +1,21 @@
 ---
-title: "educationModule: publish"
-description: "Change the state of an educationModule from its original draft status to the published status."
+title: "educationModule: pin"
+description: "Pin an educationModule in the classwork list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationModule: publish
+# educationModule: pin
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the state of an [educationModule](../resources/educationmodule.md) from its original `draft` status to the `published` status.
+Updated the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
 
-Only a teacher in the class can make this call. When a **module** is in draft status, students will not see the **module**. When you call this API, the module appears in the student's classwork list.
+Only a teacher in the class can make this call, and only one **module** can be pinned in the classwork list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,12 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  TBD  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | TBD | 
+|Application | TBD |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/modules/{id}/publish
+POST /education/classes/{id}/modules/{id}/pin
 
 ```
 ## Request headers
@@ -51,12 +51,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["9f01e9b8-caf4-4132-b8d8-14de1bfc07a7","4656e4f1-0d8c-4bf8-8d4e-b1b551e9ef16"],
-  "name": "educationmodule_publish_1"
+  "sampleKeys": ["1e40c4aa-98b0-400a-8570-161e8dcfa631","82781966-72d7-4bc3-8803-2530f1a382d7"],
+  "name": "educationmodule_pin_1"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/1e40c4aa-98b0-400a-8570-161e8dcfa631/modules/777c289e-d0d4-4912-88d2-21812ae87b9a/publish
+POST https://graph.microsoft.com/beta/education/classes/1e40c4aa-98b0-400a-8570-161e8dcfa631/modules/82781966-72d7-4bc3-8803-2530f1a382d7/pin
 ```
 
 ### Response
@@ -74,14 +74,14 @@ HTTP/1.1 200 Ok
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationModule",
     "@odata.type": "#microsoft.graph.educationModule",
-    "displayName": "2023-05-05T22_28_20_564Z",
-    "description": "Description for 2023-05-05T22_28_20_564Z",
+    "displayName": "2023-05-05T23_09_02_734Z",
+    "description": "Description for 2023-05-05T23_09_02_734Z",
     "resourcesFolderUrl": null,
-    "isPinned": false,
-    "status": "published",
-    "createdDateTime": "2023-05-04T22:28:20.2048002Z",
-    "lastModifiedDateTime": "2023-05-04T22:34:49.3045564Z",
-    "id": "777c289e-d0d4-4912-88d2-21812ae87b9a",
+    "isPinned": true,
+    "status": "draft",
+    "createdDateTime": "2023-05-04T23:09:02.1925818Z",
+    "lastModifiedDateTime": "2023-05-04T23:09:54.7566354Z",
+    "id": "82781966-72d7-4bc3-8803-2530f1a382d7",
     "createdBy": {
         "application": null,
         "device": null,
