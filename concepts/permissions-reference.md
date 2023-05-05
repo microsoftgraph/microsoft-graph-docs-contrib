@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/12/2023
+ms.date: 05/05/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -1794,6 +1794,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureADGroup_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
+| _PrivilegedAssignmentSchedule.Read.AzureADGroup_ |Read assignment schedules for access to Azure AD groups | Allows the app to read time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedEligibilitySchedule.Read.AzureADGroup_ |Read eligibility schedules for access to Azure AD groups | Allows the app to read time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup_ |Read, create, and delete assignment schedules for access to Azure AD groups| Allows the app to read, create, and delete time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup_ |Read, create, and delete eligibility schedules for access to Azure AD groups | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -1802,6 +1806,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
 | _PrivilegedAccess.Read.AzureADGroup_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
 | _PrivilegedAccess.Read.AzureResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
+| _PrivilegedAssignmentSchedule.Read.AzureADGroup_ |Read assignment schedules for access to Azure AD groups | Allows the app to read time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedEligibilitySchedule.Read.AzureADGroup_ |Read eligibility schedules for access to Azure AD groups | Allows the app to read time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup_ |Read, create, and delete assignment schedules for access to Azure AD groups| Allows the app to read, create, and delete time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup_ |Read, create, and delete eligibility schedules for access to Azure AD groups | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Yes |
 
 ---
 
