@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "attributes": [{"@odata.type": "microsoft.graph.attributeDefinition"}],
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [{"@odata.type": "microsoft.graph.objectDefinitionMetadataEntry"}],
   "name": "String"
 }
 ```
