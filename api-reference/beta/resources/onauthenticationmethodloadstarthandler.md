@@ -1,9 +1,9 @@
 ---
 title: "onAuthenticationMethodLoadStartHandler resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a step in a multi-event policy defining what happens when authentication methods are ready to be presented"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+This is a base/abstract class for configuring what to invoke if the onAuthenticationMethodLoadStartHandler event resolves to this listener. Each handler available for this event type is a subtype of this abstract complex type.  Represents a step in a multi-event policy that defines what happens when when authentication methods are ready to be presented.
 
 ## Properties
 |Property|Type|Description|

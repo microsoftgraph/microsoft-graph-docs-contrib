@@ -1,9 +1,9 @@
 ---
 title: "externalUsersSelfServiceSignUpEventsFlow resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a self-service user flow for external identities"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a self-service user flow within Azure AD workforce tenant or Azure AD customer tenant.
+Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant.
+
+A user flow is implemented as a multi-event policy executing the following events:
+onInteractiveAuthFlowStart
+onAuthentictionMethodLoadStart
+onAttributeCollection
+onUserCreateStart
 
 Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.md)
 

@@ -1,9 +1,9 @@
 ---
 title: "onUserCreateStartExternalUsersSelfServiceSignUp resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Managed handler for user creation step in an external identities user flow"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This is a 'managed' handler for the user creation step in an external identities user flow on an AD workforce or customer tenant.  It defines whether a guest or member is created as well as any access package to be assigned.
 
-
-Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.md).
+Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.md). Complex type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|**TODO: Add Description**|
-|userTypeToCreate|userType|**TODO: Add Description**.The possible values are: `member`, `guest`, `unknownFutureValue`.|
+
+|accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|Optional. Defines the access package attached to the user flow - for which a request will be submitted. Applicable only to user flows configured in Azure AD workforce tenant.**SHOULD BE HIDDEN**|
+|userTypeToCreate|userType|Defines the type of user created by this authentication flow. The possible values are: `member`, `guest`, `unknownFutureValue`.|
 
 ## Relationships
 None.

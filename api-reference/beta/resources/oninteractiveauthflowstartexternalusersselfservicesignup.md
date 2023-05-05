@@ -1,9 +1,8 @@
 ---
 title: "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Managed handler for the starting step of an external identities user flow"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,11 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived from onInteractiveAuthFlowStartHandler. Defines possible handler config for the event This is a 'managed' handler that addresses the ability to configure whether sign up is allowed for a user going through this authentication flow. (It will be invoked to determine whether an authentication flow is enabled for sign up.) This is a complex type.
+This is a 'managed' handler for the starting step in an external identities user flow on an AD workforce or customer tenant.  It defines whether a user can sign up, i.e. create an account. (Otherwise, a user will only be able to sign-in.)
 
-
-
-Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md).
+Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md). Complex type.
 
 ## Properties
 |Property|Type|Description|

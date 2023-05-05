@@ -1,9 +1,9 @@
 ---
 title: "onAttributeCollectionListener resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a step in a multi-event policy defining what happens when attributes are ready to be collected from the user"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAttributeCollection** event. Used for configuring the collection of attributes during user sign up. This includes which attributes to collect, how to display them, and API connectors for backwards compatiblity. **Is this still accurate that it includes API connectors?**
 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
@@ -29,12 +29,12 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Read-only. Inherited from [entity](../resources/entity.md).|
-|priority|Int32|Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|id|String|Required. Inherited from [entity](../resources/entity.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|authenticationEventsFlowId|String|**NOT IN SPEC** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener.
-|
+|priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+
 
 ## Relationships
 None.

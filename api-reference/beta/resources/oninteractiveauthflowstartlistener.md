@@ -1,9 +1,9 @@
 ---
 title: "onInteractiveAuthFlowStartListener resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a step in a multi-event policy defining what happens when an authentication flow is ready to be initiated"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -32,10 +32,8 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |id|String|Required. Inherited from [entity](../resources/entity.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|authenticationEventsFlowId|String|ID of the listener. Auto-generated. Read-only. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.
-|
-
+|authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
 
 
 ## Relationships
