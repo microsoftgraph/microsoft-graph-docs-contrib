@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "attributeMappings": [{"@odata.type": "microsoft.graph.objectMapping"}],
+  "attributeMappings": [{"@odata.type": "microsoft.graph.attributeMapping"}],
   "enabled": true,
   "flowTypes": "String",
   "metadata": [{"@odata.type": "microsoft.graph.objectMappingmetadataEntry"}],
