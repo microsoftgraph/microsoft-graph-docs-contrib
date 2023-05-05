@@ -44,10 +44,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "attributeMappings": [{"@odata.type": "microsoft.graph.objectMappingmetadataEntry"}],
+  "attributeMappings": [{"@odata.type": "microsoft.graph.objectMapping"}],
   "enabled": true,
   "flowTypes": "String",
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [{"@odata.type": "microsoft.graph.objectMappingmetadataEntry"}],
   "name": "String",
   "scope": {"@odata.type": "microsoft.graph.filter"},
   "sourceObjectName": "String",
