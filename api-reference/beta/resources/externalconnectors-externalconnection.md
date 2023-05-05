@@ -33,7 +33,7 @@ A logical container to add content from an external source into Microsoft Graph.
 
 | Property           | Type                              | Description |
 |:--------------------------|:----------------------------------|:------------|
-| activitySettings|[microsoft.graph.externalConnectors.activitySettings](../resources/externalconnectors-activitysettings.md)| Collects configurable settings related to activities involving connector content.|
+| activitySettings          |[microsoft.graph.externalConnectors.activitySettings](../resources/externalconnectors-activitysettings.md)| Collects configurable settings related to activities involving connector content.|
 | complianceSettings        |[microsoft.graph.externalConnectors.complianceSettings](../resources/externalconnectors-compliancesettings.md)| The settings required for the connection to participate in eDiscovery, such as the display templates for eDiscovery results.|
 | configuration             | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
 | connectorId               | String            | The Teams App ID. Optional.|
@@ -52,7 +52,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | groups       | [microsoft.graph.externalConnectors.externalGroup](externalconnectors-externalgroup.md) collection             | Read-only. Nullable. |
 | items        | [microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md) collection               | Read-only. Nullable. |
 | operations   | [microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) collection | Read-only. Nullable. |
-| quota        | [microsoft.graph.externalConnectors.connectionQuota](externalconnectors-connectionquota.md)             | Read-only. Nullable. |
+| quota        | [microsoft.graph.externalConnectors.connectionQuota](externalconnectors-connectionquota.md)                    | Read-only. Nullable. |
 | schema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Read-only. Nullable. |
 
 ## JSON representation
@@ -70,7 +70,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.externalConnection",
   "id": "String (identifier)",
   "ingestedItemsCount": "Int64",
   "name": "String",
