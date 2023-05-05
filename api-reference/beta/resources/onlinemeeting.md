@@ -20,7 +20,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 ## Methods
 
 | Method | Return Type |Description |
-| ------ | ----------- | ---------- |
+| :------ | :----------- | :---------- |
 | [Create](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
