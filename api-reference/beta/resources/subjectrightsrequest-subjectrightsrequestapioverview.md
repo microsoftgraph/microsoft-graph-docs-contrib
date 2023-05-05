@@ -16,7 +16,7 @@ In accordance with certain privacy regulations around the world, individuals can
 The Microsoft Graph APIs for subject rights request provide functionality for organizations to automate repetitive tasks and integrate with existing data subject request tools, to enable building repeatable workflows that can be incorporated to their business processes. You can use the subject rights request APIs to help you automate and scale your organization's ability to perform subject rights requests searches in Microsoft 365 and help meet industry regulations more efficiently.
 
 > [!IMPORTANT]
-> The Microsoft Graph APIs for subject rights request are intended to help meet the need to fulfill subject rights requests within Microsoft 365 services for Exchange Online, SharePoint Online, Teams chats, and OneDrive for Business. These APIs should not be used as a substitute for searching for data in any other Microsoft 365 system or any other area as those scenarios are not explicity supported.
+> The Microsoft Graph APIs for subject rights request are intended to help meet the need to fulfill subject rights requests within Microsoft 365 services for Exchange Online, SharePoint Online, Teams chats, and OneDrive for Business. These APIs should not be used as a substitute for searching for data in any other Microsoft 365 system or any other area as those scenarios are not explicitly supported.
 
 The API includes the following key entities.
 
@@ -27,7 +27,3 @@ The API includes the following key entities.
 | Subject rights request history | [microsoft.graph.subjectRightsRequesthistory](subjectRightsRequesthistory.md) | Represents the history for a subject rights request. |
 | Subject rights request detail | [microsoft.graph.subjectRightsRequestDetail](subjectRightsRequestDetail.md) | Represents the details of a subject rights request, including number of items found, number of items reviewed, and so on. |
 | Subject rights request stage detail | [microsoft.graph.subjectRightsRequestStageDetail](subjectRightsRequestStageDetail.md) | Represents the properties of the stages of a subject rights request. |
-
-
-
-
