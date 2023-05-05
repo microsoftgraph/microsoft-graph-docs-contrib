@@ -21,7 +21,7 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|`AllowDefaultEntitlement`,  `AzureIngestionAttributeOptimization`, `LookaheadQueryEnabled`,   `LookaheadQueryIntervalValue`, `QuarantineTooManyDeletes`, `QuarantineTooManyDeletesThreshold `.|
+|name|String|Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see [keyValuePair names and values](#keyvaluepair-names-and-values).|
 |value|String|Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see [keyValuePair names and values](#keyvaluepair-names-and-values).|
 
 ### keyValuePair names and values
