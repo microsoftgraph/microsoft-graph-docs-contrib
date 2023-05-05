@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks). See [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting) for more details.
+This resource supports subscribing to [change notifications](/graph/webhooks). For more details, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
 ## Methods
 
@@ -27,6 +27,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). S
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
 | [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [Get virtual appointment join link](../api/virtualappointment-getvirtualappointmentjoinweburl) | String | Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). |
 
 ## Properties
 
