@@ -58,14 +58,6 @@ The following is a JSON representation of the resource.
 
 ## JSON Example
 
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.objectMapping"
-}-->
-
 ```json
 {
     "attributeMappings": [
