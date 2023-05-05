@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
   "discoverable": true,
   "factoryTag": "String",
   "id": "String (identifier)",
-  "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
+  "metadata": [{"@odata.type": "microsoft.graph.synchronizationMetadataEntry"}],
   "schema": {"@odata.type": "microsoft.graph.synchronizationSchema"}
 }
 
