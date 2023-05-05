@@ -27,7 +27,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
 | [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
-| [Get virtual appointment join link](../api/virtualappointment-getvirtualappointmentjoinweburl) | String | Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). |
+| [Get virtual appointment join link](../api/onlinemeeting-getvirtualappointmentjoinweburl.md) | String | Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). |
 
 ## Properties
 

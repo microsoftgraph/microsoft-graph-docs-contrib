@@ -2726,9 +2726,9 @@
         {
           "Id": "fcbc337a-37d1-47d7-afc0-5b5fa30324c7",
           "ApiChange": "Method",
-          "ChangedApiName": "virtualAppointment",
+          "ChangedApiName": "getVirtualAppointmentJoinWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-get?view=graph-rest-beta&tabs=http) method to the [onlineMeeting](https://learn.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-getvirtualappointmentjoinweburl?view=graph-rest-beta) method to the [onlineMeeting](https://learn.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -2746,7 +2746,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getVirtualAppointmentJoinWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-v1.0) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-getvirtualappointmentjoinweburl?) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],

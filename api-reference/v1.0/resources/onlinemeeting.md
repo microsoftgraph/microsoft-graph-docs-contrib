@@ -22,7 +22,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [Get virtual appointment join link](../api/virtualappointment-getvirtualappointmentjoinweburl) | String | Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). |
+| [Get virtual appointment join link](../api/onlinemeeting-getvirtualappointmentjoinweburl.md) | String | Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). |
 
 ## Properties
 
