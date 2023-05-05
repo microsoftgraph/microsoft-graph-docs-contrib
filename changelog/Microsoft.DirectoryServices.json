@@ -8984,7 +8984,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceCategory",
           "ChangeType": "Addition",
-          "Description": "Added the `deviceCategory` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Description": "Added the **deviceCategory** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
           "Target": "device"
         },
         {
@@ -8992,7 +8992,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "deviceOwnership",
           "ChangeType": "Addition",
-          "Description": "Added the `deviceOwnership` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Description": "Added the **deviceOwnership** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
           "Target": "device"
         },
         {
@@ -9000,7 +9000,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enrollmentProfileName",
           "ChangeType": "Addition",
-          "Description": "Added the `enrollmentProfileName` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Description": "Added the **enrollmentProfileName** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
           "Target": "device"
         },
         {
@@ -9008,14 +9008,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "registrationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the `registrationDateTime` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Description": "Added the **registrationDateTime** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
           "Target": "device"
         }
       ],
       "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-04-18T17:55:51.6093472Z",
+      "CreatedDateTime": "2023-05-04T17:55:51.6093472Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
