@@ -21,9 +21,9 @@ Add Grading Categories to the existing class-wide settings to weight assignments
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-add-gradingcategories.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
-|[Remove gradingCategory](../api/educationassignment-remove-gradingcategories.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
-|[Update gradingCategory](../api/educationassignment-updatesingle-gradingcategories.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
+|[Add gradingCategory](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Remove gradingCategory](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
+|[Update gradingCategory](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
 
 ## Properties

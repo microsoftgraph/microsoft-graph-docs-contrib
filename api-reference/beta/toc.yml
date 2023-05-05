@@ -11295,11 +11295,11 @@ items:
         - name: List grading categories
           href: api/educationassignment-list-gradingcategory.md
         - name: Add grading category
-          href: api/educationassignment-add-gradingcategories.md
+          href: api/educationassignment-post-gradingcategory.md
         - name: Update grading category
-          href: api/educationassignment-updatesingle-gradingcategories.md
+          href: api/educationgradingcategory-update.md
         - name: Remove grading category
-          href: api/educationassignment-remove-gradingcategories.md
+          href: api/educationassignment-delete-gradingcategory.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
