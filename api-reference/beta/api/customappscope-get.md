@@ -40,13 +40,14 @@ GET /roleManagement/exchange/customAppScopes/{id}
 ```
 
 ## Optional query parameters
-This method does not support optional query parameters to customize the response.
+
+This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

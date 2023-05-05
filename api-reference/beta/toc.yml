@@ -12308,11 +12308,11 @@ items:
             - name: Create
               href: api/unifiedrbacapplication-post-customappscope.md
             - name: Get
-              href: api/unifiedrbacapplication-get-customappscope.md
+              href: api/customappscope-get.md
             - name: Update
-              href: api/unifiedrbacapplication-update-customappscope.md
+              href: api/customappscope-update.md
             - name: Delete
-              href: api/unifiedrbacapplication-delete-customappscope.md
+              href: api/customappscope-delete.md
         - name: Subscribed sku
           href: resources/subscribedsku.md
           items:
