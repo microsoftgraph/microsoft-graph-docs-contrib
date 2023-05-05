@@ -35,16 +35,12 @@ Metadata for the given object.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.metadataEntry"
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.objectMappingMetadataEntry"
+}
+-->
+``` json
 {
   "@odata.type": "#microsoft.graph.objectMappingMetadataEntry",
   "key": "String",
