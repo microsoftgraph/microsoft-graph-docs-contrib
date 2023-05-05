@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
 Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).
@@ -37,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.externalConnectors.itemIdResolver",
+  "itemId": "String",  
   "priority": "Integer",
-  "itemId": "String",
   "urlMatchInfo": {
     "@odata.type": "microsoft.graph.externalConnectors.urlMatchInfo"
   }

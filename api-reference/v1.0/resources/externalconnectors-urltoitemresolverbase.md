@@ -11,11 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
-
-This is the base type for the [itemIdResolver](externalconnectors-itemidresolver.md) resource type.
 
 ## Properties
 |Property|Type|Description|
@@ -38,3 +34,8 @@ The following is a JSON representation of the resource.
   "priority": "Integer"
 }
 ```
+
+## See also
+
+Types that inherit from the [urlToItemResolverBase](externalconnectors-urlToItemResolverBase.md) abstract base type.
+- [itemIdResolver](externalconnectors-itemidresolver.md)
