@@ -37,16 +37,12 @@ Metadata for the given object.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.metadataEntry"
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.synchronizationMetadataEntry"
+}
+-->
+``` json
 {
   "@odata.type": "#microsoft.graph.synchronizationMetadataEntry",
   "key": "String",
