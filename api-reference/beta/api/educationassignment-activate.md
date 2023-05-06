@@ -36,7 +36,6 @@ POST /education/classes/{classId}/assignments/{assignmentId}/activate
 | Header        | Value                       |
 | :------------ | :------------------------   |
 | Authorization | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -58,7 +57,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a/activate
-Content-type: application/json
 ```
 ### Response
 The following is an example of the response.
