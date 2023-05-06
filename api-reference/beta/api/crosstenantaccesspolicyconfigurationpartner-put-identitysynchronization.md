@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference):
 
-+ Hybrid Identity Administrator
++ Security Administrator
 
 ## HTTP request
 
