@@ -8,31 +8,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Organization/Item/CertificateBasedAuthConfiguration"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCertificateBasedAuthConfigurationPostRequestBody()
-additionalData := map[string]interface{}{
+requestBody := graphmodels.NewCertificateBasedAuthConfiguration()
 
 
- := graphmodels.New()
+certificateAuthority := graphmodels.NewCertificateAuthority()
 isRootAuthority := true
-.SetIsRootAuthority(&isRootAuthority) 
-certificate := "Binary"
-.SetCertificate(&certificate) 
+certificateAuthority.SetIsRootAuthority(&isRootAuthority) 
+certificate := []byte("binary")
+certificateAuthority.SetCertificate(&certificate) 
 
-	certificateAuthorities := []graphmodels.Objectable {
-		,
+certificateAuthorities := []graphmodels.CertificateAuthorityable {
+	certificateAuthority,
 
-	}
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetCertificateAuthorities(certificateAuthorities)
 
-graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

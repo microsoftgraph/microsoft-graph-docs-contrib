@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Represents a task or unit of work assigned to a student or team member in a class as part of their study. 
 
-Only teachers or team owners can create **assignments**. **Assignments** contain handouts and tasks that the teacher wants the student to work on. Each student **assignment** has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. A teacher can add scores and feedback to the **submission** turned in by the student.
+**Assignments** contain handouts and tasks that the teacher wants the student to work on. Each student **assignment** has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. Only teachers or team owners can create **assignments**. A teacher can add scores and feedback to the **submission** turned in by the student.
 
-When an **assignment** is created, it is in a Draft state. Students can't see the **assignment** and **submissions** won't be created. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
+When an **assignment** is created, it is in a Draft state. Students can't see the **assignment**, and **submissions** won't be created. You can change the status of an **assignment** by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the **assignment** status.
 
 The **assignment** APIs are exposed in the class namespace.
 
@@ -45,6 +45,8 @@ Inherits from [entity](../resources/entity.md).
 |[List educationGradingCategory](../api/educationassignment-list-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md) collection|Get the educationGradingCategory resources from the gradingCategory navigation property.|
 |[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
 |[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
+|[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has action items for teachers and students.|
+|[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -70,7 +72,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the **assignment** has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
+|status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue` and `inactive`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships

@@ -86,10 +86,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 [!INCLUDE [sample-code](../includes/snippets/php/delete-connection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-connection-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 <!-- markdownlint-disable MD024 -->

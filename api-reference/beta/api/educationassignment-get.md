@@ -17,6 +17,8 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
+You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -35,13 +37,14 @@ GET /education/classes/{id}/assignments/{id}
 This method supports the  `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
-
 The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required. |
+| Prefer        | include-unknown-enum-members. Optional. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +53,10 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
 ## Example
-### Request
+
+### Example 1: Get education assignment
+
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -147,6 +153,153 @@ Content-length: 279
         "device": null,
         "user": {
             "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
+}
+```
+
+### Example 2: Get assignment in inactive state with optional Prefer header
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "name": "get_inactiveAssignment_withheader"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
+Prefer: include-unknown-enum-members
+```
+#### Response
+The following is an example of the response with status as inactive, when `Prefer: include-unknown-enum-members` is provided in the request header.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ffac078e-1b63-42d0-bc2a-d280896e289a')/assignments/$entity",
+    "classId": "ffac078e-1b63-42d0-bc2a-d280896e289a",
+    "displayName": "Check-inactive",
+    "closeDateTime": null,
+    "dueDateTime": "2023-03-26T18:29:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2023-03-17T19:41:56.3040589Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2023-03-17T19:40:33.7277546Z",
+    "lastModifiedDateTime": "2023-03-17T21:03:07.4999252Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "inactive",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ffac078e-1b63-42d0-bc2a-d280896e289a%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%222b8090d7-8de9-4fb4-af5d-2e2f68ae098a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "id": "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a",
+    "grading": null,
+    "instructions": {
+        "content": "Check-inactive",
+        "contentType": "html"
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "displayName": null
+        }
+    }
+}
+```
+
+## Example 3: Get assignment in inactive state without optional Prefer header
+#### Request
+The following is an example of the request, where the status is `unknownFutureValue`. `Prefer: include-unknown-enum-members` is not provided in the request header.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["ffac078e-1b63-42d0-bc2a-d280896e289a","2b8090d7-8de9-4fb4-af5d-2e2f68ae098a"],
+  "name": "getinactiveAssignment"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-d280896e289a/assignments/2b8090d7-8de9-4fb4-af5d-2e2f68ae098a
+```
+#### Response
+The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('ffac078e-1b63-42d0-bc2a-d280896e289a')/assignments/$entity",
+    "classId": "ffac078e-1b63-42d0-bc2a-d280896e289a",
+    "displayName": "Check-inactive",
+    "closeDateTime": null,
+    "dueDateTime": "2023-03-26T18:29:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": "2023-03-17T19:41:56.3040589Z",
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "feedbackResourcesFolderUrl": null,
+    "createdDateTime": "2023-03-17T19:40:33.7277546Z",
+    "lastModifiedDateTime": "2023-03-17T21:03:07.4999252Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "unknownFutureValue",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22ffac078e-1b63-42d0-bc2a-d280896e289a%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%222b8090d7-8de9-4fb4-af5d-2e2f68ae098a%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "none",
+    "addedStudentAction": "none",
+    "id": "2b8090d7-8de9-4fb4-af5d-2e2f68ae098a",
+    "grading": null,
+    "instructions": {
+        "content": "Check-inactive",
+        "contentType": "html"
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
             "displayName": null
         }
     }

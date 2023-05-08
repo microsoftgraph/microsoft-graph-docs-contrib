@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [timeCard](../resources/timeCard.md) instance in a [schedule](../resources/schedule.md).
+Delete a [timeCard](../resources/timecard.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{teamId}/schedule/timeCards/{timeCardID}
+DELETE /teams/{teamId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Request headers
