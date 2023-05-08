@@ -88,7 +88,6 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 
 ---
 
-
 ### Response
 The following is an example of the response
 <!-- {
