@@ -1,5 +1,5 @@
 ---
-title: "Govern membership and ownership of Azure AD groups using the privileged identity management (PIM) API for groups"
+title: "Govern membership and ownership of groups using privileged identity management (PIM) for groups"
 description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
@@ -8,16 +8,16 @@ doc_type: resourcePageType
 ms.date: 03/22/2023
 ---
 
-# Govern membership and ownership of Azure AD groups using PIM for groups
+# Govern membership and ownership of groups using PIM for groups
 
-With Privileged Identity Management for groups (PIM for groups), you can govern how principals are assigned membership or ownership of [Azure AD groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to various other resources in the Microsoft cloud like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune, and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group memberhip or ownership.
+With Privileged Identity Management for groups (PIM for groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to various other resources in the Microsoft cloud like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune, and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group memberhip or ownership.
 
 The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 groups such as the following capabilities:
 
 - Providing principals just-in-time membership or ownership of groups
 - Assigning principals temporary membership or ownership of groups
 
-This article introduces the governance capabilities of the APIs for PIM for Azure AD groups in Microsoft Graph.
+This article introduces the governance capabilities of the APIs for PIM for groups in Microsoft Graph.
 
 ## PIM for groups APIs for managing active assignments of group owners and members
 
@@ -101,11 +101,11 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 
 - [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Privileged Identity Management (PIM) for Groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
+- [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
   
   <!-- {
   "type": "#page.annotation",
-  "description": "Govern membership and ownership of Azure AD groups using the privileged identity management (PIM) API for groups",
+  "description": "Govern membership and ownership of groups using privileged identity management (PIM) for groups",
   "section": "documentation",
   "suppressions": [
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:

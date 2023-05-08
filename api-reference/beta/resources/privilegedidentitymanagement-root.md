@@ -7,16 +7,14 @@ ms.prod: "governance"
 author: "rkarim-ms"
 ---
 
-# Privileged Identity Management (deprecated)
+# Privileged Identity Management iteration 2 APIs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!CAUTION]
->The Privileged Identity Management (PIM) API for **Azure AD roles** iteration 1 is deprecated and stopped returning data on May 31, 2021. Use the [PIM v3 for managing Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview).
->
->The Privileged Identity Management (PIM) API for **Azure resources** iteration 2 will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests). To migrate, see the migration guidance below.
+> [!CAUTION]
+> The Privileged Identity Management (PIM) API for **Azure resources** and **Azure AD Roles** iteration 2 will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests) and [PIM API for Azure AD Roles iteration 3](privilegedidentitymanagementv3-overview.md). To migrate, see the [migration guidance](/graph/api/resources/privilegedidentitymanagement-root).
 
 [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This scope includes access to resources in Azure AD, Azure resources, and other Microsoft services like Microsoft 365 or Microsoft Intune.
 

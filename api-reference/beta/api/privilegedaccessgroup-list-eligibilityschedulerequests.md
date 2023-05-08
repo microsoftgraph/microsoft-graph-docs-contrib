@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve all the eligibility requests
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ```
 
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -123,7 +123,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve specific properties of all eligibility requests
 
-### Request
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -135,7 +135,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ```
 
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
