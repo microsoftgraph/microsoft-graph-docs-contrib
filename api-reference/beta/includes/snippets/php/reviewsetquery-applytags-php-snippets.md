@@ -20,7 +20,7 @@ $requestBody->setTagsToAdd($tagsToAddArray);
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->queriesById('reviewSetQuery-id')->applyTags()->post($requestBody);
+$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->queriesById('reviewSetQuery-id')->ediscoveryApplyTags()->post($requestBody);
 
 
 ```

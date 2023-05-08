@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Events/Item/Forward"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewForwardPostRequestBody()
 
@@ -26,7 +34,7 @@ requestBody.SetToRecipients(toRecipients)
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment) 
 
-graphClient.Me().EventsById("event-id").Forward().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

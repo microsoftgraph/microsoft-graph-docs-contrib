@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teams["{team-id}"]
-	.CompleteMigration()
-	.Request()
-	.PostAsync();
+await graphClient.Teams["{team-id}"].CompleteMigration.PostAsync();
+
 
 ```

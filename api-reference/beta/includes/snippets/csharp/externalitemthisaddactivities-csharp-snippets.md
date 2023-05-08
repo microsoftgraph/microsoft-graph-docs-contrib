@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var activities = new List<Microsoft.Graph.ExternalConnectors.ExternalActivity>()
+var requestBody = new Microsoft.Graph.Beta.Connections.Item.Items.Item.ExternalConnectorsAddActivities.AddActivitiesPostRequestBody
 {
-	new Microsoft.Graph.ExternalConnectors.ExternalActivity
+	Activities = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity>
 	{
-		Type = Microsoft.Graph.ExternalConnectors.ExternalActivityType.Viewed,
-		StartDateTime = DateTimeOffset.Parse("String (timestamp)")
-	}
+		new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivity
+		{
+			OdataType = "#microsoft.graph.externalConnectors.externalActivity",
+			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalActivityType.Viewed,
+			StartDateTime = DateTimeOffset.Parse("String (timestamp)"),
+		},
+	},
 };
+var result = await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"].ExternalConnectorsAddActivities.PostAsync(requestBody);
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.AddActivities(activities)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var adDomainPassword = "AdDomainPassword value";
+var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.OnPremisesConnections.Item.UpdateAdDomainPassword.UpdateAdDomainPasswordPostRequestBody
+{
+	AdDomainPassword = "AdDomainPassword value",
+};
+await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"].UpdateAdDomainPassword.PostAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"]
-	.UpdateAdDomainPassword(adDomainPassword)
-	.Request()
-	.PostAsync();
 
 ```

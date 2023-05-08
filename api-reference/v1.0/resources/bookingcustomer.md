@@ -53,14 +53,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "emailAddress": "String",
-  "id": "String (identifier)",
   "addresses": [
     {
       "@odata.type": "microsoft.graph.physicalAddress"
     }
   ],
+  "displayName": "String",
+  "emailAddress": "String",
+  "id": "String (identifier)",
+  
   "phones": [
     {
       "@odata.type": "microsoft.graph.phone"

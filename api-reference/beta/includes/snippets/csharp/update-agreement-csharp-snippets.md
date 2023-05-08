@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var agreement = new Agreement
+var requestBody = new Agreement
 {
 	DisplayName = "All Contoso volunteers - Terms of use",
-	IsViewingBeforeAcceptanceRequired = true
+	IsViewingBeforeAcceptanceRequired = true,
 };
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"].PatchAsync(requestBody);
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements["{agreement-id}"]
-	.Request()
-	.UpdateAsync(agreement);
 
 ```

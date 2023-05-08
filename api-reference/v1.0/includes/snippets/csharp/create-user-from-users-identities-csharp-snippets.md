@@ -4,42 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new User
+var requestBody = new User
 {
 	DisplayName = "John Smith",
-	Identities = new List<ObjectIdentity>()
+	Identities = new List<ObjectIdentity>
 	{
 		new ObjectIdentity
 		{
 			SignInType = "userName",
 			Issuer = "contoso.onmicrosoft.com",
-			IssuerAssignedId = "johnsmith"
+			IssuerAssignedId = "johnsmith",
 		},
 		new ObjectIdentity
 		{
 			SignInType = "emailAddress",
 			Issuer = "contoso.onmicrosoft.com",
-			IssuerAssignedId = "jsmith@yahoo.com"
+			IssuerAssignedId = "jsmith@yahoo.com",
 		},
 		new ObjectIdentity
 		{
 			SignInType = "federated",
 			Issuer = "facebook.com",
-			IssuerAssignedId = "5eecb0cd"
-		}
+			IssuerAssignedId = "5eecb0cd",
+		},
 	},
 	PasswordProfile = new PasswordProfile
 	{
 		Password = "password-value",
-		ForceChangePasswordNextSignIn = false
+		ForceChangePasswordNextSignIn = false,
 	},
-	PasswordPolicies = "DisablePasswordExpiration"
+	PasswordPolicies = "DisablePasswordExpiration",
 };
+var result = await graphClient.Users.PostAsync(requestBody);
 
-await graphClient.Users
-	.Request()
-	.AddAsync(user);
 
 ```

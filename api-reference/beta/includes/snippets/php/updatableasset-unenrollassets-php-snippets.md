@@ -24,7 +24,7 @@ $requestBody->setAssets($assetsArray);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssets()->unenrollAssets()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssets()->windowsUpdatesUnenrollAssets()->post($requestBody);
 
 
 ```

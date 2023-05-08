@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var siteSource = new Microsoft.Graph.Security.SiteSource
+var requestBody = new Microsoft.Graph.Models.Security.SiteSource
 {
 	Site = new Site
 	{
-		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail"
-	}
+		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail",
+	},
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].SiteSources.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Custodians["{security.ediscoveryCustodian-id}"].SiteSources
-	.Request()
-	.AddAsync(siteSource);
 
 ```

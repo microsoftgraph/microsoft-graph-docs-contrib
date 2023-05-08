@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var device = new Device
+var requestBody = new Device
 {
 	ExtensionAttributes = new OnPremisesExtensionAttributes
 	{
-		ExtensionAttribute1 = "BYOD-Device"
-	}
+		ExtensionAttribute1 = "BYOD-Device",
+	},
 };
+var result = await graphClient.Devices["{device-id}"].PatchAsync(requestBody);
 
-await graphClient.Devices["{device-id}"]
-	.Request()
-	.UpdateAsync(device);
 
 ```

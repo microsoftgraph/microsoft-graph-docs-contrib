@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "Azure AD SAML Toolkit";
+var requestBody = new Microsoft.Graph.ApplicationTemplates.Item.Instantiate.InstantiatePostRequestBody
+{
+	DisplayName = "Azure AD SAML Toolkit",
+};
+var result = await graphClient.ApplicationTemplates["{applicationTemplate-id}"].Instantiate.PostAsync(requestBody);
 
-await graphClient.ApplicationTemplates["{applicationTemplate-id}"]
-	.Instantiate(displayName)
-	.Request()
-	.PostAsync();
 
 ```

@@ -31,9 +31,9 @@ The following is a JSON representation of a **columnValidation** resource.
 
 ```json
 {
-  "formula": "string",
+  "defaultLanguage": "string",
   "descriptions": [{ "@type": "microsoft.graph.displayNameLocalization" }],
-  "defaultLanguage": "string"
+  "formula": "string"
 }
 ```
 

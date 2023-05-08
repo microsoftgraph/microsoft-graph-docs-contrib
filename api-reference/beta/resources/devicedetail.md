@@ -2,7 +2,7 @@
 title: "deviceDetail resource type"
 description: "Indicates device details associated with a device used for signing in."
 ms.localizationpriority: medium
-author: "spunukol"
+author: "myra-ramdenbourg"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

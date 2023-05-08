@@ -43,7 +43,7 @@ const timeCard = {
   ]
 };
 
-await client.api('/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards')
+await client.api('/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timeCards')
 	.version('beta')
 	.post(timeCard);
 

@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "certificationName": "String",
-  "certificationControls": [{"@odata.type": "microsoft.graph.certificationControl"}]
+  "certificationControls": [{"@odata.type": "microsoft.graph.certificationControl"}],
+  "certificationName": "String"
 }
 
 ```

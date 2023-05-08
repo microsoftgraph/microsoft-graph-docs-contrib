@@ -4,18 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var threatAssessmentRequest = new MailAssessmentRequestObject
+var requestBody = new ThreatAssessmentRequest
 {
-	RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+	OdataType = "#microsoft.graph.mailAssessmentRequest",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Spam,
-	MessageUri = "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"recipientEmail" , "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
+		},
+		{
+			"messageUri" , "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+		},
+	},
 };
+var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
-await graphClient.InformationProtection.ThreatAssessmentRequests
-	.Request()
-	.AddAsync(threatAssessmentRequest);
 
 ```

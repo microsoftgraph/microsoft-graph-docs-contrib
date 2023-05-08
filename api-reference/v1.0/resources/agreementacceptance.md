@@ -49,20 +49,21 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-      "id": "String (identifier)",
+      "@odata.type": "microsoft.graph.agreementAcceptance",
+      "agreementFileId": "String",
       "agreementId": "String",
-      "userId": "String",
-      "deviceId": "String",
       "deviceDisplayName": "String",
+      "deviceId": "String",
       "deviceOSType": "String",
       "deviceOSVersion": "String",
-      "agreementFileId": "String",
-      "userDisplayName": "String",
-      "userPrincipalName": "String",
-      "userEmail": "String",
-      "recordedDateTime": "String (timestamp)",
       "expirationDateTime": "String",
-      "state": "String"
+      "id": "String (identifier)",
+      "recordedDateTime": "String (timestamp)",
+      "state": "String",
+      "userDisplayName": "String",
+      "userEmail": "String",
+      "userId": "String",
+      "userPrincipalName": "String",
 }
 ```
 

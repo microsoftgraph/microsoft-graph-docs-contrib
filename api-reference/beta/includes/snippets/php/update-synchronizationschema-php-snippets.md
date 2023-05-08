@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SchemaPutRequestBody();
 $additionalData = [
-'directories' => $directories1 = new ();
+		'directories' => $directories1 = new ();
 $		directories1->setName('Azure Active Directory');
 
 $objects1 = new ();

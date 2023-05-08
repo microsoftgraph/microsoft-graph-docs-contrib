@@ -4,21 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printer = new Printer
+var requestBody = new Printer
 {
 	Name = "PrinterName",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1,
-		Longitude = 2.2,
-		AltitudeInMeters = 3
-	}
+		Latitude = 1.1d,
+		Longitude = 2.2d,
+		AltitudeInMeters = 3,
+	},
 };
+var result = await graphClient.Print.Printers["{printer-id}"].PatchAsync(requestBody);
 
-await graphClient.Print.Printers["{printer-id}"]
-	.Request()
-	.UpdateAsync(printer);
 
 ```

@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var organizationalBrandingLocalization = new OrganizationalBrandingLocalization
+var requestBody = new OrganizationalBrandingLocalization
 {
 	BackgroundColor = "#00000F",
 	Id = "fr-FR",
-	SignInPageText = " "
+	SignInPageText = " ",
 };
+var result = await graphClient.Organization["{organization-id}"].Branding.Localizations.PostAsync(requestBody);
 
-await graphClient.Organization["{organization-id}"].Branding.Localizations
-	.Request()
-	.AddAsync(organizationalBrandingLocalization);
 
 ```

@@ -1917,6 +1917,100 @@
 		"CreatedDateTime": "2022-10-12T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityCounts",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getformsuseractivitycounts?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityCounts"
+	  },
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityUserCounts",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityUserCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getformsuseractivityusercounts?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityUserCounts"
+	  },
+	  {
+		  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getFormsUserActivityUserDetail",
+		  "ChangeType": "Deletion",
+		  "Description": "Added the [getFormsUserActivityUserDetail](https://learn.microsoft.com/en-us/graph/api/reportroot-getformsuseractivityuserdetail?view=graph-rest-beta) method.",
+		  "Target": "getFormsUserActivityUserDetail"
+	  }
+	  ],
+	  "Id": "2a5082bb-51b7-43c3-943f-f71396535ced",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2023-04-17T00:00:00",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+  	},
+	{
+		"ChangeList": [
+			{
+			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "teamsChannelMessages",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **teamsChannelMessages** property to the [office365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitycounts?view=graph-rest-beta) resource.",
+			  "Target": "Office365GroupsActivityCounts"
+			},
+			{
+			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "teamsMeetingsOrganized",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **teamsMeetingsOrganized** property to the [office365GroupsActivityCounts](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitycounts?view=graph-rest-beta) resource.",
+			  "Target": "Office365GroupsActivityCounts"
+			},
+			{
+			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "teamsChannelMessagesCount",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **teamsChannelMessagesCount** property to the [office365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitydetail?view=graph-rest-beta) resource.",
+			  "Target": "Office365GroupsActivityDetail"
+			},
+			{
+			  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
+			  "ApiChange": "Property",
+			  "ChangedApiName": "teamsMeetingsOrganizedCount",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **teamsMeetingsOrganizedCount** property to the [office365GroupsActivityDetail](https://learn.microsoft.com/en-us/graph/api/resources/office365groupsactivitydetail?view=graph-rest-beta) resource.",
+			  "Target": "Office365GroupsActivityDetail"
+			}
+		  ],
+		  "Id": "a02cfa95-915d-411a-8acb-557c8d8aa659",
+		  "Cloud": "prd",
+		  "Version": "beta",
+		  "CreatedDateTime": "2023-03-03T03:46:16.421Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+			{
+			  "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsTeamCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the [getTeamsTeamCounts](https://learn.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsTeamCounts"
+			}
+		  ],
+		  "Id": "1c8087f9-c32f-45bd-b0ee-bfe417d6cd90",
+		  "Cloud": "prd",
+		  "Version": "beta",
+		  "CreatedDateTime": "2023-03-16T03:46:16.421Z",
+		  "WorkloadArea": "Reports",
+		  "SubArea": "Microsoft 365 usage reports"
 	}
   ]
 }

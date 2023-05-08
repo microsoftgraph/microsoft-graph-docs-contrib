@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("top", "3")
-};
+	requestConfiguration.QueryParameters.Top = 3;
+});
 
-var messages = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

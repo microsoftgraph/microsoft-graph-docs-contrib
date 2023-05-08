@@ -4,67 +4,72 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var synchronizationSchema = new SynchronizationSchema
+var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.Schema.SchemaPutRequestBody
 {
-	Directories = new SynchronizationSchemaDirectoriesCollectionPage()
+	AdditionalData = new Dictionary<string, object>
 	{
-		new DirectoryDefinition
 		{
-			Name = "Azure Active Directory",
-			Objects = new List<ObjectDefinition>()
+			"directories" , new List<>
 			{
-				new ObjectDefinition
+				new 
 				{
-					Name = "User",
-					Attributes = new List<AttributeDefinition>()
+					Name = "Azure Active Directory",
+					Objects = new List<>
 					{
-						new AttributeDefinition
+						new 
 						{
-							Name = "userPrincipalName",
-							Type = AttributeType.String
-						}
-					}
-				}
+							Name = "User",
+							Attributes = new List<>
+							{
+								new 
+								{
+									Name = "userPrincipalName",
+									Type = "string",
+								},
+							},
+						},
+					},
+				},
+				new 
+				{
+					Name = "Salesforce",
+				},
 			}
 		},
-		new DirectoryDefinition
 		{
-			Name = "Salesforce"
-		}
-	},
-	SynchronizationRules = new List<SynchronizationRule>()
-	{
-		new SynchronizationRule
-		{
-			Name = "USER_TO_USER",
-			SourceDirectoryName = "Azure Active Directory",
-			TargetDirectoryName = "Salesforce",
-			ObjectMappings = new List<ObjectMapping>()
+			"synchronizationRules" , new List<>
 			{
-				new ObjectMapping
+				new 
 				{
-					SourceObjectName = "User",
-					TargetObjectName = "User",
-					AttributeMappings = new List<AttributeMapping>()
+					Name = "USER_TO_USER",
+					SourceDirectoryName = "Azure Active Directory",
+					TargetDirectoryName = "Salesforce",
+					ObjectMappings = new List<>
 					{
-						new AttributeMapping
+						new 
 						{
-							Source = new AttributeMappingSource
+							SourceObjectName = "User",
+							TargetObjectName = "User",
+							AttributeMappings = new List<>
 							{
+								new 
+								{
+									Source = new 
+									{
+									},
+									TargetAttributeName = "userName",
+								},
 							},
-							TargetAttributeName = "userName"
-						}
-					}
-				}
+						},
+					},
+				},
 			}
-		}
-	}
+		},
+	},
 };
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema.PutAsync(requestBody);
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema
-	.Request()
-	.PutAsync(synchronizationSchema);
 
 ```

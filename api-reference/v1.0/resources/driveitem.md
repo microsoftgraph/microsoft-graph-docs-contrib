@@ -196,10 +196,10 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
-  "id": "string (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",

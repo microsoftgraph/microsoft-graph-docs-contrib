@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var subjects = new List<User>()
+var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.IdentityGovernanceActivate.ActivatePostRequestBody
 {
-	new User
+	Subjects = new List<User>
 	{
-		Id = "8930f0c7-cdd7-4885-9260-3b4a8111de5c"
-	}
+		new User
+		{
+			Id = "8930f0c7-cdd7-4885-9260-3b4a8111de5c",
+		},
+	},
 };
+await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].IdentityGovernanceActivate.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"]
-	.Activate(subjects)
-	.Request()
-	.PostAsync();
 
 ```

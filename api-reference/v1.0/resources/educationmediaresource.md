@@ -40,10 +40,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "fileUrl": "String",
   "createdBy": "String (User)",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
+  "fileUrl": "String",
   "lastModifiedBy": "String (User)",
   "lastModifiedDateTime": "String (timestamp)"
 }

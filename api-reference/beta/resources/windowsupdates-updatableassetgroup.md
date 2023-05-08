@@ -1,7 +1,7 @@
 ---
 title: "updatableAssetGroup resource type"
 description: "A group of azureADDevice resources that can receive updates."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -22,20 +22,20 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAssetGroup resources](../api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) objects and their properties.|
-|[Create updatableAssetGroup](../api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Get updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Read the properties and relationships of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Delete updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|None|Deletes an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Add members](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Add members (by ID)](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Remove members](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[Remove members (by ID)](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
-|[List members](../api/windowsupdates-updatableassetgroup-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources from the members navigation property.|
+|[List updatableAssetGroup resources](../api/adminwindowsupdates-list-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) objects and their properties.|
+|[Create updatableAssetGroup](../api/adminwindowsupdates-post-updatableassets-updatableassetgroup.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[Get updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Read the properties and relationships of a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[Delete updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|None|Delete a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[Add members](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Add members (by ID)](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members (by ID)](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from a [microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[List members](../api/windowsupdates-updatableassetgroup-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get the [microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) resources from the members navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md).|
+|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md).|
 
 ## Relationships
 |Relationship|Type|Description|

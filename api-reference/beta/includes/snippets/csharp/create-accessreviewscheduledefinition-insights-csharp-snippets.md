@@ -4,25 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Test create",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewQueryScope
+	Scope = new AccessReviewScope
 	{
-		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
-		QueryType = "MicrosoftGraph"
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -32,30 +40,37 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			Pattern = new RecurrencePattern
 			{
 				Type = RecurrencePatternType.Weekly,
-				Interval = 1
+				Interval = 1,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2020,9,8)
-			}
-		},
-		RecommendationInsightSettings = new List<AccessReviewRecommendationInsightSetting>()
-		{
-			new UserLastSignInRecommendationInsightSetting
-			{
-				RecommendationLookBackDuration = new Duration("P30D"),
-				SignInScope = UserSignInRecommendationScope.Tenant
+				StartDate = new Date(DateTime.Parse("2020-09-08T12:02:30.667Z")),
 			},
-			new GroupPeerOutlierRecommendationInsightSettings
+		},
+		RecommendationInsightSettings = new List<AccessReviewRecommendationInsightSetting>
+		{
+			new AccessReviewRecommendationInsightSetting
 			{
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.userLastSignInRecommendationInsightSetting",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"recommendationLookBackDuration" , "P30D"
+					},
+					{
+						"signInScope" , "tenant"
+					},
+				},
+			},
+			new AccessReviewRecommendationInsightSetting
+			{
+				OdataType = "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings",
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

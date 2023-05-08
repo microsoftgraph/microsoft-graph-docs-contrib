@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new User
+var requestBody = new User
 {
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
@@ -15,16 +15,16 @@ var user = new User
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = false,
-		Password = "xWwvJ]6NMw+bWH-d"
+		Password = "xWwvJ]6NMw+bWH-d",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker", "JobGroupN"}
-	}
+		{
+			"extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker" , "JobGroupN"
+		},
+	},
 };
+var result = await graphClient.Users.PostAsync(requestBody);
 
-await graphClient.Users
-	.Request()
-	.AddAsync(user);
 
 ```

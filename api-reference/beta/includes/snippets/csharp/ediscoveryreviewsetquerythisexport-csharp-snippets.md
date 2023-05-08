@@ -4,19 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var outputName = "Export reviewset query via API";
+var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.Queries.Item.SecurityExport.ExportPostRequestBody
+{
+	OutputName = "Export reviewset query via API",
+	Description = "Export for the Contoso investigation 2",
+	ExportOptions = Microsoft.Graph.Beta.Models.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Beta.Models.Security.ExportOptions.FileInfo | Microsoft.Graph.Beta.Models.Security.ExportOptions.Tags,
+	ExportStructure = Microsoft.Graph.Beta.Models.Security.ExportFileStructure.Directory,
+};
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries["{ediscoveryReviewSetQuery-id}"].SecurityExport.PostAsync(requestBody);
 
-var description = "Export for the Contoso investigation 2";
-
-var exportOptions = Microsoft.Graph.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Security.ExportOptions.FileInfo | Microsoft.Graph.Security.ExportOptions.Tags;
-
-var exportStructure = Microsoft.Graph.Security.ExportFileStructure.Directory;
-
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"].Queries["{security.ediscoveryReviewSetQuery-id}"]
-	.Export(outputName,description,null,null,exportOptions,exportStructure)
-	.Request()
-	.PostAsync();
 
 ```

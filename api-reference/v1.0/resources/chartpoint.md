@@ -47,8 +47,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "id": "string",
+  "value": "string"
 }
 
 ```

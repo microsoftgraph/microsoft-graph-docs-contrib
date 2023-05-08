@@ -4,17 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var sitePage = new SitePage
+var requestBody = new SitePage
 {
+	OdataType = "#microsoft.graph.sitePage",
 	Title = "sample",
 	ShowComments = true,
-	ShowRecommendedPages = false
+	ShowRecommendedPages = false,
 };
+var result = await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"].PatchAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Pages["{sitePage-id}"]
-	.Request()
-	.UpdateAsync(sitePage);
 
 ```

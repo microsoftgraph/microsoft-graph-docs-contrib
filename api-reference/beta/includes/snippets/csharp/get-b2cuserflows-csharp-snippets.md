@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2cIdentityUserFlow = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].GetAsync();
+
 
 ```

@@ -26,6 +26,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 | policyId | String | The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request. |
 | questions | [accessPackageQuestion](../resources/accesspackagequestion.md) collection | Questions that are configured on the policy. The questions can be required or optional; callers can determine whether a question is required or optional based on the **isRequired** property on **accessPackageQuestion**. |
 | schedule | [requestSchedule](../resources/requestschedule.md) | Schedule restrictions enforced, if any. |
+|verifiableCredentialRequirementStatus|[verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md)|The status of the process to process the verifiable credential, if any.|
 
 ## Relationships
 None.
@@ -61,6 +62,9 @@ The following is a JSON representation of the type.
     {
       "@odata.type": "microsoft.graph.accessPackageAnswerString"
     }
-  ]
+  ],
+  "verifiableCredentialRequirementStatus": {
+    "@odata.type": "microsoft.graph.verifiableCredentialRequirementStatus"
+  }
 }
 ```

@@ -72,10 +72,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationClass",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "mailNickname": "String",
   "description": "String",
+  "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
@@ -85,6 +83,8 @@ The following is a JSON representation of the resource.
   "externalSource": "String",
   "externalSourceDetail": "String",
   "grade": "String",
+  "id": "String (identifier)",
+  "mailNickname": "String",
   "term": {
     "@odata.type": "microsoft.graph.educationTerm"
   }

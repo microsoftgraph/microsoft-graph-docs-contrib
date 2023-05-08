@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var messageIds = new List<String>()
+var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkRead.MarkReadPostRequestBody
 {
-	"MC172851",
-	"MC167983"
+	MessageIds = new List<string>
+	{
+		"MC172851",
+		"MC167983",
+	},
 };
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkRead.PostAsync(requestBody);
 
-await graphClient.Admin.ServiceAnnouncement.Messages
-	.MarkRead(messageIds)
-	.Request()
-	.PostAsync();
 
 ```

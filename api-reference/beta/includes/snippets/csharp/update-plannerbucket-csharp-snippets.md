@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerBucket = new PlannerBucket
+var requestBody = new PlannerBucket
 {
-	Name = "Development"
+	Name = "Development",
 };
+var result = await graphClient.Planner.Buckets["{plannerBucket-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+	requestConfiguration.Headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"");
+});
 
-await graphClient.Planner.Buckets["{plannerBucket-id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
-	.UpdateAsync(plannerBucket);
 
 ```

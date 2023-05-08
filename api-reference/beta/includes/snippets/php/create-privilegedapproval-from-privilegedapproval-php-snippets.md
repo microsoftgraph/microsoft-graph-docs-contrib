@@ -22,7 +22,7 @@ $requestBody->setApprovalDuration(new \DateInterval('datetime-value'));
 
 
 
-$requestResult = $graphServiceClient->privilegedApproval()->post($requestBody);
+$result = $graphServiceClient->privilegedApproval()->post($requestBody);
 
 
 ```

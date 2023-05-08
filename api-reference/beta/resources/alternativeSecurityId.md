@@ -4,7 +4,7 @@ description: "For internal use only. This complex type will be deprecated in the
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "spunukol"
+author: "myra-ramdenbourg"
 ---
 
 # alternativeSecurityId resource type

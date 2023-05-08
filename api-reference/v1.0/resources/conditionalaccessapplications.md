@@ -41,8 +41,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includeApplications": ["String"],
   "excludeApplications": ["String"],
+  "includeApplications": ["String"],
   "includeUserActions": ["String"]
 }
 ```

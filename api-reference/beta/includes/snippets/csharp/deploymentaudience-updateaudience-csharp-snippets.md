@@ -4,43 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var addMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.WindowsUpdatesUpdateAudience.UpdateAudiencePostRequestBody
 {
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
+		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
 };
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].WindowsUpdatesUpdateAudience.PostAsync(requestBody);
 
-var removeMembers = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var addExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-var removeExclusions = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
-{
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
-	{
-		Id = "String (identifier)"
-	}
-};
-
-await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience
-	.UpdateAudience(addMembers,removeMembers,addExclusions,removeExclusions)
-	.Request()
-	.PostAsync();
 
 ```

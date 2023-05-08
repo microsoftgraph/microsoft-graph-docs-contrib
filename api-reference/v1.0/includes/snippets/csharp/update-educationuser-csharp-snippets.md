@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationUser = new EducationUser
+var requestBody = new EducationUser
 {
 	DisplayName = "Rogelio Cazares",
 	GivenName = "Rogelio",
 	MiddleName = "Fernando",
-	Surname = "Cazares"
+	Surname = "Cazares",
 };
+var result = await graphClient.Education.Users["{educationUser-id}"].PatchAsync(requestBody);
 
-await graphClient.Education.Users["{educationUser-id}"]
-	.Request()
-	.UpdateAsync(educationUser);
 
 ```

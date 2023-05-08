@@ -34,11 +34,11 @@ Here is a JSON representation of a **baseItem** resource.
 
 ```json
 {
-  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
+  "id": "string (identifier)",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "datetime",
   "name": "string",

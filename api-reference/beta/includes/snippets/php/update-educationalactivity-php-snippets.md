@@ -32,7 +32,7 @@ $institution->setLocation($institutionLocation);
 $requestBody->setInstitution($institution);
 
 
-$requestResult = $graphServiceClient->me()->profile()->educationalActivitiesById('educationalActivity-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->educationalActivitiesById('educationalActivity-id')->patch($requestBody);
 
 
 ```

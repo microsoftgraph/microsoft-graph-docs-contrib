@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workbookTable = new WorkbookTable
+var requestBody = new WorkbookTable
 {
 	Name = "name-value",
 	ShowHeaders = true,
 	ShowTotals = true,
-	Style = "style-value"
+	Style = "style-value",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"]
-	.Request()
-	.UpdateAsync(workbookTable);
 
 ```

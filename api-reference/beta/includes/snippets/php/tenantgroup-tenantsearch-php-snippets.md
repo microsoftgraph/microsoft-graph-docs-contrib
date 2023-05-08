@@ -14,7 +14,7 @@ $requestBody->setTenantId('String');
 
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->tenantGroups()->tenantSearch()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->tenantGroups()->managedTenantsTenantSearch()->post($requestBody);
 
 
 ```

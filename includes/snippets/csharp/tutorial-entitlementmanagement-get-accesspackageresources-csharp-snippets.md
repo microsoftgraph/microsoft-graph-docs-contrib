@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageResources = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].AccessPackageResources
-	.Request()
-	.Filter("(displayName eq 'Marketing resources')")
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].AccessPackageResources.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "(displayName eq 'Marketing resources')";
+});
+
 
 ```

@@ -4,18 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityProvider = new IdentityProvider
+var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/identityProviders/{id}"}
-	}
+	OdataId = "https://graph.microsoft.com/beta/identityProviders/{id}",
 };
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].IdentityProviders.Ref.PostAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].IdentityProviders.References
-	.Request()
-	.AddAsync(identityProvider);
 
 ```

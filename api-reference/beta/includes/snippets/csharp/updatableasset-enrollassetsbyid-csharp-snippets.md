@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var updateCategory = Microsoft.Graph.WindowsUpdates.UpdateCategory.Feature;
-
-var memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
-
-var ids = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesEnrollAssetsById.EnrollAssetsByIdPostRequestBody
 {
-	"String",
-	"String",
-	"String"
+	UpdateCategory = Microsoft.Graph.Beta.Models.WindowsUpdates.UpdateCategory.Feature,
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
+	Ids = new List<string>
+	{
+		"String",
+		"String",
+		"String",
+	},
 };
+await graphClient.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesEnrollAssetsById.PostAsync(requestBody);
 
-await graphClient.Admin.Windows.Updates.UpdatableAssets
-	.EnrollAssetsById(updateCategory,memberEntityType,ids)
-	.Request()
-	.PostAsync();
 
 ```

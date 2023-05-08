@@ -41,13 +41,13 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.callRecordingEventMessageDetail",
   "callId": "String",
   "callRecordingDisplayName": "String",
-  "callRecordingUrl": "String",
   "callRecordingDuration": "String (duration)",
   "callRecordingStatus": "String",
-  "meetingOrganizer": {
+  "callRecordingUrl": "String",
+  "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "initiator": {
+  "meetingOrganizer": {
     "@odata.type": "microsoft.graph.identitySet"
   }
 }

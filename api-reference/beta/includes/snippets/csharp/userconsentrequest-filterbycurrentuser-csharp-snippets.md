@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var filterByCurrentUser = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests["{appConsentRequest-id}"].UserConsentRequests
-	.FilterByCurrentUser(ConsentRequestFilterByCurrentUserOptions.Reviewer)
-	.Request()
-	.Filter(" (status eq 'Completed')")
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests["{appConsentRequest-id}"].UserConsentRequests["{userConsentRequest-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = " ";
+});
+
 
 ```

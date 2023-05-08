@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Tags["{tag-id}"].DeleteAsync((requestConfiguration) =>
 {
-	new QueryOption("forcedelete", "true")
-};
+	requestConfiguration.QueryParameters.Forcedelete = true;
+});
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Tags["{ediscovery.tag-id}"]
-	.Request( queryOptions )
-	.DeleteAsync();
 
 ```

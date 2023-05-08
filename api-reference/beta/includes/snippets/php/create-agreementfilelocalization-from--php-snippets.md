@@ -27,7 +27,7 @@ $FileData->setData(base64_decode('base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGlu
 $requestBody->setFileData($fileData);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->files()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreementsById('agreement-id')->files()->post($requestBody);
 
 
 ```

@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var exclusions = await graphClient.Admin.Windows.Updates.Deployments["{windowsUpdates.deployment-id}"].Audience.Exclusions
-	.Request()
-	.GetAsync();
+var result = await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].Exclusions.GetAsync();
+
 
 ```

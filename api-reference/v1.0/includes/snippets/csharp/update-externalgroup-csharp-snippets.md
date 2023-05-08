@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var externalGroup = new Microsoft.Graph.ExternalConnectors.ExternalGroup
+var requestBody = new Microsoft.Graph.Models.ExternalConnectors.ExternalGroup
 {
 	DisplayName = "Contoso Marketing",
-	Description = "The product marketing team"
+	Description = "The product marketing team",
 };
+var result = await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"].PatchAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
-	.Request()
-	.UpdateAsync(externalGroup);
 
 ```

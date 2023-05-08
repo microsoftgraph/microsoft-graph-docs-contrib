@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87";
+var requestBody = new Microsoft.Graph.Users.Item.Presence.ClearPresence.ClearPresencePostRequestBody
+{
+	SessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87",
+};
+await graphClient.Users["{user-id}"].Presence.ClearPresence.PostAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Presence
-	.ClearPresence(sessionId)
-	.Request()
-	.PostAsync();
 
 ```

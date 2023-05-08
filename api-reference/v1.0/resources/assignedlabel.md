@@ -33,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "labelId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "labelId": "String"
 }
 ```
 

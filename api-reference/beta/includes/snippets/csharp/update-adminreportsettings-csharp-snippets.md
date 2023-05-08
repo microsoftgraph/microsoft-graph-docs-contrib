@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var adminReportSettings = new AdminReportSettings
+var requestBody = new AdminReportSettings
 {
-	DisplayConcealedNames = true
+	DisplayConcealedNames = true,
 };
+var result = await graphClient.Admin.ReportSettings.PatchAsync(requestBody);
 
-await graphClient.Admin.ReportSettings
-	.Request()
-	.UpdateAsync(adminReportSettings);
 
 ```

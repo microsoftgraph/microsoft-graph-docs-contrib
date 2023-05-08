@@ -4,21 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ediscoveryHoldPolicy = new Microsoft.Graph.Security.EdiscoveryHoldPolicy
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 {
 	Displayname = "My legalHold with sources",
 	Description = "Created from Graph API",
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"userSources@odata.bind", "[{\"@odata.type\":\"microsoft.graph.security.userSource\",\"email\":\"SalesTeam@M365x809305.OnMicrosoft.com\"}]"},
-		{"siteSources@odata.bind", "[{\"@odata.type\":\"microsoft.graph.security.siteSource\",\"site\":{\"webUrl\":\"https://m365x809305.sharepoint.com/sites/Design-topsecret\"}}]"}
-	}
+		{
+			"userSources@odata.bind" , new List<>
+			{
+				new 
+				{
+					OdataType = "microsoft.graph.security.userSource",
+					Email = "SalesTeam@M365x809305.OnMicrosoft.com",
+				},
+			}
+		},
+		{
+			"siteSources@odata.bind" , new List<>
+			{
+				new 
+				{
+					OdataType = "microsoft.graph.security.siteSource",
+					Site = new 
+					{
+						WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
+					},
+				},
+			}
+		},
+	},
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].LegalHolds.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds
-	.Request()
-	.AddAsync(ediscoveryHoldPolicy);
 
 ```

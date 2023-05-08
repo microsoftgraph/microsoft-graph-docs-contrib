@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bookingCustomer = new BookingCustomer
+var requestBody = new BookingCustomer
 {
 	DisplayName = "Adele",
-	EmailAddress = "adele@relecloud.com"
+	EmailAddress = "adele@relecloud.com",
 };
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomer-id}"].PatchAsync(requestBody);
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomer-id}"]
-	.Request()
-	.UpdateAsync(bookingCustomer);
 
 ```

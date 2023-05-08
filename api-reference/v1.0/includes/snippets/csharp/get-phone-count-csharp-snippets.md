@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Contacts.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true"),
-	new QueryOption("$search", "\"displayName:wa\"")
-};
+	requestConfiguration.QueryParameters.Search = "\"displayName:wa\"";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var contacts = await graphClient.Contacts
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.GetAsync();
 
 ```

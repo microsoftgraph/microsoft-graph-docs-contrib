@@ -5,25 +5,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  //other-imports
+)
 
-headers := map[string]string{
-	"Prefer": "outlook.body-content-type=\"text\"",
-}
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "outlook.body-content-type=\"text\"")
+
 
 requestStartDateTime := "2017-01-01T19:00:00-08:00"
 requestEndDateTime := "2017-10-01T19:00:00.00-08:00"
 
-requestParameters := &graphconfig.CalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.GroupItemCalendarViewRequestBuilderGetQueryParameters{
 	StartDateTime: &requestStartDateTime,
 	EndDateTime: &requestEndDateTime,
 }
-configuration := &graphconfig.CalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.GroupItemCalendarViewRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").CalendarView().Get(context.Background(), configuration)
+result, err := graphClient.Groups().ByGroupId("group-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

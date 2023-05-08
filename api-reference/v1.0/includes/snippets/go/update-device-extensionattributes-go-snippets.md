@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDevice()
 additionalData := map[string]interface{}{
@@ -16,7 +24,7 @@ extensionAttributes.SetExtensionAttribute1(&extensionAttribute1)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.DevicesById("device-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

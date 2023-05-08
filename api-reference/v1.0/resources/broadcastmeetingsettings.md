@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingSettings resource type"
 description: "Represents settings related to a live event in Microsoft Teams."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -45,13 +45,13 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.broadcastMeetingSettings",
   "allowedAudience": "everyone | organization | roleIsAttendee | unknownFutureValue",
-  "isRecordingEnabled": "Boolean",
-  "isAttendeeReportEnabled": "Boolean",
-  "isQuestionAndAnswerEnabled": "Boolean",
-  "isVideoOnDemandEnabled": "Boolean",
   "captions": {
     "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"
-  }
+  },
+  "isAttendeeReportEnabled": "Boolean",
+  "isQuestionAndAnswerEnabled": "Boolean",
+  "isRecordingEnabled": "Boolean",
+  "isVideoOnDemandEnabled": "Boolean"
 }
 ```
 

@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1314
+Content-Length: 1144
 
 {
   "value": [
@@ -73,8 +73,6 @@ Content-Length: 1314
       "singleTenantAppId": "Single Tenant App Id value",
       "displayName": "Display Name value",
       "isConfigured": true,
-      "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
-      "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
       "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
       "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
       "groupsRequiringPartnerEnrollment": [

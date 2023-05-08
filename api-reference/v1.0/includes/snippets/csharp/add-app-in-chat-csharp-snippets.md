@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamsAppInstallation = new TeamsAppInstallation
+var requestBody = new TeamsAppInstallation
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"teamsApp@odata.bind", "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
-	}
+		{
+			"teamsApp@odata.bind" , "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+		},
+	},
 };
+var result = await graphClient.Chats["{chat-id}"].InstalledApps.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"].InstalledApps
-	.Request()
-	.AddAsync(teamsAppInstallation);
 
 ```

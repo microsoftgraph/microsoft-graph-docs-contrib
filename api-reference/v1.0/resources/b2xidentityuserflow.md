@@ -64,14 +64,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "String (identifier)",
-    "userFlowType": "String",
-    "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
-    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
     "apiConnectorConfiguration": {
       "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
-    }
+    },
+    "id": "String (identifier)",
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "userFlowType": "String",
+    "userFlowTypeVersion": "Single"
 }
 ```

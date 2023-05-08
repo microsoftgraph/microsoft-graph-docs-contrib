@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var openShifts = await graphClient.Teams["{team-id}"].Schedule.OpenShifts
-	.Request()
-	.GetAsync();
+var result = await graphClient.Teams["{team-id}"].Schedule.OpenShifts.GetAsync();
+
 
 ```

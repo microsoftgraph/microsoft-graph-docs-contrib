@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantInformation = await graphClient.TenantRelationships
-	.FindTenantInformationByTenantId("6babcaad-604b-40ac-a9d7-9fd97c0b779f")
-	.Request()
-	.GetAsync();
+var result = await graphClient.TenantRelationships.FindTenantInformationByTenantIdWithTenantId("{tenantId}").GetAsync();
+
 
 ```

@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServicePrincipalRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ServicePrincipalRequestBuilderGetQueryParameters();
+$queryParameters = ServicePrincipalRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","appId","displayName","appRoles","oauth2PermissionScopes"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->get($requestConfiguration);
+$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->get($requestConfiguration);
 
 
 ```

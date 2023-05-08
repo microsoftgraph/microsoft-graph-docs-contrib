@@ -16,7 +16,7 @@ $requestBody->setDisplayName('World History Level 1');
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->patch($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->patch($requestBody);
 
 
 ```

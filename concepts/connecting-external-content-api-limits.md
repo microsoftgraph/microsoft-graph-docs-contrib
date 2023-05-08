@@ -15,9 +15,10 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | Limit type | Limit |
 | ---------- | ----- |
-| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 10 for search, 15 for compliance |
+| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 30 |
 | [Items](/graph/api/resources/externalconnectors-externalitem) per connection | 5,000,000 |
 | Connection byte size | 500 GB |
+| Items per tenant | 50,000,000 |
 
 ## Schema limits
 

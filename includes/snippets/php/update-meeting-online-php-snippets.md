@@ -16,7 +16,7 @@ $requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsforbu
 
 
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->patch($requestBody);
+$result = $graphServiceClient->me()->eventsById('event-id')->patch($requestBody);
 
 
 ```

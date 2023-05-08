@@ -11,6 +11,121 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### assignmentType values
+
+| Member              | 
+| :-------------------|
+| Required            |
+| Recommeded          |
+| UnknownFutureValue  |
+
+### courseStatus values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+
+### usqState values
+
+| Member             | 
+|:-------------------|
+| norma.             |
+| nearing            |
+| critical           |
+| full               |
+| overLimit          |
+
+### userPurpose values
+
+| Member             | 
+|:-------------------|
+| user               |
+| linked             |
+| shared             |
+| room               |
+| equipment          |
+| others             |
+| unknownFutureValue |
+
+### recommendationCategory values 
+
+|Member|
+|:---|
+|identityBestPractice|
+|identitySecureScore|
+|unknownFutureValue|
+
+### recommendationFeatureAreas values 
+
+|Member|
+|:---|
+|users|
+|groups|
+|devices|
+|applications|
+|accessReviews|
+|conditionalAccess|
+|governance|
+|unknownFutureValue|
+
+### recommendationPriority values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+
+### recommendationStatus values 
+
+|Member|
+|:---|
+|active|
+|completedBySystem|
+|completedByUser|
+|dismissed|
+|postponed|
+|unknownFutureValue|
+
+### recommendationType values 
+
+|Member|
+|:---|
+|adfsAppsMigration|
+|enableDesktopSSO|
+|enablePHS|
+|enableProvisioning|
+|switchFromPerUserMFA|
+|tenantMFA|
+|thirdPartyApps|
+|turnOffPerUserMFA|
+|useAuthenticatorApp|
+|useMyApps|
+|staleApps|
+|staleAppCreds|
+|applicationCredentialExpiry|
+|servicePrincipalKeyExpiry|
+|adminMFAV2|
+|blockLegacyAuthentication|
+|integratedApps|
+|mfaRegistrationV2|
+|pwagePolicyNew|
+|passwordHashSync|
+|oneAdmin|
+|roleOverlap|
+|selfServicePasswordReset|
+|signinRiskPolicy|
+|userRiskPolicy|
+|verifyAppPublisher|
+|privateLinkForAAD|
+|appRoleAssignmentsGroups|
+|appRoleAssignmentsUsers|
+|managedIdentity|
+|overprivilegedApps|
+|unknownFutureValue|
+
 ### layoutTemplateType values
 
 | Member             |
@@ -21,26 +136,26 @@ Namespace: microsoft.graph
 
 ### conditionalAccessExternalTenantsMembershipKind values
 
-|Member|
-|:---|
-|all|
-|enumerated|
-|unknownFutureValue|
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
 
 ### conditionalAccessGuestOrExternalUserTypes values
 
-|Member|
-|:---|
-|none|
-|internalGuest|
-|b2bCollaborationGuest|
-|b2bCollaborationMember|
-|b2bDirectConnectUser|
-|otherExternalUser|
-|serviceProvider|
-|unknownFutureValue|
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
 
-### teamTemplateAudience values 
+### teamTemplateAudience values
 
 |Member|
 |:---|
@@ -112,6 +227,17 @@ Namespace: microsoft.graph
 |:---|
 |requestSent|
 |requestReceived|
+|unknownFutureValue|
+
+### customExtensionCalloutInstanceStatus values
+
+|Member|
+|:---|
+|calloutSent|
+|callbackReceived|
+|calloutFailed|
+|callbackTimedOut|
+|waitingForCallback|
 |unknownFutureValue|
 
 ### accessPackageCustomExtensionStage values 
@@ -232,6 +358,15 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
+### msiType values 
+
+|Member|
+|:---|
+|none|
+|userAssigned|
+|systemAssigned|
+|unknownFutureValue|
+
 ### multiFactorAuthConfiguration values
 
 | Member             | Value | Description |
@@ -270,7 +405,7 @@ Namespace: microsoft.graph
 ### synchronizationSecret values
 
 |Member|
-|:----|
+|:---|
 |None|
 |UserName|
 |Password|
@@ -305,6 +440,9 @@ Namespace: microsoft.graph
 |Oauth2AuthorizationCode|
 |Oauth2RedirectUri|
 |ApplicationTemplateIdentifier|
+|Oauth2TokenExchangeUri|
+|Oauth2AuthorizationUri|
+|AuthenticationType|
 |Server|
 |PerformInboundEntitlementGrants|
 |HardDeletesEnabled|
@@ -312,6 +450,54 @@ Namespace: microsoft.graph
 |SyncAgentADContainer|
 |ValidateDomain|
 |TestReferences|
+|ConnectionString|
+
+### synchronizationScheduleState values 
+
+|Member|
+|:---|
+|Active|
+|Disabled|
+|Paused|
+
+### synchronizationStatusCode values
+
+|Member|
+|:---|
+|NotConfigured|
+|NotRun|
+|Active|
+|Paused|
+|Quarantine|
+
+### synchronizationTaskExecutionResult values 
+
+|Member|
+|:---|
+|Succeeded|
+|Failed|
+|EntryLevelErrors|
+
+### quarantineReason values 
+
+|Member|
+|:---|
+|EncounteredBaseEscrowThreshold|
+|EncounteredTotalEscrowThreshold|
+|EncounteredEscrowProportionThreshold|
+|EncounteredQuarantineException|
+|Unknown|
+|QuarantinedOnDemand|
+|TooManyDeletes|
+|IngestionInterrupted|
+
+### attributeMappingSourceType values 
+
+|Member|
+|:---|
+|Attribute|
+|Constant|
+|Function|
 
 ### filterMode values
 
@@ -399,6 +585,13 @@ Namespace: microsoft.graph
 |Binary|
 |Boolean|
 |DateTime|
+
+### scopeOperatorType values 
+
+|Member|
+|:---|
+|Binary|
+|Unary|
 
 ### mutability values
 
@@ -2140,14 +2333,15 @@ Possible values for user account types (group membership), per Windows definitio
 |flowWhenChanged|
 |flowAlways|
 
-### attributeFlowType values
+### attributeFlowType values 
 
 |Member|
 |:---|
-|always|
-|objectAddOnly|
-|multiValueAddOnly|
-|restId|
+|Always|
+|ObjectAddOnly|
+|MultiValueAddOnly|
+|ValueAddOnly|
+|AttributeAddOnly|
 
 ### objectFlowTypes values
 
@@ -2380,6 +2574,7 @@ Possible values for user account types (group membership), per Windows definitio
 |b2bDirectConnectUser|
 |otherExternalUser|
 |serviceProvider|
+|microsoftAdminPortals|
 
 ### signInAccessType values 
 
@@ -2727,6 +2922,95 @@ Possible values for user account types (group membership), per Windows definitio
 |team      |0        |Indicates that the Teams app can be installed within a team and is authorized to access that team's data.|
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
+
+### assignmentScheduleFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### assignmentScheduleInstanceFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### assignmentScheduleRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+
+### eligibilityScheduleFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### eligibilityScheduleRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+
+### privilegedAccessGroupAssignmentType values
+
+|Member|
+|:---|
+|assigned|
+|activated|
+|unknownFutureValue|
+
+### privilegedAccessGroupMemberType values
+
+|Member|
+|:---|
+|direct|
+|group|
+|unknownFutureValue|
+
+### privilegedAccessGroupRelationships values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+
+
+### scheduleRequestActions values
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
 
 ### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
@@ -3405,6 +3689,21 @@ Possible values for user account types (group membership), per Windows definitio
 |mfa|
 |unknownFutureValue|
 
+### authenticationStrengthResult values
+
+|Member|
+|:---|
+|notSet|
+|skippedForProofUp|
+|satisfied|
+|singleChallengeRequired|
+|multipleChallengesRequired|
+|singleRegistrationRequired|
+|multipleRegistrationsRequired|
+|cannotSatisfyDueToCombinationConfiguration|
+|cannotSatisfy|
+|unknownFutureValue|
+
 ### authenticationMethodModes values
 
 |Member|
@@ -3520,3 +3819,28 @@ Possible values for user account types (group membership), per Windows definitio
 |premigration|
 |migrationInProgress|
 |migrationComplete|
+|unknownFutureValue|
+
+### authenticationEventType values
+
+|Member|
+|:---|
+|tokenIssuanceStart|
+|pageRenderStart|
+|unknownFutureValue|
+
+### microsoftAuthenticatorAuthenticationMethodClientAppName values
+
+|Member|
+|:-----|
+|microsoftAuthenticator|
+|outlookMobile|
+|unknownFutureValue|
+
+### verifiableCredentialPresentationStatusCode values 
+
+|Member|
+|:---|
+|request_retrieved|
+|presentation_verified|
+|unknownFutureValue|

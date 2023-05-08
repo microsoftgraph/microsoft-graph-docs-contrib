@@ -4,32 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var alert = new Alert
+var requestBody = new Alert
 {
 	AssignedTo = "String",
 	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	Comments = new List<String>()
+	Comments = new List<string>
 	{
-		"String"
+		"String",
 	},
 	Feedback = AlertFeedback.Unknown,
 	Status = AlertStatus.Unknown,
-	Tags = new List<String>()
+	Tags = new List<string>
 	{
-		"String"
+		"String",
 	},
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "String",
-		Vendor = "String"
-	}
+		Vendor = "String",
+	},
 };
+var result = await graphClient.Security.Alerts["{alert-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+});
 
-await graphClient.Security.Alerts["{alert-id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.UpdateAsync(alert);
 
 ```

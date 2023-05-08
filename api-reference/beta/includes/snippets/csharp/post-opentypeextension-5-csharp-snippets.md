@@ -4,45 +4,57 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conversation = new Conversation
+var requestBody = new Conversation
 {
 	Topic = "Does anyone have a second?",
-	Threads = new ConversationThreadsCollectionPage()
+	Threads = new List<ConversationThread>
 	{
 		new ConversationThread
 		{
-			Posts = new ConversationThreadPostsCollectionPage()
+			Posts = new List<Post>
 			{
 				new Post
 				{
 					Body = new ItemBody
 					{
 						ContentType = BodyType.Html,
-						Content = "This is urgent!"
+						Content = "This is urgent!",
 					},
-					Extensions = new PostExtensionsCollectionPage()
+					Extensions = new List<Extension>
 					{
-						new OpenTypeExtension
+						new Extension
 						{
-							ExtensionName = "Com.Contoso.Benefits",
-							AdditionalData = new Dictionary<string, object>()
+							OdataType = "microsoft.graph.openTypeExtension",
+							AdditionalData = new Dictionary<string, object>
 							{
-								{"companyName", "Contoso"},
-								{"expirationDate", "2016-08-03T11:00:00Z"},
-								{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+								{
+									"extensionName" , "Com.Contoso.Benefits"
+								},
+								{
+									"companyName" , "Contoso"
+								},
+								{
+									"expirationDate" , "2016-08-03T11:00:00.000Z"
+								},
+								{
+									"topPicks" , new List<string>
+									{
+										"Employees only",
+										"Add spouse or guest",
+										"Add family",
+									}
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Conversations.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Conversations
-	.Request()
-	.AddAsync(conversation);
 
 ```

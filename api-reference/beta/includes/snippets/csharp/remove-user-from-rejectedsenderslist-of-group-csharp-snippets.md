@@ -4,10 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Groups["{group-id}"].RejectedSenders.References
-	.Request()
-	.DeleteAsync();
+await graphClient.Groups["{group-id}"].RejectedSenders.Ref.DeleteAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Id = "https://graph.microsoft.com/beta/users/{id}";
+});
+
 
 ```

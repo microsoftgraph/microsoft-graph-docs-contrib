@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var channels = await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.Filter("membershipType eq 'private'")
-	.GetAsync();
+var result = await graphClient.Teams["{team-id}"].Channels.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "membershipType eq 'private'";
+});
+
 
 ```

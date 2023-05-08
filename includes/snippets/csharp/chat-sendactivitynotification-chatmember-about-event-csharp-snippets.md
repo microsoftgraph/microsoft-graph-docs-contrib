@@ -4,30 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.Text,
-	Value = "Weekly Virtual Social",
-	WebUrl = "Teams webUrl"
+	Topic = new TeamworkActivityTopic
+	{
+		Source = TeamworkActivityTopicSource.Text,
+		Value = "Weekly Virtual Social",
+		WebUrl = "Teams webUrl",
+	},
+	PreviewText = new ItemBody
+	{
+		Content = "It will be fun!",
+	},
+	ActivityType = "eventCreated",
+	Recipient = new TeamworkNotificationRecipient
+	{
+		OdataType = "microsoft.graph.chatMembersNotificationRecipient",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"chatId" , "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+			},
+		},
+	},
 };
+await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
-var previewText = new ItemBody
-{
-	Content = "It will be fun!"
-};
-
-var activityType = "eventCreated";
-
-var recipient = new ChatMembersNotificationRecipient
-{
-	ChatId = "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
-};
-
-await graphClient.Chats["{chat-id}"]
-	.SendActivityNotification(topic,activityType,null,previewText,null,recipient)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,27 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var criteria = new WorkbookFilterCriteria
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply.ApplyPostRequestBody
 {
-	Criterion1 = "criterion1-value",
-	Criterion2 = "criterion2-value",
-	Color = "color-value",
-	Operator = "",
-	Icon = new WorkbookIcon
+	Criteria = new WorkbookFilterCriteria
 	{
-		Set = "set-value",
-		Index = 99
+		Criterion1 = "criterion1-value",
+		Criterion2 = "criterion2-value",
+		Color = "color-value",
+		Operator = new Operator
+		{
+		},
+		Icon = new WorkbookIcon
+		{
+			Set = "set-value",
+			Index = 99,
+		},
+		DynamicCriteria = "dynamicCriteria-value",
+		Values = new Json
+		{
+		},
+		FilterOn = "filterOn-value",
 	},
-	DynamicCriteria = "dynamicCriteria-value",
-	Values = JsonDocument.Parse("{}"),
-	FilterOn = "filterOn-value"
 };
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].Filter.Apply.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].Filter
-	.Apply(criteria)
-	.Request()
-	.PostAsync();
 
 ```

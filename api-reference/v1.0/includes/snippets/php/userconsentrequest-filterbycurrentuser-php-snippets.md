@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserConsentRequestRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UserConsentRequestRequestBuilderGetQueryParameters();
+$queryParameters = UserConsentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = " ";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->userConsentRequestsById('userConsentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->userConsentRequestsById('userConsentRequest-id')->get($requestConfiguration);
 
 
 ```

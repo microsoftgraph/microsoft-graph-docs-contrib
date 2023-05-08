@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var inferenceClassificationOverride = new InferenceClassificationOverride
+var requestBody = new InferenceClassificationOverride
 {
-	ClassifyAs = InferenceClassificationType.Focused
+	ClassifyAs = InferenceClassificationType.Focused,
 };
+var result = await graphClient.Me.InferenceClassification.Overrides["{inferenceClassificationOverride-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.InferenceClassification.Overrides["{inferenceClassificationOverride-id}"]
-	.Request()
-	.UpdateAsync(inferenceClassificationOverride);
 
 ```

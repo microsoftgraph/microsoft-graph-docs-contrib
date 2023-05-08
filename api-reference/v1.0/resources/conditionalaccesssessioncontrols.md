@@ -49,9 +49,9 @@ The following is a JSON representation of the resource.
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
+  "disableResilienceDefaults": false,
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
-  "disableResilienceDefaults": false
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
 }
 ```
 

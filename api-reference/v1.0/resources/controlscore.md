@@ -36,10 +36,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "controlName": "String",
-  "score": "Double",
   "controlCategory": "String",
-  "description": "String"
+  "controlName": "String",
+  "description": "String",
+  "score": "Double"
 }
 
 ```

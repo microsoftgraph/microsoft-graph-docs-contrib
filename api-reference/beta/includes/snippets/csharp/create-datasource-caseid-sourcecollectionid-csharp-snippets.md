@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var dataSource = new UserSource
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
 {
-	Email = "badguy@contoso.com"
+	OdataType = "microsoft.graph.ediscovery.userSource",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"email" , "badguy@contoso.com"
+		},
+	},
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].SourceCollections["{sourceCollection-id}"].AdditionalSources.PostAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].SourceCollections["{ediscovery.sourceCollection-id}"].AdditionalSources
-	.Request()
-	.AddAsync(dataSource);
 
 ```

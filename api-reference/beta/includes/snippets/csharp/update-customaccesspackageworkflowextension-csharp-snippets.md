@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customAccessPackageWorkflowExtension = new CustomAccessPackageWorkflowExtension
+var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs.Item.CustomAccessPackageWorkflowExtensions.Item.CustomAccessPackageWorkflowExtension
 {
-	DisplayName = "test_action_0124_email",
-	Description = "this is for graph testing only"
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"@odata.type" , "#microsoft.graph.customAccessPackageWorkflowExtension"
+		},
+		{
+			"displayName" , "test_action_0124_email"
+		},
+		{
+			"description" , "this is for graph testing only"
+		},
+	},
 };
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions["{customAccessPackageWorkflowExtension-id}"].PutAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].CustomAccessPackageWorkflowExtensions["{customAccessPackageWorkflowExtension-id}"]
-	.Request()
-	.PutAsync(customAccessPackageWorkflowExtension);
 
 ```

@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conditionalAccessTemplate = await graphClient.Identity.ConditionalAccess.Templates["{conditionalAccessTemplate-id}"]
-	.Request()
-	.Select("details")
-	.GetAsync();
+var result = await graphClient.Identity.ConditionalAccess.Templates["{conditionalAccessTemplate-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "details" };
+});
+
 
 ```

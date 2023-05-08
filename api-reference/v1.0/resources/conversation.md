@@ -70,10 +70,9 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
   "topic": "string",
-  "uniqueSenders": ["string"],
-
-  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
+  "uniqueSenders": ["string"]
 }
 
 ```

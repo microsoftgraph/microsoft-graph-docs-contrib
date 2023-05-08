@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleManagementPolicy = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"]
-	.Request()
-	.Expand("effectiveRules,rules")
-	.GetAsync();
+var result = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "effectiveRules","rules" };
+});
+
 
 ```

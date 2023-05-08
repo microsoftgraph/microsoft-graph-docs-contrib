@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Me.Events["{event-id}"].Instances.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("startDateTime", "2019-04-08T09:00:00.0000000"),
-	new QueryOption("endDateTime", "2019-04-30T09:00:00.0000000")
-};
+	requestConfiguration.QueryParameters.StartDateTime = "2019-04-08T09:00:00.0000000";
+	requestConfiguration.QueryParameters.EndDateTime = "2019-04-30T09:00:00.0000000";
+	requestConfiguration.QueryParameters.Select = new string []{ "subject","bodyPreview","seriesMasterId","type","recurrence","start","end" };
+});
 
-var instances = await graphClient.Me.Events["{event-id}"].Instances
-	.Request( queryOptions )
-	.Select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
-	.GetAsync();
 
 ```

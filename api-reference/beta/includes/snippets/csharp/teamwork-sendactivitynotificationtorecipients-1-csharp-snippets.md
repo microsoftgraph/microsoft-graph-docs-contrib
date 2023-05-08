@@ -4,49 +4,63 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new Microsoft.Graph.Beta.Teamwork.SendActivityNotificationToRecipients.SendActivityNotificationToRecipientsPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
-};
-
-var activityType = "pendingFinanceApprovalRequests";
-
-var previewText = new ItemBody
-{
-	Content = "Internal spending team has a pending finance approval requests"
-};
-
-var recipients = new List<TeamworkNotificationRecipient>()
-{
-	new AadUserNotificationRecipient
+	Topic = new TeamworkActivityTopic
 	{
-		UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+		Source = TeamworkActivityTopicSource.EntityUrl,
+		Value = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}",
 	},
-	new AadUserNotificationRecipient
+	ActivityType = "pendingFinanceApprovalRequests",
+	PreviewText = new ItemBody
 	{
-		UserId = "ab88234e-0874-477c-9638-d144296ed04f"
+		Content = "Internal spending team has a pending finance approval requests",
 	},
-	new AadUserNotificationRecipient
+	Recipients = new List<TeamworkNotificationRecipient>
 	{
-		UserId = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
-	}
-};
-
-var templateParameters = new List<KeyValuePair>()
-{
-	new KeyValuePair
+		new TeamworkNotificationRecipient
+		{
+			OdataType = "microsoft.graph.aadUserNotificationRecipient",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
+				},
+			},
+		},
+		new TeamworkNotificationRecipient
+		{
+			OdataType = "microsoft.graph.aadUserNotificationRecipient",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userId" , "ab88234e-0874-477c-9638-d144296ed04f"
+				},
+			},
+		},
+		new TeamworkNotificationRecipient
+		{
+			OdataType = "microsoft.graph.aadUserNotificationRecipient",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userId" , "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+				},
+			},
+		},
+	},
+	TemplateParameters = new List<KeyValuePair>
 	{
-		Name = "pendingRequestCount",
-		Value = "5"
-	}
+		new KeyValuePair
+		{
+			Name = "pendingRequestCount",
+			Value = "5",
+		},
+	},
 };
+await graphClient.Teamwork.SendActivityNotificationToRecipients.PostAsync(requestBody);
 
-await graphClient.Teamwork
-	.SendActivityNotificationToRecipients(topic,activityType,null,previewText,null,templateParameters,recipients)
-	.Request()
-	.PostAsync();
 
 ```

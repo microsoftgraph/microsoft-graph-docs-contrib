@@ -33,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "message": "String",
-  "code": "String"
+  "code": "String",
+  "message": "String"
 }
 ```
 

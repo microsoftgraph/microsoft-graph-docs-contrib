@@ -10,21 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'A')";
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$queryParameters->orderby = ["displayName"];
+$queryParameters->filter = "startswith(displayName,%20'A')";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->devicesById('device-id')->memberOf()->group()->get($requestConfiguration);
+
+$result = $graphServiceClient->devicesById('device-id')->memberOf()->graphGroup()->get($requestConfiguration);
 
 
 ```

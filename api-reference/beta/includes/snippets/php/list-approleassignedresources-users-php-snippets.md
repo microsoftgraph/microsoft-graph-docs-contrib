@@ -10,20 +10,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AppRoleAssignedResourcesRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-$queryParameters->select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"];
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->appRoleAssignedResources()->get($requestConfiguration);
+
+$result = $graphServiceClient->me()->appRoleAssignedResources()->get($requestConfiguration);
 
 
 ```

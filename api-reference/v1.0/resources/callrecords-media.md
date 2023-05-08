@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "label": "String",
-  "callerDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
-  "callerNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
   "calleeDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
   "calleeNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
+  "callerDevice": {"@odata.type": "microsoft.graph.callRecords.deviceInfo"},
+  "callerNetwork": {"@odata.type": "microsoft.graph.callRecords.networkInfo"},
+  "label": "String",
   "streams": [{"@odata.type": "microsoft.graph.callRecords.mediaStream"}]
 }
 ```

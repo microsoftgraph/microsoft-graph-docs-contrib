@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new AccessPackageCatalogsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AccessPackageCatalogsRequestBuilderGetQueryParameters();
+$queryParameters = AccessPackageCatalogsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "(displayName eq 'General')";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->get($requestConfiguration);
 
 
 ```

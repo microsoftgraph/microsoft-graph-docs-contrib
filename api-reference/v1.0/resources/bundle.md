@@ -41,8 +41,8 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.bundle" } -->
 ```json
 {
-  "childCount": 3,
   "album": { "@odata.type": "microsoft.graph.album" },
+  "childCount": 3
 }
 ```
 

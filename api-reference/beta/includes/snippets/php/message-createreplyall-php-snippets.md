@@ -17,7 +17,7 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('guidelines.txt');
 
 $additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
+		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 
@@ -33,7 +33,7 @@ $requestBody->setComment('if the project gets approved, please take a look at th
 
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->createReplyAll()->post($requestBody);
+$result = $graphServiceClient->me()->messagesById('message-id')->createReplyAll()->post($requestBody);
 
 
 ```

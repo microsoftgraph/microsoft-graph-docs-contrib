@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var application = new Application
+var requestBody = new Application
 {
 	OnPremisesPublishing = new OnPremisesPublishing
 	{
@@ -19,12 +19,10 @@ var application = new Application
 		IsSecureCookieEnabled = true,
 		IsStateSessionEnabled = true,
 		IsTranslateHostHeaderEnabled = true,
-		IsTranslateLinksInBodyEnabled = true
-	}
+		IsTranslateLinksInBodyEnabled = true,
+	},
 };
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

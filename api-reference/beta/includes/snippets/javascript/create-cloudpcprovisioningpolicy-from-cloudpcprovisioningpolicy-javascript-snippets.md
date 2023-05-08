@@ -18,14 +18,15 @@ const cloudPcProvisioningPolicy = {
         domainJoinType: 'hybridAzureADJoin',
         onPremisesConnectionId: '16ee6c71-fc10-438b-88ac-daa1ccafffff'
     },
-    id: '1d164206-bf41-4fd2-8424-a3192d39ffff',
+    enableSingleSignOn: true,
     imageDisplayName: 'Windows-10 19h1-evd',
     imageId: 'MicrosoftWindowsDesktop_Windows-10_19h1-evd',
     imageType: 'gallery',
     onPremisesConnectionId: '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
     windowsSettings: {
         language: 'en-US'
-    }
+    },
+    provisioningType: 'dedicated'
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')

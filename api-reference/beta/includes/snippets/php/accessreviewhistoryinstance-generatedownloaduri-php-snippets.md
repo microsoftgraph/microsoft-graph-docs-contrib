@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->historyDefinitionsById('accessReviewHistoryDefinition-id')->instancesById('accessReviewHistoryInstance-id')->generateDownloadUri()->post();
+$result = $graphServiceClient->identityGovernance()->accessReviews()->historyDefinitionsById('accessReviewHistoryDefinition-id')->instancesById('accessReviewHistoryInstance-id')->generateDownloadUri()->post();
 
 
 ```

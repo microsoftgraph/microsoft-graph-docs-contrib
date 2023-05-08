@@ -4,40 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Microsoft.Graph.Beta.Me.SendMail.SendMailPostRequestBody
 {
-	Subject = "Meet for lunch?",
-	Body = new ItemBody
+	Message = new Message
 	{
-		ContentType = BodyType.Text,
-		Content = "The new cafeteria is open."
-	},
-	ToRecipients = new List<Recipient>()
-	{
-		new Recipient
+		Subject = "Meet for lunch?",
+		Body = new ItemBody
 		{
-			EmailAddress = new EmailAddress
+			ContentType = BodyType.Text,
+			Content = "The new cafeteria is open.",
+		},
+		ToRecipients = new List<Recipient>
+		{
+			new Recipient
 			{
-				Address = "meganb@contoso.onmicrosoft.com"
-			}
-		}
-	},
-	Attachments = new MessageAttachmentsCollectionPage()
-	{
-		new FileAttachment
+				EmailAddress = new EmailAddress
+				{
+					Address = "meganb@contoso.onmicrosoft.com",
+				},
+			},
+		},
+		Attachments = new List<Attachment>
 		{
-			Name = "attachment.txt",
-			ContentType = "text/plain",
-			ContentBytes = Encoding.ASCII.GetBytes("SGVsbG8gV29ybGQh")
-		}
-	}
+			new Attachment
+			{
+				OdataType = "#microsoft.graph.fileAttachment",
+				Name = "attachment.txt",
+				ContentType = "text/plain",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"contentBytes" , "SGVsbG8gV29ybGQh"
+					},
+				},
+			},
+		},
+	},
 };
+await graphClient.Me.SendMail.PostAsync(requestBody);
 
-await graphClient.Me
-	.SendMail(message,null)
-	.Request()
-	.PostAsync();
 
 ```

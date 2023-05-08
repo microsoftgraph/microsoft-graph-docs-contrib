@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var search = new Microsoft.Graph.Security.EdiscoverySearch
+var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.SecurityAddToReviewSet.AddToReviewSetPostRequestBody
 {
-	Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+	Search = new Microsoft.Graph.Beta.Models.Security.EdiscoverySearch
+	{
+		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
+	},
+	AdditionalDataOptions = Microsoft.Graph.Beta.Models.Security.AdditionalDataOptions.LinkedFiles,
 };
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].SecurityAddToReviewSet.PostAsync(requestBody);
 
-var additionalDataOptions = Microsoft.Graph.Security.AdditionalDataOptions.LinkedFiles;
-
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].ReviewSets["{security.ediscoveryReviewSet-id}"]
-	.AddToReviewSet(search,additionalDataOptions)
-	.Request()
-	.PostAsync();
 
 ```

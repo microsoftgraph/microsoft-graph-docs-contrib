@@ -35,15 +35,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.approvalSettings",
-  "isApprovalRequired": "Boolean",
-  "isApprovalRequiredForExtension": "Boolean",
-  "isRequestorJustificationRequired": "Boolean",
   "approvalMode": "String",
   "approvalStages": [
     {
       "@odata.type": "microsoft.graph.unifiedApprovalStage"
-    }
-  ]
+    }],
+  "isApprovalRequired": "Boolean",
+  "isApprovalRequiredForExtension": "Boolean",
+  "isRequestorJustificationRequired": "Boolean"
 }
 ```
 

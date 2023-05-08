@@ -68,7 +68,7 @@ $contentInfo->setMetadata($metadataArray);
 
 
 $additionalData = [
-'format' => 'default', 
+	'format' => 'default', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -77,15 +77,13 @@ $contentInfo->setAdditionalData($additionalData);
 $requestBody->setContentInfo($contentInfo);
 
 $requestConfiguration = new ExtractContentLabelRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'User-Agent' => 'ContosoLOBApp/1.0',
+	'User-Agent' => 'ContosoLOBApp/1.0',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->extractContentLabel()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityExtractContentLabel()->post($requestBody, $requestConfiguration);
 
 
 ```

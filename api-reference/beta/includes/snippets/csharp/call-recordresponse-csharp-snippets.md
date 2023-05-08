@@ -4,42 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var bargeInAllowed = true;
-
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-var prompts = new List<Prompt>()
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.RecordResponse.RecordResponsePostRequestBody
 {
-	new MediaPrompt
+	BargeInAllowed = true,
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
+	Prompts = new List<Prompt>
 	{
-		MediaInfo = new MediaInfo
+		new Prompt
 		{
-			Uri = "https://cdn.contoso.com/beep.wav",
-			ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-		}
-	}
+			OdataType = "#microsoft.graph.mediaPrompt",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"mediaInfo" , new 
+					{
+						Uri = "https://cdn.contoso.com/beep.wav",
+						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+					}
+				},
+			},
+		},
+	},
+	MaxRecordDurationInSeconds = 10,
+	InitialSilenceTimeoutInSeconds = 5,
+	MaxSilenceTimeoutInSeconds = 2,
+	PlayBeep = true,
+	StopTones = new List<string>
+	{
+		"#",
+		"1",
+		"*",
+	},
 };
+var result = await graphClient.Communications.Calls["{call-id}"].RecordResponse.PostAsync(requestBody);
 
-var maxRecordDurationInSeconds = 10;
-
-var initialSilenceTimeoutInSeconds = 5;
-
-var maxSilenceTimeoutInSeconds = 2;
-
-var playBeep = true;
-
-var stopTones = new List<String>()
-{
-	"#",
-	"1",
-	"*"
-};
-
-await graphClient.Communications.Calls["{call-id}"]
-	.RecordResponse(prompts,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,null,stopTones,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

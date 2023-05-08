@@ -130,9 +130,8 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},  
-  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
-  "myParticipantId": "String",
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "myParticipantId": "String",  
   "replacesContext": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
@@ -140,7 +139,8 @@ The following is a JSON representation of the resource.
   "state": "String",
   "subject": "String",
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"},
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
 }
 ```
 

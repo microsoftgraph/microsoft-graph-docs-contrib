@@ -4,54 +4,62 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workflow = new Microsoft.Graph.IdentityGovernance.Workflow
+var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 {
 	DisplayName = "Onboard pre-hire employee",
 	Description = "Configure pre-hire tasks for onboarding employees before their first day",
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
-	ExecutionConditions = new TriggerAndScopeBasedConditions
+	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
 	{
-		Scope = new RuleBasedSubjectSet
+		OdataType = "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+		AdditionalData = new Dictionary<string, object>
 		{
-			Rule = "(department eq 'Sales')"
+			{
+				"scope" , new 
+				{
+					OdataType = "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+					Rule = "(department eq 'Sales')",
+				}
+			},
+			{
+				"trigger" , new 
+				{
+					OdataType = "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+					TimeBasedAttribute = "employeeHireDate",
+					OffsetInDays = -2,
+				}
+			},
 		},
-		Trigger = new TimeBasedAttributeTrigger
-		{
-			TimeBasedAttribute = Microsoft.Graph.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
-			OffsetInDays = -2
-		}
 	},
-	Tasks = new Microsoft.Graph.IdentityGovernance.WorkflowTasksCollectionPage()
+	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
 	{
-		new Microsoft.Graph.IdentityGovernance.Task
+		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 		{
 			IsEnabled = true,
-			Category = Microsoft.Graph.IdentityGovernance.LifecycleTaskCategory.Joiner,
+			Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleTaskCategory.Joiner,
 			TaskDefinitionId = "1b555e50-7f65-41d5-b514-5894a026d10d",
 			DisplayName = "Generate TAP And Send Email",
 			Description = "Generate Temporary Access Pass and send via email to user's manager",
-			Arguments = new List<KeyValuePair>()
+			Arguments = new List<KeyValuePair>
 			{
 				new KeyValuePair
 				{
 					Name = "tapLifetimeMinutes",
-					Value = "480"
+					Value = "480",
 				},
 				new KeyValuePair
 				{
 					Name = "tapIsUsableOnce",
-					Value = "true"
-				}
-			}
-		}
-	}
+					Value = "true",
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows
-	.Request()
-	.AddAsync(workflow);
 
 ```

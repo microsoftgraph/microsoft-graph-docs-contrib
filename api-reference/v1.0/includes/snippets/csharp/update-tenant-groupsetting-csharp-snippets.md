@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var groupSetting = new GroupSetting
+var requestBody = new GroupSetting
 {
-	Values = new List<SettingValue>()
+	Values = new List<SettingValue>
 	{
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = "false"
-		}
-	}
+			Value = "false",
+		},
+	},
 };
+var result = await graphClient.GroupSettings["{groupSetting-id}"].PatchAsync(requestBody);
 
-await graphClient.GroupSettings["{groupSetting-id}"]
-	.Request()
-	.UpdateAsync(groupSetting);
 
 ```

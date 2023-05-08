@@ -4,7 +4,7 @@ description: "Represents an email address registered to a user. Email as an auth
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # emailAuthenticationMethod resource type
@@ -47,8 +47,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethod",
-  "id": "String (identifier)",
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "id": "String (identifier)"
 }
 ```
 

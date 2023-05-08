@@ -4,30 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contact = new Contact
+var requestBody = new Contact
 {
-	EmailAddresses = new List<TypedEmailAddress>()
+	EmailAddresses = new List<TypedEmailAddress>
 	{
 		new TypedEmailAddress
 		{
 			Type = EmailType.Personal,
 			Name = "Pavel Bansky",
-			Address = "pavelb@adatum.onmicrosoft.com"
+			Address = "pavelb@adatum.onmicrosoft.com",
 		},
 		new TypedEmailAddress
 		{
 			Address = "pavelb@fabrikam.onmicrosoft.com",
 			Name = "Pavel Bansky",
 			Type = EmailType.Other,
-			OtherLabel = "Volunteer work"
-		}
-	}
+			OtherLabel = "Volunteer work",
+		},
+	},
 };
+var result = await graphClient.Me.Contacts["{contact-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Contacts["{contact-id}"]
-	.Request()
-	.UpdateAsync(contact);
 
 ```

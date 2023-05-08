@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var meetingRegistrationQuestion = new MeetingRegistrationQuestion
+var requestBody = new MeetingRegistrationQuestion
 {
 	AnswerInputType = AnswerInputType.RadioButton,
-	AnswerOptions = new List<String>()
+	AnswerOptions = new List<string>
 	{
 		"Software Engineer",
 		"Software Development Manager",
 		"Product Manager",
 		"Data scientist",
-		"Other"
-	}
+		"Other",
+	},
 };
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"]
-	.Request()
-	.UpdateAsync(meetingRegistrationQuestion);
 
 ```

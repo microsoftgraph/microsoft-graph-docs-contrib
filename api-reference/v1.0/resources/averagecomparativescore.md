@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "basis": "String",
-  "averageScore": "Double"
+  "averageScore": "Double",
+  "basis": "String"
 }
 
 ```

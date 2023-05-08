@@ -26,7 +26,7 @@ $transferTargetIdentityUser->setId('550fae72-d251-43ec-868c-373732c2704f');
 $transferTargetIdentityUser->setDisplayName('Heidi Steen');
 
 $additionalData = [
-'tenantId' => '72f988bf-86f1-41af-91ab-2d7cd011db47', 
+		'tenantId' => '72f988bf-86f1-41af-91ab-2d7cd011db47', 
 ];
 $transferTargetIdentityUser->setAdditionalData($additionalData);
 
@@ -38,8 +38,8 @@ $transferTarget->setIdentity($transferTargetIdentity);
 $transferTarget->setReplacesCallId('e5d39592-99bd-4db8-bca8-30fb894ec51d');
 
 $additionalData = [
-'languageId' => 'en-us', 
-'region' => 'amer', 
+		'languageId' => 'en-us', 
+		'region' => 'amer', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 

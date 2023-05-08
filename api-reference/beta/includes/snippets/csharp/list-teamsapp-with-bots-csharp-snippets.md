@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamsApps = await graphClient.AppCatalogs.TeamsApps
-	.Request()
-	.Filter("appDefinitions/any(a:a/bot ne null)")
-	.Expand("appDefinitions($expand=bot)")
-	.GetAsync();
+var result = await graphClient.AppCatalogs.TeamsApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "appDefinitions($expand=bot)" };
+	requestConfiguration.QueryParameters.Filter = "appDefinitions/any";
+});
+
 
 ```

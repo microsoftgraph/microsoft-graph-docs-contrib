@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var connectorGroup = new ConnectorGroup
+var requestBody = new ConnectorGroup
 {
 	Name = "name-value",
-	IsDefault = false
+	IsDefault = false,
 };
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups.PostAsync(requestBody);
 
-await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups
-	.Request()
-	.AddAsync(connectorGroup);
 
 ```

@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var groups = await graphClient.Groups
-	.Request()
-	.Filter("assignedLicenses/any()")
-	.Select("id,assignedLicenses")
-	.GetAsync();
+var result = await graphClient.Groups.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","assignedLicenses" };
+	requestConfiguration.QueryParameters.Filter = "assignedLicenses/any()";
+	requestConfiguration.QueryParameters.Expand = new string []{ "members($select=id,displayName)" };
+});
+
 
 ```

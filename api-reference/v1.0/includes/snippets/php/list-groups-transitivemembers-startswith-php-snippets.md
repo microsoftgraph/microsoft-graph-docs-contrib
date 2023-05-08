@@ -10,21 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UserRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'a')";
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = UserRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$queryParameters->orderby = ["displayName"];
+$queryParameters->filter = "startswith(displayName,%20'a')";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groupsById('group-id')->transitiveMembers()->user()->get($requestConfiguration);
+
+$result = $graphServiceClient->groupsById('group-id')->transitiveMembers()->graphUser()->get($requestConfiguration);
 
 
 ```

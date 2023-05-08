@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageResourceEnvironments = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceEnvironments
-	.Request()
-	.Filter("originSystem eq 'SharePointOnline'")
-	.GetAsync();
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceEnvironments.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "originSystem eq 'SharePointOnline'";
+});
+
 
 ```

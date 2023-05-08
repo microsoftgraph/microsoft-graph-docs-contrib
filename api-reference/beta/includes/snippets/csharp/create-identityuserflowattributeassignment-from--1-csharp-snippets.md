@@ -4,25 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment
+var requestBody = new IdentityUserFlowAttributeAssignment
 {
 	IsOptional = false,
 	RequiresVerification = false,
 	UserInputType = IdentityUserFlowAttributeInputType.TextBox,
 	DisplayName = "Shoe size",
-	UserAttributeValues = new List<UserAttributeValuesItem>()
+	UserAttributeValues = new List<UserAttributeValuesItem>
 	{
 	},
 	UserAttribute = new IdentityUserFlowAttribute
 	{
-		Id = "extension_guid_shoeSize"
-	}
+		Id = "extension_guid_shoeSize",
+	},
 };
+var result = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments.PostAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments
-	.Request()
-	.AddAsync(identityUserFlowAttributeAssignment);
 
 ```

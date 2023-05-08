@@ -50,20 +50,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  "b2bCollaborationInbound": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
   "b2bCollaborationOutbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
-  "b2bCollaborationInbound": {
+  "b2bDirectConnectInbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
   "b2bDirectConnectOutbound": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
   },
-  "b2bDirectConnectInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+  "inboundTrust": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },
   "isServiceDefault": "Boolean"
 }

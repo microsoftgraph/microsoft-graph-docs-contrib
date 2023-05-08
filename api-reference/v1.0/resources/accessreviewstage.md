@@ -52,20 +52,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewStage",
-  "id": "String (identifier)",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "status": "String",
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "id": "String (identifier)",
   "reviewers": [
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
   ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
-  ]
+  "startDateTime": "String (timestamp)",
+  
+  "status": "String"
+  
 }
 ```
 

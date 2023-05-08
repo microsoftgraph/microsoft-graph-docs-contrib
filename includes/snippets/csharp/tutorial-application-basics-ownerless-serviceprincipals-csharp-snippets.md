@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.ServicePrincipals.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Filter = "owners/$count eq 0 or owners/$count eq 1";
+	requestConfiguration.QueryParameters.Count = true;
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var servicePrincipals = await graphClient.ServicePrincipals
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Filter("owners/$count eq 0 or owners/$count eq 1")
-	.GetAsync();
 
 ```

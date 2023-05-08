@@ -15,14 +15,14 @@ $requestBody->set@odatatype('#microsoft.graph.aadUserConversationMember');
 $requestBody->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->members()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->members()->post($requestBody);
 
 
 ```

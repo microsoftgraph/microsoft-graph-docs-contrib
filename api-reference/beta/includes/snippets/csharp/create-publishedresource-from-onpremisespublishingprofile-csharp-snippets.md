@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var publishedResource = new PublishedResource
+var requestBody = new PublishedResource
 {
 	DisplayName = "New provisioning",
-	ResourceName = "domain1.contoso.com"
+	ResourceName = "domain1.contoso.com",
 };
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources.PostAsync(requestBody);
 
-await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources
-	.Request()
-	.AddAsync(publishedResource);
 
 ```

@@ -4,22 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var conversationMember = new AadUserConversationMember
+var requestBody = new ConversationMember
 {
-	Roles = new List<String>()
+	OdataType = "#microsoft.graph.aadUserConversationMember",
+	Roles = new List<string>
 	{
-		"owner"
+		"owner",
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
-	}
+		{
+			"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Members.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Members
-	.Request()
-	.AddAsync(conversationMember);
 
 ```

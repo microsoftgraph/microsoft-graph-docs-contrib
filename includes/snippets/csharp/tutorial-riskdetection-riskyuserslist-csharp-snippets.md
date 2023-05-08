@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var riskyUsers = await graphClient.IdentityProtection.RiskyUsers
-	.Request()
-	.Filter("userDisplayName eq 'MyTestUser1'")
-	.GetAsync();
+var result = await graphClient.IdentityProtection.RiskyUsers.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "userDisplayName eq 'MyTestUser1'";
+});
+
 
 ```

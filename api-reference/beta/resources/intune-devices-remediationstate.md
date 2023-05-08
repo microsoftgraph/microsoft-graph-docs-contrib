@@ -25,3 +25,4 @@ Indicates the type of execution status of the device management script.
 |success|2|Remediation script executed successfully and remediated the device state|
 |remediationFailed|3|Remediation script executed successfully but failed to remediated the device state|
 |scriptError|4|Remediation script execution encountered and error or timed out|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|

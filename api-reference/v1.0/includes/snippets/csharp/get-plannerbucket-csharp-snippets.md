@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerBucket = await graphClient.Planner.Buckets["{plannerBucket-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Planner.Buckets["{plannerBucket-id}"].GetAsync();
+
 
 ```

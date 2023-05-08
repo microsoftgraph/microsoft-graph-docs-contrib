@@ -4,27 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var unifiedRoleDefinition = new UnifiedRoleDefinition
+var requestBody = new UnifiedRoleDefinition
 {
 	Description = "Update basic properties of application registrations",
 	DisplayName = "Application Registration Support Administrator",
-	RolePermissions = new List<UnifiedRolePermission>()
+	RolePermissions = new List<UnifiedRolePermission>
 	{
 		new UnifiedRolePermission
 		{
-			AllowedResourceActions = new List<String>()
+			AllowedResourceActions = new List<string>
 			{
-				"microsoft.directory/applications/basic/read"
-			}
-		}
+				"microsoft.directory/applications/basic/read",
+			},
+		},
 	},
-	IsEnabled = true
+	IsEnabled = true,
 };
+var result = await graphClient.RoleManagement.Directory.RoleDefinitions.PostAsync(requestBody);
 
-await graphClient.RoleManagement.Directory.RoleDefinitions
-	.Request()
-	.AddAsync(unifiedRoleDefinition);
 
 ```

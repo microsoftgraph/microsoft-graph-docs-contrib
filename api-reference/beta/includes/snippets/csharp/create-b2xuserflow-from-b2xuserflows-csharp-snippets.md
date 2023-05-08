@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2xIdentityUserFlow = new B2xIdentityUserFlow
+var requestBody = new B2xIdentityUserFlow
 {
 	Id = "Partner",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
-	UserFlowTypeVersion = 1f
+	UserFlowTypeVersion = 1f,
 };
+var result = await graphClient.Identity.B2xUserFlows.PostAsync(requestBody);
 
-await graphClient.Identity.B2xUserFlows
-	.Request()
-	.AddAsync(b2xIdentityUserFlow);
 
 ```

@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
+var requestBody = new AccessPackageAssignmentPolicy
 {
 	Id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
 	AccessPackageId = "4c02f928-7752-49aa-8fc8-e286d973a965",
@@ -19,9 +19,9 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	{
 		ScopeType = "AllExistingConnectedOrganizationSubjects",
 		AcceptRequests = true,
-		AllowedRequestors = new List<UserSet>()
+		AllowedRequestors = new List<UserSet>
 		{
-		}
+		},
 	},
 	RequestApprovalSettings = new ApprovalSettings
 	{
@@ -29,7 +29,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 		IsApprovalRequiredForExtension = false,
 		IsRequestorJustificationRequired = true,
 		ApprovalMode = "SingleStage",
-		ApprovalStages = new List<ApprovalStage>()
+		ApprovalStages = new List<ApprovalStage>
 		{
 			new ApprovalStage
 			{
@@ -37,96 +37,117 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				IsApproverJustificationRequired = true,
 				IsEscalationEnabled = false,
 				EscalationTimeInMinutes = 11520,
-				PrimaryApprovers = new List<UserSet>()
+				PrimaryApprovers = new List<UserSet>
 				{
-					new GroupMembers
+					new UserSet
 					{
+						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						Id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
-						Description = "group for users from connected organizations which have no external sponsor"
+						AdditionalData = new Dictionary<string, object>
+						{
+							{
+								"id" , "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
+							},
+							{
+								"description" , "group for users from connected organizations which have no external sponsor"
+							},
+						},
 					},
-					new ExternalSponsors
+					new UserSet
 					{
-						IsBackup = false
-					}
-				}
-			}
-		}
+						OdataType = "#microsoft.graph.externalSponsors",
+						IsBackup = false,
+					},
+				},
+			},
+		},
 	},
-	Questions = new List<AccessPackageQuestion>()
+	Questions = new List<AccessPackageQuestion>
 	{
-		new AccessPackageMultipleChoiceQuestion
+		new AccessPackageQuestion
 		{
 			IsRequired = false,
 			Text = new AccessPackageLocalizedContent
 			{
 				DefaultText = "what state are you from?",
-				LocalizedTexts = new List<AccessPackageLocalizedText>()
+				LocalizedTexts = new List<AccessPackageLocalizedText>
 				{
 					new AccessPackageLocalizedText
 					{
 						Text = "¿De qué estado eres?",
-						LanguageCode = "es"
-					}
-				}
+						LanguageCode = "es",
+					},
+				},
 			},
-			Choices = new List<AccessPackageAnswerChoice>()
+			OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+			AdditionalData = new Dictionary<string, object>
 			{
-				new AccessPackageAnswerChoice
 				{
-					ActualValue = "AZ",
-					DisplayValue = new AccessPackageLocalizedContent
+					"choices" , new List<>
 					{
-						LocalizedTexts = new List<AccessPackageLocalizedText>()
+						new 
 						{
-							new AccessPackageLocalizedText
+							ActualValue = "AZ",
+							DisplayValue = new 
 							{
-								Text = "Arizona",
-								LanguageCode = "es"
-							}
-						}
+								LocalizedTexts = new List<>
+								{
+									new 
+									{
+										Text = "Arizona",
+										LanguageCode = "es",
+									},
+								},
+							},
+						},
+						new 
+						{
+							ActualValue = "CA",
+							DisplayValue = new 
+							{
+								LocalizedTexts = new List<>
+								{
+									new 
+									{
+										Text = "California",
+										LanguageCode = "es",
+									},
+								},
+							},
+						},
 					}
 				},
-				new AccessPackageAnswerChoice
 				{
-					ActualValue = "CA",
-					DisplayValue = new AccessPackageLocalizedContent
-					{
-						LocalizedTexts = new List<AccessPackageLocalizedText>()
-						{
-							new AccessPackageLocalizedText
-							{
-								Text = "California",
-								LanguageCode = "es"
-							}
-						}
-					}
-				}
+					"allowsMultipleSelection" , false
+				},
 			},
-			AllowsMultipleSelection = false
 		},
-		new AccessPackageTextInputQuestion
+		new AccessPackageQuestion
 		{
 			IsRequired = false,
 			Text = new AccessPackageLocalizedContent
 			{
 				DefaultText = "Who is your manager?",
-				LocalizedTexts = new List<AccessPackageLocalizedText>()
+				LocalizedTexts = new List<AccessPackageLocalizedText>
 				{
 					new AccessPackageLocalizedText
 					{
 						Text = "por qué necesita acceso a este paquete",
-						LanguageCode = "es"
-					}
-				}
+						LanguageCode = "es",
+					},
+				},
 			},
-			IsSingleLineQuestion = false
-		}
-	}
+			OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"isSingleLineQuestion" , false
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"].PutAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"]
-	.Request()
-	.PutAsync(accessPackageAssignmentPolicy);
 
 ```

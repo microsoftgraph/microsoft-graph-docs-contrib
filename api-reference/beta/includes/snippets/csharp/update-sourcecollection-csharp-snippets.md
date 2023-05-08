@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var sourceCollection = new Microsoft.Graph.Ediscovery.SourceCollection
+var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.SourceCollection
 {
-	DisplayName = "Quarterly Financials search"
+	DisplayName = "Quarterly Financials search",
 };
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].SourceCollections["{sourceCollection-id}"].PatchAsync(requestBody);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].SourceCollections["{ediscovery.sourceCollection-id}"]
-	.Request()
-	.UpdateAsync(sourceCollection);
 
 ```

@@ -4,33 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var driveItem = new DriveItem
+var requestBody = new DriveItem
 {
 	Name = "Just some files",
 	Bundle = new Bundle
 	{
 	},
-	Children = new DriveItemChildrenCollectionPage()
+	Children = new List<DriveItem>
 	{
 		new DriveItem
 		{
-			Id = "1234asdf"
+			Id = "1234asdf",
 		},
 		new DriveItem
 		{
-			Id = "1234qwerty"
-		}
+			Id = "1234qwerty",
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@microsoft.graph.conflictBehavior", "rename"}
-	}
+		{
+			"@microsoft.graph.conflictBehavior" , "rename"
+		},
+	},
 };
+var result = await graphClient.Drives["{drive-id}"].Bundles.PostAsync(requestBody);
 
-await graphClient.Drive.Bundles
-	.Request()
-	.AddAsync(driveItem);
 
 ```

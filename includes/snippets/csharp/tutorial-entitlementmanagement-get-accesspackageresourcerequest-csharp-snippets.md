@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessPackageResourceRequest = new AccessPackageResourceRequestObject
+var requestBody = new AccessPackageResourceRequest
 {
 	CatalogId = "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
 	RequestType = "AdminAdd",
@@ -17,12 +17,10 @@ var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 		Description = "Marketing group",
 		ResourceType = "AadGroup",
 		OriginId = "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-		OriginSystem = "AadGroup"
-	}
+		OriginSystem = "AadGroup",
+	},
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests
-	.Request()
-	.AddAsync(accessPackageResourceRequest);
 
 ```

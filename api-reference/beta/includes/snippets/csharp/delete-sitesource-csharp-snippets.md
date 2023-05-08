@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"].SiteSources["{ediscovery.siteSource-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].SiteSources["{siteSource-id}"].DeleteAsync();
+
 
 ```

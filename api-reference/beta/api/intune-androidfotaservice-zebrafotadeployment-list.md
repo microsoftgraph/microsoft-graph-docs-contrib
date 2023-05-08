@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2310
+Content-Length: 2369
 
 {
   "value": [
@@ -102,6 +102,7 @@ Content-Length: 2310
       "deploymentStatus": {
         "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
         "state": "createFailed",
+        "errorCode": "noDevicesFoundInSelectedAadGroups",
         "totalDevices": 12,
         "totalCreated": 12,
         "totalScheduled": 14,

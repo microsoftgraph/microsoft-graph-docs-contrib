@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var secureScore = await graphClient.Security.SecureScores["{secureScore-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Security.SecureScores["{secureScore-id}"].GetAsync();
+
 
 ```

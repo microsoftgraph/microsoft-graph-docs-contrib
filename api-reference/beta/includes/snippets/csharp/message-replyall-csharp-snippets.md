@@ -4,25 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var message = new Message
+var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.ReplyAll.ReplyAllPostRequestBody
 {
-	Attachments = new MessageAttachmentsCollectionPage()
+	Message = new Message
 	{
-		new FileAttachment
+		Attachments = new List<Attachment>
 		{
-			Name = "guidelines.txt",
-			ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
-		}
-	}
+			new Attachment
+			{
+				OdataType = "#microsoft.graph.fileAttachment",
+				Name = "guidelines.txt",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"contentBytes" , "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+					},
+				},
+			},
+		},
+	},
+	Comment = "Please take a look at the attached guidelines before you decide on the name.",
 };
+await graphClient.Me.Messages["{message-id}"].ReplyAll.PostAsync(requestBody);
 
-var comment = "Please take a look at the attached guidelines before you decide on the name.";
-
-await graphClient.Me.Messages["{message-id}"]
-	.ReplyAll(message,comment)
-	.Request()
-	.PostAsync();
 
 ```
