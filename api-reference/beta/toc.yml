@@ -12305,13 +12305,13 @@ items:
             href: api/mobileappmanagementpolicies-post-includedgroups.md
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
-          - name: Company Subscriptions
-            href: resources/companySubscriptions.md
+          - name: Company subscriptions
+            href: resources/companysubscriptions.md
             items:
             - name: List companySubscriptions
-              href: api/companySubscriptions-list.md
+              href: api/companysubscriptions-list.md
             - name: Get companySubscriptions
-              href: api/companySubscriptions-get.md
+              href: api/companysubscriptions-get.md
         - name: Role management
           displayName: Unified RBAC
           href: resources/rolemanagement.md
