@@ -17,7 +17,7 @@ A representation of a phone registered to a user. This resource includes the pho
 
 A phone has one of three types: mobile, alternate mobile, or office. A user can have one number registered for each type, and must have a mobile phone before an alternate mobile phone is added. When using a phone for multi-factor authentication (MFA) or self-service password reset (SSPR), the mobile phone is the default and the alternate mobile phone is the backup. 
 
-Mobile phones can be used for both SMS and voice calls, depending on the tenant settings.
+Primary mobile phones can be used for both SMS and voice calls, depending on the tenant settings.
 
 An office phone can only receive voice calls, not SMS messages.
 
@@ -51,7 +51,7 @@ Phones can be of three types, the following are the possible values.
 |Value|Description|
 |--------|-----------|
 |mobile|A primary mobile phone, usable for SMS and voice calls.|
-|alternateMobile|An alternate or backup mobile phone, usable for SMS and voice calls.|
+|alternateMobile|An alternate or backup mobile phone, usable only for voice calls.|
 |office|An office phone or landline, usable only for voice calls.|
 
 ### authenticationMethodSignInState values

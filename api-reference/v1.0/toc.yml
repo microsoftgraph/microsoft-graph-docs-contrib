@@ -7626,6 +7626,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items:
+          - name: Sharepoint settings
+            href: resources/sharepointSettings.md
+          - name: Get
+            href: api/sharepointSettings-get.md
+          - name: Update
+            href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:

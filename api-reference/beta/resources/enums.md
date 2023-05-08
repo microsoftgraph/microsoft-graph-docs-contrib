@@ -150,7 +150,7 @@ Namespace: microsoft.graph
 | serviceProvider        |
 | unknownFutureValue     |
 
-### teamTemplateAudience values 
+### teamTemplateAudience values
 
 | Member             |
 | :----------------- |
@@ -2769,6 +2769,566 @@ Possible values for user account types (group membership), per Windows definitio
 | external             |
 
 ### externalGroupMemberType values
+
+| Member             |
+| :----------------- |
+| unknown            |
+| connected          |
+| disconnected       |
+| unknownFutureValue |
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
+
+### identityUserFlowAttributeInputType values
+
+| Member               |
+| :------------------- |
+| textBox              |
+| dateTimeDropDown     |
+| radioSingleSelect    |
+| dropdownSingleSelect |
+| emailBox             |
+| checkboxMultiSelect  |
+
+### teamworkActivityTopicSource values
+
+| Member
+|:---
+| entityUrl
+| text
+
+### cloudPcProvisioningPolicyImageType values
+
+| Member  |
+| :------ |
+| custom  |
+| gallery |
+
+### chatType values
+
+| Member             | Value | Description                                                                                                                                                        |
+| :----------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| oneOnOne           | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member cannot be removed / added.                                       |
+| group              | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on. |
+| meeting            | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.                                                      |
+| unknownFutureValue | 3     | Sentinel value to indicate future values.                                                                                                                          |
+
+### singleSignOnMode values
+
+| Member             |
+| :----------------- |
+| none               |
+| onPremisesKerberos |
+| aadHeaderBased     |
+| pingHeaderBased    |
+
+### plannerContainerType values
+
+| Member             |
+| :----------------- |
+| group              |
+| unknownFutureValue |
+| roster             |
+| project            |
+
+### plannerPlanContextType values
+
+| Member             |
+| :----------------- |
+| teamsTab           |
+| sharePointPage     |
+| meetingNotes       |
+| other              |
+| unknownFutureValue |
+
+### plannerContextState values
+
+| Member             |
+| :----------------- |
+| active             |
+| delinked           |
+| unknownFutureValue |
+
+### plannerExternalTaskSourceDisplayType values
+
+| Member             |
+| :----------------- |
+| none               |
+| default            |
+| unknownFutureValue |
+
+### plannerCreationSourceKind values
+
+| Member             |
+| :----------------- |
+| none               |
+| external           |
+| publication        |
+| unknownFutureValue |
+
+### policyScope values
+
+| Member   |
+| :------- |
+| none     |
+| all      |
+| selected |
+
+### teamsAppInstallationScope values
+
+| Member    | Value | Description                                                                                                                 |
+| :-------- | :---- | :-------------------------------------------------------------------------------------------------------------------------- |
+| team      | 0     | Indicates that the Teams app can be installed within a team and is authorized to access that team's data.                   |
+| groupChat | 1     | Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.       |
+| personal  | 2     | Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
+
+### assignmentScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### eligibilityScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### privilegedAccessGroupAssignmentType values
+
+| Member             |
+| :----------------- |
+| assigned           |
+| activated          |
+| unknownFutureValue |
+
+### privilegedAccessGroupMemberType values
+
+| Member             |
+| :----------------- |
+| direct             |
+| group              |
+| unknownFutureValue |
+
+### privilegedAccessGroupRelationships values
+
+| Member             |
+| :----------------- |
+| owner              |
+| member             |
+| unknownFutureValue |
+
+
+
+### scheduleRequestActions values
+
+| Member             |
+| :----------------- |
+| adminAssign        |
+| adminUpdate        |
+| adminRemove        |
+| selfActivate       |
+| selfDeactivate     |
+| adminExtend        |
+| adminRenew         |
+| selfExtend         |
+| selfRenew          |
+| unknownFutureValue |
+
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### cloudPcAuditActivityOperationType values
+
+| Member |
+| :----- |
+| create |
+| delete |
+| patch  |
+| other  |
+
+### cloudPcAuditActivityResult values
+
+| Member      |
+| :---------- |
+| success     |
+| clientError |
+| failure     |
+| timeout     |
+| other       |
+
+### cloudPcAuditActorType values
+
+| Member      |
+| :---------- |
+| itPro       |
+| application |
+| partner     |
+| unknown     |
+
+### cloudPcAuditCategory values
+
+| Member  |
+| :------ |
+| cloudPC |
+| other   |
+
+### postType values
+
+| Member             |
+| :----------------- |
+| regular            |
+| quick              |
+| strategic          |
+| unknownFutureValue |
+
+### serviceHealthClassificationType values
+
+| Member             |
+| :----------------- |
+| advisory           |
+| incident           |
+| unknownFutureValue |
+
+### serviceHealthOrigin values
+
+| Member             |
+| :----------------- |
+| microsoft          |
+| thirdParty         |
+| customer           |
+| unknownFutureValue |
+
+### serviceHealthStatus values
+
+| Member                      |
+| :-------------------------- |
+| serviceOperational          |
+| investigating               |
+| restoringService            |
+| verifyingService            |
+| serviceRestored             |
+| postIncidentReviewPublished |
+| serviceDegradation          |
+| serviceInterruption         |
+| extendedRecovery            |
+| falsePositive               |
+| investigationSuspended      |
+| resolved                    |
+| mitigatedExternal           |
+| mitigated                   |
+| resolvedExternal            |
+| confirmed                   |
+| reported                    |
+| unknownFutureValue          |
+
+### serviceUpdateCategory values
+
+| Member             |
+| :----------------- |
+| preventOrFixIssue  |
+| planForChange      |
+| stayInformed       |
+| unknownFutureValue |
+
+### serviceUpdateSeverity values
+
+| Member             |
+| :----------------- |
+| normal             |
+| high               |
+| critical           |
+| unknownFutureValue |
+
+### teamworkApplicationIdentityType values
+
+| Member             |
+| :----------------- |
+| aadApplication     |
+| bot                |
+| tenantBot          |
+| office365Connector |
+| outgoingWebhook    |
+| unknownFutureValue |
+
+### teamworkConversationIdentityType values
+
+| Member             |
+| :----------------- |
+| team               |
+| channel            |
+| chat               |
+| unknownFutureValue |
+
+### teamworkUserIdentityType values
+
+| Member                         |
+| :----------------------------- |
+| aadUser                        |
+| onPremiseAadUser               |
+| anonymousGuest                 |
+| federatedUser                  |
+| personalMicrosoftAccountUser   |
+| skypeUser                      |
+| phoneUser                      |
+| unknownFutureValue             |
+| emailUser                      |
+| azureCommunicationServicesUser |
+
+### callRecordingStatus values
+
+| Member             |
+| :----------------- |
+| success            |
+| failure            |
+| initial            |
+| chunkFinished      |
+| unknownFutureValue |
+
+### payloadDeliveryPlatform values
+
+| Member             |
+| :----------------- |
+| unknown            |
+| sms                |
+| email              |
+| teams              |
+| unknownFutureValue |
+
+### trainingStatus values
+
+| Member             |
+| :----------------- |
+| unknown            |
+| assigned           |
+| inProgress         |
+| completed          |
+| overdue            |
+| unknownFutureValue |
+
+### teamworkCallEventType values
+
+| Member             |
+| :----------------- |
+| call               |
+| meeting            |
+| screenShare        |
+| unknownFutureValue |
+
+### binaryOperator values 
+
+| Member |
+| :----- |
+| or     |
+| and    |
+
+### subjectRightsRequestStage values 
+
+| Member             |
+| :----------------- |
+| contentRetrieval   |
+| contentReview      |
+| generateReport     |
+| contentDeletion    |
+| caseResolved       |
+| unknownFutureValue |
+
+### subjectRightsRequestStageStatus values 
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| current            |
+| completed          |
+| failed             |
+| unknownFutureValue |
+
+### subjectRightsRequestStatus values 
+
+| Member             |
+| :----------------- |
+| active             |
+| closed             |
+| unknownFutureValue |
+
+### subjectRightsRequestType values 
+
+| Member             |
+| :----------------- |
+| export             |
+| delete             |
+| access             |
+| tagForAction       |
+| unknownFutureValue |
+
+### dataSubjectType values 
+
+| Member              |
+| :------------------ |
+| customer            |
+| currentEmployee     |
+| formerEmployee      |
+| prospectiveEmployee |
+| student             |
+| teacher             |
+| faculty             |
+| other               |
+| unknownFutureValue  |
+
+### answerInputType values
+
+| Member             | Value | Description         |
+| :----------------- | :---- | :------------------ |
+| text               | 0     | Text.               |
+| radioButton        | 1     | RadioButton.        |
+| unknownFutureValue | 2     | UnknownFutureValue. |
+
+### taskStatus_v2 values
+
+| Member             |
+| :----------------- |
+| notStarted         |
+| inProgress         |
+| completed          |
+| unknownFutureValue |
+
+
+### wellKnownListName_v2 values
+
+| Member             |
+| :----------------- |
+| none               |
+| defaultList        |
+| flaggedEmail       |
+| unknownFutureValue |
+
+### bookingPriceType values
+
+| Member             |
+| :----------------- |
+| undefined          |
+| fixedPrice         |
+| startingAt         |
+| hourly             |
+| free               |
+| priceVaries        |
+| callUs             |
+| notSet             |
+| unknownFutureValue |
+
+### bookingStaffRole values 
+
+| Member             |
+| :----------------- |
+| guest              |
+| administrator      |
+| viewer             |
+| externalGuest      |
+| unknownFutureValue |
+| scheduler          |
+| teamMember         |
+
+### bookingReminderRecipients values 
+
+| Member             |
+| :----------------- |
+| allAttendees       |
+| staff              |
+| customer           |
+| unknownFutureValue |
+
+### teamworkConnectionStatus values
 
 | Member             |
 | :----------------- |
