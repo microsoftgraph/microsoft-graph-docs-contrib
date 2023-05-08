@@ -17,7 +17,7 @@ $assignmentsCloudPcUserSettingAssignment1Target = new CloudPcManagementAssignmen
 $assignmentsCloudPcUserSettingAssignment1Target->set@odatatype('microsoft.graph.cloudPcManagementGroupAssignmentTarget');
 
 $additionalData = [
-'groupId' => '64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
+		'groupId' => '64ff06de-9c00-4a5a-98b5-7f5abe26ffff', 
 ];
 $assignmentsCloudPcUserSettingAssignment1Target->setAdditionalData($additionalData);
 

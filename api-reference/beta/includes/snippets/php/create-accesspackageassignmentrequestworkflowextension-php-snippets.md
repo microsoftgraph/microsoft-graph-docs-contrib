@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CustomCalloutExtension();
 $additionalData = [
-'value' => $requestBody = new Value();
+		'value' => $requestBody = new Value();
 $		requestBody->set@odatatype('#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension');
 
 $		requestBody->setDisplayName('test_action_0124_email');
@@ -50,7 +50,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageCustomWorkflowExtensions()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->accessPackageCustomWorkflowExtensions()->post($requestBody);
 
 
 ```

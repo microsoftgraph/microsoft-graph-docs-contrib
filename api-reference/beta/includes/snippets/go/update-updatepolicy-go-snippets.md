@@ -29,7 +29,7 @@ schedule.SetGradualRollout(gradualRollout)
 deploymentSettings.SetSchedule(schedule)
 requestBody.SetDeploymentSettings(deploymentSettings)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePoliciesById("updatePolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicieId("updatePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

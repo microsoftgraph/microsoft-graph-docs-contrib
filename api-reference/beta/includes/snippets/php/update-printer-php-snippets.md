@@ -23,7 +23,7 @@ $location->setAltitudeInMeters(3);
 $requestBody->setLocation($location);
 
 
-$requestResult = $graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
+$result = $graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
 
 
 ```

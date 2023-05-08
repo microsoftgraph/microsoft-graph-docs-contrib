@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Education().SchoolsById("educationSchool-id").Delete(context.Background(), nil)
+graphClient.Education().Schools().BySchoolId("educationSchool-id").Delete(context.Background(), nil)
 
 
 ```

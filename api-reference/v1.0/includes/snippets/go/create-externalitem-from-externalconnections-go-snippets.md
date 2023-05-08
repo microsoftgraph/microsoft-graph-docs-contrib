@@ -54,7 +54,7 @@ type := graphmodels.TEXT_EXTERNALITEMCONTENTTYPE
 content.SetType(&type) 
 requestBody.SetContent(content)
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Put(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

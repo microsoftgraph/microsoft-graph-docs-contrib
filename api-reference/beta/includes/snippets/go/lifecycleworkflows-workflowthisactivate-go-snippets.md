@@ -32,7 +32,7 @@ subjects := []graphmodels.Objectable {
 }
 requestBody.SetSubjects(subjects)
 
-graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").IdentityGovernanceActivate().Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").IdentityGovernanceActivate().Post(context.Background(), requestBody, nil)
 
 
 ```

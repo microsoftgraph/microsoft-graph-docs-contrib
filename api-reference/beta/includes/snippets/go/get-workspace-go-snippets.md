@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.PlacesById("place-id").Get(context.Background(), nil)
+graphClient.Places().ByPlaceId("place-id").Get(context.Background(), nil)
 
 
 ```

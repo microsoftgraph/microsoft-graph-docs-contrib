@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.ChatsById("chat-id").InstalledAppsById("teamsAppInstallation-id").Get(context.Background(), nil)
+result, err := graphClient.Chats().ByChatId("chat-id").InstalledApps().ByInstalledAppId("teamsAppInstallation-id").Get(context.Background(), nil)
 
 
 ```

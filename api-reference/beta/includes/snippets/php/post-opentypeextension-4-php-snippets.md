@@ -22,10 +22,10 @@ $extensionsExtension1 = new Extension();
 $extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
 
 $additionalData = [
-'extensionName' => 'Com.Contoso.HR', 
-'companyName' => 'Contoso', 
-'expirationDate' => '2015-07-03T13:04:00.000Z', 
-'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
+		'extensionName' => 'Com.Contoso.HR', 
+		'companyName' => 'Contoso', 
+		'expirationDate' => '2015-07-03T13:04:00.000Z', 
+		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
 ];
 $extensionsExtension1->setAdditionalData($additionalData);
 

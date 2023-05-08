@@ -19,7 +19,7 @@ requestBody := graphmodels.NewForceDeletePostRequestBody()
 disableUserAccounts := true
 requestBody.SetDisableUserAccounts(&disableUserAccounts) 
 
-graphClient.DomainsById("domain-id").ForceDelete().Post(context.Background(), requestBody, nil)
+graphClient.Domains().ByDomainId("domain-id").ForceDelete().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -32,7 +32,7 @@ $requestBody->setSubnetId('/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/r
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->patch($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->patch($requestBody);
 
 
 ```

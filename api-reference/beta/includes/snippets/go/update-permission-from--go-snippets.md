@@ -22,7 +22,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.SitesById("site-id").PermissionsById("permission-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").Permissions().ByPermissionId("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

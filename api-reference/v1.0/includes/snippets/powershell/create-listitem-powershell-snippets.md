@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Fields = @{
+	fields = @{
 		Title = "Widget"
 		Color = "Purple"
 		Weight = 

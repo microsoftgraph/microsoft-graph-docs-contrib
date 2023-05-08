@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	UserId = "userId-value"
-	RoleId = "roleId-value"
+	userId = "userId-value"
+	roleId = "roleId-value"
 }
 
 New-MgPrivilegedRoleAssignment -BodyParameter $params

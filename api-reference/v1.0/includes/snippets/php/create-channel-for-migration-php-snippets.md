@@ -17,14 +17,14 @@ $requestBody->setDescription('Import_150958_99z');
 $requestBody->setCreatedDateTime(new DateTime('2020-03-14T11:22:17.067Z'));
 
 $additionalData = [
-'@microsoft.graph.channelCreationMode' => 'migration', 
+		'@microsoft.graph.channelCreationMode' => 'migration', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channels()->post($requestBody);
 
 
 ```

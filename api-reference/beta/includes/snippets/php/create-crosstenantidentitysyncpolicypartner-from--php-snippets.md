@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new IdentitySynchronizationPutRequestBody();
 $additionalData = [
-'displayName' => 'Fabrikam', 
-'userSyncInbound' => $requestBody = new UserSyncInbound();
+		'displayName' => 'Fabrikam', 
+		'userSyncInbound' => $requestBody = new UserSyncInbound();
 		$requestBody->setIsSyncAllowed(true);
 
 

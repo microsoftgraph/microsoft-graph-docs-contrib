@@ -28,7 +28,7 @@ requestBody := graphmodels.NewPlannerProgressTaskBoardTaskFormat()
 orderHint := "A6673H Ejkl!"
 requestBody.SetOrderHint(&orderHint) 
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").ProgressTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").ProgressTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

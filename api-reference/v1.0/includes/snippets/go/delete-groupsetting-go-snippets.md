@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.GroupSettingsById("groupSetting-id").Delete(context.Background(), nil)
+graphClient.GroupSettings().ByGroupSettingId("groupSetting-id").Delete(context.Background(), nil)
 
 
 ```

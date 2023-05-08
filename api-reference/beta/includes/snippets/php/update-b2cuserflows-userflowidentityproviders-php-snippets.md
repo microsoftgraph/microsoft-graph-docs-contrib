@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UserFlowIdentityProvider();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/{id}', 
-'@odata.type' => '#microsoft.graph.identityProvider', 
+		'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/{id}', 
+		'@odata.type' => '#microsoft.graph.identityProvider', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

@@ -4,36 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var list = new List
+var requestBody = new List
 {
 	DisplayName = "Books",
-	Columns = new ListColumnsCollectionPage()
+	Columns = new List<ColumnDefinition>
 	{
 		new ColumnDefinition
 		{
 			Name = "Author",
 			Text = new TextColumn
 			{
-			}
+			},
 		},
 		new ColumnDefinition
 		{
 			Name = "PageCount",
 			Number = new NumberColumn
 			{
-			}
-		}
+			},
+		},
 	},
-	ListInfo = new ListInfo
+	List = new ListInfo
 	{
-		Template = "genericList"
-	}
+		Template = "genericList",
+	},
 };
+var result = await graphClient.Sites["{site-id}"].Lists.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Lists
-	.Request()
-	.AddAsync(list);
 
 ```

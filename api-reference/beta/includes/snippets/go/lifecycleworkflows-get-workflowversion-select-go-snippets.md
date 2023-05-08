@@ -23,7 +23,7 @@ configuration := &graphconfig.IdentityGovernanceLifecycleWorkflowsWorkflowItemVe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").VersionsById("workflowVersion-versionNumber").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Versions().ByVersionId("workflowVersion-versionNumber").Get(context.Background(), configuration)
 
 
 ```

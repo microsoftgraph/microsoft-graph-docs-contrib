@@ -62,7 +62,7 @@ isRetrievable := "true"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Post(context.Background(), requestBody, nil)
+graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Post(context.Background(), requestBody, nil)
 
 
 ```

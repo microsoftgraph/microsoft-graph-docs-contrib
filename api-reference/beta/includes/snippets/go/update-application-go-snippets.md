@@ -19,7 +19,7 @@ requestBody := graphmodels.NewApplication()
 displayName := "New display name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

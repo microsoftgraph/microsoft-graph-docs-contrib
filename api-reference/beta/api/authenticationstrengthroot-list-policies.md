@@ -1,7 +1,7 @@
 ---
 title: "List authenticationStrengthPolicies"
 description: "Get a list of the authenticationStrengthPolicy objects and their properties."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+
+[!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
 ## HTTP request
 
@@ -50,7 +52,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all authentication strength policies
+
+#### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -67,29 +72,29 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationstrengthpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationstrengthpolicy-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationstrengthpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-authenticationstrengthpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationstrengthpolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationstrengthpolicy-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationstrengthpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-authenticationstrengthpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationstrengthpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -133,7 +138,7 @@ Content-Type: application/json
       "id": "00000000-0000-0000-0000-000000000002",
       "createdDateTime": "2022-09-30T10:59:01Z",
       "modifiedDateTime": "2022-09-30T10:59:01Z",
-      "displayName": "Multi-factor authentication",
+      "displayName": "Multifactor authentication",
       "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
       "policyType": "builtIn",
       "requirementsSatisfied": "mfa",
@@ -181,7 +186,7 @@ Content-Type: application/json
       "createdDateTime": "2022-09-30T10:59:01Z",
       "modifiedDateTime": "2022-09-30T10:59:01Z",
       "displayName": "Phishing resistant MFA",
-      "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+      "description": "Phishing resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
       "policyType": "builtIn",
       "requirementsSatisfied": "mfa",
       "allowedCombinations": [
@@ -195,3 +200,95 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get policies that include specific authentication method modes
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationstrengthpolicy_filter_allowedCombinations"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationstrengthpolicy-filter-allowedcombinations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationstrengthpolicy-filter-allowedcombinations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-authenticationstrengthpolicy-filter-allowedcombinations-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationstrengthpolicy-filter-allowedcombinations-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.authenticationStrengthPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies",
+    "value": [
+        {
+            "id": "00000000-0000-0000-0000-000000000002",
+            "createdDateTime": "2021-12-01T00:00:00Z",
+            "modifiedDateTime": "2021-12-01T00:00:00Z",
+            "displayName": "Multifactor authentication",
+            "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
+            "policyType": "builtIn",
+            "requirementsSatisfied": "mfa",
+            "allowedCombinations": [
+                "windowsHelloForBusiness",
+                "fido2",
+                "x509CertificateMultiFactor",
+                "deviceBasedPush",
+                "temporaryAccessPassOneTime",
+                "temporaryAccessPassMultiUse",
+                "password,microsoftAuthenticatorPush",
+                "password,softwareOath",
+                "password,hardwareOath",
+                "password,sms",
+                "password,voice",
+                "federatedMultiFactor",
+                "microsoftAuthenticatorPush,federatedSingleFactor",
+                "softwareOath,federatedSingleFactor",
+                "hardwareOath,federatedSingleFactor",
+                "sms,federatedSingleFactor",
+                "voice,federatedSingleFactor"
+            ],
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationStrengthPolicies('00000000-0000-0000-0000-000000000002')/combinationConfigurations",
+            "combinationConfigurations": []
+        }
+    ]
+}
+```

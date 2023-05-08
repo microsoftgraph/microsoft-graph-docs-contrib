@@ -21,7 +21,7 @@ requestBody.SetEmail(&email)
 applyHoldToSources := true
 requestBody.SetApplyHoldToSources(&applyHoldToSources) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Custodians().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Custodians().Post(context.Background(), requestBody, nil)
 
 
 ```

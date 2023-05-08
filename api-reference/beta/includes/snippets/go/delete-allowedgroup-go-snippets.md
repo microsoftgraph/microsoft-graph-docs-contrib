@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().SharesById("printerShare-id").AllowedGroupsById("group-id").Ref().Delete(context.Background(), nil)
+graphClient.Print().Shares().ByShareId("printerShare-id").AllowedGroups().ByAllowedGroupId("group-id").Ref().Delete(context.Background(), nil)
 
 
 ```

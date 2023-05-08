@@ -26,7 +26,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.TeamsById("team-id").Members().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

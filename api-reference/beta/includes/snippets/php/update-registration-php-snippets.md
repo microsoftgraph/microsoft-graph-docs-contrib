@@ -35,7 +35,7 @@ $requestBody->setSpeakers($speakersArray);
 
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->patch($requestBody);
+$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->patch($requestBody);
 
 
 ```

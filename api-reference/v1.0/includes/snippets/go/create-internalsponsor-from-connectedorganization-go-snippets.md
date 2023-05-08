@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/v1.0/users/{id}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById("connectedOrganization-id").InternalSponsors().Ref().Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").InternalSponsors().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

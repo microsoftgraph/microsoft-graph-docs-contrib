@@ -19,7 +19,7 @@ requestBody := graphmodels.NewExportPersonalDataPostRequestBody()
 storageLocation := "MyStorageAccount"
 requestBody.SetStorageLocation(&storageLocation) 
 
-graphClient.Directory().InboundSharedUserProfilesById("inboundSharedUserProfile-userId").ExportPersonalData().Post(context.Background(), requestBody, nil)
+graphClient.Directory().InboundSharedUserProfiles().ByInboundSharedUserProfileId("inboundSharedUserProfile-userId").ExportPersonalData().Post(context.Background(), requestBody, nil)
 
 
 ```

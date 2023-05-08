@@ -111,7 +111,7 @@ additionalData := map[string]interface{}{
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateApplication().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateApplication().Post(context.Background(), requestBody, configuration)
 
 
 ```

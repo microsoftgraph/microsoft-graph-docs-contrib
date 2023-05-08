@@ -14,7 +14,7 @@ $requestBody->setScope('User.Read.All');
 
 
 
-$requestResult = $graphServiceClient->oauth2PermissionGrantsById('oAuth2PermissionGrant-id')->patch($requestBody);
+$result = $graphServiceClient->oauth2PermissionGrantsById('oAuth2PermissionGrant-id')->patch($requestBody);
 
 
 ```

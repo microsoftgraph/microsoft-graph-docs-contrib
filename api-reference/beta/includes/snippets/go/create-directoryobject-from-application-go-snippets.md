@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/beta/directoryObjects/{id}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.ApplicationsById("application-id").Owners().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").Owners().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

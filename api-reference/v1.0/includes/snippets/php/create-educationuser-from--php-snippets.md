@@ -115,7 +115,7 @@ $onPremisesInfo->set@odatatype('microsoft.graph.educationOnPremisesInfo');
 $requestBody->setOnPremisesInfo($onPremisesInfo);
 
 
-$requestResult = $graphServiceClient->education()->users()->post($requestBody);
+$result = $graphServiceClient->education()->users()->post($requestBody);
 
 
 ```

@@ -19,7 +19,7 @@ $status->setDescription('completed');
 $requestBody->setStatus($status);
 
 
-$requestResult = $graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->tasksById('printTask-id')->patch($requestBody);
+$result = $graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->tasksById('printTask-id')->patch($requestBody);
 
 
 ```

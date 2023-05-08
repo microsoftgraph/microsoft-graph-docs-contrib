@@ -125,7 +125,7 @@ workingHours := []graphmodels.BookingWorkHoursable {
 }
 requestBody.SetWorkingHours(workingHours)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembersById("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").StaffMembers().ByStaffMemberId("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

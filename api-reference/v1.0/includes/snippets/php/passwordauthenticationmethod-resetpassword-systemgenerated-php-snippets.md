@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->authentication()->methodsById('authenticationMethod-id')->resetPassword()->post();
+$result = $graphServiceClient->usersById('user-id')->authentication()->methodsById('authenticationMethod-id')->resetPassword()->post();
 
 
 ```

@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
-	DisplayName = "What is your age?"
-	AnswerInputType = "text"
-	AnswerOptions = @(
+	displayName = "What is your age?"
+	answerInputType = "text"
+	answerOptions = @(
 	)
 }
 

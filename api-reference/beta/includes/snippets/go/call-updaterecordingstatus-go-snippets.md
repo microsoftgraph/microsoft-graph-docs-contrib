@@ -21,7 +21,7 @@ requestBody.SetClientContext(&clientContext)
 status := graphmodels.NOTRECORDING | RECORDING | FAILED_RECORDINGSTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.Communications().CallsById("call-id").UpdateRecordingStatus().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").UpdateRecordingStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

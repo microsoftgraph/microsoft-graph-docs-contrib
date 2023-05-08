@@ -27,7 +27,7 @@ altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters) 
 requestBody.SetLocation(location)
 
-result, err := graphClient.Print().PrintersById("printer-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById("authenticationContextClassReference-id").Delete(context.Background(), nil)
+graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().ByAuthenticationContextClassReferenceId("authenticationContextClassReference-id").Delete(context.Background(), nil)
 
 
 ```

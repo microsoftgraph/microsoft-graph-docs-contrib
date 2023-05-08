@@ -50,7 +50,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->settings()->shiftPreferences()->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->settings()->shiftPreferences()->patch($requestBody);
 
 
 ```

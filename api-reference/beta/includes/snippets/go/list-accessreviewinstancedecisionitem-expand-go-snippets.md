@@ -22,7 +22,7 @@ configuration := &graphconfig.IdentityGovernanceAccessReviewsDecisionItemRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById("accessReviewInstanceDecisionItem-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().AccessReviews().Decisions().ByDecisionId("accessReviewInstanceDecisionItem-id").Get(context.Background(), configuration)
 
 
 ```

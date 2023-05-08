@@ -14,7 +14,7 @@ $requestBody->setSubmissionAnimationDisabled(true);
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentSettings()->patch($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentSettings()->patch($requestBody);
 
 
 ```

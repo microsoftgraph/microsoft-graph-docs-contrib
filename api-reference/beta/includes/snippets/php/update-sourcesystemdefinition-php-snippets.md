@@ -14,7 +14,7 @@ $requestBody->setVendor('LMS Vendor');
 
 
 
-$requestResult = $graphServiceClient->external()->industryData()->sourceSystemsById('sourceSystemDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->external()->industryData()->sourceSystemsById('sourceSystemDefinition-id')->patch($requestBody);
 
 
 ```

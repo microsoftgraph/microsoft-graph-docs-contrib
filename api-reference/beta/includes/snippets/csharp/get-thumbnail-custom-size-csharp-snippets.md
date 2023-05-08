@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Thumbnails.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("select", "c300x400_crop")
-};
+	requestConfiguration.QueryParameters.Select = new string []{ "c300x400_crop" };
+});
 
-var thumbnails = await graphClient.Me.Drive.Items["{driveItem-id}"].Thumbnails
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

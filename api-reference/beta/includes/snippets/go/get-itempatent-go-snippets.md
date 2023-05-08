@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().PatentsById("itemPatent-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Profile().Patents().ByPatentId("itemPatent-id").Get(context.Background(), nil)
 
 
 ```

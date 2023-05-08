@@ -18,7 +18,7 @@ $resource->set@odatatype('microsoft.graph.educationPowerPointResource');
 $resource->setDisplayName('state diagram.pptx');
 
 $additionalData = [
-'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ', 
+		'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ', 
 ];
 $resource->setAdditionalData($additionalData);
 
@@ -27,7 +27,7 @@ $resource->setAdditionalData($additionalData);
 $requestBody->setResource($resource);
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
 
 
 ```

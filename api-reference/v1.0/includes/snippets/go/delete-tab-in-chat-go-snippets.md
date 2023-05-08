@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.ChatsById("chat-id").TabsById("teamsTab-id").Delete(context.Background(), nil)
+graphClient.Chats().ByChatId("chat-id").Tabs().ByTabId("teamsTab-id").Delete(context.Background(), nil)
 
 
 ```

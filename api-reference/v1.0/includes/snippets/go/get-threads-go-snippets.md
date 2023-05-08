@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.GroupsById("group-id").ConversationsById("conversation-id").Threads().Get(context.Background(), nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Conversations().ByConversationId("conversation-id").Threads().Get(context.Background(), nil)
 
 
 ```
