@@ -30,7 +30,9 @@ Specifies class-level assignments settings.
 |submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. If `true`, the animation will not be shown. The default value is `false`.|
 
 ## Relationships
-None.
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|grading categories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
