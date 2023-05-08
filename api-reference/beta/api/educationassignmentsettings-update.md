@@ -191,7 +191,7 @@ Content-type: application/json
 
 ### Example 3: Delta payload to delete, modify and add grading categories.
 
-### Request
+#### Request
 The following is an example of the request.
 
 
