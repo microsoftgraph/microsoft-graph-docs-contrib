@@ -23,9 +23,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|containerFilter|[containerFilter](../resources/synchronization-containerfilter.md)|The names and identifiers of organizational units that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request.|
+|containerFilter|[containerFilter](../resources/synchronization-containerfilter.md)|The names and identifiers of organizational units that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request. Currently only supported for Azure AD Connect cloud sync scenarios.|
 |editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and should not be changed.|
-|groupFilter|[groupFilter](../resources/synchronization-groupfilter.md)|The names and identifiers of groups that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request.|
+|groupFilter|[groupFilter](../resources/synchronization-groupfilter.md)|The names and identifiers of groups that are in scope for a synchronization rule. **containerFilter** and **groupFilter** are mutually exclusive properties that cannot be configured in the same request. Currently only supported for Azure AD Connect cloud sync scenarios.|
 |id             |String     |Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.|
 |metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.|
 |name           |String     |Human-readable name of the synchronization rule. Not nullable.|
