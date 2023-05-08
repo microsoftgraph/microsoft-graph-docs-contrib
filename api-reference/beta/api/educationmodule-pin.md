@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updated the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Update the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
 
 Only a teacher in the class can make this call, and only one **module** can be pinned in the classwork list.
 

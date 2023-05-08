@@ -50,7 +50,6 @@ If successful, this method returns a `200 OK` response code and an [educationMod
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
   "sampleKeys":["1e40c4aa-98b0-400a-8570-161e8dcfa631","777c289e-d0d4-4912-88d2-21812ae87b9a"],
