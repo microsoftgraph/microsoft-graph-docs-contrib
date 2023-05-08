@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
-# SharepointSettings resource type
+# sharepointSettings resource type
 Namespace: microsoft.graph
 
 Represents the tenant-level settings for SharePoint and OneDrive.
