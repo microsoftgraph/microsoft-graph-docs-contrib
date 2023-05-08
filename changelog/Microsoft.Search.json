@@ -1617,6 +1617,96 @@
       "CreatedDateTime": "2023-04-19T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ruleOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the **ruleOperation** enumeration type.",
+          "Target": "ruleOperation"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [activitySettings](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-activitySettings?view=graph-rest-1.0) resource type.",
+          "Target": "activitySettings"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "displayTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [displayTemplate](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-displayTemplate?view=graph-rest-1.0) resource type.",
+          "Target": "displayTemplate"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemIdResolver",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemIdResolver](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-itemIdResolver?view=graph-rest-1.0) resource type.",
+          "Target": "itemIdResolver"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "propertyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [propertyRule](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-propertyRule?view=graph-rest-1.0) resource type.",
+          "Target": "propertyRule"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchSettings](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-searchSettings?view=graph-rest-1.0) resource type.",
+          "Target": "searchSettings"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlMatchInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlMatchInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-urlMatchInfo?view=graph-rest-1.0) resource type.",
+          "Target": "urlMatchInfo"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlToItemResolverBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlToItemResolverBase](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-urlToItemResolverBase?view=graph-rest-1.0) resource type.",
+          "Target": "urlToItemResolverBase"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Property",
+          "ChangedApiName": "activitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `activitySettings` property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalConnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+          "ApiChange": "Property",
+          "ChangedApiName": "searchSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `searchSettings` property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalConnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        }
+      ],
+      "Id": "692d6f2b-eca3-44ed-8f63-482cbcde242e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-04T18:52:13.9850311Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

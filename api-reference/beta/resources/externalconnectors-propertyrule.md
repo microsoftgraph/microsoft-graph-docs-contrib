@@ -18,7 +18,7 @@ Defines the set of conditions to display a [displayTemplate](../resources/extern
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|operation|String|Specifies the operations to be performed during evaluation of a single **propertyRule**, where `property` and a string from the `values` collection are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`, `unknownFutureValue`. Required.|
+|operation|microsoft.graph.externalConnectors.ruleOperation|Specifies the operations to be performed during evaluation of a single **propertyRule**, where `property` and a string from the `values` collection are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`. Required.|
 |property|String|The property from the [externalItem](../resources/externalconnectors-externalitem.md) schema. Required.|
 |values|String collection|A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.|
 |valuesJoinedBy|binaryOperator|The join operator for evaluating multiple **propertyRules**. For example, if `and` is specified, then all **propertyRules** must be true for the **propertyRule** to be true. Possible values are: `or`, `and`. Required.|

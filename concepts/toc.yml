@@ -160,6 +160,8 @@ items:
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
+          - name: Define dataset scopes
+            href: data-connect-users-and-groups.md
           - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
@@ -727,10 +729,12 @@ items:
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
-              - name: Subscribe for teams, chats, channels
-                href: teams-change-notification-in-microsoft-teams-overview.md
               - name: Subscribe for online meetings
                 href: changenotifications-for-onlinemeeting.md
+              - name: Subscribe for teams, chats, channels
+                href: teams-change-notification-in-microsoft-teams-overview.md
+              - name: Subscribe for virtual events
+                href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
               - name: Create a group and team

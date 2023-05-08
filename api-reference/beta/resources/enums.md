@@ -136,26 +136,26 @@ Namespace: microsoft.graph
 
 ### conditionalAccessExternalTenantsMembershipKind values
 
-|Member|
-|:---|
-|all|
-|enumerated|
-|unknownFutureValue|
+| Member             |
+|:-------------------|
+| all                |
+| enumerated         |
+| unknownFutureValue |
 
 ### conditionalAccessGuestOrExternalUserTypes values
 
-|Member|
-|:---|
-|none|
-|internalGuest|
-|b2bCollaborationGuest|
-|b2bCollaborationMember|
-|b2bDirectConnectUser|
-|otherExternalUser|
-|serviceProvider|
-|unknownFutureValue|
+| Member                 |
+|:-----------------------|
+| none                   |
+| internalGuest          |
+| b2bCollaborationGuest  |
+| b2bCollaborationMember |
+| b2bDirectConnectUser   |
+| otherExternalUser      |
+| serviceProvider        |
+| unknownFutureValue     |
 
-### teamTemplateAudience values 
+### teamTemplateAudience values
 
 |Member|
 |:---|
@@ -2922,6 +2922,95 @@ Possible values for user account types (group membership), per Windows definitio
 |team      |0        |Indicates that the Teams app can be installed within a team and is authorized to access that team's data.|
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
+
+### assignmentScheduleFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### assignmentScheduleInstanceFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### assignmentScheduleRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+
+### eligibilityScheduleFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### eligibilityScheduleRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+
+### privilegedAccessGroupAssignmentType values
+
+|Member|
+|:---|
+|assigned|
+|activated|
+|unknownFutureValue|
+
+### privilegedAccessGroupMemberType values
+
+|Member|
+|:---|
+|direct|
+|group|
+|unknownFutureValue|
+
+### privilegedAccessGroupRelationships values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+
+
+### scheduleRequestActions values
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
 
 ### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
