@@ -13,11 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the alert incident resource that includes alert information for incidents in Privileged Identity Management (PIM).
+An abstract type that represents the details of a security alert incident in Privileged Identity Management (PIM) for Azure AD roles.
 
 This abstract type is inherited by the following derived types:
+
 - [invalidLicenseAlertIncident](invalidlicensealertincident.md)
-- 
+- [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
+- [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
+- [staleSignInAlertIncident](stalesigninalertincident.md)
+- [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
 
 Inherits from [entity](../resources/entity.md).
 

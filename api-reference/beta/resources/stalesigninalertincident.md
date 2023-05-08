@@ -15,20 +15,22 @@ Namespace: microsoft.graph
 
 Represents an alert incident that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified time period.
 
+The threshold that triggers this alert when it's reached is defined in the [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) resource type.
+
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assigneeDisplayName|String|Display name of the subject that the incident is assigned to.|
-|assigneeId|String|The identifier of the subject that the incident is assigned to.|
-|assigneeUserPrincipalName|String|User principal name of the subject that the incident is assigned to.|
+|assigneeDisplayName|String|Display name of the subject that the incident applies to.|
+|assigneeId|String|The identifier of the subject that the incident applies to.|
+|assigneeUserPrincipalName|String|User principal name of the subject that the incident applies to. Applies to user principals.|
 |assignmentCreatedDateTime|DateTimeOffset|Date and time of assignment creation.|
 |id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md).|
 |lastSignInDateTime|DateTimeOffset|Date and time of last sign in.|
-|roleDefinitionId|String|The identifier for a directory role definition.|
-|roleDisplayName|String|The identifier for a directory role display name.|
-|roleTemplateId|String|The identifier for a directory role template.|
+|roleDefinitionId|String|The identifier for the [directory role definition](unifiedroledefinition.md) that's in scope of this incident.|
+|roleDisplayName|String|The display name for the [directory role](unifiedroledefinition.md).|
+|roleTemplateId|String|The globally unique identifier for the [directory role](unifiedroledefinition.md).|
 
 ## Relationships
 None.

@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if a user goes over a specified number of days without activating a role. Users that have been assigned privileged roles they do not need increases the chance of a security attack. It is also easier for security threats to remain unnoticed in accounts that are not actively being used.
-
-The threshold that triggers this incident when its reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
+Represents an alert incident that is triggered if a user goes over a specified number of days without activating a role. Assigning users privileged roles that they do not need increases the risks of a security attack. It is also easier for security threats to remain unnoticed in accounts that are not actively used.
 
 The threshold that triggers this incident when its reached is defined in the [redundantAssignmentAlertConfiguration resource type](redundantassignmentalertconfiguration.md).
 

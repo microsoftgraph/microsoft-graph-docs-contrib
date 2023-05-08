@@ -24,7 +24,6 @@ Inherits from [entity](../resources/entity.md).
 |[Get unifiedRoleManagementAlert](../api/unifiedrolemanagementalert-get.md)|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md)|Read the properties and relationships of an [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object.|
 |[Update unifiedRoleManagementAlert](../api/unifiedrolemanagementalert-update.md)|[unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md)|Update the properties of an [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) object.|
 |[refresh](../api/unifiedrolemanagementalert-refresh.md)|None|Refresh incidents on all alerts or on a single alert for Privileged Identity Management (PIM) for Azure AD roles.|
-|[List alertIncidents](../api/unifiedrolemanagementalert-list-alertincidents.md)|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Get the unifiedRoleManagementAlertIncident resources from the alertIncidents navigation property.|
 
 ## Properties
 |Property|Type|Description|

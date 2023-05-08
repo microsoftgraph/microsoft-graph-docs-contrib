@@ -32,7 +32,7 @@ The calling user must be a member user or have the Privileged Role Administrator
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alertDefinitions
+GET /identityGovernance/roleManagementAlerts/alertDefinitions?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions?$filter=scopeId eq '67b47f38-0f0b-4e62-a3be-859140c2061f' and scopeType eq 'DirectoryRole'&$expand=alertDefinition
 ```
 
 

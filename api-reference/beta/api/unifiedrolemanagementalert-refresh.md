@@ -70,9 +70,10 @@ If successful, this action returns a `202 Accepted` response code with a 'Locati
 
 ## Examples
 
-### Example 1: Refresh all the alerts under a resource scope like a tenant
+The following example refreshes all the alerts under a resource scope like a tenant.
 
-#### Request
+### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -80,14 +81,17 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/refresh?$filter=scopeId eq '67b47f38-0f0b-4e62-a3be-859140c2061f' and scopeType eq 'DirectoryRole'
-
+POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/refresh
 Content-Type: application/json
+
+{
+    "scopeId" : "67b47f38-0f0b-4e62-a3be-859140c2061f",
+    "scopeType" : "DirectoryRole"
+}
 ```
 
-
-#### Response
-The following is an example of the response
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -98,32 +102,3 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
 ```
-
-### Example 2: Refresh a single alert based on alert definition id under a resource scope like tenant.
-
-#### Request
-The following is an example of a request.
-<!-- {
-  "blockType": "request",
-  "name": "unifiedrolemanagementalertthis.refresh.alertId"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_StaleSignInAlert/refresh
-Content-Type: application/json
-```
-
-
-#### Response
-The following is an example of the response
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
-```
-

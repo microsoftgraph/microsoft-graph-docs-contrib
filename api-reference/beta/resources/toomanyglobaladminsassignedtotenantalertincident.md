@@ -1,6 +1,6 @@
 ---
 title: "tooManyGlobalAdminsAssignedToTenantAlertIncident resource type"
-description: "Represents the details of an alert incident that is triggered if there are too many accounts assigned the Global Administrator role in the tenant. "
+description: "Represents the details of an alert incident that is triggered if there are too many accounts assigned the Global Administrator role in the tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,11 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if there are too many global admins assigned to a tenant. Global administrator is the highest privileged role. If a Global Administrator is compromised, the malicious actor can gain access to all permissions, which puts the whole system at risk.
-
-
-The threshold that triggers this incident when its reached is defined in the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type](toomanyglobaladminsassignedtotenantalertconfiguration.md).
-
+Represents the details of an alert incident that is triggered if there are too many accounts assigned the Global Administrator role in the tenant. [Global Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#global-administrator) is the highest privileged role in Azure AD. If an account with global administrator privileges is compromised, the malicious actor has permissions for almost all actions in the tenant, which puts the whole system at risk.
 
 The threshold that triggers this incident when its reached is defined in the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type](toomanyglobaladminsassignedtotenantalertconfiguration.md).
 
@@ -26,7 +22,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assigneeDisplayName|String|Display name of the subject that the incident is applies to.|
+|assigneeDisplayName|String|Display name of the subject that the incident applies to.|
 |assigneeId|String|The identifier of the subject that the incident applies to.|
 |assigneeUserPrincipalName|String|User principal name of the subject that the incident applies to. Applies to user principals.|
 |id|String|The identifier for the alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md).|

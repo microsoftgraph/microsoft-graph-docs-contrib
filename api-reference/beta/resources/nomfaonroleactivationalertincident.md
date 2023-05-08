@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if roles do not require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users.
+Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 

@@ -32,7 +32,7 @@ The calling user must be a member user or have the Privileged Role Administrator
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts
+GET /identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## Optional query parameters
