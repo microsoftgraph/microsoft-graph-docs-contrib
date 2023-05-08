@@ -9,19 +9,19 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for assignments in Microsoft Graph
 
-Assignments and submissions are an important part in the interaction between teachers and students' actions. This article describes the changes in the assignment and submission states during the process flow and which education APIs in Microsoft Graph are involved.
+Assignments and submissions are an important part of the interaction between teachers and students' actions. This article describes the changes in the assignment and submission states during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Assignment states and transitions
 
-An assignment represents a task or unit of work assigned to a student or team members in a class as part of their study. Only teachers or team owners can create, copy, or schedule assignments. These actions have an impact on assignment states. The following table lists the assignment states and the APIs that are available to change the state. 
+An assignment represents a task or unit of work assigned to a student or team member in a class as part of their study. Only teachers or team owners can create, copy, or schedule assignments. These actions have an impact on assignment states. The following table lists the assignment states and the APIs that are available to change the state. 
 
 | State | Description | REST API call | Features available to edit |
 |:--|:--|:--|:--|
 | Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, categories, rubrics |
 | Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
-| Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
+| Scheduled | Status when the teacher scheduled the assignment to publish at a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
 | Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students, or the assignment is active again. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
-| Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` | |
+| Pending | Background processing status when a new assignment is being copied from an existing one. | `PATCH /education/classes/{id}/assignments/{id}` | |
 | Inactive | The assignment has no further action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
 
 The following diagram shows the state transitions that can occur for assignments.

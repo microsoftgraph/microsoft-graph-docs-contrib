@@ -1,5 +1,5 @@
 ---
-title: "State transiton for Student and Teacher role"
+title: "Teacher and student actions for assignments and submissions"
 description: "Learn about on how to get the assignments and related submission for Teachers and Students with state transition rules"
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
@@ -7,11 +7,11 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# State transiton for Student and Teacher role
+# Teacher and student actions for assignments and submissions
 
 This article describes student and teacher roles for the assignment and submission state transition and related transition rules.
 
-## Get all the assignmets and their corresponding submission belonging to the student
+## Get all the assignments and their corresponding submission belonging to the student
 
 Use the following call for the student action:
 
@@ -22,7 +22,7 @@ Code sample for student account with [Education assignment using Microsoft Graph
 > [!NOTE]
 > For student account isTeacher parameter needs to be set to false.
 
-## Get all the assignmets for teacher and then submissions for each assignment
+## Get all the assignments for teacher and then submissions for each assignment
 
 Use the following call for the teacher action:
 
