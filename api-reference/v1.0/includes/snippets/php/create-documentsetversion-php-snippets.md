@@ -16,7 +16,7 @@ $requestBody->setShouldCaptureMinorVersion(false);
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->documentSetVersions()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->documentSetVersions()->post($requestBody);
 
 
 ```

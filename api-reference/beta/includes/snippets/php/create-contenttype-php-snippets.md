@@ -25,7 +25,7 @@ $requestBody->setGroup('Document Set Content Types');
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->contentTypes()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->contentTypes()->post($requestBody);
 
 
 ```

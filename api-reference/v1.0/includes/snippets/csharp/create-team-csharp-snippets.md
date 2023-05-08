@@ -6,34 +6,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Groups.Item.Team.TeamPutRequestBody
+var requestBody = new Team
 {
-	AdditionalData = new Dictionary<string, object>
+	MemberSettings = new TeamMemberSettings
 	{
-		{
-			"memberSettings" , new 
-			{
-				AllowCreatePrivateChannels = true,
-				AllowCreateUpdateChannels = true,
-			}
-		},
-		{
-			"messagingSettings" , new 
-			{
-				AllowUserEditMessages = true,
-				AllowUserDeleteMessages = true,
-			}
-		},
-		{
-			"funSettings" , new 
-			{
-				AllowGiphy = true,
-				GiphyContentRating = "strict",
-			}
-		},
+		AllowCreatePrivateChannels = true,
+		AllowCreateUpdateChannels = true,
+	},
+	MessagingSettings = new TeamMessagingSettings
+	{
+		AllowUserEditMessages = true,
+		AllowUserDeleteMessages = true,
+	},
+	FunSettings = new TeamFunSettings
+	{
+		AllowGiphy = true,
+		GiphyContentRating = GiphyRatingType.Strict,
 	},
 };
-await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
+var result = await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
 
 
 ```

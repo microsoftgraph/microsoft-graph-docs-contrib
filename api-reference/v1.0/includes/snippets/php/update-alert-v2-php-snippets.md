@@ -20,7 +20,7 @@ $requestBody->setStatus(new AlertStatus('inprogress'));
 
 
 
-$requestResult = $graphServiceClient->security()->alerts_v2ById('alert-id')->patch($requestBody);
+$result = $graphServiceClient->security()->alerts_v2ById('alert-id')->patch($requestBody);
 
 
 ```

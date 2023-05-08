@@ -23,7 +23,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|useDeviceContext|Boolean|Whether or not to use device execution context for Windows Universal AppX mobile app.|
+|useDeviceContext|Boolean|If true, uses device execution context for Windows Universal AppX mobile app. Device-context install is not allowed when this type of app is targeted with Available intent. Defaults to false.|
 
 ## Relationships
 None

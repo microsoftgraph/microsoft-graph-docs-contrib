@@ -7,30 +7,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	MessageType = "message"
-	Subject = $null
-	Summary = $null
-	Importance = "normal"
-	Locale = "en-us"
-	From = @{
-		Application = $null
-		Device = $null
-		User = @{
-			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
-			DisplayName = "Lam Cong"
-			UserIdentityType = "aadUser"
+	messageType = "message"
+	subject = $null
+	summary = $null
+	importance = "normal"
+	locale = "en-us"
+	from = @{
+		application = $null
+		device = $null
+		user = @{
+			id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			displayName = "Lam Cong"
+			userIdentityType = "aadUser"
 		}
-		Conversation = $null
+		conversation = $null
 	}
-	Body = @{
-		ContentType = "text"
-		Content = "Edit text only"
+	body = @{
+		contentType = "text"
+		content = "Edit text only"
 	}
-	Attachments = @(
+	attachments = @(
 	)
-	Mentions = @(
+	mentions = @(
 	)
-	Reactions = @(
+	reactions = @(
 	)
 }
 

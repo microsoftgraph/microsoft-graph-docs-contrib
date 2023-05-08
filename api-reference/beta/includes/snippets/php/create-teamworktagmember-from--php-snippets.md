@@ -14,7 +14,7 @@ $requestBody->setUserId('97f62344-57dc-409c-88ad-c4af14158ff5');
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->tagsById('teamworkTag-id')->members()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->tagsById('teamworkTag-id')->members()->post($requestBody);
 
 
 ```

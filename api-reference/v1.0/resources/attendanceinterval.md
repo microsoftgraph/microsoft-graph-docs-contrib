@@ -1,7 +1,7 @@
 ---
 title: "attendanceInterval resource type"
 description: "Contains information associated with an attendance interval in an attendanceRecord."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

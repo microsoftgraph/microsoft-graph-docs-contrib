@@ -9,54 +9,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Item();
-$additionalData = [
-'acl' => $acl1 = new ();
-$		acl1->setType('user');
+$requestBody = new ExternalItem();
+$aclAcl1 = new Acl();
+$aclAcl1->setType(new AclType('user'));
 
-$		acl1->setValue('e811976d-83df-4cbd-8b9b-5215b18aa874');
+$aclAcl1->setValue('e811976d-83df-4cbd-8b9b-5215b18aa874');
 
-$		acl1->setAccessType('grant');
-
-
-$aclArray []= $acl1;
-$acl2 = new ();
-$		acl2->setType('externalGroup');
-
-$		acl2->setValue('14m1b9c38qe647f6a');
-
-$		acl2->setAccessType('deny');
+$aclAcl1->setAccessType(new AccessType('grant'));
 
 
-$aclArray []= $acl2;
+$aclArray []= $aclAcl1;
+$aclAcl2 = new Acl();
+$aclAcl2->setType(new AclType('externalgroup'));
+
+$aclAcl2->setValue('14m1b9c38qe647f6a');
+
+$aclAcl2->setAccessType(new AccessType('deny'));
+
+
+$aclArray []= $aclAcl2;
 $requestBody->setAcl($aclArray);
 
 
-'properties' => $requestBody = new Properties();
-$	requestBody->setTitle('Error in the payment gateway');
+$properties = new Properties();
+$additionalData = [
+	'title' => 'Error in the payment gateway', 
+	'priority' => 1,
+	'assignee' => 'john@contoso.com', 
+];
+$properties->setAdditionalData($additionalData);
 
-	$requestBody->setPriority(1);
-
-$	requestBody->setAssignee('john@contoso.com');
 
 
 $requestBody->setProperties($properties);
+$content = new ExternalItemContent();
+$content->setValue('Error in payment gateway...');
 
-'content' => $requestBody = new Content();
-$	requestBody->setValue('Error in payment gateway...');
-
-$	requestBody->setType('text');
+$content->setType(new ExternalItemContentType('text'));
 
 
 $requestBody->setContent($content);
 
-];
-$requestBody->setAdditionalData($additionalData);
 
-
-
-
-$graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
+$result = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
 
 
 ```

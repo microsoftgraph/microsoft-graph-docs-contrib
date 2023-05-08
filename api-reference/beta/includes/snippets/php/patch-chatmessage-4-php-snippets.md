@@ -31,7 +31,7 @@ $fromUser->setId('3b102402-813e-4e17-a6b2-f841aef1fdfc');
 $fromUser->setDisplayName('Sumit Gupta');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -39,7 +39,7 @@ $fromUser->setAdditionalData($additionalData);
 
 $from->setUser($fromUser);
 $additionalData = [
-'conversation' => 		null,
+		'conversation' => 		null,
 ];
 $from->setAdditionalData($additionalData);
 
@@ -568,7 +568,7 @@ $requestBody->setMessageHistory($messageHistoryArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

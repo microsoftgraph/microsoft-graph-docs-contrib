@@ -11,15 +11,15 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new FieldValueSet();
 $additionalData = [
-'Color' => 'Fuchsia', 
-'Quantity' => 934,
+		'Color' => 'Fuchsia', 
+		'Quantity' => 934,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->fields()->patch($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->itemsById('listItem-id')->fields()->patch($requestBody);
 
 
 ```

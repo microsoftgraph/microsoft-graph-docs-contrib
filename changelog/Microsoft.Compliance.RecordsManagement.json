@@ -170,7 +170,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **queryType** enumeration type.",
           "Target": "queryType"
-        }
+        },
         {
           "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
           "ApiChange": "Resource",

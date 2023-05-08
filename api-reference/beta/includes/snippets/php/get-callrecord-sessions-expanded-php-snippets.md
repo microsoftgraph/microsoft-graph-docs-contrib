@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new SessionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SessionsRequestBuilderGetQueryParameters();
+$queryParameters = SessionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["segments"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->communications()->callRecordsById('callRecord-id')->sessions()->get($requestConfiguration);
+$result = $graphServiceClient->communications()->callRecordsById('callRecord-id')->sessions()->get($requestConfiguration);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->tenantRelationships()->managedTenants()->conditionalAccessPolicyCoveragesById('conditionalAccessPolicyCoverage-id')->get();
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->conditionalAccessPolicyCoveragesById('conditionalAccessPolicyCoverage-id')->get();
 
 
 ```

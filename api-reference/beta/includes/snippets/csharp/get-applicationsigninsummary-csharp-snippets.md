@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var getAzureADApplicationSignInSummary = await graphClient.Reports
-	.GetAzureADApplicationSignInSummary("D7")
-	.Request()
-	.GetAsync();
+var result = await graphClient.Reports.GetAzureADApplicationSignInSummaryWithPeriod("{period}").GetAsync();
+
 
 ```

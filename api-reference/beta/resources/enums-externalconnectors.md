@@ -102,6 +102,16 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
+### importanceScore values
+
+| Member
+|:--------------
+| low
+| medium
+| high
+| veryHigh
+| unknownFutureValue
+
 ### label values
 
 | Member

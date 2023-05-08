@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->token = "latest";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->delta()->get($requestConfiguration);
 
 
 ```

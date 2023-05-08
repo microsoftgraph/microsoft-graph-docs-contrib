@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewConversationMember()
 visibleHistoryStartDateTime , err := time.Parse(time.RFC3339, "0001-01-01T00:00:00Z")
@@ -20,7 +29,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.ChatsById("chat-id").Members().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Chats().ByChatId("chat-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

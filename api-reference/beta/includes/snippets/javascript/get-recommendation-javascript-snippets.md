@@ -10,9 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let recommendations = await client.api('/directory/recommendations')
+let recommendation = await client.api('/directory/recommendations/0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA')
 	.version('beta')
-	.filter('recommendationType eq \'turnOffPerUserMFA\'')
 	.get();
 
 ```

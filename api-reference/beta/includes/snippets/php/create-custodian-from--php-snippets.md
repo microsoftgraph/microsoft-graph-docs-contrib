@@ -16,7 +16,7 @@ $requestBody->setApplyHoldToSources(true);
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodians()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->custodians()->post($requestBody);
 
 
 ```

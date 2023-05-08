@@ -14,7 +14,7 @@ $requestBody->setIsReportToMicrosoftEnabled(true);
 
 
 
-$requestResult = $graphServiceClient->security()->threatSubmission()->emailThreatSubmissionPolicies()->post($requestBody);
+$result = $graphServiceClient->security()->threatSubmission()->emailThreatSubmissionPolicies()->post($requestBody);
 
 
 ```

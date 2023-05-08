@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->top = 3;
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentCategories()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentCategories()->delta()->get($requestConfiguration);
 
 
 ```

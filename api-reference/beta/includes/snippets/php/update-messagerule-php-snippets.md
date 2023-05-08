@@ -19,7 +19,7 @@ $actions->setMarkImportance(new Importance('high'));
 $requestBody->setActions($actions);
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRulesById('messageRule-id')->patch($requestBody);
+$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRulesById('messageRule-id')->patch($requestBody);
 
 
 ```

@@ -4,36 +4,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var values = new List<ConversationMember>()
+var requestBody = new Microsoft.Graph.Teams.Item.Members.Add.AddPostRequestBody
 {
-	new AadUserConversationMember
+	Values = new List<ConversationMember>
 	{
-		Roles = new List<String>()
+		new ConversationMember
 		{
+			OdataType = "microsoft.graph.aadUserConversationMember",
+			Roles = new List<String>
+			{
+			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+				},
+			},
 		},
-		AdditionalData = new Dictionary<string, object>()
+		new ConversationMember
 		{
-			{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
-		}
+			OdataType = "microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
+			{
+				"owner",
+			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+				},
+			},
+		},
 	},
-	new AadUserConversationMember
-	{
-		Roles = new List<String>()
-		{
-			"owner"
-		},
-		AdditionalData = new Dictionary<string, object>()
-		{
-			{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"}
-		}
-	}
 };
+var result = await graphClient.Teams["{team-id}"].Members.Add.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Members
-	.Add(values)
-	.Request()
-	.PostAsync();
 
 ```

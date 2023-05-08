@@ -8,7 +8,7 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Models.ReferenceCreate
 {
-	OdataId = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9",
+	OdataId = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4",
 };
 await graphClient.Applications["{application-id}"].TokenLifetimePolicies.Ref.PostAsync(requestBody);
 

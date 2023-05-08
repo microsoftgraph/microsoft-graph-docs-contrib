@@ -33,7 +33,7 @@ $vendorInformation->setVendor('Microsoft');
 $requestBody->setVendorInformation($vendorInformation);
 
 
-$requestResult = $graphServiceClient->security()->securityActions()->post($requestBody);
+$result = $graphServiceClient->security()->securityActions()->post($requestBody);
 
 
 ```

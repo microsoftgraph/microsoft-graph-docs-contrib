@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Planner
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerRosterMember"
-	UserId = "String"
+	userId = "String"
 }
 
 New-MgPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params

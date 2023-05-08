@@ -10,16 +10,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ContentRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ContentRequestBuilderGetQueryParameters();
-$queryParameters->format = "text/vtt";
-
 $headers = [
-'Accept' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Accept' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+	];
 $requestConfiguration->headers = $headers;
+
+$queryParameters = ContentRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->format = "text/vtt";
+$requestConfiguration->queryParameters = $queryParameters;
 
 
 $graphServiceClient->usersById('user-id')->onlineMeetingsById('onlineMeeting-id')->transcriptsById('callTranscript-id')->content()->get($requestConfiguration);

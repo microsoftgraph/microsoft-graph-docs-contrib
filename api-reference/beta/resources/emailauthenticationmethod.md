@@ -4,7 +4,7 @@ description: "A representation of an email address registered to a user. Email i
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # emailAuthenticationMethod resource type

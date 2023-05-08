@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workbookChartTitle = new WorkbookChartTitle
+var requestBody = new WorkbookChartTitle
 {
 	Overlay = true,
 	Text = "text-value",
-	Visible = true
+	Visible = true,
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Title.PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Title
-	.Request()
-	.UpdateAsync(workbookChartTitle);
 
 ```

@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	TransferTarget = @{
-		EndpointType = "default"
-		Identity = @{
-			Phone = @{
+	transferTarget = @{
+		endpointType = "default"
+		identity = @{
+			phone = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "+12345678901"
+				id = "+12345678901"
 			}
 		}
-		LanguageId = "languageId-value"
-		Region = "region-value"
+		languageId = "languageId-value"
+		region = "region-value"
 	}
 }
 

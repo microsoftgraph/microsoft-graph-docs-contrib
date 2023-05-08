@@ -18,7 +18,7 @@ $requestBody->setOrderHint(' !');
 
 
 
-$requestResult = $graphServiceClient->planner()->buckets()->post($requestBody);
+$result = $graphServiceClient->planner()->buckets()->post($requestBody);
 
 
 ```
