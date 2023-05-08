@@ -1,5 +1,5 @@
 ---
-title: "List service principal last used activity date"
+title: "List servicePrincipalSignInActivities"
 doc_type: apiPageType
 description: "Get a list servicePrincipalSignInActivity object that contains sign-in activity information for service principals in Azure Active Directory tenant."
 localization_priority: Normal

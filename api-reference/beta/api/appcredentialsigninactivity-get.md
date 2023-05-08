@@ -1,5 +1,5 @@
 ---
-title: "Get application credential last used activity date"
+title: "Get appCredentialSignInActivity"
 doc_type: apiPageType
 description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
 localization_priority: medium
