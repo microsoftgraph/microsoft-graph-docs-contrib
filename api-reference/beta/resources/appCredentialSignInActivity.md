@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The A sign-in activity for an application credential.  Contains information about last usage time of the application credential.
+The A sign-in activity for an application credential. Contains information about last usage time of the application credential.
 
 ## Methods
 
