@@ -2,7 +2,7 @@
 title: "Get appCredentialSignInActivity"
 doc_type: apiPageType
 description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
-localization_priority: medium
+ms.localizationpriority: medium
 author: "madansr7
 ms.prod: "identity-and-sign-in"
 ---

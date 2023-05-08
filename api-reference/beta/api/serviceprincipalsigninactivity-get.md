@@ -2,7 +2,7 @@
 title: "Get servicePrincipalSignInActivities"
 doc_type: apiPageType
 description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in Azure Active Directory tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 ---
