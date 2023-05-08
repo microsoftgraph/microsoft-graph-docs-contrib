@@ -149,3 +149,4 @@ Previous example above shows a notification that corresponds to a chat message r
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
+- [Get change notification for meeting transcripts and recordings using Microsoft Graph](transcripts-and-recordings.md)

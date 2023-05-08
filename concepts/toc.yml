@@ -236,6 +236,8 @@ items:
                   href: teams-changenotifications-chat.md
                 - name: Chat membership
                   href: teams-changenotifications-chatMembership.md
+                - name: Transcripts and recordings
+                  href: transcripts-and-recordings.md
             - name: Notifications for Outlook resources
               href: outlook-change-notifications-overview.md
       - name: Change tracking
