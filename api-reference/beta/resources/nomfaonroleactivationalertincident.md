@@ -1,6 +1,6 @@
 ---
 title: "noMfaOnRoleActivationAlertIncident resource type"
-description: "Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation. 
+description: "Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
