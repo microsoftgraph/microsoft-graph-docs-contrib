@@ -12,9 +12,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new ListItem();
 $fields = new FieldValueSet();
 $additionalData = [
-'Title' => 'Widget', 
-'Color' => 'Purple', 
-'Weight' => 32,
+		'Title' => 'Widget', 
+		'Color' => 'Purple', 
+		'Weight' => 32,
 ];
 $fields->setAdditionalData($additionalData);
 
@@ -23,7 +23,7 @@ $fields->setAdditionalData($additionalData);
 $requestBody->setFields($fields);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->post($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->post($requestBody);
 
 
 ```

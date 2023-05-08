@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewB2xIdentityUserFlow()
 id := "UserFlowWithAPIConnector"
@@ -17,13 +25,13 @@ requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 apiConnectorConfiguration := graphmodels.NewUserFlowApiConnectorConfiguration()
 postFederationSignup := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
+	"odataId" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
 }
 postFederationSignup.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostFederationSignup(postFederationSignup)
 postAttributeCollection := graphmodels.NewIdentityApiConnector()
 additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
+	"odataId" : "https://graph.microsoft.com/v1/identity/apiConnectors/{id}", 
 }
 postAttributeCollection.SetAdditionalData(additionalData)
 apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)

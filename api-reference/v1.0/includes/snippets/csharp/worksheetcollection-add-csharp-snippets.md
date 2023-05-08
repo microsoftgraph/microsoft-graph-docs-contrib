@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var name = "name-value";
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Add.AddPostRequestBody
+{
+	Name = "name-value",
+};
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets.Add.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets
-	.Add(name)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,7 +4,7 @@ description: "A representation of a FIDO2 security key registered to a user. FID
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2AuthenticationMethod resource type

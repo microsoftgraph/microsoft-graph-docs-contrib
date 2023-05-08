@@ -9,32 +9,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new BundlesPostRequestBody();
-$additionalData = [
-'name' => 'My Day at the Beach', 
-'@microsoft.graph.conflictBehavior' => 'rename', 
-'bundle' => $requestBody = new Bundle();
-$album = new Album();
+$requestBody = new DriveItem();
+$requestBody->setName('My Day at the Beach');
 
-$requestBody->setAlbum($album);
+$bundle = new Bundle();
+$bundleAlbum = new Album();
+
+$bundle->setAlbum($bundleAlbum);
 
 $requestBody->setBundle($bundle);
+$childrenDriveItem1 = new DriveItem();
+$childrenDriveItem1->setId('1234asdf');
 
-'children' => $children1 = new ();
-$		children1->setId('1234asdf');
 
-
-$childrenArray []= $children1;
+$childrenArray []= $childrenDriveItem1;
 $requestBody->setChildren($childrenArray);
 
 
+$additionalData = [
+	'@microsoft.graph.conflictBehavior' => 'rename', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->drive()->bundles()->post($requestBody);
+$result = $graphServiceClient->drivesById('drive-id')->bundles()->post($requestBody);
 
 
 ```

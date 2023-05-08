@@ -16,7 +16,7 @@ $requestBody->setType(new EmailType('work'));
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->profile()->emailsById('itemEmail-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->profile()->emailsById('itemEmail-id')->patch($requestBody);
 
 
 ```

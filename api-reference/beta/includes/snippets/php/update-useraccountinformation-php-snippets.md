@@ -14,7 +14,7 @@ $requestBody->setCountryCode('NO');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->accountById('userAccountInformation-id')->patch($requestBody);
+$result = $graphServiceClient->me()->profile()->accountById('userAccountInformation-id')->patch($requestBody);
 
 
 ```

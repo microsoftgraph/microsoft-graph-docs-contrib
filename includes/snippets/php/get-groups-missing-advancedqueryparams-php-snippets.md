@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "createdDateTime ge 2021-11-01";
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "createdDateTime ge 2021-11-01";
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
+
+$result = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

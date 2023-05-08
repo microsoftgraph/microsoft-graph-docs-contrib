@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->reports()->authenticationMethods()->userRegistrationDetailsById('userRegistrationDetails-id')->get();
+$result = $graphServiceClient->reports()->authenticationMethods()->userRegistrationDetailsById('userRegistrationDetails-id')->get();
 
 
 ```

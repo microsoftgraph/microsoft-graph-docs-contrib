@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewOpenShift()
 schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
@@ -46,7 +54,7 @@ requestBody.SetSharedOpenShift(sharedOpenShift)
 draftOpenShift := null
 requestBody.SetDraftOpenShift(&draftOpenShift) 
 
-result, err := graphClient.TeamsById("team-id").Schedule().OpenShiftsById("openShift-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShifts().ByOpenShiftId("openShift-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

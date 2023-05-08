@@ -15,7 +15,7 @@ $transferTarget->setEndpointType(new EndpointType('default'));
 
 $transferTargetIdentity = new IdentitySet();
 $additionalData = [
-'phone' => $transferTargetIdentity = new Phone();
+		'phone' => $transferTargetIdentity = new Phone();
 $		transferTargetIdentity->set@odatatype('#microsoft.graph.identity');
 
 $		transferTargetIdentity->setId('+12345678901');
@@ -30,8 +30,8 @@ $transferTargetIdentity->setAdditionalData($additionalData);
 
 $transferTarget->setIdentity($transferTargetIdentity);
 $additionalData = [
-'languageId' => 'languageId-value', 
-'region' => 'region-value', 
+		'languageId' => 'languageId-value', 
+		'region' => 'region-value', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 

@@ -59,7 +59,7 @@ $requestBody->setOnlineMeetingProvider(new OnlineMeetingProviderType('teamsforbu
 
 
 
-$requestResult = $graphServiceClient->me()->calendarsById('calendar-id')->events()->post($requestBody);
+$result = $graphServiceClient->me()->calendarsById('calendar-id')->events()->post($requestBody);
 
 
 ```

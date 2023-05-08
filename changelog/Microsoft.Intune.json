@@ -3,6 +3,910 @@
     {
       "ChangeList": [
         {
+          "Id": "5b493ae4-ecb3-4d95-82a4-df22d19277ac",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentFilterManagementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentFilterManagementType** enumeration type.",
+          "Target": "assignmentFilterManagementType"
+        },
+        {
+          "Id": "5b493ae4-ecb3-4d95-82a4-df22d19277ac",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentFilterManagementType",
+          "ChangeType": "Addition",
+          "Description": "Added the `assignmentFilterManagementType` property to the [deviceAndAppManagementAssignmentFilter](https://learn.microsoft.com/graph/api/resources/intune-policyset-deviceandappmanagementassignmentfilter?view=graph-rest-beta) resource.",
+          "Target": "deviceAndAppManagementAssignmentFilter"
+        },
+        {
+          "Id": "f4bb8591-cdc0-4883-9ba1-8ff88121e38c",
+          "ApiChange": "Edmx",
+          "ChangedApiName": "4.0",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **4.0** resource type",
+          "Target": "4.0"
+        },
+        {
+          "Id": "8a9ac9dc-cb59-477c-a572-fe5a1e906f54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationApplicationSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationApplicationSettingApplicability](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementConfigurationApplicationSettingApplicability?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationApplicationSettingApplicability"
+        },
+        {
+          "Id": "8a9ac9dc-cb59-477c-a572-fe5a1e906f54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementSettingInsightsDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementSettingInsightsDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementSettingInsightsDefinition?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementSettingInsightsDefinition"
+        },
+        {
+          "Id": "8a9ac9dc-cb59-477c-a572-fe5a1e906f54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "templateInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateInsights** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "8a9ac9dc-cb59-477c-a572-fe5a1e906f54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementTemplateInsightsDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementTemplateInsightsDefinition](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementTemplateInsightsDefinition?view=graph-rest-beta) resource",
+          "Target": "deviceManagementTemplateInsightsDefinition"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "obliterationBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **obliterationBehavior** enumeration type.",
+          "Target": "obliterationBehavior"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oemWarrantyInformationOnboarding",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **oemWarrantyInformationOnboarding** relationship from the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Property",
+          "ChangedApiName": "available",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `available` property from the [oemWarrantyInformationOnboarding](https://learn.microsoft.com/graph/api/resources/intune-oemWarrantyInformationOnboarding?view=graph-rest-beta) resource.",
+          "Target": "oemWarrantyInformationOnboarding"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Property",
+          "ChangedApiName": "enabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `enabled` property from the [oemWarrantyInformationOnboarding](https://learn.microsoft.com/graph/api/resources/intune-oemWarrantyInformationOnboarding?view=graph-rest-beta) resource.",
+          "Target": "oemWarrantyInformationOnboarding"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Property",
+          "ChangedApiName": "oemName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `oemName` property from the [oemWarrantyInformationOnboarding](https://learn.microsoft.com/graph/api/resources/intune-oemWarrantyInformationOnboarding?view=graph-rest-beta) resource.",
+          "Target": "oemWarrantyInformationOnboarding"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Method",
+          "ChangedApiName": "wipe",
+          "ChangeType": "Addition",
+          "Description": "Added the [wipe](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) method to the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "85a3931f-ed35-461d-a789-2f1c77523640",
+          "ApiChange": "Method",
+          "ChangedApiName": "wipe",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **wipe** method from the [managedDevice](https://learn.microsoft.com/graph/api/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "1df942da-6e03-4b38-a0e6-1f162fcaa1e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestRequiresNetworkTether",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `requestRequiresNetworkTether` property from the [depMacOSEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceAndAppManagementAssignmentFilterType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceAndAppManagementAssignmentFilterType** enumeration type.",
+          "Target": "deviceAndAppManagementAssignmentFilterType"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaConnectorState",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaConnectorState** enumeration type.",
+          "Target": "zebraFotaConnectorState"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaDeploymentState",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaDeploymentState** enumeration type.",
+          "Target": "zebraFotaDeploymentState"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaErrorCode** enumeration type.",
+          "Target": "zebraFotaErrorCode"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaNetworkType",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaNetworkType** enumeration type.",
+          "Target": "zebraFotaNetworkType"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaScheduleMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaScheduleMode** enumeration type.",
+          "Target": "zebraFotaScheduleMode"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaUpdateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaUpdateType** enumeration type.",
+          "Target": "zebraFotaUpdateType"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidFotaDeploymentAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [androidFotaDeploymentAssignment](https://learn.microsoft.com/graph/api/resources/intune-androidFotaDeploymentAssignment?view=graph-rest-beta) resource type.",
+          "Target": "androidFotaDeploymentAssignment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidFotaDeploymentAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [androidFotaDeploymentAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-androidFotaDeploymentAssignmentTarget?view=graph-rest-beta) resource type.",
+          "Target": "androidFotaDeploymentAssignmentTarget"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceAndAppManagementAssignmentTarget](https://learn.microsoft.com/graph/api/resources/intune-deviceAndAppManagementAssignmentTarget?view=graph-rest-beta) resource type.",
+          "Target": "deviceAndAppManagementAssignmentTarget"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeploymentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [zebraFotaDeploymentSettings](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeploymentSettings?view=graph-rest-beta) resource type.",
+          "Target": "zebraFotaDeploymentSettings"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [zebraFotaDeploymentStatus](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Target": "zebraFotaDeploymentStatus"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementReports](https://learn.microsoft.com/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaArtifact",
+          "ChangeType": "Addition",
+          "Description": "Added the [zebraFotaArtifact](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaArtifact?view=graph-rest-beta) resource",
+          "Target": "zebraFotaArtifact"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [zebraFotaConnector](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaConnector?view=graph-rest-beta) resource",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeployment",
+          "ChangeType": "Addition",
+          "Description": "Added the [zebraFotaDeployment](https://learn.microsoft.com/graph/api/resources/intune-zebraFotaDeployment?view=graph-rest-beta) resource",
+          "Target": "zebraFotaDeployment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "approveFotaApps",
+          "ChangeType": "Addition",
+          "Description": "Added the [approveFotaApps](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) method to the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/graph/api/intune-zebraFotaDeployment?view=graph-rest-beta) method to the [zebraFotaDeployment](https://learn.microsoft.com/graph/api/intune-zebraFotaDeployment?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaDeployment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "connect",
+          "ChangeType": "Addition",
+          "Description": "Added the [connect](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) method to the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "disconnect",
+          "ChangeType": "Addition",
+          "Description": "Added the [disconnect](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) method to the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "getZebraFotaDeploymentReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getZebraFotaDeploymentReport](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "hasActiveDeployments",
+          "ChangeType": "Addition",
+          "Description": "Added the [hasActiveDeployments](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) method to the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaConnectorState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaConnectorState** enumeration type.",
+          "Target": "zebraFotaConnectorState"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaDeploymentState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaDeploymentState** enumeration type.",
+          "Target": "zebraFotaDeploymentState"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaErrorCode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaErrorCode** enumeration type.",
+          "Target": "zebraFotaErrorCode"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaNetworkType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaNetworkType** enumeration type.",
+          "Target": "zebraFotaNetworkType"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaScheduleMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaScheduleMode** enumeration type.",
+          "Target": "zebraFotaScheduleMode"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaUpdateType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaUpdateType** enumeration type.",
+          "Target": "zebraFotaUpdateType"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidFotaDeploymentAssignment",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **androidFotaDeploymentAssignment** resource type.",
+          "Target": "androidFotaDeploymentAssignment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidFotaDeploymentAssignmentTarget",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **androidFotaDeploymentAssignmentTarget** resource type.",
+          "Target": "androidFotaDeploymentAssignmentTarget"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeploymentSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaDeploymentSettings** resource type.",
+          "Target": "zebraFotaDeploymentSettings"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeploymentStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaDeploymentStatus** resource type.",
+          "Target": "zebraFotaDeploymentStatus"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagement** resource type.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReports",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagementReports** resource type.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaArtifact",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaArtifact** resource type.",
+          "Target": "zebraFotaArtifact"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaConnector",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaConnector** resource type.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zebraFotaDeployment",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **zebraFotaDeployment** resource type.",
+          "Target": "zebraFotaDeployment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "approveFotaApps",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **approveFotaApps** method from the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **cancel** method from the [zebraFotaDeployment](https://learn.microsoft.com/graph/api/intune-zebraFotaDeployment?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaDeployment"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "connect",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **connect** method from the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "disconnect",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **disconnect** method from the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "getZebraFotaDeploymentReport",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getZebraFotaDeploymentReport** method from the [deviceManagementReports](https://learn.microsoft.com/graph/api/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "2fb3072f-7798-4a46-9918-1cfe45c0f620",
+          "ApiChange": "Method",
+          "ChangedApiName": "hasActiveDeployments",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **hasActiveDeployments** method from the [zebraFotaConnector](https://learn.microsoft.com/graph/api/intune-zebraFotaConnector?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaConnector"
+        },
+        {
+          "Id": "4662d182-4906-46ef-860a-50c4e29259d1",
+          "ApiChange": "Method",
+          "ChangedApiName": "changeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [changeSettings](https://learn.microsoft.com/graph/api/intune-targetedManagedAppConfiguration?view=graph-rest-beta) method to the [targetedManagedAppConfiguration](https://learn.microsoft.com/graph/api/intune-targetedManagedAppConfiguration?view=graph-rest-beta) resource.",
+          "Target": "targetedManagedAppConfiguration"
+        },
+        {
+          "Id": "ec4bb876-1e6e-484a-9d31-3e916324e01f",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceId",
+          "ChangeType": "Addition",
+          "Description": "Added the `deviceId` property to the [mobileAppTroubleshootingEvent](https://learn.microsoft.com/graph/api/resources/intune-shared-mobileapptroubleshootingevent?view=graph-rest-beta) resource.",
+          "Target": "mobileAppTroubleshootingEvent"
+        }
+      ],
+      "Id": "5b493ae4-ecb3-4d95-82a4-df22d19277ac",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-17T21:39:47.5922194Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsAppX",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsAppX](https://learn.microsoft.com/graph/api/resources/intune-windowsAppX?view=graph-rest-1.0) resource",
+          "Target": "windowsAppX"
+        }
+      ],
+      "Id": "e7b9b5dc-61ff-472c-960f-08ec52f2e29d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-22T02:24:40.9164229Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-ioslobappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosLobAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosstoreappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosStoreAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityVersion",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `identityVersion` property from the [macOSLobApp](https://learn.microsoft.com/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta) resource.",
+          "Target": "macOSLobApp"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosLobAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-ioslobappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosLobAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosStoreAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosstoreappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosStoreAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [iosVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-iosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "iosVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventAutoAppUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventAutoAppUpdate` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "8c891631-e4a4-4245-9bc6-e14ef26ae22b",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventManagedAppBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `preventManagedAppBackup` property to the [macOsVppAppAssignmentSettings](https://learn.microsoft.com/graph/api/resources/intune-shared-macosvppappassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "macOsVppAppAssignmentSettings"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "androidWorkProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidWorkProfileAccountUse** enumeration type.",
+          "Target": "androidWorkProfileAccountUse"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "macOSPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **macOSPriority** enumeration type.",
+          "Target": "macOSPriority"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "vpnTrafficDirection",
+          "ChangeType": "Addition",
+          "Description": "Added the **vpnTrafficDirection** enumeration type.",
+          "Target": "vpnTrafficDirection"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "vpnTrafficDirection",
+          "ChangeType": "Addition",
+          "Description": "Added the `vpnTrafficDirection` property to the [vpnTrafficRule](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-vpntrafficrule?view=graph-rest-beta) resource.",
+          "Target": "vpnTrafficRule"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedGoogleAccountDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedGoogleAccountDomains` property to the [androidForWorkGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the `workProfileAccountUse` property to the [androidForWorkGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedGoogleAccountDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the `allowedGoogleAccountDomains` property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfileAccountUse",
+          "ChangeType": "Addition",
+          "Description": "Added the `workProfileAccountUse` property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "activationLockWhenSupervisedAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the `activationLockWhenSupervisedAllowed` property to the [macOSGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "maxUserDeferralsCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `maxUserDeferralsCount` property to the [macOSSoftwareUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSSoftwareUpdateConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the `priority` property to the [macOSSoftwareUpdateConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSSoftwareUpdateConfiguration"
+        },
+        {
+          "Id": "981417cd-5809-4d76-9e1d-b50c0ee0ae25",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceUpdateStates",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceUpdateStates** relationship from the [windowsUpdateForBusinessConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) resource.",
+          "Target": "windowsUpdateForBusinessConfiguration"
+        },
+        {
+          "Id": "9f2798f1-1f00-485c-95d2-44f0cb83f249",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "9f2798f1-1f00-485c-95d2-44f0cb83f249",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "e83684d0-553e-47d9-bc25-d327c4d2be38",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMigratingToConfigurationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `isMigratingToConfigurationPolicy` property to the [deviceManagementIntent](https://learn.microsoft.com/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementIntent"
+        },
+        {
+          "Id": "a9e2162d-2320-4abb-97f5-20c2246da1b3",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "a9e2162d-2320-4abb-97f5-20c2246da1b3",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "209b9ecb-b9f0-46df-b742-409816693c6f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "zebraFotaErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **zebraFotaErrorCode** enumeration type.",
+          "Target": "zebraFotaErrorCode"
+        },
+        {
+          "Id": "209b9ecb-b9f0-46df-b742-409816693c6f",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the `errorCode` property to the [zebraFotaDeploymentStatus](https://learn.microsoft.com/graph/api/resources/intune-androidfotaservice-zebrafotadeploymentstatus?view=graph-rest-beta) resource.",
+          "Target": "zebraFotaDeploymentStatus"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDevicesStatusByPolicyPlatformComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDevicesStatusByPolicyPlatformComplianceReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusByCompliacePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusByCompliacePolicyReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusByCompliancePolicySettingReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusByCompliancePolicySettingReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusSummaryByCompliacePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusSummaryByCompliacePolicyReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4849523f-c3ac-41c3-a93a-9061fe126be6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceStatusSummaryByCompliancePolicySettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceStatusSummaryByCompliancePolicySettingsReport](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4db88a4f-4092-429e-b3c8-2ae7b85f3e8f",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        },
+        {
+          "Id": "4db88a4f-4092-429e-b3c8-2ae7b85f3e8f",
+          "ApiChange": "Member",
+          "ChangedApiName": "iOSMobileApplicationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `iOSMobileApplicationManagement` member to the **devicePlatformType** enumeration.",
+          "Target": "devicePlatformType"
+        }
+      ],
+      "Id": "a5030551-c01c-40e5-9c01-21055779399a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-20T21:06:22.1135105Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateStatus** enumeration type.",
+          "Target": "certificateStatus"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enterpriseCodeSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [enterpriseCodeSigningCertificate](https://learn.microsoft.com/graph/api/resources/intune-enterpriseCodeSigningCertificate?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "enterpriseCodeSigningCertificate"
+        },
+        {
+          "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosLobAppProvisioningConfigurationAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosLobAppProvisioningConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-iosLobAppProvisioningConfigurationAssignment?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "iosLobAppProvisioningConfigurationAssignment"
+        }
+      ],
+      "Id": "ee873dfb-9f75-423e-8f1c-93aca05e6edb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-02-24T19:29:25.3635133Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1b1df16b-4cd4-40a1-bf07-2be59450ef36",
           "ApiChange": "Key",
           "ChangedApiName": "deviceManagement",
@@ -1353,7 +2257,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAuditCategories",
           "ChangeType": "Addition",
-          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",          
+          "Description": "Added the [getAuditCategories](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) method to the [auditEvent](https://learn.microsoft.com/graph/api/resources/intune-auditing-auditEvent?view=graph-rest-1.0) resource.",
           "Target": "auditEvent"
         }
       ],
@@ -22986,4 +23890,3 @@
     }
   ]
 }
-

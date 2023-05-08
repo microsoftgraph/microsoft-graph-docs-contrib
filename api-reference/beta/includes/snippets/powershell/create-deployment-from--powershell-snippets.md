@@ -8,28 +8,28 @@ Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	Content = @{
+	content = @{
 		"@odata.type" = "#microsoft.graph.windowsUpdates.catalogContent"
-		CatalogEntry = @{
+		catalogEntry = @{
 			"@odata.type" = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry"
-			Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606"
+			id = "f341705b-0b15-4ce3-aaf2-6a1681d78606"
 		}
 	}
-	Settings = @{
+	settings = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
-		Schedule = @{
-			GradualRollout = @{
+		schedule = @{
+			gradualRollout = @{
 				"@odata.type" = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"
-				DurationBetweenOffers = "P7D"
-				DevicePerOffer = 
+				durationBetweenOffers = "P7D"
+				devicePerOffer = 
 			}
 		}
-		Monitoring = @{
-			MonitoringRules = @(
+		monitoring = @{
+			monitoringRules = @(
 				@{
-					Signal = "rollback"
-					Threshold = 5
-					Action = "pauseDeployment"
+					signal = "rollback"
+					threshold = 5
+					action = "pauseDeployment"
 				}
 			)
 		}

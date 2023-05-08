@@ -16,7 +16,7 @@ $requestBody->setType(new IdentityType('group'));
 
 
 
-$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->groupsById('externalGroup-id')->members()->post($requestBody);
+$result = $graphServiceClient->external()->connectionsById('externalConnection-id')->groupsById('externalGroup-id')->members()->post($requestBody);
 
 
 ```

@@ -9,22 +9,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new ExternalItem();
-$aclAcl1 = new Acl();
-$aclAcl1->setType(new AclType('everyone'));
+$requestBody = new Item();
+$additionalData = [
+		'acl' => $acl1 = new ();
+$		acl1->setType('everyone');
 
-$aclAcl1->setValue('67a141d8-cf4e-4528-ba07-bed21bfacd2d');
+$		acl1->setValue('67a141d8-cf4e-4528-ba07-bed21bfacd2d');
 
-$aclAcl1->setAccessType(new AccessType('grant'));
+$		acl1->setAccessType('grant');
 
 
-$aclArray []= $aclAcl1;
+$aclArray []= $acl1;
 $requestBody->setAcl($aclArray);
 
 
+];
+$requestBody->setAdditionalData($additionalData);
 
 
-$requestResult = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
+
+
+$graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->patch($requestBody);
 
 
 ```

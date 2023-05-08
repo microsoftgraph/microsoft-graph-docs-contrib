@@ -33,7 +33,7 @@ $fromUser->setId('6b3f3c54-d09c-4fdd-b146-9b514a8a4f40');
 $fromUser->setDisplayName('Lam Cong');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $fromUser->setAdditionalData($additionalData);
 
 $from->setUser($fromUser);
 $additionalData = [
-'conversation' => 		null,
+		'conversation' => 		null,
 ];
 $from->setAdditionalData($additionalData);
 
@@ -75,7 +75,7 @@ $mentionsChatMessageMention1MentionedUser->setId('f1b66449-b46d-49b0-9c3c-53c102
 $mentionsChatMessageMention1MentionedUser->setDisplayName('Lam Cong');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+	'userIdentityType' => 'aadUser', 
 ];
 $mentionsChatMessageMention1MentionedUser->setAdditionalData($additionalData);
 
@@ -98,7 +98,7 @@ $mentionsChatMessageMention2MentionedApplication->setId('03a02232-d8f5-4970-a77e
 $mentionsChatMessageMention2MentionedApplication->setDisplayName('TestGlobalBot');
 
 $additionalData = [
-'applicationIdentityType' => 'bot', 
+	'applicationIdentityType' => 'bot', 
 ];
 $mentionsChatMessageMention2MentionedApplication->setAdditionalData($additionalData);
 
@@ -122,7 +122,7 @@ $requestBody->setReactions([]);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTeam()
 displayName := "My Class Team"
@@ -47,12 +55,12 @@ requestBody.SetMemberSettings(memberSettings)
 
 teamsAppInstallation := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
 }
 teamsAppInstallation.SetAdditionalData(additionalData)
 teamsAppInstallation1 := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
 }
 teamsAppInstallation1.SetAdditionalData(additionalData)
 
@@ -63,7 +71,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
-	"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

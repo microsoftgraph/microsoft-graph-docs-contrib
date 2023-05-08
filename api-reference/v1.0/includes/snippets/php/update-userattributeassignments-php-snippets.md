@@ -14,7 +14,7 @@ $requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textbox')
 
 
 
-$requestResult = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignmentsById('identityUserFlowAttributeAssignment-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignmentsById('identityUserFlowAttributeAssignment-id')->patch($requestBody);
 
 
 ```

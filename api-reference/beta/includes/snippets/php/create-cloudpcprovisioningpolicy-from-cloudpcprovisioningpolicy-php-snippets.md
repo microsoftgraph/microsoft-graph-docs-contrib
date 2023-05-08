@@ -20,7 +20,7 @@ $domainJoinConfiguration = new CloudPcDomainJoinConfiguration();
 $domainJoinConfiguration->setOnPremisesConnectionId('16ee6c71-fc10-438b-88ac-daa1ccafffff');
 
 $additionalData = [
-'domainJoinType' => 'hybridAzureADJoin', 
+		'domainJoinType' => 'hybridAzureADJoin', 
 ];
 $domainJoinConfiguration->setAdditionalData($additionalData);
 
@@ -46,7 +46,7 @@ $requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
 
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody);
 
 
 ```

@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new MembersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new MembersRequestBuilderGetQueryParameters();
+$queryParameters = MembersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "roles/any";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
+$result = $graphServiceClient->teamsById('team-id')->members()->get($requestConfiguration);
 
 
 ```

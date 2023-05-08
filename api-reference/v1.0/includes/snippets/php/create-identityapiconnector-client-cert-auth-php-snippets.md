@@ -18,8 +18,8 @@ $authenticationConfiguration = new ApiAuthenticationConfigurationBase();
 $authenticationConfiguration->set@odatatype('#microsoft.graph.pkcs12Certificate');
 
 $additionalData = [
-'pkcs12Value' => 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA', 
-'password' => 'CertificatePassword', 
+		'pkcs12Value' => 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA', 
+		'password' => 'CertificatePassword', 
 ];
 $authenticationConfiguration->setAdditionalData($additionalData);
 
@@ -28,7 +28,7 @@ $authenticationConfiguration->setAdditionalData($additionalData);
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 
 
-$requestResult = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
+$result = $graphServiceClient->identity()->apiConnectors()->post($requestBody);
 
 
 ```

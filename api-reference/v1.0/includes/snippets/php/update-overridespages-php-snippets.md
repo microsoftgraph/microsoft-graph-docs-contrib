@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new $valuePutRequestBody();
 $additionalData = [
-'LocalizedStrings' => $localizedStrings1 = new ();
+		'LocalizedStrings' => $localizedStrings1 = new ();
 $		localizedStrings1->setElementType('UxElement');
 
 		$localizedStrings1->setElementId(null);

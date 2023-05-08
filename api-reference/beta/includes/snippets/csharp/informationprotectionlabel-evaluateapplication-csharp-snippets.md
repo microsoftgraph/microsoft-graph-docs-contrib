@@ -4,79 +4,101 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var contentInfo = new ContentInfo
+var requestBody = new Microsoft.Graph.Beta.InformationProtection.Policy.Labels.EvaluateApplication.EvaluateApplicationPostRequestBody
 {
-	Format = ContentFormat.Default,
-	Identifier = null,
-	State = ContentState.Rest,
-	Metadata = new List<KeyValuePair>()
+	ContentInfo = new ContentInfo
 	{
-		new KeyValuePair
+		OdataType = "#microsoft.graph.contentInfo",
+		Format = ContentFormat.Default,
+		Identifier = null,
+		State = ContentState.Rest,
+		Metadata = new List<KeyValuePair>
 		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
-			Value = "True"
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+				Value = "True",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+				Value = "Standard",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+				Value = "1/1/0001 12:00:00 AM",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+				Value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+				Value = "General",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+				Value = "0",
+			},
+			new KeyValuePair
+			{
+				OdataType = "#microsoft.graph.keyValuePair",
+				Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+				Value = "00000000-0000-0000-0000-000000000000",
+			},
 		},
-		new KeyValuePair
+		AdditionalData = new Dictionary<string, object>
 		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
-			Value = "Standard"
+			{
+				"format@odata.type" , "#microsoft.graph.contentFormat"
+			},
+			{
+				"state@odata.type" , "#microsoft.graph.contentState"
+			},
+			{
+				"metadata@odata.type" , "#Collection(microsoft.graph.keyValuePair)"
+			},
 		},
-		new KeyValuePair
-		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
-			Value = "1/1/0001 12:00:00 AM"
-		},
-		new KeyValuePair
-		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
-			Value = "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
-		},
-		new KeyValuePair
-		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-			Value = "General"
-		},
-		new KeyValuePair
-		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
-			Value = "0"
-		},
-		new KeyValuePair
-		{
-			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
-			Value = "00000000-0000-0000-0000-000000000000"
-		}
 	},
-	AdditionalData = new Dictionary<string, object>()
+	LabelingOptions = new LabelingOptions
 	{
-		{"format@odata.type", "#microsoft.graph.contentFormat"},
-		{"state@odata.type", "#microsoft.graph.contentState"},
-		{"metadata@odata.type", "#Collection(microsoft.graph.keyValuePair)"}
-	}
+		OdataType = "#microsoft.graph.labelingOptions",
+		AssignmentMethod = AssignmentMethod.Standard,
+		LabelId = "97309856-9c28-4ac6-9382-5f8bc20c457b",
+		DowngradeJustification = null,
+		ExtendedProperties = new List<KeyValuePair>
+		{
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"assignmentMethod@odata.type" , "#microsoft.graph.assignmentMethod"
+			},
+			{
+				"labelId@odata.type" , "#Guid"
+			},
+			{
+				"extendedProperties@odata.type" , "#Collection(microsoft.graph.keyValuePair)"
+			},
+		},
+	},
 };
-
-var labelingOptions = new LabelingOptions
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateApplication.PostAsync(requestBody, (requestConfiguration) =>
 {
-	AssignmentMethod = AssignmentMethod.Standard,
-	LabelId = "97309856-9c28-4ac6-9382-5f8bc20c457b",
-	DowngradeJustification = null,
-	ExtendedProperties = new List<KeyValuePair>()
-	{
-	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"assignmentMethod@odata.type", "#microsoft.graph.assignmentMethod"},
-		{"labelId@odata.type", "#Guid"},
-		{"extendedProperties@odata.type", "#Collection(microsoft.graph.keyValuePair)"}
-	}
-};
+	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
+});
 
-await graphClient.InformationProtection.Policy.Labels
-	.EvaluateApplication(contentInfo,labelingOptions)
-	.Request()
-	.Header("User-Agent","ContosoLOBApp/1.0")
-	.PostAsync();
 
 ```

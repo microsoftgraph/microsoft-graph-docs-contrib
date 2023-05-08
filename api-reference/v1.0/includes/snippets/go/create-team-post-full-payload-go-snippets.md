@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTeam()
 visibility := graphmodels.PRIVATE_TEAMVISIBILITYTYPE 
@@ -40,7 +48,7 @@ contentUrl := "https://learn.microsoft.com/microsoftteams/microsoft-teams"
 configuration.SetContentUrl(&contentUrl) 
 teamsTab.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')", 
 }
 teamsTab.SetAdditionalData(additionalData)
 teamsTab1 := graphmodels.NewTeamsTab()
@@ -53,7 +61,7 @@ websiteUrl := "https://www.youtube.com/watch?v=X8krAMdGvCQ"
 configuration.SetWebsiteUrl(&websiteUrl) 
 teamsTab1.SetConfiguration(configuration)
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')", 
 }
 teamsTab1.SetAdditionalData(additionalData)
 
@@ -124,20 +132,16 @@ messagingSettings.SetAllowTeamMentions(&allowTeamMentions)
 allowChannelMentions := true
 messagingSettings.SetAllowChannelMentions(&allowChannelMentions) 
 requestBody.SetMessagingSettings(messagingSettings)
-discoverySettings := graphmodels.NewTeamDiscoverySettings()
-showInTeamsSearchAndSuggestions := true
-discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
-requestBody.SetDiscoverySettings(discoverySettings)
 
 
 teamsAppInstallation := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')", 
 }
 teamsAppInstallation.SetAdditionalData(additionalData)
 teamsAppInstallation1 := graphmodels.NewTeamsAppInstallation()
 additionalData := map[string]interface{}{
-	"teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')", 
 }
 teamsAppInstallation1.SetAdditionalData(additionalData)
 
@@ -148,7 +152,11 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 additionalData := map[string]interface{}{
-	"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')", 
+discoverySettings := graphmodels.New()
+	showInTeamsSearchAndSuggestions := true
+discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
+	requestBody.SetDiscoverySettings(discoverySettings)
 }
 requestBody.SetAdditionalData(additionalData)
 

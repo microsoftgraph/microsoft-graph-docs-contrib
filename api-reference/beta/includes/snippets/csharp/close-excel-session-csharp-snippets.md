@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook
-	.CloseSession()
-	.Request()
-	.Header("workbook-session-id","{session-id}")
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.CloseSession.CloseSessionPostRequestBody
+{
+};
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.CloseSession.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("workbook-session-id", "{session-id}");
+});
+
 
 ```

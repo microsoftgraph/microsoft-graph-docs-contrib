@@ -13,14 +13,14 @@ $requestBody = new MailFolder();
 $requestBody->set@odatatype('microsoft.graph.mailSearchFolder');
 
 $additionalData = [
-'filterQuery' => 'contains(subject, \'Analytics\')', 
+		'filterQuery' => 'contains(subject, \'Analytics\')', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
+$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
 
 
 ```

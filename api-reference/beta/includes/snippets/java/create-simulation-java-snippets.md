@@ -8,14 +8,10 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Simulation simulation = new Simulation();
 simulation.displayName = "Graph Simulation";
-simulation.payloadDeliveryPlatform = PayloadDeliveryPlatform.EMAIL;
 simulation.additionalDataManager().put("payload@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a"));
-simulation.durationInDays = 7;
 simulation.attackTechnique = SimulationAttackTechnique.CREDENTIAL_HARVESTING;
-simulation.attackType = SimulationAttackType.SOCIAL;
 simulation.status = SimulationStatus.SCHEDULED;
-simulation.completionDateTime = OffsetDateTimeSerializer.deserialize("2022-09-16T06:13:08.4297612Z");
-simulation.launchDateTime = OffsetDateTimeSerializer.deserialize("2022-09-05T06:13:08.4297612Z");
+simulation.durationInDays = "3";
 AddressBookAccountTargetContent includedAccountTarget = new AddressBookAccountTargetContent();
 includedAccountTarget.type = AccountTargetContentType.ADDRESS_BOOK;
 LinkedList<String> accountTargetEmailsList = new LinkedList<String>();

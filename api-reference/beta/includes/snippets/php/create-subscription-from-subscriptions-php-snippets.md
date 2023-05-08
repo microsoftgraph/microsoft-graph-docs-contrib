@@ -24,7 +24,7 @@ $requestBody->setLatestSupportedTlsVersion('v1_2');
 
 
 
-$requestResult = $graphServiceClient->subscriptions()->post($requestBody);
+$result = $graphServiceClient->subscriptions()->post($requestBody);
 
 
 ```

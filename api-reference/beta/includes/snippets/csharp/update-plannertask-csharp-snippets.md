@@ -33,6 +33,18 @@ var requestBody = new PlannerTask
 			},
 		},
 	},
+	Recurrence = new PlannerTaskRecurrence
+	{
+		Schedule = new PlannerRecurrenceSchedule
+		{
+			Pattern = new RecurrencePattern
+			{
+				Type = RecurrencePatternType.Daily,
+				Interval = 3,
+			},
+			PatternStartDateTime = DateTimeOffset.Parse("2022-02-22T02:10:33Z"),
+		},
+	},
 };
 var result = await graphClient.Planner.Tasks["{plannerTask-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {

@@ -5,7 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/planner"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
@@ -54,7 +64,7 @@ checklist.Set"a93c93c5-10a6-4167-9551-8bafa09967a7"(&"a93c93c5-10a6-4167-9551-8b
 checklist.SetAdditionalData(additionalData)
 requestBody.SetChecklist(checklist)
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

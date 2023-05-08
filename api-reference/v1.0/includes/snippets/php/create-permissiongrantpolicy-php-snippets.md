@@ -18,7 +18,7 @@ $requestBody->setDescription('A custom permission grant policy to customize cond
 
 
 
-$requestResult = $graphServiceClient->policies()->permissionGrantPolicies()->post($requestBody);
+$result = $graphServiceClient->policies()->permissionGrantPolicies()->post($requestBody);
 
 
 ```
