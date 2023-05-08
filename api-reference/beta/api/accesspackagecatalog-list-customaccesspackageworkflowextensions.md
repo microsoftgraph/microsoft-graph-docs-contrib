@@ -88,7 +88,6 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

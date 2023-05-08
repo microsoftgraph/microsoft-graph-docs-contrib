@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/security/triggerTypes/retentionEventType
 [!INCLUDE [sample-code](../includes/snippets/php/delete-retentioneventtype-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-retentioneventtype-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

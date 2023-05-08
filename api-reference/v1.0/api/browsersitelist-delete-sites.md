@@ -130,7 +130,6 @@ DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteList
 
 ---
 
-
 #### Response
 The following is an example of the response where the status has changed to `pendingDelete` but the site is still published. You must publish the site to fully remove it from the site list.
 >**Note:** The response object shown here might be shortened for readability.

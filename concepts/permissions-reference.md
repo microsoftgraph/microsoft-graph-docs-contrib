@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/12/2023
+ms.date: 05/05/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -530,6 +530,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Chat.Read_ |Read your chat messages.  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
 |_Chat.ReadBasic_ |Read names and members of user chat threads.  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
 |_Chat.ReadWrite_ |Read your chat messages and send new ones.  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.ManageDeletion.All_ |Delete and recover deleted chats.  |Allows the app to delete and recover deleted chats, on behalf of the signed-in user. |Yes | No |
 
 #### Application permissions
 
@@ -542,6 +543,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy. |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 |_Chat.ReadWrite.WhereInstalled_ |Read and write all chat messages for chats where the associated Teams application is installed. |Allows the app to read and write all chat messages in Microsoft Teams for chats where the associated Teams application is installed, without a signed-in user. | Yes | No |
 |_Chat.ReadWrite.All_ |Read and write all chat messages. |Allows an app to read and write all one-to-one and group chats in Microsoft Teams, without a signed-in user. Does not allow sending messages. | Yes | No |
+|_Chat.ManageDeletion.All_ |Delete and recover deleted chats. |Allows the app to delete and recover deleted chats, without a signed-in user. | Yes | No |
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
@@ -983,6 +985,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _LearningContent.ReadWrite.All_  |    Manage learning content | Allows the app to manage all learning content in the organization's directory, on behalf of the signed-in user. | Yes | No |
 | _LearningProvider.Read_ |    Read learning provider | Allows the app to read data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
 | _LearningProvider.ReadWrite_  |    Manage learning provider | Allows the app to create, update, read, and delete data for the learning provider in the organization's directory, on behalf of the signed-in user. | Yes | No |
+| _LearningAssignedCourse.Read_  |    Read assignment | Allows the app to read data for assignment record in organization's directory on behalf of the signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.Read_  |    Read self-initiated course | Allows the app to read data for self-initiated course record in organization's directory on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -990,6 +994,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _LearningContent.Read.All_ |    Read all learning content | Allows the app to read all learning content in the organization's directory, without a signed-in user. | Yes | No |
 | _LearningContent.ReadWrite.All_  |    Manage all learning content | Allows the app to manage all learning content in the organization's directory, without a signed-in user. | Yes | No |
+| _LearningAssignedCourse.Read.All_ |    Read learning assignment | Allows the app to read data for learning assignment record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.Read.All_ |    Read learning self-initiated course| Allows the app to read data for learning self-initiated course record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningAssignedCourse.ReadWrite.All_ |    Manage all learning assignment for learner | Allows the app to create/read/update/delete data for learning assignment record in organization's directory, without a signed-in user. | Yes | No |
+| _LearningSelfInitiatedCourse.ReadWrite.All_ |    Manage all self-initiated course for learner | Allows the app to create/read/update/delete data for self-initiated course record in organization's directory, without a signed-in user. | Yes | No |
 
 
 ---
@@ -1788,6 +1796,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureADGroup_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
+| _PrivilegedAssignmentSchedule.Read.AzureADGroup_ |Read assignment schedules for access to Azure AD groups | Allows the app to read time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedEligibilitySchedule.Read.AzureADGroup_ |Read eligibility schedules for access to Azure AD groups | Allows the app to read time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup_ |Read, create, and delete assignment schedules for access to Azure AD groups| Allows the app to read, create, and delete time-based assignment schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
+| _PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup_ |Read, create, and delete eligibility schedules for access to Azure AD groups | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
@@ -1796,6 +1808,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
 | _PrivilegedAccess.Read.AzureADGroup_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
 | _PrivilegedAccess.Read.AzureResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
+| _PrivilegedAssignmentSchedule.Read.AzureADGroup_ |Read assignment schedules for access to Azure AD groups | Allows the app to read time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedEligibilitySchedule.Read.AzureADGroup_ |Read eligibility schedules for access to Azure AD groups | Allows the app to read time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup_ |Read, create, and delete assignment schedules for access to Azure AD groups| Allows the app to read, create, and delete time-based assignment schedules for access to Azure AD groups, without a signed-in user. | Yes |
+| _PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup_ |Read, create, and delete eligibility schedules for access to Azure AD groups | Allows the app to read, create, and delete time-based eligibility schedules for access to Azure AD groups, without a signed-in user. | Yes |
 
 ---
 

@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ``` http
-POST sites/{site-id}/termStore/sets/{set-id}/children
-POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
+POST /sites/{site-id}/termStore/sets/{set-id}/children
+POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ```
 
 ## Request headers
