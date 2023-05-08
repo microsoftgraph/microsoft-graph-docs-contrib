@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipalSignInActivity resource type"
 description: "Represents the service principal signIn activity usage in a given tenant."
-localization_priority: medium
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "reports"
 doc_type: "resourcePageType"

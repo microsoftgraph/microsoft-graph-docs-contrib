@@ -1,7 +1,7 @@
 ---
 title: "appCredentialSignInActivity resource type"
 description: "Represents the application credential activity in a given tenant."
-localization_priority: medium
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "reports"
 doc_type: "resourcePageType"
