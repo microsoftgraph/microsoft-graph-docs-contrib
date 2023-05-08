@@ -13206,7 +13206,7 @@
     {
       "ChangeList": [
         {
-          "Id": "69ad4a0a-d2fa-41ec-a670-944ba4231025",
+          "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
           "ApiChange": "Property",
           "ChangedApiName": "isLicenseReconciliationNeeded",
           "ChangeType": "Addition",
@@ -13214,12 +13214,12 @@
           "Target": "user"
         }
       ],
-      "Id": "69ad4a0a-d2fa-41ec-a670-944ba4231025",
+      "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-05-02T06:47:19.8519616Z",
-      "WorkloadArea": "Users",
-      "SubArea": ""
-    }   
+      "CreatedDateTime": "2023-05-03T08:54:08.6528325Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }  
   ]
 }
