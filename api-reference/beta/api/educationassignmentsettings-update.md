@@ -118,7 +118,7 @@ Content-Type: application/json
 }
 ```
 ### Example 2: Create grading categories
-### Request
+#### Request
 The following is an example of the request.
 
 
