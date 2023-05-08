@@ -12,14 +12,6 @@
         },
         {
           "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "longRunningOperationStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **longRunningOperationStatus** enumeration type.",
-          "Target": "longRunningOperationStatus"
-        },
-        {
-          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
           "ApiChange": "Resource",
           "ChangedApiName": "roleManagementAlerts",
           "ChangeType": "Addition",
@@ -31,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "invalidLicenseAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [invalidLicenseAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [invalidLicenseAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "invalidLicenseAlertConfiguration"
         },
         {
@@ -39,23 +31,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "invalidLicenseAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [invalidLicenseAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [invalidLicenseAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/invalidLicenseAlertIncident?view=graph-rest-beta) resource.",
           "Target": "invalidLicenseAlertIncident"
-        },
-        {
-          "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "longRunningOperation",
-          "ChangeType": "Addition",
-          "Description": "Added the [longRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-beta) resource",
-          "Target": "longRunningOperation"
         },
         {
           "Id": "7ed39a6d-65eb-4b0d-8de0-1c1a6897347a",
           "ApiChange": "Resource",
           "ChangedApiName": "noMfaOnRoleActivationAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [noMfaOnRoleActivationAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [noMfaOnRoleActivationAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "noMfaOnRoleActivationAlertConfiguration"
         },
         {
@@ -63,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "noMfaOnRoleActivationAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [noMfaOnRoleActivationAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [noMfaOnRoleActivationAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/noMfaOnRoleActivationAlertIncident?view=graph-rest-beta) resource.",
           "Target": "noMfaOnRoleActivationAlertIncident"
         },
         {
@@ -71,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "redundantAssignmentAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [redundantAssignmentAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [redundantAssignmentAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "redundantAssignmentAlertConfiguration"
         },
         {
@@ -79,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "redundantAssignmentAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [redundantAssignmentAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [redundantAssignmentAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/redundantAssignmentAlertIncident?view=graph-rest-beta) resource.",
           "Target": "redundantAssignmentAlertIncident"
         },
         {
@@ -87,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleManagementAlert",
           "ChangeType": "Addition",
-          "Description": "Added the [roleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/roleManagementAlert?view=graph-rest-beta) resource",
+          "Description": "Added the [roleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/roleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "roleManagementAlert"
         },
         {
@@ -95,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration"
         },
         {
@@ -103,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident?view=graph-rest-beta) resource.",
           "Target": "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident"
         },
         {
@@ -111,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sequentialActivationRenewalsAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [sequentialActivationRenewalsAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [sequentialActivationRenewalsAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "sequentialActivationRenewalsAlertConfiguration"
         },
         {
@@ -119,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sequentialActivationRenewalsAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [sequentialActivationRenewalsAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [sequentialActivationRenewalsAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/sequentialActivationRenewalsAlertIncident?view=graph-rest-beta) resource.",
           "Target": "sequentialActivationRenewalsAlertIncident"
         },
         {
@@ -127,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "staleSignInAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [staleSignInAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [staleSignInAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "staleSignInAlertConfiguration"
         },
         {
@@ -135,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "staleSignInAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [staleSignInAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [staleSignInAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/staleSignInAlertIncident?view=graph-rest-beta) resource.",
           "Target": "staleSignInAlertIncident"
         },
         {
@@ -143,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "tooManyGlobalAdminsAssignedToTenantAlertConfiguration"
         },
         {
@@ -151,7 +135,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tooManyGlobalAdminsAssignedToTenantAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [tooManyGlobalAdminsAssignedToTenantAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/tooManyGlobalAdminsAssignedToTenantAlertIncident?view=graph-rest-beta) resource.",
           "Target": "tooManyGlobalAdminsAssignedToTenantAlertIncident"
         },
         {
@@ -159,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementAlert",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource",
+          "Description": "Added the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlert"
         },
         {
@@ -167,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementAlertConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [unifiedRoleManagementAlertConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertConfiguration?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertConfiguration"
         },
         {
@@ -175,7 +159,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementAlertDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementAlertDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [unifiedRoleManagementAlertDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertDefinition?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertDefinition"
         },
         {
@@ -183,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementAlertIncident",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource",
+          "Description": "Added the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertIncident"
         },
         {
@@ -191,7 +175,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "refresh",
           "ChangeType": "Addition",
-          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-refresh?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlert"
         },
         {
@@ -199,7 +183,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "refresh",
           "ChangeType": "Addition",
-          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-refresh?view=graph-rest-beta) method to the [unifiedRoleManagementAlert](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlert?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlert"
         },
         {
@@ -207,7 +191,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "remediate",
           "ChangeType": "Addition",
-          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlertIncident?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-remediate?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertIncident"
         }
       ],
