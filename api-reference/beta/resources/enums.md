@@ -30,7 +30,25 @@ Namespace: microsoft.graph
 | application
 | servicePrincipal
 
+
 ### assignmentType values
+
+| Member             |
+| :----------------- |
+| Required           |
+| Recommeded         |
+| UnknownFutureValue |
+
+### courseStatus values
+
+| Member     |
+| :--------- |
+| notStarted |
+| inProgress |
+| completed  |
+
+### usqState values
+
 | Member    |
 | :-------- |
 | norma.    |
@@ -1285,23 +1303,27 @@ Namespace: microsoft.graph
 
 | Member
 |:--------------
-|sign
-|verify
+| everyone
+| authorAndModerators
+| unknownFutureValue
 
-### credentialOrigin values
+### userNewMessageRestriction values
+
 | Member
 |:--------------
-| application
-| servicePrincipal
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
 
 ### volumeType values
 
-| Member
-|:--------------
-| operatingSystemVolume
-| fixedDataVolume
-| removableDataVolume
-| unknownFutureValue
+| Member                |
+| :-------------------- |
+| operatingSystemVolume |
+| fixedDataVolume       |
+| removableDataVolume   |
+| unknownFutureValue    |
 
 ### allowedAudiences values
 
@@ -1318,10 +1340,11 @@ Namespace: microsoft.graph
 
 ### attestationLevel values
 
-| Member      |
-| :---------- |
-| attested    |
-| notAttested |
+| Member             |
+| :----------------- |
+| attested           |
+| notAttested        |
+| unknownFutureValue |
 
 ### emailType values
 
@@ -1332,6 +1355,28 @@ Namespace: microsoft.graph
 | personal |
 | main     |
 | other    |
+
+### authenticationMethodSignInState values
+
+| Member               |
+| :------------------- |
+| notSupported         |
+| notAllowedByPolicy   |
+| notEnabled           |
+| phoneNumberNotUnique |
+| ready                |
+| notConfigured        |
+| unknownFutureValue   |
+
+### authenticationPhoneType values
+
+| Member             |
+| :----------------- |
+| mobile             |
+| alternateMobile    |
+| office             |
+| unknownFutureValue |
+
 
 ### authenticationMethodTargetType values
 
@@ -1349,17 +1394,25 @@ Namespace: microsoft.graph
 
 ### fido2RestrictionEnforcementType values
 
-| Member |
-| :----- |
-| allow  |
-| block  |
+| Member             |
+| :----------------- |
+| allow              |
+| block              |
+| unknownFutureValue |
 
-### authenticatorAppContextType values
+### x509CertificateAuthenticationMode values
+| Member                      |
+| :-------------------------- |
+| x509CertificateSingleFactor |
+| x509CertificateMultiFactor  |
+| unknownFutureValue          |
 
-| Member   |
-| :------- |
-| location |
-| app      |
+### x509CertificateRuleType values
+| Member             |
+| :----------------- |
+| issuerSubject      |
+| policyOID          |
+| unknownFutureValue |
 
 ### anniversaryType values
 
@@ -1445,16 +1498,27 @@ Namespace: microsoft.graph
 
 ### entityTypes values
 
+| Member             |
+| :----------------- |
+| event              |
+| message            |
+| driveItem          |
+| externalItem       |
+| site               |
+| list               |
+| listItem           |
+| drive              |
+| acronym            |
+| bookmark           |
+| chatMessage        |
+| unknownFutureValue |
+
+### searchAlterationType values
+
 | Member       |
 | :----------- |
-| event        |
-| message      |
-| driveItem    |
-| externalItem |
-| site         |
-| list         |
-| listItem     |
-| drive        |
+| modification |
+| suggestion   |
 
 ### bucketAggregationSortProperty values
 
@@ -1523,6 +1587,15 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
+### timeCardState values
+
+| Member             |
+| :----------------- |
+| clockedIn          |
+| onBreak            |
+| clockedOut         |
+| unknownFutureValue |
+
 ### scheduleChangeState values
 
 | Member
@@ -1551,14 +1624,29 @@ Namespace: microsoft.graph
 
 ### workforceIntegrationSupportedEntities values
 
+| Member               |
+| :------------------- |
+| none                 |
+| shift                |
+| swapRequest          |
+| userShiftPreferences |
+| openShift            |
+| openShiftRequest     |
+| offerShiftRequest    |
+| unknownFutureValue   |
+| timeCard             |
+| timeOffReason        |
+| timeOff              |
+| timeOffRequest       |
+
+### confirmedBy values
+
 | Member
-|:----------------------------
-|none
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| none|
+| user|
+| manager|
+| unknownFutureValue|
 
 ### timeZoneStandard values
 
@@ -1648,15 +1736,17 @@ Namespace: microsoft.graph
 
 ### educationSynchronizationStatus values
 
-| Member             | Value |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4     |
-| quarantined        | 5     |
-| unknownFutureValue | 6     |
+| Member             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| extracting         |
+| validating         |
 
 ### educationExternalSource values
 
@@ -1833,10 +1923,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values
@@ -2068,7 +2158,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [Registry Hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -2167,7 +2257,7 @@ Possible values for user account types (group membership), per Windows definitio
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
 
-### chatMessagePolicyViolationDlpActionType values
+### chatMessagePolicyViolationDlpActionType values
 
 | Value               |
 | :------------------ |
@@ -2206,22 +2296,14 @@ Possible values for user account types (group membership), per Windows definitio
 | confirmedCompromised |
 | unknownFutureValue   |
 
-### riskDetail values
+### advancedConfigState values
 
-| Member                               |
-| :----------------------------------- |
-| none                                 |
-| adminGeneratedTemporaryPassword      |
-| userPerformedSecuredPasswordChange   |
-| userPerformedSecuredPasswordReset    |
-| adminConfirmedSigninSafe             |
-| aiConfirmedSigninSafe                |
-| userPassedMFADrivenByRiskBasedPolicy |
-| adminDismissedAllRiskForUser         |
-| adminConfirmedSigninCompromised      |
-| adminConfirmedUserCompromised        |
-| hidden                               |
-| unknownFutureValue                   |
+| Member             |
+| :----------------- |
+| default            |
+| enabled            |
+| disabled           |
+| unknownFutureValue |
 
 ### referenceAttachmentPermission values
 
@@ -2243,26 +2325,6 @@ Possible values for user account types (group membership), per Windows definitio
 | oneDriveBusiness |
 | oneDriveConsumer |
 | dropbox          |
-
-### riskEventType values
-
-| Member                                       |
-| :------------------------------------------- |
-| unlikelyTravel                               |
-| anonymizedIPAddress                          |
-| maliciousIPAddress                           |
-| unfamiliarFeatures                           |
-| malwareInfectedIPAddress                     |
-| suspiciousIPAddress                          |
-| leakedCredentials                            |
-| investigationsThreatIntelligence             |
-| generic                                      |
-| adminConfirmedUserCompromised                |
-| mcasImpossibleTravel                         |
-| mcasSuspiciousInboxManipulationRules         |
-| investigationsThreatIntelligenceSigninLinked |
-| maliciousIPAddressValidCredentialsBlockedIP  |
-| unknownFutureValue                           |
 
 ### networkType values
 
@@ -2312,9 +2374,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### chatMessageType values
 
-| Member  |
-| :------ |
-| message |
+| Member             |
+| :----------------- |
+| message            |
+| chatEvent          |
+| typing             |
+| unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessageImportance values
 
@@ -2324,14 +2390,6 @@ Possible values for user account types (group membership), per Windows definitio
 | high   |
 | urgent |
 
-### channelMembershipType values
-
-| Member             | Value |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
-
 ### stagedFeatureName values
 
 | Member                    | Description                   |
@@ -2339,14 +2397,20 @@ Possible values for user account types (group membership), per Windows definitio
 | passthroughAuthentication | Passthrough Authentication    |
 | seamlessSso               | Seamless Single Sign-on       |
 | passwordHashSync          | Password Hash Synchronization |
+| emailAsAlternateId        | Email as an alternate id      |
+| unknownFutureValue        | A sentinel member             |
 
 ### tokenIssuerType values
 
-| Member               |
-| :------------------- |
-| AzureAD              |
-| ADFederationServices |
-| unknownFutureValue   |
+| Member                         |
+| :----------------------------- |
+| AzureAD                        |
+| ADFederationServices           |
+| unknownFutureValue             |
+| AzureADBackupAuth              |
+| ADFederationServicesMFAAdapter |
+| NPSExtension                   |
+
 
 ### riskDetectionTimingType values
 
@@ -2365,6 +2429,7 @@ Possible values for user account types (group membership), per Windows definitio
 | signin             |
 | user               |
 | unknownFutureValue |
+| servicePrincipal   |
 
 ### chatMessagePolicyViolationUserActionType values
 
@@ -2471,57 +2536,15 @@ Possible values for user account types (group membership), per Windows definitio
 | horizontal | 0     | Use a horizontal watermark. |
 | diagonal   | 1     | Use a diagonal watermark.   |
 
-### conditionalAccessPolicyState
+### conditionalAccessPolicyState values
 
-| Member   |
-| :------- |
-| enabled  |
-| disabled |
+| Member                            |
+| :-------------------------------- |
+| enabled                           |
+| disabled                          |
+| enabledForReportingButNotEnforced |
 
-### conditionalAccessClientApp
-
-| Member         |
-| :------------- |
-| browser        |
-| modern         |
-| easSupported   |
-| easUnsupported |
-| other          |
-
-### conditionalAccessGrantControl
-
-| Member               |
-| :------------------- |
-| block                |
-| mfa                  |
-| compliantDevice      |
-| domainJoinedDevice   |
-| approvedApplication  |
-| compliantApplication |
-
-### cloudAppSecuritySessionControlType
-
-| Member         |
-| :------------- |
-| mcasConfigured |
-| monitorOnly    |
-| blockDownloads |
-
-### signinFrequencyType
-
-| Member |
-| :----- |
-| days   |
-| hours  |
-
-### persistentBrowserSessionMode
-
-| Member |
-| :----- |
-| always |
-| never  |
-
-### conditionalAccessDevicePlatform
+### conditionalAccessGrantControl values
 
 | Member               |
 | :------------------- |
@@ -2626,6 +2649,17 @@ Possible values for user account types (group membership), per Windows definitio
 | High   | 1     |
 | Low    | 2     |
 
+### templateScenarios values
+| Member             |
+| :----------------- |
+| new                |
+| secureFoundation   |
+| zeroTrust          |
+| remoteWork         |
+| protectAdmins      |
+| emergingThreats    |
+| unknownFutureValue |
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
@@ -2701,22 +2735,8 @@ Possible values for user account types (group membership), per Windows definitio
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
 
-### riskEventTypes values
-
-| Member
-|:-------------------------
-| unlikelyTravel
-| anonymizedIPAddress
-| maliciousIPAddress
-| unfamiliarFeatures
-| malwareInfectedIPAddress
-| suspiciousIPAddress
-| leakedCredentials
-| investigationsThreatIntelligence
-| generic
-| unknownFutureValue
-
 ### userFlowType values
+
 |Member
 |:----------------------
 | signUp
@@ -2724,26 +2744,19 @@ Possible values for user account types (group membership), per Windows definitio
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
+
 | Member
 |:----------------------
-| none
 | form_post
 | query
 | unknownFutureValue
 
-### openIdConnectResponseTypes values
-| Member
-|:----------------------
-| none
-| code
-| id_token
-| token
-
 ### wellknownListName values
+
 | Member
 |:----------------------
 | none
@@ -2752,6 +2765,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue
 
 ### taskStatus values
+
 | Member
 |:----------------------
 | notStarted
@@ -2759,6 +2773,30 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### columnTypes values
+
+| Member             | Description                                        |
+| :----------------- | :------------------------------------------------- |
+| note               | multiline text.                                    |
+| text               | single line text.                                  |
+| choice             | choice column                                      |
+| multichoice        | multichoice column.                                |
+| number             | number column.                                     |
+| currency           | currency column.                                   |
+| dateTime           | dateTime column.                                   |
+| lookup             | lookup column.                                     |
+| boolean            | Yes/No column.                                     |
+| user               | person or group column.                            |
+| url                | hyperlink or picture column.                       |
+| calculated         | calculated column.                                 |
+| location           | location column.                                   |
+| geolocation        | geolocation column.                                |
+| term               | managed metadata column.                           |
+| multiterm          | managed metadata column accepting multiple values. |
+| thumbnail          | Image column.                                      |
+| approvalStatus     | Content approval status column.                    |
+| unknownFutureValue | unknownFuturevalue                                 |
 
 ### connectedOrganizationState values
 
@@ -2768,21 +2806,25 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed           | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`. |
 | unknownFutureValue | 2     | A sentinel member.                                                                                                                                                                                               |
 
-### identitySourceType values
+### identityUserFlowAttributeDataType values
 
-| Member               |
-| :------------------- |
-| azureActiveDirectory |
-| external             |
+| Member             | Value | Description                 |
+| :----------------- | :---- | :-------------------------- |
+| string             | 1     | String data type            |
+| boolean            | 2     | Boolean data type           |
+| int64              | 3     | Int data type               |
+| stringCollection   | 4     | String collection data type |
+| dateTime           | 5     |                             |
+| unknownFutureValue | 6     | A sentinel member.          |
 
-### externalGroupMemberType values
+### identityUserFlowAttributeType values
 
-| Member             |
-| :----------------- |
-| unknown            |
-| connected          |
-| disconnected       |
-| unknownFutureValue |
+| Member             | Value | Description                                                        |
+| :----------------- | :---- | :----------------------------------------------------------------- |
+| builtIn            | 1     | This user flow attribute type denotes it was created by the system |
+| custom             | 2     | This user flow attribute type denotes it was created by the user   |
+| required           | 3     |                                                                    |
+| unknownFutureValue | 4     | A sentinel member.                                                 |
 
 ### permissionClassificationType values
 
@@ -3814,3 +3856,11 @@ Possible values for user account types (group membership), per Windows definitio
 | microsoftAuthenticator |
 | outlookMobile          |
 | unknownFutureValue     |
+
+### verifiableCredentialPresentationStatusCode values 
+
+| Member                |
+| :-------------------- |
+| request_retrieved     |
+| presentation_verified |
+| unknownFutureValue    |
