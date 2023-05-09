@@ -6999,6 +6999,14 @@ items:
             href: api/externalconnectors-schema-create.md
           - name: Get
             href: api/externalconnectors-schema-get.md
+        - name: External activity
+          items:
+          - name: External activity
+            href: resources/externalconnectors-externalactivity.md
+        - name: External activity result
+          items:
+          - name: External activity result
+            href: resources/externalconnectors-externalactivityresult.md
         - name: External item
           items:
           - name: External item
@@ -7011,6 +7019,8 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
+          - name: Add activities
+            href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
           - name: External group
@@ -7626,6 +7636,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items:
+          - name: Sharepoint settings
+            href: resources/sharepointSettings.md
+          - name: Get
+            href: api/sharepointSettings-get.md
+          - name: Update
+            href: api/sharepointSettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:

@@ -6,23 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Organization.Item.CertificateBasedAuthConfiguration.CertificateBasedAuthConfigurationPostRequestBody
+var requestBody = new CertificateBasedAuthConfiguration
 {
-	AdditionalData = new Dictionary<string, object>
+	CertificateAuthorities = new List<CertificateAuthority>
 	{
+		new CertificateAuthority
 		{
-			"certificateAuthorities" , new List<>
-			{
-				new 
-				{
-					IsRootAuthority = true,
-					Certificate = "Binary",
-				},
-			}
+			IsRootAuthority = true,
+			Certificate = Convert.FromBase64String("Binary"),
 		},
 	},
 };
-await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
+var result = await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
 
 
 ```
