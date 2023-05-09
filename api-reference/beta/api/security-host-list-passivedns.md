@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 [!INCLUDE [sample-code](../includes/snippets/php/list-passivedns-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-passivedns-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
