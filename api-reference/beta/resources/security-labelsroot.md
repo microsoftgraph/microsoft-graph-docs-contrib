@@ -44,12 +44,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|retentionLabels|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Represents how customers can manage their data, whether and for how long to retain or delete it.|
 |authorities|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Specifies the underlying authority that describes the type of content to be retained and its retention schedule.|
 |categories|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) collection|Specifies a group of similar types of content in a particular department.|
 |citations|[microsoft.graph.security.citationTemplate](../resources/security-citationtemplate.md) collection|The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.|
 |departments|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Specifies the department or business unit of an organization to which a label belongs.|
 |filePlanReferences|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Specifies a unique alpha-numeric identifier for an organization’s retention schedule.|
+|retentionLabels|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Represents how customers can manage their data, whether and for how long to retain or delete it.|
 
 
 ## JSON representation
