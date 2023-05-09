@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.ApplicationsById("application-id").FederatedIdentityCredentialsById("federatedIdentityCredential-id").Delete(context.Background(), nil)
+graphClient.Applications().ByApplicationId("application-id").FederatedIdentityCredentials().ByFederatedIdentityCredentialId("federatedIdentityCredential-id").Delete(context.Background(), nil)
 
 
 ```

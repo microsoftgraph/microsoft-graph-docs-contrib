@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Privacy().SubjectRightsRequestsById("subjectRightsRequest-id").GetFinalReport().Get(context.Background(), nil)
+graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").GetFinalReport().Get(context.Background(), nil)
 
 
 ```

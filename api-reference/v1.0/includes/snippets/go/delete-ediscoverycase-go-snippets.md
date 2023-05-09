@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Delete(context.Background(), nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Delete(context.Background(), nil)
 
 
 ```

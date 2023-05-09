@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.RoleManagement().Directory().RoleAssignmentsById("unifiedRoleAssignment-id").Delete(context.Background(), nil)
+graphClient.RoleManagement().Directory().RoleAssignments().ByRoleAssignmentId("unifiedRoleAssignment-id").Delete(context.Background(), nil)
 
 
 ```

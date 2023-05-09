@@ -33,7 +33,7 @@ requestBody.SetUrl(&url)
 supportedEntities := graphmodels.SUPPORTEDENTITIES-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupportedEntities(&supportedEntities) 
 
-result, err := graphClient.Teamwork().WorkforceIntegrationsById("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

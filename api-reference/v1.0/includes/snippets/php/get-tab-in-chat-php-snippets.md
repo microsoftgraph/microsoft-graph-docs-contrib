@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsTabRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TeamsTabRequestBuilderGetQueryParameters();
+$queryParameters = TeamsTabRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsApp"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->tabsById('teamsTab-id')->get($requestConfiguration);
+$result = $graphServiceClient->chatsById('chat-id')->tabsById('teamsTab-id')->get($requestConfiguration);
 
 
 ```

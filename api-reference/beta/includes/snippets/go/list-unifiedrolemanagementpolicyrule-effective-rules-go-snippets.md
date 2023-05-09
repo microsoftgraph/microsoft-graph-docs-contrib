@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").EffectiveRules().Get(context.Background(), nil)
+result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").EffectiveRules().Get(context.Background(), nil)
 
 
 ```

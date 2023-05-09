@@ -25,7 +25,7 @@ requestBody.SetDetermination(&determination)
 status := graphmodels.INPROGRESS_ALERTSTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.Security().Alerts_v2ById("alert-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Alerts_v2().ByAlerts_v2().Id("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

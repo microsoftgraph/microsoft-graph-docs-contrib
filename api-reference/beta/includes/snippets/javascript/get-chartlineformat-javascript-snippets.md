@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let workbookChartLineFormat = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line')
+let workbookChartLineFormat = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line')
 	.version('beta')
 	.get();
 

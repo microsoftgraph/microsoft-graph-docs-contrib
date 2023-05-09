@@ -15,14 +15,14 @@ $requestBody->setDisplayName('My Class Team');
 $requestBody->setDescription('My Class Team’s Description');
 
 $additionalData = [
-'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'educationClass\')', 
+		'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'educationClass\')', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teams()->post($requestBody);
+$result = $graphServiceClient->teams()->post($requestBody);
 
 
 ```

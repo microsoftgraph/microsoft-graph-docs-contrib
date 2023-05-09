@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.ApplicationsById("application-id").UnsetVerifiedPublisher().Post(context.Background(), nil)
+graphClient.Applications().ByApplicationId("application-id").UnsetVerifiedPublisher().Post(context.Background(), nil)
 
 
 ```

@@ -37,7 +37,7 @@ maxLength := int32(255)
 text.SetMaxLength(&maxLength) 
 requestBody.SetText(text)
 
-result, err := graphClient.SitesById("site-id").Columns().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").Columns().Post(context.Background(), requestBody, nil)
 
 
 ```

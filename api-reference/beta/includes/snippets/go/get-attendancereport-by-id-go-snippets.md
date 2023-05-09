@@ -22,7 +22,7 @@ configuration := &graphconfig.ItemOnlineMeetingItemAttendanceReportItemRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").AttendanceReportsById("meetingAttendanceReport-id").Get(context.Background(), configuration)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").AttendanceReports().ByAttendanceReportId("meetingAttendanceReport-id").Get(context.Background(), configuration)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().AttackSimulation().SimulationsById("simulation-id").Delete(context.Background(), nil)
+graphClient.Security().AttackSimulation().Simulations().BySimulationId("simulation-id").Delete(context.Background(), nil)
 
 
 ```

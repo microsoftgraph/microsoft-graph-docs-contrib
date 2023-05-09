@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequestsById("accessPackageAssignmentRequest-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().ByAccessPackageAssignmentRequestId("accessPackageAssignmentRequest-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

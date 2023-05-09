@@ -20,10 +20,11 @@ Setting control type representation in the UX
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|default|0|Don’t override default|
-|dropdown|1|Display Choice in dropdown|
-|smallTextBox|2|Display text input in small text input|
-|largeTextBox|3|Display text input in large text input|
-|toggle|4|Allow for toggle control type|
-|multiheaderGrid|5|Allow for multiheader grid control type|
-|contextPane|6|Allow for context pane control type|
+|default|0|Default. UX uses default UX element base on setting type for the setting.|
+|dropdown|1|Display the setting in dropdown box.|
+|smallTextBox|2|Display text input in small text input.|
+|largeTextBox|3|Display text input in large text input.|
+|toggle|4|Allow for toggle control type.|
+|multiheaderGrid|5|Allow for multiheader grid control type.|
+|contextPane|6|Allow for context pane control type.|
+|unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|

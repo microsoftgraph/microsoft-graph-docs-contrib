@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	IsEnabledInOrganization = $true
+	isEnabledInOrganization = $true
 }
 
 Update-MgOrganizationSettingPronoun -OrganizationId $organizationId -BodyParameter $params

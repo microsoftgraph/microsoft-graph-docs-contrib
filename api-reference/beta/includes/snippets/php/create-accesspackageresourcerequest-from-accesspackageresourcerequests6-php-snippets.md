@@ -40,7 +40,7 @@ $attributesAccessPackageResourceAttribute1AttributeSource = new AccessPackageRes
 $attributesAccessPackageResourceAttribute1AttributeSource->set@odatatype('#microsoft.graph.accessPackageResourceAttributeQuestion');
 
 $additionalData = [
-'question' => $attributesAccessPackageResourceAttribute1AttributeSource = new Question();
+		'question' => $attributesAccessPackageResourceAttribute1AttributeSource = new Question();
 $		attributesAccessPackageResourceAttribute1AttributeSource->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
 
 		$attributesAccessPackageResourceAttribute1AttributeSource->setIsRequired(false);
@@ -79,7 +79,7 @@ $accessPackageResource->setAttributes($attributesArray);
 $requestBody->setAccessPackageResource($accessPackageResource);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
 
 
 ```

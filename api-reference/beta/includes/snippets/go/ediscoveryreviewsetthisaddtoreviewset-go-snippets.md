@@ -23,7 +23,7 @@ requestBody.SetSearch(search)
 additionalDataOptions := graphmodels.LINKEDFILES_ADDITIONALDATAOPTIONS 
 requestBody.SetAdditionalDataOptions(&additionalDataOptions) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").SecurityAddToReviewSet().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").SecurityAddToReviewSet().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -18,7 +18,7 @@ const mailFolder = {
   filterQuery: 'contains(subject, \'weekly digest\')'
 };
 
-await client.api('/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders')
+await client.api('/me/mailFolders/AQMkADYAAAIBDAAAAA==/childFolders')
 	.post(mailFolder);
 
 ```

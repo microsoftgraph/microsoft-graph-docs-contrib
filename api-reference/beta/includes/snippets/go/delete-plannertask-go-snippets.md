@@ -23,7 +23,7 @@ configuration := &graphconfig.PlannerTaskItemRequestBuilderDeleteRequestConfigur
 	Headers: headers,
 }
 
-graphClient.Planner().TasksById("plannerTask-id").Delete(context.Background(), configuration)
+graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Delete(context.Background(), configuration)
 
 
 ```

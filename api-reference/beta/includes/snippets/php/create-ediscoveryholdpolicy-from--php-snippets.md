@@ -15,7 +15,7 @@ $requestBody->setDisplayname('My legalHold with sources');
 $requestBody->setDescription('Created from Graph API');
 
 $additionalData = [
-'userSources@odata.bind' => $userSources@odatabind1 = new ();
+		'userSources@odata.bind' => $userSources@odatabind1 = new ();
 $		userSources@odatabind1->set@odatatype('microsoft.graph.security.userSource');
 
 $		userSources@odatabind1->setEmail('SalesTeam@M365x809305.OnMicrosoft.com');
@@ -25,7 +25,7 @@ $userSources@odata.bindArray []= $userSources@odatabind1;
 $requestBody->setUserSources@odatabind($userSources@odata.bindArray);
 
 
-'siteSources@odata.bind' => $siteSources@odatabind1 = new ();
+	'siteSources@odata.bind' => $siteSources@odatabind1 = new ();
 $	siteSources@odatabind1->set@odatatype('microsoft.graph.security.siteSource');
 
 $siteSources@odatabind1Site = new Site();
@@ -44,7 +44,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->legalHolds()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->legalHolds()->post($requestBody);
 
 
 ```

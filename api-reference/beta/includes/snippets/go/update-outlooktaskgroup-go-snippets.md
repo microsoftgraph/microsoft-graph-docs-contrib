@@ -19,7 +19,7 @@ requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Personal Tasks"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Outlook().TaskGroupsById("outlookTaskGroup-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Outlook().TaskGroups().ByTaskGroupId("outlookTaskGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

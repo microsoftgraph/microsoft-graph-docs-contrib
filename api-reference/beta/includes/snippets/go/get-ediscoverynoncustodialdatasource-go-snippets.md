@@ -22,7 +22,7 @@ configuration := &graphconfig.SecurityCasesEdiscoveryCaseItemNoncustodialDataSou
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").NoncustodialDataSourcesById("ediscoveryNoncustodialDataSource-id").Get(context.Background(), configuration)
+result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().ByNoncustodialDataSourceId("ediscoveryNoncustodialDataSource-id").Get(context.Background(), configuration)
 
 
 ```

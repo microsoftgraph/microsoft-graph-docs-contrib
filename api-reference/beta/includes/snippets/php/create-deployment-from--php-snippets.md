@@ -16,7 +16,7 @@ $content = new DeployableContent();
 $content->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
 
 $additionalData = [
-'catalogEntry' => $content = new CatalogEntry();
+		'catalogEntry' => $content = new CatalogEntry();
 $		content->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
 
 $		content->setId('f341705b-0b15-4ce3-aaf2-6a1681d78606');
@@ -40,7 +40,7 @@ $settingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.
 $settingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P7D'));
 
 $additionalData = [
-'devicePerOffer' => 100,
+		'devicePerOffer' => 100,
 ];
 $settingsScheduleGradualRollout->setAdditionalData($additionalData);
 
@@ -68,7 +68,7 @@ $settings->setMonitoring($settingsMonitoring);
 $requestBody->setSettings($settings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->deployments()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->deployments()->post($requestBody);
 
 
 ```

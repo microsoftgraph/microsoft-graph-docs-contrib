@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TermStore().GroupsById("group-id").SetsById("set-id").TermsById("term-id").Get(context.Background(), nil)
+result, err := graphClient.TermStore().Groups().ByGroupId("group-id").Sets().BySetId("set-id").Terms().ByTermId("term-id").Get(context.Background(), nil)
 
 
 ```

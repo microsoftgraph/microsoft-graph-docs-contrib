@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().CredentialUserRegistrationsSummariesById("credentialUserRegistrationsSummary-id").Get(context.Background(), nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().CredentialUserRegistrationsSummaries().ByCredentialUserRegistrationsSummarieId("credentialUserRegistrationsSummary-id").Get(context.Background(), nil)
 
 
 ```

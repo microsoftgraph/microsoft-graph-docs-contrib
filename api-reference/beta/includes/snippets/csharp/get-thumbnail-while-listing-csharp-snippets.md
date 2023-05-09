@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var children = await graphClient.Me.Drive.Items["{driveItem-id}"].Children
-	.Request()
-	.Expand("thumbnails")
-	.GetAsync();
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Children.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "thumbnails" };
+});
+
 
 ```

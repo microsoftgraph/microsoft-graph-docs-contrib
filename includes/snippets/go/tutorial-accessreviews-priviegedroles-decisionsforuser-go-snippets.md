@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").DecisionsById("accessReviewInstanceDecisionItem-id").Post(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().ByInstanceId("accessReviewInstance-id").Decisions().ByDecisionId("accessReviewInstanceDecisionItem-id").Post(context.Background(), requestBody, nil)
 
 
 ```

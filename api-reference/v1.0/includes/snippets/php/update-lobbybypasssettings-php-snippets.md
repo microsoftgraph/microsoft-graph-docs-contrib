@@ -17,7 +17,7 @@ $lobbyBypassSettings->setIsDialInBypassEnabled(true);
 $requestBody->setLobbyBypassSettings($lobbyBypassSettings);
 
 
-$requestResult = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->patch($requestBody);
+$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->patch($requestBody);
 
 
 ```

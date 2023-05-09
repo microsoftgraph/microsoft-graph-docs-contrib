@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.AdministrativeUnitsById("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

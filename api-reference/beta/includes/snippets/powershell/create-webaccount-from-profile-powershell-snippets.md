@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Description = "My Github contributions!"
-	UserId = "innocenty.popov"
-	Service = @{
-		Name = "GitHub"
-		WebUrl = "https://github.com"
+	description = "My Github contributions!"
+	userId = "innocenty.popov"
+	service = @{
+		name = "GitHub"
+		webUrl = "https://github.com"
 	}
 }
 

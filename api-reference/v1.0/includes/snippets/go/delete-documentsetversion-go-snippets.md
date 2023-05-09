@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.SitesById("site-id").ListsById("list-id").ItemsById("listItem-id").DocumentSetVersionsById("documentSetVersion-id").Delete(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").DocumentSetVersions().ByDocumentSetVersionId("documentSetVersion-id").Delete(context.Background(), nil)
 
 
 ```

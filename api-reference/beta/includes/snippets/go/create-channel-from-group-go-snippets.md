@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
 requestBody.SetMembershipType(&membershipType) 
 
-result, err := graphClient.TeamsById("team-id").Channels().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

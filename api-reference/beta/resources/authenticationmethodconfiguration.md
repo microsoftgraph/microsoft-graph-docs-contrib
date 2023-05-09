@@ -4,7 +4,7 @@ description: "authenticationMethodConfigurations object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodConfiguration resource type

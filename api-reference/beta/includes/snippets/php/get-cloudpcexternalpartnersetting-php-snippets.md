@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettingsById('cloudPcExternalPartnerSetting-id')->get();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettingsById('cloudPcExternalPartnerSetting-id')->get();
 
 
 ```

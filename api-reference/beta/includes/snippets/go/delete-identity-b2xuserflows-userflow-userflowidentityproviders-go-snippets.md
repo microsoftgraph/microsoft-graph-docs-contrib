@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().B2xUserFlowsById("b2xIdentityUserFlow-id").UserFlowIdentityProvidersById("identityProviderBase-id").Ref().Delete(context.Background(), nil)
+graphClient.Identity().B2xUserFlows().ByB2xUserFlowId("b2xIdentityUserFlow-id").UserFlowIdentityProviders().ByUserFlowIdentityProviderId("identityProviderBase-id").Ref().Delete(context.Background(), nil)
 
 
 ```

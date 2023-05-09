@@ -44,7 +44,7 @@ requestBody.SetIsExpirationRequired(&isExpirationRequired)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Policies().RoleManagementPoliciesById("unifiedRoleManagementPolicy-id").RulesById("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").Rules().ByRuleId("unifiedRoleManagementPolicyRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

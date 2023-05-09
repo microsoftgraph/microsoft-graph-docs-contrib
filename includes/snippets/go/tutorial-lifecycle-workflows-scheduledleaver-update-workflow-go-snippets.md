@@ -21,7 +21,7 @@ requestBody.SetIsEnabled(&isEnabled)
 isSchedulingEnabled := true
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().WorkflowsById("workflow-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

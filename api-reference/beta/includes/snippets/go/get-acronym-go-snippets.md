@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Search().AcronymsById("acronym-id").Get(context.Background(), nil)
+result, err := graphClient.Search().Acronyms().ByAcronymId("acronym-id").Get(context.Background(), nil)
 
 
 ```

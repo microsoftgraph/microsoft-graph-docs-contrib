@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Item();
 $additionalData = [
-'acl' => $acl1 = new ();
+		'acl' => $acl1 = new ();
 $		acl1->setType('everyone');
 
 $		acl1->setValue('67a141d8-cf4e-4528-ba07-bed21bfacd2d');

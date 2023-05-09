@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Security.ThreatIntelligence.Hosts["{host-id}"].PassiveDns.GetAsync();
+var result = await graphClient.Security.ThreatIntelligence.Hosts["{host-id}"].PassiveDnsReverse.GetAsync();
 
 
 ```

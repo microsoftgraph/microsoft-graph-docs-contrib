@@ -42,11 +42,12 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods. 
+In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to prompt users to set up targeted authentication methods.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -83,24 +84,28 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationmethodspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationmethodspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationmethodspolicy-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationmethodspolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-authenticationmethodspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -126,17 +131,28 @@ Content-Type: application/json
   "policyVersion": "1.4",
   "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
-        "snoozeDurationInDays": 1,
-        "state": "enabled",
-        "excludeTargets": [],
-        "includeTargets": [
-            {
-                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
-                "targetType": "group",
-                "targetedAuthenticationMethod": "microsoftAuthenticator"
-            }
-        ]
+      "snoozeDurationInDays": 1,
+      "state": "enabled",
+      "excludeTargets": [],
+      "includeTargets": [
+        {
+          "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+          "targetType": "group",
+          "targetedAuthenticationMethod": "microsoftAuthenticator"
+        }
+      ]
     }
+  },
+  "systemCredentialPreferences": {
+    "@odata.type": "#microsoft.graph.systemCredentialPreferences",
+    "excludeTargets": [],
+    "includeTargets": [
+      {
+        "id": "all_users",
+        "targetType": "group"
+      }
+    ],
+    "state": "enabled"
   }
 }
 ```

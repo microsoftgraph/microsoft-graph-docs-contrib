@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().PrintersById("printer-id").Delete(context.Background(), nil)
+graphClient.Print().Printers().ByPrinterId("printer-id").Delete(context.Background(), nil)
 
 
 ```

@@ -16,7 +16,7 @@ $valuesConversationMember1->set@odatatype('microsoft.graph.aadUserConversationMe
 $valuesConversationMember1->setRoles([]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'jacob@contoso.com\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'jacob@contoso.com\')', 
 ];
 $valuesConversationMember1->setAdditionalData($additionalData);
 
@@ -41,7 +41,7 @@ $requestBody->setValues($valuesArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->members()->add()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->members()->add()->post($requestBody);
 
 
 ```

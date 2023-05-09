@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Models.TenantAdmin.Settings
+var requestBody = new SharepointSettings
 {
 	DeletedUserPersonalSiteRetentionPeriodInDays = 365,
 	ExcludedFileExtensionsForSyncApp = new List<string>
 	{
 		".mp3",
 	},
-	ImageTaggingOption = Microsoft.Graph.Beta.Models.TenantAdmin.ImageTaggingChoice.Enhanced,
+	ImageTaggingOption = ImageTaggingChoice.Enhanced,
 	IsLegacyAuthProtocolsEnabled = true,
 	IsSitesStorageLimitAutomatic = false,
 	IsSyncButtonHiddenOnPersonalSite = false,
