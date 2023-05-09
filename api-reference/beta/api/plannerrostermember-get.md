@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
