@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove a retention label from a [driveItem](../resources/driveitem.md).
 
-For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
+For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/MicrosoftDocs/microsoft-365/compliance/auto-apply-retention-labels-scenario.md).
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                  |
 | Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All                        |
 
->**Note:** Only `Sites.FullControl.All` supports the removal of retention labels that classify the content as records.
+>**Note:** `Sites.FullControl.All` is the least priviledged permission required to remove retention labels that classify the content as records.
 
 ## HTTP request
 
@@ -63,12 +63,12 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "driveItem_removeRetentionLabel",
-  "sampleKeys": ["{drive-id}", "{item-id}"]
+  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "2"]
 }
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retentionLabel
+DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/2/retentionLabel
 ```
 
 ### Response

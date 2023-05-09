@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get metadata information for a retention label applied on a [driveItem](../resources/driveitem.md).
 
-For information about retention labels from an administrator's perspective, see [use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
+For information about retention labels from an administrator's perspective, see [use retention labels to manage the lifecycle of documents stored in SharePoint](/MicrosoftDocs/microsoft-365/compliance/auto-apply-retention-labels-scenario.md).
 
 ## Permissions
 
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged)                              |
 |:---------------------------------------|:-------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (work or school account)     | Files.Read.All, Files.Read.All, Sites.Read.All, Sites.Read.All |
 | Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Application                            | Files.Read.All, Files.Read.All, Sites.Read.All, Sites.Read.All |
 
 ## HTTP request
 
@@ -64,11 +64,11 @@ If successful, this method returns a `200 OK` response code and an [itemRetentio
 <!-- {
   "blockType": "request",
   "name": "driveItem_getRetentionLabel",
-  "sampleKeys": ["{drive-id}", "{item-id}"]
+  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "2"]
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retentionLabel
+GET https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/lists/documents/items/2/driveitem/retentionLabel
 ```
 
 ### Response

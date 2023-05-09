@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Apply (set) a retention label asynchronously on a [driveItem](../resources/driveitem.md) (files and folders).
 
-When a retention label is applied to a folder, then all the items in the folder are tagged with the same retention label. Conflict resolution happens by the following principle: _explicit wins over implicit_. For example, if a file in the folder has already been explicitly tagged with a label, then that file doesn't inherit the label of the parent. For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
+When a retention label is applied to a folder, then all the items in the folder are tagged with the same retention label. Conflict resolution happens by the following principle: _explicit wins over implicit_. For example, if a file in the folder has already been explicitly tagged with a label, then that file doesn't inherit the label of the parent. For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/MicrosoftDocs/microsoft-365/compliance/auto-apply-retention-labels-scenario.md).
 
 [!INCLUDE [premium-metered-apis-disclaimer](../../includes/premium-meter-apis-disclaimer.md)]
 
@@ -25,9 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Type                                   | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite.All, Sites.ReadWrite.All    |
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All    |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All    |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All   |
+
+>**Note:** `Sites.FullControl.All` is the least priviledged permission required to change retention labels that classify the content as records.
 
 [!INCLUDE [premium-metered-apis-request-access-disclaimer](../../includes/premium-meter-apis-request-access-disclaimer.md)]
 
@@ -70,12 +72,12 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "driveItem_setRetentionLabel",
-  "sampleKeys": ["{drive-id}", "{item-id}"]
+  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "2"]
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retentionLabel
+PATCH https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/2/retentionLabel
 Content-Type: application/json
 
 {

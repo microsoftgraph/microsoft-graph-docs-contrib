@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Lock or unlock a retention label on a [driveItem](../resources/driveitem.md) that classifies content as records.
 
-For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
+For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/MicrosoftDocs/microsoft-365/compliance/auto-apply-retention-labels-scenario.md).
 
 For information on how you can lock and unlock retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning).
 
@@ -68,12 +68,12 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "driveItem_lockOrUnlockRecord",
-  "sampleKeys": ["{drive-id}", "{item-id}"]
+  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "2"]
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/retentionLabel
+PATCH https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/2/retentionLabel
 Content-Type: application/json
 
 {
