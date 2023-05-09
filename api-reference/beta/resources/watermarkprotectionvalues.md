@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Indicates whether a watermark is enabled for different content types.
 
-Enable any of these flags indicates that a watermark has been enabled for this particular meeting. Any clients that don't support watermarks will have a restricted (audio-only) experience in the meeting.
+These flags indicate indicate that a watermark is been enabled for this particular meeting. Any clients that don't support watermarks will have a restricted (audio-only) experience in the meeting.
 
 ## Properties
 
