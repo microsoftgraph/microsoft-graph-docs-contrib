@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object.
 
 Base type of [externalActivityResult](../resources/externalconnectors-externalactivityresult.md).
