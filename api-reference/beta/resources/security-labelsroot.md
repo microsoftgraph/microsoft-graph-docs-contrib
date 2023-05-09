@@ -1,6 +1,6 @@
 ---
 title: "labelsRoot resource type"
-description: "Represents the entry point for retention labels resource type."
+description: "Represents the entry point for the retentionLabels resource type."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
