@@ -1,6 +1,6 @@
 ---
 title: "List companySubscriptions"
-description: "Retrieve the list of commercial subscriptions that an organization has acquired."
+description: "Get the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -33,7 +33,7 @@ GET /directory/subscriptions
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph//query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -47,36 +47,32 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [companySubscriptions](../resources/companySubscriptions.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [companySubscriptions](../resources/companysubscriptions.md) objects in the response body.
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
-
-# [HTTP](#tab/http)
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_companySubscriptions"
+  "name": "list_companySubscriptions"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/subscriptions
 ```
 
----
+### Response
 
-##### Response
+The following is an example of the response.
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.subscribedSku",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.companySubscriptions)"
 } -->
 
 ```http
@@ -92,13 +88,13 @@ Content-type: application/json
       "nextLifecycleDateTime": "2023-02-01T00:00:00Z",
       "ocpSubscriptionId": "f9c1ea2d-2c6e-4717-8c3b-7130812d70ba",
       "serviceStatus": [
-                          {
-                            "servicePlanId": "8b8269e5-f841-416c-ab3a-f5dfb9737986",
-                            "servicePlanName": "MyPlanName",
-                            "provisioningStatus": "Success",
-                            "appliesTo": "User"
-                          },
-                       ],
+        {
+          "servicePlanId": "8b8269e5-f841-416c-ab3a-f5dfb9737986",
+          "servicePlanName": "MyPlanName",
+          "provisioningStatus": "Success",
+          "appliesTo": "User"
+        }
+      ],
       "skuId": "0816ccb9-3785-4d19-bf78-6c53e2106509",
       "skuPartNumber": "MyPartNumber",
       "status": "Enabled",

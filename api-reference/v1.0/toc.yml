@@ -5128,13 +5128,13 @@ items:
             href: api/subscribedsku-list.md
           - name: Get subscribedSku
             href: api/subscribedsku-get.md
-        - name: Company Subscriptions
-          href: resources/companySubscriptions.md
+        - name: Company subscriptions
+          href: resources/companysubscriptions.md
           items:
           - name: List companySubscriptions
-            href: api/companySubscriptions-list.md
+            href: api/companysubscriptions-list.md
           - name: Get companySubscriptions
-            href: api/companySubscriptions-get.md
+            href: api/companysubscriptions-get.md
         - name: On-premises directory synchronization
           href: resources/onpremisesdirectorysynchronization.md
           items:
