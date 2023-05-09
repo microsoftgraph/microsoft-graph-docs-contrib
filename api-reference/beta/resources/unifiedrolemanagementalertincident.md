@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the alert incident. Inherited from [entity](../resources/entity.md).|
+|id|String|The identifier of the alert incident. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

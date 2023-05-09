@@ -28,21 +28,21 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertDefinitionId|String|The identifier of an [alert definition](unifiedrolemanagementalertdefinition.md). |
+|alertDefinitionId|String|The identifier of an [alert definition](unifiedrolemanagementalertdefinition.md). Supports `$filter` (`eq`, `ne`).|
 |id|String|The identifier of the [alert configuration](unifiedrolemanagementalertconfiguration.md). Inherited from [entity](../resources/entity.md).|
 |incidentCount|Int32|The number of incidents triggered in the tenant and relating to the alert. Can only be a positive integer.|
 |isActive|Boolean|`false` by default. `true` if the alert is active.|
 |lastModifiedDateTime|DateTimeOffset|The date time when the alert configuration was updated or new incidents generated.|
 |lastScannedDateTime|DateTimeOffset|The date time when the tenant was last scanned for incidents that trigger this alert.|
-|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID.|
+|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Supports `$filter` (`eq`, `ne`).|
 |scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertConfiguration|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|The configuration of the alert in PIM for Azure AD roles. Alert configurations are pre-defined and cannot be created or deleted, but some configurations can be modified.|
-|alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Contains the description, impact, and measures to mitigate or prevent the security alert from being triggered in your tenant.|
-|alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the incidents of this alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant.|
+|alertConfiguration|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|The configuration of the alert in PIM for Azure AD roles. Alert configurations are pre-defined and cannot be created or deleted, but some configurations can be modified. Supports `$expand`.|
+|alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Contains the description, impact, and measures to mitigate or prevent the security alert from being triggered in your tenant. Supports `$expand`.|
+|alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the incidents of this alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

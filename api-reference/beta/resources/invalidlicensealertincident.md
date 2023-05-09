@@ -20,7 +20,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier for the alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md).|
+|id|String|The identifier for the alert incident. For example, it could be a role assignment ID if the incident represents a role assignment. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |tenantLicenseStatus|String|Status of the tenant's Azure AD Premium P2 license.|
 
 ## Relationships

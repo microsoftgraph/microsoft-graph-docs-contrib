@@ -23,7 +23,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 |assigneeDisplayName|String|Display name of the subject that the incident applies to.|
 |assigneeId|String|The identifier of the subject that the incident applies to.|
 |assigneeUserPrincipalName|String|User principal name of the subject that the incident applies to. Applies to user principals.|
-|id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md).|
+|id|String|The identifier for an alert incident. For example, it could be a role assignment id if the incident represents a role assignment Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |lastActivationDateTime|DateTimeOffset|Date and time of last activation of the eligible assignment.|
 |roleDefinitionId|String|The identifier for the [directory role definition](unifiedroledefinition.md) that's in scope of this incident.|
 |roleDisplayName|String|The display name for the [directory role](unifiedroledefinition.md).|

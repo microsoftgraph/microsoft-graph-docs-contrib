@@ -20,10 +20,10 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertDefinitionId|String|The identifier of an alert definition. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|alertDefinitionId|String|The identifier of an alert definition. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
-|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|scopeId|String|The identifier of the scope where the alert is related. For example, directory ID or application ID. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
 |scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |sequentialActivationCounterThreshold|Int32|The minimum number of activations within the timeIntervalBetweenActivations period to trigger an alert.|
 |timeIntervalBetweenActivations|Duration|Time interval between activations to trigger an alert.|
@@ -31,7 +31,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. |
+|alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
