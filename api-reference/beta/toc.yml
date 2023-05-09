@@ -14037,12 +14037,12 @@ items:
               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Authentication Events Flows (preview)
+          - name: Self-service sign up user flow (multi-event policy) (preview)
             items:
             - name: Authentication events flow base
               href: resources/authenticationeventsflow.md
             - name: Self-service sign up user flow
-              href: resources/externaluserselfservicesignupeventsflow.md
+              href: resources/externalusersselfservicesignupeventsflow.md
             - name: List
               href: api/identitycontainer-list-authenticationeventsflows.md
             - name: Create
@@ -14059,14 +14059,12 @@ items:
               href: api/authenticationeventsflow-post-identityProviders.md
             - name: Remove identity provider (auth method)
               href: api/authenticationeventsflow-delete-identityProviders.md
-            - name: List user attribute assignments
+            - name: List attributes collected in user flow
               href: api/authenticationeventsflow-list-attributes.md
-            - name: Add user attribute assignment
+            - name: Add attributes collected in user flow
               href: api/authenticationeventsflow-post-attributes.md
-            - name: Remove user attribute assignment
-              href: api/authenticationeventsflow-delete-attributes.md
-            - name: List languages
-              href:       
+            - name: Remove attributes collected in user flow
+              href: api/authenticationeventsflow-delete-attributes.md    
           - name: User flow attributes
             items:
             - name: User flow attribute

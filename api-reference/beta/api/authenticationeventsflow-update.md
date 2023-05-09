@@ -42,7 +42,7 @@ PATCH /identity/authenticationEventsFlows/{authenticationEventsFlow-id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON object with one or more properties that need to be updated for a [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) object. 
+In the request body, provide a JSON object with one or more properties that need to be updated for a [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. 
 
 ### externalUsersSelfServiceSignupEventsFlow
 

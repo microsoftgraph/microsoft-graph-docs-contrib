@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add (link) an application to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource (user flow). This enables the authentication experience defined by the user flow to be enabled for the application.  Note: an application can only be linked to one user flow.
+Add (link) an application to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource (user flow). This enables the authentication experience defined by the user flow to be enabled for the application.  Note: an application can only be linked to one user flow.
 
 
 ## Permissions

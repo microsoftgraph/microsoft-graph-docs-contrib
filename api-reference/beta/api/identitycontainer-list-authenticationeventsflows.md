@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of authentication events policies that are derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md). The authentication events flows can currently be [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) objects.
+Get a collection of authentication events policies that are derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md). The authentication events flows can currently be [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) objects.
  
 
 ## Permissions
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) objects in the response body.
 
 ## Example: List all External Identity User Flows
 

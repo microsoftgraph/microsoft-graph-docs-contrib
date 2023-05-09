@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an attribute to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.  Custom and built-in attributes can be added to a user flow.
+Add an attribute to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.  Custom and built-in attributes can be added to a user flow.
 This requires two calls – a DELETE to remove the attribute followed by a PATCH to remove the attribute from the display during sign-up. **TODO: HOW TO REPRESENT BOTH CALLS?**
 
 

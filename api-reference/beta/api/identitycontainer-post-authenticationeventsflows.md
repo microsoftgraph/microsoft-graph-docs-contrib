@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [authenticationEventsFlow](../resources/authenticationeventsflow.md) object that is of the type specified in the request body.
 
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently create an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource.
+Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently create an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ POST /identity/authenticationEventsFlows
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) object.
+In the request body, supply a JSON representation of the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.
 
 ### externalUsersSelfServiceSignupEventsFlow object
 
