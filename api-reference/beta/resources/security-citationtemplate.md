@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-he specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
+The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
 
 Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
