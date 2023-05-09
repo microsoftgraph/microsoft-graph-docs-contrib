@@ -27,7 +27,7 @@ Code sample for student account with [Education assignment using Microsoft Graph
 Use the following call for the teacher action:
 
 `me/assignments` or `users/id/assignments` to get the assignments belonging to a teacher.
-Then, for each of the assignments use `classses/id/assignments/id/submissions` to get the submission status (one assignment will contain n number of submissions, where n is the class size) .
+Then, for each of the assignments use `classses/id/assignments/id/submissions` to get the submission status (one assignment will contain n number of submissions, where n is the number of students. It can be a single student, a group of students or the entire class).
 
 Code sample for teacher account with [Education assignment using Microsoft Graph SDK](https://github.com/microsoft/edu-assignments-graph-sdk/blob/main/samples/csharp/MicrosoftEduGraphSamples/Workflows/AssignmentWorkflow.cs#L62)
 
@@ -38,7 +38,7 @@ For Student, an assignment is actionable if the corresponding submission is in "
 The following state transition rules are applicable for student and teacher:
 
 * Student "turns in", and Teacher "returns" or "returns for revision".
-* Teacher can return the same assignment any number of times.
+* Teacher returns submissions.
 * Student can "turn in" the assignment only when the submission is in "working" or "reassigned" state.
 * "Return for Revision" action makes the submission state as "reassigned".
 

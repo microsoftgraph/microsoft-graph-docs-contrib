@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for assignments in Microsoft Graph
 
-Assignments and submissions are an important part of the interaction between teachers and students' actions. This article describes the changes in the assignment and submission states during the process flow and which education APIs in Microsoft Graph are involved.
+Assignments and submissions are an important part of the interaction between teachers and students' actions. This article describes the changes in the assignment states during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Assignment states and transitions
 
@@ -20,7 +20,7 @@ An assignment represents a task or unit of work assigned to a student or team me
 | Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, categories, rubrics |
 | Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
 | Scheduled | Status when the teacher scheduled the assignment to publish at a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, categories, rubrics |
-| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students, or the assignment is active again. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
+| Assigned | After publish has finished, the assignment is moved to Assigned state and is available for the students, or the assignment is active again. | `POST /education/classes/{id}/assignments/{id}/publish`<br/>`POST /education/classes/{id}/assignments/{id}/activate` | Submissions |
 | Pending | Background processing status when a new assignment is being copied from an existing one. | `PATCH /education/classes/{id}/assignments/{id}` | |
 | Inactive | The assignment has no further action items for teachers and students. | `POST /education/classes/{id}/assignments/{id}/deactivate` | |
 
