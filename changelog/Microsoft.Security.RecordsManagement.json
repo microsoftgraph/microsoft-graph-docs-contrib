@@ -319,7 +319,7 @@
           },
           {
             "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
-            "ApiChange": "Resource",
+            "ApiChange": "Relationship",
             "ChangedApiName": "descriptors",
             "ChangeType": "Addition",
             "Description": "Added the **descriptors** relationship to the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource.",
