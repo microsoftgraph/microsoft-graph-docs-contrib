@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for retention labels resource type.
+Represents the entry point for the retentionLabels resource type.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
