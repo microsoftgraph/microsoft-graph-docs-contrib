@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-onpremisesdirectorysynchronization-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesdirectorysynchronization-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

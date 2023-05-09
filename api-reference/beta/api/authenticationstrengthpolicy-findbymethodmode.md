@@ -1,14 +1,13 @@
 ---
-title: "authenticationStrengthPolicy: findByMethodMode"
+title: "authenticationStrengthPolicy: findByMethodMode (deprecated)"
 description: "Get authentication strength policies that include the specified authentication method modes."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# authenticationStrengthPolicy: findByMethodMode
-Namespace: microsoft.graph
+# authenticationStrengthPolicy: findByMethodMode (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+
+[!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
+
+> [!NOTE]
+> The `findByMethodMode` function is deprecated and will be retired on March 31, 2023. Use the following syntax instead.
+>
+> `GET /policies/authenticationStrengthPolicies?$filter=allowedCombinations/any(x:x has 'sms, password')`
+
 
 ## HTTP request
 
