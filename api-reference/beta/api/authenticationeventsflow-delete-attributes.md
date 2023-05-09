@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add identityProvider
+# Remove attribute from user flow
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

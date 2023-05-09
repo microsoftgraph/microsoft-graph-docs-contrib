@@ -27,8 +27,8 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties. There is no way to retrieve only the External Identities User Flows |
-|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md)|Create an External Identities Self-Service-Sign-up User Flow|
-|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an External Identities Self-Service-Sign-up User Flow|
+|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an External Identities Self-Service-Sign-up User Flow|
+|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an External Identities Self-Service-Sign-up User Flow|
 |[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an External Identities Self-Service-Sign-up User Flow|
 |[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an External Identities Self-Service-Sign-up User Flow|
 |[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|

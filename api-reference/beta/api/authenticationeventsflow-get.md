@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. In other words, list all authentication events policies.
 
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently retrieve an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource.
+Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently retrieve an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

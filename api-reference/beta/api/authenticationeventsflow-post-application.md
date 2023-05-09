@@ -1,13 +1,13 @@
 ---
-title: "Add identity provider for an External Identities user flow"
-description: "Add identity provider to an externalusersselfservicesignupeventsflow."
+title: "Add application to an External Identities user flow"
+description: "Add application to an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add identityProvider
+# Add application to user flow
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

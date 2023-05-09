@@ -1,5 +1,5 @@
 ---
-title: "Add attribute for an External Identities user flow"
+title: "Add attribute to an External Identities user flow"
 description: "Add attribute to an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add identityProvider
+# Add attribute to user flow
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an attribute to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.  Custom and built-in attributes can be added to a user flow.
+Add an attribute to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.  Custom and built-in attributes can be added to a user flow.
 This requires two calls – a PATCH to add the attribute followed by a POST to add how the attribute will be displayed for sign-up. **TODO: HOW TO REPRESENT BOTH CALLS?**
 
 

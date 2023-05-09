@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection associated with an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.
+Get an [identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection associated with an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.
 **TODO: should this return attributecollectioninputconfigurations?**
 
 ## Permissions
