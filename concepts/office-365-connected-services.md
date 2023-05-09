@@ -8,7 +8,7 @@ author: "sarahwxy"
 
 # Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio 
 
-Microsoft Graph enables developers to consume user information stored in Microsoft 365 in custom applications. Using connected services in Visual Studio you can grant your application access to the following Microsoft 365 services:
+Microsoft Graph enables developers to consume user information stored in Microsoft 365 in custom applications. Using Connected Services in Visual Studio you can grant your application access to the following Microsoft 365 services:
 
 - Outlook: mail, calendars, and contacts 
 - Azure Active Directory: users, groups, and directories 
@@ -17,11 +17,11 @@ Microsoft Graph enables developers to consume user information stored in Microso
 - SharePoint: sites, lists, and document libraries
 - Planner: tasks
 
-This article describes how to configure connected services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar.
+This article describes how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar.
 
 ## Get set up
 
-To use the Office 365 connected services with Microsoft Graph, you need:
+To use the Office 365 Connected Services with Microsoft Graph, you need:
 
 - Download [Visual Studio](https://visualstudio.microsoft.com/vs/). If you already have it, update it to the latest version.
 - Get a Microsoft 365 subscription. To get a free trial, join the [Microsoft 365 developer program](https://developer.microsoft.com/microsoft-365/dev-program).
