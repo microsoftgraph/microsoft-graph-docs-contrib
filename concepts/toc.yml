@@ -160,6 +160,8 @@ items:
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
+          - name: Define dataset scopes
+            href: data-connect-users-and-groups.md
           - name: Microsoft Graph Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
