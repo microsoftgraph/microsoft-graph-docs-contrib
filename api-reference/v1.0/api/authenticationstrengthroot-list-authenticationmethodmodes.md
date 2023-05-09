@@ -68,6 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_authenticationmethodmodedetail"
@@ -76,6 +77,28 @@ The following is an example of a request to retrieve the collection of **authent
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/authenticationMethodModes
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationmethodmodedetail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authenticationmethodmodedetail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-authenticationmethodmodedetail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationmethodmodedetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-authenticationmethodmodedetail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response
@@ -177,6 +200,7 @@ Content-Type: application/json
 #### Request
 The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_authenticationcombinations"
@@ -185,6 +209,29 @@ The following is an example of a request to retrieve the flat collection of auth
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/combinations
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-authenticationcombinations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authenticationcombinations-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
