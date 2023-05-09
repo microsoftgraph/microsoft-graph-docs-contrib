@@ -974,6 +974,9 @@ items:
           - name: Azure AD service limits
             displayName: Azure AD service limits and restrictions
             href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
+          - name: Configure Connected Services
+            displayName: Configure Connected Services in Visual Studio
+            href: /office-365-connected-services.md
       - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
         displayName: Microsoft Graph REST API v1.0 reference
