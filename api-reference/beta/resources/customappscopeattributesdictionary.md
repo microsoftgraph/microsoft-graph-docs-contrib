@@ -22,8 +22,9 @@ Currently only the Exchange Online RBAC provider is supported.
 <!--### For an Exchange Online provider-->
 |Property|Type|Description|
 |:---|:---|:---|
-|Exclusive | Boolean | Indicates whether the object is an [exclusive scope](/exchange/understanding-exclusive-scopes-exchange-2013-help). |
-|RecipientFilter| String | A filter query that defines how you segment your recipients that admins can manage. |
+|**Exchange Online provider|||
+|exclusive | Boolean | Indicates whether the object is an [exclusive scope](/exchange/understanding-exclusive-scopes-exchange-2013-help). |
+|recipientFilter| String | A filter query that defines how you segment your recipients that admins can manage. |
 
 ## JSON representation
 
@@ -37,7 +38,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.customAppScopeAttributesDictionary",
-  "Exclusive": "Boolean",
-  "RecipientFilter": "String"
+  "exclusive": "Boolean",
+  "recipientFilter": "String"
 }
 ```
