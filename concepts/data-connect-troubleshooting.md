@@ -142,7 +142,7 @@ First time runs of Microsoft Graph Data Connect and the mapping data flow activi
 1. The consent request is only valid for 24 hours. Contact your tenant admin to approve within this timeframe.  
 
     a. If not approved in that timeframe, subsequent runs will fail with the same error and regenerate a consent request.
-g
+    
     b. When approved, the pipeline can be rerun at any time to retrieve data.
 
     ![An image that shows the error the first time  Microsoft Graph Data Connect and the mapping data flow runs](images/data-connect-mdf-error.png)
