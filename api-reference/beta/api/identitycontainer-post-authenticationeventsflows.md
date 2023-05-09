@@ -66,7 +66,7 @@ You can specify the following properties when creating an **authenticationEvents
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a JSON representation of an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a JSON representation of an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object in the response body.
 
 ## Example 1: Create a basic External Identities Sign-up/Sign-in User Flow on an AD customer tenant 
 

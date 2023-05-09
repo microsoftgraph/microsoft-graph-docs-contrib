@@ -47,19 +47,14 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
+In the request body, supply a JSON representation of the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md) object.
 
-The following table shows the properties that are required when you create the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md).
+The following table shows the properties that are required when you create the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the identityUserFlowAttribute within a user flow.|
-|isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user doesn't have to provide a value. `false` means the user cannot complete sign-up without providing a value.|
-|requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
-|userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) collection|The input options for the user flow attribute. Only applicable when the userInputType is `radioSingleSelect`, `dropdownSingleSelect`, or `checkboxMultiSelect`.|
-|userInputType|identityUserFlowAttributeInputType|The input type of the user flow attribute. Possible values are: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
-|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|The identifier for the user flow attribute to include in the user flow assignment.
-
+|accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|Optional. A list of GUIDs referencing Entitlement Management [accessPackages](../resources/accesspackage.md) to check whether there are pending access requests for the specified user. Applicable only to user flows configured in Azure AD workforce tenant.**SHOULD BE HIDDEN**|
+|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign up experience defined by a user flow, or [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the Attribute Collection page.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.

@@ -14053,17 +14053,23 @@ items:
               href: api/authenticationeventsflow-update.md
             - name: Delete
               href: api/authenticationeventsflow-delete.md
-            - name: List identity providers (auth methods)
+            - name: List applications
+              href: api/authenticationeventsflow-list-applications.md
+            - name: Add applications
+              href: api/authenticationeventsflow-post-applications.md
+            - name: Remove applications
+              href: api/authenticationeventsflow-delete-applications.md              
+            - name: List identity providers
               href: api/authenticationeventsflow-list-identityProviders.md
-            - name: Add identity provider (auth method)
+            - name: Add identity provider
               href: api/authenticationeventsflow-post-identityProviders.md
-            - name: Remove identity provider (auth method)
+            - name: Remove identity provider
               href: api/authenticationeventsflow-delete-identityProviders.md
-            - name: List attributes collected in user flow
+            - name: List attributes
               href: api/authenticationeventsflow-list-attributes.md
-            - name: Add attributes collected in user flow
+            - name: Add attributes
               href: api/authenticationeventsflow-post-attributes.md
-            - name: Remove attributes collected in user flow
+            - name: Remove attributes
               href: api/authenticationeventsflow-delete-attributes.md    
           - name: User flow attributes
             items:
