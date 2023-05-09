@@ -18,14 +18,14 @@ $notes->setContent('clock in notes');
 
 $requestBody->setNotes($notes);
 $additionalData = [
-'atAprovedLocation' => true,
+		'atAprovedLocation' => true,
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->clockIn()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->clockIn()->post($requestBody);
 
 
 ```

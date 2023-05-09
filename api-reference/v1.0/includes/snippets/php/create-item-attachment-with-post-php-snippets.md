@@ -24,7 +24,7 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.itemAttachment');
 $attachmentsAttachment1->setName('Holiday event');
 
 $additionalData = [
-'item' => $attachmentsAttachment1 = new Item();
+		'item' => $attachmentsAttachment1 = new Item();
 $		attachmentsAttachment1->set@odatatype('microsoft.graph.event');
 
 $		attachmentsAttachment1->setSubject('Discuss gifts for children');

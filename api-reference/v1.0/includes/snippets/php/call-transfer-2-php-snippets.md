@@ -30,7 +30,7 @@ $transferTarget->setIdentity($transferTargetIdentity);
 $transferTarget->setReplacesCallId('e5d39592-99bd-4db8-bca8-30fb894ec51d');
 
 $additionalData = [
-'endpointType' => 'default', 
+		'endpointType' => 'default', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 

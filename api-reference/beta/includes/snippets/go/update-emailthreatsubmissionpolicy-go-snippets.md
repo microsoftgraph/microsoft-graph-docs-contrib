@@ -19,7 +19,7 @@ requestBody := graphmodels.NewEmailThreatSubmissionPolicy()
 isReportToMicrosoftEnabled := false
 requestBody.SetIsReportToMicrosoftEnabled(&isReportToMicrosoftEnabled) 
 
-result, err := graphClient.Security().ThreatSubmission().EmailThreatSubmissionPoliciesById("emailThreatSubmissionPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().ThreatSubmission().EmailThreatSubmissionPolicies().ByEmailThreatSubmissionPolicieId("emailThreatSubmissionPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

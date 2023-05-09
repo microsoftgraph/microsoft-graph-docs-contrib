@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().EmailMethodsById("emailAuthenticationMethod-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Authentication().EmailMethods().ByEmailMethodId("emailAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

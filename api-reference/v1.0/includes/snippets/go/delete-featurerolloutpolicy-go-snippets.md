@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().FeatureRolloutPoliciesById("featureRolloutPolicy-id").Delete(context.Background(), nil)
+graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicieId("featureRolloutPolicy-id").Delete(context.Background(), nil)
 
 
 ```

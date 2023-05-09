@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Planner().RostersById("plannerRoster-id").Delete(context.Background(), nil)
+graphClient.Planner().Rosters().ByRosterId("plannerRoster-id").Delete(context.Background(), nil)
 
 
 ```

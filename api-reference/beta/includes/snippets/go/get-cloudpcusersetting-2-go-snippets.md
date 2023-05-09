@@ -22,7 +22,7 @@ configuration := &graphconfig.DeviceManagementVirtualEndpointUserSettingItemRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Get(context.Background(), configuration)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByUserSettingId("cloudPcUserSetting-id").Get(context.Background(), configuration)
 
 
 ```

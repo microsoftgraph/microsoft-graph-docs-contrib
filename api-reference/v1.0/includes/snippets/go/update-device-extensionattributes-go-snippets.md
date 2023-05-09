@@ -24,7 +24,7 @@ extensionAttributes.SetExtensionAttribute1(&extensionAttribute1)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.DevicesById("device-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PassiveDnsRecordCollectionWithReferencesPage passiveDns = graphClient.security().threatIntelligence().hosts("contoso.com").passiveDns()
+PassiveDnsRecordCollectionWithReferencesPage passiveDnsReverse = graphClient.security().threatIntelligence().hosts("contoso.com").passiveDnsReverse()
 	.buildRequest()
 	.get();
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").Delete(context.Background(), nil)
+graphClient.PrivilegedRoleAssignments().ByPrivilegedRoleAssignmentId("privilegedRoleAssignment-id").Delete(context.Background(), nil)
 
 
 ```

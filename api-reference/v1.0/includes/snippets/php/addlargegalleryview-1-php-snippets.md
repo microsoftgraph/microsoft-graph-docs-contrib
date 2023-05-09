@@ -14,7 +14,7 @@ $requestBody->setClientContext('785f4929-92ca-497b-863f-c778c77c9758');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->addLargeGalleryView()->post($requestBody);
+$result = $graphServiceClient->communications()->callsById('call-id')->addLargeGalleryView()->post($requestBody);
 
 
 ```

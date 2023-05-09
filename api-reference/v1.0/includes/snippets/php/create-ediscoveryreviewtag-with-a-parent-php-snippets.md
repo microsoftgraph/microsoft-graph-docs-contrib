@@ -17,14 +17,14 @@ $requestBody->setDescription('Use Graph API to create tags');
 $requestBody->setChildSelectability(new ChildSelectability('many'));
 
 $additionalData = [
-'parent@odata.bind' => '', 
+		'parent@odata.bind' => '', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tags()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->tags()->post($requestBody);
 
 
 ```

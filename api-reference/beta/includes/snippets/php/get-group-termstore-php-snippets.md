@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["*","parentSiteId"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->termStore()->groupsById('group-id')->get($requestConfiguration);
+$result = $graphServiceClient->sitesById('site-id')->termStore()->groupsById('group-id')->get($requestConfiguration);
 
 
 ```

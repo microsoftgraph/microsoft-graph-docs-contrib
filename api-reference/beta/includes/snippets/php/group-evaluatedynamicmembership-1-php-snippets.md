@@ -14,7 +14,7 @@ $requestBody->setMemberId('319b41e8-d9e4-42f8-bdc9-741113f48b33');
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->evaluateDynamicMembership()->post($requestBody);
+$result = $graphServiceClient->groupsById('group-id')->evaluateDynamicMembership()->post($requestBody);
 
 
 ```

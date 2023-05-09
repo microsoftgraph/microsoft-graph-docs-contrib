@@ -41,7 +41,7 @@ $grantControls->setBuiltInControls([$grantControls->setConditionalAccessGrantCon
 $requestBody->setGrantControls($grantControls);
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->policies()->post($requestBody);
 
 
 ```

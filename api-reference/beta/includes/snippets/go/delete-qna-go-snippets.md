@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Search().QnasById("qna-id").Delete(context.Background(), nil)
+graphClient.Search().Qnas().ByQnaId("qna-id").Delete(context.Background(), nil)
 
 
 ```

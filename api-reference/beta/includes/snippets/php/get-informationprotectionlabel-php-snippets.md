@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->me()->informationProtection()->policy()->labelsById('informationProtectionLabel-id')->get();
+$result = $graphServiceClient->me()->informationProtection()->policy()->labelsById('informationProtectionLabel-id')->get();
 
 
 ```

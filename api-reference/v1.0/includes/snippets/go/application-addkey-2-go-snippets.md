@@ -31,7 +31,7 @@ requestBody.SetPasswordCredential(passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.ApplicationsById("application-id").AddKey().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

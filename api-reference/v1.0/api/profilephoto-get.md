@@ -22,45 +22,45 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### To retrieve the profile photo of a contact
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
-|Application      |    Contacts.Read, Contacts.ReadWrite           |
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   Contacts.Read | Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read | Contacts.ReadWrite            |
+|Application      |    Contacts.Read | Contacts.ReadWrite           |
 
 ### To retrieve the profile photo of a group
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   Group.Read.All, Group.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
-|Application      |    Group.Read.All, Group.ReadWrite.All           |
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   Group.Read.All | Group.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |  Not supported. |
+|Application      |    Group.Read.All | Group.ReadWrite.All           |
 
 ### To retrieve the profile photo of a team
 
-| Permission Type | Permissions (from least to most privileged)                   |
-| --------------- | ------------------------------------------------------------- |
-| Delegated (work or school account)        | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
-| Delegated (personal Microsoft account)    | Not supported.                      |
-| Application                               | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+| Delegated (work or school account)        | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+| Delegated (personal Microsoft account)    | Not supported.  | Not supported.                  |
+| Application                               | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All |
 
 ### To retrieve the profile photo of a user
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
-|Application      |    User.Read.All, User.ReadWrite.All           |
+|Permission type      | Least privileged permissions             | Higher privileged permissions             |
+|:--------------------|:-----------------------------------------|:------------------------------------------|
+|Delegated (work or school account)      |   User.Read | User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read | User.ReadWrite            |
+|Application      |    User.Read.All | User.ReadWrite.All           |
 
 > [!NOTE]
 > 
-> 1. Metadata operation is not supported for personal Microsoft accounts.
-> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
-> 3. Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - Metadata operation is not supported for personal Microsoft accounts.
+> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
 

@@ -23,7 +23,7 @@ requestBody.SetShowComments(&showComments)
 showRecommendedPages := false
 requestBody.SetShowRecommendedPages(&showRecommendedPages) 
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").Pages().ByPageId("sitePage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -31,7 +31,7 @@ requestBody.SetSecurityEnabled(&securityEnabled)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
+graphClient.Directory().AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

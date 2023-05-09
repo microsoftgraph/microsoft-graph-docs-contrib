@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Onenote().SectionGroupsById("sectionGroup-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Onenote().SectionGroups().BySectionGroupId("sectionGroup-id").Get(context.Background(), nil)
 
 
 ```

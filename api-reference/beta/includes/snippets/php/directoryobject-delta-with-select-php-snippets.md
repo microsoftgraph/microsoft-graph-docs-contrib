@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "isof or isof";
 $queryParameters->select = ["microsoft.graph.user/surname","microsoft.graph.group/displayName"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration);
 
 
 ```

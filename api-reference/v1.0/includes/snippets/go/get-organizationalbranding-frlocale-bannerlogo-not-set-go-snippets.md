@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").BannerLogo().Get(context.Background(), nil)
+graphClient.Organization().ByOrganization().Id("organization-id").Branding().Localizations().ByLocalizationId("organizationalBrandingLocalization-id").BannerLogo().Get(context.Background(), nil)
 
 
 ```

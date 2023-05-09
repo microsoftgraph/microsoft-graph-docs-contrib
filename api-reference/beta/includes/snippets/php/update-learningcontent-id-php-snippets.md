@@ -46,7 +46,7 @@ $requestBody->setIsSearchable(true);
 
 
 
-$requestResult = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->learningContentsById('learningContent-id')->patch($requestBody);
+$result = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->learningContentsById('learningContent-id')->patch($requestBody);
 
 
 ```

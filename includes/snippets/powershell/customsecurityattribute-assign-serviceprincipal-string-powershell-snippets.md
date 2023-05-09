@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Applications
 
 $params = @{
-	CustomSecurityAttributes = @{
+	customSecurityAttributes = @{
 		Engineering = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			ProjectDate = "2022-10-01"

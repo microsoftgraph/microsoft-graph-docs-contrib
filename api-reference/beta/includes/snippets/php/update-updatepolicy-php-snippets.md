@@ -22,7 +22,7 @@ $deploymentSettingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windo
 $deploymentSettingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P1D'));
 
 $additionalData = [
-'devicePerOffer' => 1000,
+		'devicePerOffer' => 1000,
 ];
 $deploymentSettingsScheduleGradualRollout->setAdditionalData($additionalData);
 
@@ -35,7 +35,7 @@ $deploymentSettings->setSchedule($deploymentSettingsSchedule);
 $requestBody->setDeploymentSettings($deploymentSettings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->patch($requestBody);
 
 
 ```

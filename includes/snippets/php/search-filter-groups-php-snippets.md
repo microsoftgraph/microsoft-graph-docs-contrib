@@ -10,20 +10,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "mailEnabled eq true";
-$queryParameters->search = "\"displayName:OneVideo\"";
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GroupsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "mailEnabled eq true";
+$queryParameters->search = "\"displayName:OneVideo\"";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->groups()->get($requestConfiguration);
+
+$result = $graphServiceClient->groups()->get($requestConfiguration);
 
 
 ```

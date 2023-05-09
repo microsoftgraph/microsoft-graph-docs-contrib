@@ -17,7 +17,7 @@ $site->setWebUrl('https://contoso.sharepoint.com/sites/SecretSite');
 $requestBody->setSite($site);
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHoldsById('legalHold-id')->siteSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHoldsById('legalHold-id')->siteSources()->post($requestBody);
 
 
 ```

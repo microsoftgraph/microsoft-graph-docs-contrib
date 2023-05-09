@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSourcesById("noncustodialDataSource-id").DataSource().Get(context.Background(), nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().ByNoncustodialDataSourceId("noncustodialDataSource-id").DataSource().Get(context.Background(), nil)
 
 
 ```

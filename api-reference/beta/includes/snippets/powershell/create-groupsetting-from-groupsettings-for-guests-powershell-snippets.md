@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	TemplateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
-	Values = @(
+	templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
+	values = @(
 		@{
-			Name = "AllowToAddGuests"
-			Value = "false"
+			name = "AllowToAddGuests"
+			value = "false"
 		}
 	)
 }

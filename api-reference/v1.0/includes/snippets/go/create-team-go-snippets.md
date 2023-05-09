@@ -8,37 +8,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Groups/Item/Team"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTeamPutRequestBody()
-additionalData := map[string]interface{}{
-memberSettings := graphmodels.New()
-	allowCreatePrivateChannels := true
+requestBody := graphmodels.NewTeam()
+memberSettings := graphmodels.NewTeamMemberSettings()
+allowCreatePrivateChannels := true
 memberSettings.SetAllowCreatePrivateChannels(&allowCreatePrivateChannels) 
-	allowCreateUpdateChannels := true
+allowCreateUpdateChannels := true
 memberSettings.SetAllowCreateUpdateChannels(&allowCreateUpdateChannels) 
-	requestBody.SetMemberSettings(memberSettings)
-messagingSettings := graphmodels.New()
-	allowUserEditMessages := true
+requestBody.SetMemberSettings(memberSettings)
+messagingSettings := graphmodels.NewTeamMessagingSettings()
+allowUserEditMessages := true
 messagingSettings.SetAllowUserEditMessages(&allowUserEditMessages) 
-	allowUserDeleteMessages := true
+allowUserDeleteMessages := true
 messagingSettings.SetAllowUserDeleteMessages(&allowUserDeleteMessages) 
-	requestBody.SetMessagingSettings(messagingSettings)
-funSettings := graphmodels.New()
-	allowGiphy := true
+requestBody.SetMessagingSettings(messagingSettings)
+funSettings := graphmodels.NewTeamFunSettings()
+allowGiphy := true
 funSettings.SetAllowGiphy(&allowGiphy) 
-giphyContentRating := "strict"
+giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE 
 funSettings.SetGiphyContentRating(&giphyContentRating) 
-	requestBody.SetFunSettings(funSettings)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetFunSettings(funSettings)
 
-graphClient.GroupsById("group-id").Team().Put(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

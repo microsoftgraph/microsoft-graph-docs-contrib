@@ -14,7 +14,7 @@ $requestBody->setName('Marketing calendar');
 
 
 
-$requestResult = $graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->calendars()->post($requestBody);
+$result = $graphServiceClient->me()->calendarGroupsById('calendarGroup-id')->calendars()->post($requestBody);
 
 
 ```

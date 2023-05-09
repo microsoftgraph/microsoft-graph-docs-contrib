@@ -29,7 +29,7 @@ requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegi
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById("namedLocation-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().ByNamedLocationId("namedLocation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

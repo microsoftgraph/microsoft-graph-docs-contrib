@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviewsById('serviceHealth-id')->get();
+$result = $graphServiceClient->admin()->serviceAnnouncement()->healthOverviewsById('serviceHealth-id')->get();
 
 
 ```

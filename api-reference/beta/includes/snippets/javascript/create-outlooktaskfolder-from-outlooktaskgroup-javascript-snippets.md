@@ -14,7 +14,7 @@ const outlookTaskFolder = {
   name: 'Cooking'
 };
 
-await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders')
+await client.api('/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders')
 	.version('beta')
 	.post(outlookTaskFolder);
 

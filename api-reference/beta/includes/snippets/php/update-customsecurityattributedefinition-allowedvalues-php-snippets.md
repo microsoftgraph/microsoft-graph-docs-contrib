@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CustomSecurityAttributeDefinition();
 $additionalData = [
-'allowedValues@delta' => $allowedValues@delta1 = new ();
+		'allowedValues@delta' => $allowedValues@delta1 = new ();
 $		allowedValues@delta1->setId('Baker');
 
 		$allowedValues@delta1->setIsActive(false);
@@ -34,15 +34,13 @@ $requestBody->setAdditionalData($additionalData);
 
 
 $requestConfiguration = new CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-'OData-Version' => '4.01',
+	'OData-Version' => '4.01',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->directory()->customSecurityAttributeDefinitionsById('customSecurityAttributeDefinition-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

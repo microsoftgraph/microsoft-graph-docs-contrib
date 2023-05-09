@@ -63,7 +63,7 @@ qi := "qi-value"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.TrustFramework().KeySetsById("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
+graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").Put(context.Background(), requestBody, nil)
 
 
 ```

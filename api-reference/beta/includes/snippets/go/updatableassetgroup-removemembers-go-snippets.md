@@ -28,7 +28,7 @@ assets := []graphmodels.Objectable {
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").WindowsUpdatesRemoveMembers().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().ByUpdatableAssetId("updatableAsset-id").WindowsUpdatesRemoveMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

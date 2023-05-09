@@ -25,7 +25,7 @@ configuration := &graphconfig.TeamItemScheduleShiftsRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().Shifts().Get(context.Background(), configuration)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().Get(context.Background(), configuration)
 
 
 ```

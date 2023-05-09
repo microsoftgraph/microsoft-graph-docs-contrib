@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
-	OriginalStartTimeZone = "originalStartTimeZone-value"
-	OriginalEndTimeZone = "originalEndTimeZone-value"
-	ResponseStatus = @{
-		Response = ""
-		Time = [System.DateTime]::Parse("datetime-value")
+	originalStartTimeZone = "originalStartTimeZone-value"
+	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = [System.DateTime]::Parse("datetime-value")
 	}
-	Uid = "iCalUId-value"
-	ReminderMinutesBeforeStart = 99
-	IsReminderOn = $true
+	uid = "iCalUId-value"
+	reminderMinutesBeforeStart = 99
+	isReminderOn = $true
 }
 
 Update-MgGroupEvent -GroupId $groupId -EventId $eventId -BodyParameter $params

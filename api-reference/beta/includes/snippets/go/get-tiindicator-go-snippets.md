@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().TiIndicatorsById("tiIndicator-id").Get(context.Background(), nil)
+result, err := graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Get(context.Background(), nil)
 
 
 ```

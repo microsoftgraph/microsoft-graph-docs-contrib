@@ -16,7 +16,7 @@ $requestBody->setIncludedSources(new SourceType('mailbox'));
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHoldsById('legalHold-id')->userSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->legalHoldsById('legalHold-id')->userSources()->post($requestBody);
 
 
 ```

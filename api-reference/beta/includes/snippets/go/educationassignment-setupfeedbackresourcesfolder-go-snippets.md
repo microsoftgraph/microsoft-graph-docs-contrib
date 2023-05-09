@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewSetUpFeedbackResourcesFolderPostRequestBody()
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").SetUpFeedbackResourcesFolder().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").SetUpFeedbackResourcesFolder().Post(context.Background(), requestBody, nil)
 
 
 ```

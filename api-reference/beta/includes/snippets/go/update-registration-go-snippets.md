@@ -43,7 +43,7 @@ speakers := []graphmodels.MeetingSpeakerable {
 }
 requestBody.SetSpeakers(speakers)
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
 
 
 ```

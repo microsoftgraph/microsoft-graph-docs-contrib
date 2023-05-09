@@ -35,7 +35,7 @@ end.SetTimeZone(&timeZone)
 proposedNewTime.SetEnd(end)
 requestBody.SetProposedNewTime(proposedNewTime)
 
-graphClient.Me().EventsById("event-id").Decline().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Decline().Post(context.Background(), requestBody, nil)
 
 
 ```

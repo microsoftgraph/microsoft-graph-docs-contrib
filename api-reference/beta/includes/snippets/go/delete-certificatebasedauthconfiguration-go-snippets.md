@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.OrganizationById("organization-id").CertificateBasedAuthConfigurationById("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
+graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().ByCertificateBasedAuthConfiguration().Id("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
 
 
 ```

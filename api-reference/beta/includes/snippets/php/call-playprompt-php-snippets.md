@@ -16,7 +16,7 @@ $promptsPrompt1 = new Prompt();
 $promptsPrompt1->set@odatatype('#microsoft.graph.mediaPrompt');
 
 $additionalData = [
-'mediaInfo' => $promptsPrompt1 = new MediaInfo();
+		'mediaInfo' => $promptsPrompt1 = new MediaInfo();
 $		promptsPrompt1->set@odatatype('#microsoft.graph.mediaInfo');
 
 $		promptsPrompt1->setUri('https://cdn.contoso.com/beep.wav');
@@ -39,7 +39,7 @@ $requestBody->setLoop(false);
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->playPrompt()->post($requestBody);
+$result = $graphServiceClient->communications()->callsById('call-id')->playPrompt()->post($requestBody);
 
 
 ```

@@ -28,7 +28,7 @@ $policyViolation->setDlpAction(new ChatMessagePolicyViolationDlpActionTypes('blo
 $requestBody->setPolicyViolation($policyViolation);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messagesById('chatMessage-id')->patch($requestBody);
 
 
 ```

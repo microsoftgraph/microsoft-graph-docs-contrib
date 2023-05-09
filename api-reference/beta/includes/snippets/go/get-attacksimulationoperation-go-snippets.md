@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().AttackSimulation().OperationsById("attackSimulationOperation-id").Get(context.Background(), nil)
+result, err := graphClient.Security().AttackSimulation().Operations().ByOperationId("attackSimulationOperation-id").Get(context.Background(), nil)
 
 
 ```
