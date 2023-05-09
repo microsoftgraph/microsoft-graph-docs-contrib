@@ -23,7 +23,7 @@ requestBody.SetSourceData(&sourceData)
 seriesBy := "Auto"
 requestBody.SetSeriesBy(&seriesBy) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().WorksheetsById("workbookWorksheet-id").Charts().Add().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

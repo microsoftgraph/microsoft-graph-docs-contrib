@@ -25,7 +25,7 @@ requestBody.SetExportOptions(&exportOptions)
 exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").SecurityExport().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").SecurityExport().Post(context.Background(), requestBody, nil)
 
 
 ```

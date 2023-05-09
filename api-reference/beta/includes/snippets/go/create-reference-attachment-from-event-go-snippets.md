@@ -26,7 +26,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().EventsById("event-id").Attachments().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Events().ByEventId("event-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

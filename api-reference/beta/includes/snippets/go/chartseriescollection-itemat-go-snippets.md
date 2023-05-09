@@ -22,7 +22,7 @@ index := graphmodels.New()
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().WorksheetsById("workbookWorksheet-id").ChartsById("workbookChart-id").SeriesById("workbookChartSeries-id").Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").Series().BySerieId("workbookChartSeries-id").Post(context.Background(), requestBody, nil)
 
 
 ```

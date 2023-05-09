@@ -24,7 +24,7 @@ requestBody.SetMailNickname(&mailNickname)
 onBehalfOfUserId := uuid.MustParse("onBehalfOfUserId-value")
 requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId) 
 
-graphClient.GroupsById("group-id").ValidateProperties().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").ValidateProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

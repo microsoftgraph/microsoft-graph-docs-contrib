@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().LanguagesById("languageProficiency-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Profile().Languages().ByLanguageId("languageProficiency-id").Get(context.Background(), nil)
 
 
 ```

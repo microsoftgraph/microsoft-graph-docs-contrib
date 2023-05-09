@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.GroupsById("group-id").UnsubscribeByMail().Post(context.Background(), nil)
+graphClient.Groups().ByGroupId("group-id").UnsubscribeByMail().Post(context.Background(), nil)
 
 
 ```

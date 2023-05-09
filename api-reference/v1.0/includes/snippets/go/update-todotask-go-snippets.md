@@ -23,7 +23,7 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

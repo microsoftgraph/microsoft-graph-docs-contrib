@@ -19,7 +19,7 @@ requestBody := graphmodels.NewEducationCategory()
 displayName := "Quizzes"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentCategories().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Post(context.Background(), requestBody, nil)
+graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Post(context.Background(), requestBody, nil)
 
 
 ```

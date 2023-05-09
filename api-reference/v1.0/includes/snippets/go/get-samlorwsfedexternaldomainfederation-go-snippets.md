@@ -25,7 +25,7 @@ configuration := &graphconfig.DirectoryFederationConfigurationItemRequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().FederationConfigurationsById("identityProviderBase-id").Get(context.Background(), configuration)
+result, err := graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Get(context.Background(), configuration)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironmentsById("accessPackageResourceEnvironment-id").Get(context.Background(), nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().ByAccessPackageResourceEnvironmentId("accessPackageResourceEnvironment-id").Get(context.Background(), nil)
 
 
 ```

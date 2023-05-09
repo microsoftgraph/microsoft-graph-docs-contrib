@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().RecommendationsById("recommendation-id").Complete().Post(context.Background(), nil)
+result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Complete().Post(context.Background(), nil)
 
 
 ```

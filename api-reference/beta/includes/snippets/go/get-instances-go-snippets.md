@@ -28,7 +28,7 @@ configuration := &graphconfig.ItemEventItemInstancesRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().EventsById("event-id").Instances().Get(context.Background(), configuration)
+result, err := graphClient.Me().Events().ByEventId("event-id").Instances().Get(context.Background(), configuration)
 
 
 ```

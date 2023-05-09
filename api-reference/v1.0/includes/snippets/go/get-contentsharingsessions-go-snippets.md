@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().CallsById("call-id").ContentSharingSessions().Get(context.Background(), nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").ContentSharingSessions().Get(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().VirtualEndpoint().DeviceImagesById("cloudPcDeviceImage-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().ByDeviceImageId("cloudPcDeviceImage-id").Delete(context.Background(), nil)
 
 
 ```

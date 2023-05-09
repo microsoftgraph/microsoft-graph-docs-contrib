@@ -62,27 +62,26 @@ DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteList
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersharedcookie-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersharedcookie-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersharedcookie-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersharedcookie-v1-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersharedcookie-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersharedcookie-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersharedcookie-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersharedcookie-v1-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-v1-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response.
@@ -111,27 +110,26 @@ DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteList
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersharedcookie-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersharedcookie-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersharedcookie-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersharedcookie-v1-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersharedcookie-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersharedcookie-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersharedcookie-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersharedcookie-v1-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersharedcookie-v1-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following is an example of the response where the **status** has changed to `pendingDelete` but the shared cookie is still published. You must publish the shared cookie to fully remove it from the site list.

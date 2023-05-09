@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Solutions().BusinessScenariosById("businessScenario-id").Delete(context.Background(), nil)
+graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Delete(context.Background(), nil)
 
 
 ```

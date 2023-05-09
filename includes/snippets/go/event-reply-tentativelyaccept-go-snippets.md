@@ -21,7 +21,7 @@ requestBody.SetComment(&comment)
 sendResponse := true
 requestBody.SetSendResponse(&sendResponse) 
 
-graphClient.Me().EventsById("event-id").TentativelyAccept().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").TentativelyAccept().Post(context.Background(), requestBody, nil)
 
 
 ```

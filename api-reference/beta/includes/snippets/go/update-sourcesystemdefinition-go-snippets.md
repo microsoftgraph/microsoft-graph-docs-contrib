@@ -19,7 +19,7 @@ requestBody := graphmodels.NewSourceSystemDefinition()
 vendor := "LMS Vendor"
 requestBody.SetVendor(&vendor) 
 
-result, err := graphClient.External().IndustryData().SourceSystemsById("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().IndustryData().SourceSystems().BySourceSystemId("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

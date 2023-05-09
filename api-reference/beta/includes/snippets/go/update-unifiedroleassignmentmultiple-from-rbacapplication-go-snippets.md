@@ -23,7 +23,7 @@ principalIds := []string {
 }
 requestBody.SetPrincipalIds(principalIds)
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignmentsById("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().ByRoleAssignmentId("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

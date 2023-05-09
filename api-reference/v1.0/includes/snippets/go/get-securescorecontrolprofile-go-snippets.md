@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().SecureScoreControlProfilesById("secureScoreControlProfile-id").Get(context.Background(), nil)
+result, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Get(context.Background(), nil)
 
 
 ```

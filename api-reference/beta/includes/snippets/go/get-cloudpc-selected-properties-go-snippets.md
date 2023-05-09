@@ -22,7 +22,7 @@ configuration := &graphconfig.DeviceManagementVirtualEndpointCloudPCItemRequestB
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById("cloudPC-id").Get(context.Background(), configuration)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").Get(context.Background(), configuration)
 
 
 ```

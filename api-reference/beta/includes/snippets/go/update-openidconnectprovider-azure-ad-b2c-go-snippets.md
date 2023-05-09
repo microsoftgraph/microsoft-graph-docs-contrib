@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityProvidersById("identityProvider-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityProviders().ByIdentityProviderId("identityProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

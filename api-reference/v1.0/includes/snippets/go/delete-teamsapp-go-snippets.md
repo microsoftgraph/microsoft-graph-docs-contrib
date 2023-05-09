@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.AppCatalogs().TeamsAppsById("teamsApp-id").Delete(context.Background(), nil)
+graphClient.AppCatalogs().TeamsApps().ByTeamsAppId("teamsApp-id").Delete(context.Background(), nil)
 
 
 ```

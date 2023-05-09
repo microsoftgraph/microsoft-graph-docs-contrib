@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.AccessReviewsById("accessReview-id").ReviewersById("accessReviewReviewer-id").Delete(context.Background(), nil)
+graphClient.AccessReviews().ByAccessReviewId("accessReview-id").Reviewers().ByReviewerId("accessReviewReviewer-id").Delete(context.Background(), nil)
 
 
 ```

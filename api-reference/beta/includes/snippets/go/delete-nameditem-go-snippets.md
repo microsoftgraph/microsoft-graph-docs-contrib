@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().NamesById("workbookNamedItem-id").Delete(context.Background(), nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Names().ByNameId("workbookNamedItem-id").Delete(context.Background(), nil)
 
 
 ```

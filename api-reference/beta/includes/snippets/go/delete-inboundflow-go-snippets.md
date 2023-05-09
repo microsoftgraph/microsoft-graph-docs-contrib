@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.External().IndustryData().InboundFlowsById("inboundFlow-id").Delete(context.Background(), nil)
+graphClient.External().IndustryData().InboundFlows().ByInboundFlowId("inboundFlow-id").Delete(context.Background(), nil)
 
 
 ```

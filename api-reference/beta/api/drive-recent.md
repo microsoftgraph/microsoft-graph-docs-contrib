@@ -48,16 +48,12 @@ This method returns a collection of [DriveItem](../resources/driveitem.md) resou
 GET /me/drive/recent
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

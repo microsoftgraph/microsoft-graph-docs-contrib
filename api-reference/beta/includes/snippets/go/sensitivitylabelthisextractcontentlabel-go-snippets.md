@@ -84,7 +84,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.UsersById("user-id").Security().InformationProtection().SensitivityLabels().SecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().SecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

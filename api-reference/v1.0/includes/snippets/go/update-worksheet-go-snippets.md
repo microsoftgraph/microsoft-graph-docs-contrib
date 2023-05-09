@@ -23,7 +23,7 @@ requestBody.SetName(&name)
 visibility := "visibility-value"
 requestBody.SetVisibility(&visibility) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().WorksheetsById("workbookWorksheet-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

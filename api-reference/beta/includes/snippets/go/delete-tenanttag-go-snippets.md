@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById("tenantTag-id").Delete(context.Background(), nil)
+graphClient.TenantRelationships().ManagedTenants().TenantTags().ByTenantTagId("tenantTag-id").Delete(context.Background(), nil)
 
 
 ```

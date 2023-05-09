@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/appManagementPolicies/$ref
+DELETE /applications/{applicationObjectId}/appManagementPolicies/{appManagementPolicyId}/$ref
+DELETE /servicePrincipals/{servicePrincipalObjectId}/appManagementPolicies/{appManagementPolicyId}/$ref
 ```
 
 ## Request headers
@@ -40,7 +41,7 @@ DELETE /applications/{id}/appManagementPolicies/$ref
 
 ## Request body
 
-In the request body, provide a reference to a single policy object from the [appManagementPolicies](../resources/appmanagementpolicy.md) collection.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -61,28 +62,23 @@ The following is an example of the request to remove an appManagementPolicy from
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/applications/{id}/appManagementPolicies/$ref
-Content-type: application/json
-
-{
- "@odata.id":"https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}"
-}
+DELETE https://graph.microsoft.com/v1.0/applications/3ccc9971-9ae7-45d6-8de8-263fd25fe116/appManagementPolicies/15942288-d19b-458c-9be4-20377d0a2435/$ref
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e1-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e1-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -117,27 +113,23 @@ The following is an example of the request to remove an appManagementPolicy from
 }-->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolicies/$ref
-
-{
- "@odata.id":"https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}"
-}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/f284860e-368c-4a1f-8894-77f0a9676fb3/appManagementPolicies/15942288-d19b-458c-9be4-20377d0a2435/$ref
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-appliesto-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-appliesto-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/remove-appliesto-e2-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-appliesto-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

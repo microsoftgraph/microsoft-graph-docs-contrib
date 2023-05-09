@@ -25,7 +25,7 @@ configuration := &graphconfig.IdentityB2cUserFlowItemLanguagesRequestBuilderGetR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").Languages().Get(context.Background(), configuration)
+result, err := graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").Languages().Get(context.Background(), configuration)
 
 
 ```

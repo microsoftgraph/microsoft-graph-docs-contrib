@@ -35,7 +35,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 }
 requestBody.SetRolePermissions(rolePermissions)
 
-result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.RoleManagement().Directory().RoleDefinitions().ByRoleDefinitionId("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

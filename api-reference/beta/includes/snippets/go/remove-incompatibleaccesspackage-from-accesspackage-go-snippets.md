@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById("accessPackage-id").IncompatibleAccessPackagesById("accessPackage-id1").Ref().Delete(context.Background(), nil)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").IncompatibleAccessPackages().ByIncompatibleAccessPackageId("accessPackage-id1").Ref().Delete(context.Background(), nil)
 
 
 ```

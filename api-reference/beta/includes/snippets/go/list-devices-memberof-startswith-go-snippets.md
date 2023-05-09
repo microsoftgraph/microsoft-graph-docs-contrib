@@ -33,7 +33,7 @@ configuration := &graphconfig.DeviceItemMemberOfGraph.groupRequestBuilderGetRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DevicesById("device-id").MemberOf().GraphGroup().Get(context.Background(), configuration)
+result, err := graphClient.Devices().ByDeviceId("device-id").MemberOf().GraphGroup().Get(context.Background(), configuration)
 
 
 ```
