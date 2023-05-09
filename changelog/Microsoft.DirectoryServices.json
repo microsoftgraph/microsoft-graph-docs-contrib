@@ -9748,25 +9748,25 @@
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
-          "ChangedApiName": "privilegedapproval",
+          "ChangedApiName": "privilegedApproval",
           "ChangeType": "Change",
-          "Description": "Change the [privilegedapproval](https://learn.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) entity.",
-          "Target": "privilegedapproval"
+          "Description": "Change the **privilegedApproval** entity.",
+          "Target": "privilegedApproval"
         },
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
-          "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
+          "ChangedApiName": "privilegedRoleAssignmentRequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedroleassignmentrequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
-          "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
+          "Description": "Added the **privilegedRoleAssignmentRequest** entity, and following methods:\u003Cbr\u003E **List** \u003Cbr\u003E **Create** \u003Cbr\u003E **Cancel** \u003Cbr\u003E **My**",
+          "Target": "privilegedRoleAssignmentRequest,List,Create,Cancel,My"
         },
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added [Update](https://learn.microsoft.com/en-us/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](https://learn.microsoft.com/en-us/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)",
+          "Description": "Added **Update** method to the **privilegedRoleSettings** resource.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],

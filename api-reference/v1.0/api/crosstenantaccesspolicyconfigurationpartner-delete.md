@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not applicable|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
@@ -50,10 +50,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
-
 ### Request
 
+The following is an example of a request. If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,6 +92,8 @@ DELETE https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partner
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
