@@ -68,10 +68,10 @@ You can specify the following properties when creating an **authenticationEvents
 
 If successful, this method returns a `201 Created` response code and a JSON representation of an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) object in the response body.
 
-## Example: Create an External Identities User Flow
+## Example 1: Create a basic External Identities Sign-up/Sign-in User Flow on an AD customer tenant 
 
 ### Request
-The following is an example of a request.  In this example, the user flow created is named "TestUserFlow3" and is set up to (1) allow sign up and sign in, (2) allow users to create a local Email with Password account, or sign up with their Google or Facebook identity, (3) collect Display Name, and (3) create Member user type.
+The following is an example of a request.  In this example, the user flow created is named "Woodgrove User Flow" and is set up to (1) allow sign up and sign in, (2) allow users to create a local Email with Password account, and (3) collect Display Name (built-in attribute).  The user flow definition also includes how the attributes to be collected will be displayed.
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventsflow_from_"
@@ -83,16 +83,10 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "displayName": "Woodgrove Drive User Flow"",
+    "displayName": "Woodgrove User Flow 1",
     "onAuthenticationMethodLoadStart": {
         "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
         "identityProviders": [
-            {
-                "id": "Google-OAUTH"
-            },
-            {
-                "id": "Facebook-OAUTH"
-            },
             {
                 "id": "EmailPassword-OAUTH"
             }
@@ -119,13 +113,6 @@ Content-Type: application/json
                 "userFlowAttributeType": "builtIn",
                 "dataType": "string"
             }
-            {
-                "id": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-                "displayName": "Favorite color",
-                "description": "what is your favorite color",
-                "userFlowAttributeType": "custom",
-                "dataType": "string"
-            }
         ],
         "attributeCollectionPage": {
             "views": [
@@ -142,26 +129,6 @@ Content-Type: application/json
                             "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
                         },
                         {
-                            "attribute": "city",
-                            "label": "City",
-                            "inputType": "text",
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-                        },
-                        {
-                            "attribute": "country",
-                            "label": "Country/Region",
-                            "inputType": "text",
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
-                        },
-                        {
                             "attribute": "displayName",
                             "label": "Display Name",
                             "inputType": "text",
@@ -174,13 +141,7 @@ Content-Type: application/json
                     ]
                 }
             ]
-        },
-        "accessPackages": []
-    },
-    "onUserCreateStart": {
-        "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-        "accessPackages": [],
-        "userTypeToCreate": "member"
+        }
     }
 }
 ```
@@ -188,6 +149,7 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -202,13 +164,13 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows/$entity",
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "id": "0313cc37-d421-421d-857b-87804d61e33e",
-    "displayName": "Woodgrove Drive User Flow",
+    "id": "{authenticationEventsFlow-id}",
+    "displayName": "Woodgrove User Flow 1",
     "description": null,
-    "priority": 50,
+    "priority": 500,
     "onAttributeCollectionStart": null,
     "onAttributeCollectionSubmit": null,
-    "tags": [],
+    "onUserCreateStart": null,
     "conditions": {
         "applications": {
             "includeAllApplications": false
@@ -244,30 +206,6 @@ Content-Type: application/json
                             "options": []
                         },
                         {
-                            "attribute": "city",
-                            "label": "City",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "country",
-                            "label": "Country/Region",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-                            "options": []
-                        },
-                        {
                             "attribute": "displayName",
                             "label": "Display Name",
                             "inputType": "text",
@@ -283,12 +221,196 @@ Content-Type: application/json
                 }
             ]
         }
+    }
+}
+```
+## Example 2: Create an External Identities Sign-up/Sign-in User Flow with Social Providers and a custom attribute
+
+### Request
+The following is an example of a request.  In this example, the user flow created is named "Woodgrove Drive User Flow" and is set up to (1) allow sign up and sign in, (2) allow users to create a local Email with Password account, or authenticate with Google or Facebook, and (3) collect Display Name (built-in attribute) and Favorite Color (custom attribute).
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventsflow_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "displayName": "Woodgrove User Flow 2",
+    "onAuthenticationMethodLoadStart": {
+        "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+        "identityProviders": [
+            {
+                "id": "EmailPassword-OAUTH"
+            },
+            {
+                "id": "Google-OAUTH"
+            },
+            {
+                "id": "Facebook-OAUTH"
+            }
+        ]
+    },  
+    "onInteractiveAuthFlowStart": {
+        "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+        "isSignUpAllowed": true
     },
-    "onUserCreateStart": {
-        "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-        "userTypeToCreate": "member",
-        "accessPackages": []
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "attributes": [
+            {
+                "id": "email",
+                "displayName": "Email Address",
+                "description": "Email address of the user",
+                "userFlowAttributeType": "builtIn",
+                "dataType": "string"
+            },
+            {
+                "id": "displayName",
+                "displayName": "Display Name",
+                "description": "Display Name of the User.",
+                "userFlowAttributeType": "builtIn",
+                "dataType": "string"
+            },
+            {
+                "id": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                "displayName": "Favorite color",
+                "description": "what is your favorite color",
+                "userFlowAttributeType": "custom",
+                "dataType": "string"
+            }
+        ],
+        "attributeCollectionPage": {
+            "views": [
+                {
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "Text",
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+                        },
+                        {
+                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                            "label": "Favorite color",
+                            "inputType": "text",
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }
 ```
 
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventsFlow"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows/$entity",
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "id": "{authentictionEventsFlow-id}",
+    "displayName": "Woodgrove User Flow 2",
+    "description": null,
+    "priority": 500,
+    "onAttributeCollectionStart": null,
+    "onAttributeCollectionSubmit": null,
+    "onUserCreateStart": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "onInteractiveAuthFlowStart": {
+        "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+        "isSignUpAllowed": true
+    },
+    "onAuthenticationMethodLoadStart": {
+        "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp"
+    },
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "accessPackages": [],
+        "attributeCollectionPage": {
+            "customStringsFileId": null,
+            "views": [
+                {
+                    "title": null,
+                    "description": null,
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                            "label": "Favorite color",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+```

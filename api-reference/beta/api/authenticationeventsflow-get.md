@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID.
+Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. In other words, list all authentication events policies.
 
 Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently retrieve an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource.
 
@@ -162,7 +162,7 @@ Content-Type: application/json
                             "required": false,
                             "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
                             "options": []
-                        }
+                        },
                         {
                             "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
                             "label": "Favorite color",

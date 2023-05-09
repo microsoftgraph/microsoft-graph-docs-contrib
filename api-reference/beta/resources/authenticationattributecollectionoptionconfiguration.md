@@ -1,9 +1,9 @@
 ---
 title: "authenticationAttributeCollectionOptionConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the configuration of option values for certain input types on Attribute Collection page that is part of a self-service user flow for external identities"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the option values for certain input types, e.g. radio buttons, on the Attribute Collection page that is part of a self-service user flow for external identities.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|label|String|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|label|String|The label of the option that will be displayed to user (unless overridden)|
+|value|String|The value of the option that will be stored.|
 
 ## Relationships
 None.

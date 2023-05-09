@@ -31,12 +31,20 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an External Identities Self-Service-Sign-up User Flow|
 |[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an External Identities Self-Service-Sign-up User Flow|
 |[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an External Identities Self-Service-Sign-up User Flow|
-|[List identity providers]()|None|List identity provider selections associated with an External Identities Self-Service-Sign-up User Flow|
-|[Update identity providers]()|None|Update Identity Provider (Email Accounts) selection in an External Identities Self-Service-Sign-up User Flow|
-|[Remove identity providers]()|None|Remove Identity Provider (Email Accounts) selection in an External Identities Self-Service-Sign-up User Flow|
-|[List attributes in a user flow]()|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
-|[Add an attribute to a user flow]()|None|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
-|[Delete an attribute to a user flow]()|None|Remove a user flow attribute from an External Identities Self-Service-Sign-up User Flow|
+|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Get listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Create listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Update listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Get linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[Add linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[Remove linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[List identity providers](../api/authenticationeventsflow-list-identityProviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an External Identities Self-Service-Sign-up User Flow|
+|[Add identity providers](../api/authenticationeventsflow-post-identityProviders.md)|None|Add Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
+|[Remove identity providers](../api/authenticationeventsflow-delete-identityProviders.md)|None|Remove Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
+|[List attributes](../api/authenticationeventsflow-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow **TODO: should there also be a LIST attributes collectioninputconfigurations?**|
+|[Add an attribute](../api/authenticationeventsflow-post-attributes.md)|None|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
+|[Delete an attribute](../api/authenticationeventsflow-delete-attributes.md)|None|Remove a user flow attribute from an External Identities Self-Service-Sign-up User Flow|
 
 ## Properties
 |Property|Type|Description|

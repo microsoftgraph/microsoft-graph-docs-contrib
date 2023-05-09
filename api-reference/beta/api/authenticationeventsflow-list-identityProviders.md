@@ -1,0 +1,99 @@
+---
+title: "List identity provider for an External Identities user flow"
+description: "List identity provider for an externalusersselfservicesignupeventsflow."
+author: "nanguil"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
+doc_type: apiPageType
+---
+
+# List identityProvider
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the identity providers for an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfervicesignupeventsflow.md) resource.
+
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|EventListener.ReadWrite.All|
+|Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
+|Application|EventListener.ReadWrite.All|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body. 
+
+## Example
+Add Google as identity provider option for account creation.
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventsflow"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
+
+```
+
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.identityProviderBase)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+            "id": "EmailPassword-OAUTH",
+            "displayName": "Email with password",
+            "identityProviderType": "EmailPassword",
+            "state": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.socialIdentityProvider",
+            "id": "Google-OAUTH",
+            "displayName": "Google",
+            "identityProviderType": "Google",
+            "clientId": "{googleClientId}",
+            "clientSecret": "******"
+        }
+    ]
+}
+
+```
+

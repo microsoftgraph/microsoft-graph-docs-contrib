@@ -50,24 +50,27 @@ In the request body, provide a JSON object with one or more properties that need
 
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md).|
 |displayName|String|The display name for the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |description|String|The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which will be used to decide whether the events policy will be invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|**TODO: Add Description** Optional.|
-|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|**TODO: Add Description** Optional.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|**TODO: Add Description** Optional.|
-|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|**TODO: Add Description** Optional.|
+|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
+|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke for the onAttributeCollection event.|
+|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
 
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example: Update the display name of a specific External Identities User Flow
+## Example
 
-### Request
+Update the display name of a specific External Identities User Flow (i.e. authentication events policy), as well as the priority for all the listeners associated with the policy.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -81,11 +84,12 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
   "displayName": "New user flow description",
+  "priority": 200
 }
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 <!-- {
   "blockType": "response",
@@ -96,4 +100,5 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 
 ```
+
 

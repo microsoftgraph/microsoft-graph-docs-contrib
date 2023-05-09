@@ -14054,21 +14054,19 @@ items:
             - name: Delete
               href: api/authenticationeventsflow-delete.md
             - name: List identity providers (auth methods)
-              href: api/b2xidentityuserflow-list-userflowidentityproviders.md
+              href: api/authenticationeventsflow-list-identityProviders.md
             - name: Add identity provider (auth method)
-              href: api/b2xidentityuserflow-userflowidentityproviders-update.md
-            - name: Delete identity provider
-              href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+              href: api/authenticationeventsflow-post-identityProviders.md
+            - name: Remove identity provider (auth method)
+              href: api/authenticationeventsflow-delete-identityProviders.md
             - name: List user attribute assignments
-              href: api/b2xidentityuserflow-list-userattributeassignments.md
-            - name: Create user attribute assignment
-              href: api/b2xidentityuserflow-post-userattributeassignments.md
+              href: api/authenticationeventsflow-list-attributes.md
+            - name: Add user attribute assignment
+              href: api/authenticationeventsflow-post-attributes.md
+            - name: Remove user attribute assignment
+              href: api/authenticationeventsflow-delete-attributes.md
             - name: List languages
-              href: api/b2xidentityuserflow-list-languages.md
-            - name: Get API connectors configuration
-              href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-            - name: Configure an API connector
-              href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md              
+              href:       
           - name: User flow attributes
             items:
             - name: User flow attribute

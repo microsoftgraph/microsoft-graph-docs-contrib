@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This is a management level for the atomic authenticationEventListener that allows for managing of multiple listeners under the same priority and condition set. This provides a better managed view of checking which event listeners will be executed under a certain circumstance.
+Entity that represents a multi-event policy.  In other words, it holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This is a management level for the atomic authenticationEventListener that allows for managing of multiple listeners under the same priority and condition set. This provides a better managed view of checking which event listeners will be executed under a certain circumstance.
 
 If no handler is set for an event, then this policy will not affect that event in any authentication, i.e. no listener will be created for that event.
 
@@ -27,10 +27,10 @@ This is an abstract type that inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties.|
-|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md)|Create a new object of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md) object</ul>|
-|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md)|Retrieve the properties and relationships of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md) object</ul>|
-|[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md) object</ul>|
-|[Delete](../api/authenticationeventsflow-delete.md)|None|Delete one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externaluserselfservicesignupeventsflow.md) object</ul>|
+|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create a new object of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object</ul>|
+|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object</ul>|
+|[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object</ul>|
+|[Delete](../api/authenticationeventsflow-delete.md)|None|Delete one of the following object types: <ul><li> [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object</ul>|
 
 ## Properties
 |Property|Type|Description|
