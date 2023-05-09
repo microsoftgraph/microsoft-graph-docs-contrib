@@ -18,33 +18,33 @@ Additionally, you can use Data Connect to enable machine learning scenarios for 
 
 ## Get started
 
-In this tutorial, you'll create your first Data Connect application. Exciting, right? We think so too! To get started, you'll need to set up a few things first.
+In this tutorial, you'll create your first single-tenant Microsoft Graph Data Connect application. Exciting, right? We think so too! To get started, you'll need to set up a few things first.
 
 ### Prerequisites
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
-- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
-- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy.
-- Ensure that two users in your Microsoft 365 tenant have the **Global Administrator** role enabled. For more details, see [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator).
+- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy. 
+- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (e.g., to enable ISVs), but this will not be explored in this tutorial. 
+- One user in your Microsoft 365 tenant has the Global Administrator role enabled. For more details, see [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator). We will refer to this user as the “admin” through this tutorial. Global Admin is the only one who can approver 
+- A different user in your Microsoft 365 tenant with [Application Administrator](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role. We will refer to this user as the “developer” through this tutorial. We will refer to this user as the “developer” through this tutorial.  
+   - For the context of this tutorial, we highly recommend using a M365 developer tenant. 
 
 1. **Microsoft 365 tenancy**
 
    - If you don't have a Microsoft 365 tenant, you can get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). The Microsoft 365 Developer Program sandbox subscription provides:
    - Multiple Microsoft 365 users with emails sent and received.
-   - Access to at least two accounts that meet the following requirements:
-      - Must have the **Global Administrator** role assigned to you to have access to the [Microsoft 365 admin center](https://admin.microsoft.com/).
-      - Must have an **existing Exchange Online license with E5 SKU**.
+   - Access to atleast two user accounts, one that is a global administrator account who can access the
+      -  Please ensure you have access to two different accounts in this tenant. One that acts as a developer who can create and trigger a test application and pipelines. The other one should have a **Global Administrator** role assigned and can access to the [Microsoft 365 admin center](https://admin.microsoft.com/) specifically to approve the test application.  
+      > [!NOTE]
+      > You cannot approve your own test application on the same account so please ensure you have another member (or account) in your tenant acting as a global admin.
+      - Please take note of the M365 region where your tenant is located. If creating a new tenant, ensure it is one of the [regions supported by MGDC](https://learn.microsoft.com/en-us/graph/data-connect-datasets#regions). 
      
 2. **Microsoft Azure subscription**
 
-   - If you don't have one, you can get one (for free) on the [Azure website](https://azure.microsoft.com/free/).
-   - The account used to sign in must be granted the **Global Administrator** role.
-   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy.
-   - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Microsoft Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants. If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
-
-<!--This can stay for now, please update this once we remove the ASP.NET page-->
-3. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development computer.
+   - If you don't have one, you can get one (for free) on the [Azure website](https://azure.microsoft.com/free/). 
+   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy. 
+   - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 > [!NOTE]
 > The screenshots and examples used in this tutorial are from a Microsoft 365 test tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in a Microsoft 365 tenant and copied to an Azure Blob Storage account. You maintain control over who has access to the data within the Azure Blob Storage.
