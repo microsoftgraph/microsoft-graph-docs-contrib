@@ -86,6 +86,8 @@ The following is a JSON representation of the resource.
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   },
+  "domainJoinConfigurations": "Collection(microsoft.graph.cloudPcDomainJoinConfiguration)",
+  "gracePeriodInHours": "Integer",
   "enableSingleSignOn": "Boolean",
   "gracePeriodInHours": "Int32",
   "id": "String (identifier)",
