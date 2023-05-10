@@ -1,6 +1,6 @@
 ---
 title: "customExtensionEndpointConfiguration resource type"
-description: "Abstract base type that exposes the derived types used to configure the endpointConfiguration property of a custom access package workflow extension object."
+description: "Abstract base type that exposes the derived types used to configure the endpointConfiguration property of a custom extension."
 author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type that exposes the derived types used to configure the **endpointConfiguration** property of a [custom access package workflow extension](customaccesspackageworkflowextension.md) and [custom task extension](../resources/identitygovernance-customtaskextension.md) object. This abstract type is inherited by the [logicAppTriggerEndpointConfiguration](logicapptriggerendpointconfiguration.md) object.
+Abstract base type that exposes the derived types used to configure the **endpointConfiguration** property of a custom extension.
 
 ## Properties
 

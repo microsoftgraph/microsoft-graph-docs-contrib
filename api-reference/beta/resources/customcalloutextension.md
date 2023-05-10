@@ -1,6 +1,6 @@
 ---
 title: "customCalloutExtension resource type"
-description: "An abstract type that defines the configuration for logic apps that can be integrated with the customer's entitlement management use cases to implement broader governance workflows. This abstract type is inherited by the customAccessPackageWorkflowExtension resource type"
+description: "An abstract type that defines the configuration for  apps that can be integrated with the customer's identity flows. This abstract type is inherited by the customAccessPackageWorkflowExtension resource type"
 author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that defines the configuration for logic apps that can extend the customer's entitlement management and lifecycle workflows processes.
+An abstract type that defines the configuration for apps that can extend the customer's identity flows.
 
 This abstract type is inherited by:
 
