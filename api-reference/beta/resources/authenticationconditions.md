@@ -1,7 +1,7 @@
 ---
 title: "authenticationConditions resource type"
 description: "The conditions on which an authenticationEventListener should trigger."
-author: soneff"
+author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
