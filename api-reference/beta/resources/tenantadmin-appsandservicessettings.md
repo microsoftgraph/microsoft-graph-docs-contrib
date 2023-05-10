@@ -1,7 +1,7 @@
 ---
 title: "appsAndServicesSettings resource type"
 description: "**Company wide settings for apps and services**"
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType

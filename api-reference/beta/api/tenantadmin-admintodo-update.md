@@ -1,7 +1,7 @@
 ---
 title: "Update adminTodo"
 description: "Update the properties of a microsoft.graph.tenantAdmin.adminTodo object."
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

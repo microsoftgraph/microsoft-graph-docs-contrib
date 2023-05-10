@@ -1,7 +1,7 @@
 ---
 title: "adminForms resource type"
 description: "**Company wide configuration for Microsoft Forms**"
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType

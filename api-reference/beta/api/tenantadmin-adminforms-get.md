@@ -1,7 +1,7 @@
 ---
 title: "Get adminForms"
 description: "Read the properties and relationships of a microsoft.graph.tenantAdmin.adminForms object."
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

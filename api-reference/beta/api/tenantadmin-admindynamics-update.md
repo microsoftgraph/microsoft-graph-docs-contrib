@@ -1,7 +1,7 @@
 ---
 title: "Update adminDynamics"
 description: "Update the properties of a microsoft.graph.tenantAdmin.adminDynamics object."
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "formsSettings resource type"
 description: "**Company wide settings for Microsoft Forms**"
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType

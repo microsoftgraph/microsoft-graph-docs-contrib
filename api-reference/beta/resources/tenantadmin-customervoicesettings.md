@@ -1,7 +1,7 @@
 ---
 title: "customerVoiceSettings resource type"
 description: "**Company wide settings for Dynamics customer voice**"
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType

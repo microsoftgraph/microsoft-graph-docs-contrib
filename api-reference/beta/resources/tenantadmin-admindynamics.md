@@ -1,7 +1,7 @@
 ---
 title: "adminDynamics resource type"
 description: "**Company wide configuration for Dynamics 365**"
-author: "**zadinsmo**"
+author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
