@@ -43,6 +43,10 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
 |tenantId|String|The Azure Active Directory tenant in which the alert was created.|
+|systemTags|Collection(String)|The system tags accocisted with the incident|
+|description|String|A reach text string describing the incident (could be an HTML)|
+|recommendedActions|String|A reach text string that represents the actions that are reccomnded to take in order to resolve the incident (could be an HTML)|
+|recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting kql queries related to the incdient|
 
 
 
@@ -95,7 +99,17 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.security.alertComment"
     }
-  ]
+  ],
+  "systemTags" : [
+    "String"
+  ],
+  "description" : "String",
+  "recommendedActions" : "String",
+  "recommendedHuntingQueries" : [
+  {
+    "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
+  }
+]
 }
 ```
 
