@@ -128,6 +128,10 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
+    "contentCustomization": {
+      "attributeCollectionRelativeUrl": "dbd5a2dd-dt17xdjgu8kxc14xcav-rckknamct7yytiih-vm-ksm/logintenantbranding/1033/attributecollection?ts=638151133931615483",
+      "attributeCollection": []
+    },    
     "customAccountResetCredentialsUrl": null,
     "customCannotAccessYourAccountText": null,
     "customCannotAccessYourAccountUrl": null,
