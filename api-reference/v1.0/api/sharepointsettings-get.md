@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get settings
 Namespace: microsoft.graph
 
-Get the tenant-level [settings](../resources/sharepointSettings.md) for SharePoint and OneDrive.
+Get the tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [settings](../resources/sharepointSettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [settings](../resources/sharepointsettings.md) object in the response body.
 
 ## Examples
 
@@ -154,4 +154,3 @@ Content-Type: application/json
     }
 }
 ```
-
