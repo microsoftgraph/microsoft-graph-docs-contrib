@@ -37,8 +37,9 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
    - Access to at least two user accounts:
       - A "developer" account that can create and trigger a test application and pipelines. 
       - An "admin" account that can access the [Microsoft 365 admin center](https://admin.microsoft.com/), specifically to approve the test application.  
-      >**Note:** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
    - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
+
+>**Note:** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
      
 2. **Microsoft Azure subscription**
 
