@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingRestricted resource type"
-description: "Indicates the reason or reasons why media content from a participant is restricted."
+description: "Indicates the reason or reasons media content from a participant is restricted."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates the reason or reasons why media content from a participant is restricted.
+Indicates the reason or reasons media content from a participant is restricted.
 
 ## Properties
 
 | Property               | Type                                                                                           | Description                                                                |
 |:-----------------------|:-----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-| contentSharingDisabled | [onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason why shared content from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.  |
-| videoDisabled          | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)                   | Specifies the reason why video from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.         |
+| contentSharingDisabled | [onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values) | Specifies the reason shared content from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.  |
+| videoDisabled          | [onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)                   | Specifies the reason video from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.         |
 
 ### onlineMeetingContentSharingDisabledReason values
 
