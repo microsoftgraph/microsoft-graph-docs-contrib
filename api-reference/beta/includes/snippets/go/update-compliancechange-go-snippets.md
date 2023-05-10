@@ -19,7 +19,7 @@ requestBody := graphmodels.NewComplianceChange()
 isRevoked := true
 requestBody.SetIsRevoked(&isRevoked) 
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePoliciesById("updatePolicy-id").ComplianceChangesById("complianceChange-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicieId("updatePolicy-id").ComplianceChanges().ByComplianceChangeId("complianceChange-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

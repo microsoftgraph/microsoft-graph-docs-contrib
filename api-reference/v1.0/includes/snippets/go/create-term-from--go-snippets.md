@@ -32,7 +32,7 @@ labels := []graphmodels.LocalizedLabelable {
 }
 requestBody.SetLabels(labels)
 
-result, err := graphClient.SitesById("site-id").TermStore().SetsById("set-id").Children().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().BySetId("set-id").Children().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 target.SetAdditionalData(additionalData)
 requestBody.SetTarget(target)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().GetPlan().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().GetPlan().Post(context.Background(), requestBody, nil)
 
 
 ```

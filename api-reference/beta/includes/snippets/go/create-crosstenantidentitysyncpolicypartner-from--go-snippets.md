@@ -25,7 +25,7 @@ userSyncInbound.SetIsSyncAllowed(&isSyncAllowed)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
+graphClient.Policies().CrossTenantAccessPolicy().Partners().ByPartnerId("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
 
 
 ```

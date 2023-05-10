@@ -25,7 +25,7 @@ configuration := &graphconfig.SecurityCasesEdiscoveryCaseItemReviewSetItemFilesR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").Files().Get(context.Background(), configuration)
+result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").Files().Get(context.Background(), configuration)
 
 
 ```

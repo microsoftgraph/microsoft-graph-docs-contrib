@@ -19,7 +19,7 @@ requestBody := graphmodels.NewTodoTaskList()
 displayName := "Vacation Plan"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Todo().ListsById("todoTaskList-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

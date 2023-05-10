@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Todo().ListsById("todoTaskList-id").TasksById("todoTask-id").Delete(context.Background(), nil)
+graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").Delete(context.Background(), nil)
 
 
 ```

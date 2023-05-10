@@ -21,7 +21,7 @@ webUrl := "https://contoso.sharepoint.com/sites/HumanResources"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").CustodiansById("custodian-id").SiteSources().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Custodians().ByCustodianId("custodian-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

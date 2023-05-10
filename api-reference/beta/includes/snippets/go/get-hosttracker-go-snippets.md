@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().HostTrackersById("hostTracker-id").Get(context.Background(), nil)
+result, err := graphClient.Security().ThreatIntelligence().HostTrackers().ByHostTrackerId("hostTracker-id").Get(context.Background(), nil)
 
 
 ```

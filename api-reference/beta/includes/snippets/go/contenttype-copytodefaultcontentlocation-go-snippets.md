@@ -27,7 +27,7 @@ requestBody.SetSourceFile(sourceFile)
 destinationFileName := "newname.txt"
 requestBody.SetDestinationFileName(&destinationFileName) 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").CopyToDefaultContentLocation().Post(context.Background(), requestBody, nil)
+graphClient.Sites().BySiteId("site-id").ContentTypes().ByContentTypeId("contentType-id").CopyToDefaultContentLocation().Post(context.Background(), requestBody, nil)
 
 
 ```

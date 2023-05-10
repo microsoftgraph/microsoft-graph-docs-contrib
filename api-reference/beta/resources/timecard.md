@@ -1,6 +1,6 @@
 ---
 title: "timecard resource type"
-description: "A timecard entry in the schedule."
+description: "Represents a timecard entry in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -33,19 +33,19 @@ Represents a timecard entry in the schedule.
 ## Properties
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
-| id			        |`string`  |ID of the **timeCard**.|
-| userId			        |`string` |User ID to which  the **timeCard** belongs. |
-| state 		        |`timeCardState`  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
+| breaks 	|[timeCardBreak](timecardbreak.md) collection  |The list of breaks associated with the **timeCard**.|
 | clockInEvent       |[timeCardEvent](../resources/timecardevent.md)    | The clock-in event of the **timeCard**. |
 | clockOutEvent			        |[timeCardEvent](../resources/timecardevent.md)  |The clock-out event of the **timeCard**. |
+| confirmedBy |confirmedBy    | Indicates whether this **timeCard** entry is confirmed. Possible values are `none`, `user`, `manager`, `unknownFutureValue`.|
+|createdBy|[identitySet](identityset.md)| Identity of the person who created the entity. |
+|createdDateTime|DateTimeOffset| The timestamp in which the **timeCard** was created. |
+| id			        |String  |Unique identifier for the **timeCard**.|
+|lastModifiedBy| [identitySet](identityset.md)| Identity of the person who last modified the entity.|
+|lastModifiedDateTime|DateTimeOffset| The timestamp in which the **timeCard** was last modified.|
 | notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
-| breaks 	|[timeCardBreak](timecardbreak.md) collection  |The list of breaks associated with the **timeCard**.|
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
-| confirmedBy |`confirmedBy`    | Indicate if this **timeCard** entry is confirmed. Possible values are `none`, `user`, `manager`, `unknownFutureValue`.|
-|createdDateTime|`Edm.dateTimeOffset`| The timestamp in which the **timeCard** was created. |
-|createdBy|`IdentitySet`| Identity of the person who created the entity. |
-|lastModifiedDateTime|`dateTimeOffset`| The timestamp in which the **timeCard** was last modified.|
-|lastModifiedBy| `IdentitySet`| Identity of the person who last modified the entity.|
+| state 		        |timeCardState  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
+| userId			        |String |User ID to which  the **timeCard** belongs. |
 
 ## JSON representation
 
@@ -60,15 +60,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userId": "string (identifier)",
+  "breaks": [{"@odata.type":"microsoft.graph.timeCardEvent"}],
+  "clockInEvent": {"@odata.type":"microsoft.graph.timeCardEvent"},
+  "clockOutEvent": {"@odata.type":"microsoft.graph.timeCardEvent"},
+  "confirmedBy": "String",
+  "createdBy": {"@odata.type":"microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
-  "clockInEvent" : {"@odata.type":"microsoft.graph.timeCardEvent"},
-  "clockOutEvent" : {"@odata.type":"microsoft.graph.timeCardEvent"},
-  "notes" : {"@odata.type":"microsoft.graph.itemBody"},
-  "breaks" : [{"@odata.type":"microsoft.graph.timeCardEvent"}],
-  "originalEntry" : {"@odata.type":"microsoft.graph.timeCardEntry"}
+  "lastModifiedDateTime": "String (timestamp)",
+  "notes": {"@odata.type":"microsoft.graph.itemBody"},
+  "originalEntry": {"@odata.type":"microsoft.graph.timeCardEntry"},
+  "state": "String",
+  "userId": "String"
 }
 ```
 

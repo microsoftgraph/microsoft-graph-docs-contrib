@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().ActivitiesById("userActivity-id").HistoryItemsById("activityHistoryItem-id").Put(context.Background(), nil)
+graphClient.Me().Activities().ByActivitieId("userActivity-id").HistoryItems().ByHistoryItemId("activityHistoryItem-id").Put(context.Background(), nil)
 
 
 ```

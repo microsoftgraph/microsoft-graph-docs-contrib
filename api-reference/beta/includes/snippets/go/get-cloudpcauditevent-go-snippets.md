@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEventsById("cloudPcAuditEvent-id").Get(context.Background(), nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEvents().ByAuditEventId("cloudPcAuditEvent-id").Get(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Admin().Windows().Updates().UpdatableAssetsById("updatableAsset-id").Delete(context.Background(), nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().ByUpdatableAssetId("updatableAsset-id").Delete(context.Background(), nil)
 
 
 ```

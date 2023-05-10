@@ -22,7 +22,7 @@ requestBody.SetKeyId(&keyId)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-graphClient.ApplicationsById("application-id").RemoveKey().Post(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").RemoveKey().Post(context.Background(), requestBody, nil)
 
 
 ```

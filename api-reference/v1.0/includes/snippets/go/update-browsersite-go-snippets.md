@@ -29,7 +29,7 @@ requestBody.SetAllowRedirect(&allowRedirect)
 comment := "Updating to Edge."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteListsById("browserSiteList-id").SitesById("browserSite-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").Sites().BySiteId("browserSite-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -25,7 +25,7 @@ webUrl := "https://www.contoso.com"
 client.SetWebUrl(&webUrl) 
 requestBody.SetClient(client)
 
-result, err := graphClient.Me().Profile().ProjectsById("projectParticipation-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Profile().Projects().ByProjectId("projectParticipation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().CallsById("call-id").AudioRoutingGroups().Get(context.Background(), nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").AudioRoutingGroups().Get(context.Background(), nil)
 
 
 ```

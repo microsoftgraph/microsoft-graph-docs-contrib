@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().CloudPcsOverviewById("cloudPcOverview-tenantId").Get(context.Background(), nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().CloudPcsOverview().ByCloudPcsOverview().Id("cloudPcOverview-tenantId").Get(context.Background(), nil)
 
 
 ```

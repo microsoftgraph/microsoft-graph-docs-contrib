@@ -21,7 +21,7 @@ requestBody.SetName(&name)
 isDefault := false
 requestBody.SetIsDefault(&isDefault) 
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").ConnectorGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

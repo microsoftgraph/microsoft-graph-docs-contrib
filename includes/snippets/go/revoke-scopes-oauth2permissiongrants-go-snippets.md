@@ -19,7 +19,7 @@ requestBody := graphmodels.NewOAuth2PermissionGrant()
 scope := "User.Read.All"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.Oauth2PermissionGrantsById("oAuth2PermissionGrant-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Oauth2PermissionGrants().ByOauth2PermissionGrantId("oAuth2PermissionGrant-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

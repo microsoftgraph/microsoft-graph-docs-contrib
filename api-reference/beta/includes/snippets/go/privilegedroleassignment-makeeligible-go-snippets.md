@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.PrivilegedRoleAssignmentsById("privilegedRoleAssignment-id").MakeEligible().Post(context.Background(), nil)
+result, err := graphClient.PrivilegedRoleAssignments().ByPrivilegedRoleAssignmentId("privilegedRoleAssignment-id").MakeEligible().Post(context.Background(), nil)
 
 
 ```

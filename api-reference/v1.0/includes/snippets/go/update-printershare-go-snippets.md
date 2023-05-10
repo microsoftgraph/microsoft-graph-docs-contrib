@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Print().SharesById("printerShare-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

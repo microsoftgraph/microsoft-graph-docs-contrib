@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.UsersById("user-id").Calendar().CalendarPermissionsById("calendarPermission-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().ByCalendarPermissionId("calendarPermission-id").Delete(context.Background(), nil)
 
 
 ```

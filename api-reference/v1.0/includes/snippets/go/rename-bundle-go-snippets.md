@@ -19,7 +19,7 @@ requestBody := graphmodels.NewDriveItem()
 name := "Shared legal agreements"
 requestBody.SetName(&name) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

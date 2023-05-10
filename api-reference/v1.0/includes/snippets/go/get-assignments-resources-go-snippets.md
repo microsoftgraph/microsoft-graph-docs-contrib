@@ -22,7 +22,7 @@ configuration := &graphconfig.EducationClasseItemAssignmentsRequestBuilderGetReq
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().ClassesById("educationClass-id").Assignments().Get(context.Background(), configuration)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

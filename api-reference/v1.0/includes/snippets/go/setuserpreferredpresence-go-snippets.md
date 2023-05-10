@@ -24,7 +24,7 @@ requestBody.SetActivity(&activity)
 expirationDuration , err := abstractions.ParseISODuration("PT8H")
 requestBody.SetExpirationDuration(&expirationDuration) 
 
-graphClient.UsersById("user-id").Presence().SetUserPreferredPresence().Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Presence().SetUserPreferredPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

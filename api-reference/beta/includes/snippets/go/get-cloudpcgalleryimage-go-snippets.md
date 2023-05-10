@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().GalleryImagesById("cloudPcGalleryImage-id").Get(context.Background(), nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().GalleryImages().ByGalleryImageId("cloudPcGalleryImage-id").Get(context.Background(), nil)
 
 
 ```
