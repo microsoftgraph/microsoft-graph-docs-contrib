@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.Read.All|
+|Delegated (work or school account)|DeviceLocalCredential.Read.All,DeviceLocalCredential.ReadBasic.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceLocalCredential.Read.All|
+|Application|DeviceLocalCredential.Read.All,DeviceLocalCredential.ReadBasic.All|
+
+Note that in order to access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the permission DeviceLocalCredential.Read.All is required and DeviceLocalCredential.ReadBasic.All will be insufficient.
 
 [!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
 
