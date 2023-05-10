@@ -1,6 +1,6 @@
 ---
 title: "authenticationConditionsApplications resource type"
-description: "Applications which will trigger an authentication custom extension."
+description: "The application conditions on which an authenticationEventListener should trigger."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Applications which will trigger an authentication custom extension.
+The application conditions on which an authenticationEventListener should trigger.
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ Applications which will trigger an authentication custom extension.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeApplications|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|Collection of the applications which will trigger an authentication custom extension.|
+|includeApplications|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|Collection of the application conditions on which an authenticationEventListener should trigger.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
