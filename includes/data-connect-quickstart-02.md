@@ -42,9 +42,9 @@ In this step, you'll enable the Microsoft Graph Data Connect service on your Mic
 
 2. Select the **Settings > Org settings** menu item. You might have to click **Show all** before you're able to view **Settings**.
 
-3. In the Services tab (which should be the default selection), select the **Microsoft Graph Data Connect** service.
+3. In the **Services** tab (which should be the default selection), select the **Microsoft Graph Data Connect** service.
 
-4. Select the checkbox that says **Turn Microsoft Graph Data Connect on or off for your entire organization**  and click save.
+4. Select the checkbox that says **Turn Microsoft Graph Data Connect on or off for your entire organization**  and click **Save**.
 
     ![A screenshot showing the checkbox you have to tick to enable Data Connect for your entire organization.](../concepts/images/data-connect-m365-consent-approver-new.png)  
 
