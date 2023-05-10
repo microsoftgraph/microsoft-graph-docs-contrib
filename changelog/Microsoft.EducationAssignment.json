@@ -13,6 +13,14 @@
         {
           "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
           "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/graph/api/educationassignment-post-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Addition",
           "Description": "Added the [remove] (https://learn.microsoft.com/graph/api/educationassignment-delete-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
