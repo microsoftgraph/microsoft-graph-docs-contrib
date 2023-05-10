@@ -6748,6 +6748,17 @@ items:
             href: api/reportroot-getteamsuseractivitycounts.md
           - name: Get user counts
             href: api/reportroot-getteamsuseractivityusercounts.md
+        - name: Microsoft Teams team activity
+          href: resources/microsoft-teams-team-usage-reports.md
+          items:
+          - name: Get team detail
+            href: api/reportroot-getteamsteamactivitydetail.md
+          - name: Get team activity counts
+            href: api/reportroot-getteamsteamactivitycounts.md
+          - name: Get team activity distribution counts
+            href: api/reportroot-getteamsteamactivitydistributioncounts.md
+          - name: Get team counts
+            href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -7638,12 +7649,12 @@ items:
             href: api/termStore-relation-post.md
       - name: Tenant settings
         items:
-          - name: Sharepoint settings
-            href: resources/sharepointSettings.md
+          - name: SharePoint settings
+            href: resources/sharepointsettings.md
           - name: Get
-            href: api/sharepointSettings-get.md
+            href: api/sharepointsettings-get.md
           - name: Update
-            href: api/sharepointSettings-update.md
+            href: api/sharepointsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
