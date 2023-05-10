@@ -24,7 +24,7 @@
           "ChangedApiName": "Update",
           "ChangeType": "Addition",
           "Description": "Added the [update] (https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-beta) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
-          "Target": "educationAssignment"
+          "Target": "educationAssignmentSettings"
         },
         {
           "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
