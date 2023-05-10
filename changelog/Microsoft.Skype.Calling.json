@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowRecording",
           "ChangeType": "Addition",
-          "Description": "Added the `allowRecording` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowRecording** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowTranscription",
           "ChangeType": "Addition",
-          "Description": "Added the `allowTranscription` property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowTranscription** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-24T21:08:11.640829Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
