@@ -1,6 +1,6 @@
 ---
 title: "Delete directoryObject"
-description: "Deletes a directoryObject."
+description: "Delete a directory object, for example, a group, user, application, or service principal."
 author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -29,7 +29,6 @@ The following table shows the least privileged permission or permissions require
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryObjects/{id}
-
 ```
 ## Request headers
 
@@ -43,12 +42,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
 ### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,6 +87,8 @@ DELETE https://graph.microsoft.com/v1.0/directoryObjects/ffab4dce-9b82-49a6-b7c7
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -106,4 +108,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

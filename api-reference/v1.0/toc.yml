@@ -6748,6 +6748,17 @@ items:
             href: api/reportroot-getteamsuseractivitycounts.md
           - name: Get user counts
             href: api/reportroot-getteamsuseractivityusercounts.md
+        - name: Microsoft Teams team activity
+          href: resources/microsoft-teams-team-usage-reports.md
+          items:
+          - name: Get team detail
+            href: api/reportroot-getteamsteamactivitydetail.md
+          - name: Get team activity counts
+            href: api/reportroot-getteamsteamactivitycounts.md
+          - name: Get team activity distribution counts
+            href: api/reportroot-getteamsteamactivitydistributioncounts.md
+          - name: Get team counts
+            href: api/reportroot-getteamsteamcounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -6999,6 +7010,14 @@ items:
             href: api/externalconnectors-schema-create.md
           - name: Get
             href: api/externalconnectors-schema-get.md
+        - name: External activity
+          items:
+          - name: External activity
+            href: resources/externalconnectors-externalactivity.md
+        - name: External activity result
+          items:
+          - name: External activity result
+            href: resources/externalconnectors-externalactivityresult.md
         - name: External item
           items:
           - name: External item
@@ -7011,6 +7030,8 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
+          - name: Add activities
+            href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
           - name: External group
@@ -7626,6 +7647,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items:
+          - name: SharePoint settings
+            href: resources/sharepointsettings.md
+          - name: Get
+            href: api/sharepointsettings-get.md
+          - name: Update
+            href: api/sharepointsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
