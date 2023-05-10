@@ -1,7 +1,7 @@
 ---
 title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
