@@ -1,0 +1,37 @@
+---
+title: "dynamicColumnValue resource type"
+description: "Represent a dynamic column in a huntingRowResult row"
+author: "mmekler"
+ms.localizationpriority: medium
+ms.prod: "security"
+doc_type: resourcePageType
+---
+
+# dynamicColumnValue resource type
+
+Namespace: microsoft.graph.security
+
+
+
+**TODO: Add Description**
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.dynamicColumnValue"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.dynamicColumnValue"
+}
+```
+
