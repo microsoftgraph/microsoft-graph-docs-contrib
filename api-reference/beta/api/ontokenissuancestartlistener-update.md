@@ -47,7 +47,6 @@ PATCH /onTokenIssuanceStartListener
 |:---|:---|:---|
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|tags|[keyValuePair](../resources/intune-keyvaluepair.md) collection|The tags for this listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener. Optional.|
 

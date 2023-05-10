@@ -33,7 +33,6 @@ Inherits from [entity](../resources/entity.md).
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority).|
-|tags|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: What is this for?**|
 
 ## Relationships
 None.

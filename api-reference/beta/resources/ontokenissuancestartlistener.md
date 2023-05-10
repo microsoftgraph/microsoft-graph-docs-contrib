@@ -33,7 +33,6 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener.|
 |id|String|Identifier for the onTokenIssuanceStartListener. Inherited from [entity](../resources/entity.md).|
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|tags|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: What is this for?** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships
 None.

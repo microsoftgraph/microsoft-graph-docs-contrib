@@ -13258,6 +13258,7 @@ items:
               href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
             - name: Get authentication method modes
               href: api/authenticationmethodmodedetail-get.md
+        - name: Custom Authentication Extensions
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md

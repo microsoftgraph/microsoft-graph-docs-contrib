@@ -1,18 +1,18 @@
 ---
-title: "Update authenticationEventListener"
-description: "Update the properties of an authenticationEventListener object."
+title: "Create onTokenIssuanceStartListener"
+description: "Create a new onTokenIssuanceStartListener object."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Update authenticationEventListener
+# Create onTokenIssuanceStartListener
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [authenticationEventListener](../resources/authenticationeventlistener.md) object.
+Create a new [onTokenIssuanceStartListener](../resources/onTokenIssuanceStartListener.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identity/authenticationEventListeners/{authenticationEventListenerId}
+POST /identity/onTokenIssuanceStartListener
 ```
 
 ## Request headers
@@ -40,19 +40,22 @@ PATCH /identity/authenticationEventListeners/{authenticationEventListenerId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+In the request body, supply a JSON representation of the [onTokenIssuanceStartListener](../resources/onTokenIssuanceStartListener.md) object.
 
+You can specify the following properties when creating an **onTokenIssuanceStartListener**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
-|authenticationEventsFlowId|String|The identifier of the authentication events flow.  Optional.|
+|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|authenticationEventsFlowId|String|The identifier of the authentication events flow. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener. Optional.|
+
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationEventListener](../resources/authenticationeventlistener.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [onTokenIssuanceStartListener](../resources/onTokenIssuanceStartListener.md) object in the response body.
 
 ## Examples
 
@@ -60,16 +63,16 @@ If successful, this method returns a `200 OK` response code and an updated [auth
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventlistener"
+  "name": "create_ontokenissuancestartlistener_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+POST https://graph.microsoft.com/beta/identity/onTokenIssuanceStartListener
 Content-Type: application/json
 Content-length: 312
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
+  "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
   "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
@@ -89,15 +92,16 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onTokenIssuanceStartListener"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
+  "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
   "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
   "priority": "Integer",
   "conditions": {
