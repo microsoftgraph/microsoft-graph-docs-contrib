@@ -80,7 +80,9 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
     "id": "c079f617-c04e-c14f-0750-cb2f87064342",
     "settings": {
-      "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings"
+      "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings",
+      "isOfficeStoreEnabled": false,
+      "isAppAndServicesTrialEnabled": true
     }
   }
 }

@@ -80,7 +80,10 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.tenantAdmin.adminDynamics",
     "id": "6099c226-4296-c20b-eb7f-a5f7c648cbed",
     "customerVoice": {
-      "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings"
+      "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings",
+      "isRestrictedSurveyAccessEnabled": "false",
+      "isRecordIdentityByDefaultEnabled": "true",
+      "isInOrgFormsPhishingScanEnabled": "true"
     }
   }
 }

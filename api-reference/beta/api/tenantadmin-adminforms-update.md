@@ -69,7 +69,14 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.tenantAdmin.adminForms",
   "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.formsSettings"
+    "@odata.type": "microsoft.graph.tenantAdmin.formsSettings",
+    "isExternalSendFormEnabled": true,
+    "isExternalShareCollaborationEnabled": false,
+    "isExternalShareResultEnabled": false,
+    "isExternalShareTemplateEnabled": false,
+    "isRecordIdentityByDefaultEnabled": true,
+    "isBingImageSearchEnabled": true,
+    "isInOrgFormsPhishingScanEnabled": false
   }
 }
 ```
@@ -84,15 +91,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminForms",
-  "id": "7ef97113-d231-e67c-535d-7c051d9e22be",
-  "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.formsSettings"
-  }
-}
+HTTP/1.1 204 No Content
+Content-Type: text/plain
 ```
 

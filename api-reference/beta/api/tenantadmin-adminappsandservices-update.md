@@ -69,7 +69,9 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
   "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings"
+    "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings",
+    "isOfficeStoreEnabled": false,
+    "isAppAndServicesTrialEnabled": false
   }
 }
 ```
@@ -84,15 +86,8 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
+Content-Type: text/plain
 
-{
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
-  "id": "c079f617-c04e-c14f-0750-cb2f87064342",
-  "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings"
-  }
-}
 ```
 

@@ -69,7 +69,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.tenantAdmin.adminTodo",
   "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.todoSettings"
+    "@odata.type": "microsoft.graph.tenantAdmin.todoSettings",
+    "isPushNotificationEnabled": true,
+    "isExternalJoinEnabled": false,
+    "isExternalShareEnabled": true
   }
 }
 ```
@@ -84,15 +87,8 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
+Content-Type: text/plain
 
-{
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminTodo",
-  "id": "9b13e840-31a8-2ed4-57d8-22f42c130334",
-  "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.todoSettings"
-  }
-}
 ```
 

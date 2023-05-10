@@ -80,7 +80,14 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.tenantAdmin.adminForms",
     "id": "7ef97113-d231-e67c-535d-7c051d9e22be",
     "settings": {
-      "@odata.type": "microsoft.graph.tenantAdmin.formsSettings"
+      "@odata.type": "microsoft.graph.tenantAdmin.formsSettings",
+      "isExternalSendFormEnabled": true,
+      "isExternalShareCollaborationEnabled": false,
+      "isExternalShareResultEnabled": false,
+      "isExternalShareTemplateEnabled": true,
+      "isRecordIdentityByDefaultEnabled": true,
+      "isBingImageSearchEnabled": true,
+      "isInOrgFormsPhishingScanEnabled": false
     }
   }
 }
