@@ -89,6 +89,42 @@
           "SubArea": "Cloud PC"
         },
         {
+            "ChangeList": [
+                {
+                    "Id": "1fed1938-c3d6-4ba3-b1c0-79f3a48d6fa7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "assignedUsers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **assignedUsers** relationship to the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicyAssignment"
+                }
+            ],
+            "Id": "1fed1938-c3d6-4ba3-b1c0-79f3a48d6fa7",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T09:17:04.4951587Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "e998825a-ff8c-4207-baf4-2691323e4a82",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cloudPcNamingTemplate",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cloudPcNamingTemplate` property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id": "e998825a-ff8c-4207-baf4-2691323e4a82",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T10:18:11.8846241Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList":[
                 {
                     "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
@@ -213,6 +249,24 @@
             "Version": "beta",
             "CreatedDateTime": "2023-02-08T09:37:24.8161707Z",
             "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinConfigurations",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **domainJoinConfigurations** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T02:52:10.3002588Z",     
+            "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
         {
