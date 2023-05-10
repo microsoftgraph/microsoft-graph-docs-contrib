@@ -19,15 +19,9 @@ The component retrieves the first level terms that are present under a specified
 
 The following example shows the use of the `mgt-taxonomy-picker` component to select a term from a term set.
 
-![mgt-taxonomy-picker-termset](./images/mgt-taxonomy-picker-termset.png)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-taxonomy-picker--taxonomy-picker&source=docs" height="500"></iframe>
 
-The following example shows the use of the `mgt-taxonomy-picker` component to select a child term of a term in a term set.
-
-![mgt-taxonomy-picker-term](./images/mgt-taxonomy-picker-term.png)
-
-The following example shows the use of the `mgt-taxonomy-picker` component to select a child term of a term in a term set in a different language.
-
-![mgt-taxonomy-picker-locale-term](./images/mgt-taxonomy-picker-locale-term.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-taxonomy-picker--taxonomy-picker&source=docs)
 
 ## Properties and attributes
 
