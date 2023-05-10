@@ -24,11 +24,11 @@ In this tutorial, you'll create your first single-tenant Microsoft Graph Data Co
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
-- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy. 
-- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (e.g., to enable ISVs), but this will not be explored in this tutorial. 
-- One user in your Microsoft 365 tenant has the Global Administrator role enabled. For more details, see [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator). We will refer to this user as the “admin” through this tutorial. Global Admin is the only one who can approver 
-- A different user in your Microsoft 365 tenant with [Application Administrator](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role. We will refer to this user as the “developer” through this tutorial. We will refer to this user as the “developer” through this tutorial.  
-   - For the context of this tutorial, we highly recommend using a M365 developer tenant. 
+- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy.
+- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (for example, to enable ISVs), but this will not be explored in this tutorial.
+- One user in your Microsoft 365 tenant has the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". A *Global Administrator* is the only one who can approver
+- A different user in your Microsoft 365 tenant with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Going forward, this tutorial refers to this user as the "developer".  
+- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
 
 1. **Microsoft 365 tenancy**
 
@@ -42,9 +42,9 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
      
 2. **Microsoft Azure subscription**
 
-   - If you don't have one, you can get one (for free) on the [Azure website](https://azure.microsoft.com/free/). 
-   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy. 
-   - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+   - If you don't have a Microsoft Azure subscription, visit the following link to get one (for free): https://azure.microsoft.com/free/.
+   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy.
+   - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant by following the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 > [!NOTE]
 > The screenshots and examples used in this tutorial are from a Microsoft 365 test tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in a Microsoft 365 tenant and copied to an Azure Blob Storage account. You maintain control over who has access to the data within the Azure Blob Storage.
