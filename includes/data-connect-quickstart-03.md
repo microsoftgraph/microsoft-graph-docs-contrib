@@ -16,7 +16,7 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 
 1. On the home page, select the **Azure Active Directory** service.
 
-1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the left navigation pane.
+1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the left navigation pane. Please ensure you are on your "developer" user account to sign in.
 
 1. Select the **New registration** button.
 
@@ -25,9 +25,8 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 
 1. Use the following values to create a new Azure AD application and select **Register**.
 
-   - **Name**: Microsoft Graph Data Connect Data Transfer
+   - **Name**: Microsoft Graph Data Connect Data Transfer (you can name this as you wish)
    - **Supported account types**: Accounts in this organizational directory only. 
-       > **Note**: Currently, Microsoft Graph Data Connect only supports single tenants.
    - **Redirect URI**: Leave the default values.
 
     ![A screenshot showing the steps to register a new application registration in the Azure portal.](../concepts/images/data-connect-aad-redirect-uri.png)
@@ -39,20 +38,6 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
     ![A screenshot showing the application and tenant IDs.](../concepts/images/data-connect-app-tenant-new.png)
 
 1. On the sidebar navigation, select **Certificates & secrets** under **Manage**.
-
-1. Select the **New client secret** button. Set *Description* to any name, set *Expires* to any value in the dropdown, and choose **Add**.
-
-    ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets-new.png)
-
-    - After the client secret is created, make sure you save the **Value** somewhere safe, as it'll no longer be available later, and you'll need to create a new one.
-    - This will be referenced as the service principal key.
-
-1. On the sidebar navigation for the application, select **Owners**.
-
-1. Ensure that your account meets the following requirements to be an application owner:
-    - Your user account corresponds to a valid user in the tenant who is not a service principal name.
-    - Your account must have an Exchange Online license assigned (must have a mailbox).
-    - Alongside the Exchange Online license, your account must also have a working E5 subscription/license.
 
 1. Verify that your account is listed as an application owner. If that isn't the case, add it to the list.
 
