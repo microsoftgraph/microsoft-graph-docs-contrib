@@ -3,15 +3,13 @@ title: "reportRoot: getTeamsTeamActivityDetail"
 description: "Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and non-licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "haoyli"
 doc_type: apiPageType
 ---
 
 # reportRoot: getTeamsTeamActivityDetail
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and non-licensed users.
 
@@ -42,10 +40,9 @@ In the request URL, provide the following parameters with a valid value.
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| date      | Date   | Specifies the date for which you would like to view details about activities across one or more teams. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
-## Optional query parameters
-
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
+> **Note:** You need to set either **period** or **date** in the request URL.
 
 ## Request headers
 
@@ -53,13 +50,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
-## Request body
-
-Do not supply a request body for this method.
-
 ## Response
-
-### CSV
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
@@ -86,17 +77,11 @@ The CSV file has the following headers for columns:
 - Active Shared Channels
 - Active External Users
 
-### JSON
-
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
-
 ## Examples
-
-### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
-#### Request
+### Request
 
 The following is an example of a request.
 
@@ -106,11 +91,10 @@ The following is an example of a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/v1.0/reports/getTeamsTeamActivityDetail(period='D7')
 ```
 
-
-#### Response
+### Response
 
 The following is an example of the response.
 
@@ -137,70 +121,6 @@ Content-Type: application/octet-stream
 Report Refresh Date,Team Name,Team Id,Team Type,Last Activity Date,Report Period,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Reply Messages,Channel Messages,Urgent Messages,Mentions,Active Shared Channels,Active External Users
 ```
 
-### Example 2: JSON output
-
-The following is an example that returns JSON.
-
-#### Request
-
-The following is an example of a request.
-
-<!-- {
-  "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitytotalusercounts_json"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='D7')?$format=application/json
-```
-
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 876
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='D7')?$format=application/json&$skiptoken=D07uj", 
-  "value": [
-    {
-      "reportRefreshDate": "2021-09-01", 
-      "teamName": "sampleTeam",
-      "teamId": "a063d832-ae9a-467d-8cb4-17c073260890",
-      "teamType": "Private",
-      "lastActivityDate": "2021-09-01",
-      "details": [
-        {
-          "reportPeriod":7,
-          "activeUsers": 26, 
-          "activeChannels": 17, 
-          "guests": 4, 
-          "reactions": 36, 
-          "meetingsOrganized": 0,
-          "postMessages": 0,
-          "replyMessages": 0,
-          "channelMessages": 0,
-          "urgentMessages": 0,
-          "mentions": 0,
-          "activeSharedChannels": "6",
-          "activeExternalUsers": "8"
-        }
-      ]
-    }
-  ]
-}
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
