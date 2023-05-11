@@ -1,6 +1,6 @@
 ---
 title: "Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio"
-description: "This article describes how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar."
+description: "Learn how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar."
 ms.localizationpriority: high
 ms.prod: "reports"
 author: "sarahwxy"
@@ -8,7 +8,7 @@ author: "sarahwxy"
 
 # Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio 
 
-Microsoft Graph enables developers to consume user information stored in Microsoft 365 in custom applications. Using Connected Services in Visual Studio you can grant your application access to the following Microsoft 365 services:
+You can use Microsoft Graph to consume user information stored in Microsoft 365 in custom applications. By using Connected Services in Visual Studio, you can grant your application access to the following Microsoft 365 services:
 
 - Outlook: mail, calendars, and contacts 
 - Azure Active Directory: users, groups, and directories 
@@ -21,10 +21,10 @@ This article describes how to configure Connected Services in Visual Studio to u
 
 ## Get set up
 
-To use the Office 365 Connected Services with Microsoft Graph, you need:
+To use the Office 365 Connected Services with Microsoft Graph, you need to:
 
-- Download [Visual Studio](https://visualstudio.microsoft.com/vs/). If you already have it, update it to the latest version.
-- Get a Microsoft 365 subscription. To get a free trial, join the [Microsoft 365 developer program](https://developer.microsoft.com/microsoft-365/dev-program).
+- Download [Visual Studio](https://visualstudio.microsoft.com/vs/). If you already have it, update to the latest version.
+- Get a Microsoft 365 subscription. To get a free trial developer subscription, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## Get the starter project
 
@@ -45,25 +45,25 @@ Download the [Microsoft Graph ASP.NET Connected Services MVC App Sample](https:/
 
 ## Configure Microsoft 365 data access
 
-1. Enter the domain of your developer account and click **Next**.  
+1. Enter the domain of your developer account and choose **Next**.  
     
     Go to your [Azure Active Directory (Azure AD)](https://aad.portal.azure.com) admin center in the Azure Portal to find your domain name. Sign in and select the **Azure Active Directory >  Overview** menu item. The field **Primary domain** in **Basic information** section contains your domain name.
 
  > **Tip:** If your primary address is `admin@contoso.onmicrosoft.com`, your domain is `contoso.onmicrosoft.com`. 
     
-2. Select **Create a new Azure AD application** and click **Next**.
+2. Select **Create a new Azure AD application** and choose **Next**.
 3. For this tutorial, select the following permissions:
 
     - Select the **Calendars** tab and check the box **Read your calendars** to grant your application the `Calendar.Read` permission.
     - Select the **User** tab and check the box **Sign you in and read your profile** to grant your application the `User.Read` permission.
 
-4. Click **Finish**.
+4. Choose **Finish**.
 
 ## Update the app settings
 
 1. Double-click **Web.config**.
 
-2. Inside **<appSettings\>** insert the following code: 
+2. Inside **<appSettings\>**, insert the following code: 
 
     ```XML
     <add key="ida:RedirectUri" value="https://localhost:PORT/" />
@@ -77,9 +77,9 @@ Download the [Microsoft Graph ASP.NET Connected Services MVC App Sample](https:/
 
 ## Run the sample
 
-Save your changes and start the project. Next, select the **Click here to sign in** button that redirects you to https://login.microsoftonline.com. Log in with your developer account and consent to the requested permissions. 
+Save your changes and start the project. Next, select the **Click here to sign in** button that redirects you to https://login.microsoftonline.com. Sign in with your developer account and consent to the requested permissions. 
 
-The home page displays your name that indicats that you're signed-in. On the **Calendar** tab, a table of events displays accordingly to your account.  
+The home page displays your name that indicates that you're signed-in. On the **Calendar** tab, a table of events displays accordingly to your account.  
 
 Select **Sign Out** on the avatar in the top-right corner to reset the session and return to the home page.
 
