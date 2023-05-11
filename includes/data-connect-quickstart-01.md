@@ -18,19 +18,19 @@ Additionally, you can use Data Connect to enable machine learning scenarios for 
 
 ## Get started 
 
-In this tutorial, you'll create your first single-tenant Microsoft Graph Data Connect application. Below is a general flow explaining Microsoft Graph Data Connect Onboarding.
+In this tutorial, you'll create your first single-tenant Microsoft Graph Data Connect application. The following is a general flow that explains the Microsoft Graph Data Connect onboarding.
 
-![Screenshot explaining onboarding flow](.../concepts/images/data-connect-overview-flowchart.png)
+![Screenshot explaining onboarding flow](../concepts/images/data-connect-overview-flowchart.png)
 
-1.	**Admin Enables MGDC:** This step has not changed – the first step in onboarding is for your global administrator to [enable MGDC.](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan)
+1.	**Admin enables Data Connect:** The first step in onboarding is for your global administrator to [enable Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
 
-2.	**Developer creates a new AAD app:** Similar to the original experience, the developer needs to first create a new Azure Active Directory (AAD) app.
+2.	**Developer creates a new Azure Active Directory application:** The developer needs to first create a new Azure Active Directory (Azure AD) application.
 
-3.	**Developer registers the app with MGDC:** Once the AAD app is created, the developer needs to register the app with MGDC using the new [MGDC app registration portal.](https://aka.ms/mgdcinazure) This is where the developer specifies what data they require for their application. <!-- Learn more about application registration -->
+3.	**Developer registers the Azure AD application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. <!-- Learn more about application registration -->
 
-4.	**Admin approves the app:** Once the developer has registered their app with MGDC, the global administrator can use the new [MGDC app consent portal](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter)to review the registered app and approve it. 
+4.	**Admin approves the Azure AD application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it. 
 
-5.	**Developer runs their pipelines:** Once the admin has consented to the application, the developer may run their pipelines without any stalling for runtime consent. Pipeline creation and execution via Azure Data Factory or Azure Synapse remains the same.  
+5.	**Developer runs their pipelines:** Once the administratior has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
 
 ### Prerequisites
