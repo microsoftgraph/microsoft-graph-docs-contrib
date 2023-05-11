@@ -14,7 +14,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role. Verify that your account has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role. Please ensure you are using your "developer" login and your account has privileges to create Azure resources within your subscription.
 
 1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
@@ -36,7 +36,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
     ![Screenshot of the resource page with Open Synapse Studio highlighted](../concepts/images/azure-synapse-studio-tile.png)
 
-1. By default, Azure Synapse Analytics will use an integration runtime that auto-resolves the region. Data Connect requires that your source, destination, and integration runtime exist in the same Microsoft 365 region. Therefore, we recommend that you create a new integration runtime with a fixed region.
+1. By default, Azure Synapse Analytics will use an integration runtime that auto-resolves the region. We recommend for the context of this tutorial in the developer tenant, to use default auto-resolve.
 
     1. Switch to **Manage (toolbox icon) > Integration runtimes > New**.
 
@@ -151,7 +151,7 @@ Now that you've created the pipeline, it's time to run it.
 
     ![Screenshot of the pipeline page with the bottom pane highlighted](../concepts/images/data-connect-synapse-activity-run.png)
 
-1. On the **Details** page, look for the status of the pipeline activity. In this case, you can see that it is in a state of **ConsentPending**. Close the **Details** page.
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.
 
     ![Screenshot of the Details page with ConsentPending hihglighted](../concepts/images/data-connect-synapse-accept-request.png)
 
@@ -162,7 +162,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Ensure that your account has privileges to create Azure resources within your subscription.
+1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal. Please ensure you are in using your "developer" log in and that your account has privileges to create Azure resources within your subscription.
 
 1. On the home page, select **Create a resource**.
 
@@ -184,7 +184,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. Switch from the **Overview** (home icon) to the **Manage** (toolbox icon) experience by selecting it from the left-hand navigation.
 
-1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. Because Data Connect requires that your source, destination, and integration runtime exist in the same Microsoft 365 region, we recommend that you create a new integration runtime with a fixed region.
+1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.
     1. Select **Integration runtimes** > **New**.
     2. Select **Azure, Self-Hosted** and select **Continue**.
 
@@ -222,7 +222,7 @@ Now that you've created the pipeline, it's time to run it.
         ![Screenshot of the Azure portal Data Factory service page with Microsoft 365 (Office 365) and Continue highlighted.](../concepts/images/data-connect-adf-m365icon-new.png)
 
     1. The designer will update the **Source** tab with the Microsoft 365 connector settings.
-    1. In the dialog that appears, enter the previously created Azure Active Directory (Azure AD) application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
+    1. In the dialog that appears, enter the previously created Azure Active Directory (Azure AD) application's **Application ID** and **Secret Value** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
     1. Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
     1. Click **Select** under **Linked service** and then click **+New**.
     1. In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and select **Create**.
@@ -289,7 +289,7 @@ With the pipeline created, now it is time to run it.
 
     ![Screenshot of pipeline1 with the Details tab highlighted.](../concepts/images/data-connect-adf-pipeline-details.png)
 
-1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **ConsentPending**. Close the **Details** dialog.
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.
 
     ![Screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
 
