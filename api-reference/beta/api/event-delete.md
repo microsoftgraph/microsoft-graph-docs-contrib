@@ -40,8 +40,8 @@ DELETE /groups/{id}/calendar/events/{id}/
 DELETE /me/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+DELETE /me/calendarGroups/{id}/calendars/{id}/events/{id}
+DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}
 ```
 ## Request headers
 | Name       | Type | Description|

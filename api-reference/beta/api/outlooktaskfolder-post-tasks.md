@@ -62,7 +62,7 @@ Here is an example of the request.
   "sampleKeys": ["AAMkADIyAAAhrbPXAAA="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
+POST https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=/tasks
 Content-type: application/json
 
 {

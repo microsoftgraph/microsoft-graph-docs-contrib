@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messagerules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+PATCH /me/mailFolders/inbox/messageRules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -65,7 +65,7 @@ The following example changes the name of the rule, and the actions to be taken 
   "sampleKeys": ["AQAAAJ5dZqA="]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
+PATCH https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 Content-type: application/json
 
 {

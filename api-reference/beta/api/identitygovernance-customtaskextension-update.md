@@ -58,7 +58,7 @@ PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExt
 |description|String|The description of the customTaskExtension.|
 |displayName|String|The display name of the customTaskExtension.|
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The endpoint configuration for a custom extension.|
-|callbackConfiguration|[microsoft.graph.identitygovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
+|callbackConfiguration|[microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
 
 ## Response
 

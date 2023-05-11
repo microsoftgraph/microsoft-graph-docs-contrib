@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timecards/{timeCardID}/endBreak
+POST /teams/{teamId}/schedule/timeCards/{timeCardID}/endBreak
 ```
 
 ## Request headers

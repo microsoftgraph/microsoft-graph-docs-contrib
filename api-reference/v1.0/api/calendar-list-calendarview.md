@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range,
-from a user's default calendar `(../me/calendarview)` or some other calendar of the user's.
+from a user's default calendar `(../me/calendarView)` or some other calendar of the user's.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

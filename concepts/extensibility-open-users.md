@@ -24,7 +24,7 @@ For this scenario, this article will show you how to:
 4. Delete the user's roaming profile information.
 
 > [!NOTE]
-> Apart from users, open extensions are also supported and can be managed for [other resource types](extensibility-overview.md#choose-an-extension-type-for-your-application).
+> Apart from users, open extensions are also supported and can be managed for [other resource types](extensibility-overview.md#comparison-of-extension-types).
 
 ## 1. Add roaming profile information
 

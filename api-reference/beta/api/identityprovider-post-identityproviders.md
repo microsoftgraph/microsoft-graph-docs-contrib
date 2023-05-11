@@ -84,6 +84,7 @@ If successful, this method returns a `201 Created` response code and [identityPr
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
@@ -157,6 +158,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_openidconnectprovider_from_identityproviders"

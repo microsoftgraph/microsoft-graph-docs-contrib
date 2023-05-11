@@ -89,11 +89,11 @@ GET /groups/{id}/calendar/events/{id}/attachments/{id}
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+GET /me/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /me/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 <!-- { "blockType": "ignored" } -->

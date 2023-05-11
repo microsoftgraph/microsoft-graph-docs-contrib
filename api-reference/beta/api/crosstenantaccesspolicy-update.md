@@ -61,6 +61,7 @@ The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object si
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicy"

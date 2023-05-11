@@ -244,7 +244,7 @@ The next example shows how to get an item attachment on a message. The propertie
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
 # [C#](#tab/csharp)
@@ -311,7 +311,7 @@ a message; the properties of that attached message are also returned.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
+GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item
 ```
 
 
@@ -407,7 +407,7 @@ The next example uses the same request as in [example 3](#example-3-expand-and-g
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
+GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item
 ```
 
 #### Response

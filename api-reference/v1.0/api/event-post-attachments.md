@@ -53,8 +53,8 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/attachments
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/attachments
 ```
 ## Request headers
 | Name       | Type | Description|

@@ -71,7 +71,7 @@ The following is an example of the request - it creates a search folder of messa
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
+POST https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADYAAAIBDAAAAA==/childFolders
 Content-type: application/json
 
 {

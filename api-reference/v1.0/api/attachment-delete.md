@@ -59,8 +59,8 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{i
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) that belongs to a user's [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /me/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Attachments for a [message](../resources/message.md) in a user's mailbox.
 <!-- { "blockType": "ignored" } -->
