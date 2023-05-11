@@ -4,93 +4,82 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 admin center or programmatically via PowerShell. When you run a pipeline and trigger a privileged access management (PAM) request, the request is attached to your user account that owns the service principal used by the pipeline. Even if the account is part of the approver group that you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal: "Requestor and approver are the same. Self-approval is not allowed." For development, you'll want to have a second account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange Online accounts.
+## Application Consent Overview 
 
-## Approve consent requests
+This documentation is geared towards global administrators who will be responsible for consenting to Micrisoft Graph Data Connect (MGDC) apps for your organization. 
 
-# [Microsoft 365 admin center](#tab/Microsoft365)
+The new MGDC app consent experience is built into the [Microsoft 365 admin center](www.admin.microsoft.com). The [entry point for this experience](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter) is in **Org settings > Security & Privacy** Tab. 
 
-1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
+This is a different entry point from where an admin would opt-in to MGDC. Today, only global administrators may consent to MGDC applications.
 
-1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
+![Screenshot overview of the admin page](.../concepts/images/data-connect-admin-center.png)
 
-    ![A screenshot of the Org settings page of the admin center with Privileged access highlighted.](../concepts/images/data-connect-consent-request-a-new.png)
+## Application Summary View
 
-    ![A screenshot of the Privileged Access pane with Create policies and manage requests highlighted.](../concepts/images/data-connect-consent-request-b-new.png)
+The landing page of the Microsoft Graph Data Connect applications portal is an at-a-glance view of all MGDC applications you may be interested in. 
 
-1. Select a pending **Data Access Request**.
+![Screenshot overview of the admin page](.../concepts/images/data-connect-application-request-1.png)
 
-1. In the **Data Access Request** call out, choose **Approve**.
+![Screenshot overview of the admin page](.../concepts/images/data-connect-application-request-2.png)
 
-    ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](../concepts/images/data-connect-m365-approve.png)
-1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
+You will find both Single-tenant applications and Multi-tenant applications. 
 
-    ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
+    - Single-tenant applications: Applications that are homed in the your tenant and require access to data from your tenant. These are typically enterprise scenarios.  
 
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
+    - Multi-tenant applications: Applications that are homed in another tenant and require access to data from your tenant. These are typically ISV scenarios. Reviews these apps extra carefully as consenting to such apps can enable data from your tenant being moved to the app developer’s tenant.
 
-# [PowerShell](#tab/PowerShell)
+All single-tenant apps will be populated in the table by default. Only approved, denied or expired multi-tenant apps will be included in the table. You may find apps with the following statuses in the table:
 
-1. Open Windows PowerShell.
-1. Ensure that your PowerShell session has enabled remotely signed scripts.
+    - Pre-consent: App that have not been acted upon yet. This status is only possible for Single-tenant apps. Apps in this state will always fail at runtime. 
 
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
+    - Approved: App that an admin has approved to access M365 data for your tenant.
 
-1. Connect to Exchange Online.
+    - Denied: App that an admin has denied to access M365 data for your tenant. Apps in this state will always fail at runtime.
 
-    1. Get a sign-in credential by running the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global administrator** role applied, is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
+    - Expired: App that an admin has approved to access M365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
 
-        ```powershell
-        $UserCredential = Get-Credential
-        ```
+# Application Details View
 
-    1. Create a new Exchange Online PowerShell session and load (import) it.
+1. Clicking on any app in the table will launch the app details view with more information on what data the app requires. This wizard experience should walk you through all the relevant data access details and allow you to approve or deny an app at the end. 
 
-        ```powershell
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        Import-PSSession $Session -DisableNameChecking
-        ```
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-sample-app-overview.png)
 
-        > [!IMPORTANT]
-        > After you're finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it'll leave the connection open.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-sample-app-overview-2.png)
 
-1. Get a list of all pending data requests from Microsoft Graph data connect by running the following PowerShell command.
+2. The first wizard step presents overview information about the application. 
 
-    ```powershell
-    Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl
-    ```
+    - **App owner:** This is the user principal name of the developer who registered the application. 
+    - **Data destination:** This is the sink where the data will be delivered. If approved, this app may move the requested data to any location within the listed sink. 
+    - **App publisher:** This is the AAD Tenant ID where the app is registered. For Single-tenant apps, this should be the same AAD Tenant ID as your tenant. 
 
-    - Examine the list of data access requests returned. In the following image, notice that there are two pending requests.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-1.png)
 
-        ![A screenshot showing a list of pending requests formatted as a list in a PowerShell console.](../concepts/images/data-connect-ps-pending-requests.png)
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-2.png)
 
-1. Approve a data access returned in the previous step by copying the Identity GUID of a request by running the following PowerShell command.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-3.png)
 
-    > [!NOTE]
-    > Replace the GUID in the following code snippet with the GUID from the results of the previous step.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-4.png)
 
-    ```powershell
-    Approve-ElevatedAccessRequest -RequestId fa041379-0000-0000-0000-7cd5691484bd -Comment 'approval request granted'
-    ```
+3. The next few steps are per-dataset steps – there will be one step per dataset registered in the app. 
 
-1. After a few moments, you should see the status page for the activity run update to show it is now _extracting data_.
+    - **Columns:** Specifies which columns the app intends to extract via MGDC. If approved, this app can extract any subset of approved columns for the specified dataset. 
 
-  ![A screenshot showing the Azure portal UI for the Data Factory service where the load status is now showing as "Extracting data".](../concepts/images/data-connect-adf-extraction-approved.png)
+    - **Scope:**  Specifies the scope (i.e., user selection) the app intends to extract via MGDC. Learn more about scopes in MGDC. 
 
-1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-5.png)
 
----
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-6.png)
 
-## Verify extracted data from Microsoft 365 to Azure Storage Blob
+4. The final wizard step re-iterates some key information on the app in review. At this point, you may either Approve, Decline or Cancel. An action on an app is all or nothing – i.e., consenting to an app means you are consenting to all the access specified in the prior steps.
 
-1. Open a browser and go to the [Azure portal](https://portal.azure.com/).
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-7.png)
 
-1. Sign in using an account with the **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role.
+5. When consenting to an app, the following errors are possible. If an unexpected error occurs, the error message will include an error code – please share this error code if you reach out to Microsoft for support. 
 
-1. In the **Recent** list of resources, select the **Azure Storage account** you created.
+    - App approver and owner cannot be the same user.
+    - App registration not found. It is possible someone deleted this app.
 
-1. On the left pane, select **Storage browser**, select **Blob containers**, and then select the **container** you created previously for which you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now.
+    ![Screenshot goes over sample app overview](.../concepts/images/data-connect-application-details-8.png)
 
-    ![A screenshot showing the Azure portal UI for the Storage account service. It is showing the container where the extracted data is being stored.](../concepts/images/data-connect-adf-extracted-data-in-blob.png)
+
+
