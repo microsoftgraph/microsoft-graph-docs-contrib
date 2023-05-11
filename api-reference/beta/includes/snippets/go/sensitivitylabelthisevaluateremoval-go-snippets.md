@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Security/InformationProtection/SensitivityLabels/SecurityEvaluateRemoval"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Security/InformationProtection/SensitivityLabels/MicrosoftGraphSecurityEvaluateRemoval"
 	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
@@ -20,7 +20,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.evaluateRemovalRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.evaluateRemovalRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateRemovalPostRequestBody()
@@ -86,7 +86,7 @@ isDowngradeJustified := true
 downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified) 
 requestBody.SetDowngradeJustification(downgradeJustification)
 
-result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().SecurityEvaluateRemoval().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateRemoval().Post(context.Background(), requestBody, configuration)
 
 
 ```
