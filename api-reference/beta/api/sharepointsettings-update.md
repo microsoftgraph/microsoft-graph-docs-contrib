@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or more tenant-level [settings](../resources/sharepointSettings.md) for SharePoint and OneDrive.
+Update one or more tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,7 +80,7 @@ PATCH /admin/sharepoint/settings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [settings](../resources/sharepointSettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [settings](../resources/sharepointsettings.md) object in the response body.
 
 ## Examples
 
