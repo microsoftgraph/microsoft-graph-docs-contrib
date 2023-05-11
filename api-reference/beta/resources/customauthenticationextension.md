@@ -1,6 +1,6 @@
 ---
 title: "customAuthenticationExtension resource type"
-description: "Custom authentication extensions let you interact with external systems during a user authentication"
+description: "Custom authentication extensions let you interact with external systems during a user authentication session."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom authentication extensions define interactions with external systems during a user authentication. This is an abstract type.
+Custom authentication extensions define interactions with external systems during a user authentication session. This is an abstract type that's inherited by the [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) derived type.
 
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
@@ -27,7 +27,6 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Delete customAuthenticationExtension](../api/identitycontainer-delete-customauthenticationextensions.md)|None|Deletes a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: What is this for?**|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: Why is this duplicated?**|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +35,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |description|String|The description of the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|The display name for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint that this custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint that this custom extension calls. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String|Identifier for the customAuthenticationExtension. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships

@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
+DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/$ref
 ```
 
 

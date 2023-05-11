@@ -18,8 +18,7 @@ Custom extension handler for an onTokenIssuanceStart event.
 Inherits from [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

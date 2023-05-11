@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties.
+Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. Currently, only [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) objects are returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [customAuthenticationExtension](../resources/customauthenticationextension.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [customAuthenticationExtension](../resources/customauthenticationextension.md) objects in the response body. An **@odata.type** property is returned for each object that specifies the type of customAuthenticationExtension object.
 
 ## Examples
 

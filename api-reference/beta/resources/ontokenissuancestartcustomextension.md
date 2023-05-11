@@ -21,12 +21,12 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom extension.|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|description|String|Description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|displayName|String|Display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom authentication extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom authentication extension.|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom authentication extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|description|String|Description for the custom authentication extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|displayName|String|Display name for the custom authentication extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom authentication extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String|Identifier for onTokenIssuanceStartCustomExtension. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships

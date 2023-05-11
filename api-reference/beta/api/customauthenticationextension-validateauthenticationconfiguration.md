@@ -1,6 +1,6 @@
 ---
 title: "customAuthenticationExtension: validateAuthenticationConfiguration"
-description: "An API to check potential warnings or errors in the endpoint and and authentication configuration for a customAuthenticationExtension."
+description: "An API to check validity of the endpoint and authentication configuration for a customAuthenticationExtension."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An API to check potential warnings or errors in the endpoint and and authentication configuration for a customAuthenticationExtension.
+An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,8 +39,15 @@ POST /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Supply a endpointConfiguration and authenticationConfiguration if querying at the root level.
-Otherwise, for a specific custom extension, do not supply a request body for this method.
+
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, do not supply a request body for this method.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint for the custom authentication extension to be validated.|
+|authenticationConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The authentication configuration for the custom authenticaion extension to validate.|
 
 ## Response
 
@@ -48,7 +55,9 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 
 ## Examples
 
-### Request
+### Example 1: 
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -57,6 +66,8 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/customAuthenticationExtensions/validateAuthenticationConfiguration
+Content-Type: application/json
+
 {
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
@@ -70,7 +81,7 @@ POST https://graph.microsoft.com/beta/customAuthenticationExtensions/validateAut
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -81,6 +92,8 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.authenticationConfigurationValidation",
     "errors": [
@@ -107,11 +120,13 @@ HTTP/1.1 200 OK
 ```
 
 
-### Request
+### Example 2: 
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "customauthenticationextensionthis.validateauthenticationconfiguration"
+  "name": "customauthenticationextensionthis.validateauthenticationconfiguration_byId"
 }
 -->
 ``` http
@@ -119,7 +134,7 @@ POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/9f
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "authenticationConfigurationValidation resource type"
-description: "The validation result of customExtensionauthenticationConfiguration"
+description: "The result of a validateAuthenticationConfiguration action that validates a customAuthenticationExtension configuration."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The validation result of customExtensionauthenticationConfiguration
+The validation result of a [validateAuthenticationConfiguration action](../api/customauthenticationextension-validateauthenticationconfiguration.md) that validates a [customAuthenticationExtension](../resources/customauthenticationextension.md) configuration.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|errors|[genericError](../resources/genericerror.md) collection|Errors in the validation result of customExtensionauthenticationConfiguration|
-|warnings|[genericError](../resources/genericerror.md) collection|Warnings in the validation result of customExtensionauthenticationConfiguration|
+|errors|[genericError](../resources/genericerror.md) collection|Errors in the validation result of a [customAuthenticationExtension](../resources/customauthenticationextension.md).|
+|warnings|[genericError](../resources/genericerror.md) collection|Warnings in the validation result of a [customAuthenticationExtension](../resources/customauthenticationextension.md).|
 
 ## Relationships
 None.

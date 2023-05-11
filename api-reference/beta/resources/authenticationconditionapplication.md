@@ -1,6 +1,6 @@
 ---
 title: "authenticationConditionApplication resource type"
-description: "An object representing an application condition which will trigger an authenticationEventListener."
+description: "An object representing the application that will be triggered for an authenticationEventListener."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object representing an application condition which will trigger an authenticationEventListener.
+An object representing the application that will be triggered for an authenticationEventListener.
 
 
 ## Properties

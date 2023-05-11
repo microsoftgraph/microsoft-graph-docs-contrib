@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object.
+Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) type is supported.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +42,7 @@ POST /identity/authenticationEventListeners
 ## Request body
 In the request body, supply a JSON representation of the [authenticationEventListener](../resources/authenticationeventlistener.md) object.
 
-You can specify the following properties when creating an **authenticationEventListener**.
+You can specify the following properties when creating an **authenticationEventListener**. You must specify the **@odata.type** property to specify the type of authenticationEventListener to create; for example, `@odata.type": "microsoft.graph.onTokenIssuanceStartListener"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -50,10 +50,9 @@ You can specify the following properties when creating an **authenticationEventL
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
 
-
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [authenticationEventListener](../resources/authenticationeventlistener.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [authenticationEventListener](../resources/authenticationeventlistener.md) object in the response body. The **@odata.type** property specifies the type of the created object.
 
 ## Examples
 

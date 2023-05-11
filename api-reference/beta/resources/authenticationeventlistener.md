@@ -13,23 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To customize the authentication process, listeners can be registered which specify that for some event, on some conditions, some custom logic can be invoked. This is an abstract type.
+To customize the authentication process, listeners can be registered which specify that for some event, on some conditions, some custom logic can be invoked. This is an abstract type from which the [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) is derived.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authenticationEventListeners](../api/identitycontainer-list-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md) collection|Get a list of the [authenticationEventListener](../resources/authenticationeventlistener.md) objects and their properties.|
-|[Create authenticationEventListener](../api/identitycontainer-post-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
-|[Get authenticationEventListener](../api/authenticationeventlistener-get.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Read the properties and relationships of an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
-|[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|[authenticationEventListener](../resources/authenticationeventlistener.md)|Update the properties of an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
-|[Delete authenticationEventListener](../api/identitycontainer-delete-authenticationeventlisteners.md)|None|Deletes an [authenticationEventListener](../resources/authenticationeventlistener.md) object.|
+|[List authenticationEventListeners](../api/identitycontainer-list-authenticationeventlisteners.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) collection|Retrieve a list of [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object types.|
+|[Create authenticationEventListener](../api/identitycontainer-post-authenticationeventlisteners.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Create a new [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
+|[Get authenticationEventListener](../api/authenticationeventlistener-get.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Read the properties and relationships of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
+|[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
+|[Delete authenticationEventListener](../api/identitycontainer-delete-authenticationeventlisteners.md)|None|Delete an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|The identifier of the authentication events flow.|
+|authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](authenticationeventsflow.md) object.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority).|
@@ -55,11 +55,6 @@ The following is a JSON representation of the resource.
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
   "authenticationEventsFlowId": "String"
 }
 ```
