@@ -29,7 +29,7 @@ Additionally, these can be created from the wizard as well. To register an app w
             - The Uri is disabled if the Storage Account selected is SQL
     2. **Application ID:** (required) select from the AAD apps in the tenant or create a new one
     3. **Description:** (required) text field to provide details on the app registration, i.e. project goal, unique identifier, organization project name
-    4. Publish Type: (required) select from Multi-Tenant or Single-Tenant
+    4. **Publish Type:** (required) select from Multi-Tenant or Single-Tenant
         - **Key Vault:** (required for Multi-Tenant app registrations) specify the key vault that will enable the communication between the tenants
     
     ![Screenshot of project details on the wizard](../concepts/images/data-connect-register-app-2.png)
