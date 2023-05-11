@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/authenticationEventListeners
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners
 ```
 
 ## Optional query parameters
@@ -76,22 +76,53 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.authenticationEventListener",
-      "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-      "priority": "Integer",
-      "conditions": {
-        "@odata.type": "microsoft.graph.authenticationConditions"
-      },
-      "tags": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners",
+    "value": [
         {
-          "@odata.type": "microsoft.graph.keyValuePair"
+            "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+            "id": "990d94e5-cc8f-4c4b-97b4-27e2678aac28",
+            "priority": 500,
+            "authenticationEventsFlowId": null,
+            "conditions": {
+                "applications": {
+                    "includeAllApplications": false,
+                    "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('990d94e5-cc8f-4c4b-97b4-27e2678aac28')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",
+                    "includeApplications": [
+                        {
+                            "appId": "a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+                        }
+                    ]
+                }
+            },
+            "handler": {
+                "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+                "configuration": null,
+                "customExtension": {
+                    "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+                    "displayName": "onTokenIssuanceStartCustomExtension",
+                    "description": "Fetch additional claims from custom user store",
+                    "clientConfiguration": null,
+                    "behaviorOnError": null,
+                    "authenticationConfiguration": {
+                        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+                        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+                    },
+                    "endpointConfiguration": {
+                        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+                        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+                    },
+                    "claimsForTokenConfiguration": [
+                        {
+                            "claimIdInApiResponse": "DateOfBirth"
+                        },
+                        {
+                            "claimIdInApiResponse": "CustomRoles"
+                        }
+                    ]
+                }
+            }
         }
-      ],
-      "authenticationEventsFlowId": "String"
-    }
-  ]
+    ]
 }
 ```
 
