@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/TenantTags/Item/ManagedTenantsAssignTag"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/TenantTags/Item/MicrosoftGraphManagedTenantsAssignTag"
 	  //other-imports
 )
 
@@ -22,7 +22,7 @@ tenantIds := []string {
 }
 requestBody.SetTenantIds(tenantIds)
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().ByTenantTagId("tenantTag-id").ManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().ByTenantTagId("tenantTag-id").MicrosoftGraphManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

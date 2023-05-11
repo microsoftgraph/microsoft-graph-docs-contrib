@@ -1707,6 +1707,56 @@
       "CreatedDateTime": "2023-05-04T18:52:13.9850311Z",
       "WorkloadArea": "Search",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "externalActivityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalActivityType** enumeration type.",
+          "Target": "externalActivityType"
+        },
+        {
+          "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivity](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalActivity?view=graph-rest-1.0) resource",
+          "Target": "externalActivity"
+        },
+        {
+          "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivityResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalActivityResult?view=graph-rest-1.0) resource",
+          "Target": "externalActivityResult"
+        },
+        {
+          "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activities",
+          "ChangeType": "Addition",
+          "Description": "Added the **activities** relationship to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+          "ApiChange": "Method",
+          "ChangedApiName": "addActivities",
+          "ChangeType": "Addition",
+          "Description": "Added the [addActivities](https://learn.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0) method to the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        }
+      ],
+      "Id": "d64da901-381d-4cc8-a3fb-a582ef1153c4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-08T18:52:13.9850311Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    } 
   ]
 }

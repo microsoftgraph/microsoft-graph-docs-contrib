@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {          
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
@@ -9750,23 +9768,23 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedApproval",
           "ChangeType": "Change",
-          "Description": "Change the **privilegedApproval** entity.",
-          "Target": "privilegedApproval"
+          "Description": "Change the privilegedapproval entity.",
+          "Target": "privilegedapproval"
         },
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignmentRequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the **privilegedRoleAssignmentRequest** entity, and following methods:\u003Cbr\u003E **List** \u003Cbr\u003E **Create** \u003Cbr\u003E **Cancel** \u003Cbr\u003E **My**",
-          "Target": "privilegedRoleAssignmentRequest,List,Create,Cancel,My"
+          "Description": "Added the privilegedroleassignmentrequest entity, and its associated methods and actions.",
+          "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
           "Id": "c71b4a31-ce26-4317-8dbc-ec6aa654d9e4",
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added **Update** method to the **privilegedRoleSettings** resource.",
+          "Description": "Added Update operation to the privilegedRoleSettings entity.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],
