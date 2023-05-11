@@ -27,8 +27,8 @@ When calling on behalf of a user, the user needs to belong to the following [Azu
 + Global administrator
 + Global reader
 + Cloud device administrator
-+ Intune admin
-+ Windows 365 admin
++ Intune administrator
++ Windows 365 administrator
 + Directory reviewer
 
 ## HTTP request
