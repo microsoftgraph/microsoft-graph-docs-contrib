@@ -22,7 +22,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
 1. Find the **Azure Synapse Analytics** resource type, input the following values, and select **Create**.
     - **Subscription:** Select your Azure subscription.
-    - **Resource group:** GraphDataConnect
+    - **Resource group:** GraphDataConnect  
     - **Region:** [Select an Azure region in the same region as your Microsoft 365 tenant](/graph/data-connect-datasets#regions).
     - **Workspace name:** m365tostorage
     - **Account name:** synapsedatalstorage
@@ -69,7 +69,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
         - **Name:** CopyFromM365toStorage
         - **Description:** Enter a description.
 
-    1. Select the **Source** tab, and then select **New**.
+    1. Select the **Source** tab, and then select **New**. 
 
         ![Screenshot of the integrate page with Source and New highlighted](../concepts/images/data-connect-synapse-general.png)
 
@@ -81,7 +81,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
         ![Screenshot of the Set properties pane with New highlighted](../concepts/images/data-connect-synapse-linked-service.png)
 
-    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the Azure Active Directory (Azure AD) application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.
+    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the Azure Active Directory (Azure AD) application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.  
 
         ![Screenshot of the New linked service pane](../concepts/images/data-connect-synapse-service-id.png)
 
@@ -97,7 +97,7 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
             ![Screenshot of the Integrate page with Date filter highlighted](../concepts/images/data-connect-synapse-import-schema.png)
 
-    1. Select the **Sink** tab. Choose **New**, select **Azure Blob Storage**, and then choose **Continue**.
+    1. Select the **Sink** tab. Choose **New**, select **Azure Blob Storage**, and then choose **Continue**.  
     
     ![Screenshot of the Integrate page with the Sink tab and the New button highlighted](../concepts/images/data-connect-synapse-sink.png)
 
@@ -124,9 +124,9 @@ We recommend using Azure Synapse since Synapse has more in-built capabilities fo
 
         ![Screenshot of the Set properties pane with File path highlighted](../concepts/images/data-connect-synapse-storage.png)
 
-1. With the pipeline created, at the top of the designer, choose **Validate all**.
+1. With the pipeline created, at the top of the designer, choose **Validate all**.  
 
-1. After validating (and fixing any issues that were found), at the top of the designer, choose **Publish all**.
+1. After validating (and fixing any issues that were found), at the top of the designer, choose **Publish all**.  
 
 ## Run the Azure Synapse Analytics pipeline
 
@@ -151,11 +151,11 @@ Now that you've created the pipeline, it's time to run it.
 
     ![Screenshot of the pipeline page with the bottom pane highlighted](../concepts/images/data-connect-synapse-activity-run.png)
 
-1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.
+1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.  
 
     ![Screenshot of the Details page with ConsentPending hihglighted](../concepts/images/data-connect-synapse-accept-request.png)
 
-1. At this point, the activity run is internally paused until someone manually approves the consent request, either via the Microsoft 365 admin center or via PowerShell.
+1. At this point, the activity run is internally paused until someone manually approves the consent request, either via the Microsoft 365 admin center or via PowerShell.   
 
 
 # [Create an Azure Data Factory Pipeline](#tab/AzureDataFactoryPipeline)
@@ -169,7 +169,7 @@ Now that you've created the pipeline, it's time to run it.
 1. Find the **Data Factory** resource type and use the following values to create it, then select **Create**.
 
     - **Subscription**: select your Azure subscription
-    - **Resource group**: GraphDataConnect
+    - **Resource group**: GraphDataConnect  
     - **Region**: [pick an Azure region in the same region as your Microsoft 365 region](/graph/data-connect-datasets#regions)
     - **Name**: dM365toBlobStorage
     - **Version**: V2
@@ -184,7 +184,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. Switch from the **Overview** (home icon) to the **Manage** (toolbox icon) experience by selecting it from the left-hand navigation.
 
-1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.
+1. By default, the Azure Data Factory will use an integration runtime that is auto-resolving the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.  
     1. Select **Integration runtimes** > **New**.
     2. Select **Azure, Self-Hosted** and select **Continue**.
 
@@ -215,17 +215,17 @@ Now that you've created the pipeline, it's time to run it.
         - **Name**: CopyFromM365toBlobStorage
         - **Description**: A description you want
 
-    1. In the activity editor pane below the designer, select the **Source** tab, then select **New**.
+    1. In the activity editor pane below the designer, select the **Source** tab, then select **New**.  
 
     1. Locate and select the dataset **Microsoft 365 (Office 365)** and then select **Continue**.
 
         ![Screenshot of the Azure portal Data Factory service page with Microsoft 365 (Office 365) and Continue highlighted.](../concepts/images/data-connect-adf-m365icon-new.png)
 
-    1. The designer will update the **Source** tab with the Microsoft 365 connector settings.
-    1. In the dialog that appears, enter the previously created Azure Active Directory (Azure AD) application's **Application ID** and **Secret Value** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
-    1. Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
+    1. The designer will update the **Source** tab with the Microsoft 365 connector settings.  
+    1. In the dialog that appears, enter the previously created Azure Active Directory (Azure AD) application's **Application ID** and **Secret Value** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.  
+    1. Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.  
     1. Click **Select** under **Linked service** and then click **+New**.
-    1. In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and select **Create**.
+    1. In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and select **Create**.  
 
         ![Screenshot of the Azure portal Data Factory service page with the service principal key configured.](../concepts/images/data-connect-adf-linked-service.png)
 
@@ -247,7 +247,7 @@ Now that you've created the pipeline, it's time to run it.
 
         1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
         1. Click **Select** under **Linked service** and then click **+New**.
-        1. Set the following values in the dialog, then select **Create**.
+        1. Set the following values in the dialog, then select **Create**.  
 
             - **Authentication type**: Service Principal
             - **Azure subscription**: Select all
@@ -255,17 +255,17 @@ Now that you've created the pipeline, it's time to run it.
                 - This is the storage account created earlier in this exercise.
             - **Tenant**: enter the ID of your Azure tenant
             - **Service principal ID**: enter the ID of the Azure AD application you previously created
-            - **Service principal key**: enter the hashed key of the Azure AD application you previously created
+            - **Service principal key**: enter the hashed key of the Azure AD application you previously created  
 
     1. Next to the **File path** field, select **Browse**.
     1. Select the name of the storage container you created previously, select **OK**, and select **OK** again.
 
       ![Screenshot of the Azure portal Factory resources page with the file path field highlighted.](../concepts/images/data-connect-adf-sa-fp-config.png)
 
-1. With the pipeline created, select the **Validate all** button at the top of the designer.
+1. With the pipeline created, select the **Validate all** button at the top of the designer.  
 
-1. After validating (and fixing any issues that were found), select the **Publish all** button at the top of the designer.
-
+1. After validating (and fixing any issues that were found), select the **Publish all** button at the top of the designer.  
+ 
 ## Run the Azure Data Factory pipeline
 
 With the pipeline created, now it is time to run it.
@@ -291,6 +291,6 @@ With the pipeline created, now it is time to run it.
 
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image.The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data and Succeeded – no further action needed from you for this.
 
-    ![Screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
+    ![Screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)  
 
-1. At this point, the activity run is internally paused until someone manually approves the consent request via the Microsoft 365 admin center or via PowerShell.
+1. At this point, the activity run is internally paused until someone manually approves the consent request via the Microsoft 365 admin center or via PowerShell.  
