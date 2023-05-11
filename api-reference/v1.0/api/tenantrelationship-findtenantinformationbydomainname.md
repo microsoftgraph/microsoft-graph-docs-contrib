@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a [tenantInforma
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1/tenantRelationships/findTenantInformationByDomainName(domainName='contoso.com')
+GET https://graph.microsoft.com/v1.0/tenantRelationships/findTenantInformationByDomainName(domainName='contoso.com')
 ```
 
 ### Response
@@ -85,7 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1/$metadata#microsoft.graph.tenantInformation",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.tenantInformation",
     "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
     "federationBrandName": null,
     "displayName": "Contoso, Ltd",
