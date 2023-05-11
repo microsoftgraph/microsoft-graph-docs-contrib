@@ -883,8 +883,8 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "inProgress",
 					"ChangeType": "Addition",
-                    "Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
-                    "Target": "incidentStatus"
+					"Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
+					"Target": "incidentStatus"
 				}
 			],
 			"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
@@ -895,7 +895,7 @@
 			"SubArea": "Alerts and incidents"
 		},
 		{
-			"changelist": [
+			"ChangeList": [
 				{
 					"Id": "5e2a1ba7-ae0d-4dcb-937a-4d16e338a3cb",
 					"ApiChange": "Resource",
