@@ -49,7 +49,7 @@ In the request body, provide a JSON representation of the `id` of the [identityP
 
 If successful, this method returns a `201 Created` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
+## Examples
 
 #### Request
 The following is an example of a request.
@@ -60,6 +60,8 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
+Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.authenticationConditionApplication",
     "appId": "{application-id}"
@@ -78,6 +80,8 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows('{authenticationEventsFlow-id}')/conditions/applications/includeApplications/$entity",
     "appId": "{application-id}"

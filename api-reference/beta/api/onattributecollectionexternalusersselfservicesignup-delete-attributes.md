@@ -14,9 +14,6 @@ Namespace: microsoft.graph
 
 Remove an attribute from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. You can add both custom and built-in attributes to a user flow.
 
-This requires two calls – a DELETE to remove the attribute followed by a PATCH to remove the attribute from the display during sign-up. **TODO: HOW TO REPRESENT BOTH CALLS?**
-
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,15 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-First call:
 ``` http
 DELETE /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 ```
-Second call:
-``` http
-PATCH identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}
-```
-
 
 ## Request headers
 |Name|Description|
