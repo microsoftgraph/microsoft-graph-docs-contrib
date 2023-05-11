@@ -41,7 +41,7 @@ GET /teams/{team-id}/channels/{channel-id}
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
->**Note:** The channel summary property can only be retrieved via the $select clause as can be seen in examples below.
+>**Note:** The summary property can only be retrieved via the select parameter, as shown in Example 2 in this topic.
 
 ## Request headers
 
@@ -57,9 +57,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Get a channel
+
+#### Request
 
 The following example shows a request.
 
@@ -101,7 +103,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 ---
 
 
-### Response
+#### Response 1
 
 The following example shows the response.
 
@@ -126,6 +128,8 @@ Content-type: application/json
 
 ```
 
+#### Response 2
+
 The following example shows the response for a standard channel with channel moderation off.
 
 ```http
@@ -148,6 +152,8 @@ HTTP/1.1 200 OK
     }
 }
 ```
+
+#### Response 3
 
 The following example shows the response for a standard channel with channel moderation on.
 
@@ -175,6 +181,8 @@ Content-type: application/json
 }
 ```
 
+#### Response 4
+
 The following example shows the response for a private channel.
 
 ```http
@@ -194,7 +202,9 @@ Content-type: application/json
 }
 ```
 
-### Request
+### Example 2: Get a Channel Summary property
+
+#### Request
 
 Here is an example of the request to get the Channel Summary property.
 
@@ -231,7 +241,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response with the channel summary property.
 
@@ -264,5 +274,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
