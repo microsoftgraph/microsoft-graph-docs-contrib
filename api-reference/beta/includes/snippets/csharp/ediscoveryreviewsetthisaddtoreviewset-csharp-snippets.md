@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.SecurityAddToReviewSet.AddToReviewSetPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityAddToReviewSet.AddToReviewSetPostRequestBody
 {
 	Search = new Microsoft.Graph.Beta.Models.Security.EdiscoverySearch
 	{
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.R
 	},
 	AdditionalDataOptions = Microsoft.Graph.Beta.Models.Security.AdditionalDataOptions.LinkedFiles,
 };
-await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].SecurityAddToReviewSet.PostAsync(requestBody);
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].MicrosoftGraphSecurityAddToReviewSet.PostAsync(requestBody);
 
 
 ```

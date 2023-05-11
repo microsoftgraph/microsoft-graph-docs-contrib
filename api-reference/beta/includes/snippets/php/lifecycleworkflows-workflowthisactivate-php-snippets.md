@@ -25,7 +25,7 @@ $requestBody->setSubjects($subjectsArray);
 
 
 
-$graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->identityGovernanceActivate()->post($requestBody);
+$graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->microsoftGraphIdentityGovernanceActivate()->post($requestBody);
 
 
 ```
