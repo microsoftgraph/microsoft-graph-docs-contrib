@@ -26,9 +26,9 @@ In this tutorial, you'll create your first single-tenant Microsoft Graph Data Co
 
 2.	**Developer creates a new Azure Active Directory application:** The developer needs to first create a new Azure Active Directory (Azure AD) application.
 
-3.	**Developer registers the Azure AD application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. <!-- Learn more about application registration -->
+3.	**Developer registers the application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. <!-- Learn more about application registration -->
 
-4.	**Admin approves the Azure AD application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it. 
+4.	**Admin approves the application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it. 
 
 5.	**Developer runs their pipelines:** Once the administratior has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
