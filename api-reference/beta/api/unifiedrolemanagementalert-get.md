@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a single security alert by its ID from Privileged Identity Management (PIM) for Azure AD roles.
+Get a single security alert by its alert definition ID from Privileged Identity Management (PIM) for Azure AD roles.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ The calling user must be a member user or have the Privileged Role Administrator
 }
 -->
 ``` http
-GET /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}
+GET /identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType' and alertDefinitionId eq 'alertDefinitionId'
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert?$expand=alertDefinition,alertConfiguration,alertIncidents
+GET https://graph.microsoft.com/betaidentityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq '67b47f38-0f0b-4e62-a3be-859140c2061f' and scopeType eq 'DirectoryRole' and alertDefinitionId eq 'DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert'&$expand=alertDefinition,alertConfiguration,alertIncidents
 ```
 
 
@@ -95,7 +95,7 @@ Content-Type: application/json
         "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
         "severityLevel": "low",
         "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-        "mitigationSteps": "Review users and remove any that don't absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
+        "mitigationSteps": "Review users and remove any that do not absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
         "howToPrevent": "Assign users the least privileged role they need.",
         "isRemediatable": true,
         "isConfigurable": true

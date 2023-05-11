@@ -93,7 +93,7 @@ Content-Type: application/json
     "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
     "severityLevel": "low",
     "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-    "mitigationSteps": "Review users and remove any that don't absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
+    "mitigationSteps": "Review users and remove any that do not absolutely need the global administrator role. Assign lower privileged roles to these users instead.",
     "isRemediatable": true,
     "isConfigurable": true
   }
