@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.WindowsUpdatesUpdateAudience.UpdateAudiencePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudiences.Item.MicrosoftGraphWindowsUpdatesUpdateAudience.UpdateAudiencePostRequestBody
 {
 	AddMembers = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
 	{
@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.DeploymentAudie
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].WindowsUpdatesUpdateAudience.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.DeploymentAudiences["{deploymentAudience-id}"].MicrosoftGraphWindowsUpdatesUpdateAudience.PostAsync(requestBody);
 
 
 ```

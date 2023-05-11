@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().Tenants().ByTenantId("tenant-id").ManagedTenantsResetTenantOnboardingStatus().Post(context.Background(), nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().Tenants().ByTenantId("tenant-id").MicrosoftGraphManagedTenantsResetTenantOnboardingStatus().Post(context.Background(), nil)
 
 
 ```
