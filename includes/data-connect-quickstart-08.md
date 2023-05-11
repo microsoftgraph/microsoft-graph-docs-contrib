@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 This documentation is geared towards global administrators who will be responsible for consenting to Microsoft Graph Data Connect (MGDC) apps for your organization. 
 
-The new MGDC app consent experience is built into the [Microsoft 365 admin center](www.admin.microsoft.com). The [entry point for this experience](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter) is in **Org settings > Security & Privacy** Tab. 
+The new MGDC app consent experience is built into the [Microsoft 365 admin center](https://admin.microsoft.com). The [entry point for this experience](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter) is in **Org settings > Security & Privacy** Tab. 
 
 This is a different entry point from where an admin would opt-in to MGDC. Today, only global administrators may consent to MGDC applications.
 
