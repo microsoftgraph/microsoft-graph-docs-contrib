@@ -83,133 +83,133 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "id": "0313cc37-d421-421d-857b-87804d61e33e",
-    "displayName": "Woodgrove Drive User Flow",
-    "description": "For onboarding consumers to the Woodgrove Drive application",
-    "priority": 50,
-    "onAttributeCollectionStart": null,
-    "onAttributeCollectionSubmit": null,
-    "conditions": {
-        "applications": {
-            "includeAllApplications": false,
-            "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows('0313cc37-d421-421d-857b-87804d61e33e')/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications",
-            "includeApplications": []
-        }
-    },
-    "onInteractiveAuthFlowStart": {
-        "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
-        "isSignUpAllowed": true
-    },
-    "onAuthenticationMethodLoadStart": {
-      "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
-      "identityProviders": [
-          {
-              "@odata.type": "#microsoft.graph.builtInIdentityProvider",
-              "id": "EmailPassword-OAUTH",
-              "displayName": "Email with password",
-              "identityProviderType": "EmailPassword",
-              "state": null
-          }
-          {
-              "@odata.type": "#microsoft.graph.socialIdentityProvider",
-              "id": "Google-OAUTH",
-              "displayName": "Google",
-              "identityProviderType": "Google",
-              "clientId": "137004260525-q8j2cp9hqceqa6hpvaa346e04g92tn8m.apps.googleusercontent.com",
-              "clientSecret": "******"
-          },
-          {
-              "@odata.type": "#microsoft.graph.socialIdentityProvider",
-              "id": "Facebook-OAUTH",
-              "displayName": "Facebook",
-              "identityProviderType": "Facebook",
-              "clientId": "236028191057849",
-              "clientSecret": "******"
-          }
-      ]
-    },    
-    "onAttributeCollection": {
-        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-        "accessPackages": [],
-        "attributeCollectionPage": {
-            "customStringsFileId": null,
-            "views": [
+    "value": {
+        "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+        "id": "0313cc37-d421-421d-857b-87804d61e33e",
+        "displayName": "Woodgrove Drive User Flow",
+        "description": "For onboarding consumers to the Woodgrove Drive application",
+        "priority": 50,
+        "onAttributeCollectionStart": null,
+        "onAttributeCollectionSubmit": null,
+        "conditions": {
+            "applications": {
+                "includeAllApplications": false,
+                "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows('0313cc37-d421-421d-857b-87804d61e33e')/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications",
+                "includeApplications": []
+            }
+        },
+        "onInteractiveAuthFlowStart": {
+            "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+            "isSignUpAllowed": true
+        },
+        "onAuthenticationMethodLoadStart": {
+            "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+            "identityProviders": [
                 {
-                    "title": null,
-                    "description": null,
-                    "inputs": [
-                        {
-                            "attribute": "email",
-                            "label": "Email Address",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": true,
-                            "editable": false,
-                            "writeToDirectory": true,
-                            "required": true,
-                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "displayName",
-                            "label": "Display Name",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-                            "label": "Favorite color",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^.*",
-                            "options": []
-                        }
-                    ]
+                    "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+                    "id": "EmailPassword-OAUTH",
+                    "displayName": "Email with password",
+                    "identityProviderType": "EmailPassword",
+                    "state": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.socialIdentityProvider",
+                    "id": "Google-OAUTH",
+                    "displayName": "Google",
+                    "identityProviderType": "Google",
+                    "clientId": "137004260525-q8j2cp9hqceqa6hpvaa346e04g92tn8m.apps.googleusercontent.com",
+                    "clientSecret": "******"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.socialIdentityProvider",
+                    "id": "Facebook-OAUTH",
+                    "displayName": "Facebook",
+                    "identityProviderType": "Facebook",
+                    "clientId": "236028191057849",
+                    "clientSecret": "******"
                 }
             ]
         },
-        "attributes": [
-            {
-                "id": "email",
-                "displayName": "Email Address",
-                "description": "Email address of the user",
-                "userFlowAttributeType": "builtIn",
-                "dataType": "string"
+        "onAttributeCollection": {
+            "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+            "accessPackages": [],
+            "attributeCollectionPage": {
+                "customStringsFileId": null,
+                "views": [
+                    {
+                        "title": null,
+                        "description": null,
+                        "inputs": [
+                            {
+                                "attribute": "email",
+                                "label": "Email Address",
+                                "inputType": "text",
+                                "defaultValue": null,
+                                "hidden": true,
+                                "editable": false,
+                                "writeToDirectory": true,
+                                "required": true,
+                                "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+                                "options": []
+                            },
+                            {
+                                "attribute": "displayName",
+                                "label": "Display Name",
+                                "inputType": "text",
+                                "defaultValue": null,
+                                "hidden": false,
+                                "editable": true,
+                                "writeToDirectory": true,
+                                "required": false,
+                                "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                                "options": []
+                            },
+                            {
+                                "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                                "label": "Favorite color",
+                                "inputType": "text",
+                                "defaultValue": null,
+                                "hidden": false,
+                                "editable": true,
+                                "writeToDirectory": true,
+                                "required": false,
+                                "validationRegEx": "^.*",
+                                "options": []
+                            }
+                        ]
+                    }
+                ]
             },
-            {
-                "id": "displayName",
-                "displayName": "Display Name",
-                "description": "Display Name of the User.",
-                "userFlowAttributeType": "builtIn",
-                "dataType": "string"
-            }
-            {
-                "id": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-                "displayName": "Favorite color",
-                "description": "what is your favorite color",
-                "userFlowAttributeType": "custom",
-                "dataType": "string"
-            }
-        ]
-    },
-    "onUserCreateStart": {
-        "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-        "userTypeToCreate": "member",
-        "accessPackages": []
+            "attributes": [
+                {
+                    "id": "email",
+                    "displayName": "Email Address",
+                    "description": "Email address of the user",
+                    "userFlowAttributeType": "builtIn",
+                    "dataType": "string"
+                },
+                {
+                    "id": "displayName",
+                    "displayName": "Display Name",
+                    "description": "Display Name of the User.",
+                    "userFlowAttributeType": "builtIn",
+                    "dataType": "string"
+                },
+                {
+                    "id": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                    "displayName": "Favorite color",
+                    "description": "what is your favorite color",
+                    "userFlowAttributeType": "custom",
+                    "dataType": "string"
+                }
+            ]
+        },
+        "onUserCreateStart": {
+            "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
+            "userTypeToCreate": "member",
+            "accessPackages": []
+        }
     }
-  }
 }
 ```
 
