@@ -21,7 +21,7 @@ requestBody.SetEnabled(&enabled)
 timeZone := "America/Chicago"
 requestBody.SetTimeZone(&timeZone) 
 
-result, err := graphClient.TeamsById("team-id").Schedule().Put(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

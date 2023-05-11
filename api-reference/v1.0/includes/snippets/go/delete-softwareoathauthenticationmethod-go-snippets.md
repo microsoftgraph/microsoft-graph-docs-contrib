@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.UsersById("user-id").Authentication().SoftwareOathMethodsById("softwareOathAuthenticationMethod-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Authentication().SoftwareOathMethods().BySoftwareOathMethodId("softwareOathAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

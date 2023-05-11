@@ -46,7 +46,7 @@ requestBody.SetMatchCase(&matchCase)
 method := "method-value"
 requestBody.SetMethod(&method) 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().TablesById("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -73,7 +73,7 @@ hostedContents := []graphmodels.ChatMessageHostedContentable {
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").Messages().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

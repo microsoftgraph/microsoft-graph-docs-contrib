@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().CalendarGroupsById("calendarGroup-id").Delete(context.Background(), nil)
+graphClient.Me().CalendarGroups().ByCalendarGroupId("calendarGroup-id").Delete(context.Background(), nil)
 
 
 ```

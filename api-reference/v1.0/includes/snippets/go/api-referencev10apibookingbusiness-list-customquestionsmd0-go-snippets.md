@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").CustomQuestions().Get(context.Background(), nil)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").CustomQuestions().Get(context.Background(), nil)
 
 
 ```

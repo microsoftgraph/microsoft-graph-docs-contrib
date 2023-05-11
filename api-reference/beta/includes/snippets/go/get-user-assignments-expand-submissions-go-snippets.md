@@ -22,7 +22,7 @@ configuration := &graphconfig.EducationUserItemAssignmentsRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().UsersById("educationUser-id").Assignments().Get(context.Background(), configuration)
+result, err := graphClient.Education().Users().ByUserId("educationUser-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

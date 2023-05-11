@@ -56,7 +56,7 @@ schedule.SetPatternStartDateTime(&patternStartDateTime)
 recurrence.SetSchedule(schedule)
 requestBody.SetRecurrence(recurrence)
 
-result, err := graphClient.Planner().TasksById("plannerTask-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

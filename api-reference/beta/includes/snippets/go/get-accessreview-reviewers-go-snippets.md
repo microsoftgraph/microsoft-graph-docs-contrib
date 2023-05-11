@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.AccessReviewsById("accessReview-id").Reviewers().Get(context.Background(), nil)
+result, err := graphClient.AccessReviews().ByAccessReviewId("accessReview-id").Reviewers().Get(context.Background(), nil)
 
 
 ```

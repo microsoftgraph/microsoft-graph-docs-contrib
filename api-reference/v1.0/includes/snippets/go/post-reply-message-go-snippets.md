@@ -23,7 +23,7 @@ content := "Hello World"
 body.SetContent(&content) 
 requestBody.SetBody(body)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Replies().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Replies().Post(context.Background(), requestBody, nil)
 
 
 ```

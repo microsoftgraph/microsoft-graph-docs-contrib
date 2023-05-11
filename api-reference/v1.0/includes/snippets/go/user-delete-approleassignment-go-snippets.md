@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.UsersById("user-id").AppRoleAssignmentsById("appRoleAssignment-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").AppRoleAssignments().ByAppRoleAssignmentId("appRoleAssignment-id").Delete(context.Background(), nil)
 
 
 ```

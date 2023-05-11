@@ -27,7 +27,7 @@ configuration := &graphconfig.ItemContactFolderItemContactsDelta()RequestBuilder
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().ContactFoldersById("contactFolder-id").Contacts().Delta().Get(context.Background(), configuration)
+result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Delta().Get(context.Background(), configuration)
 
 
 ```

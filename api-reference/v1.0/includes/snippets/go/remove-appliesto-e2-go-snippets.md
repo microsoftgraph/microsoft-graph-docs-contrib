@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").AppManagementPoliciesById("appManagementPolicy-id").Delete(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AppManagementPolicies().ByAppManagementPolicieId("appManagementPolicy-id").Delete(context.Background(), requestBody, nil)
 
 
 ```

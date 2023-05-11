@@ -61,6 +61,7 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
+- [Use query templates](/graph/search-concept-query-template)
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))

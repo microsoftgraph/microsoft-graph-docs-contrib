@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalendarPermission()
 role := graphmodels.WRITE_CALENDARROLETYPE 
 requestBody.SetRole(&role) 
 
-result, err := graphClient.UsersById("user-id").CalendarsById("calendar-id").CalendarPermissionsById("calendarPermission-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Users().ByUserId("user-id").Calendars().ByCalendarId("calendar-id").CalendarPermissions().ByCalendarPermissionId("calendarPermission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -32,7 +32,7 @@ configuration := &graphconfig.GroupItemCalendarViewRequestBuilderGetRequestConfi
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.GroupsById("group-id").CalendarView().Get(context.Background(), configuration)
+result, err := graphClient.Groups().ByGroupId("group-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

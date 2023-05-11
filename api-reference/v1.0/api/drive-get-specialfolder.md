@@ -65,10 +65,21 @@ You can use this method of addressing a special folder inline with additional ca
 ### Example 1: Get special folder by name
 
 #### Request
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder" } -->
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-special-folder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
@@ -101,20 +112,15 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 GET /me/drive/special/{special-folder-name}/children
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### Response
 

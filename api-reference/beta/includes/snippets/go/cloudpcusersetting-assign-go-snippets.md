@@ -34,7 +34,7 @@ assignments := []graphmodels.Objectable {
 }
 requestBody.SetAssignments(assignments)
 
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByUserSettingId("cloudPcUserSetting-id").Assign().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().CustomQuestionsById("meetingRegistrationQuestion-id").Get(context.Background(), nil)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().CustomQuestions().ByCustomQuestionId("meetingRegistrationQuestion-id").Get(context.Background(), nil)
 
 
 ```

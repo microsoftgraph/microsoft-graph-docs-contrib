@@ -122,7 +122,7 @@ timeSlots := []graphmodels.Objectable {
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").StaffMembersById("bookingStaffMemberBase-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").StaffMembers().ByStaffMemberId("bookingStaffMemberBase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

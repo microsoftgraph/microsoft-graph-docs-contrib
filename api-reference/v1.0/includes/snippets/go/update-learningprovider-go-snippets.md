@@ -29,7 +29,7 @@ requestBody.SetLongLogoWebUrlForLightTheme(&longLogoWebUrlForLightTheme)
 loginWebUrl := "https://www.linkedin.com/learning-login/teams"
 requestBody.SetLoginWebUrl(&loginWebUrl) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

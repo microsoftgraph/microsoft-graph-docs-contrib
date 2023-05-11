@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitionsById("accessReviewHistoryDefinition-id").Instances().Get(context.Background(), nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().ByHistoryDefinitionId("accessReviewHistoryDefinition-id").Instances().Get(context.Background(), nil)
 
 
 ```

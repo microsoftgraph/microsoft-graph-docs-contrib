@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/beta/directoryObjects/{id}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.DevicesById("device-id").RegisteredUsers().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Devices().ByDeviceId("device-id").RegisteredUsers().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

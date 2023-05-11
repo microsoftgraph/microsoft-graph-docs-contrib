@@ -27,7 +27,7 @@ userIds := []string {
 }
 requestBody.SetUserIds(userIds)
 
-result, err := graphClient.TeamsById("team-id").Schedule().SchedulingGroups().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().SchedulingGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

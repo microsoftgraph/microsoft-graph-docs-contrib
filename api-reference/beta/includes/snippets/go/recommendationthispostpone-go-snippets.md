@@ -20,7 +20,7 @@ requestBody := graphmodels.NewPostponePostRequestBody()
 postponeUntilDateTime , err := time.Parse(time.RFC3339, "2023-02-01T02:53:00Z")
 requestBody.SetPostponeUntilDateTime(&postponeUntilDateTime) 
 
-result, err := graphClient.Directory().RecommendationsById("recommendation-id").Postpone().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Postpone().Post(context.Background(), requestBody, nil)
 
 
 ```

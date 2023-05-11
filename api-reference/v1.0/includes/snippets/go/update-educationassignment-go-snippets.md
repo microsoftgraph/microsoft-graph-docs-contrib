@@ -30,7 +30,7 @@ requestBody.SetDueDateTime(&dueDateTime)
 addedStudentAction := graphmodels.NONE_EDUCATIONADDEDSTUDENTACTION 
 requestBody.SetAddedStudentAction(&addedStudentAction) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

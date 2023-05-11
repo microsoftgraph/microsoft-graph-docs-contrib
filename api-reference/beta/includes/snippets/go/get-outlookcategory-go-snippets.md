@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Outlook().MasterCategoriesById("outlookCategory-id").Get(context.Background(), nil)
+result, err := graphClient.Me().Outlook().MasterCategories().ByMasterCategorieId("outlookCategory-id").Get(context.Background(), nil)
 
 
 ```

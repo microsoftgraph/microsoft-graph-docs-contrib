@@ -36,7 +36,7 @@ authenticationConfiguration := graphmodels.New()
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").AccessPackageCustomWorkflowExtensions().Post(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageCustomWorkflowExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

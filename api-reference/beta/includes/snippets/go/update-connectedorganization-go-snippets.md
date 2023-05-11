@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 state := graphmodels.CONFIGURED_CONNECTEDORGANIZATIONSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

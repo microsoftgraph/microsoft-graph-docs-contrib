@@ -22,7 +22,7 @@ configuration := &graphconfig.IdentityGovernanceEntitlementManagementAssignmentI
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentsById("accessPackageAssignment-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().ByAssignmentId("accessPackageAssignment-id").Get(context.Background(), configuration)
 
 
 ```

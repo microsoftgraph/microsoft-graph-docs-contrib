@@ -24,7 +24,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AppRoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

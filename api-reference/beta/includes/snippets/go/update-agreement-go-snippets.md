@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired) 
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById("agreement-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

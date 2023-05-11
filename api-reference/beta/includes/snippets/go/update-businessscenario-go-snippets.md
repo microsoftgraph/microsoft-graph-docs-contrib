@@ -23,7 +23,7 @@ ownerAppIds := []string {
 }
 requestBody.SetOwnerAppIds(ownerAppIds)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

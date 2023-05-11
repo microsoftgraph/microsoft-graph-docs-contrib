@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.ProgramsById("program-id").Delete(context.Background(), nil)
+graphClient.Programs().ByProgramId("program-id").Delete(context.Background(), nil)
 
 
 ```

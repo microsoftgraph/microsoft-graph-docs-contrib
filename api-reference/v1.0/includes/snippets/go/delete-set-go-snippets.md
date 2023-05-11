@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.SitesById("site-id").TermStore().SetsById("set-id").Delete(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").TermStore().Sets().BySetId("set-id").Delete(context.Background(), nil)
 
 
 ```

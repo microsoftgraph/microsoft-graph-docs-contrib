@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.GroupsById("group-id").RejectedSenders().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").RejectedSenders().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

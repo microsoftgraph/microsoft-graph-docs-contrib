@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Identity().B2cUserFlowsById("b2cIdentityUserFlow-id").UserFlowIdentityProvidersById("identityProviderBase-id").Patch(context.Background(), requestBody, nil)
+graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").UserFlowIdentityProviders().ByUserFlowIdentityProviderId("identityProviderBase-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

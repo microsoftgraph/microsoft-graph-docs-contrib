@@ -29,7 +29,7 @@ requestBody.SetHostOnly(&hostOnly)
 comment := "Updating source environment."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteListsById("browserSiteList-id").SharedCookiesById("browserSharedCookie-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").SharedCookies().BySharedCookieId("browserSharedCookie-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

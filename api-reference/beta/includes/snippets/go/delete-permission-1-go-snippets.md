@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").PermissionsById("permission-id").Delete(context.Background(), nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Permissions().ByPermissionId("permission-id").Delete(context.Background(), nil)
 
 
 ```

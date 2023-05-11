@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").PermissionsById("permission-id").Get(context.Background(), nil)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Permissions().ByPermissionId("permission-id").Get(context.Background(), nil)
 
 
 ```
