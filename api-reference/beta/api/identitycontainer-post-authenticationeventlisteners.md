@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and an [authent
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to create a onTokenIssuanceStartListener.
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_from_"
@@ -70,17 +70,24 @@ Content-Type: application/json
 Content-length: 312
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+                }
+            ]
+        }
+    },
+    "priority": 500,
+    "handler": {
+        "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+        "customExtension": {
+            "id": "6fc5012e-7665-43d6-9708-4370863f4e6e"
+        }
     }
-  ],
-  "authenticationEventsFlowId": "String"
 }
 ```
 
@@ -99,18 +106,27 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+    "id": "990d94e5-cc8f-4c4b-97b4-27e2678aac28",
+    "priority": 500,
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+                }
+            ]
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+        "customExtension": {
+            "id": "6fc5012e-7665-43d6-9708-4370863f4e6e"
+        }
     }
-  ],
-  "authenticationEventsFlowId": "String"
 }
 ```
 
