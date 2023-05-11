@@ -17,14 +17,6 @@ Custom extension to invoke when handling an onTokenIssuanceStart event.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onTokenIssuanceStartCustomExtensions](../api/ontokenissuancestartcustomextension-list.md)|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) collection|Get a list of the [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) objects and their properties.|
-|[Get onTokenIssuanceStartCustomExtension](../api/ontokenissuancestartcustomextension-get.md)|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|Read the properties and relationships of an [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) object.|
-|[Update onTokenIssuanceStartCustomExtension](../api/ontokenissuancestartcustomextension-update.md)|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|Update the properties of an [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) object.|
-|[Delete onTokenIssuanceStartCustomExtension](../api/ontokenissuancestartcustomextension-delete.md)|None|Deletes an [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) object.|
-|[validateAuthenticationConfiguration](../api/ontokenissuancestartcustomextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|

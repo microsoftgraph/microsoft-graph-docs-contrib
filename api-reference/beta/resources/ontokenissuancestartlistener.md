@@ -17,13 +17,6 @@ A listener for the onTokenIssuanceStart event.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onTokenIssuanceStartListeners](../api/ontokenissuancestartlistener-list.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) collection|Get a list of the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) objects and their properties.|
-|[Get onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-get.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Read the properties and relationships of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|
-|[Update onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-update.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|
-|[Delete onTokenIssuanceStartListener](../api/ontokenissuancestartlistener-delete.md)|None|Deletes an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object.|
 
 ## Properties
 |Property|Type|Description|
