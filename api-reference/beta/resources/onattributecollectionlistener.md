@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionListener resource type"
-description: "Represents a step in a multi-event policy defining what happens when attributes are ready to be collected from the user"
+description: "Listener for the onAttributeCollection event"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

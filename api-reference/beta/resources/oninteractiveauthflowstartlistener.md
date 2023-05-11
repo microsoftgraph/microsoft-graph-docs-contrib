@@ -1,6 +1,6 @@
 ---
 title: "onInteractiveAuthFlowStartListener resource type"
-description: "Represents a step in a multi-event policy defining what happens when an authentication flow is ready to be initiated"
+description: "Listener for the onInteractiveAuthFlowStart event"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

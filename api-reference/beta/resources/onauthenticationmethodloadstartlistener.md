@@ -1,6 +1,6 @@
 ---
 title: "onAuthenticationMethodLoadStartListener resource type"
-description: "Represents a step in a multi-event policy defining what happens when authentication methods are ready to be presented"
+description: "Listener for the onAuthenticationMethodLoadStart event"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

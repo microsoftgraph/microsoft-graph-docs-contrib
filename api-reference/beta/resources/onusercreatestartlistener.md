@@ -1,6 +1,6 @@
 ---
 title: "onUserCreateStartListener resource type"
-description: "Represents a step in a multi-event policy defining what happens during user creation"
+description: "Listener for the onUserCreateStart event"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
