@@ -24,19 +24,19 @@ The landing page of the Microsoft Graph Data Connect applications portal is an a
 
 You will find both Single-tenant applications and Multi-tenant applications. 
 
-    - Single-tenant applications: Applications that are homed in the your tenant and require access to data from your tenant. These are typically enterprise scenarios.  
+1. Single-tenant applications: Applications that are homed in the your tenant and require access to data from your tenant. These are typically enterprise scenarios.  
 
-    - Multi-tenant applications: Applications that are homed in another tenant and require access to data from your tenant. These are typically ISV scenarios. Reviews these apps extra carefully as consenting to such apps can enable data from your tenant being moved to the app developer’s tenant.
+2. Multi-tenant applications: Applications that are homed in another tenant and require access to data from your tenant. These are typically ISV scenarios. Reviews these apps extra carefully as consenting to such apps can enable data from your tenant being moved to the app developer’s tenant.
 
 All single-tenant apps will be populated in the table by default. Only approved, denied or expired multi-tenant apps will be included in the table. You may find apps with the following statuses in the table:
 
-    - Pre-consent: App that have not been acted upon yet. This status is only possible for Single-tenant apps. Apps in this state will always fail at runtime. 
+1. Pre-consent: App that have not been acted upon yet. This status is only possible for Single-tenant apps. Apps in this state will always fail at runtime. 
 
-    - Approved: App that an admin has approved to access M365 data for your tenant.
+2. Approved: App that an admin has approved to access M365 data for your tenant.
 
-    - Denied: App that an admin has denied to access M365 data for your tenant. Apps in this state will always fail at runtime.
+3. Denied: App that an admin has denied to access M365 data for your tenant. Apps in this state will always fail at runtime.
 
-    - Expired: App that an admin has approved to access M365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
+4. Expired: App that an admin has approved to access M365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
 
 # Application Details View
 
