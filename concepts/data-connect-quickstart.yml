@@ -36,17 +36,12 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
  
-  - title: Set up your Azure Data Factory resource
+  - title: Set up your Azure resource with Azure Synapse or Azure Data Factory
     durationInMinutes: 15
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
 
-  - title: Set up your Azure Data Synapse resource
-    durationInMinutes: 15
-    content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
-
-  - title: Monitor data consent requests with Microsoft 365 Admin Center or PowerShell
+  - title: Microsoft Graph Data Connect Application Consent Overview 
     durationInMinutes: 5
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
