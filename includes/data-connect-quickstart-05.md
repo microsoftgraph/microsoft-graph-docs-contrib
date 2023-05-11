@@ -10,7 +10,7 @@ As a pre-requisite, Microsoft Graph Data Connect should be enabled in your tenan
 
 ### Provide details for the Registration Info tab 
 
-1. Access [Microsoft Graph Data Connect in the Azure portal](aka.ms/mgdcinazure). Moving forward, the experience will be available through the search bar in the [Azure portal](https://portal.azure.com/)
+1. Access [Microsoft Graph Data Connect in the Azure portal](https://aka.ms/mgdcinazure). Moving forward, the experience will be available through the search bar in the [Azure portal](https://portal.azure.com/)
 
 2. Click the "Add" or the "Add a new application" button 
 
