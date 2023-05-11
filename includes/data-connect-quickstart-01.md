@@ -34,11 +34,10 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
 
    - If you don't have a Microsoft 365 tenant, you can get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). The Microsoft 365 Developer Program sandbox subscription provides:
    - Multiple Microsoft 365 users with emails sent and received.
-   - Access to atleast two user accounts, one that is a global administrator account who can access the
-      -  Please ensure you have access to two different accounts in this tenant. One that acts as a developer who can create and trigger a test application and pipelines. The other one should have a **Global Administrator** role assigned and can access to the [Microsoft 365 admin center](https://admin.microsoft.com/) specifically to approve the test application.  
-      > [!NOTE]
-      > You cannot approve your own test application on the same account so please ensure you have another member (or account) in your tenant acting as a global admin.
-      - Please take note of the M365 region where your tenant is located. If creating a new tenant, ensure it is one of the [regions supported by MGDC](https://learn.microsoft.com/en-us/graph/data-connect-datasets#regions). 
+    - A "developer" account that can create and trigger a test application and pipelines. 
+      - An "admin" account that can access the [Microsoft 365 admin center](https://admin.microsoft.com/), specifically to approve the test application.  
+      >**Note:**  You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
+   - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
      
 2. **Microsoft Azure subscription**
 
