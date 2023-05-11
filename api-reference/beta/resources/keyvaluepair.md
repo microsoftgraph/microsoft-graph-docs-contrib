@@ -30,12 +30,12 @@ Key-value pair for action parameters. The configuration of this resource is shar
 
 | Property | Possible values |
 |:-|:-|
-| AllowDefaultEntitlement |  We will allow provisioning for users that just have msiam_access entitlement grant. |
-| AzureIngestionAttributeOptimization | A boolean value for enabling an optimization for incremental sync when the amount of users managed is in the hundreds of thousands. |
-| LookaheadQueryEnabled |  For inbound scenario, this is for looking ahead in the source directory to see the deletes that are going to occur. This is related to the early terminations scenario in Workday.|
-| LookaheadQueryIntervalValue | The interval we want to lookback relating to the above flag. |
-| QuarantineTooManyDeletes | A boolean value of whether we want to quarantine a RunProfile if more than a certain number of deletes occur within a period of time. |
-| QuarantineTooManyDeletesThreshold | The number of deletes for the quarantine to trigger for the above flag. |
+| AllowDefaultEntitlement |  The service will provision users that only have the `msiam_access` entitlement grant. |
+| AzureIngestionAttributeOptimization | A boolean value for enabling an optimization for incremental sync when the number of users managed is in the hundreds of thousands. |
+| LookaheadQueryEnabled |  For inbound scenarios, investigates the source directory for deletes that will be carried out. This is related to the early termination scenario in Workday.|
+| LookaheadQueryIntervalValue | The interval for the lookback investigation relating to `LookaheadQueryEnabled`. |
+| QuarantineTooManyDeletes | A Boolean value that defines whether to quarantine a _RunProfile_ if more than a certain number of deletes occur within a period. |
+| QuarantineTooManyDeletesThreshold | The number of deletes for the quarantine to trigger `QuarantineTooManyDeletes`. |
 
 ### Supported by Lifecycle Workflows tasks
 
