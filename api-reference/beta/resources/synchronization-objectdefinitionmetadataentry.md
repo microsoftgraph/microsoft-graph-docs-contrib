@@ -24,13 +24,13 @@ Metadata for the given object.
 ### Supported key value pairs
 | Key	   |Value|
 |:---------------|:----------|
-|PropertyNameAccountEnabled| This is the name of the property for indicating the object is enabled. |
-|PropertyNameSoftDeleted | This is the name of the property for indicating the object is soft-deleted.  |
-|IsSoftDeletionSupported  |This flag indicates whether the object supports soft-deletion.  |
-|IsSynchronizeAllSupported |This flag indicates whether the object supports SyncAll. |
-|ConnectorDataStorageRequired |This flag indicates whether this object requires mapping storage. We need mapping storage for types that will be mapped, like User and Group. Some objects, such as CostCenter may be customer-defined so that the sync engine can lookup User.costCenter in a CostCenter table, but we will not store mappings for the CostCenter object type since it won't be directly exported.  |
-|Extensions  |A JSON containing a list of attributes and values that extends the base object this object inherits from.  |
-|BaseObjectName |If this object inherits another object, this is the name of the base object being inherited from.  |
+|PropertyNameAccountEnabled| Indicates that the object is enabled. |
+|PropertyNameSoftDeleted | Indicates that the object is soft-deleted.  |
+|IsSoftDeletionSupported  |Indicates whether the object supports soft deletion.  |
+|IsSynchronizeAllSupported |Indicates whether the object supports `SyncAll`. |
+|ConnectorDataStorageRequired |Indicates whether this object requires mapping storage. The service stores mapping for properties of types that will be mapped, like User and Group.  |
+|Extensions  |A JSON containing a list of attributes and values that extends the base object that this object inherits from.  |
+|BaseObjectName |If this object inherits another object, this is the name of the parent base object.  |
 
 ## JSON representation
 
