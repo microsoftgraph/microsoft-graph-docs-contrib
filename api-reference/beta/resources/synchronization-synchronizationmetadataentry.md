@@ -24,15 +24,15 @@ Metadata for the given object.
 ### Supported key value pairs
 | Key	   |Value|
 |:---------------|:----------|
-|GalleryApplicationIdentifier|The GUID that represents this enterprise application in Azure.   |
-|GalleryApplicationKey | The name that represents this enterprise application in Azure (same value as the factoryTag attribute within the synchronizationTemplate resource type).   |
-|IsOAuthEnabled  |This flag indicates whether OAuth is enabled for this synchronization job's application.  |
-|IsSynchronizationAgentAssignmentRequired |This flag indicates whether to display certain UI elements applicable only during synchronization that requires an on-premises agent.  |
-|IsSynchronizationAgentRequired |This flag indicates whether an on-premises synchronization agent is required for this synchronization job. |
-|IsSynchronizationInPreview  |This flag indicates whether provisioning for this enterprise application is in GA or not.  |
+|GalleryApplicationIdentifier|The GUID that represents this enterprise application in Azure AD.   |
+|GalleryApplicationKey | The name that represents this enterprise application in Azure AD (same value as the factoryTag attribute within the synchronizationTemplate resource type).   |
+|IsOAuthEnabled  |Indicates whether OAuth is enabled for this synchronization job's application.  |
+|IsSynchronizationAgentAssignmentRequired |Indicates whether to display certain UI elements applicable only during synchronization that requires an on-premises agent.  |
+|IsSynchronizationAgentRequired |Indicates whether an on-premises synchronization agent is required for this synchronization job. |
+|IsSynchronizationInPreview  |Indicates whether provisioning for this enterprise application is in GA or not.  |
 |OAuthSettings |A JSON containing values necessary for OAuth authentication, such as the Token Exchange URI and Client Identifier.  |
-|SynchronizationLearnMoreIbizaFwLink |The documentation link to be displayed in Azure Portal.  |
-|ConfigurationFields |A JSON containing the textbox configuration names displayed in Azure Portal. |
+|SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in Azure Portal.  |
+|ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Azure Portal. |
 
 ## JSON representation
 
