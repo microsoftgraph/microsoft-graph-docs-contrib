@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {          
           "Id": "48004467-2fa8-4cd8-959f-88616321cf4b",
           "ApiChange": "Resource",
           "ChangedApiName": "customAppScope",
