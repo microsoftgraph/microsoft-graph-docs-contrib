@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/WindowsUpdatesUnenrollAssetsById"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/MicrosoftGraphWindowsUpdatesUnenrollAssetsById"
 	  //other-imports
 )
 
@@ -28,7 +28,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().WindowsUpdatesUnenrollAssetsById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().MicrosoftGraphWindowsUpdatesUnenrollAssetsById().Post(context.Background(), requestBody, nil)
 
 
 ```

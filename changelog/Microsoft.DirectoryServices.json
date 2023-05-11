@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "afc883f0-3a47-4e02-bcb1-3c7be4a5cdf2",
           "ApiChange": "Property",
           "ChangedApiName": "tenantType",
@@ -20,7 +38,7 @@
     },
     {
       "ChangeList": [
-        {
+        {          
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
