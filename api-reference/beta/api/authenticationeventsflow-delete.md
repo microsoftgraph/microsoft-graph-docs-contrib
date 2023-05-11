@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID.
-
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently delete an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
+Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID. Only [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object types are available.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,9 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.Read.All, EventListener.ReadWrite.All|
 |Application|EventListener.Read.All, EventListener.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-<ul><li>Global Administrator
-<li>External ID user flow administrator</ul>
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
 ## HTTP request
 
@@ -75,4 +71,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

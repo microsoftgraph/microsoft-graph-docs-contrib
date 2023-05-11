@@ -1,5 +1,5 @@
 ---
-title: "List identity provider for an External Identities user flow"
+title: "List identityProviders (in a user flow)"
 description: "List identity provider for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
@@ -7,13 +7,12 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List identityProvider
+# List identityProviders (in a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the identity providers for an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
-
+Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
 
+[!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
+GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
 ```
 
 ## Request headers
@@ -48,14 +49,13 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body. 
 
-## Example
-Add Google as identity provider option for account creation.
+## Examples
 
 #### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "list_OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityProviders"
 }
 -->
 ``` http
@@ -63,17 +63,18 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authent
 
 ```
 
-
 #### Response
 The following is an example of the response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.identityProviderBase)"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.identityProviderBase)",
     "value": [
@@ -94,6 +95,4 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
-

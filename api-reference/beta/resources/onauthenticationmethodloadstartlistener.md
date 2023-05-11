@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAuthenticationMethodLoadStart** event. Used for configuring whether the authentication flow allows for sign up. If listener is not specified, the default option will be Email One Time Passcode.
-
+Used for configuring whether the authentication flow allows for sign up as defined in the **onAuthenticationMethodLoadStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. If this listener is not specified, the default option will be email one time passcode (OTP).
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

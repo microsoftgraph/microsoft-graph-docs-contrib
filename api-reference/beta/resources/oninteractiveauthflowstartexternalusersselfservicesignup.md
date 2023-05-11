@@ -1,6 +1,6 @@
 ---
 title: "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for the starting step of an external identities user flow"
+description: "Managed handler for the starting authentication step of an external identities user flow."
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a 'managed' handler for the starting step in an external identities user flow on an AD workforce or customer tenant.  It defines whether a user can sign up, i.e. create an account. (Otherwise, a user will only be able to sign-in.)
+This is a managed handler for the starting authentication step in an external identities user flow on an Azure AD workforce or customer tenant. It defines whether a user can sign up, that is create an account; otherwise, a user will is only able to sign-in.
 
-Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md). Complex type.
+Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSignUpAllowed|Boolean|Optional.  Specifes whether authentication flow includes option to sign up (create account) as well as sign in. Default value is false.|
+|isSignUpAllowed|Boolean|Optional. Specifes whether the authentication flow includes an option to sign up (create account) as well as sign in. Default value is `false` meaning only sign in is enabled.|
 
 ## Relationships
 None.

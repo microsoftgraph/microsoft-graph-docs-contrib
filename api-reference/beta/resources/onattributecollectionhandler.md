@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionHandler resource type"
-description: "Represents a step in a multi-event policy defining what happens when attributes are ready to be collected from the user"
+description: "Represents a step in a multi-event user flow policy defining what happens when attributes are ready to be collected from the user."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a base/abstract class for configuring what to invoke if the onAttributeCollectionHandler event resolves to this listener. Represents a step in a multi-event policy that defines what happens when when attributes are ready to be collected from the user.
+Used to configure what to invoke if the onAttributeCollectionHandler event resolves to this listener. Represents a step in a multi-event policy that defines what happens when when attributes are ready to be collected from the user.
 
 This is an abstract complex type from which the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md) subtype is derived.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
 None.

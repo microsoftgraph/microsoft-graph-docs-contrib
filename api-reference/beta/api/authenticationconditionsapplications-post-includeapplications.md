@@ -1,5 +1,5 @@
 ---
-title: "Add application to an External Identities user flow"
+title: "Add includeApplication (to a user flow)"
 description: "Add application to an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add application to user flow
+# Add includeApplication (to a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add (link) an application to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource (user flow). This enables the authentication experience defined by the user flow to be enabled for the application.  Note: an application can only be linked to one user flow.
+Add or link an application to an external identities self-service sign up user flow that's represented bby an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
 
 
 ## Permissions
@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EventListener.ReadWrite.All|
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
+
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
 ## HTTP request
 
@@ -41,8 +43,7 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
-
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) that you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Response
 
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
 {
     "@odata.type": "#microsoft.graph.authenticationConditionApplication",
     "appId": "{application-id}"
@@ -71,7 +72,8 @@ POST https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authen
 The following is an example of the response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationConditionApplication"
 }
 -->
 ``` http

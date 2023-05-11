@@ -1,6 +1,6 @@
 ---
 title: "authenticationAttributeCollectionPage resource type"
-description: "Represents the Attribute Collection page that is part of a self-service user flow for external identities"
+description: "Represents the attribute collection page that is part of a self-service user flow for external identities."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Attribute Collection page that is part of a self-service user flow for external identities.
+Represents the attribute collection page that is part of a self-service user flow for external identities.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |customStringsFileId|String|**TODO: Add Description**|
-|views|[authenticationAttributeCollectionPageViewConfiguration](../resources/authenticationattributecollectionpageviewconfiguration.md) collection|A collection of displays of the Attribute Collection page.|
+|views|[authenticationAttributeCollectionPageViewConfiguration](../resources/authenticationattributecollectionpageviewconfiguration.md) collection|A collection of displays of the attribute collection page.|
 
 ## Relationships
 None.

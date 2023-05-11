@@ -1,6 +1,6 @@
 ---
 title: "authenticationEventsFlow resource type"
-description: "An abstract  entity that represents a multi-event policy used to orchestrate an authentication flow"
+description: "An abstract entity that represents a multi-event policy used to orchestrate an authentication flow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that represents a multi-event policy.  In other words, it holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This is a management level for the atomic authenticationEventListener that allows for managing of multiple listeners under the same priority and condition set. This provides a better managed view of checking which event listeners will be executed under a certain circumstance.
+Entity that represents a multi-event policy, that is, a user flow. In other words, it holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This is a management level for the atomic authenticationEventListener that allows for managing of multiple listeners under the same priority and condition set. This provides a better managed view of checking which event listeners will be executed under a certain circumstance.
 
 If no handler is set for an event, then this policy will not affect that event in any authentication, i.e. no listener will be created for that event.
 
 Additionally, this entity will work as an orchestration step for the various event listeners it manages. For each event listener managed by the entity, it will create, modify, or delete the event listener accordingly. This means on creation time, it will create multiple event listeners and handle any rollback scenarios for any failing requests.
 
-Only one type of authenticationEventsFlow is currently defined, namely [externalusersselfservicesignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), which inherits from authenticationEventsFlow. 
+This is an abstract type from which the [externalusersselfservicesignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is derived.
 
-This is an abstract type that inherits from [entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|

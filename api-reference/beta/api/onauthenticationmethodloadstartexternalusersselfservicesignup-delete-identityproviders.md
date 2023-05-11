@@ -1,18 +1,18 @@
 ---
-title: "Remove an Application from an External Identities user flow"
-description: "Remove an Application from an externalusersselfservicesignupeventsflow."
+title: "Remove identityProvider (from a user flow)"
+description: "Remove an identity provider from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Remove application from user flow
+# Remove identityProvider (from a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove (unlink) an application from an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource (user flow).  Note: an application can only be linked to one user flow.
+Remove an identity provider from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
 
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/{application-id}
+DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
 ```
 
 ## Request headers
@@ -42,24 +44,21 @@ DELETE https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{auth
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
-Remove Facebook as identity provider option for account creation.
 
 #### Request
-The following is an example of a request.
+The following is an example of a request that removes Facebook as an identity provider option for account creation.
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "delete_OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityProviders"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/{application-id}
-
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
 
 
@@ -72,6 +71,5 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-
 ```
 

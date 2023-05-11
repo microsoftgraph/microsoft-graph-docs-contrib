@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAttributeCollection** event. Used for configuring the collection of attributes during user sign up. This includes which attributes to collect, and how to display them.
-
+Used for configuring the collection of attributes during user sign up as defined in the **onAttributeCollection** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. This includes which attributes to collect and how to display them.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

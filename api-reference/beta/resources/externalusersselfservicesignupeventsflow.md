@@ -1,6 +1,6 @@
 ---
 title: "externalUsersSelfServiceSignUpEventsFlow resource type"
-description: "Represents a self-service user flow for external identities"
+description: "Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -15,36 +15,32 @@ Namespace: microsoft.graph
 
 Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant.
 
-A user flow is implemented as a multi-event policy executing the following events:
-onInteractiveAuthFlowStart
-onAuthentictionMethodLoadStart
-onAttributeCollection
-onUserCreateStart
+A user flow is implemented as a multi-event policy executing the specific events at specific points of user interaction.
 
-Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.md)
+Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties. There is no way to retrieve only the External Identities User Flows |
-|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an External Identities Self-Service-Sign-up User Flow|
-|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an External Identities Self-Service-Sign-up User Flow|
-|[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an External Identities Self-Service-Sign-up User Flow|
+|[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties.  |
+|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an external identities self-service sign-up user flow.|
+|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an external identities self-service sign-up user flow.|
+|[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an external identities self-service sign-up user flow|
 |[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an External Identities Self-Service-Sign-up User Flow|
-|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[Add linked applications](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[Remove linked applications](../api/authenticationconditionsapplications-delete-includeapplications.md)|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
+|[List identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an External Identities Self-Service-Sign-up User Flow|
+|[Add identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
+|[Remove identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
+|[List attributes](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow **TODO: should there also be a LIST attributes collectioninputconfigurations?**|
+|[Add an attribute](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
+|[Delete an attribute](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove a user flow attribute from an External Identities Self-Service-Sign-up User Flow|
+<!--|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
 |[Get listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
 |[Create listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
 |[Update listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Get linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[Add linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[Remove linked applications]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[List identity providers](../api/authenticationeventsflow-list-identityProviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an External Identities Self-Service-Sign-up User Flow|
-|[Add identity providers](../api/authenticationeventsflow-post-identityProviders.md)|None|Add Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
-|[Remove identity providers](../api/authenticationeventsflow-delete-identityProviders.md)|None|Remove Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
-|[List attributes](../api/authenticationeventsflow-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow **TODO: should there also be a LIST attributes collectioninputconfigurations?**|
-|[Add an attribute](../api/authenticationeventsflow-post-attributes.md)|None|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
-|[Delete an attribute](../api/authenticationeventsflow-delete-attributes.md)|None|Remove a user flow attribute from an External Identities Self-Service-Sign-up User Flow|
+|[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|-->
 
 ## Properties
 |Property|Type|Description|
@@ -52,7 +48,7 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Required. The display name for the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |description|String|Optional. The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which will be used to decide whether the events policy will be invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|

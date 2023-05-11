@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [authenticationEventsFlow](../resources/authenticationeventsflow.md) object that is of the type specified in the request body.
-
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently create an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
+Create a new [authenticationEventsFlow](../resources/authenticationeventsflow.md) object that is of the type specified in the request body. You can create only an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,9 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
 
-The account needs to belong to one of the following roles:
-<ul><li>Global Administrator
-<li>External ID user flow administrator</ul>
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
 ## HTTP request
 
@@ -46,32 +42,37 @@ POST /identity/authenticationEventsFlows
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.
+In the request body, supply a JSON representation of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object.
 
-### externalUsersSelfServiceSignupEventsFlow object
-
-You can specify the following properties when creating an **authenticationEventsFlow**.
+You can specify the following properties when creating an **authenticationEventsFlow**. You must include the **@odata.type** property with a value of the specific user flow type in the body. For example, `"@odata.type": "#microsoft.graph.externalUsersSelfServiceSignupEventsFlow"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Required. The display name for the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|description|String|Optional. The description of the events policy.Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**Optional?**. The conditions representing the context of the authentication request which will be used to decide whether the events policy will be invoked.Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|displayName|String|Required. The display name for the events policy. Must be unique.|
+|description|String|Optional. The description of the events policy.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**Optional?**. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked.|
+|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke for the onInteractiveAuthFlowStart event.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke for the onAuthenticationMethodLoadStart event.|
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. The configuration for what to invoke for the onAttributeCollection event.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
 
-
 ## Response
 
-If successful, this method returns a `201 Created` response code and a JSON representation of an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a JSON representation of an [authenticationEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object in the response body. An **@odata.type** property with the value of the specific user flow type created is included in the response body. For example, `"@odata.type": "#microsoft.graph.externalUsersSelfServiceSignupEventsFlow"`.
 
-## Example 1: Create a basic External Identities Sign-up/Sign-in User Flow on an AD customer tenant 
+## Examples
 
-### Request
-The following is an example of a request.  In this example, the user flow created is named "Woodgrove User Flow" and is set up to (1) allow sign up and sign in, (2) allow users to create a local Email with Password account, and (3) collect Display Name (built-in attribute).  The user flow definition also includes how the attributes to be collected will be displayed.
+### Example 1: Create a basic External Identities sign-up and sign-in user flow on an Azure AD customer tenant
+
+#### Request
+The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
+
+- Allow sign up and sign in.
+- Allow users to create a local email with password account.
+- Collect the **Display Name** built-in attribute from the user.
+- Defines how the attributes to be collected will be displayed to the user.
+
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventsflow_from_"
@@ -147,7 +148,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -224,13 +225,20 @@ Content-Type: application/json
     }
 }
 ```
-## Example 2: Create an External Identities Sign-up/Sign-in User Flow with Social Providers and a custom attribute
 
-### Request
-The following is an example of a request.  In this example, the user flow created is named "Woodgrove Drive User Flow" and is set up to (1) allow sign up and sign in, (2) allow users to create a local Email with Password account, or authenticate with Google or Facebook, and (3) collect Display Name (built-in attribute) and Favorite Color (custom attribute).
+### Example 2: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
+
+#### Request
+
+The following is an example of a request. In this example, you create a user flow named "Woodgrove Drive User Flow" with the following configuration
+
+- Allow sign up and sign in.
+- Allow users to create a local email with password account, or authenticate with Google or Facebook
+- Collect the **Display Name** built-in attribute and a **Favorite Color** custom attribute.
+
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventsflow_from_"
+  "name": "create_authenticationeventsflow_socialproviders_customattribute"
 }
 -->
 ``` http
@@ -326,7 +334,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

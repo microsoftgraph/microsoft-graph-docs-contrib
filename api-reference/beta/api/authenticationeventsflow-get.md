@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. In other words, list all authentication events policies.
-
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently retrieve an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
+Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. Only [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object types are available.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,9 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.Read.All, EventListener.ReadWrite.All|
 |Application|EventListener.Read.All, EventListener.ReadWrite.All|
 
-The account needs to belong to one of the following roles:
-<ul><li>Global Administrator
-<li>External ID user flow administrator</ul>
+[!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
 
 ## HTTP request
 
@@ -52,12 +48,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object in the response body.
 
-## Example: Retrieve a specific External Identities User Flow
+## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to retrieve a specific External Identities user flow.
 <!-- {
   "blockType": "request",
   "name": "get_authenticationeventsflow"
@@ -69,7 +65,12 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 
 
 ### Response
-The following is an example of the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to (1) allow users to create a local Email with Password account, or sign up with their Google or Facebook identity, (2) collect Display Name and Favorite Color, and (3) create Member user type.
+The following is an example of the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:
+
+- Allow users to create a local email with password account, or sign up with their Google or Facebook identity
+- Collect **Display Name** and **Favorite Color**
+- Create a "Member" user type.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
 title: "onUserCreateStartHandler resource type"
-description: "Represents a step in a multi-event policy defining what happens during user creation"
+description: "Represents a step in a multi-event user flow policy defining what happens during user creation."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a base/abstract class for configuring what to invoke if the onUserCreateStartHandler event resolves to this listener. It represents a step in a multi-event policy that defines what happens during user creation.
+Used to configure what to invoke if the onUserCreateStartHandler event resolves to this listener. It represents a step in a multi-event policy that defines what happens during user creation.
 
 This is an abstract complex type from which the [onUserCreateStartExternalUsersSelfServiceSignUp](../resources/onusercreatestartexternalusersselfservicesignup.md) subtype is derived.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
 None.

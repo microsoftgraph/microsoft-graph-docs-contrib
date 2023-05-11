@@ -1,18 +1,19 @@
 ---
-title: "Add attribute to an External Identities user flow"
-description: "Add attribute to an externalusersselfservicesignupeventsflow."
+title: "Add attribute (to user flow)"
+description: "Add attribute to an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add attribute to user flow
+# Add attribute (to user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an attribute to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource, or External Identities Self-Service-Sign-up User Flow.  Custom and built-in attributes can be added to a user flow.
+Add an attribute to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. You can add both custom and built-in attributes to a user flow.
+
 This requires two calls – a PATCH to add the attribute followed by a POST to add how the attribute will be displayed for sign-up. **TODO: HOW TO REPRESENT BOTH CALLS?**
 
 
@@ -24,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EventListener.ReadWrite.All|
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
+
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
 ## HTTP request
 
@@ -47,30 +50,30 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md) object.
 
-The following table shows the properties that are required when you create the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md).
+In the request body, supply a JSON representation of the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onAttributeCollectionExternalUsersSelfServiceSignUp.md) object.
+
+You can specify the following properties when creating an **onAttributeCollectionExternalUsersSelfServiceSignUp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|Optional. A list of GUIDs referencing Entitlement Management [accessPackages](../resources/accesspackage.md) to check whether there are pending access requests for the specified user. Applicable only to user flows configured in Azure AD workforce tenant.**SHOULD BE HIDDEN**|
-|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign up experience defined by a user flow, or [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the Attribute Collection page.|
+|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign up experience defined by a user flow, or [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the attribute collection page.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
-Add city as attribute for account creation.
 
 #### Request
-The following is an example of a request.
+The following is an example of a request that adds city as an attribute for account creation.
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}
+
 {
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
     "onAttributeCollection": {
@@ -139,13 +142,13 @@ PATCH https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authe
 }```
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+
 {
     "@odata.id":"https://graph.microsoft.com/beta/identity/userFlowAttributes/city"
 } 
 
 ```
-
 
 #### Response
 The following is an example of the response
@@ -158,4 +161,3 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 
 ```
-

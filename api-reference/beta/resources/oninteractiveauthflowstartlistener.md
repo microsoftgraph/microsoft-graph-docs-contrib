@@ -1,6 +1,6 @@
 ---
 title: "onInteractiveAuthFlowStartListener resource type"
-description: "Listener for the onInteractiveAuthFlowStart event"
+description: "Listener for the onInteractiveAuthFlowStart event."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onInteractiveAuthFlowStart** event. Used for configuring whether the authentication flow allows for sign up. If this listener is not specified, then sign up will be disabled by default.
-
+Used for configuring whether the authentication flow allows for sign up as defined in the **onInteractiveAuthFlowStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. If this listener is not specified, then sign up is disabled by default.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

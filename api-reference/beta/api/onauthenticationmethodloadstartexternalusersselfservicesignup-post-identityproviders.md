@@ -1,18 +1,18 @@
 ---
-title: "Add identity provider for an External Identities user flow"
-description: "Add identity provider to an externalusersselfservicesignupeventsflow."
+title: "Add identityProvider (to a user flow)"
+description: "Add an identity provider to an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Add identityProvider
+# Add identityProvider (to a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an identity provider to an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
+Add an identity provider to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
 
 ## Permissions
@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EventListener.ReadWrite.All|
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
+
+[!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
 
 ## HTTP request
 
@@ -43,27 +45,25 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 ## Request body
 In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
-Add Google as identity provider option for account creation.
+## Examples
 
 #### Request
-The following is an example of a request.
+The following is an example of a request that adds Google as identity provider option for account creation.
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventsflow"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
-{
-    "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Google-OAUTH"
-}
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
 
+{
+    "@odata.id": "https://graph.microsoft.com/beta/identityProviders/Google-OAUTH"
+}
 ```
 
 

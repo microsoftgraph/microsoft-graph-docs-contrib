@@ -14037,40 +14037,40 @@ items:
               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows for Customer applications (preview)
+          - name: Self-service sign up user flows in Azure AD for customers (preview)
             items:
-            - name: Authentication events flow base
+            - name: Authentication events flow
               href: resources/authenticationeventsflow.md
             - name: Self-service sign up user flow
               href: resources/externalusersselfservicesignupeventsflow.md
-            - name: List
+            - name: List user flows
               href: api/identitycontainer-list-authenticationeventsflows.md
-            - name: Create
+            - name: Create user flow
               href: api/identitycontainer-post-authenticationeventsflows.md
-            - name: Get
+            - name: Get user flow
               href: api/authenticationeventsflow-get.md
-            - name: Update
+            - name: Update user flow
               href: api/authenticationeventsflow-update.md
-            - name: Delete
+            - name: Delete user flow
               href: api/authenticationeventsflow-delete.md
             - name: List applications
               href: api/authenticationeventsflow-list-applications.md
             - name: Add applications
-              href: api/authenticationeventsflow-post-applications.md
+              href: api/authenticationconditionsapplications-post-includeapplications.md
             - name: Remove applications
-              href: api/authenticationeventsflow-delete-applications.md              
+              href: api/authenticationconditionsapplications-delete-includeapplications.md              
             - name: List identity providers
-              href: api/authenticationeventsflow-list-identityProviders.md
+              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
             - name: Add identity provider
-              href: api/authenticationeventsflow-post-identityProviders.md
+              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
             - name: Remove identity provider
-              href: api/authenticationeventsflow-delete-identityProviders.md
+              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
             - name: List attributes
-              href: api/authenticationeventsflow-list-attributes.md
+              href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
             - name: Add attributes
-              href: api/authenticationeventsflow-post-attributes.md
+              href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
             - name: Remove attributes
-              href: api/authenticationeventsflow-delete-attributes.md    
+              href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md    
           - name: User flow attributes
             items:
             - name: User flow attribute

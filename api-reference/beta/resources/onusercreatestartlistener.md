@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onUserCreateStart** event. Used for configuring actions done during user creation.
-
+Used for configuring actions done during user creation as defined in the **onUserCreateStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

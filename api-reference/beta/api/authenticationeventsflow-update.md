@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object.
-
-Among the types of authentication events flow objects derived from [authenticationEventsFlow](../resources/authenticationeventsflow.md), you can currently update an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) resource.
+Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is supported.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EventListener.ReadWrite.All|
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
+
+
 
 ## HTTP request
 
@@ -42,36 +42,34 @@ PATCH /identity/authenticationEventsFlows/{authenticationEventsFlow-id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON object with one or more properties that need to be updated for a [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. 
-
-### externalUsersSelfServiceSignupEventsFlow
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must include the **@odata.type** property with a value of the specific user flow type in the body. For example, `"@odata.type": "#microsoft.graph.externalUsersSelfServiceSignupEventsFlow"`.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md).|
-|displayName|String|The display name for the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|description|String|The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which will be used to decide whether the events policy will be invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|id|String|The unique identifier for the entity. Read-only. |
+|displayName|String|The display name for the events policy. |
+|description|String|The description of the events policy.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. |
+|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke for the onAttributeCollection event.|
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
 
-
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
+## Examples
 
-Update the display name of a specific External Identities User Flow (i.e. authentication events policy), as well as the priority for all the listeners associated with the policy.
+### Example 1: Update the display name and priority of an authenticationEventsFlow
 
 #### Request
-The following is an example of a request.
+The following is an example of a request that updates the display name of a specific External Identities user flow ( an authentication event type), as well as the priority for all the listeners associated with the policy.
+
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventsflow"
@@ -98,7 +96,73 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-
 ```
 
+### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventsflow_onattributecollection"
+}
+-->
+```
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "attributeCollectionPage": {
+            "customStringsFileId": null,
+            "views": [
+                {
+                    "title": null,
+                    "description": null,
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        },
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
 
