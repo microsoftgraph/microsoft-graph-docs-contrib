@@ -19,12 +19,7 @@ Derived class of [authenticationEventListener](../resources/authenticationeventl
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onInteractiveAuthFlowStartListeners](../api/oninteractiveauthflowstartlistener-list.md)|[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) collection|Get a list of the [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) objects and their properties.|
-|[Get onInteractiveAuthFlowStartListener](../api/oninteractiveauthflowstartlistener-get.md)|[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)|Read the properties and relationships of an [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) object.|
-|[Update onInteractiveAuthFlowStartListener](../api/oninteractiveauthflowstartlistener-update.md)|[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)|Update the properties of an [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) object.|
-|[Delete onInteractiveAuthFlowStartListener](../api/oninteractiveauthflowstartlistener-delete.md)|None|Delete an [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) object.|
+**TODO: confirm that methods belong on the parent class, authenticationEventListener**
 
 ## Properties
 |Property|Type|Description|

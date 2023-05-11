@@ -14037,7 +14037,7 @@ items:
               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flow (multi-event policy) (preview)
+          - name: Self-service sign up user flows for Customer applications (preview)
             items:
             - name: Authentication events flow base
               href: resources/authenticationeventsflow.md

@@ -13,18 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAttributeCollection** event. Used for configuring the collection of attributes during user sign up. This includes which attributes to collect, how to display them, and API connectors for backwards compatiblity. **Is this still accurate that it includes API connectors?**
+Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAttributeCollection** event. Used for configuring the collection of attributes during user sign up. This includes which attributes to collect, and how to display them.
 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onAttributeCollectionListeners](../api/onattributecollectionlistener-list.md)|[onAttributeCollectionListener](../resources/onattributecollectionlistener.md) collection|Get a list of the [onAttributeCollectionListener](../resources/onattributecollectionlistener.md) objects and their properties.|
-|[Get onAttributeCollectionListener](../api/onattributecollectionlistener-get.md)|[onAttributeCollectionListener](../resources/onattributecollectionlistener.md)|Read the properties and relationships of an [onAttributeCollectionListener](../resources/onattributecollectionlistener.md) object.|
-|[Update onAttributeCollectionListener](../api/onattributecollectionlistener-update.md)|[onAttributeCollectionListener](../resources/onattributecollectionlistener.md)|Update the properties of an [onAttributeCollectionListener](../resources/onattributecollectionlistener.md) object.|
-|[Delete onAttributeCollectionListener](../api/onattributecollectionlistener-delete.md)|None|Delete an [onAttributeCollectionListener](../resources/onattributecollectionlistener.md) object.|
+**TODO: confirm that methods belong on the parent class, authenticationEventListener**
+
 
 ## Properties
 |Property|Type|Description|

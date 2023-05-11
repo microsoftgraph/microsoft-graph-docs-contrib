@@ -19,12 +19,7 @@ Derived class of [authenticationEventListener](../resources/authenticationeventl
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onUserCreateStartListeners](../api/onusercreatestartlistener-list.md)|[onUserCreateStartListener](../resources/onusercreatestartlistener.md) collection|Get a list of the [onUserCreateStartListener](../resources/onusercreatestartlistener.md) objects and their properties.|
-|[Get onUserCreateStartListener](../api/onusercreatestartlistener-get.md)|[onUserCreateStartListener](../resources/onusercreatestartlistener.md)|Read the properties and relationships of an [onUserCreateStartListener](../resources/onusercreatestartlistener.md) object.|
-|[Update onUserCreateStartListener](../api/onusercreatestartlistener-update.md)|[onUserCreateStartListener](../resources/onusercreatestartlistener.md)|Update the properties of an [onUserCreateStartListener](../resources/onusercreatestartlistener.md) object.|
-|[Delete onUserCreateStartListener](../api/onusercreatestartlistener-delete.md)|None|Delete an [onUserCreateStartListener](../resources/onusercreatestartlistener.md) object.|
+**TODO: confirm that methods belong on the parent class, authenticationEventListener**
 
 ## Properties
 |Property|Type|Description|

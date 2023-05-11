@@ -13,18 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAuthenticationMethodLoadStart** event. Used for configuring whether the authentication flow allows for sign up. If listener is not specified, the user can still login with the default email address option. **Is this still accurate? I think this listener is required.**
+Derived class of [authenticationEventListener](../resources/authenticationeventlistener.md) for the **onAuthenticationMethodLoadStart** event. Used for configuring whether the authentication flow allows for sign up. If listener is not specified, the default option will be Email One Time Passcode.
 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onAuthenticationMethodLoadStartListeners](../api/onauthenticationmethodloadstartlistener-list.md)|[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) collection|Get a list of the [onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) objects and their properties.|
-|[Get onAuthenticationMethodLoadStartListener](../api/onauthenticationmethodloadstartlistener-get.md)|[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md)|Read the properties and relationships of an [onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) object.|
-|[Update onAuthenticationMethodLoadStartListener](../api/onauthenticationmethodloadstartlistener-update.md)|[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md)|Update the properties of an [onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) object.|
-|[Delete onAuthenticationMethodLoadStartListener](../api/onauthenticationmethodloadstartlistener-delete.md)|None|Delete an [onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) object.|
+**TODO: confirm that methods belong on the parent class, authenticationEventListener**
 
 ## Properties
 |Property|Type|Description|
