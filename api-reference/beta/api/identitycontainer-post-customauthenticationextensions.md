@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [customAu
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to create an onTokenIssuanceStartCustomExtension.
 <!-- {
   "blockType": "request",
   "name": "create_customauthenticationextension_from_"
@@ -72,18 +72,29 @@ Content-Type: application/json
 Content-length: 468
 
 {
-  "@odata.type": "#microsoft.graph.customAuthenticationExtension",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "displayName": "onTokenIssuanceStartCustomExtension",
+    "description": "Fetch additional claims from custom user store",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    },
+    "claimsForTokenConfiguration": [
+        {
+            "claimIdInApiResponse": "DateOfBirth"
+        },
+        {
+            "claimIdInApiResponse": "CustomRoles"
+        }
+    ]
 }
 ```
 
@@ -102,19 +113,33 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.customAuthenticationExtension",
-  "id": "3491a8d6-eeb2-1414-e767-7e009163a6ed",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+    "displayName": "onTokenIssuanceStartCustomExtension",
+    "description": "Fetch additional claims from custom user store",
+    "clientConfiguration": null,
+    "behaviorOnError": null,
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+    },
+    "claimsForTokenConfiguration": [
+        {
+            "claimIdInApiResponse": "DateOfBirth"
+        },
+        {
+            "claimIdInApiResponse": "CustomRoles"
+        }
+    ]
 }
 ```
 
