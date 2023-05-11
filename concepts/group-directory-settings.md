@@ -1,6 +1,6 @@
 ---
-title: "Overview of group (directory) settings"
-description: "Use group (directory) settings to configure tenant-wide or object-specific settings in your tenant."
+title: "Overview of group settings"
+description: "Use group settings to configure tenant-wide or object-specific settings in your tenant."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: psaffaie, jodah
@@ -8,9 +8,9 @@ ms.localizationpriority: high
 ms.date: 06/08/2022
 ---
 
-# Overview of group (directory) settings
+# Overview of group settings
 
-Group settings (also called directory settings in `beta`) are a collection of settings that allow you to configure either tenant-wide or object-specific allowed behaviors for specific Azure AD objects like Microsoft 365 groups.
+Group settings (also called *directory settings* in `beta`) are a collection of settings that allow you to configure either tenant-wide or object-specific allowed behaviors for specific Azure AD objects like Microsoft 365 groups.
 
 There are eight groups of setting templates with each setting template including a collection of individual settings.
 + Group.Unified
