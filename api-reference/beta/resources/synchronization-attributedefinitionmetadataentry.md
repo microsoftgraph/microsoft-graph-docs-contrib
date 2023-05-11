@@ -24,15 +24,15 @@ Metadata for the given object.
 ### Supported key value pairs
 | Key	   |Value|
 |:---------------|:----------|
-|BaseAttributeName| If this attribute inherits another object, this is the name of the base attribute being inherited from.|
+|BaseAttributeName| If this attribute inherits from another object, this is the name of the base attribute.|
 |ComplexObjectDefinition | A JSON containing a list of objectDefinition and objectMapping objects that together define this complex attribute.  |
-|IsContainer |This flag indicates whether the attribute is a container of other entries. A group is a typical container. A "Container" is the generic notion of what a group does. |
+|IsContainer |This flag indicates whether the attribute is a container of other entries. A group is a typical container. A "container" is the generic notion of what a group does. |
 |IsCustomerDefined |This flag indicates whether this attributeDefinition was defined by the customer. |
-|IsDomainQualified |This flag indicates whether the attribute has a domain as suffix, such as userPrincipalName. |
-|LinkPropertyNames  |The specific attribute names that should be looked up from the linked object and added as a virtual property on current entry. |
-|LinkTypeName |The type names of the specific attribute names that should be lookded up from the linked object and added as a virtual property on current entry.  |
-|MaximumLength  |To designate a target attribute as only permitting a certain number of characters as a value. |
-|ReferencedProperty  |If this is a reference attribute, the property to which a reference refers.  |
+|IsDomainQualified |This flag indicates whether the attribute has a domain as the suffix, such as userPrincipalName. |
+|LinkPropertyNames  |The specific attribute names that should be looked up from the linked object and added as a virtual property on the current entry. |
+|LinkTypeName |The type names of the specific attribute names that should be looked up from the linked object and added as a virtual property on the current entry.  |
+|MaximumLength  |The maximum character length of the target attribute. |
+|ReferencedProperty  |If this is a reference attribute, the property that's referenced.  |
 
 ## JSON representation
 
