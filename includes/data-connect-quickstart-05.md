@@ -67,7 +67,7 @@ Once the Registration Info page is completed, it is time to specify the datasets
 
 3.	Switch to the **Security & privacy** tab and select the **Microsoft Graph Data Connect applications**.
 
-    ![Screenshot of admin page sample](../concepts/images/data-connect-register-app-7-new.png)
+    ![Screenshot of admin page sample](../concepts/images/data-connect-app-register-7.png)
 
 4.	You will land on the Microsoft Graph Data Connect applications portal. You should see the app you just registered with MGDC in the app summary table with the Status **Pre-consent**. 
 
