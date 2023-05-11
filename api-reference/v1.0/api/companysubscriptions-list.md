@@ -2,8 +2,8 @@
 title: "List companySubscriptions"
 description: "Get the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "arp19690"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

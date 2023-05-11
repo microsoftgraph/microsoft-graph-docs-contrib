@@ -2,8 +2,8 @@
 title: "Get companySubscriptions"
 description: "Get a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "arp19690"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /directory/subscriptions/{ocpSubscriptionId}
+GET /directory/subscriptions/f9c1ea2d-2c6e-4717-8c3b-7130812d70ba
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/subscriptions/{ocpSubscriptionId}
+GET https://graph.microsoft.com/beta/directory/subscriptions/f9c1ea2d-2c6e-4717-8c3b-7130812d70ba
 ```
 
 ### Response
