@@ -15,13 +15,6 @@ Namespace: microsoft.graph
 
 An object representing an application condition which will trigger an authenticationEventListener.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List authenticationConditionApplications](../api/authenticationconditionapplication-list.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|Get a list of the [authenticationConditionApplication](../resources/authenticationconditionapplication.md) objects and their properties.|
-|[Get authenticationConditionApplication](../api/authenticationconditionapplication-get.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md)|Read the properties and relationships of an [authenticationConditionApplication](../resources/authenticationconditionapplication.md) object.|
-|[Update authenticationConditionApplication](../api/authenticationconditionapplication-update.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md)|Update the properties of an [authenticationConditionApplication](../resources/authenticationconditionapplication.md) object.|
-|[Delete authenticationConditionApplication](../api/authenticationconditionapplication-delete.md)|None|Deletes an [authenticationConditionApplication](../resources/authenticationconditionapplication.md) object.|
 
 ## Properties
 |Property|Type|Description|
