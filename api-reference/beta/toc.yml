@@ -14007,7 +14007,7 @@ items:
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows in Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
