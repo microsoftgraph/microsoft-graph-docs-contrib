@@ -33,8 +33,8 @@ The result of a Cloud PC Azure network connection health check.
 |endDateTime|DateTimeOffset|The end time of the health check item. Read-only.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|The type of error that occurred during this health check.|
 |recommendedAction|String|The recommended action to fix the corresponding error.|
-|correlationId|String|The unique identifier of the health check item related activities. This correlationId could help support team to troubleshoot.|
 |additionalDetails|String|Additional details about the health check or the recommended action.|
+|correlationId|String|The unique identifier of the health check item related activities. This correlationId could help support team to troubleshoot.|
 
 ### cloudPcOnPremisesConnectionHealthCheckErrorType values
 
@@ -125,7 +125,7 @@ The following is a JSON representation of the resource.
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "correlationId": "String",
-  "additionalDetails": "String"
+  "additionalDetails": "String",
+  "correlationId": "String"
 }
 ```
