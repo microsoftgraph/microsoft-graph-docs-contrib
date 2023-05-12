@@ -22,7 +22,7 @@ $requestBody->setAssets($assetsArray);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->windowsUpdatesAddMembers()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->updatableAssetsById('updatableAsset-id')->microsoftGraphWindowsUpdatesAddMembers()->post($requestBody);
 
 
 ```
