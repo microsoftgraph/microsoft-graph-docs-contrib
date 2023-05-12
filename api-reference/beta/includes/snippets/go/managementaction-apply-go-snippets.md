@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/ManagementActions/Item/ManagedTenantsApply"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/TenantRelationships/ManagedTenants/ManagementActions/Item/MicrosoftGraphManagedTenantsApply"
 	  //other-imports
 )
 
@@ -23,7 +23,7 @@ requestBody.SetTenantGroupId(&tenantGroupId)
 managementTemplateId := "String"
 requestBody.SetManagementTemplateId(&managementTemplateId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActions().ByManagementActionId("managementAction-id").ManagedTenantsApply().Post(context.Background(), requestBody, nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActions().ByManagementActionId("managementAction-id").MicrosoftGraphManagedTenantsApply().Post(context.Background(), requestBody, nil)
 
 
 ```

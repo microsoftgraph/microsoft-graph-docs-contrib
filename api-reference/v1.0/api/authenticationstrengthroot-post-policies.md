@@ -101,6 +101,10 @@ Content-length: 239
 [!INCLUDE [sample-code](../includes/snippets/php/create-authenticationstrengthpolicy-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationstrengthpolicy-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
