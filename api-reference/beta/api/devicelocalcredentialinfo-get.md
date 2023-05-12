@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.Read.All,DeviceLocalCredential.ReadBasic.All|
+|Delegated (work or school account)|DeviceLocalCredential.ReadBasic.All,DeviceLocalCredential.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
 
