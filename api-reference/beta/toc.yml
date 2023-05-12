@@ -13951,7 +13951,7 @@ items:
             href: api/trustframework-put-trustframeworkpolicy.md
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
-        - name: User flows
+        - name: User flows for Azure AD and Azure AD B2C
           items:
           - name: User flow (deprecated)
             items:
@@ -13965,7 +13965,7 @@ items:
               href: api/identityuserflow-get.md
             - name: Delete
               href: api/identityuserflow-delete.md
-          - name: B2C user flows (preview)
+          - name: User flows for Azure AD B2C (preview)
             items:
             - name: B2C user flow
               href: resources/b2cidentityuserflow.md
@@ -14003,7 +14003,7 @@ items:
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows for Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
