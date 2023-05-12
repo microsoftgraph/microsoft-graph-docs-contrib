@@ -26,8 +26,8 @@ To add a keyCredential using Microsoft Graph, see [Add a certificate to an app u
 |key|Binary| Value for the key credential. Should be a Base64 encoded value. Returned only on `$select` for a single object, that is, `GET applications/{applicationId}?$select=keyCredentials` or `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`; otherwise, it is always `null`. |
 |keyId|Guid|The unique identifier for the key.|
 |startDateTime|DateTimeOffset|The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`.|
-|usage|String|A string that describes the purpose for which the key can be used; for example, `Verify`.|
+|type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`, or `X509CertAndPassword`.|
+|usage|String|A string that describes the purpose for which the key can be used; for example, `None`​, `Verify`​, `PairwiseIdentifier`​, `Delegation`​, `Decrypt`​, `Encrypt`​, `HashedIdentifier`​, `SelfSignedTls`, or `Sign`. <br/><br/>If **usage** is `Sign`​, the **type** should be `X509CertAndPassword`​, and the **passwordCredentials**​ for signing should be defined.|
 
 
 ## JSON representation
