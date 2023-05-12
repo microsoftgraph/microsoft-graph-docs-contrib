@@ -6181,7 +6181,7 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
         - name: User flows
           items:
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows in Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
