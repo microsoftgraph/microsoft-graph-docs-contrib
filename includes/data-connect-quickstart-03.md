@@ -8,7 +8,7 @@ In this exercise you'll create, run, and approve an Azure Data Factory pipeline 
 
 ## Create a Microsoft Azure Active Directory application registration
 
-The first step is to create an Azure Active Directory (Azure AD) application that will be used as the security principal to run the data extraction process.
+You will be creating an Azure Active Directory (AAD) application that will be used as the security principal to run the data extraction process.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 

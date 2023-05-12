@@ -22,15 +22,12 @@ Additionally, these can be created from the wizard as well. To register an app w
 
     1.  **Subscription:** (required) select a subscription in the tenant that will be used exclusively to filter the next 4 selections utilized to configure the data destination
         - **Resource Group:** (required) select the group location for the data storage
-        - **Destination Type:** select the type of storage from Azure Storage Account or Azure SQL Database Server
-            - If the selected type of storage is SQL Database Server, then it will only support Mapping Data Flows types. Learn more about Mapping Data Flows.
-        - **Storage Account:** (required) select the storage account where the data to provision with MGDC will be located, or create a new Azure Storage Account
-        - **Storage Account Uri:** (required) from the storage account selected above, select the Uri to use (dfs or blob)
-            - The Uri is disabled if the Storage Account selected is SQL
+        - **Destination Type:** select Azure Storage Account as the destination type.
+        - **Storage Account:** (required) select the storage account earlier in this tutorial. 
+        - **Storage Account Uri:** (required) from the storage account selected above, select the Uri to use.Please select the **.blob.core.windows.net**
     2. **Application ID:** (required) select from the AAD apps in the tenant or create a new one
     3. **Description:** (required) text field to provide details on the app registration, i.e. project goal, unique identifier, organization project name
-    4. **Publish Type:** (required) select from Multi-Tenant or Single-Tenant
-        - **Key Vault:** (required for Multi-Tenant app registrations) specify the key vault that will enable the communication between the tenants
+    4. **Publish Type:** (required) select from Single-Tenant for this tutorial.
     
     ![Screenshot of project details on the wizard](../concepts/images/data-connect-register-app-2.png)
 
@@ -38,17 +35,15 @@ Additionally, these can be created from the wizard as well. To register an app w
 
 Once the Registration Info page is completed, it is time to specify the datasets that the app registration will need to query. [Learn more about datasets.](https://learn.microsoft.com/en-us/graph/data-connect-datasets)
 
-4. Proceed to select each dataset that the app will request for consent and all or several columns from the dataset depending on the level of granularity and privacy that is required. Examples are provided below in the images.
-
-    - The wizard shows a table that allows the entry of multiple datasets, the selection of columns in those datasets, and further details for consent of multi-tenant apps (scope and scope options). [Learn more about scopes.](https://learn.microsoft.com/en-us/graph/data-connect-filtering#user-selection)
-
+4. Select `BasicDataSet_v0.Message_v1` from Dataset drop down. Then in the Columns drop down click `All`. Now in the new row, select `BasicDataSet_v1` from Dataset drop down. Then in the Colums drop down click `All`.
 
     ![Screenshot of dataset catalog on wizard](../concepts/images/data-connect-register-app-3.png)
 
-5. Once completed, click on **Next : Review + create**. If there is missing information for the required fields in the previous tabs, then the button will not be enabled.
+5. Once completed, then click `Review + Create`. 
 
     ![Screenshot of example of dataset catalog of the wizard](../concepts/images/data-connect-register-app-4.png)
 
+    
 ### Review and Create
 
 6. Lastly, the wizard provides a summary page to review the specified details and confirm the creation of the app registration.

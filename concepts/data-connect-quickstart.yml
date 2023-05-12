@@ -45,11 +45,6 @@ items:
     durationInMinutes: 5
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
-
-  - title: Create your ASP.NET web application to process the exported data
-    durationInMinutes: 25
-    content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-09.md)]
   
   - title: Congratulations!
     durationInMinutes: 0
