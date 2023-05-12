@@ -6181,7 +6181,7 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
         - name: User flows
           items:
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows in Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
@@ -7967,6 +7967,10 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
+          - name: Virtual appointment
+            items:
+            - name: Get virtual appointment join link
+              href: api/virtualappointment-getvirtualappointmentjoinweburl.md
         - name: Presence
           href: resources/presence.md
           items:
