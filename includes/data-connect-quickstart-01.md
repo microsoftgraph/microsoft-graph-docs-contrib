@@ -16,35 +16,49 @@ Data Connect also grants a more granular control and consent model: you can mana
 
 Additionally, you can use Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
-## Get started
+## Get started 
 
-In this tutorial, you'll create your first single-tenant Microsoft Graph Data Connect application. Exciting, right? We think so too! To get started, you'll need to set up a few things first.
+In this tutorial, you'll create your first single-tenant Microsoft Graph Data Connect application. The following is a general flow that explains the Microsoft Graph Data Connect onboarding.
+
+![Screenshot explaining onboarding flow](../concepts/images/data-connect-overview-flowchart.png)
+
+1.	**Admin enables Data Connect:** The first step in onboarding is for your global administrator to [enable Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
+
+2.	**Developer creates a new Azure Active Directory application:** The developer needs to first create a new Azure Active Directory (Azure AD) application.
+
+3.	**Developer registers the application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. <!-- Learn more about application registration -->
+
+4.	**Admin approves the application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it. 
+
+5.	**Developer runs their pipelines:** Once the administratior has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
+
 
 ### Prerequisites
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
-- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy. 
-- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (e.g., to enable ISVs), but this will not be explored in this tutorial. 
-- One user in your Microsoft 365 tenant has the Global Administrator role enabled. For more details, see [Global Administrator built-in role](/azure/active-directory/roles/permissions-reference#global-administrator). We will refer to this user as the “admin” through this tutorial. Global Admin is the only one who can approver 
-- A different user in your Microsoft 365 tenant with [Application Administrator](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#application-developer) role. We will refer to this user as the “developer” through this tutorial. We will refer to this user as the “developer” through this tutorial.  
-   - For the context of this tutorial, we highly recommend using a M365 developer tenant. 
+- Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy.
+- The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (for example, to enable ISVs), but this will not be explored in this tutorial.
+- One user in your Microsoft 365 tenant has the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". Only an "admin" user can approve the test application.
+- A different user in your Microsoft 365 tenant with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Going forward, this tutorial refers to this user as the "developer".  
+- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
 
 1. **Microsoft 365 tenancy**
 
    - If you don't have a Microsoft 365 tenant, you can get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). The Microsoft 365 Developer Program sandbox subscription provides:
    - Multiple Microsoft 365 users with emails sent and received.
-   - Access to atleast two user accounts, one that is a global administrator account who can access the
-      -  Please ensure you have access to two different accounts in this tenant. One that acts as a developer who can create and trigger a test application and pipelines. The other one should have a **Global Administrator** role assigned and can access to the [Microsoft 365 admin center](https://admin.microsoft.com/) specifically to approve the test application.  
-      > [!NOTE]
-      > You cannot approve your own test application on the same account so please ensure you have another member (or account) in your tenant acting as a global admin.
-      - Please take note of the M365 region where your tenant is located. If creating a new tenant, ensure it is one of the [regions supported by MGDC](https://learn.microsoft.com/en-us/graph/data-connect-datasets#regions). 
+   - Access to at least two user accounts:
+      - A "developer" account that can create and trigger a test application and pipelines. 
+      - An "admin" account that can access the [Microsoft 365 admin center](https://admin.microsoft.com/), specifically to approve the test application.  
+   - Note the Microsoft 365 region where your tenant is located. If you create a new tenant, ensure it is one of the [regions supported by Microsoft Graph Data Connect](/graph/data-connect-datasets#regions).
+
+    >**Note:** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
      
 2. **Microsoft Azure subscription**
 
-   - If you don't have one, you can get one (for free) on the [Azure website](https://azure.microsoft.com/free/). 
-   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy. 
-   - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant. To do so, follow the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+   - If you don't have a Microsoft Azure subscription, visit the following link to get one (for free): https://azure.microsoft.com/free/.
+   - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy.
+   - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Azure AD in your Microsoft 365 tenant by following the steps listed in [Associate or add an Azure subscription to your Azure Active Directory tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 > [!NOTE]
 > The screenshots and examples used in this tutorial are from a Microsoft 365 Developer tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in a Microsoft 365 tenant and copied to an Azure Blob Storage account. You maintain control over who has access to the data within the Azure Blob Storage.

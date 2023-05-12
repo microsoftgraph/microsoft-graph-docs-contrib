@@ -4,284 +4,82 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this section, you will build your first ASP.NET project application to process the Microsoft Graph Data Connect data that was exported.
+## Application Consent Overview 
 
-## Create a new ASP.NET project
+This documentation is geared towards global administrators who will be responsible for consenting to Microsoft Graph Data Connect (MGDC) apps for your organization. 
 
-1. Open Visual Studio and select **File > New > Project**.
+The new MGDC app consent experience is built into the [Microsoft 365 admin center](https://admin.microsoft.com). The [entry point for this experience](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter) is in **Org settings > Security & Privacy** Tab. 
 
-1. In the **New Project** dialog box, do the following:
+This is a different entry point from where an admin would opt-in to MGDC. Today, only global administrators may consent to MGDC applications.
 
-    1. In the search box, enter **ASP.NET Web Application**, and select the **ASP.NET Web Application (.NET Framework)** option.
-    1. Choose **Next**.
+![Screenshot overview of the admin page](../concepts/images/data-connect-admin-center.png)
 
-        ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](../concepts/images/data-connect-vs-create-app.png)
+## Application Summary View
 
-    1. For the project name, enter **EmailMetrics**.
-    1. For the framework, select **.NET Framework 4.7.2**.
-    1. Choose **Create**.
+The landing page of the Microsoft Graph Data Connect applications portal is an at-a-glance view of all MGDC applications you may be interested in. 
 
-    > [!IMPORTANT]
-    > Make sure that you enter the same name for the Visual Studio project that is specified in this quick start. The Visual Studio project name becomes part of the namespace in the code. The code in these instructions depends on the namespace matching the Visual Studio project name specified. If you use a different project name, the code will not compile unless you adjust all the namespaces to match the Visual Studio project name you entered.
+![Screenshot overview of the admin page](../concepts/images/data-connect-application-request-1.png)
 
-    1. In the new **ASP.NET Web Application** project dialog box, select MVC.
-    1. Choose **Create**.
+![Screenshot overview of the admin page](../concepts/images/data-connect-application-request-2.png)
 
-    ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](../concepts/images/data-connect-vs-create-app-mvc.png)
+You will find both Single-tenant applications and Multi-tenant applications. 
 
-## Add and configure your Azure Storage as a Connected Service
+1. Single-tenant applications: Applications that are homed in the your tenant and require access to data from your tenant. These are typically enterprise scenarios.  
 
-1. In the **Solution Explorer** tool window, right-click the **Connected Services** node and select **Add Connected Service**.
+2. Multi-tenant applications: Applications that are homed in another tenant and require access to data from your tenant. These are typically ISV scenarios. Reviews these apps extra carefully as consenting to such apps can enable data from your tenant being moved to the app developer’s tenant.
 
-    ![Visual-Studio-Add-Connected-Service](../concepts/images/data-connect-vs-add-connected-service-sa.png)
+All single-tenant apps will be populated in the table by default. Only approved, denied or expired multi-tenant apps will be included in the table. You may find apps with the following statuses in the table:
 
-1. On the **Connected Services** dialog box, select the green **+** sign on the upper-right corner.
+1. Pre-consent: App that have not been acted upon yet. This status is only possible for Single-tenant apps. Apps in this state will always fail at runtime. 
 
-1. In the **Add dependency** dialog box, select **Azure Storage**, and then choose **Next**.
+2. Approved: App that an admin has approved to access M365 data for your tenant.
 
-    ![A screenshot of the Visual Studio interface showing the add dependency dialog for the Azure Storage option.](../concepts/images/data-connect-vs-add-dependency-azsa.png)
+3. Denied: App that an admin has denied to access M365 data for your tenant. Apps in this state will always fail at runtime.
 
-1. In the **Azure Storage** dialog box, select the subscription and storage account where you exported the data, and then choose **Next**.
+4. Expired: App that an admin has approved to access M365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
 
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](../concepts/images/data-connect-vs-configure-az-storage.png)
+# Application Details View
 
-1. Provide the **Azure Storage connection**, a name of **AzureStorageConnectionString**, and choose **Next**.
-1. Choose **Finish**.
+1. Clicking on any app in the table will launch the app details view with more information on what data the app requires. This wizard experience should walk you through all the relevant data access details and allow you to approve or deny an app at the end. 
 
-    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](../concepts/images/data-connect-vs-configure-sa-summary.png)
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-sample-app-overview.png)
 
-## Create a new model class that will be used to store the email metrics
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-sample-app-overview-2.png)
 
-1. In the **Solution Explorer** tool window, right-click the **Models** folder, and select **Add > Class**.
+2. The first wizard step presents overview information about the application. 
 
-    ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](../concepts/images/data-connect-vs-add-new-model-class.png)
+    - **App owner:** This is the user principal name of the developer who registered the application. 
+    - **Data destination:** This is the sink where the data will be delivered. If approved, this app may move the requested data to any location within the listed sink. 
+    - **App publisher:** This is the AAD Tenant ID where the app is registered. For Single-tenant apps, this should be the same AAD Tenant ID as your tenant. 
 
-1. In the **Add New Item** dialog box, select **Class**, set the name of the file to _EmailMetric.cs_, and select **Add**.
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-1.png)
 
-1. Add the following code to the class EmailMetric you just created.
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-2.png)
 
-    ```csharp
-    public string Email;
-    public double RecipientsToEmail;
-    ```
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-3.png)
 
-## Create a new controller that will calculate and display the results
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-4.png)
 
-1. Right-click the **Controllers** folder and select **Add > Controller**.
+3. The next few steps are per-dataset steps – there will be one step per dataset registered in the app. 
 
-1. In the **Add Scaffold** dialog box, select **MVC 5 Controller - Empty**, and select **Add**.
+    - **Columns:** Specifies which columns the app intends to extract via MGDC. If approved, this app can extract any subset of approved columns for the specified dataset. 
 
-1. When prompted, name the controller **EmailMetricsController**, and choose **OK**.
+    - **Scope:**  Specifies the scope (i.e., user selection) the app intends to extract via MGDC. Learn more about scopes in MGDC. 
 
-1. Add the following _using_ statements after the existing _using_ statements at the top of the file that contains the **EmailMetricsController** class.
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-5.png)
 
-    ```csharp
-    using System.Collections.Generic;
-    using System.Configuration;
-    using System.IO;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using System.Web.Mvc;
-    using Azure.Storage.Blobs;
-    using Azure.Storage.Blobs.Models;
-    using Newtonsoft.Json.Linq;
-    ```
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-6.png)
 
-1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the **Azure Storage account** that contains the exported data.
+4. The final wizard step re-iterates some key information on the app in review. At this point, you may either Approve, Decline or Cancel. An action on an app is all or nothing – i.e., consenting to an app means you are consenting to all the access specified in the prior steps.
 
-    ```csharp
-    private const string connectionStringName = "AzureStorageConnectionString";
-    private const string emailBlobName = "m365mails";
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-7.png)
 
-    ```
+5. When consenting to an app, the following errors are possible. If an unexpected error occurs, the error message will include an error code – please share this error code if you reach out to Microsoft for support. 
 
-1. Add the following method to the **EmailMetricsController** class. This will process an **Azure Blob** and update a collection that represents the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
+    - App approver and owner cannot be the same user.
+    - App registration not found. It is possible someone deleted this app.
 
-    ```csharp
-    private async Task ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, BlobClient emailBlob)
-    {
-        using (var stream = new MemoryStream())
-        {
-            var response = await emailBlob.DownloadToAsync(stream);
-            var pos = stream.Seek(0, SeekOrigin.Begin);
+    ![Screenshot goes over sample app overview](../concepts/images/data-connect-application-details-8.png)
 
-            using (var reader = new StreamReader(stream))
-            {
-
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    var jsonObj = JObject.Parse(line);
-
-                    // extract sender
-                    var sender = jsonObj.SelectToken("Sender.EmailAddress.Address")?.ToString();
-                    // No sender - skip this one
-                    if (string.IsNullOrEmpty(sender)) continue;
-
-                    // extract and count up recipients
-                    var totalRecipients = 0;
-                    totalRecipients += jsonObj.SelectToken("ToRecipients")?.Children().Count() ?? 0;
-                    totalRecipients += jsonObj.SelectToken("CcRecipients")?.Children().Count() ?? 0;
-                    totalRecipients += jsonObj.SelectToken("BccRecipients")?.Children().Count() ?? 0;
-
-                    var emailMetric = new Models.EmailMetric();
-                    emailMetric.Email = sender;
-                    emailMetric.RecipientsToEmail = totalRecipients;
-
-                    // if already have this sender...
-                    var existingMetric = emailMetrics.FirstOrDefault(metric => metric.Email == emailMetric.Email);
-                    if (existingMetric != null)
-                    {
-                        existingMetric.RecipientsToEmail += emailMetric.RecipientsToEmail;
-                    }
-                    else
-                    {
-                        emailMetrics.Add(emailMetric);
-                    }
-                }
-            }
-        }
-    }
-    ```
 
-1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified **Azure Storage** account's specified container and send each one to `ProcessBlobEmails()` method added in the last step.
 
-    ```csharp
-    private async Task<List<Models.EmailMetric>> ProcessBlobFiles()
-    {
-        var emailMetrics = new List<Models.EmailMetric>();
-        var connectionString = ConfigurationManager.ConnectionStrings[connectionStringName];
-
-        // Connect to the storage account
-        var containerClient = new BlobContainerClient(connectionString.ConnectionString, emailBlobName);
-
-        foreach (var blob in containerClient.GetBlobs())
-        {
-            if (blob.Properties.BlobType == BlobType.Block &&
-                // Don't process blobs in the metadata folder
-                !blob.Name.StartsWith("metadata/"))
-            {
-                var blobClient = containerClient.GetBlobClient(blob.Name);
-                await ProcessBlobEmails(emailMetrics, blobClient);
-            }
-        }
-
-        return emailMetrics;
-    }
-    ```
-
-1. Add the following action to the **EmailMetricsController** that will use the methods added to this class to process the emails and send the results to the view.
-
-    ```csharp
-    [HttpPost, ActionName("ShowMetrics")]
-    [ValidateAntiForgeryToken]
-    public async Task<ActionResult> ShowMetrics()
-    {
-        var emailMetrics = await ProcessBlobFiles();
-
-        return View(emailMetrics);
-    }
-    ```
-
-## Create a new view for the EmailMetrics index action
-
-1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder, and select **Add > View**.
-
-1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, and then choose **Add**.
-
-1. In the **Add View** dialog box, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
-
-    ![A screenshot of the Visual Studio interface showing how to add an new view called index.](../concepts/images/data-connect-vs-add-view-index.png)
-
-1. Update the markup in the new **Views > EmailMetrics > _Index.cshtml_** to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
-
-    ```html
-    @{
-    ViewBag.Title = "Index";
-    }
-
-    <h2>Email Metrics</h2>
-    ```
-
-1. This application will look at the email data for emails extracted to the **Azure Blob Storage** account and display the total number of recipients from each sender.
-
-    ```html
-    @using (Html.BeginForm("ShowMetrics", "EmailMetrics", FormMethod.Post))
-    {
-    @Html.AntiForgeryToken()
-    <div>
-        <button type="submit">View email metrics</button>
-    </div>
-
-    <div>
-        <em>Please be patient as this can take a few moments to calculate depending on the size of the exported data...</em>
-    </div>
-    }
-    ```
-
-## Create a new view for the EmailMetrics ShowMetrics action
-
-1. In the **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
-
-1. In the **Add View** dialog box, set the following values, leave the remaining input controls to their default values, and choose **Add**.
-
-    - **View name**: ShowMetrics
-    - **Template**: List
-    - **Model class**: EmailMetric (EmailMetric.Models)
-
-        ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](../concepts/images/data-connect-vs-add-view-showmetrics.png)
-
-    >[!TIP]
-    > If you can't see the **EmailMetric** model in the dropdown box, build the solution.
-
-1. Update the markup in the new **Views > EmailMetrics > _ShowMetrics.cshtml_** to the following. This will display the results of the calculations.
-
-    ```html
-    @model IEnumerable<EmailMetrics.Models.EmailMetric>
-
-    @{
-    ViewBag.Title = "ShowMetrics";
-    }
-
-    <h2>Email Metrics</h2>
-
-    <table class="table">
-    <tr>
-        <th>Sender</th>
-        <th>Number of Recipients</th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>@Html.DisplayFor(modelItem => item.Email)</td>
-        <td>@Html.DisplayFor(modelItem => item.RecipientsToEmail)</td>
-    </tr>
-    }
-
-    </table>
-    ```
-
-## Update the navigation to have a way to get to the new controller
-
-1. In the **Solution Explorer** tool window, locate and open the file **Views > Shared > _Layout.cshtml_**.
-1. Replace the contents with the following code.
-
-    ```html
-    <!-- new code -->
-    <li>@Html.ActionLink("Email Metrics", "Index", "EmailMetrics")</li>
-    ```
-
-## Test the application
-
-1. In Visual Studio, select **Debug > Start Debugging**.
-
-1. When the application is built and loads in a new browser window, select the **Email Metrics** item in the top navigation bar.
-
-1. On the **Email Metrics** page, select the **View email metrics** button.
-
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](../concepts/images/data-connect-vs-select-view-metrics.png)
-
-1. When the page loads, you will see a list of email addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following image.
-
-    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](../concepts/images/data-connect-vs-show-email-metrics.png)

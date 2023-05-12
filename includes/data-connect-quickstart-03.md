@@ -8,15 +8,15 @@ In this exercise you'll create, run, and approve an Azure Data Factory pipeline 
 
 ## Create a Microsoft Azure Active Directory application registration
 
-The first step is to create an Azure Active Directory (Azure AD) application that will be used as the security principal to run the data extraction process.
+You will be creating an Azure Active Directory (AAD) application that will be used as the security principal to run the data extraction process.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
+1. Sign in using an account with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal.
 
 1. On the home page, select the **Azure Active Directory** service.
 
-1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the left navigation pane. Please ensure you are on your "developer" user account to sign in.
+1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the left navigation pane. Ensure that you're signed-in with your "developer" account.
 
 1. Select the **New registration** button.
 
@@ -25,8 +25,8 @@ The first step is to create an Azure Active Directory (Azure AD) application tha
 
 1. Use the following values to create a new Azure AD application and select **Register**.
 
-   - **Name**: Microsoft Graph Data Connect Data Transfer (you can name this as you wish)
-   - **Supported account types**: Accounts in this organizational directory only. 
+   - **Name**: Microsoft Graph Data Connect Data Transfer (provide the name of your choice).
+   - **Supported account types**: Accounts in this organizational directory only.
    - **Redirect URI**: Leave the default values.
 
     ![A screenshot showing the steps to register a new application registration in the Azure portal.](../concepts/images/data-connect-aad-redirect-uri.png)
