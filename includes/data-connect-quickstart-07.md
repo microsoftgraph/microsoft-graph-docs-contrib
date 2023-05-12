@@ -7,9 +7,10 @@ ms.localizationpriority: medium
 You can also use Azure Synapse instead of Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph Data Connect (Data Connect).
 
 ## Create an Azure Synapse pipeline
+
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role. Verify that your account has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Verify that your account has privileges to create Azure resources within your subscription.
 
 1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
@@ -76,7 +77,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
         ![Screenshot of the Set properties pane with New highlighted](../concepts/images/data-connect-synapse-linked-service.png)
 
-    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the Azure Active Directory (Azure AD) application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.
+    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **Secret ID** of the Azure Active Directory (Azure AD) application in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.
 
         ![Screenshot of the New linked service pane](../concepts/images/data-connect-synapse-service-id.png)
 
@@ -98,7 +99,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     ![Screenshot of the New integration dataset pane with Azure Blob Storage highlighted](../concepts/images/data-connect-synapse-integration-service.png)
 
-    1. For the format for the data, select **Binary**, and then choose **Continue**.
+    1. For the data format, select **Binary**, and then choose **Continue**.
     1. Give the dataset the name **M365JsonFile** and follow the next steps to create a new linked service if it does not exist already.
         
         ![Screenshot of the Set properties pane with Linked service highlighted](../concepts/images/data-connect-synapse-set-properties.png)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD002 MD041 -->
 
 You've completed the Microsoft Graph Data Connect tutorial! You should now be able to see your JSON file in your Azure storage account with the following steps: 
+
 1. Go to [Azure portal](www.portal.azure.com)
 2. Under **Azure Services** go to **Storage accounts**
 3. Select the Azure Storage account you created previously in this tutorial.
