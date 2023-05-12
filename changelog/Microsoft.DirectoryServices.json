@@ -79,6 +79,64 @@
     {
       "ChangeList": [
         {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/inboundOutboundPolicyConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-1.0) resource type.",
+          "Target": "crossTenantUserSyncInbound"
+        }
+      ],
+      "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-11T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite.All",
@@ -13270,7 +13328,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningError** resource type.",
           "Target": "serviceProvisioningError"
         },
         {
@@ -13278,7 +13336,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningXmlError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningXmlError** resource type.",
           "Target": "serviceProvisioningXmlError"
         },
         {

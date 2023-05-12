@@ -68,6 +68,7 @@ The following example configures the partner-specific policy by setting the inbo
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,11 +82,10 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
-  "inboundTrust": 
-  {
+  "inboundTrust": {
     "isMfaAccepted": true,
     "isCompliantDeviceAccepted": true,
-    "isHybridAzureADJoinedDeviceAccepted" : true
+    "isHybridAzureADJoinedDeviceAccepted": true
   }
 }
 ```
@@ -118,6 +118,8 @@ Content-Type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -128,12 +130,13 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Configure automaticUserConsent settings 
+### Example 2: Configure automaticUserConsent settings
 
-The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the partner's users.
+The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the users of the partner.
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,8 +150,7 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
-  "automaticUserConsentSettings": 
-  {
+  "automaticUserConsentSettings": {
     "inboundAllowed": true,
     "outboundAllowed": true
   }
@@ -182,6 +184,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
