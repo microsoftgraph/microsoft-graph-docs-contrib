@@ -38,11 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-  "accessPackages": [
-    {
-      "@odata.type": "microsoft.graph.authenticationAccessPackageConfiguration"
-    }
-  ],
   "attributeCollectionPage": {
     "@odata.type": "microsoft.graph.authenticationAttributeCollectionPage"
   }

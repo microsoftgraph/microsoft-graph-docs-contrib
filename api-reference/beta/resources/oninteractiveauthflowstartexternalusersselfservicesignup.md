@@ -1,6 +1,7 @@
 ---
 title: "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp resource type"
 description: "Managed handler for the starting authentication step of an external identities user flow."
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

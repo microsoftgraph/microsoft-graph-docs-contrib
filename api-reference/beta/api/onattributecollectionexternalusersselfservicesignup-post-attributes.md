@@ -133,13 +133,13 @@ PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authe
                             "validationRegEx": "^.*",
                             "options": []
                         }
-
                     ]
                 }
             ]
         }
     }
-}```
+}
+```
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref

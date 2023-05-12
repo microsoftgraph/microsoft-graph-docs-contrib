@@ -257,8 +257,8 @@ Content-Type: application/json
                                     "required": false,
                                     "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
                                     "options": []
-                                }
-                          {
+                                },
+                                {
                                     "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
                                     "label": "Favorite color",
                                     "inputType": "text",
