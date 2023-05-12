@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {          
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
@@ -8977,6 +8995,48 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-04T17:55:51.6093472Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -9650,7 +9710,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the [privilegedapproval](https://learn.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) entity.",
+          "Description": "Change the privilegedapproval entity.",
           "Target": "privilegedapproval"
         },
         {
@@ -9658,7 +9718,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedroleassignmentrequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
+          "Description": "Added the privilegedroleassignmentrequest entity, and its associated methods and actions.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
@@ -9666,7 +9726,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added [Update](https://learn.microsoft.com/en-us/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](https://learn.microsoft.com/en-us/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)",
+          "Description": "Added Update operation to the privilegedRoleSettings entity.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],

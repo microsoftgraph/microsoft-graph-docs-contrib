@@ -49,7 +49,7 @@ GET /roleManagement/directory/roleDefinitions
 To list role definitions for the entitlement management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
-/roleManagement/entitlementManagement/roleDefinitions
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
