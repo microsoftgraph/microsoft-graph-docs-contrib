@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session of a [virtualEvent](../resources/virtualevent.md)
+Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
 Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
