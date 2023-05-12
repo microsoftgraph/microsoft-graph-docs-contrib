@@ -124,6 +124,16 @@ Content-Type: application/json
         "domainJoinType": "hybridAzureADJoin",
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
@@ -206,6 +216,16 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
     "enableSingleSignOn": true,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
@@ -303,6 +323,16 @@ Content-Type: application/json
         "regionName": null,
         "type": "hybridAzureADJoin"
     },
+    "domainJoinConfigurations": [
+      {
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+        "type": "hybridAzureADJoin"
+      },
+      {
+        "onPremisesConnectionId": "26e16c71-f210-438b-88ac-d481ccafffff",
+        "type": "hybridAzureADJoin"
+      }
+    ],
     "enableSingleSignOn": true,
     "gracePeriodInHours": 2,
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
