@@ -55,7 +55,7 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [customAuthenticationExtension](../resources/customauthenticationextension.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -90,30 +90,12 @@ Content-length: 468
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.customAuthenticationExtension",
-  "id": "3491a8d6-eeb2-1414-e767-7e009163a6ed",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 

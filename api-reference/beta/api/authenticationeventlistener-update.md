@@ -52,7 +52,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationEventListener](../resources/authenticationeventlistener.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -66,7 +66,6 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
 Content-Type: application/json
-Content-length: 312
 
 {
   "@odata.type": "#microsoft.graph.authenticationEventListener",
@@ -86,29 +85,12 @@ Content-length: 312
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "authenticationEventsFlowId": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

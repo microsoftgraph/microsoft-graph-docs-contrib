@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |[List authenticationEventListeners](../api/identitycontainer-list-authenticationeventlisteners.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) collection|Retrieve a list of [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object types.|
 |[Create authenticationEventListener](../api/identitycontainer-post-authenticationeventlisteners.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Create a new [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
 |[Get authenticationEventListener](../api/authenticationeventlistener-get.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Read the properties and relationships of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
-|[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
+|[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|None|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
 |[Delete authenticationEventListener](../api/identitycontainer-delete-authenticationeventlisteners.md)|None|Delete an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type.|
 
 ## Properties
