@@ -25,6 +25,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To update the profile photo of a contact
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   Contacts.ReadWrite           | Not supported. |
@@ -33,6 +34,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To update the profile photo of a group
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
@@ -41,6 +43,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To update the profile photo of a team
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 | Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
@@ -49,6 +52,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To update the profile photo of the signed-in user
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   User.ReadWrite | User.ReadWrite.All           |

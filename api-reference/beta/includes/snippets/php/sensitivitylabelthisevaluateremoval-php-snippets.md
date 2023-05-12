@@ -94,7 +94,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->securityEvaluateRemoval()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->usersById('user-id')->security()->informationProtection()->sensitivityLabels()->microsoftGraphSecurityEvaluateRemoval()->post($requestBody, $requestConfiguration);
 
 
 ```

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {          
           "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "roleManagement",
@@ -9692,7 +9710,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the [privilegedapproval](https://learn.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) entity.",
+          "Description": "Change the privilegedapproval entity.",
           "Target": "privilegedapproval"
         },
         {
@@ -9700,7 +9718,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedroleassignmentrequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
+          "Description": "Added the privilegedroleassignmentrequest entity, and its associated methods and actions.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
@@ -9708,7 +9726,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added [Update](https://learn.microsoft.com/en-us/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](https://learn.microsoft.com/en-us/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)",
+          "Description": "Added Update operation to the privilegedRoleSettings entity.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],
@@ -13242,6 +13260,80 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-beta) resource type.",
+          "Target": "serviceProvisioningError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningXmlError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-beta) resource type.",
+          "Target": "serviceProvisioningXmlError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the retryServiceProvisioning method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the retryServiceProvisioning method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the retryServiceProvisioning method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-11T06:03:02.8820444Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }    
