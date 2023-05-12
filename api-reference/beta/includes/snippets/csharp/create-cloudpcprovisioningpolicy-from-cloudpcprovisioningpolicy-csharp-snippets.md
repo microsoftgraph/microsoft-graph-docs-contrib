@@ -21,6 +21,20 @@ var requestBody = new CloudPcProvisioningPolicy
 			},
 		},
 	},
+	DomainJoinConfigurations = new List<CloudPcDomainJoinConfiguration>
+	{
+		new CloudPcDomainJoinConfiguration
+		{
+			OnPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+			Type = CloudPcDomainJoinType.HybridAzureADJoin,
+		},
+		new CloudPcDomainJoinConfiguration
+		{
+			OnPremisesConnectionId = "26e16c71-f210-438b-88ac-d481ccafffff",
+			Type = CloudPcDomainJoinType.HybridAzureADJoin,
+		},
+	},
+	Id = "1d164206-bf41-4fd2-8424-a3192d39ffff",
 	EnableSingleSignOn = true,
 	ImageDisplayName = "Windows-10 19h1-evd",
 	ImageId = "MicrosoftWindowsDesktop_Windows-10_19h1-evd",

@@ -166,6 +166,7 @@ Content-type: application/json
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
     "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "serviceProvisioningErrors": [],
     "theme": null,
     "visibility": "Public",
     "writebackConfiguration": {
