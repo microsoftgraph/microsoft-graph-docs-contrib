@@ -1,6 +1,6 @@
 ---
 title: "Taxonomy picker component in the Microsoft Graph Toolkit"
-description: "The taxonomy picker is a component that can query the Microsoft Graph API for Taxonomy and render a dropdown control with terms, allowing selection of a single term based on the specified term set id or a combination of the specified term set id and the specified term id"
+description: "Use the taxonomy picker component to query the Microsoft Graph API for Taxonomy and render a dropdown control with terms."
 ms.localizationpriority: medium
 author: anoopt
 ---
@@ -10,10 +10,10 @@ author: anoopt
 The taxonomy picker is a component that can query the [Microsoft Graph API for Taxonomy](/graph/api/resources/termstore-term?view=graph-rest-beta) and render a dropdown control with terms, allowing selection of **a single** term based on the specified term set `id` or a combination of the specified term set `id` and the specified term `id`. 
 
 
-The component retrieves the first level terms that are present under a specified term set or term. If only the term set id is provided, it returns the first level terms under that term set. If both the term set id and term id are provided, it returns the first level terms under the specified term.
+The component retrieves the first level terms that are present under a specified term set or term. If only the term set ID is provided, it returns the first level terms under that term set. If both the term set ID and term ID are provided, it returns the first-level terms under the specified term.
 
 > **Note**
-> This capability currently supports a **single** selection of terms coming from the term store. This will be reviewed in the future.
+> This capability currently supports a **single** selection of terms coming from the term store.
 
 ## Example
 
@@ -41,31 +41,31 @@ You can use several attributes to change the behavior of the component. The requ
 | cache-enabled | cacheEnabled | Optional. When set, it indicates that the response from the resource will be cached. Default is `false`.| Boolean |
 | cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. | Number |
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set
+The following example changes the behavior of the component to fetch first level child terms of specified term set.
 
 ```html
 <mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235"></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term
+The following example changes the behavior of the component to fetch first level child terms of specified term.
 
 ```html
 <mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235" term-id="a56caeb7-3b7d-4d22-93a9-0232e12905f6"></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch the French labels of the first level child terms of specified term
+The following example changes the behavior of the component to fetch the French labels of the first level child terms of specified term.
 
 ```html
 <mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235" term-id="a56caeb7-3b7d-4d22-93a9-0232e12905f6" locale="fr-FR"></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set that is present in a specified site
+The following example changes the behavior of the component to fetch first level child terms of specified term set that is present in a specified site.
 
 ```html
 <mgt-taxonomy-picker term-set-id="7889007a-fb0e-449f-b629-dedf63ae53de" site-id="contoso.sharepoint.com,0962bcef-48f1-4460-baa8-b7286dcb249b,ba412b3c-951a-4322-ac37-0fe6307b5987"></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set and sets a specified term to be selected by default
+The following example changes the behavior of the component to fetch first level child terms of specified term set and sets a specified term to be selected by default.
 
 ```html
 <mgt-taxonomy-picker term-set-id="138a652e-7f23-46f6-b480-13da2308c235" default-selected-term-id="7ab1d163-f691-4676-88b3-c2d8921b73eb"></mgt-taxonomy-picker>
@@ -115,7 +115,7 @@ The `mgt-taxonomy-picker` component supports several [templates](../customize-co
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API
 | - | - | - |
@@ -133,14 +133,14 @@ To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidation
 
 |Object store|Cached data|Remarks|
 |-----------|-----------|-------|
-|`response`|Complete response retrieved from Microsoft Graph for the terms|
+|`response`|Complete response retrieved from Microsoft Graph for the terms.|
 
-See [Caching](../customize-components/cache.md) for more details.
+For details, see [Caching](../customize-components/cache.md).
 
 ## Localization
 
-The control exposes the following variables that can be localized. See how you setup localization [here](../customize-components/localization.md).
+The control exposes the following variables that can be localized. For details about how to set up localization, see [Localizing components](../customize-components/localization.md).
 
 | String name        | Default value     |
 | ------------------ | ----------------- |
-| comboboxPlaceholder   | 'Select a term' |
+| comboboxPlaceholder   | `Select a term` |
