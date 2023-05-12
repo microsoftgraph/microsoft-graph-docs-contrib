@@ -13328,7 +13328,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningError** resource type.",
           "Target": "serviceProvisioningError"
         },
         {
@@ -13336,7 +13336,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningXmlError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningXmlError** resource type.",
           "Target": "serviceProvisioningXmlError"
         },
         {
