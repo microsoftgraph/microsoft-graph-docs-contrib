@@ -39,6 +39,17 @@ You will be creating an Azure Active Directory (AAD) application that will be us
 
 1. On the sidebar navigation, select **Certificates & secrets** under **Manage**.
 
+1. Select the **New client secret** button. Set *Description* to any name, set *Expires* to any value in the dropdown, and choose **Add**.
+    ![A screenshot showing the process to create a new client secret in the Azure portal.](../concepts/images/data-connect-aad-certs-secrets-new.png)
+    - After the client secret is created, make sure you save the **Value** somewhere safe, as it'll no longer be available later, and you'll need to create a new one.
+    - This will be referenced as the **service principal key(**.
+
+1. On the sidebar navigation for the application, select **Owners**.
+1. Ensure that your account meets the following requirements to be an application owner. (if you are using the Developer tenant use the Global admin account):
+    - Your user account corresponds to a valid user in the tenant who is not a service principal name.
+    - Your account must have an Exchange Online license assigned (must have a mailbox).
+    - Alongside the Exchange Online license, your account must also have a working E5 subscription/license.
+
 1. Verify that your account is listed as an application owner. If that isn't the case, add it to the list.
 
     ![A screenshot showing a user verifying that their account is set as owner for the application registration in the Azure portal.](../concepts/images/data-connect-aad-app-owners-new.png)

@@ -41,11 +41,6 @@ items:
     content: |
       [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
 
-  - title: Microsoft Graph Data Connect Application Consent Overview 
-    durationInMinutes: 5
-    content: |
-      [!INCLUDE [](../includes/data-connect-quickstart-08.md)]
-  
   - title: Congratulations!
     durationInMinutes: 0
     content: |

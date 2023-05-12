@@ -37,11 +37,12 @@ In this tutorial, you'll create your first single-tenant Microsoft Graph Data Co
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
+- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
 - Your Microsoft 365 and Azure tenants must be in the same Azure Active Directory (Azure AD) tenancy.
 - The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Microsoft Graph Data Connect can export data across tenants (for example, to enable ISVs), but this will not be explored in this tutorial.
 - One user in your Microsoft 365 tenant has the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". Only an "admin" user can approve the test application.
-- A different user in your Microsoft 365 tenant with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Going forward, this tutorial refers to this user as the "developer".  
-- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
+- A different user in your Microsoft 365 tenant with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Going forward, this tutorial refers to this user as the "developer". The developer user will do the majority of this tutorial. 
+
 
 1. **Microsoft 365 tenancy**
 
