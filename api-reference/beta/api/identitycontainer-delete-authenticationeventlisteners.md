@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identity/authenticationEventListeners/{authenticationEventListenerId}/$ref
+DELETE /identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}/$ref
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
 

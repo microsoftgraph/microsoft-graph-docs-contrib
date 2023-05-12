@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/$ref
+DELETE /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
 ```
 
 ## Request headers
@@ -55,13 +55,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/$ref
+DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
 ```
 
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

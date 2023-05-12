@@ -1,6 +1,6 @@
 ---
 title: "customExtensionClientConfiguration resource type"
-description: "HTTP connection settings that define how long Azure AD can wait for a response from an external app before it shuts down the connection. Only timeoutInMilliseconds is supported."
+description: "Connection settings that define how long Azure AD can wait for a response from an external app before it shuts down the connection. Only timeoutInMilliseconds is supported."
 author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-HTTP connection settings that define how long Azure AD can wait for a a response from an external app before it shuts down the connection when trying to trigger the external app. Only **timeoutInMilliseconds** is supported.
+Connection settings that define how long Azure AD can wait for a a response from an external app before it shuts down the connection when trying to trigger the external app. Only **timeoutInMilliseconds** is supported.
 
 ## Properties
 |Property|Type|Description|

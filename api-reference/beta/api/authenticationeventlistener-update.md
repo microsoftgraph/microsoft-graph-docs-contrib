@@ -42,15 +42,13 @@ PATCH /identity/authenticationEventListeners/{authenticationEventListenerId}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the **@odata.type** property and the value of the [authenticationEventListener](../resources/authenticationeventlistener.md) object type to update. For example, `"@odata.type": "#microsoft.graph.onTokenIssuanceStartListener"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow.  Optional.|
-
-> [!NOTE]
-> You must specify the **@odata.type** property and the value of the [authenticationEventListener](../resources/authenticationeventlistener.md) object type to update. For example, `"@odata.type": "#microsoft.graph.onTokenIssuanceStartListener"`.
 
 ## Response
 

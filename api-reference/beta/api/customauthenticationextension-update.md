@@ -42,6 +42,7 @@ PATCH /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the `@odata.type` property when updating a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. For example, to update an [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) object type, set the `@odata.type` property to `#microsoft.graph.onTokenIssuanceStartCustomExtension`.
 
 |Property|Type|Description|
 |:---|:---|:---|
