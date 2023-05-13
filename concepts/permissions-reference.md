@@ -1542,6 +1542,26 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Multi-tenant organization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _MultiTenantOrganization.ReadBasic.All_ |  | Allows the app to read multi-tenant organization basic details and active tenants | Yes |  |
+| _MultiTenantOrganization.Read.All_ |  | Allows the app to read multi-tenant organization details and tenants | Yes |  |
+| _MultiTenantOrganization.ReadWrite.All_ |  | Allows the app to read and write multi-tenant organization details and tenants | Yes |  |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _MultiTenantOrganization.ReadBasic.All_ |  | Allows the app to read multi-tenant organization basic details and active tenants | Yes |
+| _MultiTenantOrganization.Read.All_ |  | Allows the app to read multi-tenant organization details and tenants | Yes |
+| _MultiTenantOrganization.ReadWrite.All_ |  | Allows the app to read and write multi-tenant organization details and tenants | Yes |
+
+---
+
 ## Notes permissions
 
 #### Delegated permissions
