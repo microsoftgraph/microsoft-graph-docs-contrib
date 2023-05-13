@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /tenantRelationships/multiTenantOrganization/myTenant/$ref
+DELETE /tenantRelationships/multiTenantOrganization/myTenant/{id}/$ref
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/myTenant
+DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/myTenant/{id}/$ref
 ```
 
 
