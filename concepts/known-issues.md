@@ -449,14 +449,6 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel).
 
-### TeamworkAppSettings permissions are not visible in the Azure portal
-
-The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
-
-```http
-GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
-```
-
 ### Create channel can return an error response
 
 When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
