@@ -24,7 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 > **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the table above.
->
+
+> **Note:** Cloud Video Interop solutions that are [Certified for Microsoft Teams](https://learn.microsoft.com/en-us/MicrosoftTeams/cloud-video-interop) have permission to call the Create call API to join meetings for which they have meeting join links, similar to external users joining through a browser.
+
 > Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
