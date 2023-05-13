@@ -50,7 +50,7 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 |addedByTenantId|String|**TODO: Add Description** Optional.|
 |memberState|multiTenantOrganizationMemberState|**TODO: Add Description**. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Optional.|
 |role|multiTenantOrganizationMemberRole|**TODO: Add Description**. The possible values are: `owner`, `member`, `unknownFutureValue`. Optional.|
-|transitionDetails|[Microsoft.DirectoryServices.multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|**TODO: Add Description** Optional.|
+|transitionDetails|[multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|**TODO: Add Description** Optional.|
 
 
 
