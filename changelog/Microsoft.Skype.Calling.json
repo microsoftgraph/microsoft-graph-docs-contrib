@@ -1,6 +1,58 @@
 {
   "changelog": [
-   {
+    {
+      "ChangeList": [
+        {
+          "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onlineMeetingContentSharingDisabledReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingContentSharingDisabledReason** enumeration type.",
+          "Target": "onlineMeetingContentSharingDisabledReason"
+        },
+        {
+          "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onlineMeetingVideoDisabledReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingVideoDisabledReason** enumeration type.",
+          "Target": "onlineMeetingVideoDisabledReason"
+        },
+        {
+          "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingRestricted](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingRestricted?view=graph-rest-1.0) resource type.",
+          "Target": "onlineMeetingRestricted"
+        }
+      ],
+      "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-12T15:54:00.9807305Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "989ba92a-5a19-4864-a15a-c1f135776582",
+          "ApiChange": "Property",
+          "ChangedApiName": "restrictedExperience",
+          "ChangeType": "Addition",
+          "Description": "Added the **restrictedExperience** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "989ba92a-5a19-4864-a15a-c1f135776582",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-12T15:54:00.9816339Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
       "ChangeList": [
         {
           "Id": "ff343287-bb5a-446a-b91f-7ea65d7842db",
