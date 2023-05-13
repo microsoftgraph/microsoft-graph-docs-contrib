@@ -30,7 +30,7 @@
       "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-05-09T15:54:00.9807305Z",
+      "CreatedDateTime": "2023-05-12T15:54:00.9807305Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
     },
@@ -41,14 +41,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "restrictedExperience",
           "ChangeType": "Addition",
-          "Description": "Added the `restrictedExperience` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the **restrictedExperience** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         }
       ],
       "Id": "989ba92a-5a19-4864-a15a-c1f135776582",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-05-09T15:54:00.9816339Z",
+      "CreatedDateTime": "2023-05-12T15:54:00.9816339Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
     },
