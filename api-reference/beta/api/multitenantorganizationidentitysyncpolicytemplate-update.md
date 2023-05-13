@@ -53,7 +53,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentit
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -86,14 +86,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
-  "userSyncInbound": {
-    "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 

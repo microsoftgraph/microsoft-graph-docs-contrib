@@ -60,7 +60,7 @@ PATCH /tenantRelationships/multiTenantOrganization/myTenant
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -100,21 +100,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
-  "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
-  "displayName": "String",
-  "addedDateTime": "String (timestamp)",
-  "joinedDateTime": "String (timestamp)",
-  "addedByTenantId": "String",
-  "role": "String",
-  "state": "String",
-  "transitionDetails": {
-    "@odata.type": "microsoft.graph.multiTenantOrganizationMemberTransitionDetails"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 

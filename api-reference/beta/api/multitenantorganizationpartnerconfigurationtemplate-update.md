@@ -58,7 +58,7 @@ PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartner
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -106,29 +106,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.multiTenantOrganizationPartnerConfigurationTemplate",
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-  },
-  "b2bCollaborationOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bCollaborationInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "automaticUserConsentSettings": {
-    "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
