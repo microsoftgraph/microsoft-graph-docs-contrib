@@ -55,7 +55,7 @@ You can specify the following properties when creating a **multiTenantOrganizati
 |addedByTenantId|String|**TODO: Add Description** Optional.|
 |role|multiTenantOrganizationMemberRole|**TODO: Add Description**. The possible values are: `owner`, `member`, `unknownFutureValue`. Optional.|
 |state|multiTenantOrganizationMemberState|**TODO: Add Description**. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Optional.|
-|transitionDetails|[Microsoft.DirectoryServices.multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|**TODO: Add Description** Optional.|
+|transitionDetails|[microsoft.graph.multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|**TODO: Add Description** Optional.|
 
 
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganizatio
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganizationMember",
+  "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
   "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
   "displayName": "String",
   "addedDateTime": "String (timestamp)",
@@ -98,7 +98,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.multiTenantOrganizationMember"
+  "@odata.type": "microsoft.graph.multiTenantOrganizationMember"
 }
 -->
 ``` http
@@ -106,7 +106,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganizationMember",
+  "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
   "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
   "displayName": "String",
   "addedDateTime": "String (timestamp)",

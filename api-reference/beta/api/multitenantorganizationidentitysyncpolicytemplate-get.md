@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.multiTenantOrganizationIdentitySyncPolicyTemplate"
+  "@odata.type": "microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganizationIdentitySyncPolicyTemplate",
+    "@odata.type": "#microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate",
     "userSyncInbound": {
       "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
     }

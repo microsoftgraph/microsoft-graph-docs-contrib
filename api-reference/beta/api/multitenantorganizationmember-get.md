@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.multiTenantOrganizationMember"
+  "@odata.type": "microsoft.graph.multiTenantOrganizationMember"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganizationMember",
+    "@odata.type": "#microsoft.graph.multiTenantOrganizationMember",
     "tenantId": "dd35cd3e-161e-5afd-d9d1-b2c106c16c3e",
     "displayName": "String",
     "addedDateTime": "String (timestamp)",

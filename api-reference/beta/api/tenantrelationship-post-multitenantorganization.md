@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectorySe
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganization",
+  "@odata.type": "#microsoft.graph.multiTenantOrganization",
   "displayName": "String",
   "description": "String"
 }
@@ -85,7 +85,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.multiTenantOrganization"
+  "@odata.type": "microsoft.graph.multiTenantOrganization"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.multiTenantOrganization",
+  "@odata.type": "#microsoft.graph.multiTenantOrganization",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "description": "String"
