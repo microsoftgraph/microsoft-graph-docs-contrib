@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "outOfOfficeDays",
           "ChangeType": "Addition",
-          "Description": "Added the `outOfOfficeDays` property to the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-beta) resource.",
+          "Description": "Added the **outOfOfficeDays** property to the [attackSimulationUser](https://learn.microsoft.com/en-us/graph/api/resources/attackSimulationUser?view=graph-rest-beta) resource.",
           "Target": "attackSimulationUser"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "latestSimulationActivity",
           "ChangeType": "Addition",
-          "Description": "Added the `latestSimulationActivity` property to the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **latestSimulationActivity** property to the [userSimulationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userSimulationDetails?view=graph-rest-beta) resource.",
           "Target": "userSimulationDetails"
         }
       ],
