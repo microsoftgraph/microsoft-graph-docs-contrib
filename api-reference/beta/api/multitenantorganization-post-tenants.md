@@ -1,18 +1,18 @@
 ---
-title: "Create multiTenantOrganizationMember"
-description: "Create a new multiTenantOrganizationMember object."
+title: "Add multiTenantOrganizationMember"
+description: "Add a new multiTenantOrganizationMember object."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create multiTenantOrganizationMember
+# Add multiTenantOrganizationMember
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
+Add a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

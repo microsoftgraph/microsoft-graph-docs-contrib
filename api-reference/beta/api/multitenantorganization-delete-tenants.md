@@ -1,18 +1,18 @@
 ---
-title: "Delete multiTenantOrganizationMember"
-description: "Delete a multiTenantOrganizationMember object."
+title: "Remove multiTenantOrganizationMember"
+description: "Remove a multiTenantOrganizationMember object."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete multiTenantOrganizationMember
+# Remove multiTenantOrganizationMember
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
+Remove a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
