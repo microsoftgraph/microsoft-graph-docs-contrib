@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartHandler resource type"
-description: "Handler for an onTokenIssuanceStart event"
+description: "Handler for the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
