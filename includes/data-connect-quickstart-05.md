@@ -35,7 +35,7 @@ This steps describe how you register your application with Data Connect. Develop
 
 Specify the datasets that the app registration needs to query. To learn more about datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets). Click the **Next : Datasets >** button in bottom of the page.
 
-4. Select `BasicDataSet_v0.Message_v1` from the **Dataset** drop down, and in the **Columns** drop down, choose `All`. In the new row, select `BasicDataSet_v1` from the **Dataset** drop down, and in the **Columns** drop down, choose- `All`.
+4. Select `BasicDataSet_v0.Message_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose `All`. In the new row, select `BasicDataSet_v1` from the **Dataset** dropdown, and in the **Columns** dropdown, choose- `All`.
 
     ![A screenshot that shows the dataset catalog on the wizard.](../concepts/images/data-connect-register-app-3.png)
 
@@ -72,6 +72,6 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
     ![A screenshot that shows the application details view with the Approve button highlighted.](../concepts/images/data-connect-app-register-9.png)
 
-7. The app details view should close and the app summary table should reload with your app listed with Status **Approved**.
+7. After clicking **Approve**, the application summary table reloads with your app listed with the status **Approved**.
 
     ![A screenshot that shows the approved application in the landing page of the Microsoft Graph Data Connect applications portal.](../concepts/images/data-connect-app-register-10.png)
