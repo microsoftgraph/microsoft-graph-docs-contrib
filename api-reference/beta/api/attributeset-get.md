@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get attributeSet
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of an [attributeSet](../resources/attributeset.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -43,14 +45,17 @@ GET /directory/attributeSets/{attributeSetId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -59,16 +64,15 @@ If successful, this method returns a `200 OK` response code and an [attributeSet
 
 ## Examples
 
-### Example: Get an attribute set
+### Request
 
 The following example gets a single attribute set named `Engineering`.
-
-#### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attributeset_single"
+  "name": "get_attributeset_single",
+  "sampleKeys": ["Engineering"]
 }
 -->
 ``` http
@@ -101,7 +105,9 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 
 ---
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
