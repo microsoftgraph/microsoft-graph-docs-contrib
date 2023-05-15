@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/Item/WindowsUpdatesAddMembersById"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/Item/MicrosoftGraphWindowsUpdatesAddMembersById"
 	  //other-imports
 )
 
@@ -26,7 +26,7 @@ requestBody.SetIds(ids)
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType) 
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().ByUpdatableAssetId("updatableAsset-id").WindowsUpdatesAddMembersById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().ByUpdatableAssetId("updatableAsset-id").MicrosoftGraphWindowsUpdatesAddMembersById().Post(context.Background(), requestBody, nil)
 
 
 ```

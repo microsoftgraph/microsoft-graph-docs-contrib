@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Security/Cases/EdiscoveryCases/Item/Custodians/SecurityApplyHold"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Security/Cases/EdiscoveryCases/Item/Custodians/MicrosoftGraphSecurityApplyHold"
 	  //other-imports
 )
 
@@ -23,7 +23,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().SecurityApplyHold().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().MicrosoftGraphSecurityApplyHold().Post(context.Background(), requestBody, nil)
 
 
 ```
