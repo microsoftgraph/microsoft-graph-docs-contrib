@@ -1,6 +1,6 @@
 ---
-title: SitePage
-description: This resource represents a site page in the SitePages list.
+title: "sitePage resource type"
+description: This resource represents a site page in the sitePages list.
 author: Sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents a page in the SitePages [list](../resources/list.md).
+This resource represents a page in the sitePages [list](../resources/list.md).
 It contains the title, layout, and a collection of [webPart](../resources/webpart.md)s.
 
 Inherits from [baseSitePage](../resources/basesitepage.md).
@@ -34,15 +34,15 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 | Property             | Type                                                                   | Description                                                                                                                     |
 | :------------------- | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| contentType          | [contentTypeInfo](../resources/contentTypeInfo.md)                     | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| createdBy            | [identitySet](../resources/identityset.md)                             | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| createdDateTime      | DateTimeOffset                                                         | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| description          | String                                                                 | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| eTag                 | String                                                                 | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| id                   | String                                                                 | Inherited from [entity](../resources/entity.md).                                                                                |
-| lastModifiedBy       | [identitySet](../resources/identityset.md)                             | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| lastModifiedDateTime | DateTimeOffset                                                         | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
-| name                 | String                                                                 | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
+| contentType          | [contentTypeInfo](../resources/contentTypeInfo.md)                   | The content type of this item. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| createdBy            | [identitySet](../resources/identityset.md)                           |  Identity of the creator of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| createdDateTime      | DateTimeOffset                                                       | The date and time the item was created. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| description          | String                                                               | The descriptive text for the item. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| eTag                 | String                                                               | ETag for the item. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| id                   | String                                                               | The unique identifier of the item. Inherited from [entity](../resources/entity.md).                                                                                |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)                           | TIdentity of the last modifier of this item. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                            |
+| name                 | String                                                               | The name of the item. Inherited from [baseItem](../resources/baseitem.md).    |
 | pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. |
 | parentReference      | [itemReference](../resources/itemreference.md)                         | Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
 | promotionKind        | [pagePromotionType](../resources/sitepage.md#pagepromotiontype-values) | Indicates the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
