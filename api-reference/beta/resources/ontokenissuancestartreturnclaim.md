@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A claim returned by an API that is to be add to a token after an onTokenIssuanceStart event.
+A claim returned by an API that is to be added to a token after the event when a token is about to be issued to your application.
 
 ## Properties
 |Property|Type|Description|
