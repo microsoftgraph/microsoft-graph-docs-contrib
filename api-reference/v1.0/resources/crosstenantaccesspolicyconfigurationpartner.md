@@ -29,6 +29,7 @@ For any partner-specific property that is `null`, these settings will inherit th
 
 |Property|Type|Description|
 |:---|:---|:---|
+| automaticUserConsentSettings | [inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md) | Determines the partner-specific configuration for automatic user consent settings. Unless specifically configured, the **inboundAllowed** and **outboundAllowed** properties are `null` and inherit from the default settings, which is always `false`. |
 | b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. |
 | b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. |
@@ -39,7 +40,9 @@ For any partner-specific property that is `null`, these settings will inherit th
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|identitySynchronization|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Defines the cross-tenant policy for the synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multi-tenant organization by automating the creation, update, and deletion of users from one tenant to another.|
 
 ## JSON representation
 
@@ -55,21 +58,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "b2bCollaborationInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bCollaborationOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-  },
+  "automaticUserConsentSettings": {"@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"},
+  "b2bCollaborationInbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
+  "b2bCollaborationOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
+  "b2bDirectConnectInbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
+  "b2bDirectConnectOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
+  "inboundTrust": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"},
   "isServiceProvider": "Boolean",
   "tenantId": "String (identifier)"
 }
