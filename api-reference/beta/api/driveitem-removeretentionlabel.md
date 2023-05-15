@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove a retention label from a [driveItem](../resources/driveitem.md).
 
-For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/MicrosoftDocs/microsoft-365/compliance/auto-apply-retention-labels-scenario.md).
+For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](https://learn.microsoft.com/en-us/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
 ## Permissions
 
