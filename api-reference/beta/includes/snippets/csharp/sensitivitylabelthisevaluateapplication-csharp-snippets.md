@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.SecurityEvaluateApplication.EvaluateApplicationPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateApplication.EvaluateApplicationPostRequestBody
 {
 	ContentInfo = new Microsoft.Graph.Beta.Models.Security.ContentInfo
 	{
@@ -102,7 +102,7 @@ var requestBody = new Microsoft.Graph.Beta.Users.Item.Security.InformationProtec
 		},
 	},
 };
-var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.SecurityEvaluateApplication.PostAsync(requestBody, (requestConfiguration) =>
+var result = await graphClient.Users["{user-id}"].Security.InformationProtection.SensitivityLabels.MicrosoftGraphSecurityEvaluateApplication.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("User-Agent", "ContosoLobApp/1.0");
 });

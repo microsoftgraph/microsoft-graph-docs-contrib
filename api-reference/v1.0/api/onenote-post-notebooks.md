@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Notes.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -30,12 +31,14 @@ POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string | `application/json` |
 
 ## Request body
+
 In the request body, supply a name for the notebook. 
 
 Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"
@@ -45,8 +48,10 @@ Notebook names must be unique. The name cannot contain more than 128 characters 
 If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.
 
 ## Example
+
 ### Request
-Here is an example of the request.
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +94,9 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,4 +137,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
