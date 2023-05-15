@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # Create customSecurityAttributeDefinition
+
 Namespace: microsoft.graph
 
 Create a new [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -34,28 +36,30 @@ POST /directory/customSecurityAttributeDefinitions
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
 
-The following table shows the properties that you can configure when you create the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
+The following table shows the properties that you can configure when you create a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |attributeSet|String|Name of the attribute set. Case insensitive. Required.|
 |description|String|Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Cannot contain spaces or special characters. Can be changed later. Optional.|
-|isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Cannot be changed later. If `type` is set to Boolean, `isCollection` cannot be set to true. Required.|
-|isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that are assigned attribute values. Cannot be changed later. Required.|
+|isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Cannot be changed later. If **type** is set to `Boolean`, **isCollection** cannot be set to `true`. Required.|
+|isSearchable|Boolean|Indicates whether custom security attribute values are indexed for searching on objects that are assigned attribute values. Cannot be changed later. Required.|
 |name|String|Name of the custom security attribute. Must be unique within an attribute set. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive. Required.|
 |status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Can be changed later. Required.|
-|type|String|Data type for the custom security attribute values. Supported types are `Boolean`, `Integer`, and `String`. Cannot be changed later. Required.|
-|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true. If `type` is set to Boolean, `usePreDefinedValuesOnly` cannot be set to true. Required.|
+|type|String|Data type for the custom security attribute values. Supported types are: `Boolean`, `Integer`, and `String`. Cannot be changed later. Required.|
+|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to `false`, free-form values are allowed. Can later be changed from `true` to `false`, but cannot be changed from `false` to `true`. If **type** is set to `Boolean`, **usePreDefinedValuesOnly** cannot be set to `true`. Required.|
 
-The `id` property is auto generated and cannot be set.
+The **id** property is auto generated and cannot be set.
 
 ## Response
 
@@ -72,13 +76,33 @@ The following example adds a new custom security attribute definition that is a 
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition"
 }
 -->
+``` http
+POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+
+{
+    "attributeSet":"Engineering",
+    "description":"Target completion date",
+    "isCollection":false,
+    "isSearchable":true,
+    "name":"ProjectDate",
+    "status":"Available",
+    "type":"String",
+    "usePreDefinedValuesOnly": false
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,14 +137,34 @@ The following example adds a new custom security attribute definition that suppo
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition_v2"
 }
 -->
+``` http
+POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+Content-length: 310
 
+{
+    "attributeSet":"Engineering",
+    "description":"Active projects for user",
+    "isCollection":true,
+    "isSearchable":true,
+    "name":"Project",
+    "status":"Available",
+    "type":"String",
+    "usePreDefinedValuesOnly": true
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,7 +192,7 @@ Content-Type: application/json
 
 ### Example 3: Add a custom security attribute with a list of predefined values
 
-The following example adds a new custom security attribute definition with a list of predefined values as a collection of strings.
+The following example adds a new custom security attribute definition with a list of predefined values as a collection of Strings.
 
 + Attribute set: `Engineering`
 + Attribute: `Project`
@@ -157,15 +201,47 @@ The following example adds a new custom security attribute definition with a lis
 
 #### Request
 
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition_allowedvalues"
 }
 -->
+``` http
+POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
 
+{
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
+    "allowedValues": [
+        {
+            "id": "Alpine",
+            "isActive": true
+        },
+        {
+            "id": "Baker",
+            "isActive": true
+        },
+        {
+            "id": "Cascade",
+            "isActive": true
+        }
+    ]
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update customSecurityAttributeDefinition
+
 Namespace: microsoft.graph
 
 Update the properties of a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,6 +36,7 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -44,17 +47,14 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 > To update the predefined values for a custom security attribute, you must add the **OData-Version** header and assign it the value `4.01`.
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
-The following table specifies the properties that can be updated.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Optional.|
 |status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Optional.|
-|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can be changed from true to false, but cannot be changed from false to true. If `type` is set to Boolean, `usePreDefinedValuesOnly` cannot be set to true. Optional.|
-
-
+|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to `false`, free-form values are allowed. Can be changed from `true` to `false`, but cannot be changed from `false` to `true`. If **type** is set to `Boolean`, **usePreDefinedValuesOnly** cannot be set to `true`. Optional.|
 
 ## Response
 
@@ -71,15 +71,27 @@ The following example updates the description for a custom security attribute de
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_customsecurityattributedefinition",
   "sampleKeys": ["Engineering_ProjectDate"]
 }
 -->
+``` http
+PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_ProjectDate
+Content-Type: application/json
 
+{
+  "description": "Target completion date (YYYY/MM/DD)",
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -104,6 +116,7 @@ The following example updates the status of an existing predefined value and add
 
 #### Request
 
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -111,9 +124,29 @@ The following example updates the status of an existing predefined value and add
   "sampleKeys": ["Engineering_Project"]
 }
 -->
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+OData-Version: 4.01
 
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -132,15 +165,27 @@ The following example deactivates a custom security attribute definition.
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_customsecurityattributedefinition_deactivate",
   "sampleKeys": ["Engineering_Project"]
 }
 -->
+``` http
+PATCH https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
 
+{
+  "status": "Deprecated"
+}
+```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

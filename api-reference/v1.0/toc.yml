@@ -4935,6 +4935,17 @@ items:
           items:
           - name: Overview
             href: resources/custom-security-attributes-overview.md
+          - name: Allowed values
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Create
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
+            - name: Update
+              href: api/allowedvalue-update.md
           - name: Attribute sets
             href: resources/attributeset.md
             items:
@@ -4957,17 +4968,6 @@ items:
               href: api/directory-post-customsecurityattributedefinitions.md
             - name: Update
               href: api/customsecurityattributedefinition-update.md
-          - name: Allowed values
-            href: resources/allowedvalue.md
-            items:
-            - name: List
-              href: api/customsecurityattributedefinition-list-allowedvalues.md
-            - name: Get
-              href: api/allowedvalue-get.md
-            - name: Create
-              href: api/customsecurityattributedefinition-post-allowedvalues.md
-            - name: Update
-              href: api/allowedvalue-update.md
         - name: Deleted items
           href: resources/directory.md
           items:

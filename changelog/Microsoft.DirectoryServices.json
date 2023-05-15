@@ -13210,7 +13210,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "allowedValue",
           "ChangeType": "Addition",
-          "Description": "Added the [allowedValue](https://learn.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-1.0) resource",
+          "Description": "Added the [allowedValue](https://learn.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-1.0) resource and supported methods.",
           "Target": "allowedValue"
         },
         {
@@ -13218,7 +13218,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attributeSet",
           "ChangeType": "Addition",
-          "Description": "Added the [attributeSet](https://learn.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-1.0) resource",
+          "Description": "Added the [attributeSet](https://learn.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-1.0) resource and supported methods.",
           "Target": "attributeSet"
         },
         {
@@ -13226,12 +13226,12 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [customSecurityAttributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the [customSecurityAttributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-1.0) resource and supported methods.",
           "Target": "customSecurityAttributeDefinition"
         },
         {
           "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "attributeSets",
           "ChangeType": "Addition",
           "Description": "Added the **attributeSets** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
@@ -13239,7 +13239,7 @@
         },
         {
           "Id": "b084b945-0968-4615-b2d7-0a61e3a02a55",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "customSecurityAttributeDefinitions",
           "ChangeType": "Addition",
           "Description": "Added the **customSecurityAttributeDefinitions** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
