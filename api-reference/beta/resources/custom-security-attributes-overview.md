@@ -9,9 +9,6 @@ doc_type: conceptualPageType
 
 # Overview of custom security attributes using the Microsoft Graph API
 
-> [!IMPORTANT]
-> The custom security attributes feature is currently in Preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
-
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. You can use these attributes to store information, categorize objects, or enforce fine-grained access control over specific Azure resources. Custom security attributes can be used with [Azure attribute-based access control (Azure ABAC)](/azure/role-based-access-control/conditions-overview).
 
 This article provides an overview of how to use the Microsoft Graph API to programmatically define and assign your own custom security attributes.
