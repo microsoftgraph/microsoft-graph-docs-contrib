@@ -155,7 +155,7 @@ Now that you've created the pipeline, it's time to run it.
 
     ![A screenshot of the Details page with ConsentPending highlighted.](../concepts/images/data-connect-synapse-accept-request.png)
 
-1. At this point, the activity run is internally paused until someone manually approves the consent request, either via the Microsoft 365 admin center or via PowerShell.
+1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
 
 # [Create an Azure Data Factory Pipeline](#tab/AzureDataFactoryPipeline)
 
@@ -295,3 +295,5 @@ With the pipeline created, now it is time to run it.
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. The status should progress through Initializing, Consent Pending, Extracting Data, Persisting Data, and Succeeded; this step doesn't require any further action from you.
 
     ![A screenshot of the Details tab with RequestingConsent highlighted.](../concepts/images/data-connect-adf-wait-for-approval.png)
+
+1. The request will be sent to the global admin to be approved. For the context of this tutorial, we recommend opening another tab with your admin priviledges enabled so you can approve the pipeline request.
