@@ -161,7 +161,7 @@ Content-Type: application/json
         "recommendedHuntingQueries" : [
             {
                 "@odata.type": "#microsoft.graph.security.recommendedHuntingQuery",
-                "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == "Potential Raspberry Robin worm command"   | join AlertEvidence on AlertId   | distinct DeviceId"
+                "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
             }
         ]
     }
@@ -255,7 +255,7 @@ Content-Type: application/json
         "recommendedHuntingQueries" : [
             {
                 "@odata.type": "#microsoft.graph.security.recommendedHuntingQuery",
-                "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == "Potential Raspberry Robin worm command"   | join AlertEvidence on AlertId   | distinct DeviceId"
+                "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
             }
         ],
         "alerts": [
