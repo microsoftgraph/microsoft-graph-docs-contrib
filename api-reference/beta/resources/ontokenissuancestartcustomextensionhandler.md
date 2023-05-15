@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartCustomExtensionHandler resource type"
-description: "Custom extension handler for an onTokenIssuanceStart event"
+description: "Custom extension handler for the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
