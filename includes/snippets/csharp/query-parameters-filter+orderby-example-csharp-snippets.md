@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var messages = await graphClient.Me.Messages
-	.Request()
-	.Filter("Subject eq 'welcome' and importance eq 'normal'")
-	.OrderBy("subject,importance,receivedDateTime desc")
-	.GetAsync();
+var result = await graphClient.Me.Messages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "Subject eq 'welcome' and importance eq 'normal'";
+	requestConfiguration.QueryParameters.Orderby = new string []{ "subject","importance","receivedDateTime desc" };
+});
+
 
 ```

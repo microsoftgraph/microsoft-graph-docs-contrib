@@ -4,23 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var ediscoveryCaseSettings = new Microsoft.Graph.Security.EdiscoveryCaseSettings
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryCaseSettings
 {
-	RedundancyDetection = new RedundancyDetectionSettings
+	OdataType = "#microsoft.graph.security.ediscoveryCaseSettings",
+	RedundancyDetection = new Microsoft.Graph.Beta.Models.Security.RedundancyDetectionSettings
 	{
+		OdataType = "microsoft.graph.security.redundancyDetectionSettings",
 	},
-	TopicModeling = new TopicModelingSettings
+	TopicModeling = new Microsoft.Graph.Beta.Models.Security.TopicModelingSettings
 	{
+		OdataType = "microsoft.graph.security.topicModelingSettings",
 	},
-	Ocr = new OcrSettings
+	Ocr = new Microsoft.Graph.Beta.Models.Security.OcrSettings
 	{
-	}
+		OdataType = "microsoft.graph.security.ocrSettings",
+	},
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Settings.PatchAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Settings
-	.Request()
-	.UpdateAsync(ediscoveryCaseSettings);
 
 ```

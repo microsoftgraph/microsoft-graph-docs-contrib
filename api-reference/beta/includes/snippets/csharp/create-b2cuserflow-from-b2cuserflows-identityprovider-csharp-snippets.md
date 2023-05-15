@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var b2cIdentityUserFlow = new B2cIdentityUserFlow
+var requestBody = new B2cIdentityUserFlow
 {
 	Id = "Customer",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 3f,
-	IdentityProviders = new B2cIdentityUserFlowIdentityProvidersCollectionWithReferencesPage()
+	IdentityProviders = new List<IdentityProvider>
 	{
 		new IdentityProvider
 		{
-			Id = "Facebook-OAuth"
-		}
-	}
+			Id = "Facebook-OAuth",
+		},
+	},
 };
+var result = await graphClient.Identity.B2cUserFlows.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Location", "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')");
+});
 
-await graphClient.Identity.B2cUserFlows
-	.Request()
-	.Header("Location","https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')")
-	.AddAsync(b2cIdentityUserFlow);
 
 ```

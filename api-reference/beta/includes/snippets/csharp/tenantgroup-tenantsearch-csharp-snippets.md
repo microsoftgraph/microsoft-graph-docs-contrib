@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tenantId = "String";
+var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.TenantGroups.MicrosoftGraphManagedTenantsTenantSearch.TenantSearchPostRequestBody
+{
+	TenantId = "String",
+};
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantGroups.MicrosoftGraphManagedTenantsTenantSearch.PostAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantGroups
-	.TenantSearch(tenantId)
-	.Request()
-	.PostAsync();
 
 ```

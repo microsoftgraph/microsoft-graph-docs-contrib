@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.Outlook.Tasks["{outlookTask-id}"]
-	.Complete()
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.PostAsync();
+var result = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Complete.PostAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
+
 
 ```

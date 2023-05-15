@@ -4,43 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review access of users and groups to privileged roles",
 	DescriptionForAdmins = "Review access of users and groups to privileged roles",
-	Scope = new PrincipalResourceMembershipsScope
+	Scope = new AccessReviewScope
 	{
-		PrincipalScopes = new List<AccessReviewScope>()
+		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
+		AdditionalData = new Dictionary<string, object>
 		{
-			new AccessReviewQueryScope
 			{
-				Query = "/users",
-				QueryType = "MicrosoftGraph"
+				"principalScopes" , new List<>
+				{
+					new 
+					{
+						OdataType = "#microsoft.graph.accessReviewQueryScope",
+						Query = "/users",
+						QueryType = "MicrosoftGraph",
+					},
+					new 
+					{
+						OdataType = "#microsoft.graph.accessReviewQueryScope",
+						Query = "/groups",
+						QueryType = "MicrosoftGraph",
+					},
+				}
 			},
-			new AccessReviewQueryScope
 			{
-				Query = "/groups",
-				QueryType = "MicrosoftGraph"
-			}
+				"resourceScopes" , new List<>
+				{
+					new 
+					{
+						OdataType = "#microsoft.graph.accessReviewQueryScope",
+						Query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
+						QueryType = "MicrosoftGraph",
+					},
+				}
+			},
 		},
-		ResourceScopes = new List<AccessReviewScope>()
-		{
-			new AccessReviewQueryScope
-			{
-				Query = "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
-				QueryType = "MicrosoftGraph"
-			}
-		}
 	},
-	Reviewers = new List<AccessReviewReviewerScope>()
+	Reviewers = new List<AccessReviewReviewerScope>
 	{
 		new AccessReviewReviewerScope
 		{
 			Query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85",
-			QueryType = "MicrosoftGraph"
-		}
+			QueryType = "MicrosoftGraph",
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -56,19 +67,17 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			Pattern = new RecurrencePattern
 			{
 				Type = RecurrencePatternType.AbsoluteMonthly,
-				Interval = 3
+				Interval = 3,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2022,3,2)
-			}
-		}
-	}
+				StartDate = new Date(DateTime.Parse("2022-03-02")),
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

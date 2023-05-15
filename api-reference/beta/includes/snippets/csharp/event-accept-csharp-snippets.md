@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var comment = "comment-value";
+var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Accept.AcceptPostRequestBody
+{
+	Comment = "comment-value",
+	SendResponse = true,
+};
+await graphClient.Me.Events["{event-id}"].Accept.PostAsync(requestBody);
 
-var sendResponse = true;
-
-await graphClient.Me.Events["{event-id}"]
-	.Accept(comment,sendResponse)
-	.Request()
-	.PostAsync();
 
 ```

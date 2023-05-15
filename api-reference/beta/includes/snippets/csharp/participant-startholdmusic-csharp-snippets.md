@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customPrompt = new MediaPrompt
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participants.Item.StartHoldMusic.StartHoldMusicPostRequestBody
 {
-	MediaInfo = new MediaInfo
+	CustomPrompt = new Prompt
 	{
-		Uri = "https://bot.contoso.com/onHold.wav"
-	}
+		OdataType = "#microsoft.graph.mediaPrompt",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"mediaInfo" , new 
+				{
+					OdataType = "#microsoft.graph.mediaInfo",
+					Uri = "https://bot.contoso.com/onHold.wav",
+				}
+			},
+		},
+	},
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 };
+var result = await graphClient.Communications.Calls["{call-id}"].Participants["{participant-id}"].StartHoldMusic.PostAsync(requestBody);
 
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
-
-await graphClient.Communications.Calls["{call-id}"].Participants["{participant-id}"]
-	.StartHoldMusic(customPrompt,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

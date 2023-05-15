@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamsApps = await graphClient.AppCatalogs.TeamsApps
-	.Request()
-	.Filter("distributionMethod eq 'organization'")
-	.GetAsync();
+var result = await graphClient.AppCatalogs.TeamsApps.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "distributionMethod eq 'organization'";
+});
+
 
 ```

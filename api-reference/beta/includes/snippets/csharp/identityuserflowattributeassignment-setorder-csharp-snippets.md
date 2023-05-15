@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var newAssignmentOrder = new AssignmentOrder
+var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.UserAttributeAssignments.SetOrder.SetOrderPostRequestBody
 {
-	Order = new List<String>()
+	NewAssignmentOrder = new AssignmentOrder
 	{
-		"City",
-		"extension_GUID_ShoeSize"
-	}
+		Order = new List<string>
+		{
+			"City",
+			"extension_GUID_ShoeSize",
+		},
+	},
 };
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments.SetOrder.PostAsync(requestBody);
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments
-	.SetOrder(newAssignmentOrder)
-	.Request()
-	.PostAsync();
 
 ```

@@ -13,14 +13,14 @@ $requestBody = new IdentityProviderBase();
 $requestBody->set@odatatype('#microsoft.graph.socialIdentityProvider');
 
 $additionalData = [
-'responseType' => 'id_token', 
+		'responseType' => 'id_token', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->identityProvidersById('identityProviderBase-id')->patch($requestBody);
 
 
 ```

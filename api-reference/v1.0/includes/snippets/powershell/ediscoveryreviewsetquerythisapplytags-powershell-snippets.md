@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	TagsToAdd = @(
+	tagsToAdd = @(
 		@{
-			Id = "d3d99dc704a74801b792b3e1e722aa0d"
+			id = "d3d99dc704a74801b792b3e1e722aa0d"
 		}
 	)
 }

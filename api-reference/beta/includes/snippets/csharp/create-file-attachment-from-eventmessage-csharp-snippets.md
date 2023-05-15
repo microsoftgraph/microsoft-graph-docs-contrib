@@ -4,19 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var attachment = new FileAttachment
+var requestBody = new Attachment
 {
+	OdataType = "#Microsoft.OutlookServices.FileAttachment",
 	Name = "name-value",
 	ContentType = "contentType-value",
 	IsInline = false,
-	ContentLocation = "contentLocation-value",
-	ContentBytes = Convert.FromBase64String("contentBytes-value")
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"contentLocation" , "contentLocation-value"
+		},
+		{
+			"contentBytes" , "contentBytes-value"
+		},
+	},
 };
+var result = await graphClient.Me.Messages["{message-id}"].Attachments.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
 
 ```

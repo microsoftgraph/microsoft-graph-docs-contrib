@@ -4,45 +4,49 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var shiftPreferences = new ShiftPreferences
+var requestBody = new Microsoft.Graph.Beta.Users.Item.Settings.ShiftPreferences.ShiftPreferencesPutRequestBody
 {
-	Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-	Availability = new List<ShiftAvailability>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		new ShiftAvailability
 		{
-			Recurrence = new PatternedRecurrence
+			"id" , "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
+		},
+		{
+			"@odata.etag" , "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"
+		},
+		{
+			"availability" , new List<>
 			{
-				Pattern = new RecurrencePattern
+				new 
 				{
-					Type = RecurrencePatternType.Weekly,
-					DaysOfWeek = new List<DayOfWeek>()
+					Recurrence = new 
 					{
-						DayOfWeek.Monday,
-						DayOfWeek.Wednesday,
-						DayOfWeek.Friday
+						Pattern = new 
+						{
+							Type = "Weekly",
+							DaysOfWeek = new List<string>
+							{
+								"Monday",
+								"Wednesday",
+								"Friday",
+							},
+							Interval = 1,
+						},
+						Range = new 
+						{
+							Type = "noEnd",
+						},
 					},
-					Interval = 1
+					TimeZone = "Pacific Standard Time",
+					TimeSlots = null,
 				},
-				Range = new RecurrenceRange
-				{
-					Type = RecurrenceRangeType.NoEnd
-				}
-			},
-			TimeZone = "Pacific Standard Time",
-			TimeSlots = null
-		}
+			}
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
-	}
 };
+await graphClient.Users["{user-id}"].Settings.ShiftPreferences.PutAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Settings.ShiftPreferences
-	.Request()
-	.PutAsync(shiftPreferences);
 
 ```

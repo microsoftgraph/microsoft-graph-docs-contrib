@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "testProperties";
+var requestBody = new Microsoft.Graph.Beta.ApplicationTemplates.Item.Instantiate.InstantiatePostRequestBody
+{
+	DisplayName = "testProperties",
+};
+var result = await graphClient.ApplicationTemplates["{applicationTemplate-id}"].Instantiate.PostAsync(requestBody);
 
-await graphClient.ApplicationTemplates["{applicationTemplate-id}"]
-	.Instantiate(displayName)
-	.Request()
-	.PostAsync();
 
 ```

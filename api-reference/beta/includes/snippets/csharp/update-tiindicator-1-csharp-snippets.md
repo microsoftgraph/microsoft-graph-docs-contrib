@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tiIndicator = new TiIndicator
+var requestBody = new TiIndicator
 {
-	Description = "description-updated"
+	Description = "description-updated",
 };
+var result = await graphClient.Security.TiIndicators["{tiIndicator-id}"].PatchAsync(requestBody);
 
-await graphClient.Security.TiIndicators["{tiIndicator-id}"]
-	.Request()
-	.UpdateAsync(tiIndicator);
 
 ```

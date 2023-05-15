@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
-	Ids = @(
+	ids = @(
 		"String"
 		"String"
 		"String"
 	)
-	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+	memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
 }
 
 Remove-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params

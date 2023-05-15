@@ -4,38 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}"
-};
-
-var activityType = "approvalRequired";
-
-var previewText = new ItemBody
-{
-	Content = "Deployment requires your approval"
-};
-
-var recipient = new AadUserNotificationRecipient
-{
-	UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
-};
-
-var templateParameters = new List<KeyValuePair>()
-{
-	new KeyValuePair
+	Topic = new TeamworkActivityTopic
 	{
-		Name = "approvalTaskId",
-		Value = "2020AAGGTAPP"
-	}
+		Source = TeamworkActivityTopicSource.EntityUrl,
+		Value = "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}",
+	},
+	ActivityType = "approvalRequired",
+	PreviewText = new ItemBody
+	{
+		Content = "Deployment requires your approval",
+	},
+	Recipient = new TeamworkNotificationRecipient
+	{
+		OdataType = "microsoft.graph.aadUserNotificationRecipient",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
+			},
+		},
+	},
+	TemplateParameters = new List<KeyValuePair>
+	{
+		new KeyValuePair
+		{
+			Name = "approvalTaskId",
+			Value = "2020AAGGTAPP",
+		},
+	},
 };
+await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
-	.Request()
-	.PostAsync();
 
 ```

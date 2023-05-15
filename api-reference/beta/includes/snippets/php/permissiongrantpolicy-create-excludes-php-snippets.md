@@ -16,7 +16,7 @@ $requestBody->setResourceApplication('00000003-0000-0000-c000-000000000000');
 
 
 
-$requestResult = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->excludes()->post($requestBody);
+$result = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->excludes()->post($requestBody);
 
 
 ```

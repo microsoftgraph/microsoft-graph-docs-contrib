@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teams = await graphClient.Teams
-	.Request()
-	.Filter("displayName eq 'A Contoso Team'")
-	.Select("id,description")
-	.GetAsync();
+await graphClient.Teams.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "displayName eq 'A Contoso Team'";
+	requestConfiguration.QueryParameters.Select = new string []{ "id","description" };
+});
+
 
 ```

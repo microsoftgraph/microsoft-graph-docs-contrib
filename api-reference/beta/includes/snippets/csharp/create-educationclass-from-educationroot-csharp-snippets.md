@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var educationClass = new EducationClass
+var requestBody = new EducationClass
 {
 	Description = "Health Level 1",
 	ClassCode = "Health 501",
@@ -14,11 +14,9 @@ var educationClass = new EducationClass
 	ExternalId = "11019",
 	ExternalName = "Health Level 1",
 	ExternalSource = EducationExternalSource.Sis,
-	MailNickname = "fineartschool.net"
+	MailNickname = "fineartschool.net",
 };
+var result = await graphClient.Education.Classes.PostAsync(requestBody);
 
-await graphClient.Education.Classes
-	.Request()
-	.AddAsync(educationClass);
 
 ```

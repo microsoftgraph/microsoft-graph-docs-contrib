@@ -4,63 +4,78 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var regionalAndLanguageSettings = new RegionalAndLanguageSettings
+var requestBody = new Microsoft.Graph.Beta.Me.Settings.RegionalAndLanguageSettings.RegionalAndLanguageSettingsPutRequestBody
 {
-	DefaultDisplayLanguage = new LocaleInfo
+	AdditionalData = new Dictionary<string, object>
 	{
-		Locale = "en-US"
-	},
-	AuthoringLanguages = new List<LocaleInfo>()
-	{
-		new LocaleInfo
 		{
-			Locale = "fr-FR"
-		},
-		new LocaleInfo
-		{
-			Locale = "de-DE"
-		}
-	},
-	DefaultTranslationLanguage = new LocaleInfo
-	{
-		Locale = "en-US"
-	},
-	DefaultSpeechInputLanguage = new LocaleInfo
-	{
-		Locale = "en-US"
-	},
-	DefaultRegionalFormat = new LocaleInfo
-	{
-		Locale = "en-GB"
-	},
-	RegionalFormatOverrides = new RegionalFormatOverrides
-	{
-		Calendar = "Gregorian Calendar",
-		FirstDayOfWeek = "Sunday",
-		ShortDateFormat = "yyyy-MM-dd",
-		LongDateFormat = "dddd, MMMM d, yyyy",
-		ShortTimeFormat = "HH:mm",
-		LongTimeFormat = "h:mm:ss tt",
-		TimeZone = "Pacific Standard Time"
-	},
-	TranslationPreferences = new TranslationPreferences
-	{
-		TranslationBehavior = TranslationBehavior.Yes,
-		LanguageOverrides = new List<TranslationLanguageOverride>()
-		{
-			new TranslationLanguageOverride
+			"defaultDisplayLanguage" , new 
 			{
-				LanguageTag = "fr",
-				TranslationBehavior = TranslationBehavior.Yes
+				Locale = "en-US",
 			}
-		}
-	}
+		},
+		{
+			"authoringLanguages" , new List<>
+			{
+				new 
+				{
+					Locale = "fr-FR",
+				},
+				new 
+				{
+					Locale = "de-DE",
+				},
+			}
+		},
+		{
+			"defaultTranslationLanguage" , new 
+			{
+				Locale = "en-US",
+			}
+		},
+		{
+			"defaultSpeechInputLanguage" , new 
+			{
+				Locale = "en-US",
+			}
+		},
+		{
+			"defaultRegionalFormat" , new 
+			{
+				Locale = "en-GB",
+			}
+		},
+		{
+			"regionalFormatOverrides" , new 
+			{
+				Calendar = "Gregorian Calendar",
+				FirstDayOfWeek = "Sunday",
+				ShortDateFormat = "yyyy-MM-dd",
+				LongDateFormat = "dddd, MMMM d, yyyy",
+				ShortTimeFormat = "HH:mm",
+				LongTimeFormat = "h:mm:ss tt",
+				TimeZone = "Pacific Standard Time",
+			}
+		},
+		{
+			"translationPreferences" , new 
+			{
+				TranslationBehavior = "Yes",
+				LanguageOverrides = new List<>
+				{
+					new 
+					{
+						LanguageTag = "fr",
+						TranslationBehavior = "Yes",
+					},
+				},
+			}
+		},
+	},
 };
+await graphClient.Me.Settings.RegionalAndLanguageSettings.PutAsync(requestBody);
 
-await graphClient.Me.Settings.RegionalAndLanguageSettings
-	.Request()
-	.PutAsync(regionalAndLanguageSettings);
 
 ```

@@ -4,38 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerPlanConfigurationLocalization = new PlannerPlanConfigurationLocalization
+var requestBody = new PlannerPlanConfigurationLocalization
 {
+	OdataType = "#microsoft.graph.plannerPlanConfigurationLocalization",
 	PlanTitle = "Order Tracking",
-	Buckets = new List<PlannerPlanConfigurationBucketLocalization>()
+	Buckets = new List<PlannerPlanConfigurationBucketLocalization>
 	{
 		new PlannerPlanConfigurationBucketLocalization
 		{
 			ExternalBucketId = "deliveryBucket",
-			Name = "Deliveries"
+			Name = "Deliveries",
 		},
 		new PlannerPlanConfigurationBucketLocalization
 		{
 			ExternalBucketId = "storePickupBucket",
-			Name = "Pickup"
+			Name = "Pickup",
 		},
 		new PlannerPlanConfigurationBucketLocalization
 		{
 			ExternalBucketId = "specialOrdersBucket",
-			Name = "Special Orders"
+			Name = "Special Orders",
 		},
 		new PlannerPlanConfigurationBucketLocalization
 		{
 			ExternalBucketId = "returnProcessingBucket",
-			Name = "Customer Returns"
-		}
-	}
+			Name = "Customer Returns",
+		},
+	},
 };
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations["{plannerPlanConfigurationLocalization-id}"].PatchAsync(requestBody);
 
-await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.Localizations["{plannerPlanConfigurationLocalization-id}"]
-	.Request()
-	.UpdateAsync(plannerPlanConfigurationLocalization);
 
 ```

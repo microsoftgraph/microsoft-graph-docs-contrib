@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var domain = new Domain
+var requestBody = new Domain
 {
-	Id = "contoso.com"
+	Id = "contoso.com",
 };
+var result = await graphClient.Domains.PostAsync(requestBody);
 
-await graphClient.Domains
-	.Request()
-	.AddAsync(domain);
 
 ```

@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var userInsightsSettings = new UserInsightsSettings
+var requestBody = new UserInsightsSettings
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Users["{user-id}"].Settings.ItemInsights.PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Settings.ItemInsights
-	.Request()
-	.UpdateAsync(userInsightsSettings);
 
 ```

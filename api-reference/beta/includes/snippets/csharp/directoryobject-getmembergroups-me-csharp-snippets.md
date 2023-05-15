@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var securityEnabledOnly = true;
+var requestBody = new Microsoft.Graph.Beta.Me.GetMemberGroups.GetMemberGroupsPostRequestBody
+{
+	SecurityEnabledOnly = true,
+};
+var result = await graphClient.Me.GetMemberGroups.PostAsync(requestBody);
 
-await graphClient.Me
-	.GetMemberGroups(securityEnabledOnly)
-	.Request()
-	.PostAsync();
 
 ```

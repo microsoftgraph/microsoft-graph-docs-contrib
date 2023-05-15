@@ -5,55 +5,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewServicePrincipal()
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewApplication()
 
 
 appRole := graphmodels.NewAppRole()
 allowedMemberTypes := []string {
 	"User",
-
-}
-appRole.SetAllowedMemberTypes(allowedMemberTypes)
-description := "Survey.ReadWrite.All"
-appRole.SetDescription(&description) 
-displayName := "Survey.ReadWrite.All"
-appRole.SetDisplayName(&displayName) 
-id := uuid.MustParse("3ce57053-0ebf-42d8-bf7c-74161a450e4b")
-appRole.SetId(&id) 
-isEnabled := true
-appRole.SetIsEnabled(&isEnabled) 
-value := "Survey.ReadWrite.All"
-appRole.SetValue(&value) 
-appRole1 := graphmodels.NewAppRole()
-allowedMemberTypes := []string {
-	"User",
 	"Application",
 
 }
-appRole1.SetAllowedMemberTypes(allowedMemberTypes)
+appRole.SetAllowedMemberTypes(allowedMemberTypes)
 description := "Survey.Read"
-appRole1.SetDescription(&description) 
+appRole.SetDescription(&description) 
 displayName := "Survey.Read"
-appRole1.SetDisplayName(&displayName) 
+appRole.SetDisplayName(&displayName) 
 id := uuid.MustParse("7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0")
-appRole1.SetId(&id) 
+appRole.SetId(&id) 
 isEnabled := false
-appRole1.SetIsEnabled(&isEnabled) 
+appRole.SetIsEnabled(&isEnabled) 
 origin := "Application"
-appRole1.SetOrigin(&origin) 
+appRole.SetOrigin(&origin) 
 value := "Survey.Read"
-appRole1.SetValue(&value) 
+appRole.SetValue(&value) 
 
 appRoles := []graphmodels.AppRoleable {
 	appRole,
-	appRole1,
 
 }
 requestBody.SetAppRoles(appRoles)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

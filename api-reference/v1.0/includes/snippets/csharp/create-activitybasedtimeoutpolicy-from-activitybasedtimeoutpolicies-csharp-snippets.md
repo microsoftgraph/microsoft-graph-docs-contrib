@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy
+var requestBody = new ActivityBasedTimeoutPolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"definition-value"
+		"definition-value",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
+var result = await graphClient.Policies.ActivityBasedTimeoutPolicies.PostAsync(requestBody);
 
-await graphClient.Policies.ActivityBasedTimeoutPolicies
-	.Request()
-	.AddAsync(activityBasedTimeoutPolicy);
 
 ```

@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"].DeleteAsync();
+
 
 ```

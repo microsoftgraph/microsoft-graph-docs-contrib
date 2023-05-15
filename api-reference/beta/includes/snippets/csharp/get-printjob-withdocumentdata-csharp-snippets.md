@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printJob = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"]
-	.Request()
-	.Expand("documents")
-	.GetAsync();
+var result = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "documents" };
+});
+
 
 ```

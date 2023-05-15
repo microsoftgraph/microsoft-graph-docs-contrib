@@ -4,22 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var extension = new OpenTypeExtension
+var requestBody = new Extension
 {
-	ExtensionName = "Com.Contoso.Estimate",
-	AdditionalData = new Dictionary<string, object>()
+	OdataType = "Microsoft.OutlookServices.OpenTypeExtension",
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"companyName", "Contoso"},
-		{"expirationDate", "2016-07-30T11:00:00Z"},
-		{"DealValue", "1010100"},
-		{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
-	}
+		{
+			"extensionName" , "Com.Contoso.Estimate"
+		},
+		{
+			"companyName" , "Contoso"
+		},
+		{
+			"expirationDate" , "2016-07-30T11:00:00.000Z"
+		},
+		{
+			"DealValue" , 1010100
+		},
+		{
+			"topPicks" , new List<string>
+			{
+				"Employees only",
+				"Add spouse or guest",
+				"Add family",
+			}
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Extensions["{extension-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Extensions["{extension-id}"]
-	.Request()
-	.UpdateAsync(extension);
 
 ```

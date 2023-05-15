@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var fido2AuthenticationMethod = await graphClient.Me.Authentication.Fido2Methods["{fido2AuthenticationMethod-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Me.Authentication.Fido2Methods["{fido2AuthenticationMethod-id}"].GetAsync();
+
 
 ```

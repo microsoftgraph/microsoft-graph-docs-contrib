@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = await graphClient.Users["{user-id}"]
-	.Request()
-	.Select("id,displayName,extkmpdyld2_graphLearnCourses")
-	.GetAsync();
+var result = await graphClient.Users["{user-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","extkmpdyld2_graphLearnCourses" };
+});
+
 
 ```

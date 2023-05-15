@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var password = "1234567890";
+var requestBody = new Microsoft.Graph.Beta.Users.ValidatePassword.ValidatePasswordPostRequestBody
+{
+	Password = "1234567890",
+};
+var result = await graphClient.Users.ValidatePassword.PostAsync(requestBody);
 
-await graphClient.Users
-	.ValidatePassword(password)
-	.Request()
-	.PostAsync();
 
 ```

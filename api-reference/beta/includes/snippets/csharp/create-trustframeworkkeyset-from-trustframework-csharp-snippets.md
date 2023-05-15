@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var trustFrameworkKeySet = new TrustFrameworkKeySet
+var requestBody = new TrustFrameworkKeySet
 {
 	Id = "keyset1",
-	Keys = new List<TrustFrameworkKey>()
+	Keys = new List<TrustFrameworkKey>
 	{
 		new TrustFrameworkKey
 		{
 			K = "k-value",
-			X5c = new List<String>()
+			X5c = new List<string>
 			{
-				"x5c-value"
+				"x5c-value",
 			},
 			X5t = "x5t-value",
 			Kty = "kty-value",
 			Use = "use-value",
-			Exp = 99,
-			Nbf = 99,
+			Exp = 99L,
+			Nbf = 99L,
 			Kid = "kid-value",
 			E = "e-value",
 			N = "n-value",
@@ -31,13 +31,11 @@ var trustFrameworkKeySet = new TrustFrameworkKeySet
 			Q = "q-value",
 			Dp = "dp-value",
 			Dq = "dq-value",
-			Qi = "qi-value"
-		}
-	}
+			Qi = "qi-value",
+		},
+	},
 };
+var result = await graphClient.TrustFramework.KeySets.PostAsync(requestBody);
 
-await graphClient.TrustFramework.KeySets
-	.Request()
-	.AddAsync(trustFrameworkKeySet);
 
 ```

@@ -4,66 +4,74 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Group Multi-stage Access Review",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewQueryScope
+	Scope = new AccessReviewScope
 	{
-		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
-		QueryType = "MicrosoftGraph"
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
-	StageSettings = new List<AccessReviewStageSettings>()
+	StageSettings = new List<AccessReviewStageSettings>
 	{
 		new AccessReviewStageSettings
 		{
 			StageId = "1",
 			DurationInDays = 2,
 			RecommendationsEnabled = false,
-			DecisionsThatWillMoveToNextStage = new List<String>()
+			DecisionsThatWillMoveToNextStage = new List<string>
 			{
 				"NotReviewed",
-				"Approve"
+				"Approve",
 			},
-			Reviewers = new List<AccessReviewReviewerScope>()
+			Reviewers = new List<AccessReviewReviewerScope>
 			{
 				new AccessReviewReviewerScope
 				{
 					Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-					QueryType = "MicrosoftGraph"
-				}
-			}
+					QueryType = "MicrosoftGraph",
+				},
+			},
 		},
 		new AccessReviewStageSettings
 		{
 			StageId = "2",
-			DependsOn = new List<String>()
+			DependsOn = new List<string>
 			{
-				"1"
+				"1",
 			},
 			DurationInDays = 2,
 			RecommendationsEnabled = true,
-			Reviewers = new List<AccessReviewReviewerScope>()
+			Reviewers = new List<AccessReviewReviewerScope>
 			{
 				new AccessReviewReviewerScope
 				{
 					Query = "./manager",
 					QueryType = "MicrosoftGraph",
-					QueryRoot = "decisions"
-				}
+					QueryRoot = "decisions",
+				},
 			},
-			FallbackReviewers = new List<AccessReviewReviewerScope>()
+			FallbackReviewers = new List<AccessReviewReviewerScope>
 			{
 				new AccessReviewReviewerScope
 				{
 					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-					QueryType = "MicrosoftGraph"
-				}
-			}
-		}
+					QueryType = "MicrosoftGraph",
+				},
+			},
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -78,20 +86,18 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			Pattern = new RecurrencePattern
 			{
 				Type = RecurrencePatternType.Weekly,
-				Interval = 1
+				Interval = 1,
 			},
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(2020,9,8)
-			}
+				StartDate = new Date(DateTime.Parse("2020-09-08T12:02:30.667Z")),
+			},
 		},
-		DecisionHistoriesForReviewersEnabled = true
-	}
+		DecisionHistoriesForReviewersEnabled = true,
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

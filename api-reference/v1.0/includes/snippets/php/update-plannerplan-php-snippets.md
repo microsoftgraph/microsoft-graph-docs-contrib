@@ -14,16 +14,14 @@ $requestBody->setTitle('title-value');
 
 
 $requestConfiguration = new PlannerPlanRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'return=representation',
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'Prefer' => 'return=representation',
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->planner()->plansById('plannerPlan-id')->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->planner()->plansById('plannerPlan-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

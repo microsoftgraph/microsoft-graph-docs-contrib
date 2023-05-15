@@ -1,19 +1,19 @@
 ---
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
-author: "Sumana Chakrabarti"
+author: "sumanac"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
 
-# chatMessage: SetReaction
+# chatMessage: setReaction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a reaction to a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -37,14 +37,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To set a reaction to a **chatMessage** in a **channel**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/setReaction
+POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/setReaction
+```
+
+To set a reaction to a **chatMessage** in a **chat**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/setReaction
-POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/setReaction
-POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/setReaction
 ```
 
 ## Request headers

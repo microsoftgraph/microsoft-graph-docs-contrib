@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var channel = new Channel
+var requestBody = new Channel
 {
 	DisplayName = "TestChannelModeration",
 	Description = "Test channel moderation.",
@@ -16,12 +16,10 @@ var channel = new Channel
 		UserNewMessageRestriction = UserNewMessageRestriction.EveryoneExceptGuests,
 		ReplyRestriction = ReplyRestriction.Everyone,
 		AllowNewMessageFromBots = true,
-		AllowNewMessageFromConnectors = true
-	}
+		AllowNewMessageFromConnectors = true,
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
 
 ```

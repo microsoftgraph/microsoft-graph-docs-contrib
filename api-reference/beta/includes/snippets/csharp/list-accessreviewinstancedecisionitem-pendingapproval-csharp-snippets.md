@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var decisions = await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions
-	.Request()
-	.Skip(0)
-	.Top(100)
-	.GetAsync();
+var result = await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Top = 100;
+	requestConfiguration.QueryParameters.Skip = 0;
+});
+
 
 ```

@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
+var requestBody = new CertificateBasedAuthConfiguration
 {
-	CertificateAuthorities = new List<CertificateAuthority>()
+	CertificateAuthorities = new List<CertificateAuthority>
 	{
 		new CertificateAuthority
 		{
 			IsRootAuthority = true,
-			Certificate = Convert.FromBase64String("Binary")
-		}
-	}
+			Certificate = Convert.FromBase64String("Binary"),
+		},
+	},
 };
+var result = await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
 
-await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration
-	.Request()
-	.AddAsync(certificateBasedAuthConfiguration);
 
 ```

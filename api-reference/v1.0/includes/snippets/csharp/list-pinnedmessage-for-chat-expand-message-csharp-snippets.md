@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var pinnedMessages = await graphClient.Chats["{chat-id}"].PinnedMessages
-	.Request()
-	.Expand("message")
-	.GetAsync();
+var result = await graphClient.Chats["{chat-id}"].PinnedMessages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "message" };
+});
+
 
 ```

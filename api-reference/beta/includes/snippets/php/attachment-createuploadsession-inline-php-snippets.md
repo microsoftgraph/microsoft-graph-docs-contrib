@@ -25,7 +25,7 @@ $attachmentItem->setContentId('my_inline_picture');
 $requestBody->setAttachmentItem($attachmentItem);
 
 
-$requestResult = $graphServiceClient->me()->messagesById('message-id')->attachments()->createUploadSession()->post($requestBody);
+$result = $graphServiceClient->me()->messagesById('message-id')->attachments()->createUploadSession()->post($requestBody);
 
 
 ```

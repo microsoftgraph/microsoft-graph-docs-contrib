@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var term = new Microsoft.Graph.TermStore.Term
+var requestBody = new Microsoft.Graph.Models.TermStore.Term
 {
-	Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
+	Labels = new List<Microsoft.Graph.Models.TermStore.LocalizedLabel>
 	{
-		new Microsoft.Graph.TermStore.LocalizedLabel
+		new Microsoft.Graph.Models.TermStore.LocalizedLabel
 		{
 			LanguageTag = "en-US",
 			Name = "Car",
-			IsDefault = true
-		}
-	}
+			IsDefault = true,
+		},
+	},
 };
+var result = await graphClient.Sites["{site-id}"].TermStore.Sets["{set-id}"].Children.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].TermStore.Sets["{termStore.set-id}"].Children
-	.Request()
-	.AddAsync(term);
 
 ```

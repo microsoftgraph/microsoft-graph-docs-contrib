@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var meetingRegistrantBase = new ExternalMeetingRegistrant
+var requestBody = new MeetingRegistrantBase
 {
-	Id = "9d96988d-a66a-46ce-aad7-0b245615b297"
+	OdataType = "#microsoft.graph.externalMeetingRegistrant",
+	Id = "9d96988d-a66a-46ce-aad7-0b245615b297",
 };
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants.PostAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants
-	.Request()
-	.AddAsync(meetingRegistrantBase);
 
 ```

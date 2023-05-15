@@ -37,7 +37,7 @@ GET /security/attackSimulation/payloads?$filter=source eq 'Tenant'
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. You can use the `$filter` and `$orderby` query parameters on the **technique**, **simulationAttackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, and **status** properties.
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
@@ -88,20 +88,23 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=source eq 'Tenant'
 ```
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-payload-go-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-payload-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-payload-powershell-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-payload-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-payload-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-payload-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -126,7 +129,7 @@ Content-Type: application/json
             "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
             "name": "AttackSimTest Payload",
             "description": "AttackSim Test Payload",
-            "attackType": "social",
+            "simulationAttackType": "social",
             "platform": "email",
             "isAutomated": null,
             "status": "draft",
@@ -134,7 +137,7 @@ Content-Type: application/json
             "language": "en",
             "predictedCompromiseRate": 20.0,
             "complexity": "medium",
-            "attackTechnique": "credentialHarvesting",
+            "technique": "credentialHarvesting",
             "createdBy": {
                 "email": "faiza@contoso.com",
                 "id": "121212",

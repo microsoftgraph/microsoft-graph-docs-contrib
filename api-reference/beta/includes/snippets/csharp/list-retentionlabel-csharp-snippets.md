@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var retentionLabels = await graphClient.Security.Labels.RetentionLabels
-	.Request()
-	.GetAsync();
+var result = await graphClient.Security.Labels.RetentionLabels.GetAsync();
+
 
 ```

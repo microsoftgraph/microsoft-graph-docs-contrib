@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
+var requestBody = new Microsoft.Graph.External.Connections.Item.Items.Item.Item
 {
-	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		new Microsoft.Graph.ExternalConnectors.Acl
 		{
-			Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
-			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant
-		}
-	}
+			"acl" , new List<>
+			{
+				new 
+				{
+					Type = "everyone",
+					Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+					AccessType = "grant",
+				},
+			}
+		},
+	},
 };
+await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PatchAsync(requestBody);
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.Request()
-	.UpdateAsync(externalItem);
 
 ```

@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var rows = await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows
-	.Request()
-	.Skip(5)
-	.Top(5)
-	.GetAsync();
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Top = 5;
+	requestConfiguration.QueryParameters.Skip = 5;
+});
+
 
 ```

@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEvent()
 originalStartTimeZone := "originalStartTimeZone-value"
@@ -13,6 +21,8 @@ requestBody.SetOriginalStartTimeZone(&originalStartTimeZone)
 originalEndTimeZone := "originalEndTimeZone-value"
 requestBody.SetOriginalEndTimeZone(&originalEndTimeZone) 
 responseStatus := graphmodels.NewResponseStatus()
+response := graphmodels.NONE_RESPONSETYPE 
+responseStatus.SetResponse(&response) 
 time , err := time.Parse(time.RFC3339, "datetime-value")
 responseStatus.SetTime(&time) 
 requestBody.SetResponseStatus(responseStatus)
@@ -34,7 +44,7 @@ categories := []string {
 }
 requestBody.SetCategories(categories)
 
-result, err := graphClient.Me().EventsById("event-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Me().Events().ByEventId("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

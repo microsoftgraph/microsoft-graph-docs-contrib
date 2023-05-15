@@ -4,25 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var skillProficiency = new SkillProficiency
+var requestBody = new SkillProficiency
 {
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Professional"
+		"Professional",
 	},
 	AllowedAudiences = AllowedAudiences.Organization,
 	DisplayName = "API Design",
 	Proficiency = SkillProficiencyLevel.GeneralProfessional,
-	CollaborationTags = new List<String>()
+	CollaborationTags = new List<string>
 	{
-		"ableToMentor"
-	}
+		"ableToMentor",
+	},
 };
+var result = await graphClient.Me.Profile.Skills.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Skills
-	.Request()
-	.AddAsync(skillProficiency);
 
 ```

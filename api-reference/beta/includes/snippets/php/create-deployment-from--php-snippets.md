@@ -13,10 +13,17 @@ $requestBody = new Deployment();
 $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.deployment');
 
 $content = new DeployableContent();
-$content->set@odatatype('microsoft.graph.windowsUpdates.featureUpdateReference');
+$content->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
 
 $additionalData = [
-'version' => '20H2', 
+		'catalogEntry' => $content = new CatalogEntry();
+$		content->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
+
+$		content->setId('f341705b-0b15-4ce3-aaf2-6a1681d78606');
+
+
+$content->setCatalogEntry($catalogEntry);
+
 ];
 $content->setAdditionalData($additionalData);
 
@@ -24,17 +31,26 @@ $content->setAdditionalData($additionalData);
 
 $requestBody->setContent($content);
 $settings = new DeploymentSettings();
-$settings->set@odatatype('microsoft.graph.windowsUpdates.windowsDeploymentSettings');
+$settings->set@odatatype('microsoft.graph.windowsUpdates.deploymentSettings');
 
-$settingsRollout = new RolloutSettings();
-$settingsRollout->setDevicesPerOffer(100);
+$settingsSchedule = new ScheduleSettings();
+$settingsScheduleGradualRollout = new GradualRolloutSettings();
+$settingsScheduleGradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
+
+$settingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P7D'));
+
+$additionalData = [
+		'devicePerOffer' => 100,
+];
+$settingsScheduleGradualRollout->setAdditionalData($additionalData);
 
 
-$settings->setRollout($settingsRollout);
+
+$settingsSchedule->setGradualRollout($settingsScheduleGradualRollout);
+
+$settings->setSchedule($settingsSchedule);
 $settingsMonitoring = new MonitoringSettings();
 $monitoringRulesMonitoringRule1 = new MonitoringRule();
-$monitoringRulesMonitoringRule1->set@odatatype('#microsoft.graph.windowsUpdates.monitoringRule');
-
 $monitoringRulesMonitoringRule1->setSignal(new MonitoringSignal('rollback'));
 
 $monitoringRulesMonitoringRule1->setThreshold(5);
@@ -52,7 +68,7 @@ $settings->setMonitoring($settingsMonitoring);
 $requestBody->setSettings($settings);
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->deployments()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->deployments()->post($requestBody);
 
 
 ```

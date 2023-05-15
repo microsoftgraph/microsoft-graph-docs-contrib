@@ -4,21 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var extension = new OpenTypeExtension
+var requestBody = new Extension
 {
-	ExtensionName = "com.contoso.roamingSettings",
-	AdditionalData = new Dictionary<string, object>()
+	OdataType = "microsoft.graph.openTypeExtension",
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"theme", "dark"},
-		{"color", "purple"},
-		{"lang", "Japanese"}
-	}
+		{
+			"extensionName" , "com.contoso.roamingSettings"
+		},
+		{
+			"theme" , "dark"
+		},
+		{
+			"color" , "purple"
+		},
+		{
+			"lang" , "Japanese"
+		},
+	},
 };
+var result = await graphClient.Me.Extensions.PostAsync(requestBody);
 
-await graphClient.Me.Extensions
-	.Request()
-	.AddAsync(extension);
 
 ```

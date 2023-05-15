@@ -5,12 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/InformationProtection/Policy/Labels/EvaluateApplication"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.InformationProtectionPolicyLabelsMicrosoft.graph.evaluateApplicationRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.InformationProtectionPolicyLabelsEvaluateApplicationRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvaluateApplicationPostRequestBody()
@@ -71,9 +81,9 @@ metadata := []graphmodels.KeyValuePairable {
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
-	"format@odata.type" : "#microsoft.graph.contentFormat", 
-	"state@odata.type" : "#microsoft.graph.contentState", 
-	"metadata@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
+	"odataType" : "#microsoft.graph.contentFormat", 
+	"odataType" : "#microsoft.graph.contentState", 
+	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
@@ -89,9 +99,9 @@ extendedProperties := []graphmodels.KeyValuePairable {
 }
 labelingOptions.SetExtendedProperties(extendedProperties)
 additionalData := map[string]interface{}{
-	"assignmentMethod@odata.type" : "#microsoft.graph.assignmentMethod", 
-	"labelId@odata.type" : "#Guid", 
-	"extendedProperties@odata.type" : "#Collection(microsoft.graph.keyValuePair)", 
+	"odataType" : "#microsoft.graph.assignmentMethod", 
+	"odataType" : "#Guid", 
+	"odataType" : "#Collection(microsoft.graph.keyValuePair)", 
 }
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)

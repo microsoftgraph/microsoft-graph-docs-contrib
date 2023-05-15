@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
+var requestBody = new CustomSecurityAttributeDefinition
 {
-	Description = "Target completion date (YYYY/MM/DD)"
+	Description = "Target completion date (YYYY/MM/DD)",
 };
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"].PatchAsync(requestBody);
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions["{customSecurityAttributeDefinition-id}"]
-	.Request()
-	.UpdateAsync(customSecurityAttributeDefinition);
 
 ```

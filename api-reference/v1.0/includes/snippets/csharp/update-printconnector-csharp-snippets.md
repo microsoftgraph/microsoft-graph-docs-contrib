@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printConnector = new PrintConnector
+var requestBody = new PrintConnector
 {
 	DisplayName = "ConnectorName",
 	FullyQualifiedDomainName = "CONNECTOR-MACHINE",
@@ -14,14 +14,12 @@ var printConnector = new PrintConnector
 	AppVersion = "0.19.7338.23496",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1,
-		Longitude = 2.2,
-		AltitudeInMeters = 3
-	}
+		Latitude = 1.1d,
+		Longitude = 2.2d,
+		AltitudeInMeters = 3,
+	},
 };
+var result = await graphClient.Print.Connectors["{printConnector-id}"].PatchAsync(requestBody);
 
-await graphClient.Print.Connectors["{printConnector-id}"]
-	.Request()
-	.UpdateAsync(printConnector);
 
 ```

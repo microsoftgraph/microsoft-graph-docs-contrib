@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	DisplayName = "Business Email"
-	Type = "work"
+	displayName = "Business Email"
+	type = "work"
 }
 
 Update-MgUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params

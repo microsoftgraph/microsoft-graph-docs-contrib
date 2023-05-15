@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var set = new Microsoft.Graph.TermStore.Set
+var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Set
 {
-	Description = "mySet"
+	Description = "mySet",
 };
+var result = await graphClient.TermStore.Sets["{set-id}"].PatchAsync(requestBody);
 
-await graphClient.TermStore.Sets["{termStore.set-id}"]
-	.Request()
-	.UpdateAsync(set);
 
 ```

@@ -4,34 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var plannerPlanConfiguration = new PlannerPlanConfiguration
+var requestBody = new PlannerPlanConfiguration
 {
+	OdataType = "#microsoft.graph.plannerPlanConfiguration",
 	DefaultLanguage = "en-us",
-	Buckets = new List<PlannerPlanConfigurationBucketDefinition>()
+	Buckets = new List<PlannerPlanConfigurationBucketDefinition>
 	{
 		new PlannerPlanConfigurationBucketDefinition
 		{
-			ExternalBucketId = "deliveryBucket"
+			ExternalBucketId = "deliveryBucket",
 		},
 		new PlannerPlanConfigurationBucketDefinition
 		{
-			ExternalBucketId = "storePickupBucket"
+			ExternalBucketId = "storePickupBucket",
 		},
 		new PlannerPlanConfigurationBucketDefinition
 		{
-			ExternalBucketId = "specialOrdersBucket"
+			ExternalBucketId = "specialOrdersBucket",
 		},
 		new PlannerPlanConfigurationBucketDefinition
 		{
-			ExternalBucketId = "returnProcessingBucket"
-		}
-	}
+			ExternalBucketId = "returnProcessingBucket",
+		},
+	},
 };
+var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration.PatchAsync(requestBody);
 
-await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.PlanConfiguration
-	.Request()
-	.UpdateAsync(plannerPlanConfiguration);
 
 ```

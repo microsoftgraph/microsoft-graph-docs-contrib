@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var tiIndicator = new TiIndicator
+var requestBody = new TiIndicator
 {
 	AdditionalInformation = "additionalInformation-after-update",
 	Confidence = 42,
-	Description = "description-after-update"
+	Description = "description-after-update",
 };
+var result = await graphClient.Security.TiIndicators["{tiIndicator-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+});
 
-await graphClient.Security.TiIndicators["{tiIndicator-id}"]
-	.Request()
-	.Header("Prefer","return=representation")
-	.UpdateAsync(tiIndicator);
 
 ```

@@ -4,22 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
+var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "One-time self-review for members of Building security",
 	DescriptionForAdmins = "One-time self-review for members of Building security",
 	DescriptionForReviewers = "One-time self-review for members of Building security",
 	Scope = new AccessReviewScope
 	{
-		Query = "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers",
-		QueryType = "MicrosoftGraph"
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4/transitiveMembers"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
 	InstanceEnumerationScope = new AccessReviewScope
 	{
-		Query = "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
-		QueryType = "MicrosoftGraph"
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"query" , "/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4"
+			},
+			{
+				"queryType" , "MicrosoftGraph"
+			},
+		},
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
@@ -39,15 +53,13 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 				Type = RecurrenceRangeType.Numbered,
 				NumberOfOccurrences = 0,
 				RecurrenceTimeZone = null,
-				StartDate = new Date(2022,2,11),
-				EndDate = new Date(2022,2,16)
-			}
-		}
-	}
+				StartDate = new Date(DateTime.Parse("2022-02-11")),
+				EndDate = new Date(DateTime.Parse("2022-02-16")),
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.AccessReviews.Definitions
-	.Request()
-	.AddAsync(accessReviewScheduleDefinition);
 
 ```

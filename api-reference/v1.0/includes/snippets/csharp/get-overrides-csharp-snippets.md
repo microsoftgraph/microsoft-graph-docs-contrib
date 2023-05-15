@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var overrides = await graphClient.Me.InferenceClassification.Overrides
-	.Request()
-	.GetAsync();
+var result = await graphClient.Me.InferenceClassification.Overrides.GetAsync();
+
 
 ```

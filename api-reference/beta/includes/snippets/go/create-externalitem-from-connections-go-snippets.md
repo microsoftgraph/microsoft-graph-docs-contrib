@@ -5,54 +5,60 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewItem()
-additionalData := map[string]interface{}{
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
- := graphmodels.New()
-type := "user"
-.SetType(&type) 
+requestBody := graphmodels.NewExternalItem()
+
+
+acl := graphmodels.NewAcl()
+type := graphmodels.USER_ACLTYPE 
+acl.SetType(&type) 
 value := "e811976d-83df-4cbd-8b9b-5215b18aa874"
-.SetValue(&value) 
-accessType := "grant"
-.SetAccessType(&accessType) 
-identitySource := "azureActiveDirectory"
-.SetIdentitySource(&identitySource) 
- := graphmodels.New()
-type := "group"
-.SetType(&type) 
+acl.SetValue(&value) 
+accessType := graphmodels.GRANT_ACCESSTYPE 
+acl.SetAccessType(&accessType) 
+identitySource := graphmodels.AZUREACTIVEDIRECTORY_IDENTITYSOURCETYPE 
+acl.SetIdentitySource(&identitySource) 
+acl1 := graphmodels.NewAcl()
+type := graphmodels.GROUP_ACLTYPE 
+acl1.SetType(&type) 
 value := "14m1b9c38qe647f6a"
-.SetValue(&value) 
-accessType := "deny"
-.SetAccessType(&accessType) 
-identitySource := "external"
-.SetIdentitySource(&identitySource) 
+acl1.SetValue(&value) 
+accessType := graphmodels.DENY_ACCESSTYPE 
+acl1.SetAccessType(&accessType) 
+identitySource := graphmodels.EXTERNAL_IDENTITYSOURCETYPE 
+acl1.SetIdentitySource(&identitySource) 
 
-	acl := []graphmodels.Objectable {
-		,
-		,
+acl := []graphmodels.Aclable {
+	acl,
+	acl1,
 
-	}
-properties := graphmodels.New()
-title := "Error in the payment gateway"
-properties.SetTitle(&title) 
-priority := int32(1)
-properties.SetPriority(&priority) 
-assignee := "john@contoso.com"
-properties.SetAssignee(&assignee) 
-	requestBody.SetProperties(properties)
-content := graphmodels.New()
+}
+requestBody.SetAcl(acl)
+properties := graphmodels.NewProperties()
+additionalData := map[string]interface{}{
+	"title" : "Error in the payment gateway", 
+	"priority" : int32(1) , 
+	"assignee" : "john@contoso.com", 
+}
+properties.SetAdditionalData(additionalData)
+requestBody.SetProperties(properties)
+content := graphmodels.NewExternalItemContent()
 value := "Error in payment gateway..."
 content.SetValue(&value) 
-type := "text"
+type := graphmodels.TEXT_EXTERNALITEMCONTENTTYPE 
 content.SetType(&type) 
-	requestBody.SetContent(content)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetContent(content)
 
-graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Put(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,22 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var administrativeUnit = new AdministrativeUnit
+var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Seattle District Technical Schools",
 	Description = "Seattle district technical schools administration",
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"membershipType", "Dynamic"},
-		{"membershipRule", "(user.country -eq \"United States\")"},
-		{"membershipRuleProcessingState", "On"}
-	}
+		{
+			"membershipType" , "Dynamic"
+		},
+		{
+			"membershipRule" , "(user.country -eq \"United States\")"
+		},
+		{
+			"membershipRuleProcessingState" , "On"
+		},
+	},
 };
+var result = await graphClient.AdministrativeUnits.PostAsync(requestBody);
 
-await graphClient.AdministrativeUnits
-	.Request()
-	.AddAsync(administrativeUnit);
 
 ```

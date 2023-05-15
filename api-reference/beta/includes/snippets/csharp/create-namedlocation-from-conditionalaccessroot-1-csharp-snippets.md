@@ -4,27 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var namedLocation = new IpNamedLocation
+var requestBody = new NamedLocation
 {
+	OdataType = "#microsoft.graph.ipNamedLocation",
 	DisplayName = "Untrusted IP named location",
-	IsTrusted = false,
-	IpRanges = new List<IpRange>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		new IPv4CidrRange
 		{
-			CidrAddress = "12.34.221.11/22"
+			"isTrusted" , false
 		},
-		new IPv6CidrRange
 		{
-			CidrAddress = "2001:0:9d38:90d6:0:0:0:0/63"
-		}
-	}
+			"ipRanges" , new List<>
+			{
+				new 
+				{
+					OdataType = "#microsoft.graph.iPv4CidrRange",
+					CidrAddress = "12.34.221.11/22",
+				},
+				new 
+				{
+					OdataType = "#microsoft.graph.iPv6CidrRange",
+					CidrAddress = "2001:0:9d38:90d6:0:0:0:0/63",
+				},
+			}
+		},
+	},
 };
+var result = await graphClient.Identity.ConditionalAccess.NamedLocations.PostAsync(requestBody);
 
-await graphClient.Identity.ConditionalAccess.NamedLocations
-	.Request()
-	.AddAsync(namedLocation);
 
 ```

@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var webUrl = "webUrl value";
+var requestBody = new Microsoft.Graph.Me.Onenote.Notebooks.GetNotebookFromWebUrl.GetNotebookFromWebUrlPostRequestBody
+{
+	WebUrl = "webUrl value",
+};
+var result = await graphClient.Me.Onenote.Notebooks.GetNotebookFromWebUrl.PostAsync(requestBody);
 
-await graphClient.Me.Onenote.Notebooks
-	.GetNotebookFromWebUrl(webUrl)
-	.Request()
-	.PostAsync();
 
 ```

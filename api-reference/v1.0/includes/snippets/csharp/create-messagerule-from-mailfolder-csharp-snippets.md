@@ -4,39 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var messageRule = new MessageRule
+var requestBody = new MessageRule
 {
 	DisplayName = "From partner",
 	Sequence = 2,
 	IsEnabled = true,
 	Conditions = new MessageRulePredicates
 	{
-		SenderContains = new List<String>()
+		SenderContains = new List<string>
 		{
-			"adele"
-		}
+			"adele",
+		},
 	},
 	Actions = new MessageRuleActions
 	{
-		ForwardTo = new List<Recipient>()
+		ForwardTo = new List<Recipient>
 		{
 			new Recipient
 			{
 				EmailAddress = new EmailAddress
 				{
 					Name = "Alex Wilbur",
-					Address = "AlexW@contoso.onmicrosoft.com"
-				}
-			}
+					Address = "AlexW@contoso.onmicrosoft.com",
+				},
+			},
 		},
-		StopProcessingRules = true
-	}
+		StopProcessingRules = true,
+	},
 };
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules
-	.Request()
-	.AddAsync(messageRule);
 
 ```

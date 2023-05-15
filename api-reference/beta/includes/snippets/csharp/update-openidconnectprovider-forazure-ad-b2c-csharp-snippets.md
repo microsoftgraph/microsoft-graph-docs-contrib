@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var identityProviderBase = new SocialIdentityProvider
+var requestBody = new IdentityProviderBase
 {
-	ResponseType = OpenIdConnectResponseTypes.Id_token
+	OdataType = "#microsoft.graph.socialIdentityProvider",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"responseType" , "id_token"
+		},
+	},
 };
+var result = await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"]
-	.Request()
-	.UpdateAsync(identityProviderBase);
 
 ```

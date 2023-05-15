@@ -4,38 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var topic = new TeamworkActivityTopic
+var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
 {
-	Source = TeamworkActivityTopicSource.EntityUrl,
-	Value = "https://graph.microsoft.com/v1.0/chats/{chatId}"
-};
-
-var activityType = "taskCreated";
-
-var previewText = new ItemBody
-{
-	Content = "New Task Created"
-};
-
-var recipient = new AadUserNotificationRecipient
-{
-	UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
-};
-
-var templateParameters = new List<KeyValuePair>()
-{
-	new KeyValuePair
+	Topic = new TeamworkActivityTopic
 	{
-		Name = "taskId",
-		Value = "Task 12322"
-	}
+		Source = TeamworkActivityTopicSource.EntityUrl,
+		Value = "https://graph.microsoft.com/v1.0/chats/{chatId}",
+	},
+	ActivityType = "taskCreated",
+	PreviewText = new ItemBody
+	{
+		Content = "New Task Created",
+	},
+	Recipient = new TeamworkNotificationRecipient
+	{
+		OdataType = "microsoft.graph.aadUserNotificationRecipient",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
+			},
+		},
+	},
+	TemplateParameters = new List<KeyValuePair>
+	{
+		new KeyValuePair
+		{
+			Name = "taskId",
+			Value = "Task 12322",
+		},
+	},
 };
+await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
-	.Request()
-	.PostAsync();
 
 ```

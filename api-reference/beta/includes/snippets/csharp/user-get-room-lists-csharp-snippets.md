@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var findRoomLists = await graphClient.Me
-	.FindRoomLists()
-	.Request()
-	.GetAsync();
+var result = await graphClient.Me.FindRoomLists.GetAsync();
+
 
 ```

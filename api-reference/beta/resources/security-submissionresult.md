@@ -66,8 +66,8 @@ Represents the result of a review after the threat submission is processed by Mi
 | outboundBulk                           | Microsoft find the reported message to be spam/junk. The outbound filters will learn after a few weeks |
 | outboundCannotMakeDecision             | Microsoft cannot reach a verdict at this time. Resubmit it to get to a verdict on it after analysis.  |
 | outboundNotRescanned                   | Microsoft cannot provide a verdict on the reported outbound message as Microsoft cannot find the actual message. Please resubmit by uploading the email using submissions in security.microsoft.com |
-| zeroHourAutoPurgeAllowed               | The reported message was zapped as organization has zero-hour auto purge on. |
-| zeroHourAutoPurgeBlocked               | The Reported message could not be zapped as organization has turned off zero-hour auto purge. Turn on zero-hour auto purge for EOP/MDO to zap messages if they turn malicious after delivery|
+| zeroHourAutoPurgeAllowed               | The reported message was reverse zapped from quarantine as it was found to be clean. |
+| zeroHourAutoPurgeBlocked               | The Reported message was zapped as the message was found to be malicious.|
 | zeroHourAutoPurgeQuarantineReleased    | The reported message was released from Quarantine despite being quarantined due to zap as message turned malicious after delivery. |
 | onPremisesSkip                         | The reported message cannot be analyzed as this went through a onprem setup of exchange online protection. Configure your hybrid setup so that EOP/MDO can scan messages before delivering to exchange onprem mailboxes |
 | allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow/ block list. Remove allows from Tenant allow/block list so that EOP/MDO can filter accordingly |

@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var onPremisesPublishingProfile = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"]
-	.Request()
-	.Expand("publishedResources,agents,agentGroups")
-	.GetAsync();
+var result = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Expand = new string []{ "publishedResources","agents","agentGroups" };
+});
+
 
 ```

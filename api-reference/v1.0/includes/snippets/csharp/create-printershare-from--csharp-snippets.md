@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printerShare = new PrinterShare
+var requestBody = new PrinterShare
 {
 	DisplayName = "ShareName",
 	AllowAllUsers = false,
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"printer@odata.bind", "https://graph.microsoft.com/v1.0/print/printers/{printerId}"}
-	}
+		{
+			"printer@odata.bind" , "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
+		},
+	},
 };
+var result = await graphClient.Print.Shares.PostAsync(requestBody);
 
-await graphClient.Print.Shares
-	.Request()
-	.AddAsync(printerShare);
 
 ```

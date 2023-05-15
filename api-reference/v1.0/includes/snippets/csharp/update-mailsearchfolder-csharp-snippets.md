@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mailFolder = new MailSearchFolder
+var requestBody = new MailFolder
 {
-	FilterQuery = "contains(subject, 'Analytics')"
+	OdataType = "microsoft.graph.mailSearchFolder",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"filterQuery" , "contains(subject, 'Analytics')"
+		},
+	},
 };
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"]
-	.Request()
-	.UpdateAsync(mailFolder);
 
 ```

@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var teamsAppInstallation = await graphClient.Chats["{chat-id}"].InstalledApps["{teamsAppInstallation-id}"]
-	.Request()
-	.GetAsync();
+var result = await graphClient.Chats["{chat-id}"].InstalledApps["{teamsAppInstallation-id}"].GetAsync();
+
 
 ```

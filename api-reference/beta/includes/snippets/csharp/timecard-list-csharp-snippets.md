@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var timeCards = await graphClient.Teams["{team-id}"].Schedule.TimeCards
-	.Request()
-	.Filter("state eq 'clockedOut'")
-	.Top(2)
-	.GetAsync();
+var result = await graphClient.Teams["{team-id}"].Schedule.TimeCards.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Top = 2;
+	requestConfiguration.QueryParameters.Filter = "state eq 'clockedOut'";
+});
+
 
 ```

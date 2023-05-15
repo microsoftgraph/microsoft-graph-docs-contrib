@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->drive()->itemsById('driveItem-id')->delete();
+$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->delete();
 
 
 ```

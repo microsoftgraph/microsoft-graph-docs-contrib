@@ -4,32 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var schedules = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.Me.Calendar.GetSchedule.GetSchedulePostRequestBody
 {
-	"adelev@contoso.onmicrosoft.com",
-	"meganb@contoso.onmicrosoft.com"
+	Schedules = new List<string>
+	{
+		"adelev@contoso.onmicrosoft.com",
+		"meganb@contoso.onmicrosoft.com",
+	},
+	StartTime = new DateTimeTimeZone
+	{
+		DateTime = "2019-03-15T09:00:00",
+		TimeZone = "Pacific Standard Time",
+	},
+	EndTime = new DateTimeTimeZone
+	{
+		DateTime = "2019-03-15T18:00:00",
+		TimeZone = "Pacific Standard Time",
+	},
+	AvailabilityViewInterval = 60,
 };
-
-var startTime = new DateTimeTimeZone
+var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
 {
-	DateTime = "2019-03-15T09:00:00",
-	TimeZone = "Pacific Standard Time"
-};
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-var endTime = new DateTimeTimeZone
-{
-	DateTime = "2019-03-15T18:00:00",
-	TimeZone = "Pacific Standard Time"
-};
-
-var availabilityViewInterval = 60;
-
-await graphClient.Me.Calendar
-	.GetSchedule(schedules,endTime,startTime,availabilityViewInterval)
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.PostAsync();
 
 ```

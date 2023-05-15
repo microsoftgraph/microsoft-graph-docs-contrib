@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var administrativeUnit = new AdministrativeUnit
+var requestBody = new AdministrativeUnit
 {
 	DisplayName = "Seattle District Technical Schools",
 	Description = "Seattle district technical schools administration",
-	Visibility = "HiddenMembership"
+	Visibility = "HiddenMembership",
 };
+var result = await graphClient.Directory.AdministrativeUnits.PostAsync(requestBody);
 
-await graphClient.Directory.AdministrativeUnits
-	.Request()
-	.AddAsync(administrativeUnit);
 
 ```

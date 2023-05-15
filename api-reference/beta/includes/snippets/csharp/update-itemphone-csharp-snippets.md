@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var itemPhone = new ItemPhone
+var requestBody = new ItemPhone
 {
-	Type = PhoneType.Other
+	Type = PhoneType.Other,
 };
+var result = await graphClient.Users["{user-id}"].Profile.Phones["{itemPhone-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Profile.Phones["{itemPhone-id}"]
-	.Request()
-	.UpdateAsync(itemPhone);
 
 ```

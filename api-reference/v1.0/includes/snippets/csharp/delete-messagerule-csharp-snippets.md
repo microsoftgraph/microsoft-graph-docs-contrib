@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules["{messageRule-id}"]
-	.Request()
-	.DeleteAsync();
+await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules["{messageRule-id}"].DeleteAsync();
+
 
 ```

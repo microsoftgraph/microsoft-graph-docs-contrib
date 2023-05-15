@@ -4,18 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var user = new User
+var requestBody = new User
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"extkmpdyld2_graphLearnCourses", "{\"courseType\":\"Instructor-led\",\"courseId\":null}"}
-	}
+		{
+			"extkmpdyld2_graphLearnCourses" , new 
+			{
+				CourseType = "Instructor-led",
+				CourseId = null,
+			}
+		},
+	},
 };
+var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(user);
 
 ```

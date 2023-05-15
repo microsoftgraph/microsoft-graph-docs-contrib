@@ -1,23 +1,20 @@
 ---
-title: "Microsoft Graph connectors SDK (preview) overview"
+title: "Microsoft Graph connectors SDK overview"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Use the Microsoft Graph connectors SDK (preview) to create custom Microsoft Graph connectors."
+description: "Use the Microsoft Graph connectors SDK to create custom Microsoft Graph connectors."
 ---
 
-# Microsoft Graph connectors SDK (preview) overview
+# Microsoft Graph connectors SDK overview
 
-The Microsoft Graph connectors SDK (preview) simplifies the process of building high-quality, efficient, and resilient connectors in scenarios where you can't find a pre-built connector for the data source you want to index into Microsoft Graph.
+The Microsoft Graph connectors SDK simplifies the process of building high-quality, efficient, and resilient connectors in scenarios where you can't find a pre-built connector for the data source you want to index into Microsoft Graph.
 
 The SDK includes the framework and contract components to help you write the code and the tools to test your code.
 
 The connectors SDK enables you to create custom Microsoft Graph connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
-
->[!Note]
-> Microsoft Graph connectors SDK (preview) is currently available in the Targeted Release Ring
 
 ## Components
 
@@ -60,7 +57,7 @@ It includes the following capabilities:
 > - Microsoft Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
-You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK (preview) page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
 
 ## Next steps
 

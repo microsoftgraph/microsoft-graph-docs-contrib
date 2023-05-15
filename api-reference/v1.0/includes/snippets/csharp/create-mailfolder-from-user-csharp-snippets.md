@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mailFolder = new MailFolder
+var requestBody = new MailFolder
 {
 	DisplayName = "Clutter",
-	IsHidden = true
+	IsHidden = true,
 };
+var result = await graphClient.Me.MailFolders.PostAsync(requestBody);
 
-await graphClient.Me.MailFolders
-	.Request()
-	.AddAsync(mailFolder);
 
 ```

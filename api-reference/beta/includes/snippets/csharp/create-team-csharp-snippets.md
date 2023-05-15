@@ -4,32 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var team = new Team
+var requestBody = new Team
 {
 	MemberSettings = new TeamMemberSettings
 	{
-		AllowCreateUpdateChannels = true
+		AllowCreateUpdateChannels = true,
 	},
 	MessagingSettings = new TeamMessagingSettings
 	{
 		AllowUserEditMessages = true,
-		AllowUserDeleteMessages = true
+		AllowUserDeleteMessages = true,
 	},
 	FunSettings = new TeamFunSettings
 	{
 		AllowGiphy = true,
-		GiphyContentRating = GiphyRatingType.Strict
+		GiphyContentRating = GiphyRatingType.Strict,
 	},
 	DiscoverySettings = new TeamDiscoverySettings
 	{
-		ShowInTeamsSearchAndSuggestions = true
-	}
+		ShowInTeamsSearchAndSuggestions = true,
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Team
-	.Request()
-	.PutAsync(team);
 
 ```

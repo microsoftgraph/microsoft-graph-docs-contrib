@@ -4,38 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var directorySetting = new DirectorySetting
+var requestBody = new DirectorySetting
 {
 	TemplateId = "62375ab9-6b52-47ed-826b-58e47e0e304b",
-	Values = new List<SettingValue>()
+	Values = new List<SettingValue>
 	{
 		new SettingValue
 		{
 			Name = "GuestUsageGuidelinesUrl",
-			Value = "https://privacy.contoso.com/privacystatement"
+			Value = "https://privacy.contoso.com/privacystatement",
 		},
 		new SettingValue
 		{
 			Name = "EnableMSStandardBlockedWords",
-			Value = "true"
+			Value = "true",
 		},
 		new SettingValue
 		{
 			Name = "EnableMIPLabels",
-			Value = "true"
+			Value = "true",
 		},
 		new SettingValue
 		{
 			Name = "PrefixSuffixNamingRequirement",
-			Value = "[Contoso-][GroupName]"
-		}
-	}
+			Value = "[Contoso-][GroupName]",
+		},
+	},
 };
+var result = await graphClient.Settings.PostAsync(requestBody);
 
-await graphClient.Settings
-	.Request()
-	.AddAsync(directorySetting);
 
 ```

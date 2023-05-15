@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var participants = new List<String>()
+var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participants.MuteAll.MuteAllPostRequestBody
 {
-	""
+	Participants = new List<string>
+	{
+		"",
+	},
+	ClientContext = "clientContext-value",
 };
+var result = await graphClient.Communications.Calls["{call-id}"].Participants.MuteAll.PostAsync(requestBody);
 
-var clientContext = "clientContext-value";
-
-await graphClient.Communications.Calls["{call-id}"].Participants
-	.MuteAll(participants,clientContext)
-	.Request()
-	.PostAsync();
 
 ```

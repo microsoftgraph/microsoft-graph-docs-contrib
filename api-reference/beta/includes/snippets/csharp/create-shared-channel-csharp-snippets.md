@@ -4,31 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var channel = new Channel
+var requestBody = new Channel
 {
 	DisplayName = "My First Shared Channel",
 	Description = "This is my first shared channel",
 	MembershipType = ChannelMembershipType.Shared,
-	Members = new ChannelMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
-		new AadUserConversationMember
+		new ConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')"}
-			}
-		}
-	}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')"
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
 
 ```

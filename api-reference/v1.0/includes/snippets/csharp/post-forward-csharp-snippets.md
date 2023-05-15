@@ -4,25 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var comment = "comment-value";
-
-var toRecipients = new List<Recipient>()
+var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Posts.Item.Forward.ForwardPostRequestBody
 {
-	new Recipient
+	Comment = "comment-value",
+	ToRecipients = new List<Recipient>
 	{
-		EmailAddress = new EmailAddress
+		new Recipient
 		{
-			Name = "name-value",
-			Address = "address-value"
-		}
-	}
+			EmailAddress = new EmailAddress
+			{
+				Name = "name-value",
+				Address = "address-value",
+			},
+		},
+	},
 };
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"].Forward.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
-	.Forward(toRecipients,comment)
-	.Request()
-	.PostAsync();
 
 ```

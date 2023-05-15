@@ -4,19 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var place = new Workspace
+var requestBody = new Place
 {
-	Nickname = "Conf Room",
-	Building = "1",
-	Label = "100",
-	Capacity = 50,
-	IsWheelChairAccessible = false
+	OdataType = "microsoft.graph.workspace",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"nickname" , "Conf Room"
+		},
+		{
+			"building" , "1"
+		},
+		{
+			"label" , "100"
+		},
+		{
+			"capacity" , 50
+		},
+		{
+			"isWheelChairAccessible" , false
+		},
+	},
 };
+var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
 
-await graphClient.Places["{place-id}"]
-	.Request()
-	.UpdateAsync(place);
 
 ```

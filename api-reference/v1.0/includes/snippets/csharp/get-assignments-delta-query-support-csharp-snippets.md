@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var delta = await graphClient.Education.Classes["{educationClass-id}"].Assignments
-	.Delta()
-	.Request()
-	.Top(2)
-	.GetAsync();
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments.Delta.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Top = 2;
+});
+
 
 ```

@@ -4,50 +4,50 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var @event = new Event
+var requestBody = new Event
 {
 	Subject = "Prep for customer meeting",
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does this time work for you?"
+		Content = "Does this time work for you?",
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2019-11-20T13:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2019-11-20T14:00:00",
-		TimeZone = "Pacific Standard Time"
+		TimeZone = "Pacific Standard Time",
 	},
 	Location = new Location
 	{
-		DisplayName = "Cordova conference room"
+		DisplayName = "Cordova conference room",
 	},
-	Attendees = new List<Attendee>()
+	Attendees = new List<Attendee>
 	{
 		new Attendee
 		{
 			EmailAddress = new EmailAddress
 			{
 				Address = "AdeleV@contoso.OnMicrosoft.com",
-				Name = "Adele Vance"
+				Name = "Adele Vance",
 			},
-			Type = AttendeeType.Required
-		}
+			Type = AttendeeType.Required,
+		},
 	},
 	AllowNewTimeProposals = true,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 };
+var result = await graphClient.Me.Events.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-await graphClient.Me.Events
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.AddAsync(@event);
 
 ```

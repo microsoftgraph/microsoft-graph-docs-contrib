@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var connectionQuota = await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Quota
-	.Request()
-	.GetAsync();
+var result = await graphClient.External.Connections["{externalConnection-id}"].Quota.GetAsync();
+
 
 ```

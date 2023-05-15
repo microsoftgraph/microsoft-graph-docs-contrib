@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var servicePrincipal = new ServicePrincipal
+var requestBody = new ServicePrincipal
 {
-	AppId = "65415bb1-9267-4313-bbf5-ae259732ee12"
+	AppId = "65415bb1-9267-4313-bbf5-ae259732ee12",
 };
+var result = await graphClient.ServicePrincipals.PostAsync(requestBody);
 
-await graphClient.ServicePrincipals
-	.Request()
-	.AddAsync(servicePrincipal);
 
 ```

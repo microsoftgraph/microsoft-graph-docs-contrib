@@ -4,11 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teamwork.Devices["{teamworkDevice-id}"]
-	.Restart()
-	.Request()
-	.PostAsync();
+await graphClient.Teamwork.Devices["{teamworkDevice-id}"].Restart.PostAsync();
+
 
 ```

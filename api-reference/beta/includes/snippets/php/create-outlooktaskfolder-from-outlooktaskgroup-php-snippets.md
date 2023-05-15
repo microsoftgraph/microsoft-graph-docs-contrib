@@ -14,7 +14,7 @@ $requestBody->setName('Cooking');
 
 
 
-$requestResult = $graphServiceClient->me()->outlook()->taskGroupsById('outlookTaskGroup-id')->taskFolders()->post($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskGroupsById('outlookTaskGroup-id')->taskFolders()->post($requestBody);
 
 
 ```

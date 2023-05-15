@@ -4,51 +4,73 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var call = new Call
+var requestBody = new Call
 {
+	OdataType = "#microsoft.graph.call",
 	CallbackUri = "https://bot.contoso.com/callback",
 	Source = new ParticipantInfo
 	{
+		OdataType = "#microsoft.graph.participantInfo",
 		Identity = new IdentitySet
 		{
-			AdditionalData = new Dictionary<string, object>()
+			OdataType = "#microsoft.graph.identitySet",
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"applicationInstance", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Calling Bot\",\"id\":\"3d913abb-aec0-4964-8fa6-3c6850c4f278\"}"}
-			}
+				{
+					"applicationInstance" , new 
+					{
+						OdataType = "#microsoft.graph.identity",
+						DisplayName = "Calling Bot",
+						Id = "3d913abb-aec0-4964-8fa6-3c6850c4f278",
+					}
+				},
+			},
 		},
 		CountryCode = null,
 		EndpointType = null,
 		Region = null,
-		LanguageId = null
+		LanguageId = null,
 	},
-	Targets = new List<InvitationParticipantInfo>()
+	Targets = new List<InvitationParticipantInfo>
 	{
 		new InvitationParticipantInfo
 		{
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
 			Identity = new IdentitySet
 			{
-				AdditionalData = new Dictionary<string, object>()
+				OdataType = "#microsoft.graph.identitySet",
+				AdditionalData = new Dictionary<string, object>
 				{
-					{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
-				}
-			}
-		}
+					{
+						"phone" , new 
+						{
+							OdataType = "#microsoft.graph.identity",
+							Id = "+12345678901",
+						}
+					},
+				},
+			},
+		},
 	},
-	RequestedModalities = new List<Modality>()
+	RequestedModalities = new List<Modality?>
 	{
-		Modality.Audio
+		Modality.Audio,
 	},
-	MediaConfig = new AppHostedMediaConfig
+	MediaConfig = new MediaConfig
 	{
-		Blob = "<Media Session Configuration>"
+		OdataType = "#microsoft.graph.appHostedMediaConfig",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"blob" , "<Media Session Configuration>"
+			},
+		},
 	},
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };
+var result = await graphClient.Communications.Calls.PostAsync(requestBody);
 
-await graphClient.Communications.Calls
-	.Request()
-	.AddAsync(call);
 
 ```

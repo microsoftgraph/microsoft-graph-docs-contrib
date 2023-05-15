@@ -5,16 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestSkip := int32(20)
 
-requestParameters := &graphconfig.MeEventsRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ItemEventsRequestBuilderGetQueryParameters{
 	Orderby: [] string {"createdDateTime"},
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.MeEventsRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

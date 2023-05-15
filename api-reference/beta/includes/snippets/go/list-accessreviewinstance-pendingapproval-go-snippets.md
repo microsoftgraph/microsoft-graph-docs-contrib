@@ -5,18 +5,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestTop := int32(100)
 requestSkip := int32(0)
 
-requestParameters := &graphconfig.MePendingAccessReviewInstancesRequestBuilderGetQueryParameters{
+requestParameters := &graphconfig.ItemPendingAccessReviewInstancesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definition"},
 	Top: &requestTop,
 	Skip: &requestSkip,
 }
-configuration := &graphconfig.MePendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemPendingAccessReviewInstancesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

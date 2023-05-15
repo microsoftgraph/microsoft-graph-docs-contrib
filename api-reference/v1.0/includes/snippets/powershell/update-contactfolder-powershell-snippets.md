@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
-	ParentFolderId = "parentFolderId-value"
-	DisplayName = "displayName-value"
+	parentFolderId = "parentFolderId-value"
+	displayName = "displayName-value"
 }
 
 # A UPN can also be used as -UserId.

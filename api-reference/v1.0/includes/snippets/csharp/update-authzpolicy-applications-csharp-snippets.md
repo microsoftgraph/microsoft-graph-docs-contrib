@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var authorizationPolicy = new AuthorizationPolicy
+var requestBody = new AuthorizationPolicy
 {
 	DefaultUserRolePermissions = new DefaultUserRolePermissions
 	{
-		AllowedToCreateApps = false
-	}
+		AllowedToCreateApps = false,
+	},
 };
+var result = await graphClient.Policies.AuthorizationPolicy.PatchAsync(requestBody);
 
-await graphClient.Policies.AuthorizationPolicy
-	.Request()
-	.UpdateAsync(authorizationPolicy);
 
 ```

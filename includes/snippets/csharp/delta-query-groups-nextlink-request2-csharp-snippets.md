@@ -4,16 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.Groups.Delta.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$skiptoken", "ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7")
-};
+	requestConfiguration.QueryParameters.Skiptoken = "ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7";
+});
 
-var delta = await graphClient.Groups
-	.Delta()
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

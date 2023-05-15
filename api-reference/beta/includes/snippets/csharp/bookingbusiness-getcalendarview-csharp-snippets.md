@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var queryOptions = new List<QueryOption>()
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CalendarView.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("start", "2018-04-30T00:00:00Z"),
-	new QueryOption("end", "2018-05-10T00:00:00Z")
-};
+	requestConfiguration.QueryParameters.Start = "2018-04-30T00:00:00Z";
+	requestConfiguration.QueryParameters.End = "2018-05-10T00:00:00Z";
+});
 
-var calendarView = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CalendarView
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

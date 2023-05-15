@@ -5,7 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingService()
 defaultDuration , err := abstractions.ParseISODuration("PT1H30M")
@@ -25,7 +34,7 @@ address.SetStreet(&street)
 additionalData := map[string]interface{}{
 	postOfficeBox := null
 address.SetPostOfficeBox(&postOfficeBox) 
-	"type@odata.type" : "#microsoft.graph.physicalAddressType", 
+	"odataType" : "#microsoft.graph.physicalAddressType", 
 	type := null
 address.SetType(&type) 
 }
@@ -46,8 +55,8 @@ defaultLocation.SetUniqueId(&uniqueId)
 uniqueIdType := null
 defaultLocation.SetUniqueIdType(&uniqueIdType) 
 additionalData := map[string]interface{}{
-	"locationType@odata.type" : "#microsoft.graph.locationType", 
-	"uniqueIdType@odata.type" : "#microsoft.graph.locationUniqueIdType", 
+	"odataType" : "#microsoft.graph.locationType", 
+	"odataType" : "#microsoft.graph.locationUniqueIdType", 
 }
 defaultLocation.SetAdditionalData(additionalData)
 requestBody.SetDefaultLocation(defaultLocation)
@@ -65,7 +74,7 @@ bookingReminder.SetOffset(&offset)
 recipients := graphmodels.ALLATTENDEES_BOOKINGREMINDERRECIPIENTS 
 bookingReminder.SetRecipients(&recipients) 
 additionalData := map[string]interface{}{
-	"recipients@odata.type" : "#microsoft.graph.bookingReminderRecipients", 
+	"odataType" : "#microsoft.graph.bookingReminderRecipients", 
 }
 bookingReminder.SetAdditionalData(additionalData)
 
@@ -113,13 +122,13 @@ requestBody.SetStaffMemberIds(staffMemberIds)
 isAnonymousJoinEnabled := false
 requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled) 
 additionalData := map[string]interface{}{
-	"defaultPriceType@odata.type" : "#microsoft.graph.bookingPriceType", 
-	"defaultReminders@odata.type" : "#Collection(microsoft.graph.bookingReminder)", 
-	"staffMemberIds@odata.type" : "#Collection(String)", 
+	"odataType" : "#microsoft.graph.bookingPriceType", 
+	"odataType" : "#Collection(microsoft.graph.bookingReminder)", 
+	"odataType" : "#Collection(String)", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Solutions().BookingBusinessesById("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
 
 
 ```

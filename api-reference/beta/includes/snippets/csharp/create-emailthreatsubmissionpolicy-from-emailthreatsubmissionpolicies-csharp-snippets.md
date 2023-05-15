@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var emailThreatSubmissionPolicy = new Microsoft.Graph.Security.EmailThreatSubmissionPolicy
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EmailThreatSubmissionPolicy
 {
-	IsReportToMicrosoftEnabled = true
+	IsReportToMicrosoftEnabled = true,
 };
+var result = await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies.PostAsync(requestBody);
 
-await graphClient.Security.ThreatSubmission.EmailThreatSubmissionPolicies
-	.Request()
-	.AddAsync(emailThreatSubmissionPolicy);
 
 ```
