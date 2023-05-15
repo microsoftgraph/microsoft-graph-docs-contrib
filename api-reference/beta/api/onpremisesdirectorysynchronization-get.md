@@ -115,11 +115,28 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/onPremisesSynchronization/$entity",
   "id": "12cce4b4-4ab8-40b7-be4d-f5d7742ec185",
   "configuration": {
-    "synchronizationInterval": "PT30M",
-    "customerRequestedSynchronizationInterval": "PT1H",
     "accidentalDeletionPrevention": {
       "synchronizationPreventionType": "enabledForCount",
       "alertThreshold": 500
+    },
+    "synchronizationInterval": "PT30M",
+    "customerRequestedSynchronizationInterval": "PT1H",
+    "anchorAttribute": "extensionAttribute4",
+    "applicationId": "1651564e-7ce4-4d99-88be-0a65050d8dc3",
+    "synchronizationClientVersion": "2.1.16.0",
+    "currentExportData": {
+      "pendingObjectsAddition": 63,
+      "pendingObjectsDeletion": 18,
+      "pendingObjectsUpdate": 290,
+      "successfulLinksProvisioningCount": 0,
+      "successfulObjectsProvisioningCount": 0,
+      "clientMachineName": "ABCD-SYNC-01",
+      "serviceAccount": "Synchronization-01@Contoso.onmicrosoft.com",
+      "totalConnectorSpaceObjects": 123456789
+    },
+    "writebackConfiguration": {
+      "unifiedGroupContainer": "unified-group-container-value",
+      "userContainer": "user-container-value"
     }
   },
   "features": {
