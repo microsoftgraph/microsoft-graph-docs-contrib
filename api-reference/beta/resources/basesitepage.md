@@ -1,5 +1,5 @@
 ---
-title: BaseSitePage
+title: "baseSitePage resource type"
 description: This resource is a abstract type for site page
 author: Sangle7
 ms.localizationpriority: medium
