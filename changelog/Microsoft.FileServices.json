@@ -3238,6 +3238,30 @@
               "ChangeType": "Addition",
               "Description": "Added the [baseSitePage](https://learn.microsoft.com/en-us/graph/api/resources/baseSitePage?view=graph-rest-beta) resource",
               "Target": "baseSitePage"
+            },
+            {
+              "Id": "d9f1c081-4b9d-47e0-af79-96b681dbd396",
+              "ApiChange": "Method",
+              "ChangedApiName": "create",
+              "ChangeType": "Addition",
+              "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/webpart-create?view=graph-rest-beta) method to the [webpart](https://learn.microsoft.com/en-us/graph/api/resources/webpart?view=graph-rest-beta) resource",
+              "Target": "webPart"
+            },
+            {
+              "Id": "ed32b556-30a9-4058-b00f-d9b626c1a87d",
+              "ApiChange": "Method",
+              "ChangedApiName": "update",
+              "ChangeType": "Addition",
+              "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/webpart-update?view=graph-rest-beta) method to the [webpart](https://learn.microsoft.com/en-us/graph/api/resources/webpart?view=graph-rest-beta) resource",
+              "Target": "webPart"
+            },
+            {
+              "Id": "fad07c95-15cf-4c32-9dee-0a14241934c5",
+              "ApiChange": "Method",
+              "ChangedApiName": "delete",
+              "ChangeType": "Addition",
+              "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/webpart-delete?view=graph-rest-beta) method to the [webpart](https://learn.microsoft.com/en-us/graph/api/resources/webpart?view=graph-rest-beta) resource",
+              "Target": "webPart"
             }
           ],
           "Id": "81fad909-6e78-4228-8879-3f3589b0498e",
