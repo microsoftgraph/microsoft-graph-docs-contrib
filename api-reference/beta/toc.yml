@@ -13268,7 +13268,7 @@ items:
               href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
             - name: Get authentication method modes
               href: api/authenticationmethodmodedetail-get.md
-        - name: Custom authentication extensions
+        - name: Custom authentication extensions (Preview)
           items:
           - name: Custom authentication extension
             href: resources/customauthenticationextension.md
