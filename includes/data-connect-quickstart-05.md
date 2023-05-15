@@ -60,7 +60,7 @@ Specify the datasets that the app registration needs to query. To learn more abo
 
 3. Switch to the **Security & privacy** tab and select the **Microsoft Graph Data Connect applications**.
 
-    ![A screenshot that shows the security and privacy page in the Microsoft 365 admin center.](../concepts/images/data-connect-app-register-7.png)
+    ![A screenshot that shows the Security and privacy page in the Microsoft 365 admin center.](../concepts/images/data-connect-app-register-7.png)
 
 4. In the Microsoft Graph Data Connect applications portal, you should see the application you registered previously with Data Connect in the application summary table with the status **Pre-consent**.
 
