@@ -13628,7 +13628,7 @@ items:
               href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
             - name: Update
               href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
-            - name: resetToDefaultSettings
+            - name: Reset to default settings
               href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
           - name: Identity sync policy template
             items:
@@ -13638,7 +13638,7 @@ items:
               href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
             - name: Update
               href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
-            - name: resetToDefaultSettings
+            - name: Reset to default settings
               href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
         - name: Organization
           href: resources/organization.md
