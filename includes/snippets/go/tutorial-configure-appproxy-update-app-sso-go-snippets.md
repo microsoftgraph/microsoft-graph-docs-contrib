@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewApplication()
 additionalData := map[string]interface{}{
@@ -24,7 +32,7 @@ singleSignOnSettings.SetSingleSignOnMode(&singleSignOnMode)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ApplicationsById("application-id").Patch(context.Background(), requestBody, nil)
+graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

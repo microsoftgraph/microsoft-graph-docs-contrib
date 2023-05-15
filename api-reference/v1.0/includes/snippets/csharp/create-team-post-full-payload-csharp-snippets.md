@@ -97,10 +97,6 @@ var requestBody = new Team
 		AllowTeamMentions = true,
 		AllowChannelMentions = true,
 	},
-	DiscoverySettings = new TeamDiscoverySettings
-	{
-		ShowInTeamsSearchAndSuggestions = true,
-	},
 	InstalledApps = new List<TeamsAppInstallation>
 	{
 		new TeamsAppInstallation
@@ -125,7 +121,13 @@ var requestBody = new Team
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"template@odata.bind" , "https://graph.microsoft.com/beta/teamsTemplates('standard')"
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+		},
+		{
+			"discoverySettings" , new 
+			{
+				ShowInTeamsSearchAndSuggestions = true,
+			}
 		},
 	},
 };

@@ -14,7 +14,7 @@ const calendar = {
   name: 'Marketing calendar'
 };
 
-await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
+await client.api('/me/calendarGroups/AAMkADYAAAR9NR5AAA=/calendars')
 	.version('beta')
 	.post(calendar);
 

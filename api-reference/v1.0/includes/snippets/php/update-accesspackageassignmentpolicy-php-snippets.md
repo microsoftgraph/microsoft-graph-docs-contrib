@@ -107,7 +107,7 @@ $accessPackage->setId('49d2c59b-0a81-463d-a8ec-ddad3935d8a0');
 $requestBody->setAccessPackage($accessPackage);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentPoliciesById('accessPackageAssignmentPolicy-id')->put($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentPoliciesById('accessPackageAssignmentPolicy-id')->put($requestBody);
 
 
 ```

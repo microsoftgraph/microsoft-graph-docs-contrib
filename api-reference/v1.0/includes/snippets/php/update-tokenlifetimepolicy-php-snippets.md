@@ -10,15 +10,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new TokenLifetimePolicy();
-$requestBody->setDefinition(['definition-value', ]);
+$requestBody->setDefinition(['{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"5:30:00\"}}', ]);
 
-$requestBody->setDisplayName('displayName-value');
+$requestBody->setDisplayName('Contoso token lifetime policy');
 
 $requestBody->setIsOrganizationDefault(true);
 
 
 
-$requestResult = $graphServiceClient->policies()->tokenLifetimePoliciesById('tokenLifetimePolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->tokenLifetimePoliciesById('tokenLifetimePolicy-id')->patch($requestBody);
 
 
 ```

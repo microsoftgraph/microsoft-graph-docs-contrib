@@ -72,11 +72,11 @@ The following table shows the properties that are required when you create the a
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name. This property is deprecated starting in February 2023 (Release 2302).|
+|identityName|String|The Identity Name. This property is being deprecated in 2302(February 2023).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of Android Line of Business (LoB) app.|
 |versionCode|String|The version code of Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is deprecated starting in February 2023 (Release 2302).|
+|identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
 
 
 

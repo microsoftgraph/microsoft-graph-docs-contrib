@@ -17,7 +17,7 @@ $body->setContent('Hello World');
 $requestBody->setBody($body);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
 
 
 ```

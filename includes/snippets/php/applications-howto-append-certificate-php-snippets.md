@@ -43,7 +43,7 @@ $requestBody->setKeyCredentials($keyCredentialsArray);
 
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$result = $graphServiceClient->applicationsById('application-id')->patch($requestBody);
 
 
 ```

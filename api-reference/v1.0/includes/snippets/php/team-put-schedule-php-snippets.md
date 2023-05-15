@@ -16,7 +16,7 @@ $requestBody->setTimeZone('America/Chicago');
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->put($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->put($requestBody);
 
 
 ```

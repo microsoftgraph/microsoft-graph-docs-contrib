@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestForcedelete := true
@@ -17,7 +25,7 @@ configuration := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderD
 	QueryParameters: requestParameters,
 }
 
-graphClient.Compliance().Ediscovery().CasesById("case-id").TagsById("tag-id").Delete(context.Background(), configuration)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().ByTagId("tag-id").Delete(context.Background(), configuration)
 
 
 ```

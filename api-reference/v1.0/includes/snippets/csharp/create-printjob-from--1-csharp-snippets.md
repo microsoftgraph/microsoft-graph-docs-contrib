@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var printJob = new PrintJob
+var requestBody = new PrintJob
 {
 	Configuration = new PrintJobConfiguration
 	{
+		OdataType = "microsoft.graph.printJobConfiguration",
 		FeedOrientation = PrinterFeedOrientation.LongEdgeFirst,
-		PageRanges = new List<IntegerRange>()
+		PageRanges = new List<IntegerRange>
 		{
 			new IntegerRange
 			{
-				Start = 1,
-				End = 1
-			}
+				OdataType = "microsoft.graph.integerRange",
+				Start = 1L,
+				End = 1L,
+			},
 		},
 		Quality = PrintQuality.Medium,
 		Dpi = 600,
@@ -33,7 +35,7 @@ var printJob = new PrintJob
 			Top = 0,
 			Bottom = 0,
 			Left = 0,
-			Right = 0
+			Right = 0,
 		},
 		MediaType = "stationery",
 		Finishings = null,
@@ -41,12 +43,10 @@ var printJob = new PrintJob
 		MultipageLayout = PrintMultipageLayout.ClockwiseFromBottomLeft,
 		Collate = false,
 		Scaling = PrintScaling.ShrinkToFit,
-		FitPdfToPage = false
-	}
+		FitPdfToPage = false,
+	},
 };
+var result = await graphClient.Print.Printers["{printer-id}"].Jobs.PostAsync(requestBody);
 
-await graphClient.Print.Printers["{printer-id}"].Jobs
-	.Request()
-	.AddAsync(printJob);
 
 ```

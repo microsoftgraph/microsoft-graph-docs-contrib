@@ -16,7 +16,7 @@ $requestBody->setStatus(new RecordingStatus('notrecording | recording | failed')
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->updateRecordingStatus()->post($requestBody);
+$result = $graphServiceClient->communications()->callsById('call-id')->updateRecordingStatus()->post($requestBody);
 
 
 ```

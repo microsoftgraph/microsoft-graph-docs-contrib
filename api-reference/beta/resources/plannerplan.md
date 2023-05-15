@@ -24,6 +24,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
+|[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -98,5 +99,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

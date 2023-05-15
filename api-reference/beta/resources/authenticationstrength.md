@@ -1,6 +1,6 @@
 ---
 title: "authenticationStrength resource type"
-description: "The custom authentication strength enforced in a Conditional Access policy"
+description: "Represents the custom authentication strength enforced in a conditional access policy."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,12 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The custom authentication strength enforced in a Conditional Access policy. 
+Represents the custom authentication strength enforced in a conditional access policy. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationStrengthId|String|Identifier of the authentication strength.|
+|authenticationStrengthResult|authenticationStrengthResult|The result of the authentication strength. The possible values are: `notSet`, `skippedForProofUp`, `satisfied`, `singleChallengeRequired`, `multipleChallengesRequired`, `singleRegistrationRequired`, `multipleRegistrationsRequired`, `cannotSatisfyDueToCombinationConfiguration`, `cannotSatisfy`, `unknownFutureValue`.|
 |displayName|String|The name of the authentication strength.|
 
 ## Relationships
@@ -35,6 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationStrength",
   "authenticationStrengthId": "String",
+  "authenticationStrengthResult": "String",
   "displayName": "String"
 }
 ```

@@ -18,7 +18,7 @@ $requestBody->setPropagateChanges(false);
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->columnsById('columnDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->columnsById('columnDefinition-id')->patch($requestBody);
 
 
 ```

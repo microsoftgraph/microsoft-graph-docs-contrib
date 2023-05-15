@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unset a reaction to a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Unset a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -37,14 +37,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To unset a reaction to a **chatMessage** in a **channel**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/unsetReaction
 POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/unsetReaction
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/unsetReaction
+```
+
+To unset a reaction to a **chatMessage** in a **chat**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /users/{userId}/chats/{chatId}/messages/{chatMessageId}/unsetReaction
 ```
 
 ## Request headers

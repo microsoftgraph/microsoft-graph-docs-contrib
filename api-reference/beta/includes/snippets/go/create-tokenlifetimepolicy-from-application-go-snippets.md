@@ -5,15 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
 
-requestBody := graphmodels.NewTokenLifetimePoliciesPostRequestBody()
-additionalData := map[string]interface{}{
-	"@odata.id" : "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9", 
-}
-requestBody.SetAdditionalData(additionalData)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-graphClient.ApplicationsById("application-id").TokenLifetimePolicies().Post(context.Background(), requestBody, nil)
+
+requestBody := graphmodels.NewReferenceCreate()
+odataId := "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
+requestBody.SetOdataId(&odataId) 
+
+graphClient.Applications().ByApplicationId("application-id").TokenLifetimePolicies().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

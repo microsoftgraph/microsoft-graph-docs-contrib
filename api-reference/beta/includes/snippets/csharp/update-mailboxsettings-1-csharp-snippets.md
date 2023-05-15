@@ -4,35 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mailboxSettings = new MailboxSettings
+var requestBody = new MailboxSettings
 {
 	AutomaticRepliesSetting = new AutomaticRepliesSetting
 	{
 		Status = AutomaticRepliesStatus.Scheduled,
 		ScheduledStartDateTime = new DateTimeTimeZone
 		{
-			DateTime = "2016-03-20T18:00:00",
-			TimeZone = "UTC"
+			DateTime = "2016-03-20T18:00:00.0000000",
+			TimeZone = "UTC",
 		},
 		ScheduledEndDateTime = new DateTimeTimeZone
 		{
-			DateTime = "2016-03-28T18:00:00",
-			TimeZone = "UTC"
-		}
+			DateTime = "2016-03-28T18:00:00.0000000",
+			TimeZone = "UTC",
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"@odata.context", "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
-	}
+		{
+			"@odata.context" , "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"
+		},
+	},
 };
+var result = await graphClient.Me.MailboxSettings.PatchAsync(requestBody);
 
-var me = new User();
-me.MailboxSettings = mailboxSettings;
-
-await graphClient.Me
-	.Request()
-	.UpdateAsync(me);
 
 ```

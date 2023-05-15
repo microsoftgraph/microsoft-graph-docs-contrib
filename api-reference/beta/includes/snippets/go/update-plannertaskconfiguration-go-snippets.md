@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPlannerTaskConfiguration()
 editPolicy := graphmodels.NewPlannerTaskPolicy()
@@ -193,7 +201,7 @@ rules := []graphmodels.PlannerTaskRoleBasedRuleable {
 editPolicy.SetRules(rules)
 requestBody.SetEditPolicy(editPolicy)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, nil)
 
 
 ```

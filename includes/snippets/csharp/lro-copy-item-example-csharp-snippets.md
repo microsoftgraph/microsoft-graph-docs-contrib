@@ -4,18 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var parentReference = new ItemReference
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Copy.CopyPostRequestBody
 {
-	Path = "/drive/root:/Documents"
+	ParentReference = new ItemReference
+	{
+		Path = "/drive/root:/Documents",
+	},
+	Name = "Copy of LargeFolder1",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Copy.PostAsync(requestBody);
 
-var name = "Copy of LargeFolder1";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.Copy(name,parentReference)
-	.Request()
-	.PostAsync();
 
 ```

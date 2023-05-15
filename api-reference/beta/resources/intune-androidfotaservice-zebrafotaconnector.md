@@ -31,7 +31,7 @@ The Zebra FOTA connector entity that represents the tenant's authorization statu
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of ZebraFotaConnector.|
-|state|[zebraFotaConnectorState](../resources/intune-androidfotaservice-zebrafotaconnectorstate.md)|The Zebra connector state. Possible values are: `none`, `connected`, `disconnected`, `unknownFutureValue`.|
+|state|** Unknown Type `microsoft.intune.core.msGraph.zebraFotaConnectorState` **|The Zebra connector state.|
 |enrollmentToken|String|Tenant enrollment token from Zebra. The token is used to enroll Zebra devices in the FOTA Service via app config.|
 |enrollmentAuthorizationUrl|String|Complete account enrollment authorization URL. This corresponds to verification_uri_complete in the Zebra API documentations.|
 |lastSyncDateTime|DateTimeOffset|Date and time when the account was last synched with Zebra|
@@ -52,7 +52,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.zebraFotaConnector",
   "id": "String (identifier)",
-  "state": "String",
+  "state": "<Unknown None>",
   "enrollmentToken": "String",
   "enrollmentAuthorizationUrl": "String",
   "lastSyncDateTime": "String (timestamp)",

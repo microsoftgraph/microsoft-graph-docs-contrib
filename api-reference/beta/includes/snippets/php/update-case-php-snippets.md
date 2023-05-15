@@ -18,7 +18,7 @@ $requestBody->setExternalId('Updated externalId');
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->patch($requestBody);
 
 
 ```

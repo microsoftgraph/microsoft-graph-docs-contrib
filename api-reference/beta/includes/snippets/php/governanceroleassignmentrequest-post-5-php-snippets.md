@@ -31,7 +31,7 @@ $schedule->setEndDateTime(new DateTime('2018-06-05T05:42:31.000Z'));
 $requestBody->setSchedule($schedule);
 
 
-$requestResult = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->privilegedAccessById('privilegedAccess-id')->roleAssignmentRequests()->post($requestBody);
 
 
 ```

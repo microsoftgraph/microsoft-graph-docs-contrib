@@ -4,34 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var recipients = new List<DriveRecipient>()
+var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Invite.InvitePostRequestBody
 {
-	new DriveRecipient
+	Recipients = new List<DriveRecipient>
 	{
-		Email = "ryan@contoso.com"
-	}
+		new DriveRecipient
+		{
+			Email = "ryan@contoso.com",
+		},
+	},
+	Message = "Here's the file that we're collaborating on.",
+	RequireSignIn = true,
+	SendInvitation = true,
+	Roles = new List<string>
+	{
+		"write",
+	},
+	Password = "password123",
+	ExpirationDateTime = "2018-07-15T14:00:00.000Z",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Invite.PostAsync(requestBody);
 
-var message = "Here's the file that we're collaborating on.";
-
-var requireSignIn = true;
-
-var sendInvitation = true;
-
-var roles = new List<String>()
-{
-	"write"
-};
-
-var password = "password123";
-
-var expirationDateTime = "2018-07-15T14:00:00Z";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.Invite(recipients,requireSignIn,roles,sendInvitation,message,null,expirationDateTime,password)
-	.Request()
-	.PostAsync();
 
 ```

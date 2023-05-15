@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var reason = "String";
+var requestBody = new Microsoft.Graph.Print.Printers.Item.Jobs.Item.Abort.AbortPostRequestBody
+{
+	Reason = "String",
+};
+await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].Abort.PostAsync(requestBody);
 
-await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"]
-	.Abort(reason)
-	.Request()
-	.PostAsync();
 
 ```

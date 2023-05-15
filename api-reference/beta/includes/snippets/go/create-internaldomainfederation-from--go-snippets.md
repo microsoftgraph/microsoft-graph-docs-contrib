@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewInternalDomainFederation()
 displayName := "Contoso"
@@ -33,7 +41,7 @@ requestBody.SetNextSigningCertificate(&nextSigningCertificate)
 federatedIdpMfaBehavior := graphmodels.REJECTMFABYFEDERATEDIDP_FEDERATEDIDPMFABEHAVIOR 
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior) 
 
-result, err := graphClient.DomainsById("domain-id").FederationConfiguration().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Domains().ByDomainId("domain-id").FederationConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

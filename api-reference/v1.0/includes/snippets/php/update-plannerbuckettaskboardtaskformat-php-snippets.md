@@ -14,16 +14,14 @@ $requestBody->setOrderHint('A6673H Ejkl!');
 
 
 $requestConfiguration = new BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration();
-
 $headers = [
-	'Prefer' => 'return=representation',
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'Prefer' => 'return=representation',
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->planner()->tasksById('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->planner()->tasksById('plannerTask-id')->bucketTaskBoardFormat()->patch($requestBody, $requestConfiguration);
 
 
 ```
