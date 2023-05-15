@@ -57,7 +57,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
     1. In the search box, enter *Copy data* and then drag the **Copy data** activity from the **Move & transform** section onto the design surface.
 
-        ![A screenshot of the integrate page with Move & transform and copy data highlighted.](../concepts/images/data-connect-synapse-move-transform.png)
+        ![A screenshot of the integrate page with Move and transform and copy data highlighted.](../concepts/images/data-connect-synapse-move-transform.png)
 
     1. Select the activity in the designer.
 
