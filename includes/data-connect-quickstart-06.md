@@ -34,7 +34,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
     ![A screenshot of the resource page with Open Synapse Studio highlighted.](../concepts/images/azure-synapse-studio-tile.png)
 
-1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. We recommend for the context of this tutorial in the developer tenant, to use default auto-resolve.
+1. By default, Azure Synapse Analytics uses an integration runtime that auto-resolves the region. We recommend for the context of this tutorial in the developer tenant, to use the default auto-resolve.
 
     1. Switch to **Manage (toolbox icon) > Integration runtimes > New**.
 
@@ -122,11 +122,11 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. With the pipeline created, at the top of the designer, choose **Validate all**.  
 
-![A screenshot of the Synapse Analytics Pipeline with validate all highlighted.](../concepts/images/data-connect-synapse-validateall.png)
+![A screenshot of the Synapse Analytics Pipeline with validate all highlighted.](../concepts/images/data-connect-synapse-validateAll.png)
 
 1. After validating (and fixing any issues that were found), at the top of the designer, choose **Publish all**.  
 
-![A screenshot of the Synapse Analytics Pipeline with Publish all highlighted.](../concepts/images/data-connect-synapse-publishall.png)
+![A screenshot of the Synapse Analytics Pipeline with Publish all highlighted.](../concepts/images/data-connect-synapse-publishAll.png)
 
 ## Run the Azure Synapse Analytics pipeline
 

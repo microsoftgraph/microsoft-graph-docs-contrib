@@ -8,9 +8,7 @@ You can also use Azure Synapse instead of Azure Data Factory to create a pipelin
 
 ## Create an Azure Synapse pipeline
 
-1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
-
-1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Verify that your account has privileges to create Azure resources within your subscription.
+1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home). Sign in using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Please, verify that your account has privileges to create Azure resources within your subscription.
 
 1. Open a browser and go to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
