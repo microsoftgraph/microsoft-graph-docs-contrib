@@ -8,12 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update attributeSet
-Namespace: microsoft.graph
 
+Namespace: microsoft.graph
 
 Update the properties of an [attributeSet](../resources/attributeset.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -35,22 +36,20 @@ PATCH /directory/attributeSets/{attributeSetId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
-The following table specifies the properties that can be updated.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Optional.|
 |maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Optional.|
-
-
 
 ## Response
 
@@ -58,19 +57,30 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example: Update an attribute set
+### Request
 
 The following example updates the description and the maximum number of attributes for an attribute set named `Engineering`.
 
-#### Request
-
 <!-- {
   "blockType": "request",
-  "name": "update_attributeset"
+  "name": "update_attributeset",
+  "sampleKeys": ["Engineering"]
 }
 -->
+``` http
+PATCH https://graph.microsoft.com/v1.0/directory/attributeSets/Engineering
+Content-Type: application/json
+Content-length: 119
 
-#### Response
+{
+    "description":"Attributes for engineering team",
+    "maxAttributesPerSet":20
+}
+```
+
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

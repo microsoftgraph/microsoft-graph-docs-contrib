@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List attributeSets
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get a list of the [attributeSet](../resources/attributeset.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -43,14 +45,17 @@ GET /directory/attributeSets
 ```
 
 ## Optional query parameters
+
 This method supports the `$select`, `$top`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -64,6 +69,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example gets all attribute sets in a tenant.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,6 +110,8 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,6 +144,8 @@ Content-Type: application/json
 The following example gets the top 10 attribute sets with support for paging.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -174,6 +185,8 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -204,9 +217,11 @@ Content-Type: application/json
 
 ### Example 3: Get attribute sets in order
 
-The following example gets attribute sets ordered by id.
+The following example gets attribute sets ordered by ID.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -245,6 +260,8 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 ---
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

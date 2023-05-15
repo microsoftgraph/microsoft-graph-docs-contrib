@@ -8,12 +8,13 @@ doc_type: apiPageType
 ---
 
 # Create allowedValue
-Namespace: microsoft.graph
 
+Namespace: microsoft.graph
 
 Create a new [allowedValue](../resources/allowedvalue.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,24 +35,23 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 ```
 
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [allowedValue](../resources/allowedvalue.md) object.
 
-The following table shows the properties that are required when you create the [allowedValue](../resources/allowedvalue.md).
+The following table shows the properties that are required when you create an [allowedValue](../resources/allowedvalue.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. Required.|
 |isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Required.|
-
-
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ## Examples
 
-### Example: Add a predefined value
+### Request
 
 The following example adds a predefined value to a custom security attribute definition.
 
@@ -67,16 +67,26 @@ The following example adds a predefined value to a custom security attribute def
 + Attribute: `Project`
 + Predefined value: `Alpine`
 
-#### Request
-
 <!-- {
   "blockType": "request",
   "name": "create_allowedvalue",
   "sampleKeys": ["Engineering_Project"]
 }
 -->
+``` http
+POST https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues
+Content-Type: application/json
 
-#### Response
+{
+    "id":"Alpine",
+    "isActive":"true"
+}
+```
+
+### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

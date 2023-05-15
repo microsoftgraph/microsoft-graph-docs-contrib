@@ -8,12 +8,13 @@ doc_type: apiPageType
 ---
 
 # List attributeSets
-Namespace: microsoft.graph
 
+Namespace: microsoft.graph
 
 Get a list of the [attributeSet](../resources/attributeset.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -42,14 +43,17 @@ GET /directory/attributeSets
 ```
 
 ## Optional query parameters
+
 This method supports the `$select`, `$top`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -64,13 +68,20 @@ The following example gets all attribute sets in a tenant.
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_attributeset_all"
 }
 -->
+``` http
+GET https://graph.microsoft.com/v1.0/directory/attributeSets
+```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -105,14 +116,21 @@ The following example gets the top 10 attribute sets with support for paging.
 
 #### Request
 
+The following is an example of a request.
+
+
 <!-- {
   "blockType": "request",
   "name": "list_attributeset_top"
 }
 -->
-
+``` http
+GET https://graph.microsoft.com/v1.0/directory/attributeSets?$top=10
+```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -144,17 +162,24 @@ Content-Type: application/json
 
 ### Example 3: Get attribute sets in order
 
-The following example gets attribute sets ordered by id.
+The following example gets attribute sets ordered by ID.
 
 #### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
   "name": "list_attributeset_orderby"
 }
 -->
+``` http
+GET https://graph.microsoft.com/v1.0/directory/attributeSets?$orderBy=id
+```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
