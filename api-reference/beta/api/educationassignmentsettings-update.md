@@ -158,7 +158,7 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationGradingCategory",
-  "isCollection": true
+  "isCollection": false
 } -->
 
 ```http
