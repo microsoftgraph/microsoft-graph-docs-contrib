@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /directory/subscriptions/f9c1ea2d-2c6e-4717-8c3b-7130812d70ba
+GET /directory/subscriptions/{ocpSubscriptionId}
 ```
 
 ## Optional query parameters
