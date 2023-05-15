@@ -1,5 +1,5 @@
 ---
-title: "assignLicense"
+title: "user: assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
 author: "jconley76"
 ms.localizationpriority: high
