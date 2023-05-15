@@ -3244,7 +3244,7 @@
               "ApiChange": "Method",
               "ChangedApiName": "create",
               "ChangeType": "Addition",
-              "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/webpart-create?view=graph-rest-beta) method to the [webpart](https://learn.microsoft.com/en-us/graph/api/resources/webpart?view=graph-rest-beta) resource",
+              "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/sitepage-create-webpart?view=graph-rest-beta) method to the [webpart](https://learn.microsoft.com/en-us/graph/api/resources/webpart?view=graph-rest-beta) resource",
               "Target": "webPart"
             },
             {
