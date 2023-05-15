@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartReturnClaim resource type"
-description: "A claim returned by an API that is to be add to a token after an onTokenIssuanceStart event."
+description: "A claim returned by an API that is to be added to a token after the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
