@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom extension handler for an onTokenIssuanceStart event.
+Custom extension handler for the event when a token is about to be issued to your application.
 
 Inherits from [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md).
 
