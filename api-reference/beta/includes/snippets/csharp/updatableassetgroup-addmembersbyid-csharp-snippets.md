@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.WindowsUpdatesAddMembersById.AddMembersByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.MicrosoftGraphWindowsUpdatesAddMembersById.AddMembersByIdPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 	},
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].WindowsUpdatesAddMembersById.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].MicrosoftGraphWindowsUpdatesAddMembersById.PostAsync(requestBody);
 
 
 ```

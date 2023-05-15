@@ -30,7 +30,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deletedItems/{id}
+GET /directory/deletedItems/{object-id}
 ```
 
 ## Optional query parameters
