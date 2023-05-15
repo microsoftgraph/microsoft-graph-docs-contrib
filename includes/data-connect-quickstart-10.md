@@ -10,7 +10,7 @@ You've completed the Microsoft Graph Data Connect tutorial! You should now be ab
 2. Under **Azure Services**, click **Storage accounts**.
 3. Select the Azure Storage account you created previously in this tutorial.
 4. On the left navigation pane, click on **Containers**.
-5. Click the **m365mails** container you created previously in this tutorial
+5. Click the **m365mails** container you created previously in this tutorial.
 6. You should see the file with a GUID name in your container.
 
 ![A screenshot of the Azure portal user interface that shows the newly created file in the Azure Storage container.](../concepts/images/data-connect-storageaccountcompletion.png)
