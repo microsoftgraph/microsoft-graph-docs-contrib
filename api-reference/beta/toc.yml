@@ -327,6 +327,8 @@ items:
           href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
+        - name: Retry service provisioning
+          href: api/user-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -757,6 +759,8 @@ items:
           href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
+        - name: Retry service provisioning
+          href: api/group-retryserviceprovisioning.md
       - name: App role assignment
         href: resources/approleassignment.md
         items:
@@ -12188,6 +12192,8 @@ items:
               href: api/directoryobject-getmemberobjects.md
             - name: Check member objects
               href: api/directoryobject-checkmemberobjects.md
+          - name: Retry service provisioning
+            href: api/orgcontact-retryserviceprovisioning.md
           - name: Groups
             href: resources/group.md
             items:
@@ -14007,7 +14013,7 @@ items:
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows
+          - name: Self-service sign up user flows in Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
@@ -16508,12 +16514,12 @@ items:
             href: api/termStore-relation-post.md
       - name: Tenant settings
         items:
-          - name: Sharepoint settings
-            href: resources/sharepointSettings.md
+          - name: SharePoint settings
+            href: resources/sharepointsettings.md
           - name: Get
-            href: api/sharepointSettings-get.md
+            href: api/sharepointsettings-get.md
           - name: Update
-            href: api/sharepointSettings-update.md
+            href: api/sharepointsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -17046,9 +17052,9 @@ items:
               href: api/onlinemeeting-delete.md
             - name: Create or get
               href: api/onlinemeeting-createorget.md
-          - name: Virtual appointment (preview)
+          - name: Virtual appointment
             items:
-            - name: Get Virtual appointment join link
+            - name: Get virtual appointment join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
           - name: Virtual appointment (deprecated)
             href: resources/virtualappointment.md

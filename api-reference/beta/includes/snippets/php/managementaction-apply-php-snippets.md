@@ -18,7 +18,7 @@ $requestBody->setManagementTemplateId('String');
 
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionsById('managementAction-id')->managedTenantsApply()->post($requestBody);
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->managementActionsById('managementAction-id')->microsoftGraphManagedTenantsApply()->post($requestBody);
 
 
 ```
