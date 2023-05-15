@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesUnenrollAssetsById.UnenrollAssetsByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssetsById.UnenrollAssetsByIdPostRequestBody
 {
 	UpdateCategory = Microsoft.Graph.Beta.Models.WindowsUpdates.UpdateCategory.Feature,
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
@@ -17,7 +17,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets
 		"String",
 	},
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets.WindowsUpdatesUnenrollAssetsById.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssetsById.PostAsync(requestBody);
 
 
 ```
