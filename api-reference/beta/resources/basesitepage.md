@@ -47,7 +47,7 @@ Inherits from [baseItem](../resources/baseitem.md).
 
 | Value                | Description                                                     |
 | -------------------- | --------------------------------------------------------------- |
-| `microsoftReserved`  | The page is a special type, reserved for use by Microsoft only. |
+| `microsoftReserved`  | The page is a special type reserved for Microsoft use only. |
 | `article`            | The page is an article page.                                    |
 | `home`               | The page is a home page.                                        |
 | `unknownFutureValue` | Marker value for future compatibility.                          |
