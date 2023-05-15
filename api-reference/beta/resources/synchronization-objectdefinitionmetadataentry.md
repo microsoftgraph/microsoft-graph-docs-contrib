@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 Metadata for the given object.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|String|Possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
+|key|objectDefinitionMetadata|Possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
 |value|String|Value of the metadata property.|
 
-### Supported key value pairs
-| Key	   |Value|
+### Supported key-value pairs
+| Key       |Value|
 |:---------------|:----------|
 |PropertyNameAccountEnabled| Indicates that the object is enabled. |
 |PropertyNameSoftDeleted | Indicates that the object is soft-deleted.  |

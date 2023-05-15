@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 Metadata for the given object.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|String|Possible values are: `EscrowBehavior`, `DisableMonitoringForChanges`, `OriginalJoiningProperty`, `Disposition`, `IsCustomerDefined`, `ExcludeFromReporting`, `Unsynchronized`. |
+|key|objectMappingMetadata|Possible values are: `EscrowBehavior`, `DisableMonitoringForChanges`, `OriginalJoiningProperty`, `Disposition`, `IsCustomerDefined`, `ExcludeFromReporting`, `Unsynchronized`. |
 |value|String|Value of the metadata property.|
 
-### Supported key value pairs
-| Key	   |Value|
+### Supported key-value pairs
+| Key       |Value|
 |:---------------|:----------|
 |EscrowBehavior| Values include `IgnoreLookupReferenceResolutionFailure` for the escrow to be ignored if generated due to failure during lookup reference resolution, and `Default` for the escrow will be treated normally.  |
 |DisableMonitoringForChanges | Indicates that changes to a specific attribute are not considered when deciding if there has been a change to an entry in the source.  |

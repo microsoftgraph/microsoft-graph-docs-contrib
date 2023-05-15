@@ -16,23 +16,23 @@ Namespace: microsoft.graph
 Metadata for the given object.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|String|Possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
+|key|synchronizationMetadata|Possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
 |value|String|Value of the metadata property.|
 
-### Supported key value pairs
-| Key	   |Value|
+### Supported key-value pairs
+| Key       |Value|
 |:---------------|:----------|
 |GalleryApplicationIdentifier|The GUID that represents this enterprise application in Azure AD.   |
 |GalleryApplicationKey | The name that represents this enterprise application in Azure AD (same value as the factoryTag attribute within the synchronizationTemplate resource type).   |
 |IsOAuthEnabled  |Indicates whether OAuth is enabled for this synchronization job's application.  |
 |IsSynchronizationAgentAssignmentRequired |Indicates whether to display certain UI elements applicable only during synchronization that requires an on-premises agent.  |
 |IsSynchronizationAgentRequired |Indicates whether an on-premises synchronization agent is required for this synchronization job. |
-|IsSynchronizationInPreview  |Indicates whether provisioning for this enterprise application is in GA or not.  |
-|OAuthSettings |A JSON containing values necessary for OAuth authentication, such as the Token Exchange URI and Client Identifier.  |
-|SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in Azure Portal.  |
-|ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Azure Portal. |
+|IsSynchronizationInPreview  |Indicates whether provisioning for this enterprise application is generally available.  |
+|OAuthSettings |A JSON containing values necessary for OAuth authentication, such as the token exchange URI and client identifier.  |
+|SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Azure portal.  |
+|ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Azure portal. |
 
 ## JSON representation
 
