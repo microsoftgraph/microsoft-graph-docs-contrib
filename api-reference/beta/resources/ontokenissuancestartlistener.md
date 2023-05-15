@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartListener resource type"
-description: "A listener for the onTokenIssuanceStart event."
+description: "A listener for when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
