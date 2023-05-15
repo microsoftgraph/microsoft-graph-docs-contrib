@@ -57,28 +57,24 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to update an authentication event listener's trigger conditions or priority:
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/990d94e5-cc8f-4c4b-97b4-27e2678aac28
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "authenticationEventsFlowId": "String"
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "priority": 500
 }
 ```
 

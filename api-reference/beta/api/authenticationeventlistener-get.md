@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
 
@@ -76,20 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.authenticationEventListener",
-    "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-    "priority": "Integer",
-    "conditions": {
-      "@odata.type": "microsoft.graph.authenticationConditions"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+    "displayName": "onTokenIssuanceStartCustomExtension",
+    "description": "Fetch additional claims from custom user store",
+    "clientConfiguration": null,
+    "behaviorOnError": null,
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
     },
-    "tags": [
-      {
-        "@odata.type": "microsoft.graph.keyValuePair"
-      }
-    ],
-    "authenticationEventsFlowId": "String"
-  }
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+    },
+    "claimsForTokenConfiguration": [
+        {
+            "claimIdInApiResponse": "DateOfBirth"
+        },
+        {
+            "claimIdInApiResponse": "CustomRoles"
+        }
+    ]
 }
 ```
 

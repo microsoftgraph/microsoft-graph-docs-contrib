@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 
 ## Examples
 
-### Example 1: 
+### Example 1: Supply and validate a potential configuration.
 
 #### Request
 The following is an example of a request.
@@ -130,7 +130,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: 
+### Example 2: Validate the configuration of a specific existing custom authentication extension
 
 #### Request
 The following is an example of a request.

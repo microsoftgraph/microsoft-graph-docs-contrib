@@ -47,7 +47,6 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |description|String|Description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|Display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
@@ -67,23 +66,30 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
+PATCH hhttps://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 Content-Type: application/json
 Content-length: 468
 
 {
-  "@odata.type": "#microsoft.graph.customAuthenticationExtension",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "displayName": "onTokenIssuanceStartCustomExtension",
+    "description": "Fetch additional claims from custom user store",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+    },
+    "claimsForTokenConfiguration": [
+        {
+            "claimIdInApiResponse": "DateOfBirth"
+        },
+        {
+            "claimIdInApiResponse": "CustomRoles"
+        }
+    ]
 }
 ```
 

@@ -56,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/c7a1f2c5-3d36-4b3f-b75c-143af30a5246
 ```
 
 

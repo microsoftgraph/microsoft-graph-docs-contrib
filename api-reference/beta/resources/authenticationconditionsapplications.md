@@ -18,7 +18,7 @@ The applications on which an authenticationEventListener should trigger.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|includeAllApplications|Boolean|Whether the custom authentication extension should trigger for all applications with appIds specified in the **includeApplications** relationship.|
+|includeAllApplications|Boolean|Whether the custom authentication extension should trigger for all applications with appIds specified in the **includeApplications** relationship.  The field 'includeAllApplications' must be set to false for listener of type 'OnTokenIssuanceStartListener'.|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -25,7 +25,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which onTokenIssuanceStartListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener.|
 |id|String|Identifier for the onTokenIssuanceStartListener. Inherited from [entity](../resources/entity.md).|
-|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|priority|Int32| The priority of this handler. Priority should be set to 500 for onTokenIssuanceStartListeners. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships
 None.
