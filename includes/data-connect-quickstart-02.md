@@ -8,7 +8,7 @@ Prior to using Microsoft Graph Data Connect (Data Connect) for the first time, y
 
 ## Enable Data Connect in your Microsoft 365 tenant
 
-In this step, you'll enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
+This step describes how you enable the Data Connect service on your Microsoft 365 tenant.
 
 1. Open a browser, go to your [Microsoft 365 admin center](https://admin.microsoft.com/), and sign in with your "admin" user.
 
@@ -18,6 +18,6 @@ In this step, you'll enable the Microsoft Graph Data Connect service on your Mic
 
 4. Select the checkbox that says **Turn Microsoft Graph Data Connect on or off for your entire organization.** and click **Save**.
 
-    ![A screenshot showing the checkbox you have to tick to enable Microsoft Graph Data Connect for your entire organization.](../concepts/images/data-connect-m365-consent-approver-new.png)  
+    ![A screenshot that shows the checkbox you have to tick to enable Microsoft Graph Data Connect for your entire organization.](../concepts/images/data-connect-m365-consent-approver-new.png)  
 
 5. Congratulations! You've just enabled Microsoft Graph Data Connect for your organization.
