@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesCurrentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesCurrentExportData](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesCurrentExportData?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesCurrentExportData"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "anchorAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the `anchorAttribute` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationId",
+          "ChangeType": "Addition",
+          "Description": "Added the `applicationId` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "currentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the `currentExportData` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "synchronizationClientVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `synchronizationClientVersion` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `writebackConfiguration` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesWritebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesWritebackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesWritebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesWritebackConfiguration"
+        }
+      ],
+      "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-12T07:03:29.404951Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
           "ApiChange": "Property",
           "ChangedApiName": "allowUserConsentForRiskyApps",
@@ -75,6 +141,64 @@
       "CreatedDateTime": "2023-04-14T07:49:08.3091941Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/inboundOutboundPolicyConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-1.0) resource type.",
+          "Target": "crossTenantUserSyncInbound"
+        }
+      ],
+      "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-11T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -13270,7 +13394,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningError** resource type.",
           "Target": "serviceProvisioningError"
         },
         {
@@ -13278,7 +13402,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceProvisioningXmlError",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-beta) resource type.",
+          "Description": "Added the **serviceProvisioningXmlError** resource type.",
           "Target": "serviceProvisioningXmlError"
         },
         {
