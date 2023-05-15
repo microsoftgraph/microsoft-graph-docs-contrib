@@ -1,6 +1,6 @@
 ---
 title: "baseSitePage resource type"
-description: This resource is a abstract type for site page
+description: An abstract type that represents a baseSitePage in the site page library.
 author: Sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
