@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The conditions on which an authenticationEventListener should trigger, for example, in a [user flow](authenticationeventsflow.md).
+The conditions on which an authenticationEventListener should trigger, for example, in a user flow.
 
 ## Properties
 |Property|Type|Description|
