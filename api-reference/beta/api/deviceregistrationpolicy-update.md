@@ -97,7 +97,7 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }
@@ -146,7 +146,7 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }
