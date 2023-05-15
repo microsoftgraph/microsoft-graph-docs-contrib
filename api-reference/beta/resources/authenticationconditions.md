@@ -18,7 +18,7 @@ The conditions on which an authenticationEventListener should trigger, for examp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applications|[authenticationConditionsApplications](../resources/authenticationconditionsapplications.md)|Applications which will trigger an authentication custom extension.|
+|applications|[authenticationConditionsApplications](../resources/authenticationconditionsapplications.md)|Applications which will trigger a custom authentication extension.|
 
 ## Relationships
 None.

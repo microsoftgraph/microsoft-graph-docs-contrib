@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [customAuthenticationExtension](../resources/customauthenticationextension.md) objects in the response body. An **@odata.type** property is returned for each object that specifies the type of customAuthenticationExtension object.
+If successful, this method returns a `200 OK` response code and a collection of [customAuthenticationExtension](../resources/customauthenticationextension.md) objects in the response body. An **@odata.type** property is returned for each object to specify the type of customAuthenticationExtension.
 
 ## Examples
 

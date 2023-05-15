@@ -76,11 +76,11 @@ Content-length: 468
     "description": "Fetch additional claims from custom user store",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+        "targetUrl": "https://authenticationeventsAPI.contoso.com"
     },
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
     },
     "claimsForTokenConfiguration": [
         {

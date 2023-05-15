@@ -25,8 +25,8 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |[Create customAuthenticationExtension](../api/identitycontainer-post-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Get customAuthenticationExtension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|None|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[Delete customAuthenticationExtension](../api/identitycontainer-delete-customauthenticationextensions.md)|None|Deletes a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|**TODO: What is this for?**|
+|[Delete customAuthenticationExtension](../api/customauthenticationextension-delete.md)|None|Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,6 +1,6 @@
 ---
 title: "Delete customAuthenticationExtension"
-description: "Deletes a customAuthenticationExtension object."
+description: "Delete a customAuthenticationExtension object."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

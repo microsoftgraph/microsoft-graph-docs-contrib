@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 
 ## Examples
 
-### Example 1: Supply and validate a potential configuration.
+### Example 1: Supply and validate a potential custom authentication extension configuration
 
 #### Request
 The following is an example of a request.
