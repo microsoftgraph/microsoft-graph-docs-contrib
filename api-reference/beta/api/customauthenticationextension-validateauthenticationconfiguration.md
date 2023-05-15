@@ -25,12 +25,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To validate the endpoint and authentication configuration for a customAuthenticationExtension by its ID.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/validateAuthenticationConfiguration
+```
+
+To validate the endpoint and authentication configuration that's specified in the request body for a customAuthenticationExtension. The custom authentication extension object may not exist yet and you can use this endpoint to validate the configuration before creating the custom authentication extension.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguration
 ```
 
 ## Request headers
