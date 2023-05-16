@@ -19,9 +19,10 @@ Contains certains customizable permissions of default user role in Azure AD.
 |:-------- |:---- |:----------- |
 | allowedToCreateApps | Boolean | Indicates whether the default user role can create applications. |  
 | allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. |  
+| allowedToCreateTenants | Boolean | Indicates whether the default user role can create tenants. | 
 | allowedToReadBitlockerKeysForOwnedDevice | Boolean | Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role. |
 | allowedToReadOtherUsers | Boolean | Indicates whether the default user role can read other users. |  
-| allowedToCreateTenants | Boolean | Indicates whether the default user role can create tenants. | 
+
 
 ## Relationships
 
