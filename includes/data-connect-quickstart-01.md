@@ -36,7 +36,7 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
-- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
+- For this tutorial, we strongly recommend that you use a Microsoft 365 developer tenant.
 - Your Microsoft 365 and Azure tenants must be in the same Azure AD tenancy.
 - The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Data Connect can export data across tenants (for example, to enable ISVs), but this tutorial doesn't explore this scenario.
 - One user in your Microsoft 365 tenant has the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". Only an "admin" user can approve the test application.
