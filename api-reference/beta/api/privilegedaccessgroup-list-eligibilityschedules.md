@@ -60,7 +60,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_privilegedaccessgroupeligibilityschedule"
+  "name": "list_privilegedaccessgroupeligibilityschedule_beta_e1"
 }
 -->
 ``` http
@@ -142,7 +142,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_privilegedaccessgroupeligibilityschedule"
+  "name": "list_privilegedaccessgroupeligibilityschedule_beta_e2"
 }
 -->
 ``` http
