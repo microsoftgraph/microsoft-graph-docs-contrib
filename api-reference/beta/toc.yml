@@ -13043,7 +13043,7 @@ items:
               - name: Get
                 href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
               - name: Filter by current user
-                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.
+                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
             - name: Assignment approval
               href: resources/pim-for-groups-approval.md
             - name: Get
