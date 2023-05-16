@@ -43,14 +43,12 @@ PATCH /employeeExperience/learningCourseActivities/{learningCourseActivityId}
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, use @odata.type to specify the type of [learningCourseActivity](../resources/learningcourseactivity.md) resource ([learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md)), and include the properties of that type to update. 
 
-In the request body, supply a JSON representation of the [learningCourseActivity](../resources/learningcourseactivity.md) object.
-
-The following table lists the properties that you can change for a assigned learning course activity.
+The following table lists the properties that you can change for an assigned learning course activity (**learningAssignment**).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
 |assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
@@ -59,11 +57,10 @@ The following table lists the properties that you can change for a assigned lear
 |notes|String|Notes for the course activity. Optional.|
 |status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
 
-The following table lists the properties that you can change for a self-initiated learning course activity.
+The following table lists the properties that you can change for a self-initiated learning course activity (**learningSelfInitiated**).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
