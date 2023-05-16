@@ -13305,6 +13305,16 @@ items:
           - name: Authentication event listeners
             href: resources/authenticationeventlistener.md
             items:
+            - name: On token issuance start
+              href: resources/ontokenissuancestartlistener.md
+            - name: On interactive authentication flow start
+              href: resources/oninteractiveauthflowstartlistener.md
+            - name: On authentication method load start
+              href: resources/onauthenticationmethodloadstartlistener.md
+            - name: On attribute collection
+              href: resources/onattributecollectionlistener.md
+            - name: On user create start
+              href: resources/onusercreatestartlistener.md
             - name: List
               href: api/identitycontainer-list-authenticationeventlisteners.md
             - name: Create

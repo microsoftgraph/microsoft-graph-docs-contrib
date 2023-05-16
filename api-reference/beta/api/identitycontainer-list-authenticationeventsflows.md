@@ -314,19 +314,57 @@ Content-Type: application/json
 
 ### Example 2: List all user flows that include Google as an identity provider
 
-https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/XXXXXXXXXXX
+#### Request
+
+**Add context info**
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationeventsflow_onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityprovider"
+}
+-->
+```
+GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/XXXXXXXXXXX
+```
 
 **TODO: refer to the specific identity provider correctly**
 
+#### Response
 
-### Example 3: List all user flows that collect 'favorite color' during Attribute Collection at account creation
 
-https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/XXXXXXXXXXXX
+### Example 3: List all user flows that collect 'favorite color' during attribute collection at account creation
+
+#### Request
+
+**Add context info**
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationeventsflow_onAttributeCollectionExternalUsersSelfServiceSignUp_attributes"
+}
+-->
+```
+GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/XXXXXXXXXXXX
+```
 
 **TODO: refer to the specific attribute correctly**
 
-### Example 4: List user flow associated with specific application id
+#### Response
 
 
+### Example 4: List user flows associated with specific application ID
+
+#### Request
+
+**Add context info**
+<!-- {
+  "blockType": "request",
+  "name": "list_authenticationeventsflow_xxxx"
+}
+-->
+
+```
+GET 
+```
 
 **TODO: refer to the specific application correctly**
+
+#### Response

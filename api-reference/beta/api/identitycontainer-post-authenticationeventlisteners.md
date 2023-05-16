@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) type is supported.
+Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) derived type is supported.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ You can specify the following properties when creating an **authenticationEventL
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for all types that are derived from authenticationEventListener.|
 
 ## Response
 

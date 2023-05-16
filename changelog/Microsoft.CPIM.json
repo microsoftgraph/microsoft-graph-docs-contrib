@@ -159,14 +159,6 @@
         {
           "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
           "ApiChange": "Resource",
-          "ChangedApiName": "authenticationAccessPackageConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [authenticationAccessPackageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAccessPackageConfiguration?view=graph-rest-beta) resource type.",
-          "Target": "authenticationAccessPackageConfiguration"
-        },
-        {
-          "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
-          "ApiChange": "Resource",
           "ChangedApiName": "authenticationAttributeCollectionInputConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [authenticationAttributeCollectionInputConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionInputConfiguration?view=graph-rest-beta) resource type.",
