@@ -150,7 +150,6 @@ GET /me/drive/items/{item-id}/versions/current
 
 ---
 
-
 #### Response
 
 This returns a version:

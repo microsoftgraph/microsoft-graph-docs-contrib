@@ -88,7 +88,6 @@ GET /me/drive/root/children
 
 ---
 
-
 ### List children of a DriveItem with a known ID
 
 To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.

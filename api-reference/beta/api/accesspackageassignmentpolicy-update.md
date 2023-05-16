@@ -45,14 +45,14 @@ The following table shows the properties that are required when you update an [a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the policy.|
-|description|String|The description of the policy.|
-|canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval.|
-|durationInDays|Int32|The number of days in which assignments from this policy last until they are expired.|
-|expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who can request this access package from this policy.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required.|
+|displayName|String|The display name of the policy. Required.|
+|description|String|The description of the policy. Required.|
+|canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval. Required.|
+|durationInDays|Int32|The number of days in which assignments from this policy last until they are expired. Required.|
+|expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.|
+|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who can request this access package from this policy. Required.|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy. Required.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required. Required.|
 
 
 ## Response
@@ -255,9 +255,12 @@ Content-Type: application/json
 
 
 
-### Example 2: Remove the customExtensionHandlers from a policy
+### Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy
 
 To remove the collection of **customExtensionHandlers** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionHandlers** object.
+
+To remove the verifiable credentials requirement from a policy, assign an empty collection to the **verifiableCredentialSettings** object.
+
 
 #### Request
 
@@ -350,6 +353,7 @@ Content-Type: application/json
     "accessReviewSettings": null
 }
 ```
+
 ### Example 3: Remove the customExtensionStageSettings from a policy
 
 To remove the collection of **customExtensionStageSettings** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionStageSettings** object.

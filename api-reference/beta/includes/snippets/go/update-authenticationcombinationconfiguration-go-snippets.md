@@ -23,7 +23,7 @@ appliesToCombinations := []graphmodels.AuthenticationMethodModesable {
 }
 requestBody.SetAppliesToCombinations(appliesToCombinations)
 
-result, err := graphClient.Identity().ConditionalAccess().AuthenticationStrengths().Policies().ByPolicieId("authenticationStrengthPolicy-id").CombinationConfigurations().ByCombinationConfigurationId("authenticationCombinationConfiguration-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationStrength().Policies().ByPolicieId("authenticationStrengthPolicy-id").CombinationConfigurations().ByCombinationConfigurationId("authenticationCombinationConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
