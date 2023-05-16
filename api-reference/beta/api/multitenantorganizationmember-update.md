@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /tenantRelationships/multiTenantOrganization/myTenant
+PATCH /tenantRelationships/multiTenantOrganization/tenants/{id}
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/myTenant
+PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/{id}
 Content-Type: application/json
 
 {

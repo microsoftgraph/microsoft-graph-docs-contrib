@@ -33,7 +33,6 @@ Namespace: microsoft.graph
 |Relationship|Type|Description|
 |:---|:---|:---|
 |joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|**TODO: Add Description**|
-|myTenant|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|**TODO: Add Description**|
 |tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|**TODO: Add Description**|
 
 ## JSON representation
