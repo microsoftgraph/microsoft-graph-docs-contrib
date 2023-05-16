@@ -322,7 +322,7 @@ Content-Type: application/json
   "name": "list_authenticationeventsflow_onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityprovider"
 }
 -->
-```
+``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/XXXXXXXXXXX
 ```
 
@@ -341,7 +341,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
   "name": "list_authenticationeventsflow_onAttributeCollectionExternalUsersSelfServiceSignUp_attributes"
 }
 -->
-```
+``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/XXXXXXXXXXXX
 ```
 
@@ -361,8 +361,8 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 }
 -->
 
-```
-GET 
+``` http
+
 ```
 
 **TODO: refer to the specific application correctly**
