@@ -49,8 +49,12 @@ Setting `userDetails` to `null` will go to the signed out state.
 
 The `mgt-login` component defines the following CSS custom properties.
 
+```html
+<mgt-login class="login"></mgt-login>
+```
+
 ```css
-mgt-login {
+.login {
   --login-signed-out-button-background: red;
   --login-signed-out-button-hover-background: orange;
   --login-signed-out-button-text-color: purple;

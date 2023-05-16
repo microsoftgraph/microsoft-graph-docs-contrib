@@ -46,8 +46,12 @@ channelPicker.selectChannelById(channelId);
 
 The `mgt-teams-channel-picker` component defines the following CSS custom properties.
 
+```html
+<mgt-teams-channel-picker class="teams-channel-picker" person-query="me"></mgt-teams-channel-picker>
+```
+
 ```css
-mgt-teams-channel-picker {
+.teams-channel-picker {
     --input-border: 2px rgba(255, 255, 255, 0.5) solid; /* sets all input area border */
 
       /* OR individual input border sides */

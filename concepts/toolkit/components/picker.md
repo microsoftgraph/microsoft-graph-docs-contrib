@@ -109,6 +109,10 @@ The control exposes the following variables that can be localized. See how you s
 
 The `mgt-picker` component defines the following CSS custom properties.
 
+```html
+<mgt-picker class="picker" resource="me/todo/lists" scopes="tasks.read, tasks.readwrite" key-name="displayName"></mgt-picker>
+```
+
 ```css
 mgt-picker {
   --picker-background-color: grey;

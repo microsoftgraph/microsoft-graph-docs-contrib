@@ -90,8 +90,12 @@ The following example changes the behavior of the component to fetch data by ins
 
 The `mgt-file` component defines the following CSS custom properties.
 
+```html
+<mgt-file class="file" file-query="/me/drive/items/01BYE5RZZFWGWWVNHHKVHYXE3OUJHGWCT2"></mgt-file>
+```
+
 ```css
-mgt-file {
+.file {
   --file-type-icon-height: 30px;
   --file-border: 4px dotted #ffbdc3;
   --file-border-radius: 8px;

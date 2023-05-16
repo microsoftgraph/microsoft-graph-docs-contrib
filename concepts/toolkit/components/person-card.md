@@ -148,8 +148,12 @@ For more information about handling events, see [events](../customize-components
 
 The `mgt-person-card` component defines the following CSS custom properties. 
 
+```html
+<mgt-person-card class="person-card" person-query="me"></mgt-person-card>
+```
+
 ```css
-mgt-person-card {
+.person-card {
   --person-card-nav-back-arrow-hover-color: green;
   --person-card-icon-color: red;
   --person-card-line1-font-size: 30px;

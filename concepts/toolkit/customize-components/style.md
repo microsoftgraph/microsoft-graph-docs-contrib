@@ -10,7 +10,7 @@ author: sebastienlevert
 Each Microsoft Graph Toolkit component documents a set of [CSS custom properties](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) that you can use to change the look and feel of certain elements. You can find the available custom CSS properties in each component docs. For example:
 
 ```css
-mgt-person {
+.person {
   --person-avatar-size: 34px;
 }
 ```
