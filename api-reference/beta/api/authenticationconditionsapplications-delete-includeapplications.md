@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/{application-id}
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications/63856651-13d9-4784-9abf-20758d509e19
 ```
 
 

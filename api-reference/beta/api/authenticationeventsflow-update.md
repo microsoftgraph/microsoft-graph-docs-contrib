@@ -100,6 +100,8 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
 
+Add city (built-in attribute) as an attribute to be collected during Attribute Collection step of a  self-service sign up user flow
+
 #### Request
 
 <!-- {
@@ -108,7 +110,7 @@ HTTP/1.1 204 No Content
 }
 -->
 ```
-PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e
 Content-Type: application/json
 
 {
@@ -146,6 +148,112 @@ Content-Type: application/json
                             "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
                             "options": []
                         },
+                        {
+                            "attribute": "city",
+                            "label": "City",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                            "label": "Favorite color",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^.*",
+                            "options": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Remove an attribute collectured during self-service sign up user flow
+
+Remove city as an attribute to be collected during Attribute Collection step of a self-service sign up user flow
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventsflow_onattributecollection"
+}
+-->
+```
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "attributeCollectionPage": {
+            "customStringsFileId": null,
+            "views": [
+                {
+                    "title": null,
+                    "description": null,
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
+                            "label": "Favorite color",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^.*",
+                            "options": []
+                        }
                     ]
                 }
             ]

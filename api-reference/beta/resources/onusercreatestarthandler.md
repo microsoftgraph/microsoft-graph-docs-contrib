@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to configure what to invoke if the onUserCreateStartHandler event resolves to this listener. It represents a step in a multi-event policy that defines what happens during user creation.
+Used to configure what to invoke during user creation as defined in the **onUserCreateStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
 
 This is an abstract complex type from which the [onUserCreateStartExternalUsersSelfServiceSignUp](../resources/onusercreatestartexternalusersselfservicesignup.md) subtype is derived.
 

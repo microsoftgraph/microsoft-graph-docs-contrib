@@ -37,7 +37,9 @@ GET /identity/authenticationEventsFlows
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -307,3 +309,16 @@ Content-Type: application/json
     ]
 }
 ```
+
+## Example 2: List all user flows that include Google as an identity provider
+
+https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/XXXXXXXXXXX
+
+**TODO: refer to the specific identity provider correctly**
+
+
+## Example 3: List all user flows that collect 'favorite color' during Attribute Collection at account creation
+
+https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/XXXXXXXXXXXX
+
+**TODO: refer to the specific attribute correctly**

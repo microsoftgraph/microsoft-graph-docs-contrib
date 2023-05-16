@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add or link an application to an external identities self-service sign up user flow that's represented bby an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
+Add or link an application to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
 
 
 ## Permissions
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
+POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/conditions/applications/includeApplications
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) that you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
+In the request body, provide a JSON representation of the `application id` of the application to associate with the user flow.
 
 ## Response
 
@@ -55,16 +55,16 @@ If successful, this method returns a `201 Created` response code.  If unsuccessf
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "post_includeapplications"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
 Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.authenticationConditionApplication",
-    "appId": "{application-id}"
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
 }
 
 ```
@@ -75,7 +75,6 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationConditionApplication"
 }
 -->
 ``` http
@@ -83,8 +82,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows('{authenticationEventsFlow-id}')/conditions/applications/includeApplications/$entity",
-    "appId": "{application-id}"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows('0313cc37-d421-421d-857b-87804d61e33e')/conditions/applications/includeApplications/$entity",
+    "appId": "63856651-13d9-4784-9abf-20758d509e19"
 }
 ```
 

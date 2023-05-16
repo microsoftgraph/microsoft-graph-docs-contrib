@@ -34,11 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-First call:
-``` http
-PATCH identity/AuthenticationEventsFlows/{authenticationEventsFlow-id}
-```
-Second call:
 ``` http
 POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 ```
@@ -51,6 +46,7 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 
 ## Request body
 
+**TODO: Is this still accurate now that the two calls have been split?**
 In the request body, supply a JSON representation of the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onAttributeCollectionExternalUsersSelfServiceSignUp.md) object.
 
 You can specify the following properties when creating an **onAttributeCollectionExternalUsersSelfServiceSignUp**.
@@ -63,86 +59,19 @@ You can specify the following properties when creating an **onAttributeCollectio
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
+Add city as attribute for Attribute Collection step of an External Identities Self Service Sign up User Flow.  Before executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md). 
 
 #### Request
-The following is an example of a request that adds city as an attribute for account creation.
+The following is an example of a request
+
 <!-- {
   "blockType": "request",
   "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}
-
-{
-    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "onAttributeCollection": {
-        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-        "attributeCollectionPage": {
-            "customStringsFileId": null,
-            "views": [
-                {
-                    "title": null,
-                    "description": null,
-                    "inputs": [
-                        {
-                            "attribute": "email",
-                            "label": "Email Address",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": true,
-                            "editable": false,
-                            "writeToDirectory": true,
-                            "required": true,
-                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "city",
-                            "label": "City",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "displayName",
-                            "label": "Display Name",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
-                            "options": []
-                        },
-                        {
-                            "attribute": "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
-                            "label": "Favorite color",
-                            "inputType": "text",
-                            "defaultValue": null,
-                            "hidden": false,
-                            "editable": true,
-                            "writeToDirectory": true,
-                            "required": false,
-                            "validationRegEx": "^.*",
-                            "options": []
-                        }
-                    ]
-                }
-            ]
-        }
-    }
-}
-```
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 
 {
     "@odata.id":"https://graph.microsoft.com/beta/identity/userFlowAttributes/city"

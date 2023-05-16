@@ -49,16 +49,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
+Remove Facebook as an identity provider option for account creation.
 
 #### Request
-The following is an example of a request that removes Facebook as an identity provider option for account creation.
+The following is an example of a request 
 <!-- {
   "blockType": "request",
   "name": "delete_OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityProviders"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/Facebook-OAUTH/$ref
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/Facebook-OAUTH/$ref
 ```
 
 

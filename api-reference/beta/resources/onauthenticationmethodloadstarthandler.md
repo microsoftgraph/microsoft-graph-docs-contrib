@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to configure what to invoke if the onAuthenticationMethodLoadStartHandler event resolves to this listener.  It represents a step in a multi-event policy that defines what happens when when authentication methods are ready to be presented.
+Used to configure what to invoke when authentication methods are ready to be presented to the user as defined in the **onAuthenticationMethodLoadStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
 
 This is an abstract complex type from which the [onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp](../resources/onauthenticationmethodloadstartexternalusersselfservicesignup.md) subtype is derived.
 

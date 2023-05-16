@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
+GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/OnAuthenticationMethodLoadStart/microsoft.graph.OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
 
 ```
 

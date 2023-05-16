@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
-Remove city as attribute for account creation.
+Remove city as attribute for Attribute Collection step of an External Identities Self Service Sign up User Flow.  Before executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 
 #### Request
 The following is an example of a request.
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 
 {
     "@odata.id":"https://graph.microsoft.com/beta/identity/userFlowAttributes/city"
