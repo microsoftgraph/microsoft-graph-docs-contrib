@@ -701,6 +701,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Custom authentication extensions permissions
+
+#### Delegated permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:-----------|:---------------|:------------|:-----------------------|:----------------------------|
+|CustomAuthenticationExtension.Read.All|Read your oganization's custom authentication extensions|Allows the app to read your organization's custom authentication extensions on behalf of the signed-in user.|Yes|No|
+|CustomAuthenticationExtension.ReadWrite.All|Read and write your organization's custom authentication extensions|Allows the app to read or write your organization's custom authentication extensions on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+| Permission   | Display String   | Description   | Admin Consent Required   |
+|--------------|:-----------------|:--------------|:-------------------------|
+| CustomAuthenticationExtension.Read.All | Read all custom authentication extensions | Allows the app to read your organization's custom authentication extensions without a signed-in user. | Yes |
+| CustomAuthenticationExtension.ReadWrite.All | Read and write all custom authentication extensions | Allows the app to read or write your organization's custom authentication extensions without a signed-in user. | Yes |
+
 ## Custom security attributes permissions
 
 #### Delegated permissions
