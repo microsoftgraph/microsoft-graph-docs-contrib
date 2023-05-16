@@ -41,7 +41,9 @@ This article provides guidance on the allowed configuration for the **arguments*
 
 ## Examples
 
-### Example 1: Configure a task based on taskDefinitionId 6f22ddd4-b3a5-47a4-a846-0d7c201a49ce
+### Example 1: Configure a task to send the offboarding email to a user's manager after the user's last day of work
+
+The following examples shows a task configuration to send the offboarding email to a user's manager after the user's last day of work. This task is identified by **taskDefinitionId** `6f22ddd4-b3a5-47a4-a846-0d7c201a49ce`.
 
 ```http
 {
@@ -56,7 +58,9 @@ This article provides guidance on the allowed configuration for the **arguments*
 }
 ```
 
-### Example 2: Configure a task based on taskDefinitionId e440ed8d-25a1-4618-84ce-091ed5be5594
+### Example 2: Configure a task to add a user to teams
+
+The following examples shows a task configuration to add a user to a Teams team. This task is identified by **taskDefinitionId** `e440ed8d-25a1-4618-84ce-091ed5be5594`.
 
 ```http
 {
