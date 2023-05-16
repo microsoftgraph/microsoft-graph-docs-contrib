@@ -30,15 +30,16 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 3. **Developer registers the application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. 
 
-4. **Admin approves the application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it.
 
-5. **Developer runs their pipelines:** Once the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
+4. **Admin approves the application:** After the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it.
+
+5. **Developer runs their pipelines:** After the administrator has consented to the application, the developer might run their pipelines without any stalling for runtime consent. The pipeline creation and run via Azure Data Factory or Azure Synapse remains the same.  
 
 ### Prerequisites
 
 To complete this tutorial, you'll need the following subscriptions or licenses.
 
-- For this tutorial, we highly recommend that you use a Microsoft 365 developer tenant.
+- For this tutorial, we strongly recommend that you use a Microsoft 365 developer tenant.
 - Your Microsoft 365 and Azure tenants must be in the same Azure AD tenancy.
 - The Azure subscription must be in the same tenant as the Microsoft 365 tenant. Data Connect can export data across tenants (for example, to enable ISVs), but this tutorial doesn't explore this scenario.
 - One user in your Microsoft 365 tenant has the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role enabled. Going forward, this tutorial refers to this user as the "admin". Only an "admin" user can approve the test application.

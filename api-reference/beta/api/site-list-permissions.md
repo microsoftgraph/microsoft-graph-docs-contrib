@@ -17,11 +17,11 @@ Get the [permission](../resources/permission.md) resources from the permissions 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
+GET https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions
 ```
 
 # [C#](#tab/csharp)
@@ -89,7 +91,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,54 +106,54 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "value":[
-      {
-         "id":"1",
-         "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-         "roles":[
-            "read"
-         ],
-         "grantedToIdentities":[
-            {
-               "application":{
-                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-                  "displayName":"Contoso Time Manager App"
-               }
-            }
-         ],
-         "grantedToIdentitiesV2":[
-            {
-               "application":{
-                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-                  "displayName":"Contoso Time Manager App"
-               }
-            }
-         ]
-      },
-      {
-         "id":"2",
-         "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-         "roles":[
-            "write"
-         ],
-         "grantedToIdentities":[
-            {
-               "application":{
-                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-                  "displayName":"Fabrikam Dashboard App"
-               }
-            }
-         ],
-         "grantedToIdentitiesV2":[
-            {
-               "application":{
-                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-                  "displayName":"Fabrikam Dashboard App"
-               }
-            }
-         ]
-      }
-   ]
+  "value": [
+    {
+      "id": "1",
+      "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+      "roles": [
+        "read"
+      ],
+      "grantedToIdentities": [
+        {
+          "application": {
+            "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName": "Contoso Time Manager App"
+          }
+        }
+      ],
+      "grantedToIdentitiesV2": [
+        {
+          "application": {
+            "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName": "Contoso Time Manager App"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+      "roles": [
+        "write"
+      ],
+      "grantedToIdentities": [
+        {
+          "application": {
+            "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+            "displayName": "Fabrikam Dashboard App"
+          }
+        }
+      ],
+      "grantedToIdentitiesV2": [
+        {
+          "application": {
+            "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+            "displayName": "Fabrikam Dashboard App"
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
