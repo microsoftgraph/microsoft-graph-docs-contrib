@@ -53,9 +53,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects in the response body.
 
-## Example: List all user flows
+## Examples
 
-### Request
+### Example 1: List all user flows
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -67,7 +69,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 ```
 
 
-### Response
+#### Response
 
 The following is an example of a response that returns two user flows: "Test User Flow 1" and "Woodgrove Drive User Flow" with the following configurations:
 
@@ -310,15 +312,21 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: List all user flows that include Google as an identity provider
+### Example 2: List all user flows that include Google as an identity provider
 
 https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/XXXXXXXXXXX
 
 **TODO: refer to the specific identity provider correctly**
 
 
-## Example 3: List all user flows that collect 'favorite color' during Attribute Collection at account creation
+### Example 3: List all user flows that collect 'favorite color' during Attribute Collection at account creation
 
 https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/XXXXXXXXXXXX
 
 **TODO: refer to the specific attribute correctly**
+
+### Example 4: List user flow associated with specific application id
+
+
+
+**TODO: refer to the specific application correctly**

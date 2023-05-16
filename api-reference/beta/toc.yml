@@ -14156,40 +14156,38 @@ items:
               href: api/identityapiconnector-delete.md
         - name: User flows for Azure AD for customers (preview)
           items:
-          - name: Self-service sign up user flows
-            items:
-            - name: Authentication events flow
-              href: resources/authenticationeventsflow.md
-            - name: Self-service sign up user flow
-              href: resources/externalusersselfservicesignupeventsflow.md
-            - name: List user flows
-              href: api/identitycontainer-list-authenticationeventsflows.md
-            - name: Create user flow
-              href: api/identitycontainer-post-authenticationeventsflows.md
-            - name: Get user flow
-              href: api/authenticationeventsflow-get.md
-            - name: Update user flow
-              href: api/authenticationeventsflow-update.md
-            - name: Delete user flow
-              href: api/authenticationeventsflow-delete.md
-            - name: List applications
-              href: api/authenticationeventsflow-list-applications.md
-            - name: Add applications
-              href: api/authenticationconditionsapplications-post-includeapplications.md
-            - name: Remove applications
-              href: api/authenticationconditionsapplications-delete-includeapplications.md              
-            - name: List identity providers
-              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
-            - name: Add identity provider
-              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
-            - name: Remove identity provider
-              href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
-            - name: List attributes
-              href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-            - name: Add attributes
-              href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
-            - name: Remove attributes
-              href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md    
+          - name: Authentication events flow
+            href: resources/authenticationeventsflow.md
+          - name: Self-service sign up user flow
+            href: resources/externalusersselfservicesignupeventsflow.md
+          - name: List user flows
+            href: api/identitycontainer-list-authenticationeventsflows.md
+          - name: Create user flow
+            href: api/identitycontainer-post-authenticationeventsflows.md
+          - name: Get user flow
+            href: api/authenticationeventsflow-get.md
+          - name: Update user flow
+            href: api/authenticationeventsflow-update.md
+          - name: Delete user flow
+            href: api/authenticationeventsflow-delete.md
+          - name: List applications
+            href: api/authenticationconditionsapplications-list-includeapplications.md
+          - name: Add applications
+            href: api/authenticationconditionsapplications-post-includeapplications.md
+          - name: Remove applications
+            href: api/authenticationconditionsapplications-delete-includeapplications.md              
+          - name: List identity providers
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+          - name: Add identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+          - name: Remove identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+          - name: List attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+          - name: Add attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+          - name: Remove attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md    
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
