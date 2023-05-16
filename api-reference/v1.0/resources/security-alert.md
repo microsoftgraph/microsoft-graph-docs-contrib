@@ -51,7 +51,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |providerAlertId|String|The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
-|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`, `microsoftDefenderForCloud`.|
 |severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |tenantId|String|The Azure Active Directory tenant the alert was created in.|
@@ -126,6 +126,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftAppGovernance       | Microsoft app governance.                      |
 | microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
+| microsoftDefenderForCloud    | Microsoft Defender for Cloud.                  |
 
 
 ### detectionSource values 
@@ -150,6 +151,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | appGovernancePolicy            | App governance policy.                                       |
 | appGovernanceDetection         | App governance detection.                                    |
 | unknownFutureValue             | Evolvable enumeration sentinel value. Do not use.            |
+| microsoftDefenderForCloud      | Microsoft Defender for Cloud.                                |
 
 
 ## Relationships

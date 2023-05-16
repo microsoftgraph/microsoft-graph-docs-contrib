@@ -15670,6 +15670,12 @@ items:
             href: resources/security-urlEvidence.md
           - name: User evidence
             href: resources/security-userEvidence.md
+          - name: Azure Resource evidence
+            href: resources/security-azureResourceEvidence.md
+          - name: Amazon Resource evidence
+            href: resources/security-amazonResourceEvidence.md
+          - name: Google Cloud Resource evidence
+            href: resources/security-googleCloudResourceEvidence.md
         - name: Incident
           items:
           - name: Incident
