@@ -15,6 +15,10 @@ mgt-person {
 }
 ```
 
+```html
+<mgt-person class="person" person-query="me" view="fourlines" id="online" show-presence></mgt-person>
+```
+
 You can't style internal elements of a component unless you provide a CSS custom property. The component child elements are hosted in a [shadow dom](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
 
 For more flexibility, consider using [custom templates](./templates.md).
@@ -67,11 +71,11 @@ You can use several CSS tokens to style a component if you want to override the 
 > **Note:** customizing these tokens means that your set values are the default values that are used and using the `mgt-theme-toggle` component will have no effect.
 
 ```html
-<mgt-people-picker></mgt-people-picker>
+<mgt-people-picker class="people-picker"></mgt-people-picker>
 ```
 
 ```css
-mgt-people-picker {
+.people-picker {
   --people-picker-selected-option-background-color: orange;
   --people-picker-selected-option-highlight-background-color: red;
   --people-picker-dropdown-background-color: blue;
