@@ -71,7 +71,7 @@ The following request creates an assignment schedule request to assign a princip
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e1"
 }
 -->
 ``` http
@@ -158,7 +158,7 @@ In the following request, a user identified by **principalId** `3cce9d87-3986-4f
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e2"
 }
 -->
 ``` http
