@@ -17,26 +17,26 @@ The A sign-in activity for an application credential. Contains information about
 
 ## Methods
 
-| Method                                                                         | Return Type                 | Description                                                                |
-| :----------------------------------------------------------------------------- | :-------------------------- | :------------------------------------------------------------------------- |
-| [List appCredentialSignInActivity](../api/appcredentialsigninactivity-list.md) | appCredentialSignInActivity | Retrieve a list of appCredentialSignInActivity objects.                    |
-| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | appCredentialSignInActivity | Read properties and relationships of a appCredentialSignInActivity object. |
+| Method                                                                         | Return Type                                                                           | Description                                                                |
+| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------- |
+| [List appCredentialSignInActivity](../api/appcredentialsigninactivity-list.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | Retrieve a list of appCredentialSignInActivity objects.                    |
+| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Read properties and relationships of a appCredentialSignInActivity object. |
 
 ## Properties
 
 | Property                 | Type                                             | Description                                                                                           |
 | ------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| appId                    | String                                           | The id of the credential application.                                                                 |
-| appObjectId              | String                                           | The id of the credential application instance.                                                        |
+| appId                    | String                                           | The ID of the credential application.                                                                 |
+| appObjectId              | String                                           | The ID of the credential application instance.                                                        |
 | createdDateTime          | DateTimeOffset                                   | The dateTimeOffset when the credential was created.                                                   |
 | credentialOrigin         | applicationKeyOrigin                             | The type the key credential originated from; possible values are "application" or "servicePrincipal". |
 | expirationDateTime       | DateTimeOffset                                   | The dateTimeOffset the credential is set to expire.                                                   |
 | id                       | String                                           | The unique identifier of the appCredentialSignInActivity instance in the response.                    |
-| keyId                    | String                                           | The key id of the credential.                                                                         |
+| keyId                    | String                                           | The keyId of the credential.                                                                          |
 | keyType                  | applicationKeyType                               | Specifies the key type. The possible values are: `clientSecret`, `certificate`, `unknownFutureValue`. |
 | keyUsage                 | applicationKeyUsage                              | Specifies the how the key was used. The possible values are: `sign`, `verify`, `unknownFutureValue`.  |
-| resourceId               | String                                           | The id of the accessed resource.                                                                      |
-| servicePrincipalObjectId | String                                           | The id of the service principal.                                                                      |
+| resourceId               | String                                           | The ID of the accessed resource.                                                                      |
+| servicePrincipalObjectId | String                                           | The ID of the service principal.                                                                      |
 | signInActivity           | [signInActivity](../resources/signinactivity.md) | The sign-in activity of the credential across all flows.                                              |
 
 ## Relationships
