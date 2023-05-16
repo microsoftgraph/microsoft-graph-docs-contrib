@@ -16446,15 +16446,15 @@ items:
         items:
         - name: Permission
           href: resources/permission.md
-        - name: List site permissions
+        - name: List
           href: api/site-list-permissions.md
-        - name: Create site permissions
+        - name: Create
           href: api/site-post-permissions.md
-        - name: Get site permission
+        - name: Get
           href: api/site-get-permission.md
-        - name: Update site permission
+        - name: Update
           href: api/site-update-permission.md
-        - name: Delete site permission
+        - name: Delete
           href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
