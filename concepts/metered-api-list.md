@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Metered APIs and services in Microsoft Graph
 
-This article provides a list of metered APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md). 
+This article provides a list of metered APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
 Some metered APIs and services in Microsoft Graph are protected and require additional validation beyond permissions and admin consent. Before you can use these protected APIs, you must submit a request.
 
@@ -16,7 +16,7 @@ The following table lists the metered APIs and services.
 
 | API | Billing and license information | Protected API form |
 |:--------------------------|:--------------------------|:----------------------------------------|
-| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | No charge while API is in preview | [SharePoint preview enrollment form](https://aka.ms/PreviewSPOPremiumAPI) |
+| SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | No charge while API is in preview | [SharePoint preview enrollment form](https://aka.ms/previewspopremiumapi) |
 | SharePoint and OneDrive for Business [setRetentionLabel](/graph/api/driveitem-setretentionlabel) | No charge while API is in preview | Pending |
 | Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
 | Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) | [Microsoft Teams request](https://aka.ms/teamsgraph/requestaccess) |
