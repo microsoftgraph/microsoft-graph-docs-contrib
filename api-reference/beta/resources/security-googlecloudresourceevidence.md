@@ -1,8 +1,8 @@
 ---
 title: "googleCloudResourceEvidence resource type"
 description: "Represents Google cloud resource such as compute or Kubernetes cluster identifier."
-ms.date: 16/05/2023
-author: "rborysowski"
+ms.date: 05/16/2023
+author: "MSRonBorysowski"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
