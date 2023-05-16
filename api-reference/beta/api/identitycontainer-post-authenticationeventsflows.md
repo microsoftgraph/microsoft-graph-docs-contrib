@@ -50,12 +50,12 @@ You can specify the following properties when creating an **authenticationEvents
 |:---|:---|:---|
 |displayName|String|Required. The display name for the events policy. Must be unique.|
 |description|String|Optional. The description of the events policy.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**Optional?**. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked.|
 |priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
-|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke for the onInteractiveAuthFlowStart event.|
-|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke for the onAuthenticationMethodLoadStart event.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. The configuration for what to invoke for the onAttributeCollection event.|
-|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
+|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
+|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
 
 ## Response
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "displayName": "Woodgrove User Flow 1",
+    "displayName": "Woodgrove Drive User Flow",
     "onAuthenticationMethodLoadStart": {
         "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
         "identityProviders": [
@@ -165,8 +165,175 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows/$entity",
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "id": "{authenticationEventsFlow-id}",
-    "displayName": "Woodgrove User Flow 1",
+    "id": "0313cc37-d421-421d-857b-87804d61e33e",
+    "displayName": "Woodgrove Drive User Flow",
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "onInteractiveAuthFlowStart": {
+        "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+        "isSignUpAllowed": true
+    },
+    "onAuthenticationMethodLoadStart": {
+        "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp"
+    },
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "accessPackages": [],
+        "attributeCollectionPage": {
+            "customStringsFileId": null,
+            "views": [
+                {
+                    "title": null,
+                    "description": null,
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+                            "options": []
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "defaultValue": null,
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
+                            "options": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
+### Example 2: Create a basic External Identities sign-up and sign-in user flow with an attached application on an Azure AD customer tenant
+
+#### Request
+The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
+
+- Allow sign up and sign in.
+- Allow users to create a local email with password account.
+- Collect the **Display Name** built-in attribute from the user.
+- Defines how the attributes to be collected will be displayed to the user.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventsflow_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "displayName": "Woodgrove Drive User Flow",
+    "conditions": {
+        "applications": {
+            "includeApplications": [
+                {
+                    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+                }
+            ]
+        }
+    },
+    "onAuthenticationMethodLoadStart": {
+        "@odata.type": "#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+        "identityProviders": [
+            {
+                "id": "EmailPassword-OAUTH"
+            }
+        ]
+    },  
+    "onInteractiveAuthFlowStart": {
+        "@odata.type": "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+        "isSignUpAllowed": true
+    },
+    "onAttributeCollection": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
+        "attributes": [
+            {
+                "id": "email",
+                "displayName": "Email Address",
+                "description": "Email address of the user",
+                "userFlowAttributeType": "builtIn",
+                "dataType": "string"
+            },
+            {
+                "id": "displayName",
+                "displayName": "Display Name",
+                "description": "Display Name of the User.",
+                "userFlowAttributeType": "builtIn",
+                "dataType": "string"
+            }
+        ],
+        "attributeCollectionPage": {
+            "views": [
+                {
+                    "inputs": [
+                        {
+                            "attribute": "email",
+                            "label": "Email Address",
+                            "inputType": "Text",
+                            "hidden": true,
+                            "editable": false,
+                            "writeToDirectory": true,
+                            "required": true,
+                            "validationRegEx": "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+                        },
+                        {
+                            "attribute": "displayName",
+                            "label": "Display Name",
+                            "inputType": "text",
+                            "hidden": false,
+                            "editable": true,
+                            "writeToDirectory": true,
+                            "required": false,
+                            "validationRegEx": "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+```
+
+
+#### Response
+The following is an example of the response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventsFlow"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows/$entity",
+    "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
+    "id": "1d51b447-eb52-4ec8-ae4e-0a35ebc148ea",
+    "displayName": "Woodgrove Drive User Flow",
     "description": null,
     "priority": 500,
     "onAttributeCollectionStart": null,
@@ -226,7 +393,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
+### Example 3: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
 
 #### Request
 
