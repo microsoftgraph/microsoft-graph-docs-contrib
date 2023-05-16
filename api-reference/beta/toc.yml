@@ -11296,6 +11296,14 @@ items:
           href: api/educationassignment-delete-rubric.md
         - name: Get delta
           href: api/educationassignment-delta.md
+        - name: List grading categories
+          href: api/educationassignment-list-gradingcategory.md
+        - name: Add grading category
+          href: api/educationassignment-post-gradingcategory.md
+        - name: Update grading category
+          href: api/educationgradingcategory-update.md
+        - name: Remove grading category
+          href: api/educationassignment-delete-gradingcategory.md
         - name: Activate assignment
           href: api/educationassignment-activate.md
         - name: Deactivate assignment
@@ -11325,6 +11333,15 @@ items:
           href: api/educationcategory-delete.md
         - name: Get delta
           href: api/educationcategory-delta.md
+      - name: Grading category
+        href: resources/educationgradingcategory.md
+        items:
+        - name: Add grading category
+          href: api/educationassignment-post-gradingcategory.md
+        - name: Update grading category
+          href: api/educationgradingcategory-update.md
+        - name: Delete grading category
+          href: educationassignment-delete-gradingcategory
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -13268,6 +13285,36 @@ items:
               href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
             - name: Get authentication method modes
               href: api/authenticationmethodmodedetail-get.md
+        - name: Custom authentication extensions (preview)
+          items:
+          - name: Custom authentication extension
+            href: resources/customauthenticationextension.md
+            items:
+            - name: On token issuance start
+              href: resources/ontokenissuancestartcustomextension.md
+            - name: List
+              href: api/identitycontainer-list-customauthenticationextensions.md
+            - name: Create
+              href: api/identitycontainer-post-customauthenticationextensions.md
+            - name: Get
+              href: api/customauthenticationextension-get.md
+            - name: Update
+              href: api/customauthenticationextension-update.md
+            - name: Delete
+              href: api/customauthenticationextension-delete.md
+          - name: Authentication event listeners
+            href: resources/authenticationeventlistener.md
+            items:
+            - name: List
+              href: api/identitycontainer-list-authenticationeventlisteners.md
+            - name: Create
+              href: api/identitycontainer-post-authenticationeventlisteners.md
+            - name: Get
+              href: api/authenticationeventlistener-get.md
+            - name: Update
+              href: api/authenticationeventlistener-update.md
+            - name: Delete
+              href: api/authenticationeventlistener-delete.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
@@ -16446,15 +16493,15 @@ items:
         items:
         - name: Permission
           href: resources/permission.md
-        - name: List site permissions
+        - name: List
           href: api/site-list-permissions.md
-        - name: Create site permissions
+        - name: Create
           href: api/site-post-permissions.md
-        - name: Get site permission
+        - name: Get
           href: api/site-get-permission.md
-        - name: Update site permission
+        - name: Update
           href: api/site-update-permission.md
-        - name: Delete site permission
+        - name: Delete
           href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
@@ -17054,18 +17101,17 @@ items:
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment
             items:
-            - name: Get virtual appointment join link
+            - name: Get join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
-          - name: Virtual appointment (deprecated)
-            href: resources/virtualappointment.md
-            items:
-            - name: Create (deprecated)
+            - name: Virtual appointment (deprecated)
+              href: resources/virtualappointment.md
+            - name: Create virtual appointment (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get (deprecated)
+            - name: Get virtual appointment (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update (deprecated)
+            - name: Update virtual appointment (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete (deprecated)
+            - name: Delete virtual appointment (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
@@ -17152,8 +17198,9 @@ items:
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
         - name: Learning course activities (preview)
-          href: resources/learningcourseactivity.md
           items:
+          - name: Learning course activity
+            href: resources/learningcourseactivity.md
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create

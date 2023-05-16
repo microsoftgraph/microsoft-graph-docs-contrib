@@ -51,13 +51,10 @@ POST /employeeExperience/learningProviders/{registrationId}/learningCourseActivi
 
 ## Request body
 
-In the request body, supply a JSON representation of the [learningCourseActivity](../resources/learningcourseactivity.md) object.
-
-Based on the course activity type, you can specify the following properties when you create a **learningCourseActivity**.
+In the request body, use @odata.type to specify the type of [learningCourseActivity](../resources/learningcourseactivity.md) resource that you're creating ([learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md)), and include the properties of that type, as listed in the following table.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional. |
 |assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |assignerUserId|String|The user ID of the assigner. Optional. |

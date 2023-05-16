@@ -1598,7 +1598,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-04-12T00:00:00",
       "WorkloadArea": "Search",
-      "SubArea": ""
+      "SubArea": "Index"
     },
     {
       "ChangeList": [
