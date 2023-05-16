@@ -1548,17 +1548,17 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _MultiTenantOrganization.ReadBasic.All_ |  | Allows the app to read multi-tenant organization basic details and active tenants | Yes |  |
-| _MultiTenantOrganization.Read.All_ |  | Allows the app to read multi-tenant organization details and tenants | Yes |  |
-| _MultiTenantOrganization.ReadWrite.All_ |  | Allows the app to read and write multi-tenant organization details and tenants | Yes |  |
+| _MultiTenantOrganization.ReadBasic.All_ | Read multi-tenant organization basic details and active tenants | Allows the app to read multi-tenant organization basic details and active tenants | No | No |
+| _MultiTenantOrganization.Read.All_ | Read multi-tenant organization details and tenants | Allows the app to read multi-tenant organization details and tenants | Yes | No |
+| _MultiTenantOrganization.ReadWrite.All_ | Read and write multi-tenant organization details and tenants | Allows the app to read and write multi-tenant organization details and tenants | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _MultiTenantOrganization.ReadBasic.All_ |  | Allows the app to read multi-tenant organization basic details and active tenants | Yes |
-| _MultiTenantOrganization.Read.All_ |  | Allows the app to read multi-tenant organization details and tenants | Yes |
-| _MultiTenantOrganization.ReadWrite.All_ |  | Allows the app to read and write multi-tenant organization details and tenants | Yes |
+| _MultiTenantOrganization.ReadBasic.All_ | Read multi-tenant organization basic details and active tenants | Allows the app to read multi-tenant organization basic details and active tenants | Yes |
+| _MultiTenantOrganization.Read.All_ | Read multi-tenant organization details and tenants | Allows the app to read multi-tenant organization details and tenants | Yes |
+| _MultiTenantOrganization.ReadWrite.All_ | Read and write multi-tenant organization details and tenants | Allows the app to read and write multi-tenant organization details and tenants | Yes |
 
 ---
 
