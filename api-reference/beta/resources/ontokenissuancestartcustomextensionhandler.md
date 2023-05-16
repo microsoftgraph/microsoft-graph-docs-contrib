@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartCustomExtensionHandler resource type"
-description: "Custom extension handler for an onTokenIssuanceStart event"
+description: "Custom extension handler for the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom extension handler for an onTokenIssuanceStart event.
+Custom extension handler for the event when a token is about to be issued to your application.
 
 Inherits from [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md).
 
@@ -23,7 +23,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|The custom extension to invoke when handling an onTokenIssuanceStart event.|
+|customExtension|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|The custom extension to invoke to handle the event when a token is about to be issued to your application.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

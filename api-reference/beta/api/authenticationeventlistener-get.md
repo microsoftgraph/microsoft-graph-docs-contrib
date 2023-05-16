@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All*|
-|Application|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (work or school account)|EventListener.Read.All, EventListener.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|EventListener.Read.All, EventListener.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
 
@@ -76,20 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.authenticationEventListener",
-    "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-    "priority": "Integer",
-    "conditions": {
-      "@odata.type": "microsoft.graph.authenticationConditions"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+    "displayName": "onTokenIssuanceStartCustomExtension",
+    "description": "Fetch additional claims from custom user store",
+    "clientConfiguration": null,
+    "behaviorOnError": null,
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
     },
-    "tags": [
-      {
-        "@odata.type": "microsoft.graph.keyValuePair"
-      }
-    ],
-    "authenticationEventsFlowId": "String"
-  }
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://authenticationeventsAPI.contoso.com"
+    },
+    "claimsForTokenConfiguration": [
+        {
+            "claimIdInApiResponse": "DateOfBirth"
+        },
+        {
+            "claimIdInApiResponse": "CustomRoles"
+        }
+    ]
 }
 ```
 

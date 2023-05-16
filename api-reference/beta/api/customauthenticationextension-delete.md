@@ -1,6 +1,6 @@
 ---
 title: "Delete customAuthenticationExtension"
-description: "Deletes a customAuthenticationExtension object."
+description: "Delete a customAuthenticationExtension object."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
+Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
 
 ## HTTP request
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customAuthenticationExtensionId}
+DELETE https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/5c82815a-ee61-4c9b-9f4b-914a708a0c68
 ```
 
 

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (work or school account)|EventListener.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EventListener.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,66 +49,45 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow.  Optional.|
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartListener** listener type.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationEventListener](../resources/authenticationeventlistener.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following is an example of a request to update an authentication event listener's trigger conditions or priority:
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/{authenticationEventListenerId}
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/990d94e5-cc8f-4c4b-97b4-27e2678aac28
 Content-Type: application/json
-Content-length: 312
 
 {
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "authenticationEventsFlowId": "String"
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "priority": 500
 }
 ```
 
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.authenticationEventListener",
-  "id": "aa325b11-0ffe-ff80-0572-1b796dc7012a",
-  "priority": "Integer",
-  "conditions": {
-    "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "authenticationEventsFlowId": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

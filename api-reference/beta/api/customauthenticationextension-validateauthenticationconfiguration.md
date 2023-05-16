@@ -19,18 +19,28 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Application|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
 
 ## HTTP request
 
+To validate the endpoint and authentication configuration for a customAuthenticationExtension by its ID.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 POST /identity/customAuthenticationExtensions/{customAuthenticationExtensionId}/validateAuthenticationConfiguration
+```
+
+To validate the endpoint and authentication configuration that's specified in the request body for a customAuthenticationExtension. The custom authentication extension object may not exist yet and you can use this endpoint to validate the configuration before creating the custom authentication extension.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguration
 ```
 
 ## Request headers
@@ -55,7 +65,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 
 ## Examples
 
-### Example 1: 
+### Example 1: Supply and validate a potential custom authentication extension configuration
 
 #### Request
 The following is an example of a request.
@@ -120,7 +130,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: 
+### Example 2: Validate the configuration of a specific existing custom authentication extension
 
 #### Request
 The following is an example of a request.

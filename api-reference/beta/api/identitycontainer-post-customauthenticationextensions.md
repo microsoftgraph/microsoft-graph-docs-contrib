@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
 
 ## HTTP request
@@ -77,11 +77,11 @@ Content-length: 468
     "description": "Fetch additional claims from custom user store",
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+        "targetUrl": "https://authenticationeventsAPI.contoso.com"
     },
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
     },
     "clientConfiguration": {
         "timeoutInMilliseconds": 2000,
@@ -122,7 +122,7 @@ Content-Type: application/json
     "behaviorOnError": null,
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
     },
     "clientConfiguration": {
         "timeoutInMilliseconds": 2000,
@@ -130,7 +130,7 @@ Content-Type: application/json
     },
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+        "targetUrl": "https://authenticationeventsAPI.contoso.com"
     },
     "claimsForTokenConfiguration": [
         {

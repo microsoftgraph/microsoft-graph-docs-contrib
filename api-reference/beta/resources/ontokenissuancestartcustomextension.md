@@ -1,6 +1,6 @@
 ---
 title: "onTokenIssuanceStartCustomExtension resource type"
-description: "Custom extension to invoke when handling an onTokenIssuanceStart event."
+description: "Custom extension to invoke when handling the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom extension to invoke when handling an onTokenIssuanceStart event.
+Custom extension to invoke when handling the event when a token is about to be issued to your application.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 

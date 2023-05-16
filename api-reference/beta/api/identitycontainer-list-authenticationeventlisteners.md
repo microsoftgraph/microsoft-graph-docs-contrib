@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Delegated (personal Microsoft account)|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
-|Application|CustomAuthenticationExtension.Read.All, Application.Read.All, CustomAuthenticationExtension.ReadWrite.All, Policy.ReadWrite.AuthenticationFlows, Application.ReadWrite.All|
+|Delegated (work or school account)|EventListener.Read.All, EventListener.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EventListener.Read.All, EventListener.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/authenticationEventListeners
+GET /identity/authenticationEventListeners
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -105,11 +105,11 @@ Content-Type: application/json
                     "behaviorOnError": null,
                     "authenticationConfiguration": {
                         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-                        "resourceId": "api://authenticationeventsAPI.azurewebsites.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+                        "resourceId": "api://authenticationeventsAPI.contoso.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
                     },
                     "endpointConfiguration": {
                         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-                        "targetUrl": "https://authenticationeventsAPI.azurewebsites.net"
+                        "targetUrl": "https://authenticationeventsAPI.contoso.net"
                     },
                     "claimsForTokenConfiguration": [
                         {
