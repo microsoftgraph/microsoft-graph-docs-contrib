@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 ```
 
 ## Request headers
@@ -46,23 +46,16 @@ POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUs
 
 ## Request body
 
-**TODO: Is this still accurate now that the two calls have been split?**
-In the request body, supply a JSON representation of the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onAttributeCollectionExternalUsersSelfServiceSignUp.md) object.
-
-You can specify the following properties when creating an **onAttributeCollectionExternalUsersSelfServiceSignUp**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|attributeCollectionPage|[authenticationAttributeCollectionPage](../resources/authenticationattributecollectionpage.md)|Required. The configuration for how attributes are displayed in the sign up experience defined by a user flow, or [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md), specifically on the attribute collection page.|
+In the request body, supply an **odata.id** property with the ID of the [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object to add to the user flow.
 
 ## Response
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
-Add city as attribute for Attribute Collection step of an External Identities Self Service Sign up User Flow.  Before executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md). 
+## Examples
 
 #### Request
-The following is an example of a request
+
+The following is an example of a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collectop step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
 
 <!-- {
   "blockType": "request",

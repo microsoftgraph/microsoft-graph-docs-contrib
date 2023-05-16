@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/conditions/applications/includeApplications
+POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
 ```
 
 ## Request headers

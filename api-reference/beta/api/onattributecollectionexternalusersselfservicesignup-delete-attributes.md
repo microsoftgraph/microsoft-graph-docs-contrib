@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identity/AuthenticationEventsFlows{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
+DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
-Remove city as attribute for Attribute Collection step of an External Identities Self Service Sign up User Flow.  Before executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+Remove city as an attribute from the attribute collection step of an external identities self-service sign-up user flow.  Before executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 
 #### Request
 The following is an example of a request.

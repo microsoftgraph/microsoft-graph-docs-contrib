@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|EventListener.ReadWrite.All|
 |Application|EventListener.ReadWrite.All|
 
-
+[!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
 ## HTTP request
 
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ### Example 1: Update the display name and priority of an authenticationEventsFlow
 
 #### Request
-The following is an example of a request that updates the display name of a specific External Identities user flow ( an authentication event type), as well as the priority for all the listeners associated with the policy.
+The following is an example of a request that updates the display name of a specific external identities user flow ( an authentication event type), as well as the priority for all the listeners associated with the policy.
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
 
-Add city (built-in attribute) as an attribute to be collected during Attribute Collection step of a  self-service sign up user flow
+Add city (built-in attribute) as an attribute to be collected during the attribute collection step of a self-service sign up user flow. You must specify in the **inputs** object all attributes that you want to retain, otherwise they are removed from the user flow.
 
 #### Request
 
@@ -192,9 +192,9 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Remove an attribute collectured during self-service sign up user flow
+### Example 3: Remove an attribute collected during a self-service sign up user flow
 
-Remove city as an attribute to be collected during Attribute Collection step of a self-service sign up user flow
+Remove city as an attribute to be collected during the attribute collection step of a self-service sign up user flow. By excluding the city attribute from the request body, the attribute will be removed from the user flow.
 
 #### Request
 

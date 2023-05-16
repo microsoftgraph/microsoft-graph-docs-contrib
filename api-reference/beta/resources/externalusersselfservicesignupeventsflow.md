@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant.
-
-A user flow is implemented as a multi-event policy executing the specific events at specific points of user interaction.
+Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant. A user flow is implemented as a multi-event policy executing the specific events at specific points of user interaction.
 
 Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
@@ -23,19 +21,19 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties.  |
-|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an external identities self-service sign-up user flow.|
-|[Get](../api/authenticationeventsflow-get.md)|[externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an external identities self-service sign-up user flow.|
+|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an external identities self-service sign-up user flow.|
+|[Get](../api/authenticationeventsflow-get.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an external identities self-service sign-up user flow.|
 |[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an external identities self-service sign-up user flow|
-|[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an External Identities Self-Service-Sign-up User Flow|
-|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[Add linked applications](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[Remove linked applications](../api/authenticationconditionsapplications-delete-includeapplications.md)|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow|
-|[List identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an External Identities Self-Service-Sign-up User Flow|
-|[Add identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
-|[Remove identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove Identity Provider selection to an External Identities Self-Service-Sign-up User Flow|
-|[List attributes](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow **TODO: should there also be a LIST attributes collectioninputconfigurations?**|
-|[Add an attribute](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Retrieve all user attributes associated with an External Identities Self-Service-Sign-up User Flow|
-|[Delete an attribute](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove a user flow attribute from an External Identities Self-Service-Sign-up User Flow|
+|[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an external identities self-service sign-up user flow.|
+|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
+|[Add linked applications](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[Remove linked applications](../api/authenticationconditionsapplications-delete-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[List identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an external identities self-service sign-up user flow.|
+|[Add identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add an identity provider to an external identities self-service sign-up user flow.|
+|[Remove identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove an identity provider from an external identities self-service sign-up user flow.|
+|[List attributes](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an external identities self-service sign-up user flow. **TODO: should there also be a LIST attributes collectioninputconfigurations?**|
+|[Add an attribute](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Retrieve all user attributes associated with an external identities self-service sign-up user flow.|
+|[Delete an attribute](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove a user flow attribute from an external identities self-service sign-up user flow.|
 <!--|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
 |[Get listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
 |[Create listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|

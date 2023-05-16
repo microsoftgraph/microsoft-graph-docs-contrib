@@ -51,7 +51,7 @@ You can specify the following properties when creating an **authenticationEvents
 |displayName|String|Required. The display name for the events policy. Must be unique.|
 |description|String|Optional. The description of the events policy.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|**Optional?**. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked.|
-|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
+|priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke for the onInteractiveAuthFlowStart event.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke for the onAuthenticationMethodLoadStart event.|
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. The configuration for what to invoke for the onAttributeCollection event.|
