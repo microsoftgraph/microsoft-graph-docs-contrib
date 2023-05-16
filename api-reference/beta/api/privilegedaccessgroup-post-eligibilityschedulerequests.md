@@ -71,7 +71,7 @@ The following request creates an eligibility schedule request to make a principa
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupeligibilityschedulerequest_from_"
+  "name": "create_request_for_principal_from_admin_beta_e1"
 }
 -->
 ``` http
@@ -170,7 +170,7 @@ The following request extends an existing eligibility schedule request before it
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupeligibilityschedulerequest_from_"
+  "name": "extend_group_membership_for_principal_from_admin_beta_e2"
 }
 -->
 ``` http

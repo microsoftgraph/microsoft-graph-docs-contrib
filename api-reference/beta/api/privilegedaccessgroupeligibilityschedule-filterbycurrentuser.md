@@ -66,7 +66,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser"
+  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_beta_e1"
 }
 -->
 ``` http
@@ -147,7 +147,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser"
+  "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_beta_e2"
 }
 -->
 ``` http
