@@ -13043,7 +13043,21 @@ items:
               - name: Get
                 href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
               - name: Filter by current user
-                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+                href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.
+            - name: Assignment approval
+              href: resources/pim-for-groups-approval.md
+            - name: Get
+              href: api/pim-for-groups-approval-get.md
+            - name: Approval step
+              items:
+              - name: Approval Step
+                href: resources/pim-for-groups-approvalstep.md
+              - name: List
+                href: api/pim-for-groups-approval-list-steps.md
+              - name: Get
+                href: api/pim-for-groups-approvalstep-get.md
+              - name: Update
+                href: api/pim-for-groups-approvalstep-update.md
         - name: Privileged Identity Management iteration 2
           href: resources/privilegedidentitymanagement-root.md
           items:
