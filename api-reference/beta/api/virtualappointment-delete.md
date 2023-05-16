@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on May 31, 2023.
+  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on June 30, 2023.
 
 Delete a [virtualAppointment](../resources/virtualappointment.md) object.
 
