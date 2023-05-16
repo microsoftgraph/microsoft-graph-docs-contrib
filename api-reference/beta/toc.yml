@@ -13612,13 +13612,13 @@ items:
               href: resources/multitenantorganizationmember.md
             - name: List
               href: api/multitenantorganization-list-tenants.md
-            - name: Add
+            - name: Create
               href: api/multitenantorganization-post-tenants.md
             - name: Get
               href: api/multitenantorganizationmember-get.md
             - name: Update
               href: api/multitenantorganizationmember-update.md
-            - name: Remove
+            - name: Delete
               href: api/multitenantorganization-delete-tenants.md
           - name: Partner configuration template
             items:
@@ -13628,7 +13628,7 @@ items:
               href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
             - name: Update
               href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
-            - name: Reset to default settings
+            - name: Reset
               href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
           - name: Identity sync policy template
             items:
@@ -13638,7 +13638,7 @@ items:
               href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
             - name: Update
               href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
-            - name: Reset to default settings
+            - name: Reset
               href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
         - name: Organization
           href: resources/organization.md

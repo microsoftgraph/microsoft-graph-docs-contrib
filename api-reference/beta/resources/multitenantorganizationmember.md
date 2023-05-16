@@ -19,10 +19,10 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List multiTenantOrganizationMembers](../api/multitenantorganization-list-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Get a list of the [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) objects and their properties.|
-|[Add multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Add a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
+|[Create multiTenantOrganizationMember](../api/multitenantorganization-post-tenants.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Create a new [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
 |[Get multiTenantOrganizationMember](../api/multitenantorganizationmember-get.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Read the properties and relationships of a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
 |[Update multiTenantOrganizationMember](../api/multitenantorganizationmember-update.md)|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md)|Update the properties of a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
-|[Remove multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Remove a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
+|[Delete multiTenantOrganizationMember](../api/multitenantorganization-delete-tenants.md)|None|Delete a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object.|
 
 ## Properties
 |Property|Type|Description|
