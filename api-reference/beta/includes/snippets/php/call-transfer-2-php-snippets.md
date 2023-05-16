@@ -48,7 +48,7 @@ $transferTarget->setAdditionalData($additionalData);
 $requestBody->setTransferTarget($transferTarget);
 
 
-$graphServiceClient->communications()->callsById('call-id')->transfer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->transfer()->post($requestBody);
 
 
 ```

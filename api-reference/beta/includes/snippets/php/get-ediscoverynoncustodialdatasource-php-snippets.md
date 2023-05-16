@@ -15,7 +15,7 @@ $queryParameters->expand = ["dataSource"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSourcesById('ediscoveryNoncustodialDataSource-id')->get($requestConfiguration);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->byNoncustodialDataSourceId('ediscoveryNoncustodialDataSource-id')->get($requestConfiguration);
 
 
 ```

@@ -39,7 +39,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->usersById('user-id')->onlineMeetingsById('onlineMeeting-id')->registration()->registrants()->post($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->registrants()->post($requestBody);
 
 
 ```

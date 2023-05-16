@@ -87,7 +87,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

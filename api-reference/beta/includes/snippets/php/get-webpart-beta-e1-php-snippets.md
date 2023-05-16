@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->webPartsById('webPart-id')->get();
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->webParts()->byWebPartId('webPart-id')->get();
 
 
 ```

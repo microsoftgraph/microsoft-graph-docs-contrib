@@ -31,7 +31,7 @@ $requestBody->setAssignments($assignmentsArray);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->assign()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->byUserSettingId('cloudPcUserSetting-id')->assign()->post($requestBody);
 
 
 ```

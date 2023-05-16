@@ -15,7 +15,7 @@ $queryParameters->select = ["id","expand=webparts"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->horizontalSectionsById('horizontalSection-id')->columnsById('horizontalSectionColumn-id')->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->canvasLayout()->horizontalSections()->byHorizontalSectionId('horizontalSection-id')->columns()->byColumnId('horizontalSectionColumn-id')->get($requestConfiguration);
 
 
 ```

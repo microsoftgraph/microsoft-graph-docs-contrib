@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Updated flow name');
 
 
 
-$result = $graphServiceClient->external()->industryData()->inboundFlowsById('inboundFlow-id')->patch($requestBody);
+$result = $graphServiceClient->external()->industryData()->inboundFlows()->byInboundFlowId('inboundFlow-id')->patch($requestBody);
 
 
 ```
