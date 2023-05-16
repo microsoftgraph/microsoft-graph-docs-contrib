@@ -22,11 +22,13 @@ In this tutorial, you'll create your first single-tenant Data Connect applicatio
 
 ![A screenshot that explains the onboarding flow.](../concepts/images/data-connect-overview-flowchart.png)
 
+>**Note:** For existing tenants who already have Microsoft Graph Data Connect enabled and want to use this tutorial: please notify your global adminstrator toggle Microsoft Graph Data Connect off and then on again in the [admin portal](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan) to be able to follow this tutorial flow. For new customers who have not yet toggled Microsoft Graph Data Connect on, please follow the steps in this tutorial below, no extra action is required from you.
+
 1. **Admin enables Data Connect:** The first step in onboarding is for your global administrator to [enable Data Connect](https://admin.microsoft.com/adminportal/home#/Settings/Services/:/Settings/L1/O365DataPlan).
 
 2. **Developer creates a new Azure Active Directory application:** The developer needs to first create a new Azure Active Directory (Azure AD) application.
 
-3. **Developer registers the application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. <!-- Learn more about application registration -->
+3. **Developer registers the application with Data Connect:** Once the Azure AD application is created, the developer needs to register the application with Data Connect using the new registration portal for [Microsoft Graph Data Connect applications](https://aka.ms/mgdcinazure). In this step, the developer specifies what data they require for their application. 
 
 4. **Admin approves the application:** Once the developer has registered their application with Data Connect, the global administrator can use the new portal for [Data Connect application consent](https://admin.microsoft.com/adminportal/home#/Settings/MGDCAdminCenter) to review the registered application and approve it.
 
@@ -53,7 +55,7 @@ To complete this tutorial, you'll need the following subscriptions or licenses.
 
     >**Note:** You can't approve your own test application using the same account. Ensure that you have another member (or account) in your tenant that acts as an "admin".
 
-2. **Microsoft Azure subscription**
+2. **Microsoft Azure subscription** 
 
    - If you don't have a Microsoft Azure subscription, visit the following link to get one (for free): https://azure.microsoft.com/free/.
    - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Azure AD tenancy.
