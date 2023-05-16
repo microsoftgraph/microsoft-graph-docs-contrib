@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [servicePrincipalSignInActivity](../resources/servicePrincipalSignInActivity.md) object the last signed in date for service principals based on various usage scenarios. A service principal could be used as a client or resource and it could be using delegated or app only auth context.
+Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object the last signed in date for service principals based on various usage scenarios. A service principal could be used as a client or resource and it could be using delegated or app only auth context.
 
 ## Permissions
 
@@ -56,11 +56,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [servicePrincipalSignInActivity](../resources/servicePrincipalSignInActivity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object in the response body.
 
-## Examples
+## Example
 
-### Example: List servicePrincipalSignInActivities 
+### List servicePrincipalSignInActivities 
 
 #### Request
 
@@ -79,16 +79,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#reports/servicePrincipalSignInActivities",
   "value": [
     {
-      "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3",
       "appId": "83f45296-fb8f-4aaa-a399-ac51084e02b7",
-      "delegatedClientSignInActivity": {
-        "lastSignInDateTime": "2021-01-01T00:00:00-8:00",
-        "lastSignInRequestId": "e58c9022-c965-4ec0-960b-9c197e549f27"
-      },
-      "delegatedResourceSignInActivity": {
-        "lastSignInDateTime": "2021-02-01T00:00:00-8:00",
-        "lastSignInRequestId": "25570a7f-a031-4f20-959e-02fb7cd46a1c"
-      },
       "applicationAuthenticationClientSignInActivity": {
         "lastSignInDateTime": "2021-03-01T00:00:00-8:00",
         "lastSignInRequestId": "4ea8ac36-d43d-431c-bb05-739348e18c66"
@@ -97,22 +88,22 @@ Content-type: application/json
         "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
         "lastSignInRequestId": "0f251de7-e611-41fb-bed0-6eb650757e72"
       },
+      "delegatedClientSignInActivity": {
+        "lastSignInDateTime": "2021-01-01T00:00:00-8:00",
+        "lastSignInRequestId": "e58c9022-c965-4ec0-960b-9c197e549f27"
+      },
+      "delegatedResourceSignInActivity": {
+        "lastSignInDateTime": "2021-02-01T00:00:00-8:00",
+        "lastSignInRequestId": "25570a7f-a031-4f20-959e-02fb7cd46a1c"
+      },
+      "id": "ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3",
       "lastSignInActivity": {
         "lastSignInDateTime": "2021-04-01T00:00:00Z",
         "lastSignInRequestId": "0f251de7-e611-41fb-bed0-6eb650757e72"
       }
     },
     {
-      "id": "ZjRkOTY1NGYtMDMwNS00MDcyLTg3OGMtOGJmMjY2ZGZlMTQ2",
       "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
-      "delegatedClientSignInActivity": {
-        "lastSignInDateTime": "2021-01-01T00:00:00-8:00",
-        "lastSignInRequestId": "7e24e4a9-ee1e-45d9-97ff-b4fb0c854b16"
-      },
-      "delegatedResourceSignInActivity": {
-        "lastSignInDateTime": "2021-02-01T00:00:00-8:00",
-        "lastSignInRequestId": "3e767241-2173-41f5-a42d-1302549950b2"
-      },
       "applicationAuthenticationClientSignInActivity": {
         "lastSignInDateTime": "2021-03-01T00:00:00-8:00",
         "lastSignInRequestId": "0e0cb2c3-85b9-4bdc-8a89-3bd08a5d8548"
@@ -121,6 +112,15 @@ Content-type: application/json
         "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
         "lastSignInRequestId": "b26f6bf8-af96-4f2a-bef7-07913f634d6d"
       },
+      "delegatedClientSignInActivity": {
+        "lastSignInDateTime": "2021-01-01T00:00:00-8:00",
+        "lastSignInRequestId": "7e24e4a9-ee1e-45d9-97ff-b4fb0c854b16"
+      },
+      "delegatedResourceSignInActivity": {
+        "lastSignInDateTime": "2021-02-01T00:00:00-8:00",
+        "lastSignInRequestId": "3e767241-2173-41f5-a42d-1302549950b2"
+      },
+      "id": "ZjRkOTY1NGYtMDMwNS00MDcyLTg3OGMtOGJmMjY2ZGZlMTQ2",
       "lastSignInActivity": {
         "lastSignInDateTime": "2021-04-01T00:00:00Z",
         "lastSignInRequestId": "b26f6bf8-af96-4f2a-bef7-07913f634d6d"
