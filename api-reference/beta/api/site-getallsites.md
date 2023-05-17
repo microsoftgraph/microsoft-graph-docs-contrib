@@ -46,7 +46,7 @@ GET /sites/getAllSites
 <!-- { "blockType": "ignored" } -->
 
 ```msgraph-interactive
-GET /sites/getAllSites
+GET /site/getAllSites
 ```
 
 ### Response
