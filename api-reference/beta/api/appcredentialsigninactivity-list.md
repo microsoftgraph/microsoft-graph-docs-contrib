@@ -1,5 +1,5 @@
 ---
-title: "List appCredentialSignInActivity"
+title: "List appCredentialSignInActivities"
 doc_type: apiPageType
 description: "Get a list of appCredentialSignInActivity object that contains recent activity of application credentials."
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ author: "madansr7"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List appCredentialSignInActivity
+# List appCredentialSignInActivities
 
 Namespace: microsoft.graph
 
