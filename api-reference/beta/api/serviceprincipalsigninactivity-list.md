@@ -1,7 +1,7 @@
 ---
 title: "List servicePrincipalSignInActivities"
 doc_type: apiPageType
-description: "Get a list servicePrincipalSignInActivity object that contains sign-in activity information for service principals in Azure Active Directory tenant."
+description: "Get a list of servicePrincipalSignInActivity objects that contains sign-in activity information for service principals in an Azure Active Directory tenant."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object the last signed in date for service principals based on various usage scenarios. A service principal could be used as a client or resource and it could be using delegated or app only auth context.
+Get a list of [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) objects that contains sign-in activity information for service principals in an Azure Active Directory tenant. You can use a service principal as a client or resource. A service principal supports delegated or app-only authentication context.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 
@@ -36,7 +36,7 @@ GET /reports/servicePrincipalSignInActivities
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 | Name                                                      | Description                                                                   | Example                                                                                             |
 | :-------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
@@ -56,20 +56,21 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) objects in the response body.
 
-## Example
+## Example 
 
-### List servicePrincipalSignInActivities 
+### Request
 
-#### Request
+The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 ```
 
-#### Response
+### Response
 
+The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
@@ -129,4 +130,3 @@ Content-type: application/json
   ]
 }
 ```
-
