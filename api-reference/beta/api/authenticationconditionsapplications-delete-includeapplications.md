@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
@@ -72,5 +72,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-
 ```

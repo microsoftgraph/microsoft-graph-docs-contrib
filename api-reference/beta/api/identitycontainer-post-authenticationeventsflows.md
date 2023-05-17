@@ -75,7 +75,7 @@ The following is an example of a request. In this example, you create a user flo
 
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventsflow_from_"
+  "name": "create_authenticationeventsflow_selfservicesignup"
 }
 -->
 ``` http
@@ -221,7 +221,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a basic External Identities sign-up and sign-in user flow with an attached application on an Azure AD customer tenant
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on an Azure AD customer tenant
 
 #### Request
 The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
@@ -233,7 +233,7 @@ The following is an example of a request. In this example, you create a user flo
 
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventsflow_from_"
+  "name": "create_authenticationeventsflow_selfservicesignup_includeapplications"
 }
 -->
 ``` http
@@ -405,7 +405,7 @@ The following is an example of a request. In this example, you create a user flo
 
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventsflow_socialproviders_customattribute"
+  "name": "create_authenticationeventsflow__selfservicesignup_socialproviders_customattribute"
 }
 -->
 ``` http

@@ -109,7 +109,7 @@ Add city (built-in attribute) as an attribute to be collected during the attribu
   "name": "update_authenticationeventsflow_onattributecollection"
 }
 -->
-```
+``` http
 PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e
 Content-Type: application/json
 
@@ -203,7 +203,7 @@ Remove city as an attribute to be collected during the attribute collection step
   "name": "update_authenticationeventsflow_onattributecollection"
 }
 -->
-```
+``` http
 PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e
 Content-Type: application/json
 

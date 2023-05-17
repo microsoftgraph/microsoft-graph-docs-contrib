@@ -1,6 +1,6 @@
 ---
 title: "Remove attribute (from user flow)"
-description: "Remove an attribute from an externalusersselfservicesignupeventsflow."
+description: "Remove an attribute from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Remove an attribute from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. You can add both custom and built-in attributes to a user flow.
 
-After this step, a PATCH to [Update the user flow](../api/authenticationeventsflow-update.md) should be executed in order to remove the attribute from the attribute collection step.
+After this step, [PATCH the user flow](../api/authenticationeventsflow-update.md) to remove the attribute from the attribute collection step.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,14 +50,13 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
-Remove city as an attribute from the attribute collection step of an external identities self-service sign-up user flow.  After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+## Examples
 
 #### Request
-The following is an example of a request.
+The following is an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
 }
 -->
 ``` http

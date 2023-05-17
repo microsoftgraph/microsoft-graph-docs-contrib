@@ -122,7 +122,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -177,8 +176,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         },
         {
@@ -230,7 +228,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -304,8 +301,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         }
     ]
@@ -392,7 +388,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -466,8 +461,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         }
     ]
@@ -562,7 +556,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -636,8 +629,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         },
         {
@@ -673,7 +665,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -766,8 +757,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         }
     ]
@@ -843,7 +833,6 @@ Content-Type: application/json
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-                "accessPackages": [],
                 "attributeCollectionPage": {
                     "customStringsFileId": null,
                     "views": [
@@ -917,8 +906,7 @@ Content-Type: application/json
             },
             "onUserCreateStart": {
                 "@odata.type": "#microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp",
-                "userTypeToCreate": "member",
-                "accessPackages": []
+                "userTypeToCreate": "member"
             }
         }
     ]

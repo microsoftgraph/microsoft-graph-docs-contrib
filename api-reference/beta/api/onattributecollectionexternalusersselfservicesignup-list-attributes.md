@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection associated with an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.
-
-**TODO: should this return attributecollectioninputconfigurations?**
+Get an [identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection associated with an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the attributes that are collected from the user during the authentication experience that's defined by the user flow.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,13 +52,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityUserFlowAttribute](../resources/identityuserflowattribute.md) in the response body. 
+If successful, this method returns a `200 OK` response code and a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. 
 
 ## Examples
-Retrieve list of attributes associated with a user flow.
 
 #### Request
-The following is an example of a request.
+The following is an example of a request to retrieve the attributes associated with a user flow.
 <!-- {
   "blockType": "request",
   "name": "get_onAttributeCollectionExternalUsersSelfServiceSignUp"

@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 Add an attribute to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. You can add both custom and built-in attributes to a user flow.
 
-Prior to this step, a PATCH to [Update the user flow](../api/authenticationeventsflow-update.md) should be executed in order to add the attribute to the attribute collection step (to determine how it will be displayed).
-
+Prior to this step, [PATCH the user flow](../api/authenticationeventsflow-update.md) to add the attribute to the attribute collection step (to determine how it will be displayed).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 
 #### Request
 
-The following is an example of a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collectop step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
+The following is an example of a request that adds city as an attribute for attribute collection step of an external identities self-service sign-up user flow. Before you can add an attribute to the attribute collection step, you must first [add it among the attributes to be collected in the user flow](../api/authenticationeventsflow-update.md).
 
 <!-- {
   "blockType": "request",
@@ -81,5 +80,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-
 ```

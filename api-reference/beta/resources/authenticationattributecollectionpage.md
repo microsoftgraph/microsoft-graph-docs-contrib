@@ -18,7 +18,7 @@ Represents the attribute collection page that is part of a self-service user flo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customStringsFileId|String|**TODO: Add Description**|
+|customStringsFileId|String|Nullable.|
 |views|[authenticationAttributeCollectionPageViewConfiguration](../resources/authenticationattributecollectionpageviewconfiguration.md) collection|A collection of displays of the attribute collection page.|
 
 ## Relationships

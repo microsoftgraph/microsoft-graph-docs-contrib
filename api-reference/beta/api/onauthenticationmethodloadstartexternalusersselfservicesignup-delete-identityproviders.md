@@ -46,13 +46,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
-Remove Facebook as an identity provider option for account creation.
+## Examples
 
 #### Request
-The following is an example of a request 
+The following is an example of a request to remove Facebook as an identity provider option for account creation.
 <!-- {
   "blockType": "request",
   "name": "delete_onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityProviders"

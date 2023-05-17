@@ -43,7 +43,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/condition
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the `application id` of the application to associate with the user flow.
+In the request body, provide a JSON representation of the **appId** of the application to associate with the user flow.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [auth
 
 ## Examples
 
-#### Request
+### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -70,7 +70,7 @@ Content-Type: application/json
 ```
 
 
-#### Response
+### Response
 The following is an example of the response
 <!-- {
   "blockType": "response",

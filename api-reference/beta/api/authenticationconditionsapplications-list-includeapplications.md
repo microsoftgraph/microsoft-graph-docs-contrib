@@ -1,5 +1,5 @@
 ---
-title: "List includeApplictations (of a user flow)"
+title: "List includeApplications (for a user flow)"
 description: "List applications for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List includeApplications (of a user flow)
+# List includeApplications (for a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. 
+List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the applications for which the authentication experience that's defined by the user flow is enabled.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,8 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/
+GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -44,31 +47,29 @@ GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/externalUs
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityUserFlowAttribute](../resources/identityuserflowattribute.md) in the response body. 
+If successful, this method returns a `200 OK` and a collection of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects in the response body. 
 
 ## Examples
-Retrieve list of applications associated with a user flow.
 
-#### Request
-The following is an example of a request.
+### Request
+The following is an example of a request to retrieve the list of applications associated with a user flow.
 <!-- {
   "blockType": "request",
-  "name": "get_onAttributeCollectionExternalUsersSelfServiceSignUp"
+  "name": "get_includeApplications"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications/
 ```
 
-#### Response
+### Response
 The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationAttributeCollectionPage"
+  "@odata.type": "microsoft.graph.authenticationConditionApplication"
 }
 -->
 ``` http

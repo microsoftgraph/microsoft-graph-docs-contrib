@@ -47,7 +47,7 @@ In the request body, provide a JSON representation of the ID of the [identityPro
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 

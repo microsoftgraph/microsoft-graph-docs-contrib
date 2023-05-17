@@ -35,6 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
 ```
 
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -47,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body. 
+If successful, this method returns a `200 OK` response code and a new [identityProviders](../resources/identityprovider.md) object in the response body.
 
 ## Examples
 
@@ -60,7 +63,6 @@ The following is an example of a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
-
 ```
 
 #### Response
