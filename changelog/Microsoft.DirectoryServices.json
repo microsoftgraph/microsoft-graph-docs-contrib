@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "applicationKeyOrigin",
           "ChangeType": "Addition",
           "Description": "Added the **applicationKeyOrigin** enumeration type.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "applicationKeyType",
           "ChangeType": "Addition",
           "Description": "Added the **applicationKeyType** enumeration type.",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "applicationKeyUsage",
           "ChangeType": "Addition",
           "Description": "Added the **applicationKeyUsage** enumeration type.",
@@ -31,12 +31,20 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appCredentialSignInActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [appCredentialSignInActivity](https://learn.microsoft.com/en-us/graph/api/resources/appCredentialSignInActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [appCredentialSignInActivity](https://learn.microsoft.com/en-us/graph/api/resources/appCredentialSignInActivity?view=graph-rest-beta) resource and supported methods.",
           "Target": "appCredentialSignInActivity"
         },
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
           "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalSignInActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalSignInActivity](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalSignInActivity?view=graph-rest-beta) resource and supported methods.",
+          "Target": "servicePrincipalSignInActivity"
+        },
+        {
+          "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
+          "ApiChange": "Relationship",
           "ChangedApiName": "appCredentialSignInActivities",
           "ChangeType": "Addition",
           "Description": "Added the **appCredentialSignInActivities** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
@@ -44,19 +52,11 @@
         },
         {
           "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "servicePrincipalSignInActivities",
           "ChangeType": "Addition",
           "Description": "Added the **servicePrincipalSignInActivities** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "reportRoot"
-        },
-        {
-          "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
-          "ApiChange": "Resource",
-          "ChangedApiName": "servicePrincipalSignInActivity",
-          "ChangeType": "Addition",
-          "Description": "Added the [servicePrincipalSignInActivity](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalSignInActivity?view=graph-rest-beta) resource",
-          "Target": "servicePrincipalSignInActivity"
         }
       ],
       "Id": "47c39c44-62a7-4e82-964d-6044de76f128",
