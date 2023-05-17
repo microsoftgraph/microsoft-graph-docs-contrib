@@ -15,7 +15,7 @@ $queryParameters->expand = ["resources"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->get($requestConfiguration);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->get($requestConfiguration);
 
 
 ```

@@ -15,7 +15,7 @@ $queryParameters->expand = ["extensions($filter=id%20eq%20'Microsoft.OutlookServ
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->get($requestConfiguration);
 
 
 ```

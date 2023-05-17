@@ -15,7 +15,7 @@ $queryParameters->expand = ["submissions"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->usersById('educationUser-id')->assignments()->get($requestConfiguration);
+$result = $graphServiceClient->education()->users()->byUserId('educationUser-id')->assignments()->get($requestConfiguration);
 
 
 ```

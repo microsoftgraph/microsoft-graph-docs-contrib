@@ -22,7 +22,7 @@ $requestBody->setVisibility(new TeamVisibilityType('public'));
 
 
 
-$graphServiceClient->teamsById('team-id')->clone()->post($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->clone()->post($requestBody);
 
 
 ```

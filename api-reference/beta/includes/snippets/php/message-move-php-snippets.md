@@ -14,7 +14,7 @@ $requestBody->setDestinationId('deleteditems');
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->move()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->move()->post($requestBody);
 
 
 ```

@@ -60,7 +60,7 @@ $callbackConfiguration->setTimeoutDuration(new \DateInterval('PT20M'));
 $requestBody->setCallbackConfiguration($callbackConfiguration);
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->customTaskExtensionsById('customTaskExtension-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->customTaskExtensions()->byCustomTaskExtensionId('customTaskExtension-id')->patch($requestBody);
 
 
 ```

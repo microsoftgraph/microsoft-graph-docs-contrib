@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->columnsById('workbookTableColumn-id')->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->columns()->byColumnId('workbookTableColumn-id')->post($requestBody);
 
 
 ```

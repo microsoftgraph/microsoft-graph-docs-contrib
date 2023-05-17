@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->bucketsById('plannerBucket-id')->delete($requestConfiguration);
+$graphServiceClient->planner()->buckets()->byBucketId('plannerBucket-id')->delete($requestConfiguration);
 
 
 ```

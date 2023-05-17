@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policiesById('authenticationStrengthPolicy-id')->combinationConfigurations()->get();
+$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policies()->byPolicieId('authenticationStrengthPolicy-id')->combinationConfigurations()->get();
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->schedulingGroupsById('schedulingGroup-id')->delete();
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->schedulingGroups()->bySchedulingGroupId('schedulingGroup-id')->delete();
 
 
 ```

@@ -134,6 +134,7 @@ Content-Type: application/json
 
 #### Request
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customauthenticationextensionthis.validateauthenticationconfiguration_byId"
@@ -142,6 +143,32 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/9f39f3bb-457c-4a2a-8099-0e480e7ea142/validateAuthenticationConfiguration
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
