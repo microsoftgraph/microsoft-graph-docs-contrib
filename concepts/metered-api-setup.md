@@ -32,7 +32,7 @@ To enable an application to use metered APIs and services in Microsoft Graph, it
 
 Use the following steps to create and link a **Microsoft.GraphServices/accounts** Azure resource to your application:
 
->**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface install the [Azure CLI](/cli/azure/).
+>**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface, install the [Azure CLI](/cli/azure/).
 
 1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
 
@@ -93,7 +93,7 @@ Use the following steps to create and link a **Microsoft.GraphServices/accounts*
 ## Verify setup
 Use the following steps to verify that an application is properly enabled to use metered APIs and services in Microsoft Graph.
 
->**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface install the [Azure CLI](/cli/azure/).
+>**Note:** You can complete the following steps by signing in to https://portal.azure.com and choosing **Cloud Shell**, or by using your local Azure command-line interface. If you're using [Cloud Shell](/azure/cloud-shell/overview) for the first time, you might need to create a storage account. Select an Azure subscription, choose **Create**, and follow the instructions to create a storage account. To use a local Azure command-line interface, install the [Azure CLI](/cli/azure/).
 
 1. If you have multiple Azure subscriptions, for information about setting the active subscription, see [Use multiple Azure subscriptions](/powershell/azure/manage-subscriptions-azureps); otherwise, go to the next step.
 
@@ -162,7 +162,7 @@ A successful JSON result will look something like this:
 }
 ```
 
-The "properties" property will include the application ID of the associated application registration.
+The **properties** property will include the application ID of the associated application registration.
 
 ## Consume metered APIs in your application
 After you associate your application registration and subscription, your application can start using metered APIs and services in Microsoft Graph. Costs generated from those requests will be charged to the Azure subscription associated with the application.
