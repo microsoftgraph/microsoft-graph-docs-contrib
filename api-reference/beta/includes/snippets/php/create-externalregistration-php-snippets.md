@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->post($requestBody);
+$graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->post($requestBody);
 
 
 ```

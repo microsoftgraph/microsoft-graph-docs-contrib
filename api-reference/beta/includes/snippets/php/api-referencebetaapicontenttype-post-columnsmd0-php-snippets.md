@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->columns()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->byContentTypeId('contentType-id')->columns()->post($requestBody);
 
 
 ```

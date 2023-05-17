@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->devicesById('device-id')->patch($requestBody);
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->patch($requestBody);
 
 
 ```

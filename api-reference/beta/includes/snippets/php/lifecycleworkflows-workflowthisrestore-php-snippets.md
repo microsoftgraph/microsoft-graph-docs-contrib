@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflowsById('workflow-id')->microsoftGraphIdentityGovernanceRestore()->post();
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->byWorkflowId('workflow-id')->microsoftGraphIdentityGovernanceRestore()->post();
 
 
 ```

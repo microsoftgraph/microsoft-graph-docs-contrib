@@ -18,7 +18,7 @@ $requestBody->setVisibility('visibility-value');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->worksheetsById('workbookWorksheet-id')->patch($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->worksheets()->byWorksheetId('workbookWorksheet-id')->patch($requestBody);
 
 
 ```

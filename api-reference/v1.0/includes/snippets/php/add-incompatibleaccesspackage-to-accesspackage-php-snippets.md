@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/identityGovernance/e
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->incompatibleAccessPackages()->ref()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->incompatibleAccessPackages()->ref()->post($requestBody);
 
 
 ```
