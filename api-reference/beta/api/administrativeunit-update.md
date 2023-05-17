@@ -63,11 +63,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+### Example 1: Update a dynamic membership rule for an administrative unit
+
 The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States.
-
-### Example 1: Update an administrative unit
-
-The following example updates the display name of an administrative unit.
 
 #### Request
 
@@ -119,21 +117,21 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a restricted management administrative unit
+### Example 2: Update the display name of an administrative unit
 
-The following example changes a restricted management administrative unit to a regular administrative unit.
+The following example updates the display name of an administrative unit.
 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "update_administrativeunit_restricted"
+  "name": "update_administrativeunit_displayname"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/administrativeUnits/2sd35b05-ae71-48ab-9e7d-4r41a28te37d
 Content-type: application/json
 
 {
-    "isMemberManagementRestricted": false
+    "displayName": "Executive Division"
 }
 ```
 
