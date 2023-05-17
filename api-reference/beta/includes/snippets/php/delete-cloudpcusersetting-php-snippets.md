@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->userSettingsById('cloudPcUserSetting-id')->delete();
+$graphServiceClient->deviceManagement()->virtualEndpoint()->userSettings()->byUserSettingId('cloudPcUserSetting-id')->delete();
 
 
 ```

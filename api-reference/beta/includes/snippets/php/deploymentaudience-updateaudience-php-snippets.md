@@ -22,7 +22,7 @@ $requestBody->setAddMembers($addMembersArray);
 
 
 
-$graphServiceClient->admin()->windows()->updates()->deploymentAudiencesById('deploymentAudience-id')->microsoftGraphWindowsUpdatesUpdateAudience()->post($requestBody);
+$graphServiceClient->admin()->windows()->updates()->deploymentAudiences()->byDeploymentAudienceId('deploymentAudience-id')->microsoftGraphWindowsUpdatesUpdateAudience()->post($requestBody);
 
 
 ```

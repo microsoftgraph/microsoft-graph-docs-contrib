@@ -23,7 +23,7 @@ $queryParameters->select = ["displayName","id"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->members()->graphUser()->get($requestConfiguration);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->members()->graphUser()->get($requestConfiguration);
 
 
 ```

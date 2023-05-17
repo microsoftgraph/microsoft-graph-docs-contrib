@@ -72,7 +72,7 @@ $configuration->setFitPdfToPage(false);
 $requestBody->setConfiguration($configuration);
 
 
-$result = $graphServiceClient->print()->sharesById('printerShare-id')->jobs()->post($requestBody);
+$result = $graphServiceClient->print()->shares()->byShareId('printerShare-id')->jobs()->post($requestBody);
 
 
 ```

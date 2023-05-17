@@ -37,7 +37,7 @@ $options->setAllowPivotTables(true);
 $requestBody->setOptions($options);
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->worksheetsById('workbookWorksheet-id')->protection()->protect()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->worksheets()->byWorksheetId('workbookWorksheet-id')->protection()->protect()->post($requestBody);
 
 
 ```
