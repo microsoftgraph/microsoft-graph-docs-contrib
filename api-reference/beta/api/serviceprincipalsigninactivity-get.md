@@ -1,5 +1,5 @@
 ---
-title: "Get servicePrincipalSignInActivities"
+title: "Get servicePrincipalSignInActivity"
 doc_type: apiPageType
 description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in an Azure Active Directory tenant."
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ author: "madansr7"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Get servicePrincipalSignInActivities
+# Get servicePrincipalSignInActivity
 
 Namespace: microsoft.graph
 
