@@ -12,24 +12,28 @@ author: "MSGraphDocsvTeam"
 Namespace: microsoft.graph
 
 ### applicationKeyUsage values
-| Member
-|:--------------
-|sign
-|verify
+
+| Member             |
+|:-------------------|
+| sign               |
+| verify             |
+| unknownFutureValue |
 
 ### applicationKeyType values
-| Member
-|:--------------
-|clientSecret
-|certificate
-|unknownFutureValue
+
+| Member             |
+|:-------------------|
+| clientSecret       |
+| certificate        |
+| unknownFutureValue |
 
 ### applicationKeyOrigin values 
-| Member
-|:--------------
-| application
-| servicePrincipal
 
+| Member             |
+|:-------------------|
+| application        |
+| servicePrincipal   |
+| unknownFutureValue |
 
 ### assignmentType values
 
