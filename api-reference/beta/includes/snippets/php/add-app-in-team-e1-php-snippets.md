@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->installedApps()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->installedApps()->post($requestBody);
 
 
 ```

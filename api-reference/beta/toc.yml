@@ -17101,18 +17101,17 @@ items:
               href: api/onlinemeeting-createorget.md
           - name: Virtual appointment
             items:
-            - name: Get virtual appointment join link
+            - name: Get join link
               href: api/virtualappointment-getvirtualappointmentjoinweburl.md
-          - name: Virtual appointment (deprecated)
-            href: resources/virtualappointment.md
-            items:
-            - name: Create (deprecated)
+            - name: Virtual appointment (deprecated)
+              href: resources/virtualappointment.md
+            - name: Create virtual appointment (deprecated)
               href: api/virtualappointment-put.md
-            - name: Get (deprecated)
+            - name: Get virtual appointment (deprecated)
               href: api/virtualappointment-get.md
-            - name: Update (deprecated)
+            - name: Update virtual appointment (deprecated)
               href: api/virtualappointment-update.md
-            - name: Delete (deprecated)
+            - name: Delete virtual appointment (deprecated)
               href: api/virtualappointment-delete.md
         - name: Presence
           href: resources/presence.md
@@ -17199,8 +17198,9 @@ items:
           - name: Delete
             href: api/learningprovider-delete-learningcontents.md
         - name: Learning course activities (preview)
-          href: resources/learningcourseactivity.md
           items:
+          - name: Learning course activity
+            href: resources/learningcourseactivity.md
           - name: List
             href: api/learningcourseactivity-list.md
           - name: Create

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->subscribedSkusById('subscribedSku-id')->get();
+$result = $graphServiceClient->subscribedSkus()->bySubscribedSkuId('subscribedSku-id')->get();
 
 
 ```

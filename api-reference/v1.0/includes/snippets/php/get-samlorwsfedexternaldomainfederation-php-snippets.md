@@ -15,7 +15,7 @@ $queryParameters->filter = "domains/any";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->directory()->federationConfigurationsById('identityProviderBase-id')->get($requestConfiguration);
+$result = $graphServiceClient->directory()->federationConfigurations()->byFederationConfigurationId('identityProviderBase-id')->get($requestConfiguration);
 
 
 ```

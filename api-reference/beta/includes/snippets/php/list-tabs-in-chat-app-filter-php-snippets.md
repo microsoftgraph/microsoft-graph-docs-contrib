@@ -16,7 +16,7 @@ $queryParameters->filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.web'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->tabs()->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->get($requestConfiguration);
 
 
 ```
