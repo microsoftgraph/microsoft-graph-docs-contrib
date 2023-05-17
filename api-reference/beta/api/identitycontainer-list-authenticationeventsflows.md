@@ -319,7 +319,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_authenticationeventsflow_onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp_identityprovider"
+  "name": "list_authenticationeventsflow_selfservicesignup_identityproviders"
 }
 -->
 ``` http
@@ -339,6 +339,7 @@ The following is an example of a response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows",
     "value": [
@@ -481,7 +482,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_authenticationeventsflow_onAttributeCollectionExternalUsersSelfServiceSignUp_attributes"
+  "name": "list_authenticationeventsflow_filter_selfservicesignup_attributes"
 }
 -->
 ``` http
@@ -501,6 +502,7 @@ The following is an example of a response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows",
     "value": [
@@ -778,7 +780,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_authenticationeventsflow"
+  "name": "list_authenticationeventsflow_filter_includeapplications"
 }
 -->
 ``` http
@@ -921,3 +923,4 @@ Content-Type: application/json
         }
     ]
 }
+```
