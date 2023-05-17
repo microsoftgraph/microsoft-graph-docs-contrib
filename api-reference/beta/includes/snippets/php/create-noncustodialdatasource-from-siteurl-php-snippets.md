@@ -30,7 +30,7 @@ $dataSource->setAdditionalData($additionalData);
 $requestBody->setDataSource($dataSource);
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

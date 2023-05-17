@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->policies()->tokenIssuancePoliciesById('tokenIssuancePolicy-id')->appliesTo()->get();
+$result = $graphServiceClient->policies()->tokenIssuancePolicies()->byTokenIssuancePolicieId('tokenIssuancePolicy-id')->appliesTo()->get();
 
 
 ```

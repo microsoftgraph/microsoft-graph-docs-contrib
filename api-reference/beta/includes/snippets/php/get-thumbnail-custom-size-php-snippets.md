@@ -15,7 +15,7 @@ $queryParameters->select = ["c300x400_crop"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->thumbnails()->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->thumbnails()->get($requestConfiguration);
 
 
 ```
