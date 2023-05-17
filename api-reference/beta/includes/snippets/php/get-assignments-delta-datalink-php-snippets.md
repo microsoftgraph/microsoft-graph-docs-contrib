@@ -15,7 +15,7 @@ $queryParameters->deltatoken = "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->delta()->get($requestConfiguration);
 
 
 ```

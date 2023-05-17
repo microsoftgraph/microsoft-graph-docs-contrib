@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->cloudPcsOverviewById('cloudPcOverview-tenantId')->get();
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->cloudPcsOverview()->byCloudPcsOverview()Id('cloudPcOverview-tenantId')->get();
 
 
 ```

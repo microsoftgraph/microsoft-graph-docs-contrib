@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->profile()->skillsById('skillProficiency-id')->delete();
+$graphServiceClient->me()->profile()->skills()->bySkillId('skillProficiency-id')->delete();
 
 
 ```

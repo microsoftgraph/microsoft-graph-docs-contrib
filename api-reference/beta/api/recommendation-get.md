@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 [!INCLUDE [sample-code](../includes/snippets/php/get-recommendation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

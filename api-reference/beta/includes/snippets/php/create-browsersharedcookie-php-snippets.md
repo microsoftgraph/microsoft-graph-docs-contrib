@@ -26,7 +26,7 @@ $requestBody->setPath('/');
 
 
 
-$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->sharedCookies()->post($requestBody);
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteLists()->bySiteListId('browserSiteList-id')->sharedCookies()->post($requestBody);
 
 
 ```

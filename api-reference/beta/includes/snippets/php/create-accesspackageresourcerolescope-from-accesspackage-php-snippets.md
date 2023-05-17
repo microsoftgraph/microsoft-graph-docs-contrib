@@ -39,7 +39,7 @@ $accessPackageResourceScope->setOriginSystem('AadGroup');
 $requestBody->setAccessPackageResourceScope($accessPackageResourceScope);
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->accessPackageResourceRoleScopes()->post($requestBody);
 
 
 ```
