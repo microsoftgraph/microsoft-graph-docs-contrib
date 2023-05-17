@@ -31,7 +31,7 @@ $features->setGroupWriteBackEnabled(true);
 $requestBody->setFeatures($features);
 
 
-$result = $graphServiceClient->directory()->onPremisesSynchronizationById('onPremisesDirectorySynchronization-id')->patch($requestBody);
+$result = $graphServiceClient->directory()->onPremisesSynchronization()->byOnPremisesSynchronization()Id('onPremisesDirectorySynchronization-id')->patch($requestBody);
 
 
 ```

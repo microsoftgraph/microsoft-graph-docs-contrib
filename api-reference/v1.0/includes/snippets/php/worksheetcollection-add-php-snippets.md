@@ -14,7 +14,7 @@ $requestBody->setName('name-value');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->worksheets()->add()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->worksheets()->add()->post($requestBody);
 
 
 ```

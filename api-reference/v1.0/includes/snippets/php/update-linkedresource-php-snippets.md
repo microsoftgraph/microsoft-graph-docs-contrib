@@ -20,7 +20,7 @@ $requestBody->setDisplayName('Microsoft');
 
 
 
-$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->linkedResourcesById('linkedResource-id')->patch($requestBody);
+$result = $graphServiceClient->me()->todo()->lists()->byListId('todoTaskList-id')->tasks()->byTaskId('todoTask-id')->linkedResources()->byLinkedResourceId('linkedResource-id')->patch($requestBody);
 
 
 ```

@@ -27,7 +27,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->post($requestBody);
 
 
 ```

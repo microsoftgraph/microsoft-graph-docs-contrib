@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->roleManagement()->exchange()->roleDefinitionsById('unifiedRoleDefinition-id')->get();
+$result = $graphServiceClient->roleManagement()->exchange()->roleDefinitions()->byRoleDefinitionId('unifiedRoleDefinition-id')->get();
 
 
 ```

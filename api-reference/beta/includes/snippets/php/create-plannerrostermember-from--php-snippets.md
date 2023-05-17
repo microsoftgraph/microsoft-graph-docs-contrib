@@ -16,7 +16,7 @@ $requestBody->setUserId('String');
 
 
 
-$result = $graphServiceClient->planner()->rostersById('plannerRoster-id')->members()->post($requestBody);
+$result = $graphServiceClient->planner()->rosters()->byRosterId('plannerRoster-id')->members()->post($requestBody);
 
 
 ```

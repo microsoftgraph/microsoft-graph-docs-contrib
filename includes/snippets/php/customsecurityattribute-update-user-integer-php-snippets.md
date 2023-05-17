@@ -30,7 +30,7 @@ $customSecurityAttributes->setAdditionalData($additionalData);
 $requestBody->setCustomSecurityAttributes($customSecurityAttributes);
 
 
-$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->patch($requestBody);
 
 
 ```

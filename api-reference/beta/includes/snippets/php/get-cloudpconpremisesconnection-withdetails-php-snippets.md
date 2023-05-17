@@ -15,7 +15,7 @@ $queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckS
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->get($requestConfiguration);
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->get($requestConfiguration);
 
 
 ```

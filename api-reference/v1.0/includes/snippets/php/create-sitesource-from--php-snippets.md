@@ -17,7 +17,7 @@ $site->setWebUrl('https://m365x809305.sharepoint.com/sites/Retail');
 $requestBody->setSite($site);
 
 
-$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->custodiansById('ediscoveryCustodian-id')->siteSources()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->custodians()->byCustodianId('ediscoveryCustodian-id')->siteSources()->post($requestBody);
 
 
 ```

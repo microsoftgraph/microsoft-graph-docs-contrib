@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->profile()->positionsById('workPosition-id')->delete();
+$graphServiceClient->me()->profile()->positions()->byPositionId('workPosition-id')->delete();
 
 
 ```
