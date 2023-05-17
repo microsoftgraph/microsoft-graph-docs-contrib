@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and ancollection of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects in the response body.
 
 ## Example
 
