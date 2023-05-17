@@ -106,7 +106,7 @@ Content-length: 211
 
 ### Example 2:  Get an appCredentialSignInActivitiy for a credential by keyId
 
-The following example shows how to get an **appCredentialSignInActivity** object by its **keyId**.
+The following example shows how to get an **appCredentialSignInActivity** object filtered by **keyId**.
 
 #### Request
 
@@ -145,7 +145,7 @@ Content-type: application/json
 
 ### Example 3:  Get an appCredentialSignInActivity for an application by appId
 
-The following example shows how to get an **appCredentialSignInActivity** object by its **appId**.
+The following example shows how to get an **appCredentialSignInActivity** object filtered by **appId**.
 
 #### Request
 
