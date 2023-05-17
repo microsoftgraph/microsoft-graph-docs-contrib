@@ -1,6 +1,6 @@
 ---
 title: "appCredentialSignInActivity resource type"
-description: "Represents the application credential activity in a given tenant."
+description: "Represents an application credential activity in a given tenant."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "reports"
@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The A sign-in activity for an application credential. Contains information about last usage time of the application credential.
+Represents an application credential activity in a given tenant. Contains information about the last usage time of an application credential.
 
 ## Methods
 
 | Method                                                                         | Return Type                                                                           | Description                                                                |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------- |
-| [List appCredentialSignInActivity](../api/appcredentialsigninactivity-list.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | Retrieve a list of appCredentialSignInActivity objects.                    |
-| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Read properties and relationships of a appCredentialSignInActivity object. |
+| [List appCredentialSignInActivity](../api/appcredentialsigninactivity-list.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | R
+Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.                    |
+| [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Get an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential. |
 
 ## Properties
 
@@ -46,6 +47,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -57,20 +59,18 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
+  "appId": "String",
+  "appObjectId": "String",
+  "createdDateTime": "String (timestamp)",
+  "credentialOrigin": "String",
+  "expirationDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "keyId": "String",
-    "keyType": "string",
-    "keyUsage": "String",
-    "appId": "string",
-    "appObjectId": "string",
-    "servicePrincipalObjectId": "string",
-    "resourceId": "string",
-    "credentialOrigin": "String",
-    "createdDateTime": "String (timestamp)",
-    "expirationDateTime": "String (timestamp)",
-    "signInActivity": {
-    "@odata.type": "microsoft.graph.signInActivity"
-  }
+  "keyType": "String",
+  "keyUsage": "String",
+  "resourceId": "String",
+  "servicePrincipalObjectId": "String",
+  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }
 ```
 
