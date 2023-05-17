@@ -883,11 +883,47 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "inProgress",
 					"ChangeType": "Addition",
-                    "Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
-                    "Target": "incidentStatus"
+					"Description": "Added the `inProgress` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
+					"Target": "incidentStatus"
 				}
 			],
 			"Id": "2674744f-725e-4e6b-9768-5766b3713d2c",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "bb3876df-8937-418b-89d3-8931ef750ef3",
+					"ApiChange": "Member",
+					"ChangedApiName": "awaitingAction",
+					"ChangeType": "Addition",
+					"Description": "Added the `awaitingAction` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-1.0#incidentstatus-values) enumeration.",
+					"Target": "incidentStatus"
+				}
+			],
+			"Id": "bb3876df-8937-418b-89d3-8931ef750ef3",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
+			"WorkloadArea": "Security",
+			"SubArea": "Alerts and incidents"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "55671ff0-6c0e-45f1-8f2c-7077e09eaf5f",
+					"ApiChange": "Member",
+					"ChangedApiName": "awaitingAction",
+					"ChangeType": "Addition",
+					"Description": "Added the `awaitingAction` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta#incidentstatus-values) enumeration.",
+					"Target": "incidentStatus"
+				}
+			],
+			"Id": "55671ff0-6c0e-45f1-8f2c-7077e09eaf5f",
 			"Cloud": "Prod",
 			"Version": "v1.0",
 			"CreatedDateTime": "2023-01-30T13:00:00.1231234Z",
