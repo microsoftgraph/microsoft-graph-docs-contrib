@@ -19,7 +19,7 @@ Represents an application credential activity in a given tenant. This resource c
 
 | Method                                                                         | Return Type                                                                           | Description                                                                |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------- |
-| [List appCredentialSignInActivity](../api/appcredentialsigninactivity-list.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | R
+| [List appCredentialSignInActivities](../api/appcredentialsigninactivity-list.md) | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection | R
 Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.                    |
 | [Get appCredentialSignInActivity](../api/appcredentialsigninactivity-get.md)   | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md)            | Get an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential. |
 
