@@ -28,7 +28,7 @@ requestBody := graphmodels.NewPlannerPlan()
 title := "title-value"
 requestBody.SetTitle(&title) 
 
-result, err := graphClient.Planner().PlansById("plannerPlan-id").Patch(context.Background(), requestBody, configuration)
+result, err := graphClient.Planner().Plans().ByPlanId("plannerPlan-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

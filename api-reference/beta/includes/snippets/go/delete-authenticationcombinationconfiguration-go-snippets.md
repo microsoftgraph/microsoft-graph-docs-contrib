@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().ConditionalAccess().AuthenticationStrengths().PoliciesById("authenticationStrengthPolicy-id").CombinationConfigurationsById("authenticationCombinationConfiguration-id").Delete(context.Background(), nil)
+graphClient.Identity().ConditionalAccess().AuthenticationStrengths().Policies().ByPolicieId("authenticationStrengthPolicy-id").CombinationConfigurations().ByCombinationConfigurationId("authenticationCombinationConfiguration-id").Delete(context.Background(), nil)
 
 
 ```

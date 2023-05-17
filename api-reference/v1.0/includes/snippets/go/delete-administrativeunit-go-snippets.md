@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().AdministrativeUnitsById("administrativeUnit-id").Delete(context.Background(), nil)
+graphClient.Directory().AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Delete(context.Background(), nil)
 
 
 ```

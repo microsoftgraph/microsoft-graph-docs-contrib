@@ -11,9 +11,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CustomAccessPackageWorkflowExtension();
 $additionalData = [
-'@odata.type' => '#microsoft.graph.customAccessPackageWorkflowExtension', 
-'displayName' => 'test_action_0124_email', 
-'description' => 'this is for graph testing only', 
+		'@odata.type' => '#microsoft.graph.customAccessPackageWorkflowExtension', 
+		'displayName' => 'test_action_0124_email', 
+		'description' => 'this is for graph testing only', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

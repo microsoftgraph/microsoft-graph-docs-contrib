@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TeamsById("team-id").Schedule().TimeCardsById("timeCard-id").Delete(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().ByTimeCardId("timeCard-id").Delete(context.Background(), nil)
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetName(&name)
 region := graphmodels.REGION-VALUE_CONNECTORGROUPREGION 
 requestBody.SetRegion(&region) 
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").ConnectorGroupsById("connectorGroup-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").ConnectorGroups().ByConnectorGroupId("connectorGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

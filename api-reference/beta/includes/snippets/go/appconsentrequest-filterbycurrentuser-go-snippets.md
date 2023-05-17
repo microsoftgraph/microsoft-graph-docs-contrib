@@ -25,7 +25,7 @@ configuration := &graphconfig.IdentityGovernanceAppConsentAppConsentRequestItemR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById("appConsentRequest-id").Get(context.Background(), configuration)
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().ByAppConsentRequestId("appConsentRequest-id").Get(context.Background(), configuration)
 
 
 ```

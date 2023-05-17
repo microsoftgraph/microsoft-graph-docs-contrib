@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->get($requestConfiguration);
+$result = $graphServiceClient->groupsById('group-id')->get($requestConfiguration);
 
 
 ```

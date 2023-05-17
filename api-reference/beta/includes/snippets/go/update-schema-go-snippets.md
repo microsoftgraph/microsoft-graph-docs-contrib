@@ -62,7 +62,7 @@ properties := []graphmodels.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```

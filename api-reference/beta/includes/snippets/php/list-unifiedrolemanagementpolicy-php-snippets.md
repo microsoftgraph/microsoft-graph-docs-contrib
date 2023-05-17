@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RoleManagementPoliciesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RoleManagementPoliciesRequestBuilderGetQueryParameters();
+$queryParameters = RoleManagementPoliciesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "scopeId eq '/' and scopeType eq 'DirectoryRole'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration);
+$result = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration);
 
 
 ```

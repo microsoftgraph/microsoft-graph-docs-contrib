@@ -19,7 +19,7 @@ requestBody := graphmodels.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Search().BookmarksById("bookmark-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

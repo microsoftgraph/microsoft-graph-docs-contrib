@@ -19,7 +19,7 @@ requestBody := graphmodels.NewEdiscoveryHoldPolicy()
 description := "updated description"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").LegalHoldsById("ediscoveryHoldPolicy-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").LegalHolds().ByLegalHoldId("ediscoveryHoldPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

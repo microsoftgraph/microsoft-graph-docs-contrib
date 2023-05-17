@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new InstalledAppsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new InstalledAppsRequestBuilderGetQueryParameters();
+$queryParameters = InstalledAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsAppDefinition($expand=bot)"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->installedApps()->get($requestConfiguration);
+$result = $graphServiceClient->chatsById('chat-id')->installedApps()->get($requestConfiguration);
 
 
 ```

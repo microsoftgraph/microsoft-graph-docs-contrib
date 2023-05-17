@@ -13,7 +13,7 @@ $requestBody = new ComplianceChange();
 $requestBody->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
 
 $additionalData = [
-'content' => $requestBody = new Content();
+		'content' => $requestBody = new Content();
 $		requestBody->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
 
 $catalogEntry = new CatalogEntry();
@@ -26,11 +26,11 @@ $requestBody->setCatalogEntry($catalogEntry);
 
 $requestBody->setContent($content);
 
-'deploymentSettings' => $requestBody = new DeploymentSettings();
+		'deploymentSettings' => $requestBody = new DeploymentSettings();
 
 $requestBody->setDeploymentSettings($deploymentSettings);
 
-'schedule' => $requestBody = new Schedule();
+		'schedule' => $requestBody = new Schedule();
 $		requestBody->setStartDateTime('String (timestamp)');
 
 $gradualRollout = new GradualRollout();
@@ -49,7 +49,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->complianceChanges()->post($requestBody);
+$result = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->complianceChanges()->post($requestBody);
 
 
 ```

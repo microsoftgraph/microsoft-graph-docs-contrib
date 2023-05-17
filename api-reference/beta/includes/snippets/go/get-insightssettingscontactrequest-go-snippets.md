@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.OrganizationById("organization-id").Settings().ContactInsights().Get(context.Background(), nil)
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").Settings().ContactInsights().Get(context.Background(), nil)
 
 
 ```

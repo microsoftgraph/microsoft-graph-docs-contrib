@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.UsersById("user-id").Authentication().MethodsById("authenticationMethod-id").ResetPassword().Post(context.Background(), nil)
+result, err := graphClient.Users().ByUserId("user-id").Authentication().Methods().ByMethodId("authenticationMethod-id").ResetPassword().Post(context.Background(), nil)
 
 
 ```

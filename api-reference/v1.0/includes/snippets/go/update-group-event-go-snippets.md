@@ -21,7 +21,7 @@ displayName := "Conf Room 2"
 location.SetDisplayName(&displayName) 
 requestBody.SetLocation(location)
 
-result, err := graphClient.GroupsById("group-id").Calendar().EventsById("event-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Groups().ByGroupId("group-id").Calendar().Events().ByEventId("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

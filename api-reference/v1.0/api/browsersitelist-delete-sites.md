@@ -49,9 +49,10 @@ If the site was not previously published, then this method returns a `204 No Con
 
 #### Request
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite",
+  "name": "delete_browsersite_v1_e1",
   "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
@@ -59,6 +60,27 @@ The following is an example of a request.
 DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/07f4030f-45ff-4ad1-9277-3b8f6ee74141/sites/a22cbc85-d5d2-4e61-8414-42e6704c36f7
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersite-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersite-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersite-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersite-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersite-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response.
@@ -75,15 +97,38 @@ HTTP/1.1 204 No Content
 
 #### Request
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersite",
+  "name": "delete_browsersite_v1_e2",
   "sampleKeys": ["07f4030f-45ff-4ad1-9277-3b8f6ee74141", "a22cbc85-d5d2-4e61-8414-42e6704c36f7"]
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/v1.0/admin/edge/internetExplorerMode/siteLists/07f4030f-45ff-4ad1-9277-3b8f6ee74141/sites/a22cbc85-d5d2-4e61-8414-42e6704c36f7
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersite-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-browsersite-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-browsersite-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-browsersite-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-browsersite-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

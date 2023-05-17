@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->settings()->microsoftApplicationDataAccess()->get();
+$result = $graphServiceClient->organizationById('organization-id')->settings()->microsoftApplicationDataAccess()->get();
 
 
 ```

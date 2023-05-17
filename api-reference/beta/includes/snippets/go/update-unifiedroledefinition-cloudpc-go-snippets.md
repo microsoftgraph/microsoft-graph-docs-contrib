@@ -36,7 +36,7 @@ rolePermissions := []graphmodels.UnifiedRolePermissionable {
 }
 requestBody.SetRolePermissions(rolePermissions)
 
-result, err := graphClient.RoleManagement().CloudPC().RoleDefinitionsById("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.RoleManagement().CloudPC().RoleDefinitions().ByRoleDefinitionId("unifiedRoleDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

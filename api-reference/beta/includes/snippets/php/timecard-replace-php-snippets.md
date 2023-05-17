@@ -11,11 +11,11 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new TimeCard();
 $additionalData = [
-'userId' => '70e47528-2fae-42b5-9d8e-ee73ccd90603', 
-'state' => 'clockedOut', 
-'confirmedBy' => 'None', 
-'notes' => 		null,
-'clockInEvent' => $requestBody = new ClockInEvent();
+		'userId' => '70e47528-2fae-42b5-9d8e-ee73ccd90603', 
+		'state' => 'clockedOut', 
+		'confirmedBy' => 'None', 
+		'notes' => 		null,
+		'clockInEvent' => $requestBody = new ClockInEvent();
 $		requestBody->setDateTime('2021-05-21T21:58:41.327Z');
 
 		$requestBody->setAtApprovedLocation(null);
@@ -30,7 +30,7 @@ $requestBody->setNotes($notes);
 
 $requestBody->setClockInEvent($clockInEvent);
 
-'clockOutEvent' => $requestBody = new ClockOutEvent();
+		'clockOutEvent' => $requestBody = new ClockOutEvent();
 $		requestBody->setDateTime('2021-05-21T22:01:46.205Z');
 
 		$requestBody->setAtApprovedLocation(null);
@@ -45,7 +45,7 @@ $requestBody->setNotes($notes);
 
 $requestBody->setClockOutEvent($clockOutEvent);
 
-'breaks' => $breaks1 = new ();
+		'breaks' => $breaks1 = new ();
 $		breaks1->setBreakId('BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f');
 
 		$breaks1->setNotes(null);

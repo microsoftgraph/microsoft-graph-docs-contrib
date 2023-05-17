@@ -33,7 +33,7 @@ $levelsRubricLevel1Grading = new EducationAssignmentGradeType();
 $levelsRubricLevel1Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
 
 $additionalData = [
-'maxPoints' => 2,
+		'maxPoints' => 2,
 ];
 $levelsRubricLevel1Grading->setAdditionalData($additionalData);
 
@@ -56,7 +56,7 @@ $levelsRubricLevel2Grading = new EducationAssignmentGradeType();
 $levelsRubricLevel2Grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
 
 $additionalData = [
-'maxPoints' => 1,
+		'maxPoints' => 1,
 ];
 $levelsRubricLevel2Grading->setAdditionalData($additionalData);
 
@@ -148,7 +148,7 @@ $grading->set@odatatype('#microsoft.graph.educationAssignmentPointsGradeType');
 $requestBody->setGrading($grading);
 
 
-$requestResult = $graphServiceClient->education()->me()->rubrics()->post($requestBody);
+$result = $graphServiceClient->education()->me()->rubrics()->post($requestBody);
 
 
 ```

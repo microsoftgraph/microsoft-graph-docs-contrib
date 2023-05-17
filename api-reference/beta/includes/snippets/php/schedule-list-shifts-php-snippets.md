@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ShiftsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ShiftsRequestBuilderGetQueryParameters();
+$queryParameters = ShiftsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->schedule()->shifts()->get($requestConfiguration);
+$result = $graphServiceClient->teamsById('team-id')->schedule()->shifts()->get($requestConfiguration);
 
 
 ```

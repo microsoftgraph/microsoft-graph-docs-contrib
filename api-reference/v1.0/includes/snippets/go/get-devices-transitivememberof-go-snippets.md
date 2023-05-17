@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DevicesById("device-id").TransitiveMemberOf().Get(context.Background(), nil)
+result, err := graphClient.Devices().ByDeviceId("device-id").TransitiveMemberOf().Get(context.Background(), nil)
 
 
 ```

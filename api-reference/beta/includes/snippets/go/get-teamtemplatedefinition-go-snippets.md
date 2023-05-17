@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().TeamTemplatesById("teamTemplate-id").DefinitionsById("teamTemplateDefinition-id").Get(context.Background(), nil)
+result, err := graphClient.Teamwork().TeamTemplates().ByTeamTemplateId("teamTemplate-id").Definitions().ByDefinitionId("teamTemplateDefinition-id").Get(context.Background(), nil)
 
 
 ```

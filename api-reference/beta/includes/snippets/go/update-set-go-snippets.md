@@ -19,7 +19,7 @@ requestBody := graphmodels.NewSet()
 description := "mySet"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.TermStore().SetsById("set-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.TermStore().Sets().BySetId("set-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

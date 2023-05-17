@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UserProcessingResultsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UserProcessingResultsRequestBuilderGetQueryParameters();
+$queryParameters = UserProcessingResultsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->runsById('run-id')->userProcessingResults()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->runsById('run-id')->userProcessingResults()->get($requestConfiguration);
 
 
 ```

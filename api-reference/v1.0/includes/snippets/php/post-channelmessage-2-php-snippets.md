@@ -19,7 +19,7 @@ $fromUser->setId('id-value');
 $fromUser->setDisplayName('Joh Doe');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -37,7 +37,7 @@ $body->setContent('Hello World');
 $requestBody->setBody($body);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
 
 
 ```

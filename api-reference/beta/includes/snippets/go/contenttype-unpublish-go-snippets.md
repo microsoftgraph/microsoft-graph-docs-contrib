@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.SitesById("site-id").ContentTypesById("contentType-id").Unpublish().Post(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").ContentTypes().ByContentTypeId("contentType-id").Unpublish().Post(context.Background(), nil)
 
 
 ```

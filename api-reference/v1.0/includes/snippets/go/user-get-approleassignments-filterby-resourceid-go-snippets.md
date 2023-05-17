@@ -25,7 +25,7 @@ configuration := &graphconfig.UserItemAppRoleAssignmentsRequestBuilderGetRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").AppRoleAssignments().Get(context.Background(), configuration)
+result, err := graphClient.Users().ByUserId("user-id").AppRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

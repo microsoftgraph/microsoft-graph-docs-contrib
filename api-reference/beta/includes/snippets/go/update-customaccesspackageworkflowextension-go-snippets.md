@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensionsById("customAccessPackageWorkflowExtension-id").Put(context.Background(), requestBody, nil)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().ByCustomAccessPackageWorkflowExtensionId("customAccessPackageWorkflowExtension-id").Put(context.Background(), requestBody, nil)
 
 
 ```

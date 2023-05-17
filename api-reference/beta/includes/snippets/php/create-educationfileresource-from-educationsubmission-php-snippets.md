@@ -16,7 +16,7 @@ $resource->setDisplayName('_FTP_EDC-61424749-250820211136.pdf');
 $resource->set@odatatype('#microsoft.graph.educationFileResource');
 
 $additionalData = [
-'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3', 
+		'fileUrl' => 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3', 
 ];
 $resource->setAdditionalData($additionalData);
 
@@ -25,7 +25,7 @@ $resource->setAdditionalData($additionalData);
 $requestBody->setResource($resource);
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->resources()->post($requestBody);
+$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->submissionsById('educationSubmission-id')->resources()->post($requestBody);
 
 
 ```

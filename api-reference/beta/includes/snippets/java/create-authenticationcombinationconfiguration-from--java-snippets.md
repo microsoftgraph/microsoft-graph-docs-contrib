@@ -16,7 +16,7 @@ LinkedList<AuthenticationMethodModes> appliesToCombinationsList = new LinkedList
 appliesToCombinationsList.add(AuthenticationMethodModes.FIDO2);
 authenticationCombinationConfiguration.appliesToCombinations = appliesToCombinationsList;
 
-graphClient.identity().conditionalAccess().authenticationStrengths().policies("8313edec-d6af-483f-87b8-ec7cccfd2ab4").combinationConfigurations()
+graphClient.identity().conditionalAccess().authenticationStrength().policies("8313edec-d6af-483f-87b8-ec7cccfd2ab4").combinationConfigurations()
 	.buildRequest()
 	.post(authenticationCombinationConfiguration);
 

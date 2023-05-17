@@ -18,7 +18,7 @@ $requestBody->setSignInPageText(' ');
 
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->localizations()->post($requestBody);
+$result = $graphServiceClient->organizationById('organization-id')->branding()->localizations()->post($requestBody);
 
 
 ```

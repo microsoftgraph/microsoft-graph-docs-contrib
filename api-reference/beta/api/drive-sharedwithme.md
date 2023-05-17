@@ -29,33 +29,38 @@ One of the following permissions is required to call this API. To learn more, in
 Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 
+```http
+GET /me/drive/sharedWithMe
+```
+
+## Response
+If successful, this method returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
+
+## Examples
+
+### Request
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me" } -->
 
 ```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
+### Response
 
-## Response
-
-This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
 In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
@@ -119,5 +124,4 @@ By default, **sharedWithMe** returns items shared within your own tenant. To inc
   ]
 }
 -->
-
 

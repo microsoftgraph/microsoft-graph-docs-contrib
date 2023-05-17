@@ -23,7 +23,7 @@ configuration := &graphconfig.SiteItemPageItemRequestBuilderGetRequestConfigurat
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").Get(context.Background(), configuration)
+result, err := graphClient.Sites().BySiteId("site-id").Pages().ByPageId("sitePage-id").Get(context.Background(), configuration)
 
 
 ```

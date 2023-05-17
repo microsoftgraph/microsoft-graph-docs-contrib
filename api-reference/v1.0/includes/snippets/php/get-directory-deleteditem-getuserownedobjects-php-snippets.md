@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new DeletedItem();
 $additionalData = [
-'userId' => '55ac777c-109e-4022-b58c-470c8fcb6892', 
-'type' => 'Group', 
+		'userId' => '55ac777c-109e-4022-b58c-470c8fcb6892', 
+		'type' => 'Group', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

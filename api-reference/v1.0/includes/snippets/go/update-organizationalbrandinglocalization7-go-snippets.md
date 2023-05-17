@@ -21,7 +21,7 @@ requestBody.SetSignInPageText(&signInPageText)
 usernameHintText := " "
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-result, err := graphClient.OrganizationById("organization-id").Branding().LocalizationsById("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Localizations().ByLocalizationId("organizationalBrandingLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

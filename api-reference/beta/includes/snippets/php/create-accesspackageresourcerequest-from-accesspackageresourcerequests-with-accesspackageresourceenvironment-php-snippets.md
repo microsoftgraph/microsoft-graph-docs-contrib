@@ -24,7 +24,7 @@ $accessPackageResource->setOriginId('https://contoso.sharepoint.com/sites/CSR');
 $accessPackageResource->setOriginSystem('SharePointOnline');
 
 $additionalData = [
-'accessPackageResourceEnvironment@odata.bind' => 'accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57', 
+		'accessPackageResourceEnvironment@odata.bind' => 'accessPackageResourceEnvironments/615f2218-678f-471f-a60a-02c2f4f80c57', 
 ];
 $accessPackageResource->setAdditionalData($additionalData);
 
@@ -35,7 +35,7 @@ $requestBody->setRequestType('AdminAdd');
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageResourceRequests()->post($requestBody);
 
 
 ```

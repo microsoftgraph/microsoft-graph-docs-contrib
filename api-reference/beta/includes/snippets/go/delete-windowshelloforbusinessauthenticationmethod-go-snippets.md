@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.UsersById("user-id").Authentication().WindowsHelloForBusinessMethodsById("windowsHelloForBusinessAuthenticationMethod-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Authentication().WindowsHelloForBusinessMethods().ByWindowsHelloForBusinessMethodId("windowsHelloForBusinessAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

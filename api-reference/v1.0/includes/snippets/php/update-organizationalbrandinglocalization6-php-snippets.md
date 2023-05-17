@@ -16,7 +16,7 @@ $requestBody->setSignInPageText('Welcome to Contoso France');
 
 
 
-$requestResult = $graphServiceClient->organizationById('organization-id')->branding()->localizationsById('organizationalBrandingLocalization-id')->patch($requestBody);
+$result = $graphServiceClient->organizationById('organization-id')->branding()->localizationsById('organizationalBrandingLocalization-id')->patch($requestBody);
 
 
 ```

@@ -22,7 +22,7 @@ $transferTargetIdentity->setUser($transferTargetIdentityUser);
 
 $transferTarget->setIdentity($transferTargetIdentity);
 $additionalData = [
-'endpointType' => 'default', 
+		'endpointType' => 'default', 
 ];
 $transferTarget->setAdditionalData($additionalData);
 

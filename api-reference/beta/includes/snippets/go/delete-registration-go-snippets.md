@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().OnlineMeetingsById("onlineMeeting-id").Registration().Delete(context.Background(), nil)
+graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Delete(context.Background(), nil)
 
 
 ```

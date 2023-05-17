@@ -13,14 +13,14 @@ $requestBody = new AuthenticationMethodConfiguration();
 $requestBody->set@odatatype('#microsoft.graph.emailAuthenticationMethodConfiguration');
 
 $additionalData = [
-'allowExternalIdToUseEmailOtp' => 'disabled', 
+		'allowExternalIdToUseEmailOtp' => 'disabled', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurationsById('authenticationMethodConfiguration-id')->patch($requestBody);
 
 
 ```

@@ -20,7 +20,7 @@ $requestBody->setExp(1508973711);
 
 
 
-$requestResult = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadSecret()->post($requestBody);
+$result = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->uploadSecret()->post($requestBody);
 
 
 ```

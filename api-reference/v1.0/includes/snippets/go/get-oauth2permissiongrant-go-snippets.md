@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Oauth2PermissionGrantsById("oAuth2PermissionGrant-id").Get(context.Background(), nil)
+result, err := graphClient.Oauth2PermissionGrants().ByOauth2PermissionGrantId("oAuth2PermissionGrant-id").Get(context.Background(), nil)
 
 
 ```

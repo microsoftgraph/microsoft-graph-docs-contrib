@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new CertificateBasedAuthConfigurationPostRequestBody();
 $additionalData = [
-'certificateAuthorities' => $certificateAuthorities1 = new ();
+		'certificateAuthorities' => $certificateAuthorities1 = new ();
 		$certificateAuthorities1->setIsRootAuthority(true);
 
 $		certificateAuthorities1->setCertificate('Binary');

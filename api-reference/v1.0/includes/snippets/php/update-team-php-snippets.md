@@ -31,7 +31,7 @@ $funSettings->setGiphyContentRating(new GiphyRatingType('strict'));
 $requestBody->setFunSettings($funSettings);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->patch($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->patch($requestBody);
 
 
 ```

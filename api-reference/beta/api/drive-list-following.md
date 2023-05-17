@@ -27,33 +27,41 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
-
-```msgraph-interactive
+```http
 GET /me/drive/following
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-followed-items-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-followed-items-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-followed-items-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ## Response
 
 This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
 If no items were found, an empty collection is returned.
+
+## Examples
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-followed-items" } -->
+
+```msgraph-interactive
+GET /me/drive/following
+```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-followed-items-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-followed-items-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -90,5 +98,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

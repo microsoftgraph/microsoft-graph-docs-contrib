@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().DeviceCompliancePolicySettingStateSummariesById("deviceCompliancePolicySettingStateSummary-id").Get(context.Background(), nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummarieId("deviceCompliancePolicySettingStateSummary-id").Get(context.Background(), nil)
 
 
 ```

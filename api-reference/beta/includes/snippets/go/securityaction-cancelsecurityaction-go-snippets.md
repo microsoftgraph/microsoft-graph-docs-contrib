@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().SecurityActionsById("securityAction-id").CancelSecurityAction().Post(context.Background(), nil)
+graphClient.Security().SecurityActions().BySecurityActionId("securityAction-id").CancelSecurityAction().Post(context.Background(), nil)
 
 
 ```

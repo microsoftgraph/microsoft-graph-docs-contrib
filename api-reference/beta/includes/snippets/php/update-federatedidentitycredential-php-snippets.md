@@ -22,7 +22,7 @@ $requestBody->setAudiences(['api://AzureADTokenExchange', ]);
 
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->federatedIdentityCredentialsById('federatedIdentityCredential-id')->patch($requestBody);
+$result = $graphServiceClient->applicationsById('application-id')->federatedIdentityCredentialsById('federatedIdentityCredential-id')->patch($requestBody);
 
 
 ```

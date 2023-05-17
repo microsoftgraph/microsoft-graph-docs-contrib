@@ -1565,6 +1565,58 @@
       "CreatedDateTime": "2023-02-23T04:11:04.628137Z",
       "WorkloadArea": "Search",
       "SubArea": "Query"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "importanceScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **importanceScore** enumeration.",
+          "Target": "importanceScore"
+        },
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rankingHint",
+          "ChangeType": "Addition",
+          "Description": "Added the [rankingHint](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-rankingHint?view=graph-rest-beta) resource.",
+          "Target": "rankingHint"
+        },
+        {
+          "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+          "ApiChange": "Property",
+          "ChangedApiName": "rankingHint",
+          "ChangeType": "Addition",
+          "Description": "Added the **rankingHint** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Target": "property"
+        }
+      ],
+      "Id": "755b97f3-6ac9-4dbd-b74f-57ac7d0e0320",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "affa85e4-b3d9-4c62-a8a9-a39c0fb6f866",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryTemplate** property to the [searchQuery](https://learn.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-1.0) resource.",
+          "Target": "query"
+        }
+      ],
+      "Id": "5cbf1eb2-c4fe-44c5-8865-48307d19d3c8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-19T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": "Query"
     }
   ]
 }
