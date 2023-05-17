@@ -65,9 +65,9 @@ If successful, this method returns a `201 Created` response code and an [adminis
 
 ### Example 1: Create an administrative unit
 
-#### Request
+The following is an example creates a new administrative unit with a dynamic membership rule to include all users whose country is United States.
 
-The following is an example of a request that creates a new administrative unit with a dynamic membership rule to include all users whose country is United States.
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -135,6 +135,8 @@ Content-type: application/json
 ```
 
 ### Example 2: Create a restricted management administrative unit
+
+The following creates a new restricted management administrative unit. The `isMemberManagementRestricted` property is immutable, so cannot be changed later.
 
 #### Request
 <!-- {
