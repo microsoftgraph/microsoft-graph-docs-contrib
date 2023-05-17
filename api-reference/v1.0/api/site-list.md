@@ -24,7 +24,7 @@ If you want to list all sites across all geographies, refer to [site-getallsites
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
-[site-getallsites]: ../api/site-getallsites.md
+[getallsites]: ../api/site-getallsites.md
 
 For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](https://learn.microsoft.com/en-us/onedrive/developer/rest-api/concepts/scan-guidance).
 
