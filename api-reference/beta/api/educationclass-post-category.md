@@ -50,7 +50,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["9a5e4047-c1dc-4243-9628-580d3c64b80c"],
-  "name": "create_educationcategory_from_educationclass"
+  "name": "create_educationcategory_from_class_beta_e1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
