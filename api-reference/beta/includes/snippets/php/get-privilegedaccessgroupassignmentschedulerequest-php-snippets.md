@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequestsById('privilegedAccessGroupAssignmentScheduleRequest-id')->get();
+$result = $graphServiceClient->identityGovernance()->privilegedAccess()->group()->assignmentScheduleRequests()->byAssignmentScheduleRequestId('privilegedAccessGroupAssignmentScheduleRequest-id')->get();
 
 
 ```

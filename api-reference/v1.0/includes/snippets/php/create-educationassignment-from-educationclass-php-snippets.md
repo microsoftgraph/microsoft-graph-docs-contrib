@@ -43,7 +43,7 @@ $requestBody->setAllowStudentsToAddResourcesToSubmission(true);
 
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->post($requestBody);
 
 
 ```

@@ -20,7 +20,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogsById('accessPackageCatalog-id')->customAccessPackageWorkflowExtensionsById('customAccessPackageWorkflowExtension-id')->put($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->customAccessPackageWorkflowExtensions()->byCustomAccessPackageWorkflowExtensionId('customAccessPackageWorkflowExtension-id')->put($requestBody);
 
 
 ```

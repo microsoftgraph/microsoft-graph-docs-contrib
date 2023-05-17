@@ -22,7 +22,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->print()->sharesById('printerShare-id')->patch($requestBody);
+$result = $graphServiceClient->print()->shares()->byShareId('printerShare-id')->patch($requestBody);
 
 
 ```

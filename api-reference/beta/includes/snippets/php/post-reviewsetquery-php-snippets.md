@@ -16,7 +16,7 @@ $requestBody->setQuery('(subject:\"Quarterly Financials\")');
 
 
 
-$result = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->queries()->post($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->reviewSets()->byReviewSetId('reviewSet-id')->queries()->post($requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ $queryParameters->expand = ["microsoft.graph.itemattachment/item"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->attachmentsById('attachment-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->attachments()->byAttachmentId('attachment-id')->get($requestConfiguration);
 
 
 ```

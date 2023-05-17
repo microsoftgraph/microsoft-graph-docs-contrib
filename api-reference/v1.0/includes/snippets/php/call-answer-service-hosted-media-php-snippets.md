@@ -44,7 +44,7 @@ $mediaConfig->setAdditionalData($additionalData);
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/groups/{id}');
 
 
 
-$graphServiceClient->directory()->administrativeUnitsById('administrativeUnit-id')->members()->ref()->post($requestBody);
+$graphServiceClient->directory()->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->members()->ref()->post($requestBody);
 
 
 ```

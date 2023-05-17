@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->planner()->plansById('plannerPlan-id')->tasks()->get();
+$result = $graphServiceClient->planner()->plans()->byPlanId('plannerPlan-id')->tasks()->get();
 
 
 ```
