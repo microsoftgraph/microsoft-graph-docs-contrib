@@ -15081,10 +15081,10 @@ items:
           - name: Application credential activity
             href: resources/appcredentialsigninactivity.md
             items:
-            - name: Get
-              href: api/appcredentialsigninactivity-get.md
             - name: List
               href: api/appcredentialsigninactivity-list.md
+            - name: Get
+              href: api/appcredentialsigninactivity-get.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
@@ -15098,7 +15098,7 @@ items:
             - name: List sign-in details
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
-              href: api/applicationsignindetailedsummary-get.md          
+              href: api/applicationsignindetailedsummary-get.md
         - name: Registration and usage
           items:
           - name: Overview
@@ -15145,10 +15145,10 @@ items:
           - name: Service principal activity 
             href: resources/serviceprincipalsigninactivity.md
             items:
+            - name: List
+              href: api/serviceprincipalsigninactivity-list.md
             - name: Get
               href: api/serviceprincipalsigninactivity-get.md
-            - name: List
-              href: api/serviceprincipalsigninactivity-list.md 
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
