@@ -33,7 +33,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->applicationsById('application-id')->patch($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody);
 
 
 ```

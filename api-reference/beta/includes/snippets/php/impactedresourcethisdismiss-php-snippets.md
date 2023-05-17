@@ -14,7 +14,7 @@ $requestBody->setDismissReason('Application is no longer needed.');
 
 
 
-$result = $graphServiceClient->directory()->recommendationsById('recommendation-id')->impactedResourcesById('impactedResource-id')->dismiss()->post($requestBody);
+$result = $graphServiceClient->directory()->recommendations()->byRecommendationId('recommendation-id')->impactedResources()->byImpactedResourceId('impactedResource-id')->dismiss()->post($requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentResourceRolesById('accessPackageAssignmentResourceRole-id')->get();
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentResourceRoles()->byAccessPackageAssignmentResourceRoleId('accessPackageAssignmentResourceRole-id')->get();
 
 
 ```
