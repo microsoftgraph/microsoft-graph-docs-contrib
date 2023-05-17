@@ -14,7 +14,7 @@ $requestBody->set@odataid(' https://graph.microsoft.com/beta/directoryObjects/24
 
 
 
-$graphServiceClient->policies()->featureRolloutPoliciesById('featureRolloutPolicy-id')->appliesTo()->ref()->post($requestBody);
+$graphServiceClient->policies()->featureRolloutPolicies()->byFeatureRolloutPolicieId('featureRolloutPolicy-id')->appliesTo()->ref()->post($requestBody);
 
 
 ```

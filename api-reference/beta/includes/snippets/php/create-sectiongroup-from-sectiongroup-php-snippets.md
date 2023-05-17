@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->me()->onenote()->sectionGroupsById('sectionGroup-id')->sectionGroups()->post($requestBody);
+$graphServiceClient->me()->onenote()->sectionGroups()->bySectionGroupId('sectionGroup-id')->sectionGroups()->post($requestBody);
 
 
 ```

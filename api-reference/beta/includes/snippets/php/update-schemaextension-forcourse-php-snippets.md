@@ -45,7 +45,7 @@ $requestBody->setProperties($propertiesArray);
 
 
 
-$result = $graphServiceClient->schemaExtensionsById('schemaExtension-id')->patch($requestBody);
+$result = $graphServiceClient->schemaExtensions()->bySchemaExtensionId('schemaExtension-id')->patch($requestBody);
 
 
 ```

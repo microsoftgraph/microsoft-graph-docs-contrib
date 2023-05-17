@@ -15,7 +15,7 @@ $queryParameters->expand = ["singleValueExtendedProperties($filter=id%20eq%20'St
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->get($requestConfiguration);
 
 
 ```

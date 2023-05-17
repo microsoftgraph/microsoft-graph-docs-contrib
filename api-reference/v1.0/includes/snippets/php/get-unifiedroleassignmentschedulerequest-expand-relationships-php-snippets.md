@@ -16,7 +16,7 @@ $queryParameters->expand = ["roleDefinition","activatedUsing","principal","targe
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequestsById('unifiedRoleAssignmentScheduleRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentScheduleRequests()->byRoleAssignmentScheduleRequestId('unifiedRoleAssignmentScheduleRequest-id')->get($requestConfiguration);
 
 
 ```

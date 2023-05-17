@@ -16,7 +16,7 @@ $queryParameters->filter = "state eq 'clockedOut'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->get($requestConfiguration);
 
 
 ```

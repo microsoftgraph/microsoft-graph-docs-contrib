@@ -16,7 +16,7 @@ $requestBody->setValues('values-value');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->rowsById('workbookTableRow-id')->patch($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->rows()->byRowId('workbookTableRow-id')->patch($requestBody);
 
 
 ```
