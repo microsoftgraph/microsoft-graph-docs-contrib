@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.
+Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.
 
 ## Permissions
 
@@ -22,10 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
@@ -47,13 +48,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and ancollection of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects in the response body.
 
 ## Example
 
-### List appCredentialSignInActivities
-
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -65,7 +64,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 
