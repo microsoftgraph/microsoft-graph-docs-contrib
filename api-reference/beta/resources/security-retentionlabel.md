@@ -39,7 +39,6 @@ Represents how customers can manage their data, including whether and for how lo
 |descriptionForAdmins|String|Provides label information for the admin. Optional.|
 |descriptionForUsers|String|Provides the label information for the user. Optional.|
 |displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained.|
 |id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
 |isInUse|Boolean|Specifies whether the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
@@ -54,7 +53,7 @@ Represents how customers can manage their data, including whether and for how lo
 |Relationship|Type|Description|
 |:---|:---|:---|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.|
-|eventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event.|
+|retentionEventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event.|
 |descriptors|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.|
 
 
