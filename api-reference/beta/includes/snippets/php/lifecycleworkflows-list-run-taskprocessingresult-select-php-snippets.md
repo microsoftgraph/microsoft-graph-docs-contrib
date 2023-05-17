@@ -15,7 +15,7 @@ $queryParameters->select = ["id","failureReason","processingStatus","subject"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflowsById('workflow-id')->runsById('run-id')->taskProcessingResults()->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->workflows()->byWorkflowId('workflow-id')->runs()->byRunId('run-id')->taskProcessingResults()->get($requestConfiguration);
 
 
 ```

@@ -38,7 +38,7 @@ $criteria->setFilterOn('filterOn-value');
 $requestBody->setCriteria($criteria);
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->columnsById('workbookTableColumn-id')->filter()->apply()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->columns()->byColumnId('workbookTableColumn-id')->filter()->apply()->post($requestBody);
 
 
 ```

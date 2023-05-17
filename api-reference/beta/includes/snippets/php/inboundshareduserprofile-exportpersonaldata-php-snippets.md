@@ -14,7 +14,7 @@ $requestBody->setStorageLocation('MyStorageAccount');
 
 
 
-$graphServiceClient->directory()->inboundSharedUserProfilesById('inboundSharedUserProfile-userId')->exportPersonalData()->post($requestBody);
+$graphServiceClient->directory()->inboundSharedUserProfiles()->byInboundSharedUserProfileId('inboundSharedUserProfile-userId')->exportPersonalData()->post($requestBody);
 
 
 ```

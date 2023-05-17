@@ -19,7 +19,7 @@ $requestBody->setName('Copy of LargeFolder1');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->copy()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->copy()->post($requestBody);
 
 
 ```

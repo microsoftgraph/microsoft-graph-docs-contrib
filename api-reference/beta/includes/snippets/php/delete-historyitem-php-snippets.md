@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->activitiesById('userActivity-id')->historyItemsById('activityHistoryItem-id')->put();
+$graphServiceClient->me()->activities()->byActivitieId('userActivity-id')->historyItems()->byHistoryItemId('activityHistoryItem-id')->put();
 
 
 ```

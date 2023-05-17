@@ -15,7 +15,7 @@ $queryParameters->expand = ["fields(select=Name,Color,Quantity)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->items()->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->items()->get($requestConfiguration);
 
 
 ```

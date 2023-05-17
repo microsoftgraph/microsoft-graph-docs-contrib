@@ -82,7 +82,7 @@ $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
-$result = $graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->instances()->byInstanceId('accessReviewInstance-id')->patch($requestBody);
 
 
 ```

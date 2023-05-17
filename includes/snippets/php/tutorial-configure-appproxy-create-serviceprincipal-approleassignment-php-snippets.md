@@ -21,7 +21,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->appRoleAssignments()->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->appRoleAssignments()->post($requestBody);
 
 
 ```

@@ -16,7 +16,7 @@ $queryParameters->skip = 5;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->tablesById('workbookTable-id')->rows()->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->tables()->byTableId('workbookTable-id')->rows()->get($requestConfiguration);
 
 
 ```

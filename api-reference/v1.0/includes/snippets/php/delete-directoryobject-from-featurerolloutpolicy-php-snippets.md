@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->policies()->featureRolloutPoliciesById('featureRolloutPolicy-id')->appliesToById('directoryObject-id')->ref()->delete();
+$graphServiceClient->policies()->featureRolloutPolicies()->byFeatureRolloutPolicieId('featureRolloutPolicy-id')->appliesTo()->byAppliesTo()Id('directoryObject-id')->ref()->delete();
 
 
 ```
