@@ -26,7 +26,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->applicationsById('application-id')->synchronization()->templatesById('synchronizationTemplate-id')->put($requestBody, $requestConfiguration);
+$graphServiceClient->applications()->byApplicationId('application-id')->synchronization()->templates()->byTemplateId('synchronizationTemplate-id')->put($requestBody, $requestConfiguration);
 
 
 ```

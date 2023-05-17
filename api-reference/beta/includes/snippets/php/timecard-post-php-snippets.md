@@ -68,7 +68,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timeCards()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->post($requestBody);
 
 
 ```

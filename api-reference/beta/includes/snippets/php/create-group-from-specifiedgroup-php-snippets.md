@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/odata/groups(\'dc3d2ce5-7
 
 
 
-$graphServiceClient->policies()->mobileDeviceManagementPoliciesById('mobilityManagementPolicy-id')->includedGroups()->ref()->post($requestBody);
+$graphServiceClient->policies()->mobileDeviceManagementPolicies()->byMobileDeviceManagementPolicieId('mobilityManagementPolicy-id')->includedGroups()->ref()->post($requestBody);
 
 
 ```

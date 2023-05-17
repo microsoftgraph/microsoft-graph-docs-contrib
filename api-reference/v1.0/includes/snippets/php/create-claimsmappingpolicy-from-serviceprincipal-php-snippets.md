@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/policies/claimsMappi
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->claimsMappingPolicies()->ref()->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->claimsMappingPolicies()->ref()->post($requestBody);
 
 
 ```

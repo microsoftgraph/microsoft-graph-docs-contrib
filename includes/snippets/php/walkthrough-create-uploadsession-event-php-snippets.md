@@ -21,7 +21,7 @@ $attachmentItem->setSize(3483322);
 $requestBody->setAttachmentItem($attachmentItem);
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->createUploadSession()->post($requestBody);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->attachments()->createUploadSession()->post($requestBody);
 
 
 ```

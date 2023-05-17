@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->profile()->certificationsById('personCertification-id')->get();
+$result = $graphServiceClient->me()->profile()->certifications()->byCertificationId('personCertification-id')->get();
 
 
 ```

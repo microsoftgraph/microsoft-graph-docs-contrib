@@ -15,7 +15,7 @@ $queryParameters->filter = "bundle/album ne null";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->bundles()->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->bundles()->get($requestConfiguration);
 
 
 ```
