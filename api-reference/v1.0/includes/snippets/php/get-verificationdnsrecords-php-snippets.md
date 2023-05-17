@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->domainsById('domain-id')->verificationDnsRecords()->get();
+$result = $graphServiceClient->domains()->byDomainId('domain-id')->verificationDnsRecords()->get();
 
 
 ```

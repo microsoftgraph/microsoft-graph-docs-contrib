@@ -20,7 +20,7 @@ $requestBody->setExportStructure(new ExportFileStructure('directory'));
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->microsoftGraphEdiscoveryExport()->post($requestBody);
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->reviewSets()->byReviewSetId('reviewSet-id')->microsoftGraphEdiscoveryExport()->post($requestBody);
 
 
 ```
