@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an application credential activity in a given tenant. Contains information about the last usage time of an application credential.
+Represents an application credential activity in a given tenant. This resource contains information about the last usage time of an application credential.
 
 ## Methods
 
