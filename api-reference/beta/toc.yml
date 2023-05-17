@@ -15076,6 +15076,15 @@ items:
             items:
             - name: List
               href: api/relyingpartydetailedsummary-list.md
+        - name: Application credential activity
+          items:
+          - name: Application credential activity
+            href: resources/appcredentialsigninactivity.md
+            items:
+            - name: Get
+              href: api/appcredentialsigninactivity-get.md
+            - name: List
+              href: api/appcredentialsigninactivity-list.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
@@ -15089,25 +15098,7 @@ items:
             - name: List sign-in details
               href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
-              href: api/applicationsignindetailedsummary-get.md
-        - name: Service principal activity
-          items:
-          - name: Service principal activity 
-            href: resources/servicePrincipalSignInActivity.md
-            items:
-            - name: Get service principal activity
-              href: api/serviceprincipalsigninactivity-get.md
-            - name: List service principal activity
-              href: api/serviceprincipalsigninactivity-list.md
-        - name: Application credential activity
-          items:
-          - name: Application credential activity
-            href: resources/appCredentialSignInActivity.md
-            items:
-            - name: Get application credential activity
-              href: api/appcredentialsigninactivity-get.md
-            - name: List application credential activity
-              href: api/appcredentialsigninactivity-list.md           
+              href: api/applicationsignindetailedsummary-get.md          
         - name: Registration and usage
           items:
           - name: Overview
@@ -15149,6 +15140,15 @@ items:
               href: api/authenticationmethodsroot-list-userregistrationdetails.md
             - name: Get
               href: api/userregistrationdetails-get.md
+        - name: Service principal activity
+          items:
+          - name: Service principal activity 
+            href: resources/serviceprincipalsigninactivity.md
+            items:
+            - name: Get
+              href: api/serviceprincipalsigninactivity-get.md
+            - name: List
+              href: api/serviceprincipalsigninactivity-list.md 
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
