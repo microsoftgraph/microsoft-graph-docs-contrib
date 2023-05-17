@@ -14,7 +14,7 @@ $requestBody->setCancellationMessage('Your appointment has been successfully can
 
 
 
-$graphServiceClient->bookingBusinessesById('bookingBusiness-id')->appointmentsById('bookingAppointment-id')->cancel()->post($requestBody);
+$graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->appointments()->byAppointmentId('bookingAppointment-id')->cancel()->post($requestBody);
 
 
 ```

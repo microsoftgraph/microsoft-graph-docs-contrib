@@ -17,7 +17,7 @@ $queryParameters->filter = "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->messages()->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->get($requestConfiguration);
 
 
 ```

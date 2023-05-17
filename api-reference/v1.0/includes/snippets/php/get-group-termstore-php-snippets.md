@@ -15,7 +15,7 @@ $queryParameters->select = ["*","parentSiteId"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->termStore()->groupsById('group-id')->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->groups()->byGroupId('group-id')->get($requestConfiguration);
 
 
 ```
