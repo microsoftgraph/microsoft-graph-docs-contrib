@@ -15,7 +15,7 @@ $queryParameters->expand = ["attendanceRecords"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->attendanceReportsById('meetingAttendanceReport-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->attendanceReports()->byAttendanceReportId('meetingAttendanceReport-id')->get($requestConfiguration);
 
 
 ```

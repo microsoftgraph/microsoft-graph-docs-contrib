@@ -15,7 +15,7 @@ $queryParameters->id = "https://graph.microsoft.com/beta/users/{id}";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->groupsById('group-id')->rejectedSenders()->ref()->delete($requestConfiguration);
+$graphServiceClient->groups()->byGroupId('group-id')->rejectedSenders()->ref()->delete($requestConfiguration);
 
 
 ```

@@ -15,7 +15,7 @@ $requestBody->setAllowedCombinations([$requestBody->setAuthenticationMethodModes
 
 
 
-$result = $graphServiceClient->policies()->authenticationStrengthPoliciesById('authenticationStrengthPolicy-id')->updateAllowedCombinations()->post($requestBody);
+$result = $graphServiceClient->policies()->authenticationStrengthPolicies()->byAuthenticationStrengthPolicieId('authenticationStrengthPolicy-id')->updateAllowedCombinations()->post($requestBody);
 
 
 ```

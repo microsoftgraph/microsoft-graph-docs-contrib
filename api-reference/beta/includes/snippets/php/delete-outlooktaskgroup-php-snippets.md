@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->outlook()->taskGroupsById('outlookTaskGroup-id')->delete();
+$graphServiceClient->me()->outlook()->taskGroups()->byTaskGroupId('outlookTaskGroup-id')->delete();
 
 
 ```

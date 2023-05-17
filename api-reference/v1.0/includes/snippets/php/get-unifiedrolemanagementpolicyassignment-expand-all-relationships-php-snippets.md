@@ -15,7 +15,7 @@ $queryParameters->expand = ["policy($expand=rules)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->roleManagementPolicyAssignmentsById('unifiedRoleManagementPolicyAssignment-id')->get($requestConfiguration);
+$result = $graphServiceClient->policies()->roleManagementPolicyAssignments()->byRoleManagementPolicyAssignmentId('unifiedRoleManagementPolicyAssignment-id')->get($requestConfiguration);
 
 
 ```

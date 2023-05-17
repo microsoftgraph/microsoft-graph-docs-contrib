@@ -79,7 +79,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->put($requestBody);
+$graphServiceClient->identityGovernance()->accessReviews()->definitions()->byDefinitionId('accessReviewScheduleDefinition-id')->put($requestBody);
 
 
 ```
