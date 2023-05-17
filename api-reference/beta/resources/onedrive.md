@@ -80,7 +80,7 @@ This table provides an example of different ways to use the colon character to a
 | `/me/drive/root:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to the root of the user's OneDrive. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item. |
 
-For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems).
 
 ## Drive resource
 

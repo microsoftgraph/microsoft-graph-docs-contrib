@@ -4,15 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var meetingRegistration = new ExternalMeetingRegistration
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Me.OnlineMeetings.Item.Registration.RegistrationPostRequestBody
 {
-	AllowedRegistrant = MeetingAudience.Everyone
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"@odata.type" , "#microsoft.graph.externalMeetingRegistration"
+		},
+		{
+			"allowedRegistrant" , "everyone"
+		},
+	},
 };
+await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.PostAsync(requestBody);
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration
-	.Request()
-	.AddAsync(meetingRegistration);
 
 ```

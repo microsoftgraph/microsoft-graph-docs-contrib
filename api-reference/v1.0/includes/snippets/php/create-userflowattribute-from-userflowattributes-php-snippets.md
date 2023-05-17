@@ -18,7 +18,7 @@ $requestBody->setDataType(new IdentityUserFlowAttributeDataType('string'));
 
 
 
-$requestResult = $graphServiceClient->identity()->userFlowAttributes()->post($requestBody);
+$result = $graphServiceClient->identity()->userFlowAttributes()->post($requestBody);
 
 
 ```

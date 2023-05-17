@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Workflow workflow = new Workflow();
+workflow.category = LifecycleWorkflowCategory.JOINER;
 workflow.description = "Configure new hire tasks for onboarding employees on their first day";
 workflow.displayName = "Global onboard new hire employee";
 workflow.isEnabled = true;

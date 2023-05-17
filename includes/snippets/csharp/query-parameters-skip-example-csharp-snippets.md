@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var events = await graphClient.Me.Events
-	.Request()
-	.OrderBy("createdDateTime")
-	.Skip(20)
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.Events.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Orderby = new string []{ "createdDateTime" };
+	requestConfiguration.QueryParameters.Skip = 20;
+});
+
 
 ```

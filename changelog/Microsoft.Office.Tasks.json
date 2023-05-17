@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "90b9b42f-a66a-45b4-bb64-3f85e5045e81",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerbucket-delta?view=graph-rest-beta) method to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "90b9b42f-a66a-45b4-bb64-3f85e5045e81",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerplan-delta?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "90b9b42f-a66a-45b4-bb64-3f85e5045e81",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannertask-delta?view=graph-rest-beta) method to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "90b9b42f-a66a-45b4-bb64-3f85e5045e81",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-22T20:26:13.9106455Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "00a94d5e-7fce-4806-a873-a9f77fd58cdf",
           "ApiChange": "EnumType",
           "ChangedApiName": "plannerContextState",
@@ -1609,6 +1643,40 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-01-17T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Property",
+          "ChangedApiName": "recurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskRecurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskRecurrence?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskRecurrence"
+        },
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRecurrenceSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
+          "Target": "plannerRecurrenceSchedule"
+        }
+      ],
+      "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-11T17:34:22.542461Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     }

@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var query = "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Security
-	.RunHuntingQuery(query)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Security.MicrosoftGraphSecurityRunHuntingQuery.RunHuntingQueryPostRequestBody
+{
+	Query = "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2",
+};
+var result = await graphClient.Security.MicrosoftGraphSecurityRunHuntingQuery.PostAsync(requestBody);
+
 
 ```

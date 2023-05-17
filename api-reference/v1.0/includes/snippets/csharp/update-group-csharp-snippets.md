@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var group = new Group
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Group
 {
 	Description = "Library Assist",
 	DisplayName = "Library Assist",
-	GroupTypes = new List<String>()
+	GroupTypes = new List<string>
 	{
-		"Unified"
+		"Unified",
 	},
 	MailEnabled = true,
-	MailNickname = "library-help"
+	MailNickname = "library-help",
 };
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["{group-id}"]
-	.Request()
-	.UpdateAsync(group);
 
 ```

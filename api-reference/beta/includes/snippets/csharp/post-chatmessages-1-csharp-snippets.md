@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
-		Content = "Hello world"
-	}
+		Content = "Hello world",
+	},
 };
+var result = await graphClient.Chats["{chat-id}"].Messages.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"].Messages
-	.Request()
-	.AddAsync(chatMessage);
 
 ```

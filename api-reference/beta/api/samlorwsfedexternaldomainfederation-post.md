@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_samlorwsfedexternaldomainfederation_from_"
+  "name": "create_samlorwsfedexternaldomainfederation_from_e1"
 }
 -->
 
@@ -98,20 +98,23 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-samlorwsfedexternaldomainfederation-from--javascript-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-samlorwsfedexternaldomainfederation-from-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-samlorwsfedexternaldomainfederation-from--go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-samlorwsfedexternaldomainfederation-from-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-samlorwsfedexternaldomainfederation-from-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-samlorwsfedexternaldomainfederation-from--php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/create-samlorwsfedexternaldomainfederation-from-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

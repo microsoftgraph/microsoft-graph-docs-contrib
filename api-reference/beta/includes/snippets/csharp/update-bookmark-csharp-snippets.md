@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookmark = new Microsoft.Graph.Search.Bookmark
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 {
-	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
+	Description = "Book a fancy vacation in Tuscany or browse museums in Florence.",
 };
+var result = await graphClient.Search.Bookmarks["{bookmark-id}"].PatchAsync(requestBody);
 
-await graphClient.Search.Bookmarks["{search.bookmark-id}"]
-	.Request()
-	.UpdateAsync(bookmark);
 
 ```

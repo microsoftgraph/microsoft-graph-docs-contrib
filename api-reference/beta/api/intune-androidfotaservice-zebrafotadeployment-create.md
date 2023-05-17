@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/zebraFotaDeployments
 Content-type: application/json
-Content-length: 2024
+Content-length: 2079
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -106,6 +106,7 @@ Content-length: 2024
   "deploymentStatus": {
     "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
     "state": "createFailed",
+    "errorCode": "noDevicesFoundInSelectedAadGroups",
     "totalDevices": 12,
     "totalCreated": 12,
     "totalScheduled": 14,
@@ -128,7 +129,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2128
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeployment",
@@ -168,6 +169,7 @@ Content-Length: 2073
   "deploymentStatus": {
     "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
     "state": "createFailed",
+    "errorCode": "noDevicesFoundInSelectedAadGroups",
     "totalDevices": 12,
     "totalCreated": 12,
     "totalScheduled": 14,

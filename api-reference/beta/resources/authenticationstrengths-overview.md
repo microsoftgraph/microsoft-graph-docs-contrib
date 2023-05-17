@@ -2,7 +2,7 @@
 title: "Azure AD authentication strengths API overview"
 description: "Authentication strengths are sets of authentication method combinations that determine which methods your users can use to authenticate to access a resource."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "InbarckMS"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 12/10/2022
@@ -32,7 +32,7 @@ Azure AD supports both built-in and custom authentication strength policies. Mic
 
 * Multifactor authentication
 * Passwordless multifactor authentication
-* Phishing-resistant multifactor authentication
+* Phishing resistant multifactor authentication
 
 You can only read built-in policies, but you can create up to 15 custom policies to suit your requirements.
 
@@ -72,7 +72,7 @@ An authentication strength policy has zero or more combination configurations.
 
 ## Apply authentication strength policies in Conditional Access
 
-After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md). 
+After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md).
 
 In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in. Authentication strength policies can also be enforced for guest users through both conditional access policies and [cross-tenant access inbound trust settings](/graph/api/resources/crosstenantaccesspolicy-overview).
 

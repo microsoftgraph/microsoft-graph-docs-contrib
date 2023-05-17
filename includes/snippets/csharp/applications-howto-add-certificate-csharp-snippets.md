@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var application = new Application
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Application
 {
-	KeyCredentials = new List<KeyCredential>()
+	KeyCredentials = new List<KeyCredential>
 	{
 		new KeyCredential
 		{
@@ -17,13 +19,11 @@ var application = new Application
 			Type = "AsymmetricX509Cert",
 			Usage = "Verify",
 			Key = Convert.FromBase64String("base64MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgyMDIzMDExMjAeFw0yMzAxMTIwODExNTZaFw0yNDAxMTIwODMxNTZaMBMxETAPBgNVBAMMCDIwMjMwMTEyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseKf1weEacJ67D6/...laxQPUbuIL+DaXVkKRm1V3GgIpKTBqMzTf4tCpy7rpUZbhcwAFw6h9A=="),
-			DisplayName = "CN=20230112"
-		}
-	}
+			DisplayName = "CN=20230112",
+		},
+	},
 };
+var result = await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
-await graphClient.Applications["{application-id}"]
-	.Request()
-	.UpdateAsync(application);
 
 ```

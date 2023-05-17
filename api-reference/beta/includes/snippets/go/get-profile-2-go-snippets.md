@@ -4,13 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &graphconfig.MeProfileRequestBuilderGetQueryParameters{
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphconfig.ItemProfileRequestBuilderGetQueryParameters{
 	Expand: [] string {"names($select=first,last)","skills($select=displayName)"},
 }
-configuration := &graphconfig.MeProfileRequestBuilderGetRequestConfiguration{
+configuration := &graphconfig.ItemProfileRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

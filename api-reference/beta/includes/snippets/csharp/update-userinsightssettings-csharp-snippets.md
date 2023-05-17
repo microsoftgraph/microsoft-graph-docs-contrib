@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userInsightsSettings = new UserInsightsSettings
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UserInsightsSettings
 {
-	IsEnabled = false
+	IsEnabled = false,
 };
+var result = await graphClient.Users["{user-id}"].Settings.ItemInsights.PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Settings.ItemInsights
-	.Request()
-	.UpdateAsync(userInsightsSettings);
 
 ```

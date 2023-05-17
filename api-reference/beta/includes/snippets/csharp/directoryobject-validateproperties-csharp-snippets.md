@@ -4,19 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var entityType = "Group";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var displayName = "Myprefix_test_mysuffix";
+var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.ValidateProperties.ValidatePropertiesPostRequestBody
+{
+	EntityType = "Group",
+	DisplayName = "Myprefix_test_mysuffix",
+	MailNickname = "Myprefix_test_mysuffix",
+	OnBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value"),
+};
+await graphClient.DirectoryObjects.ValidateProperties.PostAsync(requestBody);
 
-var mailNickname = "Myprefix_test_mysuffix";
-
-var onBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value");
-
-await graphClient.DirectoryObjects
-	.ValidateProperties(entityType,displayName,mailNickname,onBehalfOfUserId)
-	.Request()
-	.PostAsync();
 
 ```

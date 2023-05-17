@@ -4,25 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var connectedOrganization = new ConnectedOrganization
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ConnectedOrganization
 {
 	DisplayName = "Connected organization name",
 	Description = "Connected organization description",
-	IdentitySources = new List<IdentitySource>()
+	IdentitySources = new List<IdentitySource>
 	{
-		new DomainIdentitySource
+		new IdentitySource
 		{
-			DomainName = "example.com",
-			DisplayName = "example.com"
-		}
+			OdataType = "#microsoft.graph.domainIdentitySource",
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"domainName" , "example.com"
+				},
+				{
+					"displayName" , "example.com"
+				},
+			},
+		},
 	},
-	State = ConnectedOrganizationState.Proposed
+	State = ConnectedOrganizationState.Proposed,
 };
+var result = await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations
-	.Request()
-	.AddAsync(connectedOrganization);
 
 ```

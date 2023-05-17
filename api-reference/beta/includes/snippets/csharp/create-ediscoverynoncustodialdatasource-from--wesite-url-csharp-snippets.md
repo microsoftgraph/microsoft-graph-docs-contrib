@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ediscoveryNoncustodialDataSource = new Microsoft.Graph.Security.EdiscoveryNoncustodialDataSource
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryNoncustodialDataSource
 {
-	DataSource = new SiteSource
+	DataSource = new Microsoft.Graph.Beta.Models.Security.DataSource
 	{
-		Site = new Site
+		OdataType = "microsoft.graph.security.siteSource",
+		AdditionalData = new Dictionary<string, object>
 		{
-			WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret"
-		}
-	}
+			{
+				"site" , new 
+				{
+					WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
+				}
+			},
+		},
+	},
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].NoncustodialDataSources
-	.Request()
-	.AddAsync(ediscoveryNoncustodialDataSource);
 
 ```

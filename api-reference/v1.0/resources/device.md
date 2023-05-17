@@ -24,6 +24,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |[List devices](../api/device-list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device-update.md) | [device](device.md) |Update the properties of a device object. |
 |[Delete device](../api/device-delete.md) | None |Delete a device object. |
+|[delta](../api/device-delta.md)|[device](device.md) collection| Get incremental changes for devices. |
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
@@ -47,10 +48,13 @@ This resource is an open type that allows other properties to be passed in. You 
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderBy`. |
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+|deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
 |deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |deviceMetadata|String| For internal use only. Set to `null`. |
+|deviceOwnership|String|Ownership of the device. This property is set by Intune. Possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
 |displayName|String|The display name for the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.  |
+|enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. This property is set by Intune.|
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extension attributes 1-15 for the device. The individual extension attributes are not selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Azure AD. <br><br>Supports `$filter` (`eq`, `not`, `startsWith`, and `eq` on `null` values). |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`).|
@@ -64,6 +68,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |operatingSystemVersion|String|The version of the operating system on the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
 |physicalIds|String collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`,`/$count eq 0`, `/$count ne 0`). |
 |profileType|deviceProfileType|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
+|registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values:  `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Azure AD). For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
@@ -72,7 +77,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this device is a member of. Read-only. Nullable. Supports `$expand`. |
-|registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports `$expand`.  |
+|registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports `$expand`.  |
 |registeredUsers|[directoryObject](directoryobject.md) collection|Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports `$expand`. |
 |transitiveMemberOf |[directoryObject](directoryobject.md) collection| Groups and administrative units that the device is a member of. This operation is transitive. Supports `$expand`.  |
 
@@ -99,10 +104,13 @@ Here is a JSON representation of the resource
   "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "complianceExpirationDateTime": "String (timestamp)",
+  "deviceCategory": "string",
   "deviceId": "string",
   "deviceMetadata": "string",
+  "deviceOwnership": "string",
   "deviceVersion": 1024,
   "displayName": "string",
+  "enrollmentProfileName": "string",
   "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "id": "string (identifier)",
   "isCompliant": true,
@@ -116,6 +124,7 @@ Here is a JSON representation of the resource
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
   "profileType": "string",
+  "registrationDateTime": "String (timestamp)",
   "systemLabels": ["string"],
   "trustType": "string"
 }

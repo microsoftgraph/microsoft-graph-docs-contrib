@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	Participants = @(
+	participants = @(
 		""
 	)
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
 
 Invoke-MgMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params

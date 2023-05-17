@@ -72,24 +72,24 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-2-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-openshift-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshift-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-openshift-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-openshift-2-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-openshift-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-openshift-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,55 +112,55 @@ Content-type: application/json
 
 {
   "value": [
-  {
-  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "sharedOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":2,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T09:50:45.332Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T01:58:45.340Z",
-  "code": "",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "draftOpenShift": {
-  "notes": "Inventory Management",
-  "openSlotCount":3,
-  "displayName": "Day shift",
-  "startDateTime": "2018-10-04T00:58:45.332Z",
-  "endDateTime": "2018-10-04T08:58:45.340Z",
-  "theme": "white",
-  "activities": [
-  {
-  "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T07:58:45.332Z",
-  "code": "Break",
-  "displayName": "Lunch"
-  }
-  ]
-  },
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-  "application": null,
-  "device": null,
-  "conversation": null,
-  "user": {
-  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-  "displayName": "John Doe"
-  }
-  }
-  }
+    {
+      "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
+      "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+      "sharedOpenShift": {
+        "notes": "Inventory Management",
+        "openSlotCount": 2,
+        "displayName": "Day shift",
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T09:50:45.332Z",
+        "theme": "white",
+        "activities": [
+          {
+            "isPaid": true,
+            "startDateTime": "2018-10-04T00:58:45.340Z",
+            "endDateTime": "2018-10-04T01:58:45.340Z",
+            "code": "",
+            "displayName": "Lunch"
+          }
+        ]
+      },
+      "draftOpenShift": {
+        "notes": "Inventory Management",
+        "openSlotCount": 3,
+        "displayName": "Day shift",
+        "startDateTime": "2018-10-04T00:58:45.332Z",
+        "endDateTime": "2018-10-04T08:58:45.340Z",
+        "theme": "white",
+        "activities": [
+          {
+            "isPaid": true,
+            "startDateTime": "2018-10-04T00:58:45.340Z",
+            "endDateTime": "2018-10-04T07:58:45.332Z",
+            "code": "Break",
+            "displayName": "Lunch"
+          }
+        ]
+      },
+      "createdDateTime": "2019-03-14T04:32:51.451Z",
+      "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+          "displayName": "John Doe"
+        }
+      }
+    }
   ]
 }
 ```

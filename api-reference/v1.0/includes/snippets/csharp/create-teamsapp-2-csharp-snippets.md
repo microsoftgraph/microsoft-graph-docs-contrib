@@ -1,14 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
 ```csharp
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var queryOptions = new List<QueryOption>()
+// Code snippets are only available for the latest version. Current version is 5.x
+
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.AppCatalogs.TeamsApps.PostAsync((requestConfiguration) =>
 {
-	new QueryOption("requiresReview", "true")
-};
+ requestConfiguration.QueryParameters.Requiresreview = true;
+});
 
-var teamsApp = [Zip file containing a Teams app package];
 
-await graphClient.AppCatalogs.TeamsApps
-	.Request( queryOptions )
-	.AddAsync(teamsApp);
 ```

@@ -31,31 +31,28 @@ This example shows how to send multiple requests in a batch that are not depende
 ```csharp
 // Use the request builder to generate a regular
 // request to /me
-var userRequest = graphClient.Me.Request();
+var userRequest = graphClient.Me.ToGetRequestInformation();
 
 var today = DateTime.Now.Date;
-var start = today.ToString("yyyy-MM-ddTHH:mm:ssK");
-var end = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
-
-var queryOptions = new List<QueryOption>
-{
-    new QueryOption("startDateTime", start),
-    new QueryOption("endDateTime", end)
-};
 
 // Use the request builder to generate a regular
 // request to /me/calendarview?startDateTime="start"&endDateTime="end"
-var eventsRequest = graphClient.Me.CalendarView.Request(queryOptions);
+var eventsRequest = graphClient.Me.CalendarView
+    .ToGetRequestInformation(requestConfiguration => 
+        {
+            requestConfiguration.QueryParameters.StartDateTime = today.ToString("yyyy-MM-ddTHH:mm:ssK");
+            requestConfiguration.QueryParameters.EndDateTime = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
+        });
 
 // Build the batch
-var batchRequestContent = new BatchRequestContent();
+var batchRequestContent = new BatchRequestContent(graphClient);
 
-// Using AddBatchRequestStep adds each request as a step
+// Using AddBatchRequestStepAsync adds each request as a step
 // with no specified order of execution
-var userRequestId = batchRequestContent.AddBatchRequestStep(userRequest);
-var eventsRequestId = batchRequestContent.AddBatchRequestStep(eventsRequest);
+var userRequestId = await batchRequestContent.AddBatchRequestStepAsync(userRequest);
+var eventsRequestId = await batchRequestContent.AddBatchRequestStepAsync(eventsRequest);
 
-var returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+var returnedResponse = await graphClient.Batch.PostAsync(batchRequestContent);
 
 // De-serialize response based on known return type
 try
@@ -75,8 +72,8 @@ catch (ServiceException ex)
 try
 {
     var events = await returnedResponse
-        .GetResponseByIdAsync<UserCalendarViewCollectionResponse>(eventsRequestId);
-    Console.WriteLine($"You have {events.Value.CurrentPage.Count} events on your calendar today.");
+        .GetResponseByIdAsync<EventCollectionResponse>(eventsRequestId);
+    Console.WriteLine($"You have {events.Value.Count} events on your calendar today.");
 }
 catch (ServiceException ex)
 {
@@ -281,46 +278,37 @@ var newEvent = new Event
     }
 };
 
-// POST requests are handled a bit differently
-// The SDK request builders generate GET requests, so
-// you must get the HttpRequestMessage and convert to a POST
-var jsonEvent = graphClient.HttpProvider.Serializer.SerializeAsJsonContent(newEvent);
-
-var addEventRequest = graphClient.Me.Events.Request().GetHttpRequestMessage();
-addEventRequest.Method = HttpMethod.Post;
-addEventRequest.Content = jsonEvent;
-
-var start = today.ToString("yyyy-MM-ddTHH:mm:ssK");
-var end = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
-
-var queryOptions = new List<QueryOption>
-{
-    new QueryOption("startDateTime", start),
-    new QueryOption("endDateTime", end)
-};
+// Use the request builder to generate a regular
+// POST request to /me/events
+var addEventRequest = graphClient.Me.Events.ToPostRequestInformation(newEvent);
 
 // Use the request builder to generate a regular
 // request to /me/calendarview?startDateTime="start"&endDateTime="end"
-var calendarViewRequest = graphClient.Me.CalendarView.Request(queryOptions);
+var calendarViewRequest = graphClient.Me.CalendarView.ToGetRequestInformation(
+    requestConfiguration => {
+        requestConfiguration.QueryParameters.StartDateTime = today.ToString("yyyy-MM-ddTHH:mm:ssK");
+        requestConfiguration.QueryParameters.EndDateTime = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
+    });
 
 // Build the batch
-var batchRequestContent = new BatchRequestContent();
+var batchRequestContent = new BatchRequestContent(graphClient);
 
 // Force the requests to execute in order, so that the request for
 // today's events will include the new event created.
 
 // First request, no dependency
-var addEventRequestId = batchRequestContent.AddBatchRequestStep(addEventRequest);
+var addEventRequestId = await batchRequestContent.AddBatchRequestStepAsync(addEventRequest);
 
 // Second request, depends on addEventRequestId
 var eventsRequestId = Guid.NewGuid().ToString();
+var eventsRequestMessage = await graphClient.RequestAdapter.ConvertToNativeRequestAsync<HttpRequestMessage>(calendarViewRequest);
 batchRequestContent.AddBatchRequestStep(new BatchRequestStep(
     eventsRequestId,
-    calendarViewRequest.GetHttpRequestMessage(),
+    eventsRequestMessage,
     new List<string> { addEventRequestId }
 ));
 
-var returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+var returnedResponse = await graphClient.Batch.PostAsync(batchRequestContent);
 
 // De-serialize response based on known return type
 try
@@ -340,8 +328,8 @@ catch (ServiceException ex)
 try
 {
     var events = await returnedResponse
-        .GetResponseByIdAsync<UserCalendarViewCollectionResponse>(eventsRequestId);
-    Console.WriteLine($"You have {events.Value.CurrentPage.Count} events on your calendar today.");
+        .GetResponseByIdAsync<EventCollectionResponse>(eventsRequestId);
+    Console.WriteLine($"You have {events.Value.Count} events on your calendar today.");
 }
 catch (ServiceException ex)
 {
@@ -609,11 +597,11 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
     {
         //valid GraphAccessToken is required to execute the call
         var graphClient = GetAuthenticatedClient(GraphAccessToken);
-        var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+        var events = new List<OnlineMeeting>();
         foreach (var item in meetingLinksToBeGenerated)
         {
             var externalId = Guid.NewGuid().ToString();
-            var @event = new OnlineMeetingCreateOrGetRequestBody
+            var @event = new OnlineMeeting
             {
                 StartDateTime = item.StartTime,
                 EndDateTime = item.EndTime,
@@ -625,8 +613,8 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
         }
         // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
         List<BatchRequestContent> batches = new List<BatchRequestContent>();
-        var batchRequestContent = new BatchRequestContent();
-        foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+        var batchRequestContent = new BatchRequestContent(graphClient);
+        foreach (OnlineMeeting e in events)
         {
             //create online meeting for particular user or we can use /me as well
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
@@ -638,7 +626,7 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
             if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
             {
                 batches.Add(batchRequestContent);
-                batchRequestContent = new BatchRequestContent();
+                batchRequestContent = new BatchRequestContent(graphClient);
             }
         }
         if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
@@ -671,5 +659,6 @@ public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksT
         Console.WriteLine(ex.Message + ex.StackTrace);
     }
 }
+
 
 ```

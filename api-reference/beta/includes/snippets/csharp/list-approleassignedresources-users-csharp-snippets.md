@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.AppRoleAssignedResources.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","accountEnabled","servicePrincipalType","signInAudience" };
+	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
+});
 
-var appRoleAssignedResources = await graphClient.Me.AppRoleAssignedResources
-	.Request( queryOptions )
-	.Header("ConsistencyLevel","eventual")
-	.Select("displayName,accountEnabled,servicePrincipalType,signInAudience")
-	.GetAsync();
 
 ```

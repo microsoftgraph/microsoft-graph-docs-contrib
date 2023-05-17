@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 Represents a user in a [team](team.md) or a [channel](channel.md) or a [chat](chat.md).
 
+Base type for the following supported conversation member types:
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [anonymousGuestConversationMember](anonymousguestconversationmember.md)
+- [azureCommunicationServicesUserConversationMember](azurecommunicationservicesuserconversationmember.md)
+- [microsoftAccountUserConversationMember](microsoftaccountuserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeforbusinessuserconversationmember.md)
+- [skypeUserConversationMember](skypeuserconversationmember.md)
+
 ## Methods
 
 | Method       | Return Type  |Description|

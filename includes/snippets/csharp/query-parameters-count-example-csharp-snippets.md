@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.Contacts.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("$count", "true")
-};
+	requestConfiguration.QueryParameters.Count = true;
+});
 
-var contacts = await graphClient.Me.Contacts
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

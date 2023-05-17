@@ -4,28 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var contact = new Contact
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Contact
 {
 	GivenName = "Pavel",
 	Surname = "Bansky",
-	EmailAddresses = new List<EmailAddress>()
+	EmailAddresses = new List<EmailAddress>
 	{
 		new EmailAddress
 		{
 			Address = "pavelb@fabrikam.onmicrosoft.com",
-			Name = "Pavel Bansky"
-		}
+			Name = "Pavel Bansky",
+		},
 	},
-	BusinessPhones = new List<String>()
+	BusinessPhones = new List<string>
 	{
-		"+1 732 555 0102"
-	}
+		"+1 732 555 0102",
+	},
 };
+var result = await graphClient.Me.Contacts.PostAsync(requestBody);
 
-await graphClient.Me.Contacts
-	.Request()
-	.AddAsync(contact);
 
 ```

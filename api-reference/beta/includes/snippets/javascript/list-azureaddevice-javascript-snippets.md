@@ -10,9 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let updatableAssets = await client.api('/admin/windows/updates/updatableAssets/')
+let azureADDevice = await client.api('/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice')
 	.version('beta')
-	.filter('isof(\'microsoft.graph.windowsUpdates.azureADDevice\')')
 	.get();
 
 ```

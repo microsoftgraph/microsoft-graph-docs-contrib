@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var delta = await graphClient.Me.ContactFolders
-	.Delta()
-	.Request()
-	.Header("Prefer","odata.maxpagesize=2")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.ContactFolders.Delta.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
+});
+
 
 ```

@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ids = new List<String>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.MicrosoftGraphWindowsUpdatesRemoveMembersById.RemoveMembersByIdPostRequestBody
 {
-	"String",
-	"String",
-	"String"
+	Ids = new List<string>
+	{
+		"String",
+		"String",
+		"String",
+	},
+	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice",
 };
+await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].MicrosoftGraphWindowsUpdatesRemoveMembersById.PostAsync(requestBody);
 
-var memberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice";
-
-await graphClient.Admin.Windows.Updates.UpdatableAssets["{windowsUpdates.updatableAsset-id}"]
-	.RemoveMembersById(ids,memberEntityType)
-	.Request()
-	.PostAsync();
 
 ```

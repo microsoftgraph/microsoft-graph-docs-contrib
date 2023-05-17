@@ -1,7 +1,7 @@
 ---
 title: "meetingRegistration resource type"
 description: "Contains information about online meeting registration."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

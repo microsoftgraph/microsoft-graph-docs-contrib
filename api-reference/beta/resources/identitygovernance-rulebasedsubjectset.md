@@ -25,7 +25,7 @@ Inherits from [subjectSet](../resources/subjectset.md).
 
 ### Supported user properties and query parameters
 
-Lifecycle Workflows supports the following [user properties](user.md#properties) for configuring the rules that are in the scope of an execution condition. You can use the `$filter` OData query parameter with either the `eq`, `ne`, `in`, or `startsWith` operators. You can also combine the filter expressions using one of the following conjunction and disjunction operators:
+Lifecycle Workflows supports the following user properties for configuring the rules that are in the scope of an execution condition. You can use the `$filter` OData query parameter with either the `eq`, `ne`, `in`, or `startsWith` operators. You can also combine the filter expressions using one of the following conjunction and disjunction operators:
 + `and`
 + `or`
 + `and` and `not`
@@ -74,8 +74,8 @@ You can also configure rules using [Directory (Azure AD) extensions](/graph/exte
 | Example rule                                                           | Description                                                                             |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | `"rule": "(department eq 'Marketing')"`                                | Run the workflow for users in the "Marketing" department.                               |
-| `"rule": "(department ne 'Marketing')"`                                | Run the workflow for users not the "Marketing" department.                              |
-| `"rule": "(department in ('Marketing'))"`                              | Run the workflow for users not the "Marketing" department.                              |
+| `"rule": "(department ne 'Marketing')"`                                | Run the workflow for users not in the "Marketing" department.                           |
+| `"rule": "(department in ('Marketing'))"`                              | Run the workflow for users in the "Marketing" department.                               |
 | `"rule": "(accountEnabled eq true)"`                                   | Run the workflow for users whose account is enabled.                                    |
 | `"rule": "(employeeOrgData/costCenter eq '100')"`                      | Run the workflow for users whose costCenter is `100`.                                   |
 | `"rule": "(otherMails/any(p:startsWith(p, 'Av')))"`                    | Run the workflow for users whose **otherMails** starts with `Av`.                       |

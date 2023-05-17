@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationClass = new EducationClass
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new EducationClass
 {
+	OdataType = "#microsoft.graph.educationClass",
 	DisplayName = "String",
 	MailNickname = "String",
 	Description = "String",
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
 	ClassCode = "String",
 	ExternalName = "String",
@@ -22,11 +26,10 @@ var educationClass = new EducationClass
 	Grade = "String",
 	Term = new EducationTerm
 	{
-	}
+		OdataType = "microsoft.graph.educationTerm",
+	},
 };
+var result = await graphClient.Education.Classes.PostAsync(requestBody);
 
-await graphClient.Education.Classes
-	.Request()
-	.AddAsync(educationClass);
 
 ```

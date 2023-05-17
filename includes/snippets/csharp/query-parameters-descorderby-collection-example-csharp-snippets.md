@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var messages = await graphClient.Me.MailFolders["{mailFolder-id}"].Messages
-	.Request()
-	.OrderBy("from/emailAddress/name desc,subject")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].Messages.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Orderby = new string []{ "from/emailAddress/name desc","subject" };
+});
+
 
 ```

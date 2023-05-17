@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplication -Search "displayName:Browser" 
+Get-MgApplication -Search '"displayName:Browser"' 
 
 ```

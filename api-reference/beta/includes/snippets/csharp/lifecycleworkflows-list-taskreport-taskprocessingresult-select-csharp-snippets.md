@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var taskProcessingResults = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"].TaskReports["{identityGovernance.taskReport-id}"].TaskProcessingResults
-	.Request()
-	.Select("id,failureReason,processingStatus,subject,task")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].TaskReports["{taskReport-id}"].TaskProcessingResults.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "id","failureReason","processingStatus","subject","task" };
+});
+
 
 ```

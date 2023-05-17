@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->delete();
+$graphServiceClient->security()->attackSimulation()->simulations()->bySimulationId('simulation-id')->delete();
 
 
 ```
