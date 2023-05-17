@@ -77,8 +77,12 @@ You can use several properties to customize the component.
 
 The `mgt-person` component defines the following CSS custom properties.
 
+```html
+<mgt-person class="person" person-query="me" view="fourlines" id="online" show-presence></mgt-person>
+```
+
 ```css
-mgt-person {
+.person {
   --person-background-color: #616161;
   --person-background-border-radius: 30%;
   --person-avatar-size: 40px;

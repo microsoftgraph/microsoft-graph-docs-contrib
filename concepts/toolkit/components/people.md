@@ -47,8 +47,12 @@ The following example sets the maximum number of people to show.
 
 The `mgt-people` component defines the following CSS custom properties.
 
+```html
+<mgt-people class="people"></mgt-people>
+```
+
 ```css
-mgt-people {
+.people {
   --people-list-margin: 12px;
   --people-avatar-gap: 8px;
   --people-overflow-font-color: orange;

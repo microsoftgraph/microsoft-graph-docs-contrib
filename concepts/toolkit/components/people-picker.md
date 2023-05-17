@@ -98,8 +98,12 @@ For more information about handling events, see [events](../customize-components
 
 The `mgt-people-picker` component defines the following CSS custom properties.
 
+```html
+<mgt-people-picker class="people-picker"></mgt-people-picker>
+```
+
 ```css
-mgt-people-picker {
+.people-picker {
   --people-picker-selected-option-background-color: orange;
   --people-picker-selected-option-highlight-background-color: red;
   --people-picker-dropdown-background-color: blue;

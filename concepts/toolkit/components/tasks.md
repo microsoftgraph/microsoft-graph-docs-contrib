@@ -50,8 +50,11 @@ taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
 
 ## Custom CSS variables
 
+```html
+<mgt-tasks class="tasks"></mgt-tasks>
+```
 ```css
-mgt-tasks {
+.tasks {
   --tasks-header-padding: 28px 14px;
   --tasks-header-margin: 0 14px;
   --tasks-header-font-size: large;
