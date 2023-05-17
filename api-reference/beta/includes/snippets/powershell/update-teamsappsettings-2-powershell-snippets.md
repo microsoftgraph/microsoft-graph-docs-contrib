@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
-	AllowUserRequestsForAppAccess = "true"
+	allowUserRequestsForAppAccess = "true"
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params

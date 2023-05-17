@@ -1645,6 +1645,40 @@
       "CreatedDateTime": "2023-01-17T00:00:00",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Property",
+          "ChangedApiName": "recurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskRecurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskRecurrence?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskRecurrence"
+        },
+        {
+          "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRecurrenceSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
+          "Target": "plannerRecurrenceSchedule"
+        }
+      ],
+      "Id": "eaa1c592-65d5-4902-8473-1888a6b4594e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-12-11T17:34:22.542461Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }

@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = "text"
-			Content = "I attached a reference to a file on OneDrive."
+	post = @{
+		body = @{
+			contentType = "text"
+			content = "I attached a reference to a file on OneDrive."
 		}
-		Attachments = @(
+		attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.referenceAttachment"
-				Name = "Personal pictures"
-				SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
-				ProviderType = "oneDriveConsumer"
-				Permission = "Edit"
-				IsFolder = "True"
+				name = "Personal pictures"
+				sourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics"
+				providerType = "oneDriveConsumer"
+				permission = "Edit"
+				isFolder = "True"
 			}
 		)
 	}

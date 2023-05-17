@@ -7,7 +7,7 @@ ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 03/23/2022
+ms.date: 04/20/2023
 ---
 
 # Set up notifications for changes in resource data
@@ -30,9 +30,9 @@ Change notifications follow an event-driven model where customers receive alerts
 
 Microsoft Graph supports three types of change notifications:
 
-- Basic notifications: Change notifications that don't contain resource data other than the **id** of the resource that changed. All Microsoft Graph resources support basic notifications. When an app receives a basic notification, the service can use the **id** to query to changed object.
-- Rich notifications: Change notifications that include the resource data of the object that changed. For the list of Microsoft Graph resources that support rich notifications, see [supported resources](#supported-resources).
-- Lifecycle notifications: Notifications that alert the customer when they are at risk of missing change notification due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./webhooks-lifecycle.md).
+- **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. All Microsoft Graph resources support basic notifications. When an app receives a basic notification, the service can use the **id** to query to changed object.
+- **Rich notifications**: Change notifications that include the resource data of the object that changed. For the list of Microsoft Graph resources that support rich notifications, see [supported resources](#supported-resources).
+- **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./webhooks-lifecycle.md).
 
 ## Supported resources
 
@@ -42,8 +42,9 @@ Microsoft Graph supports three types of change notifications:
 
 Microsoft Graph can deliver change notifications to clients via the following channels.
 
-- Webhooks. For more information, see [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
-- Azure Event Hubs. For more information, see [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
+- **Webhooks**. For more information, see [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
+- **Azure Event Hubs**. For more information, see [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
+- **Azure Event Grid** (preview). For more information, see [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
 
 ## Subscription lifetime
 
@@ -61,8 +62,9 @@ You manage the subscription using the [subscription resource type](/graph/api/re
 
 For more information about managing subscriptions for the different delivery channels using Microsoft Graph, see the following articles.
 
-- [Receive change notification through webhooks](./change-notifications-delivery-webhooks.md).
-- [Receive change notification through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
+- [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
+- [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext) (preview).
 
 ## Code samples
 
@@ -81,6 +83,7 @@ The following code samples are available on GitHub.
 
 - [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
 - [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
+- [Get change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext)
 - [Rich notifications (notifications with resource data)](./webhooks-with-resource-data.md)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 - Tutorials

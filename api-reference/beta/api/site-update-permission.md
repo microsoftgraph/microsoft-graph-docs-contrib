@@ -19,11 +19,11 @@ Update the [permission](../resources/permission.md) object on a site.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -52,14 +52,17 @@ If successful, this method returns a `200 OK` response code and a [permission](.
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_permission_from_"
+  "name": "update_permission_from_",
+  "sampleKeys": ["f2d90359-865b-4b6c-8848-d2722dd630e5", "2"]
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
+PATCH https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/2
 Content-Type: application/json
 
 {
@@ -71,29 +74,31 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-from--javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-permission-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-permission-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-permission-from--powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-permission-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-permission-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -106,27 +111,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "id":"2",
-   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-   "roles":[
-      "read"
-   ],
-   "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Fabrikam Dashboard App"
-         }
+  "id": "2",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "roles": [
+    "read"
+  ],
+  "grantedToIdentities": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
       }
-   ],
-  "grantedToIdentitiesV2":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Fabrikam Dashboard App"
-         }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
       }
-   ]
+    }
+  ]
 }
 ```
 

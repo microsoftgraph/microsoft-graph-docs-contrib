@@ -64,14 +64,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcServicePlan",
-  "id": "String (identifier)",
   "displayName": "String",
-  "type": "String",
-  "vCpuCount": "Int32",
+  "id": "String (identifier)",
+  "provisioningType": "String",
   "ramInGB": "Int32",
   "storageInGB": "Int32",
-  "userProfileInGB": "Int32",
   "supportedSolution": "String",
-  "provisioningType": "String"
+  "type": "String",
+  "userProfileInGB": "Int32",
+  "vCpuCount": "Int32"
 }
 ```

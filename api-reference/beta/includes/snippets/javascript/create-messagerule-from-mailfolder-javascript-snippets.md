@@ -32,7 +32,7 @@ const messageRule = {
      }    
 };
 
-await client.api('/me/mailFolders/inbox/messagerules')
+await client.api('/me/mailFolders/inbox/messageRules')
 	.version('beta')
 	.post(messageRule);
 

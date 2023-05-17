@@ -4,7 +4,6 @@ ms.author: ombongifaith
 ms.reviewer: jumasure
 ms.prod: "change-notifications"
 ms.topic: include
-ms.date: 02/23/2022
 ms.localizationpriority: high
 ---
 
@@ -37,3 +36,24 @@ The following table lists the latency to expect between an event happening in th
 | [user][]                | Less than 2 minutes  | 15 minutes      |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
+
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[presence]: /graph/api/resources/presence
+[chatMessage]: /graph/api/resources/chatmessage
+[list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
+[channel]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
+[conversationMember]: /graph/api/resources/conversationmember
+[team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting
