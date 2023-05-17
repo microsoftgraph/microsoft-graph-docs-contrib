@@ -18,7 +18,7 @@ $membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversation
 $membersConversationMember1->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
+	'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 
@@ -43,7 +43,7 @@ $requestBody->setMembers($membersArray);
 
 
 
-$requestResult = $graphServiceClient->chats()->post($requestBody);
+$result = $graphServiceClient->chats()->post($requestBody);
 
 
 ```

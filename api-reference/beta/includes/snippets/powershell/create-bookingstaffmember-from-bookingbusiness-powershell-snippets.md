@@ -8,82 +8,82 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingStaffMember"
-	ColorIndex = 1
-	DisplayName = "Dana Swope"
-	EmailAddress = "danas@contoso.com"
-	"Role@odata.type" = "#microsoft.graph.bookingStaffRole"
-	Role = "externalGuest"
-	TimeZone = "America/Chicago"
-	UseBusinessHours = $true
-	"WorkingHours@odata.type" = "#Collection(microsoft.graph.bookingWorkHours)"
-	WorkingHours = @(
+	colorIndex = 1
+	displayName = "Dana Swope"
+	emailAddress = "danas@contoso.com"
+	"role@odata.type" = "#microsoft.graph.bookingStaffRole"
+	role = "externalGuest"
+	timeZone = "America/Chicago"
+	useBusinessHours = $true
+	"workingHours@odata.type" = "#Collection(microsoft.graph.bookingWorkHours)"
+	workingHours = @(
 		@{
 			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "monday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
+			"day@odata.type" = "#microsoft.graph.dayOfWeek"
+			day = "monday"
+			"timeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			timeSlots = @(
 				@{
 					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					End = "17:00:00.0000000"
-					Start = "08:00:00.0000000"
+					end = "17:00:00.0000000"
+					start = "08:00:00.0000000"
 				}
 			)
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "tuesday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
+			"day@odata.type" = "#microsoft.graph.dayOfWeek"
+			day = "tuesday"
+			"timeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			timeSlots = @(
 				@{
 					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					End = "17:00:00.0000000"
-					Start = "08:00:00.0000000"
+					end = "17:00:00.0000000"
+					start = "08:00:00.0000000"
 				}
 			)
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "wednesday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
+			"day@odata.type" = "#microsoft.graph.dayOfWeek"
+			day = "wednesday"
+			"timeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			timeSlots = @(
 				@{
 					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					End = "17:00:00.0000000"
-					Start = "08:00:00.0000000"
+					end = "17:00:00.0000000"
+					start = "08:00:00.0000000"
 				}
 			)
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "thursday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
+			"day@odata.type" = "#microsoft.graph.dayOfWeek"
+			day = "thursday"
+			"timeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			timeSlots = @(
 				@{
 					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					End = "17:00:00.0000000"
-					Start = "08:00:00.0000000"
+					end = "17:00:00.0000000"
+					start = "08:00:00.0000000"
 				}
 			)
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "friday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
+			"day@odata.type" = "#microsoft.graph.dayOfWeek"
+			day = "friday"
+			"timeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
+			timeSlots = @(
 				@{
 					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					End = "17:00:00.0000000"
-					Start = "08:00:00.0000000"
+					end = "17:00:00.0000000"
+					start = "08:00:00.0000000"
 				}
 			)
 		}
 	)
-	IsEmailNotificationEnabled = $false
+	isEmailNotificationEnabled = $false
 }
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params

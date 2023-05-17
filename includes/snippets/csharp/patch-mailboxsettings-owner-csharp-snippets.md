@@ -4,18 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mailboxSettings = new MailboxSettings
+var requestBody = new MailboxSettings
 {
-	DelegateMeetingMessageDeliveryOptions = DelegateMeetingMessageDeliveryOptions.SendToDelegateAndPrincipal
+	DelegateMeetingMessageDeliveryOptions = DelegateMeetingMessageDeliveryOptions.SendToDelegateAndPrincipal,
 };
+var result = await graphClient.Users["{user-id}"].MailboxSettings.PatchAsync(requestBody);
 
-var users = new User();
-users.MailboxSettings = mailboxSettings;
-
-await graphClient.Users["{user-id}"]
-	.Request()
-	.UpdateAsync(users);
 
 ```

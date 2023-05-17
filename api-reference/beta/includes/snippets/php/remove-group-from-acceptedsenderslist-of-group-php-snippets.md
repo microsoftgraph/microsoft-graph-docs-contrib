@@ -10,10 +10,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new RefRequestBuilderDeleteRequestConfiguration();
-
-$queryParameters = new RefRequestBuilderDeleteQueryParameters();
+$queryParameters = RefRequestBuilderDeleteRequestConfiguration::createQueryParameters();
 $queryParameters->id = "https://graph.microsoft.com/beta/groups/{other-group-id}";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 

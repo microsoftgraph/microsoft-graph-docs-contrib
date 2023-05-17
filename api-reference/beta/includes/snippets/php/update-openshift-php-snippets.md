@@ -11,8 +11,8 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new OpenShift();
 $additionalData = [
-'schedulingGroupId' => 'TAG_228940ed-ff84-4e25-b129-1b395cf78be0', 
-'sharedOpenShift' => $requestBody = new SharedOpenShift();
+		'schedulingGroupId' => 'TAG_228940ed-ff84-4e25-b129-1b395cf78be0', 
+		'sharedOpenShift' => $requestBody = new SharedOpenShift();
 $		requestBody->setNotes('Inventory Management');
 
 		$requestBody->setOpenSlotCount(5);
@@ -44,7 +44,7 @@ $requestBody->setActivities($activitiesArray);
 
 $requestBody->setSharedOpenShift($sharedOpenShift);
 
-'draftOpenShift' => 	null,
+	'draftOpenShift' => 	null,
 ];
 $requestBody->setAdditionalData($additionalData);
 

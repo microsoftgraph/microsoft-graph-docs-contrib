@@ -1236,10 +1236,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1289,10 +1294,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1366,10 +1376,15 @@
               "parameters": {}
             },
             {
-              "name": "hasLabel",
-              "parameters": {
-                "label": "internal"
-              }
+              "operator": "not",
+              "operands": [
+                {
+                  "name": "hasLabel",
+                  "parameters": {
+                    "label": "external"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -4133,6 +4148,226 @@
             "name": "addReply",
             "parameters": {
               "comment": "This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).\n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
+      "config": {
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          }
+        ],
+        "searchTerms": [
+          {
+            "name": "noActivitySince",
+            "parameters": {
+              "days": 14
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "changes requested"
+            }
+          },
+          {
+            "name": "isPr",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
+          }
+        ],
+        "taskName": "Notification for idle PRs - changes requested",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR has been in \"Changes requested\" state for more than 2 weeks. \n\nPlease address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. \n\nThank you!\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "taskType": "scheduled",
+      "capabilityId": "ScheduledSearch",
+      "subCapability": "ScheduledSearch",
+      "version": "1.1",
+      "config": {
+        "frequency": [
+          {
+            "weekDay": 0,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 1,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 2,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 3,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 4,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 5,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          },
+          {
+            "weekDay": 6,
+            "hours": [
+              0,
+              6,
+              12,
+              18
+            ]
+          }
+        ],
+        "searchTerms": [
+          {
+            "name": "noActivitySince",
+            "parameters": {
+              "days": 14
+            }
+          },
+          {
+            "name": "hasLabel",
+            "parameters": {
+              "label": "content review complete"
+            }
+          },
+          {
+            "name": "isPr",
+            "parameters": {}
+          },
+          {
+            "name": "isOpen",
+            "parameters": {}
+          },
+          {
+            "name": "noLabel",
+            "parameters": {
+              "label": "blocked"
+            }
+          }
+        ],
+        "taskName": "Notification for idle PRs - complete",
+        "actions": [
+          {
+            "name": "addReply",
+            "parameters": {
+              "comment": "Hello, @${issueAuthor}. \n\nYour PR was approved by your reviewer more than 2 weeks ago.\n\nPlease add the label \"ready to merge\" when you are ready to publish your PR.\n\nThank you!"
             }
           }
         ]

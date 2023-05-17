@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	OutputName = "2020-12-06 Contoso investigation export"
-	Description = "Export for the Contoso investigation"
-	ExportOptions = "originalFiles,fileInfo,tags"
-	ExportStructure = "directory"
+	outputName = "2020-12-06 Contoso investigation export"
+	description = "Export for the Contoso investigation"
+	exportOptions = "originalFiles,fileInfo,tags"
+	exportStructure = "directory"
 }
 
 Export-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params

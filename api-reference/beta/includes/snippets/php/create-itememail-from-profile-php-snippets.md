@@ -14,7 +14,7 @@ $requestBody->setAddress('Innocenty.Popov@adventureworks.com');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->emails()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->emails()->post($requestBody);
 
 
 ```

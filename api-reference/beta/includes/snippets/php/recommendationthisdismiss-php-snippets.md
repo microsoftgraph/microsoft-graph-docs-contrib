@@ -14,7 +14,7 @@ $requestBody->setDismissReason('Recommendations is not relevant for my organizat
 
 
 
-$requestResult = $graphServiceClient->directory()->recommendationsById('recommendation-id')->dismiss()->post($requestBody);
+$result = $graphServiceClient->directory()->recommendationsById('recommendation-id')->dismiss()->post($requestBody);
 
 
 ```

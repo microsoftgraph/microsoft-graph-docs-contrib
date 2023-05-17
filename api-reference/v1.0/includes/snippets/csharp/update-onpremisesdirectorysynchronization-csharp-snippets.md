@@ -15,8 +15,6 @@ var requestBody = new OnPremisesDirectorySynchronization
 			SynchronizationPreventionType = OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount,
 			AlertThreshold = 500,
 		},
-		SynchronizationInterval = TimeSpan.Parse("PT30M"),
-		CustomerRequestedSynchronizationInterval = TimeSpan.Parse("PT1H"),
 	},
 	Features = new OnPremisesDirectorySynchronizationFeature
 	{

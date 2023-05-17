@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->get();
+$result = $graphServiceClient->teamwork()->workforceIntegrationsById('workforceIntegration-id')->get();
 
 
 ```

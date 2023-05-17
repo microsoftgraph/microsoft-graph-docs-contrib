@@ -7,11 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	Definition = @(
-		"definition-value"
+	definition = @(
+		"{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}"
 	)
-	DisplayName = "displayName-value"
-	IsOrganizationDefault = $true
+	displayName = "Contoso token lifetime policy"
+	isOrganizationDefault = $true
 }
 
 New-MgPolicyTokenLifetimePolicy -BodyParameter $params

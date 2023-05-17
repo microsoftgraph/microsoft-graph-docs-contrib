@@ -15,14 +15,14 @@ $requestBody->set@odatatype('#microsoft.graph.fileAttachment');
 $requestBody->setName('menu.txt');
 
 $additionalData = [
-'contentBytes' => 'base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
+		'contentBytes' => 'base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
 
 
 ```

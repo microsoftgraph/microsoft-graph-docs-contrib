@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new Language();
 $additionalData = [
-'isEnabled' => false,
+		'isEnabled' => false,
 ];
 $requestBody->setAdditionalData($additionalData);
 

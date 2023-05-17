@@ -5,10 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.Me().Authentication().Fido2MethodsById("fido2AuthenticationMethod-id").Get(context.Background(), nil)
+
+result, err := graphClient.Me().Authentication().Fido2Methods().ByFido2MethodId("fido2AuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

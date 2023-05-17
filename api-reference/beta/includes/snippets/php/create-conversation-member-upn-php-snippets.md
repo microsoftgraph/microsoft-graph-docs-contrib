@@ -17,14 +17,14 @@ $requestBody->setVisibleHistoryStartDateTime(new DateTime('2019-04-18T23:51:43.2
 $requestBody->setRoles(['owner', ]);
 
 $additionalData = [
-'user@odata.bind' => 'https://graph.microsoft.com/beta/users/jacob@contoso.com', 
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users/jacob@contoso.com', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->members()->post($requestBody);
+$result = $graphServiceClient->chatsById('chat-id')->members()->post($requestBody);
 
 
 ```

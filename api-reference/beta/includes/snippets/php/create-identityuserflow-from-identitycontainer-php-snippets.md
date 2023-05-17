@@ -18,7 +18,7 @@ $requestBody->setUserFlowTypeVersion(1);
 
 
 
-$requestResult = $graphServiceClient->identity()->userFlows()->post($requestBody);
+$result = $graphServiceClient->identity()->userFlows()->post($requestBody);
 
 
 ```

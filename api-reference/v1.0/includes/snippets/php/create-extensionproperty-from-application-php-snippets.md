@@ -18,7 +18,7 @@ $requestBody->setTargetObjects(['User', ]);
 
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->extensionProperties()->post($requestBody);
+$result = $graphServiceClient->applicationsById('application-id')->extensionProperties()->post($requestBody);
 
 
 ```

@@ -4,32 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var fields = new List<WorkbookSortField>()
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Sort.Apply.ApplyPostRequestBody
 {
-	new WorkbookSortField
+	Fields = new List<WorkbookSortField>
 	{
-		Key = 99,
-		SortOn = "sortOn-value",
-		Ascending = true,
-		Color = "color-value",
-		DataOption = "dataOption-value",
-		Icon = new WorkbookIcon
+		new WorkbookSortField
 		{
-			Set = "set-value",
-			Index = 99
-		}
-	}
+			Key = 99,
+			SortOn = "sortOn-value",
+			Ascending = true,
+			Color = "color-value",
+			DataOption = "dataOption-value",
+			Icon = new WorkbookIcon
+			{
+				Set = "set-value",
+				Index = 99,
+			},
+		},
+	},
+	MatchCase = true,
+	Method = "method-value",
 };
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort.Apply.PostAsync(requestBody);
 
-var matchCase = true;
-
-var method = "method-value";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort
-	.Apply(matchCase,method,fields)
-	.Request()
-	.PostAsync();
 
 ```

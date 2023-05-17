@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Id = "id-value"
-	GroupId = "groupId-value"
+	id = "id-value"
+	groupId = "groupId-value"
 }
 
 # A UPN can also be used as -UserId.

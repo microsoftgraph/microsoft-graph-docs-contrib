@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->directory()->recommendationsById('recommendation-id')->complete()->post();
+$result = $graphServiceClient->directory()->recommendationsById('recommendation-id')->complete()->post();
 
 
 ```

@@ -16,7 +16,7 @@ $requestBody->setThumbnailUrl('https://iabm.io/sdhdfhsdhshsd.jpg');
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->profile()->awardsById('personAward-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->profile()->awardsById('personAward-id')->patch($requestBody);
 
 
 ```

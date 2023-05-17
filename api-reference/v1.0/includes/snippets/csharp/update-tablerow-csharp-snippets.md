@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var workbookTableRow = new WorkbookTableRow
+var requestBody = new WorkbookTableRow
 {
 	Index = 99,
-	Values = JsonDocument.Parse(@"""values-value""")
+	Values = "values-value",
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"].PatchAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"]
-	.Request()
-	.UpdateAsync(workbookTableRow);
 
 ```

@@ -4,16 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var task = new Microsoft.Graph.IdentityGovernance.Task
+var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
 {
 	Description = "Add user to selected groups",
-	DisplayName = "Update marketing day 1 add users to Group set up"
+	DisplayName = "Update marketing day 1 add users to Group set up",
 };
+var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Tasks["{task-id}"].PatchAsync(requestBody);
 
-await graphClient.Identitygovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"].Tasks["{identityGovernance.task-id}"]
-	.Request()
-	.UpdateAsync(task);
 
 ```

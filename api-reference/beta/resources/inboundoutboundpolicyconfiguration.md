@@ -38,11 +38,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.inboundOutboundPolicyConfiguration",
-  "inboundAllowed": {
-    "@odata.type": "Boolean"
-  },
-  "applications": {
-    "@odata.type": "Boolean"
-  }
+  "inboundAllowed": {"@odata.type": "Boolean"},
+  "outboundAllowed": {"@odata.type": "Boolean"}
 }
 ```

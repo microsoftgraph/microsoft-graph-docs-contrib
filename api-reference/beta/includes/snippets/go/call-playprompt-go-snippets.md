@@ -5,7 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/PlayPrompt"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPlayPromptPostRequestBody()
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -31,7 +39,7 @@ requestBody.SetPrompts(prompts)
 loop := false
 requestBody.SetLoop(&loop) 
 
-result, err := graphClient.Communications().CallsById("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").PlayPrompt().Post(context.Background(), requestBody, nil)
 
 
 ```
