@@ -10,21 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
+$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["deletedDateTime asc"];
 $queryParameters->select = ["id","displayName","deletedDateTime"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->directory()->deletedItems()->graphGroup()->get($requestConfiguration);
+$result = $graphServiceClient->directory()->deletedItems()->graphGroup()->get($requestConfiguration);
 
 
 ```

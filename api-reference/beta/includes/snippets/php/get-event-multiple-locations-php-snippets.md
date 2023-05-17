@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new EventRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new EventRequestBuilderGetQueryParameters();
+$queryParameters = EventRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location","locations"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
+$result = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
 
 
 ```

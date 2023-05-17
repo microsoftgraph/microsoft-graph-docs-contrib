@@ -14,7 +14,7 @@ $dataSource = new DataSource();
 $dataSource->set@odatatype('microsoft.graph.security.siteSource');
 
 $additionalData = [
-'site' => $dataSource = new Site();
+		'site' => $dataSource = new Site();
 $		dataSource->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
 
 
@@ -28,7 +28,7 @@ $dataSource->setAdditionalData($additionalData);
 $requestBody->setDataSource($dataSource);
 
 
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
 
 
 ```

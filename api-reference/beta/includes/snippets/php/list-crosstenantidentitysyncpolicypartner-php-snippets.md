@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PartnersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PartnersRequestBuilderGetQueryParameters();
+$queryParameters = PartnersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["tenantId"];
 $queryParameters->expand = ["identitySynchronization"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->get($requestConfiguration);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->get($requestConfiguration);
 
 
 ```

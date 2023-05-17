@@ -14,7 +14,7 @@ $requestBody->setName('Charity work');
 
 
 
-$requestResult = $graphServiceClient->me()->outlook()->taskFoldersById('outlookTaskFolder-id')->patch($requestBody);
+$result = $graphServiceClient->me()->outlook()->taskFoldersById('outlookTaskFolder-id')->patch($requestBody);
 
 
 ```

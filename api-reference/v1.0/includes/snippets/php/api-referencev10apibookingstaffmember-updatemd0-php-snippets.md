@@ -13,7 +13,7 @@ $requestBody = new BookingStaffMemberBase();
 $requestBody->set@odatatype('#microsoft.graph.bookingStaffMember');
 
 $additionalData = [
-'workingHours' => $workingHours1 = new ();
+		'workingHours' => $workingHours1 = new ();
 $		workingHours1->set@odatatype('#microsoft.graph.bookingWorkHours');
 
 $		workingHours1->setDay@odatatype('#microsoft.graph.dayOfWeek');
@@ -127,7 +127,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembersById('bookingStaffMemberBase-id')->patch($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembersById('bookingStaffMemberBase-id')->patch($requestBody);
 
 
 ```

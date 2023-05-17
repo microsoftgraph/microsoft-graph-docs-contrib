@@ -15,16 +15,16 @@ $requestBody->set@odatatype('microsoft.graph.mailSearchFolder');
 $requestBody->setDisplayName('Weekly digests');
 
 $additionalData = [
-'includeNestedFolders' => true,
-'sourceFolderIds' => ['AQMkADYAAAIBDAAAAA==', ],
-'filterQuery' => 'contains(subject, \'weekly digest\')', 
+		'includeNestedFolders' => true,
+		'sourceFolderIds' => ['AQMkADYAAAIBDAAAAA==', ],
+	'filterQuery' => 'contains(subject, \'weekly digest\')', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->childFolders()->post($requestBody);
+$result = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->childFolders()->post($requestBody);
 
 
 ```

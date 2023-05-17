@@ -79,24 +79,22 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
-      "displayName":"test_action_0124_email",
-      "description":"this is for graph testing only",
-      "endpointConfiguration":{
-         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
-         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
-         "resourceGroupName":"test",
-         "logicAppWorkflowName":"elm-extension-email"
-      },
-      "authenticationConfiguration":{
-         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
-      },
-      "callbackConfiguration":{
-         "@odata.type":"microsoft.graph.customExtensionCallbackConfiguration",
-         "durationBeforeTimeout":"PT1H"
-      }
-   }
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+    "resourceGroupName": "test",
+    "logicAppWorkflowName": "elm-extension-email"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+  },
+  "callbackConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration",
+    "durationBeforeTimeout": "PT1H"
+  }
 }
 ```
 
@@ -104,21 +102,23 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequestworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequestworkflowextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentrequestworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequestworkflowextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentrequestworkflowextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentrequestworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -196,21 +196,23 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentworkflowextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentworkflowextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentworkflowextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

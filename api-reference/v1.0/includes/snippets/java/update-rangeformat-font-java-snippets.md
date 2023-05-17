@@ -11,7 +11,7 @@ workbookRangeFont.bold = true;
 workbookRangeFont.color = "#4B180E";
 workbookRangeFont.size = 26d;
 
-graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
+graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
 	.range(WorkbookWorksheetRangeParameterSet
 		.newBuilder()
 		.withAddress("$A$1")

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->oauth2PermissionGrantsById('oAuth2PermissionGrant-id')->get();
+$result = $graphServiceClient->oauth2PermissionGrantsById('oAuth2PermissionGrant-id')->get();
 
 
 ```

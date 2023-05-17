@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->employeeExperience()->learningProviders()->get();
+$result = $graphServiceClient->employeeExperience()->learningProviders()->get();
 
 
 ```

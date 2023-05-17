@@ -13,14 +13,14 @@ $requestBody = new BookingStaffMemberBase();
 $requestBody->set@odatatype('#microsoft.graph.bookingStaffMember');
 
 $additionalData = [
-'displayName' => 'Dana Swope', 
-'emailAddress' => 'danas@contoso.com', 
-'role@odata.type' => '#microsoft.graph.bookingStaffRole', 
-'role' => 'externalGuest', 
-'timeZone' => 'America/Chicago', 
-'useBusinessHours' => true,
-'workingHours@odata.type' => '#Collection(microsoft.graph.bookingWorkHours)', 
-'workingHours' => $workingHours1 = new ();
+		'displayName' => 'Dana Swope', 
+		'emailAddress' => 'danas@contoso.com', 
+		'role@odata.type' => '#microsoft.graph.bookingStaffRole', 
+		'role' => 'externalGuest', 
+		'timeZone' => 'America/Chicago', 
+		'useBusinessHours' => true,
+		'workingHours@odata.type' => '#Collection(microsoft.graph.bookingWorkHours)', 
+		'workingHours' => $workingHours1 = new ();
 $		workingHours1->set@odatatype('#microsoft.graph.bookingWorkHours');
 
 $		workingHours1->setDay@odatatype('#microsoft.graph.dayOfWeek');
@@ -145,7 +145,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembers()->post($requestBody);
+$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembers()->post($requestBody);
 
 
 ```

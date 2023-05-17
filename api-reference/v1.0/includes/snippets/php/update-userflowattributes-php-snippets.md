@@ -14,7 +14,7 @@ $requestBody->setDescription('Your new hobby');
 
 
 
-$requestResult = $graphServiceClient->identity()->userFlowAttributesById('identityUserFlowAttribute-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->userFlowAttributesById('identityUserFlowAttribute-id')->patch($requestBody);
 
 
 ```

@@ -53,7 +53,7 @@ $requestBody->setPasswordPolicies('DisablePasswordExpiration');
 
 
 
-$requestResult = $graphServiceClient->users()->post($requestBody);
+$result = $graphServiceClient->users()->post($requestBody);
 
 
 ```

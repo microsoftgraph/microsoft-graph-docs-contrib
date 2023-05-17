@@ -33,7 +33,7 @@ $requestBody->setAttachments($attachmentsArray);
 
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
 
 
 ```

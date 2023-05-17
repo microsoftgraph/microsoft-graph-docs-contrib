@@ -8,9 +8,9 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
-	DisplayName = "Import_150958_99z"
-	Description = "Import_150958_99z"
-	CreatedDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
+	displayName = "Import_150958_99z"
+	description = "Import_150958_99z"
+	createdDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params

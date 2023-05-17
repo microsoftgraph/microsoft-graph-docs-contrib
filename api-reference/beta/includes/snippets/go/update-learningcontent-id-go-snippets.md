@@ -5,7 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+import (
+	  "context"
+	  "time"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewLearningContent()
 title := "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle"
@@ -55,7 +65,7 @@ requestBody.SetIsPremium(&isPremium)
 isSearchable := true
 requestBody.SetIsSearchable(&isSearchable) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").LearningContentsById("learningContent-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningContents().ByLearningContentId("learningContent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

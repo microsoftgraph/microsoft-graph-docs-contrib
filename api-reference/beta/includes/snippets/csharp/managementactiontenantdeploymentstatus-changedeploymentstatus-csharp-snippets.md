@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.ManagedTenantsChangeDeploymentStatus.ChangeDeploymentStatusPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.MicrosoftGraphManagedTenantsChangeDeploymentStatus.ChangeDeploymentStatusPostRequestBody
 {
 	TenantGroupId = "String",
 	TenantId = "String",
@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.Ma
 	ManagementTemplateId = "String",
 	Status = "String",
 };
-var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.ManagedTenantsChangeDeploymentStatus.PostAsync(requestBody);
+var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.MicrosoftGraphManagedTenantsChangeDeploymentStatus.PostAsync(requestBody);
 
 
 ```

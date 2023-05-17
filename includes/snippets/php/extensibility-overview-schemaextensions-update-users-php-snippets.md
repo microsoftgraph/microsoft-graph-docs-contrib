@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new User();
 $additionalData = [
-'extkmpdyld2_graphLearnCourses' => $requestBody = new Extkmpdyld2_graphLearnCourses();
+		'extkmpdyld2_graphLearnCourses' => $requestBody = new Extkmpdyld2_graphLearnCourses();
 $		requestBody->setCourseType('Instructor-led');
 
 		$requestBody->setCourseId(null);
@@ -25,7 +25,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
+$result = $graphServiceClient->usersById('user-id')->patch($requestBody);
 
 
 ```

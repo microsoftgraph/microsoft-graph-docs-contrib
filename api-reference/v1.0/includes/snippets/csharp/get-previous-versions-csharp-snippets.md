@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var versions = await graphClient.Me.Drive.Items["{driveItem-id}"].Versions
-	.Request()
-	.GetAsync();
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Versions.GetAsync();
+
 
 ```

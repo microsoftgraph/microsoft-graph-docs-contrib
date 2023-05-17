@@ -24,7 +24,7 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('Another file as attachment');
 
 $additionalData = [
-'contentBytes' => 'VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu', 
+		'contentBytes' => 'VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 
