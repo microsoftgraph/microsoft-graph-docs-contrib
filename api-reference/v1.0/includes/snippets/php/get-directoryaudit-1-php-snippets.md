@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->auditLogs()->directoryAuditsById('directoryAudit-id')->get();
+$result = $graphServiceClient->auditLogs()->directoryAudits()->byDirectoryAuditId('directoryAudit-id')->get();
 
 
 ```

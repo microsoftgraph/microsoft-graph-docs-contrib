@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/policies/tokenIssuan
 
 
 
-$graphServiceClient->applicationsById('application-id')->tokenIssuancePolicies()->ref()->post($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->tokenIssuancePolicies()->ref()->post($requestBody);
 
 
 ```

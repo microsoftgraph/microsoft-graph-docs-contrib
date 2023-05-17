@@ -31,8 +31,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-05-12T15:54:00.9807305Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -49,8 +49,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-05-12T15:54:00.9816339Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -75,8 +75,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-20T06:54:01.89062Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -119,8 +119,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-03-03T07:50:23.4733989Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

@@ -21,7 +21,7 @@ $properties->setSize(4533322);
 $requestBody->setProperties($properties);
 
 
-$result = $graphServiceClient->print()->printersById('printer-id')->jobsById('printJob-id')->documentsById('printDocument-id')->createUploadSession()->post($requestBody);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->jobs()->byJobId('printJob-id')->documents()->byDocumentId('printDocument-id')->createUploadSession()->post($requestBody);
 
 
 ```

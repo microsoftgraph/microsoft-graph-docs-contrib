@@ -15,7 +15,7 @@ $queryParameters->filter = "userConsentRequests/any";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequestsById('appConsentRequest-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->byAppConsentRequestId('appConsentRequest-id')->get($requestConfiguration);
 
 
 ```

@@ -21,7 +21,7 @@ $reviewStatus->setAzureStorageAccountId('/subscriptions/f68bd846-16ad-4b51-a7c6-
 $requestBody->setReviewStatus($reviewStatus);
 
 
-$graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->setCloudPcReviewStatus()->post($requestBody);
+$graphServiceClient->deviceManagement()->managedDevices()->byManagedDeviceId('managedDevice-id')->setCloudPcReviewStatus()->post($requestBody);
 
 
 ```

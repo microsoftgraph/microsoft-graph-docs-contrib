@@ -15,7 +15,7 @@ $queryParameters->expand = ["children"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sharesById('sharedDriveItem-id')->driveItem()->get($requestConfiguration);
+$result = $graphServiceClient->shares()->byShareId('sharedDriveItem-id')->driveItem()->get($requestConfiguration);
 
 
 ```

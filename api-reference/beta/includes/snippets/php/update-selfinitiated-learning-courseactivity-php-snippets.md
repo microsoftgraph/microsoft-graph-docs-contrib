@@ -32,7 +32,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->employeeExperience()->learningCourseActivitiesById('learningCourseActivity-id')->patch($requestBody);
+$result = $graphServiceClient->employeeExperience()->learningCourseActivities()->byLearningCourseActivitieId('learningCourseActivity-id')->patch($requestBody);
 
 
 ```
