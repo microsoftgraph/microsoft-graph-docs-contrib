@@ -17,7 +17,7 @@ $attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('guidelines.txt');
 
 $additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
+		'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
 ];
 $attachmentsAttachment1->setAdditionalData($additionalData);
 
@@ -33,7 +33,7 @@ $requestBody->setComment('Please take a look at the attached guidelines before y
 
 
 
-$graphServiceClient->me()->messagesById('message-id')->replyAll()->post($requestBody);
+$graphServiceClient->me()->messages()->byMessageId('message-id')->replyAll()->post($requestBody);
 
 
 ```

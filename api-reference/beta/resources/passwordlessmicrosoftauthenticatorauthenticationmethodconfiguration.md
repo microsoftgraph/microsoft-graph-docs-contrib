@@ -4,7 +4,7 @@ description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in au
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type (deprecated)

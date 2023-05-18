@@ -23,11 +23,12 @@ Represents a policy that can control Azure Active Directory authorization settin
 ## Properties  
 | Property | Type | Description | 
 |-|-|-|
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
-|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
-|allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. See more in the [table below](#allowinvitesfrom-values). |
-|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell set this property to `true`. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. | 
+|allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. For more details, see [allowInvitesFrom values](../resources/authorizationpolicy.md#allowinvitesfrom-values). |
+|allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. We recommend to keep this as `false`. Default value is `false`. |
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
+|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Serve Password Reset feature on the tenant. | 
+|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. This also disables user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure Active Directory Connect or Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| Specifies certain customizable permissions for default user role. | 
 |description|String| Description of this policy.|
 |displayName|String| Display name for this policy. |    
@@ -62,15 +63,16 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedToSignUpEmailBasedSubscriptions": true,
-  "allowedToUseSSPR": true,
-  "allowEmailVerifiedUsersToJoinOrganization": true,
+  "allowEmailVerifiedUsersToJoinOrganization": "Boolean",
   "allowInvitesFrom": "String",
-  "blockMsolPowerShell": true,
-  "description": "String",
+  "allowUserConsentForRiskyApps": "Boolean",
+  "allowedToSignUpEmailBasedSubscriptions": "Boolean",
+  "allowedToUseSSPR": "Boolean",
+  "blockMsolPowerShell": "Boolean",
   "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
+  "description": "String",
   "displayName": "String",
-  "id": "String (identifier)",
-  "guestUserRoleId": "Guid"
+  "guestUserRoleId": "Guid",
+  "id": "String (identifier)"
 }
 ```

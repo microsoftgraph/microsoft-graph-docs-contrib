@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new SchemaPutRequestBody();
 $additionalData = [
-'directories' => $directories1 = new ();
+		'directories' => $directories1 = new ();
 $		directories1->setName('Azure Active Directory');
 
 $objects1 = new ();
@@ -81,7 +81,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->schema()->put($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->schema()->put($requestBody);
 
 
 ```

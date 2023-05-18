@@ -16,14 +16,14 @@ $sourceCollection->setId('1a9b4145d8f84e39bc45a7f68c5c5119');
 
 $requestBody->setSourceCollection($sourceCollection);
 $additionalData = [
-'additionalData' => 'linkedFiles', 
+		'additionalData' => 'linkedFiles', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->ediscoveryAddToReviewSet()->post($requestBody);
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->reviewSets()->byReviewSetId('reviewSet-id')->microsoftGraphEdiscoveryAddToReviewSet()->post($requestBody);
 
 
 ```

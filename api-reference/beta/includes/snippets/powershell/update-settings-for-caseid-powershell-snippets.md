@@ -7,21 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	RedundancyDetection = @{
-		IsEnabled = $false
-		SimilarityThreshold = 70
-		MinWords = 12
-		MaxWords = 400000
+	redundancyDetection = @{
+		isEnabled = $false
+		similarityThreshold = 70
+		minWords = 12
+		maxWords = 400000
 	}
-	TopicModeling = @{
-		IsEnabled = $false
-		IgnoreNumbers = $false
-		TopicCount = 50
-		DynamicallyAdjustTopicCount = $false
+	topicModeling = @{
+		isEnabled = $false
+		ignoreNumbers = $false
+		topicCount = 50
+		dynamicallyAdjustTopicCount = $false
 	}
-	Ocr = @{
-		IsEnabled = $true
-		MaxImageSize = 12000
+	ocr = @{
+		isEnabled = $true
+		maxImageSize = 12000
 	}
 }
 

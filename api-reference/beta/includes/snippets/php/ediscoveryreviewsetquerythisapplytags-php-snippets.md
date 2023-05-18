@@ -20,7 +20,7 @@ $requestBody->setTagsToAdd($tagsToAddArray);
 
 
 
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->reviewSetsById('ediscoveryReviewSet-id')->queriesById('ediscoveryReviewSetQuery-id')->securityApplyTags()->post($requestBody);
+$graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->reviewSets()->byReviewSetId('ediscoveryReviewSet-id')->queries()->byQuerieId('ediscoveryReviewSetQuery-id')->microsoftGraphSecurityApplyTags()->post($requestBody);
 
 
 ```

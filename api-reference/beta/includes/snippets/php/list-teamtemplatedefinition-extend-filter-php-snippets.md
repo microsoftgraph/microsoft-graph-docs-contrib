@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamTemplatesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TeamTemplatesRequestBuilderGetQueryParameters();
+$queryParameters = TeamTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["definitions"];
 $queryParameters->filter = "definitions/any";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamwork()->teamTemplates()->get($requestConfiguration);
+$result = $graphServiceClient->teamwork()->teamTemplates()->get($requestConfiguration);
 
 
 ```

@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP Request
 
 ```http
-GET applications/{id}/synchronization/templates/{templateId}
-GET servicePrincipals/{id}/synchronization/templates/{templateId}
+GET /applications/{id}/synchronization/templates/{templateId}
+GET /servicePrincipals/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Compliance
 
 $params = @{
-	ApplyHoldToSource = $true
-	DataSource = @{
+	applyHoldToSource = $true
+	dataSource = @{
 		"@odata.type" = "microsoft.graph.ediscovery.userSource"
-		Email = "adelev@contoso.com"
+		email = "adelev@contoso.com"
 	}
 }
 
