@@ -37,7 +37,7 @@ $requestBody->setParticipantCapacity(200);
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

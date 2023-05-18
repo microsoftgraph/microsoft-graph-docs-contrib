@@ -15,7 +15,7 @@ $queryParameters->filter = "isEnabled eq true";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->languages()->get($requestConfiguration);
+$result = $graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->languages()->get($requestConfiguration);
 
 
 ```

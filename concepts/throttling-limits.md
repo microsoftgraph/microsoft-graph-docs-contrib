@@ -379,16 +379,19 @@ You can find additional information about best practices in [OneNote API throttl
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
 
-
 ## Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Outlook service limits apply to the public cloud and [national cloud deployments](./deployments.md).
 
-| Limit                                                      | Applies to      |
-|------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+### Limits per app ID and mailbox combination
+
+The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+
+| Limit                                                             | Applies to              |
+|-------------------------------------------------------------------|-------------------------|
+| 10,000 API requests in a 10 minute period                         | v1.0 and beta endpoints |
+| 4 concurrent requests                                             | v1.0 and beta endpoints |
+| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints |
 
 ### Outlook service resources
 
@@ -402,6 +405,15 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
+### Outlook service limits for JSON batching
+
+When an app makes a [JSON batch](json-batching.md) request that consists of multiple, _unordered_ individual requests to the Outlook service, by default, Microsoft Graph sends the Outlook service up to 4 individual requests from the batch at a time, regardless of the target mailboxes of those requests. The Outlook service can execute these requests in parallel at any point, also irrespective of the target mailbox. Since Microsoft Graph sends only up to 4 requests to run in parallel, the execution of that batch stays within [Outlook's concurrency limits for the same mailbox](#limits-per-app-id-and-mailbox-combination). 
+
+Alternatively, an app can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to order requests within a batch. Microsoft Graph sends the Outlook service one request from the batch at a time following the specified order, and Outlook executes each individual request in the batch sequentially.
+  
+In other words, when targeting the _same mailbox_, apps that allow multiple batch requests to run in parallel can use either of the following approaches: 
+- If the individual requests do not have to be ordered, have individual requests from a single batch run concurrently. 
+- Use the `dependsOn` property to order requests in a batch, and have up to 4 such batch requests run concurrently.
 
 ## Project Rome service limits
 

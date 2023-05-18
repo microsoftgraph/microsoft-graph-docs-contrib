@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Family');
 
 
 
-$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->childFolders()->post($requestBody);
+$result = $graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->childFolders()->post($requestBody);
 
 
 ```

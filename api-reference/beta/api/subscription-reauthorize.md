@@ -129,7 +129,6 @@ POST https://graph.microsoft.com/beta/subscriptions/{subscriptionsId}/reauthoriz
 
 ---
 
-
 ### Response
 The following is an example of the response
 

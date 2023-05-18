@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-
 [!INCLUDE [sample-code](../includes/snippets/php/noncustodialdatasource-release-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/noncustodialdatasource-release-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
