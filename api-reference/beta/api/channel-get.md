@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a Channel Summary property
+### Example 2: Get a channelSummary property
 
 #### Request
 
