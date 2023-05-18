@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
 ## Methods
 |Method|Return type|Description|

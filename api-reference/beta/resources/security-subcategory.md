@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Represents a unique subcategory applied to a retention label.
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
 
 ## Properties
 |Property|Type|Description|

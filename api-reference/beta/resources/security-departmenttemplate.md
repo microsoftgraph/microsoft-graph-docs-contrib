@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Specifies the  department or business unit of an organization to which a label belongs.
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
 ## Methods
 |Method|Return type|Description|

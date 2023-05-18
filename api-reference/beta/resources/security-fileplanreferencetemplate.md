@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
 ## Methods
 |Method|Return type|Description|

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
 ## Methods
 |Method|Return type|Description|

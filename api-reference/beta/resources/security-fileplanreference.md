@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Represents the file plan descriptor of type filePlanReference applied to a particular retention label.
 
 
-Inherits from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).
+Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/security-fileplandescriptorBase.md).
 
 ## Properties
 |Property|Type|Description|
