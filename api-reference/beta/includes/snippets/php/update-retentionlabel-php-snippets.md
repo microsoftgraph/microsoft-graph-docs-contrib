@@ -27,7 +27,7 @@ $requestBody->setDefaultRecordBehavior(new DefaultRecordBehavior('string'));
 
 
 
-$result = $graphServiceClient->security()->labels()->retentionLabelsById('retentionLabel-id')->patch($requestBody);
+$result = $graphServiceClient->security()->labels()->retentionLabels()->byRetentionLabelId('retentionLabel-id')->patch($requestBody);
 
 
 ```

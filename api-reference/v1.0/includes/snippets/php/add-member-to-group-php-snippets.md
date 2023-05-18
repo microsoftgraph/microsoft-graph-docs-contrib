@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/directoryObjects/{id
 
 
 
-$graphServiceClient->groupsById('group-id')->members()->ref()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->members()->ref()->post($requestBody);
 
 
 ```

@@ -21,7 +21,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->bucketsById('plannerBucket-id')->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->planner()->buckets()->byBucketId('plannerBucket-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

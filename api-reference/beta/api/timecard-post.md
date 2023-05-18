@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [timeCard](../resources/timeCard.md) instance in a [schedule](../resources/schedule.md).
+Create a [timeCard](../resources/timecard.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Provide the new [timeCard](../resources/timecard.md) object in the request body 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
 ## Example
 
@@ -138,84 +138,84 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-   "createdDateTime":"2019-03-18T00:00:00.000Z",
-   "createdBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-   "lastModifiedBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "state":"onBreak",
-   "confirmationStatus":"notConfirmed",
-   "originalEntry":{
-      "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes": {
-            "content": "Started late due to traffic in CA 237",
-           "contentType": "text"
-         },
-      },
-      "clockOutEvent":null,
-      "breaks":[
-         {
-            "breakId":"string",
-            "notes":{
-                "content": "Lunch break",
-                "contentType": "text"
-             },
-            "start":{
-               "dateTime":"2019-03-18T02:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes": {
-                  "content": "Reduced break to make up for lost time",
-                  "contentType": "text"
-               },
-            },
-            "end":null
-         }
-      ]
-   },
-   "clockInEvent":{
-      "dateTime":"2019-03-18T00:00:00.000Z",
-      "atApprovedLocation":true,
+  "id": "3895809b-a618-4c0d-86a0-d42b25b7d74f",
+  "userId": "a3601044-a1b5-438e-b742-f78d01d68a67",
+  "createdDateTime": "2019-03-18T00:00:00.000Z",
+  "createdBy": {
+    "user": {
+      "id": "a3601044-a1b5-438e-b742-f78d01d68a67",
+      "displayName": "Dwight Schrute"
+    }
+  },
+  "lastModifiedDateTime": "2019-03-18T00:00:00.000Z",
+  "lastModifiedBy": {
+    "user": {
+      "id": "a3601044-a1b5-438e-b742-f78d01d68a67",
+      "displayName": "Dwight Schrute"
+    }
+  },
+  "state": "onBreak",
+  "confirmationStatus": "notConfirmed",
+  "originalEntry": {
+    "clockInEvent": {
+      "dateTime": "2019-03-18T00:00:00.000Z",
+      "atApprovedLocation": true,
       "notes": {
         "content": "Started late due to traffic in CA 237",
         "contentType": "text"
-     },
-   },
-   "clockOutEvent":null,
-   "notes":{
-        "content": "8 To 5 Inventory management",
-        "contentType": "text"
-   },
-   "breaks":[
-      {
-         "breakId":"string",
-         "notes":{
-             "content": "Lunch break",
-             "contentType": "text"
-         },
-         "start":{
-            "dateTime":"2019-03-18T02:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes": {
-                "content": "Reduced break to make up for lost time",
-                "contentType": "text"
-             },
-         },
-         "end":null
       }
-   ]
+    },
+    "clockOutEvent": null,
+    "breaks": [
+      {
+        "breakId": "string",
+        "notes": {
+          "content": "Lunch break",
+          "contentType": "text"
+        },
+        "start": {
+          "dateTime": "2019-03-18T02:00:00.000Z",
+          "atApprovedLocation": true,
+          "notes": {
+            "content": "Reduced break to make up for lost time",
+            "contentType": "text"
+          }
+        },
+        "end": null
+      }
+    ]
+  },
+  "clockInEvent": {
+    "dateTime": "2019-03-18T00:00:00.000Z",
+    "atApprovedLocation": true,
+    "notes": {
+      "content": "Started late due to traffic in CA 237",
+      "contentType": "text"
+    }
+  },
+  "clockOutEvent": null,
+  "notes": {
+    "content": "8 To 5 Inventory management",
+    "contentType": "text"
+  },
+  "breaks": [
+    {
+      "breakId": "string",
+      "notes": {
+        "content": "Lunch break",
+        "contentType": "text"
+      },
+      "start": {
+        "dateTime": "2019-03-18T02:00:00.000Z",
+        "atApprovedLocation": true,
+        "notes": {
+          "content": "Reduced break to make up for lost time",
+          "contentType": "text"
+        }
+      },
+      "end": null
+    }
+  ]
 }
 ```
 

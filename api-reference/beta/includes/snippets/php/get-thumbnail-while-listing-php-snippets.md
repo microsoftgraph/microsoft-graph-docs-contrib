@@ -15,7 +15,7 @@ $queryParameters->expand = ["thumbnails"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->children()->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->children()->get($requestConfiguration);
 
 
 ```

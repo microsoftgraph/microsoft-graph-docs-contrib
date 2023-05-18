@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->groupsById('group-id')->subscribeByMail()->post();
+$graphServiceClient->groups()->byGroupId('group-id')->subscribeByMail()->post();
 
 
 ```

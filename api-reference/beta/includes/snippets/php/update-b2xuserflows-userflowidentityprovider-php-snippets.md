@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userFlowIdentityProviders()->ref()->patch($requestBody);
+$graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->userFlowIdentityProviders()->ref()->patch($requestBody);
 
 
 ```

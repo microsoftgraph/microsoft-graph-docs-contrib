@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->identityProvidersById('identityProvider-id')->post($requestBody);
+$graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->identityProviders()->byIdentityProviderId('identityProvider-id')->post($requestBody);
 
 
 ```

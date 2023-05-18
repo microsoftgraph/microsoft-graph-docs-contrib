@@ -23,7 +23,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->restart()->post($requestBody, $requestConfiguration);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->restart()->post($requestBody, $requestConfiguration);
 
 
 ```
