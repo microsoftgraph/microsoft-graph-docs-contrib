@@ -14,7 +14,7 @@ $requestBody->setExpirationDateTime(new DateTime('2016-11-22T18:23:45.9356913Z')
 
 
 
-$result = $graphServiceClient->subscriptionsById('subscription-id')->patch($requestBody);
+$result = $graphServiceClient->subscriptions()->bySubscriptionId('subscription-id')->patch($requestBody);
 
 
 ```

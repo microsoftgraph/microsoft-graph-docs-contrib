@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->roleManagement()->directory()->resourceNamespacesById('unifiedRbacResourceNamespace-id')->get();
+$result = $graphServiceClient->roleManagement()->directory()->resourceNamespaces()->byResourceNamespaceId('unifiedRbacResourceNamespace-id')->get();
 
 
 ```

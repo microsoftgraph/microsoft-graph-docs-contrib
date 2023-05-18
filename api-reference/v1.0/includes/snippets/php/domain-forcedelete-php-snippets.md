@@ -14,7 +14,7 @@ $requestBody->setDisableUserAccounts(true);
 
 
 
-$graphServiceClient->domainsById('domain-id')->forceDelete()->post($requestBody);
+$graphServiceClient->domains()->byDomainId('domain-id')->forceDelete()->post($requestBody);
 
 
 ```

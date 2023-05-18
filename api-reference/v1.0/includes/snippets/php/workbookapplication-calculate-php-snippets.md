@@ -14,7 +14,7 @@ $requestBody->setCalculationType('calculationType-value');
 
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->application()->calculate()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->application()->calculate()->post($requestBody);
 
 
 ```

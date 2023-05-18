@@ -71,7 +71,7 @@ The following request creates an assignment schedule request to assign a princip
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e1"
 }
 -->
 ``` http
@@ -95,11 +95,11 @@ Content-Type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,9 +156,10 @@ Content-Type: application/json
 In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible membership* to a group managed by PIM identified by **groupId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e2"
 }
 -->
 ``` http
@@ -180,6 +181,16 @@ Content-Type: application/json
   "justification": "Activate assignment."
 }
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/beta/users/{id}');
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizationsById('connectedOrganization-id')->externalSponsors()->ref()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizations()->byConnectedOrganizationId('connectedOrganization-id')->externalSponsors()->ref()->post($requestBody);
 
 
 ```

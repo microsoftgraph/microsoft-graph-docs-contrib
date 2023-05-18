@@ -17,11 +17,11 @@ Retrieve the properties and relationships of a [permission](../resources/permiss
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -46,20 +46,23 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [permission](../resources/permission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [permission](../resources/permission.md) object in the response body.
 
 ## Examples
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_permission"
+  "name": "get_permission",
+  "sampleKeys": ["f2d90359-865b-4b6c-8848-d2722dd630e5", "1"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
+GET https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/1
 ```
 
 # [C#](#tab/csharp)
@@ -89,6 +92,9 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
 ---
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,27 +106,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "id":"1",
-   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-   "roles":[
-      "read"
-   ],
-   "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
+  "id": "1",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "roles": [
+    "read"
+  ],
+  "grantedToIdentities": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Contoso Time Manager App"
       }
-   ],
-   "grantedToIdentitiesV2":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Contoso Time Manager App"
       }
-   ]
+    }
+  ]
 }
 ```
 

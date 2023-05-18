@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->contactsById('orgContact-id')->transitiveReports()->count()->get();
+$graphServiceClient->contacts()->byContactId('orgContact-id')->transitiveReports()->count()->get();
 
 
 ```

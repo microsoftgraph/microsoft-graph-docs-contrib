@@ -16,7 +16,7 @@ $queryParameters->filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->tabs()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->tabs()->get($requestConfiguration);
 
 
 ```

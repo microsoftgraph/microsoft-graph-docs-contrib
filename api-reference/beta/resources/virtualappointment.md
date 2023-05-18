@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# virtualAppointment resource type
+# virtualAppointment resource type (deprecated)
 
 Namespace: microsoft.graph
 
