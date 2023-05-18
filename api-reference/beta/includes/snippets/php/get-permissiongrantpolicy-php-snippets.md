@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->policies()->permissionGrantPoliciesById('permissionGrantPolicy-id')->get();
+$result = $graphServiceClient->policies()->permissionGrantPolicies()->byPermissionGrantPolicieId('permissionGrantPolicy-id')->get();
 
 
 ```

@@ -32,7 +32,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->employeeExperience()->learningProvidersById('learningProvider-id')->learningCourseActivities()->post($requestBody);
+$result = $graphServiceClient->employeeExperience()->learningProviders()->byLearningProviderId('learningProvider-id')->learningCourseActivities()->post($requestBody);
 
 
 ```

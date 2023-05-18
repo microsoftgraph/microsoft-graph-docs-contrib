@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->tasksById('plannerTask-id')->delete($requestConfiguration);
+$graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->delete($requestConfiguration);
 
 
 ```

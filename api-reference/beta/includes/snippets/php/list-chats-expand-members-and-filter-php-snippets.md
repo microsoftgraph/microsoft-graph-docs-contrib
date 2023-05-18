@@ -16,7 +16,7 @@ $queryParameters->filter = "members/any";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->chats()->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->chats()->get($requestConfiguration);
 
 
 ```

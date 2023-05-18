@@ -15,7 +15,7 @@ $queryParameters->expand = ["appliesTo"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->policies()->featureRolloutPoliciesById('featureRolloutPolicy-id')->get($requestConfiguration);
+$result = $graphServiceClient->policies()->featureRolloutPolicies()->byFeatureRolloutPolicieId('featureRolloutPolicy-id')->get($requestConfiguration);
 
 
 ```

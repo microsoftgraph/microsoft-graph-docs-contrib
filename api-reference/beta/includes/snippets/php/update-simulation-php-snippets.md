@@ -55,7 +55,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->patch($requestBody);
+$result = $graphServiceClient->security()->attackSimulation()->simulations()->bySimulationId('simulation-id')->patch($requestBody);
 
 
 ```

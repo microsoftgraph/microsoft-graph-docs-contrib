@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userFlowIdentityProvidersById('identityProviderBase-id')->patch($requestBody);
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->userFlowIdentityProviders()->byUserFlowIdentityProviderId('identityProviderBase-id')->patch($requestBody);
 
 
 ```
