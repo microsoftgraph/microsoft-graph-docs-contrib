@@ -25,9 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-> [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](/graph/known-issues#teamworkappsettings-permissions-are-not-visible-in-the-azure-portal).
-
 ## HTTP request
 
 <!-- {
@@ -50,7 +47,7 @@ PATCH /teamwork/teamsAppSettings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowUserRequestsForAppAccess|Boolean|Indicates whether Teams users are allowed to request admins access to certain Teams apps.|
+|allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
 |isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
 
 

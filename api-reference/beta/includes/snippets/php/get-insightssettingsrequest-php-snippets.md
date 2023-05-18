@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->organizationById('organization-id')->settings()->itemInsights()->get();
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->settings()->itemInsights()->get();
 
 
 ```

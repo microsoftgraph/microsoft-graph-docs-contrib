@@ -31,7 +31,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->chatsById('chat-id')->tabs()->post($requestBody);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->tabs()->post($requestBody);
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackagesById('accessPackage-id')->incompatibleGroupsById('group-id')->ref()->delete();
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->incompatibleGroups()->byIncompatibleGroupId('group-id')->ref()->delete();
 
 
 ```

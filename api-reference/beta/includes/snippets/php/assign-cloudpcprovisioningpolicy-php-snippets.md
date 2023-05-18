@@ -37,7 +37,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPoliciesById('cloudPcProvisioningPolicy-id')->assign()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byProvisioningPolicieId('cloudPcProvisioningPolicy-id')->assign()->post($requestBody);
 
 
 ```

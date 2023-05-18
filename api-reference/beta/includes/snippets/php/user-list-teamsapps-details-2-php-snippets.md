@@ -15,7 +15,7 @@ $queryParameters->expand = ["teamsAppDefinition($expand=bot)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->teamwork()->installedApps()->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->teamwork()->installedApps()->get($requestConfiguration);
 
 
 ```
