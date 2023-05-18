@@ -15102,6 +15102,7 @@ items:
             href: api/directoryaudit-list.md
           - name: Get directory audit
             href: api/directoryaudit-get.md
+        - name: Custom security attributes audit
         - name: Sign-in
           href: resources/signin.md
           items:
