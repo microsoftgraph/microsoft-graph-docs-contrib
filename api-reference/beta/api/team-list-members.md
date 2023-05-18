@@ -377,8 +377,8 @@ Content-Type: application/json
 }
 ```
 
-### New Tenants get unauthorised response
-For new tenants, the JIT provisioning error causing the 401s is unfortunately a known limitation for 1st party apps using MSGraph advanced AAD query capabilities (a.k.a. Mezzo). 1st party apps require provisioning a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so the provisioning cannot happen (advanced query endpoints are defined by the ConsistencyLevel=eventual header + $count or $search query arguments). A workaround is to hit AAD Graph or another "non-advanced" MSGraph endpoint (e.g. /users?$top=1), which takes care of the provisioning and things work from then on. This is an issue with AAD and some TGS apis are backed by AAD. This issue happens once per tenant for a given app. Implementing a pattern like below:
+### New tenants get unauthorized response
+For new tenants, the JIT provisioning error causing `401` errors is a known limitation for first-party apps using Microsoft Graph advanced Azure AD query capabilities (Mezzo). First-party apps require the provisioning of a service principal on the target tenant when the first request arrives, but advanced query endpoints are read-only, so the provisioning cannot happen (advanced query endpoints are defined by the `ConsistencyLevel=eventual header` + `$count` or `$search` query arguments). A workaround is to hit Azure AD Graph or another "non-advanced" Microsoft Graph endpoint (for example, `/users?$top=1`), which takes care of the provisioning and things work from then on. This is an issue with Azure AD, and some TGS APIs are backed by Azure AD. This issue happens once per tenant for a given app. Implementing a pattern like the following:
 ``` http
 {
     try
