@@ -35,7 +35,7 @@ GET /reports/servicePrincipalSignInActivities/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters `$top`, `$filter` and `$orderBy`to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -75,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.signIn"
+  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity "
 } 
 -->
 
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.signIn"
+  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity "
 } -->
 
 ```http

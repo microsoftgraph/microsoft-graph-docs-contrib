@@ -33,7 +33,7 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters `$top`, `$filter` and `$orderBy`to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
