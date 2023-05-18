@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|EventListener.Read.All, EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|EventListener.Read.All, EventListener.ReadWrite.All|
-|Application|EventListener.Read.All, EventListener.ReadWrite.All|
+|Delegated (work or school account)|EventListener.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EventListener.ReadWrite.All|
 
 [!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
