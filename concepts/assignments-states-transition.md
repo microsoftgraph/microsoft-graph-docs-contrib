@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for assignments in Microsoft Graph
 
-Assignments and submissions are an important part of the interaction between teachers and students' actions. This article describes the changes in the assignment states during the process flow and which education APIs in Microsoft Graph are involved.
+Assignments are an important part of the interaction between teachers and students' actions. This article describes the changes in the assignment states during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Assignment states and transitions
 
