@@ -12657,7 +12657,7 @@ items:
             - name: List resource roles
               href: api/accesspackagecatalog-list-accesspackageresourceroles.md
           - name: Access package custom workflow extension
-            displayName: Custom authentication extensionsCustom authentication extensions
+            displayName: Custom authentication extensions
             items:
             - name: Assignment request workflow extension
               href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -13132,6 +13132,29 @@ items:
               href: api/agreement-list-files.md
       - name: Identity and sign-in
         items:
+        - name: Authentication event listeners (preview)
+          href: resources/authenticationeventlistener.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartlistener.md
+          - name: On interactive authentication flow start
+            href: resources/oninteractiveauthflowstartlistener.md
+          - name: On authentication method load start
+            href: resources/onauthenticationmethodloadstartlistener.md
+          - name: On attribute collection
+            href: resources/onattributecollectionlistener.md
+          - name: On user create start
+            href: resources/onusercreatestartlistener.md
+          - name: List
+            href: api/identitycontainer-list-authenticationeventlisteners.md
+          - name: Create
+            href: api/identitycontainer-post-authenticationeventlisteners.md
+          - name: Get
+            href: api/authenticationeventlistener-get.md
+          - name: Update
+            href: api/authenticationeventlistener-update.md
+          - name: Delete
+            href: api/authenticationeventlistener-delete.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -13285,46 +13308,6 @@ items:
               href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
             - name: Get authentication method modes
               href: api/authenticationmethodmodedetail-get.md
-        - name: Custom authentication extensions (preview)
-          items:
-          - name: Custom authentication extension
-            href: resources/customauthenticationextension.md
-            items:
-            - name: On token issuance start
-              href: resources/ontokenissuancestartcustomextension.md
-            - name: List
-              href: api/identitycontainer-list-customauthenticationextensions.md
-            - name: Create
-              href: api/identitycontainer-post-customauthenticationextensions.md
-            - name: Get
-              href: api/customauthenticationextension-get.md
-            - name: Update
-              href: api/customauthenticationextension-update.md
-            - name: Delete
-              href: api/customauthenticationextension-delete.md
-          - name: Authentication event listeners
-            href: resources/authenticationeventlistener.md
-            items:
-            - name: On token issuance start
-              href: resources/ontokenissuancestartlistener.md
-            - name: On interactive authentication flow start
-              href: resources/oninteractiveauthflowstartlistener.md
-            - name: On authentication method load start
-              href: resources/onauthenticationmethodloadstartlistener.md
-            - name: On attribute collection
-              href: resources/onattributecollectionlistener.md
-            - name: On user create start
-              href: resources/onusercreatestartlistener.md
-            - name: List
-              href: api/identitycontainer-list-authenticationeventlisteners.md
-            - name: Create
-              href: api/identitycontainer-post-authenticationeventlisteners.md
-            - name: Get
-              href: api/authenticationeventlistener-get.md
-            - name: Update
-              href: api/authenticationeventlistener-update.md
-            - name: Delete
-              href: api/authenticationeventlistener-delete.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
@@ -13489,7 +13472,22 @@ items:
             - name: List tenant references
               href: api/outboundshareduserprofile-list-tenants.md
             - name: Remove personal data
-              href: api/tenantreference-removepersonaldata.md 
+              href: api/tenantreference-removepersonaldata.md
+        - name: Custom authentication extensions (preview)
+          href: resources/customauthenticationextension.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartcustomextension.md
+          - name: List
+            href: api/identitycontainer-list-customauthenticationextensions.md
+          - name: Create
+            href: api/identitycontainer-post-customauthenticationextensions.md
+          - name: Get
+            href: api/customauthenticationextension-get.md
+          - name: Update
+            href: api/customauthenticationextension-update.md
+          - name: Delete
+            href: api/customauthenticationextension-delete.md 
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
