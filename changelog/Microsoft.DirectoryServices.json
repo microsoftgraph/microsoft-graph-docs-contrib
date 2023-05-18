@@ -9852,7 +9852,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the **privilegedapproval** entity."
+          "Description": "Change the **privilegedapproval** entity.",
           "Target": "privilegedapproval"
         },
         {
