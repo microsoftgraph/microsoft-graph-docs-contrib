@@ -14177,13 +14177,7 @@ items:
           - name: Update user flow
             href: api/authenticationeventsflow-update.md
           - name: Delete user flow
-            href: api/authenticationeventsflow-delete.md
-          - name: List applications
-            href: api/authenticationconditionsapplications-list-includeapplications.md
-          - name: Add applications
-            href: api/authenticationconditionsapplications-post-includeapplications.md
-          - name: Remove applications
-            href: api/authenticationconditionsapplications-delete-includeapplications.md              
+            href: api/authenticationeventsflow-delete.md            
           - name: List identity providers
             href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
           - name: Add identity provider
@@ -14195,7 +14189,16 @@ items:
           - name: Add attributes
             href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
           - name: Remove attributes
-            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md    
+            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+          - name: Authentication condition applications
+            href: resources/authenticationconditionapplication.md
+            items:
+            - name: List applications
+              href: api/authenticationconditionsapplications-list-includeapplications.md
+            - name: Add applications
+              href: api/authenticationconditionsapplications-post-includeapplications.md
+            - name: Remove applications
+              href: api/authenticationconditionapplication-delete.md  
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges

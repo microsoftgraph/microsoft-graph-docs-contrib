@@ -1,5 +1,5 @@
 ---
-title: "Remove includeApplications (from a user flow)"
+title: "Delete authenticationConditionApplication (from a user flow)"
 description: "Remove an application from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Remove includeApplications (from a user flow)
+# Delete authenticationConditionApplication (from a user flow)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove or unlink an application from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This disables the authentication experience that's defined by the user flow for the application.
+Remove or unlink [an application](../resources/authenticationconditionapplication.md) from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This disables the authentication experience that's defined by the user flow for the application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/{application-id}
+DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/{appId}
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ## Examples
 
 #### Request
-The following is an example of a request.
+The following is an example of a request. `63856651-13d9-4784-9abf-20758d509e19` representes the **appId** of the application, also known as the client ID, not the object ID.
 <!-- {
   "blockType": "request",
   "name": "delete_includeApplications"
