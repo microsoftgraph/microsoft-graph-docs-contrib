@@ -41,7 +41,7 @@ GET /teams/{team-id}/channels/{channel-id}
 
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
->**Note:** The summary property can only be retrieved via the select parameter, as shown in Example 2 in this topic.
+>**Note:** The summary property can only be retrieved via the `select` parameter, as shown in Example 2 in this topic.
 
 ## Request headers
 
