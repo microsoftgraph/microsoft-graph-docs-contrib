@@ -634,6 +634,8 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id+eq+'a5228
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-with-rsc-permissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -686,6 +688,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 ## See also
 
 - [List apps installed in a team](team-list-installedapps.md)
@@ -693,4 +696,6 @@ Content-Type: application/json
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
-- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+
+
+

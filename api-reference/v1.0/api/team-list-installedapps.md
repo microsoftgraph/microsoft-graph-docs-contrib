@@ -355,6 +355,4 @@ Content-type: application/json
 }-->
 
 ## See also
-
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
-- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

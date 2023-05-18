@@ -306,9 +306,7 @@ Content-type: application/json
     ]
 }
 ```
-
 ## See also
-
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -321,4 +319,4 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+

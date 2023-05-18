@@ -130,6 +130,3 @@ HTTP/1.1 204 No content
 }
 -->
 
-## see also
-
-[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
