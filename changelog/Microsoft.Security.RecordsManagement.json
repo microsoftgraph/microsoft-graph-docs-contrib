@@ -352,7 +352,7 @@
             "ApiChange": "POST",
             "ChangedApiName": "retentionLabel",
             "ChangeType": "Addition",
-            "Description": "Added the [post filePlanDescriptor](https://learn.microsoft.com/en-us/graph/api/security-retentionlabel-post?view=graph-rest-beta) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
+            "Description": "Added the [post] (https://learn.microsoft.com/en-us/graph/api/security-retentionlabel-post?view=graph-rest-beta) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
             "Target": "subCategoryTemplate"
           }
         ],
