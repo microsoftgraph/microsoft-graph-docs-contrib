@@ -15,7 +15,7 @@ $queryParameters->filter = "membershipType eq 'private'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->get($requestConfiguration);
 
 
 ```

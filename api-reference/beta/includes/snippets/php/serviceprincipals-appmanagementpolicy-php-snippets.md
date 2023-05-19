@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->appManagementPoliciesById('appManagementPolicy-id')->post($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->appManagementPolicies()->byAppManagementPolicieId('appManagementPolicy-id')->post($requestBody);
 
 
 ```

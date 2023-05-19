@@ -1,9 +1,9 @@
 ---
 title: "Get appCredentialSignInActivity"
 doc_type: apiPageType
-description: "Get a appCredentialSignInActivity object that contains recent activity of an application credential."
+description: "Get an appCredentialSignInActivity object that contains recent activity of an application credential."
 ms.localizationpriority: medium
-author: "madansr7
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential.
+Get an [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) object that contains recent activity of an application credential.
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 ## HTTP request
@@ -52,7 +52,9 @@ If successful, this method returns a `200 OK` response code and an [appCredentia
 
 ## Examples
 
-### Example 1: Get appCredentialSignInActivities by entity id.
+### Example 1: Get an appCredentialSignInActivity by ID
+
+The following example shows how to get an **appCredentialSignInActivity** object by its ID.
 
 #### Request
 
@@ -60,11 +62,13 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appcredentialsigninactivity"
+  "name": "get_appcredentialsigninactivity",
+  "sampleKeys": ["ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u"]
 }-->
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u
 ```
+
 #### Response
 
 The following is an example of the response.
@@ -80,7 +84,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
-
 
 {
  "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
@@ -99,10 +102,11 @@ Content-length: 211
     "lastSignInRequestId": "b0a282a3-68ec-4ec8-aef0-290ed4350271"
   }
 }
-
 ```
 
-### Example 2:  Get appCredentialSignInActivities for a credential by keyId
+### Example 2:  Get an appCredentialSignInActivitiy for a credential by keyId
+
+The following example shows how to get an **appCredentialSignInActivity** object filtered by **keyId**.
 
 #### Request
 
@@ -139,13 +143,13 @@ Content-type: application/json
 }
 ```
 
+### Example 3:  Get an appCredentialSignInActivity for an application by appId
 
-### Example 3:  Get appCredentialSignInActivities for an application by appId
+The following example shows how to get an **appCredentialSignInActivity** object filtered by **appId**.
 
 #### Request
 
 The following is an example of the request.
-
 
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'

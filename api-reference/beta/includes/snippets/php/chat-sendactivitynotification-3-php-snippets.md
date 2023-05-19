@@ -49,7 +49,7 @@ $requestBody->setTemplateParameters($templateParametersArray);
 
 
 
-$graphServiceClient->chatsById('chat-id')->sendActivityNotification()->post($requestBody);
+$graphServiceClient->chats()->byChatId('chat-id')->sendActivityNotification()->post($requestBody);
 
 
 ```

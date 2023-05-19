@@ -21,7 +21,7 @@ $inboundTrust->setIsHybridAzureADJoinedDeviceAccepted(true);
 $requestBody->setInboundTrust($inboundTrust);
 
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partnersById('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody);
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody);
 
 
 ```

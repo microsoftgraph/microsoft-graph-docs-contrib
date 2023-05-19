@@ -1,19 +1,19 @@
 ---
-title: "Get servicePrincipalSignInActivities"
+title: "Get servicePrincipalSignInActivity"
 doc_type: apiPageType
-description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in Azure Active Directory tenant."
+description: "Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in an Azure Active Directory tenant."
 ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Get servicePrincipalSignInActivities
+# Get servicePrincipalSignInActivity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object the last signed in date for service principals based on various usage scenarios. A service principal could be used as a client or resource and it could be using delegated or app only auth context.
+Get a [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) object that contains sign-in activity information for a service principal in an Azure Active Directory tenant. You can use a service principal as a client or resource. A service principal supports delegated or app-only authentication context.
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/servicePrincipalSignInActivities/{id}
+GET /reports/servicePrincipalSignInActivities/{servicePrincipalSignInActivityId}
 ```
 
 ## Optional query parameters
@@ -53,16 +53,18 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 
 ## Examples
 
-### Example 1: Get service principal last sign-in.
+### Example 1: Get the last sign-in information for a service principal
+
+The following example shows how to get the last sign-in information for a service principal based on its ID.
 
 #### Request
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1"
+  "name": "get_signin_1",
+  "sampleKeys": ["ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3"]
 }-->
 ```http
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities/ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3
@@ -78,7 +80,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.servicePrincipalSignInActivity "
 } 
 -->
-
 
 ```http
 HTTP/1.1 200 OK
@@ -111,9 +112,13 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get servicePrincipalSignInActivities filtered by applicationId
+### Example 2: Get a servicePrincipalSignInActivity filtered by applicationId
+
+The following example shows how to get a **servicePrincipalSignInActivity** object filtered by **applicationId**.
 
 #### Request
+
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -125,6 +130,8 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 ```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -162,4 +169,3 @@ Content-type: application/json
      }
 }
 ```
-

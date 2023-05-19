@@ -17,7 +17,7 @@ $queryParameters->select = ["subject","bodyPreview","seriesMasterId","type","rec
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->eventsById('event-id')->instances()->get($requestConfiguration);
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->instances()->get($requestConfiguration);
 
 
 ```

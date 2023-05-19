@@ -22,7 +22,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->outlook()->tasksById('outlookTask-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->outlook()->tasks()->byTaskId('outlookTask-id')->attachments()->post($requestBody);
 
 
 ```
