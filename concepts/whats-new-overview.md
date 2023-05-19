@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## May 2023: New and generally available
 
 ### Identity and access | Directory management
-Intune sets properties on a [device](/graph/api/resources/device) registered in an organization - **deviceCategory**, **deviceOwnership**, **enrollmentProfileName**, and **registrationDateTime** - used by conditional access policies for multi-factor authentication.
+Intune sets properties on a [device](/graph/api/resources/device) registered in an organization used for multi-factor authentication in conditional access policies:  **deviceCategory**, **deviceOwnership**, **enrollmentProfileName**, and **registrationDateTime**.
 
 ### Identity and access | Identity and sign-in
 Specify as conditional access conditions whether to exclude or include [guests or external users](/graph/api/resources/conditionalAccessGuestsOrExternalUsers) as part of the [condition set for conditional access](/graph/api/resources/conditionalaccessconditionset).
@@ -31,7 +31,7 @@ Specify as conditional access conditions whether to exclude or include [guests o
 ## May 2023: New in preview only
 
 ### Identity and access | Governance
-When [getting a list](/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta) of every [decision for an instance of an access review](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta), access reviewers can expand to find the last user who modified any [insight that a user has low affiliation and is an outlier with other users within the group](/graph/api/resources/membershipoutlierinsight?view=graph-rest-beta).
+When [getting a list](/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta&preserve-view=true) of every [decision for an instance of an access review](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true), access reviewers can expand to find the last user who modified any [insight that a user has low affiliation and is an outlier with other users within the group](/graph/api/resources/membershipoutlierinsight?view=graph-rest-beta&preserve-view=true).
 
 ## April 2023: New and generally available
 
