@@ -12657,7 +12657,7 @@ items:
             - name: List resource roles
               href: api/accesspackagecatalog-list-accesspackageresourceroles.md
           - name: Access package custom workflow extension
-            displayName: Custom authentication extensionsCustom authentication extensions
+            displayName: Custom authentication extensions
             items:
             - name: Assignment request workflow extension
               href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -13132,6 +13132,29 @@ items:
               href: api/agreement-list-files.md
       - name: Identity and sign-in
         items:
+        - name: Authentication event listeners (preview)
+          href: resources/authenticationeventlistener.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartlistener.md
+          - name: On interactive authentication flow start
+            href: resources/oninteractiveauthflowstartlistener.md
+          - name: On authentication method load start
+            href: resources/onauthenticationmethodloadstartlistener.md
+          - name: On attribute collection
+            href: resources/onattributecollectionlistener.md
+          - name: On user create start
+            href: resources/onusercreatestartlistener.md
+          - name: List
+            href: api/identitycontainer-list-authenticationeventlisteners.md
+          - name: Create
+            href: api/identitycontainer-post-authenticationeventlisteners.md
+          - name: Get
+            href: api/authenticationeventlistener-get.md
+          - name: Update
+            href: api/authenticationeventlistener-update.md
+          - name: Delete
+            href: api/authenticationeventlistener-delete.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -13285,36 +13308,6 @@ items:
               href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
             - name: Get authentication method modes
               href: api/authenticationmethodmodedetail-get.md
-        - name: Custom authentication extensions (preview)
-          items:
-          - name: Custom authentication extension
-            href: resources/customauthenticationextension.md
-            items:
-            - name: On token issuance start
-              href: resources/ontokenissuancestartcustomextension.md
-            - name: List
-              href: api/identitycontainer-list-customauthenticationextensions.md
-            - name: Create
-              href: api/identitycontainer-post-customauthenticationextensions.md
-            - name: Get
-              href: api/customauthenticationextension-get.md
-            - name: Update
-              href: api/customauthenticationextension-update.md
-            - name: Delete
-              href: api/customauthenticationextension-delete.md
-          - name: Authentication event listeners
-            href: resources/authenticationeventlistener.md
-            items:
-            - name: List
-              href: api/identitycontainer-list-authenticationeventlisteners.md
-            - name: Create
-              href: api/identitycontainer-post-authenticationeventlisteners.md
-            - name: Get
-              href: api/authenticationeventlistener-get.md
-            - name: Update
-              href: api/authenticationeventlistener-update.md
-            - name: Delete
-              href: api/authenticationeventlistener-delete.md
         - name: Certificate-based authentication configuration
           displayName: CBA
           href: resources/certificatebasedauthconfiguration.md
@@ -13479,7 +13472,22 @@ items:
             - name: List tenant references
               href: api/outboundshareduserprofile-list-tenants.md
             - name: Remove personal data
-              href: api/tenantreference-removepersonaldata.md 
+              href: api/tenantreference-removepersonaldata.md
+        - name: Custom authentication extensions (preview)
+          href: resources/customauthenticationextension.md
+          items:
+          - name: On token issuance start
+            href: resources/ontokenissuancestartcustomextension.md
+          - name: List
+            href: api/identitycontainer-list-customauthenticationextensions.md
+          - name: Create
+            href: api/identitycontainer-post-customauthenticationextensions.md
+          - name: Get
+            href: api/customauthenticationextension-get.md
+          - name: Update
+            href: api/customauthenticationextension-update.md
+          - name: Delete
+            href: api/customauthenticationextension-delete.md 
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -14008,7 +14016,7 @@ items:
             href: api/trustframework-put-trustframeworkpolicy.md
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
-        - name: User flows
+        - name: User flows for Azure AD and Azure AD B2C
           items:
           - name: User flow (deprecated)
             items:
@@ -14022,7 +14030,7 @@ items:
               href: api/identityuserflow-get.md
             - name: Delete
               href: api/identityuserflow-delete.md
-          - name: B2C user flows (preview)
+          - name: User flows for Azure AD B2C (preview)
             items:
             - name: B2C user flow
               href: resources/b2cidentityuserflow.md
@@ -14060,7 +14068,7 @@ items:
               href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
             - name: Configure an API connector
               href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-          - name: Self-service sign up user flows in Azure AD
+          - name: Self-service sign up user flows for Azure AD
             items:
             - name: Self-service sign up user flow
               href: resources/b2xidentityuserflow.md
@@ -14154,6 +14162,43 @@ items:
               href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
               href: api/identityapiconnector-delete.md
+        - name: User flows for Azure AD for customers (preview)
+          items:
+          - name: Authentication events flow
+            href: resources/authenticationeventsflow.md
+          - name: Self-service sign up user flow
+            href: resources/externalusersselfservicesignupeventsflow.md
+          - name: List user flows
+            href: api/identitycontainer-list-authenticationeventsflows.md
+          - name: Create user flow
+            href: api/identitycontainer-post-authenticationeventsflows.md
+          - name: Get user flow
+            href: api/authenticationeventsflow-get.md
+          - name: Update user flow
+            href: api/authenticationeventsflow-update.md
+          - name: Delete user flow
+            href: api/authenticationeventsflow-delete.md            
+          - name: List identity providers
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+          - name: Add identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+          - name: Remove identity provider
+            href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+          - name: List attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+          - name: Add attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+          - name: Remove attributes
+            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+          - name: Authentication condition applications
+            href: resources/authenticationconditionapplication.md
+            items:
+            - name: List applications
+              href: api/authenticationconditionsapplications-list-includeapplications.md
+            - name: Add applications
+              href: api/authenticationconditionsapplications-post-includeapplications.md
+            - name: Remove applications
+              href: api/authenticationconditionapplication-delete.md  
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
