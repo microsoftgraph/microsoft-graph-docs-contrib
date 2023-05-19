@@ -29,11 +29,7 @@ The following APIs are currently protected, and all use [Microsoft Graph applica
 > [!NOTE]
 > [Send message](/graph/api/channel-post-messages) is not a protected API.
 
-## Request access to protected APIs
-
-To request access to these protected APIs, complete the following [request form](https://aka.ms/teamsgraph/requestaccess). We usually review access requests every Wednesday and deploy approvals every Friday or Monday, except during major holiday weeks in the U.S. Submissions during those weeks are processed the following non-holiday week.
-
-To verify whether your request has been approved, test your application access on the next applicable Monday. If we have additional questions about the request, we will contact the email specified in the form.
+You can call these protected APIs as long as other requirements such as [app registration](/azure/active-directory/develop/quickstart-register-app) and [subscription association](metered-api-setup.md) are met.
 
 ## See also
 
