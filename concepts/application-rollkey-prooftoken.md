@@ -7,12 +7,9 @@ author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
 ms.date: 05/05/2023
-ms.custom: ai-gen-docs
 ---
 
 # Generate proof of possession tokens for rolling keys
-
-[!INCLUDE [ai-generated-attribution](../includes/ai-generated-attribution.md)]
 
 You can use the **addKey** and **removeKey** methods defined on the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources to roll expiring keys programmatically.
 
@@ -22,8 +19,8 @@ As part of the request validation for these methods, a proof of possession of an
 
 The token should contain the following claims:
 
-- `aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.
-- `iss` - Issuer needs to be the Azure AD __ObjectId__  of the application that is making the call (not the applicationId or clientId).
+- `aud` - Audience needs to be `00000003-0000-0000-c000-000000000000`.
+- `iss` - Issuer needs to be the Azure AD object ID of the application that is making the call (not the appId).
 - `nbf` - Not before time.
 - `exp` - Expiration time should be "nbf" + 10 mins.
 
@@ -52,7 +49,7 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
             X509Certificate2 signingCert = new X509Certificate2(pfxFilePath, password);
 
             // audience
-            string aud = $"00000002-0000-0000-c000-000000000000";
+            string aud = $"00000003-0000-0000-c000-000000000000";
 
             // aud and iss are the only required claims.
             var claims = new Dictionary<string, object>()
@@ -81,33 +78,35 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
 
 # [PowerShell](#tab/powershell)
 ```powershell
-# Configure the following
-$pfxFilePath = "<Path to your certificate file>"
-$password = "<Certificate password>"
-$objectId = "<id of the application or servicePrincipal object>"
-
-# Get signing certificate
-$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($pfxFilePath, $password)
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$PfxFilePath,
+    
+    [SecureString]$Password = (Read-Host 'Provide Certificate Password' -AsSecureString),
+    
+    [Parameter(Mandatory = $true)]
+    [string]$ObjectID
+)
 
 # audience
-$aud = "00000002-0000-0000-c000-000000000000"
+$aud = "00000003-0000-0000-c000-000000000000"
 
 # aud and iss are the only required claims.
-$claims = @{
-    "aud" = $aud
-    "iss" = $objectId
-}
+$claims = [System.Collections.Generic.Dictionary[string,object]]::new()
+$claims.aud = $aud
+$claims.iss = $objectId
 
 # token validity should not be more than 10 minutes
-$now = Get-Date -Utc
-$securityTokenDescriptor = @{
+$now = (Get-Date).ToUniversalTime()
+
+$securityTokenDescriptor = [Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor]@{
     Claims = $claims
     NotBefore = $now
     Expires = $now.AddMinutes(10)
-    SigningCredentials = New-Object Microsoft.IdentityModel.Tokens.X509SigningCredentials($cert)
+    SigningCredentials = [Microsoft.IdentityModel.Tokens.X509SigningCredentials]::new($cert)
 }
 
-$handler = New-Object Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler
+$handler = [Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler]::new()
 $token = $handler.CreateToken($securityTokenDescriptor)
 Write-Output $token
 ```
