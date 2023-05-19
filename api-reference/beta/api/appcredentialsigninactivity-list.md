@@ -58,7 +58,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_signins_1"
+  "name": "list_appcredentialsigninactivities"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
@@ -68,6 +68,11 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.appCredentialSignInActivity)"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
