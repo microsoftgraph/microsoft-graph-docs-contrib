@@ -34,9 +34,9 @@ One of the following permissions is required to call this API to retrieve rules 
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**TODO: Provide applicable permissions.**|
+|Application|RoleManagementPolicy.Read.AzureADGroup|
 
 ## HTTP request
 
