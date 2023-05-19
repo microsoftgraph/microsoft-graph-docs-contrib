@@ -63,7 +63,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_signin_1",
+  "name": "get_serviceprincipal_last_signin_1",
   "sampleKeys": ["ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3"]
 }-->
 ```http
@@ -77,10 +77,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity "
-} 
--->
-
+  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -122,9 +120,8 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_serviceprincipal_last_signin_3"
-}-->
-
+  "name": "get_serviceprincipal_last_signin_2"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'
 ```
@@ -136,9 +133,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity "
+  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

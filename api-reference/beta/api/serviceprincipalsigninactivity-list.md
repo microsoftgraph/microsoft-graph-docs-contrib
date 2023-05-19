@@ -64,6 +64,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_servicePrincipalSignInActivities"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 ```
@@ -72,6 +76,11 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.servicePrincipalSignInActivity)"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

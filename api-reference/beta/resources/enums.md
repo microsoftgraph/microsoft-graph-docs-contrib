@@ -35,6 +35,24 @@ Namespace: microsoft.graph
 | servicePrincipal   |
 | unknownFutureValue |
 
+### authenticationAttributeCollectionInputType values 
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
+
+### userType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
 ### assignmentType values
 
 | Member             |
@@ -2889,12 +2907,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### plannerContainerType values
 
-| Member             |
-| :----------------- |
-| group              |
-| unknownFutureValue |
-| roster             |
-| project            |
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
+|project|
+|driveItem|
 
 ### plannerPlanContextType values
 

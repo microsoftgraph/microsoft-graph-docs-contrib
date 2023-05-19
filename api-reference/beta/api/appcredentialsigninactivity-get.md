@@ -62,7 +62,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appcredentialsigninactivity",
+  "name": "get_appcredentialsigninactivity_1",
   "sampleKeys": ["ODNmNDUyOTYtZmI4Zi00YWFhLWEzOTktYWM1MTA4NGUwMmI3fGFwcGxpY2F0aW9u"]
 }-->
 ```http
@@ -78,8 +78,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.appCredentialSignInActivity"
 } -->
-
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -112,6 +110,10 @@ The following example shows how to get an **appCredentialSignInActivity** object
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_appcredentialsigninactivity_2"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=keyId eq '83f45296-fb8f-4aaa-a399-ac51084e02b7'
 ```
@@ -120,6 +122,11 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appCredentialSignInActivity"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -151,6 +158,10 @@ The following example shows how to get an **appCredentialSignInActivity** object
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_appcredentialsigninactivity_3"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'
 ```
@@ -159,6 +170,11 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appCredentialSignInActivity"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
