@@ -19,7 +19,7 @@ $requestBody->setName('String');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->restore()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->restore()->post($requestBody);
 
 
 ```

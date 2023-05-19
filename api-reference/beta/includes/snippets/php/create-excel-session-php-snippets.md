@@ -14,7 +14,7 @@ $requestBody->setPersistChanges(true);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->createSession()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->createSession()->post($requestBody);
 
 
 ```

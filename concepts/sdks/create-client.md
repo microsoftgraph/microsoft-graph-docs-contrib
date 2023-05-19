@@ -136,8 +136,6 @@ $user = $graph->createRequest("GET", "/me")
 
 # [Go](#tab/Go)
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
 ```go
 import (
     "context"

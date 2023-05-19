@@ -14,7 +14,7 @@ $requestBody->setColor(new CategoryColor('preset15'));
 
 
 
-$result = $graphServiceClient->me()->outlook()->masterCategoriesById('outlookCategory-id')->patch($requestBody);
+$result = $graphServiceClient->me()->outlook()->masterCategories()->byMasterCategorieId('outlookCategory-id')->patch($requestBody);
 
 
 ```

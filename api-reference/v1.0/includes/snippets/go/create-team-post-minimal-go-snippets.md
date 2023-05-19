@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,9 +23,10 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
+odataType := "#microsoft.graph.aadUserConversationMember"
+conversationMember.SetOdataType(&odataType)
 roles := []string {
 	"owner",
-
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{

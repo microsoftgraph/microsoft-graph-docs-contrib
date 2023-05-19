@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/directoryObjects/15c
 
 
 
-$graphServiceClient->directoryRolesById('directoryRole-id')->members()->ref()->post($requestBody);
+$graphServiceClient->directoryRoles()->byDirectoryRoleId('directoryRole-id')->members()->ref()->post($requestBody);
 
 
 ```
