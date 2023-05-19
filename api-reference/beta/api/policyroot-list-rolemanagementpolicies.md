@@ -43,7 +43,7 @@ GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType 
 ```
 
 ## Optional query parameters
-This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. To retrieve Azure AD roles policies, **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`. To retrieve Pim for Group policies for member and owner, **scopeId** must be `groud ID` and, **scopeType** must be `Group`. You can also use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. To retrieve Azure AD roles policies, **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`. To retrieve Pim for Group policies for member and owner, **scopeId** must be `group ID` and, **scopeType** must be `Group`. You can also use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
