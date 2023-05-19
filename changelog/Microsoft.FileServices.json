@@ -191,14 +191,6 @@
         },
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepoint",
-          "ChangeType": "Addition",
-          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) topic to the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/resources/sharepoint?view=graph-rest-beta) resource type.",
-          "Target": "sharepoint"
-        },
-        {
-          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
           "ApiChange": "EnumType",
           "ChangedApiName": "imageTaggingChoice",
           "ChangeType": "Addition",
