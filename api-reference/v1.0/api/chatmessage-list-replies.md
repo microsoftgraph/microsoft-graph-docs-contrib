@@ -150,7 +150,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616989750004",
@@ -190,7 +191,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         },
         {
             "id": "1616989747416",
@@ -230,7 +232,8 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
-            "reactions": []
+            "reactions": [],
+            "messageHistory": []
         }
     ]
 }
