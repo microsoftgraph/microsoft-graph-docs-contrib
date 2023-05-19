@@ -136,7 +136,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-idlesessionsignout?view=graph-rest-beta) resource type.",
+          "Description": "Added the [idleSessionSignOut](https://learn.microsoft.com/en-us/graph/api/resources/idlesessionsignout?view=graph-rest-beta) resource type.",
           "Target": "idleSessionSignOut"
         },
         {
@@ -144,7 +144,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "idleSessionSignOut",
           "ChangeType": "Addition",
-          "Description": "Added the **idleSessionSignOut** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **idleSessionSignOut** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -152,7 +152,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLegacyAuthProtocolsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLegacyAuthProtocolsEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         },
         {
@@ -160,7 +160,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isRequireAcceptingUserToMatchInvitedUserEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource.",
+          "Description": "Added the **isRequireAcceptingUserToMatchInvitedUserEnabled** property to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource.",
           "Target": "settings"
         }
       ],
@@ -186,7 +186,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) resource type and supported methods.",
           "Target": "settings"
         },
         {
@@ -194,7 +194,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
-          "Description": "Added the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource type.",
+          "Description": "Added the [settings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointsettings?view=graph-rest-beta) topic to the [sharepoint](https://learn.microsoft.com/en-us/graph/api/resources/resources/sharepoint?view=graph-rest-beta) resource type.",
           "Target": "sharepoint"
         },
         {
