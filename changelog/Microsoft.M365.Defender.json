@@ -901,7 +901,7 @@
 					"ApiChange": "Member",
 					"ChangedApiName": "awaitingAction",
 					"ChangeType": "Addition",
-					"Description": "Added the `awaitingAction` member to the [incidentStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-1.0#incidentstatus-values) enumeration.",
+					"Description": "Added the `awaitingAction` member to the **incidentStatus** enumeration.",
 					"Target": "incidentStatus"
 				}
 			],
