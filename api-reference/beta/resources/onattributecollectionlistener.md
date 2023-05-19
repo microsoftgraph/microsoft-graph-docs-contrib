@@ -1,19 +1,19 @@
 ---
-title: "onTokenIssuanceStartListener resource type"
-description: "A listener for when a token is about to be issued to your application."
-author: "soneff"
+title: "onAttributeCollectionListener resource type"
+description: "Listener for the onAttributeCollection event"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# onTokenIssuanceStartListener resource type
+# onAttributeCollectionListener resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A listener for when a token is about to be issued to your application.
+Used for configuring the collection of attributes during user sign up as defined in the **onAttributeCollection** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. This includes which attributes to collect and how to display them.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
@@ -27,14 +27,16 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |[Update authenticationEventListener](../api/authenticationeventlistener-update.md)|None|Update the properties of an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type. The type can be one of the following subtypes derived from authenticationEventListener: <br/> <li>[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) <li>[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) <li>[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) <li>[onAttributeCollectionListener](../resources/onattributecollectionlistener.md)<li>[onUserCreateStartListener](../resources/onusercreatestartlistener.md)|
 |[Delete authenticationEventListener](../api/authenticationeventlistener-delete.md)|None|Delete an [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) object type. The type can be one of the following subtypes derived from authenticationEventListener: <br/> <li>[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) <li>[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) <li>[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) <li>[onAttributeCollectionListener](../resources/onattributecollectionlistener.md)<li>[onUserCreateStartListener](../resources/onusercreatestartlistener.md)|
 
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](authenticationeventsflow.md). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which onTokenIssuanceStartListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener.|
-|id|String|Identifier for the onTokenIssuanceStartListener. Inherited from [entity](../resources/entity.md).|
-|priority|Int32| The priority of this handler. Priority should be set to 500 for onTokenIssuanceStartListeners. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|id|String|Required. Inherited from [entity](../resources/entity.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+
 
 ## Relationships
 None.
@@ -44,27 +46,22 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.onTokenIssuanceStartListener",
+  "@odata.type": "microsoft.graph.onAttributeCollectionListener",
   "baseType": "microsoft.graph.authenticationEventListener",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+  "@odata.type": "#microsoft.graph.onAttributeCollectionListener",
   "id": "String (identifier)",
   "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
   "authenticationEventsFlowId": "String",
   "handler": {
-    "@odata.type": "microsoft.graph.onTokenIssuanceStartHandler"
+    "@odata.type": "microsoft.graph.onAttributeCollectionHandler"
   }
 }
 ```

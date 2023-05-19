@@ -1,19 +1,19 @@
 ---
-title: "onTokenIssuanceStartListener resource type"
-description: "A listener for when a token is about to be issued to your application."
-author: "soneff"
+title: "onUserCreateStartListener resource type"
+description: "Listener for the onUserCreateStart event"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# onTokenIssuanceStartListener resource type
+# onUserCreateStartListener resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A listener for when a token is about to be issued to your application.
+Used for configuring actions done during user creation as defined in the **onUserCreateStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
@@ -30,11 +30,12 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](authenticationeventsflow.md). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which onTokenIssuanceStartListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met for this onTokenIssuanceStartListener.|
-|id|String|Identifier for the onTokenIssuanceStartListener. Inherited from [entity](../resources/entity.md).|
-|priority|Int32| The priority of this handler. Priority should be set to 500 for onTokenIssuanceStartListeners. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|id|String|Required. Inherited from [entity](../resources/entity.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|handler|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+
 
 ## Relationships
 None.
@@ -44,27 +45,22 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.onTokenIssuanceStartListener",
+  "@odata.type": "microsoft.graph.onUserCreateStartListener",
   "baseType": "microsoft.graph.authenticationEventListener",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
+  "@odata.type": "#microsoft.graph.onUserCreateStartListener",
   "id": "String (identifier)",
   "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "tags": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
   "authenticationEventsFlowId": "String",
   "handler": {
-    "@odata.type": "microsoft.graph.onTokenIssuanceStartHandler"
+    "@odata.type": "microsoft.graph.onUserCreateStartHandler"
   }
 }
 ```
