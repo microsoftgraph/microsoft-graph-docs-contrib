@@ -2871,6 +2871,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |roster|
 |project|
+|driveItem|
 
 ### plannerPlanContextType values
 
