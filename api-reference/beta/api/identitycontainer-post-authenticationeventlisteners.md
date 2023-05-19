@@ -12,7 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. Only the [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) type is supported.
+Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
+
+- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md)
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +52,14 @@ You can specify the following properties when creating an **authenticationEventL
 
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
+|handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionListener** listener type.|
+|handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAuthenticationMethodLoadStartListener** listener type.|
+|handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
+|handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
+|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
 
