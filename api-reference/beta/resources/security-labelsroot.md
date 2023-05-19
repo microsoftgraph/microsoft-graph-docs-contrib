@@ -32,12 +32,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[List departments](../api/security-labelsroot-list-departments.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md) collection|Get the departmentTemplate resources from the departments navigation property.|
 |[Create departments](../api/security-labelsroot-post-departments.md)|[microsoft.graph.security.departmentTemplate](../resources/security-departmenttemplate.md)|Create a new departmentTemplate object.|
 |[List filePlanReferences](../api/security-labelsroot-list-fileplanreferences.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) collection|Get the filePlanReferenceTemplate resources from the filePlanReferences navigation property.|
-|[Create filePlanReferences](../api/ssecurity-labelsroot-post-fileplanreferences.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new filePlanReferenceTemplate object.|
+|[Create filePlanReferences](../api/security-labelsroot-post-fileplanreferences.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new filePlanReferenceTemplate object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-None.
+|None.|
 
 
 

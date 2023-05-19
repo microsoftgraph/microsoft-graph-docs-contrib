@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|Represents the user who created the filePlanDescriptorTemplate column.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the filePlanDescriptorTemplate column.|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the filePlanDescriptorTemplate is created.|
 |displayName|String|Unique string that defines a filePlanDescriptorTemplate name.|
 |id|String|Unique ID of the filePlanDecriptorTemplate column. Inherited from [microsoft.graph.entity](../resources/entity.md).|

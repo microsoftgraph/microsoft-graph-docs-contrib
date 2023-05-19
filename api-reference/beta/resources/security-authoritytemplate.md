@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |:---|:---|:---|
 |[List authorities](../api/security-labelsroot-list-authorities.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) collection|Get a list of the [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) objects and their properties.|
 |[Create authorities](../api/security-labelsroot-post-authorities.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Create a new [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
-|[Get authorities](../api/security-authoritytemplate-get)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
+|[Get authorities](../api/security-authoritytemplate-get.md)|[microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
 |[Delete authorities](../api/security-labelsroot-delete-authorities.md)|None|Delete a [microsoft.graph.security.authorityTemplate](../resources/security-authoritytemplate.md) object.|
 
 ## Properties
