@@ -93,7 +93,7 @@ To learn more about Microsoft 365 groups, see [Overview of Microsoft 365 groups 
 Apart from configuring the standard group properties, you can also configure the following settings for Microsoft 365 groups.
 
 - [Group expiration](../resources/grouplifecyclepolicy.md)
-- [Group settings](/graph/group-settings-overview) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
+- [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
 
 ## Security groups and mail-enabled security groups
 
