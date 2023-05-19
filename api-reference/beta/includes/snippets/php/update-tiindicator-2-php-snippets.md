@@ -24,7 +24,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->security()->tiIndicators()->byTiIndicatorId('tiIndicator-id')->patch($requestBody, $requestConfiguration);
 
 
 ```

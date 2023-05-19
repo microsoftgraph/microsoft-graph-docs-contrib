@@ -24,7 +24,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->attachments()->post($requestBody);
+$result = $graphServiceClient->me()->todo()->lists()->byListId('todoTaskList-id')->tasks()->byTaskId('todoTask-id')->attachments()->post($requestBody);
 
 
 ```

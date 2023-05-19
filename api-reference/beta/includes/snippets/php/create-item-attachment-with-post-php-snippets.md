@@ -66,7 +66,7 @@ $post->setAttachments($attachmentsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->reply()->post($requestBody);
 
 
 ```

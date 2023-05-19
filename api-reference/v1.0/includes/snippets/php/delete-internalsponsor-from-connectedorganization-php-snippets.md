@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizationsById('connectedOrganization-id')->internalSponsorsById('directoryObject-id')->ref()->delete();
+$graphServiceClient->identityGovernance()->entitlementManagement()->connectedOrganizations()->byConnectedOrganizationId('connectedOrganization-id')->internalSponsors()->byInternalSponsorId('directoryObject-id')->ref()->delete();
 
 
 ```

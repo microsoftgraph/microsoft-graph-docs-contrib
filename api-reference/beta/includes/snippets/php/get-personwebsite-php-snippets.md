@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->profile()->websitesById('personWebsite-id')->get();
+$result = $graphServiceClient->me()->profile()->websites()->byWebsiteId('personWebsite-id')->get();
 
 
 ```

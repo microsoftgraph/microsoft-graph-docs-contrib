@@ -15,7 +15,7 @@ $queryParameters->filter = "lastModifiedDateTime gt 2019-11-01T00:00:00Z and las
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->channels()->getAllMessages()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->getAllMessages()->get($requestConfiguration);
 
 
 ```

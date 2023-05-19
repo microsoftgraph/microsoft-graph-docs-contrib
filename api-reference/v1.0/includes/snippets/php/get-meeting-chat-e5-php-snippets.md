@@ -15,7 +15,7 @@ $queryParameters->expand = ["lastMessagePreview"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->get($requestConfiguration);
 
 
 ```

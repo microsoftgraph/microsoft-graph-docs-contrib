@@ -32,7 +32,7 @@ $requestBody->setAnnotations($annotationsArray);
 
 
 
-$result = $graphServiceClient->organizationById('organization-id')->settings()->profileCardProperties()->post($requestBody);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->settings()->profileCardProperties()->post($requestBody);
 
 
 ```

@@ -20,7 +20,7 @@ $queryParameters->select = ["displayName"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->contacts()->delta()->get($requestConfiguration);
 
 
 ```
