@@ -9860,7 +9860,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
+          "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions: List, Create, Cancel, My.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
