@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->contactFoldersById('contactFolder-id')->delete();
+$graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->delete();
 
 
 ```

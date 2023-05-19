@@ -15,7 +15,7 @@ $requestBody->setAppliesToCombinations([$requestBody->setAuthenticationMethodMod
 
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policiesById('authenticationStrengthPolicy-id')->combinationConfigurationsById('authenticationCombinationConfiguration-id')->patch($requestBody);
+$result = $graphServiceClient->identity()->conditionalAccess()->authenticationStrength()->policies()->byPolicieId('authenticationStrengthPolicy-id')->combinationConfigurations()->byCombinationConfigurationId('authenticationCombinationConfiguration-id')->patch($requestBody);
 
 
 ```

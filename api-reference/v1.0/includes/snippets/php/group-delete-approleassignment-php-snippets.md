@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->groupsById('group-id')->appRoleAssignmentsById('appRoleAssignment-id')->delete();
+$graphServiceClient->groups()->byGroupId('group-id')->appRoleAssignments()->byAppRoleAssignmentId('appRoleAssignment-id')->delete();
 
 
 ```

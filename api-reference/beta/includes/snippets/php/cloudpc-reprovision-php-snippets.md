@@ -16,7 +16,7 @@ $requestBody->setOsVersion(new CloudPcOperatingSystem('windows10'));
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->reprovision()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->byCloudPCId('cloudPC-id')->reprovision()->post($requestBody);
 
 
 ```
