@@ -150,7 +150,8 @@ Content-type: application/json
     },
     "attachments": [],
     "mentions": [],
-    "reactions": []
+    "reactions": [],
+    "messageHistory": []
 }
 ```
 
