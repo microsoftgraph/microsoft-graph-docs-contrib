@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{id}
+PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{learningCourseActivityId}
 ```
 
 ## Request headers
