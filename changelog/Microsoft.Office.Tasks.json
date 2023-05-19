@@ -1393,14 +1393,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharedWithContainers",
           "ChangeType": "Addition",
-          "Description": "Added the `sharedWithContainers` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharedWithContainers** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
       "Id": "7f321a9a-aa22-4bd3-8390-7739a47b1709",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-01-12T00:48:02.4923089Z",
+      "CreatedDateTime": "2023-05-18T00:48:02.4923089Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
