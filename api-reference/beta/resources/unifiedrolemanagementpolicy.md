@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identity](../resources/identity.md)|The identity who last modified the role setting.|
 |lastModifiedDateTime|DateTimeOffset|The time when the role setting was last modified.|
 |scopeId|String|The identifier of the scope where the policy is created. Can be `/` for the tenant or a group ID. Required.|
-|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`. Required.|
+|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`, `Group`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|

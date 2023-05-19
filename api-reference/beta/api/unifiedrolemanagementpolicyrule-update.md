@@ -22,13 +22,21 @@ For more information about rules for Azure AD roles and examples of updating rul
 + [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API to update a rule defined for an Azure AD roles policy. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
+
+One of the following permissions is required to call this API to update a rule defined for a policy of Pim for Group membership or ownership. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
 

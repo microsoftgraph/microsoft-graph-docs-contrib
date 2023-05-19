@@ -12,16 +12,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of all role management policy assignments including the policies and rules associated with the Azure AD roles.
+Get the details of all role management policy assignments including the policies and rules associated with the Azure AD roles, or Pim for Group membership and ownership.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API to retrieve the details of all Azure AD roles policy assignments. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+
+
+One of the following permissions is required to call this API to retrieve the details of all policy assignments of Pim for Group membership and ownership. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
 
@@ -34,7 +43,7 @@ GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and s
 ```
 
 ## Optional query parameters
-This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. To retrieve Azure AD roles policies, **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`. To retrieve Pim for Group policies for member and owner, **scopeId** must be `groud ID` and, **scopeType** must be `Group`. You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
