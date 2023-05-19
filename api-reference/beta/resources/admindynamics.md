@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # adminDynamics resource type
 
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,12 +21,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminDynamics](../api/tenantadmin-admindynamics-get.md)|[microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md)|Read the properties and relationships of a [microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md) object.|
+|[Get adminDynamics](../api/admindynamics-get.md)|[microsoft.graph.adminDynamics](../resources/admindynamics.md)|Read the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.tenantAdmin.customerVoiceSettings](../resources/tenantadmin-customervoicesettings.md)|**Company wide settings for Dynamics customer voice**|
+|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|**Company wide settings for Dynamics customer voice**|
 |id|String|**Unique Id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
@@ -37,17 +37,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantAdmin.adminDynamics",
+  "@odata.type": "microsoft.graph.adminDynamics",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminDynamics",
+  "@odata.type": "#microsoft.graph.adminDynamics",
   "id": "String (identifier)",
   "customerVoice": {
-    "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings"
+    "@odata.type": "microsoft.graph.customerVoiceSettings"
   }
 }
 ```

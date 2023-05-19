@@ -1,6 +1,6 @@
 ---
 title: "Get adminDynamics"
-description: "Read the properties and relationships of a microsoft.graph.tenantAdmin.adminDynamics object."
+description: "Read the properties and relationships of a microsoft.graph.adminDynamics object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Get adminDynamics
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md) object.
+Read the properties and relationships of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object in the response body.
 
 ## Examples
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantAdmin.adminDynamics"
+  "@odata.type": "microsoft.graph.adminDynamics"
 }
 -->
 ``` http
@@ -77,10 +77,10 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.tenantAdmin.adminDynamics",
+    "@odata.type": "#microsoft.graph.adminDynamics",
     "id": "6099c226-4296-c20b-eb7f-a5f7c648cbed",
     "customerVoice": {
-      "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings",
+      "@odata.type": "microsoft.graph.customerVoiceSettings",
       "isRestrictedSurveyAccessEnabled": "false",
       "isRecordIdentityByDefaultEnabled": "true",
       "isInOrgFormsPhishingScanEnabled": "true"

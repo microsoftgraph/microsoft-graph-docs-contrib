@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # customerVoiceSettings resource type
 
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,12 +29,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings"
+  "@odata.type": "microsoft.graph.customerVoiceSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.customerVoiceSettings",
+  "@odata.type": "#microsoft.graph.customerVoiceSettings",
   "isRestrictedSurveyAccessEnabled": "Boolean",
   "isRecordIdentityByDefaultEnabled": "Boolean",
   "isInOrgFormsPhishingScanEnabled": "Boolean"

@@ -1,27 +1,27 @@
 ---
-title: "Update adminDynamics"
-description: "Update the properties of a microsoft.graph.tenantAdmin.adminDynamics object."
+title: "Update adminForms"
+description: "Update the properties of a microsoft.graph.adminForms object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Update adminDynamics
-Namespace: microsoft.graph.tenantAdmin
+# Update adminForms
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md) object.
+Update the properties of a [microsoft.graph.adminForms](../resources/adminforms.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**OrgSettings-DynamicsVoice.ReadWrite.All**|
+|Delegated (work or school account)|**OrgSettings-Forms.ReadWrite.All**|
 |Delegated (personal Microsoft account)|**Not supported.**|
-|Application|**OrgSettings-DynamicsVoice.ReadWrite.All**|
+|Application|**OrgSettings-Forms.ReadWrite.All**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /admin/dynamics
+PATCH /admin/forms
 ```
 
 ## Request headers
@@ -45,13 +45,13 @@ PATCH /admin/dynamics
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.tenantAdmin.customerVoiceSettings](../resources/tenantadmin-customervoicesettings.md)|**Company wide settings for Dynamics customer voice** Required.|
+|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|**Company wide settings for Microsoft Forms** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantAdmin.adminDynamics](../resources/tenantadmin-admindynamics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminForms](../resources/adminforms.md) object in the response body.
 
 ## Examples
 
@@ -59,20 +59,24 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_admindynamics"
+  "name": "update_adminforms"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/dynamics
+PATCH https://graph.microsoft.com/beta/admin/forms
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminDynamics",
-  "customerVoice": {
-    "@odata.type": "microsoft.graph.tenantAdmin.customerVoiceSettings",
-    "isRestrictedSurveyAccessEnabled": "false",
-    "isRecordIdentityByDefaultEnabled": "false",
-    "isInOrgFormsPhishingScanEnabled": "false"
+  "@odata.type": "#microsoft.graph.adminForms",
+  "settings": {
+    "@odata.type": "microsoft.graph.formsSettings",
+    "isExternalSendFormEnabled": true,
+    "isExternalShareCollaborationEnabled": false,
+    "isExternalShareResultEnabled": false,
+    "isExternalShareTemplateEnabled": false,
+    "isRecordIdentityByDefaultEnabled": true,
+    "isBingImageSearchEnabled": true,
+    "isInOrgFormsPhishingScanEnabled": false
   }
 }
 ```
@@ -89,6 +93,5 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: text/plain
-
 ```
 

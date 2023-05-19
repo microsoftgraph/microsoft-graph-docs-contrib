@@ -1,27 +1,27 @@
 ---
-title: "Get adminAppsAndServices"
-description: "Read the properties and relationships of a microsoft.graph.tenantAdmin.adminAppsAndServices object."
+title: "Get adminTodo"
+description: "Read the properties and relationships of a microsoft.graph.adminTodo object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Get adminAppsAndServices
-Namespace: microsoft.graph.tenantAdmin
+# Get adminTodo
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md) object.
+Read the properties and relationships of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**OrgSettings-AppsAndServices.Read.All, OrgSettings-AppsAndServices.ReadWrite.All**|
+|Delegated (work or school account)|**OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All**|
 |Delegated (personal Microsoft account)|**Not supported.**|
-|Application|**OrgSettings-AppsAndServices.Read.All, OrgSettings-AppsAndServices.ReadWrite.All**|
+|Application|**OrgSettings-Todo.Read.All, OrgSettings-Todo.ReadWrite.All**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/appsAndServices
+GET /admin/todo
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.adminTodo](../resources/admintodo.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_adminappsandservices"
+  "name": "get_admintodo"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/appsAndServices
+GET https://graph.microsoft.com/beta/admin/todo
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantAdmin.adminAppsAndServices"
+  "@odata.type": "microsoft.graph.adminTodo"
 }
 -->
 ``` http
@@ -77,12 +77,13 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
-    "id": "c079f617-c04e-c14f-0750-cb2f87064342",
+    "@odata.type": "#microsoft.graph.adminTodo",
+    "id": "9b13e840-31a8-2ed4-57d8-22f42c130334",
     "settings": {
-      "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings",
-      "isOfficeStoreEnabled": false,
-      "isAppAndServicesTrialEnabled": true
+      "@odata.type": "microsoft.graph.todoSettings",
+      "isPushNotificationEnabled": true,
+      "isExternalJoinEnabled": true,
+      "isExternalShareEnabled": true
     }
   }
 }

@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # adminAppsAndServices resource type
 
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,13 +21,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminAppsAndServices](../api/tenantadmin-adminappsandservices-get.md)|[microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md)|Read the properties and relationships of a [microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md) object.
+|[Get adminAppsAndServices](../api/adminappsandservices-get.md)|[microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md)|Read the properties and relationships of a [microsoft.graph.adminAppsAndServices](../resources/adminappsandservices.md) object.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|**Unique id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.tenantAdmin.appsAndServicesSettings](../resources/tenantadmin-appsandservicessettings.md)|**Company wide settings for apps and services**|
+|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|**Company wide settings for apps and services**|
 
 ## Relationships
 None.
@@ -37,17 +37,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantAdmin.adminAppsAndServices",
+  "@odata.type": "microsoft.graph.adminAppsAndServices",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
+  "@odata.type": "#microsoft.graph.adminAppsAndServices",
   "id": "String (identifier)",
   "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings"
+    "@odata.type": "microsoft.graph.appsAndServicesSettings"
   }
 }
 ```

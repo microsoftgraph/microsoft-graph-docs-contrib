@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # formsSettings resource type
 
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,12 +33,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantAdmin.formsSettings"
+  "@odata.type": "microsoft.graph.formsSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.formsSettings",
+  "@odata.type": "#microsoft.graph.formsSettings",
   "isExternalSendFormEnabled": "Boolean",
   "isExternalShareCollaborationEnabled": "Boolean",
   "isExternalShareResultEnabled": "Boolean",

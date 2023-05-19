@@ -1,27 +1,27 @@
 ---
-title: "Update adminAppsAndServices"
-description: "Update the properties of a microsoft.graph.tenantAdmin.adminAppsAndServices object."
+title: "Update adminDynamics"
+description: "Update the properties of a microsoft.graph.adminDynamics object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Update adminAppsAndServices
-Namespace: microsoft.graph.tenantAdmin
+# Update adminDynamics
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md) object.
+Update the properties of a [microsoft.graph.adminDynamics](../resources/admindynamics.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**OrgSettings-AppsAndServices.ReadWrite.All**|
+|Delegated (work or school account)|**OrgSettings-DynamicsVoice.ReadWrite.All**|
 |Delegated (personal Microsoft account)|**Not supported.**|
-|Application|**OrgSettings-AppsAndServices.ReadWrite.All**|
+|Application|**OrgSettings-DynamicsVoice.ReadWrite.All**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /admin/appsAndServices
+PATCH /admin/dynamics
 ```
 
 ## Request headers
@@ -45,13 +45,13 @@ PATCH /admin/appsAndServices
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.tenantAdmin.appsAndServicesSettings](../resources/tenantadmin-appsandservicessettings.md)|**Company wide settings for apps and services** Required.|
+|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|**Company wide settings for Dynamics customer voice** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantAdmin.adminAppsAndServices](../resources/tenantadmin-adminappsandservices.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminDynamics](../resources/admindynamics.md) object in the response body.
 
 ## Examples
 
@@ -59,19 +59,20 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_adminappsandservices"
+  "name": "update_admindynamics"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/appsAndServices
+PATCH https://graph.microsoft.com/beta/admin/dynamics
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminAppsAndServices",
-  "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.appsAndServicesSettings",
-    "isOfficeStoreEnabled": false,
-    "isAppAndServicesTrialEnabled": false
+  "@odata.type": "#microsoft.graph.adminDynamics",
+  "customerVoice": {
+    "@odata.type": "microsoft.graph.customerVoiceSettings",
+    "isRestrictedSurveyAccessEnabled": "false",
+    "isRecordIdentityByDefaultEnabled": "false",
+    "isInOrgFormsPhishingScanEnabled": "false"
   }
 }
 ```

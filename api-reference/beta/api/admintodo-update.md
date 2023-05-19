@@ -1,6 +1,6 @@
 ---
 title: "Update adminTodo"
-description: "Update the properties of a microsoft.graph.tenantAdmin.adminTodo object."
+description: "Update the properties of a microsoft.graph.adminTodo object."
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Update adminTodo
-Namespace: microsoft.graph.tenantAdmin
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.tenantAdmin.adminTodo](../resources/tenantadmin-admintodo.md) object.
+Update the properties of a [microsoft.graph.adminTodo](../resources/admintodo.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +45,13 @@ PATCH /admin/todo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.tenantAdmin.todoSettings](../resources/tenantadmin-todosettings.md)|**Company wide settings for Microsoft Todo** Required.|
+|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|**Company wide settings for Microsoft Todo** Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantAdmin.adminTodo](../resources/tenantadmin-admintodo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.adminTodo](../resources/admintodo.md) object in the response body.
 
 ## Examples
 
@@ -67,9 +67,9 @@ PATCH https://graph.microsoft.com/beta/admin/todo
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantAdmin.adminTodo",
+  "@odata.type": "#microsoft.graph.adminTodo",
   "settings": {
-    "@odata.type": "microsoft.graph.tenantAdmin.todoSettings",
+    "@odata.type": "microsoft.graph.todoSettings",
     "isPushNotificationEnabled": true,
     "isExternalJoinEnabled": false,
     "isExternalShareEnabled": true
