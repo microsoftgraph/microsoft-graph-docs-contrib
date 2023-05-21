@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->deactivate()->post($requestConfiguration);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->byAssignmentId('educationAssignment-id')->deactivate()->post($requestConfiguration);
 
 
 ```

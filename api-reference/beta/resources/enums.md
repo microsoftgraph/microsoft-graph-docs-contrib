@@ -11,6 +11,25 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
+### authenticationAttributeCollectionInputType values 
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
+
+### userType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
 ### assignmentType values
 
 | Member              | 
@@ -2898,6 +2917,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |roster|
 |project|
+|driveItem|
 
 ### plannerPlanContextType values
 

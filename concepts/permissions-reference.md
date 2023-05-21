@@ -216,6 +216,24 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
+## Authentication events flow permissions
+
+#### Delegated permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:-----------|:---------------|:------------|:-----------------------|:----------------------------|
+|EventListener.Read.All|Read your organization's authentication event listeners|Allows the app to read your organization's authentication event listeners on behalf of the signed-in user.|Yes|No|
+|EventListener.ReadWrite.All|Read and write your organization's authentication event listeners|Allows the app to read or write your organization's authentication event listeners on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+| Permission   | Display String   | Description   | Admin Consent Required   |
+|--------------|:-----------------|:--------------|:-------------------------|
+|EventListener.Read.All|Read all authentication event listeners|Allows the app to read your organization's authentication event listeners without a signed-in user.|Yes|
+| EventListener.ReadWrite.All | Read and write all authentication event listeners | Allows the app to read or write your organization's authentication event listeners without a signed-in user. | Yes |
+
+---
+
 ## BitLocker recovery key permissions
 
 #### Delegated permissions

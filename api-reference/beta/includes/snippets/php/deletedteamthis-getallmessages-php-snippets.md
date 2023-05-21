@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->teamwork()->deletedTeamsById('deletedTeam-id')->channels()->getAllMessages()->get();
+$result = $graphServiceClient->teamwork()->deletedTeams()->byDeletedTeamId('deletedTeam-id')->channels()->getAllMessages()->get();
 
 
 ```

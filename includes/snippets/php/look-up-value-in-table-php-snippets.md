@@ -33,7 +33,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->functions()->vlookup()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->functions()->vlookup()->post($requestBody, $requestConfiguration);
 
 
 ```

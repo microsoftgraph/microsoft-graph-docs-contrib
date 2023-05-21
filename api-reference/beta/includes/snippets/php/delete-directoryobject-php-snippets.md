@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->directoryObjectsById('directoryObject-id')->delete();
+$graphServiceClient->directoryObjects()->byDirectoryObjectId('directoryObject-id')->delete();
 
 
 ```

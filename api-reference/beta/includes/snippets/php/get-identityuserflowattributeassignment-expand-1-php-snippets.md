@@ -15,7 +15,7 @@ $queryParameters->expand = ["userAttribute"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userAttributeAssignments()->get($requestConfiguration);
+$result = $graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->userAttributeAssignments()->get($requestConfiguration);
 
 
 ```

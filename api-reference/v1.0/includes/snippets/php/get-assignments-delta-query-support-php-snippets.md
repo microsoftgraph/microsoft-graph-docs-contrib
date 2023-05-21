@@ -15,7 +15,7 @@ $queryParameters->top = 2;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->education()->classesById('educationClass-id')->assignments()->delta()->get($requestConfiguration);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignments()->delta()->get($requestConfiguration);
 
 
 ```

@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->organizationById('organization-id')->branding()->delete($requestBody);
+$graphServiceClient->organization()->byOrganization()Id('organization-id')->branding()->delete($requestBody);
 
 
 ```

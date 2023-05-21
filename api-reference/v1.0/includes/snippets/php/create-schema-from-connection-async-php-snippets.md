@@ -56,7 +56,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->post($requestBody);
+$graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->schema()->post($requestBody);
 
 
 ```

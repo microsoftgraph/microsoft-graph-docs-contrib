@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/policies/appManageme
 
 
 
-$graphServiceClient->applicationsById('application-id')->appManagementPolicies()->ref()->post($requestBody);
+$graphServiceClient->applications()->byApplicationId('application-id')->appManagementPolicies()->ref()->post($requestBody);
 
 
 ```

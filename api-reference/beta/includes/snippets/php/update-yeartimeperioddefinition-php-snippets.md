@@ -16,7 +16,7 @@ $requestBody->setId('ebf18762-ab92-487e-21d1-08daddab28bb');
 
 
 
-$result = $graphServiceClient->external()->industryData()->yearsById('yearTimePeriodDefinition-id')->patch($requestBody);
+$result = $graphServiceClient->external()->industryData()->years()->byYearId('yearTimePeriodDefinition-id')->patch($requestBody);
 
 
 ```

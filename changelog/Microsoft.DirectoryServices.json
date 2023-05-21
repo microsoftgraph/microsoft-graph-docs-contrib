@@ -526,7 +526,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationParnter](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -6815,6 +6815,24 @@
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToCreateTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToCreateTenants** property to the [defaultUserRolePermissions](https://learn.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-1.0) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-17T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -9834,7 +9852,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the privilegedapproval entity.",
+          "Description": "Change the **privilegedapproval** entity.",
           "Target": "privilegedapproval"
         },
         {
@@ -9842,7 +9860,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the privilegedroleassignmentrequest entity, and its associated methods and actions.",
+          "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions: List, Create, Cancel, My.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
@@ -9850,7 +9868,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added Update operation to the privilegedRoleSettings entity.",
+          "Description": "Added **Update** for **privilegedRoleSettings**.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],
@@ -13434,7 +13452,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group-retryserviceprovisioning?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         },
         {
@@ -13442,7 +13460,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
           "Target": "orgContact"
         },
         {
@@ -13450,7 +13468,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user-retryserviceprovisioning?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
