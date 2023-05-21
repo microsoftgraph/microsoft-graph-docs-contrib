@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST ** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
+PUT ** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
+PUT https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.multiTenantOrganization not found
 Content-Type: application/json
 
 {

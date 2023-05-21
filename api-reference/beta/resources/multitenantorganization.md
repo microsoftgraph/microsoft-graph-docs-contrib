@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create multiTenantOrganization](../api/tenantrelationship-post-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new [multiTenantOrganization](../resources/multitenantorganization.md) object.|
+|[Create multiTenantOrganization](../api/tenantrelationship-put-multitenantorganization.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Create a new [multiTenantOrganization](../resources/multitenantorganization.md) object.|
 |[Get multiTenantOrganization](../api/multitenantorganization-get.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Read the properties and relationships of a [multiTenantOrganization](../resources/multitenantorganization.md) object.|
 |[Update multiTenantOrganization](../api/multitenantorganization-update.md)|[multiTenantOrganization](../resources/multitenantorganization.md)|Update the properties of a [multiTenantOrganization](../resources/multitenantorganization.md) object.|
 

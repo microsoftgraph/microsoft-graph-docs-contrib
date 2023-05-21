@@ -13640,7 +13640,7 @@ items:
             - name: Multi-tenant organization
               href: resources/multitenantorganization.md
             - name: Create
-              href: api/tenantrelationship-post-multitenantorganization.md
+              href: api/tenantrelationship-put-multitenantorganization.md
             - name: Get
               href: api/multitenantorganization-get.md
             - name: Update
