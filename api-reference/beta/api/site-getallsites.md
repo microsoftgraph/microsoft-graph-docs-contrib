@@ -89,6 +89,6 @@ Content-type: application/json
       "webUrl": "https://contoso.sharepoint.com/sites/siteB"
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/v1.0/sites/oneDrive.getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/sites/oneDrive.getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 }
 ```
