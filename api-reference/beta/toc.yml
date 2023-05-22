@@ -15178,7 +15178,7 @@ items:
           href: resources/appcredentialsigninactivity.md
           items:
           - name: List
-            href: api/appcredentialsigninactivity-list.md
+            href: api/reportroot-list-appcredentialsigninactivities.md
           - name: Get
             href: api/appcredentialsigninactivity-get.md
         - name: Application sign-in
@@ -15240,7 +15240,7 @@ items:
           href: resources/serviceprincipalsigninactivity.md
           items:
           - name: List
-            href: api/serviceprincipalsigninactivity-list.md
+            href: api/reportroot-list-serviceprincipalsigninactivities.md
           - name: Get
             href: api/serviceprincipalsigninactivity-get.md
       - name: Microsoft 365 usage reports
