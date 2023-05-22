@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filePlanDescriptors](../api/security-retentionlabel-list.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) collection|Get a list of the [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) objects and their properties.|
+|[List filePlanDescriptors](../api/security-labelsroot-list-retentionlabel.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) collection|Get a list of the [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) objects and their properties.|
 |[Create filePlanDescriptor](../api/security-retentionlabel-post.md)|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Create a new [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md) object.|
 
 
