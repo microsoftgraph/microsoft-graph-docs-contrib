@@ -84,7 +84,7 @@ Content-type: application/json
 Content-length: 211
 
 {
- "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
+  "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
   "appObjectId": "6920caa5-1cae-4bc8-bf59-9c0b8495d240",
   "credentialOrigin": "application",
@@ -180,7 +180,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
- "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
+  "@odata.type": "#microsoft.graph.appCredentialSignInActivity",
   "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
   "credentialOrigin": "application",
   "expirationDate": "2021-04-01T21:36:48-8:00",
