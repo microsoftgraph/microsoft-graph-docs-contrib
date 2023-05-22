@@ -526,7 +526,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationParnter](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -13452,7 +13452,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group-retryserviceprovisioning?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         },
         {
@@ -13460,7 +13460,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
           "Target": "orgContact"
         },
         {
@@ -13468,7 +13468,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retryServiceProvisioning",
           "ChangeType": "Addition",
-          "Description": "Added the retryServiceProvisioning method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user-retryserviceprovisioning?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],

@@ -86,7 +86,14 @@ Content-type: application/json
 }
 ```
 
-To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+To learn more about Microsoft 365 groups, see [Overview of Microsoft 365 groups in Microsoft Graph](/graph/microsoft365-groups-concept-overview).
+
+### Settings for Microsoft 365 groups
+
+Apart from configuring the standard group properties, you can also configure the following settings for Microsoft 365 groups.
+
+- [Group expiration](../resources/grouplifecyclepolicy.md)
+- [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
 
 ## Security groups and mail-enabled security groups
 
