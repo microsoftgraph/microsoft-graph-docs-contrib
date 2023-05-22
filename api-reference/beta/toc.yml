@@ -15175,14 +15175,12 @@ items:
             - name: List
               href: api/relyingpartydetailedsummary-list.md
         - name: Application credential activity
+          href: resources/appcredentialsigninactivity.md
           items:
-          - name: Application credential activity
-            href: resources/appcredentialsigninactivity.md
-            items:
-            - name: List
-              href: api/appcredentialsigninactivity-list.md
-            - name: Get
-              href: api/appcredentialsigninactivity-get.md
+          - name: List
+            href: api/appcredentialsigninactivity-list.md
+          - name: Get
+            href: api/appcredentialsigninactivity-get.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
@@ -15239,14 +15237,12 @@ items:
             - name: Get
               href: api/userregistrationdetails-get.md
         - name: Service principal activity
+          href: resources/serviceprincipalsigninactivity.md
           items:
-          - name: Service principal activity 
-            href: resources/serviceprincipalsigninactivity.md
-            items:
-            - name: List
-              href: api/serviceprincipalsigninactivity-list.md
-            - name: Get
-              href: api/serviceprincipalsigninactivity-get.md
+          - name: List
+            href: api/serviceprincipalsigninactivity-list.md
+          - name: Get
+            href: api/serviceprincipalsigninactivity-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
