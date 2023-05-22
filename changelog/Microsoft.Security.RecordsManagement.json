@@ -342,7 +342,7 @@
             "Target": "labelsRoot"
           },{
             "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
-            "ApiChange": "LIST",
+            "ApiChange": "GET",
             "ChangedApiName": "retentionLabel",
             "ChangeType": "Addition",
             "Description": "Added the [list filePlanDescriptor](https://learn.microsoft.com/en-us/graph/api/security-retentionlabel-list?view=graph-rest-beta) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
