@@ -461,8 +461,6 @@ Namespace: microsoft.graph
 | allow  |
 | block  |
 
-<<<<<<< HEAD
-=======
 ### x509CertificateAuthenticationMode values
 | Member                      |
 | :-------------------------- |
@@ -477,7 +475,6 @@ Namespace: microsoft.graph
 | policyOID          |
 | unknownFutureValue |
 
->>>>>>> 8a14cee1f578a6c7e972acce160a3f23c6a43d7a
 ### attestationLevel values
 
 | Member      |

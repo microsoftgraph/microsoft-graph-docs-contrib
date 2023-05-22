@@ -2,8 +2,6 @@
   "changelog": [
     {
       "ChangeList": [
-        {
-          "ChangeList": [
             {
               "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
               "ApiChange": "Property",
@@ -43,7 +41,9 @@
           "CreatedDateTime": "2023-05-22T00:00:00.0166075Z",
           "WorkloadArea": "Identity and access",
           "SubArea": "Identity and sign-in"
-        },
+    },
+    {
+      "ChangeList": [
         {
           "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
           "ApiChange": "Resource",
