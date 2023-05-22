@@ -53,9 +53,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) objects in the response body.
 
-## Example 
+## Examples
 
-### Request
+### Example 1: Get a list of servicePrincipalSignInActivity objects
+
+#### Request
 
 The following is an example of the request.
 
@@ -67,7 +69,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -134,3 +136,60 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 2: Get a servicePrincipalSignInActivity filtered by applicationId
+
+The following example shows how to get a **servicePrincipalSignInActivity** object filtered by **applicationId**.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_servicePrincipalSignInActivities_filter_appid"
+} -->
+```http
+GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipalSignInActivity"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+     "@odata.context":"https://graph.microsoft.com/beta/$metadata#reports/servicePrincipalSignInActivities",
+     "appId": "f4d9654f-0305-4072-878c-8bf266dfe146",
+     "applicationAuthenticationClientSignInActivity": {
+          "lastSignInDateTime": "2021-03-01T00:00:00-8:00",
+          "lastSignInRequestId": "0e0cb2c3-85b9-4bdc-8a89-3bd08a5d8548"
+     },
+     "applicationAuthenticationResourceSignInActivity": {
+          "lastSignInDateTime": "2021-04-01T00:00:00-8:00",
+          "lastSignInRequestId": "b26f6bf8-af96-4f2a-bef7-07913f634d6d"
+     },
+     "delegatedClientSignInActivity": {
+          "lastSignInDateTime": "2021-01-01T00:00:00-8:00",
+          "lastSignInRequestId": "7e24e4a9-ee1e-45d9-97ff-b4fb0c854b16"
+     },
+     "delegatedResourceSignInActivity": {
+          "lastSignInDateTime": "2021-02-01T00:00:00-8:00",
+          "lastSignInRequestId": "3e767241-2173-41f5-a42d-1302549950b2"
+     },
+     "id": "ZjRkOTY1NGYtMDMwNS00MDcyLTg3OGMtOGJmMjY2ZGZlMTQ2",
+     "lastSignInActivity": {
+          "lastSignInDateTime": "2021-04-01T00:00:00Z",
+          "lastSignInRequestId": "b26f6bf8-af96-4f2a-bef7-07913f634d6d"
+     }
+}
+```
+
