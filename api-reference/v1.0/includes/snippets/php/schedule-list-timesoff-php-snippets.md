@@ -15,7 +15,7 @@ $queryParameters->filter = "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.0
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->timesOff()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->get($requestConfiguration);
 
 
 ```

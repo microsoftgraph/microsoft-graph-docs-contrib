@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->me()->authentication()->emailMethodsById('emailAuthenticationMethod-id')->get();
+$result = $graphServiceClient->me()->authentication()->emailMethods()->byEmailMethodId('emailAuthenticationMethod-id')->get();
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->chatsById('chat-id')->pinnedMessagesById('pinnedChatMessageInfo-id')->delete();
+$graphServiceClient->chats()->byChatId('chat-id')->pinnedMessages()->byPinnedMessageId('pinnedChatMessageInfo-id')->delete();
 
 
 ```

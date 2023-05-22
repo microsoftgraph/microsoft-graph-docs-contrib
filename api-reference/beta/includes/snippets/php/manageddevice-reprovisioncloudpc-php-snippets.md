@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->reprovisionCloudPc()->post();
+$graphServiceClient->deviceManagement()->managedDevices()->byManagedDeviceId('managedDevice-id')->reprovisionCloudPc()->post();
 
 
 ```

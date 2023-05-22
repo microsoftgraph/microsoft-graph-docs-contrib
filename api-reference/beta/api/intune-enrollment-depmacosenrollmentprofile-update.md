@@ -94,7 +94,6 @@ The following table shows the properties that are required when you create the [
 |adminAccountFullName|String|Indicates what the full name for the admin account is|
 |adminAccountPassword|String|Indicates what the password for the admin account is|
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
-|requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 
 
 
@@ -108,7 +107,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1951
+Content-length: 1910
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -158,8 +157,7 @@ Content-length: 1951
   "adminAccountUserName": "Admin Account User Name value",
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
-  "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "hideAdminAccount": true
 }
 ```
 
@@ -168,7 +166,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2000
+Content-Length: 1959
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -219,7 +217,6 @@ Content-Length: 2000
   "adminAccountUserName": "Admin Account User Name value",
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
-  "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "hideAdminAccount": true
 }
 ```
