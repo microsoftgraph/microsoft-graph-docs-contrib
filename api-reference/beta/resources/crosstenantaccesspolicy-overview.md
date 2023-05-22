@@ -72,7 +72,7 @@ Learn more about [collaborating with organizations from a different Microsoft cl
 
 ## Interpreting the API response
 
-The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. **b2bSetting** is used as a placeholder for any B2B inbound (**b2bCollaborationInbound** or **b2bDirectConnectInbound**) or outbound (**b2bCollaborationOutbound** or **b2bDirectConnectOutbound**) or  tenant Restrictions (**tenantRestrictions**) configuration.
+The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. **b2bSetting** is used as a placeholder for any B2B inbound (**b2bCollaborationInbound** or **b2bDirectConnectInbound**) or outbound (**b2bCollaborationOutbound** or **b2bDirectConnectOutbound**) or  tenant restrictions (**tenantRestrictions**) configuration.
 
 <br/>
 
@@ -354,7 +354,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 ## Cross-tenant access settings vs tenant restrictions
 
-Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
+Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
 ## Next steps
 
