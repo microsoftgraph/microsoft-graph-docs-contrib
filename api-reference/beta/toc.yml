@@ -16122,8 +16122,8 @@ items:
                href: api/security-labelsroot-list-retentionlabel.md
              - name: Create
                href: api/security-labelsroot-post-retentionlabel.md
-            - name: File plan reference
-              href: resources/security-fileplanreferencetemplate.md
+             - name: File plan reference
+               href: resources/security-fileplanreferencetemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-fileplanreferences.md
