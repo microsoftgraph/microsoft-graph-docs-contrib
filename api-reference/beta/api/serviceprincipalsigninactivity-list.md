@@ -36,12 +36,7 @@ GET /reports/servicePrincipalSignInActivities
 
 ## Optional query parameters
 
-This method supports OData query parameters `$top`, `$filter` and `$orderBy`to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
-
-| Name                                                      | Description                                                                   | Example                                                                                             |
-| :-------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| [$filter](/graph/query-parameters#filter-parameter)       | Filters results (rows).                                                       | `/reports/servicePrincipalSignInActivities?$filter=appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'` |
-| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/reports/servicePrincipalSignInActivities?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`          |
+This method supports the `$top`, `$filter`, `skipToken`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
