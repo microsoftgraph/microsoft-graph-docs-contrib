@@ -251,8 +251,17 @@ fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue())
 
 ```php
 <?php
-//Sample here
+use Microsoft\Graph\Core\Requests\BatchRequestContent;
+use Microsoft\Graph\Generated\Models\Message;
 
+$message = new Message();
+$message->setSubject("Test Subject");
+
+$batchRequestContent = new BatchRequestContent([
+    $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('id')->toDeleteRequestInformation(),
+    $graphServiceClient->users()->byUserId(USER_ID)->messages()->toPostRequestInformation($message),
+    $graphServiceClient->users()->byUserId(USER_ID)->toGetRequestInformation()
+]);
 
 ```
 
