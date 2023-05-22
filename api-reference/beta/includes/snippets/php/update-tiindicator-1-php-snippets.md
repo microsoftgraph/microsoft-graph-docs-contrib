@@ -14,7 +14,7 @@ $requestBody->setDescription('description-updated');
 
 
 
-$result = $graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->patch($requestBody);
+$result = $graphServiceClient->security()->tiIndicators()->byTiIndicatorId('tiIndicator-id')->patch($requestBody);
 
 
 ```

@@ -53,7 +53,7 @@ To set a reaction to a **chatMessage** in a **chat**:
 }
 -->
 ``` http
-POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/setReaction
+POST /chats/{chatId}/messages/{chatMessageId}/setReaction
 ```
 
 ## Request headers

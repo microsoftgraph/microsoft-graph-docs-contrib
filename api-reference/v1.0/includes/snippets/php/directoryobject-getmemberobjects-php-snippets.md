@@ -14,7 +14,7 @@ $requestBody->setSecurityEnabledOnly(true);
 
 
 
-$result = $graphServiceClient->directoryObjectsById('directoryObject-id')->getMemberObjects()->post($requestBody);
+$result = $graphServiceClient->directoryObjects()->byDirectoryObjectId('directoryObject-id')->getMemberObjects()->post($requestBody);
 
 
 ```

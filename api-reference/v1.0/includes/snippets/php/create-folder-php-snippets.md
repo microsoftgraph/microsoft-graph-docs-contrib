@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->children()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->children()->post($requestBody);
 
 
 ```

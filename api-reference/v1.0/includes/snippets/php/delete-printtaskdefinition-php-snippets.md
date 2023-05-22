@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->delete();
+$graphServiceClient->print()->taskDefinitions()->byTaskDefinitionId('printTaskDefinition-id')->delete();
 
 
 ```

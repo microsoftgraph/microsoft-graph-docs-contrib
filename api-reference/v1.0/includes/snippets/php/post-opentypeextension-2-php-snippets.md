@@ -23,7 +23,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->me()->messagesById('message-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->me()->messages()->byMessageId('message-id')->extensions()->post($requestBody);
 
 
 ```

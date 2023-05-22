@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Security/InformationProtection/SensitivityLabels/SecurityExtractContentLabel"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Users/Item/Security/InformationProtection/SensitivityLabels/MicrosoftGraphSecurityExtractContentLabel"
 	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
@@ -20,7 +20,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "ContosoLOBApp/1.0")
 
-configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsSecurity.extractContentLabelRequestBuilderPostRequestConfiguration{
+configuration := &graphconfig.UserItemSecurityInformationProtectionSensitivityLabelsMicrosoft.graph.security.extractContentLabelRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewExtractContentLabelPostRequestBody()
@@ -84,7 +84,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().SecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityExtractContentLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

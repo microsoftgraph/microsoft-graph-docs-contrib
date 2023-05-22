@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/Deployments/Item/Audience/WindowsUpdatesUpdateAudienceById"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/Deployments/Item/Audience/MicrosoftGraphWindowsUpdatesUpdateAudienceById"
 	  //other-imports
 )
 
@@ -39,7 +39,7 @@ removeExclusions := []string {
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 
-graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Audience().WindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().Deployments().ByDeploymentId("deployment-id").Audience().MicrosoftGraphWindowsUpdatesUpdateAudienceById().Post(context.Background(), requestBody, nil)
 
 
 ```

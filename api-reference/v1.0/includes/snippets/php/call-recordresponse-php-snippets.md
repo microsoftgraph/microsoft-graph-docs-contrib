@@ -47,7 +47,7 @@ $requestBody->setStopTones(['#', '1', '*', ]);
 
 
 
-$result = $graphServiceClient->communications()->callsById('call-id')->recordResponse()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->recordResponse()->post($requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ $queryParameters->expand = ["message"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chatsById('chat-id')->pinnedMessages()->get($requestConfiguration);
+$result = $graphServiceClient->chats()->byChatId('chat-id')->pinnedMessages()->get($requestConfiguration);
 
 
 ```
