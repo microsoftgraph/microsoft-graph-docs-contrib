@@ -16126,68 +16126,68 @@ items:
              href: resources/security-fileplanreferencetemplate.md
              items:
               - name: List
-               href: api\security-labelsroot-list-fileplanreferences.md
+               href: api/security-labelsroot-list-fileplanreferences.md
               - name: Create
-               href: api\security-labelsroot-post-fileplanreferences.md
+               href: api/security-labelsroot-post-fileplanreferences.md
               - name: Get
-               href: api\security-fileplanreferencetemplate-get.md
+               href: api/security-fileplanreferencetemplate-get.md
               - name: Delete
-               href: api\security-labelsroot-delete-fileplanreferences.md
+               href: api/security-labelsroot-delete-fileplanreferences.md
             - name: Authority
               href: resources/security-authoritytemplate.md
               items:
               - name: List
-                href: api\security-labelsroot-list-authorities.md
+                href: api/security-labelsroot-list-authorities.md
               - name: Create
-                href: api\security-labelsroot-post-authorities.md
+                href: api/security-labelsroot-post-authorities.md
               - name: Get
-                href: api\security-authoritytemplate-get.md
+                href: api/security-authoritytemplate-get.md
               - name: Delete
-                href: api\security-labelsroot-delete-authorities.md
+                href: api/security-labelsroot-delete-authorities.md
             - name: Category
               href: resources/security-categorytemplate.md
               items:
               - name: List
-                href: api\security-labelsroot-list-categories.md
+                href: api/security-labelsroot-list-categories.md
               - name: Create
-                href: api\security-labelsroot-post-categories.md
+                href: api/security-labelsroot-post-categories.md
               - name: Get
-                href: api\security-categorytemplate-get.md
+                href: api/security-categorytemplate-get.md
               - name: Delete
-                href: api\security-labelsroot-delete-categories.md
+                href: api/security-labelsroot-delete-categories.md
             - name: Subcategory
               href: resources/security-subcategoryTemplate.md
               items:
               - name: List
-                href: api\security-categorytemplate-list-subcategories.md
+                href: api/security-categorytemplate-list-subcategories.md
               - name: Create
-                href: api\security-categorytemplate-post-subcategories.md
+                href: api/security-categorytemplate-post-subcategories.md
               - name: Get
-                href: api\security-subcategorytemplate-get.md
+                href: api/security-subcategorytemplate-get.md
               - name: Delete
-                href: api\security-categorytemplate-delete-subcategories.md
+                href: api/security-categorytemplate-delete-subcategories.md
             - name: Department
               href: resources/security-departmenttemplate.md
               items:
               - name: List
-                href: api\security-labelsroot-list-departments.md
+                href: api/security-labelsroot-list-departments.md
               - name: Create
-                href: api\security-labelsroot-post-departments.md
+                href: api/security-labelsroot-post-departments.md
               - name: Get
-                href: api\security-departmenttemplate-get.md
+                href: api/security-departmenttemplate-get.md
               - name: Delete
-                href: api\security-labelsroot-delete-departments.md
+                href: api/security-labelsroot-delete-departments.md
             - name: Citation
               href: resources/security-citationtemplate.md
               items:
               - name: List
-                href: api\security-labelsroot-list-citations.md
+                href: api/security-labelsroot-list-citations.md
               - name: Create
-                href: api\security-labelsroot-post-citations.md
+                href: api/security-labelsroot-post-citations.md
               - name: Get
-                href: api\security-citationtemplate-get.md
+                href: api/security-citationtemplate-get.md
               - name: Delete
-                href: api\security-labelsroot-delete-citations.md
+                href: api/security-labelsroot-delete-citations.md
         - name: Retention event
           href: resources/security-retentionevent.md
           items:
