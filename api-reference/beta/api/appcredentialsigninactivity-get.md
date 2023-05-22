@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an [appCredentia
 
 ### Example 1: Get an appCredentialSignInActivity by ID
 
-The following example shows how to get an **appCredentialSignInActivity** object by its ID.
+The following example shows how to get an **appCredentialSignInActivity** object based on its ID.
 
 #### Request
 
