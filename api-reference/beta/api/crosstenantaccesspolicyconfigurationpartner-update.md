@@ -92,6 +92,11 @@ Content-Type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
 HTTP/1.1 204 No Content
 ```
@@ -102,7 +107,7 @@ HTTP/1.1 204 No Content
 
 <!-- {
   "blockType": "request",
-  "name": "update_crosstenantaccesspolicytenantrestrictionconfigurationpartner"
+  "name": "update_crosstenantaccesspolicyconfigurationpartner_tenantrestriction"
 }
 -->
 
