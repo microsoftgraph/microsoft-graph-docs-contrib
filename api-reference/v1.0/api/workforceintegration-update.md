@@ -38,6 +38,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token} |
+| MS-APP-ACTS-AS  | Guid, an user id. Optional, required only if the Authorization token is an application token.  |
 
 ## Request body
 

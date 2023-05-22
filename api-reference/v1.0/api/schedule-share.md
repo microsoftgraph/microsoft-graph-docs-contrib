@@ -39,6 +39,7 @@ POST /teams/{teamId}/schedule/share
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | Guid, an user id. Optional, required only if the Authorization token is an application token.  |
 
 ## Request body
 

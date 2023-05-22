@@ -39,6 +39,7 @@ POST /teams/{id}/schedule/openShifts
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required.|
+| MS-APP-ACTS-AS  | Guid, an user id. Optional, required only if the Authorization token is an application token.  |
 
 ## Request body
 

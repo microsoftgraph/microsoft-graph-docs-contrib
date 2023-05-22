@@ -37,6 +37,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| MS-APP-ACTS-AS  | Guid, an user id. Optional, required only if the Authorization token is an application token.  |
 
 ## Request body
 Do not supply a request body for this method.
