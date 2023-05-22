@@ -37,24 +37,24 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String|Unique identifier for the submission.|
+|reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
+|reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
+|resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
 |returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
 |status|string| Read-only. Possible values are: `working`, `submitted`, `released`, `returned`, and `reassigned`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`.|
 |submittedBy|[identitySet](identityset.md)|User who moved the resource into the submitted state.|
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
-|reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|outcomes|[educationOutcome](educationOutcome.md) collection. Holds grades, feedback and/or rubrics information the teacher assigns to this submission|Read-Write. Nullable.|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) collection| Nullable.|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md) collection| Read-only. Nullable.|
-|outcomes|[educationOutcome](educationOutcome.md) collection. Holds grades, feedback and/or rubrics information the teacher assigns to this submission|Read-Write. Nullable.|
 
 ## JSON representation
 
@@ -74,15 +74,15 @@ The following is a JSON representation of the resource.
     "id":"String (identifier)",
     "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
     "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "returnedDateTime":"String (timestamp)",
+    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "reassignedDateTime":"String (timestamp)",
     "resourcesFolderUrl":"String",
+    "returnedDateTime":"String (timestamp)",
     "status":"string",
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)",
-    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)"
 }
 ```
 

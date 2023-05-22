@@ -1,9 +1,12 @@
 ---
 title: "Resource type differences between Azure AD Graph and Microsoft Graph"
 description: "Describes differences between resources in Azure Active Directory (Azure AD) Graph and resources in Microsoft Graph in order to help migrate apps."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Resource type differences between Azure AD Graph and Microsoft Graph
@@ -30,7 +33,7 @@ If a resource is **not** shown in this list, it is already available in the [v1.
 | [ServiceEndpoint](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[endpoint](/graph/api/resources/endpoint?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[endpoint](/graph/api/resources/endpoint) | **endpoints** are only available as part of the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource in beta, and the [servicePrincipal](/graph/api/resources/serviceprincipal) resource in both beta and v1.0.|
 | [SignInName](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;_New approach_ <br> v1.0&nbsp;-&nbsp;_New approach_ | New modeling for the identifiers used to sign into a user account. See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details. Supports Azure AD B2C scenarios. |
 | [TenantDetail](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[organization](/graph/api/resources/organization) | |
-| [TrustedCasForPasswordAuth](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration) | |
+| [TrustedCasForPasswordAuth](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) <br> v1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration) | |
 | [UserIdentity](/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[objectIdentity](/graph/api/resources/objectidentity) |  New modeling for the identifiers used to sign into a user account, called **objectIdentity**. Supports Azure AD B2C scenarios. |
 
 ## Next Steps

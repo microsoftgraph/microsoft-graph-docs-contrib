@@ -13,7 +13,7 @@ $requestBody = new AccessPackageAssignmentRequest();
 $requestBody->setRequestType('AdminAdd');
 
 $accessPackageAssignment = new AccessPackageAssignment();
-$accessPackageAssignmentTarget = new Target();
+$accessPackageAssignmentTarget = new AccessPackageSubject();
 $accessPackageAssignmentTarget->setEmail('user@contoso.com');
 
 
@@ -26,7 +26,7 @@ $accessPackageAssignment->setAccessPackageId('a914b616-e04e-476b-aa37-91038f0b16
 $requestBody->setAccessPackageAssignment($accessPackageAssignment);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody);
 
 
 ```

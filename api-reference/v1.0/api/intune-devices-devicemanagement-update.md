@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagement](../resources/intune-devices-devicemanagement.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,6 +48,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the device|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Device protection overview.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Malware overview for windows devices.|
 
 
 
@@ -61,11 +63,85 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement
 Content-type: application/json
-Content-length: 92
+Content-length: 2632
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
-  "subscriptionState": "active"
+  "subscriptionState": "active",
+  "deviceProtectionOverview": {
+    "@odata.type": "microsoft.graph.deviceProtectionOverview",
+    "totalReportedDeviceCount": 8,
+    "inactiveThreatAgentDeviceCount": 14,
+    "unknownStateThreatAgentDeviceCount": 2,
+    "pendingSignatureUpdateDeviceCount": 1,
+    "cleanDeviceCount": 0,
+    "pendingFullScanDeviceCount": 10,
+    "pendingRestartDeviceCount": 9,
+    "pendingManualStepsDeviceCount": 13,
+    "pendingOfflineScanDeviceCount": 13,
+    "criticalFailuresDeviceCount": 11,
+    "pendingQuickScanDeviceCount": 11
+  },
+  "windowsMalwareOverview": {
+    "@odata.type": "microsoft.graph.windowsMalwareOverview",
+    "malwareDetectedDeviceCount": 10,
+    "totalMalwareCount": 1,
+    "totalDistinctMalwareCount": 9,
+    "malwareStateSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareStateCount",
+        "state": "actionFailed",
+        "deviceCount": 11,
+        "malwareDetectionCount": 5,
+        "distinctMalwareCount": 4,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareSeveritySummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareSeverityCount",
+        "severity": "low",
+        "malwareDetectionCount": 5,
+        "distinctMalwareCount": 4,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareExecutionStateSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
+        "executionState": "blocked",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareCategorySummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
+        "category": "adware",
+        "deviceCount": 11,
+        "activeMalwareDetectionCount": 11,
+        "distinctActiveMalwareCount": 10,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareNameSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareNameCount",
+        "malwareIdentifier": "Malware Identifier value",
+        "name": "Name value",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "osVersionsSummary": [
+      {
+        "@odata.type": "microsoft.graph.osVersionCount",
+        "osVersion": "Os Version value",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ]
+  }
 }
 ```
 
@@ -74,18 +150,85 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 141
+Content-Length: 2681
 
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "0b283420-3420-0b28-2034-280b2034280b",
-  "subscriptionState": "active"
+  "subscriptionState": "active",
+  "deviceProtectionOverview": {
+    "@odata.type": "microsoft.graph.deviceProtectionOverview",
+    "totalReportedDeviceCount": 8,
+    "inactiveThreatAgentDeviceCount": 14,
+    "unknownStateThreatAgentDeviceCount": 2,
+    "pendingSignatureUpdateDeviceCount": 1,
+    "cleanDeviceCount": 0,
+    "pendingFullScanDeviceCount": 10,
+    "pendingRestartDeviceCount": 9,
+    "pendingManualStepsDeviceCount": 13,
+    "pendingOfflineScanDeviceCount": 13,
+    "criticalFailuresDeviceCount": 11,
+    "pendingQuickScanDeviceCount": 11
+  },
+  "windowsMalwareOverview": {
+    "@odata.type": "microsoft.graph.windowsMalwareOverview",
+    "malwareDetectedDeviceCount": 10,
+    "totalMalwareCount": 1,
+    "totalDistinctMalwareCount": 9,
+    "malwareStateSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareStateCount",
+        "state": "actionFailed",
+        "deviceCount": 11,
+        "malwareDetectionCount": 5,
+        "distinctMalwareCount": 4,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareSeveritySummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareSeverityCount",
+        "severity": "low",
+        "malwareDetectionCount": 5,
+        "distinctMalwareCount": 4,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareExecutionStateSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
+        "executionState": "blocked",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareCategorySummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
+        "category": "adware",
+        "deviceCount": 11,
+        "activeMalwareDetectionCount": 11,
+        "distinctActiveMalwareCount": 10,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "malwareNameSummary": [
+      {
+        "@odata.type": "microsoft.graph.windowsMalwareNameCount",
+        "malwareIdentifier": "Malware Identifier value",
+        "name": "Name value",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ],
+    "osVersionsSummary": [
+      {
+        "@odata.type": "microsoft.graph.osVersionCount",
+        "osVersion": "Os Version value",
+        "deviceCount": 11,
+        "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00"
+      }
+    ]
+  }
 }
 ```
-
-
-
-
-
-
-

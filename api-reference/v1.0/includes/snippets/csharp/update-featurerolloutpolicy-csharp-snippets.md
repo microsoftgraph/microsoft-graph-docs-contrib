@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var featureRolloutPolicy = new FeatureRolloutPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new FeatureRolloutPolicy
 {
 	DisplayName = "PasswordHashSync Rollout Policy",
 	Description = "PasswordHashSync Rollout Policy",
 	IsEnabled = true,
-	IsAppliedToOrganization = false
+	IsAppliedToOrganization = false,
 };
+var result = await graphClient.Policies.FeatureRolloutPolicies["{featureRolloutPolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Policies.FeatureRolloutPolicies["{featureRolloutPolicy-id}"]
-	.Request()
-	.UpdateAsync(featureRolloutPolicy);
 
 ```

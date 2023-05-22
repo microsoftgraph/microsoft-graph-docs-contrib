@@ -17,15 +17,15 @@ Microsoft Planner currently supports the container types listed in the following
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
-|group| Plan is contained by a [group](group.md).| https://graph.microsoft.com/v1.0/groups/{id}|
-|roster| Plan is contained by a **plannerRoster** | https://graph.microsoft.com/beta/planner/rosters/{id}. Rosters as containers for plans (**plannerRoster** resources) are currently accessible only through the beta endpoint.|
+|group| Plan is contained by a [group](group.md).| `https://graph.microsoft.com/v1.0/groups/{id}`|
+|roster| Plan is contained by a **plannerRoster** | `https://graph.microsoft.com/beta/planner/rosters/{id}`. Rosters as containers for plans (**plannerRoster** resources) are currently accessible only through the beta endpoint.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|containerId|String|The identifier of the resource that contains the plan.|
-|type|plannerContainerType| The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`.|
-|url|String|The full canonical URL of the container.|
+|containerId|String|The identifier of the resource that contains the plan. Optional.|
+|type|plannerContainerType| The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`. Optional.|
+|url|String|The full canonical URL of the container. Optional.|
 
 ## Relationships
 None.

@@ -23,7 +23,7 @@ None.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| changeType | changeType | Indicates the type of change that will raise the change notification. The supported values are: `created`, `updated`, `deleted`. Required. |
+| changeType | changeType | Indicates the type of change that will raise the change notification. The supported values are: `created`, `updated`, `deleted`. Required.|
 | clientState | string | Value of the **clientState** property sent in the subscription request (if any). The maximum length is 255 characters. The client can check whether the change notification came from the service by comparing the values of the **clientState** property. The value of the **clientState** property sent with the subscription is compared with the value of the **clientState** property received with each change notification. Optional. |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Preview) Encrypted content attached with the change notification. Only provided if **encryptionCertificate** and **includeResourceData** were defined during the subscription request and if the resource supports it. Optional. |
 | id | string | Unique ID for the notification. Optional. |
@@ -48,20 +48,20 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.changeNotification",
-  "id": "String (identifier)",
-  "subscriptionId": "Guid",
-  "subscriptionExpirationDateTime": "String (timestamp)",
-  "clientState": "String",
   "changeType": "String",
-  "resource": "String",
-  "tenantId": "Guid",
+  "clientState": "String",
   "encryptedContent": {
     "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
   },
+  "id": "String (identifier)",
   "lifecycleEvent": "String",
+  "resource": "String",
   "resourceData": {
     "@odata.type": "microsoft.graph.resourceData"
-  }
+  },
+  "subscriptionExpirationDateTime": "String (timestamp)",
+  "subscriptionId": "Guid",
+  "tenantId": "Guid"
 }
 ```
 

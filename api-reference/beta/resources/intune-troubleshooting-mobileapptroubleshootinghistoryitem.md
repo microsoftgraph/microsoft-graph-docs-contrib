@@ -1,7 +1,7 @@
 ---
 title: "mobileAppTroubleshootingHistoryItem resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -51,7 +51,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-

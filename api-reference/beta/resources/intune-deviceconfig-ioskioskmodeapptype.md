@@ -1,7 +1,7 @@
 ---
 title: "iosKioskModeAppType enum type"
 description: "App source options for iOS kiosk mode."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,9 +24,3 @@ App source options for iOS kiosk mode.
 |appStoreApp|1|The app to be run comes from the app store.|
 |managedApp|2|The app to be run is built into the device.|
 |builtInApp|3|The app to be run is a managed app.|
-
-
-
-
-
-

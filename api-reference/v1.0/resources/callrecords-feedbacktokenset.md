@@ -32,11 +32,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "DistortedSpeech": true,
-  "ElectronicFeedback": false,
   "BackgroundNoise": true,
-  "MuffledSpeech": true,
-  "Echo": false
+  "DistortedSpeech": true,
+  "Echo": false,
+  "ElectronicFeedback": false,
+  "MuffledSpeech": true
 }
 ```
 

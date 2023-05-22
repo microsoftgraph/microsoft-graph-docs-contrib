@@ -1,6 +1,6 @@
 ---
 title: "plannerTask resource type"
-description: "The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task."
+description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner-overview.md) for more information regarding relationships between group, plan and task.
+Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md)
 
 
 ## Methods
@@ -23,6 +23,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
 |[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
 |[Delete](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
+|[Get delta](../api/plannertask-delta.md)|[plannerTask](../resources/plannertask.md) collection| Get newly created, updated, or deleted **plannerTask** objects in either a **plannerPlan** or assigned to the signed-in user without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -47,6 +48,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |title|String|Title of the task.|
@@ -60,7 +62,7 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -74,30 +76,30 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "activeChecklistItemCount": 1024,
+  "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
-  "checklistItemCount": 1024,
+  "checklistItemCount": "Int32",
   "completedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completedDateTime": "String (timestamp)",
   "conversationThreadId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
-  "hasDescription": true,
+  "hasDescription": "Boolean",
   "id": "String (identifier)",
   "orderHint": "String",
-  "percentComplete": 1024,
-  "priority": 1024,
+  "percentComplete": "Int32",
+  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
-  "referenceCount": 1024,
+  "recurrence": {"@odata.type": "microsoft.graph.plannerTaskRecurrence"},
+  "referenceCount": "Int32",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -112,5 +114,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

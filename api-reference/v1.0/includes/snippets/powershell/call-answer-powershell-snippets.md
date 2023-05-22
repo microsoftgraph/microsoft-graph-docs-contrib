@@ -7,15 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	CallbackUri = "callbackUri-value"
-	MediaConfig = @{
+	callbackUri = "callbackUri-value"
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration Blob>"
+		blob = "<Media Session Configuration Blob>"
 	}
-	AcceptedModalities = @(
+	acceptedModalities = @(
 		"audio"
 	)
-	ParticipantCapacity = 200
+	callOptions = @{
+		"@odata.type" = "#microsoft.graph.incomingCallOptions"
+		isContentSharingNotificationEnabled = $true
+	}
+	participantCapacity = 200
 }
 
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params

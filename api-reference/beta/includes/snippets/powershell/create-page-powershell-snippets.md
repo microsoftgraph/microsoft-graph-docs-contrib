@@ -7,28 +7,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Name = "Events.aspx"
-	Title = "Team Events"
-	PublishingState = @{
-		Level = "checkedOut"
-		VersionId = "0.1"
+	name = "test.aspx"
+	title = "test"
+	pageLayout = "article"
+	showComments = $true
+	showRecommendedPages = $false
+	titleArea = @{
+		enableGradientEffect = $true
+		imageWebUrl = "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG"
+		layout = "colorBlock"
+		showAuthor = $true
+		showPublishedDate = $false
+		showTextBlockAboveTitle = $false
+		textAboveTitle = "TEXT ABOVE TITLE"
+		textAlignment = "left"
+		imageSourceType = 
+		title = "sample1"
 	}
-	WebParts = @(
-		@{
-			Type = "rte"
-			Data = @{
-				InnerHTML = "<p>Here are the team's upcoming events:</p>"
+	canvasLayout = @{
+		horizontalSections = @(
+			@{
+				layout = "oneThirdRightColumn"
+				id = "1"
+				emphasis = "none"
+				columns = @(
+					@{
+						id = "1"
+						width = 8
+						webparts = @(
+							@{
+								id = "6f9230af-2a98-4952-b205-9ede4f9ef548"
+								innerHtml = "<p><b>Hello!</b></p>"
+							}
+						)
+					}
+					@{
+						id = "2"
+						width = 4
+						webparts = @(
+							@{
+								id = "73d07dde-3474-4545-badb-f28ba239e0e1"
+								webPartType = "d1d91016-032f-456d-98a4-721247c305e8"
+							}
+						)
+					}
+				)
 			}
-		}
-		@{
-			Type = "d1d91016-032f-456d-98a4-721247c305e8"
-			Data = @{
-				Title = "Events"
-				Description = "Display upcoming events"
-				DataVersion = "1.0"
-			}
-		}
-	)
+		)
+	}
 }
 
 New-MgSitePage -SiteId $siteId -BodyParameter $params

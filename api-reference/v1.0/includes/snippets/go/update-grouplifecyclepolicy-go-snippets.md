@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewGroupLifecyclePolicy()
 groupLifetimeInDays := int32(180)
@@ -15,7 +23,7 @@ requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails) 
 
-graphClient.GroupLifecyclePoliciesById("groupLifecyclePolicy-id").Patch(requestBody)
+result, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

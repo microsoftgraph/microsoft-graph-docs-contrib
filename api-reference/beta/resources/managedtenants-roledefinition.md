@@ -3,7 +3,7 @@ title: "roleDefinition resource type"
 description: "Represents detailed information for the role definition."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

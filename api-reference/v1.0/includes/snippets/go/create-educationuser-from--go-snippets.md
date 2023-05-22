@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationUser()
 primaryRole := graphmodels.STRING_EDUCATIONUSERROLE 
@@ -31,9 +40,6 @@ requestBody.SetAccountEnabled(&accountEnabled)
 
 
 assignedLicense := graphmodels.NewAssignedLicense()
-additionalData := map[string]interface{}{
-}
-assignedLicense.SetAdditionalData(additionalData)
 
 assignedLicenses := []graphmodels.AssignedLicenseable {
 	assignedLicense,
@@ -43,9 +49,6 @@ requestBody.SetAssignedLicenses(assignedLicenses)
 
 
 assignedPlan := graphmodels.NewAssignedPlan()
-additionalData := map[string]interface{}{
-}
-assignedPlan.SetAdditionalData(additionalData)
 
 assignedPlans := []graphmodels.AssignedPlanable {
 	assignedPlan,
@@ -80,9 +83,6 @@ requestBody.SetPreferredLanguage(&preferredLanguage)
 
 
 provisionedPlan := graphmodels.NewProvisionedPlan()
-additionalData := map[string]interface{}{
-}
-provisionedPlan.SetAdditionalData(additionalData)
 
 provisionedPlans := []graphmodels.ProvisionedPlanable {
 	provisionedPlan,
@@ -104,7 +104,7 @@ requestBody.SetUserType(&userType)
 onPremisesInfo := graphmodels.NewEducationOnPremisesInfo()
 requestBody.SetOnPremisesInfo(onPremisesInfo)
 
-result, err := graphClient.Education().Users().Post(requestBody)
+result, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
 
 
 ```

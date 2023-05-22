@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.prod: "identity-and-access-reports"
 author: "besiler"
 doc_type: conceptualPageType
+ms.date: 07/07/2022
 ---
 
 # Identity and access reports API overview

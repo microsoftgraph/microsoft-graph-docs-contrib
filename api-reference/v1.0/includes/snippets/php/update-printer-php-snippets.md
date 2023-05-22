@@ -20,14 +20,14 @@ $location->setAltitudeInMeters(3);
 
 $requestBody->setLocation($location);
 $additionalData = [
-'name' => 'PrinterName', 
+		'name' => 'PrinterName', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->print()->printersById('printer-id')->patch($requestBody);
+$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->patch($requestBody);
 
 
 ```

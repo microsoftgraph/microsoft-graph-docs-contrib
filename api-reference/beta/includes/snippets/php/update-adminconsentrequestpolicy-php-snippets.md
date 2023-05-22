@@ -9,13 +9,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new AdminConsentRequestPolicyPostRequestBody();
+$requestBody = new AdminConsentRequestPolicyPutRequestBody();
 $additionalData = [
-'isEnabled' => true,
-'notifyReviewers' => true,
-'remindersEnabled' => true,
-'requestDurationInDays' => 5,
-'reviewers' => $reviewers1 = new ();
+		'isEnabled' => true,
+		'notifyReviewers' => true,
+		'remindersEnabled' => true,
+		'requestDurationInDays' => 5,
+		'reviewers' => $reviewers1 = new ();
 $		reviewers1->setQuery('/users/b6879be8-fb87-4482-a72e-18445d2b5c54');
 
 $		reviewers1->setQueryType('MicrosoftGraph');

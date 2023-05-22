@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [deviceManagementDerivedCredentialSettings](/graph/api/resources/devicemanagementderivedcredentialsettings) <li> [deviceManagementResourceAccessProfileAssignment](/graph/api/resources/devicemanagementresourceaccessprofileassignment) <li> [deviceManagementResourceAccessProfileBase](/graph/api/resources/devicemanagementresourceaccessprofilebase) <li> [windows10XCertificateProfile](/graph/api/resources/windows10xcertificateprofile) <li> [windows10XSCEPCertificateProfile](/graph/api/resources/windows10xscepcertificateprofile) <li> [windows10XTrustedRootCertificate](/graph/api/resources/windows10xtrustedrootcertificate) <li> [windows10XVpnConfiguration](/graph/api/resources/windows10xvpnconfiguration) <li> [windows10XWifiConfiguration](/graph/api/resources/windows10xwificonfiguration) </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-shared-devicemanagementderivedcredentialsettings) <li> [deviceManagementResourceAccessProfileAssignment](/graph/api/resources/intune-rapolicy-devicemanagementresourceaccessprofileassignment) <li> [deviceManagementResourceAccessProfileBase](/graph/api/resources/intune-rapolicy-devicemanagementresourceaccessprofilebase) <li> [windows10XCertificateProfile](/graph/api/resources/intune-rapolicy-windows10xcertificateprofile) <li> [windows10XSCEPCertificateProfile](/graph/api/resources/intune-rapolicy-windows10xscepcertificateprofile) <li> [windows10XTrustedRootCertificate](/graph/api/resources/intune-rapolicy-windows10xtrustedrootcertificate) <li> [windows10XVpnConfiguration](/graph/api/resources/intune-rapolicy-windows10xvpnconfiguration) <li> [windows10XWifiConfiguration](/graph/api/resources/intune-rapolicy-windows10xwificonfiguration) </ul> |

@@ -1,7 +1,7 @@
 ---
 title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
@@ -32,9 +32,9 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 | Property | Type              | Description                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id           | string            | The user object id                                                                                                                                                                                                                                                                                |
-| availability | string collection | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                              |
 | activity     | string collection | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
+| availability | string collection | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                              |
+| id           | string            | The user object id                                                                                                                                                                                                                                                                                |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 

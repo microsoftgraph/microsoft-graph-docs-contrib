@@ -88,6 +88,7 @@ Content-type: application/json
             "role":"externalGuest",
             "timeZone":"America/Chicago",
             "useBusinessHours":true,
+            "isEmailNotificationEnabled": false,
             "workingHours":[
                 {
                     "day":"monday",
@@ -145,6 +146,7 @@ Content-type: application/json
             "role":"administrator",
             "timeZone":"America/Chicago",
             "useBusinessHours":true,
+            "isEmailNotificationEnabled": false,
             "workingHours":[
                 {
                     "day":"monday",

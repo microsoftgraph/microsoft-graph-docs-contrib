@@ -14,7 +14,7 @@ $requestBody->setExternalUserLifecycleAction('None');
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->settings()->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->settings()->patch($requestBody);
 
 
 ```

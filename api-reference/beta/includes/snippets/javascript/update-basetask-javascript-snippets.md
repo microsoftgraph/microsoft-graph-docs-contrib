@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const baseTask = {
+const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
   '@odata.type': '#microsoft.graph.task',
   textBody: 'String',
   bodyLastModifiedDateTime: 'String (timestamp)',
@@ -34,6 +34,6 @@ const baseTask = {
 
 await client.api('/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT')
 	.version('beta')
-	.update(baseTask);
+	.update(aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT);
 
 ```

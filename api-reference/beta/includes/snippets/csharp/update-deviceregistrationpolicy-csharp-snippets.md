@@ -4,41 +4,64 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var deviceRegistrationPolicy = new DeviceRegistrationPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Policies.DeviceRegistrationPolicy.DeviceRegistrationPolicyPutRequestBody
 {
-	Id = "deviceRegistrationPolicy",
-	DisplayName = "Device Registration Policy",
-	Description = "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks",
-	UserDeviceQuota = 50,
-	MultiFactorAuthConfiguration = MultiFactorAuthConfiguration.NotRequired,
-	AzureADRegistration = new AzureADRegistrationPolicy
+	AdditionalData = new Dictionary<string, object>
 	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = false,
-		AllowedUsers = new List<String>()
 		{
+			"id" , "deviceRegistrationPolicy"
 		},
-		AllowedGroups = new List<String>()
 		{
-		}
+			"displayName" , "Device Registration Policy"
+		},
+		{
+			"description" , "Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks"
+		},
+		{
+			"userDeviceQuota" , 50
+		},
+		{
+			"multiFactorAuthConfiguration" , "0"
+		},
+		{
+			"azureADRegistration" , new 
+			{
+				AppliesTo = "1",
+				IsAdminConfigurable = false,
+				AllowedUsers = new List<>
+				{
+				},
+				AllowedGroups = new List<>
+				{
+				},
+			}
+		},
+		{
+			"azureADJoin" , new 
+			{
+				AppliesTo = "1",
+				IsAdminConfigurable = true,
+				AllowedUsers = new List<>
+				{
+				},
+				AllowedGroups = new List<>
+				{
+				},
+			}
+		},
+		{
+			"localAdminPassword" , new 
+			{
+				IsEnabled = true,
+			}
+		},
 	},
-	AzureADJoin = new AzureAdJoinPolicy
-	{
-		AppliesTo = PolicyScope.None,
-		IsAdminConfigurable = true,
-		AllowedUsers = new List<String>()
-		{
-		},
-		AllowedGroups = new List<String>()
-		{
-		}
-	}
 };
+await graphClient.Policies.DeviceRegistrationPolicy.PutAsync(requestBody);
 
-await graphClient.DeviceRegistrationPolicy
-	.Request()
-	.PutAsync(deviceRegistrationPolicy);
 
 ```

@@ -14,7 +14,7 @@ $requestBody->setMessageIds(['MC172851', 'MC167983', ]);
 
 
 
-$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->unarchive()->post($requestBody);
+$result = $graphServiceClient->admin()->serviceAnnouncement()->messages()->unarchive()->post($requestBody);
 
 
 ```

@@ -2,7 +2,7 @@
 title: "user: revokeSignInSessions"
 description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "yyuank"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -17,6 +17,8 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 
 >[!NOTE]
 >After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>
+>This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
 ## Permissions
 
@@ -70,10 +72,6 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

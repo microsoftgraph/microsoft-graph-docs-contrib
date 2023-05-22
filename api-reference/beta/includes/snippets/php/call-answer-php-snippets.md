@@ -16,16 +16,17 @@ $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
 
 $additionalData = [
-'blob' => '<Media Session Configuration Blob>', 
+		'blob' => '<Media Session Configuration Blob>', 
 ];
 $mediaConfig->setAdditionalData($additionalData);
 
 
 
 $requestBody->setMediaConfig($mediaConfig);
-$requestBody->setAcceptedModalities(['audio', ]);
+$requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
-$callOptions = new CallOptions();
+$callOptions = new IncomingCallOptions();
 $callOptions->set@odatatype('#microsoft.graph.incomingCallOptions');
 
 $callOptions->setIsContentSharingNotificationEnabled(true);
@@ -36,7 +37,7 @@ $requestBody->setParticipantCapacity(200);
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

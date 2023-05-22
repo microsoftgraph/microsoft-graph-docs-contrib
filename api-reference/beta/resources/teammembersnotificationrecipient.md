@@ -1,9 +1,9 @@
 ---
 title: "teamMembersNotificationRecipient resource type"
-description:  Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the team members.
-author: eddie-lee-msft
+description: "Represents the recipient (team members) of a notification sent in a Microsoft Teams activity feed."
+author: "eddie-lee-msft"
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -18,9 +18,9 @@ Represents the recipient of a notification sent in a Microsoft Teams activity fe
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|teamId|String|The team's identifier.|
+| Property | Type   | Description                                                                       |
+|:---------|:-------|:----------------------------------------------------------------------------------|
+| teamId   | String | The unique identifier for the team whose members should receive the notification. |
 
 ## Relationships
 None.
@@ -39,4 +39,3 @@ The following is a JSON representation of the resource.
   "teamId": "String"
 }
 ```
-

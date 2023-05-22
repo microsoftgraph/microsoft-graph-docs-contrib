@@ -14,7 +14,7 @@ $requestBody->setAllowedToUseSSPR(true);
 
 
 
-$graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```

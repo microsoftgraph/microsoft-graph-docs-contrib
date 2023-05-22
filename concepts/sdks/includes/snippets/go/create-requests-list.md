@@ -5,6 +5,7 @@
 
 import (
     cv "github.com/microsoftgraph/msgraph-sdk-go/me/calendarview"
+    "context"
 )
 
 startDateTime := "2021-11-18T00:00:00"
@@ -14,7 +15,7 @@ filter := "<filter condition>"
 query := cv.CalendarViewRequestBuilderGetQueryParameters{
     Filter:  &filter,
     Orderby: []string{"start/dateTime"},
-    Select_escaped: []string{
+    Select: []string{
         "subject",
         "start",
         "end",
@@ -24,8 +25,8 @@ query := cv.CalendarViewRequestBuilderGetQueryParameters{
 }
 
 options := cv.CalendarViewRequestBuilderGetOptions{
-    Q: &query,
+    QueryParameters: &query,
 }
 
-result, err := client.Me().CalendarView().Get(&options)
+result, err := client.Me().CalendarView().Get(context.Background(), &options)
 ```

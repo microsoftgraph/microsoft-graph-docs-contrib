@@ -70,7 +70,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_sensitivitylabel"
+  "name": "get_sensitivitylabel",
+  "sampleKeys": ["bob@contoso.com", "5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2"]
 }
 -->
 ``` http

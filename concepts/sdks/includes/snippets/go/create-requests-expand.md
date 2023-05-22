@@ -5,6 +5,7 @@
 
 import (
     events "github.com/microsoftgraph/msgraph-sdk-go/me/mailfolders/item/messages/item"
+    "context"
 )
 
 mailFolderId := "inbox"
@@ -15,12 +16,12 @@ expand := item.MessageRequestBuilderGetQueryParameters{
 }
 
 options := item.MessageRequestBuilderGetOptions{
-    Q: &expand,
+    QueryParameters: &expand,
 }
 
 result, err := client
     .Me()
     .MailFoldersById(mailFolderId)
     .MessagesById(messageId)
-    .Get(&options)
+    .Get(context.Background(), &options)
 ```

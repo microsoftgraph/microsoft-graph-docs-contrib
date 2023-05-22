@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var agreement = new Agreement
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Agreement
 {
 	DisplayName = "Contoso ToU for guest users",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = new AgreementFilesCollectionPage()
+	Files = new List<AgreementFileLocalization>
 	{
 		new AgreementFileLocalization
 		{
@@ -19,14 +21,12 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary")
-			}
-		}
-	}
+				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary"),
+			},
+		},
+	},
 };
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements.PostAsync(requestBody);
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements
-	.Request()
-	.AddAsync(agreement);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "wiFiProxySetting enum type"
 description: "Wi-Fi Proxy Settings."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -23,9 +23,3 @@ Wi-Fi Proxy Settings.
 |none|0|No Proxy.|
 |manual|1|Manual Proxy Settings via Address and Port.|
 |automatic|2|Automatic Proxy Settings via URL.|
-
-
-
-
-
-

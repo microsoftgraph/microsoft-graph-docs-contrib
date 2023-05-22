@@ -9,12 +9,24 @@ ms.custom: scenarios:getting-started
 
 # Customize people insights privacy in Microsoft Graph (preview)
 
-People insights represent connections of people who are [relevant to or working with](people-example.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people).
+People insights represent connections of people who are [relevant to or working with](people-insights-overview.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people).
 
 
 ## Customize people insights for an organization
 
 By default, the display or return of people insights is enabled for an organization. Administrators with the global administrator role can customize this behavior for an organization using REST APIs and the appropriate permissions. They can customize by setting properties of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource in the following ways:
+
+### Configure people insights via the Microsoft 365 admin center
+
+An administrator with the _global administrator_ role can enable or disable the people insights privacy setting via a toggle. To do so, in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, select **Configurations**, and under **People insights**, choose **Change**.
+
+![Screenshot of the Microsoft 365 admin center Search & intelligence page with People insights highlighted](images/people-insights-admin-center.png)
+
+The **Allow your organization to use People insights** toggle allows you to enable or disable people insights for the whole tenant. Optionally, you can also disable it only for a group of users following the previous steps and searching for a specific group. Choose **Save** to save your settings.
+
+![Screenshot of the People insights control with the selections highlighted](images/people-insights-admin-center-groupcontrol.png)
+
+### Configure people insights via REST API
 
 - Disable people insights for all users in the organization, by setting the **isEnabledInOrganization** property of the **insightsSettings** resource to `false`. (By default, the **isEnabledInOrganization** property is `true`.)
 

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsWindows10DevicesSummary resource type"
 description: "The user experience analytics work from anywhere Windows 10 devices summary."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,9 +38,3 @@ Here is a JSON representation of the resource.
   "unsupportedOSversionDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

@@ -4,14 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Answer"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
 requestBody.SetCallbackUri(&callbackUri) 
 acceptedModalities := []graphmodels.Modalityable {
-	"audio",
+	modality := graphmodels.AUDIO_MODALITY 
+	requestBody.SetModality(&modality) 
 
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
@@ -22,7 +31,7 @@ additionalData := map[string]interface{}{
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-graphClient.Communications().CallsById("call-id").Answer().Post(requestBody)
+graphClient.Communications().Calls().ByCallId("call-id").Answer().Post(context.Background(), requestBody, nil)
 
 
 ```

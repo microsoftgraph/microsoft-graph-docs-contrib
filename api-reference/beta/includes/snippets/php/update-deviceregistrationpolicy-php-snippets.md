@@ -9,14 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new DeviceRegistrationPolicyPostRequestBody();
+$requestBody = new DeviceRegistrationPolicyPutRequestBody();
 $additionalData = [
-'id' => 'deviceRegistrationPolicy', 
-'displayName' => 'Device Registration Policy', 
-'description' => 'Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks', 
-'userDeviceQuota' => 50,
-'multiFactorAuthConfiguration' => '0', 
-'azureADRegistration' => $requestBody = new AzureADRegistration();
+		'id' => 'deviceRegistrationPolicy', 
+		'displayName' => 'Device Registration Policy', 
+		'description' => 'Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks', 
+		'userDeviceQuota' => 50,
+		'multiFactorAuthConfiguration' => '0', 
+		'azureADRegistration' => $requestBody = new AzureADRegistration();
 $		requestBody->setAppliesTo('1');
 
 		$requestBody->setIsAdminConfigurable(false);
@@ -40,13 +40,19 @@ $requestBody->setAllowedGroups([]);
 
 $requestBody->setAzureADJoin($azureADJoin);
 
+'localAdminPassword' => $requestBody = new LocalAdminPassword();
+$requestBody->setIsEnabled(true);
+
+
+$requestBody->setLocalAdminPassword($localAdminPassword);
+
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->deviceRegistrationPolicy()->put($requestBody);
+$graphServiceClient->policies()->deviceRegistrationPolicy()->put($requestBody);
 
 
 ```

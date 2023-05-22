@@ -11,15 +11,15 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RegistrationPostRequestBody();
 $additionalData = [
-'@odata.type' => '#microsoft.graph.externalMeetingRegistration', 
-'allowedRegistrant' => 'everyone', 
+		'@odata.type' => '#microsoft.graph.externalMeetingRegistration', 
+		'allowedRegistrant' => 'everyone', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->post($requestBody);
+$graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->post($requestBody);
 
 
 ```

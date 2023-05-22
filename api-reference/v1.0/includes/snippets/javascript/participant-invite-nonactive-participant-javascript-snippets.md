@@ -29,7 +29,6 @@ const inviteParticipantsOperation = {
 };
 
 await client.api('/communications/calls/{id}/participants/invite')
-	.version('beta')
 	.post(inviteParticipantsOperation);
 
 ```

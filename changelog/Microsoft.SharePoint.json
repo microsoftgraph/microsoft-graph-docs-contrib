@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
           "Target": "list"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "richLongRunningOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-beta) resource",
+          "Description": "Added the [richLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-beta) resource",
           "Target": "richLongRunningOperation"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addCopyFromContentTypeHub",
           "ChangeType": "Addition",
-          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/contenttype-addCopyFromContentTypeHub?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Description": "Added the [addCopyFromContentTypeHub](https://learn.microsoft.com/en-us/graph/api/contenttype-addCopyFromContentTypeHub?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
           "Target": "contentType"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCompatibleHubContentTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/contenttype-getCompatibleHubContentTypes?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Description": "Added the [getCompatibleHubContentTypes](https://learn.microsoft.com/en-us/graph/api/contenttype-getCompatibleHubContentTypes?view=graph-rest-beta) method to the [contentType](https://learn.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
           "Target": "contentType"
         }
       ],
@@ -57,7 +57,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "store",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API [store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Introduced the taxonomy API [store](https://learn.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0) resource and associated methods.",
           "Target": "store"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API [group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Introduced the taxonomy API [group](https://learn.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-1.0) resource and associated methods.",
           "Target": "group"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "set",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API [set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Introduced the taxonomy API [set](https://learn.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0) resource and associated methods.",
           "Target": "set"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "term",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API [term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Introduced the taxonomy API [term](https://learn.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0) resource and associated methods.",
           "Target": "term"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relation",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API [relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Introduced the taxonomy API [relation](https://learn.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resource and associated methods.",
           "Target": "relation"
         }
       ],
@@ -107,7 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
-          "Description": "Added the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity.",
+          "Description": "Added the [termStore.store](https://learn.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity.",
           "Target": "site"
         },
         {
@@ -115,7 +115,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "termStore.group",
           "ChangeType": "Addition",
-          "Description": "Added the **parentSiteId** property to the [termStore.group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-beta) entity.",
+          "Description": "Added the **parentSiteId** property to the [termStore.group](https://learn.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-beta) entity.",
           "Target": "termStore.group"
         }
       ],
@@ -133,7 +133,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods.",
+          "Description": "Introduced the taxonomy API, including the [termStore.store](https://learn.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](https://learn.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](https://learn.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](https://learn.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods.",
           "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
         }
       ],
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [geolocationColumn](https://docs.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the [geolocationColumn](https://learn.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](https://learn.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "geolocationColumn,columnDefinition"
         }
       ],
@@ -169,7 +169,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-beta).",
+          "Description": "Added the **followedSites** navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](https://learn.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-beta).",
           "Target": "user,list the sites followed by the signed-in user"
         }
       ],
@@ -187,7 +187,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-1.0).",
+          "Description": "Added the **followedSites** navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](https://learn.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-1.0).",
           "Target": "user,list the sites followed by the signed-in user"
         },
         {
@@ -195,7 +195,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "dataLocatonCode",
           "ChangeType": "Addition",
-          "Description": "Added the **dataLocatonCode** property on the [siteCollection](https://docs.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
+          "Description": "Added the **dataLocatonCode** property on the [siteCollection](https://learn.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
           "Target": "siteCollection"
         },
         {
@@ -203,7 +203,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantId** property on the [sharepointIds](https://docs.microsoft.com/en-us/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
+          "Description": "Added the **tenantId** property on the [sharepointIds](https://learn.microsoft.com/en-us/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
           "Target": "sharepointIds"
         }
       ],
@@ -221,7 +221,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "followSite,user"
         },
         {
@@ -229,7 +229,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "unfollowSite,user"
         },
         {
@@ -237,7 +237,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) entity.",
           "Target": "list"
         }
       ],
@@ -255,7 +255,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) entity.",
           "Target": "list"
         }
       ],
@@ -273,7 +273,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "followSite,user"
         },
         {
@@ -281,7 +281,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "unfollowSite,user"
         }
       ],
@@ -299,7 +299,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
@@ -307,7 +307,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
@@ -315,7 +315,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
@@ -323,7 +323,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
@@ -331,7 +331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
@@ -339,7 +339,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
@@ -347,7 +347,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
           "Target": "itemAnalytics"
         },
         {
@@ -355,7 +355,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemActivityStat](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
           "Target": "itemActivityStat"
         },
         {
@@ -363,7 +363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
+          "Description": "Added the [itemActionStat](https://learn.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
           "Target": "itemActionStat"
         },
         {
@@ -371,7 +371,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
+          "Description": "Added the [accessAction](https://learn.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
           "Target": "accessAction"
         },
         {
@@ -379,7 +379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
+          "Description": "Added the [incompleteData](https://learn.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
           "Target": "incompleteData"
         },
         {
@@ -387,7 +387,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **access** property to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         },
         {
@@ -395,7 +395,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **location** property to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         }
       ],
@@ -449,7 +449,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharepoint,sites,fieldDefinition,columnDefinition,siteCollectionId,siteId,site,sharepointIds,listItemId,listItem,sharepointIds,columnSet,listItem,fields,site",
           "ChangeType": "Change",
-          "Description": "Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property. ,  Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. ,  Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. ,  Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. ,  Renamed the **columnSet** property on **listItem** to **fields**. ,  Changed **site** resources to use the SharePoint hostname as part of their ID.",
+          "Description": "Removed the **sharepoint** navigation properties. Sites are now accessed directly through the **sites** navigation property.  Removed the **fieldDefinition** resource. It has been replaced by **columnDefinition**. Removed the **siteCollectionId** and **siteId** properties from **site**. Use **sharepointIds** instead. Removed the **listItemId** property from **listItem**. Use **sharepointIds** instead. Renamed the **columnSet** property on **listItem** to **fields**. Changed **site** resources to use the SharePoint hostname as part of their ID.",
           "Target": ""
         },
         {
@@ -457,7 +457,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "booleanColumn,calculatedColumn,choiceColumn,dateTimeColumn,lookupColumn,numberColumn,personOrGroupColumn,textColumn,displayName,site,columns,site,list,listItem,sharedDriveItem,sharepointIds,list,listItem,site,columnDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. ,  Added the **displayName** property to **site**. ,  Added the **columns** navigation property to **site**. ,  Added the **list** and **listItem** navigation properties to **sharedDriveItem**. ,  Added the **sharepointIds** property to **list** and **listItem**, and **site**. ,  Added the **columnDefinition** resource type.",
+          "Description": "Added the **booleanColumn**, **calculatedColumn**, **choiceColumn**, **dateTimeColumn**, **lookupColumn**, **numberColumn**, **personOrGroupColumn**, and **textColumn** resource types. Added the **displayName** property to **site**. Added the **columns** navigation property to **site**. Added the **list** and **listItem** navigation properties to **sharedDriveItem**. Added the **sharepointIds** property to **list** and **listItem**, and **site**. Added the **columnDefinition** resource type.",
           "Target": ""
         }
       ],
@@ -475,7 +475,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
-          "Description": "Access to SharePoint sites and [lists by ID](https://docs.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://docs.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
+          "Description": "Access to SharePoint sites and [lists by ID](https://learn.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://learn.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
           "Target": "lists by ID,path/URL"
         },
         {
@@ -483,7 +483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "listing, creating, getting, and deleting instances of listItem",
           "ChangeType": "Addition",
-          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
           "Target": "listing, creating, getting, and deleting instances of listItem"
         }
       ],

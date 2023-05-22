@@ -46,7 +46,6 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the legal hold policy. Optional.|
-|contentQuery|String|The content query of the legal hold policy. Optional.|
 
 
 ## Response
@@ -69,7 +68,6 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 
 {
     "description": "updated description",
-    "contentQuery": "bazooka bazooka"
 }
 ```
 
@@ -77,16 +75,16 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryholdpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoveryholdpolicy-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryholdpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoveryholdpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -94,8 +92,6 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 The following is an example of the response.

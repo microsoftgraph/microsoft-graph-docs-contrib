@@ -17,7 +17,7 @@ $defaultUserRolePermissions->setPermissionGrantPoliciesAssigned(['managePermissi
 $requestBody->setDefaultUserRolePermissions($defaultUserRolePermissions);
 
 
-$graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->authorizationPolicy()->patch($requestBody);
 
 
 ```

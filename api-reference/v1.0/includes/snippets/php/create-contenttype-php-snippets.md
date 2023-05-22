@@ -14,7 +14,7 @@ $requestBody->setName('docSet');
 
 $requestBody->setDescription('custom docset');
 
-$base = new Base();
+$base = new ContentType();
 $base->setName('Document Set');
 
 $base->setId('0x0120D520');
@@ -25,7 +25,7 @@ $requestBody->setGroup('Document Set Content Types');
 
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->contentTypes()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->post($requestBody);
 
 
 ```

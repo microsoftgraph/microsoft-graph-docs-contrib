@@ -13,7 +13,6 @@ const client = Client.init(options);
 const ediscoveryHoldPolicy = {
     displayname: 'My legalHold with sources',
     description: 'Created from Graph API',
-    contentQuery: 'Bazooka',
     'userSources@odata.bind': [
         {
             '@odata.type': 'microsoft.graph.security.userSource',

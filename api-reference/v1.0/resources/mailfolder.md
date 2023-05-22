@@ -88,7 +88,7 @@ The `TotalItemCount` and `UnreadItemCount` properties of a folder allow you to c
 They let you avoid queries like the following that can incur significant latency:
 
 ```http
-https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
+https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
 Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.

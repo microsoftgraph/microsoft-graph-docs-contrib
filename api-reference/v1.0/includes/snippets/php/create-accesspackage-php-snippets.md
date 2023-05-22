@@ -16,14 +16,14 @@ $requestBody->setDescription('outside sales representatives');
 
 $requestBody->setIsHidden(false);
 
-$catalog = new Catalog();
+$catalog = new AccessPackageCatalog();
 $catalog->setId('66584aae-98bb-48cc-9458-7bee5d2a6577');
 
 
 $requestBody->setCatalog($catalog);
 
 
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->post($requestBody);
 
 
 ```

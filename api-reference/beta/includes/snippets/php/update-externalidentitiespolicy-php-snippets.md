@@ -14,7 +14,7 @@ $requestBody->setAllowExternalIdentitiesToLeave(false);
 
 
 
-$graphServiceClient->policies()->externalIdentitiesPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->externalIdentitiesPolicy()->patch($requestBody);
 
 
 ```

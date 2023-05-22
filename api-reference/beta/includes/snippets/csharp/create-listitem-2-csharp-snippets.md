@@ -4,19 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var fieldValueSet = new FieldValueSet
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new FieldValueSet
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"Color", "Fuchsia"},
-		{"Quantity", "934"}
-	}
+		{
+			"Color" , "Fuchsia"
+		},
+		{
+			"Quantity" , 934
+		},
+	},
 };
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Fields.PatchAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Fields
-	.Request()
-	.UpdateAsync(fieldValueSet);
 
 ```

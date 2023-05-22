@@ -78,7 +78,8 @@ $targetsArray []= $targetsInvitationParticipantInfo2;
 $requestBody->setTargets($targetsArray);
 
 
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
@@ -91,7 +92,7 @@ $requestBody->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
 
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

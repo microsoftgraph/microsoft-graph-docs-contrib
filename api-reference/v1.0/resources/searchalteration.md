@@ -2,7 +2,7 @@
 title: "searchAlteration resource type"
 description: "Provides the details about the search alteration for spelling correction."
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

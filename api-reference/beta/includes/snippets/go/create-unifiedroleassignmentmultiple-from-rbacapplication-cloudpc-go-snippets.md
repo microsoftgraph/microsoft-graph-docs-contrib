@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
 displayName := "My test role assignment 1"
@@ -21,7 +29,7 @@ principalIds := []string {
 }
 requestBody.SetPrincipalIds(principalIds)
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(requestBody)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

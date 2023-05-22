@@ -12,13 +12,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new AnswerPostRequestBody();
 $requestBody->setCallbackUri('https://bot.contoso.com/api/calls');
 
-$requestBody->setAcceptedModalities(['audio', ]);
+$requestBody->setAcceptedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
 $additionalData = [
-'preFetchMedia' => $preFetchMedia1 = new ();
+	'preFetchMedia' => $preFetchMedia1 = new ();
 $	preFetchMedia1->setUri('https://cdn.contoso.com/beep.wav');
 
 $	preFetchMedia1->setResourceId('1D6DE2D4-CD51-4309-8DAA-70768651088E');
@@ -43,7 +44,7 @@ $mediaConfig->setAdditionalData($additionalData);
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$graphServiceClient->communications()->callsById('call-id')->answer()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->answer()->post($requestBody);
 
 
 ```

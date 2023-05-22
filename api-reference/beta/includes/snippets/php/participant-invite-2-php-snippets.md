@@ -11,25 +11,26 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
+$participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+
+$participantsInvitationParticipantInfo1Identity = new IdentitySet();
+$participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $participantsInvitationParticipantInfo1 = new Identity();
-$		participantsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
+		'phone' => $participantsInvitationParticipantInfo1Identity = new Phone();
+$		participantsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
 
-$phone = new Phone();
-$		phone->set@odatatype('#microsoft.graph.identity');
-
-$		phone->setId('+12345678901');
+$		participantsInvitationParticipantInfo1Identity->setId('+12345678901');
 
 
-$participantsInvitationParticipantInfo1->setPhone($phone);
-
-$participantsInvitationParticipantInfo1->setIdentity($identity);
+$participantsInvitationParticipantInfo1Identity->setPhone($phone);
 
 ];
-$participantsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$participantsInvitationParticipantInfo1Identity->setAdditionalData($additionalData);
 
 
+
+$participantsInvitationParticipantInfo1->setIdentity($participantsInvitationParticipantInfo1Identity);
 
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $requestBody->setParticipants($participantsArray);
@@ -39,7 +40,7 @@ $requestBody->setClientContext('f2fa86af-3c51-4bc2-8fc0-475452d9764f');
 
 
 
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participants()->invite()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->invite()->post($requestBody);
 
 
 ```

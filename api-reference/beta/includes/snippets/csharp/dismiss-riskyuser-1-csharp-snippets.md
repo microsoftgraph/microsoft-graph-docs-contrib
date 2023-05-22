@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userIds = new List<String>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.RiskyUsers.Dismiss.DismissPostRequestBody
 {
-	"04487ee0-f4f6-4e7f-8999-facc5a30e232",
-	"13387ee0-f4f6-4e7f-8999-facc5120e345"
+	UserIds = new List<string>
+	{
+		"04487ee0-f4f6-4e7f-8999-facc5a30e232",
+		"13387ee0-f4f6-4e7f-8999-facc5120e345",
+	},
 };
+await graphClient.RiskyUsers.Dismiss.PostAsync(requestBody);
 
-await graphClient.RiskyUsers
-	.Dismiss(userIds)
-	.Request()
-	.PostAsync();
 
 ```

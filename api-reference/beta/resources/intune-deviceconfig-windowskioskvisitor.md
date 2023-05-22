@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskVisitor resource type"
 description: "The class used to identify a visitor kiosk account"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -39,9 +39,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
-
-
-
-
-
-

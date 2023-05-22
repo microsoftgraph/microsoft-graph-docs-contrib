@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewPasswordCredentialPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ServicePrincipals/Item/AddPassword"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewAddPasswordPostRequestBody()
 passwordCredential := graphmodels.NewPasswordCredential()
 displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName) 
 requestBody.SetPasswordCredential(passwordCredential)
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AddPassword().Post(requestBody)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddPassword().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "resourcePageType"
+ms.date: 01/20/2022
 ---
 
 # On-premises publishing profiles

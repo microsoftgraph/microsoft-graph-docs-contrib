@@ -18,7 +18,7 @@ $requestBody->setIsPhoneOneTimePasswordAuthenticationEnabled(true);
 
 
 
-$graphServiceClient->policies()->b2cAuthenticationMethodsPolicy()->patch($requestBody);
+$result = $graphServiceClient->policies()->b2cAuthenticationMethodsPolicy()->patch($requestBody);
 
 
 ```

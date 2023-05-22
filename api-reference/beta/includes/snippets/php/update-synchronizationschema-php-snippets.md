@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SchemaPostRequestBody();
+$requestBody = new SchemaPutRequestBody();
 $additionalData = [
-'directories' => $directories1 = new ();
+		'directories' => $directories1 = new ();
 $		directories1->setName('Azure Active Directory');
 
 $objects1 = new ();
@@ -81,7 +81,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobsById('synchronizationJob-id')->schema()->put($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->byJobId('synchronizationJob-id')->schema()->put($requestBody);
 
 
 ```

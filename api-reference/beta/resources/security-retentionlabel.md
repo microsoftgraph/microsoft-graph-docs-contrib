@@ -3,7 +3,7 @@ title: "retentionLabel resource type"
 description: "Represents how customers can manage their data, whether and for how long to retain or delete it."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

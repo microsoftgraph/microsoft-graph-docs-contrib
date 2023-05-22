@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationComboBox"
 description: "Read properties and relationships of the groupPolicyPresentationComboBox object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -81,9 +81,3 @@ Content-Length: 385
   }
 }
 ```
-
-
-
-
-
-

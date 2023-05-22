@@ -1,7 +1,7 @@
 ---
 title: "wiFiSecurityType enum type"
 description: "Wi-Fi Security Types."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,9 +26,3 @@ Wi-Fi Security Types.
 |wep|3|WEP Encryption.|
 |wpa2Personal|4|WPA2-Personal.|
 |wpa2Enterprise|5|WPA2-Enterprise. Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.|
-
-
-
-
-
-

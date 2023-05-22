@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var extension = new OpenTypeExtension
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Extension
 {
-	ExtensionName = "Com.Contoso.Referral",
-	AdditionalData = new Dictionary<string, object>()
+	OdataType = "microsoft.graph.openTypeExtension",
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"companyName", "Wingtip Toys"},
-		{"dealValue", "500050"},
-		{"expirationDate", "2015-12-03T10:00:00Z"}
-	}
+		{
+			"extensionName" , "Com.Contoso.Referral"
+		},
+		{
+			"companyName" , "Wingtip Toys"
+		},
+		{
+			"dealValue" , 500050
+		},
+		{
+			"expirationDate" , "2015-12-03T10:00:00.000Z"
+		},
+	},
 };
+var result = await graphClient.Me.Messages["{message-id}"].Extensions.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"].Extensions
-	.Request()
-	.AddAsync(extension);
 
 ```

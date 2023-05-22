@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessClientApplications resource type"
 description: "Represents client applications (service principals and workload identities) included in and excluded from the policy scope."
-author: "calebb"
+author: "bakerCaleb"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -32,10 +32,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conditionalAccessClientApplications",
-  "includeServicePrincipals": [
+  "excludeServicePrincipals": [
     "String"
   ],
-  "excludeServicePrincipals": [
+  "includeServicePrincipals": [
     "String"
   ]
 }

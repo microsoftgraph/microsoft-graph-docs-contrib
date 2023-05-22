@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"]
-	.Reassign()
-	.Request()
-	.Header("Prefer","include-unknown-enum-members")
-	.PostAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Reassign.PostAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "include-unknown-enum-members");
+});
+
 
 ```

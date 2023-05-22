@@ -14,7 +14,7 @@ $requestBody->setExternalUserLifecycleAction(new AccessPackageExternalUserLifecy
 
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->settings()->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->settings()->patch($requestBody);
 
 
 ```

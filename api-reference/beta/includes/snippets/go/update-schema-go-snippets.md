@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//externalConnectors"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSchema()
 baseType := "microsoft.graph.externalItem"
@@ -22,7 +30,8 @@ property.SetIsSearchable(&isSearchable)
 isRetrievable := true
 property.SetIsRetrievable(&isRetrievable) 
 labels := []graphmodels.Labelable {
-	"title",
+	label := graphmodels.TITLE_LABEL 
+	property.SetLabel(&label) 
 
 }
 property.SetLabels(labels)
@@ -53,7 +62,7 @@ properties := []graphmodels.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-graphClient.External().ConnectionsById("externalConnection-id").Schema().Patch(requestBody)
+result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```

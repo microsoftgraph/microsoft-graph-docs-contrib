@@ -11,25 +11,26 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new RedirectPostRequestBody();
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
+$targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.invitationParticipantInfo');
+
+$targetsInvitationParticipantInfo1Identity = new IdentitySet();
+$targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identitySet');
+
 $additionalData = [
-'@odata.type' => '#microsoft.graph.invitationParticipantInfo', 
-'identity' => $targetsInvitationParticipantInfo1 = new Identity();
-$		targetsInvitationParticipantInfo1->set@odatatype('#microsoft.graph.identitySet');
+		'phone' => $targetsInvitationParticipantInfo1Identity = new Phone();
+$		targetsInvitationParticipantInfo1Identity->set@odatatype('#microsoft.graph.identity');
 
-$phone = new Phone();
-$		phone->set@odatatype('#microsoft.graph.identity');
-
-$		phone->setId('+12345678901');
+$		targetsInvitationParticipantInfo1Identity->setId('+12345678901');
 
 
-$targetsInvitationParticipantInfo1->setPhone($phone);
-
-$targetsInvitationParticipantInfo1->setIdentity($identity);
+$targetsInvitationParticipantInfo1Identity->setPhone($phone);
 
 ];
-$targetsInvitationParticipantInfo1->setAdditionalData($additionalData);
+$targetsInvitationParticipantInfo1Identity->setAdditionalData($additionalData);
 
 
+
+$targetsInvitationParticipantInfo1->setIdentity($targetsInvitationParticipantInfo1Identity);
 
 $targetsArray []= $targetsInvitationParticipantInfo1;
 $requestBody->setTargets($targetsArray);
@@ -39,7 +40,7 @@ $requestBody->setCallbackUri('https://bot.contoso.com/api/calls/24701998-1a73-4d
 
 
 
-$graphServiceClient->communications()->callsById('call-id')->redirect()->post($requestBody);
+$graphServiceClient->communications()->calls()->byCallId('call-id')->redirect()->post($requestBody);
 
 
 ```

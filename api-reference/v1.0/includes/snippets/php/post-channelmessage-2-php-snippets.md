@@ -12,14 +12,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new ChatMessage();
 $requestBody->setCreatedDateTime(new DateTime('2019-02-04T19:58:15.511Z'));
 
-$from = new From();
+$from = new ChatMessageFromIdentitySet();
 $fromUser = new Identity();
 $fromUser->setId('id-value');
 
 $fromUser->setDisplayName('Joh Doe');
 
 $additionalData = [
-'userIdentityType' => 'aadUser', 
+		'userIdentityType' => 'aadUser', 
 ];
 $fromUser->setAdditionalData($additionalData);
 
@@ -37,7 +37,7 @@ $body->setContent('Hello World');
 $requestBody->setBody($body);
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->post($requestBody);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->post($requestBody);
 
 
 ```

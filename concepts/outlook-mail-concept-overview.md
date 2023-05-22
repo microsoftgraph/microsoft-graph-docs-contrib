@@ -47,7 +47,7 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 - Check [mail tips](/graph/api/resources/mailtips) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
 
-- Make use of the [people API](people-example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
+- Make use of the [people API](people-insights-overview.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
 
 - Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights](/graph/api/resources/officegraphinsights) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 

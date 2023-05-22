@@ -3,7 +3,7 @@ title: "roleAssignment resource type"
 description: "Represents the role assignment to a signed-in user for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "multi-tenant-management"
 doc_type: resourcePageType
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "wiredNetworkAuthenticationType enum type"
 description: "Wired Network Authentication Type Settings."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,9 +26,3 @@ Wired Network Authentication Type Settings.
 |machineOrUser|3|Machine or User Authentication|
 |guest|4|Guest Authentication|
 |unknownFutureValue|5|Sentinel member for cases where the client cannot handle the new enum values.|
-
-
-
-
-
-

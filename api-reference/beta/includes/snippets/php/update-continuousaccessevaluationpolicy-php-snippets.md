@@ -16,7 +16,7 @@ $requestBody->setMigrate(true);
 
 
 
-$graphServiceClient->identity()->continuousAccessEvaluationPolicy()->patch($requestBody);
+$result = $graphServiceClient->identity()->continuousAccessEvaluationPolicy()->patch($requestBody);
 
 
 ```

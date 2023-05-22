@@ -44,8 +44,8 @@ POST /groups/{id}/calendar/events/{id}/forward
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
 
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
+POST /me/calendarGroups/{id}/calendars/{id}/events/{id}/forward
+POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events/{id}/forward
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -82,9 +82,9 @@ Content-type: application/json
 {
   "ToRecipients":[
       {
-        "emailAddress": {
-          "address":"danas@contoso.onmicrosoft.com",
-          "name":"Dana Swope"
+        "EmailAddress": {
+          "Address":"danas@contoso.onmicrosoft.com",
+          "Name":"Dana Swope"
         }
       }
      ],
@@ -97,28 +97,27 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-forward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-forward-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/event-forward-powershell-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/event-forward-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-forward-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### Response
 Here is an example of the response.

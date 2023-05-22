@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails resource type"
 description: "The user experience analytics application performance entity contains app performance by app version details."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -64,9 +64,3 @@ Here is a JSON representation of the resource.
   "appCrashCount": 1024
 }
 ```
-
-
-
-
-
-

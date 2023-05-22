@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var directorySetting = new DirectorySetting
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DirectorySetting
 {
 	TemplateId = "08d542b9-071f-4e16-94b0-74abb372e3d9",
-	Values = new List<SettingValue>()
+	Values = new List<SettingValue>
 	{
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = "false"
-		}
-	}
+			Value = "false",
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].Settings.PostAsync(requestBody);
 
-await graphClient.Groups["{group-id}"].Settings
-	.Request()
-	.AddAsync(directorySetting);
 
 ```

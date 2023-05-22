@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 await client.api('/communications/calls/{id}/participants/{id}')
-	.version('beta')
 	.delete();
 
 ```

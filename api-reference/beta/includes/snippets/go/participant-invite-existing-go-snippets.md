@@ -4,25 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Communications/Calls/Item/Participants/Invite"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewInvitePostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-additionalData := map[string]interface{}{
-	"replacesCallId" : "a7ebfb2d-871e-419c-87af-27290b22e8db", 
-identity := graphmodels.New()
-user := graphmodels.New()
+replacesCallId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
+invitationParticipantInfo.SetReplacesCallId(&replacesCallId) 
+identity := graphmodels.NewIdentitySet()
+user := graphmodels.NewIdentity()
 id := "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
 user.SetId(&id) 
-identityProvider := "AAD"
-user.SetIdentityProvider(&identityProvider) 
-	identity.SetUser(user)
-	invitationParticipantInfo.SetIdentity(identity)
+additionalData := map[string]interface{}{
+	"identityProvider" : "AAD", 
 }
-invitationParticipantInfo.SetAdditionalData(additionalData)
+user.SetAdditionalData(additionalData)
+identity.SetUser(user)
+invitationParticipantInfo.SetIdentity(identity)
 
 participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
@@ -32,7 +40,7 @@ requestBody.SetParticipants(participants)
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().CallsById("call-id").Participants().Invite().Post(requestBody)
+result, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().Invite().Post(context.Background(), requestBody, nil)
 
 
 ```

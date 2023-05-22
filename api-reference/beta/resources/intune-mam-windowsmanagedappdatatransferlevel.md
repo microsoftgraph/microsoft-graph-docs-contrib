@@ -1,7 +1,7 @@
 ---
 title: "windowsManagedAppDataTransferLevel enum type"
 description: "Data can be transferred from/to these classes of apps"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,9 +22,3 @@ Data can be transferred from/to these classes of apps
 |:---|:---|:---|
 |allApps|0|All apps.|
 |none|1|No apps.|
-
-
-
-
-
-

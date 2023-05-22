@@ -16,7 +16,7 @@ $requestBody->setCountryCode('NO');
 
 
 
-$requestResult = $graphServiceClient->me()->profile()->account()->post($requestBody);
+$result = $graphServiceClient->me()->profile()->account()->post($requestBody);
 
 
 ```

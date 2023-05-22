@@ -1,7 +1,7 @@
 ---
 title: "vpnEncryptionAlgorithmType enum type"
 description: "The type of VPN security association encryption algorithm"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -29,9 +29,3 @@ The type of VPN security association encryption algorithm
 |aes192|6|AES-192|
 |aes192Gcm|7|AES-192-GCM|
 |chaCha20Poly1305|8|ChaCha20Poly1305|
-
-
-
-
-
-

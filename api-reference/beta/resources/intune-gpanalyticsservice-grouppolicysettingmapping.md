@@ -1,7 +1,7 @@
 ---
 title: "groupPolicySettingMapping resource type"
 description: "The Group Policy setting to MDM/Intune mapping."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -92,9 +92,3 @@ Here is a JSON representation of the resource.
   "admxSettingDefinitionId": "String"
 }
 ```
-
-
-
-
-
-

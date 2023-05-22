@@ -17,6 +17,13 @@ This article explains how to get up and running with Postman and Microsoft Graph
 
 For details about how to use Postman, follow the steps in this article or watch the [Getting started with Microsoft Graph Postman workspace](https://youtu.be/3RTHY3jScmA) video.
 
+> [!TIP]
+> The Microsoft Graph Postman collection is configured to authenticate with the global Azure AD service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
+>
+> - Update the request URL, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
+> - Update the **Auth URL** and **Access Token URL** values on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `login.microsoftonline.com` with the Azure AD endpoint for your national cloud.
+> - Update the **Scope** value on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
+
 ## Step 1: Fork the Microsoft Graph Postman collection
 
 To use the Postman collection, fork it to your own Postman workspace. Do this from the web browser.
@@ -29,7 +36,7 @@ To use the Postman collection, fork it to your own Postman workspace. Do this fr
 
 You are redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
-## Step 2: Download the Postman Agent (optional - Postman web browser only) 
+## Step 2: Download the Postman Agent (optional - Postman web browser only)
 
 To use this particular Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
 
@@ -81,7 +88,7 @@ Because this is the first time that you are running a request as a delegated aut
 
 1. Select the **Delegated** folder.
 1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, select the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Authorization Code`.
+1. In the **Configure New Token** section, select the **Configuration Options** tab. Make sure the call back URL matches with what you provided when you created the application registration. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Authorization Code`.
 1. Scroll down on the right and select **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
 1. Select **Proceed**, and then select the **Use Token** button.

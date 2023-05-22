@@ -24,9 +24,9 @@ Represents the [policy configuration of self-service sign-up experience](../reso
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|id|String| Inherited property. The identifier of the authentication flows policy. Optional. Read-only.
-|displayName|String| Inherited property. The human-readable name of the policy. Optional. Read-only.|
 |description|String|Inherited property. A description of the policy. Optional. Read-only.|
+|displayName|String| Inherited property. The human-readable name of the policy. Optional. Read-only.|
+|id|String| Inherited property. The identifier of the authentication flows policy. Optional. Read-only.|
 |selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) |Contains [selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) settings that convey whether self-service sign-up is enabled or disabled. Optional. Read-only. |
 
 ## Relationships
@@ -46,9 +46,9 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-   "id":"String (identifier)",
-   "displayName":"String",
    "description":"String",
+   "displayName":"String",
+   "id":"String (identifier)",
    "selfServiceSignUp":{
       "@odata.type":"#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
    }

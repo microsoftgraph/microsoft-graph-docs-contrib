@@ -36,8 +36,16 @@ $targetsArray []= $targetsInvitationParticipantInfo1;
 $requestBody->setTargets($targetsArray);
 
 
-$requestBody->setRequestedModalities(['audio', ]);
+$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
+]);
 
+$callOptions = new CallOptions();
+$callOptions->set@odatatype('#microsoft.graph.outgoingCallOptions');
+
+$callOptions->setIsContentSharingNotificationEnabled(true);
+
+
+$requestBody->setCallOptions($callOptions);
 $mediaConfig = new MediaConfig();
 $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 
@@ -45,7 +53,7 @@ $mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
 $requestBody->setMediaConfig($mediaConfig);
 
 
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
+$result = $graphServiceClient->communications()->calls()->post($requestBody);
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAppManagementPolicy()
 displayName := "Credential management policy"
@@ -71,7 +79,7 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 restrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetRestrictions(restrictions)
 
-result, err := graphClient.Policies().AppManagementPolicies().Post(requestBody)
+result, err := graphClient.Policies().AppManagementPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

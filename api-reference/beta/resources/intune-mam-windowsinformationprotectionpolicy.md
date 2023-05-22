@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -231,9 +231,3 @@ Here is a JSON representation of the resource.
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
-
-
-
-
-
-

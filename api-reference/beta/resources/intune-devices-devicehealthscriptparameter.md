@@ -1,7 +1,7 @@
 ---
 title: "deviceHealthScriptParameter resource type"
 description: "Base properties of the script parameter."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,9 +44,3 @@ Here is a JSON representation of the resource.
   "applyDefaultValueWhenNotAssigned": true
 }
 ```
-
-
-
-
-
-

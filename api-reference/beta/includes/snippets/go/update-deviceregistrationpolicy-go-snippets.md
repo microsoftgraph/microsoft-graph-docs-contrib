@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewDeviceRegistrationPolicyPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Policies/DeviceRegistrationPolicy"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewDeviceRegistrationPolicyPutRequestBody()
 additionalData := map[string]interface{}{
 	"id" : "deviceRegistrationPolicy", 
 	"displayName" : "Device Registration Policy", 
@@ -42,10 +50,14 @@ azureADJoin.SetIsAdminConfigurable(&isAdminConfigurable)
 	}
 	azureADJoin.SetAllowedGroups(allowedGroups)
 	requestBody.SetAzureADJoin(azureADJoin)
+localAdminPassword := graphmodels.New()
+	isEnabled := true
+localAdminPassword.SetIsEnabled(&isEnabled) 
+	requestBody.SetLocalAdminPassword(localAdminPassword)
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.DeviceRegistrationPolicy().Put(requestBody)
+graphClient.Policies().DeviceRegistrationPolicy().Put(context.Background(), requestBody, nil)
 
 
 ```

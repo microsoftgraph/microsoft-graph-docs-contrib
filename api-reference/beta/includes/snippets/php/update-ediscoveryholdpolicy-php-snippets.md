@@ -12,11 +12,9 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 $requestBody = new EdiscoveryHoldPolicy();
 $requestBody->setDescription('updated description');
 
-$requestBody->setContentQuery('bazooka bazooka');
 
 
-
-$graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->legalHoldsById('ediscoveryHoldPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->legalHolds()->byLegalHoldId('ediscoveryHoldPolicy-id')->patch($requestBody);
 
 
 ```

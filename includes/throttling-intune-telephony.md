@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [embeddedSIMActivationCodePool](/graph/api/resources/embeddedsimactivationcodepool)  <li> [embeddedSIMActivationCodePoolAssignment](/graph/api/resources/embeddedsimactivationcodepoolassignment) <li> [embeddedSIMDeviceState](/graph/api/resources/embeddedsimdevicestate) </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [embeddedSIMActivationCodePool](/graph/api/resources/intune-esim-embeddedsimactivationcodepool)  <li> [embeddedSIMActivationCodePoolAssignment](/graph/api/resources/intune-esim-embeddedsimactivationcodepoolassignment) <li> [embeddedSIMDeviceState](/graph/api/resources/intune-esim-embeddedsimdevicestate) </ul> |

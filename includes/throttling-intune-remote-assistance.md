@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header-->                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> [remoteAssistancePartner](/graph/api/resources/remoteassistancepartner)  <li> [remoteAssistanceSettings](/graph/api/resources/remoteassistancesettings) </ul> |
+| <!-- fake header--> |
+|---|
+| <ul> <li> [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner)  <li> [remoteAssistanceSettings](/graph/api/resources/intune-remoteassistance-remoteassistancesettings) </ul> |

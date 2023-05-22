@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to sort search results"
 description: "You can use the Microsoft Search API sortProperties property in Microsoft Graph to sort search results. You can do a single-level or multi-level sort."
-author: "nmoreau"
+author: "njerigrevious"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---

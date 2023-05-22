@@ -27,7 +27,7 @@ $schedulingPolicy->setAllowStaffSelection(true);
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 
 
-$graphServiceClient->bookingBusinessesById('bookingBusiness-id')->patch($requestBody);
+$result = $graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->patch($requestBody);
 
 
 ```

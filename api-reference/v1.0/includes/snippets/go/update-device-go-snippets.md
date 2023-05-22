@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDevice()
 accountEnabled := false
 requestBody.SetAccountEnabled(&accountEnabled) 
 
-graphClient.DevicesById("device-id").Patch(requestBody)
+result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

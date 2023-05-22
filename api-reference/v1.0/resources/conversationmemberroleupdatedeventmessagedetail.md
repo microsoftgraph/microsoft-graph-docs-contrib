@@ -20,9 +20,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |conversationMemberRoles|String collection|Roles for the **coversation member** user.|
 |conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the **conversation member** user.|
-|initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

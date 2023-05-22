@@ -18,7 +18,7 @@ $requestBody->setIsOrganizationDefault(true);
 
 
 
-$graphServiceClient->policies()->activityBasedTimeoutPoliciesById('activityBasedTimeoutPolicy-id')->patch($requestBody);
+$result = $graphServiceClient->policies()->activityBasedTimeoutPolicies()->byActivityBasedTimeoutPolicieId('activityBasedTimeoutPolicy-id')->patch($requestBody);
 
 
 ```

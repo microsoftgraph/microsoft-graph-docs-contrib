@@ -1,9 +1,12 @@
 ---
 title: "Method differences between Azure AD Graph and Microsoft Graph"
 description: "Describes method differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 11/11/2022
 ---
 
 # Method differences between Azure AD Graph and Microsoft Graph
@@ -22,5 +25,5 @@ A handful of Azure Active Directory (Azure AD) Graph methods have also changed. 
 
 ## Next Steps
 
-- Learn how to [examine API differences](migrate-azure-ad-graph-audit-api-use.md) in your app between Azure AD Graph and Microsoft graph.
+- Learn about [permissions differences](migrate-azure-ad-graph-permissions-differences.md) between Azure AD Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppRestartSettings resource type"
 description: "Contains properties describing restart coordination following an app installation."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -42,9 +42,3 @@ Here is a JSON representation of the resource.
   "restartNotificationSnoozeDurationInMinutes": 1024
 }
 ```
-
-
-
-
-
-

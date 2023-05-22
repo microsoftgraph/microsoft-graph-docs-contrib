@@ -19,7 +19,7 @@ Represents a historical post in a [service health issue](../resources/servicehea
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The published time of the post.|
-|description|[itemBody](../resources/itembody.md)|The content of the service issue post.|
+|description|[itemBody](../resources/itembody.md)|The content of the service issue post. The supported value for the contentType property is `html`.|
 |postType|postType|The post type of the service issue historical post. Possible values are: `regular`, `quick`, `strategic`, `unknownFutureValue`.|
 
 ## Relationships

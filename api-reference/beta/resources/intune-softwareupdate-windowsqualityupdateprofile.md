@@ -1,7 +1,7 @@
 ---
 title: "windowsQualityUpdateProfile resource type"
 description: "Windows Quality Update Profile"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -73,9 +73,3 @@ Here is a JSON representation of the resource.
   "deployableContentDisplayName": "String"
 }
 ```
-
-
-
-
-
-

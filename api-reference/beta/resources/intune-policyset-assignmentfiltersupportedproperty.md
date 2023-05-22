@@ -1,7 +1,7 @@
 ---
 title: "assignmentFilterSupportedProperty resource type"
 description: "Represents the information about the property which is supported in crafting the rule of AssignmentFilter."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -25,7 +25,7 @@ Represents the information about the property which is supported in crafting the
 |name|String|Name of the property.|
 |propertyRegexConstraint|String|Regex string to do validation on the property value.|
 |supportedOperators|[assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md) collection|List of all supported operators on this property.|
-|supportedValues|String collection|List of all supported values for this propery, empty if everything is supported.|
+|supportedValues|String collection|List of all supported values for this property, empty if everything is supported.|
 
 ## Relationships
 None
@@ -52,9 +52,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

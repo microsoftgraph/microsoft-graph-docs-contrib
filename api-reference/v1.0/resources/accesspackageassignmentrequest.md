@@ -27,10 +27,11 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 |completedDateTime|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter`.|
 |id|String|Read-only.|
-|requestType|accessPackageRequestType|The type of the request. The possible values are: `notSpecified`, `userAdd`, `userUpdate`, `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, `systemRemove`, `onBehalfAdd`, `unknownFutureValue`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. This property cannot be changed once set.|
+|requestType|accessPackageRequestType|The type of the request. The possible values are: `notSpecified`, `userAdd`, `UserExtend`, `userUpdate`, `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, `systemRemove`, `onBehalfAdd` (not supported), `unknownFutureValue`. A request from the user themselves would have requestType of `userAdd`, `userUpdate` or `userRemove`. This property cannot be changed once set.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|The range of dates that access is to be assigned to the requestor. This property cannot be changed once set.|
 |state|accessPackageRequestState|The state of the request. The possible values are: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`). |
 |status|String|More information on the request processing status. Read-only.|
@@ -39,7 +40,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|The access package associated with the accessPackageAssignmentRequest. An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources. Read-only. Nullable. <br/><br/> Supports `$expand`.|
-|assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|For a **requestType** of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a **requestType** of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.  <br/><br/> Supports `$expand`.|
+|assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|For a **requestType** of `userAdd` or `adminAdd`, this is an access package assignment requested to be created.  For a **requestType** of `userRemove`, `adminRemove` or `systemRemove`, this has the `id` property of an existing assignment to be removed.  <br/><br/> Supports `$expand`.|
 |requestor|[accessPackageSubject](../resources/accesspackagesubject.md)|The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
@@ -54,15 +55,21 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+  "completedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "requestType": "String",
-  "state": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
+  },
+  "state": "String",
+  "status": "String",
+  "answers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ]
+
 }
 ```
 

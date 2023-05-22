@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.People
 
 $params = @{
-	Categories = @(
+	categories = @(
 		"Professional"
 	)
-	AllowedAudiences = "organization"
-	DisplayName = "API Design"
-	Proficiency = "generalProfessional"
-	CollaborationTags = @(
+	allowedAudiences = "organization"
+	displayName = "API Design"
+	proficiency = "generalProfessional"
+	collaborationTags = @(
 		"ableToMentor"
 	)
 }

@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new $valuePostRequestBody();
+$requestBody = new $valuePutRequestBody();
 $additionalData = [
-'LocalizedStrings' => $localizedStrings1 = new ();
+		'LocalizedStrings' => $localizedStrings1 = new ();
 $		localizedStrings1->setElementType('UxElement');
 
 		$localizedStrings1->setElementId(null);
@@ -33,7 +33,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->languagesById('userFlowLanguageConfiguration-id')->overridesPagesById('userFlowLanguagePage-id')->value()->put($requestBody);
+$graphServiceClient->identity()->b2xUserFlows()->byB2xUserFlowId('b2xIdentityUserFlow-id')->languages()->byLanguageId('userFlowLanguageConfiguration-id')->overridesPages()->byOverridesPageId('userFlowLanguagePage-id')->value()->put($requestBody);
 
 
 ```

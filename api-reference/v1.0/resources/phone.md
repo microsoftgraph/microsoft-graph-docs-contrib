@@ -2,7 +2,7 @@
 title: "phone resource type"
 description: "Represents a phone number."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

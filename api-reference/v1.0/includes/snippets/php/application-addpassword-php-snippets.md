@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new PasswordCredentialPostRequestBody();
+$requestBody = new AddPasswordPostRequestBody();
 $passwordCredential = new PasswordCredential();
 $passwordCredential->setDisplayName('Password friendly name');
 
@@ -17,7 +17,7 @@ $passwordCredential->setDisplayName('Password friendly name');
 $requestBody->setPasswordCredential($passwordCredential);
 
 
-$requestResult = $graphServiceClient->applicationsById('application-id')->addPassword()->post($requestBody);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->addPassword()->post($requestBody);
 
 
 ```

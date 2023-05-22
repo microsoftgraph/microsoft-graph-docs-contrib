@@ -1,7 +1,7 @@
 ---
 title: "iosNotificationPreviewVisibility enum type"
 description: "Determines when notification previews are visible on an iOS device. Previews can include things like text (from Messages and Mail) and invitation details (from Calendar). When configured, it will override the user's defined preview settings."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -24,9 +24,3 @@ Determines when notification previews are visible on an iOS device. Previews can
 |alwaysShow|1|Always show notification previews.|
 |hideWhenLocked|2|Only show notification previews when the device is unlocked.|
 |neverShow|3|Never show notification previews.|
-
-
-
-
-
-

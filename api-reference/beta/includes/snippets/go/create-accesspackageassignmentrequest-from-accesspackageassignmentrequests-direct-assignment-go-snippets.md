@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType) 
-accessPackageAssignment := graphmodels.NewaccessPackageAssignment()
-target := graphmodels.Newtarget()
+accessPackageAssignment := graphmodels.NewAccessPackageAssignment()
+target := graphmodels.NewAccessPackageSubject()
 email := "user@contoso.com"
 target.SetEmail(&email) 
 accessPackageAssignment.SetTarget(target)
@@ -21,7 +29,7 @@ accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
 accessPackageAssignment.SetAccessPackageId(&accessPackageId) 
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

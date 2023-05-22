@@ -20,8 +20,8 @@ $ContentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 
 $additionalData = [
-'format@odata.type' => '#microsoft.graph.contentFormat', 
-'state@odata.type' => '#microsoft.graph.contentState', 
+		'format@odata.type' => '#microsoft.graph.contentFormat', 
+		'state@odata.type' => '#microsoft.graph.contentState', 
 ];
 $contentInfo->setAdditionalData($additionalData);
 
@@ -29,13 +29,11 @@ $contentInfo->setAdditionalData($additionalData);
 
 $requestBody->setContentInfo($contentInfo);
 $classificationResultsClassificationResult1 = new ClassificationResult();
-$additionalData = [
-'sensitiveTypeId' => 'cb353f78-2b72-4c3c-8827-92ebe4f69fdf', 
-'count' => 4,
-'confidenceLevel' => 75,
-];
-$classificationResultsClassificationResult1->setAdditionalData($additionalData);
+$classificationResultsClassificationResult1->setSensitiveTypeId('cb353f78-2b72-4c3c-8827-92ebe4f69fdf');
 
+$classificationResultsClassificationResult1->setCount(4);
+
+$classificationResultsClassificationResult1->setConfidenceLevel(75);
 
 
 $classificationResultsArray []= $classificationResultsClassificationResult1;
@@ -44,15 +42,13 @@ $requestBody->setClassificationResults($classificationResultsArray);
 
 
 $requestConfiguration = new EvaluateClassificationResultsRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'User-Agent' => 'ContosoLOBApp/1.0',
+	'User-Agent' => 'ContosoLOBApp/1.0',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->informationProtection()->policy()->labels()->evaluateClassificationResults()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->informationProtection()->policy()->labels()->evaluateClassificationResults()->post($requestBody, $requestConfiguration);
 
 
 ```

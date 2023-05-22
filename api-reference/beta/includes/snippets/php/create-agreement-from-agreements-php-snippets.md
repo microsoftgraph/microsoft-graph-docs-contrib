@@ -15,20 +15,17 @@ $requestBody->setDisplayName('Contoso ToU for guest users');
 $requestBody->setIsViewingBeforeAcceptanceRequired(true);
 
 $filesAgreementFileLocalization1 = new AgreementFileLocalization();
-$additionalData = [
-'fileName' => 'TOU.pdf', 
-'language' => 'en', 
-'isDefault' => true,
-'fileData' => $filesAgreementFileLocalization1 = new FileData();
-$		filesAgreementFileLocalization1->setData('SGVsbG8gd29ybGQ=//truncated-binary');
+$filesAgreementFileLocalization1->setFileName('TOU.pdf');
+
+$filesAgreementFileLocalization1->setLanguage('en');
+
+$filesAgreementFileLocalization1->setIsDefault(true);
+
+$filesAgreementFileLocalization1FileData = new AgreementFileData();
+$filesAgreementFileLocalization1FileData->setData(base64_decode('SGVsbG8gd29ybGQ=//truncated-binary'));
 
 
-$filesAgreementFileLocalization1->setFileData($fileData);
-
-];
-$filesAgreementFileLocalization1->setAdditionalData($additionalData);
-
-
+$filesAgreementFileLocalization1->setFileData($filesAgreementFileLocalization1FileData);
 
 $filesArray []= $filesAgreementFileLocalization1;
 $requestBody->setFiles($filesArray);
@@ -36,7 +33,7 @@ $requestBody->setFiles($filesArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->post($requestBody);
+$result = $graphServiceClient->identityGovernance()->termsOfUse()->agreements()->post($requestBody);
 
 
 ```

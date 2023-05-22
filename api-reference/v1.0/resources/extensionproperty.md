@@ -3,7 +3,7 @@ title: "extensionProperty resource type (directory extensions)"
 description: "Represents a directory extension."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.prod: "extensions"
 doc_type: "resourcePageType"
 ---
 
@@ -76,12 +76,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.extensionProperty",
-  "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "appDisplayName": "String",
-  "name": "String",
   "dataType": "String",
+  "deletedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isSyncedFromOnPremises": "Boolean",
+  "name": "String",
   "targetObjects": [
     "String"
   ]

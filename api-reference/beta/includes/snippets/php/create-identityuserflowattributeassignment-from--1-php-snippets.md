@@ -20,14 +20,14 @@ $requestBody->setDisplayName('Shoe size');
 
 $requestBody->setUserAttributeValues([]);
 
-$userAttribute = new UserAttribute();
+$userAttribute = new IdentityUserFlowAttribute();
 $userAttribute->setId('extension_guid_shoeSize');
 
 
 $requestBody->setUserAttribute($userAttribute);
 
 
-$requestResult = $graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
+$result = $graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
 
 
 ```

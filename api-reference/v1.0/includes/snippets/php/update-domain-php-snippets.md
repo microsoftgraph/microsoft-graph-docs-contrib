@@ -16,7 +16,7 @@ $requestBody->setSupportedServices(['Email', 'OfficeCommunicationsOnline', ]);
 
 
 
-$graphServiceClient->domainsById('domain-id')->patch($requestBody);
+$result = $graphServiceClient->domains()->byDomainId('domain-id')->patch($requestBody);
 
 
 ```

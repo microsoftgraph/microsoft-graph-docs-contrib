@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teamwork/SendActivityNotificationToRecipients"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSendActivityNotificationToRecipientsPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
@@ -59,7 +67,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.Teamwork().SendActivityNotificationToRecipients().Post(requestBody)
+graphClient.Teamwork().SendActivityNotificationToRecipients().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -9,7 +9,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 EdiscoveryHoldPolicy ediscoveryHoldPolicy = new EdiscoveryHoldPolicy();
 ediscoveryHoldPolicy.displayname = "My legalHold with sources";
 ediscoveryHoldPolicy.description = "Created from Graph API";
-ediscoveryHoldPolicy.contentQuery = "Bazooka";
 ediscoveryHoldPolicy.additionalDataManager().put("userSources@odata.bind", new JsonPrimitive("[  {    \"@odata.type\": \"microsoft.graph.security.userSource\",    \"email\": \"SalesTeam@M365x809305.OnMicrosoft.com\"  }]"));
 ediscoveryHoldPolicy.additionalDataManager().put("siteSources@odata.bind", new JsonPrimitive("[  {    \"@odata.type\": \"microsoft.graph.security.siteSource\",    \"site\": {      \"webUrl\": \"https://m365x809305.sharepoint.com/sites/Design-topsecret\"    }  }]"));
 

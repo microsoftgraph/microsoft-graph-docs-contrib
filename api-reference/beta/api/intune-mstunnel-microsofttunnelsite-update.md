@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftTunnelSite"
 description: "Update the properties of a microsoftTunnelSite object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,18 +48,17 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The MicrosoftTunnelSite's Id|
-|displayName|String|The MicrosoftTunnelSite's display name|
-|description|String|The MicrosoftTunnelSite's description|
-|publicAddress|String|The MicrosoftTunnelSite's public domain name or IP address|
+|id|String|The unique identifier for the site id. $Insert, $skip, $top is not supported. Read-only.|
+|displayName|String|The display name for the site. This property is required when a site is created.|
+|description|String|The site's description (optional)|
+|publicAddress|String|The site's public domain name or IP address|
 |upgradeWindowUtcOffsetInMinutes|Int32|The site's timezone represented as a minute offset from UTC|
 |upgradeWindowStartTime|TimeOfDay|The site's upgrade window start time of day|
 |upgradeWindowEndTime|TimeOfDay|The site's upgrade window end time of day|
 |upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
-|upgradeAvailable|Boolean|True if an upgrade is available|
-|internalNetworkProbeUrl|String|The MicrosoftTunnelSite's Internal Network Access Probe URL|
-|enableCertificatePinning|Boolean|When set to true, certificate pinning will be enforced on connections between the Microsoft Tunnel server and Microsoft Tunnel clients. When set to false, certificate pinning will be disabled.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|upgradeAvailable|Boolean|The site provides the state of when an upgrade is available|
+|internalNetworkProbeUrl|String|The site's Internal Network Access Probe URL|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
 
 
 
@@ -73,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 Content-type: application/json
-Content-length: 561
+Content-length: 524
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -86,7 +85,6 @@ Content-length: 561
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
-  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -98,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 610
+Content-Length: 573
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -112,15 +110,8 @@ Content-Length: 610
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
-  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
-
-
-
-
-
-
