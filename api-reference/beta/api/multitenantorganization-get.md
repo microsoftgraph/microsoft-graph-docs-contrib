@@ -19,9 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|MultiTenantOrganization.ReadBasic.All, MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|MultiTenantOrganization.ReadBasic.All, MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All|
+
+MultiTenantOrganization.ReadBasic.All permission can only read the `displayName` property.
+
+The signed-in user must also be assigned one of the following minimum [directory roles](/azure/active-directory/roles/permissions-reference):
+
+* Security Reader
+* Global Reader
 
 ## HTTP request
 
