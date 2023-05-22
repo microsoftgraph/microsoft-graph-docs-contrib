@@ -25,15 +25,15 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
+|description|String|Description of multi-tenant organization.|
+|displayName|String|Display name of multi-tenant organization. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|**TODO: Add Description**|
-|tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|**TODO: Add Description**|
+|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Details of a tenant's join request to multi-tenant organization.|
+|tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Member tenants of the multi-tenant organization.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

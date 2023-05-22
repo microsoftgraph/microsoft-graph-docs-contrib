@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|**TODO: Add Description**|
+|userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key.|
 
 ## Relationships
 None.

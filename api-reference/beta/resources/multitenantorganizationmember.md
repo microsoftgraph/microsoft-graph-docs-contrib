@@ -27,14 +27,14 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|**TODO: Add Description**|
-|addedDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|joinedDateTime|DateTimeOffset|**TODO: Add Description**|
-|role|multiTenantOrganizationMemberRole|**TODO: Add Description**.The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|state|multiTenantOrganizationMemberState|**TODO: Add Description**.The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`.|
-|tenantId|String|**TODO: Add Description**|
-|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|**TODO: Add Description**|
+|addedByTenantId|String|Tenant ID of the tenant that added a tenant to the multi-tenant organization. Read-only.|
+|addedDateTime|DateTimeOffset|Date and time when the tenant was added to the multi-tenant organization. Read-only.|
+|displayName|String|Display name of the multi-tenant organization. Read-only.|
+|joinedDateTime|DateTimeOffset|Date and time when the tenant joined the multi-tenant organization. Read-only.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`, `unknownFutureValue`.|
+|state|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Read-only.|
+|tenantId|String|Tenant ID of the tenant that is a member of the multi-tenant organization. Set at the time of creation of tenant. Required. Read-only.|
+|transitionDetails|[multiTenantOrganizationMemberTransitionDetails](../resources/multitenantorganizationmembertransitiondetails.md)|Complex type that provides the status of the pending updates to tenant state. Read-only.|
 
 ## Relationships
 None.

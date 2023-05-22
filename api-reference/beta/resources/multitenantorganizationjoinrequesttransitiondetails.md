@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|desiredMemberState|multiTenantOrganizationMemberState|**TODO: Add Description**.The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`.|
-|details|String|**TODO: Add Description**|
-|status|multiTenantOrganizationMemberProcessingStatus|**TODO: Add Description**.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|desiredMemberState|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization currently being processed. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Read-only.|
+|details|String|Details that explain the processing status if any. Read-only.|
+|status|multiTenantOrganizationMemberProcessingStatus|Processing state of the asynchronous job. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Read-only.|
 
 ## Relationships
 None.

@@ -24,10 +24,10 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|**TODO: Add Description**|
-|memberState|multiTenantOrganizationMemberState|**TODO: Add Description**.The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`.|
-|role|multiTenantOrganizationMemberRole|**TODO: Add Description**.The possible values are: `owner`, `member`, `unknownFutureValue`.|
-|transitionDetails|[multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|**TODO: Add Description**|
+|addedByTenantId|String|Tenant ID of the tenant that added a tenant to the multi-tenant organization. Required. Read-only.|
+|memberState|multiTenantOrganizationMemberState|State of the tenant in the multi-tenant organization. The possible values are: `pending`, `active`, `removed`, `unknownFutureValue`. Read-only.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member`, `unknownFutureValue`.|
+|transitionDetails|[multiTenantOrganizationJoinRequestTransitionDetails](../resources/multitenantorganizationjoinrequesttransitiondetails.md)|Complex type that provides the status of the pending updates to tenant state. Read-only.|
 
 ## Relationships
 None.
