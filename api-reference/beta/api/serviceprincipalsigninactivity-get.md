@@ -35,7 +35,7 @@ GET /reports/servicePrincipalSignInActivities/{servicePrincipalSignInActivityId}
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
