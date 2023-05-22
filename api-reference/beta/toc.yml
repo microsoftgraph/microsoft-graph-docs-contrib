@@ -16101,7 +16101,7 @@ items:
       - name: Records management 
         items:
         - name: Overview
-          href: resources/security-recordsManagement-overview.md
+          href: resources/security-recordsmanagement-overview.md
         - name: Retention label (preview)
           href: resources/security-retentionlabel.md
           items:
@@ -16122,8 +16122,8 @@ items:
                href: api/security-labelsroot-list-retentionlabel.md
              - name: Create
                href: api/security-labelsroot-post-retentionlabel.md
-            - name: File Plan Reference
-              href: resources/security-filePlanReferenceTemplate.md
+            - name: File plan reference
+              href: resources/security-fileplanreferencetemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-fileplanreferences.md
@@ -16134,7 +16134,7 @@ items:
               - name: Delete
                 href: api\security-labelsroot-delete-fileplanreferences.md
             - name: Authority
-              href: resources/security-authorityTemplate.md
+              href: resources/security-authoritytemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-authorities.md
@@ -16145,7 +16145,7 @@ items:
               - name: Delete
                 href: api\security-labelsroot-delete-authorities.md
             - name: Category
-              href: resources/security-categoryTemplate.md
+              href: resources/security-categorytemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-categories.md
@@ -16155,7 +16155,7 @@ items:
                 href: api\security-categorytemplate-get.md
               - name: Delete
                 href: api\security-labelsroot-delete-categories.md
-            - name: Sub-category
+            - name: Subcategory
               href: resources/security-subcategoryTemplate.md
               items:
               - name: List
@@ -16167,7 +16167,7 @@ items:
               - name: Delete
                 href: api\security-categorytemplate-delete-subcategories.md
             - name: Department
-              href: resources/security-departmentTemplate.md
+              href: resources/security-departmenttemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-departments.md
@@ -16178,7 +16178,7 @@ items:
               - name: Delete
                 href: api\security-labelsroot-delete-departments.md
             - name: Citation
-              href: resources/security-citationTemplate.md
+              href: resources/security-citationtemplate.md
               items:
               - name: List
                 href: api\security-labelsroot-list-citations.md
