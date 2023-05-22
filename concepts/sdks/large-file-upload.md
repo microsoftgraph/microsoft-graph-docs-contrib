@@ -167,33 +167,7 @@ largeFileUploadTask.upload(0, null, callback);
 
 ```php
 <?php
-
-// create a file stream
-$file = Utils::streamFor(fopen('fileName', 'r'));
-
-// create an upload session
-$attachmentItem = new AttachmentItem();
-$attachmentItem->setAttachmentType(new AttachmentType('file'));
-$attachmentItem->setName('fileName');
-$attachmentItem->setSize($file->getSize());
-
-$uploadSessionRequestBody = new CreateUploadSessionPostRequestBody();
-$uploadSessionRequestBody->setAttachmentItem($attachmentItem);
-
-/** @var UploadSession $uploadSession */
-$uploadSession = $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->attachments()->createUploadSession()->post($uploadSessionRequestBody)->wait();
-
-// upload
-$largeFileUpload = new LargeFileUploadTask($uploadSession, $requestAdapter, $file);
-try{
-    $uploadSession = $largeFileUpload->upload()->wait();
-} catch (\Psr\Http\Client\NetworkExceptionInterface $ex) {
-    // resume upload in case of network errors
-    $uploadSession = $largeFileUpload->resume()->wait();
-}
-
-//Cancel a large file upload session
-//$largeFileUpload->cancel()->wait();
+//sample here
 
 
 ```
@@ -402,7 +376,33 @@ uploadTask.upload(0, null, callback);
 
 ```php
 <?php
-//Sample here
+
+// create a file stream
+$file = Utils::streamFor(fopen('fileName', 'r'));
+
+// create an upload session
+$attachmentItem = new AttachmentItem();
+$attachmentItem->setAttachmentType(new AttachmentType('file'));
+$attachmentItem->setName('fileName');
+$attachmentItem->setSize($file->getSize());
+
+$uploadSessionRequestBody = new CreateUploadSessionPostRequestBody();
+$uploadSessionRequestBody->setAttachmentItem($attachmentItem);
+
+/** @var UploadSession $uploadSession */
+$uploadSession = $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->attachments()->createUploadSession()->post($uploadSessionRequestBody)->wait();
+
+// upload
+$largeFileUpload = new LargeFileUploadTask($uploadSession, $requestAdapter, $file);
+try{
+    $uploadSession = $largeFileUpload->upload()->wait();
+} catch (\Psr\Http\Client\NetworkExceptionInterface $ex) {
+    // resume upload in case of network errors
+    $uploadSession = $largeFileUpload->resume()->wait();
+}
+
+//Cancel a large file upload session
+//$largeFileUpload->cancel()->wait();
 
 
 ```
