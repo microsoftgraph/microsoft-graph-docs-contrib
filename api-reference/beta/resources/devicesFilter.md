@@ -1,7 +1,7 @@
 ---
 title: "devicesFilter resource type"
 description: Defines the the rule to filter the devices and whether devices satisfying the rule should be allowed or blocked. **devicesFilter is not yet implemented.**
-author: "vranganathan"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

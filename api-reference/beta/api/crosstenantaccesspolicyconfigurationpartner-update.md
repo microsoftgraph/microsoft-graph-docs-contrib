@@ -71,7 +71,6 @@ The following example configures the partner-specific policy by setting the inbo
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicyconfigurationpartner"
@@ -101,7 +100,6 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicytenantrestrictionconfigurationpartner"

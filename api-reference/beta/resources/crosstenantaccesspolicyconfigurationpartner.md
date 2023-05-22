@@ -61,7 +61,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "automaticUserConsentSettings": {"@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration",
+  "automaticUserConsentSettings": {
+    "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
+  },
   "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
