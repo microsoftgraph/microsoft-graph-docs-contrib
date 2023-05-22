@@ -106,7 +106,7 @@ items:
             href: /graph/api/resources/groups-overview?context=graph/context
             displayName: groups
           - name: Microsoft 365 groups
-            href: office365-groups-concept-overview.md
+            href: microsoft365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
           - name: Microsoft 365 group settings

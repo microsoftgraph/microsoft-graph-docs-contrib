@@ -15,7 +15,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-21T05:55:14.173894Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -33,7 +33,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-21T03:56:27.4502681Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },        
         {
@@ -67,7 +67,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",     
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -85,7 +85,7 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2023-02-27T08:58:22.4957466Z",
-          "WorkloadArea": "Devices and apps",
+          "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
         },
         {
@@ -103,7 +103,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-05-08T09:17:04.4951587Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -121,7 +121,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-05-08T10:18:11.8846241Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -266,7 +266,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-05-08T02:52:10.3002588Z",     
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -422,7 +422,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-09T08:39:57.8868626Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -692,7 +692,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-06-01T08:30:16.9388044Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -710,7 +710,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-06-20T07:19:17.8395506Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -728,7 +728,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-05-11T04:10:23.6033442Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -746,7 +746,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-04-07T08:30:16.9388044Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -780,7 +780,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-17T06:57:48.3702162Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -814,7 +814,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-04-27T14:13:04.317411Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -856,7 +856,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-14T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -882,7 +882,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-21T13:51:04.8137419Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -988,7 +988,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-01-18T03:57:59.088Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1014,7 +1014,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-02-28T14:51:08.271Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1064,7 +1064,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-05-21T05:36:42.761938Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1114,7 +1114,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-02-28T09:03:11.8162423Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1148,7 +1148,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-02-15T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1174,7 +1174,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-21T15:38:03.127Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1216,7 +1216,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-11T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1258,7 +1258,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-09T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1292,7 +1292,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-04T11:40:20.512Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1366,7 +1366,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-04T11:55:50.282Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1408,7 +1408,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-01T01:39:23.272Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1426,7 +1426,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-06T11:09:07.127Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1532,7 +1532,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-30T01:21:26.512Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1566,7 +1566,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-05T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1600,7 +1600,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-05T05:11:26.863Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1634,7 +1634,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-06T06:22:12.122Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1668,7 +1668,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-25T05:40:39.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1718,7 +1718,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-25T08:18:27.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1744,7 +1744,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-28T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1762,7 +1762,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-08-18T03:38:51.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1780,7 +1780,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-12T15:14:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1798,7 +1798,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-09T14:30:43.735Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1824,7 +1824,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-20T10:21:56.735Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1866,7 +1866,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-16T07:29:44.182Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1884,7 +1884,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-07T13:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1902,7 +1902,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-09T15:14:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1936,7 +1936,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-03T17:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2034,7 +2034,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-29T07:45:15.1242441Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2116,7 +2116,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-01T10:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2150,7 +2150,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-07T13:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2200,7 +2200,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-09T00:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2234,7 +2234,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-26T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2276,7 +2276,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-20T14:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2382,7 +2382,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-10T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2400,7 +2400,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-05T15:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2434,7 +2434,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-09T14:55:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2452,7 +2452,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-05T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2478,7 +2478,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-03-18T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2496,7 +2496,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-02-08T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2554,7 +2554,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-01-08T05:52:34.535Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2604,7 +2604,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2020-12-11T08:55:18.080Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2758,7 +2758,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2020-11-06T15:42:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2808,7 +2808,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-06-20T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2834,7 +2834,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-24T10:00:11.4963489Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2908,7 +2908,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2942,7 +2942,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:46:26.039Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2960,7 +2960,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T08:55:53.8274186Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2978,7 +2978,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:01:08.9526909Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2996,7 +2996,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-24T02:53:28.597151Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3038,7 +3038,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-01-17T18:36:40.43263Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3056,7 +3056,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-01-17T04:14:41.3424906Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3106,7 +3106,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-12T18:36:40.43263Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
       {
@@ -3132,7 +3132,7 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2022-11-08T10:52:16.0013428Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
       {
@@ -3150,7 +3150,7 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
       {
@@ -3168,7 +3168,7 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
     }
     ]
