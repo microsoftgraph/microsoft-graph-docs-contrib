@@ -308,6 +308,13 @@
             "ChangeType": "Addition",
             "Description": "Added the [filePlanDescriptor](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanDescriptor?view=graph-rest-beta) resource",
             "Target": "filePlanDescriptor"
+            {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanDescriptorBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanDescriptorBase](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanDescriptorBase?view=graph-rest-beta) resource type",
+            "Target": "filePlanDescriptorBaser"
           },
           {
             "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
