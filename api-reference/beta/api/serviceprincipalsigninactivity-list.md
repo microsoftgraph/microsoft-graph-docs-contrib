@@ -137,9 +137,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a servicePrincipalSignInActivity filtered by applicationId
+### Example 2: Get a servicePrincipalSignInActivity filtered by appId
 
-The following example shows how to get a **servicePrincipalSignInActivity** object filtered by **applicationId**.
+The following example shows how to get a **servicePrincipalSignInActivity** object filtered by **appId**.
 
 #### Request
 
