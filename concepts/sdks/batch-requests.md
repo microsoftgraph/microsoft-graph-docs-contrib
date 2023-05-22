@@ -253,6 +253,8 @@ fmt.Printf("You have %d events on your calendar today\n", len(events.GetValue())
 <?php
 use Microsoft\Graph\Core\Requests\BatchRequestContent;
 use Microsoft\Graph\Generated\Models\Message;
+use Microsoft\Graph\BatchRequestBuilder;
+use Microsoft\Graph\Core\Requests\BatchResponseItem;
 
 $message = new Message();
 $message->setSubject("Test Subject");
@@ -262,6 +264,10 @@ $batchRequestContent = new BatchRequestContent([
     $graphServiceClient->users()->byUserId(USER_ID)->messages()->toPostRequestInformation($message),
     $graphServiceClient->users()->byUserId(USER_ID)->toGetRequestInformation()
 ]);
+
+$requestBuilder = new BatchRequestBuilder($requestAdapter);
+/** @var BatchResponseContent $batchResponse  */
+$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
 
 ```
 
@@ -597,6 +603,9 @@ use Microsoft\Graph\Core\Requests\BatchRequestContent;
 use Microsoft\Graph\Core\Requests\BatchRequestItem;
 use Microsoft\Graph\Generated\Models\Message;
 
+use Microsoft\Graph\BatchRequestBuilder;
+use Microsoft\Graph\Core\Requests\BatchResponseItem;
+
 $message = new Message();
 $message->setSubject("Test Subject");
 
@@ -608,7 +617,9 @@ $batchRequestContent = new BatchRequestContent([
     $request1, $request2
 ]);
 
-
+$requestBuilder = new BatchRequestBuilder($requestAdapter);
+/** @var BatchResponseContent $batchResponse  */
+$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
 
 ```
 
