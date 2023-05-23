@@ -38,9 +38,6 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
-> [!NOTE]
-> Most of these APIs are also [protected APIs](/graph/teams-protected-apis); you must get approval from Microsoft before you can use them. If your application is using protected APIs, please submit a [request for access](https://aka.ms/teamsgraph/requestaccess). For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
-
 ### `model=A` requirements
 
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
