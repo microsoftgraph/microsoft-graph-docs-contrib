@@ -15,7 +15,7 @@ $queryParameters->expand = ["roleDefinition"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleAssignmentsById('unifiedRoleAssignment-id')->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->byRoleAssignmentId('unifiedRoleAssignment-id')->get($requestConfiguration);
 
 
 ```

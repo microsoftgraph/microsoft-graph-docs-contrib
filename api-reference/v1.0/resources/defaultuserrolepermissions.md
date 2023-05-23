@@ -16,9 +16,10 @@ Contains certain customizable permissions of default user role in Azure Active D
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
 | allowedToCreateApps | Boolean | Indicates whether the default user role can create applications. |  
-| allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. |  
+| allowedToCreateSecurityGroups | Boolean | Indicates whether the default user role can create security groups. This setting corresponds to the _The Users can create security groups in Azure portals, API or PowerShell_ setting in the [group settings menu in the Azure portal](/azure/active-directory/enterprise-users/groups-self-service-management). |  
 | allowedToReadBitlockerKeysForOwnedDevice | Boolean | Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role. |
 | allowedToReadOtherUsers | Boolean | Indicates whether the default user role can read other users. |
+| allowedToCreateTenants | Boolean | Indicates whether the default user role can create tenants. | 
 |permissionGrantPoliciesAssigned|String collection|Indicates if user consent to apps is allowed, and if it is, which permission to grant consent and which app consent policy (permissionGrantPolicy) govern the permission for users to grant consent. Value should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
 ## Relationships
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
   "allowedToCreateSecurityGroups": true,
   "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true,
+  "allowedToCreateTenants": true,
   "permissionGrantPoliciesAssigned": ["String"]
 }
 ```

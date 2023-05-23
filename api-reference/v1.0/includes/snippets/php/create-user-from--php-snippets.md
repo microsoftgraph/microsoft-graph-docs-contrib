@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/users/{userId}');
 
 
 
-$graphServiceClient->print()->sharesById('printerShare-id')->allowedUsers()->ref()->post($requestBody);
+$graphServiceClient->print()->shares()->byShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody);
 
 
 ```

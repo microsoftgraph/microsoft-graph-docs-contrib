@@ -24,7 +24,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->teamsById('team-id')->schedule()->offerShiftRequests()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->offerShiftRequests()->post($requestBody, $requestConfiguration);
 
 
 ```
