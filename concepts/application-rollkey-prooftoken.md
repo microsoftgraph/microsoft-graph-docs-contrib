@@ -15,16 +15,16 @@ You can use the **addKey** and **removeKey** methods defined on the [application
 
 As part of the request validation for these methods, a proof of possession of an existing key is verified before the methods can be invoked. The proof is represented by a self-signed JWT token. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token lifespan should not exceed 10 minutes.
 
-> **Note:** Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update application](/graph/api/application-update) operation to perform an update instead.
+> **Note:** Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), can't use this service action. You can use the [Update application](/graph/applications-how-to-add-certificate) operation to perform an update instead.
 
 The token should contain the following claims:
 
-- `aud` - Audience needs to be `00000003-0000-0000-c000-000000000000`.
-- `iss` - Issuer needs to be the Azure AD object ID of the application that is making the call (not the appId).
+- `aud` - Audience needs to be `00000003-0000-0000-c000-000000000000` which is the **appId** of the Microsoft Graph service principal.
+- `iss` - Issuer needs to be the object ID of the application that's making the call (not the appId).
 - `nbf` - Not before time.
 - `exp` - Expiration time should be "nbf" + 10 mins.
 
-You can use the following code example to generate this proof of possession token.
+You can use the following code examples to generate this proof of possession token.
 
 # [C#](#tab/csharp)
 ```csharp
@@ -92,7 +92,7 @@ param (
 Install-Module Microsoft.Graph.Authentication -Scope CurrentUser
 Import-Module Microsoft.Graph.Authentication
 
-# audience
+# audience is Microsoft Graph
 $aud = "00000003-0000-0000-c000-000000000000"
 
 # aud and iss are the only required claims.
