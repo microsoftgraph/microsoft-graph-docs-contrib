@@ -16102,7 +16102,7 @@ items:
         items:
         - name: Overview
           href: resources/security-recordsmanagement-overview.md
-        - name: Labels (preview)
+        - name: Label (preview)
           href: resources/security-labelsroot.md
         - name: Retention label (preview)
           href: resources/security-retentionlabel.md
@@ -16117,7 +16117,7 @@ items:
             href: api/security-retentionlabel-update.md
           - name: Delete
             href: api/security-retentionlabel-delete.md
-          - name: File plan descriptors
+          - name: File plan descriptor
             href: resources/security-fileplandescriptor.md
             items:
              - name: List
