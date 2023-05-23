@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Represents a predefined value that is allowed for a custom security attribute definition.
 
-Up to 100 **allowedValue** objects can be defined per [customSecurityAttributeDefinition](customsecurityattributedefinition.md). You can't rename or delete this object, but you can deactivate it by using the [Update allowedValue](../api/allowedvalue-update.md) operation. This object is defined as a navigation property on the [customSecurityAttributeDefinition](customsecurityattributedefinition.md) resource and its value is returned only on `$expand`.
+You can define up to 100 **allowedValue** objects per [customSecurityAttributeDefinition](customsecurityattributedefinition.md). The **allowedValue** object can't be renamed or deleted, but it can be deactivated by using the [Update allowedValue](../api/allowedvalue-update.md) operation. This object is defined as a navigation property on the [customSecurityAttributeDefinition](customsecurityattributedefinition.md) resource and its value is returned only on `$expand`.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -28,7 +30,7 @@ Up to 100 **allowedValue** objects can be defined per [customSecurityAttributeDe
 
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. |
+| id | String | Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. Inherited from [entity](../resources/entity.md). |
 |isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects.|
 
 ## Relationships

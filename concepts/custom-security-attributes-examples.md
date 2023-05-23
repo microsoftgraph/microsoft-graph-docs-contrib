@@ -1,5 +1,5 @@
 ---
-title: "Manage custom security attribute assignments (preview)"
+title: "Manage custom security attribute assignments"
 description: "Learn how to assign, update, list, or remove custom security attribute assignments for users and service principals using Microsoft Graph."
 author: "rolyon"
 ms.author: rolyon
@@ -10,7 +10,7 @@ ms.prod: "directory-management"
 ms.date: 02/14/2023
 ---
 
-# Manage custom security attribute assignments (preview)
+# Manage custom security attribute assignments
 
 > [!IMPORTANT]
 > The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
