@@ -60,9 +60,9 @@ Based on an organization's CA policies, a user accessing Microsoft Graph resourc
 * [Handling conditional access challenges using MSAL](/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
 * [Developer guidance for Azure Active Directory conditional access](/azure/active-directory/develop/conditional-access-dev-guide)
 
-### 403 Forbidden "Access to OData is disabled."
+### 403 Forbidden: Access to OData is disabled
 
-Many Microsoft Graph APIs access Exchange Online. These APIs are subject to Exchange Online's EWS application policies. Application may receive `403 Forbidden` errors with the following response body.
+Many Microsoft Graph APIs access Exchange Online. These APIs are subject to the EWS application policies of Exchange Online. Applications might receive `403 Forbidden` errors with the following response body.
 
 ```json
 {
@@ -73,15 +73,15 @@ Many Microsoft Graph APIs access Exchange Online. These APIs are subject to Exch
 }
 ```
 
-This may be caused by your organization's EWS access policies. An Exchange administrator can check this using the [Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2).
+This might be caused by your organization's EWS access policies. An Exchange administrator can check this using the [Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2).
 
-To check if an organization-wide policy has been applied:
+To determine whether an organization-wide policy has been applied:
 
 ```powershell
 Get-OrganizationConfig | fl EwsApplicationAccessPolicy,EWS*List
 ```
 
-To check if a user-specific policy has been applied:
+To determine whether a user-specific policy has been applied:
 
 ```powershell
 Get-CASMailbox <user-principal-name> | fl EwsApplicationAccessPolicy,EWS*List
@@ -93,4 +93,4 @@ If [EwsApplicationAccessPolicy](/powershell/module/exchange/set-organizationconf
 * If `EwsApplicationAccessPolicy` is set to `EnforceBlockList`, your application's `User-Agent` value must be removed from the [EwsBlockList](/powershell/module/exchange/set-organizationconfig#-ewsblocklist) value.
 
 > [!NOTE]
-> Changes to EWS application policies take time to take effect. Your application may continue to receive `403 Forbidden` errors for some time after making a change.
+> Changes to EWS application policies take time to take effect. Your application might continue to receive `403 Forbidden` errors for some time after you make a change.
