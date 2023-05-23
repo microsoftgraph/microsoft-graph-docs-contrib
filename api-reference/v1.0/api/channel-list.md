@@ -286,10 +286,8 @@ Content-length: 262
             "displayName": "shared channel-01",
             "description": "this is the shared channel description",
             "isFavoriteByDefault": null,
-            "email": "",
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
-            "membershipType": "shared",
-            "moderationSettings": null
+            "membershipType": "shared"
         }
     ]
 }
