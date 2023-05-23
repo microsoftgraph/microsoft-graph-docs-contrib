@@ -15,7 +15,7 @@ $queryParameters->select = ["emphasis","expand=webparts"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->canvasLayout()->verticalSection()->get($requestConfiguration);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byPageId('sitePage-id')->canvasLayout()->verticalSection()->get($requestConfiguration);
 
 
 ```

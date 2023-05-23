@@ -14,7 +14,7 @@ $requestBody->setDescription('Book a fancy vacation in Tuscany or browse museums
 
 
 
-$result = $graphServiceClient->search()->bookmarksById('bookmark-id')->patch($requestBody);
+$result = $graphServiceClient->search()->bookmarks()->byBookmarkId('bookmark-id')->patch($requestBody);
 
 
 ```

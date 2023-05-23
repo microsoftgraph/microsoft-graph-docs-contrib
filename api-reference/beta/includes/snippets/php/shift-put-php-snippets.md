@@ -105,7 +105,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->shiftsById('shift-id')->put($requestBody, $requestConfiguration);
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->shifts()->byShiftId('shift-id')->put($requestBody, $requestConfiguration);
 
 
 ```

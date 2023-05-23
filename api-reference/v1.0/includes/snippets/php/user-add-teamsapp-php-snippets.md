@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->usersById('user-id')->teamwork()->installedApps()->post($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->teamwork()->installedApps()->post($requestBody);
 
 
 ```

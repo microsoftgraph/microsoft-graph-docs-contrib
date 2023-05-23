@@ -7,29 +7,25 @@ ms.prod: "governance"
 author: "rkarim-ms"
 ---
 
-# Privileged Identity Management (deprecated)
+# Privileged Identity Management iteration 2 APIs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!CAUTION]
->The Privileged Identity Management (PIM) API for **Azure AD roles** is deprecated and stopped returning data on May 31, 2021. Use the [PIM v3 for managing Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview) and see the [migration guidance below](#migrate-from-pim-v2-to-pim-v3-apis).
->
->The Privileged Identity Management (PIM) API for **Azure resources** will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests). To migrate, see the migration guidance below.
+> [!CAUTION]
+> The Privileged Identity Management (PIM) API for **Azure resources** and **Azure AD Roles** iteration 2 will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests) and [PIM API for Azure AD Roles iteration 3](privilegedidentitymanagementv3-overview.md). To migrate, see the [migration guidance](/graph/api/resources/privilegedidentitymanagement-root).
 
 [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This scope includes access to resources in Azure AD, Azure resources, and other Microsoft services like Microsoft 365 or Microsoft Intune.
 
-There have been several iterations of the PIM API over the past few years. This iteration is the second iteration (here referred to as PIM v2) and it's succeeded by PIM v3. For more information about the history of the PIM API, see [PIM API history](/azure/active-directory/privileged-identity-management/pim-apis#pim-api-history).
+There have been several iterations of the PIM API over the past few years. This iteration is the second iteration (here referred to as iteration 2) and it's succeeded by PIM iteration 3. For more information about the history of the PIM API, see [PIM API history](/azure/active-directory/privileged-identity-management/pim-apis#pim-api-history).
 
-Microsoft Graph provides the following PIM v2 APIs to manage Azure AD roles and Azure resource roles. We recommend that you migrate from PIM v2 to PIM v3.
+Microsoft Graph provides the following PIM iteration 2 APIs to manage Azure AD roles and Azure resource roles. We recommend that you migrate from PIM iteration 2 API to PIM iteration 3 API.
 
-- [APIs for Azure AD roles](privilegedidentitymanagement-directory.md) (deprecated)
+- APIs for Azure AD roles
 - [APIs for Azure resources](privilegedidentitymanagement-resources.md)
 
-## Migrate from PIM v2 to PIM v3 APIs
-
-[!INCLUDE [pimv2AADRoles-migration](../../includes/pimv2AADRoles-migration.md)]
+## Migrate from PIM iteration 2 APIs to PIM iteration 3 APIs
 
 [!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 

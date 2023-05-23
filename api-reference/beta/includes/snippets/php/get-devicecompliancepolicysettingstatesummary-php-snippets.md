@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->tenantRelationships()->managedTenants()->deviceCompliancePolicySettingStateSummariesById('deviceCompliancePolicySettingStateSummary-id')->get();
+$result = $graphServiceClient->tenantRelationships()->managedTenants()->deviceCompliancePolicySettingStateSummaries()->byDeviceCompliancePolicySettingStateSummarieId('deviceCompliancePolicySettingStateSummary-id')->get();
 
 
 ```

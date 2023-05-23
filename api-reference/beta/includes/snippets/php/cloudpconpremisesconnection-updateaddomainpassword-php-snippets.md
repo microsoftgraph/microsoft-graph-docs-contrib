@@ -14,7 +14,7 @@ $requestBody->setAdDomainPassword('AdDomainPassword value');
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnectionsById('cloudPcOnPremisesConnection-id')->updateAdDomainPassword()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->updateAdDomainPassword()->post($requestBody);
 
 
 ```
