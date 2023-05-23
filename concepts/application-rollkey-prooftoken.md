@@ -6,7 +6,7 @@ ms.prod: "applications"
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
-ms.date: 05/05/2023
+ms.date: 05/23/2023
 ---
 
 # Generate proof of possession tokens for rolling keys
@@ -88,6 +88,10 @@ param (
     [string]$ObjectID
 )
 
+# install the following Microsoft Graph PowerShell modules
+Install-Module Microsoft.Graph.Authentication -Scope CurrentUser
+Import-Module Microsoft.Graph.Authentication
+
 # audience
 $aud = "00000003-0000-0000-c000-000000000000"
 
@@ -98,14 +102,12 @@ $claims.iss = $objectId
 
 # token validity should not be more than 10 minutes
 $now = (Get-Date).ToUniversalTime()
-
 $securityTokenDescriptor = [Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor]@{
     Claims = $claims
     NotBefore = $now
     Expires = $now.AddMinutes(10)
     SigningCredentials = [Microsoft.IdentityModel.Tokens.X509SigningCredentials]::new($cert)
 }
-
 $handler = [Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler]::new()
 $token = $handler.CreateToken($securityTokenDescriptor)
 Write-Output $token
@@ -113,4 +115,4 @@ Write-Output $token
 
 ---
 
-> **Note:** The proof can be generated using other tools, such as PowerShell or signature using Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload, or an **Authentication_MissingOrMalformed** error will be returned.
+You can also generate the proof using signature in Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload or an **Authentication_MissingOrMalformed** error will be returned.
