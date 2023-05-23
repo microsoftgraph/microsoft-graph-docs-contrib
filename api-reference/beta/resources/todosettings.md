@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide settings for Microsoft Todo**
+Company-wide settings for Microsoft Todo.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isExternalJoinEnabled|Boolean|**Controls whether users can join lists from users external to your organization.**|
-|isExternalShareEnabled|Boolean|**Controls whether users can share lists to external users.**|
-|isPushNotificationEnabled|Boolean|**Controls whether push notifications are enabled for your users or not.**|
+|isExternalJoinEnabled|Boolean|Controls whether users can join lists from users external to your organization.|
+|isExternalShareEnabled|Boolean|Controls whether users can share lists with external users.|
+|isPushNotificationEnabled|Boolean|Controls whether push notifications are enabled for your users.|
 
 ## Relationships
 None.

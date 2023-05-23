@@ -1,6 +1,6 @@
 ---
 title: "customerVoiceSettings resource type"
-description: "**Company wide settings for Dynamics customer voice**"
+description: "Company-wide settings for Microsoft Dynamics 365 Customer Voice"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide settings for Dynamics customer voice**
+Company-wide settings for Microsoft Dynamics 365 Customer Voice.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isInOrgFormsPhishingScanEnabled|Boolean|**Controls whether phishing protection is run on forms created by users, blocking creation of forms if common phishing questions are detected.**|
-|isRecordIdentityByDefaultEnabled|Boolean|**Controls whether names of users who fill out forms are recorded.**|
-|isRestrictedSurveyAccessEnabled|Boolean|**Controls whether only users inside your organization can submit a response.**|
+|isInOrgFormsPhishingScanEnabled|Boolean|Controls whether phishing protection is run on forms created by users, blocking the creation of forms if common phishing questions are detected.|
+|isRecordIdentityByDefaultEnabled|Boolean|Controls whether the names of users who fill out forms are recorded.|
+|isRestrictedSurveyAccessEnabled|Boolean|Controls whether only users inside your organization can submit a response.|
 
 ## Relationships
 None.

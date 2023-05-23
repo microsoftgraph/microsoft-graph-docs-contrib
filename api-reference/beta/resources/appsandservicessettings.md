@@ -1,6 +1,6 @@
 ---
 title: "appsAndServicesSettings resource type"
-description: "**Company wide settings for apps and services**"
+description: "Company-wide settings for apps and services"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide settings for apps and services**
+Company-wide settings for apps and services.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isAppAndServicesTrialEnabled|Boolean|**Controls whether users can start trial subscriptions for apps and services in your organization.**|
-|isOfficeStoreEnabled|Boolean|**Controls whether users can access the Office Store.**|
+|isAppAndServicesTrialEnabled|Boolean|Controls whether users can start trial subscriptions for apps and services in your organization.|
+|isOfficeStoreEnabled|Boolean|Controls whether users can access the Microsoft Store.|
 
 ## Relationships
 None.
