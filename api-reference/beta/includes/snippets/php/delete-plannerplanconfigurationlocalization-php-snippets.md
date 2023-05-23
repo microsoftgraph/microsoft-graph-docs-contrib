@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->planConfiguration()->localizationsById('plannerPlanConfigurationLocalization-id')->delete();
+$graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->planConfiguration()->localizations()->byLocalizationId('plannerPlanConfigurationLocalization-id')->delete();
 
 
 ```

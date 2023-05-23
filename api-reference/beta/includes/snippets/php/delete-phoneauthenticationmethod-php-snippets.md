@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->authentication()->phoneMethodsById('phoneAuthenticationMethod-id')->delete();
+$graphServiceClient->me()->authentication()->phoneMethods()->byPhoneMethodId('phoneAuthenticationMethod-id')->delete();
 
 
 ```

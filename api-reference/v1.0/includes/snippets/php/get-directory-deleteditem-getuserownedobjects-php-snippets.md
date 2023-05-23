@@ -19,7 +19,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->directory()->deletedItemsById('directoryObject-id')->post($requestBody);
+$graphServiceClient->directory()->deletedItems()->byDeletedItemId('directoryObject-id')->post($requestBody);
 
 
 ```
