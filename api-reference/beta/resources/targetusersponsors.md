@@ -23,7 +23,7 @@ Inherits from [userSet](../resources/userset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isBackup|Boolean|For sponsors in an approval stage, indicates whether the sponsors are backup fallback approvers.Inherited from [userSet](../resources/userset.md).|
+|isBackup|Boolean|For sponsors in an approval stage, indicates whether the sponsors are backup fallback approvers. Inherited from [userSet](../resources/userset.md).|
 
 ## Relationships
 
