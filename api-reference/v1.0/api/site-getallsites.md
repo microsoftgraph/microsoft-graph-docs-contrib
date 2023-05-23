@@ -11,15 +11,13 @@ doc_type: apiPageType
 
 # sites: getAllSites
 
-List all available [sites](../resources/site.md) across geographies in an organization.
+List root [sites](../resources/site.md) across geographies in an organization.
 
 For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-### List all site collections
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------
