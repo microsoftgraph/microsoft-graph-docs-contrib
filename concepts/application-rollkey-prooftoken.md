@@ -116,3 +116,9 @@ Write-Output $token
 ---
 
 You can also generate the proof using signature in Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload or an **Authentication_MissingOrMalformed** error will be returned.
+
+## Next steps
+
+Now that you have your proof of possession token, you can use it to:
+- [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from your application.
+- [Add a key](/graph/api/serviceprincipal-addkey) or [remove a key](/graph/api/serviceprincipal-removekey) from your service principal.
