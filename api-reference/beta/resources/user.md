@@ -355,7 +355,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand`.|
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups that are this user's sponsors. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups that are responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
