@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->ediscoveryReopen()->post();
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->microsoftGraphEdiscoveryReopen()->post();
 
 
 ```

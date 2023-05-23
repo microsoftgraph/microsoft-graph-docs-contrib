@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->security()->tiIndicatorsById('tiIndicator-id')->delete();
+$graphServiceClient->security()->tiIndicators()->byTiIndicatorId('tiIndicator-id')->delete();
 
 
 ```

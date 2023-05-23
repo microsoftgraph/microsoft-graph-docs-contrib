@@ -30,7 +30,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->usersById('user-id')->followedSitesById('site-id')->post($requestBody);
+$graphServiceClient->users()->byUserId('user-id')->followedSites()->byFollowedSiteId('site-id')->post($requestBody);
 
 
 ```

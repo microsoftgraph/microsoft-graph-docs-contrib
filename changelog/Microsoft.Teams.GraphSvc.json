@@ -281,6 +281,42 @@
     {
       "ChangeList": [
         {
+          "Id": "D8A83E3D-D9B6-4ED4-8979-A514F8C6766E",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Chat.ManageDeletion.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
+          "Target": ""
+        }
+      ],
+      "Id": "D8A83E3D-D9B6-4ED4-8979-A514F8C6766E",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-06T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "05DF0873-86C7-4B55-99AB-35AE3A4AFB09",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Chat.ManageDeletion.All",
+          "ChangeType": "Addition",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
+          "Target": ""
+        }
+      ],
+      "Id": "05DF0873-86C7-4B55-99AB-35AE3A4AFB09",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-04T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
           "ApiChange": "Resource",
           "ChangedApiName": "actionResultPart",
@@ -965,6 +1001,40 @@
       "CreatedDateTime": "2023-03-14T05:32:34.8477703Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chatMessageActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessageActions** enumeration type.",
+          "Target": "chatMessageActions"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/chatMessageHistoryItem?view=graph-rest-1.0) resource type.",
+          "Target": "chatMessageHistoryItem"
+        },
+        {
+          "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+          "ApiChange": "Property",
+          "ChangedApiName": "messageHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the **messageHistory** property to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "2693683c-f49a-4715-a649-edadd3f54aad",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-18T23:04:05.0154606Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

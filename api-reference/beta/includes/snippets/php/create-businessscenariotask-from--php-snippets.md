@@ -46,7 +46,7 @@ $businessScenarioProperties->setExternalBucketId('deliveryBucket');
 $requestBody->setBusinessScenarioProperties($businessScenarioProperties);
 
 
-$result = $graphServiceClient->solutions()->businessScenariosById('businessScenario-id')->planner()->tasks()->post($requestBody);
+$result = $graphServiceClient->solutions()->businessScenarios()->byBusinessScenarioId('businessScenario-id')->planner()->tasks()->post($requestBody);
 
 
 ```

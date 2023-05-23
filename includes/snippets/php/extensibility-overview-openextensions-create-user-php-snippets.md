@@ -25,7 +25,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$result = $graphServiceClient->usersById('user-id')->extensions()->post($requestBody);
+$result = $graphServiceClient->users()->byUserId('user-id')->extensions()->post($requestBody);
 
 
 ```

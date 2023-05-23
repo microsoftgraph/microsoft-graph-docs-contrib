@@ -18,7 +18,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->servicePrincipalsById('servicePrincipal-id')->ownersById('directoryObject-id')->ref()->delete($requestBody);
+$graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->owners()->byOwnerId('directoryObject-id')->ref()->delete($requestBody);
 
 
 ```

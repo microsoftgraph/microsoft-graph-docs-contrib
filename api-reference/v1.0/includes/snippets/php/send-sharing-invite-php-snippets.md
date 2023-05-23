@@ -32,7 +32,7 @@ $requestBody->setExpirationDateTime('2018-07-15T14:00:00.000Z');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->invite()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->invite()->post($requestBody);
 
 
 ```

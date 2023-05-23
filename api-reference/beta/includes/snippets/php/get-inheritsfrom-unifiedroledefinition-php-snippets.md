@@ -15,7 +15,7 @@ $queryParameters->expand = ["inheritsPermissionsFrom"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->get($requestConfiguration);
+$result = $graphServiceClient->roleManagement()->directory()->roleDefinitions()->byRoleDefinitionId('unifiedRoleDefinition-id')->get($requestConfiguration);
 
 
 ```
