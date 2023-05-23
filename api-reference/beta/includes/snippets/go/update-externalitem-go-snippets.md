@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -34,7 +34,7 @@ accessType := "grant"
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.External().ConnectionsById("externalConnection-id").ItemsById("externalItem-id").Patch(context.Background(), requestBody, nil)
+graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -22,7 +22,7 @@ configuration := &graphconfig.ItemOnlineMeetingItemAttendanceReportItemRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().OnlineMeetingsById("onlineMeeting-id").AttendanceReportsById("meetingAttendanceReport-id").Get(context.Background(), configuration)
+result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").AttendanceReports().ByAttendanceReportId("meetingAttendanceReport-id").Get(context.Background(), configuration)
 
 
 ```

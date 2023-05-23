@@ -29,7 +29,7 @@ $data->setAdditionalData($additionalData);
 $requestBody->setData($data);
 
 
-$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequestsById('accessPackageAssignmentRequest-id')->resume()->post($requestBody);
+$graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->byAccessPackageAssignmentRequestId('accessPackageAssignmentRequest-id')->resume()->post($requestBody);
 
 
 ```

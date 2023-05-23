@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->identity()->conditionalAccess()->templatesById('conditionalAccessTemplate-id')->get();
+$result = $graphServiceClient->identity()->conditionalAccess()->templates()->byTemplateId('conditionalAccessTemplate-id')->get();
 
 
 ```

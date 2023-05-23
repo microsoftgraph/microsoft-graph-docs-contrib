@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -37,7 +37,7 @@ requestBody.SetColIndexNum(&colIndexNum)
 rangeLookup := false
 requestBody.SetRangeLookup(&rangeLookup) 
 
-result, err := graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
+result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ configuration := &graphconfig.TeamItemScheduleTimeCardsRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.TeamsById("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
+result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().Get(context.Background(), configuration)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -25,7 +25,7 @@ configuration := &graphconfig.DriveItemItemItemWorkbookRefreshSessionRequestBuil
 }
 requestBody := graphmodels.NewRefreshSessionPostRequestBody()
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().RefreshSession().Post(context.Background(), requestBody, configuration)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().RefreshSession().Post(context.Background(), requestBody, configuration)
 
 
 ```

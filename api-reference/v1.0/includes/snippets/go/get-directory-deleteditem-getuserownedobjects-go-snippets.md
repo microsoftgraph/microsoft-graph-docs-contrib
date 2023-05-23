@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -22,7 +22,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Directory().DeletedItemsById("directoryObject-id").Post(context.Background(), requestBody, nil)
+graphClient.Directory().DeletedItems().ByDeletedItemId("directoryObject-id").Post(context.Background(), requestBody, nil)
 
 
 ```

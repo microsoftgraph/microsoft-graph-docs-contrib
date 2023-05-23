@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -39,7 +39,7 @@ filterOn := "filterOn-value"
 criteria.SetFilterOn(&filterOn) 
 requestBody.SetCriteria(criteria)
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().TablesById("workbookTable-id").ColumnsById("workbookTableColumn-id").Filter().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Columns().ByColumnId("workbookTableColumn-id").Filter().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```

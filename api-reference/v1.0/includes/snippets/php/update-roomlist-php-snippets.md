@@ -44,7 +44,7 @@ $GeoCoordinates->setAltitudeAccuracy(null);
 $requestBody->setGeoCoordinates($geoCoordinates);
 
 
-$result = $graphServiceClient->placesById('place-id')->patch($requestBody);
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody);
 
 
 ```

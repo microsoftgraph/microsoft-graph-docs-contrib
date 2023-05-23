@@ -16,7 +16,7 @@ $requestBody->setContentType('plain');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->commentsById('workbookComment-id')->replies()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->comments()->byCommentId('workbookComment-id')->replies()->post($requestBody);
 
 
 ```

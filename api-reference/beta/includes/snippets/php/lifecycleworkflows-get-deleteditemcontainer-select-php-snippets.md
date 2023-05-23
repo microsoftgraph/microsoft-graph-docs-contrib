@@ -15,7 +15,7 @@ $queryParameters->select = ["id","category","displayName","description","version
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflowsById('workflow-id')->get($requestConfiguration);
+$result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->deletedItems()->workflows()->byWorkflowId('workflow-id')->get($requestConfiguration);
 
 
 ```

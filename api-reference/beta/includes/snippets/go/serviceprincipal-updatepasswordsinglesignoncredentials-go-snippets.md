@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -42,7 +42,7 @@ credentials := []graphmodels.Credentialable {
 }
 requestBody.SetCredentials(credentials)
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").UpdatePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").UpdatePasswordSingleSignOnCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

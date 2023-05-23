@@ -26,7 +26,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->schedulingGroupsById('schedulingGroup-id')->put($requestBody, $requestConfiguration);
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->schedulingGroups()->bySchedulingGroupId('schedulingGroup-id')->put($requestBody, $requestConfiguration);
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -23,7 +23,7 @@ configuration := &graphconfig.ServicePrincipalItemSynchronizationJobsRequestBuil
 	Headers: headers,
 }
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").Synchronization().Jobs().Get(context.Background(), configuration)
+result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().Get(context.Background(), configuration)
 
 
 ```

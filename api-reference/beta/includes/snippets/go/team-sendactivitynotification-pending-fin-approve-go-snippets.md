@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -48,7 +48,7 @@ templateParameters := []graphmodels.KeyValuePairable {
 }
 requestBody.SetTemplateParameters(templateParameters)
 
-graphClient.TeamsById("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
+graphClient.Teams().ByTeamId("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)
 
 
 ```

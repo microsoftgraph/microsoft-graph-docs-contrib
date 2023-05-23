@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -46,7 +46,7 @@ requestBody.SetMatchCase(&matchCase)
 method := "method-value"
 requestBody.SetMethod(&method) 
 
-graphClient.DrivesById("drive-id").ItemsById("driveItem-id").Workbook().TablesById("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```
