@@ -9592,7 +9592,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the [privilegedapproval](https://learn.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) entity.",
+          "Description": "Change the **privilegedapproval** entity.",
           "Target": "privilegedapproval"
         },
         {
@@ -9600,7 +9600,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedroleassignmentrequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
+          "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions: List, Create, Cancel, My.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
@@ -9608,7 +9608,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added [Update](https://learn.microsoft.com/en-us/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](https://learn.microsoft.com/en-us/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)",
+          "Description": "Added Update for **privilegedRoleSettings**.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],
