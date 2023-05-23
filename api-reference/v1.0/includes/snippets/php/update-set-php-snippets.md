@@ -14,7 +14,7 @@ $requestBody->setDescription('mySet');
 
 
 
-$result = $graphServiceClient->sitesById('site-id')->termStore()->setsById('set-id')->patch($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->sets()->bySetId('set-id')->patch($requestBody);
 
 
 ```

@@ -181,7 +181,7 @@ $canvasLayout->setHorizontalSections($horizontalSectionsArray);
 $requestBody->setCanvasLayout($canvasLayout);
 
 
-$result = $graphServiceClient->sitesById('site-id')->pages()->post($requestBody);
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->post($requestBody);
 
 
 ```

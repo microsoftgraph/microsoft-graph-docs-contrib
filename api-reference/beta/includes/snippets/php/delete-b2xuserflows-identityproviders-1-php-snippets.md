@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->identityProvidersById('identityProvider-id')->ref()->delete();
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->identityProviders()->byIdentityProviderId('identityProvider-id')->ref()->delete();
 
 
 ```

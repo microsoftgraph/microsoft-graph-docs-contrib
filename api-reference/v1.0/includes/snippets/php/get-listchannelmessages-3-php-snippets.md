@@ -16,7 +16,7 @@ $queryParameters->expand = ["replies"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->messages()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->get($requestConfiguration);
 
 
 ```

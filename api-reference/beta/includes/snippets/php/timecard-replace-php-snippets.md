@@ -89,7 +89,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->timeCardsById('timeCard-id')->put($requestBody);
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->byTimeCardId('timeCard-id')->put($requestBody);
 
 
 ```
