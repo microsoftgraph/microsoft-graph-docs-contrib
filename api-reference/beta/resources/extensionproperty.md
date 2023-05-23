@@ -56,6 +56,7 @@ Inherits from [directoryObject](directoryobject.md).
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](directoryobject.md).|
 |isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only. |
 |name|String| Name of the extension property. Not nullable. Supports `$filter` (`eq`).|
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of integers. The default value is `false`. Supports `$filter` (`eq`).|
 |targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 ## Relationships
@@ -83,6 +84,7 @@ The following is a JSON representation of the resource.
   "name": "String",
   "dataType": "String",
   "isSyncedFromOnPremises": "Boolean",
+  "isMultiValued": "Boolean",
   "targetObjects": [
     "String"
   ]
