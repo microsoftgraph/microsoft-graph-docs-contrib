@@ -1,20 +1,21 @@
 ---
 title: "Microsoft 365 groups in Microsoft Graph"
 description: "Microsoft 365 groups are collections of users who share access to resources in Microsoft services. Create groups, manage group membership, and establish group policies."
-author: "dkershaw10"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "groups"
+doc_type: conceptualPageType
 ms.custom: scenarios:getting-started
+ms.date: 05/19/2023
 ---
 
 # Overview of Microsoft 365 groups in Microsoft Graph
 
 Microsoft 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. 
 
-
 > [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
-## Why integrate with Microsoft 365 groups?   
+## Why integrate with Microsoft 365 groups? 
 
 Groups form the foundation that enables user collaboration and integration across services to support rich scenarios in task planning, teamwork, education, and more. When you integrate with Microsoft 365 groups, your application can support millions of users as they transition across various experiences in the Microsoft 365 suite and beyond.  
  
