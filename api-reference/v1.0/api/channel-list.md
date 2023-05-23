@@ -30,6 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
+## Deprecation notice 
+This API is deprecating the return of email by default in response. We recommend that you update your existing code to explicitly request the email property by using the `$select` query parameter. For more information, see [Use $select for better performance](#use-select-for-better-performance). Date of deprecation: 2021-10-01 <NEED TO BE AGREED ON ONE DATE !>
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,8 +40,15 @@ GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
+This method supports the `$select`, `$filter`, `$skip`, `$expand` and `$top` OData query parameters to help customize the response. [OData query parameters](/graph/query-parameters) to help customize the response.
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+The default page size for this API is 100. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
+### Use $select for better performance
+
+Populating the **email** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** property to improve performance.
+
+> **Note**: This API does not provide **email** property for a channel by default to improve the performance. To get these properties, use the `$select` query parameter.
 
 ## Request headers
 
