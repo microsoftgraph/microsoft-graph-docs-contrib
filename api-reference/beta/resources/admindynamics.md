@@ -1,6 +1,6 @@
 ---
 title: "adminDynamics resource type"
-description: "**Company wide configuration for Dynamics 365**"
+description: "Company-wide configuration for Microsoft Dynamics 365"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide configuration for Dynamics 365**
+Company-wide configuration for Microsoft Dynamics 365.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|**Company wide settings for Dynamics customer voice**|
-|id|String|**Unique Id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|customerVoice|[microsoft.graph.customerVoiceSettings](../resources/customervoicesettings.md)|Company-wide settings for Microsoft Dynamics 365 Customer Voice.|
+|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 None.

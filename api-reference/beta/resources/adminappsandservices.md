@@ -1,6 +1,6 @@
 ---
 title: "adminAppsAndServices resource type"
-description: "**Company wide configuration for apps and services**"
+description: "Company-wide configuration for apps and services"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide configuration for apps and services**
+Company-wide configuration for apps and services.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**Unique id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|**Company wide settings for apps and services**|
+|id|String|Unique id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|settings|[microsoft.graph.appsAndServicesSettings](../resources/appsandservicessettings.md)|Company-wide settings for apps and services.|
 
 ## Relationships
 None.
