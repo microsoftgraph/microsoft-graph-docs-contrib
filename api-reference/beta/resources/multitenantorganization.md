@@ -26,13 +26,13 @@ Namespace: microsoft.graph
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date when multi-tenant organization was created. Read-only.|
-|description|String|Description of multi-tenant organization.|
-|displayName|String|Display name of multi-tenant organization. Required.|
+|description|String|Description of the multi-tenant organization.|
+|displayName|String|Display name of the multi-tenant organization. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Details of a tenant's join request to multi-tenant organization.|
+|joinRequest|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Details of a tenant's join request to the multi-tenant organization.|
 |tenants|[multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) collection|Member tenants of the multi-tenant organization.|
 
 ## JSON representation
