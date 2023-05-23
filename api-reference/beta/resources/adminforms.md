@@ -1,6 +1,6 @@
 ---
 title: "adminForms resource type"
-description: "**Company wide configuration for Microsoft Forms**"
+description: "Company-wide configuration for Microsoft Forms"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide configuration for Microsoft Forms**
+Company-wide configuration for Microsoft Forms.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**Unique Id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|**Company wide settings for Microsoft Forms**|
+|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|settings|[microsoft.graph.formsSettings](../resources/formssettings.md)|Company-wide settings for Microsoft Forms.|
 
 ## Relationships
 None.

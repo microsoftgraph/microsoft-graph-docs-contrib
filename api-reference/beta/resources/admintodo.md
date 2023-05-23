@@ -1,6 +1,6 @@
 ---
 title: "adminTodo resource type"
-description: "**Company wide configuration for Microsoft Todo**"
+description: "Company-wide configuration for Microsoft Todo"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Company wide configuration for Microsoft Todo**
+Company-wide configuration for Microsoft Todo.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**Unique Id** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|**Company wide settings for Microsoft Todo**|
+|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|settings|[microsoft.graph.todoSettings](../resources/todosettings.md)|Company-wide settings for Microsoft Todo.|
 
 ## Relationships
 None.

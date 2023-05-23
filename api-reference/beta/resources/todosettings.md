@@ -1,6 +1,6 @@
 ---
 title: "todoSettings resource type"
-description: "**Company wide settings for Microsoft Todo**"
+description: "Company-wide settings for Microsoft Todo"
 author: "zadinsmo"
 ms.localizationpriority: medium
 ms.prod: "applications"
