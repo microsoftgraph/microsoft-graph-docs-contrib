@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 List all available [sites](../resources/site.md) across geographies in an organization.
 
-For more details, see [Best practices for discovering files and detecting changes at scale](https://learn.microsoft.com/en-us/onedrive/developer/rest-api/concepts/scan-guidance).
+For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions
 
@@ -51,7 +51,7 @@ GET /site/getAllSites
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
