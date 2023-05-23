@@ -16102,13 +16102,15 @@ items:
         items:
         - name: Overview
           href: resources/security-recordsmanagement-overview.md
+        - name: Labels (preview)
+          href: resources/security-labelsroot.md
         - name: Retention label (preview)
           href: resources/security-retentionlabel.md
           items:
           - name: List
-            href: api/security-retentionlabel-list.md
+            href: api/security-labelsroot-list-retentionlabel.md
           - name: Create
-            href: api/security-retentionlabel-post.md
+            href: api/security-labelsroot-post-retentionlabel.md
           - name: Get
             href: api/security-retentionlabel-get.md
           - name: Update
