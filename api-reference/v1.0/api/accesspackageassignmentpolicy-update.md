@@ -41,6 +41,8 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 ## Request body
 In the request body, supply a JSON representation of the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
+The following table shows the properties that are required when you update an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the policy. Required.|
