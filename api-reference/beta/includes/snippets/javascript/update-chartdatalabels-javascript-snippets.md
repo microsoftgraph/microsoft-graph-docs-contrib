@@ -18,7 +18,7 @@ const workbookChartDataLabels = {
   showLegendKey: true
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
 	.version('beta')
 	.update(workbookChartDataLabels);
 

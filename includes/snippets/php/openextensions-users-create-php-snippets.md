@@ -13,17 +13,17 @@ $requestBody = new Extension();
 $requestBody->set@odatatype('microsoft.graph.openTypeExtension');
 
 $additionalData = [
-'extensionName' => 'com.contoso.roamingSettings', 
-'theme' => 'dark', 
-'color' => 'purple', 
-'lang' => 'Japanese', 
+		'extensionName' => 'com.contoso.roamingSettings', 
+		'theme' => 'dark', 
+		'color' => 'purple', 
+		'lang' => 'Japanese', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$requestResult = $graphServiceClient->me()->extensions()->post($requestBody);
+$result = $graphServiceClient->me()->extensions()->post($requestBody);
 
 
 ```

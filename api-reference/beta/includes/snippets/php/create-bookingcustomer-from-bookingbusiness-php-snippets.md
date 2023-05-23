@@ -70,7 +70,7 @@ $requestBody->setPhones($phonesArray);
 
 
 
-$requestResult = $graphServiceClient->bookingBusinessesById('bookingBusiness-id')->customers()->post($requestBody);
+$result = $graphServiceClient->bookingBusinesses()->byBookingBusinesseId('bookingBusiness-id')->customers()->post($requestBody);
 
 
 ```

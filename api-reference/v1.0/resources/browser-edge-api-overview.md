@@ -1,5 +1,5 @@
 ---
-title: "Use the Edge API in Microsoft Graph (preview)"
+title: "Use the Edge API in Microsoft Graph"
 description: "The Edge API in Microsoft Graph lets apps manage administrator tasks for organizations."
 author: "edward-day-vii"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "browser-management"
 doc_type: conceptualPageType
 ---
 
-# Use the Edge API in Microsoft Graph (preview)
+# Use the Edge API in Microsoft Graph
 
 The Edge API in Microsoft Graph lets apps manage administrator tasks for organizations. With proper authorization, an app can get access to an organization's browser site lists for Internet Explorer (IE) mode that reside in the cloud, allowing administrators to manage the same data available in the [Microsoft 365 admin center](https://admin.microsoft.com/). After configuring the appropriate permissions, your app can create browser site lists, add browser sites and shared cookies, and publish the site lists for Microsoft Edge to download.
 

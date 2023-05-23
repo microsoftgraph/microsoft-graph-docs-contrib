@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	Description = "description-updated"
+	description = "description-updated"
 }
 
 Update-MgSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params

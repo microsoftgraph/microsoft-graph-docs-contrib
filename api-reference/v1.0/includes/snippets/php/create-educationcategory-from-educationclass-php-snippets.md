@@ -14,7 +14,7 @@ $requestBody->setDisplayName('Quizzes');
 
 
 
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentCategories()->post($requestBody);
+$result = $graphServiceClient->education()->classes()->byClasseId('educationClass-id')->assignmentCategories()->post($requestBody);
 
 
 ```

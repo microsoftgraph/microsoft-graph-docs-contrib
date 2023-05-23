@@ -8,13 +8,13 @@ Import-Module Microsoft.Graph.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatePolicy"
-	DeploymentSettings = @{
+	deploymentSettings = @{
 		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentSettings"
-		Schedule = @{
-			GradualRollout = @{
+		schedule = @{
+			gradualRollout = @{
 				"@odata.type" = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"
-				DurationBetweenOffers = "P1D"
-				DevicePerOffer = 
+				durationBetweenOffers = "P1D"
+				devicePerOffer = 
 			}
 		}
 	}

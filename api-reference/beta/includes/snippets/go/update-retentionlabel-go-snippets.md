@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ requestBody.SetLabelToBeApplied(&labelToBeApplied)
 defaultRecordBehavior := graphmodels.STRING_DEFAULTRECORDBEHAVIOR 
 requestBody.SetDefaultRecordBehavior(&defaultRecordBehavior) 
 
-result, err := graphClient.Security().Labels().RetentionLabelsById("retentionLabel-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Security().Labels().RetentionLabels().ByRetentionLabelId("retentionLabel-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->domainsById('domain-id')->federationConfigurationById('internalDomainFederation-id')->delete();
+$graphServiceClient->domains()->byDomainId('domain-id')->federationConfiguration()->byFederationConfiguration()Id('internalDomainFederation-id')->delete();
 
 
 ```
