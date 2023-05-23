@@ -1,6 +1,6 @@
 ---
 title: "Overview of role management through the privileged identity management (PIM) API"
-description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
+description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ ms.date: 12/07/2022
 
 # Overview of role management through the privileged identity management (PIM) API
 
-Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a feature of [Microsoft Entra Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, role-assignable groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
 
 The Microsoft Graph PIM API for role management allows you to govern privileged access and limit excessive access. This article introduces the governance capabilities of PIM APIs in Microsoft Graph.
 
@@ -103,11 +103,11 @@ For more information about permissions to call PIM APIs, see the [Microsoft Grap
 
 ## Licensing
 
-The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have sufficient purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
 ## See also
 
-+ [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
++ [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
 + You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).

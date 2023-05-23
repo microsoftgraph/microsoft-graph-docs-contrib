@@ -1,6 +1,6 @@
 ---
-title: "Overview of Azure AD Identity Governance using Microsoft Graph"
-description: "Azure AD Identity Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Azure AD Identity Governance features."
+title: "Overview of Microsoft Entra Identity Governance using Microsoft Graph"
+description: "Microsoft Entra Identity Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Microsoft Entra Identity Governance features."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -8,20 +8,20 @@ doc_type: conceptualPageType
 ms.date: 08/27/2022
 ---
 
-# Overview of Azure AD Identity Governance using Microsoft Graph
+# Overview of Microsoft Entra Identity Governance using Microsoft Graph
 
 Azure Active Directory (Azure AD) Identity Governance allows you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time.
 
 The principals (or identities) whose access you can govern include users, groups, and applications (or service principals). The users can be your employees, business partners, vendors, or contractors. The resources to which you can govern access include groups, access packages, and privileged roles.
 
-You manage Azure AD Identity Governance capabilities programmatically by using the following identity governance APIs in Microsoft Graph.
+You manage Microsoft Entra Identity Governance capabilities programmatically by using the following identity governance APIs in Microsoft Graph.
 
 + [Access reviews](#attest-to-the-access-that-principals-have-to-resources)
 + [Entitlement management](#automate-user-access-to-resources)
 + [Privileged identity management](#manage-access-to-privileged-roles)
 + [Terms of use](#enforce-terms-of-use-for-your-resources)
 
-For more information about Azure AD Identity Governance, see [What is Azure AD Identity Governance?](#see-also).
+For more information about Microsoft Entra Identity Governance, see [What is Microsoft Entra Identity Governance?](#see-also).
 
 ## Attest to the access that principals have to resources
 
@@ -55,15 +55,8 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 
 With identities being the common denominator when considering the security of your data, identity governance APIs in Microsoft Graph help your organization to achieve the [Identity Zero Trust deployment objectives](#see-also).
 
-## License requirements
-
-| Identity governance APIs | License requirements |
-|--|--|
-| [Access reviews](/graph/api/resources/accessreviewsv2-overview) <br/> [Entitlement management](/graph/api/resources/entitlementmanagement-overview) <br/> [Privileged identity management](/graph/api/resources/privilegedidentitymanagementv3-overview) | Azure AD Premium P2 license. |
-| [Terms of use](/graph/api/resources/agreement) | Azure AD Premium P1, P2, EMS E3, or EMS E5 licenses. |
-
 ## See also
 
-+ [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
++ [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 + [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#iv-identities-and-access-privileges-are-managed-with-identity-governance)

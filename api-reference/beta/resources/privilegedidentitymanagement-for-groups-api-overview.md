@@ -1,6 +1,6 @@
 ---
 title: "Govern membership and ownership of groups using privileged identity management (PIM) for groups"
-description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
+description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra Identity Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -99,7 +99,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 
 ## See also
 
-- [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
+- [What is Microsoft Entra Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
   
