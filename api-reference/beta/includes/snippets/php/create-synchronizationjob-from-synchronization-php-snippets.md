@@ -14,7 +14,7 @@ $requestBody->setTemplateId('BoxOutDelta');
 
 
 
-$result = $graphServiceClient->servicePrincipalsById('servicePrincipal-id')->synchronization()->jobs()->post($requestBody);
+$result = $graphServiceClient->servicePrincipals()->byServicePrincipalId('servicePrincipal-id')->synchronization()->jobs()->post($requestBody);
 
 
 ```

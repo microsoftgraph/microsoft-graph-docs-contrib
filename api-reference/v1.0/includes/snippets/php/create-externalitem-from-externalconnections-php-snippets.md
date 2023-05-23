@@ -51,7 +51,7 @@ $content->setType(new ExternalItemContentType('text'));
 $requestBody->setContent($content);
 
 
-$result = $graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
+$result = $graphServiceClient->external()->connections()->byConnectionId('externalConnection-id')->items()->byItemId('externalItem-id')->put($requestBody);
 
 
 ```

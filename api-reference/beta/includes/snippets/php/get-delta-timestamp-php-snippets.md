@@ -15,7 +15,7 @@ $queryParameters->token = "2021-09-29T20:00:00Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->delta()->get($requestConfiguration);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->delta()->get($requestConfiguration);
 
 
 ```

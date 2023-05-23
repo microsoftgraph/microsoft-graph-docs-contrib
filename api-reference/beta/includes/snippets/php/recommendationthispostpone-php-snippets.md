@@ -14,7 +14,7 @@ $requestBody->setPostponeUntilDateTime(new DateTime('2023-02-01T02:53:00Z'));
 
 
 
-$result = $graphServiceClient->directory()->recommendationsById('recommendation-id')->postpone()->post($requestBody);
+$result = $graphServiceClient->directory()->recommendations()->byRecommendationId('recommendation-id')->postpone()->post($requestBody);
 
 
 ```
