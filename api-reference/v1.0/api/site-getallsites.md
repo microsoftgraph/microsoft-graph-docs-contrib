@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /site/getAllSites
+GET /sites/getAllSites
 ```
 
 ## Example
@@ -42,7 +42,7 @@ GET /site/getAllSites
 <!-- { "blockType": "ignored" } -->
 
 ```msgraph-interactive
-GET /site/getAllSites
+GET /sites/getAllSites
 ```
 
 ### Response
@@ -85,6 +85,6 @@ Content-type: application/json
       "webUrl": "https://contoso.sharepoint.com/sites/siteB"
     }
   ],
-  "@odata.nextLink": "https://contoso.sharepoint.com//_api/v2.1/sites/oneDrive.getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/sites/oneDrive.getAllSites?$skiptoken=U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 }
 ```
