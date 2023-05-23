@@ -65,8 +65,8 @@ In this case, all the calls are asynchronous, which means that the operation sta
 
 The following limits apply to all API calls:
 
-* The maximum number of assignments and submissions resources are 10 for the teacher and plus 10 for the student.
-* The maximum size allowed for resources is 50 MB overall or 10 resources.
+* The maximum number of submissions resources are 10 for the student.
+* The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
 ## See also
