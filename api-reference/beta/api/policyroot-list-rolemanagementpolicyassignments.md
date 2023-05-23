@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 Get the details of all role management policy assignments including the policies and rules associated with the Azure AD roles, or Pim for Group membership and ownership.
 
 ## Permissions
-One of the following permissions is required to call this API to retrieve the details of all Azure AD roles policy assignments. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For an Azure AD roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -23,8 +25,7 @@ One of the following permissions is required to call this API to retrieve the de
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
-
-One of the following permissions is required to call this API to retrieve the details of all policy assignments of Pim for Group membership and ownership. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+### For PIM for Group membership or ownership
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
