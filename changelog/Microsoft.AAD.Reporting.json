@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastUpdatedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the `lastUpdatedDateTime` property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastUpdatedDateTime** property to the [userRegistrationDetails](https://learn.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         }
       ],
