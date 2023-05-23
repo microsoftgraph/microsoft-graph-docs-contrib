@@ -37,11 +37,7 @@ GET /users/{id | userPrincipalName}/sponsors
 
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
-
->**Note:**
-
-> + You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
 
 ## Request headers
 
