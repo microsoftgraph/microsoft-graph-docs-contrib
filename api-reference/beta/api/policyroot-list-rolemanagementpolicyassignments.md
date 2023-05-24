@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
-### For PIM for Group membership and ownership
+### For PIM for groups membership and ownership
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -44,7 +44,7 @@ To retrieve details of all role management policy assignments for Azure AD roles
 GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
-To retrieve details of all role management policy assignments for PIM for Group membership and ownership scoped to a group:
+To retrieve details of all role management policy assignments for PIM for groups membership and ownership scoped to a group:
 <!-- {
   "blockType": "ignored"
 }
@@ -148,11 +148,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve details of all role management policy assignments for PIM for Group membership and ownership
+### Example 2: Retrieve details of all role management policy assignments for PIM for groups membership and ownership
 
 ### Request
 
-The following example retrieves details of all role management policy assignments that are scoped to the group and apply to PIM for Group membership and ownership.
+The following example retrieves details of all role management policy assignments that are scoped to the group and apply to PIM for groups membership and ownership.
 
 <!-- {
   "blockType": "request",

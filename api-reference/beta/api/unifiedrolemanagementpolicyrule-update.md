@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-### For PIM for Group membership and ownership
+### For PIM for groups membership and ownership
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -42,7 +42,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update a rule defined for a policy for either Azure AD roles or PIM for Group membership and ownership:
+To update a rule defined for a policy for either Azure AD roles or PIM for groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -158,7 +158,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a rule defined for a policy for PIM for Group membership and ownership
+### Example 2: Update a rule defined for a policy for PIM for groups membership and ownership
 
 ### Request
 
