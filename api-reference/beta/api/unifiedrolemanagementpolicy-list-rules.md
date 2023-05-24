@@ -24,7 +24,7 @@ To retrieve rules for a policy that applies to Azure RBAC, use the [Azure REST P
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Azure AD role
+### For Azure AD roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
