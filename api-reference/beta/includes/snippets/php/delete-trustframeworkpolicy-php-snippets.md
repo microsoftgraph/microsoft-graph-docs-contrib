@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->trustFramework()->policiesById('trustFrameworkPolicy-id')->delete();
+$graphServiceClient->trustFramework()->policies()->byPolicieId('trustFrameworkPolicy-id')->delete();
 
 
 ```

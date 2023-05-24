@@ -55,7 +55,7 @@ $requestBody->setAdditionalData($additionalData);
 
 
 
-$graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->put($requestBody);
+$graphServiceClient->trustFramework()->keySets()->byKeySetId('trustFrameworkKeySet-id')->put($requestBody);
 
 
 ```

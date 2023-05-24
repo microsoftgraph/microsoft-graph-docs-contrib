@@ -1,6 +1,6 @@
 ---
 title: "Delete plannerRosterMember"
-description: "Deletes a plannerRosterMember object."
+description: "Delete a plannerRosterMember object."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Delete plannerRosterMember
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Delete a [plannerRosterMember](../resources/plannerrostermember.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,11 +36,13 @@ DELETE /planner/rosters/{plannerRosterId}/members/{plannerRosterMemberId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -48,6 +52,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,6 +92,9 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-
 ---
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,4 +103,3 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-
 ``` http
 HTTP/1.1 204 No Content
 ```
-

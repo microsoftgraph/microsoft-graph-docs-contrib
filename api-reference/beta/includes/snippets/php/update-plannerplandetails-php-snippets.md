@@ -36,7 +36,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->plansById('plannerPlan-id')->details()->patch($requestBody, $requestConfiguration);
+$result = $graphServiceClient->planner()->plans()->byPlanId('plannerPlan-id')->details()->patch($requestBody, $requestConfiguration);
 
 
 ```

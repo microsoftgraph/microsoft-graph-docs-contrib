@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.WindowsUpdatesUpdateAudienceById.UpdateAudienceByIdPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Item.Audience.MicrosoftGraphWindowsUpdatesUpdateAudienceById.UpdateAudienceByIdPostRequestBody
 {
 	MemberEntityType = "String",
 	AddMembers = new List<string>
@@ -26,7 +28,7 @@ var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.Deployments.Ite
 		"String",
 	},
 };
-await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].Audience.WindowsUpdatesUpdateAudienceById.PostAsync(requestBody);
+await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].Audience.MicrosoftGraphWindowsUpdatesUpdateAudienceById.PostAsync(requestBody);
 
 
 ```

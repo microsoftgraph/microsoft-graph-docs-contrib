@@ -37,6 +37,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 |title|String|Required. Title of the plan.|
 |creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it is set, this property can’t be updated. This property will not return a valid group ID if the container of the plan is not a group.|
+|sharedWithContainers|[plannerSharedWithContainer](plannersharedwithcontainer.md) collection|List of containers the plan is shared with.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -83,6 +84,11 @@ The following is a JSON representation of the resource.
     "containerId": "String",
     "type": "String"
   },
+  "sharedWithContainers": [
+    {
+      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
+    }
+  ],
   "title": "String"
 }
 ```

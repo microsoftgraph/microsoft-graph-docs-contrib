@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->appCatalogs()->teamsAppsById('teamsApp-id')->appDefinitionsById('teamsAppDefinition-id')->outlineIcon()->hostedContent()->value()->get();
+$graphServiceClient->appCatalogs()->teamsApps()->byTeamsAppId('teamsApp-id')->appDefinitions()->byAppDefinitionId('teamsAppDefinition-id')->outlineIcon()->hostedContent()->value()->get();
 
 
 ```

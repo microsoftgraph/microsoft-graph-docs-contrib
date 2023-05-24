@@ -22,7 +22,7 @@ $requestBody->setCertificateAuthorities($certificateAuthoritiesArray);
 
 
 
-$result = $graphServiceClient->organizationById('organization-id')->certificateBasedAuthConfiguration()->post($requestBody);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->certificateBasedAuthConfiguration()->post($requestBody);
 
 
 ```

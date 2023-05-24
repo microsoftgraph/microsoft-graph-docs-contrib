@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.IdentityGovernanceActivate.ActivatePostRequestBody
+var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceActivate.ActivatePostRequestBody
 {
 	Subjects = new List<User>
 	{
@@ -16,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 		},
 	},
 };
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].IdentityGovernanceActivate.PostAsync(requestBody);
+await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].MicrosoftGraphIdentityGovernanceActivate.PostAsync(requestBody);
 
 
 ```

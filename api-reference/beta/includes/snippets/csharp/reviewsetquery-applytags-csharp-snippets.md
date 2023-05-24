@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.Queries.Item.EdiscoveryApplyTags.ApplyTagsPostRequestBody
+var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.ReviewSets.Item.Queries.Item.MicrosoftGraphEdiscoveryApplyTags.ApplyTagsPostRequestBody
 {
 	TagsToAdd = new List<Microsoft.Graph.Beta.Models.Ediscovery.Tag>
 	{
@@ -16,7 +18,7 @@ var requestBody = new Microsoft.Graph.Beta.Compliance.Ediscovery.Cases.Item.Revi
 		},
 	},
 };
-await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].Queries["{reviewSetQuery-id}"].EdiscoveryApplyTags.PostAsync(requestBody);
+await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].Queries["{reviewSetQuery-id}"].MicrosoftGraphEdiscoveryApplyTags.PostAsync(requestBody);
 
 
 ```

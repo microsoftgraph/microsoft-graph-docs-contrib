@@ -14,7 +14,7 @@ $requestBody->setIsEnabledInOrganization(true);
 
 
 
-$result = $graphServiceClient->organizationById('organization-id')->settings()->pronouns()->patch($requestBody);
+$result = $graphServiceClient->organization()->byOrganization()Id('organization-id')->settings()->pronouns()->patch($requestBody);
 
 
 ```

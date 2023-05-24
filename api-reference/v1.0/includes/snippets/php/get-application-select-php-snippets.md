@@ -15,7 +15,7 @@ $queryParameters->select = ["id","appId","displayName","requiredResourceAccess"]
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->applicationsById('application-id')->get($requestConfiguration);
+$result = $graphServiceClient->applications()->byApplicationId('application-id')->get($requestConfiguration);
 
 
 ```

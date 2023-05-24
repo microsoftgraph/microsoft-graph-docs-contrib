@@ -18,7 +18,7 @@ $requestBody->setComment('Comment for the named item');
 
 
 
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->names()->add()->post($requestBody);
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->workbook()->names()->add()->post($requestBody);
 
 
 ```
