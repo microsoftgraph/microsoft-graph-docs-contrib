@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "840dd994-b26b-48a2-8d7c-1b52ea86a45c",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the `preferredDisplayName` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "840dd994-b26b-48a2-8d7c-1b52ea86a45c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-24T21:27:42.1893733Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "91ef0477-1540-4df3-8683-6b2ee18ae17c",
           "ApiChange": "Enumeration",
           "ChangedApiName": "onlineMeetingContentSharingDisabledReason",
