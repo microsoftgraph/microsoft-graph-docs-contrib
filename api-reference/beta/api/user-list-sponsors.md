@@ -1,6 +1,6 @@
 ---
 title: "List sponsors"
-description: "Get user's sponsors. Returns the users or groups assigned as the user's sponsors."
+description: "Get user's sponsors."
 ms.localizationpriority: medium
 author: "sadia353"
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user's sponsors. Returns the users or groups assigned as the user's sponsors.
+Get user's sponsors. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Get sponsors:
+Get sponsors.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/sponsors

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a user or group as the user's sponsor.
+Assign a user or group as the user's sponsor. Sponsors are users and groups that are responsible for this guest user's privileges in the tenant and for keeping the guest user's information and access up to date.
 
 ## Permissions
 
@@ -50,9 +50,11 @@ In the request body, supply a JSON object and pass an `@odata.id` parameter with
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Assign a user as a sponsor
+
+#### Request
 
 The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
@@ -71,7 +73,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
