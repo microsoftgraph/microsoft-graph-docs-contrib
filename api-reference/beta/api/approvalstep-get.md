@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for groups
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -36,11 +36,12 @@ Permissions required for calling this API for PIM for groups
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
+### Get approval step  entitlement management.
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
+### Get approval step for PIM for groups.
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
@@ -73,10 +74,12 @@ The following is an example of the request.
   "name": "get_approvalstep_2"
 }-->
 
+### Example 1: Get approval step example for entitlement management.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```
 
+### Example 2: Get approval step example for PIM for groups.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/steps/d4fa4045-4716-436d-aec5-57b0a713f095
 ```

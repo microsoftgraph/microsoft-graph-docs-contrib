@@ -38,7 +38,6 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 |Relationship|Type|Description|
 |:---|:---|:---|
 |stages|[approvalStage](../resources/approvalstage.md) collection|Used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
-|steps|[approvalStep](../resources/approvalstep.md) collection|Used for the **approvalSteps** property of approval|
 
 ## JSON representation
 The following is a JSON representation of the resource.

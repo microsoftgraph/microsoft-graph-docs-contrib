@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
 
-TODO: Add PIM content here
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for groups
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -39,10 +39,12 @@ Permissions required for calling this API for PIM for groups
 
 <!-- { "blockType": "ignored" } -->
 
+### Get approval example for entitlement management.
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
 ```
 
+### Get approval example for PIM for groups.
 ```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}
 ```
@@ -74,9 +76,12 @@ The following is an example of the request.
   "name": "get_approval"
 }-->
 
+### Example 1: Get approval example for entitlement management.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
+
+### Example 2: Get approval example for PIM for groups.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
 ```
