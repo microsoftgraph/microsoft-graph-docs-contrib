@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 The following is an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 <!-- {
   "blockType": "request",
-  "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
+  "name": "delete_onAttributeCollectionExternalUsersSelfServiceSignUp"
 }
 -->
 ``` http
