@@ -61,11 +61,11 @@ The following is an example of the request. The request body is a JSON object wi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_sponsors"
+  "name": "create_userSponsors"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{user-id}/sponsors/$ref
+POST https://graph.microsoft.com/beta/users/d8ab5060-f636-4cff-ae97-d4687f5c83f3/sponsors/$ref
 Content-Type: application/json
 
 {
@@ -76,7 +76,37 @@ Content-Type: application/json
 #### Response
 
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Assign a group as a sponsor
+
+#### Request
+
+The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_groupSponsors"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/users/d8ab5060-f636-4cff-ae97-d4687f5c83f3/sponsors/$ref
+Content-Type: application/json
+
+{
+  "@odata.id": "https://graph.microsoft.com/beta/groups/{group-id}"
+}
+```
+
+#### Response
+
+The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->

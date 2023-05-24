@@ -510,8 +510,7 @@ Here is a JSON representation of the resource
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
   "profile": {"@odata.type": "microsoft.graph.profile"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"},
-  "sponsors": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }
 ```
 
