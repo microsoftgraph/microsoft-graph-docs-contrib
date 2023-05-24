@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for the retentionLabels resource type.
+Represents the entry point for the [retentionLabel](security-retentionlabel.md) resource type.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -35,9 +35,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Create filePlanReferences](../api/security-labelsroot-post-fileplanreferences.md)|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Create a new filePlanReferenceTemplate object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|None.|||
+None.
 
 
 
