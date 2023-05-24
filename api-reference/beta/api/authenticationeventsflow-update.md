@@ -72,7 +72,7 @@ The following is an example of a request that updates the display name of a spec
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow"
+  "name": "authenticationeventsflow_update_beta_e1"
 }
 -->
 ``` http
@@ -106,7 +106,7 @@ Add city (built-in attribute) as an attribute to be collected during the attribu
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow_onattributecollection"
+  "name": "update_authenticationeventsflow_onattributecollection_beta_e2"
 }
 -->
 ``` http
@@ -200,7 +200,7 @@ Remove city as an attribute to be collected during the attribute collection step
 
 <!-- {
   "blockType": "request",
-  "name": "update_authenticationeventsflow_onattributecollection"
+  "name": "update_authenticationeventsflow_onattributecollection_beta_e3"
 }
 -->
 ``` http

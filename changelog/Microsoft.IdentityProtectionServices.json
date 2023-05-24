@@ -997,24 +997,6 @@
 			"CreatedDateTime": "2023-04-20T00:00:00.5059025Z",
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
-		  },
-		  {
-			"ChangeList": [
-			  {
-				"Id": "de4c7be1-650e-4564-b4ae-92cd5dee6e51",
-				"ApiChange": "Enumeration",
-				"ChangedApiName": "userType",
-				"ChangeType": "Addition",
-				"Description": "Added the **userType** enumeration type.",
-				"Target": "userType"
-			  }
-			],
-			"Id": "de4c7be1-650e-4564-b4ae-92cd5dee6e51",
-			"Cloud": "Prod",
-			"Version": "beta",
-			"CreatedDateTime": "2023-05-17T00:00:00.8337962Z",
-			"WorkloadArea": "Identity and access",
-			"SubArea": "Identity and sign-in"
 		  }
 	]
 }

@@ -6815,7 +6815,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
@@ -6831,7 +6831,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-05-17T00:00:00Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -9471,7 +9471,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-04-05T19:59:11.0505166Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

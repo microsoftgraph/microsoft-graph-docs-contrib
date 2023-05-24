@@ -7,7 +7,7 @@ doc_type: apiPageType
 author: "JeremyKelley"
 ---
 
-# Enumerate sites
+# List sites
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ If you want to list all sites across all geographies, refer to [getAllSites][].
 [sites]: ../resources/site.md
 [getAllSites]: ../api/site-getallsites.md
 
-For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](https://learn.microsoft.com/en-us/onedrive/developer/rest-api/concepts/scan-guidance).
+For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions
 
