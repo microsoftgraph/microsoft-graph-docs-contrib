@@ -16128,8 +16128,8 @@ items:
             href: resources/security-fileplandescriptor.md
             items:
             - name: File plan reference
-             href: resources/security-fileplanreferencetemplate.md
-             items:
+              href: resources/security-fileplanreferencetemplate.md
+              items:
               - name: List
                 href: api/security-labelsroot-list-fileplanreferences.md
               - name: Create
