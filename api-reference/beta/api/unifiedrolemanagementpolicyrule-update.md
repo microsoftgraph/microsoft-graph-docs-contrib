@@ -24,7 +24,7 @@ For more information about rules for Azure AD roles and examples of updating rul
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Azure AD roles
+### For PIM for Azure AD roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-### For PIM for groups membership and ownership
+### For PIM for groups
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|

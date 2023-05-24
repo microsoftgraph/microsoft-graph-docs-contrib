@@ -17,7 +17,7 @@ Get the details of a role management policy assignment including the policy and 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Azure AD roles
+### For PIM for Azure AD roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
-### For PIM for groups membership and ownership
+### For PIM for groups
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
