@@ -24,7 +24,7 @@ Microsoft Graph has all the capabilities that have been available in Azure AD Gr
 
 Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 
-- [Microsoft 365 group management](/graph/office365-groups-concept-overview).
+- [Microsoft 365 group management](/graph/microsoft365-groups-concept-overview).
 - [External user invitations](/graph/api/resources/invitation).
 - The ability to [restore users, Microsoft 365 groups, applications, and service principals](/graph/api/resources/directory) after they've been deleted.
 - [Webhook notifications on users and groups](/graph/webhooks).
