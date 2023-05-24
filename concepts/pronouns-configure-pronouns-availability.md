@@ -60,10 +60,10 @@ To get pronoun settings configuration for an organization, use the following com
 By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
 
 > [!NOTE]
-> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All"
+>    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
 Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
@@ -89,7 +89,7 @@ Use the [get](/graph/api/peoplesettings-list-pronouns?view=graph-rest-beta&prese
 The following example gets the current display settings, which have pronouns disabled. 
 
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+GET https://graph.microsoft.com/beta/admin/people/pronouns
 ```
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
@@ -108,7 +108,7 @@ Content-Type: application/json
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable pronouns in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+PATCH https://graph.microsoft.com/beta/admin/people/pronouns
 Content-Type: application/json
 
 {
@@ -132,7 +132,7 @@ Content-Type: application/json
 Use the update operation to make pronouns unavailable in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+PATCH https://graph.microsoft.com/beta/admin/people/pronouns
 Content-Type: application/json
 
 {
