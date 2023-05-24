@@ -308,6 +308,9 @@ items:
         href: /graph/toolkit/customize-components/localization?context=graph/api/beta
       - name: Right-to-left support
         href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
+  - name: Configure Connected Services
+    displayName: Configure Connected Services in Visual Studio
+    href: office-365-connected-services.md
   - name: Resources
     items:
     - name: Best practices
