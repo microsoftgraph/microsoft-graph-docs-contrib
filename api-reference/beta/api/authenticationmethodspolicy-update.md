@@ -85,7 +85,7 @@ Content-Type: application/json
   "reportSuspiciousActivitySettings": {
       "state": "enabled",
       "includeTarget": {
-          "targetType": "group"
+          "targetType": "group",
           "id": "all_users",
       },
       "voiceReportingCode": 0,
