@@ -49,7 +49,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
-|invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|The users or groups who are sponsors of the invited user. |
+|invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|The users or groups who are sponsors of the invited user. Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date. |
 
 ## JSON representation
 Here is a JSON representation of the resource

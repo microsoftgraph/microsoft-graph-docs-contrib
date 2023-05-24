@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 
-It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are to be the approvers. When creating an access package assignment policy approval stage with targetUserSponsors, also include another approver, such as a single user or group member, in case the requesting user does not have sponsors.
+It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are the approvers. When creating an access package assignment policy approval stage with **targetUserSponsors**, also include another approver, such as a single user or group member, in case the requesting user does not have sponsors.
 
 
 Inherits from [userSet](../resources/userset.md).
@@ -23,7 +23,7 @@ Inherits from [userSet](../resources/userset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isBackup|Boolean|For sponsors in an approval stage, indicates whether the sponsors are backup fallback approvers.Inherited from [userSet](../resources/userset.md).|
+|isBackup|Boolean|For sponsors in an approval stage, indicates whether the sponsors are backup fallback approvers. Inherited from [userSet](../resources/userset.md).|
 
 ## Relationships
 

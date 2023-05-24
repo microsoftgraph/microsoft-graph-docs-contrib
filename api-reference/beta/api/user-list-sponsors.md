@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                    |
 | :------------------------------------- | :----------------------------------------------------------------------------- |
-| Delegated (work or school account)     | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (work or school account)     | User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                 |
-| Application                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | User.Read.All, User.ReadWrite.All|
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -37,11 +37,7 @@ GET /users/{id | userPrincipalName}/sponsors
 
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
-
->**Note:**
-
-> + You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
 
 ## Request headers
 
