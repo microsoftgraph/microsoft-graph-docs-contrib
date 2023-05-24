@@ -12170,7 +12170,7 @@ items:
             - name: Pronouns settings
               href: resources/pronounssettings.md
             - name: List
-              href: api/organizationsettings-list-pronounssettings.md
+              href: api/peoplesettings-list-pronouns.md
             - name: Update
               href: api/pronounssettings-update.md
           - name: Profile card customization (preview)
@@ -15034,7 +15034,7 @@ items:
         - name: Pronouns settings
           href: resources/pronounssettings.md
         - name: List
-          href: api/organizationsettings-list-pronounssettings.md
+          href: api/peoplesettings-list-pronouns.md
         - name: Update
           href: api/pronounssettings-update.md
     - name: Personal contacts
