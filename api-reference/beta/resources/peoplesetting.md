@@ -21,13 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List peopleSettings](../api/intune-admin-list-people.md)|[peopleSetting](../resources/peoplesetting.md) collection|Get a list of the [peopleSetting](../resources/peoplesetting.md) objects and their properties.|
-|[Create peopleSetting](../api/intune-admin-post-people.md)|[peopleSetting](../resources/peoplesetting.md)|Create a new [peopleSetting](../resources/peoplesetting.md) object.|
-|[Get peopleSetting](../api/peoplesetting-get.md)|[peopleSetting](../resources/peoplesetting.md)|Read the properties and relationships of a [peopleSetting](../resources/peoplesetting.md) object.|
-|[Update peopleSetting](../api/peoplesetting-update.md)|[peopleSetting](../resources/peoplesetting.md)|Update the properties of a [peopleSetting](../resources/peoplesetting.md) object.|
-|[Delete peopleSetting](../api/intune-admin-delete-people.md)|None|Delete a [peopleSetting](../resources/peoplesetting.md) object.|
-|[List pronounsSettings](../api/organizationsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the pronounsSettings resources from the pronouns navigation property.|
-|[Create pronounsSettings](../api/peoplesetting-post-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md)|Create a new pronounsSettings object.|
+|[List pronounsSettings](../api/peoplesettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the pronounsSettings resources from the pronouns navigation property.|
 
 ## Properties
 |Property|Type|Description|
