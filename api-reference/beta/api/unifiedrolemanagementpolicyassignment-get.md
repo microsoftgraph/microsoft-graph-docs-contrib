@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To retrieve the details of a policy assignment for either Azure AD roles or PIM for Group membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -60,16 +61,20 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
+### Example 1: Retrieve the details of a policy assignment for Azure AD roles
+
 ### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrolemanagementpolicyassignment"
+  "name": "get_unifiedrolemanagementpolicyassignment_directory"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/d6e4112f-112f-d6e4-2f11-e4d62f11e4d6
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a_29232cdf-9323-42fd-ade2-1d097af3e4de
 ```
 
 # [C#](#tab/csharp)
@@ -99,6 +104,9 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/d6
 ---
 
 ### Response
+
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -111,13 +119,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-    "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-    "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-    "scopeType": "subscription",
-    "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments/$entity",
+    "id": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a_29232cdf-9323-42fd-ade2-1d097af3e4de",
+    "policyId": "DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a",
+    "scopeId": "/",
+    "scopeType": "DirectoryRole",
+    "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
 }
 ```
 
+### Example 2: Retrieve the details of a policy assignment for PIM for Group membership and ownership
+
+### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedrolemanagementpolicyassignment_azureADGroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369_member
+```
+
+### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft-ppe.com/testppebetapagppe/$metadata#policies/roleManagementPolicyAssignments/$entity",
+    "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369_member",
+    "policyId": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
+    "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+    "scopeType": "Group",
+    "roleDefinitionId": "member"
+}
+```

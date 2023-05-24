@@ -35,12 +35,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To retrieve policies and their details for Azure AD roles scoped to the tenant:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
+GET /policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
+```
+
+To retrieve policies and their details for PIM for Group membership and ownership scoped to a group:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
 ## Optional query parameters
@@ -60,6 +70,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1: Retrieve policies and their details for Azure AD roles
+
 ### Request
 
 The following example retrieves policies that are scoped to the tenant and apply to directory roles.
@@ -67,7 +79,7 @@ The following example retrieves policies that are scoped to the tenant and apply
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrolemanagementpolicy"
+  "name": "list_unifiedrolemanagementpolicy_directory"
 }
 -->
 ``` http
@@ -101,6 +113,9 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=sco
 ---
 
 ### Response
+
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -145,3 +160,65 @@ Content-Type: application/json
 }
 ```
 
+### Example 1: Retrieve policies and their details for PIM for Group membership and ownership
+
+### Request
+
+The following example retrieves policies that are scoped to the group and apply to PIM for Group membership and ownership.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_unifiedrolemanagementpolicy_azureADGroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'
+```
+
+### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
+            "displayName": "Group",
+            "description": "Group",
+            "isOrganizationDefault": false,
+            "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+            "scopeType": "Group",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_8ea17f58-323f-4b16-a1a1-2a7b8d974316",
+            "displayName": "Group",
+            "description": "Group",
+            "isOrganizationDefault": false,
+            "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+            "scopeType": "Group",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
+}
+```

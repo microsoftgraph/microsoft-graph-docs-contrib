@@ -38,6 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To Retrieve a rule defined for a policy for either Azure AD roles or PIM for Group membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -63,12 +64,16 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
+### Example 1: Retrieve a rule defined for a policy for Azure AD roles
+
 ### Request
+
+The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedrolemanagementpolicyrule",
+  "name": "get_unifiedrolemanagementpolicyrule_directory",
   "sampleKeys": ["DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448", "Expiration_Admin_Eligibility"]
 }
 -->
@@ -103,6 +108,9 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 ---
 
 ### Response
+
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -132,3 +140,51 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Retrieve a rule defined for a policy for PIM for Group membership and ownership
+
+### Request
+
+The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedrolemanagementpolicyrule_azureADGroup",
+  "sampleKeys": ["Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369", "Expiration_Admin_Eligibility"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_Admin_Eligibility
+```
+
+### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_Admin_Eligibility",
+    "isExpirationRequired": true,
+    "maximumDuration": "P365D",
+    "target": {
+        "caller": "Admin",
+        "operations": [
+            "All"
+        ],
+        "level": "Eligibility",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```
