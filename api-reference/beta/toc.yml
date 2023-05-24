@@ -16120,13 +16120,13 @@ items:
             href: api/security-retentionlabel-update.md
           - name: Delete
             href: api/security-retentionlabel-delete.md
+          - name: List file plan descriptors
+            href: api/security-labelsroot-list-retentionlabel.md
+          - name: Create file plan descriptors
+            href: api/security-labelsroot-post-retentionlabel.md
           - name: File plan descriptor
             href: resources/security-fileplandescriptor.md
             items:
-             - name: List
-               href: api/security-labelsroot-list-retentionlabel.md
-             - name: Create
-               href: api/security-labelsroot-post-retentionlabel.md
            - name: File plan reference
              href: resources/security-fileplanreferencetemplate.md
              items:
