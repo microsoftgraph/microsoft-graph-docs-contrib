@@ -10,21 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ServicePrincipalsRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$queryParameters = new ServicePrincipalsRequestBuilderGetQueryParameters();
+$queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "owners/$count eq 0 or owners/$count eq 1";
 $queryParameters->count = true;
 $queryParameters->select = ["id","displayName"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
+$result = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
 
 
 ```

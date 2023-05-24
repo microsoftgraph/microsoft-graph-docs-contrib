@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ContactsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ContactsRequestBuilderGetQueryParameters();
+$queryParameters = ContactsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->me()->contacts()->get($requestConfiguration);
+$result = $graphServiceClient->me()->contacts()->get($requestConfiguration);
 
 
 ```

@@ -32,7 +32,7 @@ $requestBody->setOperatingSystemVersion('1');
 
 
 
-$requestResult = $graphServiceClient->devices()->post($requestBody);
+$result = $graphServiceClient->devices()->post($requestBody);
 
 
 ```

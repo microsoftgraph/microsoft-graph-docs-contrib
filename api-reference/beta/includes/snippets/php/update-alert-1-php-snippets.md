@@ -31,7 +31,7 @@ $vendorInformation->setVendor('String');
 $requestBody->setVendorInformation($vendorInformation);
 
 
-$requestResult = $graphServiceClient->security()->alertsById('alert-id')->patch($requestBody);
+$result = $graphServiceClient->security()->alerts()->byAlertId('alert-id')->patch($requestBody);
 
 
 ```

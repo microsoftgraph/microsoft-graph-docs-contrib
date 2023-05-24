@@ -14,7 +14,7 @@ $requestBody->setComment('Updating the latest guidelines');
 
 
 
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->checkin()->post($requestBody);
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byItemId('driveItem-id')->checkin()->post($requestBody);
 
 
 ```

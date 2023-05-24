@@ -20,7 +20,7 @@ $requestBody->setAssignedLabels($assignedLabelsArray);
 
 
 
-$requestResult = $graphServiceClient->groupsById('group-id')->patch($requestBody);
+$result = $graphServiceClient->groups()->byGroupId('group-id')->patch($requestBody);
 
 
 ```

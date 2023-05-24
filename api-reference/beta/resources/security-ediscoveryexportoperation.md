@@ -20,7 +20,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md) (deprecated) |String| Return the URL for the export. The **getDownloadUrl** function is deprecated and will stop returning data on April 30th, 2023. Please use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-ediscoverycase-get.md) API instead.|
+|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md) (deprecated) |String| Return the URL for the export. The **getDownloadUrl** function is deprecated and will stop returning data on April 30th, 2023. Please use the new **exportFileMetadata** property returned by the [Get caseOperation](../api/security-caseoperation-get.md) API instead.|
 
 ## Properties
 |Property|Type|Description|

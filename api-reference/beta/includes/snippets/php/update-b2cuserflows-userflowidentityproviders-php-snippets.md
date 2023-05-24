@@ -11,15 +11,15 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new UserFlowIdentityProvider();
 $additionalData = [
-'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/{id}', 
-'@odata.type' => '#microsoft.graph.identityProvider', 
+		'@odata.id' => 'https://graph.microsoft.com/beta/identity/identityProviders/{id}', 
+		'@odata.type' => '#microsoft.graph.identityProvider', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->userFlowIdentityProvidersById('identityProviderBase-id')->patch($requestBody);
+$graphServiceClient->identity()->b2cUserFlows()->byB2cUserFlowId('b2cIdentityUserFlow-id')->userFlowIdentityProviders()->byUserFlowIdentityProviderId('identityProviderBase-id')->patch($requestBody);
 
 
 ```

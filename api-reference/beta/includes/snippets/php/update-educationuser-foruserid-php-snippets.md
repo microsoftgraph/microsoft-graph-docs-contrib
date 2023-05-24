@@ -41,7 +41,7 @@ $requestBody->setRelatedContacts($relatedContactsArray);
 
 
 
-$requestResult = $graphServiceClient->education()->usersById('educationUser-id')->patch($requestBody);
+$result = $graphServiceClient->education()->users()->byUserId('educationUser-id')->patch($requestBody);
 
 
 ```

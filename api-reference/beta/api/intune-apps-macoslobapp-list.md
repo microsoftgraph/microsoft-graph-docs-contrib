@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2219
+Content-Length: 2167
 
 {
   "value": [
@@ -121,7 +121,6 @@ Content-Length: 2219
           "versionNumber": "Version Number value"
         }
       ],
-      "identityVersion": "Identity Version value",
       "md5HashChunkSize": 0,
       "md5Hash": [
         "Md5Hash value"

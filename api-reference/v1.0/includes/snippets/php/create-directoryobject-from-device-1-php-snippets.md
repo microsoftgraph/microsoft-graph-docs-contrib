@@ -14,7 +14,7 @@ $requestBody->set@odataid('https://graph.microsoft.com/v1.0/directoryObjects/{id
 
 
 
-$graphServiceClient->devicesById('device-id')->registeredOwners()->ref()->post($requestBody);
+$graphServiceClient->devices()->byDeviceId('device-id')->registeredOwners()->ref()->post($requestBody);
 
 
 ```
