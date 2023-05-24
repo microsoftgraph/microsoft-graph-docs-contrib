@@ -58,7 +58,7 @@ The following is an example of a request that adds city as an attribute for attr
 
 <!-- {
   "blockType": "request",
-  "name": "create_onAttributeCollectionExternalUsersSelfServiceSignUp"
+  "name": "onAttributeCollectionExternalUsersSelfServiceSignUp_post_attributes"
 }
 -->
 
