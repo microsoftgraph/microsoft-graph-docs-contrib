@@ -20,7 +20,7 @@ Defines the report suspicious activity settings for the tenant, whether it is en
 |:---|:---|:---|
 |includeTarget|[includeTarget](../resources/includetarget.md)|Group IDs in scope for report suspicious activity.|
 |state|advancedConfigState|Specifies the state of the reportSuspiciousActivitySettings object. The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
-|voiceReportingCode|Int32|Specifics the number the user will enter on their phone to report the MFA prompt as suspicious.|
+|voiceReportingCode|Int32|Specifies the number the user will enter on their phone to report the MFA prompt as suspicious.|
 
 ## Relationships
 None.
