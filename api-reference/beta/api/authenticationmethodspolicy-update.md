@@ -47,8 +47,8 @@ In the request body, supply a JSON representation of the [registrationEnforcemen
 |Property|Type|Description|
 |:---|:---|:---|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to prompt users to set up targeted authentication methods.|
-|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 |reportSuspiciousActivitySettings|[reportSuspiciousActivitySettings](../resources/reportsuspiciousactivitysettings.md)|Enable users to report voice or phone app multi-factor authentication notifications as suspicious.|
+|systemCredentialPreferences|[systemCredentialPreferences](../resources/systemcredentialpreferences.md)|Prompt users with their most-preferred credential for multifactor authentication.|
 
 ## Response
 If successful, this method returns a `200 OK` response code.
