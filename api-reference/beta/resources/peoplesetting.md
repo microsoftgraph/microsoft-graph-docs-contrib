@@ -1,9 +1,9 @@
 ---
 title: "peopleSetting resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a setting to control the people related admin settings in the tenant"
+author: "aymen-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "people"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains settings that are applicable to the [organization](organization.md) or that should be applied to [user](user.md) objects within an organization.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -26,12 +26,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+| [List pronounsSettings](../api/peoplesettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) resource|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|pronouns|[pronounsSettings](../resources/pronounssettings.md)|**TODO: Add Description**|
+|pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -49,4 +49,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
