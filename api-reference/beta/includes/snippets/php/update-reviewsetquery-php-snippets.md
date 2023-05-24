@@ -14,7 +14,7 @@ $requestBody->setDisplayName('My Query 1 - Renamed');
 
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->reviewSetsById('reviewSet-id')->queriesById('reviewSetQuery-id')->patch($requestBody);
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->reviewSets()->byReviewSetId('reviewSet-id')->queries()->byQuerieId('reviewSetQuery-id')->patch($requestBody);
 
 
 ```

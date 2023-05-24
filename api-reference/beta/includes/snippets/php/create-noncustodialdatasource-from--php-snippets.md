@@ -11,14 +11,14 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new NoncustodialSource();
 $additionalData = [
-'@odata.id' => 'https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246', 
+		'@odata.id' => 'https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246', 
 ];
 $requestBody->setAdditionalData($additionalData);
 
 
 
 
-$graphServiceClient->compliance()->ediscovery()->casesById('case-id')->sourceCollectionsById('sourceCollection-id')->noncustodialSourcesById('noncustodialDataSource-id')->post($requestBody);
+$graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->sourceCollections()->bySourceCollectionId('sourceCollection-id')->noncustodialSources()->byNoncustodialSourceId('noncustodialDataSource-id')->post($requestBody);
 
 
 ```

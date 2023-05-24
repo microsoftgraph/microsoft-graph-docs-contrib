@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get();
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get();
 
 
 ```

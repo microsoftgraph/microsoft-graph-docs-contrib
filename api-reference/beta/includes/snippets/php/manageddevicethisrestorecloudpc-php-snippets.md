@@ -14,7 +14,7 @@ $requestBody->setCloudPcSnapshotId('A00009UV000_93aff428-61f2-467f-a879-1102af6f
 
 
 
-$graphServiceClient->deviceManagement()->managedDevicesById('managedDevice-id')->restoreCloudPc()->post($requestBody);
+$graphServiceClient->deviceManagement()->managedDevices()->byManagedDeviceId('managedDevice-id')->restoreCloudPc()->post($requestBody);
 
 
 ```

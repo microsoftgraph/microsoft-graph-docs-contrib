@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new PlannerBucketRequestBuilderDeleteRequestConfiguration();
-
 $headers = [
-	'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
-];
-
+		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
+	];
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->planner()->bucketsById('plannerBucket-id')->delete($requestConfiguration);
+$graphServiceClient->planner()->buckets()->byBucketId('plannerBucket-id')->delete($requestConfiguration);
 
 
 ```

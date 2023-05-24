@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ configuration := &graphconfig.ItemPendingAccessReviewInstanceItemDecisionsReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstancesById("accessReviewInstance-id").Decisions().Get(context.Background(), configuration)
+result, err := graphClient.Me().PendingAccessReviewInstances().ByPendingAccessReviewInstanceId("accessReviewInstance-id").Decisions().Get(context.Background(), configuration)
 
 
 ```

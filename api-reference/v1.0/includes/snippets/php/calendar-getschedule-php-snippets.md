@@ -30,15 +30,13 @@ $requestBody->setAvailabilityViewInterval(60);
 
 
 $requestConfiguration = new GetScheduleRequestBuilderPostRequestConfiguration();
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	'Prefer' => 'outlook.timezone="Pacific Standard Time"',
 ];
-
 $requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->me()->calendar()->getSchedule()->post($requestBody, $requestConfiguration);
+$result = $graphServiceClient->me()->calendar()->getSchedule()->post($requestBody, $requestConfiguration);
 
 
 ```

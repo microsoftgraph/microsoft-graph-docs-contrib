@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -37,7 +37,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.SharesById("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Shares().ByShareId("sharedDriveItem-id").Permission().Grant().Post(context.Background(), requestBody, nil)
 
 
 ```

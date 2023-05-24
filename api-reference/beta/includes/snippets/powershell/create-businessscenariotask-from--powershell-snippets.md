@@ -8,20 +8,20 @@ Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.businessScenarioTask"
-	Title = "Customer order #12010"
-	PercentComplete = 0
-	Priority = 5
-	Target = @{
+	title = "Customer order #12010"
+	percentComplete = 0
+	priority = 5
+	target = @{
 		"@odata.type" = "microsoft.graph.businessScenarioGroupTarget"
-		TaskTargetKind = "group"
-		GroupId = "7a339254-4b2b-4410-b295-c890a16776ee"
+		taskTargetKind = "group"
+		groupId = "7a339254-4b2b-4410-b295-c890a16776ee"
 	}
-	BusinessScenarioProperties = @{
-		ExternalObjectId = "Order#12010"
-		ExternalContextId = "Warehouse-CA-36"
-		ExternalObjectVersion = "000001"
-		WebUrl = "https://ordertracking.contoso.com/view?id=12010"
-		ExternalBucketId = "deliveryBucket"
+	businessScenarioProperties = @{
+		externalObjectId = "Order#12010"
+		externalContextId = "Warehouse-CA-36"
+		externalObjectVersion = "000001"
+		webUrl = "https://ordertracking.contoso.com/view?id=12010"
+		externalBucketId = "deliveryBucket"
 	}
 }
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -34,7 +34,7 @@ requestBody.SetErrors(errors)
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
+result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

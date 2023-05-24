@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new ApplicationTemplatesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ApplicationTemplatesRequestBuilderGetQueryParameters();
+$queryParameters = ApplicationTemplatesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "displayName eq 'AWS IAM Identity Center '";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->applicationTemplates()->get($requestConfiguration);
+$result = $graphServiceClient->applicationTemplates()->get($requestConfiguration);
 
 
 ```

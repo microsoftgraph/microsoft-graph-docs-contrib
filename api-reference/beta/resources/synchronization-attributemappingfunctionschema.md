@@ -25,7 +25,7 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Operator name. |
+|id                        |String                    |Key. Read-only. |
 |parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
 
 ## JSON representation
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "name": "String (identifier)",
+  "id": "String (identifier)",
   "parameters": [{"@odata.type": "microsoft.graph.attributeMappingParameterSchema"}]
 }
 

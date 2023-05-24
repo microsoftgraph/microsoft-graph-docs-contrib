@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -23,7 +23,7 @@ ownerAppIds := []string {
 }
 requestBody.SetOwnerAppIds(ownerAppIds)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Patch(context.Background(), requestBody, nil)
+result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

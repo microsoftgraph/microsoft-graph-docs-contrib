@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	DisplayName = "TestChannelModeration"
-	Description = "Test channel moderation."
-	MembershipType = "standard"
-	ModerationSettings = @{
-		UserNewMessageRestriction = "everyoneExceptGuests"
-		ReplyRestriction = "everyone"
-		AllowNewMessageFromBots = $true
-		AllowNewMessageFromConnectors = $true
+	displayName = "TestChannelModeration"
+	description = "Test channel moderation."
+	membershipType = "standard"
+	moderationSettings = @{
+		userNewMessageRestriction = "everyoneExceptGuests"
+		replyRestriction = "everyone"
+		allowNewMessageFromBots = $true
+		allowNewMessageFromConnectors = $true
 	}
 }
 

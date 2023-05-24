@@ -3,6 +3,206 @@
     {
       "ChangeList": [
         {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesCurrentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesCurrentExportData](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesCurrentExportData?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesCurrentExportData"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "anchorAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the `anchorAttribute` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationId",
+          "ChangeType": "Addition",
+          "Description": "Added the `applicationId` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "currentExportData",
+          "ChangeType": "Addition",
+          "Description": "Added the `currentExportData` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "synchronizationClientVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the `synchronizationClientVersion` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Property",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `writebackConfiguration` property to the [onPremisesDirectorySynchronizationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationConfiguration"
+        },
+        {
+          "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesWritebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesWritebackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesWritebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesWritebackConfiguration"
+        }
+      ],
+      "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-12T07:03:29.404951Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserConsentForRiskyApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserConsentForRiskyApps** property to the [authorizationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0) resource. Configure this property to disable protections that prevent [user consent for risky apps](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "9db01b0d-0295-4f32-ab7a-839aa9606734",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {          
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **exchange** relationship to the [roleManagement](https://learn.microsoft.com/en-us/graph/api/resources/roleManagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplication?view=graph-rest-beta) resource type.",
+          "Target": "unifiedRbacApplication"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.Read.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.Read.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-get?view=graph-rest-beta), [POST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) operations of the [unifiedRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RoleManagement.ReadWrite.Exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the `RoleManagement.ReadWrite.Exchange` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-get?view=graph-rest-beta) and [LIST](https://learn.microsoft.com/en-us/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "4e3dfeab-32cf-4087-9c82-2354d6f9ae0e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-14T07:49:08.3091941Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Property",
+          "ChangedApiName": "automaticUserConsentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identitySynchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **identitySynchronization** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inboundOutboundPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [inboundOutboundPolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/inboundOutboundPolicyConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "inboundOutboundPolicyConfiguration"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantIdentitySyncPolicyPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        },
+        {
+          "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantUserSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantUserSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantusersyncinbound?view=graph-rest-1.0) resource type.",
+          "Target": "crossTenantUserSyncInbound"
+        }
+      ],
+      "Id": "70fbd967-1f31-4c82-8532-8db6ec6e9007",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-11T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "00c006a9-0eaf-423f-9ed1-ge86808382ab",
           "ApiChange": "Permission",
           "ChangedApiName": "CrossTenantUserProfileSharing.ReadWrite.All",
@@ -326,7 +526,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automaticUserConsentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **automaticUserConsentSettings** property to the [crossTenantAccessPolicyConfigurationParnter](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -6618,6 +6818,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToCreateTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToCreateTenants** property to the [defaultUserRolePermissions](https://learn.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-1.0) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "9765b92a-f3fb-41a2-930b-b4cc506ada62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-17T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0b375a85-58ad-44e6-971c-9151ec6bcdcc",
           "ApiChange": "Resource",
           "ChangedApiName": "administrative units API",
@@ -7434,6 +7652,24 @@
     {
       "ChangeList": [
         {
+          "Id": "db8cde72-c86c-4a67-9c0f-65663c90d0df",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMultiValued",
+          "ChangeType": "Addition",
+          "Description": "Added the `isMultiValued` property to the [extensionProperty](https://learn.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-beta) resource. You can now store a collection of values in a directory extension property.",
+          "Target": "extensionProperty"
+        }
+      ],
+      "Id": "db8cde72-c86c-4a67-9c0f-65663c90d0df",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-22T10:29:08.402042Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "85a8e4c0-76a9-441f-a2d6-c02df08f0ed0",
           "ApiChange": "Property",
           "ChangedApiName": "externalUserState,externalUserStateChangeDateTime",
@@ -8030,6 +8266,24 @@
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-1.0) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "5dbe4117-149f-46ce-b26a-5f2c1a581389",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-04-21T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -8901,6 +9155,48 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "df105e58-8a6f-47f3-8307-c23aa8b6761a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-04T17:55:51.6093472Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -9158,6 +9454,24 @@
       "CreatedDateTime": "2019-01-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4dd01e64-4410-46e2-b894-413759981eed",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToCreateTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToCreateTenants** property to the [defaultUserRolePermissions](https://learn.microsoft.com/en-us/graph/api/resources/defaultUserRolePermissions?view=graph-rest-beta) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "4dd01e64-4410-46e2-b894-413759981eed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-05T19:59:11.0505166Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -9556,7 +9870,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedapproval",
           "ChangeType": "Change",
-          "Description": "Change the [privilegedapproval](https://learn.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) entity.",
+          "Description": "Change the **privilegedapproval** entity.",
           "Target": "privilegedapproval"
         },
         {
@@ -9564,7 +9878,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedroleassignmentrequest,List,Create,Cancel,My",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedroleassignmentrequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) entity, and following methods and actions:\u003Cbr\u003E [List](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) \u003Cbr\u003E [My](https://learn.microsoft.com/en-us/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta)",
+          "Description": "Added the **privilegedroleassignmentrequest** entity, and following methods and actions: List, Create, Cancel, My.",
           "Target": "privilegedroleassignmentrequest,List,Create,Cancel,My"
         },
         {
@@ -9572,7 +9886,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Update,privilegedRoleSettings",
           "ChangeType": "Addition",
-          "Description": "Added [Update](https://learn.microsoft.com/en-us/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](https://learn.microsoft.com/en-us/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)",
+          "Description": "Added Update for **privilegedRoleSettings**.",
           "Target": "Update,privilegedRoleSettings"
         }
       ],
@@ -13058,6 +13372,148 @@
       "CreatedDateTime": "2023-01-30T17:56:44.238139Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Property",
+          "ChangedApiName": "systemCredentialPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **systemCredentialPreferences** property to the [authenticationMethodsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsPolicy"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInPreferences** property to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "systemCredentialPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the [systemCredentialPreferences](https://learn.microsoft.com/en-us/graph/api/resources/systemCredentialPreferences?view=graph-rest-beta) resource type.",
+          "Target": "systemCredentialPreferences"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInPreferences",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource type.",
+          "Target": "signInPreferences"
+        },
+        {
+          "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeTarget](https://learn.microsoft.com/en-us/graph/api/resources/includeTarget?view=graph-rest-beta) resource type.",
+          "Target": "includeTarget"
+        }
+      ],
+      "Id": "79aa5bce-576b-4533-8085-33bf06bcfcfb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-11T17:56:44.238139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningError",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceProvisioningError** resource type.",
+          "Target": "serviceProvisioningError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningXmlError",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceProvisioningXmlError** resource type.",
+          "Target": "serviceProvisioningXmlError"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the `serviceProvisioningErrors` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group-retryserviceprovisioning?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-beta) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user-retryserviceprovisioning?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "daf6e0cb-5131-4bb5-ae42-0975e3258159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-11T06:03:02.8820444Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLicenseReconciliationNeeded",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLicenseReconciliationNeeded** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "4b2c8f86-11b9-4f0e-9afd-bb43d46db4c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-15T08:54:08.6528325Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    }  
   ]
 }
