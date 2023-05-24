@@ -19,6 +19,8 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval objec
 
 In [Role management](../resources/rolemanagement.md), the decisions to approve or deny role assignments.
 
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the decisions to approve or deny assignment schedule.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -29,14 +31,14 @@ In [Role management](../resources/rolemanagement.md), the decisions to approve o
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object.  In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md).|
+|id|String|The identifier of the approval object.  In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md), In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md)|
 |steps|[approvalStep](../resources/approvalstep.md) collection|Used to represent the decision associated with a single step in the approval process configured in [approvalStage](../resources/approvalstage.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |stages|[approvalStage](../resources/approvalstage.md) collection|Used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
-
+|steps|[approvalStep](../resources/approvalstep.md) collection|Used for the **approvalSteps** property of approval|
 
 ## JSON representation
 The following is a JSON representation of the resource.
