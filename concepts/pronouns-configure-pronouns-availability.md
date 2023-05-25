@@ -31,9 +31,9 @@ Global administrators can decide whether to display pronouns that users set up i
 >
 > When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process might take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profile cards.
 
-## Configure pronoun settings using PowerShell
+## Configure pronouns settings using PowerShell
 
-You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure pronoun settings in your organization.
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure pronouns settings in your organization.
 
 ### Prerequisites
 
