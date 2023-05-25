@@ -192,7 +192,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime_3",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
@@ -241,7 +241,7 @@ The following is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime_3"
 }
 -->
 ```http
@@ -325,7 +325,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_5",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
@@ -349,7 +349,7 @@ The following is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_6"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_5"
 }
 -->
 ```http
@@ -368,7 +368,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime_6",
   "sampleKeys": ["19:cf66807577b149cca1b7af0c32eec122@thread.v2"]
 } -->
 ```msgraph-interactive
