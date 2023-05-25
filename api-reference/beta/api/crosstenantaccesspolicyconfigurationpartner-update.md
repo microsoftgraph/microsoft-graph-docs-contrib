@@ -55,7 +55,6 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure Active Directory (Azure AD) organizations. |
-| tenantRestrictions  |[crossTenantAccessPolicyTenantRestrictions](../resources/crosstenantaccesspolicytenantrestrictions.md) | Defines the partner-specific tenant restrictions configuration for your organization users accessing the partner organization using pertner supplied idenities on your network or devices. |
 
 ## Response
 
@@ -71,6 +70,7 @@ The following example configures the partner-specific policy by setting the inbo
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicyconfigurationpartner"
@@ -90,54 +90,31 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Example 2: Configure tenant restrictions settings
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicyconfigurationpartner-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Request
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<!-- {
-  "blockType": "request",
-  "name": "update_crosstenantaccesspolicyconfigurationpartner_tenantrestriction"
-}
--->
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/90e29127-71ad-49c7-9ce8-db3f41ea06f1
-Content-Type: application/json
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-{
-"tenantRestrictions": {
-       "usersAndGroups": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "AllUsers",
-                    "targetType": "user"
-                }
-            ]
-        },
-        "applications": {
-            "accessType": "allowed",
-            "targets": [
-                {
-                    "target": "Office365",
-                    "targetType": "application"
-                }
-            ]
-        }
-    }
-}
-```
+---
 
 #### Response
 
@@ -148,11 +125,12 @@ The following is an example of the response.
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Configure automaticUserConsent settings
+### Example 2: Configure automaticUserConsent settings
 
 The following example configures the partner-specific policy by consenting for B2B collaboration on behalf of your users and accepting admin consent for the users of the partner.
 
