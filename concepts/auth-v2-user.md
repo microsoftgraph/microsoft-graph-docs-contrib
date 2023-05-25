@@ -359,7 +359,7 @@ This article is part of the following series of articles on authentication and a
 Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries, sign-in users, and call Microsoft Graph.
 
 > [!div class="nextstepaction"]
-> [Microsoft identity platform code samples >](/graph/tutorials)
+> [Microsoft Graph tutorials >](/graph/tutorials)
 
 <!--
 > [!div class="nextstepaction"]
