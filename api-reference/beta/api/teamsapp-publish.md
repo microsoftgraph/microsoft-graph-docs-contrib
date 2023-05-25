@@ -204,7 +204,6 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
-**HTTP**
 
 <!-- {
   "blockType": "request",
@@ -221,8 +220,6 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
   "publishingState":"published"
 }
 ```
-
----
 
 #### Response
 
