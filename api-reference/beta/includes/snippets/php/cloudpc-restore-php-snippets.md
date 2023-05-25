@@ -14,7 +14,7 @@ $requestBody->setCloudPcSnapshotId('A00009UV000_93aff428-61f2-467f-a879-1102af6f
 
 
 
-$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCsById('cloudPC-id')->restore()->post($requestBody);
+$graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->byCloudPCId('cloudPC-id')->restore()->post($requestBody);
 
 
 ```

@@ -15,7 +15,7 @@ $queryParameters->top = 2;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->usersById('user-id')->chats()->getAllMessages()->get($requestConfiguration);
+$result = $graphServiceClient->users()->byUserId('user-id')->chats()->getAllMessages()->get($requestConfiguration);
 
 
 ```

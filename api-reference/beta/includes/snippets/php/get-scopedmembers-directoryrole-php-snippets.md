@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$result = $graphServiceClient->directoryRolesById('directoryRole-id')->scopedMembers()->get();
+$result = $graphServiceClient->directoryRoles()->byDirectoryRoleId('directoryRole-id')->scopedMembers()->get();
 
 
 ```

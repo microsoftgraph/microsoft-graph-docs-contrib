@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$graphServiceClient->me()->outlook()->masterCategoriesById('outlookCategory-id')->delete();
+$graphServiceClient->me()->outlook()->masterCategories()->byMasterCategorieId('outlookCategory-id')->delete();
 
 
 ```

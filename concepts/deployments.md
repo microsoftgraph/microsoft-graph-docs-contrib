@@ -66,8 +66,8 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 |-------------------------------------|-----------------------------------|--------------------------------------------|
 | Access reviews                      | ✔                                | ✔                                          |
 | Applications and service principals | ✔                                | ✔                                          |
-| Change notifications (webhooks)     | ✔                                | ✔                                          |
-| Delta query                         | ✔                                | ✔                                          |
+| Change notifications (subscriptions)| ✔                                | ✔                                          |
+| Change tracking (delta query)       | ✔                                | ✔                                          |
 | Directory extensions                | ✔                                | ✔                                          |
 | Excel                               | ✔                                | ➖                                         |
 | Groups                              | ✔                                | ✔                                          |

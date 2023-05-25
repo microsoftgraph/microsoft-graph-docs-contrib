@@ -26,7 +26,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$graphServiceClient->teamsById('team-id')->schedule()->timeOffReasonsById('timeOffReason-id')->put($requestBody, $requestConfiguration);
+$graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeOffReasons()->byTimeOffReasonId('timeOffReason-id')->put($requestBody, $requestConfiguration);
 
 
 ```

@@ -106,7 +106,7 @@ items:
             href: /graph/api/resources/groups-overview?context=graph/context
             displayName: groups
           - name: Microsoft 365 groups
-            href: office365-groups-concept-overview.md
+            href: microsoft365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
           - name: Microsoft 365 group settings
@@ -1086,6 +1086,9 @@ items:
                 href: toolkit/customize-components/localization.md
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
+      - name: Configure Connected Services
+        displayName: Configure Connected Services in Visual Studio
+        href: office-365-connected-services.md
       - name: Resources
         expanded: true
         items:
