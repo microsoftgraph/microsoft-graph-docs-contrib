@@ -7,14 +7,14 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 04/06/2023
+ms.date: 05/25/2023
 ---
 
 # Get access without a user
 
 To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios), also called *app-only access*.
 
-This article details the raw HTTP requests involved for an app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). A [Microsoft-built and supported authentication library](#use-the-microsoft-authentication-library-msal) handles the authorization and token requests and helps you to get access tokens and call Microsoft Graph.
+This article details the raw HTTP requests involved for an app to get access on behalf of a user using a popular flow called the [OAuth 2.0 authorization code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow#). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that handles many of these details for you and helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ The following screenshot shows the **Select Permissions** dialog box for Microso
 
 > [!IMPORTANT]
 > 
-> Configure the least privileged set of permissions required by the app to improve its security posture. For more information, see [Best practices for using Microsoft Graph permissions](./permissions-overview.md#best-practices-for-using-microsoft-graph-permissions).
+> Always configure the least privileged set of permissions required by the app. For more information, see [Best practices for using Microsoft Graph permissions](./permissions-overview.md#best-practices-for-using-microsoft-graph-permissions).
 
 ## 3. Request administrator consent
 
@@ -71,7 +71,7 @@ Administrators can grant the permissions your app needs at the [Azure portal](ht
 
 > [!IMPORTANT]
 > 
-> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal will not be reflected until the tenant's administrator reconsents to the app.
+> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal will not be reflected until an authorized administrator such as a global administrator reconsents to the app.
 
 ### Request
 
@@ -101,7 +101,7 @@ curl --location --request POST 'https://login.microsoftonline.com/{tenant}/admin
 
 ### Administrator consent experience
 
-With requests to the `/adminconsent` endpoint, Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator is asked to approve all the application permissions that you've requested for your app in the app registration portal.
+With requests to the `/adminconsent` endpoint, Azure AD enforces that only an authorized administrator can sign in to complete the request. The administrator is asked to approve all the application permissions that you've requested for your app in the app registration portal.
 
 The following screenshot is an example of the consent dialog that Azure AD presents to the administrator:
 
@@ -289,4 +289,9 @@ This article is part of the following series of articles on authentication and a
 Next, choose from code samples that are built and maintained by Microsoft to run custom apps that use supported authentication libraries and call Microsoft Graph with their own identities.
 
 > [!div class="nextstepaction"]
+> [Microsoft Graph tutorials >](/graph/tutorials)
+
+<!--
+> [!div class="nextstepaction"]
 > [Microsoft identity platform code samples >](/azure/active-directory/develop/sample-v2-code#service--daemon)
+-->
