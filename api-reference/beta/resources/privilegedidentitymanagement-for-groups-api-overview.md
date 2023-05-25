@@ -114,6 +114,8 @@ The following Microsoft Graph permissions are required to call the PIM for group
 | assignmentScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
 | eligibilitySchedule <br/> eligibilityScheduleInstance | LIST, GET | PrivilegedEligibilitySchedule.Read.AzureADGroup <br/> PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
 | eligibilityScheduleRequest | CREATE, LIST, GET, UPDATE, DELELE | PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup |
+| roleManagementPolicy <br/> roleManagementPolicyAssignment | LIST, GET | RoleManagementPolicy.Read.AzureADGroup <br/> RoleManagementPolicy.ReadWrite.AzureADGroup |
+| roleManagementPolicy | UPDATE | RoleManagementPolicy.ReadWrite.AzureADGroup |
 
 
 In addition, for delegated scenarios, the calling principal needs one of the following roles.
