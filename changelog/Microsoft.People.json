@@ -177,15 +177,15 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "peopleSetting",
 					"ChangeType": "Addition",
-					"Description": "Added the [peopleSetting](https://learn.microsoft.com/en-us/graph/api/resources/peopleSetting?view=graph-rest-beta) resource",
-					"Target": "peopleSetting"
+					"Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource",
+					"Target": "peopleAdminSettings"
 				},
 				{
 					"Id": "3d55601a-1632-4115-9e52-4d8a174040d4",
 					"ApiChange": "Relationship",
 					"ChangedApiName": "pronounsSettings",
 					"ChangeType": "Change",
-					"Description": "Moved the **pronounsSettings** relationship to [peopleSetting](https://learn.microsoft.com/en-us/graph/api/resources/peopleSetting?view=graph-rest-beta) resource.",
+					"Description": "Moved the **pronounsSettings** relationship to [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
 				}
 			],
