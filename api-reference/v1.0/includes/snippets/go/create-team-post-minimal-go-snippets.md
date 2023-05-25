@@ -23,10 +23,9 @@ requestBody.SetDescription(&description)
 
 
 conversationMember := graphmodels.NewConversationMember()
-odataType := "#microsoft.graph.aadUserConversationMember"
-conversationMember.SetOdataType(&odataType)
 roles := []string {
 	"owner",
+
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
