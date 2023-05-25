@@ -120,7 +120,7 @@
          },
          {
            "Id": "8662d342-a455-4111-a5a0-fa023070440a",
-           "ApiChange": "Member",
+           "ApiChange": "Header",
            "ChangedApiName": "schedule",
            "ChangeType": "Addition",
            "Description": "Added the `MS-APP-ACTS-AS` request header for the [get](https://learn.microsoft.com/en-us/graph/api/schedule-get?view=graph-rest-1.0) and [share](https://learn.microsoft.com/en-us/graph/api/schedule-share?view=graph-rest-1.0) operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
